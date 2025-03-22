@@ -1,0 +1,8 @@
+<!-- static/logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <circle cx="20" cy="20" r="18" stroke="#2563EB" stroke-width="2.5" fill="white"/>
+  <path d="M20 10 L20 30" stroke="#2563EB" stroke-width="1.5"/>
+  <path d="M10 20 L30 20" stroke="#2563EB" stroke-width="1.5"/>
+  <circle cx="20" cy="20" r="5" fill="#2563EB"/>
+  <circle cx="20" cy="20" r="10" stroke="#2563EB" stroke-width="1" stroke-dasharray="2 2"/>
+</svg>

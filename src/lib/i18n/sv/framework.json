@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "title": "Ramverket",
+    "subtitle": "Verktyg för styrningsinteroperabilitet och evolution"
+  },
+  "intro": {
+    "title": "Introduktion till Meta-Styrning",
+    "paragraph1": "Världen har många styrningsexperiment som pågår på olika nivåer, men de fungerar ofta isolerat. Global Governance Framework tillhandahåller mönster och gränssnitt som gör att dessa olika system kan samverka.",
+    "paragraph2": "Vårt tillvägagångssätt är inte att skapa en enda styrningsmodell, utan snarare att bygga infrastrukturen som möjliggör för många modeller att samexistera, kommunicera och utvecklas tillsammans."
+  }
+}

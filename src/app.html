@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<!-- Temporary Tailwind CDN (until we fix the local Tailwind setup) -->
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+		<!-- Custom inline styles for buttons and other elements -->
+		<style>
+			.btn-primary {
+				background-color: #2563eb;
+				color: white;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 500;
+				transition-property: all;
+				transition-duration: 200ms;
+			}
+			.btn-primary:hover {
+				background-color: #1d4ed8;
+				transform: translateY(-2px);
+			}
+		</style>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

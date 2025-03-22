@@ -1,0 +1,42 @@
+{
+  "title": "Globalt Styrningsramverk",
+  "subtitle": "Förenar styrningsinnovationer över hela världen",
+  "intro": {
+    "heading": "Ramverk för en ny era av styrning",
+    "text": "Utveckling av driftskompatibla system och driftsmodeller för global styrning som respekterar lokal autonomi samtidigt som de möjliggör effektiv samordning."
+  },
+  "features": {
+    "heading": "Nyckelfunktioner",
+    "interoperability": {
+      "title": "Styrning Interoperabilitet",
+      "description": "Ramverk som hjälper olika styrningssystem att ansluta och samarbeta effektivt"
+    },
+    "os": {
+      "title": "Styrning Operativsystem",
+      "description": "Modulär, utvecklingsbar arkitektur för styrning som kan anpassas till nya behov"
+    },
+    "patterns": {
+      "title": "Meta-styrning Designmönster",
+      "description": "Gemensamma mönster som fungerar i olika styrningssammanhang"
+    }
+  },
+  "cta": "Utforska Ramverket",
+  "additionalInfo": {
+    "heading": "Varför Vi Behöver Meta-Styrning",
+    "paragraph1": "Världen har många styrningsexperiment som pågår på olika nivåer, men de fungerar ofta isolerat. Vi behöver ramverk som låter dessa innovationer kopplas samman, dela lärdomar och utvecklas tillsammans.",
+    "paragraph2": "Global Governance Framework tillhandahåller verktyg och mönster för:",
+    "listItems": [
+      "Att koppla samman olika styrningsinnovationer",
+      "Att skapa modulära, anpassningsbara styrningssystem",
+      "Att möjliggöra för styrning att utvecklas till högre medvetenhetsnivåer",
+      "Att stödja både direkt demokrati och internationellt samarbete"
+    ],
+    "paragraph3": "Vårt tillvägagångssätt bygger på systemtänkande, Spiral Dynamics och praktisk erfarenhet för att skapa styrningssystem som är både effektiva och djupt hänsynstagande till mänskliga värden."
+  },
+  "callToAction": {
+    "heading": "Var Med och Bygg Bättre Styrning",
+    "text": "Oavsett om du är en styrningsinnovatör, beslutsfattare eller nyfiken medborgare, ditt perspektiv är viktigt.",
+    "primaryButton": "Utforska Ramverket",
+    "secondaryButton": "Engagera Dig"
+  }
+}

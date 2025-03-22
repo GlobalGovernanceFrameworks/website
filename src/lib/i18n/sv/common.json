@@ -1,0 +1,17 @@
+{
+  "header": {
+    "home": "Hem",
+    "about": "Om",
+    "framework": "Ramverk",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "copyright": "© 2025 Global Governance Framework",
+    "rights": "Alla Rättigheter Förbehållna",
+    "privacy": "Integritetspolicy",
+    "terms": "Användarvillkor"
+  },
+  "language": {
+    "select": "Välj språk"
+  }
+}

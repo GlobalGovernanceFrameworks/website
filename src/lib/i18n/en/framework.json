@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "title": "The Framework",
+    "subtitle": "Tools for governance interoperability and evolution"
+  },
+  "intro": {
+    "title": "Introduction to Meta-Governance",
+    "paragraph1": "The world has numerous governance experiments happening at different scales, but they often operate in isolation. The Global Governance Framework provides patterns and interfaces that allow these diverse systems to interoperate.",
+    "paragraph2": "Our approach is not to create a single model of governance, but rather to build the infrastructure that enables many models to coexist, communicate, and evolve together."
+  }
+}

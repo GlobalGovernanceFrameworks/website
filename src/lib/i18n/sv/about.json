@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "title": "Om Projektet",
+    "subtitle": "Bygger ramverk för global styrning som balanserar enhet med mångfald."
+  },
+  "vision": {
+    "title": "Vår Vision",
+    "paragraph1": "Global Governance Framework-projektet växte fram ur idéerna som presenterades i 'Global Governance - Natural Steps Toward a Thriving World,' och utforskar hur vi kan skapa styrningssystem som fungerar effektivt på flera nivåer samtidigt som de respekterar både globala behov och lokal autonomi.",
+    "paragraph2": "Vi tror att verklig global styrning inte handlar om att skapa en enda världsregering, utan snarare om att utveckla ramverk som låter olika styrningsexperiment samverka, dela lärdomar och utvecklas tillsammans."
+  },
+  "principles": {
+    "title": "Kärnprinciper",
+    "list": [
+      {"name": "Subsidiaritet", "description": "Beslut bör fattas på den lägsta effektiva styrningsnivån"},
+      {"name": "Interoperabilitet", "description": "Styrningssystem bör kunna kopplas samman och samarbeta effektivt"},
+      {"name": "Modularitet", "description": "Styrningskomponenter bör vara utbytbara utan systemomfattande störningar"},
+      {"name": "Evolutionär Design", "description": "System bör kunna anpassa sig och utvecklas till högre utvecklingsnivåer"}
+    ]
+  },
+  "approach": {
+    "title": "Vårt Tillvägagångssätt",
+    "intro": "Vi utvecklar praktiska ramverk, designmönster och gränssnittstandarder som kan hjälpa globala styrningsinnovatörer att skapa system som:",
+    "list": [
+      "Balanserar direkt demokrati med effektiv global koordinering",
+      "Tillåter kulturell mångfald inom ett enhetligt etiskt ramverk",
+      "Adresserar globala utmaningar utan centraliserad kontroll",
+      "Utvecklas tillsammans med mänskligt medvetande och tekniska förmågor"
+    ]
+  },
+  "origins": {
+    "title": "Projektets Ursprung",
+    "paragraph1": "Detta projekt bygger på idéer som utforskats i 'Global Governance - Natural Steps Toward a Thriving World', särskilt koncepten om holarkiska styrningssystem, spiral dynamics-utveckling och metastyrningsramverk som möjliggör för olika styrningsmodeller att samexistera och samarbeta.",
+    "paragraph2": "Istället för att föreslå en enda styrningslösning skapar vi verktyg och ramverk som låter många olika styrningsinnovationer kopplas samman, dela lärdomar och utvecklas tillsammans."
+  },
+  "getInvolved": {
+    "title": "Engagera Dig",
+    "contribute": {
+      "title": "Bidra med Idéer",
+      "description": "Dela dina tankar och perspektiv om styrningsinteroperabilitet och metaramverk.",
+      "link": "Kontakta Oss →"
+    },
+    "join": {
+      "title": "Gå Med i Gemenskapen",
+      "description": "Koppla samman med andra intresserade av global styrningsinnovation och ramverksutveckling.",
+      "link": "GitHub-Repositorium →"
+    },
+    "apply": {
+      "title": "Tillämpa Ramverket",
+      "description": "Testa och implementera dessa idéer i dina egna styrningsexperiment och initiativ.",
+      "link": "Utforska Ramverket →"
+    }
+  }
+}
