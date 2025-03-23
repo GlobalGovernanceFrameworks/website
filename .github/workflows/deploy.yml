@@ -33,6 +33,12 @@ jobs:
       - name: Build
         run: npm run build
         
+      # Explicitly fetch the potentially missing dependency
+      - name: Fetch upload-artifact
+        run: |
+          mkdir -p .github/actions/upload-artifact
+          curl -L https://github.com/actions/upload-artifact/archive/refs/tags/v3.1.3.tar.gz | tar xz -C .github/actions/upload-artifact --strip-components=1
+        
       - name: Setup Pages
         uses: actions/configure-pages@v3
         
