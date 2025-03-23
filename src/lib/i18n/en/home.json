@@ -20,7 +20,28 @@
       "description": "Common patterns that work across different governance contexts"
     }
   },
-  "cta": "Explore the Framework",
+  "emergingPossibilities": {
+    "heading": "Emerging Global Possibilities",
+    "intro": "We're witnessing promising developments that create new pathways for effective global governance:",
+    "possibilities": [
+      {
+        "title": "Global Digital Commons",
+        "description": "Digital technologies are enabling unprecedented coordination across borders. Citizens worldwide now connect, organize, and develop solutions in real-time, creating informal governance networks that often work faster than formal institutions."
+      },
+      {
+        "title": "Successful Transnational Frameworks",
+        "description": "Initiatives like the Paris Climate Accord show that nations can align on critical planetary challenges. These frameworks demonstrate that with sufficient shared interest, global cooperation is not only possible but increasingly necessary."
+      },
+      {
+        "title": "Bottom-Up Governance Innovations",
+        "description": "Communities worldwide are experimenting with participatory democracy, digital decision-making, and collaborative resource management—creating working models that could scale to broader levels."
+      },
+      {
+        "title": "Crisis-Driven Collaboration",
+        "description": "Shared challenges like climate change, pandemics, and AI risks are creating both the necessity and opportunity for deeper global cooperation, accelerating governance innovation to address common threats."
+      }
+    ]
+  },
   "additionalInfo": {
     "heading": "Why We Need Meta-Governance",
     "paragraph1": "The world has numerous governance experiments happening at different scales, but they often operate in isolation. We need frameworks that allow these innovations to connect, share lessons, and evolve together.",
@@ -38,5 +59,6 @@
     "text": "Whether you're a governance innovator, policy maker, or curious citizen, your perspective matters.",
     "primaryButton": "Explore the Framework",
     "secondaryButton": "Get Involved"
-  }
+  },
+  "cta": "Explore the Framework"
 }

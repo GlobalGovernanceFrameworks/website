@@ -20,16 +20,16 @@
 </svelte:head>
 
 <!-- Hero Section -->
-<section class="py-16 md:py-24 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
-  <div class="container mx-auto px-4">
-    <div class="max-w-4xl mx-auto text-center animate-fade-in">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+<section style="padding: 4rem 0; background: linear-gradient(to bottom right, #1e3a8a, #1e40af, #1d4ed8); color: white;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div style="max-width: 42rem; margin: 0 auto; text-align: center;">
+      <h1 style="font-size: 2.5rem; line-height: 1.2; font-weight: 700; margin-bottom: 1.5rem;">
         {$t('home.title')}
       </h1>
-      <p class="text-xl md:text-2xl text-blue-100 mb-10">
+      <p style="font-size: 1.25rem; color: #bfdbfe; margin-bottom: 2.5rem;">
         {$t('home.subtitle')}
       </p>
-      <a href="/framework" class="btn-primary text-lg px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 inline-block">
+      <a href="/framework" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 500; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
         {$t('home.cta')}
       </a>
     </div>
@@ -37,14 +37,14 @@
 </section>
 
 <!-- Intro Section -->
-<section class="py-16 bg-white">
-  <div class="container mx-auto px-4">
-    <div class="max-w-4xl mx-auto">
-      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 md:p-10 rounded-xl shadow-sm border border-blue-100 transition-all duration-500 transform {isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}">
-        <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-6">
+<section style="padding: 4rem 0; background-color: white;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div style="max-width: 42rem; margin: 0 auto;">
+      <div style="background: linear-gradient(to right, #eff6ff, #eef2ff); padding: 2rem 2.5rem; border-radius: 0.75rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #dbeafe; transition: all 0.5s;">
+        <h2 style="font-size: 1.875rem; font-weight: 700; color: #1e40af; margin-bottom: 1.5rem;">
           {$t('home.intro.heading')}
         </h2>
-        <p class="text-blue-700 text-lg leading-relaxed">
+        <p style="color: #1e40af; font-size: 1.125rem; line-height: 1.7;">
           {$t('home.intro.text')}
         </p>
       </div>
@@ -53,85 +53,140 @@
 </section>
 
 <!-- Features Section -->
-<section class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+<section style="padding: 4rem 0; background-color: #f9fafb;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <h2 style="font-size: 2rem; font-weight: 700; text-align: center; color: #111827; margin-bottom: 4rem;">
       {$t('home.features.heading')}
     </h2>
     
-    <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+    <div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 2rem; margin-bottom: 3rem;">
       <!-- Feature 1 -->
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-4 border-blue-500">
-        <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div style="background-color: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #3b82f6; transition: all 0.3s;">
+        <div style="width: 3.5rem; height: 3.5rem; background-color: #dbeafe; border-radius: 9999px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" style="height: 2rem; width: 2rem; color: #2563eb;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-4">
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">
           {$t('home.features.interoperability.title')}
         </h3>
-        <p class="text-gray-600">
+        <p style="color: #4b5563;">
           {$t('home.features.interoperability.description')}
         </p>
       </div>
       
       <!-- Feature 2 -->
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-4 border-indigo-500">
-        <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div style="background-color: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #6366f1; transition: all 0.3s;">
+        <div style="width: 3.5rem; height: 3.5rem; background-color: #e0e7ff; border-radius: 9999px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" style="height: 2rem; width: 2rem; color: #4f46e5;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
           </svg>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-4">
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">
           {$t('home.features.os.title')}
         </h3>
-        <p class="text-gray-600">
+        <p style="color: #4b5563;">
           {$t('home.features.os.description')}
         </p>
       </div>
       
       <!-- Feature 3 -->
-      <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-4 border-purple-500">
-        <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div style="background-color: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #8b5cf6; transition: all 0.3s;">
+        <div style="width: 3.5rem; height: 3.5rem; background-color: #ede9fe; border-radius: 9999px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" style="height: 2rem; width: 2rem; color: #7c3aed;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
           </svg>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-4">
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">
           {$t('home.features.patterns.title')}
         </h3>
-        <p class="text-gray-600">
+        <p style="color: #4b5563;">
           {$t('home.features.patterns.description')}
         </p>
       </div>
     </div>
     
-    <div class="text-center mt-12">
-      <a href="/framework" class="btn-primary text-lg px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 inline-block">
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="/framework" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
         {$t('home.cta')}
       </a>
     </div>
   </div>
 </section>
 
+<!-- New Section: Emerging Global Possibilities -->
+<section style="padding: 4rem 0; background-color: white;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div style="max-width: 56rem; margin: 0 auto; text-align: center; margin-bottom: 3rem;">
+      <h2 style="font-size: 2rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">
+        {$t('home.emergingPossibilities.heading')}
+      </h2>
+      <p style="font-size: 1.125rem; color: #4b5563; max-width: 42rem; margin: 0 auto;">
+        {$t('home.emergingPossibilities.intro')}
+      </p>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+      {#if $t('home.emergingPossibilities.possibilities')}
+        {#each Array.isArray($t('home.emergingPossibilities.possibilities')) ? $t('home.emergingPossibilities.possibilities') : [] as possibility, i}
+          <!-- Possibility Card -->
+          <div style="background-color: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 1px solid #e5e7eb; transition: transform 0.3s, box-shadow 0.3s;">
+
+            <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+              <div style="flex-shrink: 0; background-color: #dbeafe; padding: 1rem; border-radius: 0.5rem;">
+                <!-- Using different icons based on the index -->
+                {#if i === 0}
+                  <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem; height: 2rem; color: #2563eb;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                {:else if i === 1}
+                  <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem; height: 2rem; color: #2563eb;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                {:else if i === 2}
+                  <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem; height: 2rem; color: #2563eb;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                {:else}
+                  <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem; height: 2rem; color: #2563eb;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                {/if}
+              </div>
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #111827;">{possibility.title}</h3>
+                <p style="color: #4b5563; line-height: 1.6;">{possibility.description}</p>
+              </div>
+            </div>
+          </div>
+        {/each}
+      {:else}
+        <div style="text-align: center; padding: 2rem; color: #6b7280;">
+          Loading possibilities...
+        </div>
+      {/if}
+    </div>
+  </div>
+</section>
+
 <!-- Additional Info Section -->
-<section class="py-16 bg-white">
-  <div class="container mx-auto px-4">
-    <div class="max-w-3xl mx-auto">
-      <div class="prose prose-lg mx-auto">
-        <h2 class="text-center text-3xl mb-8 text-gray-900">{$t('home.additionalInfo.heading')}</h2>
-        <p>
+<section style="padding: 4rem 0; background-color: #f9fafb;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div style="max-width: 42rem; margin: 0 auto;">
+      <div style="margin: 0 auto; line-height: 1.7; font-size: 1.125rem;">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #111827;">{$t('home.additionalInfo.heading')}</h2>
+        <p style="margin-bottom: 1.5rem; color: #4b5563;">
           {$t('home.additionalInfo.paragraph1')}
         </p>
-        <p>
+        <p style="margin-bottom: 1rem; color: #4b5563;">
           {$t('home.additionalInfo.paragraph2')}
         </p>
-        <ul>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem; list-style-type: disc; color: #4b5563;">
           {#each $t('home.additionalInfo.listItems') as item}
-            <li>{item}</li>
+            <li style="margin-bottom: 0.5rem;">{item}</li>
           {/each}
         </ul>
-        <p>
+        <p style="margin-bottom: 1.5rem; color: #4b5563;">
           {$t('home.additionalInfo.paragraph3')}
         </p>
       </div>
@@ -140,18 +195,18 @@
 </section>
 
 <!-- Call to Action Section -->
-<section class="py-16 bg-gradient-to-br from-indigo-900 via-blue-800 to-blue-900 text-white">
-  <div class="container mx-auto px-4">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">{$t('home.callToAction.heading')}</h2>
-      <p class="text-xl text-blue-100 mb-10">
+<section style="padding: 4rem 0; background: linear-gradient(to bottom right, #4338ca, #3b82f6, #2563eb); color: white;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div style="max-width: 42rem; margin: 0 auto; text-align: center;">
+      <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem;">{$t('home.callToAction.heading')}</h2>
+      <p style="font-size: 1.25rem; color: #bfdbfe; margin-bottom: 2.5rem;">
         {$t('home.callToAction.text')}
       </p>
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-        <a href="/framework" class="w-full sm:w-auto inline-block bg-white text-blue-800 hover:bg-blue-50 font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300">
+      <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; justify-content: center;">
+        <a href="/framework" style="width: 100%; max-width: 20rem; display: inline-block; background-color: white; color: #1e40af; font-weight: 700; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
           {$t('home.callToAction.primaryButton')}
         </a>
-        <a href="/contact" class="w-full sm:w-auto inline-block bg-transparent hover:bg-blue-800 text-white border-2 border-white py-3 px-8 rounded-lg transition duration-300">
+        <a href="/contact" style="width: 100%; max-width: 20rem; display: inline-block; background-color: transparent; border: 2px solid white; color: white; font-weight: 700; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; transition: all 0.2s;">
           {$t('home.callToAction.secondaryButton')}
         </a>
       </div>

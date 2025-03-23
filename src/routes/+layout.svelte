@@ -2,7 +2,7 @@
 <script>
   import '../app.css';
   import Footer from '$lib/components/Footer.svelte';
-  import { locale, loadTranslations, detectLocale } from '$lib/i18n';
+  import { locale, loadTranslations, detectLocale, currentRoute } from '$lib/i18n';
   import { onMount } from 'svelte';
   import { navigating, page } from '$app/stores';
   import { browser } from '$app/environment';
@@ -15,6 +15,11 @@
     // Get user's preferred locale
     const initLocale = detectLocale();
     
+    // Store the current path
+    if ($page && $page.url) {
+      currentRoute.set($page.url.pathname);
+    }
+    
     // Load translations for the current route
     await loadTranslations(initLocale, $page.url.pathname);
     
@@ -26,7 +31,9 @@
 
   // When navigating, make sure translations are loaded for the new route
   $: if (browser && $navigating) {
-    loadTranslations($locale, $navigating.to?.url.pathname || '/');
+    const newPath = $navigating.to?.url.pathname || '/';
+    currentRoute.set(newPath);
+    loadTranslations($locale, newPath);
   }
 </script>
 

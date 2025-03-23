@@ -1,14 +1,12 @@
 <!-- src/lib/components/Header.svelte -->
 <script>
-  import { t, locale, locales, getLanguageName } from '$lib/i18n';
+  import { t, locale, locales, getLanguageName, setLocale } from '$lib/i18n';
   import { page } from '$app/stores';
   
   // Handle language selection
-  function setLocale(newLocale) {
-    locale.set(newLocale);
-    if (typeof localStorage !== 'undefined') {
-      localStorage.setItem('locale', newLocale);
-    }
+  function handleLocaleChange(e) {
+    const newLocale = e.target.value;
+    setLocale(newLocale); // Use the new setLocale function
   }
 
   // Mobile menu state
@@ -242,7 +240,7 @@
           <select 
             aria-label={$t('common.language.select')}
             value={$locale} 
-            on:change={(e) => setLocale(e.target.value)}
+            on:change={handleLocaleChange}
             class="language-select"
           >
             {#each $locales as loc}

@@ -1,6 +1,7 @@
-// src/lib/i18n/index.js
+// src/lib/i18n/index.js - Modified to reload translations when locale changes
+
 import { browser } from '$app/environment';
-import { derived, writable, readable } from 'svelte/store';
+import { derived, writable, readable, get } from 'svelte/store';
 
 // Define supported languages
 const supportedLocales = ['en', 'sv'];
@@ -8,6 +9,7 @@ const supportedLocales = ['en', 'sv'];
 // Create stores for the current locale and translations
 const locale = writable(browser ? localStorage.getItem('locale') || 'en' : 'en');
 const translations = writable({});
+const currentRoute = writable('/');
 
 // Create a readable store for locales
 const locales = readable(supportedLocales);
@@ -18,6 +20,10 @@ async function loadTranslations(newLocale, route = '/') {
   let translationData = {};
   
   try {
+    // Store the current route
+    currentRoute.set(route);
+    console.log(`Loading translations for locale: ${newLocale}, route: ${route}`);
+    
     // Load common translations
     try {
       if (newLocale === 'en') {
@@ -25,6 +31,7 @@ async function loadTranslations(newLocale, route = '/') {
       } else if (newLocale === 'sv') {
         translationData.common = (await import('./sv/common.json')).default;
       }
+      console.log('Loaded common translations:', translationData.common);
     } catch (e) {
       console.error('Error loading common translations:', e);
     }
@@ -74,7 +81,32 @@ async function loadTranslations(newLocale, route = '/') {
       } catch (e) {
         console.error('Error loading framework translations:', e);
       }
+    } else if (route.startsWith('/privacy')) {
+      // Privacy page
+      try {
+        if (newLocale === 'en') {
+          translationData.privacy = (await import('./en/privacy.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.privacy = (await import('./sv/privacy.json')).default;
+        }
+      } catch (e) {
+        console.error('Error loading privacy translations:', e);
+      }
+    } else if (route.startsWith('/terms')) {
+      // Terms page
+      try {
+        if (newLocale === 'en') {
+          translationData.terms = (await import('./en/terms.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.terms = (await import('./sv/terms.json')).default;
+        }
+      } catch (e) {
+        console.error('Error loading terms translations:', e);
+      }
     }
+    
+    // Log the loaded translations for debugging
+    console.log('Loaded translations data:', translationData);
     
     // Update the locale and translations stores
     locale.set(newLocale);
@@ -108,14 +140,35 @@ const t = derived(
           result = result[part];
         } else {
           // If the key doesn't exist, return the key itself as a fallback
+          console.warn(`Translation key not found: ${key}`);
           return key;
         }
+      }
+      
+      // Handle different types of results
+      if (result === null || result === undefined) {
+        console.warn(`Translation value is null or undefined for key: ${key}`);
+        return key;
       }
       
       return result;
     };
   }
 );
+
+// Function to reload translations when locale changes
+function setLocale(newLocale) {
+  if (supportedLocales.includes(newLocale)) {
+    // Load translations for the current route with the new locale
+    const route = get(currentRoute);
+    loadTranslations(newLocale, route);
+    
+    // Update localStorage
+    if (browser) {
+      localStorage.setItem('locale', newLocale);
+    }
+  }
+}
 
 // Utility function to detect the user's preferred locale
 const detectLocale = () => {
@@ -147,7 +200,9 @@ export {
   locale,
   locales,
   t,
+  setLocale, // New export
   detectLocale,
   languageData,
-  getLanguageName
+  getLanguageName,
+  currentRoute
 };
