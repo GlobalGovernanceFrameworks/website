@@ -28,6 +28,11 @@ jobs:
         
       - name: Build
         run: npm run build
+
+      - name: Prepare for deployment
+        run: |
+          # Add CNAME file for custom domain
+          echo "globalgovernanceframework.org" > build/CNAME
         
       - name: Deploy
         run: |

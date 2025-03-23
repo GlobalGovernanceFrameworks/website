@@ -1,9 +1,10 @@
+// svelte.config.js
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 const dev = process.env.NODE_ENV === 'development';
-// Make sure this matches your GitHub repo name exactly
-const base = dev ? '' : '/governance-framework-site';
+// For custom domain, no base path is needed
+const base = '';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
