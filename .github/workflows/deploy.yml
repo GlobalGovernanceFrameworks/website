@@ -35,6 +35,14 @@ jobs:
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
+      - name: Prepare for deployment
+        run: |
+          # Copy the custom 404.html to the build directory
+          cp static/404.html build/404.html
+          
+          # Ensure .nojekyll exists
+          touch build/.nojekyll
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

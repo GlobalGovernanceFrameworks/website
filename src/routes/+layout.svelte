@@ -1,13 +1,12 @@
-<!-- src/routes/+layout.svelte -->
 <script>
   import '../app.css';
   import Footer from '$lib/components/Footer.svelte';
-  import { locale, loadTranslations, detectLocale, currentRoute } from '$lib/i18n';
+  import { locale, loadTranslations, detectLocale } from '$lib/i18n';
   import { onMount } from 'svelte';
   import { navigating, page } from '$app/stores';
   import { browser } from '$app/environment';
+  import { base } from '$app/paths';
   
-  // Import the simple header
   import Header from '$lib/components/Header.svelte';
 
   // Initialize translations
@@ -15,13 +14,14 @@
     // Get user's preferred locale
     const initLocale = detectLocale();
     
-    // Store the current path
-    if ($page && $page.url) {
-      currentRoute.set($page.url.pathname);
+    // Get path without the base path for translation loading
+    let path = $page.url.pathname;
+    if (path.startsWith(base)) {
+      path = path.slice(base.length) || '/';
     }
     
     // Load translations for the current route
-    await loadTranslations(initLocale, $page.url.pathname);
+    await loadTranslations(initLocale, path);
     
     // Set the locale
     if (browser) {
@@ -31,9 +31,11 @@
 
   // When navigating, make sure translations are loaded for the new route
   $: if (browser && $navigating) {
-    const newPath = $navigating.to?.url.pathname || '/';
-    currentRoute.set(newPath);
-    loadTranslations($locale, newPath);
+    let path = $navigating.to?.url.pathname;
+    if (path.startsWith(base)) {
+      path = path.slice(base.length) || '/';
+    }
+    loadTranslations($locale, path);
   }
 </script>
 

@@ -2,6 +2,7 @@
 <script>
   import { t, locale, locales, getLanguageName, setLocale } from '$lib/i18n';
   import { page } from '$app/stores';
+  import { base } from '$app/paths';
   
   // Handle language selection
   function handleLocaleChange(e) {
@@ -175,7 +176,7 @@
     <div class="header-content">
       <div class="logo-section">
         <a href="/" class="logo-link">
-          <img src="/logo.svg" alt="Global Governance Framework" class="logo-img" />
+          <img src="{base}/logo.svg" alt="Global Governance Framework" class="logo-img" />
           <span class="site-title">Global Governance Framework</span>
         </a>
         
@@ -204,7 +205,7 @@
         <ul class="nav-list">
           <li class="nav-item">
             <a 
-              href="/" 
+              href="{base}/" 
               class={`nav-link ${$page.url.pathname === '/' ? 'active' : ''}`}
             >
               {$t('common.header.home')}
@@ -212,7 +213,7 @@
           </li>
           <li class="nav-item">
             <a 
-              href="/about" 
+              href="{base}/about" 
               class={`nav-link ${$page.url.pathname === '/about' ? 'active' : ''}`}
             >
               {$t('common.header.about')}
@@ -220,7 +221,7 @@
           </li>
           <li class="nav-item">
             <a 
-              href="/framework" 
+              href="{base}/framework" 
               class={`nav-link ${$page.url.pathname === '/framework' ? 'active' : ''}`}
             >
               {$t('common.header.framework')}
@@ -228,7 +229,7 @@
           </li>
           <li class="nav-item">
             <a 
-              href="/contact" 
+              href="{base}/contact" 
               class={`nav-link ${$page.url.pathname === '/contact' ? 'active' : ''}`}
             >
               {$t('common.header.contact')}

@@ -2,6 +2,7 @@
 
 import { browser } from '$app/environment';
 import { derived, writable, readable, get } from 'svelte/store';
+import { base } from '$app/paths';
 
 // Define supported languages
 const supportedLocales = ['en', 'sv'];
@@ -16,6 +17,16 @@ const locales = readable(supportedLocales);
 
 // Load translations for a specific language and route
 async function loadTranslations(newLocale, route = '/') {
+  // Remove the base path from the route if it's present
+  if (route.startsWith(base)) {
+    route = route.slice(base.length);
+  }
+
+  // If the route is empty after removing the base, set it to the root
+  if (!route) {
+    route = '/';
+  }
+
   // Default translations (common phrases used across the site)
   let translationData = {};
   

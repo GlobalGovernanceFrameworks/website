@@ -1,6 +1,7 @@
 <!-- src/lib/components/Footer.svelte -->
 <script>
   import { t } from '$lib/i18n';
+  import { base } from '$app/paths';
   const currentYear = new Date().getFullYear();
 </script>
 
@@ -17,18 +18,18 @@
       <div>
         <h3 class="text-lg font-bold mb-4 text-blue-200">Navigation</h3>
         <ul class="space-y-2">
-          <li><a href="/" class="text-blue-100 hover:text-white">{$t('common.header.home')}</a></li>
-          <li><a href="/about" class="text-blue-100 hover:text-white">{$t('common.header.about')}</a></li>
-          <li><a href="/framework" class="text-blue-100 hover:text-white">{$t('common.header.framework')}</a></li>
-          <li><a href="/contact" class="text-blue-100 hover:text-white">{$t('common.header.contact')}</a></li>
+          <li><a href="{base}/" class="text-blue-100 hover:text-white">{$t('common.header.home')}</a></li>
+          <li><a href="{base}/about" class="text-blue-100 hover:text-white">{$t('common.header.about')}</a></li>
+          <li><a href="{base}/framework" class="text-blue-100 hover:text-white">{$t('common.header.framework')}</a></li>
+          <li><a href="{base}/contact" class="text-blue-100 hover:text-white">{$t('common.header.contact')}</a></li>
         </ul>
       </div>
       
       <div>
         <h3 class="text-lg font-bold mb-4 text-blue-200">Legal</h3>
         <ul class="space-y-2">
-          <li><a href="/privacy" class="text-blue-100 hover:text-white">{$t('common.footer.privacy')}</a></li>
-          <li><a href="/terms" class="text-blue-100 hover:text-white">{$t('common.footer.terms')}</a></li>
+          <li><a href="{base}/privacy" class="text-blue-100 hover:text-white">{$t('common.footer.privacy')}</a></li>
+          <li><a href="{base}/terms" class="text-blue-100 hover:text-white">{$t('common.footer.terms')}</a></li>
         </ul>
       </div>
       
@@ -58,7 +59,7 @@
       </div>
       
       <div class="flex items-center space-x-2">
-        <img src="/logo.svg" alt="Global Governance Framework" class="h-6 w-6" />
+        <img src="{base}/logo.svg" alt="Global Governance Framework" class="h-6 w-6" />
         <span class="text-sm text-blue-200">Building frameworks for ethical global governance</span>
       </div>
     </div>
