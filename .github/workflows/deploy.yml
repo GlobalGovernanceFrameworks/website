@@ -54,3 +54,13 @@ jobs:
           folder: build
           branch: gh-pages
           clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}  # Explicitly specify the token
+          commit-message: "Deploy website [skip ci]"  # Add a commit message
+          git-config-name: GitHub Actions    # Set the git config name
+          git-config-email: actions@github.com  # Set the git config email
+
+      - name: Debug after deploy
+        run: |
+          echo "Checking remote branches:"
+          git fetch
+          git branch -r
