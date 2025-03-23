@@ -38,10 +38,13 @@ jobs:
 
       - name: Prepare for deployment
         run: |
-          # Copy the custom 404.html to the build directory
-          cp static/404.html build/404.html
+          # Copy index.html to 404.html to ensure proper redirects
+          cp build/index.html build/404.html
           
-          # Ensure .nojekyll exists
+          # Ensure gh-pages.js is included
+          cp static/gh-pages.js build/gh-pages.js
+          
+          # Add a basic .nojekyll file
           touch build/.nojekyll
         
       - name: Upload artifact
