@@ -6,19 +6,11 @@ const config = {
   preprocess: preprocess(),
   
   kit: {
-    // No base path, static adapter will handle it
     adapter: adapter({
-      // Use GitHub Pages
-      pages: 'build',
-      assets: 'build',
-      fallback: 'index.html',
-      precompress: false
+      fallback: '200.html' // Use 200.html instead of index.html
     }),
-    
-    // Add this for proper routing with GitHub Pages
     paths: {
-      base: '',
-      relative: false
+      base: ''
     }
   }
 };

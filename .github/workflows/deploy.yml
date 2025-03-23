@@ -19,7 +19,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
           
       - name: Install dependencies
         run: npm ci
@@ -27,40 +26,21 @@ jobs:
       - name: Build
         run: npm run build
       
-      - name: Create 404.html
-        run: cp build/index.html build/404.html
-      
-      - name: Add .nojekyll file
-        run: touch build/.nojekyll
-
-      - name: Copy public files
+      - name: Prepare for deployment
         run: |
-          mkdir -p build/public
-          cp -r public/* build/
+          # Create 200.html (GitHub Pages equivalent of 404.html that works better)
+          cp build/index.html build/200.html
+          
+          # Create 404.html
+          cp build/index.html build/404.html
+          
+          # Ensure .nojekyll exists
+          touch build/.nojekyll
       
-      # Manual deployment to gh-pages branch
-      - name: Deploy to gh-pages
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          
-          # Create a new orphan branch
-          git checkout --orphan gh-pages
-          
-          # Remove everything
-          git rm -rf .
-          
-          # Copy build files
-          cp -r build/* .
-          cp build/.nojekyll .
-          
-          # Add all files
-          git add .
-          
-          # Commit
-          git commit -m "Deploy to GitHub Pages"
-          
-          # Force push to gh-pages branch
-          git push origin gh-pages --force
-          
-          echo "Deployed to gh-pages branch"
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          force_orphan: true
