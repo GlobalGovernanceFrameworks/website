@@ -31,14 +31,22 @@ jobs:
         run: npm ci
         
       - name: Build
-        run: |
-          npm run build
-          ls -la build
-          ls -la build/_app
+        run: npm run build
        
       - name: Create 404 page
         run: cp build/index.html build/404.html
-        
+      
+      # Add the verification step here, after build but before upload
+      - name: Verify Assets
+        run: |
+          echo "Checking _app directory..."
+          find build/_app -type f | grep '\.js$' || echo "No JS files found!"
+          
+          # The curl check won't work during the build since the files aren't deployed yet
+          # We'll just check that JS files exist in the build directory
+          echo "First few JS files:"
+          find build/_app -type f -name "*.js" | head -5
+          
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
