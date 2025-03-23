@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
   workflow_dispatch:
 
 permissions:
@@ -20,20 +20,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: '20'
           cache: 'npm'
           
       - name: Install dependencies
         run: npm ci
         
       - name: Build
-        run: npm run build
-      
-      # Add this step to create a 404.html file
+        run: |
+          npm run build
+          ls -la build
+          ls -la build/_app
+       
       - name: Create 404 page
         run: cp build/index.html build/404.html
         
@@ -43,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build'
+          path: ./build
 
   deploy:
     environment:
