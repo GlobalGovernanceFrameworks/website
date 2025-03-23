@@ -24,6 +24,9 @@
 <section style="padding: 4rem 0; background: linear-gradient(to bottom right, #1e3a8a, #1e40af, #1d4ed8); color: white;">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
     <div style="max-width: 42rem; margin: 0 auto; text-align: center;">
+      <!-- Add the logo above the title -->
+      <img src="{base}/logo.svg" alt="Global Governance Framework Logo" style="height: 120px; width: 120px; margin: 0 auto 2rem auto;">
+      
       <h1 style="font-size: 2.5rem; line-height: 1.2; font-weight: 700; margin-bottom: 1.5rem;">
         {$t('home.title')}
       </h1>
