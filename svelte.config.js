@@ -18,7 +18,6 @@ const config = {
     paths: {
       base: base
     },
-    trailingSlash: 'never',
     prerender: {
       handleHttpError: ({ path, referrer, message }) => {
         // Ignore missing assets during prerendering
