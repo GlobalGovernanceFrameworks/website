@@ -1,6 +1,7 @@
 <!-- src/routes/about/+page.svelte -->
 <script>
   import { t } from '$lib/i18n';
+  import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -133,7 +134,7 @@
         <div style="background-color: white; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #e5e7eb;">
           <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #111827;">{$t('about.getInvolved.contribute.title')}</h3>
           <p style="margin-bottom: 1rem; color: #4b5563;">{$t('about.getInvolved.contribute.description')}</p>
-          <a href="/contact" style="color: #2563eb; font-weight: 500;">{$t('about.getInvolved.contribute.link')}</a>
+          <a href="{base}/contact" style="color: #2563eb; font-weight: 500;">{$t('about.getInvolved.contribute.link')}</a>
         </div>
         
         <!-- Card 2 -->
@@ -147,7 +148,7 @@
         <div style="background-color: white; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #e5e7eb;">
           <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #111827;">{$t('about.getInvolved.apply.title')}</h3>
           <p style="margin-bottom: 1rem; color: #4b5563;">{$t('about.getInvolved.apply.description')}</p>
-          <a href="/framework" style="color: #2563eb; font-weight: 500;">{$t('about.getInvolved.apply.link')}</a>
+          <a href="{base}/framework" style="color: #2563eb; font-weight: 500;">{$t('about.getInvolved.apply.link')}</a>
         </div>
       </div>
     </div>

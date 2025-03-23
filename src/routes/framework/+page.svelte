@@ -1,6 +1,7 @@
 <!-- src/routes/framework/+page.svelte -->
 <script>
   import { t } from '$lib/i18n';
+  import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -159,7 +160,7 @@
       
       <!-- Call to Action -->
       <div style="text-align: center; margin-top: 3rem;">
-        <a href="/contact" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+        <a href="{base}/contact" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
           {$t('framework.cta')}
         </a>
       </div>

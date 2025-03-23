@@ -2,15 +2,7 @@
 <script>
   import { t, locale, locales, getLanguageName, setLocale } from '$lib/i18n';
   import { page } from '$app/stores';
-  
-  // Function to create hash-based links
-  function getLink(path) {
-    // For non-root paths, use hash-based routing
-    if (path === '/') {
-      return '/governance-framework-site/';
-    }
-    return '/governance-framework-site/#' + path;
-  }
+  import { base } from '$app/paths';
   
   // Handle language selection
   function handleLocaleChange(e) {
@@ -183,8 +175,8 @@
   <div class="container">
     <div class="header-content">
       <div class="logo-section">
-        <a href={getLink('/')} class="logo-link">
-          <img src="/governance-framework-site/logo.svg" alt="Global Governance Framework" class="logo-img" />
+        <a href="{base}/" class="logo-link">
+          <img src="{base}/logo.svg" alt="Global Governance Framework" class="logo-img" />
           <span class="site-title">Global Governance Framework</span>
         </a>
         
@@ -213,32 +205,32 @@
         <ul class="nav-list">
           <li class="nav-item">
             <a 
-              href={getLink('/')}
-              class={`nav-link ${$page.url.pathname === '/governance-framework-site/' || $page.url.pathname === '/governance-framework-site' || $page.url.hash === '/' ? 'active' : ''}`}
+              href="{base}/"
+              class={`nav-link ${$page.url.pathname === base + '/' || $page.url.pathname === base ? 'active' : ''}`}
             >
               {$t('common.header.home')}
             </a>
           </li>
           <li class="nav-item">
             <a 
-              href={getLink('/about')}
-              class={`nav-link ${$page.url.hash === '/about' ? 'active' : ''}`}
+              href="{base}/about"
+              class={`nav-link ${$page.url.pathname === base + '/about' ? 'active' : ''}`}
             >
               {$t('common.header.about')}
             </a>
           </li>
           <li class="nav-item">
             <a 
-              href={getLink('/framework')}
-              class={`nav-link ${$page.url.hash === '/framework' ? 'active' : ''}`}
+              href="{base}/framework"
+              class={`nav-link ${$page.url.pathname === base + '/framework' ? 'active' : ''}`}
             >
               {$t('common.header.framework')}
             </a>
           </li>
           <li class="nav-item">
             <a 
-              href={getLink('/contact')}
-              class={`nav-link ${$page.url.hash === '/contact' ? 'active' : ''}`}
+              href="{base}/contact"
+              class={`nav-link ${$page.url.pathname === base + '/contact' ? 'active' : ''}`}
             >
               {$t('common.header.contact')}
             </a>
