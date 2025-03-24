@@ -138,6 +138,56 @@
     margin-bottom: 0.75rem;
     color: #2B4B8C; /* Cosmic blue for h3 */
   }
+
+  /* Styling for h4 headers (#### in Markdown) */
+  :global(h4) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #2B4B8C; /* Cosmic blue color, matching your theme */
+  }
+
+  /* Styling for the inset box (blockquote) */
+  :global(blockquote) {
+    background-color: #f3f6f9;
+    border-left: 4px solid #6B5CA5; /* Cosmic purple color */
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+  }
+
+  :global(blockquote > p:first-child strong) {
+    font-size: 1.1rem;
+    color: #2B4B8C; /* Cosmic blue for the header */
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  :global(blockquote ul) {
+    margin-left: 1.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  :global(blockquote li) {
+    margin-bottom: 0.5rem;
+  }
+
+  :global(blockquote p:last-child) {
+    margin-top: 0.75rem;
+    font-style: italic;
+  }
+
+  :global(blockquote a) {
+    color: #DAA520; /* Gold color for links */
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  :global(blockquote a:hover) {
+    color: #B8860B; /* Darker gold on hover */
+  }
   
   .content :global(p) {
     margin-bottom: 1rem;

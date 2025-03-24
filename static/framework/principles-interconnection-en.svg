@@ -23,7 +23,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.41"
-     inkscape:cx="235.10639"
+     inkscape:cx="235.8156"
      inkscape:cy="300"
      inkscape:window-width="2520"
      inkscape:window-height="1048"
@@ -37,6 +37,13 @@
      height="600"
      fill="#ffffff"
      id="rect1" />
+  <path
+     d="M 580,278.60993 V 376"
+     stroke="#daa520"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path32"
+     sodipodi:nodetypes="cc" />
   <!-- Center circle - Global Governance -->
   <!-- Principle circles positioned in a clock-like arrangement -->
   <!-- Decentralized Authority -->
@@ -73,19 +80,31 @@
   <!-- Radical Transparency -->
   <circle
      cx="580"
-     cy="170"
+     cy="230"
      r="54"
-     fill="#2D5F2D"
+     fill="#2d5f2d"
      id="circle5" />
+  <circle
+     cx="585.78723"
+     cy="136.50354"
+     r="54"
+     fill="#2d5f2d"
+     id="circle5-3" />
   <path
-     d="M 538.00299,203.6776 458.1383,261.06383"
+     d="M 531.62001,242.68469 458.1383,261.06383"
      stroke="#2d5f2d"
      stroke-width="3"
      id="path5"
      sodipodi:nodetypes="cc" />
+  <path
+     d="M 546.90241,164.98708 440.08737,246.48679"
+     stroke="#2d5f2d"
+     stroke-width="3"
+     id="path5-3"
+     sodipodi:nodetypes="cc" />
   <text
      x="580"
-     y="162"
+     y="222"
      font-family="Arial, sans-serif"
      font-size="12px"
      text-anchor="middle"
@@ -94,7 +113,7 @@
      id="text6">Radical</text>
   <text
      x="580"
-     y="182"
+     y="242"
      font-family="Arial, sans-serif"
      font-size="12px"
      text-anchor="middle"
@@ -154,6 +173,33 @@
      fill="#ffffff"
      font-weight="bold"
      id="text10">Universal</text>
+  <text
+     x="585.59094"
+     y="121.17758"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text10-6">Resilience</text>
+  <text
+     x="585.85168"
+     y="140.75914"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text10-7">and</text>
+  <text
+     x="585.85168"
+     y="158.69531"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text10-5">Anti-Fragility</text>
   <text
      x="580"
      y="442"
@@ -474,12 +520,6 @@
      text-anchor="start"
      id="text32">Evolution  Integration</text>
   <!-- Small interconnection lines between principles -->
-  <path
-     d="M580 224 L580 376"
-     stroke="#DAA520"
-     stroke-width="1.5"
-     stroke-dasharray="5,3"
-     id="path32" />
   <path
      d="M 549.76596,391.70213 252.3617,211.13475"
      stroke="#654321"

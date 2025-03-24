@@ -23,8 +23,8 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.41"
-     inkscape:cx="401.06383"
-     inkscape:cy="300"
+     inkscape:cx="395.39007"
+     inkscape:cy="301.41844"
      inkscape:window-width="2520"
      inkscape:window-height="1048"
      inkscape:window-x="0"
@@ -37,6 +37,13 @@
      height="600"
      fill="#ffffff"
      id="rect1" />
+  <path
+     d="M 580,282.15603 V 376"
+     stroke="#daa520"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path32"
+     sodipodi:nodetypes="cc" />
   <path
      d="m 182.15603,229.78723 355.5461,175.88653"
      stroke="#6b5ca5"
@@ -85,30 +92,36 @@
      font-weight="bold"
      id="text5">auktoritet</text>
   <!-- Radical Transparency -->
-  <circle
-     cx="580"
-     cy="170"
-     r="54"
-     fill="#2D5F2D"
-     id="circle5" />
   <path
-     d="M 541.25532,203.4539 452.9078,265.67376"
+     d="M 532.74468,246.00709 452.9078,265.67376"
      stroke="#2d5f2d"
      stroke-width="3"
      id="path5"
      sodipodi:nodetypes="cc" />
+  <path
+     d="m 550.61409,171.82525 -103.24113,77.8227"
+     stroke="#2d5f2d"
+     stroke-width="3"
+     id="path5-6"
+     sodipodi:nodetypes="cc" />
+  <circle
+     cx="580"
+     cy="234"
+     r="54"
+     fill="#2d5f2d"
+     id="circle5" />
   <text
      x="580"
-     y="160"
+     y="224"
      font-family="Arial, sans-serif"
-     font-size="12"
+     font-size="12px"
      text-anchor="middle"
-     fill="white"
+     fill="#ffffff"
      font-weight="bold"
      id="text6">Radikal</text>
   <text
      x="580"
-     y="180"
+     y="244"
      font-family="Arial, sans-serif"
      font-size="12px"
      text-anchor="middle"
@@ -352,6 +365,47 @@
      r="54"
      fill="#6b5ca5"
      id="circle21" />
+  <circle
+     cx="593.84399"
+     cy="140.85815"
+     r="54"
+     fill="#2d5f2d"
+     id="circle5-3" />
+  <text
+     x="594.17017"
+     y="121.85844"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text10-6">Motståndskraft</text>
+  <text
+     x="594.17017"
+     y="141.85843"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text11-7"><tspan
+       sodipodi:role="line"
+       id="tspan36-5"
+       x="594.17017"
+       y="141.85843">och</tspan></text>
+  <text
+     x="593.3772"
+     y="163.55374"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text11-3-3"><tspan
+       sodipodi:role="line"
+       id="tspan36-6-5"
+       x="593.3772"
+       y="163.55374">anti-fragilitet</tspan></text>
   <path
      d="M 478.43972,147.80142 430,240"
      stroke="#6b5ca5"
@@ -495,12 +549,6 @@
      text-anchor="start"
      id="text32">Evolution  Integration</text>
   <!-- Small interconnection lines between principles -->
-  <path
-     d="M580 224 L580 376"
-     stroke="#DAA520"
-     stroke-width="1.5"
-     stroke-dasharray="5,3"
-     id="path32" />
   <circle
      cx="400"
      cy="300"
