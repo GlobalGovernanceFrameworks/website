@@ -131,6 +131,12 @@
     "description": "Redo att utforska den kompletta dokumentationen? Våra omfattande guider ger detaljerade implementeringsinstruktioner, principer, fallstudier och resurser.",
     "button": "Utforska fullständig dokumentation"
   },
-  "cta": "Bidra till Ramverket"
+  "cta": "Bidra till Ramverket",
+  "principles": {
+    "interconnection": {
+      "title": "Samband mellan Kärnprinciper",
+      "description": "Detta diagram illustrerar hur de tolv konstitutionella principerna fungerar tillsammans som ett integrerat system. Principerna är organiserade efter funktion: styrningsstruktur (grön), rättigheter och miljö (brun), resurs- och konflikthantering (guld), samt evolution och integration (lila). Varje princip ansluter till det centrala Global Governance Framework samtidigt som den förstärker och balanserar andra principer."
+    }
+  }
 }
 

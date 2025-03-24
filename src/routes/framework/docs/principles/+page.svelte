@@ -4,6 +4,7 @@
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
+  import { base } from '$app/paths';
   
   export let data;
   
@@ -37,10 +38,25 @@
       </ul>
     </nav>
   </div>
-  
+
   <div class="content">
+    <!-- Visual Diagram at the top -->
+    <div class="diagram-container">
+      <h3 class="diagram-title">{$t('framework.principles.interconnection.title')}</h3>
+      <p class="diagram-description">{$t('framework.principles.interconnection.description')}</p>
+      
+      <!-- Show diagram based on language -->
+      {#if $locale === 'sv'}
+        <img src="{base}/framework/principles-interconnection-sv.svg" alt="Samband mellan Kärnprinciper" class="principles-diagram" />
+      {:else}
+        <img src="{base}/framework/principles-interconnection-en.svg" alt="Core Principles Interconnection" class="principles-diagram" />
+      {/if}
+    </div>
+
+
     <svelte:component this={data.component} />
   </div>
+
 </div>
 
 <style>

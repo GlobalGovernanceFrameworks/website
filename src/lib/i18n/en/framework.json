@@ -131,5 +131,11 @@
     "description": "Ready to explore the complete documentation? Our comprehensive guides provide detailed implementation instructions, principles, case studies, and resources.",
     "button": "Explore Full Documentation"
   },
-  "cta": "Contribute to the Framework"
+  "cta": "Contribute to the Framework",
+  "principles": {
+    "interconnection": {
+      "title": "Core Principles Interconnection",
+      "description": "This diagram illustrates how the twelve constitutional principles work together as an integrated system. The principles are organized by function: governance structure (green), rights and environment (brown), resource and conflict management (gold), and evolution and integration (purple). Each principle connects to the central Global Governance Framework while also reinforcing and balancing other principles."
+    }
+  }
 }
