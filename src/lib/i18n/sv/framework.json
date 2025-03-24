@@ -3,6 +3,15 @@
     "title": "Ramverket",
     "subtitle": "Verktyg för interoperabilitet och utveckling inom styrning"
   },
+  "quickAccess": {
+    "title": "Utforska ramverksdokumentationen",
+    "description": "Få tillgång till detaljerad dokumentation om principer, implementeringsguider, fallstudier och resurser.",
+    "viewDocs": "Visa dokumentation",
+    "corePrinciples": "Kärnprinciper",
+    "implementation": "Implementering",
+    "caseStudies": "Fallstudier",
+    "resources": "Resurser"
+  },
   "intro": {
     "title": "Introduktion till Meta-Styrning",
     "paragraph1": "Världen är fylld av styrningsexperiment på olika nivåer, men de fungerar ofta isolerat. Ramverket för Global Styrning tillhandahåller mönster och gränssnitt som gör det möjligt för dessa olika system att samverka.",
@@ -85,11 +94,6 @@
       "Arkitektur för Adaptiv Styrning"
     ]
   },
-  "documentation": {
-    "title": "Detaljerad Dokumentation",
-    "description": "Utforska vår omfattande dokumentation med detaljerade guider, principer och implementeringsstrategier.",
-    "viewButton": "Visa Dokumentation"
-  },
   "docs": {
     "nav": {
       "overview": "Översikt",
@@ -121,6 +125,11 @@
         {"name": "Styrnings-API:er", "description": "Standardiserade sätt för delsystem att kommunicera"}
       ]
     }
+  },
+  "learnMore": {
+    "title": "Fördjupa dig i ramverket",
+    "description": "Redo att utforska den kompletta dokumentationen? Våra omfattande guider ger detaljerade implementeringsinstruktioner, principer, fallstudier och resurser.",
+    "button": "Utforska fullständig dokumentation"
   },
   "cta": "Bidra till Ramverket"
 }

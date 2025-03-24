@@ -3,7 +3,13 @@
     "home": "Hem",
     "about": "Om",
     "framework": "Ramverk",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "frameworkOverview": "Introduktion av ramverk",
+    "frameworkDocs": "Översikt",
+    "frameworkPrinciples": "Grundprinciper",
+    "frameworkImplementation": "Implementering",
+    "frameworkCaseStudies": "Fallstudier",
+    "frameworkResources": "Resurser"
   },
   "footer": {
     "copyright": "© 2025 Global Governance Framework",

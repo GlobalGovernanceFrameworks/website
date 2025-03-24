@@ -3,6 +3,15 @@
     "title": "The Framework",
     "subtitle": "Tools for governance interoperability and evolution"
   },
+  "quickAccess": {
+    "title": "Explore the Framework Documentation",
+    "description": "Access detailed documentation on principles, implementation guides, case studies, and resources.",
+    "viewDocs": "View Documentation",
+    "corePrinciples": "Core Principles",
+    "implementation": "Implementation",
+    "caseStudies": "Case Studies",
+    "resources": "Resources"
+  },
   "intro": {
     "title": "Introduction to Meta-Governance",
     "paragraph1": "The world has numerous governance experiments happening at different scales, but they often operate in isolation. The Global Governance Framework provides patterns and interfaces that allow these diverse systems to interoperate.",
@@ -85,11 +94,6 @@
       "Adaptive Governance Architecture"
     ]
   },
-  "documentation": {
-    "title": "Detailed Documentation",
-    "description": "Explore our comprehensive framework documentation with detailed guides, principles, and implementation strategies.",
-    "viewButton": "View Documentation"
-  },
   "docs": {
     "nav": {
       "overview": "Overview",
@@ -121,6 +125,11 @@
         {"name": "Governance APIs", "description": "Standardized ways for subsystems to communicate"}
       ]
     }
+  },
+  "learnMore": {
+    "title": "Dive Deeper into the Framework",
+    "description": "Ready to explore the complete documentation? Our comprehensive guides provide detailed implementation instructions, principles, case studies, and resources.",
+    "button": "Explore Full Documentation"
   },
   "cta": "Contribute to the Framework"
 }

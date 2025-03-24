@@ -19,6 +19,43 @@
   </div>
 </section>
 
+<!-- Documentation Quick Access Section -->
+<section style="padding: 2rem 0; background-color: #f0f9ff; border-bottom: 1px solid #dbeafe;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <div style="max-width: 600px; margin-bottom: 1.5rem;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; color: #1e40af; margin-bottom: 0.75rem;">
+          {$t('framework.quickAccess.title')}
+        </h2>
+        <p style="color: #4b5563; margin-bottom: 1.5rem;">
+          {$t('framework.quickAccess.description')}
+        </p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+          <a href="{base}/framework/docs" style="min-width: 180px; background-color: #2563eb; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('framework.quickAccess.viewDocs')}
+          </a>
+          <a href="{base}/framework/docs/principles" style="min-width: 180px; background-color: white; border: 1px solid #2563eb; color: #2563eb; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: all 0.2s;">
+            {$t('framework.quickAccess.corePrinciples')}
+          </a>
+        </div>
+      </div>
+      
+      <!-- Documentation Links -->
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; width: 100%; max-width: 600px; margin-top: 1rem;">
+        <a href="{base}/framework/docs/implementation" style="background-color: white; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #e5e7eb; text-decoration: none; color: #4b5563; font-weight: 500; text-align: center; transition: all 0.2s;">
+          {$t('framework.quickAccess.implementation')}
+        </a>
+        <a href="{base}/framework/docs/case-studies" style="background-color: white; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #e5e7eb; text-decoration: none; color: #4b5563; font-weight: 500; text-align: center; transition: all 0.2s;">
+          {$t('framework.quickAccess.caseStudies')}
+        </a>
+        <a href="{base}/framework/docs/resources" style="background-color: white; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #e5e7eb; text-decoration: none; color: #4b5563; font-weight: 500; text-align: center; transition: all 0.2s; grid-column: span 2;">
+          {$t('framework.quickAccess.resources')}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Main Content Section -->
 <section style="padding: 3rem 0; background-color: white;">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
@@ -114,20 +151,6 @@
         </p>
       </div>
       
-      <div style="background-color: #eff6ff; padding: 1.5rem; border-radius: 0.5rem; border: 1px solid #dbeafe; margin: 2rem 0;">
-        <h3 style="color: #1e40af; font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">
-          {$t('framework.documentation.title')}
-        </h3>
-        <p style="color: #1e40af; margin-bottom: 1rem;">
-          {$t('framework.documentation.description')}
-        </p>
-        <div style="text-align: center; margin-top: 1rem;">
-          <a href="{base}/framework/docs" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('framework.documentation.viewButton')}
-          </a>
-        </div>
-      </div>
-      
       <!-- Core Framework Elements -->
       <div style="margin-top: 3rem; margin-bottom: 3rem;">
         <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #111827;">{$t('framework.coreElements.title')}</h2>
@@ -158,6 +181,26 @@
           </ul>
         </div>
       </div>
+
+      <!-- Learn More Section - Simplified version of the previous documentation link -->
+      <section style="padding: 3rem 0; background-color: #f9fafb; margin-top: 3rem;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+          <div style="max-width: 42rem; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 1.5rem; font-weight: 700; color: #111827; margin-bottom: 1rem;">
+              {$t('framework.learnMore.title')}
+            </h2>
+            <p style="color: #4b5563; margin-bottom: 2rem;">
+              {$t('framework.learnMore.description')}
+            </p>
+            <a href="{base}/framework/docs" style="display: inline-flex; align-items: center; background-color: #2563eb; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {$t('framework.learnMore.button')}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
       
       <!-- Call to Action -->
       <div style="text-align: center; margin-top: 3rem;">

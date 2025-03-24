@@ -3,7 +3,13 @@
     "home": "Home",
     "about": "About",
     "framework": "Framework",
-    "contact": "Contact"
+    "contact": "Contact",
+    "frameworkOverview": "Framework Introduction",
+    "frameworkDocs": "Overview",
+    "frameworkPrinciples": "Core Principles",
+    "frameworkImplementation": "Implementation",
+    "frameworkCaseStudies": "Case Studies",
+    "frameworkResources": "Resources"
   },
   "footer": {
     "copyright": "© 2025 Global Governance Framework",

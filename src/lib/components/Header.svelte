@@ -13,6 +13,9 @@
   // Mobile menu state
   let isMenuOpen = false;
   const toggleMenu = () => isMenuOpen = !isMenuOpen;
+
+  let isDropdownOpen = false;
+  const toggleDropdown = () => isDropdownOpen = !isDropdownOpen;
 </script>
 
 <style>
@@ -163,10 +166,111 @@
     color: #374151; /* gray-700 */
     cursor: pointer;
   }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+    vertical-align: middle;
+    transition: transform 0.2s;
+  }
+
+  .dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    margin-top: 0.25rem;
+    padding-top: 0.25rem;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0.5rem; /* This creates an invisible hover bridge */
+    background-color: transparent;
+  }
+
+  .dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #4b5563;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: #f3f4f6;
+    color: #2563eb;
+    border-left-color: #2563eb;
+  }
+
+  .dropdown-menu a.active {
+    color: #2563eb;
+    border-left-color: #2563eb;
+    font-weight: 600;
+  }
+
+  .hidden {
+    display: none;
+  }
   
   @media (min-width: 768px) {
     .language-select {
       margin-left: 1rem;
+    }
+
+    .md\:hidden {
+      display: none;
+    }
+    
+    .md\:inline-block {
+      display: inline-block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      border: none;
+      border-left: 3px solid #e5e7eb;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: 1rem;
+      display: none;
+    }
+    
+    .dropdown.open .dropdown-menu {
+      display: block;
+    }
+    
+    /* Add a toggle for mobile */
+    .dropdown .dropdown-toggle {
+      display: inline-block;
+      margin-left: 0.5rem;
+      cursor: pointer;
     }
   }
 </style>
@@ -211,20 +315,55 @@
               {$t('common.header.home')}
             </a>
           </li>
+          <li class="nav-item dropdown" class:open={isDropdownOpen}>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <a 
+                href="{base}/framework"
+                class={`nav-link ${$page.url.pathname.startsWith(base + '/framework') ? 'active' : ''}`}
+              >
+                {$t('common.header.framework')}
+                <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+              <button 
+                type="button" 
+                class="dropdown-toggle md:hidden" 
+                on:click|stopPropagation={toggleDropdown}
+                aria-label={isDropdownOpen ? 'Close framework menu' : 'Open framework menu'}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d={isDropdownOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
+                </svg>
+              </button>
+            </div>
+            <div class="dropdown-menu">
+              <a href="{base}/framework" class={$page.url.pathname === base + '/framework' ? 'active' : ''}>
+                {$t('common.header.frameworkOverview')}
+              </a>
+              <a href="{base}/framework/docs" class={$page.url.pathname === base + '/framework/docs' ? 'active' : ''}>
+                {$t('common.header.frameworkDocs')}
+              </a>
+              <a href="{base}/framework/docs/principles" class={$page.url.pathname === base + '/framework/docs/principles' ? 'active' : ''}>
+                {$t('common.header.frameworkPrinciples')}
+              </a>
+              <a href="{base}/framework/docs/implementation" class={$page.url.pathname === base + '/framework/docs/implementation' ? 'active' : ''}>
+                {$t('common.header.frameworkImplementation')}
+              </a>
+              <a href="{base}/framework/docs/case-studies" class={$page.url.pathname === base + '/framework/docs/case-studies' ? 'active' : ''}>
+                {$t('common.header.frameworkCaseStudies')}
+              </a>
+              <a href="{base}/framework/docs/resources" class={$page.url.pathname === base + '/framework/docs/resources' ? 'active' : ''}>
+                {$t('common.header.frameworkResources')}
+              </a>
+            </div>
+          </li>
           <li class="nav-item">
             <a 
               href="{base}/about"
               class={`nav-link ${$page.url.pathname === base + '/about' ? 'active' : ''}`}
             >
               {$t('common.header.about')}
-            </a>
-          </li>
-          <li class="nav-item">
-            <a 
-              href="{base}/framework"
-              class={`nav-link ${$page.url.pathname === base + '/framework' ? 'active' : ''}`}
-            >
-              {$t('common.header.framework')}
             </a>
           </li>
           <li class="nav-item">
