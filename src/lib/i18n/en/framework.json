@@ -85,6 +85,20 @@
       "Adaptive Governance Architecture"
     ]
   },
+  "documentation": {
+    "title": "Detailed Documentation",
+    "description": "Explore our comprehensive framework documentation with detailed guides, principles, and implementation strategies.",
+    "viewButton": "View Documentation"
+  },
+  "docs": {
+    "nav": {
+      "overview": "Overview",
+      "principles": "Core Principles",
+      "implementation": "Implementation",
+      "casestudies": "Case Studies",
+      "resources": "Resources"
+    }
+  },
   "coreElements": {
     "title": "Core Framework Elements",
     "interoperability": {

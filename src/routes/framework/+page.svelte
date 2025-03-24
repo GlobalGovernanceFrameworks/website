@@ -114,17 +114,18 @@
         </p>
       </div>
       
-      <!-- Coming Soon Box -->
       <div style="background-color: #eff6ff; padding: 1.5rem; border-radius: 0.5rem; border: 1px solid #dbeafe; margin: 2rem 0;">
-        <h3 style="color: #1e40af; font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">{$t('framework.comingSoon.title')}</h3>
+        <h3 style="color: #1e40af; font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem;">
+          {$t('framework.documentation.title')}
+        </h3>
         <p style="color: #1e40af; margin-bottom: 1rem;">
-          {$t('framework.comingSoon.intro')}
+          {$t('framework.documentation.description')}
         </p>
-        <ul style="color: #1e40af; margin-left: 1.5rem; list-style-type: disc;">
-          {#each $t('framework.comingSoon.items') as item}
-            <li style="margin-bottom: 0.5rem;">{item}</li>
-          {/each}
-        </ul>
+        <div style="text-align: center; margin-top: 1rem;">
+          <a href="{base}/framework/docs" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('framework.documentation.viewButton')}
+          </a>
+        </div>
       </div>
       
       <!-- Core Framework Elements -->

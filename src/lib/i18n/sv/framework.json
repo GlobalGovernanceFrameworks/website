@@ -85,6 +85,20 @@
       "Arkitektur för Adaptiv Styrning"
     ]
   },
+  "documentation": {
+    "title": "Detaljerad Dokumentation",
+    "description": "Utforska vår omfattande dokumentation med detaljerade guider, principer och implementeringsstrategier.",
+    "viewButton": "Visa Dokumentation"
+  },
+  "docs": {
+    "nav": {
+      "overview": "Översikt",
+      "principles": "Grundprinciper",
+      "implementation": "Implementering",
+      "casestudies": "Fallstudier",
+      "resources": "Resurser"
+    }
+  },
   "coreElements": {
     "title": "Kärnelement i Ramverket",
     "interoperability": {
