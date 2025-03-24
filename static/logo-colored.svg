@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 200 200"
+   width="200"
+   height="200"
+   version="1.1"
+   id="svg79"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview79"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.23"
+     inkscape:cx="100.1182"
+     inkscape:cy="100"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg79" />
+  <defs
+     id="defs8">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#374d91;stop-opacity:1;"
+         offset="0"
+         id="stop9" />
+      <stop
+         style="stop-color:#2f569e;stop-opacity:0.85388857;"
+         offset="1"
+         id="stop10" />
+    </linearGradient>
+    <!-- Natural color gradients as suggested by ChatGPT -->
+    <linearGradient
+       id="earthyGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2D5F2D"
+         id="stop1" />
+      <!-- Deep green -->
+      <stop
+         offset="100%"
+         stop-color="#7D9F7D"
+         id="stop2" />
+      <!-- Lighter earthy green -->
+    </linearGradient>
+    <linearGradient
+       id="cosmicGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         id="stop3" />
+      <!-- Deep blue -->
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         id="stop4" />
+      <!-- Violet -->
+    </linearGradient>
+    <linearGradient
+       id="goldGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#B8860B"
+         id="stop5" />
+      <!-- Dark gold -->
+      <stop
+         offset="100%"
+         stop-color="#DAA520"
+         id="stop6" />
+      <!-- Golden yellow -->
+    </linearGradient>
+    <linearGradient
+       id="rootGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#654321"
+         id="stop7" />
+      <!-- Brown -->
+      <stop
+         offset="100%"
+         stop-color="#8B7355"
+         id="stop8" />
+      <!-- Lighter brown -->
+    </linearGradient>
+    <!-- Filters for glow effects -->
+    <filter
+       id="glow"
+       x="-0.031510417"
+       y="-0.031510417"
+       width="1.0630208"
+       height="1.0630208">
+      <feGaussianBlur
+         stdDeviation="2"
+         result="blur"
+         id="feGaussianBlur8" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="over"
+         id="feComposite8" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient10"
+       x1="83.725769"
+       y1="100"
+       x2="116.27423"
+       y2="100"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Outer circle representing global scope -->
+  <circle
+     id="global-circle"
+     cx="100"
+     cy="100"
+     r="96"
+     stroke="url(#cosmicGradient)"
+     stroke-width="2.5"
+     fill="white"
+     filter="url(#glow)">
+    <!-- Animation suggestion for implementation in CSS -->
+    <animate
+       attributeName="r"
+       values="96;98;96"
+       dur="6s"
+       repeatCount="indefinite" />
+  </circle>
+  <!-- Global core (center) -->
+  <!-- National level (inner circle) -->
+  <circle
+     cx="100"
+     cy="100"
+     r="40"
+     stroke="#6B5CA5"
+     stroke-width="1"
+     stroke-opacity="0.8"
+     stroke-dasharray="2 2"
+     fill="none"
+     id="circle9">
+    <animate
+       attributeName="stroke-opacity"
+       values="0.8;0.6;0.8"
+       dur="8s"
+       repeatCount="indefinite" />
+  </circle>
+  <!-- 5 National nodes -->
+  <!-- Global to National connections -->
+  <line
+     x1="106"
+     y1="86"
+     x2="116"
+     y2="64"
+     stroke="url(#cosmicGradient)"
+     stroke-width="1.2"
+     stroke-opacity="0.8"
+     id="line14" />
+  <line
+     x1="90"
+     y1="94"
+     x2="60"
+     y2="90"
+     stroke="url(#cosmicGradient)"
+     stroke-width="1.2"
+     stroke-opacity="0.8"
+     id="line15" />
+  <line
+     x1="94"
+     y1="112"
+     x2="80"
+     y2="144"
+     stroke="url(#cosmicGradient)"
+     stroke-width="1.2"
+     stroke-opacity="0.8"
+     id="line16" />
+  <line
+     x1="112"
+     y1="108"
+     x2="144"
+     y2="124"
+     stroke="url(#cosmicGradient)"
+     stroke-width="1.2"
+     stroke-opacity="0.8"
+     id="line17" />
+  <line
+     x1="110"
+     y1="88"
+     x2="140"
+     y2="70"
+     stroke="url(#cosmicGradient)"
+     stroke-width="1.2"
+     stroke-opacity="0.8"
+     id="line18" />
+  <!-- Regional level -->
+  <circle
+     cx="100"
+     cy="100"
+     r="68"
+     stroke="#7D9F7D"
+     stroke-width="1"
+     stroke-opacity="0.6"
+     stroke-dasharray="3 3"
+     fill="none"
+     id="circle18">
+    <animate
+       attributeName="stroke-opacity"
+       values="0.6;0.4;0.6"
+       dur="10s"
+       repeatCount="indefinite" />
+  </circle>
+  <circle
+     cx="100"
+     cy="100"
+     r="16.274231"
+     fill="url(#goldGradient)"
+     id="circle8"
+     style="fill:url(#linearGradient10);stroke-width:2.03428;fill-opacity:1">
+    <!-- Subtle pulse animation -->
+    <animate
+       attributeName="r"
+       values="8;8.5;8"
+       dur="3s"
+       repeatCount="indefinite"
+       style="fill:url(#linearGradient10)" />
+  </circle>
+  <!-- Regional nodes connected to Nations -->
+  <!-- Nation 1 regions -->
+  <circle
+     cx="136"
+     cy="54"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle21" />
+  <!-- Nation 2 regions -->
+  <circle
+     cx="44"
+     cy="76"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle22" />
+  <!-- Nation 3 regions -->
+  <circle
+     cx="56"
+     cy="152"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle25" />
+  <circle
+     cx="100"
+     cy="156"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle27" />
+  <!-- Nation 4 regions -->
+  <circle
+     cx="154"
+     cy="104"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle29" />
+  <circle
+     cx="168"
+     cy="116"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle30" />
+  <!-- Nation 5 regions -->
+  <circle
+     cx="156"
+     cy="60"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle31" />
+  <circle
+     cx="164"
+     cy="80"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle32" />
+  <!-- National to Regional connections -->
+  <line
+     x1="116"
+     y1="64"
+     x2="124"
+     y2="40"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line33" />
+  <line
+     x1="116"
+     y1="64"
+     x2="104"
+     y2="36"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line34" />
+  <line
+     x1="116"
+     y1="64"
+     x2="136"
+     y2="54"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line35" />
+  <circle
+     cx="116"
+     cy="64"
+     r="6"
+     fill="url(#goldGradient)"
+     fill-opacity="0.9"
+     id="circle10" />
+  <line
+     x1="60"
+     y1="90"
+     x2="44"
+     y2="76"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line36" />
+  <line
+     x1="60"
+     y1="90"
+     x2="32"
+     y2="96"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line37" />
+  <line
+     x1="60"
+     y1="90"
+     x2="40"
+     y2="116"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line38" />
+  <circle
+     cx="40"
+     cy="116"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle24" />
+  <circle
+     cx="60"
+     cy="90"
+     r="6"
+     fill="url(#goldGradient)"
+     fill-opacity="0.9"
+     id="circle11" />
+  <line
+     x1="80"
+     y1="144"
+     x2="56"
+     y2="152"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line39" />
+  <line
+     x1="80"
+     y1="144"
+     x2="76"
+     y2="168"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line40" />
+  <line
+     x1="80"
+     y1="144"
+     x2="100"
+     y2="156"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line41" />
+  <circle
+     cx="80"
+     cy="144"
+     r="6"
+     fill="url(#goldGradient)"
+     fill-opacity="0.9"
+     id="circle12" />
+  <line
+     x1="144"
+     y1="124"
+     x2="166"
+     y2="136"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line42" />
+  <line
+     x1="144"
+     y1="124"
+     x2="154"
+     y2="104"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line43" />
+  <line
+     x1="144"
+     y1="124"
+     x2="168"
+     y2="116"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line44" />
+  <circle
+     cx="144"
+     cy="124"
+     r="6"
+     fill="url(#goldGradient)"
+     fill-opacity="0.9"
+     id="circle13" />
+  <line
+     x1="140"
+     y1="70"
+     x2="156"
+     y2="60"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line45" />
+  <line
+     x1="140"
+     y1="70"
+     x2="164"
+     y2="80"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line46" />
+  <line
+     x1="140"
+     y1="70"
+     x2="144"
+     y2="44"
+     stroke="#5D8A5D"
+     stroke-width="0.8"
+     stroke-opacity="0.7"
+     id="line47" />
+  <circle
+     cx="140"
+     cy="70"
+     r="6"
+     fill="url(#goldGradient)"
+     fill-opacity="0.9"
+     id="circle14" />
+  <!-- Local nodes - small dots at the edge (reduced number for clarity) -->
+  <circle
+     cx="136"
+     cy="22"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle47" />
+  <circle
+     cx="116"
+     cy="16"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle48" />
+  <circle
+     cx="96"
+     cy="14"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle49" />
+  <circle
+     cx="152"
+     cy="28"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle50" />
+  <circle
+     cx="164"
+     cy="40"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle51" />
+  <circle
+     cx="174"
+     cy="56"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle52" />
+  <circle
+     cx="182"
+     cy="76"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle53" />
+  <circle
+     cx="186"
+     cy="96"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle54" />
+  <circle
+     cx="184"
+     cy="116"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle55" />
+  <circle
+     cx="180"
+     cy="136"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle56" />
+  <circle
+     cx="172"
+     cy="156"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle57" />
+  <circle
+     cx="160"
+     cy="170"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle58" />
+  <circle
+     cx="140"
+     cy="182"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle59" />
+  <circle
+     cx="120"
+     cy="186"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle60" />
+  <circle
+     cx="100"
+     cy="188"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle61" />
+  <circle
+     cx="80"
+     cy="186"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle62" />
+  <circle
+     cx="60"
+     cy="180"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle63" />
+  <circle
+     cx="42"
+     cy="172"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle64" />
+  <circle
+     cx="28"
+     cy="160"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle65" />
+  <circle
+     cx="16"
+     cy="144"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle66" />
+  <circle
+     cx="24"
+     cy="130"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle67" />
+  <circle
+     cx="14"
+     cy="112"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle68" />
+  <circle
+     cx="12"
+     cy="90"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle69" />
+  <circle
+     cx="16"
+     cy="68"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle70" />
+  <circle
+     cx="24"
+     cy="50"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle71" />
+  <circle
+     cx="36"
+     cy="34"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle72" />
+  <circle
+     cx="52"
+     cy="22"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle73" />
+  <circle
+     cx="72"
+     cy="16"
+     r="2"
+     fill="#8B7355"
+     fill-opacity="0.6"
+     id="circle74" />
+  <!-- Regional to Local connections (selected representatives) -->
+  <line
+     x1="124"
+     y1="40"
+     x2="136"
+     y2="22"
+     stroke="#654321"
+     stroke-width="0.5"
+     stroke-opacity="0.5"
+     id="line74" />
+  <circle
+     cx="124"
+     cy="40"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle19" />
+  <line
+     x1="104"
+     y1="36"
+     x2="96"
+     y2="14"
+     stroke="#654321"
+     stroke-width="0.5"
+     stroke-opacity="0.5"
+     id="line75" />
+  <circle
+     cx="104"
+     cy="36"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle20" />
+  <line
+     x1="144"
+     y1="44"
+     x2="152"
+     y2="28"
+     stroke="#654321"
+     stroke-width="0.5"
+     stroke-opacity="0.5"
+     id="line76" />
+  <circle
+     cx="144"
+     cy="44"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle33" />
+  <line
+     x1="76"
+     y1="168"
+     x2="60"
+     y2="180"
+     stroke="#654321"
+     stroke-width="0.5"
+     stroke-opacity="0.5"
+     id="line77" />
+  <circle
+     cx="76"
+     cy="168"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle26" />
+  <line
+     x1="32"
+     y1="96"
+     x2="12"
+     y2="90"
+     stroke="#654321"
+     stroke-width="0.5"
+     stroke-opacity="0.5"
+     id="line78" />
+  <circle
+     cx="32"
+     cy="96"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle23" />
+  <line
+     x1="166"
+     y1="136"
+     x2="180"
+     y2="136"
+     stroke="#654321"
+     stroke-width="0.5"
+     stroke-opacity="0.5"
+     id="line79" />
+  <circle
+     cx="166"
+     cy="136"
+     r="4"
+     fill="url(#earthyGradient)"
+     fill-opacity="0.8"
+     id="circle28" />
+  <!-- Subtle spiral element -->
+</svg>
