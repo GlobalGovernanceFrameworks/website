@@ -12,17 +12,16 @@
 
   // Mobile menu state
   let isMenuOpen = false;
-  const toggleMenu = () => isMenuOpen = !isMenuOpen;
+  const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 
   let isDropdownOpen = false;
-  const toggleDropdown = () => isDropdownOpen = !isDropdownOpen;
+  const toggleDropdown = () => (isDropdownOpen = !isDropdownOpen);
 </script>
 
 <style>
-  /* Fallback styles in case Tailwind isn't loading properly */
   header {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: linear-gradient(to bottom right, #2B4B8C, #6B5CA5); /* Cosmic blue gradient */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 50;
@@ -76,13 +75,13 @@
   .site-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #1e40af; /* blue-800 */
+    color: #ffffff; /* White for contrast on cosmic blue */
   }
   
   .menu-button {
     background: none;
     border: none;
-    color: #4b5563; /* gray-600 */
+    color: #DAA520; /* Gold for menu button */
     cursor: pointer;
   }
   
@@ -140,7 +139,7 @@
   }
   
   .nav-link {
-    color: #4b5563; /* gray-600 */
+    color: #ffffff; /* White for nav links */
     text-decoration: none;
     padding-bottom: 0.25rem;
     border-bottom: 2px solid transparent;
@@ -148,22 +147,22 @@
   }
   
   .nav-link:hover {
-    color: #2563eb; /* blue-600 */
-    border-bottom-color: #2563eb; /* blue-600 */
+    color: #DAA520; /* Gold on hover */
+    border-bottom-color: #DAA520; /* Gold border on hover */
   }
   
   .nav-link.active {
-    color: #2563eb; /* blue-600 */
-    border-bottom-color: #2563eb; /* blue-600 */
+    color: #DAA520; /* Gold for active link */
+    border-bottom-color: #DAA520; /* Gold border for active */
     font-weight: 600;
   }
   
   .language-select {
     padding: 0.375rem 0.75rem;
-    border: 1px solid #d1d5db; /* gray-300 */
+    border: 1px solid #2D5F2D; /* Earthy green border */
     border-radius: 0.375rem;
-    background-color: white;
-    color: #374151; /* gray-700 */
+    background-color: #ffffff;
+    color: #2B4B8C; /* Cosmic blue text */
     cursor: pointer;
   }
 
@@ -188,8 +187,8 @@
     top: 100%;
     left: 0;
     min-width: 200px;
-    background-color: white;
-    border: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    border: 1px solid #2D5F2D; /* Earthy green border */
     border-radius: 0.375rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 20;
@@ -207,28 +206,28 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 0.5rem; /* This creates an invisible hover bridge */
+    height: 0.5rem; /* Invisible hover bridge */
     background-color: transparent;
   }
 
   .dropdown-menu a {
     display: block;
     padding: 0.5rem 1rem;
-    color: #4b5563;
+    color: #2B4B8C; /* Cosmic blue text */
     text-decoration: none;
     border-left: 3px solid transparent;
     transition: all 0.2s;
   }
 
   .dropdown-menu a:hover {
-    background-color: #f3f4f6;
-    color: #2563eb;
-    border-left-color: #2563eb;
+    background-color: #f7f1e3; /* Light gold background on hover */
+    color: #DAA520; /* Gold text on hover */
+    border-left-color: #DAA520; /* Gold border on hover */
   }
 
   .dropdown-menu a.active {
-    color: #2563eb;
-    border-left-color: #2563eb;
+    color: #DAA520; /* Gold for active */
+    border-left-color: #DAA520; /* Gold border for active */
     font-weight: 600;
   }
 
@@ -255,7 +254,7 @@
       position: static;
       box-shadow: none;
       border: none;
-      border-left: 3px solid #e5e7eb;
+      border-left: 3px solid #2D5F2D; /* Earthy green border */
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
       margin-left: 1rem;
@@ -266,7 +265,6 @@
       display: block;
     }
     
-    /* Add a toggle for mobile */
     .dropdown .dropdown-toggle {
       display: inline-block;
       margin-left: 0.5rem;

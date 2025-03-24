@@ -7,8 +7,6 @@
   
   export let data;
   
-  // Navigation items with translation keys instead of hardcoded text
-  // This array doesn't need to be reactive since it just contains keys
   const navItems = [
     { titleKey: 'framework.docs.nav.overview', path: '/framework/docs' },
     { titleKey: 'framework.docs.nav.principles', path: '/framework/docs/principles' },
@@ -17,7 +15,6 @@
     { titleKey: 'framework.docs.nav.resources', path: '/framework/docs/resources' }
   ];
   
-  // Whenever locale changes, invalidate the current page data
   $: if (browser && $locale) {
     invalidate('app:locale');
   }
@@ -63,7 +60,7 @@
   }
   
   .sidebar {
-    border-right: 1px solid #e5e7eb;
+    border-right: 1px solid #2D5F2D; /* Earthy green border */
     padding-right: 1.5rem;
   }
   
@@ -88,13 +85,13 @@
   }
   
   .sidebar a:hover {
-    color: #2563eb;
-    border-left-color: #2563eb;
+    color: #DAA520; /* Gold on hover */
+    border-left-color: #DAA520;
   }
   
   .sidebar a.active {
-    color: #2563eb;
-    border-left-color: #2563eb;
+    color: #DAA520; /* Gold for active */
+    border-left-color: #DAA520;
     font-weight: 600;
   }
   
@@ -107,7 +104,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #111827;
+    color: #2B4B8C; /* Cosmic blue for h1 */
   }
   
   .content :global(h2) {
@@ -115,7 +112,7 @@
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: #2B4B8C; /* Cosmic blue for h2 */
   }
   
   .content :global(h3) {
@@ -123,7 +120,7 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #374151;
+    color: #2B4B8C; /* Cosmic blue for h3 */
   }
   
   .content :global(p) {

@@ -1,56 +1,37 @@
 <!-- src/routes/contact/+page.svelte -->
 <script>
   import { t } from '$lib/i18n';
-  
-  // Form state
+
   let name = '';
   let email = '';
   let message = '';
   let subject = 'general';
-  
   let isSubmitting = false;
   let submitSuccess = false;
   let submitError = false;
-  
-  // Formspree form ID
   const FORMSPREE_ID = "xldjbjgl";
-  
-  // Handle form submission
+
   async function handleSubmit() {
     isSubmitting = true;
     submitSuccess = false;
     submitError = false;
-    
     try {
       const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          subject,
-          message
-        })
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, subject, message })
       });
-      
       if (response.ok) {
-        // Form submitted successfully
         submitSuccess = true;
-        // Clear form
         name = '';
         email = '';
         message = '';
         subject = 'general';
       } else {
-        // Form submission failed
         submitError = true;
-        console.error('Form submission failed:', await response.text());
       }
     } catch (error) {
       submitError = true;
-      console.error('Error submitting form:', error);
     } finally {
       isSubmitting = false;
     }
@@ -62,154 +43,47 @@
   <meta name="description" content="Get in touch with the Global Governance Framework project" />
 </svelte:head>
 
-<section class="py-12 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
-  <div class="container">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">{$t('contact.hero.title')}</h1>
-      <p class="text-xl text-blue-200">{$t('contact.hero.subtitle')}</p>
+<!-- Hero Section with Adjusted Theme -->
+<section style="padding: 4rem 0; background: linear-gradient(to bottom right, #6B5CA5, #4B5CA5); color: #FFF; text-align: center;">
+  <div style="max-width: 800px; margin: auto;">
+    <h1 style="font-size: 2.5rem; font-weight: 700;">{$t('contact.hero.title')}</h1>
+    <p style="font-size: 1.25rem; margin-top: 1rem;">{$t('contact.hero.subtitle')}</p>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section style="padding: 4rem 0; background-color: #F4E5D4;">
+  <div style="max-width: 900px; margin: auto; padding: 0 1rem;">
+    <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+      <form on:submit|preventDefault={handleSubmit} style="background: #FFF3E0; padding: 2rem; border-radius: 10px; width: 100%; max-width: 600px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+        <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; color: #4A3228;">{$t('contact.form.title')}</h2>
+        {#if submitSuccess}
+          <p style="color: #2D6A4F; background: #A3B18A; padding: 1rem; border-radius: 8px;">{$t('contact.form.success')}</p>
+        {/if}
+        {#if submitError}
+          <p style="color: #8B0000; background: #F28F8F; padding: 1rem; border-radius: 8px;">{$t('contact.form.error')}</p>
+        {/if}
+        <label style="display: block; margin-bottom: 0.5rem; color: #4A3228;">{$t('contact.form.fields.name.label')}</label>
+        <input type="text" bind:value={name} required style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;">
+
+        <label style="display: block; margin-top: 1rem; color: #4A3228;">{$t('contact.form.fields.email.label')}</label>
+        <input type="email" bind:value={email} required style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;">
+
+        <label style="display: block; margin-top: 1rem; color: #4A3228;">{$t('contact.form.fields.subject.label')}</label>
+        <select bind:value={subject} style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;">
+          <option value="general">{$t('contact.form.fields.subject.options.general')}</option>
+          <option value="feedback">{$t('contact.form.fields.subject.options.feedback')}</option>
+          <option value="collaboration">{$t('contact.form.fields.subject.options.collaboration')}</option>
+        </select>
+
+        <label style="display: block; margin-top: 1rem; color: #4A3228;">{$t('contact.form.fields.message.label')}</label>
+        <textarea bind:value={message} required rows="5" style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;"></textarea>
+
+        <button type="submit" disabled={isSubmitting} style="width: 100%; background-color: #6B5CA5; color: #FFF3E0; font-weight: 700; padding: 1rem; border-radius: 10px; margin-top: 1rem; border: none; cursor: pointer; transition: 0.2s;">
+          {isSubmitting ? $t('contact.form.sending') : $t('contact.form.submit')}
+        </button>
+      </form>
     </div>
   </div>
 </section>
 
-<section class="py-12 bg-white">
-  <div class="container">
-    <div class="max-w-4xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
-        <div>
-          <h2 class="text-2xl font-bold mb-6">{$t('contact.getInTouch.title')}</h2>
-          <p class="mb-6 text-gray-600">
-            {$t('contact.getInTouch.description')}
-          </p>
-          
-          <div class="space-y-6">
-            <div class="flex items-start space-x-4">
-              <div class="bg-blue-100 p-3 rounded-full text-blue-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg">{$t('contact.getInTouch.contactInfo.email.title')}</h3>
-                <p class="text-gray-600">{$t('contact.getInTouch.contactInfo.email.value')}</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start space-x-4">
-              <div class="bg-blue-100 p-3 rounded-full text-blue-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg">{$t('contact.getInTouch.contactInfo.responseTime.title')}</h3>
-                <p class="text-gray-600">{$t('contact.getInTouch.contactInfo.responseTime.value')}</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start space-x-4">
-              <div class="bg-blue-100 p-3 rounded-full text-blue-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg">{$t('contact.getInTouch.contactInfo.github.title')}</h3>
-                <a href="https://github.com/GlobalGovernanceFramework" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800">
-                  {$t('contact.getInTouch.contactInfo.github.value')}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div>
-          <form on:submit|preventDefault={handleSubmit} class="space-y-6 bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-semibold mb-4">{$t('contact.form.title')}</h3>
-            
-            {#if submitSuccess}
-              <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-                <p>{$t('contact.form.success')}</p>
-              </div>
-            {/if}
-            
-            {#if submitError}
-              <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-                <p>{$t('contact.form.error')}</p>
-              </div>
-            {/if}
-            
-            <div class="text-sm text-gray-500 mb-4">
-              {$t('contact.form.fallback')}
-            </div>
-            
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
-                {$t('contact.form.fields.name.label')}
-              </label>
-              <input 
-                type="text" 
-                id="name" 
-                bind:value={name} 
-                required
-                placeholder={$t('contact.form.fields.name.placeholder')}
-                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
-            
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
-                {$t('contact.form.fields.email.label')}
-              </label>
-              <input 
-                type="email" 
-                id="email" 
-                bind:value={email} 
-                required
-                placeholder={$t('contact.form.fields.email.placeholder')}
-                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              />
-            </div>
-            
-            <div>
-              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">
-                {$t('contact.form.fields.subject.label')}
-              </label>
-              <select 
-                id="subject" 
-                bind:value={subject}
-                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              >
-                <option value="general">{$t('contact.form.fields.subject.options.general')}</option>
-                <option value="feedback">{$t('contact.form.fields.subject.options.feedback')}</option>
-                <option value="collaboration">{$t('contact.form.fields.subject.options.collaboration')}</option>
-                <option value="feature">{$t('contact.form.fields.subject.options.feature')}</option>
-              </select>
-            </div>
-            
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
-                {$t('contact.form.fields.message.label')}
-              </label>
-              <textarea 
-                id="message" 
-                bind:value={message} 
-                required
-                placeholder={$t('contact.form.fields.message.placeholder')}
-                rows="5"
-                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              ></textarea>
-            </div>
-            
-            <button 
-              type="submit" 
-              disabled={isSubmitting}
-              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isSubmitting ? $t('contact.form.sending') : $t('contact.form.submit')}
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
