@@ -1,16 +1,18 @@
+<!-- src/routes/+layout.svelte -->
 <script>
   import '../app.css';
   import Footer from '$lib/components/Footer.svelte';
   import { locale, loadTranslations, detectLocale } from '$lib/i18n';
-  import { onMount } from 'svelte';
+  import { onMount, onDestroy } from 'svelte';
   import { navigating, page } from '$app/stores';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
-  import { writable } from 'svelte/store';  
+  import { writable, get } from 'svelte/store';
   import Header from '$lib/components/Header.svelte';
   import { registerServiceWorker } from '$lib/utils/registerServiceWorker';
   
-  // Add a timeout to prevent infinite loading
+  // Initialize stores at the top level
+  const translationsLoaded = writable(browser ? false : true);
   let loadingTimeout;
   
   onMount(async () => {
@@ -26,21 +28,21 @@
       }
       
       try {
-        await loadTransations(initLocale, path);
+        await loadTranslations(initLocale, path);
       } catch (error) {
         console.error("Error loading translations:", error);
       } finally {
-        // Ensure we set translationsLoaded to true even if there was an error
         translationsLoaded.set(true);
       }
 
-      // Set a safety timeout to prevent infinite loading
+      // Set a safety timeout - this won't use the reactive $translationsLoaded
       loadingTimeout = setTimeout(() => {
-        if (!$translationsLoaded) {
+        // Use get() to check the current store value
+        if (!get(translationsLoaded)) {
           console.warn("Loading timeout reached - forcing content display");
           translationsLoaded.set(true);
         }
-      }, 5000); // 5 second safety timeout
+      }, 5000);
       
       registerServiceWorker();
     }
@@ -58,18 +60,19 @@
       path = path.slice(base.length) || '/';
     }
     
-    const loadingPromise = loadTranslations($locale, path);
-    
-    // Set another safety timeout for navigation
+    // Clear any existing timeout
     if (loadingTimeout) clearTimeout(loadingTimeout);
+    
+    // Set a new safety timeout
     loadingTimeout = setTimeout(() => {
-      if (!$translationsLoaded) {
+      // Use get() to check the current store value
+      if (!get(translationsLoaded)) {
         console.warn("Navigation loading timeout reached - forcing content display");
         translationsLoaded.set(true);
       }
     }, 5000);
     
-    loadingPromise
+    loadTranslations($locale, path)
       .then(() => {
         translationsLoaded.set(true);
       })
@@ -84,6 +87,7 @@
 {#if browser && !$translationsLoaded}
   <div class="loading-overlay">
     <div class="loading-spinner"></div>
+    <p class="loading-message">Loading content...</p>
   </div>
 {/if}
 
@@ -106,6 +110,7 @@
     height: 100%;
     background-color: #ffffff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 9999;
@@ -118,6 +123,12 @@
     border-top: 5px solid #2B4B8C; /* Cosmic blue from your theme */
     border-radius: 50%;
     animation: spin 1s linear infinite;
+  }
+  
+  .loading-message {
+    margin-top: 1rem;
+    color: #2B4B8C;
+    font-size: 0.9rem;
   }
   
   @keyframes spin {
