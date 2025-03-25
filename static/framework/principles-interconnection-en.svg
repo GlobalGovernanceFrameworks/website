@@ -23,7 +23,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.41"
-     inkscape:cx="235.8156"
+     inkscape:cx="379.07801"
      inkscape:cy="300"
      inkscape:window-width="2520"
      inkscape:window-height="1048"
@@ -37,6 +37,13 @@
      height="600"
      fill="#ffffff"
      id="rect1" />
+  <path
+     d="M 178.31581,234.85792 447.33708,441.2409"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path35-3-6"
+     sodipodi:nodetypes="cc" />
   <path
      d="M 580,278.60993 V 376"
      stroke="#daa520"
@@ -151,6 +158,19 @@
      fill="#ffffff"
      font-weight="bold"
      id="text9">Participation</text>
+  <path
+     d="m 305.37255,422.90047 132.85106,26.95036"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path35-3-5"
+     sodipodi:nodetypes="cc" />
+  <circle
+     cx="475.07092"
+     cy="485.41135"
+     r="54"
+     fill="#6b5ca5"
+     id="circle21-3" />
   <!-- Universal Human Rights -->
   <circle
      cx="580"
@@ -201,6 +221,15 @@
      font-weight="bold"
      id="text10-5">Anti-Fragility</text>
   <text
+     x="475.07092"
+     y="479.41135"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text22-6">Common/Shared</text>
+  <text
      x="580"
      y="442"
      font-family="Arial, sans-serif"
@@ -209,34 +238,44 @@
      fill="#ffffff"
      font-weight="bold"
      id="text11">Human Rights</text>
+  <text
+     x="475.07092"
+     y="499.41135"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text23-7">Values</text>
   <!-- Environmental Stewardship -->
   <circle
-     cx="400"
+     cx="370"
      cy="480"
      r="54"
      fill="#654321"
      id="circle11" />
   <path
-     d="M400 426 L400 370"
+     d="m 378.7234,428.12766 10.6383,-59.5461"
      stroke="#654321"
      stroke-width="3"
-     id="path11" />
+     id="path11"
+     sodipodi:nodetypes="cc" />
   <text
-     x="400"
+     x="370"
      y="470"
      font-family="Arial, sans-serif"
-     font-size="12"
+     font-size="12px"
      text-anchor="middle"
-     fill="white"
+     fill="#ffffff"
      font-weight="bold"
      id="text12">Environmental</text>
   <text
-     x="400"
+     x="370"
      y="490"
      font-family="Arial, sans-serif"
-     font-size="12"
+     font-size="12px"
      text-anchor="middle"
-     fill="white"
+     fill="#ffffff"
      font-weight="bold"
      id="text13">Stewardship</text>
   <!-- Cultural Autonomy -->
@@ -444,6 +483,12 @@
      stroke="#6B5CA5"
      stroke-width="3"
      id="path26" />
+  <path
+     d="M 459.63636,435.5484 427.40232,362.10868"
+     stroke="#6b5ca5"
+     stroke-width="3"
+     id="path26-5"
+     sodipodi:nodetypes="cc" />
   <text
      x="140"
      y="390"
@@ -541,6 +586,29 @@
      stroke-dasharray="5, 3"
      id="path35"
      sodipodi:nodetypes="cc" />
+  <path
+     d="M 315.91519,150.29929 470.75207,436.1149"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path35-3"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 519.2481,465.22959 15.82979,-8.51063"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path35-3-2"
+     sodipodi:nodetypes="cc"
+     style="stroke-width:1.5;stroke-dasharray:5.00000043,3;stroke-dashoffset:0" />
+  <path
+     d="m 520.35515,467.49745 15.82979,-8.51063"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path35-3-2-9"
+     sodipodi:nodetypes="cc"
+     style="stroke-width:1.5;stroke-dasharray:5, 3;stroke-dashoffset:0" />
   <circle
      cx="400"
      cy="300"

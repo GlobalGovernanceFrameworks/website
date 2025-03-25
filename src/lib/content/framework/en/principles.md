@@ -275,6 +275,27 @@ Cosmic ethics extends our governance principles beyond Earth, ensuring that spac
 - **New Zealand's Living Standards Framework**: This policy tool measures multiple forms of capital (natural, social, human, financial) to ensure governance decisions maintain resources needed for long-term resilience.
 - **Rotterdam's Water Management System**: This Dutch city has transformed its relationship with flooding by creating multi-purpose infrastructure that adapts to different water levels while enhancing urban quality of life.
 
+## 14. Common/Shared Values
+
+**Principle**: Governance must identify, articulate, and uphold fundamental ethical values that transcend cultural, religious, and philosophical differences while respecting diverse expressions of those values.
+
+**In Practice**:
+- Dialogue mechanisms between different ethical, spiritual, and religious traditions
+- Recognition of multiple valid paths to common ethical outcomes
+- Value-based policy frameworks that identify shared human aspirations
+- Ethics councils with diverse spiritual and philosophical representation
+- Distinguishing between core universal values and their diverse cultural expressions
+
+Common/shared values provide a foundation for dialogue across different worldviews, creating bridges between diverse perspectives while avoiding forced homogenization. This principle helps navigate tensions between universal human rights and cultural autonomy by identifying the common ethical ground that underpins diverse traditions.
+
+**Current Examples:**
+- Interfaith dialogue initiatives that identify shared ethical commitments while respecting theological differences.
+
+**Additional Real-World Applications:**
+- **Parliament of the World's Religions**: This global forum brings together diverse religious and spiritual traditions to identify common ethical commitments while celebrating distinct theological approaches.
+- **UNESCO Universal Declaration on Cultural Diversity**: Establishes principles that balance cultural distinctiveness with shared human values, demonstrating how diversity and unity can be mutually reinforcing.
+- **Earth Charter Initiative**: A global civil society initiative that articulates shared ethical principles for environmental stewardship across diverse cultures, religions, and philosophical traditions.
+
 ## Navigating Tensions Between Principles
 
 The thirteen principles outlined above form a cohesive framework for ethical global governance. However, in real-world implementation, these principles can sometimes appear to be in tension with one another. These tensions are not flaws in the framework but rather inherent complexities of governance that must be navigated thoughtfully. Understanding and addressing these tensions is essential for effective implementation.

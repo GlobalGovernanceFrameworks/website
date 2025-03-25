@@ -52,6 +52,27 @@
      id="path35"
      sodipodi:nodetypes="cc" />
   <path
+     d="M 178.63042,235.86372 421.41056,434.44529"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path35-2"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 313.48194,160.73655 429.31173,430.24011"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path35-2-9"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 267.68905,409.83516 138.52483,45.39008"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path35-2-9-1"
+     sodipodi:nodetypes="cc" />
+  <path
      d="M 240.56738,385.92908 373.04965,162.2695"
      stroke="#2d5f2d"
      stroke-width="1.5"
@@ -209,28 +230,29 @@
        y="455.69531">rättigheter</tspan></text>
   <!-- Environmental Stewardship -->
   <circle
-     cx="400"
-     cy="480"
+     cx="332"
+     cy="474"
      r="54"
      fill="#654321"
      id="circle11" />
   <path
-     d="M400 426 L400 370"
+     d="M 348.22695,426 375.1773,364.32624"
      stroke="#654321"
      stroke-width="3"
-     id="path11" />
+     id="path11"
+     sodipodi:nodetypes="cc" />
   <text
-     x="400"
-     y="470"
+     x="332"
+     y="464"
      font-family="Arial, sans-serif"
-     font-size="12"
+     font-size="12px"
      text-anchor="middle"
-     fill="white"
+     fill="#ffffff"
      font-weight="bold"
      id="text12">Miljömässigt</text>
   <text
-     x="400"
-     y="490"
+     x="332"
+     y="484"
      font-family="Arial, sans-serif"
      font-size="12px"
      text-anchor="middle"
@@ -295,6 +317,20 @@
      stroke-width="1.5"
      stroke-dasharray="5, 3"
      id="path33"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 533.60284,454.29788 -29.31915,9.50354"
+     stroke="#654321"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path33-5"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 530.44681,451.69218 -29.31915,9.50354"
+     stroke="#654321"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="path33-5-6"
      sodipodi:nodetypes="cc" />
   <!-- Resource Justice -->
   <circle
@@ -412,6 +448,12 @@
      stroke-width="3"
      id="path21"
      sodipodi:nodetypes="cc" />
+  <path
+     d="m 422.07257,360.86787 18.93617,65.24822"
+     stroke="#6b5ca5"
+     stroke-width="3"
+     id="path21-3"
+     sodipodi:nodetypes="cc" />
   <text
      x="502"
      y="94"
@@ -460,6 +502,39 @@
      fill="#ffffff"
      font-weight="bold"
      id="text26">och mångfald</text>
+  <circle
+     cx="454.10638"
+     cy="474.85107"
+     r="54"
+     fill="#6b5ca5"
+     id="circle23-3" />
+  <text
+     x="454.10638"
+     y="460.85107"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text24-6">Gemensamma/</text>
+  <text
+     x="454.10638"
+     y="480.85107"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text25-7">delade</text>
+  <text
+     x="454.10638"
+     y="500.85107"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text26-5">värderingar</text>
   <!-- Cosmic Ethics -->
   <circle
      cx="140"

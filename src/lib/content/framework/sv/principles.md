@@ -273,6 +273,27 @@ Kosmisk etik utvidgar våra styrprinciper till att omfatta även rymden och ser 
 - **Nya Zeelands ramverk för levnadsstandard**: Detta policyverktyg mäter flera typer av kapital (naturligt, socialt, mänskligt, finansiellt) för att säkerställa att styrbeslut bevarar resurser som behövs för långsiktig motståndskraft.
 - **Rotterdams vattenhanteringssystem**: Denna nederländska stad har omvandlat sitt förhållande till översvämningar genom att skapa multifunktionell infrastruktur som anpassar sig till olika vattennivåer samtidigt som den förbättrar stadslivets kvalitet.
 
+## 14. Gemensamma/Delade Värderingar
+
+**Princip**: Styrning måste identifiera, artikulera och upprätthålla grundläggande etiska värderingar som överbryggar kulturella, religiösa och filosofiska skillnader samtidigt som man respekterar olika uttryck för dessa värderingar.
+
+**I praktiken**:
+- Dialogmekanismer mellan olika etiska, andliga och religiösa traditioner
+- Erkännande av flera giltiga vägar till gemensamma etiska resultat
+- Värderingsbaserade policyramverk som identifierar delade mänskliga strävanden
+- Etikråd med mångfaldig andlig och filosofisk representation
+- Åtskillnad mellan universella kärnvärderingar och deras olika kulturella uttryck
+
+Gemensamma/delade värderingar ger en grund för dialog mellan olika världsåskådningar, skapar broar mellan olika perspektiv samtidigt som påtvingad homogenisering undviks. Denna princip hjälper till att hantera spänningar mellan universella mänskliga rättigheter och kulturell autonomi genom att identifiera den gemensamma etiska grund som ligger till grund för olika traditioner.
+
+**Nuvarande Exempel:**
+- Interreligiösa dialoginitiativ som identifierar gemensamma etiska åtaganden samtidigt som teologiska skillnader respekteras.
+
+**Ytterligare Verkliga Tillämpningar:**
+- **Världsreligionernas Parlament**: Detta globala forum sammanför olika religiösa och andliga traditioner för att identifiera gemensamma etiska åtaganden samtidigt som det firar distinkta teologiska metoder.
+- **UNESCO:s Universella Deklaration om Kulturell Mångfald**: Etablerar principer som balanserar kulturell särprägel med gemensamma mänskliga värderingar, vilket visar hur mångfald och enhet kan förstärka varandra.
+- **Earth Charter Initiative**: Ett globalt civilsamhällesinitiativ som artikulerar delade etiska principer för miljöförvaltning över olika kulturer, religioner och filosofiska traditioner.
+
 ## Navigera spänningar mellan principer
 
 De tretton principerna som beskrivits ovan utgör ett sammanhängande ramverk för etisk global styrning. I praktiken kan dock dessa principer ibland verka stå i konflikt med varandra. Dessa spänningar är inte brister i ramverket, utan snarare inneboende komplexiteter inom styrning som måste hanteras med eftertanke. Att förstå och hantera dessa spänningar är avgörande för en effektiv implementering.
