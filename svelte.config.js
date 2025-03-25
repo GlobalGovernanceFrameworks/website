@@ -22,13 +22,13 @@ const config = {
       assets: 'build',
       fallback: 'index.html',
       precompress: false,
-      strict: false, // Change this to false
-      trailingSlash: 'never'
+      strict: false // Changed to false
     }),
     paths: {
       base: base
     },
     prerender: {
+      entries: [], // Empty to prevent automatic prerendering
       handleHttpError: ({ path, referrer, message }) => {
         // Ignore missing assets during prerendering
         if (path.includes('.png') || 
@@ -40,7 +40,7 @@ const config = {
         }
         
         // For other errors, just warn instead of throwing
-        if (message.includes('navigator is not defined')) {
+        if (message && message.includes('navigator is not defined')) {
           console.warn(`Warning: Navigator not defined error for path: ${path}`);
           return;
         }
@@ -48,7 +48,7 @@ const config = {
         throw new Error(message);
       }
     }
-  },
+  }
 };
 
 export default config;
