@@ -1,4 +1,4 @@
-<!-- src/routes/framework/docs/implementation/economic/+page.svelte -->
+<!-- src/routes/framework/docs/implementation/digital/+page.svelte -->
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';

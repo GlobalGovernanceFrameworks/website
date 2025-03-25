@@ -9,6 +9,8 @@ All notable changes to the Global Governance Framework website will be documente
   - Economic Integration
   - Environmental Stewardship
 - Added list of planned domain-specific implementations to docs
+- Add placeholder files for planned domain-specific implementations
+- Add routes for planned domain-specific implementations
 
 ### Improved
 - Replace default Svelte logo with Global Governance Framework logo

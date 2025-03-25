@@ -115,9 +115,22 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 
 ### Tillgängliga domänimplementeringar:
 - [Ekonomisk integration](/framework/docs/implementation/economic)
-- [Miljöhushållning](/framework/docs/implementation/environment) (Kommer snart)
+- [Miljöhushållning](/framework/docs/implementation/environment)
 - [Fred och konflikthantering](/framework/docs/implementation/peace) (Kommer snart)
 - [Teknikstyrning](/framework/docs/implementation/technology) (Kommer snart)
+- [Utbildningssystem](/framework/docs/implementation/education) (Planerad)
+- [Hälso- och sjukvårdsstyrning](/framework/docs/implementation/healthcare) (Planerad)
+- [Bevarande av kulturarv](/framework/docs/implementation/culture) (Planerad)
+- [Migration och mänsklig rörlighet](/framework/docs/implementation/migration) (Planerad)
+- [Livsmedelssystem och jordbruk](/framework/docs/implementation/food) (Planerad)
+- [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)
+- [Digitala allmänningar](/framework/docs/implementation/digital) (Planerad)
+- [Finansiella system](/framework/docs/implementation/financial) (Planerad)
+- [Rättssystem](/framework/docs/implementation/justice) (Planerad)
+- [Energistyrning](/framework/docs/implementation/energy) (Planerad)
+- [Rymdförvaltning](/framework/docs/implementation/space) (Planerad)
+- [Religiös och andlig dialog](/framework/docs/implementation/spiritual) (Planerad)
+- [Landsbygdsutveckling](/framework/docs/implementation/rural) (Planerad)
 
 Varje domänimplementering ger detaljerad vägledning, verktyg och fallstudier specifika för det området, samtidigt som de följer ramverkets kärnprinciper och implementeringsmetoder.
 

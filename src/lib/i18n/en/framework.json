@@ -94,6 +94,10 @@
       "Adaptive Governance Architecture"
     ]
   },
+  "labels": {
+    "comingSoon": "Coming Soon",
+    "planned": "Planned"
+  },
   "docs": {
     "nav": {
       "overview": "Overview",
@@ -103,6 +107,19 @@
       "implementationEnvironment": "Environmental Stewardship",
       "implementationPeace": "Peace & Conflict Resolution",
       "implementationTechnology": "Technology Governance",
+      "implementationEducation": "Educational Systems",
+      "implementationHealthcare": "Healthcare Governance",
+      "implementationCulture": "Cultural Heritage Preservation",
+      "implementationMigration": "Migration & Human Mobility",
+      "implementationFood": "Food Systems & Agriculture",
+      "implementationUrban": "Urban & Community Development",
+      "implementationDigital": "Digital Commons",
+      "implementationFinancial": "Financial Systems",
+      "implementationJustice": "Justice Systems",
+      "implementationEnergy": "Energy Governance",
+      "implementationSpace": "Space Governance",
+      "implementationSpiritual": "Religious & Spiritual Dialogue",
+      "implementationRural": "Rural Development",
       "casestudies": "Case Studies",
       "resources": "Resources"
     }

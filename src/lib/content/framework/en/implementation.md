@@ -115,9 +115,22 @@ The Global Governance Framework can be applied across various domains. Each doma
 
 ### Available Domain Implementations:
 - [Economic Integration](/framework/docs/implementation/economic)
-- [Environmental Stewardship](/framework/docs/implementation/environment) (Coming soon)
+- [Environmental Stewardship](/framework/docs/implementation/environment)
 - [Peace & Conflict Resolution](/framework/docs/implementation/peace) (Coming soon)
 - [Technology Governance](/framework/docs/implementation/technology) (Coming soon)
+- [Educational Systems](/framework/docs/implementation/education) (Planned)
+- [Healthcare Governance](/framework/docs/implementation/healthcare) (Planned)
+- [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
+- [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
+- [Food Systems & Agriculture](/framework/docs/implementation/food) (Planned)
+- [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
+- [Digital Commons](/framework/docs/implementation/digital) (Planned)
+- [Financial Systems](/framework/docs/implementation/financial) (Planned)
+- [Justice Systems](/framework/docs/implementation/justice) (Planned)
+- [Energy Governance](/framework/docs/implementation/energy) (Planned)
+- [Space Governance](/framework/docs/implementation/space) (Planned)
+- [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual) (Planned)
+- [Rural Development](/framework/docs/implementation/rural) (Planned)
 
 Each domain implementation provides detailed guidance, tools, and case studies specific to that area, while adhering to the core framework principles and implementation approaches.
 

@@ -63,3 +63,21 @@ Here's a list of domain-specific implementations that would complement the exist
 This list covers the major domains of governance that would be necessary for a comprehensive global governance framework. Each document would follow the same structure as the existing implementations, with core principles, multi-level implementation approaches, and case studies.
 
 We will add these to your navigation as "Planned" items to show visitors the full scope of our vision while working on developing the content for each area.
+
+In Swedish::
+
+## Domänspecifika Implementeringar (Planerade)
+
+1. **Fred & Konfliktlösning – Implementering**  
+2. **Teknikstyrning – Implementering**  
+3. **Hälso- och sjukvårdsstyrning – Implementering**  
+4. **Utbildningssystem – Implementering**  
+5. **Bevarande av kulturellt arv – Implementering**  
+6. **Migration & Mänsklig rörlighet – Implementering**  
+7. **Livsmedelssystem & Jordbruk – Implementering**  
+8. **Stads- & Samhällsutveckling – Implementering**  
+9. **Digitala allmänningar – Implementering**  
+10. **Finansiella system – Implementering**  
+11. **Rättssystem – Implementering**  
+12. **Energistyrning – Implementering**  
+

@@ -75,9 +75,9 @@
               <ul class="subnav">
                 {#each item.subItems as subItem}
                   <li class="subnav-item">
-                    {#if subItem.comingSoon}
-                      <span class="coming-soon">
-                        {$t(subItem.titleKey)} <em>(Coming Soon)</em>
+                    {#if subItem.comingSoon || subItem.planned}
+                       <span class="coming-soon">
+                        {$t(subItem.titleKey)} <em>({subItem.planned ? $t('framework.labels.planned') : $t('framework.labels.comingSoon')})</em>
                       </span>
                     {:else}
                       <a 

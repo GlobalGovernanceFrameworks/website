@@ -94,15 +94,32 @@
       "Arkitektur för Adaptiv Styrning"
     ]
   },
+  "labels": {
+    "comingSoon": "Kommer snart",
+    "planned": "Planerad"
+  },
   "docs": {
     "nav": {
       "overview": "Översikt",
       "principles": "Kärnprinciper",
       "implementation": "Implementering",
       "implementationEconomic": "Ekonomisk integration",
+      "implementationEducation": "Utbildningssystem",
       "implementationEnvironment": "Förvaltarskap av natur och miljö",
+      "implementationHealthcare": "Hälso- och sjukvårdsstyrning",
       "implementationPeace": "Fred och konflikthantering",
       "implementationTechnology": "Teknikstyrning",
+      "implementationCulture": "Bevarande av kulturarv",
+      "implementationMigration": "Migration & mänsklig rörlighet",
+      "implementationFood": "Livsmedelssystem & jordbruk",
+      "implementationUrban": "Stads- & samhällsutveckling",
+      "implementationDigital": "Digitala allmänningar",
+      "implementationFinancial": "Finansiella system",
+      "implementationJustice": "Rättssystem",
+      "implementationEnergy": "Energistyrning",
+      "implementationSpace": "Rymdförvaltning",
+      "implementationSpiritual": "Religiös & andlig dialog",
+      "implementationRural": "Landsbygdsutveckling",
       "casestudies": "Fallstudier",
       "resources": "Resurser"
     }
