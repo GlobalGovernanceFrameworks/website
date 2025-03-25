@@ -12,10 +12,48 @@
 
   // Mobile menu state
   let isMenuOpen = false;
+  let isDropdownOpen = false;
+  
   const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 
-  let isDropdownOpen = false;
-  const toggleDropdown = () => (isDropdownOpen = !isDropdownOpen);
+  // Modify this function to properly close the dropdown
+  const toggleDropdown = (e) => {
+    e.stopPropagation(); // Prevent event bubbling
+    isDropdownOpen = !isDropdownOpen;
+  };
+  
+  // Add a function to close the dropdown when clicking outside
+  const closeDropdown = () => {
+    if (isDropdownOpen) isDropdownOpen = false;
+  };
+  
+  // Track if we're on mobile for different behaviors
+  let isMobile = false;
+  
+  onMount(() => {
+    // Check if we're on mobile
+    const checkMobile = () => {
+      isMobile = window.innerWidth < 768;
+    };
+    
+    // Initial check
+    checkMobile();
+    
+    // Add resize listener
+    window.addEventListener('resize', checkMobile);
+    
+    // Add click listener to close dropdown when clicking elsewhere
+    if (typeof document !== 'undefined') {
+      document.addEventListener('click', closeDropdown);
+    }
+    
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+      if (typeof document !== 'undefined') {
+        document.removeEventListener('click', closeDropdown);
+      }
+    };
+  });
 </script>
 
 <style>
@@ -335,7 +373,8 @@
                 </svg>
               </button>
             </div>
-            <div class="dropdown-menu">
+
+            <div class="dropdown-menu" on:click|stopPropagation={() => {}}>
               <a href="{base}/framework" class={$page.url.pathname === base + '/framework' ? 'active' : ''}>
                 {$t('common.header.frameworkOverview')}
               </a>
