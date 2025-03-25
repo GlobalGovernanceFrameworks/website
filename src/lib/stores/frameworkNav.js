@@ -10,7 +10,7 @@ const initialNav = [
     path: '/framework/docs/implementation',
     subItems: [
       { titleKey: 'framework.docs.nav.implementationEconomic', path: '/framework/docs/implementation/economic' },
-      { titleKey: 'framework.docs.nav.implementationEnvironment', path: '/framework/docs/implementation/environment', comingSoon: true },
+      { titleKey: 'framework.docs.nav.implementationEnvironment', path: '/framework/docs/implementation/environment' },
       { titleKey: 'framework.docs.nav.implementationPeace', path: '/framework/docs/implementation/peace', comingSoon: true },
       { titleKey: 'framework.docs.nav.implementationTechnology', path: '/framework/docs/implementation/technology', comingSoon: true }
     ]

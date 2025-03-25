@@ -466,7 +466,7 @@
     <!-- Subtle pulse animation -->
     <animate
        attributeName="r"
-       values="8;8.5;8"
+       values="19.583923;20.5;19.583923"
        dur="3s"
        repeatCount="indefinite"
        style="fill:url(#linearGradient10)" />

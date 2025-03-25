@@ -2,6 +2,20 @@
 
 All notable changes to the Global Governance Framework website will be documented in this file.
 
+## [0.2.1] - 2025-03-25
+
+### Added
+- Added detailed domain-specific implementations of
+  - Economic Integration
+  - Environmental Stewardship
+- Added list of planned domain-specific implementations to docs
+
+### Improved
+- Replace default Svelte logo with Global Governance Framework logo
+
+### Fixed
+- Fixed central circle size in Global Governance Framework logo svg 
+
 ## [0.2.0] - 2025-03-25
 
 ### Added
