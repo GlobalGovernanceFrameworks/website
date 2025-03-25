@@ -136,11 +136,17 @@ async function loadTranslations(newLocale, route = '/') {
 }
 
 // Create a derived store that returns a translation function
+// and update the t derived store to handle loading state
 const t = derived(
   [locale, translations],
   ([$locale, $translations]) => {
     // Return a function that takes a key and returns the translation
     return (key) => {
+      // If the key is empty or not a string, return an empty string
+      if (!key || typeof key !== 'string') {
+        return '';
+      }
+      
       // Split the key by dots to navigate nested objects
       const parts = key.split('.');
       let result = $translations;
@@ -150,16 +156,21 @@ const t = derived(
         if (result && typeof result === 'object' && part in result) {
           result = result[part];
         } else {
-          // If the key doesn't exist, return the key itself as a fallback
-          console.warn(`Translation key not found: ${key}`);
-          return key;
+          // If in development, log warning
+          if (process.env.NODE_ENV === 'development') {
+            console.warn(`Translation key not found: ${key}`);
+          }
+          // Return empty string instead of the key to avoid showing raw translation keys
+          return '';
         }
       }
       
       // Handle different types of results
       if (result === null || result === undefined) {
-        console.warn(`Translation value is null or undefined for key: ${key}`);
-        return key;
+        if (process.env.NODE_ENV === 'development') {
+          console.warn(`Translation value is null or undefined for key: ${key}`);
+        }
+        return '';
       }
       
       return result;

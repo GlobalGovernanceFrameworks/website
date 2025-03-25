@@ -109,6 +109,18 @@ Implementing the framework works best as a gradual, evolutionary process:
 - Mature conflict resolution processes
 - Collective management of shared challenges
 
+## Domain-Specific Implementation
+
+The Global Governance Framework can be applied across various domains. Each domain requires specific consideration while following the core principles and implementation approaches outlined above.
+
+### Available Domain Implementations:
+- [Economic Integration](/framework/docs/implementation/economic)
+- [Environmental Stewardship](/framework/docs/implementation/environment) (Coming soon)
+- [Peace & Conflict Resolution](/framework/docs/implementation/peace) (Coming soon)
+- [Technology Governance](/framework/docs/implementation/technology) (Coming soon)
+
+Each domain implementation provides detailed guidance, tools, and case studies specific to that area, while adhering to the core framework principles and implementation approaches.
+
 ## Implementation Case Studies
 
 ### Local-to-Regional Implementation: Water Management

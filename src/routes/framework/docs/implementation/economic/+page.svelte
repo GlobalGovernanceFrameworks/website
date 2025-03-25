@@ -100,38 +100,6 @@
   .content {
     min-width: 0;
   }
-
-  /* Link styles for markdown content */
-  :global(.content a) {
-    color: #B8860B; /* Gold color from your theme */
-    text-decoration: underline;
-    text-underline-offset: 2px; /* Spacing between text and underline */
-    text-decoration-thickness: 1px; /* Thinner underline for elegance */
-    transition: all 0.2s ease-in-out;
-  }
-
-  :global(.content a:hover) {
-    color: #2B4B8C; /* Cosmic blue on hover */
-    text-decoration-thickness: 2px; /* Slightly thicker underline on hover */
-  }
-
-  :global(.content a:active) {
-    color: #6B5CA5; /* Purple when clicked */
-  }
-
-  :global(.content a:visited) {
-    color: #996515; /* Darker gold for visited links */
-  }
-
-  /* Style external links differently */
-  :global(.content a[href^="http"]) {
-    /* Add an external link indicator if desired */
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23B8860B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg>');
-    background-position: right 2px center;
-    background-repeat: no-repeat;
-    background-size: 12px;
-    padding-right: 16px;
-  }
   
   /* Additional styles for markdown content */
   .content :global(h1) {
