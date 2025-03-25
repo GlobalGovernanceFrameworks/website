@@ -10,9 +10,8 @@
   import Header from '$lib/components/Header.svelte';
   import { registerServiceWorker } from '$lib/utils/registerServiceWorker';
   
-  // Initialize stores at the top level
-  const translationsLoaded = writable(browser ? false : true);
-  let serviceWorkerRegistered = false;
+  // Add a timeout to prevent infinite loading
+  let loadingTimeout;
   
   onMount(async () => {
     // Handle translations
@@ -26,12 +25,29 @@
         path = path.slice(base.length) || '/';
       }
       
-      await loadTranslations(initLocale, path);
-      locale.set(initLocale);
-      translationsLoaded.set(true);
+      try {
+        await loadTransations(initLocale, path);
+      } catch (error) {
+        console.error("Error loading translations:", error);
+      } finally {
+        // Ensure we set translationsLoaded to true even if there was an error
+        translationsLoaded.set(true);
+      }
 
+      // Set a safety timeout to prevent infinite loading
+      loadingTimeout = setTimeout(() => {
+        if (!$translationsLoaded) {
+          console.warn("Loading timeout reached - forcing content display");
+          translationsLoaded.set(true);
+        }
+      }, 5000); // 5 second safety timeout
+      
       registerServiceWorker();
     }
+  });
+  
+  onDestroy(() => {
+    if (loadingTimeout) clearTimeout(loadingTimeout);
   });
 
   // When navigating, reset loading state and load new translations
@@ -42,9 +58,25 @@
       path = path.slice(base.length) || '/';
     }
     
-    loadTranslations($locale, path).then(() => {
-      translationsLoaded.set(true);
-    });
+    const loadingPromise = loadTranslations($locale, path);
+    
+    // Set another safety timeout for navigation
+    if (loadingTimeout) clearTimeout(loadingTimeout);
+    loadingTimeout = setTimeout(() => {
+      if (!$translationsLoaded) {
+        console.warn("Navigation loading timeout reached - forcing content display");
+        translationsLoaded.set(true);
+      }
+    }, 5000);
+    
+    loadingPromise
+      .then(() => {
+        translationsLoaded.set(true);
+      })
+      .catch(error => {
+        console.error("Error loading translations during navigation:", error);
+        translationsLoaded.set(true);
+      });
   }
 </script>
 
