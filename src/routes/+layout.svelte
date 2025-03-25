@@ -10,30 +10,34 @@
   
   import Header from '$lib/components/Header.svelte';
 
-  // Create a store to track translation loading status
-  const translationsLoaded = writable(false);
+  // Create a store to track translation loading status - initialize with true for SSR
+  const translationsLoaded = writable(browser ? false : true);
 
   // Initialize translations
   onMount(async () => {
-    // Get user's preferred locale
-    const initLocale = detectLocale();
-    
-    // Get path without the base path for translation loading
-    let path = $page.url.pathname;
-    if (path.startsWith(base)) {
-      path = path.slice(base.length) || '/';
-    }
-    
-    // Load translations for the current route
-    await loadTranslations(initLocale, path);
-    
-    // Set the locale
+    // Only run in the browser
     if (browser) {
+      // Set to false initially in the browser
+      translationsLoaded.set(false);
+      
+      // Get user's preferred locale
+      const initLocale = detectLocale();
+      
+      // Get path without the base path for translation loading
+      let path = $page.url.pathname;
+      if (path.startsWith(base)) {
+        path = path.slice(base.length) || '/';
+      }
+      
+      // Load translations for the current route
+      await loadTranslations(initLocale, path);
+      
+      // Set the locale
       locale.set(initLocale);
+      
+      // Mark translations as loaded
+      translationsLoaded.set(true);
     }
-    
-    // Mark translations as loaded
-    translationsLoaded.set(true);
   });
 
   // When navigating, reset loading state and load new translations
@@ -50,14 +54,14 @@
   }
 </script>
 
-<!-- Add a global loading overlay that hides content until translations are ready -->
-{#if !$translationsLoaded}
+<!-- Only show loading overlay in the browser -->
+{#if browser && !$translationsLoaded}
   <div class="loading-overlay">
     <div class="loading-spinner"></div>
   </div>
 {/if}
 
-<div class="flex flex-col min-h-screen" class:content-ready={$translationsLoaded}>
+<div class="flex flex-col min-h-screen" class:content-ready={browser && $translationsLoaded}>
   <Header />
   
   <main class="flex-grow container mx-auto px-4 py-8">
