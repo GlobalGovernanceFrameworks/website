@@ -3,6 +3,7 @@
   import { t, locale, locales, getLanguageName, setLocale } from '$lib/i18n';
   import { page } from '$app/stores';
   import { base } from '$app/paths';
+  import { onMount } from 'svelte';
   
   // Handle language selection
   function handleLocaleChange(e) {

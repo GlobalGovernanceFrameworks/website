@@ -3,17 +3,18 @@
   import '../app.css';
   import Footer from '$lib/components/Footer.svelte';
   import { locale, loadTranslations, detectLocale } from '$lib/i18n';
-  import { onMount, onDestroy } from 'svelte';
+  import { onMount, onDestroy } from 'svelte'; // Make sure both are imported
   import { navigating, page } from '$app/stores';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
-  import { writable, get } from 'svelte/store';
+  import { writable, get } from 'svelte/store'; // Import get function
   import Header from '$lib/components/Header.svelte';
   import { registerServiceWorker } from '$lib/utils/registerServiceWorker';
   
   // Initialize stores at the top level
   const translationsLoaded = writable(browser ? false : true);
-  let loadingTimeout;
+  let serviceWorkerRegistered = false;
+  let loadingTimeout = null; // Initialize the timeout variable
   
   onMount(async () => {
     // Handle translations
@@ -27,59 +28,56 @@
         path = path.slice(base.length) || '/';
       }
       
-      try {
-        await loadTranslations(initLocale, path);
-      } catch (error) {
-        console.error("Error loading translations:", error);
-      } finally {
-        translationsLoaded.set(true);
-      }
+      await loadTranslations(initLocale, path);
+      locale.set(initLocale);
+      translationsLoaded.set(true);
 
-      // Set a safety timeout - this won't use the reactive $translationsLoaded
+      // Set a safety timeout for loading
       loadingTimeout = setTimeout(() => {
-        // Use get() to check the current store value
-        if (!get(translationsLoaded)) {
+        const currentValue = get(translationsLoaded);
+        if (!currentValue) {
           console.warn("Loading timeout reached - forcing content display");
           translationsLoaded.set(true);
         }
       }, 5000);
-      
+
       registerServiceWorker();
     }
   });
-  
+
+  // Make sure to clear the timeout when component is destroyed
   onDestroy(() => {
-    if (loadingTimeout) clearTimeout(loadingTimeout);
+    if (loadingTimeout) {
+      clearTimeout(loadingTimeout);
+    }
   });
 
   // When navigating, reset loading state and load new translations
   $: if (browser && $navigating) {
     translationsLoaded.set(false);
+    
+    // Clear existing timeout if present
+    if (loadingTimeout) {
+      clearTimeout(loadingTimeout);
+    }
+    
     let path = $navigating.to?.url.pathname;
     if (path.startsWith(base)) {
       path = path.slice(base.length) || '/';
     }
     
-    // Clear any existing timeout
-    if (loadingTimeout) clearTimeout(loadingTimeout);
-    
     // Set a new safety timeout
     loadingTimeout = setTimeout(() => {
-      // Use get() to check the current store value
-      if (!get(translationsLoaded)) {
+      const currentValue = get(translationsLoaded);
+      if (!currentValue) {
         console.warn("Navigation loading timeout reached - forcing content display");
         translationsLoaded.set(true);
       }
     }, 5000);
     
-    loadTranslations($locale, path)
-      .then(() => {
-        translationsLoaded.set(true);
-      })
-      .catch(error => {
-        console.error("Error loading translations during navigation:", error);
-        translationsLoaded.set(true);
-      });
+    loadTranslations($locale, path).then(() => {
+      translationsLoaded.set(true);
+    });
   }
 </script>
 
