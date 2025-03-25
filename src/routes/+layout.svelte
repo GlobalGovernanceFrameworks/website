@@ -6,9 +6,17 @@
   import { navigating, page } from '$app/stores';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
-  import { writable } from 'svelte/store';
-  
+  import { writable } from 'svelte/store';  
   import Header from '$lib/components/Header.svelte';
+
+  onMount(() => {
+    // Register service worker after component is mounted (client-side only)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker registered'))
+        .catch((err) => console.error('Service Worker registration failed:', err));
+    }
+  });
 
   // Create a store to track translation loading status - initialize with true for SSR
   const translationsLoaded = writable(browser ? false : true);
