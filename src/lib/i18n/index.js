@@ -1,20 +1,14 @@
-// src/lib/i18n/index.js - Modified to reload translations when locale changes
-
+// src/lib/i18n/index.js
 import { browser } from '$app/environment';
 import { derived, writable, readable, get } from 'svelte/store';
 import { base } from '$app/paths';
+import { getBrowserLanguage, getLocalStorage, setLocalStorage } from '$lib/utils/browserUtils';
 
 // Define supported languages
 const supportedLocales = ['en', 'sv'];
 
-// Safely get initial locale without triggering navigator errors
-function getSafeInitialLocale() {
-  if (!browser) return 'en';
-  return localStorage.getItem('locale') || 'en';
-}
-
 // Create stores for the current locale and translations
-const locale = writable(getSafeInitialLocale());
+const locale = writable(getLocalStorage('locale', 'en'));
 const translations = writable({});
 const currentRoute = writable('/');
 
@@ -192,9 +186,7 @@ function setLocale(newLocale) {
     loadTranslations(newLocale, route);
     
     // Update localStorage
-    if (browser) {
-      localStorage.setItem('locale', newLocale);
-    }
+    setLocalStorage('locale', newLocale);
   }
 }
 
@@ -202,12 +194,12 @@ function setLocale(newLocale) {
 const detectLocale = () => {
   if (!browser) return 'en';
   
-  const savedLocale = localStorage.getItem('locale');
+  const savedLocale = getLocalStorage('locale', null);
   if (savedLocale && supportedLocales.includes(savedLocale)) {
     return savedLocale;
   }
   
-  const userLocale = navigator.language.split('-')[0];
+  const userLocale = getBrowserLanguage();
   return supportedLocales.includes(userLocale) ? userLocale : 'en';
 };
 
