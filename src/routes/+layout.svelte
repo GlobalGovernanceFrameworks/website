@@ -8,7 +8,8 @@
   import { base } from '$app/paths';
   import { writable } from 'svelte/store';  
   import Header from '$lib/components/Header.svelte';
-
+  import { registerServiceWorker } from '$lib/utils/registerServiceWorker';
+  
   // Initialize stores at the top level
   const translationsLoaded = writable(browser ? false : true);
   let serviceWorkerRegistered = false;
@@ -28,18 +29,8 @@
       await loadTranslations(initLocale, path);
       locale.set(initLocale);
       translationsLoaded.set(true);
-      
-      // Register service worker after translations are loaded
-      // This ensures the UI is ready before dealing with service worker
-      if (!serviceWorkerRegistered && 'serviceWorker' in navigator) {
-        serviceWorkerRegistered = true;
-        // Slight delay to let the UI stabilize first
-        setTimeout(() => {
-          navigator.serviceWorker.register('/service-worker.js')
-            .then(() => console.log('Service Worker registered'))
-            .catch((err) => console.error('Service Worker registration failed:', err));
-        }, 1000);
-      }
+
+      registerServiceWorker();
     }
   });
 
