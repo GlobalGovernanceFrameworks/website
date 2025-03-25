@@ -9,42 +9,37 @@
   import { writable } from 'svelte/store';  
   import Header from '$lib/components/Header.svelte';
 
-  onMount(() => {
-    // Register service worker after component is mounted (client-side only)
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(() => console.log('Service Worker registered'))
-        .catch((err) => console.error('Service Worker registration failed:', err));
-    }
-  });
-
-  // Create a store to track translation loading status - initialize with true for SSR
+  // Initialize stores at the top level
   const translationsLoaded = writable(browser ? false : true);
-
-  // Initialize translations
+  let serviceWorkerRegistered = false;
+  
   onMount(async () => {
-    // Only run in the browser
+    // Handle translations
     if (browser) {
-      // Set to false initially in the browser
       translationsLoaded.set(false);
       
-      // Get user's preferred locale
       const initLocale = detectLocale();
       
-      // Get path without the base path for translation loading
       let path = $page.url.pathname;
       if (path.startsWith(base)) {
         path = path.slice(base.length) || '/';
       }
       
-      // Load translations for the current route
       await loadTranslations(initLocale, path);
-      
-      // Set the locale
       locale.set(initLocale);
-      
-      // Mark translations as loaded
       translationsLoaded.set(true);
+      
+      // Register service worker after translations are loaded
+      // This ensures the UI is ready before dealing with service worker
+      if (!serviceWorkerRegistered && 'serviceWorker' in navigator) {
+        serviceWorkerRegistered = true;
+        // Slight delay to let the UI stabilize first
+        setTimeout(() => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(() => console.log('Service Worker registered'))
+            .catch((err) => console.error('Service Worker registration failed:', err));
+        }, 1000);
+      }
     }
   });
 
