@@ -97,8 +97,12 @@
   "docs": {
     "nav": {
       "overview": "Översikt",
-      "principles": "Grundprinciper",
+      "principles": "Kärnprinciper",
       "implementation": "Implementering",
+      "implementationEconomic": "Ekonomisk integration",
+      "implementationEnvironment": "Förvaltarskap av natur och miljö",
+      "implementationPeace": "Fred och konflikthantering",
+      "implementationTechnology": "Teknikstyrning",
       "casestudies": "Fallstudier",
       "resources": "Resurser"
     }

@@ -1,20 +1,13 @@
-<!-- src/routes/framework/docs/+page.svelte -->
+<!-- src/routes/framework/docs/implementation/+page.svelte -->
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
-  
+  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
+   
   export let data;
-  
-  const navItems = [
-    { titleKey: 'framework.docs.nav.overview', path: '/framework/docs' },
-    { titleKey: 'framework.docs.nav.principles', path: '/framework/docs/principles' },
-    { titleKey: 'framework.docs.nav.implementation', path: '/framework/docs/implementation' },
-    { titleKey: 'framework.docs.nav.casestudies', path: '/framework/docs/case-studies' },
-    { titleKey: 'framework.docs.nav.resources', path: '/framework/docs/resources' }
-  ];
   
   $: if (browser && $locale) {
     invalidate('app:locale');
@@ -22,22 +15,7 @@
 </script>
 
 <div class="documentation-container">
-  <div class="sidebar">
-    <nav>
-      <ul>
-        {#each navItems as item}
-          <li>
-            <a 
-              href="{item.path}" 
-              class:active={$page.url.pathname === item.path}
-            >
-              {$t(item.titleKey)}
-            </a>
-          </li>
-        {/each}
-      </ul>
-    </nav>
-  </div>
+  <FrameworkSidebar />
 
   <div class="content">
     <svelte:component this={data.component} />
