@@ -2,6 +2,28 @@
 
 All notable changes to the Global Governance Framework website will be documented in this file.
 
+## [0.2.0] - 2025-03-25
+
+### Added
+- Enhanced "About" page with new "Collaborative Development" section highlighting AI tools used
+- Expanded Framework documentation with Core Principles and Implementation Guidelines
+- Added Case Studies section with real-world governance examples
+- Created Resources section with books, tools, and implementation guides
+- Added Privacy Policy and Terms of Use pages with full translation support
+- Implemented Contact form with Formspree integration
+
+### Improved
+- Enhanced navigation with multi-level menu for Framework documentation
+- Created FrameworkSidebar component for better document navigation
+- Improved mobile responsiveness across all pages
+- Enhanced visual design with consistent color scheme and styling
+- Added logo throughout the site for stronger brand identity
+
+### Fixed
+- Resolved translation loading issues on page transitions
+- Fixed base path handling for GitHub Pages deployment
+- Corrected styling inconsistencies in mobile view
+
 ## [0.1.0] - 2025-03-22
 
 ### Added

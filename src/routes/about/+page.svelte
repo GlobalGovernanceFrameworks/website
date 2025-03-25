@@ -108,8 +108,22 @@
           {$t('about.origins.paragraph2')}
         </p>
       </div>
+
+    <!-- Development Approach Section -->
+    <div style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #2B4B8C;">{$t('about.development.title')}</h2>
+      <p style="margin-bottom: 1.5rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
+        {$t('about.development.paragraph1')}
+      </p>
+      <p style="margin-bottom: 1.5rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
+        {$t('about.development.paragraph2')}
+      </p>
+      <p style="color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
+        {$t('about.development.paragraph3')}
+      </p>
     </div>
   </div>
+
 </section>
 
 <!-- Get Involved Section -->

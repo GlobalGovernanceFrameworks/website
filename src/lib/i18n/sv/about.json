@@ -54,6 +54,12 @@
     "paragraph1": "Detta projekt bygger på idéer som utforskades i 'Global Governance – Naturliga Steg mot en Blomstrande Värld', särskilt koncepten kring holarkiska styrningssystem, utveckling enligt Spiral Dynamics, och meta-styrningsramverk som möjliggör samverkan mellan olika styrningsmodeller.",
     "paragraph2": "Istället för att föreslå en enda styrningslösning skapar vi verktyg och ramverk som låter många olika styrningsinnovationer kopplas samman, dela lärdomar och utvecklas tillsammans."
   },
+  "development": {
+    "title": "Kollaborativ utveckling",
+    "paragraph1": "Global Governance Framework återspeglar våra principer inte bara i innehåll utan också i process. Vi har utvecklat både ramverket och denna webbplats genom människa-AI-samarbete, med hjälp av verktyg som Claude, ChatGPT, Grok och DeepSeek.",
+    "paragraph2": "Detta tillvägagångssätt visar hur AI kan fungera som en partner i styrnings- och utvecklingsarbete—förstärka mänsklig kreativitet och insikt utan att ersätta mänskligt omdöme och etisk översyn. AI-verktyg har hjälpt oss att förfina koncept, utveckla implementeringsriktlinjer, skapa tillgängliga förklaringar och identifiera potentiella luckor i vårt ramverk.",
+    "paragraph3": "Genom att vara transparenta om vår användning av AI-assistans, exemplifierar vi den typ av etisk teknologistyrning som vi förespråkar: transparent, människostyrd och i linje med våra värderingar om tillgänglighet och kollektiv intelligens."
+  },
   "getInvolved": {
     "title": "Engagera Dig",
     "contribute": {
