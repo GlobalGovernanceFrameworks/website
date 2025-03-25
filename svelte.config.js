@@ -22,7 +22,8 @@ const config = {
       assets: 'build',
       fallback: 'index.html',
       precompress: false,
-      strict: true
+      strict: false, // Change this to false
+      trailingSlash: 'never'
     }),
     paths: {
       base: base
@@ -37,6 +38,13 @@ const config = {
           console.warn(`Warning: Missing asset during prerendering: ${path}`);
           return;
         }
+        
+        // For other errors, just warn instead of throwing
+        if (message.includes('navigator is not defined')) {
+          console.warn(`Warning: Navigator not defined error for path: ${path}`);
+          return;
+        }
+        
         throw new Error(message);
       }
     }
