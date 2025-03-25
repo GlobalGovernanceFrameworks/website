@@ -7,8 +7,14 @@ import { base } from '$app/paths';
 // Define supported languages
 const supportedLocales = ['en', 'sv'];
 
+// Safely get initial locale without triggering navigator errors
+function getSafeInitialLocale() {
+  if (!browser) return 'en';
+  return localStorage.getItem('locale') || 'en';
+}
+
 // Create stores for the current locale and translations
-const locale = writable(browser ? localStorage.getItem('locale') || 'en' : 'en');
+const locale = writable(getSafeInitialLocale());
 const translations = writable({});
 const currentRoute = writable('/');
 
