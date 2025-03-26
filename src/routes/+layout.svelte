@@ -16,30 +16,29 @@
   let serviceWorkerRegistered = false;
   let loadingTimeout = null; // Initialize the timeout variable
   
+  // Modify mounted behavior
   onMount(async () => {
     // Handle translations
     if (browser) {
-      translationsLoaded.set(false);
-      
       const initLocale = detectLocale();
       
       let path = $page.url.pathname;
-      if (path.startsWith(base)) {
-        path = path.slice(base.length) || '/';
-      }
+      console.log(`Initial path: ${path}`);
       
-      await loadTranslations(initLocale, path);
-      locale.set(initLocale);
-      translationsLoaded.set(true);
+      try {
+        await loadTranslations(initLocale, path);
+        locale.set(initLocale);
+      } catch (e) {
+        console.error("Translation loading error:", e);
+      } finally {
+        // Always show content even if translations fail
+        translationsLoaded.set(true);
+      }
 
-      // Set a safety timeout for loading
+      // Set a safety timeout for loading (shortened)
       loadingTimeout = setTimeout(() => {
-        const currentValue = get(translationsLoaded);
-        if (!currentValue) {
-          console.warn("Loading timeout reached - forcing content display");
-          translationsLoaded.set(true);
-        }
-      }, 5000);
+        translationsLoaded.set(true);
+      }, 2000);
 
       registerServiceWorker();
     }
@@ -52,32 +51,25 @@
     }
   });
 
-  // When navigating, reset loading state and load new translations
+  // When navigating, use a more reliable approach
   $: if (browser && $navigating) {
-    translationsLoaded.set(false);
+    console.log(`Navigating to: ${$navigating.to?.url.pathname}`);
     
     // Clear existing timeout if present
     if (loadingTimeout) {
       clearTimeout(loadingTimeout);
     }
     
-    let path = $navigating.to?.url.pathname;
-    if (path.startsWith(base)) {
-      path = path.slice(base.length) || '/';
-    }
+    let path = $navigating.to?.url.pathname || '/';
     
-    // Set a new safety timeout
+    // Set a shorter safety timeout
     loadingTimeout = setTimeout(() => {
-      const currentValue = get(translationsLoaded);
-      if (!currentValue) {
-        console.warn("Navigation loading timeout reached - forcing content display");
-        translationsLoaded.set(true);
-      }
-    }, 5000);
-    
-    loadTranslations($locale, path).then(() => {
       translationsLoaded.set(true);
-    });
+    }, 2000);
+    
+    loadTranslations($locale, path)
+      .catch(e => console.error("Translation loading error during navigation:", e))
+      .finally(() => translationsLoaded.set(true));
   }
 </script>
 
