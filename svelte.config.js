@@ -5,7 +5,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 // When using a custom domain, we don't need a base path
 const dev = process.env.NODE_ENV === 'development';
-const base = dev ? '' : '/governance-framework-site'; // Replace with your actual repository
+const base = '';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

@@ -55,6 +55,11 @@
       }
     };
   });
+
+  // Function to check if a path is active
+  function isActive(path) {
+    return $page.url.pathname === base + path;
+  }
 </script>
 
 <style>
@@ -348,6 +353,7 @@
             <a 
               href="{base}/"
               class={`nav-link ${$page.url.pathname === base + '/' || $page.url.pathname === base ? 'active' : ''}`}
+              data-sveltekit-preload-data="hover"
             >
               {$t('common.header.home')}
             </a>
@@ -357,6 +363,7 @@
               <a 
                 href="{base}/framework"
                 class={`nav-link ${$page.url.pathname.startsWith(base + '/framework') ? 'active' : ''}`}
+                data-sveltekit-preload-data="hover"
               >
                 {$t('common.header.framework')}
                 <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -376,22 +383,22 @@
             </div>
 
             <div class="dropdown-menu" on:click|stopPropagation={() => {}}>
-              <a href="{base}/framework" class={$page.url.pathname === base + '/framework' ? 'active' : ''}>
+              <a href="{base}/framework" class={isActive('/framework') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkOverview')}
               </a>
-              <a href="{base}/framework/docs" class={$page.url.pathname === base + '/framework/docs' ? 'active' : ''}>
+              <a href="{base}/framework/docs" class={isActive('/framework/docs') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkDocs')}
               </a>
-              <a href="{base}/framework/docs/principles" class={$page.url.pathname === base + '/framework/docs/principles' ? 'active' : ''}>
+              <a href="{base}/framework/docs/principles" class={isActive('/framework/docs/principles') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkPrinciples')}
               </a>
-              <a href="{base}/framework/docs/implementation" class={$page.url.pathname === base + '/framework/docs/implementation' ? 'active' : ''}>
+              <a href="{base}/framework/docs/implementation" class={isActive('/framework/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkImplementation')}
               </a>
-              <a href="{base}/framework/docs/case-studies" class={$page.url.pathname === base + '/framework/docs/case-studies' ? 'active' : ''}>
+              <a href="{base}/framework/docs/case-studies" class={isActive('/framework/docs/case-studies') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkCaseStudies')}
               </a>
-              <a href="{base}/framework/docs/resources" class={$page.url.pathname === base + '/framework/docs/resources' ? 'active' : ''}>
+              <a href="{base}/framework/docs/resources" class={isActive('/framework/docs/resources') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkResources')}
               </a>
             </div>
@@ -400,6 +407,7 @@
             <a 
               href="{base}/about"
               class={`nav-link ${$page.url.pathname === base + '/about' ? 'active' : ''}`}
+              data-sveltekit-preload-data="hover"
             >
               {$t('common.header.about')}
             </a>
@@ -408,6 +416,7 @@
             <a 
               href="{base}/contact"
               class={`nav-link ${$page.url.pathname === base + '/contact' ? 'active' : ''}`}
+              data-sveltekit-preload-data="hover"
             >
               {$t('common.header.contact')}
             </a>
