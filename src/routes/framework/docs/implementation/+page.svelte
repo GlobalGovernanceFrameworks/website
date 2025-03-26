@@ -3,24 +3,37 @@
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
-  import { invalidate } from '$app/navigation';
-  import { base } from '$app/paths';
+  import { onMount } from 'svelte';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
-   
+  
   export let data;
   
-  $: if (browser && $locale) {
-    invalidate('app:locale');
-  }
+  // We'll use this flag to control when to render the content
+  let contentReady = false;
+  
+  onMount(() => {
+    // After mounting, we can safely render the content
+    contentReady = true;
+  });
 </script>
 
 <div class="documentation-container">
   <FrameworkSidebar />
 
   <div class="content">
-    <svelte:component this={data.component} />
+    <!-- Only render the markdown component on the client -->
+    {#if browser && contentReady && data.component}
+      <svelte:component this={data.component} />
+    {:else if browser}
+      <div class="loading">Loading content...</div>
+    {:else}
+      <!-- SSR placeholder that will match the basic structure -->
+      <div class="ssr-placeholder">
+        <h1>Implementation Guidelines</h1>
+        <p>Loading content...</p>
+      </div>
+    {/if}
   </div>
-
 </div>
 
 <style>
