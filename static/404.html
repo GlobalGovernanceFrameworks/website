@@ -6,9 +6,6 @@
   <title>Redirecting...</title>
   <script>
     // Single Page App routing fix for GitHub Pages
-    // https://github.com/rafgraph/spa-github-pages
-    
-    // This script checks if we need to redirect to a different path
     (function() {
       // Get the current path
       const path = window.location.pathname;
@@ -21,7 +18,7 @@
       // Save the route to session storage so the main page can redirect to it
       sessionStorage.setItem('redirectPath', path);
       
-      // Redirect to the main page
+      // Redirect to the main page (use the correct base)
       window.location.href = '/';
     })();
   </script>
