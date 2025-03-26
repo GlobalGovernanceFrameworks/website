@@ -28,7 +28,7 @@ const config = {
       base: base
     },
     prerender: {
-      entries: [],
+      entries: ['*'],
       handleHttpError: ({ path, referrer, message }) => {
         // Ignore missing assets during prerendering
         if (path.includes('.png') || 
