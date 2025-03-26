@@ -3,9 +3,9 @@ import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
+// When using a custom domain, we don't need a base path
 const dev = process.env.NODE_ENV === 'development';
-// For custom domain, no base path is needed
-const base = dev ? '' : '';
+const base = ''; // Empty base path for both dev and production
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -22,13 +22,13 @@ const config = {
       assets: 'build',
       fallback: 'index.html',
       precompress: false,
-      strict: false // Changed to false
+      strict: false
     }),
     paths: {
       base: base
     },
     prerender: {
-      entries: [], // Empty to prevent automatic prerendering
+      entries: [],
       handleHttpError: ({ path, referrer, message }) => {
         // Ignore missing assets during prerendering
         if (path.includes('.png') || 

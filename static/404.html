@@ -4,18 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
+  <title>Page Not Found</title>
   <script>
-    // Get the current path
-    const path = window.location.pathname;
-    // Remove any trailing slash
-    const cleanPath = path.endsWith('/') ? path.slice(0, -1) : path;
-    // Redirect to the base path
-    window.location.href = '/governance-framework-site' + 
-      (cleanPath.startsWith('/governance-framework-site') ? '' : cleanPath);
+    // Simply redirect to the homepage without any path manipulation
+    window.location.href = '/';
   </script>
 </head>
 <body>
-  <p>Redirecting to home page...</p>
+  <p>Page not found. Redirecting to home page...</p>
 </body>
 </html>
