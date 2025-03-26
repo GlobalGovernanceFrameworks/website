@@ -50,12 +50,19 @@
           }
         });
       }
-      // Handle hash-based routing for GitHub Pages
+      // Handle hash-based routing and redirect paths
       (function() {
+        // First check if we have a hash route
         const { hash } = window.location;
         if (hash && hash.length > 1) {
           const path = hash.slice(1);
           history.replaceState(null, null, path);
+        } 
+        // Then check if we have a saved redirect path
+        else if (sessionStorage.getItem('redirectPath')) {
+          const redirectPath = sessionStorage.getItem('redirectPath');
+          sessionStorage.removeItem('redirectPath');
+          history.replaceState(null, null, redirectPath);
         }
       })();
     </script>
