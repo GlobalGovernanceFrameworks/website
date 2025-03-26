@@ -1,14 +1,5 @@
-// src/lib/utils/registerServiceWorker.js
 export function registerServiceWorker() {
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then((registration) => {
-          console.log('ServiceWorker registration successful');
-        })
-        .catch((error) => {
-          console.error('ServiceWorker registration failed:', error);
-        });
-    });
-  }
+  // Service worker registration completely disabled until routing issues are fixed
+  console.log('Service worker registration disabled');
+  return;
 }
