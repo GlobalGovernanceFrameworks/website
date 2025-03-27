@@ -87,7 +87,6 @@ The aim is to create a versatile, modular, and culturally adaptable governance t
 | 22-min Mars-Earth lag  | Asynchronous deliberation batches          | Participatory budgeting       |  
 | Oxygen rationing       | Survival-weighted ethics checklists        | Universal ethics rubrics      |  
 | AI-run life support    | Weekly human ritual oversight              | Human-in-the-loop arbitration |  
-| *[More cases →](offworld-wiki.example.org)*  |                                           |                               |  
 
 ## Governance Archetype Profiles (Examples)
 

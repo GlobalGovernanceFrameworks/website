@@ -60,7 +60,10 @@ const initialNav = [
         ]
       }
     ]
-  }
+  },
+  { titleKey: 'framework.docs.nav.case-studies', path: '/framework/docs/case-studies' },
+  { titleKey: 'framework.docs.nav.resources', path: '/framework/docs/resources' },
+  { titleKey: 'framework.docs.nav.glossary', path: '/framework/docs/glossary' },
 ];
 
 // Create a writable store with initial value

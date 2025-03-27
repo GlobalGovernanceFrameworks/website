@@ -235,5 +235,6 @@ export {
   detectLocale,
   languageData,
   getLanguageName,
-  currentRoute
+  currentRoute,
+  translations
 };

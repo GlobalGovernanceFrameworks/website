@@ -78,24 +78,24 @@ An interactive platform for understanding developmental frameworks including Spi
 Use this framework to determine the appropriate governance level for specific issues:
 
 1. **Issue Identification**
-   - Clearly define the issue and its boundaries
-   - Identify all stakeholders affected
+  - Clearly define the issue and its boundaries
+  - Identify all stakeholders affected
 
 2. **Impact Analysis**
-   - Map primary, secondary, and tertiary impacts
-   - Assess geographical and temporal scope
+  - Map primary, secondary, and tertiary impacts
+  - Assess geographical and temporal scope
 
 3. **Capability Assessment**
-   - Evaluate resources needed for effective governance
-   - Assess existing capacity at different levels
+  - Evaluate resources needed for effective governance
+  - Assess existing capacity at different levels
 
 4. **Subsidiarity Test**
-   - Determine if the issue can be handled at a lower level
-   - Document reasoning for higher-level governance when needed
+  - Determine if the issue can be handled at a lower level
+  - Document reasoning for higher-level governance when needed
 
 5. **Implementation Planning**
-   - Design coordination mechanisms between levels
-   - Create clear roles and responsibilities
+  - Design coordination mechanisms between levels
+  - Create clear roles and responsibilities
 
 Coming soon: Download Decision Allocation Worksheet (PDF)
 
@@ -103,20 +103,20 @@ Coming soon: Download Decision Allocation Worksheet (PDF)
 This tool helps assess and improve how well different governance systems can work together:
 
 1. **Protocol Compatibility**
-   - Information exchange standards
-   - Decision-making procedure alignment
+  - Information exchange standards
+  - Decision-making procedure alignment
 
 2. **Structural Alignment**
-   - Organizational structure compatibility
-   - Authority and legitimacy recognition
+  - Organizational structure compatibility
+  - Authority and legitimacy recognition
 
 3. **Cultural Integration**
-   - Value framework mapping
-   - Communication pattern analysis
+  - Value framework mapping
+  - Communication pattern analysis
 
 4. **Technical Interoperability**
-   - Data standards and sharing capabilities
-   - Technical infrastructure compatibility
+  - Data standards and sharing capabilities
+  - Technical infrastructure compatibility
 
 Coming soon: Download Interoperability Assessment Tool (PDF)
 
@@ -154,22 +154,22 @@ Coming soon: Download Interoperability Assessment Tool (PDF)
 If you're interested in contributing to the development of the Global Governance Framework or implementing it in your context, here are some ways to get involved:
 
 1. **Join the Conversation**
-   - Coming soon: Share your thoughts and experiences on our discussion forum
-   - Participate in monthly virtual meetups on framework implementation
+  - Coming soon: Share your thoughts and experiences on our discussion forum
+  - Participate in monthly virtual meetups on framework implementation
 
 2. **Contribute to Framework Development**
-   - Suggest improvements to the documentation
-   - Share case studies from your region or field
-   - Help translate framework materials into additional languages
+  - Suggest improvements to the documentation
+  - Share case studies from your region or field
+  - Help translate framework materials into additional languages
 
 3. **Start Local Implementation**
-   - Apply framework principles to a local governance challenge
-   - Document your process and results to share with others
-   - Connect with others working on similar initiatives
+  - Apply framework principles to a local governance challenge
+  - Document your process and results to share with others
+  - Connect with others working on similar initiatives
 
 4. **Connect With Us**
-   - [Contact page](/contact) for direct communication
-   - Coming soon: Follow updates on social media channels
-   - Coming soon: Subscribe to our newsletter for regular updates
+  - [Contact page](/contact) for direct communication
+  - Coming soon: Follow updates on social media channels
+  - Coming soon: Subscribe to our newsletter for regular updates
 
 We welcome diverse perspectives and approaches in advancing ethical global governance. Your contribution, whether large or small, helps build the foundation for a more just, sustainable, and thriving world.

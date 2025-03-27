@@ -133,6 +133,7 @@
           <li><a href="{base}/">{$t('common.header.home')}</a></li>
           <li><a href="{base}/about">{$t('common.header.about')}</a></li>
           <li><a href="{base}/framework">{$t('common.header.framework')}</a></li>
+          <li><a href="{base}/framework/docs/glossary">{$t('common.footer.glossary')}</a></li>
           <li><a href="{base}/downloads">{$t('common.header.downloads')}</a></li>
           <li><a href="{base}/contact">{$t('common.header.contact')}</a></li>
         </ul>

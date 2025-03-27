@@ -131,8 +131,9 @@
       "implementationConsciousness": "Consciousness & Inner Development",
       "implementationMetaGovernance": "Integrated Meta-Governance",
       "implementationMethodsTools": "Implementation Methods & Tools",
-      "casestudies": "Case Studies",
-      "resources": "Resources"
+      "case-studies": "Case Studies",
+      "resources": "Resources",
+      "glossary": "Glossary"
     }
   },
   "coreElements": {

@@ -131,8 +131,9 @@
       "implementationConsciousness": "Medvetande & inre utveckling",
       "implementationMetaGovernance": "Integrerad metagovernance",
       "implementationMethodsTools": "Metoder & verktyg för implementering",
-      "casestudies": "Fallstudier",
-      "resources": "Resurser"
+      "case-studies": "Fallstudier",
+      "resources": "Resurser",
+      "glossary": "Ordlista"
     }
   },
   "coreElements": {

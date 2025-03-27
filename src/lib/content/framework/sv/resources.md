@@ -82,23 +82,23 @@ En interaktiv plattform för att förstå utvecklingsramverk som Spiral Dynamics
 Använd detta ramverk för att avgöra vilken styrningsnivå som är lämplig för olika frågor:
 
 1. **Identifiering av fråga**
-   - Definiera frågan tydligt och dess gränser  
-   - Identifiera berörda aktörer
+  - Definiera frågan tydligt och dess gränser  
+  - Identifiera berörda aktörer
 
 2. **Påverkansanalys**
-   - Kartlägg primära, sekundära och tertiära effekter  
-   - Bedöm geografisk och tidsmässig omfattning
+  - Kartlägg primära, sekundära och tertiära effekter  
+  - Bedöm geografisk och tidsmässig omfattning
 
 3. **Kapacitetsbedömning**
-   - Utvärdera resurser och kapacitet på olika nivåer
+  - Utvärdera resurser och kapacitet på olika nivåer
 
 4. **Subsidiaritetsprov**
-   - Kan frågan hanteras på lägre nivå?  
-   - Motivera behovet av högre styrning
+  - Kan frågan hanteras på lägre nivå?  
+  - Motivera behovet av högre styrning
 
 5. **Planering av implementering**
-   - Skapa samordningsmekanismer mellan nivåer  
-   - Klargör roller och ansvar
+  - Skapa samordningsmekanismer mellan nivåer  
+  - Klargör roller och ansvar
 
 Kommer snart: Ladda ner Bedömningsblad för Beslutsallokering (PDF)
 
@@ -107,20 +107,20 @@ Kommer snart: Ladda ner Bedömningsblad för Beslutsallokering (PDF)
 Verktyg för att bedöma och förbättra samverkan mellan olika styrsystem:
 
 1. **Protokollkompatibilitet**
-   - Standarder för informationsutbyte  
-   - Samordning av beslutsprocesser
+  - Standarder för informationsutbyte  
+  - Samordning av beslutsprocesser
 
 2. **Strukturell anpassning**
-   - Kompatibilitet i organisationsstruktur  
-   - Erkännande av legitimitet
+  - Kompatibilitet i organisationsstruktur  
+  - Erkännande av legitimitet
 
 3. **Kulturell integration**
-   - Kartläggning av värderingsramar  
-   - Kommunikationsmönster
+  - Kartläggning av värderingsramar  
+  - Kommunikationsmönster
 
 4. **Teknisk interoperabilitet**
-   - Datastandarder och delningsmöjligheter  
-   - Teknisk infrastruktur
+  - Datastandarder och delningsmöjligheter  
+  - Teknisk infrastruktur
 
 Kommer snart: Ladda ner Verktyg för Interoperabilitetsbedömning (PDF)
 
@@ -158,23 +158,23 @@ Kommer snart: Ladda ner Verktyg för Interoperabilitetsbedömning (PDF)
 Om du vill bidra till utvecklingen av Ramverket för Global Styrning eller tillämpa det i din kontext, här är några sätt att delta:
 
 1. **Gå med i samtalet**
-   - Kommer snart: Dela tankar och erfarenheter på vårt diskussionsforum
-   - Delta i månatliga virtuella möten om ramverksimplementering
+  - Kommer snart: Dela tankar och erfarenheter på vårt diskussionsforum
+  - Delta i månatliga virtuella möten om ramverksimplementering
 
 2. **Bidra till utvecklingen**
-   - Föreslå förbättringar av dokumentationen  
-   - Dela fallstudier från din region eller ditt fält  
-   - Hjälp till att översätta ramverket till fler språk
+  - Föreslå förbättringar av dokumentationen  
+  - Dela fallstudier från din region eller ditt fält  
+  - Hjälp till att översätta ramverket till fler språk
 
 3. **Starta lokal implementering**
-   - Tillämpa ramverkets principer på en lokal styrningsutmaning  
-   - Dokumentera processen och dela med andra  
-   - Knyt kontakt med liknande initiativ
+  - Tillämpa ramverkets principer på en lokal styrningsutmaning  
+  - Dokumentera processen och dela med andra  
+  - Knyt kontakt med liknande initiativ
 
 4. **Knyt kontakt med oss**
-   - [Kontaktsida](/contact) för direkt kommunikation  
-   - Kommer snart: Följ uppdateringar på sociala medier  
-   - Kommer snart: Prenumerera på vårt nyhetsbrev för regelbundna uppdateringar
+  - [Kontaktsida](/contact) för direkt kommunikation  
+  - Kommer snart: Följ uppdateringar på sociala medier  
+  - Kommer snart: Prenumerera på vårt nyhetsbrev för regelbundna uppdateringar
 
 Vi välkomnar olika perspektiv och metoder i arbetet för etisk global styrning. Ditt bidrag – stort eller litet – hjälper till att bygga grunden för en mer rättvis, hållbar och blomstrande värld.
 

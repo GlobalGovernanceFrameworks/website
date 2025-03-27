@@ -87,7 +87,6 @@ Målet är att skapa en mångsidig, modulär och kulturellt anpassningsbar verkt
 | 22-min Mars-Jord-fördröjning | Asynkron deliberativ batchbearbetning     | Deltagande budgetering            |  
 | Syrerasjonering       | Överlevnadsviktade etiska checklistor      | Universella etikmatriser          |  
 | AI-drivet livsuppehåll | Veckovis mänsklig ritualövervakning        | Mänskligt övervakad skiljedom     |  
-| *[Fler fall →](offworld-wiki.example.org)*  |                                           |                                   |  
 
 ## Styrningsarketypprofiler (Exempel)
 
