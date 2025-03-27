@@ -38,6 +38,14 @@
     "peace": {
       "title": "Peace & Conflict Resolution",
       "description": "Frameworks for preventing and resolving conflicts through multi-level governance, ethical security approaches, and cooperative peacekeeping."
+    },
+    "meta": {
+       "title": "Integrated Meta-Governance",
+       "description": "A foundational framework for aligning diverse governance systems across domains, cultures, and timescales. It outlines principles, structures, and tools for coordination without centralization—emphasizing polycentric design, reflexive learning, and transgenerational purpose alignment."
+    },
+    "methods-tools": {
+       "title": "Implementation Methods & Tools",
+       "description": "A modular, cross-cultural governance toolkit offering participatory methods, ethical safeguards, digital infrastructures, and AI-assisted tools for real-world implementation. Designed for communities, institutions, and global bodies, it supports transparent, inclusive, and reflexive governance across all domains."
     }
   },
   "downloadButton": "Download PDF",

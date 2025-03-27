@@ -38,6 +38,14 @@
     "peace": {
       "title": "Fred & konfliktlösning",
       "description": "Ramverk för att förebygga och lösa konflikter genom flernivåstyrning, etiska säkerhetsmetoder och kooperativ fredsbevarande verksamhet."
+    },
+    "meta": {
+       "title": "Integrerad metastyrning",
+       "description": "Ett grundläggande ramverk för att samordna och harmonisera olika styrsystem över domäner, kulturer och tidshorisonter. Dokumentet beskriver principer, strukturer och verktyg för samverkan utan centralisering – med fokus på policentrisk design, reflexivt lärande och syftesinriktad styrning över generationer."
+    },
+    "methods-tools": {
+       "title": "Implementeringsmetoder och verktyg",
+       "description": "En modulär och kulturöverskridande verktygslåda för styrning, med deltagande metoder, etiska skyddsmekanismer, digital infrastruktur och AI-stödda verktyg för praktisk tillämpning. Utformad för samhällen, institutioner och globala aktörer – stöder transparent, inkluderande och reflexiv styrning inom alla domäner."
     }
   },
   "downloadButton": "Ladda ner PDF",
