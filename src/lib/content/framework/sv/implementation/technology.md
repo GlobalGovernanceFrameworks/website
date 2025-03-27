@@ -1,1 +1,1 @@
-*Content coming soon*
+*Innehåll kommer snart*
