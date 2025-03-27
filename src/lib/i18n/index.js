@@ -114,6 +114,17 @@ async function loadTranslations(newLocale, route = '/') {
       } catch (e) {
         console.error('Error loading terms translations:', e);
       }
+    } else if (route.startsWith('/downloads')) {
+      // Downloads page
+      try {
+        if (newLocale === 'en') {
+          translationData.downloads = (await import('./en/downloads.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.downloads = (await import('./sv/downloads.json')).default;
+        }
+      } catch (e) {
+        console.error('Error loading terms translations:', e);
+      }
     }
     
     // Log the loaded translations for debugging

@@ -115,4 +115,63 @@
   .content :global(li) {
     margin-bottom: 0.5rem;
   }
+
+  /* Add to your existing <style> section */
+  .content :global(ul), .content :global(ol) {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem; /* Slightly increased for better indentation */
+    color: #4b5563; /* Matches paragraph text color */
+  }
+
+  .content :global(ul) {
+    list-style-type: none; /* Remove default bullets */
+  }
+
+  .content :global(ul li) {
+    position: relative;
+    margin-bottom: 0.75rem; /* Slightly more spacing between items */
+    padding-left: 1rem;
+  }
+
+  .content :global(ul li::before) {
+    content: "✦"; /* Cosmic star symbol for bullets */
+    position: absolute;
+    left: 0;
+    color: #DAA520; /* Gold color for bullet points */
+    font-size: 0.9rem;
+  }
+
+  .content :global(ol) {
+    list-style-type: decimal; /* Ensure ordered lists use numbers */
+  }
+
+  .content :global(ol li) {
+    margin-bottom: 0.75rem; /* Consistent spacing with ul */
+    padding-left: 0.5rem;
+  }
+
+  .content :global(ol li::marker) {
+    color: #2B4B8C; /* Cosmic blue for numbers */
+    font-weight: 600;
+  }
+
+  /* Nested lists */
+  .content :global(ul ul), .content :global(ol ul) {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .content :global(ul ul li::before) {
+    content: "✧"; /* Smaller star for nested items */
+    color: #6B5CA5; /* Cosmic purple for nested bullets */
+  }
+
+  /* Hover effect for interactivity */
+  .content :global(li:hover) {
+    color: #2B4B8C; /* Cosmic blue on hover */
+  }
+  
+  .content :global(li) {
+    margin-bottom: 0.5rem;
+  }
 </style>

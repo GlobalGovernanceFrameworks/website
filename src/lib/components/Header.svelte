@@ -405,6 +405,15 @@
           </li>
           <li class="nav-item">
             <a 
+              href="{base}/downloads"
+              class={`nav-link ${$page.url.pathname === base + '/downloads' ? 'active' : ''}`}
+              data-sveltekit-preload-data="hover"
+            >
+              {$t('common.header.downloads')}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a 
               href="{base}/about"
               class={`nav-link ${$page.url.pathname === base + '/about' ? 'active' : ''}`}
               data-sveltekit-preload-data="hover"
