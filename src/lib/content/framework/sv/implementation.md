@@ -144,7 +144,7 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 ### Nivå 4: Visionär och metagovernance
 - [Rymdförvaltning](/framework/docs/implementation/space) (Planerad)
 - [Medvetande & inre utveckling](/framework/docs/implementation/consciousness) (Planerad)
-- [Integrerad metagovernance](/framework/docs/implementation/meta) (Planerad)
+- [Integrerad metagovernance](/framework/docs/implementation/meta) (*Ny*)
 - [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools) (Planerad)
 
 

@@ -144,7 +144,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 ### Tier 4: Visionary & Meta Governance
 - [Space Governance](/framework/docs/implementation/space) (Planned)
 - [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (Planned)
-- [Integrated Meta-Governance](/framework/docs/implementation/meta) (Planned)
+- [Integrated Meta-Governance](/framework/docs/implementation/meta) (*NEW*)
 - [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (Planned)
 
 Each domain implementation provides detailed guidance, tools, and case studies specific to that area, while adhering to the core framework principles and implementation approaches.

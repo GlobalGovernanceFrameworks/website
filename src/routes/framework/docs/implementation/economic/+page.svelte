@@ -229,16 +229,13 @@
   }
 
   :global(.content thead) {
-    background: linear-gradient(to right, #2B4B8C, #4B5CA5);
+    background-color: #e2e8f0; /* Light slate background */
   }
 
   :global(.content th) {
-    padding: 0.75rem 1rem;
-    font-weight: 600;
-    text-align: left;
-    color: #ffffff;
-    border: none;
-    border-bottom: 2px solid #6B5CA5;
+    color: #1a202c; /* Dark slate text */
+    font-weight: 700;
+    text-shadow: none;
   }
 
   :global(.content td) {

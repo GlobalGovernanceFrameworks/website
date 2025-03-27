@@ -4,5 +4,5 @@ Den fjärde nivån omfattar framåtblickande och systemövergripande områden in
 
 - [Rymdförvaltning](/framework/docs/implementation/space) (Planerad)
 - [Medvetande & inre utveckling](/framework/docs/implementation/consciousness) (Planerad)
-- [Integrerad metagovernance](/framework/docs/implementation/meta) (Planerad)
-- [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools) (Planerad)
+- [Integrerad metagovernance](/framework/docs/implementation/meta) (*Ny*)
+- [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools) (*Ny*)

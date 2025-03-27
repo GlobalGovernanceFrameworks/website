@@ -7,6 +7,7 @@ All notable changes to the Global Governance Framework website will be documente
 ### Added
 - Expanded planned framework implementation documents and arranged them into 4 tiers.
 - Inquired ChatGPT, Grok and DeepSeek about the top 10 frameworks matching their strengths for assistance.
+- Added Methods & Tools implementation framework document
 
 ## [0.2.1] - 2025-03-25
 
