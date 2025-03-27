@@ -113,24 +113,40 @@ Att införa ramverket fungerar bäst som en gradvis, evolutionär process:
 
 Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver specifik hänsyn samtidigt som de följer kärnprinciperna och implementeringsmetoderna som beskrivs ovan.
 
-### Tillgängliga domänimplementeringar:
+### Nivå 1: Global stabilitet och rättvisa
+- [Klimat och energistyrning](/framework/docs/implementation/energy) (Kommer snart)
+- [Fred och konflikthantering](/framework/docs/implementation/peace)
+- [Hälso- och sjukvårdsstyrning](/framework/docs/implementation/healthcare) (Kommer snart)
+- [Livsmedelssystem och jordbruk](/framework/docs/implementation/food) (Kommer snart)
 - [Ekonomisk integration](/framework/docs/implementation/economic)
-- [Miljöhushållning](/framework/docs/implementation/environment)
-- [Fred och konflikthantering](/framework/docs/implementation/peace) (Kommer snart)
-- [Teknikstyrning](/framework/docs/implementation/technology) (Kommer snart)
-- [Utbildningssystem](/framework/docs/implementation/education) (Planerad)
-- [Hälso- och sjukvårdsstyrning](/framework/docs/implementation/healthcare) (Planerad)
-- [Bevarande av kulturarv](/framework/docs/implementation/culture) (Planerad)
-- [Migration och mänsklig rörlighet](/framework/docs/implementation/migration) (Planerad)
-- [Livsmedelssystem och jordbruk](/framework/docs/implementation/food) (Planerad)
-- [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)
-- [Digitala allmänningar](/framework/docs/implementation/digital) (Planerad)
-- [Finansiella system](/framework/docs/implementation/financial) (Planerad)
 - [Rättssystem](/framework/docs/implementation/justice) (Planerad)
-- [Energistyrning](/framework/docs/implementation/energy) (Planerad)
-- [Rymdförvaltning](/framework/docs/implementation/space) (Planerad)
-- [Religiös och andlig dialog](/framework/docs/implementation/spiritual) (Planerad)
+- [Migration och mänsklig rörlighet](/framework/docs/implementation/migration) (Planerad)
+- [Katastrofrisk och resiliens](/framework/docs/implementation/disaster) (Planerad)
+
+### Nivå 2: System för långsiktigt välmående
+- [Teknikstyrning](/framework/docs/implementation/technology) (Kommer snart)
+- [Finansiella system](/framework/docs/implementation/finance) (Planerad)
+- [Utbildningssystem](/framework/docs/implementation/education) (Planerad)
+- [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)
+- [Miljöhushållning](/framework/docs/implementation/environment)
+- [Havsförvaltning & marina ekosystem](/framework/docs/implementation/oceans) (Planerad)
+- [Arbetsmarknad & sysselsättning](/framework/docs/implementation/labor) (Planerad)
+
+### Nivå 3: Jämlikhet, kultur & framtida generationer
+- [Digitala allmänningar](/framework/docs/implementation/digital) (Planerad)
+- [Biologisk mångfald](/framework/docs/implementation/biodiversity) (Planerad)
+- [Bevarande av kulturarv](/framework/docs/implementation/culture) (Planerad)
 - [Landsbygdsutveckling](/framework/docs/implementation/rural) (Planerad)
+- [Religiös och andlig dialog](/framework/docs/implementation/spiritual) (Planerad)
+- [Ungdoms- & generationsstyrning](/framework/docs/implementation/youth) (Planerad)
+- [Globala rättigheter & etik](/framework/docs/implementation/ethics) (Planerad)
+
+### Nivå 4: Visionär och metagovernance
+- [Rymdförvaltning](/framework/docs/implementation/space) (Planerad)
+- [Medvetande & inre utveckling](/framework/docs/implementation/consciousness) (Planerad)
+- [Integrerad metagovernance](/framework/docs/implementation/meta) (Planerad)
+- [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools) (Planerad)
+
 
 Varje domänimplementering ger detaljerad vägledning, verktyg och fallstudier specifika för det området, samtidigt som de följer ramverkets kärnprinciper och implementeringsmetoder.
 

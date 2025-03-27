@@ -113,24 +113,39 @@ Implementing the framework works best as a gradual, evolutionary process:
 
 The Global Governance Framework can be applied across various domains. Each domain requires specific consideration while following the core principles and implementation approaches outlined above.
 
-### Available Domain Implementations:
+### Tier 1: Urgent Global Stability & Justice
+- [Climate & Energy Governance](/framework/docs/implementation/energy) (Coming Soon)
+- [Peace & Conflict Resolution](/framework/docs/implementation/peace)
+- [Healthcare Governance](/framework/docs/implementation/healthcare) (Coming Soon)
+- [Food Systems & Agriculture](/framework/docs/implementation/food) (Coming Soon)
 - [Economic Integration](/framework/docs/implementation/economic)
-- [Environmental Stewardship](/framework/docs/implementation/environment)
-- [Peace & Conflict Resolution](/framework/docs/implementation/peace) (Coming soon)
-- [Technology Governance](/framework/docs/implementation/technology) (Coming soon)
-- [Educational Systems](/framework/docs/implementation/education) (Planned)
-- [Healthcare Governance](/framework/docs/implementation/healthcare) (Planned)
-- [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
-- [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
-- [Food Systems & Agriculture](/framework/docs/implementation/food) (Planned)
-- [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
-- [Digital Commons](/framework/docs/implementation/digital) (Planned)
-- [Financial Systems](/framework/docs/implementation/financial) (Planned)
 - [Justice Systems](/framework/docs/implementation/justice) (Planned)
-- [Energy Governance](/framework/docs/implementation/energy) (Planned)
-- [Space Governance](/framework/docs/implementation/space) (Planned)
-- [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual) (Planned)
+- [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
+- [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (Planned)
+
+### Tier 2: Systems for Long-Term Thriving
+- [Technology Governance](/framework/docs/implementation/technology) (Coming soon)
+- [Financial Systems](/framework/docs/implementation/finance) (Planned)
+- [Educational Systems](/framework/docs/implementation/education) (Planned)
+- [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
+- [Environmental Stewardship](/framework/docs/implementation/environment)
+- [Oceans & Marine Governance](/framework/docs/implementation/oceans) (Planned)
+- [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)
+
+### Tier 3: Equity, Culture & Future Generations
+- [Digital Commons](/framework/docs/implementation/digital) (Planned)
+- [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Planned)
+- [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
 - [Rural Development](/framework/docs/implementation/rural) (Planned)
+- [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual) (Planned)
+- [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (Planned)
+- [Global Ethics & Human Rights](/framework/docs/implementation/ethics) (Planned)
+
+### Tier 4: Visionary & Meta Governance
+- [Space Governance](/framework/docs/implementation/space) (Planned)
+- [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (Planned)
+- [Integrated Meta-Governance](/framework/docs/implementation/meta) (Planned)
+- [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (Planned)
 
 Each domain implementation provides detailed guidance, tools, and case studies specific to that area, while adhering to the core framework principles and implementation approaches.
 
