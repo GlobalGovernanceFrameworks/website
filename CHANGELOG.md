@@ -6,6 +6,7 @@ All notable changes to the Global Governance Framework website will be documente
 
 ### Added
 - Added status indicators to framework implementation documents
+- Added CONTRIBUTING.md
 
 ### Fixed
 - Fixed visilibity of documents in nav bar

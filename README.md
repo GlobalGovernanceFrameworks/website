@@ -97,7 +97,7 @@ module.exports = {
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. For detailed guidelines on how to contribute, including best practices for using AI tools to support development, see our [CONTRIBUTING.md](CONTRIBUTING.md).
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
