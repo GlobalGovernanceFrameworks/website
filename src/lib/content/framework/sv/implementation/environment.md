@@ -253,3 +253,13 @@ Miljöförvaltning inom det Globala Styrningsramverket erkänner att:
 - Meningsfullt deltagande måste skalas genom lämpliga strukturer och verktyg
 
 Genom att implementera dessa principer med uppmärksamhet på ansvarsskyldighet, ekonomisk transformation, teknologisk etik och inkluderande deltagande kan samhällen, regioner och globala system arbeta tillsammans för att upprätthålla planetär hälsa samtidigt som lokala ekologiska kunskaper och styrningssätt respekteras.
+
+---
+
+**Dokumentstatus**: Nästan Slutgiltig Version
+**Senast uppdaterad**: 27 mars 2025
+**Nästa granskning**: Ej bestämt
+
+Detta ramverk har utvecklats omfattande med heltäckande beskrivningar av bioregional styrning, naturens rättigheter och implementeringsmetoder på flera nivåer. Innan det anses redo för lansering skulle det gynnas av ytterligare fallstudier från olika regioner och vidare förfining av verkställighetsmekanismer.
+
+Vi välkomnar feedback på detta ramverk. Vänligen [kontakta oss](/contact) med förslag, fallstudier eller implementeringserfarenheter.

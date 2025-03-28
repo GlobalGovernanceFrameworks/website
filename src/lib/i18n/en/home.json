@@ -1,4 +1,8 @@
 {
+  "disclaimer": {
+    "title": "Framework Development Status",
+    "text": "The Global Governance Framework is an evolving project. Documentation sections vary in maturity, from conceptual to fully developed. We're actively refining these resources and welcome your feedback to shape their development. Check each document's status indicator for current readiness level."
+  },
   "title": "Global Governance Framework",
   "subtitle": "Connecting governance innovations across the world",
   "intro": {

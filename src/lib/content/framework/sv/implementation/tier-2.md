@@ -6,6 +6,6 @@ Denna nivå samlar grundläggande system som möjliggör hållbart mänskligt v�
 - [Finansiella system](/framework/docs/implementation/financial) (Planerad)
 - [Utbildningssystem](/framework/docs/implementation/education) (Planerad)
 - [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)
-- [Miljöhushållning](/framework/docs/implementation/environment)
+- [Miljöhushållning](/framework/docs/implementation/environment) (Under granskning)
 - [Havsförvaltning & marina ekosystem](/framework/docs/implementation/oceans) (Planerad)
 - [Arbetsmarknad & sysselsättning](/framework/docs/implementation/labor) (Planerad)

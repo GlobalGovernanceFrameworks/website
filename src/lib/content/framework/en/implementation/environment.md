@@ -254,3 +254,13 @@ Environmental stewardship within the Global Governance Framework recognizes that
 - Meaningful participation must be scaled through appropriate structures and tools
 
 By implementing these principles with attention to accountability, economic transformation, technological ethics, and inclusive participation, communities, regions, and global systems can work together to maintain planetary health while respecting local ecological knowledge and governance traditions.
+
+---
+
+**Document Status**: Near-Final Draft
+**Last Updated**: March 27, 2025
+**Next Review**: To be determined
+
+This framework has been substantially developed with comprehensive coverage of bioregional governance, rights of nature, and multi-level implementation approaches. Before being considered launch-ready, it would benefit from additional case studies from diverse regions and further refinement of enforcement mechanisms.
+
+We welcome feedback on this framework. Please [contact us](/contact) with suggestions, case studies, or implementation experiences.

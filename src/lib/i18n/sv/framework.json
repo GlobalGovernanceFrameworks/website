@@ -10,7 +10,29 @@
     "corePrinciples": "Kärnprinciper",
     "implementation": "Implementering",
     "caseStudies": "Fallstudier",
-    "resources": "Resurser"
+    "resources": "Resurser",
+    "glossary": "Ordlista"
+  },
+  "status": {
+    "concept": {
+      "label": "Koncept",
+      "description": "Initial idéfas, ännu inte fullt utvecklad"
+    },
+    "development": {
+      "label": "Under utveckling",
+      "description": "Skrivs och förfinas aktivt"
+    },
+    "review": {
+      "label": "Under granskning",
+      "description": "Nästan färdigt utkast som genomgår granskning"
+    },
+    "ready": {
+      "label": "Färdig",
+      "description": "Fullt utvecklad och redo för implementering"
+    }
+  },
+  "statusLegend": {
+    "title": "Dokumentstatusindikatorer"
   },
   "intro": {
     "title": "Introduktion till Meta-Styrning",
@@ -107,6 +129,7 @@
       "implementationTier2": "Nivå 2: System för långsiktigt välmående",
       "implementationTier3": "Nivå 3: Jämlikhet, kultur & framtida generationer",
       "implementationTier4": "Nivå 4: Visionär och metagovernance",
+      "implementationClimateEnergy": "Klimat och energistyrning",
       "implementationEconomic": "Ekonomisk integration",
       "implementationEnvironment": "Förvaltarskap av natur och miljö",
       "implementationPeace": "Fred och konflikthantering",
@@ -114,7 +137,10 @@
       "implementationEducation": "Utbildningssystem",
       "implementationHealthcare": "Hälso- och sjukvårdsstyrning",
       "implementationCulture": "Bevarande av kulturarv",
+      "implementationRural": "Landsbygdsutveckling",
+      "implementationSpiritual": "Religiös och andlig dialog",
       "implementationMigration": "Migration & mänsklig rörlighet",
+      "implementationDisaster": "Katastrofrisk och resiliens",
       "implementationFood": "Livsmedelssystem & jordbruk",
       "implementationUrban": "Stads- & samhällsutveckling",
       "implementationDigital": "Digitala allmänningar",

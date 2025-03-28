@@ -877,3 +877,12 @@ Effektiv fred och konfliktlösning inom det Globala Styrningsramverket erkänner
 - Ekonomiska, miljömässiga och sociala faktorer är oskiljbara från fred
 - Långsiktig fred kräver utbildnings- och kulturmässiga grundvalar
 
+---
+
+**Dokumentstatus**: Nästan Slutgiltig Version
+**Senast uppdaterad**: 27 mars 2025
+**Nästa granskning**: Ej bestämt
+
+Detta ramverk är omfattande utvecklat med utförliga avsnitt om preventiv diplomati, engagemang på flera spår och integration av olika perspektiv inklusive ungdomar, kvinnor och urfolks metoder. Innan det anses redo för lansering planerar vi bland annat att stärka avsnittet om digital fredsinfrastruktur och lägga till fler fallstudier från det globala syd.
+
+Vi välkomnar feedback på detta ramverk. Vänligen [kontakta oss](/contact) med förslag, fallstudier eller implementeringserfarenheter.

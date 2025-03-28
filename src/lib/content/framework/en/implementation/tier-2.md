@@ -6,6 +6,6 @@ Tier 2 domains are foundational systems that enable sustainable human flourishin
 - [Financial Systems](/framework/docs/implementation/financial) (Planned)
 - [Educational Systems](/framework/docs/implementation/education) (Planned)
 - [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
-- [Environmental Stewardship](/framework/docs/implementation/environment)
+- [Environmental Stewardship](/framework/docs/implementation/environment) (In review)
 - [Oceans & Marine Governance](/framework/docs/implementation/oceans) (Planned)
 - [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)

@@ -767,3 +767,13 @@ Effective peace and conflict resolution within the Global Governance Framework r
 - Military structures must gradually transform toward human security
 - Economic, environmental, and social factors are inseparable from peace
 - Long-term peace requires educational and cultural foundations
+
+---
+
+**Document Status**: Near-Final Draft
+**Last Updated**: March 27, 2025
+**Next Review**: To be determined
+
+This framework is extensively developed with comprehensive sections on preventive diplomacy, multi-track engagement, and the integration of diverse perspectives including youth, women, and indigenous approaches. Before being considered launch-ready, we part of our plan is to strengthen the digital peace infrastructure section and add more case studies from the Global South.
+
+We welcome feedback on this framework. Please [contact us](/contact) with suggestions, case studies, or implementation experiences.

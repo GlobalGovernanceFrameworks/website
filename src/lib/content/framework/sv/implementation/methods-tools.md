@@ -147,8 +147,6 @@ Målet är att skapa en mångsidig, modulär och kulturellt anpassningsbar verkt
 ## Bilagor  
 ### A. Ordlista för implementeringstermer  
 
-### **Ordlista för implementeringstermer**
-
 **Tips**: Läs denna ordlista innan verktyg testas för att:  
 - Klargöra jargong under teamintroduktion  
 - Anpassa termer till lokala språk  
@@ -306,4 +304,10 @@ Målet är att skapa en mångsidig, modulär och kulturellt anpassningsbar verkt
 
 ---
 
-*Dokumentstatus: Klar för implementering – Söker piloter, översättare och nya verktygsbidragsgivare.*
+**Dokumentstatus**: Redo för Lansering
+**Senast uppdaterad**: 27 mars 2025
+**Nästa granskning**: Ej bestämt
+
+Detta ramverk har genomgått grundlig utveckling och granskning, med omfattande täckning av deltagarmetoder, etiska verktyg, övervakningsmetoder och tvärkulturella anpassningar. Medan vi kommer att fortsätta att utöka metoderna och verktygen baserat på fälterfarenheter, anses den nuvarande versionen vara redo för praktisk tillämpning.
+
+Vi välkomnar feedback på detta ramverk. Vänligen [kontakta oss](/contact) med förslag, fallstudier eller implementeringserfarenheter.

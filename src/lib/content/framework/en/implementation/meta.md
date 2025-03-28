@@ -585,6 +585,11 @@ A key failure mode occurs when success metrics become targets that distort behav
 
 ---
 
-*Document status: Near-Final Draft – Feedback, case studies, and pilot offers welcome.*
+**Document Status**: Near-Final Draft
+**Last Updated**: March 27, 2025
+**Next Review**: To be determined
 
+This framework outlines the core architecture for meta-governance—how governance systems across domains can interoperate, align, and evolve together. While the conceptual foundations and structural components are well-established, we're currently seeking practical implementation examples beyond the case models presented. Particular areas for development include more diverse regional applications and detailed integration protocols with other frameworks.
+
+We welcome feedback on this framework. Please [contact us](/contact) with suggestions, case studies, or implementation experiences.
 

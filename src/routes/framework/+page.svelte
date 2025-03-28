@@ -51,6 +51,9 @@
         <a href="{base}/framework/docs/resources" style="background-color: white; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #2D5F2D; text-decoration: none; color: #4b5563; font-weight: 500; text-align: center; transition: color 0.2s, border-color 0.2s; grid-column: span 2;" on:mouseover="{e => { e.target.style.color = '#DAA520'; e.target.style.borderColor = '#DAA520'; }}" on:mouseout="{e => { e.target.style.color = '#4b5563'; e.target.style.borderColor = '#2D5F2D'; }}">
           {$t('framework.quickAccess.resources')}
         </a>
+        <a href="{base}/framework/docs/glossary" style="background-color: white; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #2D5F2D; text-decoration: none; color: #4b5563; font-weight: 500; text-align: center; transition: color 0.2s, border-color 0.2s; grid-column: span 2;" on:mouseover="{e => { e.target.style.color = '#DAA520'; e.target.style.borderColor = '#DAA520'; }}" on:mouseout="{e => { e.target.style.color = '#4b5563'; e.target.style.borderColor = '#2D5F2D'; }}">
+          {$t('framework.quickAccess.glossary')}
+        </a>
       </div>
     </div>
   </div>

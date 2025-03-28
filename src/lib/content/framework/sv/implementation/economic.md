@@ -142,3 +142,12 @@ Ekonomisk integration bör följa en fasindelad metod:
 
 Genom att implementera detta ramverk för ekonomisk integration kan samhällen, regioner och globala system samarbeta på sätt som bevarar autonomi samtidigt som rättvis fördelning, hållbar resursanvändning och delat välstånd möjliggörs.
 
+---
+
+**Dokumentstatus**: Nästan Slutgiltig Version
+**Senast uppdaterad**: 27 mars 2025
+**Nästa granskning**: Ej bestämt
+
+Detta ramverk har genomgått omfattande utveckling men inväntar slutlig granskning och förfining innan det anses vara redo för lansering. Viktiga styrkor inkluderar detaljerade implementeringsmetoder på flera nivåer och tydliga mekanismer för ekonomisk rättvisa, medan områden för vidare utveckling inkluderar ytterligare fallstudier och detaljer om integration mellan olika domäner.
+
+Vi välkomnar feedback på detta ramverk. Vänligen [kontakta oss](/contact) med förslag, fallstudier eller implementeringserfarenheter.

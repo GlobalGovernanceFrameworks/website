@@ -16,7 +16,13 @@
   function isActiveOrHasActiveChild(item) {
     if (isActive(item.path)) return true;
     if (item.subItems) {
-      return item.subItems.some(subItem => isActive(subItem.path));
+      return item.subItems.some(subItem => {
+        if (isActive(subItem.path)) return true;
+        if (subItem.subItems) {
+          return subItem.subItems.some(grandchild => isActive(grandchild.path));
+        }
+        return false;
+      });
     }
     return false;
   }
@@ -30,6 +36,16 @@
           if (!(item.titleKey in current)) {
             current[item.titleKey] = isActiveOrHasActiveChild(item) || item.path.includes('/implementation');
           }
+          
+          // Also handle tier sections
+          item.subItems.forEach(subItem => {
+            if (subItem.subItems) {
+              if (!(subItem.titleKey in current)) {
+                current[subItem.titleKey] = isActiveOrHasActiveChild(subItem) || isActive(subItem.path);
+              }
+            }
+          });
+          
           return current;
         });
       }
@@ -74,18 +90,76 @@
             {#if $expandedSections[item.titleKey]}
               <ul class="subnav">
                 {#each item.subItems as subItem}
-                  <li class="subnav-item">
-                    {#if subItem.comingSoon || subItem.planned}
-                       <span class="coming-soon">
-                        {$t(subItem.titleKey)} <em>({subItem.planned ? $t('framework.labels.planned') : $t('framework.labels.comingSoon')})</em>
-                      </span>
+                  <li class="subnav-item {isActiveOrHasActiveChild(subItem) ? 'active-section' : ''}">
+                    <!-- Handle tier items with their own subItems -->
+                    {#if subItem.subItems && subItem.subItems.length > 0}
+                      <div class="nav-header tier-header">
+                        <a 
+                          href="{base}{subItem.path}" 
+                          class:active={isActive(subItem.path)}
+                        >
+                          {$t(subItem.titleKey)}
+                        </a>
+                        <button 
+                          class="toggle-btn" 
+                          on:click|preventDefault={() => toggleSection(subItem.titleKey)}
+                          aria-expanded={$expandedSections[subItem.titleKey] ? 'true' : 'false'}
+                        >
+                          {#if $expandedSections[subItem.titleKey]}
+                            <span>▼</span>
+                          {:else}
+                            <span>▶</span>
+                          {/if}
+                        </button>
+                      </div>
+                      
+                      <!-- Tier subItems (actual implementation docs) -->
+                      {#if $expandedSections[subItem.titleKey]}
+                        <ul class="tier-subnav">
+                          {#each subItem.subItems as implItem}
+                            <li class="impl-item">
+                              {#if implItem.comingSoon || implItem.planned}
+                                <span class="coming-soon">
+                                  {$t(implItem.titleKey)} <em>({implItem.planned ? $t('framework.labels.planned') : $t('framework.labels.comingSoon')})</em>
+                                </span>
+                              {:else}
+                                <a 
+                                  href="{base}{implItem.path}" 
+                                  class:active={isActive(implItem.path)}
+                                >
+                                  {$t(implItem.titleKey)}
+                                  {#if implItem.status}
+                                    <span class="status-badge {implItem.status}" 
+                                      title={$t(`framework.status.${implItem.status}.description`)}>
+                                      {$t(`framework.status.${implItem.status}.label`)}
+                                    </span>
+                                  {/if}
+                                </a>
+                              {/if}
+                            </li>
+                          {/each}
+                        </ul>
+                      {/if}
                     {:else}
-                      <a 
-                        href="{base}{subItem.path}" 
-                        class:active={isActive(subItem.path)}
-                      >
-                        {$t(subItem.titleKey)}
-                      </a>
+                      <!-- Regular subItems without further nesting -->
+                      {#if subItem.comingSoon || subItem.planned}
+                        <span class="coming-soon">
+                          {$t(subItem.titleKey)} <em>({subItem.planned ? $t('framework.labels.planned') : $t('framework.labels.comingSoon')})</em>
+                        </span>
+                      {:else}
+                        <a 
+                          href="{base}{subItem.path}" 
+                          class:active={isActive(subItem.path)}
+                        >
+                          {$t(subItem.titleKey)}
+                          {#if subItem.status}
+                            <span class="status-badge {subItem.status}" 
+                              title={$t(`framework.status.${subItem.status}.description`)}>
+                              {$t(`framework.status.${subItem.status}.label`)}
+                            </span>
+                          {/if}
+                        </a>
+                      {/if}
                     {/if}
                   </li>
                 {/each}
@@ -187,6 +261,56 @@
   .subnav a {
     font-size: 0.95rem;
     padding: 0.3rem 0;
+  }
+  
+  /* Styles for tier subnav */
+  .tier-header {
+    margin-top: 0.3rem;
+  }
+  
+  .tier-subnav {
+    margin-left: 1.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    border-left: 1px dotted #2D5F2D;
+  }
+  
+  .impl-item {
+    margin-bottom: 0.3rem;
+  }
+  
+  .impl-item a {
+    font-size: 0.9rem;
+    padding: 0.2rem 0;
+  }
+
+  .status-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+  
+  .status-badge.concept {
+    background-color: #FEF3C7; /* Light yellow */
+    color: #92400E;
+  }
+  
+  .status-badge.development {
+    background-color: #DBEAFE; /* Light blue */
+    color: #1E40AF;
+  }
+  
+  .status-badge.review {
+    background-color: #E0E7FF; /* Light purple */
+    color: #4338CA;
+  }
+  
+  .status-badge.ready {
+    background-color: #D1FAE5; /* Light green */
+    color: #065F46;
   }
   
   .active-section {

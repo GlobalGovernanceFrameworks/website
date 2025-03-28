@@ -10,7 +10,29 @@
     "corePrinciples": "Core Principles",
     "implementation": "Implementation",
     "caseStudies": "Case Studies",
-    "resources": "Resources"
+    "resources": "Resources",
+    "glossary": "Glossary"
+  },
+  "status": {
+    "concept": {
+      "label": "Concept",
+      "description": "Initial idea stage, not yet fully developed"
+    },
+    "development": {
+      "label": "In Development",
+      "description": "Actively being written and refined"
+    },
+    "review": {
+      "label": "In Review",
+      "description": "Near-final draft undergoing review"
+    },
+    "ready": {
+      "label": "Ready",
+      "description": "Fully developed and ready for implementation"
+    }
+  },
+  "statusLegend": {
+    "title": "Document Status Indicators"
   },
   "intro": {
     "title": "Introduction to Meta-Governance",
@@ -107,6 +129,7 @@
       "implementationTier2": "Tier 2: Systems for Long-Term Thriving",
       "implementationTier3": "Tier 3: Equity, Culture & Future Generations",
       "implementationTier4": "Tier 4: Visionary & Meta Governance",
+      "implementationClimateEnergy": "Climate & Energy Governance",
       "implementationEconomic": "Economic Integration",
       "implementationEnvironment": "Environmental Stewardship",
       "implementationPeace": "Peace & Conflict Resolution",
@@ -114,7 +137,10 @@
       "implementationEducation": "Educational Systems",
       "implementationHealthcare": "Healthcare Governance",
       "implementationCulture": "Cultural Heritage Preservation",
+      "implementationRural": "Rural Development",
+      "implementationSpiritual": "Religious & Spiritual Dialogue",
       "implementationMigration": "Migration & Human Mobility",
+      "implementationDisaster": "Disaster Risk Reduction & Resilience",
       "implementationFood": "Food Systems & Agriculture",
       "implementationUrban": "Urban & Community Development",
       "implementationDigital": "Digital Commons",

@@ -2,6 +2,15 @@
 
 All notable changes to the Global Governance Framework website will be documented in this file.
 
+## [0.2.3] - 2025-03-27
+
+### Added
+- Added status indicators to framework implementation documents
+
+### Fixed
+- Fixed visilibity of documents in nav bar
+- Added missing translation tags to documents in nav bar
+
 ## [0.2.2] - 2025-03-26
 
 ### Added
