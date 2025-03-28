@@ -16,15 +16,15 @@ Thank you for your interest in contributing to the Global Governance Framework p
 
 AI can be a powerful ally in developing and refining the Global Governance Framework. Below are some recommendations for using specific AI tools, based on their observed strengths. Note that these suggestions are based on general observations and not on human developer experience within this project—use them as inspiration, but validate outputs against project needs and real-world testing.
 
+### Claude
+- **Strength**: Reliable and precise for translations, especially for technical content, and serves as an excellent main workhorse for development tasks.
+- **Recommended Use**: Leverage Claude for updating or expanding the internationalization files in `src/lib/i18n/[language-code]/`, where its precision ensures consistency across languages. Additionally, the professional version’s project feature makes it ideal for maintaining a comprehensive knowledge base—keeping all frameworks, website content, and related materials in one place. This enables Claude to stay optimally context-aware when developing new ideas, revising website content, or refining governance frameworks.
+- **Best Practice**: Cross-check translations with native speakers where possible, and commit changes with clear notes (e.g., "Translated via Claude, awaiting review"). For project feature users, regularly update the knowledge base with new framework drafts or content revisions to maximize Claude’s contextual understanding.
+
 ### DeepSeek
 - **Strength**: Highly creative at reviewing governance frameworks and suggesting complementary ideas, tools, and enhancements.
 - **Recommended Use**: Use DeepSeek to brainstorm additional features, patterns, or interoperability mechanisms. For example, ask it to propose new tools or frameworks that could integrate with the project’s vision.
 - **Best Practice**: Document all DeepSeek responses in the `/docs` folder (e.g., `/docs/ai-suggestions/deepseek-ideas.md`) for future reference, even if not immediately implemented. This builds a knowledge base for the community.
-
-### Claude
-- **Strength**: Reliable and precise for translations, especially for technical content.
-- **Recommended Use**: Leverage Claude for updating or expanding the internationalization files in `src/lib/i18n/[language-code]/`. It’s particularly useful for ensuring consistency across languages.
-- **Best Practice**: Cross-check translations with native speakers where possible, and commit changes with clear notes (e.g., "Translated via Claude, awaiting review").
 
 ### ChatGPT
 - **Strength**: Versatile and good at providing complementary translations or rephrasing content for clarity.
