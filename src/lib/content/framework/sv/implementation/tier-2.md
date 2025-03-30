@@ -2,7 +2,7 @@
 
 Denna nivå samlar grundläggande system som möjliggör hållbart mänskligt välmående över tid. Här ingår styrning av teknik, finans, utbildning, stadsutveckling och arbetsmarknad – strukturer som formar våra framtida möjligheter och fördelar resurser rättvist i en föränderlig värld.
 
-- [Teknikstyrning](/framework/docs/implementation/technology) (Kommer snart)
+- [Teknikstyrning](/framework/docs/implementation/technology) (Under granskning)
 - [Finansiella system](/framework/docs/implementation/financial) (Planerad)
 - [Utbildningssystem](/framework/docs/implementation/education) (Planerad)
 - [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)

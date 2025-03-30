@@ -115,16 +115,16 @@ The Global Governance Framework can be applied across various domains. Each doma
 
 ### Tier 1: Urgent Global Stability & Justice
 - [Climate & Energy Governance](/framework/docs/implementation/energy) (Coming Soon)
-- [Peace & Conflict Resolution](/framework/docs/implementation/peace)
+- [Peace & Conflict Resolution](/framework/docs/implementation/peace) (In Review)
 - [Healthcare Governance](/framework/docs/implementation/healthcare) (Coming Soon)
 - [Food Systems & Agriculture](/framework/docs/implementation/food) (Coming Soon)
-- [Economic Integration](/framework/docs/implementation/economic)
+- [Economic Integration](/framework/docs/implementation/economic) (In Review)
 - [Justice Systems](/framework/docs/implementation/justice) (Planned)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
 - [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (Planned)
 
 ### Tier 2: Systems for Long-Term Thriving
-- [Technology Governance](/framework/docs/implementation/technology) (Coming soon)
+- [Technology Governance](/framework/docs/implementation/technology) (In Review)
 - [Financial Systems](/framework/docs/implementation/finance) (Planned)
 - [Educational Systems](/framework/docs/implementation/education) (Planned)
 - [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
@@ -144,8 +144,8 @@ The Global Governance Framework can be applied across various domains. Each doma
 ### Tier 4: Visionary & Meta Governance
 - [Space Governance](/framework/docs/implementation/space) (Planned)
 - [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (Planned)
-- [Integrated Meta-Governance](/framework/docs/implementation/meta) (*NEW*)
-- [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (Planned)
+- [Integrated Meta-Governance](/framework/docs/implementation/meta) (In Review)
+- [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (In Review)
 
 Each domain implementation provides detailed guidance, tools, and case studies specific to that area, while adhering to the core framework principles and implementation approaches.
 

@@ -28,7 +28,7 @@ const initialNav = [
         titleKey: 'framework.docs.nav.implementationTier2',
         path: '/framework/docs/implementation/tier-2',
         subItems: [
-          { titleKey: 'framework.docs.nav.implementationTechnology', path: '/framework/docs/implementation/technology', comingSoon: true },
+          { titleKey: 'framework.docs.nav.implementationTechnology', path: '/framework/docs/implementation/technology', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationFinancial', path: '/framework/docs/implementation/finance', planned: true },
           { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', planned: true },
           { titleKey: 'framework.docs.nav.implementationUrban', path: '/framework/docs/implementation/urban', planned: true },
@@ -57,7 +57,7 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationSpaceGovernance', path: '/framework/docs/implementation/space', planned: true },
           { titleKey: 'framework.docs.nav.implementationConsciousness', path: '/framework/docs/implementation/consciousness', planned: true },
           { titleKey: 'framework.docs.nav.implementationMetaGovernance', path: '/framework/docs/implementation/meta', status: 'review' },
-          { titleKey: 'framework.docs.nav.implementationMethodsTools', path: '/framework/docs/implementation/methods-tools', status: 'ready' }
+          { titleKey: 'framework.docs.nav.implementationMethodsTools', path: '/framework/docs/implementation/methods-tools', status: 'review' }
         ]
       }
     ]

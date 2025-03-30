@@ -115,16 +115,16 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 
 ### Nivå 1: Global stabilitet och rättvisa
 - [Klimat och energistyrning](/framework/docs/implementation/energy) (Kommer snart)
-- [Fred och konflikthantering](/framework/docs/implementation/peace)
+- [Fred och konflikthantering](/framework/docs/implementation/peace) (Under granskning)
 - [Hälso- och sjukvårdsstyrning](/framework/docs/implementation/healthcare) (Kommer snart)
 - [Livsmedelssystem och jordbruk](/framework/docs/implementation/food) (Kommer snart)
-- [Ekonomisk integration](/framework/docs/implementation/economic)
+- [Ekonomisk integration](/framework/docs/implementation/economic) (Under granskning)
 - [Rättssystem](/framework/docs/implementation/justice) (Planerad)
 - [Migration och mänsklig rörlighet](/framework/docs/implementation/migration) (Planerad)
 - [Katastrofrisk och resiliens](/framework/docs/implementation/disaster) (Planerad)
 
 ### Nivå 2: System för långsiktigt välmående
-- [Teknikstyrning](/framework/docs/implementation/technology) (Kommer snart)
+- [Teknikstyrning](/framework/docs/implementation/technology) (Under granskning)
 - [Finansiella system](/framework/docs/implementation/finance) (Planerad)
 - [Utbildningssystem](/framework/docs/implementation/education) (Planerad)
 - [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)
@@ -144,8 +144,8 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 ### Nivå 4: Visionär och metagovernance
 - [Rymdförvaltning](/framework/docs/implementation/space) (Planerad)
 - [Medvetande & inre utveckling](/framework/docs/implementation/consciousness) (Planerad)
-- [Integrerad metagovernance](/framework/docs/implementation/meta) (*Ny*)
-- [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools) (Planerad)
+- [Integrerad metagovernance](/framework/docs/implementation/meta) (Under granskning)
+- [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools) (Under granskning)
 
 
 Varje domänimplementering ger detaljerad vägledning, verktyg och fallstudier specifika för det området, samtidigt som de följer ramverkets kärnprinciper och implementeringsmetoder.

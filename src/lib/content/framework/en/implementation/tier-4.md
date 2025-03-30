@@ -6,4 +6,4 @@ The fourth tier includes forward-looking and systemic domains of governance, add
 - [Space Governance](/framework/docs/implementation/space) (Planned)
 - [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (Planned)
 - [Integrated Meta-Governance](/framework/docs/implementation/meta) (In review)
-- [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (Ready)
+- [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (In review)
