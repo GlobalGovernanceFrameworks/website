@@ -14,7 +14,7 @@ const initialNav = [
         titleKey: 'framework.docs.nav.implementationTier1',
         path: '/framework/docs/implementation/tier-1',
         subItems: [
-          { titleKey: 'framework.docs.nav.implementationClimateEnergy', path: '/framework/docs/implementation/energy', comingSoon: true },
+          { titleKey: 'framework.docs.nav.implementationClimateEnergy', path: '/framework/docs/implementation/energy', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationPeace', path: '/framework/docs/implementation/peace', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationHealthcare', path: '/framework/docs/implementation/healthcare', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationFood', path: '/framework/docs/implementation/food', comingSoon: true },

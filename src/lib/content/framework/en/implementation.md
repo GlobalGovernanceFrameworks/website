@@ -114,7 +114,7 @@ Implementing the framework works best as a gradual, evolutionary process:
 The Global Governance Framework can be applied across various domains. Each domain requires specific consideration while following the core principles and implementation approaches outlined above.
 
 ### Tier 1: Urgent Global Stability & Justice
-- [Climate & Energy Governance](/framework/docs/implementation/energy) (Coming Soon)
+- [Climate & Energy Governance](/framework/docs/implementation/energy) (In Review)
 - [Peace & Conflict Resolution](/framework/docs/implementation/peace) (In Review)
 - [Healthcare Governance](/framework/docs/implementation/healthcare) (Coming Soon)
 - [Food Systems & Agriculture](/framework/docs/implementation/food) (Coming Soon)
