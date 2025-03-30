@@ -4228,33 +4228,33 @@ The following standardized indicators form a common measurement framework for te
 
 | Metric | Definition | Measurement | Thresholds |
 |--------|------------|-------------|------------|
-| **Documentation Completeness** | Percentage of governance decisions with complete documentation of process, rationale, and outcomes | Document audit comparing actual vs. required documentation elements | Unacceptable: <70%<br>Minimal: 70-85%<br>Good: 85-95%<br>Exemplary: >95% |
-| **Stakeholder Accessibility** | Average time required for affected stakeholders to access relevant governance information | Timed tests using stakeholder personas attempting to locate specific governance information | Unacceptable: >72 hours<br>Minimal: 24-72 hours<br>Good: 4-24 hours<br>Exemplary: <4 hours |
-| **Decision Traceability** | Percentage of governance outcomes that can be traced to specific authorization, process, and evidence | Random sampling of governance decisions with traceability analysis | Unacceptable: <60%<br>Minimal: 60-80%<br>Good: 80-95%<br>Exemplary: >95% |
+| **Documentation Completeness** | Percentage of governance decisions with complete documentation of process, rationale, and outcomes | Document audit comparing actual vs. required documentation elements | Unacceptable: &lt;70%<br>Minimal: 70-85%<br>Good: 85-95%<br>Exemplary: &gt;95% |
+| **Stakeholder Accessibility** | Average time required for affected stakeholders to access relevant governance information | Timed tests using stakeholder personas attempting to locate specific governance information | Unacceptable: &gt;72 hours<br>Minimal: 24-72 hours<br>Good: 4-24 hours<br>Exemplary: &lt;4 hours |
+| **Decision Traceability** | Percentage of governance outcomes that can be traced to specific authorization, process, and evidence | Random sampling of governance decisions with traceability analysis | Unacceptable: &lt;60%<br>Minimal: 60-80%<br>Good: 80-95%<br>Exemplary: &gt;95% |
 
 #### Inclusivity and Representation Metrics
 
 | Metric | Definition | Measurement | Thresholds |
 |--------|------------|-------------|------------|
-| **Stakeholder Diversity** | Percentage of affected stakeholder groups with meaningful representation in governance processes | Stakeholder mapping compared to actual participation records | Unacceptable: <50%<br>Minimal: 50-70%<br>Good: 70-90%<br>Exemplary: >90% |
-| **Participation Equity** | Distribution of decision influence across stakeholder groups, measured as variance from proportional representation | Statistical analysis of decision input vs. stakeholder impact weighting | Unacceptable: >50% variance<br>Minimal: 30-50% variance<br>Good: 15-30% variance<br>Exemplary: <15% variance |
-| **Accessibility Compliance** | Percentage of governance interfaces and processes meeting defined accessibility standards | Automated and manual accessibility audits using established criteria | Unacceptable: <80%<br>Minimal: 80-90%<br>Good: 90-98%<br>Exemplary: >98% |
+| **Stakeholder Diversity** | Percentage of affected stakeholder groups with meaningful representation in governance processes | Stakeholder mapping compared to actual participation records | Unacceptable: &lt;50%<br>Minimal: 50-70%<br>Good: 70-90%<br>Exemplary: &gt;90% |
+| **Participation Equity** | Distribution of decision influence across stakeholder groups, measured as variance from proportional representation | Statistical analysis of decision input vs. stakeholder impact weighting | Unacceptable: &gt;50% variance<br>Minimal: 30-50% variance<br>Good: 15-30% variance<br>Exemplary: &lt;15% variance |
+| **Accessibility Compliance** | Percentage of governance interfaces and processes meeting defined accessibility standards | Automated and manual accessibility audits using established criteria | Unacceptable: &lt;80%<br>Minimal: 80-90%<br>Good: 90-98%<br>Exemplary: &gt;98% |
 
 #### Effectiveness Metrics
 
 | Metric | Definition | Measurement | Thresholds |
 |--------|------------|-------------|------------|
-| **Risk Reduction Rate** | Percentage reduction in identified technology risks after governance implementation | Pre/post governance risk assessment using standardized framework | Unacceptable: <30%<br>Minimal: 30-50%<br>Good: 50-80%<br>Exemplary: >80% |
-| **Compliance Effectiveness** | Percentage of governance requirements consistently followed in practice | Random sampling audit of actual practices vs. documented requirements | Unacceptable: <75%<br>Minimal: 75-85%<br>Good: 85-95%<br>Exemplary: >95% |
-| **Incident Response Time** | Average time between issue detection and appropriate governance response | Tracking log analysis for identified governance incidents | Unacceptable: >7 days<br>Minimal: 2-7 days<br>Good: 12-48 hours<br>Exemplary: <12 hours |
+| **Risk Reduction Rate** | Percentage reduction in identified technology risks after governance implementation | Pre/post governance risk assessment using standardized framework | Unacceptable: &lt;30%<br>Minimal: 30-50%<br>Good: 50-80%<br>Exemplary: &gt;80% |
+| **Compliance Effectiveness** | Percentage of governance requirements consistently followed in practice | Random sampling audit of actual practices vs. documented requirements | Unacceptable: &lt;75%<br>Minimal: 75-85%<br>Good: 85-95%<br>Exemplary: &gt;95% |
+| **Incident Response Time** | Average time between issue detection and appropriate governance response | Tracking log analysis for identified governance incidents | Unacceptable: &gt;7 days<br>Minimal: 2-7 days<br>Good: 12-48 hours<br>Exemplary: &lt;12 hours |
 
 #### Adaptability Metrics
 
 | Metric | Definition | Measurement | Thresholds |
 |--------|------------|-------------|------------|
-| **Update Frequency** | Average time between governance framework reviews and updates | Documentation of governance revision history | Unacceptable: >18 months<br>Minimal: 12-18 months<br>Good: 6-12 months<br>Exemplary: <6 months with event-based triggers |
-| **Feedback Integration Rate** | Percentage of stakeholder feedback items that receive documented consideration in governance evolution | Feedback tracking system analysis | Unacceptable: <50%<br>Minimal: 50-70%<br>Good: 70-90%<br>Exemplary: >90% |
-| **Emerging Technology Response** | Average time between technology change identification and corresponding governance adaptation | Tracking of technology shifts and related governance updates | Unacceptable: >12 months<br>Minimal: 6-12 months<br>Good: 3-6 months<br>Exemplary: <3 months |
+| **Update Frequency** | Average time between governance framework reviews and updates | Documentation of governance revision history | Unacceptable: &gt;18 months<br>Minimal: 12-18 months<br>Good: 6-12 months<br>Exemplary: &lt;6 months with event-based triggers |
+| **Feedback Integration Rate** | Percentage of stakeholder feedback items that receive documented consideration in governance evolution | Feedback tracking system analysis | Unacceptable: &lt;50%<br>Minimal: 50-70%<br>Good: 70-90%<br>Exemplary: &gt;90% |
+| **Emerging Technology Response** | Average time between technology change identification and corresponding governance adaptation | Tracking of technology shifts and related governance updates | Unacceptable: &gt;12 months<br>Minimal: 6-12 months<br>Good: 3-6 months<br>Exemplary: &lt;3 months |
 
 These core indicators provide a foundation for standardized governance assessment. Organizations should implement all core metrics while recognizing that thresholds may require adjustment based on organizational maturity, technology risk level, and governance scope.
 
@@ -4266,27 +4266,27 @@ Different technology domains require specialized metrics addressing their unique
 
 | Metric | Definition | Measurement | Acceptable Thresholds |
 |--------|------------|-------------|----------------------|
-| **Fairness Variance** | Maximum performance disparity between demographic groups for key algorithm functions | Statistical analysis across protected categories | Critical systems: <3%<br>High-risk systems: <5%<br>Medium-risk systems: <10% |
-| **Human Oversight Ratio** | Percentage of algorithmic decisions reviewed by humans, stratified by decision impact | Decision log analysis with impact classification | Critical decisions: >95%<br>High-impact decisions: >20%<br>Medium-impact decisions: >5% |
-| **Explanation Adequacy** | Percentage of algorithmic decisions with explanations rated as sufficient by affected stakeholders | Survey of decision subjects with standardized adequacy criteria | Critical systems: >90%<br>High-risk systems: >80%<br>Medium-risk systems: >70% |
-| **Intervention Effectiveness** | Percentage reduction in algorithmic harm incidents following governance interventions | Pre/post intervention incident rate comparison | Critical systems: >90%<br>High-risk systems: >75%<br>Medium-risk systems: >50% |
+| **Fairness Variance** | Maximum performance disparity between demographic groups for key algorithm functions | Statistical analysis across protected categories | Critical systems: &lt;3%<br>High-risk systems: &lt;5%<br>Medium-risk systems: &lt;10% |
+| **Human Oversight Ratio** | Percentage of algorithmic decisions reviewed by humans, stratified by decision impact | Decision log analysis with impact classification | Critical decisions: &gt;95%<br>High-impact decisions: &gt;20%<br>Medium-impact decisions: &gt;5% |
+| **Explanation Adequacy** | Percentage of algorithmic decisions with explanations rated as sufficient by affected stakeholders | Survey of decision subjects with standardized adequacy criteria | Critical systems: &gt;90%<br>High-risk systems: &gt;80%<br>Medium-risk systems: &gt;70% |
+| **Intervention Effectiveness** | Percentage reduction in algorithmic harm incidents following governance interventions | Pre/post intervention incident rate comparison | Critical systems: &gt;90%<br>High-risk systems: &gt;75%<br>Medium-risk systems: &gt;50% |
 
 #### Data Governance
 
 | Metric | Definition | Measurement | Acceptable Thresholds |
 |--------|------------|-------------|----------------------|
-| **Consent Validity** | Percentage of data usage covered by informed, specific, and current consent | Consent audit using standardized validity criteria | Sensitive data: >98%<br>Personal data: >95%<br>Non-personal data: >90% |
-| **Purpose Limitation Compliance** | Percentage of data uses aligned with stated collection purpose | Data flow analysis comparing usage vs. declared purpose | Sensitive data: >99%<br>Personal data: >95%<br>Non-personal data: >85% |
-| **Data Minimization Rate** | Percentage reduction in unnecessary data collection after governance implementation | Pre/post governance data inventory comparison | Sensitive data: >80%<br>Personal data: >60%<br>Non-personal data: >40% |
-| **Access Request Performance** | Percentage of data subject access requests fulfilled within required timeframe | Access request tracking system analysis | Regulated contexts: 100%<br>Voluntary frameworks: >90% |
+| **Consent Validity** | Percentage of data usage covered by informed, specific, and current consent | Consent audit using standardized validity criteria | Sensitive data: &gt;98%<br>Personal data: &gt;95%<br>Non-personal data: &gt;90% |
+| **Purpose Limitation Compliance** | Percentage of data uses aligned with stated collection purpose | Data flow analysis comparing usage vs. declared purpose | Sensitive data: &gt;99%<br>Personal data: &gt;95%<br>Non-personal data: &gt;85% |
+| **Data Minimization Rate** | Percentage reduction in unnecessary data collection after governance implementation | Pre/post governance data inventory comparison | Sensitive data: &gt;80%<br>Personal data: &gt;60%<br>Non-personal data: &gt;40% |
+| **Access Request Performance** | Percentage of data subject access requests fulfilled within required timeframe | Access request tracking system analysis | Regulated contexts: 100%<br>Voluntary frameworks: &gt;90% |
 
 #### Blockchain and Distributed Systems
 
 | Metric | Definition | Measurement | Acceptable Thresholds |
 |--------|------------|-------------|----------------------|
-| **Governance Participation Rate** | Percentage of token holders/network participants actively engaging in governance decisions | Governance participation logs compared to total eligible participants | Critical decisions: >30%<br>Major decisions: >15%<br>Minor decisions: >5% |
-| **Decision Implementation Fidelity** | Percentage of governance decisions implemented as approved without deviation | Implementation audit comparing outcomes to documented decisions | Critical decisions: >98%<br>Major decisions: >95%<br>Minor decisions: >90% |
-| **Concentration of Power** | Gini coefficient or similar metric measuring distribution of governance influence | Statistical analysis of decision weight distribution | Critical systems: <0.4<br>Public systems: <0.6<br>Private systems: <0.7 |
+| **Governance Participation Rate** | Percentage of token holders/network participants actively engaging in governance decisions | Governance participation logs compared to total eligible participants | Critical decisions: &gt;30%<br>Major decisions: &gt;15%<br>Minor decisions: &gt;5% |
+| **Decision Implementation Fidelity** | Percentage of governance decisions implemented as approved without deviation | Implementation audit comparing outcomes to documented decisions | Critical decisions: &gt;98%<br>Major decisions: &gt;95%<br>Minor decisions: &gt;90% |
+| **Concentration of Power** | Gini coefficient or similar metric measuring distribution of governance influence | Statistical analysis of decision weight distribution | Critical systems: &lt;0.4<br>Public systems: &lt;0.6<br>Private systems: &lt;0.7 |
 | **Governance Transaction Costs** | Economic and time costs for participation in governance processes | Quantitative analysis of resources required for meaningful participation | Should not exceed 1% of participant value derived from system |
 
 ### 8.8.3 Risk Level Standards
