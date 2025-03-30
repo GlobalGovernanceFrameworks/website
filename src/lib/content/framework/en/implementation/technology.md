@@ -91,10 +91,12 @@
 - Educational Toolkits  
 - Citizen Education Resources  
 - Accessibility and Inclusion  
+
 10.5 **Ethics Layer Expansion**  
 - Ethics Pluralism Framework  
 - Ethics Governance Cycle  
 - Ethical Red Flags and Intervention Protocols  
+
 10.6 **Techno-Philosophical Orientation Appendix**  
 - Philosophical Foundations  
 - Society-Technology Symbiosis  
