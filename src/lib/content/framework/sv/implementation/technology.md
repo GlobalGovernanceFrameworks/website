@@ -11,6 +11,7 @@
 2.1 Teknikområden som omfattas  
 - Nivå 1: Högprioriterade områden (AI, Bioteknik)  
 - Nivå 2: Sekundärt prioriterade områden (Blockchain, IoT, Datasystem)  
+
 2.2 Intressenter  
 2.3 Icke-mänskliga intressenter  
 2.4 Aktuella utmaningar  
@@ -24,13 +25,16 @@
 - Styrningsprotokoll  
 - Interoperabla standarder  
 - Minsta livskraftiga styrning  
+
 3.2 Mekanismer för interoperabilitet  
 - Systemöverskridande kopplingar  
 - Förhandlingslager mellan ramverk  
+
 3.3 Meta-styrningslager  
 - Övervakningsmekanismer  
 - Tidsbegränsningsklausuler  
 - Reflexivitetsklausul  
+
 3.4 Styrning för bottom-up-innovation  
 
 #### **4. Implementeringsfärdplan**  
