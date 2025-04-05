@@ -398,6 +398,9 @@
               <a href="{base}/framework/docs/case-studies" class={isActive('/framework/docs/case-studies') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkCaseStudies')}
               </a>
+              <a href="{base}/framework/ai-futures" class={isActive('/framework/ai-futures') ? 'active' : ''} data-sveltekit-preload-data="hover">
+                {$t('common.header.frameworkAIFutures')}
+              </a>
               <a href="{base}/framework/docs/resources" class={isActive('/framework/docs/resources') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkResources')}
               </a>
