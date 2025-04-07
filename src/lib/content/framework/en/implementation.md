@@ -137,7 +137,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Planned)
 - [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
 - [Rural Development](/framework/docs/implementation/rural) (Planned)
-- [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual) (Planned)
+- [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual) (In Review)
 - [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (Planned)
 - [Global Ethics & Human Rights](/framework/docs/implementation/ethics) (Planned)
 

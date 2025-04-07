@@ -137,7 +137,7 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 - [Biologisk mångfald](/framework/docs/implementation/biodiversity) (Planerad)
 - [Bevarande av kulturarv](/framework/docs/implementation/culture) (Planerad)
 - [Landsbygdsutveckling](/framework/docs/implementation/rural) (Planerad)
-- [Religiös och andlig dialog](/framework/docs/implementation/spiritual) (Planerad)
+- [Religiös och andlig dialog](/framework/docs/implementation/spiritual) (Under granskning)
 - [Ungdoms- & generationsstyrning](/framework/docs/implementation/youth) (Planerad)
 - [Globala rättigheter & etik](/framework/docs/implementation/ethics) (Planerad)
 
