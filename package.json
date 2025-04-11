@@ -14,7 +14,7 @@
 		"lint": "prettier --check . && eslint .",
 		"test:e2e": "playwright test",
 		"test": "npm run test:e2e",
-    "generate-pdfs": "node scripts/generate-pdfs.js"
+		"generate-pdfs": "node scripts/generate-pdfs.js"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
@@ -48,6 +48,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"lucide-svelte": "^0.487.0",
 		"marked": "^15.0.7",
 		"sveltekit-i18n": "^2.4.2"
 	}

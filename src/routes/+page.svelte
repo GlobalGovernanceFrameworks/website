@@ -1,5 +1,6 @@
 <!-- src/routes/+page.svelte -->
 <script>
+  import InfoBox from '$lib/components/InfoBox.svelte';
   import { t } from '$lib/i18n';
   import { onMount } from 'svelte';
   import { base } from '$app/paths';
@@ -21,25 +22,25 @@
 </svelte:head>
 
 <!-- Document Readiness Disclaimer Banner -->
-<section style="padding: 1rem 0; background-color: #f0f4f9; border-top: 3px solid #DAA520; border-bottom: 1px solid #e5e7eb;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
-    <div style="display: flex; gap: 1rem; align-items: flex-start;">
-      <div style="flex-shrink: 0; margin-top: 0.25rem;">
-        <svg xmlns="http://www.w3.org/2000/svg" style="height: 1.5rem; width: 1.5rem; color: #2B4B8C;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </div>
-      <div>
-        <h3 style="font-size: 1.125rem; font-weight: 600; color: #2B4B8C; margin-bottom: 0.5rem;">
-          {$t('home.disclaimer.title')}
-        </h3>
-        <p style="color: #4b5563; font-size: 0.95rem; line-height: 1.5;">
-          {$t('home.disclaimer.text')}
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+<InfoBox
+  title={$t('home.disclaimer.title')}
+ 
+>
+  <p>{$t('home.disclaimer.text')}</p>
+</InfoBox>
+
+<InfoBox
+  title={$t('home.whyExists.title')}
+  color="#2563eb"
+  background="#eff6ff"
+  borderTop="#60a5fa"
+  borderBottom="#c7d2fe"
+>
+  <p>{$t('home.whyExists.paragraph1')}</p>
+  <p>{$t('home.whyExists.paragraph2')}</p>
+  <p>{$t('home.whyExists.paragraph3')}</p>
+  <p>{$t('home.whyExists.paragraph4')}</p>
+</InfoBox>
 
 <!-- Hero Section -->
 <section style="padding: 4rem 0; background: linear-gradient(to bottom right, #2B4B8C, #6B5CA5); color: white;">

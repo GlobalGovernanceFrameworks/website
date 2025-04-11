@@ -3,6 +3,13 @@
   "title": "Status för ramverksutveckling",
   "text": "Global Governance Framework är ett konceptuellt projekt som utforskar möjliga tillvägagångssätt för flernivåstyrning. Dokumentationens olika delar varierar i mognadsgrad, från konceptuella till fullt utvecklade. Detta arbete syftar till att inspirera diskussion och innovation snarare än att presentera ett färdigt, operativt system. Vi arbetar aktivt med att förfina dessa resurser och välkomnar din återkoppling för att forma deras utveckling. Kontrollera varje dokuments statusindikator för aktuell beredskapsgrad."
   },
+  "whyExists": {
+    "title": "Varför Detta Existerar",
+    "paragraph1": "Detta projekt började som en personlig reflektion: Vad skulle krävas för att mänskligheten ska kunna blomstra tillsammans?",
+    "paragraph2": "Sedan barndomen har jag (Björn Kenneth Holmström) varit fascinerad av djur, kulturer och jorden som ett gemensamt hem. Den tidiga känslan av förundran växte till en livslång drivkraft att stödja etiska och medkännande system som kan tjäna allt liv – mänskligt och bortom.",
+    "paragraph3": "Det du ser här är inte en slutgiltig lösning. Det är ett levande förslag. Ett samarbetsutkast till hur en mer sammankopplad, inkluderande och framtidssäkrad form av styrning kan se ut.",
+    "paragraph4": "Det erbjuds öppet – format genom samtal med AI-system som Claude, ChatGPT, Grok och DeepSeek, och grundat i tron att god styrning måste växa fram ur gemensam visdom. Låt detta vara en början, inte ett svar. Du är inbjuden att utforska, ifrågasätta, bidra och förbättra det."
+  },
   "title": "Ramverk för Global Styrning",
   "subtitle": "Förbinder styrningsinnovationer över hela världen",
   "intro": {
