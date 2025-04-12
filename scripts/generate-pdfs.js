@@ -22,6 +22,10 @@ const documents = [
   { path: '/framework/docs/case-studies', filename: 'Case-Studies.pdf', titleKey: 'Case Studies' },
   { path: '/framework/docs/resources', filename: 'Resources.pdf', titleKey: 'Resources' },
 
+  // Global Citizenship Frameworks
+  { path: '/framework/global-citizenship/full-framework', filename: 'Global-Citizenship.pdf', titleKey: 'Global Citizenship' },
+  { path: '/framework/global-citizenship/4-page-overview', filename: 'Global-Citizenship-4-page-overview.pdf', titleKey: 'Global Citizenship 4-page summary' },
+
   // Tiered Implementation Frameworks
   { path: '/framework/docs/implementation/tier-1', filename: 'Tier-1-Urgent-Stability.pdf', titleKey: 'Tier 1 Overview' },
   { path: '/framework/docs/implementation/tier-2', filename: 'Tier-2-Long-Term-Thriving.pdf', titleKey: 'Tier 2 Overview' },
@@ -64,6 +68,8 @@ const titles = {
     'Implementation Guidelines': 'Global Governance Framework: Implementation Guidelines',
     'Case Studies': 'Global Governance Framework: Case Studies',
     'Resources': 'Global Governance Framework: Resources',
+    'Global Citizenship': 'Global Governance Framework: Global Citizenship',
+    'Global Citizenship 4-page summary': 'Global Governance Framework: Global Citizenship 4-Page Overview',
     'Tier 1 Overview': 'Global Governance Framework: Tier 1 – Urgent Global Stability & Justice',
     'Tier 2 Overview': 'Global Governance Framework: Tier 2 – Systems for Long-Term Thriving',
     'Tier 3 Overview': 'Global Governance Framework: Tier 3 – Equity, Culture & Future Generations',
@@ -97,6 +103,8 @@ const titles = {
     'Implementation Guidelines': 'Global Governance Framework: Implementeringsriktlinjer',
     'Case Studies': 'Global Governance Framework: Fallstudier',
     'Resources': 'Global Governance Framework: Resurser',
+    'Global Citizenship': 'Globalt Governance Framework: Globalt Medborgarskap',
+    'Global Citizenship 4-page summary': 'Globalt Medborgarskap Ramverk: Globalt medborgarskap 4-sidors översikt',
     'Tier 1 Overview': 'Global Governance Framework: Nivå 1 – Global stabilitet och rättvisa',
     'Tier 2 Overview': 'Global Governance Framework: Nivå 2 – System för långsiktigt välmående',
     'Tier 3 Overview': 'Global Governance Framework: Nivå 3 – Jämlikhet, kultur & framtida generationer',

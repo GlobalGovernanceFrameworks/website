@@ -1,7 +1,7 @@
 <!-- src/routes/+page.svelte -->
 <script>
   import InfoBox from '$lib/components/InfoBox.svelte';
-  import { t } from '$lib/i18n';
+  import { t, locale } from '$lib/i18n';
   import { onMount } from 'svelte';
   import { base } from '$app/paths';
 
@@ -137,6 +137,46 @@
       <a href="{base}/framework" style="display: inline-block; background-color: #B8860B; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
         {$t('home.cta')}
       </a>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 4rem 0; background: linear-gradient(to right, #f0f9ff, #e0f2fe);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div class="row" style="display: flex; flex-wrap: wrap; align-items: center;">
+      <div class="col-md-6" style="flex: 1 1 50%; padding: 1rem;">
+        <h2 style="font-size: 2rem; font-weight: 700; color: #1e3a8a;">{$t('home.globalCitizenship.title')}</h2>
+        <p style="font-size: 1.25rem; color: #1e40af; margin-bottom: 1rem;">{$t('home.globalCitizenship.lead')}</p>
+        <p style="color: #1e293b; font-size: 1.05rem; line-height: 1.6;">
+          {$t('home.globalCitizenship.description')}
+        </p>
+        <div style="margin-top: 1.5rem;">
+          <div style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+            <span style="font-size: 1.5rem; margin-right: 0.75rem;">🌱</span>
+            <span>{$t('home.globalCitizenship.point1')}</span>
+          </div>
+          <div style="display: flex; align-items: center; margin-bottom: 0.75rem;">
+            <span style="font-size: 1.5rem; margin-right: 0.75rem;">🤝</span>
+            <span>{$t('home.globalCitizenship.point2')}</span>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <span style="font-size: 1.5rem; margin-right: 0.75rem;">🛠️</span>
+            <span>{$t('home.globalCitizenship.point3')}</span>
+          </div>
+        </div>
+        <a href="/framework/docs/global-citizenship" style="display: inline-block; margin-top: 2rem; background-color: #1e3a8a; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          {$t('home.globalCitizenship.button')}
+        </a>
+      </div>
+      <div class="col-md-6" style="flex: 1 1 50%; padding: 1rem;">
+        <div style="text-align: center;">
+          {#if $locale === 'sv'}
+            <img src="/images/global-citizenship-diagram-sv.svg" alt="Ramverk för Globalt Medborgarskap Visualisering" style="max-width: 100%; border-radius: 0.75rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          {:else}
+            <img src="/images/global-citizenship-diagram.svg" alt="Global Citizenship Framework Visualization" style="max-width: 100%; border-radius: 0.75rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          {/if}
+        </div>
+      </div>
     </div>
   </div>
 </section>

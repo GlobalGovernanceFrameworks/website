@@ -71,6 +71,15 @@
     "primaryButton": "Utforska Ramverket",
     "secondaryButton": "Engagera Dig"
   },
-  "cta": "Utforska Ramverket"
+  "cta": "Utforska Ramverket",
+  "globalCitizenship": {
+    "title": "Ramverk för Globalt Medborgarskap i Praktiken",
+    "lead": "Ett omfattande tillvägagångssätt för att främja planetär identitet och kollektiv handling",
+    "description": "Ramverket för Globalt Medborgarskap i Praktiken erbjuder en strukturerad väg för individer och samhällen att utvecklas från medvetenhet till aktivt deltagande i vår sammankopplade värld. Baserat på tio universella värden som överskrider kulturella gränser ger detta ramverk praktisk vägledning för att navigera globala utmaningar.",
+    "point1": "Progressiv utveckling från medvetenhet till ledarskap",
+    "point2": "Tio universella värden som förenar mänskligheten",
+    "point3": "Praktiska verktyg för implementering och utvärdering",
+    "button": "Utforska Ramverket"
+  }
 }
 

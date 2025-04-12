@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 600"
+   width="800"
+   height="600"
+   version="1.1"
+   id="svg50"
+   sodipodi:docname="global-citizenship-diagram-sv.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview50"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="400.35461"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg50" />
+  <!-- Background with subtle gradient -->
+  <defs
+     id="defs22">
+    <linearGradient
+       id="bgGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#EBF4FF"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#E0F2FE"
+         id="stop2" />
+    </linearGradient>
+    <!-- Glowing effect for center circles -->
+    <filter
+       id="glow"
+       x="-0.082522968"
+       y="-0.085714286"
+       width="1.1650459"
+       height="1.1714286">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="blur"
+         id="feGaussianBlur2" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="over"
+         id="feComposite2" />
+    </filter>
+    <!-- Gradient for center circle -->
+    <linearGradient
+       id="centerGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         id="stop4" />
+    </linearGradient>
+    <!-- Gradients for the orbital paths -->
+    <linearGradient
+       id="pathGradient1"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#2D5F2D"
+         stop-opacity="0.3"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#7D9F7D"
+         stop-opacity="0.3"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="pathGradient2"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#B8860B"
+         stop-opacity="0.3"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#DAA520"
+         stop-opacity="0.3"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="pathGradient3"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         stop-opacity="0.3"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         stop-opacity="0.3"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="pathGradient4"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#654321"
+         stop-opacity="0.3"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="#8B7355"
+         stop-opacity="0.3"
+         id="stop12" />
+    </linearGradient>
+    <!-- Gradients for the orbital levels -->
+    <linearGradient
+       id="levelGradient1"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2D5F2D"
+         id="stop13" />
+      <stop
+         offset="100%"
+         stop-color="#7D9F7D"
+         id="stop14" />
+    </linearGradient>
+    <linearGradient
+       id="levelGradient2"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#B8860B"
+         id="stop15" />
+      <stop
+         offset="100%"
+         stop-color="#DAA520"
+         id="stop16" />
+    </linearGradient>
+    <linearGradient
+       id="levelGradient3"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         id="stop17" />
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         id="stop18" />
+    </linearGradient>
+    <linearGradient
+       id="levelGradient4"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#654321"
+         id="stop19" />
+      <stop
+         offset="100%"
+         stop-color="#8B7355"
+         id="stop20" />
+    </linearGradient>
+    <!-- Value gradient -->
+    <linearGradient
+       id="valueGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#DAA520"
+         id="stop21" />
+      <stop
+         offset="100%"
+         stop-color="#B8860B"
+         id="stop22" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient50"
+       x1="390"
+       y1="70"
+       x2="410"
+       y2="90"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient51"
+       x1="520"
+       y1="110"
+       x2="540"
+       y2="130"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient52"
+       x1="640"
+       y1="220"
+       x2="660"
+       y2="240"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient53"
+       x1="610"
+       y1="360"
+       x2="630"
+       y2="380"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient54"
+       x1="490"
+       y1="490"
+       x2="510"
+       y2="510"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient55"
+       x1="290"
+       y1="490"
+       x2="310"
+       y2="510"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient56"
+       x1="170"
+       y1="360"
+       x2="190"
+       y2="380"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient57"
+       x1="140"
+       y1="220"
+       x2="160"
+       y2="240"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient58"
+       x1="260"
+       y1="110"
+       x2="280"
+       y2="130"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#valueGradient"
+       id="linearGradient59"
+       x1="390"
+       y1="510"
+       x2="410"
+       y2="530"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Main background -->
+  <rect
+     width="800"
+     height="600"
+     fill="url(#bgGradient)"
+     rx="15"
+     ry="15"
+     id="rect22" />
+  <!-- Center circle: Shared Values -->
+  <g
+     filter="url(#glow)"
+     id="g23">
+    <circle
+       cx="400"
+       cy="300"
+       r="70"
+       fill="url(#centerGradient)"
+       id="circle22" />
+    <text
+       x="400"
+       y="290"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-weight="bold"
+       fill="white"
+       font-size="16"
+       id="text22">Delade Värderingar</text>
+    <text
+       x="400"
+       y="310"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="white"
+       font-size="12"
+       id="text23">Grund</text>
+  </g>
+  <!-- Orbital paths -->
+  <circle
+     cx="400"
+     cy="300"
+     r="120"
+     fill="none"
+     stroke="url(#pathGradient1)"
+     stroke-width="5"
+     stroke-dasharray="1 2"
+     id="circle23" />
+  <circle
+     cx="400"
+     cy="300"
+     r="190"
+     fill="none"
+     stroke="url(#pathGradient2)"
+     stroke-width="5"
+     stroke-dasharray="1 2"
+     id="circle24" />
+  <circle
+     cx="400"
+     cy="300"
+     r="260"
+     fill="none"
+     stroke="url(#pathGradient3)"
+     stroke-width="5"
+     stroke-dasharray="1 2"
+     id="circle25" />
+  <circle
+     cx="400"
+     cy="300"
+     r="330"
+     fill="none"
+     stroke="url(#pathGradient4)"
+     stroke-width="5"
+     stroke-dasharray="1 2"
+     id="circle26" />
+  <!-- Level 1: Global Awareness -->
+  <circle
+     cx="400"
+     cy="180"
+     r="35"
+     fill="url(#levelGradient1)"
+     id="circle27" />
+  <text
+     x="400"
+     y="175"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="11"
+     id="text27">Globalt</text>
+  <text
+     x="400"
+     y="190"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="11"
+     id="text28">Medvetande</text>
+  <!-- Level 2: Global Understanding -->
+  <circle
+     cx="570"
+     cy="248"
+     r="35"
+     fill="url(#levelGradient2)"
+     id="circle28" />
+  <text
+     x="570"
+     y="243"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="10"
+     id="text29">Global</text>
+  <text
+     x="570"
+     y="258"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="10"
+     id="text30">Förståelse</text>
+  <!-- Level 3: Global Empathy -->
+  <circle
+     cx="530"
+     cy="430"
+     r="35"
+     fill="url(#levelGradient3)"
+     id="circle30" />
+  <text
+     x="530"
+     y="423"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="10"
+     id="text31">Global</text>
+  <text
+     x="530"
+     y="438"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="10"
+     id="text32">Empati</text>
+  <!-- Level 4: Global Participation -->
+  <circle
+     cx="270"
+     cy="430"
+     r="35"
+     fill="url(#levelGradient2)"
+     id="circle32" />
+  <text
+     x="270"
+     y="423"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="10"
+     id="text33">Globalt</text>
+  <text
+     x="270"
+     y="438"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="10"
+     id="text34">Deltagande</text>
+  <!-- Level 5: Global Leadership -->
+  <circle
+     cx="230"
+     cy="248"
+     r="35"
+     fill="url(#levelGradient4)"
+     id="circle34" />
+  <text
+     x="230"
+     y="243"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="11"
+     id="text35">Globalt</text>
+  <text
+     x="230"
+     y="258"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="white"
+     font-size="11"
+     id="text36">Ledarskap</text>
+  <!-- Connection lines between Shared Values and Levels -->
+  <line
+     x1="400"
+     y1="230"
+     x2="400"
+     y2="300"
+     stroke="#B8860B"
+     stroke-width="2"
+     stroke-dasharray="5 3"
+     id="line36" />
+  <line
+     x1="535"
+     y1="272"
+     x2="445"
+     y2="300"
+     stroke="#B8860B"
+     stroke-width="2"
+     stroke-dasharray="5 3"
+     id="line37" />
+  <line
+     x1="495"
+     y1="405"
+     x2="445"
+     y2="330"
+     stroke="#B8860B"
+     stroke-width="2"
+     stroke-dasharray="5 3"
+     id="line38" />
+  <line
+     x1="305"
+     y1="405"
+     x2="355"
+     y2="330"
+     stroke="#B8860B"
+     stroke-width="2"
+     stroke-dasharray="5 3"
+     id="line39" />
+  <line
+     x1="265"
+     y1="272"
+     x2="355"
+     y2="300"
+     stroke="#B8860B"
+     stroke-width="2"
+     stroke-dasharray="5 3"
+     id="line40" />
+  <!-- 10 Core Values around the outside -->
+  <circle
+     cx="400"
+     cy="80"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle40"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient50)" />
+  <text
+     x="400"
+     y="50"
+     text-anchor="middle"
+     id="text40"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Värdesätt Liv i Alla Varelser</text>
+  <line
+     x1="400"
+     y1="70"
+     x2="400"
+     y2="90"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line41"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <circle
+     cx="530"
+     cy="120"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle41"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient51)" />
+  <text
+     x="550"
+     y="100"
+     text-anchor="middle"
+     id="text41"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Agera med Medkänsla</text>
+  <line
+     x1="515"
+     y1="130"
+     x2="490"
+     y2="150"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line42"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <circle
+     cx="650"
+     cy="230"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle42"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient52)" />
+  <text
+     x="690"
+     y="216"
+     text-anchor="middle"
+     id="text42"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Upprätthåll Rättvisa</text>
+  <line
+     x1="640"
+     y1="230"
+     x2="605"
+     y2="230"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line43"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <circle
+     cx="620"
+     cy="370"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle43"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient53)" />
+  <text
+     x="655"
+     y="390"
+     text-anchor="middle"
+     id="text43"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Sök Sanning med Ödmjukhet</text>
+  <line
+     x1="610"
+     y1="362"
+     x2="565"
+     y2="345"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line44"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <circle
+     cx="500"
+     cy="500"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle44"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient54)" />
+  <text
+     x="500"
+     y="530"
+     text-anchor="middle"
+     id="text44"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Respektera Frihet</text>
+  <line
+     x1="500"
+     y1="490"
+     x2="500"
+     y2="465"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line45"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <circle
+     cx="300"
+     cy="500"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle45"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient55)" />
+  <text
+     x="300"
+     y="530"
+     text-anchor="middle"
+     id="text45"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Vårda Jorden</text>
+  <line
+     x1="300"
+     y1="490"
+     x2="300"
+     y2="465"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line46"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <circle
+     cx="180"
+     cy="370"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle46"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient56)" />
+  <text
+     x="145"
+     y="390"
+     text-anchor="middle"
+     id="text46"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Bygg Fred</text>
+  <line
+     x1="190"
+     y1="362"
+     x2="235"
+     y2="345"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line47"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <circle
+     cx="150"
+     cy="230"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle47"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient57)" />
+  <text
+     x="110"
+     y="216"
+     text-anchor="middle"
+     id="text47"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Praktisera Integritet</text>
+  <line
+     x1="160"
+     y1="230"
+     x2="195"
+     y2="230"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line48"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <circle
+     cx="270"
+     cy="120"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle48"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient58)" />
+  <text
+     x="250"
+     y="100"
+     text-anchor="middle"
+     id="text48"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Odla Tacksamhet</text>
+  <line
+     x1="285"
+     y1="130"
+     x2="310"
+     y2="150"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line49"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <circle
+     cx="400"
+     cy="520"
+     r="10"
+     fill="url(#valueGradient)"
+     id="circle49"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:url(#linearGradient59)" />
+  <text
+     x="400"
+     y="550"
+     text-anchor="middle"
+     id="text49"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c">Väx i Visdom och Kärlek</text>
+  <line
+     x1="400"
+     y1="510"
+     x2="400"
+     y2="475"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="line50"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;fill:#2b4b8c" />
+  <!-- Title at the top -->
+  <text
+     x="400"
+     y="30"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="#2B4B8C"
+     font-size="22"
+     id="text50">Global Medborgarskap Ramverk</text>
+</svg>

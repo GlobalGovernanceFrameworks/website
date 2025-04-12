@@ -71,5 +71,14 @@
     "primaryButton": "Explore the Framework",
     "secondaryButton": "Get Involved"
   },
-  "cta": "Explore the Framework"
+  "cta": "Explore the Framework",
+  "globalCitizenship": {
+    "title": "Global Citizenship Practice Framework",
+    "lead": "A comprehensive approach to fostering planetary identity and collective action",
+    "description": "The Global Citizenship Practice Framework provides a structured path for individuals and communities to develop from awareness to active participation in our interconnected world. Built on ten universal values that transcend cultural boundaries, this framework offers practical guidance for navigating global challenges.",
+    "point1": "Progressive development from awareness to leadership",
+    "point2": "Ten universal values that unite humanity",
+    "point3": "Practical implementation tools and assessment metrics",
+    "button": "Explore the Framework"
+  }
 }

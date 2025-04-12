@@ -392,6 +392,9 @@
               <a href="{base}/framework/docs/principles" class={isActive('/framework/docs/principles') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkPrinciples')}
               </a>
+              <a href="{base}/framework/global-citizenship" class={isActive('/framework/global-citizenship') ? 'active' : ''} data-sveltekit-preload-data="hover">
+                {$t('common.header.frameworkGlobalCitizenship')}
+              </a>
               <a href="{base}/framework/docs/implementation" class={isActive('/framework/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkImplementation')}
               </a>

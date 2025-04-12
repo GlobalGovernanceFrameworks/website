@@ -5,6 +5,11 @@ import { writable } from 'svelte/store';
 const initialNav = [
   { titleKey: 'framework.docs.nav.overview', path: '/framework/docs' },
   { titleKey: 'framework.docs.nav.principles', path: '/framework/docs/principles' },
+  { 
+    titleKey: 'framework.docs.nav.globalCitizenship', 
+    path: '/framework/global-citizenship',
+    status: 'ready'
+  },
   {
     titleKey: 'framework.docs.nav.implementation',
     path: '/framework/docs/implementation',
