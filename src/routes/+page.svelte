@@ -164,7 +164,7 @@
             <span>{$t('home.globalCitizenship.point3')}</span>
           </div>
         </div>
-        <a href="/framework/docs/global-citizenship" style="display: inline-block; margin-top: 2rem; background-color: #1e3a8a; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <a href="/framework/global-citizenship" style="display: inline-block; margin-top: 2rem; background-color: #1e3a8a; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
           {$t('home.globalCitizenship.button')}
         </a>
       </div>
