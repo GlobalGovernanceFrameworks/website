@@ -252,7 +252,7 @@
           {$locale === 'sv' ? 'Utforska fullständigt ramverk' : 'Explore Full Framework'}
         </a>
         <button class="secondary-button" on:click={downloadSummary}>
-          {$locale === 'sv' ? 'Ladda ner 2-sidors sammanfattning' : 'Download 2-Page Summary'}
+          {$locale === 'sv' ? 'Ladda ner 4-sidors sammanfattning' : 'Download 4-Page Summary'}
         </button>
       </div>
     </section>
