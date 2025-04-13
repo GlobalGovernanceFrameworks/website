@@ -15,7 +15,6 @@ const BASE_OUTPUT_DIR = path.join(__dirname, '..', 'static/downloads');
 const LANGUAGES = ['en', 'sv'];
 
 // Define documents per language
-// Define documents per language
 const documents = [
   { path: '/framework/docs/principles', filename: 'Core-Principles.pdf', titleKey: 'Core Principles' },
   { path: '/framework/docs/implementation', filename: 'Implementation-Guidelines.pdf', titleKey: 'Implementation Guidelines' },
@@ -135,109 +134,149 @@ const titles = {
   }
 };
 
-async function generatePDF(url, outputPath, title) {
-  console.log(`Generating PDF for ${url}...`);
+async function generatePDF(url, outputPath, title, language) {
+  console.log(`Generating PDF for ${url} in language: ${language}...`);
   
   const browser = await puppeteer.launch({
-    headless: 'new', // Use new headless mode
+    headless: true, // Use default headless mode for compatibility
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
   
-  const page = await browser.newPage();
-  
-  // Set viewport to ensure consistent rendering
-  await page.setViewport({ width: 1200, height: 1600 });
-  
-  // Navigate to the page
-  await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
-  
   try {
-    // Wait for content to be fully rendered
-    await page.waitForSelector('.content', { timeout: 10000 });
+    const page = await browser.newPage();
+    
+    // Set language in browser
+    await page.setExtraHTTPHeaders({
+      'Accept-Language': language
+    });
+    
+    // Set viewport to ensure consistent rendering
+    await page.setViewport({ width: 1200, height: 1600 });
+    
+    // Add lang parameter to URL
+    const urlWithLang = `${url}?lang=${language}`;
+    
+    // Navigate to the page
+    await page.goto(urlWithLang, { waitUntil: 'networkidle0', timeout: 60000 });
+    
+    // Use delay instead of waitForTimeout
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    
+    // Set locale via browser
+    await page.evaluate((lang) => {
+      // Try to set locale in local storage
+      localStorage.setItem('locale', lang);
+      
+      // Trigger a reload to apply language change
+      window.location.reload();
+    }, language);
+    
+    // Wait for page to reload
+    await page.waitForNavigation({ waitUntil: 'networkidle0', timeout: 30000 }).catch(e => {
+      console.log('Navigation timeout or error, continuing anyway:', e.message);
+    });
+    
+    // Another delay for content to render
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    
+    try {
+      // Wait for content to be fully rendered
+      await page.waitForSelector('.content', { timeout: 10000 });
+    } catch (error) {
+      console.warn('Could not find .content selector, continuing anyway');
+    }
+    
+    // Add custom styles for PDF
+    await page.addStyleTag({
+      content: `
+        @page {
+          margin: 1.5cm;
+          size: A4;
+        }
+        body {
+          font-family: 'Arial', sans-serif;
+          padding: 0;
+          margin: 0;
+        }
+        /* Hide elements we don't want in the PDF */
+        header, footer, nav, .sidebar, .toc-container, button, .menu-button, .action-links {
+          display: none !important;
+        }
+        /* Ensure content is properly visible */
+        .documentation-container {
+          display: block !important;
+          grid-template-columns: 1fr !important;
+          max-width: 100% !important;
+        }
+        .content {
+          padding: 0 !important;
+          margin: 0 !important;
+          width: 100% !important;
+        }
+        /* Style headings */
+        h1 { font-size: 24pt; color: #2B4B8C; margin-bottom: 20pt; }
+        h2 { font-size: 18pt; color: #2B4B8C; margin-top: 15pt; }
+        h3 { font-size: 14pt; color: #2B4B8C; }
+        /* Style links */
+        a { color: #DAA520; text-decoration: underline; }
+        
+        /* Improve table styling for PDF */
+        table { 
+          width: 100%;
+          border-collapse: collapse;
+          margin: 1rem 0;
+        }
+        th {
+          background-color: #2B4B8C;
+          color: white;
+          padding: 0.5rem;
+          text-align: left;
+          border: 1px solid #ccc;
+        }
+        td {
+          padding: 0.5rem;
+          border: 1px solid #ccc;
+        }
+        tr:nth-child(even) {
+          background-color: #f9fafb;
+        }
+        
+        /* Improve blockquote styling */
+        blockquote {
+          background-color: #f9fafb;
+          border-left: 4px solid #2B4B8C;
+          padding: 0.5rem 1rem;
+          margin: 1rem 0;
+        }
+      `
+    });
+    
+    // Generate PDF
+    await page.pdf({
+      path: outputPath,
+      format: 'A4',
+      printBackground: true,
+      displayHeaderFooter: true,
+      headerTemplate: `
+        <div style="font-size: 9pt; text-align: center; width: 100%; color: #2B4B8C; margin: 15px 0;">
+          ${title}
+        </div>
+      `,
+      footerTemplate: `
+        <div style="font-size: 9pt; text-align: center; width: 100%; color: #666; margin: 15px 0;">
+          Page <span class="pageNumber"></span> of <span class="totalPages"></span> | www.globalgovernanceframework.org
+        </div>
+      `,
+      margin: { top: '100px', right: '50px', bottom: '100px', left: '50px' }
+    });
+    
+    console.log(`PDF generated: ${outputPath}`);
   } catch (error) {
-    console.warn('Could not find .content selector, continuing anyway');
+    console.error(`Error generating PDF for ${url}:`, error);
+  } finally {
+    await browser.close();
   }
-  
-  // Add custom styles for PDF
-  await page.addStyleTag({
-    content: `
-      @page {
-        margin: 1.5cm;
-        size: A4;
-      }
-      body {
-        font-family: 'Arial', sans-serif;
-      }
-      /* Hide elements we don't want in the PDF */
-      header, footer, nav, .sidebar, button {
-        display: none !important;
-      }
-      /* Ensure content is properly visible */
-      .content {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-      }
-      /* Style headings */
-      h1 { font-size: 24pt; color: #2B4B8C; margin-bottom: 20pt; }
-      h2 { font-size: 18pt; color: #2B4B8C; margin-top: 15pt; }
-      h3 { font-size: 14pt; color: #2B4B8C; }
-      /* Style links */
-      a { color: #DAA520; text-decoration: underline; }
-      
-      /* Improve table styling for PDF */
-      table { 
-        width: 100%;
-        border-collapse: collapse;
-        margin: 1rem 0;
-      }
-      th {
-        background-color: #2B4B8C;
-        color: white;
-        padding: 0.5rem;
-        text-align: left;
-        border: 1px solid #ccc;
-      }
-      td {
-        padding: 0.5rem;
-        border: 1px solid #ccc;
-      }
-      tr:nth-child(even) {
-        background-color: #f9fafb;
-      }
-      
-      /* Improve blockquote styling */
-      blockquote {
-        background-color: #f9fafb;
-        border-left: 4px solid #2B4B8C;
-        padding: 0.5rem 1rem;
-        margin: 1rem 0;
-      }
-    `
-  });
-  
-  // Generate PDF
-  await page.pdf({
-    path: outputPath,
-    format: 'A4',
-    printBackground: true,
-    displayHeaderFooter: true,
-    headerTemplate: `
-      <div style="font-size: 9pt; text-align: center; width: 100%; color: #2B4B8C; margin: 15px 0;">
-        ${title}
-      </div>
-    `,
-    footerTemplate: `
-      <div style="font-size: 9pt; text-align: center; width: 100%; color: #666; margin: 15px 0;">
-        Page <span class="pageNumber"></span> of <span class="totalPages"></span> | www.globalgovernanceframework.org
-      </div>
-    `,
-    margin: { top: '100px', right: '50px', bottom: '100px', left: '50px' }
-  });
-  
-  await browser.close();
-  console.log(`PDF generated: ${outputPath}`);
-} 
+}
 
 async function generateAllPDFs() {
   try {
@@ -251,11 +290,15 @@ async function generateAllPDFs() {
       
       // Generate PDFs for each document in this language
       for (const doc of documents) {
-        const title = titles[lang][doc.titleKey];
-        const url = `${SITE_URL}${doc.path}?lang=${lang}`;
+        const title = titles[lang][doc.titleKey] || `${doc.titleKey} (${lang.toUpperCase()})`;
+        const url = `${SITE_URL}${doc.path}`;
         const outputPath = path.join(langOutputDir, doc.filename);
         
-        await generatePDF(url, outputPath, title);
+        try {
+          await generatePDF(url, outputPath, title, lang);
+        } catch (error) {
+          console.error(`Failed to generate PDF for ${doc.path} in ${lang}:`, error);
+        }
       }
     }
     

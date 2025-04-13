@@ -24,6 +24,18 @@
       "description": "Books, tools, organizations, and other resources for further exploration of the Global Governance Framework concepts."
     }
   },
+  "globalCitizenship": {
+    "title": "Global Citizenship Framework",
+    "description": "Our Global Citizenship Framework provides a comprehensive approach to fostering planetary identity and collective action, based on universal values that transcend cultural boundaries.",
+    "full": {
+      "title": "Complete Global Citizenship Framework",
+      "description": "The complete framework provides an in-depth guide to understanding and practicing global citizenship at all levels, from awareness to leadership."
+    },
+    "summary": {
+      "title": "4-Page Summary",
+      "description": "A concise overview of the Global Citizenship Framework, perfect for quick reference or introduction to the concepts."
+    }
+  },
   "implementationFrameworks": {
     "title": "Domain-Specific Implementation Frameworks",
     "description": "Detailed frameworks for implementing governance principles in specific domains, providing concrete guidance for various sectors and challenges.",
@@ -35,9 +47,21 @@
       "title": "Environmental Stewardship",
       "description": "Guidelines for implementing governance structures that protect and regenerate Earth's ecosystems, operating at multiple scales from local to planetary."
     },
+    "climateEnergy": {
+      "title": "Climate & Energy Governance",
+      "description": "An integrated approach to governing climate action and energy transitions across local, regional, and global scales, emphasizing just transitions and intergenerational accountability."
+    },
+    "technology": {
+      "title": "Technology Governance",
+      "description": "Frameworks for governing technological development and deployment with democratic oversight, ensuring technologies serve humanity and protect fundamental rights."
+    },
     "peace": {
       "title": "Peace & Conflict Resolution",
       "description": "Frameworks for preventing and resolving conflicts through multi-level governance, ethical security approaches, and cooperative peacekeeping."
+    },
+    "spiritual": {
+      "title": "Religious & Spiritual Dialogue",
+      "description": "Approaches for fostering constructive dialogue between spiritual traditions while identifying common ethical principles that can inform governance across cultural contexts."
     },
     "meta": {
        "title": "Integrated Meta-Governance",

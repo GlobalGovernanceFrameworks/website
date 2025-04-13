@@ -1,4 +1,5 @@
 <!-- src/routes/framework/global-citizenship/full-framework/+page.svelte -->
+<!-- src/routes/framework/global-citizenship/full-framework/+page.svelte -->
 <script>
   import { onMount } from 'svelte';
   import { t, locale } from '$lib/i18n';
@@ -13,6 +14,9 @@
   let activeSection = '';
   let contentElement;
   
+  // Add a flag to handle hydration properly
+  let isMounted = false;
+  
   // Observer for determining which section is in view
   let observer;
   
@@ -24,6 +28,9 @@
   }
   
   onMount(() => {
+    // Set mounted flag to prevent hydration issues
+    isMounted = true;
+    
     // Wait for content to be rendered
     setTimeout(() => {
       if (!contentElement) return;
@@ -123,20 +130,16 @@
     
     <!-- Main framework content -->
     <div class="framework-content" bind:this={contentElement}>
-      {#if $locale === 'sv'}
-        <!-- Swedish content will go here when available -->
-        <div class="translation-notice">
-          <p>En svensk översättning av det fullständiga ramverket är under utveckling och kommer att vara tillgänglig snart.</p>
-          <p>Tills vidare, vänligen använd vår <a href="{base}/framework/global-citizenship">svenska översiktsida</a> eller läs det fullständiga ramverket på engelska nedan.</p>
+      <!-- Swedish translation notice is now removed -->
+      
+      <!-- Conditionally render based on mount status to prevent hydration errors -->
+      {#if isMounted}
+        <svelte:component this={data.component} />
+      {:else}
+        <div class="loading-placeholder">
+          {$locale === 'sv' ? 'Laddar innehåll...' : 'Loading content...'}
         </div>
       {/if}
-      
-      <!-- Use the dynamic content loaded from markdown -->
-      <svelte:component this={data.component} />
-      
-      <div class="author-credit">
-        <p>Created by Björn Kenneth Holmström – feel free to reach out personally at bjorn.kenneth.holmstrom@gmail.com</p>
-      </div>
     </div>
   </div>
 </div>
@@ -156,6 +159,13 @@
     .documentation-container {
       grid-template-columns: 1fr;
     }
+  }
+
+  .loading-placeholder {
+    padding: 2rem;
+    color: #6b7280;
+    font-style: italic;
+    text-align: center;
   }
   
   .content {
@@ -229,14 +239,13 @@
     }
     
     .toc {
-      position: sticky;
-      top: 2rem;
-      max-height: calc(100vh - 4rem);
-      overflow-y: auto;
+      position: relative; /* Changed from sticky to relative */
+      max-height: none; /* Remove height restriction */
       padding: 1rem;
       background-color: #f9fafb;
       border-radius: 0.5rem;
       border-left: 3px solid #DAA520;
+      overflow-y: visible; /* Allow natural overflow */
     }
     
     .toc h3 {
@@ -429,6 +438,9 @@
   .sidebar {
     border-right: 1px solid #2D5F2D; /* Earthy green border */
     padding-right: 1.5rem;
+    position: relative; /* Ensure the sidebar scrolls with the page */
+    top: auto; /* Reset any top positioning */
+    height: auto; /* Allow natural height */
   }
   
   .sidebar ul {

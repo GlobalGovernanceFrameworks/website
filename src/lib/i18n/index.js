@@ -210,6 +210,13 @@ function setLocale(newLocale) {
     
     // Update localStorage
     setLocalStorage('locale', newLocale);
+    
+    // Update URL (if in browser)
+    if (browser) {
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', newLocale);
+      window.history.replaceState(null, '', url.toString());
+    }
   }
 }
 
@@ -217,11 +224,20 @@ function setLocale(newLocale) {
 const detectLocale = () => {
   if (!browser) return 'en';
   
+  // First check URL params
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLang = urlParams.get('lang');
+  if (urlLang && supportedLocales.includes(urlLang)) {
+    return urlLang;
+  }
+  
+  // Then check localStorage
   const savedLocale = getLocalStorage('locale', null);
   if (savedLocale && supportedLocales.includes(savedLocale)) {
     return savedLocale;
   }
   
+  // Finally fall back to browser language
   const userLocale = getBrowserLanguage();
   return supportedLocales.includes(userLocale) ? userLocale : 'en';
 };

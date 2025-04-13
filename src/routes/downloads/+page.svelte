@@ -1,4 +1,4 @@
-<!-- src/routes/downloads/+page.svelte (fixed version) -->
+<!-- src/routes/downloads/+page.svelte (updated version) -->
 <script>
   import { t, locale, setLocale } from '$lib/i18n';
   import { base } from '$app/paths';
@@ -96,6 +96,38 @@
         </div>
       </div>
 
+      <!-- Global Citizenship Framework Section -->
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{$t('downloads.globalCitizenship.title')}</h2>
+      <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
+        {$t('downloads.globalCitizenship.description')}
+      </p>
+      
+      <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
+        <!-- Full Global Citizenship Framework -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2B4B8C;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2B4B8C;">{$t('downloads.globalCitizenship.full.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.globalCitizenship.full.description')}</p>
+          <a href={getPdfPath('Global-Citizenship')} download style="display: inline-flex; align-items: center; background-color: #2B4B8C; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+        
+        <!-- 4-Page Overview -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #DAA520;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #DAA520;">{$t('downloads.globalCitizenship.summary.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.globalCitizenship.summary.description')}</p>
+          <a href={getPdfPath('Global-Citizenship-4-page-overview')} download style="display: inline-flex; align-items: center; background-color: #DAA520; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
       <!-- Implementation Frameworks Section -->
       <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{$t('downloads.implementationFrameworks.title')}</h2>
       <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
@@ -127,11 +159,47 @@
           </a>
         </div>
         
+        <!-- Climate & Energy Governance -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.climateEnergy.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.climateEnergy.description')}</p>
+          <a href={getPdfPath('Climate-Energy-Governance')} download style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Technology Governance -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #4B8AC2;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.technology.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.technology.description')}</p>
+          <a href={getPdfPath('Technology-Governance')} download style="display: inline-flex; align-items: center; background-color: #4B8AC2; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+        
         <!-- Peace & Conflict Resolution -->
         <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B5CA5;">
           <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.peace.title')}</h2>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.peace.description')}</p>
           <a href={getPdfPath('Peace-Conflict-Resolution')} download style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Religious & Spiritual Dialogue -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #9B6A8F;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.spiritual.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.spiritual.description')}</p>
+          <a href={getPdfPath('Spiritual-Dialogue')} download style="display: inline-flex; align-items: center; background-color: #9B6A8F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
             {$t('downloads.downloadButton')}
             <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
