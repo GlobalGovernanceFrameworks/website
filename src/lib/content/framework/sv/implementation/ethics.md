@@ -1,1 +1,1 @@
-Dokument planerat
+Dokument ej ännu översatt
