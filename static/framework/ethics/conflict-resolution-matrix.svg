@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 650"
+   version="1.1"
+   id="svg53"
+   sodipodi:docname="conflict-resolution-matrix.svg"
+   width="800"
+   height="650"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs53" />
+  <sodipodi:namedview
+     id="namedview53"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.705"
+     inkscape:cx="385.10638"
+     inkscape:cy="317.7305"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg53" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="648.14343"
+     fill="#f9f9f9"
+     id="rect1"
+     x="0"
+     y="1.8565596"
+     style="stroke-width:1.03935" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="64"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text1">Conflict Resolution Decision Matrix</text>
+  <!-- Scenario Input Box -->
+  <rect
+     x="150"
+     y="76"
+     width="500"
+     height="60"
+     rx="10"
+     fill="#e8f4f8"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect2" />
+  <text
+     x="400"
+     y="101"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text2">Rights Conflict Scenario</text>
+  <text
+     x="400"
+     y="121"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-style="italic"
+     id="text3">Example: Indigenous Land Rights vs. Renewable Energy Development</text>
+  <!-- Downward Arrow -->
+  <polygon
+     points="385,150 415,150 400,130 "
+     fill="#333333"
+     id="polygon3"
+     transform="translate(0,6)" />
+  <line
+     x1="400"
+     y1="156"
+     x2="400"
+     y2="166"
+     stroke="#333333"
+     stroke-width="2"
+     id="line3" />
+  <!-- Conflict Mediation Panel Box -->
+  <rect
+     x="150"
+     y="166"
+     width="500"
+     height="80"
+     rx="10"
+     fill="#d5f5e3"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect3" />
+  <text
+     x="400"
+     y="186"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text4">Conflict Mediation Panel</text>
+  <!-- Panel Members -->
+  <circle
+     cx="250"
+     cy="216"
+     r="15"
+     fill="#3498db"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle4" />
+  <text
+     x="250"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text5">Human</text>
+  <circle
+     cx="325"
+     cy="216"
+     r="15"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle5" />
+  <text
+     x="325"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text6">Eco</text>
+  <circle
+     cx="400"
+     cy="216"
+     r="15"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle6" />
+  <text
+     x="400"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text7">Tech</text>
+  <circle
+     cx="475"
+     cy="216"
+     r="15"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle7" />
+  <text
+     x="475"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text8">Indig</text>
+  <circle
+     cx="550"
+     cy="216"
+     r="15"
+     fill="#2ecc71"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle8" />
+  <text
+     x="550"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text9">Expert</text>
+  <!-- Downward Arrow -->
+  <polygon
+     points="385,260 415,260 400,240 "
+     fill="#333333"
+     id="polygon9"
+     transform="translate(0,6)" />
+  <line
+     x1="400"
+     y1="266"
+     x2="400"
+     y2="276"
+     stroke="#333333"
+     stroke-width="2"
+     id="line9" />
+  <!-- Assessment Criteria -->
+  <rect
+     x="100"
+     y="276"
+     width="600"
+     height="150"
+     rx="10"
+     fill="#ebdef0"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect9" />
+  <text
+     x="400"
+     y="296"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text10">Multi-Criteria Decision Analysis</text>
+  <!-- Criteria Elements -->
+  <!-- Survival Needs -->
+  <rect
+     x="120"
+     y="316"
+     width="250"
+     height="40"
+     rx="5"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect10" />
+  <text
+     x="245"
+     y="336"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text11">Survival Needs</text>
+  <text
+     x="245"
+     y="351"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text12">Highest Priority</text>
+  <!-- Reversibility -->
+  <rect
+     x="430"
+     y="316"
+     width="250"
+     height="40"
+     rx="5"
+     fill="#3498db"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect12" />
+  <text
+     x="555"
+     y="336"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text13">Reversibility of Impacts</text>
+  <text
+     x="555"
+     y="351"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text14">Permanent damage weighted higher</text>
+  <!-- Alternatives -->
+  <rect
+     x="120"
+     y="366"
+     width="250"
+     height="40"
+     rx="5"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect14" />
+  <text
+     x="245"
+     y="386"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text15">Alternatives Availability</text>
+  <text
+     x="245"
+     y="401"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text16">Feasible options to reduce conflict</text>
+  <!-- Cultural Significance -->
+  <rect
+     x="430"
+     y="366"
+     width="250"
+     height="40"
+     rx="5"
+     fill="#2ecc71"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect16" />
+  <text
+     x="555"
+     y="386"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text17">Cultural Significance</text>
+  <text
+     x="555"
+     y="401"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text18">Standardized heritage assessment</text>
+  <!-- Ecological Impacts -->
+  <rect
+     x="275"
+     y="430"
+     width="250"
+     height="40"
+     rx="5"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect18" />
+  <text
+     x="400"
+     y="450"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text19">Ecological Ripple Effects</text>
+  <text
+     x="400"
+     y="465"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text20">Scientific modeling of ecosystem impacts</text>
+  <!-- Downward Arrow -->
+  <polygon
+     points="400,420 385,440 415,440 "
+     fill="#333333"
+     id="polygon20"
+     transform="translate(0,50)" />
+  <line
+     x1="400"
+     y1="490"
+     x2="400"
+     y2="500"
+     stroke="#333333"
+     stroke-width="2"
+     id="line20" />
+  <!-- Decision Pathways -->
+  <rect
+     x="100"
+     y="500"
+     width="600"
+     height="140"
+     rx="10"
+     fill="#d4e6f1"
+     stroke="#333333"
+     stroke-width="2"
+     id="rect20" />
+  <text
+     x="298"
+     y="490"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text21">Resolution Pathways</text>
+  <!-- Three Resolution Paths -->
+  <rect
+     x="120"
+     y="540"
+     width="160"
+     height="80"
+     rx="8"
+     fill="#e74c3c"
+     opacity="0.8"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect21" />
+  <text
+     x="200"
+     y="560"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text22">Prioritization</text>
+  <text
+     x="200"
+     y="580"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text23">When one right clearly</text>
+  <text
+     x="200"
+     y="595"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text24">outweighs others based</text>
+  <text
+     x="200"
+     y="610"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text25">on assessment criteria</text>
+  <rect
+     x="320"
+     y="540"
+     width="160"
+     height="80"
+     rx="8"
+     fill="#f39c12"
+     opacity="0.8"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect25" />
+  <text
+     x="400"
+     y="560"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text26">Compromise</text>
+  <text
+     x="400"
+     y="580"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text27">Balanced solution that</text>
+  <text
+     x="400"
+     y="595"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text28">partially satisfies all</text>
+  <text
+     x="400"
+     y="610"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text29">rights considerations</text>
+  <rect
+     x="520"
+     y="540"
+     width="160"
+     height="80"
+     rx="8"
+     fill="#2ecc71"
+     opacity="0.8"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect29" />
+  <text
+     x="600"
+     y="560"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text30">Innovation</text>
+  <text
+     x="600"
+     y="580"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text31">Creative solution that</text>
+  <text
+     x="600"
+     y="595"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text32">transcends the apparent</text>
+  <text
+     x="600"
+     y="610"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text33">conflict through redesign</text>
+  <!-- Side Panel - Implementation Safeguards -->
+  <rect
+     x="30.081579"
+     y="221.72697"
+     width="59.836842"
+     height="419.12762"
+     rx="4.9864035"
+     fill="#eaeded"
+     stroke="#333333"
+     stroke-width="1.24564"
+     id="rect33" />
+  <text
+     x="-336"
+     y="60"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     transform="rotate(-90)"
+     font-weight="bold"
+     id="text34">IMPLEMENTATION SAFEGUARDS</text>
+  <rect
+     x="35"
+     y="442"
+     width="50"
+     height="40"
+     rx="5"
+     fill="#3498db"
+     opacity="0.7"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect34" />
+  <text
+     x="60"
+     y="462"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text35">Transparency</text>
+  <text
+     x="60"
+     y="472"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text36">Requirements</text>
+  <rect
+     x="35"
+     y="492"
+     width="50"
+     height="40"
+     rx="5"
+     fill="#e74c3c"
+     opacity="0.7"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect36" />
+  <text
+     x="60"
+     y="512"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text37">Appeal</text>
+  <text
+     x="60"
+     y="522"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text38">Process</text>
+  <rect
+     x="35"
+     y="542"
+     width="50"
+     height="40"
+     rx="5"
+     fill="#f39c12"
+     opacity="0.7"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect38" />
+  <text
+     x="60"
+     y="562"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text39">Monitoring</text>
+  <text
+     x="60"
+     y="572"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text40">Requirements</text>
+  <rect
+     x="35"
+     y="592"
+     width="50"
+     height="40"
+     rx="5"
+     fill="#2ecc71"
+     opacity="0.7"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect40" />
+  <text
+     x="60"
+     y="612"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text41">Adaptive</text>
+  <text
+     x="60"
+     y="622"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text42">Management</text>
+  <!-- Side Panel - Developmental Awareness -->
+  <rect
+     x="710.09961"
+     y="175.41879"
+     width="59.800716"
+     height="464.48157"
+     rx="4.9833932"
+     fill="#eaeded"
+     stroke="#333333"
+     stroke-width="1.01946"
+     id="rect42" />
+  <text
+     x="-286"
+     y="740"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     transform="rotate(-90)"
+     font-weight="bold"
+     id="text43">DEVELOPMENTAL AWARENESS</text>
+  <rect
+     x="715"
+     y="390"
+     width="50"
+     height="40"
+     rx="5"
+     fill="#e74c3c"
+     opacity="0.7"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect43" />
+  <text
+     x="740"
+     y="410"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text44">Red</text>
+  <text
+     x="740"
+     y="420"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text45">Power</text>
+  <rect
+     x="715"
+     y="440"
+     width="50"
+     height="40"
+     rx="5"
+     fill="#3498db"
+     opacity="0.7"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect45" />
+  <text
+     x="740"
+     y="460"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text46">Blue</text>
+  <text
+     x="740"
+     y="470"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text47">Order</text>
+  <rect
+     x="715"
+     y="490"
+     width="50"
+     height="40"
+     rx="5"
+     fill="#f39c12"
+     opacity="0.7"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect47" />
+  <text
+     x="740"
+     y="510"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text48">Orange</text>
+  <text
+     x="740"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text49">Achievement</text>
+  <rect
+     x="715"
+     y="540"
+     width="50"
+     height="40"
+     rx="5"
+     fill="#2ecc71"
+     opacity="0.7"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect49" />
+  <text
+     x="740"
+     y="560"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text50">Green</text>
+  <text
+     x="740"
+     y="570"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text51">Equality</text>
+  <rect
+     x="715"
+     y="590"
+     width="50"
+     height="40"
+     rx="5"
+     fill="#9b59b6"
+     opacity="0.7"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect51" />
+  <text
+     x="740"
+     y="610"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text52">Yellow</text>
+  <text
+     x="740"
+     y="620"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text53">Systems</text>
+</svg>

@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 650"
+   version="1.1"
+   id="svg57"
+   sodipodi:docname="spiral-aware-implementation.svg"
+   width="800"
+   height="650"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs57" />
+  <sodipodi:namedview
+     id="namedview57"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.99702056"
+     inkscape:cx="537.10026"
+     inkscape:cy="365.08776"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg57" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="650.14941"
+     fill="#f9f9f9"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.04095" />
+  <!-- Title -->
+  <text
+     x="406"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text1">Spiral-Aware Implementation Guide</text>
+  <text
+     x="406"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     font-style="italic"
+     id="text2">&quot;Recognize what people can see, while inviting them to see more.&quot;</text>
+  <!-- Spiral Arrow -->
+  <path
+     d="m 104,376 c 100,50 200,-200 300,-100 100,100 200,0 300,50"
+     fill="none"
+     stroke="#333333"
+     stroke-width="3"
+     stroke-linecap="round"
+     id="path2" />
+  <polygon
+     points="735,310 750,300 735,290 "
+     fill="#333333"
+     id="polygon2"
+     transform="translate(-46,26)" />
+  <!-- Worldview Circles -->
+  <circle
+     cx="104"
+     cy="376"
+     r="50"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle2" />
+  <text
+     x="104"
+     y="366"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text3">RED</text>
+  <text
+     x="104"
+     y="386"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text4">Power Dominance</text>
+  <circle
+     cx="254"
+     cy="326"
+     r="50"
+     fill="#3498db"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle4" />
+  <text
+     x="254"
+     y="316"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text5">BLUE</text>
+  <text
+     x="254"
+     y="336"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text6">Order Law</text>
+  <circle
+     cx="404"
+     cy="276"
+     r="50"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle6" />
+  <text
+     x="404"
+     y="266"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text7">ORANGE</text>
+  <text
+     x="404"
+     y="286"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text8"><tspan
+       sodipodi:role="line"
+       id="tspan58"
+       x="404"
+       y="286">Achievement</tspan><tspan
+       sodipodi:role="line"
+       id="tspan59"
+       x="404"
+       y="301">Autonomy</tspan></text>
+  <circle
+     cx="554"
+     cy="326"
+     r="50"
+     fill="#2ecc71"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle8" />
+  <text
+     x="554"
+     y="316"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text9">GREEN</text>
+  <text
+     x="554"
+     y="336"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text10"><tspan
+       sodipodi:role="line"
+       id="tspan60"
+       x="554"
+       y="336">Equality</tspan><tspan
+       sodipodi:role="line"
+       id="tspan61"
+       x="554"
+       y="351">Compassion</tspan></text>
+  <circle
+     cx="704"
+     cy="326"
+     r="50"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle10" />
+  <text
+     x="704"
+     y="316"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text11">YELLOW</text>
+  <text
+     x="704"
+     y="336"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text12">Systems Flexibility</text>
+  <!-- Example Rights Row Headers -->
+  <text
+     x="36"
+     y="107.87449"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     text-anchor="start"
+     font-weight="bold"
+     id="text13">Right to Life</text>
+  <text
+     x="36"
+     y="554"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     text-anchor="start"
+     font-weight="bold"
+     id="text14">AI Ethics</text>
+  <!-- Implementation Boxes for "Right to Life" -->
+  <rect
+     x="54.036217"
+     y="120.03622"
+     width="99.927567"
+     height="80.565865"
+     rx="4.9963784"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1.07243"
+     id="rect14" />
+  <text
+     x="104"
+     y="140"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text15">RED VIEW</text>
+  <text
+     x="104"
+     y="160"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text16">&quot;Strength gives right</text>
+  <text
+     x="104"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text17">to survive; protection</text>
+  <text
+     x="104"
+     y="190"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text18">through loyalty&quot;</text>
+  <rect
+     x="204.03621"
+     y="120.03622"
+     width="99.927567"
+     height="80.565865"
+     rx="4.9963784"
+     fill="#3498db"
+     stroke="#333333"
+     stroke-width="1.07243"
+     id="rect18" />
+  <text
+     x="254"
+     y="140"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text19">BLUE VIEW</text>
+  <text
+     x="254"
+     y="160"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text20">&quot;Life is sacred by</text>
+  <text
+     x="254"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text21">divine law; protected</text>
+  <text
+     x="254"
+     y="190"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text22">through order&quot;</text>
+  <rect
+     x="354.03622"
+     y="120.03622"
+     width="99.927567"
+     height="80.565865"
+     rx="4.9963784"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1.07243"
+     id="rect22" />
+  <text
+     x="404"
+     y="140"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text23">ORANGE VIEW</text>
+  <text
+     x="404"
+     y="160"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text24">&quot;Equal opportunity</text>
+  <text
+     x="404"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text25">to pursue life;</text>
+  <text
+     x="404"
+     y="190"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text26">individual freedom&quot;</text>
+  <rect
+     x="504.03387"
+     y="120.03387"
+     width="99.932243"
+     height="79.86132"
+     rx="4.9966121"
+     fill="#2ecc71"
+     stroke="#333333"
+     stroke-width="1.06776"
+     id="rect26" />
+  <text
+     x="554"
+     y="140"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text27">GREEN VIEW</text>
+  <text
+     x="554"
+     y="160"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text28">&quot;All deserve fair</text>
+  <text
+     x="554"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text29">chance at life;</text>
+  <text
+     x="554"
+     y="190"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text30">social responsibility&quot;</text>
+  <rect
+     x="654.03387"
+     y="120.03387"
+     width="99.932243"
+     height="79.86132"
+     rx="4.9966121"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1.06776"
+     id="rect30" />
+  <text
+     x="704"
+     y="140"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text31">YELLOW VIEW</text>
+  <text
+     x="704"
+     y="160"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text32">&quot;Life as evolving</text>
+  <text
+     x="704"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text33">system; contextual</text>
+  <text
+     x="704"
+     y="190"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text34">evaluation&quot;</text>
+  <!-- Implementation Boxes for "AI Ethics" -->
+  <rect
+     x="54.033867"
+     y="446.03387"
+     width="99.932243"
+     height="79.86132"
+     rx="4.9966121"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1.06776"
+     id="rect34" />
+  <text
+     x="104"
+     y="466"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text35">RED VIEW</text>
+  <text
+     x="104"
+     y="486"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text36">&quot;Control AI for</text>
+  <text
+     x="104"
+     y="501"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text37">power advantage;</text>
+  <text
+     x="104"
+     y="516"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text38">prevent threats&quot;</text>
+  <rect
+     x="204.03387"
+     y="446.03387"
+     width="99.932243"
+     height="79.86132"
+     rx="4.9966121"
+     fill="#3498db"
+     stroke="#333333"
+     stroke-width="1.06776"
+     id="rect38" />
+  <text
+     x="254"
+     y="466"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text39">BLUE VIEW</text>
+  <text
+     x="254"
+     y="486"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text40">&quot;Clear rules for AI;</text>
+  <text
+     x="254"
+     y="501"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text41">preserves proper</text>
+  <text
+     x="254"
+     y="516"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text42">social order&quot;</text>
+  <rect
+     x="354.03152"
+     y="446.03152"
+     width="99.936935"
+     height="79.156799"
+     rx="4.9968472"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1.06306"
+     id="rect42" />
+  <text
+     x="404"
+     y="466"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text43">ORANGE VIEW</text>
+  <text
+     x="404"
+     y="486"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text44">&quot;AI as innovation</text>
+  <text
+     x="404"
+     y="501"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text45">driver; maximize</text>
+  <text
+     x="404"
+     y="516"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text46">benefits, manage risk&quot;</text>
+  <rect
+     x="504.02917"
+     y="446.02917"
+     width="99.941658"
+     height="78.452293"
+     rx="4.9970827"
+     fill="#2ecc71"
+     stroke="#333333"
+     stroke-width="1.05834"
+     id="rect46" />
+  <text
+     x="554"
+     y="466"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text47">GREEN VIEW</text>
+  <text
+     x="554"
+     y="486"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text48">&quot;AI must be fair,</text>
+  <text
+     x="554"
+     y="501"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text49">inclusive, and</text>
+  <text
+     x="554"
+     y="516"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text50">benefit all equally&quot;</text>
+  <rect
+     x="654.03156"
+     y="446.03152"
+     width="99.936935"
+     height="79.156799"
+     rx="4.9968472"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1.06306"
+     id="rect50" />
+  <text
+     x="704"
+     y="466"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text51">YELLOW VIEW</text>
+  <text
+     x="704"
+     y="486"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text52">&quot;Adaptive systems</text>
+  <text
+     x="704"
+     y="501"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text53">approach; balanced</text>
+  <text
+     x="704"
+     y="516"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text54">across perspectives&quot;</text>
+  <!-- Implementation Legend -->
+  <rect
+     x="56.047462"
+     y="570.04749"
+     width="699.90509"
+     height="71.940941"
+     rx="9.9986439"
+     fill="#f5f5f5"
+     stroke="#333333"
+     stroke-width="1.09492"
+     id="rect54" />
+  <text
+     x="406"
+     y="595"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text55">Implementation Principle:</text>
+  <text
+     x="406"
+     y="615"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     font-style="italic"
+     id="text56">&quot;Meet each worldview where it stands, using appropriate language and values,</text>
+  <text
+     x="406"
+     y="630"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     font-style="italic"
+     id="text57">while creating bridges to more integrative perspectives.&quot;</text>
+</svg>

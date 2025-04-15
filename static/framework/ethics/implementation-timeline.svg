@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="svg59"
+   sodipodi:docname="implementation-timeline.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs59" />
+  <sodipodi:namedview
+     id="namedview59"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="400.35461"
+     inkscape:cy="356.73759"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg59" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="600"
+     fill="#f9f9f9"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text1">Phased Implementation Timeline</text>
+  <text
+     x="400"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     font-style="italic"
+     id="text2">A staged approach to expanding rights recognition across domains</text>
+  <!-- Main Timeline -->
+  <line
+     x1="100"
+     y1="200"
+     x2="100"
+     y2="500"
+     stroke="#333"
+     stroke-width="3"
+     id="line2" />
+  <line
+     x1="100"
+     y1="200"
+     x2="700"
+     y2="200"
+     stroke="#333"
+     stroke-width="3"
+     id="line3" />
+  <line
+     x1="100"
+     y1="275"
+     x2="700"
+     y2="275"
+     stroke="#333"
+     stroke-width="1"
+     stroke-dasharray="5,3"
+     id="line4" />
+  <line
+     x1="100"
+     y1="350"
+     x2="700"
+     y2="350"
+     stroke="#333"
+     stroke-width="1"
+     stroke-dasharray="5,3"
+     id="line5" />
+  <line
+     x1="100"
+     y1="425"
+     x2="700"
+     y2="425"
+     stroke="#333"
+     stroke-width="1"
+     stroke-dasharray="5,3"
+     id="line6" />
+  <line
+     x1="100"
+     y1="500"
+     x2="700"
+     y2="500"
+     stroke="#333"
+     stroke-width="3"
+     id="line7" />
+  <!-- Time Period Markers -->
+  <line
+     x1="160"
+     y1="195"
+     x2="160"
+     y2="505"
+     stroke="#333"
+     stroke-width="1"
+     stroke-dasharray="5,3"
+     id="line8" />
+  <rect
+     x="101"
+     y="201"
+     width="59"
+     height="73"
+     rx="5"
+     fill="#e74c3c"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect12" />
+  <text
+     x="160"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text8">2027</text>
+  <line
+     x1="280"
+     y1="195"
+     x2="280"
+     y2="505"
+     stroke="#333"
+     stroke-width="1"
+     stroke-dasharray="5,3"
+     id="line9" />
+  <text
+     x="280"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text9">2032</text>
+  <line
+     x1="400"
+     y1="195"
+     x2="400"
+     y2="505"
+     stroke="#333"
+     stroke-width="1"
+     stroke-dasharray="5,3"
+     id="line10" />
+  <text
+     x="400"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text10">2037</text>
+  <line
+     x1="520"
+     y1="195"
+     x2="520"
+     y2="505"
+     stroke="#333"
+     stroke-width="1"
+     stroke-dasharray="5,3"
+     id="line11" />
+  <text
+     x="520"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text11">2042</text>
+  <line
+     x1="640"
+     y1="195"
+     x2="640"
+     y2="505"
+     stroke="#333"
+     stroke-width="1"
+     stroke-dasharray="5,3"
+     id="line12" />
+  <text
+     x="640"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text12">2047</text>
+  <!-- Phase Boxes -->
+  <!-- 2024-2025: Quick Wins -->
+  <text
+     x="130"
+     y="225"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="white"
+     font-weight="bold"
+     id="text13">PHASE 1</text>
+  <text
+     x="130"
+     y="245"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text14">Quick Wins</text>
+  <text
+     x="130"
+     y="260"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     text-anchor="middle"
+     fill="white"
+     id="text15">2026-2027</text>
+  <!-- 2025-2030: Animals/Ecosystems -->
+  <rect
+     x="160"
+     y="201"
+     width="120"
+     height="73"
+     rx="5"
+     fill="#3498db"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect15" />
+  <text
+     x="220"
+     y="225"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="white"
+     font-weight="bold"
+     id="text16">PHASE 2</text>
+  <text
+     x="220"
+     y="245"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text17">Animals/Ecosystems</text>
+  <text
+     x="220"
+     y="260"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     text-anchor="middle"
+     fill="white"
+     id="text18">2027-2032</text>
+  <!-- 2030-2035: Space Governance -->
+  <rect
+     x="280"
+     y="276"
+     width="120"
+     height="73"
+     rx="5"
+     fill="#f39c12"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect18" />
+  <text
+     x="340"
+     y="300"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="white"
+     font-weight="bold"
+     id="text19">PHASE 3</text>
+  <text
+     x="340"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text20">Space Governance</text>
+  <text
+     x="340"
+     y="335"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     text-anchor="middle"
+     fill="white"
+     id="text21">2032-2037</text>
+  <!-- 2030-2040: AI/Digital -->
+  <rect
+     x="280"
+     y="351"
+     width="240"
+     height="73"
+     rx="5"
+     fill="#9b59b6"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect21" />
+  <text
+     x="400"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="white"
+     font-weight="bold"
+     id="text22">PHASE 4</text>
+  <text
+     x="400"
+     y="395"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text23">AI/Digital Rights</text>
+  <text
+     x="400"
+     y="410"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     text-anchor="middle"
+     fill="white"
+     id="text24">2032-2047</text>
+  <!-- 2040+: Comprehensive Space/Alien -->
+  <rect
+     x="520"
+     y="426"
+     width="179"
+     height="73"
+     rx="5"
+     fill="#2ecc71"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect24" />
+  <text
+     x="610"
+     y="450"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="white"
+     font-weight="bold"
+     id="text25">PHASE 5</text>
+  <text
+     x="610"
+     y="470"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text26">Comprehensive Space/Alien</text>
+  <text
+     x="610"
+     y="485"
+     font-family="Arial, sans-serif"
+     font-size="10"
+     text-anchor="middle"
+     fill="white"
+     id="text27">2042+</text>
+  <!-- Phase Icons -->
+  <text
+     x="80"
+     y="226"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     text-anchor="middle"
+     fill="white"
+     id="text28">🌍</text>
+  <text
+     x="174"
+     y="226"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     text-anchor="middle"
+     fill="white"
+     id="text29">🐋</text>
+  <text
+     x="295"
+     y="300"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     text-anchor="middle"
+     fill="white"
+     id="text30">🌕</text>
+  <text
+     x="356"
+     y="380"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     text-anchor="middle"
+     fill="white"
+     id="text31">🧠</text>
+  <text
+     x="565"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     text-anchor="middle"
+     fill="white"
+     id="text32">🛸</text>
+  <!-- Example Policies and Contingency Plans -->
+  <!-- Phase 1 -->
+  <rect
+     x="90.403931"
+     y="160.04222"
+     width="69.553848"
+     height="34.91555"
+     rx="5.8943939"
+     fill="#f9ebea"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect32" />
+  <text
+     x="126"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text33">Ban primate testing;</text>
+  <text
+     x="126"
+     y="185"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text34">1st River Guardian</text>
+  <rect
+     x="90.403297"
+     y="120.0416"
+     width="69.555107"
+     height="34.916809"
+     rx="5.8945007"
+     fill="#ebf5fb"
+     stroke="#333333"
+     stroke-width="1.02058"
+     id="rect34" />
+  <text
+     x="126"
+     y="135"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text35">Regional coalitions</text>
+  <text
+     x="126"
+     y="145"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text36">if global deadlock</text>
+  <!-- Phase 2 -->
+  <rect
+     x="190"
+     y="160"
+     width="90"
+     height="35"
+     rx="5"
+     fill="#f9ebea"
+     stroke="#333"
+     stroke-width="1"
+     id="rect36" />
+  <text
+     x="235"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="8"
+     text-anchor="middle"
+     id="text37">Cetacean captivity ban;</text>
+  <text
+     x="235"
+     y="185"
+     font-family="Arial, sans-serif"
+     font-size="8"
+     text-anchor="middle"
+     id="text38">Ecosystem legal status</text>
+  <rect
+     x="177.97467"
+     y="120.0314"
+     width="101.99393"
+     height="34.937199"
+     rx="5.6663299"
+     fill="#ebf5fb"
+     stroke="#333333"
+     stroke-width="1.01751"
+     id="rect38" />
+  <text
+     x="233"
+     y="135"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text39">&quot;Blue Zone&quot; model:</text>
+  <text
+     x="229"
+     y="145"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text40">Implement in willing nations</text>
+  <!-- Phase 3 -->
+  <rect
+     x="300"
+     y="160"
+     width="80"
+     height="35"
+     rx="5"
+     fill="#f9ebea"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect40" />
+  <text
+     x="340"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text41">Lunar protection</text>
+  <text
+     x="340"
+     y="185"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text42">protocols</text>
+  <rect
+     x="300"
+     y="120"
+     width="80"
+     height="35"
+     rx="5"
+     fill="#ebf5fb"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect42" />
+  <text
+     x="340"
+     y="135"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text43">Private sector</text>
+  <text
+     x="340"
+     y="145"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text44">voluntary standards</text>
+  <!-- Phase 4 -->
+  <rect
+     x="406"
+     y="159"
+     width="80"
+     height="35"
+     rx="5"
+     fill="#f9ebea"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect44" />
+  <text
+     x="446"
+     y="174"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text45">AI ethics reviews;</text>
+  <text
+     x="446"
+     y="184"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text46">Digital rights framework</text>
+  <rect
+     x="406"
+     y="119"
+     width="80"
+     height="35"
+     rx="5"
+     fill="#ebf5fb"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect46" />
+  <text
+     x="446"
+     y="134"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text47">Corporate partnerships</text>
+  <text
+     x="446"
+     y="144"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text48">with oversight</text>
+  <!-- Phase 5 -->
+  <rect
+     x="560"
+     y="104"
+     width="100"
+     height="35"
+     rx="5"
+     fill="#f9ebea"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect48" />
+  <text
+     x="610"
+     y="119"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text49">Extraterrestrial Rights Office;</text>
+  <text
+     x="610"
+     y="129"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text50">Inter-species protocols</text>
+  <rect
+     x="560.06543"
+     y="144.06541"
+     width="99.869186"
+     height="51.216702"
+     rx="4.9934592"
+     fill="#ebf5fb"
+     stroke="#333333"
+     stroke-width="1.13082"
+     id="rect50" />
+  <text
+     x="610"
+     y="159"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     id="text51">Distributed Authority Network:</text>
+  <text
+     x="610"
+     y="169"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     id="text52">Coalition of space agencies,</text>
+  <text
+     x="610"
+     y="179"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     id="text53">scientific institutions, and</text>
+  <text
+     x="610"
+     y="189"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     id="text54">indigenous representatives</text>
+  <!-- Commercial Alignment Box -->
+  <rect
+     x="11.970869"
+     y="550.05597"
+     width="497.97314"
+     height="39.88805"
+     rx="5.7903857"
+     fill="#d5f5e3"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect54" />
+  <text
+     x="24"
+     y="570"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="start"
+     font-weight="bold"
+     id="text55">Commercial Alignment Incentives:</text>
+  <text
+     x="24"
+     y="585"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="start"
+     id="text56">Launch approvals • Insurance discounts • Liability protections • Data-sharing networks • Procurement preferences</text>
+  <!-- Legend -->
+  <rect
+     x="550.06232"
+     y="548.06232"
+     width="190.30093"
+     height="39.875401"
+     rx="6.3433642"
+     fill="#eaeded"
+     stroke="#333333"
+     stroke-width="1.1246"
+     id="rect56" />
+  <text
+     x="625"
+     y="563"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text57">LEGEND</text>
+  <rect
+     x="560"
+     y="570"
+     width="10"
+     height="10"
+     fill="#f9ebea"
+     stroke="#333333"
+     stroke-width="0.5"
+     id="rect57" />
+  <text
+     x="579"
+     y="578"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="start"
+     id="text58">Example Policies</text>
+  <rect
+     x="646"
+     y="570"
+     width="10"
+     height="10"
+     fill="#ebf5fb"
+     stroke="#333333"
+     stroke-width="0.5"
+     id="rect58" />
+  <text
+     x="661"
+     y="578"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="start"
+     id="text59">Contingency Plans</text>
+</svg>

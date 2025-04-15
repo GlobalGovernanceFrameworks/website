@@ -26,7 +26,7 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationEconomic', path: '/framework/docs/implementation/economic', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationJustice', path: '/framework/docs/implementation/justice', planned: true },
           { titleKey: 'framework.docs.nav.implementationMigration', path: '/framework/docs/implementation/migration', planned: true },
-          { titleKey: 'framework.docs.nav.implementationDisaster', path: '/framework/docs/implementation/disaster', planned: true }
+          { titleKey: 'framework.docs.nav.implementationDisaster', path: '/framework/docs/implementation/disaster', comingSoon: true }
         ]
       },
       {
@@ -35,7 +35,7 @@ const initialNav = [
         subItems: [
           { titleKey: 'framework.docs.nav.implementationTechnology', path: '/framework/docs/implementation/technology', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationFinancial', path: '/framework/docs/implementation/finance', planned: true },
-          { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', planned: true },
+          { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationUrban', path: '/framework/docs/implementation/urban', planned: true },
           { titleKey: 'framework.docs.nav.implementationEnvironment', path: '/framework/docs/implementation/environment', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationOceansMarine', path: '/framework/docs/implementation/oceans', planned: true },

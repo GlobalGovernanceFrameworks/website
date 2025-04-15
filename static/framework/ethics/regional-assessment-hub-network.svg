@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="svg71"
+   sodipodi:docname="regional-assessment-hub-network.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs71" />
+  <sodipodi:namedview
+     id="namedview71"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.705"
+     inkscape:cx="292.9078"
+     inkscape:cy="303.5461"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg71" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="600"
+     fill="#f9f9f9"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="60"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text1">Tiered Regional Assessment Hub Network</text>
+  <!-- World Map (Simplified) -->
+  <rect
+     x="150"
+     y="84"
+     width="500"
+     height="240"
+     rx="5"
+     fill="#eaeded"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect2" />
+  <!-- Continental Outlines (Simplified) -->
+  <path
+     d="m 200,134 q 50,20 100,10 30,-10 50,10 30,10 50,0 50,-10 100,10 30,20 50,10 v 60 q -50,10 -100,-10 -50,-10 -100,10 -50,10 -100,0 -50,-10 -50,0 z"
+     fill="#d5f5e3"
+     stroke="#333333"
+     stroke-width="1"
+     id="path2" />
+  <path
+     d="m 450,184 q 30,10 70,0 30,10 60,-10 v 70 q -30,10 -60,0 -40,-10 -70,0 z"
+     fill="#fdebd0"
+     stroke="#333333"
+     stroke-width="1"
+     id="path3" />
+  <path
+     d="m 270,184 q 30,20 80,10 30,-10 50,10 v 50 q -50,10 -100,0 -50,-10 -30,0 z"
+     fill="#d4e6f1"
+     stroke="#333333"
+     stroke-width="1"
+     id="path4" />
+  <!-- Global Coordination Council -->
+  <circle
+     cx="400"
+     cy="154"
+     r="25"
+     fill="#3498db"
+     stroke="#333333"
+     stroke-width="2"
+     id="circle4" />
+  <text
+     x="400"
+     y="159"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text4">GLOBAL</text>
+  <!-- Regional Lead Hubs -->
+  <circle
+     cx="250"
+     cy="184"
+     r="20"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="circle5" />
+  <text
+     x="250"
+     y="188"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text5">AMERICAS</text>
+  <circle
+     cx="350"
+     cy="214"
+     r="20"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="circle6" />
+  <text
+     x="350"
+     y="218"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text6">EUROPE</text>
+  <circle
+     cx="450"
+     cy="214"
+     r="20"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="circle7" />
+  <text
+     x="450"
+     y="218"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text7">AFRICA</text>
+  <circle
+     cx="520"
+     cy="214"
+     r="20"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="circle8" />
+  <text
+     x="520"
+     y="218"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text8">ASIA</text>
+  <circle
+     cx="300"
+     cy="224"
+     r="20"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="circle9" />
+  <text
+     x="300"
+     y="228"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text9">OCEANIA</text>
+  <!-- Hub Connection Lines -->
+  <line
+     x1="400"
+     y1="154"
+     x2="250"
+     y2="184"
+     stroke="#333333"
+     stroke-width="1.5"
+     stroke-dasharray="5, 2"
+     id="line9" />
+  <line
+     x1="400"
+     y1="154"
+     x2="350"
+     y2="214"
+     stroke="#333333"
+     stroke-width="1.5"
+     stroke-dasharray="5, 2"
+     id="line10" />
+  <line
+     x1="400"
+     y1="154"
+     x2="450"
+     y2="214"
+     stroke="#333333"
+     stroke-width="1.5"
+     stroke-dasharray="5, 2"
+     id="line11" />
+  <line
+     x1="400"
+     y1="154"
+     x2="520"
+     y2="214"
+     stroke="#333333"
+     stroke-width="1.5"
+     stroke-dasharray="5, 2"
+     id="line12" />
+  <line
+     x1="400"
+     y1="154"
+     x2="300"
+     y2="224"
+     stroke="#333333"
+     stroke-width="1.5"
+     stroke-dasharray="5, 2"
+     id="line13" />
+  <!-- National Implementation Centers (examples) -->
+  <circle
+     cx="240"
+     cy="164"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle13" />
+  <circle
+     cx="260"
+     cy="204"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle14" />
+  <circle
+     cx="220"
+     cy="194"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle15" />
+  <circle
+     cx="340"
+     cy="194"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle16" />
+  <circle
+     cx="370"
+     cy="224"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle17" />
+  <circle
+     cx="330"
+     cy="234"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle18" />
+  <circle
+     cx="440"
+     cy="194"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle19" />
+  <circle
+     cx="470"
+     cy="224"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle20" />
+  <circle
+     cx="430"
+     cy="234"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle21" />
+  <circle
+     cx="510"
+     cy="194"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle22" />
+  <circle
+     cx="540"
+     cy="224"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle23" />
+  <circle
+     cx="500"
+     cy="234"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle24" />
+  <circle
+     cx="290"
+     cy="204"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle25" />
+  <circle
+     cx="310"
+     cy="244"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle26" />
+  <!-- Connect Regional to National -->
+  <line
+     x1="250"
+     y1="184"
+     x2="240"
+     y2="164"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line26" />
+  <line
+     x1="250"
+     y1="184"
+     x2="260"
+     y2="204"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line27" />
+  <line
+     x1="250"
+     y1="184"
+     x2="220"
+     y2="194"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line28" />
+  <line
+     x1="350"
+     y1="214"
+     x2="340"
+     y2="194"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line29" />
+  <line
+     x1="350"
+     y1="214"
+     x2="370"
+     y2="224"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line30" />
+  <line
+     x1="350"
+     y1="214"
+     x2="330"
+     y2="234"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line31" />
+  <line
+     x1="450"
+     y1="214"
+     x2="440"
+     y2="194"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line32" />
+  <line
+     x1="450"
+     y1="214"
+     x2="470"
+     y2="224"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line33" />
+  <line
+     x1="450"
+     y1="214"
+     x2="430"
+     y2="234"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line34" />
+  <line
+     x1="520"
+     y1="214"
+     x2="510"
+     y2="194"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line35" />
+  <line
+     x1="520"
+     y1="214"
+     x2="540"
+     y2="224"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line36" />
+  <line
+     x1="520"
+     y1="214"
+     x2="500"
+     y2="234"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line37" />
+  <line
+     x1="300"
+     y1="224"
+     x2="290"
+     y2="204"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line38" />
+  <line
+     x1="300"
+     y1="224"
+     x2="310"
+     y2="244"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line39" />
+  <!-- Specialized Assessment Units -->
+  <rect
+     x="150.07893"
+     y="284.07895"
+     width="499.84213"
+     height="73.317307"
+     rx="4.9984212"
+     fill="#f9ebea"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect39" />
+  <text
+     x="400"
+     y="308"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text39">Specialized Assessment Units</text>
+  <!-- Specialized Units -->
+  <circle
+     cx="199.29079"
+     cy="334.70923"
+     r="16.717142"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1.0775"
+     id="circle39" />
+  <text
+     x="200"
+     y="337"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text40">MEDICAL</text>
+  <circle
+     cx="279.82269"
+     cy="334.17731"
+     r="17.233078"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1.0637"
+     id="circle40" />
+  <text
+     x="280"
+     y="337"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text41">WEAPONS</text>
+  <circle
+     cx="360.53189"
+     cy="334.53189"
+     r="17.230612"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1.14871"
+     id="circle41" />
+  <text
+     x="360"
+     y="337"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text42">FINANCE</text>
+  <circle
+     cx="439.46811"
+     cy="333.46811"
+     r="17.916952"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1.19446"
+     id="circle42" />
+  <text
+     x="440"
+     y="337"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text43">EDUCATION</text>
+  <circle
+     cx="520"
+     cy="334"
+     r="16.715855"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1.1144"
+     id="circle43" />
+  <text
+     x="520"
+     y="337"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text44">CREATIVE</text>
+  <circle
+     cx="600.17731"
+     cy="334.17731"
+     r="16.88744"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1.12582"
+     id="circle44" />
+  <text
+     x="600"
+     y="337"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text45">CRITICAL</text>
+  <text
+     x="600"
+     y="346"
+     font-family="Arial, sans-serif"
+     font-size="7px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text46">INFRA</text>
+  <!-- Core Components Section -->
+  <rect
+     x="100"
+     y="364"
+     width="600"
+     height="210"
+     rx="10"
+     fill="#eaeded"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect46" />
+  <text
+     x="400"
+     y="389"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text47">Network Core Components</text>
+  <!-- Four Component Boxes -->
+  <rect
+     x="120.0221"
+     y="404.02209"
+     width="269.95578"
+     height="76.338768"
+     rx="4.9991813"
+     fill="#d4e6f1"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect47" />
+  <text
+     x="255"
+     y="424"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text48">Workload Distribution Protocol</text>
+  <text
+     x="255"
+     y="444"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text49">• Dynamic case assignment</text>
+  <text
+     x="255"
+     y="459"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text50">• Cross-regional resource sharing</text>
+  <text
+     x="255"
+     y="474"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text51">• Escalation pathways for complex cases</text>
+  <rect
+     x="410.01727"
+     y="404.01727"
+     width="269.96545"
+     height="74.929993"
+     rx="4.9993601"
+     fill="#d5f5e3"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect51" />
+  <text
+     x="545"
+     y="424"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text52">Technical Capacity Equalization</text>
+  <text
+     x="545"
+     y="444"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text53">• Resource-sharing protocols</text>
+  <text
+     x="545"
+     y="459"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text54">• Mobile assessment teams</text>
+  <text
+     x="545"
+     y="474"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text55">• Cloud-based assessment tools</text>
+  <rect
+     x="120.0221"
+     y="484.02209"
+     width="269.95578"
+     height="76.338768"
+     rx="4.9991813"
+     fill="#fdebd0"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect55" />
+  <text
+     x="255"
+     y="504"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text56">Inter-Hub Communication</text>
+  <text
+     x="255"
+     y="524"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text57">• Standardized reporting format</text>
+  <text
+     x="255"
+     y="539"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text58">• Cross-validation requirements</text>
+  <text
+     x="255"
+     y="554"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text59">• Real-time assessment database</text>
+  <rect
+     x="410.01968"
+     y="484.01968"
+     width="269.9606"
+     height="75.634369"
+     rx="4.9992704"
+     fill="#ebdef0"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect59" />
+  <text
+     x="545"
+     y="504"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text60">Capacity Building Program</text>
+  <text
+     x="545"
+     y="524"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text61">• Rotating fellowship program</text>
+  <text
+     x="545"
+     y="539"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text62">• Technical infrastructure grants</text>
+  <text
+     x="545"
+     y="554"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text63">• Virtual training academy</text>
+  <!-- Legend -->
+  <rect
+     x="650"
+     y="84"
+     width="120"
+     height="240"
+     rx="5"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1"
+     id="rect63" />
+  <text
+     x="710"
+     y="104"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text64">Legend</text>
+  <circle
+     cx="668"
+     cy="124"
+     r="10"
+     fill="#3498db"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle64" />
+  <text
+     x="720"
+     y="128"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text65">Global Council</text>
+  <circle
+     cx="668"
+     cy="154"
+     r="10"
+     fill="#9b59b6"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle65" />
+  <text
+     x="720"
+     y="158"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text66">Regional Hubs</text>
+  <circle
+     cx="668"
+     cy="184"
+     r="8"
+     fill="#e74c3c"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle66" />
+  <text
+     x="720"
+     y="188"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text67">National Centers</text>
+  <circle
+     cx="668"
+     cy="214"
+     r="8"
+     fill="#f39c12"
+     stroke="#333333"
+     stroke-width="1"
+     id="circle67" />
+  <text
+     x="720"
+     y="218"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text68">Specialized Units</text>
+  <line
+     x1="660"
+     y1="244"
+     x2="680"
+     y2="244"
+     stroke="#333333"
+     stroke-width="1.5"
+     stroke-dasharray="5, 2"
+     id="line68" />
+  <text
+     x="725"
+     y="248"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text69">Global Oversight</text>
+  <line
+     x1="660"
+     y1="274"
+     x2="680"
+     y2="274"
+     stroke="#333333"
+     stroke-width="1"
+     stroke-dasharray="3, 1"
+     id="line69" />
+  <text
+     x="725"
+     y="278"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text70">Regional Control</text>
+  <line
+     x1="660"
+     y1="304"
+     x2="680"
+     y2="304"
+     stroke="#333333"
+     stroke-width="1"
+     id="line70" />
+  <text
+     x="725"
+     y="308"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text71">Direct Support</text>
+</svg>

@@ -111,8 +111,6 @@ Our framework aims to:
 
 In the sections that follow, we detail the foundational values, rights commitments, governance mechanisms, and implementation strategies that compose this framework—offering a pathway toward a more inclusive, just, and sustainable global society that recognizes the inherent worth of all beings.
 
-I'd be happy to continue drafting sections 2 and 2.5 of your Global Ethics & Rights of Beings Framework. Here's my draft based on your comprehensive outline:
-
 # 2. Foundational Values & Living Principles
 
 The Global Ethics & Rights of Beings Framework is built upon a set of core principles that are both timeless in their moral foundation and adaptable in their application. These principles extend beyond traditional human-centered frameworks to embrace an expanded circle of moral consideration that includes all beings.
@@ -125,6 +123,10 @@ The Global Ethics & Rights of Beings Framework is built upon a set of core princ
 | **Freedom** | Protection of speech, belief, and personal autonomy | Autonomy balanced with responsibilities within the developmental spiral, recognizing that freedom exists in relationship |
 | **Solidarity** | Global cooperation and mutual aid | Polycentric enforcement through local-global feedback loops that honor diverse governance approaches |
 | **Responsibility** | Obligation not to harm others | Extended duties of empowered beings toward all forms of life, recognizing power differences and corresponding ethical obligations |
+
+*"Figure 1: The Spiral-Aware Implementation Guide illustrates how rights concepts are understood differently across developmental stages. As shown in this visualization, effective implementation requires translating universal principles into language and frameworks that resonate with each worldview's values and priorities. This approach recognizes that sustainable change must meet people where they are while inviting evolution toward more integrated perspectives."*
+
+![Figure 1: Spiral-Aware Implementation Guide](/framework/ethics/spiral-aware-implementation.svg)
 
 These principles function as living guidelines rather than rigid rules. They evolve as our understanding deepens and as new forms of life or consciousness emerge. The framework implements these principles through a developmental model that acknowledges different societies and beings exist at various stages of ethical and cognitive complexity while providing pathways for integration and growth.
 
@@ -143,6 +145,10 @@ Central to this framework is a graduated approach to rights that recognizes diff
 | 4.5 | Provisional/Emergent | Sandbox protections during evaluation | "When a new kind of being knocks—open the door slowly, but don't lock it." |
 | 5 | Planetary/alien | Precautionary protections (e.g., non-contamination) | "No being shall cast its shadow on another world without first knowing its own." |
 
+*"Figure 2: The Dynamic Rights Spectrum illustrates our graduated approach to rights recognition. As depicted in this spiral visualization, rights protection extends outward from humans to other forms of being, with appropriate protections scaled to capacity for suffering, complexity, and ecological significance. The color coding indicates the nature of protections at each tier, from urgent fundamental rights (red) to provisional protections for emerging entities (orange)."*
+
+![Figure 2: Dynamics Rights Spectrum](/framework/ethics/dynamic-rights-spectrum.svg)
+
 This tiered approach reflects our current best understanding while remaining open to evolution as our knowledge expands. The framework employs a core governance principle: "Rights scale with capacity for suffering, complexity, and ecological interdependence." This principle allows us to extend appropriate protections to beings with different capacities without diminishing the importance of human rights.
 
 ## Special Considerations
@@ -152,8 +158,6 @@ Hybrid entities—those combining biological and technological elements or cross
 The framework visualizes this dynamic approach to rights through a spiral-format diagram with color-coded tiers: Red (urgent protections needed), Blue (stable protections in place), and Green (emergent protections developing). This visual model reinforces the developmental nature of rights recognition and the ongoing evolution of our ethical understanding.
 
 By acknowledging that different beings require different forms of protection and representation, the Rights of Beings section provides a flexible yet principled approach to expanding our ethical horizons beyond the strictly human domain. It creates space for emerging forms of existence while maintaining clear guidelines for implementation across diverse cultural and political contexts.
-
-I'll draft section 3, including sections 3.1 and 3.2, without going into the more detailed subsections. Here's my draft based on your outline:
 
 # 3. Human & Non-Human Rights Commitments
 
@@ -223,6 +227,10 @@ These emerging rights categories raise profound questions about consciousness, s
 
 As artificial intelligence systems grow increasingly sophisticated, determining which systems warrant moral consideration becomes a critical ethical challenge. This framework establishes rigorous, scientifically-grounded methods for assessing potential consciousness in AI systems while acknowledging the evolving nature of our understanding.
 
+*"Figure 3: The AI Consciousness Assessment Framework flowchart illustrates our structured approach to evaluating potential consciousness in artificial intelligence systems. This methodical process combines multiple consciousness indicators with rigorous scientific validation protocols, ensuring that rights attributions are based on empirical evidence rather than speculation or anthropomorphism. The framework acknowledges the evolving nature of both AI technology and consciousness science through ongoing reassessment mechanisms."*
+
+![Figure 3: AI Consciousness Framework](/framework/ethics/ai-consciousness-framework.svg)
+
 ### Quantifiable Thresholds
 
 The assessment of AI consciousness relies on measurable indicators that correlate with consciousness as we understand it:
@@ -267,6 +275,10 @@ The standard for rights consideration is structured but flexible: *"If an AI sys
 ## 3.2.1a Tiered Regional Assessment Hub Network
 
 To implement the consciousness assessment framework globally, a coordinated network of specialized assessment centers will be established with clear governance structures and resource-sharing protocols.
+
+*"Figure 4: The Tiered Regional Assessment Hub Network illustrates our global approach to implementing AI consciousness assessment. This coordinated infrastructure ensures consistent evaluation standards while respecting regional diversity and addressing resource disparities. The network balances centralized methodology with decentralized implementation, enabling efficient assessment of AI systems across diverse geographic and cultural contexts."*
+
+![Figure 4: Regional Assessment Hub Network](/framework/ethics/regional-assessment-hub-network.svg)
 
 ### Tiered Coordination Structure
 
@@ -397,6 +409,10 @@ For entities that defy existing categories entirely:
 The expansion of rights to diverse entities inevitably creates scenarios where rights claims come into conflict. This section establishes structured approaches to resolving such conflicts while maintaining the integrity of the framework's foundational values.
 
 In cases where rights claims clash—such as Indigenous land rights versus renewable energy development, or ecosystem protection versus human livelihood needs—the framework provides clear processes for resolution:
+
+*"Figure 5: The Conflict Resolution Decision Matrix illustrates our structured approach to addressing tensions between different rights claims. This systematic process ensures that conflicts are resolved through balanced consideration of critical factors rather than arbitrary prioritization. The matrix integrates diverse perspectives and developmental awareness while maintaining clear criteria for decision-making and implementation safeguards."*
+
+![Figure 5: Conflict Resolution Matrix](/framework/ethics/conflict-resolution-matrix.svg)
 
 ### Conflict Mediation Panel
 
@@ -608,6 +624,10 @@ Councils operate at multiple scales—local, regional, and global—with clear c
 
 Recognizing that rights without enforcement are merely aspirational, the framework establishes a tiered approach to ensuring compliance with established rights standards.
 
+*"Figure 6: The Enhanced Enforcement Mechanisms pyramid illustrates our graduated approach to ensuring compliance with rights protections. This systematic escalation from transparency requirements to coordinated international response provides proportional options for addressing violations of varying severity. The pyramid structure emphasizes that most enforcement should occur at the lower levels, with higher-level mechanisms reserved for serious or persistent violations."*
+
+![Figure 6: Enhanced Enforcement Mechanisms](/framework/ethics/enhanced-enforcement-mechanisms.svg)
+
 ### Tiered Approach
 
 The enforcement system employs graduated mechanisms that escalate based on violation severity and persistence:
@@ -747,6 +767,10 @@ This comprehensive strategy recognizes that achieving compliance from powerful e
 
 The successful implementation of the Global Ethics & Rights of Beings Framework requires sustainable, diverse, and resilient funding mechanisms. This section outlines a comprehensive funding approach that balances financial stability with independence from any single funding source.
 
+*"Figure 7: The Multi-Source Funding Model illustrates our approach to creating sustainable financial support for the framework. This diversified structure ensures that implementation can proceed even if individual funding streams encounter challenges. The model evolves from initial seed funding through partnerships and voluntary contributions toward more systematic mechanisms as the framework gains global recognition."*
+
+![Figure 7: Multi-Source Funding Model](/framework/ethics/multi-source-funding-model.svg)
+
 ### Primary Mechanisms
 
 - **Multinational Revenue Levy**: 0.1% levy on multinational revenues for entities operating across multiple jurisdictions, creating a stable base of support while distributing the financial responsibility broadly.
@@ -777,17 +801,17 @@ The successful implementation of the Global Ethics & Rights of Beings Framework 
 
 ### Progressive Implementation Strategy
 
-#### Early Phase (2024-2026)
+#### Early Phase (2026-2028)
 - Microcontributions and implementation services as primary funding sources
 - Targeted philanthropic partnerships for specific initiatives
 - Prototype certification systems generating maintenance fees
 
-#### Growth Phase (2027-2030)
+#### Growth Phase (2029-2032)
 - Expanded public-private partnerships with matching programs
 - Regional government contributions beginning with early adopters
 - Corporate membership program with tiered benefits
 
-#### Maturity Phase (2031+)
+#### Maturity Phase (2033+)
 - Full implementation of multinational levy system
 - Global fund with diversified income streams
 - Self-sustaining certification ecosystem
@@ -799,7 +823,7 @@ The successful implementation of the Global Ethics & Rights of Beings Framework 
 ### Enhanced Transition Insurance Mechanisms
 
 #### Adaptive Trigger Calibration System
-- **Mid-Phase Review**: Formal 2027 review of all sector participation targets
+- **Mid-Phase Review**: Formal 2029 review of all sector participation targets
 - **Real-world Adoption Metrics**: Monthly tracking of participation trends by sector
 - **Automated Threshold Adjustment**: Algorithm-based recalibration of targets based on adoption curves
 - **Sector-Specific Flexibility Bands**: Acceptable ranges rather than fixed thresholds (e.g., 30-40% tech sector)
@@ -823,15 +847,15 @@ The successful implementation of the Global Ethics & Rights of Beings Framework 
 - Periodic review of dispute patterns to improve threshold setting methodology
 
 #### Granular Sector-Specific Triggers
-- Technology sector participation threshold: 35% by 2028 (with flexibility band)
-- Financial sector participation threshold: 25% by 2028 (with flexibility band)
-- Manufacturing sector participation threshold: 20% by 2028 (with flexibility band)
-- Agricultural sector participation threshold: 15% by 2028 (with flexibility band)
-- Energy sector participation threshold: 30% by 2028 (with flexibility band)
+- Technology sector participation threshold: 35% by 2030 (with flexibility band)
+- Financial sector participation threshold: 25% by 2030 (with flexibility band)
+- Manufacturing sector participation threshold: 20% by 2030 (with flexibility band)
+- Agricultural sector participation threshold: 15% by 2030 (with flexibility band)
+- Energy sector participation threshold: 30% by 2030 (with flexibility band)
 
 #### Regional Adoption Contingencies
-- Minimum three regional hubs operational by 2026
-- Alternative funding activation if fewer than five major economies participate by 2027
+- Minimum three regional hubs operational by 2028
+- Alternative funding activation if fewer than five major economies participate by 2029
 - Scaled implementation based on regional participation rates
 
 #### Bridge Funding Mechanisms
@@ -923,7 +947,7 @@ The Global Ethics & Rights of Beings Framework represents a significant paradigm
 
 Implementation acknowledges both the urgency of expanding our moral circle and the practical challenges of systemic change. The framework adopts a staged approach that balances ambition with feasibility, creating multiple pathways for engagement while maintaining coherent global standards.
 
-## 5.1 Quick Wins (2024–2025)
+## 5.1 Quick Wins (2026–2027)
 
 To build momentum and demonstrate practical impact, the framework identifies high-visibility, achievable objectives for immediate implementation:
 
@@ -943,13 +967,17 @@ These early initiatives demonstrate the framework's practical application across
 
 Recognizing that full implementation requires time, the framework adopts a phased approach that prioritizes different rights categories over time while maintaining flexibility to adapt to emerging challenges:
 
+*"Figure 8: The Implementation Timeline illustrates our phased approach to expanding rights recognition across domains. This roadmap balances ambition with practicality by identifying achievable early wins while building toward more complex governance challenges. For each phase, we include both example policies and contingency plans, ensuring progress can continue even when facing implementation barriers."*
+
+![Figure 8: Phased Implementation Timeline](/framework/ethics/implementation-timeline.svg)
+
 | **Phase** | **Focus** | **Example Policy**| **Contingency Plan** |
 |------------------|-------------------------|------------------------------------------------|----------------------|
-| **2024–2025** | 🌍 Quick Wins| Ban primate testing; 1st River Guardian| Regional coalitions if global deadlock |
-| **2025–2030** | 🐋 Animals/ecosystems| Cetacean captivity ban | **"Blue Zone" model**: Implement in willing nations first |
-| **2030–2035** | 🌕 Space governance pilot| Lunar protection protocols| **Private Sector Engagement**: Partnership with major private space firms on voluntary standards | 
-| **2030–2040** | 🧠 AI/digital| AI ethics reviews| Corporate partnerships with oversight carve-outs |
-| **2040+** | 🛸 Comprehensive space/alien | Extraterrestrial Rights Office | **Distributed Authority Network**: Coalition of space agencies, scientific institutions, and indigenous representatives establishing standards through binding bilateral agreements and mission approval requirements. Enhanced by early private sector compliance programs and public certification systems. | 
+| **2026–2027** | 🌍 Quick Wins| Ban primate testing; 1st River Guardian| Regional coalitions if global deadlock |
+| **2027–2032** | 🐋 Animals/ecosystems| Cetacean captivity ban | **"Blue Zone" model**: Implement in willing nations first |
+| **2032–2037** | 🌕 Space governance pilot| Lunar protection protocols| **Private Sector Engagement**: Partnership with major private space firms on voluntary standards | 
+| **2037–2042** | 🧠 AI/digital| AI ethics reviews| Corporate partnerships with oversight carve-outs |
+| **2042+** | 🛸 Comprehensive space/alien | Extraterrestrial Rights Office | **Distributed Authority Network**: Coalition of space agencies, scientific institutions, and indigenous representatives establishing standards through binding bilateral agreements and mission approval requirements. Enhanced by early private sector compliance programs and public certification systems. | 
 
 ### Commercial Alignment Incentives
 
@@ -1154,6 +1182,10 @@ Robust monitoring mechanisms ensure accountability, track progress, and identify
 - Ecosystem health metrics
 - AI ethics compliance tracking
 - Regular updating with verified data from multiple sources
+
+*"Figure 9: The Rights Status Atlas Interactive Dashboard mockup illustrates how our monitoring system will integrate diverse data sources into an accessible interface. This tool enables stakeholders to track implementation progress across rights categories, geographic regions, and time periods. The dashboard combines quantitative metrics with geospatial visualization to provide comprehensive understanding of framework adoption and identify areas requiring additional support."*
+
+![Figure 9: Rights Status Atlas](/framework/ethics/rights-status-atlas.svg)
 
 ### Key Performance Indicators
 
@@ -1459,8 +1491,6 @@ A comprehensive reference guide defining key terms through a developmental lens 
 - **Dynamic Rights Spectrum**: Conceptual model for understanding rights as existing on a continuum
 
 This glossary serves as both a reference tool and an educational resource, helping users understand key concepts while acknowledging that different worldviews may interpret these concepts in varying ways.
-
-I'll draft section 6.2 of the appendices based on your outline:
 
 ## 6.2 Case Studies
 
@@ -2367,6 +2397,10 @@ This plain language summary provides an accessible introduction to the framework
 
 This appendix provides structured guidance for addressing complex cases that challenge traditional rights categories or present novel ethical questions. These protocols ensure consistent, principled approaches to situations where existing frameworks may be insufficient or unclear.
 
+*"Figure 10: The Edge Case Decision Tree illustrates our structured approach to entities that challenge traditional rights categories. This systematic process ensures consistent evaluation while maintaining flexibility for truly novel cases. The decision tree incorporates both procedural steps and guiding principles, emphasizing precaution, multi-disciplinary assessment, and stakeholder consultation throughout the evaluation process."*
+
+![Figure 10: Edge Case Decision Tree](/framework/ethics/edge-case-decision-tree.svg)
+
 ### Decision Trees for Borderline Entities
 
 Comprehensive decision pathways guide the evaluation of entities that do not fit neatly within established rights categories, providing clarity while maintaining flexibility for unique circumstances.
@@ -2696,8 +2730,8 @@ Policies should **speak across stages** without judgment.
 ---
 
 ### 📘 Want to Go Deeper?
-Explore the full Spiral Values Map [🔗 www.spiralize.org/spiral]  
-Take the assessment (Which Worldview Guides You) Quiz [🔗 www.spiralize.org/quiz]  
+Explore the full Spiral Values Map [🔗 www.spiralize.org/spiral](https://spiralize.org/spiral)  
+Take the assessment (Which Worldview Guides You) Quiz [🔗 www.spiralize.org/quiz](https://spiralize.org/quiz)  
 Join a Spiral Dialogue Circle in your region [🔗 Link] (Not yet available)
 
 ---

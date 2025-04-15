@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="svg49"
+   sodipodi:docname="enhanced-enforcement-mechanisms.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs49" />
+  <sodipodi:namedview
+     id="namedview49"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="400.35461"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg49" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="600"
+     fill="#f9f9f9"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text1">Enhanced Enforcement Mechanisms</text>
+  <text
+     x="400"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     font-style="italic"
+     id="text2">Tiered Approach to Rights Protection</text>
+  <!-- Pyramid Structure -->
+  <!-- Level 4 - Coordinated Response -->
+  <polygon
+     points="180,470 620,470 530,380 270,380"
+     fill="#e74c3c"
+     stroke="#333"
+     stroke-width="2"
+     id="polygon2" />
+  <text
+     x="400"
+     y="425"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     text-anchor="middle"
+     fill="white"
+     font-weight="bold"
+     id="text3">LEVEL 4</text>
+  <text
+     x="400"
+     y="464"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text4">Coordinated Response</text>
+  <!-- Level 3 - Legal Instruments -->
+  <polygon
+     points="270,380 530,380 470,290 330,290"
+     fill="#3498db"
+     stroke="#333"
+     stroke-width="2"
+     id="polygon4" />
+  <text
+     x="400"
+     y="328"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text5">LEVEL 3</text>
+  <text
+     x="400"
+     y="375"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text6">Legal Instruments</text>
+  <!-- Level 2 - Economic Incentives -->
+  <polygon
+     points="330,290 470,290 440,200 360,200"
+     fill="#f39c12"
+     stroke="#333"
+     stroke-width="2"
+     id="polygon6" />
+  <text
+     x="400"
+     y="236"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text7">LEVEL 2</text>
+  <text
+     x="400.39349"
+     y="284.3002"
+     font-family="Arial, sans-serif"
+     font-size="15.0343px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text8"
+     style="stroke-width:0.939641">Economic Incentives</text>
+  <!-- Level 1 - Transparency Mechanisms -->
+  <polygon
+     points="360,200 440,200 425,110 375,110"
+     fill="#2ecc71"
+     stroke="#333"
+     stroke-width="2"
+     id="polygon8" />
+  <text
+     x="400.05292"
+     y="152.29079"
+     font-family="Arial, sans-serif"
+     font-size="16.9691px"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text9"
+     style="stroke-width:0.94273">LEVEL 1</text>
+  <text
+     x="399.2142"
+     y="194.36539"
+     font-family="Arial, sans-serif"
+     font-size="13.6241px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text10"
+     style="stroke-width:0.851505">Transparency</text>
+  <!-- Detail Boxes -->
+  <!-- Level 1 Details -->
+  <rect
+     x="50"
+     y="110"
+     width="250"
+     height="110"
+     rx="10"
+     fill="#eaeded"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect10" />
+  <text
+     x="175"
+     y="130"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text11">Transparency Mechanisms</text>
+  <line
+     x1="50"
+     y1="135"
+     x2="300"
+     y2="135"
+     stroke="#333"
+     stroke-width="1"
+     id="line11" />
+  <text
+     x="175"
+     y="155"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text12">• Mandatory public disclosure</text>
+  <text
+     x="175"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text13">• ESG framework integration</text>
+  <text
+     x="175"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text14">• Standardized reporting formats</text>
+  <text
+     x="175"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text15">• Third-party verification</text>
+  <!-- Level 2 Details -->
+  <rect
+     x="50"
+     y="240"
+     width="250"
+     height="110"
+     rx="10"
+     fill="#eaeded"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect15" />
+  <text
+     x="175"
+     y="260"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text16">Economic Incentives</text>
+  <line
+     x1="50"
+     y1="265"
+     x2="300"
+     y2="265"
+     stroke="#333"
+     stroke-width="1"
+     id="line16" />
+  <text
+     x="175"
+     y="285"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text17">• Performance bonds</text>
+  <text
+     x="175"
+     y="305"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text18">• Certification with market benefits</text>
+  <text
+     x="175"
+     y="325"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text19">• Procurement preferences</text>
+  <text
+     x="175"
+     y="345"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text20">• Tax incentives for compliance</text>
+  <!-- Level 3 Details -->
+  <rect
+     x="500"
+     y="110"
+     width="250"
+     height="110"
+     rx="10"
+     fill="#eaeded"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect20" />
+  <text
+     x="625"
+     y="130"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text21">Legal Instruments</text>
+  <line
+     x1="500"
+     y1="135"
+     x2="750"
+     y2="135"
+     stroke="#333"
+     stroke-width="1"
+     id="line21" />
+  <text
+     x="625"
+     y="155"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text22">• ICJ injunction petitions</text>
+  <text
+     x="625"
+     y="175"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text23">• Model legislation templates</text>
+  <text
+     x="625"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text24">• Private right of action</text>
+  <text
+     x="625"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text25">• Liability framework enforcement</text>
+  <!-- Level 4 Details -->
+  <rect
+     x="500"
+     y="240"
+     width="250"
+     height="110"
+     rx="10"
+     fill="#eaeded"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect25" />
+  <text
+     x="625"
+     y="260"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text26">Coordinated Response</text>
+  <line
+     x1="500"
+     y1="265"
+     x2="750"
+     y2="265"
+     stroke="#333"
+     stroke-width="1"
+     id="line26" />
+  <text
+     x="625"
+     y="285"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text27">• Cross-border sanctions</text>
+  <text
+     x="625"
+     y="305"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text28">• Technology access restrictions</text>
+  <text
+     x="625"
+     y="325"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text29">• API/interoperability limitations</text>
+  <text
+     x="625"
+     y="345"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text30">• Coalition-based enforcement</text>
+  <!-- Escalation Criteria -->
+  <rect
+     x="180.0399"
+     y="490.03992"
+     width="439.9202"
+     height="99.849274"
+     rx="9.9981861"
+     fill="#d5f5e3"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="rect30" />
+  <text
+     x="400"
+     y="510"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text31">Escalation Criteria</text>
+  <line
+     x1="180"
+     y1="520"
+     x2="620"
+     y2="520"
+     stroke="#333"
+     stroke-width="1"
+     id="line31" />
+  <text
+     x="400"
+     y="540"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     id="text32">• Escalation based on violation severity and persistence</text>
+  <text
+     x="400"
+     y="560"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     id="text33">• Higher levels maintain lower level measures</text>
+  <text
+     x="400"
+     y="580"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     id="text34">• Focus on compliance over punishment</text>
+  <!-- Side Panels -->
+  <!-- Guardianship Council Role -->
+  <rect
+     x="50"
+     y="370"
+     width="250"
+     height="100"
+     rx="10"
+     fill="#ebdef0"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect34" />
+  <text
+     x="175"
+     y="390"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text35">Guardianship Council Role</text>
+  <line
+     x1="50"
+     y1="395"
+     x2="300"
+     y2="395"
+     stroke="#333"
+     stroke-width="1"
+     id="line35" />
+  <text
+     x="175"
+     y="415"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text36">• Assessment of violation severity</text>
+  <text
+     x="175"
+     y="435"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text37">• Recommendation of enforcement level</text>
+  <text
+     x="175"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text38">• Monitoring of compliance measures</text>
+  <!-- Implementation Process -->
+  <rect
+     x="500"
+     y="370"
+     width="250"
+     height="100"
+     rx="10"
+     fill="#d4e6f1"
+     stroke="#333"
+     stroke-width="1.5"
+     id="rect38" />
+  <text
+     x="625"
+     y="390"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text39">Implementation Process</text>
+  <line
+     x1="500"
+     y1="395"
+     x2="750"
+     y2="395"
+     stroke="#333"
+     stroke-width="1"
+     id="line39" />
+  <text
+     x="625"
+     y="415"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text40">• Standardized violation documentation</text>
+  <text
+     x="625"
+     y="435"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text41">• Notice and remediation period</text>
+  <text
+     x="625"
+     y="455"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     id="text42">• Progressive implementation timeline</text>
+  <!-- Connection Lines -->
+  <!-- Level 1 Connection -->
+  <line
+     x1="375"
+     y1="155"
+     x2="360"
+     y2="155"
+     stroke="#333"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line42" />
+  <line
+     x1="425"
+     y1="155"
+     x2="500"
+     y2="155"
+     stroke="#333"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line43" />
+  <!-- Level 2 Connection -->
+  <line
+     x1="330"
+     y1="245"
+     x2="300"
+     y2="290"
+     stroke="#333"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line44" />
+  <line
+     x1="470"
+     y1="245"
+     x2="500"
+     y2="290"
+     stroke="#333"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line45" />
+  <!-- Level 3 Connection -->
+  <line
+     x1="270"
+     y1="335"
+     x2="300"
+     y2="400"
+     stroke="#333"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line46" />
+  <line
+     x1="530"
+     y1="335"
+     x2="500"
+     y2="400"
+     stroke="#333"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line47" />
+  <!-- Level 4 Connection -->
+  <line
+     x1="175"
+     y1="470"
+     x2="175"
+     y2="490"
+     stroke="#333"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line48" />
+  <line
+     x1="620"
+     y1="470"
+     x2="620"
+     y2="490"
+     stroke="#333"
+     stroke-width="1.5"
+     stroke-dasharray="5,3"
+     id="line49" />
+</svg>
