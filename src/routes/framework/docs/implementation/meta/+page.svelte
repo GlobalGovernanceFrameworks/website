@@ -6,21 +6,63 @@
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
+  import ConstellationMap from '$lib/components/ConstellationMap.svelte';
      
   export let data;
+
+  // This will track the current locale for our component
+  $: currentLocale = $locale;
+
+  // Swedish translations for the introduction section
+  const introSv = {
+    title: "Integrerad Meta-Styrning Ramverk Implementering",
+    overview: "Översikt",
+    paragraph1: "Integrerad Meta-Styrning är konsten och arkitekturen att designa, samordna och utveckla styrningssystem över domäner, nivåer, kulturer och tidsskalor. När globala utmaningar blir alltmer sammankopplade och komplexa, erbjuder meta-styrning den nödvändiga strukturen för att harmonisera olika insatser till en sammanhängande helhet—utan att överskrida autonomi, mångfald eller subsidiaritet.",
+    paragraph2: "Detta ramverk beskriver principer, strukturer och mekanismer för hur olika styrningsdomäner interagerar, överlappar och utvecklas i linje med gemensamma mål. Det är tänkt som en potentiell \"konstitution för planetär samordning\"—ett levande, adaptivt system som utvecklas genom kollektivt lärande."
+  };
+
+  // English translations as fallback
+  const introEn = {
+    title: "Integrated Meta-Governance Framework Implementation",
+    overview: "Overview",
+    paragraph1: "Integrated Meta-Governance is the art and architecture of designing, aligning, and evolving governance systems across domains, levels, cultures, and timescales. As global challenges become increasingly interconnected and complex, meta-governance offers the scaffolding necessary to harmonize diverse efforts into a coherent whole—without overriding autonomy, diversity, or subsidiarity.",
+    paragraph2: "This framework outlines principles, structures, and mechanisms to guide how various governance domains interact, overlap, and evolve in alignment with shared goals. It is envisioned as a potential \"constitution for planetary coordination\"—a living, adaptive system that evolves through collective learning."
+  };
+
+  // Choose the right intro text based on the current locale
+  $: intro = currentLocale === 'sv' ? introSv : introEn;
 
   $: if (browser && $locale) {
     invalidate('app:locale');
   }
 </script>
-
 <div class="documentation-container">
   <FrameworkSidebar />
 
   <div class="content">
-    <svelte:component this={data.component} />
-  </div>
+    <!-- Manually add the translated introduction section -->
+    <div class="overview-section">
+      <h1>{intro.title}</h1>
+      <h2>{intro.overview}</h2>
+      <p>{intro.paragraph1}</p>
+      <p>{intro.paragraph2}</p>
+      
+      <!-- Show notification about the map not being translated when in Swedish -->
+      {#if currentLocale === 'sv'}
+        <div class="translation-notice">
+          {intro.mapNotice}
+        </div>
+      {/if}
+    </div>
 
+    <!-- Constellation Map component - not translated -->
+    <ConstellationMap />
+
+    <!-- The rest of the content - should be translated according to the locale -->
+    <div class="remaining-content">
+      <svelte:component this={data.component} />
+    </div>
+  </div>
 </div>
 
 <style>
@@ -77,6 +119,10 @@
   
   .content {
     min-width: 0;
+  }
+  
+  .map-container {
+    margin: 2rem 0;
   }
   
   /* Additional styles for markdown content */

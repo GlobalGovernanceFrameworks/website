@@ -20,6 +20,8 @@ export async function load({ depends }) {
   }
   
   return {
-    component: content.default
+    component: content.default,
+    // Indicate this is the meta page that needs special handling
+    isMeta: true
   };
 }
