@@ -1,14 +1,23 @@
 // src/routes/framework/docs/implementation/+page.js
 import { locale } from '$lib/i18n';
 import { get } from 'svelte/store';
+import { browser } from '$app/environment';
 
-export async function load({ depends, url }) {
+export async function load({ depends }) {
   // Declare dependency on locale
   depends('app:locale');
   
-  // Check URL for lang parameter as an override
-  const langParam = url.searchParams.get('lang');
-  const currentLocale = langParam || get(locale);
+  // Get the base locale from the store
+  let currentLocale = get(locale);
+  
+  // Only check URL param in the browser, not during prerendering
+  if (browser) {
+    const url = new URL(window.location.href);
+    const langParam = url.searchParams.get('lang');
+    if (langParam) {
+      currentLocale = langParam;
+    }
+  }
   
   let content;
   try {
