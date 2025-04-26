@@ -3,7 +3,7 @@
 4  [Food Systems & Agriculture](/framework/docs/implementation/food) (Planned)
 6  [Justice Systems](/framework/docs/implementation/justice) (Planned)
 10 [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
-2  [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (Planned)
+2  [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (done!)
 
 ### Tier 2: Systems for Long-Term Thriving
 7  [Financial Systems](/framework/docs/implementation/finance) (Planned)
@@ -18,7 +18,7 @@
 14 [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
 15 [Rural Development](/framework/docs/implementation/rural) (Planned)
 13 [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (Planned)
-1  [Global Ethics & Human Rights](/framework/docs/implementation/ethics) (Planned)
+1  [Global Ethics & Human Rights](/framework/docs/implementation/ethics) (done!)
 
 ### Tier 4: Visionary & Meta Governance
 19 [Space Governance](/framework/docs/implementation/space) (Planned)

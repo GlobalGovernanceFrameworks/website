@@ -1,4 +1,20 @@
-<!-- Introduction moved to page component -->
+# Integrated Meta-Governance Framework Implementation
+
+## Overview
+
+Integrated Meta-Governance is the art and architecture of designing, aligning, and evolving governance systems across domains, levels, cultures, and timescales. As global challenges become increasingly interconnected and complex, meta-governance offers the scaffolding necessary to harmonize diverse efforts into a coherent whole—without overriding autonomy, diversity, or subsidiarity.
+
+This framework outlines principles, structures, and mechanisms to guide how various governance domains interact, overlap, and evolve in alignment with shared goals. It is envisioned as a potential "constitution for planetary coordination"—a living, adaptive system that evolves through collective learning.
+
+## Document Information
+
+**Status**: Near-Final Draft  
+**Last Updated**: March 27, 2025  
+**Next Review**: To be determined
+
+This framework outlines the core architecture for meta-governance—how governance systems across domains can interoperate, align, and evolve together. While the conceptual foundations and structural components are well-established, we're currently seeking practical implementation examples beyond the case models presented. Particular areas for development include more diverse regional applications and detailed integration protocols with other frameworks.
+
+We welcome feedback on this framework. Please [contact us](/contact) with suggestions, case studies, or implementation experiences.
 
 ## Core Principles
 
@@ -514,8 +530,6 @@ Emerging approaches for deepening public engagement include:
 - Youth & Intergenerational Governance
 - Consciousness & Inner Development
 
----
-
 ## Why Join? (Meta-Governance Manifesto)
 
 Meta-Governance is not control—it's coordination. It’s how your domain framework:
@@ -526,8 +540,6 @@ Meta-Governance is not control—it's coordination. It’s how your domain frame
 - Helps shape the grammar of global cooperation
 
 Whether you're ready to observe, contribute, or lead, there's a seat at the table. Your voice shapes the architecture. Let’s build the future—together.
-
----
 
 ## Appendix: Dark Scenario Stress-Test
 
@@ -576,14 +588,3 @@ A key failure mode occurs when success metrics become targets that distort behav
 - Independent verification of measurement processes and results
 - Explicit valuing of unmeasured dimensions through narrative and case study
 - Participatory metric development involving diverse stakeholders
-
----
-
-**Document Status**: Near-Final Draft
-**Last Updated**: March 27, 2025
-**Next Review**: To be determined
-
-This framework outlines the core architecture for meta-governance—how governance systems across domains can interoperate, align, and evolve together. While the conceptual foundations and structural components are well-established, we're currently seeking practical implementation examples beyond the case models presented. Particular areas for development include more diverse regional applications and detailed integration protocols with other frameworks.
-
-We welcome feedback on this framework. Please [contact us](/contact) with suggestions, case studies, or implementation experiences.
-

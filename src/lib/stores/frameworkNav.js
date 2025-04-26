@@ -26,7 +26,7 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationEconomic', path: '/framework/docs/implementation/economic', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationJustice', path: '/framework/docs/implementation/justice', planned: true },
           { titleKey: 'framework.docs.nav.implementationMigration', path: '/framework/docs/implementation/migration', planned: true },
-          { titleKey: 'framework.docs.nav.implementationDisaster', path: '/framework/docs/implementation/disaster', comingSoon: true }
+          { titleKey: 'framework.docs.nav.implementationDisaster', path: '/framework/docs/implementation/disaster', status: 'ready' }
         ]
       },
       {

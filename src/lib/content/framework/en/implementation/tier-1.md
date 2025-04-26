@@ -9,4 +9,4 @@ This tier includes the most urgent domains of global governance—areas where fa
 - [Economic Integration](/framework/docs/implementation/economic) (In Review)
 - [Justice Systems](/framework/docs/implementation/justice) (Planned)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
-- [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (Planned)
+- [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster)

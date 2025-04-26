@@ -9,21 +9,170 @@
      
   export let data;
 
+  // Keep track of which section is active (for sub-navigation)
+  let activeSection = 'index';
+
+  // Check if we're in print mode
+  const isPrintMode = $page.url.searchParams.get('print') === 'true';
+
+  // Function to set active section
+  function setActiveSection(section) {
+    activeSection = section;
+  }
+
+  // Make this function available globally for the PDF generator
+  if (browser) {
+    window.showAllSectionsForPrint = () => {
+      sectionsToShow = Object.keys(data.sections || {});
+    };
+  }
+
+  // This needs to be a reactive statement - use $: to make it update when activeSection changes
+  $: sectionsToShow = isPrintMode 
+    ? Object.keys(data.sections || {}) 
+    : [activeSection];
+
   $: if (browser && $locale) {
     invalidate('app:locale');
   }
 </script>
 
 <div class="documentation-container">
-  <FrameworkSidebar />
+  {#if !isPrintMode}
+    <FrameworkSidebar />
+  {/if}
 
   <div class="content">
-    <svelte:component this={data.component} />
-  </div>
+    {#if data.isModular}
+      <!-- Sub-navigation for framework sections -->
+      {#if !isPrintMode} 
+        <div class="section-nav">
+          <ul>
+            <li class:active={activeSection === 'index'}>
+              <button on:click={() => setActiveSection('index')}>
+                Introduction
+              </button>
+            </li>
+            <li class:active={activeSection === 'principles'}>
+              <button on:click={() => setActiveSection('principles')}>
+                Guiding Principles
+              </button>
+            </li>
+            <li class:active={activeSection === 'components'}>
+              <button on:click={() => setActiveSection('components')}>
+                Framework Components
+              </button>
+            </li>
+            <li class:active={activeSection === 'approaches'}>
+              <button on:click={() => setActiveSection('approaches')}>
+                Implementation Approaches
+              </button>
+            </li>
+            <li class:active={activeSection === 'engagement'}>
+              <button on:click={() => setActiveSection('engagement')}>
+                Collaborative Engagement
+              </button>
+            </li>
+            <li class:active={activeSection === 'barriers'}>
+              <button on:click={() => setActiveSection('barriers')}>
+                Implementation Barriers
+              </button>
+            </li>
+            <li class:active={activeSection === 'resources'}>
+              <button on:click={() => setActiveSection('resources')}>
+                Resource Requirements
+              </button>
+            </li>
+            <li class:active={activeSection === 'monitoring'}>
+              <button on:click={() => setActiveSection('monitoring')}>
+                Monitoring, Evaluation, and Iteration
+              </button>
+            </li>
+            <li class:active={activeSection === 'governance'}>
+              <button on:click={() => setActiveSection('governance')}>
+                Innovative Governance Models
+              </button>
+            </li>
+            <li class:active={activeSection === 'scalability'}>
+              <button on:click={() => setActiveSection('scalability')}>
+                Scalability and Contextual Adaptation
+              </button>
+            </li>
+            <li class:active={activeSection === 'conclusion'}>
+              <button on:click={() => setActiveSection('conclusion')}>
+                Conclusion
+              </button>
+            </li>
+            <li class:active={activeSection === 'annexes'}>
+              <button on:click={() => setActiveSection('annexes')}>
+                Annexes
+              </button>
+            </li>
+          </ul>
+        </div>
+      {/if}
 
+      <!-- Show active section, or all sections in print mode -->
+      {#each sectionsToShow as section}
+        <div class="section-content" id={section}>
+          {#if data.sections[section]}
+            <svelte:component this={data.sections[section].default} />
+          {:else}
+            <p>Section {section} not found</p>
+          {/if}
+        </div>
+      {/each}
+    {:else}
+      <!-- Legacy single file display -->
+      <svelte:component this={data.component} />
+    {/if}
+  </div>
 </div>
 
 <style>
+  .section-nav {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .section-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .section-nav li {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-nav button {
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    color: #4b5563;
+    transition: all 0.2s;
+  }
+  
+  .section-nav li.active button {
+    background-color: #2B4B8C;
+    color: white;
+    border-color: #2B4B8C;
+  }
+  
+  .section-nav button:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+  }
+  
+  .section-content {
+    padding-top: 1rem;
+  }
+  
   .documentation-container {
     display: grid;
     grid-template-columns: 250px 1fr;

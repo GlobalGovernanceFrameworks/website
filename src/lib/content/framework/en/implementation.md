@@ -121,7 +121,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Economic Integration](/framework/docs/implementation/economic) (In Review)
 - [Justice Systems](/framework/docs/implementation/justice) (Planned)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
-- [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (Planned)
+- [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster)
 
 ### Tier 2: Systems for Long-Term Thriving
 - [Technology Governance](/framework/docs/implementation/technology) (In Review)

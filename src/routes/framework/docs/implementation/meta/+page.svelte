@@ -10,6 +10,28 @@
      
   export let data;
 
+  // Keep track of which section is active (for sub-navigation)
+  let activeSection = 'index';
+
+  // Function to set active section
+  function setActiveSection(section) {
+    activeSection = section;
+  }
+
+  // Check if we're in print mode
+  const isPrintMode = data.isPrintMode;
+
+  // If in print mode, we'll show all sections
+  // This is a special state just for PDF generation
+  $: sectionsToShow = isPrintMode ? Object.keys(data.sections || {}) : [activeSection];
+
+  // Make this function available globally for the PDF generator
+  if (browser) {
+    window.showAllSectionsForPrint = () => {
+      sectionsToShow = Object.keys(data.sections || {});
+    };
+  }
+
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
@@ -29,43 +51,211 @@
     paragraph2: "This framework outlines principles, structures, and mechanisms to guide how various governance domains interact, overlap, and evolve in alignment with shared goals. It is envisioned as a potential \"constitution for planetary coordination\"—a living, adaptive system that evolves through collective learning."
   };
 
+  // Get section titles in current language
+  function getSectionTitle(section) {
+    const titles = {
+      en: {
+        'quick-start': "Meta-Governance Lite",
+        index: "Overview",
+        principles: "Core Principles",
+        'value-proposition': "Value Proposition",
+        structural: "Structural Components",
+        implementation: "Implementation Strategies",
+        evaluation: "Evaluation Framework",
+        'case-models': "Case Models in Action",
+        future: "Future Potential",
+        manifesto: "Why Join?",
+        appendix: "Appendix",
+        related: "Related"
+      },
+      sv: {
+        'quick-start': "Meta-Styrning Lite",
+        index: "Översikt",
+        principles: "Grundläggande Principer",
+        'value-proposition': "Värdeerbjudande",
+        structural: "Strukturella Komponenter",
+        implementation: "Implementeringsstrategier",
+        evaluation: "Utvärderingsramverk",
+        'case-models': "Fallmodeller i praktiken",
+        future: "Framtida Potential",
+        manifesto: "Varför delta?",
+        appendix: "Bilaga",
+        related: "Relaterat"
+      }
+    };
+    
+    return (titles[currentLocale] || titles.en)[section] || section;
+  }
+
   // Choose the right intro text based on the current locale
   $: intro = currentLocale === 'sv' ? introSv : introEn;
 
   $: if (browser && $locale) {
     invalidate('app:locale');
   }
+  
+  // Function to download the lite guide PDF
+  function downloadLiteGuide() {
+    const pdfUrl = `${base}/assets/pdf/meta-governance-lite-${currentLocale}.pdf`;
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'meta-governance-lite.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 </script>
+
 <div class="documentation-container">
-  <FrameworkSidebar />
+  {#if !isPrintMode}
+    <FrameworkSidebar />
+  {/if}
 
   <div class="content">
-    <!-- Manually add the translated introduction section -->
-    <div class="overview-section">
-      <h1>{intro.title}</h1>
-      <h2>{intro.overview}</h2>
-      <p>{intro.paragraph1}</p>
-      <p>{intro.paragraph2}</p>
-      
-      <!-- Show notification about the map not being translated when in Swedish -->
-      {#if currentLocale === 'sv'}
-        <div class="translation-notice">
-          {intro.mapNotice}
+    <!-- Quick Access Card for Lite Guide -->
+    {#if !isPrintMode && activeSection !== 'quick-start'}
+      <div class="lite-guide-card">
+        <div class="card-content">
+          <div class="card-icon">📘</div>
+          <div class="card-text">
+            <h3>New to Meta-Governance?</h3>
+            <p>Start with our simplified guide that explains the core concepts in plain language.</p>
+          </div>
+          <div class="card-actions">
+            <button class="primary-btn" on:click={() => setActiveSection('quick-start')}>
+              Read Meta-Governance Lite
+            </button>
+            <button class="secondary-btn" on:click={downloadLiteGuide}>
+              Download PDF <span class="download-icon">↓</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    {/if}
+
+    {#if data.isModular}
+      <!-- Sub-navigation for framework sections -->
+      {#if !isPrintMode} 
+        <div class="section-nav">
+          <ul>
+            {#each Object.keys(data.sections) as section}
+              <li class:active={activeSection === section}>
+                <button on:click={() => setActiveSection(section)}>
+                  {getSectionTitle(section)}
+                </button>
+              </li>
+            {/each}
+          </ul>
         </div>
       {/if}
-    </div>
 
-    <!-- Constellation Map component - not translated -->
-    <ConstellationMap />
+      <!-- Show active section, or all sections in print mode -->
+      {#each sectionsToShow as section}
+        <div class="section-content" id={section}>
+          {#if section === 'quick-start'}
+            <!-- Render Lite Guide -->
+            <svelte:component this={data.sections[section].default} />
+            
+            <!-- Navigation buttons at bottom of lite guide -->
+            {#if !isPrintMode}
+              <div class="lite-guide-navigation">
+                <button class="secondary-btn" on:click={downloadLiteGuide}>
+                  Download PDF Version <span class="download-icon">↓</span>
+                </button>
+                <button class="primary-btn" on:click={() => setActiveSection('index')}>
+                  Continue to Full Framework <span class="arrow-icon">→</span>
+                </button>
+              </div>
+            {/if}
 
-    <!-- The rest of the content - should be translated according to the locale -->
-    <div class="remaining-content">
-      <svelte:component this={data.component} />
-    </div>
+          {:else if section === 'index' && currentLocale === 'sv'}
+            <!-- Manually render Swedish introduction for the index section -->
+            <div class="overview-section">
+              <h1>{intro.title}</h1>
+              <h2>{intro.overview}</h2>
+              <p>{intro.paragraph1}</p>
+              <p>{intro.paragraph2}</p>
+            </div>
+            <!-- Show constellation map for index section -->
+            <ConstellationMap />
+          {:else if section === 'index'}
+            <!-- Render English introduction through the markdown component -->
+            <svelte:component this={data.sections[section].default} />
+            <!-- Show constellation map for index section -->
+            <ConstellationMap />
+          {:else if data.sections[section]}
+            <!-- Render normal sections from markdown files -->
+            <svelte:component this={data.sections[section].default} />
+          {:else}
+            <p>Section {section} not found</p>
+          {/if}
+        </div>
+      {/each}
+    {:else}
+      <!-- Legacy single file display -->
+      <div class="overview-section">
+        <h1>{intro.title}</h1>
+        <h2>{intro.overview}</h2>
+        <p>{intro.paragraph1}</p>
+        <p>{intro.paragraph2}</p>
+      </div>
+      
+      <!-- Show constellation map -->
+      <ConstellationMap />
+
+      <!-- The rest of the content -->
+      <div class="remaining-content">
+        <svelte:component this={data.component} />
+      </div>
+    {/if}
   </div>
 </div>
 
 <style>
+  /* Existing styles */
+  .section-nav {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .section-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .section-nav li {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-nav button {
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    color: #4b5563;
+    transition: all 0.2s;
+  }
+  
+  .section-nav li.active button {
+    background-color: #2B4B8C;
+    color: white;
+    border-color: #2B4B8C;
+  }
+  
+  .section-nav button:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+  }
+  
+  .section-content {
+    padding-top: 1rem;
+  }
+
   .documentation-container {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -222,11 +412,12 @@
     padding-left: 1rem;
   }
 
-  .content :global(ul li::before) {
-    content: "✦"; /* Cosmic star symbol for bullets */
+  /* Apply stars to all ul li EXCEPT those in section-nav */
+  .content :global(ul li:not(.section-nav li))::before {
+    content: "✦";
     position: absolute;
     left: 0;
-    color: #DAA520; /* Gold color for bullet points */
+    color: #DAA520;
     font-size: 0.9rem;
   }
 
@@ -330,6 +521,127 @@
     :global(.content th),
     :global(.content td) {
       white-space: nowrap;
+    }
+  }
+  
+  /* New styles for Lite Guide card */
+  .lite-guide-card {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e6f7ff 100%);
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(43, 75, 140, 0.1);
+    border: 1px solid rgba(43, 75, 140, 0.2);
+    overflow: hidden;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    color: #2B4B8C;
+    flex-shrink: 0;
+  }
+  
+  .card-text {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .card-text h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2B4B8C;
+    font-size: 1.25rem;
+  }
+  
+  .card-text p {
+    margin: 0;
+    color: #4b5563;
+    font-size: 1rem;
+  }
+  
+  .card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  
+  .primary-btn {
+    background-color: #2B4B8C;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .primary-btn:hover {
+    background-color: #1a3a6c;
+    transform: translateY(-1px);
+  }
+  
+  .secondary-btn {
+    background-color: white;
+    color: #2B4B8C;
+    border: 1px solid #2B4B8C;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #f3f6f9;
+    transform: translateY(-1px);
+  }
+  
+  .download-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+  }
+  
+  .arrow-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+  }
+  
+  /* Styles for navigation at bottom of lite guide */
+  .lite-guide-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  @media (max-width: 640px) {
+    .card-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .card-actions {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .lite-guide-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .lite-guide-navigation button {
+      width: 100%;
     }
   }
 </style>

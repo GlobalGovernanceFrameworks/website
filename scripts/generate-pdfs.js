@@ -16,48 +16,48 @@ const LANGUAGES = ['en', 'sv'];
 
 // Define documents per language
 const documents = [
-  { path: '/framework/docs/principles', filename: 'Core-Principles.pdf', titleKey: 'Core Principles' },
-  { path: '/framework/docs/implementation', filename: 'Implementation-Guidelines.pdf', titleKey: 'Implementation Guidelines' },
-  { path: '/framework/docs/case-studies', filename: 'Case-Studies.pdf', titleKey: 'Case Studies' },
-  { path: '/framework/docs/resources', filename: 'Resources.pdf', titleKey: 'Resources' },
+  { path: '/framework/docs/principles', filename: 'Core-Principles.pdf', titleKey: 'Core Principles', format: 'single' },
+  { path: '/framework/docs/implementation', filename: 'Implementation-Guidelines.pdf', titleKey: 'Implementation Guidelines', format: 'single' },
+  { path: '/framework/docs/case-studies', filename: 'Case-Studies.pdf', titleKey: 'Case Studies', format: 'single' },
+  { path: '/framework/docs/resources', filename: 'Resources.pdf', titleKey: 'Resources', format: 'single' },
 
   // Global Citizenship Frameworks
-  { path: '/framework/global-citizenship/full-framework', filename: 'Global-Citizenship.pdf', titleKey: 'Global Citizenship' },
-  { path: '/framework/global-citizenship/4-page-overview', filename: 'Global-Citizenship-4-page-overview.pdf', titleKey: 'Global Citizenship 4-page summary' },
+  { path: '/framework/global-citizenship/full-framework', filename: 'Global-Citizenship.pdf', titleKey: 'Global Citizenship', format: 'single' },
+  { path: '/framework/global-citizenship/4-page-overview', filename: 'Global-Citizenship-4-page-overview.pdf', titleKey: 'Global Citizenship 4-page summary', format: 'single' },
 
   // Tiered Implementation Frameworks
-  { path: '/framework/docs/implementation/tier-1', filename: 'Tier-1-Urgent-Stability.pdf', titleKey: 'Tier 1 Overview' },
-  { path: '/framework/docs/implementation/tier-2', filename: 'Tier-2-Long-Term-Thriving.pdf', titleKey: 'Tier 2 Overview' },
-  { path: '/framework/docs/implementation/tier-3', filename: 'Tier-3-Equity-Culture.pdf', titleKey: 'Tier 3 Overview' },
-  { path: '/framework/docs/implementation/tier-4', filename: 'Tier-4-Visionary-Meta.pdf', titleKey: 'Tier 4 Overview' },
+  { path: '/framework/docs/implementation/tier-1', filename: 'Tier-1-Urgent-Stability.pdf', titleKey: 'Tier 1 Overview', format: 'single' },
+  { path: '/framework/docs/implementation/tier-2', filename: 'Tier-2-Long-Term-Thriving.pdf', titleKey: 'Tier 2 Overview', format: 'single' },
+  { path: '/framework/docs/implementation/tier-3', filename: 'Tier-3-Equity-Culture.pdf', titleKey: 'Tier 3 Overview', format: 'single' },
+  { path: '/framework/docs/implementation/tier-4', filename: 'Tier-4-Visionary-Meta.pdf', titleKey: 'Tier 4 Overview', format: 'single' },
 
   // Individual Implementation Domains (alphabetical)
-  { path: '/framework/docs/implementation/biodiversity', filename: 'Biodiversity-Governance.pdf', titleKey: 'Biodiversity Governance' },
-  { path: '/framework/docs/implementation/energy', filename: 'Climate-Energy-Governance.pdf', titleKey: 'Climate & Energy Governance' },
-  { path: '/framework/docs/implementation/consciousness', filename: 'Consciousness-Inner-Development.pdf', titleKey: 'Consciousness & Inner Development' },
-  { path: '/framework/docs/implementation/culture', filename: 'Cultural-Heritage.pdf', titleKey: 'Cultural Heritage Preservation' },
-  { path: '/framework/docs/implementation/digital', filename: 'Digital-Commons.pdf', titleKey: 'Digital Commons' },
-  { path: '/framework/docs/implementation/disaster', filename: 'Disaster-Resilience.pdf', titleKey: 'Disaster Risk Reduction & Resilience' },
-  { path: '/framework/docs/implementation/economic', filename: 'Economic-Integration.pdf', titleKey: 'Economic Integration' },
-  { path: '/framework/docs/implementation/education', filename: 'Educational-Systems.pdf', titleKey: 'Educational Systems' },
-  { path: '/framework/docs/implementation/environment', filename: 'Environmental-Stewardship.pdf', titleKey: 'Environmental Stewardship' },
-  { path: '/framework/docs/implementation/ethics', filename: 'Global-Ethics-Rights.pdf', titleKey: 'Global Ethics & Human Rights' },
-  { path: '/framework/docs/implementation/finance', filename: 'Financial-Systems.pdf', titleKey: 'Financial Systems' },
-  { path: '/framework/docs/implementation/food', filename: 'Food-Agriculture.pdf', titleKey: 'Food Systems & Agriculture' },
-  { path: '/framework/docs/implementation/healthcare', filename: 'Healthcare-Governance.pdf', titleKey: 'Healthcare Governance' },
-  { path: '/framework/docs/implementation/justice', filename: 'Justice-Systems.pdf', titleKey: 'Justice Systems' },
-  { path: '/framework/docs/implementation/labor', filename: 'Labor-Employment.pdf', titleKey: 'Labor & Employment Governance' },
-  { path: '/framework/docs/implementation/meta', filename: 'Meta-Governance.pdf', titleKey: 'Integrated Meta-Governance' },
-  { path: '/framework/docs/implementation/methods-tools', filename: 'Methods-Tools.pdf', titleKey: 'Implementation Methods & Tools' },
-  { path: '/framework/docs/implementation/migration', filename: 'Migration-Mobility.pdf', titleKey: 'Migration & Human Mobility' },
-  { path: '/framework/docs/implementation/oceans', filename: 'Oceans-Marine-Governance.pdf', titleKey: 'Oceans & Marine Governance' },
-  { path: '/framework/docs/implementation/peace', filename: 'Peace-Conflict-Resolution.pdf', titleKey: 'Peace & Conflict Resolution' },
-  { path: '/framework/docs/implementation/rural', filename: 'Rural-Development.pdf', titleKey: 'Rural Development' },
-  { path: '/framework/docs/implementation/space', filename: 'Space-Governance.pdf', titleKey: 'Space Governance' },
-  { path: '/framework/docs/implementation/spiritual', filename: 'Spiritual-Dialogue.pdf', titleKey: 'Religious & Spiritual Dialogue' },
-  { path: '/framework/docs/implementation/technology', filename: 'Technology-Governance.pdf', titleKey: 'Technology Governance' },
-  { path: '/framework/docs/implementation/urban', filename: 'Urban-Community.pdf', titleKey: 'Urban & Community Development' },
-  { path: '/framework/docs/implementation/youth', filename: 'Youth-Governance.pdf', titleKey: 'Youth & Intergenerational Governance' }
+  { path: '/framework/docs/implementation/biodiversity', filename: 'Biodiversity-Governance.pdf', titleKey: 'Biodiversity Governance', format: 'modular' },
+  { path: '/framework/docs/implementation/energy', filename: 'Climate-Energy-Governance.pdf', titleKey: 'Climate & Energy Governance', format: 'single' },
+  { path: '/framework/docs/implementation/consciousness', filename: 'Consciousness-Inner-Development.pdf', titleKey: 'Consciousness & Inner Development', format: 'modular' },
+  { path: '/framework/docs/implementation/culture', filename: 'Cultural-Heritage.pdf', titleKey: 'Cultural Heritage Preservation', format: 'modular' },
+  { path: '/framework/docs/implementation/digital', filename: 'Digital-Commons.pdf', titleKey: 'Digital Commons', format: 'modular' },
+  { path: '/framework/docs/implementation/disaster', filename: 'Disaster-Resilience.pdf', titleKey: 'Disaster Risk Reduction & Resilience', format: 'modular' },
+  { path: '/framework/docs/implementation/economic', filename: 'Economic-Integration.pdf', titleKey: 'Economic Integration', format: 'single' },
+  { path: '/framework/docs/implementation/education', filename: 'Educational-Systems.pdf', titleKey: 'Educational Systems', format: 'modular' },
+  { path: '/framework/docs/implementation/environment', filename: 'Environmental-Stewardship.pdf', titleKey: 'Environmental Stewardship', format: 'single' },
+  { path: '/framework/docs/implementation/ethics', filename: 'Global-Ethics-Rights.pdf', titleKey: 'Global Ethics & Human Rights', format: 'single' },
+  { path: '/framework/docs/implementation/finance', filename: 'Financial-Systems.pdf', titleKey: 'Financial Systems', format: 'modular' },
+  { path: '/framework/docs/implementation/food', filename: 'Food-Agriculture.pdf', titleKey: 'Food Systems & Agriculture', format: 'modular' },
+  { path: '/framework/docs/implementation/healthcare', filename: 'Healthcare-Governance.pdf', titleKey: 'Healthcare Governance', format: 'modular' },
+  { path: '/framework/docs/implementation/justice', filename: 'Justice-Systems.pdf', titleKey: 'Justice Systems', format: 'modular' },
+  { path: '/framework/docs/implementation/labor', filename: 'Labor-Employment.pdf', titleKey: 'Labor & Employment Governance', format: 'modular' },
+  { path: '/framework/docs/implementation/meta', filename: 'Meta-Governance.pdf', titleKey: 'Integrated Meta-Governance', format: 'single' },
+  { path: '/framework/docs/implementation/methods-tools', filename: 'Methods-Tools.pdf', titleKey: 'Implementation Methods & Tools', format: 'single' },
+  { path: '/framework/docs/implementation/migration', filename: 'Migration-Mobility.pdf', titleKey: 'Migration & Human Mobility', format: 'modular' },
+  { path: '/framework/docs/implementation/oceans', filename: 'Oceans-Marine-Governance.pdf', titleKey: 'Oceans & Marine Governance', format: 'modular' },
+  { path: '/framework/docs/implementation/peace', filename: 'Peace-Conflict-Resolution.pdf', titleKey: 'Peace & Conflict Resolution', format: 'single' },
+  { path: '/framework/docs/implementation/rural', filename: 'Rural-Development.pdf', titleKey: 'Rural Development', format: 'modular' },
+  { path: '/framework/docs/implementation/space', filename: 'Space-Governance.pdf', titleKey: 'Space Governance', format: 'modular' },
+  { path: '/framework/docs/implementation/spiritual', filename: 'Spiritual-Dialogue.pdf', titleKey: 'Religious & Spiritual Dialogue', format: 'single' },
+  { path: '/framework/docs/implementation/technology', filename: 'Technology-Governance.pdf', titleKey: 'Technology Governance', format: 'single' },
+  { path: '/framework/docs/implementation/urban', filename: 'Urban-Community.pdf', titleKey: 'Urban & Community Development', format: 'modular' },
+  { path: '/framework/docs/implementation/youth', filename: 'Youth-Governance.pdf', titleKey: 'Youth & Intergenerational Governance', format: 'modular' }
 ];
 
 // Language-specific titles
@@ -134,11 +134,11 @@ const titles = {
   }
 };
 
-async function generatePDF(url, outputPath, title, language) {
+async function generatePDF(url, outputPath, title, language, format = 'single') {
   console.log(`Generating PDF for ${url} in language: ${language}...`);
   
   const browser = await puppeteer.launch({
-    headless: true, // Use default headless mode for compatibility
+    headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
   
@@ -150,24 +150,26 @@ async function generatePDF(url, outputPath, title, language) {
       'Accept-Language': language
     });
     
-    // Set viewport to ensure consistent rendering
+    // Set viewport 
     await page.setViewport({ width: 1200, height: 1600 });
     
     // Add lang parameter to URL
     const urlWithLang = `${url}?lang=${language}`;
     
+    // For modular frameworks, add a special parameter to trigger "print mode"
+    const finalUrl = format === 'modular' 
+      ? `${urlWithLang}&print=true` 
+      : urlWithLang;
+    
     // Navigate to the page
-    await page.goto(urlWithLang, { waitUntil: 'networkidle0', timeout: 60000 });
+    await page.goto(finalUrl, { waitUntil: 'networkidle0', timeout: 60000 });
     
     // Use delay instead of waitForTimeout
     await new Promise(resolve => setTimeout(resolve, 3000));
     
     // Set locale via browser
     await page.evaluate((lang) => {
-      // Try to set locale in local storage
       localStorage.setItem('locale', lang);
-      
-      // Trigger a reload to apply language change
       window.location.reload();
     }, language);
     
@@ -186,67 +188,41 @@ async function generatePDF(url, outputPath, title, language) {
       console.warn('Could not find .content selector, continuing anyway');
     }
     
-    // Add custom styles for PDF
+    // For modular frameworks, we need to ensure all content is rendered
+    if (format === 'modular') {
+      // Execute script to show all sections for printing
+      await page.evaluate(() => {
+        // This assumes your page has a function to show all content for printing
+        if (typeof window.showAllSectionsForPrint === 'function') {
+          window.showAllSectionsForPrint();
+        }
+      });
+      
+      // Wait a bit for all sections to render
+      await new Promise(resolve => setTimeout(resolve, 2000));
+    }
+    
+    // Add custom styles for PDF (same as before)
     await page.addStyleTag({
       content: `
         @page {
           margin: 1.5cm;
           size: A4;
         }
-        body {
-          font-family: 'Arial', sans-serif;
-          padding: 0;
-          margin: 0;
-        }
-        /* Hide elements we don't want in the PDF */
-        header, footer, nav, .sidebar, .toc-container, button, .menu-button, .action-links {
+        /* Rest of your styles */
+        
+        /* Additional styles for modular frameworks */
+        .section-nav {
           display: none !important;
         }
-        /* Ensure content is properly visible */
-        .documentation-container {
-          display: block !important;
-          grid-template-columns: 1fr !important;
-          max-width: 100% !important;
-        }
-        .content {
-          padding: 0 !important;
-          margin: 0 !important;
-          width: 100% !important;
-        }
-        /* Style headings */
-        h1 { font-size: 24pt; color: #2B4B8C; margin-bottom: 20pt; }
-        h2 { font-size: 18pt; color: #2B4B8C; margin-top: 15pt; }
-        h3 { font-size: 14pt; color: #2B4B8C; }
-        /* Style links */
-        a { color: #DAA520; text-decoration: underline; }
         
-        /* Improve table styling for PDF */
-        table { 
-          width: 100%;
-          border-collapse: collapse;
-          margin: 1rem 0;
-        }
-        th {
-          background-color: #2B4B8C;
-          color: white;
-          padding: 0.5rem;
-          text-align: left;
-          border: 1px solid #ccc;
-        }
-        td {
-          padding: 0.5rem;
-          border: 1px solid #ccc;
-        }
-        tr:nth-child(even) {
-          background-color: #f9fafb;
+        .section-content {
+          page-break-after: always;
         }
         
-        /* Improve blockquote styling */
-        blockquote {
-          background-color: #f9fafb;
-          border-left: 4px solid #2B4B8C;
-          padding: 0.5rem 1rem;
-          margin: 1rem 0;
+        /* Ensure the last section doesn't have a page break after */
+        .section-content:last-child {
+          page-break-after: avoid;
         }
       `
     });
@@ -280,22 +256,19 @@ async function generatePDF(url, outputPath, title, language) {
 
 async function generateAllPDFs() {
   try {
-    // Process each language
     for (const lang of LANGUAGES) {
       console.log(`\nGenerating PDFs for language: ${lang}`);
       
-      // Create language-specific output directory
       const langOutputDir = path.join(BASE_OUTPUT_DIR, lang);
       await fs.ensureDir(langOutputDir);
       
-      // Generate PDFs for each document in this language
       for (const doc of documents) {
         const title = titles[lang][doc.titleKey] || `${doc.titleKey} (${lang.toUpperCase()})`;
         const url = `${SITE_URL}${doc.path}`;
         const outputPath = path.join(langOutputDir, doc.filename);
         
         try {
-          await generatePDF(url, outputPath, title, lang);
+          await generatePDF(url, outputPath, title, lang, doc.format || 'single');
         } catch (error) {
           console.error(`Failed to generate PDF for ${doc.path} in ${lang}:`, error);
         }
