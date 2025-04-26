@@ -4,12 +4,13 @@ import { get } from 'svelte/store';
 
 export const csr = true;
 
+// Remove all URL handling from server-side
 export async function load({ depends }) {
   // Declare dependency on locale
   depends('app:locale');
   
   const currentLocale = get(locale);
-  
+ 
   // Define all sections of the framework
   const sections = [
     'index',
@@ -51,6 +52,7 @@ export async function load({ depends }) {
       };
     } catch (fallbackError) {
       console.error("Fallback loading also failed:", fallbackError);
+      throw fallbackError;
     }
   }
   

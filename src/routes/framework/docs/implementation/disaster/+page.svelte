@@ -12,9 +12,9 @@
   // Keep track of which section is active (for sub-navigation)
   let activeSection = 'index';
 
-  // Check if we're in print mode
-  const isPrintMode = $page.url.searchParams.get('print') === 'true';
-
+  // Handle print mode only on client side
+  $: isPrintMode = browser && $page.url.searchParams.get('print') === 'true';
+ 
   // Function to set active section
   function setActiveSection(section) {
     activeSection = section;

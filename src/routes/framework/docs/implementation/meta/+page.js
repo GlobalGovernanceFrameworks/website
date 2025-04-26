@@ -9,7 +9,9 @@ export async function load({ depends, url }) {
   depends('app:locale');
   
   const currentLocale = get(locale);
-  const isPrintMode = url.searchParams.get('print') === 'true';
+  
+  // Safe check for print mode that works during prerendering
+  const isPrintMode = import.meta.env.SSR ? false : url.searchParams.get('print') === 'true';
   
   // Define sections to load - add 'quick-start' as the first section
   const sections = [
