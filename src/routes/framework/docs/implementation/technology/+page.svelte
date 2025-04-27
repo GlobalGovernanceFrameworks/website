@@ -1,4 +1,4 @@
-<!-- src/routes/framework/docs/+page.svelte -->
+<!-- src/routes/framework/docs/implementation/technology/+page.svelte -->
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
@@ -9,21 +9,152 @@
      
   export let data;
 
+  // Keep track of which section is active (for sub-navigation)
+  let activeSection = 'index';
+
+  // Function to set active section
+  function setActiveSection(section) {
+    activeSection = section;
+  }
+
+  // Check if we're in print mode
+  const isPrintMode = data.isPrintMode;
+
+  // If in print mode, we'll show all sections
+  // This is a special state just for PDF generation
+  $: sectionsToShow = isPrintMode ? Object.keys(data.sections || {}) : [activeSection];
+
+  // Make this function available globally for the PDF generator
+  if (browser) {
+    window.showAllSectionsForPrint = () => {
+      sectionsToShow = Object.keys(data.sections || {});
+    };
+  }
+
+  // This will track the current locale for our component
+  $: currentLocale = $locale;
+
+  // Translation map for section titles
+  const sectionTitles = {
+    en: {
+      'index': 'Introduction',
+      'context': 'Context and Scope',
+      'governance-model': 'Governance Model Components',
+      'implementation': 'Implementation Roadmap',
+      'tools': 'Tools and Technologies',
+      'operational': 'Operational Guidelines',
+      'emerging': 'Emerging Technology Anticipation',
+      'evaluation': 'Evaluation and Metrics',
+      'case-studies': 'Case Studies and Examples',
+      'appendices': 'Appendices'
+    },
+    sv: {
+      'index': 'Introduktion',
+      'context': 'Sammanhang och Omfattning',
+      'governance-model': 'Styrningsmodellkomponenter',
+      'implementation': 'Implementeringsplan',
+      'tools': 'Verktyg och Teknologier',
+      'operational': 'Operativa Riktlinjer',
+      'emerging': 'Förutseende av Ny Teknik',
+      'evaluation': 'Utvärdering och Mätmetoder',
+      'case-studies': 'Fallstudier och Exempel',
+      'appendices': 'Bilagor'
+    }
+  };
+
+  // Function to get section title in current language
+  function getSectionTitle(section) {
+    return (sectionTitles[currentLocale] || sectionTitles.en)[section] || section;
+  }
+
   $: if (browser && $locale) {
     invalidate('app:locale');
   }
 </script>
 
 <div class="documentation-container">
-  <FrameworkSidebar />
+  {#if !isPrintMode}
+    <FrameworkSidebar />
+  {/if}
 
   <div class="content">
-    <svelte:component this={data.component} />
-  </div>
+    {#if data.isModular}
+      <!-- Sub-navigation for framework sections -->
+      {#if !isPrintMode} 
+        <div class="section-nav">
+          <ul>
+            {#each Object.keys(data.sections) as section}
+              <li class:active={activeSection === section}>
+                <button on:click={() => setActiveSection(section)}>
+                  {getSectionTitle(section)}
+                </button>
+              </li>
+            {/each}
+          </ul>
+        </div>
+      {/if}
 
+      <!-- Show active section, or all sections in print mode -->
+      {#each sectionsToShow as section}
+        <div class="section-content" id={section}>
+          {#if data.sections[section]}
+            <svelte:component this={data.sections[section].default} />
+          {:else}
+            <p>Section {section} not found</p>
+          {/if}
+        </div>
+      {/each}
+    {:else}
+      <!-- Legacy single file display -->
+      <svelte:component this={data.component} />
+    {/if}
+  </div>
 </div>
 
 <style>
+  .section-nav {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .section-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .section-nav li {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-nav button {
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    color: #4b5563;
+    transition: all 0.2s;
+  }
+  
+  .section-nav li.active button {
+    background-color: #2B4B8C;
+    color: white;
+    border-color: #2B4B8C;
+  }
+  
+  .section-nav button:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+  }
+  
+  .section-content {
+    padding-top: 1rem;
+  }
+  
   .documentation-container {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -79,6 +210,7 @@
     min-width: 0;
   }
   
+  /* Include all your existing styles for markdown content here... */
   /* Additional styles for markdown content */
   .content :global(h1) {
     font-size: 2rem;
@@ -176,14 +308,14 @@
     padding-left: 1rem;
   }
 
-  .content :global(ul li::before) {
-    content: "✦"; /* Cosmic star symbol for bullets */
+  /* Apply stars to all ul li EXCEPT those in section-nav */
+  .content :global(ul li:not(.section-nav li))::before {
+    content: "✦";
     position: absolute;
     left: 0;
-    color: #DAA520; /* Gold color for bullet points */
+    color: #DAA520;
     font-size: 0.9rem;
   }
-
   .content :global(ol) {
     list-style-type: decimal; /* Ensure ordered lists use numbers */
   }
@@ -209,90 +341,5 @@
     color: #6B5CA5; /* Cosmic purple for nested bullets */
   }
 
-  /* Hover effect for interactivity */
-  .content :global(li:hover) {
-    color: #2B4B8C; /* Cosmic blue on hover */
-  }
-  
-  .content :global(li) {
-    margin-bottom: 0.5rem;
-  }
-
-  /* Table styles for markdown content with cosmic theme */
-  :global(.content table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 0.375rem;
-    overflow: hidden;
-  }
-
-  :global(.content thead) {
-    background: linear-gradient(to right, #2B4B8C, #4B5CA5);
-  }
-
-  :global(.content th) {
-    padding: 0.75rem 1rem;
-    font-weight: 600;
-    text-align: left;
-    color: #ffffff;
-    border: none;
-    border-bottom: 2px solid #6B5CA5;
-  }
-
-  :global(.content td) {
-    padding: 0.75rem 1rem;
-    border: 1px solid #e5e7eb;
-    border-left: none;
-    border-right: none;
-    vertical-align: top;
-  }
-
-  :global(.content tr:nth-child(odd)) {
-    background-color: #f8f9fc;
-  }
-
-  :global(.content tr:nth-child(even)) {
-    background-color: #ffffff;
-  }
-
-  :global(.content tr:hover) {
-    background-color: #f7f1e3; /* Light gold background on hover */
-  }
-
-  :global(.content tbody tr:last-child td) {
-    border-bottom: none;
-  }
-
-  /* Table caption or footer */
-  :global(.content table caption),
-  :global(.content table tfoot) {
-    background-color: #e9f2e9; /* Light earthy green */
-    padding: 0.75rem;
-    font-size: 0.875rem;
-    color: #2D5F2D;
-    text-align: left;
-    border-top: 1px solid #2D5F2D;
-  }
-
-  /* Highlight important cells */
-  :global(.content td.highlight) {
-    color: #B8860B; /* Gold text */
-    font-weight: 600;
-  }
-
-  /* For responsive tables on small screens */
-  @media (max-width: 640px) {
-    :global(.content table) {
-      display: block;
-      overflow-x: auto;
-    }
-    
-    :global(.content th),
-    :global(.content td) {
-      white-space: nowrap;
-    }
-  }
+  /* Keep all your other styles */
 </style>
