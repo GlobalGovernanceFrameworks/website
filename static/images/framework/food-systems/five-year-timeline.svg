@@ -1,0 +1,108 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for each year -->
+    <linearGradient id="year1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d47a1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976d2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="year2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1b5e20;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2e7d32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="year3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#b71c1c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c62828;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="year4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e65100;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f57c00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="year5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6a1b9a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e24aa;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="#f5f5f5"/>
+  
+  <!-- Timeline spine -->
+  <line x1="100" y1="200" x2="1100" y2="200" stroke="#333333" stroke-width="8"/>
+  
+  <!-- Year circles and labels -->
+  <circle cx="100" cy="200" r="18" fill="#1976d2" stroke="#333333" stroke-width="3"/>
+  <circle cx="300" cy="200" r="18" fill="#2e7d32" stroke="#333333" stroke-width="3"/>
+  <circle cx="500" cy="200" r="18" fill="#c62828" stroke="#333333" stroke-width="3"/>
+  <circle cx="700" cy="200" r="18" fill="#f57c00" stroke="#333333" stroke-width="3"/>
+  <circle cx="900" cy="200" r="18" fill="#8e24aa" stroke="#333333" stroke-width="3"/>
+  <circle cx="1100" cy="200" r="25" fill="#1a237e" stroke="#333333" stroke-width="3"/>
+  
+  <!-- Year numbers -->
+  <text x="100" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">2025</text>
+  <text x="300" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">2026</text>
+  <text x="500" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">2027</text>
+  <text x="700" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">2028</text>
+  <text x="900" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">2029</text>
+  <text x="1100" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1976d2">2035</text>
+  
+  <!-- Key focus labels -->
+  <rect x="40" y="100" width="120" height="40" rx="8" fill="url(#year1)" filter="url(#dropShadow)"/>
+  <text x="100" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Foundation</text>
+  
+  <rect x="240" y="60" width="120" height="40" rx="8" fill="url(#year2)" filter="url(#dropShadow)"/>
+  <text x="300" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Policy & Scale</text>
+  
+  <rect x="440" y="100" width="120" height="40" rx="8" fill="url(#year3)" filter="url(#dropShadow)"/>
+  <text x="500" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Fund & Evaluate</text>
+  
+  <rect x="640" y="60" width="120" height="40" rx="8" fill="url(#year4)" filter="url(#dropShadow)"/>
+  <text x="700" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Subsidy Shift</text>
+  
+  <rect x="840" y="100" width="120" height="40" rx="8" fill="url(#year5)" filter="url(#dropShadow)"/>
+  <text x="900" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Full Implement</text>
+  
+  <!-- Key milestones -->
+  <circle cx="100" cy="195" r="5" fill="#ffffff"/>
+  <text x="100" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">10 pilots</text>
+  <text x="100" y="330" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">50k farmers</text>
+  
+  <circle cx="300" cy="195" r="5" fill="#ffffff"/>
+  <text x="300" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">50 pilots</text>
+  <text x="300" y="330" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">150k farmers</text>
+  
+  <circle cx="500" cy="195" r="5" fill="#ffffff"/>
+  <text x="500" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">$10B fund</text>
+  <text x="500" y="330" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">500k farmers</text>
+  
+  <circle cx="700" cy="195" r="5" fill="#ffffff"/>
+  <text x="700" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">20% subsidy</text>
+  <text x="700" y="330" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">1M farmers</text>
+  
+  <circle cx="900" cy="195" r="5" fill="#ffffff"/>
+  <text x="900" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">50 countries</text>
+  <text x="900" y="330" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333333">2M farmers</text>
+  
+  <text x="1100" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a237e">Vision 2035</text>
+  <text x="1100" y="330" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1a237e">Global Goals</text>
+  
+  <!-- Progress arrow -->
+  <path d="M1100,200 L1120,195 M1100,200 L1120,205" stroke="#1a237e" stroke-width="4" fill="none"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#1a237e">Framework Implementation Timeline 2025-2035</text>
+  
+  <!-- Progressive blocks above timeline -->
+  <rect x="100" y="140" width="200" height="8" fill="#1976d2" opacity="0.7" rx="4"/>
+  <rect x="100" y="140" width="400" height="8" fill="#2e7d32" opacity="0.7" y="145" rx="4"/>
+  <rect x="100" y="140" width="600" height="8" fill="#c62828" opacity="0.7" y="150" rx="4"/>
+  <rect x="100" y="140" width="800" height="8" fill="#f57c00" opacity="0.7" y="155" rx="4"/>
+  <rect x="100" y="140" width="1000" height="8" fill="#8e24aa" opacity="0.7" y="160" rx="4"/>
+  
+  <!-- Project scale indicators -->
+  <text x="200" y="380" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#666666">Pilot → Scale → Implement → Transform</text>
+</svg>

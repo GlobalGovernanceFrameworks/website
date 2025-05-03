@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 900"
+   version="1.1"
+   id="svg66"
+   sodipodi:docname="leverage-points-visual.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview66"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.94"
+     inkscape:cx="623.93617"
+     inkscape:cy="514.89362"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg66" />
+  <defs
+     id="defs18">
+    <!-- Gradients for leverage points -->
+    <linearGradient
+       id="subsidyGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#1565c0;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#0d47a1;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="knowledgeGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#2e7d32;stop-opacity:1"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#1b5e20;stop-opacity:1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="policyGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#c62828;stop-opacity:1"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#b71c1c;stop-opacity:1"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="governanceGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#fbc02d;stop-opacity:1"
+         id="stop7" />
+      <stop
+         offset="100%"
+         style="stop-color:#f57f17;stop-opacity:1"
+         id="stop8" />
+    </linearGradient>
+    <!-- Gradients for strategic objectives -->
+    <linearGradient
+       id="foodSecurityGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#ad1457;stop-opacity:0.9"
+         id="stop9" />
+      <stop
+         offset="100%"
+         style="stop-color:#880e4f;stop-opacity:0.9"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="sustainableGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#33691e;stop-opacity:0.9"
+         id="stop11" />
+      <stop
+         offset="100%"
+         style="stop-color:#1b5e20;stop-opacity:0.9"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       id="innovationGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#3e2723;stop-opacity:0.9"
+         id="stop13" />
+      <stop
+         offset="100%"
+         style="stop-color:#6d4c41;stop-opacity:0.9"
+         id="stop14" />
+    </linearGradient>
+    <linearGradient
+       id="tradeGrad"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#e65100;stop-opacity:0.9"
+         id="stop15" />
+      <stop
+         offset="100%"
+         style="stop-color:#ef6c00;stop-opacity:0.9"
+         id="stop16" />
+    </linearGradient>
+    <!-- Filters -->
+    <filter
+       id="dropShadow"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feDropShadow
+         dx="4"
+         dy="4"
+         stdDeviation="6"
+         flood-opacity="0.4" />
+    </filter>
+    <filter
+       id="glow"
+       x="-50%"
+       y="-50%"
+       width="200%"
+       height="200%">
+      <feGaussianBlur
+         stdDeviation="4"
+         result="glow"
+         id="feGaussianBlur16" />
+      <feMerge
+         id="feMerge17">
+        <feMergeNode
+           in="glow"
+           id="feMergeNode16" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode17" />
+      </feMerge>
+    </filter>
+    <!-- Arrow markers -->
+    <marker
+       id="arrow"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#424242"
+         id="polygon17" />
+    </marker>
+    <marker
+       id="impactArrow"
+       markerWidth="12"
+       markerHeight="8"
+       refX="11"
+       refY="4"
+       orient="auto">
+      <polygon
+         points="0 0, 12 4, 0 8"
+         fill="#1a237e"
+         id="polygon18" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1200"
+     height="900"
+     fill="#fafafa"
+     id="rect18" />
+  <!-- Title -->
+  <text
+     x="600"
+     y="50"
+     font-family="Arial, sans-serif"
+     font-size="32"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1a237e"
+     id="text18">Systemic Leverage Points Network</text>
+  <!-- Leverage Point Nodes (Sized by Financial Investment) -->
+  <!-- Subsidy Redirection (Largest node) -->
+  <circle
+     cx="300"
+     cy="350"
+     r="85"
+     fill="url(#subsidyGrad)"
+     filter="url(#dropShadow)"
+     id="circle18" />
+  <text
+     x="300"
+     y="335"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text19">Subsidy</text>
+  <text
+     x="300"
+     y="360"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text20">Redirection</text>
+  <text
+     x="300"
+     y="385"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text21">40% by 2030</text>
+  <circle
+     cx="350"
+     cy="300"
+     r="10"
+     fill="#1a237e"
+     opacity="0.9"
+     id="circle21" />
+  <text
+     x="380"
+     y="307"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#1a237e"
+     font-weight="bold"
+     id="text22">1</text>
+  <!-- Knowledge Commons -->
+  <circle
+     cx="900"
+     cy="350"
+     r="75"
+     fill="url(#knowledgeGrad)"
+     filter="url(#dropShadow)"
+     id="circle22" />
+  <text
+     x="900"
+     y="335"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text23">Knowledge</text>
+  <text
+     x="900"
+     y="360"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text24">Commons</text>
+  <text
+     x="900"
+     y="385"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text25">500 platforms</text>
+  <circle
+     cx="882"
+     cy="294"
+     r="10"
+     fill="#1a237e"
+     opacity="0.9"
+     id="circle25" />
+  <text
+     x="912"
+     y="301"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#1a237e"
+     font-weight="bold"
+     id="text26">2</text>
+  <!-- Policy Harmonization -->
+  <circle
+     cx="300"
+     cy="650"
+     r="70"
+     fill="url(#policyGrad)"
+     filter="url(#dropShadow)"
+     id="circle26" />
+  <text
+     x="300"
+     y="635"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text27">Policy</text>
+  <text
+     x="300"
+     y="660"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text28">Harmonization</text>
+  <text
+     x="300"
+     y="685"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text29">Global alignment</text>
+  <circle
+     cx="350"
+     cy="700"
+     r="10"
+     fill="#1a237e"
+     opacity="0.9"
+     id="circle29" />
+  <text
+     x="380"
+     y="707"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#1a237e"
+     font-weight="bold"
+     id="text30">3</text>
+  <!-- Community Co-Governance -->
+  <circle
+     cx="900"
+     cy="650"
+     r="65"
+     fill="url(#governanceGrad)"
+     filter="url(#dropShadow)"
+     id="circle30" />
+  <text
+     x="900"
+     y="635"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text31">Community</text>
+  <text
+     x="900"
+     y="660"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text32">Co-Governance</text>
+  <text
+     x="900"
+     y="685"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text33">50% representation</text>
+  <circle
+     cx="950"
+     cy="700"
+     r="10"
+     fill="#1a237e"
+     opacity="0.9"
+     id="circle33" />
+  <text
+     x="980"
+     y="707"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#1a237e"
+     font-weight="bold"
+     id="text34">4</text>
+  <!-- Strategic Objective Boxes -->
+  <rect
+     x="450"
+     y="120"
+     width="140"
+     height="120"
+     rx="10"
+     fill="url(#foodSecurityGrad)"
+     filter="url(#dropShadow)"
+     id="rect34" />
+  <text
+     x="520"
+     y="165"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text35">Food Security</text>
+  <text
+     x="520"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text36">50% hunger</text>
+  <text
+     x="520"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text37">reduction</text>
+  <rect
+     x="620"
+     y="120"
+     width="140"
+     height="120"
+     rx="10"
+     fill="url(#sustainableGrad)"
+     filter="url(#dropShadow)"
+     id="rect37" />
+  <text
+     x="690"
+     y="165"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text38">Sustainable</text>
+  <text
+     x="690"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text39">30% regenerative</text>
+  <text
+     x="690"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text40">farmland</text>
+  <rect
+     x="450"
+     y="720"
+     width="140"
+     height="120"
+     rx="10"
+     fill="url(#innovationGrad)"
+     filter="url(#dropShadow)"
+     id="rect40" />
+  <text
+     x="520"
+     y="765"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text41">Innovation</text>
+  <text
+     x="520"
+     y="795"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text42">100 AI projects</text>
+  <text
+     x="520"
+     y="815"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text43">1M farmers</text>
+  <rect
+     x="620"
+     y="720"
+     width="140"
+     height="120"
+     rx="10"
+     fill="url(#tradeGrad)"
+     filter="url(#dropShadow)"
+     id="rect43" />
+  <text
+     x="690"
+     y="765"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text44">Equitable</text>
+  <text
+     x="690"
+     y="795"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text45">50% fair trade</text>
+  <text
+     x="690"
+     y="815"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="white"
+     id="text46">certification</text>
+  <!-- Connection arrows between leverage points -->
+  <path
+     d="M380,350 L820,350"
+     stroke="#424242"
+     stroke-width="4"
+     marker-end="url(#arrow)"
+     id="path46" />
+  <path
+     d="M300,435 L300,565"
+     stroke="#424242"
+     stroke-width="4"
+     marker-end="url(#arrow)"
+     id="path47" />
+  <path
+     d="M900,435 L900,565"
+     stroke="#424242"
+     stroke-width="4"
+     marker-end="url(#arrow)"
+     id="path48" />
+  <path
+     d="M370,650 L820,650"
+     stroke="#424242"
+     stroke-width="4"
+     marker-end="url(#arrow)"
+     id="path49" />
+  <path
+     d="M380,350 L820,650"
+     stroke="#424242"
+     stroke-width="3"
+     stroke-dasharray="6,6"
+     opacity="0.7"
+     id="path50" />
+  <path
+     d="M370,650 L820,350"
+     stroke="#424242"
+     stroke-width="3"
+     stroke-dasharray="6,6"
+     opacity="0.7"
+     id="path51" />
+  <!-- Impact arrows to strategic objectives -->
+  <path
+     d="M350,300 L490,240"
+     stroke="#1a237e"
+     stroke-width="3"
+     marker-end="url(#impactArrow)"
+     id="path52" />
+  <path
+     d="M350,300 L660,240"
+     stroke="#1a237e"
+     stroke-width="3"
+     marker-end="url(#impactArrow)"
+     id="path53" />
+  <path
+     d="M 880.85106,293.61702 730,240"
+     stroke="#1a237e"
+     stroke-width="3"
+     marker-end="url(#impactArrow)"
+     id="path54"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 350,700 99.78723,31.70213"
+     stroke="#1a237e"
+     stroke-width="3"
+     marker-end="url(#impactArrow)"
+     id="path56"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 950,700 759.14894,755.10638"
+     stroke="#1a237e"
+     stroke-width="3"
+     marker-end="url(#impactArrow)"
+     id="path57"
+     sodipodi:nodetypes="cc" />
+  <!-- Key -->
+  <rect
+     x="44.75901"
+     y="788.07819"
+     width="362.60965"
+     height="103.24793"
+     rx="10.360274"
+     fill="#ffffff"
+     stroke="#666666"
+     opacity="0.9"
+     id="rect58"
+     style="stroke-width:1.15633" />
+  <text
+     x="225"
+     y="818"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text58">Key</text>
+  <path
+     d="M 70,838 H 90"
+     stroke="#424242"
+     stroke-width="3"
+     id="path59" />
+  <text
+     x="110"
+     y="843"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text59">Direct influence</text>
+  <path
+     d="m 220,838 h 20"
+     stroke="#424242"
+     stroke-width="3"
+     stroke-dasharray="4, 4"
+     id="path60" />
+  <text
+     x="260"
+     y="843"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text60">Synergistic effect</text>
+  <path
+     d="M 70,863 H 90"
+     stroke="#1a237e"
+     stroke-width="3"
+     marker-end="url(#impactArrow)"
+     id="path61" />
+  <text
+     x="110"
+     y="868"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text61">Impact flow</text>
+  <circle
+     cx="280"
+     cy="863"
+     r="5"
+     fill="#1a237e"
+     id="circle61" />
+  <text
+     x="300"
+     y="868"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text62">Priority sequence</text>
+  <!-- Central systemic effect -->
+  <circle
+     cx="600"
+     cy="500"
+     r="25"
+     fill="#1a237e"
+     opacity="0.2"
+     id="circle62" />
+  <text
+     x="600"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1a237e"
+     id="text63">Systemic</text>
+  <text
+     x="600"
+     y="515"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1a237e"
+     id="text64">Synergy</text>
+  <!-- Ripple effect circles -->
+  <circle
+     cx="600"
+     cy="500"
+     r="150"
+     fill="none"
+     stroke="#1a237e"
+     stroke-width="1"
+     opacity="0.3"
+     id="circle64" />
+  <circle
+     cx="600"
+     cy="500"
+     r="200"
+     fill="none"
+     stroke="#1a237e"
+     stroke-width="1"
+     opacity="0.2"
+     id="circle65" />
+  <circle
+     cx="600"
+     cy="500"
+     r="250"
+     fill="none"
+     stroke="#1a237e"
+     stroke-width="1"
+     opacity="0.1"
+     id="circle66" />
+</svg>

@@ -22,7 +22,7 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationClimateEnergy', path: '/framework/docs/implementation/energy', status: 'ready' },
           { titleKey: 'framework.docs.nav.implementationPeace', path: '/framework/docs/implementation/peace', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationHealthcare', path: '/framework/docs/implementation/healthcare', planned: true },
-          { titleKey: 'framework.docs.nav.implementationFood', path: '/framework/docs/implementation/food', comingSoon: true },
+          { titleKey: 'framework.docs.nav.implementationFood', path: '/framework/docs/implementation/food-systems', status: 'ready' },
           { titleKey: 'framework.docs.nav.implementationEconomic', path: '/framework/docs/implementation/economic', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationJustice', path: '/framework/docs/implementation/justice', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationMigration', path: '/framework/docs/implementation/migration', planned: true },

@@ -1,0 +1,91 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for each principle -->
+    <linearGradient id="sustainabilityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e7d32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#43a047;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="equityGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e88e5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="resilienceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d84315;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4511e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="transparencyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6a1b9a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e24aa;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow and glow -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Arrowhead -->
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#424242" opacity="0.7"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a237e">Core Principles Interconnection</text>
+  
+  <!-- Center circle - Transformation -->
+  <circle cx="400" cy="400" r="80" fill="#1a237e" opacity="0.1" filter="url(#glow)"/>
+  <text x="400" y="390" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a237e">Food Systems</text>
+  <text x="400" y="415" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a237e">Transformation</text>
+  
+  <!-- Principles as circles -->
+  <circle cx="400" cy="180" r="90" fill="url(#sustainabilityGrad)" filter="url(#dropShadow)"/>
+  <text x="400" y="180" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Sustainability</text>
+  <text x="400" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">30% regenerative land</text>
+  
+  <circle cx="650" cy="400" r="90" fill="url(#equityGrad)" filter="url(#dropShadow)"/>
+  <text x="650" y="400" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Equity</text>
+  <text x="650" y="425" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">50% representation</text>
+  
+  <circle cx="400" cy="620" r="90" fill="url(#resilienceGrad)" filter="url(#dropShadow)"/>
+  <text x="400" y="620" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Resilience</text>
+  <text x="400" y="645" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Crisis adaptation</text>
+  
+  <circle cx="150" cy="400" r="90" fill="url(#transparencyGrad)" filter="url(#dropShadow)"/>
+  <text x="150" y="400" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Transparency</text>
+  <text x="150" y="425" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">25% blockchain tracking</text>
+  
+  <!-- Connecting arrows between principles -->
+  <path d="M470,241 L590,343" stroke="#424242" stroke-width="3" marker-end="url(#arrow)" opacity="0.7"/>
+  <path d="M550,463 L470,559" stroke="#424242" stroke-width="3" marker-end="url(#arrow)" opacity="0.7"/>
+  <path d="M330,559 L250,456" stroke="#424242" stroke-width="3" marker-end="url(#arrow)" opacity="0.7"/>
+  <path d="M210,343 L330,241" stroke="#424242" stroke-width="3" marker-end="url(#arrow)" opacity="0.7"/>
+  
+  <!-- Diagonal connections -->
+  <path d="M477,263 L333,537" stroke="#424242" stroke-width="2" stroke-dasharray="6,6" opacity="0.5"/>
+  <path d="M573,457 L227,343" stroke="#424242" stroke-width="2" stroke-dasharray="6,6" opacity="0.5"/>
+  
+  <!-- Labels for connections -->
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="14" fill="#424242" transform="rotate(35 600,290)">enhances</text>
+  <text x="500" y="500" font-family="Arial, sans-serif" font-size="14" fill="#424242" transform="rotate(305 500,500)">strengthens</text>
+  <text x="300" y="500" font-family="Arial, sans-serif" font-size="14" fill="#424242" transform="rotate(35 300,500)">supports</text>
+  <text x="200" y="290" font-family="Arial, sans-serif" font-size="14" fill="#424242" transform="rotate(305 200,290)">enables</text>
+  
+  <!-- Core synergies text -->
+  <text x="400" y="100" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#1a237e">Mutual Reinforcement</text>
+  <rect x="50" y="720" width="700" height="50" rx="5" fill="#e8eaf6" opacity="0.9"/>
+  <text x="400" y="745" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1a237e" font-style="italic">Each principle strengthens the others, creating a synergistic foundation for transformation</text>
+  
+  <!-- Ripple effects -->
+  <circle cx="400" cy="400" r="160" fill="none" stroke="#1a237e" stroke-width="1" opacity="0.2"/>
+  <circle cx="400" cy="400" r="200" fill="none" stroke="#1a237e" stroke-width="1" opacity="0.1"/>
+</svg>

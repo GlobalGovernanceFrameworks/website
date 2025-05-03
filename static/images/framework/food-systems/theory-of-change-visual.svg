@@ -1,0 +1,138 @@
+<svg viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d47a1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1976d2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565c0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="impactGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2e7d32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#43a047;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Arrowhead -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1a237e"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="700" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#1a237e">Food Systems & Agriculture Framework - Theory of Change</text>
+  
+  <!-- Main flow boxes -->
+  <!-- Inputs -->
+  <rect x="50" y="120" width="180" height="500" rx="15" fill="#e3f2fd" stroke="#1976d2" stroke-width="3" filter="url(#dropShadow)"/>
+  <rect x="50" y="120" width="180" height="50" rx="15" fill="url(#mainGradient)"/>
+  <text x="140" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">INPUTS</text>
+  
+  <!-- Activities -->
+  <rect x="280" y="120" width="180" height="500" rx="15" fill="#e3f2fd" stroke="#1976d2" stroke-width="3" filter="url(#dropShadow)"/>
+  <rect x="280" y="120" width="180" height="50" rx="15" fill="url(#mainGradient)"/>
+  <text x="370" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">ACTIVITIES</text>
+  
+  <!-- Outputs -->
+  <rect x="510" y="120" width="180" height="500" rx="15" fill="#e3f2fd" stroke="#1976d2" stroke-width="3" filter="url(#dropShadow)"/>
+  <rect x="510" y="120" width="180" height="50" rx="15" fill="url(#mainGradient)"/>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">OUTPUTS</text>
+  
+  <!-- Outcomes -->
+  <rect x="740" y="120" width="180" height="500" rx="15" fill="#e3f2fd" stroke="#1976d2" stroke-width="3" filter="url(#dropShadow)"/>
+  <rect x="740" y="120" width="180" height="50" rx="15" fill="url(#mainGradient)"/>
+  <text x="830" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">OUTCOMES</text>
+  
+  <!-- Impact -->
+  <rect x="970" y="120" width="380" height="500" rx="15" fill="#e8f5e9" stroke="#43a047" stroke-width="4" filter="url(#dropShadow)"/>
+  <rect x="970" y="120" width="380" height="50" rx="15" fill="url(#impactGradient)"/>
+  <text x="1160" y="150" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">IMPACT 2035</text>
+  
+  <!-- Main flow arrows -->
+  <path d="M230,368 L280,368" stroke="#1a237e" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <path d="M460,368 L510,368" stroke="#1a237e" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <path d="M690,368 L740,368" stroke="#1a237e" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <path d="M920,368 L970,368" stroke="#1a237e" stroke-width="4" marker-end="url(#arrowhead)"/>
+  
+  <!-- Feedback loops -->
+  <path d="M1000,630 C1000,680 600,680 600,630" stroke="#388e3c" stroke-width="3" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="600" y="700" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2e7d32" font-style="italic">Monitoring & Evaluation Feedback Loop</text>
+  
+  <!-- Content within boxes -->
+  <!-- Inputs content -->
+  <text x="70" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• Stakeholder</text>
+  <text x="80" y="220" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">Engagement</text>
+  <text x="70" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• $50B Fund</text>
+  <text x="70" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• Policy Reforms</text>
+  <text x="70" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• Technology:</text>
+  <text x="80" y="330" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">AI + TEK</text>
+  
+  <!-- Activities content -->
+  <text x="300" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• Training:</text>
+  <text x="310" y="220" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">5M farmers</text>
+  <text x="300" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• 50 Pilots</text>
+  <text x="300" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• Policy Advocacy</text>
+  <text x="300" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• Data Monitoring</text>
+  
+  <!-- Outputs content -->
+  <text x="530" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• 30% Regen.</text>
+  <text x="540" y="220" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">Farmland</text>
+  <text x="530" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• 20% Import</text>
+  <text x="540" y="270" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">Reduction</text>
+  <text x="530" y="300" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• 50% Fair Trade</text>
+  <text x="530" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• 500 Community</text>
+  <text x="540" y="350" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">Platforms</text>
+  
+  <!-- Outcomes content -->
+  <text x="760" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• 50% Hunger</text>
+  <text x="770" y="220" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">Reduction</text>
+  <text x="760" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• 1 GtCO2e</text>
+  <text x="770" y="270" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">Sequestration</text>
+  <text x="760" y="300" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• Equitable</text>
+  <text x="770" y="320" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">Benefits</text>
+  <text x="760" y="350" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0d47a1">• System</text>
+  <text x="770" y="370" font-family="Arial, sans-serif" font-size="14" fill="#0d47a1">Resilience</text>
+  
+  <!-- Impact content -->
+  <text x="1030" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1b5e20" text-anchor="start">Sustainable, Equitable,</text>
+  <text x="1030" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1b5e20" text-anchor="start">and Resilient Global</text>
+  <text x="1030" y="280" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1b5e20" text-anchor="start">Food Systems</text>
+  
+  <text x="1030" y="340" font-family="Arial, sans-serif" font-size="14" fill="#424242" text-anchor="start">✓ Food security for all</text>
+  <text x="1030" y="370" font-family="Arial, sans-serif" font-size="14" fill="#424242" text-anchor="start">✓ Restored ecosystems</text>
+  <text x="1030" y="400" font-family="Arial, sans-serif" font-size="14" fill="#424242" text-anchor="start">✓ Empowered communities</text>
+  <text x="1030" y="430" font-family="Arial, sans-serif" font-size="14" fill="#424242" text-anchor="start">✓ Preserved diversity</text>
+  <text x="1030" y="460" font-family="Arial, sans-serif" font-size="14" fill="#424242" text-anchor="start">✓ Climate resilience</text>
+  
+  <!-- Timeline indicator -->
+  <rect x="50" y="660" width="900" height="30" rx="5" fill="#e3f2fd" opacity="0.8"/>
+  <text x="60" y="680" font-family="Arial, sans-serif" font-size="14" fill="#1a237e">2025</text>
+  <text x="280" y="680" font-family="Arial, sans-serif" font-size="14" fill="#1a237e">2027</text>
+  <text x="600" y="680" font-family="Arial, sans-serif" font-size="14" fill="#1a237e">2030</text>
+  <text x="900" y="680" font-family="Arial, sans-serif" font-size="14" fill="#1a237e">2035</text>
+  
+  <!-- SDG alignment icons -->
+  <circle cx="60" cy="50" r="25" fill="#0073e6"/>
+  <text x="60" y="55" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">SDG 2</text>
+  
+  <circle cx="120" cy="50" r="25" fill="#0073e6"/>
+  <text x="120" y="55" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="white">SDG 13</text>
+  
+  <circle cx="180" cy="50" r="25" fill="#0073e6"/>
+  <text x="180" y="55" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="white">SDG 15</text>
+  
+  <!-- Year 2035 highlight -->
+  <rect x="1120" y="65" width="100" height="35" rx="8" fill="#1976d2" opacity="0.9"/>
+  <text x="1170" y="87" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">2035</text>
+  
+  <!-- Connection indicators -->
+  <circle cx="370" cy="620" r="5" fill="#1a237e"/>
+  <circle cx="600" cy="620" r="5" fill="#1a237e"/>
+  <circle cx="830" cy="620" r="5" fill="#1a237e"/>
+</svg>

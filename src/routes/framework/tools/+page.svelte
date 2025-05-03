@@ -23,6 +23,9 @@
       educationTitle: "Education Framework Tools",
       educationDesc: "Tools for implementing the Perfected Enhanced Educational Systems Framework, including project guides, assessment tools, and advocacy resources.",
       educationButton: "Access Education Tools",
+      foodTitle: "Food Systems & Agriculture Framework Tools",
+      foodDesc: "Resources for implementing sustainable food systems, including regenerative agriculture guides, stakeholder engagement templates, and policy harmonization tools.",
+      foodButton: "Access Food Systems Tools",
       comingSoon: "Coming Soon",
       otherFrameworks: "Other Framework Resources",
       otherFrameworksDesc: "Implementation tools for the following frameworks are currently in development and will be made available soon:",
@@ -46,6 +49,9 @@
       educationTitle: "Verktyg för utbildningsramverket",
       educationDesc: "Verktyg för att implementera det Perfekterade Förstärkta Utbildningssystemet, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
       educationButton: "Öppna utbildningsverktyg",
+      foodTitle: "Verktyg för matsystem och jordbruksramverk",
+      foodDesc: "Resurser för att implementera hållbara matsystem, inklusive guider för regenerativt jordbruk, mallar för intressentengagemang och verktyg för policyharmonisering.",
+      foodButton: "Öppna matsystemverktyg",
       comingSoon: "Kommer snart",
       otherFrameworks: "Övriga ramverksresurser",
       otherFrameworksDesc: "Implementeringsverktyg för följande ramverk är för närvarande under utveckling och kommer att göras tillgängliga inom kort:",
@@ -116,6 +122,25 @@
         </div>
       </div>
       
+      <!-- Food Systems Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #2e7d32;">🌱</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2e7d32;">{texts.foodTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.foodDesc}
+            </p>
+            <a href="{base}/framework/tools/food-systems" style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.foodButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
       <!-- Coming Soon Section -->
       <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{texts.comingSoon}</h2>
       
@@ -130,7 +155,7 @@
           <!-- Environmental Framework -->
           <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #2D5F2D;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.5rem; color: #2D5F2D;">🌱</span>
+              <span style="font-size: 1.5rem; color: #2D5F2D;">🌿</span>
               <h4 style="font-size: 1.125rem; font-weight: 600; color: #2D5F2D; margin: 0;">{texts.environmentalTitle}</h4>
             </div>
           </div>
