@@ -7,7 +7,7 @@
 
 ### Tier 2: Systems for Long-Term Thriving
 7  [Financial Systems](/framework/docs/implementation/finance) (Planned)
-3  [Educational Systems](/framework/docs/implementation/education) (Planned)
+3  [Educational Systems](/framework/docs/implementation/education) (done!)
 12 [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
 16 [Oceans & Marine Governance](/framework/docs/implementation/oceans) (Planned)
 11 [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)

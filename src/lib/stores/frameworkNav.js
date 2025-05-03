@@ -22,9 +22,9 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationClimateEnergy', path: '/framework/docs/implementation/energy', status: 'ready' },
           { titleKey: 'framework.docs.nav.implementationPeace', path: '/framework/docs/implementation/peace', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationHealthcare', path: '/framework/docs/implementation/healthcare', planned: true },
-          { titleKey: 'framework.docs.nav.implementationFood', path: '/framework/docs/implementation/food', planned: true },
+          { titleKey: 'framework.docs.nav.implementationFood', path: '/framework/docs/implementation/food', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationEconomic', path: '/framework/docs/implementation/economic', status: 'review' },
-          { titleKey: 'framework.docs.nav.implementationJustice', path: '/framework/docs/implementation/justice', planned: true },
+          { titleKey: 'framework.docs.nav.implementationJustice', path: '/framework/docs/implementation/justice', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationMigration', path: '/framework/docs/implementation/migration', planned: true },
           { titleKey: 'framework.docs.nav.implementationDisaster', path: '/framework/docs/implementation/disaster', status: 'ready' }
         ]
@@ -35,7 +35,7 @@ const initialNav = [
         subItems: [
           { titleKey: 'framework.docs.nav.implementationTechnology', path: '/framework/docs/implementation/technology', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationFinancial', path: '/framework/docs/implementation/finance', planned: true },
-          { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', comingSoon: true },
+          { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', status: 'ready' },
           { titleKey: 'framework.docs.nav.implementationUrban', path: '/framework/docs/implementation/urban', planned: true },
           { titleKey: 'framework.docs.nav.implementationEnvironment', path: '/framework/docs/implementation/environment', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationOceansMarine', path: '/framework/docs/implementation/oceans', planned: true },
@@ -46,7 +46,7 @@ const initialNav = [
         titleKey: 'framework.docs.nav.implementationTier3',
         path: '/framework/docs/implementation/tier-3',
         subItems: [
-          { titleKey: 'framework.docs.nav.implementationDigital', path: '/framework/docs/implementation/digital', planned: true },
+          { titleKey: 'framework.docs.nav.implementationDigital', path: '/framework/docs/implementation/digital', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationBiodiversity', path: '/framework/docs/implementation/biodiversity', planned: true },
           { titleKey: 'framework.docs.nav.implementationCulture', path: '/framework/docs/implementation/culture', planned: true },
           { titleKey: 'framework.docs.nav.implementationRural', path: '/framework/docs/implementation/rural', planned: true },

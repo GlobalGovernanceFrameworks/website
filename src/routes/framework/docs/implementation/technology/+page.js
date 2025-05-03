@@ -2,6 +2,7 @@
 import { locale } from '$lib/i18n';
 import { get } from 'svelte/store';
 
+export const prerender = false; // Disable prerendering for this route
 export const csr = true;
 
 export async function load({ depends, url }) {
