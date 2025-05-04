@@ -133,32 +133,20 @@
       <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
         {$t('downloads.implementationFrameworks.description')}
       </p>
-      
+
+      <!-- Add this right after the Implementation Frameworks introduction paragraph -->
+      <div style="background-color: #f0f4f8; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #2B4B8C;">
+        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #2B4B8C;">{$t('downloads.implementationFrameworks.moreTools.title')}</h3>
+        <p style="color: #4b5563; margin-bottom: 0.5rem;">
+          {$t('downloads.implementationFrameworks.moreTools.description')} 
+          <a href="{base}/framework/tools" style="color: #2B4B8C; text-decoration: underline; font-weight: 500;">
+            {$t('downloads.implementationFrameworks.moreTools.linkText')}
+          </a>
+        </p>
+      </div>
+
       <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
-        <!-- Economic Integration -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #B8860B;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.economic.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.economic.description')}</p>
-          <a href={getPdfPath('Economic-Integration')} download style="display: inline-flex; align-items: center; background-color: #B8860B; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
-        </div>
-        
-        <!-- Environmental Stewardship -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.environment.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.environment.description')}</p>
-          <a href={getPdfPath('Environmental-Stewardship')} download style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
-        </div>
-        
+
         <!-- Climate & Energy Governance -->
         <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78;">
           <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.climateEnergy.title')}</h2>
@@ -170,7 +158,43 @@
             </svg>
           </a>
         </div>
-        
+
+        <!-- Peace & Conflict Resolution -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B5CA5;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.peace.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.peace.description')}</p>
+          <a href={getPdfPath('Peace-Conflict-Resolution')} download style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Food Systems & Agriculture Card - Add this to the Implementation Frameworks section -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.foodSystems.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.foodSystems.description')}</p>
+          <a href={getPdfPath('Food-Agriculture')} download style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Economic Integration -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #B8860B;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.economic.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.economic.description')}</p>
+          <a href={getPdfPath('Economic-Integration')} download style="display: inline-flex; align-items: center; background-color: #B8860B; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+
         <!-- Technology Governance -->
         <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #4B8AC2;">
           <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.technology.title')}</h2>
@@ -182,12 +206,24 @@
             </svg>
           </a>
         </div>
-        
-        <!-- Peace & Conflict Resolution -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B5CA5;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.peace.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.peace.description')}</p>
-          <a href={getPdfPath('Peace-Conflict-Resolution')} download style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+
+        <!-- Educational Systems Card - Add this to the Implementation Frameworks section -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #3f51b5;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.education.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.education.description')}</p>
+          <a href={getPdfPath('Educational-Systems')} download style="display: inline-flex; align-items: center; background-color: #3f51b5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Environmental Stewardship -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.environment.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.environment.description')}</p>
+          <a href={getPdfPath('Environmental-Stewardship')} download style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
             {$t('downloads.downloadButton')}
             <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

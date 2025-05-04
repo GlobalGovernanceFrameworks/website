@@ -649,7 +649,7 @@
     padding: 0.75rem 1rem;
     font-weight: 600;
     text-align: left;
-    color: #ffffff;
+    color: #000000;
     border: none;
     border-bottom: 2px solid #2e7d32;
   }

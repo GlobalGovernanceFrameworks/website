@@ -4,9 +4,9 @@ This tier includes the most urgent domains of global governance—areas where fa
 
 - [Climate & Energy Governance](/framework/docs/implementation/energy) (In Review)
 - [Peace & Conflict Resolution](/framework/docs/implementation/peace) (In Review)
-- [Healthcare Governance](/framework/docs/implementation/healthcare) (Coming Soon)
-- [Food Systems & Agriculture](/framework/docs/implementation/food) (Coming Soon)
+- [Healthcare Governance](/framework/docs/implementation/healthcare) (Planned)
+- [Food Systems & Agriculture](/framework/docs/implementation/food)
 - [Economic Integration](/framework/docs/implementation/economic) (In Review)
-- [Justice Systems](/framework/docs/implementation/justice) (Planned)
+- [Justice Systems](/framework/docs/implementation/justice) (Coming Soon)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
 - [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster)

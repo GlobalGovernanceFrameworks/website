@@ -43,7 +43,7 @@ const documents = [
   { path: '/framework/docs/implementation/environment', filename: 'Environmental-Stewardship.pdf', titleKey: 'Environmental Stewardship', format: 'single' },
   { path: '/framework/docs/implementation/ethics', filename: 'Global-Ethics-Rights.pdf', titleKey: 'Global Ethics & Human Rights', format: 'single' },
   { path: '/framework/docs/implementation/finance', filename: 'Financial-Systems.pdf', titleKey: 'Financial Systems', format: 'modular' },
-  { path: '/framework/docs/implementation/food', filename: 'Food-Agriculture.pdf', titleKey: 'Food Systems & Agriculture', format: 'modular' },
+  { path: '/framework/docs/implementation/food-systems', filename: 'Food-Agriculture.pdf', titleKey: 'Food Systems & Agriculture', format: 'modular' },
   { path: '/framework/docs/implementation/healthcare', filename: 'Healthcare-Governance.pdf', titleKey: 'Healthcare Governance', format: 'modular' },
   { path: '/framework/docs/implementation/justice', filename: 'Justice-Systems.pdf', titleKey: 'Justice Systems', format: 'modular' },
   { path: '/framework/docs/implementation/labor', filename: 'Labor-Employment.pdf', titleKey: 'Labor & Employment Governance', format: 'modular' },
@@ -57,7 +57,7 @@ const documents = [
   { path: '/framework/docs/implementation/spiritual', filename: 'Spiritual-Dialogue.pdf', titleKey: 'Religious & Spiritual Dialogue', format: 'single' },
   { path: '/framework/docs/implementation/technology', filename: 'Technology-Governance.pdf', titleKey: 'Technology Governance', format: 'single' },
   { path: '/framework/docs/implementation/urban', filename: 'Urban-Community.pdf', titleKey: 'Urban & Community Development', format: 'modular' },
-  { path: '/framework/docs/implementation/youth', filename: 'Youth-Governance.pdf', titleKey: 'Youth & Intergenerational Governance', format: 'modular' }
+  { path: '/framework/docs/implementation/youth', filename: 'Youth-Governance.pdf', titleKey: 'Youth & Intergenerational Governance', format: 'modular' },
 ];
 
 // Language-specific titles

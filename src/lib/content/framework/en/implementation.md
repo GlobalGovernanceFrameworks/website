@@ -116,30 +116,30 @@ The Global Governance Framework can be applied across various domains. Each doma
 ### Tier 1: Urgent Global Stability & Justice
 - [Climate & Energy Governance](/framework/docs/implementation/energy) (In Review)
 - [Peace & Conflict Resolution](/framework/docs/implementation/peace) (In Review)
-- [Healthcare Governance](/framework/docs/implementation/healthcare) (Coming Soon)
-- [Food Systems & Agriculture](/framework/docs/implementation/food) (Coming Soon)
+- [Healthcare Governance](/framework/docs/implementation/healthcare) (Planned)
+- [Food Systems & Agriculture](/framework/docs/implementation/food)
 - [Economic Integration](/framework/docs/implementation/economic) (In Review)
-- [Justice Systems](/framework/docs/implementation/justice) (Planned)
+- [Justice Systems](/framework/docs/implementation/justice) (Coming Soon)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
 - [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster)
 
 ### Tier 2: Systems for Long-Term Thriving
 - [Technology Governance](/framework/docs/implementation/technology) (In Review)
 - [Financial Systems](/framework/docs/implementation/finance) (Planned)
-- [Educational Systems](/framework/docs/implementation/education) (Planned)
+- [Educational Systems](/framework/docs/implementation/education)
 - [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
-- [Environmental Stewardship](/framework/docs/implementation/environment)
+- [Environmental Stewardship](/framework/docs/implementation/environment) (In Review)
 - [Oceans & Marine Governance](/framework/docs/implementation/oceans) (Planned)
 - [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)
 
 ### Tier 3: Equity, Culture & Future Generations
-- [Digital Commons](/framework/docs/implementation/digital) (Planned)
+- [Digital Commons](/framework/docs/implementation/digital) (Coming Soon)
 - [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Planned)
 - [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
 - [Rural Development](/framework/docs/implementation/rural) (Planned)
-- [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual) (In Review)
+- [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual)
 - [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (Planned)
-- [Global Ethics & Human Rights](/framework/docs/implementation/ethics) (Planned)
+- [Global Ethics & Human Rights](/framework/docs/implementation/ethics)
 
 ### Tier 4: Visionary & Meta Governance
 - [Space Governance](/framework/docs/implementation/space) (Planned)

@@ -4,7 +4,7 @@ Denna nivå samlar grundläggande system som möjliggör hållbart mänskligt v�
 
 - [Teknikstyrning](/framework/docs/implementation/technology) (Under granskning)
 - [Finansiella system](/framework/docs/implementation/financial) (Planerad)
-- [Utbildningssystem](/framework/docs/implementation/education) (Planerad)
+- [Utbildningssystem](/framework/docs/implementation/education)
 - [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)
 - [Miljöhushållning](/framework/docs/implementation/environment) (Under granskning)
 - [Havsförvaltning & marina ekosystem](/framework/docs/implementation/oceans) (Planerad)

@@ -39,6 +39,11 @@
   "implementationFrameworks": {
     "title": "Domänspecifika implementeringsramverk",
     "description": "Detaljerade ramverk för implementering av styrningsprinciper inom specifika domäner, som ger konkret vägledning för olika sektorer och utmaningar.",
+    "moreTools": {
+      "title": "Fler domänspecifika implementeringsramverk",
+      "description": "Ytterligare nedladdningsbara material, interaktiva verktyg och detaljerade implementeringsguider finns på vår Verktyg-sida:",
+      "linkText": "Utforska ramverksverktyg"
+    },
     "economic": {
       "title": "Ekonomisk integration",
       "description": "Ett ramverk för att skapa rättvisa och hållbara ekonomiska system som balanserar lokal autonomi med globalt samarbete, inklusive nästlade ekonomiska system och implementering av resursrättvisa."
@@ -70,6 +75,14 @@
     "methods-tools": {
        "title": "Implementeringsmetoder och verktyg",
        "description": "En modulär och kulturöverskridande verktygslåda för styrning, med deltagande metoder, etiska skyddsmekanismer, digital infrastruktur och AI-stödda verktyg för praktisk tillämpning. Utformad för samhällen, institutioner och globala aktörer – stöder transparent, inkluderande och reflexiv styrning inom alla domäner."
+    },
+    "education": {
+      "title": "Utbildningssystem",
+      "description": "Ramverk för att integrera globala perspektiv i utbildningssystem, främja kritiskt tänkande och utveckla läroplaner som främjar globalt medborgarskap och interkulturell kompetens."
+    },
+    "foodSystems": {
+      "title": "Livsmedelssystem och jordbruk",
+      "description": "Riktlinjer för hållbara, rättvisa och motståndskraftiga livsmedelssystem som säkerställer livsmedelstrygghet, landsbygdsutveckling och ekologisk hälsa från lokal till global nivå."
     }
   },
   "downloadButton": "Ladda ner PDF",
