@@ -51,11 +51,14 @@
    - Phase 3 (2040-2050)
 
 9. **Metrics for Success**
-   - Climate Targets
-   - Energy Transformation
-   - Equity Achievements
-   - Adaptation Progress
-   - Biodiversity Goals
+   - Climate Metrics
+   - Energy Transition Metrics
+   - Equity Metrics
+   - Adaptation Metrics
+   - Biodiversity Metrics
+   - Integrated Reporting Framework
+   - Subnational and Non-State Actor Contributions
+   - Periodic Review and Enhancement
 
 10. **Challenges & Solutions**
     - Political Challenges

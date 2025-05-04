@@ -16,7 +16,8 @@ const __dirname = path.dirname(__filename);
 const languages = ['en', 'sv'];
 const outputDirs = {
   'education': path.join(__dirname, '..', 'static', 'framework', 'tools', 'education'),
-  'food-systems': path.join(__dirname, '..', 'static', 'framework', 'tools', 'food-systems')
+  'food-systems': path.join(__dirname, '..', 'static', 'framework', 'tools', 'food-systems'),
+  'energy': path.join(__dirname, '..', 'static', 'framework', 'tools', 'energy'),
 };
 
 // Define tools to process
@@ -420,6 +421,358 @@ const tools = [
       en: 'Food Systems Lite Guide - Page ',
       sv: 'Matsystem: Enkel Guide - Sida '
     }
+  },
+  {
+    name: 'climate-energy-action-guide',
+    category: 'energy',
+    fileNames: {
+      en: 'climate-energy-action-guide-en',
+      sv: 'climate-energy-action-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy')
+    },
+    pageFooter: {
+      en: 'Climate Action Guide - Page ',
+      sv: 'Klimataktionsguide - Sida '
+    }
+  },
+  {
+    name: 'climate-energy-stakeholder-guide',
+    category: 'energy',
+    fileNames: {
+      en: 'climate-energy-stakeholder-guide-en',
+      sv: 'climate-energy-stakeholder-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy')
+    },
+    pageFooter: {
+      en: 'Stakeholder Implementation Guide for the Climate & Energy Governance Framework - Page ',
+      sv: 'Implementeringsguide för intressenter inom ramen för klimat- och energistyrning - Sida '
+    }
+  },
+  {
+    name: 'climate-energy-technical-guide',
+    category: 'energy',
+    fileNames: {
+      en: 'climate-energy-technical-guide-en',
+      sv: 'climate-energy-technical-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Technical Guide for Policymakers and Officials: Climate & Energy Governance Framework - Page ',
+      sv: 'Teknisk guide för beslutsfattare och tjänstemän: Ramverk för klimat- och energistyrning - Sida '
+    }
+  },
+  {
+    name: 'adaptation-planning-framework',
+    category: 'energy',
+    fileNames: {
+      en: 'adaptation-planning-framework-en',
+      sv: 'adaptation-planning-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Adaptation Planning Framework - Page ',
+      sv: 'Ramverk för anpassningsplanering - Sida '
+    }
+  },
+  {
+    name: 'carbon-pricing-guide',
+    category: 'energy',
+    fileNames: {
+      en: 'carbon-pricing-guide-en',
+      sv: 'carbon-pricing-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Carbon Pricing Implementation Guide - Page ',
+      sv: 'Implementeringsguide för koldioxidprissättning - Sida '
+    }
+  },
+  {
+    name: 'energy-transition-roadmap',
+    category: 'energy',
+    fileNames: {
+      en: 'energy-transition-roadmap-en',
+      sv: 'energy-transition-roadmap-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Energy Transition Roadmap Template - Page ',
+      sv: 'Mall för färdplan för energiomställning - Sida '
+    }
+  },
+  {
+    name: 'finance-access-navigator',
+    category: 'energy',
+    fileNames: {
+      en: 'finance-access-navigator-en',
+      sv: 'finance-access-navigator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Climate Finance Access Navigator - Page ',
+      sv: 'Klimatfinansieringsåtkomstnavigator - Sida '
+    }
+  },
+  {
+    name: 'governance-communication-toolkit',
+    category: 'energy',
+    fileNames: {
+      en: 'governance-communication-toolkit-en',
+      sv: 'governance-communication-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Governance Communication Toolkit - Page ',
+      sv: 'Verktygslåda för styrningskommunikation - Sida '
+    }
+  },
+  {
+    name: 'governance-coordination-guide',
+    category: 'energy',
+    fileNames: {
+      en: 'governance-coordination-guide-en',
+      sv: 'governance-coordination-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Multi-level Governance Coordination Guide - Page ',
+      sv: 'Guide för samordning av flernivåstyrning - Sida '
+    }
+  },
+  {
+    name: 'governance-readiness-assessment',
+    category: 'energy',
+    fileNames: {
+      en: 'governance-readiness-assessment-en',
+      sv: 'governance-readiness-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Governance Readiness Assessment Tool - Page ',
+      sv: 'Verktyg för bedömning av styrningsberedskap - Sida '
+    }
+  },
+  {
+    name: 'innovation-acceleration-kit',
+    category: 'energy',
+    fileNames: {
+      en: 'innovation-acceleration-kit-en',
+      sv: 'innovation-acceleration-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Climate Innovation Acceleration Kit - Page ',
+      sv: 'Accelerationspaket för klimatinnovation - Sida '
+    }
+  },
+  {
+    name: 'institutional-reform-guide',
+    category: 'energy',
+    fileNames: {
+      en: 'institutional-reform-guide-en',
+      sv: 'institutional-reform-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Climate Institutional Reform Guide - Page ',
+      sv: 'Guide till klimatinstitutionell reform - Sida '
+    }
+  },
+  {
+    name: 'just-transition-planning-template',
+    category: 'energy',
+    fileNames: {
+      en: 'just-transition-planning-template-en',
+      sv: 'just-transition-planning-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Just Transition Planning Template - Page ',
+      sv: 'Mall för planering av en rättvis övergång - Sida '
+    }
+  },
+  {
+    name: 'nature-based-solutions-tool',
+    category: 'energy',
+    fileNames: {
+      en: 'nature-based-solutions-tool-en',
+      sv: 'nature-based-solutions-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Nature-based Solutions Assessment Tool - Page ',
+      sv: 'Utvärderingsverktyg för naturbaserade lösningar - Sida '
+    }
+  },
+  {
+    name: 'policy-brief-templates',
+    category: 'energy',
+    fileNames: {
+      en: 'policy-brief-templates-en',
+      sv: 'policy-brief-templates-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Climate Policy Brief Templates - Page ',
+      sv: 'Mallar för klimatpolicyöversikter - Sida '
+    }
+  },
+  {
+    name: 'policy-integration-matrix',
+    category: 'energy',
+    fileNames: {
+      en: 'policy-integration-matrix-en',
+      sv: 'policy-integration-matrix-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Climate-Energy Policy Integration Matrix - Page ',
+      sv: 'Integrationsmatris för klimat- och energipolitik - Sida '
+    }
+  },
+  {
+    name: 'stakeholder-engagement-protocol',
+    category: 'energy',
+    fileNames: {
+      en: 'stakeholder-engagement-protocol-en',
+      sv: 'stakeholder-engagement-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+    },
+    pageFooter: {
+      en: 'Stakeholder Engagement Protocol - Page ',
+      sv: 'Protokoll för intressentengagemang - Sida '
+    }
+  },
+  {
+    name: 'background-context-document',
+    category: 'energy',
+    fileNames: {
+      en: 'background-context-document-en',
+      sv: 'background-context-document-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Background/Context Document: Climate & Energy Governance Implementation Framework - Page ',
+      sv: 'Bakgrunds-/kontextdokument: Ramverk för implementering av klimat- och energistyrning - Sida '
+    }
+  },
+  {
+    name: 'case-studies-or-examples',
+    category: 'energy',
+    fileNames: {
+      en: 'case-studies-or-examples-en',
+      sv: 'case-studies-or-examples-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Case Studies or Examples: Climate & Energy Governance Implementation Framework - Page ',
+      sv: 'Fallstudier eller exempel: Ramverk för implementering av klimat- och energistyrning - Sida '
+    }
+  },
+  {
+    name: 'evaluation-or-monitoring-framework',
+    category: 'energy',
+    fileNames: {
+      en: 'evaluation-or-monitoring-framework-en',
+      sv: 'evaluation-or-monitoring-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Evaluation or Monitoring Framework - Page ',
+      sv: 'Utvärderings- eller övervakningsramverk - Sida '
+    }
+  },
+  {
+    name: 'getting-started-guide',
+    category: 'energy',
+    fileNames: {
+      en: 'getting-started-guide-en',
+      sv: 'getting-started-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Climate Governance Seed Kit Getting Started Guide - Page ',
+      sv: 'Guide för att komma igång med klimatstyrningsfröpaket - Sida '
+    }
+  },
+  {
+    name: 'regional-hub-connection-guide',
+    category: 'energy',
+    fileNames: {
+      en: 'regional-hub-connection-guide-en',
+      sv: 'regional-hub-connection-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Regional Hub Connection Guide - Page ',
+      sv: 'Guide för regionala knutpunkter - Sida '
+    }
   }
 ];
 
@@ -698,6 +1051,10 @@ async function generatePDFs() {
           await page.close();
           
           console.log(`✅ PDF generated successfully: ${outputFile}`);
+
+          // Delete the temporary HTML file
+          fs.unlinkSync(tempHtmlFile);
+          console.log(`🗑️ Deleted temporary HTML file: ${tempHtmlFile}`);
           
           // Also copy the markdown file to the output directory
           const markdownOutputFile = path.join(categoryDir, `${fileName}.md`);

@@ -398,6 +398,9 @@
               <a href="{base}/framework/docs/implementation" class={isActive('/framework/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkImplementation')}
               </a>
+              <a href="{base}/framework/hubs" class={isActive('/framework/hubs') ? 'active' : ''} data-sveltekit-preload-data="hover">
+                {$t('common.header.frameworkHubs')}
+              </a>
               <a href="{base}/framework/tools" class={isActive('/framework/tools') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkTools')}
               </a>

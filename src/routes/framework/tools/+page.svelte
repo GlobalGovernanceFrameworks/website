@@ -20,6 +20,8 @@
       subtitle: "Implementation resources for Global Governance Frameworks",
       intro: "Access tools, templates, and resources to help implement various governance frameworks. Each framework has its own set of specialized tools tailored to its unique focus and requirements.",
       availableResources: "Currently Available Resources",
+      climateDesc: "Tools for implementing the Climate & Energy Governance Framework, including assessment tools, transition planning templates, and advocacy resources for climate policy.",
+      climateButton: "Access Climate & Energy Tools",
       educationTitle: "Education Framework Tools",
       educationDesc: "Tools for implementing the Perfected Enhanced Educational Systems Framework, including project guides, assessment tools, and advocacy resources.",
       educationButton: "Access Education Tools",
@@ -30,7 +32,6 @@
       otherFrameworks: "Other Framework Resources",
       otherFrameworksDesc: "Implementation tools for the following frameworks are currently in development and will be made available soon:",
       environmentalTitle: "Environmental Stewardship Framework",
-      climateTitle: "Climate & Energy Governance Framework",
       technologyTitle: "Technology Governance Framework",
       peaceTitle: "Peace & Conflict Resolution Framework",
       economicTitle: "Economic Integration Framework",
@@ -46,6 +47,8 @@
       subtitle: "Implementeringsresurser för globala styrningsramverk",
       intro: "Få tillgång till verktyg, mallar och resurser för att implementera olika styrningsramverk. Varje ramverk har sin egen uppsättning specialiserade verktyg anpassade efter dess unika fokus och krav.",
       availableResources: "Tillgängliga resurser",
+      climateDesc: "Verktyg för att implementera ramverket för klimat- och energistyrning, inklusive bedömningsverktyg, mallar för omställningsplanering och opinionsbildningsresurser för klimatpolitik.",
+      climateButton: "Öppna klimat- och energiverktyg",
       educationTitle: "Verktyg för utbildningsramverket",
       educationDesc: "Verktyg för att implementera det Perfekterade Förstärkta Utbildningssystemet, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
       educationButton: "Öppna utbildningsverktyg",
@@ -56,7 +59,6 @@
       otherFrameworks: "Övriga ramverksresurser",
       otherFrameworksDesc: "Implementeringsverktyg för följande ramverk är för närvarande under utveckling och kommer att göras tillgängliga inom kort:",
       environmentalTitle: "Miljöförvaltningsramverk",
-      climateTitle: "Styrningsramverk för klimat och energi",
       technologyTitle: "Styrningsramverk för teknik",
       peaceTitle: "Ramverk för fred och konfliktlösning",
       economicTitle: "Ramverk för ekonomisk integration",
@@ -102,6 +104,25 @@
 
       <!-- Available Resources Section -->
       <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{texts.availableResources}</h2>
+
+      <!-- Climate & Energy Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #2C8A78;">⚡</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.climateTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.climateDesc}
+            </p>
+            <a href="{base}/framework/tools/energy" style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.climateButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
       
       <!-- Education Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D; margin-bottom: 2rem;">
@@ -157,14 +178,6 @@
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
               <span style="font-size: 1.5rem; color: #2D5F2D;">🌿</span>
               <h4 style="font-size: 1.125rem; font-weight: 600; color: #2D5F2D; margin: 0;">{texts.environmentalTitle}</h4>
-            </div>
-          </div>
-          
-          <!-- Climate & Energy Framework -->
-          <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #2C8A78;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.5rem; color: #2C8A78;">⚡</span>
-              <h4 style="font-size: 1.125rem; font-weight: 600; color: #2C8A78; margin: 0;">{texts.climateTitle}</h4>
             </div>
           </div>
           

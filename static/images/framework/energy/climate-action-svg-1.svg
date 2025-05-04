@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f0f8ff" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" font-weight="bold" fill="#1a5276">Our Planet, Our Future</text>
+  
+  <!-- Globe -->
+  <circle cx="400" cy="280" r="160" fill="#5499c7" stroke="#2874a6" stroke-width="6"/>
+  
+  <!-- Continents -->
+  <path d="M320,170 Q370,150 410,160 Q440,170 460,200 Q490,220 490,260 Q480,290 450,310 Q420,340 400,350 Q370,370 340,350 Q320,330 300,310 Q270,290 280,260 Q290,220 320,170" fill="#27ae60" stroke="#196f3d" stroke-width="2"/>
+  <path d="M330,390 Q360,380 380,390 Q410,400 410,420 Q400,440 380,450 Q350,460 330,440 Q320,420 330,390" fill="#27ae60" stroke="#196f3d" stroke-width="2"/>
+  <path d="M490,190 Q520,180 530,190 Q550,210 530,230 Q510,240 490,230 Q480,210 490,190" fill="#27ae60" stroke="#196f3d" stroke-width="2"/>
+  
+  <!-- People around the globe - diverse representation -->
+  
+  <!-- Person 1 - African heritage -->
+  <circle cx="200" cy="300" r="40" fill="#c39bd3"/>
+  <circle cx="200" cy="260" r="25" fill="#7d3c98"/>
+  <path d="M180,260 Q200,270 220,260" stroke="white" stroke-width="2" fill="none"/>
+  <circle cx="190" cy="255" r="3" fill="white"/>
+  <circle cx="210" cy="255" r="3" fill="white"/>
+  <path d="M200,300 Q160,380 180,420" stroke="#7d3c98" stroke-width="10" fill="none"/>
+  <path d="M200,300 Q240,380 220,420" stroke="#7d3c98" stroke-width="10" fill="none"/>
+  <path d="M200,340 Q170,360 150,350" stroke="#7d3c98" stroke-width="10" fill="none"/>
+  <path d="M200,340 Q230,360 250,350" stroke="#7d3c98" stroke-width="10" fill="none"/>
+  <text x="200" y="470" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Amara</text>
+  
+  <!-- Person 2 - East Asian heritage -->
+  <circle cx="600" cy="300" r="40" fill="#f5cba7"/>
+  <circle cx="600" cy="260" r="25" fill="#d35400"/>
+  <path d="M580,260 Q600,270 620,260" stroke="white" stroke-width="2" fill="none"/>
+  <circle cx="590" cy="255" r="3" fill="white"/>
+  <circle cx="610" cy="255" r="3" fill="white"/>
+  <path d="M600,300 Q560,380 580,420" stroke="#d35400" stroke-width="10" fill="none"/>
+  <path d="M600,300 Q640,380 620,420" stroke="#d35400" stroke-width="10" fill="none"/>
+  <path d="M600,340 Q570,360 550,350" stroke="#d35400" stroke-width="10" fill="none"/>
+  <path d="M600,340 Q630,360 650,350" stroke="#d35400" stroke-width="10" fill="none"/>
+  <text x="600" y="470" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Min-Jun</text>
+  
+  <!-- Person 3 - Indigenous representation -->
+  <circle cx="400" cy="500" r="40" fill="#f9e79f"/>
+  <circle cx="400" cy="460" r="25" fill="#b7950b"/>
+  <path d="M380,460 Q400,470 420,460" stroke="white" stroke-width="2" fill="none"/>
+  <circle cx="390" cy="455" r="3" fill="white"/>
+  <circle cx="410" cy="455" r="3" fill="white"/>
+  <path d="M400,500 Q360,580 380,620" stroke="#b7950b" stroke-width="10" fill="none"/>
+  <path d="M400,500 Q440,580 420,620" stroke="#b7950b" stroke-width="10" fill="none"/>
+  <path d="M400,540 Q370,560 350,550" stroke="#b7950b" stroke-width="10" fill="none"/>
+  <path d="M400,540 Q430,560 450,550" stroke="#b7950b" stroke-width="10" fill="none"/>
+  <text x="400" y="650" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Kaya</text>
+  
+  <!-- Person 4 - South Asian representation -->
+  <circle cx="400" cy="100" r="40" fill="#aed6f1"/>
+  <circle cx="400" cy="60" r="25" fill="#2e86c1"/>
+  <path d="M380,60 Q400,70 420,60" stroke="white" stroke-width="2" fill="none"/>
+  <circle cx="390" cy="55" r="3" fill="white"/>
+  <circle cx="410" cy="55" r="3" fill="white"/>
+  <path d="M400,100 Q360,180 380,220" stroke="#2e86c1" stroke-width="10" fill="none"/>
+  <path d="M400,100 Q440,180 420,220" stroke="#2e86c1" stroke-width="10" fill="none"/>
+  <path d="M400,140 Q370,160 350,150" stroke="#2e86c1" stroke-width="10" fill="none"/>
+  <path d="M400,140 Q430,160 450,150" stroke="#2e86c1" stroke-width="10" fill="none"/>
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">Priya</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="150" r="15" fill="#f4d03f" stroke="#d4ac0d" stroke-width="2"/> <!-- Sun -->
+  <path d="M150,130 L150,110 M130,150 L110,150 M170,150 L190,150 M135,135 L120,120 M165,135 L180,120 M135,165 L120,180 M165,165 L180,180" stroke="#f4d03f" stroke-width="3"/> <!-- Sun rays -->
+  
+  <path d="M650,130 C670,120 690,140 680,160 C700,170 680,200 660,190 C650,210 620,200 630,180 C610,170 630,140 650,130" fill="white" stroke="#85c1e9" stroke-width="2"/> <!-- Cloud -->
+  
+  <path d="M100,450 L150,450 L125,400 Z" fill="#196f3d"/> <!-- Tree -->
+  <rect x="120" y="450" width="10" height="20" fill="#7d3c98"/> <!-- Tree trunk -->
+  
+  <path d="M700,450 L750,450 L725,400 Z" fill="#196f3d"/> <!-- Tree -->
+  <rect x="720" y="450" width="10" height="20" fill="#7d3c98"/> <!-- Tree trunk -->
+  
+  <!-- Message -->
+  <text x="400" y="530" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#1a5276" font-style="italic">"We are not too young to lead. We are just in time."</text>
+</svg>
