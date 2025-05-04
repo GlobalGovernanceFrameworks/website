@@ -192,7 +192,7 @@
             <p style="color: #4b5563; margin-bottom: 1rem;">
               {texts.seedKitDesc}
             </p>
-            <a href={getFilePath('seed-kit.zip')} download style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`seed-kit-${currentLocale}.zip`)} download style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.seedKitButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -214,13 +214,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2e7d32;">{texts.quickGuideTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.quickGuideDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('quick-guide.pdf')} download style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`quick-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('quick-guide.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #2e7d32; border: 1px solid #2e7d32; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`quick-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #2e7d32; border: 1px solid #2e7d32; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -234,13 +234,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #4caf50;">{texts.quickGuideMediumTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.quickGuideMediumDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('quick-guide-medium.pdf')} download style="display: inline-flex; align-items: center; background-color: #4caf50; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`quick-guide-medium-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #4caf50; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('quick-guide-medium.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #4caf50; border: 1px solid #4caf50; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`quick-guide-medium-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #4caf50; border: 1px solid #4caf50; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -254,13 +254,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #f9a825;">{texts.quickGuideYouthTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.quickGuideYouthDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('quick-guide-medium-youth.pdf')} download style="display: inline-flex; align-items: center; background-color: #f9a825; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`quick-guide-medium-youth-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #f9a825; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('quick-guide-medium-youth.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #f9a825; border: 1px solid #f9a825; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`quick-guide-medium-youth-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #f9a825; border: 1px solid #f9a825; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -282,13 +282,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2e7d32;">{texts.readinessTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.readinessDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('pilot-readiness-self-assessment-tool.pdf')} download style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`pilot-readiness-self-assessment-tool-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('pilot-readiness-self-assessment-tool.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #2e7d32; border: 1px solid #2e7d32; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`pilot-readiness-self-assessment-tool-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #2e7d32; border: 1px solid #2e7d32; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -302,13 +302,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #00796b;">{texts.stakeholderTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.stakeholderDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('stakeholder-engagement-charter.pdf')} download style="display: inline-flex; align-items: center; background-color: #00796b; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`stakeholder-engagement-charter-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #00796b; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('stakeholder-engagement-charter.md')} download style="display: inline-flex; align-items: center; background-color: white; ; color: #00796b; border: 1px solid #00796b; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`stakeholder-engagement-charter-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; ; color: #00796b; border: 1px solid #00796b; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -322,13 +322,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #33691e;">{texts.regenerativeTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.regenerativeDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('regenerative-farming-guide.pdf')} download style="display: inline-flex; align-items: center; background-color: #33691e; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`regenerative-farming-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #33691e; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('regenerative-farming-guide.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #33691e; border: 1px solid #33691e; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`regenerative-farming-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #33691e; border: 1px solid #33691e; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -342,13 +342,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #8d6e63;">{texts.tekTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.tekDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('tek-integration-template.pdf')} download style="display: inline-flex; align-items: center; background-color: #8d6e63; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`tek-integration-template-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #8d6e63; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('tek-integration-template.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #8d6e63; border: 1px solid #8d6e63; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`tek-integration-template-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #8d6e63; border: 1px solid #8d6e63; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -362,13 +362,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #4caf50;">{texts.mneTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.mneDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('monitoring-evaluation-rubric.pdf')} download style="display: inline-flex; align-items: center; background-color: #4caf50; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`monitoring-evaluation-rubric-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #4caf50; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('monitoring-evaluation-rubric.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #4caf50; border: 1px solid #4caf50; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`monitoring-evaluation-rubric-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #4caf50; border: 1px solid #4caf50; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -390,13 +390,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #f57c00;">{texts.advocacyPlaybookTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.advocacyPlaybookDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('advocacy-playbook.pdf')} download style="display: inline-flex; align-items: center; background-color: #f57c00; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`advocacy-playbook-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #f57c00; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('advocacy-playbook.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #f57c00; border: 1px solid #f57c00; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`advocacy-playbook-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #f57c00; border: 1px solid #f57c00; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -410,13 +410,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #5c6bc0;">{texts.policyTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.policyDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('policy-harmonization-toolkit.pdf')} download style="display: inline-flex; align-items: center; background-color: #5c6bc0; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`policy-harmonization-toolkit-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #5c6bc0; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('policy-harmonization-toolkit.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #5c6bc0; border: 1px solid #5c6bc0; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`policy-harmonization-toolkit-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #5c6bc0; border: 1px solid #5c6bc0; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -430,24 +430,24 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #43a047;">{texts.costBenefitTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.costBenefitDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('cost-benefit-analysis-model.pdf')} download style="display: inline-flex; align-items: center; background-color: #43a047; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`cost-benefit-analysis-model-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #43a047; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('cost-benefit-analysis-model.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #43a047; border: 1px solid #43a047; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`cost-benefit-analysis-model-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #43a047; border: 1px solid #43a047; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('cost-benefit-analysis-model.xlsx')} download style="display: inline-flex; align-items: center; background-color: white; color: #43a047; border: 1px solid #43a047; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <!--<a href={getFilePath(`cost-benefit-analysis-model.xlsx')} download style="display: inline-flex; align-items: center; background-color: white; color: #43a047; border: 1px solid #43a047; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadExcel}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-            </a>
+            </a>-->
           </div>
         </div>
         
@@ -456,13 +456,13 @@
           <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #689f38;">{texts.gettingStartedTitle}</h3>
           <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.gettingStartedDesc}</p>
           <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath('seed-kit-getting-started-guide.pdf')} download style="display: inline-flex; align-items: center; background-color: #689f38; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`seed-kit-getting-started-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #689f38; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadPDF}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </a>
-            <a href={getFilePath('seed-kit-getting-started-guide.md')} download style="display: inline-flex; align-items: center; background-color: white; color: #689f38; border: 1px solid #689f38; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href={getFilePath(`seed-kit-getting-started-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #689f38; border: 1px solid #689f38; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.downloadMarkdown}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
