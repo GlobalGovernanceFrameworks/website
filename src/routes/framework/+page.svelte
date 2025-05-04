@@ -19,41 +19,125 @@
   </div>
 </section>
 
-<!-- Documentation Quick Access Section -->
+<!-- Enhanced Documentation Quick Access Section -->
 <section style="padding: 2rem 0; background-color: #e9f2e9; border-bottom: 1px solid #2D5F2D;">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
     <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-      <div style="max-width: 600px; margin-bottom: 1.5rem;">
+      <div style="max-width: 700px; margin-bottom: 1.5rem;">
         <h2 style="font-size: 1.5rem; font-weight: 700; color: #2B4B8C; margin-bottom: 0.75rem;">
           {$t('framework.quickAccess.title')}
         </h2>
         <p style="color: #4b5563; margin-bottom: 1.5rem;">
           {$t('framework.quickAccess.description')}
         </p>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-          <a href="{base}/framework/docs" style="min-width: 180px; background-color: #DAA520; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: background-color 0.2s;" on:mouseover="{e => e.target.style.backgroundColor = '#B8860B'}" on:mouseout="{e => e.target.style.backgroundColor = '#DAA520'}">
+        <div class="quick-access-buttons">
+          <a class="button-gold" href="{base}/framework/docs">
             {$t('framework.quickAccess.viewDocs')}
           </a>
-          <a href="{base}/framework/docs/principles" style="min-width: 180px; background-color: white; border: 1px solid #2D5F2D; color: #2D5F2D; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: color 0.2s, border-color 0.2s;" on:mouseover="{e => { e.target.style.color = '#DAA520'; e.target.style.borderColor = '#DAA520'; }}" on:mouseout="{e => { e.target.style.color = '#2D5F2D'; e.target.style.borderColor = '#2D5F2D'; }}">
+          <a class="button-outline" href="{base}/framework/docs/principles">
             {$t('framework.quickAccess.corePrinciples')}
           </a>
         </div>
       </div>
       
-      <!-- Documentation Links -->
-      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; width: 100%; max-width: 600px; margin-top: 1rem;">
-        <a href="{base}/framework/docs/implementation" style="background-color: white; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #2D5F2D; text-decoration: none; color: #4b5563; font-weight: 500; text-align: center; transition: color 0.2s, border-color 0.2s;" on:mouseover="{e => { e.target.style.color = '#DAA520'; e.target.style.borderColor = '#DAA520'; }}" on:mouseout="{e => { e.target.style.color = '#4b5563'; e.target.style.borderColor = '#2D5F2D'; }}">
-          {$t('framework.quickAccess.implementation')}
-        </a>
-        <a href="{base}/framework/docs/case-studies" style="background-color: white; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #2D5F2D; text-decoration: none; color: #4b5563; font-weight: 500; text-align: center; transition: color 0.2s, border-color 0.2s;" on:mouseover="{e => { e.target.style.color = '#DAA520'; e.target.style.borderColor = '#DAA520'; }}" on:mouseout="{e => { e.target.style.color = '#4b5563'; e.target.style.borderColor = '#2D5F2D'; }}">
-          {$t('framework.quickAccess.caseStudies')}
-        </a>
-        <a href="{base}/framework/docs/resources" style="background-color: white; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #2D5F2D; text-decoration: none; color: #4b5563; font-weight: 500; text-align: center; transition: color 0.2s, border-color 0.2s; grid-column: span 2;" on:mouseover="{e => { e.target.style.color = '#DAA520'; e.target.style.borderColor = '#DAA520'; }}" on:mouseout="{e => { e.target.style.color = '#4b5563'; e.target.style.borderColor = '#2D5F2D'; }}">
-          {$t('framework.quickAccess.resources')}
-        </a>
-        <a href="{base}/framework/docs/glossary" style="background-color: white; padding: 0.75rem; border-radius: 0.375rem; border: 1px solid #2D5F2D; text-decoration: none; color: #4b5563; font-weight: 500; text-align: center; transition: color 0.2s, border-color 0.2s; grid-column: span 2;" on:mouseover="{e => { e.target.style.color = '#DAA520'; e.target.style.borderColor = '#DAA520'; }}" on:mouseout="{e => { e.target.style.color = '#4b5563'; e.target.style.borderColor = '#2D5F2D'; }}">
-          {$t('framework.quickAccess.glossary')}
-        </a>
+      <!-- Framework Components Grid -->
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; width: 100%; max-width: 900px; margin-top: 2rem;">
+        <!-- Documentation -->
+        <div class="hover-card">
+          <h3 style="font-size: 1.25rem; font-weight: 600; color: #2B4B8C; margin-bottom: 0.75rem;">{$t('framework.components.documentation.title')}</h3>
+          <ul>
+            <li>
+              <a class="menu-link" href="{base}/framework/docs">
+                {$t('common.header.frameworkDocs')}
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="{base}/framework/docs/principles">
+                {$t('common.header.frameworkPrinciples')}
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="{base}/framework/docs/implementation">
+                {$t('common.header.frameworkImplementation')}
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="{base}/framework/docs/case-studies">
+                {$t('common.header.frameworkCaseStudies')}
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="{base}/framework/docs/resources">
+                {$t('common.header.frameworkResources')}
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Applications -->
+        <div class="hover-card">
+          <h3 style="font-size: 1.25rem; font-weight: 600; color: #DAA520; margin-bottom: 0.75rem;">{$t('framework.components.applications.title')}</h3>
+          <ul>
+            <li>
+              <a class="menu-link" href="{base}/framework/global-citizenship">
+                {$t('common.header.frameworkGlobalCitizenship')}
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="{base}/framework/hubs">
+                {$t('common.header.frameworkHubs')}
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="{base}/framework/ai-futures">
+                {$t('common.header.frameworkAIFutures')}
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Tools & Resources -->
+        <div class="hover-card">
+          <h3 style="font-size: 1.25rem; font-weight: 600; color: #2D5F2D; margin-bottom: 0.75rem;">{$t('framework.components.tools.title')}</h3>
+          <ul>
+            <li>
+              <a class="menu-link" href="{base}/framework/tools">
+                {$t('common.header.frameworkTools')}
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="{base}/framework/docs/glossary">
+                {$t('framework.quickAccess.glossary')}
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="{base}/downloads">
+                {$t('common.header.downloads')}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Overview Card -->
+      <div style="background-color: white; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 100%; max-width: 900px; margin-top: 2rem; border-left: 4px solid #B8860B;">
+        <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.5rem; height: 1.5rem; color: #B8860B; margin-right: 0.75rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <h3 style="font-size: 1.25rem; font-weight: 600; color: #B8860B; margin: 0;">{$t('framework.overview.title')}</h3>
+        </div>
+        <p style="color: #4b5563; line-height: 1.6; margin-bottom: 1rem;">
+          {$t('framework.overview.description')}
+        </p>
+        <div style="display: flex; justify-content: flex-end;">
+          <a href="{base}/framework/docs" style="display: inline-flex; align-items: center; color: #2B4B8C; font-weight: 600; text-decoration: none; transition: color 0.2s;" on:mouseover="{e => e.target.style.color = '#DAA520'}" on:mouseout="{e => e.target.style.color = '#2B4B8C'}">
+            {$t('framework.overview.learnMore')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1rem; height: 1rem; margin-left: 0.25rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -214,3 +298,97 @@
     </div>
   </div>
 </section>
+
+<style>
+  /* --- Card Container --- */
+  .hover-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    border-top: 4px solid currentColor;
+  }
+
+  .hover-card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* --- Section Titles in Cards --- */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  /* --- Vertical List Items --- */
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* --- Menu Links Inside Cards --- */
+  .menu-link {
+    display: block;
+    color: #4b5563;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+    border-left: 3px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+
+  .menu-link:hover {
+    color: #DAA520;
+    border-color: #DAA520;
+  }
+
+  /* --- Top Buttons --- */
+  .button-gold,
+  .button-outline {
+    min-width: 180px;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .button-gold {
+    background-color: #DAA520;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+  }
+
+  .button-gold:hover {
+    background-color: #B8860B;
+  }
+
+  .button-outline {
+    background-color: white;
+    color: #2D5F2D;
+    border: 1px solid #2D5F2D;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .button-outline:hover {
+    color: #DAA520;
+    border-color: #DAA520;
+  }
+
+  .quick-access-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+</style>
+
+

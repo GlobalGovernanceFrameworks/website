@@ -3,6 +3,22 @@
     "title": "Ramverket",
     "subtitle": "Verktyg för interoperabilitet och utveckling inom styrning"
   },
+  "components": {
+    "documentation": {
+      "title": "Dokumentation"
+    },
+    "applications": {
+      "title": "Tillämpningar"
+    },
+    "tools": {
+      "title": "Verktyg & Resurser"
+    }
+  },
+  "overview": {
+    "title": "Ramverksöversikt",
+    "description": "Det globala styrningsramverket erbjuder ett omfattande tillvägagångssätt för att hantera komplexa globala utmaningar genom driftskompatibla styrsystem. Utforska vår dokumentation för att upptäcka principer, implementeringsstrategier och praktiska tillämpningar.",
+    "learnMore": "Läs mer"
+  },
   "quickAccess": {
     "title": "Utforska ramverksdokumentationen",
     "description": "Få tillgång till detaljerad dokumentation om principer, implementeringsguider, fallstudier och resurser.",
