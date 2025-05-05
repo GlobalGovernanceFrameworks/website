@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 750"
+   version="1.1"
+   id="svg68"
+   sodipodi:docname="multi-track-engagement.svg"
+   width="900"
+   height="750"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs68" />
+  <sodipodi:namedview
+     id="namedview68"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.60428571"
+     inkscape:cx="45.508274"
+     inkscape:cy="466.66667"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg68" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="749.86841"
+     fill="#f8f9fa"
+     rx="10"
+     ry="10.712406"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.03501" />
+  <!-- Title -->
+  <text
+     x="450"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text1">Multi-Track Peace Engagement Flowchart</text>
+  <text
+     x="450"
+     y="60"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text2">Interconnected Approaches to Peacebuilding Across Different Societal Levels</text>
+  <!-- Central Hub -->
+  <circle
+     cx="450"
+     cy="342"
+     r="90"
+     fill="#daa520"
+     fill-opacity="0.2"
+     stroke="#daa520"
+     stroke-width="2"
+     id="circle2" />
+  <text
+     x="450"
+     y="316"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text3">SHARED</text>
+  <text
+     x="450"
+     y="337"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text4">PEACE</text>
+  <text
+     x="450"
+     y="358"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text5">OBJECTIVES</text>
+  <text
+     x="450"
+     y="378"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text6">• Sustainable Peace</text>
+  <text
+     x="450"
+     y="392"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text7">• Human Security</text>
+  <text
+     x="450"
+     y="406"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text8">• Inclusive Governance</text>
+  <!-- Track 1: Official Governance and Diplomacy -->
+  <rect
+     x="120.02812"
+     y="92.028122"
+     width="179.94376"
+     height="105.73573"
+     rx="9.9968758"
+     ry="10.573572"
+     fill="#2b4b8c"
+     fill-opacity="0.2"
+     stroke="#2b4b8c"
+     stroke-width="2.05624"
+     id="rect8" />
+  <text
+     x="210"
+     y="117"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text9">TRACK 1</text>
+  <text
+     x="210"
+     y="137"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text10">Official Diplomacy</text>
+  <text
+     x="210"
+     y="162"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text11">• Governments</text>
+  <text
+     x="210"
+     y="177"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text12">• UN Institutions</text>
+  <text
+     x="210"
+     y="192"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text13">• Regional Organizations</text>
+  <path
+     d="M 211.17015,197.55823 C 211.17015,247.55823 350,272 400,312"
+     stroke="#2b4b8c"
+     stroke-width="2"
+     fill="none"
+     id="path13"
+     sodipodi:nodetypes="cc" />
+  <polygon
+     points="400,315 397,325 405,325 "
+     fill="#2b4b8c"
+     id="polygon13"
+     transform="translate(0,-8)" />
+  <path
+     d="m 300,178 h 50"
+     stroke="#2b4b8c"
+     stroke-width="2"
+     fill="none"
+     id="path14" />
+  <polygon
+     points="345,145 345,155 355,150 "
+     fill="#2b4b8c"
+     id="polygon14"
+     transform="translate(0,28)" />
+  <rect
+     x="350"
+     y="163"
+     width="120"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="rect14" />
+  <text
+     x="410"
+     y="182"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text14">Peace Agreements</text>
+  <!-- Track 2: Non-governmental Professional -->
+  <rect
+     x="600.02814"
+     y="92.028122"
+     width="179.94376"
+     height="105.73573"
+     rx="9.9968758"
+     ry="10.573572"
+     fill="#6b5ca5"
+     fill-opacity="0.2"
+     stroke="#6b5ca5"
+     stroke-width="2.05624"
+     id="rect15" />
+  <text
+     x="690"
+     y="117"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text15">TRACK 2</text>
+  <text
+     x="690"
+     y="137"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text16">Non-governmental</text>
+  <text
+     x="690"
+     y="162"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text17">• Think Tanks</text>
+  <text
+     x="690"
+     y="177"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text18">• International NGOs</text>
+  <text
+     x="690"
+     y="192"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text19">• Professional Mediators</text>
+  <path
+     d="M 689.79314,197.58511 C 689.79314,247.58511 550,272 500,312"
+     stroke="#6b5ca5"
+     stroke-width="2"
+     fill="none"
+     id="path19"
+     sodipodi:nodetypes="cc" />
+  <polygon
+     points="500,315 503,325 495,325 "
+     fill="#6b5ca5"
+     id="polygon19"
+     transform="translate(0,-8)" />
+  <path
+     d="M 600,144 H 550"
+     stroke="#6b5ca5"
+     stroke-width="2"
+     fill="none"
+     id="path20" />
+  <polygon
+     points="555,145 545,150 555,155 "
+     fill="#6b5ca5"
+     id="polygon20"
+     transform="translate(0,-6)" />
+  <rect
+     x="430"
+     y="129"
+     width="120"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="rect20" />
+  <text
+     x="490"
+     y="148"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text20">Policy Recommendations</text>
+  <!-- Track 3: Business & Private Sector -->
+  <rect
+     x="120.03601"
+     y="212.03601"
+     width="179.92798"
+     height="107.37479"
+     rx="9.9959984"
+     ry="10.737478"
+     fill="#2d5f2d"
+     fill-opacity="0.2"
+     stroke="#2d5f2d"
+     stroke-width="2.07202"
+     id="rect21" />
+  <text
+     x="210"
+     y="237"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text21">TRACK 3</text>
+  <text
+     x="210"
+     y="257"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text22">Business Private Sector</text>
+  <text
+     x="210"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text23">• Corporations</text>
+  <text
+     x="210"
+     y="297"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text24">• Chambers of Commerce</text>
+  <text
+     x="210"
+     y="312"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text25">• Industry Associations</text>
+  <path
+     d="m 300,262 60,50"
+     stroke="#2d5f2d"
+     stroke-width="2"
+     fill="none"
+     id="path25" />
+  <polygon
+     points="360,315 357,325 365,325 "
+     fill="#2d5f2d"
+     id="polygon25"
+     transform="translate(0,-8)" />
+  <path
+     d="M 288.41608,212 H 350"
+     stroke="#2d5f2d"
+     stroke-width="2.21962"
+     fill="none"
+     id="path26" />
+  <polygon
+     points="355,270 345,265 345,275 "
+     fill="#2d5f2d"
+     id="polygon26"
+     transform="translate(0,-58)" />
+  <rect
+     x="350"
+     y="197"
+     width="120"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="rect26" />
+  <text
+     x="410"
+     y="216"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text26">Economic Opportunity</text>
+  <!-- Track 4: Private Citizens -->
+  <rect
+     x="600.0321"
+     y="212.03207"
+     width="179.93585"
+     height="106.55524"
+     rx="9.9964371"
+     ry="10.655524"
+     fill="#daa520"
+     fill-opacity="0.2"
+     stroke="#daa520"
+     stroke-width="2.06415"
+     id="rect27" />
+  <text
+     x="690"
+     y="237"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text27">TRACK 4</text>
+  <text
+     x="690"
+     y="257"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text28">Community Grassroots</text>
+  <text
+     x="690"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text29">• Local Peace Committees</text>
+  <text
+     x="690"
+     y="297"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text30">• Community Organizations</text>
+  <text
+     x="690"
+     y="312"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text31">• Citizen Initiatives</text>
+  <path
+     d="m 600,262 -60,50"
+     stroke="#daa520"
+     stroke-width="2"
+     fill="none"
+     id="path31" />
+  <polygon
+     points="545,325 543,315 535,325 "
+     fill="#daa520"
+     id="polygon31"
+     transform="translate(0,-8)" />
+  <path
+     d="M 600,246 H 550"
+     stroke="#daa520"
+     stroke-width="2"
+     fill="none"
+     id="path32" />
+  <polygon
+     points="555,265 545,270 555,275 "
+     fill="#daa520"
+     id="polygon32"
+     transform="translate(0,-24)" />
+  <rect
+     x="430"
+     y="231"
+     width="120"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="rect32" />
+  <text
+     x="490"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text32">Social Cohesion</text>
+  <!-- Track 5: Research & Education -->
+  <rect
+     x="120.03601"
+     y="452.03601"
+     width="179.92798"
+     height="107.37479"
+     rx="9.9959984"
+     ry="10.737478"
+     fill="#b22222"
+     fill-opacity="0.2"
+     stroke="#b22222"
+     stroke-width="2.07202"
+     id="rect33" />
+  <text
+     x="210"
+     y="477"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#b22222"
+     id="text33">TRACK 5</text>
+  <text
+     x="210"
+     y="497"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#b22222"
+     id="text34">Research Education</text>
+  <text
+     x="210"
+     y="522"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text35">• Universities</text>
+  <text
+     x="210"
+     y="537"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text36">• Research Institutes</text>
+  <text
+     x="210"
+     y="552"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text37">• Education Systems</text>
+  <path
+     d="M 300,502 360,372"
+     stroke="#b22222"
+     stroke-width="2"
+     fill="none"
+     id="path37" />
+  <polygon
+     points="360,375 365,385 355,385 "
+     fill="#b22222"
+     id="polygon37"
+     transform="translate(0,-8)" />
+  <path
+     d="m 300,536 h 50"
+     stroke="#b22222"
+     stroke-width="2"
+     fill="none"
+     id="path38" />
+  <polygon
+     points="345,515 355,510 345,505 "
+     fill="#b22222"
+     id="polygon38"
+     transform="translate(0,26)" />
+  <rect
+     x="350"
+     y="521"
+     width="120"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#b22222"
+     fill-opacity="0.1"
+     stroke="#b22222"
+     stroke-width="1"
+     id="rect38" />
+  <text
+     x="410"
+     y="540"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#b22222"
+     id="text38">Knowledge Skills</text>
+  <!-- Track 6: Activism & Advocacy -->
+  <rect
+     x="350.03601"
+     y="572.03601"
+     width="179.92798"
+     height="107.37479"
+     rx="9.9959984"
+     ry="10.737478"
+     fill="#ff6400"
+     fill-opacity="0.2"
+     stroke="#ff6400"
+     stroke-width="2.07202"
+     id="rect39" />
+  <text
+     x="440"
+     y="597"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ff6400"
+     id="text39">TRACK 6</text>
+  <text
+     x="440"
+     y="617"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ff6400"
+     id="text40">Activism Advocacy</text>
+  <text
+     x="440"
+     y="642"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text41">• Advocacy Organizations</text>
+  <text
+     x="440"
+     y="657"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text42">• Human Rights Defenders</text>
+  <text
+     x="440"
+     y="672"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text43">• Social Movements</text>
+  <path
+     d="M 440,572 V 432"
+     stroke="#ff6400"
+     stroke-width="2"
+     fill="none"
+     id="path43" />
+  <polygon
+     points="440,435 445,445 435,445 "
+     fill="#ff6400"
+     id="polygon43"
+     transform="translate(0,-8)" />
+  <path
+     d="m 530,622 h 50"
+     stroke="#ff6400"
+     stroke-width="2"
+     fill="none"
+     id="path44" />
+  <polygon
+     points="575,625 575,635 585,630 "
+     fill="#ff6400"
+     id="polygon44"
+     transform="translate(0,-8)" />
+  <rect
+     x="580"
+     y="607"
+     width="120"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#ff6400"
+     fill-opacity="0.1"
+     stroke="#ff6400"
+     stroke-width="1"
+     id="rect44" />
+  <text
+     x="640"
+     y="626"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#ff6400"
+     id="text44">Public Mobilization</text>
+  <!-- Track 7: Religious & Faith-Based -->
+  <rect
+     x="600.03204"
+     y="452.03207"
+     width="179.93585"
+     height="106.55524"
+     rx="9.9964361"
+     ry="10.655524"
+     fill="#4169e1"
+     fill-opacity="0.2"
+     stroke="#4169e1"
+     stroke-width="2.06414"
+     id="rect45" />
+  <text
+     x="690"
+     y="477"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#4169e1"
+     id="text45">TRACK 7</text>
+  <text
+     x="690"
+     y="497"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#4169e1"
+     id="text46">Religious Faith-Based</text>
+  <text
+     x="690"
+     y="522"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text47">• Religious Leaders</text>
+  <text
+     x="690"
+     y="537"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text48">• Faith Communities</text>
+  <text
+     x="690"
+     y="552"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text49">• Interfaith Networks</text>
+  <path
+     d="M 600,502 540,372"
+     stroke="#4169e1"
+     stroke-width="2"
+     fill="none"
+     id="path49" />
+  <polygon
+     points="540,385 545,375 535,375 "
+     fill="#4169e1"
+     id="polygon49"
+     transform="translate(0,-8)" />
+  <path
+     d="M 600,502 H 550"
+     stroke="#4169e1"
+     stroke-width="2"
+     fill="none"
+     id="path50" />
+  <polygon
+     points="555,515 555,505 545,510 "
+     fill="#4169e1"
+     id="polygon50"
+     transform="translate(0,-8)" />
+  <rect
+     x="430"
+     y="487"
+     width="120"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#4169e1"
+     fill-opacity="0.1"
+     stroke="#4169e1"
+     stroke-width="1"
+     id="rect50" />
+  <text
+     x="490"
+     y="506"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4169e1"
+     id="text50">Moral Leadership</text>
+  <!-- Track 8: Funding & Philanthropy -->
+  <rect
+     x="20.043842"
+     y="332.04385"
+     width="179.91231"
+     height="109.01397"
+     rx="9.9951286"
+     ry="10.901397"
+     fill="#32cd32"
+     fill-opacity="0.2"
+     stroke="#32cd32"
+     stroke-width="2.08769"
+     id="rect51" />
+  <text
+     x="110"
+     y="357"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#32cd32"
+     id="text51">TRACK 8</text>
+  <text
+     x="110"
+     y="377"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#32cd32"
+     id="text52">Funding Philanthropy</text>
+  <text
+     x="110"
+     y="402"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text53">• Donor Governments</text>
+  <text
+     x="110"
+     y="417"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text54">• Foundations</text>
+  <text
+     x="110"
+     y="432"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text55">• Individual Philanthropists</text>
+  <path
+     d="M 200,382 360,362"
+     stroke="#32cd32"
+     stroke-width="2"
+     fill="none"
+     id="path55" />
+  <polygon
+     points="355,365 355,375 365,365 "
+     fill="#32cd32"
+     id="polygon55"
+     transform="translate(0,-8)" />
+  <path
+     d="M 64,332 V 282"
+     stroke="#32cd32"
+     stroke-width="2"
+     fill="none"
+     id="path56" />
+  <polygon
+     points="110,285 105,295 115,295 "
+     fill="#32cd32"
+     id="polygon56"
+     transform="translate(-46,-8)" />
+  <rect
+     x="24"
+     y="252"
+     width="80"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#32cd32"
+     fill-opacity="0.1"
+     stroke="#32cd32"
+     stroke-width="1"
+     id="rect56" />
+  <text
+     x="64"
+     y="271"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#32cd32"
+     id="text56">Resources</text>
+  <!-- Track 9: Media & Communication -->
+  <rect
+     x="700.03601"
+     y="332.03601"
+     width="179.92798"
+     height="107.37479"
+     rx="9.9959984"
+     ry="10.737478"
+     fill="#9932cc"
+     fill-opacity="0.2"
+     stroke="#9932cc"
+     stroke-width="2.07202"
+     id="rect57" />
+  <text
+     x="790"
+     y="357"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#9932cc"
+     id="text57">TRACK 9</text>
+  <text
+     x="790"
+     y="377"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#9932cc"
+     id="text58">Media Communication</text>
+  <text
+     x="790"
+     y="402"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text59">• Journalists</text>
+  <text
+     x="790"
+     y="417"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text60">• Social Media Platforms</text>
+  <text
+     x="790"
+     y="432"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text61">• Traditional Media Outlets</text>
+  <path
+     d="M 700,382 540,362"
+     stroke="#9932cc"
+     stroke-width="2"
+     fill="none"
+     id="path61" />
+  <polygon
+     points="545,375 545,365 535,365 "
+     fill="#9932cc"
+     id="polygon61"
+     transform="translate(0,-8)" />
+  <path
+     d="M 838,332 V 282"
+     stroke="#9932cc"
+     stroke-width="2"
+     fill="none"
+     id="path62" />
+  <polygon
+     points="785,295 795,295 790,285 "
+     fill="#9932cc"
+     id="polygon62"
+     transform="translate(48,-8)" />
+  <rect
+     x="798"
+     y="252"
+     width="80"
+     height="30"
+     rx="5"
+     ry="5"
+     fill="#9932cc"
+     fill-opacity="0.1"
+     stroke="#9932cc"
+     stroke-width="1"
+     id="rect62" />
+  <text
+     x="838"
+     y="271"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#9932cc"
+     id="text62">Narratives</text>
+  <!-- Cross-Track Connections -->
+  <path
+     d="m 300,142 c 50,70 50,340 0,360"
+     stroke="#666666"
+     stroke-width="1"
+     stroke-dasharray="5, 5"
+     fill="none"
+     id="path63" />
+  <path
+     d="m 600,142 c -50,70 -50,340 0,360"
+     stroke="#666666"
+     stroke-width="1"
+     stroke-dasharray="5, 5"
+     fill="none"
+     id="path64" />
+  <path
+     d="m 300,262 c 50,50 250,50 300,0"
+     stroke="#666666"
+     stroke-width="1"
+     stroke-dasharray="5, 5"
+     fill="none"
+     id="path65" />
+  <path
+     d="m 200,382 c 100,50 400,50 500,0"
+     stroke="#666666"
+     stroke-width="1"
+     stroke-dasharray="5, 5"
+     fill="none"
+     id="path66" />
+  <!-- Legend -->
+  <rect
+     x="544.90186"
+     y="684.66907"
+     width="343.78418"
+     height="29.930746"
+     rx="5.7297363"
+     ry="4.9884582"
+     fill="#ffffff"
+     stroke="#666666"
+     stroke-width="1.06925"
+     id="rect66" />
+  <text
+     x="717.20764"
+     y="704.63446"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text66">Solid lines = direct engagement | Dashed lines = coordination</text>
+  <!-- Copyright -->
+  <text
+     x="450"
+     y="14"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text67">Based on the Diamond Model of Multi-Track Diplomacy (Institute for Multi-Track Diplomacy)</text>
+  <text
+     x="450"
+     y="737"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text68">© 2025 Global Governance Framework | www.globalgovernanceframework.org</text>
+</svg>

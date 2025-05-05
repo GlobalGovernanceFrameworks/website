@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiral Dynamics in Conflict and Peace</title>
+    <style>
+        :root {
+            --purple: #8E44AD;
+            --red: #E74C3C;
+            --blue: #3498DB;
+            --orange: #F39C12;
+            --green: #2ECC71;
+            --yellow: #F1C40F;
+            --turquoise: #1ABC9C;
+            --light-gray: #f8f9fa;
+            --dark-gray: #333;
+            --mid-gray: #666;
+            --border-radius: 10px;
+            --box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: var(--dark-gray);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: var(--mid-gray);
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .intro {
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 40px;
+        }
+        
+        .spiral-container {
+            position: relative;
+            height: 500px;
+            margin: 60px 0;
+        }
+        
+        .spiral-path {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        
+        .level {
+            position: absolute;
+            width: 220px;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            background-color: white;
+        }
+        
+        .level:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .level h3 {
+            margin-top: 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid;
+        }
+        
+        .level-purple { border-left: 5px solid var(--purple); }
+        .level-purple h3 { color: var(--purple); border-color: var(--purple); }
+        
+        .level-red { border-left: 5px solid var(--red); }
+        .level-red h3 { color: var(--red); border-color: var(--red); }
+        
+        .level-blue { border-left: 5px solid var(--blue); }
+        .level-blue h3 { color: var(--blue); border-color: var(--blue); }
+        
+        .level-orange { border-left: 5px solid var(--orange); }
+        .level-orange h3 { color: var(--orange); border-color: var(--orange); }
+        
+        .level-green { border-left: 5px solid var(--green); }
+        .level-green h3 { color: var(--green); border-color: var(--green); }
+        
+        .level-yellow { border-left: 5px solid var(--yellow); }
+        .level-yellow h3 { color: var(--yellow); border-color: var(--yellow); }
+        
+        .level-turquoise { border-left: 5px solid var(--turquoise); }
+        .level-turquoise h3 { color: var(--turquoise); border-color: var(--turquoise); }
+        
+        /* Position the levels to form a spiral */
+        .purple-position { left: 10%; top: 10%; }
+        .red-position { left: 25%; top: 30%; }
+        .blue-position { left: 40%; top: 15%; }
+        .orange-position { left: 55%; top: 35%; }
+        .green-position { left: 70%; top: 20%; }
+        .yellow-position { left: 40%; top: 60%; }
+        .turquoise-position { left: 65%; top: 70%; }
+
+        .level-content {
+            margin-top: 10px;
+        }
+        
+        .expanded-view {
+            display: none;
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .color-bar {
+            height: 20px;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+        
+        .close-btn {
+            float: right;
+            padding: 5px 10px;
+            background-color: var(--light-gray);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 12px;
+        }
+        
+        th {
+            background-color: var(--light-gray);
+        }
+        
+        .applications {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .communication-bridges {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .bridging-table td {
+            vertical-align: top;
+        }
+        
+        .evolution-pathways {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .pathway {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+        }
+        
+        .action-step {
+            border-left: 3px solid var(--blue);
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+        
+        .case-studies {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .case-study {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: var(--mid-gray);
+            font-size: 0.9rem;
+        }
+        
+        .resources {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .resource-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: var(--light-gray);
+            border-radius: 4px;
+            text-decoration: none;
+            color: var(--dark-gray);
+            transition: background-color 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            background-color: #e9ecef;
+        }
+        
+        @media (max-width: 768px) {
+            .spiral-container {
+                height: auto;
+                margin: 20px 0;
+            }
+            
+            .spiral-path {
+                position: static;
+            }
+            
+            .level {
+                position: static;
+                width: auto;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spiral Dynamics in Conflict and Peace</h1>
+            <div class="subtitle">Understanding how developmental value systems influence conflict and peacebuilding</div>
+        </header>
+        
+        <div class="intro">
+            <h2>Introduction to Spiral Dynamics</h2>
+            <p>Spiral Dynamics is a model of human development that maps the evolution of value systems and worldviews across individuals, organizations, and societies. Developed by Dr. Clare W. Graves and later expanded by Don Beck and Christopher Cowan, it provides a powerful framework for understanding conflicts and designing effective peace processes.</p>
+            <p>Each developmental stage (represented by a color) reflects a distinct way of thinking about self, others, and the world. These value systems profoundly influence how individuals and groups perceive conflicts, approach justice, and envision cooperation. By understanding these developmental differences, peacebuilders can create more effective strategies that meet people where they are while supporting evolution toward more integrative, complex approaches.</p>
+        </div>
+        
+        <div class="spiral-container">
+            <div class="spiral-path">
+                <div class="level level-purple purple-position" onclick="showExpanded('purple')">
+                    <h3>Purple - Tribal/Magical</h3>
+                    <div class="level-content">
+                        <p>Focused on safety, kinship, and tribal belonging. Conflicts are seen through the lens of clan loyalties and traditional ways.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-red red-position" onclick="showExpanded('red')">
+                    <h3>Red - Power/Impulsive</h3>
+                    <div class="level-content">
+                        <p>Centered on power, dominance, and survival of the fittest. Conflicts are battles for control where strength determines outcomes.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-blue blue-position" onclick="showExpanded('blue')">
+                    <h3>Blue - Order/Mythic</h3>
+                    <div class="level-content">
+                        <p>Organized around absolute truth, order, and righteous principles. Conflicts are moral struggles between right and wrong.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-orange orange-position" onclick="showExpanded('orange')">
+                    <h3>Orange - Achievement/Rational</h3>
+                    <div class="level-content">
+                        <p>Driven by achievement, progress, and scientific rationality. Conflicts are strategic challenges to be solved for optimal outcomes.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-green green-position" onclick="showExpanded('green')">
+                    <h3>Green - Pluralistic/Sensitive</h3>
+                    <div class="level-content">
+                        <p>Centered on equality, harmony, and inclusivity. Conflicts arise from exclusion, inequity, and lack of participation.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-yellow yellow-position" onclick="showExpanded('yellow')">
+                    <h3>Yellow - Systemic/Integrative</h3>
+                    <div class="level-content">
+                        <p>Focused on flexibility, functionality, and systemic thinking. Conflicts are complex patterns requiring multi-level solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-turquoise turquoise-position" onclick="showExpanded('turquoise')">
+                    <h3>Turquoise - Holistic/Global</h3>
+                    <div class="level-content">
+                        <p>Oriented toward global consciousness and holistic integration. Conflicts reflect disconnection from the unified whole.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="expanded-view" class="expanded-view">
+            <button class="close-btn" onclick="hideExpanded()">Close</button>
+            <div id="expanded-content"></div>
+        </div>
+        
+        <div class="applications">
+            <h2>Applications in Peace and Conflict Resolution</h2>
+            <p>Understanding Spiral Dynamics offers powerful insights for peacebuilding governance:</p>
+            
+            <h3>1. Value System Mapping in Conflict Analysis</h3>
+            <p>By identifying the predominant value systems in a conflict context, peacebuilders can better understand why parties perceive issues differently and design interventions that speak to their worldviews. This approach recognizes that conflicts often stem from different levels of consciousness development rather than just competing interests.</p>
+            
+            <h3>2. Developmentally-Appropriate Peacebuilding</h3>
+            <p>Peace processes can be tailored to match the value systems of conflict parties, using language, metaphors, and structures that resonate with their developmental stage. For example, when working with predominantly Blue value systems, appeals to established authority, tradition, and clear principles will be more effective than abstract discussions of systemic complexity.</p>
+            
+            <h3>3. Second-Tier Leadership Development</h3>
+            <p>Training peace practitioners in Yellow (Integrative) and Turquoise (Holistic) consciousness enables them to transcend and include first-tier value systems, facilitating more comprehensive and adaptive approaches to complex conflicts.</p>
+        </div>
+        
+        <div class="communication-bridges">
+            <h2>Communication Bridges Between Value Systems</h2>
+            <p>Effective peacebuilding requires building communication bridges across different developmental value systems:</p>
+            
+            <table class="bridging-table">
+                <tr>
+                    <th>From Value System</th>
+                    <th>To Value System</th>
+                    <th>Communication Bridge</th>
+                </tr>
+                <tr>
+                    <td>Purple (Tribal)</td>
+                    <td>Blue (Order)</td>
+                    <td>Connect traditional practices to higher spiritual or moral principles; show how order protects the tribe</td>
+                </tr>
+                <tr>
+                    <td>Red (Power)</td>
+                    <td>Blue (Order)</td>
+                    <td>Frame rules as enhancing strength through discipline; show how order creates pathways to honorable power</td>
+                </tr>
+                <tr>
+                    <td>Blue (Order)</td>
+                    <td>Orange (Achievement)</td>
+                    <td>Emphasize how achievement serves higher principles; demonstrate practical benefits of progress within moral frameworks</td>
+                </tr>
+                <tr>
+                    <td>Orange (Achievement)</td>
+                    <td>Green (Pluralistic)</td>
+                    <td>Show how inclusion enhances innovation; frame equity as expanding access to opportunity and achievement</td>
+                </tr>
+                <tr>
+                    <td>Green (Pluralistic)</td>
+                    <td>Yellow (Integrative)</td>
+                    <td>Demonstrate how systems thinking enhances inclusion; show how natural hierarchies of competence can serve egalitarian goals</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="evolution-pathways">
+            <h2>Evolution Pathways Toward Peace</h2>
+            <p>Spiral Dynamics offers pathways for evolving toward more comprehensive, integrative peace approaches:</p>
+            
+            <div class="pathway">
+                <h3>From Polarized Blue (Order) to Yellow (Integrative)</h3>
+                <div class="action-step">
+                    <strong>Step 1:</strong> Acknowledge the importance of principles and moral foundations while introducing multiple valid perspectives
+                </div>
+                <div class="action-step">
+                    <strong>Step 2:</strong> Introduce practical, evidence-based approaches that align with existing principles (bridging to Orange)
+                </div>
+                <div class="action-step">
+                    <strong>Step 3:</strong> Expand inclusion of diverse stakeholders while maintaining focus on effectiveness (bridging to Green)
+                </div>
+                <div class="action-step">
+                    <strong>Step 4:</strong> Introduce systems thinking that shows how principles, effectiveness, and inclusion can be integrated
+                </div>
+            </div>
+            
+            <div class="pathway">
+                <h3>From Fragmented Green (Pluralistic) to Turquoise (Holistic)</h3>
+                <div class="action-step">
+                    <strong>Step 1:</strong> Acknowledge the value of inclusion and equality while introducing the need for functional solutions
+                </div>
+                <div class="action-step">
+                    <strong>Step 2:</strong> Develop systems thinking that maintains commitment to equity (bridging to Yellow)
+                </div>
+                <div class="action-step">
+                    <strong>Step 3:</strong> Expand consciousness to global interconnection and collective intelligence
+                </div>
+                <div class="action-step">
+                    <strong>Step 4:</strong> Introduce practices that develop intuitive sensing of the whole system and transcendence of ego-based divisions
+                </div>
+            </div>
+        </div>
+        
+        <div class="case-studies">
+            <h2>Case Studies in Developmental Peace Approaches</h2>
+            
+            <div class="case-study">
+                <h3>South African Truth and Reconciliation Commission</h3>
+                <p>The TRC exemplified second-tier (Yellow) leadership by creating space for multiple value systems:</p>
+                <ul>
+                    <li><strong>Purple (Tribal):</strong> Incorporated traditional rituals and community-based reconciliation approaches</li>
+                    <li><strong>Blue (Order):</strong> Maintained clear procedures and moral frameworks around truth-telling</li>
+                    <li><strong>Orange (Achievement):</strong> Established practical mechanisms for national rebuilding</li>
+                    <li><strong>Green (Pluralistic):</strong> Ensured inclusive representation and equal voice for victims</li>
+                </ul>
+                <p>Under Tutu and Mandela's leadership, the Commission transcended and included these diverse value systems rather than privileging one approach, creating a process with broad legitimacy across developmental stages.</p>
+            </div>
+            
+            <div class="case-study">
+                <h3>Northern Ireland Peace Process</h3>
+                <p>The Good Friday Agreement navigated multiple value systems:</p>
+                <ul>
+                    <li><strong>Blue (Order):</strong> Addressed concerns about constitutional principles and traditions</li>
+                    <li><strong>Orange (Achievement):</strong> Created practical power-sharing institutions with clear functions</li>
+                    <li><strong>Green (Pluralistic):</strong> Ensured inclusive representation and cultural recognition</li>
+                    <li><strong>Yellow (Integrative):</strong> Established flexible, multi-level governance addressing different needs</li>
+                </ul>
+                <p>By simultaneously addressing multiple value systems' concerns, the peace process created a durable settlement despite developmental differences between communities.</p>
+            </div>
+        </div>
+        
+        <div class="resources">
+            <h2>Additional Resources</h2>
+            <p>For deeper exploration of Spiral Dynamics in peace and conflict resolution:</p>
+            <a href="https://www.spiralize.org" class="resource-link" target="_blank">Spiralize.org - Interactive Spiral Dynamics Learning</a>
+            <a href="https://spiraldynamics.org" class="resource-link" target="_blank">Spiral Dynamics Group</a>
+            <a href="#" class="resource-link">Global Governance Framework Tools Library</a>
+            <a href="#" class="resource-link">Integral Peace Working Group</a>
+        </div>
+        
+        <footer>
+            © 2025 Global Governance Framework | www.globalgovernanceframework.org
+        </footer>
+    </div>
+    
+    <script>
+        function showExpanded(level) {
+            const expandedView = document.getElementById('expanded-view');
+            const expandedContent = document.getElementById('expanded-content');
+            
+            expandedView.style.display = 'block';
+            
+            // Scroll to expanded view
+            expandedView.scrollIntoView({ behavior: 'smooth' });
+            
+            // Add the color bar
+            let content = `<div class="color-bar" style="background-color: var(--${level})"></div>`;
+            
+            // Add the content based on the level
+            if (level === 'purple') {
+                content += `
+                    <h2>Purple - Tribal/Magical Consciousness</h2>
+                    <p>The Purple value system emerges as humans form tribal communities where survival depends on kinship bonds, ancestral traditions, and connection to nature's mysteries.</p>
+                    
+                    <h3>Key Characteristics</h3>
+                    <ul>
+                        <li>Tribal identity and kinship loyalties</li>
+                        <li>Emphasis on sacred traditions and customs</li>
+                        <li>Magical thinking and ritual as protection from unknown forces</li>
+                        <li>Cyclical view of time and events</li>
+                        <li>Elders and tradition-keepers as authority figures</li>
+                    </ul>
+                    
+                    <h3>Approach to Conflict</h3>
+                    <p>From the Purple perspective, conflicts are often understood as:</p>
+                    <ul>
+                        <li>Violations of sacred traditions or taboos</li>
+                        <li>Disruptions of harmonious relations with ancestors or spirits</li>
+                        <li>Threats to clan/tribe survival or sacred territories</li>
+                        <li>Issues requiring ritual resolution and restoration of harmony</li>
+                    </ul>
+                    
+                    <h3>Peacebuilding Approaches That Resonate</h3>
+                    <ul>
+                        <li>Traditional/indigenous justice systems and rituals</li>
+                        <li>Elder-led mediation and wisdom councils</li>
+                        <li>Sacred site protection and access agreements</li>
+                        <li>Ceremonial peace protocols and symbolic acts of reconciliation</li>
+                        <li>Story-telling and myth-making that reinforces peaceful relations</li>
+                    </ul>
+                    
+                    <h3>Governance Considerations</h3>
+                    <p>Effective peace governance working with Purple consciousness should:</p>
+                    <ul>
+                        <li>Incorporate traditional authority structures and decision processes</li>
+                        <li>Respect sacred sites, objects, and practices in peace agreements</li>
+                        <li>Recognize clan relationships and collective identity</li>
+                        <li>Include ceremonies and rituals in reconciliation processes</li>
+                        <li>Preserve oral traditions and cultural knowledge as conflict resolution resources</li>
+                    </ul>
+                    
+                    <h3>Example: Indigenous Peace Approaches</h3>
+                    <p>Many indigenous conflict resolution practices embody Purple value systems, such as the Hawaiian Ho'oponopono process, which focuses on restoring harmony through confession, forgiveness, and symbolic restitution. These approaches often emphasize the restoration of right relationships rather than punishment, with elders guiding processes that heal the community as a whole.</p>
+                `;
+            } else if (level === 'red') {
+                content += `
+                    <h2>Red - Power/Impulsive Consciousness</h2>
+                    <p>The Red value system emerges when individuals break free from tribal constraints to assert power and pursue personal desires in a world seen as full of threats and opportunities.</p>
+                    
+                    <h3>Key Characteristics</h3>
+                    <ul>
+                        <li>Power, strength, and dominance as core values</li>
+                        <li>Impulsive pursuit of immediate desires and gratification</li>
+                        <li>Heroic or feared leaders as authority figures</li>
+                        <li>Respect based on demonstrations of strength</li>
+                        <li>Limited concern for consequences beyond immediate advantage</li>
+                    </ul>
+                    
+                    <h3>Approach to Conflict</h3>
+                    <p>From the Red perspective, conflicts are often understood as:</p>
+                    <ul>
+                        <li>Tests of strength and will</li>
+                        <li>Opportunities to demonstrate dominance</li>
+                        <li>Challenges to honor or reputation that demand response</li>
+                        <li>Zero-sum contests for territory, resources, or status</li>
+                    </ul>
+                    
+                    <h3>Peacebuilding Approaches That Resonate</h3>
+                    <ul>
+                        <li>Strong, respected mediators who command authority</li>
+                        <li>Honor-preserving mechanisms that allow "saving face"</li>
+                        <li>Clear rewards for cooperation and consequences for violation</li>
+                        <li>Status recognition within new power arrangements</li>
+                        <li>Channeling energy into sports, competition, or achievement pathways</li>
+                    </ul>
+                    
+                    <h3>Governance Considerations</h3>
+                    <p>Effective peace governance working with Red consciousness should:</p>
+                    <ul>
+                        <li>Establish visible, strong enforcement mechanisms</li>
+                        <li>Create pathways to redirect power drives toward constructive ends</li>
+                        <li>Recognize status and provide face-saving options</li>
+                        <li>Set clear boundaries with immediate consequences</li>
+                        <li>Consider how peace initiatives might be perceived as weakness</li>
+                    </ul>
+                    
+                    <h3>Example: Gang Truces and Interventions</h3>
+                    <p>Effective gang violence reduction programs often work within Red value systems by respecting power dynamics while creating alternative pathways. The "Cure Violence" approach uses respected former gang members as "violence interrupters" who can engage credibly with those operating from Red consciousness, redirecting power drives away from violence while maintaining respect and status within the community.</p>
+                `;
+            } else if (level === 'blue') {
+                content += `
+                    <h2>Blue - Order/Mythic Consciousness</h2>
+                    <p>The Blue value system emerges when the chaos of Red power drives is contained through submission to higher authority, absolute principles, and sacred order that provides stability and meaning.</p>
+                    
+                    <h3>Key Characteristics</h3>
+                    <ul>
+                        <li>Adherence to absolute truth and righteous principles</li>
+                        <li>Hierarchical authority and chain of command</li>
+                        <li>Sacrifice of immediate desires for future reward</li>
+                        <li>Clear rules, laws, and moral codes</li>
+                        <li>Purpose derived from serving higher cause or system</li>
+                    </ul>
+                    
+                    <h3>Approach to Conflict</h3>
+                    <p>From the Blue perspective, conflicts are often understood as:</p>
+                    <ul>
+                        <li>Moral struggles between right and wrong</li>
+                        <li>Results of disobedience to legitimate authority</li>
+                        <li>Violations of sacred principles or established order</li>
+                        <li>Tests of faith or commitment to righteous cause</li>
+                    </ul>
+                    
+                    <h3>Peacebuilding Approaches That Resonate</h3>
+                    <ul>
+                        <li>Clear rules and procedures for resolving disputes</li>
+                        <li>Appeals to sacred texts, constitutions, or established principles</li>
+                        <li>Recognized authorities (religious, legal, traditional) as mediators</li>
+                        <li>Formal agreements with clear implementation monitoring</li>
+                        <li>Justice processes that uphold moral order</li>
+                    </ul>
+                    
+                    <h3>Governance Considerations</h3>
+                    <p>Effective peace governance working with Blue consciousness should:</p>
+                    <ul>
+                        <li>Ground peace processes in established legal or moral frameworks</li>
+                        <li>Involve respected authorities in validating agreements</li>
+                        <li>Create clear procedures with defined roles and responsibilities</li>
+                        <li>Address perceptions of moral transgression with appropriate justice mechanisms</li>
+                        <li>Articulate how peace serves higher principles and long-term stability</li>
+                    </ul>
+                    
+                    <h3>Example: Faith-Based Peacebuilding</h3>
+                    <p>Interfaith peacebuilding initiatives often effectively engage Blue consciousness by working through religious authorities and appealing to shared moral principles across traditions. In Northern Ireland, church leaders played significant roles in bridging divides by emphasizing common Christian values of forgiveness and reconciliation that transcended sectarian identities, creating legitimacy for peace processes through theological frameworks.</p>
+                `;
+            } else if (level === 'orange') {
+                content += `
+                    <h2>Orange - Achievement/Rational Consciousness</h2>
+                    <p>The Orange value system emerges when individuals break free from rigid orthodoxy to pursue progress through scientific understanding, strategic action, and material improvement in a world of opportunity.</p>
+                    
+                    <h3>Key Characteristics</h3>
+                    <ul>
+                        <li>Achievement, innovation, and progress as core values</li>
+                        <li>Strategic thinking and scientific rationality</li>
+                        <li>Material prosperity and success as goals</li>
+                        <li>Competition driving improvement and excellence</li>
+                        <li>Pragmatic problem-solving over ideological purity</li>
+                    </ul>
+                    
+                    <h3>Approach to Conflict</h3>
+                    <p>From the Orange perspective, conflicts are often understood as:</p>
+                    <ul>
+                        <li>Strategic challenges requiring optimal solutions</li>
+                        <li>Problems with technical or procedural fixes</li>
+                        <li>Competition for scarce resources requiring negotiated outcomes</li>
+                        <li>Inefficiencies that hinder progress and prosperity</li>
+                    </ul>
+                    
+                    <h3>Peacebuilding Approaches That Resonate</h3>
+                    <ul>
+                        <li>Evidence-based conflict resolution methodologies</li>
+                        <li>Cost-benefit analysis of peace vs. conflict</li>
+                        <li>Interest-based negotiation focusing on practical outcomes</li>
+                        <li>Technological solutions for monitoring and verification</li>
+                        <li>Economic incentives for cooperation and joint development</li>
+                    </ul>
+                    
+                    <h3>Governance Considerations</h3>
+                    <p>Effective peace governance working with Orange consciousness should:</p>
+                    <ul>
+                        <li>Emphasize practical benefits of stability for economic development</li>
+                        <li>Incorporate metrics and measurable outcomes in peace processes</li>
+                        <li>Establish clear institutional frameworks with defined competencies</li>
+                        <li>Create economic opportunity through cross-conflict business ventures</li>
+                        <li>Use professional expertise and technical skills as bridge-builders</li>
+                    </ul>
+                    
+                    <h3>Example: Economic Peace Initiatives</h3>
+                    <p>Many successful peacebuilding efforts leverage Orange consciousness through economic cooperation. The European Coal and Steel Community (precursor to the EU) created practical economic interdependence between former enemies, while more recent initiatives like the "Valley of Peace" industrial zone between Israel, Jordan, and the Palestinian territories demonstrate how shared economic interests can transcend conflict narratives when appealing to achievement-oriented value systems.</p>
+                `;
+            } else if (level === 'green') {
+                content += `
+                    <h2>Green - Pluralistic/Sensitive Consciousness</h2>
+                    <p>The Green value system emerges when the competitive materialism of Orange gives way to seeking harmony, equality, and authentic connection in a world of diverse perspectives deserving respect.</p>
+                    
+                    <h3>Key Characteristics</h3>
+                    <ul>
+                        <li>Equality, inclusion, and consensus as core values</li>
+                        <li>Multiple perspectives and cultural relativism</li>
+                        <li>Community well-being over individual achievement</li>
+                        <li>Emotional awareness and interpersonal harmony</li>
+                        <li>Environmental sustainability and social justice concerns</li>
+                    </ul>
+                    
+                    <h3>Approach to Conflict</h3>
+                    <p>From the Green perspective, conflicts are often understood as:</p>
+                    <ul>
+                        <li>Results of exclusion, inequality, or marginalization</li>
+                        <li>Problems of relationship and communication</li>
+                        <li>Expressions of unheard needs and unaddressed trauma</li>
+                        <li>Structural injustices requiring systemic change</li>
+                    </ul>
+                    
+                    <h3>Peacebuilding Approaches That Resonate</h3>
+                    <ul>
+                        <li>Inclusive dialogue processes ensuring all voices are heard</li>
+                        <li>Trauma-informed reconciliation focusing on healing</li>
+                        <li>Recognition of historical injustices and their continuing impacts</li>
+                        <li>Consensus-building and collaborative decision-making</li>
+                        <li>Addressing underlying structural inequalities</li>
+                    </ul>
+                    
+                    <h3>Governance Considerations</h3>
+                    <p>Effective peace governance working with Green consciousness should:</p>
+                    <ul>
+                        <li>Ensure inclusive, participatory processes with diverse representation</li>
+                        <li>Address emotional and relational dimensions of conflict</li>
+                        <li>Incorporate reconciliation and healing mechanisms</li>
+                        <li>Consider how peace processes might inadvertently reinforce inequalities</li>
+                        <li>Build consensus through deep listening and respectful dialogue</li>
+                    </ul>
+                    
+                    <h3>Example: Truth and Reconciliation Processes</h3>
+                    <p>Many contemporary transitional justice mechanisms reflect Green values by prioritizing victim voice, collective healing, and addressing root inequalities. The Greensboro Truth and Reconciliation Commission (USA) exemplified this approach by creating space for multiple narratives about racial violence, emphasizing emotional healing and community dialogue rather than legal punishment, and examining structural racism as a root cause that required ongoing transformation.</p>
+                `;
+            } else if (level === 'yellow') {
+                content += `
+                    <h2>Yellow - Systemic/Integrative Consciousness</h2>
+                    <p>The Yellow value system emerges as a "second-tier" consciousness that can transcend and include earlier stages, recognizing the necessity and validity of each while addressing complex challenges through flexible, systemic approaches.</p>
+                    
+                    <h3>Key Characteristics</h3>
+                    <ul>
+                        <li>Systemic thinking and complex pattern recognition</li>
+                        <li>Functionality, adaptability, and natural hierarchies of competence</li>
+                        <li>Integration of multiple perspectives into coherent whole</li>
+                        <li>Comfort with paradox and contradictory information</li>
+                        <li>Long-term vision with practical implementation</li>
+                    </ul>
+                    
+                    <h3>Approach to Conflict</h3>
+                    <p>From the Yellow perspective, conflicts are often understood as:</p>
+                    <ul>
+                        <li>Complex adaptive systems requiring multi-level intervention</li>
+                        <li>Containing legitimate tensions between different developmental stages</li>
+                        <li>Opportunities for evolving more functional arrangements</li>
+                        <li>Patterns requiring both structural change and individual transformation</li>
+                    </ul>
+                    
+                    <h3>Peacebuilding Approaches That Resonate</h3>
+                    <ul>
+                        <li>Multi-track diplomacy integrating multiple approaches</li>
+                        <li>Developmentally-differentiated interventions for different stakeholders</li>
+                        <li>Systems mapping and leverage point identification</li>
+                        <li>Flexible governance accommodating diverse needs</li>
+                        <li>Meta-mediation that bridges across value system differences</li>
+                    </ul>
+                    
+                    <h3>Governance Considerations</h3>
+                    <p>Effective peace governance working with Yellow consciousness should:</p>
+                    <ul>
+                        <li>Design adaptive frameworks that evolve with changing conditions</li>
+                        <li>Create contextually-appropriate solutions rather than rigid models</li>
+                        <li>Integrate insights and approaches from multiple developmental stages</li>
+                        <li>Address both immediate needs and long-term patterns</li>
+                        <li>Build scaffolding for developmental growth within peace processes</li>
+                    </ul>
+                    
+                    <h3>Example: Comprehensive Peace Agreements</h3>
+                    <p>The 2016 Colombian Peace Agreement shows Yellow consciousness in its comprehensive approach integrating multiple perspectives. It addressed immediate security needs (Red/Blue), established accountability mechanisms (Blue), created economic opportunities (Orange), ensured inclusive participation (Green), while designing adaptive implementation frameworks that could evolve over time. By consciously integrating multiple value systems, it created broader legitimacy across developmental stages.</p>
+                `;
+            } else if (level === 'turquoise') {
+                content += `
+                    <h2>Turquoise - Holistic/Global Consciousness</h2>
+                    <p>The Turquoise value system represents a further evolution of second-tier consciousness, where global interconnectedness, collective intelligence, and unified energetic fields become directly experienced realities.</p>
+                    
+                    <h3>Key Characteristics</h3>
+                    <ul>
+                        <li>Holistic perception of interconnected systems</li>
+                        <li>Integration of intuition with analysis</li>
+                        <li>Transpersonal perspective beyond individual ego</li>
+                        <li>Recognition of consciousness as a fundamental force</li>
+                        <li>Planetary and intergenerational awareness</li>
+                    </ul>
+                    
+                    <h3>Approach to Conflict</h3>
+                    <p>From the Turquoise perspective, conflicts are often understood as:</p>
+                    <ul>
+                        <li>Disconnections from the larger whole</li>
+                        <li>Expressions of collective consciousness patterns</li>
+                        <li>Opportunities for holistic evolution of the system</li>
+                        <li>Reflections of deeper energy dynamics requiring attunement</li>
+                    </ul>
+                    
+                    <h3>Peacebuilding Approaches That Resonate</h3>
+                    <ul>
+                        <li>Collective consciousness practices (meditation, prayer circles)</li>
+                        <li>Evolutionary facilitation addressing energy patterns</li>
+                        <li>Non-dual awareness transcending conventional polarities</li>
+                        <li>Intergenerational and interspecies perspectives</li>
+                        <li>Sensing and working with social fields and collective intelligence</li>
+                    </ul>
+                    
+                    <h3>Governance Considerations</h3>
+                    <p>Effective peace governance working with Turquoise consciousness should:</p>
+                    <ul>
+                        <li>Create space for intuitive and emergent processes alongside structured ones</li>
+                        <li>Consider effects across generations and wider ecosystems</li>
+                        <li>Integrate embodied and energy awareness practices into peace processes</li>
+                        <li>Balance universal principles with unique contextual expressions</li>
+                        <li>Draw on collective intelligence through practices like circle processes</li>
+                    </ul>
+                    
+                    <h3>Example: Emergent Peace Approaches</h3>
+                    <p>While still emerging, some innovative peace initiatives reflect Turquoise capacities. The Collective Healing Initiative bringing together Holocaust descendants with children of Nazi perpetrators exemplifies this through addressing ancestral trauma patterns, using collective presencing practices, and creating space for emergent reconciliation that transcends conventional dialogue. Similarly, Indigenous-led healing ceremonies that attune to land and ancestors while addressing contemporary conflicts demonstrate how Turquoise consciousness can manifest in peacebuilding.</p>
+                `;
+            }
+            
+            expandedContent.innerHTML = content;
+        }
+        
+        function hideExpanded() {
+            document.getElementById('expanded-view').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

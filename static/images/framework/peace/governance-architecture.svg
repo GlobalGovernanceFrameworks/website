@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 650"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="governance-architecture.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs54" />
+  <sodipodi:namedview
+     id="namedview54"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.92032667"
+     inkscape:cx="205.90515"
+     inkscape:cy="404.2043"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="650"
+     fill="#f8f9fa"
+     rx="10"
+     ry="10"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="450"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2B4B8C"
+     id="text1">
+    Peace Governance Architecture
+  </text>
+  <text
+     x="450"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     fill="#2D5F2D"
+     id="text2">
+    Multi-Level Systems for Conflict Prevention, Resolution, and Transformation
+  </text>
+  <!-- Global Level -->
+  <rect
+     x="150"
+     y="82"
+     width="600"
+     height="120"
+     rx="8"
+     ry="8"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="2"
+     id="rect2" />
+  <text
+     x="450"
+     y="102"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text3">GLOBAL GOVERNANCE LEVEL</text>
+  <!-- Global Institutions -->
+  <rect
+     x="170"
+     y="112"
+     width="160"
+     height="80"
+     rx="5"
+     ry="5"
+     fill="#2b4b8c"
+     fill-opacity="0.2"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="rect3" />
+  <text
+     x="250"
+     y="137"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text4">Global Institutions</text>
+  <text
+     x="250"
+     y="157"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text5">UN Security Council</text>
+  <text
+     x="250"
+     y="172"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text6">International Court of Justice</text>
+  <!-- Global Frameworks -->
+  <rect
+     x="370"
+     y="112"
+     width="160"
+     height="80"
+     rx="5"
+     ry="5"
+     fill="#2b4b8c"
+     fill-opacity="0.2"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="rect6" />
+  <text
+     x="450"
+     y="137"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text7">Normative Frameworks</text>
+  <text
+     x="450"
+     y="157"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text8">International Humanitarian Law</text>
+  <text
+     x="450"
+     y="172"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text9">R2P Doctrine</text>
+  <!-- Global Systems -->
+  <rect
+     x="570"
+     y="112"
+     width="160"
+     height="80"
+     rx="5"
+     ry="5"
+     fill="#2b4b8c"
+     fill-opacity="0.2"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="rect9" />
+  <text
+     x="650"
+     y="137"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text10">Global Peace Systems</text>
+  <text
+     x="650"
+     y="157"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text11">UN Peacekeeping</text>
+  <text
+     x="650"
+     y="172"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text12">Conflict Early Warning Network</text>
+  <!-- Regional Level -->
+  <rect
+     x="150"
+     y="222"
+     width="600"
+     height="150"
+     rx="8"
+     ry="8"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="2"
+     id="rect12" />
+  <text
+     x="450"
+     y="242"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text13">REGIONAL GOVERNANCE LEVEL</text>
+  <!-- Regional Organizations -->
+  <rect
+     x="170"
+     y="262"
+     width="160"
+     height="90"
+     rx="5"
+     ry="5"
+     fill="#6b5ca5"
+     fill-opacity="0.2"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="rect13" />
+  <text
+     x="250"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text14">Regional Organizations</text>
+  <text
+     x="250"
+     y="302"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text15">African Union</text>
+  <text
+     x="250"
+     y="317"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text16">ASEAN</text>
+  <text
+     x="250"
+     y="332"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text17">European Union</text>
+  <!-- Cross-Border Mechanisms -->
+  <rect
+     x="357.74509"
+     y="262.03821"
+     width="186.04652"
+     height="89.923592"
+     rx="5.8139539"
+     ry="4.9957547"
+     fill="#6b5ca5"
+     fill-opacity="0.2"
+     stroke="#6b5ca5"
+     stroke-width="1.03903"
+     id="rect17" />
+  <text
+     x="450"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text18">Cross-Border Mechanisms</text>
+  <text
+     x="450"
+     y="302"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text19">River Basin Commissions</text>
+  <text
+     x="450"
+     y="317"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text20">Shared Resource Councils</text>
+  <text
+     x="450"
+     y="332"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text21">Regional Early Warning</text>
+  <!-- Regional Civil Society -->
+  <rect
+     x="570"
+     y="262"
+     width="160"
+     height="90"
+     rx="5"
+     ry="5"
+     fill="#6b5ca5"
+     fill-opacity="0.2"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="rect21" />
+  <text
+     x="650"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text22">Civil Society Networks</text>
+  <text
+     x="650"
+     y="302"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text23">Regional NGO Coalitions</text>
+  <text
+     x="650"
+     y="317"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text24">Peace Research Institutes</text>
+  <text
+     x="650"
+     y="332"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text25">Faith-Based Networks</text>
+  <!-- National Level -->
+  <rect
+     x="150"
+     y="392"
+     width="600"
+     height="110"
+     rx="8"
+     ry="8"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="2"
+     id="rect25" />
+  <text
+     x="450"
+     y="412"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text26">NATIONAL GOVERNANCE LEVEL</text>
+  <!-- Government Bodies -->
+  <rect
+     x="170"
+     y="422"
+     width="160"
+     height="70"
+     rx="5"
+     ry="5"
+     fill="#2d5f2d"
+     fill-opacity="0.2"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="rect26" />
+  <text
+     x="250"
+     y="442"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text27">Government Bodies</text>
+  <text
+     x="250"
+     y="462"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text28">Peace Ministries</text>
+  <text
+     x="250"
+     y="477"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text29">National Security Councils</text>
+  <!-- Integration Mechanisms -->
+  <rect
+     x="356.20624"
+     y="422.03601"
+     width="184.51425"
+     height="69.927956"
+     rx="5.7660704"
+     ry="4.9948545"
+     fill="#2d5f2d"
+     fill-opacity="0.2"
+     stroke="#2d5f2d"
+     stroke-width="1.03931"
+     id="rect29" />
+  <text
+     x="450"
+     y="442"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text30">National Frameworks</text>
+  <text
+     x="450"
+     y="462"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text31">Peace Reconciliation Commissions</text>
+  <text
+     x="450"
+     y="477"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text32">National Dialogue Processes</text>
+  <!-- National Civil Society -->
+  <rect
+     x="558.50903"
+     y="422.03387"
+     width="182.98189"
+     height="69.932251"
+     rx="5.718184"
+     ry="4.9951611"
+     fill="#2d5f2d"
+     fill-opacity="0.2"
+     stroke="#2d5f2d"
+     stroke-width="1.03272"
+     id="rect32" />
+  <text
+     x="650"
+     y="442"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text33">Multi-Stakeholder Forums</text>
+  <text
+     x="650"
+     y="462"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text34">National Peace Platforms</text>
+  <text
+     x="650"
+     y="477"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text35">Private Sector Peace Councils</text>
+  <!-- Local Level -->
+  <rect
+     x="141.57025"
+     y="522.02179"
+     width="626.84772"
+     height="89.956436"
+     rx="8.3579693"
+     ry="7.9961281"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="2.01345"
+     id="rect35" />
+  <text
+     x="450"
+     y="542"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text36">LOCAL GOVERNANCE LEVEL</text>
+  <!-- Community Mechanisms -->
+  <rect
+     x="146.06602"
+     y="552.04242"
+     width="212.18471"
+     height="49.915195"
+     rx="5.8940196"
+     ry="4.991519"
+     fill="#daa520"
+     fill-opacity="0.2"
+     stroke="#daa520"
+     stroke-width="1.08481"
+     id="rect36" />
+  <text
+     x="252"
+     y="572"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text37">Community Peace Mechanisms</text>
+  <text
+     x="256"
+     y="587"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text38">Peace Committees • Traditional Courts</text>
+  <!-- Urban Systems -->
+  <rect
+     x="365.27783"
+     y="552.03436"
+     width="182.98097"
+     height="49.931328"
+     rx="5.7181554"
+     ry="4.9931326"
+     fill="#daa520"
+     fill-opacity="0.2"
+     stroke="#daa520"
+     stroke-width="1.06868"
+     id="rect38" />
+  <text
+     x="456"
+     y="572"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text39">Urban Peace Systems</text>
+  <text
+     x="456"
+     y="587"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text40">Neighborhood Watch • Gang Truces</text>
+  <!-- Indigenous Systems -->
+  <rect
+     x="552.80481"
+     y="552.02472"
+     width="198.39038"
+     height="49.950676"
+     rx="5.5108442"
+     ry="4.9950676"
+     fill="#daa520"
+     fill-opacity="0.2"
+     stroke="#daa520"
+     stroke-width="1.04933"
+     id="rect40" />
+  <text
+     x="652"
+     y="572"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text41">Indigenous Peace Systems</text>
+  <text
+     x="652"
+     y="587"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text42">Elder Councils • Cultural Reconciliation</text>
+  <!-- Vertical Connectors -->
+  <!-- Global to Regional -->
+  <line
+     x1="250"
+     y1="202"
+     x2="250"
+     y2="222"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line42" />
+  <polygon
+     points="255,235 250,245 245,235 "
+     fill="#000000"
+     id="polygon42"
+     transform="translate(0,-18)" />
+  <line
+     x1="450"
+     y1="202"
+     x2="450"
+     y2="222"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line43" />
+  <polygon
+     points="455,235 450,245 445,235 "
+     fill="#000000"
+     id="polygon43"
+     transform="translate(0,-18)" />
+  <line
+     x1="650"
+     y1="202"
+     x2="650"
+     y2="222"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line44" />
+  <polygon
+     points="655,235 650,245 645,235 "
+     fill="#000000"
+     id="polygon44"
+     transform="translate(0,-18)" />
+  <!-- Regional to National -->
+  <line
+     x1="250"
+     y1="372"
+     x2="250"
+     y2="392"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line45" />
+  <polygon
+     points="255,405 250,415 245,405 "
+     fill="#000000"
+     id="polygon45"
+     transform="translate(0,-18)" />
+  <line
+     x1="450"
+     y1="372"
+     x2="450"
+     y2="392"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line46" />
+  <polygon
+     points="455,405 450,415 445,405 "
+     fill="#000000"
+     id="polygon46"
+     transform="translate(0,-18)" />
+  <line
+     x1="650"
+     y1="372"
+     x2="650"
+     y2="392"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line47" />
+  <polygon
+     points="655,405 650,415 645,405 "
+     fill="#000000"
+     id="polygon47"
+     transform="translate(0,-18)" />
+  <!-- National to Local -->
+  <line
+     x1="250"
+     y1="502"
+     x2="250"
+     y2="522"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line48" />
+  <polygon
+     points="255,535 250,545 245,535 "
+     fill="#000000"
+     id="polygon48"
+     transform="translate(0,-18)" />
+  <line
+     x1="450"
+     y1="502"
+     x2="450"
+     y2="522"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line49" />
+  <polygon
+     points="455,535 450,545 445,535 "
+     fill="#000000"
+     id="polygon49"
+     transform="translate(0,-18)" />
+  <line
+     x1="650"
+     y1="502"
+     x2="650"
+     y2="522"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line50" />
+  <polygon
+     points="655,535 650,545 645,535 "
+     fill="#000000"
+     id="polygon50"
+     transform="translate(0,-18)" />
+  <!-- Horizontal Connectors & Feedback Loops -->
+  <!-- Right side feedback loop -->
+  <path
+     d="m 730,142 c 50,0 78.79412,435.87458 28.79412,435.87458"
+     fill="none"
+     stroke="#2b4b8c"
+     stroke-width="2"
+     id="path50"
+     sodipodi:nodetypes="cc" />
+  <polygon
+     points="735,595 730,585 725,595 "
+     fill="#2b4b8c"
+     id="polygon51"
+     transform="rotate(20.087869,780.09742,661.7985)" />
+  <text
+     x="362"
+     y="-810"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     transform="rotate(90)"
+     id="text51">Feedback Loops</text>
+  <!-- Left side feedback loop -->
+  <path
+     d="M 147.71868,553.56028 C 97.718676,553.56028 120,142 170,142"
+     fill="none"
+     stroke="#daa520"
+     stroke-width="2"
+     id="path51"
+     sodipodi:nodetypes="cc" />
+  <polygon
+     points="170,185 165,175 175,175 "
+     fill="#daa520"
+     id="polygon52"
+     transform="rotate(-119.31346,158.11794,161.04569)" />
+  <text
+     x="-362"
+     y="90"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     transform="rotate(-90)"
+     id="text52">Local Knowledge Innovation</text>
+  <!-- Legend -->
+  <rect
+     x="250.05109"
+     y="617.05109"
+     width="399.89783"
+     height="14.507765"
+     fill="#ffffff"
+     stroke="#000000"
+     stroke-width="0.602164"
+     rx="1.9994892"
+     ry="2.9015529"
+     id="rect52" />
+  <text
+     x="450"
+     y="627"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     id="text53">Vertical lines indicate coordination pathways; arrows show information authority flows</text>
+  <!-- Copyright -->
+  <text
+     x="450"
+     y="644"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text54">© 2025 Global Governance Framework | www.globalgovernanceframework.org</text>
+</svg>

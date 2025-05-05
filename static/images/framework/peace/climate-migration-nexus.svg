@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 750"
+   version="1.1"
+   id="svg48"
+   sodipodi:docname="climate-migration-nexus.svg"
+   width="900"
+   height="750"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs48" />
+  <sodipodi:namedview
+     id="namedview48"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.85458905"
+     inkscape:cx="495.55982"
+     inkscape:cy="346.36531"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg48" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="749.64539"
+     fill="#f8f9fa"
+     rx="10"
+     ry="10.70922"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.03485" />
+  <!-- Title -->
+  <text
+     x="450"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text1">Peace-Climate-Migration Nexus</text>
+  <text
+     x="450"
+     y="62"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text2">Integrated Governance for Interconnected Challenges</text>
+  <!-- Three Main Circles - Venn Diagram -->
+  <!-- Climate Circle -->
+  <circle
+     cx="350"
+     cy="250"
+     r="180"
+     fill="#3f7e44"
+     fill-opacity="0.3"
+     stroke="#3f7e44"
+     stroke-width="2"
+     id="circle2" />
+  <text
+     x="250"
+     y="170"
+     font-family="Arial, sans-serif"
+     font-size="22px"
+     font-weight="bold"
+     fill="#3f7e44"
+     id="text3">Climate</text>
+  <text
+     x="250"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     fill="#3f7e44"
+     id="text4">• Resource Scarcity</text>
+  <text
+     x="250"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     fill="#3f7e44"
+     id="text5">• Extreme Weather</text>
+  <text
+     x="250"
+     y="235"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     fill="#3f7e44"
+     id="text6">• Sea Level Rise</text>
+  <!-- Migration Circle -->
+  <circle
+     cx="550"
+     cy="250"
+     r="180"
+     fill="#00689d"
+     fill-opacity="0.3"
+     stroke="#00689d"
+     stroke-width="2"
+     id="circle6" />
+  <text
+     x="610"
+     y="170"
+     font-family="Arial, sans-serif"
+     font-size="22px"
+     font-weight="bold"
+     fill="#00689d"
+     id="text7">Migration</text>
+  <text
+     x="610"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     fill="#00689d"
+     id="text8">• Forced Displacement</text>
+  <text
+     x="610"
+     y="215"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     fill="#00689d"
+     id="text9">• Voluntary Movement</text>
+  <text
+     x="610"
+     y="235"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     fill="#00689d"
+     id="text10">• Urbanization</text>
+  <!-- Peace/Conflict Circle -->
+  <circle
+     cx="450"
+     cy="400"
+     r="180"
+     fill="#dd1367"
+     fill-opacity="0.3"
+     stroke="#dd1367"
+     stroke-width="2"
+     id="circle10" />
+  <text
+     x="450"
+     y="480"
+     font-family="Arial, sans-serif"
+     font-size="22px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#dd1367"
+     id="text11">Peace/Conflict</text>
+  <text
+     x="450"
+     y="500"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#dd1367"
+     id="text12">• Resource Competition</text>
+  <text
+     x="450"
+     y="520"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#dd1367"
+     id="text13">• Identity Tensions</text>
+  <text
+     x="450"
+     y="540"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#dd1367"
+     id="text14">• Governance Failure</text>
+  <!-- Intersection Labels -->
+  <!-- Climate-Migration Intersection -->
+  <text
+     x="450"
+     y="170"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text15">Climate-Induced Migration</text>
+  <text
+     x="450"
+     y="190"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text16">• Drought displacement</text>
+  <text
+     x="450"
+     y="210"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text17">• Sea level retreat</text>
+  <!-- Climate-Conflict Intersection -->
+  <text
+     x="320"
+     y="340"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text18">Climate-Conflict</text>
+  <text
+     x="320"
+     y="360"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text19">• Water wars</text>
+  <text
+     x="320"
+     y="380"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text20">• Land degradation conflicts</text>
+  <!-- Migration-Conflict Intersection -->
+  <text
+     x="580"
+     y="340"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text21">Migration-Conflict</text>
+  <text
+     x="580"
+     y="360"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text22">• Host community tensions</text>
+  <text
+     x="580"
+     y="380"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text23">• Identity-based exclusion</text>
+  <!-- Central Intersection -->
+  <text
+     x="450"
+     y="300"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text24">Nexus Governance</text>
+  <!-- Border Boxes with Governance Components -->
+  <!-- Left Box - Prevention -->
+  <rect
+     x="50"
+     y="580"
+     width="200"
+     height="100"
+     rx="5"
+     ry="5"
+     fill="#3f7e44"
+     fill-opacity="0.1"
+     stroke="#3f7e44"
+     stroke-width="1"
+     id="rect24" />
+  <text
+     x="150"
+     y="600"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     id="text25">Prevention</text>
+  <text
+     x="150"
+     y="625"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text26">• Climate adaptation finance</text>
+  <text
+     x="150"
+     y="645"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text27">• Resource governance</text>
+  <text
+     x="150"
+     y="665"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text28">• Early warning systems</text>
+  <!-- Middle Box - Response -->
+  <rect
+     x="350"
+     y="580"
+     width="200"
+     height="100"
+     rx="5"
+     ry="5"
+     fill="#00689d"
+     fill-opacity="0.1"
+     stroke="#00689d"
+     stroke-width="1"
+     id="rect28" />
+  <text
+     x="450"
+     y="600"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     id="text29">Response</text>
+  <text
+     x="450"
+     y="625"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text30">• Humanitarian coordination</text>
+  <text
+     x="450"
+     y="645"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text31">• Safe migration pathways</text>
+  <text
+     x="450"
+     y="665"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text32">• Conflict de-escalation</text>
+  <!-- Right Box - Transformation -->
+  <rect
+     x="650"
+     y="580"
+     width="200"
+     height="100"
+     rx="5"
+     ry="5"
+     fill="#dd1367"
+     fill-opacity="0.1"
+     stroke="#dd1367"
+     stroke-width="1"
+     id="rect32" />
+  <text
+     x="750"
+     y="600"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     id="text33">Transformation</text>
+  <text
+     x="750"
+     y="625"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text34">• Regenerative development</text>
+  <text
+     x="750"
+     y="645"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text35">• Integration inclusion</text>
+  <text
+     x="750"
+     y="665"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text36">• Peaceful coexistence</text>
+  <!-- Center Components - Integrated Governance -->
+  <rect
+     x="20"
+     y="14"
+     width="200"
+     height="140"
+     rx="5"
+     ry="5"
+     fill="#ffffff"
+     stroke="#daa520"
+     stroke-width="2"
+     id="rect36" />
+  <text
+     x="120"
+     y="34"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text37">INTEGRATED GOVERNANCE</text>
+  <rect
+     x="40"
+     y="44"
+     width="160"
+     height="25"
+     rx="3"
+     ry="3"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="rect37" />
+  <text
+     x="120"
+     y="61"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text38">Multi-Stakeholder Platforms</text>
+  <rect
+     x="40"
+     y="74"
+     width="160"
+     height="25"
+     rx="3"
+     ry="3"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="rect38" />
+  <text
+     x="120"
+     y="91"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text39">Cross-Border Coordination</text>
+  <rect
+     x="40"
+     y="104"
+     width="160"
+     height="25"
+     rx="3"
+     ry="3"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="rect39" />
+  <text
+     x="120"
+     y="121"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     id="text40">Data Knowledge Sharing</text>
+  <!-- Connecting Arrows -->
+  <!-- Prevention to Response -->
+  <line
+     x1="250"
+     y1="630"
+     x2="350"
+     y2="630"
+     stroke="#666666"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line40" />
+  <polygon
+     points="345,635 355,630 345,625 "
+     fill="#666666"
+     id="polygon40" />
+  <!-- Response to Transformation -->
+  <line
+     x1="550"
+     y1="630"
+     x2="650"
+     y2="630"
+     stroke="#666666"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="line41" />
+  <polygon
+     points="645,635 655,630 645,625 "
+     fill="#666666"
+     id="polygon41" />
+  <!-- Transformation back to Prevention (circular) -->
+  <path
+     d="m 750,570 c 0,-30 -600,-30 -600,0"
+     stroke="#666666"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     fill="none"
+     id="path41" />
+  <polygon
+     points="145,565 155,570 145,575 "
+     fill="#666666"
+     id="polygon42" />
+  <!-- Feedback to Center -->
+  <line
+     x1="450"
+     y1="540"
+     x2="450"
+     y2="580"
+     stroke="#666666"
+     stroke-width="2"
+     id="line42" />
+  <polygon
+     points="445,575 450,585 455,575 "
+     fill="#666666"
+     id="polygon43" />
+  <!-- Key Interventions Labels -->
+  <text
+     x="97.044914"
+     y="338.97162"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#3f7e44"
+     id="text43">Climate Diplomacy</text>
+  <text
+     x="719.38531"
+     y="439.08984"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#00689d"
+     id="text44">Migration Governance</text>
+  <text
+     x="218.32152"
+     y="490.18912"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#dd1367"
+     id="text45">Peacebuilding</text>
+  <text
+     x="795.03546"
+     y="283.33334"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text46">Human Security</text>
+  <!-- Legend -->
+  <text
+     x="450"
+     y="712"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     id="text47">The arrows indicate feedback loops and process flows between governance approaches</text>
+  <!-- Copyright -->
+  <text
+     x="450"
+     y="740"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text48">© 2025 Global Governance Framework | www.globalgovernanceframework.org</text>
+</svg>

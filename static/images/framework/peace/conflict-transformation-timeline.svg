@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 800"
+   width="100%"
+   height="100%"
+   version="1.1"
+   id="svg69"
+   sodipodi:docname="conflict-transformation-timeline.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs69" />
+  <sodipodi:namedview
+     id="namedview69"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0575"
+     inkscape:cx="600"
+     inkscape:cy="400"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg69" />
+  <!-- Background -->
+  <rect
+     width="100%"
+     height="100%"
+     fill="#f8f9fa"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="600"
+     y="50"
+     font-family="Arial, sans-serif"
+     font-size="28"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text1">Conflict Transformation Timeline</text>
+  <text
+     x="600"
+     y="80"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     fill="#666"
+     id="text2">Peace &amp; Conflict Resolution Framework</text>
+  <!-- Main Timeline Path -->
+  <path
+     d="M100,400 C300,250 400,550 600,400 C800,250 900,550 1100,400"
+     stroke="#3498db"
+     stroke-width="8"
+     fill="none"
+     id="path2" />
+  <!-- Phase Markers -->
+  <circle
+     cx="100"
+     cy="400"
+     r="15"
+     fill="#3498db"
+     id="circle2" />
+  <rect
+     x="230"
+     y="120"
+     width="140"
+     height="170"
+     rx="10"
+     ry="10"
+     fill="white"
+     stroke="#e74c3c"
+     stroke-width="2"
+     id="rect20" />
+  <circle
+     cx="300"
+     cy="316"
+     r="15"
+     fill="#e74c3c"
+     id="circle3" />
+  <circle
+     cx="500"
+     cy="500"
+     r="15"
+     fill="#c0392b"
+     id="circle4" />
+  <circle
+     cx="700"
+     cy="300"
+     r="15"
+     fill="#f39c12"
+     id="circle5" />
+  <circle
+     cx="900"
+     cy="500"
+     r="15"
+     fill="#2ecc71"
+     id="circle6" />
+  <circle
+     cx="1100"
+     cy="400"
+     r="15"
+     fill="#16a085"
+     id="circle7" />
+  <!-- Phase Labels -->
+  <text
+     x="100"
+     y="440"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#3498db"
+     id="text7">Pre-Conflict</text>
+  <text
+     x="300"
+     y="356"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#e74c3c"
+     id="text8">Escalation</text>
+  <text
+     x="500"
+     y="540"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#c0392b"
+     id="text9">Violent Conflict</text>
+  <text
+     x="700"
+     y="340"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#f39c12"
+     id="text10">De-escalation</text>
+  <text
+     x="900"
+     y="540"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2ecc71"
+     id="text11">Post-Conflict</text>
+  <text
+     x="1108"
+     y="450"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#16a085"
+     id="text12">Sustainable Peace</text>
+  <!-- Phase Content Boxes -->
+  <!-- Pre-Conflict -->
+  <rect
+     x="40"
+     y="120"
+     width="140"
+     height="220"
+     rx="10"
+     ry="10"
+     fill="white"
+     stroke="#3498db"
+     stroke-width="2"
+     id="rect12" />
+  <text
+     x="110"
+     y="145"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#3498db"
+     id="text13">Pre-Conflict</text>
+  <text
+     x="50"
+     y="170"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text14">• Latent tensions</text>
+  <text
+     x="50"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text15">• Early warning</text>
+  <text
+     x="50"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text16">• Grievance mapping</text>
+  <text
+     x="50"
+     y="245"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text17">• Preventive diplomacy</text>
+  <text
+     x="50"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text18">• Multi-stakeholder</text>
+  <text
+     x="50"
+     y="295"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text19">  dialogue</text>
+  <text
+     x="50"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text20">• Structural prevention</text>
+  <!-- Escalation -->
+  <text
+     x="300"
+     y="145"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#e74c3c"
+     id="text21">Escalation</text>
+  <text
+     x="240"
+     y="170"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text22">• Trigger events</text>
+  <text
+     x="240"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text23">• Mobilization</text>
+  <text
+     x="240"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text24">• Polarization</text>
+  <text
+     x="240"
+     y="245"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text25">• Crisis intervention</text>
+  <text
+     x="240"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text26">• De-escalation tactics</text>
+  <!-- Violent Conflict -->
+  <rect
+     x="430"
+     y="298"
+     width="140"
+     height="170"
+     rx="10"
+     ry="10"
+     fill="#ffffff"
+     stroke="#c0392b"
+     stroke-width="2"
+     id="rect26" />
+  <text
+     x="500"
+     y="323"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#c0392b"
+     id="text27">Violent Conflict</text>
+  <text
+     x="440"
+     y="348"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text28">• Types of violence</text>
+  <text
+     x="440"
+     y="373"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text29">• Civilian protection</text>
+  <text
+     x="440"
+     y="398"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text30">• Humanitarian action</text>
+  <text
+     x="440"
+     y="423"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text31">• Peacekeeping</text>
+  <text
+     x="440"
+     y="448"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text32">• Mediation efforts</text>
+  <!-- De-escalation -->
+  <rect
+     x="620"
+     y="104"
+     width="140"
+     height="170"
+     rx="10"
+     ry="10"
+     fill="#ffffff"
+     stroke="#f39c12"
+     stroke-width="2"
+     id="rect32" />
+  <text
+     x="690"
+     y="129"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#f39c12"
+     id="text33">De-escalation</text>
+  <text
+     x="630"
+     y="154"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text34">• Ceasefire processes</text>
+  <text
+     x="630"
+     y="179"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text35">• Dialogue initiation</text>
+  <text
+     x="630"
+     y="204"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text36">• Trust-building</text>
+  <text
+     x="630"
+     y="229"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text37">• Peace negotiations</text>
+  <text
+     x="630"
+     y="254"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text38">• Third-party mediation</text>
+  <!-- Post-Conflict -->
+  <rect
+     x="820"
+     y="298"
+     width="140"
+     height="170"
+     rx="10"
+     ry="10"
+     fill="#ffffff"
+     stroke="#2ecc71"
+     stroke-width="2"
+     id="rect38" />
+  <text
+     x="890"
+     y="323"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2ecc71"
+     id="text39">Post-Conflict</text>
+  <text
+     x="830"
+     y="348"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text40">• Peace agreements</text>
+  <text
+     x="830"
+     y="373"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text41">• Transitional justice</text>
+  <text
+     x="830"
+     y="398"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text42">• Reconciliation</text>
+  <text
+     x="830"
+     y="423"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text43">• Institutional reform</text>
+  <text
+     x="830"
+     y="448"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#333333"
+     id="text44">• Economic recovery</text>
+  <!-- Sustainable Peace -->
+  <rect
+     x="1020"
+     y="120"
+     width="140"
+     height="220"
+     rx="10"
+     ry="10"
+     fill="white"
+     stroke="#16a085"
+     stroke-width="2"
+     id="rect44" />
+  <text
+     x="1090"
+     y="145"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#16a085"
+     id="text45">Sustainable Peace</text>
+  <text
+     x="1030"
+     y="170"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text46">• Positive peace</text>
+  <text
+     x="1030"
+     y="195"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text47">• Resilience factors</text>
+  <text
+     x="1030"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text48">• Inclusive governance</text>
+  <text
+     x="1030"
+     y="245"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text49">• Structural equity</text>
+  <text
+     x="1030"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text50">• Social cohesion</text>
+  <text
+     x="1030"
+     y="295"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text51">• Prevention culture</text>
+  <text
+     x="1030"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text52">• Ongoing maintenance</text>
+  <!-- Governance Approaches Section -->
+  <text
+     x="600"
+     y="600"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text53">Governance Approaches for Each Phase</text>
+  <rect
+     x="100"
+     y="620"
+     width="300"
+     height="140"
+     rx="10"
+     ry="10"
+     fill="white"
+     stroke="#666"
+     stroke-width="2"
+     id="rect53" />
+  <text
+     x="110"
+     y="640"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#333"
+     id="text54">Early Phases (Pre-Conflict, Escalation)</text>
+  <text
+     x="110"
+     y="665"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text55">• Early warning networks linking local-global</text>
+  <text
+     x="110"
+     y="690"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text56">• Preventive diplomacy across multiple tracks</text>
+  <text
+     x="110"
+     y="715"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text57">• Structured dialogue on root causes</text>
+  <text
+     x="110"
+     y="740"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text58">• Resource-sharing and power-sharing frameworks</text>
+  <rect
+     x="450.04871"
+     y="620.04871"
+     width="330.16263"
+     height="139.90259"
+     rx="11.005422"
+     ry="9.9930429"
+     fill="#ffffff"
+     stroke="#666666"
+     stroke-width="2"
+     id="rect58" />
+  <text
+     x="460"
+     y="640"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#333"
+     id="text59">Middle Phases (Violent Conflict, De-escalation)</text>
+  <text
+     x="460"
+     y="665"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text60">• Civilian protection mechanisms</text>
+  <text
+     x="460"
+     y="690"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text61">• Multi-track dialogue platforms</text>
+  <text
+     x="460"
+     y="715"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text62">• Ceasefire verification and monitoring</text>
+  <text
+     x="460"
+     y="740"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text63">• Peace agreement design with implementation protocols</text>
+  <rect
+     x="800.06494"
+     y="620.06494"
+     width="340.5321"
+     height="139.87016"
+     rx="11.35107"
+     ry="9.9907255"
+     fill="#ffffff"
+     stroke="#666666"
+     stroke-width="2"
+     id="rect63" />
+  <text
+     x="810"
+     y="640"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     fill="#333"
+     id="text64">Later Phases (Post-Conflict, Sustainable Peace)</text>
+  <text
+     x="810"
+     y="665"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text65">• Transitional justice and reconciliation processes</text>
+  <text
+     x="810"
+     y="690"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text66">• Institutional reform and inclusive governance</text>
+  <text
+     x="810"
+     y="715"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text67">• Trauma-informed community healing</text>
+  <text
+     x="810"
+     y="740"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     fill="#333"
+     id="text68">• Structural prevention frameworks for lasting peace</text>
+  <!-- Footer -->
+  <text
+     x="600"
+     y="780"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="#666"
+     id="text69">© 2025 Global Governance Framework | www.globalgovernanceframework.org</text>
+</svg>

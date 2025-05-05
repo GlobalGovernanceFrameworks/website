@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 630"
+   width="1200"
+   height="630"
+   version="1.1"
+   id="svg92"
+   sodipodi:docname="ogimage.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview92"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.3428571"
+     inkscape:cx="599.84043"
+     inkscape:cy="315"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg92" />
+  <defs
+     id="defs8">
+    <!-- Gradients from the original logo -->
+    <linearGradient
+       id="cosmicGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         id="stop1" />
+      <!-- Deep blue -->
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         id="stop2" />
+      <!-- Violet -->
+    </linearGradient>
+    <linearGradient
+       id="earthyGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2D5F2D"
+         id="stop3" />
+      <!-- Deep green -->
+      <stop
+         offset="100%"
+         stop-color="#7D9F7D"
+         id="stop4" />
+      <!-- Lighter earthy green -->
+    </linearGradient>
+    <linearGradient
+       id="goldGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#B8860B"
+         id="stop5" />
+      <!-- Dark gold -->
+      <stop
+         offset="100%"
+         stop-color="#DAA520"
+         id="stop6" />
+      <!-- Golden yellow -->
+    </linearGradient>
+    <!-- Filters for glow effects -->
+    <filter
+       id="glow"
+       x="-0.18461538"
+       y="-0.18461538"
+       width="1.3692308"
+       height="1.3692308">
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur6" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="over"
+         id="feComposite6" />
+    </filter>
+    <!-- Filter for text shadow -->
+    <filter
+       id="textShadow"
+       x="-0.010974246"
+       y="-0.022321931"
+       width="1.0265211"
+       height="1.0539447">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="2"
+         result="blur"
+         id="feGaussianBlur7" />
+      <feOffset
+         in="blur"
+         dx="2"
+         dy="2"
+         result="offsetBlur"
+         id="feOffset7" />
+      <feComponentTransfer
+         in="offsetBlur"
+         result="darkenedBlur"
+         id="feComponentTransfer7">
+        <feFuncA
+           type="linear"
+           slope="0.4"
+           id="feFuncA7" />
+      </feComponentTransfer>
+      <feMerge
+         id="feMerge8">
+        <feMergeNode
+           in="darkenedBlur"
+           id="feMergeNode7" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode8" />
+      </feMerge>
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#cosmicGradient"
+       id="linearGradient92"
+       x1="5"
+       y1="5"
+       x2="45"
+       y2="45"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(420,460)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#earthyGradient"
+       id="linearGradient93"
+       x1="205"
+       y1="5"
+       x2="245"
+       y2="45"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(420,460)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#goldGradient"
+       id="linearGradient94"
+       x1="405"
+       y1="5"
+       x2="445"
+       y2="45"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(420,460)" />
+  </defs>
+  <!-- Background gradient -->
+  <rect
+     width="1200"
+     height="630"
+     fill="url(#cosmicGradient)"
+     id="rect8" />
+  <!-- Abstract network pattern with connecting lines -->
+  <g
+     opacity="0.15"
+     id="g59">
+    <!-- Network dots -->
+    <circle
+       cx="200"
+       cy="150"
+       r="5"
+       fill="white"
+       id="circle8" />
+    <circle
+       cx="350"
+       cy="100"
+       r="5"
+       fill="white"
+       id="circle9" />
+    <circle
+       cx="500"
+       cy="180"
+       r="5"
+       fill="white"
+       id="circle10" />
+    <circle
+       cx="650"
+       cy="120"
+       r="5"
+       fill="white"
+       id="circle11" />
+    <circle
+       cx="800"
+       cy="150"
+       r="5"
+       fill="white"
+       id="circle12" />
+    <circle
+       cx="950"
+       cy="100"
+       r="5"
+       fill="white"
+       id="circle13" />
+    <circle
+       cx="1100"
+       cy="180"
+       r="5"
+       fill="white"
+       id="circle14" />
+    <circle
+       cx="150"
+       cy="300"
+       r="5"
+       fill="white"
+       id="circle15" />
+    <circle
+       cx="300"
+       cy="250"
+       r="5"
+       fill="white"
+       id="circle16" />
+    <circle
+       cx="450"
+       cy="330"
+       r="5"
+       fill="white"
+       id="circle17" />
+    <circle
+       cx="600"
+       cy="270"
+       r="5"
+       fill="white"
+       id="circle18" />
+    <circle
+       cx="750"
+       cy="300"
+       r="5"
+       fill="white"
+       id="circle19" />
+    <circle
+       cx="900"
+       cy="250"
+       r="5"
+       fill="white"
+       id="circle20" />
+    <circle
+       cx="1050"
+       cy="330"
+       r="5"
+       fill="white"
+       id="circle21" />
+    <circle
+       cx="200"
+       cy="450"
+       r="5"
+       fill="white"
+       id="circle22" />
+    <circle
+       cx="350"
+       cy="400"
+       r="5"
+       fill="white"
+       id="circle23" />
+    <circle
+       cx="500"
+       cy="480"
+       r="5"
+       fill="white"
+       id="circle24" />
+    <circle
+       cx="650"
+       cy="420"
+       r="5"
+       fill="white"
+       id="circle25" />
+    <circle
+       cx="800"
+       cy="450"
+       r="5"
+       fill="white"
+       id="circle26" />
+    <circle
+       cx="950"
+       cy="400"
+       r="5"
+       fill="white"
+       id="circle27" />
+    <circle
+       cx="1100"
+       cy="480"
+       r="5"
+       fill="white"
+       id="circle28" />
+    <!-- Connection lines -->
+    <line
+       x1="200"
+       y1="150"
+       x2="350"
+       y2="100"
+       stroke="white"
+       stroke-width="1"
+       id="line28" />
+    <line
+       x1="350"
+       y1="100"
+       x2="500"
+       y2="180"
+       stroke="white"
+       stroke-width="1"
+       id="line29" />
+    <line
+       x1="500"
+       y1="180"
+       x2="650"
+       y2="120"
+       stroke="white"
+       stroke-width="1"
+       id="line30" />
+    <line
+       x1="650"
+       y1="120"
+       x2="800"
+       y2="150"
+       stroke="white"
+       stroke-width="1"
+       id="line31" />
+    <line
+       x1="800"
+       y1="150"
+       x2="950"
+       y2="100"
+       stroke="white"
+       stroke-width="1"
+       id="line32" />
+    <line
+       x1="950"
+       y1="100"
+       x2="1100"
+       y2="180"
+       stroke="white"
+       stroke-width="1"
+       id="line33" />
+    <line
+       x1="150"
+       y1="300"
+       x2="300"
+       y2="250"
+       stroke="white"
+       stroke-width="1"
+       id="line34" />
+    <line
+       x1="300"
+       y1="250"
+       x2="450"
+       y2="330"
+       stroke="white"
+       stroke-width="1"
+       id="line35" />
+    <line
+       x1="450"
+       y1="330"
+       x2="600"
+       y2="270"
+       stroke="white"
+       stroke-width="1"
+       id="line36" />
+    <line
+       x1="600"
+       y1="270"
+       x2="750"
+       y2="300"
+       stroke="white"
+       stroke-width="1"
+       id="line37" />
+    <line
+       x1="750"
+       y1="300"
+       x2="900"
+       y2="250"
+       stroke="white"
+       stroke-width="1"
+       id="line38" />
+    <line
+       x1="900"
+       y1="250"
+       x2="1050"
+       y2="330"
+       stroke="white"
+       stroke-width="1"
+       id="line39" />
+    <line
+       x1="200"
+       y1="450"
+       x2="350"
+       y2="400"
+       stroke="white"
+       stroke-width="1"
+       id="line40" />
+    <line
+       x1="350"
+       y1="400"
+       x2="500"
+       y2="480"
+       stroke="white"
+       stroke-width="1"
+       id="line41" />
+    <line
+       x1="500"
+       y1="480"
+       x2="650"
+       y2="420"
+       stroke="white"
+       stroke-width="1"
+       id="line42" />
+    <line
+       x1="650"
+       y1="420"
+       x2="800"
+       y2="450"
+       stroke="white"
+       stroke-width="1"
+       id="line43" />
+    <line
+       x1="800"
+       y1="450"
+       x2="950"
+       y2="400"
+       stroke="white"
+       stroke-width="1"
+       id="line44" />
+    <line
+       x1="950"
+       y1="400"
+       x2="1100"
+       y2="480"
+       stroke="white"
+       stroke-width="1"
+       id="line45" />
+    <!-- Vertical connections -->
+    <line
+       x1="200"
+       y1="150"
+       x2="150"
+       y2="300"
+       stroke="white"
+       stroke-width="1"
+       id="line46" />
+    <line
+       x1="350"
+       y1="100"
+       x2="300"
+       y2="250"
+       stroke="white"
+       stroke-width="1"
+       id="line47" />
+    <line
+       x1="500"
+       y1="180"
+       x2="450"
+       y2="330"
+       stroke="white"
+       stroke-width="1"
+       id="line48" />
+    <line
+       x1="650"
+       y1="120"
+       x2="600"
+       y2="270"
+       stroke="white"
+       stroke-width="1"
+       id="line49" />
+    <line
+       x1="800"
+       y1="150"
+       x2="750"
+       y2="300"
+       stroke="white"
+       stroke-width="1"
+       id="line50" />
+    <line
+       x1="950"
+       y1="100"
+       x2="900"
+       y2="250"
+       stroke="white"
+       stroke-width="1"
+       id="line51" />
+    <line
+       x1="1100"
+       y1="180"
+       x2="1050"
+       y2="330"
+       stroke="white"
+       stroke-width="1"
+       id="line52" />
+    <line
+       x1="150"
+       y1="300"
+       x2="200"
+       y2="450"
+       stroke="white"
+       stroke-width="1"
+       id="line53" />
+    <line
+       x1="300"
+       y1="250"
+       x2="350"
+       y2="400"
+       stroke="white"
+       stroke-width="1"
+       id="line54" />
+    <line
+       x1="450"
+       y1="330"
+       x2="500"
+       y2="480"
+       stroke="white"
+       stroke-width="1"
+       id="line55" />
+    <line
+       x1="600"
+       y1="270"
+       x2="650"
+       y2="420"
+       stroke="white"
+       stroke-width="1"
+       id="line56" />
+    <line
+       x1="750"
+       y1="300"
+       x2="800"
+       y2="450"
+       stroke="white"
+       stroke-width="1"
+       id="line57" />
+    <line
+       x1="900"
+       y1="250"
+       x2="950"
+       y2="400"
+       stroke="white"
+       stroke-width="1"
+       id="line58" />
+    <line
+       x1="1050"
+       y1="330"
+       x2="1100"
+       y2="480"
+       stroke="white"
+       stroke-width="1"
+       id="line59" />
+  </g>
+  <!-- Logo -->
+  <g
+     transform="translate(200, 315) scale(0.8)"
+     id="g84">
+    <!-- Outer circle representing global scope -->
+    <circle
+       cx="100"
+       cy="100"
+       r="96"
+       stroke="white"
+       stroke-width="2.5"
+       fill="none"
+       filter="url(#glow)"
+       id="circle59" />
+    <!-- National level (inner circle) -->
+    <circle
+       cx="100"
+       cy="100"
+       r="40"
+       stroke="#6B5CA5"
+       stroke-width="1"
+       stroke-opacity="0.8"
+       stroke-dasharray="2 2"
+       fill="none"
+       id="circle60" />
+    <!-- Global to National connections -->
+    <line
+       x1="106"
+       y1="86"
+       x2="116"
+       y2="64"
+       stroke="url(#cosmicGradient)"
+       stroke-width="1.2"
+       stroke-opacity="0.8"
+       id="line60" />
+    <line
+       x1="90"
+       y1="94"
+       x2="60"
+       y2="90"
+       stroke="url(#cosmicGradient)"
+       stroke-width="1.2"
+       stroke-opacity="0.8"
+       id="line61" />
+    <line
+       x1="94"
+       y1="112"
+       x2="80"
+       y2="144"
+       stroke="url(#cosmicGradient)"
+       stroke-width="1.2"
+       stroke-opacity="0.8"
+       id="line62" />
+    <line
+       x1="112"
+       y1="108"
+       x2="144"
+       y2="124"
+       stroke="url(#cosmicGradient)"
+       stroke-width="1.2"
+       stroke-opacity="0.8"
+       id="line63" />
+    <line
+       x1="110"
+       y1="88"
+       x2="140"
+       y2="70"
+       stroke="url(#cosmicGradient)"
+       stroke-width="1.2"
+       stroke-opacity="0.8"
+       id="line64" />
+    <!-- Regional level -->
+    <circle
+       cx="100"
+       cy="100"
+       r="68"
+       stroke="#7D9F7D"
+       stroke-width="1"
+       stroke-opacity="0.6"
+       stroke-dasharray="3 3"
+       fill="none"
+       id="circle64" />
+    <!-- Global core (center) -->
+    <circle
+       cx="100"
+       cy="100"
+       r="19.5"
+       fill="url(#goldGradient)"
+       filter="url(#glow)"
+       id="circle65" />
+    <!-- Key nodes -->
+    <circle
+       cx="116"
+       cy="64"
+       r="9.3"
+       fill="url(#goldGradient)"
+       fill-opacity="0.9"
+       id="circle66" />
+    <circle
+       cx="60"
+       cy="90"
+       r="8.6"
+       fill="url(#goldGradient)"
+       fill-opacity="0.9"
+       id="circle67" />
+    <circle
+       cx="80"
+       cy="144"
+       r="8"
+       fill="url(#goldGradient)"
+       fill-opacity="0.9"
+       id="circle68" />
+    <circle
+       cx="144"
+       cy="124"
+       r="7"
+       fill="url(#goldGradient)"
+       fill-opacity="0.9"
+       id="circle69" />
+    <circle
+       cx="140"
+       cy="70"
+       r="6.7"
+       fill="url(#goldGradient)"
+       fill-opacity="0.9"
+       id="circle70" />
+    <!-- Secondary nodes -->
+    <circle
+       cx="124"
+       cy="40"
+       r="5.2"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle71" />
+    <circle
+       cx="103"
+       cy="34"
+       r="5.3"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle72" />
+    <circle
+       cx="136"
+       cy="54"
+       r="4"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle73" />
+    <circle
+       cx="43"
+       cy="75"
+       r="4.7"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle74" />
+    <circle
+       cx="32"
+       cy="96"
+       r="6.6"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle75" />
+    <circle
+       cx="39"
+       cy="117"
+       r="5.2"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle76" />
+    <circle
+       cx="55"
+       cy="152"
+       r="5.4"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle77" />
+    <circle
+       cx="76"
+       cy="168"
+       r="5.2"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle78" />
+    <circle
+       cx="100"
+       cy="156"
+       r="5.8"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle79" />
+    <circle
+       cx="155"
+       cy="103"
+       r="5.1"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle80" />
+    <circle
+       cx="169"
+       cy="115"
+       r="4.6"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle81" />
+    <circle
+       cx="166"
+       cy="136"
+       r="5.6"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle82" />
+    <circle
+       cx="158"
+       cy="58"
+       r="5.9"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle83" />
+    <circle
+       cx="165"
+       cy="79"
+       r="5.4"
+       fill="url(#earthyGradient)"
+       fill-opacity="0.8"
+       id="circle84" />
+  </g>
+  <!-- Title and Subtitle -->
+  <g
+     transform="translate(420,235)"
+     filter="url(#textShadow)"
+     id="g87">
+    <text
+       x="0"
+       y="0"
+       font-family="Arial, sans-serif"
+       font-size="48px"
+       font-weight="700"
+       fill="#ffffff"
+       id="text84">Global Governance</text>
+    <text
+       x="0"
+       y="70"
+       font-family="Arial, sans-serif"
+       font-size="48px"
+       font-weight="700"
+       fill="#ffffff"
+       id="text85">Framework</text>
+    <text
+       x="0"
+       y="140"
+       font-family="Arial, sans-serif"
+       font-size="26px"
+       fill="#ffffff"
+       id="text86">Connecting governance innovations</text>
+    <text
+       x="0"
+       y="180"
+       font-family="Arial, sans-serif"
+       font-size="26px"
+       fill="#ffffff"
+       id="text87">across the world</text>
+  </g>
+  <!-- Three key feature indicators -->
+  <circle
+     cx="445"
+     cy="485"
+     r="20"
+     fill="url(#cosmicGradient)"
+     id="circle87"
+     style="fill:url(#linearGradient92)" />
+  <text
+     x="480"
+     y="492"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     fill="#ffffff"
+     id="text88">Interoperability</text>
+  <circle
+     cx="645"
+     cy="485"
+     r="20"
+     fill="url(#earthyGradient)"
+     id="circle88"
+     style="fill:url(#linearGradient93)" />
+  <text
+     x="680"
+     y="492"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     fill="#ffffff"
+     id="text89">Open Source</text>
+  <circle
+     cx="845"
+     cy="485"
+     r="20"
+     fill="url(#goldGradient)"
+     id="circle89"
+     style="fill:url(#linearGradient94)" />
+  <text
+     x="880"
+     y="492"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     fill="#ffffff"
+     id="text90">Global Patterns</text>
+  <!-- Website URL -->
+  <text
+     x="600"
+     y="600"
+     font-family="Arial, sans-serif"
+     font-size="18"
+     text-anchor="middle"
+     fill="white"
+     id="text91">
+    www.globalgovernanceframework.org
+  </text>
+  <!-- Copyright -->
+  <text
+     x="600"
+     y="570"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="white"
+     opacity="0.7"
+     id="text92">
+    © 2025 Global Governance Framework
+  </text>
+</svg>

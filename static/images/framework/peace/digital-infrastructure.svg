@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 775"
+   version="1.1"
+   id="svg94"
+   sodipodi:docname="digital-infrastructure.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   width="900"
+   height="775"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs94" />
+  <sodipodi:namedview
+     id="namedview94"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.85458905"
+     inkscape:cx="377.37436"
+     inkscape:cy="388.49082"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg94" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="774.46808"
+     fill="#f8f9fa"
+     rx="10"
+     ry="11.063829"
+     id="rect1"
+     x="10"
+     y="0"
+     style="stroke-width:1.05185" />
+  <!-- Title -->
+  <text
+     x="450"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text1">Digital Peace Infrastructure Map</text>
+  <text
+     x="450"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text2">Integrated Technology Ecosystem for Peace Governance</text>
+  <!-- Central Hub -->
+  <circle
+     cx="450"
+     cy="382"
+     r="100"
+     fill="#daa520"
+     fill-opacity="0.2"
+     stroke="#daa520"
+     stroke-width="2"
+     id="circle2" />
+  <text
+     x="450"
+     y="362"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text3">Peace Data</text>
+  <text
+     x="450"
+     y="382"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text4">Coordination</text>
+  <text
+     x="450"
+     y="402"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text5">Hub</text>
+  <circle
+     cx="450"
+     cy="442"
+     r="20"
+     fill="#ffffff"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle5" />
+  <text
+     x="450"
+     y="447"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text6">Ethical</text>
+  <text
+     x="450"
+     y="457"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text7">AI</text>
+  <!-- Early Warning System Cluster -->
+  <circle
+     cx="198.96571"
+     cy="232"
+     r="137.43744"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="2.29062"
+     id="circle7" />
+  <text
+     x="200"
+     y="130"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text8">Early Warning</text>
+  <text
+     x="200"
+     y="150"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text9">Systems</text>
+  <circle
+     cx="130"
+     cy="202"
+     r="40"
+     fill="#ffffff"
+     stroke="#2d5f2d"
+     stroke-width="1.5"
+     id="circle9" />
+  <text
+     x="130"
+     y="197"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text10">Sensor</text>
+  <text
+     x="130"
+     y="212"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text11">Networks</text>
+  <circle
+     cx="98"
+     cy="246"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle11" />
+  <text
+     x="98"
+     y="249"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text12">Remote</text>
+  <circle
+     cx="108"
+     cy="154"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle12" />
+  <text
+     x="108"
+     y="157"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text13">Satellite</text>
+  <circle
+     cx="144"
+     cy="156"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle13" />
+  <text
+     x="144"
+     y="155"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text14">Crowd-</text>
+  <text
+     x="144"
+     y="161"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text15">sourced</text>
+  <circle
+     cx="270"
+     cy="202"
+     r="40"
+     fill="#ffffff"
+     stroke="#2d5f2d"
+     stroke-width="1.5"
+     id="circle15" />
+  <text
+     x="270"
+     y="197"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text16">Analysis</text>
+  <text
+     x="270"
+     y="212"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text17">Engine</text>
+  <circle
+     cx="220"
+     cy="182"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle17" />
+  <text
+     x="220"
+     y="185"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text18">Pattern</text>
+  <circle
+     cx="276"
+     cy="150"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle18" />
+  <text
+     x="276"
+     y="153"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text19">Risk</text>
+  <text
+     x="276"
+     y="163"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text20">Models</text>
+  <circle
+     cx="288"
+     cy="230"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle20" />
+  <text
+     x="288"
+     y="233"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text21">NLP</text>
+  <circle
+     cx="200"
+     cy="282"
+     r="40"
+     fill="#ffffff"
+     stroke="#2d5f2d"
+     stroke-width="1.5"
+     id="circle21" />
+  <text
+     x="200"
+     y="277"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text22">Alert</text>
+  <text
+     x="200"
+     y="292"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text23">System</text>
+  <circle
+     cx="148"
+     cy="280"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle23" />
+  <text
+     x="148"
+     y="283"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text24">SMS</text>
+  <circle
+     cx="170"
+     cy="328"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle24" />
+  <text
+     x="170"
+     y="331"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text25">Radio</text>
+  <circle
+     cx="210"
+     cy="230"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle25" />
+  <text
+     x="210"
+     y="233"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text26">Mobile</text>
+  <text
+     x="210"
+     y="243"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text27">App</text>
+  <circle
+     cx="252"
+     cy="300"
+     r="15"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="circle27" />
+  <text
+     x="252"
+     y="303"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text28">Off-grid</text>
+  <line
+     x1="170"
+     y1="202"
+     x2="230"
+     y2="202"
+     stroke="#2d5f2d"
+     stroke-width="2"
+     id="line28" />
+  <polygon
+     points="225,175 235,170 225,165 "
+     fill="#2d5f2d"
+     id="polygon28"
+     transform="translate(0,32)" />
+  <line
+     x1="270"
+     y1="242"
+     x2="235"
+     y2="267"
+     stroke="#2d5f2d"
+     stroke-width="2"
+     id="line29" />
+  <polygon
+     points="238,230 230,240 240,240 "
+     fill="#2d5f2d"
+     id="polygon29"
+     transform="translate(0,32)" />
+  <line
+     x1="130"
+     y1="242"
+     x2="165"
+     y2="267"
+     stroke="#2d5f2d"
+     stroke-width="2"
+     id="line30" />
+  <polygon
+     points="162,230 170,240 160,240 "
+     fill="#2d5f2d"
+     id="polygon30"
+     transform="translate(0,32)" />
+  <!-- Communication Platforms Cluster -->
+  <circle
+     cx="700.82739"
+     cy="222.48462"
+     r="129.43672"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="2.15728"
+     id="circle30" />
+  <text
+     x="708"
+     y="136"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text30">Communication</text>
+  <text
+     x="708"
+     y="156"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text31">Platforms</text>
+  <circle
+     cx="638"
+     cy="210"
+     r="40"
+     fill="#ffffff"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     id="circle31" />
+  <text
+     x="638"
+     y="205"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text32">Dialogue</text>
+  <text
+     x="638"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text33">Tools</text>
+  <circle
+     cx="608"
+     cy="256"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle33" />
+  <text
+     x="608"
+     y="259"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text34">Secure</text>
+  <circle
+     cx="606"
+     cy="166"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle34" />
+  <text
+     x="606"
+     y="169"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text35">Video</text>
+  <circle
+     cx="646"
+     cy="160"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle35" />
+  <text
+     x="646"
+     y="163"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text36">Text</text>
+  <circle
+     cx="778"
+     cy="210"
+     r="40"
+     fill="#ffffff"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     id="circle36" />
+  <text
+     x="778"
+     y="205"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text37">Translation</text>
+  <text
+     x="778"
+     y="220"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text38">Services</text>
+  <circle
+     cx="738"
+     cy="190"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle38" />
+  <text
+     x="738"
+     y="193"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text39">Real-time</text>
+  <circle
+     cx="768"
+     cy="170"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle39" />
+  <text
+     x="768"
+     y="173"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text40">Cultural</text>
+  <circle
+     cx="798"
+     cy="190"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle40" />
+  <text
+     x="798"
+     y="193"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text41">ML</text>
+  <circle
+     cx="708"
+     cy="290"
+     r="40"
+     fill="#ffffff"
+     stroke="#6b5ca5"
+     stroke-width="1.5"
+     id="circle41" />
+  <text
+     x="708"
+     y="285"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text42">Mediation</text>
+  <text
+     x="708"
+     y="300"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text43">Support</text>
+  <circle
+     cx="692"
+     cy="238"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle43" />
+  <text
+     x="692"
+     y="241"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text44">Virtual</text>
+  <circle
+     cx="656"
+     cy="302"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle44" />
+  <text
+     x="656"
+     y="305"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text45">AI</text>
+  <text
+     x="656"
+     y="315"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text46">Assist</text>
+  <circle
+     cx="722"
+     cy="238"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle46" />
+  <text
+     x="722"
+     y="235"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text47">Conflict</text>
+  <text
+     x="722"
+     y="245"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text48">Mapping</text>
+  <circle
+     cx="760"
+     cy="306"
+     r="15"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="circle48" />
+  <text
+     x="760"
+     y="309"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text49">Scenario</text>
+  <line
+     x1="678"
+     y1="210"
+     x2="738"
+     y2="210"
+     stroke="#6b5ca5"
+     stroke-width="2"
+     id="line49" />
+  <polygon
+     points="725,165 725,175 735,170 "
+     fill="#6b5ca5"
+     id="polygon49"
+     transform="translate(8,40)" />
+  <line
+     x1="778"
+     y1="250"
+     x2="743"
+     y2="275"
+     stroke="#6b5ca5"
+     stroke-width="2"
+     id="line50" />
+  <polygon
+     points="740,240 738,230 730,240 "
+     fill="#6b5ca5"
+     id="polygon50"
+     transform="translate(8,40)" />
+  <line
+     x1="638"
+     y1="250"
+     x2="673"
+     y2="275"
+     stroke="#6b5ca5"
+     stroke-width="2"
+     id="line51" />
+  <polygon
+     points="660,240 662,230 670,240 "
+     fill="#6b5ca5"
+     id="polygon51"
+     transform="translate(8,40)" />
+  <!-- Documentation & Verification System Cluster -->
+  <circle
+     cx="196.06973"
+     cy="521.45032"
+     r="130.46245"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="2.17438"
+     id="circle51" />
+  <text
+     x="200"
+     y="442"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text51">Documentation</text>
+  <text
+     x="200"
+     y="462"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text52">Verification</text>
+  <circle
+     cx="130"
+     cy="524"
+     r="40"
+     fill="#ffffff"
+     stroke="#2b4b8c"
+     stroke-width="1.5"
+     id="circle52" />
+  <text
+     x="130"
+     y="519"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text53">Evidence</text>
+  <text
+     x="130"
+     y="534"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text54">Collection</text>
+  <circle
+     cx="84"
+     cy="504"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle54" />
+  <text
+     x="84"
+     y="507"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text55">Mobile</text>
+  <circle
+     cx="110"
+     cy="478"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle55" />
+  <text
+     x="110"
+     y="481"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text56">Secure</text>
+  <circle
+     cx="166"
+     cy="484"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle56" />
+  <text
+     x="166"
+     y="487"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text57">Metadata</text>
+  <circle
+     cx="270"
+     cy="524"
+     r="40"
+     fill="#ffffff"
+     stroke="#2b4b8c"
+     stroke-width="1.5"
+     id="circle57" />
+  <text
+     x="270"
+     y="519"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text58">Verification</text>
+  <text
+     x="270"
+     y="534"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text59">System</text>
+  <circle
+     cx="222"
+     cy="496"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle59" />
+  <text
+     x="222"
+     y="499"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text60">Blockchain</text>
+  <circle
+     cx="274"
+     cy="470"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle60" />
+  <text
+     x="274"
+     y="473"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text61">Deep</text>
+  <text
+     x="274"
+     y="483"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text62">Fake</text>
+  <circle
+     cx="290"
+     cy="504"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle62" />
+  <text
+     x="290"
+     y="507"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text63">Expert</text>
+  <circle
+     cx="200"
+     cy="604"
+     r="40"
+     fill="#ffffff"
+     stroke="#2b4b8c"
+     stroke-width="1.5"
+     id="circle63" />
+  <text
+     x="200"
+     y="599"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text64">Secure</text>
+  <text
+     x="200"
+     y="614"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text65">Archive</text>
+  <circle
+     cx="176"
+     cy="572"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle65" />
+  <text
+     x="174"
+     y="577"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text66">Encrypted</text>
+  <circle
+     cx="148"
+     cy="624"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle66" />
+  <text
+     x="148"
+     y="627"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text67">Distributed</text>
+  <circle
+     cx="216"
+     cy="560"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle67" />
+  <text
+     x="216"
+     y="563"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text68">Search</text>
+  <circle
+     cx="254"
+     cy="614"
+     r="15"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="circle68" />
+  <text
+     x="254"
+     y="611"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text69">Access</text>
+  <text
+     x="254"
+     y="621"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text70">Control</text>
+  <line
+     x1="170"
+     y1="524"
+     x2="230"
+     y2="524"
+     stroke="#2b4b8c"
+     stroke-width="2"
+     id="line70" />
+  <polygon
+     points="225,465 225,475 235,470 "
+     fill="#2b4b8c"
+     id="polygon70"
+     transform="translate(0,54)" />
+  <line
+     x1="270"
+     y1="564"
+     x2="235"
+     y2="589"
+     stroke="#2b4b8c"
+     stroke-width="2"
+     id="line71" />
+  <polygon
+     points="240,540 238,530 230,540 "
+     fill="#2b4b8c"
+     id="polygon71"
+     transform="translate(0,54)" />
+  <line
+     x1="130"
+     y1="564"
+     x2="165"
+     y2="589"
+     stroke="#2b4b8c"
+     stroke-width="2"
+     id="line72" />
+  <polygon
+     points="170,540 160,540 162,530 "
+     fill="#2b4b8c"
+     id="polygon72"
+     transform="translate(2,52)" />
+  <!-- Coordination & Implementation Cluster -->
+  <circle
+     cx="700"
+     cy="532"
+     r="120"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="2"
+     id="circle72" />
+  <text
+     x="700"
+     y="442"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text72">Coordination</text>
+  <text
+     x="700"
+     y="462"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text73">Implementation</text>
+  <circle
+     cx="632"
+     cy="526"
+     r="40"
+     fill="#ffffff"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="circle73" />
+  <text
+     x="632"
+     y="521"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text74">Resource</text>
+  <text
+     x="632"
+     y="536"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text75">Management</text>
+  <circle
+     cx="610"
+     cy="574"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle75" />
+  <text
+     x="610"
+     y="577"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text76">Tracking</text>
+  <circle
+     cx="616"
+     cy="480"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle76" />
+  <text
+     x="616"
+     y="483"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text77">Allocation</text>
+  <circle
+     cx="672"
+     cy="490"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle77" />
+  <text
+     x="672"
+     y="493"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text78">Reporting</text>
+  <circle
+     cx="772"
+     cy="526"
+     r="40"
+     fill="#ffffff"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="circle78" />
+  <text
+     x="772"
+     y="521"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text79">Stakeholder</text>
+  <text
+     x="772"
+     y="536"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text80">Management</text>
+  <circle
+     cx="724"
+     cy="500"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle80" />
+  <text
+     x="724"
+     y="503"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text81">Mapping</text>
+  <circle
+     cx="778"
+     cy="472"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle81" />
+  <text
+     x="778"
+     y="475"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text82">Engagement</text>
+  <circle
+     cx="792"
+     cy="576"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle82" />
+  <text
+     x="792"
+     y="579"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text83">Feedback</text>
+  <circle
+     cx="702"
+     cy="606"
+     r="40"
+     fill="#ffffff"
+     stroke="#daa520"
+     stroke-width="1.5"
+     id="circle83" />
+  <text
+     x="702"
+     y="601"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text84">Implementation</text>
+  <text
+     x="702"
+     y="616"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text85">Tracking</text>
+  <circle
+     cx="682"
+     cy="564"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle85" />
+  <text
+     x="682"
+     y="567"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text86">Dashboards</text>
+  <circle
+     cx="648"
+     cy="620"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle86" />
+  <text
+     x="648"
+     y="623"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text87">Metrics</text>
+  <circle
+     cx="720"
+     cy="562"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle87" />
+  <text
+     x="720"
+     y="565"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text88">Alerts</text>
+  <circle
+     cx="756"
+     cy="618"
+     r="15"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="1"
+     id="circle88" />
+  <text
+     x="756"
+     y="621"
+     font-family="Arial, sans-serif"
+     font-size="8px"
+     text-anchor="middle"
+     id="text89">Reports</text>
+  <line
+     x1="672"
+     y1="526"
+     x2="732"
+     y2="526"
+     stroke="#daa520"
+     stroke-width="2"
+     id="line89" />
+  <polygon
+     points="735,470 725,465 725,475 "
+     fill="#daa520"
+     id="polygon89"
+     transform="translate(2,56)" />
+  <line
+     x1="772"
+     y1="566"
+     x2="737"
+     y2="591"
+     stroke="#daa520"
+     stroke-width="2"
+     id="line90" />
+  <polygon
+     points="730,540 740,540 738,530 "
+     fill="#daa520"
+     id="polygon90"
+     transform="translate(2,56)" />
+  <line
+     x1="632"
+     y1="566"
+     x2="667"
+     y2="591"
+     stroke="#daa520"
+     stroke-width="2"
+     id="line91" />
+  <polygon
+     points="670,540 660,540 662,530 "
+     fill="#daa520"
+     id="polygon91"
+     transform="translate(2,56)" />
+  <!-- Connections to Central Hub -->
+  <!-- Early Warning to Hub -->
+  <line
+     x1="250"
+     y1="332"
+     x2="375"
+     y2="357"
+     stroke="#2d5f2d"
+     stroke-width="3"
+     stroke-dasharray="10, 5"
+     id="line92" />
+  <polygon
+     points="380,325 370,320 370,330 "
+     fill="#2d5f2d"
+     id="polygon92"
+     transform="translate(0,32)" />
+  <text
+     x="175.43782"
+     y="425.77975"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#2d5f2d"
+     transform="rotate(-20)"
+     id="text92">Data Flow</text>
+  <!-- Communication to Hub -->
+  <line
+     x1="650"
+     y1="332"
+     x2="525"
+     y2="357"
+     stroke="#6b5ca5"
+     stroke-width="3"
+     stroke-dasharray="10, 5"
+     id="line93" />
+  <polygon
+     points="520,325 530,330 530,320 "
+     fill="#6b5ca5"
+     id="polygon93"
+     transform="translate(0,32)" />
+  <text
+     x="602.58441"
+     y="111.40115"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#6b5ca5"
+     transform="rotate(20)"
+     id="text93">Dialogue Support</text>
+  <!-- Documentation to Hub -->
+  <line
+     x1="273.56339"
+     y1="430.07599"
+     x2="375.01816"
+     y2="406.85547"
+     stroke="#2b4b8c"
+     stroke-width="3"
+     id="line94" />
+  <!-- Documentation to Hub -->
+  <line
+     x1="250"
+     y1="400"
+     x2="375"
+     y2="375"
+     stroke="#2b4b8c"
+     stroke-width="3"
+     stroke-dasharray="10, 5"
+     id="line1" />
+  <polygon
+     points="370,380 380,375 370,370 "
+     fill="#2b4b8c"
+     id="polygon1" />
+  <text
+     x="340.68954"
+     y="271.33005"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#2b4b8c"
+     transform="rotate(20)"
+     id="text29">Evidence Flow</text>
+  <!-- Coordination to Hub -->
+  <line
+     x1="650"
+     y1="400"
+     x2="525"
+     y2="375"
+     stroke="#daa520"
+     stroke-width="3"
+     stroke-dasharray="10, 5"
+     id="line31" />
+  <polygon
+     points="530,370 520,375 530,380 "
+     fill="#daa520"
+     id="polygon31" />
+  <text
+     x="362.46585"
+     y="601.3501"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#daa520"
+     transform="rotate(-20)"
+     id="text50">Resource Coordination</text>
+  <!-- Ethical Safeguards -->
+  <rect
+     x="50"
+     y="682"
+     width="800"
+     height="60"
+     rx="5"
+     ry="5"
+     fill="#2b4b8c"
+     fill-opacity="0.05"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="rect50" />
+  <text
+     x="450"
+     y="702"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text71">Ethical Safeguards &amp; Protection Mechanisms</text>
+  <text
+     x="450"
+     y="722"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text90">Privacy by Design • Human Oversight • Bias Detection • Offline Alternatives • Inclusion Mechanisms</text>
+  <!-- Legend -->
+  <rect
+     x="382"
+     y="134"
+     width="140"
+     height="90"
+     rx="5"
+     ry="5"
+     fill="#ffffff"
+     stroke="#666666"
+     stroke-width="1"
+     id="rect90" />
+  <text
+     x="452"
+     y="154"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     id="text91">Legend</text>
+  <circle
+     cx="402"
+     cy="174"
+     r="10"
+     fill="#2d5f2d"
+     fill-opacity="0.3"
+     id="circle91" />
+  <text
+     x="452"
+     y="178"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     id="text94">Early Warning</text>
+  <circle
+     cx="402"
+     cy="194"
+     r="10"
+     fill="#6b5ca5"
+     fill-opacity="0.3"
+     id="circle94" />
+  <text
+     x="452"
+     y="198"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     id="text95">Communication</text>
+  <circle
+     cx="402"
+     cy="214"
+     r="10"
+     fill="#2b4b8c"
+     fill-opacity="0.3"
+     id="circle95" />
+  <text
+     x="452"
+     y="218"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     id="text96">Documentation</text>
+  <!-- Copyright -->
+  <text
+     x="450"
+     y="766"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text97">© 2025 Global Governance Framework | www.globalgovernanceframework.org</text>
+</svg>
