@@ -404,6 +404,9 @@
               <a href="{base}/framework/tools" class={isActive('/framework/tools') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkTools')}
               </a>
+              <a href="{base}/framework/visuals" class={isActive('/framework/visuals') ? 'active' : ''} data-sveltekit-preload-data="hover">
+                {$t('common.header.frameworkVisuals')}
+              </a>
               <a href="{base}/framework/docs/case-studies" class={isActive('/framework/docs/case-studies') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkCaseStudies')}
               </a>

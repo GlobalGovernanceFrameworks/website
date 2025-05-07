@@ -61,7 +61,7 @@ export const borderStatusData: BorderStatus[] = [
       { lat: 45.0, lng: 15.0 }
     ],
     status: 'hardening',
-    details: 'Increased fortification and surveillance of the European Union's external borders, particularly in response to migration pressures.' 
+    details: 'Increased fortification and surveillance of the European Union\'s external borders, particularly in response to migration pressures.' 
   },
   { 
     id: 'b2', 

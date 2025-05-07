@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 650"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="governance-architecture-sv.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs54" />
+  <sodipodi:namedview
+     id="namedview54"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.92032667"
+     inkscape:cx="487.32696"
+     inkscape:cy="348.7892"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <!-- Bakgrund -->
+  <rect
+     width="900"
+     height="650"
+     fill="#f8f9fa"
+     rx="10"
+     ry="10"
+     id="rect1" />
+  <!-- Titel -->
+  <text
+     x="450"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2B4B8C"
+     id="text1">
+    Arkitektur för Fredlig Styrning
+  </text>
+  <text
+     x="450"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     fill="#2D5F2D"
+     id="text2">
+    Fler-nivåsystem för konfliktförebyggande, lösning och transformation
+  </text>
+  <!-- Global Nivå -->
+  <rect
+     x="150"
+     y="82"
+     width="600"
+     height="120"
+     rx="8"
+     ry="8"
+     fill="#2b4b8c"
+     fill-opacity="0.1"
+     stroke="#2b4b8c"
+     stroke-width="2"
+     id="rect2" />
+  <text
+     x="450"
+     y="102"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text3">GLOBAL STYRNINGSNIVÅ</text>
+  <!-- Globala Institutioner -->
+  <rect
+     x="170"
+     y="112"
+     width="160"
+     height="80"
+     rx="5"
+     ry="5"
+     fill="#2b4b8c"
+     fill-opacity="0.2"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="rect3" />
+  <text
+     x="250"
+     y="137"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text4">Globala Institutioner</text>
+  <text
+     x="250"
+     y="157"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text5">FN:s säkerhetsråd</text>
+  <text
+     x="250"
+     y="172"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text6">Internationella domstolen</text>
+  <!-- Globala Ramverk -->
+  <rect
+     x="370"
+     y="112"
+     width="160"
+     height="80"
+     rx="5"
+     ry="5"
+     fill="#2b4b8c"
+     fill-opacity="0.2"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="rect6" />
+  <text
+     x="450"
+     y="137"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text7">Normativa Ramverk</text>
+  <text
+     x="450"
+     y="157"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text8">Internationell humanitär rätt</text>
+  <text
+     x="450"
+     y="172"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text9">R2P-doktrinen</text>
+  <!-- Globala Fredssystem -->
+  <rect
+     x="570"
+     y="112"
+     width="160"
+     height="80"
+     rx="5"
+     ry="5"
+     fill="#2b4b8c"
+     fill-opacity="0.2"
+     stroke="#2b4b8c"
+     stroke-width="1"
+     id="rect9" />
+  <text
+     x="650"
+     y="137"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     id="text10">Globala Fredssystem</text>
+  <text
+     x="650"
+     y="157"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text11">FN:s fredsbevarande styrkor</text>
+  <text
+     x="650"
+     y="172"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text12">Nätverk för tidig varning</text>
+  <!-- Regional Nivå -->
+  <rect
+     x="150"
+     y="222"
+     width="600"
+     height="150"
+     rx="8"
+     ry="8"
+     fill="#6b5ca5"
+     fill-opacity="0.1"
+     stroke="#6b5ca5"
+     stroke-width="2"
+     id="rect12" />
+  <text
+     x="450"
+     y="242"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text13">REGIONAL STYRNINGSNIVÅ</text>
+  <!-- Regionala Organisationer -->
+  <rect
+     x="158.33948"
+     y="262.02271"
+     width="174.9369"
+     height="89.954628"
+     rx="5.4667783"
+     ry="4.997479"
+     fill="#6b5ca5"
+     fill-opacity="0.2"
+     stroke="#6b5ca5"
+     stroke-width="1.04537"
+     id="rect13" />
+  <text
+     x="246"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text14">Regionala Organisationer</text>
+  <text
+     x="246"
+     y="302"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text15">Afrikanska unionen</text>
+  <text
+     x="246"
+     y="317"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text16">ASEAN</text>
+  <text
+     x="246"
+     y="332"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text17">Europeiska unionen</text>
+  <!-- Gränsöverskridande Mekanismer -->
+  <rect
+     x="338.20648"
+     y="262.0918"
+     width="226.66043"
+     height="89.81646"
+     rx="7.0831385"
+     ry="4.9898028"
+     fill="#6b5ca5"
+     fill-opacity="0.2"
+     stroke="#6b5ca5"
+     stroke-width="1.14617"
+     id="rect17" />
+  <text
+     x="450"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text18">Gränsöverskridande Mekanismer</text>
+  <text
+     x="450"
+     y="302"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text19">Flodkommissioner</text>
+  <text
+     x="450"
+     y="317"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text20">Råd för delade resurser</text>
+  <text
+     x="450"
+     y="332"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text21">Regional tidig varning</text>
+  <!-- Regionalt Civilsamhälle -->
+  <rect
+     x="570"
+     y="262"
+     width="160"
+     height="90"
+     rx="5"
+     ry="5"
+     fill="#6b5ca5"
+     fill-opacity="0.2"
+     stroke="#6b5ca5"
+     stroke-width="1"
+     id="rect21" />
+  <text
+     x="650"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6b5ca5"
+     id="text22">Civilsamhällesnätverk</text>
+  <text
+     x="650"
+     y="302"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text23">Regionala NGO-koalitioner</text>
+  <text
+     x="650"
+     y="317"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text24">Fredsforskningsinstitut</text>
+  <text
+     x="650"
+     y="332"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text25">Trosbaserade nätverk</text>
+  <!-- Nationell Nivå -->
+  <rect
+     x="150"
+     y="392"
+     width="600"
+     height="110"
+     rx="8"
+     ry="8"
+     fill="#2d5f2d"
+     fill-opacity="0.1"
+     stroke="#2d5f2d"
+     stroke-width="2"
+     id="rect25" />
+  <text
+     x="450"
+     y="412"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text26">NATIONELL STYRNINGSNIVÅ</text>
+  <!-- Statliga Organ -->
+  <rect
+     x="170"
+     y="422"
+     width="160"
+     height="70"
+     rx="5"
+     ry="5"
+     fill="#2d5f2d"
+     fill-opacity="0.2"
+     stroke="#2d5f2d"
+     stroke-width="1"
+     id="rect26" />
+  <text
+     x="250"
+     y="442"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text27">Statliga Organ</text>
+  <text
+     x="250"
+     y="462"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text28">Fredsministerier</text>
+  <text
+     x="250"
+     y="477"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text29">Nationella säkerhetsråd</text>
+  <!-- Integrationsmekanismer -->
+  <rect
+     x="356.20624"
+     y="422.03601"
+     width="184.51425"
+     height="69.927956"
+     rx="5.7660704"
+     ry="4.9948545"
+     fill="#2d5f2d"
+     fill-opacity="0.2"
+     stroke="#2d5f2d"
+     stroke-width="1.03931"
+     id="rect29" />
+  <text
+     x="450"
+     y="442"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text30">Nationella Ramverk</text>
+  <text
+     x="450"
+     y="462"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text31">Försoningskommissioner</text>
+  <text
+     x="450"
+     y="477"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text32">Nationella dialogprocesser</text>
+  <!-- Nationellt Civilsamhälle -->
+  <rect
+     x="558.50903"
+     y="422.03387"
+     width="182.98189"
+     height="69.932251"
+     rx="5.718184"
+     ry="4.9951611"
+     fill="#2d5f2d"
+     fill-opacity="0.2"
+     stroke="#2d5f2d"
+     stroke-width="1.03272"
+     id="rect32" />
+  <text
+     x="650"
+     y="442"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     id="text33">Mångaktörsforum</text>
+  <text
+     x="650"
+     y="462"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text34">Nationella fredsplattformar</text>
+  <text
+     x="650"
+     y="477"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text35">Privata sektorns fredsråd</text>
+  <!-- Lokal Nivå -->
+  <rect
+     x="141.57025"
+     y="522.02179"
+     width="626.84772"
+     height="89.956436"
+     rx="8.3579693"
+     ry="7.9961281"
+     fill="#daa520"
+     fill-opacity="0.1"
+     stroke="#daa520"
+     stroke-width="2.01345"
+     id="rect35" />
+  <text
+     x="450"
+     y="542"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text36">LOKAL STYRNINGSNIVÅ</text>
+  <!-- Gemenskapsmekanismer -->
+  <rect
+     x="146.06165"
+     y="552.03802"
+     width="208.73602"
+     height="49.923954"
+     rx="5.7982225"
+     ry="4.9923949"
+     fill="#daa520"
+     fill-opacity="0.2"
+     stroke="#daa520"
+     stroke-width="1.07605"
+     id="rect36" />
+  <text
+     x="250"
+     y="572"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text37">Gemenskapsfredsmekanismer</text>
+  <text
+     x="250"
+     y="587"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text38">Fredskommittéer • Traditionella domstolar</text>
+  <!-- Urbana System -->
+  <rect
+     x="357.99835"
+     y="552.05396"
+     width="196.77165"
+     height="49.892223"
+     rx="6.1491141"
+     ry="4.9892216"
+     fill="#daa520"
+     fill-opacity="0.2"
+     stroke="#daa520"
+     stroke-width="1.10779"
+     id="rect38" />
+  <text
+     x="456"
+     y="572"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text39">Urbana Fredssystem</text>
+  <text
+     x="456"
+     y="587"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text40">Grannskapsvakt • Gängvapenstillestånd</text>
+  <!-- Ursprungliga System -->
+  <rect
+     x="561.24518"
+     y="552.01355"
+     width="189.96115"
+     height="49.97298"
+     rx="5.2766991"
+     ry="4.9972982"
+     fill="#daa520"
+     fill-opacity="0.2"
+     stroke="#daa520"
+     stroke-width="1.02703"
+     id="rect40" />
+  <text
+     x="652"
+     y="572"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     id="text41">Urfolks Fredssystem</text>
+  <text
+     x="652"
+     y="587"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text42">Äldreråd • Kulturlig försoning</text>
+  <!-- Vertikala Förbindelser -->
+  <!-- Global till Regional -->
+  <line
+     x1="250"
+     y1="202"
+     x2="250"
+     y2="222"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line42" />
+  <polygon
+     points="255,235 250,245 245,235 "
+     fill="#000000"
+     id="polygon42"
+     transform="translate(0,-18)" />
+  <line
+     x1="450"
+     y1="202"
+     x2="450"
+     y2="222"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line43" />
+  <polygon
+     points="455,235 450,245 445,235 "
+     fill="#000000"
+     id="polygon43"
+     transform="translate(0,-18)" />
+  <line
+     x1="650"
+     y1="202"
+     x2="650"
+     y2="222"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line44" />
+  <polygon
+     points="655,235 650,245 645,235 "
+     fill="#000000"
+     id="polygon44"
+     transform="translate(0,-18)" />
+  <!-- Regional till Nationell -->
+  <line
+     x1="250"
+     y1="372"
+     x2="250"
+     y2="392"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line45" />
+  <polygon
+     points="255,405 250,415 245,405 "
+     fill="#000000"
+     id="polygon45"
+     transform="translate(0,-18)" />
+  <line
+     x1="450"
+     y1="372"
+     x2="450"
+     y2="392"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line46" />
+  <polygon
+     points="455,405 450,415 445,405 "
+     fill="#000000"
+     id="polygon46"
+     transform="translate(0,-18)" />
+  <line
+     x1="650"
+     y1="372"
+     x2="650"
+     y2="392"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line47" />
+  <polygon
+     points="655,405 650,415 645,405 "
+     fill="#000000"
+     id="polygon47"
+     transform="translate(0,-18)" />
+  <!-- Nationell till Lokal -->
+  <line
+     x1="250"
+     y1="502"
+     x2="250"
+     y2="522"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line48" />
+  <polygon
+     points="255,535 250,545 245,535 "
+     fill="#000000"
+     id="polygon48"
+     transform="translate(0,-18)" />
+  <line
+     x1="450"
+     y1="502"
+     x2="450"
+     y2="522"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line49" />
+  <polygon
+     points="455,535 450,545 445,535 "
+     fill="#000000"
+     id="polygon49"
+     transform="translate(0,-18)" />
+  <line
+     x1="650"
+     y1="502"
+     x2="650"
+     y2="522"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-dasharray="5, 5"
+     id="line50" />
+  <polygon
+     points="655,535 650,545 645,535 "
+     fill="#000000"
+     id="polygon50"
+     transform="translate(0,-18)" />
+  <!-- Horisontella Förbindelser & Återkopplingsslingor -->
+  <!-- Höger sida återkoppling -->
+  <path
+     d="m 730,142 c 50,0 78.79412,435.87458 28.79412,435.87458"
+     fill="none"
+     stroke="#2b4b8c"
+     stroke-width="2"
+     id="path50"
+     sodipodi:nodetypes="cc" />
+  <polygon
+     points="735,595 730,585 725,595 "
+     fill="#2b4b8c"
+     id="polygon51"
+     transform="rotate(20.087869,780.09742,661.7985)" />
+  <text
+     x="362"
+     y="-810"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#2b4b8c"
+     transform="rotate(90)"
+     id="text51">Återkopplingsslingor</text>
+  <!-- Vänster sida återkoppling -->
+  <path
+     d="M 147.71868,553.56028 C 97.718676,553.56028 120,142 170,142"
+     fill="none"
+     stroke="#daa520"
+     stroke-width="2"
+     id="path51"
+     sodipodi:nodetypes="cc" />
+  <polygon
+     points="170,185 165,175 175,175 "
+     fill="#daa520"
+     id="polygon52"
+     transform="rotate(-119.31346,158.11794,161.04569)" />
+  <text
+     x="-362"
+     y="90"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#daa520"
+     transform="rotate(-90)"
+     id="text52">Lokal Kunskapsinnovation</text>
+  <!-- Förklaring -->
+  <rect
+     x="250.05109"
+     y="617.05109"
+     width="399.89783"
+     height="14.507765"
+     fill="#ffffff"
+     stroke="#000000"
+     stroke-width="0.602164"
+     rx="1.9994892"
+     ry="2.9015529"
+     id="rect52" />
+  <text
+     x="450"
+     y="627"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     id="text53">Vertikala linjer visar samordningsvägar; pilar visar informationsflöden</text>
+  <!-- Upphovsrätt -->
+  <text
+     x="450"
+     y="644"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#666666"
+     id="text54">© 2025 Globalt Styrningsramverk | www.globalgovernanceframework.org</text>
+</svg>

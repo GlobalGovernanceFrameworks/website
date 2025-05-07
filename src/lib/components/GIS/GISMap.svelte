@@ -4,8 +4,7 @@
 <script lang="ts">
   import { onMount, onDestroy, createEventDispatcher } from 'svelte';
   import type { Region } from './types/GISTypes';
-  
-  // Load Leaflet after component mount to avoid SSR issues
+
   let L;
   
   export let region: Region = 'global';
@@ -127,46 +126,42 @@
   }
   
   onMount(async () => {
-    // Dynamically import Leaflet
-    const leaflet = await import('leaflet');
-    L = leaflet.default;
-    
-    // Import CSS
-    const linkEl = document.createElement('link');
-    linkEl.rel = 'stylesheet';
-    linkEl.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
-    document.head.appendChild(linkEl);
-    
-    // Initialize map with explicit options for better positioning
-    map = L.map(mapContainer, {
-      center: [30, 0], // More northern focus
-      zoom: 2,
-      zoomControl: true,
-      attributionControl: true,
-      maxBounds: [[-90, -180], [90, 180]],
-      minZoom: 2,
-      // Disable the automatic view reset that might be overriding our settings
-      resetView: false
-    });
-    
-    // Add base tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-    
-    // Instead of immediately setting region, use a timeout to ensure the map is fully rendered
-    setTimeout(() => {
-      // Force the map to a specific view that better utilizes the canvas
-      map.setView([30, 20], 2, { animation: false });
+    // Check if we're in the browser environment
+    if (typeof window !== 'undefined') {
+      // Dynamically import Leaflet only in the browser
+      const leaflet = await import('leaflet');
+      L = leaflet.default;
       
-      // Apply initial region if not global
-      if (region !== 'global') {
-        setRegion(region);
-      }
+      // Import Leaflet CSS
+      await import('leaflet/dist/leaflet.css');
       
-      // Inform parent components that the map is ready
-      dispatch('mapReady', { map, L });
-    }, 100);
+      // Initialize map with explicit options
+      map = L.map(mapContainer, {
+        center: [30, 0],
+        zoom: 2,
+        zoomControl: true,
+        attributionControl: true,
+        maxBounds: [[-90, -180], [90, 180]],
+        minZoom: 2,
+        resetView: false
+      });
+      
+      // Add base tiles
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+      
+      // Set initial view and region
+      setTimeout(() => {
+        map.setView([30, 20], 2, { animation: false });
+        
+        if (region !== 'global') {
+          setRegion(region);
+        }
+        
+        dispatch('mapReady', { map, L });
+      }, 100);
+    }
   });
   
   onDestroy(() => {
@@ -175,6 +170,11 @@
     }
   });
 </script>
+
+<svelte:head>
+  <!-- You can include the CSS here instead of adding it dynamically -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</svelte:head>
 
 <div class="map-container" bind:this={mapContainer}>
   {#if map}

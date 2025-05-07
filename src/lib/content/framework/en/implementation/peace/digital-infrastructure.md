@@ -49,3 +49,52 @@ To ensure accessibility in areas with limited connectivity or digital literacy, 
 - *[Digital Diplomacy Playbook](/framework/tools/peace/digital-diplomacy-playbook-en.pdf)*: Guide online and offline peace campaigns.
 
 These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/framework/tools/peace).
+
+### Digital Peace Infrastructure KPIs
+
+To ensure effective implementation and accountability of digital peace technologies, these granular Key Performance Indicators (KPIs) provide measurable benchmarks across critical dimensions:
+
+#### 1. Content Monitoring Effectiveness
+- **Hate Speech Detection Accuracy**: Percentage of harmful content correctly identified (target: `>90%`)
+- **False Positive Rate**: Percentage of benign content incorrectly flagged (target: `<5%`)
+- **Response Time**: Average time between content posting and moderation action (target: `<2` hours)
+- **Language Coverage**: Percentage of local languages covered by monitoring systems (target: `>95%`)
+- **Cross-Platform Integration**: Number of platforms integrated into monitoring systems
+
+#### 2. Early Warning System Performance
+- **Detection Lead Time**: Average time between early warning alert and conflict event
+- **Alert Accuracy**: Percentage of alerts that accurately predicted escalation (target: >80%)
+- **Signal-to-Noise Ratio**: Ratio of valid alerts to false alarms
+- **Community Engagement**: Percentage of community members actively participating in reporting
+- **Response Integration**: Time between alert and activation of response mechanisms
+
+#### 3. Digital Dialogue Platform Metrics
+- **Inclusivity Index**: Participation rates across gender, age, ethnicity, and disability status
+- **Trust Measurement**: Pre/post engagement trust scores between conflict parties
+- **User Experience**: Accessibility scores for various technological literacy levels
+- **Behavioral Impact**: Measurable changes in online discourse tone following interventions
+- **Scaling Efficiency**: Cost per participant as platform scales to new communities
+
+#### 4. Digital Infrastructure Security
+- **System Uptime**: Percentage of time systems remain operational (target: >99.9%)
+- **Penetration Test Results**: Scores from regular security testing
+- **Vulnerability Response Time**: Average time to patch identified vulnerabilities
+- **Data Protection Compliance**: Audit scores for data protection protocols
+- **Encryption Implementation**: Percentage of communications protected by end-to-end encryption
+
+#### 5. Digital Literacy and Resilience
+- **Misinformation Resilience Score**: Ability of community members to identify false information
+- **Digital Security Adoption**: Percentage of users implementing recommended security practices
+- **Training Effectiveness**: Knowledge retention scores 3-6 months after digital literacy training
+- **Tool Adoption Rate**: Percentage of target population actively using digital peace tools
+- **Behavior Change Indicators**: Measurable changes in online conflict engagement patterns
+
+#### 6. AI Ethics Compliance
+- **Algorithmic Bias Audit Results**: Scores from regular testing for discriminatory patterns
+- **Human Oversight Ratio**: Percentage of AI decisions reviewed by human operators
+- **Transparency Index**: Measurements of explainability in AI systems
+- **Data Sovereignty Compliance**: Percentage of data stored and processed according to local governance
+- **Community Feedback Integration**: Rate at which community feedback improves AI systems
+
+These KPIs should be regularly assessed, reported transparently, and updated to reflect evolving digital threats and opportunities. Benchmarks should be contextualized for specific implementation environments, with higher standards applied to high-tech democracies and more foundational metrics for fragile states.
+

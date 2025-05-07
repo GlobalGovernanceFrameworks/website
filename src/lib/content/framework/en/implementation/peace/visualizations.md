@@ -137,7 +137,7 @@ This interactive visualization allows users to explore the complex relationships
 
 The visualization helps practitioners identify stakeholders, optimize resources, build bridges between divided communities, and develop strategic interventions that leverage existing networks.
 
-[Networ Analysis available at /framework/visuals/peace/technical/actor-networks]
+[Network Analysis available at /framework/visuals/peace/technical/actor-networks]
 
 ### Geographic Information System (GIS) Applications
 
@@ -162,6 +162,8 @@ These advanced visualizations apply systems thinking to peace and conflict, reve
 - **Resilience Factor Mapping**: Revealing elements that strengthen a peace system's ability to withstand shocks
 
 These models help practitioners identify root causes, design targeted interventions, anticipate unintended consequences, ensure policy coherence, and understand how conflict dynamics might evolve over time.
+
+!NOTE: We could use your help to make this visualization functioning. It is implemented as svelte components. [Check out the framework repository at https://github.com/GlobalGovernanceFramework/governance-framework-site/tree/main/src/lib/components/Systems]
 
 [System Dynamics Models available at /framework/visuals/peace/technical/system-dynamics]
 

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiral Dynamics i konflikt och fred</title>
+    <style>
+        :root {
+            --purple: #8E44AD;
+            --red: #E74C3C;
+            --blue: #3498DB;
+            --orange: #F39C12;
+            --green: #2ECC71;
+            --yellow: #F1C40F;
+            --turquoise: #1ABC9C;
+            --light-gray: #f8f9fa;
+            --dark-gray: #333;
+            --mid-gray: #666;
+            --border-radius: 10px;
+            --box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: var(--dark-gray);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: var(--mid-gray);
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .intro {
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 40px;
+        }
+        
+        .spiral-container {
+            position: relative;
+            height: 500px;
+            margin: 60px 0;
+        }
+        
+        .spiral-path {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        
+        .level {
+            position: absolute;
+            width: 220px;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            background-color: white;
+        }
+        
+        .level:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .level h3 {
+            margin-top: 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid;
+        }
+        
+        .level-purple { border-left: 5px solid var(--purple); }
+        .level-purple h3 { color: var(--purple); border-color: var(--purple); }
+        
+        .level-red { border-left: 5px solid var(--red); }
+        .level-red h3 { color: var(--red); border-color: var(--red); }
+        
+        .level-blue { border-left: 5px solid var(--blue); }
+        .level-blue h3 { color: var(--blue); border-color: var(--blue); }
+        
+        .level-orange { border-left: 5px solid var(--orange); }
+        .level-orange h3 { color: var(--orange); border-color: var(--orange); }
+        
+        .level-green { border-left: 5px solid var(--green); }
+        .level-green h3 { color: var(--green); border-color: var(--green); }
+        
+        .level-yellow { border-left: 5px solid var(--yellow); }
+        .level-yellow h3 { color: var(--yellow); border-color: var(--yellow); }
+        
+        .level-turquoise { border-left: 5px solid var(--turquoise); }
+        .level-turquoise h3 { color: var(--turquoise); border-color: var(--turquoise); }
+        
+        /* Position the levels to form a spiral */
+        .purple-position { left: 10%; top: 10%; }
+        .red-position { left: 25%; top: 30%; }
+        .blue-position { left: 40%; top: 15%; }
+        .orange-position { left: 55%; top: 35%; }
+        .green-position { left: 70%; top: 20%; }
+        .yellow-position { left: 40%; top: 60%; }
+        .turquoise-position { left: 65%; top: 70%; }
+
+        .level-content {
+            margin-top: 10px;
+        }
+        
+        .expanded-view {
+            display: none;
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .color-bar {
+            height: 20px;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+        
+        .close-btn {
+            float: right;
+            padding: 5px 10px;
+            background-color: var(--light-gray);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 12px;
+        }
+        
+        th {
+            background-color: var(--light-gray);
+        }
+        
+        .applications {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .communication-bridges {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .bridging-table td {
+            vertical-align: top;
+        }
+        
+        .evolution-pathways {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .pathway {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+        }
+        
+        .action-step {
+            border-left: 3px solid var(--blue);
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+        
+        .case-studies {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .case-study {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: var(--mid-gray);
+            font-size: 0.9rem;
+        }
+        
+        .resources {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .resource-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: var(--light-gray);
+            border-radius: 4px;
+            text-decoration: none;
+            color: var(--dark-gray);
+            transition: background-color 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            background-color: #e9ecef;
+        }
+        
+        @media (max-width: 768px) {
+            .spiral-container {
+                height: auto;
+                margin: 20px 0;
+            }
+            
+            .spiral-path {
+                position: static;
+            }
+            
+            .level {
+                position: static;
+                width: auto;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Spiral Dynamics i konflikt och fred</h1>
+            <div class="subtitle">Förståelse för hur utvecklingsmässiga värdesystem påverkar konflikt och fredsbyggande</div>
+        </header>
+        
+        <div class="intro">
+            <h2>Introduktion till Spiral Dynamics</h2>
+            <p>Spiral Dynamics är en modell för mänsklig utveckling som kartlägger utvecklingen av värdesystem och världsbilder hos individer, organisationer och samhällen. Utvecklad av Dr. Clare W. Graves och senare utvidgad av Don Beck och Christopher Cowan, erbjuder den ett kraftfullt ramverk för att förstå konflikter och designa effektiva fredsprocesser.</p>
+            <p>Varje utvecklingsstadium (representerat av en färg) reflekterar ett distinkt sätt att tänka om sig själv, andra och världen. Dessa värdesystem påverkar djupgående hur individer och grupper uppfattar konflikter, närmar sig rättvisa och föreställer sig samarbete. Genom att förstå dessa utvecklingsmässiga skillnader kan fredsbyggare skapa mer effektiva strategier som möter människor där de är samtidigt som de stödjer utveckling mot mer integrerade, komplexa tillvägagångssätt.</p>
+        </div>
+        
+        <div class="spiral-container">
+            <div class="spiral-path">
+                <div class="level level-purple purple-position" onclick="showExpanded('purple')">
+                    <h3>Lila - Tribalt/Magiskt</h3>
+                    <div class="level-content">
+                        <p>Fokuserar på säkerhet, släktskap och tillhörighet till stammen. Konflikter ses genom linsen av klanlojaliteter och traditionella sätt.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-red red-position" onclick="showExpanded('red')">
+                    <h3>Röd - Makt/Impulsivt</h3>
+                    <div class="level-content">
+                        <p>Centrerat kring makt, dominans och den starkastes överlevnad. Konflikter är maktkamper där styrka bestämmer utgången.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-blue blue-position" onclick="showExpanded('blue')">
+                    <h3>Blå - Ordning/Mythiskt</h3>
+                    <div class="level-content">
+                        <p>Organiserat kring absolut sanning, ordning och rättfärdiga principer. Konflikter är moraliska kampen mellan rätt och fel.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-orange orange-position" onclick="showExpanded('orange')">
+                    <h3>Orange - Prestation/Rationellt</h3>
+                    <div class="level-content">
+                        <p>Drivet av prestation, framsteg och vetenskaplig rationalitet. Konflikter är strategiska utmaningar att lösa för optimala resultat.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-green green-position" onclick="showExpanded('green')">
+                    <h3>Grön - Pluralistiskt/Känsligt</h3>
+                    <div class="level-content">
+                        <p>Centrerat på jämlikhet, harmoni och inkludering. Konflikter uppstår från exkludering, orättvisa och brist på delaktighet.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-yellow yellow-position" onclick="showExpanded('yellow')">
+                    <h3>Gult - Systematiskt/Integrerande</h3>
+                    <div class="level-content">
+                        <p>Fokuserat på flexibilitet, funktionalitet och systemtänkande. Konflikter är komplexa mönster som kräver lösningar på flera nivåer.</p>
+                    </div>
+                </div>
+                
+                <div class="level level-turquoise turquoise-position" onclick="showExpanded('turquoise')">
+                    <h3>Turkos - Holistiskt/Globalt</h3>
+                    <div class="level-content">
+                        <p>Inriktat på global medvetenhet och holistisk integration. Konflikter reflekterar avskildhet från det enade hela.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="expanded-view" class="expanded-view">
+            <button class="close-btn" onclick="hideExpanded()">Stäng</button>
+            <div id="expanded-content"></div>
+        </div>
+        
+        <div class="applications">
+            <h2>Tillämpningar inom fred och konfliktlösning</h2>
+            <p>Förståelse för Spiral Dynamics ger kraftfulla insikter för fredsbyggande och styrning:</p>
+            
+            <h3>1. Kartläggning av värdesystem i konfliktanalys</h3>
+            <p>Genom att identifiera de dominerande värdesystemen i en konfliktkontext kan fredsbyggare bättre förstå varför parter uppfattar frågor olika och designa insatser som talar till deras världsbilder. Detta tillvägagångssätt erkänner att konflikter ofta härrör från olika nivåer av medvetandeutveckling snarare än bara konkurrerande intressen.</p>
+            
+            <h3>2. Utvecklingsmässigt anpassat fredsbyggande</h3>
+            <p>Fredsprocesser kan skräddarsys för att matcha konfliktparters värdesystem, med språk, metaforer och strukturer som resonerar med deras utvecklingsstadium. Till exempel, när man arbetar med övervägande Blå värdesystem, kommer vädjanden till etablerad auktoritet, tradition och tydliga principer vara mer effektiva än abstrakta diskussioner om systemisk komplexitet.</p>
+            
+            <h3>3. Utveckling av ledarskap på andra nivån</h3>
+            <p>Utbildning av fredspraktiker i Gult (Integrerande) och Turkos (Holistiskt) medvetande gör det möjligt för dem att överskrida och inkludera första nivåns värdesystem, vilket underlättar mer omfattande och anpassningsbara tillvägagångssätt för komplexa konflikter.</p>
+        </div>
+        
+        <div class="communication-bridges">
+            <h2>Kommunikationsbroar mellan värdesystem</h2>
+            <p>Effektivt fredsbyggande kräver att man bygger kommunikationsbroar mellan olika utvecklingsmässiga värdesystem:</p>
+            
+            <table class="bridging-table">
+                <tr>
+                    <th>Från värdesystem</th>
+                    <th>Till värdesystem</th>
+                    <th>Kommunikationsbro</th>
+                </tr>
+                <tr>
+                    <td>Lila (Tribalt)</td>
+                    <td>Blå (Ordning)</td>
+                    <td>Koppla traditionella metoder till högre andliga eller moraliska principer; visa hur ordning skyddar stammen</td>
+                </tr>
+                <tr>
+                    <td>Röd (Makt)</td>
+                    <td>Blå (Ordning)</td>
+                    <td>Ram in regler som förstärker styrka genom disciplin; visa hur ordning skapar vägar till hedersfull makt</td>
+                </tr>
+                <tr>
+                    <td>Blå (Ordning)</td>
+                    <td>Orange (Prestation)</td>
+                    <td>Betona hur prestation tjänar högre principer; demonstrera praktiska fördelar med framsteg inom moraliska ramar</td>
+                </tr>
+                <tr>
+                    <td>Orange (Prestation)</td>
+                    <td>Grön (Pluralistiskt)</td>
+                    <td>Visa hur inkludering förbättrar innovation; rama in jämlikhet som utökar tillgång till möjligheter och prestation</td>
+                </tr>
+                <tr>
+                    <td>Grön (Pluralistiskt)</td>
+                    <td>Gult (Integrerande)</td>
+                    <td>Demonstrera hur systemtänkande förbättrar inkludering; visa hur naturliga hierarkier av kompetens kan tjäna egalitära mål</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="evolution-pathways">
+            <h2>Utvecklingsvägar mot fred</h2>
+            <p>Spiral Dynamics erbjuder vägar för att utvecklas mot mer omfattande, integrerade fredsmetoder:</p>
+            
+            <div class="pathway">
+                <h3>Från polariserat Blå (Ordning) till Gult (Integrerande)</h3>
+                <div class="action-step">
+                    <strong>Steg 1:</strong> Erkänn vikten av principer och moraliska grundvalar samtidigt som man introducerar flera giltiga perspektiv
+                </div>
+                <div class="action-step">
+                    <strong>Steg 2:</strong> Introducera praktiska, evidensbaserade metoder som stämmer överens med befintliga principer (bro till Orange)
+                </div>
+                <div class="action-step">
+                    <strong>Steg 3:</strong> Utöka inkluderingen av olika intressenter samtidigt som man behåller fokus på effektivitet (bro till Grön)
+                </div>
+                <div class="action-step">
+                    <strong>Steg 4:</strong> Introducera systemtänkande som visar hur principer, effektivitet och inkludering kan integreras
+                </div>
+            </div>
+            
+            <div class="pathway">
+                <h3>Från fragmenterat Grön (Pluralistiskt) till Turkos (Holistiskt)</h3>
+                <div class="action-step">
+                    <strong>Steg 1:</strong> Erkänn värdet av inkludering och jämlikhet samtidigt som man introducerar behovet av funktionella lösningar
+                </div>
+                <div class="action-step">
+                    <strong>Steg 2:</strong> Utveckla systemtänkande som upprätthåller engagemang för rättvisa (bro till Gult)
+                </div>
+                <div class="action-step">
+                    <strong>Steg 3:</strong> Utvidga medvetandet till global sammankoppling och kollektiv intelligens
+                </div>
+                <div class="action-step">
+                    <strong>Steg 4:</strong> Introducera metoder som utvecklar intuitiv förnimmelse av hela systemet och överskridande av egobaserade uppdelningar
+                </div>
+            </div>
+        </div>
+        
+        <div class="case-studies">
+            <h2>Fallstudier i utvecklingsmässiga fredsmetoder</h2>
+            
+            <div class="case-study">
+                <h3>Sydafrikanska Sanning och Försoningskommissionen</h3>
+                <p>TRC exemplifierade andra nivåns (Gult) ledarskap genom att skapa utrymme för flera värdesystem:</p>
+                <ul>
+                    <li><strong>Lila (Tribalt):</strong> Inkorporerade traditionella ritualer och gemenskapsbaserade försoningsmetoder</li>
+                    <li><strong>Blå (Ordning):</strong> Upprätthöll tydliga procedurer och moraliska ramar kring sanningsberättande</li>
+                    <li><strong>Orange (Prestation):</strong> Etablerade praktiska mekanismer för nationell återuppbyggnad</li>
+                    <li><strong>Grön (Pluralistiskt):</strong> Säkerställde inkluderande representation och lika röst för offer</li>
+                </ul>
+                <p>Under Tutu och Mandelas ledarskap överskred och inkluderade kommissionen dessa olika värdesystem snarare än att främja en metod, vilket skapade en process med bred legitimitet över utvecklingsstadierna.</p>
+            </div>
+            
+            <div class="case-study">
+                <h3>Nordirlands fredsprocess</h3>
+                <p>Good Friday-avtalet navigerade flera värdesystem:</p>
+                <ul>
+                    <li><strong>Blå (Ordning):</strong> Adresserade farhågor om konstitutionella principer och traditioner</li>
+                    <li><strong>Orange (Prestation):</strong> Skapade praktiska maktdelandeinstitutioner med tydliga funktioner</li>
+                    <li><strong>Grön (Pluralistiskt):</strong> Säkerställde inkluderande representation och kulturell erkännande</li>
+                    <li><strong>Gult (Integrerande):</strong> Etablerade flexibel, flernivåstyrning som adresserade olika behov</li>
+                </ul>
+                <p>Genom att samtidigt adressera flera värdesystems farhågor skapade fredsprocessen en hållbar lösning trots utvecklingsmässiga skillnader mellan samhällena.</p>
+            </div>
+        </div>
+        
+        <div class="resources">
+            <h2>Ytterligare resurser</h2>
+            <p>För djupare utforskning av Spiral Dynamics i fred och konfliktlösning:</p>
+            <a href="https://www.spiralize.org" class="resource-link" target="_blank">Spiralize.org - Interaktiv Spiral Dynamics-lärande</a>
+            <a href="https://spiraldynamics.org" class="resource-link" target="_blank">Spiral Dynamics Group</a>
+            <a href="#" class="resource-link">Globalt Styrningsramverks verktygsbibliotek</a>
+            <a href="#" class="resource-link">Integral Peace Working Group</a>
+        </div>
+        
+        <footer>
+            © 2025 Globalt Styrningsramverk | www.globalgovernanceframework.org
+        </footer>
+    </div>
+    
+    <script>
+        function showExpanded(level) {
+            const expandedView = document.getElementById('expanded-view');
+            const expandedContent = document.getElementById('expanded-content');
+            
+            expandedView.style.display = 'block';
+            
+            // Scroll to expanded view
+            expandedView.scrollIntoView({ behavior: 'smooth' });
+            
+            // Add the color bar
+            let content = `<div class="color-bar" style="background-color: var(--${level})"></div>`;
+            
+            // Add the content based on the level
+            if (level === 'purple') {
+                content += `
+                    <h2>Lila - Tribalt/Magiskt medvetande</h2>
+                    <p>Det Lila värdesystemet uppstår när människor formar stamsamhällen där överlevnad beror på släktskapsband, förfäders traditioner och koppling till naturens mysterier.</p>
+                    
+                    <h3>Nyckelegenskaper</h3>
+                    <ul>
+                        <li>Stamidentitet och släktskapslojaliteter</li>
+                        <li>Betoning på heliga traditioner och seder</li>
+                        <li>Magiskt tänkande och ritualer som skydd mot okända krafter</li>
+                        <li>Cyklinisk syn på tid och händelser</li>
+                        <li>Äldre och traditionens bevarare som auktoritetsfigurer</li>
+                    </ul>
+                    
+                    <h3>Förhållningssätt till konflikt</h3>
+                    <p>Från det Lila perspektivet förstås konflikter ofta som:</p>
+                    <ul>
+                        <li>Överträdelser av heliga traditioner eller tabun</li>
+                        <li>Störningar av harmoniska relationer med förfäder eller andar</li>
+                        <li>Hot mot klanens/stammens överlevnad eller heliga territorier</li>
+                        <li>Frågor som kräver rituell lösning och återställande av harmoni</li>
+                    </ul>
+                    
+                    <h3>Fredsbyggande metoder som resonerar</h3>
+                    <ul>
+                        <li>Traditionella/ursprungsbefolkningens rättssystem och ritualer</li>
+                        <li>Äldreledd medling och visdomsråd</li>
+                        <li>Skydd av heliga platser och tillträdesavtal</li>
+                        <li>Ceremoniella fredsprotokoll och symboliska försoningsakter</li>
+                        <li>Berättande och mytskapande som förstärker fredliga relationer</li>
+                    </ul>
+                    
+                    <h3>Styrningshänsyn</h3>
+                    <p>Effektiv fredsstyrning som arbetar med Lila medvetande bör:</p>
+                    <ul>
+                        <li>Inkludera traditionella auktoritetsstrukturer och beslutsprocesser</li>
+                        <li>Respektera heliga platser, föremål och metoder i fredsavtal</li>
+                        <li>Erkänna klanrelationer och kollektiv identitet</li>
+                        <li>Inkludera ceremonier och ritualer i försoningsprocesser</li>
+                        <li>Bevara muntliga traditioner och kulturell kunskap som konfliktlösningsresurser</li>
+                    </ul>
+                    
+                    <h3>Exempel: Ursprungsbefolkningens fredsmetoder</h3>
+                    <p>Många ursprungsbefolkningens konfliktlösningsmetoder förkroppsligar Lila värdesystem, såsom den hawaiianska Ho'oponopono-processen, som fokuserar på att återställa harmoni genom bekännelse, förlåtelse och symbolisk upprättelse. Dessa metoder betonar ofta återställande av rätta relationer snarare än bestraffning, med äldre som guidar processer som helar gemenskapen som helhet.</p>
+                `;
+            } else if (level === 'red') {
+                content += `
+                    <h2>Röd - Makt/Impulsivt medvetande</h2>
+                    <p>Det Röda värdesystemet uppstår när individer bryter sig fria från stammens begränsningar för att hävda makt och följa personliga önskningar i en värld som ses som full av hot och möjligheter.</p>
+                    
+                    <h3>Nyckelegenskaper</h3>
+                    <ul>
+                        <li>Makt, styrka och dominans som kärnvärden</li>
+                        <li>Impulsiv strävan efter omedelbara önskningar och tillfredsställelse</li>
+                        <li>Hjältemodiga eller fruktade ledare som auktoritetsfigurer</li>
+                        <li>Respekt baserad på demonstrationer av styrka</li>
+                        <li>Begränsad oro för konsekvenser bortom omedelbar fördel</li>
+                    </ul>
+                    
+                    <h3>Förhållningssätt till konflikt</h3>
+                    <p>Från det Röda perspektivet förstås konflikter ofta som:</p>
+                    <ul>
+                        <li>Prov på styrka och vilja</li>
+                        <li>Tillfällen att demonstrera dominans</li>
+                        <li>Utmaningar mot ära eller rykte som kräver svar</li>
+                        <li>Nollsummespel om territorium, resurser eller status</li>
+                    </ul>
+                    
+                    <h3>Fredsbyggande metoder som resonerar</h3>
+                    <ul>
+                        <li>Starka, respekterade medlare som kommenderar auktoritet</li>
+                        <li>Äresparande mekanismer som tillåter att "rädda ansiktet"</li>
+                        <li>Tydliga belöningar för samarbete och konsekvenser för överträdelse</li>
+                        <li>Statusigenkännande inom nya maktarrangemang</li>
+                        <li>Kanalisering av energi till sport, tävling eller prestationsvägar</li>
+                    </ul>
+                    
+                    <h3>Styrningshänsyn</h3>
+                    <p>Effektiv fredsstyrning som arbetar med Rött medvetande bör:</p>
+                    <ul>
+                        <li>Etablera synliga, starka verkställighetsmekanismer</li>
+                        <li>Skapa vägar för att omdirigera maktsträvanden mot konstruktiva mål</li>
+                        <li>Erkänna status och tillhandahålla ansiktssparande alternativ</li>
+                        <li>Sätta tydliga gränser med omedelbara konsekvenser</li>
+                        <li>Fundera över hur fredsinitiativ kan uppfattas som svaghet</li>
+                    </ul>
+                    
+                    <h3>Exempel: Gängvapenstillestånd och interventioner</h3>
+                    <p>Effektiva program för att minska gängvåld arbetar ofta inom Röda värdesystem genom att respektera maktrelationer samtidigt som de skapar alternativa vägar. "Cure Violence"-metoden använder respekterade tidigare gängmedlemmar som "våldsavbrytare" som kan engagera sig trovärdigt med de som verkar från Rött medvetande, och omdirigerar maktsträvanden bort från våld samtidigt som de upprätthåller respekt och status inom gemenskapen.</p>
+                `;
+            } else if (level === 'blue') {
+                content += `
+                    <h2>Blå - Ordning/Mythiskt medvetande</h2>
+                    <p>Det Blå värdesystemet uppstår när kaoset från Röda maktsträvanden begränsas genom underkastelse under högre auktoritet, absoluta principer och helig ordning som ger stabilitet och mening.</p>
+                    
+                    <h3>Nyckelegenskaper</h3>
+                    <ul>
+                        <li>Efterlevnad av absolut sanning och rättfärdiga principer</li>
+                        <li>Hierarkisk auktoritet och kommandoordning</li>
+                        <li>Uppoffring av omedelbara önskningar för framtida belöning</li>
+                        <li>Tydliga regler, lagar och moralkoder</li>
+                        <li>Syfte härlett från att tjäna högre syfte eller system</li>
+                    </ul>
+                    
+                    <h3>Förhållningssätt till konflikt</h3>
+                    <p>Från det Blå perspektivet förstås konflikter ofta som:</p>
+                    <ul>
+                        <li>Moraliska kampen mellan rätt och fel</li>
+                        <li>Resultat av olydnad mot legitim auktoritet</li>
+                        <li>Överträdelser av heliga principer eller etablerad ordning</li>
+                        <li>Prov på tro eller engagemang för rättfärdig sak</li>
+                    </ul>
+                    
+                    <h3>Fredsbyggande metoder som resonerar</h3>
+                    <ul>
+                        <li>Tydliga regler och procedurer för att lösa tvister</li>
+                        <li>Vädjanden till heliga texter, konstitutioner eller etablerade principer</li>
+                        <li>Erkända auktoriteter (religiösa, juridiska, traditionella) som medlare</li>
+                        <li>Formella avtal med tydlig uppföljning</li>
+                        <li>Rättviseprocesser som upprätthåller moralisk ordning</li>
+                    </ul>
+                    
+                    <h3>Styrningshänsyn</h3>
+                    <p>Effektiv fredsstyrning som arbetar med Blått medvetande bör:</p>
+                    <ul>
+                        <li>Grunda fredsprocesser i etablerade juridiska eller moraliska ramar</li>
+                        <li>Involvera respekterade auktoriteter i validering av avtal</li>
+                        <li>Skapa tydliga procedurer med definierade roller och ansvar</li>
+                        <li>Adressera uppfattningar om moralisk överträdelse med lämpliga rättvisemekanismer</li>
+                        <li>Formulera hur fred tjänar högre principer och långsiktig stabilitet</li>
+                    </ul>
+                    
+                    <h3>Exempel: Tro-baserat fredsbyggande</h3>
+                    <p>Interreligiösa fredsbyggande initiativ engagerar ofta effektivt Blått medvetande genom att arbeta genom religiösa auktoriteter och vädja till delade moraliska principer över traditioner. I Nordirland spelade kyrkoledare betydande roller i att överbrygga klyftor genom att betona gemensamma kristna värden om förlåtelse och försoning som överskred sekteristiska identiteter, vilket skapade legitimitet för fredsprocesser genom teologiska ramverk.</p>
+                `;
+            } else if (level === 'orange') {
+                content += `
+                    <h2>Orange - Prestation/Rationellt medvetande</h2>
+                    <p>Det Orange värdesystemet uppstår när individer bryter sig fria från rigid ortodoxi för att sträva efter framsteg genom vetenskaplig förståelse, strategisk handling och materiell förbättring i en värld av möjligheter.</p>
+                    
+                    <h3>Nyckelegenskaper</h3>
+                    <ul>
+                        <li>Prestation, innovation och framsteg som kärnvärden</li>
+                        <li>Strategiskt tänkande och vetenskaplig rationalitet</li>
+                        <li>Materiellt välstånd och framgång som mål</li>
+                        <li>Tävlan som driver förbättring och excellens</li>
+                        <li>Pragmatisk problemlösning över ideologisk renhet</li>
+                    </ul>
+                    
+                    <h3>Förhållningssätt till konflikt</h3>
+                    <p>Från det Orange perspektivet förstås konflikter ofta som:</p>
+                    <ul>
+                        <li>Strategiska utmaningar som kräver optimala lösningar</li>
+                        <li>Problem med tekniska eller procedurmässiga lösningar</li>
+                        <li>Tävlan om knappa resurser som kräver förhandlade utfall</li>
+                        <li>Ineffektiviteter som hindrar framsteg och välstånd</li>
+                    </ul>
+                    
+                    <h3>Fredsbyggande metoder som resonerar</h3>
+                    <ul>
+                        <li>Evidensbaserade konfliktlösningsmetoder</li>
+                        <li>Kostnads-nyttanalys av fred vs. konflikt</li>
+                        <li>Intressebaserad förhandling med fokus på praktiska resultat</li>
+                        <li>Teknologiska lösningar för övervakning och verifiering</li>
+                        <li>Ekonomiska incitament för samarbete och gemensam utveckling</li>
+                    </ul>
+                    
+                    <h3>Styrningshänsyn</h3>
+                    <p>Effektiv fredsstyrning som arbetar med Orange medvetande bör:</p>
+                    <ul>
+                        <li>Betona praktiska fördelar med stabilitet för ekonomisk utveckling</li>
+                        <li>Inkludera mätvärden och mätbara resultat i fredsprocesser</li>
+                        <li>Etablera tydliga institutionella ramar med definierade kompetenser</li>
+                        <li>Skapa ekonomiska möjligheter genom tvärkonfliktföretag</li>
+                        <li>Använda professionell expertis och tekniska färdigheter som brobyggare</li>
+                    </ul>
+                    
+                    <h3>Exempel: Ekonomiska fredsinitiativ</h3>
+                    <p>Många framgångsrika fredsbyggande insatser utnyttjar Orange medvetande genom ekonomiskt samarbete. Europeiska kol- och stålgemenskapen (föregångare till EU) skapade praktiskt ekonomiskt ömsesidigt beroende mellan tidigare fiender, medan mer nyliga initiativ som "Fredsdalen" industriområde mellan Israel, Jordanien och de palestinska territorierna visar hur delade ekonomiska intressen kan överskrida konfliktnarrativ när de vädjar till prestationsorienterade värdesystem.</p>
+                `;
+            } else if (level === 'green') {
+                content += `
+                    <h2>Grön - Pluralistiskt/Känsligt medvetande</h2>
+                    <p>Det Gröna värdesystemet uppstår när den konkurrensdrivna materialismen från Orange ger vika för att söka harmoni, jämlikhet och autentisk koppling i en värld av olika perspektiv som förtjänar respekt.</p>
+                    
+                    <h3>Nyckelegenskaper</h3>
+                    <ul>
+                        <li>Jämlikhet, inkludering och konsensus som kärnvärden</li>
+                        <li>Flera perspektiv och kulturell relativism</li>
+                        <li>Gemenskapsvälbefinnande över individuell prestation</li>
+                        <li>Känslomässig medvetenhet och interpersonell harmoni</li>
+                        <li>Miljömässig hållbarhet och social rättvisa</li>
+                    </ul>
+                    
+                    <h3>Förhållningssätt till konflikt</h3>
+                    <p>Från det Gröna perspektivet förstås konflikter ofta som:</p>
+                    <ul>
+                        <li>Resultat av exkludering, orättvisa eller marginalisering</li>
+                        <li>Problem i relationer och kommunikation</li>
+                        <li>Uttryck för ohörda behov och ouppmärksammad trauma</li>
+                        <li>Strukturella orättvisor som kräver systemförändring</li>
+                    </ul>
+                    
+                    <h3>Fredsbyggande metoder som resonerar</h3>
+                    <ul>
+                        <li>Inkluderande dialogprocesser som säkerställer att alla röster hörs</li>
+                        <li>Traumamedveten försoning med fokus på läkning</li>
+                        <li>Erkännande av historiska orättvisor och deras pågående effekter</li>
+                        <li>Konsensusbyggande och samarbetsinriktat beslutsfattande</li>
+                        <li>Adressering av underliggande strukturella ojämlikheter</li>
+                    </ul>
+                    
+                    <h3>Styrningshänsyn</h3>
+                    <p>Effektiv fredsstyrning som arbetar med Grönt medvetande bör:</p>
+                    <ul>
+                        <li>Säkerställa inkluderande, deltagande processer med mångfaldig representation</li>
+                        <li>Adressera känslomässiga och relationella dimensioner av konflikt</li>
+                        <li>Inkludera försonings- och läkningsmekanismer</li>
+                        <li>Fundera över hur fredsprocesser oavsiktligt kan förstärka ojämlikheter</li>
+                        <li>Bygga konsensus genom djup lyssnande och respektfull dialog</li>
+                    </ul>
+                    
+                    <h3>Exempel: Sanning och Försoningsprocesser</h3>
+                    <p>Många moderna övergångsrättvisemekanismer reflekterar Gröna värden genom att prioritera offers röst, kollektiv läkning och adressering av roten till orättvisor. Greensboro Sanning och Försoningskommission (USA) exemplifierade detta tillvägagångssätt genom att skapa utrymme för flera berättelser om rasistiskt våld, betona emotionell läkning och samhällsdialog snarare än juridisk bestraffning, och undersöka strukturell rasism som en rottillstånd som krävde pågående transformation.</p>
+                `;
+            } else if (level === 'yellow') {
+                content += `
+                    <h2>Gult - Systematiskt/Integrerande medvetande</h2>
+                    <p>Det Gula värdesystemet uppstår som ett "andra nivåns" medvetande som kan överskrida och inkludera tidigare stadier, erkännande av nödvändigheten och giltigheten av varje samtidigt som det adresserar komplexa utmaningar genom flexibla, systemiska tillvägagångssätt.</p>
+                    
+                    <h3>Nyckelegenskaper</h3>
+                    <ul>
+                        <li>Systemiskt tänkande och komplex mönsterigenkänning</li>
+                        <li>Funktionalitet, anpassningsbarhet och naturliga hierarkier av kompetens</li>
+                        <li>Integration av flera perspektiv till en sammanhängande helhet</li>
+                        <li>Bekvämlighet med paradox och motsägelsefull information</li>
+                        <li>Långsiktig vision med praktisk implementering</li>
+                    </ul>
+                    
+                    <h3>Förhållningssätt till konflikt</h3>
+                    <p>Från det Gula perspektivet förstås konflikter ofta som:</p>
+                    <ul>
+                        <li>Komplexa anpassningsbara system som kräver interventioner på flera nivåer</li>
+                        <li>Innehållande legitima spänningar mellan olika utvecklingsstadier</li>
+                        <li>Tillfällen för att utveckla mer funktionella arrangemang</li>
+                        <li>Mönster som kräver både strukturell förändring och individuell transformation</li>
+                    </ul>
+                    
+                    <h3>Fredsbyggande metoder som resonerar</h3>
+                    <ul>
+                        <li>Flerspårsdiplomati som integrerar flera tillvägagångssätt</li>
+                        <li>Utvecklingsmässigt differentierade insatser för olika intressenter</li>
+                        <li>Systemkartläggning och identifiering av hävstångspunkter</li>
+                        <li>Flexibel styrning som anpassar sig till olika behov</li>
+                        <li>Metamedling som bygger broar över värdesystemsskillnader</li>
+                    </ul>
+                    
+                    <h3>Styrningshänsyn</h3>
+                    <p>Effektiv fredsstyrning som arbetar med Gult medvetande bör:</p>
+                    <ul>
+                        <li>Designa anpassningsbara ramar som utvecklas med förändrade förhållanden</li>
+                        <li>Skapa kontextuellt lämpliga lösningar snarare än rigida modeller</li>
+                        <li>Integrera insikter och metoder från flera utvecklingsstadier</li>
+                        <li>Adressera både omedelbara behov och långsiktiga mönster</li>
+                        <li>Bygga ställningar för utvecklingsmässig tillväxt inom fredsprocesser</li>
+                    </ul>
+                    
+                    <h3>Exempel: Omfattande fredsavtal</h3>
+                    <p>Det colombianska fredsavtalet från 2016 visar Gult medvetande i sitt omfattande tillvägagångssätt som integrerar flera perspektiv. Det adresserade omedelbara säkerhetsbehov (Röd/Blå), etablerade ansvarsmekanismer (Blå), skapade ekonomiska möjligheter (Orange), säkerställde inkluderande deltagande (Grön), samtidigt som det designade anpassningsbara implementeringsramar som kunde utvecklas över tid. Genom att medvetet integrera flera värdesystem skapade det bredare legitimitet över utvecklingsstadierna.</p>
+                `;
+            } else if (level === 'turquoise') {
+                content += `
+                    <h2>Turkos - Holistiskt/Globalt medvetande</h2>
+                    <p>Det Turkosa värdesystemet representerar en ytterligare utveckling av andra nivåns medvetande, där global sammankoppling, kollektiv intelligens och enade energifält blir direkt upplevda verkligheter.</p>
+                    
+                    <h3>Nyckelegenskaper</h3>
+                    <ul>
+                        <li>Holistisk uppfattning om sammankopplade system</li>
+                        <li>Integration av intuition med analys</li>
+                        <li>Transpersonellt perspektiv bortom individuellt ego</li>
+                        <li>Erkännande av medvetande som en fundamental kraft</li>
+                        <li>Planetärt och generationstäckande medvetenhet</li>
+                    </ul>
+                    
+                    <h3>Förhållningssätt till konflikt</h3>
+                    <p>Från det Turkosa perspektivet förstås konflikter ofta som:</p>
+                    <ul>
+                        <li>Avskildheter från det större hela</li>
+                        <li>Uttryck av kollektiva medvetandemönster</li>
+                        <li>Tillfällen för holistisk utveckling av systemet</li>
+                        <li>Reflektioner av djupare energidynamik som kräver anpassning</li>
+                    </ul>
+                    
+                    <h3>Fredsbyggande metoder som resonerar</h3>
+                    <ul>
+                        <li>Kollektiva medvetandepraktiker (meditation, böncirkel)</li>
+                        <li>Evolutionär facilitering som adresserar energimönster</li>
+                        <li>Icke-dual medvetenhet som överskrider konventionella polariteter</li>
+                        <li>Generationstäckande och interspeciesperspektiv</li>
+                        <li>Förnimmelse och arbete med sociala fält och kollektiv intelligens</li>
+                    </ul>
+                    
+                    <h3>Styrningshänsyn</h3>
+                    <p>Effektiv fredsstyrning som arbetar med Turkost medvetande bör:</p>
+                    <ul>
+                        <li>Skapa utrymme för intuitiva och framväxande processer bredvid strukturerade</li>
+                        <li>Beakta effekter över generationer och bredare ekosystem</li>
+                        <li>Integrera kroppsliga och energimedvetenhetspraktiker i fredsprocesser</li>
+                        <li>Balansera universella principer med unika kontextuella uttryck</li>
+                        <li>Dra nytta av kollektiv intelligens genom metoder som cirkelprocesser</li>
+                    </ul>
+                    
+                    <h3>Exempel: Framväxande fredsmetoder</h3>
+                    <p>Även om det fortfarande är under utveckling, reflekterar vissa innovativa fredsinitiativ Turkosa kapaciteter. Initiativet för kollektiv läkning som sammanför efterkommande till Förintelsen med barn till nazistiska förövare exemplifierar detta genom att adressera förfäders traumamönster, använda kollektiv närvaropraktiker, och skapa utrymme för framväxande försoning som överskrider konventionell dialog. Liknande, ursprungsbefolkningens ledda läkningsceremonier som anpassar sig till land och förfäder samtidigt som de adresserar samtida konflikter visar hur Turkost medvetande kan manifesteras i fredsbyggande.</p>
+                `;
+            }
+            
+            expandedContent.innerHTML = content;
+        }
+        
+        function hideExpanded() {
+            document.getElementById('expanded-view').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

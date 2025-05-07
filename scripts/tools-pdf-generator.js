@@ -18,6 +18,7 @@ const outputDirs = {
   'education': path.join(__dirname, '..', 'static', 'framework', 'tools', 'education'),
   'food-systems': path.join(__dirname, '..', 'static', 'framework', 'tools', 'food-systems'),
   'energy': path.join(__dirname, '..', 'static', 'framework', 'tools', 'energy'),
+  'peace': path.join(__dirname, '..', 'static', 'framework', 'tools', 'peace'),
 };
 
 // Define tools to process
@@ -772,6 +773,653 @@ const tools = [
     pageFooter: {
       en: 'Regional Hub Connection Guide - Page ',
       sv: 'Guide för regionala knutpunkter - Sida '
+    }
+  },
+  {
+    name: 'technical-guide-policymakers',
+    category: 'peace',
+    fileNames: {
+      en: 'technical-guide-policymakers-en',
+      sv: 'technical-guide-policymakers-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+    },
+    pageFooter: {
+      en: 'Technical Guide for Policymakers and Mediators - Page ',
+      sv: 'Teknisk guide för beslutsfattare och medlare - Sida '
+    }
+  },
+  {
+    name: 'community-peace-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'community-peace-guide-en',
+      sv: 'community-peace-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+    },
+    pageFooter: {
+      en: 'Community Peace Implementation Guide - Page ',
+      sv: 'Guide till implementering av fred i samhället - Sida '
+    }
+  },
+  {
+    name: 'youth-peace-action-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'youth-peace-action-guide-en',
+      sv: 'youth-peace-action-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+    },
+    pageFooter: {
+      en: 'Youth Peace Action Guide - Page ',
+      sv: 'Ungdomsfredsguide - Sida '
+    }
+  },
+  {
+    name: 'digital-peace-ethics-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'digital-peace-ethics-guide-en',
+      sv: 'digital-peace-ethics-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+    },
+    pageFooter: {
+      en: 'Digital Peace Ethics Guide - Page ',
+      sv: 'Digital fredsetisk guide - Sida '
+    }
+  },
+  {
+    name: 'conflict-analysis-framework',
+    category: 'peace',
+    fileNames: {
+      en: 'conflict-analysis-framework-en',
+      sv: 'conflict-analysis-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Conflict Analysis Framework - Page ',
+      sv: 'Ramverk för konfliktanalys - Sida '
+    }
+  },
+  {
+    name: 'peace-committee-charter',
+    category: 'peace',
+    fileNames: {
+      en: 'peace-committee-charter-en',
+      sv: 'peace-committee-charter-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Local Peace Committee Charter Template - Page ',
+      sv: 'Mall för stadgar för lokal fredskommitté - Sida '
+    }
+  },
+  {
+    name: 'multi-track-dialogue-protocol',
+    category: 'peace',
+    fileNames: {
+      en: 'multi-track-dialogue-protocol-en',
+      sv: 'multi-track-dialogue-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Multi-Track Dialogue Protocol - Page ',
+      sv: 'Protokoll för flerspårig dialog - Sida '
+    }
+  },
+  {
+    name: 'early-warning-design-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'early-warning-design-guide-en',
+      sv: 'early-warning-design-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Early Warning System Design Guide - Page ',
+      sv: 'Guide för design av tidiga varningssystem - Sida '
+    }
+  },
+  {
+    name: 'peace-tech-ethics-assessment',
+    category: 'peace',
+    fileNames: {
+      en: 'peace-tech-ethics-assessment-en',
+      sv: 'peace-tech-ethics-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Peace-Technology Ethics Assessment - Page ',
+      sv: 'Etisk bedömning av fredsteknologi - Sida '
+    }
+  },
+  {
+    name: 'value-system-mapping-template',
+    category: 'peace',
+    fileNames: {
+      en: 'value-system-mapping-template-en',
+      sv: 'value-system-mapping-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Value System Mapping Template - Page ',
+      sv: 'Mall för värdesystemkartläggning - Sida '
+    }
+  },
+  // Context-Specific Implementation Guides
+  {
+    name: 'urban-conflict-toolkit',
+    category: 'peace',
+    fileNames: {
+      en: 'urban-conflict-toolkit-en',
+      sv: 'urban-conflict-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Urban Conflict Mediation Toolkit - Page ',
+      sv: 'Verktyg för medling av urbana konflikter - Sida '
+    }
+  },
+  {
+    name: 'resource-conflict-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'resource-conflict-guide-en',
+      sv: 'resource-conflict-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Resource Conflict Transformation Guide - Page ',
+      sv: 'Guide för omvandling av resurskonflikter - Sida '
+    }
+  },
+  {
+    name: 'reconciliation-framework',
+    category: 'peace',
+    fileNames: {
+      en: 'reconciliation-framework-en',
+      sv: 'reconciliation-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Post-Conflict Reconciliation Framework - Page ',
+      sv: 'Ramverk för försoning efter konflikt - Sida '
+    }
+  },
+  {
+    name: 'business-peace-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'business-peace-guide-en',
+      sv: 'business-peace-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Private Sector Peace Engagement Guide - Page ',
+      sv: 'Guide för privat sektors fredsengagemang - Sida '
+    }
+  },
+  {
+    name: 'protection-transition-manual',
+    category: 'peace',
+    fileNames: {
+      en: 'protection-transition-manual-en',
+      sv: 'protection-transition-manual-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Military-Civilian Protection Transition Manual - Page ',
+      sv: 'Manual för militär-civil skyddsövergång - Sida '
+    }
+  },
+
+  // Advocacy & Scaling Tools
+  {
+    name: 'peace-advocacy-toolkit',
+    category: 'peace',
+    fileNames: {
+      en: 'peace-advocacy-toolkit-en',
+      sv: 'peace-advocacy-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Peace Advocacy Campaign Toolkit - Page ',
+      sv: 'Verktygslåda för fredsförespråkande kampanjer - Sida '
+    }
+  },
+  {
+    name: 'peace-financing-navigator',
+    category: 'peace',
+    fileNames: {
+      en: 'peace-financing-navigator-en',
+      sv: 'peace-financing-navigator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Peace Financing Navigator - Page ',
+      sv: 'Navigator för fredsfinansiering - Sida '
+    }
+  },
+  {
+    name: 'institutional-integration-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'institutional-integration-guide-en',
+      sv: 'institutional-integration-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Institutional Peace Integration Guide - Page ',
+      sv: 'Guide för institutionell fredsintegration - Sida '
+    }
+  },
+  {
+    name: 'media-peace-messaging-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'media-peace-messaging-guide-en',
+      sv: 'media-peace-messaging-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Media Peace Messaging Guide - Page ',
+      sv: 'Guide för mediefredsbudskap - Sida '
+    }
+  },
+
+  // Low-Resource Funding Implementation Tools
+  {
+    name: 'community-peace-fund-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'community-peace-fund-guide-en',
+      sv: 'community-peace-fund-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Community Peace Fund Establishment Guide - Page ',
+      sv: 'Guide för upprättande av lokala fredsfonder - Sida '
+    }
+  },
+  {
+    name: 'peace-micro-grant-template',
+    category: 'peace',
+    fileNames: {
+      en: 'peace-micro-grant-template-en',
+      sv: 'peace-micro-grant-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Peace Micro-Grant Template - Page ',
+      sv: 'Mall för fredsmikrobidrag - Sida '
+    }
+  },
+  {
+    name: 'resource-mapping-tool',
+    category: 'peace',
+    fileNames: {
+      en: 'resource-mapping-tool-en',
+      sv: 'resource-mapping-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Resource Mapping Tool - Page ',
+      sv: 'Verktyg för resurskartläggning - Sida '
+    }
+  },
+  {
+    name: 'hybrid-funding-agreement',
+    category: 'peace',
+    fileNames: {
+      en: 'hybrid-funding-agreement-en',
+      sv: 'hybrid-funding-agreement-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Hybrid Funding Agreement Template - Page ',
+      sv: 'Mall för hybridfinansieringsavtal - Sida '
+    }
+  },
+  {
+    name: 'peace-fund-sustainability-calculator',
+    category: 'peace',
+    fileNames: {
+      en: 'peace-fund-sustainability-calculator-en',
+      sv: 'peace-fund-sustainability-calculator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Peace Fund Sustainability Calculator - Page ',
+      sv: 'Hållbarhetskalkylator för fredsfonder - Sida '
+    }
+  },
+
+  // Traditional Peace Tools
+  {
+    name: 'islamic-mediation-protocol',
+    category: 'peace',
+    fileNames: {
+      en: 'islamic-mediation-protocol-en',
+      sv: 'islamic-mediation-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Islamic-Informed Mediation Protocol - Page ',
+      sv: 'Islamiskt informerat medlingsprotokoll - Sida '
+    }
+  },
+  {
+    name: 'confucian-dialogue-template',
+    category: 'peace',
+    fileNames: {
+      en: 'confucian-dialogue-template-en',
+      sv: 'confucian-dialogue-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Confucian Harmony-Based Dialogue Template - Page ',
+      sv: 'Mall för konfuciansk harmonibaserad dialog - Sida '
+    }
+  },
+  {
+    name: 'trauma-informed-toolkit',
+    category: 'peace',
+    fileNames: {
+      en: 'trauma-informed-toolkit-en',
+      sv: 'trauma-informed-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Trauma-Informed Facilitation Toolkit - Page ',
+      sv: 'Traumabaserad faciliteringsverktyg - Sida '
+    }
+  },
+  {
+    name: 'cross-cultural-integration-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'cross-cultural-integration-guide-en',
+      sv: 'cross-cultural-integration-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Cross-Cultural Peace Tradition Integration Guide - Page ',
+      sv: 'Guide för integrering av tvärkulturella fredstraditioner - Sida '
+    }
+  },
+  {
+    name: 'causal-loop-template',
+    category: 'peace',
+    fileNames: {
+      en: 'causal-loop-template-en',
+      sv: 'causal-loop-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Causal Loop Diagramming Template - Page ',
+      sv: 'Mall för kausal loopdiagram - Sida '
+    }
+  },
+  {
+    name: 'systemic-stakeholder-mapping',
+    category: 'peace',
+    fileNames: {
+      en: 'systemic-stakeholder-mapping-en',
+      sv: 'systemic-stakeholder-mapping-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Systemic Stakeholder Mapping - Page ',
+      sv: 'Systemisk intressentkartläggning - Sida '
+    }
+  },
+  {
+    name: 'system-boundary-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'system-boundary-guide-en',
+      sv: 'system-boundary-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'System Boundary Definition Guide - Page ',
+      sv: 'Guide för definition av systemgränser - Sida '
+    }
+  },
+  {
+    name: 'stock-flow-analysis',
+    category: 'peace',
+    fileNames: {
+      en: 'stock-flow-analysis-en',
+      sv: 'stock-flow-analysis-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Stock and Flow Analysis Framework for Peace & Conflict Resolution - Page ',
+      sv: 'Analysramverk för lager och flöden inom freds- och konfliktarbete - Sida '
+    }
+  },
+  {
+    name: 'conflict-iceberg-template',
+    category: 'peace',
+    fileNames: {
+      en: 'conflict-iceberg-template-en',
+      sv: 'conflict-iceberg-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Conflict Iceberg Model Template - Page ',
+      sv: 'Mall för konfliktisbergsmodell - Sida '
+    }
+  },
+  {
+    name: 'conflict-archetype-guide',
+    category: 'peace',
+    fileNames: {
+      en: 'conflict-archetype-guide-en',
+      sv: 'conflict-archetype-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Conflict System Archetype Guide - Page ',
+      sv: 'Guide till arketyper för konfliktsystem - Sida '
+    }
+  },
+  {
+    name: 'leverage-point-matrix',
+    category: 'peace',
+    fileNames: {
+      en: 'leverage-point-matrix-en',
+      sv: 'leverage-point-matrix-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Leverage Point Identification Matrix - Page ',
+      sv: 'Matris för identifiering av hävstångspunkter - Sida '
+    }
+  },
+  {
+    name: 'systems-scenario-planning',
+    category: 'peace',
+    fileNames: {
+      en: 'systems-scenario-planning-en',
+      sv: 'systems-scenario-planning-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Systems-Based Scenario Planning - Page ',
+      sv: 'Systembaserad scenarioplanering - Sida '
+    }
+  },
+  {
+    name: 'systemic-outcomes-harvesting',
+    category: 'peace',
+    fileNames: {
+      en: 'systemic-outcomes-harvesting-en',
+      sv: 'systemic-outcomes-harvesting-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Systemic Outcomes Harvesting - Page ',
+      sv: 'Systemisk utfallsuppsamling - Sida '
+    }
+  },
+  {
+    name: 'community-systems-mapping',
+    category: 'peace',
+    fileNames: {
+      en: 'community-systems-mapping-en',
+      sv: 'community-systems-mapping-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Community Systems Mapping Guide - Page ',
+      sv: 'Guide för kartläggning av samhällssystem - Sida '
+    }
+  },
+  {
+    name: 'organizational-systems-analysis',
+    category: 'peace',
+    fileNames: {
+      en: 'organizational-systems-analysis-en',
+      sv: 'organizational-systems-analysis-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Organizational Systems Analysis Framework - Page ',
+      sv: 'Ramverk för organisatorisk systemanalys - Sida '
+    }
+  },
+  {
+    name: 'policy-systems-assessment',
+    category: 'peace',
+    fileNames: {
+      en: 'policy-systems-assessment-en',
+      sv: 'policy-systems-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+    },
+    pageFooter: {
+      en: 'Peace Policy Systems Assessment Framework - Page ',
+      sv: 'Ramverk för bedömning av fredspolitiska system - Sida '
     }
   }
 ];

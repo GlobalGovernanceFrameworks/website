@@ -59,7 +59,7 @@
   // Helper function for language button styles
   function getLanguageButtonStyle(lang) {
     const isActive = currentLocale === lang;
-    return `padding: 0.5rem 1rem; border-radius: 0.375rem; border: 1px solid #e5e7eb; background-color: ${isActive ? '#2C8A78' : 'white'}; color: ${isActive ? 'white' : '#2C8A78'}; font-weight: 500; text-decoration: none;`;
+    return isActive ? 'lang-button active' : 'lang-button';
   }
 
   // Translations for this page
@@ -105,6 +105,8 @@
       policyIntegrationDesc: "Analytical tool to assess policy coherence and identify opportunities for integrating climate and energy considerations across sectors.",
       coordinationGuideTitle: "Multi-level Governance Coordination Guide",
       coordinationGuideDesc: "Guidance for effective coordination between local, regional, national, and international governance levels to enhance policy implementation.",
+      hubConnectionTitle: "Regional Hub Connection Guide",
+      hubConnectionDesc: "Guidance for connecting local climate action to regional coordination mechanisms through the Regional Climate & Energy Governance Hubs.",
       
       // Tool titles - Sectoral Implementation
       energyTransitionTitle: "Energy Transition Roadmap Template",
@@ -127,9 +129,7 @@
       institutionalDesc: "Framework for evaluating and strengthening institutional arrangements to better address climate challenges.",
       financeTitle: "Climate Finance Access Navigator",
       financeDesc: "Guide to identifying, accessing, and leveraging climate finance from diverse sources for implementing governance measures.",
-      hubConnectionTitle: "Regional Hub Connection Guide",
-      hubConnectionDesc: "Guidance for connecting local climate action to regional coordination mechanisms through the Regional Climate & Energy Governance Hubs.",
-            
+      
       downloadButton: "Download"
     },
     sv: {
@@ -173,6 +173,8 @@
       policyIntegrationDesc: "Analytiskt verktyg för att bedöma politisk samstämmighet och identifiera möjligheter för att integrera klimat- och energiöverväganden över sektorer.",
       coordinationGuideTitle: "Guide för samordning av flernivåstyrning",
       coordinationGuideDesc: "Vägledning för effektiv samordning mellan lokala, regionala, nationella och internationella styrningsnivåer för att förbättra policyimplementering.",
+      hubConnectionTitle: "Guide för regional navkoppling",
+      hubConnectionDesc: "Vägledning för att koppla lokala klimatåtgärder till regionala samordningsmekanismer genom de regionala klimat- och energistyrningsnavena.",
       
       // Tool titles - Sectoral Implementation (Swedish)
       energyTransitionTitle: "Mall för färdplan för energiomställning",
@@ -195,15 +197,65 @@
       institutionalDesc: "Ramverk för att utvärdera och stärka institutionella arrangemang för att bättre hantera klimatutmaningar.",
       financeTitle: "Klimatfinansieringsåtkomstnavigator",
       financeDesc: "Guide till att identifiera, få tillgång till och utnyttja klimatfinansiering från olika källor för att implementera styrningsåtgärder.",
-      hubConnectionTitle: "Guide för regional navkoppling",
-      hubConnectionDesc: "Vägledning för att koppla lokala klimatåtgärder till regionala samordningsmekanismer genom de regionala klimat- och energistyrningsnavena.",
-            
+      
       downloadButton: "Ladda ner"
     }
   };
 
   // Get current translations based on active locale
   $: texts = translations[currentLocale] || translations.en;
+
+  // Tool data for each section, using actual file names
+  const guideTools = [
+    { id: 'technical-guide', fileName: 'climate-energy-technical-guide', color: 'color-1' },
+    { id: 'stakeholder-guide', fileName: 'climate-energy-stakeholder-guide', color: 'color-2' },
+    { id: 'action-guide', fileName: 'climate-energy-action-guide', color: 'color-3' }
+  ];
+  
+  const coreTools = [
+    { id: 'hub-connection', fileName: 'regional-hub-connection-guide', color: 'color-dark' },
+    { id: 'readiness', fileName: 'governance-readiness-assessment', color: 'color-1' },
+    { id: 'just-transition', fileName: 'just-transition-planning-template', color: 'color-2' },
+    { id: 'stakeholder', fileName: 'stakeholder-engagement-protocol', color: 'color-3' },
+    { id: 'policy-integration', fileName: 'policy-integration-matrix', color: 'color-4' },
+    { id: 'coordination-guide', fileName: 'governance-coordination-guide', color: 'color-5' }
+  ];
+  
+  const sectoralTools = [
+    { id: 'energy-transition', fileName: 'energy-transition-roadmap', color: 'color-1' },
+    { id: 'adaptation-planning', fileName: 'adaptation-planning-framework', color: 'color-2' },
+    { id: 'carbon-pricing', fileName: 'carbon-pricing-guide', color: 'color-3' },
+    { id: 'nature-solutions', fileName: 'nature-based-solutions-tool', color: 'color-4' },
+    { id: 'innovation', fileName: 'innovation-acceleration-kit', color: 'color-5' }
+  ];
+  
+  const advocacyTools = [
+    { id: 'policy-brief', fileName: 'policy-brief-templates', color: 'color-1' },
+    { id: 'communication', fileName: 'governance-communication-toolkit', color: 'color-2' },
+    { id: 'institutional', fileName: 'institutional-reform-guide', color: 'color-3' },
+    { id: 'finance', fileName: 'finance-access-navigator', color: 'color-4' }
+  ];
+
+  const toolNameToTranslationKey = {
+    'technical-guide': 'technicalGuide',
+    'stakeholder-guide': 'stakeholderGuide',
+    'action-guide': 'actionGuide',
+    'hub-connection': 'hubConnection',
+    'readiness': 'readiness',
+    'just-transition': 'justTransition',
+    'stakeholder': 'stakeholder',
+    'policy-integration': 'policyIntegration',
+    'coordination-guide': 'coordinationGuide',
+    'energy-transition': 'energyTransition',
+    'adaptation-planning': 'adaptationPlanning',
+    'carbon-pricing': 'carbonPricing',
+    'nature-solutions': 'natureSolutions',
+    'innovation': 'innovation',
+    'policy-brief': 'policyBrief',
+    'communication': 'communication',
+    'institutional': 'institutional',
+    'finance': 'finance'
+  };
 </script>
 
 <svelte:head>
@@ -212,464 +264,164 @@
 </svelte:head>
 
 <!-- Hero Section -->
-<section style="padding: 3rem 0; background: linear-gradient(to bottom right, #156D64, #2C8A78); color: white;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
-    <div style="max-width: 42rem; margin: 0 auto;">
-      <h1 style="font-size: 2.5rem; line-height: 1.2; font-weight: 700; margin-bottom: 1rem;">
-        {texts.title}
-      </h1>
-      <p style="font-size: 1.25rem; color: #ffffff;">
-        {texts.subtitle}
-      </p>
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>{texts.title}</h1>
+      <p>{texts.subtitle}</p>
     </div>
   </div>
 </section>
 
+<!-- Back Navigation -->
+<div class="container">
+  <div class="back-navigation">
+    <a href="{base}/framework/tools" class="back-link">
+      <span class="back-icon">←</span>
+      {currentLocale === 'sv' ? 'Tillbaka till verktygsöversikt' : 'Back to Tools Overview'}
+    </a>
+  </div>
+</div>
+
 <!-- Main Content Section -->
-<section style="padding: 3rem 0; background-color: white;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
-    <div style="max-width: 42rem; margin: 0 auto;">
-      <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
-        {texts.intro}
-      </p>
+<section class="main-content">
+  <div class="container">
+    <div class="content-wrapper">
+      <p class="intro-text">{texts.intro}</p>
 
       <!-- Start with the Seed Kit -->
-      <div style="background-color: #e6f2f0; padding: 1.5rem; border-radius: 0.75rem; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(44, 138, 120, 0.1); border: 1px solid rgba(44, 138, 120, 0.2);">
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #2C8A78;">⚡</div>
-          <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.seedKitTitle}</h2>
-            <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.seedKitDesc}
-            </p>
-            <a href={getFilePath(`seed-kit.zip`)} download style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+      <div class="seed-kit-card">
+        <div class="card-content">
+          <div class="card-icon">⚡</div>
+          <div class="card-text">
+            <h2>{texts.seedKitTitle}</h2>
+            <p>{texts.seedKitDesc}</p>
+          </div>
+          <div class="card-actions">
+            <a href={getFilePath(`seed-kit.zip`)} download class="primary-btn">
               {texts.seedKitButton}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
+              <span class="icon">↓</span>
             </a>
           </div>
         </div>
       </div>
 
       <!-- Framework Guides -->
-      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2C8A78;">{texts.guidesTitle}</h2>
-      <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
-        {texts.guidesDesc}
-      </p>
+      <h2 class="section-title">{texts.guidesTitle}</h2>
+      <p class="section-desc">{texts.guidesDesc}</p>
       
-      <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
-        <!-- Technical Guide -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.technicalGuideTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.technicalGuideDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`climate-energy-technical-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`climate-energy-technical-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #2C8A78; border: 1px solid #2C8A78; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
+      <div class="tools-grid">
+        {#each guideTools as tool}
+          <div class="tool-card {tool.color}">
+            <h3>{texts[`${toolNameToTranslationKey[tool.id]}Title`]}</h3>
+            <p>{texts[`${toolNameToTranslationKey[tool.id]}Desc`]}</p>
+            <div class="tool-actions">
+              <a href={getFilePath(`${tool.fileName}-${currentLocale}.pdf`)} download class="download-btn pdf">
+                {texts.downloadPDF}
+                <span class="icon">↓</span>
+              </a>
+              <a href={getFilePath(`${tool.fileName}-${currentLocale}.md`)} download class="download-btn md">
+                {texts.downloadMarkdown}
+                <span class="icon">↓</span>
+              </a>
+            </div>
           </div>
-        </div>
-        
-        <!-- Stakeholder Implementation Guide -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #4A9586;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #4A9586;">{texts.stakeholderGuideTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.stakeholderGuideDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`climate-energy-stakeholder-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #4A9586; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`climate-energy-stakeholder-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #4A9586; border: 1px solid #4A9586; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Climate Action Guide -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #68A094;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #68A094;">{texts.actionGuideTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.actionGuideDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`climate-energy-action-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #68A094; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`climate-energy-action-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #68A094; border: 1px solid #68A094; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
+        {/each}
       </div>
 
       <!-- Core Governance Tools -->
-      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2C8A78;">{texts.toolsTitle}</h2>
-      <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
-        {texts.toolsDesc}
-      </p>
+      <h2 class="section-title">{texts.toolsTitle}</h2>
+      <p class="section-desc">{texts.toolsDesc}</p>
       
-      <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
-        <!-- Regional Hub Connection Guide -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #156D64;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #156D64;">{texts.hubConnectionTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.hubConnectionDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`regional-hub-connection-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #156D64; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`regional-hub-connection-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #156D64; border: 1px solid #156D64; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
+      <div class="tools-grid">
+        {#each coreTools as tool}
+          <div class="tool-card {tool.color}">
+            <h3>{texts[`${toolNameToTranslationKey[tool.id]}Title`]}</h3>
+            <p>{texts[`${toolNameToTranslationKey[tool.id]}Desc`]}</p>
+            <div class="tool-actions">
+              <a href={getFilePath(`${tool.fileName}-${currentLocale}.pdf`)} download class="download-btn pdf">
+                {texts.downloadPDF}
+                <span class="icon">↓</span>
+              </a>
+              <a href={getFilePath(`${tool.fileName}-${currentLocale}.md`)} download class="download-btn md">
+                {texts.downloadMarkdown}
+                <span class="icon">↓</span>
+              </a>
+            </div>
           </div>
-        </div>
-        
-        <!-- Governance Readiness Assessment -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.readinessTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.readinessDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`governance-readiness-assessment-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`governance-readiness-assessment-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #2C8A78; border: 1px solid #2C8A78; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Just Transition Planning Template -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #39857A;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #39857A;">{texts.justTransitionTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.justTransitionDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`just-transition-planning-template-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #39857A; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`just-transition-planning-template-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #39857A; border: 1px solid #39857A; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Stakeholder Engagement Protocol -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #468F80;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #468F80;">{texts.stakeholderTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.stakeholderDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`stakeholder-engagement-protocol-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #468F80; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`stakeholder-engagement-protocol-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #468F80; border: 1px solid #468F80; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Climate-Energy Policy Integration Matrix -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #539987;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #539987;">{texts.policyIntegrationTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.policyIntegrationDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`policy-integration-matrix-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #539987; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`policy-integration-matrix-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #539987; border: 1px solid #539987; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Multi-level Governance Coordination Guide -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #60A38D;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #60A38D;">{texts.coordinationGuideTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.coordinationGuideDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`governance-coordination-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #60A38D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`governance-coordination-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #60A38D; border: 1px solid #60A38D; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
+        {/each}
       </div>
 
       <!-- Sectoral Implementation Guides Section -->
-      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2C8A78;">{texts.sectoralTitle}</h2>
-      <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
-        {texts.sectoralDesc}
-      </p>
+      <h2 class="section-title">{texts.sectoralTitle}</h2>
+      <p class="section-desc">{texts.sectoralDesc}</p>
       
-      <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
-        <!-- Energy Transition Roadmap Template -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.energyTransitionTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.energyTransitionDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`energy-transition-roadmap-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`energy-transition-roadmap-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #2C8A78; border: 1px solid #2C8A78; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
+      <div class="tools-grid">
+        {#each sectoralTools as tool}
+          <div class="tool-card {tool.color}">
+            <h3>{texts[`${toolNameToTranslationKey[tool.id]}Title`]}</h3>
+            <p>{texts[`${toolNameToTranslationKey[tool.id]}Desc`]}</p>
+            <div class="tool-actions">
+              <a href={getFilePath(`${tool.fileName}-${currentLocale}.pdf`)} download class="download-btn pdf">
+                {texts.downloadPDF}
+                <span class="icon">↓</span>
+              </a>
+              <a href={getFilePath(`${tool.fileName}-${currentLocale}.md`)} download class="download-btn md">
+                {texts.downloadMarkdown}
+                <span class="icon">↓</span>
+              </a>
+            </div>
           </div>
-        </div>
-
-        <!-- Adaptation Planning Framework -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #39857A;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #39857A;">{texts.adaptationPlanningTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.adaptationPlanningDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`adaptation-planning-framework-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #39857A; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`adaptation-planning-framework-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #39857A; border: 1px solid #39857A; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Carbon Pricing Implementation Guide -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #468F80;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #468F80;">{texts.carbonPricingTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.carbonPricingDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`carbon-pricing-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #468F80; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`carbon-pricing-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #468F80; border: 1px solid #468F80; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Nature-based Solutions Assessment Tool -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #539987;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #539987;">{texts.natureSolutionsTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.natureSolutionsDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`nature-based-solutions-tool-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #539987; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`nature-based-solutions-tool-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #539987; border: 1px solid #539987; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Climate Innovation Acceleration Kit -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #60A38D;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #60A38D;">{texts.innovationTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.innovationDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`innovation-acceleration-kit-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #60A38D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`innovation-acceleration-kit-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #60A38D; border: 1px solid #60A38D; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
+        {/each}
       </div>
 
       <!-- Advocacy & Scaling Tools Section -->
-      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2C8A78;">{texts.advocacyTitle}</h2>
-      <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
-        {texts.advocacyDesc}
-      </p>
+      <h2 class="section-title">{texts.advocacyTitle}</h2>
+      <p class="section-desc">{texts.advocacyDesc}</p>
       
-      <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
-        <!-- Climate Policy Brief Templates -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.policyBriefTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.policyBriefDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`policy-brief-templates-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`policy-brief-templates-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #2C8A78; border: 1px solid #2C8A78; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
+      <div class="tools-grid">
+        {#each advocacyTools as tool}
+          <div class="tool-card {tool.color}">
+            <h3>{texts[`${toolNameToTranslationKey[tool.id]}Title`]}</h3>
+            <p>{texts[`${toolNameToTranslationKey[tool.id]}Desc`]}</p>
+            <div class="tool-actions">
+              <a href={getFilePath(`${tool.fileName}-${currentLocale}.pdf`)} download class="download-btn pdf">
+                {texts.downloadPDF}
+                <span class="icon">↓</span>
+              </a>
+              <a href={getFilePath(`${tool.fileName}-${currentLocale}.md`)} download class="download-btn md">
+                {texts.downloadMarkdown}
+                <span class="icon">↓</span>
+              </a>
+            </div>
           </div>
-        </div>
-        
-        <!-- Governance Communication Toolkit -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #39857A;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #39857A;">{texts.communicationTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.communicationDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`governance-communication-toolkit-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #39857A; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`governance-communication-toolkit-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #39857A; border: 1px solid #39857A; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-<!-- Climate Institutional Reform Guide -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #468F80;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #468F80;">{texts.institutionalTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.institutionalDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`institutional-reform-guide-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #468F80; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`institutional-reform-guide-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #468F80; border: 1px solid #468F80; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Climate Finance Access Navigator -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #539987;">
-          <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #539987;">{texts.financeTitle}</h3>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{texts.financeDesc}</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-            <a href={getFilePath(`finance-access-navigator-${currentLocale}.pdf`)} download style="display: inline-flex; align-items: center; background-color: #539987; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadPDF}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-            <a href={getFilePath(`finance-access-navigator-${currentLocale}.md`)} download style="display: inline-flex; align-items: center; background-color: white; color: #539987; border: 1px solid #539987; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.downloadMarkdown}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-            </a>
-          </div>
-        </div>
+        {/each}
       </div>
       
       <!-- Request & Feedback Section -->
-      <div style="background-color: #e6f2f0; padding: 1.5rem; border-radius: 0.5rem; margin-top: 2rem; margin-bottom: 2rem;">
-        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.requestTitle}</h3>
-        <p style="color: #4b5563; margin-bottom: 1rem;">
-          {texts.requestDesc} <a href="{base}/contact" style="color: #156D64; text-decoration: underline; font-weight: 500;">{texts.contactLink}</a>
+      <div class="feedback-card">
+        <h3>{texts.requestTitle}</h3>
+        <p>
+          {texts.requestDesc} <a href="{base}/contact" class="contact-link">{texts.contactLink}</a>
         </p>
       </div>
       
       <!-- Back to Tools Overview link -->
-      <div style="margin-bottom: 2rem;">
-        <a href="{base}/framework/tools" style="display: inline-flex; align-items: center; color: #2C8A78; font-weight: 500; text-decoration: none;">
-          <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-right: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
+      <div class="back-link">
+        <a href="{base}/framework/tools">
+          <span class="back-icon">←</span>
           {currentLocale === 'sv' ? 'Tillbaka till verktygsöversikt' : 'Back to Tools Overview'}
         </a>
       </div>
       
       <!-- Language switcher section -->
-      <div style="border-top: 1px solid #e5e7eb; padding-top: 2rem; margin-top: 2rem;">
-        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #2C8A78;">{texts.languagesTitle}</h3>
-        <div style="display: flex; gap: 1rem;">
-          <button on:click={() => setLocale('en')} style={getLanguageButtonStyle('en')}>
+      <div class="language-section">
+        <h3>{texts.languagesTitle}</h3>
+        <div class="language-buttons">
+          <button on:click={() => setLocale('en')} class={getLanguageButtonStyle('en')}>
             English
           </button>
-          <button on:click={() => setLocale('sv')} style={getLanguageButtonStyle('sv')}>
+          <button on:click={() => setLocale('sv')} class={getLanguageButtonStyle('sv')}>
             Svenska
           </button>
         </div>
@@ -677,3 +429,397 @@
     </div>
   </div>
 </section>
+
+<style>
+  /* Global Styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .content-wrapper {
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 3rem 0;
+    background: linear-gradient(to bottom right, #156D64, #2C8A78);
+    color: white;
+  }
+  
+  .hero-content {
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    color: #ffffff;
+  }
+  
+  /* Back Navigation */
+  .back-navigation {
+    margin: 1.5rem 0;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #2C8A78;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: #156D64;
+  }
+
+  .back-icon {
+    margin-right: 0.5rem;
+  }
+  
+  /* Main Content Section */
+  .main-content {
+    padding: 3rem 0;
+    background-color: white;
+  }
+  
+  .intro-text {
+    margin-bottom: 2rem;
+    color: #4b5563;
+    line-height: 1.7;
+    font-size: 1.125rem;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #2C8A78;
+  }
+  
+  .section-desc {
+    margin-bottom: 2rem;
+    color: #4b5563;
+    line-height: 1.7;
+    font-size: 1.125rem;
+  }
+  
+  /* Seed Kit Card */
+  .seed-kit-card {
+    background-color: #e6f2f0;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(44, 138, 120, 0.1);
+    border: 1px solid rgba(44, 138, 120, 0.2);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    color: #2C8A78;
+  }
+  
+  .card-text {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .card-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2C8A78;
+  }
+  
+  .card-text p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  .card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  
+  /* Tools Grid */
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Tool Cards */
+  .tool-card {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-left: 4px solid;
+  }
+  
+  .tool-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  .tool-card p {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Color Variations */
+  .color-dark {
+    border-left-color: #156D64;
+  }
+  
+  .color-dark h3 {
+    color: #156D64;
+  }
+  
+  .color-1 {
+    border-left-color: #2C8A78;
+  }
+  
+  .color-1 h3 {
+    color: #2C8A78;
+  }
+  
+  .color-2 {
+    border-left-color: #39857A;
+  }
+  
+.color-2 h3 {
+    color: #39857A;
+  }
+  
+  .color-3 {
+    border-left-color: #468F80;
+  }
+  
+  .color-3 h3 {
+    color: #468F80;
+  }
+  
+  .color-4 {
+    border-left-color: #539987;
+  }
+  
+  .color-4 h3 {
+    color: #539987;
+  }
+  
+  .color-5 {
+    border-left-color: #60A38D;
+  }
+  
+  .color-5 h3 {
+    color: #60A38D;
+  }
+  
+  /* Tool Actions */
+  .tool-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  /* Buttons */
+  .primary-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #2C8A78;
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+  }
+  
+  .primary-btn:hover {
+    background-color: #156D64;
+    transform: translateY(-1px);
+  }
+  
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+  }
+  
+  .download-btn.pdf {
+    background-color: #2C8A78;
+    color: white;
+  }
+  
+  .tool-card.color-dark .download-btn.pdf {
+    background-color: #156D64;
+  }
+  
+  .tool-card.color-1 .download-btn.pdf {
+    background-color: #2C8A78;
+  }
+  
+  .tool-card.color-2 .download-btn.pdf {
+    background-color: #39857A;
+  }
+  
+  .tool-card.color-3 .download-btn.pdf {
+    background-color: #468F80;
+  }
+  
+  .tool-card.color-4 .download-btn.pdf {
+    background-color: #539987;
+  }
+  
+  .tool-card.color-5 .download-btn.pdf {
+    background-color: #60A38D;
+  }
+  
+  .download-btn.md {
+    background-color: white;
+    border: 1px solid currentColor;
+    color: inherit;
+  }
+  
+  .download-btn:hover {
+    transform: translateY(-1px);
+  }
+  
+  .icon {
+    margin-left: 0.5rem;
+  }
+  
+  /* Feedback Card */
+  .feedback-card {
+    background-color: #e6f2f0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .feedback-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2C8A78;
+  }
+  
+  .feedback-card p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-link {
+    color: #156D64;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  /* Back Link */
+  .back-link {
+    margin-bottom: 2rem;
+  }
+  
+  .back-link a {
+    display: inline-flex;
+    align-items: center;
+    color: #2C8A78;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  /* Language Section */
+  .language-section {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .language-section h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2C8A78;
+  }
+  
+  .language-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .lang-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #e5e7eb;
+    background-color: white;
+    color: #2C8A78;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .lang-button.active {
+    background-color: #2C8A78;
+    color: white;
+    border-color: #2C8A78;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 640px) {
+    .card-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .card-actions {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .tool-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .download-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

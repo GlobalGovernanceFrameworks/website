@@ -22,6 +22,9 @@
       availableResources: "Currently Available Resources",
       climateDesc: "Tools for implementing the Climate & Energy Governance Framework, including assessment tools, transition planning templates, and advocacy resources for climate policy.",
       climateButton: "Access Climate & Energy Tools",
+      peaceTitle: "Peace & Conflict Resolution Framework Tools",
+      peaceDesc: "Resources for implementing peace governance at multiple levels, including conflict analysis templates, dialogue protocols, and tools for transitional justice, early warning systems, and trauma-informed facilitation.",
+      peaceButton: "Access Peace & Conflict Tools",
       educationTitle: "Education Framework Tools",
       educationDesc: "Tools for implementing the Perfected Enhanced Educational Systems Framework, including project guides, assessment tools, and advocacy resources.",
       educationButton: "Access Education Tools",
@@ -33,7 +36,6 @@
       otherFrameworksDesc: "Implementation tools for the following frameworks are currently in development and will be made available soon:",
       environmentalTitle: "Environmental Stewardship Framework",
       technologyTitle: "Technology Governance Framework",
-      peaceTitle: "Peace & Conflict Resolution Framework",
       economicTitle: "Economic Integration Framework",
       spiritualTitle: "Religious & Spiritual Dialogue Framework",
       metaTitle: "Integrated Meta-Governance Framework",
@@ -49,6 +51,9 @@
       availableResources: "Tillgängliga resurser",
       climateDesc: "Verktyg för att implementera ramverket för klimat- och energistyrning, inklusive bedömningsverktyg, mallar för omställningsplanering och opinionsbildningsresurser för klimatpolitik.",
       climateButton: "Öppna klimat- och energiverktyg",
+      peaceTitle: "Verktyg för fred och konfliktlösningsramverk",
+      peaceDesc: "Resurser för att implementera fredsarbete på flera nivåer, inklusive mallar för konfliktanalys, dialogprotokoll och verktyg för övergångsrättvisa, tidiga varningssystem och traumamedveten facilitering.",
+      peaceButton: "Öppna freds- och konfliktverktyg",
       educationTitle: "Verktyg för utbildningsramverket",
       educationDesc: "Verktyg för att implementera det Perfekterade Förstärkta Utbildningssystemet, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
       educationButton: "Öppna utbildningsverktyg",
@@ -60,7 +65,6 @@
       otherFrameworksDesc: "Implementeringsverktyg för följande ramverk är för närvarande under utveckling och kommer att göras tillgängliga inom kort:",
       environmentalTitle: "Miljöförvaltningsramverk",
       technologyTitle: "Styrningsramverk för teknik",
-      peaceTitle: "Ramverk för fred och konfliktlösning",
       economicTitle: "Ramverk för ekonomisk integration",
       spiritualTitle: "Ramverk för religiös och andlig dialog",
       metaTitle: "Integrerat meta-styrningsramverk",
@@ -116,6 +120,25 @@
             </p>
             <a href="{base}/framework/tools/energy" style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.climateButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Peace Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B5CA5; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #6B5CA5;">🕊️</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6B5CA5;">{texts.peaceTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.peaceDesc}
+            </p>
+            <a href="{base}/framework/tools/peace" style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.peaceButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -186,14 +209,6 @@
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
               <span style="font-size: 1.5rem; color: #4B8AC2;">🤖</span>
               <h4 style="font-size: 1.125rem; font-weight: 600; color: #4B8AC2; margin: 0;">{texts.technologyTitle}</h4>
-            </div>
-          </div>
-          
-          <!-- Peace Framework -->
-          <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #6B5CA5;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.5rem; color: #6B5CA5;">☮️</span>
-              <h4 style="font-size: 1.125rem; font-weight: 600; color: #6B5CA5; margin: 0;">{texts.peaceTitle}</h4>
             </div>
           </div>
           

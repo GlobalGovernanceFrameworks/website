@@ -119,7 +119,6 @@
       <li><strong>Strategic Planning</strong>: Developing interventions that leverage existing networks rather than creating parallel structures</li>
       <li><strong>Early Warning</strong>: Monitoring relationship changes that might indicate increasing tensions or opportunities</li>
     </ul>
-    <p>For customizable network analysis tools that can be adapted to specific conflicts, visit the <a href="/framework/tools/peace/network-analysis">Peace & Conflict Resolution Network Analysis Toolkit</a>.</p>
   </div>
 
   <footer>
