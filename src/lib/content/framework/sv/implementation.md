@@ -118,7 +118,7 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 - [Fred och konflikthantering](/framework/docs/implementation/peace) (Under granskning)
 - [Hälso- och sjukvårdsstyrning](/framework/docs/implementation/healthcare) (Planerad)
 - [Livsmedelssystem och jordbruk](/framework/docs/implementation/food)
-- [Ekonomisk integration](/framework/docs/implementation/economic) (Under granskning)
+- [Ekonomisk integration](/framework/docs/implementation/economic)
 - [Rättssystem](/framework/docs/implementation/justice) (Kommer snart)
 - [Migration och mänsklig rörlighet](/framework/docs/implementation/migration) (Planerad)
 - [Katastrofrisk och resiliens](/framework/docs/implementation/disaster)

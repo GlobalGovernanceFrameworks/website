@@ -118,7 +118,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Peace & Conflict Resolution](/framework/docs/implementation/peace) (In Review)
 - [Healthcare Governance](/framework/docs/implementation/healthcare) (Planned)
 - [Food Systems & Agriculture](/framework/docs/implementation/food)
-- [Economic Integration](/framework/docs/implementation/economic) (In Review)
+- [Economic Integration](/framework/docs/implementation/economic)
 - [Justice Systems](/framework/docs/implementation/justice) (Coming Soon)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
 - [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster)

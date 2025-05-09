@@ -20,7 +20,9 @@
       <p style="font-size: 1.25rem; color: #ffffff;">{$t('about.hero.subtitle')}</p>
     </div>
   </div>
+
 </section>
+
 
 <!-- Main Content Section -->
 <section style="padding: 3rem 0; background-color: white;">
@@ -35,6 +37,23 @@
         <p style="margin-bottom: 1.5rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
           {$t('about.vision.paragraph2')}
         </p>
+      </div>
+
+      <!-- Download Card for the Global Governance Book -->
+      <div style="background-color: #eef2ff; border-left: 6px solid #2B4B8C; padding: 2rem; border-radius: 0.75rem; margin-bottom: 3rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+        <h2 style="font-size: 1.5rem; font-weight: 700; color: #1e3a8a; margin-bottom: 1rem;">
+          📘 {$t('about.globalGovernanceDownload.title')}
+        </h2>
+        <p style="font-size: 1.125rem; line-height: 1.6; color: #374151; margin-bottom: 1.5rem;">
+          {$t('about.globalGovernanceDownload.description')}
+        </p>
+        <a 
+          href="/downloads/en/Global%20Governance%20-%20Natural%20Steps%20Toward%20a%20Thriving%20World.pdf"
+          class="inline-block px-5 py-2.5 bg-blue-700 hover:bg-blue-800 text-white text-base font-medium rounded-lg transition"
+          download
+        >
+          {$t('about.globalGovernanceDownload.button')}
+        </a>
       </div>
       
       <!-- Interconnectedness -->

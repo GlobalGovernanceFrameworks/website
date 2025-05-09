@@ -27,6 +27,10 @@ Local economic implementation is the foundation of the Nested Sovereignty Framew
 ## <a id="mechanisms"></a>Mechanisms
 Local implementation centers on community-led tools and governance structures that align with the framework’s core principles:
 - **Community Currencies**: Digital or paper-based currencies (e.g., time banks, local credits) enable communities to prioritize local trade and services, reducing dependence on external markets. Currencies are designed using the Community Currency Design Template, with features like caregiving credits (1 hour = 10 points).
+
+**Ensuring Economic Mobility and Freedom**
+While local currencies are designed to strengthen regional resilience and inclusion, they are never intended to restrict individual freedom of movement or economic choice. The framework ensures that all local currencies are interoperable with global protocols and convertible through digital wallets, enabling people to live, work, and contribute across regions without economic lock-in. Individuals may hold multiple currencies—including AUBI credits and universal fallback assets—to ensure full portability and participation in any locality or online system. Local currencies are voluntary, opt-in tools, not binding systems, and are designed to empower—not constrain—freedom of mobility and global citizenship.
+
 - **Cooperatives**: Worker-owned or community-led cooperatives manage production, services, or housing, ensuring equitable profit distribution. The Cooperative Template supports setup, emphasizing 50% women/non-binary representation.
 - **Participatory Budgeting**: The “DecideTogether” platform facilitates 80% community participation in allocating budgets for local projects (e.g., infrastructure, education). Offline paper guides ensure inclusivity.
 - **Land Trusts**: Community-managed trusts cap housing costs at ≤30% of median income, preventing gentrification and ensuring equitable access. Model bylaws streamline legal establishment.

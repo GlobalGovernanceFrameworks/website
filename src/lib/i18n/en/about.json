@@ -3,6 +3,11 @@
     "title": "About the Project",
     "subtitle": "Building frameworks for global governance that balance unity with diversity."
   },
+  "globalGovernanceDownload": {
+    "title": "Global Governance Book",
+    "description": "Download the full PDF of Global Governance: Natural Steps Toward a Thriving World. This book provides a visionary yet practical approach to shaping our shared future.",
+    "button": "Download PDF (English)"
+  },
   "vision": {
     "title": "Our Vision",
     "paragraph1": "The Global Governance Framework project emerged from the ideas presented in 'Global Governance - Natural Steps Toward a Thriving World,' exploring how we can create governance systems that operate effectively at multiple scales while respecting both global needs and local autonomy.",
