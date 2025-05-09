@@ -8,6 +8,29 @@ import { fileURLToPath } from 'url';
 import { marked } from 'marked';
 import puppeteer from 'puppeteer';
 
+// Parse command line arguments
+const args = process.argv.slice(2);
+const targetCategory = args[0]; // Get category from command line argument
+console.log(`Target category: ${targetCategory || 'all'}`);
+
+// If no arguments provided, show usage information
+if (args.length === 0) {
+  console.log(`
+Usage: node tools-pdf-generator.js [category]
+
+Available categories:
+- education
+- food-systems
+- energy
+- peace
+- economic
+
+Example: node tools-pdf-generator.js economic
+  `);
+  // Uncomment the line below if you want to exit when no category is provided
+  // process.exit(0);
+}
+
 // Get current file directory
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,7 +42,15 @@ const outputDirs = {
   'food-systems': path.join(__dirname, '..', 'static', 'framework', 'tools', 'food-systems'),
   'energy': path.join(__dirname, '..', 'static', 'framework', 'tools', 'energy'),
   'peace': path.join(__dirname, '..', 'static', 'framework', 'tools', 'peace'),
+  'economic': path.join(__dirname, '..', 'static', 'framework', 'tools', 'economic'),
 };
+
+// Validate category if provided
+if (targetCategory && !Object.keys(outputDirs).includes(targetCategory)) {
+  console.error(`Error: Invalid category '${targetCategory}'`);
+  console.error(`Valid categories are: ${Object.keys(outputDirs).join(', ')}`);
+  process.exit(1);
+}
 
 // Define tools to process
 const tools = [
@@ -1421,6 +1452,449 @@ const tools = [
       en: 'Peace Policy Systems Assessment Framework - Page ',
       sv: 'Ramverk för bedömning av fredspolitiska system - Sida '
     }
+  },
+  // Lite Guides
+  {
+    name: 'technical-guide',
+    category: 'economic',
+    fileNames: {
+      en: 'technical-guide-en',
+      sv: 'technical-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+    },
+    pageFooter: {
+      en: 'Technical Guide for Policymakers - Page ',
+      sv: 'Teknisk guide för beslutsfattare - Sida '
+    }
+  },
+  {
+    name: 'community-guide',
+    category: 'economic',
+    fileNames: {
+      en: 'community-guide-en',
+      sv: 'community-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+    },
+    pageFooter: {
+      en: 'Community Economic Implementation Guide - Page ',
+      sv: 'Samhällsguide för ekonomisk implementering - Sida '
+    }
+  },
+  {
+    name: 'youth-guide',
+    category: 'economic',
+    fileNames: {
+      en: 'youth-guide-en',
+      sv: 'youth-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+    },
+    pageFooter: {
+      en: 'Youth Economic Action Guide - Page ',
+      sv: 'Ekonomisk handlingsguide för ungdomar - Sida '
+    }
+  },
+  {
+    name: 'digital-ethics',
+    category: 'economic',
+    fileNames: {
+      en: 'digital-ethics-en',
+      sv: 'digital-ethics-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+    },
+    pageFooter: {
+      en: 'Digital Economic Ethics Guide - Page ',
+      sv: 'Digital ekonomietikguide - Sida '
+    }
+  },
+  {
+    name: 'indigenous-guide',
+    category: 'economic',
+    fileNames: {
+      en: 'indigenous-guide-en',
+      sv: 'indigenous-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+    },
+    pageFooter: {
+      en: 'Indigenous Economic Stewardship Guide - Page ',
+      sv: 'Urfolks ekonomiska förvaltningsguide - Sida '
+    }
+  },
+
+  // Core Governance Tools
+  {
+    name: 'economic-analysis-framework',
+    category: 'economic',
+    fileNames: {
+      en: 'economic-analysis-framework-en',
+      sv: 'economic-analysis-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Economic Analysis Framework - Page ',
+      sv: 'Ramverk för ekonomisk analys - Sida '
+    }
+  },
+  {
+    name: 'currency-design-template',
+    category: 'economic',
+    fileNames: {
+      en: 'currency-design-template-en',
+      sv: 'currency-design-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Community Currency Design Template - Page ',
+      sv: 'Mall för design av lokalvaluta - Sida '
+    }
+  },
+  {
+    name: 'participatory-budgeting-protocol',
+    category: 'economic',
+    fileNames: {
+      en: 'participatory-budgeting-protocol-en',
+      sv: 'participatory-budgeting-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Participatory Budgeting Protocol - Page ',
+      sv: 'Protokoll för deltagarbudgetering - Sida '
+    }
+  },
+  {
+    name: 'ethical-trade-zone-charter',
+    category: 'economic',
+    fileNames: {
+      en: 'ethical-trade-zone-charter-en',
+      sv: 'ethical-trade-zone-charter-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Ethical Trade Zone Charter - Page ',
+      sv: 'Stadga för etisk handelszon - Sida '
+    }
+  },
+  {
+    name: 'aubi-implementation-guide',
+    category: 'economic',
+    fileNames: {
+      en: 'aubi-implementation-guide-en',
+      sv: 'aubi-implementation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'AUBI Implementation Guide - Page ',
+      sv: 'Implementeringsguide för AUBI - Sida '
+    }
+  },
+  {
+    name: 'commons-management-toolkit',
+    category: 'economic',
+    fileNames: {
+      en: 'commons-management-toolkit-en',
+      sv: 'commons-management-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Commons Management Toolkit - Page ',
+      sv: 'Verktygslåda för allmänningsförvaltning - Sida '
+    }
+  },
+
+  // Context-Specific Implementation Guides
+  {
+    name: 'urban-economic-toolkit',
+    category: 'economic',
+    fileNames: {
+      en: 'urban-economic-toolkit-en',
+      sv: 'urban-economic-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Urban Economic Integration Toolkit - Page ',
+      sv: 'Verktygslåda för urban ekonomisk integration - Sida '
+    }
+  },
+  {
+    name: 'rural-cooperative-guide',
+    category: 'economic',
+    fileNames: {
+      en: 'rural-cooperative-guide-en',
+      sv: 'rural-cooperative-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Rural Cooperative Development Guide - Page ',
+      sv: 'Utvecklingsguide för landsbygdskooperativ - Sida '
+    }
+  },
+  {
+    name: 'bioregional-protocol',
+    category: 'economic',
+    fileNames: {
+      en: 'bioregional-protocol-en',
+      sv: 'bioregional-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Bioregional Resource Sharing Protocol - Page ',
+      sv: 'Protokoll för bioregional resursdelning - Sida '
+    }
+  },
+  {
+    name: 'global-commons-framework',
+    category: 'economic',
+    fileNames: {
+      en: 'global-commons-framework-en',
+      sv: 'global-commons-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Global Commons Governance Framework - Page ',
+      sv: 'Ramverk för global allmänningsstyrning - Sida '
+    }
+  },
+
+  // Advocacy & Scaling Tools
+  {
+    name: 'economic-advocacy-toolkit',
+    category: 'economic',
+    fileNames: {
+      en: 'economic-advocacy-toolkit-en',
+      sv: 'economic-advocacy-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Economic Advocacy Campaign Toolkit - Page ',
+      sv: 'Verktygslåda för ekonomisk påverkanskampanj - Sida '
+    }
+  },
+  {
+    name: 'economic-financing-navigator',
+    category: 'economic',
+    fileNames: {
+      en: 'economic-financing-navigator-en',
+      sv: 'economic-financing-navigator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Economic Financing Navigator - Page ',
+      sv: 'Navigator för ekonomisk finansiering - Sida '
+    }
+  },
+  {
+    name: 'institutional-integration-guide',
+    category: 'economic',
+    fileNames: {
+      en: 'institutional-integration-guide-en',
+      sv: 'institutional-integration-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Institutional Economic Integration Guide - Page ',
+      sv: 'Guide för institutionell ekonomisk integration - Sida '
+    }
+  },
+  {
+    name: 'ppp-template',
+    category: 'economic',
+    fileNames: {
+      en: 'ppp-template-en',
+      sv: 'ppp-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Public-Private Partnership Template - Page ',
+      sv: 'Mall för offentlig-privat partnerskap - Sida '
+    }
+  },
+
+  // Low-Resource Funding Tools
+  {
+    name: 'community-economic-fund-guide',
+    category: 'economic',
+    fileNames: {
+      en: 'community-economic-fund-guide-en',
+      sv: 'community-economic-fund-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Community Economic Fund Guide - Page ',
+      sv: 'Guide för samhällsekonomisk fond - Sida '
+    }
+  },
+  {
+    name: 'economic-micro-grant-template',
+    category: 'economic',
+    fileNames: {
+      en: 'economic-micro-grant-template-en',
+      sv: 'economic-micro-grant-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Economic Micro-Grant Template - Page ',
+      sv: 'Mall för ekonomiskt mikrobidrag - Sida '
+    }
+  },
+  {
+    name: 'resource-mapping-tool',
+    category: 'economic',
+    fileNames: {
+      en: 'resource-mapping-tool-en',
+      sv: 'resource-mapping-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Resource Mapping Tool - Page ',
+      sv: 'Verktyg för resurskartläggning - Sida '
+    }
+  },
+
+  // Digital Tools
+  {
+    name: 'currency-simulator-app',
+    category: 'economic',
+    fileNames: {
+      en: 'currency-simulator-app-en',
+      sv: 'currency-simulator-app-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Currency Simulator App - Page ',
+      sv: 'Valutasimulatorapp - Sida '
+    }
+  },
+  {
+    name: 'nested-economic-health-dashboard',
+    category: 'economic',
+    fileNames: {
+      en: 'nested-economic-health-dashboard-en',
+      sv: 'nested-economic-health-dashboard-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Nested Economic Health Index Dashboard - Page ',
+      sv: 'Dashboard för nästlat ekonomiskt hälsoindex - Sida '
+    }
+  },
+  {
+    name: 'ai-chatbot-for-tool-navigation',
+    category: 'economic',
+    fileNames: {
+      en: 'ai-chatbot-for-tool-navigation-en',
+      sv: 'ai-chatbot-for-tool-navigation-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'AI Chatbot for Tool Navigation - Page ',
+      sv: 'AI-chatbot för verktygsnavigering - Sida '
+    }
+  },
+  {
+    name: 'real-time-collaboration-platform',
+    category: 'economic',
+    fileNames: {
+      en: 'real-time-collaboration-platform-en',
+      sv: 'real-time-collaboration-platform-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Real-Time Collaboration Platform - Page ',
+      sv: 'Realtidssamarbetsplattform - Sida '
+    }
+  },
+  {
+    name: 'sample-audit-report-template',
+    category: 'economic',
+    fileNames: {
+      en: 'sample-audit-report-template-en',
+      sv: 'sample-audit-report-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+    },
+    pageFooter: {
+      en: 'Sample Audit Report Template - Page ',
+      sv: 'Exempel på mall för revisionsrapport - Sida '
+    }
   }
 ];
 
@@ -1585,8 +2059,15 @@ async function generatePDFs() {
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
 
+  // Filter tools by category if a target category was specified
+  const toolsToProcess = targetCategory 
+    ? tools.filter(tool => tool.category === targetCategory)
+    : tools;
+  
+  console.log(`Processing ${toolsToProcess.length} tools in category: ${targetCategory || 'all'}`);
+
   try {
-    for (const tool of tools) {
+    for (const tool of toolsToProcess) {
       for (const lang of languages) {
         const fileName = tool.fileNames[lang];
         const inputFile = path.join(tool.sourceDir[lang], `${tool.name}.md`);
@@ -1720,7 +2201,7 @@ async function generatePDFs() {
   } finally {
     // Close the browser
     await browser.close();
-    console.log('\n🎉 PDF generation complete');
+    console.log(`\n🎉 PDF generation complete for category: ${targetCategory || 'all'}`);
   }
 }
 

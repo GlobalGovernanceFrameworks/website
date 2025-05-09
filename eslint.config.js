@@ -21,7 +21,7 @@ export default ts.config(
 				...globals.browser,
 				...globals.node
 			}
-		}
+		},
 	},
 	{
 		files: ['**/*.svelte', '**/*.svelte.ts', '**/*.svelte.js'],

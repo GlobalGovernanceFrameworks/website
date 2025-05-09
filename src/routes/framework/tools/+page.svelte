@@ -31,12 +31,14 @@
       foodTitle: "Food Systems & Agriculture Framework Tools",
       foodDesc: "Resources for implementing sustainable food systems, including regenerative agriculture guides, stakeholder engagement templates, and policy harmonization tools.",
       foodButton: "Access Food Systems Tools",
+      economicTitle: "Economic Integration Framework Tools",
+      economicDesc: "Resources for implementing the Nested Sovereignty Framework, including community currency templates, ethical trade zone charters, universal basic income guides, and commons governance tools for equitable, sustainable economies.",
+      economicButton: "Access Economic Integration Tools",
       comingSoon: "Coming Soon",
       otherFrameworks: "Other Framework Resources",
       otherFrameworksDesc: "Implementation tools for the following frameworks are currently in development and will be made available soon:",
       environmentalTitle: "Environmental Stewardship Framework",
       technologyTitle: "Technology Governance Framework",
-      economicTitle: "Economic Integration Framework",
       spiritualTitle: "Religious & Spiritual Dialogue Framework",
       metaTitle: "Integrated Meta-Governance Framework",
       requestTitle: "Request Tools or Provide Feedback",
@@ -60,12 +62,14 @@
       foodTitle: "Verktyg för matsystem och jordbruksramverk",
       foodDesc: "Resurser för att implementera hållbara matsystem, inklusive guider för regenerativt jordbruk, mallar för intressentengagemang och verktyg för policyharmonisering.",
       foodButton: "Öppna matsystemverktyg",
+      economicTitle: "Verktyg för ekonomisk integrationsramverk",
+      economicDesc: "Resurser för att implementera ramverket för nästlad suveränitet, inklusive mallar för gemenskapsvaluta, stadgar för etiska handelszoner, guider för universell basinkomst och verktyg för allmänningsstyrning för rättvisa, hållbara ekonomier.",
+      economicButton: "Öppna ekonomiska integrationsverktyg",
       comingSoon: "Kommer snart",
       otherFrameworks: "Övriga ramverksresurser",
       otherFrameworksDesc: "Implementeringsverktyg för följande ramverk är för närvarande under utveckling och kommer att göras tillgängliga inom kort:",
       environmentalTitle: "Miljöförvaltningsramverk",
       technologyTitle: "Styrningsramverk för teknik",
-      economicTitle: "Ramverk för ekonomisk integration",
       spiritualTitle: "Ramverk för religiös och andlig dialog",
       metaTitle: "Integrerat meta-styrningsramverk",
       requestTitle: "Begär verktyg eller ge feedback",
@@ -147,25 +151,6 @@
         </div>
       </div>
       
-      <!-- Education Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D; margin-bottom: 2rem;">
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #2D5F2D;">🎓</div>
-          <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2D5F2D;">{texts.educationTitle}</h2>
-            <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.educationDesc}
-            </p>
-            <a href="{base}/framework/tools/education" style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-              {texts.educationButton}
-              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      
       <!-- Food Systems Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
@@ -177,6 +162,44 @@
             </p>
             <a href="{base}/framework/tools/food-systems" style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.foodButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Economic Framework Card (to be added to Available Resources section) -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #088F8F; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #088F8F;">💱</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #088F8F;">{texts.economicTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.economicDesc}
+            </p>
+            <a href="{base}/framework/tools/economic" style="display: inline-flex; align-items: center; background-color: #088F8F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.economicButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #2D5F2D;">🎓</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2D5F2D;">{texts.educationTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.educationDesc}
+            </p>
+            <a href="{base}/framework/tools/education" style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.educationButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -209,14 +232,6 @@
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
               <span style="font-size: 1.5rem; color: #4B8AC2;">🤖</span>
               <h4 style="font-size: 1.125rem; font-weight: 600; color: #4B8AC2; margin: 0;">{texts.technologyTitle}</h4>
-            </div>
-          </div>
-          
-          <!-- Economic Framework -->
-          <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #B8860B;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.5rem; color: #B8860B;">💱</span>
-              <h4 style="font-size: 1.125rem; font-weight: 600; color: #B8860B; margin: 0;">{texts.economicTitle}</h4>
             </div>
           </div>
           

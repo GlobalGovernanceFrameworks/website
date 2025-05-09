@@ -4,22 +4,87 @@ import { get } from 'svelte/store';
 
 export const csr = true;
 
-export async function load({ depends }) {
+export async function load({ depends, url }) {
   // Declare dependency on locale
   depends('app:locale');
   
   const currentLocale = get(locale);
   
-  let content;
+  // Safe check for print mode that works during prerendering
+  const isPrintMode = import.meta.env.SSR ? false : url.searchParams.get('print') === 'true';
+  
+  // Define sections to load - include all economic framework sections
+  const sections = [
+    'introduction',
+    'core-principles',
+    'local-implementation',
+    'regional-implementation',
+    'global-implementation',
+    'nested-support',
+    'tech-commons',
+    'transitional-pathways',
+    'decision-protocols',
+    'cross-domain',
+    'adaptive-governance',
+    'monitoring',
+    'public-engagement',
+    'timeline',
+    'challenges-lessons',
+    'visualizations',
+    'conclusion',
+    'index',
+    'community-guide',
+    'indigenous-guide',
+    'technical-guide',
+    'digital-ethics',
+    'youth-guide'
+  ];
+  
+  // For backward compatibility 
+  let legacyContent = null;
+  
+  // Try to load modular content first
+  const content = {};
+  let isModular = false;
+  
   try {
-    // Try to load the current locale version
-    content = await import(`$lib/content/framework/${currentLocale}/implementation/economic.md`);
+    // Try to load each section
+    for (const section of sections) {
+      try {
+        // Try to load the current locale version
+        content[section] = await import(`$lib/content/framework/${currentLocale}/implementation/economic/${section}.md`);
+        isModular = true;
+      } catch (e) {
+        // Fall back to English if translation isn't available
+        try {
+          content[section] = await import(`$lib/content/framework/en/implementation/economic/${section}.md`);
+          isModular = true;
+        } catch (e2) {
+          console.log(`Could not load section ${section} in any language`);
+        }
+      }
+    }
   } catch (e) {
-    // Fall back to English if translation isn't available
-    content = await import(`$lib/content/framework/en/implementation/economic.md`);
+    console.warn("Error loading modular content:", e);
+  }
+  
+  // If modular content failed or isn't available, fall back to legacy single file
+  if (!isModular) {
+    try {
+      legacyContent = await import(`$lib/content/framework/${currentLocale}/implementation/economic.md`);
+    } catch (e) {
+      try {
+        legacyContent = await import(`$lib/content/framework/en/implementation/economic.md`);
+      } catch (e2) {
+        console.error("Failed to load any content for economic framework");
+      }
+    }
   }
   
   return {
-    component: content.default
+    sections: content,
+    component: legacyContent?.default,
+    isModular,
+    isPrintMode
   };
 }

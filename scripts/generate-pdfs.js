@@ -3,6 +3,20 @@ import puppeteer from 'puppeteer';
 import fs from 'fs-extra';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { parseArgs } from 'node:util';
+
+// Parse command line arguments
+const options = {
+  framework: { type: 'string' }
+};
+
+const { values } = parseArgs({ 
+  options, 
+  strict: false,
+  allowPositionals: true
+});
+
+const targetFramework = values.framework;
 
 // Get the current file's directory
 const __filename = fileURLToPath(import.meta.url);
@@ -262,7 +276,24 @@ async function generateAllPDFs() {
       const langOutputDir = path.join(BASE_OUTPUT_DIR, lang);
       await fs.ensureDir(langOutputDir);
       
-      for (const doc of documents) {
+      // Filter documents if a target framework is specified
+      const docsToGenerate = targetFramework 
+        ? documents.filter(doc => {
+            // Check if the path contains the specified framework
+            // This handles paths like '/framework/docs/implementation/economic'
+            const pathSegments = doc.path.split('/');
+            return pathSegments.includes(targetFramework);
+          })
+        : documents;
+      
+      if(targetFramework && docsToGenerate.length === 0) {
+        console.warn(`No documents found for framework '${targetFramework}'`);
+        continue;
+      }
+
+      console.log(`Will generate ${docsToGenerate.length} PDFs for ${targetFramework || 'all frameworks'}`);
+      
+      for (const doc of docsToGenerate) {
         const title = titles[lang][doc.titleKey] || `${doc.titleKey} (${lang.toUpperCase()})`;
         const url = `${SITE_URL}${doc.path}`;
         const outputPath = path.join(langOutputDir, doc.filename);
@@ -275,7 +306,11 @@ async function generateAllPDFs() {
       }
     }
     
-    console.log('\nAll PDFs generated successfully!');
+    if(targetFramework) {
+      console.log(`\nPDF generation completed for '${targetFramework}' framework!`);
+    } else {
+      console.log('\nAll PDFs generated successfully!');
+    }
   } catch (error) {
     console.error('Error generating PDFs:', error);
   }
