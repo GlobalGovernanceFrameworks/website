@@ -124,22 +124,22 @@
 
   // Visualization data for each section - all marked as 'planned' since these are placeholders
   const frameworkVisuals = [
-    { id: 'layered-governance-architecture', format: 'svg', interactive: false, color: 'color-1', planned: true },
-    { id: 'implementation-roadmap-digital', format: 'svg', interactive: false, color: 'color-2', planned: true },
-    { id: 'data-sovereignty-protocol', format: 'svg', interactive: false, color: 'color-3', planned: true },
-    { id: 'key-components-relationship', format: 'svg', interactive: false, color: 'color-4', planned: true },
-    { id: 'mesh-network-architecture', format: 'svg', interactive: false, color: 'color-5', planned: true },
-    { id: 'ethical-ai-governance', format: 'svg', interactive: false, color: 'color-6', planned: true }
+    { id: 'layered-governance-architecture', format: 'svg', interactive: false, color: 'color-1', planned: false },
+    { id: 'implementation-roadmap-digital', format: 'svg', interactive: false, color: 'color-2', planned: false },
+    { id: 'data-sovereignty-protocol', format: 'svg', interactive: false, color: 'color-3', planned: false },
+    { id: 'key-components-relationship', format: 'svg', interactive: false, color: 'color-4', planned: false },
+    { id: 'mesh-network-architecture', format: 'svg', interactive: false, color: 'color-5', planned: false },
+    { id: 'ethical-ai-governance', format: 'svg', interactive: false, color: 'color-6', planned: false }
   ];
   
   const analyticalVisuals = [
-    { id: 'sdg-alignment-digital', format: 'svg', interactive: false, color: 'color-2', planned: true },
-    { id: 'cross-commons-integration', format: 'svg', interactive: false, color: 'color-3', planned: true },
-    { id: 'digital-divide-transformation', format: 'html', interactive: true, color: 'color-4', noDownloads: true, planned: true }
+    { id: 'sdg-alignment-digital', format: 'svg', interactive: false, color: 'color-2', planned: false },
+    { id: 'cross-commons-integration', format: 'svg', interactive: false, color: 'color-3', planned: false },
+    { id: 'digital-divide-transformation', format: 'html', interactive: true, color: 'color-4', noDownloads: true, planned: false }
   ];
   
   const technicalVisuals = [
-    { id: 'data-flow-simulator', format: 'html', interactive: true, color: 'color-dark', noDownloads: true, planned: true },
+    { id: 'data-flow-simulator', format: 'html', interactive: true, color: 'color-dark', noDownloads: true, planned: false },
     { id: 'governance-simulation-tool', format: 'html', interactive: true, color: 'color-1', noDownloads: true, planned: true },
     { id: 'impact-assessment-visualization', format: 'html', interactive: true, color: 'color-2', noDownloads: true, planned: true }
   ];
@@ -159,10 +159,36 @@
     'impact-assessment-visualization': 'impact'
   };
 
-  // Helper function to get visualization path with language
   function getVisualizationPath(id, format, forInteractive = false) {
-    // Since these are placeholders, we'll return a placeholder image path
-    return `${base}/images/framework/digital/placeholder.png`;
+    // For our actual SVGs, return real paths, otherwise return placeholder
+    if ((id === 'layered-governance-architecture' || 
+       id === 'implementation-roadmap-digital' || 
+       id === 'data-sovereignty-protocol' ||
+       id === 'key-components-relationship' ||
+       id === 'mesh-network-architecture' ||
+       id === 'ethical-ai-governance' ||
+       id === 'sdg-alignment-digital' ||
+       id === 'cross-commons-integration') && format === 'svg') {
+      return `${base}/images/framework/digital/${id}-${currentLocale}.svg`;
+    } else if ((id === 'layered-governance-architecture' || 
+              id === 'implementation-roadmap-digital' || 
+              id === 'data-sovereignty-protocol' ||
+              id === 'key-components-relationship' ||
+              id === 'mesh-network-architecture' ||
+              id === 'ethical-ai-governance' ||
+              id === 'sdg-alignment-digital' ||
+              id === 'cross-commons-integration') && format === 'png') {
+      return `${base}/images/framework/digital/${id}-${currentLocale}.png`; // You'll need to create this PNG
+    } else if (id === 'digital-divide-transformation' && format === 'html') {
+      // New path for the HTML interactive visualization
+      return `${base}/interactive/framework/digital/${id}-${currentLocale}.html`;
+    } else if (id === 'data-flow-simulator' && format === 'html') {
+      // Path for the data flow simulator
+      return `${base}/framework/visuals/digital/data-flow-simulator/`;
+    } else {
+      // Since these are placeholders, we'll return a placeholder image path
+      return `${base}/images/framework/digital/placeholder.png`;
+    }
   }
 </script>
 
@@ -462,12 +488,13 @@
     align-items: center;
     justify-content: center;
     background-color: #f3f4f6;
-  }
+  } 
   
   .visual-preview img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    background-color: #f5f3ff; /* Light purple background */
   }
   
   /* Placeholder for planned visualizations */

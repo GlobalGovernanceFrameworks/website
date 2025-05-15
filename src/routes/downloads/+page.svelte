@@ -231,6 +231,18 @@
           </a>
         </div>
 
+        <!-- Digital Commons Framework -->
+        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6d28d9;">
+          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6d28d9;">{$t('downloads.implementationFrameworks.digital.title')}</h2>
+          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.digital.description')}</p>
+          <a href={getPdfPath('Digital-Commons-Framework')} download style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+            {$t('downloads.downloadButton')}
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </a>
+        </div>
+
         <!-- Religious & Spiritual Dialogue -->
         <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #9B6A8F;">
           <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.spiritual.title')}</h2>

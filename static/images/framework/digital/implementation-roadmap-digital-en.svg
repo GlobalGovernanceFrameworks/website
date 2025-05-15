@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="600"
+   version="1.1"
+   id="svg56"
+   sodipodi:docname="implementation-roadmap-digital-en.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="400.35461"
+     inkscape:cy="186.52482"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg56" />
+  <!-- Definitions for gradients and patterns -->
+  <defs
+     id="defs8">
+    <!-- Gradient for background -->
+    <linearGradient
+       id="bgGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#f5f3ff"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#ede9fe"
+         id="stop2" />
+    </linearGradient>
+    <!-- Gradients for different phases -->
+    <linearGradient
+       id="phase1Gradient"
+       x1="33.333333"
+       y1="420"
+       x2="93.333333"
+       y2="420"
+       gradientTransform="scale(3,0.33333333)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#c4b5fd"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#a78bfa"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="phase2Gradient"
+       x1="80.829038"
+       y1="484.97423"
+       x2="150.11107"
+       y2="484.97423"
+       gradientTransform="scale(3.4641016,0.28867513)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#a78bfa"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#8b5cf6"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="phase3Gradient"
+       x1="173.33333"
+       y1="420"
+       x2="233.33333"
+       y2="420"
+       gradientTransform="scale(3,0.33333333)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#8b5cf6"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#7c3aed"
+         id="stop8" />
+    </linearGradient>
+    <!-- Pattern for milestone markers -->
+    <pattern
+       id="milestonePattern"
+       width="10"
+       height="10"
+       patternUnits="userSpaceOnUse">
+      <circle
+         cx="5"
+         cy="5"
+         r="3"
+         fill="#4a1d96"
+         id="circle8" />
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="800"
+     height="600"
+     fill="url(#bgGradient)"
+     rx="10"
+     ry="10"
+     id="rect8" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text8">
+    Implementation Roadmap 2026-2036
+  </text>
+  <text
+     x="400"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text9">
+    Digital Commons Framework
+  </text>
+  <!-- Timeline base -->
+  <line
+     x1="100"
+     y1="150"
+     x2="700"
+     y2="150"
+     stroke="#6d28d9"
+     stroke-width="4"
+     id="line9" />
+  <!-- Year markers -->
+  <g
+     id="g20">
+    <line
+       x1="100"
+       y1="150"
+       x2="100"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line10" />
+    <text
+       x="100"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text10">2026</text>
+    <line
+       x1="160"
+       y1="150"
+       x2="160"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line11" />
+    <text
+       x="160"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text11">2027</text>
+    <line
+       x1="220"
+       y1="150"
+       x2="220"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line12" />
+    <text
+       x="220"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text12">2028</text>
+    <line
+       x1="280"
+       y1="150"
+       x2="280"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line13" />
+    <text
+       x="280"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text13">2029</text>
+    <line
+       x1="340"
+       y1="150"
+       x2="340"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line14" />
+    <text
+       x="340"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text14">2030</text>
+    <line
+       x1="400"
+       y1="150"
+       x2="400"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line15" />
+    <text
+       x="400"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text15">2031</text>
+    <line
+       x1="460"
+       y1="150"
+       x2="460"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line16" />
+    <text
+       x="460"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text16">2032</text>
+    <line
+       x1="520"
+       y1="150"
+       x2="520"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line17" />
+    <text
+       x="520"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text17">2033</text>
+    <line
+       x1="580"
+       y1="150"
+       x2="580"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line18" />
+    <text
+       x="580"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text18">2034</text>
+    <line
+       x1="640"
+       y1="150"
+       x2="640"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line19" />
+    <text
+       x="640"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text19">2035</text>
+    <line
+       x1="700"
+       y1="150"
+       x2="700"
+       y2="160"
+       stroke="#6d28d9"
+       stroke-width="2"
+       id="line20" />
+    <text
+       x="700"
+       y="175"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text20">2036</text>
+  </g>
+  <!-- Phase Segments -->
+  <rect
+     x="100"
+     y="140"
+     width="180"
+     height="20"
+     fill="url(#phase1Gradient)"
+     rx="10"
+     ry="10"
+     id="rect20"
+     style="fill:url(#phase1Gradient)" />
+  <text
+     x="146"
+     y="126"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text21">Phase 1: Foundation (2026-2028)</text>
+  <rect
+     x="280"
+     y="140"
+     width="240"
+     height="20"
+     fill="url(#phase2Gradient)"
+     rx="10"
+     ry="10"
+     id="rect21"
+     style="fill:url(#phase2Gradient)" />
+  <text
+     x="400"
+     y="126"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text22">Phase 2: Expansion (2029-2033)</text>
+  <rect
+     x="520"
+     y="140"
+     width="180"
+     height="20"
+     fill="url(#phase3Gradient)"
+     rx="10"
+     ry="10"
+     id="rect22"
+     style="fill:url(#phase3Gradient)" />
+  <text
+     x="650"
+     y="126"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text23">Phase 3: Maturation (2034-2036)</text>
+  <!-- Milestone Section: Governance -->
+  <text
+     x="400"
+     y="200"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text24">Governance Milestones</text>
+  <circle
+     cx="118"
+     cy="230"
+     r="6"
+     fill="#6d28d9"
+     id="circle24" />
+  <text
+     x="118"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text25">100 Local Nodes</text>
+  <circle
+     cx="220"
+     cy="230"
+     r="6"
+     fill="#6d28d9"
+     id="circle25" />
+  <text
+     x="220"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text26">10 Regional Hubs</text>
+  <circle
+     cx="340"
+     cy="230"
+     r="6"
+     fill="#6d28d9"
+     id="circle26" />
+  <text
+     x="340"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text27">1,000 Nodes</text>
+  <circle
+     cx="460"
+     cy="230"
+     r="6"
+     fill="#6d28d9"
+     id="circle27" />
+  <text
+     x="460"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text28">30 Hubs</text>
+  <circle
+     cx="640"
+     cy="230"
+     r="6"
+     fill="#6d28d9"
+     id="circle28" />
+  <text
+     x="640"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text29">5,000 Nodes</text>
+  <!-- Milestone Section: Components -->
+  <text
+     x="400"
+     y="270"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text30">Component Development</text>
+  <circle
+     cx="102"
+     cy="300"
+     r="6"
+     fill="#6d28d9"
+     id="circle30" />
+  <text
+     x="90"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text31">Open Data Commons</text>
+  <circle
+     cx="220"
+     cy="300"
+     r="6"
+     fill="#6d28d9"
+     id="circle31" />
+  <text
+     x="220"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text32">Open-Source Software</text>
+  <circle
+     cx="340"
+     cy="300"
+     r="6"
+     fill="#6d28d9"
+     id="circle32" />
+  <text
+     x="340"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text33">Ethical AI Models</text>
+  <circle
+     cx="450"
+     cy="300"
+     r="6"
+     fill="#6d28d9"
+     id="circle33" />
+  <text
+     x="450"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text34">Knowledge Commons</text>
+  <circle
+     cx="572"
+     cy="300"
+     r="6"
+     fill="#6d28d9"
+     id="circle34" />
+  <text
+     x="572"
+     y="320"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text35">Quantum Encryption</text>
+  <!-- Milestone Section: Metrics -->
+  <text
+     x="400"
+     y="340"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text36">Success Metrics Targets</text>
+  <circle
+     cx="166"
+     cy="370"
+     r="6"
+     fill="#6d28d9"
+     id="circle36" />
+  <text
+     x="166"
+     y="390"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text37">20% Nodes Operational</text>
+  <circle
+     cx="288"
+     cy="370"
+     r="6"
+     fill="#6d28d9"
+     id="circle37" />
+  <text
+     x="288"
+     y="390"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text38">50% Participation</text>
+  <circle
+     cx="416"
+     cy="370"
+     r="6"
+     fill="#6d28d9"
+     id="circle38" />
+  <text
+     x="416"
+     y="390"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text39">70% Infrastructure Uptime</text>
+  <circle
+     cx="548"
+     cy="370"
+     r="6"
+     fill="#6d28d9"
+     id="circle39" />
+  <text
+     x="548"
+     y="390"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text40">90% Global Access</text>
+  <circle
+     cx="668"
+     cy="370"
+     r="6"
+     fill="#6d28d9"
+     id="circle40" />
+  <text
+     x="668"
+     y="390"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text41">80% Renewable Energy</text>
+  <!-- Activity Timeline Section -->
+  <text
+     x="400"
+     y="410"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text42">Key Implementation Activities</text>
+  <rect
+     x="39.503548"
+     y="430"
+     width="81.276596"
+     height="40"
+     rx="6.7730498"
+     ry="5"
+     fill="#c4b5fd"
+     opacity="0.7"
+     id="rect42"
+     style="stroke-width:1.16388" />
+  <text
+     x="79.432617"
+     y="449.03546"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text43"><tspan
+       sodipodi:role="line"
+       id="tspan56"
+       x="79.432617"
+       y="449.03546">Node Facilitator</tspan><tspan
+       sodipodi:role="line"
+       id="tspan57"
+       x="79.432617"
+       y="461.53546">Training</tspan></text>
+  <rect
+     x="144"
+     y="430"
+     width="79.858154"
+     height="40"
+     rx="6.6548462"
+     ry="5"
+     fill="#c4b5fd"
+     opacity="0.7"
+     id="rect43"
+     style="stroke-width:1.15368" />
+  <text
+     x="184"
+     y="448"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text44"><tspan
+       sodipodi:role="line"
+       id="tspan58"
+       x="184"
+       y="448">Mesh Network</tspan><tspan
+       sodipodi:role="line"
+       id="tspan59"
+       x="184"
+       y="460.5">Development</tspan></text>
+  <rect
+     x="244.39716"
+     y="430"
+     width="104.75177"
+     height="40"
+     rx="7.4822693"
+     ry="5"
+     fill="#a78bfa"
+     opacity="0.7"
+     id="rect44"
+     style="stroke-width:1.2233" />
+  <text
+     x="295"
+     y="454"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text45">Multilingual Platforms</text>
+  <rect
+     x="372"
+     y="430"
+     width="70"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#a78bfa"
+     opacity="0.7"
+     id="rect45" />
+  <text
+     x="407"
+     y="448"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text46"><tspan
+       sodipodi:role="line"
+       id="tspan60"
+       x="407"
+       y="448">Climate Data</tspan><tspan
+       sodipodi:role="line"
+       id="tspan61"
+       x="407"
+       y="460.5">Integration</tspan></text>
+  <rect
+     x="464"
+     y="430"
+     width="70"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#a78bfa"
+     opacity="0.7"
+     id="rect46" />
+  <text
+     x="499"
+     y="448"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text47"><tspan
+       sodipodi:role="line"
+       id="tspan62"
+       x="499"
+       y="448">Biannual Hub</tspan><tspan
+       sodipodi:role="line"
+       id="tspan63"
+       x="499"
+       y="460.5">Audits</tspan></text>
+  <rect
+     x="555.23407"
+     y="430"
+     width="93.404259"
+     height="40"
+     rx="6.6717329"
+     ry="5"
+     fill="#8b5cf6"
+     opacity="0.7"
+     id="rect47"
+     style="stroke-width:1.15514" />
+  <text
+     x="602.29077"
+     y="448.32623"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text48"><tspan
+       sodipodi:role="line"
+       id="tspan64"
+       x="602.29077"
+       y="448.32623">Offline Knowledge</tspan><tspan
+       sodipodi:role="line"
+       id="tspan65"
+       x="602.29077"
+       y="460.82623">Archives</tspan></text>
+  <rect
+     x="667.74469"
+     y="430"
+     width="82.05674"
+     height="40"
+     rx="5.8611956"
+     ry="5"
+     fill="#8b5cf6"
+     opacity="0.7"
+     id="rect48"
+     style="stroke-width:1.0827" />
+  <text
+     x="707"
+     y="448"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text49"><tspan
+       sodipodi:role="line"
+       id="tspan66"
+       x="707"
+       y="448">Annual Global</tspan><tspan
+       sodipodi:role="line"
+       id="tspan67"
+       x="707"
+       y="460.5">Reviews</tspan></text>
+  <!-- Key Outputs Section -->
+  <text
+     x="400"
+     y="496"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text50">Key Outputs</text>
+  <path
+     d="m 134,530 -10,-20 h 20 z"
+     fill="#c4b5fd"
+     id="path50" />
+  <text
+     x="134"
+     y="550"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text51">Pilot Data Commons</text>
+  <path
+     d="m 258,530 -10,-20 h 20 z"
+     fill="#c4b5fd"
+     id="path51" />
+  <text
+     x="258"
+     y="550"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text52">Governance Structure</text>
+  <path
+     d="m 388,530 -10,-20 h 20 z"
+     fill="#a78bfa"
+     id="path52" />
+  <text
+     x="388"
+     y="550"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text53">50 Languages Support</text>
+  <path
+     d="m 534,530 -10,-20 h 20 z"
+     fill="#a78bfa"
+     id="path53" />
+  <text
+     x="534"
+     y="550"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text54">Cross-Commons Synergies</text>
+  <path
+     d="m 672,530 -10,-20 h 20 z"
+     fill="#8b5cf6"
+     id="path54" />
+  <text
+     x="672"
+     y="550"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text55">Global Digital Equity</text>
+  <!-- Footer -->
+  <text
+     x="400"
+     y="580"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text56">
+    Digital Commons Framework - Implementation Roadmap Visualization
+  </text>
+</svg>

@@ -44,6 +44,10 @@
       "description": "Ytterligare nedladdningsbara material, interaktiva verktyg och detaljerade implementeringsguider finns på vår Verktyg-sida:",
       "linkText": "Utforska ramverksverktyg"
     },
+    "digital": {
+      "title": "Digital Commons Ramverk",
+      "description": "Ett omfattande tillvägagångssätt för att hantera digitala resurser—data, mjukvara, kunskap och infrastruktur—som delade globala allmänningar, vilket säkerställer rättvist tillträde, etisk användning och deltagande styrning."
+    },
     "economic": {
       "title": "Ekonomisk integration",
       "description": "Ett ramverk för att skapa rättvisa och hållbara ekonomiska system som balanserar lokal autonomi med globalt samarbete, inklusive nästlade ekonomiska system och implementering av resursrättvisa."

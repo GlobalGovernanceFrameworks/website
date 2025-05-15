@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="700"
+   version="1.1"
+   id="svg55"
+   sodipodi:docname="layered-digital-governance-architecture-en.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview55"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.705"
+     inkscape:cx="92.907801"
+     inkscape:cy="452.48227"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg55" />
+  <!-- Definitions for gradients and patterns -->
+  <defs
+     id="defs13">
+    <!-- Gradient for background -->
+    <linearGradient
+       id="bgGradient"
+       x1="0"
+       y1="0"
+       x2="692.82031"
+       y2="692.82031"
+       gradientTransform="scale(1.1547005,1.0093393)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#f5f3ff"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#ede9fe"
+         id="stop2" />
+    </linearGradient>
+    <!-- Gradients for different layers -->
+    <linearGradient
+       id="localNodeGradient"
+       x1="31.622778"
+       y1="-202.38577"
+       x2="31.622778"
+       y2="50.596443"
+       gradientTransform="matrix(2.5298221,0,0,0.39528471,70,656)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#c4b5fd"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#a78bfa"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="regionalHubGradient"
+       x1="45.355736"
+       y1="-158.74509"
+       x2="45.355736"
+       y2="52.915028"
+       gradientTransform="matrix(2.6457513,0,0,0.37796447,70,424)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#a78bfa"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#8b5cf6"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="globalCouncilGradient"
+       x1="65.319725"
+       y1="-146.96938"
+       x2="65.319725"
+       y2="48.989796"
+       gradientTransform="matrix(2.4494897,0,0,0.40824829,70,272)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#8b5cf6"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#7c3aed"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="aiGovBoardGradient"
+       x1="50"
+       y1="-80"
+       x2="50"
+       y2="40"
+       gradientTransform="scale(2,0.5)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#7c3aed"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#6d28d9"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="cyberTribunalGradient"
+       x1="230"
+       y1="-80"
+       x2="230"
+       y2="40"
+       gradientTransform="scale(2,0.5)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#7c3aed"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="#6d28d9"
+         id="stop12" />
+    </linearGradient>
+    <!-- Arrow markers for flow lines -->
+    <marker
+       id="arrowUpward"
+       viewBox="0 0 10 10"
+       refX="5"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#6d28d9"
+         id="path12" />
+    </marker>
+    <marker
+       id="arrowDownward"
+       viewBox="0 0 10 10"
+       refX="5"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#8b5cf6"
+         id="path13" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="800"
+     height="699.29077"
+     fill="url(#bgGradient)"
+     rx="10"
+     ry="11.654846"
+     id="rect13"
+     x="0"
+     y="0"
+     style="fill:url(#bgGradient);stroke-width:1.07957" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text13">Layered Digital Governance Architecture</text>
+  <text
+     x="400"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text14">Digital Commons Framework</text>
+  <!-- Layer 1: Local Citizen Nodes -->
+  <rect
+     x="150"
+     y="576"
+     width="640"
+     height="100"
+     rx="10"
+     ry="10"
+     fill="url(#localNodeGradient)"
+     opacity="0.9"
+     id="rect14"
+     style="fill:url(#localNodeGradient)" />
+  <text
+     x="470"
+     y="626"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text15">Local Citizen Nodes</text>
+  <circle
+     cx="220"
+     cy="548"
+     r="20"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#a78bfa"
+     stroke-width="2"
+     id="circle15" />
+  <circle
+     cx="300"
+     cy="548"
+     r="20"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#a78bfa"
+     stroke-width="2"
+     id="circle16" />
+  <circle
+     cx="380"
+     cy="548"
+     r="20"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#a78bfa"
+     stroke-width="2"
+     id="circle17" />
+  <circle
+     cx="460"
+     cy="548"
+     r="20"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#a78bfa"
+     stroke-width="2"
+     id="circle18" />
+  <circle
+     cx="540"
+     cy="548"
+     r="20"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#a78bfa"
+     stroke-width="2"
+     id="circle19" />
+  <circle
+     cx="620"
+     cy="548"
+     r="20"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#a78bfa"
+     stroke-width="2"
+     id="circle20" />
+  <circle
+     cx="700"
+     cy="548"
+     r="20"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#a78bfa"
+     stroke-width="2"
+     id="circle21" />
+  <text
+     x="470"
+     y="656"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text21">Community-Led Governance (66% Majority, 50% Quorum)</text>
+  <!-- Layer 2: Regional Digital Hubs -->
+  <rect
+     x="190"
+     y="364"
+     width="560"
+     height="80"
+     rx="10"
+     ry="10"
+     fill="url(#regionalHubGradient)"
+     opacity="0.9"
+     id="rect21"
+     style="fill:url(#regionalHubGradient)" />
+  <text
+     x="470"
+     y="404"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text22">Regional Digital Hubs</text>
+  <rect
+     x="310"
+     cy="-40"
+     width="40"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     id="rect22"
+     y="448" />
+  <rect
+     x="450"
+     cy="-40"
+     width="40"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     id="rect23"
+     y="448" />
+  <rect
+     x="590"
+     cy="-40"
+     width="40"
+     height="40"
+     rx="5"
+     ry="5"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     id="rect24"
+     y="446" />
+  <text
+     x="470"
+     y="434"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text24">Coordination &amp; Infrastructure (Ranked-Choice, 66% Consensus)</text>
+  <!-- Layer 3: Global Digital Commons Council -->
+  <rect
+     x="230"
+     y="212"
+     width="480"
+     height="80"
+     rx="10"
+     ry="10"
+     fill="url(#globalCouncilGradient)"
+     opacity="0.9"
+     id="rect25"
+     style="fill:url(#globalCouncilGradient)" />
+  <text
+     x="470"
+     y="252"
+     font-family="Arial, sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text25">Global Digital Commons Council</text>
+  <polygon
+     points="380,0 360,-20 360,-40 380,-60 400,-40 400,-20 "
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#7c3aed"
+     stroke-width="2"
+     id="polygon25"
+     transform="translate(70,356)" />
+  <polygon
+     points="420,0 400,-20 400,-40 420,-60 440,-40 440,-20 "
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#7c3aed"
+     stroke-width="2"
+     id="polygon26"
+     transform="translate(70,356)" />
+  <text
+     x="470"
+     y="282"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text26">Global Standards &amp; Funding (75% Approval)</text>
+  <!-- Special Body 1: AI Governance Board -->
+  <g
+     transform="translate(70,122)"
+     id="g28">
+    <rect
+       x="100"
+       y="-40"
+       width="240"
+       height="60"
+       rx="10"
+       ry="10"
+       fill="url(#aiGovBoardGradient)"
+       opacity="0.9"
+       id="rect26"
+       style="fill:url(#aiGovBoardGradient)" />
+    <text
+       x="220"
+       y="-10"
+       font-family="Arial, sans-serif"
+       font-size="18px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text27">AI Governance Board</text>
+    <text
+       x="220"
+       y="15"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text28">Ethics Audits &amp; Standards</text>
+  </g>
+  <!-- Special Body 2: Cyber Conflict Tribunal -->
+  <g
+     transform="translate(70,122)"
+     id="g30">
+    <rect
+       x="460"
+       y="-40"
+       width="240"
+       height="60"
+       rx="10"
+       ry="10"
+       fill="url(#cyberTribunalGradient)"
+       opacity="0.9"
+       id="rect28"
+       style="fill:url(#cyberTribunalGradient)" />
+    <text
+       x="580"
+       y="-10"
+       font-family="Arial, sans-serif"
+       font-size="18px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text29">Cyber Conflict Tribunal</text>
+    <text
+       x="580"
+       y="15"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text30">Dispute Resolution (14-30 Days)</text>
+  </g>
+  <!-- Connection Lines - Upward Flow (Proposals, Representation) -->
+  <line
+     x1="237.49252"
+     y1="538.04181"
+     x2="277.49252"
+     y2="498.04184"
+     stroke="#6d28d9"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowUpward)"
+     id="line30" />
+  <line
+     x1="478"
+     y1="538"
+     x2="478"
+     y2="498"
+     stroke="#6d28d9"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowUpward)"
+     id="line31" />
+  <line
+     x1="683.45068"
+     y1="536.53735"
+     x2="643.45068"
+     y2="496.53735"
+     stroke="#6d28d9"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowUpward)"
+     id="line32" />
+  <line
+     x1="290"
+     y1="360"
+     x2="370"
+     y2="300"
+     stroke="#6d28d9"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowUpward)"
+     id="line33" />
+  <line
+     x1="470"
+     y1="326"
+     x2="470"
+     y2="266"
+     stroke="#6d28d9"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowUpward)"
+     id="line34" />
+  <line
+     x1="650"
+     y1="360"
+     x2="570"
+     y2="300"
+     stroke="#6d28d9"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowUpward)"
+     id="line35" />
+  <line
+     x1="370"
+     y1="208"
+     x2="290"
+     y2="148"
+     stroke="#6d28d9"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowUpward)"
+     id="line36" />
+  <line
+     x1="570"
+     y1="208"
+     x2="650"
+     y2="148"
+     stroke="#6d28d9"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowUpward)"
+     id="line37" />
+  <text
+     x="180"
+     y="504"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="start"
+     fill="#6d28d9"
+     id="text37">Proposals</text>
+  <text
+     x="180"
+     y="348"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="start"
+     fill="#6d28d9"
+     id="text38">Regional Coordination</text>
+  <text
+     x="190"
+     y="178"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="start"
+     fill="#6d28d9"
+     id="text39">AI Ethics</text>
+  <text
+     x="672"
+     y="188"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="end"
+     fill="#6d28d9"
+     id="text40">Disputes</text>
+  <!-- Connection Lines - Downward Flow (Decisions, Accountability) -->
+  <line
+     x1="400"
+     y1="298"
+     x2="320"
+     y2="358"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     marker-end="url(#arrowDownward)"
+     id="line40" />
+  <line
+     x1="490"
+     y1="304"
+     x2="490"
+     y2="364"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     marker-end="url(#arrowDownward)"
+     id="line41" />
+  <line
+     x1="540"
+     y1="298"
+     x2="620"
+     y2="358"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     marker-end="url(#arrowDownward)"
+     id="line42" />
+  <line
+     x1="310"
+     y1="464"
+     x2="250"
+     y2="504"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     marker-end="url(#arrowDownward)"
+     id="line43" />
+  <line
+     x1="490"
+     y1="476"
+     x2="490"
+     y2="516"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     marker-end="url(#arrowDownward)"
+     id="line44" />
+  <line
+     x1="630"
+     y1="464"
+     x2="690"
+     y2="504"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     marker-end="url(#arrowDownward)"
+     id="line45" />
+  <line
+     x1="310"
+     y1="148"
+     x2="390"
+     y2="208"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     marker-end="url(#arrowDownward)"
+     id="line46" />
+  <line
+     x1="630"
+     y1="148"
+     x2="550"
+     y2="208"
+     stroke="#8b5cf6"
+     stroke-width="2"
+     marker-end="url(#arrowDownward)"
+     id="line47" />
+  <text
+     x="769.02692"
+     y="490.96115"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="end"
+     fill="#8b5cf6"
+     id="text47">Implementation</text>
+  <text
+     x="760"
+     y="348"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="end"
+     fill="#8b5cf6"
+     id="text48">Resource Allocation</text>
+  <text
+     x="338"
+     y="194"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="end"
+     fill="#8b5cf6"
+     id="text49">Audit Results</text>
+  <text
+     x="522"
+     y="174"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="start"
+     fill="#8b5cf6"
+     id="text50">Resolutions</text>
+  <!-- Legend -->
+  <g
+     transform="translate(18,200)"
+     id="g54">
+    <rect
+       x="0"
+       y="0"
+       width="180"
+       height="110"
+       rx="5"
+       ry="5"
+       fill="#ffffff"
+       fill-opacity="0.7"
+       stroke="#6d28d9"
+       stroke-width="1"
+       id="rect50" />
+    <text
+       x="90"
+       y="20"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#4a1d96"
+       id="text51">Legend</text>
+    <line
+       x1="10"
+       y1="40"
+       x2="40"
+       y2="40"
+       stroke="#6d28d9"
+       stroke-width="2"
+       stroke-dasharray="5, 3"
+       marker-end="url(#arrowUpward)"
+       id="line51" />
+    <text
+       x="170"
+       y="44"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       text-anchor="end"
+       fill="#4a1d96"
+       id="text52">Bottom-up Flow</text>
+    <line
+       x1="10"
+       y1="70"
+       x2="40"
+       y2="70"
+       stroke="#8b5cf6"
+       stroke-width="2"
+       marker-end="url(#arrowDownward)"
+       id="line52" />
+    <text
+       x="170"
+       y="74"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       text-anchor="end"
+       fill="#4a1d96"
+       id="text53">Top-down Flow</text>
+    <circle
+       cx="20"
+       cy="95"
+       r="8"
+       fill="#ffffff"
+       stroke="#a78bfa"
+       stroke-width="2"
+       id="circle53" />
+    <text
+       x="170"
+       y="100"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       text-anchor="end"
+       fill="#4a1d96"
+       id="text54">Decentralized Authority</text>
+  </g>
+  <!-- Additional information -->
+  <text
+     x="400"
+     y="692"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text55">Digital Commons Framework - Governance Structure Visualization</text>
+</svg>

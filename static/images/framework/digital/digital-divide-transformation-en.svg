@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="800"
+   version="1.1"
+   id="svg73"
+   sodipodi:docname="digital-divide-transformation-en.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.85458905"
+     inkscape:cx="551.72717"
+     inkscape:cy="375.61913"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg73" />
+  <!-- Definitions for gradients and patterns -->
+  <defs
+     id="defs22">
+    <!-- Gradient for background -->
+    <linearGradient
+       id="bgGradient"
+       x1="0"
+       y1="0"
+       x2="748.33148"
+       y2="748.33148"
+       gradientTransform="scale(1.069045,1.0689957)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#f5f3ff"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#ede9fe"
+         id="stop2" />
+    </linearGradient>
+    <!-- Gradients for divide zones -->
+    <linearGradient
+       id="highDivideGradient"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#ef4444"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#f87171"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="mediumDivideGradient"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#f59e0b"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#fbbf24"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="lowDivideGradient"
+       x1="44.721359"
+       y1="961.50922"
+       x2="313.04953"
+       y2="961.50922"
+       gradientTransform="matrix(2.236068,0,0,0.4472136,0,102)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#10b981"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#34d399"
+         id="stop8" />
+    </linearGradient>
+    <!-- Gradients for pathway types -->
+    <linearGradient
+       id="technologyGradient"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#6d28d9"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#8b5cf6"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="accessGradient"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#0284c7"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="#38bdf8"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       id="skillsGradient"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#7c3aed"
+         id="stop13" />
+      <stop
+         offset="100%"
+         stop-color="#a78bfa"
+         id="stop14" />
+    </linearGradient>
+    <linearGradient
+       id="governanceGradient"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#4a1d96"
+         id="stop15" />
+      <stop
+         offset="100%"
+         stop-color="#6d28d9"
+         id="stop16" />
+    </linearGradient>
+    <!-- Arrow marker for paths -->
+    <marker
+       id="arrowMarker"
+       viewBox="0 0 10 10"
+       refX="5"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#6d28d9"
+         id="path16" />
+    </marker>
+    <marker
+       id="technologyArrow"
+       viewBox="0 0 10 10"
+       refX="5"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#6d28d9"
+         id="path17" />
+    </marker>
+    <marker
+       id="accessArrow"
+       viewBox="0 0 10 10"
+       refX="5"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#0284c7"
+         id="path18" />
+    </marker>
+    <marker
+       id="skillsArrow"
+       viewBox="0 0 10 10"
+       refX="5"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#7c3aed"
+         id="path19" />
+    </marker>
+    <marker
+       id="governanceArrow"
+       viewBox="0 0 10 10"
+       refX="5"
+       refY="5"
+       markerWidth="6"
+       markerHeight="6"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#4a1d96"
+         id="path20" />
+    </marker>
+    <!-- Patterns for icons -->
+    <pattern
+       id="gridPattern"
+       patternUnits="userSpaceOnUse"
+       width="10"
+       height="10"
+       patternTransform="scale(0.5)">
+      <rect
+         width="10"
+         height="10"
+         fill="none"
+         stroke="#6d28d9"
+         stroke-width="0.5"
+         id="rect1" />
+    </pattern>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#highDivideGradient"
+       id="linearGradient1"
+       x1="44.721359"
+       y1="335.41019"
+       x2="313.04953"
+       y2="335.41019"
+       gradientTransform="matrix(2.236068,0,0,0.4472136,0,-38)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#mediumDivideGradient"
+       id="linearGradient2"
+       x1="44.721359"
+       y1="648.45972"
+       x2="313.04953"
+       y2="648.45972"
+       gradientTransform="matrix(2.236068,0,0,0.4472136,0,30)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#technologyGradient"
+       id="linearGradient3"
+       x1="129.74835"
+       y1="171.95595"
+       x2="188.778"
+       y2="171.95595"
+       gradientTransform="matrix(0.85550223,0,0,1.168904,0,30)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#technologyGradient"
+       id="linearGradient4"
+       x1="144"
+       y1="254"
+       x2="176"
+       y2="254"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,30)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#technologyGradient"
+       id="linearGradient5"
+       x1="129.74835"
+       y1="291.72626"
+       x2="188.778"
+       y2="291.72626"
+       gradientTransform="matrix(0.85550223,0,0,1.168904,0,100)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#technologyGradient"
+       id="linearGradient6"
+       x1="144"
+       y1="394"
+       x2="176"
+       y2="394"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,100)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#accessGradient"
+       id="linearGradient7"
+       x1="293.3949"
+       y1="171.95595"
+       x2="352.42456"
+       y2="171.95595"
+       gradientTransform="matrix(0.85550223,0,0,1.168904,0,30)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#accessGradient"
+       id="linearGradient8"
+       x1="284"
+       y1="254"
+       x2="316"
+       y2="254"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,30)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#accessGradient"
+       id="linearGradient9"
+       x1="293.3949"
+       y1="291.72626"
+       x2="352.42456"
+       y2="291.72626"
+       gradientTransform="matrix(0.85550223,0,0,1.168904,0,100)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#accessGradient"
+       id="linearGradient10"
+       x1="284"
+       y1="394"
+       x2="316"
+       y2="394"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,100)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#skillsGradient"
+       id="linearGradient11"
+       x1="457.04147"
+       y1="171.95595"
+       x2="516.07111"
+       y2="171.95595"
+       gradientTransform="matrix(0.85550223,0,0,1.168904,0,30)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#skillsGradient"
+       id="linearGradient12"
+       x1="424"
+       y1="254"
+       x2="456"
+       y2="254"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,30)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#skillsGradient"
+       id="linearGradient13"
+       x1="457.04147"
+       y1="291.72626"
+       x2="516.07111"
+       y2="291.72626"
+       gradientTransform="matrix(0.85550223,0,0,1.168904,0,100)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#skillsGradient"
+       id="linearGradient14"
+       x1="424"
+       y1="394"
+       x2="456"
+       y2="394"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,100)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#governanceGradient"
+       id="linearGradient15"
+       x1="620.68805"
+       y1="171.95595"
+       x2="679.71771"
+       y2="171.95595"
+       gradientTransform="matrix(0.85550223,0,0,1.168904,0,30)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#governanceGradient"
+       id="linearGradient16"
+       x1="564"
+       y1="254"
+       x2="596"
+       y2="254"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,30)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#governanceGradient"
+       id="linearGradient17"
+       x1="620.68805"
+       y1="291.72626"
+       x2="679.71771"
+       y2="291.72626"
+       gradientTransform="matrix(0.85550223,0,0,1.168904,0,100)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#governanceGradient"
+       id="linearGradient18"
+       x1="564"
+       y1="394"
+       x2="596"
+       y2="394"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,100)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#technologyGradient"
+       id="linearGradient19"
+       x1="9.25"
+       y1="39.25"
+       x2="30.75"
+       y2="39.25"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#accessGradient"
+       id="linearGradient20"
+       x1="9.25"
+       y1="94.25"
+       x2="30.75"
+       y2="94.25"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#skillsGradient"
+       id="linearGradient21"
+       x1="9.25"
+       y1="149.25"
+       x2="30.75"
+       y2="149.25"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#governanceGradient"
+       id="linearGradient22"
+       x1="9.25"
+       y1="204.25"
+       x2="30.75"
+       y2="204.25"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#highDivideGradient"
+       id="linearGradient23"
+       x1="5"
+       y1="520"
+       x2="25"
+       y2="520"
+       gradientTransform="scale(2,0.5)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#mediumDivideGradient"
+       id="linearGradient24"
+       x1="5"
+       y1="590"
+       x2="25"
+       y2="590"
+       gradientTransform="scale(2,0.5)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Background -->
+  <rect
+     width="800"
+     height="799.96307"
+     fill="url(#bgGradient)"
+     rx="10"
+     ry="11.428044"
+     id="rect22"
+     x="0"
+     y="0"
+     style="fill:url(#bgGradient);stroke-width:1.06902" />
+  <!-- Title and Description -->
+  <text
+     x="400"
+     y="40"
+     font-family="Arial, sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text22">Digital Divide Transformation Pathways</text>
+  <text
+     x="400"
+     y="70"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text23">Digital Commons Framework</text>
+  <!-- Digital Divide Zones -->
+  <rect
+     x="100"
+     y="112"
+     width="600"
+     height="120"
+     rx="10"
+     ry="10"
+     fill="url(#highDivideGradient)"
+     opacity="0.8"
+     id="rect23"
+     style="fill:url(#linearGradient1)" />
+  <text
+     x="400"
+     y="146"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text24">HIGH DIGITAL DIVIDE</text>
+  <text
+     x="400"
+     y="176"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text25">Limited connectivity, low device access, minimal digital literacy</text>
+  <text
+     x="400"
+     y="206"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-style="italic"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text26">2.7 billion people globally affected</text>
+  <rect
+     x="100"
+     y="320"
+     width="600"
+     height="120"
+     rx="10"
+     ry="10"
+     fill="url(#mediumDivideGradient)"
+     opacity="0.8"
+     id="rect24"
+     style="fill:url(#linearGradient2)" />
+  <text
+     x="400"
+     y="350"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text27">MODERATE DIGITAL DIVIDE</text>
+  <text
+     x="400"
+     y="380"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text28">Basic connectivity, shared devices, emerging digital skills</text>
+  <text
+     x="400"
+     y="410"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-style="italic"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text29">1.8 billion people globally affected</text>
+  <rect
+     x="100"
+     y="532"
+     width="600"
+     height="120"
+     rx="10"
+     ry="10"
+     fill="url(#lowDivideGradient)"
+     opacity="0.8"
+     id="rect25"
+     style="fill:url(#lowDivideGradient)" />
+  <text
+     x="400"
+     y="562"
+     font-family="Arial, sans-serif"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text30">LOW DIGITAL DIVIDE</text>
+  <text
+     x="400"
+     y="592"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text31">Reliable connectivity, personal devices, confident digital use</text>
+  <text
+     x="400"
+     y="622"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-style="italic"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text32">3.2 billion people globally affected</text>
+  <!-- Transformation Pathway Arrows -->
+  <!-- Technology Pathways -->
+  <path
+     d="m 160,300 c 0,-20 -40,-40 -40,-60"
+     stroke="url(#technologyGradient)"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#technologyArrow)"
+     id="path25"
+     style="stroke:url(#linearGradient3)" />
+  <circle
+     cx="160"
+     cy="300"
+     r="15"
+     fill="url(#technologyGradient)"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle25"
+     style="fill:url(#linearGradient4)" />
+  <text
+     x="160"
+     y="304"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text33">T</text>
+  <text
+     x="72"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text34">Mesh Networks</text>
+  <path
+     d="m 160,510 c 0,-20 -40,-40 -40,-60"
+     stroke="url(#technologyGradient)"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#technologyArrow)"
+     id="path26"
+     style="stroke:url(#linearGradient5)" />
+  <circle
+     cx="160"
+     cy="510"
+     r="15"
+     fill="url(#technologyGradient)"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle26"
+     style="fill:url(#linearGradient6)" />
+  <text
+     x="160"
+     y="514"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text35">T</text>
+  <text
+     x="72"
+     y="460"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text36">Local Servers</text>
+  <!-- Access Pathways -->
+  <path
+     d="m 300,300 c 0,-20 -40,-40 -40,-60"
+     stroke="url(#accessGradient)"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#accessArrow)"
+     id="path27"
+     style="stroke:url(#linearGradient7)" />
+  <circle
+     cx="300"
+     cy="300"
+     r="15"
+     fill="url(#accessGradient)"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle27"
+     style="fill:url(#linearGradient8)" />
+  <text
+     x="300"
+     y="304"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text37">A</text>
+  <text
+     x="218"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#0284c7"
+     id="text38">SMS Access</text>
+  <path
+     d="m 300,510 c 0,-20 -40,-40 -40,-60"
+     stroke="url(#accessGradient)"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#accessArrow)"
+     id="path28"
+     style="stroke:url(#linearGradient9)" />
+  <circle
+     cx="300"
+     cy="510"
+     r="15"
+     fill="url(#accessGradient)"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle28"
+     style="fill:url(#linearGradient10)" />
+  <text
+     x="300"
+     y="514"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text39">A</text>
+  <text
+     x="218"
+     y="460"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#0284c7"
+     id="text40">Device Hubs</text>
+  <!-- Skills Pathways -->
+  <path
+     d="m 440,300 c 0,-20 -40,-40 -40,-60"
+     stroke="url(#skillsGradient)"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#skillsArrow)"
+     id="path29"
+     style="stroke:url(#linearGradient11)" />
+  <circle
+     cx="440"
+     cy="300"
+     r="15"
+     fill="url(#skillsGradient)"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle29"
+     style="fill:url(#linearGradient12)" />
+  <text
+     x="440"
+     y="304"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text41">S</text>
+  <text
+     x="356"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#7c3aed"
+     id="text42">Peer Learning</text>
+  <path
+     d="m 440,510 c 0,-20 -40,-40 -40,-60"
+     stroke="url(#skillsGradient)"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#skillsArrow)"
+     id="path30"
+     style="stroke:url(#linearGradient13)" />
+  <circle
+     cx="440"
+     cy="510"
+     r="15"
+     fill="url(#skillsGradient)"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle30"
+     style="fill:url(#linearGradient14)" />
+  <text
+     x="440"
+     y="514"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text43">S</text>
+  <text
+     x="356"
+     y="460"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#7c3aed"
+     id="text44">Digital Mentors</text>
+  <!-- Governance Pathways -->
+  <path
+     d="m 580,300 c 0,-20 -40,-40 -40,-60"
+     stroke="url(#governanceGradient)"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#governanceArrow)"
+     id="path31"
+     style="stroke:url(#linearGradient15)" />
+  <circle
+     cx="580"
+     cy="300"
+     r="15"
+     fill="url(#governanceGradient)"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle31"
+     style="fill:url(#linearGradient16)" />
+  <text
+     x="580"
+     y="304"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text45">G</text>
+  <text
+     x="496"
+     y="250"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text46">Paper Ballots</text>
+  <path
+     d="m 580,510 c 0,-20 -40,-40 -40,-60"
+     stroke="url(#governanceGradient)"
+     stroke-width="3"
+     fill="none"
+     marker-end="url(#governanceArrow)"
+     id="path32"
+     style="stroke:url(#linearGradient17)" />
+  <circle
+     cx="580"
+     cy="510"
+     r="15"
+     fill="url(#governanceGradient)"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle32"
+     style="fill:url(#linearGradient18)" />
+  <text
+     x="580"
+     y="514"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text47">G</text>
+  <text
+     x="496"
+     y="460"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     fill="#4a1d96"
+     id="text48">SMS Voting</text>
+  <!-- Approach Cards -->
+  <rect
+     x="60"
+     y="676"
+     width="320"
+     height="90"
+     rx="10"
+     ry="10"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#6d28d9"
+     stroke-width="2"
+     id="rect31" />
+  <text
+     x="220"
+     y="696"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text49">INTEGRATED APPROACH</text>
+  <text
+     x="220"
+     y="721"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text50">Rwanda's mesh network deployment combined with</text>
+  <text
+     x="220"
+     y="741"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text51">SMS governance and peer-training reduced digital</text>
+  <text
+     x="220"
+     y="761"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text52">divide barriers by 40% in rural communities</text>
+  <rect
+     x="420"
+     y="676"
+     width="320"
+     height="90"
+     rx="10"
+     ry="10"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#6d28d9"
+     stroke-width="2"
+     id="rect32" />
+  <text
+     x="580"
+     y="696"
+     font-family="Arial, sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text53">PROGRESSIVE PATHWAY</text>
+  <text
+     x="580"
+     y="721"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text54">Bangladesh's phased approach started with SMS</text>
+  <text
+     x="580"
+     y="741"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text55">access, evolving to community device hubs and</text>
+  <text
+     x="580"
+     y="761"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text56">then local servers with 85% uptime during monsoons</text>
+  <!-- Legend -->
+  <g
+     transform="translate(730,150)"
+     id="g30">
+    <rect
+       x="0"
+       y="0"
+       width="60"
+       height="320"
+       rx="5"
+       ry="5"
+       fill="#ffffff"
+       opacity="0.8"
+       stroke="#6d28d9"
+       stroke-width="1"
+       id="rect33" />
+    <text
+       x="30"
+       y="20"
+       font-family="Arial, sans-serif"
+       font-size="12px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#4a1d96"
+       id="text57">Legend</text>
+    <!-- Technology -->
+    <circle
+       cx="20"
+       cy="50"
+       r="10"
+       fill="url(#technologyGradient)"
+       stroke="#ffffff"
+       stroke-width="1.5"
+       id="circle33"
+       style="fill:url(#linearGradient19)" />
+    <text
+       x="20"
+       y="54"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text58">T</text>
+    <text
+       x="30"
+       y="74"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#6d28d9"
+       id="text59">Technology</text>
+    <!-- Access -->
+    <circle
+       cx="20"
+       cy="105"
+       r="10"
+       fill="url(#accessGradient)"
+       stroke="#ffffff"
+       stroke-width="1.5"
+       id="circle34"
+       style="fill:url(#linearGradient20)" />
+    <text
+       x="20"
+       y="109"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text60">A</text>
+    <text
+       x="30"
+       y="129"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#0284c7"
+       id="text61">Access</text>
+    <!-- Skills -->
+    <circle
+       cx="20"
+       cy="160"
+       r="10"
+       fill="url(#skillsGradient)"
+       stroke="#ffffff"
+       stroke-width="1.5"
+       id="circle35"
+       style="fill:url(#linearGradient21)" />
+    <text
+       x="20"
+       y="164"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text62">S</text>
+    <text
+       x="30"
+       y="184"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#7c3aed"
+       id="text63">Skills</text>
+    <!-- Governance -->
+    <circle
+       cx="20"
+       cy="215"
+       r="10"
+       fill="url(#governanceGradient)"
+       stroke="#ffffff"
+       stroke-width="1.5"
+       id="circle36"
+       style="fill:url(#linearGradient22)" />
+    <text
+       x="20"
+       y="219"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#ffffff"
+       id="text64">G</text>
+    <text
+       x="30"
+       y="239"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       text-anchor="middle"
+       fill="#4a1d96"
+       id="text65">Governance</text>
+    <!-- Divide Levels -->
+    <rect
+       x="10"
+       y="260"
+       width="40"
+       height="10"
+       fill="url(#highDivideGradient)"
+       opacity="0.8"
+       id="rect34"
+       style="fill:url(#linearGradient23)" />
+    <text
+       x="30"
+       y="285"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#4a1d96"
+       id="text66">High Divide</text>
+    <rect
+       x="10"
+       y="295"
+       width="40"
+       height="10"
+       fill="url(#mediumDivideGradient)"
+       opacity="0.8"
+       id="rect35"
+       style="fill:url(#linearGradient24)" />
+    <text
+       x="30"
+       y="315"
+       font-family="Arial, sans-serif"
+       font-size="8px"
+       text-anchor="middle"
+       fill="#4a1d96"
+       id="text67">Medium</text>
+  </g>
+  <!-- Footer -->
+  <text
+     x="400"
+     y="786"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#6d28d9"
+     id="text68">Digital Commons Framework - Digital Divide Transformation Visualization</text>
+</svg>

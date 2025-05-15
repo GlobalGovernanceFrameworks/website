@@ -44,6 +44,10 @@
       "description": "Additional downloadable materials, interactive tools, and detailed implementation guides are available on our Tools page:",
       "linkText": "Explore Framework Tools"
     },
+    "digital": {
+      "title": "Digital Commons Framework",
+      "description": "Provides a comprehensive approach for managing digital resources—data, software, knowledge, and infrastructure—as shared global commons, ensuring equitable access, ethical use, and participatory governance."
+    },
     "economic": {
       "title": "Economic Integration",
       "description": "A framework for creating fair and sustainable economic systems that balance local autonomy with global cooperation, including nested economic systems and resource justice implementation."
