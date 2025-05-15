@@ -416,6 +416,9 @@
               <a href="{base}/framework/docs/resources" class={isActive('/framework/docs/resources') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkResources')}
               </a>
+              <a href="{base}/framework/docs/glossary" class={isActive('/framework/docs/glossary') ? 'active' : ''} data-sveltekit-preload-data="hover">
+                {$t('common.header.frameworkGlossary')}
+              </a>
             </div>
           </li>
           <li class="nav-item">

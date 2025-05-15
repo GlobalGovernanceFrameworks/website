@@ -28,6 +28,9 @@
       educationTitle: "Education Framework Tools",
       educationDesc: "Tools for implementing the Perfected Enhanced Educational Systems Framework, including project guides, assessment tools, and advocacy resources.",
       educationButton: "Access Education Tools",
+      digitalTitle: "Digital Commons Framework Tools",
+      digitalDesc: "Tools for implementing the Digital Commons Framework, including governance templates, node setup guides, data sovereignty protocols, and resources for establishing ethical AI systems and knowledge commons in diverse contexts.",
+      digitalButton: "Access Digital Commons Tools",
       foodTitle: "Food Systems & Agriculture Framework Tools",
       foodDesc: "Resources for implementing sustainable food systems, including regenerative agriculture guides, stakeholder engagement templates, and policy harmonization tools.",
       foodButton: "Access Food Systems Tools",
@@ -59,6 +62,9 @@
       educationTitle: "Verktyg för utbildningsramverket",
       educationDesc: "Verktyg för att implementera det Perfekterade Förstärkta Utbildningssystemet, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
       educationButton: "Öppna utbildningsverktyg",
+      digitalTitle: "Verktyg för digitalt allmänningsramverk",
+      digitalDesc: "Verktyg för att implementera ramverket för digitala allmänningar, inklusive styrningsmallar, guider för nodkonfiguration, protokoll för datasuveränitet och resurser för att upprätta etiska AI-system och kunskapsallmänningar i olika sammanhang.",
+      digitalButton: "Öppna digitala allmänningsverktyg",
       foodTitle: "Verktyg för matsystem och jordbruksramverk",
       foodDesc: "Resurser för att implementera hållbara matsystem, inklusive guider för regenerativt jordbruk, mallar för intressentengagemang och verktyg för policyharmonisering.",
       foodButton: "Öppna matsystemverktyg",
@@ -207,6 +213,25 @@
           </div>
         </div>
       </div>
+
+      <!-- Digital Commons Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6d28d9; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #6d28d9;">🌐</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6d28d9;">{texts.digitalTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.digitalDesc}
+            </p>
+            <a href="{base}/framework/tools/digital" style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.digitalButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
       
       <!-- Coming Soon Section -->
       <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{texts.comingSoon}</h2>
@@ -238,7 +263,7 @@
           <!-- Spiritual Framework -->
           <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #9B6A8F;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.5rem; color: #9B6A8F;">🕊️</span>
+              <span style="font-size: 1.5rem; color: #9B6A8F;">🕯️</span>
               <h4 style="font-size: 1.125rem; font-weight: 600; color: #9B6A8F; margin: 0;">{texts.spiritualTitle}</h4>
             </div>
           </div>

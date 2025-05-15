@@ -2,7 +2,7 @@
 
 This tier focuses on ensuring inclusion, preserving diverse heritages, and representing those often overlooked—such as youth, Indigenous peoples, rural communities, and future generations. These frameworks ensure that the governance model reflects the full spectrum of humanity and honors our cultural and ecological legacy.
 
-- [Digital Commons](/framework/docs/implementation/digital) (Coming Soon)
+- [Digital Commons](/framework/docs/implementation/digital)
 - [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Planned)
 - [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
 - [Rural Development](/framework/docs/implementation/rural) (Planned)

@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 650"
+   version="1.1"
+   id="svg56"
+   sodipodi:docname="cross-commons-synergy-chart-en.svg"
+   width="800"
+   height="650"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs56" />
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="435.10638"
+     inkscape:cy="305.67376"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg56" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="649.99445"
+     fill="#f8f9fa"
+     id="rect1"
+     x="0.70921987"
+     y="0"
+     style="stroke-width:1.04083" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="40"
+     font-family="'Open Sans', sans-serif"
+     font-size="24px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#009966"
+     id="text1">Cross-Commons Synergy Chart</text>
+  <!-- Digital Commons Circle -->
+  <circle
+     cx="400"
+     cy="250"
+     r="150"
+     fill="#0052cc"
+     opacity="0.6"
+     id="circle1" />
+  <text
+     x="400"
+     y="190"
+     font-family="'Open Sans', sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text2">DIGITAL</text>
+  <text
+     x="400"
+     y="220"
+     font-family="'Open Sans', sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text3">COMMONS</text>
+  <!-- Environmental Commons Circle -->
+  <circle
+     cx="250"
+     cy="400"
+     r="150"
+     fill="#009966"
+     opacity="0.6"
+     id="circle3" />
+  <text
+     x="250"
+     y="380"
+     font-family="'Open Sans', sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text4">ENVIRONMENTAL</text>
+  <text
+     x="250"
+     y="410"
+     font-family="'Open Sans', sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text5">COMMONS</text>
+  <!-- Economic Commons Circle -->
+  <circle
+     cx="550"
+     cy="400"
+     r="150"
+     fill="#ffaa00"
+     opacity="0.6"
+     id="circle5" />
+  <text
+     x="550"
+     y="380"
+     font-family="'Open Sans', sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text6">ECONOMIC</text>
+  <text
+     x="550"
+     y="410"
+     font-family="'Open Sans', sans-serif"
+     font-size="20px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text7">COMMONS</text>
+  <!-- Digital + Environmental Intersection (Left) -->
+  <path
+     d="m 325,325 a 150,150 0 0 1 0,-150 150,150 0 0 0 -150,150 150,150 0 0 0 150,0"
+     fill="#00a8e8"
+     opacity="0.7"
+     id="path7" />
+  <text
+     x="270"
+     y="267"
+     font-family="'Open Sans', sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text8">Climate Data</text>
+  <text
+     x="270"
+     y="287"
+     font-family="'Open Sans', sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text9">Sharing</text>
+  <!-- Digital + Economic Intersection (Right) -->
+  <path
+     d="m 475,325 a 150,150 0 0 0 0,-150 150,150 0 0 1 150,150 150,150 0 0 1 -150,0"
+     fill="#9966cc"
+     opacity="0.7"
+     id="path9" />
+  <text
+     x="530"
+     y="267"
+     font-family="'Open Sans', sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text10">Community</text>
+  <text
+     x="530"
+     y="287"
+     font-family="'Open Sans', sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text11">Currencies</text>
+  <!-- Environmental + Economic Intersection (Bottom) -->
+  <path
+     d="m 325,475 a 150,150 0 0 0 150,0 150,150 0 0 0 -75,75 150,150 0 0 0 -75,-75"
+     fill="#66cc99"
+     opacity="0.7"
+     id="path11" />
+  <text
+     x="400"
+     y="500"
+     font-family="'Open Sans', sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text12">Sustainable</text>
+  <text
+     x="400"
+     y="520"
+     font-family="'Open Sans', sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text13">Markets</text>
+  <!-- Three-Way Intersection (Center) -->
+  <path
+     d="m 400,325 c -50,-25 -100,0 -75,50 25,50 125,50 150,0 25,-50 -25,-75 -75,-50"
+     fill="#ffffff"
+     opacity="0.85"
+     stroke="#333333"
+     stroke-width="1"
+     id="path13" />
+  <text
+     x="400"
+     y="350"
+     font-family="'Open Sans', sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text14">GLOBAL</text>
+  <text
+     x="400"
+     y="370"
+     font-family="'Open Sans', sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text15">RESOURCE</text>
+  <text
+     x="400"
+     y="390"
+     font-family="'Open Sans', sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text16">JUSTICE</text>
+  <!-- Digital Commons Examples -->
+  <circle
+     cx="338.58154"
+     cy="129.0071"
+     r="32.059025"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#0052cc"
+     stroke-width="2.13726"
+     id="circle16" />
+  <text
+     x="338.70923"
+     y="126.00709"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#0052cc"
+     id="text17">Open Data</text>
+  <text
+     x="338.70923"
+     y="141.0071"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#0052cc"
+     id="text18">Commons</text>
+  <circle
+     cx="399.64539"
+     cy="102.97872"
+     r="35.833904"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#0052cc"
+     stroke-width="2.38893"
+     id="circle18" />
+  <text
+     x="398.70923"
+     y="104.00709"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#0052cc"
+     id="text19">Open-Source</text>
+  <text
+     x="398.70923"
+     y="119.00709"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#0052cc"
+     id="text20">Software</text>
+  <circle
+     cx="462.12766"
+     cy="127.58865"
+     r="31.372684"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#0052cc"
+     stroke-width="2.09151"
+     id="circle20" />
+  <text
+     x="462.70923"
+     y="124.00709"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#0052cc"
+     id="text21">Knowledge</text>
+  <text
+     x="462.70923"
+     y="139.0071"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#0052cc"
+     id="text22">Commons</text>
+  <!-- Environmental Commons Examples -->
+  <circle
+     cx="159.85817"
+     cy="436.52481"
+     r="32.402199"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#009966"
+     stroke-width="2.16014"
+     id="circle22" />
+  <text
+     x="159.50356"
+     y="431.04254"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#009966"
+     id="text23">Climate</text>
+  <text
+     x="159.50356"
+     y="446.04254"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#009966"
+     id="text24">Monitoring</text>
+  <circle
+     cx="187.7305"
+     cy="495.10638"
+     r="33.774879"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#009966"
+     stroke-width="2.25165"
+     id="circle24" />
+  <text
+     x="187.50356"
+     y="495.04254"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#009966"
+     id="text25">Sustainable</text>
+  <text
+     x="187.50356"
+     y="510.04254"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#009966"
+     id="text26">Resources</text>
+  <!-- Economic Commons Examples -->
+  <circle
+     cx="666.383"
+     cy="412.41135"
+     r="31.715855"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#ffaa00"
+     stroke-width="2.11439"
+     id="circle26" />
+  <text
+     x="666.60992"
+     y="413.18439"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffaa00"
+     id="text27">Community</text>
+  <text
+     x="666.60992"
+     y="428.18439"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffaa00"
+     id="text28">Banking</text>
+  <circle
+     cx="629.29077"
+     cy="473.12054"
+     r="35.147564"
+     fill="#ffffff"
+     opacity="0.9"
+     stroke="#ffaa00"
+     stroke-width="2.34317"
+     id="circle28" />
+  <text
+     x="628.60992"
+     y="475.18439"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffaa00"
+     id="text29">Cooperative</text>
+  <text
+     x="628.60992"
+     y="490.18439"
+     font-family="'Open Sans', sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffaa00"
+     id="text30">Markets</text>
+  <!-- Synergy Examples in Overlaps -->
+  <!-- Digital + Environmental -->
+  <rect
+     x="143.45013"
+     y="182.31538"
+     width="120.54654"
+     height="49.908241"
+     rx="10.958776"
+     fill="#ffffff"
+     stroke="#00a8e8"
+     stroke-width="2.09176"
+     id="rect30" />
+  <text
+     x="203.36879"
+     y="202.2695"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#00a8e8"
+     id="text31">AI-Driven Climate</text>
+  <text
+     x="203.36879"
+     y="217.2695"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#00a8e8"
+     id="text32">Prediction Models</text>
+  <rect
+     x="91.340248"
+     y="242.33315"
+     width="124.76632"
+     height="49.8727"
+     rx="11.342392"
+     fill="#ffffff"
+     stroke="#00a8e8"
+     stroke-width="2.1273"
+     id="rect32" />
+  <text
+     x="153.36879"
+     y="262.2695"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#00a8e8"
+     id="text33">Mesh Networks for</text>
+  <text
+     x="153.36879"
+     y="277.2695"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#00a8e8"
+     id="text34">Disaster Response</text>
+  <!-- Digital + Economic -->
+  <rect
+     x="531.81299"
+     y="190.11081"
+     width="119.14008"
+     height="49.920227"
+     rx="10.830916"
+     fill="#ffffff"
+     stroke="#9966cc"
+     stroke-width="2.07978"
+     id="rect34" />
+  <text
+     x="591.73761"
+     y="210.07092"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#9966cc"
+     id="text35">Decentralized</text>
+  <text
+     x="591.73761"
+     y="225.07092"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#9966cc"
+     id="text36">Finance Platforms</text>
+  <rect
+     x="586.73761"
+     y="250.07092"
+     width="110"
+     height="50"
+     rx="10"
+     fill="#ffffff"
+     stroke="#9966cc"
+     stroke-width="2"
+     id="rect36" />
+  <text
+     x="641.73761"
+     y="270.07092"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#9966cc"
+     id="text37">Open-Source</text>
+  <text
+     x="641.73761"
+     y="285.07092"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#9966cc"
+     id="text38">Market Analytics</text>
+  <!-- Environmental + Economic -->
+  <g
+     transform="translate(-34.751773,56.737589)"
+     id="g42">
+    <rect
+       x="320"
+       y="475"
+       width="110"
+       height="50"
+       rx="10"
+       fill="#ffffff"
+       stroke="#66cc99"
+       stroke-width="2"
+       id="rect38" />
+    <text
+       x="375"
+       y="495"
+       font-family="'Open Sans', sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#66cc99"
+       id="text39">Carbon Credits</text>
+    <text
+       x="375"
+       y="510"
+       font-family="'Open Sans', sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#66cc99"
+       id="text40">Trading Systems</text>
+    <rect
+       x="440"
+       y="475"
+       width="110"
+       height="50"
+       rx="10"
+       fill="#ffffff"
+       stroke="#66cc99"
+       stroke-width="2"
+       id="rect40" />
+    <text
+       x="495"
+       y="495"
+       font-family="'Open Sans', sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#66cc99"
+       id="text41">Sustainable</text>
+    <text
+       x="495"
+       y="510"
+       font-family="'Open Sans', sans-serif"
+       font-size="11px"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#66cc99"
+       id="text42">Supply Chains</text>
+  </g>
+  <!-- Three-Way Synergy Examples (Around the Center) -->
+  <rect
+     x="309.39417"
+     y="287.03247"
+     width="181.92088"
+     height="24.93508"
+     rx="13.644068"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1.06492"
+     id="rect42" />
+  <text
+     x="400"
+     y="303"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text43">Regenerative Agriculture AI</text>
+  <rect
+     x="313.63925"
+     y="415.02222"
+     width="174.84917"
+     height="24.955555"
+     rx="13.113688"
+     fill="#ffffff"
+     stroke="#333333"
+     stroke-width="1.04445"
+     id="rect43" />
+  <text
+     x="400"
+     y="431"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333333"
+     id="text44">Cultural Tourism Platforms</text>
+  <!-- Case Study Callouts -->
+  <rect
+     x="56.543785"
+     y="77.394852"
+     width="180.45853"
+     height="78.330864"
+     rx="10.615207"
+     fill="#ffffff"
+     stroke="#009966"
+     stroke-width="2.17978"
+     id="rect44" />
+  <text
+     x="146.41844"
+     y="97.304962"
+     font-family="'Open Sans', sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#009966"
+     id="text45">CASE STUDY: KENYA</text>
+  <text
+     x="146.41844"
+     y="117.30496"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text46">AI farming app increased yields</text>
+  <text
+     x="146.41844"
+     y="132.30496"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text47">by 30% while reducing water</text>
+  <text
+     x="146.41844"
+     y="147.30496"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text48">usage by 20%</text>
+  <rect
+     x="567.95642"
+     y="77.389069"
+     width="176.92398"
+     height="79.051628"
+     rx="10.407292"
+     fill="#ffffff"
+     stroke="#ffaa00"
+     stroke-width="2.16823"
+     id="rect48" />
+  <text
+     x="656.41846"
+     y="97.304962"
+     font-family="'Open Sans', sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffaa00"
+     id="text49">CASE STUDY: GERMANY</text>
+  <text
+     x="656.41846"
+     y="117.30496"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text50">Open-source energy platform</text>
+  <text
+     x="656.41846"
+     y="132.30496"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text51">reduced costs by 15% and CO₂</text>
+  <text
+     x="656.41846"
+     y="147.30496"
+     font-family="'Open Sans', sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#333333"
+     id="text52">emissions by 25%</text>
+  <!-- Legend -->
+  <g
+     transform="translate(-36.170213,621.70213)"
+     id="g56">
+    <circle
+       cx="100"
+       cy="0"
+       r="15"
+       fill="#0052cc"
+       opacity="0.6"
+       id="circle52" />
+    <text
+       x="125"
+       y="5"
+       font-family="'Open Sans', sans-serif"
+       font-size="12px"
+       text-anchor="start"
+       fill="#333333"
+       id="text53">Digital Commons</text>
+    <circle
+       cx="275"
+       cy="0"
+       r="15"
+       fill="#009966"
+       opacity="0.6"
+       id="circle53" />
+    <text
+       x="300"
+       y="5"
+       font-family="'Open Sans', sans-serif"
+       font-size="12px"
+       text-anchor="start"
+       fill="#333333"
+       id="text54">Environmental Commons</text>
+    <circle
+       cx="500"
+       cy="0"
+       r="15"
+       fill="#ffaa00"
+       opacity="0.6"
+       id="circle54" />
+    <text
+       x="525"
+       y="5"
+       font-family="'Open Sans', sans-serif"
+       font-size="12px"
+       text-anchor="start"
+       fill="#333333"
+       id="text55">Economic Commons</text>
+    <circle
+       cx="700"
+       cy="0"
+       r="15"
+       fill="#ffffff"
+       opacity="0.85"
+       stroke="#333333"
+       stroke-width="1"
+       id="circle55" />
+    <text
+       x="725"
+       y="5"
+       font-family="'Open Sans', sans-serif"
+       font-size="12px"
+       text-anchor="start"
+       fill="#333333"
+       id="text56">Synergy Areas</text>
+  </g>
+</svg>

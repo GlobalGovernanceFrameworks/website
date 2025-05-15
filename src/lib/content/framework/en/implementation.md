@@ -32,18 +32,18 @@ The most challenging aspect of multi-level governance is determining which decis
 To determine the appropriate governance level for any decision, apply these sequential tests:
 
 1. **Externality Analysis**
-   - Does the issue create significant impacts (positive or negative) beyond the local community?
-   - Do local decisions on this matter affect other communities' ability to govern themselves?
-   - Example: Water usage from a shared river affects downstream communities, requiring regional coordination
+  - Does the issue create significant impacts (positive or negative) beyond the local community?
+  - Do local decisions on this matter affect other communities' ability to govern themselves?
+  - Example: Water usage from a shared river affects downstream communities, requiring regional coordination
 
 2. **Capability Assessment**
-   - Does the governance level have the resources, expertise, and capacity to address the issue effectively?
-   - Example: Climate change requires scientific and economic resources beyond what local communities possess
+  - Does the governance level have the resources, expertise, and capacity to address the issue effectively?
+  - Example: Climate change requires scientific and economic resources beyond what local communities possess
 
 3. **Subsidiarity Verification**
-   - Even if higher-level governance is possible, could the issue be effectively addressed at a lower level?
-   - The burden of proof lies with those advocating for higher-level governance
-   - Example: Public education frameworks might be global, but implementation should remain local
+  - Even if higher-level governance is possible, could the issue be effectively addressed at a lower level?
+  - The burden of proof lies with those advocating for higher-level governance
+  - Example: Public education frameworks might be global, but implementation should remain local
 
 #### Issue-Specific Guidance
 
@@ -133,7 +133,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)
 
 ### Tier 3: Equity, Culture & Future Generations
-- [Digital Commons](/framework/docs/implementation/digital) (Coming Soon)
+- [Digital Commons](/framework/docs/implementation/digital)
 - [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Planned)
 - [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
 - [Rural Development](/framework/docs/implementation/rural) (Planned)
@@ -156,40 +156,40 @@ Each domain implementation provides detailed guidance, tools, and case studies s
 A watershed spanning multiple communities demonstrates how the framework can be applied:
 
 1. **Decision Allocation Analysis**:
-   - Water usage affects all communities in the watershed → Regional issue
-   - Technical management requires coordination → Regional capability needed
-   - Implementation can be localized → Subsidiarity respected
+  - Water usage affects all communities in the watershed → Regional issue
+  - Technical management requires coordination → Regional capability needed
+  - Implementation can be localized → Subsidiarity respected
 
 2. **Implementation Structure**:
-   - Regional water council with representatives from all communities
-   - Local implementation of agreed standards
-   - Bioregional scope matching natural watershed boundaries
-   - Regular citizen forums to ensure participatory governance
+  - Regional water council with representatives from all communities
+  - Local implementation of agreed standards
+  - Bioregional scope matching natural watershed boundaries
+  - Regular citizen forums to ensure participatory governance
 
 3. **Integration Tools**:
-   - Water monitoring data shared in standardized format
-   - Joint decision-making protocol for allocation decisions
-   - Conflict resolution mechanism for disputes
-   - Regular review and adaptation process
+  - Water monitoring data shared in standardized format
+  - Joint decision-making protocol for allocation decisions
+  - Conflict resolution mechanism for disputes
+  - Regular review and adaptation process
 
 ### Digital Democracy Implementation: Participatory Budgeting
 
 Implementing direct participation through digital tools:
 
 1. **Multi-Channel Approach**:
-   - Digital platform for proposal submission and voting
-   - In-person deliberation sessions for those preferring non-digital participation
-   - Mixed digital-analog processes for inclusive participation
+  - Digital platform for proposal submission and voting
+  - In-person deliberation sessions for those preferring non-digital participation
+  - Mixed digital-analog processes for inclusive participation
 
 2. **Transparency Systems**:
-   - Real-time tracking of budget allocation
-   - Open data on all proposals and voting results
-   - Publicly auditable decision processes
+  - Real-time tracking of budget allocation
+  - Open data on all proposals and voting results
+  - Publicly auditable decision processes
 
 3. **Phased Implementation**:
-   - Begin with a percentage of discretionary budget
-   - Gradual increase in scope as capacity develops
-   - Regular review and adaptation cycles
+  - Begin with a percentage of discretionary budget
+  - Gradual increase in scope as capacity develops
+  - Regular review and adaptation cycles
 
 ## Common Implementation Challenges
 
@@ -223,28 +223,28 @@ Governance models must respect and adapt to cultural contexts:
 ## Getting Started: First Implementation Steps
 
 1. **Assess Your Context**:
-   - Map existing governance structures and relationships
-   - Identify key stakeholders and decision-makers
-   - Evaluate current challenges and needs
-   - Determine appropriate entry points for the framework
+  - Map existing governance structures and relationships
+  - Identify key stakeholders and decision-makers
+  - Evaluate current challenges and needs
+  - Determine appropriate entry points for the framework
 
 2. **Build Understanding**:
-   - Educate stakeholders about the framework principles
-   - Create a shared vision for improved governance
-   - Identify early adopters and champions
-   - Develop a common language for discussing governance
+  - Educate stakeholders about the framework principles
+  - Create a shared vision for improved governance
+  - Identify early adopters and champions
+  - Develop a common language for discussing governance
 
 3. **Start Small**:
-   - Select a specific challenge suitable for a pilot implementation
-   - Design a minimal viable implementation
-   - Collect feedback and measure outcomes
-   - Use lessons learned to refine approach
+  - Select a specific challenge suitable for a pilot implementation
+  - Design a minimal viable implementation
+  - Collect feedback and measure outcomes
+  - Use lessons learned to refine approach
 
 4. **Scale Gradually**:
-   - Expand successful elements to additional areas
-   - Connect with other implementation efforts
-   - Build formal structures as trust develops
-   - Document and share your implementation journey
+  - Expand successful elements to additional areas
+  - Connect with other implementation efforts
+  - Build formal structures as trust develops
+  - Document and share your implementation journey
 
 The implementation of the framework is itself a governance process that should follow the principles it promotes: transparent, participatory, adaptable, and respectful of context.
 

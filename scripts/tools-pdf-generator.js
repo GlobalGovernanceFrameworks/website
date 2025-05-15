@@ -1,6 +1,7 @@
 // tools-pdf-generator.js
 // Generates PDFs for all education framework tools and quick-start guides
 // Installation: npm install puppeteer marked
+// Example run: node scripts/generate-pdfs.js --framework=economic
 
 import fs from 'fs';
 import path from 'path';
@@ -24,6 +25,7 @@ Available categories:
 - energy
 - peace
 - economic
+- digital
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -43,6 +45,7 @@ const outputDirs = {
   'energy': path.join(__dirname, '..', 'static', 'framework', 'tools', 'energy'),
   'peace': path.join(__dirname, '..', 'static', 'framework', 'tools', 'peace'),
   'economic': path.join(__dirname, '..', 'static', 'framework', 'tools', 'economic'),
+  'digital': path.join(__dirname, '..', 'static', 'framework', 'tools', 'digital'),
 };
 
 // Validate category if provided
@@ -1894,6 +1897,613 @@ const tools = [
     pageFooter: {
       en: 'Sample Audit Report Template - Page ',
       sv: 'Exempel på mall för revisionsrapport - Sida '
+    }
+  },
+  // Digital Commons Framework - Main Guides
+  {
+    name: 'technical-guide',
+    category: 'digital',
+    fileNames: {
+      en: 'technical-guide-en',
+      sv: 'technical-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Technical Guide for Policymakers: Digital Commons Framework - Page ',
+      sv: 'Teknisk guide för beslutsfattare: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'community-guide',
+    category: 'digital',
+    fileNames: {
+      en: 'community-guide-en',
+      sv: 'community-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Community Implementation Guide: Digital Commons Framework - Page ',
+      sv: 'Samhällsguide för implementering: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'youth-guide',
+    category: 'digital',
+    fileNames: {
+      en: 'youth-guide-en',
+      sv: 'youth-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Youth Engagement Guide: Digital Commons Framework - Page ',
+      sv: 'Engagemangsguide för ungdomar: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'digital-ethics-guide',
+    category: 'digital',
+    fileNames: {
+      en: 'digital-ethics-guide-en',
+      sv: 'digital-ethics-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Digital Ethics Guide: Digital Commons Framework - Page ',
+      sv: 'Digital etikguide: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'indigenous-guide',
+    category: 'digital',
+    fileNames: {
+      en: 'indigenous-guide-en',
+      sv: 'indigenous-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Indigenous Data Stewardship Guide: Digital Commons Framework - Page ',
+      sv: 'Förvaltningsguide för urfolksdata: Digital Commons-ramverket - Sida '
+    }
+  },
+
+  // Digital Commons Framework - Core Governance Tools
+  {
+    name: 'node-setup-guide',
+    category: 'digital',
+    fileNames: {
+      en: 'node-setup-guide-en',
+      sv: 'node-setup-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+    },
+    pageFooter: {
+      en: 'Node Setup Guide: Digital Commons Framework - Page ',
+      sv: 'Guide för nodinställning: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'sms-voting-template',
+    category: 'digital',
+    fileNames: {
+      en: 'sms-voting-template-en',
+      sv: 'sms-voting-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+    },
+    pageFooter: {
+      en: 'SMS Voting Template: Digital Commons Framework - Page ',
+      sv: 'SMS röstmall: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'data-sovereignty-protocol',
+    category: 'digital',
+    fileNames: {
+      en: 'data-sovereignty-protocol-en',
+      sv: 'data-sovereignty-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+    },
+    pageFooter: {
+      en: 'Data Sovereignty Protocol: Digital Commons Framework - Page ',
+      sv: 'Datsuveränitetsprotokoll: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'ethical-ai-audit-checklist',
+    category: 'digital',
+    fileNames: {
+      en: 'ethical-ai-audit-checklist-en',
+      sv: 'ethical-ai-audit-checklist-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+    },
+    pageFooter: {
+      en: 'Ethical AI Audit Checklist: Digital Commons Framework - Page ',
+      sv: 'Etisk AI-granskningschecklista: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'glossary',
+    category: 'digital',
+    fileNames: {
+      en: 'glossary-en',
+      sv: 'glossary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+    },
+    pageFooter: {
+      en: 'Commons Glossary: Digital Commons Framework - Page ',
+      sv: 'Allmänningsordlista: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'failure-analysis-report-template',
+    category: 'digital',
+    fileNames: {
+      en: 'failure-analysis-report-template-en',
+      sv: 'failure-analysis-report-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+    },
+    pageFooter: {
+      en: 'Failure Analysis Report Template: Digital Commons Framework - Page ',
+      sv: 'Mall för felhändelsanalys: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'impact-assessment-template',
+    category: 'digital',
+    fileNames: {
+      en: 'impact-assessment-template-en',
+      sv: 'impact-assessment-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+    },
+    pageFooter: {
+      en: 'Impact Assessment Template: Digital Commons Framework - Page ',
+      sv: 'Mall för konsekvensanalys: Digital Commons-ramverket - Sida '
+    }
+  },
+
+  // Digital Commons Framework - Context-Specific Implementation Guides
+  {
+    name: 'commons-in-practice-documentation',
+    category: 'digital',
+    fileNames: {
+      en: 'commons-in-practice-documentation-en',
+      sv: 'commons-in-practice-documentation-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+    },
+    pageFooter: {
+      en: 'Digital Commons in Practice Documentation - Page ',
+      sv: 'Dokumentation om digitala allmänna villkor i praktiken - Sida '
+    }
+  },
+  {
+    name: 'rural-digital-commons-toolkit',
+    category: 'digital',
+    fileNames: {
+      en: 'rural-digital-commons-toolkit-en',
+      sv: 'rural-digital-commons-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+    },
+    pageFooter: {
+      en: 'Rural Digital Commons Toolkit: Digital Commons Framework - Page ',
+      sv: 'Verktygslåda för landsortens digitala allmänningar: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'urban-digital-commons-guide',
+    category: 'digital',
+    fileNames: {
+      en: 'urban-digital-commons-guide-en',
+      sv: 'urban-digital-commons-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+    },
+    pageFooter: {
+      en: 'Urban Digital Commons Guide: Digital Commons Framework - Page ',
+      sv: 'Guide för urbana digitala allmänningar: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'disaster-resilient-commons-protocol',
+    category: 'digital',
+    fileNames: {
+      en: 'disaster-resilient-commons-protocol-en',
+      sv: 'disaster-resilient-commons-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+    },
+    pageFooter: {
+      en: 'Disaster-Resilient Commons Protocol: Digital Commons Framework - Page ',
+      sv: 'Katastrofmotståndskraftigt allmänningsprotokoll: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'global-commons-governance-framework',
+    category: 'digital',
+    fileNames: {
+      en: 'global-commons-governance-framework-en',
+      sv: 'global-commons-governance-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+    },
+    pageFooter: {
+      en: 'Global Commons Governance Framework: Digital Commons Framework - Page ',
+      sv: 'Globalt styrsystem för allmänningar: Digital Commons-ramverket - Sida '
+    }
+  },
+
+  // Digital Commons Framework - Advocacy & Scaling Tools
+  {
+    name: 'digital-commons-advocacy-toolkit',
+    category: 'digital',
+    fileNames: {
+      en: 'digital-commons-advocacy-toolkit-en',
+      sv: 'digital-commons-advocacy-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'advocacy-and-scaling'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'advocacy-and-scaling')
+    },
+    pageFooter: {
+      en: 'Digital Commons Advocacy Toolkit: Digital Commons Framework - Page ',
+      sv: 'Verktygslåda för förespråkande av digitala allmänningar: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'funding-navigator',
+    category: 'digital',
+    fileNames: {
+      en: 'funding-navigator-en',
+      sv: 'funding-navigator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'advocacy-and-scaling'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'advocacy-and-scaling')
+    },
+    pageFooter: {
+      en: 'Funding Navigator: Digital Commons Framework - Page ',
+      sv: 'Finansieringsnavigator: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'ppp-template',
+    category: 'digital',
+    fileNames: {
+      en: 'ppp-template-en',
+      sv: 'ppp-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'advocacy-and-scaling'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'advocacy-and-scaling')
+    },
+    pageFooter: {
+      en: 'Public-Private Partnership Template: Digital Commons Framework - Page ',
+      sv: 'Mall för offentlig-privat partnerskap: Digital Commons-ramverket - Sida '
+    }
+  },
+
+  // Digital Commons Framework - Low-Resource Tools
+  {
+    name: 'community-funding-guide',
+    category: 'digital',
+    fileNames: {
+      en: 'community-funding-guide-en',
+      sv: 'community-funding-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'low-resource'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'low-resource')
+    },
+    pageFooter: {
+      en: 'Community Funding Guide: Digital Commons Framework - Page ',
+      sv: 'Guide för samhällsfinansiering: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'resource-mapping-tool',
+    category: 'digital',
+    fileNames: {
+      en: 'resource-mapping-tool-en',
+      sv: 'resource-mapping-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'low-resource'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'low-resource')
+    },
+    pageFooter: {
+      en: 'Resource Mapping Tool: Digital Commons Framework - Page ',
+      sv: 'Verktyg för resurskartering: Digital Commons-ramverket - Sida '
+    }
+  },
+
+  // Digital Commons Framework - Audit Tools
+  {
+    name: 'audit-report-template',
+    category: 'digital',
+    fileNames: {
+      en: 'audit-report-template-en',
+      sv: 'audit-report-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'audit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'audit')
+    },
+    pageFooter: {
+      en: 'Audit Report Template: Digital Commons Framework - Page ',
+      sv: 'Mall för granskningsrapport: Digital Commons-ramverket - Sida '
+    }
+  },
+
+  // Digital Commons Framework - Appendices (for the seed kit)
+  {
+    name: 'appendix-b-visual-companion-toolkit',
+    category: 'digital',
+    fileNames: {
+      en: 'visual-companion-toolkit-en',
+      sv: 'visual-companion-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Appendix B: Visual Companion Toolkit - Digital Commons Framework - Page ',
+      sv: 'Bilaga B: Visuellt Följeslagarverktyg - Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'appendix-c-corporate-participation-playbook',
+    category: 'digital',
+    fileNames: {
+      en: 'corporate-participation-playbook-en',
+      sv: 'corporate-participation-playbook-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Appendix C: Corporate Participation Playbook - Digital Commons Framework - Page ',
+      sv: 'Bilaga C: Spelbok för Företagsdeltagande - Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'appendix-d-digital-ethics-charter',
+    category: 'digital',
+    fileNames: {
+      en: 'digital-ethics-charter-en',
+      sv: 'digital-ethics-charter-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Appendix D: Digital Ethics Charter - Digital Commons Framework - Page ',
+      sv: 'Bilaga D: Digital Etikstadga - Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'appendix-e-commons-glossary',
+    category: 'digital',
+    fileNames: {
+      en: 'commons-glossary-en',
+      sv: 'commons-glossary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Appendix E: Commons Glossary - Digital Commons Framework - Page ',
+      sv: 'Bilaga E: Commons-ordlista - Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'appendix-f-minimal-viable-node-quickstart',
+    category: 'digital',
+    fileNames: {
+      en: 'minimal-viable-node-quickstart-en',
+      sv: 'minimal-viable-node-quickstart-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Appendix F: Minimal-Viable Node Quickstart - Digital Commons Framework - Page ',
+      sv: 'Bilaga F: Minimal-Genomförbar Nodsnabbstart - Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'appendix-g-field-test-logbook-template',
+    category: 'digital',
+    fileNames: {
+      en: 'field-test-logbook-template-en',
+      sv: 'field-test-logbook-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Appendix G: Field-Test Logbook Template - Digital Commons Framework - Page ',
+      sv: 'Bilaga G: Mall för Fälttestloggbok - Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'appendix-i-diplomatic-mini-deck',
+    category: 'digital',
+    fileNames: {
+      en: 'diplomatic-mini-deck-en',
+      sv: 'diplomatic-mini-deck-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Appendix I: Diplomatic Mini Deck - Digital Commons Framework - Page ',
+      sv: 'Bilaga I: Diplomatiskt Mini-Däck - Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'appendix-j-historical-commons-context',
+    category: 'digital',
+    fileNames: {
+      en: 'historical-commons-context-en',
+      sv: 'historical-commons-context-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Appendix J: Historical Commons Context - Digital Commons Framework - Page ',
+      sv: 'Bilaga J: Historisk Allmänningskontext - Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'appendix-k-impact-assessment-framework',
+    category: 'digital',
+    fileNames: {
+      en: 'impact-assessment-framework-en',
+      sv: 'impact-assessment-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Appendix K: Impact Assessment Framework - Digital Commons Framework - Page ',
+      sv: 'Bilaga K: Ramverk för Konsekvensanalys - Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'how-to-use-the-digital-commons-seed-kit',
+    category: 'digital',
+    fileNames: {
+      en: 'how-to-use-the-digital-commons-seed-kit-en',
+      sv: 'how-to-use-the-digital-commons-seed-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'How to Use the Digital Commons Seed Kit - Page ',
+      sv: 'Så här använder du Digital Commons Seed Kit - Sida '
+    }
+  },
+
+  // Digital Commons Framework - Digital Tools
+  {
+    name: 'governance-simulator-app',
+    category: 'digital',
+    fileNames: {
+      en: 'governance-simulator-app-en',
+      sv: 'governance-simulator-app-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
+    },
+    pageFooter: {
+      en: 'Governance Simulator App Documentation - Page ',
+      sv: 'Dokumentation för appen Governance Simulator - Sida '
+    }
+  },
+  {
+    name: 'ai-chatbot',
+    category: 'digital',
+    fileNames: {
+      en: 'ai-chatbot-en',
+      sv: 'ai-chatbot-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
+    },
+    pageFooter: {
+      en: 'AI Chatbot for Tool Navigation Documentation - Page ',
+      sv: 'Dokumentation för verktygsnavigerings-AI-chatbot - Sida '
+    }
+  },
+  {
+    name: 'collaboration-platform',
+    category: 'digital',
+    fileNames: {
+      en: 'collaboration-platform-en',
+      sv: 'collaboration-platform-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
+    },
+    pageFooter: {
+      en: 'Real-Time Collaboration Platform Documentation - Page ',
+      sv: 'Dokumentation för plattform för samarbete i realtid - Sida '
+    }
+  },
+  {
+    name: 'health-dashboard',
+    category: 'digital',
+    fileNames: {
+      en: 'health-dashboard-en',
+      sv: 'health-dashboard-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
+    },
+    pageFooter: {
+      en: 'Digital Commons Health Dashboard Documentation - Page ',
+      sv: 'Dokumentation av Digital Commons Health Dashboard - Sida '
     }
   }
 ];

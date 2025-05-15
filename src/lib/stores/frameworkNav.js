@@ -46,13 +46,13 @@ const initialNav = [
         titleKey: 'framework.docs.nav.implementationTier3',
         path: '/framework/docs/implementation/tier-3',
         subItems: [
-          { titleKey: 'framework.docs.nav.implementationDigital', path: '/framework/docs/implementation/digital', comingSoon: true },
+          { titleKey: 'framework.docs.nav.implementationDigital', path: '/framework/docs/implementation/digital', status: 'ready'},
           { titleKey: 'framework.docs.nav.implementationBiodiversity', path: '/framework/docs/implementation/biodiversity', planned: true },
           { titleKey: 'framework.docs.nav.implementationCulture', path: '/framework/docs/implementation/culture', planned: true },
           { titleKey: 'framework.docs.nav.implementationRural', path: '/framework/docs/implementation/rural', planned: true },
-          { titleKey: 'framework.docs.nav.implementationSpiritual', path: '/framework/docs/implementation/spiritual', status: 'ready' },
+          { titleKey: 'framework.docs.nav.implementationSpiritual', path: '/framework/docs/implementation/spiritual', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationYouthGovernance', path: '/framework/docs/implementation/youth', planned: true },
-          { titleKey: 'framework.docs.nav.implementationEthicsRights', path: '/framework/docs/implementation/ethics', status: 'ready' }
+          { titleKey: 'framework.docs.nav.implementationEthicsRights', path: '/framework/docs/implementation/ethics', status: 'review' }
         ]
       },
       {
@@ -67,7 +67,11 @@ const initialNav = [
       }
     ]
   },
+  { titleKey: 'framework.docs.nav.regionalHubs', path: '/framework/hubs' },
+  { titleKey: 'framework.docs.nav.implementationTools', path: '/framework/tools' },
+  { titleKey: 'framework.docs.nav.visualizations', path: '/framework/visuals' },
   { titleKey: 'framework.docs.nav.case-studies', path: '/framework/docs/case-studies' },
+  { titleKey: 'framework.docs.nav.ai-futures', path: '/framework/ai-futures' },
   { titleKey: 'framework.docs.nav.resources', path: '/framework/docs/resources' },
   { titleKey: 'framework.docs.nav.glossary', path: '/framework/docs/glossary' },
 ];

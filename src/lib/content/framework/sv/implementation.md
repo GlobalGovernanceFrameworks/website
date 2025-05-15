@@ -133,7 +133,7 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 - [Arbetsmarknad & sysselsättning](/framework/docs/implementation/labor) (Planerad)
 
 ### Nivå 3: Jämlikhet, kultur & framtida generationer
-- [Digitala allmänningar](/framework/docs/implementation/digital) (Kommer snart)
+- [Digitala allmänningar](/framework/docs/implementation/digital)
 - [Biologisk mångfald](/framework/docs/implementation/biodiversity) (Planerad)
 - [Bevarande av kulturarv](/framework/docs/implementation/culture) (Planerad)
 - [Landsbygdsutveckling](/framework/docs/implementation/rural) (Planerad)

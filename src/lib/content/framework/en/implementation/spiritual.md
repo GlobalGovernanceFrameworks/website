@@ -4,6 +4,7 @@
 
 #### **1. Introduction**
 #### **2. Core Principles**
+#### **3. Objectives**
 #### **4. Governance Structure**
 #### **5. Implementation Mechanisms**
 #### **6. Key Activities**
@@ -1187,7 +1188,7 @@ These challenges and mitigation strategies demonstrate the framework's commitmen
 
 The implementation of the Religious & Spiritual Dialogue Framework follows a phased approach that balances ambitious goals with practical realities. This timeline outlines key milestones and activities over a five-year initial period, with contingency paths for adapting to various challenges.
 
-### Year 1 (2025): Foundation Building
+### Year 1 (2026): Foundation Building
 
 #### Quarter 1: Preparatory Phase
 - Establish core secretariat team (5-7 staff)
@@ -1221,7 +1222,7 @@ The implementation of the Religious & Spiritual Dialogue Framework follows a pha
 
 **Key Milestone**: By end of Year 1, the framework has established its core governance structures, launched three pilot Regional Hubs, and conducted its first Global Summit with diverse representation.
 
-### Year 2 (2026): Expansion & Integration
+### Year 2 (2027): Expansion & Integration
 
 #### Quarter 1: Programmatic Development
 - Launch additional working groups on Climate Action and Intergenerational Dialogue
@@ -1255,7 +1256,7 @@ The implementation of the Religious & Spiritual Dialogue Framework follows a pha
 
 **Key Milestone**: By end of Year 2, the framework has doubled its Regional Hub network, established a comprehensive digital infrastructure, and completed its first formal evaluation cycle.
 
-### Year 3 (2027): Deepening Impact
+### Year 3 (2028): Deepening Impact
 
 #### Quarter 1: Ethics Charter Finalization
 - Complete draft Ethics Charter through collaborative process
@@ -1290,7 +1291,7 @@ The implementation of the Religious & Spiritual Dialogue Framework follows a pha
 
 **Key Milestone**: By end of Year 3, the framework has completed its planned hub network, finalized its Ethics Charter, and scaled successful initiatives across multiple regions.
 
-### Year 4 (2028): Integration & Influence
+### Year 4 (2029): Integration & Influence
 
 #### Quarter 1: Policy Integration Focus
 - Establish formal relationships with 10+ governance domains
@@ -1322,7 +1323,7 @@ The implementation of the Religious & Spiritual Dialogue Framework follows a pha
 
 **Key Milestone**: By end of Year 4, the framework has established significant policy influence, developed a comprehensive knowledge repository, and ensured financial sustainability.
 
-### Year 5 (2029): Formalization & Strategic Planning
+### Year 5 (2030): Formalization & Strategic Planning
 
 #### Quarter 1: Structure Formalization
 - Review and formalize GCRSD structure

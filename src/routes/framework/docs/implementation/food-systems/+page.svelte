@@ -630,8 +630,8 @@
     color: #4caf50; /* Lighter green for nested bullets */
   }
 
-  /* Table styles for markdown content with food system theme */
-  :global(.content table) {
+  /* Replace your current table styles with this */
+  .content :global(table) {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
@@ -641,11 +641,12 @@
     overflow: hidden;
   }
 
-  :global(.content thead) {
-    background: linear-gradient(to right, #2e7d32, #4caf50);
+  .content :global(thead) {
+    background-color: #2e7d32; /* Green background for headers */
+    color: #ffffff; /* White text */
   }
 
-  :global(.content th) {
+  .content :global(th) {
     padding: 0.75rem 1rem;
     font-weight: 600;
     text-align: left;
@@ -654,7 +655,7 @@
     border-bottom: 2px solid #2e7d32;
   }
 
-  :global(.content td) {
+  .content :global(td) {
     padding: 0.75rem 1rem;
     border: 1px solid #e5e7eb;
     border-left: none;
@@ -662,25 +663,25 @@
     vertical-align: top;
   }
 
-  :global(.content tr:nth-child(odd)) {
+  .content :global(tr:nth-child(odd)) {
     background-color: #f8f9fc;
   }
 
-  :global(.content tr:nth-child(even)) {
+  .content :global(tr:nth-child(even)) {
     background-color: #ffffff;
   }
 
-  :global(.content tr:hover) {
+  .content :global(tr:hover) {
     background-color: #f1f8e9; /* Light green background on hover */
   }
 
-  :global(.content tbody tr:last-child td) {
+  .content :global(tbody tr:last-child td) {
     border-bottom: none;
   }
 
   /* Table caption or footer */
-  :global(.content table caption),
-  :global(.content table tfoot) {
+  .content :global(table caption),
+  .content :global(table tfoot) {
     background-color: #e9f7e9; /* Light earthy green */
     padding: 0.75rem;
     font-size: 0.875rem;
@@ -690,20 +691,20 @@
   }
 
   /* Highlight important cells */
-  :global(.content td.highlight) {
+  .content :global(td.highlight) {
     color: #2e7d32; /* Green text */
     font-weight: 600;
   }
 
   /* For responsive tables on small screens */
   @media (max-width: 640px) {
-    :global(.content table) {
+    .content :global(table) {
       display: block;
       overflow-x: auto;
     }
     
-    :global(.content th),
-    :global(.content td) {
+    .content :global(th),
+    .content :global(td) {
       white-space: nowrap;
     }
   }
