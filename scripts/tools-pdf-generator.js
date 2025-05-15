@@ -1,7 +1,6 @@
 // tools-pdf-generator.js
 // Generates PDFs for all education framework tools and quick-start guides
 // Installation: npm install puppeteer marked
-// Example run: node scripts/generate-pdfs.js --framework=economic
 
 import fs from 'fs';
 import path from 'path';

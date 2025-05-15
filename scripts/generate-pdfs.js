@@ -1,4 +1,6 @@
 // scripts/generate-pdfs.js
+//
+// Example run: node scripts/generate-pdfs.js --framework=economic
 import puppeteer from 'puppeteer';
 import fs from 'fs-extra';
 import path from 'path';
@@ -50,7 +52,7 @@ const documents = [
   { path: '/framework/docs/implementation/energy', filename: 'Climate-Energy-Governance.pdf', titleKey: 'Climate & Energy Governance', format: 'single' },
   { path: '/framework/docs/implementation/consciousness', filename: 'Consciousness-Inner-Development.pdf', titleKey: 'Consciousness & Inner Development', format: 'modular' },
   { path: '/framework/docs/implementation/culture', filename: 'Cultural-Heritage.pdf', titleKey: 'Cultural Heritage Preservation', format: 'modular' },
-  { path: '/framework/docs/implementation/digital', filename: 'Digital-Commons.pdf', titleKey: 'Digital Commons', format: 'modular' },
+  { path: '/framework/docs/implementation/digital', filename: 'Digital-Commons-Framework.pdf', titleKey: 'Digital Commons', format: 'modular' },
   { path: '/framework/docs/implementation/disaster', filename: 'Disaster-Resilience.pdf', titleKey: 'Disaster Risk Reduction & Resilience', format: 'modular' },
   { path: '/framework/docs/implementation/economic', filename: 'Economic-Integration.pdf', titleKey: 'Economic Integration', format: 'single' },
   { path: '/framework/docs/implementation/education', filename: 'Educational-Systems.pdf', titleKey: 'Educational Systems', format: 'modular' },
