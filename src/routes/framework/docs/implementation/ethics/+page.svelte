@@ -10,8 +10,64 @@
 
   export let data;
 
+  // Enhanced print mode handling
+  $: if (isPrintMode) {
+    // Immediately show all sections when in print mode
+    sectionsToShow = data.availableSections[currentLevel];
+    
+    // Make sure all content is visible
+    if (browser) {
+      setTimeout(() => {
+        const sections = document.querySelectorAll('.section-content');
+        sections.forEach(section => {
+          section.style.display = 'block';
+          section.style.visibility = 'visible';
+          section.style.opacity = '1';
+          section.style.height = 'auto';
+        });
+      }, 1000);
+    }
+  }
+
   // Keep track of which section is active
   let activeSection = 'index';
+
+  // Add a new state variable to track the currently selected guide
+  let selectedGuide = null;
+
+  // Function to select a guide and display its content
+  function selectGuide(guide) {
+    if (guide && data.sections[guide] && (data.sections[guide][currentLevel] || data.sections[guide]['standard'])) {
+      selectedGuide = guide;
+      // If we have the guide at the current level, use that; otherwise fall back to standard
+      selectedGuideContent = data.sections[guide][currentLevel] || data.sections[guide]['standard'];
+    } else {
+      selectedGuide = null;
+      selectedGuideContent = null;
+    }
+  }
+
+  // Track the content of the selected guide
+  let selectedGuideContent = null;
+
+  // Map of guide IDs to display info
+  const guides = {
+    'youth-guide': { emoji: '🌱', title: 'Youth Guide', description: 'Framework concepts for young changemakers' },
+    'community-guide': { emoji: '🏘️', title: 'Community Guide', description: 'Implementing the framework in local communities' },
+    'policy-guide': { emoji: '📑', title: 'Policy Guide', description: 'For policymakers and government officials' },
+    'educators-guide': { emoji: '🎓', title: 'Educators Guide', description: 'Teaching framework concepts in educational settings' },
+    'crisis-guide': { emoji: '🚨', title: 'Crisis Situations Guide', description: 'Ethical decision-making during emergencies' },
+    'indigenous-communities-guide': { emoji: '🌎', title: 'Indigenous Communities Guide', description: 'Framework implementation respecting Indigenous knowledge' },
+    'religious-communities-guide': { emoji: '🕊️', title: 'Religious Communities Guide', description: 'Framework alignment with faith traditions' }
+  };
+
+  // Get available guides from the loaded content
+  $: availableGuides = Object.keys(guides).filter(guide => 
+    data.sections[guide] && (data.sections[guide][currentLevel] || data.sections[guide]['standard'])
+  );
+
+  // Check if there are any guides available
+  $: hasGuides = availableGuides.length > 0;
   
   // Add support for accessibility level selection
   $: currentLevel = data.currentLevel || 'standard';
@@ -388,7 +444,7 @@
           {getLevelDescription(currentLevel)}
         </div>
       </div>
-            
+
       <!-- Show Access Guide if available -->
       {#if showAccessGuide}
         <div class="access-guide-banner">
@@ -400,6 +456,53 @@
             </button>
           </div>
         </div>
+      {/if}
+    {/if}
+
+    {#if !isPrintMode}
+      <!-- Guides Selector - Only show if guides are available -->
+      {#if hasGuides}
+        <div class="guides-selector">
+          <h3>Specialized Framework Guides</h3>
+          <div class="dropdown">
+            <button class="guides-dropdown-btn">
+              <span>🧭 {selectedGuide ? guides[selectedGuide].title : 'Select a Guide'}</span>
+              <span class="arrow-icon">▾</span>
+            </button>
+            <div class="guides-dropdown-menu">
+              {#each availableGuides as guide}
+                <button 
+                  class="guide-link" 
+                  on:click={() => selectGuide(guide)}
+                  class:active={selectedGuide === guide}
+                >
+                  <span class="guide-icon">{guides[guide].emoji}</span> 
+                  {guides[guide].title}
+                </button>
+              {/each}
+            </div>
+          </div>
+          <div class="guides-description">
+            {selectedGuide 
+              ? guides[selectedGuide].description 
+              : 'Specialized versions of the framework tailored for different audiences and contexts'}
+          </div>
+        </div>
+
+        <!-- Guide Content Display Area -->
+        {#if selectedGuide && selectedGuideContent}
+          <div class="guide-content">
+            <div class="guide-header">
+              <h2>{guides[selectedGuide].emoji} {guides[selectedGuide].title}</h2>
+              <button class="close-guide-btn" on:click={() => selectGuide(null)}>
+                ✕
+              </button>
+            </div>
+            <div class="guide-body">
+              <svelte:component this={selectedGuideContent.default} />
+            </div>
+          </div>
+        {/if}
       {/if}
     {/if}
 
@@ -1103,7 +1206,166 @@
     border-radius: 3px;
     opacity: 0.8;
   }
-  
+
+  /* Guides Selector */
+  .guides-selector {
+    background-color: #f0fdf4;
+    border: 1px solid #22c55e;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(34, 197, 94, 0.1);
+  }
+
+  .guides-selector h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #166534;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  /* Add a pseudo-element to create a "bridge" between the button and dropdown */
+  .dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Bridge height - adjust as needed */
+    background-color: transparent;
+    z-index: 900;
+  }
+
+  .guides-dropdown-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 250px;
+    padding: 0.75rem 1.25rem;
+    background-color: white;
+    border: 1px solid #16a34a;
+    border-radius: 0.375rem;
+    color: #166534;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .guides-dropdown-btn:hover {
+    background-color: #d1fae5;
+  }
+
+  .guides-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 250px;
+    padding: 0.5rem 0;
+    background-color: white;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdown:hover .guides-dropdown-menu {
+    display: block;
+  }
+
+  .guide-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+    color: #1f2937;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .guide-link:hover {
+    background-color: #f0fdf4;
+    color: #16a34a;
+  }
+
+  .guide-link.active {
+    background-color: #16a34a;
+    color: white;
+  }
+
+  .guide-icon {
+    font-size: 1.25rem;
+  }
+
+  .guides-description {
+    font-size: 0.875rem;
+    color: #1f2937;
+    line-height: 1.5;
+    padding: 0.5rem;
+    background-color: #ecfdf5;
+    border-radius: 0.375rem;
+  }
+
+  /* Guide Content Styles */
+  .guide-content {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .guide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .guide-header h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #166534;
+    margin: 0;
+  }
+
+  .close-guide-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #f0fdf4;
+    color: #166534;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .close-guide-btn:hover {
+    background-color: #dcfce7;
+  }
+
+  .guide-body {
+    line-height: 1.7;
+  }
+    
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .section-header {
@@ -1152,30 +1414,50 @@
       width: 100%;
       text-align: left;
     }
+
+    .guides-dropdown-btn {
+      width: 100%;
+    }
+    
+    .guides-dropdown-menu {
+      width: 100%;
+    }
   }
   
   /* Print mode adjustments */
   @media print {
-    .documentation-container {
-      display: block;
-      max-width: none;
-      padding: 0;
+    /* Force all content to be visible */
+    body * {
+      visibility: visible !important;
+      opacity: 1 !important;
+      display: block !important;
     }
     
-    .level-selector,
-    .access-guide-banner,
-    .section-nav,
-    .layer-navigation {
-      display: none;
+    /* Hide navigation and interactive elements */
+    .level-selector, .section-nav, .guides-selector,
+    .dropdown, .dropdown-menu, .dropdown-li,
+    .close-guide-btn, .layer-navigation {
+      display: none !important;
     }
     
+    /* Ensure proper spacing for print */
     .section-content {
       page-break-inside: avoid;
       page-break-after: always;
+      margin-bottom: 2cm !important;
     }
     
-    .section-header h2 {
-      font-size: 1.5rem;
+    /* Adjust header sizes for print */
+    h1 { font-size: 24pt !important; }
+    h2 { font-size: 18pt !important; }
+    h3 { font-size: 14pt !important; }
+    
+    /* Ensure proper link display */
+    a::after {
+      content: " (" attr(href) ")";
+      font-size: 80%;
+      font-weight: normal;
+      color: #666;
     }
   }
 </style>

@@ -2,25 +2,37 @@
 import { locale } from '$lib/i18n';
 import { get } from 'svelte/store';
 
+export const prerender = false;
 export const csr = true;
 
-export async function load({ depends, url }) {
+export async function load({ depends, url, platform }) {
   // Declare dependency on locale
   depends('app:locale');
   
   const currentLocale = get(locale);
   
-  // Safe check for print mode that works during prerendering
-  const isPrintMode = import.meta.env.SSR ? false : url.searchParams.get('print') === 'true';
+  // Safe handling of URL parameters during prerendering
+  let isPrintMode = false;
+  let accessibilityLevel = 'standard';
   
-  // Get the accessibility level from the URL if present
-  const accessibilityLevel = url.searchParams.get('level') || 'standard';
+  // Only try to access searchParams when not prerendering
+  if (typeof url.searchParams !== 'undefined') {
+    isPrintMode = url.searchParams.get('print') === 'true';
+    accessibilityLevel = url.searchParams.get('level') || 'standard';
+  }
   
   // Define the available accessibility levels
   const accessibilityLevels = ['visual', 'essential', 'standard', 'technical'];
   
   // Validate the level
   const level = accessibilityLevels.includes(accessibilityLevel) ? accessibilityLevel : 'standard';
+  
+  // When loading sections, ensure print mode gets all content
+  if (isPrintMode) {
+    // You might want to force a specific level for print
+    level = 'standard'; // or another level that has all content
+    // Proceed with loading all sections for this level
+  }  
   
   // Define sections to load - all framework sections
   const sections = [
@@ -98,10 +110,18 @@ export async function load({ depends, url }) {
   // Additional files that may be present
   const additionalFiles = [
     'index',
-    'access-guide',
+    'access-guide'
+  ];
+  
+  // Guide files (directly in the implementation/ethics folder)
+  const guideFiles = [
     'youth-guide',
-    'technical-guide',
-    'community-guide'
+    'educators-guide',
+    'community-guide',
+    'crisis-guide',
+    'policy-guide',
+    'indigenous-communities-guide',
+    'religious-communities-guide'
   ];
   
   // Combine all possible files
@@ -139,6 +159,28 @@ export async function load({ depends, url }) {
           } catch (e2) {
             // Section not available at this level, which is expected for many sections
           }
+        }
+      }
+    }
+    
+    // Load guide files directly from the main folder (not in level-specific folders)
+    for (const guide of guideFiles) {
+      content[guide] = {};
+      
+      try {
+        // Try to load the current locale version
+        const module = await import(`$lib/content/framework/${currentLocale}/implementation/ethics/${guide}.md`);
+        content[guide]['standard'] = module; // Store in 'standard' level for simplicity
+        isModular = true;
+      } catch (e) {
+        // Fall back to English if translation isn't available
+        try {
+          const module = await import(`$lib/content/framework/en/implementation/ethics/${guide}.md`);
+          content[guide]['standard'] = module; // Store in 'standard' level for simplicity
+          isModular = true;
+        } catch (e2) {
+          // Guide not available, which is okay
+          console.log(`Guide not found: ${guide}`);
         }
       }
     }

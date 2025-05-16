@@ -161,18 +161,6 @@ async function generatePDF(url, outputPath, title, language, format = 'single') 
   try {
     const page = await browser.newPage();
     
-    // Block unnecessary resources
-    await page.setRequestInterception(true);
-    page.on('request', (req) => {
-      if (req.resourceType() === 'image' || 
-          req.resourceType() === 'font' ||
-          req.resourceType() === 'stylesheet') {
-        req.abort();
-      } else {
-        req.continue();
-      }
-    });
-
     // Set language in browser
     await page.setExtraHTTPHeaders({
       'Accept-Language': language
@@ -194,30 +182,6 @@ async function generatePDF(url, outputPath, title, language, format = 'single') 
     
     // Use delay instead of waitForTimeout
     await new Promise(resolve => setTimeout(resolve, 6000));
-
-    // Remove SvelteKit dev code
-    await page.evaluate(() => {
-      // Remove script tags that might contain dev code
-      document.querySelectorAll('script').forEach(script => {
-        if (script.textContent.includes('__sveltekit_dev') || 
-            script.textContent.includes('start(app,')) {
-          script.remove();
-        }
-      });
-      
-      // Remove footer and navigation elements
-      const elementsToRemove = [
-        'footer',
-        'nav',
-        '.navigation',
-        '.site-footer',
-        '.legal-links'
-      ];
-      
-      elementsToRemove.forEach(selector => {
-        document.querySelectorAll(selector).forEach(el => el.remove());
-      });
-    });
     
     // Set locale via browser
     await page.evaluate((lang) => {

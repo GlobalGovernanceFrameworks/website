@@ -87,6 +87,10 @@
     "foodSystems": {
       "title": "Livsmedelssystem och jordbruk",
       "description": "Riktlinjer för hållbara, rättvisa och motståndskraftiga livsmedelssystem som säkerställer livsmedelstrygghet, landsbygdsutveckling och ekologisk hälsa från lokal till global nivå."
+    },
+    "ethics": {
+      "title": "Globalt ramverk för etik och väsens rättigheter",
+      "description": "Ett omfattande ramverk för att erkänna och skydda rättigheter för alla väsen—mänskliga, djur, ekologiska och teknologiska—med praktisk implementeringsvägledning, medvetandebedömningsmetoder och styrningsstrukturer."
     }
   },
   "downloadButton": "Ladda ner PDF",

@@ -87,6 +87,10 @@
     "foodSystems": {
       "title": "Food Systems & Agriculture",
       "description": "Guidelines for sustainable, equitable, and resilient food systems that ensure food security, rural prosperity, and ecological health across local to global scales."
+    },
+    "ethics": {
+      "title": "Global Ethics & Rights of Beings Framework",
+      "description": "A comprehensive framework for recognizing and protecting the rights of all beings—human, animal, ecological, and technological—with practical implementation guidance, consciousness assessment methodologies, and governance structures."
     }
   },
   "downloadButton": "Download PDF",

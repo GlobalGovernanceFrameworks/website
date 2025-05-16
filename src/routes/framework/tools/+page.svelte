@@ -37,6 +37,9 @@
       economicTitle: "Economic Integration Framework Tools",
       economicDesc: "Resources for implementing the Nested Sovereignty Framework, including community currency templates, ethical trade zone charters, universal basic income guides, and commons governance tools for equitable, sustainable economies.",
       economicButton: "Access Economic Integration Tools",
+      ethicsTitle: "Global Ethics & Rights of Beings Framework Tools",
+      ethicsDesc: "Resources for implementing the Rights of Beings Framework, including assessment methodologies, guardianship council guides, and practical tools for recognizing and protecting the rights of all beings across human, animal, ecosystem, and digital domains.",
+      ethicsButton: "Access Ethics & Rights Tools",
       comingSoon: "Coming Soon",
       otherFrameworks: "Other Framework Resources",
       otherFrameworksDesc: "Implementation tools for the following frameworks are currently in development and will be made available soon:",
@@ -71,6 +74,9 @@
       economicTitle: "Verktyg för ekonomisk integrationsramverk",
       economicDesc: "Resurser för att implementera ramverket för nästlad suveränitet, inklusive mallar för gemenskapsvaluta, stadgar för etiska handelszoner, guider för universell basinkomst och verktyg för allmänningsstyrning för rättvisa, hållbara ekonomier.",
       economicButton: "Öppna ekonomiska integrationsverktyg",
+      ethicsTitle: "Verktyg för globalt etiskt ramverk och väsens rättigheter",
+      ethicsDesc: "Resurser för att implementera ramverket för väsens rättigheter, inklusive bedömningsmetoder, vägledning för förmyndarskapsråd och praktiska verktyg för att erkänna och skydda rättigheterna för alla väsen inom mänskliga, djur-, ekosystem- och digitala domäner.",
+      ethicsButton: "Öppna etik- och rättighetsverktyg",
       comingSoon: "Kommer snart",
       otherFrameworks: "Övriga ramverksresurser",
       otherFrameworksDesc: "Implementeringsverktyg för följande ramverk är för närvarande under utveckling och kommer att göras tillgängliga inom kort:",
@@ -225,6 +231,25 @@
             </p>
             <a href="{base}/framework/tools/digital" style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.digitalButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ethics Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #8E44AD; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #8E44AD;">🦋</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #8E44AD;">{texts.ethicsTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.ethicsDesc}
+            </p>
+            <a href="{base}/framework/tools/ethics" style="display: inline-flex; align-items: center; background-color: #8E44AD; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.ethicsButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

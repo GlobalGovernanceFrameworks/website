@@ -25,6 +25,7 @@ Available categories:
 - peace
 - economic
 - digital
+- ethics
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -45,6 +46,7 @@ const outputDirs = {
   'peace': path.join(__dirname, '..', 'static', 'framework', 'tools', 'peace'),
   'economic': path.join(__dirname, '..', 'static', 'framework', 'tools', 'economic'),
   'digital': path.join(__dirname, '..', 'static', 'framework', 'tools', 'digital'),
+  'ethics': path.join(__dirname, '..', 'static', 'framework', 'tools', 'ethics'),
 };
 
 // Validate category if provided
@@ -2503,6 +2505,310 @@ const tools = [
     pageFooter: {
       en: 'Digital Commons Health Dashboard Documentation - Page ',
       sv: 'Dokumentation av Digital Commons Health Dashboard - Sida '
+    }
+  },
+  {
+    name: 'youth-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'youth-guide-en',
+      sv: 'youth-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+    },
+    pageFooter: {
+      en: 'Youth & Community Action Guide: Rights of All Beings - Page ',
+      sv: 'Handledning för ungdomar och samhällsaktiviteter: Alla varelsers rättigheter - Sida '
+    }
+  },
+  {
+    name: 'business-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'business-guide-en',
+      sv: 'business-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+    },
+    pageFooter: {
+      en: 'Rights of Beings for Business Leaders: Implementation Guide - Page ',
+      sv: 'Varelsers rättigheter för företagsledare: Implementeringsguide - Sida '
+    }
+  },
+  {
+    name: 'community-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'community-guide-en',
+      sv: 'community-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+    },
+    pageFooter: {
+      en: 'Rights of Beings for Communities - Page ',
+      sv: 'Varelsers rättigheter för samhällen och gemenskaper - Sida '
+    }
+  },
+  {
+    name: 'crisis-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'crisis-guide-en',
+      sv: 'crisis-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+    },
+    pageFooter: {
+      en: 'Rights of Beings in Crisis Situations: Emergency Implementation Guide - Page ',
+      sv: 'Rättigheter för varelser i krissituationer: Guide till implementering av nödsituationer - Sida '
+    }
+  },
+  {
+    name: 'educators-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'educators-guide-en',
+      sv: 'educators-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+    },
+    pageFooter: {
+      en: 'Rights of Beings for Educators: Implementation Guide - Page ',
+      sv: 'Varelsers rättigheter för lärare: Implementeringsguide - Sida '
+    }
+  },
+  {
+    name: 'indigenous-communities-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'indigenous-communities-guide-en',
+      sv: 'indigenous-communities-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+    },
+    pageFooter: {
+      en: 'Rights of Beings for Indigenous Communities - Page ',
+      sv: 'Rättigheter för varelser för ursprungsbefolkningar - Sida '
+    }
+  },
+  {
+    name: 'policy-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'policy-guide-en',
+      sv: 'policy-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+    },
+    pageFooter: {
+      en: 'Rights of Beings for Policymakers - Page ',
+      sv: 'Varelsers rättigheter för beslutsfattare - Sida '
+    }
+  },
+  {
+    name: 'religious-communities-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'religious-communities-guide-en',
+      sv: 'religious-communities-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+    },
+    pageFooter: {
+      en: 'Rights of Beings for Religious Communities - Page ',
+      sv: 'Varelsers rättigheter för religiösa samfund - Sida '
+    }
+  },
+  {
+    name: 'crisis-ethics-field-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'crisis-ethics-field-guide-en',
+      sv: 'crisis-ethics-field-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
+    },
+    pageFooter: {
+      en: 'Crisis Ethics Field Guide - Page ',
+      sv: 'Fältguide för krisetik - Sida '
+    }
+  },
+  {
+    name: 'rights-assessment-methodology',
+    category: 'ethics',
+    fileNames: {
+      en: 'rights-assessment-methodology-en',
+      sv: 'rights-assessment-methodology-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
+    },
+    pageFooter: {
+      en: 'Rights Assessment Methodology Handbook - Page ',
+      sv: 'Handbok för metodik för rättighetsbedömning - Sida '
+    }
+  },
+  {
+    name: 'rights-recognition-starter-kit',
+    category: 'ethics',
+    fileNames: {
+      en: 'rights-recognition-starter-kit-en',
+      sv: 'rights-recognition-starter-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
+    },
+    pageFooter: {
+      en: 'Rights Recognition Starter Kit - Page ',
+      sv: 'Startpaket för erkännande av rättigheter - Sida '
+    }
+  },
+  {
+    name: 'spiral-aware-implementation-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'spiral-aware-implementation-guide-en',
+      sv: 'spiral-aware-implementation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
+    },
+    pageFooter: {
+      en: 'Spiral-Aware Implementation Guide - Page ',
+      sv: 'Spiralmedveten implementeringsguide - Sida '
+    }
+  },
+  {
+    name: 'conflict-resolution-guide',
+    category: 'ethics',
+    fileNames: {
+      en: 'conflict-resolution-guide-en',
+      sv: 'conflict-resolution-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+    },
+    pageFooter: {
+      en: 'Conflict Resolution Protocol Guide - Page ',
+      sv: 'Guide till protokoll för konfliktlösning - Sida '
+    }
+  },
+  {
+    name: 'consciousness-assessment-toolkit',
+    category: 'ethics',
+    fileNames: {
+      en: 'consciousness-assessment-toolkit-en',
+      sv: 'consciousness-assessment-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+    },
+    pageFooter: {
+      en: 'Consciousness Assessment Toolkit - Page ',
+      sv: 'Verktygslåda för medvetandebedömning - Sida '
+    }
+  },
+  {
+    name: 'guardianship-handbook',
+    category: 'ethics',
+    fileNames: {
+      en: 'guardianship-handbook-en',
+      sv: 'guardianship-handbook-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+    },
+    pageFooter: {
+      en: 'Guardianship Council Handbook - Page ',
+      sv: 'Handbok för förmynderskapsrådet - Sida '
+    }
+  },
+  {
+    name: 'indigenous-knowledge-protocol',
+    category: 'ethics',
+    fileNames: {
+      en: 'indigenous-knowledge-protocol-en',
+      sv: 'indigenous-knowledge-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+    },
+    pageFooter: {
+      en: 'Indigenous Knowledge Integration Protocol - Page ',
+      sv: 'Protokoll för integration av ursprungsbefolkningens kunskap - Sida '
+    }
+  },
+  {
+    name: 'pioneer-pilots-manual',
+    category: 'ethics',
+    fileNames: {
+      en: 'pioneer-pilots-manual-en',
+      sv: 'pioneer-pilots-manual-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+    },
+    pageFooter: {
+      en: 'Pioneer Pilots Implementation Manual - Page ',
+      sv: 'Implementeringsmanual för Pioneer Pilots - Sida '
+    }
+  },
+  {
+    name: 'resistance-management-playbook',
+    category: 'ethics',
+    fileNames: {
+      en: 'resistance-management-playbook-en',
+      sv: 'resistance-management-playbook-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+    },
+    pageFooter: {
+      en: 'Resistance Management Playbook - Page ',
+      sv: 'Handbok för hantering av motstånd - Sida '
+    }
+  },
+  {
+    name: 'edge-case-handbook',
+    category: 'ethics',
+    fileNames: {
+      en: 'edge-case-handbook-en',
+      sv: 'edge-case-handbook-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+    },
+    pageFooter: {
+      en: 'Edge Case Handbook - Page ',
+      sv: 'Handbok för gränsfall - Sida '
     }
   }
 ];
