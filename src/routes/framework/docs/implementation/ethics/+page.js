@@ -4,22 +4,178 @@ import { get } from 'svelte/store';
 
 export const csr = true;
 
-export async function load({ depends }) {
+export async function load({ depends, url }) {
   // Declare dependency on locale
   depends('app:locale');
   
   const currentLocale = get(locale);
   
-  let content;
+  // Safe check for print mode that works during prerendering
+  const isPrintMode = import.meta.env.SSR ? false : url.searchParams.get('print') === 'true';
+  
+  // Get the accessibility level from the URL if present
+  const accessibilityLevel = url.searchParams.get('level') || 'standard';
+  
+  // Define the available accessibility levels
+  const accessibilityLevels = ['visual', 'essential', 'standard', 'technical'];
+  
+  // Validate the level
+  const level = accessibilityLevels.includes(accessibilityLevel) ? accessibilityLevel : 'standard';
+  
+  // Define sections to load - all framework sections
+  const sections = [
+    '0-preamble',
+    '1-introduction',
+    '2-foundational-values',
+    '2.3-global-ethical-traditions',
+    '2.5-rights-of-beings',
+    '2.6-scientific-foundations',
+    '3-commitments',
+    '3.1-traditional-rights',
+    '3.2-emerging-rights',
+    '3.2.1-ai-consciousness',
+    '3.2.1a-assessment-hub-network',
+    '3.2.1b-scientific-standards',
+    '3.2.2-ambiguous-entities',
+    '3.2.3-measurement-standards',
+    '3.2.4-recognition-pathways',
+    '3.2.5-non-western-recognition',
+    '3.3-conflict-resolution',
+    '3.3.1-moon-wish-test',
+    '4-governance-mechanisms',
+    '4.1-transparency',
+    '4.2-inclusive-decision-making',
+    '4.3-conflict-resolution',
+    '4.4-guardianship-councils',
+    '4.4.1-enforcement-mechanisms',
+    '4.4.2-non-compliance-strategy',
+    '4.5-funding-model',
+    '4.5.1-hub-sustainability',
+    '4.5.2-resource-optimization',
+    '4.6-governance-accountability',
+    '4.7-entity-conflict-resolution',
+    '4.8-interoperability',
+    '4.9-decision-making',
+    '4.10-coordination-mechanisms',
+    '5-implementation',
+    '5.1-quick-wins',
+    '5.1.1-cost-analysis',
+    '5.2-phased-rollout',
+    '5.2.1-space-ethics',
+    '5.3-education-accessibility',
+    '5.3.1-resource-constraint',
+    '5.3.2-cultural-accessibility',
+    '5.3.3-knowledge-integration',
+    '5.4-global-cooperation',
+    '5.5-monitoring',
+    '5.6-public-engagement',
+    '5.7-stakeholder-strategy',
+    '5.7.1-consensus-building',
+    '5.7.2-resistant-stakeholder',
+    '5.8-resistance-handling',
+    '5.8.1-opposition-response',
+    '5.8.2-learning-system',
+    '5.9-benchmarks-metrics',
+    '5.10-scenario-planning',
+    '5.11-accessibility-matrix',
+    '6-appendices',
+    '6.1-emerging-rights-toolkit',
+    '6.2-case-studies',
+    '6.3-ethical-forecasting',
+    '6.3.1-speculative-paradigm',
+    '6.3.2-validation-protocols',
+    '6.4-reporting-portal',
+    '6.5-plain-language',
+    '6.6-edge-case-protocols',
+    '6.7-philosophy-of-rights',
+    '6.8-spiral-aware-primer',
+    '6.9-impact-assessment',
+    '6.10-pioneer-pilots',
+    '6.11-crisis-ethics',
+    '6.12-technical-protocols'
+  ];
+  
+  // Additional files that may be present
+  const additionalFiles = [
+    'index',
+    'access-guide',
+    'youth-guide',
+    'technical-guide',
+    'community-guide'
+  ];
+  
+  // Combine all possible files
+  const allFiles = [...sections, ...additionalFiles];
+  
+  // Track available sections for each accessibility level
+  const availableSections = {};
+  for (const l of accessibilityLevels) {
+    availableSections[l] = [];
+  }
+  
+  // Try to load modular content for all levels
+  const content = {};
+  let isModular = false;
+  
   try {
-    // Try to load the current locale version
-    content = await import(`$lib/content/framework/${currentLocale}/implementation/ethics.md`);
+    // For each file, try to load it at each accessibility level
+    for (const section of allFiles) {
+      content[section] = {};
+      
+      for (const l of accessibilityLevels) {
+        try {
+          // Try to load the current locale version
+          const module = await import(`$lib/content/framework/${currentLocale}/implementation/ethics/${l}/${section}.md`);
+          content[section][l] = module;
+          availableSections[l].push(section);
+          isModular = true;
+        } catch (e) {
+          // Fall back to English if translation isn't available
+          try {
+            const module = await import(`$lib/content/framework/en/implementation/ethics/${l}/${section}.md`);
+            content[section][l] = module;
+            availableSections[l].push(section);
+            isModular = true;
+          } catch (e2) {
+            // Section not available at this level, which is expected for many sections
+          }
+        }
+      }
+    }
   } catch (e) {
-    // Fall back to English if translation isn't available
-    content = await import(`$lib/content/framework/en/implementation/ethics.md`);
+    console.warn("Error loading modular content:", e);
+  }
+  
+  // If modular content failed entirely or isn't available, fall back to legacy single file
+  let legacyContent = null;
+  if (!isModular) {
+    try {
+      legacyContent = await import(`$lib/content/framework/${currentLocale}/implementation/ethics.md`);
+    } catch (e) {
+      try {
+        legacyContent = await import(`$lib/content/framework/en/implementation/ethics.md`);
+      } catch (e2) {
+        console.error("Failed to load any content for ethics framework");
+      }
+    }
+  }
+  
+  // Get access guide if available
+  let accessGuide = null;
+  if (content['access-guide'] && content['access-guide'][level]) {
+    accessGuide = content['access-guide'][level];
+  } else if (content['access-guide'] && content['access-guide']['standard']) {
+    accessGuide = content['access-guide']['standard'];
   }
   
   return {
-    component: content.default
+    sections: content,
+    availableSections,
+    component: legacyContent?.default,
+    isModular,
+    isPrintMode,
+    currentLevel: level,
+    accessibilityLevels,
+    accessGuide
   };
 }

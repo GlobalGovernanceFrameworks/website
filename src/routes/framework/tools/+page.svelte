@@ -217,7 +217,7 @@
       <!-- Digital Commons Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6d28d9; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #6d28d9;">🌐</div>
+          <div style="font-size: 2.5rem; color: #6d28d9;">💻</div>
           <div style="flex: 1; min-width: 200px;">
             <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6d28d9;">{texts.digitalTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">

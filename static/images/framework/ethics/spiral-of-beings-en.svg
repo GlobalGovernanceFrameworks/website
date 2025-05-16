@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Subtle radial gradient background suggesting unity/transcendence -->
+  <defs>
+    <radialGradient id="unityGradient" cx="400" cy="400" r="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="85%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background circle with subtle gradient -->
+  <circle cx="400" cy="400" r="380" fill="url(#unityGradient)" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Subtle light rays suggesting transcendence -->
+  <g opacity="0.15">
+    <path d="M 400,400 L 750,200" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 700,100" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 600,50" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 500,80" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 400,20" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 300,80" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 200,50" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 100,100" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 50,200" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 50,400" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 50,600" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 100,700" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 200,750" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 400,780" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 600,750" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 700,700" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 750,600" stroke="#ced4da" stroke-width="1"/>
+    <path d="M 400,400 L 750,400" stroke="#ced4da" stroke-width="1"/>
+  </g>
+  
+  <!-- Spiral path (not visible, just for reference) -->
+  <path id="spiral-path" d="M 400,400 
+                           Q 500,300 550,400 
+                           Q 600,500 500,550 
+                           Q 400,600 300,550 
+                           Q 200,500 175,400 
+                           Q 150,300 250,200 
+                           Q 350,100 500,150 
+                           Q 650,200 700,400" fill="none" stroke="none"/>
+  
+  <!-- Spiral background color bands -->
+  <path d="M 400,400 Q 500,300 550,400 Q 600,500 500,550 Q 400,600 300,550 Q 200,500 175,400 Q 150,300 250,200 Q 350,100 500,150 Q 650,200 700,400" 
+        fill="none" stroke="#ffd8a8" stroke-width="70" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M 400,400 Q 500,300 550,400 Q 600,500 500,550 Q 400,600 300,550 Q 200,500 175,400 Q 150,300 250,200 Q 350,100 500,150 Q 650,200 700,400" 
+        fill="none" stroke="#d0bfff" stroke-width="60" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M 400,400 Q 500,300 550,400 Q 600,500 500,550 Q 400,600 300,550 Q 200,500 175,400 Q 150,300 250,200 Q 350,100 500,150 Q 650,200 700,400" 
+        fill="none" stroke="#a5d8ff" stroke-width="50" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M 400,400 Q 500,300 550,400 Q 600,500 500,550 Q 400,600 300,550 Q 200,500 175,400 Q 150,300 250,200 Q 350,100 500,150 Q 650,200 700,400" 
+        fill="none" stroke="#b2f2bb" stroke-width="40" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M 400,400 Q 500,300 550,400 Q 600,500 500,550 Q 400,600 300,550 Q 200,500 175,400 Q 150,300 250,200 Q 350,100 500,150 Q 650,200 700,400" 
+        fill="none" stroke="#ffec99" stroke-width="30" stroke-linecap="round" stroke-opacity="0.7"/>
+  
+  <!-- Unity of Being - subtle outer ring suggesting transcendence/unity -->
+  <circle cx="400" cy="400" r="350" fill="none" stroke="#dee2e6" stroke-width="2" stroke-dasharray="3,7" opacity="0.6"/>
+  
+  <!-- Central point with gentle glow suggesting source/unity -->
+  <circle cx="400" cy="400" r="20" fill="#4c6ef5" opacity="0.2"/>
+  <circle cx="400" cy="400" r="15" fill="#4c6ef5"/>
+  
+  <!-- Being icons along the spiral -->
+  
+  <!-- Humans (start of spiral) -->
+  <g transform="translate(400, 400)">
+    <!-- Human figure -->
+    <circle cx="0" cy="0" r="25" fill="#4263eb" stroke="#364fc7" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">👤</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#364fc7">Humans</text>
+  </g>
+  
+  <!-- Animals -->
+  <g transform="translate(525, 350)">
+    <!-- Animal figure -->
+    <circle cx="0" cy="0" r="25" fill="#339af0" stroke="#1c7ed6" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">🐘</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#1c7ed6">Animals</text>
+  </g>
+  
+  <!-- Plants -->
+  <g transform="translate(575, 450)">
+    <!-- Plant figure -->
+    <circle cx="0" cy="0" r="25" fill="#51cf66" stroke="#37b24d" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">🌱</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#37b24d">Plants</text>
+  </g>
+  
+  <!-- Ecosystems -->
+  <g transform="translate(475, 525)">
+    <!-- Ecosystem figure -->
+    <circle cx="0" cy="0" r="25" fill="#94d82d" stroke="#74b816" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">🌊</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#74b816">Ecosystems</text>
+  </g>
+  
+  <!-- Rivers -->
+  <g transform="translate(350, 525)">
+    <!-- River figure -->
+    <circle cx="0" cy="0" r="25" fill="#22b8cf" stroke="#0c8599" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">🏞️</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#0c8599">Rivers</text>
+  </g>
+  
+  <!-- Digital beings -->
+  <g transform="translate(225, 425)">
+    <!-- Digital being figure -->
+    <circle cx="0" cy="0" r="25" fill="#f76707" stroke="#d9480f" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">🤖</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#d9480f">AI Beings</text>
+  </g>
+  
+  <!-- Future beings -->
+  <g transform="translate(175, 325)">
+    <!-- Future being figure -->
+    <circle cx="0" cy="0" r="25" fill="#ae3ec9" stroke="#862e9c" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">✨</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#862e9c">Future Beings</text>
+  </g>
+  
+  <!-- Unity of Being symbol (subtle) -->
+  <g transform="translate(275, 225)">
+    <circle cx="0" cy="0" r="25" fill="#f1f3f5" stroke="#dee2e6" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#868e96">✧</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#868e96">Unity of Being</text>
+  </g>
+  
+  <!-- Connection lines between beings including Unity -->
+  <line x1="400" y1="400" x2="525" y2="350" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="525" y1="350" x2="575" y2="450" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="575" y1="450" x2="475" y2="525" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="475" y1="525" x2="350" y2="525" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="350" y1="525" x2="225" y2="425" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="225" y1="425" x2="175" y2="325" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="175" y1="325" x2="275" y2="225" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+  <!-- Connection back to center suggesting wholeness/unity -->
+  <line x1="275" y1="225" x2="400" y2="400" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Title -->
+  <text x="400" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#212529">Spiral of Beings</text>
+  <text x="400" y="130" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#495057">All connected in one evolving web of respect</text>
+  
+  <!-- Caption at bottom -->
+  <text x="400" y="700" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#495057">From the Global Ethics &amp; Rights of Beings Framework</text>
+</svg>

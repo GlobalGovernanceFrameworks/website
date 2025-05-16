@@ -1,0 +1,90 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and title -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Resistance Handling Framework</text>
+  
+  <!-- Main diagram structure -->
+  <g transform="translate(400, 300)">
+    <!-- Central concept -->
+    <circle cx="0" cy="0" r="80" fill="#6c5ce7" opacity="0.9"/>
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Constructive
+    <tspan x="0" dy="20">Engagement</tspan></text>
+    
+    <!-- Resistance Types - Left Side -->
+    <g transform="translate(-250, 0)">
+      <rect x="-100" y="-120" width="200" height="240" rx="10" ry="10" fill="#ff7675" opacity="0.9"/>
+      <text x="0" y="-90" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Resistance Types</text>
+      
+      <text x="0" y="-60" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Values-based concerns</text>
+      <text x="0" y="-30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Economic worries</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Cultural traditions</text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Power and control issues</text>
+      <text x="0" y="60" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Fear of the unknown</text>
+      
+      <!-- Arrow to center -->
+      <path d="M 100 0 L 150 0" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- Response Strategies - Right Side -->
+    <g transform="translate(250, 0)">
+      <rect x="-100" y="-120" width="200" height="240" rx="10" ry="10" fill="#74b9ff" opacity="0.9"/>
+      <text x="0" y="-90" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Response Strategies</text>
+      
+      <text x="0" y="-60" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Values alignment</text>
+      <text x="0" y="-30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Economic transition support</text>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Cultural preservation</text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Inclusive governance</text>
+      <text x="0" y="60" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">• Phased implementation</text>
+      
+      <!-- Arrow from center -->
+      <path d="M -150 0 L -100 0" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- Engagement Principles - Top -->
+    <g transform="translate(0, -170)">
+      <rect x="-200" y="-60" width="400" height="120" rx="10" ry="10" fill="#55efc4" opacity="0.9"/>
+      <text x="0" y="-30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Engagement Principles</text>
+      
+      <text x="-100" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Listen first</text>
+      <text x="100" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Find shared values</text>
+      <text x="-100" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Adapt with integrity</text>
+      <text x="100" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Show practical benefits</text>
+      
+      <!-- Arrow to center -->
+      <path d="M 0 60 L 0 100" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- Success Indicators - Bottom -->
+    <g transform="translate(0, 170)">
+      <rect x="-200" y="-60" width="400" height="120" rx="10" ry="10" fill="#ffeaa7" opacity="0.9"/>
+      <text x="0" y="-30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">Success Indicators</text>
+      
+      <text x="-100" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Dialogue quality</text>
+      <text x="100" y="0" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Collaborative solutions</text>
+      <text x="-100" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Reduced opposition</text>
+      <text x="100" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Implementation progress</text>
+      
+      <!-- Arrow from center -->
+      <path d="M 0 -100 L 0 -60" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    </g>
+  </g>
+  
+  <!-- Circular transformation process -->
+  <g transform="translate(400, 300)" opacity="0.3">
+    <path d="M -120 -120 A 169.7 169.7 0 1 1 -120 120 A 169.7 169.7 0 1 0 -120 -120" 
+          fill="none" stroke="#333" stroke-width="4" stroke-dasharray="10,5"/>
+    <text x="0" y="-200" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle" fill="#333">Transformation Process</text>
+  </g>
+  
+  <!-- Legend & footer -->
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">
+    Transforming opposition into collaboration through understanding and respect
+  </text>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

@@ -32,6 +32,12 @@
       foodTitle: "Food Systems & Agriculture Visualizations",
       foodDesc: "Visual tools for sustainable food systems governance, including food web diagrams, value chain visualizations, and interactive maps of agricultural transformation pathways.",
       foodButton: "Coming Soon",
+      ethicsTitle: "Ethics & Rights of Beings Visualizations",
+      ethicsDesc: "Visual resources for the Ethics & Rights of Beings Framework, including dynamic rights spectrum, implementation guides, governance structures, and consciousness assessment tools.",
+      ethicsButton: "Access Ethics Visualizations",
+      digitalTitle: "Digital Commons Visualizations",
+      digitalDesc: "Visual resources for the Digital Commons Framework, including governance architecture, data sovereignty protocols, mesh network structures, and interactive tools for digital rights implementation.",
+      digitalButton: "Access Digital Commons Visualizations",
       comingSoon: "Coming Soon",
       otherFrameworks: "Other Framework Visualizations",
       otherFrameworksDesc: "Visualization collections for the following frameworks are currently in development and will be made available soon:",
@@ -59,6 +65,12 @@
       educationTitle: "Visualiseringar för utbildningsramverket",
       educationDesc: "Visuella resurser för utbildningsramverket, inklusive modeller för inlärningsprogression, systemdiagram för utbildningsstyrning och analysverktyg för utbildningsresultat.",
       educationButton: "Kommer snart",
+      ethicsTitle: "Visualiseringar för etik och varelsers rättigheter",
+      ethicsDesc: "Visuella resurser för ramverket för etik och varelsers rättigheter, inklusive dynamiskt rättighetsspektrum, implementeringsguider, styrningsstrukturer och verktyg för medvetenhetsbedömning.",
+      ethicsButton: "Öppna etikvisualiseringar",
+      digitalTitle: "Visualiseringar för digitala allmänningar",
+      digitalDesc: "Visuella resurser för ramverket för digitala allmänningar, inklusive styrningsarkitektur, datasuveränitetsprotokoll, nätverksstrukturer och interaktiva verktyg för implementering av digitala rättigheter.",
+      digitalButton: "Öppna visualiseringar för digitala allmänningar",
       foodTitle: "Visualiseringar för matsystem och jordbruk",
       foodDesc: "Visuella verktyg för hållbar styrning av matsystem, inklusive matwebsdiagram, visualiseringar av värdekedjor och interaktiva kartor över jordbruksomvandlingsvägar.",
       foodButton: "Kommer snart",
@@ -111,6 +123,22 @@
       <!-- Available Resources Section -->
       <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{texts.availableResources}</h2>
 
+      <!-- Climate Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #2C8A78;">⚡</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.climateTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.climateDesc}
+            </p>
+            <button disabled style="display: inline-flex; align-items: center; background-color: #9ca3af; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border: none; cursor: not-allowed;">
+              {texts.climateButton}
+            </button>
+          </div>
+        </div>
+      </div>
+
       <!-- Peace Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B5CA5; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
@@ -130,17 +158,17 @@
         </div>
       </div>
 
-      <!-- Climate Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78; margin-bottom: 2rem;">
+      <!-- Food Systems Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #2C8A78;">⚡</div>
+          <div style="font-size: 2.5rem; color: #2e7d32;">🌱</div>
           <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2C8A78;">{texts.climateTitle}</h2>
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2e7d32;">{texts.foodTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.climateDesc}
+              {texts.foodDesc}
             </p>
             <button disabled style="display: inline-flex; align-items: center; background-color: #9ca3af; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border: none; cursor: not-allowed;">
-              {texts.climateButton}
+              {texts.foodButton}
             </button>
           </div>
         </div>
@@ -161,23 +189,45 @@
           </div>
         </div>
       </div>
-      
-      <!-- Food Systems Framework Card -->
-      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32; margin-bottom: 2rem;">
+
+      <!-- Digital Commons Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6d28d9; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
-          <div style="font-size: 2.5rem; color: #2e7d32;">🌱</div>
+          <div style="font-size: 2.5rem; color: #6d28d9;">💻</div>
           <div style="flex: 1; min-width: 200px;">
-            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2e7d32;">{texts.foodTitle}</h2>
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6d28d9;">{texts.digitalTitle}</h2>
             <p style="color: #4b5563; margin-bottom: 1rem;">
-              {texts.foodDesc}
+              {texts.digitalDesc}
             </p>
-            <button disabled style="display: inline-flex; align-items: center; background-color: #9ca3af; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border: none; cursor: not-allowed;">
-              {texts.foodButton}
-            </button>
+            <a href="{base}/framework/visuals/digital" style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.digitalButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
       
+      <!-- Ethics & Rights of Beings Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #16a34a; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #16a34a;">🦋</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #16a34a;">{texts.ethicsTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.ethicsDesc}
+            </p>
+            <a href="{base}/framework/visuals/ethics" style="display: inline-flex; align-items: center; background-color: #16a34a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.ethicsButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+     
       <!-- Coming Soon Section -->
       <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{texts.comingSoon}</h2>
       

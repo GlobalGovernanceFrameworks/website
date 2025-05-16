@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="conflict-resolution-en.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="400.35461"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <!-- Background and title -->
+  <rect
+     width="800"
+     height="600"
+     fill="#f8f9fa"
+     rx="10"
+     ry="10"
+     id="rect1" />
+  <text
+     x="400"
+     y="50"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#333"
+     id="text1">Conflict Resolution Framework</text>
+  <!-- Central decision diamond -->
+  <g
+     transform="translate(400, 300)"
+     id="g5">
+    <path
+       d="M 0 -100 L 100 0 L 0 100 L -100 0 Z"
+       fill="#6c5ce7"
+       opacity="0.9"
+       id="path1" />
+    <text
+       x="0"
+       y="0"
+       font-family="Arial, sans-serif"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="white"
+       id="text2">Balanced
+    <tspan
+   x="0"
+   dy="20"
+   id="tspan1">Resolution</tspan></text>
+    <!-- Connecting arrows from inputs to center -->
+    <path
+       d="M -200 -150 L -70 -70"
+       stroke="#333"
+       stroke-width="2"
+       fill="none"
+       marker-end="url(#arrowhead)"
+       id="path2" />
+    <path
+       d="M 200 -150 L 70 -70"
+       stroke="#333"
+       stroke-width="2"
+       fill="none"
+       marker-end="url(#arrowhead)"
+       id="path3" />
+    <path
+       d="M -200 150 L -70 70"
+       stroke="#333"
+       stroke-width="2"
+       fill="none"
+       marker-end="url(#arrowhead)"
+       id="path4" />
+    <path
+       d="M 200 150 L 70 70"
+       stroke="#333"
+       stroke-width="2"
+       fill="none"
+       marker-end="url(#arrowhead)"
+       id="path5" />
+  </g>
+  <!-- Resolution Panel - Top Left -->
+  <g
+     transform="translate(200, 150)"
+     id="g9">
+    <rect
+       x="-100"
+       y="-80"
+       width="200"
+       height="160"
+       rx="10"
+       ry="10"
+       fill="#ff7675"
+       opacity="0.9"
+       id="rect5" />
+    <text
+       x="0"
+       y="-50"
+       font-family="Arial, sans-serif"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="white"
+       id="text5">Resolution Panel</text>
+    <text
+       x="0"
+       y="-20"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="white"
+       id="text6">• Rights-holder representatives</text>
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="white"
+       id="text7">• Indigenous knowledge holders</text>
+    <text
+       x="0"
+       y="30"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="white"
+       id="text8">• Independent experts</text>
+    <text
+       x="0"
+       y="55"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="white"
+       id="text9">• Neutral facilitators</text>
+  </g>
+  <!-- Decision Criteria - Top Right -->
+  <g
+     transform="translate(600, 150)"
+     id="g14">
+    <rect
+       x="-100"
+       y="-80"
+       width="200"
+       height="160"
+       rx="10"
+       ry="10"
+       fill="#74b9ff"
+       opacity="0.9"
+       id="rect9" />
+    <text
+       x="0"
+       y="-50"
+       font-family="Arial, sans-serif"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="white"
+       id="text10">Decision Criteria</text>
+    <text
+       x="0"
+       y="-20"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="white"
+       id="text11">• Survival needs (priority)</text>
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="white"
+       id="text12">• Reversibility of impacts</text>
+    <text
+       x="0"
+       y="30"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="white"
+       id="text13">• Available alternatives</text>
+    <text
+       x="0"
+       y="55"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="white"
+       id="text14">• Cultural significance</text>
+  </g>
+  <!-- Process Principles - Bottom Left -->
+  <g
+     transform="translate(200, 450)"
+     id="g19">
+    <rect
+       x="-100"
+       y="-80"
+       width="200"
+       height="160"
+       rx="10"
+       ry="10"
+       fill="#55efc4"
+       opacity="0.9"
+       id="rect14" />
+    <text
+       x="0"
+       y="-50"
+       font-family="Arial, sans-serif"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333"
+       id="text15">Process Principles</text>
+    <text
+       x="0"
+       y="-20"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="#333"
+       id="text16">• Protect core interests</text>
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="#333"
+       id="text17">• Beyond binary choices</text>
+    <text
+       x="0"
+       y="30"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="#333"
+       id="text18">• Balance needs  impacts</text>
+    <text
+       x="0"
+       y="55"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="#333"
+       id="text19">• Respect worldviews</text>
+  </g>
+  <!-- Solution Types - Bottom Right -->
+  <g
+     transform="translate(600, 450)"
+     id="g24">
+    <rect
+       x="-100"
+       y="-80"
+       width="200"
+       height="160"
+       rx="10"
+       ry="10"
+       fill="#ffeaa7"
+       opacity="0.9"
+       id="rect19" />
+    <text
+       x="0"
+       y="-50"
+       font-family="Arial, sans-serif"
+       font-size="16"
+       font-weight="bold"
+       text-anchor="middle"
+       fill="#333"
+       id="text20">Solution Types</text>
+    <text
+       x="0"
+       y="-20"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="#333"
+       id="text21">• Creative alternatives</text>
+    <text
+       x="0"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="#333"
+       id="text22">• Staged implementations</text>
+    <text
+       x="0"
+       y="30"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="#333"
+       id="text23">• Shared stewardship</text>
+    <text
+       x="0"
+       y="55"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       text-anchor="middle"
+       fill="#333"
+       id="text24">• Knowledge-based approaches</text>
+  </g>
+  <!-- Example Cases - Small boxes connected to central diamond -->
+  <!-- Farm-River Case -->
+  <g
+     transform="translate(400, 100)"
+     id="g25">
+    <rect
+       x="-80"
+       y="-30"
+       width="160"
+       height="60"
+       rx="10"
+       ry="10"
+       fill="#a29bfe"
+       opacity="0.8"
+       id="rect24" />
+    <text
+       x="0"
+       y="0"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="white"
+       id="text25">Farm-River Water Rights</text>
+    <path
+       d="M 0 30 L 0 100"
+       stroke="#333"
+       stroke-width="2"
+       stroke-dasharray="4,4"
+       fill="none"
+       id="path25" />
+  </g>
+  <!-- Indigenous-Conservation Case -->
+  <g
+     transform="translate(250, 300)"
+     id="g26">
+    <rect
+       x="-80"
+       y="-30"
+       width="160"
+       height="60"
+       rx="10"
+       ry="10"
+       fill="#a29bfe"
+       opacity="0.8"
+       id="rect25" />
+    <text
+       x="0"
+       y="0"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="white"
+       id="text26">Indigenous Practice 
+    <tspan
+   x="0"
+   dy="15"
+   id="tspan25">Conservation</tspan></text>
+    <path
+       d="M 80 0 L 130 0"
+       stroke="#333"
+       stroke-width="2"
+       stroke-dasharray="4,4"
+       fill="none"
+       id="path26" />
+  </g>
+  <!-- Human-AI Case -->
+  <rect
+     x="470"
+     y="270"
+     width="160"
+     height="60"
+     rx="10"
+     ry="10"
+     fill="#a29bfe"
+     opacity="0.8"
+     id="rect26" />
+  <text
+     x="550"
+     y="300"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text27">Human-AI <tspan
+   x="550"
+   dy="15"
+   id="tspan26">Decision Authority</tspan></text>
+  <path
+     d="M 470,300 H 420"
+     stroke="#333333"
+     stroke-width="2"
+     stroke-dasharray="4, 4"
+     fill="none"
+     id="path27" />
+  <!-- Sacred Site Case -->
+  <g
+     transform="translate(400, 500)"
+     id="g28">
+    <rect
+       x="-80"
+       y="-30"
+       width="160"
+       height="60"
+       rx="10"
+       ry="10"
+       fill="#a29bfe"
+       opacity="0.8"
+       id="rect27" />
+    <text
+       x="0"
+       y="0"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       text-anchor="middle"
+       fill="white"
+       id="text28">Sacred Site Access 
+    <tspan
+   x="0"
+   dy="15"
+   id="tspan27">Protection</tspan></text>
+    <path
+       d="M 0 -30 L 0 -100"
+       stroke="#333"
+       stroke-width="2"
+       stroke-dasharray="4,4"
+       fill="none"
+       id="path28" />
+  </g>
+  <!-- Framework context -->
+  <g
+     transform="translate(400, 300)"
+     opacity="0.3"
+     id="g29">
+    <ellipse
+       cx="0"
+       cy="0"
+       rx="250"
+       ry="200"
+       fill="none"
+       stroke="#333"
+       stroke-width="2"
+       stroke-dasharray="5,5"
+       id="ellipse28" />
+    <text
+       x="0"
+       y="-170"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-style="italic"
+       text-anchor="middle"
+       fill="#333"
+       id="text29">Rights of Beings Framework Context</text>
+  </g>
+  <!-- Legend & footer -->
+  <text
+     x="400"
+     y="550"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     text-anchor="middle"
+     fill="#555"
+     id="text30">
+    Balancing different rights through structured, inclusive decision-making
+  </text>
+  <!-- Arrowhead definition -->
+  <defs
+     id="defs30">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#333"
+         id="polygon30" />
+    </marker>
+  </defs>
+</svg>

@@ -1,4 +1,4 @@
-<!-- src/routes/downloads/+page.svelte (updated version) -->
+<!-- src/routes/downloads/+page.svelte (with CSS and emojis) -->
 <script>
   import { t, locale, setLocale } from '$lib/i18n';
   import { base } from '$app/paths';
@@ -24,14 +24,188 @@
   <meta name="description" content={$t('downloads.metaDescription')} />
 </svelte:head>
 
+<style>
+  .hero {
+    padding: 3rem 0;
+    background: linear-gradient(to bottom right, #2B4B8C, #6B5CA5);
+    color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .content-wrapper {
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #2B4B8C;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: #ffffff;
+  }
+  
+  .intro-text {
+    margin-bottom: 2rem;
+    color: #4b5563;
+    line-height: 1.7;
+    font-size: 1.125rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .download-card {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .card-emoji {
+    font-size: 2.5rem;
+  }
+  
+  .card-content {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-description {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+  }
+  
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s;
+  }
+  
+  .download-button:hover {
+    opacity: 0.9;
+  }
+  
+  .download-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0.5rem;
+  }
+  
+  .info-box {
+    background-color: #f0f4f8;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #2B4B8C;
+  }
+  
+  .info-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2B4B8C;
+  }
+  
+  .info-text {
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-link {
+    color: #2B4B8C;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .language-section {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .language-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2B4B8C;
+  }
+  
+  .language-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .other-formats {
+    background-color: #e9f2e9;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .other-formats-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #2D5F2D;
+  }
+  
+  .other-formats-text {
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  .other-formats-link {
+    color: #DAA520;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+</style>
+
 <!-- Hero Section -->
-<section style="padding: 3rem 0; background: linear-gradient(to bottom right, #2B4B8C, #6B5CA5); color: white;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
-    <div style="max-width: 42rem; margin: 0 auto;">
-      <h1 style="font-size: 2.5rem; line-height: 1.2; font-weight: 700; margin-bottom: 1rem;">
+<section class="hero">
+  <div class="container">
+    <div class="content-wrapper">
+      <h1 class="hero-title">
         {$t('downloads.hero.title')}
       </h1>
-      <p style="font-size: 1.25rem; color: #ffffff;">
+      <p class="hero-subtitle">
         {$t('downloads.hero.subtitle')}
       </p>
     </div>
@@ -40,250 +214,302 @@
 
 <!-- Downloads Section -->
 <section style="padding: 3rem 0; background-color: white;">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
-    <div style="max-width: 42rem; margin: 0 auto;">
-      <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
+  <div class="container">
+    <div class="content-wrapper">
+      <p class="intro-text">
         {$t('downloads.intro')}
       </p>
       
-      <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
-        <!-- Download Card 1 - Core Principles -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2B4B8C;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.cards.principles.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.cards.principles.description')}</p>
-          <a href={getPdfPath('Core-Principles')} download style="display: inline-flex; align-items: center; background-color: #2B4B8C; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+      <h2 class="section-title">{$t('downloads.coreDocuments.title', 'Core Documents')}</h2>
+      
+      <div class="card-grid">
+        <!-- Core Principles -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #2B4B8C;">🧭</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.cards.principles.title')}</h2>
+            <p class="card-description">{$t('downloads.cards.principles.description')}</p>
+            <a href={getPdfPath('Core-Principles')} download class="download-button" style="background-color: #2B4B8C;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
         
-        <!-- Download Card 2 - Implementation Guidelines -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.cards.implementation.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.cards.implementation.description')}</p>
-          <a href={getPdfPath('Implementation-Guidelines')} download style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <!-- Implementation Guidelines -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #2D5F2D;">🛠️</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.cards.implementation.title')}</h2>
+            <p class="card-description">{$t('downloads.cards.implementation.description')}</p>
+            <a href={getPdfPath('Implementation-Guidelines')} download class="download-button" style="background-color: #2D5F2D;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
         
-        <!-- Download Card 3 - Case Studies -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #DAA520;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.cards.caseStudies.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.cards.caseStudies.description')}</p>
-          <a href={getPdfPath('Case-Studies')} download style="display: inline-flex; align-items: center; background-color: #DAA520; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <!-- Case Studies -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #DAA520;">🔍</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.cards.caseStudies.title')}</h2>
+            <p class="card-description">{$t('downloads.cards.caseStudies.description')}</p>
+            <a href={getPdfPath('Case-Studies')} download class="download-button" style="background-color: #DAA520;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
         
-        <!-- Download Card 4 - Resources -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B5CA5;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.cards.resources.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.cards.resources.description')}</p>
-          <a href={getPdfPath('Resources')} download style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <!-- Resources -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #6B5CA5;">📚</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.cards.resources.title')}</h2>
+            <p class="card-description">{$t('downloads.cards.resources.description')}</p>
+            <a href={getPdfPath('Resources')} download class="download-button" style="background-color: #6B5CA5;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Global Citizenship Framework Section -->
-      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{$t('downloads.globalCitizenship.title')}</h2>
-      <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
+      <h2 class="section-title">{$t('downloads.globalCitizenship.title')}</h2>
+      <p class="intro-text">
         {$t('downloads.globalCitizenship.description')}
       </p>
       
-      <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
+      <div class="card-grid">
         <!-- Full Global Citizenship Framework -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2B4B8C;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2B4B8C;">{$t('downloads.globalCitizenship.full.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.globalCitizenship.full.description')}</p>
-          <a href={getPdfPath('Global-Citizenship')} download style="display: inline-flex; align-items: center; background-color: #2B4B8C; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #2B4B8C;">🌐</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #2B4B8C;">{$t('downloads.globalCitizenship.full.title')}</h2>
+            <p class="card-description">{$t('downloads.globalCitizenship.full.description')}</p>
+            <a href={getPdfPath('Global-Citizenship')} download class="download-button" style="background-color: #2B4B8C;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
         
         <!-- 4-Page Overview -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #DAA520;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #DAA520;">{$t('downloads.globalCitizenship.summary.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.globalCitizenship.summary.description')}</p>
-          <a href={getPdfPath('Global-Citizenship-4-page-overview')} download style="display: inline-flex; align-items: center; background-color: #DAA520; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #DAA520;">📋</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #DAA520;">{$t('downloads.globalCitizenship.summary.title')}</h2>
+            <p class="card-description">{$t('downloads.globalCitizenship.summary.description')}</p>
+            <a href={getPdfPath('Global-Citizenship-4-page-overview')} download class="download-button" style="background-color: #DAA520;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Implementation Frameworks Section -->
-      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{$t('downloads.implementationFrameworks.title')}</h2>
-      <p style="margin-bottom: 2rem; color: #4b5563; line-height: 1.7; font-size: 1.125rem;">
+      <h2 class="section-title">{$t('downloads.implementationFrameworks.title')}</h2>
+      <p class="intro-text">
         {$t('downloads.implementationFrameworks.description')}
       </p>
 
       <!-- Add this right after the Implementation Frameworks introduction paragraph -->
-      <div style="background-color: #f0f4f8; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #2B4B8C;">
-        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #2B4B8C;">{$t('downloads.implementationFrameworks.moreTools.title')}</h3>
-        <p style="color: #4b5563; margin-bottom: 0.5rem;">
+      <div class="info-box">
+        <h3 class="info-title">{$t('downloads.implementationFrameworks.moreTools.title')}</h3>
+        <p class="info-text">
           {$t('downloads.implementationFrameworks.moreTools.description')} 
-          <a href="{base}/framework/tools" style="color: #2B4B8C; text-decoration: underline; font-weight: 500;">
+          <a href="{base}/framework/tools" class="info-link">
             {$t('downloads.implementationFrameworks.moreTools.linkText')}
           </a>
         </p>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; margin-bottom: 3rem;">
-
+      <div class="card-grid">
         <!-- Climate & Energy Governance -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.climateEnergy.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.climateEnergy.description')}</p>
-          <a href={getPdfPath('Climate-Energy-Governance')} download style="display: inline-flex; align-items: center; background-color: #2C8A78; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #2C8A78;">⚡</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.climateEnergy.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.climateEnergy.description')}</p>
+            <a href={getPdfPath('Climate-Energy-Governance')} download class="download-button" style="background-color: #2C8A78;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <!-- Peace & Conflict Resolution -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6B5CA5;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.peace.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.peace.description')}</p>
-          <a href={getPdfPath('Peace-Conflict-Resolution')} download style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #6B5CA5;">🕊️</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.peace.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.peace.description')}</p>
+            <a href={getPdfPath('Peace-Conflict-Resolution')} download class="download-button" style="background-color: #6B5CA5;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
-        <!-- Food Systems & Agriculture Card - Add this to the Implementation Frameworks section -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2e7d32;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.foodSystems.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.foodSystems.description')}</p>
-          <a href={getPdfPath('Food-Agriculture')} download style="display: inline-flex; align-items: center; background-color: #2e7d32; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <!-- Food Systems & Agriculture -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #2e7d32;">🌱</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.foodSystems.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.foodSystems.description')}</p>
+            <a href={getPdfPath('Food-Agriculture')} download class="download-button" style="background-color: #2e7d32;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <!-- Economic Integration -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #B8860B;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.economic.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.economic.description')}</p>
-          <a href={getPdfPath('Economic-Integration')} download style="display: inline-flex; align-items: center; background-color: #B8860B; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #B8860B;">💱</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.economic.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.economic.description')}</p>
+            <a href={getPdfPath('Economic-Integration')} download class="download-button" style="background-color: #B8860B;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <!-- Technology Governance -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #4B8AC2;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.technology.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.technology.description')}</p>
-          <a href={getPdfPath('Technology-Governance')} download style="display: inline-flex; align-items: center; background-color: #4B8AC2; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #4B8AC2;">🤖</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.technology.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.technology.description')}</p>
+            <a href={getPdfPath('Technology-Governance')} download class="download-button" style="background-color: #4B8AC2;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
-        <!-- Educational Systems Card - Add this to the Implementation Frameworks section -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #3f51b5;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.education.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.education.description')}</p>
-          <a href={getPdfPath('Educational-Systems')} download style="display: inline-flex; align-items: center; background-color: #3f51b5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <!-- Educational Systems -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #3f51b5;">🎓</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.education.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.education.description')}</p>
+            <a href={getPdfPath('Educational-Systems')} download class="download-button" style="background-color: #3f51b5;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <!-- Environmental Stewardship -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.environment.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.environment.description')}</p>
-          <a href={getPdfPath('Environmental-Stewardship')} download style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #2D5F2D;">🌿</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.environment.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.environment.description')}</p>
+            <a href={getPdfPath('Environmental-Stewardship')} download class="download-button" style="background-color: #2D5F2D;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
-        <!-- Digital Commons Framework -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6d28d9;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6d28d9;">{$t('downloads.implementationFrameworks.digital.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.digital.description')}</p>
-          <a href={getPdfPath('Digital-Commons-Framework')} download style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <!-- Digital Commons -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #6d28d9;">💻</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #6d28d9;">{$t('downloads.implementationFrameworks.digital.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.digital.description')}</p>
+            <a href={getPdfPath('Digital-Commons-Framework')} download class="download-button" style="background-color: #6d28d9;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <!-- Religious & Spiritual Dialogue -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #9B6A8F;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.spiritual.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.spiritual.description')}</p>
-          <a href={getPdfPath('Spiritual-Dialogue')} download style="display: inline-flex; align-items: center; background-color: #9B6A8F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #9B6A8F;">🕯️</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.spiritual.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.spiritual.description')}</p>
+            <a href={getPdfPath('Spiritual-Dialogue')} download class="download-button" style="background-color: #9B6A8F;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <!-- Integrated Meta-Governance -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #5E4B8B;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.meta.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.meta.description')}</p>
-          <a href={getPdfPath('Meta-Governance')} download style="display: inline-flex; align-items: center; background-color: #5E4B8B; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #5E4B8B;">🔄</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.meta.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.meta.description')}</p>
+            <a href={getPdfPath('Meta-Governance')} download class="download-button" style="background-color: #5E4B8B;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <!-- Method & Tools -->
-        <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D8F85;">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #B8860B;">{$t('downloads.implementationFrameworks.methods-tools.title')}</h2>
-          <p style="color: #4b5563; margin-bottom: 1.5rem;">{$t('downloads.implementationFrameworks.methods-tools.description')}</p>
-          <a href={getPdfPath('Methods-Tools')} download style="display: inline-flex; align-items: center; background-color: #2D8F85; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
-            {$t('downloads.downloadButton')}
-            <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
+        <div class="download-card">
+          <div class="card-emoji" style="color: #2D8F85;">🧰</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.methods-tools.title')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.methods-tools.description')}</p>
+            <a href={getPdfPath('Methods-Tools')} download class="download-button" style="background-color: #2D8F85;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
       
       <!-- Language switcher section -->
-      <div style="border-top: 1px solid #e5e7eb; padding-top: 2rem; margin-top: 2rem;">
-        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; color: #2B4B8C;">{$t('downloads.otherLanguages.title')}</h3>
-        <div style="display: flex; gap: 1rem;">
+      <div class="language-section">
+        <h3 class="language-title">{$t('downloads.otherLanguages.title')}</h3>
+        <div class="language-buttons">
           <button on:click={() => setLocale('en')} style={getLanguageButtonStyle('en')}>
             English
           </button>
@@ -293,10 +519,10 @@
         </div>
       </div>
       
-      <div style="background-color: #e9f2e9; padding: 1.5rem; border-radius: 0.5rem; margin-top: 2rem;">
-        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #2D5F2D;">{$t('downloads.otherFormats.title')}</h3>
-        <p style="color: #4b5563; margin-bottom: 1rem;">
-          {$t('downloads.otherFormats.description')} <a href="{base}/contact" style="color: #DAA520; text-decoration: underline; font-weight: 500;">{$t('downloads.otherFormats.contactLink')}</a>
+      <div class="other-formats">
+        <h3 class="other-formats-title">{$t('downloads.otherFormats.title')}</h3>
+        <p class="other-formats-text">
+          {$t('downloads.otherFormats.description')} <a href="{base}/contact" class="other-formats-link">{$t('downloads.otherFormats.contactLink')}</a>
         </p>
       </div>
     </div>
