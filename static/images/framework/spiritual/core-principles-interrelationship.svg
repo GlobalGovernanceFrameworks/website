@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 950"
+   version="1.1"
+   id="svg81"
+   sodipodi:docname="core-principles-interrelationship.svg"
+   width="900"
+   height="950"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs81" />
+  <sodipodi:namedview
+     id="namedview81"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0575"
+     inkscape:cx="453.4279"
+     inkscape:cy="464.3026"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg81" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="949.88184"
+     fill="#f8f7f2"
+     rx="15"
+     ry="17.810284"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.08965" />
+  <path
+     d="m 0,950 c 225,-50 450,-20 675,-50 225,-30 169,-50 225,-20 v 70 z"
+     fill="#e7f0ea"
+     opacity="0.3"
+     id="path1" />
+  <path
+     d="M 900,84 C 675,134 563,114 338,144 113,174 56,104 0,124 V 84 Z"
+     fill="#e7f0ea"
+     opacity="0.3"
+     id="path2" />
+  <!-- Title -->
+  <g
+     transform="translate(450,60)"
+     id="g2">
+    <rect
+       x="-260"
+       y="-25"
+       width="520"
+       height="40"
+       rx="10"
+       ry="10"
+       fill="#3a866c"
+       opacity="0.9"
+       id="rect2" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="18px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text2">Core Principles: Interrelationship Framework</text>
+  </g>
+  <!-- Center Circle - Shared Vision -->
+  <g
+     transform="translate(450,484)"
+     id="g4">
+    <circle
+       cx="0"
+       cy="0"
+       r="90"
+       fill="#ffffff"
+       stroke="#3a866c"
+       stroke-width="3"
+       id="circle2" />
+    <circle
+       cx="0"
+       cy="0"
+       r="85"
+       fill="#f0f7f4"
+       id="circle3" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text4"><tspan
+         x="0"
+         y="-15"
+         font-size="18px"
+         font-weight="bold"
+         id="tspan3">Shared</tspan><tspan
+         x="0"
+         y="15"
+         font-size="18px"
+         font-weight="bold"
+         id="tspan4">Vision</tspan></text>
+    <!-- Decorative elements -->
+    <path
+       d="m -30,-30 60,60 m -60,0 60,-60"
+       stroke="#5a9378"
+       stroke-width="1"
+       opacity="0.3"
+       id="path4" />
+    <circle
+       cx="0"
+       cy="0"
+       r="30"
+       fill="none"
+       stroke="#5a9378"
+       stroke-width="1"
+       opacity="0.3"
+       id="circle4" />
+  </g>
+  <!-- Principle 1: Inclusivity - Top -->
+  <circle
+     cx="449.05435"
+     cy="202.51064"
+     r="106.40346"
+     fill="#ffffff"
+     stroke="#3a866c"
+     stroke-width="2.71438"
+     id="circle5" />
+  <circle
+     cx="450.47281"
+     cy="203.92908"
+     r="102.92906"
+     fill="#f7f9f8"
+     id="circle6"
+     style="stroke-width:1.10676" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text8"
+     x="450"
+     y="194"><tspan
+       x="450"
+       y="149"
+       font-size="18px"
+       font-weight="bold"
+       id="tspan6">Inclusivity</tspan><tspan
+       x="450"
+       y="174"
+       font-size="12px"
+       font-style="italic"
+       id="tspan7">Full spectrum of spiritual</tspan><tspan
+       x="450"
+       y="194"
+       font-size="12px"
+       font-style="italic"
+       id="tspan8">expression participation</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text11"
+     x="450"
+     y="194"><tspan
+       x="450"
+       y="224"
+       font-size="11px"
+       id="tspan9">• Multiple pathways for participation</tspan><tspan
+       x="450"
+       y="242"
+       font-size="11px"
+       id="tspan10">• Recognition beyond &quot;world religions&quot;</tspan><tspan
+       x="450"
+       y="260"
+       font-size="11px"
+       id="tspan11">• Active outreach to marginalized voices</tspan></text>
+  <!-- Principle 2: Respect - Right -->
+  <circle
+     cx="710"
+     cy="484"
+     r="98"
+     fill="#ffffff"
+     stroke="#3a866c"
+     stroke-width="2.5"
+     id="circle11" />
+  <circle
+     cx="710"
+     cy="484"
+     r="93"
+     fill="#f7f9f8"
+     id="circle12" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text14"
+     x="710"
+     y="484"><tspan
+       x="710"
+       y="439"
+       font-size="18px"
+       font-weight="bold"
+       id="tspan12">Respect</tspan><tspan
+       x="710"
+       y="464"
+       font-size="12px"
+       font-style="italic"
+       id="tspan13">Honor integrity, context,</tspan><tspan
+       x="710"
+       y="484"
+       font-size="12px"
+       font-style="italic"
+       id="tspan14">and boundaries of traditions</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text17"
+     x="710"
+     y="472"><tspan
+       x="710"
+       y="502"
+       font-size="11px"
+       id="tspan15">• Engagement on traditions' own terms</tspan><tspan
+       x="710"
+       y="520"
+       font-size="11px"
+       id="tspan16">• Avoiding appropriation</tspan><tspan
+       x="710"
+       y="538"
+       font-size="11px"
+       id="tspan17">• Respecting sacred time knowledge</tspan></text>
+  <!-- Principle 3: Equity - Bottom -->
+  <circle
+     cx="450"
+     cy="774"
+     r="98"
+     fill="#ffffff"
+     stroke="#3a866c"
+     stroke-width="2.5"
+     id="circle17" />
+  <circle
+     cx="450"
+     cy="774"
+     r="93"
+     fill="#f7f9f8"
+     id="circle18" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text20"
+     x="450"
+     y="774"><tspan
+       x="450"
+       y="729"
+       font-size="18px"
+       font-weight="bold"
+       id="tspan18">Equity</tspan><tspan
+       x="450"
+       y="754"
+       font-size="12px"
+       font-style="italic"
+       id="tspan19">Address power imbalances</tspan><tspan
+       x="450"
+       y="774"
+       font-size="12px"
+       font-style="italic"
+       id="tspan20">ensuring equal dignity</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text23"
+     x="450"
+     y="758"><tspan
+       x="450"
+       y="788"
+       font-size="11px"
+       id="tspan21">• Transparent representation mechanisms</tspan><tspan
+       x="450"
+       y="806"
+       font-size="11px"
+       id="tspan22">• Resource allocation for access</tspan><tspan
+       x="450"
+       y="824"
+       font-size="11px"
+       id="tspan23">• Safeguards against donor influence</tspan></text>
+  <!-- Principle 4: Collaboration - Left -->
+  <circle
+     cx="190"
+     cy="484"
+     r="98"
+     fill="#ffffff"
+     stroke="#3a866c"
+     stroke-width="2.5"
+     id="circle23" />
+  <circle
+     cx="190"
+     cy="484"
+     r="93"
+     fill="#f7f9f8"
+     id="circle24" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text26"
+     x="190"
+     y="484"><tspan
+       x="190"
+       y="439"
+       font-size="18px"
+       font-weight="bold"
+       id="tspan24">Collaboration</tspan><tspan
+       x="190"
+       y="464"
+       font-size="12px"
+       font-style="italic"
+       id="tspan25">Substantive partnerships</tspan><tspan
+       x="190"
+       y="484"
+       font-size="12px"
+       font-style="italic"
+       id="tspan26">for collective impact</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text29"
+     x="190"
+     y="470"><tspan
+       x="190"
+       y="500"
+       font-size="11px"
+       id="tspan27">• Beyond symbolic dialogue to action</tspan><tspan
+       x="190"
+       y="518"
+       font-size="11px"
+       id="tspan28">• Cross-boundary problem solving</tspan><tspan
+       x="190"
+       y="536"
+       font-size="11px"
+       id="tspan29">• Shared metrics with diverse motivations</tspan></text>
+  <!-- Principle 5: Knowledge Integration - Top Right -->
+  <circle
+     cx="640"
+     cy="294"
+     r="98"
+     fill="#ffffff"
+     stroke="#3a866c"
+     stroke-width="2.5"
+     id="circle29" />
+  <circle
+     cx="640"
+     cy="294"
+     r="93"
+     fill="#f7f9f8"
+     id="circle30" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text32"
+     x="640"
+     y="294"><tspan
+       x="640"
+       y="249"
+       font-size="18px"
+       font-weight="bold"
+       id="tspan30">Knowledge Integration</tspan><tspan
+       x="640"
+       y="274"
+       font-size="12px"
+       font-style="italic"
+       id="tspan31">Religious wisdom as valuable</tspan><tspan
+       x="640"
+       y="294"
+       font-size="12px"
+       font-style="italic"
+       id="tspan32">contribution to governance</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text35"
+     x="640"
+     y="278"><tspan
+       x="640"
+       y="308"
+       font-size="11px"
+       id="tspan33">• Formal channels for spiritual insights</tspan><tspan
+       x="640"
+       y="326"
+       font-size="11px"
+       id="tspan34">• Translation methodologies for policy</tspan><tspan
+       x="640"
+       y="344"
+       font-size="11px"
+       id="tspan35">• Diverse epistemologies recognition</tspan></text>
+  <!-- Principle 6: Ritual Literacy - Top Left -->
+  <g
+     transform="translate(260,294)"
+     id="g41">
+    <circle
+       cx="0"
+       cy="0"
+       r="98"
+       fill="#ffffff"
+       stroke="#3a866c"
+       stroke-width="2.5"
+       id="circle35" />
+    <circle
+       cx="0"
+       cy="0"
+       r="93"
+       fill="#f7f9f8"
+       id="circle36" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text38"><tspan
+         x="0"
+         y="-45"
+         font-size="18px"
+         font-weight="bold"
+         id="tspan36">Ritual Literacy</tspan><tspan
+         x="0"
+         y="-20"
+         font-size="12px"
+         font-style="italic"
+         id="tspan37">Honoring sacred time</tspan><tspan
+         x="0"
+         y="0"
+         font-size="12px"
+         font-style="italic"
+         id="tspan38">and ceremonial practice</tspan></text>
+    <!-- Key practices -->
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text41"><tspan
+         x="0"
+         y="30"
+         font-size="11px"
+         id="tspan39">• Multi-tradition calendar awareness</tspan><tspan
+         x="0"
+         y="48"
+         font-size="11px"
+         id="tspan40">• Recognition of diverse time concepts</tspan><tspan
+         x="0"
+         y="66"
+         font-size="11px"
+         id="tspan41">• Appropriate ceremonial integration</tspan></text>
+  </g>
+  <!-- Principle 7: Epistemic Humility - Bottom Right -->
+  <circle
+     cx="640"
+     cy="674"
+     r="98"
+     fill="#ffffff"
+     stroke="#3a866c"
+     stroke-width="2.5"
+     id="circle41" />
+  <circle
+     cx="640"
+     cy="674"
+     r="93"
+     fill="#f7f9f8"
+     id="circle42" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text44"
+     x="640"
+     y="674"><tspan
+       x="640"
+       y="629"
+       font-size="18px"
+       font-weight="bold"
+       id="tspan42">Epistemic Humility</tspan><tspan
+       x="640"
+       y="654"
+       font-size="12px"
+       font-style="italic"
+       id="tspan43">Acknowledging multiple ways</tspan><tspan
+       x="640"
+       y="674"
+       font-size="12px"
+       font-style="italic"
+       id="tspan44">of knowing and limitations</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text47"
+     x="640"
+     y="658"><tspan
+       x="640"
+       y="688"
+       font-size="11px"
+       id="tspan45">• Valuing mystical contemplative insights</tspan><tspan
+       x="640"
+       y="706"
+       font-size="11px"
+       id="tspan46">• Recognizing cultural knowledge contexts</tspan><tspan
+       x="640"
+       y="724"
+       font-size="11px"
+       id="tspan47">• Openness to learn across boundaries</tspan></text>
+  <!-- Principle 8: Accountability - Bottom Left -->
+  <circle
+     cx="260"
+     cy="674"
+     r="98"
+     fill="#ffffff"
+     stroke="#3a866c"
+     stroke-width="2.5"
+     id="circle47" />
+  <circle
+     cx="260"
+     cy="674"
+     r="93"
+     fill="#f7f9f8"
+     id="circle48" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text50"
+     x="260"
+     y="674"><tspan
+       x="260"
+       y="629"
+       font-size="18px"
+       font-weight="bold"
+       id="tspan48">Accountability</tspan><tspan
+       x="260"
+       y="654"
+       font-size="12px"
+       font-style="italic"
+       id="tspan49">Transparent processes and</tspan><tspan
+       x="260"
+       y="674"
+       font-size="12px"
+       font-style="italic"
+       id="tspan50">responsibility for impact</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text53"
+     x="260"
+     y="660"><tspan
+       x="260"
+       y="690"
+       font-size="11px"
+       id="tspan51">• Independent verification mechanisms</tspan><tspan
+       x="260"
+       y="708"
+       font-size="11px"
+       id="tspan52">• Clear paths for corrective action</tspan><tspan
+       x="260"
+       y="726"
+       font-size="11px"
+       id="tspan53">• Sunset clauses for ineffective structures</tspan></text>
+  <!-- Connection Lines Between Principles -->
+  <!-- Primary connections to center -->
+  <g
+     stroke="#3a866c"
+     stroke-width="3"
+     fill="none"
+     opacity="0.6"
+     id="g60"
+     transform="translate(0,84)">
+    <!-- Inclusivity to Center -->
+    <path
+       d="M 450,208 V 310"
+       id="path53" />
+    <!-- Respect to Center -->
+    <path
+       d="M 612,400 H 540"
+       id="path54" />
+    <!-- Equity to Center -->
+    <path
+       d="M 450,592 V 490"
+       id="path55" />
+    <!-- Collaboration to Center -->
+    <path
+       d="m 288,400 h 72"
+       id="path56" />
+    <!-- Knowledge Integration to Center -->
+    <path
+       d="m 570,275 -70,55"
+       id="path57" />
+    <!-- Ritual Literacy to Center -->
+    <path
+       d="m 330,275 70,55"
+       id="path58" />
+    <!-- Epistemic Humility to Center -->
+    <path
+       d="M 570,525 500,470"
+       id="path59" />
+    <!-- Accountability to Center -->
+    <path
+       d="m 330,525 70,-55"
+       id="path60" />
+  </g>
+  <!-- Secondary connections between principles -->
+  <g
+     stroke="#5a9378"
+     stroke-width="1.5"
+     fill="none"
+     stroke-dasharray="5, 3"
+     opacity="0.7"
+     id="g70"
+     transform="translate(0,84)">
+    <!-- Inclusivity to Knowledge Integration -->
+    <path
+       d="m 530,140 h 30"
+       id="path61" />
+    <!-- Inclusivity to Ritual Literacy -->
+    <path
+       d="M 370,140 H 340"
+       id="path62" />
+    <!-- Respect to Epistemic Humility -->
+    <path
+       d="m 700,498 v -6"
+       id="path63" />
+    <!-- Respect to Knowledge Integration -->
+    <path
+       d="m 700,302 v 6"
+       id="path64" />
+    <!-- Equity to Accountability -->
+    <path
+       d="m 352,660 h 6"
+       id="path65" />
+    <!-- Equity to Epistemic Humility -->
+    <path
+       d="m 548,660 h -6"
+       id="path66" />
+    <!-- Collaboration to Ritual Literacy -->
+    <path
+       d="m 205,330 20,-20"
+       id="path67" />
+    <!-- Collaboration to Accountability -->
+    <path
+       d="m 205,470 20,20"
+       id="path68" />
+    <!-- Knowledge Integration to Epistemic Humility -->
+    <path
+       d="M 640,308 V 492"
+       id="path69" />
+    <!-- Ritual Literacy to Accountability -->
+    <path
+       d="M 260,308 V 492"
+       id="path70" />
+  </g>
+  <!-- Dynamic Relationship Descriptions -->
+  <!-- Between Inclusivity and Knowledge Integration -->
+  <g
+     transform="translate(496.77305,362.86525)"
+     id="g71">
+    <rect
+       x="-45"
+       y="-12"
+       width="90"
+       height="24"
+       rx="6"
+       ry="6"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1"
+       id="rect70" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#3a866c"
+       id="text70">Diverse sources</text>
+  </g>
+  <!-- Between Inclusivity and Ritual Literacy -->
+  <g
+     transform="translate(400.39007,363.81087)"
+     id="g72">
+    <rect
+       x="-45"
+       y="-12"
+       width="90"
+       height="24"
+       rx="6"
+       ry="6"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1"
+       id="rect71" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#3a866c"
+       id="text71">Cultural respect</text>
+  </g>
+  <!-- Between Respect and Epistemic Humility -->
+  <g
+     transform="translate(583.69976,556.30496)"
+     id="g73">
+    <rect
+       x="-35"
+       y="-12"
+       width="70"
+       height="24"
+       rx="6"
+       ry="6"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1"
+       id="rect72" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#3a866c"
+       id="text72">Boundaries</text>
+  </g>
+  <!-- Between Respect and Knowledge Integration -->
+  <g
+     transform="translate(569.51537,406.02128)"
+     id="g74">
+    <rect
+       x="-35"
+       y="-12"
+       width="70"
+       height="24"
+       rx="6"
+       ry="6"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1"
+       id="rect73" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#3a866c"
+       id="text73">Attribution</text>
+  </g>
+  <!-- Between Equity and Accountability -->
+  <g
+     transform="translate(398.49882,607.97163)"
+     id="g75">
+    <rect
+       x="-45"
+       y="-12"
+       width="90"
+       height="24"
+       rx="6"
+       ry="6"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1"
+       id="rect74" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#3a866c"
+       id="text74">Fair processes</text>
+  </g>
+  <!-- Between Equity and Epistemic Humility -->
+  <g
+     transform="translate(504.33806,608.91726)"
+     id="g76">
+    <rect
+       x="-45"
+       y="-12"
+       width="90"
+       height="24"
+       rx="6"
+       ry="6"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1"
+       id="rect75" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#3a866c"
+       id="text75">Equal validation</text>
+  </g>
+  <!-- Between Knowledge Integration and Epistemic Humility -->
+  <g
+     transform="translate(576.65485,462.25059)"
+     id="g77">
+    <rect
+       x="-35"
+       y="-12"
+       width="70"
+       height="24"
+       rx="6"
+       ry="6"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1"
+       id="rect76" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#3a866c"
+       id="text76">Ways of knowing</text>
+  </g>
+  <!-- Between Ritual Literacy and Accountability -->
+  <g
+     transform="translate(327.12766,446.17494)"
+     id="g78">
+    <rect
+       x="-35"
+       y="-12"
+       width="70"
+       height="24"
+       rx="6"
+       ry="6"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1"
+       id="rect77" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#3a866c"
+       id="text77">Sacred integrity</text>
+  </g>
+  <!-- Diagram Legend -->
+  <rect
+     x="200"
+     y="889"
+     width="500"
+     height="50"
+     rx="10"
+     ry="10"
+     fill="#ffffff"
+     stroke="#3a866c"
+     stroke-width="1"
+     id="rect78" />
+  <circle
+     cx="260"
+     cy="920"
+     r="12"
+     fill="#f7f9f8"
+     stroke="#3a866c"
+     stroke-width="2"
+     id="circle78" />
+  <text
+     x="280"
+     y="924"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#555555"
+     id="text78">Original Core Principles</text>
+  <circle
+     cx="500"
+     cy="920"
+     r="12"
+     fill="#f7f9f8"
+     stroke="#3a866c"
+     stroke-width="2"
+     opacity="0.8"
+     id="circle79" />
+  <text
+     x="520"
+     y="924"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#555555"
+     id="text79">Emerging Principles</text>
+  <line
+     x1="250"
+     y1="899"
+     x2="270"
+     y2="899"
+     stroke="#3a866c"
+     stroke-width="3"
+     opacity="0.6"
+     id="line79" />
+  <text
+     x="300"
+     y="903"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#555555"
+     id="text80">Direct relationship</text>
+  <line
+     x1="490"
+     y1="899"
+     x2="510"
+     y2="899"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     opacity="0.7"
+     id="line80" />
+  <text
+     x="550"
+     y="903"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#555555"
+     id="text81">Reinforcing relationship</text>
+</svg>

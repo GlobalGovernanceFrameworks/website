@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 800"
+   version="1.1"
+   id="svg62"
+   sodipodi:docname="regional-hub-network-map.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.52875"
+     inkscape:cx="-23.640662"
+     inkscape:cy="308.27423"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg62" />
+  <defs
+     id="defs62" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="800"
+     fill="#f8f7f2"
+     rx="15"
+     ry="15"
+     id="rect1"
+     x="1.0029883"
+     y="-0.33432946" />
+  <path
+     d="M0,800 C200,750 400,780 600,750 S750,700 800,730 V800 H0 Z"
+     fill="#f0e7ea"
+     opacity="0.3"
+     id="path1" />
+  <path
+     d="M800,0 C600,50 500,30 300,60 S50,20 0,40 V0 H800 Z"
+     fill="#f0e7ea"
+     opacity="0.3"
+     id="path2" />
+  <!-- Title -->
+  <g
+     transform="translate(400, 60)"
+     id="g2">
+    <rect
+       x="-180"
+       y="-25"
+       width="360"
+       height="40"
+       rx="10"
+       ry="10"
+       fill="#9B6A8F"
+       opacity="0.9"
+       id="rect2" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="18"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text2">Regional Hub Network Map</text>
+  </g>
+  <!-- Central Hub -->
+  <g
+     transform="translate(400, 400)"
+     id="g6">
+    <circle
+       cx="0"
+       cy="0"
+       r="90"
+       fill="#ffffff"
+       stroke="#9B6A8F"
+       stroke-width="3"
+       id="circle2" />
+    <circle
+       cx="0"
+       cy="0"
+       r="80"
+       fill="#f9f5f8"
+       id="circle3" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#9B6A8F"
+       id="text6"><tspan
+         x="0"
+         y="-20"
+         font-size="16"
+         font-weight="bold"
+         id="tspan3">Global Council</tspan><tspan
+         x="0"
+         y="0"
+         font-size="16"
+         font-weight="bold"
+         id="tspan4">for Religious &amp;</tspan><tspan
+         x="0"
+         y="20"
+         font-size="16"
+         font-weight="bold"
+         id="tspan5">Spiritual Dialogue</tspan></text>
+    <!-- Decorative element -->
+    <circle
+       cx="0"
+       cy="0"
+       r="60"
+       fill="none"
+       stroke="#b78aa3"
+       stroke-width="1"
+       stroke-dasharray="3,3"
+       opacity="0.5"
+       id="circle6" />
+  </g>
+  <!-- Regional Hub 1: North America -->
+  <g
+     transform="translate(400, 180)"
+     id="g13">
+    <circle
+       cx="0"
+       cy="0"
+       r="70"
+       fill="#ffffff"
+       stroke="#b78aa3"
+       stroke-width="2"
+       id="circle7" />
+    <circle
+       cx="0"
+       cy="0"
+       r="65"
+       fill="#f9f5f8"
+       id="circle8" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#9B6A8F"
+       id="text9"><tspan
+         x="0"
+         y="-10"
+         font-size="14"
+         font-weight="bold"
+         id="tspan8">North America</tspan><tspan
+         x="0"
+         y="10"
+         font-size="12"
+         id="tspan9">Hub</tspan></text>
+    <!-- Icon -->
+    <path
+       d="M0,30 L-15,15 L0,25 L15,15 Z"
+       fill="#b78aa3"
+       opacity="0.7"
+       id="path9" />
+  </g>
+  <!-- Regional Hub 2: Latin America -->
+  <g
+     transform="translate(576, 224)"
+     id="g14">
+    <circle
+       cx="0"
+       cy="0"
+       r="70"
+       fill="#ffffff"
+       stroke="#b78aa3"
+       stroke-width="2"
+       id="circle11" />
+    <circle
+       cx="0"
+       cy="0"
+       r="65"
+       fill="#f9f5f8"
+       id="circle12" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#9B6A8F"
+       id="text11"><tspan
+         x="0"
+         y="-10"
+         font-size="14"
+         font-weight="bold"
+         id="tspan10">Latin America</tspan><tspan
+         x="0"
+         y="10"
+         font-size="12"
+         id="tspan11">Hub</tspan></text>
+    <!-- Icon -->
+    <path
+       d="M0,30 L-15,15 L0,25 L15,15 Z"
+       fill="#b78aa3"
+       opacity="0.7"
+       id="path10" />
+  </g>
+  <!-- Regional Hub 3: Europe -->
+  <g
+     transform="translate(620, 400)"
+     id="g15">
+    <circle
+       cx="0"
+       cy="0"
+       r="70"
+       fill="#ffffff"
+       stroke="#b78aa3"
+       stroke-width="2"
+       id="circle14" />
+    <circle
+       cx="0"
+       cy="0"
+       r="65"
+       fill="#f9f5f8"
+       id="circle15" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#9B6A8F"
+       id="text14"><tspan
+         x="0"
+         y="-10"
+         font-size="14"
+         font-weight="bold"
+         id="tspan13">Europe</tspan><tspan
+         x="0"
+         y="10"
+         font-size="12"
+         id="tspan14">Hub</tspan></text>
+    <!-- Icon -->
+    <path
+       d="M0,30 L-15,15 L0,25 L15,15 Z"
+       fill="#b78aa3"
+       opacity="0.7"
+       id="path11" />
+  </g>
+  <!-- Regional Hub 4: Africa -->
+  <g
+     transform="translate(576, 576)"
+     id="g16">
+    <circle
+       cx="0"
+       cy="0"
+       r="70"
+       fill="#ffffff"
+       stroke="#b78aa3"
+       stroke-width="2"
+       id="circle16" />
+    <circle
+       cx="0"
+       cy="0"
+       r="65"
+       fill="#f9f5f8"
+       id="circle17" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#9B6A8F"
+       id="text15"><tspan
+         x="0"
+         y="-10"
+         font-size="14"
+         font-weight="bold"
+         id="tspan15">Africa</tspan><tspan
+         x="0"
+         y="10"
+         font-size="12"
+         id="tspan16">Hub</tspan></text>
+    <!-- Icon -->
+    <path
+       d="M0,30 L-15,15 L0,25 L15,15 Z"
+       fill="#b78aa3"
+       opacity="0.7"
+       id="path12" />
+  </g>
+  <!-- Regional Hub 5: Middle East -->
+  <!-- Regional Hub 6: South Asia -->
+  <circle
+     cx="224"
+     cy="576"
+     r="70"
+     fill="#ffffff"
+     stroke="#b78aa3"
+     stroke-width="2"
+     id="circle20" />
+  <circle
+     cx="224"
+     cy="576"
+     r="65"
+     fill="#f9f5f8"
+     id="circle21" />
+  <path
+     d="m 224,606 -15,-15 15,10 15,-10 z"
+     fill="#b78aa3"
+     opacity="0.7"
+     id="path14" />
+  <!-- Regional Hub 7: East Asia -->
+  <g
+     transform="translate(180, 400)"
+     id="g19">
+    <circle
+       cx="0"
+       cy="0"
+       r="70"
+       fill="#ffffff"
+       stroke="#b78aa3"
+       stroke-width="2"
+       id="circle22" />
+    <circle
+       cx="0"
+       cy="0"
+       r="65"
+       fill="#f9f5f8"
+       id="circle23" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#9B6A8F"
+       id="text18"><tspan
+         x="0"
+         y="-10"
+         font-size="14"
+         font-weight="bold"
+         id="tspan21">East Asia</tspan><tspan
+         x="0"
+         y="10"
+         font-size="12"
+         id="tspan22">Hub</tspan></text>
+    <!-- Icon -->
+    <path
+       d="M0,30 L-15,15 L0,25 L15,15 Z"
+       fill="#b78aa3"
+       opacity="0.7"
+       id="path15" />
+  </g>
+  <!-- Regional Hub 8: Pacific -->
+  <g
+     transform="translate(224, 224)"
+     id="g20">
+    <circle
+       cx="0"
+       cy="0"
+       r="70"
+       fill="#ffffff"
+       stroke="#b78aa3"
+       stroke-width="2"
+       id="circle24" />
+    <circle
+       cx="0"
+       cy="0"
+       r="65"
+       fill="#f9f5f8"
+       id="circle25" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#9B6A8F"
+       id="text19"><tspan
+         x="0"
+         y="-10"
+         font-size="14"
+         font-weight="bold"
+         id="tspan23">Pacific</tspan><tspan
+         x="0"
+         y="10"
+         font-size="12"
+         id="tspan24">Hub</tspan></text>
+    <!-- Icon -->
+    <path
+       d="M0,30 L-15,15 L0,25 L15,15 Z"
+       fill="#b78aa3"
+       opacity="0.7"
+       id="path16" />
+  </g>
+  <!-- Connecting Lines to Center -->
+  <g
+     stroke="#9B6A8F"
+     stroke-width="3"
+     fill="none"
+     id="g55">
+    <!-- North America to Center -->
+    <path
+       d="M400,250 L400,310"
+       id="path48" />
+    <!-- Latin America to Center -->
+    <path
+       d="M517,293 L460,340"
+       id="path49" />
+    <!-- Europe to Center -->
+    <path
+       d="M550,400 L490,400"
+       id="path50" />
+    <!-- Africa to Center -->
+    <path
+       d="M517,507 L460,460"
+       id="path51" />
+    <!-- Middle East to Center -->
+    <path
+       d="M400,550 L400,490"
+       id="path52" />
+    <!-- South Asia to Center -->
+    <path
+       d="M283,507 L340,460"
+       id="path53" />
+    <!-- East Asia to Center -->
+    <path
+       d="M250,400 L310,400"
+       id="path54" />
+    <!-- Pacific to Center -->
+    <path
+       d="M283,293 L340,340"
+       id="path55" />
+  </g>
+  <circle
+     cx="400"
+     cy="620"
+     r="70"
+     fill="#ffffff"
+     stroke="#b78aa3"
+     stroke-width="2"
+     id="circle18" />
+  <circle
+     cx="400"
+     cy="620"
+     r="65"
+     fill="#f9f5f8"
+     id="circle19" />
+  <path
+     d="m 400,650 -15,-15 15,10 15,-10 z"
+     fill="#b78aa3"
+     opacity="0.7"
+     id="path13" />
+  <!-- Connecting Arcs Between Adjacent Hubs -->
+  <g
+     stroke="#b78aa3"
+     stroke-width="2"
+     fill="none"
+     stroke-dasharray="5,3"
+     id="g61">
+    <path
+       d="M460,200 L540,250"
+       id="path56" />
+    <path
+       d="M620,320 L620,480"
+       id="path57" />
+    <path
+       d="M540,550 L460,600"
+       id="path58" />
+    <path
+       d="M260,550 L340,600"
+       id="path59" />
+    <path
+       d="M180,320 L180,480"
+       id="path60" />
+    <path
+       d="M260,250 L340,200"
+       id="path61" />
+  </g>
+  <!-- Outer Connecting Circle -->
+  <circle
+     cx="400"
+     cy="400"
+     r="275"
+     stroke="#b78aa3"
+     stroke-width="1.5"
+     fill="none"
+     stroke-dasharray="10,10"
+     opacity="0.6"
+     id="circle61" />
+  <!-- Community Nodes - small clusters around each hub -->
+  <!-- North America Communities -->
+  <g
+     transform="translate(400, 180)"
+     id="g7">
+    <circle
+       cx="40"
+       cy="-40"
+       r="10"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle1" />
+    <circle
+       cx="-35"
+       cy="-30"
+       r="12"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle4" />
+    <circle
+       cx="30"
+       cy="40"
+       r="8"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle5" />
+    <line
+       x1="0"
+       y1="0"
+       x2="40"
+       y2="-40"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line5" />
+    <line
+       x1="0"
+       y1="0"
+       x2="-35"
+       y2="-30"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line6" />
+    <line
+       x1="0"
+       y1="0"
+       x2="30"
+       y2="40"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line7" />
+  </g>
+  <!-- Latin America Communities -->
+  <g
+     transform="translate(576, 224)"
+     id="g21">
+    <circle
+       cx="40"
+       cy="20"
+       r="12"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle9" />
+    <circle
+       cx="-25"
+       cy="35"
+       r="9"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle10" />
+    <circle
+       cx="-30"
+       cy="-30"
+       r="10"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle13" />
+    <line
+       x1="0"
+       y1="0"
+       x2="40"
+       y2="20"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line13" />
+    <line
+       x1="0"
+       y1="0"
+       x2="-25"
+       y2="35"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line14" />
+    <line
+       x1="0"
+       y1="0"
+       x2="-30"
+       y2="-30"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line15" />
+  </g>
+  <!-- Europe Communities -->
+  <g
+     transform="translate(620, 400)"
+     id="g30">
+    <circle
+       cx="40"
+       cy="-15"
+       r="11"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle26" />
+    <circle
+       cx="30"
+       cy="30"
+       r="8"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle27" />
+    <circle
+       cx="-40"
+       cy="10"
+       r="10"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle28" />
+    <line
+       x1="0"
+       y1="0"
+       x2="40"
+       y2="-15"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line28" />
+    <line
+       x1="0"
+       y1="0"
+       x2="30"
+       y2="30"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line29" />
+    <line
+       x1="0"
+       y1="0"
+       x2="-40"
+       y2="10"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line30" />
+  </g>
+  <!-- Africa Communities -->
+  <g
+     transform="translate(576, 576)"
+     id="g34">
+    <circle
+       cx="-35"
+       cy="-25"
+       r="8"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle30" />
+    <circle
+       cx="25"
+       cy="-35"
+       r="10"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle31" />
+    <circle
+       cx="35"
+       cy="15"
+       r="12"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle32" />
+    <line
+       x1="0"
+       y1="0"
+       x2="-35"
+       y2="-25"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line32" />
+    <line
+       x1="0"
+       y1="0"
+       x2="25"
+       y2="-35"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line33" />
+    <line
+       x1="0"
+       y1="0"
+       x2="35"
+       y2="15"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line34" />
+  </g>
+  <!-- Middle East Communities -->
+  <circle
+     cx="370"
+     cy="585"
+     r="9"
+     fill="#d9bdd0"
+     stroke="#9b6a8f"
+     stroke-width="1"
+     id="circle34" />
+  <circle
+     cx="440"
+     cy="600"
+     r="11"
+     fill="#d9bdd0"
+     stroke="#9b6a8f"
+     stroke-width="1"
+     id="circle35" />
+  <circle
+     cx="425"
+     cy="650"
+     r="10"
+     fill="#d9bdd0"
+     stroke="#9b6a8f"
+     stroke-width="1"
+     id="circle36" />
+  <line
+     x1="400"
+     y1="620"
+     x2="370"
+     y2="585"
+     stroke="#b78aa3"
+     stroke-width="1.5"
+     opacity="0.6"
+     id="line36" />
+  <line
+     x1="400"
+     y1="620"
+     x2="440"
+     y2="600"
+     stroke="#b78aa3"
+     stroke-width="1.5"
+     opacity="0.6"
+     id="line37" />
+  <line
+     x1="400"
+     y1="620"
+     x2="425"
+     y2="650"
+     stroke="#b78aa3"
+     stroke-width="1.5"
+     opacity="0.6"
+     id="line38" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#9b6a8f"
+     id="text16"
+     x="400"
+     y="620"><tspan
+       x="400"
+       y="610"
+       font-size="14px"
+       font-weight="bold"
+       id="tspan17">Middle East</tspan><tspan
+       x="400"
+       y="630"
+       font-size="12px"
+       id="tspan18">Hub</tspan></text>
+  <!-- South Asia Communities -->
+  <g
+     transform="translate(224, 576)"
+     id="g42">
+    <circle
+       cx="35"
+       cy="-30"
+       r="12"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle38" />
+    <circle
+       cx="-35"
+       cy="-15"
+       r="9"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle39" />
+    <circle
+       cx="15"
+       cy="35"
+       r="10"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle40" />
+    <line
+       x1="0"
+       y1="0"
+       x2="35"
+       y2="-30"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line40" />
+    <line
+       x1="0"
+       y1="0"
+       x2="-35"
+       y2="-15"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line41" />
+    <line
+       x1="0"
+       y1="0"
+       x2="15"
+       y2="35"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line42" />
+  </g>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#9b6a8f"
+     id="text17"
+     x="224"
+     y="576"><tspan
+       x="224"
+       y="566"
+       font-size="14px"
+       font-weight="bold"
+       id="tspan19">South Asia</tspan><tspan
+       x="224"
+       y="586"
+       font-size="12px"
+       id="tspan20">Hub</tspan></text>
+  <!-- East Asia Communities -->
+  <g
+     transform="translate(180, 400)"
+     id="g46">
+    <circle
+       cx="-35"
+       cy="25"
+       r="10"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle42" />
+    <circle
+       cx="-15"
+       cy="-40"
+       r="8"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle43" />
+    <circle
+       cx="40"
+       cy="15"
+       r="11"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle44" />
+    <line
+       x1="0"
+       y1="0"
+       x2="-35"
+       y2="25"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line44" />
+    <line
+       x1="0"
+       y1="0"
+       x2="-15"
+       y2="-40"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line45" />
+    <line
+       x1="0"
+       y1="0"
+       x2="40"
+       y2="15"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line46" />
+  </g>
+  <!-- Pacific Communities -->
+  <g
+     transform="translate(224, 224)"
+     id="g50">
+    <circle
+       cx="-25"
+       cy="35"
+       r="10"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle46" />
+    <circle
+       cx="40"
+       cy="10"
+       r="9"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle47" />
+    <circle
+       cx="15"
+       cy="-40"
+       r="12"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle48" />
+    <line
+       x1="0"
+       y1="0"
+       x2="-25"
+       y2="35"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line48" />
+    <line
+       x1="0"
+       y1="0"
+       x2="40"
+       y2="10"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line49" />
+    <line
+       x1="0"
+       y1="0"
+       x2="15"
+       y2="-40"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line50" />
+  </g>
+  <!-- Legend -->
+  <rect
+     x="100"
+     y="710"
+     width="600"
+     height="70"
+     rx="11"
+     ry="10"
+     fill="#ffffff"
+     stroke="#9B6A8F"
+     stroke-width="1"
+     id="rect61" />
+  <g
+     transform="translate(130, 730)"
+     id="g51">
+    <circle
+       cx="0"
+       cy="0"
+       r="10"
+       fill="#ffffff"
+       stroke="#9B6A8F"
+       stroke-width="2"
+       id="circle50" />
+    <text
+       x="20"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#555555"
+       id="text50">Regional Hub</text>
+  </g>
+  <g
+     transform="translate(280, 730)"
+     id="g52">
+    <circle
+       cx="0"
+       cy="0"
+       r="7"
+       fill="#d9bdd0"
+       stroke="#9B6A8F"
+       stroke-width="1"
+       id="circle51" />
+    <text
+       x="20"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#555555"
+       id="text51">Local Community</text>
+  </g>
+  <g
+     transform="translate(450, 730)"
+     id="g53">
+    <line
+       x1="-15"
+       y1="0"
+       x2="15"
+       y2="0"
+       stroke="#9B6A8F"
+       stroke-width="3"
+       id="line52" />
+    <text
+       x="30"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#555555"
+       id="text52">Hub-Global Connection</text>
+  </g>
+  <g
+     transform="translate(160, 760)"
+     id="g54">
+    <line
+       x1="-15"
+       y1="0"
+       x2="15"
+       y2="0"
+       stroke="#b78aa3"
+       stroke-width="2"
+       stroke-dasharray="5,3"
+       id="line53" />
+    <text
+       x="50"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#555555"
+       id="text53">Inter-Regional Cooperation</text>
+  </g>
+  <g
+     transform="translate(450, 760)"
+     id="g56">
+    <line
+       x1="-15"
+       y1="0"
+       x2="15"
+       y2="0"
+       stroke="#b78aa3"
+       stroke-width="1.5"
+       opacity="0.6"
+       id="line54" />
+    <text
+       x="50"
+       y="5"
+       font-family="Arial, sans-serif"
+       font-size="12"
+       fill="#555555"
+       id="text54">Hub-Community Connection</text>
+  </g>
+</svg>

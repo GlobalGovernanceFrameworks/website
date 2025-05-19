@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 450"
+   version="1.1"
+   id="svg21"
+   sodipodi:docname="feedback-loop-diagram.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview21"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.3293607"
+     inkscape:cx="291.49349"
+     inkscape:cy="312.18012"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg21" />
+  <!-- Title -->
+  <text
+     x="400"
+     y="30"
+     font-family="Arial"
+     font-size="20"
+     font-weight="bold"
+     text-anchor="middle"
+     id="text1">Youth Justice Feedback Loop</text>
+  <!-- Main Circle -->
+  <circle
+     cx="400"
+     cy="220"
+     r="160"
+     fill="none"
+     stroke="#333"
+     stroke-width="3"
+     stroke-dasharray="10,5"
+     id="circle1" />
+  <!-- Inner Nodes -->
+  <!-- Planning -->
+  <circle
+     cx="400"
+     cy="100"
+     r="40"
+     fill="#6fa8dc"
+     id="circle2" />
+  <text
+     x="400"
+     y="100"
+     font-family="Arial"
+     font-size="14"
+     font-weight="bold"
+     fill="white"
+     text-anchor="middle"
+     id="text2">Planning</text>
+  <text
+     x="400"
+     y="120"
+     font-family="Arial"
+     font-size="12"
+     fill="white"
+     text-anchor="middle"
+     id="text3">with Youth</text>
+  <!-- Implementation -->
+  <circle
+     cx="579.73407"
+     cy="223.45744"
+     r="53.031918"
+     fill="#6fa8dc"
+     id="circle3"
+     style="stroke-width:1.32579" />
+  <text
+     x="580"
+     y="220"
+     font-family="Arial"
+     font-size="14"
+     font-weight="bold"
+     fill="white"
+     text-anchor="middle"
+     id="text4">Implementation</text>
+  <text
+     x="580"
+     y="240"
+     font-family="Arial"
+     font-size="12"
+     fill="white"
+     text-anchor="middle"
+     id="text5">by Communities</text>
+  <!-- Evaluation -->
+  <circle
+     cx="396.54254"
+     cy="347.18085"
+     r="47.180851"
+     fill="#6fa8dc"
+     id="circle5"
+     style="stroke-width:1.17952" />
+  <text
+     x="400"
+     y="340"
+     font-family="Arial"
+     font-size="14"
+     font-weight="bold"
+     fill="white"
+     text-anchor="middle"
+     id="text6">Evaluation</text>
+  <text
+     x="400"
+     y="360"
+     font-family="Arial"
+     font-size="12"
+     fill="white"
+     text-anchor="middle"
+     id="text7">with Stakeholders</text>
+  <!-- Adaptation -->
+  <circle
+     cx="220.53191"
+     cy="220"
+     r="49.042553"
+     fill="#6fa8dc"
+     id="circle7"
+     style="stroke-width:1.22606" />
+  <text
+     x="220"
+     y="220"
+     font-family="Arial"
+     font-size="14"
+     font-weight="bold"
+     fill="white"
+     text-anchor="middle"
+     id="text8">Adaptation</text>
+  <text
+     x="220"
+     y="240"
+     font-family="Arial"
+     font-size="12"
+     fill="white"
+     text-anchor="middle"
+     id="text9">for Improvement</text>
+  <!-- Central Youth Voice -->
+  <circle
+     cx="400"
+     cy="220"
+     r="60"
+     fill="#e06666"
+     id="circle9" />
+  <text
+     x="400"
+     y="215"
+     font-family="Arial"
+     font-size="18"
+     font-weight="bold"
+     fill="white"
+     text-anchor="middle"
+     id="text10">Youth</text>
+  <text
+     x="400"
+     y="235"
+     font-family="Arial"
+     font-size="16"
+     fill="white"
+     text-anchor="middle"
+     id="text11">Voice</text>
+  <!-- Connecting Arrows -->
+  <!-- Planning to Implementation -->
+  <path
+     d="m 430,125 c 46.70213,-0.10638 72.48227,11.98582 103.93617,43.19149"
+     fill="none"
+     stroke="#333333"
+     stroke-width="3"
+     marker-end="url(#arrowhead)"
+     id="path11"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="489"
+     y="129"
+     font-family="Arial"
+     font-size="12px"
+     text-anchor="middle"
+     id="text12">Design</text>
+  <!-- Implementation to Evaluation -->
+  <path
+     d="m 555,245 c -23.33333,36.66667 -42.65957,56.95035 -94.68085,71.48936"
+     fill="none"
+     stroke="#333333"
+     stroke-width="3"
+     marker-end="url(#arrowhead)"
+     id="path12"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="481"
+     y="285"
+     font-family="Arial"
+     font-size="12px"
+     text-anchor="middle"
+     id="text13">Measure</text>
+  <!-- Evaluation to Adaptation -->
+  <path
+     d="m 370,315 c -44.04255,0.6383 -80.39007,-7.7305 -103.7234,-41.06383"
+     fill="none"
+     stroke="#333333"
+     stroke-width="3"
+     marker-end="url(#arrowhead)"
+     id="path13"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="315"
+     y="285"
+     font-family="Arial"
+     font-size="12px"
+     text-anchor="middle"
+     id="text14">Review</text>
+  <!-- Adaptation to Planning -->
+  <path
+     d="m 245,190 c 23.33333,-33.33333 52.76596,-52.34042 98.93617,-59.68085"
+     fill="none"
+     stroke="#333333"
+     stroke-width="3"
+     marker-end="url(#arrowhead)"
+     id="path14"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="303"
+     y="133"
+     font-family="Arial"
+     font-size="12px"
+     text-anchor="middle"
+     id="text15">Refine</text>
+  <!-- Data Flow to Dashboard -->
+  <rect
+     x="620"
+     y="300"
+     width="120"
+     height="60"
+     rx="10"
+     fill="#93c47d"
+     id="rect15" />
+  <text
+     x="680"
+     y="330"
+     font-family="Arial"
+     font-size="14"
+     font-weight="bold"
+     fill="white"
+     text-anchor="middle"
+     id="text16">Metrics</text>
+  <text
+     x="680"
+     y="350"
+     font-family="Arial"
+     font-size="14"
+     fill="white"
+     text-anchor="middle"
+     id="text17">Dashboard</text>
+  <path
+     d="M 430 365 Q 520 380 620 330"
+     fill="none"
+     stroke="#333"
+     stroke-width="2"
+     stroke-dasharray="5,3"
+     marker-end="url(#arrowhead)"
+     id="path17" />
+  <text
+     x="532"
+     y="380"
+     font-family="Arial"
+     font-size="12px"
+     text-anchor="middle"
+     id="text18">Data</text>
+  <!-- Arrowhead definition -->
+  <defs
+     id="defs18">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="0"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#333"
+         id="polygon18" />
+    </marker>
+  </defs>
+  <!-- Legend -->
+  <rect
+     x="70"
+     y="367"
+     width="15"
+     height="15"
+     fill="#6fa8dc"
+     id="rect18" />
+  <text
+     x="95"
+     y="379"
+     font-family="Arial"
+     font-size="12px"
+     text-anchor="start"
+     id="text19">Process Stage</text>
+  <rect
+     x="70"
+     y="392"
+     width="15"
+     height="15"
+     fill="#e06666"
+     id="rect19" />
+  <text
+     x="95"
+     y="404"
+     font-family="Arial"
+     font-size="12px"
+     text-anchor="start"
+     id="text20">Core Element</text>
+  <rect
+     x="70"
+     y="417"
+     width="15"
+     height="15"
+     fill="#93c47d"
+     id="rect20" />
+  <text
+     x="95"
+     y="429"
+     font-family="Arial"
+     font-size="12px"
+     text-anchor="start"
+     id="text21">Data Collection</text>
+</svg>

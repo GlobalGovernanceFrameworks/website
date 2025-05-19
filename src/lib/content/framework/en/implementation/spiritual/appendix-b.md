@@ -19,6 +19,9 @@ Mandated inclusion requirements for diverse sub-groups within traditions to ensu
 ### Epistemic Justice
 The fair inclusion and validation of different ways of knowing and understanding reality, particularly those that have been historically marginalized. In the context of the framework, this involves recognizing and respecting diverse approaches to knowledge including revelation, oral tradition, embodied wisdom, contemplative insight, and rational inquiry without privileging one epistemology over others.
 
+### Mystical and Transpersonal Epistemologies
+Ways of knowing that arise from profound states of consciousness beyond ordinary awareness, including contemplative absorption, unitive experiences, visionary states, entheogenic insights, near-death experiences, and other non-ordinary states of consciousness. These experiential modes of knowledge acquisition are foundational to many spiritual traditions and provide distinctive perspectives on interconnection, ethical relationships, and the nature of reality that can inform governance approaches. While often marginalized in contemporary policy contexts, these epistemologies offer insights particularly relevant to ecological ethics, intergenerational justice, and holistic wellbeing.
+
 ### Cultural Appropriation
 The adoption of elements from a culture or spiritual tradition by members of a different (typically dominant) culture in ways that are exploitative, disrespectful, or fail to acknowledge their origins and significance. The framework explicitly guards against appropriation through protocols ensuring proper attribution, permission, and context when sharing spiritual practices or wisdom.
 

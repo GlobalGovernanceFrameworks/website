@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 800"
+   version="1.1"
+   id="svg52"
+   sodipodi:docname="implementation-timeline.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs52" />
+  <sodipodi:namedview
+     id="namedview52"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.74776542"
+     inkscape:cx="522.2226"
+     inkscape:cy="366.42507"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg52" />
+  <!-- Background -->
+  <rect
+     width="1200"
+     height="800"
+     fill="#f8fafc"
+     rx="10"
+     ry="10"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="600"
+     y="40"
+     font-family="Arial"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1e40af"
+     id="text1">Justice Systems Implementation Timeline: 2025-2035</text>
+  <text
+     x="600"
+     y="70"
+     font-family="Arial"
+     font-size="16"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text2">10-Year Phased Implementation with Critical Path Milestones</text>
+  <!-- Timeline Grid -->
+  <!-- Vertical time markers -->
+  <line
+     x1="250"
+     y1="100"
+     x2="250"
+     y2="700"
+     stroke="#e5e7eb"
+     stroke-width="1"
+     id="line2" />
+  <line
+     x1="370"
+     y1="100"
+     x2="370"
+     y2="700"
+     stroke="#e5e7eb"
+     stroke-width="1"
+     id="line3" />
+  <line
+     x1="490"
+     y1="100"
+     x2="490"
+     y2="700"
+     stroke="#e5e7eb"
+     stroke-width="1"
+     id="line4" />
+  <line
+     x1="610"
+     y1="100"
+     x2="610"
+     y2="700"
+     stroke="#e5e7eb"
+     stroke-width="1"
+     id="line5" />
+  <line
+     x1="730"
+     y1="100"
+     x2="730"
+     y2="700"
+     stroke="#e5e7eb"
+     stroke-width="1"
+     id="line6" />
+  <line
+     x1="850"
+     y1="100"
+     x2="850"
+     y2="700"
+     stroke="#e5e7eb"
+     stroke-width="1"
+     id="line7" />
+  <line
+     x1="970"
+     y1="100"
+     x2="970"
+     y2="700"
+     stroke="#e5e7eb"
+     stroke-width="1"
+     id="line8" />
+  <line
+     x1="1090"
+     y1="100"
+     x2="1090"
+     y2="700"
+     stroke="#e5e7eb"
+     stroke-width="1"
+     id="line9" />
+  <!-- Years labels -->
+  <text
+     x="250"
+     y="120"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text9">2025</text>
+  <text
+     x="370"
+     y="120"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text10">2027</text>
+  <text
+     x="490"
+     y="120"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text11">2029</text>
+  <text
+     x="610"
+     y="120"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text12">2031</text>
+  <text
+     x="730"
+     y="120"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text13">2033</text>
+  <text
+     x="850"
+     y="120"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text14">2035</text>
+  <!-- Phase labels -->
+  <rect
+     x="83.307434"
+     y="140"
+     width="166.71648"
+     height="40"
+     rx="5.5572157"
+     fill="#1e40af"
+     id="rect14"
+     style="stroke-width:1.05425" />
+  <text
+     x="167"
+     y="165"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text15">PHASE 1: FOUNDATION</text>
+  <rect
+     x="83.307434"
+     y="290"
+     width="166.71648"
+     height="40"
+     rx="5.5572157"
+     fill="#3b82f6"
+     id="rect15"
+     style="stroke-width:1.05425" />
+  <text
+     x="167"
+     y="315"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text16">PHASE 2: PILOT SCALE</text>
+  <rect
+     x="56.596939"
+     y="440"
+     width="194.13148"
+     height="40"
+     rx="6.4710498"
+     fill="#60a5fa"
+     id="rect16"
+     style="stroke-width:1.13763" />
+  <text
+     x="155"
+     y="465"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text17">PHASE 3: CONSOLIDATION</text>
+  <rect
+     x="1.8505821"
+     y="590"
+     width="246.95554"
+     height="40"
+     rx="8.2318516"
+     fill="#93c5fd"
+     id="rect17"
+     style="stroke-width:1.28311" />
+  <text
+     x="127"
+     y="615"
+     font-family="Arial"
+     font-size="14px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text18">PHASE 4: FULL IMPLEMENTATION</text>
+  <!-- Phase 1 timeline bars -->
+  <!-- Critical: Global Justice Oversight Body -->
+  <rect
+     x="250.27249"
+     y="190.27249"
+     width="152.00452"
+     height="24.455023"
+     rx="5.7001691"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="2.04498"
+     id="rect18" />
+  <text
+     x="260"
+     y="207"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text19">Global Justice Oversight Body*</text>
+  <!-- Critical: Regional Justice Hubs -->
+  <rect
+     x="300.28925"
+     y="220.28923"
+     width="117.92919"
+     height="24.421535"
+     rx="5.8964596"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="2.07847"
+     id="rect19" />
+  <text
+     x="310"
+     y="237"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text20">Regional Justice Hubs*</text>
+  <!-- Pilot regions selection -->
+  <rect
+     x="250.11644"
+     y="250.11644"
+     width="80.829872"
+     height="24.767117"
+     rx="4.0414934"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.73288"
+     id="rect20" />
+  <text
+     x="260"
+     y="267"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text21">Pilot Selection*</text>
+  <!-- Global Justice Fund -->
+  <rect
+     x="332.0296"
+     y="250.01466"
+     width="67.645317"
+     height="24.97068"
+     rx="3.1220915"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.52932"
+     id="rect21" />
+  <text
+     x="335"
+     y="267"
+     font-family="Arial"
+     font-size="10px"
+     fill="#ffffff"
+     id="text22">Justice Fund*</text>
+  <!-- Implementation Steering Committee -->
+  <rect
+     x="260.1008"
+     y="160.10081"
+     width="101.894"
+     height="24.79838"
+     rx="4.3668861"
+     fill="#2563eb"
+     stroke="#1e40af"
+     stroke-width="1.20162"
+     id="rect22" />
+  <text
+     x="270"
+     y="177"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text23">Steering Committee</text>
+  <!-- Contingency buffer -->
+  <!-- Phase 2 timeline bars -->
+  <!-- Critical: Government Buy-in -->
+  <rect
+     x="370.23138"
+     y="310.23138"
+     width="104.67169"
+     height="24.537214"
+     rx="5.2335844"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.96279"
+     id="rect24" />
+  <text
+     x="380"
+     y="327"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text24">Government Buy-in*</text>
+  <!-- Expand Pilots -->
+  <rect
+     x="370.14252"
+     y="340.14252"
+     width="78.78669"
+     height="24.714966"
+     rx="4.2974558"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.78503"
+     id="rect25" />
+  <text
+     x="380"
+     y="357"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text25">Expand Pilots*</text>
+  <!-- Ethics Advisory Board -->
+  <rect
+     x="380.13303"
+     y="370.13303"
+     width="64.808624"
+     height="24.733915"
+     rx="4.8606467"
+     fill="#3b82f6"
+     stroke="#1d4ed8"
+     stroke-width="1.26608"
+     id="rect26" />
+  <text
+     x="385"
+     y="387"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text26">Ethics Board</text>
+  <!-- AI Tools -->
+  <rect
+     x="445.08282"
+     y="370.08282"
+     width="75.228455"
+     height="24.834356"
+     rx="4.1033702"
+     fill="#3b82f6"
+     stroke="#1d4ed8"
+     stroke-width="1.16564"
+     id="rect27" />
+  <text
+     x="455"
+     y="387"
+     font-family="Arial"
+     font-size="10px"
+     fill="#ffffff"
+     id="text27">AI Legal Tools</text>
+  <!-- Contingency buffer -->
+  <!-- Phase 3 timeline bars -->
+  <!-- Critical: Scaled Legal Aid -->
+  <rect
+     x="490.07077"
+     y="460.07077"
+     width="60.222668"
+     height="24.858454"
+     rx="3.6133599"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.64155"
+     id="rect29" />
+  <text
+     x="495"
+     y="477"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text29">Legal Aid 90%*</text>
+  <!-- Critical: Jurisdictional Compliance -->
+  <rect
+     x="490.06201"
+     y="490.06201"
+     width="58.902863"
+     height="24.875969"
+     rx="3.5341718"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.62403"
+     id="rect30" />
+  <text
+     x="495"
+     y="507"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text30">Compliance 90%*</text>
+  <!-- Critical: Global Justice Fund -->
+  <rect
+     x="490.16467"
+     y="520.16467"
+     width="90.428986"
+     height="24.670679"
+     rx="4.5214496"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.82932"
+     id="rect31" />
+  <text
+     x="495"
+     y="537"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text31">$30B Fund Target*</text>
+  <!-- Expand to 80% jurisdictions -->
+  <rect
+     x="552"
+     y="460"
+     width="100"
+     height="25"
+     rx="3"
+     fill="#60a5fa"
+     stroke="#3b82f6"
+     stroke-width="1"
+     id="rect32" />
+  <text
+     x="572"
+     y="477"
+     font-family="Arial"
+     font-size="10px"
+     fill="#ffffff"
+     id="text32">Expand to 80% Jurisdictions</text>
+  <!-- Climate Justice Tribunals -->
+  <rect
+     x="550.04761"
+     y="490.04761"
+     width="84.280983"
+     height="24.904816"
+     rx="3.612042"
+     fill="#60a5fa"
+     stroke="#3b82f6"
+     stroke-width="1.09518"
+     id="rect33" />
+  <text
+     x="555"
+     y="507"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text33">Climate Tribunals</text>
+  <!-- Advanced AI Applications -->
+  <rect
+     x="620.06244"
+     y="520.06244"
+     width="63.582649"
+     height="24.875143"
+     rx="3.814959"
+     fill="#60a5fa"
+     stroke="#3b82f6"
+     stroke-width="1.12486"
+     id="rect34" />
+  <text
+     x="625"
+     y="537"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text34">Advanced AI</text>
+  <!-- Phase 4 timeline bars -->
+  <!-- Critical: 95% Jurisdictions -->
+  <rect
+     x="696.09198"
+     y="610.09198"
+     width="88.872849"
+     height="24.816072"
+     rx="3.8088365"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.68393"
+     id="rect35" />
+  <text
+     x="701"
+     y="627"
+     font-family="Arial"
+     font-size="10px"
+     fill="#ffffff"
+     id="text35">95% Jurisdictions*</text>
+  <!-- Critical: 70% Case Resolution -->
+  <rect
+     x="680.12329"
+     y="640.12329"
+     width="82.153542"
+     height="24.753468"
+     rx="4.107677"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.74653"
+     id="rect36" />
+  <text
+     x="685"
+     y="657"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text36">70% Resolution*</text>
+  <!-- Critical: Shared Governance -->
+  <rect
+     x="786.20251"
+     y="610.20251"
+     width="98.377129"
+     height="24.594912"
+     rx="4.9188566"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.90509"
+     id="rect37" />
+  <text
+     x="791"
+     y="627"
+     font-family="Arial"
+     font-size="10px"
+     fill="#ffffff"
+     id="text37">Shared Governance*</text>
+  <!-- Advanced AI in 95% jurisdictions -->
+  <rect
+     x="790.09363"
+     y="640.09363"
+     width="85.221725"
+     height="24.812683"
+     rx="4.261086"
+     fill="#93c5fd"
+     stroke="#60a5fa"
+     stroke-width="1.18732"
+     id="rect38" />
+  <text
+     x="795"
+     y="657"
+     font-family="Arial"
+     font-size="10"
+     fill="white"
+     id="text38">AI 95% Coverage</text>
+  <!-- 90% Public Trust Achievement -->
+  <rect
+     x="886.07849"
+     y="610.07849"
+     width="53.88483"
+     height="24.842995"
+     rx="4.0413623"
+     fill="#93c5fd"
+     stroke="#60a5fa"
+     stroke-width="1.15701"
+     id="rect39" />
+  <text
+     x="891"
+     y="627"
+     font-family="Arial"
+     font-size="10px"
+     fill="#ffffff"
+     id="text39">Trust 90%</text>
+  <!-- Phase timelines -->
+  <line
+     x1="250"
+     y1="217.52719"
+     x2="370"
+     y2="217.52719"
+     stroke="#1e40af"
+     stroke-width="3"
+     id="line39" />
+  <line
+     x1="370"
+     y1="337.65485"
+     x2="490"
+     y2="337.65485"
+     stroke="#3b82f6"
+     stroke-width="3"
+     id="line40" />
+  <line
+     x1="490.33432"
+     y1="487.33133"
+     x2="670.33435"
+     y2="487.33133"
+     stroke="#60a5fa"
+     stroke-width="3"
+     id="line41" />
+  <line
+     x1="671.67163"
+     y1="637.62982"
+     x2="851.67163"
+     y2="637.62982"
+     stroke="#93c5fd"
+     stroke-width="3"
+     id="line42" />
+  <!-- Critical path connections -->
+  <line
+     x1="332"
+     y1="200"
+     x2="332"
+     y2="220"
+     stroke="#991b1b"
+     stroke-width="1.5"
+     stroke-dasharray="4"
+     id="line43" />
+  <line
+     x1="332"
+     y1="245"
+     x2="332"
+     y2="250"
+     stroke="#991b1b"
+     stroke-width="1.5"
+     stroke-dasharray="4"
+     id="line44" />
+  <line
+     x1="332"
+     y1="265"
+     x2="332"
+     y2="310"
+     stroke="#991b1b"
+     stroke-width="1.5"
+     stroke-dasharray="4"
+     id="line45" />
+  <line
+     x1="430"
+     y1="327"
+     x2="430"
+     y2="340"
+     stroke="#991b1b"
+     stroke-width="1.5"
+     stroke-dasharray="4"
+     id="line46" />
+  <line
+     x1="425"
+     y1="365"
+     x2="490"
+     y2="460"
+     stroke="#991b1b"
+     stroke-width="1.5"
+     stroke-dasharray="4"
+     id="line47" />
+  <line
+     x1="515"
+     y1="545"
+     x2="515"
+     y2="610"
+     stroke="#991b1b"
+     stroke-width="1.5"
+     stroke-dasharray="4"
+     id="line48" />
+  <line
+     x1="680"
+     y1="625"
+     x2="680"
+     y2="640"
+     stroke="#991b1b"
+     stroke-width="1.5"
+     stroke-dasharray="4"
+     id="line49" />
+  <!-- Legend -->
+  <!-- Regular milestone -->
+  <rect
+     x="950"
+     y="710"
+     width="20"
+     height="15"
+     rx="3"
+     fill="#60a5fa"
+     stroke="#3b82f6"
+     stroke-width="1"
+     id="rect49" />
+  <text
+     x="980"
+     y="722"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text49">Regular Milestone</text>
+  <!-- Critical milestone -->
+  <rect
+     x="950"
+     y="735"
+     width="20"
+     height="15"
+     rx="3"
+     fill="#dc2626"
+     stroke="#991b1b"
+     stroke-width="1.5"
+     id="rect50" />
+  <text
+     x="980"
+     y="747"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text50">Critical Path Milestone*</text>
+  <!-- Contingency buffer -->
+  <rect
+     x="950"
+     y="760"
+     width="20"
+     height="15"
+     rx="3"
+     fill="#fecaca"
+     stroke="#dc2626"
+     stroke-width="1"
+     opacity="0.5"
+     id="rect51" />
+  <text
+     x="980"
+     y="772"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text51">Contingency Buffer</text>
+  <!-- Phase timeline -->
+  <line
+     x1="950"
+     y1="790"
+     x2="990"
+     y2="790"
+     stroke="#3b82f6"
+     stroke-width="3"
+     id="line51" />
+  <text
+     x="1040"
+     y="795"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text52">Phase Timeline</text>
+</svg>

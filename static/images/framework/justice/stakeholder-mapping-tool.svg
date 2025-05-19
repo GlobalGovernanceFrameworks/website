@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="700" viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="700" fill="white"/>
+  
+  <!-- Title and Subtitle -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">Visual Stakeholder Mapping Tool</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-style="italic">Justice Systems Implementation Framework</text>
+  
+  <!-- Main grid with labels -->
+  <rect x="150" y="150" width="500" height="400" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <!-- Horizontal and vertical dividing lines -->
+  <line x1="150" y1="350" x2="650" y2="350" stroke="#333" stroke-width="2"/>
+  <line x1="400" y1="150" x2="400" y2="550" stroke="#333" stroke-width="2"/>
+  
+  <!-- Axis labels -->
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Interest in the Framework</text>
+  <text x="130" y="350" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" transform="rotate(-90, 130, 350)" font-weight="bold">Influence on Implementation</text>
+  
+  <!-- Quadrant labels -->
+  <text x="275" y="185" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">High Interest</text>
+  <text x="275" y="210" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">High Influence</text>
+  <text x="275" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">(Actively Engage)</text>
+  
+  <text x="525" y="185" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Low Interest</text>
+  <text x="525" y="210" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">High Influence</text>
+  <text x="525" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">(Keep Informed)</text>
+  
+  <text x="275" y="385" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">High Interest</text>
+  <text x="275" y="410" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Low Influence</text>
+  <text x="275" y="435" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">(Involve in Consultations)</text>
+  
+  <text x="525" y="385" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Low Interest</text>
+  <text x="525" y="410" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">Low Influence</text>
+  <text x="525" y="435" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">(Monitor and Update)</text>
+  
+  <!-- Example placeholders -->
+  <g opacity="0.3">
+    <rect x="175" y="250" width="200" height="80" rx="10" ry="10" fill="#4CAF50" stroke="#333" stroke-width="1"/>
+    <text x="275" y="290" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">e.g., Indigenous Communities</text>
+    
+    <rect x="425" y="250" width="200" height="80" rx="10" ry="10" fill="#2196F3" stroke="#333" stroke-width="1"/>
+    <text x="525" y="290" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">e.g., Policymakers</text>
+    
+    <rect x="175" y="450" width="200" height="80" rx="10" ry="10" fill="#FFC107" stroke="#333" stroke-width="1"/>
+    <text x="275" y="490" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">e.g., Youth Organizations</text>
+    
+    <rect x="425" y="450" width="200" height="80" rx="10" ry="10" fill="#9E9E9E" stroke="#333" stroke-width="1"/>
+    <text x="525" y="490" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">e.g., Legal Practitioners</text>
+  </g>
+  
+  <!-- Instructions -->
+  <rect x="150" y="580" width="500" height="100" fill="#f8f8f8" stroke="#333" stroke-width="1"/>
+  <text x="400" y="600" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Instructions</text>
+  <text x="160" y="625" font-family="Arial, sans-serif" font-size="12" text-anchor="start">1. Plot each stakeholder group on the matrix based on their influence and interest.</text>
+  <text x="160" y="645" font-family="Arial, sans-serif" font-size="12" text-anchor="start">2. For each quadrant, follow the suggested engagement approach shown in parentheses.</text>
+  <text x="160" y="665" font-family="Arial, sans-serif" font-size="12" text-anchor="start">3. Revisit and update this mapping annually or after major implementation milestones.</text>
+</svg>

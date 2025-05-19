@@ -40,6 +40,7 @@
   <p>{$t('home.whyExists.paragraph2')}</p>
   <p>{$t('home.whyExists.paragraph3')}</p>
   <p>{$t('home.whyExists.paragraph4')}</p>
+  <!-- <p>{$t('home.whyExists.paragraph5')}</p> to be included when the time is right, or never -->
 </InfoBox>
 
 <!-- Hero Section -->

@@ -195,3 +195,29 @@ The framework incorporates these lessons by:
 - Developing clear pathways from dialogue to concrete action
 
 By learning from these successful initiatives, the framework builds upon proven approaches while adapting them to the specific needs of global governance dialogue.
+
+### Cross-Tradition Ethical Values Mapping
+
+![Cross-Tradition Ethical Values Mapping](/images/framework/spiritual/cross-tradition-values.svg)
+
+### Common Ethical Values Across Traditions
+
+| Core Value | Abrahamic Traditions | Dharmic Traditions | Indigenous Traditions | East Asian Traditions | African Traditional | Secular Humanism |
+|------------|----------------------|--------------------|-----------------------|----------------------|---------------------|------------------|
+| **Care for Creation** | Stewardship of creation; Divine mandate to tend the Earth | Ahimsa (non-harm); Reverence for all life forms | Kinship with nature; Sacred relationships with land and creatures | Harmony with nature; Balance of natural forces | Earth as sacred ancestor; Community includes non-human beings | Environmental ethics; Ecological interdependence |
+| **Human Dignity** | Imago Dei (created in God's image); Sacred worth of each person | Atman (divine self); Inherent dignity of consciousness | Sacred personhood; Community-based identity | Ren (humaneness); Inherent worth of each person | Ubuntu (personhood through others); Community-centered dignity | Human rights; Inherent worth independent of supernatural beliefs |
+| **Truthfulness** | Covenant and testimony; Bearing witness to truth | Satya (truth principle); Alignment of word and reality | Ancestral wisdom; Fidelity to received knowledge | Cheng (sincerity); Alignment of interior and exterior | Ancestral integrity; Truth as communal fidelity | Intellectual integrity; Evidence-based honesty |
+| **Compassion** | Mercy/Rahma/Chesed; Divine attribute humans should emulate | Karuna/Daya; Recognition of shared suffering | Reciprocity; Mutual care obligations | Ci/Jin; Empathetic response to others | Communal care; Extended family obligations | Empathy and solidarity; Natural human connection |
+| **Justice** | Righteousness; Divine order reestablished | Dharma; Cosmic order and right action | Right relationship; Balance in all interactions | Yi (righteousness); Proper social order | Ma'at; Cosmic and social balance | Fairness; Equitable social arrangements |
+| **Wisdom** | Divine gift; Discernment of God's will | Prajna; Insight beyond conceptual knowledge | Elder knowledge; Accumulated experience | Zhi; Practical understanding of Way | Ancestral guidance; Communal knowledge | Critical thinking; Rational evaluation of evidence |
+| **Self-Discipline** | Spiritual practice; Resistance to temptation | Tapas/Samyama; Intentional cultivation of mind | Initiation practices; Learning proper bounds | Li (ritual propriety); Disciplined conduct | Communal rites; Self in social context | Rational self-control; Evidence-based practices |
+
+### Governance Applications
+
+Despite different metaphysical foundations, these shared values can inform:
+
+1. **Environmental Policy** - Protection frameworks drawing on diverse traditions' care for creation
+2. **Human Rights** - Affirmation of dignity across cultural contexts
+3. **Transparency Protocols** - Multiple traditions' emphasis on truthfulness
+4. **Social Support Systems** - Various compassion-based approaches
+5. **Conflict Resolution** - Justice principles from multiple traditions

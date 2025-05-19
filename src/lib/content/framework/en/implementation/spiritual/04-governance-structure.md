@@ -72,6 +72,88 @@ For disputes that cannot be resolved through normal deliberation:
 - Mediation follows a trauma-informed protocol that acknowledges historical wounds
 - If mediation fails, the Advisory Board appoints a new mediator within 30 days via majority vote
 
+### Deadlock Resolution Process
+
+When the GCRSD faces deadlock on critical decisions despite standard consensus-seeking and voting procedures, the following structured resolution process shall be implemented:
+
+#### Stage 1: Deep Listening Process (Duration: 2-3 weeks)
+- **Sacred Pause**: Formal acknowledgment of deadlock triggering a mandatory 72-hour reflection period
+- **Position Documentation**: Each perspective documented by neutral facilitators in standardized format
+- **Underlying Concerns Mapping**: Facilitated process identifying deeper interests beneath stated positions
+- **Circular Dialogue**: Structured format where each representative articulates others' positions before their own
+- **Tradition-Specific Consultation**: Representatives consult with broader communities they represent
+
+#### Stage 2: Collaborative Resolution Attempts (Duration: 1-2 months)
+- **Working Group Formation**: Equal representation from opposing viewpoints plus neutral facilitators
+- **Alternative Generation**: Structured brainstorming process creating minimum 7 alternative approaches
+- **Principled Evaluation**: Assessment of alternatives against framework's core principles
+- **Bridging Document**: Development of potential compromise positions
+- **Spiritual Discernment**: Tradition-appropriate reflection practices before reconvening
+- **Revised Proposal**: Working group presents modified approach addressing core concerns
+
+#### Stage 3: Formal Arbitration Process (Duration: If necessary, 1 month)
+- **Arbitration Panel Selection**: 
+  - 3-5 members drawn from Advisory Board plus external experts
+  - Composition representing diverse epistemological approaches
+  - No direct stake in specific outcome but deep understanding of framework principles
+  - Gender and regional balance requirements
+  - Unanimous approval required from all key stakeholder groups
+
+- **Submission Process**:
+  - Comprehensive documentation of positions and previous resolution attempts
+  - Written statements from each perspective (max 3,000 words)
+  - Responses to standardized question set examining alignment with core principles
+  - Impact assessment on affected communities
+  - Alternative proposals with implementation implications
+
+- **Deliberation Procedure**:
+  - Initial private review of all materials
+  - Clarification questions to stakeholders
+  - Structured hearing with equal time allocations
+  - Private deliberation using modified Delphi method
+  - Draft decision with reasoning circulated to parties
+  - Final resolution incorporating feedback where appropriate
+
+- **Decision Parameters**:
+  - Binding for a specified time period (typically 1-2 years)
+  - Required alignment with framework's core principles
+  - Inclusion of minority perspective acknowledgment
+  - Implementation guidelines with clear metrics
+  - Scheduled review based on real-world impacts
+  - Dissent recording mechanism for transparency
+
+#### Stage 4: Implementation & Learning (Duration: Ongoing)
+- **Structured Implementation**: Detailed action plan with responsibility assignments
+- **Monitoring System**: Regular assessment of resolution effectiveness
+- **Documentation**: Case study development for future reference
+- **Revision Process**: Scheduled review with potential adjustment
+- **Procedural Learning**: Analysis of deadlock causes to improve future processes
+
+### Special Considerations
+
+#### Theological Boundaries
+When deadlock involves matters of fundamental theological importance where compromise may violate core beliefs:
+- **Parallelism Option**: Allowing multiple approaches in different contexts rather than forced consensus
+- **Abstention Protocol**: Framework for principled non-participation in specific initiatives
+- **Boundaries Document**: Clear articulation of areas beyond negotiation for each tradition
+- **Alternative Contribution Pathways**: Methods for traditions to support shared goals while honoring boundaries
+
+#### Culture-Specific Elements
+- **Adapted Rituals**: Integration of tradition-specific reconciliation practices
+- **Elder Councils**: Special role for wisdom figures in certain cultural contexts
+- **Indigenous Protocols**: Honoring unique decision processes of Indigenous traditions
+- **Time Considerations**: Flexibility for traditions with different temporal approaches to decisions
+
+#### Power Balance Safeguards
+- **Facilitation Rotation**: Ensuring no single tradition repeatedly leads conflict resolution
+- **Language Equity**: Translation services and terminology agreements
+- **Resource Support**: Ensuring under-resourced traditions can fully participate
+- **External Validation**: Independent assessment of process fairness
+
+### Case Application Example (fictive)
+
+When the GCRSD deadlocked on appropriate protocols for sacred site access during a major climate initiative, the resolution process revealed that the apparent theological conflict masked practical concerns about implementation. By separating principled boundaries from practical administration, and developing a tiered access system with tradition-specific protocols, the deadlock was resolved. The arbitration panel helped craft language acknowledging absolute protection for certain sites while establishing a co-stewardship model for others. The resulting "Sacred Places Protocol" has since become a model for similar initiatives.
+
 #### Terms and Renewal
 
 - Representatives serve three-year terms, staggered to ensure continuity

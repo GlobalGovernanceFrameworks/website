@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 700"
+   version="1.1"
+   id="svg60"
+   sodipodi:docname="risk-prioritization-matrix.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview60"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2085714"
+     inkscape:cx="500.1773"
+     inkscape:cy="350"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg60" />
+  <!-- Background -->
+  <rect
+     width="1000"
+     height="700"
+     fill="#f8fafc"
+     rx="10"
+     ry="10"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="500"
+     y="40"
+     font-family="Arial"
+     font-size="24"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1e40af"
+     id="text1">Justice Systems Risk Prioritization Matrix</text>
+  <text
+     x="500"
+     y="70"
+     font-family="Arial"
+     font-size="16"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text2">Challenges, Impact Assessment, and Mitigation Strategies</text>
+  <!-- Matrix Grid -->
+  <rect
+     x="150"
+     y="150"
+     width="600"
+     height="400"
+     fill="#f8fafc"
+     stroke="#94a3b8"
+     stroke-width="1"
+     id="rect2" />
+  <!-- Grid Lines -->
+  <line
+     x1="150"
+     y1="250"
+     x2="750"
+     y2="250"
+     stroke="#94a3b8"
+     stroke-width="1"
+     stroke-dasharray="5,5"
+     id="line2" />
+  <line
+     x1="150"
+     y1="350"
+     x2="750"
+     y2="350"
+     stroke="#94a3b8"
+     stroke-width="1"
+     stroke-dasharray="5,5"
+     id="line3" />
+  <line
+     x1="150"
+     y1="450"
+     x2="750"
+     y2="450"
+     stroke="#94a3b8"
+     stroke-width="1"
+     stroke-dasharray="5,5"
+     id="line4" />
+  <line
+     x1="350"
+     y1="150"
+     x2="350"
+     y2="550"
+     stroke="#94a3b8"
+     stroke-width="1"
+     stroke-dasharray="5,5"
+     id="line5" />
+  <line
+     x1="550"
+     y1="150"
+     x2="550"
+     y2="550"
+     stroke="#94a3b8"
+     stroke-width="1"
+     stroke-dasharray="5,5"
+     id="line6" />
+  <!-- Axis Labels -->
+  <text
+     x="450"
+     y="596"
+     font-family="Arial"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1e40af"
+     id="text6">LIKELIHOOD</text>
+  <text
+     x="-350"
+     y="60"
+     font-family="Arial"
+     font-size="18px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1e40af"
+     transform="rotate(-90)"
+     id="text7">IMPACT</text>
+  <!-- Axis Values -->
+  <text
+     x="250"
+     y="575"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text8">LOW</text>
+  <text
+     x="450"
+     y="575"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text9">MEDIUM</text>
+  <text
+     x="650"
+     y="575"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="middle"
+     fill="#1e3a8a"
+     id="text10">HIGH</text>
+  <text
+     x="135"
+     y="500"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="end"
+     fill="#1e3a8a"
+     id="text11">LOW</text>
+  <text
+     x="135"
+     y="350"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="end"
+     fill="#1e3a8a"
+     id="text12">MEDIUM</text>
+  <text
+     x="135"
+     y="200"
+     font-family="Arial"
+     font-size="14"
+     text-anchor="end"
+     fill="#1e3a8a"
+     id="text13">HIGH</text>
+  <!-- Background Intensity Colors -->
+  <rect
+     x="150"
+     y="150"
+     width="200"
+     height="100"
+     fill="#fee2e2"
+     opacity="0.3"
+     id="rect13" />
+  <rect
+     x="350"
+     y="150"
+     width="200"
+     height="100"
+     fill="#ef4444"
+     opacity="0.3"
+     id="rect14" />
+  <rect
+     x="550"
+     y="150"
+     width="200"
+     height="100"
+     fill="#b91c1c"
+     opacity="0.3"
+     id="rect15" />
+  <rect
+     x="150"
+     y="250"
+     width="200"
+     height="100"
+     fill="#dbeafe"
+     opacity="0.3"
+     id="rect16" />
+  <rect
+     x="350"
+     y="250"
+     width="200"
+     height="100"
+     fill="#fee2e2"
+     opacity="0.3"
+     id="rect17" />
+  <rect
+     x="550"
+     y="250"
+     width="200"
+     height="100"
+     fill="#ef4444"
+     opacity="0.3"
+     id="rect18" />
+  <rect
+     x="150"
+     y="350"
+     width="200"
+     height="100"
+     fill="#dbeafe"
+     opacity="0.3"
+     id="rect19" />
+  <rect
+     x="350"
+     y="350"
+     width="200"
+     height="100"
+     fill="#dbeafe"
+     opacity="0.3"
+     id="rect20" />
+  <rect
+     x="550"
+     y="350"
+     width="200"
+     height="100"
+     fill="#fee2e2"
+     opacity="0.3"
+     id="rect21" />
+  <rect
+     x="150"
+     y="450"
+     width="200"
+     height="100"
+     fill="#f0f9ff"
+     opacity="0.3"
+     id="rect22" />
+  <rect
+     x="350"
+     y="450"
+     width="200"
+     height="100"
+     fill="#dbeafe"
+     opacity="0.3"
+     id="rect23" />
+  <rect
+     x="550"
+     y="450"
+     width="200"
+     height="100"
+     fill="#dbeafe"
+     opacity="0.3"
+     id="rect24" />
+  <!-- Risk Circles -->
+  <!-- Political Resistance -->
+  <circle
+     cx="650"
+     cy="180"
+     r="40"
+     fill="#1e40af"
+     opacity="0.8"
+     id="circle24" />
+  <text
+     x="650"
+     y="175"
+     font-family="Arial"
+     font-size="12"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text24">Political</text>
+  <text
+     x="650"
+     y="195"
+     font-family="Arial"
+     font-size="12"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text25">Resistance</text>
+  <!-- Resource Disparities -->
+  <circle
+     cx="580"
+     cy="300"
+     r="40"
+     fill="#3b82f6"
+     opacity="0.8"
+     id="circle25" />
+  <path
+     d="M 508.13239,250.93381 789.2435,414.89362"
+     stroke="#3b82f6"
+     stroke-width="1.5"
+     marker-end="url(#arrowhead)"
+     id="path41"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="580"
+     y="295"
+     font-family="Arial"
+     font-size="12"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text26">Resource</text>
+  <text
+     x="580"
+     y="315"
+     font-family="Arial"
+     font-size="12"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text27">Disparities</text>
+  <!-- Technological Challenges -->
+  <circle
+     cx="450.4137"
+     cy="317.104"
+     r="37.895981"
+     fill="#60a5fa"
+     opacity="0.8"
+     id="circle27"
+     style="stroke-width:1.08274" />
+  <text
+     x="450"
+     y="315"
+     font-family="Arial"
+     font-size="11"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text28">Technological</text>
+  <text
+     x="450"
+     y="335"
+     font-family="Arial"
+     font-size="11"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text29">Challenges</text>
+  <!-- Stakeholder Fatigue -->
+  <circle
+     cx="400"
+     cy="400"
+     r="35"
+     fill="#93c5fd"
+     opacity="0.8"
+     id="circle29" />
+  <text
+     x="400"
+     y="395"
+     font-family="Arial"
+     font-size="11"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text30">Stakeholder</text>
+  <text
+     x="400"
+     y="415"
+     font-family="Arial"
+     font-size="11"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text31">Fatigue</text>
+  <!-- Legal Harmonization -->
+  <circle
+     cx="480"
+     cy="230"
+     r="35"
+     fill="#3b82f6"
+     opacity="0.8"
+     id="circle31" />
+  <text
+     x="480"
+     y="225"
+     font-family="Arial"
+     font-size="11"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text32">Legal</text>
+  <text
+     x="480"
+     y="245"
+     font-family="Arial"
+     font-size="11"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text33">Harmonization</text>
+  <!-- Regional Variations -->
+  <!-- High-Capacity Region -->
+  <circle
+     cx="250"
+     cy="240"
+     r="15"
+     fill="#4338ca"
+     stroke="#1e40af"
+     stroke-width="2"
+     stroke-dasharray="5,3"
+     id="circle33" />
+  <text
+     x="255"
+     y="265"
+     font-family="Arial"
+     font-size="10"
+     fill="#1e40af"
+     id="text34">High-Capacity</text>
+  <text
+     x="255"
+     y="280"
+     font-family="Arial"
+     font-size="10"
+     fill="#1e40af"
+     id="text35">Region Var.</text>
+  <!-- Low-Capacity Region -->
+  <circle
+     cx="690"
+     cy="350"
+     r="15"
+     fill="#4338ca"
+     stroke="#1e40af"
+     stroke-width="2"
+     stroke-dasharray="5,3"
+     id="circle35" />
+  <text
+     x="695"
+     y="375"
+     font-family="Arial"
+     font-size="10"
+     fill="#1e40af"
+     id="text36">Low-Capacity</text>
+  <text
+     x="695"
+     y="390"
+     font-family="Arial"
+     font-size="10"
+     fill="#1e40af"
+     id="text37">Region Var.</text>
+  <!-- Mitigation Strategy Connections -->
+  <path
+     d="m 682.2695,202.62411 107.80142,57.51773"
+     stroke="#1e40af"
+     stroke-width="1.5"
+     marker-end="url(#arrowhead)"
+     id="path37"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 616.40662,310.21277 170.35461,42.34042"
+     stroke="#3b82f6"
+     stroke-width="1.5"
+     marker-end="url(#arrowhead)"
+     id="path38"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 483.09693,334.31442 787.58866,498.74705"
+     stroke="#60a5fa"
+     stroke-width="1.5"
+     marker-end="url(#arrowhead)"
+     id="path39"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 429.78723,415.96927 788.41608,577.0922"
+     stroke="#93c5fd"
+     stroke-width="1.5"
+     marker-end="url(#arrowhead)"
+     id="path40"
+     sodipodi:nodetypes="cc" />
+  <!-- Mitigation Strategies -->
+  <rect
+     x="800"
+     y="260"
+     width="160"
+     height="40"
+     rx="5"
+     fill="#1e40af"
+     opacity="0.8"
+     id="rect41" />
+  <text
+     x="880"
+     y="282"
+     font-family="Arial"
+     font-size="10"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text41">DIPLOMATIC ENGAGEMENT</text>
+  <text
+     x="880"
+     y="295"
+     font-family="Arial"
+     font-size="8"
+     text-anchor="middle"
+     fill="white"
+     id="text42">Incentives  Public Advocacy</text>
+  <rect
+     x="800"
+     y="340"
+     width="160"
+     height="40"
+     rx="5"
+     fill="#3b82f6"
+     opacity="0.8"
+     id="rect42" />
+  <text
+     x="880"
+     y="362"
+     font-family="Arial"
+     font-size="10"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text43">TIERED FUNDING ALLOCATION</text>
+  <text
+     x="880"
+     y="375"
+     font-family="Arial"
+     font-size="8"
+     text-anchor="middle"
+     fill="white"
+     id="text44">Capacity Building  Resource Sharing</text>
+  <rect
+     x="800"
+     y="420"
+     width="160"
+     height="40"
+     rx="5"
+     fill="#60a5fa"
+     opacity="0.8"
+     id="rect44" />
+  <text
+     x="880"
+     y="442"
+     font-family="Arial"
+     font-size="10"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text45">CYBERSECURITY PROTOCOLS</text>
+  <text
+     x="880"
+     y="455"
+     font-family="Arial"
+     font-size="8"
+     text-anchor="middle"
+     fill="white"
+     id="text46">Bias Mitigation  Redundant Systems</text>
+  <rect
+     x="800"
+     y="500"
+     width="160"
+     height="40"
+     rx="5"
+     fill="#93c5fd"
+     opacity="0.8"
+     id="rect46" />
+  <text
+     x="880"
+     y="522"
+     font-family="Arial"
+     font-size="10"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text47">STREAMLINED ENGAGEMENT</text>
+  <text
+     x="880"
+     y="535"
+     font-family="Arial"
+     font-size="8"
+     text-anchor="middle"
+     fill="white"
+     id="text48">Capacity Support  Rotational Roles</text>
+  <rect
+     x="800"
+     y="580"
+     width="160"
+     height="40"
+     rx="5"
+     fill="#bfdbfe"
+     opacity="0.8"
+     id="rect48" />
+  <text
+     x="880"
+     y="602"
+     font-family="Arial"
+     font-size="10"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="white"
+     id="text49">CONTINUOUS ASSESSMENT</text>
+  <text
+     x="880"
+     y="615"
+     font-family="Arial"
+     font-size="8"
+     text-anchor="middle"
+     fill="white"
+     id="text50">Biannual Reviews  Regional Adaptation</text>
+  <!-- Legend -->
+  <!-- Risk Levels -->
+  <rect
+     x="170"
+     y="620"
+     width="20"
+     height="20"
+     fill="#f0f9ff"
+     opacity="0.3"
+     stroke="#94a3b8"
+     stroke-width="1"
+     id="rect50" />
+  <text
+     x="200"
+     y="635"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text51">Low Risk</text>
+  <rect
+     x="270"
+     y="620"
+     width="20"
+     height="20"
+     fill="#dbeafe"
+     opacity="0.3"
+     stroke="#94a3b8"
+     stroke-width="1"
+     id="rect51" />
+  <text
+     x="300"
+     y="635"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text52">Moderate Risk</text>
+  <rect
+     x="400"
+     y="620"
+     width="20"
+     height="20"
+     fill="#fee2e2"
+     opacity="0.3"
+     stroke="#94a3b8"
+     stroke-width="1"
+     id="rect52" />
+  <text
+     x="430"
+     y="635"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text53">High Risk</text>
+  <rect
+     x="500"
+     y="620"
+     width="20"
+     height="20"
+     fill="#ef4444"
+     opacity="0.3"
+     stroke="#94a3b8"
+     stroke-width="1"
+     id="rect53" />
+  <text
+     x="530"
+     y="635"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text54">Critical Risk</text>
+  <rect
+     x="614"
+     y="620"
+     width="20"
+     height="20"
+     fill="#b91c1c"
+     opacity="0.3"
+     stroke="#94a3b8"
+     stroke-width="1"
+     id="rect54" />
+  <text
+     x="644"
+     y="635"
+     font-family="Arial"
+     font-size="14px"
+     fill="#1e3a8a"
+     id="text55">Severe Risk</text>
+  <!-- Challenge Types -->
+  <circle
+     cx="170"
+     cy="660"
+     r="10"
+     fill="#1e40af"
+     opacity="0.8"
+     id="circle55" />
+  <text
+     x="190"
+     y="665"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text56">Political</text>
+  <circle
+     cx="270"
+     cy="660"
+     r="10"
+     fill="#3b82f6"
+     opacity="0.8"
+     id="circle56" />
+  <text
+     x="290"
+     y="665"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text57">Resource</text>
+  <circle
+     cx="365"
+     cy="660"
+     r="10"
+     fill="#60a5fa"
+     opacity="0.8"
+     id="circle57" />
+  <text
+     x="385"
+     y="665"
+     font-family="Arial"
+     font-size="14"
+     fill="#1e3a8a"
+     id="text58">Technological</text>
+  <circle
+     cx="488"
+     cy="660"
+     r="10"
+     fill="#93c5fd"
+     opacity="0.8"
+     id="circle58" />
+  <text
+     x="508"
+     y="665"
+     font-family="Arial"
+     font-size="14px"
+     fill="#1e3a8a"
+     id="text59">Stakeholder</text>
+  <circle
+     cx="598"
+     cy="660"
+     r="10"
+     fill="#4338ca"
+     stroke="#1e40af"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     id="circle59" />
+  <text
+     x="618"
+     y="665"
+     font-family="Arial"
+     font-size="14px"
+     fill="#1e3a8a"
+     id="text60">Regional Variation</text>
+  <!-- Arrowhead Definition -->
+  <defs
+     id="defs60">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="0"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#1e40af"
+         id="polygon60" />
+    </marker>
+  </defs>
+</svg>

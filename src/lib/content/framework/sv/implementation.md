@@ -125,7 +125,7 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 
 ### Nivå 2: System för långsiktigt välmående
 - [Teknikstyrning](/framework/docs/implementation/technology) (Under granskning)
-- [Finansiella system](/framework/docs/implementation/finance) (Planerad)
+- [Finansiella system](/framework/docs/implementation/finance) (Kommer snart)
 - [Utbildningssystem](/framework/docs/implementation/education)
 - [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)
 - [Miljöhushållning](/framework/docs/implementation/environment) (Under granskning)

@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="svg46"
+   sodipodi:docname="sacred-governance-ecosystem.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs46" />
+  <sodipodi:namedview
+     id="namedview46"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="400.35461"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg46" />
+  <!-- Background -->
+  <rect
+     width="800"
+     height="600"
+     fill="#f8f7f2"
+     rx="15"
+     ry="15"
+     id="rect1" />
+  <!-- Decorative background elements -->
+  <path
+     d="M0,600 C200,550 400,580 600,500 S750,450 800,400 V600 H0 Z"
+     fill="#e7f0ea"
+     opacity="0.5"
+     id="path1" />
+  <path
+     d="M800,0 C600,50 500,100 300,50 S50,120 0,200 V0 H800 Z"
+     fill="#e7f0ea"
+     opacity="0.5"
+     id="path2" />
+  <!-- Central Global Council -->
+  <g
+     transform="translate(400, 300)"
+     id="g20">
+    <!-- Outer circle with decorative pattern -->
+    <circle
+       cx="0"
+       cy="0"
+       r="110"
+       fill="#f1f5f2"
+       stroke="#3a866c"
+       stroke-width="3"
+       id="circle2" />
+    <circle
+       cx="0"
+       cy="0"
+       r="100"
+       fill="#ffffff"
+       stroke="#3a866c"
+       stroke-width="2"
+       id="circle3" />
+    <!-- Decorative elements around circle -->
+    <g
+       id="decorativeElements">
+      <path
+         d="M0,-100 Q5,-90 0,-80 Q-5,-90 0,-100"
+         fill="#5a9378"
+         id="path3" />
+      <path
+         d="M0,-100 L5,-88 L-5,-88 Z"
+         fill="#5a9378"
+         id="path4" />
+    </g>
+    <!-- Repeating the decorative elements around the circle -->
+    <use
+       href="#decorativeElements"
+       transform="rotate(30)"
+       id="use4" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(60)"
+       id="use5" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(90)"
+       id="use6" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(120)"
+       id="use7" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(150)"
+       id="use8" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(180)"
+       id="use9" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(210)"
+       id="use10" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(240)"
+       id="use11" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(270)"
+       id="use12" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(300)"
+       id="use13" />
+    <use
+       href="#decorativeElements"
+       transform="rotate(330)"
+       id="use14" />
+    <!-- Inner content -->
+    <circle
+       cx="0"
+       cy="0"
+       r="80"
+       fill="#f7f9f8"
+       stroke="#3a866c"
+       stroke-width="1.5"
+       id="circle14" />
+    <circle
+       cx="0"
+       cy="0"
+       r="70"
+       fill="#ffffff"
+       id="circle15" />
+    <!-- Symbolic icons for different traditions within central circle -->
+    <g
+       transform="translate(0, -10) scale(0.75)"
+       id="g19">
+      <!-- Dharmic symbol -->
+      <circle
+         cx="-25"
+         cy="-25"
+         r="14"
+         fill="#f7f9f8"
+         stroke="#5a9378"
+         stroke-width="1.5"
+         id="circle16" />
+      <path
+         d="M-25,-32 L-25,-18 M-32,-25 L-18,-25"
+         stroke="#5a9378"
+         stroke-width="1.5"
+         id="path16" />
+      <!-- Abrahamic symbol -->
+      <circle
+         cx="25"
+         cy="-25"
+         r="14"
+         fill="#f7f9f8"
+         stroke="#5a9378"
+         stroke-width="1.5"
+         id="circle17" />
+      <path
+         d="M25,-32 C28,-28 28,-22 25,-18 C22,-22 22,-28 25,-32"
+         stroke="#5a9378"
+         stroke-width="1.5"
+         fill="none"
+         id="path17" />
+      <!-- Indigenous symbol -->
+      <circle
+         cx="-25"
+         cy="25"
+         r="14"
+         fill="#f7f9f8"
+         stroke="#5a9378"
+         stroke-width="1.5"
+         id="circle18" />
+      <path
+         d="M-25,18 L-25,32 M-29,21 L-21,29 M-29,29 L-21,21"
+         stroke="#5a9378"
+         stroke-width="1.5"
+         id="path18" />
+      <!-- Humanist symbol -->
+      <circle
+         cx="25"
+         cy="25"
+         r="14"
+         fill="#f7f9f8"
+         stroke="#5a9378"
+         stroke-width="1.5"
+         id="circle19" />
+      <path
+         d="M25,18 Q30,25 25,32 Q20,25 25,18"
+         stroke="#5a9378"
+         stroke-width="1.5"
+         fill="none"
+         id="path19" />
+    </g>
+    <!-- Text for Global Council -->
+    <text
+       y="30"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#3a866c"
+       id="text19">Global Council</text>
+    <text
+       y="48"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14"
+       font-weight="bold"
+       fill="#3a866c"
+       id="text20">(GCRSD)</text>
+  </g>
+  <!-- North America Regional Hub -->
+  <circle
+     cx="200"
+     cy="150"
+     r="60"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="2"
+     id="circle20" />
+  <circle
+     cx="200"
+     cy="150"
+     r="55"
+     fill="#f7f9f8"
+     id="circle21" />
+  <text
+     x="200"
+     y="150"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="#3a866c"
+     id="text22"><tspan
+       x="200"
+       y="140"
+       font-size="13px"
+       id="tspan21">Regional Hub</tspan><tspan
+       x="200"
+       y="160"
+       font-size="13px"
+       id="tspan22">North America</tspan></text>
+  <path
+     d="m 185,189 15,10 15,-10 v -20 h -30 z"
+     fill="none"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     id="path22" />
+  <!-- Europe Regional Hub -->
+  <circle
+     cx="600"
+     cy="150"
+     r="60"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="2"
+     id="circle22" />
+  <circle
+     cx="600"
+     cy="150"
+     r="55"
+     fill="#f7f9f8"
+     id="circle23" />
+  <text
+     x="600"
+     y="150"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="#3a866c"
+     id="text24"><tspan
+       x="600"
+       y="140"
+       font-size="13px"
+       id="tspan23">Regional Hub</tspan><tspan
+       x="600"
+       y="160"
+       font-size="13px"
+       id="tspan24">Europe</tspan></text>
+  <path
+     d="m 585,189 15,10 15,-10 v -20 h -30 z"
+     fill="none"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     id="path24" />
+  <!-- Asia Regional Hub -->
+  <circle
+     cx="650"
+     cy="350"
+     r="60"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="2"
+     id="circle24" />
+  <circle
+     cx="650"
+     cy="350"
+     r="55"
+     fill="#f7f9f8"
+     id="circle25" />
+  <text
+     x="650"
+     y="350"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="#3a866c"
+     id="text26"><tspan
+       x="650"
+       y="340"
+       font-size="13px"
+       id="tspan25">Regional Hub</tspan><tspan
+       x="650"
+       y="360"
+       font-size="13px"
+       id="tspan26">Asia</tspan></text>
+  <path
+     d="m 635,387 15,10 15,-10 v -20 h -30 z"
+     fill="none"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     id="path26" />
+  <!-- Africa Regional Hub -->
+  <circle
+     cx="200"
+     cy="450"
+     r="60"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="2"
+     id="circle26" />
+  <circle
+     cx="200"
+     cy="450"
+     r="55"
+     fill="#f7f9f8"
+     id="circle27" />
+  <text
+     x="200"
+     y="450"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="#3a866c"
+     id="text28"><tspan
+       x="200"
+       y="440"
+       font-size="13px"
+       id="tspan27">Regional Hub</tspan><tspan
+       x="200"
+       y="460"
+       font-size="13px"
+       id="tspan28">Africa</tspan></text>
+  <path
+     d="m 185,487 15,10 15,-10 v -20 h -30 z"
+     fill="none"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     id="path28" />
+  <!-- Oceania Regional Hub -->
+  <circle
+     cx="550"
+     cy="500"
+     r="60"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="2"
+     id="circle28" />
+  <circle
+     cx="550"
+     cy="500"
+     r="55"
+     fill="#f7f9f8"
+     id="circle29" />
+  <text
+     x="550"
+     y="500"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-weight="bold"
+     fill="#3a866c"
+     id="text30"><tspan
+       x="550"
+       y="490"
+       font-size="13px"
+       id="tspan29">Regional Hub</tspan><tspan
+       x="550"
+       y="510"
+       font-size="13px"
+       id="tspan30">Oceania</tspan></text>
+  <path
+     d="m 535,537 15,10 15,-10 v -20 h -30 z"
+     fill="none"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     id="path30" />
+  <!-- Connecting paths between Global Council and Regional Hubs -->
+  <path
+     d="M260,180 C290,210 320,240 350,270"
+     stroke="#3a866c"
+     stroke-width="3"
+     stroke-dasharray="5,5"
+     fill="none"
+     id="path31" />
+  <path
+     d="M540,180 C510,210 480,240 450,270"
+     stroke="#3a866c"
+     stroke-width="3"
+     stroke-dasharray="5,5"
+     fill="none"
+     id="path32" />
+  <path
+     d="M590,350 C550,340 510,330 450,320"
+     stroke="#3a866c"
+     stroke-width="3"
+     stroke-dasharray="5,5"
+     fill="none"
+     id="path33" />
+  <path
+     d="M260,420 C300,390 340,360 380,330"
+     stroke="#3a866c"
+     stroke-width="3"
+     stroke-dasharray="5,5"
+     fill="none"
+     id="path34" />
+  <path
+     d="M490,470 C470,430 450,390 430,350"
+     stroke="#3a866c"
+     stroke-width="3"
+     stroke-dasharray="5,5"
+     fill="none"
+     id="path35" />
+  <!-- Action Pathways Radiating Outward -->
+  <!-- Path from North America hub to "Ethics Charter" -->
+  <path
+     d="M140,150 C100,120 60,90 20,70"
+     stroke="#5a9378"
+     stroke-width="2"
+     fill="none"
+     id="path36" />
+  <circle
+     cx="46"
+     cy="82"
+     r="40"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     id="circle36" />
+  <text
+     x="46"
+     y="82"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#3a866c"
+     id="text37"><tspan
+       x="46"
+       y="77"
+       id="tspan36">Ethics</tspan><tspan
+       x="46"
+       y="92"
+       id="tspan37">Charter</tspan></text>
+  <!-- Path from Europe hub to "Policy Labs" -->
+  <path
+     d="M660,150 C700,120 740,90 780,70"
+     stroke="#5a9378"
+     stroke-width="2"
+     fill="none"
+     id="path37" />
+  <circle
+     cx="752"
+     cy="88"
+     r="40"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     id="circle37" />
+  <text
+     x="752"
+     y="88"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#3a866c"
+     id="text39"><tspan
+       x="752"
+       y="83"
+       id="tspan38">Policy</tspan><tspan
+       x="752"
+       y="98"
+       id="tspan39">Labs</tspan></text>
+  <!-- Path from Asia hub to "Cultural Exchange" -->
+  <path
+     d="M710,350 C730,340 750,330 770,320"
+     stroke="#5a9378"
+     stroke-width="2"
+     fill="none"
+     id="path39" />
+  <circle
+     cx="756"
+     cy="332"
+     r="40"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     id="circle39" />
+  <text
+     x="756"
+     y="332"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#3a866c"
+     id="text41"><tspan
+       x="756"
+       y="327"
+       id="tspan40">Cultural</tspan><tspan
+       x="756"
+       y="342"
+       id="tspan41">Exchange</tspan></text>
+  <!-- Path from Africa hub to "Reconciliation" -->
+  <path
+     d="M140,450 C100,470 60,490 30,510"
+     stroke="#5a9378"
+     stroke-width="2"
+     fill="none"
+     id="path41" />
+  <circle
+     cx="52"
+     cy="490"
+     r="40"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="1.5"
+     id="circle41" />
+  <text
+     x="52"
+     y="490"
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#3a866c"
+     id="text43"><tspan
+       x="52"
+       y="485"
+       id="tspan42">Truth</tspan><tspan
+       x="52"
+       y="500"
+       id="tspan43">Reconciliation</tspan></text>
+  <!-- Legend -->
+  <rect
+     x="186.01723"
+     y="545.01721"
+     width="321.24216"
+     height="49.965557"
+     rx="10.708072"
+     ry="9.9931116"
+     fill="#ffffff"
+     stroke="#3a866c"
+     stroke-width="1.03444"
+     id="rect43" />
+  <circle
+     cx="216"
+     cy="570"
+     r="7"
+     fill="#3a866c"
+     id="circle43" />
+  <text
+     x="231"
+     y="575"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#555555"
+     id="text44">Global Coordination</text>
+  <circle
+     cx="351"
+     cy="570"
+     r="7"
+     fill="#5a9378"
+     id="circle44" />
+  <text
+     x="366"
+     y="575"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#555555"
+     id="text45">Regional Implementation</text>
+  <!-- Title -->
+  <g
+     transform="translate(400, 40)"
+     id="g46">
+    <rect
+       x="-200"
+       y="-30"
+       width="400"
+       height="40"
+       rx="10"
+       ry="10"
+       fill="#3a866c"
+       opacity="0.9"
+       id="rect45" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="18"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text46">Sacred Governance Ecosystem</text>
+  </g>
+</svg>

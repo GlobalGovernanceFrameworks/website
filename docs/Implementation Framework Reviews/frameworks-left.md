@@ -1,7 +1,7 @@
 ### Tier 1: Urgent Global Stability & Justice
 9  [Healthcare Governance](/framework/docs/implementation/healthcare) (Planned)
 4  [Food Systems & Agriculture](/framework/docs/implementation/food) (done!)
-6  [Justice Systems](/framework/docs/implementation/justice) (Planned)
+6  [Justice Systems](/framework/docs/implementation/justice) (done!)
 10 [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
 2  [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (done!)
 
@@ -13,7 +13,7 @@
 11 [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)
 
 ### Tier 3: Equity, Culture & Future Generations
-5  [Digital Commons](/framework/docs/implementation/digital) (under way)
+5  [Digital Commons](/framework/docs/implementation/digital) (done!)
 8  [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Planned)
 14 [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
 15 [Rural Development](/framework/docs/implementation/rural) (Planned)

@@ -1,5 +1,5 @@
-// tools-pdf-generator.js
-// Generates PDFs for all education framework tools and quick-start guides
+// pdf-generator.js
+// Generates PDFs for all frameworks: full frameworks, tools and quick-start guides
 // Installation: npm install puppeteer marked
 
 import fs from 'fs';
@@ -26,6 +26,8 @@ Available categories:
 - economic
 - digital
 - ethics
+- justice
+- spiritual
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -47,6 +49,8 @@ const outputDirs = {
   'economic': path.join(__dirname, '..', 'static', 'framework', 'tools', 'economic'),
   'digital': path.join(__dirname, '..', 'static', 'framework', 'tools', 'digital'),
   'ethics': path.join(__dirname, '..', 'static', 'framework', 'tools', 'ethics'),
+  'justice': path.join(__dirname, '..', 'static', 'framework', 'tools', 'justice'),
+  'spiritual': path.join(__dirname, '..', 'static', 'framework', 'tools', 'spiritual'),
 };
 
 // Validate category if provided
@@ -857,6 +861,98 @@ const tools = [
       en: 'Youth Peace Action Guide - Page ',
       sv: 'Ungdomsfredsguide - Sida '
     }
+  },
+  {
+    name: 'ethics-framework-standard',
+    category: 'ethics',
+    fileNames: {
+      en: 'Global-Ethics-Rights',
+      sv: 'Global-Ethics-Rights'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'standard'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'standard')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Rights of Beings Standard - Page ',
+      sv: 'Rättigheter för Varelser Standard - Sida '
+    },
+    // Full framework combined sections in proper order
+    sections: [
+      '0-preamble',
+      '1-introduction',
+      '2-foundational-values',
+      '2.3-global-ethical-traditions',
+      '2.5-rights-of-beings',
+      '2.6-scientific-foundations',
+      '3-commitments',
+      '3.1-traditional-rights',
+      '3.2-emerging-rights',
+      '3.2.1-ai-consciousness',
+      '3.2.1a-assessment-hub-network',
+      '3.2.1b-scientific-standards',
+      '3.2.2-ambiguous-entities',
+      '3.2.3-measurement-standards',
+      '3.2.4-recognition-pathways',
+      '3.2.5-non-western-recognition',
+      '3.3-conflict-resolution',
+      '3.3.1-moon-wish-test',
+      '4-governance-mechanisms',
+      '4.1-transparency',
+      '4.2-inclusive-decision-making',
+      '4.3-conflict-resolution',
+      '4.4-guardianship-councils',
+      '4.4.1-enforcement-mechanisms',
+      '4.4.2-non-compliance-strategy',
+      '4.5-funding-model',
+      '4.5.1-hub-sustainability',
+      '4.5.2-resource-optimization',
+      '4.6-governance-accountability',
+      '4.7-entity-conflict-resolution',
+      '4.8-interoperability',
+      '4.9-decision-making',
+      '4.10-coordination-mechanisms',
+      '5-implementation',
+      '5.1-quick-wins',
+      '5.1.1-cost-analysis',
+      '5.2-phased-rollout',
+      '5.2.1-space-ethics',
+      '5.3-education-accessibility',
+      '5.3.1-resource-constraint',
+      '5.3.2-cultural-accessibility',
+      '5.3.3-knowledge-integration',
+      '5.4-global-cooperation',
+      '5.5-monitoring',
+      '5.6-public-engagement',
+      '5.7-stakeholder-strategy',
+      '5.7.1-consensus-building',
+      '5.7.2-resistant-stakeholder',
+      '5.8-resistance-handling',
+      '5.8.1-opposition-response',
+      '5.8.2-learning-system',
+      '5.9-benchmarks-metrics',
+      '5.10-scenario-planning',
+      '5.11-accessibility-matrix',
+      '6-appendices',
+      '6.1-emerging-rights-toolkit',
+      '6.2-case-studies',
+      '6.3-ethical-forecasting',
+      '6.3.1-speculative-paradigm',
+      '6.3.2-validation-protocols',
+      '6.4-reporting-portal',
+      '6.5-plain-language',
+      '6.6-edge-case-protocols',
+      '6.7-philosophy-of-rights',
+      '6.8-spiral-aware-primer',
+      '6.9-impact-assessment',
+      '6.10-pioneer-pilots',
+      '6.11-crisis-ethics',
+      '6.12-technical-protocols'
+    ]
   },
   {
     name: 'digital-peace-ethics-guide',
@@ -2810,6 +2906,722 @@ const tools = [
       en: 'Edge Case Handbook - Page ',
       sv: 'Handbok för gränsfall - Sida '
     }
+  },
+  // Justice Framework
+  {
+    name: 'justice-framework-lite-guide',
+    category: 'justice',
+    fileNames: {
+      en: 'justice-framework-lite-guide-en',
+      sv: 'justice-framework-lite-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice')
+    },
+    pageFooter: {
+      en: 'Justice Systems Framework Lite Guide - Page ',
+      sv: 'Förenklad guide för rättssystemets ramverk - Sida '
+    }
+  },
+  {
+    name: 'justice-lite-guide-community',
+    category: 'justice',
+    fileNames: {
+      en: 'justice-lite-guide-community-en',
+      sv: 'justice-lite-guide-community-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice')
+    },
+    pageFooter: {
+      en: 'Justice Systems Framework Lite Guide (Community) - Page ',
+      sv: 'Förenklad guide för rättssystemets ramverk (Samhälle) - Sida '
+    }
+  },
+  {
+    name: 'youth-justice-guide',
+    category: 'justice',
+    fileNames: {
+      en: 'youth-justice-guide-en',
+      sv: 'youth-justice-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice')
+    },
+    pageFooter: {
+      en: 'Justice Systems Framework Lite Guide (Youth) - Page ',
+      sv: 'Förenklad guide för rättssystemets ramverk (Ungdom) - Sida '
+    }
+  },
+
+  // Core Tools
+  {
+    name: 'pilot-readiness-self-assessment-tool',
+    category: 'justice',
+    fileNames: {
+      en: 'pilot-readiness-self-assessment-tool-en',
+      sv: 'pilot-readiness-self-assessment-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Pilot Readiness Self-Assessment Tool - Page ',
+      sv: 'Självbedömningsverktyg för pilotberedskap - Sida '
+    }
+  },
+  {
+    name: 'stakeholder-engagement-charter',
+    category: 'justice',
+    fileNames: {
+      en: 'stakeholder-engagement-charter-en',
+      sv: 'stakeholder-engagement-charter-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Stakeholder Engagement Charter - Page ',
+      sv: 'Charta för intressentengagemang - Sida '
+    }
+  },
+  {
+    name: 'restorative-justice-guide',
+    category: 'justice',
+    fileNames: {
+      en: 'restorative-justice-guide-en',
+      sv: 'restorative-justice-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Restorative Justice Guide - Page ',
+      sv: 'Guide för reparativ rättvisa - Sida '
+    }
+  },
+  {
+    name: 'indigenous-justice-integration-template',
+    category: 'justice',
+    fileNames: {
+      en: 'indigenous-justice-integration-template-en',
+      sv: 'indigenous-justice-integration-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Indigenous Justice Integration Template - Page ',
+      sv: 'Mall för integrering av ursprungsfolks rättvisesystem - Sida '
+    }
+  },
+  {
+    name: 'monitoring-evaluation-rubric',
+    category: 'justice',
+    fileNames: {
+      en: 'monitoring-evaluation-rubric-en',
+      sv: 'monitoring-evaluation-rubric-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Monitoring & Evaluation Rubric - Page ',
+      sv: 'Bedömningsmatris för övervakning och utvärdering - Sida '
+    }
+  },
+
+  // Advocacy Tools
+  {
+    name: 'advocacy-playbook',
+    category: 'justice',
+    fileNames: {
+      en: 'advocacy-playbook-en',
+      sv: 'advocacy-playbook-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Advocacy Playbook - Page ',
+      sv: 'Handbok för påverkansarbete - Sida '
+    }
+  },
+  {
+    name: 'policy-harmonization-toolkit',
+    category: 'justice',
+    fileNames: {
+      en: 'policy-harmonization-toolkit-en',
+      sv: 'policy-harmonization-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Policy Harmonization Toolkit - Page ',
+      sv: 'Verktygslåda för policyharmonisering - Sida '
+    }
+  },
+  {
+    name: 'executive-summary',
+    category: 'justice',
+    fileNames: {
+      en: 'executive-summary-en',
+      sv: 'executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Executive Summary - Page ',
+      sv: 'Sammanfattning för beslutsfattare - Sida '
+    }
+  },
+  {
+    name: 'policy-brief',
+    category: 'justice',
+    fileNames: {
+      en: 'policy-brief-en',
+      sv: 'policy-brief-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Policy Brief - Page ',
+      sv: 'Policydokument - Sida '
+    }
+  },
+  {
+    name: 'cost-benefit-analysis-model',
+    category: 'justice',
+    fileNames: {
+      en: 'cost-benefit-analysis-model-en',
+      sv: 'cost-benefit-analysis-model-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Cost-Benefit Analysis Model - Page ',
+      sv: 'Modell för kostnads-nyttoanalys - Sida '
+    }
+  },
+
+  // Simulation Tools
+  {
+    name: 'stakeholder-simulation-guide',
+    category: 'justice',
+    fileNames: {
+      en: 'stakeholder-simulation-guide-en',
+      sv: 'stakeholder-simulation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'simulation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'simulation')
+    },
+    pageFooter: {
+      en: 'Stakeholder Simulation Guide - Page ',
+      sv: 'Guide för intressentsimulering - Sida '
+    }
+  },
+  // Spiritual & Religious Dialogue Framework
+  // 1. Main guides
+  {
+    name: 'executive-brief',
+    category: 'spiritual',
+    fileNames: {
+      en: 'executive-brief-en',
+      sv: 'executive-brief-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+    },
+    pageFooter: {
+      en: 'Executive Brief - Page ',
+      sv: 'Sammanfattning för Beslutsfattare - Sida '
+    }
+  },
+  {
+    name: 'policy-guide',
+    category: 'spiritual',
+    fileNames: {
+      en: 'policy-guide-en',
+      sv: 'policy-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+    },
+    pageFooter: {
+      en: 'Policy Guide - Page ',
+      sv: 'Policyguide - Sida '
+    }
+  },
+  {
+    name: 'youth-and-broad-audiences-guide',
+    category: 'spiritual',
+    fileNames: {
+      en: 'youth-and-broad-audiences-guide-en',
+      sv: 'youth-and-broad-audiences-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+    },
+    pageFooter: {
+      en: 'Youth & Broad Audiences Guide - Page ',
+      sv: 'Guide för Ungdomar & Bred Publik - Sida '
+    }
+  },
+
+  // 2. Implementation tools
+  {
+    name: 'adaptive-facilitation-tools',
+    category: 'spiritual',
+    fileNames: {
+      en: 'adaptive-facilitation-tools-en',
+      sv: 'adaptive-facilitation-tools-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+    },
+    pageFooter: {
+      en: 'Adaptive Facilitation Tools - Page ',
+      sv: 'Adaptiva Faciliteringsverktyg - Sida '
+    }
+  },
+  {
+    name: 'digital-feedback-dashboard',
+    category: 'spiritual',
+    fileNames: {
+      en: 'digital-feedback-dashboard-en',
+      sv: 'digital-feedback-dashboard-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+    },
+    pageFooter: {
+      en: 'Digital Feedback Dashboard - Page ',
+      sv: 'Digital Feedback Dashboard - Sida '
+    }
+  },
+
+  // 3. Core Tools
+  {
+    name: 'dialogue-facilitation-scripts',
+    category: 'spiritual',
+    fileNames: {
+      en: 'dialogue-facilitation-scripts-en',
+      sv: 'dialogue-facilitation-scripts-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Dialogue Facilitation Scripts - Page ',
+      sv: 'Dialogfaciliteringsskript - Sida '
+    }
+  },
+  {
+    name: 'digital-access-inclusion-audit',
+    category: 'spiritual',
+    fileNames: {
+      en: 'digital-access-inclusion-audit-en',
+      sv: 'digital-access-inclusion-audit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Digital Access & Inclusion Audit - Page ',
+      sv: 'Digital Tillgång & Inkludering Granskning - Sida '
+    }
+  },
+  {
+    name: 'truth-reconciliation-toolkit',
+    category: 'spiritual',
+    fileNames: {
+      en: 'truth-reconciliation-toolkit-en',
+      sv: 'truth-reconciliation-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Truth & Reconciliation Toolkit - Page ',
+      sv: 'Sannings & Försoningsverktygslåda - Sida '
+    }
+  },
+  {
+    name: 'wisdom-documentation-templates',
+    category: 'spiritual',
+    fileNames: {
+      en: 'wisdom-documentation-templates-en',
+      sv: 'wisdom-documentation-templates-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Wisdom Documentation Templates - Page ',
+      sv: 'Visdomsdokumentationsmallar - Sida '
+    }
+  },
+
+  // 4. Implementation Tools
+  {
+    name: 'adaptive-learning-protocol',
+    category: 'spiritual',
+    fileNames: {
+      en: 'adaptive-learning-protocol-en',
+      sv: 'adaptive-learning-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'implementation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'implementation')
+    },
+    pageFooter: {
+      en: 'Adaptive Learning Protocol - Page ',
+      sv: 'Adaptivt Inlärningsprotokoll - Sida '
+    }
+  },
+  {
+    name: 'impact-assessment-guide',
+    category: 'spiritual',
+    fileNames: {
+      en: 'impact-assessment-guide-en',
+      sv: 'impact-assessment-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'implementation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'implementation')
+    },
+    pageFooter: {
+      en: 'Impact Assessment Guide - Page ',
+      sv: 'Guide för Effektbedömning - Sida '
+    }
+  },
+  {
+    name: 'representation-metrics-dashboard',
+    category: 'spiritual',
+    fileNames: {
+      en: 'representation-metrics-dashboard-en',
+      sv: 'representation-metrics-dashboard-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'implementation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'implementation')
+    },
+    pageFooter: {
+      en: 'Representation Metrics Dashboard - Page ',
+      sv: 'Dashboard för Representationsmått - Sida '
+    }
+  },
+
+  // 5. Policy Tools
+  {
+    name: 'cross-tradition-values-mapping-tool',
+    category: 'spiritual',
+    fileNames: {
+      en: 'cross-tradition-values-mapping-tool-en',
+      sv: 'cross-tradition-values-mapping-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+    },
+    pageFooter: {
+      en: 'Cross-Tradition Values Mapping Tool - Page ',
+      sv: 'Traditionsövergripande Värdemappningsverktyg - Sida '
+    }
+  },
+  {
+    name: 'ethics-charter-template',
+    category: 'spiritual',
+    fileNames: {
+      en: 'ethics-charter-template-en',
+      sv: 'ethics-charter-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+    },
+    pageFooter: {
+      en: 'Ethics Charter Template - Page ',
+      sv: 'Mall för Etiskt Stadga - Sida '
+    }
+  },
+  {
+    name: 'policy-development-guide',
+    category: 'spiritual',
+    fileNames: {
+      en: 'policy-development-guide-en',
+      sv: 'policy-development-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+    },
+    pageFooter: {
+      en: 'Policy Development Guide - Page ',
+      sv: 'Guide för Policyutveckling - Sida '
+    }
+  },
+  {
+    name: 'policy-translation-guide',
+    category: 'spiritual',
+    fileNames: {
+      en: 'policy-translation-guide-en',
+      sv: 'policy-translation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+    },
+    pageFooter: {
+      en: 'Policy Translation Guide - Page ',
+      sv: 'Guide för Policyöversättning - Sida '
+    }
+  },
+  {
+    name: 'wisdom-repository-starter-kit',
+    category: 'spiritual',
+    fileNames: {
+      en: 'wisdom-repository-starter-kit-en',
+      sv: 'wisdom-repository-starter-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+    },
+    pageFooter: {
+      en: 'Wisdom Repository Starter Kit - Page ',
+      sv: 'Startkit för Visdomsförvar - Sida '
+    }
+  },
+
+  // 6. Seed Kit Tools
+  {
+    name: 'conflict-de-escalation-protocols',
+    category: 'spiritual',
+    fileNames: {
+      en: 'conflict-de-escalation-protocols-en',
+      sv: 'conflict-de-escalation-protocols-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Conflict De-escalation Protocols - Page ',
+      sv: 'Protokoll för Konfliktdeeskalering - Sida '
+    }
+  },
+  {
+    name: 'cultural-appropriation-prevention',
+    category: 'spiritual',
+    fileNames: {
+      en: 'cultural-appropriation-prevention-en',
+      sv: 'cultural-appropriation-prevention-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Cultural Appropriation Prevention - Page ',
+      sv: 'Förebyggande av Kulturell Appropriering - Sida '
+    }
+  },
+  {
+    name: 'dialogue-facilitation-guide',
+    category: 'spiritual',
+    fileNames: {
+      en: 'dialogue-facilitation-guide-en',
+      sv: 'dialogue-facilitation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Dialogue Facilitation Guide - Page ',
+      sv: 'Guide för Dialogfacilitering - Sida '
+    }
+  },
+  {
+    name: 'local-partnership-templates',
+    category: 'spiritual',
+    fileNames: {
+      en: 'local-partnership-templates-en',
+      sv: 'local-partnership-templates-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Local Partnership Templates - Page ',
+      sv: 'Mallar för Lokala Partnerskap - Sida '
+    }
+  },
+  {
+    name: 'regional-customization-framework',
+    category: 'spiritual',
+    fileNames: {
+      en: 'regional-customization-framework-en',
+      sv: 'regional-customization-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Regional Customization Framework - Page ',
+      sv: 'Ramverk för Regional Anpassning - Sida '
+    }
+  },
+  {
+    name: 'representation-assessment-tool',
+    category: 'spiritual',
+    fileNames: {
+      en: 'representation-assessment-tool-en',
+      sv: 'representation-assessment-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Representation Assessment Tool - Page ',
+      sv: 'Verktyg för Representationsbedömning - Sida '
+    }
+  },
+  {
+    name: 'sacred-space-setup-guide',
+    category: 'spiritual',
+    fileNames: {
+      en: 'sacred-space-setup-guide-en',
+      sv: 'sacred-space-setup-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Sacred Space Setup Guide - Page ',
+      sv: 'Guide för Uppsättning av Heliga Rum - Sida '
+    }
+  },
+  {
+    name: 'tradition-protocol-cards',
+    category: 'spiritual',
+    fileNames: {
+      en: 'tradition-protocol-cards-en',
+      sv: 'tradition-protocol-cards-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Tradition-Specific Protocol Cards - Page ',
+      sv: 'Tradtiionsspecifika Protokollkort - Sida '
+    }
+  },
+
+  // Full framework combined PDF
+  {
+    name: 'spiritual-dialogue-framework',
+    category: 'spiritual',
+    fileNames: {
+      en: 'Spiritual-Dialogue',
+      sv: 'Spiritual-Dialogue'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Religious & Spiritual Dialogue Framework - Page ',
+      sv: 'Religiös & Spirituell Dialog Ramverk - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '01-introduction',
+      '02-core-principles',
+      '03-objectives',
+      '04-governance-structure',
+      '05-implementation-mechanisms',
+      '06-key-activities',
+      '07-funding-and-resources',
+      '08-challenges-and-mitigation-strategies',
+      '09-timeline',
+      '10-conclusion',
+      'appendix-a',
+      'appendix-b',
+      'appendix-c',
+      'appendix-d',
+      'appendix-e',
+      'appendix-f',
+      'appendix-g',
+      'appendix-h'
+    ]
+  },
+
+  // Sacred Seed Kit combined PDF 
+  {
+    name: 'sacred-seed-kit',
+    category: 'spiritual',
+    fileNames: {
+      en: 'sacred-seed-kit-en',
+      sv: 'sacred-seed-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+    },
+    pageFooter: {
+      en: 'Sacred Seed Kit - Page ',
+      sv: 'Heligt Startkit - Sida '
+    },
+    // Special config to combine all seed kit files
+    combinedFiles: [
+      'dialogue-facilitation-guide',
+      'representation-assessment-tool',
+      'cultural-appropriation-prevention',
+      'conflict-de-escalation-protocols',
+      'local-partnership-templates',
+      'regional-customization-framework',
+      'sacred-space-setup-guide',
+      'tradition-protocol-cards'
+    ]
   }
 ];
 
@@ -2911,6 +3723,21 @@ const css = `
     display: block;
     margin: 1em auto;
   }
+  .svg-container {
+    text-align: center;
+    margin: 2em 0;
+  }
+  .svg-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+  }
+  .svg-container svg {
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+  }
 `;
 
 // Use simpler emoji replacement approach
@@ -2967,6 +3794,64 @@ function replaceEmojisWithImages(text) {
   return text;
 }
 
+// Process SVG images in markdown
+function processSvgReferences(markdown, inputFileDir) {
+  // Find all image references in markdown
+  const imgRegex = /!\[(.*?)\]\(([^)]+)\)/g;
+  let match;
+  let processedMarkdown = markdown;
+  
+  while ((match = imgRegex.exec(markdown)) !== null) {
+    const altText = match[1];
+    let imgPath = match[2];
+    
+    // Check if it's a relative path to an SVG file
+    if (imgPath.endsWith('.svg') && !imgPath.startsWith('http')) {
+      // Normalize path with file directory
+      if (imgPath.startsWith('/')) {
+        // Absolute path from project root
+        imgPath = path.join(__dirname, '..', 'static', imgPath);
+      } else {
+        // Relative path from markdown file
+        imgPath = path.join(inputFileDir, imgPath);
+      }
+      
+      console.log(`Processing SVG reference: ${imgPath}`);
+      
+      // Check if SVG file exists
+      if (fs.existsSync(imgPath)) {
+        try {
+          // Read SVG content
+          const svgContent = fs.readFileSync(imgPath, 'utf8');
+          
+          // Ensure SVG has namespace
+          let processedSvg = svgContent;
+          if (!svgContent.includes('xmlns="http://www.w3.org/2000/svg"')) {
+            processedSvg = svgContent.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+          }
+          
+          // Create data URI
+          const svgDataUri = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(processedSvg)}`;
+          
+          // Replace image reference with embedded SVG container
+          processedMarkdown = processedMarkdown.replace(
+            match[0],
+            `<div class="svg-container"><img src="${svgDataUri}" alt="${altText}" /></div>`
+          );
+          
+          console.log(`Embedded SVG: ${path.basename(imgPath)}`);
+        } catch (error) {
+          console.warn(`Error processing SVG ${imgPath}: ${error.message}`);
+        }
+      } else {
+        console.warn(`SVG file not found: ${imgPath}`);
+      }
+    }
+  }
+  
+  return processedMarkdown;
+}
+
 // Process each tool in each language
 async function generatePDFs() {
   const browser = await puppeteer.launch({
@@ -2985,34 +3870,99 @@ async function generatePDFs() {
     for (const tool of toolsToProcess) {
       for (const lang of languages) {
         const fileName = tool.fileNames[lang];
-        const inputFile = path.join(tool.sourceDir[lang], `${tool.name}.md`);
-
-        const categoryDir = outputDirs[tool.category];
-        // Ensure the category directory exists
-        if (!fs.existsSync(categoryDir)) {
-          fs.mkdirSync(categoryDir, { recursive: true });
-          console.log(`Created directory: ${categoryDir}`);
+        
+        // Determine the output directory - use tool-specific outputDir if provided, otherwise use the category default
+        let outputDir;
+        if (tool.outputDir && tool.outputDir[lang]) {
+          // Use tool-specific output directory if provided
+          outputDir = tool.outputDir[lang];
+          console.log(`Using custom output directory: ${outputDir}`);
+        } else {
+          // Use default category directory
+          outputDir = outputDirs[tool.category];
         }
-        const outputFile = path.join(categoryDir, `${fileName}.pdf`);
+        
+        // Ensure the output directory exists
+        if (!fs.existsSync(outputDir)) {
+          fs.mkdirSync(outputDir, { recursive: true });
+          console.log(`Created directory: ${outputDir}`);
+        }
+        
+        const outputFile = path.join(outputDir, `${fileName}.pdf`);
        
         console.log(`\nProcessing ${lang.toUpperCase()} version of ${tool.name}:`);
         
-        if (!fs.existsSync(inputFile)) {
-          console.warn(`⚠️ WARNING: Input file not found: ${inputFile}`);
-          console.warn(`    Skipping ${fileName}.pdf generation\n`);
-          continue;
+        let markdown = '';
+        
+        // Check if this is a combined PDF
+        if (tool.sections && Array.isArray(tool.sections)) {
+          // Full framework with sections
+          console.log(`📚 Generating combined PDF from ${tool.sections.length} sections...`);
+
+          for (const section of tool.sections) {
+            const sectionFile = path.join(tool.sourceDir[lang], `${section}.md`);
+            if (fs.existsSync(sectionFile)) {
+              let sectionContent = fs.readFileSync(sectionFile, 'utf8');
+              // Remove frontmatter from each section
+              sectionContent = sectionContent.replace(/^(---|\+\+\+)\s*\n([\s\S]*?)\n\s*(---|\+\+\+)\s*/m, '');
+              markdown += sectionContent + '\n\n';
+              console.log(`  Added section: ${section}`);
+            } else {
+              console.warn(`  ⚠️ Section file not found: ${sectionFile}`);
+            }
+          }
+          
+        } else if (tool.combinedFiles && Array.isArray(tool.combinedFiles)) {
+          // Seed kit with multiple files
+          console.log(`📚 Generating combined PDF from ${tool.combinedFiles.length} files...`);
+          
+          // Add a title for the combined document
+          const title = tool.name === 'sacred-seed-kit' ? '# Sacred Seed Kit\n\n' : `# ${tool.name}\n\n`;
+          markdown += title;
+          
+          for (const fileId of tool.combinedFiles) {
+            // Look through all tools to find the matching ones
+            const subTool = tools.find(t => t.name === fileId && t.category === tool.category);
+            if (subTool) {
+              const subFile = path.join(subTool.sourceDir[lang], `${fileId}.md`);
+              if (fs.existsSync(subFile)) {
+                let fileContent = fs.readFileSync(subFile, 'utf8');
+                // Remove frontmatter from each component file
+                fileContent = fileContent.replace(/^(---|\+\+\+)\s*\n([\s\S]*?)\n\s*(---|\+\+\+)\s*/m, '');
+                markdown += fileContent + '\n\n---\n\n'; // Add separator between files
+                console.log(`  Added file: ${fileId}`);
+              } else {
+                console.warn(`  ⚠️ Component file not found: ${subFile}`);
+              }
+            } else {
+              console.warn(`  ⚠️ Component tool definition not found: ${fileId}`);
+            }
+          }
+          
+        } else {
+          // Regular single file
+          const inputFile = path.join(tool.sourceDir[lang], `${tool.name}.md`);
+          
+          if (!fs.existsSync(inputFile)) {
+            console.warn(`⚠️ WARNING: Input file not found: ${inputFile}`);
+            console.warn(`    Skipping ${fileName}.pdf generation\n`);
+            continue;
+          }
+          
+          console.log(`Input file: ${inputFile}`);
+          markdown = fs.readFileSync(inputFile, 'utf8');
+          console.log(`Read ${markdown.length} characters from source file`);
         }
         
-        console.log(`Input file: ${inputFile}`);
         console.log(`Output file: ${outputFile}`);
         
         try {
-          let markdown = fs.readFileSync(inputFile, 'utf8');
-          console.log(`Read ${markdown.length} characters from source file`);
+          // Robust frontmatter removal that handles various formats
+          markdown = markdown.replace(/^(---|\+\+\+)\s*\n([\s\S]*?)\n\s*(---|\+\+\+)\s*/m, '');
 
-          // Remove YAML frontmatter if present
-          markdown = markdown.replace(/^---[\s\S]*?---/, '');
-          
+          // Process SVG references
+          markdown = processSvgReferences(markdown, path.dirname(tool.sourceDir[lang]));
+                    
           // Convert markdown with emoji replacement
           const renderer = new marked.Renderer();
           

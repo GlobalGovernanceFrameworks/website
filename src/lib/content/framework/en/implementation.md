@@ -125,7 +125,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 
 ### Tier 2: Systems for Long-Term Thriving
 - [Technology Governance](/framework/docs/implementation/technology) (In Review)
-- [Financial Systems](/framework/docs/implementation/finance) (Planned)
+- [Financial Systems](/framework/docs/implementation/finance) (Coming Soon)
 - [Educational Systems](/framework/docs/implementation/education)
 - [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
 - [Environmental Stewardship](/framework/docs/implementation/environment) (In Review)

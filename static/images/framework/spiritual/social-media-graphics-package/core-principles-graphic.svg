@@ -1,0 +1,48 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#f8f5f2" />
+  
+  <!-- Title -->
+  <text x="540" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#2a4365">Core Principles</text>
+  
+  <!-- Circle background -->
+  <circle cx="540" cy="540" r="380" fill="#e2e8f0" />
+  
+  <!-- Center circle -->
+  <circle cx="540" cy="540" r="100" fill="#4299e1" />
+  <text x="540" y="555" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#ffffff">Dialogue</text>
+  
+  <!-- Principle 1: Inclusivity -->
+  <circle cx="540" cy="240" r="80" fill="#805ad5" />
+  <text x="540" y="255" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">Inclusivity</text>
+  <!-- Connecting line -->
+  <line x1="540" y1="340" x2="540" y2="440" stroke="#805ad5" stroke-width="6" />
+  
+  <!-- Principle 2: Respect -->
+  <circle cx="840" cy="540" r="80" fill="#38b2ac" />
+  <text x="840" y="555" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">Respect</text>
+  <!-- Connecting line -->
+  <line x1="740" y1="540" x2="640" y2="540" stroke="#38b2ac" stroke-width="6" />
+  
+  <!-- Principle 3: Equity -->
+  <circle cx="540" cy="840" r="80" fill="#ed8936" />
+  <text x="540" y="855" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">Equity</text>
+  <!-- Connecting line -->
+  <line x1="540" y1="740" x2="540" y2="640" stroke="#ed8936" stroke-width="6" />
+  
+  <!-- Principle 4: Collaboration -->
+  <circle cx="240" cy="540" r="80" fill="#3182ce" />
+  <text x="240" y="555" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">Collaboration</text>
+  <!-- Connecting line -->
+  <line x1="340" y1="540" x2="440" y2="540" stroke="#3182ce" stroke-width="6" />
+  
+  <!-- Principle 5: Knowledge Integration -->
+  <circle cx="390" cy="390" r="80" fill="#9f7aea" />
+  <text x="390" y="390" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#ffffff">Knowledge</text>
+  <text x="390" y="420" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#ffffff">Integration</text>
+  <!-- Connecting line -->
+  <line x1="460" y1="460" x2="505" y2="505" stroke="#9f7aea" stroke-width="6" />
+  
+  <!-- Framework identifier -->
+  <text x="540" y="1040" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2a4365">Religious & Spiritual Dialogue Framework</text>
+</svg>

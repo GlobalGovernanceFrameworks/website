@@ -7,6 +7,8 @@ section: 02-core-principles
 
 The Religious & Spiritual Dialogue Framework is guided by five foundational principles that shape its structure, activities, and evolution. These principles serve as both ethical standards and practical guidelines, ensuring the framework remains true to its purpose while adapting to diverse contexts.
 
+![Core Principles Interrelationship](/images/framework/spiritual/core-principles-interrelationship.svg)
+
 ### Inclusivity
 
 **The Framework embraces the full spectrum of human spiritual expression, including organized religions, indigenous cosmologies, non-theistic spiritualities, and secular ethical perspectives.**
@@ -23,16 +25,19 @@ Inclusivity requires ongoing effort to identify and remove barriers to participa
 
 ### Respect
 
-**The Framework honors the integrity, context, and boundaries of diverse spiritual practices and beliefs, avoiding appropriation, reductionism, or instrumentalization.**
+The Framework honors the integrity, context, temporal rhythms, and boundaries of diverse spiritual practices and beliefs, avoiding appropriation, reductionism, or instrumentalization.
 
 In practice, this means:
 
 - Engaging with traditions on their own terms, using their preferred language and concepts
 - Recognizing the complex historical and cultural contexts in which traditions are embedded
+- Acknowledging and accommodating diverse conceptions of time, ritual cycles, and sacred calendars
 - Avoiding the extraction of spiritual practices from their cultural contexts
+- Scheduling activities with awareness of multiple traditions' observances and sacred periods
 - Acknowledging that some knowledge is not intended for sharing outside specific communities
 - Respecting the autonomy of traditions to determine their own boundaries for dialogue
 - Preventing the reduction of rich spiritual traditions to simplistic "values" that can be easily commodified
+- Recognizing that different approaches to time reflect fundamental worldviews rather than mere scheduling preferences
 
 This principle requires humility and careful attention to power dynamics in cross-tradition engagement.
 
@@ -72,14 +77,25 @@ This principle recognizes that meaningful dialogue must lead to tangible action 
 
 In practice, this means:
 
+- Integrating diverse temporal frameworks, including cyclical, seasonal, generational, and non-linear conceptions of time that inform different traditions' approaches to long-term challenges
 - Creating formal channels for religious and spiritual insights to inform governance in other domains
 - Developing methodologies for translating spiritual wisdom into practical policy recommendations
 - Building capacity among religious and spiritual leaders to engage effectively with policy processes
 - Educating policymakers about the potential contributions of spiritual perspectives
 - Documenting case studies where spiritual insights have enhanced governance outcomes
 - Measuring the impact of spiritual and religious contributions to policy development
+- Creating space for ritual and contemplative practices that enhance decision-making quality
 
 This principle moves beyond token inclusion of religious voices to substantive integration of spiritual wisdom in addressing humanity's most pressing challenges.
+
+**The framework also acknowledges mystical and transpersonal states as valid epistemological approaches** within many traditions, while developing appropriate translation protocols for governance contexts
+
+In practice, this means:
+- Recognizing that contemplative, visionary, and unitive experiences represent legitimate knowledge sources in numerous traditions
+- Creating space for insights from deep meditative states, entheogenic practices (where legally conducted within traditional contexts), near-death experiences, and other transpersonal states
+- Developing ethical guidelines for appropriate integration of mystical insights into governance discussions
+- Distinguishing between subjective meaning-making and transpersonal insights with broader ethical implications
+- Honoring the often ineffable nature of these experiences while seeking their practical wisdom
 
 ### Application of Principles
 

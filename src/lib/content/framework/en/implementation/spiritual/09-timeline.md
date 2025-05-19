@@ -10,36 +10,74 @@ The implementation of the Religious & Spiritual Dialogue Framework follows a pha
 ### Year 1 (2026): Foundation Building
 
 #### Quarter 1: Preparatory Phase
+**Key Activities:**
 - Establish core secretariat team (5-7 staff)
 - Develop detailed operational protocols and guidelines
 - Begin outreach to potential GCRSD representatives
 - Secure initial funding for launch phase
 - Create foundational communication materials
 
+**Quarterly KPIs:**
+- ✓ Secretariat staffing: 100% of core positions filled with ≥40% gender diversity
+- ✓ Operational manual: Complete first draft with 5+ expert reviews
+- ✓ Representation outreach: Initial contact with ≥100 traditions across all major regions
+- ✓ Funding secured: ≥30% of Year 1 budget committed with ≥3 different funding sources
+- ✓ Digital presence: Basic website launched in ≥5 languages with ≥1,000 unique visitors
+
+**Review Mechanism:** End-of-quarter board assessment with public summary report
+
 #### Quarter 2: GCRSD Formation
+**Key Activities:**
 - Complete selection process for GCRSD representatives
 - Conduct inaugural GCRSD meeting (virtual)
 - Establish Advisory Board with initial members
 - Launch basic website with multilingual capabilities
 - Begin mapping existing interfaith/inter-spiritual initiatives
 
+**Quarterly KPIs:**
+- ✓ GCRSD composition: ≥35 confirmed representatives meeting all diversity requirements
+- ✓ Inaugural meeting: ≥90% attendance with representatives from all major tradition categories
+- ✓ Advisory Board: ≥10 members confirmed with expertise across all required domains
+- ✓ Digital engagement: Website available in ≥8 languages with ≥10,000 unique visitors
+- ✓ Knowledge mapping: Database of ≥50 existing interfaith initiatives with assessment of potential synergies
+
+**Review Mechanism:** Mid-quarter progress check and end-of-quarter public dashboard update
+
 #### Quarter 3: Pilot Hub Development
-- Launch first three Regional Hubs:
-  - North America (Canada as host)
-  - Middle East (Saudi Arabia, operating discreetly)
-  - Africa (Rwanda as host)
+**Key Activities:**
+- Launch first three Regional Hubs: North America, Middle East, Africa
 - Conduct hub training and capacity building
 - Establish initial working groups for Ethics Charter and Truth & Reconciliation
 - Develop monitoring and evaluation framework
 
+**Quarterly KPIs:**
+- ✓ Regional Hubs: 3 hubs operational with ≥15 active members each
+- ✓ Hub diversity: Each hub meeting gender, age, and tradition diversity requirements
+- ✓ Training completion: ≥90% of hub members completed basic facilitation training
+- ✓ Working groups: ≥2 working groups established with clear 12-month workplans
+- ✓ M&E framework: Complete draft with indicators approved by Advisory Board
+
+**Review Mechanism:** Hub leadership monthly check-ins and consolidated quarterly assessment
+
 #### Quarter 4: Inaugural Activities
+**Key Activities:**
 - Host first Global Summit with 100+ participants
 - Launch digital platform with core functionality
 - Begin facilitator training program with 50 initial participants
 - Publish first quarterly report on activities and learnings
 - Establish initial relationships with 3-5 other governance domains
 
-**Key Milestone**: By end of Year 1, the framework has established its core governance structures, launched three pilot Regional Hubs, and conducted its first Global Summit with diverse representation.
+**Quarterly KPIs:**
+- ✓ Global Summit: ≥100 participants from ≥50 traditions with ≥40% women and ≥25% youth
+- ✓ Summit outcomes: Published proceedings with ≥3 concrete initiatives launched
+- ✓ Digital platform: Core modules operational with ≥500 active users and ≥90% uptime
+- ✓ Facilitator pipeline: ≥50 facilitators in training representing ≥20 traditions
+- ✓ Cross-domain engagement: Formal collaboration agreements with ≥3 governance frameworks
+- ✓ Year 1 assessment: Comprehensive evaluation completed with public report and Year 2 adjustments
+
+**Review Mechanism:** End-of-year comprehensive review with public presentation and stakeholder feedback session
+
+**Key Milestone**: By end of Year 1, the framework has established its core governance structures, launched three pilot Regional Hubs, and conducted its first Global Summit with diverse representation, achieving ≥80% of defined quarterly KPIs.
 
 ### Year 2 (2027): Expansion & Integration
 
@@ -173,6 +211,22 @@ The implementation of the Religious & Spiritual Dialogue Framework follows a pha
 - Implement transition to sustainable operational model
 
 **Key Milestone**: By end of Year 5, the framework has formalized its structures, scaled successful initiatives globally, and developed a comprehensive plan for long-term impact.
+
+### Year 5+ Phase:
+
+#### Digital Commons Evolution (Years 5-7)
+- **Transition from centralized to decentralized knowledge architecture** through integration with digital commons technologies
+- Develop an interfaith knowledge graph connecting wisdom traditions through decentralized protocols
+- Implement community governance mechanisms for shared digital resources
+- Create permissioned spaces for tradition-specific knowledge with appropriate access controls
+- Establish verifiable contribution systems that recognize wisdom-sharing while protecting traditional ownership
+- Build cross-platform integration with other governance frameworks' digital systems
+
+**Key Milestones**:
+- Launch of Interfaith Knowledge Commons with distributed ownership structure (Year 5)
+- Integration of at least 1,000 verified wisdom sources with appropriate attribution (Year 6)
+- Community-governed access protocols operational across all participating traditions (Year 7)
+- First cross-framework governance applications built on shared digital infrastructure (Year 7)
 
 ### Contingency Paths
 

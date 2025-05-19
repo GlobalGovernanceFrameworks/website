@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 850"
+   version="1.1"
+   id="svg62"
+   sodipodi:docname="cross-tradition-values.svg"
+   width="900"
+   height="850"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs62" />
+  <sodipodi:namedview
+     id="namedview62"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2085714"
+     inkscape:cx="308.21513"
+     inkscape:cy="565.13002"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg62" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="849.98071"
+     fill="#f8f7f2"
+     rx="15"
+     ry="18.213873"
+     id="rect1"
+     x="0"
+     y="0"
+     style="stroke-width:1.10193" />
+  <path
+     d="m 0,850 c 200,-50 400,-20 600,-50 200,-30 150,-50 300,-20 v 70 z"
+     fill="#e7f0ea"
+     opacity="0.3"
+     id="path1" />
+  <path
+     d="M 900,94 C 700,144 500,124 300,154 100,184 50,114 0,134 V 94 Z"
+     fill="#e7f0ea"
+     opacity="0.3"
+     id="path2" />
+  <!-- Title -->
+  <g
+     transform="translate(450,60)"
+     id="g2">
+    <rect
+       x="-280"
+       y="-25"
+       width="560"
+       height="40"
+       rx="10"
+       ry="10"
+       fill="#3a866c"
+       opacity="0.9"
+       id="rect2" />
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="18px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text2">Cross-Tradition Ethical Values Mapping</text>
+  </g>
+  <g
+     transform="translate(450,93)"
+     id="g3">
+    <text
+       x="0"
+       y="5"
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       fill="#3a866c"
+       font-style="italic"
+       id="text3">Common values with diverse metaphysical foundations</text>
+  </g>
+  <!-- Central Values Hub -->
+  <g
+     transform="translate(450,444)"
+     id="g9">
+    <!-- Core Circle -->
+    <circle
+       cx="0"
+       cy="0"
+       r="120"
+       fill="#ffffff"
+       stroke="#3a866c"
+       stroke-width="3"
+       id="circle3" />
+    <circle
+       cx="0"
+       cy="0"
+       r="115"
+       fill="#f0f7f4"
+       id="circle4" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text5"><tspan
+         x="0"
+         y="-50"
+         font-size="16px"
+         font-weight="bold"
+         id="tspan4">Core Shared</tspan><tspan
+         x="0"
+         y="-30"
+         font-size="16px"
+         font-weight="bold"
+         id="tspan5">Ethical Values</tspan></text>
+    <!-- Core Values Listed -->
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text9"><tspan
+         x="0"
+         y="0"
+         font-size="14px"
+         id="tspan6">• Care for Creation</tspan><tspan
+         x="0"
+         y="25"
+         font-size="14px"
+         id="tspan7">• Human Dignity</tspan><tspan
+         x="0"
+         y="50"
+         font-size="14px"
+         id="tspan8">• Truthfulness</tspan><tspan
+         x="0"
+         y="75"
+         font-size="14px"
+         id="tspan9">• Compassion</tspan></text>
+  </g>
+  <!-- Religious/Spiritual Traditions -->
+  <!-- Abrahamic Traditions -->
+  <circle
+     cx="181.17015"
+     cy="279.85077"
+     r="85.778534"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="2.14447"
+     id="circle9" />
+  <circle
+     cx="179.41492"
+     cy="281.60602"
+     r="82.605995"
+     fill="#f7f9f8"
+     id="circle10"
+     style="stroke-width:1.10142" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text11"
+     x="180"
+     y="274"><tspan
+       x="180"
+       y="229"
+       font-size="16px"
+       font-weight="bold"
+       id="tspan10">Abrahamic</tspan><tspan
+       x="180"
+       y="249"
+       font-size="16px"
+       font-weight="bold"
+       id="tspan11">Traditions</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text15"
+     x="180"
+     y="274"><tspan
+       x="180"
+       y="279"
+       font-size="12px"
+       id="tspan12">Stewardship of Creation</tspan><tspan
+       x="180"
+       y="299"
+       font-size="12px"
+       id="tspan13">Imago Dei (Image of God)</tspan><tspan
+       x="180"
+       y="319"
+       font-size="12px"
+       id="tspan14">Covenant Testimony</tspan><tspan
+       x="180"
+       y="339"
+       font-size="12px"
+       id="tspan15">Mercy/Rahma/Chesed</tspan></text>
+  <!-- Dharmic Traditions -->
+  <circle
+     cx="721.17017"
+     cy="281.02094"
+     r="86.934242"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="2.17335"
+     id="circle15" />
+  <circle
+     cx="721.75525"
+     cy="282.77615"
+     r="83.776146"
+     fill="#f7f9f8"
+     id="circle16"
+     style="stroke-width:1.11702" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text17"
+     x="720"
+     y="274"><tspan
+       x="720"
+       y="229"
+       font-size="16px"
+       font-weight="bold"
+       id="tspan16">Dharmic</tspan><tspan
+       x="720"
+       y="249"
+       font-size="16px"
+       font-weight="bold"
+       id="tspan17">Traditions</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text21"
+     x="720"
+     y="274"><tspan
+       x="720"
+       y="279"
+       font-size="12px"
+       id="tspan18">Ahimsa (Non-harm)</tspan><tspan
+       x="720"
+       y="299"
+       font-size="12px"
+       id="tspan19">Atman (Divine Self)</tspan><tspan
+       x="720"
+       y="319"
+       font-size="12px"
+       id="tspan20">Satya (Truth)</tspan><tspan
+       x="720"
+       y="339"
+       font-size="12px"
+       id="tspan21">Karuna (Compassion)</tspan></text>
+  <!-- Indigenous Traditions -->
+  <g
+     transform="translate(180,614)"
+     id="g27">
+    <circle
+       cx="0"
+       cy="0"
+       r="80"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="2"
+       id="circle21" />
+    <circle
+       cx="0"
+       cy="0"
+       r="75"
+       fill="#f7f9f8"
+       id="circle22" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text23"><tspan
+         x="0"
+         y="-45"
+         font-size="16px"
+         font-weight="bold"
+         id="tspan22">Indigenous</tspan><tspan
+         x="0"
+         y="-25"
+         font-size="16px"
+         font-weight="bold"
+         id="tspan23">Traditions</tspan></text>
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text27"><tspan
+         x="0"
+         y="5"
+         font-size="12px"
+         id="tspan24">Kinship with Nature</tspan><tspan
+         x="0"
+         y="25"
+         font-size="12px"
+         id="tspan25">Sacred Personhood</tspan><tspan
+         x="0"
+         y="45"
+         font-size="12px"
+         id="tspan26">Ancestral Wisdom</tspan><tspan
+         x="0"
+         y="65"
+         font-size="12px"
+         id="tspan27">Reciprocity</tspan></text>
+  </g>
+  <!-- East Asian Traditions -->
+  <circle
+     cx="719.17261"
+     cy="616.4823"
+     r="82.451622"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="2.06129"
+     id="circle27" />
+  <circle
+     cx="719.5863"
+     cy="617.72339"
+     r="78.723404"
+     fill="#f7f9f8"
+     id="circle28"
+     style="stroke-width:1.04964" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text29"
+     x="720"
+     y="614"><tspan
+       x="720"
+       y="569"
+       font-size="16px"
+       font-weight="bold"
+       id="tspan28">East Asian</tspan><tspan
+       x="720"
+       y="589"
+       font-size="16px"
+       font-weight="bold"
+       id="tspan29">Traditions</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text33"
+     x="720"
+     y="614"><tspan
+       x="720"
+       y="619"
+       font-size="12px"
+       id="tspan30">Harmony with Nature</tspan><tspan
+       x="720"
+       y="639"
+       font-size="12px"
+       id="tspan31">Ren (Humaneness)</tspan><tspan
+       x="720"
+       y="659"
+       font-size="12px"
+       id="tspan32">Cheng (Sincerity)</tspan><tspan
+       x="720"
+       y="679"
+       font-size="12px"
+       id="tspan33">Ci (Compassion)</tspan></text>
+  <!-- Secular Humanist -->
+  <circle
+     cx="449.58627"
+     cy="696.0686"
+     r="82.043022"
+     fill="#ffffff"
+     stroke="#5a9378"
+     stroke-width="2.05108"
+     id="circle33" />
+  <circle
+     cx="450"
+     cy="697.30969"
+     r="78.309692"
+     fill="#f7f9f8"
+     id="circle34"
+     style="stroke-width:1.04412" />
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text35"
+     x="450"
+     y="694"><tspan
+       x="450"
+       y="649"
+       font-size="16px"
+       font-weight="bold"
+       id="tspan34">Secular</tspan><tspan
+       x="450"
+       y="669"
+       font-size="16px"
+       font-weight="bold"
+       id="tspan35">Humanism</tspan></text>
+  <text
+     text-anchor="middle"
+     font-family="Arial, sans-serif"
+     fill="#3a866c"
+     id="text39"
+     x="450"
+     y="694"><tspan
+       x="450"
+       y="699"
+       font-size="12px"
+       id="tspan36">Environmental Ethics</tspan><tspan
+       x="450"
+       y="719"
+       font-size="12px"
+       id="tspan37">Human Rights</tspan><tspan
+       x="450"
+       y="739"
+       font-size="12px"
+       id="tspan38">Intellectual Integrity</tspan><tspan
+       x="450"
+       y="759"
+       font-size="12px"
+       id="tspan39">Empathy Solidarity</tspan></text>
+  <!-- African Traditional -->
+  <g
+     transform="translate(450,194)"
+     id="g45">
+    <circle
+       cx="0"
+       cy="0"
+       r="80"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="2"
+       id="circle39" />
+    <circle
+       cx="0"
+       cy="0"
+       r="75"
+       fill="#f7f9f8"
+       id="circle40" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text41"><tspan
+         x="0"
+         y="-45"
+         font-size="16px"
+         font-weight="bold"
+         id="tspan40">African</tspan><tspan
+         x="0"
+         y="-25"
+         font-size="16px"
+         font-weight="bold"
+         id="tspan41">Traditional</tspan></text>
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text45"><tspan
+         x="0"
+         y="5"
+         font-size="12px"
+         id="tspan42">Earth as Sacred</tspan><tspan
+         x="0"
+         y="25"
+         font-size="12px"
+         id="tspan43">Ubuntu (Humanity)</tspan><tspan
+         x="0"
+         y="45"
+         font-size="12px"
+         id="tspan44">Ancestral Integrity</tspan><tspan
+         x="0"
+         y="65"
+         font-size="12px"
+         id="tspan45">Communal Care</tspan></text>
+  </g>
+  <!-- Connection Lines -->
+  <!-- From Abrahamic to Center -->
+  <path
+     d="m 249.01385,332.76602 102.22831,43.25043"
+     stroke="#3a866c"
+     stroke-width="1.71179"
+     fill="none"
+     id="path45"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <!-- From Dharmic to Center -->
+  <path
+     d="M 650.62071,332.91612 550.09825,375.44485"
+     stroke="#3a866c"
+     stroke-width="1.69121"
+     fill="none"
+     id="path46"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <!-- From Indigenous to Center -->
+  <path
+     d="M 239.9428,559.13519 350.85963,512.20884"
+     stroke="#3a866c"
+     stroke-width="1.70641"
+     fill="none"
+     id="path47"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <!-- From East Asian to Center -->
+  <path
+     d="M 660.06016,559.14219 550.13159,512.63395"
+     stroke="#3a866c"
+     stroke-width="1.69121"
+     fill="none"
+     id="path48"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <!-- From Secular Humanist to Center -->
+  <path
+     d="M 450,614 V 564"
+     stroke="#3a866c"
+     stroke-width="2"
+     fill="none"
+     id="path49" />
+  <!-- From African Traditional to Center -->
+  <path
+     d="m 450,274 v 50"
+     stroke="#3a866c"
+     stroke-width="2"
+     fill="none"
+     id="path50" />
+  <!-- Ethical Value Mappings -->
+  <!-- Care for Creation -->
+  <g
+     transform="translate(100,444)"
+     id="g55">
+    <rect
+       x="-80"
+       y="-70"
+       width="160"
+       height="140"
+       rx="10"
+       ry="10"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1.5"
+       id="rect50" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text55"><tspan
+         x="0"
+         y="-45"
+         font-size="14px"
+         font-weight="bold"
+         id="tspan50">Care for Creation</tspan><tspan
+         x="0"
+         y="-25"
+         font-size="12px"
+         font-style="italic"
+         id="tspan51">Metaphysical Grounds:</tspan><tspan
+         x="0"
+         y="0"
+         font-size="11px"
+         id="tspan52">• Divine mandate</tspan><tspan
+         x="0"
+         y="20"
+         font-size="11px"
+         id="tspan53">• Ecological interdependence</tspan><tspan
+         x="0"
+         y="40"
+         font-size="11px"
+         id="tspan54">• Sacred kinship</tspan><tspan
+         x="0"
+         y="60"
+         font-size="11px"
+         id="tspan55">• Natural harmony</tspan></text>
+  </g>
+  <!-- Human Dignity -->
+  <g
+     transform="translate(800,444)"
+     id="g61">
+    <rect
+       x="-80"
+       y="-70"
+       width="160"
+       height="140"
+       rx="10"
+       ry="10"
+       fill="#ffffff"
+       stroke="#5a9378"
+       stroke-width="1.5"
+       id="rect55" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       fill="#3a866c"
+       id="text61"><tspan
+         x="0"
+         y="-45"
+         font-size="14px"
+         font-weight="bold"
+         id="tspan56">Human Dignity</tspan><tspan
+         x="0"
+         y="-25"
+         font-size="12px"
+         font-style="italic"
+         id="tspan57">Metaphysical Grounds:</tspan><tspan
+         x="0"
+         y="0"
+         font-size="11px"
+         id="tspan58">• Divine image</tspan><tspan
+         x="0"
+         y="20"
+         font-size="11px"
+         id="tspan59">• Inherent divinity</tspan><tspan
+         x="0"
+         y="40"
+         font-size="11px"
+         id="tspan60">• Natural rights</tspan><tspan
+         x="0"
+         y="60"
+         font-size="11px"
+         id="tspan61">• Community belonging</tspan></text>
+  </g>
+  <!-- Additional Governance Application Note -->
+  <g
+     transform="translate(450,814)"
+     id="g62">
+    <rect
+       x="-350"
+       y="-20"
+       width="700"
+       height="40"
+       rx="10"
+       ry="10"
+       fill="#f0f7f4"
+       stroke="#3a866c"
+       stroke-width="1"
+       id="rect61" />
+    <text
+       text-anchor="middle"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       fill="#3a866c"
+       id="text62"><tspan
+         x="0"
+         y="5"
+         id="tspan62">Diverse metaphysical grounds can support shared ethical action in governance</tspan></text>
+  </g>
+</svg>

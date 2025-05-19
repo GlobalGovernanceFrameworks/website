@@ -15,6 +15,7 @@ Key deliverables include:
 - Establishing the Global Council for Religious & Spiritual Dialogue with verified, representative membership
 - Launching at least five regional hubs in diverse geographical and cultural contexts
 - Conducting an inaugural global summit with participants from at least 50 traditions
+- Developing a shared vocabulary for cross-tradition dialogue on governance challenges, including a comprehensive ethical values mapping that identifies common principles (such as care for creation, human dignity, truthfulness, and compassion) while honoring the diverse metaphysical foundations that support these values across traditions.
 - Developing a shared vocabulary for cross-tradition dialogue on governance challenges
 - Identifying common ethical values across traditions that can inform governance approaches
 - Creating baseline measurements of inter-tradition relationships and collaboration

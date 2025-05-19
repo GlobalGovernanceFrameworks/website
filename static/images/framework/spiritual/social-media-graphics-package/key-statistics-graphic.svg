@@ -1,0 +1,39 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#2a4365" />
+  
+  <!-- Title -->
+  <text x="540" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#ffffff">Why Spiritual Dialogue Matters</text>
+  
+  <!-- Statistic 1 -->
+  <circle cx="270" cy="350" r="150" fill="#4299e1" />
+  <text x="270" y="330" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="#ffffff">84%</text>
+  <text x="270" y="390" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">of global population</text>
+  <text x="270" y="420" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">identifies with a</text>
+  <text x="270" y="450" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">religious tradition</text>
+  
+  <!-- Statistic 2 -->
+  <circle cx="810" cy="350" r="150" fill="#38b2ac" />
+  <text x="810" y="330" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="#ffffff">5000+</text>
+  <text x="810" y="390" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">years of ethical</text>
+  <text x="810" y="420" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">wisdom in spiritual</text>
+  <text x="810" y="450" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">traditions</text>
+  
+  <!-- Statistic 3 -->
+  <circle cx="270" cy="730" r="150" fill="#805ad5" />
+  <text x="270" y="710" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="#ffffff">40%</text>
+  <text x="270" y="770" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">women's leadership</text>
+  <text x="270" y="800" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">in our framework</text>
+  <text x="270" y="830" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">governance</text>
+  
+  <!-- Statistic 4 -->
+  <circle cx="810" cy="730" r="150" fill="#ed8936" />
+  <text x="810" y="710" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="#ffffff">25%</text>
+  <text x="810" y="770" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">guaranteed youth</text>
+  <text x="810" y="800" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">representation</text>
+  <text x="810" y="830" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#ffffff">(under 30)</text>
+  
+  <!-- Footer -->
+  <rect x="0" y="960" width="1080" height="120" fill="#1a365d" />
+  <text x="540" y="1030" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#ffffff">Religious & Spiritual Dialogue Framework</text>
+</svg>
