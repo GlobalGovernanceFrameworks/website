@@ -11,6 +11,7 @@ section: 06-stakeholder-engagement
 - [Civil Society](#civil-society)
 - [Non-State Actors](#non-state-actors)
 - [Scientific Community](#scientific-community)
+- [Cultural Knowledge Systems](#cultural-knowledge-systems)
 
 Effective climate and energy governance requires the meaningful participation of diverse stakeholders across society. This framework recognizes that inclusive, participatory processes lead to more legitimate, equitable, and effective outcomes. The stakeholder engagement approach outlined here moves beyond consultation to true collaboration, recognizing different stakeholders not merely as observers but as active participants with distinct rights, responsibilities, and contributions.
 
@@ -219,5 +220,20 @@ The framework improves coordination of research efforts globally:
 - **Open Science Principles**: Requirements for publicly funded climate and energy research to be openly accessible, with data sharing, open methodologies, and accessible publication.
 
 - **Research Infrastructure Sharing**: Mechanisms for shared use of major research facilities, computing resources, and observational networks for climate and energy research.
+
+### <a id="cultural-knowledge-systems"></a>Cultural Knowledge Systems
+
+The framework recognizes that climate governance must integrate diverse cultural knowledge systems to be truly effective and equitable:
+
+- **Cultural Knowledge Inclusion**: Formal mechanisms for integrating traditional, indigenous, and local knowledge into all aspects of climate governance, with provisions for appropriate cultural protocols regarding knowledge sharing.
+
+- **Cross-Cultural Dialogue Processes**: Structured approaches to facilitate mutual understanding across different cultural perspectives on climate, nature, and governance, moving beyond translation toward genuine conceptual exchange.
+
+- **Culturally Adaptive Governance**: Governance procedures designed to flex and adapt to different cultural contexts, including variable decision-making processes, communication styles, and time orientations.
+
+- **Multilingual Governance**: Comprehensive multilingual access to all governance processes, extending beyond major international languages to include indigenous and local languages in affected regions.
+
+- **Cultural Impact Assessment**: Evaluation of climate policies for their potential impacts on cultural practices, values, and heritage, with appropriate mitigation measures when negative impacts are identified.
+
 
 Together, these stakeholder engagement approaches ensure that climate and energy governance benefits from diverse perspectives, expertise, and implementation capacities while respecting rights, addressing power imbalances, and creating conditions for broad-based participation. By moving beyond consultation to meaningful collaboration, the framework harnesses the full potential of all societal actors in addressing the climate crisis and transforming energy systems.

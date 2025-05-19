@@ -107,6 +107,10 @@ Beyond specific principles, this framework is guided by a holistic ethical appro
 
 - **Global citizenship**: Fostering recognition of shared humanity and planetary boundaries that transcend national identities, while respecting cultural diversity.
 
+- **Cultural autonomy**:Communities maintain the right to preserve and express their cultural practices, knowledge systems, and governance traditions within the broader framework of climate action.
+
+**Cultural Integration in Practice**: The framework moves beyond mere respect for cultural diversity to active integration of diverse worldviews in governance design. This includes: incorporating indigenous concepts of environmental stewardship like "buen vivir" and "ubuntu" into policy frameworks; adapting governance structures to reflect diverse decision-making traditions; ensuring multilingual access to all governance processes; recognizing varied cultural expressions of climate concern; and creating space for spiritually-informed perspectives on humanity's relationship with nature. Governance processes are designed to be culturally reflexive, continuously evolving to better integrate diverse ways of knowing and governing.
+
 This ethical framework provides a moral compass for navigating complex trade-offs, setting priorities, and evaluating outcomes in climate and energy governance.
 
 Together, these six guiding principles—sustainability, equity, science-based decision making, cooperation, adaptability, and ethical framework—create a foundation for governance that is both morally grounded and practically effective. They inform the design of governance structures, policy mechanisms, and implementation approaches throughout this framework.
