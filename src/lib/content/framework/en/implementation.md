@@ -134,7 +134,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 
 ### Tier 3: Equity, Culture & Future Generations
 - [Digital Commons](/framework/docs/implementation/digital)
-- [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Planned)
+- [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Coming Soon)
 - [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
 - [Rural Development](/framework/docs/implementation/rural) (Planned)
 - [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual)
