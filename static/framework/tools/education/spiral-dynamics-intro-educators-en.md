@@ -1,6 +1,6 @@
 # Spiral Dynamics Introduction for Educators
 
-**Purpose**: Introduces educators to Spiral Dynamics, a developmental framework underpinning the *Perfected Enhanced Educational Systems Implementation Framework*’s curriculum, enabling them to teach systems thinking, empathy, and global citizenship through evolving human values and worldviews ([Section 3.2](#]). This module prepares educators for Tier 1 micro-pilots, fostering regenerative education aligned with SDG 4 (Quality Education) and SDG 16 (Peace, Justice, Strong Institutions).
+**Purpose**: Introduces educators to Spiral Dynamics, a developmental framework underpinning the *Regenerative Educational Systems Implementation Framework*’s curriculum, enabling them to teach systems thinking, empathy, and global citizenship through evolving human values and worldviews ([Section 3.2](#]). This module prepares educators for Tier 1 micro-pilots, fostering regenerative education aligned with SDG 4 (Quality Education) and SDG 16 (Peace, Justice, Strong Institutions).
 
 **Usage**:
 - **Who**: Educators, facilitators, and community leaders delivering the “Start with the Seed” kit in pilot communities ([Section 4.3](#]).

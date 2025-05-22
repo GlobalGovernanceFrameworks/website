@@ -1,6 +1,6 @@
 # Cost-Benefit Analysis Model
 
-**Purpose**: Quantifies the economic and social returns of adopting the *Perfected Enhanced Educational Systems Implementation Framework*, providing evidence to justify funding and advocacy efforts, as outlined in resource mobilization strategies ([Section 4.7](/framework/docs/implementation/education#04-implementation-strategies)) and cost-benefit analysis details ([Section 10.3](/framework/docs/implementation/education#10-appendices)). This model supports stakeholder decision-making, aligning with SDG 4 (Quality Education) and SDG 10 (Reduced Inequalities).
+**Purpose**: Quantifies the economic and social returns of adopting the *Regenerative Educational Systems Implementation Framework*, providing evidence to justify funding and advocacy efforts, as outlined in resource mobilization strategies ([Section 4.7](/framework/docs/implementation/education#04-implementation-strategies)) and cost-benefit analysis details ([Section 10.3](/framework/docs/implementation/education#10-appendices)). This model supports stakeholder decision-making, aligning with SDG 4 (Quality Education) and SDG 10 (Reduced Inequalities).
 
 **Usage**:
 - **Who**: Local champions, policymakers, funders, and NGOs seeking to secure resources or evaluate framework impact.

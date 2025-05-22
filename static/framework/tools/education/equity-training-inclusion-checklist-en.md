@@ -1,6 +1,6 @@
 # Equity Training and Inclusion Checklist
 
-**Purpose**: Equips educators, facilitators, and community leaders with a training guide and checklist to ensure equity and inclusion in *Perfected Enhanced Educational Systems Implementation Framework* pilots, fostering intersectional representation and safe, inclusive learning environments ([Section 2.2.5](#]). This resource supports regenerative education and aligns with SDG 4 (Quality Education) and SDG 10 (Reduced Inequalities).
+**Purpose**: Equips educators, facilitators, and community leaders with a training guide and checklist to ensure equity and inclusion in *Regenerative Educational Systems Implementation Framework* pilots, fostering intersectional representation and safe, inclusive learning environments ([Section 2.2.5](#]). This resource supports regenerative education and aligns with SDG 4 (Quality Education) and SDG 10 (Reduced Inequalities).
 
 **Usage**:
 - **Who**: Educators, youth facilitators, and community leaders implementing the “Start with the Seed” kit in Tier 1 micro-pilots ([Section 4.3](#]).

@@ -1,6 +1,6 @@
 # Systems Thinking Module
 
-**Purpose**: Introduces learners (ages 10–18) to systems thinking, a core competency of the *Perfected Enhanced Educational Systems Implementation Framework*, enabling them to map, analyze, and intervene in complex systems (e.g., ecosystems, communities, economies) as outlined in the spiral dynamics curriculum ([Section 3.2](#]). This module fosters critical thinking and regenerative problem-solving, aligning with SDG 4 (Quality Education) and SDG 13 (Climate Action).
+**Purpose**: Introduces learners (ages 10–18) to systems thinking, a core competency of the *Regenerative Educational Systems Implementation Framework*, enabling them to map, analyze, and intervene in complex systems (e.g., ecosystems, communities, economies) as outlined in the spiral dynamics curriculum ([Section 3.2](#]). This module fosters critical thinking and regenerative problem-solving, aligning with SDG 4 (Quality Education) and SDG 13 (Climate Action).
 
 **Usage**:
 - **Who**: Educators, youth facilitators, and community leaders delivering the “Start with the Seed” kit in Tier 1 micro-pilots ([Section 4.3](#]).

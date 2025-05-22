@@ -1,6 +1,6 @@
 # Advocacy Playbook
 
-**Purpose**: Equips stakeholders with strategies, narratives, and materials to advocate for the adoption of the *Perfected Enhanced Educational Systems Implementation Framework* by engaging ministries, unions, community leaders, and global forums, as outlined in the framework’s political strategy ([Section 4.11](/framework/docs/implementation/education#04-implementation-strategies)). This playbook fosters buy-in, secures funding, and drives systemic change, aligning with SDG 17 (Partnerships for the Goals).
+**Purpose**: Equips stakeholders with strategies, narratives, and materials to advocate for the adoption of the *Regenerative Educational Systems Implementation Framework* by engaging ministries, unions, community leaders, and global forums, as outlined in the framework’s political strategy ([Section 4.11](/framework/docs/implementation/education#04-implementation-strategies)). This playbook fosters buy-in, secures funding, and drives systemic change, aligning with SDG 17 (Partnerships for the Goals).
 
 **Usage**:
 - **Who**: Local champions, educators, youth councils, and NGOs advocating for framework pilots or scaled implementation.
@@ -20,7 +20,7 @@
 **Purpose**: Develop compelling, culturally resonant stories to communicate the framework’s value and urgency ([Section 4.11](/framework/docs/implementation/education#04-implementation-strategies)).
 **Strategies**:
 - **Core Message**: Frame the framework as a regenerative solution to global challenges (climate, inequality, education), e.g.:
-  > The *Perfected Enhanced Educational Systems Implementation Framework* transforms learning into a living ecosystem, empowering youth and communities to restore our planet and co-create equitable futures.
+  > The *Regenerative Educational Systems Implementation Framework* transforms learning into a living ecosystem, empowering youth and communities to restore our planet and co-create equitable futures.
 - **Audience-Specific Framing**:
   - **Ministries**: Emphasize cost-benefit returns (e.g., $2B economic impact over 10 years, [Section 10.3](/framework/docs/implementation/education#10-appendices)) and SDG alignment ([Section 6](/framework/docs/implementation/education#06-sdg-alignment)).
   - **Unions**: Highlight educator training and job creation via train-the-trainer models ([Section 3.8](/framework/docs/implementation/education#03-structural-components)).

@@ -24,19 +24,6 @@
 | Regenerative Design ([Section 3.3 – Structural Components](/framework/docs/implementation/education#03-structural-components)) | e.g., Geography: Sustainable development | Elective on permaculture projects         | Include Indigenous practices, refugee perspectives | \$10K for materials, community workshops |
 | Global Citizenship ([Section 3.4 – Structural Components](/framework/docs/implementation/education#03-structural-components))  | e.g., Civics: Democratic processes       | Youth council policy projects             | LGBTQ+ and caste inclusion modules                 | \$8K for digital platforms, mentors      |
 
----
-
-**Instructions**:
-
-1. **Identify Competencies**: List framework competencies from [Section 3 – Structural Components](/framework/docs/implementation/education#03-structural-components) (e.g., systems thinking, global citizenship).
-2. **Map to Standards**: Align with national or local curriculum standards, noting overlaps or gaps.
-3. **Propose Strategies**: Suggest integration methods (e.g., electives, hybrid assessments) per [Section 4.1 – Implementation Strategies](/framework/docs/implementation/education#04-implementation-strategies).
-4. **Address Equity**: Ensure inclusion of marginalized groups (e.g., neurodiverse, refugees) per [Section 2.2.5 – Equity Principle](/framework/docs/implementation/education#02-vision-principles).
-5. **Estimate Resources**: Budget for training, materials, or tech, aligned with [Section 4.7 – Resource Mobilization](/framework/docs/implementation/education#04-implementation-strategies).
-6. **Validate**: Engage community boards for cultural relevance ([Section 5.5 – Community-Led M\&E](/framework/docs/implementation/education#55-community-led-mne)).
-
----
-
 **Example Use**: In Thailand, educators used this template to integrate systems thinking into national science standards, improving critical thinking by 25% for 1,000 learners ([Section 8.4 – Spiral Dynamics Pilot in Southeast Asia](/framework/docs/implementation/education#84-spiral-dynamics-pilot-in-southeast-asia)).
 
 ---

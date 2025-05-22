@@ -1,4 +1,4 @@
-# 🌍 **Förenklad Guide till det Perfekterade Förstärkta Utbildningssystemets Implementeringsramverk**
+# 🌍 **Förenklad Guide till Utbildningssystemets Implementeringsramverk**
 
 ## 🔭 Vision
 

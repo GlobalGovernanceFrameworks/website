@@ -1,6 +1,6 @@
 # Bureaucratic Navigation Toolkit
 
-**Purpose**: Equips stakeholders with tools and strategies to navigate administrative, political, and institutional barriers, ensuring the adoption of the *Perfected Enhanced Educational Systems Implementation Framework* in diverse governance systems, as outlined in the framework’s political strategy ([Section 4.11](/framework/docs/implementation/education#04-implementation-strategies)). This toolkit fosters resilience and collaboration, aligning with SDG 16 (Peace, Justice, Strong Institutions) and SDG 17 (Partnerships for the Goals).
+**Purpose**: Equips stakeholders with tools and strategies to navigate administrative, political, and institutional barriers, ensuring the adoption of the *Regenerative Educational Systems Implementation Framework* in diverse governance systems, as outlined in the framework’s political strategy ([Section 4.11](/framework/docs/implementation/education#04-implementation-strategies)). This toolkit fosters resilience and collaboration, aligning with SDG 16 (Peace, Justice, Strong Institutions) and SDG 17 (Partnerships for the Goals).
 
 **Usage**:
 - **Who**: Local champions, educators, youth councils, and NGOs advocating for framework pilots or scaled implementation.
@@ -19,7 +19,7 @@
 ### Section 1: Policy Brief Template
 **Purpose**: Crafts a concise, persuasive document to advocate for framework integration into national or local education plans ([Section 4.11](/framework/docs/implementation/education#04-implementation-strategies)).
 **Template**:
-> **Title**: Advancing Regenerative Education: Adopting the *Perfected Enhanced Educational Systems Implementation Framework*  
+> **Title**: Advancing Regenerative Education: Adopting the *Regenerative Educational Systems Implementation Framework*  
 > **Introduction**: The framework reimagines education as a regenerative ecosystem, empowering youth and communities to address climate, inequality, and governance challenges ([Section 2](/framework/docs/implementation/education#02-vision-principles)).  
 > **Rationale**: Aligns with SDG 4 (Quality Education) and delivers $10M economic returns per $1M invested ([Section 10.3](/framework/docs/implementation/education#10-appendices)). Case models (e.g., Nordic youth parliaments, [Section 8.1](/framework/docs/implementation/education#08-case-models)) demonstrate 80% engagement and 10% emissions reductions.  
 > **Proposal**: Integrate framework components (e.g., polycentric networks, [Section 3.1](/framework/docs/implementation/education#03-structural-components)) via pilot programs, supported by educator training ([Section 3.8](/framework/docs/implementation/education#03-structural-components)).  
@@ -41,7 +41,7 @@
 **Templates**:
 - **Funding Request**:
   > Dear [Funder Name],  
-  > The [Community Name] seeks $500K to pilot the *Perfected Enhanced Educational Systems Implementation Framework*, delivering 30% engagement increases and $1M social returns ([Section 10.3](/framework/docs/implementation/education#10-appendices)). Our youth-led initiative, inspired by Amazonian regenerative schools ([Section 8.2](/framework/docs/implementation/education#08-case-models)), prioritizes Indigenous and refugee voices. We request a meeting to discuss partnership.  
+  > The [Community Name] seeks $500K to pilot the *Regenerative Educational Systems Implementation Framework*, delivering 30% engagement increases and $1M social returns ([Section 10.3](/framework/docs/implementation/education#10-appendices)). Our youth-led initiative, inspired by Amazonian regenerative schools ([Section 8.2](/framework/docs/implementation/education#08-case-models)), prioritizes Indigenous and refugee voices. We request a meeting to discuss partnership.  
   > Sincerely, [Local Champion Name]
 - **Curriculum Approval**:
   > Dear [Ministry Official],  

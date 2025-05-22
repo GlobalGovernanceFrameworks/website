@@ -1,6 +1,6 @@
 # Pilot Readiness Self-Assessment Tool
 
-**Purpose**: Evaluates a community’s readiness to launch pilots of the *Perfected Enhanced Educational Systems Implementation Framework*, identifying strengths, gaps, and actionable steps to ensure successful implementation, as outlined in phased implementation strategies ([Section 4.4](/framework/docs/implementation/education#04-implementation-strategies)) and pilot readiness details ([Section 10.4](/framework/docs/implementation/education#10-appendices)). This tool fosters preparedness and equity, aligning with SDG 4 (Quality Education) and SDG 17 (Partnerships for the Goals).
+**Purpose**: Evaluates a community’s readiness to launch pilots of the *Regenerative Educational Systems Implementation Framework*, identifying strengths, gaps, and actionable steps to ensure successful implementation, as outlined in phased implementation strategies ([Section 4.4](/framework/docs/implementation/education#04-implementation-strategies)) and pilot readiness details ([Section 10.4](/framework/docs/implementation/education#10-appendices)). This tool fosters preparedness and equity, aligning with SDG 4 (Quality Education) and SDG 17 (Partnerships for the Goals).
 
 **Usage**:
 - **Who**: Local champions, educators, youth councils, and community leaders planning Tier 1 micro-pilots ([Section 4.2](/framework/docs/implementation/education#04-implementation-strategies)).

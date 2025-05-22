@@ -68,6 +68,43 @@ if (targetCategory && !Object.keys(outputDirs).includes(targetCategory)) {
 
 // Define tools to process
 const tools = [
+  // Regenerative Educational Systems Framework
+  // Full framework combined PDF
+  {
+    name: 'eductional-systems',
+    category: 'education',
+    fileNames: {
+      en: 'Educational-Systems',
+      sv: 'Educational-Systems'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Education Framework - Page ',
+      sv: 'Utbildningsramverk - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '01-preamble',
+      '02-vision-principles',
+      '03-structural-components',
+      '04-implementation-strategies',
+      '05-monitoring-evaluation',
+      '06-sdg-alignment',
+      '07-visual-multimedia',
+      '08-case-models',
+      '09-future-potential',
+      '10-appendices',
+    ]
+  },
+  // Guides
   {
     name: 'quick-start',
     category: 'education',
@@ -84,6 +121,7 @@ const tools = [
       sv: 'Utbildningsramverk Lite Guide - Sida '
     }
   },
+  // Tools
   {
     name: 'pilot-readiness-self-assessment-tool',
     category: 'education',
