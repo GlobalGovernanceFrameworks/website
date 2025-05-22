@@ -28,6 +28,9 @@ Available categories:
 - ethics
 - justice
 - spiritual
+- financial-systems
+- governance
+- environmental-stewardship
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -51,6 +54,9 @@ const outputDirs = {
   'ethics': path.join(__dirname, '..', 'static', 'framework', 'tools', 'ethics'),
   'justice': path.join(__dirname, '..', 'static', 'framework', 'tools', 'justice'),
   'spiritual': path.join(__dirname, '..', 'static', 'framework', 'tools', 'spiritual'),
+  'financial-systems': path.join(__dirname, '..', 'static', 'framework', 'tools', 'financial-systems'),
+  'environmental-stewardship': path.join(__dirname, '..', 'static', 'framework', 'tools', 'environmental-stewardship'),
+  'governance': path.join(__dirname, '..', 'static', 'framework', 'tools', 'governance')
 };
 
 // Validate category if provided
@@ -3622,7 +3628,396 @@ const tools = [
       'sacred-space-setup-guide',
       'tradition-protocol-cards'
     ]
-  }
+  },
+
+  // Financial Systems
+
+  // Quick Guides
+  {
+    name: 'quick-guide',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'quick-guide-en',
+      sv: 'quick-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems')
+    },
+    pageFooter: {
+      en: 'Quick Guide - Page ',
+      sv: 'Snabbguide - Sida '
+    }
+  },
+  {
+    name: 'quick-guide-medium',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'quick-guide-medium-en',
+      sv: 'quick-guide-medium-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems')
+    },
+    pageFooter: {
+      en: 'Community Guide - Page ',
+      sv: 'Samhällsguide - Sida '
+    }
+  },
+  {
+    name: 'quick-guide-youth',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'quick-guide-youth-en',
+      sv: 'quick-guide-youth-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems')
+    },
+    pageFooter: {
+      en: 'Youth Guide - Page ',
+      sv: 'Ungdomsguide - Sida '
+    }
+  },
+
+  // Implementation Tools
+  {
+    name: 'hearts-toolkit',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'hearts-toolkit-en',
+      sv: 'hearts-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+    },
+    pageFooter: {
+      en: 'Hearts Implementation Toolkit - Page ',
+      sv: 'Hearts Implementeringsverktyg - Sida '
+    }
+  },
+  {
+    name: 'transition-guide',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'transition-guide-en',
+      sv: 'transition-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+    },
+    pageFooter: {
+      en: 'Transition Guide - Page ',
+      sv: 'Övergångsguide - Sida '
+    }
+  },
+  {
+    name: 'validator-training',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'validator-training-en',
+      sv: 'validator-training-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+    },
+    pageFooter: {
+      en: 'Validator Training Manual - Page ',
+      sv: 'Validatorträningsmanual - Sida '
+    }
+  },
+  {
+    name: 'love-ledger-guide',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'love-ledger-guide-en',
+      sv: 'love-ledger-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+    },
+    pageFooter: {
+      en: 'Love Ledger User Guide - Page ',
+      sv: 'Love Ledger Användarguide - Sida '
+    }
+  },
+  {
+    name: 'hearts-technical-spec',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'hearts-technical-spec-en',
+      sv: 'hearts-technical-spec-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+    },
+    pageFooter: {
+      en: 'Hearts Technical Specification - Page ',
+      sv: 'Hearts Teknisk Specifikation - Sida '
+    }
+  },
+  {
+    name: 'translation-layer',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'translation-layer-en',
+      sv: 'translation-layer-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+    },
+    pageFooter: {
+      en: 'Inter-Currency Translation Layer - Page ',
+      sv: 'Inter-Valuta Översättningslager - Sida '
+    }
+  },
+  {
+    name: 'proof-of-care',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'proof-of-care-en',
+      sv: 'proof-of-care-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+    },
+    pageFooter: {
+      en: 'Proof of Care Protocol - Page ',
+      sv: 'Proof of Care Protokoll - Sida '
+    }
+  },
+  // Full framework combined PDF
+  {
+    name: 'financial-systems-framework',
+    category: 'financial-systems',
+    fileNames: {
+      en: 'Financial-Systems-Framework',
+      sv: 'Finansiella-Systems-Ramverk'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Financial Systems Framework - Page ',
+      sv: 'Finansiella Systems Ramverk - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '01-introduction',
+      '02-core-principles',
+      '03-structural-components',
+      '04-implementation-approaches',
+      '05-metrics-evaluation',
+      '06-supporting-sections',
+      '07-appendices'
+    ]
+  },
+
+  // General Governance
+  // Core Tools
+  {
+    name: 'decidetogether-platform-guide',
+    category: 'governance',
+    fileNames: {
+      en: 'decidetogether-platform-guide-en',
+      sv: 'decidetogether-platform-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'governance','tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'governance', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'DecideTogether Platform Guide - Page ',
+      sv: 'Guide till DecideTogether-plattformen - Sida '
+    }
+  },
+  {
+    name: 'stakeholder-engagement-charter',
+    category: 'governance',
+    fileNames: {
+      en: 'stakeholder-engagement-charter-en',
+      sv: 'stakeholder-engagement-charter-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'governance','tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'governance', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Stakeholder Engagement Charter Template - Page ',
+      sv: 'Mall för stadga för intressentengagemang - Sida '
+    }
+  },
+  {
+    name: 'community-well-being-index',
+    category: 'governance',
+    fileNames: {
+      en: 'community-well-being-index-en',
+      sv: 'community-well-being-index-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'governance','tools', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'governance', 'tools', 'monitoring')
+    },
+    pageFooter: {
+      en: 'Community Well-Being Index - Page ',
+      sv: 'Index för samhällets välbefinnande - Sida '
+    }
+  },
+
+  // Environmental Stewardship Framework
+  // Core Tools
+  {
+    name: 'dynamic-rights-spectrum-guide',
+    category: 'environmental-stewardship',
+    fileNames: {
+      en: 'dynamic-rights-spectrum-guide-en',
+      sv: 'dynamic-rights-spectrum-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Dynamic Rights Spectrum Guide - Page ',
+      sv: 'Guide för dynamiskt rättighetsspektrum - Sida '
+    }
+  },
+  {
+    name: 'reparations-protocol',
+    category: 'environmental-stewardship',
+    fileNames: {
+      en: 'reparations-protocol-en',
+      sv: 'reparations-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship', 'tools', 'governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'governance')
+    },
+    pageFooter: {
+      en: 'Reparations Protocol - Page ',
+      sv: 'Reparationsprotokoll - Sida '
+    }
+  },
+  {
+    name: 'ecosystem-health-indicators',
+    category: 'environmental-stewardship',
+    fileNames: {
+      en: 'ecosystem-health-indicators-en',
+      sv: 'ecosystem-health-indicators-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship', 'tools', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'monitoring')
+    },
+    pageFooter: {
+      en: 'Ecosystem Health Indicators - Page ',
+      sv: 'Indikatorer för ekosystemhälsa - Sida '
+    }
+  },
+  {
+    name: 'nexus-impact-assessment-tool',
+    category: 'environmental-stewardship',
+    fileNames: {
+      en: 'nexus-impact-assessment-tool-en',
+      sv: 'nexus-impact-assessment-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship', 'tools', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'monitoring')
+    },
+    pageFooter: {
+      en: 'Nexus Impact Assessment Tool - Page ',
+      sv: 'Nexus konsekvensbedömningsverktyg - Sida '
+    }
+  },
+  // Guides
+  {
+    name: 'one-page-essence',
+    category: 'environmental-stewardship',
+    fileNames: {
+      en: 'one-page-essence-en',
+      sv: 'one-page-essence-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship')
+    },
+    pageFooter: {
+      en: 'Environmental Stewardship Framework - One Page Essence - Page ',
+      sv: 'Ramverk för miljöförvaltning - Essens på en sida - Sida '
+    }
+  },
+  {
+    name: 'first-100-days-playbook',
+    category: 'environmental-stewardship',
+    fileNames: {
+      en: 'first-100-days-playbook-en',
+      sv: 'first-100-days-playbook-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship')
+    },
+    pageFooter: {
+      en: 'First 100 Days Playbook - Page ',
+      sv: 'Handbok för de första 100 dagarna - Sida '
+    }
+  },
+  // Full framework
+  {
+    name: 'environmental-stewardship-framework',
+    category: 'environmental-stewardship',
+    fileNames: {
+      en: 'Environmental-Stewardship-Framework',
+      sv: 'Environmental-Stewardship-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Environmental Stewardship Framework for Multi-Level Governance - Page ',
+      sv: 'Miljöförvaltningsramverk för Flernivåstyrning - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '01-introduction',
+      '02-guiding-principles',
+      '03-governance-structure',
+      '04-core-pillars',
+      '05-policy-mechanisms',
+      '06-stakeholder-engagement',
+      '07-financing-mechanisms',
+      '08-implementation-roadmap',
+      '09-metrics-for-success',
+      '10-visualizations',
+      '11-challenges-and-solutions',
+      '12-implementation-tools',
+      '13-reparations-protocol',
+      '14-conclusion',
+      '15-appendices'
+    ]
+  },
 ];
 
 // CSS styling for the PDF
@@ -4051,7 +4446,7 @@ async function generatePDFs() {
           console.log(`🗑️ Deleted temporary HTML file: ${tempHtmlFile}`);
           
           // Also copy the markdown file to the output directory
-          const markdownOutputFile = path.join(categoryDir, `${fileName}.md`);
+          const markdownOutputFile = path.join(outputDir, `${fileName}.md`);
           fs.writeFileSync(markdownOutputFile, markdown);
           console.log(`✅ Markdown file copied to: ${markdownOutputFile}`);
           

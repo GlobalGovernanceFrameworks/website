@@ -29,6 +29,9 @@
       educationTitle: "Education Framework Visualizations",
       educationDesc: "Visual resources for the Education Framework, including learning progression models, systems diagrams of educational governance, and analytics tools for educational outcomes.",
       educationButton: "Coming Soon",
+      environmentalTitle: "Environmental Stewardship Visualizations",
+      environmentalDesc: "Visual resources for regenerative environmental governance, including ecosystem rights frameworks, climate action roadmaps, stakeholder engagement networks, and monitoring tools for planetary well-being.",
+      environmentalButton: "Access Environmental Visualizations",
       foodTitle: "Food Systems & Agriculture Visualizations",
       foodDesc: "Visual tools for sustainable food systems governance, including food web diagrams, value chain visualizations, and interactive maps of agricultural transformation pathways.",
       foodButton: "Coming Soon",
@@ -65,6 +68,9 @@
       educationTitle: "Visualiseringar för utbildningsramverket",
       educationDesc: "Visuella resurser för utbildningsramverket, inklusive modeller för inlärningsprogression, systemdiagram för utbildningsstyrning och analysverktyg för utbildningsresultat.",
       educationButton: "Kommer snart",
+      environmentalTitle: "Visualiseringar för miljöförvaltning",
+      environmentalDesc: "Visuella resurser för regenerativ miljöstyrning, inklusive ramverk för ekosystemrättigheter, handlingsplaner för klimatåtgärder, intressentnätverk och övervakningsverktyg för planetens välbefinnande.",
+      environmentalButton: "Öppna miljövisualiseringar",
       ethicsTitle: "Visualiseringar för etik och varelsers rättigheter",
       ethicsDesc: "Visuella resurser för ramverket för etik och varelsers rättigheter, inklusive dynamiskt rättighetsspektrum, implementeringsguider, styrningsstrukturer och verktyg för medvetenhetsbedömning.",
       ethicsButton: "Öppna etikvisualiseringar",
@@ -190,6 +196,25 @@
         </div>
       </div>
 
+      <!-- Environmental Stewardship Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6DAA3F; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #6DAA3F;">🌿</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6DAA3F;">{texts.environmentalTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.environmentalDesc}
+            </p>
+            <a href="{base}/framework/visuals/environmental-stewardship" style="display: inline-flex; align-items: center; background-color: #6DAA3F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.environmentalButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Digital Commons Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6d28d9; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
@@ -239,13 +264,6 @@
         </p>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-          <!-- Environmental Framework -->
-          <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #2D5F2D;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.5rem; color: #2D5F2D;">🌿</span>
-              <h4 style="font-size: 1.125rem; font-weight: 600; color: #2D5F2D; margin: 0;">{texts.environmentalTitle}</h4>
-            </div>
-          </div>
           
           <!-- Technology Framework -->
           <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #4B8AC2;">

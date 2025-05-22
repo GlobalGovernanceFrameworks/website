@@ -88,12 +88,15 @@ module.exports = {
 │   │   ├── i18n/         # Internationalization system
 │   ├── routes/           # SvelteKit pages
 ├── static/               # Static assets
+├── CONTRIBUTING.md       # Contribution guidelines
+├── README.md
+├── STYLE_GUIDE.md        # Documentation standards and best practices
 ├── svelte.config.js      # SvelteKit configuration
 ├── tailwind.config.js    # Tailwind CSS configuration
 ├── postcss.config.js     # PostCSS configuration
-├── package.json
-└── README.md
+└── package.json
 ```
+
 
 ## Contributing
 

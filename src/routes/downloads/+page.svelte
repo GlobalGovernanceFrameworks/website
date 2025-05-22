@@ -415,6 +415,21 @@
           </div>
         </div>
 
+        <!-- Financial Systems Framework -->
+        <div class="download-card">
+          <div class="card-emoji" style="color: #3A6EA5;">❤️</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #3A6EA5;">{$t('downloads.implementationFrameworks.financialSystems.title', 'Financial Systems Framework')}</h2>
+            <p class="card-description">{$t('downloads.implementationFrameworks.financialSystems.description', 'A comprehensive framework for implementing financial systems that prioritize human and ecological flourishing, including the Hearts currency system, Love Ledger, and tools for equitable resource distribution.')}</p>
+            <a href={getPdfPath('Financial-Systems-Framework')} download class="download-button" style="background-color: #3A6EA5;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
         <!-- Educational Systems -->
         <div class="download-card">
           <div class="card-emoji" style="color: #3f51b5;">🎓</div>
@@ -436,7 +451,7 @@
           <div class="card-content">
             <h2 class="card-title" style="color: #B8860B;">{$t('downloads.implementationFrameworks.environment.title')}</h2>
             <p class="card-description">{$t('downloads.implementationFrameworks.environment.description')}</p>
-            <a href={getPdfPath('Environmental-Stewardship')} download class="download-button" style="background-color: #2D5F2D;">
+            <a href={getPdfPath('Environmental-Stewardship-Framework')} download class="download-button" style="background-color: #2D5F2D;">
               {$t('downloads.downloadButton')}
               <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

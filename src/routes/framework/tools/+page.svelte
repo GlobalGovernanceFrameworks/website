@@ -20,14 +20,24 @@
       subtitle: "Implementation resources for Global Governance Frameworks",
       intro: "Access tools, templates, and resources to help implement various governance frameworks. Each framework has its own set of specialized tools tailored to its unique focus and requirements.",
       availableResources: "Currently Available Resources",
+      governanceTitle: "Governance Tools",
+      governanceDesc: "Essential tools for democratic participation and community coordination, including digital democracy platforms, stakeholder engagement templates, and community well-being assessment frameworks for transparent governance.",
+      governanceButton: "Access Governance Tools",
+      climateTitle: "Climate & Energy Governance Framework Tools",
       climateDesc: "Tools for implementing the Climate & Energy Governance Framework, including assessment tools, transition planning templates, and advocacy resources for climate policy.",
       climateButton: "Access Climate & Energy Tools",
       peaceTitle: "Peace & Conflict Resolution Framework Tools",
       peaceDesc: "Resources for implementing peace governance at multiple levels, including conflict analysis templates, dialogue protocols, and tools for transitional justice, early warning systems, and trauma-informed facilitation.",
       peaceButton: "Access Peace & Conflict Tools",
+      financialTitle: "Financial Systems Framework Tools",
+      financialDesc: "Resources for implementing financial systems that prioritize human and ecological flourishing, including Hearts currency implementation, Love Ledger guides, validator training, and tools for integrating with traditional financial systems.",
+      financialButton: "Access Financial Systems Tools",
       educationTitle: "Education Framework Tools",
       educationDesc: "Tools for implementing the Perfected Enhanced Educational Systems Framework, including project guides, assessment tools, and advocacy resources.",
       educationButton: "Access Education Tools",
+      environmentalTitle: "Environmental Stewardship Framework Tools",
+      environmentalDesc: "Resources for regenerative environmental governance, including sacred seed kits for interfaith restoration, ecosystem health monitoring, rights recognition for all beings, and tools for climate adaptation and biodiversity protection.",
+      environmentalButton: "Access Environmental Stewardship Tools",
       digitalTitle: "Digital Commons Framework Tools",
       digitalDesc: "Tools for implementing the Digital Commons Framework, including governance templates, node setup guides, data sovereignty protocols, and resources for establishing ethical AI systems and knowledge commons in diverse contexts.",
       digitalButton: "Access Digital Commons Tools",
@@ -49,9 +59,7 @@
       comingSoon: "Coming Soon",
       otherFrameworks: "Other Framework Resources",
       otherFrameworksDesc: "Implementation tools for the following frameworks are currently in development and will be made available soon:",
-      environmentalTitle: "Environmental Stewardship Framework",
       technologyTitle: "Technology Governance Framework",
-      spiritualTitle: "Religious & Spiritual Dialogue Framework",
       metaTitle: "Integrated Meta-Governance Framework",
       requestTitle: "Request Tools or Provide Feedback",
       requestDesc: "Need implementation resources for a specific framework? Have suggestions for improvements? We welcome your input to make these tools more useful.",
@@ -63,14 +71,24 @@
       subtitle: "Implementeringsresurser för globala styrningsramverk",
       intro: "Få tillgång till verktyg, mallar och resurser för att implementera olika styrningsramverk. Varje ramverk har sin egen uppsättning specialiserade verktyg anpassade efter dess unika fokus och krav.",
       availableResources: "Tillgängliga resurser",
+      governanceTitle: "Styrningsverktyg",
+      governanceDesc: "Viktiga verktyg för demokratiskt deltagande och samhällssamordning, inklusive digitala demokratiplattformar, mallar för intressentengagemang och ramverk för bedömning av samhällets välbefinnande för transparent styrning.",
+      governanceButton: "Öppna Styrningsverktyg",
+      climateTitle: "Verktyg för klimat- och energistyrningsramverk",
       climateDesc: "Verktyg för att implementera ramverket för klimat- och energistyrning, inklusive bedömningsverktyg, mallar för omställningsplanering och opinionsbildningsresurser för klimatpolitik.",
       climateButton: "Öppna klimat- och energiverktyg",
       peaceTitle: "Verktyg för fred och konfliktlösningsramverk",
       peaceDesc: "Resurser för att implementera fredsarbete på flera nivåer, inklusive mallar för konfliktanalys, dialogprotokoll och verktyg för övergångsrättvisa, tidiga varningssystem och traumamedveten facilitering.",
       peaceButton: "Öppna freds- och konfliktverktyg",
+      financialTitle: "Verktyg för Finansiella Systems Ramverk",
+      financialDesc: "Resurser för implementering av finansiella system som prioriterar mänskligt och ekologiskt välbefinnande, inklusive Hearts valutaimplementering, Love Ledger-guider, validatorträning och verktyg för integrering med traditionella finansiella system.",
+      financialButton: "Öppna Finansiella Systemverktyg",
       educationTitle: "Verktyg för utbildningsramverket",
       educationDesc: "Verktyg för att implementera det Perfekterade Förstärkta Utbildningssystemet, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
       educationButton: "Öppna utbildningsverktyg",
+      environmentalTitle: "Verktyg för Miljöförvaltningsramverk",
+      environmentalDesc: "Resurser för regenerativ miljöstyrning, inklusive heliga fröpaket för interfaith-restaurering, övervakning av ekosystemhälsa, rättighetserkännande för alla varelser och verktyg för klimatanpassning och biologisk mångfaldsskydd.",
+      environmentalButton: "Öppna Miljöförvaltningsverktyg",
       digitalTitle: "Verktyg för digitalt allmänningsramverk",
       digitalDesc: "Verktyg för att implementera ramverket för digitala allmänningar, inklusive styrningsmallar, guider för nodkonfiguration, protokoll för datasuveränitet och resurser för att upprätta etiska AI-system och kunskapsallmänningar i olika sammanhang.",
       digitalButton: "Öppna digitala allmänningsverktyg",
@@ -92,9 +110,7 @@
       comingSoon: "Kommer snart",
       otherFrameworks: "Övriga ramverksresurser",
       otherFrameworksDesc: "Implementeringsverktyg för följande ramverk är för närvarande under utveckling och kommer att göras tillgängliga inom kort:",
-      environmentalTitle: "Miljöförvaltningsramverk",
       technologyTitle: "Styrningsramverk för teknik",
-      spiritualTitle: "Ramverk för religiös och andlig dialog",
       metaTitle: "Integrerat meta-styrningsramverk",
       requestTitle: "Begär verktyg eller ge feedback",
       requestDesc: "Behöver du implementeringsresurser för ett specifikt ramverk? Har du förslag på förbättringar? Vi välkomnar dina synpunkter för att göra dessa verktyg mer användbara.",
@@ -136,6 +152,25 @@
 
       <!-- Available Resources Section -->
       <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1.5rem; color: #2B4B8C;">{texts.availableResources}</h2>
+
+      <!-- Governance Tools Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2B4B8C; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #2B4B8C;">🌍</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2B4B8C;">{texts.governanceTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.governanceDesc}
+            </p>
+            <a href="{base}/framework/tools/governance" style="display: inline-flex; align-items: center; background-color: #2B4B8C; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.governanceButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <!-- Climate & Energy Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2C8A78; margin-bottom: 2rem;">
@@ -232,6 +267,25 @@
         </div>
       </div>
 
+      <!-- Financial Systems Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #3A6EA5; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #3A6EA5;">❤️</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #3A6EA5;">{texts.financialTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.financialDesc}
+            </p>
+            <a href="{base}/framework/tools/financial-systems" style="display: inline-flex; align-items: center; background-color: #3A6EA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.financialButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Education Framework Card -->
       <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2D5F2D; margin-bottom: 2rem;">
         <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
@@ -243,6 +297,25 @@
             </p>
             <a href="{base}/framework/tools/education" style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.educationButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Environmental Stewardship Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #6DAA3F; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #6DAA3F;">🌿</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #6DAA3F;">{texts.environmentalTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.environmentalDesc}
+            </p>
+            <a href="{base}/framework/tools/environmental-stewardship" style="display: inline-flex; align-items: center; background-color: #6DAA3F; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.environmentalButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -319,27 +392,12 @@
         </p>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
-          <!-- Environmental Framework -->
-          <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #2D5F2D;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.5rem; color: #2D5F2D;">🌿</span>
-              <h4 style="font-size: 1.125rem; font-weight: 600; color: #2D5F2D; margin: 0;">{texts.environmentalTitle}</h4>
-            </div>
-          </div>
           
           <!-- Technology Framework -->
           <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #4B8AC2;">
             <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
               <span style="font-size: 1.5rem; color: #4B8AC2;">🤖</span>
               <h4 style="font-size: 1.125rem; font-weight: 600; color: #4B8AC2; margin: 0;">{texts.technologyTitle}</h4>
-            </div>
-          </div>
-          
-          <!-- Spiritual Framework -->
-          <div style="background-color: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 2px rgba(0,0,0,0.05); border-left: 3px solid #9B6A8F;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-              <span style="font-size: 1.5rem; color: #9B6A8F;">🕯️</span>
-              <h4 style="font-size: 1.125rem; font-weight: 600; color: #9B6A8F; margin: 0;">{texts.spiritualTitle}</h4>
             </div>
           </div>
           

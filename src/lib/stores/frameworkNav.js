@@ -34,10 +34,10 @@ const initialNav = [
         path: '/framework/docs/implementation/tier-2',
         subItems: [
           { titleKey: 'framework.docs.nav.implementationTechnology', path: '/framework/docs/implementation/technology', status: 'review' },
-          { titleKey: 'framework.docs.nav.implementationFinancial', path: '/framework/docs/implementation/finance', comingSoon: true },
+          { titleKey: 'framework.docs.nav.implementationFinancial', path: '/framework/docs/implementation/financial-systems', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', status: 'ready' },
           { titleKey: 'framework.docs.nav.implementationUrban', path: '/framework/docs/implementation/urban', planned: true },
-          { titleKey: 'framework.docs.nav.implementationEnvironment', path: '/framework/docs/implementation/environment', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationEnvironment', path: '/framework/docs/implementation/environmental-stewardship', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationOceansMarine', path: '/framework/docs/implementation/oceans', planned: true },
           { titleKey: 'framework.docs.nav.implementationLaborEmployment', path: '/framework/docs/implementation/labor', planned: true }
         ]

@@ -1,3 +1,64 @@
+## Environmental framework, appendices, Appendix C:
+
+globalgovernanceframework.org/hotline
+A secure reporting channel enabling confidential documentation of governance violations, corruption, or implementation failures, accessible via globalgovernanceframework.org/hotline with protection protocols safeguarding those raising concerns.
+
+globalgovernanceframework.org/tools/environment/pilot-readiness
+
+globalgovernanceframework.org/tools/technology/tek-integration
+**Description**: Provides guidelines for appropriately incorporating indigenous wisdom into framework implementation, ensuring traditional knowledge receives proper recognition and application while protecting cultural heritage from appropriation or misuse.
+
+globalgovernanceframework.org/tools/technology/ai-assessment
+**Description**: Guides the evaluation of artificial intelligence systems for potential consciousness or sentience, informing ethical governance decisions as technology advances within environmental applications.
+
+globalgovernanceframework.org/tools/governance-mapper
+**Description**: Visualizes relationships between governance entities, clarifying complex institutional landscapes to support effective coordination and identify intervention opportunities.
+
+globalgovernanceframework.org/tools/open-source
+**Description**: Establishes standards for collaborative technology development supporting framework implementation, ensuring transparency, accessibility, and community ownership.
+
+globalgovernanceframework.org/tools/tech-impact
+**Description**: Provides monitoring templates for assessing technology deployment against ethical and environmental standards, supporting accountability and continuous improvement.
+
+globalgovernanceframework.org/tools/nexus-assessment
+**Description**: Evaluates interactions between water, energy, food, and ecosystem systems, supporting balanced decision-making that considers multiple dimensions and potential trade-offs.
+
+globalgovernanceframework.org/tools/disaster/crisis-response
+**Description**: Provides structured guidance for maintaining framework implementation during emergencies, ensuring climate disasters and other disruptions become opportunities for better rebuilding rather than implementation deferral.
+
+globalgovernanceframework.org/tools/train-the-trainer
+**Description**: Provides comprehensive methodology for building implementation capacity at scale, enabling knowledge transfer beyond direct implementation team reach.
+
+globalgovernanceframework.org/tools/policy-harmonization
+**Description**: Supports alignment between framework implementation and existing policy landscapes, helping navigate complex regulatory environments while creating coherent governance across levels.
+
+globalgovernanceframework.org/tools/troubleshooting
+**Description**: Offers structured approaches to common implementation challenges, providing practical solutions for obstacles encountered throughout framework deployment.
+
+globalgovernanceframework.org/tools/counter-messaging
+**Description**: Helps implementation leaders respond effectively to opposition, providing strategies for addressing criticism, misinformation, and resistance to framework adoption.
+
+**Access**: globalgovernanceframework.org/tools/campaign-starter
+**Description**: Provides resources for public engagement and advocacy supporting framework adoption, helping communities build understanding and momentum for implementation.
+
+globalgovernanceframework.org/tools/policy-submission
+**Description**: Provides templates and guidance for formal policy engagement, helping stakeholders translate framework principles into official governance processes at multiple levels.
+
+
+## Environmental framework, stakeholder engagement:
+
+globalgovernanceframework.org/cultural-audits:
+Knowledge sharing follows cultural consent protocols developed with indigenous legal experts, protecting sacred information while enabling appropriate exchange. Annual indigenous-led audits verify protocol compliance across tools and processes, with results reported at globalgovernanceframework.org/cultural-audits to maintain accountability.
+
+globalgovernanceframework.org/youth-council:
+The GCESS Youth Council members are elected through global youth networks and #NestedEconomies campaigns, providing formal representation in the framework's highest governance body. Young people can apply at globalgovernanceframework.org/youth-council, with selection criteria emphasizing diverse representation across regions, backgrounds, and knowledge systems.
+
+globalgovernanceframework.org/ombudsman:
+Annual reports document grievance patterns and resolutions, identifying systemic issues requiring framework adjustment. These reports, published at globalgovernanceframework.org/ombudsman, maintain transparency while protecting confidential information about specific cases.
+
+
+## Digital
+
 globalgovernanceframework.org/framework/digital/health-dashboard
 As outlined in digital/tools/digital-tools/health-dashboard.md
 
