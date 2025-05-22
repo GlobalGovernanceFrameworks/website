@@ -4,21 +4,6 @@
 
 **Purpose**: This guide empowers communities and Local Citizen Nodes to secure and manage funding for the *Digital Commons Framework*, which governs digital resources—data, software, knowledge, and infrastructure—as shared global commons. Rooted in equitable commons principles (e.g., Iroquois Confederacy’s resource-sharing models) and aligned with UN Sustainable Development Goals (SDGs 9, 10, 17), it provides practical strategies for community-driven funding, including crowdfunding and data dividends. Designed for low-resource settings, it ensures accessibility with tools like SMS and paper-based processes, targeting 80% node funding and 50% non-corporate revenue by 2035.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Why Community Funding Matters](#why-community-funding-matters)
-- [Funding Sources](#funding-sources)
-- [Raising Funds](#raising-funds)
-- [Managing Funds](#managing-funds)
-- [Engaging the Community](#engaging-the-community)
-- [Funding Examples](#funding-examples)
-- [Action Steps](#action-steps)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* enables communities to govern digital resources equitably through decentralized, transparent systems. Community funding—driven by local contributions, crowdfunding, and data dividends—ensures nodes can operate, access resources, and launch pilots without relying solely on external sources. This guide offers step-by-step instructions for raising and managing funds, requiring minimal technical skills and supporting inclusive participation. It aims for:
 

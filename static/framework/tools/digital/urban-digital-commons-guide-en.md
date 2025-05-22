@@ -4,24 +4,6 @@
 
 **Purpose**: This guide provides specialized strategies and implementation frameworks for establishing Local Citizen Nodes within the *Digital Commons Framework* in urban environments. Addressing unique urban challenges such as digital inequality, community fragmentation, privacy concerns, and competing interests, it ensures urban nodes can leverage density advantages while promoting inclusion and participatory governance. Based on successful implementations in diverse urban settings from Singapore to Mexico City, this guide offers practical solutions that work across different urban typologies—from dense city centers to peri-urban communities and informal settlements. Through targeted approaches and adaptive governance models, it empowers urban citizens to reclaim agency over their digital resources and build more equitable, democratic digital futures.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Urban Context Assessment](#urban-context-assessment)
-- [Urban Node Typologies](#urban-node-typologies)
-- [Dense Infrastructure Advantages](#dense-infrastructure-advantages)
-- [Inclusion Strategies](#inclusion-strategies)
-- [Privacy and Security in Urban Contexts](#privacy-and-security-in-urban-contexts)
-- [Public Space Activation](#public-space-activation)
-- [Municipal Integration](#municipal-integration)
-- [Implementation Pathways](#implementation-pathways)
-- [Case Examples](#case-examples)
-- [Challenge Mitigation](#challenge-mitigation)
-- [Resource Directory](#resource-directory)
-
----
-
 ## Overview
 Urban environments present distinct opportunities and challenges for Digital Commons implementation. While benefiting from denser infrastructure, existing networks, and concentrated resources, urban nodes must address digital inequality, community fragmentation, and complex power dynamics. This guide ensures the framework succeeds in urban contexts through:
 

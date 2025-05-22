@@ -1,5 +1,3 @@
-
-
 ## Digital Commons Framework - Appendix J: Historical Commons Context
 
 **In this section:**

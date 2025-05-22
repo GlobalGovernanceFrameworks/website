@@ -39,7 +39,8 @@
          'mne-rubric-template',
          'advocacy-playbook',
          'bureaucratic-navigation-toolkit',
-         'cost-benefit-analysis-model'].includes(toolName.split('.')[0])) {
+         'cost-benefit-analysis-model',
+         'financial-pathway-assessment'].includes(toolName.split('.')[0])) {
       const extension = toolName.split('.').pop();
       const baseName = toolName.substring(0, toolName.lastIndexOf('.'));
       return `${base}/framework/tools/education/${baseName}-${currentLocale}.${extension}`;
@@ -94,6 +95,8 @@
       bureaucraticDesc: "Tools and strategies to overcome administrative and political barriers, ensuring smooth adoption in diverse governance systems.",
       costBenefitTitle: "Cost-Benefit Analysis Model",
       costBenefitDesc: "Quantify economic and social returns of adopting the framework, providing evidence to justify funding and advocacy efforts.",
+      financialPathwayTitle: "Financial Pathway Assessment Tool",
+      financialPathwayDesc: "Evaluate your community's readiness for Track 1 (Pragmatic Transition) vs Track 2 (Non-Extractive Transformation) financial models.",
       liteGuideEnTitle: "Education Framework Lite Guide (English)",
       liteGuideEnDesc: "A condensed overview of the framework's core principles, components, and implementation strategies in simple language.",
       liteGuideSvTitle: "Utbildningsramverk Lite Guide (Svenska)",
@@ -137,6 +140,8 @@
       bureaucraticDesc: "Verktyg och strategier för att övervinna administrativa och politiska hinder, säkerställa smidig antagning i olika styrsystem.",
       costBenefitTitle: "Kostnad-nytta-analysmodell",
       costBenefitDesc: "Kvantifiera ekonomiska och sociala avkastningar från antagandet av ramverket, vilket ger bevis för att motivera finansiering och förespråkande insatser.",
+      financialPathwayTitle: "Bedömningsverktyg för finansiell väg",
+      financialPathwayDesc: "Utvärdera din gemenskaps beredskap för Spår 1 (Pragmatisk övergång) vs Spår 2 (Icke-extraktiv transformation) finansiella modeller.",
       liteGuideEnTitle: "Utbildningsramverk Lite Guide (Engelska)",
       liteGuideEnDesc: "En komprimerad översikt över ramverkets kärnprinciper, komponenter och implementeringsstrategier på enkelt språk.",
       liteGuideSvTitle: "Utbildningsramverk Lite Guide (Svenska)",
@@ -154,7 +159,8 @@
     { id: 'youth-council-charter', color: 'color-2' },
     { id: 'regenerative-project-guide', color: 'color-3' },
     { id: 'curriculum-mapping-template', color: 'color-4' },
-    { id: 'mne-rubric-template', color: 'color-5' }
+    { id: 'mne-rubric-template', color: 'color-5' },
+    { id: 'financial-pathway-assessment', color: 'color-6' }
   ];
   
   const advocacyTools = [
@@ -171,7 +177,8 @@
     'mne-rubric-template': 'mne',
     'advocacy-playbook': 'advocacyPlaybook',
     'bureaucratic-navigation-toolkit': 'bureaucratic',
-    'cost-benefit-analysis-model': 'costBenefit'
+    'cost-benefit-analysis-model': 'costBenefit',
+    'financial-pathway-assessment': 'financialPathway'
   };
 </script>
 
@@ -544,7 +551,19 @@
   .color-5 h3 {
     color: #4B8AC2;
   }
-  
+
+  .color-6 {
+    border-left-color: #8B4A9C;
+  }
+
+  .color-6 h3 {
+    color: #8B4A9C;
+  }
+
+  .tool-card.color-6 .download-btn.pdf {
+    background-color: #8B4A9C;
+  }  
+
   /* Tool Actions */
   .tool-actions {
     display: flex;

@@ -4,24 +4,6 @@
 
 **Purpose**: This checklist enables communities to systematically evaluate Artificial Intelligence systems within the *Digital Commons Framework*, ensuring they uphold ethical standards, community values, and human rights. Designed for use by Local Citizen Nodes and the AI Governance Board, it provides structured assessment criteria requiring minimal technical expertise, with adaptations for varying resource contexts. Based on global AI ethics principles and aligned with Core Principles like transparency and resource justice, it helps communities identify bias, privacy risks, and environmental impacts while ensuring AI systems serve rather than harm community interests. Regular audits using this checklist promote continual improvement and accountability across the framework's Ethical AI Models component.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [How to Use This Checklist](#how-to-use-this-checklist)
-- [Section 1: Bias and Fairness Assessment](#section-1-bias-and-fairness-assessment)
-- [Section 2: Transparency and Explainability](#section-2-transparency-and-explainability)
-- [Section 3: Privacy and Data Governance](#section-3-privacy-and-data-governance)
-- [Section 4: Safety and Security](#section-4-safety-and-security)
-- [Section 5: Environmental and Social Impact](#section-5-environmental-and-social-impact)
-- [Section 6: Accountability Mechanisms](#section-6-accountability-mechanisms)
-- [Audit Process Guide](#audit-process-guide)
-- [Adaptation for Different Contexts](#adaptation-for-different-contexts)
-- [Case Examples](#case-examples)
-- [Resources](#resources)
-
----
-
 ## Overview
 The Ethical AI Audit Checklist provides a structured framework for evaluating AI systems within the Digital Commons Framework, ensuring they align with community values, ethical principles, and human rights. This tool addresses a critical need as AI systems increasingly affect decision-making, resource allocation, and information access.
 

@@ -17,16 +17,16 @@ export async function load({ depends, url }) {
   const sections = [
     'quick-start',
     'index',
-    'principles',
-    'value-proposition',
-    'structural',
-    'implementation',
-    'evaluation',
-    'case-models',
-    'future',
-    'manifesto',
-    'appendix',
-    'related'
+    '01-principles',
+    '02-value-proposition',
+    '03-structural',
+    '04-implementation',
+    '05-evaluation',
+    '06-case-models',
+    '07-future',
+    '08-manifesto',
+    '09-appendix',
+    '10-related'
   ];
   
   // For backward compatibility 

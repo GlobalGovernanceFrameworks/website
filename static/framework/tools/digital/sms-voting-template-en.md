@@ -4,22 +4,6 @@
 
 **Purpose**: This template provides a standardized system for conducting secure, accessible voting via SMS text messages within *Digital Commons Framework* Local Citizen Nodes. It enables inclusive participation in node governance, especially for communities with limited internet connectivity or technical resources. By combining simple text message formats with verification protocols, it ensures legitimate voting while maintaining transparency. The template is adaptable to diverse contexts, from rural villages to urban neighborhoods, requiring only basic mobile phones. It aligns with the Core Principles of direct participation and radical transparency, supporting equitable governance regardless of technical capacity.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [System Requirements](#system-requirements)
-- [SMS Vote Format](#sms-vote-format)
-- [Verification Protocol](#verification-protocol)
-- [Implementation Process](#implementation-process)
-- [Vote Management](#vote-management)
-- [Security Considerations](#security-considerations)
-- [Troubleshooting](#troubleshooting)
-- [Adaptation Guide](#adaptation-guide)
-- [Example Implementation](#example-implementation)
-
----
-
 ## Overview
 SMS Voting enables community members to participate in node governance using any mobile phone with text messaging capability. This system is particularly valuable for:
 

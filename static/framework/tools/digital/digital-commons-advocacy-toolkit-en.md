@@ -4,22 +4,6 @@
 
 **Purpose**: This toolkit equips advocates—community leaders, youth, Indigenous groups, policymakers, and organizations—with tools and strategies to promote the *Digital Commons Framework*, a system for governing digital resources (data, software, knowledge, infrastructure) as shared global commons. Rooted in historical commons governance (e.g., Iroquois Confederacy) and aligned with UN Sustainable Development Goals (SDGs 9, 10, 16), it provides templates, campaigns, and outreach methods to build support, engage stakeholders, and drive adoption. Designed for diverse contexts, it supports low-resource settings with accessible tools (e.g., SMS, posters) to ensure equitable, sustainable, and inclusive digital systems.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Why Advocate for the Framework?](#why-advocate-for-the-framework)
-- [Key Messages](#key-messages)
-- [Advocacy Strategies](#advocacy-strategies)
-- [Campaign Templates](#campaign-templates)
-- [Stakeholder Engagement](#stakeholder-engagement)
-- [Monitoring Impact](#monitoring-impact)
-- [Case Studies](#case-studies)
-- [Action Steps](#action-steps)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* reimagines digital resources as community-governed commons, ensuring equitable access, data sovereignty, and sustainability through decentralized, transparent systems. Advocacy is critical to scale its adoption, from local nodes to global policies. This toolkit provides practical tools—posters, social media posts, SMS campaigns, and workshops—to mobilize support, requiring minimal technical or financial resources. It aims for:
 

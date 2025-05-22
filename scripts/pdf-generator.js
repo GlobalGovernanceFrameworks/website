@@ -251,6 +251,22 @@ const tools = [
     }
   },
   {
+    name: 'financial-pathway-assessment',
+    category: 'education',
+    fileNames: {
+      en: 'financial-pathway-assessment-en',
+      sv: 'financial-pathway-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+    },
+    pageFooter: {
+      en: 'Financial Pathway Assessment Tool - Page ',
+      sv: 'Verktyg för bedömning av ekonomisk utveckling - Sida '
+    }
+  },
+  {
     name: 'equity-training-inclusion-checklist',
     category: 'education',
     fileNames: {
@@ -2042,6 +2058,22 @@ const tools = [
   },
   // Digital Commons Framework - Main Guides
   {
+    name: 'quick-start-guide',
+    category: 'digital',
+    fileNames: {
+      en: 'quick-start-guide-en',
+      sv: 'quick-start-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+    },
+    pageFooter: {
+      en: 'Quick-Start Guide: Digital Commons Framework - Page ',
+      sv: 'Snabbstartsguide: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
     name: 'technical-guide',
     category: 'digital',
     fileNames: {
@@ -2137,6 +2169,22 @@ const tools = [
     pageFooter: {
       en: 'Node Setup Guide: Digital Commons Framework - Page ',
       sv: 'Guide för nodinställning: Digital Commons-ramverket - Sida '
+    }
+  },
+  {
+    name: 'governance-toolkit',
+    category: 'digital',
+    fileNames: {
+      en: 'governance-toolkit-en',
+      sv: 'governance-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+    },
+    pageFooter: {
+      en: 'Governance Toolkit: Digital Commons Framework - Page ',
+      sv: 'Verktygslåda för styrning: Digital Commons-ramverket - Sida '
     }
   },
   {

@@ -56,31 +56,31 @@
     const titles = {
       en: {
         'quick-start': "Meta-Governance Lite",
-        index: "Overview",
-        principles: "Core Principles",
-        'value-proposition': "Value Proposition",
-        structural: "Structural Components",
-        implementation: "Implementation Strategies",
-        evaluation: "Evaluation Framework",
-        'case-models': "Case Models in Action",
-        future: "Future Potential",
-        manifesto: "Why Join?",
-        appendix: "Appendix",
-        related: "Related"
+        'index': "Overview",
+        '01-principles': "Core Principles",
+        '02-value-proposition': "Value Proposition",
+        '03-structural': "Structural Components",
+        '04-implementation': "Implementation Strategies",
+        '05-evaluation': "Evaluation Framework",
+        '06-case-models': "Case Models in Action",
+        '07-future': "Future Potential",
+        '08-manifesto': "Why Join?",
+        '09-appendix': "Appendix",
+        '10-related': "Related"
       },
       sv: {
         'quick-start': "Meta-Styrning Lite",
-        index: "Översikt",
-        principles: "Grundläggande Principer",
-        'value-proposition': "Värdeerbjudande",
-        structural: "Strukturella Komponenter",
-        implementation: "Implementeringsstrategier",
-        evaluation: "Utvärderingsramverk",
-        'case-models': "Fallmodeller i praktiken",
-        future: "Framtida Potential",
-        manifesto: "Varför delta?",
-        appendix: "Bilaga",
-        related: "Relaterat"
+        'index': "Översikt",
+        '01-principles': "Grundläggande Principer",
+        '02-value-proposition': "Värdeerbjudande",
+        '03-structural': "Strukturella Komponenter",
+        '04-implementation': "Implementeringsstrategier",
+        '05-evaluation': "Utvärderingsramverk",
+        '06-case-models': "Fallmodeller i praktiken",
+        '07-future': "Framtida Potential",
+        '08-manifesto': "Varför delta?",
+        '09-appendix': "Bilaga",
+        '10-related': "Relaterat"
       }
     };
     

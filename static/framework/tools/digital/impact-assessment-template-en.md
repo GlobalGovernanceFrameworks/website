@@ -4,24 +4,6 @@
 
 **Purpose**: This template provides a structured framework for assessing the impact of Digital Commons Framework implementations at the Local Citizen Node, Regional Hub, or Global Council levels. Drawing on the methodology outlined in Appendix K: Impact Assessment Framework, it offers practical tools to measure social, cultural, governance, and environmental outcomes of digital commons initiatives. Designed for diverse contexts and varying resource levels, it supports evidence-based adaptation and continuous improvement while ensuring accountability to communities and alignment with Core Principles.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Section 1: Assessment Planning](#section-1-assessment-planning)
-- [Section 2: Social Impact Assessment](#section-2-social-impact-assessment)
-- [Section 3: Cultural Impact Assessment](#section-3-cultural-impact-assessment)
-- [Section 4: Governance Impact Assessment](#section-4-governance-impact-assessment)
-- [Section 5: Environmental Impact Assessment](#section-5-environmental-impact-assessment)
-- [Section 6: Economic Impact Assessment](#section-6-economic-impact-assessment)
-- [Section 7: Cross-Commons Synergies](#section-7-cross-commons-synergies)
-- [Section 8: Analysis and Recommendations](#section-8-analysis-and-recommendations)
-- [Low-Resource Implementation Guide](#low-resource-implementation-guide)
-- [Verification Protocol](#verification-protocol)
-- [Resources](#resources)
-
----
-
 ## Overview
 Impact assessment is fundamental to the Digital Commons Framework's commitment to continuous improvement, transparency, and community benefit. This template helps you systematically evaluate how your implementation affects various dimensions of community life, digital equity, and resource governance.
 

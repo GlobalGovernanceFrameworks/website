@@ -4,24 +4,6 @@
 
 **Purpose**: This framework establishes the global governance structures, processes, and principles for coordinating the *Digital Commons Framework* at international and cross-regional scales. It outlines how the Global Digital Commons Council and cross-commons governance bodies operate, detailing treaty mechanisms, representation systems, and decision protocols that balance global coordination with local autonomy. Providing both the high-level architecture and practical implementation procedures for global-scale commons governance, it ensures that digital resources are managed as genuine global public goods while respecting national sovereignty and cultural diversity. The framework draws on both historical commons governance traditions and innovative approaches to global collective action, creating legitimate, effective structures for digital resource stewardship at planetary scale.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Global Governance Architecture](#global-governance-architecture)
-- [Digital Commons Treaty System](#digital-commons-treaty-system)
-- [Representation and Legitimacy](#representation-and-legitimacy)
-- [Cross-Commons Integration](#cross-commons-integration)
-- [Global-Local Balance](#global-local-balance)
-- [Decision-Making Protocols](#decision-making-protocols)
-- [Dispute Resolution System](#dispute-resolution-system)
-- [Implementation Pathway](#implementation-pathway)
-- [Global Metrics and Accountability](#global-metrics-and-accountability)
-- [Case Examples](#case-examples)
-- [Resource Directory](#resource-directory)
-
----
-
 ## Overview
 The Global Commons Governance Framework provides the structures and processes needed to coordinate digital commons at international scale, ensuring legitimate, effective global governance while maintaining community autonomy and cultural diversity. It recognizes that certain digital resources require planetary-scale coordination while others are best managed at regional or local levels.
 

@@ -4,24 +4,6 @@
 
 **Purpose**: This toolkit provides specialized resources, strategies, and implementation paths for rural communities establishing Local Citizen Nodes within the *Digital Commons Framework*. Addressing unique challenges of connectivity, literacy, resource constraints, and geographical dispersion, it ensures rural areas can fully participate in digital commons governance despite infrastructure limitations. Based on successful implementations in diverse rural settings from Senegal to Canada, this toolkit offers practical, proven solutions that respect traditional governance while leveraging appropriate technologies. Through offline capabilities, mesh networks, and culturally adaptive approaches, it empowers rural communities to govern data, software, and digital knowledge on their own terms.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Rural Context Assessment](#rural-context-assessment)
-- [Connectivity Solutions](#connectivity-solutions)
-- [Offline Capabilities](#offline-capabilities)
-- [Inclusive Governance Tools](#inclusive-governance-tools)
-- [Knowledge Access Strategies](#knowledge-access-strategies)
-- [Resource Optimization](#resource-optimization)
-- [Traditional Integration](#traditional-integration)
-- [Implementation Pathways](#implementation-pathways)
-- [Case Examples](#case-examples)
-- [Troubleshooting Guide](#troubleshooting-guide)
-- [Resource Directory](#resource-directory)
-
----
-
 ## Overview
 Rural communities face unique challenges when participating in digital governance, including limited connectivity, geographical dispersion, resource constraints, and mixed literacy levels. This toolkit ensures the Digital Commons Framework works effectively in these contexts through:
 

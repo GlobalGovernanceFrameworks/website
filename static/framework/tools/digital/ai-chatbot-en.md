@@ -4,21 +4,6 @@
 
 **Purpose**: This documentation describes the *AI Chatbot for Tool Navigation*, a digital tool designed to guide communities, Local Citizen Nodes, and stakeholders within the *Digital Commons Framework* to navigate and utilize the framework’s suite of tools and resources (e.g., Governance Simulator App, Health Dashboard). Rooted in inclusive commons principles (e.g., Iroquois Confederacy’s consensus-driven communication) and aligned with UN Sustainable Development Goals (SDGs 9, 10, 16), the chatbot ensures accessibility in low-resource settings through offline capabilities, multilingual support, and formats like SMS and audio. It aims to enable 80% of node users to effectively access tools by 2035, fostering equitable and transparent engagement.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Technical Specifications](#technical-specifications)
-- [User Guide](#user-guide)
-- [Implementation and Training](#implementation-and-training)
-- [Monitoring and Feedback](#monitoring-and-feedback)
-- [Case Studies](#case-studies)
-- [Action Steps](#action-steps)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* empowers communities to govern digital resources—data, software, knowledge, and infrastructure—as shared global commons. The *AI Chatbot for Tool Navigation* is an open-source, ethical AI tool that simplifies access to the framework’s tools, guides users through tasks (e.g., starting a node, accessing health data), and provides tailored support. Designed for inclusivity, it supports low-literacy users, offline access, and 50 languages by 2030. It aims for:
 

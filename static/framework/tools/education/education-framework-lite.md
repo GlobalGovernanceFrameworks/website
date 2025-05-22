@@ -42,6 +42,18 @@ Use the **"Start with the Seed" Kit**, a compact core of five components:
 
 💡 *Ideal for 1–3 schools or community hubs, with $10K–$50K budget.*
 
+## 🛠️ Choose Your Financial Pathway
+
+**Track 1 - Pragmatic Transition**: Enhanced blended finance with community safeguards
+- Best for: Existing institutional contexts, need for rapid scaling
+- Safeguards: Capped returns, community veto power, sunset clauses
+
+**Track 2 - Non-Extractive Transformation**: Zero-profit community ownership
+- Best for: High community readiness, strong organizing capacity
+- Features: Reparative funding, democratic governance, commons ownership
+
+Use our [Financial Pathway Assessment Tool](/framework/tools/education/financial-pathway-assessment.pdf) to evaluate which track fits your context.
+
 ## 📈 Impact & SDG Alignment
 
 Directly supports:

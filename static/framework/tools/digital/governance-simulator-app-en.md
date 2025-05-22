@@ -4,21 +4,6 @@
 
 **Purpose**: This documentation describes the *Governance Simulator App*, a digital tool designed to empower communities, Local Citizen Nodes, and stakeholders within the *Digital Commons Framework* to simulate and practice decentralized governance processes for managing digital resources (data, software, knowledge, infrastructure) as shared global commons. Rooted in participatory commons principles (e.g., Iroquois Confederacy’s consensus models) and aligned with UN Sustainable Development Goals (SDGs 10, 16, 17), the app supports low-resource settings with offline capabilities, multilingual interfaces, and accessible formats (e.g., SMS, audio). It aims to train 50% of node participants in governance by 2035, ensuring equitable, transparent, and inclusive decision-making.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Technical Specifications](#technical-specifications)
-- [User Guide](#user-guide)
-- [Implementation and Training](#implementation-and-training)
-- [Monitoring and Feedback](#monitoring-and-feedback)
-- [Case Studies](#case-studies)
-- [Action Steps](#action-steps)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* enables communities to govern digital resources equitably through decentralized, transparent systems. The *Governance Simulator App* is an open-source tool that allows users to practice governance tasks—proposing policies, voting, and resolving disputes—in a simulated environment, building skills for real-world node operations. Designed for inclusivity, it supports low-literacy users, offline access, and 50 languages by 2030. It aims for:
 

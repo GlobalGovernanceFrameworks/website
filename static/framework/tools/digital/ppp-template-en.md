@@ -2,20 +2,6 @@
 
 **Purpose**: This template guides communities, Local Citizen Nodes, and Regional Hubs in establishing ethical and equitable Public-Private Partnerships (PPPs) to fund and support the *Digital Commons Framework*, which governs digital resources—data, software, knowledge, and infrastructure—as shared global commons. Rooted in transparent commons governance (e.g., Iroquois Confederacy’s collaborative models) and aligned with UN Sustainable Development Goals (SDGs 9, 10, 17), it ensures partnerships prioritize community benefit, data sovereignty, and sustainability. Designed for accessibility, it supports low-resource settings with clear steps and adaptable formats, targeting $300M in PPP funding by 2032 and 95% ethical compliance by 2035.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Partnership Objectives](#partnership-objectives)
-- [Key Components](#key-components)
-- [Partnership Agreement Template](#partnership-agreement-template)
-- [Implementation Process](#implementation-process)
-- [Monitoring and Evaluation](#monitoring-and-evaluation)
-- [Example PPPs](#example-ppps)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* enables communities to govern digital resources equitably through decentralized systems. PPPs leverage private sector resources (e.g., tech firms, local businesses) and public/community expertise to fund infrastructure, develop tools, and scale nodes, while ensuring ethical alignment. This template provides a structured agreement and process to establish PPPs, requiring minimal technical expertise and supporting inclusive participation. It aims for:
 

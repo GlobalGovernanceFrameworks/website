@@ -2,19 +2,6 @@
 
 **Purpose**: This template provides a standardized format for communities, Local Citizen Nodes, and Regional Hubs within the *Digital Commons Framework* to conduct and document audits of governance, resource management, and digital tool usage (e.g., data, software, infrastructure) to ensure ethical compliance, transparency, and equity. Rooted in transparent commons principles (e.g., Iroquois Confederacy’s accountability mechanisms) and aligned with UN Sustainable Development Goals (SDGs 10, 16, 17), it is designed for accessibility in low-resource settings, supporting paper-based, SMS, or digital formats. It aims for 95% audit compliance across nodes by 2035, fostering trust and accountability in managing shared digital commons.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Audit Objectives](#audit-objectives)
-- [Audit Report Template](#audit-report-template)
-- [Audit Process](#audit-process)
-- [Reporting and Follow-Up](#reporting-and-follow-up)
-- [Example Audit Report](#example-audit-report)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* enables communities to govern digital resources equitably through decentralized, transparent systems. The *Sample Audit Report Template* ensures nodes adhere to ethical standards (e.g., privacy, fairness, sustainability) by documenting audits of governance decisions, budgets, data usage, and tool operations. Accessible to all skill levels, it supports low-literacy users with oral or paper-based methods and aims for:
 

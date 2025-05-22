@@ -4,23 +4,6 @@
 
 **Purpose**: This guide provides step-by-step instructions for establishing and operating a Local Citizen Node within the *Digital Commons Framework*, enabling communities to govern digital resources—data, software, knowledge, and infrastructure—through decentralized, participatory processes. Designed for diverse contexts, from rural villages to urban neighborhoods, it offers multiple implementation paths requiring minimal resources and technical knowledge. Rooted in historical commons practices (e.g., Iroquois Confederacy, medieval European commons) and aligned with UN Sustainable Development Goals (SDGs 9, 10, 16), it ensures cultural relevance, inclusivity, and resilience for effective community governance.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Pre-Setup Assessment](#pre-setup-assessment)
-- [Core Node Formation](#core-node-formation)
-- [Governance Implementation](#governance-implementation)
-- [Resource Access Configuration](#resource-access-configuration)
-- [Documentation Procedures](#documentation-procedures)
-- [Security and Privacy Protocols](#security-and-privacy-protocols)
-- [Troubleshooting Common Challenges](#troubleshooting-common-challenges)
-- [Evaluation and Evolution](#evaluation-and-evolution)
-- [Action Steps](#action-steps)
-- [Resources](#resources)
-
----
-
 ## Overview
 A Local Citizen Node is the foundational unit of the Digital Commons Framework, where communities directly govern shared digital resources through transparent, inclusive processes. This guide outlines how to establish operational nodes that balance local needs with global standards, offering multiple implementation paths:
 

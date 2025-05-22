@@ -122,76 +122,74 @@
   function getSectionTitle(section) {
     const titles = {
       en: {
-        'technical-guide': "Technical Guide for Policymakers",
-        'community-guide': "Community Implementation Guide",
-        'youth-guide': "Youth Engagement Guide",
-        'digital-ethics-guide': "Digital Ethics Guide",
-        'indigenous-guide': "Indigenous Data Stewardship Guide",
+        // Digital Commons Framework - New Structure (10 core sections + appendices)
         'index': "Overview",
-        'preamble': "Preamble",
-        'introduction': "Introduction",
-        'core-principles': "Core Principles",
-        'governance-structure': "Governance Structure",
-        'key-components': "Key Components",
-        'implementation-roadmap': "Implementation Roadmap",
-        'funding-mechanisms': "Funding Mechanisms",
-        'addressing-challenges': "Addressing Challenges",
-        'operational-toolkits': "Operational Toolkits",
-        'commons-in-practice-snapshot': "Commons-in-Practice Snapshot",
-        'user-archetypes': "User Archetypes",
-        'legal-interoperability': "Legal Interoperability",
-        'metrics-for-success': "Metrics for Success",
-        'case-studies': "Case Studies",
-        'long-term-evolution-scenarios': "Long-Term Evolution Scenarios",
-        'call-to-action': "Call to Action",
+        '01-preamble': "Preamble and Vision", 
+        '02-core-principles': "Core Principles",
+        '03-governance-structure': "Governance Structure", 
+        '04-key-components': "Key Components",
+        '05-implementation-roadmap': "Implementation Roadmap",
+        '06-monitoring-evaluation': "Monitoring and Evaluation",
+        '07-case-studies': "Case Studies",
+        '08-future-potential': "Future Potential", 
+        '09-tools-resources': "Tools and Resources",
+        '10-call-to-action': "Call to Action",
+        
+        // Supporting Appendices (kept separate as requested)
         'appendix-a-pilot-onboarding': "Appendix A: Pilot Onboarding",
-        'appendix-b-visual-companion-toolkit': "Appendix B: Visual Companion Toolkit",
+        'appendix-b-visual-companion-toolkit': "Appendix B: Visual Companion Toolkit", 
         'appendix-c-corporate-participation-playbook': "Appendix C: Corporate Participation Playbook",
         'appendix-d-digital-ethics-charter': "Appendix D: Digital Ethics Charter",
         'appendix-e-commons-glossary': "Appendix E: Commons Glossary",
-        'appendix-f-minimal-viable-node-quickstart': "Appendix F: Minimal-Viable Node Quickstart",
+        'appendix-f-quick-start-guide': "Appendix F: Quick-Start Guide",
         'appendix-g-field-test-logbook-template': "Appendix G: Field-Test Logbook Template",
         'appendix-h-faq-for-tech-skeptical-leaders': "Appendix H: FAQ for Tech-Skeptical Leaders",
         'appendix-i-diplomatic-mini-deck': "Appendix I: Diplomatic Mini Deck",
-        'appendix-j-historical-commons-context': "Appendix J: Historical Commons Context",
+        'appendix-j-historical-commons-context': "Appendix J: Historical Commons Context", 
         'appendix-k-impact-assessment-framework': "Appendix K: Impact Assessment Framework",
-        'epilogue': "Epilogue"
+        'epilogue': "Epilogue",
+        
+        // Lite Guides
+        'technical-guide': "Technical Guide for Policymakers",
+        'community-guide': "Community Implementation Guide", 
+        'youth-guide': "Youth Engagement Guide",
+        'digital-ethics-guide': "Digital Ethics Guide",
+        'indigenous-guide': "Indigenous Data Stewardship Guide"
       },
       sv: {
-        'technical-guide': "Teknisk Guide för Beslutsfattare",
-        'community-guide': "Samhällsguide för Implementering",
-        'youth-guide': "Engagemangsguide för Ungdomar",
-        'digital-ethics-guide': "Digital Etikguide",
-        'indigenous-guide': "Förvaltningsguide för Urfolksdata",
-        'index': "Översikt",
-        'preamble': "Inledning",
-        'introduction': "Introduktion",
-        'core-principles': "Kärnprinciper",
-        'governance-structure': "Styrningsstruktur",
-        'key-components': "Nyckelkomponenter",
-        'implementation-roadmap': "Implementeringsfärdplan",
-        'funding-mechanisms': "Finansieringsmekanismer",
-        'addressing-challenges': "Hantera Utmaningar",
-        'operational-toolkits': "Operativa Verktyg",
-        'commons-in-practice-snapshot': "Allmänningar-i-Praktiken Ögonblicksbild",
-        'user-archetypes': "Användartyper",
-        'legal-interoperability': "Juridisk Interoperabilitet",
-        'metrics-for-success': "Mätvärden för Framgång",
-        'case-studies': "Fallstudier",
-        'long-term-evolution-scenarios': "Långsiktiga Utvecklingsscenarier",
-        'call-to-action': "Handlingsuppmaning",
+        // Digital Commons Framework - New Structure (Swedish)
+        'index': "Översikt", 
+        '01-preamble': "Inledning och Vision",
+        '02-core-principles': "Kärnprinciper",
+        '03-governance-structure': "Styrningsstruktur",
+        '04-key-components': "Nyckelkomponenter", 
+        '05-implementation-roadmap': "Implementeringsfärdplan",
+        '06-monitoring-evaluation': "Övervakning och Utvärdering",
+        '07-case-studies': "Fallstudier",
+        '08-future-potential': "Framtidspotential",
+        '09-tools-resources': "Verktyg och Resurser", 
+        '10-call-to-action': "Handlingsuppmaning",
+        
+        // Supporting Appendices (Swedish)
         'appendix-a-pilot-onboarding': "Bilaga A: Pilot Introduktion",
         'appendix-b-visual-companion-toolkit': "Bilaga B: Visuellt Följeslagarverktyg",
         'appendix-c-corporate-participation-playbook': "Bilaga C: Spelbok för Företagsdeltagande",
-        'appendix-d-digital-ethics-charter': "Bilaga D: Digital Etikstadga",
+        'appendix-d-digital-ethics-charter': "Bilaga D: Digital Etikstadga", 
         'appendix-e-commons-glossary': "Bilaga E: Allmänningsordlista",
-        'appendix-f-minimal-viable-node-quickstart': "Bilaga F: Minimal-Genomförbar Nodsnabbstart",
+        'appendix-f-quick-start-guide': "Bilaga F: Snabbstartsguide",
         'appendix-g-field-test-logbook-template': "Bilaga G: Mall för Fälttestloggbok",
         'appendix-h-faq-for-tech-skeptical-leaders': "Bilaga H: FAQ för Teknikskeptiska Ledare",
         'appendix-i-diplomatic-mini-deck': "Bilaga I: Diplomatiskt Mini-Däck",
         'appendix-j-historical-commons-context': "Bilaga J: Historisk Allmänningskontext",
-        'appendix-k-impact-assessment-framework': "Bilaga K: Ramverk för Konsekvensanalys",
-        'epilogue': "Epilog"
+        'appendix-k-impact-assessment-framework': "Bilaga K: Ramverk för Konsekvensanalys", 
+        'epilogue': "Epilog",
+        
+        // Lite Guides (Swedish)
+        'technical-guide': "Teknisk Guide för Beslutsfattare",
+        'community-guide': "Samhällsguide för Implementering",
+        'youth-guide': "Engagemangsguide för Ungdomar", 
+        'digital-ethics-guide': "Digital Etikguide",
+        'indigenous-guide': "Förvaltningsguide för Urfolksdata"
       }
     };
     
@@ -368,7 +366,8 @@
               section !== 'community-guide' &&
               section !== 'youth-guide' &&
               section !== 'digital-ethics-guide' &&
-              section !== 'indigenous-guide'
+              section !== 'indigenous-guide' &&
+              section !== 'epilogue'
             ) as section}
               <li class:active={activeSection === section}>
                 <button on:click={() => setActiveSection(section)}>

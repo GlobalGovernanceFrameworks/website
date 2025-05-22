@@ -1,5 +1,3 @@
-
-
 ## Digital Commons Framework - Appendix K: Impact Assessment Framework
 
 **In this section:**

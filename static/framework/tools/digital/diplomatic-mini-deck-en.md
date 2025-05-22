@@ -1,5 +1,3 @@
-
-
 ## Digital Commons Framework - Appendix I: Diplomatic Mini Deck
 
 **In this section:**

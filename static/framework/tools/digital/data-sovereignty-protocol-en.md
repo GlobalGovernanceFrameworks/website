@@ -4,23 +4,6 @@
 
 **Purpose**: This protocol establishes principles and procedures for ensuring community control over data within the *Digital Commons Framework*, empowering Local Citizen Nodes to govern data collection, storage, use, and sharing while preserving privacy, cultural values, and local autonomy. Grounded in CARE Principles for Indigenous Data Governance and FAIR data standards, it provides practical mechanisms for implementing data sovereignty across diverse contexts, from rural villages to urban neighborhoods. The protocol supports communities with varying technical capacities, offering both high-tech and low-tech implementation paths that align with the Core Principles of decentralized authority, radical transparency, and direct participation.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Core Sovereignty Principles](#core-sovereignty-principles)
-- [Data Classification System](#data-classification-system)
-- [Governance Procedures](#governance-procedures)
-- [Consent Frameworks](#consent-frameworks)
-- [Storage and Access Controls](#storage-and-access-controls)
-- [Sharing Protocols](#sharing-protocols)
-- [Enforcement Mechanisms](#enforcement-mechanisms)
-- [Implementation Pathways](#implementation-pathways)
-- [Cultural Adaptation Guide](#cultural-adaptation-guide)
-- [Case Studies](#case-studies)
-
----
-
 ## Overview
 The Data Sovereignty Protocol empowers communities to maintain control over their data—whether traditional knowledge, personal information, environmental observations, or community resources—within the Digital Commons Framework. This protocol ensures that data governance aligns with local values, needs, and priorities while enabling beneficial data sharing and use.
 

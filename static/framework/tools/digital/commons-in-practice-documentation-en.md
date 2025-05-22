@@ -4,22 +4,6 @@
 
 *Version 1.0 - Global Governance Framework*
 
----
-
-## Overview
-
-This template provides a structured format for documenting real-world implementations of the Digital Commons Framework. By systematically capturing experiences, challenges, and innovations from diverse contexts, we create a valuable knowledge base that strengthens the commons ecosystem. This documentation serves multiple purposes:
-
-- **Knowledge Transfer**: Enable lessons to be shared across regions and contexts
-- **Implementation Support**: Guide new adopters with practical examples
-- **Evidence Base**: Build a foundation for framework refinement and evolution
-- **Community Building**: Connect practitioners facing similar challenges
-- **Impact Tracking**: Document the real-world effects of digital commons governance
-
-Use this template to document your implementation experience, adapting sections as needed to suit your context while maintaining a consistent structure for cross-case comparison.
-
----
-
 ## Documentation Template
 
 ### 1. Implementation Context

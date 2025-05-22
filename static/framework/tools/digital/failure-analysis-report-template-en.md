@@ -4,23 +4,6 @@
 
 **Purpose**: This template provides a structured format for documenting, analyzing, and learning from failures, challenges, and setbacks encountered while implementing the *Digital Commons Framework*. By transforming failures into learning opportunities, it enables continuous improvement across pilot nodes, Regional Digital Hubs, and the Global Council. The template fosters a culture of transparency, resilience, and adaptive evolution aligned with the framework's Core Principles. Applicable to technical failures, governance breakdowns, and social challenges, it helps communities build more robust and effective digital commons through systematic reflection and evidence-based adaptation.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [How to Use This Template](#how-to-use-this-template)
-- [Section 1: Incident Documentation](#section-1-incident-documentation)
-- [Section 2: Impact Assessment](#section-2-impact-assessment)
-- [Section 3: Root Cause Analysis](#section-3-root-cause-analysis)
-- [Section 4: Response Evaluation](#section-4-response-evaluation)
-- [Section 5: Lessons Learned](#section-5-lessons-learned)
-- [Section 6: Recommended Actions](#section-6-recommended-actions)
-- [Low-Resource Implementation Guide](#low-resource-implementation-guide)
-- [Case Examples](#case-examples)
-- [Resources](#resources)
-
----
-
 ## Overview
 The Failure Analysis Report Template transforms setbacks into stepping stones for improvement, recognizing that challenges are valuable learning opportunities when systematically analyzed. This tool builds on historical commons practices where community reflection on resource management failures led to more sustainable systems, as seen in Japanese fishing villages' adaptive management and the Iroquois Confederacy's governance evolution.
 

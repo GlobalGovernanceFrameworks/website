@@ -4,22 +4,6 @@
 
 **Purpose**: This tool enables communities, Local Citizen Nodes, and advocates to identify, organize, and leverage resources—human, financial, technical, and cultural—for implementing the *Digital Commons Framework*, which governs digital resources (data, software, knowledge, infrastructure) as shared global commons. Rooted in collaborative commons principles (e.g., Iroquois Confederacy’s resource-sharing models) and aligned with UN Sustainable Development Goals (SDGs 9, 10, 17), it provides a structured template and process for mapping assets, prioritizing needs, and planning projects. Designed for low-resource settings, it supports accessibility with oral, paper, or SMS-based methods, targeting 80% node resource utilization and 90% equitable access by 2035.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Why Resource Mapping Matters](#why-resource-mapping-matters)
-- [Resource Categories](#resource-categories)
-- [Resource Mapping Template](#resource-mapping-template)
-- [Mapping Process](#mapping-process)
-- [Utilizing Resources](#utilizing-resources)
-- [Monitoring and Updating](#monitoring-and-updating)
-- [Examples](#examples)
-- [Action Steps](#action-steps)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* empowers communities to govern digital resources equitably through decentralized systems. Resource mapping identifies local assets—skills, funds, tools, and knowledge—to support node setup, governance, and projects like mesh networks or cultural archives. This tool provides a customizable template and process, requiring minimal technical skills and ensuring inclusivity for marginalized groups (e.g., Indigenous, rural). It aims for:
 

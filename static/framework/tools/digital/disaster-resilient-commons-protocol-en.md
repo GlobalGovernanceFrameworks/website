@@ -4,25 +4,6 @@
 
 **Purpose**: This protocol provides practical guidelines, technical specifications, and governance procedures to ensure Digital Commons Framework implementations can withstand, adapt to, and rapidly recover from natural disasters, infrastructure failures, civil unrest, or other crisis situations. Drawing on resilience principles from both traditional commons systems and modern disaster management, it offers scalable approaches for different risk contexts, from hurricane-prone coastal regions to conflict-affected areas. Through preventative measures, redundant systems, and rapid-response procedures, this protocol helps communities maintain access to vital digital resources and decision-making capabilities when they are most needed. The protocol emphasizes both technical resilience and social continuity, recognizing that community cohesion is as important as infrastructure during crises.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Risk Assessment and Planning](#risk-assessment-and-planning)
-- [Resilient Infrastructure](#resilient-infrastructure)
-- [Data Protection and Continuity](#data-protection-and-continuity)
-- [Crisis Governance Protocols](#crisis-governance-protocols)
-- [Rapid Response Procedures](#rapid-response-procedures)
-- [Inclusive Emergency Access](#inclusive-emergency-access)
-- [Recovery and Adaptation](#recovery-and-adaptation)
-- [Cross-Commons Crisis Coordination](#cross-commons-crisis-coordination)
-- [Implementation Pathways](#implementation-pathways)
-- [Case Examples](#case-examples)
-- [Regional Risk Supplements](#regional-risk-supplements)
-- [Resource Directory](#resource-directory)
-
----
-
 ## Overview
 The Disaster-Resilient Commons Protocol ensures digital commons implementations can continue functioning during crises when they are often most needed by communities. While disaster types vary globally, from climate disasters to conflict, the protocol provides a flexible framework to build resilience appropriate to local risk profiles.
 

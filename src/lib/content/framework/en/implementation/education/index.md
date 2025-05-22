@@ -34,7 +34,7 @@ The framework is organized into ten sections, each a vital thread in its regener
 1. **[Preamble and Executive Summary](/framework/docs/implementation/education#01-preamble)**: Introduces the framework's vision, global context, and a concise summary for stakeholders.
 2. **[Vision and Core Principles](/framework/docs/implementation/education#02-vision-principles)**: Articulates the transformative vision and eight guiding principles, including systems thinking and equity.
 3. **[Structural Components](/framework/docs/implementation/education#03-structural-components)**: Details eight operational pillars, from polycentric networks to educator training.
-4. **[Implementation Strategies](/framework/docs/implementation/education#04-implementation-strategies)**: Outlines tiered adoption, regional blueprints, and resilience protocols.
+4. **[Implementation Strategies](/framework/docs/implementation/education#04-implementation-strategies)**: Outlines tiered adoption, regional blueprints, financial framework architecture, and resilience protocols.
 5. **[Monitoring and Evaluation (M&E)](/framework/docs/implementation/education#05-monitoring-evaluation)**: Presents a robust system for tracking outcomes, equity, and adaptability.
 6. **[SDG Alignment and Impact Metrics](/framework/docs/implementation/education#06-sdg-alignment)**: Maps the framework to SDGs, with metrics and a Planetary Learning Calendar.
 7. **[Visual and Multimedia Components](/framework/docs/implementation/education#07-visual-multimedia)**: Describes the SVG map, animated explainer, and interactive web summary.

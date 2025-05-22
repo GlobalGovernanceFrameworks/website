@@ -50,3 +50,8 @@ A key failure mode occurs when success metrics become targets that distort behav
 - Independent verification of measurement processes and results
 - Explicit valuing of unmeasured dimensions through narrative and case study
 - Participatory metric development involving diverse stakeholders
+
+## Appendix: The Governance Horizon
+
+As reflexivity deepens, meta-governance may evolve toward minimalism and even self-disappearance. This reflects a philosophical arc: from governing systems to living systems to being itself. The highest governance might not manage complexity, but cultivate simplicity—until governance becomes so attuned to consciousness that it vanishes like scaffolding after construction is complete.
+

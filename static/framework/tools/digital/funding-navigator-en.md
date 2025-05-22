@@ -4,21 +4,6 @@
 
 **Purpose**: This guide equips communities, Local Citizen Nodes, and advocates with strategies and tools to secure sustainable funding for the *Digital Commons Framework*, which governs digital resources—data, software, knowledge, and infrastructure—as shared global commons. Rooted in equitable commons principles (e.g., Iroquois Confederacy’s resource sharing) and aligned with UN Sustainable Development Goals (SDGs 9, 10, 17), it outlines diverse funding streams, application processes, and budget management practices. Designed for low-resource settings, it ensures accessibility with minimal technical requirements and prioritizes marginalized communities, aiming for 80% node funding and 50% non-corporate revenue by 2035.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Why Funding Matters](#why-funding-matters)
-- [Funding Streams](#funding-streams)
-- [Application Process](#application-process)
-- [Budget Management](#budget-management)
-- [Engaging Funders](#engaging-funders)
-- [Funding Examples](#funding-examples)
-- [Action Steps](#action-steps)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* enables communities to govern digital resources equitably through decentralized, transparent systems. Sustainable funding is critical to scale Local Citizen Nodes, develop infrastructure, and ensure inclusivity. This navigator provides practical tools—templates, pitch guides, and tracking systems—to access diverse funding sources, from crowdfunding to automation taxes. It supports communities with limited resources, using accessible methods like SMS or paper-based applications, and aims for:
 

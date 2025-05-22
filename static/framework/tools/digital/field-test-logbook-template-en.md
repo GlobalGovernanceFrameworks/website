@@ -1,5 +1,3 @@
-
-
 ## Digital Commons Framework - Appendix G: Field-Test Logbook Template
 
 **In this section:**

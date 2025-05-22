@@ -4,21 +4,6 @@
 
 **Purpose**: This documentation describes the *Real-Time Collaboration Platform*, a digital tool designed to enable communities, Local Citizen Nodes, and stakeholders within the *Digital Commons Framework* to collaborate seamlessly on governance, projects, and resource management for shared digital resources (data, software, knowledge, infrastructure). Rooted in participatory commons principles (e.g., Iroquois Confederacy’s consensus-driven councils) and aligned with UN Sustainable Development Goals (SDGs 9, 10, 17), the platform ensures accessibility in low-resource settings through offline capabilities, multilingual support, and inclusive formats (e.g., SMS, audio). It aims to connect 80% of nodes for collaborative governance by 2035, fostering equitable, transparent, and sustainable digital systems.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Technical Specifications](#technical-specifications)
-- [User Guide](#user-guide)
-- [Implementation and Training](#implementation-and-training)
-- [Monitoring and Feedback](#monitoring-and-feedback)
-- [Case Studies](#case-studies)
-- [Action Steps](#action-steps)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* empowers communities to govern digital resources equitably through decentralized, transparent systems. The *Real-Time Collaboration Platform* is an open-source tool that facilitates synchronous and asynchronous collaboration, enabling nodes to coordinate governance (e.g., policy votes), share resources (e.g., project plans), and engage globally. Designed for inclusivity, it supports low-literacy users, offline access, and 50 languages by 2030. It aims for:
 

@@ -1,5 +1,3 @@
-
-
 ## Digital Commons Framework - Appendix C: Corporate Participation Playbook
 
 **In this section:**

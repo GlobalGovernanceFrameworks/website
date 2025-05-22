@@ -1,5 +1,3 @@
-
-
 ## Digital Commons Framework - Appendix E: Commons Glossary
 
 **In this section:**

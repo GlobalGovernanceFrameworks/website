@@ -1,5 +1,3 @@
-
-
 ## Digital Commons Framework - Appendix D: Digital Ethics Charter
 
 **In this section:**

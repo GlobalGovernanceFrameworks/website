@@ -1,5 +1,3 @@
-
-
 ## Digital Commons Framework - Appendix F: Minimal-Viable Node Quickstart
 
 **In this section:**

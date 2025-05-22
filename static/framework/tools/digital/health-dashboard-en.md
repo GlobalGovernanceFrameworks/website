@@ -4,21 +4,6 @@
 
 **Purpose**: This documentation describes the *Digital Commons Health Dashboard*, a digital tool designed to empower communities, Local Citizen Nodes, and stakeholders within the *Digital Commons Framework* to access, analyze, and govern anonymized health data as a shared global commons. Rooted in equitable commons principles (e.g., Iroquois Confederacy’s community-driven resource management) and aligned with UN Sustainable Development Goals (SDGs 3, 10, 17), the dashboard ensures data sovereignty, privacy, and accessibility in low-resource settings through offline capabilities, multilingual interfaces, and inclusive formats (e.g., SMS, audio). It aims to enable 80% of nodes to leverage health data for community well-being by 2035, fostering equitable and sustainable health outcomes.
 
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Technical Specifications](#technical-specifications)
-- [User Guide](#user-guide)
-- [Implementation and Training](#implementation-and-training)
-- [Monitoring and Feedback](#monitoring-and-feedback)
-- [Case Studies](#case-studies)
-- [Action Steps](#action-steps)
-- [Resources](#resources)
-
----
-
 ## Overview
 The *Digital Commons Framework* enables communities to govern digital resources—data, software, knowledge, and infrastructure—equitably through decentralized systems. The *Digital Commons Health Dashboard* is an open-source tool that provides communities with secure access to anonymized health data (e.g., disease outbreaks, vaccination rates), analytics, and governance tools to inform local health priorities. Designed for inclusivity, it supports low-literacy users, offline access, and 50 languages by 2030. It aims for:
 
