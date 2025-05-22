@@ -1,9 +1,9 @@
 ---
-title: Perfected Enhanced Educational Systems Implementation Framework
+title: Regenerative Educational Systems Implementation Framework
 section: index
 ---
 
-## Perfected Enhanced Educational Systems Implementation Framework
+## Regenerative Educational Systems Implementation Framework
 
 **In this document:**
 - [Overview](#overview)
@@ -11,7 +11,7 @@ section: index
 - [Implementation Tools](#implementation-tools)
 - [Access and Usage](#access-and-usage)
 
-In a world yearning for renewal, the *Perfected Enhanced Educational Systems Implementation Framework* emerges as a tapestry of hope, woven from the threads of global wisdom, regenerative design, and democratic empowerment. Inspired by the Butterfly Party's (Fjärilspartiet) vision of holistic growth, it reimagines education as a living ecosystem, nurturing learners—from Sahel villages to urban hubs—as ethically grounded, adaptive stewards of a thriving planet. This master index serves as the gateway to the framework, linking its ten sections and inviting stakeholders—educators, policymakers, youth, and communities—to co-create a future where learning heals, unites, and transforms.
+In a world yearning for renewal, the *Regenerative Educational Systems Implementation Framework* emerges as a tapestry of hope, woven from the threads of global wisdom, regenerative design, and democratic empowerment. Inspired by the Butterfly Party's (Fjärilspartiet) vision of holistic growth, it reimagines education as a living ecosystem, nurturing learners—from Sahel villages to urban hubs—as ethically grounded, adaptive stewards of a thriving planet. This master index serves as the gateway to the framework, linking its ten sections and inviting stakeholders—educators, policymakers, youth, and communities—to co-create a future where learning heals, unites, and transforms.
 
 ### <a id="overview"></a>Overview
 The framework is a comprehensive blueprint for transforming global education, addressing the interconnected challenges of climate change, inequality, and technological disruption. It integrates eight structural components, from polycentric learning networks to existential meaning-making, with phased implementation strategies and robust monitoring and evaluation. Aligned with SDGs, it prioritizes equity, inclusion, and regenerative principles, drawing on case models and future potential to inspire action. Visual and multimedia components and practical appendices ensure accessibility and impact across diverse contexts.

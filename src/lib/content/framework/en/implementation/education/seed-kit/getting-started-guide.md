@@ -1,6 +1,6 @@
 # Getting Started Guide: Start with the Seed Kit
 
-**Purpose**: Introduces the “Start with the Seed” kit, a collection of tools and modules to launch Tier 1 micro-pilots of the *Perfected Enhanced Educational Systems Implementation Framework*, guiding communities to integrate regenerative education ([Section 4.3](#]). This guide explains how to use the kit’s components together and provides a suggested implementation timeline, fostering equity and alignment with SDG 4 (Quality Education) and SDG 17 (Partnerships for the Goals).
+**Purpose**: Introduces the “Start with the Seed” kit, a collection of tools and modules to launch Tier 1 micro-pilots of the *Regenerative Educational Systems Implementation Framework*, guiding communities to integrate regenerative education ([Section 4.3](#]). This guide explains how to use the kit’s components together and provides a suggested implementation timeline, fostering equity and alignment with SDG 4 (Quality Education) and SDG 17 (Partnerships for the Goals).
 
 **Usage**:
 - **Who**: Local champions, educators, youth councils, and community leaders initiating micro-pilots (10–100 learners) ([Section 4.2](#]).
