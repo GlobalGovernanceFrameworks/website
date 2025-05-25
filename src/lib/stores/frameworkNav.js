@@ -47,7 +47,7 @@ const initialNav = [
         path: '/framework/docs/implementation/tier-3',
         subItems: [
           { titleKey: 'framework.docs.nav.implementationDigital', path: '/framework/docs/implementation/digital', status: 'ready'},
-          { titleKey: 'framework.docs.nav.implementationBiodiversity', path: '/framework/docs/implementation/biodiversity', comingSoon: true },
+          { titleKey: 'framework.docs.nav.implementationBiodiversity', path: '/framework/docs/implementation/biodiversity', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationCulture', path: '/framework/docs/implementation/culture', planned: true },
           { titleKey: 'framework.docs.nav.implementationRural', path: '/framework/docs/implementation/rural', planned: true },
           { titleKey: 'framework.docs.nav.implementationSpiritual', path: '/framework/docs/implementation/spiritual', status: 'ready' },

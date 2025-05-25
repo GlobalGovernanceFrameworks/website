@@ -41,6 +41,9 @@
       digitalTitle: "Digital Commons Visualizations",
       digitalDesc: "Visual resources for the Digital Commons Framework, including governance architecture, data sovereignty protocols, mesh network structures, and interactive tools for digital rights implementation.",
       digitalButton: "Access Digital Commons Visualizations",
+      biodiversityTitle: "Biodiversity Framework Visualizations",
+      biodiversityDesc: "Visual resources for planetary healing and regenerative biodiversity governance, including indigenous sovereignty networks, ecosystem rights progression, bio-arts campaigns, and monitoring tools for creating a regenerative biosphere by 2045.",
+      biodiversityButton: "Access Biodiversity Visualizations",
       comingSoon: "Coming Soon",
       otherFrameworks: "Other Framework Visualizations",
       otherFrameworksDesc: "Visualization collections for the following frameworks are currently in development and will be made available soon:",
@@ -77,6 +80,9 @@
       digitalTitle: "Visualiseringar för digitala allmänningar",
       digitalDesc: "Visuella resurser för ramverket för digitala allmänningar, inklusive styrningsarkitektur, datasuveränitetsprotokoll, nätverksstrukturer och interaktiva verktyg för implementering av digitala rättigheter.",
       digitalButton: "Öppna visualiseringar för digitala allmänningar",
+      biodiversityTitle: "Biodiversitetsramverk Visualiseringar",
+      biodiversityDesc: "Visuella resurser för planetär läkning och regenerativ biodiversitetsstyrning, inklusive ursprungssuveränitetsnätverk, progression av ekosystemrättigheter, bio-konstkampanjer och övervakningsverktyg för att skapa en regenerativ biosfär till 2045.",
+      biodiversityButton: "Öppna Biodiversitetsvisualiseringar",
       foodTitle: "Visualiseringar för matsystem och jordbruk",
       foodDesc: "Visuella verktyg för hållbar styrning av matsystem, inklusive matwebsdiagram, visualiseringar av värdekedjor och interaktiva kartor över jordbruksomvandlingsvägar.",
       foodButton: "Kommer snart",
@@ -226,6 +232,25 @@
             </p>
             <a href="{base}/framework/visuals/digital" style="display: inline-flex; align-items: center; background-color: #6d28d9; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.digitalButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Biodiversity Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #2d5016; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #2d5016;">🦅</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #2d5016;">{texts.biodiversityTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.biodiversityDesc}
+            </p>
+            <a href="{base}/framework/visuals/biodiversity" style="display: inline-flex; align-items: center; background-color: #2d5016; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.biodiversityButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

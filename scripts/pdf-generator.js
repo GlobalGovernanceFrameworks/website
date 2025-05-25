@@ -31,6 +31,7 @@ Available categories:
 - financial-systems
 - governance
 - environmental-stewardship
+- biodiversity
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -56,7 +57,8 @@ const outputDirs = {
   'spiritual': path.join(__dirname, '..', 'static', 'framework', 'tools', 'spiritual'),
   'financial-systems': path.join(__dirname, '..', 'static', 'framework', 'tools', 'financial-systems'),
   'environmental-stewardship': path.join(__dirname, '..', 'static', 'framework', 'tools', 'environmental-stewardship'),
-  'governance': path.join(__dirname, '..', 'static', 'framework', 'tools', 'governance')
+  'governance': path.join(__dirname, '..', 'static', 'framework', 'tools', 'governance'),
+  'biodiversity': path.join(__dirname, '..', 'static', 'framework', 'tools', 'biodiversity')
 };
 
 // Validate category if provided
@@ -4102,6 +4104,627 @@ const tools = [
       '13-reparations-protocol',
       '14-conclusion',
       '15-appendices'
+    ]
+  },
+  // Biodiversity Framework Tools & Guides Snippets for PDF Generator and Markdown Copy Tool
+
+  // Main Implementation Guides
+  {
+    name: 'technical-guide-policymakers',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'technical-guide-policymakers-en',
+      sv: 'technical-guide-policymakers-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Technical Guide for Policymakers - Page ',
+      sv: 'Ramverk för biologisk mångfald - Teknisk guide för beslutsfattare - Sida '
+    }
+  },
+
+  {
+    name: 'community-implementation-guide',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'community-implementation-guide-en',
+      sv: 'community-implementation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Community Implementation Guide - Page ',
+      sv: 'Ramverk för biologisk mångfald - Samhällsguide för implementering - Sida '
+    }
+  },
+
+  {
+    name: 'youth-engagement-leadership-guide',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'youth-engagement-leadership-guide-en',
+      sv: 'youth-engagement-leadership-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Youth Engagement & Leadership Guide - Page ',
+      sv: 'Ramverk för biologisk mångfald - Ungdomsengagemang & ledarskapsguide - Sida '
+    }
+  },
+
+  {
+    name: 'corporate-transition-redemption-guide',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'corporate-transition-redemption-guide-en',
+      sv: 'corporate-transition-redemption-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Corporate Transition & Redemption Guide - Page ',
+      sv: 'Ramverk för biologisk mångfald - Företagsövergång & återlösningsguide - Sida '
+    }
+  },
+
+  {
+    name: 'indigenous-data-sovereignty-guide',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'indigenous-data-sovereignty-guide-en',
+      sv: 'indigenous-data-sovereignty-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Indigenous Data Sovereignty Guide - Page ',
+      sv: 'Ramverk för biologisk mångfald - Urfolks datasuveränitetsguide - Sida '
+    }
+  },
+
+  // Core Tools
+  {
+    name: 'fpic-2-protocols-template',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'fpic-2-protocols-template-en',
+      sv: 'fpic-2-protocols-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - FPIC 2.0 Protocols Template - Page ',
+      sv: 'Ramverk för biologisk mångfald - FPIC 2.0 protokollmall - Sida '
+    }
+  },
+
+  {
+    name: 'rights-escalation-ladder-framework',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'rights-escalation-ladder-framework-en',
+      sv: 'rights-escalation-ladder-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Rights Escalation Ladder Framework - Page ',
+      sv: 'Ramverk för biologisk mångfald - Rättighetsupptrappningsstege ramverk - Sida '
+    }
+  },
+
+  {
+    name: 'youth-leadership-pipeline-guide',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'youth-leadership-pipeline-guide-en',
+      sv: 'youth-leadership-pipeline-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Youth Leadership Pipeline Guide - Page ',
+      sv: 'Ramverk för biologisk mångfald - Guide för ungdomsledarskap - Sida '
+    }
+  },
+
+  {
+    name: 'future-beings-council-setup',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'future-beings-council-setup-en',
+      sv: 'future-beings-council-setup-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Future Beings Council Setup - Page ',
+      sv: 'Ramverk för biologisk mångfald - Framtida varelsers råd uppsättning - Sida '
+    }
+  },
+
+  {
+    name: 'corporate-transition-support-toolkit',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'corporate-transition-support-toolkit-en',
+      sv: 'corporate-transition-support-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Corporate Transition Support Toolkit - Page ',
+      sv: 'Ramverk för biologisk mångfald - Verktygskit för företagsövergångsstöd - Sida '
+    }
+  },
+
+  {
+    name: 'crisis-response-protocols',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'crisis-response-protocols-en',
+      sv: 'crisis-response-protocols-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Crisis Response Protocols - Page ',
+      sv: 'Ramverk för biologisk mångfald - Krisberedskapsprotokoll - Sida '
+    }
+  },
+
+  {
+    name: 'regional-adaptation-guidelines',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'regional-adaptation-guidelines-en',
+      sv: 'regional-adaptation-guidelines-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Regional Adaptation Guidelines - Page ',
+      sv: 'Ramverk för biologisk mångfald - Riktlinjer för regional anpassning - Sida '
+    }
+  },
+
+  // Economic Tools
+  {
+    name: 'hybrid-ubes-implementation-guide',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'hybrid-ubes-implementation-guide-en',
+      sv: 'hybrid-ubes-implementation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'economic')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Hybrid UBES Implementation Guide - Page ',
+      sv: 'Ramverk för biologisk mångfald - Hybrid UBES implementeringsguide - Sida '
+    }
+  },
+
+  {
+    name: 'impact-bonds-financing',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'impact-bonds-financing-en',
+      sv: 'impact-bonds-financing-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'economic')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Biodiversity Impact Bonds & Financing - Page ',
+      sv: 'Ramverk för biologisk mångfald - Biodiversitetspåverkningsobligationer & finansiering - Sida '
+    }
+  },
+
+  {
+    name: 'economic-resilience-corporate',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'economic-resilience-corporate-en',
+      sv: 'economic-resilience-corporate-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'economic')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Economic Resilience & Corporate Transition Toolkit - Page ',
+      sv: 'Ramverk för biologisk mångfald - Ekonomisk motståndskraft & företagsövergångsverktyg - Sida '
+    }
+  },
+
+  // Cultural Mobilization Tools
+  {
+    name: 'bio-arts-toolkit',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'bio-arts-toolkit-en',
+      sv: 'bio-arts-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'cultural'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'cultural')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Bio-Arts Residencies Toolkit - Page ',
+      sv: 'Ramverk för biologisk mångfald - Bio-konstresidensers verktygskit - Sida '
+    }
+  },
+
+  {
+    name: 'restoration-calendar-template',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'restoration-calendar-template-en',
+      sv: 'restoration-calendar-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'cultural'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'cultural')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Global Restoration Calendar Template - Page ',
+      sv: 'Ramverk för biologisk mångfald - Global restaureringskalender mall - Sida '
+    }
+  },
+
+  {
+    name: 'bio-influencer-campaign',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'bio-influencer-campaign-en',
+      sv: 'bio-influencer-campaign-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'cultural'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'cultural')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Bio-Influencer Training & Campaign Kit - Page ',
+      sv: 'Ramverk för biologisk mångfald - Bio-influencer träning & kampanjkit - Sida '
+    }
+  },
+
+  // Technology & Monitoring Tools
+  {
+    name: 'blockchain-setup-guide',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'blockchain-setup-guide-en',
+      sv: 'blockchain-setup-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'technology')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Biodiversity Blockchain Setup Guide - Page ',
+      sv: 'Ramverk för biologisk mångfald - Biodiversitetsblockkedja uppsättningsguide - Sida '
+    }
+  },
+
+  {
+    name: 'trust-dashboard-evaluation',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'trust-dashboard-evaluation-en',
+      sv: 'trust-dashboard-evaluation-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'technology')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Public Trust Dashboard & Evaluation Template - Page ',
+      sv: 'Ramverk för biologisk mångfald - Offentlig förtroendedashboard & utvärderingsmall - Sida '
+    }
+  },
+
+  {
+    name: 'cyber-guardianship-complete',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'cyber-guardianship-complete-en',
+      sv: 'cyber-guardianship-complete-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'technology')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Cyber-Physical Guardianship Protocols - Page ',
+      sv: 'Ramverk för biologisk mångfald - Cyber-fysiska vårdnadsprotokoll - Sida '
+    }
+  },
+
+  // Digital Platform Tools
+  {
+    name: 'governance-simulator',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'governance-simulator-en',
+      sv: 'governance-simulator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'digital')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Biodiversity Governance Simulator - Page ',
+      sv: 'Ramverk för biologisk mångfald - Biodiversitetsstyrningssimulator - Sida '
+    }
+  },
+
+  {
+    name: 'health-dashboard',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'health-dashboard-en',
+      sv: 'health-dashboard-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'digital')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Global Biodiversity Health Dashboard - Page ',
+      sv: 'Ramverk för biologisk mångfald - Global biodiversitetshälsodashboard - Sida '
+    }
+  },
+
+  {
+    name: 'collaboration-platform',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'collaboration-platform-en',
+      sv: 'collaboration-platform-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'digital')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Real-Time Collaboration Platform - Page ',
+      sv: 'Ramverk för biologisk mångfald - Realtids samarbetsplattform - Sida '
+    }
+  },
+
+  // Regional Implementation Tools
+  {
+    name: 'amazon-basin-complete',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'amazon-basin-complete-en',
+      sv: 'amazon-basin-complete-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'regional'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'regional')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Amazon Basin Implementation Toolkit - Page ',
+      sv: 'Ramverk för biologisk mångfald - Amazonbäckenet implementeringsverktyg - Sida '
+    }
+  },
+
+  {
+    name: 'arctic-sovereignty-complete',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'arctic-sovereignty-complete-en',
+      sv: 'arctic-sovereignty-complete-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'regional'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'regional')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Arctic Indigenous Sovereignty Toolkit - Page ',
+      sv: 'Ramverk för biologisk mångfald - Arktisk ursprungssuveränitetsverktyg - Sida '
+    }
+  },
+
+  {
+    name: 'urban-biodiversity-guide',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'urban-biodiversity-guide-en',
+      sv: 'urban-biodiversity-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'regional'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'regional')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Urban Biodiversity Integration Guide - Page ',
+      sv: 'Ramverk för biologisk mångfald - Urbans biodiversitetsintegrationsguide - Sida '
+    }
+  },
+
+  // Advocacy & Scaling Tools
+  {
+    name: 'advocacy-toolkit',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'advocacy-toolkit-en',
+      sv: 'advocacy-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Biodiversity Advocacy Campaign Toolkit - Page ',
+      sv: 'Ramverk för biologisk mångfald - Biodiversitetspåverkanskampanj verktygskit - Sida '
+    }
+  },
+
+  {
+    name: 'funding-navigator',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'funding-navigator-en',
+      sv: 'funding-navigator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Funding Navigator for Biodiversity Projects - Page ',
+      sv: 'Ramverk för biologisk mångfald - Finansieringsnavigator för biodiversitetsprojekt - Sida '
+    }
+  },
+
+  {
+    name: 'diplomatic-playbook',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'diplomatic-playbook-en',
+      sv: 'diplomatic-playbook-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Diplomatic Engagement Playbook - Page ',
+      sv: 'Ramverk för biologisk mångfald - Diplomatisk engagemangshandbok - Sida '
+    }
+  },
+
+  {
+    name: 'coalition-building-guide',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'coalition-building-guide-en',
+      sv: 'coalition-building-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Coalition Building Strategy Guide - Page ',
+      sv: 'Ramverk för biologisk mångfald - Koalitionsbyggnadsstrategi guide - Sida '
+    }
+  },
+
+  // Assessment & Evaluation Tools
+  {
+    name: 'pilot-audit-learning',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'pilot-audit-learning-en',
+      sv: 'pilot-audit-learning-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'assessment'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'assessment')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Pilot Program Audit & Learning Template - Page ',
+      sv: 'Ramverk för biologisk mångfald - Pilotprogram revision & lärandemall - Sida '
+    }
+  },
+
+  {
+    name: 'cultural-democratic-assessment',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'cultural-democratic-assessment-en',
+      sv: 'cultural-democratic-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'assessment'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'assessment')
+    },
+    pageFooter: {
+      en: 'Biodiversity Framework - Cultural Impact & Democratic Assessment Tool - Page ',
+      sv: 'Ramverk för biologisk mångfald - Kulturell påverkan & demokratisk bedömningsverktyg - Sida '
+    }
+  },
+  // Full Biodiversity Framework
+  {
+    name: 'biodiversity-framework',
+    category: 'biodiversity',
+    fileNames: {
+      en: 'Biodiversity-Framework',
+      sv: 'Biodiversity-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Global Governance Biodiversity Implementation Framework - Page ',
+      sv: 'Global Styrning Biodiversitet Implementering Ramverk - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '00-philosophical-preamble',
+      '01-introduction-vision',
+      '02-guiding-principles',
+      '03-core-pillars',
+      '04-governance-structure',
+      '05-policy-mechanisms',
+      '06-stakeholder-engagement',
+      '07-financing-mechanisms',
+      '08-implementation-roadmap',
+      '09-metrics-success',
+      '10-visualizations',
+      '11-challenges-solutions',
+      '12-implementation-tools',
+      '13-reparations-protocol',
+      '14-conclusion-call-to-action',
+      'appendix-a-synergy-esfmlg',
+      'appendix-b-glossary',
+      'appendix-c-tool-library',
+      'appendix-d-moral-edge-cases',
+      'appendix-e-political-economy',
+      'appendix-f-feasibility-studies',
+      'appendix-g-pilot-blueprints',
+      'appendix-h-scenario-planning',
+      'appendix-i-cooperation-protocols',
+      'appendix-j-creative-outputs'
     ]
   },
 ];
