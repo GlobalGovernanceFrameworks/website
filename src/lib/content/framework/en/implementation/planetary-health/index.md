@@ -36,10 +36,10 @@ The framework is a comprehensive plan to establish integrated planetary health s
 ## <a id="stakeholder-pathways"></a>Stakeholder Pathways
 To help stakeholders quickly find relevant content, the framework offers tailored entry points:
 
-- **For Healthcare Workers**: Start with [Community Health Legions](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) and the [Health Worker Charter](/framework/tools/planetary-health/health-worker-charter-en.pdf), then explore [AI Literacy Certifications](/framework/tools/planetary-health/ai-literacy-certifications-en.pdf) and [Trauma-Informed Care Protocols](/framework/tools/planetary-health/trauma-informed-care-en.pdf).
+- **For Healthcare Workers**: Start with [Community Health Legions](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) and the [Health Worker Charter](/framework/tools/planetary-health/health-worker-charter-en.pdf), then explore [AI Literacy Certifications](/framework/tools/planetary-health/ai-literacy-certifications-en.pdf) and [Trauma-Informed Care Protocols](/framework/tools/planetary-health/trauma-informed-care-protocols-en.pdf).
 - **For Policymakers**: Begin with the [Executive Summary](/framework/tools/planetary-health/executive-summary-en.pdf) and [Global Health Equity Council](/framework/docs/implementation/planetary-health#01-governance-structure) structure, then review [Financing Mechanisms](/framework/docs/implementation/planetary-health#03-financing-mechanisms) and [Policy Integration Toolkit](/framework/tools/planetary-health/policy-integration-toolkit-en.pdf).
-- **For Communities**: Focus on [Community-Centered Healthcare](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) and [Health Literacy Initiative](/framework/docs/implementation/planetary-health#08-health-literacy), supported by [Community Engagement Playbook](/framework/tools/planetary-health/community-engagement-playbook-en.pdf) and [Cultural Competency Guidelines](/framework/tools/planetary-health/cultural-competency-guidelines-en.pdf).
-- **For Technology Innovators**: Start with [AI-Driven Health Systems](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure) and [Ethical Technology Governance](/framework/docs/implementation/planetary-health#10-ethical-technology-governance), then explore [Blockchain Implementation Guide](/framework/tools/planetary-health/blockchain-implementation-guide-en.pdf) and [AI Ethics Protocols](/framework/tools/planetary-health/ai-ethics-protocols-en.pdf).
+- **For Communities**: Focus on [Community-Centered Healthcare](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) and [Health Literacy Initiative](/framework/docs/implementation/planetary-health#08-health-literacy), supported by [Community Health Legion Training Manual](/framework/tools/planetary-health/community-health-legion-manual-en.pdf) and [Cultural Competency Training Module](/framework/tools/planetary-health/cultural-competency-training-en.pdf).
+- **For Technology Innovators**: Start with [AI-Driven Health Systems](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure) and [Ethical Technology Governance](/framework/docs/implementation/planetary-health#10-ethical-technology-governance), then explore [Blockchain Health Records Setup](/framework/tools/planetary-health/blockchain-health-records-setup-en.pdf) and [AI Ethics Protocols](/framework/tools/planetary-health/ai-ethics-protocols-en.pdf).
 
 ## <a id="framework-sections"></a>Framework Sections
 The framework is organized into 18 sections, each a critical component of its transformative design. Explore them below:
@@ -78,10 +78,13 @@ To bridge theory and practice, the framework provides practical tools and templa
 - **Core Governance Tools**:
   - [Global Health Equity Council Setup Guide](/framework/tools/planetary-health/global-health-equity-council-setup-en.pdf)
   - [Regional Health Hub Implementation](/framework/tools/planetary-health/regional-health-hub-implementation-en.pdf)
+  - [Policy Integration Toolkit](/framework/tools/planetary-health/policy-integration-toolkit-en.pdf)
   - [Conflict Resolution Protocols](/framework/tools/planetary-health/conflict-resolution-protocols-en.pdf)
   - [Youth Advisory Board Framework](/framework/tools/planetary-health/youth-advisory-board-framework-en.pdf)
 - **Technology Implementation Tools**:
   - [AI Bias Audit Framework](/framework/tools/planetary-health/ai-bias-audit-framework-en.pdf)
+  - [AI Ethics Protocols](/framework/tools/planetary-health/ai-ethics-protocols-en.pdf)
+  - [AI Literacy Certifications](/framework/tools/planetary-health/ai-literacy-certifications-en.pdf)
   - [Blockchain Health Records Setup](/framework/tools/planetary-health/blockchain-health-records-setup-en.pdf)
   - [Federated Learning Implementation](/framework/tools/planetary-health/federated-learning-implementation-en.pdf)
   - [Cybersecurity Framework for Health](/framework/tools/planetary-health/cybersecurity-framework-health-en.pdf)
@@ -103,6 +106,7 @@ To bridge theory and practice, the framework provides practical tools and templa
 - **Framework Guides**:
   - [Planetary Health Accord Lite](/framework/tools/planetary-health/planetary-health-accord-lite-en.pdf) (English)
   - [Children's Health Rights Comic](/framework/tools/planetary-health/childrens-health-rights-comic-en.pdf) (Youth-focused adaptation)
+  - [Executive Summary](/framework/tools/planetary-health/executive-summary-en.pdf)
 
 All tools are available in PDF and editable markdown formats. Access the complete [Tools Library](/framework/tools/planetary-health) for all versions and formats.
 

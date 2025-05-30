@@ -19,14 +19,14 @@ const initialNav = [
         titleKey: 'framework.docs.nav.implementationTier1',
         path: '/framework/docs/implementation/tier-1',
         subItems: [
-          { titleKey: 'framework.docs.nav.implementationClimateEnergy', path: '/framework/docs/implementation/energy', status: 'ready' },
-          { titleKey: 'framework.docs.nav.implementationPeace', path: '/framework/docs/implementation/peace', status: 'ready' },
-          { titleKey: 'framework.docs.nav.implementationHealthcare', path: '/framework/docs/implementation/healthcare', comingSoon: true },
-          { titleKey: 'framework.docs.nav.implementationFood', path: '/framework/docs/implementation/food-systems', status: 'ready' },
-          { titleKey: 'framework.docs.nav.implementationEconomic', path: '/framework/docs/implementation/economic', status: 'ready' },
-          { titleKey: 'framework.docs.nav.implementationJustice', path: '/framework/docs/implementation/justice', status: 'ready' },
+          { titleKey: 'framework.docs.nav.implementationClimateEnergy', path: '/framework/docs/implementation/energy', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationPeace', path: '/framework/docs/implementation/peace', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationHealthcare', path: '/framework/docs/implementation/planetary-health', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationFood', path: '/framework/docs/implementation/food-systems', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationEconomic', path: '/framework/docs/implementation/economic', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationJustice', path: '/framework/docs/implementation/justice', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationMigration', path: '/framework/docs/implementation/migration', planned: true },
-          { titleKey: 'framework.docs.nav.implementationDisaster', path: '/framework/docs/implementation/disaster', status: 'ready' }
+          { titleKey: 'framework.docs.nav.implementationDisaster', path: '/framework/docs/implementation/disaster', status: 'review' }
         ]
       },
       {
@@ -35,7 +35,7 @@ const initialNav = [
         subItems: [
           { titleKey: 'framework.docs.nav.implementationTechnology', path: '/framework/docs/implementation/technology', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationFinancial', path: '/framework/docs/implementation/financial-systems', status: 'review' },
-          { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', status: 'ready' },
+          { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationUrban', path: '/framework/docs/implementation/urban', planned: true },
           { titleKey: 'framework.docs.nav.implementationEnvironment', path: '/framework/docs/implementation/environmental-stewardship', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationOceansMarine', path: '/framework/docs/implementation/oceans', planned: true },
@@ -46,13 +46,13 @@ const initialNav = [
         titleKey: 'framework.docs.nav.implementationTier3',
         path: '/framework/docs/implementation/tier-3',
         subItems: [
-          { titleKey: 'framework.docs.nav.implementationDigital', path: '/framework/docs/implementation/digital', status: 'ready'},
+          { titleKey: 'framework.docs.nav.implementationDigital', path: '/framework/docs/implementation/digital', status: 'review'},
           { titleKey: 'framework.docs.nav.implementationBiodiversity', path: '/framework/docs/implementation/biodiversity', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationCulture', path: '/framework/docs/implementation/culture', planned: true },
           { titleKey: 'framework.docs.nav.implementationRural', path: '/framework/docs/implementation/rural', planned: true },
-          { titleKey: 'framework.docs.nav.implementationSpiritual', path: '/framework/docs/implementation/spiritual', status: 'ready' },
+          { titleKey: 'framework.docs.nav.implementationSpiritual', path: '/framework/docs/implementation/spiritual', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationYouthGovernance', path: '/framework/docs/implementation/youth', planned: true },
-          { titleKey: 'framework.docs.nav.implementationEthicsRights', path: '/framework/docs/implementation/ethics', status: 'ready' }
+          { titleKey: 'framework.docs.nav.implementationEthicsRights', path: '/framework/docs/implementation/ethics', status: 'review' }
         ]
       },
       {
@@ -60,9 +60,9 @@ const initialNav = [
         path: '/framework/docs/implementation/tier-4',
         subItems: [
           { titleKey: 'framework.docs.nav.implementationSpaceGovernance', path: '/framework/docs/implementation/space', planned: true },
-          { titleKey: 'framework.docs.nav.implementationConsciousness', path: '/framework/docs/implementation/consciousness', planned: true },
+          { titleKey: 'framework.docs.nav.implementationConsciousness', path: '/framework/docs/implementation/consciousness', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationMetaGovernance', path: '/framework/docs/implementation/meta', status: 'review' },
-          { titleKey: 'framework.docs.nav.implementationMethodsTools', path: '/framework/docs/implementation/methods-tools', status: 'ready' }
+          { titleKey: 'framework.docs.nav.implementationMethodsTools', path: '/framework/docs/implementation/methods-tools', status: 'review' }
         ]
       }
     ]

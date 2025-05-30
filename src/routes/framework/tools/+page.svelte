@@ -29,6 +29,9 @@
       peaceTitle: "Peace & Conflict Resolution Framework Tools",
       peaceDesc: "Resources for implementing peace governance at multiple levels, including conflict analysis templates, dialogue protocols, and tools for transitional justice, early warning systems, and trauma-informed facilitation.",
       peaceButton: "Access Peace & Conflict Tools",
+      planetaryHealthTitle: "Planetary Health Framework Tools",
+      planetaryHealthDesc: "Resources for health equity, community empowerment, and planetary healing, including Community Health Legions, AI-powered health systems, blockchain health records, One Health surveillance, and tools for creating equitable healthcare for all by 2035.",
+      planetaryHealthButton: "Access Planetary Health Tools",
       financialTitle: "Financial Systems Framework Tools",
       financialDesc: "Resources for implementing financial systems that prioritize human and ecological flourishing, including Hearts currency implementation, Love Ledger guides, validator training, and tools for integrating with traditional financial systems.",
       financialButton: "Access Financial Systems Tools",
@@ -83,6 +86,9 @@
       peaceTitle: "Verktyg för fred och konfliktlösningsramverk",
       peaceDesc: "Resurser för att implementera fredsarbete på flera nivåer, inklusive mallar för konfliktanalys, dialogprotokoll och verktyg för övergångsrättvisa, tidiga varningssystem och traumamedveten facilitering.",
       peaceButton: "Öppna freds- och konfliktverktyg",
+      planetaryHealthTitle: "Planetär Hälsa Ramverk Verktyg",
+      planetaryHealthDesc: "Resurser för hälsorättvisa, samhällsstärkande och planetär läkning, inklusive Gemenskapshälsa Legioner, AI-drivna hälsosystem, blockchain hälsoregister, En Hälsa övervakning och verktyg för att skapa rättvis hälsovård för alla till 2035.",
+      planetaryHealthButton: "Öppna Planetär Hälsa Verktyg",
       financialTitle: "Verktyg för Finansiella Systems Ramverk",
       financialDesc: "Resurser för implementering av finansiella system som prioriterar mänskligt och ekologiskt välbefinnande, inklusive Hearts valutaimplementering, Love Ledger-guider, validatorträning och verktyg för integrering med traditionella finansiella system.",
       financialButton: "Öppna Finansiella Systemverktyg",
@@ -208,6 +214,24 @@
             </p>
             <a href="{base}/framework/tools/peace" style="display: inline-flex; align-items: center; background-color: #6B5CA5; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.peaceButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #1e3a8a; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #1e3a8a;">🩺</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #1e3a8a;">{texts.planetaryHealthTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.planetaryHealthDesc}
+            </p>
+            <a href="{base}/framework/tools/planetary-health" style="display: inline-flex; align-items: center; background-color: #1e3a8a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.planetaryHealthButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
