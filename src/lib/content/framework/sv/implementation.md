@@ -113,40 +113,44 @@ Att införa ramverket fungerar bäst som en gradvis, evolutionär process:
 
 Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver specifik hänsyn samtidigt som de följer kärnprinciperna och implementeringsmetoderna som beskrivs ovan.
 
-### Nivå 1: Global stabilitet och rättvisa
-- [Klimat och energistyrning](/framework/docs/implementation/energy)
-- [Fred och konflikthantering](/framework/docs/implementation/peace) (Under granskning)
-- [Hälso- och sjukvårdsstyrning](/framework/docs/implementation/healthcare) (Planerad)
-- [Livsmedelssystem och jordbruk](/framework/docs/implementation/food)
-- [Ekonomisk integration](/framework/docs/implementation/economic)
-- [Rättssystem](/framework/docs/implementation/justice) (Kommer snart)
+### **Nivå 1: Akut global stabilitet och rättvisa**
+- [Klimat- och energistyrning](/framework/docs/implementation/energy) (Under granskning)
+- [Fred och konfliktlösning](/framework/docs/implementation/peace) (Under granskning)
+- [Hälso- och sjukvårdsstyrning](/framework/docs/implementation/healthcare) (Under granskning)
+- [Livsmedelssystem och jordbruk](/framework/docs/implementation/food) (Under granskning)
+- [Ekonomisk integration](/framework/docs/implementation/economic) (Under granskning)
+- [Rättssystem](/framework/docs/implementation/justice) (Under granskning)
 - [Migration och mänsklig rörlighet](/framework/docs/implementation/migration) (Planerad)
-- [Katastrofrisk och resiliens](/framework/docs/implementation/disaster)
+- [Katastrofriskreducering och resiliens](/framework/docs/implementation/disaster) (Under granskning)
 
-### Nivå 2: System för långsiktigt välmående
+### **Nivå 2: System för långsiktigt välstånd**
 - [Teknikstyrning](/framework/docs/implementation/technology) (Under granskning)
-- [Finansiella system](/framework/docs/implementation/finance) (Kommer snart)
-- [Utbildningssystem](/framework/docs/implementation/education)
+- [Finansiella system](/framework/docs/implementation/finance) (Under granskning)
+- [Utbildningssystem](/framework/docs/implementation/education) (Under granskning)
+- [Psykisk hälsostyrning](/framework/docs/implementation/mental-health) (Planerad)
 - [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)
+- [Vatten och sanitet](/framework/docs/implementation/water) (Planerad)
 - [Miljöhushållning](/framework/docs/implementation/environment) (Under granskning)
-- [Havsförvaltning & marina ekosystem](/framework/docs/implementation/oceans) (Planerad)
-- [Arbetsmarknad & sysselsättning](/framework/docs/implementation/labor) (Planerad)
+- [Djurvälfärd](/framework/docs/implementation/animal-welfare) (Planerad)
+- [Biologisk mångfald](/framework/docs/implementation/biodiversity) (Kommer snart)
+- [Havs- och marin styrning](/framework/docs/implementation/oceans) (Planerad)
+- [Arbetsmarknadsstyrning](/framework/docs/implementation/labor) (Planerad)
 
-### Nivå 3: Jämlikhet, kultur & framtida generationer
-- [Digitala allmänningar](/framework/docs/implementation/digital)
-- [Biologisk mångfald](/framework/docs/implementation/biodiversity) (Planerad)
-- [Bevarande av kulturarv](/framework/docs/implementation/culture) (Planerad)
+### **Nivå 3: Jämlikhet, kultur och framtida generationer**
+- [Digitala allmänningar](/framework/docs/implementation/digital) (Under granskning)
+- [Kulturarvsbevarande](/framework/docs/implementation/culture) (Planerad)
 - [Landsbygdsutveckling](/framework/docs/implementation/rural) (Planerad)
-- [Religiös och andlig dialog](/framework/docs/implementation/spiritual)
-- [Ungdoms- & generationsstyrning](/framework/docs/implementation/youth) (Planerad)
-- [Globala rättigheter & etik](/framework/docs/implementation/ethics)
+- [Religiös och andlig dialog](/framework/docs/implementation/spiritual) (Under granskning)
+- [Ungdoms- och generationsstyrning](/framework/docs/implementation/youth) (Planerad)
+- [Global etik och mänskliga rättigheter](/framework/docs/implementation/ethics) (Under granskning)
+- [Jämställdhet och HBTQ+-rättigheter](/framework/docs/implementation/gender) (Planerad)
+- [Åldrande befolkningsstöd](/framework/docs/implementation/aging) (Planerad)
 
-### Nivå 4: Visionär och metagovernance
+### **Nivå 4: Visionär och metastyrdning**
 - [Rymdförvaltning](/framework/docs/implementation/space) (Planerad)
 - [Medvetande & inre utveckling](/framework/docs/implementation/consciousness) (Planerad)
 - [Integrerad metagovernance](/framework/docs/implementation/meta) (Under granskning)
-- [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools)
-
+- [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools) (Under granskning)
 
 Varje domänimplementering ger detaljerad vägledning, verktyg och fallstudier specifika för det området, samtidigt som de följer ramverkets kärnprinciper och implementeringsmetoder.
 

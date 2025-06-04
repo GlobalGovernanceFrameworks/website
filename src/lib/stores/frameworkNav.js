@@ -60,7 +60,7 @@ const initialNav = [
         path: '/framework/docs/implementation/tier-4',
         subItems: [
           { titleKey: 'framework.docs.nav.implementationSpaceGovernance', path: '/framework/docs/implementation/space', planned: true },
-          { titleKey: 'framework.docs.nav.implementationConsciousness', path: '/framework/docs/implementation/consciousness', comingSoon: true },
+          { titleKey: 'framework.docs.nav.implementationConsciousness', path: '/framework/docs/implementation/consciousness', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationMetaGovernance', path: '/framework/docs/implementation/meta', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationMethodsTools', path: '/framework/docs/implementation/methods-tools', status: 'review' }
         ]

@@ -33,6 +33,7 @@ Available categories:
 - environmental-stewardship
 - biodiversity
 - planetary-health
+- consciousness
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -60,7 +61,9 @@ const outputDirs = {
   'environmental-stewardship': path.join(__dirname, '..', 'static', 'framework', 'tools', 'environmental-stewardship'),
   'governance': path.join(__dirname, '..', 'static', 'framework', 'tools', 'governance'),
   'biodiversity': path.join(__dirname, '..', 'static', 'framework', 'tools', 'biodiversity'),
-  'planetary-health': path.join(__dirname, '..', 'static', 'framework', 'tools', 'planetary-health')
+  'planetary-health': path.join(__dirname, '..', 'static', 'framework', 'tools', 'planetary-health'),
+  'consciousness': path.join(__dirname, '..', 'static', 'framework', 'tools', 'consciousness'),
+  'youth': path.join(__dirname, '..', 'static', 'framework','tools', 'youth')
 };
 
 // Validate category if provided
@@ -5258,6 +5261,532 @@ const tools = [
     ]
   },
 
+  // Consciousness Framework
+
+  // Main framework files
+  {
+    name: 'consciousness-accord-lite',
+    category: 'consciousness',
+    fileNames: {
+      en: 'consciousness-accord-lite-en',
+      sv: 'consciousness-accord-lite-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Consciousness Accord Lite - Page ',
+      sv: 'Medvetande Ramverk - Medvetande Accord Lite - Sida '
+    }
+  },
+  {
+    name: 'executive-core-overview',
+    category: 'consciousness',
+    fileNames: {
+      en: 'executive-core-overview-en',
+      sv: 'executive-core-overview-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Executive Summary - Page ',
+      sv: 'Medvetande Ramverk - Sammanfattning - Sida '
+    }
+  },
+
+  // Core Governance Tools
+  {
+    name: 'global-wisdom-council-setup',
+    category: 'consciousness',
+    fileNames: {
+      en: 'global-wisdom-council-setup-en',
+      sv: 'global-wisdom-council-setup-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Global Wisdom Council Setup Guide - Page ',
+      sv: 'Medvetande Ramverk - Uppsättningsguide för globalt vishetsråd - Sida '
+    }
+  },
+  {
+    name: 'regional-consciousness-hub-implementation',
+    category: 'consciousness',
+    fileNames: {
+      en: 'regional-consciousness-hub-implementation-en',
+      sv: 'regional-consciousness-hub-implementation-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Regional Consciousness Hub Implementation Guide - Page ',
+      sv: 'Medvetande Ramverk - Implementeringsguide för regionalt medvetandecentrum - Sida '
+    }
+  },
+  {
+    name: 'policy-design-guide',
+    category: 'consciousness',
+    fileNames: {
+      en: 'policy-design-guide-en',
+      sv: 'policy-design-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Policy Design Guide - Page ',
+      sv: 'Medvetande Ramverk - Guide för policydesign - Sida '
+    }
+  },
+  {
+    name: 'stakeholder-engagement-protocols',
+    category: 'consciousness',
+    fileNames: {
+      en: 'stakeholder-engagement-protocols-en',
+      sv: 'stakeholder-engagement-protocols-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Stakeholder Engagement Protocols - Page ',
+      sv: 'Medvetande Ramverk - Protokoll för intressentengagemang - Sida '
+    }
+  },
+  {
+    name: 'youth-council-framework',
+    category: 'consciousness',
+    fileNames: {
+      en: 'youth-council-framework-en',
+      sv: 'youth-council-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Youth Council Framework - Page ',
+      sv: 'Medvetande Ramverk - Ramverk för ungdomsråd - Sida '
+    }
+  },
+
+  // Personal Transformation Tools
+  {
+    name: 'mindfulness-training-module',
+    category: 'consciousness',
+    fileNames: {
+      en: 'mindfulness-training-module-en',
+      sv: 'mindfulness-training-module-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'personal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'personal')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Mindfulness Training Module - Page ',
+      sv: 'Medvetande Ramverk - Mindfulnessträningsmodul - Sida '
+    }
+  },
+  {
+    name: 'shadow-work-coaching-guide',
+    category: 'consciousness',
+    fileNames: {
+      en: 'shadow-work-coaching-guide-en',
+      sv: 'shadow-work-coaching-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'personal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'personal')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Shadow Work Coaching Guide - Page ',
+      sv: 'Medvetande Ramverk - Guide för coachning i skuggarbete - Sida '
+    }
+  },
+  {
+    name: 'nonviolent-communication-toolkit',
+    category: 'consciousness',
+    fileNames: {
+      en: 'nonviolent-communication-toolkit-en',
+      sv: 'nonviolent-communication-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'personal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'personal')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Nonviolent Communication Toolkit - Page ',
+      sv: 'Medvetande Ramverk - Verktygslåda för ickevåldsam kommunikation - Sida '
+    }
+  },
+  {
+    name: 'leadership-toolkit',
+    category: 'consciousness',
+    fileNames: {
+      en: 'leadership-toolkit-en',
+      sv: 'leadership-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'personal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'personal')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Leadership Toolkit - Page ',
+      sv: 'Medvetande Ramverk - Verktygslåda för ledarskap - Sida '
+    }
+  },
+
+  // Community Engagement Tools
+  {
+    name: 'community-dialogue-manual',
+    category: 'consciousness',
+    fileNames: {
+      en: 'community-dialogue-manual-en',
+      sv: 'community-dialogue-manual-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'community')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Community Dialogue Manual - Page ',
+      sv: 'Medvetande Ramverk - Handbok för samhällsdialog - Sida '
+    }
+  },
+  {
+    name: 'cultural-sensitivity-protocols',
+    category: 'consciousness',
+    fileNames: {
+      en: 'cultural-sensitivity-protocols-en',
+      sv: 'cultural-sensitivity-protocols-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'community')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Cultural Sensitivity Protocols - Page ',
+      sv: 'Medvetande Ramverk - Protokoll för kulturell känslighet - Sida '
+    }
+  },
+  {
+    name: 'consciousness-raising-circle-guide',
+    category: 'consciousness',
+    fileNames: {
+      en: 'consciousness-raising-circle-guide-en',
+      sv: 'consciousness-raising-circle-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'community')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Consciousness-Raising Circle Guide - Page ',
+      sv: 'Medvetande Ramverk - Medvetandehöjande cirkelguide - Sida '
+    }
+  },
+
+  // Digital Platform Tools
+  {
+    name: 'ai-sentiment-analysis-setup',
+    category: 'consciousness',
+    fileNames: {
+      en: 'ai-sentiment-analysis-setup-en',
+      sv: 'ai-sentiment-analysis-setup-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'digital')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - AI Sentiment Analysis Setup Guide - Page ',
+      sv: 'Medvetande Ramverk - Installationsguide för AI-sentimentanalys - Sida '
+    }
+  },
+  {
+    name: 'vr-wisdom-council-framework',
+    category: 'consciousness',
+    fileNames: {
+      en: 'vr-wisdom-council-framework-en',
+      sv: 'vr-wisdom-council-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'digital')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - VR Wisdom Council Framework - Page ',
+      sv: 'Medvetande Ramverk - VR Vishetsrådsramverk - Sida '
+    }
+  },
+  {
+    name: 'ai-bias-audit-framework',
+    category: 'consciousness',
+    fileNames: {
+      en: 'ai-bias-audit-framework-en',
+      sv: 'ai-bias-audit-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'digital')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - AI Bias Audit Framework - Page ',
+      sv: 'Medvetande Ramverk - Ramverk för granskning av AI-bias - Sida '
+    }
+  },
+  {
+    name: 'cybersecurity-framework-governance',
+    category: 'consciousness',
+    fileNames: {
+      en: 'cybersecurity-framework-governance-en',
+      sv: 'cybersecurity-framework-governance-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'digital')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Cybersecurity Framework for Governance - Page ',
+      sv: 'Medvetande Ramverk - Ramverk för cybersäkerhet för styrning - Sida '
+    }
+  },
+
+  // Economic and Metrics Tools
+  {
+    name: 'conscious-budget-template',
+    category: 'consciousness',
+    fileNames: {
+      en: 'conscious-budget-template-en',
+      sv: 'conscious-budget-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'metrics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'metrics')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Conscious Budget Template - Page ',
+      sv: 'Medvetande Ramverk - Medveten budgetmall - Sida '
+    }
+  },
+  {
+    name: 'vmeme-transition-toolkit',
+    category: 'consciousness',
+    fileNames: {
+      en: 'vmeme-transition-toolkit-en',
+      sv: 'vmeme-transition-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'metrics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'metrics')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - vMeme Transition Toolkit - Page ',
+      sv: 'Medvetande Ramverk - vMeme-övergångsverktyg - Sida '
+    }
+  },
+  {
+    name: 'leader-consciousness-index-guide',
+    category: 'consciousness',
+    fileNames: {
+      en: 'leader-consciousness-index-guide-en',
+      sv: 'leader-consciousness-index-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'metrics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'metrics')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Leader Consciousness Index Guide - Page ',
+      sv: 'Medvetande Ramverk - Guide till index för ledarmedvetenhet - Sida '
+    }
+  },
+  {
+    name: 'intergenerational-justice-metrics-framework',
+    category: 'consciousness',
+    fileNames: {
+      en: 'intergenerational-justice-metrics-framework-en',
+      sv: 'intergenerational-justice-metrics-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'metrics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'metrics')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Intergenerational Justice Metrics Framework - Page ',
+      sv: 'Medvetande Ramverk - Ramverk för generationsöverskridande rättvisemetriker - Sida '
+    }
+  },
+
+  // Pilots
+  {
+    name: 'conscious-governance-pilot-guides',
+    category: 'consciousness',
+    fileNames: {
+      en: 'conscious-governance-pilot-guides-en',
+      sv: 'conscious-governance-pilot-guides-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'pilots'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'pilots')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Conscious Governance Pilot Guides - Page ',
+      sv: 'Medvetande Ramverk - Pilotguider för medveten styrning - Sida '
+    }
+  },
+
+  // Crisis Response Tools
+  {
+    name: 'crisis-wisdom-team-protocols',
+    category: 'consciousness',
+    fileNames: {
+      en: 'crisis-wisdom-team-protocols-en',
+      sv: 'crisis-wisdom-team-protocols-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'crisis')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Crisis Wisdom Team Protocols - Page ',
+      sv: 'Medvetande Ramverk - Protokoll för krisvisdomsteamet - Sida '
+    }
+  },
+  {
+    name: 'ethical-decision-template',
+    category: 'consciousness',
+    fileNames: {
+      en: 'ethical-decision-template-en',
+      sv: 'ethical-decision-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'crisis')
+    },
+    pageFooter: {
+      en: 'Consciousness Framework - Ethical Decision Template - Page ',
+      sv: 'Medvetande Ramverk - Etiskt beslutsmall - Sida '
+    }
+  },
+
+  // Full Consciousness Framework
+  {
+    name: 'consciousness-framework',
+    category: 'consciousness',
+    fileNames: {
+      en: 'Consciousness-Inner-Development-Framework',
+      sv: 'Consciousness-Inner-Development-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Consciousness & Inner Development Implementation Framework - Page ',
+      sv: 'Medvetande och inre utveckling implementeringsramverk - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '00-manifesto',
+      '01-governance-structure',
+      '02-personal-transformation',
+      '03-collective-consciousness',
+      '04-systemic-integration',
+      '05-spiral-dynamics',
+      '06-economic-realignment',
+      '07-community-engagement',
+      '08-crisis-response',
+      '09-metrics-accountability',
+      '10-digital-platforms',
+      '11-ethical-ai-governance',
+      '12-cross-cultural-translation',
+      '13-implementation-roadmap',
+      '14-visual-architecture-map',
+      '15-conclusion'
+    ]
+  },
+
+  // Youth Leadership Hub
+  {
+    name: 'youth-governance-comic',
+    category: 'youth',
+    fileNames: {
+      en: 'youth-governance-comic-en',
+      sv: 'youth-governance-comic-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness')
+    },
+    pageFooter: {
+      en: 'Youth Leadership - Comic - Page ',
+      sv: 'Youth Leadership - Serie - Sida '
+    }
+  },
+  {
+    name: 'youth-community-action-guide',
+    category: 'youth',
+    fileNames: {
+      en: 'youth-community-action-guide-en',
+      sv: 'youth-community-action-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'youth'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'youth')
+    },
+    pageFooter: {
+      en: 'Youth Leadership - Youth Community Action Guide - Page ',
+      sv: 'Youth Leadership - Handledning för ungdomsaktiviteter i samhället - Sida '
+    }
+  },
+  {
+    name: 'youth-dialogue-circle-guide',
+    category: 'youth',
+    fileNames: {
+      en: 'youth-dialogue-circle-guide-en',
+      sv: 'youth-dialogue-circle-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'youth'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'youth')
+    },
+    pageFooter: {
+      en: 'Youth Leadership - Youth Dialogue Circle Guide - Page ',
+      sv: 'Youth Leadership - Guide för ungdomsdialogcirkel - Sida '
+    }
+  },
+  {
+    name: 'youth-mindfulness-guide',
+    category: 'youth',
+    fileNames: {
+      en: 'youth-mindfulness-guide-en',
+      sv: 'youth-mindfulness-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'youth'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'youth')
+    },
+    pageFooter: {
+      en: 'Youth Leadership - Mindfulness for Young Leaders - Page ',
+      sv: 'Youth Leadership - Mindfulness för unga ledare - Sida '
+    }
+  }
+
 ];
 
 // CSS styling for the PDF
@@ -5373,6 +5902,60 @@ const css = `
     height: auto;
     margin: 0 auto;
   }
+
+ /* Enhanced image styling */
+  .image-container {
+    text-align: center;
+    margin: 2em 0;
+    page-break-inside: avoid;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .svg-container {
+    text-align: center;
+    margin: 2em 0;
+    page-break-inside: avoid;
+  }
+  
+  .svg-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Comic-specific styling */
+  .comic-panel {
+    margin: 1.5em 0;
+    text-align: center;
+    page-break-inside: avoid;
+  }
+  
+  .comic-panel img {
+    max-width: 90%;
+    height: auto;
+    border: 2px solid #2B4B8C;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* QR Code specific styling */
+  img[alt*="QR"], img[src*="qr-code"] {
+    max-width: 200px !important;
+    height: auto;
+    margin: 1em auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: white;
+  }
 `;
 
 // Use simpler emoji replacement approach
@@ -5429,8 +6012,8 @@ function replaceEmojisWithImages(text) {
   return text;
 }
 
-// Process SVG images in markdown
-function processSvgReferences(markdown, inputFileDir) {
+// Enhanced image processing function for PDF generator
+function processImageReferences(markdown, inputFileDir) {
   // Find all image references in markdown
   const imgRegex = /!\[(.*?)\]\(([^)]+)\)/g;
   let match;
@@ -5440,51 +6023,95 @@ function processSvgReferences(markdown, inputFileDir) {
     const altText = match[1];
     let imgPath = match[2];
     
-    // Check if it's a relative path to an SVG file
-    if (imgPath.endsWith('.svg') && !imgPath.startsWith('http')) {
-      // Normalize path with file directory
+    // Skip if it's already a data URI or external URL
+    if (imgPath.startsWith('data:') || imgPath.startsWith('http')) {
+      continue;
+    }
+    
+    // Handle different image types
+    const imageExtensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp'];
+    const isImage = imageExtensions.some(ext => imgPath.toLowerCase().endsWith(ext));
+    
+    if (isImage) {
+      // Resolve the image path
+      let resolvedPath;
+      
       if (imgPath.startsWith('/')) {
-        // Absolute path from project root
-        imgPath = path.join(__dirname, '..', 'static', imgPath);
+        // Absolute path from project root - map to static directory
+        resolvedPath = path.join(__dirname, '..', 'static', imgPath);
       } else {
         // Relative path from markdown file
-        imgPath = path.join(inputFileDir, imgPath);
+        resolvedPath = path.join(inputFileDir, imgPath);
       }
       
-      console.log(`Processing SVG reference: ${imgPath}`);
+      console.log(`Processing image reference: ${imgPath} -> ${resolvedPath}`);
       
-      // Check if SVG file exists
-      if (fs.existsSync(imgPath)) {
+      // Check if image file exists
+      if (fs.existsSync(resolvedPath)) {
         try {
-          // Read SVG content
-          const svgContent = fs.readFileSync(imgPath, 'utf8');
+          const ext = path.extname(resolvedPath).toLowerCase();
           
-          // Ensure SVG has namespace
-          let processedSvg = svgContent;
-          if (!svgContent.includes('xmlns="http://www.w3.org/2000/svg"')) {
-            processedSvg = svgContent.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+          if (ext === '.svg') {
+            // Handle SVG files
+            const svgContent = fs.readFileSync(resolvedPath, 'utf8');
+            let processedSvg = svgContent;
+            
+            // Ensure SVG has namespace
+            if (!svgContent.includes('xmlns="http://www.w3.org/2000/svg"')) {
+              processedSvg = svgContent.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+            }
+            
+            const svgDataUri = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(processedSvg)}`;
+            
+            // Replace with embedded SVG
+            processedMarkdown = processedMarkdown.replace(
+              match[0],
+              `<div class="svg-container"><img src="${svgDataUri}" alt="${altText}" /></div>`
+            );
+            
+          } else {
+            // Handle raster images (PNG, JPG, etc.)
+            const imageBuffer = fs.readFileSync(resolvedPath);
+            const mimeType = getMimeType(ext);
+            const base64Data = imageBuffer.toString('base64');
+            const dataUri = `data:${mimeType};base64,${base64Data}`;
+            
+            // Replace with data URI
+            processedMarkdown = processedMarkdown.replace(
+              match[0],
+              `<div class="image-container"><img src="${dataUri}" alt="${altText}" style="max-width: 100%; height: auto;" /></div>`
+            );
           }
           
-          // Create data URI
-          const svgDataUri = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(processedSvg)}`;
+          console.log(`✅ Embedded image: ${path.basename(resolvedPath)}`);
           
-          // Replace image reference with embedded SVG container
-          processedMarkdown = processedMarkdown.replace(
-            match[0],
-            `<div class="svg-container"><img src="${svgDataUri}" alt="${altText}" /></div>`
-          );
-          
-          console.log(`Embedded SVG: ${path.basename(imgPath)}`);
         } catch (error) {
-          console.warn(`Error processing SVG ${imgPath}: ${error.message}`);
+          console.warn(`❌ Error processing image ${resolvedPath}: ${error.message}`);
+          // Keep original reference if processing fails
         }
       } else {
-        console.warn(`SVG file not found: ${imgPath}`);
+        console.warn(`⚠️ Image file not found: ${resolvedPath}`);
+        // Keep original reference if file doesn't exist
       }
     }
   }
   
   return processedMarkdown;
+}
+
+// Helper function to get MIME type from file extension
+function getMimeType(ext) {
+  const mimeTypes = {
+    '.png': 'image/png',
+    '.jpg': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
+    '.gif': 'image/gif',
+    '.webp': 'image/webp',
+    '.bmp': 'image/bmp',
+    '.ico': 'image/x-icon'
+  };
+  
+  return mimeTypes[ext.toLowerCase()] || 'image/png';
 }
 
 // Process each tool in each language
@@ -5595,8 +6222,8 @@ async function generatePDFs() {
           // Robust frontmatter removal that handles various formats
           markdown = markdown.replace(/^(---|\+\+\+)\s*\n([\s\S]*?)\n\s*(---|\+\+\+)\s*/m, '');
 
-          // Process SVG references
-          markdown = processSvgReferences(markdown, path.dirname(tool.sourceDir[lang]));
+          // Process image references
+          markdown = processImageReferences(markdown, path.dirname(tool.sourceDir[lang]));
                     
           // Convert markdown with emoji replacement
           const renderer = new marked.Renderer();

@@ -62,6 +62,9 @@
       ethicsTitle: "Global Ethics & Rights of Beings Framework Tools",
       ethicsDesc: "Resources for implementing the Rights of Beings Framework, including assessment methodologies, guardianship council guides, and practical tools for recognizing and protecting the rights of all beings across human, animal, ecosystem, and digital domains.",
       ethicsButton: "Access Ethics & Rights Tools",
+      consciousnessTitle: "Consciousness & Inner Development Framework Tools",
+      consciousnessDesc: "Resources for implementing conscious governance through personal transformation, collective wisdom, and systemic integration, including wisdom council setup, mindfulness training, cultural sensitivity protocols, and tools for building governance that honors interconnectedness and planetary well-being.",
+      consciousnessButton: "Access Consciousness Tools",
       comingSoon: "Coming Soon",
       otherFrameworks: "Other Framework Resources",
       otherFrameworksDesc: "Implementation tools for the following frameworks are currently in development and will be made available soon:",
@@ -79,7 +82,7 @@
       availableResources: "Tillgängliga resurser",
       governanceTitle: "Styrningsverktyg",
       governanceDesc: "Viktiga verktyg för demokratiskt deltagande och samhällssamordning, inklusive digitala demokratiplattformar, mallar för intressentengagemang och ramverk för bedömning av samhällets välbefinnande för transparent styrning.",
-      governanceButton: "Öppna Styrningsverktyg",
+      governanceButton: "Öppna styrningsverktyg",
       climateTitle: "Verktyg för klimat- och energistyrningsramverk",
       climateDesc: "Verktyg för att implementera ramverket för klimat- och energistyrning, inklusive bedömningsverktyg, mallar för omställningsplanering och opinionsbildningsresurser för klimatpolitik.",
       climateButton: "Öppna klimat- och energiverktyg",
@@ -88,22 +91,22 @@
       peaceButton: "Öppna freds- och konfliktverktyg",
       planetaryHealthTitle: "Planetär Hälsa Ramverk Verktyg",
       planetaryHealthDesc: "Resurser för hälsorättvisa, samhällsstärkande och planetär läkning, inklusive Gemenskapshälsa Legioner, AI-drivna hälsosystem, blockchain hälsoregister, En Hälsa övervakning och verktyg för att skapa rättvis hälsovård för alla till 2035.",
-      planetaryHealthButton: "Öppna Planetär Hälsa Verktyg",
+      planetaryHealthButton: "Öppna verktyg för planetär hälsa",
       financialTitle: "Verktyg för Finansiella Systems Ramverk",
       financialDesc: "Resurser för implementering av finansiella system som prioriterar mänskligt och ekologiskt välbefinnande, inklusive Hearts valutaimplementering, Love Ledger-guider, validatorträning och verktyg för integrering med traditionella finansiella system.",
-      financialButton: "Öppna Finansiella Systemverktyg",
+      financialButton: "Öppna finansiella systemverktyg",
       educationTitle: "Verktyg för utbildningsramverket",
       educationDesc: "Verktyg för att implementera det Perfekterade Förstärkta Utbildningssystemet, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
       educationButton: "Öppna utbildningsverktyg",
       environmentalTitle: "Verktyg för Miljöförvaltningsramverk",
       environmentalDesc: "Resurser för regenerativ miljöstyrning, inklusive heliga fröpaket för interfaith-restaurering, övervakning av ekosystemhälsa, rättighetserkännande för alla varelser och verktyg för klimatanpassning och biologisk mångfaldsskydd.",
-      environmentalButton: "Öppna Miljöförvaltningsverktyg",
+      environmentalButton: "Öppna miljöförvaltningsverktyg",
       digitalTitle: "Verktyg för digitalt allmänningsramverk",
       digitalDesc: "Verktyg för att implementera ramverket för digitala allmänningar, inklusive styrningsmallar, guider för nodkonfiguration, protokoll för datasuveränitet och resurser för att upprätta etiska AI-system och kunskapsallmänningar i olika sammanhang.",
       digitalButton: "Öppna digitala allmänningsverktyg",
       biodiversityTitle: "Biodiversitetsramverk Verktyg",
       biodiversityDesc: "Resurser för planetär läkning och regenerativ biodiversitetsstyrning, inklusive Ursprungsdigital Suveränitetshubbar, Bio-Konstresidenser, erkännande av ekosystemrättigheter, hybrid UBES-system och verktyg för att skapa en regenerativ biosfär till 2045.",
-      biodiversityButton: "Öppna Biodiversitetsverktyg",
+      biodiversityButton: "Öppna biodiversitetsverktyg",
       foodTitle: "Verktyg för matsystem och jordbruksramverk",
       foodDesc: "Resurser för att implementera hållbara matsystem, inklusive guider för regenerativt jordbruk, mallar för intressentengagemang och verktyg för policyharmonisering.",
       foodButton: "Öppna matsystemverktyg",
@@ -119,6 +122,9 @@
       ethicsTitle: "Verktyg för globalt etiskt ramverk och väsens rättigheter",
       ethicsDesc: "Resurser för att implementera ramverket för väsens rättigheter, inklusive bedömningsmetoder, vägledning för förmyndarskapsråd och praktiska verktyg för att erkänna och skydda rättigheterna för alla väsen inom mänskliga, djur-, ekosystem- och digitala domäner.",
       ethicsButton: "Öppna etik- och rättighetsverktyg",
+      consciousnessTitle: "Verktyg för Medvetenhet & Inre Utveckling Ramverk",
+      consciousnessDesc: "Resurser för att implementera medveten styrning genom personlig transformation, kollektiv visdom och systemisk integration, inklusive uppsättning av visdomsråd, mindfulnessträning, kulturella känslighetsprotokoll och verktyg för att bygga styrning som hedrar sammankoppling och planetärt välbefinnande.",
+      consciousnessButton: "Öppna medvetenhetsverktyg",
       comingSoon: "Kommer snart",
       otherFrameworks: "Övriga ramverksresurser",
       otherFrameworksDesc: "Implementeringsverktyg för följande ramverk är för närvarande under utveckling och kommer att göras tillgängliga inom kort:",
@@ -422,6 +428,25 @@
             </p>
             <a href="{base}/framework/tools/ethics" style="display: inline-flex; align-items: center; background-color: #166534; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.ethicsButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consciousness & Inner Development Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #4c1d95; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #4c1d95;">🧘</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #4c1d95;">{texts.consciousnessTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.consciousnessDesc}
+            </p>
+            <a href="{base}/framework/tools/consciousness" style="display: inline-flex; align-items: center; background-color: #4c1d95; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.consciousnessButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
