@@ -52,7 +52,8 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationRural', path: '/framework/docs/implementation/rural', planned: true },
           { titleKey: 'framework.docs.nav.implementationSpiritual', path: '/framework/docs/implementation/spiritual', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationYouthGovernance', path: '/framework/docs/implementation/youth', planned: true },
-          { titleKey: 'framework.docs.nav.implementationEthicsRights', path: '/framework/docs/implementation/ethics', status: 'review' }
+          { titleKey: 'framework.docs.nav.implementationEthicsRights', path: '/framework/docs/implementation/ethics', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationAging', path: '/framework/docs/implementation/aging', status: 'review' }
         ]
       },
       {

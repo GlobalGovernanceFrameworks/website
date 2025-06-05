@@ -34,6 +34,7 @@ Available categories:
 - biodiversity
 - planetary-health
 - consciousness
+- aging
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -63,7 +64,8 @@ const outputDirs = {
   'biodiversity': path.join(__dirname, '..', 'static', 'framework', 'tools', 'biodiversity'),
   'planetary-health': path.join(__dirname, '..', 'static', 'framework', 'tools', 'planetary-health'),
   'consciousness': path.join(__dirname, '..', 'static', 'framework', 'tools', 'consciousness'),
-  'youth': path.join(__dirname, '..', 'static', 'framework','tools', 'youth')
+  'youth': path.join(__dirname, '..', 'static', 'framework','tools', 'youth'),
+  'aging': path.join(__dirname, '..', 'static', 'framework','tools', 'aging')
 };
 
 // Validate category if provided
@@ -5785,7 +5787,304 @@ const tools = [
       en: 'Youth Leadership - Mindfulness for Young Leaders - Page ',
       sv: 'Youth Leadership - Mindfulness för unga ledare - Sida '
     }
-  }
+  },
+
+  // Aging Population Support Framework
+  // Core Framework Documents
+  {
+    name: 'executive-summary',
+    category: 'aging',
+    fileNames: {
+      en: 'executive-summary-en',
+      sv: 'executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging')
+    },
+    pageFooter: {
+      en: 'Aging Population Support Framework - Executive Summary - Page ',
+      sv: 'Åldrande Befolkningsstöd Ramverk - Sammanfattning - Sida '
+    }
+  },
+
+  {
+    name: 'aging-framework-essentials',
+    category: 'aging',
+    fileNames: {
+      en: 'aging-framework-essentials-en',
+      sv: 'aging-framework-essentials-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging')
+    },
+    pageFooter: {
+      en: 'Aging Population Support Framework - Essentials Guide - Page ',
+      sv: 'Åldrande Befolkningsstöd Ramverk - Grundläggande Guide - Sida '
+    }
+  },
+
+  // Core Implementation Tools
+  {
+    name: 'elder-readiness-assessment',
+    category: 'aging',
+    fileNames: {
+      en: 'elder-readiness-assessment-en',
+      sv: 'elder-readiness-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+    },
+    pageFooter: {
+      en: 'Elder Community Readiness Assessment - Page ',
+      sv: 'Äldre Samhälle Beredskapsanalys - Sida '
+    }
+  },
+
+  {
+    name: 'aubi-pilot-template',
+    category: 'aging',
+    fileNames: {
+      en: 'aubi-pilot-template-en',
+      sv: 'aubi-pilot-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+    },
+    pageFooter: {
+      en: 'AUBI Pilot Design Template - Page ',
+      sv: 'AUBI Pilot Design Mall - Sida '
+    }
+  },
+
+  {
+    name: 'elder-political-organizing-toolkit',
+    category: 'aging',
+    fileNames: {
+      en: 'elder-political-organizing-toolkit-en',
+      sv: 'elder-political-organizing-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+    },
+    pageFooter: {
+      en: 'Elder Political Organizing Toolkit - Page ',
+      sv: 'Äldre Politisk Organisering Verktygslåda - Sida '
+    }
+  },
+
+  {
+    name: 'technology-governance-charter',
+    category: 'aging',
+    fileNames: {
+      en: 'technology-governance-charter-en',
+      sv: 'technology-governance-charter-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+    },
+    pageFooter: {
+      en: 'Technology Governance Charter Template - Page ',
+      sv: 'Teknikstyrning Charter Mall - Sida '
+    }
+  },
+
+  {
+    name: 'elder-wellbeing-index-calculator',
+    category: 'aging',
+    fileNames: {
+      en: 'elder-wellbeing-index-calculator-en',
+      sv: 'elder-wellbeing-index-calculator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+    },
+    pageFooter: {
+      en: 'Elder Wellbeing Index Calculator - Page ',
+      sv: 'Äldre Välbefinnande Index Kalkylator - Sida '
+    }
+  },
+
+  {
+    name: 'climate-wisdom-documentation-kit',
+    category: 'aging',
+    fileNames: {
+      en: 'climate-wisdom-documentation-kit-en',
+      sv: 'climate-wisdom-documentation-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+    },
+    pageFooter: {
+      en: 'Climate Wisdom Documentation Kit - Page ',
+      sv: 'Klimatvisdom Dokumentationskit - Sida '
+    }
+  },
+
+  // Advocacy and Scaling Tools
+  {
+    name: 'ageism-interruption-training-guide',
+    category: 'aging',
+    fileNames: {
+      en: 'ageism-interruption-training-guide-en',
+      sv: 'ageism-interruption-training-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Ageism Interruption Training Guide - Page ',
+      sv: 'Åldersdiskriminering Avbrott Träningsguide - Sida '
+    }
+  },
+
+  {
+    name: 'aging-rights-charter',
+    category: 'aging',
+    fileNames: {
+      en: 'aging-rights-charter-en',
+      sv: 'aging-rights-charter-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Rights of Aging Beings Charter Template - Page ',
+      sv: 'Rättigheter för Åldrande Varelser Charter Mall - Sida '
+    }
+  },
+
+  {
+    name: 'elder-economic-zone-toolkit',
+    category: 'aging',
+    fileNames: {
+      en: 'elder-economic-zone-toolkit-en',
+      sv: 'elder-economic-zone-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Elder Economic Zone Planning Toolkit - Page ',
+      sv: 'Äldre Ekonomisk Zon Planeringsverktygslåda - Sida '
+    }
+  },
+
+  {
+    name: 'aubi-economic-modeling-tool',
+    category: 'aging',
+    fileNames: {
+      en: 'aubi-economic-modeling-tool-en',
+      sv: 'aubi-economic-modeling-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'advocacy')
+    },
+    pageFooter: {
+      en: 'AUBI Economic Modeling Tool - Page ',
+      sv: 'AUBI Ekonomisk Modelleringsverktyg - Sida '
+    }
+  },
+
+  // Elder Agency and Innovation Tools
+  {
+    name: 'mutual-care-network-setup-guide',
+    category: 'aging',
+    fileNames: {
+      en: 'mutual-care-network-setup-guide-en',
+      sv: 'mutual-care-network-setup-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'agency-and-innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'agency-and-innovation')
+    },
+    pageFooter: {
+      en: 'Mutual Care Network Setup Guide - Page ',
+      sv: 'Ömsesidig Vård Nätverk Inställningsguide - Sida '
+    }
+  },
+
+  {
+    name: 'elder-innovation-hub-playbook',
+    category: 'aging',
+    fileNames: {
+      en: 'elder-innovation-hub-playbook-en',
+      sv: 'elder-innovation-hub-playbook-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'agency-and-innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'agency-and-innovation')
+    },
+    pageFooter: {
+      en: 'Elder Innovation Hub Playbook - Page ',
+      sv: 'Äldre Innovation Hub Spelbok - Sida '
+    }
+  },
+
+  {
+    name: 'intergenerational-program-templates',
+    category: 'aging',
+    fileNames: {
+      en: 'intergenerational-program-templates-en',
+      sv: 'intergenerational-program-templates-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'agency-and-innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'agency-and-innovation')
+    },
+    pageFooter: {
+      en: 'Intergenerational Program Templates - Page ',
+      sv: 'Intergenerationella Programmallar - Sida '
+    }
+  },
+
+  // Full Aging Framework
+  {
+    name: 'aging-framework',
+    category: 'aging',
+    fileNames: {
+      en: 'Aging-Population-Support-Framework',
+      sv: 'Aging-Population-Support-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Aging Population Support Framework - Page ',
+      sv: 'Åldrande befolkningsstödsramverk - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      'preamble',
+      '01-economic-security',
+      '02-meaningful-occupation',
+      '03-healthcare-climate',
+      '04-social-inclusion',
+      '05-nested-governance',
+      '06-legal-ethical',
+      '07-implementation-roadmap',
+      '08-monitoring-adaptive',
+      '09-call-to-action',
+      '10-appendices'
+    ]
+  },
 
 ];
 

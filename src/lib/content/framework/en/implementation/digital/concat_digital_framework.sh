@@ -10,7 +10,7 @@ files=(
   "03-governance-structure.md"
   "04-key-components.md"
   "05-implementation-roadmap.md"
-  "06-monitoring-evaluations.md"
+  "06-monitoring-evaluation.md"
   "07-case-studies.md"
   "08-future-potential.md"
   "09-tools-resources.md"
@@ -25,8 +25,7 @@ files=(
   "appendix-h-faq-for-tech-skeptical-leaders.md"
   "appendix-i-diplomatic-mini-deck.md"
   "appendix-j-historical-commons-context.md"
-  "appendix-k-impact-assessment-framework.md",
-  "epilogue.md"
+  "appendix-k-impact-assessment-framework.md"
 )
 
 # Remove the output file if it exists

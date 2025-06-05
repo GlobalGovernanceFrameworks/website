@@ -9,4 +9,4 @@ This tier focuses on ensuring inclusion, preserving diverse heritages, and repre
 - [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (Planned)
 - [Global Ethics & Human Rights](/framework/docs/implementation/ethics) (In Review)
 - [Gender Equality & LGBTQ+ Rights](/framework/docs/implementation/gender) (Planned)
-- [Aging Population Support](/framework/docs/implementation/aging) (Planned)
+- [Aging Population Support](/framework/docs/implementation/aging) (In Review)

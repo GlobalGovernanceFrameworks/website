@@ -62,6 +62,9 @@
       ethicsTitle: "Global Ethics & Rights of Beings Framework Tools",
       ethicsDesc: "Resources for implementing the Rights of Beings Framework, including assessment methodologies, guardianship council guides, and practical tools for recognizing and protecting the rights of all beings across human, animal, ecosystem, and digital domains.",
       ethicsButton: "Access Ethics & Rights Tools",
+      agingTitle: "Aging Population Support Framework Tools",
+      agingDesc: "Resources for implementing elder-led transformation through AUBI pilots, innovation hubs, political organizing, and regenerative aging economics that position elders as wisdom keepers and community leaders.",
+      agingButton: "Access Aging Support Tools",
       consciousnessTitle: "Consciousness & Inner Development Framework Tools",
       consciousnessDesc: "Resources for implementing conscious governance through personal transformation, collective wisdom, and systemic integration, including wisdom council setup, mindfulness training, cultural sensitivity protocols, and tools for building governance that honors interconnectedness and planetary well-being.",
       consciousnessButton: "Access Consciousness Tools",
@@ -122,6 +125,9 @@
       ethicsTitle: "Verktyg för globalt etiskt ramverk och väsens rättigheter",
       ethicsDesc: "Resurser för att implementera ramverket för väsens rättigheter, inklusive bedömningsmetoder, vägledning för förmyndarskapsråd och praktiska verktyg för att erkänna och skydda rättigheterna för alla väsen inom mänskliga, djur-, ekosystem- och digitala domäner.",
       ethicsButton: "Öppna etik- och rättighetsverktyg",
+      agingTitle: "Verktyg för Åldrande Befolkningsstöd Ramverk",
+      agingDesc: "Resurser för att implementera äldreledda transformationer genom AUBI-piloter, innovationshubbar, politisk organisering och regenerativ åldrandeekonomi som positionerar äldre som visdomsbevarare och samhällsledare.",
+      agingButton: "Öppna åldrandestödverktyg",
       consciousnessTitle: "Verktyg för Medvetenhet & Inre Utveckling Ramverk",
       consciousnessDesc: "Resurser för att implementera medveten styrning genom personlig transformation, kollektiv visdom och systemisk integration, inklusive uppsättning av visdomsråd, mindfulnessträning, kulturella känslighetsprotokoll och verktyg för att bygga styrning som hedrar sammankoppling och planetärt välbefinnande.",
       consciousnessButton: "Öppna medvetenhetsverktyg",
@@ -428,6 +434,25 @@
             </p>
             <a href="{base}/framework/tools/ethics" style="display: inline-flex; align-items: center; background-color: #166534; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.ethicsButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aging Population Support Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #7c2d12; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #7c2d12;">🌳</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #7c2d12;">{texts.agingTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.agingDesc}
+            </p>
+            <a href="{base}/framework/tools/aging" style="display: inline-flex; align-items: center; background-color: #7c2d12; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.agingButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

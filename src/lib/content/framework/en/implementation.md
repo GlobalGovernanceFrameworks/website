@@ -144,7 +144,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (Planned)
 - [Global Ethics & Human Rights](/framework/docs/implementation/ethics) (In Review)
 - [Gender Equality & LGBTQ+ Rights](/framework/docs/implementation/gender) (Planned)
-- [Aging Population Support](/framework/docs/implementation/aging) (Planned)
+- [Aging Population Support](/framework/docs/implementation/aging) (In Review)
 
 ### Tier 4: Visionary & Meta Governance
 - [Space Governance](/framework/docs/implementation/space) (Planned)

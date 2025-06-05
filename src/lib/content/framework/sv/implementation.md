@@ -144,7 +144,7 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 - [Ungdoms- och generationsstyrning](/framework/docs/implementation/youth) (Planerad)
 - [Global etik och mänskliga rättigheter](/framework/docs/implementation/ethics) (Under granskning)
 - [Jämställdhet och HBTQ+-rättigheter](/framework/docs/implementation/gender) (Planerad)
-- [Åldrande befolkningsstöd](/framework/docs/implementation/aging) (Planerad)
+- [Åldrande befolkningsstöd](/framework/docs/implementation/aging) (Under granskning)
 
 ### **Nivå 4: Visionär och metastyrdning**
 - [Rymdförvaltning](/framework/docs/implementation/space) (Planerad)
