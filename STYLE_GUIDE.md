@@ -144,6 +144,71 @@ URLs are a critical part of framework accessibility, navigation, and search opti
 
 Following these guidelines ensures that URLs contribute to overall framework usability, discoverability, and long-term maintenance while establishing a consistent pattern across all digital resources.
 
+### 6. Contact Information and Resource References
+
+**Development Status Transparency:**
+All framework tools and documentation must accurately represent the current development status of resources and contact information. Use clear status indicators and avoid creating false expectations about non-existent services.
+
+**Current Infrastructure Reference:**
+- **Primary Contact**: globalgovernanceframework@gmail.com
+- **Primary Website**: globalgovernanceframework.org
+- **Development Status**: Include clear disclaimers about what is currently available vs. in development
+
+**Status Indicator System:**
+Use consistent status indicators throughout all documentation:
+- **✅ Currently Available**: Services, tools, or resources that exist and can be accessed
+- **🚧 In Development**: Planned services, tools, or resources not yet available
+- **Contact for Information**: Services available on request or case-by-case basis
+
+**Contact Information Format:**
+
+```markdown
+**Current Status Note:** The Global Guardian Framework is in active development. 
+Currently available:
+- ✅ Framework documentation and [specific tools available]
+- ✅ General support via globalgovernanceframework@gmail.com
+- 🚧 [Specific services] (in development)
+- 🚧 [Regional networks/specialized programs] (in development)
+
+**Contact Information:**
+- **Primary Contact:** globalgovernanceframework@gmail.com
+- **Website:** globalgovernanceframework.org
+- **Subject Lines for Specific Support:**
+  - "Subject A" - for [specific type of support]
+  - "Subject B" - for [specific type of support]
+```
+
+**Resource Reference Guidelines:**
+
+**For Non-Existent Resources:**
+- Use placeholder format: `[Service name - in development]`
+- Provide contact instructions: `[Contact globalgovernanceframework@gmail.com with subject "Service Request"]`
+- Avoid specific URLs for unregistered domains
+
+**For Future Resources:**
+- Maintain organizational structure for easy updating
+- Use descriptive placeholders that indicate future functionality
+- Include contact information for current alternatives
+
+**Regional and Specialized Support:**
+- Route all specialized requests through main contact with clear subject lines
+- Indicate when regional coordinators or specialized services are in development
+- Provide timeline expectations where appropriate
+
+**Funding and Program References:**
+- Mark formal funding programs as "in development" unless actually available
+- Provide contact information for current funding opportunity inquiries
+- Include realistic timelines for program development where known
+
+**Document Update Protocol:**
+- Update contact information sections first when new infrastructure becomes available
+- Maintain consistency across all tools and documents
+- Test all contact methods and links before publication
+- Include version dates and next review schedules for contact information sections
+
+**Example Implementations:**
+See Community Welfare Readiness Assessment, Welfare Transition Planning Template, and Cultural Adaptation Protocol Guide for consistent implementation examples.
+
 ## Content Formatting
 
 ### 1. Headings

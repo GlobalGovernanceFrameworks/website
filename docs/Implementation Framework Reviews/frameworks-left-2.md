@@ -1,8 +1,8 @@
 - [Aging] (under way, svelte pages left)
 
 In order of priority (by ChatGPT)
-- [Mental Health Governance](/framework/docs/implementation/mental-health) (outline under way)
-- [Water & Sanitation](/framework/docs/implementation/water) (outline under way)
+- [Mental Health Governance](/framework/docs/implementation/mental-health) (outline done)
+- [Water & Sanitation](/framework/docs/implementation/water) (outline done)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
 
 - [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (Planned)

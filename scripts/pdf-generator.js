@@ -35,6 +35,7 @@ Available categories:
 - planetary-health
 - consciousness
 - aging
+- animal-welfare
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -47,7 +48,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const languages = ['en', 'sv'];
+const languages = ['en', 'sv', 'es', 'fr'];
 const outputDirs = {
   'education': path.join(__dirname, '..', 'static', 'framework', 'tools', 'education'),
   'food-systems': path.join(__dirname, '..', 'static', 'framework', 'tools', 'food-systems'),
@@ -65,7 +66,8 @@ const outputDirs = {
   'planetary-health': path.join(__dirname, '..', 'static', 'framework', 'tools', 'planetary-health'),
   'consciousness': path.join(__dirname, '..', 'static', 'framework', 'tools', 'consciousness'),
   'youth': path.join(__dirname, '..', 'static', 'framework','tools', 'youth'),
-  'aging': path.join(__dirname, '..', 'static', 'framework','tools', 'aging')
+  'aging': path.join(__dirname, '..', 'static', 'framework','tools', 'aging'),
+  'animal-welfare': path.join(__dirname, '..', 'static', 'framework','tools', 'animal-welfare')
 };
 
 // Validate category if provided
@@ -6086,6 +6088,460 @@ const tools = [
     ]
   },
 
+  // Animal Welfare Framework
+  // Core Framework Documents
+  {
+    name: 'global-guardian-framework-essentials',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'global-guardian-framework-essentials-en',
+      sv: 'global-guardian-framework-essentials-sv',
+      es: 'global-guardian-framework-essentials-es',
+      fr: 'global-guardian-framework-essentials-fr'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare'),
+      es: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'es', 'implementation', 'animal-welfare'),
+      fr: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'fr', 'implementation', 'animal-welfare')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Global Guardian Framework Essentials - Page ',
+      sv: 'Djurskyddsramverk - Globalt skyddsramverk, grundprinciper - Sida ',
+      es: 'Marco de Bienestar Animal - Marco de Protección Global, Principios Básicos - Página ',
+      fr: 'Cadre de protection des animaux - Cadre mondial de protection, Principes fondamentaux - Page ',
+    }
+  },
+  {
+    name: 'executive-summary',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'executive-summary-en',
+      sv: 'executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Executive Summary - Page ',
+      sv: 'Djurskyddsramverk - Sammanfattning - Sida '
+    }
+  },
+
+  // Core Implementation Tools
+  {
+    name: 'community-welfare-readiness-assessment',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'community-welfare-readiness-assessment-en',
+      sv: 'community-welfare-readiness-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Community Welfare Readiness Assessment - Page ',
+      sv: 'Djurskyddsramverk - Samhällsberedskap för djurvälfärd - Sida '
+    }
+  },
+
+  {
+    name: 'cultural-adaptation-protocol-guide',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'cultural-adaptation-protocol-guide-en',
+      sv: 'cultural-adaptation-protocol-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Cultural Adaptation Protocol Guide - Page ',
+      sv: 'Djurskyddsramverk - Kulturell anpassningsprotokoll - Sida '
+    }
+  },
+
+  {
+    name: 'indigenous-rights-integration-kit',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'indigenous-rights-integration-kit-en',
+      sv: 'indigenous-rights-integration-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Indigenous Rights Integration Kit - Page ',
+      sv: 'Djurskyddsramverk - Ursprungsbefolkningens rättighetsintegration - Sida '
+    }
+  },
+
+  {
+    name: 'sentience-assessment-framework',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'sentience-assessment-framework-en',
+      sv: 'sentience-assessment-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Sentience Assessment Framework - Page ',
+      sv: 'Djurskyddsramverk - Ramverk för bedömning av medvetenhet - Sida '
+    }
+  },
+
+  {
+    name: 'welfare-compliance-audit-tool',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'welfare-compliance-audit-tool-en',
+      sv: 'welfare-compliance-audit-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Welfare Compliance Audit Tool - Page ',
+      sv: 'Djurskyddsramverk - Verktyg för välfärdsrevisioner - Sida '
+    }
+  },
+
+  {
+    name: 'welfare-transition-planning-template',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'welfare-transition-planning-template-en',
+      sv: 'welfare-transition-planning-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Welfare Transition Planning Template - Page ',
+      sv: 'Djurskyddsramverk - Mall för övergångsplanering - Sida '
+    }
+  },
+
+  // Advocacy and Policy Tools
+  {
+    name: 'anti-speciesism-training-materials',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'anti-speciesism-training-materials-en',
+      sv: 'anti-speciesism-training-materials-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Anti-Speciesism Training Materials - Page ',
+      sv: 'Djurskyddsramverk - Utbildningsmaterial mot artdiskriminering - Sida '
+    }
+  },
+
+  {
+    name: 'economic-impact-assessment',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'economic-impact-assessment-en',
+      sv: 'economic-impact-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Economic Impact Assessment - Page ',
+      sv: 'Djurskyddsramverk - Ekonomisk konsekvensanalys - Sida '
+    }
+  },
+
+  {
+    name: 'guardian-rights-charter-template',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'guardian-rights-charter-template-en',
+      sv: 'guardian-rights-charter-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Guardian Rights Charter Template - Page ',
+      sv: 'Djurskyddsramverk - Mall för skyddsrättighetsstadga - Sida '
+    }
+  },
+
+  {
+    name: 'stakeholder-engagement-framework',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'stakeholder-engagement-framework-en',
+      sv: 'stakeholder-engagement-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Stakeholder Engagement Framework - Page ',
+      sv: 'Djurskyddsramverk - Ramverk för intressentengagemang - Sida '
+    }
+  },
+
+  {
+    name: 'welfare-policy-development-guide',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'welfare-policy-development-guide-en',
+      sv: 'welfare-policy-development-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Welfare Policy Development Guide - Page ',
+      sv: 'Djurskyddsramverk - Guide för utveckling av välfärdspolitik - Sida '
+    }
+  },
+
+  // Evaluation and Monitoring Tools
+  {
+    name: 'community-progress-tracking-templates',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'community-progress-tracking-templates-en',
+      sv: 'community-progress-tracking-templates-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'evaluation')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Community Progress Tracking Templates - Page ',
+      sv: 'Djurskyddsramverk - Mallar för samhällsframstegsspårning - Sida '
+    }
+  },
+
+  {
+    name: 'transparency-dashboard-setup-guide',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'transparency-dashboard-setup-guide-en',
+      sv: 'transparency-dashboard-setup-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'evaluation')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Transparency Dashboard Setup Guide - Page ',
+      sv: 'Djurskyddsramverk - Guide för transparensplattform - Sida '
+    }
+  },
+
+  {
+    name: 'welfare-impact-measurement-framework',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'welfare-impact-measurement-framework-en',
+      sv: 'welfare-impact-measurement-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'evaluation')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Welfare Impact Measurement Framework - Page ',
+      sv: 'Djurskyddsramverk - Ramverk för välfärdsmätning - Sida '
+    }
+  },
+
+  // Innovation and Technology Tools
+  {
+    name: 'alternative-protein-development-guide',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'alternative-protein-development-guide-en',
+      sv: 'alternative-protein-development-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'innovation')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Alternative Protein Development Guide - Page ',
+      sv: 'Djurskyddsramverk - Guide för alternativ proteinutveckling - Sida '
+    }
+  },
+
+  {
+    name: 'blockchain-certification-setup-guide',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'blockchain-certification-setup-guide-en',
+      sv: 'blockchain-certification-setup-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'innovation')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Blockchain Certification Setup Guide - Page ',
+      sv: 'Djurskyddsramverk - Guide för blockchain-certifiering - Sida '
+    }
+  },
+
+  {
+    name: 'citizen-science-monitoring-app',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'citizen-science-monitoring-app-en',
+      sv: 'citizen-science-monitoring-app-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'innovation')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Citizen Science Monitoring App - Page ',
+      sv: 'Djurskyddsramverk - Medborgarvetenskapsapp för övervakning - Sida '
+    }
+  },
+
+  {
+    name: 'welfare-technology-assessment-kit',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'welfare-technology-assessment-kit-en',
+      sv: 'welfare-technology-assessment-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'innovation')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Welfare Technology Assessment Kit - Page ',
+      sv: 'Djurskyddsramverk - Bedömningskit för välfärdsteknologi - Sida '
+    }
+  },
+
+  // Transition and Economic Tools
+  {
+    name: 'animal-welfare-carbon-credits-guide',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'animal-welfare-carbon-credits-guide-en',
+      sv: 'animal-welfare-carbon-credits-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'transition'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'transition')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Animal Welfare Carbon Credits Guide - Page ',
+      sv: 'Djurskyddsramverk - Guide för kolkrediter och djurvälfärd - Sida '
+    }
+  },
+
+  {
+    name: 'cooperative-development-toolkit',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'cooperative-development-toolkit-en',
+      sv: 'cooperative-development-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'transition'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'transition')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Cooperative Development Toolkit - Page ',
+      sv: 'Djurskyddsramverk - Verktygslåda för kooperativ utveckling - Sida '
+    }
+  },
+
+  {
+    name: 'innovation-challenge-fund-kit',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'innovation-challenge-fund-kit-en',
+      sv: 'innovation-challenge-fund-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'transition'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'transition')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Innovation Challenge Fund Kit - Page ',
+      sv: 'Djurskyddsramverk - Kit för innovationsutmaningsfond - Sida '
+    }
+  },
+
+  {
+    name: 'just-transition-planning-workbook',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'just-transition-planning-workbook-en',
+      sv: 'just-transition-planning-workbook-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'transition'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'transition')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Just Transition Planning Workbook - Page ',
+      sv: 'Djurskyddsramverk - Arbetsbok för rättvis övergång - Sida '
+    }
+  },
+
+  // Full Animal Welfare Framework
+  {
+    name: 'animal-welfare-framework',
+    category: 'animal-welfare',
+    fileNames: {
+      en: 'Animal-Welfare-Framework',
+      sv: 'Animal-Welfare-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Animal Welfare Framework - Page ',
+      sv: 'Djurskyddsramverk - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '01-introduction',
+      '02-core-principles',
+      '03-structural-components',
+      '04-implementation-approaches',
+      '05-metrics-evaluation',
+      '06-cultural-justice',
+      '07-environmental-integration',
+      '08-appendices'
+    ]
+  }
+
 ];
 
 // CSS styling for the PDF
@@ -6430,6 +6886,12 @@ async function generatePDFs() {
   try {
     for (const tool of toolsToProcess) {
       for (const lang of languages) {
+        // Check if this language is available for this tool
+        if (!tool.fileNames[lang] || !tool.sourceDir[lang]) {
+          console.warn(`⚠️ WARNING: Language '${lang}' not available for tool '${tool.name}' - skipping`);
+          continue;
+        }
+
         const fileName = tool.fileNames[lang];
         
         // Determine the output directory - use tool-specific outputDir if provided, otherwise use the category default
@@ -6485,6 +6947,10 @@ async function generatePDFs() {
             // Look through all tools to find the matching ones
             const subTool = tools.find(t => t.name === fileId && t.category === tool.category);
             if (subTool) {
+              if (!subTool.sourceDir[lang]) {
+                console.warn(`  ⚠️ Language '${lang}' not available for component: ${fileId}`);
+                continue;
+              }
               const subFile = path.join(subTool.sourceDir[lang], `${fileId}.md`);
               if (fs.existsSync(subFile)) {
                 let fileContent = fs.readFileSync(subFile, 'utf8');
@@ -6521,8 +6987,9 @@ async function generatePDFs() {
           // Robust frontmatter removal that handles various formats
           markdown = markdown.replace(/^(---|\+\+\+)\s*\n([\s\S]*?)\n\s*(---|\+\+\+)\s*/m, '');
 
-          // Process image references
-          markdown = processImageReferences(markdown, path.dirname(tool.sourceDir[lang]));
+          // Process image references with fallback
+          const sourceDir = tool.sourceDir[lang] || tool.sourceDir['en'] || '';
+          markdown = processImageReferences(markdown, path.dirname(sourceDir));
                     
           // Convert markdown with emoji replacement
           const renderer = new marked.Renderer();

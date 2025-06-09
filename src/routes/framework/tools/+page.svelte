@@ -47,6 +47,9 @@
       biodiversityTitle: "Biodiversity Framework Tools",
       biodiversityDesc: "Resources for planetary healing and regenerative biodiversity governance, including Indigenous Digital Sovereignty Hubs, Bio-Arts Residencies, ecosystem rights recognition, hybrid UBES systems, and tools for creating a regenerative biosphere by 2045.",
       biodiversityButton: "Access Biodiversity Tools",
+      animalWelfareTitle: "Global Guardian Framework Tools",
+      animalWelfareDesc: "Resources for implementing animal welfare transformation through community-led guardianship, sentience protection, and regenerative systems that position animals as beings deserving compassion rather than commodities, including welfare assessments, anti-speciesism training, alternative protein development, and just transition support.",
+      animalWelfareButton: "Access Animal Welfare Tools",
       foodTitle: "Food Systems & Agriculture Framework Tools",
       foodDesc: "Resources for implementing sustainable food systems, including regenerative agriculture guides, stakeholder engagement templates, and policy harmonization tools.",
       foodButton: "Access Food Systems Tools",
@@ -110,6 +113,9 @@
       biodiversityTitle: "Biodiversitetsramverk Verktyg",
       biodiversityDesc: "Resurser för planetär läkning och regenerativ biodiversitetsstyrning, inklusive Ursprungsdigital Suveränitetshubbar, Bio-Konstresidenser, erkännande av ekosystemrättigheter, hybrid UBES-system och verktyg för att skapa en regenerativ biosfär till 2045.",
       biodiversityButton: "Öppna biodiversitetsverktyg",
+      animalWelfareTitle: "Global Guardian Ramverk Verktyg",
+      animalWelfareDesc: "Resurser för att implementera djurvälfärdstransformation genom samhällslett förmyndarskap, kännande skydd och regenerativa system som positionerar djur som varelser som förtjänar medkänsla snarare än varor, inklusive välfärdsbedömningar, anti-speciesism träning, alternativ proteinutveckling och rättvis övergångsstöd.",
+      animalWelfareButton: "Öppna djurvälfärdsverktyg",
       foodTitle: "Verktyg för matsystem och jordbruksramverk",
       foodDesc: "Resurser för att implementera hållbara matsystem, inklusive guider för regenerativt jordbruk, mallar för intressentengagemang och verktyg för policyharmonisering.",
       foodButton: "Öppna matsystemverktyg",
@@ -396,6 +402,24 @@
             </p>
             <a href="{base}/framework/tools/biodiversity" style="display: inline-flex; align-items: center; background-color: #2d5016; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.biodiversityButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #1e40af; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #1e40af;">🐾</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #1e40af;">{texts.animalWelfareTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.animalWelfareDesc}
+            </p>
+            <a href="{base}/framework/tools/animal-welfare" style="display: inline-flex; align-items: center; background-color: #1e40af; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.animalWelfareButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
