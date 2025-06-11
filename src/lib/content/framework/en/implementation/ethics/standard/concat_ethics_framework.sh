@@ -90,5 +90,5 @@ for file in "${files[@]}"; do
   fi
 done
 
-echo "✅ Peace framework concatenated into: $output_file"
+echo "✅ Ethics framework concatenated into: $output_file"
 

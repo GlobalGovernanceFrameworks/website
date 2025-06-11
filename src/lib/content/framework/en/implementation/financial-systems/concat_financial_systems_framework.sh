@@ -29,5 +29,5 @@ for file in "${files[@]}"; do
   fi
 done
 
-echo "✅ Peace framework concatenated into: $output_file"
+echo "✅ Financial framework concatenated into: $output_file"
 

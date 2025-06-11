@@ -118,10 +118,13 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Peace & Conflict Resolution](/framework/docs/implementation/peace) (In Review)
 - [Healthcare Governance](/framework/docs/implementation/healthcare) (In Review)
 - [Food Systems & Agriculture](/framework/docs/implementation/food) (In Review)
+  - TODO: *Enhance scope: Explicit soil governance and regenerative agriculture*
 - [Economic Integration](/framework/docs/implementation/economic) (In Review)
 - [Justice Systems](/framework/docs/implementation/justice) (In Review)
-- [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
+- [Migration & Human Mobility](/framework/docs/implementation/migration) (Coming Soon)
 - [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (In Review)
+- [Indigenous Governance & Traditional Knowledge] *(New - Planned)*
+  - *Covers indigenous rights, traditional ecological knowledge, cultural sovereignty*
 
 ### Tier 2: Systems for Long-Term Thriving
 - [Technology Governance](/framework/docs/implementation/technology) (In Review)
@@ -131,14 +134,17 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
 - [Water & Sanitation](/framework/docs/implementation/water) (Planned)
 - [Environmental Stewardship](/framework/docs/implementation/environment) (In Review)
-- [Animal Welfare](/framework/docs/implementation/animal-welfare)(Planned)
-- [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Coming Soon)
+- [Animal Welfare](/framework/docs/implementation/animal-welfare)(In Review)
+- [Biodiversity Governance](/framework/docs/implementation/biodiversity) (In Review)
 - [Oceans & Marine Governance](/framework/docs/implementation/oceans) (Planned)
 - [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)
+- [Disability Rights & Inclusion Governance] *(New - Planned)*
+  - *Covers accessibility, inclusive design, disability justice, supported decision-making*
 
 ### Tier 3: Equity, Culture & Future Generations
 - [Digital Commons](/framework/docs/implementation/digital) (In Review)
-- [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
+- [Cultural Heritage & Linguistic Diversity Preservation](/framework/docs/implementation/culture) (Planned)
+  - *Expanded to explicitly include endangered languages and intangible cultural heritage*
 - [Rural Development](/framework/docs/implementation/rural) (Planned)
 - [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual) (In Review)
 - [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (Planned)
@@ -148,7 +154,9 @@ The Global Governance Framework can be applied across various domains. Each doma
 
 ### Tier 4: Visionary & Meta Governance
 - [Space Governance](/framework/docs/implementation/space) (Planned)
-- [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (Planned)
+- [Existential Risk Governance] *(New - Planned)*
+  - *Covers AI safety, bioengineering ethics, catastrophic risk prevention, long-term species survival*
+- [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (In Review)
 - [Integrated Meta-Governance](/framework/docs/implementation/meta) (In Review)
 - [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (In Review)
 

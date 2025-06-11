@@ -28,8 +28,9 @@ export async function load({ depends, url }) {
     '07-environmental-integration',
     '08-appendices',
     
-    // Essential guide
-    'global-guardian-framework-essentials'
+    // Essential guide and executive summary
+    'global-guardian-framework-essentials',
+    'executive-summary'
   ];
   
   // For backward compatibility 
@@ -83,6 +84,7 @@ export async function load({ depends, url }) {
     totalSections: sections.length,
     coreFrameworkSections: 8, // 01-08
     hasEssentialGuide: true,
+    hasExecutiveSummary: true,
     hasSupplementaryMaterials: true
   };
 }

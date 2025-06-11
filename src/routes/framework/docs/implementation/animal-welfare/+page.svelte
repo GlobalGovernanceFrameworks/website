@@ -134,8 +134,9 @@
         '07-environmental-integration': "Environmental Integration",
         '08-appendices': "Appendices & Resources",
         
-        // Essential guide
-        'global-guardian-framework-essentials': "Framework Essentials Guide"
+        // Essential guide and executive summary
+        'global-guardian-framework-essentials': "Framework Essentials Guide",
+        'executive-summary': "Executive Summary"
       },
       sv: {
         // Entry and overview sections (Swedish)
@@ -151,8 +152,9 @@
         '07-environmental-integration': "Miljöintegration",
         '08-appendices': "Bilagor & Resurser",
         
-        // Essential guide (Swedish)
-        'global-guardian-framework-essentials': "Ramverk Grundläggande Guide"
+        // Essential guide and executive summary (Swedish)
+        'global-guardian-framework-essentials': "Ramverk Grundläggande Guide",
+        'executive-summary': "Verkställande Sammanfattning"
       }
     };
     
@@ -198,7 +200,7 @@
 
   // Check if the active section is the essentials version
   $: isEssentialsActive = activeSection === 'global-guardian-framework-essentials';
-  $: isSupplementaryActive = ['08-appendices', 'global-guardian-framework-essentials'].includes(activeSection);
+  $: isSupplementaryActive = ['08-appendices', 'global-guardian-framework-essentials', 'executive-summary'].includes(activeSection);
 
   // For handling dropdown states
   let isDropdownOpen = false;
@@ -290,7 +292,7 @@
                 </button>
               </li>
             {/each}
-            
+                        
             <!-- Resources dropdown -->
             <li class="dropdown-li" class:active={isSupplementaryActive}>
               <button class="dropdown-toggle">
@@ -304,6 +306,10 @@
                 <button class="dropdown-item" on:click={() => setActiveSection('global-guardian-framework-essentials')}>
                   <span class="supplement-icon">📋</span>
                   <span class="supplement-title">Framework Essentials</span>
+                </button>
+                <button class="dropdown-item" on:click={() => setActiveSection('executive-summary')}>
+                  <span class="supplement-icon">📊</span>
+                  <span class="supplement-title">Executive Summary</span>
                 </button>
               </div>
             </li>
@@ -338,9 +344,31 @@
               <button class="secondary-btn" on:click={() => downloadGuide('essentials')}>
                 Download PDF Version <span class="download-icon">↓</span>
               </button>
-              <button class="primary-btn" on:click={() => setActiveSection('01-introduction')}>
-                Continue to Full Framework <span class="arrow-icon">→</span>
+              <div class="navigation-group">
+                <button class="secondary-btn" on:click={() => setActiveSection('executive-summary')}>
+                  View Executive Summary <span class="arrow-icon">→</span>
+                </button>
+                <button class="primary-btn" on:click={() => setActiveSection('01-introduction')}>
+                  Continue to Full Framework <span class="arrow-icon">→</span>
+                </button>
+              </div>
+            </div>
+          {/if}
+
+          <!-- Navigation buttons at bottom of executive summary -->
+          {#if section === 'executive-summary' && !isPrintMode}
+            <div class="guide-navigation">
+              <button class="secondary-btn" on:click={() => downloadGuide('executive-summary')}>
+                Download PDF Version <span class="download-icon">↓</span>
               </button>
+              <div class="navigation-group">
+                <button class="secondary-btn" on:click={() => setActiveSection('global-guardian-framework-essentials')}>
+                  View Framework Essentials <span class="arrow-icon">→</span>
+                </button>
+                <button class="primary-btn" on:click={() => setActiveSection('01-introduction')}>
+                  Continue to Full Framework <span class="arrow-icon">→</span>
+                </button>
+              </div>
             </div>
           {/if}
         </div>
@@ -1162,5 +1190,22 @@
     margin-bottom: 0.75rem;
     border-bottom: 1px solid rgba(99, 102, 241, 0.3);
     padding-bottom: 0.5rem;
+  }
+
+  .navigation-group {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 640px) {
+    .navigation-group {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .navigation-group button {
+      width: 100%;
+    }
   }
 </style>

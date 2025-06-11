@@ -36,6 +36,7 @@ Available categories:
 - consciousness
 - aging
 - animal-welfare
+- water
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -67,7 +68,8 @@ const outputDirs = {
   'consciousness': path.join(__dirname, '..', 'static', 'framework', 'tools', 'consciousness'),
   'youth': path.join(__dirname, '..', 'static', 'framework','tools', 'youth'),
   'aging': path.join(__dirname, '..', 'static', 'framework','tools', 'aging'),
-  'animal-welfare': path.join(__dirname, '..', 'static', 'framework','tools', 'animal-welfare')
+  'animal-welfare': path.join(__dirname, '..', 'static', 'framework','tools', 'animal-welfare'),
+  'water': path.join(__dirname, '..', 'static', 'framework','tools', 'water')
 };
 
 // Validate category if provided
@@ -6539,6 +6541,412 @@ const tools = [
       '06-cultural-justice',
       '07-environmental-integration',
       '08-appendices'
+    ]
+  },
+
+  // Water & Sanitation Framework
+  // Executive Materials
+  {
+    name: 'executive-summary',
+    category: 'water',
+    fileNames: {
+      en: 'executive-summary-en',
+      sv: 'executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Executive Summary - Page ',
+      sv: 'Vatten och sanitetsramverk - Sammanfattning - Sida '
+    }
+  },
+
+  {
+    name: 'quick-implementation-guide',
+    category: 'water',
+    fileNames: {
+      en: 'quick-implementation-guide-en',
+      sv: 'quick-implementation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Quick Implementation Guide - Page ',
+      sv: 'Vatten och sanitetsramverk - Snabb implementeringsguide - Sida '
+    }
+  },
+
+  {
+    name: 'youth-leadership-guide',
+    category: 'water',
+    fileNames: {
+      en: 'youth-leadership-guide-en',
+      sv: 'youth-leadership-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Youth Leadership Guide - Page ',
+      sv: 'Vatten och sanitetsramverk - Ungdomsledarskapguide - Sida '
+    }
+  },
+
+  // Core Governance Tools
+  {
+    name: 'community-water-assembly-guide',
+    category: 'water',
+    fileNames: {
+      en: 'community-water-assembly-guide-en',
+      sv: 'community-water-assembly-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'core')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Community Water Assembly Guide - Page ',
+      sv: 'Vatten och sanitetsramverk - Guide för kommunala vattenförsamlingar - Sida '
+    }
+  },
+
+  {
+    name: 'power-analysis-toolkit',
+    category: 'water',
+    fileNames: {
+      en: 'power-analysis-toolkit-en',
+      sv: 'power-analysis-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'core')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Power Analysis Toolkit - Page ',
+      sv: 'Vatten och sanitetsramverk - Maktanalysverktyg - Sida '
+    }
+  },
+
+  {
+    name: 'wash-constitutional-amendment-toolkit',
+    category: 'water',
+    fileNames: {
+      en: 'wash-constitutional-amendment-toolkit-en',
+      sv: 'wash-constitutional-amendment-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'core')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Constitutional Amendment Toolkit - Page ',
+      sv: 'Vatten och sanitetsramverk - Grundlagsändring verktyg - Sida '
+    }
+  },
+
+  {
+    name: 'water-rights-legal-template',
+    category: 'water',
+    fileNames: {
+      en: 'water-rights-legal-template-en',
+      sv: 'water-rights-legal-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'core')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Water Rights Legal Template - Page ',
+      sv: 'Vatten och sanitetsramverk - Vattenrättslig mall - Sida '
+    }
+  },
+
+  // Financial Planning Tools
+  {
+    name: 'carbon-water-credit-calculator',
+    category: 'water',
+    fileNames: {
+      en: 'carbon-water-credit-calculator-en',
+      sv: 'carbon-water-credit-calculator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'financial'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'financial')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Carbon-Water Credit Calculator - Page ',
+      sv: 'Vatten och sanitetsramverk - Kalkylator för kolvatten-krediter - Sida '
+    }
+  },
+
+  {
+    name: 'circular-finance-planning-tool',
+    category: 'water',
+    fileNames: {
+      en: 'circular-finance-planning-tool-en',
+      sv: 'circular-finance-planning-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'financial'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'financial')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Circular Finance Planning Tool - Page ',
+      sv: 'Vatten och sanitetsramverk - Cirkulär finansplaneringsverktyg - Sida '
+    }
+  },
+
+  {
+    name: 'community-equity-model-template',
+    category: 'water',
+    fileNames: {
+      en: 'community-equity-model-template-en',
+      sv: 'community-equity-model-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'financial'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'financial')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Community Equity Model Template - Page ',
+      sv: 'Vatten och sanitetsramverk - Mall för samhällelig rättvisemodell - Sida '
+    }
+  },
+
+  {
+    name: 'wash-sovereign-wealth-fund-model',
+    category: 'water',
+    fileNames: {
+      en: 'wash-sovereign-wealth-fund-model-en',
+      sv: 'wash-sovereign-wealth-fund-model-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'financial'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'financial')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - WASH Sovereign Wealth Fund Model - Page ',
+      sv: 'Vatten och sanitetsramverk - WASH statsfondmodell - Sida '
+    }
+  },
+
+  // Monitoring & Evaluation Tools
+  {
+    name: 'community-monitoring-toolkit',
+    category: 'water',
+    fileNames: {
+      en: 'community-monitoring-toolkit-en',
+      sv: 'community-monitoring-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'monitoring')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Community Monitoring Toolkit - Page ',
+      sv: 'Vatten och sanitetsramverk - Verktyg för samhällsövervakning - Sida '
+    }
+  },
+
+  {
+    name: 'hydrological-justice-assessment',
+    category: 'water',
+    fileNames: {
+      en: 'hydrological-justice-assessment-en',
+      sv: 'hydrological-justice-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'monitoring')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Hydrological Justice Assessment - Page ',
+      sv: 'Vatten och sanitetsramverk - Hydrologisk rättvisa bedömning - Sida '
+    }
+  },
+
+  {
+    name: 'performance-dashboard-template',
+    category: 'water',
+    fileNames: {
+      en: 'performance-dashboard-template-en',
+      sv: 'performance-dashboard-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'monitoring')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Performance Dashboard Template - Page ',
+      sv: 'Vatten och sanitetsramverk - Mall för prestationsinstrumentpanel - Sida '
+    }
+  },
+
+  // Technology & Innovation Tools
+  {
+    name: 'ai-bias-audit-framework',
+    category: 'water',
+    fileNames: {
+      en: 'ai-bias-audit-framework-en',
+      sv: 'ai-bias-audit-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'technology')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - AI Bias Audit Framework - Page ',
+      sv: 'Vatten och sanitetsramverk - AI bias granskningsramverk - Sida '
+    }
+  },
+
+  {
+    name: 'microgrid-planning-toolkit',
+    category: 'water',
+    fileNames: {
+      en: 'microgrid-planning-toolkit-en',
+      sv: 'microgrid-planning-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'technology')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Microgrid Planning Toolkit - Page ',
+      sv: 'Vatten och sanitetsramverk - Mikronät planeringsverktyg - Sida '
+    }
+  },
+
+  {
+    name: 'open-source-wash-tech-library',
+    category: 'water',
+    fileNames: {
+      en: 'open-source-wash-tech-library-en',
+      sv: 'open-source-wash-tech-library-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'technology')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Open Source WASH Tech Library - Page ',
+      sv: 'Vatten och sanitetsramverk - Öppen källkod WASH teknikbibliotek - Sida '
+    }
+  },
+
+  {
+    name: 'traditional-knowledge-protection',
+    category: 'water',
+    fileNames: {
+      en: 'traditional-knowledge-protection-en',
+      sv: 'traditional-knowledge-protection-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'technology')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Traditional Knowledge Protection - Page ',
+      sv: 'Vatten och sanitetsramverk - Traditionell kunskapsskydd - Sida '
+    }
+  },
+
+  // Crisis Response Tools
+  {
+    name: 'climate-adaptation-planning-tool',
+    category: 'water',
+    fileNames: {
+      en: 'climate-adaptation-planning-tool-en',
+      sv: 'climate-adaptation-planning-tool-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'crisis')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Climate Adaptation Planning Tool - Page ',
+      sv: 'Vatten och sanitetsramverk - Klimatanpassning planeringsverktyg - Sida '
+    }
+  },
+
+  {
+    name: 'conflict-sensitive-wash-guidelines',
+    category: 'water',
+    fileNames: {
+      en: 'conflict-sensitive-wash-guidelines-en',
+      sv: 'conflict-sensitive-wash-guidelines-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'crisis')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Conflict-Sensitive WASH Guidelines - Page ',
+      sv: 'Vatten och sanitetsramverk - Konfliktkänsliga WASH riktlinjer - Sida '
+    }
+  },
+
+  {
+    name: 'emergency-wash-response-protocols',
+    category: 'water',
+    fileNames: {
+      en: 'emergency-wash-response-protocols-en',
+      sv: 'emergency-wash-response-protocols-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'crisis')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Emergency WASH Response Protocols - Page ',
+      sv: 'Vatten och sanitetsramverk - Nödläge WASH responsprotokoll - Sida '
+    }
+  },
+
+  // Full Water and Sanitation Framework
+  {
+    name: 'water-framework',
+    category: 'water',
+    fileNames: {
+      en: 'Water-&-Sanitation-Framework',
+      sv: 'Water-&-Sanitation-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Water & Sanitation Framework - Page ',
+      sv: 'Vatten och sanitetsramverk - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      'theory-of-change',
+      '01-guiding-principles',
+      '02-institutional-policy-framework',
+      '03-financing-investment',
+      '04-service-delivery-infrastructure',
+      '05-monitoring-accountability',
+      '06-climate-environmental-integration',
+      '07-innovation-knowledge-sharing',
+      '08-crisis-response-adaptation',
+      '09-social-behavioral-change',
+      '10-global-partnerships',
+      '11-ethical-systems-framing',
+      'implementation-roadmap',
+      'regional-implementation-blueprints',
+      'visual-accessibility-aids',
+      'glossary'
     ]
   }
 

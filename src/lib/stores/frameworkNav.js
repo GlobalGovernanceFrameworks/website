@@ -36,8 +36,12 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationTechnology', path: '/framework/docs/implementation/technology', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationFinancial', path: '/framework/docs/implementation/financial-systems', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationMentalHealth', path: '/framework/docs/implementation/mental-health', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationUrban', path: '/framework/docs/implementation/urban', planned: true },
+          { titleKey: 'framework.docs.nav.implementationWash', path: '/framework/docs/implementation/water', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationEnvironment', path: '/framework/docs/implementation/environmental-stewardship', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationAnimalWelfare', path: '/framework/docs/implementation/animal-welfare', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationBiodiversity', path: '/framework/docs/implementation/biodiversity', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationOceansMarine', path: '/framework/docs/implementation/oceans', planned: true },
           { titleKey: 'framework.docs.nav.implementationLaborEmployment', path: '/framework/docs/implementation/labor', planned: true }
         ]
@@ -47,8 +51,6 @@ const initialNav = [
         path: '/framework/docs/implementation/tier-3',
         subItems: [
           { titleKey: 'framework.docs.nav.implementationDigital', path: '/framework/docs/implementation/digital', status: 'review'},
-          { titleKey: 'framework.docs.nav.implementationBiodiversity', path: '/framework/docs/implementation/biodiversity', status: 'review' },
-          { titleKey: 'framework.docs.nav.implementationAnimalWelfare', path: '/framework/docs/implementation/animal-welfare', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationCulture', path: '/framework/docs/implementation/culture', planned: true },
           { titleKey: 'framework.docs.nav.implementationRural', path: '/framework/docs/implementation/rural', planned: true },
           { titleKey: 'framework.docs.nav.implementationSpiritual', path: '/framework/docs/implementation/spiritual', status: 'review' },

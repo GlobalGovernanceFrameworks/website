@@ -4,6 +4,8 @@ The fourth tier includes forward-looking and systemic domains of governance, add
 
 ### Tier 4: Visionary & Meta Governance
 - [Space Governance](/framework/docs/implementation/space) (Planned)
-- [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (Planned)
+- [Existential Risk Governance] *(New - Planned)*
+  - *Covers AI safety, bioengineering ethics, catastrophic risk prevention, long-term species survival*
+- [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (In Review)
 - [Integrated Meta-Governance](/framework/docs/implementation/meta) (In Review)
 - [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (In Review)

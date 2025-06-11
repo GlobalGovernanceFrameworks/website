@@ -9,7 +9,9 @@ Tier 2 domains are foundational systems that enable sustainable human flourishin
 - [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
 - [Water & Sanitation](/framework/docs/implementation/water) (Planned)
 - [Environmental Stewardship](/framework/docs/implementation/environment) (In Review)
-- [Animal Welfare](/framework/docs/implementation/animal-welfare)(Planned)
-- [Biodiversity Governance](/framework/docs/implementation/biodiversity) (Coming Soon)
+- [Animal Welfare](/framework/docs/implementation/animal-welfare)(In Review)
+- [Biodiversity Governance](/framework/docs/implementation/biodiversity) (In Review)
 - [Oceans & Marine Governance](/framework/docs/implementation/oceans) (Planned)
 - [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)
+- [Disability Rights & Inclusion Governance] *(New - Planned)*
+  - *Covers accessibility, inclusive design, disability justice, supported decision-making*

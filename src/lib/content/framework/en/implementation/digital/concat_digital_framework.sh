@@ -42,5 +42,5 @@ for file in "${files[@]}"; do
   fi
 done
 
-echo "✅ Peace framework concatenated into: $output_file"
+echo "✅ Digital framework concatenated into: $output_file"
 
