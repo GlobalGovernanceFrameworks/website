@@ -1,5 +1,3 @@
-
-
 ### Institutional Peace Integration Guide
 
 The *Institutional Peace Integration Guide* is a practical tool within the *Peace & Conflict Resolution Framework* designed to guide stakeholders—government officials, institutional leaders, NGOs, and community representatives—in embedding peacebuilding principles into institutional frameworks, policies, and operations to foster sustainable peace and prevent conflict recurrence. Aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP governance principles, and OSCE institutional reform guidelines, this guide supports institutions in promoting conflict prevention, equity, and social cohesion (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles)). The guide is adaptable to diverse contexts, including post-conflict states, transitional governments, and stable democracies (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

@@ -1,5 +1,3 @@
-
-
 ### Peace Advocacy Campaign Toolkit
 
 The *Peace Advocacy Campaign Toolkit* is a practical tool within the *Peace & Conflict Resolution Framework* designed to equip stakeholders—community organizers, NGOs, and activists—with strategies and resources to design and implement advocacy campaigns that promote peace, raise awareness of conflict issues, and mobilize communities for positive change. Aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP peacebuilding principles, and OSCE public engagement guidelines, this toolkit supports grassroots mobilization and inclusive advocacy in diverse contexts, including urban centers, rural areas, and fragile states (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles]). The toolkit is adaptable to various settings, ensuring accessibility for low-literacy and low-connectivity communities (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

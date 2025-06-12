@@ -1,5 +1,3 @@
-
-
 ### Private Sector Peace Engagement Guide
 
 The *Private Sector Peace Engagement Guide* is a practical tool within the *Peace & Conflict Resolution Framework* designed to guide private sector actors—businesses, corporations, and entrepreneurs—in contributing to peacebuilding through their resources, networks, and expertise. Aligned with SDG 16 (Peace, Justice and Strong Institutions), SDG 17 (Partnerships for the Goals), and UNDP peacebuilding principles, this guide supports private sector actors in fostering conflict prevention, reconciliation, and sustainable development while adhering to ethical and inclusive practices (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles]). The guide is adaptable to diverse contexts, including urban centers, rural areas, and fragile states (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

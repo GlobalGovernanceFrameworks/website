@@ -1,5 +1,3 @@
-
-
 ### Peace Financing Navigator
 
 The *Peace Financing Navigator* is a practical tool within the *Peace & Conflict Resolution Framework* designed to guide stakeholders—NGOs, governments, private sector actors, and community leaders—in identifying, securing, and managing funding for peacebuilding initiatives. Aligned with SDG 16 (Peace, Justice and Strong Institutions), SDG 17 (Partnerships for the Goals), UNDP peacebuilding principles, and OSCE resource mobilization guidelines, this navigator ensures transparent, equitable, and sustainable financing for peace (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles)). The navigator is adaptable to diverse contexts, including post-conflict zones, urban centers, and fragile states (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

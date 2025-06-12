@@ -26,40 +26,6 @@ By completing this assessment, stakeholders can identify strengths, pinpoint gap
 - National Implementation Units
 - Local government authorities
 
----
-
-## Instructions
-
-1. **Complete the Assessment**:
-   - Review each dimension and its associated criteria.
-   - Score your organization’s readiness on a scale of 1–5 for each criterion (see scoring guide below).
-   - Provide brief justifications for your scores to contextualize your assessment.
-
-2. **Calculate Scores**:
-   - Sum the scores for each dimension to get a subtotal.
-   - Calculate the overall readiness score (out of 100) to gauge your organization’s capacity.
-
-3. **Analyze Results**:
-   - Use the scoring interpretation guide to understand your readiness level.
-   - Review recommendations tailored to your score range.
-
-4. **Develop an Action Plan**:
-   - Prioritize actions based on identified gaps.
-   - Integrate recommendations into your climate and energy governance strategy.
-
-5. **Engage Support**:
-   - Contact your Regional Climate & Energy Governance Hub or email [support@climate-energy-framework.org](mailto:support@climate-energy-framework.org) for technical assistance.
-   - Access additional tools (e.g., Just Transition Planning Template, Climate Policy Integration Matrix) at [climate-energy-framework.org/tools](https://climate-energy-framework.org/tools).
-
-### Scoring Guide
-- **1 (Not Started)**: No structures, policies, or capacity in place.
-- **2 (Emerging)**: Initial efforts underway but incomplete or informal.
-- **3 (Developing)**: Structures and policies exist but lack full implementation or effectiveness.
-- **4 (Advanced)**: Robust systems in place, partially aligned with Framework goals.
-- **5 (Optimized)**: Fully aligned with Framework, with scalable, effective systems.
-
----
-
 ## Assessment Dimensions and Criteria
 
 ### 1. Governance Structures

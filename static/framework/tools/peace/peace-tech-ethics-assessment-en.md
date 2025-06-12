@@ -1,5 +1,3 @@
-
-
 ### Peace-Technology Ethics Assessment
 
 The *Peace-Technology Ethics Assessment* is a structured tool within the *Peace & Conflict Resolution Framework* designed to help stakeholders evaluate the ethical implications of deploying technologies in peacebuilding initiatives. Aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP peacebuilding principles, and OSCE human rights standards, this assessment ensures technologies (e.g., AI, blockchain, social media monitoring) uphold equity, privacy, inclusivity, and non-maleficence while mitigating risks like surveillance, bias, or re-traumatization (see [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics)). The tool is adaptable to diverse contexts, including high-tech democracies, post-conflict states, and fragile settings (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

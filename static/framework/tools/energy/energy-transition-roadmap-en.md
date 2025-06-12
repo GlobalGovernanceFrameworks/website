@@ -21,35 +21,6 @@ The template aligns with the Framework’s principles of sustainability, equity,
 - CSOs advocating for clean energy and just transitions
 - Communities affected by energy transitions
 
----
-
-## Instructions
-
-1. **Assess Current Energy Systems**:
-   - Use Section 1 to document your current energy mix, infrastructure, and policies.
-   - Reference the [Governance Readiness Assessment Tool](https://globalgovernanceframework.org/framework/tools/energy) to evaluate institutional capacity.
-
-2. **Set Transition Targets**:
-   - Define targets in Section 2, aligning with Framework milestones (e.g., 60% renewable energy by 2035).
-   - Engage stakeholders via the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to ensure inclusive input.
-
-3. **Plan Interventions**:
-   - Use Section 3 to outline interventions (e.g., solar/wind deployment, just transition programs).
-   - Align with the [Climate-Energy Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy) to ensure policy coherence.
-
-4. **Develop Implementation Roadmap**:
-   - Create a phased timeline in Section 4, integrating short-term (2025-2030), medium-term (2030-2040), and long-term (2040-2050) actions.
-
-5. **Monitor and Evaluate**:
-   - Track progress using the metrics in Section 5, aligned with the Integrated Climate Metrics System (ICMS).
-   - Report outcomes via the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy).
-
-6. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Energy Transition Roadmap
 
 ### 1. Current Energy System Assessment

@@ -887,6 +887,46 @@ const tools = [
       sv: 'Guide för regionala knutpunkter - Sida '
     }
   },
+  // Full Climate & Energy Framework
+  {
+    name: 'climate-energy-framework',
+    category: 'energy',
+    fileNames: {
+      en: 'Climate-Energy-Governance',
+      sv: 'Climate-Energy-Governance'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Climate & Energy Governance Framework - Page ',
+      sv: 'Ramverk för klimat- och energistyrning - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '01-introduction',
+      '02-guiding-principles',
+      '03-governance-structure',
+      '04-core-pillars',
+      '05-policy-mechanisms',
+      '06-stakeholder-engagement',
+      '07-financing-the-framework',
+      '08-implementation-roadmap',
+      '09-metrics-for-success',
+      '10-challenges-and-solutions',
+      '11-implementation-tools',
+      '12-conclusion',
+      'appendix-a',
+      'appendix-b'
+    ]
+  },
+
   {
     name: 'technical-guide-policymakers',
     category: 'peace',
@@ -934,6 +974,64 @@ const tools = [
       en: 'Youth Peace Action Guide - Page ',
       sv: 'Ungdomsfredsguide - Sida '
     }
+  },
+  // Full Peace & Conflict Resolution Framework
+  {
+    name: 'peace-framework',
+    category: 'peace',
+    fileNames: {
+      en: 'Peace-Conflict-Resolution',
+      sv: 'Peace-Conflict-Resolution'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Peace & Conflict Resolution Framework - Page ',
+      sv: 'Ramverk för fred & konfliktlösning - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'preamble',
+      'core-principles',
+      'local-implementation',
+      'indigenous-integration',
+      'regional-implementation',
+      'global-implementation',
+      'digital-infrastructure',
+      'ai-ethics',
+      'emerging-technologies',
+      'non-state-actors',
+      'military-transformation',
+      'whistleblower-protection',
+      'structural-prevention',
+      'climate-resource',
+      'transitional-justice',
+      'mental-health',
+      'developmental-value-systems',
+      'educational-cultural-infrastructure',
+      'peace-financing',
+      'peace-business-integration',
+      'media-information',
+      'context-specific-roadmaps',
+      'implementation-timeline',
+      'implementation-challenges',
+      'visualizations',
+      'measuring-success',
+      'cross-domain-integration',
+      'conclusion',
+      'index',
+      'quick-guide',
+      'technical-guide-policymakers',
+      'community-peace-guide',
+      'youth-peace-action-guide',
+      'digital-peace-ethics-guide'
+    ]
   },
   {
     name: 'ethics-framework-standard',

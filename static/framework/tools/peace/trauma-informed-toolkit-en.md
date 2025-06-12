@@ -1,5 +1,3 @@
-
-
 ### Trauma-Informed Facilitation Toolkit
 
 The *Trauma-Informed Facilitation Toolkit* equips facilitators with practical tools to lead peacebuilding processes using Nonviolent Communication (NVC), trauma-informed mediation, and cultural sensitivity. Designed for mediators, community leaders, and educators, this toolkit supports the *Peace & Conflict Resolution Framework*’s commitment to mental health and psychosocial support (see [Mental Health & Psychosocial Support](/framework/docs/implementation/peace#mental-health)). It is adaptable to diverse contexts, including low-literacy and low-connectivity areas, ensuring inclusive peace governance.

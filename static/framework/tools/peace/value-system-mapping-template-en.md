@@ -1,5 +1,3 @@
-
-
 ### Value System Mapping Template
 
 The *Value System Mapping Template* is a structured tool within the *Peace & Conflict Resolution Framework* designed to help stakeholders analyze and bridge cultural and worldview differences in conflict-affected contexts. By mapping value systems—using frameworks like Spiral Dynamics—this tool fosters culturally resonant peacebuilding strategies that promote trust, inclusion, and reconciliation. Aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP peacebuilding principles, and OSCE conflict prevention protocols, the template supports community leaders, mediators, and policymakers in designing interventions that respect diverse values (see [Developmental Value Systems & Peace](/framework/docs/implementation/peace#developmental-value-systems)). The tool is adaptable to diverse contexts, including urban centers, rural areas, and fragile settings (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

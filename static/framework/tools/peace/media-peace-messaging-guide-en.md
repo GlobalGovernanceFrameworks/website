@@ -1,5 +1,3 @@
-
-
 ### Media Peace Messaging Guide
 
 The *Media Peace Messaging Guide* is a practical tool within the *Peace & Conflict Resolution Framework* designed to equip stakeholders—journalists, media professionals, community organizers, and NGOs—with strategies and resources to craft and disseminate peace-oriented media messages that promote reconciliation, reduce conflict escalation, and foster social cohesion. Aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP peacebuilding principles, and OSCE media engagement guidelines, this guide supports ethical, trauma-sensitive communication in diverse contexts, including post-conflict zones, urban centers, and fragile states (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles]). The guide is adaptable to various settings, ensuring accessibility for low-literacy and low-connectivity communities (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

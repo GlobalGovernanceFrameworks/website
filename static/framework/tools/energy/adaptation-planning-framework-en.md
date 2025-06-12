@@ -21,35 +21,6 @@ The framework integrates the Framework’s principles of equity, sustainability,
 - Communities, especially vulnerable and indigenous groups
 - Businesses impacted by climate risks (e.g., agriculture, infrastructure)
 
----
-
-## Instructions
-
-1. **Assess Climate Risks**:
-   - Use Section 1 to identify climate risks and vulnerable populations in your context.
-   - Reference the [Governance Readiness Assessment Tool](https://globalgovernanceframework.org/framework/tools/energy) to evaluate institutional capacity for adaptation.
-
-2. **Set Adaptation Priorities**:
-   - Define priorities in Section 2, aligning with Framework milestones (e.g., 75% of vulnerable communities protected by 2035).
-   - Engage stakeholders via the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to ensure inclusive input.
-
-3. **Plan Adaptation Measures**:
-   - Outline measures in Section 3 (e.g., early warning systems, nature-based solutions), integrating equity and resilience.
-   - Align with the [Climate-Energy Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy) to ensure policy coherence.
-
-4. **Develop Implementation Roadmap**:
-   - Create a phased timeline in Section 4 for short-term (2025-2030), medium-term (2030-2040), and long-term (2040-2050) actions.
-
-5. **Monitor and Evaluate**:
-   - Track progress using the metrics in Section 5, aligned with the Integrated Climate Metrics System (ICMS).
-   - Report outcomes via the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy).
-
-6. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Adaptation Planning Framework
 
 ### 1. Climate Risk and Vulnerability Assessment

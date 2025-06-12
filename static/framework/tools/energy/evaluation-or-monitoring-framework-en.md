@@ -21,32 +21,6 @@ The framework integrates the Framework’s four pillars—Climate Mitigation, Cl
 - Communities, particularly vulnerable and indigenous groups
 - Regional organizations exploring coordination roles
 
----
-
-## Instructions
-
-1. **Define Objectives and Indicators**:
-   - Use Section 1 to align evaluation objectives with Framework goals (e.g., 50% emissions reduction by 2035).
-   - Select indicators from Section 2, tailored to your context and pillars.
-
-2. **Plan Data Collection**:
-   - Follow Section 3 to identify data sources and methods, ensuring inclusivity (e.g., community surveys).
-   - Reference the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) for participatory data collection.
-
-3. **Analyze and Report**:
-   - Use Section 4 to analyze data and assess outcomes, integrating with the **Integrated Climate Metrics System (ICMS)**.
-   - Report results via the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy) for transparency.
-
-4. **Adapt Strategies**:
-   - Apply insights from Section 5 to refine initiatives, using tools like the [Climate Institutional Reform Guide](https://globalgovernanceframework.org/framework/tools/energy).
-   - Align with the [Climate-Energy Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy) for coherence.
-
-5. **Engage Regionally**:
-   - Share findings through a conceptual Regional Hub ([Regional Hub Connection Guide](https://globalgovernanceframework.org/framework/hubs)).
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for support.
-
----
-
 ## Evaluation or Monitoring Framework
 
 ### 1. Defining Evaluation Objectives

@@ -21,40 +21,6 @@ The Seed Kit integrates the Framework’s four pillars—Climate Mitigation, Cli
 - Communities, particularly vulnerable and indigenous groups
 - Regional organizations exploring coordination roles
 
----
-
-## Seed Kit Overview
-
-The **Climate Governance Seed Kit** contains a suite of tools and planned documents to support climate and energy governance. These resources are designed to be used together, offering a modular approach to address specific needs while aligning with Framework goals.
-
-### Current Seed Kit Documents
-The following tools are included, as listed in the Framework’s index:
-- **Adaptation Planning Framework**: Guides stakeholders in developing resilience strategies for vulnerable communities.
-- **Carbon Pricing Implementation Guide**: Supports the design of carbon taxes or emissions trading systems.
-- **Nature-based Solutions Assessment Tool**: Helps evaluate and implement ecosystem-based climate solutions.
-- **Climate Innovation Acceleration Kit**: Fosters the development and scaling of clean technologies.
-- **Climate Policy Brief Templates**: Provides formats for communicating policies to diverse audiences.
-- **Governance Communication Toolkit**: Offers tools for transparent and inclusive communication.
-- **Climate Institutional Reform Guide**: Assists in strengthening institutional frameworks for climate action.
-- **Climate Finance Access Navigator**: Guides access to funding for climate projects.
-- **Energy Transition Roadmap Template**: Outlines pathways for transitioning to clean energy.
-- **Multi-level Governance Coordination Guide**: Facilitates collaboration across governance levels.
-- **Stakeholder Engagement Protocol**: Ensures inclusive participation in decision-making.
-- **Governance Readiness Assessment Tool**: Evaluates institutional readiness for climate governance.
-- **Climate-Energy Policy Integration Matrix**: Aligns climate and energy policies for coherence.
-- **Integrated Climate Metrics System Guide**: Provides metrics for tracking progress.
-- **Climate Policy Dashboard Guide**: Supports reporting and visualization of outcomes.
-- **Just Transition Planning Template**: Ensures equitable transitions for affected workers and communities.
-
-### Planned Seed Kit Documents
-The following documents are under development and will enhance the Seed Kit’s utility:
-- **Background/Context Document**: Explains the conceptual framework behind the approach to climate and energy governance, outlining the four pillars and principles.
-- **Case Studies or Examples**: Provides real-world or hypothetical examples of Framework implementation in diverse contexts (e.g., urban, rural, developing nations).
-- **Evaluation or Monitoring Framework**: Complements the Governance Readiness Assessment Tool by offering a dedicated tool for tracking progress and measuring long-term impact.
-- **Regional Hub Connection Guide**: Details how local initiatives can connect to regional coordination efforts, based on the conceptual Regional Hub model.
-
----
-
 ## How to Use the Seed Kit Documents Together
 
 The Seed Kit’s documents are designed to be modular yet interconnected, allowing stakeholders to tailor their approach while ensuring alignment with Framework goals. Below is a guide to using the documents together:

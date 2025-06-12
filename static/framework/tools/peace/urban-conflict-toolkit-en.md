@@ -1,5 +1,3 @@
-
-
 ### Urban Conflict Mediation Toolkit
 
 The *Urban Conflict Mediation Toolkit* is a practical tool within the *Peace & Conflict Resolution Framework* designed to equip stakeholders with strategies and resources to mediate conflicts in urban settings, where dense populations, diverse communities, and socioeconomic disparities often amplify tensions. Aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP peacebuilding principles, and OSCE conflict resolution protocols, this toolkit supports community mediators, local governments, and civil society in addressing issues like gang violence, ethnic tensions, resource disputes, and urban inequalities (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles)). The toolkit is adaptable to diverse urban contexts, including megacities, informal settlements, and post-conflict urban zones (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

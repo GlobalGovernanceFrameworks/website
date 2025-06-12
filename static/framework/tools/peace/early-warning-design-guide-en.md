@@ -1,5 +1,3 @@
-
-
 ### Early Warning System Design Guide
 
 The *Early Warning System Design Guide* is a structured tool within the *Peace & Conflict Resolution Framework* designed to help stakeholders establish systems that proactively detect and respond to conflict risks, preventing escalation and fostering peace. Aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP peacebuilding principles, and OSCE conflict prevention protocols, this guide supports communities, governments, and NGOs in monitoring conflict indicators, engaging diverse actors, and triggering timely interventions (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles]). The guide is adaptable to diverse contexts, including high-tech democracies, post-conflict states, and fragile settings (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

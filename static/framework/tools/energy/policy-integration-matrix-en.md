@@ -21,32 +21,6 @@ The matrix enables policymakers, regional authorities, National Implementation U
 - Civil society organizations (CSOs) advocating for policy coherence
 - Businesses aligning operations with climate goals
 
----
-
-## Instructions
-
-1. **Map Existing Policies**:
-   - Use the matrix template in Section 2 to list current climate and energy policies across relevant sectors and governance levels.
-   - Assess alignment with the Framework’s four pillars and key targets (e.g., 50% emissions reduction by 2035).
-
-2. **Identify Gaps and Synergies**:
-   - Analyze the matrix to identify policy gaps, conflicts, or synergies using the prompts in Section 3.
-   - Engage stakeholders via the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to validate findings.
-
-3. **Develop Integration Strategies**:
-   - Propose new or revised policies to address gaps and leverage synergies, using the template in Section 4.
-   - Align strategies with Framework milestones (e.g., 60% renewable energy by 2035) and tools like the [Just Transition Planning Template](https://globalgovernanceframework.org/framework/tools/energy).
-
-4. **Monitor and Evaluate**:
-   - Track integration outcomes using the metrics in Section 5, aligned with the Integrated Climate Metrics System (ICMS).
-   - Report progress via the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy).
-
-5. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Climate-Energy Policy Integration Matrix
 
 ### 1. Matrix Overview

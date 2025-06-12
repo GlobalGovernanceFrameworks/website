@@ -1,5 +1,3 @@
-
-
 ### Military-Civilian Protection Transition Manual
 
 The *Military-Civilian Protection Transition Manual* is a practical tool within the *Peace & Conflict Resolution Framework* designed to guide stakeholders in transitioning security responsibilities from military to civilian-led mechanisms in post-conflict or stabilizing environments. Aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP peacebuilding principles, and OSCE security sector reform guidelines, this manual supports military forces, civilian authorities, NGOs, and community leaders in ensuring civilian protection, human rights, and sustainable peace (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles)). The manual is adaptable to diverse contexts, including post-conflict urban areas, rural regions, and fragile states (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

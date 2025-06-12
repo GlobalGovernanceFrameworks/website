@@ -21,35 +21,6 @@ The navigator integrates the Framework’s principles of equity, transparency, c
 - Businesses seeking green investment
 - Communities, particularly vulnerable and indigenous groups
 
----
-
-## Instructions
-
-1. **Assess Funding Needs**:
-   - Use Section 1 to evaluate project goals, costs, and financing gaps.
-   - Reference the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy) for project data.
-
-2. **Identify Finance Mechanisms**:
-   - Select appropriate funding sources in Section 2, aligning with Framework pillars.
-   - Use the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to involve communities and CSOs.
-
-3. **Develop Funding Proposals**:
-   - Outline proposals in Section 3, ensuring equity and alignment with Framework goals.
-   - Align with the [Climate-Energy Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy) for coherence.
-
-4. **Develop Implementation Roadmap**:
-   - Create a phased timeline in Section 4 for securing and utilizing finance (2025-2050).
-
-5. **Monitor and Evaluate**:
-   - Track finance outcomes using the metrics in Section 5, aligned with the Integrated Climate Metrics System (ICMS).
-   - Report results via the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy).
-
-6. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Climate Finance Access Navigator
 
 ### 1. Funding Needs Assessment

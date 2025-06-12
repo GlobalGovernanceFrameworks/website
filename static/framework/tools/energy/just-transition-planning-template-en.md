@@ -21,35 +21,6 @@ This template guides policymakers, regional authorities, businesses, and civil s
 - CSOs advocating for workers and marginalized communities
 - Labor unions and community organizations
 
----
-
-## Instructions
-
-1. **Complete the Template**:
-   - Fill out each section, using the provided prompts and examples to guide your responses.
-   - Engage stakeholders (e.g., workers, communities, businesses) to ensure diverse input, referencing the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy).
-   - Tailor the plan to your local or regional context while aligning with Framework targets.
-
-2. **Use Framework Tools**:
-   - Refer to the [Climate Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy) to align your plan with broader climate policies.
-   - Use the [Climate Finance Access Navigator](https://globalgovernanceframework.org/framework/tools/energy) to identify funding sources.
-   - Integrate metrics from the Integrated Climate Metrics System (ICMS) for monitoring.
-
-3. **Validate and Implement**:
-   - Share the draft plan with stakeholders for feedback.
-   - Secure approval from relevant authorities (e.g., National Implementation Unit).
-   - Implement the plan, starting with short-term actions (2025-2030).
-
-4. **Monitor and Update**:
-   - Track progress using the metrics provided in Section 5.
-   - Update the plan annually to reflect new data, stakeholder input, and Framework updates.
-
-5. **Seek Support**:
-   - Contact existing regional organizations or explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs).
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Just Transition Plan
 
 ### 1. Context and Scope

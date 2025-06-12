@@ -21,32 +21,6 @@ The templates integrate the Framework’s principles of equity, transparency, sc
 - Businesses aligning with climate policies
 - General public, including vulnerable and indigenous communities
 
----
-
-## Instructions
-
-1. **Select Template**:
-   - Choose the appropriate template (Policy Overview, Stakeholder Engagement, or Implementation Update) based on your communication goal.
-   - Reference the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy) for data and insights.
-
-2. **Complete Template**:
-   - Fill in each section with concise, evidence-based information, using Framework tools (e.g., [Climate-Energy Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy)) for alignment.
-   - Engage stakeholders via the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to ensure inclusive input.
-
-3. **Customize for Audience**:
-   - Tailor language and examples to your audience (e.g., technical for policymakers, accessible for communities).
-   - Ensure equity by addressing vulnerable groups and using inclusive formats (e.g., translations, visuals).
-
-4. **Disseminate Brief**:
-   - Share via public platforms, regional networks, or the Framework’s knowledge repository.
-   - Use the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy) to publish updates.
-
-5. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Climate Policy Brief Templates
 
 ### Template 1: Policy Overview Brief

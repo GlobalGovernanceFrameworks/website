@@ -21,35 +21,6 @@ The tool integrates the Framework’s principles of equity, sustainability, scie
 - Indigenous and local communities
 - Businesses investing in sustainable land use and green infrastructure
 
----
-
-## Instructions
-
-1. **Assess NbS Potential**:
-   - Use Section 1 to evaluate climate risks, ecosystems, and community needs suitable for NbS.
-   - Reference the [Adaptation Planning Framework](https://globalgovernanceframework.org/framework/tools/energy) for risk data and the [Governance Readiness Assessment Tool](https://globalgovernanceframework.org/framework/tools/energy) for institutional capacity.
-
-2. **Prioritize NbS Projects**:
-   - Identify and rank NbS projects in Section 2, aligning with Framework milestones (e.g., 75% vulnerable communities protected by 2035).
-   - Engage stakeholders via the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to ensure inclusivity.
-
-3. **Plan NbS Implementation**:
-   - Outline project details in Section 3, including scope, funding, and community benefits.
-   - Align with the [Climate-Energy Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy) for policy coherence.
-
-4. **Develop Implementation Roadmap**:
-   - Create a phased timeline in Section 4 for short-term (2025-2030), medium-term (2030-2040), and long-term (2040-2050) actions.
-
-5. **Monitor and Evaluate**:
-   - Track progress using the metrics in Section 5, aligned with the Integrated Climate Metrics System (ICMS).
-   - Report outcomes via the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy).
-
-6. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Nature-based Solutions Assessment Tool
 
 ### 1. NbS Potential Assessment

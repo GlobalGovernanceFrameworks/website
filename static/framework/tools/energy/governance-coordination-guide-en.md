@@ -21,32 +21,6 @@ The guide emphasizes cooperation, adaptability, and science-based decision-makin
 - Civil society organizations (CSOs) advocating for governance coherence
 - Businesses engaged in cross-border climate initiatives
 
----
-
-## Instructions
-
-1. **Assess Governance Context**:
-   - Review your current governance structures and coordination mechanisms using the [Governance Readiness Assessment Tool](https://globalgovernanceframework.org/framework/tools/energy).
-   - Identify key actors at global, regional, and national levels relevant to your context.
-
-2. **Plan Coordination**:
-   - Use the templates in Sections 2–4 to map governance actors, establish coordination mechanisms, and develop action plans.
-   - Engage stakeholders via the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to ensure inclusive input.
-
-3. **Implement Coordination**:
-   - Establish communication channels, joint initiatives, and conflict resolution processes as outlined in Section 3.
-   - Align policies using the [Climate-Energy Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy).
-
-4. **Monitor and Evaluate**:
-   - Track coordination outcomes using the metrics in Section 5, aligned with the Integrated Climate Metrics System (ICMS).
-   - Report progress via the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy).
-
-5. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Multi-level Governance Coordination Guide
 
 ### 1. Governance Levels and Roles

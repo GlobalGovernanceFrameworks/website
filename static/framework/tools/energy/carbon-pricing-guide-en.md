@@ -21,35 +21,6 @@ The guide integrates the Framework’s principles of sustainability, equity, sci
 - CSOs advocating for climate action and equity
 - Communities affected by carbon-intensive industries
 
----
-
-## Instructions
-
-1. **Assess Carbon Pricing Context**:
-   - Use Section 1 to evaluate current emissions, economic conditions, and policy frameworks.
-   - Reference the [Governance Readiness Assessment Tool](https://globalgovernanceframework.org/framework/tools/energy) to assess institutional capacity.
-
-2. **Design Carbon Pricing Mechanism**:
-   - Outline the pricing mechanism in Section 2 (e.g., carbon tax, ETS), aligning with Framework targets.
-   - Engage stakeholders via the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to ensure inclusivity.
-
-3. **Plan Just Transition Measures**:
-   - Develop measures in Section 3 to support affected workers and communities, using the [Just Transition Planning Template](https://globalgovernanceframework.org/framework/tools/energy).
-   - Align with the [Climate-Energy Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy) for policy coherence.
-
-4. **Develop Implementation Roadmap**:
-   - Create a phased timeline in Section 4 for short-term (2025-2030), medium-term (2030-2040), and long-term (2040-2050) actions.
-
-5. **Monitor and Evaluate**:
-   - Track progress using the metrics in Section 5, aligned with the Integrated Climate Metrics System (ICMS).
-   - Report outcomes via the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy).
-
-6. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Carbon Pricing Implementation Guide
 
 ### 1. Carbon Pricing Context Assessment

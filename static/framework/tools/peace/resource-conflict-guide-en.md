@@ -1,5 +1,3 @@
-
-
 ### Resource Conflict Transformation Guide
 
 The *Resource Conflict Transformation Guide* is a practical tool within the *Peace & Conflict Resolution Framework* designed to equip stakeholders with strategies to transform conflicts over natural resources (e.g., water, land, minerals) into opportunities for cooperation and sustainable development. Aligned with SDG 16 (Peace, Justice and Strong Institutions), SDG 6 (Clean Water and Sanitation), and UNDP peacebuilding principles, this guide supports community leaders, mediators, and policymakers in addressing resource scarcity, inequitable access, and cultural divides (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles)). The guide is adaptable to diverse contexts, including rural areas, urban peripheries, and resource-rich fragile states (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

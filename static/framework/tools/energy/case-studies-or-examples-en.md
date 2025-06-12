@@ -21,35 +21,6 @@ Each case study demonstrates how the Framework’s four pillars—Climate Mitiga
 - Communities, particularly vulnerable and indigenous groups
 - Regional organizations exploring coordination roles
 
----
-
-## Instructions
-
-1. **Select a Relevant Case Study**:
-   - Choose a case study that aligns with your context (e.g., urban, rural, indigenous-led).
-   - Review the scenario to understand its challenges and goals.
-
-2. **Explore Tools and Principles**:
-   - Identify the *Climate Governance Seed Kit* tools used (e.g., [Adaptation Planning Framework](https://globalgovernanceframework.org/framework/tools/energy)).
-   - Note how principles like Decentralized Authority or Radical Transparency are applied.
-
-3. **Adapt to Your Context**:
-   - Use the case study as a template to map your priorities, stakeholders, and resources.
-   - Reference the [Climate Governance Seed Kit Getting Started Guide](https://globalgovernanceframework.org/framework/tools/energy) for implementation steps.
-
-4. **Engage Stakeholders**:
-   - Follow the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to include diverse voices, ensuring equity.
-
-5. **Implement and Monitor**:
-   - Apply the tools and strategies outlined, tracking progress with the [Integrated Climate Metrics System Guide](https://globalgovernanceframework.org/framework/tools/energy).
-   - Report outcomes via the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy).
-
-6. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs).
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance.
-
----
-
 ## Hypothetical Case Studies
 
 ### Case Study 1: Coastal Urban Region – CityNet’s Climate Resilience Initiative

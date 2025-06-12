@@ -21,34 +21,6 @@ The protocol upholds the Framework’s principles of equity, cooperation, ethica
 - CSOs, including NGOs, labor unions, and youth groups
 - Indigenous communities and marginalized groups
 
----
-
-## Instructions
-
-1. **Plan Engagement**:
-   - Review the protocol’s guidelines and customize them to your local or regional context.
-   - Identify stakeholders using the mapping template in Section 2.
-   - Define engagement objectives aligned with Framework goals (e.g., co-designing just transition policies).
-
-2. **Implement Engagement**:
-   - Use the engagement methods outlined in Section 3 (e.g., forums, consultations).
-   - Ensure procedural rights and FPIC are upheld, especially for marginalized groups.
-   - Document stakeholder input using the templates provided.
-
-3. **Integrate Input**:
-   - Incorporate stakeholder feedback into policies, plans, or projects (e.g., using the [Climate Policy Integration Matrix](https://globalgovernanceframework.org/framework/tools/energy)).
-   - Communicate how input was used to build trust and transparency.
-
-4. **Monitor and Evaluate**:
-   - Track engagement outcomes using the metrics in Section 5.
-   - Report progress via the Integrated Climate Metrics System (ICMS) or [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy).
-
-5. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Stakeholder Engagement Protocol
 
 ### 1. Engagement Principles

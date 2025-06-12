@@ -1,5 +1,3 @@
-
-
 ### Multi-Track Dialogue Protocol
 
 The *Multi-Track Dialogue Protocol* is a structured tool within the *Peace & Conflict Resolution Framework* designed to facilitate inclusive, multi-stakeholder dialogues that engage governments, civil society, women, youth, and marginalized groups in conflict resolution and peacebuilding. Aligned with SDG 16 (Peace, Justice and Strong Institutions) and UNDP peacebuilding principles, this protocol ensures trauma-informed, culturally sensitive, and equitable processes to foster trust, resolve disputes, and build consensus across diverse actors (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles)). The protocol is adaptable to various contexts, including high-tech democracies, post-conflict states, and fragile settings (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

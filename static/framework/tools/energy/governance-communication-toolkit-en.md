@@ -21,36 +21,6 @@ The toolkit integrates the Framework’s principles of equity, transparency, coo
 - Businesses aligning with climate governance
 - General public, including vulnerable and indigenous communities
 
----
-
-## Instructions
-
-1. **Assess Communication Needs**:
-   - Use Section 1 to identify your audience, communication goals, and existing channels.
-   - Reference the [Stakeholder Engagement Protocol](https://globalgovernanceframework.org/framework/tools/energy) to map stakeholders.
-
-2. **Select Tools**:
-   - Choose from the tools in Sections 2–4 (Messaging Framework, Presentation Template, Social Media Guide) based on your needs.
-   - Align content with Framework tools like the [Climate Policy Brief Templates](https://globalgovernanceframework.org/framework/tools/energy).
-
-3. **Customize Content**:
-   - Tailor messaging to your audience (e.g., technical for policymakers, accessible for communities).
-   - Ensure equity by addressing vulnerable groups and using inclusive formats (e.g., translations, visuals).
-
-4. **Implement Communication**:
-   - Deploy tools via appropriate channels (e.g., public reports, social media, community workshops).
-   - Use the [Climate Policy Dashboard](https://globalgovernanceframework.org/framework/tools/energy) to share updates.
-
-5. **Monitor and Evaluate**:
-   - Track effectiveness using the metrics in Section 5, aligned with the Integrated Climate Metrics System (ICMS).
-   - Adjust strategies based on feedback and outcomes.
-
-6. **Seek Support**:
-   - Explore the Regional Hub concept at [globalgovernanceframework.org/framework/hubs](https://globalgovernanceframework.org/framework/hubs) or contact existing regional organizations.
-   - Email [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com) for technical assistance or partnership opportunities.
-
----
-
 ## Governance Communication Toolkit
 
 ### 1. Communication Needs Assessment

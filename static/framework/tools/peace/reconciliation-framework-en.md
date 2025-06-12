@@ -1,5 +1,3 @@
-
-
 ### Post-Conflict Reconciliation Framework
 
 The *Post-Conflict Reconciliation Framework* is a structured tool within the *Peace & Conflict Resolution Framework* designed to guide stakeholders in fostering reconciliation after conflict, addressing trauma, rebuilding trust, and promoting social cohesion. Aligned with SDG 16 (Peace, Justice and Strong Institutions), UNDP peacebuilding principles, and OSCE transitional justice protocols, this framework supports community leaders, governments, and NGOs in preventing conflict recurrence through inclusive, trauma-informed processes (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles)). The framework is adaptable to diverse post-conflict contexts, including rural areas, urban centers, and fragile states (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).

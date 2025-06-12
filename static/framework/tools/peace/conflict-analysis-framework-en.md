@@ -1,5 +1,3 @@
-
-
 ### Conflict Analysis Framework
 
 The *Conflict Analysis Framework* is a structured tool within the *Peace & Conflict Resolution Framework* designed to help stakeholders systematically assess conflict dynamics, identify root causes, map stakeholders, and design context-specific peacebuilding interventions. Aligned with SDG 16 (Peace, Justice and Strong Institutions) and UNDP peacebuilding principles, this tool supports policymakers, mediators, community leaders, and civil society in fostering sustainable peace by addressing structural, cultural, and psychosocial factors (see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles)).

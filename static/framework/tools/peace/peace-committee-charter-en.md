@@ -1,5 +1,3 @@
-
-
 ### Local Peace Committee Charter Template
 
 The *Local Peace Committee Charter Template* is a customizable tool within the *Peace & Conflict Resolution Framework* designed to guide communities in establishing and governing *Local Peace Committees*. These committees are inclusive, community-led bodies that mediate disputes, foster dialogue, and implement peacebuilding strategies, ensuring alignment with local governance, cultural norms, and SDG 16 (Peace, Justice and Strong Institutions). The template supports stakeholders (e.g., community leaders, mediators, civil society) in creating a formal charter to define the committee’s mission, structure, and processes, adaptable to diverse contexts such as urban centers, rural areas, and fragile states (see [Local Conflict Resolution Implementation](/framework/docs/implementation/peace#local-implementation)).
