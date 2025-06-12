@@ -649,8 +649,9 @@
   .content :global(ul li:not(.section-nav li))::before {
     content: "☮";  /* Peace symbol for the peace framework */
     position: absolute;
-    left: 0;
+    left: -0.5em;
     color: #5B6FBF; /* Updated to peace framework blue-purple */
+    top: 0.15em;
     font-size: 0.9rem;
   }
 
