@@ -4,6 +4,7 @@ This tier includes the most urgent domains of global governance—areas where fa
 
 - [Climate & Energy Governance](/framework/docs/implementation/energy) (In Review)
 - [Peace & Conflict Resolution](/framework/docs/implementation/peace) (In Review)
+- [Indigenous Governance & Traditional Knowledge](/framework/docs/implementation/indigenous) (In Review)
 - [Healthcare Governance](/framework/docs/implementation/healthcare) (In Review)
 - [Food Systems & Agriculture](/framework/docs/implementation/food) (In Review)
   - TODO: *Enhance scope: Explicit soil governance and regenerative agriculture*
@@ -11,5 +12,4 @@ This tier includes the most urgent domains of global governance—areas where fa
 - [Justice Systems](/framework/docs/implementation/justice) (In Review)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Coming Soon)
 - [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (In Review)
-- [Indigenous Governance & Traditional Knowledge] *(New - Planned)*
-  - *Covers indigenous rights, traditional ecological knowledge, cultural sovereignty*
+

@@ -21,6 +21,7 @@ const initialNav = [
         subItems: [
           { titleKey: 'framework.docs.nav.implementationClimateEnergy', path: '/framework/docs/implementation/energy', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationPeace', path: '/framework/docs/implementation/peace', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationIndigenous', path: '/framework/docs/implementation/indigenous', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationHealthcare', path: '/framework/docs/implementation/planetary-health', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationFood', path: '/framework/docs/implementation/food-systems', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationEconomic', path: '/framework/docs/implementation/economic', status: 'review' },

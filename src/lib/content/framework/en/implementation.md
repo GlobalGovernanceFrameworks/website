@@ -116,6 +116,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 ### Tier 1: Urgent Global Stability & Justice
 - [Climate & Energy Governance](/framework/docs/implementation/energy) (In Review)
 - [Peace & Conflict Resolution](/framework/docs/implementation/peace) (In Review)
+- [Indigenous Governance & Traditional Knowledge](/framework/docs/implementation/indigenous) (In Review)
 - [Healthcare Governance](/framework/docs/implementation/healthcare) (In Review)
 - [Food Systems & Agriculture](/framework/docs/implementation/food) (In Review)
   - TODO: *Enhance scope: Explicit soil governance and regenerative agriculture*
@@ -123,8 +124,6 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Justice Systems](/framework/docs/implementation/justice) (In Review)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Coming Soon)
 - [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (In Review)
-- [Indigenous Governance & Traditional Knowledge] *(New - Planned)*
-  - *Covers indigenous rights, traditional ecological knowledge, cultural sovereignty*
 
 ### Tier 2: Systems for Long-Term Thriving
 - [Technology Governance](/framework/docs/implementation/technology) (In Review)

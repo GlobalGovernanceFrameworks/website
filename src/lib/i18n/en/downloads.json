@@ -44,12 +44,16 @@
       "description": "Additional downloadable materials, interactive tools, and detailed implementation guides are available on our Tools page:",
       "linkText": "Explore Framework Tools"
     },
+    "indigenous": {
+      "title": "Indigenous & Traditional Knowledge Governance",
+      "description": "A comprehensive framework for Indigenous-led planetary transformation, featuring bioregional governance, Traditional Ecological Knowledge protection, and ceremonial stewardship pathways."
+    },
     "digital": {
-      "title": "Digital Commons Framework",
+      "title": "Digital Commons",
       "description": "Provides a comprehensive approach for managing digital resources—data, software, knowledge, and infrastructure—as shared global commons, ensuring equitable access, ethical use, and participatory governance."
     },
     "financialSystems": {
-      "title": "Financial Systems Framework",
+      "title": "Financial Systems",
       "description": "A comprehensive framework for implementing financial systems that prioritize human and ecological flourishing, including the Hearts currency system, Love Ledger, and tools for equitable resource distribution."
     },
     "economic": {
@@ -57,7 +61,7 @@
       "description": "A framework for creating fair and sustainable economic systems that balance local autonomy with global cooperation, including nested economic systems and resource justice implementation."
     },
     "water": {
-      "title": "Water & Sanitation Framework",
+      "title": "Water & Sanitation",
       "description": "A comprehensive framework for transforming water governance through community control, regenerative technologies, and rights-based approaches. Includes strategies for universal access, Indigenous sovereignty, and planetary healing through water justice."
     },
     "environment": {
@@ -65,11 +69,11 @@
       "description": "Guidelines for implementing governance structures that protect and regenerate Earth's ecosystems, operating at multiple scales from local to planetary."
     },
     "biodiversity": {
-      "title": "Biodiversity Framework",
+      "title": "Biodiversity",
       "description": "A revolutionary blueprint for planetary healing through indigenous sovereignty, economic transformation, and cultural mobilization. Includes tools for Indigenous Digital Sovereignty Hubs, Bio-Arts Residencies, ecosystem rights recognition, and creating a regenerative biosphere by 2045."
     },
     "animalWelfare": {
-      "title": "Global Guardian Framework",
+      "title": "Global Guardian",
       "description": "A comprehensive framework for transforming global animal welfare systems through community-led guardianship, sentience-centered protection, and regenerative approaches that position animals as beings deserving compassion rather than commodities."
     },
     "climateEnergy": {
@@ -81,7 +85,7 @@
       "description": "Frameworks for governing technological development and deployment with democratic oversight, ensuring technologies serve humanity and protect fundamental rights."
     },
     "planetaryHealth": {
-      "title": "Planetary Health Framework",
+      "title": "Planetary Health",
       "description": "A comprehensive framework for transforming global health systems through community-centered care, AI-powered technology, One Health surveillance, and equitable healthcare delivery for all by 2035."
     },
     "peace": {
@@ -93,7 +97,7 @@
       "description": "Approaches for fostering constructive dialogue between spiritual traditions while identifying common ethical principles that can inform governance across cultural contexts."
     },
     "consciousness": {
-      "title": "Consciousness & Inner Development Framework",
+      "title": "Consciousness & Inner Development",
       "description": "A transformative blueprint for governance rooted in self-awareness, empathy, and systemic thinking. Includes wisdom council frameworks, mindfulness training protocols, spiral dynamics integration, and tools for embedding consciousness principles into institutional structures."
     },
     "meta": {
@@ -113,11 +117,11 @@
       "description": "Guidelines for sustainable, equitable, and resilient food systems that ensure food security, rural prosperity, and ecological health across local to global scales."
     },
     "ethics": {
-      "title": "Global Ethics & Rights of Beings Framework",
+      "title": "Ethics & Rights of Beings",
       "description": "A comprehensive framework for recognizing and protecting the rights of all beings—human, animal, ecological, and technological—with practical implementation guidance, consciousness assessment methodologies, and governance structures."
     },
     "aging": {
-      "title": "Aging Population Support Framework",
+      "title": "Aging Population Support",
       "description": "A comprehensive framework for transforming aging from societal burden into society's greatest strength through elder-led governance, AUBI economic systems, innovation hubs, and regenerative economics that honor elder wisdom and agency."
     }
   },

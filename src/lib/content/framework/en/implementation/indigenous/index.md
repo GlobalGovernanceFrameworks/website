@@ -66,13 +66,13 @@ The framework preserves its organic Indigenous-centered structure, organized int
 
 To bridge traditional knowledge with practical action, the framework provides Indigenous-designed tools and templates for immediate community use:
 
-- **[Indigenous Sovereignty Starter Kit](/framework/tools/indigenous/sovereignty-starter-kit-en.zip)**: Complete package for establishing Bioregional Autonomous Zones and Traditional Knowledge protection protocols.
+- **[Indigenous Sovereignty Starter Kit](/framework/tools/indigenous/indigenous-sovereignty-starter-kit-en.zip)**: Complete package for establishing Bioregional Autonomous Zones and Traditional Knowledge protection protocols.
 
 - **Core Governance Tools**:
   - [Municipal-Indigenous Cooperative Agreement Template](/framework/tools/indigenous/municipal-indigenous-agreement-en.pdf)
   - [BAZ Readiness Assessment & Setup Guide](/framework/tools/indigenous/baz-readiness-assessment-en.pdf)
   - [Traditional Knowledge Documentation Kit](/framework/tools/indigenous/tek-documentation-kit-en.pdf)
-  - [Indigenous Data Sovereignty Framework](/framework/tools/indigenous/data-sovereignty-framework-en.pdf)
+  - [Indigenous Data Sovereignty Framework](/framework/tools/indigenous/indigenous-data-sovereignty-framework-en.pdf)
   - [Earth Council Formation Guide](/framework/tools/indigenous/earth-council-formation-guide-en.pdf)
 
 - **Economic & Legal Tools**:
@@ -83,14 +83,13 @@ To bridge traditional knowledge with practical action, the framework provides In
 
 - **Technology & Innovation Tools**:
   - [Indigenous AI Ethics & Governance Protocols](/framework/tools/indigenous/ai-governance-protocols-en.pdf)
-  - [Cybersecurity & Quantum-Threat Protection Guide](/framework/tools/indigenous/cybersecurity-guide-en.pdf)
-  - [Decentralized Knowledge Library Setup Kit](/framework/tools/indigenous/knowledge-library-setup-en.pdf)
+  - [Cybersecurity & Quantum-Threat Protection Guide](/framework/tools/indigenous/cybersecurity-quantum-guide-en.pdf)
 
 - **Cultural & Leadership Tools**:
-  - [Cultural Integrity Replication Protocol](/framework/tools/indigenous/cultural-integrity-protocol-en.pdf)
-  - [Indigenous Leadership Development Program](/framework/tools/indigenous/leadership-development-program-en.pdf)
-  - [Storytelling & Media Strategy Toolkit](/framework/tools/indigenous/storytelling-strategy-toolkit-en.pdf)
-  - [Ceremonial Governance Integration Guide](/framework/tools/indigenous/ceremonial-governance-guide-en.pdf)
+  - [Cultural Integrity Replication Protocol](/framework/tools/indigenous/cultural-integrity-replication-protocol-en.pdf)
+  - [Indigenous Leadership Development Program](/framework/tools/indigenous/indigenous-leadership-development-program-en.pdf)
+  - [Storytelling & Media Strategy Toolkit](/framework/tools/indigenous/storytelling-media-strategy-toolkit-en.pdf)
+  - [Ceremonial Governance Integration Guide](/framework/tools/indigenous/ceremonial-governance-integration-guide-en.pdf)
 
 - **Framework Guides**:
   - [Indigenous Governance Framework Essentials](/framework/tools/indigenous/indigenous-framework-essentials-en.pdf) (English)

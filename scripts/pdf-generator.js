@@ -37,6 +37,7 @@ Available categories:
 - aging
 - animal-welfare
 - water
+- indigenous
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -69,7 +70,8 @@ const outputDirs = {
   'youth': path.join(__dirname, '..', 'static', 'framework','tools', 'youth'),
   'aging': path.join(__dirname, '..', 'static', 'framework','tools', 'aging'),
   'animal-welfare': path.join(__dirname, '..', 'static', 'framework','tools', 'animal-welfare'),
-  'water': path.join(__dirname, '..', 'static', 'framework','tools', 'water')
+  'water': path.join(__dirname, '..', 'static', 'framework','tools', 'water'),
+  'indigenous': path.join(__dirname, '..', 'static', 'framework','tools', 'indigenous')
 };
 
 // Validate category if provided
@@ -7046,7 +7048,330 @@ const tools = [
       'visual-accessibility-aids',
       'glossary'
     ]
-  }
+  },
+
+  // Indigenous & Traditional Knowledge Framework
+  
+  // Executive Materials
+  {
+    name: 'indigenous-framework-essentials',
+    category: 'indigenous',
+    fileNames: {
+      en: 'indigenous-framework-essentials-en',
+      sv: 'indigenous-framework-essentials-sv',
+      fr: 'indigenous-framework-essentials-fr',
+      es: 'indigenous-framework-essentials-es'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous'),
+      fr: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'fr', 'implementation', 'indigenous'),
+      es: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'es', 'implementation', 'indigenous')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Framework Essentials - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Ramverkets grunder - Sida ',
+      fr: 'Cadre des connaissances autochtones et traditionnelles - Éléments essentiels du cadre - Page ',
+      es: 'Marco de conocimientos indígenas y tradicionales: elementos esenciales del marco - Página '
+
+    }
+  },
+
+  // Core Governance Tools
+  {
+    name: 'baz-readiness-assessment',
+    category: 'indigenous',
+    fileNames: {
+      en: 'baz-readiness-assessment-en',
+      sv: 'baz-readiness-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - BAZ Readiness Assessment - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - BAZ-beredskapsanalys - Sida '
+    }
+  },
+
+  {
+    name: 'earth-council-formation-guide',
+    category: 'indigenous',
+    fileNames: {
+      en: 'earth-council-formation-guide-en',
+      sv: 'earth-council-formation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Earth Council Formation Guide - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Jordrådsformationsguide - Sida '
+    }
+  },
+
+  {
+    name: 'indigenous-data-sovereignty-framework',
+    category: 'indigenous',
+    fileNames: {
+      en: 'indigenous-data-sovereignty-framework-en',
+      sv: 'indigenous-data-sovereignty-framework-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Data Sovereignty Framework - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Datasuveränitetsramverk - Sida '
+    }
+  },
+
+  {
+    name: 'municipal-indigenous-agreement',
+    category: 'indigenous',
+    fileNames: {
+      en: 'municipal-indigenous-agreement-en',
+      sv: 'municipal-indigenous-agreement-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Municipal-Indigenous Agreement - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Kommunal-ursprungsfolksavtal - Sida '
+    }
+  },
+
+  {
+    name: 'tek-documentation-kit',
+    category: 'indigenous',
+    fileNames: {
+      en: 'tek-documentation-kit-en',
+      sv: 'tek-documentation-kit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - TEK Documentation Kit - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - TEK-dokumentationskit - Sida '
+    }
+  },
+
+  // Cultural and Leadership Tools
+  {
+    name: 'ceremonial-governance-integration-guide',
+    category: 'indigenous',
+    fileNames: {
+      en: 'ceremonial-governance-integration-guide-en',
+      sv: 'ceremonial-governance-integration-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Ceremonial Governance Integration - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Ceremoniell styrningsintegration - Sida '
+    }
+  },
+
+  {
+    name: 'cultural-integrity-replication-protocol',
+    category: 'indigenous',
+    fileNames: {
+      en: 'cultural-integrity-replication-protocol-en',
+      sv: 'cultural-integrity-replication-protocol-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Cultural Integrity Protocol - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Kulturell integritetsprotokoll - Sida '
+    }
+  },
+
+  {
+    name: 'indigenous-leadership-development-program',
+    category: 'indigenous',
+    fileNames: {
+      en: 'indigenous-leadership-development-program-en',
+      sv: 'indigenous-leadership-development-program-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Leadership Development Program - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Ledarutvecklingsprogram - Sida '
+    }
+  },
+
+  {
+    name: 'storytelling-media-strategy-toolkit',
+    category: 'indigenous',
+    fileNames: {
+      en: 'storytelling-media-strategy-toolkit-en',
+      sv: 'storytelling-media-strategy-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Storytelling & Media Strategy - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Berättande och mediestrategi - Sida '
+    }
+  },
+
+  // Economic and Legal Tools
+  {
+    name: 'gph-index-calculator',
+    category: 'indigenous',
+    fileNames: {
+      en: 'gph-index-calculator-en',
+      sv: 'gph-index-calculator-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - GPH Index Calculator - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - GPH-indexkalkylator - Sida '
+    }
+  },
+
+  {
+    name: 'land-rematriation-template',
+    category: 'indigenous',
+    fileNames: {
+      en: 'land-rematriation-template-en',
+      sv: 'land-rematriation-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Land Rematriation Template - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Mall för jordåterlämnande - Sida '
+    }
+  },
+
+  {
+    name: 'legal-strategy-guide',
+    category: 'indigenous',
+    fileNames: {
+      en: 'legal-strategy-guide-en',
+      sv: 'legal-strategy-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Legal Strategy Guide - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Juridisk strategiguide - Sida '
+    }
+  },
+
+  {
+    name: 'reparations-toolkit',
+    category: 'indigenous',
+    fileNames: {
+      en: 'reparations-toolkit-en',
+      sv: 'reparations-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Reparations Toolkit - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Skadeståndstoolkit - Sida '
+    }
+  },
+
+  // Technology Tools
+  {
+    name: 'ai-governance-protocols',
+    category: 'indigenous',
+    fileNames: {
+      en: 'ai-governance-protocols-en',
+      sv: 'ai-governance-protocols-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'technology')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - AI Governance Protocols - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - AI-styrningsprotokoll - Sida '
+    }
+  },
+
+  {
+    name: 'cybersecurity-quantum-guide',
+    category: 'indigenous',
+    fileNames: {
+      en: 'cybersecurity-quantum-guide-en',
+      sv: 'cybersecurity-quantum-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'technology')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Cybersecurity & Quantum Guide - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Cybersäkerhet och kvantguide - Sida '
+    }
+  },
+
+  // Full Indigenous & Traditional Knowledge Framework
+  {
+    name: 'indigenous-framework',
+    category: 'indigenous',
+    fileNames: {
+      en: 'Indigenous-&-Traditional-Knowledge-Framework',
+      sv: 'Indigenous-&-Traditional-Knowledge-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Indigenous & Traditional Knowledge Framework - Page ',
+      sv: 'Ramverk för ursprungsfolk och traditionell kunskap - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '00-preamble',
+      '01-core-principles',
+      '02-structural-components',
+      '03-implementation-timeline',
+      '04-key-mechanisms',
+      '05-expected-outcomes',
+      '06-interface-existing-systems',
+      '07-pathways-broader-engagement',
+      '08-documentation-risk-assessment',
+      '09-system-map-visual',
+      '10-glossary-references'
+    ]
+  },
 
 ];
 

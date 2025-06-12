@@ -36,11 +36,14 @@
       financialDesc: "Resources for implementing financial systems that prioritize human and ecological flourishing, including Hearts currency implementation, Love Ledger guides, validator training, and tools for integrating with traditional financial systems.",
       financialButton: "Access Financial Systems Tools",
       educationTitle: "Education Framework Tools",
-      educationDesc: "Tools for implementing the Perfected Enhanced Educational Systems Framework, including project guides, assessment tools, and advocacy resources.",
+      educationDesc: "Tools for implementing the Educational Systems Framework, including project guides, assessment tools, and advocacy resources.",
       educationButton: "Access Education Tools",
       waterTitle: "Water & Sanitation (WASH) Governance Framework Tools",
       waterDesc: "Resources for implementing water justice transformation through community control, regenerative technologies, and rights-based governance, including sacred waters kits, microgrid planning, sovereign wealth funds, and tools for establishing water assemblies and legal frameworks.",
       waterButton: "Access Water & Sanitation Tools",
+      indigenousTitle: "Indigenous & Traditional Knowledge Governance Framework Tools",
+      indigenousDesc: "Sacred technologies for Indigenous-led planetary transformation and Traditional Knowledge protection, including Bioregional Autonomous Zones, Earth Council formation, Indigenous AI governance, land rematriation, and tools for protecting Traditional Ecological Knowledge while advancing Indigenous sovereignty.",
+      indigenousButton: "Access Indigenous Knowledge Tools",
       environmentalTitle: "Environmental Stewardship Framework Tools",
       environmentalDesc: "Resources for regenerative environmental governance, including sacred seed kits for interfaith restoration, ecosystem health monitoring, rights recognition for all beings, and tools for climate adaptation and biodiversity protection.",
       environmentalButton: "Access Environmental Stewardship Tools",
@@ -105,11 +108,14 @@
       financialDesc: "Resurser för implementering av finansiella system som prioriterar mänskligt och ekologiskt välbefinnande, inklusive Hearts valutaimplementering, Love Ledger-guider, validatorträning och verktyg för integrering med traditionella finansiella system.",
       financialButton: "Öppna finansiella systemverktyg",
       educationTitle: "Verktyg för utbildningsramverket",
-      educationDesc: "Verktyg för att implementera det Perfekterade Förstärkta Utbildningssystemet, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
+      educationDesc: "Verktyg för att implementera utbildningsramverket, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
       educationButton: "Öppna utbildningsverktyg",
       waterTitle: "Vatten & Sanitet (WASH) Styrningsramverk Verktyg",
       waterDesc: "Resurser för att implementera vattenrättvisetransformation genom samhällskontroll, regenerativ teknik och rättighetsbaserad styrning, inklusive heliga vattenkit, mikronätplanering, statliga förmögenhetsfonder och verktyg för att etablera vattenförsamlingar och juridiska ramverk.",
       waterButton: "Öppna vatten- och sanitetsverktyg",
+      indigenousTitle: "Verktyg för Ursprungsfolk & Traditionell Kunskap Styrningsramverk",
+      indigenousDesc: "Heliga teknologier för ursprungsfolksledd planetär transformation och skydd av traditionell kunskap, inklusive bioregionala autonoma zoner, jordrådsformation, ursprungsfolks AI-styrning, jordåterlämnande och verktyg för att skydda traditionell ekologisk kunskap samtidigt som ursprungsfolks suveränitet främjas.",
+      indigenousButton: "Öppna verktyg för ursprungsfolk kunskap",
       environmentalTitle: "Verktyg för Miljöförvaltningsramverk",
       environmentalDesc: "Resurser för regenerativ miljöstyrning, inklusive heliga fröpaket för interfaith-restaurering, övervakning av ekosystemhälsa, rättighetserkännande för alla varelser och verktyg för klimatanpassning och biologisk mångfaldsskydd.",
       environmentalButton: "Öppna miljöförvaltningsverktyg",
@@ -371,6 +377,25 @@
             </p>
             <a href="{base}/framework/tools/water" style="display: inline-flex; align-items: center; background-color: #0369a1; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.waterButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indigenous & Traditional Knowledge Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #1c2b1a; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #1c2b1a;">🪶</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #1c2b1a;">{texts.indigenousTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.indigenousDesc}
+            </p>
+            <a href="{base}/framework/tools/indigenous" style="display: inline-flex; align-items: center; background-color: #1c2b1a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.indigenousButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

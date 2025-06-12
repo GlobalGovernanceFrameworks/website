@@ -4,6 +4,7 @@ Denna nivå omfattar de mest akuta områdena inom global styrning – där utebl
 
 * [Klimat- och energistyrning](/framework/docs/implementation/energy) (Under granskning)
 * [Fred och konfliktlösning](/framework/docs/implementation/peace) (Under granskning)
+* [Ursprungsfolkens styrning och traditionell kunskap](/framework/docs/implementation/indigenous) (Under granskning)
 * [Hälso- och sjukvårdsstyrning](/framework/docs/implementation/healthcare) (Under granskning)
 * [Livsmedelssystem och jordbruk](/framework/docs/implementation/food) (Under granskning)
   * TODO: *Utöka omfattning: Tydlig styrning av jord och regenerativt jordbruk*
@@ -11,5 +12,4 @@ Denna nivå omfattar de mest akuta områdena inom global styrning – där utebl
 * [Rättssystem](/framework/docs/implementation/justice) (Under granskning)
 * [Migration och mänsklig rörlighet](/framework/docs/implementation/migration) (Planerad)
 * [Katastrofriskreducering och resiliens](/framework/docs/implementation/disaster) (Under granskning)
-* \[Ursprungsfolkens styrning och traditionell kunskap] *(Ny – Planerad)*
-  * *Omfattar urfolksrättigheter, traditionell ekologisk kunskap, kulturell suveränitet*
+
