@@ -7,8 +7,8 @@
     "title": "Why This Exists",
     "paragraph1": "This project began as a personal reflection: What would it take for humanity to thrive together?",
     "paragraph2": "From childhood, I (Björn Kenneth Holmström) was fascinated by animals, cultures, and the Earth as a shared home. That early sense of wonder became a lifelong drive to support ethical, compassionate systems that can serve all life—human and beyond.",
-    "paragraph3": "What you see here is not a final solution (nothing is). It started as a living proposal. A collaborative draft of what a more interconnected, inclusive, and future-ready form of governance might look like.",
-    "paragraph4": "It’s offered openly—shaped by conversations with AI systems like Claude, ChatGPT, Grok and DeepSeek, and grounded in a belief that good governance must emerge from shared wisdom. Let this be a beginning, not an answer. You are invited to explore, question, contribute, and improve it.",
+    "paragraph3": "What you see here is not a final solution. It started as a living proposal. A collaborative draft of what a more interconnected, inclusive, and future-ready form of governance might look like.",
+    "paragraph4": "It’s offered openly—shaped by conversations with AI systems like Claude, ChatGPT, Grok, DeepSeek and Gemini, and grounded in a belief that good governance must emerge from shared wisdom. Let this be a beginning, not an answer. You are invited to explore, question, contribute, and improve it.",
     "paragraph5": "As the work has progressed, I started to question it. Now it is more of a speculative archive. Use it to spark chaos, fuel dreams, or ignore it. The author has moved on (but also hasn’t). This work is free to mutate, degrade, or vanish. Attribution optional. If extraterrestrials ever audit Earth’s governance, may they nod approvingly at these attempts—before consulting the mushrooms.🍄"
   },
   "title": "Global Governance Framework",
@@ -73,6 +73,7 @@
     "secondaryButton": "Get Involved"
   },
   "cta": "Explore the Framework",
+  "dashboardIntro": "See these principles in action through our ethical impact metrics",
   "globalCitizenship": {
     "title": "Global Citizenship Practice Framework",
     "lead": "A comprehensive approach to fostering planetary identity and collective action",

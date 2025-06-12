@@ -7,8 +7,8 @@
     "title": "Varför Detta Existerar",
     "paragraph1": "Detta projekt började som en personlig reflektion: Vad skulle krävas för att mänskligheten ska kunna blomstra tillsammans?",
     "paragraph2": "Sedan barndomen har jag (Björn Kenneth Holmström) varit fascinerad av djur, kulturer och jorden som ett gemensamt hem. Den tidiga känslan av förundran växte till en livslång drivkraft att stödja etiska och medkännande system som kan tjäna allt liv – mänskligt och bortom.",
-    "paragraph3": "Det du ser här är inte en slutgiltig lösning (ingenting är). Det började som ett levande förslag. Ett samarbetsutkast till hur en mer sammankopplad, inkluderande och framtidssäkrad form av styrning kan se ut.",
-    "paragraph4": "Det erbjuds öppet – format genom samtal med AI-system som Claude, ChatGPT, Grok och DeepSeek, och grundat i tron att god styrning måste växa fram ur gemensam visdom. Låt detta vara en början, inte ett svar. Du är inbjuden att utforska, ifrågasätta, bidra och förbättra det.",
+    "paragraph3": "Det du ser här är inte en slutgiltig lösning. Det började som ett levande förslag. Ett samarbetsutkast till hur en mer sammankopplad, inkluderande och framtidssäkrad form av styrning kan se ut.",
+    "paragraph4": "Det erbjuds öppet – format genom samtal med AI-system som Claude, ChatGPT, Grok, DeepSeek och Gemini, och grundat i tron att god styrning måste växa fram ur gemensam visdom. Låt detta vara en början, inte ett svar. Du är inbjuden att utforska, ifrågasätta, bidra och förbättra det.",
     "paragraph5": "Medan arbetet framskred började jag ifrågasätta det. Nu är det mer ett spekulativt arkiv. Använd det för att väcka kaos, mata drömmar – eller ignorera det. Författaren har gått vidare (fast ändå inte). Detta verk är fritt att mutera, försvinna eller förmultna. Erkännande valfritt. Om utomjordingar någonsin granskar jordens styrelseskick, må de nicka gillande åt dessa försök – innan de rådfrågar svamparna.🍄"
   },
   "title": "Ramverk för Global Styrning",
@@ -73,6 +73,7 @@
     "secondaryButton": "Engagera Dig"
   },
   "cta": "Utforska Ramverket",
+  "dashboardIntro": "Se dessa principer i praktiken genom våra etiska påverkansmått",
   "globalCitizenship": {
     "title": "Ramverk för Globalt Medborgarskap i Praktiken",
     "lead": "Ett omfattande tillvägagångssätt för att främja planetär identitet och kollektiv handling",

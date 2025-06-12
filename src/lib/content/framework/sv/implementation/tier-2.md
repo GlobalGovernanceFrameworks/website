@@ -7,7 +7,7 @@ Denna nivå samlar grundläggande system som möjliggör hållbart mänskligt v�
 * [Utbildningssystem](/framework/docs/implementation/education) (Under granskning)
 * [Psykisk hälsostyrning](/framework/docs/implementation/mental-health) (Planerad)
 * [Stads- och samhällsutveckling](/framework/docs/implementation/urban) (Planerad)
-* [Vatten och sanitet](/framework/docs/implementation/water) (Planerad)
+* [Vatten och sanitet](/framework/docs/implementation/water) (Under granskning)
 * [Miljöhushållning](/framework/docs/implementation/environment) (Under granskning)
 * [Djurvälfärd](/framework/docs/implementation/animal-welfare) (Under granskning)
 * [Biologisk mångfald](/framework/docs/implementation/biodiversity) (Under granskning)

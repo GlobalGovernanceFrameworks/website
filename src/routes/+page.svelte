@@ -4,6 +4,7 @@
   import { t, locale } from '$lib/i18n';
   import { onMount } from 'svelte';
   import { base } from '$app/paths';
+  import EthicalImpactDashboard from '$lib/components/EthicalImpactDashboard.svelte';
 
   // Basic animation for elements
   let isVisible = false;
@@ -141,6 +142,17 @@
     </div>
   </div>
 </section>
+
+<section style="padding: 2rem 0; background-color: white; text-align: center;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h3 style="font-size: 1.5rem; color: #2B4B8C;">
+      {$t('home.dashboardIntro')}
+    </h3>
+  </div>
+</section>
+<EthicalImpactDashboard />
+
+<br><br>
 
 <section style="padding: 4rem 0; background: linear-gradient(to right, #f0f9ff, #e0f2fe);">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">

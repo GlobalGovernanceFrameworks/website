@@ -5,6 +5,7 @@ output_file="../peace.md"
 
 # Files in the correct order according to index.md
 files=(
+  "index.md"
   "preamble.md"
   "core-principles.md"
   "local-implementation.md"
