@@ -38,6 +38,9 @@
       educationTitle: "Education Framework Tools",
       educationDesc: "Tools for implementing the Educational Systems Framework, including project guides, assessment tools, and advocacy resources.",
       educationButton: "Access Education Tools",
+      mentalHealthTitle: "Mental Health Framework Tools",
+      mentalHealthDesc: "Resources for implementing community-led mental health transformation through consciousness-inclusive healing, traditional medicine integration, and rights-based care that positions mental health as a transcultural human right fostering collective flourishing.",
+      mentalHealthButton: "Access Mental Health Tools",
       waterTitle: "Water & Sanitation (WASH) Governance Framework Tools",
       waterDesc: "Resources for implementing water justice transformation through community control, regenerative technologies, and rights-based governance, including sacred waters kits, microgrid planning, sovereign wealth funds, and tools for establishing water assemblies and legal frameworks.",
       waterButton: "Access Water & Sanitation Tools",
@@ -110,6 +113,9 @@
       educationTitle: "Verktyg för utbildningsramverket",
       educationDesc: "Verktyg för att implementera utbildningsramverket, inklusive projektguider, bedömningsverktyg och opinionsbildningsresurser.",
       educationButton: "Öppna utbildningsverktyg",
+      mentalHealthTitle: "Mental Hälsa Ramverk Verktyg",
+      mentalHealthDesc: "Resurser för att implementera samhällsledd mental hälsa transformation genom medvetenhetsinnefattande helande, traditionell medicin integration och rättighetsbaserad vård som positionerar mental hälsa som en transkulturell mänsklig rättighet som främjar kollektiv blomstring.",
+      mentalHealthButton: "Öppna Mental Hälsa Verktyg",
       waterTitle: "Vatten & Sanitet (WASH) Styrningsramverk Verktyg",
       waterDesc: "Resurser för att implementera vattenrättvisetransformation genom samhällskontroll, regenerativ teknik och rättighetsbaserad styrning, inklusive heliga vattenkit, mikronätplanering, statliga förmögenhetsfonder och verktyg för att etablera vattenförsamlingar och juridiska ramverk.",
       waterButton: "Öppna vatten- och sanitetsverktyg",
@@ -358,6 +364,25 @@
             </p>
             <a href="{base}/framework/tools/education" style="display: inline-flex; align-items: center; background-color: #2D5F2D; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
               {texts.educationButton}
+              <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mental Health Framework Card -->
+      <div style="background-color: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #1e3a8a; margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div style="font-size: 2.5rem; color: #1e3a8a;">🧠</div>
+          <div style="flex: 1; min-width: 200px;">
+            <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #1e3a8a;">{texts.mentalHealthTitle}</h2>
+            <p style="color: #4b5563; margin-bottom: 1rem;">
+              {texts.mentalHealthDesc}
+            </p>
+            <a href="{base}/framework/tools/mental-health" style="display: inline-flex; align-items: center; background-color: #1e3a8a; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.2s;">
+              {texts.mentalHealthButton}
               <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem; margin-left: 0.5rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

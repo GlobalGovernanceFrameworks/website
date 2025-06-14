@@ -8,3 +8,4 @@ Den fjärde nivån omfattar framåtblickande och systemövergripande områden in
 * [Medvetande & inre utveckling](/framework/docs/implementation/consciousness) (Under granskning)
 * [Integrerad metagovernance](/framework/docs/implementation/meta) (Under granskning)
 * [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools) (Under granskning)
+* [Vishetsstyrning](/framework/docs/implementation/wisdom) (Planerad)

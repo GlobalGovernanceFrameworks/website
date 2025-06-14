@@ -140,8 +140,7 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 * [Biologisk mångfald](/framework/docs/implementation/biodiversity) (Under granskning)
 * [Havs- och marin styrning](/framework/docs/implementation/oceans) (Planerad)
 * [Arbetsmarknadsstyrning](/framework/docs/implementation/labor) (Planerad)
-* \[Funktionsrätt och inkluderingsstyrning] *(Ny – Planerad)*
-  * *Omfattar tillgänglighet, inkluderande design, funktionsrättvisa, stöd för självbestämmande*
+* [Funktionsrätt och inkluderingsstyrning](/framework/docs/implementation/inclusion) (Planerad)
 
 ---
 
@@ -167,6 +166,7 @@ Den globala styramen kan tillämpas inom olika domäner. Varje domän kräver sp
 * [Medvetande & inre utveckling](/framework/docs/implementation/consciousness) (Under granskning)
 * [Integrerad metagovernance](/framework/docs/implementation/meta) (Under granskning)
 * [Metoder & verktyg för implementering](/framework/docs/implementation/methods-tools) (Under granskning)
+* [Vishetsstyrning](/framework/docs/implementation/wisdom) (Planerad)
 
 Varje domänimplementering ger detaljerad vägledning, verktyg och fallstudier specifika för det området, samtidigt som de följer ramverkets kärnprinciper och implementeringsmetoder.
 

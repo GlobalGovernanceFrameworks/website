@@ -137,8 +137,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Biodiversity Governance](/framework/docs/implementation/biodiversity) (In Review)
 - [Oceans & Marine Governance](/framework/docs/implementation/oceans) (Planned)
 - [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)
-- [Disability Rights & Inclusion Governance] *(New - Planned)*
-  - *Covers accessibility, inclusive design, disability justice, supported decision-making*
+- [Disability Rights & Inclusion Governance](/framework/docs/implementation/inclusion) (Planned)
 
 ### Tier 3: Equity, Culture & Future Generations
 - [Digital Commons](/framework/docs/implementation/digital) (In Review)
@@ -158,6 +157,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (In Review)
 - [Integrated Meta-Governance](/framework/docs/implementation/meta) (In Review)
 - [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (In Review)
+- [Wisdom Governance](/framework/docs/implementation/wisdom) (Planned)
 
 Each domain implementation provides detailed guidance, tools, and case studies specific to that area, while adhering to the core framework principles and implementation approaches.
 

@@ -26,7 +26,7 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationFood', path: '/framework/docs/implementation/food-systems', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationEconomic', path: '/framework/docs/implementation/economic', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationJustice', path: '/framework/docs/implementation/justice', status: 'review' },
-          { titleKey: 'framework.docs.nav.implementationMigration', path: '/framework/docs/implementation/migration', planned: true },
+          { titleKey: 'framework.docs.nav.implementationMigration', path: '/framework/docs/implementation/migration', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationDisaster', path: '/framework/docs/implementation/disaster', status: 'review' }
         ]
       },
@@ -37,14 +37,15 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationTechnology', path: '/framework/docs/implementation/technology', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationFinancial', path: '/framework/docs/implementation/financial-systems', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationEducation', path: '/framework/docs/implementation/education', status: 'review' },
-          { titleKey: 'framework.docs.nav.implementationMentalHealth', path: '/framework/docs/implementation/mental-health', comingSoon: true },
-          { titleKey: 'framework.docs.nav.implementationUrban', path: '/framework/docs/implementation/urban', planned: true },
+          { titleKey: 'framework.docs.nav.implementationMentalHealth', path: '/framework/docs/implementation/mental-health', status: 'review' },
+          { titleKey: 'framework.docs.nav.implementationUrban', path: '/framework/docs/implementation/urban', comingSoon: true },
           { titleKey: 'framework.docs.nav.implementationWash', path: '/framework/docs/implementation/water', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationEnvironment', path: '/framework/docs/implementation/environmental-stewardship', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationAnimalWelfare', path: '/framework/docs/implementation/animal-welfare', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationBiodiversity', path: '/framework/docs/implementation/biodiversity', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationOceansMarine', path: '/framework/docs/implementation/oceans', planned: true },
-          { titleKey: 'framework.docs.nav.implementationLaborEmployment', path: '/framework/docs/implementation/labor', planned: true }
+          { titleKey: 'framework.docs.nav.implementationLaborEmployment', path: '/framework/docs/implementation/labor', planned: true },
+          { titleKey: 'framework.docs.nav.implementationInclusion', path: '/framework/docs/implementation/inclusion', comingSoon: true }
         ]
       },
       {

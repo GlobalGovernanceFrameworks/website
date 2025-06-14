@@ -13,5 +13,4 @@ Denna nivå samlar grundläggande system som möjliggör hållbart mänskligt v�
 * [Biologisk mångfald](/framework/docs/implementation/biodiversity) (Under granskning)
 * [Havs- och marin styrning](/framework/docs/implementation/oceans) (Planerad)
 * [Arbetsmarknadsstyrning](/framework/docs/implementation/labor) (Planerad)
-* \[Funktionsrätt och inkluderingsstyrning] *(Ny – Planerad)*
-  * *Omfattar tillgänglighet, inkluderande design, funktionsrättvisa, stöd för självbestämmande*
+* [Funktionsrätt och inkluderingsstyrning](/framework/docs/implementation/inclusion) (Planerad)

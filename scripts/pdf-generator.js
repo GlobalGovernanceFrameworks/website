@@ -38,6 +38,7 @@ Available categories:
 - animal-welfare
 - water
 - indigenous
+- mental-health
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -66,6 +67,7 @@ const outputDirs = {
   'governance': path.join(__dirname, '..', 'static', 'framework', 'tools', 'governance'),
   'biodiversity': path.join(__dirname, '..', 'static', 'framework', 'tools', 'biodiversity'),
   'planetary-health': path.join(__dirname, '..', 'static', 'framework', 'tools', 'planetary-health'),
+  'mental-health': path.join(__dirname, '..', 'static', 'framework', 'tools', 'mental-health'),
   'consciousness': path.join(__dirname, '..', 'static', 'framework', 'tools', 'consciousness'),
   'youth': path.join(__dirname, '..', 'static', 'framework','tools', 'youth'),
   'aging': path.join(__dirname, '..', 'static', 'framework','tools', 'aging'),
@@ -7372,6 +7374,434 @@ const tools = [
       '10-glossary-references'
     ]
   },
+
+  // Mental Health Framework
+  // Core Guides
+  {
+    name: 'mental-health-framework-essentials',
+    category: 'mental-health',
+    fileNames: {
+      en: 'mental-health-framework-essentials-en',
+      sv: 'mental-health-framework-essentials-sv',
+      es: 'mental-health-framework-essentials-es',
+      fr: 'mental-health-framework-essentials-fr',
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health'),
+      es: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'es', 'implementation', 'mental-health'),
+      fr: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'fr', 'implementation', 'mental-health')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Guide - Page ',
+      sv: 'Psykisk hälsoramverk - Guide - Sida ',
+      fr: 'Cadre de santé mentale - Guide - Page ',
+      es: 'Marco de Salud Mental - Guía - Página '
+    }
+  },
+
+  {
+    name: 'executive-summary',
+    category: 'mental-health',
+    fileNames: {
+      en: 'executive-summary-en',
+      sv: 'executive-summary-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Executive Summary - Page ',
+      sv: 'Psykisk hälsoramverk - Sammanfattning - Sida '
+    }
+  },
+
+  // Quick Start Implementation Tools
+  {
+    name: 'path-to-compliance-checklist',
+    category: 'mental-health',
+    fileNames: {
+      en: 'path-to-compliance-checklist-en',
+      sv: 'path-to-compliance-checklist-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Quick Start Tool - Page ',
+      sv: 'Psykisk hälsoramverk - Snabbstartsverktyg - Sida '
+    }
+  },
+
+  {
+    name: 'community-task-force-guide',
+    category: 'mental-health',
+    fileNames: {
+      en: 'community-task-force-guide-en',
+      sv: 'community-task-force-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Community Guide - Page ',
+      sv: 'Psykisk hälsoramverk - Gemenskapsguide - Sida '
+    }
+  },
+
+  {
+    name: 'cultural-adaptation-toolkit',
+    category: 'mental-health',
+    fileNames: {
+      en: 'cultural-adaptation-toolkit-en',
+      sv: 'cultural-adaptation-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Cultural Toolkit - Page ',
+      sv: 'Psykisk hälsoramverk - Kulturell verktygslåda - Sida '
+    }
+  },
+
+  {
+    name: 'watchdog-implementation-manual',
+    category: 'mental-health',
+    fileNames: {
+      en: 'watchdog-implementation-manual-en',
+      sv: 'watchdog-implementation-manual-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Watchdog Manual - Page ',
+      sv: 'Psykisk hälsoramverk - Övervakningsmanual - Sida '
+    }
+  },
+
+  {
+    name: 'traffic-light-assessment',
+    category: 'mental-health',
+    fileNames: {
+      en: 'traffic-light-assessment-en',
+      sv: 'traffic-light-assessment-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Assessment Tool - Page ',
+      sv: 'Psykisk hälsoramverk - Bedömningsverktyg - Sida '
+    }
+  },
+
+  // Governance & Policy Tools
+  {
+    name: 'national-commission-guide',
+    category: 'mental-health',
+    fileNames: {
+      en: 'national-commission-guide-en',
+      sv: 'national-commission-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Governance Guide - Page ',
+      sv: 'Psykisk hälsoramverk - Styrningsguide - Sida '
+    }
+  },
+
+  {
+    name: 'rights-based-legislation-template',
+    category: 'mental-health',
+    fileNames: {
+      en: 'rights-based-legislation-template-en',
+      sv: 'rights-based-legislation-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Legal Template - Page ',
+      sv: 'Psykisk hälsoramverk - Juridisk mall - Sida '
+    }
+  },
+
+  {
+    name: 'international-treaty-roadmap',
+    category: 'mental-health',
+    fileNames: {
+      en: 'international-treaty-roadmap-en',
+      sv: 'international-treaty-roadmap-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Treaty Guide - Page ',
+      sv: 'Psykisk hälsoramverk - Fördragsguide - Sida '
+    }
+  },
+
+  {
+    name: 'youth-parliament-charter',
+    category: 'mental-health',
+    fileNames: {
+      en: 'youth-parliament-charter-en',
+      sv: 'youth-parliament-charter-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Youth Charter - Page ',
+      sv: 'Psykisk hälsoramverk - Ungdomscharter - Sida '
+    }
+  },
+
+  // Clinical & Service Tools
+  {
+    name: 'spiritual-crisis-decision-trees',
+    category: 'mental-health',
+    fileNames: {
+      en: 'spiritual-crisis-decision-trees-en',
+      sv: 'spiritual-crisis-decision-trees-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Clinical Tool - Page ',
+      sv: 'Psykisk hälsoramverk - Kliniskt verktyg - Sida '
+    }
+  },
+
+  {
+    name: 'consciousness-development-guide',
+    category: 'mental-health',
+    fileNames: {
+      en: 'consciousness-development-guide-en',
+      sv: 'consciousness-development-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Consciousness Guide - Page ',
+      sv: 'Psykisk hälsoramverk - Medvetandeguide - Sida '
+    }
+  },
+
+  {
+    name: 'consciousness-healing-protocols',
+    category: 'mental-health',
+    fileNames: {
+      en: 'consciousness-healing-protocols-en',
+      sv: 'consciousness-healing-protocols-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Healing Protocols - Page ',
+      sv: 'Psykisk hälsoramverk - Helande protokoll - Sida '
+    }
+  },
+
+  {
+    name: 'traditional-healing-integration-guidelines',
+    category: 'mental-health',
+    fileNames: {
+      en: 'traditional-healing-integration-guidelines-en',
+      sv: 'traditional-healing-integration-guidelines-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Traditional Healing Guide - Page ',
+      sv: 'Psykisk hälsoramverk - Traditionell helande guide - Sida '
+    }
+  },
+
+  {
+    name: 'psychedelic-therapy-lab-guide',
+    category: 'mental-health',
+    fileNames: {
+      en: 'psychedelic-therapy-lab-guide-en',
+      sv: 'psychedelic-therapy-lab-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Therapy Lab Guide - Page ',
+      sv: 'Psykisk hälsoramverk - Terapilabbguide - Sida '
+    }
+  },
+
+  // Financing & Economics Tools
+  {
+    name: 'commons-fund-blueprint',
+    category: 'mental-health',
+    fileNames: {
+      en: 'commons-fund-blueprint-en',
+      sv: 'commons-fund-blueprint-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'financing-and-economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'financing-and-economic')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Fund Blueprint - Page ',
+      sv: 'Psykisk hälsoramverk - Fondritning - Sida '
+    }
+  },
+
+  {
+    name: 'right-to-rest-policy-guide',
+    category: 'mental-health',
+    fileNames: {
+      en: 'right-to-rest-policy-guide-en',
+      sv: 'right-to-rest-policy-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'financing-and-economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'financing-and-economic')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Policy Guide - Page ',
+      sv: 'Psykisk hälsoramverk - Policyguide - Sida '
+    }
+  },
+
+  // Monitoring & Evaluation Tools
+  {
+    name: 'flourishing-metrics-dashboard-spec',
+    category: 'mental-health',
+    fileNames: {
+      en: 'flourishing-metrics-dashboard-spec-en',
+      sv: 'flourishing-metrics-dashboard-spec-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Dashboard Spec - Page ',
+      sv: 'Psykisk hälsoramverk - Instrumentpanelspec - Sida '
+    }
+  },
+
+  {
+    name: 'community-monitoring-toolkit',
+    category: 'mental-health',
+    fileNames: {
+      en: 'community-monitoring-toolkit-en',
+      sv: 'community-monitoring-toolkit-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Monitoring Toolkit - Page ',
+      sv: 'Psykisk hälsoramverk - Övervakningsverktygslåda - Sida '
+    }
+  },
+
+  {
+    name: 'narrative-equity-review-guide',
+    category: 'mental-health',
+    fileNames: {
+      en: 'narrative-equity-review-guide-en',
+      sv: 'narrative-equity-review-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Review Guide - Page ',
+      sv: 'Psykisk hälsoramverk - Granskningsguide - Sida '
+    }
+  },
+
+  {
+    name: 'transparency-dashboard-template',
+    category: 'mental-health',
+    fileNames: {
+      en: 'transparency-dashboard-template-en',
+      sv: 'transparency-dashboard-template-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Dashboard Template - Page ',
+      sv: 'Psykisk hälsoramverk - Instrumentpanelmall - Sida '
+    }
+  },
+
+  // Full Mental Health Framework
+  {
+    name: 'mental-health-framework',
+    category: 'mental-health',
+    fileNames: {
+      en: 'Mental-Health-Framework',
+      sv: 'Mental-Health-Framework'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Mental Health Framework - Page ',
+      sv: 'Psykisk hälsoramverk - Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      '01-vision-principles',
+      '02-governance-structures',
+      '03-legal-policy',
+      '04-financing-resources',
+      '05-service-delivery',
+      '06-monitoring-accountability',
+      '07-crisis-response',
+      '08-innovation-research',
+      '09-cross-cutting-themes',
+      '10-implementation-strategy',
+      '11-political-strategy',
+      '12-risk-management',
+      '13-technology-implementation',
+      '14-change-management',
+      '15-conclusion',
+    ]
+  }
 
 ];
 
