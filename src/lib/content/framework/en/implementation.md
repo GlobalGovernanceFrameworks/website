@@ -119,7 +119,7 @@ The Global Governance Framework can be applied across various domains. Each doma
 - [Indigenous Governance & Traditional Knowledge](/framework/docs/implementation/indigenous) (In Review)
 - [Healthcare Governance](/framework/docs/implementation/healthcare) (In Review)
 - [Food Systems & Agriculture](/framework/docs/implementation/food) (In Review)
-  - TODO: *Enhance scope: Explicit soil governance and regenerative agriculture*
+  - TODO: *Enhance scope: Explicit soil governance and regenerative agriculture. Global nutrition security, addressing the "double burden" of malnutrition (both undernutrition and obesity), and promoting healthy and sustainable diets*
 - [Economic Integration](/framework/docs/implementation/economic) (In Review)
 - [Justice Systems](/framework/docs/implementation/justice) (In Review)
 - [Migration & Human Mobility](/framework/docs/implementation/migration) (Coming Soon)

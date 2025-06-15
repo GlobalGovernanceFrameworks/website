@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 800"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="five-pillars-svg.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0575"
+     inkscape:cx="431.67849"
+     inkscape:cy="394.32624"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .pillar-number {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        fill: #00C49A;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .pillar-name {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .pillar-function {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #00C49A;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .center-title {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .pillar-rect {
+        fill: none;
+        stroke: #0A2540;
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .center-circle {
+        fill: none;
+        stroke: #00C49A;
+        stroke-width: 3;
+      }
+      .connection-line {
+        stroke: #0A2540;
+        stroke-width: 1.5;
+        opacity: 0.6;
+      }
+      .synergy-arrow {
+        stroke: #00C49A;
+        stroke-width: 2;
+        fill: none;
+        opacity: 0.7;
+        stroke-dasharray: 4,4;
+      }
+    </style>
+    <!-- Arrowhead marker for synergy arrows -->
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#00C49A"
+         opacity="0.7"
+         id="polygon1" />
+    </marker>
+  </defs>
+  <!-- Connection lines from center to each pillar -->
+  <line
+     x1="400"
+     y1="300"
+     x2="400"
+     y2="200"
+     class="connection-line"
+     id="line1" />
+  <line
+     x1="495"
+     y1="369"
+     x2="568"
+     y2="326"
+     class="connection-line"
+     id="line2" />
+  <line
+     x1="459"
+     y1="481"
+     x2="541"
+     y2="554"
+     class="connection-line"
+     id="line3" />
+  <line
+     x1="341"
+     y1="481"
+     x2="259"
+     y2="554"
+     class="connection-line"
+     id="line4" />
+  <line
+     x1="305"
+     y1="369"
+     x2="232"
+     y2="326"
+     class="connection-line"
+     id="line5" />
+  <!-- Synergy arrows (circular flow) -->
+  <path
+     d="m 420.80378,201.60757 c 32.52955,54.51536 47.06383,80.53427 145.7305,104.53427"
+     class="synergy-arrow"
+     marker-end="url(#arrowhead)"
+     id="path5"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 593.95745,365.71631 c -51.81561,51.80142 -66.63121,102.36407 -52.01182,188.56738"
+     class="synergy-arrow"
+     marker-end="url(#arrowhead)"
+     id="path6"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 480.47991,576.97872 c -57.12057,-19.75413 -94.38298,-22.59101 -161.90544,3.78251"
+     class="synergy-arrow"
+     marker-end="url(#arrowhead)"
+     id="path7"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 258.05437,553.33806 C 268.89125,486.04728 250.29314,419.40898 206.98818,365.71631"
+     class="synergy-arrow"
+     marker-end="url(#arrowhead)"
+     id="path8"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="M 232.52009,308.0331 C 312.27423,291.59811 345.72104,268.41608 377.30496,200.66194"
+     class="synergy-arrow"
+     marker-end="url(#arrowhead)"
+     id="path9"
+     sodipodi:nodetypes="cc" />
+  <!-- Center Element -->
+  <circle
+     cx="400"
+     cy="400"
+     r="100"
+     class="center-circle"
+     id="circle9" />
+  <text
+     x="400"
+     y="390"
+     class="center-title"
+     id="text9">Polycrisis</text>
+  <text
+     x="400"
+     y="410"
+     class="center-title"
+     id="text10">Response</text>
+  <!-- Pillar 1: Reforming Core Intergovernmental Bodies -->
+  <rect
+     x="320.76309"
+     y="120.1542"
+     width="160.47978"
+     height="79.691597"
+     class="pillar-rect"
+     id="rect10" />
+  <text
+     x="400"
+     y="135"
+     class="pillar-number"
+     id="text11">Pillar 1</text>
+  <text
+     x="400"
+     y="152"
+     class="pillar-name"
+     id="text12">Reforming Core</text>
+  <text
+     x="400"
+     y="168"
+     class="pillar-name"
+     id="text13">Intergovernmental Bodies</text>
+  <text
+     x="400"
+     y="185"
+     class="pillar-function"
+     id="text14">(Unlock)</text>
+  <!-- Pillar 2: Integrating New Actors & Voices -->
+  <rect
+     x="568"
+     y="286"
+     width="120"
+     height="80"
+     class="pillar-rect"
+     id="rect14" />
+  <text
+     x="628"
+     y="301"
+     class="pillar-number"
+     id="text15">Pillar 2</text>
+  <text
+     x="628"
+     y="318"
+     class="pillar-name"
+     id="text16">Integrating New</text>
+  <text
+     x="628"
+     y="334"
+     class="pillar-name"
+     id="text17">Actors &amp; Voices</text>
+  <text
+     x="628"
+     y="351"
+     class="pillar-function"
+     id="text18">(Legitimize)</text>
+  <!-- Pillar 3: Strengthening Global Law & Enforcement -->
+  <rect
+     x="483.03867"
+     y="554.06854"
+     width="137.24805"
+     height="79.86293"
+     class="pillar-rect"
+     id="rect18" />
+  <text
+     x="551"
+     y="569"
+     class="pillar-number"
+     id="text19">Pillar 3</text>
+  <text
+     x="551"
+     y="586"
+     class="pillar-name"
+     id="text20">Strengthening Global</text>
+  <text
+     x="551"
+     y="602"
+     class="pillar-name"
+     id="text21">Law &amp; Enforcement</text>
+  <text
+     x="551"
+     y="619"
+     class="pillar-function"
+     id="text22">(Enforce)</text>
+  <!-- Pillar 4: Reimagining Funding & Resources -->
+  <rect
+     x="181.70305"
+     y="554.05829"
+     width="134.5939"
+     height="79.883415"
+     class="pillar-rect"
+     id="rect22" />
+  <text
+     x="249"
+     y="569"
+     class="pillar-number"
+     id="text23">Pillar 4</text>
+  <text
+     x="249"
+     y="586"
+     class="pillar-name"
+     id="text24">Reimagining Funding</text>
+  <text
+     x="249"
+     y="602"
+     class="pillar-name"
+     id="text25">&amp; Resources</text>
+  <text
+     x="249"
+     y="619"
+     class="pillar-function"
+     id="text26">(Fuel)</text>
+  <!-- Pillar 5: Building Ethical & Epistemic Infrastructure -->
+  <rect
+     x="67.099648"
+     y="286.16238"
+     width="162.80368"
+     height="79.675179"
+     class="pillar-rect"
+     id="rect26" />
+  <text
+     x="148"
+     y="301"
+     class="pillar-number"
+     id="text27">Pillar 5</text>
+  <text
+     x="148"
+     y="318"
+     class="pillar-name"
+     id="text28">Building Ethical</text>
+  <text
+     x="148"
+     y="334"
+     class="pillar-name"
+     id="text29">&amp; Epistemic Infrastructure</text>
+  <text
+     x="148"
+     y="351"
+     class="pillar-function"
+     id="text30">(Guide)</text>
+</svg>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 500"
+   version="1.1"
+   id="svg31"
+   sodipodi:docname="dual-track-approach.svg"
+   width="1000"
+   height="500"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.99702056"
+     inkscape:cx="439.81039"
+     inkscape:cy="333.99512"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg31" />
+  <defs
+     id="defs3">
+    <style
+       id="style1">
+      .track-title {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-anchor: start;
+        dominant-baseline: central;
+      }
+      .track-subtitle {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-anchor: start;
+        dominant-baseline: central;
+      }
+      .action-text {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .force-text {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        text-anchor: start;
+        dominant-baseline: central;
+        font-style: italic;
+      }
+      .goal-text {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .connection-label {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .visionary-track {
+        stroke: #00C49A;
+        stroke-width: 4;
+        fill: none;
+      }
+      .pragmatic-track {
+        stroke: #8B7355;
+        stroke-width: 4;
+        fill: none;
+      }
+      .visionary-element {
+        fill: #00C49A;
+        stroke: #00C49A;
+        stroke-width: 2;
+      }
+      .pragmatic-element {
+        fill: #8B7355;
+        stroke: #8B7355;
+        stroke-width: 2;
+      }
+      .visionary-text {
+        fill: #00C49A;
+      }
+      .pragmatic-text {
+        fill: #8B7355;
+      }
+      .main-text {
+        fill: #0A2540;
+      }
+      .connection-arrow {
+        stroke: #0A2540;
+        stroke-width: 1.5;
+        fill: none;
+        stroke-dasharray: 4,3;
+        opacity: 0.7;
+      }
+      .goal-circle {
+        fill: #00C49A;
+        stroke: #0A2540;
+        stroke-width: 3;
+        opacity: 0.9;
+      }
+    </style>
+    <!-- Arrow markers -->
+    <marker
+       id="arrow-visionary"
+       markerWidth="8"
+       markerHeight="6"
+       refX="7"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0,6 0,0 8,3 "
+         fill="#00c49a"
+         id="polygon1" />
+    </marker>
+    <marker
+       id="arrow-pragmatic"
+       markerWidth="8"
+       markerHeight="6"
+       refX="7"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0,6 0,0 8,3 "
+         fill="#8b7355"
+         id="polygon2" />
+    </marker>
+    <marker
+       id="arrow-connection"
+       markerWidth="6"
+       markerHeight="5"
+       refX="5"
+       refY="2.5"
+       orient="auto">
+      <polygon
+         points="0,5 0,0 6,2.5 "
+         fill="#0a2540"
+         opacity="0.7"
+         id="polygon3" />
+    </marker>
+  </defs>
+  <!-- Track One: Visionary Path -->
+  <line
+     x1="50"
+     y1="142"
+     x2="750"
+     y2="142"
+     class="visionary-track"
+     marker-end="url(#arrow-visionary)"
+     id="line3" />
+  <!-- Track Two: Pragmatic Path -->
+  <line
+     x1="50"
+     y1="342"
+     x2="750"
+     y2="342"
+     class="pragmatic-track"
+     marker-end="url(#arrow-pragmatic)"
+     id="line4" />
+  <!-- Track One Title and Subtitle -->
+  <text
+     x="50"
+     y="82"
+     class="track-title visionary-text"
+     id="text4">Track One: The &quot;Ought&quot; / The Visionary Path</text>
+  <text
+     x="50"
+     y="102"
+     class="track-subtitle main-text"
+     id="text5">Global Stewardship Alliance</text>
+  <!-- Track Two Title and Subtitle -->
+  <text
+     x="50"
+     y="292"
+     class="track-title pragmatic-text"
+     id="text6">Track Two: The &quot;Is&quot; / The Pragmatic Path</text>
+  <text
+     x="50"
+     y="312"
+     class="track-subtitle main-text"
+     id="text7">Engagement with Incumbent Powers (P5, G20)</text>
+  <!-- Visionary Track Actions -->
+  <!-- Demonstration Effects -->
+  <circle
+     cx="200"
+     cy="142"
+     r="25"
+     class="visionary-element"
+     fill="none"
+     id="circle7" />
+  <circle
+     cx="200"
+     cy="142"
+     r="15"
+     class="visionary-element"
+     opacity="0.3"
+     id="circle8" />
+  <circle
+     cx="200"
+     cy="142"
+     r="8"
+     class="visionary-element"
+     id="circle9" />
+  <text
+     x="200"
+     y="176"
+     class="action-text main-text"
+     id="text9">Demonstration</text>
+  <text
+     x="200"
+     y="190"
+     class="action-text main-text"
+     id="text10">Effects</text>
+  <!-- Gold Standard Implementation -->
+  <rect
+     x="325"
+     y="122"
+     width="30"
+     height="20"
+     rx="3"
+     class="visionary-element"
+     opacity="0.8"
+     id="rect10" />
+  <rect
+     x="330"
+     y="127"
+     width="20"
+     height="10"
+     rx="2"
+     class="visionary-element"
+     id="rect11" />
+  <text
+     x="340"
+     y="172"
+     class="action-text main-text"
+     id="text11">Gold Standard</text>
+  <text
+     x="340"
+     y="186"
+     class="action-text main-text"
+     id="text12">Implementation</text>
+  <!-- Narrative & Cultural Change -->
+  <circle
+     cx="480"
+     cy="142"
+     r="20"
+     class="visionary-element"
+     fill="none"
+     id="circle12" />
+  <polygon
+     points="475,155 470,150 475,145 "
+     class="visionary-element"
+     id="polygon12"
+     transform="translate(0,-8)" />
+  <polygon
+     points="490,155 485,150 490,145 "
+     class="visionary-element"
+     id="polygon13"
+     transform="translate(0,-8)" />
+  <text
+     x="480"
+     y="172"
+     class="action-text main-text"
+     id="text13">Narrative</text>
+  <text
+     x="480"
+     y="186"
+     class="action-text main-text"
+     id="text14">Cultural Change</text>
+  <!-- Pragmatic Track Actions -->
+  <!-- Sovereignty Bargains -->
+  <rect
+     x="185"
+     y="332"
+     width="30"
+     height="4"
+     class="pragmatic-element"
+     id="rect14" />
+  <circle
+     cx="200"
+     cy="342"
+     r="8"
+     class="pragmatic-element"
+     fill="none"
+     id="circle14" />
+  <text
+     x="200"
+     y="372"
+     class="action-text main-text"
+     id="text15">Sovereignty</text>
+  <text
+     x="200"
+     y="386"
+     class="action-text main-text"
+     id="text16">Bargains</text>
+  <!-- Threat Mitigation Framing -->
+  <path
+     d="m 325,340.51064 15,-15 15,15 -15,15 z"
+     class="pragmatic-element"
+     fill="none"
+     id="path16" />
+  <circle
+     cx="340"
+     cy="353.98581"
+     r="8"
+     class="pragmatic-element"
+     id="circle16" />
+  <text
+     x="340"
+     y="372"
+     class="action-text main-text"
+     id="text17">Threat Mitigation</text>
+  <text
+     x="340"
+     y="386"
+     class="action-text main-text"
+     id="text18">Framing</text>
+  <!-- Golden Parachutes -->
+  <rect
+     x="470"
+     y="332"
+     width="20"
+     height="12"
+     rx="2"
+     class="pragmatic-element"
+     fill="none"
+     id="rect18" />
+  <path
+     d="m 475.70922,338.41844 h 10"
+     class="pragmatic-element"
+     id="path18" />
+  <circle
+     cx="480"
+     cy="349.09219"
+     r="4"
+     class="pragmatic-element"
+     id="circle18" />
+  <text
+     x="480"
+     y="372"
+     class="action-text main-text"
+     id="text19">Golden</text>
+  <text
+     x="480"
+     y="386"
+     class="action-text main-text"
+     id="text20">Parachutes</text>
+  <!-- Underlying Forces -->
+  <text
+     x="50"
+     y="206"
+     class="force-text visionary-text"
+     id="text21">Pressure Through Example Inspiration</text>
+  <text
+     x="50"
+     y="412"
+     class="force-text pragmatic-text"
+     id="text22">Progress Through Aligned Interests Negotiation</text>
+  <!-- Interconnecting Arrows -->
+  <!-- Top to Bottom: Public Pressure -->
+  <path
+     d="m 250,162 q 10,50 20,110"
+     class="connection-arrow"
+     marker-end="url(#arrow-connection)"
+     id="path22" />
+  <text
+     x="222.53192"
+     y="222.98581"
+     class="connection-label main-text"
+     id="text23">Public Pressure</text>
+  <!-- Top to Bottom: Evidence of Success -->
+  <path
+     d="m 459.92908,203.13475 q 10,50 20,110"
+     class="connection-arrow"
+     marker-end="url(#arrow-connection)"
+     id="path23" />
+  <text
+     x="421.0993"
+     y="251.75177"
+     class="connection-label main-text"
+     id="text24">Evidence of Success</text>
+  <!-- Bottom to Top: Incentives -->
+  <path
+     d="m 287.94326,271.64538 q -10,-50 -20,-110"
+     class="connection-arrow"
+     marker-end="url(#arrow-connection)"
+     id="path24" />
+  <text
+     x="308.51773"
+     y="222.71629"
+     class="connection-label main-text"
+     id="text25">Incentives</text>
+  <!-- Bottom to Top: Strategic Alliances -->
+  <path
+     d="m 497.87234,313.48936 q -10,-50 -20,-110"
+     class="connection-arrow"
+     marker-end="url(#arrow-connection)"
+     id="path25" />
+  <text
+     x="513.22699"
+     y="246.4326"
+     class="connection-label main-text"
+     id="text26">Strategic</text>
+  <text
+     x="513.22699"
+     y="256.43262"
+     class="connection-label main-text"
+     id="text27">Alliances</text>
+  <!-- Convergence to Goal -->
+  <line
+     x1="750"
+     y1="142"
+     x2="830"
+     y2="242"
+     class="visionary-track"
+     id="line27" />
+  <line
+     x1="750"
+     y1="342"
+     x2="830"
+     y2="242"
+     class="pragmatic-track"
+     id="line28" />
+  <!-- Goal Circle and Text -->
+  <circle
+     cx="864.89362"
+     cy="235.61703"
+     r="54.355293"
+     class="goal-circle"
+     id="circle28" />
+  <text
+     x="864.89362"
+     y="214.97873"
+     class="goal-text main-text"
+     id="text28">Full Treaty</text>
+  <text
+     x="864.89362"
+     y="229.97873"
+     class="goal-text main-text"
+     id="text29">Implementation</text>
+  <text
+     x="864.89362"
+     y="244.97873"
+     class="goal-text main-text"
+     id="text30">Resilient</text>
+  <text
+     x="864.89362"
+     y="259.97873"
+     class="goal-text main-text"
+     id="text31">Global System</text>
+</svg>
