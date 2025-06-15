@@ -92,13 +92,13 @@ Use consistent cross-reference formats:
 
 ```markdown
 <!-- Within same framework -->
-[Core Principles](/framework/docs/implementation/digital#core-principles)
+[Core Principles](/frameworks/docs/implementation/digital#core-principles)
 
 <!-- To other frameworks -->
-[Climate & Energy Governance](/framework/docs/implementation/energy)
+[Climate & Energy Governance](/frameworks/docs/implementation/energy)
 
 <!-- To tools -->
-[Conflict Analysis Framework](/framework/tools/peace/conflict-analysis-framework-en.pdf)
+[Conflict Analysis Framework](/frameworks/tools/peace/conflict-analysis-framework-en.pdf)
 ```
 
 ### 5. URL Path Structure and Naming

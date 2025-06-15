@@ -32,48 +32,48 @@ const LANGUAGES = ['en', 'sv'];
 
 // Define documents per language
 const documents = [
-  { path: '/framework/docs/principles', filename: 'Core-Principles.pdf', titleKey: 'Core Principles', format: 'single' },
-  { path: '/framework/docs/implementation', filename: 'Implementation-Guidelines.pdf', titleKey: 'Implementation Guidelines', format: 'single' },
-  { path: '/framework/docs/case-studies', filename: 'Case-Studies.pdf', titleKey: 'Case Studies', format: 'single' },
-  { path: '/framework/docs/resources', filename: 'Resources.pdf', titleKey: 'Resources', format: 'single' },
+  { path: '/frameworks/docs/principles', filename: 'Core-Principles.pdf', titleKey: 'Core Principles', format: 'single' },
+  { path: '/frameworks/docs/implementation', filename: 'Implementation-Guidelines.pdf', titleKey: 'Implementation Guidelines', format: 'single' },
+  { path: '/frameworks/docs/case-studies', filename: 'Case-Studies.pdf', titleKey: 'Case Studies', format: 'single' },
+  { path: '/frameworks/docs/resources', filename: 'Resources.pdf', titleKey: 'Resources', format: 'single' },
 
   // Global Citizenship Frameworks
-  { path: '/framework/global-citizenship/full-framework', filename: 'Global-Citizenship.pdf', titleKey: 'Global Citizenship', format: 'single' },
-  { path: '/framework/global-citizenship/4-page-overview', filename: 'Global-Citizenship-4-page-overview.pdf', titleKey: 'Global Citizenship 4-page summary', format: 'single' },
+  { path: '/frameworks/global-citizenship/full-framework', filename: 'Global-Citizenship.pdf', titleKey: 'Global Citizenship', format: 'single' },
+  { path: '/frameworks/global-citizenship/4-page-overview', filename: 'Global-Citizenship-4-page-overview.pdf', titleKey: 'Global Citizenship 4-page summary', format: 'single' },
 
   // Tiered Implementation Frameworks
-  { path: '/framework/docs/implementation/tier-1', filename: 'Tier-1-Urgent-Stability.pdf', titleKey: 'Tier 1 Overview', format: 'single' },
-  { path: '/framework/docs/implementation/tier-2', filename: 'Tier-2-Long-Term-Thriving.pdf', titleKey: 'Tier 2 Overview', format: 'single' },
-  { path: '/framework/docs/implementation/tier-3', filename: 'Tier-3-Equity-Culture.pdf', titleKey: 'Tier 3 Overview', format: 'single' },
-  { path: '/framework/docs/implementation/tier-4', filename: 'Tier-4-Visionary-Meta.pdf', titleKey: 'Tier 4 Overview', format: 'single' },
+  { path: '/frameworks/docs/implementation/tier-1', filename: 'Tier-1-Urgent-Stability.pdf', titleKey: 'Tier 1 Overview', format: 'single' },
+  { path: '/frameworks/docs/implementation/tier-2', filename: 'Tier-2-Long-Term-Thriving.pdf', titleKey: 'Tier 2 Overview', format: 'single' },
+  { path: '/frameworks/docs/implementation/tier-3', filename: 'Tier-3-Equity-Culture.pdf', titleKey: 'Tier 3 Overview', format: 'single' },
+  { path: '/frameworks/docs/implementation/tier-4', filename: 'Tier-4-Visionary-Meta.pdf', titleKey: 'Tier 4 Overview', format: 'single' },
 
   // Individual Implementation Domains (alphabetical)
-  { path: '/framework/docs/implementation/biodiversity', filename: 'Biodiversity-Governance.pdf', titleKey: 'Biodiversity Governance', format: 'modular' },
-  { path: '/framework/docs/implementation/energy', filename: 'Climate-Energy-Governance.pdf', titleKey: 'Climate & Energy Governance', format: 'single' },
-  { path: '/framework/docs/implementation/consciousness', filename: 'Consciousness-Inner-Development.pdf', titleKey: 'Consciousness & Inner Development', format: 'modular' },
-  { path: '/framework/docs/implementation/culture', filename: 'Cultural-Heritage.pdf', titleKey: 'Cultural Heritage Preservation', format: 'modular' },
-  { path: '/framework/docs/implementation/digital', filename: 'Digital-Commons-Framework.pdf', titleKey: 'Digital Commons', format: 'modular' },
-  { path: '/framework/docs/implementation/disaster', filename: 'Disaster-Resilience.pdf', titleKey: 'Disaster Risk Reduction & Resilience', format: 'modular' },
-  { path: '/framework/docs/implementation/economic', filename: 'Economic-Integration.pdf', titleKey: 'Economic Integration', format: 'single' },
-  { path: '/framework/docs/implementation/education', filename: 'Educational-Systems.pdf', titleKey: 'Educational Systems', format: 'modular' },
-  { path: '/framework/docs/implementation/environment', filename: 'Environmental-Stewardship.pdf', titleKey: 'Environmental Stewardship', format: 'single' },
-  { path: '/framework/docs/implementation/ethics', filename: 'Global-Ethics-Rights.pdf', titleKey: 'Global Ethics & Human Rights', format: 'single' },
-  { path: '/framework/docs/implementation/finance', filename: 'Financial-Systems.pdf', titleKey: 'Financial Systems', format: 'modular' },
-  { path: '/framework/docs/implementation/food-systems', filename: 'Food-Agriculture.pdf', titleKey: 'Food Systems & Agriculture', format: 'modular' },
-  { path: '/framework/docs/implementation/healthcare', filename: 'Healthcare-Governance.pdf', titleKey: 'Healthcare Governance', format: 'modular' },
-  { path: '/framework/docs/implementation/justice', filename: 'Justice-Systems.pdf', titleKey: 'Justice Systems', format: 'modular' },
-  { path: '/framework/docs/implementation/labor', filename: 'Labor-Employment.pdf', titleKey: 'Labor & Employment Governance', format: 'modular' },
-  { path: '/framework/docs/implementation/meta', filename: 'Meta-Governance.pdf', titleKey: 'Integrated Meta-Governance', format: 'single' },
-  { path: '/framework/docs/implementation/methods-tools', filename: 'Methods-Tools.pdf', titleKey: 'Implementation Methods & Tools', format: 'single' },
-  { path: '/framework/docs/implementation/migration', filename: 'Migration-Mobility.pdf', titleKey: 'Migration & Human Mobility', format: 'modular' },
-  { path: '/framework/docs/implementation/oceans', filename: 'Oceans-Marine-Governance.pdf', titleKey: 'Oceans & Marine Governance', format: 'modular' },
-  { path: '/framework/docs/implementation/peace', filename: 'Peace-Conflict-Resolution.pdf', titleKey: 'Peace & Conflict Resolution', format: 'single' },
-  { path: '/framework/docs/implementation/rural', filename: 'Rural-Development.pdf', titleKey: 'Rural Development', format: 'modular' },
-  { path: '/framework/docs/implementation/space', filename: 'Space-Governance.pdf', titleKey: 'Space Governance', format: 'modular' },
-  { path: '/framework/docs/implementation/spiritual', filename: 'Spiritual-Dialogue.pdf', titleKey: 'Religious & Spiritual Dialogue', format: 'single' },
-  { path: '/framework/docs/implementation/technology', filename: 'Technology-Governance.pdf', titleKey: 'Technology Governance', format: 'single' },
-  { path: '/framework/docs/implementation/urban', filename: 'Urban-Community.pdf', titleKey: 'Urban & Community Development', format: 'modular' },
-  { path: '/framework/docs/implementation/youth', filename: 'Youth-Governance.pdf', titleKey: 'Youth & Intergenerational Governance', format: 'modular' },
+  { path: '/frameworks/docs/implementation/biodiversity', filename: 'Biodiversity-Governance.pdf', titleKey: 'Biodiversity Governance', format: 'modular' },
+  { path: '/frameworks/docs/implementation/energy', filename: 'Climate-Energy-Governance.pdf', titleKey: 'Climate & Energy Governance', format: 'single' },
+  { path: '/frameworks/docs/implementation/consciousness', filename: 'Consciousness-Inner-Development.pdf', titleKey: 'Consciousness & Inner Development', format: 'modular' },
+  { path: '/frameworks/docs/implementation/culture', filename: 'Cultural-Heritage.pdf', titleKey: 'Cultural Heritage Preservation', format: 'modular' },
+  { path: '/frameworks/docs/implementation/digital', filename: 'Digital-Commons-Framework.pdf', titleKey: 'Digital Commons', format: 'modular' },
+  { path: '/frameworks/docs/implementation/disaster', filename: 'Disaster-Resilience.pdf', titleKey: 'Disaster Risk Reduction & Resilience', format: 'modular' },
+  { path: '/frameworks/docs/implementation/economic', filename: 'Economic-Integration.pdf', titleKey: 'Economic Integration', format: 'single' },
+  { path: '/frameworks/docs/implementation/education', filename: 'Educational-Systems.pdf', titleKey: 'Educational Systems', format: 'modular' },
+  { path: '/frameworks/docs/implementation/environment', filename: 'Environmental-Stewardship.pdf', titleKey: 'Environmental Stewardship', format: 'single' },
+  { path: '/frameworks/docs/implementation/ethics', filename: 'Global-Ethics-Rights.pdf', titleKey: 'Global Ethics & Human Rights', format: 'single' },
+  { path: '/frameworks/docs/implementation/finance', filename: 'Financial-Systems.pdf', titleKey: 'Financial Systems', format: 'modular' },
+  { path: '/frameworks/docs/implementation/food-systems', filename: 'Food-Agriculture.pdf', titleKey: 'Food Systems & Agriculture', format: 'modular' },
+  { path: '/frameworks/docs/implementation/healthcare', filename: 'Healthcare-Governance.pdf', titleKey: 'Healthcare Governance', format: 'modular' },
+  { path: '/frameworks/docs/implementation/justice', filename: 'Justice-Systems.pdf', titleKey: 'Justice Systems', format: 'modular' },
+  { path: '/frameworks/docs/implementation/labor', filename: 'Labor-Employment.pdf', titleKey: 'Labor & Employment Governance', format: 'modular' },
+  { path: '/frameworks/docs/implementation/meta', filename: 'Meta-Governance.pdf', titleKey: 'Integrated Meta-Governance', format: 'single' },
+  { path: '/frameworks/docs/implementation/methods-tools', filename: 'Methods-Tools.pdf', titleKey: 'Implementation Methods & Tools', format: 'single' },
+  { path: '/frameworks/docs/implementation/migration', filename: 'Migration-Mobility.pdf', titleKey: 'Migration & Human Mobility', format: 'modular' },
+  { path: '/frameworks/docs/implementation/oceans', filename: 'Oceans-Marine-Governance.pdf', titleKey: 'Oceans & Marine Governance', format: 'modular' },
+  { path: '/frameworks/docs/implementation/peace', filename: 'Peace-Conflict-Resolution.pdf', titleKey: 'Peace & Conflict Resolution', format: 'single' },
+  { path: '/frameworks/docs/implementation/rural', filename: 'Rural-Development.pdf', titleKey: 'Rural Development', format: 'modular' },
+  { path: '/frameworks/docs/implementation/space', filename: 'Space-Governance.pdf', titleKey: 'Space Governance', format: 'modular' },
+  { path: '/frameworks/docs/implementation/spiritual', filename: 'Spiritual-Dialogue.pdf', titleKey: 'Religious & Spiritual Dialogue', format: 'single' },
+  { path: '/frameworks/docs/implementation/technology', filename: 'Technology-Governance.pdf', titleKey: 'Technology Governance', format: 'single' },
+  { path: '/frameworks/docs/implementation/urban', filename: 'Urban-Community.pdf', titleKey: 'Urban & Community Development', format: 'modular' },
+  { path: '/frameworks/docs/implementation/youth', filename: 'Youth-Governance.pdf', titleKey: 'Youth & Intergenerational Governance', format: 'modular' },
 ];
 
 // Language-specific titles
@@ -322,7 +322,7 @@ async function generateAllPDFs() {
       const docsToGenerate = targetFramework 
         ? documents.filter(doc => {
             // Check if the path contains the specified framework
-            // This handles paths like '/framework/docs/implementation/economic'
+            // This handles paths like '/frameworks/docs/implementation/economic'
             const pathSegments = doc.path.split('/');
             return pathSegments.includes(targetFramework);
           })

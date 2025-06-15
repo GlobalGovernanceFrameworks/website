@@ -7,7 +7,7 @@
     en: {
       header: {
         title: "📊 Framework Performance Dashboard",
-        subtitle: "Interactive comparison of our governance frameworks across key ethical dimensions"
+        subtitle: "This dashboard is our public tool for transparency and accountability. It provides an interactive evaluation of each framework against its core ethical principles, allowing you to track our progress and identify areas for improvement as the project evolves."
       },
       legends: {
         frameworks: "📋 Select Frameworks:",
@@ -67,7 +67,7 @@
     sv: {
       header: {
         title: "📊 Ramverk Prestanda Dashboard",
-        subtitle: "Interaktiv jämförelse av våra styrningsramverk över viktiga etiska dimensioner"
+        subtitle: "Denna instrumentpanel är vårt offentliga verktyg för transparens och ansvarsskyldighet. Den ger en interaktiv utvärdering av varje ramverk mot dess centrala etiska principer, vilket gör att du kan följa våra framsteg och identifiera förbättringsområden allt eftersom projektet utvecklas."
       },
       legends: {
         frameworks: "📋 Välj Ramverk:",

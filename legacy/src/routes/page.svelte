@@ -33,7 +33,7 @@
       <p style="font-size: 1.25rem; color: #bfdbfe; margin-bottom: 2.5rem;">
         {$t('home.subtitle')}
       </p>
-      <a href="{base}/framework" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 500; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+      <a href="{base}/frameworks" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 500; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
         {$t('home.cta')}
       </a>
     </div>
@@ -111,7 +111,7 @@
     </div>
     
     <div style="text-align: center; margin-top: 2rem;">
-      <a href="{base}/framework" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+      <a href="{base}/frameworks" style="display: inline-block; background-color: #2563eb; color: white; font-weight: 500; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
         {$t('home.cta')}
       </a>
     </div>
@@ -207,7 +207,7 @@
         {$t('home.callToAction.text')}
       </p>
       <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; justify-content: center;">
-        <a href="{base}/framework" style="width: 100%; max-width: 20rem; display: inline-block; background-color: white; color: #1e40af; font-weight: 700; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+        <a href="{base}/frameworks" style="width: 100%; max-width: 20rem; display: inline-block; background-color: white; color: #1e40af; font-weight: 700; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
           {$t('home.callToAction.primaryButton')}
         </a>
         <a href="{base}/contact" style="width: 100%; max-width: 20rem; display: inline-block; background-color: transparent; border: 2px solid white; color: white; font-weight: 700; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; transition: all 0.2s;">

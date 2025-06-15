@@ -7,9 +7,13 @@
   },
   "intro": "Ladda ner vår ramverksdokumentation i PDF-format för offline-läsning, utskrift eller delning med andra. Dessa resurser är utformade för att hjälpa dig förstå och implementera Global Governance Framework i din kontext.",
   "cards": {
+    "treaty": {
+      "title": "Fördraget för vårt enda hem (Fullständigt ramverk)",
+      "description": "Det kompletta, implementeringsklara v1.0-ramverket. Detta dokument tillhandahåller den fullständiga arkitektoniska ritningen för att uppgradera global styrning för att hantera 2000-talets polykris."
+    },
     "principles": {
       "title": "Kärnprinciper",
-      "description": "De grundläggande principerna som vägleder Global Governance Framework, inklusive decentraliserad auktoritet, transparens, direkt deltagande och mer."
+      "description": "De grundläggande principerna som vägleder Global Governance Framework, inklusive decentraliserad auktoritet, transparens, direkt deltagande med mera."
     },
     "implementation": {
       "title": "Implementeringsriktlinjer",

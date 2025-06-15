@@ -211,5 +211,5 @@ Styrmodeller måste respektera och anpassas till kulturella sammanhang:
 
 Att implementera ramverket är i sig en styrningsprocess som bör följa de principer det främjar: transparens, delaktighet, anpassningsbarhet och kontextrespekt.
 
-För konkreta exempel på hur dessa metoder tillämpats i praktiken, se avsnittet [Fallstudier](/framework/docs/case-studies).
+För konkreta exempel på hur dessa metoder tillämpats i praktiken, se avsnittet [Fallstudier](/frameworks/docs/case-studies).
 

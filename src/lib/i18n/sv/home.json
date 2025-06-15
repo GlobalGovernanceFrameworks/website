@@ -8,14 +8,28 @@
     "paragraph1": "Detta projekt började som en personlig reflektion: Vad skulle krävas för att mänskligheten ska kunna blomstra tillsammans?",
     "paragraph2": "Sedan barndomen har jag (Björn Kenneth Holmström) varit fascinerad av djur, kulturer och jorden som ett gemensamt hem. Den tidiga känslan av förundran växte till en livslång drivkraft att stödja etiska och medkännande system som kan tjäna allt liv – mänskligt och bortom.",
     "paragraph3": "Det du ser här är inte en slutgiltig lösning. Det började som ett levande förslag. Ett samarbetsutkast till hur en mer sammankopplad, inkluderande och framtidssäkrad form av styrning kan se ut.",
-    "paragraph4": "Det erbjuds öppet – format genom samtal med AI-system som Claude, ChatGPT, Grok, DeepSeek och Gemini, och grundat i tron att god styrning måste växa fram ur gemensam visdom. Låt detta vara en början, inte ett svar. Du är inbjuden att utforska, ifrågasätta, bidra och förbättra det.",
-    "paragraph5": "Medan arbetet framskred började jag ifrågasätta det. Nu är det mer ett spekulativt arkiv. Använd det för att väcka kaos, mata drömmar – eller ignorera det. Författaren har gått vidare (fast ändå inte). Detta verk är fritt att mutera, försvinna eller förmultna. Erkännande valfritt. Om utomjordingar någonsin granskar jordens styrelseskick, må de nicka gillande åt dessa försök – innan de rådfrågar svamparna.🍄"
+    "paragraph4": "Det erbjuds öppet – format genom samtal med AI-system som Claude, ChatGPT, Grok, DeepSeek och Gemini, och grundat i tron att god styrning måste växa fram ur gemensam visdom. Låt detta vara en början, inte ett svar. Du är inbjuden att utforska, ifrågasätta, bidra och förbättra det."
+  },
+  "languageStatement": {
+    "title": "Språk och inkludering",
+    "paragraph1": "Sann global styrning måste tala alla språk. För att detta ramverk ska vara verkligt universellt måste det vara tillgängligt för alla. Vi är djupt engagerade i att göra 'Fördraget för vårt enda hem' och allt relaterat material tillgängligt på så många språk som möjligt.",
+    "paragraph2": "För närvarande underhålls kärndokumenten aktivt på engelska, som ett globalt diplomatiskt språk, och svenska, den inledande forskarens modersmål. Vi inser att detta bara är en utgångspunkt.",
+    "paragraph3": "Vi tror att det viktiga arbetet med översättning tillhör gemenskapen. Det är ett kraftfullt sätt att säkerställa att ramverkets koncept anpassas korrekt och resonerar inom olika kulturer. Om du är en modersmålstalare och tror på detta arbete, inbjuder vi dig varmt att hjälpa till att föra dessa idéer till din gemenskap.",
+    "button": "Gå med i översättningsarbetet"
   },
   "title": "Ramverk för Global Styrning",
   "subtitle": "Förbinder styrningsinnovationer över hela världen",
   "intro": {
     "heading": "Ramverk för en ny era av styrning",
     "text": "Utveckling av interoperabla system och driftsmodeller för global styrning som respekterar lokal autonomi samtidigt som de möjliggör effektiv samordning."
+  },
+  "treatyFeature": {
+    "heading": "Det grundläggande ramverket: Fördraget för vårt enda hem",
+    "lead": "Vårt omfattande, implementeringsklara svar på den globala polykrisen. Detta Tier 0-ramverk är den nödvändiga uppgraderingen av operativsystemet för global styrning under 2000-talet.",
+    "point1": "Reformerar centrala institutioner som FN:s säkerhetsråd.",
+    "point2": "Stärker internationell rätt med begrepp som ekocid.",
+    "point3": "Etablerar hållbar finansiering för globala kollektiva nyttigheter.",
+    "button": "Utforska fördraget"
   },
   "features": {
     "heading": "Nyckelfunktioner",
@@ -31,6 +45,11 @@
       "title": "Designmönster för Meta-Styrning",
       "description": "Gemensamma mönster som fungerar i olika styrningskontexter"
     }
+  },
+  "performanceTeaser": {
+    "heading": "Vårt Åtagande för Transparens",
+    "text": "Varje ramverk utvärderas kontinuerligt mot sina egna kärnprinciper. Vi tror på att transparent följa våra framsteg och hålla detta arbete ansvarigt gentemot dess uttalade etiska mål.",
+    "button": "Utforska Prestandapanelen"
   },
   "emergingPossibilities": {
     "heading": "Framväxande Globala Möjligheter",
@@ -73,7 +92,6 @@
     "secondaryButton": "Engagera Dig"
   },
   "cta": "Utforska Ramverket",
-  "dashboardIntro": "Se dessa principer i praktiken genom våra etiska påverkansmått",
   "globalCitizenship": {
     "title": "Ramverk för Globalt Medborgarskap i Praktiken",
     "lead": "Ett omfattande tillvägagångssätt för att främja planetär identitet och kollektiv handling",

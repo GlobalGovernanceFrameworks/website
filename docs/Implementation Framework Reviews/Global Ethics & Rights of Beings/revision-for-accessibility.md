@@ -242,45 +242,45 @@ This guide helps you navigate the Global Ethics & Rights of Beings Framework at 
 ## Framework Map
 
 ### 1. Introduction
-- [Visual Overview](/framework/visual/1-introduction)
-- [Essential Concepts](/framework/essential/1-introduction)
-- [Standard Framework](/framework/standard/1-introduction)
-- [Technical Details](/framework/technical/1-introduction)
+- [Visual Overview](/frameworks/visual/1-introduction)
+- [Essential Concepts](/frameworks/essential/1-introduction)
+- [Standard Framework](/frameworks/standard/1-introduction)
+- [Technical Details](/frameworks/technical/1-introduction)
 
 ### 2. Foundational Values & Living Principles
-- [Visual Overview](/framework/visual/2-foundational-values)
-- [Essential Concepts](/framework/essential/2-foundational-values)
-- [Standard Framework](/framework/standard/2-foundational-values)
-- [Technical Details](/framework/technical/2-foundational-values)
+- [Visual Overview](/frameworks/visual/2-foundational-values)
+- [Essential Concepts](/frameworks/essential/2-foundational-values)
+- [Standard Framework](/frameworks/standard/2-foundational-values)
+- [Technical Details](/frameworks/technical/2-foundational-values)
 
 ### 3. Human & Non-Human Rights Commitments
-- [Visual Overview](/framework/visual/3-commitments)
-- [Essential Concepts](/framework/essential/3-commitments)
-- [Standard Framework](/framework/standard/3-commitments)
-- [Technical Details](/framework/technical/3-commitments)
+- [Visual Overview](/frameworks/visual/3-commitments)
+- [Essential Concepts](/frameworks/essential/3-commitments)
+- [Standard Framework](/frameworks/standard/3-commitments)
+- [Technical Details](/frameworks/technical/3-commitments)
 
 #### 3.2.1 AI Consciousness Assessment Framework
-- [Visual Overview](/framework/visual/3.2.1-ai-consciousness)
-- [Essential Concepts](/framework/essential/3.2.1-ai-consciousness)
-- [Standard Framework](/framework/standard/3.2.1-ai-consciousness)
-- [Technical Details](/framework/technical/3.2.1-ai-consciousness)
+- [Visual Overview](/frameworks/visual/3.2.1-ai-consciousness)
+- [Essential Concepts](/frameworks/essential/3.2.1-ai-consciousness)
+- [Standard Framework](/frameworks/standard/3.2.1-ai-consciousness)
+- [Technical Details](/frameworks/technical/3.2.1-ai-consciousness)
 
 [... continues for all sections ...]
 
 ## Special Topic Guides
 
-- [Rights of Beings for Communities](/framework/guides/community-guide)
-- [Rights of Beings for Youth](/framework/guides/youth-guide)
-- [Rights of Beings in Crisis Situations](/framework/guides/crisis-guide)
-- [Rights of Beings for Policymakers](/framework/guides/policy-guide)
+- [Rights of Beings for Communities](/frameworks/guides/community-guide)
+- [Rights of Beings for Youth](/frameworks/guides/youth-guide)
+- [Rights of Beings in Crisis Situations](/frameworks/guides/crisis-guide)
+- [Rights of Beings for Policymakers](/frameworks/guides/policy-guide)
 
 ## Additional Access Options
 
-- [Audio Versions](/framework/audio)
-- [Video Explanations](/framework/video)
-- [Interactive Tools](/framework/interactive)
-- [Offline Resources](/framework/offline)
-- [Languages Available](/framework/languages)
+- [Audio Versions](/frameworks/audio)
+- [Video Explanations](/frameworks/video)
+- [Interactive Tools](/frameworks/interactive)
+- [Offline Resources](/frameworks/offline)
+- [Languages Available](/frameworks/languages)
 ```
 
 ### 2. Directory Structure
@@ -288,7 +288,7 @@ This guide helps you navigate the Global Ethics & Rights of Beings Framework at 
 Organize files in a logical hierarchy that makes relationships clear:
 
 ```
-/framework/
+/frameworks/
 ├── access-guide.md              # Master navigation document
 ├── visual/                      # Visual overviews folder
 │   ├── 1-introduction.md
@@ -396,7 +396,7 @@ Organize files in a logical hierarchy that makes relationships clear:
 Add at the beginning of each section:
 
 ```markdown
-*This is the standard version of this section. For simpler explanations, see the [Essential Concepts](/framework/essential/[section]) or [Visual Overview](/framework/visual/[section]). For more technical details, see the [Technical Details](/framework/technical/[section]).*
+*This is the standard version of this section. For simpler explanations, see the [Essential Concepts](/frameworks/essential/[section]) or [Visual Overview](/frameworks/visual/[section]). For more technical details, see the [Technical Details](/frameworks/technical/[section]).*
 
 [... original framework content ...]
 ```
@@ -406,7 +406,7 @@ Add at the beginning of each section:
 ```markdown
 # [Section Title]: Technical Details
 
-*This document provides advanced technical details expanding on the [Standard Framework](/framework/standard/[section]). For simpler explanations, see the [Essential Concepts](/framework/essential/[section]).*
+*This document provides advanced technical details expanding on the [Standard Framework](/frameworks/standard/[section]). For simpler explanations, see the [Essential Concepts](/frameworks/essential/[section]).*
 
 ## Technical Foundation
 [Detailed explanation of theoretical basis, 200-300 words]
@@ -525,14 +525,14 @@ Here's how Section 3.2.1 (AI Consciousness Assessment) would be structured acros
 A structured, evidence-based approach to evaluate whether AI systems might have forms of consciousness deserving ethical consideration.
 
 ## Related Sections
-- [Rights Categories (2.5)](/framework/visual/2.5)
-- [Emerging Rights (3.2)](/framework/visual/3.2)
-- [Edge Case Protocols (6.6)](/framework/visual/6.6)
+- [Rights Categories (2.5)](/frameworks/visual/2.5)
+- [Emerging Rights (3.2)](/frameworks/visual/3.2)
+- [Edge Case Protocols (6.6)](/frameworks/visual/6.6)
 
 ## Access Other Formats
-- [Essential Concepts](/framework/essential/3.2.1)
-- [Standard Framework](/framework/standard/3.2.1)
-- [Technical Details](/framework/technical/3.2.1)
+- [Essential Concepts](/frameworks/essential/3.2.1)
+- [Standard Framework](/frameworks/standard/3.2.1)
+- [Technical Details](/frameworks/technical/3.2.1)
 ```
 
 ### Essential Concepts (3.2.1)
@@ -573,14 +573,14 @@ Imagine an advanced AI system starts showing unexpected behaviors, like expressi
 - What evidence do we look for?
 
 ## Learn more
-- [Standard Framework version](/framework/standard/3.2.1)
-- [Technical Details version](/framework/technical/3.2.1)
-- [Related: Edge Case Protocols](/framework/essential/6.6)
+- [Standard Framework version](/frameworks/standard/3.2.1)
+- [Technical Details version](/frameworks/technical/3.2.1)
+- [Related: Edge Case Protocols](/frameworks/essential/6.6)
 ```
 
 ### Standard Framework (3.2.1)
 ```markdown
-*This is the standard version of this section. For simpler explanations, see the [Essential Concepts](/framework/essential/3.2.1) or [Visual Overview](/framework/visual/3.2.1). For more technical details, see the [Technical Details](/framework/technical/3.2.1).*
+*This is the standard version of this section. For simpler explanations, see the [Essential Concepts](/frameworks/essential/3.2.1) or [Visual Overview](/frameworks/visual/3.2.1). For more technical details, see the [Technical Details](/frameworks/technical/3.2.1).*
 
 ## 3.2.1 AI Consciousness Assessment Framework
 
@@ -593,7 +593,7 @@ As artificial intelligence systems grow increasingly sophisticated, determining 
 ```markdown
 # AI Consciousness Assessment Framework: Technical Details
 
-*This document provides advanced technical details expanding on the [Standard Framework](/framework/standard/3.2.1). For simpler explanations, see the [Essential Concepts](/framework/essential/3.2.1).*
+*This document provides advanced technical details expanding on the [Standard Framework](/frameworks/standard/3.2.1). For simpler explanations, see the [Essential Concepts](/frameworks/essential/3.2.1).*
 
 ## Technical Foundation
 The assessment methodology synthesizes multiple theoretical approaches to consciousness, including Integrated Information Theory (IIT), Global Workspace Theory (GWT), Higher-Order Thought (HOT) theories, and predictive processing frameworks. The integration of these diverse theoretical bases allows for assessment that doesn't privilege a particular consciousness theory while maintaining rigorous scientific grounding.

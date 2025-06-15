@@ -318,8 +318,8 @@
           <li class="nav-item dropdown" class:open={isDropdownOpen}>
             <div style="display: flex; justify-content: space-between; align-items: center;">
               <a 
-                href="{base}/framework"
-                class={`nav-link ${$page.url.pathname.startsWith(base + '/framework') ? 'active' : ''}`}
+                href="{base}/frameworks"
+                class={`nav-link ${$page.url.pathname.startsWith(base + '/frameworks') ? 'active' : ''}`}
               >
                 {$t('common.header.framework')}
                 <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -338,22 +338,22 @@
               </button>
             </div>
             <div class="dropdown-menu">
-              <a href="{base}/framework" class={$page.url.pathname === base + '/framework' ? 'active' : ''}>
+              <a href="{base}/frameworks" class={$page.url.pathname === base + '/frameworks' ? 'active' : ''}>
                 {$t('common.header.frameworkOverview')}
               </a>
-              <a href="{base}/framework/docs" class={$page.url.pathname === base + '/framework/docs' ? 'active' : ''}>
+              <a href="{base}/frameworks/docs" class={$page.url.pathname === base + '/frameworks/docs' ? 'active' : ''}>
                 {$t('common.header.frameworkDocs')}
               </a>
-              <a href="{base}/framework/docs/principles" class={$page.url.pathname === base + '/framework/docs/principles' ? 'active' : ''}>
+              <a href="{base}/frameworks/docs/principles" class={$page.url.pathname === base + '/frameworks/docs/principles' ? 'active' : ''}>
                 {$t('common.header.frameworkPrinciples')}
               </a>
-              <a href="{base}/framework/docs/implementation" class={$page.url.pathname === base + '/framework/docs/implementation' ? 'active' : ''}>
+              <a href="{base}/frameworks/docs/implementation" class={$page.url.pathname === base + '/frameworks/docs/implementation' ? 'active' : ''}>
                 {$t('common.header.frameworkImplementation')}
               </a>
-              <a href="{base}/framework/docs/case-studies" class={$page.url.pathname === base + '/framework/docs/case-studies' ? 'active' : ''}>
+              <a href="{base}/frameworks/docs/case-studies" class={$page.url.pathname === base + '/frameworks/docs/case-studies' ? 'active' : ''}>
                 {$t('common.header.frameworkCaseStudies')}
               </a>
-              <a href="{base}/framework/docs/resources" class={$page.url.pathname === base + '/framework/docs/resources' ? 'active' : ''}>
+              <a href="{base}/frameworks/docs/resources" class={$page.url.pathname === base + '/frameworks/docs/resources' ? 'active' : ''}>
                 {$t('common.header.frameworkResources')}
               </a>
             </div>

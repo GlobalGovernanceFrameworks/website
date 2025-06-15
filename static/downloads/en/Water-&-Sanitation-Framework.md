@@ -36,78 +36,78 @@ This framework represents the culmination of visionary thinking and practical im
 
 The framework flows organically from foundational vision through practical implementation, maintaining the integrated complexity essential to transformative water governance:
 
-**[Theory of Change](/framework/docs/implementation/water#theory-of-change)**: Maps how systemic inequities and environmental degradation can be transformed through human rights-based governance, regenerative technologies, and community empowerment.
+**[Theory of Change](/frameworks/docs/implementation/water#theory-of-change)**: Maps how systemic inequities and environmental degradation can be transformed through human rights-based governance, regenerative technologies, and community empowerment.
 
-**[1. Guiding Principles](/framework/docs/implementation/water#01-guiding-principles)**: Eleven foundational principles from human rights and water as sacred commons to climate resilience and planetary healing, with clear principles hierarchy for resolving conflicts.
+**[1. Guiding Principles](/frameworks/docs/implementation/water#01-guiding-principles)**: Eleven foundational principles from human rights and water as sacred commons to climate resilience and planetary healing, with clear principles hierarchy for resolving conflicts.
 
-**[2. Institutional & Policy Framework](/framework/docs/implementation/water#02-institutional-policy-framework)**: Multi-level governance structures from global treaties to local water assemblies, legal frameworks recognizing Rights of Nature, and sophisticated political economy analysis tools.
+**[2. Institutional & Policy Framework](/frameworks/docs/implementation/water#02-institutional-policy-framework)**: Multi-level governance structures from global treaties to local water assemblies, legal frameworks recognizing Rights of Nature, and sophisticated political economy analysis tools.
 
-**[3. Financing & Investment](/framework/docs/implementation/water#03-financing-investment)**: Comprehensive financial models including innovative mechanisms like WASH Sovereign Wealth Funds, community equity models, and circular finance, with detailed planning for capital and operating expenditures.
+**[3. Financing & Investment](/frameworks/docs/implementation/water#03-financing-investment)**: Comprehensive financial models including innovative mechanisms like WASH Sovereign Wealth Funds, community equity models, and circular finance, with detailed planning for capital and operating expenditures.
 
-**[4. Service Delivery & Infrastructure](/framework/docs/implementation/water#04-service-delivery-infrastructure)**: Universal access strategies using appropriate technologies from bio-inspired designs to smart water grids, with emphasis on decentralized microgrids and community-managed maintenance systems.
+**[4. Service Delivery & Infrastructure](/frameworks/docs/implementation/water#04-service-delivery-infrastructure)**: Universal access strategies using appropriate technologies from bio-inspired designs to smart water grids, with emphasis on decentralized microgrids and community-managed maintenance systems.
 
-**[5. Monitoring & Accountability](/framework/docs/implementation/water#05-monitoring-accountability)**: Advanced performance dashboard with real-time indicators, AI-powered predictive analytics, and adaptive management protocols, balanced with community-led monitoring and data sovereignty protections.
+**[5. Monitoring & Accountability](/frameworks/docs/implementation/water#05-monitoring-accountability)**: Advanced performance dashboard with real-time indicators, AI-powered predictive analytics, and adaptive management protocols, balanced with community-led monitoring and data sovereignty protections.
 
-**[6. Climate & Environmental Integration](/framework/docs/implementation/water#06-climate-environmental-integration)**: Regenerative water management mimicking natural cycles, ecosystem protection with specific metrics, and integration with planetary boundaries framework.
+**[6. Climate & Environmental Integration](/frameworks/docs/implementation/water#06-climate-environmental-integration)**: Regenerative water management mimicking natural cycles, ecosystem protection with specific metrics, and integration with planetary boundaries framework.
 
-**[7. Innovation & Knowledge Sharing](/framework/docs/implementation/water#07-innovation-knowledge-sharing)**: Global knowledge systems including open-source tech libraries, traditional knowledge patents, and comprehensive innovation ecosystem development.
+**[7. Innovation & Knowledge Sharing](/frameworks/docs/implementation/water#07-innovation-knowledge-sharing)**: Global knowledge systems including open-source tech libraries, traditional knowledge patents, and comprehensive innovation ecosystem development.
 
-**[8. Crisis Response & Adaptation](/framework/docs/implementation/water#08-crisis-response-adaptation)**: Multi-hazard emergency protocols, conflict-sensitive approaches, and comprehensive reconstruction standards for building back better.
+**[8. Crisis Response & Adaptation](/frameworks/docs/implementation/water#08-crisis-response-adaptation)**: Multi-hazard emergency protocols, conflict-sensitive approaches, and comprehensive reconstruction standards for building back better.
 
-**[9. Social & Behavioral Change](/framework/docs/implementation/water#09-social-behavioral-change)**: Community-led transformation through hygiene promotion, gender mainstreaming with specific targets, and culturally sensitive approaches including spiritual dimensions.
+**[9. Social & Behavioral Change](/frameworks/docs/implementation/water#09-social-behavioral-change)**: Community-led transformation through hygiene promotion, gender mainstreaming with specific targets, and culturally sensitive approaches including spiritual dimensions.
 
-**[10. Global Partnerships](/framework/docs/implementation/water#10-global-partnerships)**: Multi-stakeholder platforms, ethical private sector engagement, faith-based alliances, and comprehensive advocacy strategies for global adoption.
+**[10. Global Partnerships](/frameworks/docs/implementation/water#10-global-partnerships)**: Multi-stakeholder platforms, ethical private sector engagement, faith-based alliances, and comprehensive advocacy strategies for global adoption.
 
-**[11. Ethical & Systems Framing](/framework/docs/implementation/water#11-ethical-systems-framing)**: Advanced concepts including hydro-feminism, post-growth WASH, intergenerational governance, and systems integration across health, education, economic, energy, and food systems.
+**[11. Ethical & Systems Framing](/frameworks/docs/implementation/water#11-ethical-systems-framing)**: Advanced concepts including hydro-feminism, post-growth WASH, intergenerational governance, and systems integration across health, education, economic, energy, and food systems.
 
-**[Implementation Roadmap](/framework/docs/implementation/water#implementation-roadmap)**: Four-phase implementation from preparation through institutionalization, with adaptive management framework and digital governance architecture.
+**[Implementation Roadmap](/frameworks/docs/implementation/water#implementation-roadmap)**: Four-phase implementation from preparation through institutionalization, with adaptive management framework and digital governance architecture.
 
-**[Regional Implementation Blueprints](/framework/docs/implementation/water#regional-implementation-blueprints)**: Continent-specific strategies for Africa, Asia, Latin America, Small Island States, and Arctic regions.
+**[Regional Implementation Blueprints](/frameworks/docs/implementation/water#regional-implementation-blueprints)**: Continent-specific strategies for Africa, Asia, Latin America, Small Island States, and Arctic regions.
 
-**[Visual & Accessibility Aids](/framework/docs/implementation/water#visual-accessibility-aids)**: Comprehensive communication strategies from executive summaries to graphic novels, ensuring accessibility across literacy levels and cultural contexts.
+**[Visual & Accessibility Aids](/frameworks/docs/implementation/water#visual-accessibility-aids)**: Comprehensive communication strategies from executive summaries to graphic novels, ensuring accessibility across literacy levels and cultural contexts.
 
-**[Glossary](/framework/docs/implementation/water#glossary)**: Comprehensive glossary explaining key terms, concepts, and innovations from traditional water wisdom to cutting-edge governance approaches, providing clear definitions that bridge Indigenous knowledge, technical terminology, and transformative frameworks.
+**[Glossary](/frameworks/docs/implementation/water#glossary)**: Comprehensive glossary explaining key terms, concepts, and innovations from traditional water wisdom to cutting-edge governance approaches, providing clear definitions that bridge Indigenous knowledge, technical terminology, and transformative frameworks.
 
 ## <a id="implementation-tools"></a>Implementation Tools
 
 The framework provides comprehensive tools for immediate implementation, bridging transformative vision with practical action:
 
-- **[Start with the Sacred Waters Kit](/framework/tools/water/sacred-waters-kit-en.zip)**: Complete package for launching community-centered WASH governance pilots, integrating Indigenous protocols with modern implementation tools.
+- **[Start with the Sacred Waters Kit](/frameworks/tools/water/sacred-waters-kit-en.zip)**: Complete package for launching community-centered WASH governance pilots, integrating Indigenous protocols with modern implementation tools.
 
 **Core Governance Tools**:
-- [Power Analysis Toolkit](/framework/tools/water/power-analysis-toolkit-en.pdf): Map stakeholders, build coalitions, and navigate resistance
-- [Water Rights Legal Template](/framework/tools/water/water-rights-legal-template-en.pdf): Model legislation for Rights of Nature implementation
-- [Community Water Assembly Guide](/framework/tools/water/community-water-assembly-guide-en.pdf): Establish participatory governance structures
-- [WASH Constitutional Amendment Toolkit](/framework/tools/water/wash-constitutional-amendment-toolkit-en.pdf): Legal strategies for enshrining water rights
+- [Power Analysis Toolkit](/frameworks/tools/water/power-analysis-toolkit-en.pdf): Map stakeholders, build coalitions, and navigate resistance
+- [Water Rights Legal Template](/frameworks/tools/water/water-rights-legal-template-en.pdf): Model legislation for Rights of Nature implementation
+- [Community Water Assembly Guide](/frameworks/tools/water/community-water-assembly-guide-en.pdf): Establish participatory governance structures
+- [WASH Constitutional Amendment Toolkit](/frameworks/tools/water/wash-constitutional-amendment-toolkit-en.pdf): Legal strategies for enshrining water rights
 
 **Technology & Innovation Tools**:
-- [Microgrid Planning Toolkit](/framework/tools/water/microgrid-planning-toolkit-en.pdf): Design community-scale water systems
-- [AI Bias Audit Framework](/framework/tools/water/ai-bias-audit-framework-en.pdf): Ensure equitable technology deployment
-- [Traditional Knowledge Protection Guide](/framework/tools/water/traditional-knowledge-protection-en.pdf): Safeguard Indigenous water wisdom
-- [Open Source WASH Tech Library](/framework/tools/water/open-source-wash-tech-library-en.pdf): Access to community-developed solutions
+- [Microgrid Planning Toolkit](/frameworks/tools/water/microgrid-planning-toolkit-en.pdf): Design community-scale water systems
+- [AI Bias Audit Framework](/frameworks/tools/water/ai-bias-audit-framework-en.pdf): Ensure equitable technology deployment
+- [Traditional Knowledge Protection Guide](/frameworks/tools/water/traditional-knowledge-protection-en.pdf): Safeguard Indigenous water wisdom
+- [Open Source WASH Tech Library](/frameworks/tools/water/open-source-wash-tech-library-en.pdf): Access to community-developed solutions
 
 **Financial Planning Tools**:
-- [WASH Sovereign Wealth Fund Model](/framework/tools/water/wash-sovereign-wealth-fund-model-en.pdf): National financing strategies
-- [Community Equity Model Template](/framework/tools/water/community-equity-model-template-en.pdf): Cooperative ownership structures
-- [Carbon-Water Credit Calculator](/framework/tools/water/carbon-water-credit-calculator-en.pdf): Ecosystem service financing
-- [Circular Finance Planning Tool](/framework/tools/water/circular-finance-planning-en.pdf): Revenue from waste recovery
+- [WASH Sovereign Wealth Fund Model](/frameworks/tools/water/wash-sovereign-wealth-fund-model-en.pdf): National financing strategies
+- [Community Equity Model Template](/frameworks/tools/water/community-equity-model-template-en.pdf): Cooperative ownership structures
+- [Carbon-Water Credit Calculator](/frameworks/tools/water/carbon-water-credit-calculator-en.pdf): Ecosystem service financing
+- [Circular Finance Planning Tool](/frameworks/tools/water/circular-finance-planning-en.pdf): Revenue from waste recovery
 
 **Crisis Response Tools**:
-- [Emergency WASH Response Protocols](/framework/tools/water/emergency-wash-response-protocols-en.pdf): Rapid deployment strategies
-- [Conflict-Sensitive WASH Guidelines](/framework/tools/water/conflict-sensitive-wash-guidelines-en.pdf): Peace-building through water cooperation
-- [Climate Adaptation Planning Tool](/framework/tools/water/climate-adaptation-planning-tool-en.pdf): Build resilience into water systems
+- [Emergency WASH Response Protocols](/frameworks/tools/water/emergency-wash-response-protocols-en.pdf): Rapid deployment strategies
+- [Conflict-Sensitive WASH Guidelines](/frameworks/tools/water/conflict-sensitive-wash-guidelines-en.pdf): Peace-building through water cooperation
+- [Climate Adaptation Planning Tool](/frameworks/tools/water/climate-adaptation-planning-tool-en.pdf): Build resilience into water systems
 
 **Monitoring & Evaluation Tools**:
-- [Performance Dashboard Template](/framework/tools/water/performance-dashboard-template-en.pdf): Track real-time indicators and early warning signals
-- [Community Monitoring Toolkit](/framework/tools/water/community-monitoring-toolkit-en.pdf): Citizen science and participatory evaluation
-- [Hydrological Justice Assessment](/framework/tools/water/hydrological-justice-assessment-en.pdf): Measure systemic equity and ecosystem health
+- [Performance Dashboard Template](/frameworks/tools/water/performance-dashboard-template-en.pdf): Track real-time indicators and early warning signals
+- [Community Monitoring Toolkit](/frameworks/tools/water/community-monitoring-toolkit-en.pdf): Citizen science and participatory evaluation
+- [Hydrological Justice Assessment](/frameworks/tools/water/hydrological-justice-assessment-en.pdf): Measure systemic equity and ecosystem health
 
 **Framework Guides**:
-- [WASH Governance Executive Summary](/framework/tools/water/executive-summary-en.pdf): Two-page overview for policymakers
-- [Quick Implementation Guide](/framework/tools/water/quick-implementation-guide-en.pdf): Fast-track pathway for urgent contexts
-- [Youth Leadership Development Guide](/framework/tools/water/youth-leadership-guide-en.pdf): Build next-generation water stewards
+- [WASH Governance Executive Summary](/frameworks/tools/water/executive-summary-en.pdf): Two-page overview for policymakers
+- [Quick Implementation Guide](/frameworks/tools/water/quick-implementation-guide-en.pdf): Fast-track pathway for urgent contexts
+- [Youth Leadership Development Guide](/frameworks/tools/water/youth-leadership-guide-en.pdf): Build next-generation water stewards
 
-All tools available in PDF and editable formats. Access the complete [WASH Tools Library](/framework/tools/water) for all versions, translations, and interactive tools.
+All tools available in PDF and editable formats. Access the complete [WASH Tools Library](/frameworks/tools/water) for all versions, translations, and interactive tools.
 
 ## <a id="access-and-usage"></a>Access and Usage
 
@@ -281,7 +281,7 @@ Many cultures understand water as sacred, alive, and central to spiritual practi
 
 **Theory Application**: This Theory of Change provides the conceptual foundation for all framework components, explaining why specific governance structures, financing mechanisms, technologies, and implementation approaches are necessary for achieving transformative outcomes. Each framework section operationalizes different aspects of this theory while maintaining coherence with its core logic.
 
-**Next Steps**: The [Guiding Principles](/framework/docs/implementation/water#01-guiding-principles) section translates this theory into operational values and commitments that guide all framework implementation.
+**Next Steps**: The [Guiding Principles](/frameworks/docs/implementation/water#01-guiding-principles) section translates this theory into operational values and commitments that guide all framework implementation.
 
 
 # 1. Guiding Principles
@@ -442,7 +442,7 @@ When principles conflict, use this process:
 ### **Decision-Making Integration**
 Every governance decision should be evaluated against all eleven principles through structured assessment processes. This integration prevents compartmentalized thinking while ensuring comprehensive attention to multiple values simultaneously.
 
-**Implementation Tool**: Use the [Principles Assessment Matrix](/framework/tools/water/principles-assessment-matrix-en.pdf) to evaluate proposed policies, projects, and governance changes against all principles with scoring and improvement recommendations.
+**Implementation Tool**: Use the [Principles Assessment Matrix](/frameworks/tools/water/principles-assessment-matrix-en.pdf) to evaluate proposed policies, projects, and governance changes against all principles with scoring and improvement recommendations.
 
 ### **Institutional Integration**
 Governance institutions must embed these principles in their structures, processes, and accountability mechanisms. This includes constitutional recognition, legislative frameworks, regulatory standards, and institutional mandates that operationalize principles rather than treating them as aspirational statements.
@@ -485,7 +485,7 @@ Principles must bridge intergenerational knowledge by honoring elder wisdom whil
 
 ---
 
-**Principles Application**: These guiding principles inform every aspect of framework implementation, from institutional design and financing mechanisms to technology deployment and crisis response. The [Institutional & Policy Framework](/framework/docs/implementation/water#02-institutional-policy-framework) section demonstrates how these principles translate into concrete governance structures and legal frameworks.
+**Principles Application**: These guiding principles inform every aspect of framework implementation, from institutional design and financing mechanisms to technology deployment and crisis response. The [Institutional & Policy Framework](/frameworks/docs/implementation/water#02-institutional-policy-framework) section demonstrates how these principles translate into concrete governance structures and legal frameworks.
 
 **Living Document**: These principles will evolve through implementation experience and ongoing dialogue with water stewards worldwide. Regular review processes will strengthen and deepen principles while maintaining core commitments to justice, sustainability, and regeneration.
 
@@ -726,7 +726,7 @@ This framework establishes governance architectures that center community self-d
 
 ---
 
-**Implementation Integration**: This institutional and policy framework provides the governance foundation for implementing all other framework components. The [Financing & Investment](/framework/docs/implementation/water#03-financing-investment) section demonstrates how these institutions enable innovative financing approaches while maintaining community control and public accountability.
+**Implementation Integration**: This institutional and policy framework provides the governance foundation for implementing all other framework components. The [Financing & Investment](/frameworks/docs/implementation/water#03-financing-investment) section demonstrates how these institutions enable innovative financing approaches while maintaining community control and public accountability.
 
 **Adaptive Implementation**: These institutional models will evolve through implementation experience across diverse contexts. Regular review processes will strengthen governance approaches while maintaining core commitments to participation, accountability, and ecological integrity.
 
@@ -990,7 +990,7 @@ This financing framework combines robust public investment, innovative cooperati
 
 ---
 
-**Financial Integration**: This financing framework enables all other framework components by providing sustainable resource mobilization that maintains community control and democratic accountability. The [Service Delivery & Infrastructure](/framework/docs/implementation/water#04-service-delivery-infrastructure) section demonstrates how these financing approaches support technology deployment and infrastructure development that serves communities rather than profit.
+**Financial Integration**: This financing framework enables all other framework components by providing sustainable resource mobilization that maintains community control and democratic accountability. The [Service Delivery & Infrastructure](/frameworks/docs/implementation/water#04-service-delivery-infrastructure) section demonstrates how these financing approaches support technology deployment and infrastructure development that serves communities rather than profit.
 
 **Living Financial Framework**: These financing approaches will evolve through implementation experience and changing economic conditions. Regular review processes will strengthen financing effectiveness while maintaining core commitments to equity, sustainability, and community empowerment.
 
@@ -1242,7 +1242,7 @@ This framework prioritizes decentralized, community-controlled systems that inte
 
 ---
 
-**Infrastructure Integration**: This service delivery and infrastructure framework provides the technical foundation for implementing human rights commitments through community-controlled systems that regenerate rather than degrade natural environments. The [Monitoring & Accountability](/framework/docs/implementation/water#05-monitoring-accountability) section demonstrates how communities can track and improve infrastructure performance while maintaining democratic control over evaluation processes.
+**Infrastructure Integration**: This service delivery and infrastructure framework provides the technical foundation for implementing human rights commitments through community-controlled systems that regenerate rather than degrade natural environments. The [Monitoring & Accountability](/frameworks/docs/implementation/water#05-monitoring-accountability) section demonstrates how communities can track and improve infrastructure performance while maintaining democratic control over evaluation processes.
 
 **Technology Evolution**: These infrastructure approaches will continue evolving through community innovation, technical advancement, and learning from implementation across diverse contexts. Regular review processes will strengthen technical approaches while maintaining core commitments to community ownership, ecological regeneration, and universal access.
 
@@ -1484,7 +1484,7 @@ This framework establishes accountability systems that combine community self-ev
 
 ---
 
-**Accountability Integration**: This monitoring and accountability framework ensures that all other framework components serve community empowerment and human rights realization through transparent, participatory evaluation systems. The [Climate & Environmental Integration](/framework/docs/implementation/water#06-climate-environmental-integration) section demonstrates how these accountability systems track environmental outcomes while maintaining community control over evaluation priorities.
+**Accountability Integration**: This monitoring and accountability framework ensures that all other framework components serve community empowerment and human rights realization through transparent, participatory evaluation systems. The [Climate & Environmental Integration](/frameworks/docs/implementation/water#06-climate-environmental-integration) section demonstrates how these accountability systems track environmental outcomes while maintaining community control over evaluation priorities.
 
 **Evolving Accountability**: These accountability approaches will strengthen through implementation experience and community innovation. Regular review processes will improve monitoring effectiveness while maintaining core commitments to community agency, transparency, and rights-based evaluation.
 
@@ -1734,7 +1734,7 @@ This framework integrates water governance with planetary healing through regene
 
 ---
 
-**Environmental Integration**: This climate and environmental framework ensures that water governance contributes to planetary healing while building resilience to climate impacts. The [Innovation & Knowledge Sharing](/framework/docs/implementation/water#07-innovation-knowledge-sharing) section demonstrates how environmental solutions can be developed and shared through collaborative innovation networks that respect traditional knowledge while advancing ecological restoration.
+**Environmental Integration**: This climate and environmental framework ensures that water governance contributes to planetary healing while building resilience to climate impacts. The [Innovation & Knowledge Sharing](/frameworks/docs/implementation/water#07-innovation-knowledge-sharing) section demonstrates how environmental solutions can be developed and shared through collaborative innovation networks that respect traditional knowledge while advancing ecological restoration.
 
 **Planetary Stewardship**: These environmental approaches will evolve through implementation experience and deepening understanding of Earth system science and traditional ecological knowledge. Regular review processes will strengthen environmental integration while maintaining core commitments to ecosystem health, climate justice, and community stewardship.
 
@@ -1982,7 +1982,7 @@ This framework establishes innovation systems that prioritize community ownershi
 
 ---
 
-**Innovation Integration**: This innovation and knowledge sharing framework ensures that technological development serves community empowerment and traditional knowledge preservation while democratizing access to transformative solutions. The [Crisis Response & Adaptation](/framework/docs/implementation/water#08-crisis-response-adaptation) section demonstrates how these innovation systems can rapidly respond to emergencies while maintaining community ownership and cultural sensitivity.
+**Innovation Integration**: This innovation and knowledge sharing framework ensures that technological development serves community empowerment and traditional knowledge preservation while democratizing access to transformative solutions. The [Crisis Response & Adaptation](/frameworks/docs/implementation/water#08-crisis-response-adaptation) section demonstrates how these innovation systems can rapidly respond to emergencies while maintaining community ownership and cultural sensitivity.
 
 **Living Innovation**: These innovation approaches will continue evolving through community experimentation, traditional knowledge integration, and collaborative development across diverse contexts. Regular review processes will strengthen innovation effectiveness while maintaining core commitments to community ownership, traditional knowledge respect, and open source collaboration.
 
@@ -2222,7 +2222,7 @@ This framework establishes crisis response approaches that combine immediate hum
 
 ---
 
-**Crisis Response Integration**: This crisis response and adaptation framework ensures that emergency response strengthens rather than undermines community resilience and water justice while saving lives and protecting dignity during crisis. The [Social & Behavioral Change](/framework/docs/implementation/water#09-social-behavioral-change) section demonstrates how crisis response can be integrated with long-term social transformation and community empowerment approaches.
+**Crisis Response Integration**: This crisis response and adaptation framework ensures that emergency response strengthens rather than undermines community resilience and water justice while saving lives and protecting dignity during crisis. The [Social & Behavioral Change](/frameworks/docs/implementation/water#09-social-behavioral-change) section demonstrates how crisis response can be integrated with long-term social transformation and community empowerment approaches.
 
 **Adaptive Crisis Response**: These crisis response approaches will continue evolving through experience with diverse crisis types and community innovation in response strategies. Regular review processes will strengthen response effectiveness while maintaining core commitments to community leadership, trauma-informed approaches, and justice-centered recovery.
 
@@ -2460,7 +2460,7 @@ This framework establishes social change approaches that strengthen community so
 
 ---
 
-**Social Change Integration**: This social and behavioral change framework ensures that transformation serves community empowerment and cultural preservation while addressing barriers to water justice and collective liberation. The [Global Partnerships](/framework/docs/implementation/water#10-global-partnerships) section demonstrates how community-led social change can be supported through solidarity networks and international cooperation that strengthens rather than undermines local autonomy.
+**Social Change Integration**: This social and behavioral change framework ensures that transformation serves community empowerment and cultural preservation while addressing barriers to water justice and collective liberation. The [Global Partnerships](/frameworks/docs/implementation/water#10-global-partnerships) section demonstrates how community-led social change can be supported through solidarity networks and international cooperation that strengthens rather than undermines local autonomy.
 
 **Living Social Change**: These social transformation approaches will continue evolving through community innovation, cultural adaptation, and learning from diverse contexts and experiences. Regular review processes will strengthen social change effectiveness while maintaining core commitments to community agency, cultural respect, and collective liberation.
 
@@ -2706,7 +2706,7 @@ This framework establishes partnership approaches that strengthen community auto
 
 ---
 
-**Partnership Integration**: This global partnerships framework ensures that international cooperation serves community empowerment and water justice while challenging rather than reproducing colonial relationships and power imbalances. The [Ethical & Systems Framing](/framework/docs/implementation/water#11-ethical-systems-framing) section demonstrates how these partnership approaches are grounded in transformative values and systems thinking that guides all framework implementation.
+**Partnership Integration**: This global partnerships framework ensures that international cooperation serves community empowerment and water justice while challenging rather than reproducing colonial relationships and power imbalances. The [Ethical & Systems Framing](/frameworks/docs/implementation/water#11-ethical-systems-framing) section demonstrates how these partnership approaches are grounded in transformative values and systems thinking that guides all framework implementation.
 
 **Evolving Partnerships**: These partnership approaches will continue evolving through movement building, community organizing, and global solidarity development across diverse contexts and struggles. Regular review processes will strengthen partnership effectiveness while maintaining core commitments to community leadership, horizontal solidarity, and anti-colonial practice.
 
@@ -3004,7 +3004,7 @@ This framework establishes ethical and systems foundations that support regenera
 
 ---
 
-**Ethical Systems Integration**: This ethical and systems framework provides the philosophical foundation that grounds all other framework components in transformative values and holistic understanding while ensuring implementation serves life and liberation. The [Implementation Roadmap](/framework/docs/implementation/water#implementation-roadmap) section demonstrates how these ethical and systems approaches guide practical implementation across all phases of framework development.
+**Ethical Systems Integration**: This ethical and systems framework provides the philosophical foundation that grounds all other framework components in transformative values and holistic understanding while ensuring implementation serves life and liberation. The [Implementation Roadmap](/frameworks/docs/implementation/water#implementation-roadmap) section demonstrates how these ethical and systems approaches guide practical implementation across all phases of framework development.
 
 **Living Philosophy**: These ethical and systems approaches will continue evolving through implementation experience, community wisdom, and deepening understanding of transformative change. Regular review processes will strengthen philosophical foundations while maintaining core commitments to life, justice, and planetary healing.
 
@@ -3859,7 +3859,7 @@ The Arctic region faces unique water challenges including permafrost changes, ex
 
 ---
 
-**Regional Integration**: These regional implementation blueprints demonstrate how the framework can be adapted to diverse continental contexts while maintaining core commitments to community empowerment, environmental protection, and social justice. The [Visual & Accessibility Aids](/framework/docs/implementation/water#visual-accessibility-aids) section provides communication tools and resources that support implementation across all regional contexts while respecting linguistic and cultural diversity.
+**Regional Integration**: These regional implementation blueprints demonstrate how the framework can be adapted to diverse continental contexts while maintaining core commitments to community empowerment, environmental protection, and social justice. The [Visual & Accessibility Aids](/frameworks/docs/implementation/water#visual-accessibility-aids) section provides communication tools and resources that support implementation across all regional contexts while respecting linguistic and cultural diversity.
 
 **Living Regional Strategies**: These regional blueprints will continue evolving through implementation experience, community innovation, and cross-regional learning and solidarity. Regular review processes will strengthen regional effectiveness while maintaining core commitments to community leadership, cultural preservation, and transformative change.
 

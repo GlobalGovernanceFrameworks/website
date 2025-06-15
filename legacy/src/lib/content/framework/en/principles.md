@@ -155,4 +155,4 @@ Cosmic ethics extends our governance principles beyond Earth, ensuring that spac
 
 These principles are not abstract ideals but practical guides for governance design. They work together as an integrated system—transparency enables participation, decentralization preserves cultural autonomy, and resource justice supports human rights.
 
-To learn how to implement these principles in practice, see the [Implementation Guidelines](/framework/docs/implementation) section of the framework.
+To learn how to implement these principles in practice, see the [Implementation Guidelines](/frameworks/docs/implementation) section of the framework.

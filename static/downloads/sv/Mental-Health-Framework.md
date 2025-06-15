@@ -36,85 +36,85 @@ Detta ramverk presenterar ett revolutionerande **globalt styrningssystem för ps
 Ramverket flödar i en mandala-liknande struktur—koncentriska cirklar av transformation som strålar ut från kärnprinciper till global implementering, som hedrar både systematisk styrning och läkningens organiska natur:
 
 **Kärncirkel - Grund**
-1. **[Vision och vägledande principer](/framework/docs/implementation/mental-health#01-vision-principles)**: *"Psykisk hälsa som transkulturell mänsklig rättighet, psykosocialt välmående genom människo-planetärt ömsesidigt beroende."* — Rättighetsbaserad vård, neurodiversitetsfirande, existentiell förankring och medvetandeinkluderande läkning.
+1. **[Vision och vägledande principer](/frameworks/docs/implementation/mental-health#01-vision-principles)**: *"Psykisk hälsa som transkulturell mänsklig rättighet, psykosocialt välmående genom människo-planetärt ömsesidigt beroende."* — Rättighetsbaserad vård, neurodiversitetsfirande, existentiell förankring och medvetandeinkluderande läkning.
 
-2. **[Styrning och institutionella strukturer](/framework/docs/implementation/mental-health#02-governance-structures)**: *"Gemenskapssuveränitet i berättelser om psykisk hälsa."* — Global koordination via WHO-reform, nationella kommissioner för psykisk hälsa, gemenskapsledda arbetsgrupper och ungdomsparlament för psykisk hälsa.
+2. **[Styrning och institutionella strukturer](/frameworks/docs/implementation/mental-health#02-governance-structures)**: *"Gemenskapssuveränitet i berättelser om psykisk hälsa."* — Global koordination via WHO-reform, nationella kommissioner för psykisk hälsa, gemenskapsledda arbetsgrupper och ungdomsparlament för psykisk hälsa.
 
 **Mittcirkel - Implementering**
-3. **[Juridiska och policyramverk](/framework/docs/implementation/mental-health#03-legal-policy)**: *"Från tvång till omsorg, från patologi till välmående."* — Antidiskrimineringslagar, rättighetsbaserad lagstiftning med avvecklingsklausuler, internationellt fördrag om rättigheter för psykisk hälsa och juridiska implementeringsguider.
+3. **[Juridiska och policyramverk](/frameworks/docs/implementation/mental-health#03-legal-policy)**: *"Från tvång till omsorg, från patologi till välmående."* — Antidiskrimineringslagar, rättighetsbaserad lagstiftning med avvecklingsklausuler, internationellt fördrag om rättigheter för psykisk hälsa och juridiska implementeringsguider.
 
-4. **[Finansiering och resurshantering](/framework/docs/implementation/mental-health#04-financing-resources)**: *"Hållbar finansiering för kollektiv läkning."* — ≥5% budgetmandat, global fond för psykisk hälsa, innovativ finansiering och rätt till vila-policys.
+4. **[Finansiering och resurshantering](/frameworks/docs/implementation/mental-health#04-financing-resources)**: *"Hållbar finansiering för kollektiv läkning."* — ≥5% budgetmandat, global fond för psykisk hälsa, innovativ finansiering och rätt till vila-policys.
 
-5. **[Tjänsteleverans och arbetskraft](/framework/docs/implementation/mental-health#05-service-delivery)**: *"Integrerad vård som hedrar alla läkningstraditioner."* — Integration av traditionell läkning, kamratledda nätverk, psykedelisk-assisterade terapilabb och kulturell kompetensutbildning.
+5. **[Tjänsteleverans och arbetskraft](/frameworks/docs/implementation/mental-health#05-service-delivery)**: *"Integrerad vård som hedrar alla läkningstraditioner."* — Integration av traditionell läkning, kamratledda nätverk, psykedelisk-assisterade terapilabb och kulturell kompetensutbildning.
 
 **Yttre cirkel - Ansvarsskyldighet och innovation**
-6. **[Övervakning, utvärdering och ansvarsskyldighet](/framework/docs/implementation/mental-health#06-monitoring-accountability)**: *"Gemenskapsledd övervakning med välmåendemått."* — Global vakthund för psykisk hälsa, trafikljussystem, transparensdashboards och granskning av narrativ rättvisa.
+6. **[Övervakning, utvärdering och ansvarsskyldighet](/frameworks/docs/implementation/mental-health#06-monitoring-accountability)**: *"Gemenskapsledd övervakning med välmåendemått."* — Global vakthund för psykisk hälsa, trafikljussystem, transparensdashboards och granskning av narrativ rättvisa.
 
-7. **[Kris- och akutrespons](/framework/docs/implementation/mental-health#07-crisis-response)**: *"Snabb, kulturellt förankrad psykisk hälsostöd."* — Globalt snabbresponsteam för psykisk hälsa, kris-DAOs, pandemiberedskap och övergångsprotokoll efter kris.
+7. **[Kris- och akutrespons](/frameworks/docs/implementation/mental-health#07-crisis-response)**: *"Snabb, kulturellt förankrad psykisk hälsostöd."* — Globalt snabbresponsteam för psykisk hälsa, kris-DAOs, pandemiberedskap och övergångsprotokoll efter kris.
 
-8. **[Innovation och forskning](/framework/docs/implementation/mental-health#08-innovation-research)**: *"Pluralistiska epistemologier och medvetandeforskning."* — Global F&U-fond för psykisk hälsa, forskning om medvetandeinkluderande läkning, etisk AI-utveckling och innovationslabb.
+8. **[Innovation och forskning](/frameworks/docs/implementation/mental-health#08-innovation-research)**: *"Pluralistiska epistemologier och medvetandeforskning."* — Global F&U-fond för psykisk hälsa, forskning om medvetandeinkluderande läkning, etisk AI-utveckling och innovationslabb.
 
 **Integrationscirkel - Transformation**
-9. **[Övergripande teman](/framework/docs/implementation/mental-health#09-cross-cutting-themes)**: *"Psykisk hälsa invävd genom alla aspekter av livet."* — Klimatförändringar och ekoångest, könsinkluderande vård, ungdomsutbildning, intergenerationell traumaläkning och framtida arbetspolicys.
+9. **[Övergripande teman](/frameworks/docs/implementation/mental-health#09-cross-cutting-themes)**: *"Psykisk hälsa invävd genom alla aspekter av livet."* — Klimatförändringar och ekoångest, könsinkluderande vård, ungdomsutbildning, intergenerationell traumaläkning och framtida arbetspolicys.
 
-10. **[Implementeringsstrategi](/framework/docs/implementation/mental-health#10-implementation-strategy)**: *"Från vision till verklighet genom gemenskapshandling."* — Fasad implementeringstidslinje, intressentpartnerskap, politisk strategi, riskhantering och förändringshanteringsprotokoll.
+10. **[Implementeringsstrategi](/frameworks/docs/implementation/mental-health#10-implementation-strategy)**: *"Från vision till verklighet genom gemenskapshandling."* — Fasad implementeringstidslinje, intressentpartnerskap, politisk strategi, riskhantering och förändringshanteringsprotokoll.
 
 **Stödjande element**
-11. **[Politisk strategi och intressentkartläggning](/framework/docs/implementation/mental-health#11-political-strategy)**: Koalitionsbyggande, hantering av motstånd och opinionsbildningskampanjer.
+11. **[Politisk strategi och intressentkartläggning](/frameworks/docs/implementation/mental-health#11-political-strategy)**: Koalitionsbyggande, hantering av motstånd och opinionsbildningskampanjer.
 
-12. **[Riskhantering](/framework/docs/implementation/mental-health#12-risk-management)**: Omfattande riskbedömning och begränsningsstrategier.
+12. **[Riskhantering](/frameworks/docs/implementation/mental-health#12-risk-management)**: Omfattande riskbedömning och begränsningsstrategier.
 
-13. **[Teknologiimplementering](/framework/docs/implementation/mental-health#13-technology-implementation)**: Digital infrastruktur, cybersäkerhet och styrningsramverk.
+13. **[Teknologiimplementering](/frameworks/docs/implementation/mental-health#13-technology-implementation)**: Digital infrastruktur, cybersäkerhet och styrningsramverk.
 
-14. **[Förändringshantering](/framework/docs/implementation/mental-health#14-change-management)**: Organisatorisk transformation och intressentkommunikation.
+14. **[Förändringshantering](/frameworks/docs/implementation/mental-health#14-change-management)**: Organisatorisk transformation och intressentkommunikation.
 
 **Integrationscirkel - Transformation**
-15. **[Mandalan fullbordas: från vision till levande verklighet](/framework/docs/implementation/mental-health#15-conclusion)**: *"Läkningens spiral fortsätter - din inbjudan till transformation av planetär psykisk hälsa."* — Syntes av det kompletta ramverket, uppmaningar till personlig och gemenskapshandling, och den fortsatta evolutionen av kollektiv läkning.
+15. **[Mandalan fullbordas: från vision till levande verklighet](/frameworks/docs/implementation/mental-health#15-conclusion)**: *"Läkningens spiral fortsätter - din inbjudan till transformation av planetär psykisk hälsa."* — Syntes av det kompletta ramverket, uppmaningar till personlig och gemenskapshandling, och den fortsatta evolutionen av kollektiv läkning.
 
 ## <a id="implementeringsverktyg"></a>Implementeringsverktyg
 
 För att överbrygga läkningsvisdom med praktisk handling, tillhandahåller ramverket gemenskapsdesignade verktyg och mallar för omedelbar implementering:
 
-- **[Startpaket för styrning av psykisk hälsa](/framework/tools/mental-health/mental-health-governance-starter-kit-sv.zip)**: Komplett paket för att etablera gemenskapsledda arbetsgrupper för psykisk hälsa och rättighetsbaserade vårdsystem.
+- **[Startpaket för styrning av psykisk hälsa](/frameworks/tools/mental-health/mental-health-governance-starter-kit-sv.zip)**: Komplett paket för att etablera gemenskapsledda arbetsgrupper för psykisk hälsa och rättighetsbaserade vårdsystem.
 
 - **Snabbstartsimplementeringsverktyg**:
-  - [Checklista för väg till efterlevnad för UHC-integration](/framework/tools/mental-health/path-to-compliance-checklist-sv.pdf)
-  - [Guide för etablering av gemenskapsledd arbetsgrupp](/framework/tools/mental-health/community-task-force-guide-sv.pdf)
-  - [Verktygslåda för kulturell anpassning](/framework/tools/mental-health/cultural-adaptation-toolkit-sv.pdf)
-  - [Implementeringsmanual för vakthund för psykisk hälsa](/framework/tools/mental-health/watchdog-implementation-manual-sv.pdf)
-  - [Bedömningsramverk för trafikljussystem](/framework/tools/mental-health/traffic-light-assessment-sv.pdf)
+  - [Checklista för väg till efterlevnad för UHC-integration](/frameworks/tools/mental-health/path-to-compliance-checklist-sv.pdf)
+  - [Guide för etablering av gemenskapsledd arbetsgrupp](/frameworks/tools/mental-health/community-task-force-guide-sv.pdf)
+  - [Verktygslåda för kulturell anpassning](/frameworks/tools/mental-health/cultural-adaptation-toolkit-sv.pdf)
+  - [Implementeringsmanual för vakthund för psykisk hälsa](/frameworks/tools/mental-health/watchdog-implementation-manual-sv.pdf)
+  - [Bedömningsramverk för trafikljussystem](/frameworks/tools/mental-health/traffic-light-assessment-sv.pdf)
 
 - **Styrnings- och policyverktyg**:
-  - [Guide för etablering av nationell kommission för psykisk hälsa](/framework/tools/mental-health/national-commission-guide-sv.pdf)
-  - [Mall för rättighetsbaserad lagstiftning med avvecklingsklausuler](/framework/tools/mental-health/rights-based-legislation-template-sv.pdf)
-  - [Färdplan för internationellt fördrag om rättigheter för psykisk hälsa](/framework/tools/mental-health/treaty-roadmap-sv.pdf)
-  - [Stadga för ungdomsparlament för psykisk hälsa](/framework/tools/mental-health/youth-parliament-charter-sv.pdf)
+  - [Guide för etablering av nationell kommission för psykisk hälsa](/frameworks/tools/mental-health/national-commission-guide-sv.pdf)
+  - [Mall för rättighetsbaserad lagstiftning med avvecklingsklausuler](/frameworks/tools/mental-health/rights-based-legislation-template-sv.pdf)
+  - [Färdplan för internationellt fördrag om rättigheter för psykisk hälsa](/frameworks/tools/mental-health/treaty-roadmap-sv.pdf)
+  - [Stadga för ungdomsparlament för psykisk hälsa](/frameworks/tools/mental-health/youth-parliament-charter-sv.pdf)
 
 - **Kliniska och tjänsteverktyg**:
-  - [Kliniska beslutsträd för andliga kriser](/framework/tools/mental-health/spiritual-crisis-decision-trees-sv.pdf)
-  - [Protokoll för medvetandeinkluderande läkning](/framework/tools/mental-health/consciousness-healing-protocols-sv.pdf)
-  - [Riktlinjer för integration av traditionell läkning](/framework/tools/mental-health/traditional-healing-integration-sv.pdf)
-  - [Guide för etablering av psykedelisk-assisterat terapilabb](/framework/tools/mental-health/psychedelic-therapy-lab-guide-sv.pdf)
+  - [Kliniska beslutsträd för andliga kriser](/frameworks/tools/mental-health/spiritual-crisis-decision-trees-sv.pdf)
+  - [Protokoll för medvetandeinkluderande läkning](/frameworks/tools/mental-health/consciousness-healing-protocols-sv.pdf)
+  - [Riktlinjer för integration av traditionell läkning](/frameworks/tools/mental-health/traditional-healing-integration-sv.pdf)
+  - [Guide för etablering av psykedelisk-assisterat terapilabb](/frameworks/tools/mental-health/psychedelic-therapy-lab-guide-sv.pdf)
 
 - **Finansierings- och ekonomiverktyg**:
-  - [Kalkylator för 5% budgetallokering och opinionsbildningskit](/framework/tools/mental-health/budget-allocation-calculator-kit-sv.html)
-  - [Planritning för global fond för psykisk hälsa](/framework/tools/mental-health/commons-fund-blueprint-sv.pdf)
-  - [ROI-kalkylator för psykisk hälsa (3:1 avkastningsmodell)](/framework/tools/mental-health/mental-health-roi-calculator-sv.html)
-  - [Implementeringsguide för rätt till vila-policy](/framework/tools/mental-health/right-to-rest-policy-guide-sv.pdf)
+  - [Kalkylator för 5% budgetallokering och opinionsbildningskit](/frameworks/tools/mental-health/budget-allocation-calculator-kit-sv.html)
+  - [Planritning för global fond för psykisk hälsa](/frameworks/tools/mental-health/commons-fund-blueprint-sv.pdf)
+  - [ROI-kalkylator för psykisk hälsa (3:1 avkastningsmodell)](/frameworks/tools/mental-health/mental-health-roi-calculator-sv.html)
+  - [Implementeringsguide för rätt till vila-policy](/frameworks/tools/mental-health/right-to-rest-policy-guide-sv.pdf)
 
 - **Övervaknings- och utvärderingsverktyg**:
-  - [Dashboard för psykosociala välmåendemått](/framework/tools/mental-health/flourishing-metrics-dashboard-sv.pdf)
-  - [Verktygslåda för gemenskapsledd övervakning](/framework/tools/mental-health/community-monitoring-toolkit-sv.pdf)
-  - [Guide för granskningsprocess av narrativ rättvisa](/framework/tools/mental-health/narrative-equity-review-guide-sv.pdf)
-  - [Mall för transparensdashboard](/framework/tools/mental-health/transparency-dashboard-template-sv.pdf)
+  - [Dashboard för psykosociala välmåendemått](/frameworks/tools/mental-health/flourishing-metrics-dashboard-sv.pdf)
+  - [Verktygslåda för gemenskapsledd övervakning](/frameworks/tools/mental-health/community-monitoring-toolkit-sv.pdf)
+  - [Guide för granskningsprocess av narrativ rättvisa](/frameworks/tools/mental-health/narrative-equity-review-guide-sv.pdf)
+  - [Mall för transparensdashboard](/frameworks/tools/mental-health/transparency-dashboard-template-sv.pdf)
 
 - **Ramverksguider**:
-  - [Grunderna i ramverket Levande mandala för psykisk hälsa](/framework/tools/mental-health/mental-health-framework-essentials-sv.pdf) (Svenska)
-  - [Living Mandala Mental Health Framework Essentials](/framework/tools/mental-health/mental-health-framework-essentials-en.pdf) (Engelska)
-  - [Cadre du Mandala Vivant pour la Santé Mentale](/framework/tools/mental-health/mental-health-framework-essentials-fr.pdf) (Franska)
-  - [Marco de Mandala Viviente para Salud Mental](/framework/tools/mental-health/mental-health-framework-essentials-es.pdf) (Spanska)
+  - [Grunderna i ramverket Levande mandala för psykisk hälsa](/frameworks/tools/mental-health/mental-health-framework-essentials-sv.pdf) (Svenska)
+  - [Living Mandala Mental Health Framework Essentials](/frameworks/tools/mental-health/mental-health-framework-essentials-en.pdf) (Engelska)
+  - [Cadre du Mandala Vivant pour la Santé Mentale](/frameworks/tools/mental-health/mental-health-framework-essentials-fr.pdf) (Franska)
+  - [Marco de Mandala Viviente para Salud Mental](/frameworks/tools/mental-health/mental-health-framework-essentials-es.pdf) (Spanska)
 
-Alla verktyg respekterar gemenskapssuveränitet, inkluderar protokoll för kulturell anpassning och är designade med tillgänglighetsfunktioner för neurodivergenta. Få tillgång till det kompletta [verktygsbiblioteket](/framework/tools/mental-health) för alla versioner och kulturella anpassningar.
+Alla verktyg respekterar gemenskapssuveränitet, inkluderar protokoll för kulturell anpassning och är designade med tillgänglighetsfunktioner för neurodivergenta. Få tillgång till det kompletta [verktygsbiblioteket](/frameworks/tools/mental-health) för alla versioner och kulturella anpassningar.
 
 ## <a id="tillgång-och-användning"></a>Tillgång och användning
 
@@ -122,7 +122,7 @@ Ramverket är tillgängligt via webbplatsen för Global Governance Framework, de
 
 - **Ladda ner**: Få tillgång till det kompletta ramverket som PDF via avsnittet [Nedladdningar](/downloads), tillgängligt på flera språk och tillgänglighetsformat.
 - **Navigera**: Använd detta index för att utforska avsnitt som följer mandalastrukturen eller få tillgång till specifika komponenter via avsnittslänkar.
-- **Tillgång till verktyg**: Bläddra bland alla implementeringsverktyg med traumainformerade protokoll i [verktygsbiblioteket](/framework/tools/mental-health).
+- **Tillgång till verktyg**: Bläddra bland alla implementeringsverktyg med traumainformerade protokoll i [verktygsbiblioteket](/frameworks/tools/mental-health).
 - **Engagera dig**: Dela återkoppling genom säkra, gemenskapskontrollerade kanaler eller mejla [globalgovernanceframework@gmail.com] med dataskydd för psykisk hälsa.
 - **Organisera**: Använd verktygslådor för politisk organisering för att bygga koalitioner för opinionsbildning kring psykisk hälsa och etablera gemenskapsledda arbetsgrupper.
 - **Implementera**: Börja med startpaketet för styrning av psykisk hälsa eller anslut till existerande pilotprogram och gemenskapsledda initiativ.

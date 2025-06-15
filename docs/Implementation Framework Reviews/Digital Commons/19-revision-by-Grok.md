@@ -2,7 +2,7 @@
 
 **Navigation Map**: This outline guides you through a vision for a global digital commons. Start with the **Preamble** and **Introduction** for the vision and purpose. Explore **Core Principles** and **Governance Structure** for the foundation. Dive into **Key Components**, **Implementation Roadmap**, and **Funding Mechanisms** for practical details. Review **Addressing Challenges**, **Operational Toolkits**, and **User Archetypes** for inclusivity. **Legal Interoperability**, **Metrics for Success**, and **Case Studies** provide context, while the **Call to Action** inspires engagement. Appendices offer tools, pilots, risk strategies, and historical context, ending with an **Epilogue** for reflection.  
 - **Estimated Reading Times**: Preamble (2 min), Introduction (5 min), Core Sections (10-15 min each), Appendices (5-10 min each), Epilogue (3 min).  
-- **Framework Map**: [Visual Map Link](/framework/visuals/digital-commons/map) illustrates connections between governance, components, and implementation phases.
+- **Framework Map**: [Visual Map Link](/frameworks/visuals/digital-commons/map) illustrates connections between governance, components, and implementation phases.
 
 **Preamble**: In a world woven together by digital threads, the Digital Commons Framework calls us to reimagine our shared future. It is a vision of technology as a global inheritance—open, equitable, and alive with human creativity. Rooted in justice, sustained by collaboration, and guided by planetary care, this framework invites every voice to shape a thriving digital world for generations to come.
 

@@ -361,8 +361,8 @@
           <li class="nav-item dropdown" class:open={isDropdownOpen}>
             <div style="display: flex; justify-content: space-between; align-items: center;">
               <a 
-                href="{base}/framework"
-                class={`nav-link ${$page.url.pathname.startsWith(base + '/framework') ? 'active' : ''}`}
+                href="{base}/frameworks"
+                class={`nav-link ${$page.url.pathname.startsWith(base + '/frameworks') ? 'active' : ''}`}
                 data-sveltekit-preload-data="hover"
               >
                 {$t('common.header.framework')}
@@ -383,40 +383,40 @@
             </div>
 
             <div class="dropdown-menu" on:click|stopPropagation={() => {}}>
-              <a href="{base}/framework" class={isActive('/framework') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks" class={isActive('/frameworks') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkOverview')}
               </a>
-              <a href="{base}/framework/docs" class={isActive('/framework/docs') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/docs" class={isActive('/frameworks/docs') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkDocs')}
               </a>
-              <a href="{base}/framework/docs/principles" class={isActive('/framework/docs/principles') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/docs/principles" class={isActive('/frameworks/docs/principles') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkPrinciples')}
               </a>
-              <a href="{base}/framework/global-citizenship" class={isActive('/framework/global-citizenship') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/global-citizenship" class={isActive('/frameworks/global-citizenship') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkGlobalCitizenship')}
               </a>
-              <a href="{base}/framework/docs/implementation" class={isActive('/framework/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/docs/implementation" class={isActive('/frameworks/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkImplementation')}
               </a>
-              <a href="{base}/framework/hubs" class={isActive('/framework/hubs') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/hubs" class={isActive('/frameworks/hubs') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkHubs')}
               </a>
-              <a href="{base}/framework/tools" class={isActive('/framework/tools') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/tools" class={isActive('/frameworks/tools') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkTools')}
               </a>
-              <a href="{base}/framework/visuals" class={isActive('/framework/visuals') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/visuals" class={isActive('/frameworks/visuals') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkVisuals')}
               </a>
-              <a href="{base}/framework/docs/case-studies" class={isActive('/framework/docs/case-studies') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/docs/case-studies" class={isActive('/frameworks/docs/case-studies') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkCaseStudies')}
               </a>
-              <a href="{base}/framework/ai-futures" class={isActive('/framework/ai-futures') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/ai-futures" class={isActive('/frameworks/ai-futures') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkAIFutures')}
               </a>
-              <a href="{base}/framework/docs/resources" class={isActive('/framework/docs/resources') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/docs/resources" class={isActive('/frameworks/docs/resources') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkResources')}
               </a>
-              <a href="{base}/framework/docs/glossary" class={isActive('/framework/docs/glossary') ? 'active' : ''} data-sveltekit-preload-data="hover">
+              <a href="{base}/frameworks/docs/glossary" class={isActive('/frameworks/docs/glossary') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkGlossary')}
               </a>
             </div>

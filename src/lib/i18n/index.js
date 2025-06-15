@@ -81,7 +81,7 @@ async function loadTranslations(newLocale, route = '/') {
       } catch (e) {
         console.error('Error loading contact translations:', e);
       }
-    } else if (route.includes('/framework/ai-futures')) {
+    } else if (route.includes('/frameworks/ai-futures')) {
       // AI-futures page
       try {
         if (newLocale === 'en') {
@@ -92,7 +92,7 @@ async function loadTranslations(newLocale, route = '/') {
       } catch (e) {
         console.error('Error loading terms translations:', e);
       }
-    } else if (route.startsWith('/framework')) {
+    } else if (route.startsWith('/frameworks')) {
       // Framework page
       try {
         if (newLocale === 'en') {

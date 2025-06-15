@@ -59,16 +59,16 @@ Annual reports document grievance patterns and resolutions, identifying systemic
 
 ## Digital
 
-globalgovernanceframework.org/framework/digital/health-dashboard
+globalgovernanceframework.org/frameworks/digital/health-dashboard
 As outlined in digital/tools/digital-tools/health-dashboard.md
 
-globalgovernanceframework.org/framework/digital/app
+globalgovernanceframework.org/frameworks/digital/app
 As outlined in digital/tools/digital-tools/governance-simulator-app.md
 
-globalgovernanceframework.org/framework/digital/collaboration-platform
+globalgovernanceframework.org/frameworks/digital/collaboration-platform
 As outlined in digital/tools/digital-tools/collaboration-platform.md
 
-globalgovernanceframework.org/framework/digital/chatbot
+globalgovernanceframework.org/frameworks/digital/chatbot
 As outlined in digital/tools/digital-tools/ai-chatbot.md
 
 globalgovernanceframework.org/tools/digital/assessment

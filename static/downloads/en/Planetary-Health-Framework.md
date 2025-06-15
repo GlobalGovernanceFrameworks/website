@@ -9,7 +9,7 @@
 - [Health Sanctuary Nations](#health-sanctuary-nations)
 - [Access and Usage](#access-and-usage)
 
-**Visual Map**: A comprehensive planetary health systems diagram illustrating One Health integration, Global Health Equity Council structure, and technology governance flows is available in the [Visual Architecture Map](/framework/docs/implementation/planetary-health#14-visual-architecture-map).
+**Visual Map**: A comprehensive planetary health systems diagram illustrating One Health integration, Global Health Equity Council structure, and technology governance flows is available in the [Visual Architecture Map](/frameworks/docs/implementation/planetary-health#14-visual-architecture-map).
 
 In an era of pandemics, climate health crises, and global health inequity, the *Planetary Health Accord Implementation Framework* provides a transformative blueprint for equitable, resilient, and sustainable healthcare for all. Rooted in One Health principles, technological innovation, and global solidarity, it empowers communities, healthcare workers, and policymakers from rural clinics to international health organizations. This master index serves as the entry point to the framework, linking its sections and inviting stakeholders to co-create a world where health is a fundamental right for every person, community, and ecosystem.
 
@@ -31,35 +31,35 @@ The framework is a comprehensive plan to establish integrated planetary health s
 ## <a id="stakeholder-pathways"></a>Stakeholder Pathways
 To help stakeholders quickly find relevant content, the framework offers tailored entry points:
 
-- **For Healthcare Workers**: Start with [Community Health Legions](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) and the [Health Worker Charter](/framework/tools/planetary-health/health-worker-charter-en.pdf), then explore [AI Literacy Certifications](/framework/tools/planetary-health/ai-literacy-certifications-en.pdf) and [Trauma-Informed Care Protocols](/framework/tools/planetary-health/trauma-informed-care-protocols-en.pdf).
-- **For Policymakers**: Begin with the [Executive Summary](/framework/tools/planetary-health/executive-summary-en.pdf) and [Global Health Equity Council](/framework/docs/implementation/planetary-health#01-governance-structure) structure, then review [Financing Mechanisms](/framework/docs/implementation/planetary-health#03-financing-mechanisms) and [Policy Integration Toolkit](/framework/tools/planetary-health/policy-integration-toolkit-en.pdf).
-- **For Communities**: Focus on [Community-Centered Healthcare](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) and [Health Literacy Initiative](/framework/docs/implementation/planetary-health#08-health-literacy), supported by [Community Health Legion Training Manual](/framework/tools/planetary-health/community-health-legion-manual-en.pdf) and [Cultural Competency Training Module](/framework/tools/planetary-health/cultural-competency-training-en.pdf).
-- **For Technology Innovators**: Start with [AI-Driven Health Systems](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure) and [Ethical Technology Governance](/framework/docs/implementation/planetary-health#10-ethical-technology-governance), then explore [Blockchain Health Records Setup](/framework/tools/planetary-health/blockchain-health-records-setup-en.pdf) and [AI Ethics Protocols](/framework/tools/planetary-health/ai-ethics-protocols-en.pdf).
+- **For Healthcare Workers**: Start with [Community Health Legions](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) and the [Health Worker Charter](/frameworks/tools/planetary-health/health-worker-charter-en.pdf), then explore [AI Literacy Certifications](/frameworks/tools/planetary-health/ai-literacy-certifications-en.pdf) and [Trauma-Informed Care Protocols](/frameworks/tools/planetary-health/trauma-informed-care-protocols-en.pdf).
+- **For Policymakers**: Begin with the [Executive Summary](/frameworks/tools/planetary-health/executive-summary-en.pdf) and [Global Health Equity Council](/frameworks/docs/implementation/planetary-health#01-governance-structure) structure, then review [Financing Mechanisms](/frameworks/docs/implementation/planetary-health#03-financing-mechanisms) and [Policy Integration Toolkit](/frameworks/tools/planetary-health/policy-integration-toolkit-en.pdf).
+- **For Communities**: Focus on [Community-Centered Healthcare](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) and [Health Literacy Initiative](/frameworks/docs/implementation/planetary-health#08-health-literacy), supported by [Community Health Legion Training Manual](/frameworks/tools/planetary-health/community-health-legion-manual-en.pdf) and [Cultural Competency Training Module](/frameworks/tools/planetary-health/cultural-competency-training-en.pdf).
+- **For Technology Innovators**: Start with [AI-Driven Health Systems](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure) and [Ethical Technology Governance](/frameworks/docs/implementation/planetary-health#10-ethical-technology-governance), then explore [Blockchain Health Records Setup](/frameworks/tools/planetary-health/blockchain-health-records-setup-en.pdf) and [AI Ethics Protocols](/frameworks/tools/planetary-health/ai-ethics-protocols-en.pdf).
 
 ## <a id="framework-sections"></a>Framework Sections
 The framework is organized into 18 sections, each a critical component of its transformative design. Explore them below:
 
-0. **[Manifesto: The Planetary Health Accord](/framework/docs/implementation/planetary-health#00-manifesto)**: Establishes the fundamental purpose, audience, and call to action for planetary health transformation.
-1. **[Governance Structure](/framework/docs/implementation/planetary-health#01-governance-structure)**: Details the Global Health Equity Council and Regional Health Hubs with enforceable mechanisms.
-2. **[Technology and Data Infrastructure](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure)**: Outlines AI-driven systems and blockchain health records with privacy protections.
-3. **[Financing Mechanisms](/framework/docs/implementation/planetary-health#03-financing-mechanisms)**: Describes the Global Health Solidarity Fund and innovative financing tools.
-4. **[Medical Innovation and Access](/framework/docs/implementation/planetary-health#04-medical-innovation-access)**: Details open-source medicines and local manufacturing capacity building.
-5. **[Pandemic and Climate-Health Preparedness](/framework/docs/implementation/planetary-health#05-pandemic-climate-preparedness)**: Outlines One Health surveillance and climate-health integration.
-6. **[Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare)**: Describes Community Health Legions and integrated mental health services.
-7. **[Transparency and Anti-Corruption](/framework/docs/implementation/planetary-health#07-transparency-anti-corruption)**: Details the Global Healthcare Corruption Watchdog and transparency mechanisms.
-8. **[Health Literacy and Behavioral Change](/framework/docs/implementation/planetary-health#08-health-literacy)**: Outlines global health literacy initiatives and social media accountability.
-9. **[Borderless Health Rights](/framework/docs/implementation/planetary-health#09-borderless-health-rights)**: Describes portable health coverage and reciprocal emergency care agreements.
-10. **[Ethical Technology Governance](/framework/docs/implementation/planetary-health#10-ethical-technology-governance)**: Details gene-editing regulation and algorithmic bias audits.
-11. **[Implementation Roadmap](/framework/docs/implementation/planetary-health#11-implementation-roadmap)**: Provides phased implementation timeline with pilot programs and scaling strategies.
-12. **[Health in Conflict Zones](/framework/docs/implementation/planetary-health#12-health-conflict-zones)**: Outlines mobile clinics and humanitarian health corridors.
-13. **[Global Knowledge Commons](/framework/docs/implementation/planetary-health#13-global-knowledge-commons)**: Describes centralized innovation repositories and open-access research mandates.
-14. **[Visual Architecture Map](/framework/docs/implementation/planetary-health#14-visual-architecture-map)**: Provides system diagrams and the Planetary Health Dashboard.
-15. **[Cross-Cutting Mechanisms](/framework/docs/implementation/planetary-health#15-cross-cutting-mechanisms)**: Details pharmaceutical transparency, crisis-proofing, and recognition programs.
-16. **[Spiritual Framing](/framework/docs/implementation/planetary-health#16-spiritual-framing)**: Outlines interfaith engagement and sacred ecology approaches to health.
-17. **[Conclusion](/framework/docs/implementation/planetary-health#17-conclusion)**: Summarizes the vision and issues final call to action for global implementation.
+0. **[Manifesto: The Planetary Health Accord](/frameworks/docs/implementation/planetary-health#00-manifesto)**: Establishes the fundamental purpose, audience, and call to action for planetary health transformation.
+1. **[Governance Structure](/frameworks/docs/implementation/planetary-health#01-governance-structure)**: Details the Global Health Equity Council and Regional Health Hubs with enforceable mechanisms.
+2. **[Technology and Data Infrastructure](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure)**: Outlines AI-driven systems and blockchain health records with privacy protections.
+3. **[Financing Mechanisms](/frameworks/docs/implementation/planetary-health#03-financing-mechanisms)**: Describes the Global Health Solidarity Fund and innovative financing tools.
+4. **[Medical Innovation and Access](/frameworks/docs/implementation/planetary-health#04-medical-innovation-access)**: Details open-source medicines and local manufacturing capacity building.
+5. **[Pandemic and Climate-Health Preparedness](/frameworks/docs/implementation/planetary-health#05-pandemic-climate-preparedness)**: Outlines One Health surveillance and climate-health integration.
+6. **[Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare)**: Describes Community Health Legions and integrated mental health services.
+7. **[Transparency and Anti-Corruption](/frameworks/docs/implementation/planetary-health#07-transparency-anti-corruption)**: Details the Global Healthcare Corruption Watchdog and transparency mechanisms.
+8. **[Health Literacy and Behavioral Change](/frameworks/docs/implementation/planetary-health#08-health-literacy)**: Outlines global health literacy initiatives and social media accountability.
+9. **[Borderless Health Rights](/frameworks/docs/implementation/planetary-health#09-borderless-health-rights)**: Describes portable health coverage and reciprocal emergency care agreements.
+10. **[Ethical Technology Governance](/frameworks/docs/implementation/planetary-health#10-ethical-technology-governance)**: Details gene-editing regulation and algorithmic bias audits.
+11. **[Implementation Roadmap](/frameworks/docs/implementation/planetary-health#11-implementation-roadmap)**: Provides phased implementation timeline with pilot programs and scaling strategies.
+12. **[Health in Conflict Zones](/frameworks/docs/implementation/planetary-health#12-health-conflict-zones)**: Outlines mobile clinics and humanitarian health corridors.
+13. **[Global Knowledge Commons](/frameworks/docs/implementation/planetary-health#13-global-knowledge-commons)**: Describes centralized innovation repositories and open-access research mandates.
+14. **[Visual Architecture Map](/frameworks/docs/implementation/planetary-health#14-visual-architecture-map)**: Provides system diagrams and the Planetary Health Dashboard.
+15. **[Cross-Cutting Mechanisms](/frameworks/docs/implementation/planetary-health#15-cross-cutting-mechanisms)**: Details pharmaceutical transparency, crisis-proofing, and recognition programs.
+16. **[Spiritual Framing](/frameworks/docs/implementation/planetary-health#16-spiritual-framing)**: Outlines interfaith engagement and sacred ecology approaches to health.
+17. **[Conclusion](/frameworks/docs/implementation/planetary-health#17-conclusion)**: Summarizes the vision and issues final call to action for global implementation.
 
 ## <a id="implementation-timeline-snapshot"></a>Implementation Timeline Snapshot
-A condensed overview of key milestones for quick reference (see [Implementation Roadmap](/framework/docs/implementation/planetary-health#11-implementation-roadmap) for details):
+A condensed overview of key milestones for quick reference (see [Implementation Roadmap](/frameworks/docs/implementation/planetary-health#11-implementation-roadmap) for details):
 
 - **Years 1-3: Pilot Phase**: Test in 3-5 Health Sanctuary nations, establish Global Health Equity Council, launch Community Health Legions
 - **Years 4-7: Scaling Phase**: Expand globally prioritizing LMICs, secure financing through health summits, deploy AI and blockchain systems
@@ -69,41 +69,41 @@ A condensed overview of key milestones for quick reference (see [Implementation 
 ## <a id="implementation-tools"></a>Implementation Tools
 To bridge theory and practice, the framework provides practical tools and templates for immediate use by stakeholders:
 
-- **[Planetary Health Starter Kit](/framework/tools/planetary-health/planetary-health-starter-kit-en.zip)**: Complete package for launching Health Sanctuary pilot programs.
+- **[Planetary Health Starter Kit](/frameworks/tools/planetary-health/planetary-health-starter-kit-en.zip)**: Complete package for launching Health Sanctuary pilot programs.
 - **Core Governance Tools**:
-  - [Global Health Equity Council Setup Guide](/framework/tools/planetary-health/global-health-equity-council-setup-en.pdf)
-  - [Regional Health Hub Implementation](/framework/tools/planetary-health/regional-health-hub-implementation-en.pdf)
-  - [Policy Integration Toolkit](/framework/tools/planetary-health/policy-integration-toolkit-en.pdf)
-  - [Conflict Resolution Protocols](/framework/tools/planetary-health/conflict-resolution-protocols-en.pdf)
-  - [Youth Advisory Board Framework](/framework/tools/planetary-health/youth-advisory-board-framework-en.pdf)
+  - [Global Health Equity Council Setup Guide](/frameworks/tools/planetary-health/global-health-equity-council-setup-en.pdf)
+  - [Regional Health Hub Implementation](/frameworks/tools/planetary-health/regional-health-hub-implementation-en.pdf)
+  - [Policy Integration Toolkit](/frameworks/tools/planetary-health/policy-integration-toolkit-en.pdf)
+  - [Conflict Resolution Protocols](/frameworks/tools/planetary-health/conflict-resolution-protocols-en.pdf)
+  - [Youth Advisory Board Framework](/frameworks/tools/planetary-health/youth-advisory-board-framework-en.pdf)
 - **Technology Implementation Tools**:
-  - [AI Bias Audit Framework](/framework/tools/planetary-health/ai-bias-audit-framework-en.pdf)
-  - [AI Ethics Protocols](/framework/tools/planetary-health/ai-ethics-protocols-en.pdf)
-  - [AI Literacy Certifications](/framework/tools/planetary-health/ai-literacy-certifications-en.pdf)
-  - [Blockchain Health Records Setup](/framework/tools/planetary-health/blockchain-health-records-setup-en.pdf)
-  - [Federated Learning Implementation](/framework/tools/planetary-health/federated-learning-implementation-en.pdf)
-  - [Cybersecurity Framework for Health](/framework/tools/planetary-health/cybersecurity-framework-health-en.pdf)
+  - [AI Bias Audit Framework](/frameworks/tools/planetary-health/ai-bias-audit-framework-en.pdf)
+  - [AI Ethics Protocols](/frameworks/tools/planetary-health/ai-ethics-protocols-en.pdf)
+  - [AI Literacy Certifications](/frameworks/tools/planetary-health/ai-literacy-certifications-en.pdf)
+  - [Blockchain Health Records Setup](/frameworks/tools/planetary-health/blockchain-health-records-setup-en.pdf)
+  - [Federated Learning Implementation](/frameworks/tools/planetary-health/federated-learning-implementation-en.pdf)
+  - [Cybersecurity Framework for Health](/frameworks/tools/planetary-health/cybersecurity-framework-health-en.pdf)
 - **Community Health Tools**:
-  - [Community Health Legion Training Manual](/framework/tools/planetary-health/community-health-legion-manual-en.pdf)
-  - [Cultural Competency Training Module](/framework/tools/planetary-health/cultural-competency-training-en.pdf)
-  - [Mental Health Integration Toolkit](/framework/tools/planetary-health/mental-health-integration-toolkit-en.pdf)
-  - [Trauma-Informed Care Protocols](/framework/tools/planetary-health/trauma-informed-care-protocols-en.pdf)
+  - [Community Health Legion Training Manual](/frameworks/tools/planetary-health/community-health-legion-manual-en.pdf)
+  - [Cultural Competency Training Module](/frameworks/tools/planetary-health/cultural-competency-training-en.pdf)
+  - [Mental Health Integration Toolkit](/frameworks/tools/planetary-health/mental-health-integration-toolkit-en.pdf)
+  - [Trauma-Informed Care Protocols](/frameworks/tools/planetary-health/trauma-informed-care-protocols-en.pdf)
 - **Financing & Innovation Tools**:
-  - [Health Solidarity Fund Setup Guide](/framework/tools/planetary-health/health-solidarity-fund-setup-en.pdf)
-  - [Debt-for-Health Swap Templates](/framework/tools/planetary-health/debt-for-health-swap-templates-en.pdf)
-  - [Open-Source Pharma Toolkit](/framework/tools/planetary-health/open-source-pharma-toolkit-en.pdf)
-  - [Health Impact Bond Framework](/framework/tools/planetary-health/health-impact-bond-framework-en.pdf)
+  - [Health Solidarity Fund Setup Guide](/frameworks/tools/planetary-health/health-solidarity-fund-setup-en.pdf)
+  - [Debt-for-Health Swap Templates](/frameworks/tools/planetary-health/debt-for-health-swap-templates-en.pdf)
+  - [Open-Source Pharma Toolkit](/frameworks/tools/planetary-health/open-source-pharma-toolkit-en.pdf)
+  - [Health Impact Bond Framework](/frameworks/tools/planetary-health/health-impact-bond-framework-en.pdf)
 - **Preparedness & Crisis Response**:
-  - [One Health Surveillance Protocols](/framework/tools/planetary-health/one-health-surveillance-protocols-en.pdf)
-  - [Pandemic Response Playbook](/framework/tools/planetary-health/pandemic-response-playbook-en.pdf)
-  - [Climate-Health Adaptation Guide](/framework/tools/planetary-health/climate-health-adaptation-guide-en.pdf)
-  - [Mobile Clinic Deployment Kit](/framework/tools/planetary-health/mobile-clinic-deployment-kit-en.pdf)
+  - [One Health Surveillance Protocols](/frameworks/tools/planetary-health/one-health-surveillance-protocols-en.pdf)
+  - [Pandemic Response Playbook](/frameworks/tools/planetary-health/pandemic-response-playbook-en.pdf)
+  - [Climate-Health Adaptation Guide](/frameworks/tools/planetary-health/climate-health-adaptation-guide-en.pdf)
+  - [Mobile Clinic Deployment Kit](/frameworks/tools/planetary-health/mobile-clinic-deployment-kit-en.pdf)
 - **Framework Guides**:
-  - [Planetary Health Accord Lite](/framework/tools/planetary-health/planetary-health-accord-lite-en.pdf) (English)
-  - [Children's Health Rights Comic](/framework/tools/planetary-health/childrens-health-rights-comic-en.pdf) (Youth-focused adaptation)
-  - [Executive Summary](/framework/tools/planetary-health/executive-summary-en.pdf)
+  - [Planetary Health Accord Lite](/frameworks/tools/planetary-health/planetary-health-accord-lite-en.pdf) (English)
+  - [Children's Health Rights Comic](/frameworks/tools/planetary-health/childrens-health-rights-comic-en.pdf) (Youth-focused adaptation)
+  - [Executive Summary](/frameworks/tools/planetary-health/executive-summary-en.pdf)
 
-All tools are available in PDF and editable markdown formats. Access the complete [Tools Library](/framework/tools/planetary-health) for all versions and formats.
+All tools are available in PDF and editable markdown formats. Access the complete [Tools Library](/frameworks/tools/planetary-health) for all versions and formats.
 
 ## <a id="health-sanctuary-nations"></a>Health Sanctuary Nations
 The framework features initial pilot programs in carefully selected Health Sanctuary nations to test and refine implementation strategies:
@@ -114,14 +114,14 @@ The framework features initial pilot programs in carefully selected Health Sanct
 - **Bhutan**: Integrate Gross National Happiness approach with One Health principles
 - **Palau**: Pioneer marine health surveillance and climate adaptation strategies
 
-Each sanctuary includes comprehensive pilot frameworks, stakeholder engagement protocols, and technology transfer mechanisms. Full documentation available in [Health Sanctuary Implementation Guides](/framework/tools/planetary-health/health-sanctuary-guides-en.pdf).
+Each sanctuary includes comprehensive pilot frameworks, stakeholder engagement protocols, and technology transfer mechanisms. Full documentation available in [Health Sanctuary Implementation Guides](/frameworks/tools/planetary-health/health-sanctuary-guides-en.pdf).
 
 ## <a id="access-and-usage"></a>Access and Usage
 The framework is accessible through the Global Governance Framework website, designed for easy adaptation and use. Stakeholders can:
 
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links or stakeholder pathways.
-- **Access Tools**: Browse all implementation tools in PDF and markdown formats at the [Tools Library](/framework/tools/planetary-health).
+- **Access Tools**: Browse all implementation tools in PDF and markdown formats at the [Tools Library](/frameworks/tools/planetary-health).
 - **Engage**: Share feedback through the contact portal or email [globalgovernanceframework@gmail.com]. Feedback is incorporated through monthly health equity review cycles with community oversight.
 - **Amplify**: Leverage multimedia assets including health literacy materials, infographics, and community engagement tools to advocate for adoption at local, national, or global levels.
 - **Implement**: Use the [Implementation Tools](#implementation-tools) to launch initiatives, starting with the "Planetary Health Starter Kit" for communities and organizations.
@@ -237,7 +237,7 @@ This is not utopian dreaming—it is urgent necessity. The tools, knowledge, and
 
 ---
 
-**Visual Infographic**: [Download the one-page Planetary Health Accord Manifesto infographic](/framework/tools/planetary-health/manifesto-infographic-en.pdf) for stakeholder presentations and community organizing.
+**Visual Infographic**: [Download the one-page Planetary Health Accord Manifesto infographic](/frameworks/tools/planetary-health/manifesto-infographic-en.pdf) for stakeholder presentations and community organizing.
 
 # Governance Structure
 
@@ -502,7 +502,7 @@ The **Youth-Led Advisory Board** ensures meaningful intergenerational representa
 
 ---
 
-**Cross-Reference Note**: This governance structure integrates with [Technology and Data Infrastructure](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure) for digital democracy tools, [Financing Mechanisms](/framework/docs/implementation/planetary-health#03-financing-mechanisms) for resource allocation oversight, and [Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion coordination.
+**Cross-Reference Note**: This governance structure integrates with [Technology and Data Infrastructure](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure) for digital democracy tools, [Financing Mechanisms](/frameworks/docs/implementation/planetary-health#03-financing-mechanisms) for resource allocation oversight, and [Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion coordination.
 
 # Technology and Data Infrastructure
 
@@ -755,7 +755,7 @@ The Planetary Health Accord recognizes technology as a powerful tool for health 
 
 ---
 
-**Cross-Reference Note**: This technology infrastructure integrates with [Governance Structure](/framework/docs/implementation/planetary-health#01-governance-structure) for democratic oversight of AI systems, [Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion technology training, and [Ethical Technology Governance](/framework/docs/implementation/planetary-health#10-ethical-technology-governance) for bias auditing and algorithmic fairness frameworks.
+**Cross-Reference Note**: This technology infrastructure integrates with [Governance Structure](/frameworks/docs/implementation/planetary-health#01-governance-structure) for democratic oversight of AI systems, [Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion technology training, and [Ethical Technology Governance](/frameworks/docs/implementation/planetary-health#10-ethical-technology-governance) for bias auditing and algorithmic fairness frameworks.
 
 # Financing Mechanisms
 
@@ -997,7 +997,7 @@ The Planetary Health Accord requires transformative financing mechanisms that pr
 
 ---
 
-**Cross-Reference Note**: This financing framework integrates with [Governance Structure](/framework/docs/implementation/planetary-health#01-governance-structure) for democratic fund oversight, [Medical Innovation and Access](/framework/docs/implementation/planetary-health#04-medical-innovation-access) for open-source pharmaceutical funding, and [Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion financial support.
+**Cross-Reference Note**: This financing framework integrates with [Governance Structure](/frameworks/docs/implementation/planetary-health#01-governance-structure) for democratic fund oversight, [Medical Innovation and Access](/frameworks/docs/implementation/planetary-health#04-medical-innovation-access) for open-source pharmaceutical funding, and [Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion financial support.
 
 # Medical Innovation and Access
 
@@ -1241,7 +1241,7 @@ The Planetary Health Accord transforms medical innovation from a profit-driven, 
 
 ---
 
-**Cross-Reference Note**: This medical innovation framework integrates with [Financing Mechanisms](/framework/docs/implementation/planetary-health#03-financing-mechanisms) for patent buyout funding, [Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) for distribution through Community Health Legions, and [Ethical Technology Governance](/framework/docs/implementation/planetary-health#10-ethical-technology-governance) for innovation oversight and community protection.
+**Cross-Reference Note**: This medical innovation framework integrates with [Financing Mechanisms](/frameworks/docs/implementation/planetary-health#03-financing-mechanisms) for patent buyout funding, [Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) for distribution through Community Health Legions, and [Ethical Technology Governance](/frameworks/docs/implementation/planetary-health#10-ethical-technology-governance) for innovation oversight and community protection.
 
 # Pandemic and Climate-Health Preparedness
 
@@ -1483,7 +1483,7 @@ The Planetary Health Accord recognizes that pandemic preparedness and climate he
 
 ---
 
-**Cross-Reference Note**: This preparedness framework integrates with [One Health Surveillance Systems](#one-health-surveillance-systems), [Emergency Response Infrastructure](#emergency-response-infrastructure), [Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion emergency training, and [Technology and Data Infrastructure](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure) for AI-powered outbreak prediction and community-controlled surveillance systems.
+**Cross-Reference Note**: This preparedness framework integrates with [One Health Surveillance Systems](#one-health-surveillance-systems), [Emergency Response Infrastructure](#emergency-response-infrastructure), [Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion emergency training, and [Technology and Data Infrastructure](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure) for AI-powered outbreak prediction and community-controlled surveillance systems.
 
 # Community-Centered Healthcare Delivery
 
@@ -1761,7 +1761,7 @@ The Planetary Health Accord fundamentally reimagines healthcare delivery as a co
 
 ---
 
-**Cross-Reference Note**: This community-centered delivery system integrates with [Mental Health Integration](#mental-health-integration), [Traditional Healing Integration](#traditional-healing-integration), [Technology and Data Infrastructure](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure) for AI-assisted community diagnosis, and [Governance Structure](/framework/docs/implementation/planetary-health#01-governance-structure) for democratic health service oversight.
+**Cross-Reference Note**: This community-centered delivery system integrates with [Mental Health Integration](#mental-health-integration), [Traditional Healing Integration](#traditional-healing-integration), [Technology and Data Infrastructure](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure) for AI-assisted community diagnosis, and [Governance Structure](/frameworks/docs/implementation/planetary-health#01-governance-structure) for democratic health service oversight.
 
 # Transparency and Anti-Corruption
 
@@ -1985,7 +1985,7 @@ The Planetary Health Accord recognizes that corruption in healthcare systems div
 
 ---
 
-**Cross-Reference Note**: This transparency framework integrates with [Community-Controlled Oversight](#community-controlled-oversight), [AI-Powered Fraud Detection](#ai-powered-fraud-detection), [Governance Structure](/framework/docs/implementation/planetary-health#01-governance-structure) for democratic oversight mechanisms, and [Financing Mechanisms](/framework/docs/implementation/planetary-health#03-financing-mechanisms) for transparent fund allocation and community-controlled budgeting systems.
+**Cross-Reference Note**: This transparency framework integrates with [Community-Controlled Oversight](#community-controlled-oversight), [AI-Powered Fraud Detection](#ai-powered-fraud-detection), [Governance Structure](/frameworks/docs/implementation/planetary-health#01-governance-structure) for democratic oversight mechanisms, and [Financing Mechanisms](/frameworks/docs/implementation/planetary-health#03-financing-mechanisms) for transparent fund allocation and community-controlled budgeting systems.
 
 # Health Literacy and Behavioral Change
 
@@ -2223,7 +2223,7 @@ The Planetary Health Accord recognizes that health literacy must be culturally g
 
 ---
 
-**Cross-Reference Note**: This health literacy framework integrates with [Community-Centered Health Education](#community-centered-health-education), [Youth-Led Health Communication](#youth-led-health-communication), [Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion education roles, and [Crisis Communication and Emergency Education](#crisis-communication-emergency-education) for pandemic and disaster health communication protocols.
+**Cross-Reference Note**: This health literacy framework integrates with [Community-Centered Health Education](#community-centered-health-education), [Youth-Led Health Communication](#youth-led-health-communication), [Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion education roles, and [Crisis Communication and Emergency Education](#crisis-communication-emergency-education) for pandemic and disaster health communication protocols.
 
 # Borderless Health Rights
 
@@ -2447,7 +2447,7 @@ The Planetary Health Accord recognizes that health is a fundamental human right 
 
 ---
 
-**Cross-Reference Note**: This borderless health rights framework integrates with [Health as a Universal Human Right](#health-universal-human-right), [Climate Migration Health Protection](#climate-migration-health-protection), [Technology and Data Infrastructure](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure) for portable health records, and [Indigenous Territory Health Sovereignty](#indigenous-territory-health-sovereignty) for traditional territory health access and indigenous health jurisdiction.
+**Cross-Reference Note**: This borderless health rights framework integrates with [Health as a Universal Human Right](#health-universal-human-right), [Climate Migration Health Protection](#climate-migration-health-protection), [Technology and Data Infrastructure](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure) for portable health records, and [Indigenous Territory Health Sovereignty](#indigenous-territory-health-sovereignty) for traditional territory health access and indigenous health jurisdiction.
 
 # Ethical Technology Governance
 
@@ -2685,7 +2685,7 @@ The Planetary Health Accord recognizes that emerging health technologies carry i
 
 ---
 
-**Cross-Reference Note**: This ethical technology governance framework integrates with [Algorithmic Bias Audits and Fairness](#algorithmic-bias-audits-fairness), [Community Technology Sovereignty](#community-technology-sovereignty), [Technology and Data Infrastructure](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure) for AI bias auditing and community oversight, and [Governance Structure](/framework/docs/implementation/planetary-health#01-governance-structure) for democratic technology oversight and community representation in global health technology governance.
+**Cross-Reference Note**: This ethical technology governance framework integrates with [Algorithmic Bias Audits and Fairness](#algorithmic-bias-audits-fairness), [Community Technology Sovereignty](#community-technology-sovereignty), [Technology and Data Infrastructure](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure) for AI bias auditing and community oversight, and [Governance Structure](/frameworks/docs/implementation/planetary-health#01-governance-structure) for democratic technology oversight and community representation in global health technology governance.
 
 # Implementation Roadmap
 
@@ -3258,7 +3258,7 @@ The Planetary Health Accord recognizes that armed conflict and civil unrest crea
 
 ---
 
-**Cross-Reference Note**: This conflict zone health framework integrates with [Mobile Clinics and Health Corridors](#mobile-clinics-health-corridors), [Mental Health and Trauma Support](#mental-health-trauma-support), [Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion conflict training, and [Emergency Response Infrastructure](/framework/docs/implementation/planetary-health#05-pandemic-climate-preparedness) for rapid deployment protocols and community-controlled crisis response systems.
+**Cross-Reference Note**: This conflict zone health framework integrates with [Mobile Clinics and Health Corridors](#mobile-clinics-health-corridors), [Mental Health and Trauma Support](#mental-health-trauma-support), [Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) for Community Health Legion conflict training, and [Emergency Response Infrastructure](/frameworks/docs/implementation/planetary-health#05-pandemic-climate-preparedness) for rapid deployment protocols and community-controlled crisis response systems.
 
 # Global Knowledge Commons
 
@@ -3482,7 +3482,7 @@ The Planetary Health Accord recognizes that health knowledge belongs to all huma
 
 ---
 
-**Cross-Reference Note**: This global knowledge commons framework integrates with [Traditional Knowledge Commons and Protection](#traditional-knowledge-commons-protection), [Community-Controlled Knowledge Governance](#community-controlled-knowledge-governance), [Medical Innovation and Access](/framework/docs/implementation/planetary-health#04-medical-innovation-access) for open-source research integration, and [Ethical Technology Governance](/framework/docs/implementation/planetary-health#10-ethical-technology-governance) for AI research synthesis oversight and community control of knowledge technologies.
+**Cross-Reference Note**: This global knowledge commons framework integrates with [Traditional Knowledge Commons and Protection](#traditional-knowledge-commons-protection), [Community-Controlled Knowledge Governance](#community-controlled-knowledge-governance), [Medical Innovation and Access](/frameworks/docs/implementation/planetary-health#04-medical-innovation-access) for open-source research integration, and [Ethical Technology Governance](/frameworks/docs/implementation/planetary-health#10-ethical-technology-governance) for AI research synthesis oversight and community control of knowledge technologies.
 
 # Visual Architecture Map
 
@@ -3706,7 +3706,7 @@ The Planetary Health Accord recognizes that complex health systems require clear
 
 ---
 
-**Cross-Reference Note**: This visual architecture framework integrates with [Community-Accessible Visualization](#community-accessible-visualization), [Traditional Knowledge Visualization](#traditional-knowledge-visualization), [Technology and Data Infrastructure](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure) for dashboard technical implementation, and [Community-Controlled Knowledge Governance](/framework/docs/implementation/planetary-health#13-global-knowledge-commons) for democratic oversight of health information visualization and traditional knowledge representation protocols.
+**Cross-Reference Note**: This visual architecture framework integrates with [Community-Accessible Visualization](#community-accessible-visualization), [Traditional Knowledge Visualization](#traditional-knowledge-visualization), [Technology and Data Infrastructure](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure) for dashboard technical implementation, and [Community-Controlled Knowledge Governance](/frameworks/docs/implementation/planetary-health#13-global-knowledge-commons) for democratic oversight of health information visualization and traditional knowledge representation protocols.
 
 # Cross-Cutting Mechanisms
 
@@ -3944,7 +3944,7 @@ The Planetary Health Accord recognizes that transformative health systems change
 
 ---
 
-**Cross-Reference Note**: These cross-cutting mechanisms integrate with all previous sections, providing coordinating frameworks for [Pharmaceutical Transparency](#pharmaceutical-transparency-act) across [Medical Innovation and Access](/framework/docs/implementation/planetary-health#04-medical-innovation-access), [Global South Innovation Alliance](#global-south-health-innovation-alliance) connecting [Technology and Data Infrastructure](/framework/docs/implementation/planetary-health#02-technology-data-infrastructure), [Crisis-Proofing](#crisis-proofing-resilience-systems) spanning [Pandemic and Climate-Health Preparedness](/framework/docs/implementation/planetary-health#05-pandemic-climate-preparedness), and [Recognition Programs](#recognition-celebration-programs) supporting [Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare).
+**Cross-Reference Note**: These cross-cutting mechanisms integrate with all previous sections, providing coordinating frameworks for [Pharmaceutical Transparency](#pharmaceutical-transparency-act) across [Medical Innovation and Access](/frameworks/docs/implementation/planetary-health#04-medical-innovation-access), [Global South Innovation Alliance](#global-south-health-innovation-alliance) connecting [Technology and Data Infrastructure](/frameworks/docs/implementation/planetary-health#02-technology-data-infrastructure), [Crisis-Proofing](#crisis-proofing-resilience-systems) spanning [Pandemic and Climate-Health Preparedness](/frameworks/docs/implementation/planetary-health#05-pandemic-climate-preparedness), and [Recognition Programs](#recognition-celebration-programs) supporting [Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare).
 
 # Spiritual Framing
 
@@ -4168,7 +4168,7 @@ The Planetary Health Accord recognizes that health is fundamentally a spiritual 
 
 ---
 
-**Cross-Reference Note**: This spiritual framing integrates with all framework sections, providing spiritual foundation for [Community-Centered Healthcare Delivery](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) through sacred healing relationships, [Indigenous Spirituality](#indigenous-spirituality-healing-cosmologies) supporting [Traditional Knowledge Commons](/framework/docs/implementation/planetary-health#13-global-knowledge-commons), [Sacred Ecology](#sacred-ecology-planetary-stewardship) connecting [Pandemic and Climate-Health Preparedness](/framework/docs/implementation/planetary-health#05-pandemic-climate-preparedness), and [Spiritual Resilience](#spiritual-resilience-community-healing) supporting [Mental Health Integration](/framework/docs/implementation/planetary-health#06-community-centered-healthcare) with traditional trauma healing and modern therapy integration.
+**Cross-Reference Note**: This spiritual framing integrates with all framework sections, providing spiritual foundation for [Community-Centered Healthcare Delivery](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) through sacred healing relationships, [Indigenous Spirituality](#indigenous-spirituality-healing-cosmologies) supporting [Traditional Knowledge Commons](/frameworks/docs/implementation/planetary-health#13-global-knowledge-commons), [Sacred Ecology](#sacred-ecology-planetary-stewardship) connecting [Pandemic and Climate-Health Preparedness](/frameworks/docs/implementation/planetary-health#05-pandemic-climate-preparedness), and [Spiritual Resilience](#spiritual-resilience-community-healing) supporting [Mental Health Integration](/frameworks/docs/implementation/planetary-health#06-community-centered-healthcare) with traditional trauma healing and modern therapy integration.
 
 # Conclusion
 
@@ -4424,9 +4424,9 @@ The Planetary Health Accord begins with each of us choosing **healing over harm*
 
 ---
 
-**Access the Framework**: Download the complete Planetary Health Accord Implementation Framework at [globalgovernanceframework.org/planetary-health](/framework/docs/implementation/planetary-health)
+**Access the Framework**: Download the complete Planetary Health Accord Implementation Framework at [globalgovernanceframework.org/planetary-health](/frameworks/docs/implementation/planetary-health)
 
-**Start Implementation**: Begin with the [Planetary Health Starter Kit](/framework/tools/planetary-health/planetary-health-starter-kit-en.zip) for immediate community action
+**Start Implementation**: Begin with the [Planetary Health Starter Kit](/frameworks/tools/planetary-health/planetary-health-starter-kit-en.zip) for immediate community action
 
 **Join the Movement**: Connect with implementation communities at [globalgovernanceframework@gmail.com]
 

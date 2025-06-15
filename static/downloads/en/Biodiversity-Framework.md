@@ -42,47 +42,47 @@ The Global Governance Biodiversity Implementation Framework establishes a transf
 
 The framework is organized into fifteen comprehensive sections that build from philosophical foundations to practical implementation tools, each contributing to a transformative vision of biodiversity governance:
 
-1. **[Philosophical Preamble](/framework/docs/implementation/biodiversity#00-philosophical-preamble)** (5 min): Establishes biodiversity's intrinsic value and sacred dimension, drawing from diverse spiritual cosmologies including Indigenous animism, Buddhist interdependence, and ubuntu philosophy while aligning with Earth Charter principles.
+1. **[Philosophical Preamble](/frameworks/docs/implementation/biodiversity#00-philosophical-preamble)** (5 min): Establishes biodiversity's intrinsic value and sacred dimension, drawing from diverse spiritual cosmologies including Indigenous animism, Buddhist interdependence, and ubuntu philosophy while aligning with Earth Charter principles.
 
-2. **[Introduction and Vision](/framework/docs/implementation/biodiversity#01-introduction-vision)** (12 min): Outlines the comprehensive 20-year transformation roadmap, success scenarios for all stakeholders, celebration milestones, and synergy with the Earth System Frameworks for Multi-Level Governance (ESFMLG).
+2. **[Introduction and Vision](/frameworks/docs/implementation/biodiversity#01-introduction-vision)** (12 min): Outlines the comprehensive 20-year transformation roadmap, success scenarios for all stakeholders, celebration milestones, and synergy with the Earth System Frameworks for Multi-Level Governance (ESFMLG).
 
-3. **[Guiding Principles](/framework/docs/implementation/biodiversity#02-guiding-principles)** (10 min): Details nine foundational principles—indigenous sovereignty, rights of nature, accountability, post-GDP economics, open-source innovation, precautionary principle, just transition, crisis preparedness, and intergenerational justice.
+3. **[Guiding Principles](/frameworks/docs/implementation/biodiversity#02-guiding-principles)** (10 min): Details nine foundational principles—indigenous sovereignty, rights of nature, accountability, post-GDP economics, open-source innovation, precautionary principle, just transition, crisis preparedness, and intergenerational justice.
 
-4. **[Core Pillars](/framework/docs/implementation/biodiversity#03-core-pillars)** (15 min): Explores the three transformative pillars—Indigenous-Led Governance, Economic Transformation, and Cultural Mobilization—with specific strategies, metrics, and implementation tools.
+4. **[Core Pillars](/frameworks/docs/implementation/biodiversity#03-core-pillars)** (15 min): Explores the three transformative pillars—Indigenous-Led Governance, Economic Transformation, and Cultural Mobilization—with specific strategies, metrics, and implementation tools.
 
-5. **[Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure)** (18 min): Comprehensive multi-layered governance system from Indigenous Digital Sovereignty Hubs to Global Biodiversity Commons Trust, including democratic legitimacy mechanisms, conflict resolution, and international cooperation protocols.
+5. **[Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure)** (18 min): Comprehensive multi-layered governance system from Indigenous Digital Sovereignty Hubs to Global Biodiversity Commons Trust, including democratic legitimacy mechanisms, conflict resolution, and international cooperation protocols.
 
-6. **[Policy Mechanisms](/framework/docs/implementation/biodiversity#05-policy-mechanisms)** (14 min): Legislative frameworks for ecocide prosecution, Global Biodiversity Protection Protocol, economic tools including hybrid UBES, and crisis response protocols with 72-hour Biodiversity SWAT Team deployment.
+6. **[Policy Mechanisms](/frameworks/docs/implementation/biodiversity#05-policy-mechanisms)** (14 min): Legislative frameworks for ecocide prosecution, Global Biodiversity Protection Protocol, economic tools including hybrid UBES, and crisis response protocols with 72-hour Biodiversity SWAT Team deployment.
 
-7. **[Stakeholder Engagement](/framework/docs/implementation/biodiversity#06-stakeholder-engagement)** (16 min): Detailed engagement strategies for indigenous communities, youth, private sector, NGOs, and public participation including Youth Leadership Pipeline, Corporate Transition Support, and Global Biodiversity Forum.
+7. **[Stakeholder Engagement](/frameworks/docs/implementation/biodiversity#06-stakeholder-engagement)** (16 min): Detailed engagement strategies for indigenous communities, youth, private sector, NGOs, and public participation including Youth Leadership Pipeline, Corporate Transition Support, and Global Biodiversity Forum.
 
-8. **[Financing Mechanisms](/framework/docs/implementation/biodiversity#07-financing-mechanisms)** (12 min): Comprehensive $10B Global Biodiversity Fund sourced through diverse streams with reliability assessments, equity-focused allocation prioritizing Global South, and robust accountability measures.
+8. **[Financing Mechanisms](/frameworks/docs/implementation/biodiversity#07-financing-mechanisms)** (12 min): Comprehensive $10B Global Biodiversity Fund sourced through diverse streams with reliability assessments, equity-focused allocation prioritizing Global South, and robust accountability measures.
 
-9. **[Implementation Roadmap](/framework/docs/implementation/biodiversity#08-implementation-roadmap)** (20 min): Detailed 20-year transformation schedule with four phases, pilot program coordination, legitimacy pathways, risk-adjusted scenarios, and Gantt-style visual timelines.
+9. **[Implementation Roadmap](/frameworks/docs/implementation/biodiversity#08-implementation-roadmap)** (20 min): Detailed 20-year transformation schedule with four phases, pilot program coordination, legitimacy pathways, risk-adjusted scenarios, and Gantt-style visual timelines.
 
-10. **[Metrics for Success](/framework/docs/implementation/biodiversity#09-metrics-success)** (10 min): Seven core indicators with intermediate targets, supplementary metrics including Cultural Biodiversity Index and Behavioral Metrics, plus comprehensive M&E Logic Model linking inputs to impact.
+10. **[Metrics for Success](/frameworks/docs/implementation/biodiversity#09-metrics-success)** (10 min): Seven core indicators with intermediate targets, supplementary metrics including Cultural Biodiversity Index and Behavioral Metrics, plus comprehensive M&E Logic Model linking inputs to impact.
 
-11. **[Visualizations](/framework/docs/implementation/biodiversity#10-visualizations)** (8 min): Comprehensive visual toolkit including governance maps, rights progression timelines, health dashboards, cost-benefit analyses, and UBES flow diagrams for stakeholder communication.
+11. **[Visualizations](/frameworks/docs/implementation/biodiversity#10-visualizations)** (8 min): Comprehensive visual toolkit including governance maps, rights progression timelines, health dashboards, cost-benefit analyses, and UBES flow diagrams for stakeholder communication.
 
-12. **[Challenges and Solutions](/framework/docs/implementation/biodiversity#11-challenges-solutions)** (14 min): Systematic analysis of implementation challenges including feasibility, geopolitical realism, cultural sensitivity, technology risks, and comprehensive mitigation strategies.
+12. **[Challenges and Solutions](/frameworks/docs/implementation/biodiversity#11-challenges-solutions)** (14 min): Systematic analysis of implementation challenges including feasibility, geopolitical realism, cultural sensitivity, technology risks, and comprehensive mitigation strategies.
 
-13. **[Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools)** (12 min): Extensive toolkit including biodiversity blockchain, Sacred Seed Kit, FPIC 2.0 Protocols, Regional Adaptation Guidelines, and over 20 specialized tools for various implementation contexts.
+13. **[Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools)** (12 min): Extensive toolkit including biodiversity blockchain, Sacred Seed Kit, FPIC 2.0 Protocols, Regional Adaptation Guidelines, and over 20 specialized tools for various implementation contexts.
 
-14. **[Reparations Protocol](/framework/docs/implementation/biodiversity#13-reparations-protocol)** (6 min): Framework for ecological debt reparations, land repatriation processes, and Traditional Knowledge Repatriation supported by Justice Translators.
+14. **[Reparations Protocol](/frameworks/docs/implementation/biodiversity#13-reparations-protocol)** (6 min): Framework for ecological debt reparations, land repatriation processes, and Traditional Knowledge Repatriation supported by Justice Translators.
 
-15. **[Conclusion and Call to Action](/framework/docs/implementation/biodiversity#14-conclusion-call-to-action)** (8 min): Synthesizes the regenerative biosphere vision and provides specific next steps for immediate engagement across all stakeholder groups.
+15. **[Conclusion and Call to Action](/frameworks/docs/implementation/biodiversity#14-conclusion-call-to-action)** (8 min): Synthesizes the regenerative biosphere vision and provides specific next steps for immediate engagement across all stakeholder groups.
 
 **Supporting Appendices:**
-- **[Appendix A: Synergy with ESFMLG](/framework/docs/implementation/biodiversity#appendix-a-synergy-esfmlg)** (10 min): Detailed alignment with nested sovereignty and technology governance
-- **[Appendix B: Comprehensive Glossary](/framework/docs/implementation/biodiversity#appendix-b-glossary)** (8 min): Definitions of key terms including Rights Escalation Ladders and Bio-Arts Residencies
-- **[Appendix C: Complete Tool Library](/framework/docs/implementation/biodiversity#appendix-c-tool-library)** (15 min): All implementation tools with access links and usage guidelines
-- **[Appendix D: Moral Edge-Cases Analysis](/framework/docs/implementation/biodiversity#appendix-d-moral-edge-cases)** (12 min): Complex ethical scenarios and resolution frameworks
-- **[Appendix E: Political Economy Analysis](/framework/docs/implementation/biodiversity#appendix-e-political-economy)** (10 min): Assessment of sectoral resistance and Corporate Redemption Pathways
-- **[Appendix F: Feasibility Studies](/framework/docs/implementation/biodiversity#appendix-f-feasibility-studies)** (12 min): Detailed funding stream analysis and pilot program results
-- **[Appendix G: Pilot Program Blueprints](/framework/docs/implementation/biodiversity#appendix-g-pilot-blueprints)** (18 min): Complete operational guides for Costa Rica, Bhutan, and Palau pilots with cross-coordination mechanisms
-- **[Appendix H: Scenario Planning](/framework/docs/implementation/biodiversity#appendix-h-scenario-planning)** (14 min): Crisis modeling including economic collapse, technology failure, and social unrest responses
-- **[Appendix I: International Cooperation Protocols](/framework/docs/implementation/biodiversity#appendix-i-cooperation-protocols)** (16 min): BCT Shadow Council engagement, diplomatic strategies, and bilateral agreements for resistant states
-- **[Appendix J: Creative Outputs Inspiration](/framework/docs/implementation/biodiversity#appendix-j-creative-outputs)** (10 min): Sample materials including song lyrics, meme templates, and Bio-Arts Residencies scripts for cultural mobilization
+- **[Appendix A: Synergy with ESFMLG](/frameworks/docs/implementation/biodiversity#appendix-a-synergy-esfmlg)** (10 min): Detailed alignment with nested sovereignty and technology governance
+- **[Appendix B: Comprehensive Glossary](/frameworks/docs/implementation/biodiversity#appendix-b-glossary)** (8 min): Definitions of key terms including Rights Escalation Ladders and Bio-Arts Residencies
+- **[Appendix C: Complete Tool Library](/frameworks/docs/implementation/biodiversity#appendix-c-tool-library)** (15 min): All implementation tools with access links and usage guidelines
+- **[Appendix D: Moral Edge-Cases Analysis](/frameworks/docs/implementation/biodiversity#appendix-d-moral-edge-cases)** (12 min): Complex ethical scenarios and resolution frameworks
+- **[Appendix E: Political Economy Analysis](/frameworks/docs/implementation/biodiversity#appendix-e-political-economy)** (10 min): Assessment of sectoral resistance and Corporate Redemption Pathways
+- **[Appendix F: Feasibility Studies](/frameworks/docs/implementation/biodiversity#appendix-f-feasibility-studies)** (12 min): Detailed funding stream analysis and pilot program results
+- **[Appendix G: Pilot Program Blueprints](/frameworks/docs/implementation/biodiversity#appendix-g-pilot-blueprints)** (18 min): Complete operational guides for Costa Rica, Bhutan, and Palau pilots with cross-coordination mechanisms
+- **[Appendix H: Scenario Planning](/frameworks/docs/implementation/biodiversity#appendix-h-scenario-planning)** (14 min): Crisis modeling including economic collapse, technology failure, and social unrest responses
+- **[Appendix I: International Cooperation Protocols](/frameworks/docs/implementation/biodiversity#appendix-i-cooperation-protocols)** (16 min): BCT Shadow Council engagement, diplomatic strategies, and bilateral agreements for resistant states
+- **[Appendix J: Creative Outputs Inspiration](/frameworks/docs/implementation/biodiversity#appendix-j-creative-outputs)** (10 min): Sample materials including song lyrics, meme templates, and Bio-Arts Residencies scripts for cultural mobilization
 
 **Cross-Cutting Themes**: Indigenous sovereignty, intergenerational justice, cultural authenticity, democratic innovation, crisis preparedness, and regenerative transformation weave through all sections.
 
@@ -90,7 +90,7 @@ The framework is organized into fifteen comprehensive sections that build from p
 
 Practical tools and templates enable immediate action across diverse contexts and stakeholder groups:
 
-- **[Biodiversity Framework Seed Kit](/framework/tools/biodiversity/seed-kit-en.zip)**: Complete starter package with essential resources:
+- **[Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity/seed-kit-en.zip)**: Complete starter package with essential resources:
   - Quick Start Implementation Guide (from Appendix G)
   - Sacred Seed Kit for Indigenous-Led Dialogues
   - FPIC 2.0 Protocols Template
@@ -103,57 +103,57 @@ Practical tools and templates enable immediate action across diverse contexts an
   - Public Trust Dashboard Setup Guide
 
 - **Lite Guides for Stakeholders**:
-  - [Technical Guide for Policymakers](/framework/tools/biodiversity/technical-guide-policymakers-en.pdf): 14-page guide on governance structures, funding mechanisms, and pilot coordination
-  - [Community Implementation Guide](/framework/tools/biodiversity/community-implementation-guide-en.pdf): 5-page guide for establishing Indigenous Digital Sovereignty Hubs and participating in UBES systems
-  - [Youth Engagement and Leadership Guide](/framework/tools/biodiversity/youth-engagement-leadership-guide-en.pdf): 4-page guide for Bio-Arts Residencies, advocacy campaigns, and BCT Youth Council participation
-  - [Corporate Transition and Redemption Guide](/framework/tools/biodiversity/corporate-transition-redemption-guide-en.pdf): 12-page guide for Biodiversity Impact Bonds, transition support, and redemption pathways
-  - [Indigenous Data Sovereignty Guide](/framework/tools/biodiversity/indigenous-data-sovereignty-guide-en.pdf): 10-page guide for Traditional Knowledge Repatriation and Cyber-Physical Guardianship protocols
+  - [Technical Guide for Policymakers](/frameworks/tools/biodiversity/technical-guide-policymakers-en.pdf): 14-page guide on governance structures, funding mechanisms, and pilot coordination
+  - [Community Implementation Guide](/frameworks/tools/biodiversity/community-implementation-guide-en.pdf): 5-page guide for establishing Indigenous Digital Sovereignty Hubs and participating in UBES systems
+  - [Youth Engagement and Leadership Guide](/frameworks/tools/biodiversity/youth-engagement-leadership-guide-en.pdf): 4-page guide for Bio-Arts Residencies, advocacy campaigns, and BCT Youth Council participation
+  - [Corporate Transition and Redemption Guide](/frameworks/tools/biodiversity/corporate-transition-redemption-guide-en.pdf): 12-page guide for Biodiversity Impact Bonds, transition support, and redemption pathways
+  - [Indigenous Data Sovereignty Guide](/frameworks/tools/biodiversity/indigenous-data-sovereignty-guide-en.pdf): 10-page guide for Traditional Knowledge Repatriation and Cyber-Physical Guardianship protocols
 
 - **Core Governance Tools**:
-  - [Regional Adaptation Guidelines](/framework/tools/biodiversity/regional-adaptation-guidelines-en.pdf): Context-specific implementation for different legal and cultural systems
-  - [FPIC 2.0 Protocols Template](/framework/tools/biodiversity/fpic-2-protocols-template-en.pdf): Blockchain-verified consent mechanisms for digital age
-  - [Rights Escalation Ladder Framework](/framework/tools/biodiversity/rights-escalation-ladder-framework-en.pdf): Automatic ecosystem rights progression based on health indicators
-  - [Youth Leadership Pipeline Guide](/framework/tools/biodiversity/youth-leadership-pipeline-guide-en.pdf): Mentorship and progressive responsibility structures
-  - [Future Beings Council Setup](/framework/tools/biodiversity/future-beings-council-setup-en.pdf): AI-assisted intergenerational representation protocols
-  - [Corporate Transition Support Toolkit](/framework/tools/biodiversity/corporate-transition-support-toolkit-en.pdf): Specialized assistance for biodiversity compliance adaptation
-  - [Crisis Response Protocols](/framework/tools/biodiversity/crisis-response-protocols-en.pdf): 72-hour Biodiversity SWAT Team deployment and Auto-Defense activation
+  - [Regional Adaptation Guidelines](/frameworks/tools/biodiversity/regional-adaptation-guidelines-en.pdf): Context-specific implementation for different legal and cultural systems
+  - [FPIC 2.0 Protocols Template](/frameworks/tools/biodiversity/fpic-2-protocols-template-en.pdf): Blockchain-verified consent mechanisms for digital age
+  - [Rights Escalation Ladder Framework](/frameworks/tools/biodiversity/rights-escalation-ladder-framework-en.pdf): Automatic ecosystem rights progression based on health indicators
+  - [Youth Leadership Pipeline Guide](/frameworks/tools/biodiversity/youth-leadership-pipeline-guide-en.pdf): Mentorship and progressive responsibility structures
+  - [Future Beings Council Setup](/frameworks/tools/biodiversity/future-beings-council-setup-en.pdf): AI-assisted intergenerational representation protocols
+  - [Corporate Transition Support Toolkit](/frameworks/tools/biodiversity/corporate-transition-support-toolkit-en.pdf): Specialized assistance for biodiversity compliance adaptation
+  - [Crisis Response Protocols](/frameworks/tools/biodiversity/crisis-response-protocols-en.pdf): 72-hour Biodiversity SWAT Team deployment and Auto-Defense activation
 
 - **Economic Transformation Tools**
-  - [Hybrid UBES Implementation Guide](/framework/tools/biodiversity/hybrid-ubes-implementation-guide-en.pdf): Community currency systems with CBD-backed liquidity pools and traditional exchange integration
-  - [Biodiversity Impact Bonds & Financing Template](/framework/tools/biodiversity/impact-bonds-financing-en.pdf): Pay-for-success conservation financing including debt-for-nature swaps and innovative funding mechanisms
-  - [Economic Resilience & Corporate Transition Toolkit](/framework/tools/biodiversity/economic-resilience-corporate-en.pdf): Market disruption preparation, adaptation strategies, and corporate redemption pathways for extractive industries
+  - [Hybrid UBES Implementation Guide](/frameworks/tools/biodiversity/hybrid-ubes-implementation-guide-en.pdf): Community currency systems with CBD-backed liquidity pools and traditional exchange integration
+  - [Biodiversity Impact Bonds & Financing Template](/frameworks/tools/biodiversity/impact-bonds-financing-en.pdf): Pay-for-success conservation financing including debt-for-nature swaps and innovative funding mechanisms
+  - [Economic Resilience & Corporate Transition Toolkit](/frameworks/tools/biodiversity/economic-resilience-corporate-en.pdf): Market disruption preparation, adaptation strategies, and corporate redemption pathways for extractive industries
 
 - **Cultural Mobilization Tools**
-  - [Bio-Arts Residencies Toolkit](/framework/tools/biodiversity/bio-arts-toolkit-en.pdf): Artist-scientist-indigenous collaboration guides with cultural sovereignty protection
-  - [Global Restoration Calendar Template](/framework/tools/biodiversity/restoration-calendar-template-en.pdf): Annual bioregional celebration planning and traditional ceremony integration
-  - [Bio-Influencer Training & Campaign Kit](/framework/tools/biodiversity/bio-influencer-campaign-en.pdf): Region-specific social media strategies, counter-narrative approaches, and cultural tipping point measurement
+  - [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity/bio-arts-toolkit-en.pdf): Artist-scientist-indigenous collaboration guides with cultural sovereignty protection
+  - [Global Restoration Calendar Template](/frameworks/tools/biodiversity/restoration-calendar-template-en.pdf): Annual bioregional celebration planning and traditional ceremony integration
+  - [Bio-Influencer Training & Campaign Kit](/frameworks/tools/biodiversity/bio-influencer-campaign-en.pdf): Region-specific social media strategies, counter-narrative approaches, and cultural tipping point measurement
 
 - **Technology and Monitoring Tools**
-  - [Biodiversity Blockchain Setup Guide](/framework/tools/biodiversity/blockchain-setup-guide-en.pdf): Proof-of-stake implementation with AES-256 encryption and community control protocols
-  - [Public Trust Dashboard & Evaluation Template](/framework/tools/biodiversity/trust-dashboard-evaluation-en.pdf): Real-time transparency, audit reporting, and M&E logic model integration
-  - [Cyber-Physical Guardianship Protocols](/framework/tools/biodiversity/cyber-guardianship-complete-en.pdf): Indigenous-controlled digital infrastructure security including guardian drone systems
+  - [Biodiversity Blockchain Setup Guide](/frameworks/tools/biodiversity/blockchain-setup-guide-en.pdf): Proof-of-stake implementation with AES-256 encryption and community control protocols
+  - [Public Trust Dashboard & Evaluation Template](/frameworks/tools/biodiversity/trust-dashboard-evaluation-en.pdf): Real-time transparency, audit reporting, and M&E logic model integration
+  - [Cyber-Physical Guardianship Protocols](/frameworks/tools/biodiversity/cyber-guardianship-complete-en.pdf): Indigenous-controlled digital infrastructure security including guardian drone systems
 
 - **Regional Implementation Guides**
-  - [Amazon Basin Implementation Toolkit](/framework/tools/biodiversity/amazon-basin-complete-en.pdf): Rainforest-specific governance, UBES deployment, and marine ecosystem protocols for tropical regions
-  - [Arctic Indigenous Sovereignty Toolkit](/framework/tools/biodiversity/arctic-sovereignty-complete-en.pdf): Climate-adapted governance for polar regions including disaster-resilient protocols and traditional knowledge preservation
-  - [Urban Biodiversity Integration Guide](/framework/tools/biodiversity/urban-biodiversity-guide-en.pdf): City-level Biodiversity Impact Assessments, green infrastructure, and community engagement strategies
+  - [Amazon Basin Implementation Toolkit](/frameworks/tools/biodiversity/amazon-basin-complete-en.pdf): Rainforest-specific governance, UBES deployment, and marine ecosystem protocols for tropical regions
+  - [Arctic Indigenous Sovereignty Toolkit](/frameworks/tools/biodiversity/arctic-sovereignty-complete-en.pdf): Climate-adapted governance for polar regions including disaster-resilient protocols and traditional knowledge preservation
+  - [Urban Biodiversity Integration Guide](/frameworks/tools/biodiversity/urban-biodiversity-guide-en.pdf): City-level Biodiversity Impact Assessments, green infrastructure, and community engagement strategies
 
 - **Advocacy and Scaling Tools**
-  - [Biodiversity Advocacy Campaign Toolkit](/framework/tools/biodiversity/advocacy-toolkit-en.pdf): #BioDebt Campaign materials, viral strategy guides, and grassroots mobilization frameworks
-  - [Funding Navigator for Biodiversity Projects](/framework/tools/biodiversity/funding-navigator-en.pdf): Grant writing, crowdfunding, institutional funding access, and financial sustainability planning
-  - [Diplomatic Engagement Playbook](/framework/tools/biodiversity/diplomatic-playbook-en.pdf): BCT Shadow Council protocols, bilateral agreement templates, and international coordination strategies
-  - [Coalition Building Strategy Guide](/framework/tools/biodiversity/coalition-building-guide-en.pdf): 20-nation coalition development for CBD advisory status and multilateral cooperation
+  - [Biodiversity Advocacy Campaign Toolkit](/frameworks/tools/biodiversity/advocacy-toolkit-en.pdf): #BioDebt Campaign materials, viral strategy guides, and grassroots mobilization frameworks
+  - [Funding Navigator for Biodiversity Projects](/frameworks/tools/biodiversity/funding-navigator-en.pdf): Grant writing, crowdfunding, institutional funding access, and financial sustainability planning
+  - [Diplomatic Engagement Playbook](/frameworks/tools/biodiversity/diplomatic-playbook-en.pdf): BCT Shadow Council protocols, bilateral agreement templates, and international coordination strategies
+  - [Coalition Building Strategy Guide](/frameworks/tools/biodiversity/coalition-building-guide-en.pdf): 20-nation coalition development for CBD advisory status and multilateral cooperation
 
 - **Digital Platforms and Interactive Tools**
-  - [Biodiversity Governance Simulator](/framework/tools/biodiversity/governance-simulator-en.md): Interactive BCT decision-making practice platform with traditional knowledge integration
-  - [Global Biodiversity Health Dashboard](/framework/tools/biodiversity/health-dashboard-en.md): Real-time ecosystem and governance metrics with community verification systems
-  - [Real-Time Collaboration Platform](/framework/tools/biodiversity/collaboration-platform-en.md): GitHub-based coordination hub with integrated AI assistance at globalgovernanceframework.org/biodiversity-collab
+  - [Biodiversity Governance Simulator](/frameworks/tools/biodiversity/governance-simulator-en.md): Interactive BCT decision-making practice platform with traditional knowledge integration
+  - [Global Biodiversity Health Dashboard](/frameworks/tools/biodiversity/health-dashboard-en.md): Real-time ecosystem and governance metrics with community verification systems
+  - [Real-Time Collaboration Platform](/frameworks/tools/biodiversity/collaboration-platform-en.md): GitHub-based coordination hub with integrated AI assistance at globalgovernanceframework.org/biodiversity-collab
 
 - **Assessment and Evaluation Tools**
-  - [Pilot Program Audit & Learning Template](/framework/tools/biodiversity/pilot-audit-learning-en.pdf): Comprehensive evaluation framework for sanctuary state programs including failure analysis and systematic learning protocols
-  - [Cultural Impact & Democratic Assessment Tool](/framework/tools/biodiversity/cultural-democratic-assessment-en.pdf): Measuring effects on indigenous and local communities with governance accountability and participation metrics
+  - [Pilot Program Audit & Learning Template](/frameworks/tools/biodiversity/pilot-audit-learning-en.pdf): Comprehensive evaluation framework for sanctuary state programs including failure analysis and systematic learning protocols
+  - [Cultural Impact & Democratic Assessment Tool](/frameworks/tools/biodiversity/cultural-democratic-assessment-en.pdf): Measuring effects on indigenous and local communities with governance accountability and participation metrics
 
-Tools are available in PDF and markdown formats, with multilingual options prioritizing indigenous languages, accessible formats (braille, audio, large-print), and low-bandwidth versions for remote communities. Access the complete [Tools Library](/framework/tools/biodiversity) for all versions and specialized toolkits.
+Tools are available in PDF and markdown formats, with multilingual options prioritizing indigenous languages, accessible formats (braille, audio, large-print), and low-bandwidth versions for remote communities. Access the complete [Tools Library](/frameworks/tools/biodiversity) for all versions and specialized toolkits.
 
 ### <a id="access-and-usage"></a>Access and Usage
 
@@ -161,7 +161,7 @@ The framework is designed for maximum accessibility across diverse stakeholders,
 
 - **Download**: Access the complete framework PDF at [Downloads](/downloads), with individual sections available for targeted reading and implementation planning.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via direct links, with cross-references throughout the framework.
-- **Access Tools**: Browse comprehensive implementation toolkit in PDF and markdown formats at [Tools Library](/framework/tools/biodiversity), organized by stakeholder type and implementation phase.
+- **Access Tools**: Browse comprehensive implementation toolkit in PDF and markdown formats at [Tools Library](/frameworks/tools/biodiversity), organized by stakeholder type and implementation phase.
 - **Engage**: Share feedback, propose improvements, and join the global community through globalgovernanceframework.org/contact or [globalgovernanceframework@gmail.com], contributing to iterative framework development.
 - **Implement**: Begin immediately with the Biodiversity Framework Seed Kit, starting with pilot-appropriate tools from the sanctuary state blueprints (Costa Rica, Bhutan, Palau).
 - **Adapt**: Customize implementation using Regional Adaptation Guidelines to respect local legal systems, cultural contexts, and Indigenous sovereignty requirements.
@@ -190,7 +190,7 @@ The framework is designed for maximum accessibility across diverse stakeholders,
 - BCT At-a-Glance Infographic: Governance structure, voting protocols, and legitimacy pathways
 - M&E Logic Model Visualization: Inputs to regenerative biosphere impact chains
 
-Access comprehensive visual toolkit at [Visual Resources Library](/framework/visuals/biodiversity).
+Access comprehensive visual toolkit at [Visual Resources Library](/frameworks/visuals/biodiversity).
 
 ---
 
@@ -488,7 +488,7 @@ This introduction establishes the foundation for transformative biodiversity gov
 
 ---
 
-**Cross-Reference Note**: This introduction connects to [Core Principles](/framework/docs/implementation/biodiversity#02-guiding-principles) for foundational values, [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for implementation mechanisms, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for immediate action resources.
+**Cross-Reference Note**: This introduction connects to [Core Principles](/frameworks/docs/implementation/biodiversity#02-guiding-principles) for foundational values, [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for implementation mechanisms, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for immediate action resources.
 
 # Guiding Principles
 
@@ -1080,7 +1080,7 @@ The **Global Biodiversity Commons Trust** serves as the coordinating body for gl
 
 ---
 
-**Cross-Reference Note**: This governance structure integrates with [Core Pillars](/framework/docs/implementation/biodiversity#03-core-pillars) for implementation through indigenous leadership, economic transformation, and cultural mobilization, [Policy Mechanisms](/framework/docs/implementation/biodiversity#05-policy-mechanisms) for legal framework implementation, and [Financing Mechanisms](/framework/docs/implementation/biodiversity#07-financing-mechanisms) for BCT fund management and community-controlled resource allocation.
+**Cross-Reference Note**: This governance structure integrates with [Core Pillars](/frameworks/docs/implementation/biodiversity#03-core-pillars) for implementation through indigenous leadership, economic transformation, and cultural mobilization, [Policy Mechanisms](/frameworks/docs/implementation/biodiversity#05-policy-mechanisms) for legal framework implementation, and [Financing Mechanisms](/frameworks/docs/implementation/biodiversity#07-financing-mechanisms) for BCT fund management and community-controlled resource allocation.
 
 # Policy Mechanisms
 
@@ -1420,7 +1420,7 @@ The Global Governance Biodiversity Implementation Framework requires comprehensi
 
 ---
 
-**Cross-Reference Note**: These policy mechanisms integrate with [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for institutional implementation, [Economic Transformation](/framework/docs/implementation/biodiversity#03-core-pillars-economic) for UBES and financial incentives, [Stakeholder Engagement](/framework/docs/implementation/biodiversity#06-stakeholder-engagement) for community participation, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for practical deployment resources.
+**Cross-Reference Note**: These policy mechanisms integrate with [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for institutional implementation, [Economic Transformation](/frameworks/docs/implementation/biodiversity#03-core-pillars-economic) for UBES and financial incentives, [Stakeholder Engagement](/frameworks/docs/implementation/biodiversity#06-stakeholder-engagement) for community participation, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for practical deployment resources.
 
 # Stakeholder Engagement
 
@@ -1767,7 +1767,7 @@ First 100 Days activities synchronized with Global Restoration Calendar ensuring
 
 ---
 
-**Cross-Reference Note**: This stakeholder engagement framework integrates with [Indigenous-Led Governance](/framework/docs/implementation/biodiversity#03-core-pillars-indigenous) for sovereignty recognition, [Cultural Mobilization](/framework/docs/implementation/biodiversity#03-core-pillars-cultural) for Bio-Arts and public engagement, [Economic Transformation](/framework/docs/implementation/biodiversity#03-core-pillars-economic) for UBES and corporate redemption, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for First 100 Days practical resources.
+**Cross-Reference Note**: This stakeholder engagement framework integrates with [Indigenous-Led Governance](/frameworks/docs/implementation/biodiversity#03-core-pillars-indigenous) for sovereignty recognition, [Cultural Mobilization](/frameworks/docs/implementation/biodiversity#03-core-pillars-cultural) for Bio-Arts and public engagement, [Economic Transformation](/frameworks/docs/implementation/biodiversity#03-core-pillars-economic) for UBES and corporate redemption, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for First 100 Days practical resources.
 
 # Financing Mechanisms
 
@@ -2140,7 +2140,7 @@ The Global Governance Biodiversity Implementation Framework requires unprecedent
 
 ---
 
-**Cross-Reference Note**: This financing framework integrates with [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for community control and traditional authority, [Economic Transformation](/framework/docs/implementation/biodiversity#03-core-pillars-economic) for UBES and corporate redemption, [Indigenous-Led Governance](/framework/docs/implementation/biodiversity#03-core-pillars-indigenous) for sovereignty recognition, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for practical deployment resources including fund administration guides and community-controlled budgeting templates.
+**Cross-Reference Note**: This financing framework integrates with [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for community control and traditional authority, [Economic Transformation](/frameworks/docs/implementation/biodiversity#03-core-pillars-economic) for UBES and corporate redemption, [Indigenous-Led Governance](/frameworks/docs/implementation/biodiversity#03-core-pillars-indigenous) for sovereignty recognition, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for practical deployment resources including fund administration guides and community-controlled budgeting templates.
 
 # Implementation Roadmap
 
@@ -2637,7 +2637,7 @@ The Global Governance Biodiversity Implementation Framework unfolds across a car
 
 ---
 
-**Cross-Reference Note**: This implementation roadmap integrates with [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for institutional development phases, [Financing Mechanisms](/framework/docs/implementation/biodiversity#07-financing-mechanisms) for funding timeline coordination, [Core Pillars](/framework/docs/implementation/biodiversity#03-core-pillars) for strategic implementation, and [Metrics for Success](/framework/docs/implementation/biodiversity#09-metrics-success) for progress tracking and milestone verification throughout the 20-year transformation period.
+**Cross-Reference Note**: This implementation roadmap integrates with [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for institutional development phases, [Financing Mechanisms](/frameworks/docs/implementation/biodiversity#07-financing-mechanisms) for funding timeline coordination, [Core Pillars](/frameworks/docs/implementation/biodiversity#03-core-pillars) for strategic implementation, and [Metrics for Success](/frameworks/docs/implementation/biodiversity#09-metrics-success) for progress tracking and milestone verification throughout the 20-year transformation period.
 
 # Metrics for Success
 
@@ -3023,7 +3023,7 @@ The Global Governance Biodiversity Implementation Framework requires comprehensi
 
 ---
 
-**Cross-Reference Note**: This metrics framework integrates with [Implementation Roadmap](/framework/docs/implementation/biodiversity#08-implementation-roadmap) for milestone tracking, [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for community-controlled evaluation, [Indigenous-Led Governance](/framework/docs/implementation/biodiversity#03-core-pillars-indigenous) for traditional knowledge measurement, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for practical measurement resources including community assessment templates and traditional knowledge integration guides.
+**Cross-Reference Note**: This metrics framework integrates with [Implementation Roadmap](/frameworks/docs/implementation/biodiversity#08-implementation-roadmap) for milestone tracking, [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for community-controlled evaluation, [Indigenous-Led Governance](/frameworks/docs/implementation/biodiversity#03-core-pillars-indigenous) for traditional knowledge measurement, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for practical measurement resources including community assessment templates and traditional knowledge integration guides.
 
 # Visualizations
 
@@ -3415,7 +3415,7 @@ The Global Governance Biodiversity Implementation Framework requires comprehensi
 
 ---
 
-**Cross-Reference Note**: These visualizations integrate with [Metrics for Success](/framework/docs/implementation/biodiversity#09-metrics-success) for dashboard development, [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for network mapping, [Implementation Roadmap](/framework/docs/implementation/biodiversity#08-implementation-roadmap) for timeline visualization, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for interactive platform access and community-controlled design resources.
+**Cross-Reference Note**: These visualizations integrate with [Metrics for Success](/frameworks/docs/implementation/biodiversity#09-metrics-success) for dashboard development, [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for network mapping, [Implementation Roadmap](/frameworks/docs/implementation/biodiversity#08-implementation-roadmap) for timeline visualization, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for interactive platform access and community-controlled design resources.
 
 # Challenges and Solutions
 
@@ -3870,7 +3870,7 @@ Climate change may force mass migration, increase competition for remaining habi
 
 ---
 
-**Cross-Reference Note**: These challenges and solutions integrate with [Implementation Roadmap](/framework/docs/implementation/biodiversity#08-implementation-roadmap) for adaptive planning, [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for democratic accountability, [Policy Mechanisms](/framework/docs/implementation/biodiversity#05-policy-mechanisms) for crisis response protocols, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for practical challenge response resources including community resilience toolkits and traditional knowledge adaptation guides.
+**Cross-Reference Note**: These challenges and solutions integrate with [Implementation Roadmap](/frameworks/docs/implementation/biodiversity#08-implementation-roadmap) for adaptive planning, [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for democratic accountability, [Policy Mechanisms](/frameworks/docs/implementation/biodiversity#05-policy-mechanisms) for crisis response protocols, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for practical challenge response resources including community resilience toolkits and traditional knowledge adaptation guides.
 
 # Implementation Tools
 
@@ -4342,7 +4342,7 @@ The Global Governance Biodiversity Implementation Framework provides a comprehen
 
 ---
 
-**Cross-Reference Note**: These implementation tools integrate with [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for institutional deployment, [Core Pillars](/framework/docs/implementation/biodiversity#03-core-pillars) for strategic implementation, [Stakeholder Engagement](/framework/docs/implementation/biodiversity#06-stakeholder-engagement) for community coordination, and [Challenges and Solutions](/framework/docs/implementation/biodiversity#11-challenges-solutions) for adaptive tool development responding to implementation obstacles with community-controlled innovation and traditional knowledge integration.
+**Cross-Reference Note**: These implementation tools integrate with [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for institutional deployment, [Core Pillars](/frameworks/docs/implementation/biodiversity#03-core-pillars) for strategic implementation, [Stakeholder Engagement](/frameworks/docs/implementation/biodiversity#06-stakeholder-engagement) for community coordination, and [Challenges and Solutions](/frameworks/docs/implementation/biodiversity#11-challenges-solutions) for adaptive tool development responding to implementation obstacles with community-controlled innovation and traditional knowledge integration.
 
 # Reparations Protocol
 
@@ -4675,7 +4675,7 @@ The Global Governance Biodiversity Implementation Framework recognizes that effe
 
 ---
 
-**Cross-Reference Note**: This reparations protocol integrates with [Indigenous-Led Governance](/framework/docs/implementation/biodiversity#03-core-pillars-indigenous) for sovereignty recognition, [Traditional Knowledge Protection](/framework/docs/implementation/biodiversity#12-implementation-tools-traditional-knowledge) for repatriation mechanisms, [Financing Mechanisms](/framework/docs/implementation/biodiversity#07-financing-mechanisms) for economic reparations, and [Cultural Mobilization](/framework/docs/implementation/biodiversity#03-core-pillars-cultural) for healing and spiritual restoration programs with community accountability and traditional justice integration.
+**Cross-Reference Note**: This reparations protocol integrates with [Indigenous-Led Governance](/frameworks/docs/implementation/biodiversity#03-core-pillars-indigenous) for sovereignty recognition, [Traditional Knowledge Protection](/frameworks/docs/implementation/biodiversity#12-implementation-tools-traditional-knowledge) for repatriation mechanisms, [Financing Mechanisms](/frameworks/docs/implementation/biodiversity#07-financing-mechanisms) for economic reparations, and [Cultural Mobilization](/frameworks/docs/implementation/biodiversity#03-core-pillars-cultural) for healing and spiritual restoration programs with community accountability and traditional justice integration.
 
 # Conclusion and Call to Action
 
@@ -5021,17 +5021,17 @@ The Global Governance Biodiversity Implementation Framework recognizes that **bi
 ---
 
 **Immediate Next Steps**:
-1. **Download** the [Biodiversity Framework Seed Kit](/framework/tools/biodiversity/seed-kit-en.zip)
-2. **Connect** with [local implementation groups](/framework/community/biodiversity-local)
-3. **Join** the [Global Biodiversity Youth Corps](/framework/programs/youth-corps)
-4. **Support** [indigenous-led pilots](/framework/programs/sanctuary-states)
-5. **Share** this framework with [your networks](/framework/share/biodiversity)
+1. **Download** the [Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity/seed-kit-en.zip)
+2. **Connect** with [local implementation groups](/frameworks/community/biodiversity-local)
+3. **Join** the [Global Biodiversity Youth Corps](/frameworks/programs/youth-corps)
+4. **Support** [indigenous-led pilots](/frameworks/programs/sanctuary-states)
+5. **Share** this framework with [your networks](/frameworks/share/biodiversity)
 
-**Contact**: [globalbiodiversityframework@gmail.com] | **Contribute**: [GitHub Repository](https://github.com/global-governance-framework/biodiversity) | **Learn More**: [globalgovernanceframework.org/biodiversity](/framework/biodiversity)
+**Contact**: [globalbiodiversityframework@gmail.com] | **Contribute**: [GitHub Repository](https://github.com/global-governance-framework/biodiversity) | **Learn More**: [globalgovernanceframework.org/biodiversity](/frameworks/biodiversity)
 
 ---
 
-**Cross-Reference Note**: This conclusion synthesizes insights from all framework sections including [Philosophical Preamble](/framework/docs/implementation/biodiversity#00-philosophical-preamble) for sacred foundations, [Core Pillars](/framework/docs/implementation/biodiversity#03-core-pillars) for strategic implementation, [Implementation Roadmap](/framework/docs/implementation/biodiversity#08-implementation-roadmap) for practical next steps, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for immediate action resources, creating a comprehensive call to action that honors both spiritual calling and practical transformation requirements.
+**Cross-Reference Note**: This conclusion synthesizes insights from all framework sections including [Philosophical Preamble](/frameworks/docs/implementation/biodiversity#00-philosophical-preamble) for sacred foundations, [Core Pillars](/frameworks/docs/implementation/biodiversity#03-core-pillars) for strategic implementation, [Implementation Roadmap](/frameworks/docs/implementation/biodiversity#08-implementation-roadmap) for practical next steps, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for immediate action resources, creating a comprehensive call to action that honors both spiritual calling and practical transformation requirements.
 
 # Appendix A: Synergy with Earth System Frameworks for Multi-Level Governance (ESFMLG)
 
@@ -5129,11 +5129,11 @@ A hypothetical *Global Biodiversity Youth Corps* in the Himalayan Foothills uses
 ---
 
 **Cross-References**:
-- [Nested Sovereignty Framework](/framework/docs/implementation/nested-sovereignty)
-- [Technology Governance Framework](/framework/docs/implementation/technology)
-- [Tools Library](/framework/tools/biodiversity)
-- [Climate & Energy Framework](/framework/docs/implementation/climate-energy)
-- [Peace-Building Framework](/framework/docs/implementation/peace-building)
+- [Nested Sovereignty Framework](/frameworks/docs/implementation/nested-sovereignty)
+- [Technology Governance Framework](/frameworks/docs/implementation/technology)
+- [Tools Library](/frameworks/tools/biodiversity)
+- [Climate & Energy Framework](/frameworks/docs/implementation/climate-energy)
+- [Peace-Building Framework](/frameworks/docs/implementation/peace-building)
 
 **Access**: Explore integrated tools and visualizations at [globalgovernanceframework.org/biodiversity-collab](globalgovernanceframework.org/biodiversity-collab).
 
@@ -5158,166 +5158,166 @@ The glossary standardizes terminology to facilitate implementation, collaboratio
 *Purpose*: A proof-of-stake blockchain system with AES-256 encryption and zero-trust architecture to track biodiversity data, restoration credits, and governance decisions.  
 *Usage*: Supports transparent monitoring of ecosystem health and *Bio-Credit System* transactions.  
 *Example*: Used in the Palau pilot to verify 20% no-take marine zones, ensuring 95% data accuracy.  
-*Cross-Reference*: [Biodiversity Blockchain Setup Guide](/framework/tools/biodiversity/blockchain-setup-guide-en.pdf).
+*Cross-Reference*: [Biodiversity Blockchain Setup Guide](/frameworks/tools/biodiversity/blockchain-setup-guide-en.pdf).
 
 **Bio-Arts Residencies**  
 *Purpose*: Collaborative programs uniting artists, scientists, and indigenous communities to create biodiversity-focused cultural outputs (e.g., murals, performances).  
 *Usage*: Drives 1 billion cultural engagements/year by 2035 through viral campaigns.  
 *Example*: A 2030 Amazon Basin residency produces a mural celebrating Yanomami stewardship, boosting *#BioDebt Campaign* reach.  
-*Cross-Reference*: [Bio-Arts Residencies Toolkit](/framework/tools/biodiversity/bio-arts-toolkit-en.pdf).
+*Cross-Reference*: [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity/bio-arts-toolkit-en.pdf).
 
 **Biodiversity Impact Bonds**  
 *Purpose*: Pay-for-success financial instruments funding conservation projects with returns tied to measurable biodiversity outcomes.  
 *Usage*: Aims to raise $500M by 2035 for restoration projects.  
 *Example*: A $10M bond in Bhutan funds 10% ecosystem restoration by 2030, yielding 5% returns for investors.  
-*Cross-Reference*: [Biodiversity Impact Bonds Template](/framework/tools/biodiversity/impact-bonds-template-en.pdf).
+*Cross-Reference*: [Biodiversity Impact Bonds Template](/frameworks/tools/biodiversity/impact-bonds-template-en.pdf).
 
 **Bio-Credit System**  
 *Purpose*: A digital credit system rewarding stewardship actions (e.g., tree planting) with tradable credits backed by CBD reserves.  
 *Usage*: Supports *Hybrid UBES* and incentivizes 70% local transaction share by 2045.  
 *Example*: A farmer in Costa Rica earns 10 bio-credits for rewilding 1 hectare, redeemable for $50 locally.  
-*Cross-Reference*: [Bio-Credit Smart Contract Templates](/framework/tools/biodiversity/bio-credit-smart-contracts-en.pdf).
+*Cross-Reference*: [Bio-Credit Smart Contract Templates](/frameworks/tools/biodiversity/bio-credit-smart-contracts-en.pdf).
 
 **Bio-Punk Media Labs**  
 *Purpose*: Community-driven media hubs creating biodiversity-focused content (e.g., videos, memes) to counter misinformation.  
 *Usage*: Aims for 50% regional adoption by 2035 to support cultural mobilization.  
 *Example*: A Coral Triangle lab produces a viral video on coral reef protection, reaching 500,000 views.  
-*Cross-Reference*: [Counter-Narrative Playbook](/framework/tools/biodiversity/counter-narrative-playbook-en.pdf).
+*Cross-Reference*: [Counter-Narrative Playbook](/frameworks/tools/biodiversity/counter-narrative-playbook-en.pdf).
 
 **Biodiversity SWAT Teams**  
 *Purpose*: Rapid-response units deployed within 72 hours to address biodiversity crises (e.g., illegal logging).  
 *Usage*: Activated via *Biosphere Auto-Defense Protocols* if targets are missed by 2030.  
 *Example*: A 2031 team halts 5% deforestation in the Amazon, coordinated via *Global Biodiversity Crisis Network*.  
-*Cross-Reference*: [Crisis Response Protocols](/framework/tools/biodiversity/crisis-response-protocols-en.pdf).
+*Cross-Reference*: [Crisis Response Protocols](/frameworks/tools/biodiversity/crisis-response-protocols-en.pdf).
 
 **Biosphere Auto-Defense Protocols**  
 *Purpose*: Automated governance mechanisms halting extractive activities if critical thresholds (e.g., 5% annual deforestation) are breached.  
 *Usage*: Ensures crisis preparedness if 2030 targets (e.g., `<`8% protected areas) are missed.  
 *Example*: A 2032 protocol suspends mining permits in Indonesia after 6% habitat loss.  
-*Cross-Reference*: [Crisis Response Protocols](/framework/tools/biodiversity/crisis-response-protocols-en.pdf).
+*Cross-Reference*: [Crisis Response Protocols](/frameworks/tools/biodiversity/crisis-response-protocols-en.pdf).
 
 **Cultural Biodiversity Index**  
 *Purpose*: A metric measuring cultural engagement with biodiversity, targeting 20% improvement by 2035.  
 *Usage*: Tracks impact of *Bio-Arts Residencies* and *#BioDebt Campaign* on policy changes.  
 *Example*: A 10% index rise in Nepal reflects youth-led campaigns influencing conservation laws.  
-*Cross-Reference*: [Cultural Impact Assessment Tool](/framework/tools/biodiversity/cultural-impact-assessment-en.pdf).
+*Cross-Reference*: [Cultural Impact Assessment Tool](/frameworks/tools/biodiversity/cultural-impact-assessment-en.pdf).
 
 **Cyber-Physical Guardianship**  
 *Purpose*: Indigenous-controlled security protocols for digital infrastructure (e.g., mesh networks, paper-based systems).  
 *Usage*: Ensures data sovereignty for *Indigenous Digital Sovereignty Hubs* with AES-256 encryption.  
 *Example*: Yanomami communities use offline ledgers to secure restoration data in 2027.  
-*Cross-Reference*: [Cyber-Physical Guardianship Protocols](/framework/tools/biodiversity/cyber-guardianship-protocols-en.pdf).
+*Cross-Reference*: [Cyber-Physical Guardianship Protocols](/frameworks/tools/biodiversity/cyber-guardianship-protocols-en.pdf).
 
 **Debt-for-Nature Swaps 2.0**  
 *Purpose*: Debt relief agreements exchanging national debt for biodiversity commitments (e.g., protected areas).  
 *Usage*: Targets 5 swaps by 2040, funding indigenous infrastructure.  
 *Example*: A 2030 swap in Peru redirects $100M debt to Amazon restoration, protecting 5% of land.  
-*Cross-Reference*: [Debt-for-Nature Swaps 2.0 Framework](/framework/tools/biodiversity/debt-nature-swaps-framework-en.pdf).
+*Cross-Reference*: [Debt-for-Nature Swaps 2.0 Framework](/frameworks/tools/biodiversity/debt-nature-swaps-framework-en.pdf).
 
 **Dynamic Rights Spectrum**  
 *Purpose*: A framework granting ecosystems graduated rights based on health indicators (e.g., coral bleaching levels).  
 *Usage*: Supports *Rights Escalation Ladders* for 50 ecosystems with legal personhood by 2045.  
 *Example*: A 2030 coral reef gains veto power at 20% bleaching, halting nearby development.  
-*Cross-Reference*: [Rights Escalation Ladder Framework](/framework/tools/biodiversity/rights-escalation-framework-en.pdf).
+*Cross-Reference*: [Rights Escalation Ladder Framework](/frameworks/tools/biodiversity/rights-escalation-framework-en.pdf).
 
 **Elder-Youth Knowledge Looms**  
 *Purpose*: Platforms for intergenerational knowledge transfer, integrating indigenous wisdom with modern science.  
 *Usage*: Supports *Traditional Knowledge Repatriation* and *Bio-Arts Residencies*.  
 *Example*: A 2028 Himalayan workshop trains 100 youth in Bhutanese conservation practices.  
-*Cross-Reference*: [Indigenous Tech Autonomy Fund](/framework/tools/biodiversity/indigenous-tech-autonomy-fund-en.pdf).
+*Cross-Reference*: [Indigenous Tech Autonomy Fund](/frameworks/tools/biodiversity/indigenous-tech-autonomy-fund-en.pdf).
 
 **Ethical AI Sentiment Analysis**  
 *Purpose*: AI-driven analysis of public trust and sentiment toward biodiversity governance tools.  
 *Usage*: Targets 80% public trust by 2035, integrated with *Public Trust Dashboard*.  
 *Example*: A 2030 analysis in Costa Rica shows 75% trust in *Biodiversity Blockchain*.  
-*Cross-Reference*: [Public Trust Dashboard Template](/framework/tools/biodiversity/trust-dashboard-template-en.pdf).
+*Cross-Reference*: [Public Trust Dashboard Template](/frameworks/tools/biodiversity/trust-dashboard-template-en.pdf).
 
 **FPIC 2.0 Protocols**  
 *Purpose*: Blockchain-verified Free, Prior, and Informed Consent mechanisms for indigenous communities.  
 *Usage*: Ensures 70% compliance in governance decisions by 2040.  
 *Example*: A 2026 Palau pilot verifies consent for marine sanctuaries via blockchain.  
-*Cross-Reference*: [FPIC 2.0 Protocols Template](/framework/tools/biodiversity/fpic-2-protocols-en.pdf).
+*Cross-Reference*: [FPIC 2.0 Protocols Template](/frameworks/tools/biodiversity/fpic-2-protocols-en.pdf).
 
 **Future Beings Council**  
 *Purpose*: A governance body representing future generations with 10% voting weight in *Global Biodiversity Commons Trust*.  
 *Usage*: Ensures intergenerational justice in biodiversity decisions.  
 *Example*: The council vetoes a 2035 gene drive proposal due to long-term risks.  
-*Cross-Reference*: [Future Beings Council Setup](/framework/tools/biodiversity/future-beings-council-setup-en.pdf).
+*Cross-Reference*: [Future Beings Council Setup](/frameworks/tools/biodiversity/future-beings-council-setup-en.pdf).
 
 **Gamified UBES**  
 *Purpose*: A mobile app rewarding biodiversity actions (e.g., tree planting) with *Bio-Credits*.  
 *Usage*: Drives 70% *Hybrid UBES* adoption by 2045.  
 *Example*: A user in Malaysia earns 5 UBES points for mangrove restoration in 2029.  
-*Cross-Reference*: [Gamified UBES App](/framework/tools/biodiversity/gamified-ubes-app-en.pdf).
+*Cross-Reference*: [Gamified UBES App](/frameworks/tools/biodiversity/gamified-ubes-app-en.pdf).
 
 **Global Biodiversity Commons Trust (BCT)**  
 *Purpose*: A multi-stakeholder body overseeing biodiversity governance, with 22 representatives including indigenous leaders.  
 *Usage*: Manages $10B Global Biodiversity Fund and advises CBD by 2030.  
 *Example*: The BCT approves 10 ecosystem personhood cases in 2030.  
-*Cross-Reference*: [BCT At-a-Glance Infographic](/framework/tools/biodiversity/bct-at-a-glance-en.pdf).
+*Cross-Reference*: [BCT At-a-Glance Infographic](/frameworks/tools/biodiversity/bct-at-a-glance-en.pdf).
 
 **Global Biodiversity Crisis Network**  
 *Purpose*: A coordination platform for rapid crisis response, linking *Biodiversity SWAT Teams* with global partners.  
 *Usage*: Supports *Biosphere Auto-Defense Protocols* for emergencies.  
 *Example*: A 2032 network coordinates Amazon fire response, saving 10% of habitat.  
-*Cross-Reference*: [Crisis Response Protocols](/framework/tools/biodiversity/crisis-response-protocols-en.pdf).
+*Cross-Reference*: [Crisis Response Protocols](/frameworks/tools/biodiversity/crisis-response-protocols-en.pdf).
 
 **Hybrid UBES**  
 *Purpose*: A biodiversity-positive universal basic ecosystem service system combining crypto and community currencies.  
 *Usage*: Targets 70% adoption by 2045, with $300/month for marginalized groups.  
 *Example*: A 2028 pilot in Bhutan provides $300/month to farmers for rewilding.  
-*Cross-Reference*: [Hybrid UBES Implementation Guide](/framework/tools/biodiversity/hybrid-ubes-guide-en.pdf).
+*Cross-Reference*: [Hybrid UBES Implementation Guide](/frameworks/tools/biodiversity/hybrid-ubes-guide-en.pdf).
 
 **Indigenous Digital Sovereignty Hubs**  
 *Purpose*: Indigenous-controlled digital infrastructure for data and governance sovereignty.  
 *Usage*: Supports 50% co-management of protected areas by 2040.  
 *Example*: A 2027 Amazon hub secures Yanomami restoration data via mesh networks.  
-*Cross-Reference*: [Indigenous Data Sovereignty Guide](/framework/tools/biodiversity/indigenous-guide-en.pdf).
+*Cross-Reference*: [Indigenous Data Sovereignty Guide](/frameworks/tools/biodiversity/indigenous-guide-en.pdf).
 
 **Nexus Impact Assessment Tool**  
 *Purpose*: A tool evaluating biodiversity, water, energy, and food interdependencies.  
 *Usage*: Ensures 15% native species rebound in carbon markets by 2045.  
 *Example*: A 2030 assessment in the Coral Triangle balances fisheries and reef protection.  
-*Cross-Reference*: [Regional Adaptation Guidelines](/framework/tools/biodiversity/regional-adaptation-guidelines-en.pdf).
+*Cross-Reference*: [Regional Adaptation Guidelines](/frameworks/tools/biodiversity/regional-adaptation-guidelines-en.pdf).
 
 **Public Trust Dashboard**  
 *Purpose*: A real-time platform displaying tool usage, audit ratings, and indigenous approvals.  
 *Usage*: Targets 80% public trust by 2035, integrated with *Ethical AI Sentiment Analysis*.  
 *Example*: A 2030 dashboard shows 85% approval for Costa Rica’s pilot programs.  
-*Cross-Reference*: [Public Trust Dashboard Template](/framework/tools/biodiversity/trust-dashboard-template-en.pdf).
+*Cross-Reference*: [Public Trust Dashboard Template](/frameworks/tools/biodiversity/trust-dashboard-template-en.pdf).
 
 **Restoration Festivals**  
 *Purpose*: Bioregional events celebrating biodiversity restoration and cultural engagement.  
 *Usage*: Part of *Global Restoration Calendar*, targeting 1 billion engagements/year by 2035.  
 *Example*: A 2030 Amazon festival draws 500,000 participants, boosting local conservation.  
-*Cross-Reference*: [Global Restoration Calendar Template](/framework/tools/biodiversity/restoration-calendar-template-en.pdf).
+*Cross-Reference*: [Global Restoration Calendar Template](/frameworks/tools/biodiversity/restoration-calendar-template-en.pdf).
 
 **Rights Escalation Ladders**  
 *Purpose*: A mechanism granting ecosystems increasing rights based on health thresholds (e.g., 20% coral bleaching triggers veto power).  
 *Usage*: Supports *Dynamic Rights Spectrum* for 50 ecosystems by 2045.  
 *Example*: A 2032 river gains legal personhood after 15% pollution reduction.  
-*Cross-Reference*: [Rights Escalation Ladder Framework](/framework/tools/biodiversity/rights-escalation-framework-en.pdf).
+*Cross-Reference*: [Rights Escalation Ladder Framework](/frameworks/tools/biodiversity/rights-escalation-framework-en.pdf).
 
 **Sacred Seed Kit**  
 *Purpose*: A dialogue tool for indigenous-led ecosystem discussions, verified by *FPIC 2.0*.  
 *Usage*: Supports *Elder-Youth Knowledge Looms* and pilot programs.  
 *Example*: A 2026 Bhutan kit facilitates Buddhist-inspired conservation workshops.  
-*Cross-Reference*: [Biodiversity Framework Seed Kit](/framework/tools/biodiversity/seed-kit-en.zip).
+*Cross-Reference*: [Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity/seed-kit-en.zip).
 
 **Traditional Knowledge Repatriation**  
 *Purpose*: A process returning indigenous ecological knowledge to communities, supported by *FPIC 2.0*.  
 *Usage*: Targets 20% repatriation by 2040, integrated with *Elder-Youth Knowledge Looms*.  
 *Example*: A 2028 Peruvian project returns Yanomami medicinal plant knowledge, boosting restoration.  
-*Cross-Reference*: [Indigenous Tech Autonomy Fund](/framework/tools/biodiversity/indigenous-tech-autonomy-fund-en.pdf).
+*Cross-Reference*: [Indigenous Tech Autonomy Fund](/frameworks/tools/biodiversity/indigenous-tech-autonomy-fund-en.pdf).
 
 ---
 
 **Cross-References**:
-- [Implementation Tools](/framework/tools/biodiversity)
-- [Core Pillars](/framework/docs/implementation/biodiversity#03-core-pillars)
-- [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure)
+- [Implementation Tools](/frameworks/tools/biodiversity)
+- [Core Pillars](/frameworks/docs/implementation/biodiversity#03-core-pillars)
+- [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure)
 
-**Access**: Full glossary and related tools available at [Tools Library](/framework/tools/biodiversity).
+**Access**: Full glossary and related tools available at [Tools Library](/frameworks/tools/biodiversity).
 
 
 # Appendix C: Complete Tool Library
@@ -5345,7 +5345,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Sacred Opening Protocols, Consensus Building Methods, Conflict Resolution Templates, Elder-Youth Integration Guidelines, Sacred Site Meeting Protocols.  
 *Usage*: Supports *Indigenous Digital Sovereignty Hubs* and *FPIC 2.0 Protocols* for 50% co-management of protected areas by 2040.  
 *Example*: Used in a 2026 Bhutan pilot to facilitate Buddhist-inspired conservation dialogues, achieving 80% community consensus.  
-*Access*: [Sacred Seed Kit](/framework/tools/biodiversity/seed-kit-en.zip).
+*Access*: [Sacred Seed Kit](/frameworks/tools/biodiversity/seed-kit-en.zip).
 
 **FPIC 2.0 Implementation Templates**  
 *Purpose*: Ensures blockchain-verified Free, Prior, and Informed Consent for indigenous communities.  
@@ -5353,7 +5353,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Blockchain-Verified Consent Templates, Traditional Authority Recognition, Community Withdrawal Protocols, Intergenerational Consent Verification, Cultural Protocol Compliance Checklists.  
 *Usage*: Achieves 70% compliance in governance decisions by 2040, integrated with *Biodiversity Blockchain*.  
 *Example*: A 2026 Palau pilot verifies marine sanctuary consent, ensuring 95% process transparency.  
-*Access*: [FPIC 2.0 Protocols Template](/framework/tools/biodiversity/fpic-2-protocols-en.pdf).
+*Access*: [FPIC 2.0 Protocols Template](/frameworks/tools/biodiversity/fpic-2-protocols-en.pdf).
 
 **Global Biodiversity Commons Trust (BCT) Setup Guides**  
 *Purpose*: Establishes a multi-stakeholder governance body with indigenous majority leadership.  
@@ -5361,7 +5361,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Indigenous Majority Governance Setup, Youth Representative Selection, Traditional Consensus Integration, Community Accountability Mechanisms, International Recognition Pathways.  
 *Usage*: Manages $10B Global Biodiversity Fund and advises CBD by 2030.  
 *Example*: Used in 2030 to approve 10 ecosystem personhood cases, achieving 85% stakeholder approval.  
-*Access*: [BCT At-a-Glance Infographic](/framework/tools/biodiversity/bct-at-a-glance-en.pdf).
+*Access*: [BCT At-a-Glance Infographic](/frameworks/tools/biodiversity/bct-at-a-glance-en.pdf).
 
 **Future Beings Council Framework**  
 *Purpose*: Represents future generations in biodiversity governance with 10% voting weight in BCT.  
@@ -5369,7 +5369,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: AI-Assisted Future Representation, Youth-Elder Collaboration Protocols, Seven-Generation Impact Assessment, Traditional Future Visioning Methods, Intergenerational Justice Legal Templates.  
 *Usage*: Ensures intergenerational justice, vetoing high-risk proposals like gene drives by 2035.  
 *Example*: A 2035 council vetoes a gene drive proposal due to long-term ecosystem risks.  
-*Access*: [Future Beings Council Setup](/framework/tools/biodiversity/future-beings-council-setup-en.pdf).
+*Access*: [Future Beings Council Setup](/frameworks/tools/biodiversity/future-beings-council-setup-en.pdf).
 
 **Regional Biodiversity Hub Guidelines**  
 *Purpose*: Coordinates bioregional governance respecting traditional territories.  
@@ -5377,7 +5377,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Bioregional Governance Setup, Traditional Territory Recognition, Cross-Border Coordination Protocols, Community Co-Leadership Templates, Regional Adaptation Guidelines.  
 *Usage*: Supports *Nexus Impact Assessment Tool* for 15% native species rebound by 2045.  
 *Example*: A 2030 Coral Triangle hub balances fisheries and reef protection, achieving 20% coral recovery.  
-*Access*: [Regional Adaptation Guidelines](/framework/tools/biodiversity/regional-adaptation-guidelines-en.pdf).
+*Access*: [Regional Adaptation Guidelines](/frameworks/tools/biodiversity/regional-adaptation-guidelines-en.pdf).
 
 ### Economic Transformation and UBES Tools
 
@@ -5387,7 +5387,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: UBES Design Templates, Traditional Reciprocity Integration, CBD-Backed Liquidity Setup, Regional Currency Networks, Community Economic Governance.  
 *Usage*: Targets 70% adoption by 2045, providing $300/month to marginalized groups.  
 *Example*: A 2028 Bhutan pilot provides $300/month to farmers for rewilding, boosting 10% ecosystem restoration.  
-*Access*: [Hybrid UBES Implementation Guide](/framework/tools/biodiversity/hybrid-ubes-guide-en.pdf).
+*Access*: [Hybrid UBES Implementation Guide](/frameworks/tools/biodiversity/hybrid-ubes-guide-en.pdf).
 
 **Biodiversity Impact Bonds Template**  
 *Purpose*: Funds conservation through pay-for-success financial instruments.  
@@ -5395,7 +5395,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Pay-for-Success Structure Templates, Traditional Knowledge Credit Enhancement, Community Verification Systems, Regional Impact Bond Networks, Youth Employment Integration.  
 *Usage*: Raises $500M by 2035 for restoration projects.  
 *Example*: A $10M bond in Bhutan funds 10% ecosystem restoration by 2030, yielding 5% investor returns.  
-*Access*: [Biodiversity Impact Bonds Template](/framework/tools/biodiversity/impact-bonds-template-en.pdf).
+*Access*: [Biodiversity Impact Bonds Template](/frameworks/tools/biodiversity/impact-bonds-template-en.pdf).
 
 **Biodiversity Harm Index Toolkit**  
 *Purpose*: Assesses and redirects harmful subsidies to support biodiversity.  
@@ -5403,7 +5403,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Biodiversity Harm Index Development, Community Impact Analysis Tools, Worker Transition Support Templates, Regional Subsidy Coordination, Youth Economic Justice Advocacy.  
 *Usage*: Redirects $250B in harmful subsidies by 2040.  
 *Example*: A 2030 Peru pilot redirects $100M in mining subsidies to Amazon restoration, protecting 5% of land.  
-*Access*: [Biodiversity Harm Index Toolkit](/framework/tools/biodiversity/harm-index-toolkit-en.pdf).
+*Access*: [Biodiversity Harm Index Toolkit](/frameworks/tools/biodiversity/harm-index-toolkit-en.pdf).
 
 **Gamified UBES App**  
 *Purpose*: Rewards biodiversity actions with *Bio-Credits* via a mobile platform.  
@@ -5411,7 +5411,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Community Currency Integration, Traditional Reciprocity Rewards, Real-Time Impact Tracking, Youth Engagement Features, Regional Network Connectivity.  
 *Usage*: Drives 70% *Hybrid UBES* adoption by 2045.  
 *Example*: A 2029 Malaysia user earns 5 UBES points for mangrove restoration, redeemable for $25 locally.  
-*Access*: [Gamified UBES App](/framework/tools/biodiversity/gamified-ubes-app-en.pdf).
+*Access*: [Gamified UBES App](/frameworks/tools/biodiversity/gamified-ubes-app-en.pdf).
 
 ### Cultural Mobilization and Community Engagement Tools
 
@@ -5421,7 +5421,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Cultural Sovereignty Protection Protocols, Bio-Arts Project Development Templates, Traditional Knowledge Attribution Requirements, Community Cultural Authority Guidelines, Regional Bio-Arts Networks.  
 *Usage*: Drives 1 billion cultural engagements/year by 2035 via *#BioDebt Campaign*.  
 *Example*: A 2030 Amazon residency produces a Yanomami mural, boosting campaign reach by 500,000 views.  
-*Access*: [Bio-Arts Residencies Toolkit](/framework/tools/biodiversity/bio-arts-toolkit-en.pdf).
+*Access*: [Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity/bio-arts-toolkit-en.pdf).
 
 **Global Restoration Calendar Template**  
 *Purpose*: Coordinates bioregional *Restoration Festivals* celebrating biodiversity.  
@@ -5429,7 +5429,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Traditional Ceremony Integration Templates, Community Festival Leadership, Sacred Site Festival Protocols, Regional Festival Coordination, Youth-Elder Festival Participation.  
 *Usage*: Targets 1 billion engagements/year by 2035.  
 *Example*: A 2030 Amazon festival draws 500,000 participants, boosting local conservation by 15%.  
-*Access*: [Global Restoration Calendar Template](/framework/tools/biodiversity/restoration-calendar-template-en.pdf).
+*Access*: [Global Restoration Calendar Template](/frameworks/tools/biodiversity/restoration-calendar-template-en.pdf).
 
 **Counter-Narrative Playbook**  
 *Purpose*: Guides *Bio-Punk Media Labs* in creating biodiversity-focused content to counter misinformation.  
@@ -5437,7 +5437,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Traditional Storytelling Integration, Community Digital Sovereignty, Regional Digital Coordination, Youth Digital Cultural Leadership, Cultural Influence Policy Assessment.  
 *Usage*: Achieves 50% regional adoption by 2035.  
 *Example*: A Coral Triangle lab’s viral video on reef protection reaches 500,000 views in 2030.  
-*Access*: [Counter-Narrative Playbook](/framework/tools/biodiversity/counter-narrative-playbook-en.pdf).
+*Access*: [Counter-Narrative Playbook](/frameworks/tools/biodiversity/counter-narrative-playbook-en.pdf).
 
 **Cultural Impact Assessment Tool**  
 *Purpose*: Measures cultural engagement with biodiversity governance.  
@@ -5445,7 +5445,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Cultural Biodiversity Index Measurement, Community Cultural Health Evaluation, Traditional Knowledge Cultural Impact, Regional Cultural Development Tracking, Youth Cultural Leadership Assessment.  
 *Usage*: Targets 20% improvement in *Cultural Biodiversity Index* by 2035.  
 *Example*: A 2030 Nepal pilot shows a 10% index rise due to youth-led campaigns.  
-*Access*: [Cultural Impact Assessment Tool](/framework/tools/biodiversity/cultural-impact-assessment-en.pdf).
+*Access*: [Cultural Impact Assessment Tool](/frameworks/tools/biodiversity/cultural-impact-assessment-en.pdf).
 
 ### Technology and Digital Sovereignty Tools
 
@@ -5455,7 +5455,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Mesh Network Development Templates, Indigenous Digital Infrastructure Design, Traditional Communication Integration, Community Technology Governance, Regional Digital Coordination.  
 *Usage*: Supports 50% co-management of protected areas by 2040.  
 *Example*: A 2027 Amazon hub secures Yanomami restoration data via mesh networks.  
-*Access*: [Indigenous Data Sovereignty Guide](/framework/tools/biodiversity/indigenous-guide-en.pdf).
+*Access*: [Indigenous Data Sovereignty Guide](/frameworks/tools/biodiversity/indigenous-guide-en.pdf).
 
 **Biodiversity Blockchain Setup Guide**  
 *Purpose*: Deploys a proof-of-stake blockchain for transparent biodiversity data tracking.  
@@ -5463,7 +5463,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Community Node Networks, Traditional Governance Blockchain Integration, Community Blockchain Training, Democratic Blockchain Governance, Traditional Authority Blockchain Oversight.  
 *Usage*: Ensures 95% data accuracy in *Bio-Credit System* transactions.  
 *Example*: A 2026 Palau pilot verifies 20% no-take marine zones with 98% uptime.  
-*Access*: [Biodiversity Blockchain Setup Guide](/framework/tools/biodiversity/blockchain-setup-guide-en.pdf).
+*Access*: [Biodiversity Blockchain Setup Guide](/frameworks/tools/biodiversity/blockchain-setup-guide-en.pdf).
 
 **Public Trust Dashboard Template**  
 *Purpose*: Provides real-time transparency on tool usage and governance outcomes.  
@@ -5471,7 +5471,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Real-Time Community Data Access, Traditional Indicator Display, Community Verification Interface, Youth Engagement Platforms, Regional Coordination Systems.  
 *Usage*: Targets 80% public trust by 2035, integrated with *Ethical AI Sentiment Analysis*.  
 *Example*: A 2030 Costa Rica dashboard shows 85% approval for pilot programs.  
-*Access*: [Public Trust Dashboard Template](/framework/tools/biodiversity/trust-dashboard-template-en.pdf).
+*Access*: [Public Trust Dashboard Template](/frameworks/tools/biodiversity/trust-dashboard-template-en.pdf).
 
 **Cyber-Physical Guardianship Protocols**  
 *Purpose*: Secures digital and physical infrastructure with indigenous control.  
@@ -5479,7 +5479,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Advanced Security Implementation, Zero-Trust Architecture Setup, Community Key Management, Traditional Security Integration, Regional Security Cooperation.  
 *Usage*: Protects *Indigenous Digital Sovereignty Hubs* with AES-256 encryption.  
 *Example*: A 2027 Yanomami hub uses offline ledgers to secure restoration data.  
-*Access*: [Cyber-Physical Guardianship Protocols](/framework/tools/biodiversity/cyber-guardianship-protocols-en.pdf).
+*Access*: [Cyber-Physical Guardianship Protocols](/frameworks/tools/biodiversity/cyber-guardianship-protocols-en.pdf).
 
 **Ethical AI Sentiment Analysis Toolkit**  
 *Purpose*: Analyzes public trust in biodiversity governance tools using AI.  
@@ -5487,7 +5487,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Community-Controlled AI Development, Traditional Knowledge AI Protection, Community AI Consent Systems, Elder AI Wisdom Integration, Youth AI Leadership Development.  
 *Usage*: Targets 80% public trust by 2035, integrated with *Public Trust Dashboard*.  
 *Example*: A 2030 Costa Rica analysis shows 75% trust in *Biodiversity Blockchain*.  
-*Access*: [Ethical AI Sentiment Analysis Toolkit](/framework/tools/biodiversity/sentiment-analysis-toolkit-en.pdf).
+*Access*: [Ethical AI Sentiment Analysis Toolkit](/frameworks/tools/biodiversity/sentiment-analysis-toolkit-en.pdf).
 
 ### Traditional Knowledge Protection and Repatriation Tools
 
@@ -5497,7 +5497,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Traditional Knowledge Database Audit, Repatriation Legal Templates, Community Knowledge Verification, Traditional Authority Repatriation Oversight, Regional Repatriation Coordination.  
 *Usage*: Targets 20% knowledge repatriation by 2040.  
 *Example*: A 2028 Peruvian project returns Yanomami medicinal plant knowledge, boosting restoration.  
-*Access*: [Traditional Knowledge Repatriation Framework](/framework/tools/biodiversity/repatriation-framework-en.pdf).
+*Access*: [Traditional Knowledge Repatriation Framework](/frameworks/tools/biodiversity/repatriation-framework-en.pdf).
 
 **Indigenous Tech Autonomy Fund Guide**  
 *Purpose*: Funds indigenous-led technology for knowledge protection and governance.  
@@ -5505,7 +5505,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Traditional Knowledge Innovation Registry, Innovation Attribution Requirements, Community Innovation Verification, Traditional Authority Innovation Oversight, Regional Innovation Networks.  
 *Usage*: Supports *Elder-Youth Knowledge Looms* and *Sacred Seed Kits*.  
 *Example*: A 2028 Himalayan fund trains 100 youth in Bhutanese conservation tech.  
-*Access*: [Indigenous Tech Autonomy Fund](/framework/tools/biodiversity/indigenous-tech-autonomy-fund-en.pdf).
+*Access*: [Indigenous Tech Autonomy Fund](/frameworks/tools/biodiversity/indigenous-tech-autonomy-fund-en.pdf).
 
 ### Crisis Response and Emergency Tools
 
@@ -5515,7 +5515,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Rapid Response Team Organization, Traditional Tracker Integration, Community Early Warning Systems, Regional Emergency Coordination, Youth Emergency Leadership.  
 *Usage*: Deploys teams within 72 hours, integrated with *Global Biodiversity Crisis Network*.  
 *Example*: A 2031 Amazon team halts 5% deforestation, saving 10% of habitat.  
-*Access*: [Crisis Response Protocols](/framework/tools/biodiversity/crisis-response-protocols-en.pdf).
+*Access*: [Crisis Response Protocols](/frameworks/tools/biodiversity/crisis-response-protocols-en.pdf).
 
 **Biosphere Auto-Defense Protocols**  
 *Purpose*: Automates governance responses to critical biodiversity thresholds.  
@@ -5523,7 +5523,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Satellite-Detected Deforestation Response, Community Early Warning Integration, Species Population Collapse Response, Ecosystem Tipping Point Protocols, Regional Crisis Coordination.  
 *Usage*: Suspends extractive permits if targets (e.g., `<`8% protected areas) are missed by 2030.  
 *Example*: A 2032 Indonesia protocol halts mining after 6% habitat loss.  
-*Access*: [Biosphere Auto-Defense Protocols](/framework/tools/biodiversity/auto-defense-protocols-en.pdf).
+*Access*: [Biosphere Auto-Defense Protocols](/frameworks/tools/biodiversity/auto-defense-protocols-en.pdf).
 
 ### Regional Adaptation and Cross-Border Tools
 
@@ -5533,7 +5533,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Indigenous Confederation Coordination, Rainforest Traditional Knowledge Integration, Digital Infrastructure Traditional Control, Traditional Territory Recognition, Regional Traditional Knowledge Coordination.  
 *Usage*: Achieves 30% deforestation reduction by 2030 in pilot areas.  
 *Example*: A 2028 pilot empowers Yanomami hubs, protecting 5% of land.  
-*Access*: [Amazon Basin Toolkit](/framework/tools/biodiversity/amazon-toolkit-en.pdf).
+*Access*: [Amazon Basin Toolkit](/frameworks/tools/biodiversity/amazon-toolkit-en.pdf).
 
 **Coral Triangle Marine Governance Guide**  
 *Purpose*: Coordinates marine biodiversity protection across island nations.  
@@ -5541,7 +5541,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Island Nation Traditional Cooperation, Traditional Navigation Knowledge Integration, Marine Traditional Territory Recognition, Traditional Fishing Rights Protection, Regional Marine Traditional Coordination.  
 *Usage*: Achieves 50% coral reef recovery by 2030 in pilot zones.  
 *Example*: A 2026 Palau pilot enforces 20% no-take zones, boosting reef health.  
-*Access*: [Coral Triangle Governance Guide](/framework/tools/biodiversity/coral-triangle-guide-en.pdf).
+*Access*: [Coral Triangle Governance Guide](/frameworks/tools/biodiversity/coral-triangle-guide-en.pdf).
 
 **Arctic Indigenous Sovereignty Toolkit**  
 *Purpose*: Integrates Inuit knowledge for Arctic biodiversity and climate adaptation.  
@@ -5549,7 +5549,7 @@ The tool library consolidates resources from the *Implementation Tools* section 
 *Components*: Inuit Leadership Climate Coordination, Traditional Ice Knowledge Integration, Arctic Traditional Territory Recognition, Traditional Climate Adaptation, Regional Arctic Coordination.  
 *Usage*: Supports 20% ecosystem resilience by 2035 in Arctic regions.  
 *Example*: A 2030 Inuit pilot enhances polar bear habitats, improving 15% population stability.  
-*Access*: [Arctic Sovereignty Toolkit](/framework/tools/biodiversity/arctic-toolkit-en.pdf).
+*Access*: [Arctic Sovereignty Toolkit](/frameworks/tools/biodiversity/arctic-toolkit-en.pdf).
 
 ## <a id="access-implementation"></a>Access and Implementation
 
@@ -5566,19 +5566,19 @@ The tool library consolidates resources from the *Implementation Tools* section 
 
 **Case Study (Real)**: **Maori Kaitiakitanga Platforms, New Zealand (2020–2024)**  
 The Maori community’s digital platforms integrated traditional governance protocols and indigenous language interfaces, increasing environmental monitoring participation by 400%. This model informs the *Indigenous Digital Sovereignty Guide*, ensuring cultural competency and sovereignty protection.  
-*Access*: [Maori Case Study](/framework/case-studies/maori-kaitiakitanga-en.pdf).
+*Access*: [Maori Case Study](/frameworks/case-studies/maori-kaitiakitanga-en.pdf).
 
 **Case Study (Fictive)**: **Amazon Indigenous Technology Cooperative (2028–2032)**  
 A cooperative across Brazil, Peru, and Colombia develops *Amazon Basin Implementation Toolkit* tools, integrating spiritual landscape assessments with scientific monitoring. The pilot engages 100 communities, achieving 75% improved governance participation and 30% deforestation reduction by 2032.  
-*Access*: [Amazon Cooperative Case Study](/framework/case-studies/amazon-cooperative-en.pdf).
+*Access*: [Amazon Cooperative Case Study](/frameworks/case-studies/amazon-cooperative-en.pdf).
 
 **Cross-References**:  
-- [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools)  
-- [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure)  
-- [Core Pillars](/framework/docs/implementation/biodiversity#03-core-pillars)  
-- [Stakeholder Engagement](/framework/docs/implementation/biodiversity#06-stakeholder-engagement)
+- [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools)  
+- [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure)  
+- [Core Pillars](/frameworks/docs/implementation/biodiversity#03-core-pillars)  
+- [Stakeholder Engagement](/frameworks/docs/implementation/biodiversity#06-stakeholder-engagement)
 
-**Access**: Explore the full tool library and implementation resources at [Tools Library](/framework/tools/biodiversity).
+**Access**: Explore the full tool library and implementation resources at [Tools Library](/frameworks/tools/biodiversity).
 
 
 # Appendix D: Moral Edge-Cases Analysis
@@ -6157,7 +6157,7 @@ The Global Governance Biodiversity Implementation Framework acknowledges that re
 
 ---
 
-**Cross-Reference Note**: This moral edge-cases analysis integrates with [Guiding Principles](/framework/docs/implementation/biodiversity#02-guiding-principles) for ethical foundations, [Indigenous-Led Governance](/framework/docs/implementation/biodiversity#03-core-pillars-indigenous) for traditional authority frameworks, [Traditional Knowledge Protection](/framework/docs/implementation/biodiversity#12-implementation-tools-traditional-knowledge) for knowledge sovereignty, and [Crisis Response Protocols](/framework/docs/implementation/biodiversity#12-implementation-tools-crisis-response) for emergency decision-making that respects traditional governance while addressing urgent biodiversity needs.
+**Cross-Reference Note**: This moral edge-cases analysis integrates with [Guiding Principles](/frameworks/docs/implementation/biodiversity#02-guiding-principles) for ethical foundations, [Indigenous-Led Governance](/frameworks/docs/implementation/biodiversity#03-core-pillars-indigenous) for traditional authority frameworks, [Traditional Knowledge Protection](/frameworks/docs/implementation/biodiversity#12-implementation-tools-traditional-knowledge) for knowledge sovereignty, and [Crisis Response Protocols](/frameworks/docs/implementation/biodiversity#12-implementation-tools-crisis-response) for emergency decision-making that respects traditional governance while addressing urgent biodiversity needs.
 
 # Appendix E: Political Economy Analysis
 
@@ -6622,7 +6622,7 @@ Biodiversity protection requires **economic system transformation** beyond capit
 
 ---
 
-**Cross-Reference Note**: This political economy analysis integrates with [Economic Transformation](/framework/docs/implementation/biodiversity#03-core-pillars-economic) for strategic implementation, [Corporate Redemption Pathways](/framework/docs/implementation/biodiversity#12-implementation-tools-economic) for business transformation tools, [Indigenous-Led Governance](/framework/docs/implementation/biodiversity#03-core-pillars-indigenous) for community sovereignty, and [Financing Mechanisms](/framework/docs/implementation/biodiversity#07-financing-mechanisms) for alternative economic development funding with community control and traditional knowledge integration.
+**Cross-Reference Note**: This political economy analysis integrates with [Economic Transformation](/frameworks/docs/implementation/biodiversity#03-core-pillars-economic) for strategic implementation, [Corporate Redemption Pathways](/frameworks/docs/implementation/biodiversity#12-implementation-tools-economic) for business transformation tools, [Indigenous-Led Governance](/frameworks/docs/implementation/biodiversity#03-core-pillars-indigenous) for community sovereignty, and [Financing Mechanisms](/frameworks/docs/implementation/biodiversity#07-financing-mechanisms) for alternative economic development funding with community control and traditional knowledge integration.
 
 # Appendix F: Feasibility Studies
 
@@ -7025,7 +7025,7 @@ This comprehensive feasibility analysis evaluates the practical viability of the
 
 ---
 
-**Cross-Reference Note**: This feasibility analysis integrates with [Financing Mechanisms](/framework/docs/implementation/biodiversity#07-financing-mechanisms) for funding stream analysis, [Implementation Roadmap](/framework/docs/implementation/biodiversity#08-implementation-roadmap) for timeline assessment, [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for institutional feasibility, and [Challenges and Solutions](/framework/docs/implementation/biodiversity#11-challenges-solutions) for risk mitigation strategies and adaptive implementation planning.
+**Cross-Reference Note**: This feasibility analysis integrates with [Financing Mechanisms](/frameworks/docs/implementation/biodiversity#07-financing-mechanisms) for funding stream analysis, [Implementation Roadmap](/frameworks/docs/implementation/biodiversity#08-implementation-roadmap) for timeline assessment, [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for institutional feasibility, and [Challenges and Solutions](/frameworks/docs/implementation/biodiversity#11-challenges-solutions) for risk mitigation strategies and adaptive implementation planning.
 
 # Appendix G: Pilot Program Blueprints
 
@@ -7785,7 +7785,7 @@ Regional expansion requires comprehensive cultural competency training, traditio
 
 ---
 
-**Cross-Reference Note**: These pilot program blueprints integrate with [Implementation Roadmap](/framework/docs/implementation/biodiversity#08-implementation-roadmap) for timeline coordination, [Financing Mechanisms](/framework/docs/implementation/biodiversity#07-financing-mechanisms) for budget implementation, [Stakeholder Engagement](/framework/docs/implementation/biodiversity#06-stakeholder-engagement) for community participation, [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for practical deployment resources, and [Feasibility Studies](/framework/docs/implementation/biodiversity#appendix-f-feasibility-studies) for implementation viability assessment throughout the pilot program development and regional scaling phases.
+**Cross-Reference Note**: These pilot program blueprints integrate with [Implementation Roadmap](/frameworks/docs/implementation/biodiversity#08-implementation-roadmap) for timeline coordination, [Financing Mechanisms](/frameworks/docs/implementation/biodiversity#07-financing-mechanisms) for budget implementation, [Stakeholder Engagement](/frameworks/docs/implementation/biodiversity#06-stakeholder-engagement) for community participation, [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for practical deployment resources, and [Feasibility Studies](/frameworks/docs/implementation/biodiversity#appendix-f-feasibility-studies) for implementation viability assessment throughout the pilot program development and regional scaling phases.
 
 # Appendix H: Scenario Planning
 
@@ -8475,7 +8475,7 @@ Annual Bio-Wargames provide systematic scenario planning exercises that combine 
 
 ---
 
-**Cross-Reference Note**: This scenario planning framework integrates with [Implementation Roadmap](/framework/docs/implementation/biodiversity#08-implementation-roadmap) for adaptive timeline management, [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for crisis governance protocols, [Challenges and Solutions](/framework/docs/implementation/biodiversity#11-challenges-solutions) for crisis mitigation strategies, [Policy Mechanisms](/framework/docs/implementation/biodiversity#05-policy-mechanisms) for emergency response protocols, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for crisis response resources including community resilience toolkits and traditional knowledge crisis management guides.
+**Cross-Reference Note**: This scenario planning framework integrates with [Implementation Roadmap](/frameworks/docs/implementation/biodiversity#08-implementation-roadmap) for adaptive timeline management, [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for crisis governance protocols, [Challenges and Solutions](/frameworks/docs/implementation/biodiversity#11-challenges-solutions) for crisis mitigation strategies, [Policy Mechanisms](/frameworks/docs/implementation/biodiversity#05-policy-mechanisms) for emergency response protocols, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for crisis response resources including community resilience toolkits and traditional knowledge crisis management guides.
 
 # Appendix I: International Cooperation Protocols
 
@@ -9205,7 +9205,7 @@ International cooperation requires comprehensive cultural competency training, t
 
 ---
 
-**Cross-Reference Note**: These international cooperation protocols integrate with [Governance Structure](/framework/docs/implementation/biodiversity#04-governance-structure) for institutional development, [Implementation Roadmap](/framework/docs/implementation/biodiversity#08-implementation-roadmap) for diplomatic timeline coordination, [Policy Mechanisms](/framework/docs/implementation/biodiversity#05-policy-mechanisms) for legal framework development, [Stakeholder Engagement](/framework/docs/implementation/biodiversity#06-stakeholder-engagement) for civil society coordination, and [Implementation Tools](/framework/docs/implementation/biodiversity#12-implementation-tools) for diplomatic resources including traditional diplomacy guides and international engagement toolkits.
+**Cross-Reference Note**: These international cooperation protocols integrate with [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure) for institutional development, [Implementation Roadmap](/frameworks/docs/implementation/biodiversity#08-implementation-roadmap) for diplomatic timeline coordination, [Policy Mechanisms](/frameworks/docs/implementation/biodiversity#05-policy-mechanisms) for legal framework development, [Stakeholder Engagement](/frameworks/docs/implementation/biodiversity#06-stakeholder-engagement) for civil society coordination, and [Implementation Tools](/frameworks/docs/implementation/biodiversity#12-implementation-tools) for diplomatic resources including traditional diplomacy guides and international engagement toolkits.
 
 # Appendix J: Creative Outputs
 
@@ -9257,7 +9257,7 @@ Cultural mobilization shifts public imagination by embedding biodiversity themes
 > What will you find when you trace our footprints?"*  
 
 - **Performance**: Pair with projection art of endangered species, using regionally relevant species (e.g., Amazonian pink river dolphin, Pacific Island green turtle, Arctic polar bear).  
-- **Template**: [Download script](/framework/tools/biodiversity/spoken-word-template-en.pdf).  
+- **Template**: [Download script](/frameworks/tools/biodiversity/spoken-word-template-en.pdf).  
 - **Cultural Adaptation**: Translate into local dialects and incorporate traditional storytelling motifs, such as Amazonian oral histories or Arctic throat-singing rhythms, with elder approval.  
 - **Attribution**: Credit indigenous storytellers for motifs or narratives used, ensuring their communities retain intellectual and cultural ownership.  
 
@@ -9273,7 +9273,7 @@ Cultural mobilization shifts public imagination by embedding biodiversity themes
 
 **2. Street Art + QR Murals**  
 - **Design**: Murals linking to AR experiences (e.g., scan a painted coral reef to see its 2050 restoration scenario), reflecting regional ecosystems like Amazonian rainforests or Arctic tundra.  
-- **Template**: [Stencil pack](/framework/tools/biodiversity/mural-stencils-en.zip).  
+- **Template**: [Stencil pack](/frameworks/tools/biodiversity/mural-stencils-en.zip).  
 - **Cultural Protocol**: Obtain community consent for mural locations and designs, especially on sacred or communal lands, and credit indigenous artists prominently.  
 
 #### **<a id="participatory-theater"></a>🎭 Participatory Theater**  
@@ -9284,7 +9284,7 @@ Cultural mobilization shifts public imagination by embedding biodiversity themes
 - **Jury (Audience)**: Votes on reparations (e.g., UBES fines for corporations).  
 
 - **Duration**: 15 mins (adaptable for classrooms or protests).  
-- **Download**: [Script + facilitation guide](/framework/tools/biodiversity/theater-script-en.pdf).  
+- **Download**: [Script + facilitation guide](/frameworks/tools/biodiversity/theater-script-en.pdf).  
 - **Regional Adaptation**: Incorporate local environmental issues (e.g., Amazon deforestation, Pacific overfishing, Arctic permafrost loss) and traditional performance styles (e.g., Amazonian ritual dances, Pacific Island haka).  
 - **Attribution**: Acknowledge indigenous contributors for ecological knowledge shared in scripts, with transparent compensation agreements.  
 
@@ -9344,9 +9344,9 @@ Monks and biologists co-created sand mandalas embedded with native seeds. After 
 **Lesson**: Spiritual-artistic practices deepen ecological stewardship, especially when grounded in traditional knowledge with community consent.  
 
 ### **<a id="access-tools"></a>Access Tools**  
-- **[Bio-Arts Residencies Toolkit](/framework/tools/biodiversity/bio-arts-toolkit-en.pdf)**: Co-creation guides, updated with FPIC 2.0 protocols and regional adaptation strategies.  
-- **[Global Restoration Calendar](/framework/tools/biodiversity/restoration-calendar-template-en.pdf)**: Sync local events, with templates for indigenous-led festivals.  
-- **[Counter-Narrative Playbook](/framework/tools/biodiversity/counter-narrative-playbook-en.pdf)**: Combat misinformation, emphasizing indigenous voices.  
+- **[Bio-Arts Residencies Toolkit](/frameworks/tools/biodiversity/bio-arts-toolkit-en.pdf)**: Co-creation guides, updated with FPIC 2.0 protocols and regional adaptation strategies.  
+- **[Global Restoration Calendar](/frameworks/tools/biodiversity/restoration-calendar-template-en.pdf)**: Sync local events, with templates for indigenous-led festivals.  
+- **[Counter-Narrative Playbook](/frameworks/tools/biodiversity/counter-narrative-playbook-en.pdf)**: Combat misinformation, emphasizing indigenous voices.  
 
 **License**: CC BY-SA 4.0 | Remix, translate, and tag #GlobalBiodiversityFramework. Ensure all adaptations credit indigenous knowledge holders and follow FPIC 2.0 protocols.
 

@@ -50,36 +50,36 @@ The *Peace & Conflict Resolution Framework* is grounded in a set of foundational
 - **Value System Mapping**: Assessing dominant worldviews in conflict contexts using frameworks like Spiral Dynamics to identify developmental stages (e.g., tribal, authoritarian, egalitarian) driving tensions.
 - **Developmental Mismatch Recognition**: Identifying conflicts rooted in differing levels of consciousness (e.g., traditional vs. modern values) to design targeted interventions bridging divides.
 - **Developmentally-Appropriate Peacebuilding**: Crafting peace processes that resonate with the cultural and psychological stages of conflicting parties, fostering mutual understanding.
-- **Case Example**: The South African Truth and Reconciliation Commission integrated diverse value systems—traditional, legal, and egalitarian—creating a hybrid process that addressed multiple worldviews, illustrating developmentally-informed peacebuilding (see [Developmental Value Systems & Peace](/framework/docs/implementation/peace#developmental-value-systems)).
-- **Implementation Tools**: Conflict analysis templates incorporating value system assessments are available in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/framework/tools/peace).
+- **Case Example**: The South African Truth and Reconciliation Commission integrated diverse value systems—traditional, legal, and egalitarian—creating a hybrid process that addressed multiple worldviews, illustrating developmentally-informed peacebuilding (see [Developmental Value Systems & Peace](/frameworks/docs/implementation/peace#developmental-value-systems)).
+- **Implementation Tools**: Conflict analysis templates incorporating value system assessments are available in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 #### 5. Alignment with Global and Local Governance Frameworks
 The framework aligns with international and local governance systems to ensure compatibility and maximize impact:
 - **UN Sustainable Development Goals (SDGs)**:
-  - **SDG 16 (Peace, Justice and Strong Institutions)**: The framework’s metrics for negative and positive peace (e.g., conflict reduction, trust indices) directly support SDG 16’s targets for inclusive societies and effective institutions (see [Measuring Peace Governance Success](/framework/docs/implementation/peace#measuring-success)).
-  - **Cross-Cutting SDGs**: Contributes to SDG 5 (Gender Equality) through women-led peace networks, SDG 10 (Reduced Inequalities) via resource justice, SDG 13 (Climate Action) through climate-conflict strategies, and SDG 17 (Partnerships) via multi-track engagement (see [Cross-Domain Integration](/framework/docs/implementation/peace#cross-domain-integration)).
+  - **SDG 16 (Peace, Justice and Strong Institutions)**: The framework’s metrics for negative and positive peace (e.g., conflict reduction, trust indices) directly support SDG 16’s targets for inclusive societies and effective institutions (see [Measuring Peace Governance Success](/frameworks/docs/implementation/peace#measuring-success)).
+  - **Cross-Cutting SDGs**: Contributes to SDG 5 (Gender Equality) through women-led peace networks, SDG 10 (Reduced Inequalities) via resource justice, SDG 13 (Climate Action) through climate-conflict strategies, and SDG 17 (Partnerships) via multi-track engagement (see [Cross-Domain Integration](/frameworks/docs/implementation/peace#cross-domain-integration)).
 - **UNDP Peacebuilding Principles**:
-  - Aligns with UNDP’s focus on conflict prevention, inclusive governance, and resilience by integrating *Local Peace Committees*, *Psychosocial Support*, and *Resource Justice Mechanisms* (see [Structural Conflict Prevention](/framework/docs/implementation/peace#structural-prevention)).
-  - Example: UNDP’s support for community dialogues in Yemen informs the framework’s *Mobile Peace Units* in fragile states (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).
+  - Aligns with UNDP’s focus on conflict prevention, inclusive governance, and resilience by integrating *Local Peace Committees*, *Psychosocial Support*, and *Resource Justice Mechanisms* (see [Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention)).
+  - Example: UNDP’s support for community dialogues in Yemen informs the framework’s *Mobile Peace Units* in fragile states (see [Context-Specific Implementation Roadmaps](/frameworks/docs/implementation/peace#context-specific-roadmaps)).
 - **OSCE Conflict Prevention Protocols**:
-  - Adopts OSCE’s early warning and confidence-building measures through *Digital Confidence-Building Measures* and *Cross-Border Civil Society Networks* (see [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure), [Regional Conflict Resolution](/framework/docs/implementation/peace#regional-implementation)).
+  - Adopts OSCE’s early warning and confidence-building measures through *Digital Confidence-Building Measures* and *Cross-Border Civil Society Networks* (see [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure), [Regional Conflict Resolution](/frameworks/docs/implementation/peace#regional-implementation)).
   - Example: OSCE’s mediation in Ukraine (2014–2025) informs the framework’s *Digital Peacekeeping Tools* for ceasefire monitoring.
 - **Local Government Systems**:
-  - Integrates with municipal and regional governance by embedding peace committees within existing local structures, ensuring alignment with local laws and cultural norms (see [Local Conflict Resolution Implementation](/framework/docs/implementation/peace#local-implementation)).
+  - Integrates with municipal and regional governance by embedding peace committees within existing local structures, ensuring alignment with local laws and cultural norms (see [Local Conflict Resolution Implementation](/frameworks/docs/implementation/peace#local-implementation)).
   - Example: Bogotá’s urban peace hubs align with city councils, using *Urban Conflict Mediation Toolkits* to address gang violence while respecting municipal authority.
 
 **Implementation Tools**:
-- *[Governance Alignment Checklist](/framework/tools/peace/governance-alignment-checklist-en.pdf)*: Assess compatibility with SDG, UNDP, OSCE, and local governance systems.
-- *[Multi-Track Dialogue Protocol](/framework/tools/peace/multi-track-dialogue-protocol-en.pdf)*: Facilitate inclusive engagement.
-- *[Value System Mapping Template](/framework/tools/peace/value-system-mapping-template-en.pdf)*: Design culturally resonant interventions.
-- *[Conflict Analysis Framework](/framework/tools/peace/conflict-analysis-framework-en.pdf)*: Align conflict assessments with global metrics.
+- *[Governance Alignment Checklist](/frameworks/tools/peace/governance-alignment-checklist-en.pdf)*: Assess compatibility with SDG, UNDP, OSCE, and local governance systems.
+- *[Multi-Track Dialogue Protocol](/frameworks/tools/peace/multi-track-dialogue-protocol-en.pdf)*: Facilitate inclusive engagement.
+- *[Value System Mapping Template](/frameworks/tools/peace/value-system-mapping-template-en.pdf)*: Design culturally resonant interventions.
+- *[Conflict Analysis Framework](/frameworks/tools/peace/conflict-analysis-framework-en.pdf)*: Align conflict assessments with global metrics.
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/framework/tools/peace).
+These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace).
 
 
 **Implementation Support Resources:**
 
-To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/framework/tools/peace).
+To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/frameworks/tools/peace).
 
 ### Local Conflict Resolution Implementation (Community Scale)
 
@@ -144,7 +144,7 @@ Communities seeking to implement these approaches can utilize the Local Peace Co
 
 **Implementation Support Resources:**
 
-To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/framework/tools/peace).
+To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/frameworks/tools/peace).
 
 ### Traditional & Indigenous Peacebuilding Integration
 
@@ -199,18 +199,18 @@ To enhance the framework's cultural diversity and global applicability, these ca
 - **Implementation Consideration**: When deploying these approaches, practitioners should avoid cultural essentialism, recognizing internal diversity within Islamic and Confucian traditions and adapting methods to specific contexts.
 
 **Implementation Tools**:
-- *[Islamic-Informed Mediation Protocol](/framework/tools/peace/islamic-mediation-protocol-en.pdf)*: Guide for integrating sulh principles into formal mediation processes.
-- *[Confucian Harmony-Based Dialogue Template](/framework/tools/peace/confucian-dialogue-template-en.pdf)*: Structure for relationship-centered conflict resolution dialogue.
-- *[Cross-Cultural Peace Tradition Integration Guide](/framework/tools/peace/cross-cultural-integration-guide-en.pdf)*: Methods for adapting diverse peace traditions to specific contexts.
+- *[Islamic-Informed Mediation Protocol](/frameworks/tools/peace/islamic-mediation-protocol-en.pdf)*: Guide for integrating sulh principles into formal mediation processes.
+- *[Confucian Harmony-Based Dialogue Template](/frameworks/tools/peace/confucian-dialogue-template-en.pdf)*: Structure for relationship-centered conflict resolution dialogue.
+- *[Cross-Cultural Peace Tradition Integration Guide](/frameworks/tools/peace/cross-cultural-integration-guide-en.pdf)*: Methods for adapting diverse peace traditions to specific contexts.
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/framework/tools/peace).
+These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace).
 
 **Case Study**: New Zealand's Treaty of Waitangi reconciliation process demonstrates successful integration of Māori traditional approaches into national peacebuilding. By incorporating tikanga (Māori customary practices) into both the process and outcomes of addressing historical injustices, the Waitangi Tribunal has enabled more culturally legitimate and sustainable resolutions. The use of marae (traditional meeting spaces) for hearings, recognition of oral testimony as valid evidence, and inclusion of Māori legal concepts in settlements has created a hybrid system that respects indigenous sovereignty while working within a national framework. This approach shows how traditional knowledge systems can be integral rather than peripheral to effective peacebuilding governance.
 
 
 **Implementation Support Resources:**
 
-To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/framework/tools/peace).
+To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/frameworks/tools/peace).
 
 ### Regional Conflict Resolution Implementation (Cross-Border Scale)
 - **Regional Peace & Security Architectures**: Formalized structures for conflict prevention and mediation
@@ -230,7 +230,7 @@ To bridge theory and practice, this framework is accompanied by a **Peace & Conf
 
 **Implementation Support Resources:**
 
-To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/framework/tools/peace).
+To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/frameworks/tools/peace).
 
 ### Global Conflict Resolution Implementation (Planetary Scale)
 - **Global Peace Infrastructure**: Institutions and mechanisms for preventing and resolving conflicts that transcend regional boundaries
@@ -251,7 +251,7 @@ To bridge theory and practice, this framework is accompanied by a **Peace & Conf
 
 ### Digital Peace Infrastructure
 
-Digital technologies enable new approaches to peace governance, addressing conflicts in virtual and physical domains while requiring ethical safeguards to prevent harm (see [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics)).
+Digital technologies enable new approaches to peace governance, addressing conflicts in virtual and physical domains while requiring ethical safeguards to prevent harm (see [AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics)).
 
 #### 1. Cyber Conflict Prevention
 - **Cyber Diplomacy Frameworks**: Agreements to prevent escalatory cyber-attacks during tensions.
@@ -278,23 +278,23 @@ Digital technologies enable new approaches to peace governance, addressing confl
 To ensure accessibility in areas with limited connectivity or digital literacy, the framework provides non-digital and low-tech alternatives:
 - **SMS-Based Reporting Systems**: Enable communities to submit conflict alerts via text messages, requiring only basic mobile phones, as piloted in Somalia’s early warning networks.
 - **Radio-Based Peace Messaging**: Use community radio to broadcast peace dialogues and misinformation resilience tips, effective in fragile states like South Sudan.
-- **Paper-Based Dialogue Protocols**: Provide printed templates for community mediation and trust-building circles, adaptable to local languages and literacy levels (see [Traditional & Indigenous Peacebuilding](/framework/docs/implementation/peace#indigenous-integration)).
+- **Paper-Based Dialogue Protocols**: Provide printed templates for community mediation and trust-building circles, adaptable to local languages and literacy levels (see [Traditional & Indigenous Peacebuilding](/frameworks/docs/implementation/peace#indigenous-integration)).
 - **Community Training Modules**: Offer in-person workshops to teach peacebuilding skills, using storytelling and role-playing for low-literacy groups, as implemented in Yemen’s mobile peace units.
-- **Integration with Digital Tools**: Ensure fallback versions sync with digital platforms (e.g., SMS data feeds into IPFS networks) when connectivity is available, maintaining scalability (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).
+- **Integration with Digital Tools**: Ensure fallback versions sync with digital platforms (e.g., SMS data feeds into IPFS networks) when connectivity is available, maintaining scalability (see [Context-Specific Implementation Roadmaps](/frameworks/docs/implementation/peace#context-specific-roadmaps)).
 
 **Case Studies**:
 - **Estonia’s E-Governance for Peace**: Transparent digital platforms strengthened social cohesion, with offline backups for rural areas.
-- **Ukraine’s Digital Diplomacy Success**: Social media mobilized global support, complemented by radio broadcasts for rural communities (see [Media & Information Peace Capacities](/framework/docs/implementation/peace#media-information)).
+- **Ukraine’s Digital Diplomacy Success**: Social media mobilized global support, complemented by radio broadcasts for rural communities (see [Media & Information Peace Capacities](/frameworks/docs/implementation/peace#media-information)).
 - **Myanmar’s Platform Failure**: Inaction on hate speech highlighted the need for fallback systems like community radio to counter disinformation in low-connectivity areas.
 
 **Implementation Tools**:
-- *[Low-Tech Reporting Guide](/framework/tools/peace/low-tech-reporting-guide-en.pdf)*: Design SMS and radio-based conflict alert systems.
-- *[Paper-Based Dialogue Template](/framework/tools/peace/paper-dialogue-template-en.pdf)*: Structure offline community mediation.
-- *[Blockchain Truth Log Blueprint](/framework/tools/peace/blockchain-truth-log-blueprint-en.pdf)*: Deploy transparent records.
-- *[IPFS Reporting Design Guide](/framework/tools/peace/ipfs-reporting-design-guide-en.pdf)*: Set up decentralized networks.
-- *[Digital Diplomacy Playbook](/framework/tools/peace/digital-diplomacy-playbook-en.pdf)*: Guide online and offline peace campaigns.
+- *[Low-Tech Reporting Guide](/frameworks/tools/peace/low-tech-reporting-guide-en.pdf)*: Design SMS and radio-based conflict alert systems.
+- *[Paper-Based Dialogue Template](/frameworks/tools/peace/paper-dialogue-template-en.pdf)*: Structure offline community mediation.
+- *[Blockchain Truth Log Blueprint](/frameworks/tools/peace/blockchain-truth-log-blueprint-en.pdf)*: Deploy transparent records.
+- *[IPFS Reporting Design Guide](/frameworks/tools/peace/ipfs-reporting-design-guide-en.pdf)*: Set up decentralized networks.
+- *[Digital Diplomacy Playbook](/frameworks/tools/peace/digital-diplomacy-playbook-en.pdf)*: Guide online and offline peace campaigns.
 
-These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/framework/tools/peace).
+These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace).
 
 ### Digital Peace Infrastructure KPIs
 
@@ -363,7 +363,7 @@ While digital technologies offer powerful tools for peace, they also present uni
   - **Platform Dynamics & Conflict Amplification**:
     - **Disinformation Spread**: Echo chambers and viral misinformation campaigns can escalate tensions, as seen in Myanmar’s 2017 Rohingya crisis, where Facebook’s algorithms amplified hate speech, contributing to violence against minorities.
     - **Algorithmic Bias**: Coordinated hate speech campaigns exploit biased algorithms to target vulnerable groups, requiring proactive moderation and bias audits to mitigate harm.
-    - **Mitigation Strategies**: Implement real-time content moderation protocols and cross-platform coordination to detect and neutralize malicious campaigns, as piloted in Ukraine’s Digital Ceasefire Monitoring (see [Media & Information Peace Capacities](/framework/docs/implementation/peace#media-information)).
+    - **Mitigation Strategies**: Implement real-time content moderation protocols and cross-platform coordination to detect and neutralize malicious campaigns, as piloted in Ukraine’s Digital Ceasefire Monitoring (see [Media & Information Peace Capacities](/frameworks/docs/implementation/peace#media-information)).
 - **Dual-Use Technology Governance**: Managing tools that can serve both peace and conflict purposes
 
 #### 3. Digital Inclusion & Justice
@@ -373,8 +373,8 @@ While digital technologies offer powerful tools for peace, they also present uni
 - **Digital Rights in Conflict**: Protecting online freedoms during security emergencies
 - **Digital Education & Misinformation Resilience**:
   - Develop public education modules to build critical media literacy, teaching communities to identify disinformation tactics (e.g., deepfakes, bot-driven narratives) and cognitive biases.
-  - Deploy community-based workshops, integrated with *Digital Media Literacy Campaigns* (per [Media & Information Peace Capacities](/framework/docs/implementation/peace#media-information)), to foster resilience in conflict-prone areas.
-  - Use gamified apps and school curricula to engage youth in recognizing and countering misinformation, piloted in high-tech democracies like the U.S. (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).
+  - Deploy community-based workshops, integrated with *Digital Media Literacy Campaigns* (per [Media & Information Peace Capacities](/frameworks/docs/implementation/peace#media-information)), to foster resilience in conflict-prone areas.
+  - Use gamified apps and school curricula to engage youth in recognizing and countering misinformation, piloted in high-tech democracies like the U.S. (see [Context-Specific Implementation Roadmaps](/frameworks/docs/implementation/peace#context-specific-roadmaps)).
 
 **Case Study**: The Digital Ceasefire Monitoring system developed for the Ukraine conflict demonstrates both the potential and risks of technology in peace processes. While successfully documenting violations through citizen reports and satellite imagery, the system faced challenges including verification difficulties, propaganda manipulation, and security risks for digital witnesses. The initiative responded by developing a comprehensive ethics framework addressing bias, security, and sovereignty concerns. This included regular bias audits of monitoring algorithms, secure submission channels for vulnerable witnesses, and local ownership of all data collected. The case illustrates how peace technologies require dedicated ethical frameworks addressing their specific conflict context risks.
 
@@ -384,7 +384,7 @@ While digital technologies offer powerful tools for peace, they also present uni
 - Ethical AI assessment frameworks to guide technology deployment in peacebuilding.
 - Data protection guidelines for conflict-sensitive digital systems.
 
-These and other implementation tools for AI and digital peace ethics are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/framework/tools/peace).
+These and other implementation tools for AI and digital peace ethics are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace).
 
 ### Emerging Technologies for Peace
 
@@ -957,7 +957,7 @@ The work of protecting whistleblowers is ultimately about protecting the fundame
 - Peace-Climate-Migration Nexus Model: Flowchart showing interconnections between these three dimensions
 - Implementation Timeline Roadmap: Visual guide to phased implementation across contexts
 
-Access these resources in the [Visual Resources Library](/framework/visuals/peace).
+Access these resources in the [Visual Resources Library](/frameworks/visuals/peace).
 
 ---
 
@@ -973,35 +973,35 @@ To make the *Peace & Conflict Resolution Framework* accessible to diverse stakeh
 #### 1. Technical Guide for Policymakers and Mediators
 - **Length**: Approximately 12 pages
 - **Audience**: Government officials, mediators, peace negotiators, and policymakers
-- **Focus**: Detailed guidance on implementing peace governance, including preventive diplomacy, multi-track engagement, and ethical technology use (e.g., AI-driven early warning, per [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics)). Covers governance structures, policy mechanisms, and context-specific strategies (e.g., high-tech democracies vs. low-trust states, per [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).
+- **Focus**: Detailed guidance on implementing peace governance, including preventive diplomacy, multi-track engagement, and ethical technology use (e.g., AI-driven early warning, per [AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics)). Covers governance structures, policy mechanisms, and context-specific strategies (e.g., high-tech democracies vs. low-trust states, per [Context-Specific Implementation Roadmaps](/frameworks/docs/implementation/peace#context-specific-roadmaps)).
 - **Key Content**:
-  - Overview of core principles, including developmental value systems for conflict analysis (per [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles)).
-  - Policy tools for structural prevention, transitional justice, and peace financing (per [Structural Conflict Prevention](/framework/docs/implementation/peace#structural-prevention), [Transitional Justice & Reconciliation](/framework/docs/implementation/peace#transitional-justice), [Peace Financing & Resource Mobilization](/framework/docs/implementation/peace#peace-financing)).
-  - Metrics for success and implementation timelines (per [Measuring Peace Governance Success](/framework/docs/implementation/peace#measuring-success), [Implementation Timeline](/framework/docs/implementation/peace#implementation-timeline)).
+  - Overview of core principles, including developmental value systems for conflict analysis (per [Core Peace & Conflict Resolution Principles](/frameworks/docs/implementation/peace#core-principles)).
+  - Policy tools for structural prevention, transitional justice, and peace financing (per [Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention), [Transitional Justice & Reconciliation](/frameworks/docs/implementation/peace#transitional-justice), [Peace Financing & Resource Mobilization](/frameworks/docs/implementation/peace#peace-financing)).
+  - Metrics for success and implementation timelines (per [Measuring Peace Governance Success](/frameworks/docs/implementation/peace#measuring-success), [Implementation Timeline](/frameworks/docs/implementation/peace#implementation-timeline)).
 - **Use Case**: Ideal for officials designing national peace policies or mediators facilitating multi-stakeholder dialogues.
-- **Access**: Available in PDF and markdown at [Technical Guide for Policymakers and Mediators](/framework/tools/peace/technical-guide-policymakers-en.pdf), included in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/framework/tools/peace).
+- **Access**: Available in PDF and markdown at [Technical Guide for Policymakers and Mediators](/frameworks/tools/peace/technical-guide-policymakers-en.pdf), included in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 #### 2. Community Peace Implementation Guide
 - **Length**: Approximately 8 pages
 - **Audience**: Civil society organizations, local leaders, community mediators, and laypeople
-- **Focus**: Practical steps for community-based peacebuilding, emphasizing local peace committees, indigenous practices, and psychosocial support (per [Local Conflict Resolution Implementation](/framework/docs/implementation/peace#local-implementation), [Traditional & Indigenous Peacebuilding](/framework/docs/implementation/peace#indigenous-integration], [Mental Health & Psychosocial Support](/framework/docs/implementation/peace#mental-health)). Highlights actionable tools like dialogue facilitation and misinformation resilience (per [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure)).
+- **Focus**: Practical steps for community-based peacebuilding, emphasizing local peace committees, indigenous practices, and psychosocial support (per [Local Conflict Resolution Implementation](/frameworks/docs/implementation/peace#local-implementation), [Traditional & Indigenous Peacebuilding](/frameworks/docs/implementation/peace#indigenous-integration], [Mental Health & Psychosocial Support](/frameworks/docs/implementation/peace#mental-health)). Highlights actionable tools like dialogue facilitation and misinformation resilience (per [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)).
 - **Key Content**:
-  - Simplified explanation of peace governance principles, including value system translation for inclusive dialogue (per [Educational & Cultural Peace Infrastructure](/framework/docs/implementation/peace#educational-cultural-infrastructure)).
-  - Community-level strategies for conflict prevention, reconciliation, and resource justice (per [Structural Conflict Prevention](/framework/docs/implementation/peace#structural-prevention)).
-  - Case studies, such as the Peace Schools in Mindanao and Rwanda’s Gacaca courts (per [Educational & Cultural Peace Infrastructure](/framework/docs/implementation/peace#educational-cultural-infrastructure), [Transitional Justice & Reconciliation](/framework/docs/implementation/peace#transitional-justice)).
+  - Simplified explanation of peace governance principles, including value system translation for inclusive dialogue (per [Educational & Cultural Peace Infrastructure](/frameworks/docs/implementation/peace#educational-cultural-infrastructure)).
+  - Community-level strategies for conflict prevention, reconciliation, and resource justice (per [Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention)).
+  - Case studies, such as the Peace Schools in Mindanao and Rwanda’s Gacaca courts (per [Educational & Cultural Peace Infrastructure](/frameworks/docs/implementation/peace#educational-cultural-infrastructure), [Transitional Justice & Reconciliation](/frameworks/docs/implementation/peace#transitional-justice)).
 - **Use Case**: Suitable for local leaders launching peace committees or civil society groups organizing community dialogues.
-- **Access**: Available in PDF and markdown at [Community Peace Implementation Guide](/framework/tools/peace/community-peace-guide-en.pdf), included in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/framework/tools/peace).
+- **Access**: Available in PDF and markdown at [Community Peace Implementation Guide](/frameworks/tools/peace/community-peace-guide-en.pdf), included in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 #### 3. Youth Peace Action Guide
 - **Length**: Approximately 6 pages
 - **Audience**: Youth, community groups, educators, and youth advocates
-- **Focus**: Accessible, action-oriented guidance for youth engagement in peacebuilding, focusing on youth-led initiatives, digital advocacy, and cultural reconciliation (per [Structural Conflict Prevention](/framework/docs/implementation/peace#structural-prevention), [Media & Information Peace Capacities](/framework/docs/implementation/peace#media-information)). Emphasizes practical tools like digital education modules and participatory sensing (per [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics), [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure)).
+- **Focus**: Accessible, action-oriented guidance for youth engagement in peacebuilding, focusing on youth-led initiatives, digital advocacy, and cultural reconciliation (per [Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention), [Media & Information Peace Capacities](/frameworks/docs/implementation/peace#media-information)). Emphasizes practical tools like digital education modules and participatory sensing (per [AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics), [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)).
 - **Key Content**:
-  - Introduction to peacebuilding concepts, highlighting youth’s role in shaping value systems and countering misinformation (per [Developmental Value Systems & Peace](/framework/docs/implementation/peace#developmental-value-systems)).
-  - Action steps for organizing peace campaigns, using open-source digital tools, and fostering intercultural dialogue (per [Educational & Cultural Peace Infrastructure](/framework/docs/implementation/peace#educational-cultural-infrastructure)).
-  - Inspiring examples, such as Colombia’s Youth Peace Caucus and Ukraine’s digital diplomacy (per [Structural Conflict Prevention](/framework/docs/implementation/peace#structural-prevention), [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure)).
+  - Introduction to peacebuilding concepts, highlighting youth’s role in shaping value systems and countering misinformation (per [Developmental Value Systems & Peace](/frameworks/docs/implementation/peace#developmental-value-systems)).
+  - Action steps for organizing peace campaigns, using open-source digital tools, and fostering intercultural dialogue (per [Educational & Cultural Peace Infrastructure](/frameworks/docs/implementation/peace#educational-cultural-infrastructure)).
+  - Inspiring examples, such as Colombia’s Youth Peace Caucus and Ukraine’s digital diplomacy (per [Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention), [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)).
 - **Use Case**: Perfect for youth groups launching peace advocacy campaigns or educators integrating peace education into curricula.
-- **Access**: Available in PDF and markdown at [Youth Peace Action Guide](/framework/tools/peace/youth-peace-action-guide-en.pdf), included in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/framework/tools/peace).
+- **Access**: Available in PDF and markdown at [Youth Peace Action Guide](/frameworks/tools/peace/youth-peace-action-guide-en.pdf), included in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 **Equity Commitment**: All lite guides are open-access, with translations planned for Spanish, Arabic, and French to reach conflict-affected regions. Accessible formats (e.g., audio, simplified text) will ensure inclusion for diverse groups, including those with limited literacy or connectivity.
 
@@ -1020,7 +1020,7 @@ The framework rests on foundational principles to guide peace governance:
 - **Cross-Scale Early Warning Networks**: Establish local-to-global information sharing on emerging conflict risks
 - **Structural Prevention**: Address root causes of conflict including resource inequalities, historical injustices, and governance failures
 
-*For more details, see [Core Peace & Conflict Resolution Principles](/framework/docs/implementation/peace#core-principles).*
+*For more details, see [Core Peace & Conflict Resolution Principles](/frameworks/docs/implementation/peace#core-principles).*
 
 ### Multi-Track Engagement
 - **Inclusive Peace Processes**: Engage across official, civil society, business, religious, and community channels
@@ -1036,14 +1036,14 @@ The framework rests on foundational principles to guide peace governance:
 - **Truth, Justice & Memory Work**: Acknowledge historical wrongs while creating pathways to reconciliation
 - **Trauma-Informed Peacebuilding**: Address psychological impacts of conflict on individuals and communities
 
-*For more details, see [Transitional Justice & Reconciliation](/framework/docs/implementation/peace#transitional-justice).*
+*For more details, see [Transitional Justice & Reconciliation](/frameworks/docs/implementation/peace#transitional-justice).*
 
 ### Developmental Value Systems
 - **Value System Mapping**: Assess dominant worldviews in conflict contexts using frameworks like Spiral Dynamics to identify developmental stages driving tensions
 - **Developmental Mismatch Recognition**: Identify conflicts rooted in differing levels of consciousness to design targeted interventions bridging divides
 - **Developmentally-Appropriate Peacebuilding**: Craft peace processes that resonate with the cultural and psychological stages of conflicting parties
 
-*For more details, see [Developmental Value Systems & Peace](/framework/docs/implementation/peace#developmental-value-systems).*
+*For more details, see [Developmental Value Systems & Peace](/frameworks/docs/implementation/peace#developmental-value-systems).*
 
 ## Governance Strategies
 ### Multi-Level Governance
@@ -1056,21 +1056,21 @@ The framework rests on foundational principles to guide peace governance:
   - Community Policing Networks pairing law enforcement with residents to build trust
   - Urban Planning for Social Cohesion integrating peacebuilding into city development
 
-*For more details, see [Local Conflict Resolution Implementation](/framework/docs/implementation/peace#local-implementation).*
+*For more details, see [Local Conflict Resolution Implementation](/frameworks/docs/implementation/peace#local-implementation).*
 
 #### Regional Implementation
 - **Regional Peace & Security Architectures**: Develop formalized structures for conflict prevention and mediation
 - **Transboundary Resource Governance**: Establish cooperative management of shared resources to prevent resource-based conflicts
 - **Cross-Border Civil Society Networks**: Foster connections between peace movements across national boundaries
 
-*For more details, see [Regional Conflict Resolution](/framework/docs/implementation/peace#regional-implementation).*
+*For more details, see [Regional Conflict Resolution](/frameworks/docs/implementation/peace#regional-implementation).*
 
 #### Global Implementation
 - **Global Peace Infrastructure**: Strengthen institutions and mechanisms for preventing and resolving conflicts that transcend regional boundaries
 - **Arms Governance**: Develop frameworks for reducing weapons proliferation and regulating emerging military technologies
 - **Global Justice Mechanisms**: Establish systems for addressing international crimes and providing redress to victims
 
-*For more details, see [Global Conflict Resolution](/framework/docs/implementation/peace#global-implementation).*
+*For more details, see [Global Conflict Resolution](/frameworks/docs/implementation/peace#global-implementation).*
 
 ### Context-Specific Implementation
 Tailor strategies to conflict zones:
@@ -1103,7 +1103,7 @@ Tailor strategies to conflict zones:
   - Establish women-led peace networks to prioritize gender-inclusive mediation
   - Use IPFS-based community reporting for secure, low-bandwidth conflict alerts
 
-*For more details, see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps).*
+*For more details, see [Context-Specific Implementation Roadmaps](/frameworks/docs/implementation/peace#context-specific-roadmaps).*
 
 ## Policy Mechanisms
 
@@ -1113,7 +1113,7 @@ Tailor strategies to conflict zones:
 - **Political Inclusion & Power-Sharing**: Implement mechanisms ensuring all groups have meaningful political voice
 - **Anti-Discrimination Frameworks**: Systematically prevent structural violence against marginalized groups
 
-*For more details, see [Structural Conflict Prevention](/framework/docs/implementation/peace#structural-prevention).*
+*For more details, see [Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention).*
 
 ### Transitional Justice
 - **Complementary Justice Mechanisms**: Integrate approaches including criminal justice, truth-seeking, reparations, and institutional reform
@@ -1121,7 +1121,7 @@ Tailor strategies to conflict zones:
 - **Cultural Contextualization**: Design justice approaches appropriate to local norms and traditions, using value system mapping to ensure cultural resonance
 - **Gendered Justice**: Address the specific impacts of conflict on women, men, and sexual/gender minorities
 
-*For more details, see [Transitional Justice & Reconciliation](/framework/docs/implementation/peace#transitional-justice).*
+*For more details, see [Transitional Justice & Reconciliation](/frameworks/docs/implementation/peace#transitional-justice).*
 
 ### Peace Financing
 - **Peace Bonds & Impact Investment**: Develop market mechanisms to fund preventive interventions
@@ -1129,7 +1129,7 @@ Tailor strategies to conflict zones:
 - **Peace Taxes & Levies**: Create dedicated revenue streams from arms sales or extractive industries
 - **Localized Peace Financing**: Provide direct funding to community-led peacebuilding initiatives
 
-*For more details, see [Peace Financing & Resource Mobilization](/framework/docs/implementation/peace#peace-financing).*
+*For more details, see [Peace Financing & Resource Mobilization](/frameworks/docs/implementation/peace#peace-financing).*
 
 ### Peace-Business Integration
 - **Corporate Accountability Frameworks**: Implement mandatory conflict impact assessments for corporations operating in fragile states
@@ -1137,7 +1137,7 @@ Tailor strategies to conflict zones:
 - **Private Sector Peace Engagement**: Support corporate-led initiatives channeling profits into local peacebuilding
 - **Taxing Illicit Financial Flows**: Redirect revenue from illicit economic activities into peace financing
 
-*For more details, see [Peace-Business Integration](/framework/docs/implementation/peace#peace-business-integration).*
+*For more details, see [Peace-Business Integration](/frameworks/docs/implementation/peace#peace-business-integration).*
 
 ### Digital Governance
 - **Platform Regulation**: Implement governance mechanisms to prevent disinformation and hate speech
@@ -1145,7 +1145,7 @@ Tailor strategies to conflict zones:
 - **Transparency Mandates**: Require disclosure of how algorithms amplify divisive content
 - **Digital Resilience Education**: Build public capacity to identify manipulation tactics
 
-*For more details, see [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics).*
+*For more details, see [AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics).*
 
 ## Technology Integration
 
@@ -1155,7 +1155,7 @@ Tailor strategies to conflict zones:
 - **Social Media Monitoring**: Implement real-time analysis of digital sentiment to detect tensions
 - **Cross-Platform Data Integration**: Combine multiple data sources for comprehensive early warning
 
-*For more details, see [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure).*
+*For more details, see [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure).*
 
 ### Decentralized Tools
 - **Blockchain-Based Truth & Reconciliation Logs**: Create transparent, tamper-proof digital ledgers for testimonies and agreements
@@ -1192,24 +1192,24 @@ Adopt a phased approach to implementation:
 - Integrate peacebuilding with climate, economic, and technological governance
 - Institutionalize positive peace metrics to measure cooperation and resilience
 
-*For more details, see [Implementation Timeline](/framework/docs/implementation/peace#implementation-timeline).*
+*For more details, see [Implementation Timeline](/frameworks/docs/implementation/peace#implementation-timeline).*
 
 ## Case Studies
 
 ### Rwanda's Gacaca Courts
 Rwanda's traditional community-based justice system was adapted post-genocide to process over 1.9 million cases through approximately 12,000 community courts. This approach balanced accountability, truth-telling, and community participation while addressing capacity constraints, demonstrating how transitional justice can be culturally resonant and effective at scale.
 
-*For more details, see [Transitional Justice & Reconciliation](/framework/docs/implementation/peace#transitional-justice).*
+*For more details, see [Transitional Justice & Reconciliation](/frameworks/docs/implementation/peace#transitional-justice).*
 
 ### Colombia's Peace Process
 The Colombia peace process with FARC incorporated youth councils and blockchain-based truth logs to ensure transparent reconciliation. By including youth and Indigenous representatives, the process created mechanisms for ongoing participation, while digital tools ensured procedural transparency and built trust among stakeholders.
 
-*For more details, see [Hybrid & Non-State Actor Engagement](/framework/docs/implementation/peace#non-state-actors).*
+*For more details, see [Hybrid & Non-State Actor Engagement](/frameworks/docs/implementation/peace#non-state-actors).*
 
 ### Ukraine's Digital Diplomacy
 President Zelensky's strategic use of social media mobilized global support during conflict. The Digital Ceasefire Monitoring system used AI filters to flag disinformation, while "Dialogue Circles" brought pro-Ukraine and pro-Russia residents together, reducing polarization by 25% in participant surveys.
 
-*For more details, see [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure).*
+*For more details, see [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure).*
 
 ## Measuring Success
 Effective peace governance requires metrics beyond the absence of violence:
@@ -1232,21 +1232,21 @@ Effective peace governance requires metrics beyond the absence of violence:
 - Economic recovery in post-conflict settings
 - Psychological well-being and trauma reduction
 
-*For more details, see [Measuring Peace Governance Success](/framework/docs/implementation/peace#measuring-success).*
+*For more details, see [Measuring Peace Governance Success](/frameworks/docs/implementation/peace#measuring-success).*
 
 ## Tools for Implementation
 The following tools are available to support implementation:
 
-- **[Conflict Analysis Framework](/framework/tools/peace/conflict-analysis-framework-en.pdf)**: Assess conflict drivers and value systems
-- **[Local Peace Committee Charter Template](/framework/tools/peace/peace-committee-charter-en.pdf)**: Structure community governance
-- **[Value System Mapping Template](/framework/tools/peace/value-system-mapping-template-en.pdf)**: Design culturally resonant interventions
-- **[Multi-Track Dialogue Protocol](/framework/tools/peace/multi-track-dialogue-protocol-en.pdf)**: Facilitate inclusive engagement
-- **[Early Warning System Design Guide](/framework/tools/peace/early-warning-design-guide-en.pdf)**: Establish detection and response systems
-- **[Peace-Technology Ethics Assessment](/framework/tools/peace/peace-tech-ethics-assessment-en.pdf)**: Guide ethical digital deployment
-- **[Resource Conflict Transformation Guide](/framework/tools/peace/resource-conflict-guide-en.pdf)**: Address disputes over natural resources
-- **[Trauma-Informed Facilitation Toolkit](/framework/tools/peace/trauma-informed-toolkit-en.pdf)**: Train facilitators in sensitive engagement
+- **[Conflict Analysis Framework](/frameworks/tools/peace/conflict-analysis-framework-en.pdf)**: Assess conflict drivers and value systems
+- **[Local Peace Committee Charter Template](/frameworks/tools/peace/peace-committee-charter-en.pdf)**: Structure community governance
+- **[Value System Mapping Template](/frameworks/tools/peace/value-system-mapping-template-en.pdf)**: Design culturally resonant interventions
+- **[Multi-Track Dialogue Protocol](/frameworks/tools/peace/multi-track-dialogue-protocol-en.pdf)**: Facilitate inclusive engagement
+- **[Early Warning System Design Guide](/frameworks/tools/peace/early-warning-design-guide-en.pdf)**: Establish detection and response systems
+- **[Peace-Technology Ethics Assessment](/frameworks/tools/peace/peace-tech-ethics-assessment-en.pdf)**: Guide ethical digital deployment
+- **[Resource Conflict Transformation Guide](/frameworks/tools/peace/resource-conflict-guide-en.pdf)**: Address disputes over natural resources
+- **[Trauma-Informed Facilitation Toolkit](/frameworks/tools/peace/trauma-informed-toolkit-en.pdf)**: Train facilitators in sensitive engagement
 
-*Access these and other tools in the Peace & Conflict Resolution Seed Kit via the [Tools Library](/framework/tools/peace).*
+*Access these and other tools in the Peace & Conflict Resolution Seed Kit via the [Tools Library](/frameworks/tools/peace).*
 
 ## Call to Action
 Policymakers and mediators are pivotal in institutionalizing peace governance. Begin by:
@@ -1258,7 +1258,7 @@ Policymakers and mediators are pivotal in institutionalizing peace governance. B
 5. Building digital ethics into technological approaches
 6. Measuring both negative and positive peace indicators
 
-Download the full framework or explore additional tools at [Tools Library](/framework/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] to refine this work and join a global peacebuilding community.
+Download the full framework or explore additional tools at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] to refine this work and join a global peacebuilding community.
 
 
 # Community Peace Implementation Guide
@@ -1274,39 +1274,39 @@ Communities are the heart of peacebuilding, bridging divides through trust and c
 
 ## Key Strategies
 ### Building Local Peace Committees
-- Form diverse *Local Peace Committees* with youth, women, and traditional leaders to mediate disputes and monitor tensions (see [Local Conflict Resolution Implementation](/framework/docs/implementation/peace#local-implementation)).
+- Form diverse *Local Peace Committees* with youth, women, and traditional leaders to mediate disputes and monitor tensions (see [Local Conflict Resolution Implementation](/frameworks/docs/implementation/peace#local-implementation)).
 - Use the *Local Peace Committee Charter Template* to define roles and processes.
 
 ### Fostering Inclusive Dialogue
-- Organize *Community Dialogue Forums* to address grievances, using value system translation to bridge worldviews (e.g., traditional vs. modern values, per [Educational & Cultural Peace Infrastructure](/framework/docs/implementation/peace#educational-cultural-infrastructure)).
+- Organize *Community Dialogue Forums* to address grievances, using value system translation to bridge worldviews (e.g., traditional vs. modern values, per [Educational & Cultural Peace Infrastructure](/frameworks/docs/implementation/peace#educational-cultural-infrastructure)).
 - Train facilitators in *Multi-Track Dialogue Protocols* to ensure inclusivity.
 
 ### Healing and Reconciliation
-- Implement *Community-Based Psychosocial Support* to address trauma, integrating local healing practices (see [Mental Health & Psychosocial Support](/framework/docs/implementation/peace#mental-health)).
-- Support *Healing-Oriented Memorialization* to honor past conflicts without rekindling divisions (see [Transitional Justice & Reconciliation](/framework/docs/implementation/peace#transitional-justice)).
+- Implement *Community-Based Psychosocial Support* to address trauma, integrating local healing practices (see [Mental Health & Psychosocial Support](/frameworks/docs/implementation/peace#mental-health)).
+- Support *Healing-Oriented Memorialization* to honor past conflicts without rekindling divisions (see [Transitional Justice & Reconciliation](/frameworks/docs/implementation/peace#transitional-justice)).
 
 ### Addressing Structural Issues
-- Advocate for *Resource Justice Mechanisms* to equitably distribute land and water, reducing grievance-driven violence (see [Structural Conflict Prevention](/framework/docs/implementation/peace#structural-prevention)).
+- Advocate for *Resource Justice Mechanisms* to equitably distribute land and water, reducing grievance-driven violence (see [Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention)).
 - Engage youth in *Youth, Peace & Security* programs to prevent militia recruitment.
 
 ## Using Digital Tools
-- Deploy *Participatory Sensing Networks* for community-led conflict alerts, using low-tech options in low-trust settings (see [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure)).
-- Conduct *Digital Education Workshops* to build resilience against misinformation, teaching communities to spot deepfakes and biases (see [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics)).
+- Deploy *Participatory Sensing Networks* for community-led conflict alerts, using low-tech options in low-trust settings (see [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)).
+- Conduct *Digital Education Workshops* to build resilience against misinformation, teaching communities to spot deepfakes and biases (see [AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics)).
 
 ## Case Studies
-- **Mindanao Peace Schools**: Integrated conflict resolution and interfaith dialogue into education, creating zones of tolerance in the Philippines (see [Educational & Cultural Peace Infrastructure](/framework/docs/implementation/peace#educational-cultural-infrastructure)).
+- **Mindanao Peace Schools**: Integrated conflict resolution and interfaith dialogue into education, creating zones of tolerance in the Philippines (see [Educational & Cultural Peace Infrastructure](/frameworks/docs/implementation/peace#educational-cultural-infrastructure)).
 - **Nigeria’s Interfaith Mediation Centre**: Muslim-Christian mediator pairs defused tensions in the Middle Belt, transforming religion into a peace resource.
 
 ## Tools for Action
-- *[Stakeholder Engagement Protocol](/framework/tools/peace/stakeholder-engagement-protocol-en.pdf)*: Guide inclusive community forums.
-- *[Monitoring & Evaluation Rubric Template](/framework/tools/peace/monitoring-evaluation-rubric-en.pdf)*: Track peacebuilding progress.
-- *[Regenerative Farming Guide](/framework/tools/peace/regenerative-farming-guide-en.pdf)*: Address resource conflicts through sustainable practices.
-- *[Digital Peace Ethics Guide](/framework/tools/peace/digital-peace-ethics-guide-en.pdf)*: Navigate digital tools safely.
+- *[Stakeholder Engagement Protocol](/frameworks/tools/peace/stakeholder-engagement-protocol-en.pdf)*: Guide inclusive community forums.
+- *[Monitoring & Evaluation Rubric Template](/frameworks/tools/peace/monitoring-evaluation-rubric-en.pdf)*: Track peacebuilding progress.
+- *[Regenerative Farming Guide](/frameworks/tools/peace/regenerative-farming-guide-en.pdf)*: Address resource conflicts through sustainable practices.
+- *[Digital Peace Ethics Guide](/frameworks/tools/peace/digital-peace-ethics-guide-en.pdf)*: Navigate digital tools safely.
 
-Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/framework/tools/peace).
+Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 ## Call to Action
-You can drive peace in your community. Start by forming a *Local Peace Committee*, organizing a dialogue forum, or hosting a digital literacy workshop. Explore the *Seed Kit* and full framework at [Tools Library](/framework/tools/peace). Share your efforts at [globalgovernanceframework@gmail.com] to join a global peacebuilding community.
+You can drive peace in your community. Start by forming a *Local Peace Committee*, organizing a dialogue forum, or hosting a digital literacy workshop. Explore the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Share your efforts at [globalgovernanceframework@gmail.com] to join a global peacebuilding community.
 
 
 # Youth Peace Action Guide
@@ -1322,19 +1322,19 @@ Young people bring energy and fresh ideas to peacebuilding. You can:
 
 ## Get Started with Peacebuilding
 ### Organize a Peace Campaign
-- Start a *Youth Peace Club* at school or in your community to plan events like peace marches or art projects (see [Structural Conflict Prevention](/framework/docs/implementation/peace#structural-prevention)). 🎉
+- Start a *Youth Peace Club* at school or in your community to plan events like peace marches or art projects (see [Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention)). 🎉
 - Use the *Peace Advocacy Campaign Toolkit* to create posters and social media posts.
 
 ### Fight Misinformation
-- Learn to spot fake news and deepfakes with *Digital Education Modules* (see [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics)). 🔍🧠
+- Learn to spot fake news and deepfakes with *Digital Education Modules* (see [AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics)). 🔍🧠
 - Share tips with friends to build a community that resists online hate. 🤝💻
 
 ### Build Bridges
-- Host *Intercultural Dialogue Events* to connect people from different backgrounds, using games or storytelling (see [Educational & Cultural Peace Infrastructure](/framework/docs/implementation/peace#educational-cultural-infrastructure)).  🌉🗣️
-- Use value system ideas to understand others’ views, like how South Africa mixed different beliefs for peace (see [Developmental Value Systems & Peace](/framework/docs/implementation/peace#developmental-value-systems)).
+- Host *Intercultural Dialogue Events* to connect people from different backgrounds, using games or storytelling (see [Educational & Cultural Peace Infrastructure](/frameworks/docs/implementation/peace#educational-cultural-infrastructure)).  🌉🗣️
+- Use value system ideas to understand others’ views, like how South Africa mixed different beliefs for peace (see [Developmental Value Systems & Peace](/frameworks/docs/implementation/peace#developmental-value-systems)).
 
 ### Support Healing
-- Create *Safe Spaces* for friends to talk about tough experiences, inspired by community healing programs (see [Mental Health & Psychosocial Support](/framework/docs/implementation/peace#mental-health)). 🫂💛
+- Create *Safe Spaces* for friends to talk about tough experiences, inspired by community healing programs (see [Mental Health & Psychosocial Support](/frameworks/docs/implementation/peace#mental-health)). 🫂💛
 - Share stories of peace, like Colombia’s Youth Peace Caucus, to inspire others. 📖✨
 
 ### ✨ Try This! Youth Peace Reflection Activity 🧠📝
@@ -1358,19 +1358,19 @@ Small acts of reflection can spark big waves of change.
 This is what a Peace Wall moment might look like! What would you add to it? 🎨📸
 
 ## Awesome Examples
-- **Colombia’s Youth Peace Caucus**: Young leaders monitored peace agreements, showing youth can shape big changes (see [Structural Conflict Prevention](/framework/docs/implementation/peace#structural-prevention)).
-- **Ukraine’s Digital Campaign**: Youth used X and Telegram to share peace messages during conflict, reaching millions (see [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure)).
+- **Colombia’s Youth Peace Caucus**: Young leaders monitored peace agreements, showing youth can shape big changes (see [Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention)).
+- **Ukraine’s Digital Campaign**: Youth used X and Telegram to share peace messages during conflict, reaching millions (see [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)).
 
 ## 🧰 Tools for You
-- *[Advocacy Playbook](/framework/tools/peace/peace-advocacy-toolkit-en.pdf)*: Plan your peace campaign.
-- *[Youth Council Charter Template](/framework/tools/peace/youth-council-charter-en.pdf)*: Start a youth peace group.
-- *[Media Peace Messaging Guide](/framework/tools/peace/media-peace-messaging-guide-en.pdf)*: Create viral peace posts. 📢
-- *[Value System Mapping Template](/framework/tools/peace/value-system-mapping-template-en.pdf)*: Understand different perspectives.
+- *[Advocacy Playbook](/frameworks/tools/peace/peace-advocacy-toolkit-en.pdf)*: Plan your peace campaign.
+- *[Youth Council Charter Template](/frameworks/tools/peace/youth-council-charter-en.pdf)*: Start a youth peace group.
+- *[Media Peace Messaging Guide](/frameworks/tools/peace/media-peace-messaging-guide-en.pdf)*: Create viral peace posts. 📢
+- *[Value System Mapping Template](/frameworks/tools/peace/value-system-mapping-template-en.pdf)*: Understand different perspectives.
 
-Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/framework/tools/peace).
+Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 ## Call to Action
-You have the power to build peace! 🚀🌟🕊️ Start small—organize a peace club, share a peace post, or host a dialogue. Check out the *Seed Kit* and full framework at [Tools Library](/framework/tools/peace). Tell us about your work at [globalgovernanceframework@gmail.com] to join youth peacebuilders worldwide! 🌎
+You have the power to build peace! 🚀🌟🕊️ Start small—organize a peace club, share a peace post, or host a dialogue. Check out the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Tell us about your work at [globalgovernanceframework@gmail.com] to join youth peacebuilders worldwide! 🌎
 
 
 # Digital Peace Ethics Guide
@@ -1380,12 +1380,12 @@ The *Peace & Conflict Resolution Framework* harnesses digital technologies to pr
 
 ## Why Digital Ethics Matter
 Digital tools can amplify peace or escalate conflicts:
-- **Opportunities**: Early warning systems and virtual dialogues connect communities (see [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure)).
-- **Risks**: Disinformation (e.g., Myanmar’s 2017 hate speech on Facebook) and algorithmic bias can fuel violence (see [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics)).
+- **Opportunities**: Early warning systems and virtual dialogues connect communities (see [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)).
+- **Risks**: Disinformation (e.g., Myanmar’s 2017 hate speech on Facebook) and algorithmic bias can fuel violence (see [AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics)).
 
 ## Key Strategies
 ### Ethical Technology Deployment
-- Use *Bias Detection Protocols* to ensure AI tools, like conflict prediction models, don’t discriminate (see [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics)).
+- Use *Bias Detection Protocols* to ensure AI tools, like conflict prediction models, don’t discriminate (see [AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics)).
 - Implement *Human Oversight Requirements* to keep humans in control of digital peace processes.
 
 ### Countering Digital Risks
@@ -1393,30 +1393,30 @@ Digital tools can amplify peace or escalate conflicts:
 - Conduct *Algorithmic Transparency Audits* to address biases amplifying conflict (e.g., echo chambers).
 
 ### Inclusive Digital Access
-- Ensure *Access Equity* by providing low-tech alternatives, like SMS-based reporting, for communities with limited connectivity (see [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure)).
+- Ensure *Access Equity* by providing low-tech alternatives, like SMS-based reporting, for communities with limited connectivity (see [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)).
 - Build *Technical Capacity* through training programs for local tech development.
 
 ### Decentralized Tools
-- Use *Blockchain-Based Truth & Reconciliation Logs* for transparent, trusted records, inspired by Colombia’s peace process (see [Hybrid & Non-State Actor Engagement](/framework/docs/implementation/peace#non-state-actors)).
-- Deploy *IPFS-Based Community Reporting* for secure, decentralized alerts in low-trust settings (see [Context-Specific Implementation Roadmaps](/framework/docs/implementation/peace#context-specific-roadmaps)).
+- Use *Blockchain-Based Truth & Reconciliation Logs* for transparent, trusted records, inspired by Colombia’s peace process (see [Hybrid & Non-State Actor Engagement](/frameworks/docs/implementation/peace#non-state-actors)).
+- Deploy *IPFS-Based Community Reporting* for secure, decentralized alerts in low-trust settings (see [Context-Specific Implementation Roadmaps](/frameworks/docs/implementation/peace#context-specific-roadmaps)).
 
 ## Building Misinformation Resilience
-- Launch *Digital Education Workshops* to teach communities to identify deepfakes and bot-driven narratives (see [AI & Digital Peace Ethics](/framework/docs/implementation/peace#ai-ethics)).
+- Launch *Digital Education Workshops* to teach communities to identify deepfakes and bot-driven narratives (see [AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics)).
 - Use gamified apps to engage youth in countering misinformation, as piloted in high-tech democracies.
 
 ## Case Studies
-- **Ukraine’s Digital Success**: Zelensky’s social media campaigns countered disinformation, mobilizing global support (see [Digital Peace Infrastructure](/framework/docs/implementation/peace#digital-infrastructure)).
+- **Ukraine’s Digital Success**: Zelensky’s social media campaigns countered disinformation, mobilizing global support (see [Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)).
 - **Myanmar’s Digital Failure**: Platform inaction amplified hate speech against the Rohingya, highlighting the need for ethical governance.
 
 ## Tools for Implementation
-- *[Peace-Technology Ethics Assessment](/framework/tools/peace/peace-tech-ethics-assessment-en.pdf)*: Evaluate digital tools for risks.
-- *[Digital Diplomacy Playbook](/framework/tools/peace/digital-diplomacy-playbook-en.pdf)*: Guide online peace campaigns.
-- *[Blockchain Truth Log Blueprint](/framework/tools/peace/blockchain-truth-log-blueprint-en.pdf)*: Design transparent records.
-- *[IPFS Reporting Design Guide](/framework/tools/peace/ipfs-reporting-design-guide-en.pdf)*: Set up decentralized networks.
+- *[Peace-Technology Ethics Assessment](/frameworks/tools/peace/peace-tech-ethics-assessment-en.pdf)*: Evaluate digital tools for risks.
+- *[Digital Diplomacy Playbook](/frameworks/tools/peace/digital-diplomacy-playbook-en.pdf)*: Guide online peace campaigns.
+- *[Blockchain Truth Log Blueprint](/frameworks/tools/peace/blockchain-truth-log-blueprint-en.pdf)*: Design transparent records.
+- *[IPFS Reporting Design Guide](/frameworks/tools/peace/ipfs-reporting-design-guide-en.pdf)*: Set up decentralized networks.
 
-Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/framework/tools/peace).
+Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Library](/frameworks/tools/peace).
 
 ## Call to Action
-Lead ethical digital peacebuilding by auditing platforms, training communities, or deploying decentralized tools. Start with the *Peace-Technology Ethics Assessment* and explore the full framework at [Tools Library](/framework/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] to shape the future of digital peace.
+Lead ethical digital peacebuilding by auditing platforms, training communities, or deploying decentralized tools. Start with the *Peace-Technology Ethics Assessment* and explore the full framework at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] to shape the future of digital peace.
 
 

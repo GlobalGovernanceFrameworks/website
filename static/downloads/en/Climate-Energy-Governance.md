@@ -25,70 +25,70 @@ The framework provides a detailed architecture for effective climate and energy 
 ### <a id="framework-sections"></a>Framework Sections
 The framework is organized into twelve interconnected sections, each addressing critical aspects of climate and energy governance:
 
-1. **[Introduction](/framework/docs/implementation/energy#01-introduction)**: Establishes the purpose, scope, and vision of the framework, defining key principles and terms for climate and energy governance.
+1. **[Introduction](/frameworks/docs/implementation/energy#01-introduction)**: Establishes the purpose, scope, and vision of the framework, defining key principles and terms for climate and energy governance.
    
-2. **[Guiding Principles](/framework/docs/implementation/energy#02-guiding-principles)**: Articulates the six foundational principles guiding all aspects of the framework: sustainability, equity, science-based decision making, cooperation, adaptability, and ethical frameworks.
+2. **[Guiding Principles](/frameworks/docs/implementation/energy#02-guiding-principles)**: Articulates the six foundational principles guiding all aspects of the framework: sustainability, equity, science-based decision making, cooperation, adaptability, and ethical frameworks.
    
-3. **[Governance Structure](/framework/docs/implementation/energy#03-governance-structure)**: Details the three-level governance architecture: Global Oversight Body, Regional Hubs, and National Implementation Units, with mechanisms to balance authority with flexibility.
+3. **[Governance Structure](/frameworks/docs/implementation/energy#03-governance-structure)**: Details the three-level governance architecture: Global Oversight Body, Regional Hubs, and National Implementation Units, with mechanisms to balance authority with flexibility.
    
-4. **[Core Pillars](/framework/docs/implementation/energy#04-core-pillars)**: Outlines the four substantive pillars: Climate Mitigation, Climate Adaptation, Energy Transition, and Innovation & Technology, with specific targets and strategies for each.
+4. **[Core Pillars](/frameworks/docs/implementation/energy#04-core-pillars)**: Outlines the four substantive pillars: Climate Mitigation, Climate Adaptation, Energy Transition, and Innovation & Technology, with specific targets and strategies for each.
    
-5. **[Policy Mechanisms](/framework/docs/implementation/energy#05-policy-mechanisms)**: Describes the policy toolkit including legislation and treaties, economic tools, monitoring systems, compliance measures, and just transition compacts.
+5. **[Policy Mechanisms](/frameworks/docs/implementation/energy#05-policy-mechanisms)**: Describes the policy toolkit including legislation and treaties, economic tools, monitoring systems, compliance measures, and just transition compacts.
    
-6. **[Stakeholder Engagement](/framework/docs/implementation/energy#06-stakeholder-engagement)**: Explains approaches for meaningful participation from governments, private sector, civil society, marginalized groups, and the scientific community.
+6. **[Stakeholder Engagement](/frameworks/docs/implementation/energy#06-stakeholder-engagement)**: Explains approaches for meaningful participation from governments, private sector, civil society, marginalized groups, and the scientific community.
    
-7. **[Financing the Framework](/framework/docs/implementation/energy#07-financing)**: Details sources of climate finance, allocation principles, and mechanisms to scale funding to meet the challenge.
+7. **[Financing the Framework](/frameworks/docs/implementation/energy#07-financing)**: Details sources of climate finance, allocation principles, and mechanisms to scale funding to meet the challenge.
    
-8. **[Implementation Roadmap](/framework/docs/implementation/energy#08-implementation-roadmap)**: Presents a phased approach over three periods (2025-2030, 2030-2040, 2040-2050) with specific milestones and priorities.
+8. **[Implementation Roadmap](/frameworks/docs/implementation/energy#08-implementation-roadmap)**: Presents a phased approach over three periods (2025-2030, 2030-2040, 2040-2050) with specific milestones and priorities.
    
-9. **[Metrics for Success](/framework/docs/implementation/energy#09-metrics)**: Establishes comprehensive indicators across climate, energy, equity, adaptation, and biodiversity dimensions to track progress.
+9. **[Metrics for Success](/frameworks/docs/implementation/energy#09-metrics)**: Establishes comprehensive indicators across climate, energy, equity, adaptation, and biodiversity dimensions to track progress.
    
-10. **[Challenges & Solutions](/framework/docs/implementation/energy#10-challenges-solutions)**: Anticipates potential barriers to implementation and provides practical strategies to overcome them.
+10. **[Challenges & Solutions](/frameworks/docs/implementation/energy#10-challenges-solutions)**: Anticipates potential barriers to implementation and provides practical strategies to overcome them.
     
-11. **[Implementation Tools](/framework/docs/implementation/energy#11-implementation-tools)**: Offers practical resources including case studies, governance simulations, transition mapping templates, and digital platforms.
+11. **[Implementation Tools](/frameworks/docs/implementation/energy#11-implementation-tools)**: Offers practical resources including case studies, governance simulations, transition mapping templates, and digital platforms.
     
-12. **[Conclusion](/framework/docs/implementation/energy#12-conclusion)**: Synthesizes the framework's vision and call to action, emphasizing the imperative for coordinated global response.
+12. **[Conclusion](/frameworks/docs/implementation/energy#12-conclusion)**: Synthesizes the framework's vision and call to action, emphasizing the imperative for coordinated global response.
 
 Two appendices provide additional context: **Appendix A** reviews existing international frameworks that this governance approach builds upon, while **Appendix B** offers a glossary of key terms and acronyms.
 
 ### <a id="implementation-tools"></a>Implementation Tools
 To bridge theory and practice, the framework provides practical tools and templates that stakeholders can immediately use to begin implementation:
 
-- **[Climate Governance Seed Kit](/framework/tools/energy/seed-kit-en.zip)**: A comprehensive starter package with essential components for initiating governance implementation at multiple levels.
+- **[Climate Governance Seed Kit](/frameworks/tools/energy/seed-kit-en.zip)**: A comprehensive starter package with essential components for initiating governance implementation at multiple levels.
 
 - **Lite Guides for Different Audiences**:
-  - [Technical Guide for Policymakers](/framework/tools/energy/climate-energy-technical-guide-en.pdf): Detailed 15-page guide focusing on governance structures, policy mechanisms, and technical implementation for officials and decision-makers.
-  - [Stakeholder Implementation Guide](/framework/tools/energy/climate-energy-stakeholder-guide-en.pdf): Practical 10-page guide for businesses, civil society organizations, and regional authorities emphasizing engagement and sectoral implementation.
-  - [Climate Action Guide](/framework/tools/energy/climate-energy-action-guide-en.pdf): Accessible 6-page guide for broader audiences including youth and community groups, focusing on local action and participatory governance.
+  - [Technical Guide for Policymakers](/frameworks/tools/energy/climate-energy-technical-guide-en.pdf): Detailed 15-page guide focusing on governance structures, policy mechanisms, and technical implementation for officials and decision-makers.
+  - [Stakeholder Implementation Guide](/frameworks/tools/energy/climate-energy-stakeholder-guide-en.pdf): Practical 10-page guide for businesses, civil society organizations, and regional authorities emphasizing engagement and sectoral implementation.
+  - [Climate Action Guide](/frameworks/tools/energy/climate-energy-action-guide-en.pdf): Accessible 6-page guide for broader audiences including youth and community groups, focusing on local action and participatory governance.
 
 - **Core Governance Tools**:
-  - [Governance Readiness Assessment Tool](/framework/tools/energy/governance-readiness-assessment-en.pdf)
-  - [Just Transition Planning Template](/framework/tools/energy/just-transition-planning-template-en.pdf)
-  - [Stakeholder Engagement Protocol](/framework/tools/energy/stakeholder-engagement-protocol-en.pdf)
-  - [Climate-Energy Policy Integration Matrix](/framework/tools/energy/policy-integration-matrix-en.pdf)
-  - [Multi-level Governance Coordination Guide](/framework/tools/energy/governance-coordination-guide-en.pdf)
+  - [Governance Readiness Assessment Tool](/frameworks/tools/energy/governance-readiness-assessment-en.pdf)
+  - [Just Transition Planning Template](/frameworks/tools/energy/just-transition-planning-template-en.pdf)
+  - [Stakeholder Engagement Protocol](/frameworks/tools/energy/stakeholder-engagement-protocol-en.pdf)
+  - [Climate-Energy Policy Integration Matrix](/frameworks/tools/energy/policy-integration-matrix-en.pdf)
+  - [Multi-level Governance Coordination Guide](/frameworks/tools/energy/governance-coordination-guide-en.pdf)
 
 - **Sectoral Implementation Guides**:
-  - [Energy Transition Roadmap Template](/framework/tools/energy/energy-transition-roadmap-en.pdf)
-  - [Adaptation Planning Framework](/framework/tools/energy/adaptation-planning-framework-en.pdf)
-  - [Carbon Pricing Implementation Guide](/framework/tools/energy/carbon-pricing-guide-en.pdf)
-  - [Nature-based Solutions Assessment Tool](/framework/tools/energy/nature-based-solutions-tool-en.pdf)
-  - [Climate Innovation Acceleration Kit](/framework/tools/energy/innovation-acceleration-kit-en.pdf)
+  - [Energy Transition Roadmap Template](/frameworks/tools/energy/energy-transition-roadmap-en.pdf)
+  - [Adaptation Planning Framework](/frameworks/tools/energy/adaptation-planning-framework-en.pdf)
+  - [Carbon Pricing Implementation Guide](/frameworks/tools/energy/carbon-pricing-guide-en.pdf)
+  - [Nature-based Solutions Assessment Tool](/frameworks/tools/energy/nature-based-solutions-tool-en.pdf)
+  - [Climate Innovation Acceleration Kit](/frameworks/tools/energy/innovation-acceleration-kit-en.pdf)
 
 - **Advocacy & Scaling Tools**:
-  - [Climate Policy Brief Templates](/framework/tools/energy/policy-brief-templates-en.pdf)
-  - [Governance Communication Toolkit](/framework/tools/energy/governance-communication-toolkit-en.pdf)
-  - [Climate Institutional Reform Guide](/framework/tools/energy/institutional-reform-guide-en.pdf)
-  - [Climate Finance Access Navigator](/framework/tools/energy/finance-access-navigator-en.pdf)
+  - [Climate Policy Brief Templates](/frameworks/tools/energy/policy-brief-templates-en.pdf)
+  - [Governance Communication Toolkit](/frameworks/tools/energy/governance-communication-toolkit-en.pdf)
+  - [Climate Institutional Reform Guide](/frameworks/tools/energy/institutional-reform-guide-en.pdf)
+  - [Climate Finance Access Navigator](/frameworks/tools/energy/finance-access-navigator-en.pdf)
 
-All tools are available in both PDF and editable markdown formats, with selected tools available in multiple languages. Access the complete [Tools Library](/framework/tools/energy) for all versions and formats.
+All tools are available in both PDF and editable markdown formats, with selected tools available in multiple languages. Access the complete [Tools Library](/frameworks/tools/energy) for all versions and formats.
 
 ### <a id="access-and-usage"></a>Access and Usage
 The framework is accessible through multiple channels designed to serve diverse stakeholders with varying needs and capacities:
 
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section of our website, or download individual sections for focused implementation.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links above.
-- **Access Tools**: Browse all implementation tools in both PDF and markdown formats at the [Tools Library](/framework/tools/energy).
+- **Access Tools**: Browse all implementation tools in both PDF and markdown formats at the [Tools Library](/frameworks/tools/energy).
 - **Engage**: Share feedback through our contact portal or email [globalgovernanceframework@gmail.com], contributing to iterative refinements.
 - **Implement**: Begin with the practical [Implementation Tools](#implementation-tools) to initiate governance improvements in your context, starting with the "Climate Governance Seed Kit."
 - **Adapt**: Modify approaches to suit your specific local, national, or regional context while maintaining alignment with core principles.

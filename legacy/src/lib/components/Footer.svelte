@@ -21,7 +21,7 @@
         <ul class="space-y-2">
           <li><a href="{base}/" class="text-blue-100 hover:text-white">{$t('common.header.home')}</a></li>
           <li><a href="{base}/about" class="text-blue-100 hover:text-white">{$t('common.header.about')}</a></li>
-          <li><a href="{base}/framework" class="text-blue-100 hover:text-white">{$t('common.header.framework')}</a></li>
+          <li><a href="{base}/frameworks" class="text-blue-100 hover:text-white">{$t('common.header.framework')}</a></li>
           <li><a href="{base}/contact" class="text-blue-100 hover:text-white">{$t('common.header.contact')}</a></li>
         </ul>
       </div>

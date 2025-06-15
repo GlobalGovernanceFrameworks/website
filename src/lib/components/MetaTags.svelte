@@ -6,7 +6,7 @@
   export let title = "Global Governance Framework";
   export let description = "Implementation tools and resources for global governance challenges";
   export let keywords = "global governance, peace, conflict resolution, implementation";
-  export let image = "/images/framework/ogimage.jpg"; // Default Open Graph image
+  export let image = "/images/frameworks/ogimage.jpg"; // Default Open Graph image
   export let type = "website";
   export let url = "";
   

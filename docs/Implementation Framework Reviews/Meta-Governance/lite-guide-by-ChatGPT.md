@@ -114,7 +114,7 @@ With meta-governance → they find a shared plan based on priorities, ethics, an
 ### 🛤️ How to Get Involved
 
 - 🌍 Visit our [explorer](/explore) (Coming Soon!)  
-- 📚 Read the [full framework](/https://globalgovernanceframework.org/framework/docs/implementation/meta)  
+- 📚 Read the [full framework](/https://globalgovernanceframework.org/frameworks/docs/implementation/meta)  
 - 📥 Share your ideas or experiences  
 - 🔭 Follow future experiments and tools  
 - 👥 Join a public dialogue (coming soon)

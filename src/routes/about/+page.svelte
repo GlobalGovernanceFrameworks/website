@@ -170,7 +170,7 @@
         <div style="background-color: white; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #2D5F2D;">
           <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #2B4B8C;">{$t('about.getInvolved.apply.title')}</h3>
           <p style="margin-bottom: 1rem; color: #4b5563;">{$t('about.getInvolved.apply.description')}</p>
-          <a href="{base}/framework" style="color: #DAA520; font-weight: 500; transition: color 0.2s;" on:mouseover="{e => e.target.style.color = '#B8860B'}" on:mouseout="{e => e.target.style.color = '#DAA520'}">{$t('about.getInvolved.apply.link')}</a>
+          <a href="{base}/frameworks" style="color: #DAA520; font-weight: 500; transition: color 0.2s;" on:mouseover="{e => e.target.style.color = '#B8860B'}" on:mouseout="{e => e.target.style.color = '#DAA520'}">{$t('about.getInvolved.apply.link')}</a>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-<!-- src/routes/framework/docs/+page.svelte -->
+<!-- src/routes/frameworks/docs/+page.svelte -->
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
@@ -10,11 +10,11 @@
   // Navigation items with translation keys instead of hardcoded text
   // This array doesn't need to be reactive since it just contains keys
   const navItems = [
-    { titleKey: 'framework.docs.nav.overview', path: '/framework/docs' },
-    { titleKey: 'framework.docs.nav.principles', path: '/framework/docs/principles' },
-    { titleKey: 'framework.docs.nav.implementation', path: '/framework/docs/implementation' },
-    { titleKey: 'framework.docs.nav.casestudies', path: '/framework/docs/case-studies' },
-    { titleKey: 'framework.docs.nav.resources', path: '/framework/docs/resources' }
+    { titleKey: 'framework.docs.nav.overview', path: '/frameworks/docs' },
+    { titleKey: 'framework.docs.nav.principles', path: '/frameworks/docs/principles' },
+    { titleKey: 'framework.docs.nav.implementation', path: '/frameworks/docs/implementation' },
+    { titleKey: 'framework.docs.nav.casestudies', path: '/frameworks/docs/case-studies' },
+    { titleKey: 'framework.docs.nav.resources', path: '/frameworks/docs/resources' }
   ];
   
   // Whenever locale changes, invalidate the current page data

@@ -36,86 +36,86 @@ This framework presents a revolutionary **Global Mental Health Governance System
 The framework flows in a mandala-like structure—concentric circles of transformation radiating from core principles to global implementation, honoring both systematic governance and the organic nature of healing:
 
 **Core Circle - Foundation**
-1. **[Vision & Guiding Principles](/framework/docs/implementation/mental-health#01-vision-principles)**: *"Mental health as transcultural human right, psychosocial flourishing through human-planetary interdependence."* — Rights-based care, neurodiversity celebration, existential grounding, and consciousness-inclusive healing.
+1. **[Vision & Guiding Principles](/frameworks/docs/implementation/mental-health#01-vision-principles)**: *"Mental health as transcultural human right, psychosocial flourishing through human-planetary interdependence."* — Rights-based care, neurodiversity celebration, existential grounding, and consciousness-inclusive healing.
 
-2. **[Governance & Institutional Structures](/framework/docs/implementation/mental-health#02-governance-structures)**: *"Community sovereignty in mental health narratives."* — Global coordination via WHO reform, National Mental Health Commissions, community-led task forces, and Youth Mental Health Parliament.
+2. **[Governance & Institutional Structures](/frameworks/docs/implementation/mental-health#02-governance-structures)**: *"Community sovereignty in mental health narratives."* — Global coordination via WHO reform, National Mental Health Commissions, community-led task forces, and Youth Mental Health Parliament.
 
 **Middle Circle - Implementation**
-3. **[Legal & Policy Frameworks](/framework/docs/implementation/mental-health#03-legal-policy)**: *"From coercion to care, from pathology to flourishing."* — Anti-discrimination laws, rights-based legislation with sunset clauses, International Mental Health Rights Treaty, and legal implementation guides.
+3. **[Legal & Policy Frameworks](/frameworks/docs/implementation/mental-health#03-legal-policy)**: *"From coercion to care, from pathology to flourishing."* — Anti-discrimination laws, rights-based legislation with sunset clauses, International Mental Health Rights Treaty, and legal implementation guides.
 
-4. **[Financing & Resource Mobilization](/framework/docs/implementation/mental-health#04-financing-resources)**: *"Sustainable funding for collective healing."* — ≥5% budget mandates, Global Mental Health Commons Fund, innovative financing, and Right to Rest policies.
+4. **[Financing & Resource Mobilization](/frameworks/docs/implementation/mental-health#04-financing-resources)**: *"Sustainable funding for collective healing."* — ≥5% budget mandates, Global Mental Health Commons Fund, innovative financing, and Right to Rest policies.
 
-5. **[Service Delivery & Workforce](/framework/docs/implementation/mental-health#05-service-delivery)**: *"Integrated care honoring all healing traditions."* — Traditional healing integration, peer-led networks, Psychedelic-Assisted Therapy Labs, and cultural competency training.
+5. **[Service Delivery & Workforce](/frameworks/docs/implementation/mental-health#05-service-delivery)**: *"Integrated care honoring all healing traditions."* — Traditional healing integration, peer-led networks, Psychedelic-Assisted Therapy Labs, and cultural competency training.
 
 **Outer Circle - Accountability & Innovation**
-6. **[Monitoring, Evaluation & Accountability](/framework/docs/implementation/mental-health#06-monitoring-accountability)**: *"Community-led monitoring with flourishing metrics."* — Global Mental Health Watchdog, Traffic Light System, transparency dashboards, and Narrative Equity Reviews.
+6. **[Monitoring, Evaluation & Accountability](/frameworks/docs/implementation/mental-health#06-monitoring-accountability)**: *"Community-led monitoring with flourishing metrics."* — Global Mental Health Watchdog, Traffic Light System, transparency dashboards, and Narrative Equity Reviews.
 
-7. **[Crisis & Emergency Response](/framework/docs/implementation/mental-health#07-crisis-response)**: *"Rapid, culturally-grounded mental health support."* — Global Mental Health Rapid Response Team, Crisis DAOs, pandemic preparedness, and post-crisis transition protocols.
+7. **[Crisis & Emergency Response](/frameworks/docs/implementation/mental-health#07-crisis-response)**: *"Rapid, culturally-grounded mental health support."* — Global Mental Health Rapid Response Team, Crisis DAOs, pandemic preparedness, and post-crisis transition protocols.
 
-8. **[Innovation & Research](/framework/docs/implementation/mental-health#08-innovation-research)**: *"Pluralistic epistemologies and consciousness research."* — Global Mental Health R&D Fund, consciousness-inclusive healing research, ethical AI development, and innovation labs.
+8. **[Innovation & Research](/frameworks/docs/implementation/mental-health#08-innovation-research)**: *"Pluralistic epistemologies and consciousness research."* — Global Mental Health R&D Fund, consciousness-inclusive healing research, ethical AI development, and innovation labs.
 
 **Integration Circle - Transformation**
-9. **[Cross-Cutting Themes](/framework/docs/implementation/mental-health#09-cross-cutting-themes)**: *"Mental health woven through all aspects of life."* — Climate change and eco-anxiety, gender-inclusive care, youth education, intergenerational trauma healing, and future-of-work policies.
+9. **[Cross-Cutting Themes](/frameworks/docs/implementation/mental-health#09-cross-cutting-themes)**: *"Mental health woven through all aspects of life."* — Climate change and eco-anxiety, gender-inclusive care, youth education, intergenerational trauma healing, and future-of-work policies.
 
-10. **[Implementation Strategy](/framework/docs/implementation/mental-health#10-implementation-strategy)**: *"From vision to reality through community action."* — Phased rollout timeline, stakeholder partnerships, political strategy, risk management, and change management protocols.
+10. **[Implementation Strategy](/frameworks/docs/implementation/mental-health#10-implementation-strategy)**: *"From vision to reality through community action."* — Phased rollout timeline, stakeholder partnerships, political strategy, risk management, and change management protocols.
 
 **Supporting Elements**
-11. **[Political Strategy & Stakeholder Mapping](/framework/docs/implementation/mental-health#11-political-strategy)**: Coalition building, resistance management, and advocacy campaigns.
+11. **[Political Strategy & Stakeholder Mapping](/frameworks/docs/implementation/mental-health#11-political-strategy)**: Coalition building, resistance management, and advocacy campaigns.
 
-12. **[Risk Management](/framework/docs/implementation/mental-health#12-risk-management)**: Comprehensive risk assessment and mitigation strategies.
+12. **[Risk Management](/frameworks/docs/implementation/mental-health#12-risk-management)**: Comprehensive risk assessment and mitigation strategies.
 
-13. **[Technology Implementation](/framework/docs/implementation/mental-health#13-technology-implementation)**: Digital infrastructure, cybersecurity, and governance frameworks.
+13. **[Technology Implementation](/frameworks/docs/implementation/mental-health#13-technology-implementation)**: Digital infrastructure, cybersecurity, and governance frameworks.
 
-14. **[Change Management](/framework/docs/implementation/mental-health#14-change-management)**: Organizational transformation and stakeholder communication.
+14. **[Change Management](/frameworks/docs/implementation/mental-health#14-change-management)**: Organizational transformation and stakeholder communication.
 
 **Integration Circle - Transformation**
-15. **[The Mandala Completes: From Vision to Living Reality](/framework/docs/implementation/mental-health#15-conclusion)**: *"The spiral of healing continues - your invitation to planetary mental health transformation."* — Synthesis of the complete framework, personal and community calls to action, and the continuing evolution of collective healing.
+15. **[The Mandala Completes: From Vision to Living Reality](/frameworks/docs/implementation/mental-health#15-conclusion)**: *"The spiral of healing continues - your invitation to planetary mental health transformation."* — Synthesis of the complete framework, personal and community calls to action, and the continuing evolution of collective healing.
 
 ## <a id="implementation-tools"></a>Implementation Tools
 
 To bridge healing wisdom with practical action, the framework provides community-designed tools and templates for immediate implementation:
 
-- **[Mental Health Governance Starter Kit](/framework/tools/mental-health/mental-health-governance-starter-kit-en.zip)**: Complete package for establishing community-led mental health task forces and rights-based care systems.
+- **[Mental Health Governance Starter Kit](/frameworks/tools/mental-health/mental-health-governance-starter-kit-en.zip)**: Complete package for establishing community-led mental health task forces and rights-based care systems.
 
 - **Quick Start Implementation Tools**:
-  - [Path to Compliance Checklist for UHC Integration](/framework/tools/mental-health/path-to-compliance-checklist-en.pdf)
-  - [Community-Led Task Force Setup Guide](/framework/tools/mental-health/community-task-force-guide-en.pdf)
-  - [Cultural Adaptation Toolkit](/framework/tools/mental-health/cultural-adaptation-toolkit-en.pdf)
-  - [Mental Health Watchdog Implementation Manual](/framework/tools/mental-health/watchdog-implementation-manual-en.pdf)
-  - [Traffic Light System Assessment Framework](/framework/tools/mental-health/traffic-light-assessment-en.pdf)
+  - [Path to Compliance Checklist for UHC Integration](/frameworks/tools/mental-health/path-to-compliance-checklist-en.pdf)
+  - [Community-Led Task Force Setup Guide](/frameworks/tools/mental-health/community-task-force-guide-en.pdf)
+  - [Cultural Adaptation Toolkit](/frameworks/tools/mental-health/cultural-adaptation-toolkit-en.pdf)
+  - [Mental Health Watchdog Implementation Manual](/frameworks/tools/mental-health/watchdog-implementation-manual-en.pdf)
+  - [Traffic Light System Assessment Framework](/frameworks/tools/mental-health/traffic-light-assessment-en.pdf)
 
 - **Governance & Policy Tools**:
-  - [National Mental Health Commission Formation Guide](/framework/tools/mental-health/national-commission-guide-en.pdf)
-  - [Rights-Based Legislation Template with Sunset Clauses](/framework/tools/mental-health/rights-based-legislation-template-en.pdf)
-  - [International Mental Health Rights Treaty Roadmap](/framework/tools/mental-health/international-treaty-roadmap-en.pdf)
-  - [Youth Mental Health Parliament Charter](/framework/tools/mental-health/youth-parliament-charter-en.pdf)
+  - [National Mental Health Commission Formation Guide](/frameworks/tools/mental-health/national-commission-guide-en.pdf)
+  - [Rights-Based Legislation Template with Sunset Clauses](/frameworks/tools/mental-health/rights-based-legislation-template-en.pdf)
+  - [International Mental Health Rights Treaty Roadmap](/frameworks/tools/mental-health/international-treaty-roadmap-en.pdf)
+  - [Youth Mental Health Parliament Charter](/frameworks/tools/mental-health/youth-parliament-charter-en.pdf)
 
 - **Clinical & Service Tools**:
-  - [Clinical Decision Trees for Spiritual Crises](/framework/tools/mental-health/spiritual-crisis-decision-trees-en.pdf)
-  - [Consciousness Development & Worldview Transition Support Guide](/framework/tools/mental-health/consciousness-development-guide-en.pdf)
-  - [Consciousness-Inclusive Healing Protocols](/framework/tools/mental-health/consciousness-healing-protocols-en.pdf)
-  - [Traditional Healing Integration Guidelines](/framework/tools/mental-health/traditional-healing-integration-guidelines-en.pdf)
-  - [Psychedelic-Assisted Therapy Lab Setup Guide](/framework/tools/mental-health/psychedelic-therapy-lab-guide-en.pdf)
+  - [Clinical Decision Trees for Spiritual Crises](/frameworks/tools/mental-health/spiritual-crisis-decision-trees-en.pdf)
+  - [Consciousness Development & Worldview Transition Support Guide](/frameworks/tools/mental-health/consciousness-development-guide-en.pdf)
+  - [Consciousness-Inclusive Healing Protocols](/frameworks/tools/mental-health/consciousness-healing-protocols-en.pdf)
+  - [Traditional Healing Integration Guidelines](/frameworks/tools/mental-health/traditional-healing-integration-guidelines-en.pdf)
+  - [Psychedelic-Assisted Therapy Lab Setup Guide](/frameworks/tools/mental-health/psychedelic-therapy-lab-guide-en.pdf)
 
 - **Financing & Economics Tools**:
-  - [5% Budget Allocation Calculator & Advocacy Kit](/framework/tools/mental-health/budget-allocation-calculator-kit-en.html)
-  - [Global Mental Health Commons Fund Blueprint](/framework/tools/mental-health/commons-fund-blueprint-en.pdf)
-  - [Mental Health ROI Calculator (3:1 Return Model)](/framework/tools/mental-health/mental-health-roi-calculator-en.html)
-  - [Right to Rest Policy Implementation Guide](/framework/tools/mental-health/right-to-rest-policy-guide-en.pdf)
+  - [5% Budget Allocation Calculator & Advocacy Kit](/frameworks/tools/mental-health/budget-allocation-calculator-kit-en.html)
+  - [Global Mental Health Commons Fund Blueprint](/frameworks/tools/mental-health/commons-fund-blueprint-en.pdf)
+  - [Mental Health ROI Calculator (3:1 Return Model)](/frameworks/tools/mental-health/mental-health-roi-calculator-en.html)
+  - [Right to Rest Policy Implementation Guide](/frameworks/tools/mental-health/right-to-rest-policy-guide-en.pdf)
 
 - **Monitoring & Evaluation Tools**:
-  - [Psychosocial Flourishing Metrics Dashboard Specification](/framework/tools/mental-health/flourishing-metrics-dashboard-spec-en.pdf)
-  - [Community-Led Monitoring Toolkit](/framework/tools/mental-health/community-monitoring-toolkit-en.pdf)
-  - [Narrative Equity Review Process Guide](/framework/tools/mental-health/narrative-equity-review-guide-en.pdf)
-  - [Transparency Dashboard Template](/framework/tools/mental-health/transparency-dashboard-template-en.pdf)
+  - [Psychosocial Flourishing Metrics Dashboard Specification](/frameworks/tools/mental-health/flourishing-metrics-dashboard-spec-en.pdf)
+  - [Community-Led Monitoring Toolkit](/frameworks/tools/mental-health/community-monitoring-toolkit-en.pdf)
+  - [Narrative Equity Review Process Guide](/frameworks/tools/mental-health/narrative-equity-review-guide-en.pdf)
+  - [Transparency Dashboard Template](/frameworks/tools/mental-health/transparency-dashboard-template-en.pdf)
 
 - **Framework Guides**:
-  - [Living Mandala Mental Health Framework Essentials](/framework/tools/mental-health/mental-health-framework-essentials-en.pdf) (English)
-  - [Marco de Mandala Viviente para Salud Mental](/framework/tools/mental-health/mental-health-framework-essentials-es.pdf) (Spanish)
-  - [Cadre du Mandala Vivant pour la Santé Mentale](/framework/tools/mental-health/mental-health-framework-essentials-fr.pdf) (French)
-  - [Grunderna i ramverket Levande mandala för psykisk hälsa](/framework/tools/mental-health/mental-health-framework-essentials-sv.pdf) (Swedish)
+  - [Living Mandala Mental Health Framework Essentials](/frameworks/tools/mental-health/mental-health-framework-essentials-en.pdf) (English)
+  - [Marco de Mandala Viviente para Salud Mental](/frameworks/tools/mental-health/mental-health-framework-essentials-es.pdf) (Spanish)
+  - [Cadre du Mandala Vivant pour la Santé Mentale](/frameworks/tools/mental-health/mental-health-framework-essentials-fr.pdf) (French)
+  - [Grunderna i ramverket Levande mandala för psykisk hälsa](/frameworks/tools/mental-health/mental-health-framework-essentials-sv.pdf) (Swedish)
 
-All tools respect community sovereignty, include cultural adaptation protocols, and are designed with neurodivergent accessibility features. Access the complete [Tools Library](/framework/tools/mental-health) for all versions and cultural adaptations.
+All tools respect community sovereignty, include cultural adaptation protocols, and are designed with neurodivergent accessibility features. Access the complete [Tools Library](/frameworks/tools/mental-health) for all versions and cultural adaptations.
 
 ## <a id="access-and-usage"></a>Access and Usage
 
@@ -123,7 +123,7 @@ The framework is accessible through the Global Governance Framework website, des
 
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in multiple languages and accessibility formats.
 - **Navigate**: Use this index to explore sections following the mandala structure or access specific components via section links.
-- **Access Tools**: Browse all implementation tools with trauma-informed protocols at the [Tools Library](/framework/tools/mental-health).
+- **Access Tools**: Browse all implementation tools with trauma-informed protocols at the [Tools Library](/frameworks/tools/mental-health).
 - **Engage**: Share feedback through secure, community-controlled channels or email [globalgovernanceframework@gmail.com] with mental health data sovereignty protections.
 - **Organize**: Use political organizing toolkits to build mental health advocacy coalitions and establish community-led task forces.
 - **Implement**: Begin with the Mental Health Governance Starter Kit or connect with existing pilot programs and community-led initiatives.

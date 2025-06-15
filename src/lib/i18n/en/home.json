@@ -8,14 +8,28 @@
     "paragraph1": "This project began as a personal reflection: What would it take for humanity to thrive together?",
     "paragraph2": "From childhood, I (Björn Kenneth Holmström) was fascinated by animals, cultures, and the Earth as a shared home. That early sense of wonder became a lifelong drive to support ethical, compassionate systems that can serve all life—human and beyond.",
     "paragraph3": "What you see here is not a final solution. It started as a living proposal. A collaborative draft of what a more interconnected, inclusive, and future-ready form of governance might look like.",
-    "paragraph4": "It’s offered openly—shaped by conversations with AI systems like Claude, ChatGPT, Grok, DeepSeek and Gemini, and grounded in a belief that good governance must emerge from shared wisdom. Let this be a beginning, not an answer. You are invited to explore, question, contribute, and improve it.",
-    "paragraph5": "As the work has progressed, I started to question it. Now it is more of a speculative archive. Use it to spark chaos, fuel dreams, or ignore it. The author has moved on (but also hasn’t). This work is free to mutate, degrade, or vanish. Attribution optional. If extraterrestrials ever audit Earth’s governance, may they nod approvingly at these attempts—before consulting the mushrooms.🍄"
+    "paragraph4": "It’s offered openly—shaped by conversations with AI systems like Claude, ChatGPT, Grok, DeepSeek and Gemini, and grounded in a belief that good governance must emerge from shared wisdom. Let this be a beginning, not an answer. You are invited to explore, question, contribute, and improve it."
+  },
+  "languageStatement": {
+    "title": "Language and Inclusivity",
+    "paragraph1": "True global governance must speak every language. For this framework to be truly universal, it must be accessible to all. We are deeply committed to making the 'Treaty for Our Only Home' and all related materials available in as many languages as possible.",
+    "paragraph2": "Currently, the core documents are actively maintained in English, as a global language of diplomacy, and Swedish, the mother tongue of the initial researcher. We recognize this is only a starting point.",
+    "paragraph3": "We believe the vital work of translation belongs to the community. It is a powerful way to ensure the framework's concepts are adapted accurately and resonate within different cultures. If you are a native speaker and believe in this work, we warmly invite you to help bring these ideas to your community.",
+    "button": "Join the Translation Effort"
   },
   "title": "Global Governance Framework",
   "subtitle": "Connecting governance innovations across the world",
   "intro": {
     "heading": "Frameworks for a new era of governance",
     "text": "Developing interoperable systems and operating models for global governance that respect local autonomy while enabling effective coordination."
+  },
+  "treatyFeature": {
+    "heading": "The Foundational Framework: Treaty for Our Only Home",
+    "lead": "Our comprehensive, ready-to-implement response to the global polycrisis. This Tier 0 framework is the essential operating system upgrade for 21st-century global governance.",
+    "point1": "Reforms core institutions like the UN Security Council.",
+    "point2": "Strengthens international law with concepts like Ecocide.",
+    "point3": "Establishes sustainable funding for global public goods.",
+    "button": "Explore the Treaty"
   },
   "features": {
     "heading": "Key Features",
@@ -31,6 +45,11 @@
       "title": "Meta-Governance Design Patterns",
       "description": "Common patterns that work across different governance contexts"
     }
+  },
+  "performanceTeaser": {
+    "heading": "Our Commitment to Transparency",
+    "text": "Each framework is continuously evaluated against its own core principles. We believe in transparently tracking our progress and holding this work accountable to its stated ethical goals.",
+    "button": "Explore the Performance Dashboard"
   },
   "emergingPossibilities": {
     "heading": "Emerging Global Possibilities",
@@ -73,7 +92,6 @@
     "secondaryButton": "Get Involved"
   },
   "cta": "Explore the Framework",
-  "dashboardIntro": "See these principles in action through our ethical impact metrics",
   "globalCitizenship": {
     "title": "Global Citizenship Practice Framework",
     "lead": "A comprehensive approach to fostering planetary identity and collective action",

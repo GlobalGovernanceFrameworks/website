@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 1000"
+   version="1.1"
+   id="svg61"
+   sodipodi:docname="cost-of-inaction-infographic.svg"
+   width="800"
+   height="1000"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview61"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.705"
+     inkscape:cx="341.13475"
+     inkscape:cy="550.35461"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg61" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .header-title {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .header-subtitle {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .section-title {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .section-subtitle {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .big-number {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .item-title {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-anchor: start;
+        dominant-baseline: central;
+      }
+      .item-text {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-anchor: start;
+        dominant-baseline: central;
+      }
+      .conclusion-text {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-anchor: middle;
+        dominant-baseline: central;
+        font-style: italic;
+      }
+      .call-to-action {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .cta-subtitle {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        fill: #00C49A;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .website-text {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .crisis-color {
+        fill: #C43B3B;
+      }
+      .hope-color {
+        fill: #00C49A;
+      }
+      .neutral-color {
+        fill: #0A2540;
+      }
+      .crisis-bg {
+        fill: #FFF5F5;
+        stroke: #C43B3B;
+        stroke-width: 2;
+      }
+      .hope-bg {
+        fill: #F0FFF4;
+        stroke: #00C49A;
+        stroke-width: 2;
+      }
+      .divider-line {
+        stroke: #0A2540;
+        stroke-width: 1;
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <!-- Header Section -->
+  <rect
+     x="0"
+     y="0"
+     width="800"
+     height="120"
+     fill="#f8f9fa"
+     id="rect1" />
+  <text
+     x="400"
+     y="35"
+     class="header-title"
+     id="text1">The Cost of Inaction: Why We Can't Afford to Wait</text>
+  <text
+     x="400"
+     y="65"
+     class="header-subtitle"
+     id="text2">Our 20th-century systems are generating 21st-century crises.</text>
+  <text
+     x="400"
+     y="85"
+     class="header-subtitle"
+     id="text3">The price of failure is catastrophic. The investment in survival is within reach.</text>
+  <!-- Split Visual Header -->
+  <!-- Crisis side (left) -->
+  <rect
+     x="50"
+     y="146"
+     width="150"
+     height="60.141846"
+     fill="#c43b3b"
+     opacity="0.2"
+     id="rect3"
+     style="stroke-width:0.867048" />
+  <path
+     d="m 60,166 20,20 20,-20 20,20 20,-20 20,20 20,-20 10,20"
+     stroke="#c43b3b"
+     stroke-width="3"
+     fill="none"
+     id="path3" />
+  <text
+     x="125"
+     y="225"
+     class="section-subtitle crisis-color"
+     id="text4">Cascading Crisis</text>
+  <!-- Hope side (right) -->
+  <circle
+     cx="675"
+     cy="176"
+     r="40"
+     fill="#00c49a"
+     opacity="0.2"
+     id="circle4" />
+  <circle
+     cx="675"
+     cy="176"
+     r="25"
+     stroke="#00c49a"
+     stroke-width="2"
+     fill="none"
+     id="circle5" />
+  <circle
+     cx="665"
+     cy="166"
+     r="3"
+     fill="#00c49a"
+     id="circle6" />
+  <circle
+     cx="685"
+     cy="166"
+     r="3"
+     fill="#00c49a"
+     id="circle7" />
+  <circle
+     cx="675"
+     cy="186"
+     r="3"
+     fill="#00c49a"
+     id="circle8" />
+  <line
+     x1="665"
+     y1="166"
+     x2="685"
+     y2="166"
+     stroke="#00c49a"
+     stroke-width="1"
+     id="line8" />
+  <line
+     x1="675"
+     y1="166"
+     x2="675"
+     y2="186"
+     stroke="#00c49a"
+     stroke-width="1"
+     id="line9" />
+  <text
+     x="675"
+     y="231"
+     class="section-subtitle hope-color"
+     id="text9">Global Cooperation</text>
+  <!-- Crisis Path Section -->
+  <rect
+     x="25.026415"
+     y="262.02643"
+     width="349.94717"
+     height="400.40152"
+     rx="9.9984913"
+     class="crisis-bg"
+     id="rect9" />
+  <text
+     x="200"
+     y="288"
+     class="section-title crisis-color"
+     id="text10">Our Current Path:</text>
+  <text
+     x="200"
+     y="312"
+     class="section-title crisis-color"
+     id="text11">The Cost of Inaction</text>
+  <!-- Crisis big numbers -->
+  <text
+     x="200"
+     y="348"
+     class="big-number crisis-color"
+     id="text12">$54 Trillion</text>
+  <text
+     x="200"
+     y="374"
+     class="section-subtitle neutral-color"
+     id="text13">in Climate Disruption Losses by 2050</text>
+  <text
+     x="200"
+     y="408"
+     class="big-number crisis-color"
+     id="text14">$13.8 Trillion</text>
+  <text
+     x="200"
+     y="434"
+     class="section-subtitle neutral-color"
+     id="text15">in Global Pandemic Costs (from a single event)</text>
+  <text
+     x="200"
+     y="457"
+     class="item-text neutral-color"
+     id="text16">Source: OECD, IMF</text>
+  <!-- Crisis failures -->
+  <!-- Climate -->
+  <circle
+     cx="60"
+     cy="492"
+     r="12"
+     fill="#c43b3b"
+     id="circle16" />
+  <path
+     d="m 55,487 v 10 m 10,-10 v 10 m -15,-5 h 20"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="path16" />
+  <text
+     x="85"
+     y="487"
+     class="item-title crisis-color"
+     id="text17">Unchecked Climate Collapse:</text>
+  <text
+     x="85"
+     y="502"
+     class="item-text neutral-color"
+     id="text18">Rising seas, infrastructure loss, and agricultural</text>
+  <text
+     x="85"
+     y="514"
+     class="item-text neutral-color"
+     id="text19">failure threaten global stability.</text>
+  <!-- Pandemics -->
+  <circle
+     cx="60"
+     cy="542"
+     r="12"
+     fill="#c43b3b"
+     id="circle19" />
+  <polygon
+     points="55,555 55,545 65,545 65,555 "
+     fill="#ffffff"
+     id="polygon19"
+     transform="translate(0,-8)" />
+  <circle
+     cx="60"
+     cy="542"
+     r="3"
+     fill="#c43b3b"
+     id="circle20" />
+  <text
+     x="85"
+     y="537"
+     class="item-title crisis-color"
+     id="text20">Cascading Health Crises:</text>
+  <text
+     x="85"
+     y="552"
+     class="item-text neutral-color"
+     id="text21">Without reform, future pandemics will be</text>
+  <text
+     x="85"
+     y="564"
+     class="item-text neutral-color"
+     id="text22">more frequent and more costly.</text>
+  <!-- Economy -->
+  <circle
+     cx="60"
+     cy="592"
+     r="12"
+     fill="#c43b3b"
+     id="circle22" />
+  <path
+     d="m 50,587 5,-5 5,5 5,-10 5,5"
+     stroke="#ffffff"
+     stroke-width="2"
+     fill="none"
+     id="path22" />
+  <text
+     x="85"
+     y="587"
+     class="item-title crisis-color"
+     id="text23">Economic Instability:</text>
+  <text
+     x="85"
+     y="602"
+     class="item-text neutral-color"
+     id="text24">Supply chain failures and financial contagion</text>
+  <text
+     x="85"
+     y="614"
+     class="item-text neutral-color"
+     id="text25">destabilize markets worldwide.</text>
+  <!-- Conclusion -->
+  <g
+     id="g61"
+     transform="translate(0,-10)">
+    <text
+       x="200"
+       y="690"
+       class="conclusion-text crisis-color"
+       id="text26">&quot;This path leads to a future of perpetual crisis</text>
+    <text
+       x="200"
+       y="705"
+       class="conclusion-text crisis-color"
+       id="text27">management. It is unaffordable, unstable,</text>
+    <text
+       x="200"
+       y="720"
+       class="conclusion-text crisis-color"
+       id="text28">and unsustainable.&quot;</text>
+  </g>
+  <!-- Hope Path Section -->
+  <rect
+     x="425.02383"
+     y="262.02383"
+     width="349.9523"
+     height="398.39203"
+     rx="9.9986372"
+     class="hope-bg"
+     id="rect28" />
+  <text
+     x="600"
+     y="288"
+     class="section-title hope-color"
+     id="text29">A New Direction:</text>
+  <text
+     x="600"
+     y="312"
+     class="section-title hope-color"
+     id="text30">Investment in Resilience</text>
+  <!-- Hope big numbers -->
+  <text
+     x="600"
+     y="348"
+     class="big-number hope-color"
+     id="text31">~$100 Billion</text>
+  <text
+     x="600"
+     y="372"
+     class="section-subtitle neutral-color"
+     id="text32">Annually</text>
+  <text
+     x="600"
+     y="402"
+     class="section-subtitle neutral-color"
+     id="text33">(Just 0.1% of Global GDP)</text>
+  <text
+     x="600"
+     y="422"
+     class="section-subtitle neutral-color"
+     id="text34">to fund foundational reforms</text>
+  <!-- Hope returns -->
+  <!-- Climate -->
+  <circle
+     cx="460"
+     cy="472"
+     r="12"
+     fill="#00c49a"
+     id="circle34" />
+  <path
+     d="m 455,467 q 5,-5 10,0 -5,10 -10,0"
+     stroke="#ffffff"
+     stroke-width="2"
+     fill="none"
+     id="path34" />
+  <text
+     x="485"
+     y="467"
+     class="item-title hope-color"
+     id="text35">Climate Stability:</text>
+  <text
+     x="485"
+     y="482"
+     class="item-text neutral-color"
+     id="text36">Carbon Tax and Ecocide Law directly fund</text>
+  <text
+     x="485"
+     y="494"
+     class="item-text neutral-color"
+     id="text37">adaptation and deter environmental destruction.</text>
+  <!-- Pandemics -->
+  <circle
+     cx="460"
+     cy="522"
+     r="12"
+     fill="#00c49a"
+     id="circle37" />
+  <path
+     d="m 455,517 h 10 m -5,-5 v 15 m -4,-5 h 8"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="path37" />
+  <text
+     x="485"
+     y="517"
+     class="item-title hope-color"
+     id="text38">Pandemic Prevention:</text>
+  <text
+     x="485"
+     y="532"
+     class="item-text neutral-color"
+     id="text39">Strengthened WHO and Health Emergency</text>
+  <text
+     x="485"
+     y="544"
+     class="item-text neutral-color"
+     id="text40">Corps create robust global defense.</text>
+  <!-- Economy -->
+  <circle
+     cx="460"
+     cy="572"
+     r="12"
+     fill="#00c49a"
+     id="circle40" />
+  <path
+     d="m 450,577 5,-10 5,5 5,-10 5,5"
+     stroke="#ffffff"
+     stroke-width="2"
+     fill="none"
+     id="path40" />
+  <text
+     x="485"
+     y="567"
+     class="item-title hope-color"
+     id="text41">Economic Resilience:</text>
+  <text
+     x="485"
+     y="582"
+     class="item-text neutral-color"
+     id="text42">Debt Justice and Global Public Goods Fund</text>
+  <text
+     x="485"
+     y="594"
+     class="item-text neutral-color"
+     id="text43">stabilize economies during shocks.</text>
+  <!-- Governance -->
+  <circle
+     cx="460"
+     cy="622"
+     r="12"
+     fill="#00c49a"
+     id="circle43" />
+  <path
+     d="m 450,622 5,-5 h 10 l 5,5 -5,5 h -10 z"
+     stroke="#ffffff"
+     stroke-width="1"
+     fill="none"
+     id="path43" />
+  <circle
+     cx="460"
+     cy="622"
+     r="3"
+     fill="#ffffff"
+     id="circle44" />
+  <text
+     x="485"
+     y="617"
+     class="item-title hope-color"
+     id="text44">Effective Governance:</text>
+  <text
+     x="485"
+     y="632"
+     class="item-text neutral-color"
+     id="text45">Reformed UNSC with Veto Override unlocks</text>
+  <text
+     x="485"
+     y="644"
+     class="item-text neutral-color"
+     id="text46">decisive global action on urgent threats.</text>
+  <!-- Hope Conclusion -->
+  <g
+     id="g62"
+     transform="translate(0,-8)">
+    <text
+       x="600"
+       y="688"
+       class="conclusion-text hope-color"
+       id="text47">&quot;This path builds a future of shared prosperity</text>
+    <text
+       x="600"
+       y="703"
+       class="conclusion-text hope-color"
+       id="text48">and resilience, yielding exponential returns</text>
+    <text
+       x="600"
+       y="718"
+       class="conclusion-text hope-color"
+       id="text49">in security and stability.&quot;</text>
+  </g>
+  <!-- Footer Section -->
+  <rect
+     x="0"
+     y="746"
+     width="800"
+     height="254.69382"
+     fill="#f8f9fa"
+     id="rect49"
+     style="stroke-width:1.26169" />
+  <line
+     x1="0"
+     y1="746"
+     x2="800"
+     y2="746"
+     class="divider-line"
+     id="line49" />
+  <text
+     x="278.27997"
+     y="824"
+     class="call-to-action"
+     id="text50">The Choice is Ours. The Time is Now.</text>
+  <text
+     x="278.18402"
+     y="859"
+     class="cta-subtitle"
+     id="text51">Join the Global Stewardship Alliance</text>
+  <text
+     x="277.74799"
+     y="879"
+     class="section-subtitle neutral-color"
+     id="text52">Help build the political will to choose cooperation over competition.</text>
+  <!-- QR Code placeholder -->
+  <image
+     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhIAAAISAQAAAACxRhsSAAAFAklEQVR4nO2dXY6rOBCFTw1IeTRSLyBLgR3cJY16SXcHeClZQEvw2BLozINdxuR2RzO6CZPJnHoihnwyUqlcfzZG/K7EP34bAYghhhhiiCGGGGKIIcbGsCwtAKxm1iFdAXMLxG7Nd2MH2DD788Od5yGGGN8ISRI9SXJqSE4AyQUcwwJyAtBPDUkuANJYw+pv47O8ixivz5izdbQBDRGtTdppQyD5fv40G+a2+p8b33vPQwwxvpL2eiB2MPYEDGgWRAMINETsAAIrrP95/3mIIcYt+UVPs6wtk38KwBBWf27uHjMPMcT4O4xAcgSAnvTU/3xKHij6S5t81uQGjMgu7APmIYYYNxjRzKP8uYUN84k2IP8E0NCG+cR8F2sK9+8/DzHE+FLSel4XT8OnIZ4XMHYwICzJZ0XsmnwXYV9sfZZ3EeN1GZ6XmgAADTmGBeiZ00/+VOOrvaeu0hiVlxLjEAayrgVPmI5A5aQmLUYgATREz8XvhnwlPRXj8YxiTxtydHuazOaInN33KxZTCngwJT0V4wiGW0wA2VjuVNQLVUg3Ul4gh/pa98U4mJG80hTbhwX257Qaop0IzGaIXZOKUhxnSzX/nKa68zzEEOMb8QV9QXZDk6eafVb/mRf/ZHJzsrVRfV+MoxilzvRGxMHAOJxoQLsAaGj9uMKAE4EwgamMOrcLgNV4v3mIIcZNqfNSoRjLUnbacgAI+TmOoc4GyJ6K8XhGFUellr5tjQeQM6l1ImDnKWjdF+MYRqV1yU7moL/EVjvz6v6pJ1Glp2Icw6j90/6SvVLkSmryT1sA7WI919b90xMNcwf5p2IcxCjrflOF+pUvWtWj3Nq6V6D8qRiHMeo8fzVWlfbhbmip/ucx+adiHMao7WlxOSv/dBsDUGnn9g/pqRhHMTiWvaXAanw/lybosiuq5wK+W5vH+mm1nLB6rncR4xUZSQsNYYKlXlNr3FhOK7z/9KMF5g6WNk7lntR7zkMMMW5KjoW2gbCUXr+y2k9b/+n2nGe0tO6L8XDGrq/Pg6Rq636SsGvuSxGV/FMxjmNUfdKurGQuO22NfJNnrcpY/d9neRcx/ieMsAD9pYXZmTTrViMvZjZ4158N4dPIS/s94x7zEEOMa9mWcuToqW7fq1Knm42tO6ZlT8U4glHOlyq79zxX6h5AUVvUboA3A0hPxTiCUelpVYXqJ+y2603lbDRvlq7Dqmd5FzFel1HloEjudHJzCMrGqXx30j4+MY5l7PbxTcCWP61yVdf2dIL6+sQ4lOH9p1NpON3yolc/t5YqyD8V41hG6ZOmh/qbFS1GNe2LLgefFS3Wui/GQYycCY0D4IdHfRr6y4mG+W1JR0ulR6xhvpzflry3727zEEOMm1LnpSb4cRJ7qer7mzNb7LDsqRgPZ1Trvi/+AFKz/tSU1tNSBVD/qRj/BmPfz1+f1pNG+ukqrCpjk/JSYhzN6D3o347jrfL8sVvzdyS2/aaxa/wo3yd7FzFekFGfM1Hq9ig10vxQ8NSV+k/FeA5Gf9k2lazm7iryJ87s7HWr8iWfJ34XMV6G8eX3ThjPhPWXExHPS8s4GIjw0QKzAQgTEX98tNq/L8ZBDNfTQAAzQGCBIfhVfzkRQLNYfznR+p8dGH8A6Wso95uHGGLclKt432ukKEdL5Ru7/VF+0LT8UzGOYdgvSf1/LPFZ3kUMMcQQQwwxxBBDjP8+4y+F5eVTzoYAtAAAAABJRU5ErkJggg=="
+     x="535.81561"
+     y="752.45392"
+     height="200"
+     width="200"
+     id="image1" />
+  <text
+     x="591.23547"
+     y="966.31915"
+     class="item-text neutral-color"
+     id="text60">Scan to Get Started</text>
+  <text
+     x="642.2774"
+     y="986.31915"
+     class="website-text"
+     id="text61">globalgovernanceframework.org/start-treaty</text>
+</svg>

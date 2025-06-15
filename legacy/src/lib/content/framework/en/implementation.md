@@ -208,4 +208,4 @@ Governance models must respect and adapt to cultural contexts:
 
 The implementation of the framework is itself a governance process that should follow the principles it promotes: transparent, participatory, adaptable, and respectful of context.
 
-For specific examples of how these implementation approaches have worked in practice, see the [Case Studies](/framework/docs/case-studies) section.
+For specific examples of how these implementation approaches have worked in practice, see the [Case Studies](/frameworks/docs/case-studies) section.

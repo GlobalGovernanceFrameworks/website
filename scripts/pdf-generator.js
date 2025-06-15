@@ -39,6 +39,7 @@ Available categories:
 - water
 - indigenous
 - mental-health
+- treaty-for-our-only-home
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -53,27 +54,28 @@ const __dirname = path.dirname(__filename);
 // Configuration
 const languages = ['en', 'sv', 'es', 'fr'];
 const outputDirs = {
-  'education': path.join(__dirname, '..', 'static', 'framework', 'tools', 'education'),
-  'food-systems': path.join(__dirname, '..', 'static', 'framework', 'tools', 'food-systems'),
-  'energy': path.join(__dirname, '..', 'static', 'framework', 'tools', 'energy'),
-  'peace': path.join(__dirname, '..', 'static', 'framework', 'tools', 'peace'),
-  'economic': path.join(__dirname, '..', 'static', 'framework', 'tools', 'economic'),
-  'digital': path.join(__dirname, '..', 'static', 'framework', 'tools', 'digital'),
-  'ethics': path.join(__dirname, '..', 'static', 'framework', 'tools', 'ethics'),
-  'justice': path.join(__dirname, '..', 'static', 'framework', 'tools', 'justice'),
-  'spiritual': path.join(__dirname, '..', 'static', 'framework', 'tools', 'spiritual'),
-  'financial-systems': path.join(__dirname, '..', 'static', 'framework', 'tools', 'financial-systems'),
-  'environmental-stewardship': path.join(__dirname, '..', 'static', 'framework', 'tools', 'environmental-stewardship'),
-  'governance': path.join(__dirname, '..', 'static', 'framework', 'tools', 'governance'),
-  'biodiversity': path.join(__dirname, '..', 'static', 'framework', 'tools', 'biodiversity'),
-  'planetary-health': path.join(__dirname, '..', 'static', 'framework', 'tools', 'planetary-health'),
-  'mental-health': path.join(__dirname, '..', 'static', 'framework', 'tools', 'mental-health'),
-  'consciousness': path.join(__dirname, '..', 'static', 'framework', 'tools', 'consciousness'),
-  'youth': path.join(__dirname, '..', 'static', 'framework','tools', 'youth'),
-  'aging': path.join(__dirname, '..', 'static', 'framework','tools', 'aging'),
-  'animal-welfare': path.join(__dirname, '..', 'static', 'framework','tools', 'animal-welfare'),
-  'water': path.join(__dirname, '..', 'static', 'framework','tools', 'water'),
-  'indigenous': path.join(__dirname, '..', 'static', 'framework','tools', 'indigenous')
+  'education': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'education'),
+  'food-systems': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'food-systems'),
+  'energy': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'energy'),
+  'peace': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'peace'),
+  'economic': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'economic'),
+  'digital': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'digital'),
+  'ethics': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'ethics'),
+  'justice': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'justice'),
+  'spiritual': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'spiritual'),
+  'financial-systems': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'financial-systems'),
+  'environmental-stewardship': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'environmental-stewardship'),
+  'governance': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'governance'),
+  'biodiversity': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'biodiversity'),
+  'planetary-health': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'planetary-health'),
+  'mental-health': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'mental-health'),
+  'consciousness': path.join(__dirname, '..', 'static', 'frameworks', 'tools', 'consciousness'),
+  'youth': path.join(__dirname, '..', 'static', 'frameworks','tools', 'youth'),
+  'aging': path.join(__dirname, '..', 'static', 'frameworks','tools', 'aging'),
+  'animal-welfare': path.join(__dirname, '..', 'static', 'frameworks','tools', 'animal-welfare'),
+  'water': path.join(__dirname, '..', 'static', 'frameworks','tools', 'water'),
+  'indigenous': path.join(__dirname, '..', 'static', 'frameworks','tools', 'indigenous'),
+  'treaty-for-our-only-home': path.join(__dirname, '..', 'static', 'frameworks','tools', 'treaty-for-our-only-home')
 };
 
 // Validate category if provided
@@ -95,8 +97,8 @@ const tools = [
       sv: 'Educational-Systems'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -130,8 +132,8 @@ const tools = [
       sv: 'education-framework-lite-swedish'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education')
     },
     pageFooter: {
       en: 'Education Framework Lite Guide - Page ',
@@ -147,8 +149,8 @@ const tools = [
       sv: 'pilot-readiness-self-assessment-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'appendix-tools')
     },
     pageFooter: {
       en: 'Pilot Readiness Self-Assessment Tool - Page ',
@@ -163,8 +165,8 @@ const tools = [
       sv: 'youth-council-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'appendix-tools')
     },
     pageFooter: {
       en: 'Youth Council Charter Template - Page ',
@@ -179,8 +181,8 @@ const tools = [
       sv: 'regenerative-project-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'appendix-tools')
     },
     pageFooter: {
       en: 'Regenerative Project Guide - Page ',
@@ -195,8 +197,8 @@ const tools = [
       sv: 'curriculum-mapping-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'appendix-tools')
     },
     pageFooter: {
       en: 'Curriculum Mapping Template - Page ',
@@ -211,8 +213,8 @@ const tools = [
       sv: 'mne-rubric-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'appendix-tools')
     },
     pageFooter: {
       en: 'M&E Rubric Template - Page ',
@@ -227,8 +229,8 @@ const tools = [
       sv: 'advocacy-playbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'appendix-tools')
     },
     pageFooter: {
       en: 'Advocacy Playbook - Page ',
@@ -243,8 +245,8 @@ const tools = [
       sv: 'bureaucratic-navigation-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'appendix-tools')
     },
     pageFooter: {
       en: 'Bureaucratic Navigation Toolkit - Page ',
@@ -259,8 +261,8 @@ const tools = [
       sv: 'cost-benefit-analysis-model-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'appendix-tools')
     },
     pageFooter: {
       en: 'Cost-Benefit Analysis Model - Page ',
@@ -275,8 +277,8 @@ const tools = [
       sv: 'financial-pathway-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'appendix-tools')
     },
     pageFooter: {
       en: 'Financial Pathway Assessment Tool - Page ',
@@ -291,8 +293,8 @@ const tools = [
       sv: 'equity-training-inclusion-checklist-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'seed-kit')
     },
     pageFooter: {
       en: 'Equity Training Inclusion Checklist - Page ',
@@ -307,8 +309,8 @@ const tools = [
       sv: 'getting-started-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'seed-kit')
     },
     pageFooter: {
       en: 'Getting Started Guide - Page ',
@@ -323,8 +325,8 @@ const tools = [
       sv: 'spiral-dynamics-intro-educators-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'seed-kit')
     },
     pageFooter: {
       en: 'Spiral Dynamics Intro for Educators - Page ',
@@ -339,8 +341,8 @@ const tools = [
       sv: 'systems-thinking-module-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'education', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'education', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'education', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'education', 'seed-kit')
     },
     pageFooter: {
       en: 'Systems Thinking Module - Page ',
@@ -355,8 +357,8 @@ const tools = [
       sv: 'advocacy-playbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems', 'appendix-tools')
     },
     pageFooter: {
       en: 'Advocacy Playbook - Page ',
@@ -371,8 +373,8 @@ const tools = [
       sv: 'cost-benefit-analysis-model-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems', 'appendix-tools')
     },
     pageFooter: {
       en: 'Cost-Benefit Analysis Model - Page ',
@@ -387,8 +389,8 @@ const tools = [
       sv: 'monitoring-evaluation-rubric-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems', 'appendix-tools')
     },
     pageFooter: {
       en: 'Monitoring & Evaluation Rubric Template - Page ',
@@ -403,8 +405,8 @@ const tools = [
       sv: 'pilot-readiness-self-assessment-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems', 'appendix-tools')
     },
     pageFooter: {
       en: 'Pilot Readiness Self-Assessment Tool - Page ',
@@ -419,8 +421,8 @@ const tools = [
       sv: 'policy-harmonization-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems', 'appendix-tools')
     },
     pageFooter: {
       en: 'Policy Harmonization Toolkit - Page ',
@@ -435,8 +437,8 @@ const tools = [
       sv: 'stakeholder-engagement-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems', 'appendix-tools')
     },
     pageFooter: {
       en: 'Stakeholder Engagement Charter Template - Page ',
@@ -451,8 +453,8 @@ const tools = [
       sv: 'tek-integration-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems', 'appendix-tools')
     },
     pageFooter: {
       en: 'TEK Integration Template - Page ',
@@ -467,8 +469,8 @@ const tools = [
       sv: 'seed-kit-getting-started-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems', 'appendix-tools')
     },
     pageFooter: {
       en: 'Getting Started Guide for the Seed Kit - Page ',
@@ -483,8 +485,8 @@ const tools = [
       sv: 'regenerative-farming-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems', 'appendix-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems', 'appendix-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems', 'appendix-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems', 'appendix-tools')
     },
     pageFooter: {
       en: 'Regenerative Farming Guide - Page ',
@@ -499,8 +501,8 @@ const tools = [
       sv: 'quick-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems')
     },
     pageFooter: {
       en: 'Food Systems & Agriculture Framework - Lite Guide - Page ',
@@ -515,8 +517,8 @@ const tools = [
       sv: 'quick-guide-medium-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems')
     },
     pageFooter: {
       en: 'Food and Agriculture Framework – Lite Guide - Page ',
@@ -531,8 +533,8 @@ const tools = [
       sv: 'quick-guide-medium-youth-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'food-systems'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'food-systems')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'food-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'food-systems')
     },
     pageFooter: {
       en: 'Food Systems Lite Guide - Page ',
@@ -547,8 +549,8 @@ const tools = [
       sv: 'climate-energy-action-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy')
     },
     pageFooter: {
       en: 'Climate Action Guide - Page ',
@@ -563,8 +565,8 @@ const tools = [
       sv: 'climate-energy-stakeholder-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy')
     },
     pageFooter: {
       en: 'Stakeholder Implementation Guide for the Climate & Energy Governance Framework - Page ',
@@ -579,8 +581,8 @@ const tools = [
       sv: 'climate-energy-technical-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Technical Guide for Policymakers and Officials: Climate & Energy Governance Framework - Page ',
@@ -595,8 +597,8 @@ const tools = [
       sv: 'adaptation-planning-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Adaptation Planning Framework - Page ',
@@ -611,8 +613,8 @@ const tools = [
       sv: 'carbon-pricing-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Carbon Pricing Implementation Guide - Page ',
@@ -627,8 +629,8 @@ const tools = [
       sv: 'energy-transition-roadmap-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Energy Transition Roadmap Template - Page ',
@@ -643,8 +645,8 @@ const tools = [
       sv: 'finance-access-navigator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Climate Finance Access Navigator - Page ',
@@ -659,8 +661,8 @@ const tools = [
       sv: 'governance-communication-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Governance Communication Toolkit - Page ',
@@ -675,8 +677,8 @@ const tools = [
       sv: 'governance-coordination-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Multi-level Governance Coordination Guide - Page ',
@@ -691,8 +693,8 @@ const tools = [
       sv: 'governance-readiness-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Governance Readiness Assessment Tool - Page ',
@@ -707,8 +709,8 @@ const tools = [
       sv: 'innovation-acceleration-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Climate Innovation Acceleration Kit - Page ',
@@ -723,8 +725,8 @@ const tools = [
       sv: 'institutional-reform-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Climate Institutional Reform Guide - Page ',
@@ -739,8 +741,8 @@ const tools = [
       sv: 'just-transition-planning-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Just Transition Planning Template - Page ',
@@ -755,8 +757,8 @@ const tools = [
       sv: 'nature-based-solutions-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Nature-based Solutions Assessment Tool - Page ',
@@ -771,8 +773,8 @@ const tools = [
       sv: 'policy-brief-templates-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Climate Policy Brief Templates - Page ',
@@ -787,8 +789,8 @@ const tools = [
       sv: 'policy-integration-matrix-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Climate-Energy Policy Integration Matrix - Page ',
@@ -803,8 +805,8 @@ const tools = [
       sv: 'stakeholder-engagement-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'tools')
     },
     pageFooter: {
       en: 'Stakeholder Engagement Protocol - Page ',
@@ -819,8 +821,8 @@ const tools = [
       sv: 'background-context-document-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'seed-kit')
     },
     pageFooter: {
       en: 'Background/Context Document: Climate & Energy Governance Implementation Framework - Page ',
@@ -835,8 +837,8 @@ const tools = [
       sv: 'case-studies-or-examples-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'seed-kit')
     },
     pageFooter: {
       en: 'Case Studies or Examples: Climate & Energy Governance Implementation Framework - Page ',
@@ -851,8 +853,8 @@ const tools = [
       sv: 'evaluation-or-monitoring-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'seed-kit')
     },
     pageFooter: {
       en: 'Evaluation or Monitoring Framework - Page ',
@@ -867,8 +869,8 @@ const tools = [
       sv: 'getting-started-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'seed-kit')
     },
     pageFooter: {
       en: 'Climate Governance Seed Kit Getting Started Guide - Page ',
@@ -883,8 +885,8 @@ const tools = [
       sv: 'regional-hub-connection-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy', 'seed-kit')
     },
     pageFooter: {
       en: 'Regional Hub Connection Guide - Page ',
@@ -900,8 +902,8 @@ const tools = [
       sv: 'Climate-Energy-Governance'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'energy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'energy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'energy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'energy')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -939,8 +941,8 @@ const tools = [
       sv: 'technical-guide-policymakers-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace')
     },
     pageFooter: {
       en: 'Technical Guide for Policymakers and Mediators - Page ',
@@ -955,8 +957,8 @@ const tools = [
       sv: 'community-peace-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace')
     },
     pageFooter: {
       en: 'Community Peace Implementation Guide - Page ',
@@ -971,8 +973,8 @@ const tools = [
       sv: 'youth-peace-action-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace')
     },
     pageFooter: {
       en: 'Youth Peace Action Guide - Page ',
@@ -988,8 +990,8 @@ const tools = [
       sv: 'Peace-Conflict-Resolution'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -1045,8 +1047,8 @@ const tools = [
       sv: 'Global-Ethics-Rights'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'standard'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'standard')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'standard'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'standard')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -1137,8 +1139,8 @@ const tools = [
       sv: 'digital-peace-ethics-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace')
     },
     pageFooter: {
       en: 'Digital Peace Ethics Guide - Page ',
@@ -1153,8 +1155,8 @@ const tools = [
       sv: 'conflict-analysis-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Conflict Analysis Framework - Page ',
@@ -1169,8 +1171,8 @@ const tools = [
       sv: 'peace-committee-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Local Peace Committee Charter Template - Page ',
@@ -1185,8 +1187,8 @@ const tools = [
       sv: 'multi-track-dialogue-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Multi-Track Dialogue Protocol - Page ',
@@ -1201,8 +1203,8 @@ const tools = [
       sv: 'early-warning-design-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Early Warning System Design Guide - Page ',
@@ -1217,8 +1219,8 @@ const tools = [
       sv: 'peace-tech-ethics-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Peace-Technology Ethics Assessment - Page ',
@@ -1233,8 +1235,8 @@ const tools = [
       sv: 'value-system-mapping-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Value System Mapping Template - Page ',
@@ -1250,8 +1252,8 @@ const tools = [
       sv: 'urban-conflict-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Urban Conflict Mediation Toolkit - Page ',
@@ -1266,8 +1268,8 @@ const tools = [
       sv: 'resource-conflict-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Resource Conflict Transformation Guide - Page ',
@@ -1282,8 +1284,8 @@ const tools = [
       sv: 'reconciliation-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Post-Conflict Reconciliation Framework - Page ',
@@ -1298,8 +1300,8 @@ const tools = [
       sv: 'business-peace-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Private Sector Peace Engagement Guide - Page ',
@@ -1314,8 +1316,8 @@ const tools = [
       sv: 'protection-transition-manual-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Military-Civilian Protection Transition Manual - Page ',
@@ -1332,8 +1334,8 @@ const tools = [
       sv: 'peace-advocacy-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Peace Advocacy Campaign Toolkit - Page ',
@@ -1348,8 +1350,8 @@ const tools = [
       sv: 'peace-financing-navigator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Peace Financing Navigator - Page ',
@@ -1364,8 +1366,8 @@ const tools = [
       sv: 'institutional-integration-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Institutional Peace Integration Guide - Page ',
@@ -1380,8 +1382,8 @@ const tools = [
       sv: 'media-peace-messaging-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Media Peace Messaging Guide - Page ',
@@ -1398,8 +1400,8 @@ const tools = [
       sv: 'community-peace-fund-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Community Peace Fund Establishment Guide - Page ',
@@ -1414,8 +1416,8 @@ const tools = [
       sv: 'peace-micro-grant-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Peace Micro-Grant Template - Page ',
@@ -1430,8 +1432,8 @@ const tools = [
       sv: 'resource-mapping-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Resource Mapping Tool - Page ',
@@ -1446,8 +1448,8 @@ const tools = [
       sv: 'hybrid-funding-agreement-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Hybrid Funding Agreement Template - Page ',
@@ -1462,8 +1464,8 @@ const tools = [
       sv: 'peace-fund-sustainability-calculator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Peace Fund Sustainability Calculator - Page ',
@@ -1480,8 +1482,8 @@ const tools = [
       sv: 'islamic-mediation-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Islamic-Informed Mediation Protocol - Page ',
@@ -1496,8 +1498,8 @@ const tools = [
       sv: 'confucian-dialogue-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Confucian Harmony-Based Dialogue Template - Page ',
@@ -1512,8 +1514,8 @@ const tools = [
       sv: 'trauma-informed-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Trauma-Informed Facilitation Toolkit - Page ',
@@ -1528,8 +1530,8 @@ const tools = [
       sv: 'cross-cultural-integration-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Cross-Cultural Peace Tradition Integration Guide - Page ',
@@ -1544,8 +1546,8 @@ const tools = [
       sv: 'causal-loop-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Causal Loop Diagramming Template - Page ',
@@ -1560,8 +1562,8 @@ const tools = [
       sv: 'systemic-stakeholder-mapping-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Systemic Stakeholder Mapping - Page ',
@@ -1576,8 +1578,8 @@ const tools = [
       sv: 'system-boundary-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'System Boundary Definition Guide - Page ',
@@ -1592,8 +1594,8 @@ const tools = [
       sv: 'stock-flow-analysis-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Stock and Flow Analysis Framework for Peace & Conflict Resolution - Page ',
@@ -1608,8 +1610,8 @@ const tools = [
       sv: 'conflict-iceberg-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Conflict Iceberg Model Template - Page ',
@@ -1624,8 +1626,8 @@ const tools = [
       sv: 'conflict-archetype-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Conflict System Archetype Guide - Page ',
@@ -1640,8 +1642,8 @@ const tools = [
       sv: 'leverage-point-matrix-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Leverage Point Identification Matrix - Page ',
@@ -1656,8 +1658,8 @@ const tools = [
       sv: 'systems-scenario-planning-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Systems-Based Scenario Planning - Page ',
@@ -1672,8 +1674,8 @@ const tools = [
       sv: 'systemic-outcomes-harvesting-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Systemic Outcomes Harvesting - Page ',
@@ -1688,8 +1690,8 @@ const tools = [
       sv: 'community-systems-mapping-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Community Systems Mapping Guide - Page ',
@@ -1704,8 +1706,8 @@ const tools = [
       sv: 'organizational-systems-analysis-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Organizational Systems Analysis Framework - Page ',
@@ -1720,8 +1722,8 @@ const tools = [
       sv: 'policy-systems-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'peace', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'peace', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'peace', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'peace', 'tools')
     },
     pageFooter: {
       en: 'Peace Policy Systems Assessment Framework - Page ',
@@ -1737,8 +1739,8 @@ const tools = [
       sv: 'technical-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic')
     },
     pageFooter: {
       en: 'Technical Guide for Policymakers - Page ',
@@ -1753,8 +1755,8 @@ const tools = [
       sv: 'community-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic')
     },
     pageFooter: {
       en: 'Community Economic Implementation Guide - Page ',
@@ -1769,8 +1771,8 @@ const tools = [
       sv: 'youth-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic')
     },
     pageFooter: {
       en: 'Youth Economic Action Guide - Page ',
@@ -1785,8 +1787,8 @@ const tools = [
       sv: 'digital-ethics-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic')
     },
     pageFooter: {
       en: 'Digital Economic Ethics Guide - Page ',
@@ -1801,8 +1803,8 @@ const tools = [
       sv: 'indigenous-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic')
     },
     pageFooter: {
       en: 'Indigenous Economic Stewardship Guide - Page ',
@@ -1819,8 +1821,8 @@ const tools = [
       sv: 'economic-analysis-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Economic Analysis Framework - Page ',
@@ -1835,8 +1837,8 @@ const tools = [
       sv: 'currency-design-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Community Currency Design Template - Page ',
@@ -1851,8 +1853,8 @@ const tools = [
       sv: 'participatory-budgeting-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Participatory Budgeting Protocol - Page ',
@@ -1867,8 +1869,8 @@ const tools = [
       sv: 'ethical-trade-zone-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Ethical Trade Zone Charter - Page ',
@@ -1883,8 +1885,8 @@ const tools = [
       sv: 'aubi-implementation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'AUBI Implementation Guide - Page ',
@@ -1899,8 +1901,8 @@ const tools = [
       sv: 'commons-management-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Commons Management Toolkit - Page ',
@@ -1917,8 +1919,8 @@ const tools = [
       sv: 'urban-economic-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Urban Economic Integration Toolkit - Page ',
@@ -1933,8 +1935,8 @@ const tools = [
       sv: 'rural-cooperative-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Rural Cooperative Development Guide - Page ',
@@ -1949,8 +1951,8 @@ const tools = [
       sv: 'bioregional-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Bioregional Resource Sharing Protocol - Page ',
@@ -1965,8 +1967,8 @@ const tools = [
       sv: 'global-commons-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Global Commons Governance Framework - Page ',
@@ -1983,8 +1985,8 @@ const tools = [
       sv: 'economic-advocacy-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Economic Advocacy Campaign Toolkit - Page ',
@@ -1999,8 +2001,8 @@ const tools = [
       sv: 'economic-financing-navigator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Economic Financing Navigator - Page ',
@@ -2015,8 +2017,8 @@ const tools = [
       sv: 'institutional-integration-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Institutional Economic Integration Guide - Page ',
@@ -2031,8 +2033,8 @@ const tools = [
       sv: 'ppp-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Public-Private Partnership Template - Page ',
@@ -2049,8 +2051,8 @@ const tools = [
       sv: 'community-economic-fund-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Community Economic Fund Guide - Page ',
@@ -2065,8 +2067,8 @@ const tools = [
       sv: 'economic-micro-grant-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Economic Micro-Grant Template - Page ',
@@ -2081,8 +2083,8 @@ const tools = [
       sv: 'resource-mapping-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Resource Mapping Tool - Page ',
@@ -2099,8 +2101,8 @@ const tools = [
       sv: 'currency-simulator-app-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Currency Simulator App - Page ',
@@ -2115,8 +2117,8 @@ const tools = [
       sv: 'nested-economic-health-dashboard-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Nested Economic Health Index Dashboard - Page ',
@@ -2131,8 +2133,8 @@ const tools = [
       sv: 'ai-chatbot-for-tool-navigation-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'AI Chatbot for Tool Navigation - Page ',
@@ -2147,8 +2149,8 @@ const tools = [
       sv: 'real-time-collaboration-platform-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Real-Time Collaboration Platform - Page ',
@@ -2163,8 +2165,8 @@ const tools = [
       sv: 'sample-audit-report-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'economic', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'economic', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'economic', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'economic', 'tools')
     },
     pageFooter: {
       en: 'Sample Audit Report Template - Page ',
@@ -2180,8 +2182,8 @@ const tools = [
       sv: 'quick-start-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Quick-Start Guide: Digital Commons Framework - Page ',
@@ -2196,8 +2198,8 @@ const tools = [
       sv: 'technical-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Technical Guide for Policymakers: Digital Commons Framework - Page ',
@@ -2212,8 +2214,8 @@ const tools = [
       sv: 'community-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Community Implementation Guide: Digital Commons Framework - Page ',
@@ -2228,8 +2230,8 @@ const tools = [
       sv: 'youth-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Youth Engagement Guide: Digital Commons Framework - Page ',
@@ -2244,8 +2246,8 @@ const tools = [
       sv: 'digital-ethics-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Digital Ethics Guide: Digital Commons Framework - Page ',
@@ -2260,8 +2262,8 @@ const tools = [
       sv: 'indigenous-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Indigenous Data Stewardship Guide: Digital Commons Framework - Page ',
@@ -2278,8 +2280,8 @@ const tools = [
       sv: 'node-setup-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
     },
     pageFooter: {
       en: 'Node Setup Guide: Digital Commons Framework - Page ',
@@ -2294,8 +2296,8 @@ const tools = [
       sv: 'governance-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
     },
     pageFooter: {
       en: 'Governance Toolkit: Digital Commons Framework - Page ',
@@ -2310,8 +2312,8 @@ const tools = [
       sv: 'sms-voting-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
     },
     pageFooter: {
       en: 'SMS Voting Template: Digital Commons Framework - Page ',
@@ -2326,8 +2328,8 @@ const tools = [
       sv: 'data-sovereignty-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
     },
     pageFooter: {
       en: 'Data Sovereignty Protocol: Digital Commons Framework - Page ',
@@ -2342,8 +2344,8 @@ const tools = [
       sv: 'ethical-ai-audit-checklist-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
     },
     pageFooter: {
       en: 'Ethical AI Audit Checklist: Digital Commons Framework - Page ',
@@ -2358,8 +2360,8 @@ const tools = [
       sv: 'glossary-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
     },
     pageFooter: {
       en: 'Commons Glossary: Digital Commons Framework - Page ',
@@ -2374,8 +2376,8 @@ const tools = [
       sv: 'failure-analysis-report-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
     },
     pageFooter: {
       en: 'Failure Analysis Report Template: Digital Commons Framework - Page ',
@@ -2390,8 +2392,8 @@ const tools = [
       sv: 'impact-assessment-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'core-governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'core-governance')
     },
     pageFooter: {
       en: 'Impact Assessment Template: Digital Commons Framework - Page ',
@@ -2408,8 +2410,8 @@ const tools = [
       sv: 'commons-in-practice-documentation-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
     },
     pageFooter: {
       en: 'Digital Commons in Practice Documentation - Page ',
@@ -2424,8 +2426,8 @@ const tools = [
       sv: 'rural-digital-commons-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
     },
     pageFooter: {
       en: 'Rural Digital Commons Toolkit: Digital Commons Framework - Page ',
@@ -2440,8 +2442,8 @@ const tools = [
       sv: 'urban-digital-commons-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
     },
     pageFooter: {
       en: 'Urban Digital Commons Guide: Digital Commons Framework - Page ',
@@ -2456,8 +2458,8 @@ const tools = [
       sv: 'disaster-resilient-commons-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
     },
     pageFooter: {
       en: 'Disaster-Resilient Commons Protocol: Digital Commons Framework - Page ',
@@ -2472,8 +2474,8 @@ const tools = [
       sv: 'global-commons-governance-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'context-specific'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'context-specific')
     },
     pageFooter: {
       en: 'Global Commons Governance Framework: Digital Commons Framework - Page ',
@@ -2490,8 +2492,8 @@ const tools = [
       sv: 'digital-commons-advocacy-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'advocacy-and-scaling'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'advocacy-and-scaling')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'advocacy-and-scaling'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'advocacy-and-scaling')
     },
     pageFooter: {
       en: 'Digital Commons Advocacy Toolkit: Digital Commons Framework - Page ',
@@ -2506,8 +2508,8 @@ const tools = [
       sv: 'funding-navigator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'advocacy-and-scaling'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'advocacy-and-scaling')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'advocacy-and-scaling'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'advocacy-and-scaling')
     },
     pageFooter: {
       en: 'Funding Navigator: Digital Commons Framework - Page ',
@@ -2522,8 +2524,8 @@ const tools = [
       sv: 'ppp-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'advocacy-and-scaling'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'advocacy-and-scaling')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'advocacy-and-scaling'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'advocacy-and-scaling')
     },
     pageFooter: {
       en: 'Public-Private Partnership Template: Digital Commons Framework - Page ',
@@ -2540,8 +2542,8 @@ const tools = [
       sv: 'community-funding-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'low-resource'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'low-resource')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'low-resource'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'low-resource')
     },
     pageFooter: {
       en: 'Community Funding Guide: Digital Commons Framework - Page ',
@@ -2556,8 +2558,8 @@ const tools = [
       sv: 'resource-mapping-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'low-resource'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'low-resource')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'low-resource'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'low-resource')
     },
     pageFooter: {
       en: 'Resource Mapping Tool: Digital Commons Framework - Page ',
@@ -2574,8 +2576,8 @@ const tools = [
       sv: 'audit-report-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'audit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'audit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'audit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'audit')
     },
     pageFooter: {
       en: 'Audit Report Template: Digital Commons Framework - Page ',
@@ -2592,8 +2594,8 @@ const tools = [
       sv: 'visual-companion-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Appendix B: Visual Companion Toolkit - Digital Commons Framework - Page ',
@@ -2608,8 +2610,8 @@ const tools = [
       sv: 'corporate-participation-playbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Appendix C: Corporate Participation Playbook - Digital Commons Framework - Page ',
@@ -2624,8 +2626,8 @@ const tools = [
       sv: 'digital-ethics-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Appendix D: Digital Ethics Charter - Digital Commons Framework - Page ',
@@ -2640,8 +2642,8 @@ const tools = [
       sv: 'commons-glossary-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Appendix E: Commons Glossary - Digital Commons Framework - Page ',
@@ -2656,8 +2658,8 @@ const tools = [
       sv: 'minimal-viable-node-quickstart-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Appendix F: Minimal-Viable Node Quickstart - Digital Commons Framework - Page ',
@@ -2672,8 +2674,8 @@ const tools = [
       sv: 'field-test-logbook-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Appendix G: Field-Test Logbook Template - Digital Commons Framework - Page ',
@@ -2688,8 +2690,8 @@ const tools = [
       sv: 'diplomatic-mini-deck-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Appendix I: Diplomatic Mini Deck - Digital Commons Framework - Page ',
@@ -2704,8 +2706,8 @@ const tools = [
       sv: 'historical-commons-context-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Appendix J: Historical Commons Context - Digital Commons Framework - Page ',
@@ -2720,8 +2722,8 @@ const tools = [
       sv: 'impact-assessment-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital')
     },
     pageFooter: {
       en: 'Appendix K: Impact Assessment Framework - Digital Commons Framework - Page ',
@@ -2736,8 +2738,8 @@ const tools = [
       sv: 'how-to-use-the-digital-commons-seed-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'How to Use the Digital Commons Seed Kit - Page ',
@@ -2754,8 +2756,8 @@ const tools = [
       sv: 'governance-simulator-app-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
     },
     pageFooter: {
       en: 'Governance Simulator App Documentation - Page ',
@@ -2770,8 +2772,8 @@ const tools = [
       sv: 'ai-chatbot-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
     },
     pageFooter: {
       en: 'AI Chatbot for Tool Navigation Documentation - Page ',
@@ -2786,8 +2788,8 @@ const tools = [
       sv: 'collaboration-platform-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
     },
     pageFooter: {
       en: 'Real-Time Collaboration Platform Documentation - Page ',
@@ -2802,8 +2804,8 @@ const tools = [
       sv: 'health-dashboard-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'digital', 'tools', 'digital-tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'digital', 'tools', 'digital-tools')
     },
     pageFooter: {
       en: 'Digital Commons Health Dashboard Documentation - Page ',
@@ -2818,8 +2820,8 @@ const tools = [
       sv: 'youth-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics')
     },
     pageFooter: {
       en: 'Youth & Community Action Guide: Rights of All Beings - Page ',
@@ -2834,8 +2836,8 @@ const tools = [
       sv: 'business-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics')
     },
     pageFooter: {
       en: 'Rights of Beings for Business Leaders: Implementation Guide - Page ',
@@ -2850,8 +2852,8 @@ const tools = [
       sv: 'community-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics')
     },
     pageFooter: {
       en: 'Rights of Beings for Communities - Page ',
@@ -2866,8 +2868,8 @@ const tools = [
       sv: 'crisis-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics')
     },
     pageFooter: {
       en: 'Rights of Beings in Crisis Situations: Emergency Implementation Guide - Page ',
@@ -2882,8 +2884,8 @@ const tools = [
       sv: 'educators-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics')
     },
     pageFooter: {
       en: 'Rights of Beings for Educators: Implementation Guide - Page ',
@@ -2898,8 +2900,8 @@ const tools = [
       sv: 'indigenous-communities-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics')
     },
     pageFooter: {
       en: 'Rights of Beings for Indigenous Communities - Page ',
@@ -2914,8 +2916,8 @@ const tools = [
       sv: 'policy-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics')
     },
     pageFooter: {
       en: 'Rights of Beings for Policymakers - Page ',
@@ -2930,8 +2932,8 @@ const tools = [
       sv: 'religious-communities-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics')
     },
     pageFooter: {
       en: 'Rights of Beings for Religious Communities - Page ',
@@ -2946,8 +2948,8 @@ const tools = [
       sv: 'crisis-ethics-field-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
     },
     pageFooter: {
       en: 'Crisis Ethics Field Guide - Page ',
@@ -2962,8 +2964,8 @@ const tools = [
       sv: 'rights-assessment-methodology-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
     },
     pageFooter: {
       en: 'Rights Assessment Methodology Handbook - Page ',
@@ -2978,8 +2980,8 @@ const tools = [
       sv: 'rights-recognition-starter-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
     },
     pageFooter: {
       en: 'Rights Recognition Starter Kit - Page ',
@@ -2994,8 +2996,8 @@ const tools = [
       sv: 'spiral-aware-implementation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'core-guides'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'core-guides')
     },
     pageFooter: {
       en: 'Spiral-Aware Implementation Guide - Page ',
@@ -3010,8 +3012,8 @@ const tools = [
       sv: 'conflict-resolution-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
     },
     pageFooter: {
       en: 'Conflict Resolution Protocol Guide - Page ',
@@ -3026,8 +3028,8 @@ const tools = [
       sv: 'consciousness-assessment-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
     },
     pageFooter: {
       en: 'Consciousness Assessment Toolkit - Page ',
@@ -3042,8 +3044,8 @@ const tools = [
       sv: 'guardianship-handbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
     },
     pageFooter: {
       en: 'Guardianship Council Handbook - Page ',
@@ -3058,8 +3060,8 @@ const tools = [
       sv: 'indigenous-knowledge-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
     },
     pageFooter: {
       en: 'Indigenous Knowledge Integration Protocol - Page ',
@@ -3074,8 +3076,8 @@ const tools = [
       sv: 'pioneer-pilots-manual-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
     },
     pageFooter: {
       en: 'Pioneer Pilots Implementation Manual - Page ',
@@ -3090,8 +3092,8 @@ const tools = [
       sv: 'resistance-management-playbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
     },
     pageFooter: {
       en: 'Resistance Management Playbook - Page ',
@@ -3106,8 +3108,8 @@ const tools = [
       sv: 'edge-case-handbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'ethics', 'tools', 'specialized-resources'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'ethics', 'tools', 'specialized-resources')
     },
     pageFooter: {
       en: 'Edge Case Handbook - Page ',
@@ -3123,8 +3125,8 @@ const tools = [
       sv: 'justice-framework-lite-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice')
     },
     pageFooter: {
       en: 'Justice Systems Framework Lite Guide - Page ',
@@ -3139,8 +3141,8 @@ const tools = [
       sv: 'justice-lite-guide-community-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice')
     },
     pageFooter: {
       en: 'Justice Systems Framework Lite Guide (Community) - Page ',
@@ -3155,8 +3157,8 @@ const tools = [
       sv: 'youth-justice-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice')
     },
     pageFooter: {
       en: 'Justice Systems Framework Lite Guide (Youth) - Page ',
@@ -3173,8 +3175,8 @@ const tools = [
       sv: 'pilot-readiness-self-assessment-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'core')
     },
     pageFooter: {
       en: 'Pilot Readiness Self-Assessment Tool - Page ',
@@ -3189,8 +3191,8 @@ const tools = [
       sv: 'stakeholder-engagement-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'core')
     },
     pageFooter: {
       en: 'Stakeholder Engagement Charter - Page ',
@@ -3205,8 +3207,8 @@ const tools = [
       sv: 'restorative-justice-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'core')
     },
     pageFooter: {
       en: 'Restorative Justice Guide - Page ',
@@ -3221,8 +3223,8 @@ const tools = [
       sv: 'indigenous-justice-integration-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'core')
     },
     pageFooter: {
       en: 'Indigenous Justice Integration Template - Page ',
@@ -3237,8 +3239,8 @@ const tools = [
       sv: 'monitoring-evaluation-rubric-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'core')
     },
     pageFooter: {
       en: 'Monitoring & Evaluation Rubric - Page ',
@@ -3255,8 +3257,8 @@ const tools = [
       sv: 'advocacy-playbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
     },
     pageFooter: {
       en: 'Advocacy Playbook - Page ',
@@ -3271,8 +3273,8 @@ const tools = [
       sv: 'policy-harmonization-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
     },
     pageFooter: {
       en: 'Policy Harmonization Toolkit - Page ',
@@ -3287,8 +3289,8 @@ const tools = [
       sv: 'executive-summary-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
     },
     pageFooter: {
       en: 'Executive Summary - Page ',
@@ -3303,8 +3305,8 @@ const tools = [
       sv: 'policy-brief-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
     },
     pageFooter: {
       en: 'Policy Brief - Page ',
@@ -3319,8 +3321,8 @@ const tools = [
       sv: 'cost-benefit-analysis-model-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'advocacy')
     },
     pageFooter: {
       en: 'Cost-Benefit Analysis Model - Page ',
@@ -3337,8 +3339,8 @@ const tools = [
       sv: 'stakeholder-simulation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'justice', 'tools', 'simulation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'justice', 'tools', 'simulation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'justice', 'tools', 'simulation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'justice', 'tools', 'simulation')
     },
     pageFooter: {
       en: 'Stakeholder Simulation Guide - Page ',
@@ -3355,8 +3357,8 @@ const tools = [
       sv: 'executive-brief-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual')
     },
     pageFooter: {
       en: 'Executive Brief - Page ',
@@ -3371,8 +3373,8 @@ const tools = [
       sv: 'policy-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual')
     },
     pageFooter: {
       en: 'Policy Guide - Page ',
@@ -3387,8 +3389,8 @@ const tools = [
       sv: 'youth-and-broad-audiences-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual')
     },
     pageFooter: {
       en: 'Youth & Broad Audiences Guide - Page ',
@@ -3405,8 +3407,8 @@ const tools = [
       sv: 'adaptive-facilitation-tools-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual')
     },
     pageFooter: {
       en: 'Adaptive Facilitation Tools - Page ',
@@ -3421,8 +3423,8 @@ const tools = [
       sv: 'digital-feedback-dashboard-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual')
     },
     pageFooter: {
       en: 'Digital Feedback Dashboard - Page ',
@@ -3439,8 +3441,8 @@ const tools = [
       sv: 'dialogue-facilitation-scripts-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'core')
     },
     pageFooter: {
       en: 'Dialogue Facilitation Scripts - Page ',
@@ -3455,8 +3457,8 @@ const tools = [
       sv: 'digital-access-inclusion-audit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'core')
     },
     pageFooter: {
       en: 'Digital Access & Inclusion Audit - Page ',
@@ -3471,8 +3473,8 @@ const tools = [
       sv: 'truth-reconciliation-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'core')
     },
     pageFooter: {
       en: 'Truth & Reconciliation Toolkit - Page ',
@@ -3487,8 +3489,8 @@ const tools = [
       sv: 'wisdom-documentation-templates-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'core')
     },
     pageFooter: {
       en: 'Wisdom Documentation Templates - Page ',
@@ -3505,8 +3507,8 @@ const tools = [
       sv: 'adaptive-learning-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'implementation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'implementation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'implementation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'implementation')
     },
     pageFooter: {
       en: 'Adaptive Learning Protocol - Page ',
@@ -3521,8 +3523,8 @@ const tools = [
       sv: 'impact-assessment-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'implementation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'implementation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'implementation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'implementation')
     },
     pageFooter: {
       en: 'Impact Assessment Guide - Page ',
@@ -3537,8 +3539,8 @@ const tools = [
       sv: 'representation-metrics-dashboard-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'implementation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'implementation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'implementation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'implementation')
     },
     pageFooter: {
       en: 'Representation Metrics Dashboard - Page ',
@@ -3555,8 +3557,8 @@ const tools = [
       sv: 'cross-tradition-values-mapping-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
     },
     pageFooter: {
       en: 'Cross-Tradition Values Mapping Tool - Page ',
@@ -3571,8 +3573,8 @@ const tools = [
       sv: 'ethics-charter-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
     },
     pageFooter: {
       en: 'Ethics Charter Template - Page ',
@@ -3587,8 +3589,8 @@ const tools = [
       sv: 'policy-development-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
     },
     pageFooter: {
       en: 'Policy Development Guide - Page ',
@@ -3603,8 +3605,8 @@ const tools = [
       sv: 'policy-translation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
     },
     pageFooter: {
       en: 'Policy Translation Guide - Page ',
@@ -3619,8 +3621,8 @@ const tools = [
       sv: 'wisdom-repository-starter-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'policy')
     },
     pageFooter: {
       en: 'Wisdom Repository Starter Kit - Page ',
@@ -3637,8 +3639,8 @@ const tools = [
       sv: 'conflict-de-escalation-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'Conflict De-escalation Protocols - Page ',
@@ -3653,8 +3655,8 @@ const tools = [
       sv: 'cultural-appropriation-prevention-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'Cultural Appropriation Prevention - Page ',
@@ -3669,8 +3671,8 @@ const tools = [
       sv: 'dialogue-facilitation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'Dialogue Facilitation Guide - Page ',
@@ -3685,8 +3687,8 @@ const tools = [
       sv: 'local-partnership-templates-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'Local Partnership Templates - Page ',
@@ -3701,8 +3703,8 @@ const tools = [
       sv: 'regional-customization-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'Regional Customization Framework - Page ',
@@ -3717,8 +3719,8 @@ const tools = [
       sv: 'representation-assessment-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'Representation Assessment Tool - Page ',
@@ -3733,8 +3735,8 @@ const tools = [
       sv: 'sacred-space-setup-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'Sacred Space Setup Guide - Page ',
@@ -3749,8 +3751,8 @@ const tools = [
       sv: 'tradition-protocol-cards-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'Tradition-Specific Protocol Cards - Page ',
@@ -3767,8 +3769,8 @@ const tools = [
       sv: 'Spiritual-Dialogue'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -3811,8 +3813,8 @@ const tools = [
       sv: 'sacred-seed-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'spiritual', 'tools', 'seed-kit'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'spiritual', 'tools', 'seed-kit')
     },
     pageFooter: {
       en: 'Sacred Seed Kit - Page ',
@@ -3842,8 +3844,8 @@ const tools = [
       sv: 'quick-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems')
     },
     pageFooter: {
       en: 'Quick Guide - Page ',
@@ -3858,8 +3860,8 @@ const tools = [
       sv: 'quick-guide-medium-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems')
     },
     pageFooter: {
       en: 'Community Guide - Page ',
@@ -3874,8 +3876,8 @@ const tools = [
       sv: 'quick-guide-youth-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems')
     },
     pageFooter: {
       en: 'Youth Guide - Page ',
@@ -3892,8 +3894,8 @@ const tools = [
       sv: 'hearts-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems', 'tools')
     },
     pageFooter: {
       en: 'Hearts Implementation Toolkit - Page ',
@@ -3908,8 +3910,8 @@ const tools = [
       sv: 'transition-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems', 'tools')
     },
     pageFooter: {
       en: 'Transition Guide - Page ',
@@ -3924,8 +3926,8 @@ const tools = [
       sv: 'validator-training-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems', 'tools')
     },
     pageFooter: {
       en: 'Validator Training Manual - Page ',
@@ -3940,8 +3942,8 @@ const tools = [
       sv: 'love-ledger-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems', 'tools')
     },
     pageFooter: {
       en: 'Love Ledger User Guide - Page ',
@@ -3956,8 +3958,8 @@ const tools = [
       sv: 'hearts-technical-spec-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems', 'tools')
     },
     pageFooter: {
       en: 'Hearts Technical Specification - Page ',
@@ -3972,8 +3974,8 @@ const tools = [
       sv: 'translation-layer-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems', 'tools')
     },
     pageFooter: {
       en: 'Inter-Currency Translation Layer - Page ',
@@ -3988,8 +3990,8 @@ const tools = [
       sv: 'proof-of-care-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems', 'tools'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems', 'tools')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems', 'tools')
     },
     pageFooter: {
       en: 'Proof of Care Protocol - Page ',
@@ -4005,8 +4007,8 @@ const tools = [
       sv: 'Finansiella-Systems-Ramverk'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'financial-systems'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'financial-systems')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'financial-systems'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'financial-systems')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -4039,8 +4041,8 @@ const tools = [
       sv: 'decidetogether-platform-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'governance','tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'governance', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'governance','tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'governance', 'tools', 'core')
     },
     pageFooter: {
       en: 'DecideTogether Platform Guide - Page ',
@@ -4055,8 +4057,8 @@ const tools = [
       sv: 'stakeholder-engagement-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'governance','tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'governance', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'governance','tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'governance', 'tools', 'core')
     },
     pageFooter: {
       en: 'Stakeholder Engagement Charter Template - Page ',
@@ -4071,8 +4073,8 @@ const tools = [
       sv: 'community-well-being-index-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'governance','tools', 'monitoring'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'governance', 'tools', 'monitoring')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'governance','tools', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'governance', 'tools', 'monitoring')
     },
     pageFooter: {
       en: 'Community Well-Being Index - Page ',
@@ -4090,8 +4092,8 @@ const tools = [
       sv: 'dynamic-rights-spectrum-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'environmental-stewardship', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'core')
     },
     pageFooter: {
       en: 'Dynamic Rights Spectrum Guide - Page ',
@@ -4106,8 +4108,8 @@ const tools = [
       sv: 'reparations-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship', 'tools', 'governance'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'governance')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'environmental-stewardship', 'tools', 'governance'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'governance')
     },
     pageFooter: {
       en: 'Reparations Protocol - Page ',
@@ -4122,8 +4124,8 @@ const tools = [
       sv: 'ecosystem-health-indicators-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship', 'tools', 'monitoring'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'monitoring')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'environmental-stewardship', 'tools', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'monitoring')
     },
     pageFooter: {
       en: 'Ecosystem Health Indicators - Page ',
@@ -4138,8 +4140,8 @@ const tools = [
       sv: 'nexus-impact-assessment-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship', 'tools', 'monitoring'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'monitoring')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'environmental-stewardship', 'tools', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'environmental-stewardship', 'tools', 'monitoring')
     },
     pageFooter: {
       en: 'Nexus Impact Assessment Tool - Page ',
@@ -4155,8 +4157,8 @@ const tools = [
       sv: 'one-page-essence-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'environmental-stewardship'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'environmental-stewardship')
     },
     pageFooter: {
       en: 'Environmental Stewardship Framework - One Page Essence - Page ',
@@ -4171,8 +4173,8 @@ const tools = [
       sv: 'first-100-days-playbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'environmental-stewardship'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'environmental-stewardship')
     },
     pageFooter: {
       en: 'First 100 Days Playbook - Page ',
@@ -4188,8 +4190,8 @@ const tools = [
       sv: 'Environmental-Stewardship-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'environmental-stewardship'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'environmental-stewardship')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'environmental-stewardship'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'environmental-stewardship')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -4230,8 +4232,8 @@ const tools = [
       sv: 'technical-guide-policymakers-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Technical Guide for Policymakers - Page ',
@@ -4247,8 +4249,8 @@ const tools = [
       sv: 'community-implementation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Community Implementation Guide - Page ',
@@ -4264,8 +4266,8 @@ const tools = [
       sv: 'youth-engagement-leadership-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Youth Engagement & Leadership Guide - Page ',
@@ -4281,8 +4283,8 @@ const tools = [
       sv: 'corporate-transition-redemption-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Corporate Transition & Redemption Guide - Page ',
@@ -4298,8 +4300,8 @@ const tools = [
       sv: 'indigenous-data-sovereignty-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Indigenous Data Sovereignty Guide - Page ',
@@ -4316,8 +4318,8 @@ const tools = [
       sv: 'fpic-2-protocols-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
     },
     pageFooter: {
       en: 'Biodiversity Framework - FPIC 2.0 Protocols Template - Page ',
@@ -4333,8 +4335,8 @@ const tools = [
       sv: 'rights-escalation-ladder-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Rights Escalation Ladder Framework - Page ',
@@ -4350,8 +4352,8 @@ const tools = [
       sv: 'youth-leadership-pipeline-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Youth Leadership Pipeline Guide - Page ',
@@ -4367,8 +4369,8 @@ const tools = [
       sv: 'future-beings-council-setup-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Future Beings Council Setup - Page ',
@@ -4384,8 +4386,8 @@ const tools = [
       sv: 'corporate-transition-support-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Corporate Transition Support Toolkit - Page ',
@@ -4401,8 +4403,8 @@ const tools = [
       sv: 'crisis-response-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Crisis Response Protocols - Page ',
@@ -4418,8 +4420,8 @@ const tools = [
       sv: 'regional-adaptation-guidelines-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'core')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Regional Adaptation Guidelines - Page ',
@@ -4436,8 +4438,8 @@ const tools = [
       sv: 'hybrid-ubes-implementation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'economic')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Hybrid UBES Implementation Guide - Page ',
@@ -4453,8 +4455,8 @@ const tools = [
       sv: 'impact-bonds-financing-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'economic')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Biodiversity Impact Bonds & Financing - Page ',
@@ -4470,8 +4472,8 @@ const tools = [
       sv: 'economic-resilience-corporate-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'economic')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Economic Resilience & Corporate Transition Toolkit - Page ',
@@ -4488,8 +4490,8 @@ const tools = [
       sv: 'bio-arts-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'cultural'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'cultural')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'cultural'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'cultural')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Bio-Arts Residencies Toolkit - Page ',
@@ -4505,8 +4507,8 @@ const tools = [
       sv: 'restoration-calendar-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'cultural'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'cultural')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'cultural'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'cultural')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Global Restoration Calendar Template - Page ',
@@ -4522,8 +4524,8 @@ const tools = [
       sv: 'bio-influencer-campaign-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'cultural'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'cultural')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'cultural'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'cultural')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Bio-Influencer Training & Campaign Kit - Page ',
@@ -4540,8 +4542,8 @@ const tools = [
       sv: 'blockchain-setup-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'technology')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Biodiversity Blockchain Setup Guide - Page ',
@@ -4557,8 +4559,8 @@ const tools = [
       sv: 'trust-dashboard-evaluation-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'technology')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Public Trust Dashboard & Evaluation Template - Page ',
@@ -4574,8 +4576,8 @@ const tools = [
       sv: 'cyber-guardianship-complete-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'technology')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Cyber-Physical Guardianship Protocols - Page ',
@@ -4592,8 +4594,8 @@ const tools = [
       sv: 'governance-simulator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'digital')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Biodiversity Governance Simulator - Page ',
@@ -4609,8 +4611,8 @@ const tools = [
       sv: 'health-dashboard-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'digital')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Global Biodiversity Health Dashboard - Page ',
@@ -4626,8 +4628,8 @@ const tools = [
       sv: 'collaboration-platform-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'digital')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Real-Time Collaboration Platform - Page ',
@@ -4644,8 +4646,8 @@ const tools = [
       sv: 'amazon-basin-complete-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'regional'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'regional')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'regional'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'regional')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Amazon Basin Implementation Toolkit - Page ',
@@ -4661,8 +4663,8 @@ const tools = [
       sv: 'arctic-sovereignty-complete-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'regional'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'regional')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'regional'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'regional')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Arctic Indigenous Sovereignty Toolkit - Page ',
@@ -4678,8 +4680,8 @@ const tools = [
       sv: 'urban-biodiversity-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'regional'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'regional')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'regional'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'regional')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Urban Biodiversity Integration Guide - Page ',
@@ -4696,8 +4698,8 @@ const tools = [
       sv: 'advocacy-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Biodiversity Advocacy Campaign Toolkit - Page ',
@@ -4713,8 +4715,8 @@ const tools = [
       sv: 'funding-navigator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Funding Navigator for Biodiversity Projects - Page ',
@@ -4730,8 +4732,8 @@ const tools = [
       sv: 'diplomatic-playbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Diplomatic Engagement Playbook - Page ',
@@ -4747,8 +4749,8 @@ const tools = [
       sv: 'coalition-building-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'advocacy')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Coalition Building Strategy Guide - Page ',
@@ -4765,8 +4767,8 @@ const tools = [
       sv: 'pilot-audit-learning-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'assessment'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'assessment')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'assessment'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'assessment')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Pilot Program Audit & Learning Template - Page ',
@@ -4782,8 +4784,8 @@ const tools = [
       sv: 'cultural-democratic-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity', 'tools', 'assessment'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity', 'tools', 'assessment')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity', 'tools', 'assessment'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity', 'tools', 'assessment')
     },
     pageFooter: {
       en: 'Biodiversity Framework - Cultural Impact & Democratic Assessment Tool - Page ',
@@ -4799,8 +4801,8 @@ const tools = [
       sv: 'Biodiversity-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'biodiversity'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'biodiversity')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'biodiversity'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'biodiversity')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -4852,8 +4854,8 @@ const tools = [
       sv: 'planetary-health-accord-lite-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Planetary Health Accord Lite - Page ',
@@ -4869,8 +4871,8 @@ const tools = [
       sv: 'childrens-health-rights-comic-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Children\'s Health Rights Comic - Page ',
@@ -4886,8 +4888,8 @@ const tools = [
       sv: 'health-worker-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Health Worker Charter - Page ',
@@ -4903,8 +4905,8 @@ const tools = [
       sv: 'executive-summary-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Executive Summary - Page ',
@@ -4920,8 +4922,8 @@ const tools = [
       sv: 'health-sanctuary-guides-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Health Sanctuary Implementation Guides - Page ',
@@ -4938,8 +4940,8 @@ const tools = [
       sv: 'global-health-equity-council-setup-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Global Health Equity Council Setup - Page ',
@@ -4955,8 +4957,8 @@ const tools = [
       sv: 'regional-health-hub-implementation-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Regional Health Hub Implementation - Page ',
@@ -4972,8 +4974,8 @@ const tools = [
       sv: 'conflict-resolution-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Conflict Resolution Protocols - Page ',
@@ -4989,8 +4991,8 @@ const tools = [
       sv: 'youth-advisory-board-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Youth Advisory Board Framework - Page ',
@@ -5006,8 +5008,8 @@ const tools = [
       sv: 'policy-integration-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'core')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Policy Integration Toolkit - Page ',
@@ -5024,8 +5026,8 @@ const tools = [
       sv: 'ai-bias-audit-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
     },
     pageFooter: {
       en: 'Planetary Health Framework - AI Bias Audit Framework - Page ',
@@ -5041,8 +5043,8 @@ const tools = [
       sv: 'ai-ethics-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
     },
     pageFooter: {
       en: 'Planetary Health Framework - AI Ethics Protocols - Page ',
@@ -5058,8 +5060,8 @@ const tools = [
       sv: 'ai-literacy-certifications-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
     },
     pageFooter: {
       en: 'Planetary Health Framework - AI Literacy Certifications - Page ',
@@ -5075,8 +5077,8 @@ const tools = [
       sv: 'blockchain-health-records-setup-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Blockchain Health Records Setup - Page ',
@@ -5092,8 +5094,8 @@ const tools = [
       sv: 'federated-learning-implementation-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Federated Learning Implementation - Page ',
@@ -5109,8 +5111,8 @@ const tools = [
       sv: 'cybersecurity-framework-health-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'technology')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Cybersecurity Framework for Health - Page ',
@@ -5127,8 +5129,8 @@ const tools = [
       sv: 'community-health-legion-manual-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Community Health Legion Manual - Page ',
@@ -5144,8 +5146,8 @@ const tools = [
       sv: 'cultural-competency-training-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Cultural Competency Training - Page ',
@@ -5161,8 +5163,8 @@ const tools = [
       sv: 'mental-health-integration-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Mental Health Integration Toolkit - Page ',
@@ -5178,8 +5180,8 @@ const tools = [
       sv: 'trauma-informed-care-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'community')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Trauma-Informed Care Protocols - Page ',
@@ -5196,8 +5198,8 @@ const tools = [
       sv: 'health-solidarity-fund-setup-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Health Solidarity Fund Setup - Page ',
@@ -5213,8 +5215,8 @@ const tools = [
       sv: 'debt-for-health-swap-templates-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Debt-for-Health Swap Templates - Page ',
@@ -5230,8 +5232,8 @@ const tools = [
       sv: 'open-source-pharma-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Open-Source Pharma Toolkit - Page ',
@@ -5247,8 +5249,8 @@ const tools = [
       sv: 'health-impact-bond-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'financing'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'financing')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Health Impact Bond Framework - Page ',
@@ -5265,8 +5267,8 @@ const tools = [
       sv: 'one-health-surveillance-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
     },
     pageFooter: {
       en: 'Planetary Health Framework - One Health Surveillance Protocols - Page ',
@@ -5282,8 +5284,8 @@ const tools = [
       sv: 'pandemic-response-playbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Pandemic Response Playbook - Page ',
@@ -5299,8 +5301,8 @@ const tools = [
       sv: 'climate-health-adaptation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Climate-Health Adaptation Guide - Page ',
@@ -5316,8 +5318,8 @@ const tools = [
       sv: 'mobile-clinic-deployment-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health', 'tools', 'preparedness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health', 'tools', 'preparedness')
     },
     pageFooter: {
       en: 'Planetary Health Framework - Mobile Clinic Deployment Kit - Page ',
@@ -5334,8 +5336,8 @@ const tools = [
       sv: 'Planetary-Health-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'planetary-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'planetary-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'planetary-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'planetary-health')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -5380,8 +5382,8 @@ const tools = [
       sv: 'consciousness-accord-lite-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness')
     },
     pageFooter: {
       en: 'Consciousness Framework - Consciousness Accord Lite - Page ',
@@ -5396,8 +5398,8 @@ const tools = [
       sv: 'executive-core-overview-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness')
     },
     pageFooter: {
       en: 'Consciousness Framework - Executive Summary - Page ',
@@ -5414,8 +5416,8 @@ const tools = [
       sv: 'global-wisdom-council-setup-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'core')
     },
     pageFooter: {
       en: 'Consciousness Framework - Global Wisdom Council Setup Guide - Page ',
@@ -5430,8 +5432,8 @@ const tools = [
       sv: 'regional-consciousness-hub-implementation-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'core')
     },
     pageFooter: {
       en: 'Consciousness Framework - Regional Consciousness Hub Implementation Guide - Page ',
@@ -5446,8 +5448,8 @@ const tools = [
       sv: 'policy-design-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'core')
     },
     pageFooter: {
       en: 'Consciousness Framework - Policy Design Guide - Page ',
@@ -5462,8 +5464,8 @@ const tools = [
       sv: 'stakeholder-engagement-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'core')
     },
     pageFooter: {
       en: 'Consciousness Framework - Stakeholder Engagement Protocols - Page ',
@@ -5478,8 +5480,8 @@ const tools = [
       sv: 'youth-council-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'core')
     },
     pageFooter: {
       en: 'Consciousness Framework - Youth Council Framework - Page ',
@@ -5496,8 +5498,8 @@ const tools = [
       sv: 'mindfulness-training-module-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'personal'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'personal')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'personal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'personal')
     },
     pageFooter: {
       en: 'Consciousness Framework - Mindfulness Training Module - Page ',
@@ -5512,8 +5514,8 @@ const tools = [
       sv: 'shadow-work-coaching-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'personal'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'personal')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'personal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'personal')
     },
     pageFooter: {
       en: 'Consciousness Framework - Shadow Work Coaching Guide - Page ',
@@ -5528,8 +5530,8 @@ const tools = [
       sv: 'nonviolent-communication-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'personal'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'personal')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'personal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'personal')
     },
     pageFooter: {
       en: 'Consciousness Framework - Nonviolent Communication Toolkit - Page ',
@@ -5544,8 +5546,8 @@ const tools = [
       sv: 'leadership-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'personal'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'personal')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'personal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'personal')
     },
     pageFooter: {
       en: 'Consciousness Framework - Leadership Toolkit - Page ',
@@ -5562,8 +5564,8 @@ const tools = [
       sv: 'community-dialogue-manual-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'community')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'community')
     },
     pageFooter: {
       en: 'Consciousness Framework - Community Dialogue Manual - Page ',
@@ -5578,8 +5580,8 @@ const tools = [
       sv: 'cultural-sensitivity-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'community')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'community')
     },
     pageFooter: {
       en: 'Consciousness Framework - Cultural Sensitivity Protocols - Page ',
@@ -5594,8 +5596,8 @@ const tools = [
       sv: 'consciousness-raising-circle-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'community'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'community')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'community'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'community')
     },
     pageFooter: {
       en: 'Consciousness Framework - Consciousness-Raising Circle Guide - Page ',
@@ -5612,8 +5614,8 @@ const tools = [
       sv: 'ai-sentiment-analysis-setup-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'digital')
     },
     pageFooter: {
       en: 'Consciousness Framework - AI Sentiment Analysis Setup Guide - Page ',
@@ -5628,8 +5630,8 @@ const tools = [
       sv: 'vr-wisdom-council-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'digital')
     },
     pageFooter: {
       en: 'Consciousness Framework - VR Wisdom Council Framework - Page ',
@@ -5644,8 +5646,8 @@ const tools = [
       sv: 'ai-bias-audit-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'digital')
     },
     pageFooter: {
       en: 'Consciousness Framework - AI Bias Audit Framework - Page ',
@@ -5660,8 +5662,8 @@ const tools = [
       sv: 'cybersecurity-framework-governance-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'digital'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'digital')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'digital'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'digital')
     },
     pageFooter: {
       en: 'Consciousness Framework - Cybersecurity Framework for Governance - Page ',
@@ -5678,8 +5680,8 @@ const tools = [
       sv: 'conscious-budget-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'metrics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'metrics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'metrics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'metrics')
     },
     pageFooter: {
       en: 'Consciousness Framework - Conscious Budget Template - Page ',
@@ -5694,8 +5696,8 @@ const tools = [
       sv: 'vmeme-transition-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'metrics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'metrics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'metrics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'metrics')
     },
     pageFooter: {
       en: 'Consciousness Framework - vMeme Transition Toolkit - Page ',
@@ -5710,8 +5712,8 @@ const tools = [
       sv: 'leader-consciousness-index-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'metrics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'metrics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'metrics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'metrics')
     },
     pageFooter: {
       en: 'Consciousness Framework - Leader Consciousness Index Guide - Page ',
@@ -5726,8 +5728,8 @@ const tools = [
       sv: 'intergenerational-justice-metrics-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'metrics'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'metrics')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'metrics'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'metrics')
     },
     pageFooter: {
       en: 'Consciousness Framework - Intergenerational Justice Metrics Framework - Page ',
@@ -5744,8 +5746,8 @@ const tools = [
       sv: 'conscious-governance-pilot-guides-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'pilots'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'pilots')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'pilots'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'pilots')
     },
     pageFooter: {
       en: 'Consciousness Framework - Conscious Governance Pilot Guides - Page ',
@@ -5762,8 +5764,8 @@ const tools = [
       sv: 'crisis-wisdom-team-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'crisis'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'crisis')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'crisis')
     },
     pageFooter: {
       en: 'Consciousness Framework - Crisis Wisdom Team Protocols - Page ',
@@ -5778,8 +5780,8 @@ const tools = [
       sv: 'ethical-decision-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'crisis'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'crisis')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'crisis')
     },
     pageFooter: {
       en: 'Consciousness Framework - Ethical Decision Template - Page ',
@@ -5796,8 +5798,8 @@ const tools = [
       sv: 'Consciousness-Inner-Development-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -5838,8 +5840,8 @@ const tools = [
       sv: 'youth-governance-comic-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness')
     },
     pageFooter: {
       en: 'Youth Leadership - Comic - Page ',
@@ -5854,8 +5856,8 @@ const tools = [
       sv: 'youth-community-action-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'youth'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'youth')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'youth'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'youth')
     },
     pageFooter: {
       en: 'Youth Leadership - Youth Community Action Guide - Page ',
@@ -5870,8 +5872,8 @@ const tools = [
       sv: 'youth-dialogue-circle-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'youth'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'youth')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'youth'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'youth')
     },
     pageFooter: {
       en: 'Youth Leadership - Youth Dialogue Circle Guide - Page ',
@@ -5886,8 +5888,8 @@ const tools = [
       sv: 'youth-mindfulness-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'consciousness', 'youth'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'consciousness', 'youth')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'consciousness', 'youth'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'consciousness', 'youth')
     },
     pageFooter: {
       en: 'Youth Leadership - Mindfulness for Young Leaders - Page ',
@@ -5905,8 +5907,8 @@ const tools = [
       sv: 'executive-summary-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging')
     },
     pageFooter: {
       en: 'Aging Population Support Framework - Executive Summary - Page ',
@@ -5922,8 +5924,8 @@ const tools = [
       sv: 'aging-framework-essentials-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging')
     },
     pageFooter: {
       en: 'Aging Population Support Framework - Essentials Guide - Page ',
@@ -5940,8 +5942,8 @@ const tools = [
       sv: 'elder-readiness-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'core')
     },
     pageFooter: {
       en: 'Elder Community Readiness Assessment - Page ',
@@ -5957,8 +5959,8 @@ const tools = [
       sv: 'aubi-pilot-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'core')
     },
     pageFooter: {
       en: 'AUBI Pilot Design Template - Page ',
@@ -5974,8 +5976,8 @@ const tools = [
       sv: 'elder-political-organizing-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'core')
     },
     pageFooter: {
       en: 'Elder Political Organizing Toolkit - Page ',
@@ -5991,8 +5993,8 @@ const tools = [
       sv: 'technology-governance-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'core')
     },
     pageFooter: {
       en: 'Technology Governance Charter Template - Page ',
@@ -6008,8 +6010,8 @@ const tools = [
       sv: 'elder-wellbeing-index-calculator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'core')
     },
     pageFooter: {
       en: 'Elder Wellbeing Index Calculator - Page ',
@@ -6025,8 +6027,8 @@ const tools = [
       sv: 'climate-wisdom-documentation-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'core')
     },
     pageFooter: {
       en: 'Climate Wisdom Documentation Kit - Page ',
@@ -6043,8 +6045,8 @@ const tools = [
       sv: 'ageism-interruption-training-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'advocacy')
     },
     pageFooter: {
       en: 'Ageism Interruption Training Guide - Page ',
@@ -6060,8 +6062,8 @@ const tools = [
       sv: 'aging-rights-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'advocacy')
     },
     pageFooter: {
       en: 'Rights of Aging Beings Charter Template - Page ',
@@ -6077,8 +6079,8 @@ const tools = [
       sv: 'elder-economic-zone-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'advocacy')
     },
     pageFooter: {
       en: 'Elder Economic Zone Planning Toolkit - Page ',
@@ -6094,8 +6096,8 @@ const tools = [
       sv: 'aubi-economic-modeling-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'advocacy')
     },
     pageFooter: {
       en: 'AUBI Economic Modeling Tool - Page ',
@@ -6112,8 +6114,8 @@ const tools = [
       sv: 'mutual-care-network-setup-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'agency-and-innovation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'agency-and-innovation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'agency-and-innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'agency-and-innovation')
     },
     pageFooter: {
       en: 'Mutual Care Network Setup Guide - Page ',
@@ -6129,8 +6131,8 @@ const tools = [
       sv: 'elder-innovation-hub-playbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'agency-and-innovation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'agency-and-innovation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'agency-and-innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'agency-and-innovation')
     },
     pageFooter: {
       en: 'Elder Innovation Hub Playbook - Page ',
@@ -6146,8 +6148,8 @@ const tools = [
       sv: 'intergenerational-program-templates-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging', 'agency-and-innovation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging', 'agency-and-innovation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging', 'agency-and-innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging', 'agency-and-innovation')
     },
     pageFooter: {
       en: 'Intergenerational Program Templates - Page ',
@@ -6164,8 +6166,8 @@ const tools = [
       sv: 'Aging-Population-Support-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'aging'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'aging')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'aging'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'aging')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -6204,10 +6206,10 @@ const tools = [
       fr: 'global-guardian-framework-essentials-fr'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare'),
-      es: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'es', 'implementation', 'animal-welfare'),
-      fr: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'fr', 'implementation', 'animal-welfare')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare'),
+      es: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'es', 'implementation', 'animal-welfare'),
+      fr: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'fr', 'implementation', 'animal-welfare')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Global Guardian Framework Essentials - Page ',
@@ -6224,8 +6226,8 @@ const tools = [
       sv: 'executive-summary-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Executive Summary - Page ',
@@ -6242,8 +6244,8 @@ const tools = [
       sv: 'community-welfare-readiness-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'core')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Community Welfare Readiness Assessment - Page ',
@@ -6259,8 +6261,8 @@ const tools = [
       sv: 'cultural-adaptation-protocol-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'core')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Cultural Adaptation Protocol Guide - Page ',
@@ -6276,8 +6278,8 @@ const tools = [
       sv: 'indigenous-rights-integration-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'core')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Indigenous Rights Integration Kit - Page ',
@@ -6293,8 +6295,8 @@ const tools = [
       sv: 'sentience-assessment-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'core')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Sentience Assessment Framework - Page ',
@@ -6310,8 +6312,8 @@ const tools = [
       sv: 'welfare-compliance-audit-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'core')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Welfare Compliance Audit Tool - Page ',
@@ -6327,8 +6329,8 @@ const tools = [
       sv: 'welfare-transition-planning-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'core')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Welfare Transition Planning Template - Page ',
@@ -6345,8 +6347,8 @@ const tools = [
       sv: 'anti-speciesism-training-materials-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'advocacy')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Anti-Speciesism Training Materials - Page ',
@@ -6362,8 +6364,8 @@ const tools = [
       sv: 'economic-impact-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'advocacy')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Economic Impact Assessment - Page ',
@@ -6379,8 +6381,8 @@ const tools = [
       sv: 'guardian-rights-charter-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'advocacy')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Guardian Rights Charter Template - Page ',
@@ -6396,8 +6398,8 @@ const tools = [
       sv: 'stakeholder-engagement-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'advocacy')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Stakeholder Engagement Framework - Page ',
@@ -6413,8 +6415,8 @@ const tools = [
       sv: 'welfare-policy-development-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'advocacy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'advocacy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'advocacy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'advocacy')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Welfare Policy Development Guide - Page ',
@@ -6431,8 +6433,8 @@ const tools = [
       sv: 'community-progress-tracking-templates-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'evaluation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'evaluation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'evaluation')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Community Progress Tracking Templates - Page ',
@@ -6448,8 +6450,8 @@ const tools = [
       sv: 'transparency-dashboard-setup-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'evaluation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'evaluation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'evaluation')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Transparency Dashboard Setup Guide - Page ',
@@ -6465,8 +6467,8 @@ const tools = [
       sv: 'welfare-impact-measurement-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'evaluation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'evaluation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'evaluation')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Welfare Impact Measurement Framework - Page ',
@@ -6483,8 +6485,8 @@ const tools = [
       sv: 'alternative-protein-development-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'innovation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'innovation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'innovation')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Alternative Protein Development Guide - Page ',
@@ -6500,8 +6502,8 @@ const tools = [
       sv: 'blockchain-certification-setup-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'innovation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'innovation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'innovation')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Blockchain Certification Setup Guide - Page ',
@@ -6517,8 +6519,8 @@ const tools = [
       sv: 'citizen-science-monitoring-app-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'innovation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'innovation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'innovation')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Citizen Science Monitoring App - Page ',
@@ -6534,8 +6536,8 @@ const tools = [
       sv: 'welfare-technology-assessment-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'innovation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'innovation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'innovation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'innovation')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Welfare Technology Assessment Kit - Page ',
@@ -6552,8 +6554,8 @@ const tools = [
       sv: 'animal-welfare-carbon-credits-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'transition'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'transition')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'transition'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'transition')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Animal Welfare Carbon Credits Guide - Page ',
@@ -6569,8 +6571,8 @@ const tools = [
       sv: 'cooperative-development-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'transition'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'transition')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'transition'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'transition')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Cooperative Development Toolkit - Page ',
@@ -6586,8 +6588,8 @@ const tools = [
       sv: 'innovation-challenge-fund-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'transition'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'transition')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'transition'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'transition')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Innovation Challenge Fund Kit - Page ',
@@ -6603,8 +6605,8 @@ const tools = [
       sv: 'just-transition-planning-workbook-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare', 'transition'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare', 'transition')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare', 'transition'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare', 'transition')
     },
     pageFooter: {
       en: 'Animal Welfare Framework - Just Transition Planning Workbook - Page ',
@@ -6621,8 +6623,8 @@ const tools = [
       sv: 'Animal-Welfare-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'animal-welfare'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'animal-welfare')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'animal-welfare'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'animal-welfare')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -6656,8 +6658,8 @@ const tools = [
       sv: 'executive-summary-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Executive Summary - Page ',
@@ -6673,8 +6675,8 @@ const tools = [
       sv: 'quick-implementation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Quick Implementation Guide - Page ',
@@ -6690,8 +6692,8 @@ const tools = [
       sv: 'youth-leadership-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Youth Leadership Guide - Page ',
@@ -6708,8 +6710,8 @@ const tools = [
       sv: 'community-water-assembly-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'core')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Community Water Assembly Guide - Page ',
@@ -6725,8 +6727,8 @@ const tools = [
       sv: 'power-analysis-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'core')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Power Analysis Toolkit - Page ',
@@ -6742,8 +6744,8 @@ const tools = [
       sv: 'wash-constitutional-amendment-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'core')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Constitutional Amendment Toolkit - Page ',
@@ -6759,8 +6761,8 @@ const tools = [
       sv: 'water-rights-legal-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'core')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Water Rights Legal Template - Page ',
@@ -6777,8 +6779,8 @@ const tools = [
       sv: 'carbon-water-credit-calculator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'financial'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'financial')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'financial'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'financial')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Carbon-Water Credit Calculator - Page ',
@@ -6794,8 +6796,8 @@ const tools = [
       sv: 'circular-finance-planning-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'financial'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'financial')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'financial'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'financial')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Circular Finance Planning Tool - Page ',
@@ -6811,8 +6813,8 @@ const tools = [
       sv: 'community-equity-model-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'financial'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'financial')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'financial'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'financial')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Community Equity Model Template - Page ',
@@ -6828,8 +6830,8 @@ const tools = [
       sv: 'wash-sovereign-wealth-fund-model-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'financial'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'financial')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'financial'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'financial')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - WASH Sovereign Wealth Fund Model - Page ',
@@ -6846,8 +6848,8 @@ const tools = [
       sv: 'community-monitoring-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'monitoring'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'monitoring')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'monitoring')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Community Monitoring Toolkit - Page ',
@@ -6863,8 +6865,8 @@ const tools = [
       sv: 'hydrological-justice-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'monitoring'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'monitoring')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'monitoring')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Hydrological Justice Assessment - Page ',
@@ -6880,8 +6882,8 @@ const tools = [
       sv: 'performance-dashboard-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'monitoring'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'monitoring')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'monitoring'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'monitoring')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Performance Dashboard Template - Page ',
@@ -6898,8 +6900,8 @@ const tools = [
       sv: 'ai-bias-audit-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'technology')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - AI Bias Audit Framework - Page ',
@@ -6915,8 +6917,8 @@ const tools = [
       sv: 'microgrid-planning-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'technology')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Microgrid Planning Toolkit - Page ',
@@ -6932,8 +6934,8 @@ const tools = [
       sv: 'open-source-wash-tech-library-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'technology')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Open Source WASH Tech Library - Page ',
@@ -6949,8 +6951,8 @@ const tools = [
       sv: 'traditional-knowledge-protection-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'technology')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Traditional Knowledge Protection - Page ',
@@ -6967,8 +6969,8 @@ const tools = [
       sv: 'climate-adaptation-planning-tool-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'crisis'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'crisis')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'crisis')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Climate Adaptation Planning Tool - Page ',
@@ -6984,8 +6986,8 @@ const tools = [
       sv: 'conflict-sensitive-wash-guidelines-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'crisis'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'crisis')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'crisis')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Conflict-Sensitive WASH Guidelines - Page ',
@@ -7001,8 +7003,8 @@ const tools = [
       sv: 'emergency-wash-response-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water', 'crisis'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water', 'crisis')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water', 'crisis'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water', 'crisis')
     },
     pageFooter: {
       en: 'Water & Sanitation Framework - Emergency WASH Response Protocols - Page ',
@@ -7019,8 +7021,8 @@ const tools = [
       sv: 'Water-&-Sanitation-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'water'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'water')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'water'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'water')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -7065,10 +7067,10 @@ const tools = [
       es: 'indigenous-framework-essentials-es'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous'),
-      fr: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'fr', 'implementation', 'indigenous'),
-      es: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'es', 'implementation', 'indigenous')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous'),
+      fr: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'fr', 'implementation', 'indigenous'),
+      es: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'es', 'implementation', 'indigenous')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Framework Essentials - Page ',
@@ -7088,8 +7090,8 @@ const tools = [
       sv: 'baz-readiness-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'core')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - BAZ Readiness Assessment - Page ',
@@ -7105,8 +7107,8 @@ const tools = [
       sv: 'earth-council-formation-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'core')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Earth Council Formation Guide - Page ',
@@ -7122,8 +7124,8 @@ const tools = [
       sv: 'indigenous-data-sovereignty-framework-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'core')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Data Sovereignty Framework - Page ',
@@ -7139,8 +7141,8 @@ const tools = [
       sv: 'municipal-indigenous-agreement-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'core')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Municipal-Indigenous Agreement - Page ',
@@ -7156,8 +7158,8 @@ const tools = [
       sv: 'tek-documentation-kit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'core'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'core')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'core'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'core')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - TEK Documentation Kit - Page ',
@@ -7174,8 +7176,8 @@ const tools = [
       sv: 'ceremonial-governance-integration-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Ceremonial Governance Integration - Page ',
@@ -7191,8 +7193,8 @@ const tools = [
       sv: 'cultural-integrity-replication-protocol-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Cultural Integrity Protocol - Page ',
@@ -7208,8 +7210,8 @@ const tools = [
       sv: 'indigenous-leadership-development-program-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Leadership Development Program - Page ',
@@ -7225,8 +7227,8 @@ const tools = [
       sv: 'storytelling-media-strategy-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'cultural-and-leadership'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'cultural-and-leadership')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Storytelling & Media Strategy - Page ',
@@ -7243,8 +7245,8 @@ const tools = [
       sv: 'gph-index-calculator-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - GPH Index Calculator - Page ',
@@ -7260,8 +7262,8 @@ const tools = [
       sv: 'land-rematriation-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Land Rematriation Template - Page ',
@@ -7277,8 +7279,8 @@ const tools = [
       sv: 'legal-strategy-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Legal Strategy Guide - Page ',
@@ -7294,8 +7296,8 @@ const tools = [
       sv: 'reparations-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'economic-and-legal'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'economic-and-legal')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Reparations Toolkit - Page ',
@@ -7312,8 +7314,8 @@ const tools = [
       sv: 'ai-governance-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'technology')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - AI Governance Protocols - Page ',
@@ -7329,8 +7331,8 @@ const tools = [
       sv: 'cybersecurity-quantum-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous', 'technology'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous', 'technology')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous', 'technology'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous', 'technology')
     },
     pageFooter: {
       en: 'Indigenous & Traditional Knowledge Framework - Cybersecurity & Quantum Guide - Page ',
@@ -7347,8 +7349,8 @@ const tools = [
       sv: 'Indigenous-&-Traditional-Knowledge-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'indigenous'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'indigenous')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'indigenous'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'indigenous')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -7387,10 +7389,10 @@ const tools = [
       fr: 'mental-health-framework-essentials-fr',
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health'),
-      es: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'es', 'implementation', 'mental-health'),
-      fr: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'fr', 'implementation', 'mental-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health'),
+      es: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'es', 'implementation', 'mental-health'),
+      fr: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'fr', 'implementation', 'mental-health')
     },
     pageFooter: {
       en: 'Mental Health Framework - Guide - Page ',
@@ -7408,8 +7410,8 @@ const tools = [
       sv: 'executive-summary-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health')
     },
     pageFooter: {
       en: 'Mental Health Framework - Executive Summary - Page ',
@@ -7426,8 +7428,8 @@ const tools = [
       sv: 'path-to-compliance-checklist-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'quick-start')
     },
     pageFooter: {
       en: 'Mental Health Framework - Quick Start Tool - Page ',
@@ -7443,8 +7445,8 @@ const tools = [
       sv: 'community-task-force-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'quick-start')
     },
     pageFooter: {
       en: 'Mental Health Framework - Community Guide - Page ',
@@ -7460,8 +7462,8 @@ const tools = [
       sv: 'cultural-adaptation-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'quick-start')
     },
     pageFooter: {
       en: 'Mental Health Framework - Cultural Toolkit - Page ',
@@ -7477,8 +7479,8 @@ const tools = [
       sv: 'watchdog-implementation-manual-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'quick-start')
     },
     pageFooter: {
       en: 'Mental Health Framework - Watchdog Manual - Page ',
@@ -7494,8 +7496,8 @@ const tools = [
       sv: 'traffic-light-assessment-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'quick-start'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'quick-start')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'quick-start'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'quick-start')
     },
     pageFooter: {
       en: 'Mental Health Framework - Assessment Tool - Page ',
@@ -7512,8 +7514,8 @@ const tools = [
       sv: 'national-commission-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
     },
     pageFooter: {
       en: 'Mental Health Framework - Governance Guide - Page ',
@@ -7529,8 +7531,8 @@ const tools = [
       sv: 'rights-based-legislation-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
     },
     pageFooter: {
       en: 'Mental Health Framework - Legal Template - Page ',
@@ -7546,8 +7548,8 @@ const tools = [
       sv: 'international-treaty-roadmap-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
     },
     pageFooter: {
       en: 'Mental Health Framework - Treaty Guide - Page ',
@@ -7563,8 +7565,8 @@ const tools = [
       sv: 'youth-parliament-charter-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'governance-and-policy'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'governance-and-policy')
     },
     pageFooter: {
       en: 'Mental Health Framework - Youth Charter - Page ',
@@ -7581,8 +7583,8 @@ const tools = [
       sv: 'spiritual-crisis-decision-trees-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
     },
     pageFooter: {
       en: 'Mental Health Framework - Clinical Tool - Page ',
@@ -7598,8 +7600,8 @@ const tools = [
       sv: 'consciousness-development-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
     },
     pageFooter: {
       en: 'Mental Health Framework - Consciousness Guide - Page ',
@@ -7615,8 +7617,8 @@ const tools = [
       sv: 'consciousness-healing-protocols-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
     },
     pageFooter: {
       en: 'Mental Health Framework - Healing Protocols - Page ',
@@ -7632,8 +7634,8 @@ const tools = [
       sv: 'traditional-healing-integration-guidelines-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
     },
     pageFooter: {
       en: 'Mental Health Framework - Traditional Healing Guide - Page ',
@@ -7649,8 +7651,8 @@ const tools = [
       sv: 'psychedelic-therapy-lab-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'clinical-and-service'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'clinical-and-service')
     },
     pageFooter: {
       en: 'Mental Health Framework - Therapy Lab Guide - Page ',
@@ -7667,8 +7669,8 @@ const tools = [
       sv: 'commons-fund-blueprint-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'financing-and-economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'financing-and-economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'financing-and-economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'financing-and-economic')
     },
     pageFooter: {
       en: 'Mental Health Framework - Fund Blueprint - Page ',
@@ -7684,8 +7686,8 @@ const tools = [
       sv: 'right-to-rest-policy-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'financing-and-economic'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'financing-and-economic')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'financing-and-economic'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'financing-and-economic')
     },
     pageFooter: {
       en: 'Mental Health Framework - Policy Guide - Page ',
@@ -7702,8 +7704,8 @@ const tools = [
       sv: 'flourishing-metrics-dashboard-spec-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
     },
     pageFooter: {
       en: 'Mental Health Framework - Dashboard Spec - Page ',
@@ -7719,8 +7721,8 @@ const tools = [
       sv: 'community-monitoring-toolkit-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
     },
     pageFooter: {
       en: 'Mental Health Framework - Monitoring Toolkit - Page ',
@@ -7736,8 +7738,8 @@ const tools = [
       sv: 'narrative-equity-review-guide-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
     },
     pageFooter: {
       en: 'Mental Health Framework - Review Guide - Page ',
@@ -7753,8 +7755,8 @@ const tools = [
       sv: 'transparency-dashboard-template-sv'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health', 'monitoring-and-evaluation'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health', 'monitoring-and-evaluation')
     },
     pageFooter: {
       en: 'Mental Health Framework - Dashboard Template - Page ',
@@ -7771,8 +7773,8 @@ const tools = [
       sv: 'Mental-Health-Framework'
     },
     sourceDir: {
-      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'en', 'implementation', 'mental-health'),
-      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'framework', 'sv', 'implementation', 'mental-health')
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'mental-health'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'mental-health')
     },
     outputDir: {
       en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
@@ -7801,6 +7803,89 @@ const tools = [
       '14-change-management',
       '15-conclusion',
     ]
+  },
+
+  // Treaty for Our Only Home
+  {
+    name: 'executive-summary-for-the-skeptic',
+    category: 'treaty-for-our-only-home',
+    fileNames: {
+      en: 'executive-summary-for-the-skeptic-en',
+      sv: 'executive-summary-for-the-skeptic-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'treaty-for-our-only-home'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'treaty-for-our-only-home')
+    },
+    pageFooter: {
+      en: 'Treaty for Our Only Home - Executive Summary for the Skeptic - Page ',
+      sv: 'Fördraget för vårt enda hem - Sammanfattning för skeptikern - Sida '
+    }
+  },
+  {
+    name: 'treaty-framework-essentials',
+    category: 'treaty-for-our-only-home',
+    fileNames: {
+      en: 'treaty-framework-essentials-en',
+      sv: 'treaty-framework-essentials-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'treaty-for-our-only-home'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'treaty-for-our-only-home')
+    },
+    pageFooter: {
+      en: 'Treaty for Our Only Home - Framework Essentials - Page ',
+      sv: 'Fördraget för vårt enda hem - Ramverket i korthet - Sida '
+    }
+  },
+  {
+    name: 'treaty-at-a-glance-reference-card',
+    category: 'treaty-for-our-only-home',
+    fileNames: {
+      en: 'treaty-at-a-glance-reference-card-en',
+      sv: 'treaty-at-a-glance-reference-card-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'treaty-for-our-only-home', 'tools'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'treaty-for-our-only-home', 'tools')
+    },
+    pageFooter: {
+      en: 'Treaty for Our Only Home - Treaty at a Glance Reference Card - Page ',
+      sv: 'Fördraget för vårt enda hem - Referenskort för fördraget i korthet - Sida '
+    }
+  },
+  {
+    name: 'treaty-for-our-only-home',
+    category: 'treaty-for-our-only-home',
+    fileNames: {
+      en: 'Treaty-for-Our-Only-Home',
+      sv: 'Treaty-for-Our-Only-Home'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en', 'implementation', 'treaty-for-our-only-home'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv', 'implementation', 'treaty-for-our-only-home')
+    },
+    outputDir: {
+      en: path.join(__dirname, '..', 'static', 'downloads', 'en'),
+      sv: path.join(__dirname, '..', 'static', 'downloads', 'sv')
+    },
+    pageFooter: {
+      en: 'Treaty for Our Only Home - Global Institutional Reform Framework - Page ',
+      sv: 'Fördraget för vårt enda hem - Globalt institutionellt reform-ramverk Sida '
+    },
+    // Special config for full framework
+    sections: [
+      'index',
+      'executive-summary-for-the-skeptic',
+      '01-introduction',
+      '02-core-principles',
+      '03-five-pillars',
+      '04-implementation-strategies',
+      '05-monitoring-evaluation',
+      '06-conclusion',
+      '07-faq-and-challenges',
+      '08-glossary'
+    ]
   }
 
 ];
@@ -7808,169 +7893,184 @@ const tools = [
 // CSS styling for the PDF
 const css = `
   body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Times New Roman', 'Liberation Serif', serif;
+    font-size: 11pt;
+    line-height: 1.15;
     color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: none;
+    margin: 0;
+    padding: 0.5cm;
   }
   h1, h2, h3, h4, h5, h6 {
     color: #2B4B8C;
-    margin-top: 1.5em;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+    line-height: 1.2;
   }
   h1 {
-    font-size: 2.2em;
+    font-size: 14pt;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.6em;
+    margin-top: 0.4em;
   }
   h2 {
-    font-size: 1.8em;
+    font-size: 13pt;
     border-bottom: 1px solid #eaecef;
-    padding-bottom: 0.3em;
+    padding-bottom: 0.2em;
   }
   h3 {
-    font-size: 1.5em;
+    font-size: 12pt;
   }
   h4 {
-    font-size: 1.3em;
+    font-size: 11pt;
+    font-weight: bold;
+  }
+  p {
+    margin: 0.3em 0;
+    text-align: justify;
   }
   a {
     color: #2B4B8C;
     text-decoration: none;
   }
   blockquote {
-    border-left: 4px solid #6B5CA5;
-    padding-left: 15px;
-    margin-left: 0;
+    border-left: 3px solid #6B5CA5;
+    padding-left: 10px;
+    margin: 0.5em 0 0.5em 5px;
     color: #555;
     font-style: italic;
   }
   code {
     background-color: #f6f8fa;
-    padding: 0.2em 0.4em;
-    border-radius: 3px;
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 10pt;
   }
   pre code {
     display: block;
-    padding: 1em;
+    padding: 0.5em;
     overflow-x: auto;
+    font-size: 10pt;
   }
   table {
     border-collapse: collapse;
     width: 100%;
-    margin: 1em 0;
+    margin: 0.5em 0;
+    font-size: 10pt;
   }
   table, th, td {
     border: 1px solid #ddd;
   }
   th, td {
-    padding: 10px;
+    padding: 6px 8px;
     text-align: left;
   }
   th {
     background-color: #2B4B8C;
     color: white;
+    font-size: 10pt;
   }
   tr:nth-child(even) {
     background-color: #f9f9f9;
-  }
-  tr:nth-child(odd) {
-    background-color: #ffffff;
   }
   hr {
     border: 0;
     height: 1px;
     background: #eaecef;
-    margin: 2em 0;
+    margin: 1em 0;
   }
   .emoji {
-    height: 1.2em;
+    height: 1em;
     width: auto;
     vertical-align: middle;
-    margin: 0 0.05em;
+    margin: 0 0.02em;
   }
   ul, ol {
-    padding-left: 2em;
+    padding-left: 1.2em;
+    margin: 0.3em 0;
   }
   li {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
   }
   img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 1em auto;
+    margin: 0.5em auto;
   }
-  .svg-container {
-    text-align: center;
-    margin: 2em 0;
-  }
-  .svg-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em auto;
-  }
-  .svg-container svg {
-    max-width: 700px;
-    height: auto;
-    margin: 0 auto;
-  }
-
- /* Enhanced image styling */
+  
+  /* Compact image styling */
   .image-container {
     text-align: center;
-    margin: 2em 0;
+    margin: 0.8em 0;
     page-break-inside: avoid;
   }
   
   .image-container img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   }
   
   .svg-container {
     text-align: center;
-    margin: 2em 0;
+    margin: 0.8em 0;
     page-break-inside: avoid;
   }
   
   .svg-container img {
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
     display: block;
     margin: 0 auto;
   }
   
-  /* Comic-specific styling */
-  .comic-panel {
-    margin: 1.5em 0;
-    text-align: center;
-    page-break-inside: avoid;
+  /* Executive summary specific styling */
+  .executive-summary {
+    font-size: 11pt;
+    line-height: 1.1;
   }
   
-  .comic-panel img {
-    max-width: 90%;
-    height: auto;
-    border: 2px solid #2B4B8C;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  .executive-summary h1 {
+    font-size: 16pt;
+    margin-bottom: 0.3em;
+  }
+  
+  .executive-summary h2 {
+    font-size: 13pt;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+  }
+  
+  .executive-summary p {
+    margin: 0.2em 0;
+  }
+  
+  .executive-summary ul, .executive-summary ol {
+    margin: 0.2em 0;
   }
   
   /* QR Code specific styling */
   img[alt*="QR"], img[src*="qr-code"] {
-    max-width: 200px !important;
+    max-width: 150px !important;
     height: auto;
-    margin: 1em auto;
+    margin: 0.5em auto;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 8px;
     background: white;
+  }
+  
+  /* Page break control */
+  .page-break-before {
+    page-break-before: always;
+  }
+  
+  .page-break-avoid {
+    page-break-inside: avoid;
   }
 `;
 
@@ -8130,6 +8230,33 @@ function getMimeType(ext) {
   return mimeTypes[ext.toLowerCase()] || 'image/png';
 }
 
+// Function to detect and apply executive summary formatting
+function applyExecutiveSummaryFormatting(html, toolName) {
+  if (toolName.toLowerCase().includes('executive') || 
+      toolName.toLowerCase().includes('summary') || 
+      toolName.toLowerCase().includes('skeptic')) {
+    
+    // Wrap in executive summary class and apply more compact formatting
+    return html.replace('<body>', '<body class="executive-summary">');
+  }
+  return html;
+}
+
+// Function to apply compact formatting for long documents
+function applyCompactFormatting(markdown) {
+  const wordCount = markdown.split(/\s+/).length;
+  
+  if (wordCount > 800) { // If document is long, apply more compact formatting
+    return markdown
+      .replace(/\n\n\n+/g, '\n\n') // Remove excessive line breaks
+      .replace(/^#{1}\s+(.+)$/gm, '# $1') // Ensure single space after headers
+      .replace(/^#{2}\s+(.+)$/gm, '## $1')
+      .replace(/^#{3}\s+(.+)$/gm, '### $1');
+  }
+  
+  return markdown;
+}
+
 // Process each tool in each language
 async function generatePDFs() {
   const browser = await puppeteer.launch({
@@ -8245,6 +8372,10 @@ async function generatePDFs() {
         console.log(`Output file: ${outputFile}`);
         
         try {
+
+          // Apply compact formatting if needed
+          markdown = applyCompactFormatting(markdown);
+
           // Robust frontmatter removal that handles various formats
           markdown = markdown.replace(/^(---|\+\+\+)\s*\n([\s\S]*?)\n\s*(---|\+\+\+)\s*/m, '');
 
@@ -8279,7 +8410,7 @@ async function generatePDFs() {
           const html = marked(markdown, { renderer });
           
           // Create a full HTML document
-          const fullHtml = `
+          let fullHtml = `
           <!DOCTYPE html>
           <html lang="${lang}">
           <head>
@@ -8292,6 +8423,9 @@ async function generatePDFs() {
           </body>
           </html>
           `;
+
+          // Apply executive summary formatting if needed
+          fullHtml = applyExecutiveSummaryFormatting(fullHtml, tool.name);
           
           // Save temporary HTML file (optional, for debugging)
           const tempHtmlFile = path.join(__dirname, `temp-${tool.name}-${lang}.html`);
@@ -8315,19 +8449,21 @@ async function generatePDFs() {
             path: outputFile,
             format: 'A4',
             margin: {
-              top: '1cm',
-              right: '1cm',
-              bottom: '1cm',
-              left: '1cm'
+              top: '1.5cm',    // Reduced from 1cm
+              right: '1.5cm',  // Reduced from 1cm  
+              bottom: '1.5cm', // Reduced from 1cm
+              left: '1.5cm'    // Reduced from 1cm
             },
             printBackground: true,
             displayHeaderFooter: true,
             headerTemplate: '<div></div>',
             footerTemplate: `
-              <div style="width: 100%; font-size: 8px; padding: 0 1cm; color: #777; text-align: center;">
+              <div style="width: 100%; font-size: 7px; padding: 0 1.5cm; color: #777; text-align: center;">
                 <span>${tool.pageFooter[lang]}<span class="pageNumber"></span> / <span class="totalPages"></span></span>
               </div>
-            `
+            `,
+            preferCSSPageSize: false,
+            scale: 0.95  // Slightly reduce scale to fit more content
           });
           
           // Close the page

@@ -155,5 +155,5 @@ Kosmisk etik utvidgar våra styrprinciper till att omfatta även rymden och ser 
 
 Dessa principer är inte abstrakta ideal utan praktiska riktlinjer för styrningsdesign. De fungerar som ett integrerat system – transparens möjliggör deltagande, decentralisering skyddar kulturell autonomi, och resursrättvisa stöder mänskliga rättigheter.
 
-För att lära dig hur du kan tillämpa dessa principer i praktiken, se avsnittet [Implementeringsriktlinjer](/framework/docs/implementation) i ramverket.
+För att lära dig hur du kan tillämpa dessa principer i praktiken, se avsnittet [Implementeringsriktlinjer](/frameworks/docs/implementation) i ramverket.
 

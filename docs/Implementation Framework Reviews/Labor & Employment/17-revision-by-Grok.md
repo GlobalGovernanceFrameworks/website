@@ -313,7 +313,7 @@ This framework creates **Work With Purpose** through **Care Bonus Pay**<sup>1</s
 
 ## 16. Global Framework
 - **Description**: Multi-format framework, global SDI 8/12, sustainability-aligned, budget-friendly.  
-- **Availability**: SVG at `workinliberation.org/framework` (Q3 2028).
+- **Availability**: SVG at `workinliberation.org/frameworks` (Q3 2028).
 
 ## 17. Appendix A: Pilot Framework Outline
 | **Tool** | **Region** | **Budget** | **Framework** | **Tech** |

@@ -81,13 +81,13 @@ async function loadTranslations(newLocale, route = '/') {
       } catch (e) {
         console.error('Error loading contact translations:', e);
       }
-    } else if (route.startsWith('/framework')) {
+    } else if (route.startsWith('/frameworks')) {
       // Framework page
       try {
         if (newLocale === 'en') {
-          translationData.framework = (await import('./en/framework.json')).default;
+          translationData.framework = (await import('./en/frameworks.json')).default;
         } else if (newLocale === 'sv') {
-          translationData.framework = (await import('./sv/framework.json')).default;
+          translationData.framework = (await import('./sv/frameworks.json')).default;
         }
       } catch (e) {
         console.error('Error loading framework translations:', e);

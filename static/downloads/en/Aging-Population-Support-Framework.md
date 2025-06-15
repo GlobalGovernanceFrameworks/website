@@ -30,60 +30,60 @@ The framework is a comprehensive plan to transform global aging support systems,
 ## <a id="framework-sections"></a>Framework Sections
 The framework is organized into 9 comprehensive sections, each a critical component of its transformative design. Explore them below:
 
-1. **[Economic Security Through AUBI](/framework/docs/implementation/aging#01-economic-security)**: Details Adaptive Universal Basic Income design, funding innovation, and transition management including elder-led political strategy.
+1. **[Economic Security Through AUBI](/frameworks/docs/implementation/aging#01-economic-security)**: Details Adaptive Universal Basic Income design, funding innovation, and transition management including elder-led political strategy.
 
-2. **[Right to Meaningful Occupation](/framework/docs/implementation/aging#02-meaningful-occupation)**: Outlines anti-ageism infrastructure, elder innovation ecosystems, technology governance, and care system revolution.
+2. **[Right to Meaningful Occupation](/frameworks/docs/implementation/aging#02-meaningful-occupation)**: Outlines anti-ageism infrastructure, elder innovation ecosystems, technology governance, and care system revolution.
 
-3. **[Healthcare & Climate Integration](/framework/docs/implementation/aging#03-healthcare-climate)**: Covers universal geriatric care, longevity innovation, evidence infrastructure, and climate wisdom keeper systems.
+3. **[Healthcare & Climate Integration](/frameworks/docs/implementation/aging#03-healthcare-climate)**: Covers universal geriatric care, longevity innovation, evidence infrastructure, and climate wisdom keeper systems.
 
-4. **[Social Inclusion & Connection](/framework/docs/implementation/aging#04-social-inclusion)**: Describes community integration, digital inclusion, cultural transformation, and intergenerational programs.
+4. **[Social Inclusion & Connection](/frameworks/docs/implementation/aging#04-social-inclusion)**: Describes community integration, digital inclusion, cultural transformation, and intergenerational programs.
 
-5. **[Nested Governance Systems](/framework/docs/implementation/aging#05-nested-governance)**: Details local elder-led implementation, regional networks, Global South integration, and global coordination mechanisms.
+5. **[Nested Governance Systems](/frameworks/docs/implementation/aging#05-nested-governance)**: Details local elder-led implementation, regional networks, Global South integration, and global coordination mechanisms.
 
-6. **[Legal & Ethical Safeguards](/framework/docs/implementation/aging#06-legal-ethical)**: Outlines protection systems, cultural sensitivity protocols, technology rights, and elder data sovereignty.
+6. **[Legal & Ethical Safeguards](/frameworks/docs/implementation/aging#06-legal-ethical)**: Outlines protection systems, cultural sensitivity protocols, technology rights, and elder data sovereignty.
 
-7. **[Implementation Roadmap](/framework/docs/implementation/aging#07-implementation-roadmap)**: Provides phased rollout strategy, political organizing tactics, investment requirements, and success metrics.
+7. **[Implementation Roadmap](/frameworks/docs/implementation/aging#07-implementation-roadmap)**: Provides phased rollout strategy, political organizing tactics, investment requirements, and success metrics.
 
-8. **[Monitoring & Adaptive Management](/framework/docs/implementation/aging#08-monitoring-adaptive)**: Details Elder Wellbeing Index, evidence infrastructure, longitudinal tracking, and elder co-design feedback loops.
+8. **[Monitoring & Adaptive Management](/frameworks/docs/implementation/aging#08-monitoring-adaptive)**: Details Elder Wellbeing Index, evidence infrastructure, longitudinal tracking, and elder co-design feedback loops.
 
-9. **[Call to Action & Elder Leadership](/framework/docs/implementation/aging#09-call-to-action)**: Immediate steps for elder-led initiatives, pilot leadership opportunities, and vision for regenerative aging economies.
+9. **[Call to Action & Elder Leadership](/frameworks/docs/implementation/aging#09-call-to-action)**: Immediate steps for elder-led initiatives, pilot leadership opportunities, and vision for regenerative aging economies.
 
 ## <a id="implementation-tools"></a>Implementation Tools
 To bridge theory and practice, the framework provides practical tools and templates for immediate use by elder-led organizations and stakeholders:
 
-- **[Elder Leadership Starter Kit](/framework/tools/aging/elder-leadership-kit-en.zip)**: A complete package for launching elder-led AUBI pilot projects and political organizing.
+- **[Elder Leadership Starter Kit](/frameworks/tools/aging/elder-leadership-kit-en.zip)**: A complete package for launching elder-led AUBI pilot projects and political organizing.
 
 - **Core Implementation Tools**:
-  - [Elder Community Readiness Assessment](/framework/tools/aging/elder-readiness-assessment-en.pdf)
-  - [AUBI Pilot Design Template](/framework/tools/aging/aubi-pilot-template-en.pdf)
-  - [Elder Political Organizing Toolkit](/framework/tools/aging/elder-political-organizing-toolkit-en.pdf)
-  - [Technology Governance Charter Template](/framework/tools/aging/technology-governance-charter-en.pdf)
-  - [Elder Wellbeing Index Calculator](/framework/tools/aging/elder-wellbeing-index-calculator-en.pdf)
-  - [Climate Wisdom Documentation Kit](/framework/tools/aging/climate-wisdom-documentation-kit-en.pdf)
+  - [Elder Community Readiness Assessment](/frameworks/tools/aging/elder-readiness-assessment-en.pdf)
+  - [AUBI Pilot Design Template](/frameworks/tools/aging/aubi-pilot-template-en.pdf)
+  - [Elder Political Organizing Toolkit](/frameworks/tools/aging/elder-political-organizing-toolkit-en.pdf)
+  - [Technology Governance Charter Template](/frameworks/tools/aging/technology-governance-charter-en.pdf)
+  - [Elder Wellbeing Index Calculator](/frameworks/tools/aging/elder-wellbeing-index-calculator-en.pdf)
+  - [Climate Wisdom Documentation Kit](/frameworks/tools/aging/climate-wisdom-documentation-kit-en.pdf)
 
 - **Advocacy & Scaling Tools**:
-  - [Ageism Interruption Training Guide](/framework/tools/aging/ageism-interruption-training-guide-en.pdf)
-  - [Rights of Aging Beings Charter Template](/framework/tools/aging/aging-rights-charter-en.pdf)
-  - [Elder Economic Zone Planning Toolkit](/framework/tools/aging/elder-economic-zone-toolkit-en.pdf)
-  - [AUBI Economic Modeling Tool](/framework/tools/aging/aubi-economic-modeling-tool-en.pdf)
+  - [Ageism Interruption Training Guide](/frameworks/tools/aging/ageism-interruption-training-guide-en.pdf)
+  - [Rights of Aging Beings Charter Template](/frameworks/tools/aging/aging-rights-charter-en.pdf)
+  - [Elder Economic Zone Planning Toolkit](/frameworks/tools/aging/elder-economic-zone-toolkit-en.pdf)
+  - [AUBI Economic Modeling Tool](/frameworks/tools/aging/aubi-economic-modeling-tool-en.pdf)
 
 - **Elder Agency & Innovation Tools**:
-  - [Mutual Care Network Setup Guide](/framework/tools/aging/mutual-care-network-setup-guide-en.pdf)
-  - [Elder Innovation Hub Playbook](/framework/tools/aging/elder-innovation-hub-playbook-en.pdf)
-  - [Intergenerational Program Templates](/framework/tools/aging/intergenerational-templates-en.pdf)
+  - [Mutual Care Network Setup Guide](/frameworks/tools/aging/mutual-care-network-setup-guide-en.pdf)
+  - [Elder Innovation Hub Playbook](/frameworks/tools/aging/elder-innovation-hub-playbook-en.pdf)
+  - [Intergenerational Program Templates](/frameworks/tools/aging/intergenerational-templates-en.pdf)
 
 - **Framework Guides**:
-  - [Aging Framework Essentials Guide](/framework/tools/aging/aging-framework-essentials-en.pdf) (English)
-  - [Åldranderamverk Grundläggande Guide](/framework/tools/aging/aging-framework-essentials-sv.pdf) (Swedish)
+  - [Aging Framework Essentials Guide](/frameworks/tools/aging/aging-framework-essentials-en.pdf) (English)
+  - [Åldranderamverk Grundläggande Guide](/frameworks/tools/aging/aging-framework-essentials-sv.pdf) (Swedish)
 
-All tools are available in PDF and editable markdown formats, with selected tools in multiple languages and elder-accessible formats (large print, audio versions). Access the complete [Tools Library](/framework/tools/aging) for all versions and formats.
+All tools are available in PDF and editable markdown formats, with selected tools in multiple languages and elder-accessible formats (large print, audio versions). Access the complete [Tools Library](/frameworks/tools/aging) for all versions and formats.
 
 ## <a id="access-and-usage"></a>Access and Usage
 The framework is accessible through the Global Governance Framework website, designed specifically for elder accessibility and easy adaptation. Stakeholders can:
 
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in large-print and audio formats.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links with elder-friendly navigation.
-- **Access Tools**: Browse all implementation tools in PDF, markdown, and elder-accessible formats at the [Tools Library](/framework/tools/aging).
+- **Access Tools**: Browse all implementation tools in PDF, markdown, and elder-accessible formats at the [Tools Library](/frameworks/tools/aging).
 - **Engage**: Share feedback through the contact portal, email [globalgovernanceframework@gmail.com], or join Elder Ambassador training programs.
 - **Organize**: Use political organizing toolkits to build Elder Political Coalitions and advocate for AUBI pilots.
 - **Implement**: Launch elder-led initiatives using the Elder Leadership Starter Kit and pilot templates.
@@ -305,7 +305,7 @@ The global aging population is not a tsunami to be weathered—it is a resource 
 
 ---
 
-**Next**: Explore how these principles translate into concrete [Core Principles](/framework/docs/implementation/aging#core-principles) that guide framework implementation.
+**Next**: Explore how these principles translate into concrete [Core Principles](/frameworks/docs/implementation/aging#core-principles) that guide framework implementation.
 
 # Economic Security Through Adaptive Universal Basic Income (AUBI)
 
@@ -700,14 +700,14 @@ In Kerala's pilot, elders lead climate adaptation planning using decades of envi
 
 Economic security through AUBI provides the foundation enabling all other framework components. With basic needs secured and contributions recognized, elders can pursue meaningful occupation, community leadership, and innovation without economic anxiety. AUBI creates the economic basis for elder agency while generating resources for continued community contribution.
 
-**Next**: Explore how economic security enables [Right to Meaningful Occupation and Elder Agency](/framework/docs/implementation/aging#02-meaningful-occupation) through anti-ageism infrastructure and innovation ecosystems.
+**Next**: Explore how economic security enables [Right to Meaningful Occupation and Elder Agency](/frameworks/docs/implementation/aging#02-meaningful-occupation) through anti-ageism infrastructure and innovation ecosystems.
 
 ---
 
 **Implementation Resources**:
-- [AUBI Pilot Design Template](/framework/tools/aging/aubi-pilot-template-en.pdf)
-- [Economic Modeling Tool](/framework/tools/aging/aubi-economic-model-en.pdf)
-- [Political Organizing Toolkit](/framework/tools/aging/political-organizing-toolkit-en.pdf)
+- [AUBI Pilot Design Template](/frameworks/tools/aging/aubi-pilot-template-en.pdf)
+- [Economic Modeling Tool](/frameworks/tools/aging/aubi-economic-model-en.pdf)
+- [Political Organizing Toolkit](/frameworks/tools/aging/political-organizing-toolkit-en.pdf)
 
 # Right to Meaningful Occupation and Elder Agency
 
@@ -1068,15 +1068,15 @@ The Right to Meaningful Occupation creates the systems enabling elders to contri
 
 These systems work together to create regenerative economies where elder participation strengthens rather than strains community resources, while ensuring every elder experiences purpose, respect, and agency in their ongoing life contribution.
 
-**Next**: Explore how meaningful occupation connects with [Healthcare, Longevity, and Climate Integration](/framework/docs/implementation/aging#03-healthcare-climate) to create comprehensive elder wellbeing and environmental wisdom systems.
+**Next**: Explore how meaningful occupation connects with [Healthcare, Longevity, and Climate Integration](/frameworks/docs/implementation/aging#03-healthcare-climate) to create comprehensive elder wellbeing and environmental wisdom systems.
 
 ---
 
 **Implementation Resources**:
-- [Anti-Ageism Training Guide](/framework/tools/aging/ageism-interruption-guide-en.pdf)
-- [Elder Innovation Hub Playbook](/framework/tools/aging/innovation-hub-playbook-en.pdf)
-- [Technology Governance Charter Template](/framework/tools/aging/tech-governance-charter-en.pdf)
-- [Mutual Care Network Setup Guide](/framework/tools/aging/mutual-care-setup-en.pdf)
+- [Anti-Ageism Training Guide](/frameworks/tools/aging/ageism-interruption-guide-en.pdf)
+- [Elder Innovation Hub Playbook](/frameworks/tools/aging/innovation-hub-playbook-en.pdf)
+- [Technology Governance Charter Template](/frameworks/tools/aging/tech-governance-charter-en.pdf)
+- [Mutual Care Network Setup Guide](/frameworks/tools/aging/mutual-care-setup-en.pdf)
 
 # Healthcare, Longevity, and Climate Integration
 
@@ -1445,15 +1445,15 @@ Healthcare and climate integration creates powerful synergies where elder health
 
 The Elder Wellbeing Index enables continuous system improvement based on elder-defined success measures, while crisis resilience systems ensure framework continuity during emergencies. Together, these systems create regenerative health and environmental systems that strengthen through elder participation while supporting thriving throughout extended lifespans.
 
-**Next**: Explore how health and environmental systems connect with [Social Inclusion and Intergenerational Connection](/framework/docs/implementation/aging#04-social-inclusion) to create comprehensive community integration and cultural transformation.
+**Next**: Explore how health and environmental systems connect with [Social Inclusion and Intergenerational Connection](/frameworks/docs/implementation/aging#04-social-inclusion) to create comprehensive community integration and cultural transformation.
 
 ---
 
 **Implementation Resources**:
-- [Elder Wellbeing Index Calculator](/framework/tools/aging/wellbeing-index-calculator-en.pdf)
-- [Climate Wisdom Documentation Kit](/framework/tools/aging/climate-wisdom-kit-en.pdf)
-- [Telemedicine Accessibility Guide](/framework/tools/aging/telemedicine-accessibility-guide-en.pdf)
-- [Crisis Response Protocol Template](/framework/tools/aging/crisis-response-protocol-en.pdf)
+- [Elder Wellbeing Index Calculator](/frameworks/tools/aging/wellbeing-index-calculator-en.pdf)
+- [Climate Wisdom Documentation Kit](/frameworks/tools/aging/climate-wisdom-kit-en.pdf)
+- [Telemedicine Accessibility Guide](/frameworks/tools/aging/telemedicine-accessibility-guide-en.pdf)
+- [Crisis Response Protocol Template](/frameworks/tools/aging/crisis-response-protocol-en.pdf)
 
 # Social Inclusion and Intergenerational Connection
 
@@ -1798,15 +1798,15 @@ Social inclusion and intergenerational connection creates the community foundati
 
 These systems work together to replace age-segregated isolation with intergenerational collaboration, creating communities where accumulated elder wisdom strengthens rather than burdens social systems, while ensuring every elder experiences genuine connection, purpose, and respect throughout their aging journey.
 
-**Next**: Explore how social inclusion and community integration connect with [Nested Governance Systems](/framework/docs/implementation/aging#05-nested-governance) to create elder-led decision-making from local cooperatives to global coordination.
+**Next**: Explore how social inclusion and community integration connect with [Nested Governance Systems](/frameworks/docs/implementation/aging#05-nested-governance) to create elder-led decision-making from local cooperatives to global coordination.
 
 ---
 
 **Implementation Resources**:
-- [Intergenerational Program Templates](/framework/tools/aging/intergenerational-templates-en.pdf)
-- [Community Integration Planning Guide](/framework/tools/aging/community-integration-guide-en.pdf)
-- [Digital Inclusion Toolkit](/framework/tools/aging/digital-inclusion-toolkit-en.pdf)
-- [Loneliness Reduction Strategy Template](/framework/tools/aging/loneliness-reduction-template-en.pdf)
+- [Intergenerational Program Templates](/frameworks/tools/aging/intergenerational-templates-en.pdf)
+- [Community Integration Planning Guide](/frameworks/tools/aging/community-integration-guide-en.pdf)
+- [Digital Inclusion Toolkit](/frameworks/tools/aging/digital-inclusion-toolkit-en.pdf)
+- [Loneliness Reduction Strategy Template](/frameworks/tools/aging/loneliness-reduction-template-en.pdf)
 
 # Nested Governance: Local to Global Integration
 
@@ -2177,15 +2177,15 @@ Nested governance creates the democratic foundation enabling elders to control t
 
 Anticipatory governance ensures systems evolve with changing conditions while maintaining elder agency and democratic control. Together, these governance systems create a global framework where elders lead their own policy development while building cooperation across communities, cultures, and nations.
 
-**Next**: Explore how governance systems connect with [Legal and Ethical Safeguards](/framework/docs/implementation/aging#06-legal-ethical) to protect elder rights and ensure framework implementation serves elder dignity and autonomy.
+**Next**: Explore how governance systems connect with [Legal and Ethical Safeguards](/frameworks/docs/implementation/aging#06-legal-ethical) to protect elder rights and ensure framework implementation serves elder dignity and autonomy.
 
 ---
 
 **Implementation Resources**:
-- [Elder Cooperative Formation Guide](/framework/tools/aging/elder-cooperative-guide-en.pdf)
-- [Participatory Budgeting Toolkit](/framework/tools/aging/participatory-budgeting-toolkit-en.pdf)
-- [Regional Network Development Template](/framework/tools/aging/regional-network-template-en.pdf)
-- [Rights of Aging Beings Charter Template](/framework/tools/aging/aging-rights-charter-en.pdf)
+- [Elder Cooperative Formation Guide](/frameworks/tools/aging/elder-cooperative-guide-en.pdf)
+- [Participatory Budgeting Toolkit](/frameworks/tools/aging/participatory-budgeting-toolkit-en.pdf)
+- [Regional Network Development Template](/frameworks/tools/aging/regional-network-template-en.pdf)
+- [Rights of Aging Beings Charter Template](/frameworks/tools/aging/aging-rights-charter-en.pdf)
 
 # Legal and Ethical Safeguards
 
@@ -2562,15 +2562,15 @@ Legal and ethical safeguards create the protective foundation enabling all other
 
 End-of-life autonomy and accountability mechanisms ensure elders maintain control over their own lives while building systems that serve elder communities rather than institutional interests. Together, these safeguards create a comprehensive rights framework where elders experience both security and freedom throughout their aging journey.
 
-**Next**: Explore how legal and ethical protections support [Implementation Roadmap and Political Strategy](/framework/docs/implementation/aging#07-implementation) for systematic framework deployment and elder political power building.
+**Next**: Explore how legal and ethical protections support [Implementation Roadmap and Political Strategy](/frameworks/docs/implementation/aging#07-implementation) for systematic framework deployment and elder political power building.
 
 ---
 
 **Implementation Resources**:
-- [Elder Rights Assessment Tool](/framework/tools/aging/elder-rights-assessment-en.pdf)
-- [Technology Dignity Charter Template](/framework/tools/aging/tech-dignity-charter-en.pdf)
-- [Cultural Adaptation Guidelines](/framework/tools/aging/cultural-adaptation-guide-en.pdf)
-- [Legal Advocacy Toolkit](/framework/tools/aging/legal-advocacy-toolkit-en.pdf)
+- [Elder Rights Assessment Tool](/frameworks/tools/aging/elder-rights-assessment-en.pdf)
+- [Technology Dignity Charter Template](/frameworks/tools/aging/tech-dignity-charter-en.pdf)
+- [Cultural Adaptation Guidelines](/frameworks/tools/aging/cultural-adaptation-guide-en.pdf)
+- [Legal Advocacy Toolkit](/frameworks/tools/aging/legal-advocacy-toolkit-en.pdf)
 
 # Implementation Roadmap and Political Strategy
 
@@ -3076,15 +3076,15 @@ The implementation roadmap creates systematic political, economic, and cultural 
 
 Economic modeling provides the evidence base for political advocacy while diversified funding ensures financial sustainability. Cultural transformation changes the narrative supporting political change, while international coordination builds global cooperation and resource sharing. Together, these implementation strategies create the political, economic, and cultural conditions enabling elders to lead their own transformation while building global solidarity for aging support.
 
-**Next**: Explore how implementation strategy connects with [Monitoring and Adaptive Management](/framework/docs/implementation/aging#08-monitoring) to create evidence-based framework evolution and continuous improvement systems.
+**Next**: Explore how implementation strategy connects with [Monitoring and Adaptive Management](/frameworks/docs/implementation/aging#08-monitoring) to create evidence-based framework evolution and continuous improvement systems.
 
 ---
 
 **Implementation Resources**:
-- [Elder Political Organizing Toolkit](/framework/tools/aging/political-organizing-toolkit-en.pdf)
-- [Economic Modeling Template](/framework/tools/aging/economic-modeling-template-en.pdf)
-- [Cultural Campaign Planning Guide](/framework/tools/aging/cultural-campaign-guide-en.pdf)
-- [International Partnership Framework](/framework/tools/aging/international-partnership-template-en.pdf)
+- [Elder Political Organizing Toolkit](/frameworks/tools/aging/political-organizing-toolkit-en.pdf)
+- [Economic Modeling Template](/frameworks/tools/aging/economic-modeling-template-en.pdf)
+- [Cultural Campaign Planning Guide](/frameworks/tools/aging/cultural-campaign-guide-en.pdf)
+- [International Partnership Framework](/frameworks/tools/aging/international-partnership-template-en.pdf)
 
 # Monitoring and Adaptive Management
 
@@ -3539,15 +3539,15 @@ Monitoring and adaptive management creates the evidence foundation enabling all 
 
 Global learning networks create worldwide knowledge sharing while academic partnerships build research capacity. Together, these systems create evidence-based framework evolution that maintains elder agency while building increasingly effective aging support systems that learn and improve through elder leadership and community wisdom.
 
-**Next**: Explore how monitoring and evaluation systems support [Call to Action and Elder Leadership](/framework/docs/implementation/aging#09-call-to-action) for immediate elder-led initiative development and long-term vision realization.
+**Next**: Explore how monitoring and evaluation systems support [Call to Action and Elder Leadership](/frameworks/docs/implementation/aging#09-call-to-action) for immediate elder-led initiative development and long-term vision realization.
 
 ---
 
 **Implementation Resources**:
-- [Elder Wellbeing Index Calculator](/framework/tools/aging/wellbeing-index-calculator-en.pdf)
-- [Community Evaluation Toolkit](/framework/tools/aging/community-evaluation-toolkit-en.pdf)
-- [Research Partnership Agreement Template](/framework/tools/aging/research-partnership-template-en.pdf)
-- [Global Learning Network Guide](/framework/tools/aging/global-learning-network-guide-en.pdf)
+- [Elder Wellbeing Index Calculator](/frameworks/tools/aging/wellbeing-index-calculator-en.pdf)
+- [Community Evaluation Toolkit](/frameworks/tools/aging/community-evaluation-toolkit-en.pdf)
+- [Research Partnership Agreement Template](/frameworks/tools/aging/research-partnership-template-en.pdf)
+- [Global Learning Network Guide](/frameworks/tools/aging/global-learning-network-guide-en.pdf)
 
 # Call to Action and Elder Leadership
 
@@ -4008,7 +4008,7 @@ The global aging population is not a tsunami to be weathered—it is a resource 
 
 **Take Action Today**:
 - **Visit**: agingframework.org/connect to join the global elder network
-- **Download**: [Elder Leadership Starter Kit](/framework/tools/aging/elder-leadership-kit-en.zip) for immediate action steps
+- **Download**: [Elder Leadership Starter Kit](/frameworks/tools/aging/elder-leadership-kit-en.zip) for immediate action steps
 - **Contact**: globalgovernanceframework@gmail.com to volunteer for framework development
 - **Organize**: Start an elder cooperative in your community using our tools and guides
 - **Innovate**: Join an Elder Innovation Hub or start one in your community
@@ -4129,57 +4129,57 @@ The appendices provide essential reference materials supporting framework implem
 ### Implementation Tools Directory
 
 **Core Framework Tools**:
-- [Elder Leadership Starter Kit](/framework/tools/aging/elder-leadership-kit-en.zip): Complete package for launching elder-led initiatives including AUBI pilots, innovation hubs, and political organizing
-- [Elder Community Readiness Assessment](/framework/tools/aging/elder-readiness-assessment-en.pdf): Evaluation tool for communities considering framework implementation
-- [Framework Implementation Guide](/framework/tools/aging/implementation-guide-en.pdf): Step-by-step manual for systematic framework deployment
+- [Elder Leadership Starter Kit](/frameworks/tools/aging/elder-leadership-kit-en.zip): Complete package for launching elder-led initiatives including AUBI pilots, innovation hubs, and political organizing
+- [Elder Community Readiness Assessment](/frameworks/tools/aging/elder-readiness-assessment-en.pdf): Evaluation tool for communities considering framework implementation
+- [Framework Implementation Guide](/frameworks/tools/aging/implementation-guide-en.pdf): Step-by-step manual for systematic framework deployment
 
 **AUBI and Economic Tools**:
-- [AUBI Pilot Design Template](/framework/tools/aging/aubi-pilot-template-en.pdf): Comprehensive template for designing community AUBI pilot programs
-- [Economic Modeling Tool](/framework/tools/aging/aubi-economic-model-en.pdf): Spreadsheet and analysis framework for AUBI cost-benefit assessment
-- [Contribution Recognition Framework](/framework/tools/aging/contribution-recognition-template-en.pdf): System for documenting and compensating elder non-market contributions
-- [Funding Strategy Development Guide](/framework/tools/aging/funding-strategy-guide-en.pdf): Resource mobilization and diversified funding approaches
+- [AUBI Pilot Design Template](/frameworks/tools/aging/aubi-pilot-template-en.pdf): Comprehensive template for designing community AUBI pilot programs
+- [Economic Modeling Tool](/frameworks/tools/aging/aubi-economic-model-en.pdf): Spreadsheet and analysis framework for AUBI cost-benefit assessment
+- [Contribution Recognition Framework](/frameworks/tools/aging/contribution-recognition-template-en.pdf): System for documenting and compensating elder non-market contributions
+- [Funding Strategy Development Guide](/frameworks/tools/aging/funding-strategy-guide-en.pdf): Resource mobilization and diversified funding approaches
 
 **Political Organizing and Advocacy Tools**:
-- [Elder Political Organizing Toolkit](/framework/tools/aging/political-organizing-toolkit-en.pdf): Complete guide to building elder political power and electoral influence
-- [Municipal Campaign Guide](/framework/tools/aging/municipal-campaign-guide-en.pdf): Specific strategies for elder candidates and aging policy advocacy in local elections
-- [Policy Development Templates](/framework/tools/aging/policy-templates-en.pdf): Model legislation for AUBI, age discrimination prevention, and elder rights protection
-- [Coalition Building Handbook](/framework/tools/aging/coalition-building-handbook-en.pdf): Strategies for building intergenerational alliances and cross-movement partnerships
+- [Elder Political Organizing Toolkit](/frameworks/tools/aging/political-organizing-toolkit-en.pdf): Complete guide to building elder political power and electoral influence
+- [Municipal Campaign Guide](/frameworks/tools/aging/municipal-campaign-guide-en.pdf): Specific strategies for elder candidates and aging policy advocacy in local elections
+- [Policy Development Templates](/frameworks/tools/aging/policy-templates-en.pdf): Model legislation for AUBI, age discrimination prevention, and elder rights protection
+- [Coalition Building Handbook](/frameworks/tools/aging/coalition-building-handbook-en.pdf): Strategies for building intergenerational alliances and cross-movement partnerships
 
 **Innovation and Technology Tools**:
-- [Elder Innovation Hub Playbook](/framework/tools/aging/innovation-hub-playbook-en.pdf): Complete guide to establishing and operating Elder Innovation Hubs
-- [Technology Governance Charter Template](/framework/tools/aging/tech-governance-charter-en.pdf): Framework for elder-led technology oversight and digital dignity protection
-- [Innovation Project Development Guide](/framework/tools/aging/innovation-project-guide-en.pdf): Support for elders developing innovations from idea to implementation
-- [Digital Inclusion Toolkit](/framework/tools/aging/digital-inclusion-toolkit-en.pdf): Resources for bridging digital divides and ensuring elder technology access
+- [Elder Innovation Hub Playbook](/frameworks/tools/aging/innovation-hub-playbook-en.pdf): Complete guide to establishing and operating Elder Innovation Hubs
+- [Technology Governance Charter Template](/frameworks/tools/aging/tech-governance-charter-en.pdf): Framework for elder-led technology oversight and digital dignity protection
+- [Innovation Project Development Guide](/frameworks/tools/aging/innovation-project-guide-en.pdf): Support for elders developing innovations from idea to implementation
+- [Digital Inclusion Toolkit](/frameworks/tools/aging/digital-inclusion-toolkit-en.pdf): Resources for bridging digital divides and ensuring elder technology access
 
 **Healthcare and Wellbeing Tools**:
-- [Elder Wellbeing Index Calculator](/framework/tools/aging/wellbeing-index-calculator-en.pdf): Assessment tool for Purpose, Connection, Agency, and Wisdom Utilization measurement
-- [Geriatric Care Integration Guide](/framework/tools/aging/geriatric-care-guide-en.pdf): Framework for age-appropriate healthcare delivery and elder agency preservation
-- [Mental Health Support Resources](/framework/tools/aging/mental-health-resources-en.pdf): Community-based approaches to elder depression, anxiety, and existential support
-- [End-of-Life Planning Template](/framework/tools/aging/end-of-life-planning-en.pdf): Advanced directive and death preparation resources respecting elder autonomy
+- [Elder Wellbeing Index Calculator](/frameworks/tools/aging/wellbeing-index-calculator-en.pdf): Assessment tool for Purpose, Connection, Agency, and Wisdom Utilization measurement
+- [Geriatric Care Integration Guide](/frameworks/tools/aging/geriatric-care-guide-en.pdf): Framework for age-appropriate healthcare delivery and elder agency preservation
+- [Mental Health Support Resources](/frameworks/tools/aging/mental-health-resources-en.pdf): Community-based approaches to elder depression, anxiety, and existential support
+- [End-of-Life Planning Template](/frameworks/tools/aging/end-of-life-planning-en.pdf): Advanced directive and death preparation resources respecting elder autonomy
 
 **Community Building and Social Connection Tools**:
-- [Intergenerational Program Templates](/framework/tools/aging/intergenerational-templates-en.pdf): Structured programs for youth-elder collaboration and mutual learning
-- [Mutual Care Network Setup Guide](/framework/tools/aging/mutual-care-setup-en.pdf): Framework for elder-led care cooperatives and peer support systems
-- [Community Integration Planning Guide](/framework/tools/aging/community-integration-guide-en.pdf): Strategies for age-friendly community development and mixed-age living
-- [Loneliness Reduction Strategy Template](/framework/tools/aging/loneliness-reduction-template-en.pdf): Comprehensive approach to elder isolation prevention and social connection
+- [Intergenerational Program Templates](/frameworks/tools/aging/intergenerational-templates-en.pdf): Structured programs for youth-elder collaboration and mutual learning
+- [Mutual Care Network Setup Guide](/frameworks/tools/aging/mutual-care-setup-en.pdf): Framework for elder-led care cooperatives and peer support systems
+- [Community Integration Planning Guide](/frameworks/tools/aging/community-integration-guide-en.pdf): Strategies for age-friendly community development and mixed-age living
+- [Loneliness Reduction Strategy Template](/frameworks/tools/aging/loneliness-reduction-template-en.pdf): Comprehensive approach to elder isolation prevention and social connection
 
 **Governance and Democratic Participation Tools**:
-- [Elder Cooperative Formation Guide](/framework/tools/aging/elder-cooperative-guide-en.pdf): Legal and practical framework for democratic elder governance structures
-- [Participatory Budgeting Toolkit](/framework/tools/aging/participatory-budgeting-toolkit-en.pdf): Resources for elder community control over aging-related public spending
-- [Community Decision-Making Templates](/framework/tools/aging/decision-making-templates-en.pdf): Democratic processes for elder community policy development and evaluation
-- [Rights Protection Advocacy Kit](/framework/tools/aging/rights-protection-kit-en.pdf): Legal advocacy resources for elder rights violations and discrimination cases
+- [Elder Cooperative Formation Guide](/frameworks/tools/aging/elder-cooperative-guide-en.pdf): Legal and practical framework for democratic elder governance structures
+- [Participatory Budgeting Toolkit](/frameworks/tools/aging/participatory-budgeting-toolkit-en.pdf): Resources for elder community control over aging-related public spending
+- [Community Decision-Making Templates](/frameworks/tools/aging/decision-making-templates-en.pdf): Democratic processes for elder community policy development and evaluation
+- [Rights Protection Advocacy Kit](/frameworks/tools/aging/rights-protection-kit-en.pdf): Legal advocacy resources for elder rights violations and discrimination cases
 
 **Cultural Adaptation and Diversity Tools**:
-- [Cultural Adaptation Guidelines](/framework/tools/aging/cultural-adaptation-guide-en.pdf): Framework modification approaches for diverse cultural contexts
-- [Indigenous Elder Collaboration Protocol](/framework/tools/aging/indigenous-collaboration-protocol-en.pdf): Respectful partnership approaches with Indigenous elder communities
-- [Multilingual Implementation Resources](/framework/tools/aging/multilingual-resources-en.pdf): Translation and interpretation frameworks for diverse language communities
-- [Religious Integration Guidelines](/framework/tools/aging/religious-integration-guide-en.pdf): Collaboration with faith communities while maintaining secular governance
+- [Cultural Adaptation Guidelines](/frameworks/tools/aging/cultural-adaptation-guide-en.pdf): Framework modification approaches for diverse cultural contexts
+- [Indigenous Elder Collaboration Protocol](/frameworks/tools/aging/indigenous-collaboration-protocol-en.pdf): Respectful partnership approaches with Indigenous elder communities
+- [Multilingual Implementation Resources](/frameworks/tools/aging/multilingual-resources-en.pdf): Translation and interpretation frameworks for diverse language communities
+- [Religious Integration Guidelines](/frameworks/tools/aging/religious-integration-guide-en.pdf): Collaboration with faith communities while maintaining secular governance
 
 **Research and Evaluation Tools**:
-- [Community Evaluation Toolkit](/framework/tools/aging/community-evaluation-toolkit-en.pdf): Elder-led assessment approaches for framework effectiveness measurement
-- [Research Partnership Agreement Template](/framework/tools/aging/research-partnership-template-en.pdf): Frameworks for academic-community research collaboration
-- [Data Collection and Privacy Guidelines](/framework/tools/aging/data-privacy-guidelines-en.pdf): Elder data sovereignty and community benefit protocols
-- [Longitudinal Study Design Framework](/framework/tools/aging/longitudinal-study-framework-en.pdf): Long-term research approaches for aging intervention assessment
+- [Community Evaluation Toolkit](/frameworks/tools/aging/community-evaluation-toolkit-en.pdf): Elder-led assessment approaches for framework effectiveness measurement
+- [Research Partnership Agreement Template](/frameworks/tools/aging/research-partnership-template-en.pdf): Frameworks for academic-community research collaboration
+- [Data Collection and Privacy Guidelines](/frameworks/tools/aging/data-privacy-guidelines-en.pdf): Elder data sovereignty and community benefit protocols
+- [Longitudinal Study Design Framework](/frameworks/tools/aging/longitudinal-study-framework-en.pdf): Long-term research approaches for aging intervention assessment
 
 ### Online Resources and Platforms
 

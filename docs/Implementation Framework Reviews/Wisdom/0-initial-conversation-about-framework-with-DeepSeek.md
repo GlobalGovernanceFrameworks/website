@@ -57,9 +57,9 @@ Where GPGF and GMGF intersect:
 
 ### **Implementation on GGF**  
 1. **Separate Entries**:  
-   - **/framework/philosophy** (GPGF)  
-   - **/framework/mysticism** (GMGF)  
-   - **/framework/wisdom** (cross-link hub).  
+   - **/frameworks/philosophy** (GPGF)  
+   - **/frameworks/mysticism** (GMGF)  
+   - **/frameworks/wisdom** (cross-link hub).  
 
 2. **Integration Points**:  
    - GERG’s **Existential Civics** cites GPGF logic training.  

@@ -9,7 +9,7 @@
 - [Conscious Governance Pilots](#conscious-governance-pilots)
 - [Access and Usage](#access-and-usage)
 
-**Visual Map**: A comprehensive consciousness governance systems diagram illustrating Spiral Dynamics integration, wisdom council structures, and digital platform flows is available in the [Visual Architecture Map](/framework/docs/implementation/consciousness#15-visual-architecture-map).
+**Visual Map**: A comprehensive consciousness governance systems diagram illustrating Spiral Dynamics integration, wisdom council structures, and digital platform flows is available in the [Visual Architecture Map](/frameworks/docs/implementation/consciousness#15-visual-architecture-map).
 
 **Estimated Reading Time**: 8 minutes
 
@@ -33,33 +33,33 @@ The framework is a comprehensive plan to embed consciousness and inner developme
 ## <a id="stakeholder-pathways"></a>Stakeholder Pathways
 To help stakeholders quickly find relevant content, the framework offers tailored entry points:
 
-- **For Leaders**: Start with [Personal Transformation Core](/framework/docs/consciousness#02-core-principles-personal-transformation) and explore the [Leadership Toolkit](/framework/tools/consciousness/leadership-toolkit-en.pdf), [Mindfulness Training Module](/framework/tools/consciousness/mindfulness-training-module-en.pdf), and [Shadow Work Coaching Guide](/framework/tools Kosher/implementation/consciousness/shadow-work-coaching-guide-en.pdf).
-- **For Policymakers**: Begin with the [Executive Summary](/framework/tools/consciousness/executive-core-overview-en.pdf) and [Governance Integration](/framework/docs/consciousness#04-systemic-integration), then review [Conscious Budget Template](/framework/tools/consciousness/conscious-budget-template-en.pdf) and [Policy Design Guide](/framework/tools/consciousness/policy-design-guide-en.pdf).
-- **For Communities**: Focus on [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) and [Consciousness-Raising Circles](/framework/docs/consciousness#07-community-engagement), supported by [Community Dialogue Manual](/framework/tools/consciousness/community-dialogue-manual-en.pdf) and [Cultural Sensitivity Protocols](/framework/tools/consciousness/cultural-sensitivity-protocols-en.pdf).
-- **For Technology Innovators**: Start with [Digital Platforms](/framework/docs/consciousness#10-digital-platforms) and [Ethical AI Governance](/framework/docs/consciousness#11-ethical-ai-governance), then explore [AI Sentiment Analysis Setup](/framework/tools/consciousness/ai-sentiment-analysis-setup-en.pdf) and [VR Wisdom Council Framework](/framework/tools/consciousness/vr-wisdom-council-framework-en.pdf).
+- **For Leaders**: Start with [Personal Transformation Core](/frameworks/docs/consciousness#02-core-principles-personal-transformation) and explore the [Leadership Toolkit](/frameworks/tools/consciousness/leadership-toolkit-en.pdf), [Mindfulness Training Module](/frameworks/tools/consciousness/mindfulness-training-module-en.pdf), and [Shadow Work Coaching Guide](/frameworks/tools Kosher/implementation/consciousness/shadow-work-coaching-guide-en.pdf).
+- **For Policymakers**: Begin with the [Executive Summary](/frameworks/tools/consciousness/executive-core-overview-en.pdf) and [Governance Integration](/frameworks/docs/consciousness#04-systemic-integration), then review [Conscious Budget Template](/frameworks/tools/consciousness/conscious-budget-template-en.pdf) and [Policy Design Guide](/frameworks/tools/consciousness/policy-design-guide-en.pdf).
+- **For Communities**: Focus on [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) and [Consciousness-Raising Circles](/frameworks/docs/consciousness#07-community-engagement), supported by [Community Dialogue Manual](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf) and [Cultural Sensitivity Protocols](/frameworks/tools/consciousness/cultural-sensitivity-protocols-en.pdf).
+- **For Technology Innovators**: Start with [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) and [Ethical AI Governance](/frameworks/docs/consciousness#11-ethical-ai-governance), then explore [AI Sentiment Analysis Setup](/frameworks/tools/consciousness/ai-sentiment-analysis-setup-en.pdf) and [VR Wisdom Council Framework](/frameworks/tools/consciousness/vr-wisdom-council-framework-en.pdf).
 
 ## <a id="framework-sections"></a>Framework Sections
 The framework is organized into 15 sections, each a critical component of its transformative design. Explore them below:
 
-0. **[Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto)**: Establishes the vision, purpose, and call to action for conscious governance transformation.
-1. **[Governance Structure](/framework/docs/consciousness#01-governance-structure)**: Details Global Wisdom Councils and Regional Consciousness Hubs with enforceable mechanisms.
-2. **[Personal Transformation](/framework/docs/consciousness#02-personal-transformation)**: Outlines mindfulness, shadow work, and ethical leadership training.
-3. **[Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness)**: Describes dialogue practices and cultural sensitivity protocols.
-4. **[Systemic Integration](/framework/docs/consciousness#04-systemic-integration)**: Details conscious institutions and policy alignment strategies.
-5. **[Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics)**: Outlines vMeme mapping and transition toolkits.
-6. **[Economic Realignment](/framework/docs/consciousness#06-economic-realignment)**: Describes budget-neutral models and Doughnut Economics principles.
-7. **[Community Engagement](/framework/docs/consciousness#07-community-engagement)**: Outlines consciousness-raising circles and participatory governance.
-8. **[Crisis Response Protocols](/framework/docs/consciousness#08-crisis-response)**: Details ethical decision-making in emergencies.
-9. **[Metrics and Accountability](/framework/docs/consciousness#09-metrics-accountability)**: Provides Leader Consciousness Index and Intergenerational Justice Metrics.
-10. **[Digital Platforms](/framework/docs/consciousness#10-digital-platforms)**: Outlines VR/AR wisdom councils and AI sentiment analysis systems.
-11. **[Ethical AI Governance](/framework/docs/consciousness#11-ethical-ai-governance)**: Details AI bias audits and privacy protections.
-12. **[Cross-Cultural Translation](/framework/docs/consciousness#12-cross-cultural-translation)**: Describes cultural adaptation protocols and anti-appropriation safeguards.
-13. **[Implementation Roadmap](/framework/docs/consciousness#13-implementation-roadmap)**: Provides phased timeline with pilot programs and scaling strategies.
-14. **[Visual Architecture Map](/framework/docs/consciousness#14-visual-architecture-map)**: Provides system diagrams and the Consciousness Governance Dashboard.
-15. **[Conclusion](/framework/docs/consciousness#15-conclusion)**: Summarizes the vision and issues final call to action for global implementation.
+0. **[Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto)**: Establishes the vision, purpose, and call to action for conscious governance transformation.
+1. **[Governance Structure](/frameworks/docs/consciousness#01-governance-structure)**: Details Global Wisdom Councils and Regional Consciousness Hubs with enforceable mechanisms.
+2. **[Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation)**: Outlines mindfulness, shadow work, and ethical leadership training.
+3. **[Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness)**: Describes dialogue practices and cultural sensitivity protocols.
+4. **[Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration)**: Details conscious institutions and policy alignment strategies.
+5. **[Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics)**: Outlines vMeme mapping and transition toolkits.
+6. **[Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment)**: Describes budget-neutral models and Doughnut Economics principles.
+7. **[Community Engagement](/frameworks/docs/consciousness#07-community-engagement)**: Outlines consciousness-raising circles and participatory governance.
+8. **[Crisis Response Protocols](/frameworks/docs/consciousness#08-crisis-response)**: Details ethical decision-making in emergencies.
+9. **[Metrics and Accountability](/frameworks/docs/consciousness#09-metrics-accountability)**: Provides Leader Consciousness Index and Intergenerational Justice Metrics.
+10. **[Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms)**: Outlines VR/AR wisdom councils and AI sentiment analysis systems.
+11. **[Ethical AI Governance](/frameworks/docs/consciousness#11-ethical-ai-governance)**: Details AI bias audits and privacy protections.
+12. **[Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation)**: Describes cultural adaptation protocols and anti-appropriation safeguards.
+13. **[Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap)**: Provides phased timeline with pilot programs and scaling strategies.
+14. **[Visual Architecture Map](/frameworks/docs/consciousness#14-visual-architecture-map)**: Provides system diagrams and the Consciousness Governance Dashboard.
+15. **[Conclusion](/frameworks/docs/consciousness#15-conclusion)**: Summarizes the vision and issues final call to action for global implementation.
 
 ## <a id="implementation-timeline-snapshot"></a>Implementation Timeline Snapshot
-A condensed overview of key milestones for quick reference (see [Implementation Roadmap](/framework/docs/consciousness#13-implementation-roadmap) for details):
+A condensed overview of key milestones for quick reference (see [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap) for details):
 
 - **Years 1-3: Pilot Phase**: Test in 3-5 Conscious Governance Pilots, establish Global Wisdom Councils, launch consciousness-raising circles.
 - **Years 4-7: Scaling Phase**: Expand globally prioritizing diverse cultural contexts, secure funding through global summits, deploy digital platforms.
@@ -69,41 +69,41 @@ A condensed overview of key milestones for quick reference (see [Implementation 
 ## <a id="implementation-tools"></a>Implementation Tools
 To bridge theory and practice, the framework provides practical tools and templates for immediate use by stakeholders:
 
-- **[Conscious Governance Starter Kit](/framework/tools/consciousness/conscious-governance-starter-kit-en.zip)**: Complete package for launching Conscious Governance pilot programs.
+- **[Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip)**: Complete package for launching Conscious Governance pilot programs.
 - **Core Governance Tools**:
-  - [Global Wisdom Council Setup Guide](/framework/tools/consciousness/global-wisdom-council-setup-en.pdf)
-  - [Regional Consciousness Hub Implementation](/framework/tools/consciousness/regional-consciousness-hub-implementation-en.pdf)
-  - [Policy Design Guide](/framework/tools/consciousness/policy-design-guide-en.pdf)
-  - [Stakeholder Engagement Protocols](/framework/tools/consciousness/stakeholder-engagement-protocols-en.pdf)
-  - [Youth Council Framework](/framework/tools/consciousness/youth-council-framework-en.pdf)
+  - [Global Wisdom Council Setup Guide](/frameworks/tools/consciousness/global-wisdom-council-setup-en.pdf)
+  - [Regional Consciousness Hub Implementation](/frameworks/tools/consciousness/regional-consciousness-hub-implementation-en.pdf)
+  - [Policy Design Guide](/frameworks/tools/consciousness/policy-design-guide-en.pdf)
+  - [Stakeholder Engagement Protocols](/frameworks/tools/consciousness/stakeholder-engagement-protocols-en.pdf)
+  - [Youth Council Framework](/frameworks/tools/consciousness/youth-council-framework-en.pdf)
 - **Personal Transformation Tools**:
-  - [Mindfulness Training Module](/framework/tools/consciousness/mindfulness-training-module-en.pdf)
-  - [Shadow Work Coaching Guide](/framework/tools/consciousness/shadow-work-coaching-guide-en.pdf)
-  - [Nonviolent Communication Toolkit](/framework/tools/consciousness/nonviolent-communication-toolkit-en.pdf)
-  - [Leadership Toolkit](/framework/tools/consciousness/leadership-toolkit-en.pdf)
+  - [Mindfulness Training Module](/frameworks/tools/consciousness/mindfulness-training-module-en.pdf)
+  - [Shadow Work Coaching Guide](/frameworks/tools/consciousness/shadow-work-coaching-guide-en.pdf)
+  - [Nonviolent Communication Toolkit](/frameworks/tools/consciousness/nonviolent-communication-toolkit-en.pdf)
+  - [Leadership Toolkit](/frameworks/tools/consciousness/leadership-toolkit-en.pdf)
 - **Community Engagement Tools**:
-  - [Community Dialogue Manual](/framework/tools/consciousness/community-dialogue-manual-en.pdf)
-  - [Cultural Sensitivity Protocols](/framework/tools/consciousness/cultural-sensitivity-protocols-en.pdf)
-  - [Consciousness-Raising Circle Guide](/framework/tools/consciousness/consciousness-raising-circle-guide-en.pdf)
+  - [Community Dialogue Manual](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf)
+  - [Cultural Sensitivity Protocols](/frameworks/tools/consciousness/cultural-sensitivity-protocols-en.pdf)
+  - [Consciousness-Raising Circle Guide](/frameworks/tools/consciousness/consciousness-raising-circle-guide-en.pdf)
 - **Digital Platform Tools**:
-  - [AI Sentiment Analysis Setup](/framework/tools/consciousness/ai-sentiment-analysis-setup-en.pdf)
-  - [VR Wisdom Council Framework](/framework/tools/consciousness/vr-wisdom-council-framework-en.pdf)
-  - [AI Bias Audit Framework](/framework/tools/consciousness/ai-bias-audit-framework-en.pdf)
-  - [Cybersecurity Framework for Governance](/framework/tools/consciousness/cybersecurity-framework-governance-en.pdf)
+  - [AI Sentiment Analysis Setup](/frameworks/tools/consciousness/ai-sentiment-analysis-setup-en.pdf)
+  - [VR Wisdom Council Framework](/frameworks/tools/consciousness/vr-wisdom-council-framework-en.pdf)
+  - [AI Bias Audit Framework](/frameworks/tools/consciousness/ai-bias-audit-framework-en.pdf)
+  - [Cybersecurity Framework for Governance](/frameworks/tools/consciousness/cybersecurity-framework-governance-en.pdf)
 - **Economic and Metrics Tools**:
-  - [Conscious Budget Template](/framework/tools/consciousness/conscious-budget-template-en.pdf)
-  - [vMeme Transition Toolkit](/framework/tools/consciousness/vmeme-transition-toolkit-en.pdf)
-  - [Leader Consciousness Index Guide](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf)
-  - [Intergenerational Justice Metrics Framework](/framework/tools/consciousness/intergenerational-justice-metrics-framework-en.pdf)
+  - [Conscious Budget Template](/frameworks/tools/consciousness/conscious-budget-template-en.pdf)
+  - [vMeme Transition Toolkit](/frameworks/tools/consciousness/vmeme-transition-toolkit-en.pdf)
+  - [Leader Consciousness Index Guide](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf)
+  - [Intergenerational Justice Metrics Framework](/frameworks/tools/consciousness/intergenerational-justice-metrics-framework-en.pdf)
 - **Crisis Response Tools**:
-  - [Crisis Wisdom Team Protocols](/framework/tools/consciousness/crisis-wisdom-team-protocols-en.pdf)
-  - [Ethical Decision Template](/framework/tools/consciousness/ethical-decision-template-en.pdf)
+  - [Crisis Wisdom Team Protocols](/frameworks/tools/consciousness/crisis-wisdom-team-protocols-en.pdf)
+  - [Ethical Decision Template](/frameworks/tools/consciousness/ethical-decision-template-en.pdf)
 - **Framework Guides**:
-  - [Consciousness Accord Lite](/framework/tools/consciousness/consciousness-accord-lite-en.pdf) (English)
-  - [Youth Governance Comic](/framework/tools/youth/youth-governance-comic-en.pdf) (Youth-focused adaptation)
-  - [Executive Summary](/framework/tools/consciousness/executive-core-overview-en.pdf)
+  - [Consciousness Accord Lite](/frameworks/tools/consciousness/consciousness-accord-lite-en.pdf) (English)
+  - [Youth Governance Comic](/frameworks/tools/youth/youth-governance-comic-en.pdf) (Youth-focused adaptation)
+  - [Executive Summary](/frameworks/tools/consciousness/executive-core-overview-en.pdf)
 
-All tools are available in PDF and editable markdown formats. Access the complete [Tools Library](/framework/tools/consciousness) for all versions and formats.
+All tools are available in PDF and editable markdown formats. Access the complete [Tools Library](/frameworks/tools/consciousness) for all versions and formats.
 
 ## <a id="conscious-governance-pilots"></a>Conscious Governance Pilots
 The framework features initial pilot programs in carefully selected contexts to test and refine implementation strategies:
@@ -114,14 +114,14 @@ The framework features initial pilot programs in carefully selected contexts to 
 - **Seoul, South Korea**: Utilize smart city infrastructure and digital governance expertise.
 - **Patagonia (Corporate)**: Pioneer conscious governance in business, building on stewardship models.
 
-Each pilot includes comprehensive frameworks, stakeholder engagement protocols, and digital platform integration. Full documentation available in [Conscious Governance Pilot Guides](/framework/tools/consciousness/conscious-governance-pilot-guides-en.pdf).
+Each pilot includes comprehensive frameworks, stakeholder engagement protocols, and digital platform integration. Full documentation available in [Conscious Governance Pilot Guides](/frameworks/tools/consciousness/conscious-governance-pilot-guides-en.pdf).
 
 ## <a id="access-and-usage"></a>Access and Usage
 The framework is accessible through the Global Governance Framework website, designed for easy adaptation and use. Stakeholders can:
 
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links or stakeholder pathways.
-- **Access Tools**: Browse all implementation tools in PDF and markdown formats at the [Tools Library](/framework/tools/consciousness).
+- **Access Tools**: Browse all implementation tools in PDF and markdown formats at the [Tools Library](/frameworks/tools/consciousness).
 - **Engage**: Share feedback through the contact portal or email [globalgovernanceframework@gmail.com]. Feedback is incorporated through quarterly consciousness review cycles with community oversight.
 - **Amplify**: Leverage multimedia assets including consciousness literacy materials, infographics, and community engagement tools to advocate for adoption at local, national, or global levels.
 - **Implement**: Use the [Implementation Tools](#implementation-tools) to launch initiatives, starting with the "Conscious Governance Starter Kit" for communities and organizations.
@@ -152,12 +152,12 @@ The *Consciousness Accord* is a bold summons to reimagine governance as an act o
 ## <a id="our-call-to-action"></a>Our Call to Action
 We call upon all stakeholders to embrace consciousness as the foundation of governance. By 2035, we aim to establish systems where:
 - Mayors lead with empathy, fostering inclusive city policies.
-- CEOs align businesses with planetary well-being, as seen in [Conscious Governance Pilots](/framework/docs/consciousness#13-implementation-roadmap).
-- Youth activists drive intergenerational justice through [Youth Council Framework](/framework/tools/consciousness/youth-council-framework-en.pdf).
-- Communities co-create solutions via [Consciousness-Raising Circles](/framework/docs/consciousness#07-community-engagement).
+- CEOs align businesses with planetary well-being, as seen in [Conscious Governance Pilots](/frameworks/docs/consciousness#13-implementation-roadmap).
+- Youth activists drive intergenerational justice through [Youth Council Framework](/frameworks/tools/consciousness/youth-council-framework-en.pdf).
+- Communities co-create solutions via [Consciousness-Raising Circles](/frameworks/docs/consciousness#07-community-engagement).
 - Global challenges—climate crises, inequality, technological risks—are met with wisdom.
 
-Join us by launching pilots with the [Conscious Governance Starter Kit](/framework/tools/consciousness/conscious-governance-starter-kit-en.zip), advocating at [Global Consciousness Summits](/framework/docs/consciousness#13-implementation-roadmap), or contributing at [globalgovernanceframework@gmail.com].
+Join us by launching pilots with the [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip), advocating at [Global Consciousness Summits](/frameworks/docs/consciousness#13-implementation-roadmap), or contributing at [globalgovernanceframework@gmail.com].
 
 **Infographic Placeholder**: *Conscious Governance Timeline (2026–2035)* to visualize pilot launches, scaling, and systemic transformation.
 
@@ -168,44 +168,44 @@ Governance systems are faltering under unprecedented complexity:
 - **Leadership deficits** drive short-termism, eroding trust (Edelman Trust Barometer, 2025).
 - **Technological disruption** (AI, biotech) outpaces ethics, risking inequity.
 
-Traditional models, rooted in competition, cannot address these crises. The Consciousness Accord offers a paradigm shift, grounded in self-awareness and systems thinking, as detailed in [Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics).
+Traditional models, rooted in competition, cannot address these crises. The Consciousness Accord offers a paradigm shift, grounded in self-awareness and systems thinking, as detailed in [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics).
 
 **Case Study (Real)**: South Africa’s Truth and Reconciliation Commission (1996–2003) used restorative dialogue to heal post-apartheid wounds, reducing violent conflicts by 30% in participating communities, demonstrating conscious governance’s transformative power.
 
 ## <a id="a-vision-for-conscious-governance"></a>A Vision for Conscious Governance
 We envision a world where governance is a sacred act of stewardship. By 2035, success looks like:
-- **Global adoption**: 50% of pilot regions (e.g., Costa Rica, Bhutan) achieve measurable well-being improvements, tracked by [Intergenerational Justice Metrics](/framework/tools/consciousness/intergenerational-justice-metrics-framework-en.pdf).
-- **Inclusive leadership**: 80% of pilot leaders complete mindfulness training, reducing reactive decisions by 25% ([Leader Consciousness Index](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf)).
-- **Community empowerment**: 1 million citizens engage in consciousness-raising circles, fostering social cohesion ([Community Dialogue Manual](/framework/tools/consciousness/community-dialogue-manual-en.pdf)).
-- **Systemic alignment**: 30% of pilot budgets realign with [Doughnut Economics](/framework/docs/consciousness#06-economic-realignment), prioritizing sustainability.
+- **Global adoption**: 50% of pilot regions (e.g., Costa Rica, Bhutan) achieve measurable well-being improvements, tracked by [Intergenerational Justice Metrics](/frameworks/tools/consciousness/intergenerational-justice-metrics-framework-en.pdf).
+- **Inclusive leadership**: 80% of pilot leaders complete mindfulness training, reducing reactive decisions by 25% ([Leader Consciousness Index](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf)).
+- **Community empowerment**: 1 million citizens engage in consciousness-raising circles, fostering social cohesion ([Community Dialogue Manual](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf)).
+- **Systemic alignment**: 30% of pilot budgets realign with [Doughnut Economics](/frameworks/docs/consciousness#06-economic-realignment), prioritizing sustainability.
 
 This vision adapts to diverse contexts:
 - **Nordic nations** emphasize participatory democracy (Green vMeme).
 - **African communities** integrate Ubuntu-based reconciliation (Purple-Green hybrid).
 - **Asian megacities** leverage smart governance (Orange-Yellow hybrid).
 
-**Example (Fictive)**: In 2030, a Southeast Asian megacity adopts wisdom councils, reducing urban inequality by 20% through dialogues facilitated by [Cultural Sensitivity Protocols](/framework/tools/consciousness/cultural-sensitivity-protocols-en.pdf), showcasing regional adaptability.
+**Example (Fictive)**: In 2030, a Southeast Asian megacity adopts wisdom councils, reducing urban inequality by 20% through dialogues facilitated by [Cultural Sensitivity Protocols](/frameworks/tools/consciousness/cultural-sensitivity-protocols-en.pdf), showcasing regional adaptability.
 
 ## <a id="overcoming-resistance"></a>Overcoming Resistance
 Transformation will face resistance from entrenched interests, cultural inertia, and resource constraints. The framework anticipates and addresses these challenges:
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|------------|--------|------------|
-| Political opposition from authoritarian regimes | High | High | Engage sub-national actors, use cultural framing (e.g., Confucian harmony), and leverage trade incentives ([International Relations](/framework/docs/consciousness#17-international-relations)). |
-| Corporate resistance to budget realignment | Medium | Medium | Demonstrate ROI via [Conscious Budget Template](/framework/tools/consciousness/conscious-budget-template-en.pdf) and certify conscious governance ([Economic Realignment](/framework/docs/consciousness#06-economic-realignment)). |
-| Cultural misalignment in pilots | Medium | Medium | Co-design with FPIC 2.0 and [Cross-Cultural Translation](/framework/docs/consciousness#12-cross-cultural-translation) protocols. |
+| Political opposition from authoritarian regimes | High | High | Engage sub-national actors, use cultural framing (e.g., Confucian harmony), and leverage trade incentives ([International Relations](/frameworks/docs/consciousness#17-international-relations)). |
+| Corporate resistance to budget realignment | Medium | Medium | Demonstrate ROI via [Conscious Budget Template](/frameworks/tools/consciousness/conscious-budget-template-en.pdf) and certify conscious governance ([Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment)). |
+| Cultural misalignment in pilots | Medium | Medium | Co-design with FPIC 2.0 and [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) protocols. |
 
-These strategies, detailed in [Implementation Roadmap](/framework/docs/consciousness#13-implementation-roadmap), ensure resilience against setbacks.
+These strategies, detailed in [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap), ensure resilience against setbacks.
 
 ## <a id="our-commitment"></a>Our Commitment
 We pledge to:
-- **Cultivate Wisdom**: Train 10,000 leaders by 2030 using [Mindfulness Training Module](/framework/tools/consciousness/mindfulness-training-en.pdf).
-- **Foster Inclusion**: Engage 1,000 marginalized communities by 2028 via [Cultural Sensitivity Protocols](/framework/tools/consciousness/cultural-sensitivity-protocols-en.pdf).
-- **Ensure Accountability**: Publish annual progress reports using [Leader Consciousness Index](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf) starting 2027.
-- **Innovate Ethically**: Implement AI bias audits by 2026 per [Ethical AI Governance](/framework/docs/consciousness#11-ethical-ai-governance).
-- **Scale Urgently**: Launch 5 pilots by 2026, scaling to 50 by 2030 ([Conscious Governance Pilots](/framework/docs/consciousness#13-implementation-roadmap)).
+- **Cultivate Wisdom**: Train 10,000 leaders by 2030 using [Mindfulness Training Module](/frameworks/tools/consciousness/mindfulness-training-en.pdf).
+- **Foster Inclusion**: Engage 1,000 marginalized communities by 2028 via [Cultural Sensitivity Protocols](/frameworks/tools/consciousness/cultural-sensitivity-protocols-en.pdf).
+- **Ensure Accountability**: Publish annual progress reports using [Leader Consciousness Index](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf) starting 2027.
+- **Innovate Ethically**: Implement AI bias audits by 2026 per [Ethical AI Governance](/frameworks/docs/consciousness#11-ethical-ai-governance).
+- **Scale Urgently**: Launch 5 pilots by 2026, scaling to 50 by 2030 ([Conscious Governance Pilots](/frameworks/docs/consciousness#13-implementation-roadmap)).
 
-**Escalation Pathway**: Individual actions (e.g., mindfulness training) aggregate to community dialogues, institutional reforms, and global policy shifts, as outlined in [Theory of Change](/framework/docs/consciousness#05-theory-of-change).
+**Escalation Pathway**: Individual actions (e.g., mindfulness training) aggregate to community dialogues, institutional reforms, and global policy shifts, as outlined in [Theory of Change](/frameworks/docs/consciousness#05-theory-of-change).
 
 **Failure Acknowledgment**: If 2035 goals are unmet, we’ll conduct independent audits, recalibrate via wisdom councils, and redirect resources to high-impact regions, ensuring adaptability.
 
@@ -219,13 +219,13 @@ We are the Consciousness Accord Consortium, comprising:
 
 Formed through dialogues at the 2024 UN Summit of the Future, our consortium operates as an open coalition. Join by contributing to pilots, translations, or platforms at [globalgovernanceframework@gmail.com].
 
-**Coalition-Building Strategy**: We recruit via [Global Consciousness Summits](/framework/docs/consciousness#13-implementation-roadmap), regional hubs, and digital platforms, prioritizing diverse representation and co-design, as detailed in [Stakeholder Engagement](/framework/docs/consciousness#07-community-engagement).
+**Coalition-Building Strategy**: We recruit via [Global Consciousness Summits](/frameworks/docs/consciousness#13-implementation-roadmap), regional hubs, and digital platforms, prioritizing diverse representation and co-design, as detailed in [Stakeholder Engagement](/frameworks/docs/consciousness#07-community-engagement).
 
 ---
 
-**Cross-Reference Note**: This manifesto connects to [Introduction](/framework/docs/consciousness#01-introduction) for context, [Governance Structure](/framework/docs/consciousness#01-governance-structure) for implementation, and [Conclusion](/framework/docs/consciousness#15-conclusion) for the final call to action.
+**Cross-Reference Note**: This manifesto connects to [Introduction](/frameworks/docs/consciousness#01-introduction) for context, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for implementation, and [Conclusion](/frameworks/docs/consciousness#15-conclusion) for the final call to action.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All materials are open-access under CC BY-SA 4.0, with translations prioritized for pilot regions and underserved communities.
 
@@ -245,7 +245,7 @@ Formed through dialogues at the 2024 UN Summit of the Future, our consortium ope
 
 **Estimated Reading Time**: 12 minutes
 
-The governance structure of the *Consciousness & Inner Development Framework* establishes a network of inclusive, adaptive, and accountable bodies to embed consciousness into global decision-making. Anchored by Global Wisdom Councils and Regional Consciousness Hubs, it empowers diverse stakeholders—mayors, indigenous elders, youth activists, and community leaders—to co-create equitable and sustainable policies. Designed to complement rather than replace democratic institutions, this structure ensures that governance reflects empathy, systemic thinking, and cultural sensitivity, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+The governance structure of the *Consciousness & Inner Development Framework* establishes a network of inclusive, adaptive, and accountable bodies to embed consciousness into global decision-making. Anchored by Global Wisdom Councils and Regional Consciousness Hubs, it empowers diverse stakeholders—mayors, indigenous elders, youth activists, and community leaders—to co-create equitable and sustainable policies. Designed to complement rather than replace democratic institutions, this structure ensures that governance reflects empathy, systemic thinking, and cultural sensitivity, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-principles"></a>Purpose and Principles
 **Purpose**: To create a governance ecosystem that integrates self-awareness, inclusivity, and ethical leadership, ensuring decisions align with human and planetary well-being by 2035 while strengthening democratic legitimacy through enhanced participation and wisdom integration.
@@ -253,8 +253,8 @@ The governance structure of the *Consciousness & Inner Development Framework* es
 **Principles**:
 - **Democratic Complementarity**: Enhance rather than replace democratic institutions through advisory guidance and participatory processes.
 - **Inclusivity**: Amplify marginalized voices, including indigenous, youth, and neurodiverse perspectives through structured representation.
-- **Transparency**: Ensure open decision-making, tracked via [Metrics and Accountability](/framework/docs/consciousness#09-metrics-accountability).
-- **Adaptability**: Tailor structures to regional contexts, as outlined in [Cross-Cultural Translation](/framework/docs/consciousness#12-cross-cultural-translation).
+- **Transparency**: Ensure open decision-making, tracked via [Metrics and Accountability](/frameworks/docs/consciousness#09-metrics-accountability).
+- **Adaptability**: Tailor structures to regional contexts, as outlined in [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation).
 - **Accountability**: Enforce commitments through binding agreements, audits, and community oversight mechanisms.
 - **Interconnectedness**: Foster collaboration across scales, inspired by Ubuntu and indigenous cosmologies.
 - **Graduated Authority**: Begin with advisory roles, evolving to constitutional recognition through democratic processes.
@@ -269,7 +269,7 @@ The consciousness governance structure integrates with existing democratic insti
   - Global Wisdom Councils advise UN agencies, G7, and multilateral organizations
   - Regional Hubs provide guidance to national and local governments
   - Formal memoranda of understanding establish consultation protocols
-- **Tool**: **[Democratic Integration Protocols](/framework/tools/consciousness/democratic-integration-protocols-en.pdf)** for structured advisory processes.
+- **Tool**: **[Democratic Integration Protocols](/frameworks/tools/consciousness/democratic-integration-protocols-en.pdf)** for structured advisory processes.
 - **Metric**: 50% of pilot region governments formally consulting councils by Year 3, tracked via engagement surveys.
 - **Actors**: Elected officials, council members, civil society organizations.
 
@@ -278,7 +278,7 @@ The consciousness governance structure integrates with existing democratic insti
   - Mandatory consultation on policies affecting future generations
   - Youth council veto power on intergenerational issues
   - Indigenous council approval required for land use decisions
-- **Tool**: **[Constitutional Amendment Templates](/framework/tools/consciousness/constitutional-amendment-templates-en.pdf)** for legal integration.
+- **Tool**: **[Constitutional Amendment Templates](/frameworks/tools/consciousness/constitutional-amendment-templates-en.pdf)** for legal integration.
 - **Metric**: 25% adoption rate in pilot regions, 80% citizen satisfaction with integrated governance.
 - **Actors**: Regional governments, constitutional lawyers, community representatives.
 
@@ -287,7 +287,7 @@ The consciousness governance structure integrates with existing democratic insti
   - National referenda in pilot countries
   - Constitutional conventions in participating regions
   - International treaty ratification for global coordination
-- **Tool**: **[Referendum Campaign Guide](/framework/tools/consciousness/referendum-campaign-guide-en.pdf)** for democratic approval processes.
+- **Tool**: **[Referendum Campaign Guide](/frameworks/tools/consciousness/referendum-campaign-guide-en.pdf)** for democratic approval processes.
 - **Metric**: Constitutional recognition in 5+ countries by Year 10, 60% public support in referendum regions.
 - **Actors**: Voters, political parties, constitutional courts, international bodies.
 
@@ -306,19 +306,19 @@ Global Wisdom Councils are the framework's apex advisory bodies, providing strat
   - 5 Spiral Dynamics facilitators to navigate value systems
 - **Selection Process**: 
   - Nominated by Regional Consciousness Hubs through transparent processes
-  - Vetted for empathy and integrity via [Leader Consciousness Index](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf)
+  - Vetted for empathy and integrity via [Leader Consciousness Index](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf)
   - 3-year rotating terms with possibility of one renewal
   - Geographic and gender balance requirements (minimum 40% representation for each gender)
 
 ### Roles and Responsibilities
-- **Policy Guidance**: Develop global policy recommendations integrating [Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics)
+- **Policy Guidance**: Develop global policy recommendations integrating [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics)
 - **Conflict Mediation**: Facilitate dialogue in geopolitical conflicts using restorative justice principles
 - **Pilot Oversight**: Monitor and evaluate pilot programs, ensuring cultural alignment
 - **Standard Setting**: Establish global standards for consciousness governance implementation
 - **Future Advocacy**: Represent interests of future generations in current decision-making
 
 ### Operational Framework
-- **Meetings**: Quarterly virtual sessions via VR/AR platforms ([VR Wisdom Council Framework](/framework/tools/consciousness/vr-wisdom-council-framework-en.pdf))
+- **Meetings**: Quarterly virtual sessions via VR/AR platforms ([VR Wisdom Council Framework](/frameworks/tools/consciousness/vr-wisdom-council-framework-en.pdf))
 - **Annual Summit**: In-person gathering rotated between regions for relationship building
 - **Working Groups**: Specialized committees on climate, technology, conflict resolution, and economics
 - **Decision-Making**: Consensus-seeking with 70% approval threshold for recommendations
@@ -344,22 +344,22 @@ Regional Consciousness Hubs operationalize the framework at local and national l
   - Academic and civil society representatives
 
 ### Selection and Accountability
-- **Election Process**: Participatory selection through regional assemblies, co-designed with [Cultural Sensitivity Protocols](/framework/tools/consciousness/cultural-sensitivity-protocols-en.pdf)
+- **Election Process**: Participatory selection through regional assemblies, co-designed with [Cultural Sensitivity Protocols](/frameworks/tools/consciousness/cultural-sensitivity-protocols-en.pdf)
 - **FPIC 2.0 Compliance**: Free, Prior, and Informed Consent protocols for indigenous participation
 - **Community Oversight**: Monthly public meetings with citizen feedback mechanisms
 - **Recall Mechanisms**: Community-initiated recall votes for non-performing members
 
 ### Core Functions
-- **Pilot Implementation**: Deploy [Conscious Governance Pilot Guides](/framework/tools/consciousness/conscious-governance-pilot-guides-en.pdf) in local contexts
-- **Dialogue Facilitation**: Organize [Consciousness-Raising Circles](/framework/docs/consciousness#07-community-engagement) for community engagement
-- **Progress Monitoring**: Track outcomes using [Intergenerational Justice Metrics](/framework/tools/consciousness/intergenerational-justice-metrics-framework-en.pdf)
+- **Pilot Implementation**: Deploy [Conscious Governance Pilot Guides](/frameworks/tools/consciousness/conscious-governance-pilot-guides-en.pdf) in local contexts
+- **Dialogue Facilitation**: Organize [Consciousness-Raising Circles](/frameworks/docs/consciousness#07-community-engagement) for community engagement
+- **Progress Monitoring**: Track outcomes using [Intergenerational Justice Metrics](/frameworks/tools/consciousness/intergenerational-justice-metrics-framework-en.pdf)
 - **Policy Integration**: Advise local governments on consciousness-aligned policies
 - **Capacity Building**: Train local leaders in mindfulness and collaborative governance
 
 ### Operational Structure
 - **Meeting Frequency**: Monthly hybrid meetings (in-person and virtual options)
-- **Documentation**: All proceedings recorded and publicly available via [Community Dialogue Manual](/framework/docs/consciousness/community-dialogue-manual-en.pdf)
-- **Digital Integration**: Real-time progress tracking through [Consciousness Governance Dashboard](/framework/docs/consciousness#14-visual-architecture-map)
+- **Documentation**: All proceedings recorded and publicly available via [Community Dialogue Manual](/frameworks/docs/consciousness/community-dialogue-manual-en.pdf)
+- **Digital Integration**: Real-time progress tracking through [Consciousness Governance Dashboard](/frameworks/docs/consciousness#14-visual-architecture-map)
 - **Resource Support**: Access to facilitation training and technical assistance
 
 ### Regional Implementation Examples
@@ -485,7 +485,7 @@ To ensure accountability and effectiveness, the framework establishes graduated 
 
 ### Specific Accountability Measures
 - **Mayor Commitments**: Annual participatory budgeting implementation, tracked via citizen satisfaction surveys
-- **CEO Requirements**: [Corporate Consciousness Certification](/framework/docs/consciousness#08-economic-dimension) with third-party auditing
+- **CEO Requirements**: [Corporate Consciousness Certification](/frameworks/docs/consciousness#08-economic-dimension) with third-party auditing
 - **Youth Protections**: Constitutional safeguards for youth council veto powers with judicial review
 - **Indigenous Rights**: FPIC 2.0 compliance monitored by independent indigenous rights observers
 
@@ -598,11 +598,11 @@ The governance structure anticipates and prepares for implementation challenges 
 
 | Risk | Likelihood | Impact | Mitigation Strategy | Timeline |
 |------|------------|--------|-------------------|----------|
-| Elite capture of councils | Medium | High | Mandate diverse representation, transparent selection via [Leader Consciousness Index](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf), community recall mechanisms | Ongoing |
+| Elite capture of councils | Medium | High | Mandate diverse representation, transparent selection via [Leader Consciousness Index](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf), community recall mechanisms | Ongoing |
 | Democratic legitimacy challenges | High | High | Phased integration starting with advisory roles, constitutional approval processes, regular referenda | Years 1-8 |
-| Resistance from traditional institutions | High | Medium | Engage reform-minded insiders, offer incentives via [Conscious Budget Template](/framework/tools/consciousness/conscious-budget-template-en.pdf), demonstrate effectiveness through pilots | Years 1-5 |
-| Digital platform vulnerabilities | Medium | Medium | Implement 256-bit encryption, regular security audits via [Cybersecurity Framework](/framework/tools/consciousness/cybersecurity-framework-governance-en.pdf), distributed architecture | Years 2-4 |
-| Cultural misalignment or rejection | Medium | High | Co-design with FPIC 2.0, [Cross-Cultural Translation](/framework/docs/consciousness#12-cross-cultural-translation) protocols, opt-out mechanisms with dignity | Ongoing |
+| Resistance from traditional institutions | High | Medium | Engage reform-minded insiders, offer incentives via [Conscious Budget Template](/frameworks/tools/consciousness/conscious-budget-template-en.pdf), demonstrate effectiveness through pilots | Years 1-5 |
+| Digital platform vulnerabilities | Medium | Medium | Implement 256-bit encryption, regular security audits via [Cybersecurity Framework](/frameworks/tools/consciousness/cybersecurity-framework-governance-en.pdf), distributed architecture | Years 2-4 |
+| Cultural misalignment or rejection | Medium | High | Co-design with FPIC 2.0, [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) protocols, opt-out mechanisms with dignity | Ongoing |
 | Funding shortfalls | Medium | High | Diversified funding portfolio, phased implementation allowing for resource constraints, revenue-generating services | Years 3-7 |
 | Authoritarian government suppression | Low | Very High | International protection protocols, underground networks, digital security measures, sanctuary arrangements | Ongoing |
 | Youth disengagement over time | Medium | Medium | Regular engagement surveys, adaptive participation methods, leadership development programs, generational renewal | Years 5-12 |
@@ -620,13 +620,13 @@ The governance structure anticipates and prepares for implementation challenges 
 - **Cultural Adaptation**: Successful implementation across 5+ distinct cultural contexts
 - **Sustainability**: Self-funding achievement by Year 8
 
-These comprehensive mitigations, detailed in [Implementation Roadmap](/framework/docs/consciousness#13-implementation-roadmap), ensure robust governance deployment while maintaining democratic values and cultural sensitivity.
+These comprehensive mitigations, detailed in [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap), ensure robust governance deployment while maintaining democratic values and cultural sensitivity.
 
 ---
 
-**Cross-Reference Note**: This section connects to [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) for leadership training, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for community engagement, [Economic Realignment](/framework/docs/consciousness#06-economic-realignment) for funding models, and [Implementation Roadmap](/framework/docs/consciousness#13-implementation-roadmap) for detailed scaling strategies.
+**Cross-Reference Note**: This section connects to [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for leadership training, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment) for funding models, and [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap) for detailed scaling strategies.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All materials are open-access under CC BY-SA 4.0, with translations prioritized for pilot regions and underserved communities.
 
@@ -646,7 +646,7 @@ These comprehensive mitigations, detailed in [Implementation Roadmap](/framework
 
 **Estimated Reading Time**: 15 minutes
 
-Personal transformation forms the bedrock of conscious governance, recognizing that external systems can only be as conscious as the individuals who lead them. This section outlines comprehensive development pathways for leaders to cultivate self-awareness, emotional intelligence, and ethical decision-making capacity. By integrating mindfulness practices, shadow work, and values alignment, leaders develop the inner resources necessary to navigate complex governance challenges with wisdom, empathy, and systemic thinking, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+Personal transformation forms the bedrock of conscious governance, recognizing that external systems can only be as conscious as the individuals who lead them. This section outlines comprehensive development pathways for leaders to cultivate self-awareness, emotional intelligence, and ethical decision-making capacity. By integrating mindfulness practices, shadow work, and values alignment, leaders develop the inner resources necessary to navigate complex governance challenges with wisdom, empathy, and systemic thinking, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-foundation"></a>Purpose and Foundation
 
@@ -711,12 +711,12 @@ To prevent mindfulness from becoming an escape from difficult governance realiti
 - **Power Analysis**: Meditation includes reflection on one's positional power and responsibility
 - **Community Accountability**: Practice partners provide feedback on whether awareness translates to just action
 
-**Example (Fictive)**: In 2029, the Mayor of Lagos implements daily mindfulness practice after attending consciousness governance training. Within 6 months, her decision-making time decreases by 40% while citizen satisfaction increases by 25%, as measured by the [Leader Consciousness Index](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf). Her capacity to remain present during heated city council meetings transforms the tone of municipal governance.
+**Example (Fictive)**: In 2029, the Mayor of Lagos implements daily mindfulness practice after attending consciousness governance training. Within 6 months, her decision-making time decreases by 40% while citizen satisfaction increases by 25%, as measured by the [Leader Consciousness Index](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf). Her capacity to remain present during heated city council meetings transforms the tone of municipal governance.
 
 ### Implementation Tools
-- **Tool**: **[Mindfulness Training Module](/framework/tools/consciousness/mindfulness-training-en.pdf)** for structured daily practice development
-- **Tool**: **[Digital Mindfulness App for Leaders](/framework/tools/consciousness/digital-mindfulness-app-leaders-en.pdf)** with governance-specific guided meditations
-- **Tool**: **[Mindful Meeting Protocols](/framework/tools/consciousness/mindful-meeting-protocols-en.pdf)** for integrating awareness into group decision-making
+- **Tool**: **[Mindfulness Training Module](/frameworks/tools/consciousness/mindfulness-training-en.pdf)** for structured daily practice development
+- **Tool**: **[Digital Mindfulness App for Leaders](/frameworks/tools/consciousness/digital-mindfulness-app-leaders-en.pdf)** with governance-specific guided meditations
+- **Tool**: **[Mindful Meeting Protocols](/frameworks/tools/consciousness/mindful-meeting-protocols-en.pdf)** for integrating awareness into group decision-making
 
 ## <a id="emotional-and-moral-maturity-development"></a>Emotional and Moral Maturity Development
 
@@ -780,9 +780,9 @@ Recognizing that many governance challenges involve collective trauma:
   - Demonstrate measurable improvement in stakeholder relationships
 
 **Tools Available**:
-- **[Nonviolent Communication Toolkit](/framework/tools/consciousness/nonviolent-communication-toolkit-en.pdf)** for governance-specific NVC application
-- **[Emotional Intelligence Assessment](/framework/tools/consciousness/emotional-intelligence-assessment-en.pdf)** with quarterly tracking
-- **[Trauma-Informed Leadership Guide](/framework/tools/consciousness/trauma-informed-leadership-guide-en.pdf)** for healing-centered governance
+- **[Nonviolent Communication Toolkit](/frameworks/tools/consciousness/nonviolent-communication-toolkit-en.pdf)** for governance-specific NVC application
+- **[Emotional Intelligence Assessment](/frameworks/tools/consciousness/emotional-intelligence-assessment-en.pdf)** with quarterly tracking
+- **[Trauma-Informed Leadership Guide](/frameworks/tools/consciousness/trauma-informed-leadership-guide-en.pdf)** for healing-centered governance
 
 ## <a id="shadow-work-and-unconscious-pattern-recognition"></a>Shadow Work and Unconscious Pattern Recognition
 
@@ -852,9 +852,9 @@ The "shadow" consists of unconscious aspects of personality that influence decis
   - Ongoing mentorship with community elders and wisdom keepers
 
 **Tools Available**:
-- **[IFS for Policymakers Workshop Guide](/framework/tools/consciousness/ifs-policymakers-workshop-en.pdf)** for identifying and working with internal parts
-- **[Shadow Work Coaching Manual](/framework/tools/consciousness/shadow-work-coaching-guide-en.pdf)** for individual and peer shadow work
-- **[Bias Interruption Training](/framework/tools/consciousness/bias-interruption-training-en.pdf)** for systematic bias recognition and interruption
+- **[IFS for Policymakers Workshop Guide](/frameworks/tools/consciousness/ifs-policymakers-workshop-en.pdf)** for identifying and working with internal parts
+- **[Shadow Work Coaching Manual](/frameworks/tools/consciousness/shadow-work-coaching-guide-en.pdf)** for individual and peer shadow work
+- **[Bias Interruption Training](/frameworks/tools/consciousness/bias-interruption-training-en.pdf)** for systematic bias recognition and interruption
 
 ## <a id="purpose-and-values-alignment"></a>Purpose and Values Alignment
 
@@ -928,9 +928,9 @@ Authentic leadership requires clear alignment between personal values, professio
   - Contribute to community dialogue on governance ethics
 
 **Tools Available**:
-- **[Values Clarification Workbook](/framework/tools/consciousness/values-clarification-workbook-en.pdf)** for systematic values exploration
-- **[Purpose Integration Guide](/framework/tools/consciousness/purpose-integration-guide-en.pdf)** for aligning personal and professional purpose
-- **[Integrity Maintenance Toolkit](/framework/tools/consciousness/integrity-maintenance-toolkit-en.pdf)** for ongoing integrity practice
+- **[Values Clarification Workbook](/frameworks/tools/consciousness/values-clarification-workbook-en.pdf)** for systematic values exploration
+- **[Purpose Integration Guide](/frameworks/tools/consciousness/purpose-integration-guide-en.pdf)** for aligning personal and professional purpose
+- **[Integrity Maintenance Toolkit](/frameworks/tools/consciousness/integrity-maintenance-toolkit-en.pdf)** for ongoing integrity practice
 
 ## <a id="integration-with-governance-practice"></a>Integration with Governance Practice
 
@@ -1006,16 +1006,16 @@ Personal transformation gains meaning through integration with actual governance
   - Greater long-term effectiveness and career sustainability
 
 **Tools Available**:
-- **[Conscious Decision-Making Framework](/framework/tools/consciousness/conscious-decision-making-framework-en.pdf)** for integrating awareness into governance choices
-- **[Mindful Communication Protocols](/framework/tools/consciousness/mindful-communication-protocols-en.pdf)** for transformed stakeholder engagement
-- **[Crisis Leadership Guide](/framework/tools/consciousness/crisis-leadership-guide-en.pdf)** for maintaining consciousness under pressure
+- **[Conscious Decision-Making Framework](/frameworks/tools/consciousness/conscious-decision-making-framework-en.pdf)** for integrating awareness into governance choices
+- **[Mindful Communication Protocols](/frameworks/tools/consciousness/mindful-communication-protocols-en.pdf)** for transformed stakeholder engagement
+- **[Crisis Leadership Guide](/frameworks/tools/consciousness/crisis-leadership-guide-en.pdf)** for maintaining consciousness under pressure
 
 ## <a id="assessment-and-accountability"></a>Assessment and Accountability
 
 Rigorous assessment and accountability mechanisms ensure personal transformation efforts translate to measurable improvements in leadership effectiveness and governance outcomes.
 
 ### Leader Consciousness Index (LCI)
-The [Leader Consciousness Index](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf) provides validated measurement of consciousness development:
+The [Leader Consciousness Index](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf) provides validated measurement of consciousness development:
 - **Self-Awareness Metrics**: Mindfulness, emotional awareness, bias recognition, values clarity
 - **Empathy and Relationship Metrics**: Emotional intelligence, perspective-taking, communication effectiveness
 - **Ethical Development Metrics**: Moral reasoning, integrity, service orientation, long-term thinking
@@ -1083,9 +1083,9 @@ The [Leader Consciousness Index](/framework/tools/consciousness/leader-conscious
 - **Bi-annually**: Intensive retreat or sabbatical for deep consciousness work, major development planning revision
 
 **Tools Available**:
-- **[Leader Consciousness Index Implementation Guide](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf)** for comprehensive assessment
-- **[360-Degree Feedback Toolkit](/framework/tools/consciousness/360-feedback-toolkit-en.pdf)** for stakeholder evaluation processes
-- **[Community Impact Assessment Framework](/framework/tools/consciousness/community-impact-assessment-en.pdf)** for governance outcome tracking
+- **[Leader Consciousness Index Implementation Guide](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf)** for comprehensive assessment
+- **[360-Degree Feedback Toolkit](/frameworks/tools/consciousness/360-feedback-toolkit-en.pdf)** for stakeholder evaluation processes
+- **[Community Impact Assessment Framework](/frameworks/tools/consciousness/community-impact-assessment-en.pdf)** for governance outcome tracking
 
 ## <a id="cultural-adaptation-and-sensitivity"></a>Cultural Adaptation and Sensitivity
 
@@ -1169,9 +1169,9 @@ Personal transformation practices must honor diverse cultural wisdom traditions 
   - Establish long-term relationship maintenance protocols
 
 **Tools Available**:
-- **[Cultural Sensitivity Protocols](/framework/tools/consciousness/cultural-sensitivity-protocols-en.pdf)** for respectful cross-cultural engagement
-- **[FPIC 2.0 Implementation Guide](/framework/tools/consciousness/fpic-implementation-guide-en.pdf)** for indigenous consultation processes
-- **[Cross-Cultural Adaptation Toolkit](/framework/tools/consciousness/cross-cultural-adaptation-toolkit-en.pdf)** for respectful practice modification
+- **[Cultural Sensitivity Protocols](/frameworks/tools/consciousness/cultural-sensitivity-protocols-en.pdf)** for respectful cross-cultural engagement
+- **[FPIC 2.0 Implementation Guide](/frameworks/tools/consciousness/fpic-implementation-guide-en.pdf)** for indigenous consultation processes
+- **[Cross-Cultural Adaptation Toolkit](/frameworks/tools/consciousness/cross-cultural-adaptation-toolkit-en.pdf)** for respectful practice modification
 
 ## <a id="implementation-roadmap"></a>Implementation Roadmap
 
@@ -1255,9 +1255,9 @@ For crisis situations requiring rapid consciousness governance deployment:
 **Example (Fictive)**: Following a political transition in 2031, a new government in Eastern Europe implements emergency consciousness governance protocols. Within 90 days, 200 officials complete accelerated training, community trust ratings increase by 45%, and three major policy conflicts are resolved using NVC and restorative justice approaches.
 
 **Tools Available**:
-- **[3-Year Development Roadmap](/framework/tools/consciousness/development-roadmap-en.pdf)** for comprehensive transformation planning
-- **[Emergency Training Protocols](/framework/tools/consciousness/emergency-training-protocols-en.pdf)** for rapid deployment contexts
-- **[Specialization Track Guides](/framework/tools/consciousness/specialization-tracks-en.pdf)** for focused development areas
+- **[3-Year Development Roadmap](/frameworks/tools/consciousness/development-roadmap-en.pdf)** for comprehensive transformation planning
+- **[Emergency Training Protocols](/frameworks/tools/consciousness/emergency-training-protocols-en.pdf)** for rapid deployment contexts
+- **[Specialization Track Guides](/frameworks/tools/consciousness/specialization-tracks-en.pdf)** for focused development areas
 
 ## <a id="risks-and-mitigations"></a>Risks and Mitigations
 
@@ -1315,15 +1315,15 @@ Personal transformation for consciousness governance faces predictable challenge
 - **Global Learning Network**: Systematic sharing of successes and challenges across implementation regions
 
 **Tools Available**:
-- **[Risk Assessment Framework](/framework/tools/consciousness/risk-assessment-framework-en.pdf)** for proactive challenge identification
-- **[Quality Assurance Protocols](/framework/tools/consciousness/quality-assurance-protocols-en.pdf)** for program excellence maintenance
-- **[Crisis Support Guidelines](/framework/tools/consciousness/crisis-support-guidelines-en.pdf)** for participants experiencing difficulty
+- **[Risk Assessment Framework](/frameworks/tools/consciousness/risk-assessment-framework-en.pdf)** for proactive challenge identification
+- **[Quality Assurance Protocols](/frameworks/tools/consciousness/quality-assurance-protocols-en.pdf)** for program excellence maintenance
+- **[Crisis Support Guidelines](/frameworks/tools/consciousness/crisis-support-guidelines-en.pdf)** for participants experiencing difficulty
 
 ---
 
-**Cross-Reference Note**: This section connects to [Governance Structure](/framework/docs/consciousness#01-governance-structure) for institutional integration, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for community engagement, [Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics) for developmental awareness, and [Assessment and Accountability](/framework/docs/consciousness#09-metrics-accountability) for measurement frameworks.
+**Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional integration, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for developmental awareness, and [Assessment and Accountability](/frameworks/docs/consciousness#09-metrics-accountability) for measurement frameworks.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin personal transformation with the [Mindfulness Training Module](/framework/tools/consciousness/mindfulness-training-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin personal transformation with the [Mindfulness Training Module](/frameworks/tools/consciousness/mindfulness-training-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All personal transformation materials are open-access under CC BY-SA 4.0, with sliding scale training options and scholarships prioritized for underrepresented communities and developing regions.
 
@@ -1344,7 +1344,7 @@ Personal transformation for consciousness governance faces predictable challenge
 
 **Estimated Reading Time**: 18 minutes
 
-Collective consciousness represents the emergence of shared awareness, empathy, and wisdom that transcends individual perspectives to generate innovative solutions and unified action. This section outlines comprehensive approaches for fostering collaborative governance that honors diverse voices while building genuine consensus around complex challenges. By integrating dialogue practices, shared visioning, and cultural sensitivity, communities develop the collective intelligence necessary to address interconnected global issues through compassionate and inclusive decision-making, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+Collective consciousness represents the emergence of shared awareness, empathy, and wisdom that transcends individual perspectives to generate innovative solutions and unified action. This section outlines comprehensive approaches for fostering collaborative governance that honors diverse voices while building genuine consensus around complex challenges. By integrating dialogue practices, shared visioning, and cultural sensitivity, communities develop the collective intelligence necessary to address interconnected global issues through compassionate and inclusive decision-making, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-foundation"></a>Purpose and Foundation
 
@@ -1445,10 +1445,10 @@ Traditional indigenous circle methodologies adapted for governance contexts:
   - Establish ongoing dialogue structures for continued collaboration
 
 **Tools Available**:
-- **[Community Dialogue Manual](/framework/tools/consciousness/community-dialogue-manual-en.pdf)** for comprehensive dialogue facilitation
-- **[Deep Listening Training Guide](/framework/tools/consciousness/deep-listening-training-en.pdf)** for developing empathetic communication skills
-- **[Circle Practice Protocols](/framework/tools/consciousness/circle-practice-protocols-en.pdf)** for indigenous-inspired governance dialogues
-- **[Neurodiversity Inclusion Toolkit](/framework/tools/consciousness/neurodiversity-inclusion-toolkit-en.pdf)** for accessible participation design
+- **[Community Dialogue Manual](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf)** for comprehensive dialogue facilitation
+- **[Deep Listening Training Guide](/frameworks/tools/consciousness/deep-listening-training-en.pdf)** for developing empathetic communication skills
+- **[Circle Practice Protocols](/frameworks/tools/consciousness/circle-practice-protocols-en.pdf)** for indigenous-inspired governance dialogues
+- **[Neurodiversity Inclusion Toolkit](/frameworks/tools/consciousness/neurodiversity-inclusion-toolkit-en.pdf)** for accessible participation design
 
 ## <a id="shared-visioning-and-co-creation"></a>Shared Visioning and Co-Creation
 
@@ -1509,10 +1509,10 @@ Bring diverse stakeholders together to create shared visions and action plans:
 **Example (Fictive)**: A post-conflict region in the Balkans uses shared visioning processes to develop a 20-year reconciliation and development plan. Through 18 months of intergenerational dialogue involving former enemies, they create a vision for economic cooperation and cultural healing that reduces ethnic tensions by 60% and attracts €200M in reconstruction investment based on the community-owned development plan.
 
 **Tools Available**:
-- **[Shared Visioning Facilitation Guide](/framework/tools/consciousness/shared-visioning-guide-en.pdf)** for community future-building processes
-- **[Appreciative Inquiry Toolkit](/framework/tools/consciousness/appreciative-inquiry-toolkit-en.pdf)** for strength-based community development
-- **[Youth Visioning Protocols](/framework/tools/consciousness/youth-visioning-protocols-en.pdf)** for intergenerational planning processes
-- **[Digital Co-Creation Platform Guide](/framework/tools/consciousness/digital-co-creation-platform-en.pdf)** for online collaboration tools
+- **[Shared Visioning Facilitation Guide](/frameworks/tools/consciousness/shared-visioning-guide-en.pdf)** for community future-building processes
+- **[Appreciative Inquiry Toolkit](/frameworks/tools/consciousness/appreciative-inquiry-toolkit-en.pdf)** for strength-based community development
+- **[Youth Visioning Protocols](/frameworks/tools/consciousness/youth-visioning-protocols-en.pdf)** for intergenerational planning processes
+- **[Digital Co-Creation Platform Guide](/frameworks/tools/consciousness/digital-co-creation-platform-en.pdf)** for online collaboration tools
 
 ## <a id="cultural-and-spiritual-sensitivity"></a>Cultural and Spiritual Sensitivity
 
@@ -1586,10 +1586,10 @@ Enhanced indigenous consultation frameworks that go beyond legal compliance to g
 **Example (Fictive)**: A consciousness governance initiative in Los Angeles develops culturally adapted processes for the city's diverse communities. Working with Latinx, Korean, Armenian, and Indigenous community leaders, they create multilingual dialogue circles that honor different cultural approaches to consensus-building. The result is a participatory budget process that increases participation from communities of color by 400% and generates culturally responsive solutions to housing and transportation challenges.
 
 **Tools Available**:
-- **[Cultural Sensitivity Protocols](/framework/tools/consciousness/cultural-sensitivity-protocols-en.pdf)** for respectful cross-cultural engagement
-- **[FPIC 2.0 Implementation Guide](/framework/tools/consciousness/fpic-implementation-guide-en.pdf)** for indigenous partnership frameworks
-- **[Multi-Faith Dialogue Toolkit](/framework/tools/consciousness/multi-faith-dialogue-toolkit-en.pdf)** for interfaith collaboration in governance
-- **[Anti-Oppression Framework](/framework/tools/consciousness/anti-oppression-framework-en.pdf)** for addressing systemic inequality in collective processes
+- **[Cultural Sensitivity Protocols](/frameworks/tools/consciousness/cultural-sensitivity-protocols-en.pdf)** for respectful cross-cultural engagement
+- **[FPIC 2.0 Implementation Guide](/frameworks/tools/consciousness/fpic-implementation-guide-en.pdf)** for indigenous partnership frameworks
+- **[Multi-Faith Dialogue Toolkit](/frameworks/tools/consciousness/multi-faith-dialogue-toolkit-en.pdf)** for interfaith collaboration in governance
+- **[Anti-Oppression Framework](/frameworks/tools/consciousness/anti-oppression-framework-en.pdf)** for addressing systemic inequality in collective processes
 
 ## <a id="consciousness-raising-circles"></a>Consciousness-Raising Circles
 
@@ -1684,10 +1684,10 @@ Paulo Freire's popular education methodology adapted for consciousness governanc
 **Example (Fictive)**: Consciousness-raising circles in rural Mississippi bring together Black and white community members to address persistent racial inequality in local governance. Over 18 months, 12 circles involving 150 participants develop shared analysis of systemic racism and implement coordinated advocacy for police accountability and economic development. The process results in election of the first Black mayor in 40 years and establishment of a community-controlled economic development fund.
 
 **Tools Available**:
-- **[Consciousness-Raising Circle Guide](/framework/tools/consciousness/consciousness-raising-circle-guide-en.pdf)** for community-based education and organizing
-- **[Popular Education Toolkit](/framework/tools/consciousness/popular-education-toolkit-en.pdf)** for critical consciousness development
-- **[Circle Facilitation Training](/framework/tools/consciousness/circle-facilitation-training-en.pdf)** for peer leadership development
-- **[Community Action Planning Guide](/framework/tools/consciousness/community-action-planning-en.pdf)** for collective action implementation
+- **[Consciousness-Raising Circle Guide](/frameworks/tools/consciousness/consciousness-raising-circle-guide-en.pdf)** for community-based education and organizing
+- **[Popular Education Toolkit](/frameworks/tools/consciousness/popular-education-toolkit-en.pdf)** for critical consciousness development
+- **[Circle Facilitation Training](/frameworks/tools/consciousness/circle-facilitation-training-en.pdf)** for peer leadership development
+- **[Community Action Planning Guide](/frameworks/tools/consciousness/community-action-planning-en.pdf)** for collective action implementation
 
 ## <a id="digital-platforms-for-collective-engagement"></a>Digital Platforms for Collective Engagement
 
@@ -1766,10 +1766,10 @@ Artificial intelligence tools support human facilitators while preserving authen
 **Example (Fictive)**: A network of indigenous communities across the Amazon uses VR technology to hold virtual traditional councils for addressing climate change and forest protection. Elders from different tribes meet in virtual sacred spaces that recreate traditional gathering places, enabling coordinated resistance to deforestation while maintaining cultural protocols. The platform increases participation by 250% compared to in-person-only meetings and results in unified advocacy that successfully blocks three major mining projects.
 
 **Tools Available**:
-- **[VR Wisdom Council Framework](/framework/tools/consciousness/vr-wisdom-council-framework-en.pdf)** for immersive global collaboration
-- **[AI Dialogue Facilitation Guide](/framework/tools/consciousness/ai-dialogue-facilitation-en.pdf)** for technology-enhanced group processes
-- **[Digital Engagement Platform Design](/framework/tools/consciousness/digital-engagement-platform-en.pdf)** for community-controlled participation tools
-- **[Digital Equity Implementation Plan](/framework/tools/consciousness/digital-equity-plan-en.pdf)** for inclusive technology access
+- **[VR Wisdom Council Framework](/frameworks/tools/consciousness/vr-wisdom-council-framework-en.pdf)** for immersive global collaboration
+- **[AI Dialogue Facilitation Guide](/frameworks/tools/consciousness/ai-dialogue-facilitation-en.pdf)** for technology-enhanced group processes
+- **[Digital Engagement Platform Design](/frameworks/tools/consciousness/digital-engagement-platform-en.pdf)** for community-controlled participation tools
+- **[Digital Equity Implementation Plan](/frameworks/tools/consciousness/digital-equity-plan-en.pdf)** for inclusive technology access
 
 ## <a id="conflict-transformation-and-healing"></a>Conflict Transformation and Healing
 
@@ -1847,10 +1847,10 @@ Move beyond punitive approaches toward healing-centered responses to harm and co
 **Example (Fictive)**: A post-conflict community in Northern Ireland implements comprehensive healing and conflict transformation programs connecting former paramilitary areas. Through 3 years of restorative justice circles, trauma healing programs, and collaborative economic development, they reduce sectarian incidents by 85% and create shared community spaces that were previously impossible due to territorial divisions.
 
 **Tools Available**:
-- **[Restorative Justice Implementation Guide](/framework/tools/consciousness/restorative-justice-guide-en.pdf)** for healing-centered conflict resolution
-- **[Community Mediation Training](/framework/tools/consciousness/community-mediation-training-en.pdf)** for peer conflict resolution capacity
-- **[Trauma-Informed Dialogue Protocols](/framework/tools/consciousness/trauma-informed-dialogue-en.pdf)** for safe conversation facilitation
-- **[Collective Healing Practices Manual](/framework/tools/consciousness/collective-healing-practices-en.pdf)** for community resilience building
+- **[Restorative Justice Implementation Guide](/frameworks/tools/consciousness/restorative-justice-guide-en.pdf)** for healing-centered conflict resolution
+- **[Community Mediation Training](/frameworks/tools/consciousness/community-mediation-training-en.pdf)** for peer conflict resolution capacity
+- **[Trauma-Informed Dialogue Protocols](/frameworks/tools/consciousness/trauma-informed-dialogue-en.pdf)** for safe conversation facilitation
+- **[Collective Healing Practices Manual](/frameworks/tools/consciousness/collective-healing-practices-en.pdf)** for community resilience building
 
 ## <a id="community-wisdom-integration"></a>Community Wisdom Integration
 
@@ -1927,10 +1927,10 @@ Collective consciousness thrives when diverse forms of community knowledge—inc
 **Example (Fictive)**: A Regional Consciousness Hub in Alaska integrates Inuit traditional ecological knowledge with climate science to develop adaptation strategies for rising sea levels. Elder knowledge about historical weather patterns and traditional building techniques combines with youth expertise in renewable energy and digital communication to create innovative community resilience plans that are adopted by 15 Arctic communities and influence international climate adaptation policy.
 
 **Tools Available**:
-- **[Community Knowledge Mapping Guide](/framework/tools/consciousness/community-knowledge-mapping-en.pdf)** for identifying and documenting local wisdom
-- **[Elder Wisdom Integration Protocols](/framework/tools/consciousness/elder-wisdom-integration-en.pdf)** for respectful knowledge sharing
-- **[Youth Leadership Development Framework](/framework/tools/consciousness/youth-leadership-development-en.pdf)** for emerging leader support
-- **[Cultural Arts Integration Toolkit](/framework/tools/consciousness/cultural-arts-integration-en.pdf)** for creative community expression
+- **[Community Knowledge Mapping Guide](/frameworks/tools/consciousness/community-knowledge-mapping-en.pdf)** for identifying and documenting local wisdom
+- **[Elder Wisdom Integration Protocols](/frameworks/tools/consciousness/elder-wisdom-integration-en.pdf)** for respectful knowledge sharing
+- **[Youth Leadership Development Framework](/frameworks/tools/consciousness/youth-leadership-development-en.pdf)** for emerging leader support
+- **[Cultural Arts Integration Toolkit](/frameworks/tools/consciousness/cultural-arts-integration-en.pdf)** for creative community expression
 
 ## <a id="assessment-and-collective-intelligence"></a>Assessment and Collective Intelligence
 
@@ -2004,10 +2004,10 @@ Measuring collective consciousness requires sophisticated approaches that assess
 **Example (Fictive)**: A network of 20 consciousness governance communities develops collaborative assessment protocols that track both individual community outcomes and network-wide learning. Their participatory evaluation approach reveals that communities with strongest elder-youth integration show 40% better policy implementation and 60% higher community satisfaction, leading to targeted intergenerational programming across the network.
 
 **Tools Available**:
-- **[Collective Intelligence Assessment Framework](/framework/tools/consciousness/collective-intelligence-assessment-en.pdf)** for measuring group wisdom and effectiveness
-- **[Social Cohesion Indicators Guide](/framework/tools/consciousness/social-cohesion-indicators-en.pdf)** for community relationship measurement
-- **[Participatory Evaluation Toolkit](/framework/tools/consciousness/participatory-evaluation-toolkit-en.pdf)** for community-led assessment
-- **[Cultural Responsiveness Assessment](/framework/tools/consciousness/cultural-responsiveness-assessment-en.pdf)** for measuring cultural appropriateness
+- **[Collective Intelligence Assessment Framework](/frameworks/tools/consciousness/collective-intelligence-assessment-en.pdf)** for measuring group wisdom and effectiveness
+- **[Social Cohesion Indicators Guide](/frameworks/tools/consciousness/social-cohesion-indicators-en.pdf)** for community relationship measurement
+- **[Participatory Evaluation Toolkit](/frameworks/tools/consciousness/participatory-evaluation-toolkit-en.pdf)** for community-led assessment
+- **[Cultural Responsiveness Assessment](/frameworks/tools/consciousness/cultural-responsiveness-assessment-en.pdf)** for measuring cultural appropriateness
 
 ## <a id="implementation-framework"></a>Implementation Framework
 
@@ -2102,10 +2102,10 @@ Successful collective consciousness development requires systematic implementati
 **Example (Fictive)**: A rural community in Montana implements collective consciousness processes to address conflicts between ranchers, environmentalists, and Native American tribal members over land and water use. Through 18 months of dialogue circles, shared visioning, and collaborative action planning, they develop innovative grazing practices that improve both economic and ecological outcomes while honoring tribal treaty rights. The approach reduces legal conflicts by 90% and becomes a model for similar communities across the American West.
 
 **Tools Available**:
-- **[Community Readiness Assessment](/framework/tools/consciousness/community-readiness-assessment-en.pdf)** for implementation planning
-- **[Phased Implementation Guide](/framework/tools/consciousness/phased-implementation-guide-en.pdf)** for systematic development
-- **[Stakeholder Engagement Strategy](/framework/tools/consciousness/stakeholder-engagement-strategy-en.pdf)** for inclusive participation
-- **[Sustainability Planning Toolkit](/framework/tools/consciousness/sustainability-planning-toolkit-en.pdf)** for long-term viability
+- **[Community Readiness Assessment](/frameworks/tools/consciousness/community-readiness-assessment-en.pdf)** for implementation planning
+- **[Phased Implementation Guide](/frameworks/tools/consciousness/phased-implementation-guide-en.pdf)** for systematic development
+- **[Stakeholder Engagement Strategy](/frameworks/tools/consciousness/stakeholder-engagement-strategy-en.pdf)** for inclusive participation
+- **[Sustainability Planning Toolkit](/frameworks/tools/consciousness/sustainability-planning-toolkit-en.pdf)** for long-term viability
 
 ## <a id="risks-and-mitigations"></a>Risks and Mitigations
 
@@ -2177,16 +2177,16 @@ Collective consciousness development faces predictable challenges that require p
 - **Field Contribution**: Sharing successful models and approaches to support other communities
 
 **Tools Available**:
-- **[Risk Assessment and Mitigation Guide](/framework/tools/consciousness/risk-assessment-mitigation-en.pdf)** for proactive challenge management
-- **[Power Dynamics Monitoring Toolkit](/framework/tools/consciousness/power-dynamics-monitoring-en.pdf)** for addressing inequality in group processes
-- **[Crisis Intervention Protocols](/framework/tools/consciousness/crisis-intervention-protocols-en.pdf)** for serious conflict or trauma response
-- **[Quality Assurance Framework](/framework/tools/consciousness/quality-assurance-framework-en.pdf)** for maintaining process excellence
+- **[Risk Assessment and Mitigation Guide](/frameworks/tools/consciousness/risk-assessment-mitigation-en.pdf)** for proactive challenge management
+- **[Power Dynamics Monitoring Toolkit](/frameworks/tools/consciousness/power-dynamics-monitoring-en.pdf)** for addressing inequality in group processes
+- **[Crisis Intervention Protocols](/frameworks/tools/consciousness/crisis-intervention-protocols-en.pdf)** for serious conflict or trauma response
+- **[Quality Assurance Framework](/frameworks/tools/consciousness/quality-assurance-framework-en.pdf)** for maintaining process excellence
 
 ---
 
-**Cross-Reference Note**: This section connects to [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) for individual preparation, [Governance Structure](/framework/docs/consciousness#01-governance-structure) for institutional integration, [Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics) for understanding diverse value systems, and [Community Engagement](/framework/docs/consciousness#07-community-engagement) for broader participation strategies.
+**Cross-Reference Note**: This section connects to [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual preparation, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional integration, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for understanding diverse value systems, and [Community Engagement](/frameworks/docs/consciousness#07-community-engagement) for broader participation strategies.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin collective consciousness development with the [Community Dialogue Manual](/framework/tools/consciousness/community-dialogue-manual-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin collective consciousness development with the [Community Dialogue Manual](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All collective consciousness materials are open-access under CC BY-SA 4.0, with priority support for marginalized communities and resources for removing participation barriers including interpretation, childcare, and accessibility accommodations.
 
@@ -2209,7 +2209,7 @@ Collective consciousness development faces predictable challenges that require p
 
 **Estimated Reading Time**: 22 minutes
 
-Systemic integration represents the comprehensive embedding of consciousness principles into the fundamental structures, processes, and relationships that govern society. Moving beyond individual transformation and community engagement, this section outlines how conscious governance principles can be woven into the institutional fabric of society—from legal frameworks and economic systems to education and healthcare. By transforming systems rather than just policies, we create sustainable conditions for conscious governance to flourish across all levels of social organization, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+Systemic integration represents the comprehensive embedding of consciousness principles into the fundamental structures, processes, and relationships that govern society. Moving beyond individual transformation and community engagement, this section outlines how conscious governance principles can be woven into the institutional fabric of society—from legal frameworks and economic systems to education and healthcare. By transforming systems rather than just policies, we create sustainable conditions for conscious governance to flourish across all levels of social organization, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-systems-theory-foundation"></a>Purpose and Systems Theory Foundation
 
@@ -2332,10 +2332,10 @@ Transforming governance institutions to embody consciousness principles while ma
 **Example (Fictive)**: The city of Barcelona implements comprehensive institutional transformation over 5 years, establishing citizen assemblies with budget authority, rotating department leadership, and mandatory consciousness training for all managers. The changes result in 40% improvement in citizen satisfaction, 25% increase in policy implementation effectiveness, and recognition as a global model for democratic innovation.
 
 **Tools Available**:
-- **[Institutional Design Framework](/framework/tools/consciousness/institutional-design-framework-en.pdf)** for systematic institution transformation
-- **[Wisdom Council Integration Guide](/framework/tools/consciousness/wisdom-council-integration-en.pdf)** for embedding indigenous and community wisdom
-- **[Decision-Making Process Redesign](/framework/tools/consciousness/decision-making-redesign-en.pdf)** for conscious institutional choices
-- **[Institutional Learning Systems Manual](/framework/tools/consciousness/institutional-learning-systems-en.pdf)** for adaptive capacity building
+- **[Institutional Design Framework](/frameworks/tools/consciousness/institutional-design-framework-en.pdf)** for systematic institution transformation
+- **[Wisdom Council Integration Guide](/frameworks/tools/consciousness/wisdom-council-integration-en.pdf)** for embedding indigenous and community wisdom
+- **[Decision-Making Process Redesign](/frameworks/tools/consciousness/decision-making-redesign-en.pdf)** for conscious institutional choices
+- **[Institutional Learning Systems Manual](/frameworks/tools/consciousness/institutional-learning-systems-en.pdf)** for adaptive capacity building
 
 ## <a id="policy-framework-integration"></a>Policy Framework Integration
 
@@ -2402,10 +2402,10 @@ Embedding consciousness principles into policy development, implementation, and 
 **Example (Fictive)**: Scotland implements comprehensive policy framework transformation that requires community co-design for all major policies, indigenous consultation for land use decisions, and seven-generation impact assessment for infrastructure projects. Within 3 years, citizen satisfaction with government increases by 50%, policy implementation effectiveness improves by 35%, and Scotland becomes a global model for participatory governance.
 
 **Tools Available**:
-- **[Policy Co-Design Framework](/framework/tools/consciousness/policy-co-design-framework-en.pdf)** for community-government collaboration
-- **[Cultural Impact Assessment Guide](/framework/tools/consciousness/cultural-impact-assessment-en.pdf)** for evaluating policy effects on diverse communities
-- **[Future Generation Policy Analysis](/framework/tools/consciousness/future-generation-policy-analysis-en.pdf)** for long-term impact evaluation
-- **[Policy Implementation Learning System](/framework/tools/consciousness/policy-implementation-learning-en.pdf)** for adaptive policy management
+- **[Policy Co-Design Framework](/frameworks/tools/consciousness/policy-co-design-framework-en.pdf)** for community-government collaboration
+- **[Cultural Impact Assessment Guide](/frameworks/tools/consciousness/cultural-impact-assessment-en.pdf)** for evaluating policy effects on diverse communities
+- **[Future Generation Policy Analysis](/frameworks/tools/consciousness/future-generation-policy-analysis-en.pdf)** for long-term impact evaluation
+- **[Policy Implementation Learning System](/frameworks/tools/consciousness/policy-implementation-learning-en.pdf)** for adaptive policy management
 
 ## <a id="legal-and-constitutional-alignment"></a>Legal and Constitutional Alignment
 
@@ -2491,10 +2491,10 @@ Transforming legal systems and constitutional frameworks to embody consciousness
 **Example (Fictive)**: The province of Quebec implements comprehensive legal system transformation including constitutional recognition of ecosystem rights, mandatory restorative justice for most offenses, and community courts with traditional healing integration. Over 5 years, incarceration rates drop by 60%, legal system costs decrease by 40%, and community satisfaction with justice outcomes increases by 80%.
 
 **Tools Available**:
-- **[Constitutional Integration Framework](/framework/tools/consciousness/constitutional-integration-framework-en.pdf)** for embedding consciousness principles in fundamental law
-- **[Restorative Justice Implementation Guide](/framework/tools/consciousness/restorative-justice-implementation-en.pdf)** for transforming criminal justice systems
-- **[Community Court Development Manual](/framework/tools/consciousness/community-court-development-en.pdf)** for community-controlled justice
-- **[Legal Professional Consciousness Training](/framework/tools/consciousness/legal-professional-training-en.pdf)** for transforming legal practice
+- **[Constitutional Integration Framework](/frameworks/tools/consciousness/constitutional-integration-framework-en.pdf)** for embedding consciousness principles in fundamental law
+- **[Restorative Justice Implementation Guide](/frameworks/tools/consciousness/restorative-justice-implementation-en.pdf)** for transforming criminal justice systems
+- **[Community Court Development Manual](/frameworks/tools/consciousness/community-court-development-en.pdf)** for community-controlled justice
+- **[Legal Professional Consciousness Training](/frameworks/tools/consciousness/legal-professional-training-en.pdf)** for transforming legal practice
 
 ## <a id="economic-system-integration"></a>Economic System Integration
 
@@ -2580,10 +2580,10 @@ Transforming economic structures and relationships to align with consciousness p
 **Example (Fictive)**: The city-state of Barcelona implements comprehensive economic transformation including public banking, universal basic services, and 40% cooperative ownership requirements for local businesses. Over 7 years, inequality decreases by 50%, ecological footprint drops by 35%, and citizen well-being indicators improve by 60%, demonstrating viability of consciousness-based economics.
 
 **Tools Available**:
-- **[Cooperative Development Toolkit](/framework/tools/consciousness/cooperative-development-toolkit-en.pdf)** for worker and community ownership
-- **[Alternative Currency Implementation Guide](/framework/tools/consciousness/alternative-currency-guide-en.pdf)** for local exchange systems
-- **[Well-being Economics Framework](/framework/tools/consciousness/wellbeing-economics-framework-en.pdf)** for post-GDP measurement systems
-- **[Community Investment Fund Manual](/framework/tools/consciousness/community-investment-fund-en.pdf)** for local economic development
+- **[Cooperative Development Toolkit](/frameworks/tools/consciousness/cooperative-development-toolkit-en.pdf)** for worker and community ownership
+- **[Alternative Currency Implementation Guide](/frameworks/tools/consciousness/alternative-currency-guide-en.pdf)** for local exchange systems
+- **[Well-being Economics Framework](/frameworks/tools/consciousness/wellbeing-economics-framework-en.pdf)** for post-GDP measurement systems
+- **[Community Investment Fund Manual](/frameworks/tools/consciousness/community-investment-fund-en.pdf)** for local economic development
 
 ## <a id="educational-system-transformation"></a>Educational System Transformation
 
@@ -2659,10 +2659,10 @@ Redesigning education systems to develop whole human beings capable of ethical l
 **Example (Fictive)**: The state of Vermont implements comprehensive education transformation including democratic governance in all schools, elimination of standardized testing, mandatory contemplative practices, and community service requirements. Over 5 years, student well-being improves by 40%, teacher satisfaction increases by 60%, and Vermont becomes a global destination for education innovation and teacher development.
 
 **Tools Available**:
-- **[Consciousness-Based Education Framework](/framework/tools/consciousness/consciousness-education-framework-en.pdf)** for whole human development
-- **[Democratic School Governance Guide](/framework/tools/consciousness/democratic-school-governance-en.pdf)** for student and community participation
-- **[Social Justice Education Toolkit](/framework/tools/consciousness/social-justice-education-toolkit-en.pdf)** for anti-oppression education
-- **[Place-Based Learning Manual](/framework/tools/consciousness/place-based-learning-manual-en.pdf)** for community-connected education
+- **[Consciousness-Based Education Framework](/frameworks/tools/consciousness/consciousness-education-framework-en.pdf)** for whole human development
+- **[Democratic School Governance Guide](/frameworks/tools/consciousness/democratic-school-governance-en.pdf)** for student and community participation
+- **[Social Justice Education Toolkit](/frameworks/tools/consciousness/social-justice-education-toolkit-en.pdf)** for anti-oppression education
+- **[Place-Based Learning Manual](/frameworks/tools/consciousness/place-based-learning-manual-en.pdf)** for community-connected education
 
 ## <a id="healthcare-and-social-services-integration"></a>Healthcare and Social Services Integration
 
@@ -2768,10 +2768,10 @@ Transforming healthcare and social services from illness treatment and crisis re
 **Example (Fictive)**: The province of British Columbia implements comprehensive health system transformation including community health cooperatives, traditional medicine integration, and social determinants address. Over 8 years, health outcomes improve by 35%, health costs decrease by 25%, and community satisfaction with health services increases by 70%, while Indigenous health disparities are eliminated.
 
 **Tools Available**:
-- **[Community Health Worker Training Program](/framework/tools/consciousness/community-health-worker-training-en.pdf)** for neighborhood health capacity
-- **[Traditional Medicine Integration Guide](/framework/tools/consciousness/traditional-medicine-integration-en.pdf)** for holistic health systems
-- **[Trauma-Informed Services Framework](/framework/tools/consciousness/trauma-informed-services-framework-en.pdf)** for healing-centered care
-- **[Community Health Assessment Toolkit](/framework/tools/consciousness/community-health-assessment-en.pdf)** for participatory health planning
+- **[Community Health Worker Training Program](/frameworks/tools/consciousness/community-health-worker-training-en.pdf)** for neighborhood health capacity
+- **[Traditional Medicine Integration Guide](/frameworks/tools/consciousness/traditional-medicine-integration-en.pdf)** for holistic health systems
+- **[Trauma-Informed Services Framework](/frameworks/tools/consciousness/trauma-informed-services-framework-en.pdf)** for healing-centered care
+- **[Community Health Assessment Toolkit](/frameworks/tools/consciousness/community-health-assessment-en.pdf)** for participatory health planning
 
 ## <a id="environmental-and-ecological-integration"></a>Environmental and Ecological Integration
 
@@ -2863,10 +2863,10 @@ Embedding ecological consciousness and environmental justice into all aspects of
 **Example (Fictive)**: Costa Rica achieves comprehensive ecological integration including constitutional rights for all ecosystems, community ownership of 60% of renewable energy, elimination of single-use plastics, and bioregional governance councils with indigenous leadership. Over 10 years, biodiversity increases by 40%, carbon emissions drop by 80%, and Costa Rica becomes a global model for ecological democracy.
 
 **Tools Available**:
-- **[Rights of Nature Implementation Guide](/framework/tools/consciousness/rights-of-nature-implementation-en.pdf)** for legal ecological protection
-- **[Environmental Justice Organizing Toolkit](/framework/tools/consciousness/environmental-justice-organizing-en.pdf)** for community environmental advocacy
-- **[Bioregional Governance Framework](/framework/tools/consciousness/bioregional-governance-framework-en.pdf)** for ecosystem-based planning
-- **[Climate Justice Action Plan](/framework/tools/consciousness/climate-justice-action-plan-en.pdf)** for equitable climate response
+- **[Rights of Nature Implementation Guide](/frameworks/tools/consciousness/rights-of-nature-implementation-en.pdf)** for legal ecological protection
+- **[Environmental Justice Organizing Toolkit](/frameworks/tools/consciousness/environmental-justice-organizing-en.pdf)** for community environmental advocacy
+- **[Bioregional Governance Framework](/frameworks/tools/consciousness/bioregional-governance-framework-en.pdf)** for ecosystem-based planning
+- **[Climate Justice Action Plan](/frameworks/tools/consciousness/climate-justice-action-plan-en.pdf)** for equitable climate response
 
 ## <a id="technology-and-innovation-systems"></a>Technology and Innovation Systems
 
@@ -2958,10 +2958,10 @@ Ensuring technology development and deployment serves collective well-being, eco
 **Example (Fictive)**: The city-state of Austin implements comprehensive technology transformation including municipal broadband as a public utility, worker ownership requirements for platform companies, and community participation in all major technology decisions. Over 6 years, digital inequality is eliminated, technology worker satisfaction increases by 80%, and Austin becomes a global hub for cooperative and open-source technology development.
 
 **Tools Available**:
-- **[Community Technology Assessment Framework](/framework/tools/consciousness/community-technology-assessment-en.pdf)** for participatory technology evaluation
-- **[Digital Democracy Platform Guide](/framework/tools/consciousness/digital-democracy-platform-en.pdf)** for online participation tools
-- **[Technology Cooperative Development Manual](/framework/tools/consciousness/technology-cooperative-development-en.pdf)** for community-owned technology enterprises
-- **[AI Ethics Implementation Toolkit](/framework/tools/consciousness/ai-ethics-implementation-en.pdf)** for accountable artificial intelligence
+- **[Community Technology Assessment Framework](/frameworks/tools/consciousness/community-technology-assessment-en.pdf)** for participatory technology evaluation
+- **[Digital Democracy Platform Guide](/frameworks/tools/consciousness/digital-democracy-platform-en.pdf)** for online participation tools
+- **[Technology Cooperative Development Manual](/frameworks/tools/consciousness/technology-cooperative-development-en.pdf)** for community-owned technology enterprises
+- **[AI Ethics Implementation Toolkit](/frameworks/tools/consciousness/ai-ethics-implementation-en.pdf)** for accountable artificial intelligence
 
 ## <a id="international-and-multi-level-integration"></a>International and Multi-Level Integration
 
@@ -3053,10 +3053,10 @@ Developing consciousness governance across multiple scales from local to global 
 **Example (Fictive)**: A network of 100+ consciousness governance communities across 6 continents establishes the Global Consciousness Governance Alliance, creating formal cooperation agreements, shared resources, and coordinated responses to global challenges. Within 10 years, the network influences UN reform, establishes bioregional environmental treaties, and demonstrates alternative approaches to international cooperation based on mutual aid and ecological stewardship.
 
 **Tools Available**:
-- **[Multi-Level Governance Framework](/framework/tools/consciousness/multi-level-governance-framework-en.pdf)** for coordination across scales
-- **[International Cooperation Guide](/framework/tools/consciousness/international-cooperation-guide-en.pdf)** for consciousness diplomacy
-- **[Sister City Partnership Manual](/framework/tools/consciousness/sister-city-partnership-manual-en.pdf)** for local-global connections
-- **[Global Network Development Toolkit](/framework/tools/consciousness/global-network-development-en.pdf)** for international consciousness governance networks
+- **[Multi-Level Governance Framework](/frameworks/tools/consciousness/multi-level-governance-framework-en.pdf)** for coordination across scales
+- **[International Cooperation Guide](/frameworks/tools/consciousness/international-cooperation-guide-en.pdf)** for consciousness diplomacy
+- **[Sister City Partnership Manual](/frameworks/tools/consciousness/sister-city-partnership-manual-en.pdf)** for local-global connections
+- **[Global Network Development Toolkit](/frameworks/tools/consciousness/global-network-development-en.pdf)** for international consciousness governance networks
 
 ## <a id="transition-management-and-change-strategy"></a>Transition Management and Change Strategy
 
@@ -3154,10 +3154,10 @@ Managing the complex process of transitioning from current governance systems to
 **Example (Fictive)**: A coordinated transition strategy across the Pacific Northwest involves 50+ communities, 3 states/provinces, and multiple indigenous nations in comprehensive consciousness governance transition. Over 12 years, the region achieves carbon neutrality, eliminates homelessness, and demonstrates bioregional governance that influences policy across North America and internationally.
 
 **Tools Available**:
-- **[Transition Strategy Planning Guide](/framework/tools/consciousness/transition-strategy-planning-en.pdf)** for comprehensive change management
-- **[Stakeholder Engagement Toolkit](/framework/tools/consciousness/stakeholder-engagement-toolkit-en.pdf)** for coalition building
-- **[Political Strategy Manual](/framework/tools/consciousness/political-strategy-manual-en.pdf)** for electoral and policy advocacy
-- **[Crisis Response Protocols](/framework/tools/consciousness/crisis-response-protocols-en.pdf)** for emergency consciousness governance deployment
+- **[Transition Strategy Planning Guide](/frameworks/tools/consciousness/transition-strategy-planning-en.pdf)** for comprehensive change management
+- **[Stakeholder Engagement Toolkit](/frameworks/tools/consciousness/stakeholder-engagement-toolkit-en.pdf)** for coalition building
+- **[Political Strategy Manual](/frameworks/tools/consciousness/political-strategy-manual-en.pdf)** for electoral and policy advocacy
+- **[Crisis Response Protocols](/frameworks/tools/consciousness/crisis-response-protocols-en.pdf)** for emergency consciousness governance deployment
 
 ## <a id="assessment-and-system-health-monitoring"></a>Assessment and System Health Monitoring
 
@@ -3265,10 +3265,10 @@ Developing comprehensive systems for monitoring the health and effectiveness of 
 **Example (Fictive)**: A network of 25 consciousness governance communities develops collaborative assessment system that tracks 50+ indicators across individual, community, and systemic levels. Over 5 years, the system demonstrates 40% improvement in well-being outcomes, 60% increase in civic participation, and 35% reduction in social conflicts, providing evidence for consciousness governance effectiveness and influencing policy in 3 countries.
 
 **Tools Available**:
-- **[System Health Monitoring Framework](/framework/tools/consciousness/system-health-monitoring-en.pdf)** for comprehensive governance assessment
-- **[Community Indicator Development Guide](/framework/tools/consciousness/community-indicator-development-en.pdf)** for participatory evaluation design
-- **[Participatory Research Training Manual](/framework/tools/consciousness/participatory-research-training-en.pdf)** for community-based evaluation
-- **[Assessment Data Analysis Toolkit](/framework/tools/consciousness/assessment-data-analysis-en.pdf)** for evaluation and learning
+- **[System Health Monitoring Framework](/frameworks/tools/consciousness/system-health-monitoring-en.pdf)** for comprehensive governance assessment
+- **[Community Indicator Development Guide](/frameworks/tools/consciousness/community-indicator-development-en.pdf)** for participatory evaluation design
+- **[Participatory Research Training Manual](/frameworks/tools/consciousness/participatory-research-training-en.pdf)** for community-based evaluation
+- **[Assessment Data Analysis Toolkit](/frameworks/tools/consciousness/assessment-data-analysis-en.pdf)** for evaluation and learning
 
 ## <a id="risks-and-adaptive-management"></a>Risks and Adaptive Management
 
@@ -3359,16 +3359,16 @@ Anticipating and managing the complex challenges and risks associated with syste
 **Example (Fictive)**: A consciousness governance network faces coordinated opposition from corporate and political interests that launch legal challenges, media attacks, and funding cuts. The network responds with unified communication strategy, legal defense coordination, alternative funding development, and increased community organizing. Within 18 months, the opposition is neutralized and consciousness governance emerges stronger with increased public support and legal protections.
 
 **Tools Available**:
-- **[Risk Assessment and Management Framework](/framework/tools/consciousness/risk-assessment-management-en.pdf)** for comprehensive challenge anticipation
-- **[Crisis Response Protocol Manual](/framework/tools/consciousness/crisis-response-manual-en.pdf)** for emergency governance procedures
-- **[Adaptive Management Toolkit](/framework/tools/consciousness/adaptive-management-toolkit-en.pdf)** for continuous learning and improvement
-- **[Resistance Management Guide](/framework/tools/consciousness/resistance-management-guide-en.pdf)** for addressing opposition and conflict
+- **[Risk Assessment and Management Framework](/frameworks/tools/consciousness/risk-assessment-management-en.pdf)** for comprehensive challenge anticipation
+- **[Crisis Response Protocol Manual](/frameworks/tools/consciousness/crisis-response-manual-en.pdf)** for emergency governance procedures
+- **[Adaptive Management Toolkit](/frameworks/tools/consciousness/adaptive-management-toolkit-en.pdf)** for continuous learning and improvement
+- **[Resistance Management Guide](/frameworks/tools/consciousness/resistance-management-guide-en.pdf)** for addressing opposition and conflict
 
 ---
 
-**Cross-Reference Note**: This section connects to [Governance Structure](/framework/docs/consciousness#01-governance-structure) for institutional frameworks, [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) for individual preparation, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for community engagement, [Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics) for understanding diverse value systems, and [Economic Realignment](/framework/docs/consciousness#06-economic-realignment) for alternative economic models.
+**Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional frameworks, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual preparation, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for understanding diverse value systems, and [Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment) for alternative economic models.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin systemic integration with the [Institutional Design Framework](/framework/tools/consciousness/institutional-design-framework-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin systemic integration with the [Institutional Design Framework](/frameworks/tools/consciousness/institutional-design-framework-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All systemic integration materials are open-access under CC BY-SA 4.0, with priority technical assistance for marginalized communities and resources for removing implementation barriers including funding, training, and institutional support.
 
@@ -3391,7 +3391,7 @@ Anticipating and managing the complex challenges and risks associated with syste
 
 **Estimated Reading Time**: 20 minutes
 
-Spiral Dynamics provides a powerful framework for understanding the diverse value systems that shape human behavior, governance preferences, and social organization. By recognizing that different communities and cultures operate from different developmental stages and value priorities, consciousness governance can adapt its approaches to meet people where they are while supporting healthy development toward greater complexity and integration. This section outlines how Spiral Dynamics principles can be applied ethically and effectively to create inclusive governance that honors diversity while building bridges across difference, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+Spiral Dynamics provides a powerful framework for understanding the diverse value systems that shape human behavior, governance preferences, and social organization. By recognizing that different communities and cultures operate from different developmental stages and value priorities, consciousness governance can adapt its approaches to meet people where they are while supporting healthy development toward greater complexity and integration. This section outlines how Spiral Dynamics principles can be applied ethically and effectively to create inclusive governance that honors diversity while building bridges across difference, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-theoretical-foundation"></a>Purpose and Theoretical Foundation
 
@@ -3629,9 +3629,9 @@ Most contemporary societies contain multiple value systems operating simultaneou
 - **Leadership and Modeling**: Visible examples of higher-stage thinking can inspire development
 
 **Tools Available**:
-- **[Global Value Systems Mapping Guide](/framework/tools/consciousness/global-value-systems-mapping-en.pdf)** for understanding regional value system distributions
-- **[Value System Assessment Toolkit](/framework/tools/consciousness/value-system-assessment-en.pdf)** for analyzing community value system profiles
-- **[Cultural Value Integration Framework](/framework/tools/consciousness/cultural-value-integration-en.pdf)** for working across value system differences
+- **[Global Value Systems Mapping Guide](/frameworks/tools/consciousness/global-value-systems-mapping-en.pdf)** for understanding regional value system distributions
+- **[Value System Assessment Toolkit](/frameworks/tools/consciousness/value-system-assessment-en.pdf)** for analyzing community value system profiles
+- **[Cultural Value Integration Framework](/frameworks/tools/consciousness/cultural-value-integration-en.pdf)** for working across value system differences
 
 ## <a id="vmeme-specific-governance-approaches"></a>vMeme-Specific Governance Approaches
 
@@ -3771,9 +3771,9 @@ Detailed strategies for adapting consciousness governance principles to work eff
 **Implementation Example**: Bhutan's Gross National Happiness approach integrates global consciousness and spiritual wisdom with practical governance while adapting to contemporary development challenges.
 
 **Tools Available**:
-- **[vMeme-Specific Governance Toolkit](/framework/tools/consciousness/vmeme-governance-toolkit-en.pdf)** for adapting approaches to different value systems
-- **[Value System Bridge-Building Guide](/framework/tools/consciousness/value-system-bridge-building-en.pdf)** for working across differences
-- **[Adaptive Leadership Development Framework](/framework/tools/consciousness/adaptive-leadership-development-en.pdf)** for multi-value system leadership
+- **[vMeme-Specific Governance Toolkit](/frameworks/tools/consciousness/vmeme-governance-toolkit-en.pdf)** for adapting approaches to different value systems
+- **[Value System Bridge-Building Guide](/frameworks/tools/consciousness/value-system-bridge-building-en.pdf)** for working across differences
+- **[Adaptive Leadership Development Framework](/frameworks/tools/consciousness/adaptive-leadership-development-en.pdf)** for multi-value system leadership
 
 ## <a id="transition-and-development-strategies"></a>Transition and Development Strategies
 
@@ -3867,9 +3867,9 @@ Many communities contain people operating from different value systems:
 **Example (Fictive)**: A consciousness governance initiative in Guatemala works with communities ranging from indigenous Purple traditionalism to urban Orange modernization. They create differentiated approaches for each community while building bridges through shared environmental challenges and cultural exchange programs that honor all value systems.
 
 **Tools Available**:
-- **[Development Support Framework](/framework/tools/consciousness/development-support-framework-en.pdf)** for supporting healthy value system transitions
-- **[Community Development Assessment](/framework/tools/consciousness/community-development-assessment-en.pdf)** for understanding collective developmental needs
-- **[Individual Development Planning Guide](/framework/tools/consciousness/individual-development-planning-en.pdf)** for personal growth support
+- **[Development Support Framework](/frameworks/tools/consciousness/development-support-framework-en.pdf)** for supporting healthy value system transitions
+- **[Community Development Assessment](/frameworks/tools/consciousness/community-development-assessment-en.pdf)** for understanding collective developmental needs
+- **[Individual Development Planning Guide](/frameworks/tools/consciousness/individual-development-planning-en.pdf)** for personal growth support
 
 ## <a id="integration-and-second-tier-thinking"></a>Integration and Second-Tier Thinking
 
@@ -3952,9 +3952,9 @@ Developing and applying second-tier consciousness that can integrate multiple va
 **Example (Fictive)**: A consciousness governance initiative in Canada develops second-tier leadership that can work with Indigenous Purple traditionalism, Québécois Blue cultural preservation, Ontario Orange business culture, and British Columbia Green environmentalism, creating integrated approaches to climate change that honor all perspectives while achieving concrete results.
 
 **Tools Available**:
-- **[Second-Tier Leadership Development Program](/framework/tools/consciousness/second-tier-leadership-development-en.pdf)** for integration capacity building
-- **[Multi-Value System Communication Guide](/framework/tools/consciousness/multi-value-communication-guide-en.pdf)** for effective cross-vMeme communication
-- **[Integration Assessment Framework](/framework/tools/consciousness/integration-assessment-framework-en.pdf)** for evaluating second-tier capacity
+- **[Second-Tier Leadership Development Program](/frameworks/tools/consciousness/second-tier-leadership-development-en.pdf)** for integration capacity building
+- **[Multi-Value System Communication Guide](/frameworks/tools/consciousness/multi-value-communication-guide-en.pdf)** for effective cross-vMeme communication
+- **[Integration Assessment Framework](/frameworks/tools/consciousness/integration-assessment-framework-en.pdf)** for evaluating second-tier capacity
 
 ## <a id="cultural-adaptation-and-decolonial-applications"></a>Cultural Adaptation and Decolonial Applications
 
@@ -4053,9 +4053,9 @@ Applying Spiral Dynamics in culturally sensitive ways that avoid Western bias an
 **Example (Fictive)**: A consciousness governance initiative in the Amazon works with 15 indigenous communities to develop a culturally adapted framework that honors traditional circular time concepts, shamanic wisdom, and forest-based governance while addressing contemporary challenges of deforestation and climate change. The resulting approach integrates traditional and contemporary knowledge without imposing Western developmental assumptions.
 
 **Tools Available**:
-- **[Cultural Adaptation Framework](/framework/tools/consciousness/cultural-adaptation-framework-en.pdf)** for respectful cross-cultural application
-- **[Decolonial Assessment Toolkit](/framework/tools/consciousness/decolonial-assessment-toolkit-en.pdf)** for evaluating cultural appropriateness
-- **[Indigenous Partnership Protocols](/framework/tools/consciousness/indigenous-partnership-protocols-en.pdf)** for authentic community collaboration
+- **[Cultural Adaptation Framework](/frameworks/tools/consciousness/cultural-adaptation-framework-en.pdf)** for respectful cross-cultural application
+- **[Decolonial Assessment Toolkit](/frameworks/tools/consciousness/decolonial-assessment-toolkit-en.pdf)** for evaluating cultural appropriateness
+- **[Indigenous Partnership Protocols](/frameworks/tools/consciousness/indigenous-partnership-protocols-en.pdf)** for authentic community collaboration
 
 ## <a id="conflict-resolution-through-value-system-understanding"></a>Conflict Resolution Through Value System Understanding
 
@@ -4170,9 +4170,9 @@ Using Spiral Dynamics insights to understand, prevent, and resolve conflicts bas
 **Example (Fictive)**: A water rights conflict in California between agricultural interests (Orange economic efficiency), environmental groups (Green ecological protection), indigenous tribes (Purple traditional stewardship), and urban communities (Blue regulatory order) is resolved through a multi-stage process that honors all value systems while creating innovative water sharing and conservation agreements.
 
 **Tools Available**:
-- **[Value System Conflict Analysis Framework](/framework/tools/consciousness/value-system-conflict-analysis-en.pdf)** for understanding conflict dynamics
-- **[Cross-vMeme Dialogue Facilitation Guide](/framework/tools/consciousness/cross-vmeme-dialogue-facilitation-en.pdf)** for structured conversations
-- **[Bridge-Building Process Design Toolkit](/framework/tools/consciousness/bridge-building-process-design-en.pdf)** for creating integration opportunities
+- **[Value System Conflict Analysis Framework](/frameworks/tools/consciousness/value-system-conflict-analysis-en.pdf)** for understanding conflict dynamics
+- **[Cross-vMeme Dialogue Facilitation Guide](/frameworks/tools/consciousness/cross-vmeme-dialogue-facilitation-en.pdf)** for structured conversations
+- **[Bridge-Building Process Design Toolkit](/frameworks/tools/consciousness/bridge-building-process-design-en.pdf)** for creating integration opportunities
 
 ## <a id="implementation-framework-and-tools"></a>Implementation Framework and Tools
 
@@ -4324,10 +4324,10 @@ Practical approaches for integrating Spiral Dynamics into consciousness governan
 **Example (Fictive)**: A consciousness governance initiative in South Africa develops comprehensive Spiral Dynamics application that honors traditional African Ubuntu values, Afrikaner cultural traditions, English business culture, and emerging post-apartheid identity, creating governance approaches that reduce racial tensions while building national unity and effective governance.
 
 **Tools Available**:
-- **[Spiral Dynamics Implementation Toolkit](/framework/tools/consciousness/spiral-dynamics-implementation-en.pdf)** for comprehensive value system integration
-- **[Value System Assessment Instruments](/framework/tools/consciousness/value-system-assessment-instruments-en.pdf)** for community and individual evaluation
-- **[Cultural Adaptation Guidelines](/framework/tools/consciousness/cultural-adaptation-guidelines-en.pdf)** for respectful cross-cultural application
-- **[Second-Tier Leadership Development Program](/framework/tools/consciousness/second-tier-leadership-program-en.pdf)** for integration capacity building
+- **[Spiral Dynamics Implementation Toolkit](/frameworks/tools/consciousness/spiral-dynamics-implementation-en.pdf)** for comprehensive value system integration
+- **[Value System Assessment Instruments](/frameworks/tools/consciousness/value-system-assessment-instruments-en.pdf)** for community and individual evaluation
+- **[Cultural Adaptation Guidelines](/frameworks/tools/consciousness/cultural-adaptation-guidelines-en.pdf)** for respectful cross-cultural application
+- **[Second-Tier Leadership Development Program](/frameworks/tools/consciousness/second-tier-leadership-program-en.pdf)** for integration capacity building
 
 ## <a id="assessment-and-development-tracking"></a>Assessment and Development Tracking
 
@@ -4486,10 +4486,10 @@ Systematic approaches for measuring value system understanding, integration effe
 **Example (Fictive)**: A consciousness governance network across 20 communities develops collaborative assessment system that tracks value system integration, cultural appropriateness, and development progress using community-designed indicators, peer evaluation, and culturally adapted measurement methods, providing evidence for approach effectiveness while respecting cultural diversity.
 
 **Tools Available**:
-- **[Value System Assessment Toolkit](/framework/tools/consciousness/value-system-assessment-toolkit-en.pdf)** for comprehensive evaluation approaches
-- **[Integration Effectiveness Measurement Guide](/framework/tools/consciousness/integration-effectiveness-measurement-en.pdf)** for tracking multi-value system governance
-- **[Community Development Assessment Framework](/framework/tools/consciousness/community-development-assessment-framework-en.pdf)** for participatory evaluation
-- **[Cultural Sensitivity Assessment Protocols](/framework/tools/consciousness/cultural-sensitivity-assessment-en.pdf)** for ethical evaluation practices
+- **[Value System Assessment Toolkit](/frameworks/tools/consciousness/value-system-assessment-toolkit-en.pdf)** for comprehensive evaluation approaches
+- **[Integration Effectiveness Measurement Guide](/frameworks/tools/consciousness/integration-effectiveness-measurement-en.pdf)** for tracking multi-value system governance
+- **[Community Development Assessment Framework](/frameworks/tools/consciousness/community-development-assessment-framework-en.pdf)** for participatory evaluation
+- **[Cultural Sensitivity Assessment Protocols](/frameworks/tools/consciousness/cultural-sensitivity-assessment-en.pdf)** for ethical evaluation practices
 
 ## <a id="risks-and-ethical-considerations"></a>Risks and Ethical Considerations
 
@@ -4681,16 +4681,16 @@ Addressing potential misuses and ethical challenges in applying Spiral Dynamics 
 **Example (Fictive)**: A consciousness governance initiative in Australia develops comprehensive ethical protocols for working with Aboriginal communities that include cultural advisory committees, traditional knowledge protection, benefit sharing agreements, and community veto power, resulting in approaches that strengthen traditional culture while supporting contemporary governance challenges.
 
 **Tools Available**:
-- **[Ethical Application Framework](/framework/tools/consciousness/ethical-application-framework-en.pdf)** for responsible Spiral Dynamics use
-- **[Cultural Sensitivity Assessment Toolkit](/framework/tools/consciousness/cultural-sensitivity-assessment-en.pdf)** for preventing bias and appropriation
-- **[Community Consent Protocols](/framework/tools/consciousness/community-consent-protocols-en.pdf)** for genuine participation and partnership
-- **[Risk Assessment and Mitigation Guide](/framework/tools/consciousness/risk-assessment-mitigation-guide-en.pdf)** for preventing misapplication and harm
+- **[Ethical Application Framework](/frameworks/tools/consciousness/ethical-application-framework-en.pdf)** for responsible Spiral Dynamics use
+- **[Cultural Sensitivity Assessment Toolkit](/frameworks/tools/consciousness/cultural-sensitivity-assessment-en.pdf)** for preventing bias and appropriation
+- **[Community Consent Protocols](/frameworks/tools/consciousness/community-consent-protocols-en.pdf)** for genuine participation and partnership
+- **[Risk Assessment and Mitigation Guide](/frameworks/tools/consciousness/risk-assessment-mitigation-guide-en.pdf)** for preventing misapplication and harm
 
 ---
 
-**Cross-Reference Note**: This section connects to [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) for individual development understanding, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for community engagement across difference, [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) for institutional value system adaptation, and [Cross-Cultural Translation](/framework/docs/consciousness#12-cross-cultural-translation) for cultural sensitivity in implementation.
+**Cross-Reference Note**: This section connects to [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual development understanding, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement across difference, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for institutional value system adaptation, and [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) for cultural sensitivity in implementation.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin value system understanding with the [Value System Assessment Toolkit](/framework/tools/consciousness/value-system-assessment-toolkit-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin value system understanding with the [Value System Assessment Toolkit](/frameworks/tools/consciousness/value-system-assessment-toolkit-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All Spiral Dynamics integration materials are open-access under CC BY-SA 4.0, with priority support for community-led adaptation, indigenous partnership, and resources for preventing cultural appropriation while supporting authentic cultural expression and development.
 
@@ -4714,7 +4714,7 @@ Addressing potential misuses and ethical challenges in applying Spiral Dynamics 
 
 **Estimated Reading Time**: 25 minutes
 
-Economic realignment represents the fundamental transformation of economic systems from growth-obsessed, extractive capitalism toward regenerative, equitable systems that serve collective well-being and planetary health. This shift recognizes that consciousness governance requires economic structures that align with values of cooperation, sustainability, and social justice rather than competition, extraction, and accumulation. By reimagining how we create, distribute, and measure value, economic realignment creates the material foundation for consciousness governance to flourish at all levels of society, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+Economic realignment represents the fundamental transformation of economic systems from growth-obsessed, extractive capitalism toward regenerative, equitable systems that serve collective well-being and planetary health. This shift recognizes that consciousness governance requires economic structures that align with values of cooperation, sustainability, and social justice rather than competition, extraction, and accumulation. By reimagining how we create, distribute, and measure value, economic realignment creates the material foundation for consciousness governance to flourish at all levels of society, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-economic-philosophy-foundation"></a>Purpose and Economic Philosophy Foundation
 
@@ -6252,19 +6252,19 @@ Systematic approaches for implementing economic realignment at community, region
 ### Tools and Resources
 
 **Assessment and Planning Tools**:
-- **[Community Economic Assessment Toolkit](/framework/tools/consciousness/community-economic-assessment-en.pdf)** for evaluating local economic conditions and opportunities
-- **[Cooperative Feasibility Study Guide](/framework/tools/consciousness/cooperative-feasibility-study-en.pdf)** for developing cooperative enterprises
-- **[Community Wealth Building Strategy Framework](/framework/tools/consciousness/community-wealth-building-strategy-en.pdf)** for comprehensive local economic development
+- **[Community Economic Assessment Toolkit](/frameworks/tools/consciousness/community-economic-assessment-en.pdf)** for evaluating local economic conditions and opportunities
+- **[Cooperative Feasibility Study Guide](/frameworks/tools/consciousness/cooperative-feasibility-study-en.pdf)** for developing cooperative enterprises
+- **[Community Wealth Building Strategy Framework](/frameworks/tools/consciousness/community-wealth-building-strategy-en.pdf)** for comprehensive local economic development
 
 **Implementation Resources**:
-- **[Cooperative Development Manual](/framework/tools/consciousness/cooperative-development-manual-en.pdf)** for starting and supporting cooperative enterprises
-- **[Local Currency Implementation Guide](/framework/tools/consciousness/local-currency-implementation-en.pdf)** for community currency development
-- **[Community Investment Fund Framework](/framework/tools/consciousness/community-investment-fund-framework-en.pdf)** for local capital development
+- **[Cooperative Development Manual](/frameworks/tools/consciousness/cooperative-development-manual-en.pdf)** for starting and supporting cooperative enterprises
+- **[Local Currency Implementation Guide](/frameworks/tools/consciousness/local-currency-implementation-en.pdf)** for community currency development
+- **[Community Investment Fund Framework](/frameworks/tools/consciousness/community-investment-fund-framework-en.pdf)** for local capital development
 
 **Policy and Advocacy Tools**:
-- **[Economic Democracy Policy Toolkit](/framework/tools/consciousness/economic-democracy-policy-toolkit-en.pdf)** for municipal policy reform
-- **[Public Banking Advocacy Manual](/framework/tools/consciousness/public-banking-advocacy-manual-en.pdf)** for community banking development
-- **[Just Transition Planning Guide](/framework/tools/consciousness/just-transition-planning-guide-en.pdf)** for worker and community transition support
+- **[Economic Democracy Policy Toolkit](/frameworks/tools/consciousness/economic-democracy-policy-toolkit-en.pdf)** for municipal policy reform
+- **[Public Banking Advocacy Manual](/frameworks/tools/consciousness/public-banking-advocacy-manual-en.pdf)** for community banking development
+- **[Just Transition Planning Guide](/frameworks/tools/consciousness/just-transition-planning-guide-en.pdf)** for worker and community transition support
 
 ## <a id="assessment-and-impact-measurement"></a>Assessment and Impact Measurement
 
@@ -6435,14 +6435,14 @@ Comprehensive evaluation frameworks for measuring economic realignment progress 
 ### Tools and Resources for Assessment
 
 **Community Assessment Tools**:
-- **[Community Economic Indicators Toolkit](/framework/tools/consciousness/community-economic-indicators-en.pdf)** for developing locally-appropriate success measures
-- **[Participatory Evaluation Manual](/framework/tools/consciousness/participatory-evaluation-manual-en.pdf)** for community-controlled assessment
-- **[Cooperative Enterprise Assessment Framework](/framework/tools/consciousness/cooperative-enterprise-assessment-en.pdf)** for evaluating cooperative development
+- **[Community Economic Indicators Toolkit](/frameworks/tools/consciousness/community-economic-indicators-en.pdf)** for developing locally-appropriate success measures
+- **[Participatory Evaluation Manual](/frameworks/tools/consciousness/participatory-evaluation-manual-en.pdf)** for community-controlled assessment
+- **[Cooperative Enterprise Assessment Framework](/frameworks/tools/consciousness/cooperative-enterprise-assessment-en.pdf)** for evaluating cooperative development
 
 **Data Collection and Analysis**:
-- **[Community Data Collection Guide](/framework/tools/consciousness/community-data-collection-guide-en.pdf)** for gathering assessment information
-- **[Economic Democracy Impact Measurement](/framework/tools/consciousness/economic-democracy-impact-measurement-en.pdf)** for tracking systemic change
-- **[Community Well-being Assessment Tools](/framework/tools/consciousness/community-wellbeing-assessment-en.pdf)** for holistic evaluation
+- **[Community Data Collection Guide](/frameworks/tools/consciousness/community-data-collection-guide-en.pdf)** for gathering assessment information
+- **[Economic Democracy Impact Measurement](/frameworks/tools/consciousness/economic-democracy-impact-measurement-en.pdf)** for tracking systemic change
+- **[Community Well-being Assessment Tools](/frameworks/tools/consciousness/community-wellbeing-assessment-en.pdf)** for holistic evaluation
 
 ## <a id="risks-and-adaptive-management"></a>Risks and Adaptive Management
 
@@ -6690,16 +6690,16 @@ Anticipating and managing challenges in economic realignment while maintaining c
 - Integration with broader policy and institutional change movements
 
 **Tools Available**:
-- **[Economic Transition Risk Assessment Framework](/framework/tools/consciousness/economic-transition-risk-assessment-en.pdf)** for identifying and planning for challenges
-- **[Community Crisis Response Protocols](/framework/tools/consciousness/community-crisis-response-protocols-en.pdf)** for emergency situation management
-- **[Adaptive Management Toolkit](/framework/tools/consciousness/adaptive-management-toolkit-en.pdf)** for continuous learning and improvement
-- **[Community Resilience Building Guide](/framework/tools/consciousness/community-resilience-building-guide-en.pdf)** for long-term sustainability
+- **[Economic Transition Risk Assessment Framework](/frameworks/tools/consciousness/economic-transition-risk-assessment-en.pdf)** for identifying and planning for challenges
+- **[Community Crisis Response Protocols](/frameworks/tools/consciousness/community-crisis-response-protocols-en.pdf)** for emergency situation management
+- **[Adaptive Management Toolkit](/frameworks/tools/consciousness/adaptive-management-toolkit-en.pdf)** for continuous learning and improvement
+- **[Community Resilience Building Guide](/frameworks/tools/consciousness/community-resilience-building-guide-en.pdf)** for long-term sustainability
 
 ---
 
-**Cross-Reference Note**: This section connects to [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) for broader transformation context, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for community engagement approaches, [Governance Structure](/framework/docs/consciousness#01-governance-structure) for democratic decision-making frameworks, and [Ecological Integration](/framework/docs/consciousness#08-environmental-ecological-integration) for environmental sustainability.
+**Cross-Reference Note**: This section connects to [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for broader transformation context, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement approaches, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for democratic decision-making frameworks, and [Ecological Integration](/frameworks/docs/consciousness#08-environmental-ecological-integration) for environmental sustainability.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin economic realignment with the [Community Economic Assessment Toolkit](/framework/tools/consciousness/community-economic-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin economic realignment with the [Community Economic Assessment Toolkit](/frameworks/tools/consciousness/community-economic-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All economic realignment materials are open-access under CC BY-SA 4.0, with priority support for worker and community ownership development, cooperative enterprise support, and resources for building community wealth and economic democracy while addressing historical economic injustices.
 
@@ -6722,7 +6722,7 @@ Anticipating and managing challenges in economic realignment while maintaining c
 
 **Estimated Reading Time**: 22 minutes
 
-Community engagement forms the vital foundation of consciousness governance, recognizing that authentic transformation must emerge from and be sustained by active community participation. This section outlines comprehensive approaches for building inclusive, empowering engagement that honors diverse voices while building collective capacity for governance transformation. By creating multiple pathways for meaningful participation, consciousness governance ensures that all community members can contribute to shaping their shared future according to their values, needs, and aspirations, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+Community engagement forms the vital foundation of consciousness governance, recognizing that authentic transformation must emerge from and be sustained by active community participation. This section outlines comprehensive approaches for building inclusive, empowering engagement that honors diverse voices while building collective capacity for governance transformation. By creating multiple pathways for meaningful participation, consciousness governance ensures that all community members can contribute to shaping their shared future according to their values, needs, and aspirations, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-community-centered-foundation"></a>Purpose and Community-Centered Foundation
 
@@ -8605,14 +8605,14 @@ Developing community-controlled evaluation systems that measure engagement effec
 ### Assessment Tools and Resources
 
 **Community Assessment Toolkits**:
-- **[Community Engagement Assessment Framework](/framework/tools/consciousness/community-engagement-assessment-en.pdf)** for comprehensive evaluation design
-- **[Participatory Evaluation Toolkit](/framework/tools/consciousness/participatory-evaluation-toolkit-en.pdf)** for community-controlled assessment
-- **[Community Feedback Collection Guide](/framework/tools/consciousness/community-feedback-collection-en.pdf)** for ongoing evaluation
+- **[Community Engagement Assessment Framework](/frameworks/tools/consciousness/community-engagement-assessment-en.pdf)** for comprehensive evaluation design
+- **[Participatory Evaluation Toolkit](/frameworks/tools/consciousness/participatory-evaluation-toolkit-en.pdf)** for community-controlled assessment
+- **[Community Feedback Collection Guide](/frameworks/tools/consciousness/community-feedback-collection-en.pdf)** for ongoing evaluation
 
 **Training and Capacity Building Resources**:
-- **[Community Evaluator Training Manual](/framework/tools/consciousness/community-evaluator-training-en.pdf)** for participatory evaluation skills
-- **[Story-Based Evaluation Guide](/framework/tools/consciousness/story-based-evaluation-guide-en.pdf)** for narrative assessment approaches
-- **[Community Research Methods Toolkit](/framework/tools/consciousness/community-research-methods-en.pdf)** for community-controlled investigation
+- **[Community Evaluator Training Manual](/frameworks/tools/consciousness/community-evaluator-training-en.pdf)** for participatory evaluation skills
+- **[Story-Based Evaluation Guide](/frameworks/tools/consciousness/story-based-evaluation-guide-en.pdf)** for narrative assessment approaches
+- **[Community Research Methods Toolkit](/frameworks/tools/consciousness/community-research-methods-en.pdf)** for community-controlled investigation
 
 ## <a id="challenges-and-adaptive-strategies"></a>Challenges and Adaptive Strategies
 
@@ -8780,16 +8780,16 @@ Anticipating and addressing common challenges in community engagement while main
 - Integration of learning with ongoing engagement planning and community organizing
 
 **Tools Available**:
-- **[Community Engagement Challenge Assessment](/framework/tools/consciousness/engagement-challenge-assessment-en.pdf)** for systematic challenge identification
-- **[Adaptive Strategy Planning Toolkit](/framework/tools/consciousness/adaptive-strategy-planning-en.pdf)** for responsive engagement development
-- **[Community Conflict Resolution Manual](/framework/tools/consciousness/community-conflict-resolution-en.pdf)** for internal challenge management
-- **[Engagement Crisis Response Protocols](/framework/tools/consciousness/engagement-crisis-response-en.pdf)** for emergency situation management
+- **[Community Engagement Challenge Assessment](/frameworks/tools/consciousness/engagement-challenge-assessment-en.pdf)** for systematic challenge identification
+- **[Adaptive Strategy Planning Toolkit](/frameworks/tools/consciousness/adaptive-strategy-planning-en.pdf)** for responsive engagement development
+- **[Community Conflict Resolution Manual](/frameworks/tools/consciousness/community-conflict-resolution-en.pdf)** for internal challenge management
+- **[Engagement Crisis Response Protocols](/frameworks/tools/consciousness/engagement-crisis-response-en.pdf)** for emergency situation management
 
 ---
 
-**Cross-Reference Note**: This section connects to [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) for individual preparation, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for group processes, [Governance Structure](/framework/docs/consciousness#01-governance-structure) for institutional integration, and [Digital Platforms](/framework/docs/consciousness#10-digital-platforms) for technology-enhanced engagement.
+**Cross-Reference Note**: This section connects to [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual preparation, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for group processes, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional integration, and [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) for technology-enhanced engagement.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin community engagement with the [Community Engagement Assessment Framework](/framework/tools/consciousness/community-engagement-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin community engagement with the [Community Engagement Assessment Framework](/frameworks/tools/consciousness/community-engagement-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All community engagement materials are open-access under CC BY-SA 4.0, with priority support for marginalized communities, resources for removing participation barriers, and emphasis on community control over engagement processes and outcomes.
 
@@ -10088,16 +10088,16 @@ Addressing common challenges in maintaining consciousness governance principles 
 **Case Study (Real)**: Puerto Rico's response to Hurricane Maria (2017) demonstrates both the failures of top-down emergency management and the effectiveness of community-led mutual aid. While government response was inadequate, community organizations provided essential services including food distribution, medical care, and infrastructure repair, showing how consciousness governance principles can enhance crisis response effectiveness.
 
 **Tools Available**:
-- **[Crisis Response Protocol Handbook](/framework/tools/consciousness/crisis-response-protocol-handbook-en.pdf)** for comprehensive emergency planning
-- **[Community Resilience Assessment Toolkit](/framework/tools/consciousness/community-resilience-assessment-en.pdf)** for vulnerability and capacity analysis
-- **[Emergency Decision-Making Framework](/framework/tools/consciousness/emergency-decision-making-framework-en.pdf)** for rapid democratic processes
-- **[Trauma-Informed Crisis Response Guide](/framework/tools/consciousness/trauma-informed-crisis-response-en.pdf)** for healing-centered emergency approaches
+- **[Crisis Response Protocol Handbook](/frameworks/tools/consciousness/crisis-response-protocol-handbook-en.pdf)** for comprehensive emergency planning
+- **[Community Resilience Assessment Toolkit](/frameworks/tools/consciousness/community-resilience-assessment-en.pdf)** for vulnerability and capacity analysis
+- **[Emergency Decision-Making Framework](/frameworks/tools/consciousness/emergency-decision-making-framework-en.pdf)** for rapid democratic processes
+- **[Trauma-Informed Crisis Response Guide](/frameworks/tools/consciousness/trauma-informed-crisis-response-en.pdf)** for healing-centered emergency approaches
 
 ---
 
-**Cross-Reference Note**: This section connects to [Governance Structure](/framework/docs/consciousness#01-governance-structure) for democratic emergency systems, [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) for leadership under pressure, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for community mobilization, and [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) for institutional crisis preparedness.
+**Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for democratic emergency systems, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for leadership under pressure, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community mobilization, and [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for institutional crisis preparedness.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin crisis preparedness with the [Community Resilience Assessment Toolkit](/framework/tools/consciousness/community-resilience-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin crisis preparedness with the [Community Resilience Assessment Toolkit](/frameworks/tools/consciousness/community-resilience-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All crisis response materials are open-access under CC BY-SA 4.0, with priority support for frontline communities most vulnerable to crises and resources for building community-controlled emergency response capacity.
 
@@ -11218,7 +11218,7 @@ This comprehensive framework for metrics and accountability provides communities
 
 **Estimated Reading Time**: 19 minutes
 
-Digital platforms for consciousness governance enhance rather than replace human connection and democratic participation, creating new possibilities for inclusive engagement while ensuring community control over technology design and deployment. These platforms prioritize community sovereignty, accessibility, and genuine democratic participation over efficiency or technological novelty, recognizing that technology must serve consciousness governance principles rather than determining them, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+Digital platforms for consciousness governance enhance rather than replace human connection and democratic participation, creating new possibilities for inclusive engagement while ensuring community control over technology design and deployment. These platforms prioritize community sovereignty, accessibility, and genuine democratic participation over efficiency or technological novelty, recognizing that technology must serve consciousness governance principles rather than determining them, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-digital-democracy-philosophy"></a>Purpose and Digital Democracy Philosophy
 
@@ -12297,9 +12297,9 @@ Systematic evaluation and enhancement of digital platforms to ensure they effect
 
 ---
 
-**Cross-Reference Note**: This section connects to [Governance Structure](/framework/docs/consciousness#01-governance-structure) for institutional integration, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for community engagement, [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) for broader system transformation, and [Ethical AI Governance](/framework/docs/consciousness#11-ethical-ai-governance) for responsible artificial intelligence deployment.
+**Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional integration, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for broader system transformation, and [Ethical AI Governance](/frameworks/docs/consciousness#11-ethical-ai-governance) for responsible artificial intelligence deployment.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin digital platform development with the [Digital Platform Assessment Toolkit](/framework/tools/consciousness/digital-platform-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin digital platform development with the [Digital Platform Assessment Toolkit](/frameworks/tools/consciousness/digital-platform-assessment-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All digital platform materials are open-access under CC BY-SA 4.0, with priority support for community-controlled development, digital equity initiatives, and resources for addressing technology access barriers while ensuring community sovereignty over digital infrastructure and governance.
 
@@ -12321,7 +12321,7 @@ Systematic evaluation and enhancement of digital platforms to ensure they effect
 
 **Estimated Reading Time**: 25 minutes
 
-Ethical AI governance represents one of the most critical challenges for conscious governance in the 21st century, as artificial intelligence systems increasingly shape human experience, social relationships, and democratic processes. This section outlines comprehensive frameworks for ensuring AI development and deployment serves human and planetary well-being while protecting democratic values, human dignity, and social justice. By integrating consciousness principles with cutting-edge technology governance, we can harness AI's transformative potential while preventing its misuse for surveillance, manipulation, and social control, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+Ethical AI governance represents one of the most critical challenges for conscious governance in the 21st century, as artificial intelligence systems increasingly shape human experience, social relationships, and democratic processes. This section outlines comprehensive frameworks for ensuring AI development and deployment serves human and planetary well-being while protecting democratic values, human dignity, and social justice. By integrating consciousness principles with cutting-edge technology governance, we can harness AI's transformative potential while preventing its misuse for surveillance, manipulation, and social control, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-consciousness-framework"></a>Purpose and Consciousness Framework
 
@@ -12461,10 +12461,10 @@ Establishing foundational ethical principles that protect human dignity and agen
 **Example (Fictive)**: The city of Barcelona establishes comprehensive AI ethics governance including community ethics committees in each neighborhood, mandatory human dignity impact assessments for all public AI systems, and citizen oversight panels with power to suspend harmful AI deployments. Within two years, citizen trust in AI systems increases by 60% while maintaining technological innovation.
 
 **Tools Available**:
-- **[AI Ethics Assessment Framework](/framework/tools/consciousness/ai-ethics-assessment-framework-en.pdf)** for evaluating AI systems' ethical impacts
-- **[Human Dignity Protection Toolkit](/framework/tools/consciousness/human-dignity-protection-toolkit-en.pdf)** for safeguarding human agency and dignity
-- **[Community AI Ethics Committee Guide](/framework/tools/consciousness/community-ai-ethics-committee-en.pdf)** for local oversight and governance
-- **[AI Ethics Training Manual](/framework/tools/consciousness/ai-ethics-training-manual-en.pdf)** for education and capacity building
+- **[AI Ethics Assessment Framework](/frameworks/tools/consciousness/ai-ethics-assessment-framework-en.pdf)** for evaluating AI systems' ethical impacts
+- **[Human Dignity Protection Toolkit](/frameworks/tools/consciousness/human-dignity-protection-toolkit-en.pdf)** for safeguarding human agency and dignity
+- **[Community AI Ethics Committee Guide](/frameworks/tools/consciousness/community-ai-ethics-committee-en.pdf)** for local oversight and governance
+- **[AI Ethics Training Manual](/frameworks/tools/consciousness/ai-ethics-training-manual-en.pdf)** for education and capacity building
 
 ## <a id="algorithmic-justice-and-bias-prevention"></a>Algorithmic Justice and Bias Prevention
 
@@ -12571,10 +12571,10 @@ Ensuring AI systems advance rather than perpetuate social inequality and discrim
 **Example (Fictive)**: Detroit establishes comprehensive algorithmic justice program including community bias auditors, mandatory equity impact assessments for all city AI systems, and community oversight committees with power to suspend discriminatory technologies. Over three years, documented AI discrimination decreases by 80% while community trust in city services increases by 45%.
 
 **Tools Available**:
-- **[AI Bias Audit Framework](/framework/tools/consciousness/ai-bias-audit-framework-en.pdf)** for systematic discrimination assessment
-- **[Community Bias Auditor Training](/framework/tools/consciousness/community-bias-auditor-training-en.pdf)** for local capacity building
-- **[Algorithmic Justice Toolkit](/framework/tools/consciousness/algorithmic-justice-toolkit-en.pdf)** for comprehensive bias prevention
-- **[Fairness Metrics Implementation Guide](/framework/tools/consciousness/fairness-metrics-implementation-en.pdf)** for equity measurement
+- **[AI Bias Audit Framework](/frameworks/tools/consciousness/ai-bias-audit-framework-en.pdf)** for systematic discrimination assessment
+- **[Community Bias Auditor Training](/frameworks/tools/consciousness/community-bias-auditor-training-en.pdf)** for local capacity building
+- **[Algorithmic Justice Toolkit](/frameworks/tools/consciousness/algorithmic-justice-toolkit-en.pdf)** for comprehensive bias prevention
+- **[Fairness Metrics Implementation Guide](/frameworks/tools/consciousness/fairness-metrics-implementation-en.pdf)** for equity measurement
 
 ## <a id="democratic-ai-governance-and-community-control"></a>Democratic AI Governance and Community Control
 
@@ -12681,10 +12681,10 @@ Ensuring AI development and deployment serves democratic values and is subject t
 **Example (Fictive)**: The state of Vermont implements comprehensive democratic AI governance including citizen assemblies for major AI policy decisions, community technology committees in every town, and requirements for community approval of all government AI systems. Over five years, citizen satisfaction with government technology increases by 70% while maintaining high levels of innovation and efficiency.
 
 **Tools Available**:
-- **[Democratic AI Governance Framework](/framework/tools/consciousness/democratic-ai-governance-framework-en.pdf)** for community control systems
-- **[Citizen Assembly AI Guide](/framework/tools/consciousness/citizen-assembly-ai-guide-en.pdf)** for participatory AI policy development
-- **[Community Technology Assessment Toolkit](/framework/tools/consciousness/community-technology-assessment-en.pdf)** for local AI evaluation
-- **[Participatory AI Procurement Manual](/framework/tools/consciousness/participatory-ai-procurement-en.pdf)** for democratic technology purchasing
+- **[Democratic AI Governance Framework](/frameworks/tools/consciousness/democratic-ai-governance-framework-en.pdf)** for community control systems
+- **[Citizen Assembly AI Guide](/frameworks/tools/consciousness/citizen-assembly-ai-guide-en.pdf)** for participatory AI policy development
+- **[Community Technology Assessment Toolkit](/frameworks/tools/consciousness/community-technology-assessment-en.pdf)** for local AI evaluation
+- **[Participatory AI Procurement Manual](/frameworks/tools/consciousness/participatory-ai-procurement-en.pdf)** for democratic technology purchasing
 
 ## <a id="privacy-protection-and-surveillance-limits"></a>Privacy Protection and Surveillance Limits
 
@@ -12799,10 +12799,10 @@ Establishing robust protections for individual privacy and community autonomy wh
 **Example (Fictive)**: The province of British Columbia implements comprehensive AI privacy protection including community data sovereignty rights, mandatory privacy impact assessments for all AI systems, and community veto power over surveillance technology. Within three years, citizen trust in government technology increases by 55% while innovation continues through privacy-preserving AI development.
 
 **Tools Available**:
-- **[AI Privacy Impact Assessment Framework](/framework/tools/consciousness/ai-privacy-impact-assessment-en.pdf)** for systematic privacy evaluation
-- **[Community Data Sovereignty Toolkit](/framework/tools/consciousness/community-data-sovereignty-en.pdf)** for local data control
-- **[Surveillance Technology Assessment Guide](/framework/tools/consciousness/surveillance-technology-assessment-en.pdf)** for community evaluation
-- **[Privacy by Design Implementation Manual](/framework/tools/consciousness/privacy-by-design-implementation-en.pdf)** for privacy-protective AI development
+- **[AI Privacy Impact Assessment Framework](/frameworks/tools/consciousness/ai-privacy-impact-assessment-en.pdf)** for systematic privacy evaluation
+- **[Community Data Sovereignty Toolkit](/frameworks/tools/consciousness/community-data-sovereignty-en.pdf)** for local data control
+- **[Surveillance Technology Assessment Guide](/frameworks/tools/consciousness/surveillance-technology-assessment-en.pdf)** for community evaluation
+- **[Privacy by Design Implementation Manual](/frameworks/tools/consciousness/privacy-by-design-implementation-en.pdf)** for privacy-protective AI development
 
 ## <a id="ai-for-social-good-and-collective-well-being"></a>AI for Social Good and Collective Well-being
 
@@ -12925,10 +12925,10 @@ Harnessing artificial intelligence's potential to address social challenges, pro
 **Example (Fictive)**: A network of indigenous communities across the Americas develops AI tools for language revitalization, traditional ecological knowledge documentation, and climate adaptation that are owned and controlled by the communities themselves. Over five years, the project contributes to reversing language loss, strengthening traditional governance, and building climate resilience while maintaining cultural sovereignty.
 
 **Tools Available**:
-- **[AI for Social Good Framework](/framework/tools/consciousness/ai-for-social-good-framework-en.pdf)** for community-centered AI development
-- **[Community Needs Assessment Toolkit](/framework/tools/consciousness/community-needs-assessment-ai-en.pdf)** for identifying local priorities
-- **[Participatory AI Design Manual](/framework/tools/consciousness/participatory-ai-design-manual-en.pdf)** for community involvement in AI development
-- **[Social Impact Measurement Guide](/framework/tools/consciousness/ai-social-impact-measurement-en.pdf)** for evaluating AI social good applications
+- **[AI for Social Good Framework](/frameworks/tools/consciousness/ai-for-social-good-framework-en.pdf)** for community-centered AI development
+- **[Community Needs Assessment Toolkit](/frameworks/tools/consciousness/community-needs-assessment-ai-en.pdf)** for identifying local priorities
+- **[Participatory AI Design Manual](/frameworks/tools/consciousness/participatory-ai-design-manual-en.pdf)** for community involvement in AI development
+- **[Social Impact Measurement Guide](/frameworks/tools/consciousness/ai-social-impact-measurement-en.pdf)** for evaluating AI social good applications
 
 ## <a id="future-technology-preparedness"></a>Future Technology Preparedness
 
@@ -13051,10 +13051,10 @@ Developing governance frameworks for emerging AI technologies including AGI, bio
 **Example (Fictive)**: The Global AI Governance Assembly, comprised of representatives from consciousness governance communities worldwide, establishes binding international protocols for AGI development including democratic oversight requirements, human control mechanisms, and community veto power over dangerous developments. The framework successfully guides AGI development toward serving collective well-being.
 
 **Tools Available**:
-- **[AGI Governance Framework](/framework/tools/consciousness/agi-governance-framework-en.pdf)** for artificial general intelligence oversight
-- **[Future Technology Assessment Toolkit](/framework/tools/consciousness/future-technology-assessment-en.pdf)** for emerging technology evaluation
-- **[Precautionary AI Governance Manual](/framework/tools/consciousness/precautionary-ai-governance-en.pdf)** for safe AI development
-- **[International AI Cooperation Guide](/framework/tools/consciousness/international-ai-cooperation-en.pdf)** for global AI governance
+- **[AGI Governance Framework](/frameworks/tools/consciousness/agi-governance-framework-en.pdf)** for artificial general intelligence oversight
+- **[Future Technology Assessment Toolkit](/frameworks/tools/consciousness/future-technology-assessment-en.pdf)** for emerging technology evaluation
+- **[Precautionary AI Governance Manual](/frameworks/tools/consciousness/precautionary-ai-governance-en.pdf)** for safe AI development
+- **[International AI Cooperation Guide](/frameworks/tools/consciousness/international-ai-cooperation-en.pdf)** for global AI governance
 
 ## <a id="community-controlled-ai-development"></a>Community-Controlled AI Development
 
@@ -13185,10 +13185,10 @@ Establishing models for communities to develop, own, and control AI technologies
 **Example (Fictive)**: A network of 50 rural communities across Appalachia develops cooperative AI systems for sustainable agriculture, local economic development, and cultural preservation. The community-owned technology increases local food security by 40%, creates 200 new local jobs, and supports traditional craft and music traditions while building regional solidarity and political power.
 
 **Tools Available**:
-- **[Community AI Development Toolkit](/framework/tools/consciousness/community-ai-development-toolkit-en.pdf)** for local AI capacity building
-- **[Cooperative AI Governance Manual](/framework/tools/consciousness/cooperative-ai-governance-manual-en.pdf)** for democratic AI ownership
-- **[Community Data Sovereignty Framework](/framework/tools/consciousness/community-data-sovereignty-framework-en.pdf)** for local data control
-- **[AI Capacity Building Program Guide](/framework/tools/consciousness/ai-capacity-building-program-en.pdf)** for community education and training
+- **[Community AI Development Toolkit](/frameworks/tools/consciousness/community-ai-development-toolkit-en.pdf)** for local AI capacity building
+- **[Cooperative AI Governance Manual](/frameworks/tools/consciousness/cooperative-ai-governance-manual-en.pdf)** for democratic AI ownership
+- **[Community Data Sovereignty Framework](/frameworks/tools/consciousness/community-data-sovereignty-framework-en.pdf)** for local data control
+- **[AI Capacity Building Program Guide](/frameworks/tools/consciousness/ai-capacity-building-program-en.pdf)** for community education and training
 
 ## <a id="global-cooperation-and-technology-justice"></a>Global Cooperation and Technology Justice
 
@@ -13319,10 +13319,10 @@ Establishing international frameworks for AI governance that promote global just
 **Example (Fictive)**: The Global AI Justice Alliance, led by consciousness governance communities and Global South organizations, successfully advocates for an International Treaty on AI and Human Rights that establishes binding commitments to democratic AI governance, technology transfer, and community control. The treaty influences AI development worldwide toward serving collective well-being.
 
 **Tools Available**:
-- **[Global AI Justice Framework](/framework/tools/consciousness/global-ai-justice-framework-en.pdf)** for international cooperation and equity
-- **[Anti-Colonial AI Development Guide](/framework/tools/consciousness/anti-colonial-ai-development-en.pdf)** for preventing digital extraction
-- **[Global South AI Capacity Building Manual](/framework/tools/consciousness/global-south-ai-capacity-building-en.pdf)** for supporting local AI development
-- **[International AI Cooperation Toolkit](/framework/tools/consciousness/international-ai-cooperation-toolkit-en.pdf)** for cross-border AI governance
+- **[Global AI Justice Framework](/frameworks/tools/consciousness/global-ai-justice-framework-en.pdf)** for international cooperation and equity
+- **[Anti-Colonial AI Development Guide](/frameworks/tools/consciousness/anti-colonial-ai-development-en.pdf)** for preventing digital extraction
+- **[Global South AI Capacity Building Manual](/frameworks/tools/consciousness/global-south-ai-capacity-building-en.pdf)** for supporting local AI development
+- **[International AI Cooperation Toolkit](/frameworks/tools/consciousness/international-ai-cooperation-toolkit-en.pdf)** for cross-border AI governance
 
 ## <a id="implementation-framework-and-governance-models"></a>Implementation Framework and Governance Models
 
@@ -13467,10 +13467,10 @@ Establishing practical approaches for implementing ethical AI governance that in
 **Example (Fictive)**: The state of California implements comprehensive AI governance including community oversight committees in every county, mandatory algorithmic impact assessments for all government AI, and community veto power over surveillance technologies. Within five years, citizen trust in government technology increases by 65% while the state becomes a leader in ethical AI innovation.
 
 **Tools Available**:
-- **[AI Governance Implementation Roadmap](/framework/tools/consciousness/ai-governance-implementation-roadmap-en.pdf)** for systematic institutional development
-- **[Community AI Oversight Manual](/framework/tools/consciousness/community-ai-oversight-manual-en.pdf)** for local governance bodies
-- **[AI Governance Pilot Program Guide](/framework/tools/consciousness/ai-governance-pilot-program-en.pdf)** for testing implementation approaches
-- **[Multi-Level AI Governance Framework](/framework/tools/consciousness/multi-level-ai-governance-framework-en.pdf)** for coordinated governance across scales
+- **[AI Governance Implementation Roadmap](/frameworks/tools/consciousness/ai-governance-implementation-roadmap-en.pdf)** for systematic institutional development
+- **[Community AI Oversight Manual](/frameworks/tools/consciousness/community-ai-oversight-manual-en.pdf)** for local governance bodies
+- **[AI Governance Pilot Program Guide](/frameworks/tools/consciousness/ai-governance-pilot-program-en.pdf)** for testing implementation approaches
+- **[Multi-Level AI Governance Framework](/frameworks/tools/consciousness/multi-level-ai-governance-framework-en.pdf)** for coordinated governance across scales
 
 ## <a id="assessment-and-accountability-systems"></a>Assessment and Accountability Systems
 
@@ -13609,10 +13609,10 @@ Developing comprehensive systems for monitoring AI governance effectiveness, ens
 **Example (Fictive)**: The European Union establishes comprehensive AI accountability system including community oversight bodies in every member state, mandatory algorithmic impact assessments for all AI systems, and citizen rights to explanation and appeal of AI decisions. The system reduces AI discrimination by 60% while maintaining innovation and economic competitiveness.
 
 **Tools Available**:
-- **[AI Accountability Framework](/framework/tools/consciousness/ai-accountability-framework-en.pdf)** for comprehensive oversight systems
-- **[Community AI Monitoring Toolkit](/framework/tools/consciousness/community-ai-monitoring-toolkit-en.pdf)** for local assessment capacity
-- **[Algorithmic Audit Implementation Guide](/framework/tools/consciousness/algorithmic-audit-implementation-en.pdf)** for technical evaluation
-- **[AI Governance Performance Metrics](/framework/tools/consciousness/ai-governance-performance-metrics-en.pdf)** for measuring effectiveness
+- **[AI Accountability Framework](/frameworks/tools/consciousness/ai-accountability-framework-en.pdf)** for comprehensive oversight systems
+- **[Community AI Monitoring Toolkit](/frameworks/tools/consciousness/community-ai-monitoring-toolkit-en.pdf)** for local assessment capacity
+- **[Algorithmic Audit Implementation Guide](/frameworks/tools/consciousness/algorithmic-audit-implementation-en.pdf)** for technical evaluation
+- **[AI Governance Performance Metrics](/frameworks/tools/consciousness/ai-governance-performance-metrics-en.pdf)** for measuring effectiveness
 
 ## <a id="risks-and-adaptive-management"></a>Risks and Adaptive Management
 
@@ -13738,16 +13738,16 @@ Anticipating and managing the complex challenges and risks associated with ethic
 **Example (Fictive)**: When a major AI system failure causes widespread harm in 2028, consciousness governance communities demonstrate superior crisis response through pre-established emergency protocols, community protection measures, and rapid recovery planning. The experience strengthens global commitment to democratic AI governance and leads to improved international cooperation.
 
 **Tools Available**:
-- **[AI Governance Risk Assessment Framework](/framework/tools/consciousness/ai-governance-risk-assessment-en.pdf)** for comprehensive challenge identification
-- **[Adaptive AI Governance Toolkit](/framework/tools/consciousness/adaptive-ai-governance-toolkit-en.pdf)** for flexible institutional design
-- **[AI Crisis Response Protocols](/framework/tools/consciousness/ai-crisis-response-protocols-en.pdf)** for emergency governance procedures
-- **[AI Governance Resilience Manual](/framework/tools/consciousness/ai-governance-resilience-manual-en.pdf)** for building antifragile institutions
+- **[AI Governance Risk Assessment Framework](/frameworks/tools/consciousness/ai-governance-risk-assessment-en.pdf)** for comprehensive challenge identification
+- **[Adaptive AI Governance Toolkit](/frameworks/tools/consciousness/adaptive-ai-governance-toolkit-en.pdf)** for flexible institutional design
+- **[AI Crisis Response Protocols](/frameworks/tools/consciousness/ai-crisis-response-protocols-en.pdf)** for emergency governance procedures
+- **[AI Governance Resilience Manual](/frameworks/tools/consciousness/ai-governance-resilience-manual-en.pdf)** for building antifragile institutions
 
 ---
 
-**Cross-Reference Note**: This section connects to [Digital Platforms](/framework/docs/consciousness#10-digital-platforms) for AI-enhanced governance tools, [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) for embedding AI governance in broader systems, [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) for developing AI governance leadership, and [Global Cooperation](/framework/docs/consciousness#17-international-cooperation) for international AI governance coordination.
+**Cross-Reference Note**: This section connects to [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) for AI-enhanced governance tools, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for embedding AI governance in broader systems, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for developing AI governance leadership, and [Global Cooperation](/frameworks/docs/consciousness#17-international-cooperation) for international AI governance coordination.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin ethical AI governance with the [AI Ethics Assessment Framework](/framework/tools/consciousness/ai-ethics-assessment-framework-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin ethical AI governance with the [AI Ethics Assessment Framework](/frameworks/tools/consciousness/ai-ethics-assessment-framework-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All ethical AI governance materials are open-access under CC BY-SA 4.0, with priority support for communities working to democratize AI development and deployment, and resources for building local capacity for AI governance and oversight while protecting community sovereignty and cultural values.
 
@@ -13769,7 +13769,7 @@ Anticipating and managing the complex challenges and risks associated with ethic
 
 **Estimated Reading Time**: 24 minutes
 
-Cross-cultural translation represents one of the most critical and sensitive aspects of consciousness governance implementation, requiring deep respect for cultural sovereignty while enabling authentic adaptation across diverse contexts. This section outlines comprehensive approaches for translating consciousness principles into culturally appropriate forms that honor indigenous wisdom, traditional knowledge, and diverse worldviews. Through rigorous protocols, community partnership, and anti-appropriation safeguards, the framework ensures that consciousness governance strengthens rather than undermines cultural integrity while enabling meaningful cross-cultural learning and collaboration, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+Cross-cultural translation represents one of the most critical and sensitive aspects of consciousness governance implementation, requiring deep respect for cultural sovereignty while enabling authentic adaptation across diverse contexts. This section outlines comprehensive approaches for translating consciousness principles into culturally appropriate forms that honor indigenous wisdom, traditional knowledge, and diverse worldviews. Through rigorous protocols, community partnership, and anti-appropriation safeguards, the framework ensures that consciousness governance strengthens rather than undermines cultural integrity while enabling meaningful cross-cultural learning and collaboration, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-cultural-sovereignty-foundation"></a>Purpose and Cultural Sovereignty Foundation
 
@@ -13910,10 +13910,10 @@ Comprehensive frameworks for building authentic relationships and understanding 
 - **Community Exit Options**: Clear processes for communities to end translation relationships without penalty
 
 **Tools Available**:
-- **[Deep Cultural Engagement Protocol Manual](/framework/tools/consciousness/deep-cultural-engagement-protocol-en.pdf)** for authentic community relationship building
-- **[Community-Based Participatory Research Toolkit](/framework/tools/consciousness/community-participatory-research-toolkit-en.pdf)** for collaborative investigation
-- **[Cultural Immersion Guidelines](/framework/tools/consciousness/cultural-immersion-guidelines-en.pdf)** for respectful community integration
-- **[Traditional Knowledge Documentation Protocols](/framework/tools/consciousness/traditional-knowledge-documentation-en.pdf)** for appropriate knowledge recording
+- **[Deep Cultural Engagement Protocol Manual](/frameworks/tools/consciousness/deep-cultural-engagement-protocol-en.pdf)** for authentic community relationship building
+- **[Community-Based Participatory Research Toolkit](/frameworks/tools/consciousness/community-participatory-research-toolkit-en.pdf)** for collaborative investigation
+- **[Cultural Immersion Guidelines](/frameworks/tools/consciousness/cultural-immersion-guidelines-en.pdf)** for respectful community integration
+- **[Traditional Knowledge Documentation Protocols](/frameworks/tools/consciousness/traditional-knowledge-documentation-en.pdf)** for appropriate knowledge recording
 
 ## <a id="fpic-20-implementation-framework"></a>FPIC 2.0 Implementation Framework
 
@@ -14046,10 +14046,10 @@ Enhanced Free, Prior, and Informed Consent protocols that go beyond legal compli
 **Example (Fictive)**: A consciousness governance initiative in Alaska develops comprehensive FPIC 2.0 protocols with 12 Native Alaskan villages that integrate traditional subsistence council authority, seasonal decision-making cycles, and consensus-building processes, resulting in governance adaptations that strengthen traditional culture while addressing climate change challenges through approaches that villages design and control.
 
 **Tools Available**:
-- **[FPIC 2.0 Implementation Guide](/framework/tools/consciousness/fpic-20-implementation-guide-en.pdf)** for enhanced consent protocols
-- **[Community Decision-Making Assessment](/framework/tools/consciousness/community-decision-making-assessment-en.pdf)** for understanding traditional governance
-- **[Cultural Protocol Documentation Toolkit](/framework/tools/consciousness/cultural-protocol-documentation-en.pdf)** for respecting traditional practices
-- **[Benefit Sharing Agreement Templates](/framework/tools/consciousness/benefit-sharing-agreement-templates-en.pdf)** for equitable partnership terms
+- **[FPIC 2.0 Implementation Guide](/frameworks/tools/consciousness/fpic-20-implementation-guide-en.pdf)** for enhanced consent protocols
+- **[Community Decision-Making Assessment](/frameworks/tools/consciousness/community-decision-making-assessment-en.pdf)** for understanding traditional governance
+- **[Cultural Protocol Documentation Toolkit](/frameworks/tools/consciousness/cultural-protocol-documentation-en.pdf)** for respecting traditional practices
+- **[Benefit Sharing Agreement Templates](/frameworks/tools/consciousness/benefit-sharing-agreement-templates-en.pdf)** for equitable partnership terms
 
 ## <a id="translation-methodologies-and-practices"></a>Translation Methodologies and Practices
 
@@ -14169,10 +14169,10 @@ Comprehensive approaches for translating consciousness governance concepts into 
 **Example (Fictive)**: A consciousness governance initiative in Tibet develops translations that integrate traditional Buddhist concepts of "interdependence" with consciousness principles, traditional monastery governance with community councils, and contemplative practices with governance decision-making, resulting in approaches that strengthen Tibetan cultural identity while addressing contemporary challenges of environmental degradation and cultural preservation under political pressure.
 
 **Tools Available**:
-- **[Conceptual Translation Framework](/framework/tools/consciousness/conceptual-translation-framework-en.pdf)** for authentic concept adaptation
-- **[Cultural Logic Integration Guide](/framework/tools/consciousness/cultural-logic-integration-en.pdf)** for worldview-appropriate translation
-- **[Traditional Practice Adaptation Toolkit](/framework/tools/consciousness/traditional-practice-adaptation-en.pdf)** for ceremony and custom integration
-- **[Translation Quality Assurance Protocols](/framework/tools/consciousness/translation-quality-assurance-en.pdf)** for cultural authenticity validation
+- **[Conceptual Translation Framework](/frameworks/tools/consciousness/conceptual-translation-framework-en.pdf)** for authentic concept adaptation
+- **[Cultural Logic Integration Guide](/frameworks/tools/consciousness/cultural-logic-integration-en.pdf)** for worldview-appropriate translation
+- **[Traditional Practice Adaptation Toolkit](/frameworks/tools/consciousness/traditional-practice-adaptation-en.pdf)** for ceremony and custom integration
+- **[Translation Quality Assurance Protocols](/frameworks/tools/consciousness/translation-quality-assurance-en.pdf)** for cultural authenticity validation
 
 ## <a id="anti-appropriation-safeguards"></a>Anti-Appropriation Safeguards
 
@@ -14319,10 +14319,10 @@ Comprehensive protections against cultural appropriation while enabling authenti
 **Example (Fictive)**: A consciousness governance initiative in the Amazon develops comprehensive appropriation protections with 20 indigenous communities that include sacred knowledge protocols, traditional authority recognition, benefit-sharing agreements, and community veto power, resulting in governance adaptations that strengthen traditional culture while preventing external appropriation and supporting community-controlled cultural sharing and education.
 
 **Tools Available**:
-- **[Anti-Appropriation Safeguard Framework](/framework/tools/consciousness/anti-appropriation-safeguard-framework-en.pdf)** for comprehensive protection protocols
-- **[Traditional Knowledge Protection Toolkit](/framework/tools/consciousness/traditional-knowledge-protection-toolkit-en.pdf)** for community-controlled knowledge management
-- **[Cultural Exchange Guidelines](/framework/tools/consciousness/cultural-exchange-guidelines-en.pdf)** for authentic reciprocal learning
-- **[Appropriation Prevention Training Manual](/framework/tools/consciousness/appropriation-prevention-training-en.pdf)** for community capacity building
+- **[Anti-Appropriation Safeguard Framework](/frameworks/tools/consciousness/anti-appropriation-safeguard-framework-en.pdf)** for comprehensive protection protocols
+- **[Traditional Knowledge Protection Toolkit](/frameworks/tools/consciousness/traditional-knowledge-protection-toolkit-en.pdf)** for community-controlled knowledge management
+- **[Cultural Exchange Guidelines](/frameworks/tools/consciousness/cultural-exchange-guidelines-en.pdf)** for authentic reciprocal learning
+- **[Appropriation Prevention Training Manual](/frameworks/tools/consciousness/appropriation-prevention-training-en.pdf)** for community capacity building
 
 ## <a id="indigenous-and-traditional-knowledge-integration"></a>Indigenous and Traditional Knowledge Integration
 
@@ -14460,10 +14460,10 @@ Comprehensive approaches for respectfully integrating indigenous and traditional
 **Example (Fictive)**: A consciousness governance initiative in northern Canada develops comprehensive indigenous knowledge integration with 15 First Nations communities that includes traditional seasonal governance cycles, elder council authority, traditional ecological knowledge for climate adaptation, and ceremonial decision-making processes, resulting in governance approaches that strengthen traditional culture while effectively addressing contemporary challenges of environmental change and economic development.
 
 **Tools Available**:
-- **[Indigenous Knowledge Integration Framework](/framework/tools/consciousness/indigenous-knowledge-integration-en.pdf)** for respectful traditional knowledge inclusion
-- **[Traditional Authority Recognition Protocols](/framework/tools/consciousness/traditional-authority-recognition-en.pdf)** for governance sovereignty respect
-- **[Two-Eyed Seeing Implementation Guide](/framework/tools/consciousness/two-eyed-seeing-implementation-en.pdf)** for complementary knowledge synthesis
-- **[Traditional Knowledge Preservation Toolkit](/framework/tools/consciousness/traditional-knowledge-preservation-en.pdf)** for community-controlled knowledge documentation
+- **[Indigenous Knowledge Integration Framework](/frameworks/tools/consciousness/indigenous-knowledge-integration-en.pdf)** for respectful traditional knowledge inclusion
+- **[Traditional Authority Recognition Protocols](/frameworks/tools/consciousness/traditional-authority-recognition-en.pdf)** for governance sovereignty respect
+- **[Two-Eyed Seeing Implementation Guide](/frameworks/tools/consciousness/two-eyed-seeing-implementation-en.pdf)** for complementary knowledge synthesis
+- **[Traditional Knowledge Preservation Toolkit](/frameworks/tools/consciousness/traditional-knowledge-preservation-en.pdf)** for community-controlled knowledge documentation
 
 ## <a id="regional-adaptation-examples"></a>Regional Adaptation Examples
 
@@ -14591,10 +14591,10 @@ Detailed examples of how consciousness governance principles can be authenticall
 - **Network Cooperation**: Cooperation between different cultural adaptations for addressing global challenges
 
 **Tools Available**:
-- **[Regional Adaptation Framework](/framework/tools/consciousness/regional-adaptation-framework-en.pdf)** for culturally appropriate governance development
-- **[Cultural Context Analysis Toolkit](/framework/tools/consciousness/cultural-context-analysis-toolkit-en.pdf)** for understanding local adaptation needs
-- **[Cross-Cultural Learning Guide](/framework/tools/consciousness/cross-cultural-learning-guide-en.pdf)** for inter-regional knowledge exchange
-- **[Cultural Innovation Documentation](/framework/tools/consciousness/cultural-innovation-documentation-en.pdf)** for sharing adaptation approaches
+- **[Regional Adaptation Framework](/frameworks/tools/consciousness/regional-adaptation-framework-en.pdf)** for culturally appropriate governance development
+- **[Cultural Context Analysis Toolkit](/frameworks/tools/consciousness/cultural-context-analysis-toolkit-en.pdf)** for understanding local adaptation needs
+- **[Cross-Cultural Learning Guide](/frameworks/tools/consciousness/cross-cultural-learning-guide-en.pdf)** for inter-regional knowledge exchange
+- **[Cultural Innovation Documentation](/frameworks/tools/consciousness/cultural-innovation-documentation-en.pdf)** for sharing adaptation approaches
 
 ## <a id="language-and-conceptual-translation"></a>Language and Conceptual Translation
 
@@ -14723,10 +14723,10 @@ Comprehensive approaches for translating consciousness governance concepts acros
 **Example (Fictive)**: A consciousness governance initiative in multilingual India develops comprehensive translation protocols that work with Hindi, Tamil, Bengali, and tribal languages, creating governance terminology that honors traditional concepts like "swaraj" (self-rule), "gram sabha" (village assembly), and "sarvodaya" (welfare of all) while adapting consciousness governance principles, resulting in approaches that strengthen linguistic diversity while enabling effective multi-cultural governance.
 
 **Tools Available**:
-- **[Linguistic Translation Framework](/framework/tools/consciousness/linguistic-translation-framework-en.pdf)** for comprehensive language adaptation
-- **[Cultural Concept Mapping Toolkit](/framework/tools/consciousness/cultural-concept-mapping-toolkit-en.pdf)** for traditional knowledge integration
-- **[Community Translation Validation Guide](/framework/tools/consciousness/community-translation-validation-en.pdf)** for cultural appropriateness verification
-- **[Multilingual Implementation Manual](/framework/tools/consciousness/multilingual-implementation-manual-en.pdf)** for comprehensive language support
+- **[Linguistic Translation Framework](/frameworks/tools/consciousness/linguistic-translation-framework-en.pdf)** for comprehensive language adaptation
+- **[Cultural Concept Mapping Toolkit](/frameworks/tools/consciousness/cultural-concept-mapping-toolkit-en.pdf)** for traditional knowledge integration
+- **[Community Translation Validation Guide](/frameworks/tools/consciousness/community-translation-validation-en.pdf)** for cultural appropriateness verification
+- **[Multilingual Implementation Manual](/frameworks/tools/consciousness/multilingual-implementation-manual-en.pdf)** for comprehensive language support
 
 ## <a id="cultural-bridge-building-and-exchange"></a>Cultural Bridge-Building and Exchange
 
@@ -14873,10 +14873,10 @@ Frameworks for creating authentic understanding and cooperation across cultural 
 **Example (Fictive)**: A consciousness governance initiative in Malaysia develops comprehensive bridge-building programs between Malay, Chinese, Indian, and indigenous communities that include traditional festival exchanges, collaborative economic development projects, multi-cultural governance councils, and technology platforms for cross-cultural learning, resulting in reduced ethnic tensions and innovative governance solutions that honor all cultural traditions while addressing shared national challenges.
 
 **Tools Available**:
-- **[Cultural Bridge-Building Framework](/framework/tools/consciousness/cultural-bridge-building-framework-en.pdf)** for systematic cross-cultural relationship development
-- **[Cross-Cultural Dialogue Facilitation Guide](/framework/tools/consciousness/cross-cultural-dialogue-facilitation-en.pdf)** for effective inter-cultural communication
-- **[Cultural Exchange Program Design Toolkit](/framework/tools/consciousness/cultural-exchange-program-design-en.pdf)** for structured cultural learning
-- **[Cultural Conflict Transformation Manual](/framework/tools/consciousness/cultural-conflict-transformation-manual-en.pdf)** for healing and relationship building
+- **[Cultural Bridge-Building Framework](/frameworks/tools/consciousness/cultural-bridge-building-framework-en.pdf)** for systematic cross-cultural relationship development
+- **[Cross-Cultural Dialogue Facilitation Guide](/frameworks/tools/consciousness/cross-cultural-dialogue-facilitation-en.pdf)** for effective inter-cultural communication
+- **[Cultural Exchange Program Design Toolkit](/frameworks/tools/consciousness/cultural-exchange-program-design-en.pdf)** for structured cultural learning
+- **[Cultural Conflict Transformation Manual](/frameworks/tools/consciousness/cultural-conflict-transformation-manual-en.pdf)** for healing and relationship building
 
 ## <a id="quality-assurance-and-community-validation"></a>Quality Assurance and Community Validation
 
@@ -15014,10 +15014,10 @@ Comprehensive frameworks for ensuring cultural translation quality, authenticity
 **Example (Fictive)**: A global network of 50 indigenous communities develops comprehensive cultural translation validation standards that include traditional authority protocols, community consensus requirements, sacred knowledge protection, and ongoing monitoring systems, creating international frameworks that prevent cultural appropriation while enabling authentic cultural learning and cooperation across indigenous communities worldwide.
 
 **Tools Available**:
-- **[Community Validation Framework](/framework/tools/consciousness/community-validation-framework-en.pdf)** for comprehensive cultural translation validation
-- **[Traditional Authority Protocols](/framework/tools/consciousness/traditional-authority-protocols-en.pdf)** for appropriate cultural authority engagement
-- **[Cultural Quality Assurance Toolkit](/framework/tools/consciousness/cultural-quality-assurance-toolkit-en.pdf)** for systematic translation quality monitoring
-- **[Validation Process Implementation Guide](/framework/tools/consciousness/validation-process-implementation-en.pdf)** for step-by-step community validation
+- **[Community Validation Framework](/frameworks/tools/consciousness/community-validation-framework-en.pdf)** for comprehensive cultural translation validation
+- **[Traditional Authority Protocols](/frameworks/tools/consciousness/traditional-authority-protocols-en.pdf)** for appropriate cultural authority engagement
+- **[Cultural Quality Assurance Toolkit](/frameworks/tools/consciousness/cultural-quality-assurance-toolkit-en.pdf)** for systematic translation quality monitoring
+- **[Validation Process Implementation Guide](/frameworks/tools/consciousness/validation-process-implementation-en.pdf)** for step-by-step community validation
 
 ## <a id="implementation-timeline-and-capacity-building"></a>Implementation Timeline and Capacity Building
 
@@ -15161,10 +15161,10 @@ Comprehensive strategies for building cultural translation capacity and implemen
 **Example (Fictive)**: A network of 30 indigenous communities across the Arctic develops comprehensive 10-year capacity building programs that include traditional knowledge preservation, youth leadership development, climate adaptation training, and governance innovation, resulting in strengthened cultural communities that effectively address climate change while maintaining cultural sovereignty and contributing to global consciousness governance development.
 
 **Tools Available**:
-- **[Cultural Translation Capacity Building Framework](/framework/tools/consciousness/cultural-translation-capacity-building-en.pdf)** for systematic community development
-- **[Implementation Timeline Planning Guide](/framework/tools/consciousness/implementation-timeline-planning-en.pdf)** for phased cultural translation development
-- **[Community Leadership Development Program](/framework/tools/consciousness/community-leadership-development-program-en.pdf)** for cultural governance leadership
-- **[Sustainability Planning Toolkit](/framework/tools/consciousness/sustainability-planning-toolkit-en.pdf)** for long-term cultural translation viability
+- **[Cultural Translation Capacity Building Framework](/frameworks/tools/consciousness/cultural-translation-capacity-building-en.pdf)** for systematic community development
+- **[Implementation Timeline Planning Guide](/frameworks/tools/consciousness/implementation-timeline-planning-en.pdf)** for phased cultural translation development
+- **[Community Leadership Development Program](/frameworks/tools/consciousness/community-leadership-development-program-en.pdf)** for cultural governance leadership
+- **[Sustainability Planning Toolkit](/frameworks/tools/consciousness/sustainability-planning-toolkit-en.pdf)** for long-term cultural translation viability
 
 ## <a id="risks-and-ethical-safeguards"></a>Risks and Ethical Safeguards
 
@@ -15339,16 +15339,16 @@ Comprehensive frameworks for identifying, preventing, and addressing risks in cr
 **Example (Fictive)**: A global network of 100 indigenous communities develops comprehensive risk prevention protocols that include traditional authority oversight, sacred knowledge protection, community economic control, and international legal advocacy, resulting in successful cultural translation work that strengthens traditional cultures while contributing to global consciousness governance without any incidents of appropriation or community harm over 10 years of implementation.
 
 **Tools Available**:
-- **[Cultural Translation Risk Assessment Framework](/framework/tools/consciousness/cultural-translation-risk-assessment-en.pdf)** for comprehensive risk identification and prevention
-- **[Ethical Safeguard Implementation Guide](/framework/tools/consciousness/ethical-safeguard-implementation-en.pdf)** for maintaining highest ethical standards
-- **[Community Protection Protocols](/framework/tools/consciousness/community-protection-protocols-en.pdf)** for cultural sovereignty defense
-- **[Crisis Response Manual](/framework/tools/consciousness/crisis-response-manual-en.pdf)** for addressing threats and harm to cultural communities
+- **[Cultural Translation Risk Assessment Framework](/frameworks/tools/consciousness/cultural-translation-risk-assessment-en.pdf)** for comprehensive risk identification and prevention
+- **[Ethical Safeguard Implementation Guide](/frameworks/tools/consciousness/ethical-safeguard-implementation-en.pdf)** for maintaining highest ethical standards
+- **[Community Protection Protocols](/frameworks/tools/consciousness/community-protection-protocols-en.pdf)** for cultural sovereignty defense
+- **[Crisis Response Manual](/frameworks/tools/consciousness/crisis-response-manual-en.pdf)** for addressing threats and harm to cultural communities
 
 ---
 
-**Cross-Reference Note**: This section connects to [Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics) for value system understanding, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for community engagement across difference, [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) for institutional cultural adaptation, and [Implementation Roadmap](/framework/docs/consciousness#13-implementation-roadmap) for phased cultural translation development.
+**Cross-Reference Note**: This section connects to [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for value system understanding, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement across difference, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for institutional cultural adaptation, and [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap) for phased cultural translation development.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin cross-cultural translation with the [Deep Cultural Engagement Protocol Manual](/framework/tools/consciousness/deep-cultural-engagement-protocol-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin cross-cultural translation with the [Deep Cultural Engagement Protocol Manual](/frameworks/tools/consciousness/deep-cultural-engagement-protocol-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All cross-cultural translation materials are open-access under CC BY-SA 4.0, with priority support for indigenous and traditional communities, resources for preventing cultural appropriation, and requirements for community benefit sharing in all cultural knowledge use.
 
@@ -15370,7 +15370,7 @@ Comprehensive frameworks for identifying, preventing, and addressing risks in cr
 
 **Estimated Reading Time**: 25 minutes
 
-The Implementation Roadmap provides a comprehensive, phased approach for transforming global governance through consciousness principles over a 20-year timeline. Beginning with carefully selected pilot programs and scaling through network development to systematic integration, this roadmap balances ambitious vision with practical feasibility. By 2045, consciousness governance will demonstrate superior outcomes in well-being, sustainability, and democratic participation, inspiring worldwide adoption and fundamentally transforming how humanity governs itself, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+The Implementation Roadmap provides a comprehensive, phased approach for transforming global governance through consciousness principles over a 20-year timeline. Beginning with carefully selected pilot programs and scaling through network development to systematic integration, this roadmap balances ambitious vision with practical feasibility. By 2045, consciousness governance will demonstrate superior outcomes in well-being, sustainability, and democratic participation, inspiring worldwide adoption and fundamentally transforming how humanity governs itself, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-strategic-vision"></a>Purpose and Strategic Vision
 
@@ -15395,10 +15395,10 @@ By 2045, consciousness governance will be recognized as a proven, superior model
 ### Theory of Change
 **Individual Transformation** → **Community Engagement** → **Institutional Reform** → **Regional Networks** → **Global Movement**
 
-1. **Personal Development**: Leaders develop consciousness through [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) practices
-2. **Community Building**: [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) processes engage diverse stakeholders
-3. **System Integration**: [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) embeds consciousness in institutions
-4. **Cultural Adaptation**: [Cross-Cultural Translation](/framework/docs/consciousness#12-cross-cultural-translation) ensures authentic local expression
+1. **Personal Development**: Leaders develop consciousness through [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) practices
+2. **Community Building**: [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) processes engage diverse stakeholders
+3. **System Integration**: [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) embeds consciousness in institutions
+4. **Cultural Adaptation**: [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) ensures authentic local expression
 5. **Global Coordination**: International networks share learning and coordinate advocacy for supportive policies
 
 ### Success Criteria and Indicators
@@ -15444,9 +15444,9 @@ While the roadmap provides a 20-year framework, implementation remains adaptive 
 ### Cross-Phase Continuity Elements
 Throughout all phases, certain elements remain constant:
 - **Leader Development**: Continuous training and development of consciousness governance leaders
-- **Community Engagement**: Ongoing [Consciousness-Raising Circles](/framework/docs/consciousness#07-community-engagement) and participatory processes
-- **Assessment and Learning**: Regular evaluation using [Metrics and Accountability](/framework/docs/consciousness#09-metrics-accountability) frameworks
-- **Cultural Adaptation**: Ongoing [Cross-Cultural Translation](/framework/docs/consciousness#12-cross-cultural-translation) and sensitivity development
+- **Community Engagement**: Ongoing [Consciousness-Raising Circles](/frameworks/docs/consciousness#07-community-engagement) and participatory processes
+- **Assessment and Learning**: Regular evaluation using [Metrics and Accountability](/frameworks/docs/consciousness#09-metrics-accountability) frameworks
+- **Cultural Adaptation**: Ongoing [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) and sensitivity development
 - **Network Support**: Mutual support and learning between communities at all stages of development
 
 ## <a id="phase-1-foundation-and-pilot-development-years-1-3"></a>Phase 1: Foundation and Pilot Development (Years 1-3)
@@ -15458,20 +15458,20 @@ The foundation phase focuses on establishing proof of concept through carefully 
 **Months 1-6: Foundation Building**
 - **Action**: Establish organizational infrastructure and select initial pilot sites
   - Form the Consciousness Accord Consortium with governance experts, indigenous leaders, and youth representatives
-  - Develop partnership agreements with pilot communities using [FPIC 2.0 protocols](/framework/tools/consciousness/fpic-implementation-guide-en.pdf)
-  - Create basic training materials and [Conscious Governance Starter Kit](/framework/tools/consciousness/conscious-governance-starter-kit-en.zip)
+  - Develop partnership agreements with pilot communities using [FPIC 2.0 protocols](/frameworks/tools/consciousness/fpic-implementation-guide-en.pdf)
+  - Create basic training materials and [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip)
   - Establish funding through initial grants and crowdfunding campaigns
-- **Tool**: **[Pilot Site Selection Framework](/framework/tools/consciousness/pilot-site-selection-framework-en.pdf)** for identifying optimal communities
+- **Tool**: **[Pilot Site Selection Framework](/frameworks/tools/consciousness/pilot-site-selection-framework-en.pdf)** for identifying optimal communities
 - **Metric**: 5 pilot sites selected and partnership agreements signed by Month 6
 - **Actors**: Consortium leadership, pilot community leaders, funding partners
 
 **Months 7-12: Pilot Launch and Initial Training**
 - **Action**: Launch first pilot programs with comprehensive support and training
   - Train 100+ community leaders in consciousness governance principles and practices
-  - Establish [Regional Consciousness Hubs](/framework/docs/consciousness#01-governance-structure) in pilot regions
-  - Begin [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) programs for pilot leaders
-  - Launch [Consciousness-Raising Circles](/framework/docs/consciousness#03-collective-consciousness) in pilot communities
-- **Tool**: **[Leadership Training Program](/framework/tools/consciousness/leadership-toolkit-en.pdf)** for comprehensive capacity building
+  - Establish [Regional Consciousness Hubs](/frameworks/docs/consciousness#01-governance-structure) in pilot regions
+  - Begin [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) programs for pilot leaders
+  - Launch [Consciousness-Raising Circles](/frameworks/docs/consciousness#03-collective-consciousness) in pilot communities
+- **Tool**: **[Leadership Training Program](/frameworks/tools/consciousness/leadership-toolkit-en.pdf)** for comprehensive capacity building
 - **Metric**: 80% completion rate for leadership training, 500+ community members engaged in consciousness-raising circles
 - **Actors**: Trained facilitators, pilot community members, volunteer coordinators
 
@@ -15479,21 +15479,21 @@ The foundation phase focuses on establishing proof of concept through carefully 
 
 **Months 13-18: Implementation and Learning**
 - **Action**: Full implementation of consciousness governance practices with continuous refinement
-  - Integrate [Spiral Dynamics](/framework/docs/consciousness#05-spiral-dynamics) approaches adapted to each pilot context
-  - Implement [Digital Platforms](/framework/docs/consciousness#10-digital-platforms) for enhanced participation and connection
-  - Begin [Policy Integration](/framework/docs/consciousness#04-systemic-integration) with local governance structures
-  - Establish [Metrics and Accountability](/framework/docs/consciousness#09-metrics-accountability) systems for progress tracking
-- **Tool**: **[Policy Integration Toolkit](/framework/tools/consciousness/policy-design-guide-en.pdf)** for embedding consciousness in governance
+  - Integrate [Spiral Dynamics](/frameworks/docs/consciousness#05-spiral-dynamics) approaches adapted to each pilot context
+  - Implement [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) for enhanced participation and connection
+  - Begin [Policy Integration](/frameworks/docs/consciousness#04-systemic-integration) with local governance structures
+  - Establish [Metrics and Accountability](/frameworks/docs/consciousness#09-metrics-accountability) systems for progress tracking
+- **Tool**: **[Policy Integration Toolkit](/frameworks/tools/consciousness/policy-design-guide-en.pdf)** for embedding consciousness in governance
 - **Metric**: 50% improvement in citizen satisfaction scores, 3 successful policy integrations per pilot
 - **Actors**: Policy teams, digital platform coordinators, community evaluators
 
 **Months 19-24: Assessment and Documentation**
 - **Action**: Comprehensive evaluation and documentation of pilot outcomes and lessons learned
-  - Conduct rigorous assessment using [Leader Consciousness Index](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf) and community well-being indicators
+  - Conduct rigorous assessment using [Leader Consciousness Index](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf) and community well-being indicators
   - Document successful practices and adaptation strategies through case study development
   - Begin planning for Year 3 expansion based on pilot learning and community feedback
   - Develop refined training materials incorporating lessons learned from initial implementation
-- **Tool**: **[Pilot Evaluation Framework](/framework/tools/consciousness/pilot-evaluation-framework-en.pdf)** for comprehensive assessment
+- **Tool**: **[Pilot Evaluation Framework](/frameworks/tools/consciousness/pilot-evaluation-framework-en.pdf)** for comprehensive assessment
 - **Metric**: Completed evaluation reports for all pilots, 30% improvement in governance effectiveness indicators
 - **Actors**: Evaluation teams, community researchers, documentation specialists
 
@@ -15501,21 +15501,21 @@ The foundation phase focuses on establishing proof of concept through carefully 
 
 **Months 25-30: Pilot Strengthening**
 - **Action**: Strengthen and deepen consciousness governance practices in existing pilots
-  - Advance to [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) including constitutional and legal alignment
+  - Advance to [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) including constitutional and legal alignment
   - Establish sustainable funding models for ongoing pilot operations
   - Train second generation of local leaders for program sustainability
   - Begin mentoring relationships between pilots for peer learning and support
-- **Tool**: **[Sustainability Planning Toolkit](/framework/tools/consciousness/sustainability-planning-toolkit-en.pdf)** for long-term viability
+- **Tool**: **[Sustainability Planning Toolkit](/frameworks/tools/consciousness/sustainability-planning-toolkit-en.pdf)** for long-term viability
 - **Metric**: 100% of pilots achieve financial sustainability, 50+ second-generation leaders trained
 - **Actors**: Sustainability coordinators, financial managers, peer mentors
 
 **Months 31-36: Network Development and Scaling Preparation**
 - **Action**: Build networks between pilots and prepare for Phase 2 scaling
   - Establish formal network agreements and communication systems between pilots
-  - Develop [Global Consciousness Summit](/framework/docs/consciousness#13-implementation-roadmap) for annual learning and coordination
+  - Develop [Global Consciousness Summit](/frameworks/docs/consciousness#13-implementation-roadmap) for annual learning and coordination
   - Create refined pilot replication packages based on cultural adaptation learning
   - Secure major funding commitments for Phase 2 scaling through demonstrated pilot success
-- **Tool**: **[Network Development Guide](/framework/tools/consciousness/network-development-guide-en.pdf)** for inter-pilot collaboration
+- **Tool**: **[Network Development Guide](/frameworks/tools/consciousness/network-development-guide-en.pdf)** for inter-pilot collaboration
 - **Metric**: Network agreements signed by all pilots, $10M+ secured for Phase 2, 20+ communities expressing interest in adoption
 - **Actors**: Network coordinators, fundraising teams, interested community liaisons
 
@@ -15536,22 +15536,22 @@ The scaling phase expands consciousness governance to 100+ communities while bui
 ### Year 4: Regional Expansion
 
 **Regional Hub Development**
-- **Action**: Establish [Regional Consciousness Hubs](/framework/docs/consciousness#01-governance-structure) in 6 bioregions
+- **Action**: Establish [Regional Consciousness Hubs](/frameworks/docs/consciousness#01-governance-structure) in 6 bioregions
   - Create hubs in North America, Europe, Africa, Asia-Pacific, Latin America, and Middle East/Central Asia
   - Staff each hub with 5-10 trained coordinators representing diverse cultural and professional backgrounds
   - Establish hub governance structures with community accountability and indigenous representation
   - Develop regional adaptation of consciousness governance materials and training programs
-- **Tool**: **[Regional Hub Setup Guide](/framework/tools/consciousness/regional-consciousness-hub-implementation-en.pdf)** for coordinated expansion
+- **Tool**: **[Regional Hub Setup Guide](/frameworks/tools/consciousness/regional-consciousness-hub-implementation-en.pdf)** for coordinated expansion
 - **Metric**: 6 operational hubs, 30+ communities per region expressing implementation interest
 - **Actors**: Hub coordinators, regional advisory committees, community liaisons
 
 **Community Recruitment and Selection**
 - **Action**: Identify and select 50+ new communities for consciousness governance implementation
   - Use refined selection criteria prioritizing community readiness, cultural diversity, and strategic impact
-  - Establish partnership agreements using improved [FPIC 2.0 protocols](/framework/tools/consciousness/fpic-implementation-guide-en.pdf)
+  - Establish partnership agreements using improved [FPIC 2.0 protocols](/frameworks/tools/consciousness/fpic-implementation-guide-en.pdf)
   - Create cultural adaptation plans for each new community context
   - Begin pre-implementation relationship building and capacity assessment
-- **Tool**: **[Community Readiness Assessment](/framework/tools/consciousness/community-readiness-assessment-en.pdf)** for strategic selection
+- **Tool**: **[Community Readiness Assessment](/frameworks/tools/consciousness/community-readiness-assessment-en.pdf)** for strategic selection
 - **Metric**: 50+ partnership agreements signed, 90% community leadership satisfaction with partnership process
 - **Actors**: Community organizers, cultural liaisons, partnership coordinators
 
@@ -15560,10 +15560,10 @@ The scaling phase expands consciousness governance to 100+ communities while bui
 **Mass Implementation Launch**
 - **Action**: Launch consciousness governance implementation in 50+ new communities simultaneously
   - Deploy refined training programs adapted for each cultural context
-  - Establish [Digital Platforms](/framework/docs/consciousness#10-digital-platforms) connecting all communities in global network
-  - Begin [Economic Realignment](/framework/docs/consciousness#06-economic-realignment) pilots in willing communities
+  - Establish [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) connecting all communities in global network
+  - Begin [Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment) pilots in willing communities
   - Create peer mentoring relationships between experienced and new communities
-- **Tool**: **[Mass Implementation Coordination Platform](/framework/tools/consciousness/mass-implementation-platform-en.pdf)** for scaling support
+- **Tool**: **[Mass Implementation Coordination Platform](/frameworks/tools/consciousness/mass-implementation-platform-en.pdf)** for scaling support
 - **Metric**: 80% successful implementation launch rate, 10,000+ community members engaged
 - **Actors**: Implementation teams, peer mentors, digital platform coordinators
 
@@ -15573,7 +15573,7 @@ The scaling phase expands consciousness governance to 100+ communities while bui
   - Launch pilot integration with international organizations including UN agencies
   - Establish legal frameworks supporting consciousness governance practices
   - Create formal partnership agreements with progressive political parties and civil society organizations
-- **Tool**: **[Government Partnership Framework](/framework/tools/consciousness/government-partnership-framework-en.pdf)** for institutional integration
+- **Tool**: **[Government Partnership Framework](/frameworks/tools/consciousness/government-partnership-framework-en.pdf)** for institutional integration
 - **Metric**: 10+ formal government partnerships, 3+ international organization collaborations
 - **Actors**: Policy advocates, government liaisons, international relations coordinators
 
@@ -15584,8 +15584,8 @@ The scaling phase expands consciousness governance to 100+ communities while bui
   - Create alliance governance structure with representation from all participating communities
   - Develop shared standards, ethics, and quality assurance protocols
   - Establish common resource sharing, funding, and mutual support systems
-  - Launch annual [Global Consciousness Summit](/framework/docs/consciousness#13-implementation-roadmap) for learning and coordination
-- **Tool**: **[Alliance Governance Framework](/framework/tools/consciousness/alliance-governance-framework-en.pdf)** for network coordination
+  - Launch annual [Global Consciousness Summit](/frameworks/docs/consciousness#13-implementation-roadmap) for learning and coordination
+- **Tool**: **[Alliance Governance Framework](/frameworks/tools/consciousness/alliance-governance-framework-en.pdf)** for network coordination
 - **Metric**: Alliance constitution ratified by 80%+ of communities, 500+ attendees at first Global Summit
 - **Actors**: Alliance representatives, governance coordinators, summit organizers
 
@@ -15595,7 +15595,7 @@ The scaling phase expands consciousness governance to 100+ communities while bui
   - Create advanced training programs for consciousness governance trainers and facilitators
   - Develop standardized assessment tools while maintaining cultural adaptation flexibility
   - Launch research partnerships with universities for rigorous evaluation and improvement
-- **Tool**: **[Quality Assurance Protocols](/framework/tools/consciousness/quality-assurance-protocols-en.pdf)** for maintaining standards
+- **Tool**: **[Quality Assurance Protocols](/frameworks/tools/consciousness/quality-assurance-protocols-en.pdf)** for maintaining standards
 - **Metric**: 90%+ communities meet quality standards, 100+ advanced trainers certified
 - **Actors**: Quality assurance teams, research partners, training coordinators
 
@@ -15607,7 +15607,7 @@ The scaling phase expands consciousness governance to 100+ communities while bui
   - Influence national policy in 5+ countries through demonstrated effectiveness and advocacy
   - Establish formal partnerships with major international NGOs and civil society organizations
   - Begin preparation for constitutional recognition campaigns in willing jurisdictions
-- **Tool**: **[Policy Influence Strategy Guide](/framework/tools/consciousness/policy-influence-strategy-en.pdf)** for systematic advocacy
+- **Tool**: **[Policy Influence Strategy Guide](/frameworks/tools/consciousness/policy-influence-strategy-en.pdf)** for systematic advocacy
 - **Metric**: 25+ government integrations, 5+ national policy influences, 20+ major NGO partnerships
 - **Actors**: Policy teams, advocacy coordinators, NGO liaisons
 
@@ -15617,7 +15617,7 @@ The scaling phase expands consciousness governance to 100+ communities while bui
   - Create cultural exchange programs and artistic collaborations celebrating consciousness governance
   - Develop youth leadership programs and intergenerational collaboration initiatives
   - Launch consciousness governance integration with faith-based and spiritual communities
-- **Tool**: **[Movement Integration Toolkit](/framework/tools/consciousness/movement-integration-toolkit-en.pdf)** for coalition building
+- **Tool**: **[Movement Integration Toolkit](/frameworks/tools/consciousness/movement-integration-toolkit-en.pdf)** for coalition building
 - **Metric**: 50+ movement partnerships, 1,000+ youth leaders developed, 25+ faith community collaborations
 - **Actors**: Movement liaisons, cultural coordinators, youth program managers
 
@@ -15642,8 +15642,8 @@ The systematic integration phase embeds consciousness governance into major inst
   - Identify jurisdictions with supportive political climate and demonstrated consciousness governance success
   - Develop constitutional amendment language recognizing consciousness governance principles and institutions
   - Build broad coalition support including civil society, political leaders, and affected communities
-  - Implement comprehensive public education and engagement campaigns using [Community Dialogue Manual](/framework/tools/consciousness/community-dialogue-manual-en.pdf)
-- **Tool**: **[Constitutional Campaign Strategy Guide](/framework/tools/consciousness/constitutional-campaign-strategy-en.pdf)** for amendment advocacy
+  - Implement comprehensive public education and engagement campaigns using [Community Dialogue Manual](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf)
+- **Tool**: **[Constitutional Campaign Strategy Guide](/frameworks/tools/consciousness/constitutional-campaign-strategy-en.pdf)** for amendment advocacy
 - **Metric**: Amendment campaigns launched in 5+ jurisdictions, 60%+ public support in target regions
 - **Actors**: Constitutional lawyers, campaign managers, coalition builders
 
@@ -15651,9 +15651,9 @@ The systematic integration phase embeds consciousness governance into major inst
 - **Action**: Establish comprehensive legal frameworks supporting consciousness governance
   - Draft model legislation for consciousness governance recognition and implementation
   - Create legal protections for consciousness governance practitioners and communities
-  - Establish legal mechanisms for [Rights of Nature](/framework/docs/consciousness#04-systemic-integration) and future generations representation
-  - Develop legal frameworks for [Restorative Justice](/framework/docs/consciousness#03-collective-consciousness) integration
-- **Tool**: **[Legal Framework Development Kit](/framework/tools/consciousness/legal-framework-development-en.pdf)** for systematic legal integration
+  - Establish legal mechanisms for [Rights of Nature](/frameworks/docs/consciousness#04-systemic-integration) and future generations representation
+  - Develop legal frameworks for [Restorative Justice](/frameworks/docs/consciousness#03-collective-consciousness) integration
+- **Tool**: **[Legal Framework Development Kit](/frameworks/tools/consciousness/legal-framework-development-en.pdf)** for systematic legal integration
 - **Metric**: Model legislation adopted in 10+ jurisdictions, legal protections established in 15+ regions
 - **Actors**: Legal teams, legislative advocates, community legal advisors
 
@@ -15665,7 +15665,7 @@ The systematic integration phase embeds consciousness governance into major inst
   - Establish formal partnerships with UNDP, UNESCO, UNEP, and other relevant UN agencies
   - Create consciousness governance advisory capacity for international conflict resolution and peace-building
   - Develop international standards and protocols for consciousness governance implementation
-- **Tool**: **[International Integration Strategy](/framework/tools/consciousness/international-integration-strategy-en.pdf)** for global recognition
+- **Tool**: **[International Integration Strategy](/frameworks/tools/consciousness/international-integration-strategy-en.pdf)** for global recognition
 - **Metric**: Formal UN recognition achieved, partnerships with 5+ international organizations, participation in 10+ international peace processes
 - **Actors**: International relations teams, UN liaisons, peace-building specialists
 
@@ -15675,7 +15675,7 @@ The systematic integration phase embeds consciousness governance into major inst
   - Create indigenous leadership development programs and traditional knowledge protection protocols
   - Develop South-South cooperation networks for consciousness governance sharing
   - Ensure Global South representation in international consciousness governance bodies
-- **Tool**: **[Global South Leadership Development Framework](/framework/tools/consciousness/global-south-leadership-en.pdf)** for equitable expansion
+- **Tool**: **[Global South Leadership Development Framework](/frameworks/tools/consciousness/global-south-leadership-en.pdf)** for equitable expansion
 - **Metric**: 60%+ Global South participation in international bodies, 100+ indigenous leaders in senior roles
 - **Actors**: Global South coordinators, indigenous liaisons, South-South cooperation facilitators
 
@@ -15687,7 +15687,7 @@ The systematic integration phase embeds consciousness governance into major inst
   - Establish consciousness governance teacher training and certification programs
   - Create university degree programs and research centers focused on consciousness governance
   - Launch youth leadership development programs in schools and communities worldwide
-- **Tool**: **[Educational Integration Toolkit](/framework/tools/consciousness/educational-integration-toolkit-en.pdf)** for systematic curriculum development
+- **Tool**: **[Educational Integration Toolkit](/frameworks/tools/consciousness/educational-integration-toolkit-en.pdf)** for systematic curriculum development
 - **Metric**: Curricula implemented in 500+ schools, 25+ university programs established, 10,000+ teachers trained
 - **Actors**: Education coordinators, curriculum developers, teacher trainers
 
@@ -15697,7 +15697,7 @@ The systematic integration phase embeds consciousness governance into major inst
   - Create cooperative and social enterprise networks aligned with consciousness governance principles
   - Influence major corporations to adopt consciousness governance practices in their operations
   - Develop consciousness-aligned investment funds and financial institutions
-- **Tool**: **[Business Integration Framework](/framework/tools/consciousness/business-integration-framework-en.pdf)** for economic transformation
+- **Tool**: **[Business Integration Framework](/frameworks/tools/consciousness/business-integration-framework-en.pdf)** for economic transformation
 - **Metric**: 1,000+ certified organizations, $1B+ in consciousness-aligned investment, 50+ major corporation adoptions
 - **Actors**: Business coordinators, certification teams, investment managers
 
@@ -15723,7 +15723,7 @@ The global transformation phase establishes consciousness governance as a recogn
   - Establish consciousness governance as standard practice in progressive political movements
   - Create consciousness governance leadership roles in major cultural and spiritual institutions
   - Develop consciousness governance influence in major media and communication platforms
-- **Tool**: **[Cultural Transformation Strategy](/framework/tools/consciousness/cultural-transformation-strategy-en.pdf)** for mainstream adoption
+- **Tool**: **[Cultural Transformation Strategy](/frameworks/tools/consciousness/cultural-transformation-strategy-en.pdf)** for mainstream adoption
 - **Metric**: Consciousness governance featured in major media 1,000+ times annually, adoption by 50+ major cultural institutions
 - **Actors**: Cultural coordinators, media relations teams, artistic collaborators
 
@@ -15733,7 +15733,7 @@ The global transformation phase establishes consciousness governance as a recogn
   - Establish consciousness governance research centers and academic departments in major universities
   - Develop consciousness governance professional degree programs and career pathways
   - Launch major research initiatives documenting consciousness governance effectiveness and best practices
-- **Tool**: **[Professional Development Framework](/framework/tools/consciousness/professional-development-framework-en.pdf)** for field establishment
+- **Tool**: **[Professional Development Framework](/frameworks/tools/consciousness/professional-development-framework-en.pdf)** for field establishment
 - **Metric**: 10+ professional associations established, 50+ university research centers, 1,000+ research publications
 - **Actors**: Academic coordinators, professional association leaders, research directors
 
@@ -15745,7 +15745,7 @@ The global transformation phase establishes consciousness governance as a recogn
   - Integrate consciousness governance principles into international human rights and environmental law
   - Establish international mechanisms for consciousness governance support and protection
   - Create international conflict resolution and peace-building protocols based on consciousness governance
-- **Tool**: **[International Law Development Guide](/framework/tools/consciousness/international-law-development-en.pdf)** for treaty advocacy
+- **Tool**: **[International Law Development Guide](/frameworks/tools/consciousness/international-law-development-en.pdf)** for treaty advocacy
 - **Metric**: International treaty signed by 50+ countries, integration into 10+ international legal frameworks
 - **Actors**: International lawyers, treaty advocates, diplomatic coordinators
 
@@ -15755,7 +15755,7 @@ The global transformation phase establishes consciousness governance as a recogn
   - Create consciousness governance approaches to international conflict resolution and peace-building
   - Develop consciousness governance solutions for global economic justice and development
   - Establish consciousness governance as recognized approach for addressing complex global problems
-- **Tool**: **[Global Challenge Response Framework](/framework/tools/consciousness/global-challenge-response-en.pdf)** for coordinated action
+- **Tool**: **[Global Challenge Response Framework](/frameworks/tools/consciousness/global-challenge-response-en.pdf)** for coordinated action
 - **Metric**: Leadership role in 10+ major global initiatives, recognition by international community for effectiveness
 - **Actors**: Global challenge coordinators, policy specialists, international relations teams
 
@@ -15767,7 +15767,7 @@ The global transformation phase establishes consciousness governance as a recogn
   - Achieve consciousness governance influence in majority of willing democratic nations
   - Establish consciousness governance as standard alternative model taught in governance and political science
   - Create consciousness governance influence in major international organizations and global governance systems
-- **Tool**: **[System Transformation Assessment](/framework/tools/consciousness/system-transformation-assessment-en.pdf)** for impact measurement
+- **Tool**: **[System Transformation Assessment](/frameworks/tools/consciousness/system-transformation-assessment-en.pdf)** for impact measurement
 - **Metric**: 1,000+ implementing communities, influence in 25+ national governments, recognition as legitimate governance model
 - **Actors**: Impact assessors, system coordinators, recognition advocates
 
@@ -15777,7 +15777,7 @@ The global transformation phase establishes consciousness governance as a recogn
   - Create next-generation leadership development and succession planning
   - Establish consciousness governance resilience and adaptation capacity for future challenges
   - Launch exploration of consciousness governance applications to space governance and planetary stewardship
-- **Tool**: **[Future Evolution Planning Framework](/framework/tools/consciousness/future-evolution-planning-en.pdf)** for next-generation development
+- **Tool**: **[Future Evolution Planning Framework](/frameworks/tools/consciousness/future-evolution-planning-en.pdf)** for next-generation development
 - **Metric**: 2045-2070 strategy developed, next-generation leadership pipeline established, space governance pilot launched
 - **Actors**: Future planning teams, next-generation leaders, space governance pioneers
 
@@ -16551,7 +16551,7 @@ Comprehensive framework for measuring consciousness governance effectiveness, im
 ### Multi-Level Assessment Framework
 
 **Individual Level Indicators**:
-- **Leader Consciousness Index**: Using the [Leader Consciousness Index](/framework/tools/consciousness/leader-consciousness-index-guide-en.pdf) to track personal transformation and consciousness development
+- **Leader Consciousness Index**: Using the [Leader Consciousness Index](/frameworks/tools/consciousness/leader-consciousness-index-guide-en.pdf) to track personal transformation and consciousness development
 - **Emotional Intelligence Growth**: Measured improvement in empathy, self-awareness, and interpersonal effectiveness
 - **Cultural Competence Development**: Increased ability to work effectively across cultural and value system differences
 - **Decision-Making Quality**: Improvement in ethical decision-making and consideration of multiple stakeholder impacts
@@ -16745,9 +16745,9 @@ Comprehensive framework for measuring consciousness governance effectiveness, im
 
 ---
 
-**Cross-Reference Note**: This section connects to [Governance Structure](/framework/docs/consciousness#01-governance-structure) for institutional frameworks, [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) for individual development, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) for community engagement, [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) for institutional embedding, [Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics) for value system navigation, and [Metrics and Accountability](/framework/docs/consciousness#09-metrics-accountability) for measurement frameworks.
+**Cross-Reference Note**: This section connects to [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) for institutional frameworks, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) for individual development, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) for community engagement, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) for institutional embedding, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) for value system navigation, and [Metrics and Accountability](/frameworks/docs/consciousness#09-metrics-accountability) for measurement frameworks.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin implementation with the [Conscious Governance Starter Kit](/framework/tools/consciousness/conscious-governance-starter-kit-en.zip). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin implementation with the [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All implementation materials are open-access under CC BY-SA 4.0, with priority support for Global South communities, indigenous-led initiatives, and resources for removing implementation barriers including funding, training, and technical assistance.
 
@@ -16769,7 +16769,7 @@ Comprehensive framework for measuring consciousness governance effectiveness, im
 
 **Estimated Reading Time**: 16 minutes
 
-The Visual Architecture Map provides comprehensive visual representations of the *Consciousness & Inner Development Framework's* complex systems, relationships, and implementation pathways. Through carefully designed diagrams, flowcharts, and interactive dashboards, this section makes the framework's intricate components accessible and actionable for diverse stakeholders—from mayors implementing local pilots to global coordinators managing international networks. Visual mapping serves not only as documentation but as a powerful tool for understanding, communication, and implementation across cultural and linguistic boundaries, as envisioned in the [Manifesto: The Consciousness Accord](/framework/docs/consciousness#00-manifesto).
+The Visual Architecture Map provides comprehensive visual representations of the *Consciousness & Inner Development Framework's* complex systems, relationships, and implementation pathways. Through carefully designed diagrams, flowcharts, and interactive dashboards, this section makes the framework's intricate components accessible and actionable for diverse stakeholders—from mayors implementing local pilots to global coordinators managing international networks. Visual mapping serves not only as documentation but as a powerful tool for understanding, communication, and implementation across cultural and linguistic boundaries, as envisioned in the [Manifesto: The Consciousness Accord](/frameworks/docs/consciousness#00-manifesto).
 
 ## <a id="purpose-and-visual-design-philosophy"></a>Purpose and Visual Design Philosophy
 
@@ -16867,9 +16867,9 @@ A comprehensive visual representation of how all framework components interact a
 - **Competition to Collaboration**: How consciousness shifts change fundamental relationship patterns
 
 **Tools Available**:
-- **[System Architecture Visualization Toolkit](/framework/tools/consciousness/system-architecture-visualization-en.pdf)** for comprehensive framework mapping
-- **[Multi-Scale Integration Diagrams](/framework/tools/consciousness/multi-scale-integration-diagrams-en.pdf)** for understanding cross-level relationships
-- **[Stakeholder Ecosystem Mapping Guide](/framework/tools/consciousness/stakeholder-ecosystem-mapping-en.pdf)** for network visualization
+- **[System Architecture Visualization Toolkit](/frameworks/tools/consciousness/system-architecture-visualization-en.pdf)** for comprehensive framework mapping
+- **[Multi-Scale Integration Diagrams](/frameworks/tools/consciousness/multi-scale-integration-diagrams-en.pdf)** for understanding cross-level relationships
+- **[Stakeholder Ecosystem Mapping Guide](/frameworks/tools/consciousness/stakeholder-ecosystem-mapping-en.pdf)** for network visualization
 
 ## <a id="governance-structure-diagrams"></a>Governance Structure Diagrams
 
@@ -16970,9 +16970,9 @@ Detailed visual representations of governance institutions, decision-making proc
 **Infographic Placeholder**: *Governance Integration Timeline* showing the three-phase democratic integration process with milestone markers, assessment points, and community participation indicators.
 
 **Tools Available**:
-- **[Governance Structure Design Toolkit](/framework/tools/consciousness/governance-structure-design-en.pdf)** for institutional architecture visualization
-- **[Democratic Integration Pathway Maps](/framework/tools/consciousness/democratic-integration-pathways-en.pdf)** for phased implementation planning
-- **[Power Sharing Visualization Guide](/framework/tools/consciousness/power-sharing-visualization-en.pdf)** for accountability mechanism design
+- **[Governance Structure Design Toolkit](/frameworks/tools/consciousness/governance-structure-design-en.pdf)** for institutional architecture visualization
+- **[Democratic Integration Pathway Maps](/frameworks/tools/consciousness/democratic-integration-pathways-en.pdf)** for phased implementation planning
+- **[Power Sharing Visualization Guide](/frameworks/tools/consciousness/power-sharing-visualization-en.pdf)** for accountability mechanism design
 
 ## <a id="spiral-dynamics-integration-visualization"></a>Spiral Dynamics Integration Visualization
 
@@ -17100,9 +17100,9 @@ Visual representations of value systems, developmental transitions, and cultural
 **Infographic Placeholder**: *vMeme Integration Matrix* showing how different value systems can work together on shared challenges like climate change, with specific examples of collaboration strategies and communication approaches.
 
 **Tools Available**:
-- **[Spiral Dynamics Visualization Toolkit](/framework/tools/consciousness/spiral-dynamics-visualization-en.pdf)** for value system mapping and representation
-- **[vMeme Governance Adaptation Diagrams](/framework/tools/consciousness/vmeme-governance-adaptation-en.pdf)** for culturally specific approaches
-- **[Value System Integration Flowcharts](/framework/tools/consciousness/value-system-integration-flowcharts-en.pdf)** for second-tier development
+- **[Spiral Dynamics Visualization Toolkit](/frameworks/tools/consciousness/spiral-dynamics-visualization-en.pdf)** for value system mapping and representation
+- **[vMeme Governance Adaptation Diagrams](/frameworks/tools/consciousness/vmeme-governance-adaptation-en.pdf)** for culturally specific approaches
+- **[Value System Integration Flowcharts](/frameworks/tools/consciousness/value-system-integration-flowcharts-en.pdf)** for second-tier development
 
 ## <a id="implementation-flow-charts"></a>Implementation Flow Charts
 
@@ -17253,10 +17253,10 @@ Comprehensive visual guides for implementing consciousness governance from initi
 **Infographic Placeholder**: *Implementation Success Pathway* showing the progression from community consultation through pilot launch, scaling, and network integration with key milestone markers and decision points.
 
 **Tools Available**:
-- **[Implementation Planning Toolkit](/framework/tools/consciousness/implementation-planning-toolkit-en.pdf)** for systematic deployment guidance
-- **[Pilot Launch Checklist](/framework/tools/consciousness/pilot-launch-checklist-en.pdf)** for 90-day implementation process
-- **[Stakeholder Engagement Flowcharts](/framework/tools/consciousness/stakeholder-engagement-flowcharts-en.pdf)** for community mobilization
-- **[Cultural Adaptation Process Maps](/framework/tools/consciousness/cultural-adaptation-process-maps-en.pdf)** for respectful implementation
+- **[Implementation Planning Toolkit](/frameworks/tools/consciousness/implementation-planning-toolkit-en.pdf)** for systematic deployment guidance
+- **[Pilot Launch Checklist](/frameworks/tools/consciousness/pilot-launch-checklist-en.pdf)** for 90-day implementation process
+- **[Stakeholder Engagement Flowcharts](/frameworks/tools/consciousness/stakeholder-engagement-flowcharts-en.pdf)** for community mobilization
+- **[Cultural Adaptation Process Maps](/frameworks/tools/consciousness/cultural-adaptation-process-maps-en.pdf)** for respectful implementation
 
 ## <a id="digital-platform-architecture"></a>Digital Platform Architecture
 
@@ -17376,10 +17376,10 @@ Technical infrastructure diagrams for VR/AR wisdom councils, AI sentiment analys
 - **Cultural Exchange Networks**: Platforms for sharing wisdom and practices across communities
 
 **Tools Available**:
-- **[Digital Platform Architecture Guide](/framework/tools/consciousness/digital-platform-architecture-en.pdf)** for technical infrastructure planning
-- **[VR/AR Council Setup Manual](/framework/tools/consciousness/vr-ar-council-setup-en.pdf)** for immersive meeting implementation
-- **[AI Ethics Implementation Framework](/framework/tools/consciousness/ai-ethics-implementation-en.pdf)** for responsible artificial intelligence
-- **[Community Data Sovereignty Toolkit](/framework/tools/consciousness/community-data-sovereignty-en.pdf)** for protecting community information
+- **[Digital Platform Architecture Guide](/frameworks/tools/consciousness/digital-platform-architecture-en.pdf)** for technical infrastructure planning
+- **[VR/AR Council Setup Manual](/frameworks/tools/consciousness/vr-ar-council-setup-en.pdf)** for immersive meeting implementation
+- **[AI Ethics Implementation Framework](/frameworks/tools/consciousness/ai-ethics-implementation-en.pdf)** for responsible artificial intelligence
+- **[Community Data Sovereignty Toolkit](/frameworks/tools/consciousness/community-data-sovereignty-en.pdf)** for protecting community information
 
 ## <a id="assessment-and-metrics-dashboard"></a>Assessment and Metrics Dashboard
 
@@ -17528,10 +17528,10 @@ Interactive visualization systems for monitoring framework implementation, commu
 **Infographic Placeholder**: *Consciousness Development Progression Charts* showing individual, community, and network development trajectories with milestone markers and success indicators.
 
 **Tools Available**:
-- **[Dashboard Design Toolkit](/framework/tools/consciousness/dashboard-design-toolkit-en.pdf)** for community-controlled assessment visualization
-- **[Community Assessment Framework](/framework/tools/consciousness/community-assessment-framework-en.pdf)** for participatory evaluation
-- **[Leader Consciousness Index Implementation](/framework/tools/consciousness/leader-consciousness-index-implementation-en.pdf)** for individual development tracking
-- **[Network Health Monitoring Guide](/framework/tools/consciousness/network-health-monitoring-en.pdf)** for cooperation assessment
+- **[Dashboard Design Toolkit](/frameworks/tools/consciousness/dashboard-design-toolkit-en.pdf)** for community-controlled assessment visualization
+- **[Community Assessment Framework](/frameworks/tools/consciousness/community-assessment-framework-en.pdf)** for participatory evaluation
+- **[Leader Consciousness Index Implementation](/frameworks/tools/consciousness/leader-consciousness-index-implementation-en.pdf)** for individual development tracking
+- **[Network Health Monitoring Guide](/frameworks/tools/consciousness/network-health-monitoring-en.pdf)** for cooperation assessment
 
 ## <a id="cross-cultural-translation-mapping"></a>Cross-Cultural Translation Mapping
 
@@ -17681,10 +17681,10 @@ Visual frameworks for adapting consciousness governance across diverse cultural 
 **Infographic Placeholder**: *Cultural Adaptation Success Stories* showing before/after comparisons of communities that have successfully integrated consciousness governance with traditional cultural practices, highlighting strengthened cultural identity alongside improved governance effectiveness.
 
 **Tools Available**:
-- **[Cultural Translation Framework](/framework/tools/consciousness/cultural-translation-framework-en.pdf)** for respectful cross-cultural adaptation
-- **[FPIC 2.0 Implementation Guide](/framework/tools/consciousness/fpic-implementation-guide-en.pdf)** for genuine community consent
-- **[Anti-Appropriation Protocols](/framework/tools/consciousness/anti-appropriation-protocols-en.pdf)** for cultural protection
-- **[Bridge-Building Process Design](/framework/tools/consciousness/bridge-building-process-design-en.pdf)** for cross-cultural understanding
+- **[Cultural Translation Framework](/frameworks/tools/consciousness/cultural-translation-framework-en.pdf)** for respectful cross-cultural adaptation
+- **[FPIC 2.0 Implementation Guide](/frameworks/tools/consciousness/fpic-implementation-guide-en.pdf)** for genuine community consent
+- **[Anti-Appropriation Protocols](/frameworks/tools/consciousness/anti-appropriation-protocols-en.pdf)** for cultural protection
+- **[Bridge-Building Process Design](/frameworks/tools/consciousness/bridge-building-process-design-en.pdf)** for cross-cultural understanding
 
 ## <a id="crisis-response-protocols-visualization"></a>Crisis Response Protocols Visualization
 
@@ -17841,10 +17841,10 @@ Emergency response frameworks for deploying consciousness governance during cris
 **Infographic Placeholder**: *Crisis Response Timeline* showing the progression from early warning through immediate response, stabilization, recovery planning, and long-term resilience building with specific timeframes and milestone markers.
 
 **Tools Available**:
-- **[Crisis Response Protocol Manual](/framework/tools/consciousness/crisis-response-protocol-manual-en.pdf)** for emergency governance procedures
-- **[Crisis Wisdom Team Training Guide](/framework/tools/consciousness/crisis-wisdom-team-training-en.pdf)** for emergency response capacity building
-- **[Emergency Communication Templates](/framework/tools/consciousness/emergency-communication-templates-en.pdf)** for crisis messaging
-- **[Post-Crisis Recovery Planning Toolkit](/framework/tools/consciousness/post-crisis-recovery-planning-en.pdf)** for community-led rebuilding
+- **[Crisis Response Protocol Manual](/frameworks/tools/consciousness/crisis-response-protocol-manual-en.pdf)** for emergency governance procedures
+- **[Crisis Wisdom Team Training Guide](/frameworks/tools/consciousness/crisis-wisdom-team-training-en.pdf)** for emergency response capacity building
+- **[Emergency Communication Templates](/frameworks/tools/consciousness/emergency-communication-templates-en.pdf)** for crisis messaging
+- **[Post-Crisis Recovery Planning Toolkit](/frameworks/tools/consciousness/post-crisis-recovery-planning-en.pdf)** for community-led rebuilding
 
 ## <a id="global-network-architecture"></a>Global Network Architecture
 
@@ -18026,10 +18026,10 @@ Comprehensive visualization of international consciousness governance networks, 
 **Infographic Placeholder**: *Global Network Connectivity Map* showing consciousness governance hubs worldwide with relationship strength indicators, resource flow patterns, and cultural cluster connections.
 
 **Tools Available**:
-- **[Global Network Development Guide](/framework/tools/consciousness/global-network-development-en.pdf)** for international coordination
-- **[Bioregional Cooperation Framework](/framework/tools/consciousness/bioregional-cooperation-framework-en.pdf)** for ecological governance
-- **[Cultural Network Integration Toolkit](/framework/tools/consciousness/cultural-network-integration-en.pdf)** for cross-cultural collaboration
-- **[International Cooperation Protocols](/framework/tools/consciousness/international-cooperation-protocols-en.pdf)** for diplomatic innovation
+- **[Global Network Development Guide](/frameworks/tools/consciousness/global-network-development-en.pdf)** for international coordination
+- **[Bioregional Cooperation Framework](/frameworks/tools/consciousness/bioregional-cooperation-framework-en.pdf)** for ecological governance
+- **[Cultural Network Integration Toolkit](/frameworks/tools/consciousness/cultural-network-integration-en.pdf)** for cross-cultural collaboration
+- **[International Cooperation Protocols](/frameworks/tools/consciousness/international-cooperation-protocols-en.pdf)** for diplomatic innovation
 
 ## <a id="interactive-dashboard-specifications"></a>Interactive Dashboard Specifications
 
@@ -18193,10 +18193,10 @@ Technical requirements and user experience design for consciousness governance m
 **Infographic Placeholder**: *Dashboard User Journey Maps* showing how different stakeholders (community members, leaders, coordinators) navigate and use the platform for their specific needs and goals.
 
 **Tools Available**:
-- **[Dashboard Development Specifications](/framework/tools/consciousness/dashboard-development-specifications-en.pdf)** for technical implementation
-- **[User Experience Design Guide](/framework/tools/consciousness/user-experience-design-guide-en.pdf)** for interface development
-- **[Community Data Sovereignty Framework](/framework/tools/consciousness/community-data-sovereignty-framework-en.pdf)** for privacy protection
-- **[Cultural Interface Adaptation Toolkit](/framework/tools/consciousness/cultural-interface-adaptation-en.pdf)** for inclusive design
+- **[Dashboard Development Specifications](/frameworks/tools/consciousness/dashboard-development-specifications-en.pdf)** for technical implementation
+- **[User Experience Design Guide](/frameworks/tools/consciousness/user-experience-design-guide-en.pdf)** for interface development
+- **[Community Data Sovereignty Framework](/frameworks/tools/consciousness/community-data-sovereignty-framework-en.pdf)** for privacy protection
+- **[Cultural Interface Adaptation Toolkit](/frameworks/tools/consciousness/cultural-interface-adaptation-en.pdf)** for inclusive design
 
 ## <a id="visual-communication-guidelines"></a>Visual Communication Guidelines
 
@@ -18346,16 +18346,16 @@ Standards and best practices for creating accessible, culturally sensitive, and 
 **Infographic Placeholder**: *Visual Communication Standards Reference Sheet* showing color palettes, typography scales, icon systems, and layout grids with accessibility and cultural adaptation notes.
 
 **Tools Available**:
-- **[Visual Communication Toolkit](/framework/tools/consciousness/visual-communication-toolkit-en.pdf)** for consistent design implementation
-- **[Community Co-Creation Guide](/framework/tools/consciousness/community-co-creation-guide-en.pdf)** for participatory design processes
-- **[Accessibility Design Standards](/framework/tools/consciousness/accessibility-design-standards-en.pdf)** for inclusive visual communication
-- **[Cultural Sensitivity Visual Guidelines](/framework/tools/consciousness/cultural-sensitivity-visual-guidelines-en.pdf)** for respectful design
+- **[Visual Communication Toolkit](/frameworks/tools/consciousness/visual-communication-toolkit-en.pdf)** for consistent design implementation
+- **[Community Co-Creation Guide](/frameworks/tools/consciousness/community-co-creation-guide-en.pdf)** for participatory design processes
+- **[Accessibility Design Standards](/frameworks/tools/consciousness/accessibility-design-standards-en.pdf)** for inclusive visual communication
+- **[Cultural Sensitivity Visual Guidelines](/frameworks/tools/consciousness/cultural-sensitivity-visual-guidelines-en.pdf)** for respectful design
 
 ---
 
-**Cross-Reference Note**: This section connects to all framework components by providing visual representation tools. It supports [Governance Structure](/framework/docs/consciousness#01-governance-structure) with institutional diagrams, [Implementation Roadmap](/framework/docs/consciousness#13-implementation-roadmap) with process flowcharts, [Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics) with value system visualizations, and [Cross-Cultural Translation](/framework/docs/consciousness#12-cross-cultural-translation) with cultural adaptation guidelines.
+**Cross-Reference Note**: This section connects to all framework components by providing visual representation tools. It supports [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) with institutional diagrams, [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap) with process flowcharts, [Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) with value system visualizations, and [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) with cultural adaptation guidelines.
 
-**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/framework/docs/consciousness/index). Download tools from the [Tools Library](/framework/tools/consciousness). Begin visual implementation with the [Visual Communication Toolkit](/framework/tools/consciousness/visual-communication-toolkit-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
+**Access and Usage**: Explore the framework via the [Consciousness Framework Index](/frameworks/docs/consciousness/index). Download tools from the [Tools Library](/frameworks/tools/consciousness). Begin visual implementation with the [Visual Communication Toolkit](/frameworks/tools/consciousness/visual-communication-toolkit-en.pdf). Feedback welcome at [globalgovernanceframework@gmail.com].
 
 **Equity Commitment**: All visual architecture materials are open-access under CC BY-SA 4.0, with priority support for community-led adaptation, accessibility accommodation, and resources for creating culturally appropriate visual communications that honor diverse ways of knowing and aesthetic traditions.
 
@@ -18376,17 +18376,17 @@ We stand at a threshold. Behind us lie centuries of governance rooted in competi
 
 ## <a id="the-vision-realized"></a>The Vision Realized
 
-Imagine the world in 2035, transformed by consciousness governance. Picture mayors beginning city council meetings with mindful presence, creating space for genuine dialogue across difference. Envision CEOs making decisions through [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) practices that integrate shadow work, values alignment, and stakeholder empathy. See youth councils with real voting power, ensuring that every policy serves seven generations into the future.
+Imagine the world in 2035, transformed by consciousness governance. Picture mayors beginning city council meetings with mindful presence, creating space for genuine dialogue across difference. Envision CEOs making decisions through [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) practices that integrate shadow work, values alignment, and stakeholder empathy. See youth councils with real voting power, ensuring that every policy serves seven generations into the future.
 
-In this transformed world, [Global Wisdom Councils](/framework/docs/consciousness#01-governance-structure) convene in virtual sacred spaces, bringing together indigenous elders, youth representatives, and ethical scientists to address planetary challenges. Traditional knowledge guides climate adaptation while cutting-edge technology serves community well-being. Conflicts transform through [Restorative Justice](/framework/docs/consciousness#08-conflict-transformation) that heals relationships rather than perpetuating harm.
+In this transformed world, [Global Wisdom Councils](/frameworks/docs/consciousness#01-governance-structure) convene in virtual sacred spaces, bringing together indigenous elders, youth representatives, and ethical scientists to address planetary challenges. Traditional knowledge guides climate adaptation while cutting-edge technology serves community well-being. Conflicts transform through [Restorative Justice](/frameworks/docs/consciousness#08-conflict-transformation) that heals relationships rather than perpetuating harm.
 
-This is not utopian fantasy but practical possibility. The framework provides detailed pathways for realizing this vision through proven methodologies, comprehensive implementation strategies, and rigorous accountability measures. From [Consciousness-Raising Circles](/framework/docs/consciousness#07-community-engagement) in neighborhoods to [Regional Consciousness Hubs](/framework/docs/consciousness#01-governance-structure) coordinating bioregional governance, the infrastructure exists to birth this new paradigm.
+This is not utopian fantasy but practical possibility. The framework provides detailed pathways for realizing this vision through proven methodologies, comprehensive implementation strategies, and rigorous accountability measures. From [Consciousness-Raising Circles](/frameworks/docs/consciousness#07-community-engagement) in neighborhoods to [Regional Consciousness Hubs](/frameworks/docs/consciousness#01-governance-structure) coordinating bioregional governance, the infrastructure exists to birth this new paradigm.
 
 **Case Study (Real)**: Costa Rica's transformation over three decades demonstrates consciousness governance principles in action. Through constitutional environmental protection, abolition of the military, and investment in education and healthcare, Costa Rica achieved 99% renewable electricity, became carbon negative, and ranks among the world's happiest countries. Their approach integrates indigenous stewardship, democratic participation, and ecological consciousness—proving that consciousness governance can deliver both well-being and sustainability.
 
 ### Measuring the Transformation
 
-By 2035, success would be evident through multiple indicators tracked by the [Intergenerational Justice Metrics](/framework/tools/consciousness/intergenerational-justice-metrics-framework-en.pdf):
+By 2035, success would be evident through multiple indicators tracked by the [Intergenerational Justice Metrics](/frameworks/tools/consciousness/intergenerational-justice-metrics-framework-en.pdf):
 
 - **Citizen Well-being**: 40% improvement in community satisfaction and social cohesion across pilot regions
 - **Democratic Quality**: 80% increase in meaningful civic participation through participatory budgeting and wisdom councils
@@ -18398,11 +18398,11 @@ These outcomes emerge not through coercion but through the natural flowering of 
 
 ## <a id="integration-of-all-elements"></a>Integration of All Elements
 
-The framework's power lies not in any single component but in the synergistic integration of all elements. [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) provides the foundation—leaders who govern from self-awareness, emotional intelligence, and ethical commitment. [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) builds the collaborative capacity to bridge differences and generate collective wisdom. [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) ensures that consciousness principles become embedded in institutions, policies, and legal frameworks.
+The framework's power lies not in any single component but in the synergistic integration of all elements. [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) provides the foundation—leaders who govern from self-awareness, emotional intelligence, and ethical commitment. [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) builds the collaborative capacity to bridge differences and generate collective wisdom. [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) ensures that consciousness principles become embedded in institutions, policies, and legal frameworks.
 
-[Spiral Dynamics Integration](/framework/docs/consciousness#05-spiral-dynamics) offers the sophistication to work skillfully with diverse value systems, meeting people where they are while supporting healthy development. [Economic Realignment](/framework/docs/consciousness#06-economic-realignment) creates material conditions that support consciousness governance through cooperative enterprises, wealth redistribution, and regenerative economics.
+[Spiral Dynamics Integration](/frameworks/docs/consciousness#05-spiral-dynamics) offers the sophistication to work skillfully with diverse value systems, meeting people where they are while supporting healthy development. [Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment) creates material conditions that support consciousness governance through cooperative enterprises, wealth redistribution, and regenerative economics.
 
-The framework's [Cultural Sensitivity Protocols](/framework/docs/consciousness#12-cross-cultural-translation) ensure respectful adaptation across cultures while preventing appropriation. [Digital Platforms](/framework/docs/consciousness#10-digital-platforms) and [Ethical AI Governance](/framework/docs/consciousness#11-ethical-ai-governance) harness technology for democratic participation rather than surveillance and control. [Crisis Response Protocols](/framework/docs/consciousness#08-crisis-response) maintain consciousness principles even under pressure.
+The framework's [Cultural Sensitivity Protocols](/frameworks/docs/consciousness#12-cross-cultural-translation) ensure respectful adaptation across cultures while preventing appropriation. [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) and [Ethical AI Governance](/frameworks/docs/consciousness#11-ethical-ai-governance) harness technology for democratic participation rather than surveillance and control. [Crisis Response Protocols](/frameworks/docs/consciousness#08-crisis-response) maintain consciousness principles even under pressure.
 
 ### Synergistic Effects
 
@@ -18413,7 +18413,7 @@ When implemented together, these elements create exponential rather than additiv
 - **Economic + Environmental**: Cooperative economics naturally supports ecological stewardship while environmental health enables sustainable prosperity
 - **Local + Global**: Community consciousness-raising connects to planetary transformation while global networks support local resilience
 
-**Example (Fictive)**: By 2032, the Pacific Northwest Bioregional Alliance demonstrates full framework integration. Personal transformation training for 5,000+ leaders combines with [Community Dialogue](/framework/tools/consciousness/community-dialogue-manual-en.pdf) in 200+ neighborhoods. [Wisdom Councils](/framework/docs/consciousness#01-governance-structure) with Tribal representation guide regional climate adaptation. Cooperative economics provides universal basic services while forest restoration creates 50,000 living-wage jobs. The result: 85% citizen satisfaction, carbon neutrality, and recognition as a global model for bioregional governance.
+**Example (Fictive)**: By 2032, the Pacific Northwest Bioregional Alliance demonstrates full framework integration. Personal transformation training for 5,000+ leaders combines with [Community Dialogue](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf) in 200+ neighborhoods. [Wisdom Councils](/frameworks/docs/consciousness#01-governance-structure) with Tribal representation guide regional climate adaptation. Cooperative economics provides universal basic services while forest restoration creates 50,000 living-wage jobs. The result: 85% citizen satisfaction, carbon neutrality, and recognition as a global model for bioregional governance.
 
 ## <a id="evidence-for-transformation"></a>Evidence for Transformation
 
@@ -18436,7 +18436,7 @@ Multiple governance innovations worldwide provide evidence for framework compone
 - **Taiwan**: Digital democracy platforms enabling citizen participation in complex policy decisions
 
 ### Pilot Program Validation
-The framework's [Conscious Governance Pilots](/framework/docs/consciousness#13-implementation-roadmap) in Costa Rica, Rwanda, Bhutan, Seoul, and Patagonia Corporation provide real-time validation:
+The framework's [Conscious Governance Pilots](/frameworks/docs/consciousness#13-implementation-roadmap) in Costa Rica, Rwanda, Bhutan, Seoul, and Patagonia Corporation provide real-time validation:
 
 - **Cost-Effectiveness**: Consciousness governance reduces administrative costs by 25% while improving service quality
 - **Community Satisfaction**: 78% approval ratings compared to 45% for traditional governance approaches
@@ -18483,58 +18483,58 @@ Transformation begins with individual commitment but flourishes through collecti
 
 ### For Individual Leaders
 **Mayors and Local Officials**:
-- Begin with [Mindfulness Training Module](/framework/tools/consciousness/mindfulness-training-en.pdf) for enhanced decision-making
-- Implement [Participatory Budgeting](/framework/tools/consciousness/participatory-budgeting-toolkit-en.pdf) for citizen engagement
-- Establish [Youth Councils](/framework/tools/consciousness/youth-council-framework-en.pdf) with real decision-making authority
-- Create [Consciousness-Raising Circles](/framework/tools/consciousness/consciousness-raising-circle-guide-en.pdf) for community dialogue
+- Begin with [Mindfulness Training Module](/frameworks/tools/consciousness/mindfulness-training-en.pdf) for enhanced decision-making
+- Implement [Participatory Budgeting](/frameworks/tools/consciousness/participatory-budgeting-toolkit-en.pdf) for citizen engagement
+- Establish [Youth Councils](/frameworks/tools/consciousness/youth-council-framework-en.pdf) with real decision-making authority
+- Create [Consciousness-Raising Circles](/frameworks/tools/consciousness/consciousness-raising-circle-guide-en.pdf) for community dialogue
 
 **CEOs and Business Leaders**:
-- Complete [Shadow Work Coaching](/framework/tools/consciousness/shadow-work-coaching-guide-en.pdf) for ethical leadership
-- Pursue [Corporate Consciousness Certification](/framework/docs/consciousness#06-economic-realignment) for stakeholder governance
-- Implement [Workplace Democracy](/framework/docs/consciousness#04-systemic-integration) through cooperative principles
-- Apply [Conscious Budget Template](/framework/tools/consciousness/conscious-budget-template-en.pdf) for value-aligned resource allocation
+- Complete [Shadow Work Coaching](/frameworks/tools/consciousness/shadow-work-coaching-guide-en.pdf) for ethical leadership
+- Pursue [Corporate Consciousness Certification](/frameworks/docs/consciousness#06-economic-realignment) for stakeholder governance
+- Implement [Workplace Democracy](/frameworks/docs/consciousness#04-systemic-integration) through cooperative principles
+- Apply [Conscious Budget Template](/frameworks/tools/consciousness/conscious-budget-template-en.pdf) for value-aligned resource allocation
 
 **Activists and Organizers**:
-- Use [Community Organizing Toolkit](/framework/tools/consciousness/community-organizing-toolkit-en.pdf) for consciousness-based movements
-- Facilitate [Conflict Transformation](/framework/tools/consciousness/conflict-transformation-guide-en.pdf) for healing-centered change
-- Build [Cross-Cultural Coalitions](/framework/tools/consciousness/cross-cultural-coalition-building-en.pdf) using [Spiral Dynamics](/framework/docs/consciousness#05-spiral-dynamics)
+- Use [Community Organizing Toolkit](/frameworks/tools/consciousness/community-organizing-toolkit-en.pdf) for consciousness-based movements
+- Facilitate [Conflict Transformation](/frameworks/tools/consciousness/conflict-transformation-guide-en.pdf) for healing-centered change
+- Build [Cross-Cultural Coalitions](/frameworks/tools/consciousness/cross-cultural-coalition-building-en.pdf) using [Spiral Dynamics](/frameworks/docs/consciousness#05-spiral-dynamics)
 
 ### For Communities and Organizations
 **Faith Communities**:
-- Integrate [Contemplative Governance](/framework/tools/consciousness/contemplative-governance-guide-en.pdf) with spiritual traditions
-- Establish [Wisdom Councils](/framework/tools/consciousness/wisdom-council-setup-en.pdf) including diverse voices
-- Practice [Restorative Justice](/framework/tools/consciousness/restorative-justice-implementation-en.pdf) for healing and accountability
+- Integrate [Contemplative Governance](/frameworks/tools/consciousness/contemplative-governance-guide-en.pdf) with spiritual traditions
+- Establish [Wisdom Councils](/frameworks/tools/consciousness/wisdom-council-setup-en.pdf) including diverse voices
+- Practice [Restorative Justice](/frameworks/tools/consciousness/restorative-justice-implementation-en.pdf) for healing and accountability
 
 **Educational Institutions**:
-- Implement [Democratic School Governance](/framework/tools/consciousness/democratic-school-governance-en.pdf) with student participation
-- Use [Social Justice Education](/framework/tools/consciousness/social-justice-education-toolkit-en.pdf) for consciousness development
-- Create [Intergenerational Dialogue](/framework/tools/consciousness/intergenerational-dialogue-protocols-en.pdf) programs
+- Implement [Democratic School Governance](/frameworks/tools/consciousness/democratic-school-governance-en.pdf) with student participation
+- Use [Social Justice Education](/frameworks/tools/consciousness/social-justice-education-toolkit-en.pdf) for consciousness development
+- Create [Intergenerational Dialogue](/frameworks/tools/consciousness/intergenerational-dialogue-protocols-en.pdf) programs
 
 **Nonprofits and NGOs**:
-- Apply [Mission Alignment Assessment](/framework/tools/consciousness/mission-alignment-assessment-en.pdf) for organizational consciousness
-- Use [Community Partnership Framework](/framework/tools/consciousness/community-partnership-framework-en.pdf) for authentic collaboration
+- Apply [Mission Alignment Assessment](/frameworks/tools/consciousness/mission-alignment-assessment-en.pdf) for organizational consciousness
+- Use [Community Partnership Framework](/frameworks/tools/consciousness/community-partnership-framework-en.pdf) for authentic collaboration
 
 ### For Citizens and Global Participants
 **Individual Action**:
-- Download and use [Personal Transformation Guide](/framework/tools/consciousness/personal-transformation-guide-en.pdf)
-- Join or create local [Consciousness-Raising Circles](/framework/tools/consciousness/consciousness-raising-circle-guide-en.pdf)
-- Practice [Mindful Citizenship](/framework/tools/consciousness/mindful-citizenship-practices-en.pdf) in daily civic engagement
+- Download and use [Personal Transformation Guide](/frameworks/tools/consciousness/personal-transformation-guide-en.pdf)
+- Join or create local [Consciousness-Raising Circles](/frameworks/tools/consciousness/consciousness-raising-circle-guide-en.pdf)
+- Practice [Mindful Citizenship](/frameworks/tools/consciousness/mindful-citizenship-practices-en.pdf) in daily civic engagement
 - Support consciousness governance candidates in elections
 
 **Community Building**:
-- Organize [Community Dialogues](/framework/tools/consciousness/community-dialogue-manual-en.pdf) on local challenges
-- Advocate for [Participatory Budgeting](/framework/tools/consciousness/participatory-budgeting-advocacy-en.pdf) in your municipality
-- Create [Mutual Aid Networks](/framework/tools/consciousness/mutual-aid-networks-guide-en.pdf) for community resilience
-- Connect with [Global Consciousness Summits](/framework/docs/consciousness#13-implementation-roadmap) for international collaboration
+- Organize [Community Dialogues](/frameworks/tools/consciousness/community-dialogue-manual-en.pdf) on local challenges
+- Advocate for [Participatory Budgeting](/frameworks/tools/consciousness/participatory-budgeting-advocacy-en.pdf) in your municipality
+- Create [Mutual Aid Networks](/frameworks/tools/consciousness/mutual-aid-networks-guide-en.pdf) for community resilience
+- Connect with [Global Consciousness Summits](/frameworks/docs/consciousness#13-implementation-roadmap) for international collaboration
 
 ### Implementation Support
-**Technical Assistance**: The [Conscious Governance Starter Kit](/framework/tools/consciousness/conscious-governance-starter-kit-en.zip) provides comprehensive resources for launching initiatives.
+**Technical Assistance**: The [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip) provides comprehensive resources for launching initiatives.
 
-**Training and Development**: [Leadership Development Programs](/framework/tools/consciousness/leadership-development-programs-en.pdf) offer structured pathways for building consciousness governance capacity.
+**Training and Development**: [Leadership Development Programs](/frameworks/tools/consciousness/leadership-development-programs-en.pdf) offer structured pathways for building consciousness governance capacity.
 
-**Network Connection**: [Global Alliance Directory](/framework/tools/consciousness/global-alliance-directory-en.pdf) connects individuals and organizations working for consciousness governance worldwide.
+**Network Connection**: [Global Alliance Directory](/frameworks/tools/consciousness/global-alliance-directory-en.pdf) connects individuals and organizations working for consciousness governance worldwide.
 
-**Funding Support**: [Funding Guide](/framework/tools/consciousness/funding-guide-en.pdf) identifies resources for consciousness governance initiatives.
+**Funding Support**: [Funding Guide](/frameworks/tools/consciousness/funding-guide-en.pdf) identifies resources for consciousness governance initiatives.
 
 ## <a id="legacy-for-future-generations"></a>Legacy for Future Generations
 
@@ -18550,12 +18550,12 @@ This legacy is possible. The framework provides the roadmap. What remains is the
 ### Intergenerational Responsibility
 Current generations hold unprecedented responsibility for planetary and human future. For the first time in history, one generation's choices can determine the survival and flourishing of all subsequent generations. This awesome responsibility demands governance transformation commensurate with the challenge.
 
-The framework's [Future Generations Ombudsman](/framework/docs/consciousness#04-systemic-integration) roles and [Seven-Generation Impact Assessment](/framework/tools/consciousness/seven-generation-impact-assessment-en.pdf) ensure that today's decisions serve tomorrow's children. Youth councils with voting power give future generations voice in present decisions. Intergenerational dialogue creates understanding across age groups.
+The framework's [Future Generations Ombudsman](/frameworks/docs/consciousness#04-systemic-integration) roles and [Seven-Generation Impact Assessment](/frameworks/tools/consciousness/seven-generation-impact-assessment-en.pdf) ensure that today's decisions serve tomorrow's children. Youth councils with voting power give future generations voice in present decisions. Intergenerational dialogue creates understanding across age groups.
 
 ### Planetary Healing
-Consciousness governance offers hope for healing the earth while meeting human needs. The framework's [Rights of Nature](/framework/docs/consciousness#04-systemic-integration) recognition, [Regenerative Economics](/framework/docs/consciousness#06-economic-realignment), and [Bioregional Governance](/framework/docs/consciousness#04-systemic-integration) provide pathways for human-earth partnership rather than domination.
+Consciousness governance offers hope for healing the earth while meeting human needs. The framework's [Rights of Nature](/frameworks/docs/consciousness#04-systemic-integration) recognition, [Regenerative Economics](/frameworks/docs/consciousness#06-economic-realignment), and [Bioregional Governance](/frameworks/docs/consciousness#04-systemic-integration) provide pathways for human-earth partnership rather than domination.
 
-Indigenous wisdom keepers, youth climate activists, and ecological scientists collaborate in [Global Wisdom Councils](/framework/docs/consciousness#01-governance-structure) to guide planetary stewardship. Local communities practice land-based governance that honors natural cycles and ecological limits. Technology serves ecological restoration rather than extraction and pollution.
+Indigenous wisdom keepers, youth climate activists, and ecological scientists collaborate in [Global Wisdom Councils](/frameworks/docs/consciousness#01-governance-structure) to guide planetary stewardship. Local communities practice land-based governance that honors natural cycles and ecological limits. Technology serves ecological restoration rather than extraction and pollution.
 
 **Example (Fictive)**: By 2040, the Global Regeneration Alliance includes 500+ consciousness governance communities coordinating ecosystem restoration, carbon drawdown, and biodiversity recovery. Youth-elder partnerships guide massive reforestation projects that provide meaningful work while healing damaged landscapes. Rights of nature protection enables ecosystem recovery that supports both human and more-than-human thriving.
 
@@ -18566,7 +18566,7 @@ The framework you have explored represents more than governance theory—it offe
 ### The Choice Before Us
 We stand at a crossroads between breakdown and breakthrough. Down one path lies continued governance based on competition, hierarchy, and separation—leading to climate chaos, democratic collapse, and social disintegration. Down the other path lies governance based on consciousness, cooperation, and connection—leading to ecological healing, democratic renewal, and social flourishing.
 
-The framework charts the second path with practical precision. It has been tested through [pilot programs](/framework/docs/consciousness#13-implementation-roadmap), validated through research, and refined through community feedback. What remains is the collective will to walk this path together.
+The framework charts the second path with practical precision. It has been tested through [pilot programs](/frameworks/docs/consciousness#13-implementation-roadmap), validated through research, and refined through community feedback. What remains is the collective will to walk this path together.
 
 ### Your Role in the Transformation
 Regardless of your position or power, you have a role to play in this transformation:
@@ -18595,9 +18595,9 @@ The framework provides the blueprint. The tools exist. The examples inspire. The
 ### Joining the Movement
 The consciousness governance movement grows daily as individuals, communities, and organizations recognize both the necessity and possibility of transformation. You can join this movement at whatever level feels authentic and sustainable:
 
-**Start Where You Are**: Use the [Personal Transformation Guide](/framework/tools/consciousness/personal-transformation-guide-en.pdf) to begin your own consciousness development journey.
+**Start Where You Are**: Use the [Personal Transformation Guide](/frameworks/tools/consciousness/personal-transformation-guide-en.pdf) to begin your own consciousness development journey.
 
-**Connect with Others**: Find or create [Consciousness-Raising Circles](/framework/tools/consciousness/consciousness-raising-circle-guide-en.pdf) in your community for mutual support and learning.
+**Connect with Others**: Find or create [Consciousness-Raising Circles](/frameworks/tools/consciousness/consciousness-raising-circle-guide-en.pdf) in your community for mutual support and learning.
 
 **Take Public Action**: Advocate for consciousness governance principles in your workplace, faith community, or political involvement.
 
@@ -18624,9 +18624,9 @@ The transformation begins with you. The transformation begins now.
 
 ---
 
-**Access and Implementation**: Begin your consciousness governance journey by downloading the [Conscious Governance Starter Kit](/framework/tools/consciousness/conscious-governance-starter-kit-en.zip). Connect with the global network through [globalgovernanceframework@gmail.com]. Access all tools and resources at the [Tools Library](/framework/tools/consciousness).
+**Access and Implementation**: Begin your consciousness governance journey by downloading the [Conscious Governance Starter Kit](/frameworks/tools/consciousness/conscious-governance-starter-kit-en.zip). Connect with the global network through [globalgovernanceframework@gmail.com]. Access all tools and resources at the [Tools Library](/frameworks/tools/consciousness).
 
-**Cross-Reference Integration**: This conclusion synthesizes all framework elements: [Manifesto](/framework/docs/consciousness#00-manifesto) vision, [Governance Structure](/framework/docs/consciousness#01-governance-structure) implementation, [Personal Transformation](/framework/docs/consciousness#02-personal-transformation) foundation, [Collective Consciousness](/framework/docs/consciousness#03-collective-consciousness) community building, [Systemic Integration](/framework/docs/consciousness#04-systemic-integration) institutional change, [Spiral Dynamics](/framework/docs/consciousness#05-spiral-dynamics) cultural sensitivity, [Economic Realignment](/framework/docs/consciousness#06-economic-realignment) material support, [Community Engagement](/framework/docs/consciousness#07-community-engagement) grassroots power, [Crisis Response](/framework/docs/consciousness#08-crisis-response) emergency protocols, [Metrics and Accountability](/framework/docs/consciousness#09-metrics-accountability) assessment systems, [Digital Platforms](/framework/docs/consciousness#10-digital-platforms) technological integration, [Ethical AI](/framework/docs/consciousness#11-ethical-ai-governance) responsible innovation, [Cross-Cultural Translation](/framework/docs/consciousness#12-cross-cultural-translation) global adaptation, [Implementation Roadmap](/framework/docs/consciousness#13-implementation-roadmap) strategic planning, and [Visual Architecture](/framework/docs/consciousness#14-visual-architecture-map) system design.
+**Cross-Reference Integration**: This conclusion synthesizes all framework elements: [Manifesto](/frameworks/docs/consciousness#00-manifesto) vision, [Governance Structure](/frameworks/docs/consciousness#01-governance-structure) implementation, [Personal Transformation](/frameworks/docs/consciousness#02-personal-transformation) foundation, [Collective Consciousness](/frameworks/docs/consciousness#03-collective-consciousness) community building, [Systemic Integration](/frameworks/docs/consciousness#04-systemic-integration) institutional change, [Spiral Dynamics](/frameworks/docs/consciousness#05-spiral-dynamics) cultural sensitivity, [Economic Realignment](/frameworks/docs/consciousness#06-economic-realignment) material support, [Community Engagement](/frameworks/docs/consciousness#07-community-engagement) grassroots power, [Crisis Response](/frameworks/docs/consciousness#08-crisis-response) emergency protocols, [Metrics and Accountability](/frameworks/docs/consciousness#09-metrics-accountability) assessment systems, [Digital Platforms](/frameworks/docs/consciousness#10-digital-platforms) technological integration, [Ethical AI](/frameworks/docs/consciousness#11-ethical-ai-governance) responsible innovation, [Cross-Cultural Translation](/frameworks/docs/consciousness#12-cross-cultural-translation) global adaptation, [Implementation Roadmap](/frameworks/docs/consciousness#13-implementation-roadmap) strategic planning, and [Visual Architecture](/frameworks/docs/consciousness#14-visual-architecture-map) system design.
 
 **Equity Commitment**: All consciousness governance resources are open-access under CC BY-SA 4.0 licensing. Priority support provided for marginalized communities, developing regions, and grassroots organizations. Translation into all UN official languages with local language adaptation supported through community partnerships.
 

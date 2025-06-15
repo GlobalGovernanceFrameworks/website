@@ -79,38 +79,38 @@ Would you say we are addressing these needs with the scope of our frameworks for
 The Global Governance Framework can be applied across various domains. Each domain requires specific consideration while following the core principles and implementation approaches outlined above.
 
 ### Tier 1: Urgent Global Stability & Justice
-- [Climate & Energy Governance](/framework/docs/implementation/energy) (In Review)
-- [Peace & Conflict Resolution](/framework/docs/implementation/peace) (In Review)
-- [Healthcare Governance](/framework/docs/implementation/healthcare) (Planned)
-- [Food Systems & Agriculture](/framework/docs/implementation/food) (In Review)
-- [Economic Integration](/framework/docs/implementation/economic) (In Review)
-- [Justice Systems](/framework/docs/implementation/justice) (In Review)
-- [Migration & Human Mobility](/framework/docs/implementation/migration) (Planned)
-- [Disaster Risk Reduction & Resilience](/framework/docs/implementation/disaster) (In Review)
+- [Climate & Energy Governance](/frameworks/docs/implementation/energy) (In Review)
+- [Peace & Conflict Resolution](/frameworks/docs/implementation/peace) (In Review)
+- [Healthcare Governance](/frameworks/docs/implementation/healthcare) (Planned)
+- [Food Systems & Agriculture](/frameworks/docs/implementation/food) (In Review)
+- [Economic Integration](/frameworks/docs/implementation/economic) (In Review)
+- [Justice Systems](/frameworks/docs/implementation/justice) (In Review)
+- [Migration & Human Mobility](/frameworks/docs/implementation/migration) (Planned)
+- [Disaster Risk Reduction & Resilience](/frameworks/docs/implementation/disaster) (In Review)
 
 ### Tier 2: Systems for Long-Term Thriving
-- [Technology Governance](/framework/docs/implementation/technology) (In Review)
-- [Financial Systems](/framework/docs/implementation/finance) (In Review)
-- [Educational Systems](/framework/docs/implementation/education) (In Review)
-- [Urban & Community Development](/framework/docs/implementation/urban) (Planned)
-- [Environmental Stewardship](/framework/docs/implementation/environment) (In Review)
-- [Oceans & Marine Governance](/framework/docs/implementation/oceans) (Planned)
-- [Labor & Employment Governance](/framework/docs/implementation/labor) (Planned)
+- [Technology Governance](/frameworks/docs/implementation/technology) (In Review)
+- [Financial Systems](/frameworks/docs/implementation/finance) (In Review)
+- [Educational Systems](/frameworks/docs/implementation/education) (In Review)
+- [Urban & Community Development](/frameworks/docs/implementation/urban) (Planned)
+- [Environmental Stewardship](/frameworks/docs/implementation/environment) (In Review)
+- [Oceans & Marine Governance](/frameworks/docs/implementation/oceans) (Planned)
+- [Labor & Employment Governance](/frameworks/docs/implementation/labor) (Planned)
 
 ### Tier 3: Equity, Culture & Future Generations
-- [Digital Commons](/framework/docs/implementation/digital) (In Review)
-- [Biodiversity Governance](/framework/docs/implementation/biodiversity) (In Review)
-- [Cultural Heritage Preservation](/framework/docs/implementation/culture) (Planned)
-- [Rural Development](/framework/docs/implementation/rural) (Planned)
-- [Religious & Spiritual Dialogue](/framework/docs/implementation/spiritual) (In Review)
-- [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (Planned)
-- [Global Ethics & Human Rights](/framework/docs/implementation/ethics) (In Review)
+- [Digital Commons](/frameworks/docs/implementation/digital) (In Review)
+- [Biodiversity Governance](/frameworks/docs/implementation/biodiversity) (In Review)
+- [Cultural Heritage Preservation](/frameworks/docs/implementation/culture) (Planned)
+- [Rural Development](/frameworks/docs/implementation/rural) (Planned)
+- [Religious & Spiritual Dialogue](/frameworks/docs/implementation/spiritual) (In Review)
+- [Youth & Intergenerational Governance](/frameworks/docs/implementation/youth) (Planned)
+- [Global Ethics & Human Rights](/frameworks/docs/implementation/ethics) (In Review)
 
 ### Tier 4: Visionary & Meta Governance
-- [Space Governance](/framework/docs/implementation/space) (Planned)
-- [Consciousness & Inner Development](/framework/docs/implementation/consciousness) (In Review)
-- [Integrated Meta-Governance](/framework/docs/implementation/meta) (In Review)
-- [Implementation Methods & Tools](/framework/docs/implementation/methods-tools) (In Review)
+- [Space Governance](/frameworks/docs/implementation/space) (Planned)
+- [Consciousness & Inner Development](/frameworks/docs/implementation/consciousness) (In Review)
+- [Integrated Meta-Governance](/frameworks/docs/implementation/meta) (In Review)
+- [Implementation Methods & Tools](/frameworks/docs/implementation/methods-tools) (In Review)
 """
 
 DeepSeek:

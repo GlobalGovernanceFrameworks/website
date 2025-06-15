@@ -30,72 +30,72 @@ The framework is a comprehensive plan to transform global animal welfare systems
 ## <a id="framework-sections"></a>Framework Sections
 The framework is organized into 8 comprehensive sections, each a critical component of its transformative design. Explore them below:
 
-1. **[Introduction & Scientific Foundation](/framework/docs/implementation/animal-welfare#01-introduction)**: Details framework purpose, sentience research integration, edge case handling, and relationship to environmental stewardship systems.
+1. **[Introduction & Scientific Foundation](/frameworks/docs/implementation/animal-welfare#01-introduction)**: Details framework purpose, sentience research integration, edge case handling, and relationship to environmental stewardship systems.
 
-2. **[Core Principles](/framework/docs/implementation/animal-welfare#02-core-principles)**: Outlines sentience-centered protections, ecological necessity allowances, pragmatic cultural adaptation, scientific evolution, and environmental synergy.
+2. **[Core Principles](/frameworks/docs/implementation/animal-welfare#02-core-principles)**: Outlines sentience-centered protections, ecological necessity allowances, pragmatic cultural adaptation, scientific evolution, and environmental synergy.
 
-3. **[Structural Components](/framework/docs/implementation/animal-welfare#03-structural-components)**: Covers tiered protection system, Global Animal Welfare Agency governance, community advisory councils, and enforcement mechanisms.
+3. **[Structural Components](/frameworks/docs/implementation/animal-welfare#03-structural-components)**: Covers tiered protection system, Global Animal Welfare Agency governance, community advisory councils, and enforcement mechanisms.
 
-4. **[Implementation Approaches](/framework/docs/implementation/animal-welfare#04-implementation-approaches)**: Describes immediate actions, sequenced policy rollout, wildlife protection, just transitions, and innovation integration.
+4. **[Implementation Approaches](/frameworks/docs/implementation/animal-welfare#04-implementation-approaches)**: Describes immediate actions, sequenced policy rollout, wildlife protection, just transitions, and innovation integration.
 
-5. **[Metrics & Evaluation](/framework/docs/implementation/animal-welfare#05-metrics-evaluation)**: Details outcome targets, leading indicators, transparency systems, and innovation tracking mechanisms.
+5. **[Metrics & Evaluation](/frameworks/docs/implementation/animal-welfare#05-metrics-evaluation)**: Details outcome targets, leading indicators, transparency systems, and innovation tracking mechanisms.
 
-6. **[Cultural Sensitivity & Justice](/framework/docs/implementation/animal-welfare#06-cultural-justice)**: Outlines decolonization frameworks, knowledge integration, community authority, and economic justice measures.
+6. **[Cultural Sensitivity & Justice](/frameworks/docs/implementation/animal-welfare#06-cultural-justice)**: Outlines decolonization frameworks, knowledge integration, community authority, and economic justice measures.
 
-7. **[Environmental Integration](/framework/docs/implementation/animal-welfare#07-environmental-integration)**: Provides governance coordination, economic alignment, One Health implementation, and shared monitoring systems.
+7. **[Environmental Integration](/frameworks/docs/implementation/animal-welfare#07-environmental-integration)**: Provides governance coordination, economic alignment, One Health implementation, and shared monitoring systems.
 
-8. **[Appendices & Resources](/framework/docs/implementation/animal-welfare#08-appendices)**: Includes case studies, implementation tools, technical specifications, and educational resources.
+8. **[Appendices & Resources](/frameworks/docs/implementation/animal-welfare#08-appendices)**: Includes case studies, implementation tools, technical specifications, and educational resources.
 
 ## <a id="implementation-tools"></a>Implementation Tools
 To bridge theory and practice, the framework provides practical tools and templates for immediate use by communities, advocates, and stakeholders:
 
-- **[Guardian Community Starter Kit](/framework/tools/animal-welfare/guardian-community-starter-kit-en.zip)**: A complete package for launching community-led welfare initiatives and transition planning.
+- **[Guardian Community Starter Kit](/frameworks/tools/animal-welfare/guardian-community-starter-kit-en.zip)**: A complete package for launching community-led welfare initiatives and transition planning.
 
 - **Core Implementation Tools**:
-  - [Community Welfare Readiness Assessment](/framework/tools/animal-welfare/community-welfare-readiness-assessment-en.pdf)
-  - [Welfare Transition Planning Template](/framework/tools/animal-welfare/welfare-transition-planning-template-en.pdf)
-  - [Cultural Adaptation Protocol Guide](/framework/tools/animal-welfare/cultural-adaptation-protocol-guide-en.pdf)
-  - [Sentience Assessment Framework](/framework/tools/animal-welfare/sentience-assessment-framework-en.pdf)
-  - [Welfare Compliance Audit Tool](/framework/tools/animal-welfare/welfare-compliance-audit-tool-en.pdf)
-  - [Indigenous Rights Integration Kit](/framework/tools/animal-welfare/indigenous-rights-integration-kit-en.pdf)
+  - [Community Welfare Readiness Assessment](/frameworks/tools/animal-welfare/community-welfare-readiness-assessment-en.pdf)
+  - [Welfare Transition Planning Template](/frameworks/tools/animal-welfare/welfare-transition-planning-template-en.pdf)
+  - [Cultural Adaptation Protocol Guide](/frameworks/tools/animal-welfare/cultural-adaptation-protocol-guide-en.pdf)
+  - [Sentience Assessment Framework](/frameworks/tools/animal-welfare/sentience-assessment-framework-en.pdf)
+  - [Welfare Compliance Audit Tool](/frameworks/tools/animal-welfare/welfare-compliance-audit-tool-en.pdf)
+  - [Indigenous Rights Integration Kit](/frameworks/tools/animal-welfare/indigenous-rights-integration-kit-en.pdf)
 
 - **Advocacy & Policy Tools**:
-  - [Welfare Policy Development Guide](/framework/tools/animal-welfare/welfare-policy-development-guide-en.pdf)
-  - [Anti-Speciesism Training Materials](/framework/tools/animal-welfare/anti-speciesism-training-materials-en.pdf)
-  - [Guardian Rights Charter Template](/framework/tools/animal-welfare/guardian-rights-charter-template-en.pdf)
-  - [Economic Impact Assessment Tool](/framework/tools/animal-welfare/economic-impact-assessment-en.pdf)
-  - [Stakeholder Engagement Framework](/framework/tools/animal-welfare/stakeholder-engagement-framework-en.pdf)
+  - [Welfare Policy Development Guide](/frameworks/tools/animal-welfare/welfare-policy-development-guide-en.pdf)
+  - [Anti-Speciesism Training Materials](/frameworks/tools/animal-welfare/anti-speciesism-training-materials-en.pdf)
+  - [Guardian Rights Charter Template](/frameworks/tools/animal-welfare/guardian-rights-charter-template-en.pdf)
+  - [Economic Impact Assessment Tool](/frameworks/tools/animal-welfare/economic-impact-assessment-en.pdf)
+  - [Stakeholder Engagement Framework](/frameworks/tools/animal-welfare/stakeholder-engagement-framework-en.pdf)
 
 - **Innovation & Technology Tools**:
-  - [Alternative Protein Development Guide](/framework/tools/animal-welfare/alternative-protein-development-guide-en.pdf)
-  - [Welfare Technology Assessment Kit](/framework/tools/animal-welfare/welfare-technology-assessment-kit-en.pdf)
-  - [Citizen Science Monitoring App](/framework/tools/animal-welfare/citizen-science-monitoring-app-en.pdf)
-  - [Blockchain Certification Setup Guide](/framework/tools/animal-welfare/blockchain-certification-setup-guide-en.pdf)
+  - [Alternative Protein Development Guide](/frameworks/tools/animal-welfare/alternative-protein-development-guide-en.pdf)
+  - [Welfare Technology Assessment Kit](/frameworks/tools/animal-welfare/welfare-technology-assessment-kit-en.pdf)
+  - [Citizen Science Monitoring App](/frameworks/tools/animal-welfare/citizen-science-monitoring-app-en.pdf)
+  - [Blockchain Certification Setup Guide](/frameworks/tools/animal-welfare/blockchain-certification-setup-guide-en.pdf)
 
 - **Economic Transition Tools**:
-  - [Just Transition Planning Workbook](/framework/tools/animal-welfare/just-transition-planning-workbook-en.pdf)
-  - [Animal Welfare Carbon Credits Guide](/framework/tools/animal-welfare/animal-welfare-carbon-credits-guide-en.pdf)
-  - [Cooperative Development Toolkit](/framework/tools/animal-welfare/cooperative-development-toolkit-en.pdf)
-  - [Innovation Challenge Fund Application Kit](/framework/tools/animal-welfare/innovation-challenge-fund-kit-en.pdf)
+  - [Just Transition Planning Workbook](/frameworks/tools/animal-welfare/just-transition-planning-workbook-en.pdf)
+  - [Animal Welfare Carbon Credits Guide](/frameworks/tools/animal-welfare/animal-welfare-carbon-credits-guide-en.pdf)
+  - [Cooperative Development Toolkit](/frameworks/tools/animal-welfare/cooperative-development-toolkit-en.pdf)
+  - [Innovation Challenge Fund Application Kit](/frameworks/tools/animal-welfare/innovation-challenge-fund-kit-en.pdf)
 
 - **Monitoring & Evaluation Tools**:
-  - [Welfare Impact Measurement Framework](/framework/tools/animal-welfare/welfare-impact-measurement-framework-en.pdf)
-  - [Transparency Dashboard Setup Guide](/framework/tools/animal-welfare/transparency-dashboard-setup-guide-en.pdf)
-  - [Community Progress Tracking Templates](/framework/tools/animal-welfare/community-progress-tracking-templates-en.pdf)
+  - [Welfare Impact Measurement Framework](/frameworks/tools/animal-welfare/welfare-impact-measurement-framework-en.pdf)
+  - [Transparency Dashboard Setup Guide](/frameworks/tools/animal-welfare/transparency-dashboard-setup-guide-en.pdf)
+  - [Community Progress Tracking Templates](/frameworks/tools/animal-welfare/community-progress-tracking-templates-en.pdf)
 
 - **Framework Guides**:
-  - [Global Guardian Framework Essentials Guide](/framework/tools/animal-welfare/global-guardian-framework-essentials-en.pdf) (English)
-  - [Marco Global de Bienestar Animal Guía Esencial](/framework/tools/animal-welfare/guardian-framework-essentials-es.pdf) (Spanish)
-  - [Cadre Mondial pour le Bien-être Animal Guide Essentiel](/framework/tools/animal-welfare/guardian-framework-essentials-fr.pdf) (French)
+  - [Global Guardian Framework Essentials Guide](/frameworks/tools/animal-welfare/global-guardian-framework-essentials-en.pdf) (English)
+  - [Marco Global de Bienestar Animal Guía Esencial](/frameworks/tools/animal-welfare/guardian-framework-essentials-es.pdf) (Spanish)
+  - [Cadre Mondial pour le Bien-être Animal Guide Essentiel](/frameworks/tools/animal-welfare/guardian-framework-essentials-fr.pdf) (French)
 
-All tools are available in PDF and editable markdown formats, with selected tools in multiple languages and culturally-adapted versions. Access the complete [Tools Library](/framework/tools/animal-welfare) for all versions and formats.
+All tools are available in PDF and editable markdown formats, with selected tools in multiple languages and culturally-adapted versions. Access the complete [Tools Library](/frameworks/tools/animal-welfare) for all versions and formats.
 
 ## <a id="access-and-usage"></a>Access and Usage
 The framework is accessible through the Global Governance Framework website, designed for community accessibility and cultural adaptation. Stakeholders can:
 
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in multiple languages and cultural adaptations.
 - **Navigate**: Use this index to explore sections sequentially or jump to specific topics via section links with multilingual navigation.
-- **Access Tools**: Browse all implementation tools in PDF, markdown, and culturally-adapted formats at the [Tools Library](/framework/tools/animal-welfare).
+- **Access Tools**: Browse all implementation tools in PDF, markdown, and culturally-adapted formats at the [Tools Library](/frameworks/tools/animal-welfare).
 - **Engage**: Share feedback through the contact portal, email [globalgovernanceframework@gmail.com], or join Guardian Community Ambassador programs.
 - **Organize**: Use advocacy toolkits to build welfare coalitions and advocate for policy implementation.
 - **Implement**: Launch community-led initiatives using the Guardian Community Starter Kit and transition templates.
@@ -319,7 +319,7 @@ The framework maintains scientific rigor through institutional partnerships with
 
 The Introduction & Scientific Foundation establishes the framework's evidence-based approach to transforming human-animal relationships. This foundation supports the practical implementation strategies detailed in subsequent sections while maintaining scientific rigor and cultural sensitivity throughout the transformation process.
 
-**Next Section**: [Core Principles](/framework/docs/implementation/animal-welfare#02-core-principles) explores the five foundational principles guiding all framework implementation decisions.
+**Next Section**: [Core Principles](/frameworks/docs/implementation/animal-welfare#02-core-principles) explores the five foundational principles guiding all framework implementation decisions.
 
 # Core Principles
 
@@ -478,7 +478,7 @@ Animal welfare goals align with ecosystem health objectives, recognizing that in
 
 These five core principles provide the ethical and practical foundation for all Global Guardian Framework implementation. They ensure that welfare improvements advance through culturally sensitive, scientifically grounded, and environmentally integrated approaches that build lasting change through community acceptance and ecological alignment.
 
-**Next Section**: [Structural Components](/framework/docs/implementation/animal-welfare#03-structural-components) details the governance structures, protection systems, and enforcement mechanisms that operationalize these principles.
+**Next Section**: [Structural Components](/frameworks/docs/implementation/animal-welfare#03-structural-components) details the governance structures, protection systems, and enforcement mechanisms that operationalize these principles.
 
 # Structural Components
 
@@ -693,7 +693,7 @@ GAWA serves as the primary international governance body, operating under the Gl
 
 The structural components provide the institutional foundation for implementing the Global Guardian Framework through democratic, accountable, and culturally sensitive governance mechanisms. These structures ensure that welfare improvements advance through legitimate, transparent, and effective institutional processes.
 
-**Next Section**: [Implementation Approaches](/framework/docs/implementation/animal-welfare#04-implementation-approaches) details the practical strategies, timelines, and methods for deploying these structural components globally.
+**Next Section**: [Implementation Approaches](/frameworks/docs/implementation/animal-welfare#04-implementation-approaches) details the practical strategies, timelines, and methods for deploying these structural components globally.
 
 # Implementation Approaches
 
@@ -914,7 +914,7 @@ A collaborative program between technology companies and animal sanctuaries coul
 
 The implementation approaches provide practical pathways for transforming global animal welfare systems through strategic sequencing, technological innovation, and community-centered transitions. These approaches ensure that welfare improvements advance through achievable steps while building toward comprehensive transformation.
 
-**Next Section**: [Metrics and Evaluation](/framework/docs/implementation/animal-welfare#05-metrics-evaluation) details the measurement systems, indicators, and accountability mechanisms for tracking framework implementation success.
+**Next Section**: [Metrics and Evaluation](/frameworks/docs/implementation/animal-welfare#05-metrics-evaluation) details the measurement systems, indicators, and accountability mechanisms for tracking framework implementation success.
 
 # Metrics and Evaluation
 
@@ -1122,7 +1122,7 @@ The Global Guardian Framework employs comprehensive measurement systems to ensur
 
 The metrics and evaluation systems ensure that the Global Guardian Framework maintains accountability, transparency, and continuous improvement throughout implementation. These systems balance rigorous measurement with cultural sensitivity while providing the evidence base for adaptive management and democratic oversight.
 
-**Next Section**: [Cultural Sensitivity and Justice](/framework/docs/implementation/animal-welfare#06-cultural-justice) explores the framework's approach to respecting cultural diversity while advancing animal welfare goals.
+**Next Section**: [Cultural Sensitivity and Justice](/frameworks/docs/implementation/animal-welfare#06-cultural-justice) explores the framework's approach to respecting cultural diversity while advancing animal welfare goals.
 
 # Cultural Sensitivity and Justice
 
@@ -1306,7 +1306,7 @@ Aboriginal Australian communities employ traditional fire management practices t
 
 Cultural sensitivity and justice form the foundation for legitimate and effective animal welfare advancement. By prioritizing community authority, traditional knowledge, economic equity, and cultural respect, the framework ensures that welfare improvements emerge from community leadership rather than external imposition, creating sustainable change that honors both animal welfare and human cultural diversity.
 
-**Next Section**: [Environmental Integration](/framework/docs/implementation/animal-welfare#07-environmental-integration) explores the coordination between animal welfare and environmental stewardship for comprehensive planetary health.
+**Next Section**: [Environmental Integration](/frameworks/docs/implementation/animal-welfare#07-environmental-integration) explores the coordination between animal welfare and environmental stewardship for comprehensive planetary health.
 
 # Environmental Integration
 
@@ -1471,7 +1471,7 @@ The Global Guardian Framework operates in seamless coordination with the Environ
 
 Environmental integration ensures that animal welfare advancement contributes to rather than competes with broader environmental protection efforts. Through coordinated governance, shared economic mechanisms, One Health implementation, and integrated monitoring, the Global Guardian Framework advances planetary health through comprehensive, synergistic approaches that recognize the fundamental interconnection between individual animal welfare and ecosystem integrity.
 
-**Next Section**: [Appendices and Resources](/framework/docs/implementation/animal-welfare#08-appendices) provides supporting materials, case studies, technical specifications, and implementation tools for framework deployment.
+**Next Section**: [Appendices and Resources](/frameworks/docs/implementation/animal-welfare#08-appendices) provides supporting materials, case studies, technical specifications, and implementation tools for framework deployment.
 
 # Appendices and Resources
 

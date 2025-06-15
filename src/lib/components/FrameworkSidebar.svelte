@@ -73,6 +73,9 @@
                 class:active={isActive(item.path)}
               >
                 {$t(item.titleKey)}
+                {#if item.status === 'ready' && item.version}
+                  <span class="version-badge">{item.version}</span>
+                {/if}
               </a>
               <button 
                 class="toggle-btn" 
@@ -99,6 +102,9 @@
                           class:active={isActive(subItem.path)}
                         >
                           {$t(subItem.titleKey)}
+                          {#if subItem.status === 'ready' && subItem.version}
+                            <span class="version-badge">{subItem.version}</span>
+                          {/if}
                         </a>
                         <button 
                           class="toggle-btn" 
@@ -128,7 +134,10 @@
                                   class:active={isActive(implItem.path)}
                                 >
                                   {$t(implItem.titleKey)}
-                                  {#if implItem.status}
+                                  {#if implItem.status === 'ready' && implItem.version}
+                                    <span class="version-badge">{implItem.version}</span>
+                                  {/if}
+                                  {#if implItem.status && implItem.status !== 'ready'}
                                     <span class="status-badge {implItem.status}" 
                                       title={$t(`framework.status.${implItem.status}.description`)}>
                                       {$t(`framework.status.${implItem.status}.label`)}
@@ -152,7 +161,10 @@
                           class:active={isActive(subItem.path)}
                         >
                           {$t(subItem.titleKey)}
-                          {#if subItem.status}
+                          {#if subItem.status === 'ready' && subItem.version}
+                            <span class="version-badge">{subItem.version}</span>
+                          {/if}
+                          {#if subItem.status && subItem.status !== 'ready'}
                             <span class="status-badge {subItem.status}" 
                               title={$t(`framework.status.${subItem.status}.description`)}>
                               {$t(`framework.status.${subItem.status}.label`)}
@@ -171,6 +183,15 @@
               class:active={isActive(item.path)}
             >
               {$t(item.titleKey)}
+              {#if item.status === 'ready' && item.version}
+                <span class="version-badge">{item.version}</span>
+              {/if}
+              {#if item.status && item.status !== 'ready'}
+                <span class="status-badge {item.status}" 
+                  title={$t(`framework.status.${item.status}.description`)}>
+                  {$t(`framework.status.${item.status}.label`)}
+                </span>
+              {/if}
             </a>
           {/if}
         </li>
@@ -312,8 +333,40 @@
     background-color: #D1FAE5; /* Light green */
     color: #065F46;
   }
+
+  .version-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.75rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    background-color: #1E40AF; /* Blue background */
+    color: #FFFFFF; /* White text */
+    font-weight: 600;
+    font-family: 'Monaco', 'Menlo', monospace; /* Monospace for version numbers */
+  }
+
+  /* Version badge specific colors for different statuses */
+  .sidebar a.active .version-badge {
+    background-color: #FFFFFF;
+    color: #DAA520;
+  }
+
+  .sidebar a:hover .version-badge {
+    background-color: #FFFFFF;
+    color: #1E40AF;
+  }
   
   .active-section {
     /* Style for the parent item when it or its child is active */
+  }
+
+  /* Responsive considerations */
+  @media (max-width: 768px) {
+    .version-badge {
+      font-size: 0.6rem;
+      padding: 0.05rem 0.25rem;
+    }
   }
 </style>

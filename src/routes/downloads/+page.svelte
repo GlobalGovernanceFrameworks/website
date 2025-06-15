@@ -223,6 +223,20 @@
       <h2 class="section-title">{$t('downloads.coreDocuments.title', 'Core Documents')}</h2>
       
       <div class="card-grid">
+        <div class="download-card" style="background-color: #eef2f3; border: 1px solid #d1d5db;">
+          <div class="card-emoji" style="color: #2B4B8C;">🌐</div>
+          <div class="card-content">
+            <h2 class="card-title" style="color: #2B4B8C;">{$t('downloads.cards.treaty.title')}</h2>
+            <p class="card-description">{$t('downloads.cards.treaty.description')}</p>
+            <a href={getPdfPath('Treaty-for-Our-Only-Home')} download class="download-button" style="background-color: #DAA520; color: #2B4B8C;">
+              {$t('downloads.downloadButton')}
+              <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
         <!-- Core Principles -->
         <div class="download-card">
           <div class="card-emoji" style="color: #2B4B8C;">🧭</div>
@@ -333,7 +347,7 @@
         <h3 class="info-title">{$t('downloads.implementationFrameworks.moreTools.title')}</h3>
         <p class="info-text">
           {$t('downloads.implementationFrameworks.moreTools.description')} 
-          <a href="{base}/framework/tools" class="info-link">
+          <a href="{base}/frameworks/tools" class="info-link">
             {$t('downloads.implementationFrameworks.moreTools.linkText')}
           </a>
         </p>

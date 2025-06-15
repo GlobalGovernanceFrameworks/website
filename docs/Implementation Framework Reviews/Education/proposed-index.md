@@ -26,7 +26,7 @@ Below, I propose an **index** for the full framework, outlining the chapters/sec
    - **Step 5: Add Visuals and Multimedia**: Incorporate the planned SVG diagram, data visualizations, and links to multimedia (e.g., animated explainer) in relevant sections.
 
 5. **File Organization**:
-   - Store markdown files in a directory (e.g., `/framework/sections/`) with a clear naming convention (e.g., `01-preamble.md`, `02-vision-principles.md`).
+   - Store markdown files in a directory (e.g., `/frameworks/sections/`) with a clear naming convention (e.g., `01-preamble.md`, `02-vision-principles.md`).
    - Create a master `README.md` or `index.md` that links to all section files, serving as the entry point.
 
 6. **Stakeholder Engagement**:
@@ -39,7 +39,7 @@ Below, I propose an **index** for the full framework, outlining the chapters/sec
 
 The framework will be divided into **10 chapters/sections**, each in its own markdown file. Below is the index, including file names, section titles, and key subsections with mini-index placeholders. Each section reflects the structure of the *Perfected Enhanced Educational Systems Implementation Framework* outline, expanded for clarity and modularity.
 
-#### Directory: `/framework/sections/`
+#### Directory: `/frameworks/sections/`
 
 1. **File**: `01-preamble.md`  
    **Title**: Preamble and Executive Summary  
@@ -268,7 +268,7 @@ This framework reimagines global education as a regenerative, inclusive ecosyste
 ---
 
 ### Next Steps
-- **Create Directory Structure**: Set up the `/framework/sections/` directory and initialize the 10 markdown files with mini-indexes.
+- **Create Directory Structure**: Set up the `/frameworks/sections/` directory and initialize the 10 markdown files with mini-indexes.
 - **Assign Drafting Roles**: Allocate sections to team members based on expertise (e.g., pedagogy, policy, tech).
 - **Develop Templates**: Create standardized formats for tools (e.g., policy templates, M&E rubrics) to ensure consistency.
 - **Plan Visuals**: Collaborate with designers to draft the SVG diagram and multimedia assets, integrating placeholders in relevant sections.

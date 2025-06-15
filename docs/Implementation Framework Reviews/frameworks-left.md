@@ -9,35 +9,35 @@ Frameworks' development status:
 - [Aging] (Implemented)
 
 In order of priority (by ChatGPT and Claude)
-- [Indigenous Governance & Traditional Knowledge](/framework/docs/implementation/indigenous) (Implemented)
+- [Indigenous Governance & Traditional Knowledge](/frameworks/docs/implementation/indigenous) (Implemented)
 
-- [Mental Health Governance](/framework/docs/implementation/mental-health) (Implemented)
+- [Mental Health Governance](/frameworks/docs/implementation/mental-health) (Implemented)
 
-- [Water & Sanitation](/framework/docs/implementation/water) (Implemented)
+- [Water & Sanitation](/frameworks/docs/implementation/water) (Implemented)
 
-- [Urban & Community Development](/framework/docs/implementation/urban) (outline done)
+- [Urban & Community Development](/frameworks/docs/implementation/urban) (outline done)
 
-- [Migration & Human Mobility](/framework/docs/implementation/migration) (outline done)
+- [Migration & Human Mobility](/frameworks/docs/implementation/migration) (outline done)
 
-- [Disability Rights & Inclusion Governance](/framework/docs/implementation/inclusion) (outline done)
+- [Disability Rights & Inclusion Governance](/frameworks/docs/implementation/inclusion) (outline done)
 
-- [Labor & Employment Governance](/framework/docs/implementation/labor) (outline basically done)
+- [Labor & Employment Governance](/frameworks/docs/implementation/labor) (outline basically done)
 
-- [Oceans & Marine Governance](/framework/docs/implementation/oceans) (outline done)
+- [Oceans & Marine Governance](/frameworks/docs/implementation/oceans) (outline done)
 
-- [Gender Equality & LGBTQ+ Rights](/framework/docs/implementation/gender) (outline done)
+- [Gender Equality & LGBTQ+ Rights](/frameworks/docs/implementation/gender) (outline done)
 
-- [Youth & Intergenerational Governance](/framework/docs/implementation/youth) (outline begun)
+- [Youth & Intergenerational Governance](/frameworks/docs/implementation/youth) (outline begun)
 
-- [Animal Welfare](/framework/docs/implementation/animal-welfare)(Implemented)
+- [Animal Welfare](/frameworks/docs/implementation/animal-welfare)(Implemented)
 
-- [Rural Development](/framework/docs/implementation/rural) (outline done)
+- [Rural Development](/frameworks/docs/implementation/rural) (outline done)
 
-- [Cultural Heritage Preservation](/framework/docs/implementation/culture) (outline done)
+- [Cultural Heritage Preservation](/frameworks/docs/implementation/culture) (outline done)
 
-- [Space Governance](/framework/docs/implementation/space) (outline done)
+- [Space Governance](/frameworks/docs/implementation/space) (outline done)
 
-- [Existential Risk Governance](/framework/docs/implementation/existential-risk) (outline done)
+- [Existential Risk Governance](/frameworks/docs/implementation/existential-risk) (outline done)
 
 
 New list of extra frameworks:

@@ -35,63 +35,63 @@ This framework advances a revolutionary **Global Framework for Indigenous Govern
 
 The framework preserves its organic Indigenous-centered structure, organized into 10 transformative sections that honor traditional knowledge systems while providing practical implementation guidance:
 
-0. **[Preamble: A Framework Born from the Land](/framework/docs/implementation/indigenous#00-preamble)**: *"In the beginning was the Word, and the Word was with the Earth, and the Word was the Earth speaking."* — Framework introduction, origins, and engagement guidance.
+0. **[Preamble: A Framework Born from the Land](/frameworks/docs/implementation/indigenous#00-preamble)**: *"In the beginning was the Word, and the Word was with the Earth, and the Word was the Earth speaking."* — Framework introduction, origins, and engagement guidance.
 
-1. **[Core Principles](/framework/docs/implementation/indigenous#01-core-principles)**: *"We do not inherit the Earth from our ancestors; we borrow it from our children."* — Foundational values including bioregional governance, non-human rights, and seventh-generation accountability.
+1. **[Core Principles](/frameworks/docs/implementation/indigenous#01-core-principles)**: *"We do not inherit the Earth from our ancestors; we borrow it from our children."* — Foundational values including bioregional governance, non-human rights, and seventh-generation accountability.
 
-2. **[Structural Components](/framework/docs/implementation/indigenous#02-structural-components)**: *"Listen to the wind, it talks. Listen to the silence, it speaks."* — Earth Council design, Bioregional Autonomous Zones, Traditional Knowledge protection, and foresight protocols.
+2. **[Structural Components](/frameworks/docs/implementation/indigenous#02-structural-components)**: *"Listen to the wind, it talks. Listen to the silence, it speaks."* — Earth Council design, Bioregional Autonomous Zones, Traditional Knowledge protection, and foresight protocols.
 
-3. **[Implementation Timeline](/framework/docs/implementation/indigenous#03-implementation-timeline)**: *"Plant the seeds today for the forest of tomorrow."* — Phased rollout from 2025 pre-phase through 2050+ transformation, including funding strategies and milestone targets.
+3. **[Implementation Timeline](/frameworks/docs/implementation/indigenous#03-implementation-timeline)**: *"Plant the seeds today for the forest of tomorrow."* — Phased rollout from 2025 pre-phase through 2050+ transformation, including funding strategies and milestone targets.
 
-4. **[Key Mechanisms](/framework/docs/implementation/indigenous#04-key-mechanisms)**: *"Technology must serve the Earth, not rule it."* — Decentralized knowledge libraries, Indigenous AI oracles, GPH index implementation, and cybersecurity protocols.
+4. **[Key Mechanisms](/frameworks/docs/implementation/indigenous#04-key-mechanisms)**: *"Technology must serve the Earth, not rule it."* — Decentralized knowledge libraries, Indigenous AI oracles, GPH index implementation, and cybersecurity protocols.
 
-5. **[Expected Outcomes](/framework/docs/implementation/indigenous#05-expected-outcomes)**: *"When we heal the Earth, we heal ourselves."* — Ecological regeneration targets, cultural revitalization goals, and planetary solidarity vision.
+5. **[Expected Outcomes](/frameworks/docs/implementation/indigenous#05-expected-outcomes)**: *"When we heal the Earth, we heal ourselves."* — Ecological regeneration targets, cultural revitalization goals, and planetary solidarity vision.
 
-6. **[Interface with Existing Systems](/framework/docs/implementation/indigenous#06-interface-existing-systems)**: *"Walk softly, for the Earth is sacred."* — UNDRIP operationalization, UN reform strategies, and nation-state transition protocols.
+6. **[Interface with Existing Systems](/frameworks/docs/implementation/indigenous#06-interface-existing-systems)**: *"Walk softly, for the Earth is sacred."* — UNDRIP operationalization, UN reform strategies, and nation-state transition protocols.
 
-7. **[Pathways for Broader Engagement](/framework/docs/implementation/indigenous#07-pathways-broader-engagement)**: *"Stories carry the wisdom of our ancestors."* — Allied engagement, youth education, Global Indigenous Media Network, and partnership strategies.
+7. **[Pathways for Broader Engagement](/frameworks/docs/implementation/indigenous#07-pathways-broader-engagement)**: *"Stories carry the wisdom of our ancestors."* — Allied engagement, youth education, Global Indigenous Media Network, and partnership strategies.
 
-8. **[Documentation and Risk Assessment](/framework/docs/implementation/indigenous#08-documentation-risk-assessment)**: *"Wisdom is knowing the path and preparing for its challenges."* — Case studies, risk mitigation, budget projections, and success metrics.
+8. **[Documentation and Risk Assessment](/frameworks/docs/implementation/indigenous#08-documentation-risk-assessment)**: *"Wisdom is knowing the path and preparing for its challenges."* — Case studies, risk mitigation, budget projections, and success metrics.
 
-9. **[System Map and Visual Integration](/framework/docs/implementation/indigenous#09-system-map-visual)**: *"The web of life connects us all."* — Framework visualization and interconnection mapping.
+9. **[System Map and Visual Integration](/frameworks/docs/implementation/indigenous#09-system-map-visual)**: *"The web of life connects us all."* — Framework visualization and interconnection mapping.
 
-10. **[Glossary and References](/framework/docs/implementation/indigenous#10-glossary-references)**: *"Words carry the spirit of our intentions."* — Essential terminology, definitions, and conceptual foundations.
+10. **[Glossary and References](/frameworks/docs/implementation/indigenous#10-glossary-references)**: *"Words carry the spirit of our intentions."* — Essential terminology, definitions, and conceptual foundations.
 
 ## <a id="implementation-tools"></a>Implementation Tools
 
 To bridge traditional knowledge with practical action, the framework provides Indigenous-designed tools and templates for immediate community use:
 
-- **[Indigenous Sovereignty Starter Kit](/framework/tools/indigenous/sovereignty-starter-kit-en.zip)**: Complete package for establishing Bioregional Autonomous Zones and Traditional Knowledge protection protocols.
+- **[Indigenous Sovereignty Starter Kit](/frameworks/tools/indigenous/sovereignty-starter-kit-en.zip)**: Complete package for establishing Bioregional Autonomous Zones and Traditional Knowledge protection protocols.
 
 - **Core Governance Tools**:
-  - [Municipal-Indigenous Cooperative Agreement Template](/framework/tools/indigenous/municipal-indigenous-agreement-en.pdf)
-  - [BAZ Readiness Assessment & Setup Guide](/framework/tools/indigenous/baz-readiness-assessment-en.pdf)
-  - [Traditional Knowledge Documentation Kit](/framework/tools/indigenous/tek-documentation-kit-en.pdf)
-  - [Indigenous Data Sovereignty Framework](/framework/tools/indigenous/indigenous-data-sovereignty-framework-en.pdf)
-  - [Earth Council Formation Guide](/framework/tools/indigenous/earth-council-formation-guide-en.pdf)
+  - [Municipal-Indigenous Cooperative Agreement Template](/frameworks/tools/indigenous/municipal-indigenous-agreement-en.pdf)
+  - [BAZ Readiness Assessment & Setup Guide](/frameworks/tools/indigenous/baz-readiness-assessment-en.pdf)
+  - [Traditional Knowledge Documentation Kit](/frameworks/tools/indigenous/tek-documentation-kit-en.pdf)
+  - [Indigenous Data Sovereignty Framework](/frameworks/tools/indigenous/indigenous-data-sovereignty-framework-en.pdf)
+  - [Earth Council Formation Guide](/frameworks/tools/indigenous/earth-council-formation-guide-en.pdf)
 
 - **Economic & Legal Tools**:
-  - [Reparations Calculation & Campaign Toolkit](/framework/tools/indigenous/reparations-toolkit-en.pdf)
-  - [Gross Planetary Health Index Calculator](/framework/tools/indigenous/gph-index-calculator-en.pdf)
-  - [Indigenous Rights Legal Strategy Guide](/framework/tools/indigenous/legal-strategy-guide-en.pdf)
-  - [Land Rematriation Planning Template](/framework/tools/indigenous/land-rematriation-template-en.pdf)
+  - [Reparations Calculation & Campaign Toolkit](/frameworks/tools/indigenous/reparations-toolkit-en.pdf)
+  - [Gross Planetary Health Index Calculator](/frameworks/tools/indigenous/gph-index-calculator-en.pdf)
+  - [Indigenous Rights Legal Strategy Guide](/frameworks/tools/indigenous/legal-strategy-guide-en.pdf)
+  - [Land Rematriation Planning Template](/frameworks/tools/indigenous/land-rematriation-template-en.pdf)
 
 - **Technology & Innovation Tools**:
-  - [Indigenous AI Ethics & Governance Protocols](/framework/tools/indigenous/ai-governance-protocols-en.pdf)
-  - [Cybersecurity & Quantum-Threat Protection Guide](/framework/tools/indigenous/cybersecurity-quantum-guide-en.pdf)
+  - [Indigenous AI Ethics & Governance Protocols](/frameworks/tools/indigenous/ai-governance-protocols-en.pdf)
+  - [Cybersecurity & Quantum-Threat Protection Guide](/frameworks/tools/indigenous/cybersecurity-quantum-guide-en.pdf)
 
 - **Cultural & Leadership Tools**:
-  - [Cultural Integrity Replication Protocol](/framework/tools/indigenous/cultural-integrity-replication-protocol-en.pdf)
-  - [Indigenous Leadership Development Program](/framework/tools/indigenous/indigenous-leadership-development-program-en.pdf)
-  - [Storytelling & Media Strategy Toolkit](/framework/tools/indigenous/storytelling-media-strategy-toolkit-en.pdf)
-  - [Ceremonial Governance Integration Guide](/framework/tools/indigenous/ceremonial-governance-integration-guide-en.pdf)
+  - [Cultural Integrity Replication Protocol](/frameworks/tools/indigenous/cultural-integrity-replication-protocol-en.pdf)
+  - [Indigenous Leadership Development Program](/frameworks/tools/indigenous/indigenous-leadership-development-program-en.pdf)
+  - [Storytelling & Media Strategy Toolkit](/frameworks/tools/indigenous/storytelling-media-strategy-toolkit-en.pdf)
+  - [Ceremonial Governance Integration Guide](/frameworks/tools/indigenous/ceremonial-governance-integration-guide-en.pdf)
 
 - **Framework Guides**:
-  - [Indigenous Governance Framework Essentials](/framework/tools/indigenous/indigenous-framework-essentials-en.pdf) (English)
-  - [Marco de Gobernanza Indígena Esencial](/framework/tools/indigenous/indigenous-framework-essentials-es.pdf) (Spanish)
-  - [Cadre de Gouvernance Autochtone Essentiel](/framework/tools/indigenous/indigenous-framework-essentials-fr.pdf) (French)
+  - [Indigenous Governance Framework Essentials](/frameworks/tools/indigenous/indigenous-framework-essentials-en.pdf) (English)
+  - [Marco de Gobernanza Indígena Esencial](/frameworks/tools/indigenous/indigenous-framework-essentials-es.pdf) (Spanish)
+  - [Cadre de Gouvernance Autochtone Essentiel](/frameworks/tools/indigenous/indigenous-framework-essentials-fr.pdf) (French)
 
-All tools respect Indigenous intellectual property protocols, include cultural sensitivity guidelines, and are available in multiple formats with community-appropriate accessibility features. Access the complete [Tools Library](/framework/tools/indigenous) for all versions and cultural adaptations.
+All tools respect Indigenous intellectual property protocols, include cultural sensitivity guidelines, and are available in multiple formats with community-appropriate accessibility features. Access the complete [Tools Library](/frameworks/tools/indigenous) for all versions and cultural adaptations.
 
 ## <a id="access-and-usage"></a>Access and Usage
 
@@ -99,7 +99,7 @@ The framework is accessible through the Global Governance Framework website, des
 
 - **Download**: Access the complete framework as a PDF via the [Downloads](/downloads) section, available in multiple languages and culturally appropriate formats.
 - **Navigate**: Use this index to explore sections following Indigenous storytelling traditions or access specific components via section links.
-- **Access Tools**: Browse all implementation tools with cultural sensitivity protocols at the [Tools Library](/framework/tools/indigenous).
+- **Access Tools**: Browse all implementation tools with cultural sensitivity protocols at the [Tools Library](/frameworks/tools/indigenous).
 - **Engage**: Share feedback through secure, community-controlled channels or email [globalgovernanceframework@gmail.com] with Indigenous data sovereignty protections.
 - **Organize**: Use political organizing toolkits to build Indigenous coalitions, launch land rematriation campaigns, and establish Bioregional Autonomous Zones.
 - **Implement**: Begin with the Indigenous Sovereignty Starter Kit or connect with existing BAZ pilots and Indigenous-led initiatives.
@@ -233,7 +233,7 @@ This framework is designed for multiple audiences while maintaining Indigenous l
 
 **How to Begin**:
 1. **Start with relationship**: Connect with Indigenous-led organizations in your bioregion before attempting implementation
-2. **Assess readiness**: Use the [BAZ Readiness Assessment Tool](/framework/tools/indigenous/baz-readiness-assessment-en.pdf) to evaluate community capacity
+2. **Assess readiness**: Use the [BAZ Readiness Assessment Tool](/frameworks/tools/indigenous/baz-readiness-assessment-en.pdf) to evaluate community capacity
 3. **Follow Indigenous leadership**: Support existing Indigenous initiatives rather than creating parallel projects
 4. **Think bioregionally**: Consider how your local ecosystem and watershed connect to broader Indigenous territories
 5. **Plan for seven generations**: Evaluate your actions for their impact on children not yet born
@@ -242,7 +242,7 @@ This framework is designed for multiple audiences while maintaining Indigenous l
 
 ---
 
-**Navigation Note**: This preamble introduces the framework's foundational purpose and approach. Continue to [Core Principles](/framework/docs/implementation/indigenous#01-core-principles) to explore the values and frameworks that guide Indigenous governance systems, or visit the [Implementation Tools](/framework/tools/indigenous) to access practical resources for community organizing and bioregional development.
+**Navigation Note**: This preamble introduces the framework's foundational purpose and approach. Continue to [Core Principles](/frameworks/docs/implementation/indigenous#01-core-principles) to explore the values and frameworks that guide Indigenous governance systems, or visit the [Implementation Tools](/frameworks/tools/indigenous) to access practical resources for community organizing and bioregional development.
 
 **Cultural Protocol**: Readers are encouraged to learn about the Indigenous peoples whose traditional territory they currently inhabit and to understand how their participation in this framework can support Indigenous sovereignty and land rematriation in their bioregion.
 
@@ -499,7 +499,7 @@ Each principle emerges from Traditional Ecological Knowledge while engaging with
 
 ---
 
-**Navigation Note**: These core principles provide the foundation for all governance structures and implementation strategies in the framework. Continue to [Structural Components](/framework/docs/implementation/indigenous#02-structural-components) to explore how these principles translate into practical governance systems, or reference specific [Implementation Tools](/framework/tools/indigenous) for community organizing resources.
+**Navigation Note**: These core principles provide the foundation for all governance structures and implementation strategies in the framework. Continue to [Structural Components](/frameworks/docs/implementation/indigenous#02-structural-components) to explore how these principles translate into practical governance systems, or reference specific [Implementation Tools](/frameworks/tools/indigenous) for community organizing resources.
 
 **Integration Guidance**: Communities implementing these principles should begin with the most culturally relevant concepts while building toward comprehensive integration over time. Not all principles need immediate implementation—they provide direction for long-term transformation guided by Indigenous leadership and community priorities.
 
@@ -943,7 +943,7 @@ By 2045, the Pacific Northwest Bioregional Autonomous Zone has evolved toward fu
 
 ---
 
-**Navigation Note**: These structural components provide the governance architecture necessary for Indigenous-led planetary transformation. Continue to [Implementation Timeline](/framework/docs/implementation/indigenous#03-implementation-timeline) to explore phased development strategies, or access [Implementation Tools](/framework/tools/indigenous) for practical resources supporting Earth Council formation, BAZ development, and Traditional Knowledge protection.
+**Navigation Note**: These structural components provide the governance architecture necessary for Indigenous-led planetary transformation. Continue to [Implementation Timeline](/frameworks/docs/implementation/indigenous#03-implementation-timeline) to explore phased development strategies, or access [Implementation Tools](/frameworks/tools/indigenous) for practical resources supporting Earth Council formation, BAZ development, and Traditional Knowledge protection.
 
 **Cultural Protocol Reminder**: All structural components must be implemented following appropriate Indigenous governance protocols and with full community consent. No governance structure should be imposed—they must emerge organically from community readiness and elder guidance while maintaining connection to broader Indigenous solidarity networks.
 
@@ -1477,7 +1477,7 @@ Each phase builds on previous foundations while respecting the organic pace of c
 
 ---
 
-**Navigation Note**: This implementation timeline provides a comprehensive roadmap for Indigenous-led planetary transformation across 25+ years. Continue to [Key Mechanisms](/framework/docs/implementation/indigenous#04-key-mechanisms) to explore the technical and organizational systems supporting this transformation, or access [Implementation Tools](/framework/tools/indigenous) for immediate community organizing and pilot project resources.
+**Navigation Note**: This implementation timeline provides a comprehensive roadmap for Indigenous-led planetary transformation across 25+ years. Continue to [Key Mechanisms](/frameworks/docs/implementation/indigenous#04-key-mechanisms) to explore the technical and organizational systems supporting this transformation, or access [Implementation Tools](/frameworks/tools/indigenous) for immediate community organizing and pilot project resources.
 
 **Implementation Guidance**: Communities can enter this timeline at any phase based on their readiness and cultural protocols. Earlier adopters provide mentorship and support for emerging initiatives, while respecting each community's sovereignty over their own pace and approach to implementation. The timeline honors Indigenous understanding that transformation happens across generations rather than political cycles.
 
@@ -1967,7 +1967,7 @@ By 2040, the Great Lakes-Arctic Climate Migration Corridor provides sanctuary fo
 
 ---
 
-**Navigation Note**: These key mechanisms provide the technical and organizational infrastructure supporting Indigenous-led planetary transformation. Continue to [Expected Outcomes](/framework/docs/implementation/indigenous#05-expected-outcomes) to explore the vision for regenerative futures, or access [Implementation Tools](/framework/tools/indigenous) for practical resources supporting technology development, cybersecurity training, and community organizing.
+**Navigation Note**: These key mechanisms provide the technical and organizational infrastructure supporting Indigenous-led planetary transformation. Continue to [Expected Outcomes](/frameworks/docs/implementation/indigenous#05-expected-outcomes) to explore the vision for regenerative futures, or access [Implementation Tools](/frameworks/tools/indigenous) for practical resources supporting technology development, cybersecurity training, and community organizing.
 
 **Implementation Guidance**: Communities can implement these mechanisms gradually based on technical capacity and cultural protocols. Traditional knowledge should guide technology adoption rather than external technological imperatives determining community priorities. All mechanisms must strengthen Indigenous sovereignty and traditional governance rather than replacing traditional systems with technological alternatives.
 
@@ -2398,7 +2398,7 @@ By 2050, the Global Earth Ceremony Network coordinates seasonal earth ceremonies
 
 ---
 
-**Navigation Note**: These expected outcomes represent the transformative vision of Indigenous-led planetary healing and regenerative governance. Continue to [Interface with Existing Systems](/framework/docs/implementation/indigenous#06-interface-existing-systems) to explore how this transformation engages with current colonial institutions, or access [Implementation Tools](/framework/tools/indigenous) for practical resources supporting community organizing and transformation initiatives.
+**Navigation Note**: These expected outcomes represent the transformative vision of Indigenous-led planetary healing and regenerative governance. Continue to [Interface with Existing Systems](/frameworks/docs/implementation/indigenous#06-interface-existing-systems) to explore how this transformation engages with current colonial institutions, or access [Implementation Tools](/frameworks/tools/indigenous) for practical resources supporting community organizing and transformation initiatives.
 
 **Vision Integration**: These outcomes work together as an integrated transformation where ecological regeneration, cultural revitalization, economic transformation, and spiritual renaissance support each other through Indigenous sovereignty and Traditional Knowledge guidance. Communities can work toward these outcomes simultaneously while respecting their own cultural protocols and community priorities.
 
@@ -2886,7 +2886,7 @@ By 2040, coordinated Indigenous resistance and legal action results in eliminati
 
 ---
 
-**Navigation Note**: This interface strategy demonstrates how Indigenous communities can leverage contradictions within colonial systems while building alternatives that eventually replace rather than reform colonial structures. Continue to [Pathways for Broader Engagement](/framework/docs/implementation/indigenous#07-pathways-broader-engagement) to explore how non-Indigenous allies can support Indigenous-led transformation, or access [Implementation Tools](/framework/tools/indigenous) for practical resources supporting legal advocacy, political organizing, and corporate accountability campaigns.
+**Navigation Note**: This interface strategy demonstrates how Indigenous communities can leverage contradictions within colonial systems while building alternatives that eventually replace rather than reform colonial structures. Continue to [Pathways for Broader Engagement](/frameworks/docs/implementation/indigenous#07-pathways-broader-engagement) to explore how non-Indigenous allies can support Indigenous-led transformation, or access [Implementation Tools](/frameworks/tools/indigenous) for practical resources supporting legal advocacy, political organizing, and corporate accountability campaigns.
 
 **Strategic Guidance**: These interface strategies operate simultaneously across multiple levels—legal, political, economic, and cultural—using colonial institutions' own contradictions to advance Indigenous sovereignty while never accepting colonial authority as legitimate. The goal is transformation, not accommodation.
 
@@ -3519,7 +3519,7 @@ By 2040, the Pacific Northwest Regenerative Business Alliance includes 500+ corp
 
 ---
 
-**Navigation Note**: These pathways for broader engagement provide multiple entry points for non-Indigenous people and organizations to support Indigenous-led transformation while maintaining Indigenous authority and cultural protocols. Continue to [Documentation and Risk Assessment](/framework/docs/implementation/indigenous#08-documentation-risk-assessment) to explore implementation challenges and success strategies, or access [Implementation Tools](/framework/tools/indigenous) for practical resources supporting ethical engagement and partnership development.
+**Navigation Note**: These pathways for broader engagement provide multiple entry points for non-Indigenous people and organizations to support Indigenous-led transformation while maintaining Indigenous authority and cultural protocols. Continue to [Documentation and Risk Assessment](/frameworks/docs/implementation/indigenous#08-documentation-risk-assessment) to explore implementation challenges and success strategies, or access [Implementation Tools](/frameworks/tools/indigenous) for practical resources supporting ethical engagement and partnership development.
 
 **Engagement Principles**: All broader engagement must operate under Indigenous leadership, respect cultural protocols, support Indigenous sovereignty, and commit to long-term relationship rather than extractive or transactional engagement. Allies support Indigenous initiatives rather than directing or co-opting Indigenous movements while taking responsibility for challenging colonialism within their own communities and institutions.
 
@@ -4162,7 +4162,7 @@ Inuit communities share traditional ice knowledge with climate scientists while 
 
 ---
 
-**Navigation Note**: This comprehensive documentation and risk assessment provides realistic analysis of implementation challenges while offering practical solutions grounded in Indigenous resilience and strategic wisdom. Continue to [System Map and Visual Integration](/framework/docs/implementation/indigenous#09-system-map-visual) to explore framework visualization and interconnection mapping, or access [Implementation Tools](/framework/tools/indigenous) for practical resources supporting risk mitigation, contingency planning, and adaptive management.
+**Navigation Note**: This comprehensive documentation and risk assessment provides realistic analysis of implementation challenges while offering practical solutions grounded in Indigenous resilience and strategic wisdom. Continue to [System Map and Visual Integration](/frameworks/docs/implementation/indigenous#09-system-map-visual) to explore framework visualization and interconnection mapping, or access [Implementation Tools](/frameworks/tools/indigenous) for practical resources supporting risk mitigation, contingency planning, and adaptive management.
 
 **Implementation Guidance**: This assessment emphasizes that Indigenous communities have survived 500+ years of attempted genocide through strategic adaptation, community resilience, and cultural wisdom. The challenges identified are significant but not insurmountable when approached with traditional knowledge, contemporary tools, and collective Indigenous solidarity. Success requires patience, persistence, and the understanding that transformation happens across generations rather than political cycles.
 
@@ -4464,25 +4464,25 @@ At the center of the framework sits Indigenous sovereignty and Traditional Ecolo
 
 **Indigenous Communities**:
 - Begin with Traditional Knowledge protection and community sovereignty assertion
-- Access [BAZ Readiness Assessment Tool](/framework/tools/indigenous/baz-readiness-assessment-en.pdf) for community capacity evaluation
-- Connect with [Earth Council Formation Guide](/framework/tools/indigenous/earth-council-formation-guide-en.pdf) for bioregional coordination
-- Utilize [Traditional Knowledge Documentation Kit](/framework/tools/indigenous/tek-documentation-kit-en.pdf) for cultural protocol compliance
+- Access [BAZ Readiness Assessment Tool](/frameworks/tools/indigenous/baz-readiness-assessment-en.pdf) for community capacity evaluation
+- Connect with [Earth Council Formation Guide](/frameworks/tools/indigenous/earth-council-formation-guide-en.pdf) for bioregional coordination
+- Utilize [Traditional Knowledge Documentation Kit](/frameworks/tools/indigenous/tek-documentation-kit-en.pdf) for cultural protocol compliance
 
 **Municipal and Regional Governments**:
-- Start with [Municipal-Indigenous Cooperative Agreement Template](/framework/tools/indigenous/municipal-indigenous-agreement-en.pdf)
+- Start with [Municipal-Indigenous Cooperative Agreement Template](/frameworks/tools/indigenous/municipal-indigenous-agreement-en.pdf)
 - Implement Rights of Nature legislation using legal strategy guides
-- Support land rematriation through [Land Rematriation Planning Template](/framework/tools/indigenous/land-rematriation-template-en.pdf)
+- Support land rematriation through [Land Rematriation Planning Template](/frameworks/tools/indigenous/land-rematriation-template-en.pdf)
 - Develop partnership protocols respecting Indigenous sovereignty and traditional governance
 
 **Allied Organizations and Individuals**:
 - Begin with relationship building and cultural education about local Indigenous communities
 - Support Indigenous-led initiatives rather than creating parallel or competing projects
-- Access [Cultural Integrity Replication Protocol](/framework/tools/indigenous/cultural-integrity-protocol-en.pdf) for ethical engagement
+- Access [Cultural Integrity Replication Protocol](/frameworks/tools/indigenous/cultural-integrity-protocol-en.pdf) for ethical engagement
 - Contribute resources and skills while following Indigenous leadership and cultural protocols
 
 **Researchers and Technologists**:
-- Follow [Indigenous AI Ethics & Governance Protocols](/framework/tools/indigenous/ai-governance-protocols-en.pdf) for ethical technology development
-- Implement [Indigenous Data Sovereignty Framework](/framework/tools/indigenous/data-sovereignty-framework-en.pdf) for community-controlled research
+- Follow [Indigenous AI Ethics & Governance Protocols](/frameworks/tools/indigenous/ai-governance-protocols-en.pdf) for ethical technology development
+- Implement [Indigenous Data Sovereignty Framework](/frameworks/tools/indigenous/data-sovereignty-framework-en.pdf) for community-controlled research
 - Support Traditional Knowledge validation while respecting Indigenous intellectual property protocols
 - Develop technology applications serving Indigenous community priorities under Indigenous oversight
 
@@ -4527,7 +4527,7 @@ At the center of the framework sits Indigenous sovereignty and Traditional Ecolo
 
 ---
 
-**Navigation Note**: This system map provides visual and conceptual guidance for understanding framework integration and implementation pathways. Continue to [Glossary and References](/framework/docs/implementation/indigenous#10-glossary-references) to explore essential terminology and conceptual foundations, or access [Implementation Tools](/framework/tools/indigenous) for practical resources supporting your appropriate entry point into framework implementation.
+**Navigation Note**: This system map provides visual and conceptual guidance for understanding framework integration and implementation pathways. Continue to [Glossary and References](/frameworks/docs/implementation/indigenous#10-glossary-references) to explore essential terminology and conceptual foundations, or access [Implementation Tools](/frameworks/tools/indigenous) for practical resources supporting your appropriate entry point into framework implementation.
 
 **Sacred Relationship Reminder**: All framework components exist in sacred relationship with each other and with the communities they serve. Understanding these relationships requires ongoing learning, cultural humility, and commitment to supporting Indigenous sovereignty and Traditional Knowledge protection in all implementation activities.
 
@@ -5097,7 +5097,7 @@ Circumpolar research network integrating Inuit traditional ice knowledge with co
 
 ---
 
-**Navigation Note**: This glossary provides essential terminology and reference foundation for framework understanding and implementation. Return to any framework section for specific implementation guidance, or access [Implementation Tools](/framework/tools/indigenous) for practical resources supporting community organizing and framework development.
+**Navigation Note**: This glossary provides essential terminology and reference foundation for framework understanding and implementation. Return to any framework section for specific implementation guidance, or access [Implementation Tools](/frameworks/tools/indigenous) for practical resources supporting community organizing and framework development.
 
 **Cultural Protocol Reminder**: Understanding Indigenous concepts requires ongoing relationship with Indigenous communities and knowledge holders. This glossary provides introduction to key terms while encouraging readers to learn from Indigenous authorities about the full cultural and spiritual depth of these concepts.
 

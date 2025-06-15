@@ -205,7 +205,7 @@ This framework advances a radical, Indigenous-led **Global Framework for Indigen
 ## 8. System Map (SVG Implementation)
 > *"The web of life connects us all."*  
 > — Salish proverb---
-![System Map](/images/framework/indigenous/indigenous-governance-system-map.svg)
+![System Map](/images/frameworks/indigenous/indigenous-governance-system-map.svg)
 
 ## 9. Glossary
 > *"Words carry the spirit of our intentions."*  

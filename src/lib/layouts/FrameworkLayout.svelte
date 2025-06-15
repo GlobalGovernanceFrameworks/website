@@ -5,11 +5,11 @@
   
   // Navigation items for the sidebar
   const navItems = [
-    { title: 'Overview', path: '/docs/framework' },
-    { title: 'Core Principles', path: '/docs/framework/principles' },
-    { title: 'Implementation', path: '/docs/framework/implementation' },
-    { title: 'Case Studies', path: '/docs/framework/case-studies' },
-    { title: 'Resources', path: '/docs/framework/resources' }
+    { title: 'Overview', path: '/docs/frameworks' },
+    { title: 'Core Principles', path: '/docs/frameworks/principles' },
+    { title: 'Implementation', path: '/docs/frameworks/implementation' },
+    { title: 'Case Studies', path: '/docs/frameworks/case-studies' },
+    { title: 'Resources', path: '/docs/frameworks/resources' }
   ];
 </script>
 
