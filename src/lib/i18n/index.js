@@ -81,6 +81,18 @@ async function loadTranslations(newLocale, route = '/') {
       } catch (e) {
         console.error('Error loading contact translations:', e);
       }
+    } else if (route.startsWith('/frameworks/docs/implementation/treaty-for-our-only-home/getting-started')) {
+      // Start Treaty landing page - NEW ADDITION
+      try {
+        if (newLocale === 'en') {
+          translationData.startTreaty = (await import('./en/startTreaty.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.startTreaty = (await import('./sv/startTreaty.json')).default;
+        }
+        console.log('Loaded startTreaty translations:', translationData.startTreaty);
+      } catch (e) {
+        console.error('Error loading startTreaty translations:', e);
+      }
     } else if (route.includes('/frameworks/ai-futures')) {
       // AI-futures page
       try {
@@ -90,10 +102,33 @@ async function loadTranslations(newLocale, route = '/') {
           translationData.aiFutures = (await import('./sv/aiFutures.json')).default;
         }
       } catch (e) {
-        console.error('Error loading terms translations:', e);
+        console.error('Error loading aiFutures translations:', e);
+      }
+    } else if (route.includes('/frameworks/global-citizenship')) {
+      // Global Citizenship page
+      try {
+        if (newLocale === 'en') {
+          translationData.globalCitizenship = (await import('./en/globalCitizenship.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.globalCitizenship = (await import('./sv/globalCitizenship.json')).default;
+        }
+        console.log('Loaded globalCitizenship translations:', translationData.globalCitizenship);
+      } catch (e) {
+        console.error('Error loading globalCitizenship translations:', e);
+      }
+      
+      // Also load framework translations for navigation
+      try {
+        if (newLocale === 'en') {
+          translationData.framework = (await import('./en/framework.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.framework = (await import('./sv/framework.json')).default;
+        }
+      } catch (e) {
+        console.error('Error loading framework translations:', e);
       }
     } else if (route.startsWith('/frameworks')) {
-      // Framework page
+      // Other framework pages
       try {
         if (newLocale === 'en') {
           translationData.framework = (await import('./en/framework.json')).default;
@@ -134,10 +169,10 @@ async function loadTranslations(newLocale, route = '/') {
           translationData.downloads = (await import('./sv/downloads.json')).default;
         }
       } catch (e) {
-        console.error('Error loading terms translations:', e);
+        console.error('Error loading downloads translations:', e);
       }
     } else if (route.startsWith('/youth')) {
-      // Downloads page
+      // Youth page
       try {
         if (newLocale === 'en') {
           translationData.youth = (await import('./en/youth.json')).default;
@@ -145,7 +180,7 @@ async function loadTranslations(newLocale, route = '/') {
           translationData.youth = (await import('./sv/youth.json')).default;
         }
       } catch (e) {
-        console.error('Error loading terms translations:', e);
+        console.error('Error loading youth translations:', e);
       }
     }
 
@@ -175,7 +210,7 @@ const t = derived(
   [locale, translations],
   ([$locale, $translations]) => {
     // Return a function that takes a key and returns the translation
-    return (key) => {
+    return (key, params = {}) => {
       // If the key is empty or not a string, return an empty string
       if (!key || typeof key !== 'string') {
         return '';
@@ -205,6 +240,13 @@ const t = derived(
           console.warn(`Translation value is null or undefined for key: ${key}`);
         }
         return '';
+      }
+      
+      // Handle string interpolation for parameters like {current} and {total}
+      if (typeof result === 'string' && Object.keys(params).length > 0) {
+        return result.replace(/\{(\w+)\}/g, (match, paramName) => {
+          return params[paramName] !== undefined ? params[paramName] : match;
+        });
       }
       
       return result;
@@ -270,7 +312,7 @@ export {
   locale,
   locales,
   t,
-  setLocale, // New export
+  setLocale,
   detectLocale,
   languageData,
   getLanguageName,

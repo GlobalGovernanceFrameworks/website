@@ -66,13 +66,27 @@ A **practice** (not just an idea) that combines:
 ### **Tools & Practices**
 - **🧰 AUBI Advocacy:** Support economic systems that free people to participate.
 - **📱 Tech for Good:** Use AI translators to bridge language gaps.
-- **🌱 Daily Rituals:** Pause to ask: *"Who benefits from my choices? Who bears the cost?"*
+- **🌱 Daily Rituals:** Pause to ask: *"Who benefits from my choices? Who bears the cost?" “What am I carrying that no longer serves—physically, digitally, monetarily and mentally?”*
 
 ### **Expanding the Circle**
 Global citizenship now includes:
 - **Non-humans:** Legal rights for rivers (New Zealand’s Whanganui River).
 - **AI Ethics:** Ensuring algorithms respect human rights.
 - **Cosmic Responsibility:** Preparing for interstellar ethics.
+
+### 🧹 Digital Minimalism for the Planet
+Start small:
+
+- Delete 100 old emails.
+- Clean your Downloads folder.
+- Unsubscribe from spam.
+- Archive or delete unused AI chats.
+- Turn off non-essential notifications.
+
+🌍 *Each digital choice carries an ecological and mental weight.*
+
+*Global citizenship starts with mindful data.*
+
 
 ---
 

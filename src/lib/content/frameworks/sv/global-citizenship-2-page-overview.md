@@ -69,13 +69,26 @@ Ett **praktiskt förhållningssätt** (inte bara en idé) som förenar:
 ### **Verktyg & metoder**
 - **🧰 AUBI-förespråkande:** Stöd ekonomiska system som frigör människor för att delta.
 - **📱 Teknik för gott:** Använd AI-översättare för att överbrygga språkbarriärer.
-- **🌱 Dagliga ritualer:** Stanna upp och fråga: *"Vem gynnas av mina val? Vem betalar priset?"*
+- **🌱 Dagliga ritualer:** Stanna upp och fråga: *"Vem gynnas av mina val? Vem betalar priset?" "Vad bär jag på som inte längre tjänar något syfte—fysiskt, digitalt, monetärt and mentalt?”*
 
 ### **Att vidga cirkeln**
 Globalt medborgarskap inkluderar nu:
 - **Icke-mänskliga varelser:** Juridiska rättigheter för floder (t.ex. Whanganui i Nya Zeeland).
 - **AI-etik:** Säkerställa att algoritmer respekterar mänskliga rättigheter.
 - **Kosmiskt ansvar:** Förberedelser för etiska frågor i rymden.
+
+### 🧹 Digital Minimalism för Planeten
+Börja smått:
+
+- Radera 100 gamla e-postmeddelanden.
+- Rensa din Nedladdningar-mapp.
+- Avsluta prenumerationer på skräppost.
+- Arkivera eller radera oanvända AI-konversationer.
+- Stäng av onödiga notiser.
+
+🌍 *Varje digitalt val bär en ekologisk och mental tyngd.*
+
+*Globalt medborgarskap börjar med medveten datahantering.*
 
 ---
 

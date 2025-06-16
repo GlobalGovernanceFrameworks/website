@@ -181,6 +181,10 @@
       margin-right: 1.5rem;
     }
   }
+
+  .nav-link.nav-link-highlight {
+    color: #DAA520;
+  }
   
   .nav-link {
     color: #ffffff; /* White for nav links */
@@ -322,8 +326,8 @@
     <div class="header-content">
       <div class="logo-section">
         <a href="{base}/" class="logo-link">
-          <img src="{base}/logo.svg" alt="Global Governance Framework" class="logo-img" />
-          <span class="site-title">Global Governance Framework</span>
+          <img src="{base}/logo.svg" alt="Global Governance Frameworks" class="logo-img" />
+          <span class="site-title">Global Governance Frameworks</span>
         </a>
         
         <button 
@@ -356,6 +360,16 @@
               data-sveltekit-preload-data="hover"
             >
               {$t('common.header.home')}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="{base}/frameworks/global-citizenship"
+              class="nav-link nav-link-highlight"
+              class:active={isActive('/frameworks/global-citizenship')}
+              data-sveltekit-preload-data="hover"
+            >
+              {$t('common.header.frameworkGlobalCitizenship')}
             </a>
           </li>
           <li class="nav-item dropdown" class:open={isDropdownOpen}>
@@ -391,9 +405,6 @@
               </a>
               <a href="{base}/frameworks/docs/principles" class={isActive('/frameworks/docs/principles') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkPrinciples')}
-              </a>
-              <a href="{base}/frameworks/global-citizenship" class={isActive('/frameworks/global-citizenship') ? 'active' : ''} data-sveltekit-preload-data="hover">
-                {$t('common.header.frameworkGlobalCitizenship')}
               </a>
               <a href="{base}/frameworks/docs/implementation" class={isActive('/frameworks/docs/implementation') ? 'active' : ''} data-sveltekit-preload-data="hover">
                 {$t('common.header.frameworkImplementation')}

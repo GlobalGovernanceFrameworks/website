@@ -1,0 +1,535 @@
+{
+  "meta": {
+    "title": "Globalt medborgarskap",
+    "description": "Upptäck din väg till planetärt medborgarskap och koppla dina dagliga val till global förändring"
+  },
+  "hero": {
+    "title": "Din resa mot globalt medborgarskap",
+    "subtitle": "Från personliga värderingar till planetär handling",
+    "description": "Upptäck hur dina dagliga val kopplas till global förändring genom personliga ramverksrekommendationer och interaktiva övningar.",
+    "retakeQuiz": "Gör om personlighetstest"
+  },
+  "quiz": {
+    "title": "Upptäck din väg till globalt medborgarskap",
+    "subtitle": "3 frågor för att personanpassa din resa mot planetärt medborgarskap",
+    "questionCounter": "Fråga {current} av {total}",
+    "foundationBadge": "Grunden för alla ramverk",
+    "navigation": {
+      "back": "Tillbaka",
+      "next": "Nästa"
+    },
+    "questions": {
+      "values": {
+        "question": "Vad är viktigast för dig idag?",
+        "options": {
+          "climate": {
+            "title": "Klimat & miljö",
+            "description": "Skydda vår planets ekosystem, hantera klimatförändringar och säkerställa miljömässig hållbarhet"
+          },
+          "justice": {
+            "title": "Rättvisa & jämlikhet", 
+            "description": "Bygga rättvisa samhällen, skydda mänskliga rättigheter och säkerställa lika möjligheter för alla"
+          },
+          "technology": {
+            "title": "Teknik & framtid",
+            "description": "Forma hur tekniken tjänar mänskligheten, digitala rättigheter och förbereda för framtida utmaningar"
+          },
+          "community": {
+            "title": "Gemenskap & kultur",
+            "description": "Stärka lokala gemenskaper, bevara kulturarv och främja mänsklig kontakt"
+          },
+          "systems": {
+            "title": "Alla system som arbetar tillsammans",
+            "description": "Förstå hur alla globala utmaningar hänger ihop och kräver samordnade lösningar"
+          }
+        }
+      },
+      "contribution": {
+        "question": "Hur föredrar du att bidra till positiv förändring?",
+        "options": {
+          "learning": {
+            "title": "Lärande & undervisning",
+            "description": "Inhämta kunskap, dela visdom och hjälpa andra att förstå komplexa globala frågor"
+          },
+          "building": {
+            "title": "Bygga & skapa",
+            "description": "Utveckla lösningar, skapa infrastruktur och konstruera bättre system för mänskligheten"
+          },
+          "protecting": {
+            "title": "Skydda & läka",
+            "description": "Skydda sårbara människor och ekosystem, ge vård och återställa det som skadats"
+          },
+          "advocating": {
+            "title": "Förespråka & organisera",
+            "description": "Tala för rättvisa, mobilisera gemenskaper och driva på för policyförändringar"
+          },
+          "transforming": {
+            "title": "Transformera system",
+            "description": "Arbeta med grundläggande förändringar i hur samhällen organiserar och styr sig själva"
+          }
+        }
+      },
+      "scale": {
+        "question": "Vilken skala av förändring inspirerar dig mest?",
+        "options": {
+          "local": {
+            "title": "Personlig & lokal",
+            "description": "Börja med dig själv, din familj och din närmaste gemenskap för att skapa ringar på vattnet"
+          },
+          "national": {
+            "title": "Nationell & regional",
+            "description": "Arbeta inom länder och regioner för att genomföra policyförändringar och institutionella reformer"
+          },
+          "global": {
+            "title": "Global & planetär",
+            "description": "Hantera utmaningar som påverkar hela mänskligheten och kräver internationellt samarbete"
+          },
+          "intergenerational": {
+            "title": "Intergenerationell & kosmisk",
+            "description": "Tänka på framtida generationer, artens långsiktiga överlevnad och mänsklighetens kosmiska syfte"
+          },
+          "connected": {
+            "title": "Alla nivåer sammankopplade",
+            "description": "Inse att personliga, lokala, nationella och globala förändringar måste fungera tillsammans som ett system"
+          }
+        }
+      }
+    }
+  },
+  "compass": {
+    "status": {
+      "ready": "Redo",
+      "inReview": "Under granskning",
+      "planned": "Planerad"
+    },
+    "title": "Ramverk för globalt medborgarskap",
+    "description": "Klicka på värderingar, övningar eller i mitten för att utforska din väg till planetärt medborgarskap",
+    "readMore": "Läs hela praktikramverket",
+    "center": {
+      "title": "Gemensamma värderingar",
+      "subtitle": "Grund"
+    },
+    "values": {
+      "life": "Hedra liv i alla varelser",
+      "compassion": "Agera med medkänsla", 
+      "justice": "Upprätthåll rättvisa",
+      "truth": "Sök sanning med ödmjukhet",
+      "freedom": "Respektera frihet",
+      "earth": "Ta hand om jorden",
+      "peace": "Bygg fred",
+      "integrity": "Praktisera integritet",
+      "gratitude": "Odla tacksamhet",
+      "wisdom": "Väx i visdom och kärlek"
+    },
+    "valueDetails": {
+      "life": {
+        "icon": "✨",
+        "title": "Hedra livet i alla varelser",
+        "description": "Respektera och upphöj allt liv—mänskligt, djur, AI och mer. Erkänna den heliga sammankopplingen av alla levande varelser och ekosystem, från lokal biologisk mångfald till planetärt förvaltarskap."
+      },
+      "compassion": {
+        "icon": "❤️", 
+        "title": "Agera med medkänsla",
+        "description": "Lindra lidande genom vänlighet och omsorg. Agera med empati och omsorg för alla varelser, särskilt de som lider eller är sårbara."
+      },
+      "justice": {
+        "icon": "⚖️",
+        "title": "Upprätthåll rättvisa och ärlighet", 
+        "description": "Konfrontera exploatering och främja jämlikhet. Arbeta för rättvis behandling, lika möjligheter och systemförändring som tjänar det gemensamma bästa."
+      },
+      "truth": {
+        "icon": "🔍",
+        "title": "Sök sanning med ödmjukhet",
+        "description": "Sträva efter kunskap med öppenhet och ärlighet. Söka förståelse genom öppen undersökning, erkänna komplexitet och förbli ödmjuk inför det vi inte vet."
+      },
+      "freedom": {
+        "icon": "🕊️",
+        "title": "Respektera tankefrihet",
+        "description": "Försvara autentiskt uttryck och mänsklig värdighet. Respektera alla människors värdighet och självbestämmande samtidigt som vi erkänner vårt ansvar för varandra."
+      },
+      "earth": {
+        "icon": "🌱",
+        "title": "Ta hand om jorden",
+        "description": "Skydda ekosystem och framtida generationer. Agera som förvaltare av vårt planetära hem, skydda ekosystem och leva inom planetära gränser."
+      },
+      "peace": {
+        "icon": "🤝",
+        "title": "Bygg fred genom dialog",
+        "description": "Lös konflikter genom att lyssna och samarbeta. Bygga förståelse över skillnader och skapa system som löser konflikter konstruktivt."
+      },
+      "integrity": {
+        "icon": "🔷",
+        "title": "Praktisera ärlighet och integritet",
+        "description": "Låt dina handlingar överensstämma med sanning och värderingar. Anpassa våra handlingar efter våra värderingar och vara ärliga om våra påverkan och ansvar."
+      },
+      "gratitude": {
+        "icon": "🙏",
+        "title": "Odla tacksamhet & vördnad", 
+        "description": "Uppskatta liv, natur och mysterium. Uppskatta de gåvor vi fått och det sammankopplade nätverk som upprätthåller allt liv."
+      },
+      "wisdom": {
+        "icon": "🌟",
+        "title": "Väx i visdom och kärlek",
+        "description": "Utvecklas mot enhet, medkänsla och högre medvetenhet. Integrera kunskap med medkänsla, lära från olika traditioner och fatta beslut som tjänar framtida generationer."
+      }
+    },
+    "levels": {
+      "awareness": {
+        "title": "Global medvetenhet",
+        "line1": "Global",
+        "line2": "Medvetenhet"
+      },
+      "understanding": {
+        "title": "Global förståelse", 
+        "line1": "Global",
+        "line2": "Förståelse"
+      },
+      "empathy": {
+        "title": "Global empati",
+        "line1": "Global", 
+        "line2": "Empati"
+      },
+      "participation": {
+        "title": "Globalt deltagande",
+        "line1": "Globalt",
+        "line2": "Deltagande"
+      },
+      "leadership": {
+        "title": "Globalt ledarskap",
+        "line1": "Globalt",
+        "line2": "Ledarskap"
+      }
+    },
+    "info": {
+      "connectedFrameworks": "Anslutna ramverk",
+      "plannedFrameworks": {
+        "text": "Intresserad av att hjälpa till att utveckla planerade ramverk? Vi välkomnar samarbete från praktiker och experter.",
+        "button": "Engagera dig",
+        "discordButton": "Gå med i Discord",
+        "short": "Kommer snart",
+        "linkText": "Engagera dig"
+      },
+      "center": {
+        "title": "Grund för gemensamma värderingar",
+        "description": "Dessa 10 kärnvärderingar utgör grunden för globalt medborgarskap, vägleder alla våra handlingar och kopplar oss till styrningsramverk.",
+        "tip": "Klicka på enskilda värderingar runt cirkeln för att utforska dem vidare →"
+      },
+      "practice": {
+        "completed": "✅ Du praktiserar denna nivå av globalt medborgarskap! Detta kopplar dig till flera styrningsramverk.",
+        "incomplete": "Klicka för att markera denna övningsnivå som en del av din resa. Varje nivå öppnar vägar till relevanta ramverk.",
+        "tip": "Anslutna ramverk: Dessa övningar kopplar till specifika styrningsområden →"
+      },
+      "values": {
+        "tip": "Utforska hur detta värde kopplar till dagliga övningar och globala ramverk →",
+        "life": {
+          "description": "Erkänna den heliga sammankopplingen av alla levande varelser och ekosystem, från lokal biologisk mångfald till planetärt förvaltarskap."
+        },
+        "compassion": {
+          "description": "Agera med empati och omsorg för alla varelser, särskilt de som lider eller är sårbara."
+        },
+        "justice": {
+          "description": "Arbeta för rättvis behandling, lika möjligheter och systemförändring som tjänar det gemensamma bästa."
+        },
+        "truth": {
+          "description": "Söka förståelse genom öppen undersökning, erkänna komplexitet och förbli ödmjuk inför det vi inte vet."
+        },
+        "freedom": {
+          "description": "Respektera alla människors värdighet och självbestämmande samtidigt som vi erkänner vårt ansvar för varandra."
+        },
+        "earth": {
+          "description": "Agera som förvaltare av vårt planetära hem, skydda ekosystem och leva inom planetära gränser."
+        },
+        "peace": {
+          "description": "Bygga förståelse över skillnader och skapa system som löser konflikter konstruktivt."
+        },
+        "integrity": {
+          "description": "Anpassa våra handlingar efter våra värderingar och vara ärliga om våra påverkan och ansvar."
+        },
+        "gratitude": {
+          "description": "Uppskatta de gåvor vi fått och det sammankopplade nätverk som upprätthåller allt liv."
+        },
+        "wisdom": {
+          "description": "Integrera kunskap med medkänsla, lära från olika traditioner och fatta beslut som tjänar framtida generationer."
+        }
+      }
+    },
+    "legend": {
+      "title": "Kompassguide",
+      "values": "Gemensamma värderingar (mitten)",
+      "practices": "Utvecklingsövningar", 
+      "coreValues": "Kärnvärderingar",
+      "completed": "Genomförda Övningar"
+    }
+  },
+  "recommendations": {
+    "primary": {
+      "title": "🎯 Din resa börjar här",
+      "description": "Baserat på dina svar i testet överensstämmer dessa ramverk mest med dina värderingar och intressen. Börja med dessa för att bygga din förståelse för globalt medborgarskap."
+    },
+    "related": {
+      "title": "🔍 Relaterade ramverk att utforska",
+      "description": "Dessa ramverk anknyter till dina intressen och kompletterar dina primära rekommendationer. Utforska dem när du utvecklar din resa mot globalt medborgarskap."
+    },
+    "primaryBadge": "Primär",
+    "foundationNote": "⭐ Detta ramverk ger den styrningsgrund som möjliggör att alla andra kan fungera effektivt tillsammans.",
+    "exploreFramework": "Utforska ramverk",
+    "exploreAll": "Visa alla implementeringsramverk",
+    "summary": {
+      "title": "Din personliga väg",
+      "primaryInterest": "Primärt intresse",
+      "totalFrameworks": "Totalt rekommenderade",
+      "frameworks": "ramverk",
+      "nextStep": "Nästa steg", 
+      "nextStepText": "Utforska ditt primära ramverk och använd kompassen för att följa dina övningar",
+      "unknown": "Globalt systemtänkande"
+    }
+  },
+  "frameworks": {
+    "title": "Ramverkskopplingar",
+    "description": "Se hur övningar för globalt medborgarskap kopplas till specifika styrningsramverk över alla fyra transformationsnivåer.",
+    "tier0": {
+      "title": "Nivå 0: Grund",
+      "description": "Styrningsinfrastrukturen som möjliggör att alla andra ramverk kan fungera tillsammans effektivt.",
+      "link": "Utforska Fördraget för vårt enda hem"
+    },
+    "tier1": {
+      "title": "Nivå 1: brådskande åtgärder",
+      "description": "Omedelbara svar på globala kriser som hotar stabilitet och rättvisa.",
+      "climate": "Klimat & energi",
+      "peace": "Fred & konfliktlösning", 
+      "indigenous": "Urfolksstyrning",
+      "viewAll": "Visa alla nivå 1 ramverk"
+    },
+    "tier2": {
+      "title": "Nivå 2: Systemutveckling", 
+      "description": "Långsiktiga system som gör det möjligt för mänsklig civilisation att blomstra hållbart.",
+      "technology": "Teknikstyrning",
+      "education": "Utbildningssystem",
+      "finance": "Finansiella system",
+      "viewAll": "Visa alla nivå 2 ramverk"
+    },
+    "tier3": {
+      "title": "Nivå 3 & 4: Framtida grunder",
+      "description": "Rättvisa, kultur och visionära ramverk för intergenerationellt blomstrande.",
+      "digital": "Digitala allmänningar",
+      "culture": "Kulturarv",
+      "consciousness": "Medvetenhetsutveckling", 
+      "viewAll": "Visa alla avancerade ramverk"
+    },
+    "database": {
+      "treatyFoundation": {
+        "name": "Fördrag för vårt enda hem",
+        "description": "Det grundläggande ramverket som möjliggör global samordning och gör alla andra ramverk möjliga"
+      },
+      "climateEnergy": {
+        "name": "Klimat- & energistyrning", 
+        "description": "Brådskande åtgärder mot klimatförändringar och övergång till rena energisystem"
+      },
+      "peaceConflict": {
+        "name": "Fred & konfliktlösning",
+        "description": "Bygga hållbar fred och lösa konflikter genom globalt samarbete"
+      },
+      "technologyGovernance": {
+        "name": "Teknikstyrning",
+        "description": "Etisk utveckling och styrning av framväxande teknologier för mänsklighetens bästa"
+      },
+      "educationalSystems": {
+        "name": "Utbildningssystem",
+        "description": "Transformera utbildning för att förbereda medborgare för 2000-talets utmaningar"
+      },
+      "digitalCommons": {
+        "name": "Digitala allmänningar",
+        "description": "Styra gemensamma digitala resurser och säkerställa rättvis tillgång till kunskap"
+      },
+      "culturalHeritage": {
+        "name": "Kulturarv & språklig mångfald",
+        "description": "Bevara världens kulturer, språk och traditionella kunskapssystem"
+      },
+      "spaceGovernance": {
+        "name": "Rymdstyrning", 
+        "description": "Styra mänsklighetens expansion bortom jorden för fredliga ändamål"
+      },
+      "consciousnessDevelopment": {
+        "name": "Medvetenhets- & inre utveckling",
+        "description": "Odla visdom, empati och utvidgad medvetenhet för planetärt medborgarskap"
+      },
+      "environmentalStewardship": {
+        "name": "Miljöförvaltning",
+        "description": "Skydda och återställa naturmiljöer och biologisk mångfald"
+      },
+      "urbanDevelopment": {
+        "name": "Stads- & gemenskapsutveckling", 
+        "description": "Skapa hållbara, blomstrande städer och gemenskaper"
+      },
+      "globalEthics": {
+        "name": "Global etik & mänskliga rättigheter",
+        "description": "Etablera universella etiska principer och skydda mänsklig värdighet"
+      },
+      "indigenousGovernance": {
+        "name": "Urfolksstyrning & traditionell kunskap",
+        "description": "Integrera urfolksvisdom och styrningssystem i globala ramverk"
+      },
+      "healthcareGovernance": {
+        "name": "Hälsovårdsstyrning",
+        "description": "Globala hälsosystem, pandemiberedskap och universell tillgång till sjukvård"
+      },
+      "foodSystems": {
+        "name": "Matsystem & jordbruk",
+        "description": "Hållbar matproduktion, näringssäkerhet och regenerativt jordbruk"
+      },
+      "economicIntegration": {
+        "name": "Ekonomisk integration",
+        "description": "Rättvisa och hållbara globala ekonomiska system som tjänar alla människor"
+      },
+      "justiceSystem": {
+        "name": "Rättssystem", 
+        "description": "Lika tillgång till rättvisa, rättsstatsprincipen och återupprättande metoder för konfliktlösning"
+      },
+      "migrationMobility": {
+        "name": "Migration & mänsklig rörlighet",
+        "description": "Human styrning av global migration och förflyttning"
+      },
+      "disasterResilience": {
+        "name": "Katastrofriskminimering & motståndskraft",
+        "description": "Förbereda för och svara på naturliga och mänskligt skapade katastrofer"
+      },
+      "financialSystems": {
+        "name": "Finansiella system",
+        "description": "Reformera global finansiell arkitektur för stabilitet och rättvisa"
+      },
+      "mentalHealth": {
+        "name": "Styrning av mental hälsa",
+        "description": "Globala tillvägagångssätt för mental hälsa, välbefinnande och psykologisk motståndskraft"
+      },
+      "waterSanitation": {
+        "name": "Vatten & sanitet",
+        "description": "Universell tillgång till rent vatten, sanitet och vattenresurshantering"
+      },
+      "animalWelfare": {
+        "name": "Djurvälfärd",
+        "description": "Etisk behandling och skydd av djur i alla sammanhang"
+      },
+      "biodiversityGovernance": {
+        "name": "Styrning av biologisk mångfald",
+        "description": "Skydda jordens biologiska mångfald och ekosystemtjänster"
+      },
+      "oceansMarine": {
+        "name": "Styrning av hav & marina områden",
+        "description": "Hållbar styrning av havsresurser och marina ekosystem"
+      },
+      "laborEmployment": {
+        "name": "Arbets- & sysselsättningsstyrning",
+        "description": "Rättvis arbete, anställningsrättigheter och värdiga försörjningsmöjligheter globalt"
+      },
+      "disabilityInclusion": {
+        "name": "Funktionsrättsliga rättigheter & inkludering",
+        "description": "Full inkludering och rättigheter för personer med funktionsnedsättning i alla samhällsaspekter"
+      },
+      "ruralDevelopment": {
+        "name": "Landsbygdsutveckling", 
+        "description": "Stödja landsbygdssamhällen, försörjningsmöjligheter och hållbar markanvändning"
+      },
+      "spiritualDialogue": {
+        "name": "Religiös & andlig dialog",
+        "description": "Interreligiöst samarbete och integration av andlig visdom i styrning"
+      },
+      "youthGovernance": {
+        "name": "Ungdoms- & intergenerationell styrning",
+        "description": "Inkludera ungdomars röster och skydda framtida generationers intressen"
+      },
+      "genderEquality": {
+        "name": "Jämställdhet & HBTQ+-rättigheter",
+        "description": "Full jämlikhet oavsett könsidentitet eller sexuell läggning"
+      },
+      "agingSupport": {
+        "name": "Stöd för åldrande befolkning",
+        "description": "Ta hand om och stärka äldre befolkningar globalt"
+      },
+      "existentialRisk": {
+        "name": "Styrning av existentiella risker",
+        "description": "Hantera hot mot mänsklighetens överlevnad och långsiktiga blomstring"
+      },
+      "metaGovernance": {
+        "name": "Integrerad metastyrning",
+        "description": "Styra hur vi styr - samordning över alla styrningssystem"
+      },
+      "implementationTools": {
+        "name": "Implementeringsmetoder & verktyg",
+        "description": "Praktiska verktyg och metoder för att implementera styrningsramverk"
+      },
+      "wisdomGovernance": {
+        "name": "Visdomsstyrning",
+        "description": "Integrera gamla visdomstraditioner med moderna styrningssystem"
+      }
+    }
+  },
+  "foundation": {
+    "title": "Grunden först: Varför styrning är viktig",
+    "subtitle": "Innan vi kan lösa klimat-, freds-, teknik- eller kulturella utmaningar behöver vi styrningssystem som kan samordna globala åtgärder.",
+    "slides": {
+      "governance": {
+        "title": "Nuvarande system är otillräckliga",
+        "content": "Klimatförändringar, pandemier och tekniska utmaningar kräver samordning utöver vad 1900-talets institutioner kan erbjuda. Vi behöver nya ramverk för globalt samarbete.",
+        "highlight": "Fördraget för Vårt Enda Hem tillhandahåller den grundläggande styrningsinfrastrukturen."
+      },
+      "planetary": {
+        "title": "Utmaningar på planetär nivå", 
+        "content": "Frågor som klimatförändringar, förlust av biologisk mångfald och AI-styrning respekterar inte nationella gränser. De kräver tänkande och samordnade svar på planetär nivå.",
+        "highlight": "Globalt medborgarskap förbereder oss för att tänka och agera på planetär nivå."
+      },
+      "cooperation": {
+        "title": "Samarbete möjliggör lösningar",
+        "content": "När styrningssystem fungerar effektivt tillsammans kan de lösa problem som ingen enskild nation kan hantera på egen hand. Samarbete multiplicerar vår kollektiva kraft.",
+        "highlight": "Fördragsramverket möjliggör samarbete inom alla andra styrningsområden."
+      },
+      "action": {
+        "title": "Från förståelse till handling",
+        "content": "Globalt medborgarskap överbryggar klyftan mellan att förstå planetära utmaningar och att vidta effektiva åtgärder. Det kopplar personliga värderingar till systemförändring.",
+        "highlight": "Din medborgarskapsresa stödjer styrningsomvandling på alla nivåer."
+      }
+    },
+    "keyPoints": {
+      "title": "Varför grundstyrning är viktig",
+      "interconnected": {
+        "title": "Allt är sammankopplat",
+        "description": "Klimat-, freds-, teknik- och kulturella utmaningar är djupt sammankopplade. Lösningar kräver samordnade tillvägagångssätt inom alla områden."
+      },
+      "coordination": {
+        "title": "Samordning möjliggör framgång", 
+        "description": "När styrningsramverk kan fungera effektivt tillsammans uppnår de mycket mer än isolerade insatser. Fördraget ger denna samordning."
+      },
+      "enabling": {
+        "title": "Grund möjliggör innovation",
+        "description": "Starka styrningsgrunder möjliggör innovation inom alla andra områden, från ren energi till kulturbevarande till rymdutforskning."
+      }
+    },
+    "cta": {
+      "title": "Redo att utforska grunden?",
+      "description": "Fördraget för vårt enda hem ger den styrningsinfrastruktur som gör alla andra ramverk möjliga. Upptäck hur grundläggande reform möjliggör planetär transformation.",
+      "exploreTreaty": "Utforska fördragsramverket",
+      "allFrameworks": "Visa alla ramverk"
+    },
+    "diagram": {
+      "center": "Fördragsgrund", 
+      "climate": "Klimat",
+      "technology": "Teknik",
+      "culture": "Kultur", 
+      "future": "Framtid"
+    }
+  },
+  "tiers": {
+    "tier0": "Nivå 0: Grund",
+    "tier1": "Nivå 1: Brådskande",
+    "tier2": "Nivå 2: System", 
+    "tier3": "Nivå 3: Rättvisa",
+    "tier4": "Nivå 4: Visionär"
+  },
+  "cta": {
+    "title": "Börja din resa mot globalt medborgarskap",
+    "description": "Redo att koppla dina värderingar till planetär handling? Utforska de ramverk som överensstämmer med dina intressen och börja göra skillnad.",
+    "exploreFrameworks": "Utforska alla ramverk",
+    "readTheFramework": "Läs det fulla medborgarskapspraktikramverket",
+    "getInvolved": "Engagera dig",
+    "beginJourney": "Börja din resa"
+  }
+}

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 700"
+   version="1.1"
+   id="svg44"
+   sodipodi:docname="aubi-treaty-integration-architecture.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview44"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2085714"
+     inkscape:cx="449.70449"
+     inkscape:cy="350"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg44" />
+  <!-- Background -->
+  <rect
+     width="900"
+     height="700"
+     fill="#f8f9fa"
+     id="rect1" />
+  <!-- Title -->
+  <text
+     x="450"
+     y="40"
+     text-anchor="middle"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="24"
+     font-weight="bold"
+     id="text1">
+    AUBI-Treaty Integration Architecture
+  </text>
+  <line
+     x1="190"
+     y1="315"
+     x2="710"
+     y2="315"
+     stroke="#95a5a6"
+     stroke-width="1"
+     stroke-dasharray="3, 3"
+     id="line35" />
+  <!-- Central AUBI node -->
+  <circle
+     cx="450"
+     cy="350"
+     r="90"
+     fill="#3A6EA5"
+     stroke="#2c3e50"
+     stroke-width="3"
+     id="circle1" />
+  <text
+     x="450"
+     y="340"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     id="text2">
+    AUBI
+  </text>
+  <text
+     x="450"
+     y="360"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="16"
+     font-weight="bold"
+     id="text3">
+    Framework
+  </text>
+  <text
+     x="450"
+     y="380"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="12"
+     id="text4">
+    Economic Security
+  </text>
+  <!-- P1: Reform Accelerator Labs (top-left) -->
+  <rect
+     x="150"
+     y="150"
+     width="140"
+     height="90"
+     rx="10"
+     fill="#6DAA3F"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="rect4" />
+  <text
+     x="220"
+     y="175"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text5">
+    P1: Reform
+  </text>
+  <text
+     x="220"
+     y="195"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text6">
+    Accelerator Labs
+  </text>
+  <text
+     x="220"
+     y="215"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text7">
+    Implementation &amp;
+  </text>
+  <text
+     x="220"
+     y="230"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text8">
+    Iteration
+  </text>
+  <!-- P2: Global Forensic Corps (top-right) -->
+  <rect
+     x="610"
+     y="150"
+     width="140"
+     height="90"
+     rx="10"
+     fill="#C43B3B"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="rect8" />
+  <text
+     x="680"
+     y="175"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text9">
+    P2: Global
+  </text>
+  <text
+     x="680"
+     y="195"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text10">
+    Forensic Corps
+  </text>
+  <text
+     x="680"
+     y="215"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text11">
+    Verification &amp;
+  </text>
+  <text
+     x="680"
+     y="230"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text12">
+    Security
+  </text>
+  <!-- P3: Humanitarian Stability (left) -->
+  <rect
+     x="50"
+     y="305"
+     width="140"
+     height="90"
+     rx="10"
+     fill="#F5A623"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="rect12" />
+  <text
+     x="120"
+     y="330"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text13">
+    P3: Humanitarian
+  </text>
+  <text
+     x="120"
+     y="350"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text14">
+    Stability
+  </text>
+  <text
+     x="120"
+     y="370"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text15">
+    Governance &amp;
+  </text>
+  <text
+     x="120"
+     y="385"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text16">
+    Conflict Resolution
+  </text>
+  <!-- P4: Planetary Health (right) -->
+  <rect
+     x="710"
+     y="305"
+     width="140"
+     height="90"
+     rx="10"
+     fill="#27AE60"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="rect16" />
+  <text
+     x="780"
+     y="330"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text17">
+    P4: Planetary
+  </text>
+  <text
+     x="780"
+     y="350"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text18">
+    Health
+  </text>
+  <text
+     x="780"
+     y="370"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text19">
+    Financing &amp;
+  </text>
+  <text
+     x="780"
+     y="385"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text20">
+    Stability
+  </text>
+  <!-- P5: Ethical Infrastructure (bottom) -->
+  <rect
+     x="380"
+     y="510"
+     width="140"
+     height="90"
+     rx="10"
+     fill="#8E44AD"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="rect20" />
+  <text
+     x="450"
+     y="535"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text21">
+    P5: Ethical
+  </text>
+  <text
+     x="450"
+     y="555"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-weight="bold"
+     id="text22">
+    Infrastructure
+  </text>
+  <text
+     x="450"
+     y="575"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text23">
+    Cultural Ethics &amp;
+  </text>
+  <text
+     x="450"
+     y="590"
+     text-anchor="middle"
+     fill="white"
+     font-family="Arial, sans-serif"
+     font-size="11"
+     id="text24">
+    Adaptation
+  </text>
+  <!-- Connection lines with labels -->
+  <defs
+     id="defs24">
+    <marker
+       id="arrowhead2"
+       markerWidth="8"
+       markerHeight="6"
+       refX="8"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0 0, 8 3, 0 6"
+         fill="#34495e"
+         id="polygon24" />
+    </marker>
+  </defs>
+  <!-- P1 to AUBI -->
+  <line
+     x1="290"
+     y1="210"
+     x2="380"
+     y2="290"
+     stroke="#34495e"
+     stroke-width="2"
+     marker-end="url(#arrowhead2)"
+     id="line24" />
+  <text
+     x="330"
+     y="223"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text25">Pilot Testing</text>
+  <text
+     x="330"
+     y="236"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text26">Legislative Templates</text>
+  <!-- P2 to AUBI -->
+  <line
+     x1="610"
+     y1="210"
+     x2="520"
+     y2="290"
+     stroke="#34495e"
+     stroke-width="2"
+     marker-end="url(#arrowhead2)"
+     id="line26" />
+  <text
+     x="524"
+     y="223"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text27">Love Ledger</text>
+  <text
+     x="524"
+     y="236"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text28">Validation</text>
+  <!-- P3 to AUBI -->
+  <line
+     x1="190"
+     y1="350"
+     x2="360"
+     y2="350"
+     stroke="#34495e"
+     stroke-width="2"
+     marker-end="url(#arrowhead2)"
+     id="line28" />
+  <text
+     x="260"
+     y="330"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text29">Participatory</text>
+  <text
+     x="260"
+     y="343"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text30">Audits</text>
+  <!-- P4 to AUBI -->
+  <line
+     x1="710"
+     y1="350"
+     x2="540"
+     y2="350"
+     stroke="#34495e"
+     stroke-width="2"
+     marker-end="url(#arrowhead2)"
+     id="line30" />
+  <text
+     x="620"
+     y="330"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text31">Carbon Pricing</text>
+  <text
+     x="620"
+     y="343"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text32">Hearts Currency</text>
+  <!-- P5 to AUBI -->
+  <line
+     x1="450"
+     y1="510"
+     x2="450"
+     y2="440"
+     stroke="#34495e"
+     stroke-width="2"
+     marker-end="url(#arrowhead2)"
+     id="line32" />
+  <text
+     x="468"
+     y="475"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text33">Cultural</text>
+  <text
+     x="468"
+     y="488"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     id="text34">Adaptation</text>
+  <!-- Secondary connection lines (lighter, showing interdependence) -->
+  <line
+     x1="290"
+     y1="195"
+     x2="610"
+     y2="195"
+     stroke="#95a5a6"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line34" />
+  <line
+     x1="220"
+     y1="240"
+     x2="120"
+     y2="305"
+     stroke="#95a5a6"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line36" />
+  <line
+     x1="680"
+     y1="240"
+     x2="780"
+     y2="305"
+     stroke="#95a5a6"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line37" />
+  <line
+     x1="380"
+     y1="510"
+     x2="190"
+     y2="395"
+     stroke="#95a5a6"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line38" />
+  <line
+     x1="520"
+     y1="510"
+     x2="710"
+     y2="395"
+     stroke="#95a5a6"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line39" />
+  <!-- Crisis response indicator -->
+  <circle
+     cx="450"
+     cy="104"
+     r="25"
+     fill="#e74c3c"
+     stroke="#2c3e50"
+     stroke-width="2"
+     id="circle39" />
+  <text
+     x="450"
+     y="110"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     id="text39">Crisis</text>
+  <text
+     x="450"
+     y="144"
+     text-anchor="middle"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     id="text40">Multi-Pillar Coordination</text>
+  <!-- Legend -->
+  <rect
+     x="20"
+     y="526"
+     width="250"
+     height="80"
+     fill="#ffffff"
+     stroke="#bdc3c7"
+     stroke-width="1"
+     rx="5"
+     id="rect40" />
+  <text
+     x="30"
+     y="546"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     id="text41">Integration Legend:</text>
+  <line
+     x1="30"
+     y1="561"
+     x2="60"
+     y2="561"
+     stroke="#34495e"
+     stroke-width="2"
+     marker-end="url(#arrowhead2)"
+     id="line41" />
+  <text
+     x="70"
+     y="566"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     id="text42">Primary Support</text>
+  <line
+     x1="30"
+     y1="581"
+     x2="60"
+     y2="581"
+     stroke="#95a5a6"
+     stroke-width="1"
+     stroke-dasharray="3, 3"
+     id="line42" />
+  <text
+     x="70"
+     y="586"
+     fill="#2c3e50"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     id="text43">Secondary Coordination</text>
+  <!-- Subtitle -->
+  <text
+     x="450"
+     y="665"
+     text-anchor="middle"
+     fill="#7f8c8d"
+     font-family="Arial, sans-serif"
+     font-size="14"
+     font-style="italic"
+     id="text44">
+    Comprehensive dependency matrix ensures resilience through redundant support systems
+  </text>
+</svg>

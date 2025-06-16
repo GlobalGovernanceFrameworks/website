@@ -1,7 +1,7 @@
 {
   "disclaimer": {
     "title": "Framework Development Status",
-    "text": "The Global Governance Framework is a proof-of-concept project exploring possible approaches to multi-level governance. Documentation sections vary in maturity, from conceptual to fully developed. This work aims to inspire discussion and innovation rather than presenting a finalized, operational system. These frameworks are not intended to replace human judgment or policy expertise, but to support them—providing scaffolding that can be adapted to specific contexts and democratizing access to governance thinking. We're actively refining these resources through collaborative development and welcome your feedback to shape their evolution. Check each document's status indicator for current readiness level."
+    "text": "The Global Governance Frameworks is a proof-of-concept project exploring possible approaches to multi-level governance. Documentation sections vary in maturity, from conceptual to fully developed. This work aims to inspire discussion and innovation rather than presenting a finalized, operational system. These frameworks are not intended to replace human judgment or policy expertise, but to support them—providing scaffolding that can be adapted to specific contexts and democratizing access to governance thinking. We're actively refining these resources through collaborative development and welcome your feedback to shape their evolution. Check each document's status indicator for current readiness level."
   },
   "whyExists": {
     "title": "Why This Exists",
@@ -17,7 +17,7 @@
     "paragraph3": "We believe the vital work of translation belongs to the community. It is a powerful way to ensure the framework's concepts are adapted accurately and resonate within different cultures. If you are a native speaker and believe in this work, we warmly invite you to help bring these ideas to your community.",
     "button": "Join the Translation Effort"
   },
-  "title": "Global Governance Framework",
+  "title": "Global Governance Frameworks",
   "subtitle": "Connecting governance innovations across the world",
   "intro": {
     "heading": "Frameworks for a new era of governance",
@@ -76,7 +76,7 @@
   "additionalInfo": {
     "heading": "Why We Need Meta-Governance",
     "paragraph1": "The world has numerous governance experiments happening at different scales, but they often operate in isolation. We need frameworks that allow these innovations to connect, share lessons, and evolve together.",
-    "paragraph2": "Global Governance Framework provides tools and patterns for:",
+    "paragraph2": "Global Governance Frameworks provides tools and patterns for:",
     "listItems": [
       "Connecting different governance innovations",
       "Creating modular, adaptable governance systems",
@@ -88,17 +88,17 @@
   "callToAction": {
     "heading": "Join Us in Building Better Governance",
     "text": "Whether you're a governance innovator, policy maker, or curious citizen, your perspective matters.",
-    "primaryButton": "Explore the Framework",
+    "primaryButton": "Explore the Frameworks",
     "secondaryButton": "Get Involved"
   },
-  "cta": "Explore the Framework",
+  "cta": "Explore the Frameworks",
   "globalCitizenship": {
-    "title": "Global Citizenship Practice Framework",
-    "lead": "A comprehensive approach to fostering planetary identity and collective action",
-    "description": "The Global Citizenship Practice Framework provides a structured path for individuals and communities to develop from awareness to active participation in our interconnected world. Built on ten universal values that transcend cultural boundaries, this framework offers practical guidance for navigating global challenges.",
-    "point1": "Progressive development from awareness to leadership",
-    "point2": "Ten universal values that unite humanity",
-    "point3": "Practical implementation tools and assessment metrics",
-    "button": "Explore the Framework"
+    "title": "Discover Your Global Citizenship Path",
+    "lead": "An interactive journey to connect your personal values with planetary action.",
+    "description": "Our new Global Citizenship experience is a personalized gateway to understanding your place in the world. Take a short quiz to find your starting point, explore how your values connect to global systems on the interactive compass, and discover the governance frameworks that matter most to you.",
+    "point1": "A 3-question quiz to personalize your journey.",
+    "point2": "An interactive compass to visualize your path.",
+    "point3": "Direct connections to the frameworks you care about.",
+    "button": "Begin Your Journey"
   }
 }

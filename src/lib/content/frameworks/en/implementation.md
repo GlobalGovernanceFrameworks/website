@@ -149,6 +149,7 @@ The Global Governance Framework is organized into five distinct tiers, each repr
 - [Rural Development](/frameworks/docs/implementation/rural) (Planned)
 - [Religious & Spiritual Dialogue](/frameworks/docs/implementation/spiritual) (In Review)
 - [Youth & Intergenerational Governance](/frameworks/docs/implementation/youth) (Planned)
+- [Global Citizenship Practice](/frameworks/global-citizenship/full-framework) (In Review)
 - [Global Ethics & Human Rights](/frameworks/docs/implementation/ethics) (In Review)
 - [Gender Equality & LGBTQ+ Rights](/frameworks/docs/implementation/gender) (Planned)
 - [Aging Population Support](/frameworks/docs/implementation/aging) (In Review)

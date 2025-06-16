@@ -491,6 +491,28 @@ Teknik spelar en avgörande roll i att möjliggöra globalt medborgarskap – me
 - **Transparant Styrning**: Stöd demokratisk tillsyn av digitala plattformar
 - **Mångfaldig Representation**: Säkerställ att flera perspektiv formar teknikens utveckling
 
+### 🌐 Digitalt Förvaltarskap  
+*Att anpassa digitala vanor till globala värderingar*
+
+Globala medborgare är inte bara användare av teknik – de är **förvaltare** av det digitala ekosystemet. Det innebär att agera medvetet om de miljömässiga, psykologiska och etiska konsekvenserna av våra digitala liv. De växande energikraven från molninfrastruktur, tillsammans med den kognitiva belastningen av informationsöverflöd, kräver ett nytt ansvarstagande: **digital minimalism i planetens tjänst**.
+
+#### 🔄 Praktiska Vanor för Digitalt Förvaltarskap
+- **Rensa i Molnet**: Ta regelbundet bort onödiga filer, e-postmeddelanden och media som lagras online för att minska energianvändningen i datacenter.
+- **Arkivera AI-konversationer**: Behåll endast meningsfulla utbyten; radera eller exportera resten för att bevara klarhet och minimera lagringens påverkan.
+- **Medveten App-användning**: Avinstallera appar du inte använder, granska notisinställningar och begränsa passiv scrollning.
+- **Digitala Sabbater**: Avsätt avsiktlig tid utan skärmar för att återknyta till naturen, relationer eller reflekterande praktiker.
+- **Syftesdrivet Användande**: Fråga dig själv innan du använder ett verktyg eller en plattform: *“Hjälper detta mig att leva mina värderingar?”*
+
+#### 🌱 Varför Det Är Viktigt
+- **Ekologisk Påverkan**: Varje lagrad byte har ett koldioxidavtryck – digitalt skräp bidrar till verkliga utsläpp.
+- **Mentalt Välmående**: Att rensa minskar stress, ökar fokus och skapar utrymme för djupare uppmärksamhet.
+- **Etisk Samklang**: Medveten digital användning speglar integritet, återhållsamhet och respekt för planetens gemensamma system.
+
+Digitalt förvaltarskap gör vardagliga onlinevanor till uttryck för **globala värderingar**, där personlig disciplin kopplas till systemisk förändring.
+
+> 🧭 *“Hur vi använder den osynliga världen av data formar den synliga värld vi lever i.”*
+
+
 ## 7. Att Mäta Effekten av Globalt Medborgarskap
 
 Att följa upp framsteg hjälper oss att förbättra metoder och visa på värdet:

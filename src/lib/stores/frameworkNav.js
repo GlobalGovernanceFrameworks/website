@@ -74,12 +74,12 @@ const initialNav = [
           { titleKey: 'framework.docs.nav.implementationRural', path: '/frameworks/docs/implementation/rural', planned: true },
           { titleKey: 'framework.docs.nav.implementationSpiritual', path: '/frameworks/docs/implementation/spiritual', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationYouthGovernance', path: '/frameworks/docs/implementation/youth', planned: true },
+          { titleKey: 'framework.docs.nav.implementationGlobalCitizenship', path: '/frameworks/global-citizenship/full-framework', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationEthicsRights', path: '/frameworks/docs/implementation/ethics', status: 'review' },
           { 
             titleKey: 'framework.docs.nav.implementationAging', 
             path: '/frameworks/docs/implementation/aging', 
-            status: 'ready',
-            version: 'v1.0'
+            status: 'review',
           }
         ]
       },

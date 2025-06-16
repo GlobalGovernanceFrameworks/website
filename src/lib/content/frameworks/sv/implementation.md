@@ -155,6 +155,7 @@ Det globala styrningsramverket är organiserat i fem distinkta nivåer, som var 
 * [Landsbygdsutveckling](/frameworks/docs/implementation/rural) (Planerad)
 * [Religiös och andlig dialog](/frameworks/docs/implementation/spiritual) (Under granskning)
 * [Ungdoms- och generationsstyrning](/frameworks/docs/implementation/youth) (Planerad)
+* [Globalt medborgarskapsarbete](/frameworks/global-citizenship/full-framework) (Under granskning)
 * [Global etik och mänskliga rättigheter](/frameworks/docs/implementation/ethics) (Under granskning)
 * [Jämställdhet och HBTQ+-rättigheter](/frameworks/docs/implementation/gender) (Planerad)
 * [Åldrande befolkningsstöd](/frameworks/docs/implementation/aging) (Under granskning)

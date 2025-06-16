@@ -498,6 +498,27 @@ Technology plays a crucial role in enabling global citizenship but brings import
 - **Transparent Governance**: Support democratic oversight of digital platforms
 - **Diverse Representation**: Ensure multiple perspectives shape technology development
 
+### 🌐 Digital Stewardship Practices  
+*Aligning digital habits with global values*
+
+Global citizens are not just users of technology—they are **stewards** of the digital ecosystem. This means acting with awareness of the environmental, psychological, and ethical impacts of our digital lives. The growing energy demands of cloud infrastructure, coupled with the cognitive strain of information overload, call for a new kind of responsibility: **digital minimalism in service of planetary flourishing**.
+
+#### 🔄 Practical Habits of Digital Stewardship
+- **Clean Your Cloud**: Regularly delete unnecessary files, emails, and media stored online to reduce energy use in data centers.
+- **Archive AI Conversations**: Keep only meaningful exchanges; delete or export the rest to maintain clarity and minimize storage impact.
+- **Mindful App Usage**: Uninstall unused applications, review notification settings, and limit passive scrolling.
+- **Digital Sabbaths**: Designate intentional periods without screens to reconnect with nature, relationships, or reflective practices.
+- **Purpose-Driven Engagement**: Before using a tool or platform, ask: *“Is this helping me live my values?”*
+
+#### 🌱 Why It Matters
+- **Ecological Impact**: Every byte stored has a carbon cost—digital clutter contributes to real-world emissions.
+- **Mental Wellbeing**: Decluttering reduces overwhelm, increases focus, and creates space for deeper attention.
+- **Ethical Alignment**: Conscious digital use reflects integrity, non-excess, and respect for shared planetary systems.
+
+Digital stewardship turns everyday online habits into expressions of **global ethics**, linking personal discipline with systemic change.
+
+> 🧭 *“How we use the invisible world of data shapes the visible world we live in.”*
+
 ## 7. Measuring Global Citizenship Impact
 
 Tracking progress helps refine approaches and demonstrate value:
@@ -718,8 +739,7 @@ This California-based pilot provided $500 monthly to selected residents for 24 m
 - Greater parental involvement in children's education
 - Higher rates of community leadership and civic involvement
 
-> **Implementation Resources**
-> For detailed implementation guidance including funding models, pilot program designs, and measurement frameworks, see **Appendix B: AUBI Implementation Playbook**. These resources provide actionable blueprints for communities, regions, and organizations interested in implementing AUBI to support global citizenship.
+By providing economic security, AUBI creates the conditions for widespread participation in civic life. To explore the detailed mechanics of this approach, including funding models, pilot templates, and implementation tools, please see our complete [Financial Systems & AUBI Framework](/frameworks/docs/implementation/financial-systems)
 
 ## 14. Future-Proofing Global Citizenship
 

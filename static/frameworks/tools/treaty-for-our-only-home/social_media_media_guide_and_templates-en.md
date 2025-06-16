@@ -1,9 +1,3 @@
----
-title: Social Media Templates
-section: social-media-templates
-revision: Version 1.0 (2025-06-15)
----
-
 # Social Media Templates: Treaty for Our Only Home
 
 ## Instructions for Use
@@ -15,15 +9,7 @@ Use these ready-to-post templates for a quick and impactful share. Each template
 ---
 
 ## Template 1: On Gridlock & UN Reform
-*(To be used with this graphic about UN Security Council veto reform)*
-
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-UN-reform.png" target="_blank" rel="noopener noreferrer">
-  <img src="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-UN-reform.png" 
-       alt="On Gridlock & UN Reform" 
-       style="width: 50%; max-width: 400px; cursor: pointer;">
-</a>
-
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-UN-reform.png" target="_blank" rel="noopener noreferrer">[ Download High-Resolution Image (PNG) ]</a>
+*(To be used with the graphic about UN Security Council veto reform)*
 
 ### For LinkedIn / Facebook:
 
@@ -50,15 +36,7 @@ Read the blueprint: https://globalgovernanceframework.org
 ---
 
 ## Template 2: On Climate Action & Ecocide Law
-*(To be used with this graphic about Ecocide)*
-
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-climate-action.png" target="_blank" rel="noopener noreferrer">
-  <img src="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-climate-action.png" 
-       alt="On Climate Action & Ecocide Law" 
-       style="width: 50%; max-width: 400px; cursor: pointer;">
-</a>
-
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-climate-action.png" target="_blank" rel="noopener noreferrer">[ Download High-Resolution Image (PNG) ]</a>
+*(To be used with the graphic about Ecocide)*
 
 ### For LinkedIn / Facebook:
 
@@ -85,15 +63,7 @@ Learn how: https://globalgovernanceframework.org
 ---
 
 ## Template 3: On Fiscal Responsibility & Climate Finance
-*(To be used with this graphic about the cost of inaction)*
-
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-fiscal-responsibility.png" target="_blank" rel="noopener noreferrer">
-  <img src="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-fiscal-responsibility.png" 
-       alt="On Fiscal Responsibility & Climate Finance" 
-       style="width: 50%; max-width: 400px; cursor: pointer;">
-</a>
-
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-fiscal-responsibility.png" target="_blank" rel="noopener noreferrer">[ Download High-Resolution Image (PNG) ]</a>
+*(To be used with the graphic about the cost of inaction)*
 
 ### For LinkedIn / Facebook:
 
@@ -123,14 +93,6 @@ Learn more: https://globalgovernanceframework.org
 
 ## Template 4: On Democratic Legitimacy
 *(To be used with this graphic about the Global Citizens' Initiative)*
-
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-democratic-legitimacy.png" target="_blank" rel="noopener noreferrer">
-  <img src="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-democratic-legitimacy.png" 
-       alt="On Democratic Legitimacy" 
-       style="width: 50%; max-width: 400px; cursor: pointer;">
-</a>
-
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-democratic-legitimacy.png" target="_blank" rel="noopener noreferrer">[ Download High-Resolution Image (PNG) ]</a>
 
 ### For LinkedIn / Facebook:
 

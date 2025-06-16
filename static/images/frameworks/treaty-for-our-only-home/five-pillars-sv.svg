@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 800"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .pillar-number {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        fill: #00C49A;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .pillar-name {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .pillar-function {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #00C49A;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .center-title {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .pillar-rect {
+        fill: none;
+        stroke: #0A2540;
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .center-circle {
+        fill: none;
+        stroke: #00C49A;
+        stroke-width: 3;
+      }
+      .connection-line {
+        stroke: #0A2540;
+        stroke-width: 1.5;
+        opacity: 0.6;
+      }
+      .synergy-arrow {
+        stroke: #00C49A;
+        stroke-width: 2;
+        fill: none;
+        opacity: 0.7;
+        stroke-dasharray: 4,4;
+      }
+    </style>
+    <!-- Arrowhead marker for synergy arrows -->
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#00C49A"
+         opacity="0.7" />
+    </marker>
+  </defs>
+  
+  <!-- Connection lines from center to each pillar -->
+  <line x1="400" y1="300" x2="400" y2="200" class="connection-line"/>
+  <line x1="495" y1="369" x2="568" y2="326" class="connection-line"/>
+  <line x1="459" y1="481" x2="541" y2="554" class="connection-line"/>
+  <line x1="341" y1="481" x2="259" y2="554" class="connection-line"/>
+  <line x1="305" y1="369" x2="232" y2="326" class="connection-line"/>
+  
+  <!-- Synergy arrows (circular flow) -->
+  <path d="m 420.80378,201.60757 c 32.52955,54.51536 47.06383,80.53427 145.7305,104.53427" class="synergy-arrow" marker-end="url(#arrowhead)"/>
+  <path d="m 593.95745,365.71631 c -51.81561,51.80142 -66.63121,102.36407 -52.01182,188.56738" class="synergy-arrow" marker-end="url(#arrowhead)"/>
+  <path d="m 480.47991,576.97872 c -57.12057,-19.75413 -94.38298,-22.59101 -161.90544,3.78251" class="synergy-arrow" marker-end="url(#arrowhead)"/>
+  <path d="M 258.05437,553.33806 C 268.89125,486.04728 250.29314,419.40898 206.98818,365.71631" class="synergy-arrow" marker-end="url(#arrowhead)"/>
+  <path d="M 232.52009,308.0331 C 312.27423,291.59811 345.72104,268.41608 377.30496,200.66194" class="synergy-arrow" marker-end="url(#arrowhead)"/>
+  
+  <!-- Center Element -->
+  <circle cx="400" cy="400" r="100" class="center-circle"/>
+  <text x="400" y="390" class="center-title">Polykrisens</text>
+  <text x="400" y="410" class="center-title">svar</text>
+  
+  <!-- Pillar 1: Reformera centrala mellanstatliga organ -->
+  <rect x="320.76309" y="120.1542" width="160.47978" height="79.691597" class="pillar-rect"/>
+  <text x="400" y="135" class="pillar-number">Pelare 1</text>
+  <text x="400" y="152" class="pillar-name">Reformera centrala</text>
+  <text x="400" y="168" class="pillar-name">mellanstatliga organ</text>
+  <text x="400" y="185" class="pillar-function">(Låser upp)</text>
+  
+  <!-- Pillar 2: Integrera nya aktörer och röster -->
+  <rect x="568" y="286" width="120" height="80" class="pillar-rect"/>
+  <text x="628" y="301" class="pillar-number">Pelare 2</text>
+  <text x="628" y="318" class="pillar-name">Integrera nya</text>
+  <text x="628" y="334" class="pillar-name">aktörer &amp; röster</text>
+  <text x="628" y="351" class="pillar-function">(Legitimerar)</text>
+  
+  <!-- Pillar 3: Stärka global lag och verkställighet -->
+  <rect x="483.03867" y="554.06854" width="137.24805" height="79.86293" class="pillar-rect"/>
+  <text x="551" y="569" class="pillar-number">Pelare 3</text>
+  <text x="551" y="586" class="pillar-name">Stärka global lag</text>
+  <text x="551" y="602" class="pillar-name">&amp; verkställighet</text>
+  <text x="551" y="619" class="pillar-function">(Verkställer)</text>
+  
+  <!-- Pillar 4: Nyskapa finansiering och resurser -->
+  <rect x="181.70305" y="554.05829" width="134.5939" height="79.883415" class="pillar-rect"/>
+  <text x="249" y="569" class="pillar-number">Pelare 4</text>
+  <text x="249" y="586" class="pillar-name">Nyskapa finansiering</text>
+  <text x="249" y="602" class="pillar-name">&amp; resurser</text>
+  <text x="249" y="619" class="pillar-function">(Driver)</text>
+  
+  <!-- Pillar 5: Bygga etisk och epistemisk infrastruktur -->
+  <rect x="67.099648" y="286.16238" width="162.80368" height="79.675179" class="pillar-rect"/>
+  <text x="148" y="301" class="pillar-number">Pelare 5</text>
+  <text x="148" y="318" class="pillar-name">Bygga etisk &amp;</text>
+  <text x="148" y="334" class="pillar-name">epistemisk infrastruktur</text>
+  <text x="148" y="351" class="pillar-function">(Vägleder)</text>
+</svg>

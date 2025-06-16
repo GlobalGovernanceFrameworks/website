@@ -121,7 +121,7 @@
   <div class="container">
     <div class="grid">
       <div>
-        <h3>Global Governance Framework</h3>
+        <h3>Global Governance Frameworks</h3>
         <p>
           Developing interoperable systems and operating models for global governance that respect local autonomy.
         </p>
@@ -173,7 +173,7 @@
       </div>
       
       <div class="flex items-center space-x-2">
-        <img src="{base}/logo.svg" alt="Global Governance Framework" class="h-6 w-6" />
+        <img src="{base}/logo.svg" alt="Global Governance Frameworks" class="h-6 w-6" />
         <span class="text-sm">Building frameworks for ethical global governance</span>
       </div>
     </div>

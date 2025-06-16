@@ -194,7 +194,7 @@ This Treaty is designed not just to be read, but to be wielded. The following st
 
 **Integration**: Connects with all five pillars and implementation strategies
 
-**Access**: [Global Stewardship Advocacy Kit](/frameworks/tools/treaty-for-our-only-home/advocacy-kit-en.zip)
+**Access**: [Global Stewardship Advocacy Kit](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-en.zip)
 
 ### For Policymakers, Diplomats, and Negotiators
 
@@ -285,7 +285,7 @@ This Treaty is designed not just to be read, but to be wielded. The following st
 4. Contact globalgovernanceframework@gmail.com with subject "Government Partnership"
 
 **Civil Society & Advocacy Organizations**:
-1. Download the [Global Stewardship Advocacy Kit](/frameworks/tools/treaty-for-our-only-home/advocacy-kit-en.zip)
+1. Download the [Global Stewardship Advocacy Kit](/frameworks/tools/treaty-for-our-only-home/global-stewardship-advocacy-kit-en.zip)
 2. Review the [Implementation Strategies](/frameworks/docs/implementation/treaty-for-our-only-home#04-implementation-strategies)
 3. Join the Global Stewardship Alliance network
 4. Contact globalgovernanceframework@gmail.com with subject "Alliance Partnership"

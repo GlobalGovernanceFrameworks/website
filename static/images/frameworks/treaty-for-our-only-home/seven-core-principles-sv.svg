@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .principle-text {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .center-title {
+        font-family: 'Inter', 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        fill: #0A2540;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+      .principle-circle {
+        fill: none;
+        stroke: #0A2540;
+        stroke-width: 2;
+      }
+      .center-circle {
+        fill: none;
+        stroke: #00C49A;
+        stroke-width: 3;
+      }
+      .connection-line {
+        stroke: #0A2540;
+        stroke-width: 1;
+        opacity: 0.4;
+      }
+      .accent-dot {
+        fill: #00C49A;
+      }
+    </style>
+  </defs>
+  
+  <!-- Center circle -->
+  <circle cx="400" cy="400" r="80" class="center-circle"/>
+  
+  <!-- Center title -->
+  <text x="400" y="390" class="center-title">Kärnprinciperna</text>
+  
+  <!-- Principle 1: Subsidiaritet och policentricitet -->
+  <circle cx="400" cy="175" r="70" class="principle-circle"/>
+  <circle cx="400" cy="175" r="3" class="accent-dot"/>
+  <text x="400" y="165" class="principle-text">Subsidiaritet &amp;</text>
+  <text x="400" y="185" class="principle-text">policentricitet</text>
+
+  <!-- Principle 2: Demokratisk legitimitet och inkludering -->
+  <circle cx="576" cy="260" r="70" class="principle-circle"/>
+  <circle cx="576" cy="260" r="3" class="accent-dot"/>
+  <text x="576" y="245" class="principle-text">Demokratisk</text>
+  <text x="576" y="260" class="principle-text">legitimitet &amp;</text>
+  <text x="576" y="275" class="principle-text">inkludering</text>
+
+  <!-- Principle 3: Ansvarighet och rättsstatsprincipen -->
+  <circle cx="619" cy="450" r="70" class="principle-circle"/>
+  <circle cx="619" cy="450" r="3" class="accent-dot"/>
+  <text x="619" y="440" class="principle-text">Ansvarighet &amp;</text>
+  <text x="619" y="460" class="principle-text">rättsstatsprincipen</text>
+
+  <!-- Principle 4: Smidighet och anpassningsförmåga -->
+  <circle cx="498" cy="603" r="70" class="principle-circle"/>
+  <circle cx="498" cy="603" r="3" class="accent-dot"/>
+  <text x="498" y="593" class="principle-text">Smidighet &amp;</text>
+  <text x="498" y="613" class="principle-text">anpassningsförmåga</text>
+
+  <!-- Principle 5: Ekologisk integritet och intergenerationell rättvisa -->
+  <circle cx="302" cy="603" r="70" class="principle-circle"/>
+  <circle cx="302" cy="603" r="3" class="accent-dot"/>
+  <text x="302" y="588" class="principle-text">Ekologisk integritet</text>
+  <text x="302" y="603" class="principle-text">&amp; intergenerationell</text>
+  <text x="302" y="618" class="principle-text">rättvisa</text>
+
+  <!-- Principle 6: Etisk och epistemisk integritet -->
+  <circle cx="181" cy="450" r="70" class="principle-circle"/>
+  <circle cx="181" cy="450" r="3" class="accent-dot"/>
+  <text x="181" y="435" class="principle-text">Etisk &amp;</text>
+  <text x="181" y="450" class="principle-text">epistemisk</text>
+  <text x="181" y="465" class="principle-text">integritet</text>
+
+  <!-- Principle 7: Minimal livskraftig styrning -->
+  <circle cx="224" cy="260" r="70" class="principle-circle"/>
+  <circle cx="224" cy="260" r="3" class="accent-dot"/>
+  <text x="224" y="250" class="principle-text">Minimal livskraftig</text>
+  <text x="224" y="270" class="principle-text">styrning</text>
+
+  <!-- Connection lines from center to each principle -->
+  <line x1="400" y1="320" x2="400" y2="245" class="connection-line"/>
+  <line x1="463" y1="350" x2="521" y2="304" class="connection-line"/>
+  <line x1="478" y1="418" x2="551" y2="434" class="connection-line"/>
+  <line x1="435" y1="472" x2="468" y2="540" class="connection-line"/>
+  <line x1="365" y1="472" x2="332" y2="540" class="connection-line"/>
+  <line x1="322" y1="418" x2="249" y2="434" class="connection-line"/>
+  <line x1="337" y1="350" x2="279" y2="304" class="connection-line"/>
+
+  <!-- Connecting lines between adjacent principles -->
+  <line x1="463" y1="205" x2="513" y2="230" class="connection-line"/>
+  <line x1="591" y1="328" x2="604" y2="382" class="connection-line"/>
+  <line x1="576" y1="505" x2="541" y2="548" class="connection-line"/>
+  <line x1="428" y1="603" x2="372" y2="603" class="connection-line"/>
+  <line x1="259" y1="548" x2="224" y2="505" class="connection-line"/>
+  <line x1="196" y1="382" x2="209" y2="328" class="connection-line"/>
+  <line x1="287" y1="230" x2="337" y2="205" class="connection-line"/>
+</svg>

@@ -2,10 +2,10 @@
   "header": {
     "home": "Home",
     "about": "About",
-    "framework": "Framework",
+    "framework": "Frameworks",
     "downloads": "Downloads",
     "contact": "Contact",
-    "frameworkOverview": "Framework Introduction",
+    "frameworkOverview": "Frameworks Introduction",
     "frameworkDocs": "Overview",
     "frameworkPrinciples": "Core Principles",
     "frameworkGlobalCitizenship": "Global Citizenship",
@@ -19,7 +19,7 @@
     "frameworkGlossary": "Glossary"
   },
   "footer": {
-    "copyright": "© 2025 Global Governance Framework",
+    "copyright": "© 2025 Global Governance Frameworks",
     "rights": "All Rights Reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
