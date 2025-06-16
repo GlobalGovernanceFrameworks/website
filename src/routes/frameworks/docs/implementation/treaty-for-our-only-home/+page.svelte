@@ -7,6 +7,7 @@
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -68,15 +69,19 @@
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
-      
-      // Scroll to top of the content area
-      const contentElement = document.querySelector('.content');
-      if (contentElement) {
-        contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else {
-        // Fallback to scrolling to top of page
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -207,7 +212,8 @@
         'Monitoring & Evaluation': 'Monitoring',
         'The Vision Realized': 'Conclusion',
         'FAQ & Challenges': 'FAQ',
-        'Glossary': 'Glossary'
+        'Glossary': 'Glossary',
+        'Executive Summary for the Skeptic': 'For Skeptics'
       },
       sv: {
         'Polykrisens svar': 'Introduktion',
@@ -217,7 +223,8 @@
         'Övervakning & utvärdering': 'Övervakning',
         'Visionen förverkligad': 'Slutsats',
         'Vanliga frågor & utmaningar': 'FAQ',
-        'Ordlista': 'Ordlista'
+        'Ordlista': 'Ordlista',
+        'Sammanfattning för skeptiker': 'För skeptiker'
       }
     };
     
@@ -248,6 +255,11 @@
   let isDropdownOpen = false;
   let isNavDropdownOpen = false;
 
+  // Accordion states for section categories
+  let foundationOpen = true; // Start with foundation open
+  let coreFrameworkOpen = false;
+  let resourcesOpen = false;
+
   function toggleDropdown() {
     isDropdownOpen = !isDropdownOpen;
     // Close the other dropdown if it's open
@@ -258,6 +270,18 @@
     isNavDropdownOpen = !isNavDropdownOpen;
     // Close the other dropdown if it's open
     if (isNavDropdownOpen) isDropdownOpen = false;
+  }
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleCoreFramework() {
+    coreFrameworkOpen = !coreFrameworkOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
   }
 
   // Close dropdowns when clicking outside
@@ -284,6 +308,14 @@
       };
     }
   });
+
+  // Get the core framework sections (01-06)
+  $: coreFrameworkSections = Object.keys(data.sections || {}).filter(section => 
+    section.match(/^\d{2}-/) && !['07-faq-and-challenges', '08-glossary'].includes(section)
+  );
+
+  // Check if this is a core framework section
+  $: isCoreSection = activeSection.match(/^\d{2}-/) && !['07-faq-and-challenges', '08-glossary'].includes(activeSection);
 </script>
 
 <svelte:window on:click={handleClickOutside}/>
@@ -316,75 +348,134 @@
       <!-- Sub-navigation for treaty sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <!-- Group 1: Introductory sections -->
-          <div class="section-group">
-            <div class="section-label">
-              <span class="label-text">{texts.sectionLabels.introductory}</span>
-            </div>
-            <ul>
-              <li class:active={activeSection === 'index'}>
-                <button on:click={() => setActiveSection('index')}>
-                  {getSectionTitle('index')}
-                </button>
-              </li>
-              <li class:active={activeSection === 'at-a-glance'}>
-                <button on:click={() => setActiveSection('at-a-glance')}>
-                  {getSectionTitle('at-a-glance')}
-                </button>
-              </li>
-              <li class:active={activeSection === 'executive-summary-for-the-skeptic'}>
-                <button on:click={() => setActiveSection('executive-summary-for-the-skeptic')}>
-                  {getShortSectionTitle('executive-summary-for-the-skeptic')}
-                </button>
-              </li>
-            </ul>
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">Overview</span>
+            </button>
           </div>
 
-          <!-- Group 2: Core Framework sections -->
-          <div class="section-group">
-            <div class="section-label">
-              <span class="label-text">{texts.sectionLabels.framework}</span>
-            </div>
-            <ul class="framework-sections">
-              {#each Object.keys(data.sections).filter(section => 
-                section.match(/^\d{2}-/) && !['index', 'at-a-glance', 'executive-summary-for-the-skeptic', '07-faq-and-challenges', '08-glossary'].includes(section)
-              ) as section}
-                <li class:active={activeSection === section}>
-                  <button on:click={() => setActiveSection(section)}>
-                    {getShortSectionTitle(section)}
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={['at-a-glance', 'executive-summary-for-the-skeptic'].some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">📚</span>
+              <span class="accordion-title">Foundation</span>
+              <span class="section-count">(2)</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'at-a-glance'}
+                  on:click={() => setActiveSection('at-a-glance')}
+                >
+                  <span class="nav-icon">⚡</span>
+                  <span class="nav-title">{getSectionTitle('at-a-glance')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'executive-summary-for-the-skeptic'}
+                  on:click={() => setActiveSection('executive-summary-for-the-skeptic')}
+                >
+                  <span class="nav-icon">🤔</span>
+                  <span class="nav-title">{getShortSectionTitle('executive-summary-for-the-skeptic')}</span>
+                </button>
+              </div>
+            {/if}
+          </div>
+
+          <!-- Core Framework Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={coreFrameworkOpen}
+              class:has-active={coreFrameworkSections.some(section => activeSection === section)}
+              on:click={toggleCoreFramework}
+            >
+              <span class="accordion-icon">🏛️</span>
+              <span class="accordion-title">Core Framework</span>
+              <span class="section-count">({coreFrameworkSections.length})</span>
+              <span class="toggle-arrow" class:rotated={coreFrameworkOpen}>▼</span>
+            </button>
+            {#if coreFrameworkOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
-                </li>
-              {/each}
-            </ul>
+                {/each}
+              </div>
+            {/if}
           </div>
 
-         <!-- Group 3: Resources -->
-        <div class="section-group">
-          <div class="section-label">
-            <span class="label-text">{texts.sectionLabels.resources}</span>
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">Resources</span>
+              <span class="section-count">(3)</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === '07-faq-and-challenges'}
+                  on:click={() => setActiveSection('07-faq-and-challenges')}
+                >
+                  <span class="nav-icon">❓</span>
+                  <span class="nav-title">{getSectionTitle('07-faq-and-challenges')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === '08-glossary'}
+                  on:click={() => setActiveSection('08-glossary')}
+                >
+                  <span class="nav-icon">📖</span>
+                  <span class="nav-title">{getSectionTitle('08-glossary')}</span>
+                </button>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'social-media-templates'}
+                  on:click={() => setActiveSection('social-media-templates')}
+                >
+                  <span class="nav-icon">📱</span>
+                  <span class="nav-title">{getSectionTitle('social-media-templates')}</span>
+                </button>
+              </div>
+            {/if}
           </div>
-          <ul>
-            <li class:active={activeSection === '07-faq-and-challenges'}>
-              <button on:click={() => setActiveSection('07-faq-and-challenges')}>
-                <span class="resource-icon">❓</span>
-                {getSectionTitle('07-faq-and-challenges')}
-              </button>
-            </li>
-            <li class:active={activeSection === '08-glossary'}>
-              <button on:click={() => setActiveSection('08-glossary')}>
-                <span class="resource-icon">📖</span>
-                {getSectionTitle('08-glossary')}
-              </button>
-            </li>
-            <li class:active={activeSection === 'social-media-templates'}>
-              <button on:click={() => setActiveSection('social-media-templates')}>
-                <span class="resource-icon">📱</span>
-                {getSectionTitle('social-media-templates')}
-              </button>
-            </li>
-          </ul>
         </div>
+      {/if}
 
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((parseInt(activeSection.substring(0, 2)) / 6) * 100)}%"></div>
+          </div>
+          <span class="progress-text">Section {parseInt(activeSection.substring(0, 2))} of 6</span>
         </div>
       {/if}
 
@@ -407,6 +498,29 @@
               <button class="primary-btn" on:click={() => setActiveSection('01-introduction')}>
                 Continue to Full Treaty <span class="arrow-icon">→</span>
               </button>
+            </div>
+          {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if parseInt(activeSection.substring(0, 2)) > 1}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const prevSection = String(parseInt(activeSection.substring(0, 2)) - 1).padStart(2, '0') + activeSection.substring(2);
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if parseInt(activeSection.substring(0, 2)) < 6}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const nextSection = String(parseInt(activeSection.substring(0, 2)) + 1).padStart(2, '0') + activeSection.substring(2);
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
             </div>
           {/if}
         </div>
@@ -457,131 +571,201 @@
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem; /* Adds space above when scrolled to */
   }
 
   /* Section Navigation */
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
 
-  .section-group {
-    margin-bottom: 1.5rem;
+  .nav-section {
+    margin-bottom: 0.5rem;
   }
 
-  .section-group:last-child {
-    margin-bottom: 0;
-    padding-bottom: 1rem;
-  }
-
-  .section-label {
-    position: relative;
-    margin-bottom: 0.75rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .section-label::before,
-  .section-label::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(to right, var(--treaty-secondary), var(--treaty-accent));
-  }
-
-  .section-label::before {
-    margin-right: 1rem;
-  }
-
-  .section-label::after {
-    margin-left: 1rem;
-  }
-
-  .label-text {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--treaty-primary);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-    padding: 0.25rem 0.75rem;
-    background-color: white;
-    border: 1px solid var(--treaty-accent);
-    border-radius: 1rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 0.5rem;
-  }
-
-  .section-nav li {
-    margin: 0;
-  }
-
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
-    cursor: pointer;
-    color: #4b5563;
-    transition: all 0.2s;
-    white-space: nowrap;
+    overflow: hidden;
+    background: white;
   }
 
-  .section-nav li.active button {
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
+  }
+
+  .accordion-header:hover {
+    background-color: rgba(0, 196, 154, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(10, 37, 64, 0.1);
+    color: var(--treaty-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(0, 196, 154, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(0, 196, 154, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
     background-color: var(--treaty-primary);
     color: white;
-    border-color: var(--treaty-primary);
+    font-weight: 600;
   }
 
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
-  }
-
-  .section-nav li.active button:hover {
+  .nav-item.active:hover {
     background-color: var(--treaty-secondary);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.1), rgba(0, 196, 154, 0.1));
+    border: 1px solid rgba(10, 37, 64, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--treaty-primary);
     color: white;
   }
 
-  .section-nav a {
-    color: #4b5563;
-    text-decoration: none;
-    transition: color 0.2s;
+  .subsection-item {
+    padding-left: 1.5rem;
   }
 
-  .section-nav a:hover {
-    color: var(--treaty-primary);
-  }
-
-  /* Resource icons */
-  .resource-icon {
+  .nav-icon {
     font-size: 1.1rem;
-    margin-right: 0.5rem;
-    display: inline-block;
-    width: 1.5rem;
-    text-align: center;
+    flex-shrink: 0;
   }
 
-  /* Update button styles to accommodate icons */
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.375rem;
-    cursor: pointer;
-    color: #4b5563;
-    transition: all 0.2s;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(10, 37, 64, 0.1);
+    color: var(--treaty-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(10, 37, 64, 0.1), rgba(0, 196, 154, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--treaty-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--treaty-primary), var(--treaty-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--treaty-primary);
+    font-weight: 500;
   }
 
   /* Treaty guide card */
@@ -673,6 +857,39 @@
     margin-top: 3rem;
     padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
+  }
+
+  /* Section navigation for core framework sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--treaty-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--treaty-secondary);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
   }
 
   .download-icon,
@@ -1119,25 +1336,22 @@
       grid-template-columns: 1fr;
     }
 
-    .section-nav ul {
-      flex-direction: column;
-      gap: 0.5rem;
+    .section-nav {
+      padding: 0.75rem;
     }
-    
-    .section-nav button {
-      width: 100%;
-      text-align: left;
-      padding: 0.75rem 1rem;
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
     }
-    
-    .label-text {
-      font-size: 0.8rem;
-      padding: 0.2rem 0.6rem;
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
     }
-    
-    .section-label::before,
-    .section-label::after {
-      margin: 0 0.5rem;
+
+    .subsection-item {
+      padding-left: 1rem;
     }
 
     .card-content {
@@ -1157,6 +1371,15 @@
     }
    
     .guide-navigation button {
+      width: 100%;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
       width: 100%;
     }
   }

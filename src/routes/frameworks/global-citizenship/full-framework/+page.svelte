@@ -287,7 +287,7 @@
   // Get the total number of core framework sections (01-18)
   $: coreFrameworkSections = Object.keys(data.sections || {}).filter(section => 
     section.match(/^\d{2}-/) && !['global-citizenship-2-page-overview'].includes(section)
-  );
+  ).sort();
 
   // Check if this is a core framework section
   $: isCoreSection = activeSection.match(/^\d{2}-/);
@@ -486,18 +486,20 @@
           <!-- Section navigation at bottom of core sections -->
           {#if isCoreSection && !isPrintMode}
             <div class="section-navigation">
-              {#if parseInt(activeSection.substring(0, 2)) > 1}
+              {#if coreFrameworkSections.indexOf(activeSection) > 0}
                 <button class="nav-btn prev-btn" on:click={() => {
-                  const prevSection = String(parseInt(activeSection.substring(0, 2)) - 1).padStart(2, '0') + activeSection.substring(2);
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const prevSection = coreFrameworkSections[currentIndex - 1];
                   setActiveSection(prevSection);
                 }}>
                   ← Previous Section
                 </button>
               {/if}
               
-              {#if parseInt(activeSection.substring(0, 2)) < 18}
+              {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
                 <button class="nav-btn next-btn" on:click={() => {
-                  const nextSection = String(parseInt(activeSection.substring(0, 2)) + 1).padStart(2, '0') + activeSection.substring(2);
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const nextSection = coreFrameworkSections[currentIndex + 1];
                   setActiveSection(nextSection);
                 }}>
                   Next Section →

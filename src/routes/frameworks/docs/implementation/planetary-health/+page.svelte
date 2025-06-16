@@ -8,6 +8,7 @@
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import ConstellationMap from '$lib/components/ConstellationMap.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -62,6 +63,19 @@
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -122,11 +136,11 @@
   function getSectionTitle(section) {
     const titles = {
       en: {
-        // Core framework sections
+        // Entry and overview sections
         'index': "Overview",
         'planetary-health-accord-lite': "Planetary Health Accord Lite",
         
-        // Main framework sections (00-17)
+        // Core framework sections (00-17)
         '00-manifesto': "Manifesto: The Planetary Health Accord",
         '01-governance-structure': "Governance Structure",
         '02-technology-data-infrastructure': "Technology and Data Infrastructure",
@@ -150,11 +164,11 @@
         'childrens-health-rights-comic': "Children's Health Rights Comic"
       },
       sv: {
-        // Core framework sections (Swedish)
+        // Entry and overview sections (Swedish)
         'index': "Översikt",
         'planetary-health-accord-lite': "Planetär Hälsa Accord Lite",
         
-        // Main framework sections (Swedish)
+        // Core framework sections (Swedish)
         '00-manifesto': "Manifest: Det Planetära Hälsa Accordet",
         '01-governance-structure': "Styrningsstruktur",
         '02-technology-data-infrastructure': "Teknologi och Data Infrastruktur",
@@ -182,6 +196,34 @@
     return (titles[currentLocale] || titles.en)[section] || section;
   }
 
+  // Function to get shortened section titles for navigation
+  function getShortSectionTitle(section) {
+    const fullTitle = getSectionTitle(section).replace(/^\d{2}-/, '').replace(/^Manifesto: /, '');
+    
+    const shortTitles = {
+      'The Planetary Health Accord': 'Manifesto',
+      'Governance Structure': 'Governance',
+      'Technology and Data Infrastructure': 'Technology',
+      'Financing Mechanisms': 'Financing',
+      'Medical Innovation and Access': 'Innovation',
+      'Pandemic and Climate-Health Preparedness': 'Preparedness',
+      'Community-Centered Healthcare Delivery': 'Community Care',
+      'Transparency and Anti-Corruption': 'Transparency',
+      'Health Literacy and Behavioral Change': 'Health Literacy',
+      'Borderless Health Rights': 'Health Rights',
+      'Ethical Technology Governance': 'Ethics',
+      'Implementation Roadmap': 'Implementation',
+      'Health in Conflict Zones': 'Conflict Zones',
+      'Global Knowledge Commons': 'Knowledge',
+      'Visual Architecture Map': 'Visual Map',
+      'Cross-Cutting Mechanisms': 'Mechanisms',
+      'Spiritual Framing': 'Spiritual',
+      'Conclusion': 'Conclusion'
+    };
+    
+    return shortTitles[fullTitle] || fullTitle;
+  }
+
   // Choose the right intro text based on the current locale
   $: intro = currentLocale === 'sv' ? introSv : introEn;
 
@@ -203,11 +245,17 @@
 
   // Check if the active section is the lite version
   $: isLiteActive = activeSection === 'planetary-health-accord-lite';
-  $: isSupplementaryActive = activeSection === 'childrens-health-rights-comic';
+  $: isSupplementaryActive = ['childrens-health-rights-comic'].includes(activeSection);
 
   // For handling dropdown states
   let isDropdownOpen = false;
   let isNavDropdownOpen = false;
+
+  // Accordion states for section categories
+  let foundationOpen = true; // Start with foundation open
+  let governanceOpen = false;
+  let implementationOpen = false;
+  let resourcesOpen = false;
 
   function toggleDropdown() {
     isDropdownOpen = !isDropdownOpen;
@@ -219,6 +267,22 @@
     isNavDropdownOpen = !isNavDropdownOpen;
     // Close the other dropdown if it's open
     if (isNavDropdownOpen) isDropdownOpen = false;
+  }
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleGovernance() {
+    governanceOpen = !governanceOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
   }
 
   // Close dropdowns when clicking outside
@@ -245,6 +309,14 @@
       };
     }
   });
+
+  // Get the total number of core framework sections (00-17)
+  $: coreFrameworkSections = Object.keys(data.sections || {}).filter(section => 
+    section.match(/^\d{2}-/) && !['planetary-health-accord-lite', 'childrens-health-rights-comic'].includes(section)
+  ).sort();
+
+  // Check if this is a core framework section
+  $: isCoreSection = activeSection.match(/^\d{2}-/);
 </script>
 
 <svelte:window on:click={handleClickOutside}/>
@@ -277,45 +349,149 @@
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            <!-- Overview -->
-            <li class:active={activeSection === 'index'}>
-              <button on:click={() => setActiveSection('index')}>
-                Overview
-              </button>
-            </li>
-            
-            <!-- Lite Version -->
-            <li class:active={activeSection === 'planetary-health-accord-lite'}>
-              <button on:click={() => setActiveSection('planetary-health-accord-lite')}>
-                Lite Version
-              </button>
-            </li>
-            
-            <!-- Core Framework sections (00-17) -->
-            {#each Object.keys(data.sections).filter(section => 
-              section.match(/^\d{2}-/) && !['index', 'planetary-health-accord-lite', 'childrens-health-rights-comic'].includes(section)
-            ) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getSectionTitle(section).replace(/^\d{2}-/, '').replace(/^Manifesto: /, '')}
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">Overview</span>
+            </button>
+          </div>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={['00-manifesto', '01-governance-structure', '02-technology-data-infrastructure'].some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">🏛️</span>
+              <span class="accordion-title">Foundation</span>
+              <span class="section-count">(3)</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each ['00-manifesto', '01-governance-structure', '02-technology-data-infrastructure'] as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Governance & Systems Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={governanceOpen}
+              class:has-active={coreFrameworkSections.slice(3, 11).some(section => activeSection === section)}
+              on:click={toggleGovernance}
+            >
+              <span class="accordion-icon">⚖️</span>
+              <span class="accordion-title">Governance & Systems</span>
+              <span class="section-count">({coreFrameworkSections.slice(3, 11).length})</span>
+              <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
+            </button>
+            {#if governanceOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(3, 11) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={coreFrameworkSections.slice(11).some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">Implementation</span>
+              <span class="section-count">({coreFrameworkSections.slice(11).length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(11) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive || isLiteActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">Resources</span>
+              <span class="section-count">(2)</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'planetary-health-accord-lite'}
+                  on:click={() => setActiveSection('planetary-health-accord-lite')}
+                >
+                  <span class="nav-icon">📋</span>
+                  <span class="nav-title">Lite Version</span>
                 </button>
-              </li>
-            {/each}
-            
-            <!-- Supplementary Materials dropdown -->
-            <li class="dropdown-li" class:active={isSupplementaryActive}>
-              <button class="dropdown-toggle">
-                Supplementary <span class="arrow-icon">▾</span>
-              </button>
-              <div class="dropdown-menu supplementary-dropdown">
-                <button class="dropdown-item" on:click={() => setActiveSection('childrens-health-rights-comic')}>
-                  <span class="supplement-icon">📚</span>
-                  <span class="supplement-title">Children's Health Rights Comic</span>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'childrens-health-rights-comic'}
+                  on:click={() => setActiveSection('childrens-health-rights-comic')}
+                >
+                  <span class="nav-icon">📚</span>
+                  <span class="nav-title">Children's Comic</span>
                 </button>
               </div>
-            </li>
-          </ul>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((parseInt(activeSection.substring(0, 2)) / 17) * 100)}%"></div>
+          </div>
+          <span class="progress-text">Section {parseInt(activeSection.substring(0, 2))} of 17</span>
         </div>
       {/if}
 
@@ -353,6 +529,31 @@
               </button>
             </div>
           {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if coreFrameworkSections.indexOf(activeSection) > 0}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const prevSection = coreFrameworkSections[currentIndex - 1];
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const nextSection = coreFrameworkSections[currentIndex + 1];
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
+            </div>
+          {/if}
         </div>
       {/each}
     {:else}
@@ -388,44 +589,204 @@
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
+
+  .nav-section {
     margin-bottom: 0.5rem;
   }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
-    cursor: pointer;
-    color: #4b5563;
-    transition: all 0.2s;
+    overflow: hidden;
+    background: white;
   }
-  
-  .section-nav li.active button {
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
+  }
+
+  .accordion-header:hover {
+    background-color: rgba(5, 150, 105, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(30, 58, 138, 0.1);
+    color: var(--health-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(5, 150, 105, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(5, 150, 105, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
     background-color: var(--health-primary);
     color: white;
-    border-color: var(--health-primary);
+    font-weight: 600;
   }
-  
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
+
+  .nav-item.active:hover {
+    background-color: var(--health-secondary);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.1), rgba(5, 150, 105, 0.1));
+    border: 1px solid rgba(30, 58, 138, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--health-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(30, 58, 138, 0.1);
+    color: var(--health-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Auto-expand accordion when section is active */
+  .accordion-header.has-active + .accordion-content {
+    display: block;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(30, 58, 138, 0.1), rgba(5, 150, 105, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--health-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--health-primary), var(--health-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--health-primary);
+    font-weight: 500;
   }
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem; /* Adds space above when scrolled to */
   }
 
   .documentation-container {
@@ -441,42 +802,24 @@
     .documentation-container {
       grid-template-columns: 1fr;
     }
-  }
-  
-  .sidebar {
-    border-right: 1px solid var(--health-primary);
-    padding-right: 1.5rem;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .sidebar a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #4b5563;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s;
-  }
-  
-  .sidebar a:hover {
-    color: var(--health-primary);
-    border-left-color: var(--health-primary);
-  }
-  
-  .sidebar a.active {
-    color: var(--health-primary);
-    border-left-color: var(--health-primary);
-    font-weight: 600;
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
   }
   
   .content {
@@ -862,7 +1205,7 @@
   .section-nav a:hover {
     color: var(--health-primary);
   }
- 
+
   /* Styles for navigation at bottom of guide */
   .guide-navigation {
     display: flex;
@@ -870,6 +1213,39 @@
     margin-top: 3rem;
     padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
+  }
+
+  /* Section navigation for core framework sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--health-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--health-secondary);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
   }
   
   /* Dropdown styles for supplementary materials */
@@ -1025,6 +1401,15 @@
     }
     
     .guide-navigation button {
+      width: 100%;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
       width: 100%;
     }
   }

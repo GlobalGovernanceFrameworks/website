@@ -8,6 +8,7 @@
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import ConstellationMap from '$lib/components/ConstellationMap.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -62,6 +63,19 @@
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -166,6 +180,50 @@
     return (titles[currentLocale] || titles.en)[section] || section;
   }
 
+  // Function to get shortened section titles for navigation
+  function getShortSectionTitle(section) {
+    const fullTitle = getSectionTitle(section).replace(/^\d{2}-/, '');
+    
+    const shortTitles = {
+      en: {
+        'Introduction': 'Introduction',
+        'Guiding Principles': 'Principles',
+        'Governance Structure': 'Structure',
+        'Core Pillars': 'Pillars',
+        'Policy Mechanisms': 'Policy',
+        'Stakeholder Engagement': 'Stakeholders',
+        'Financing the Framework': 'Financing',
+        'Implementation Roadmap': 'Roadmap',
+        'Metrics for Success': 'Metrics',
+        'Challenges & Solutions': 'Challenges',
+        'Implementation Tools': 'Tools',
+        'Conclusion': 'Conclusion',
+        'Technical Guide for Policymakers': 'Technical Guide',
+        'Stakeholder Implementation Guide': 'Stakeholder Guide',
+        'Climate Action Guide': 'Action Guide'
+      },
+      sv: {
+        'Introduktion': 'Introduktion',
+        'Vägledande Principer': 'Principer',
+        'Styrningsstruktur': 'Struktur',
+        'Kärnpelare': 'Pelare',
+        'Policymekanismer': 'Policy',
+        'Intressentengagemang': 'Intressenter',
+        'Finansiering av Ramverket': 'Finansiering',
+        'Implementeringsplan': 'Plan',
+        'Framgångsmått': 'Mått',
+        'Utmaningar & Lösningar': 'Utmaningar',
+        'Implementeringsverktyg': 'Verktyg',
+        'Slutsats': 'Slutsats',
+        'Teknisk Guide för Beslutsfattare': 'Teknisk Guide',
+        'Genomförandeguide för Intressenter': 'Intressentguide',
+        'Klimataktionsguide': 'Aktionsguide'
+      }
+    };
+    
+    return (shortTitles[currentLocale] || shortTitles.en)[fullTitle] || fullTitle;
+  }
+
   // Choose the right intro text based on the current locale
   $: intro = currentLocale === 'sv' ? introSv : introEn;
 
@@ -243,7 +301,83 @@
   $: isGuideActive = activeSection === 'climate-energy-technical-guide' || 
                       activeSection === 'climate-energy-stakeholder-guide' || 
                       activeSection === 'climate-energy-action-guide';
+
+  // Accordion states for section categories
+  let foundationOpen = true; // Start with foundation open
+  let governanceOpen = false;
+  let implementationOpen = false;
+  let resourcesOpen = false;
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleGovernance() {
+    governanceOpen = !governanceOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
+  }
+
+  // For handling dropdown states
+  let isDropdownOpen = false;
+  let isNavDropdownOpen = false;
+
+  function toggleDropdown() {
+    isDropdownOpen = !isDropdownOpen;
+    // Close the other dropdown if it's open
+    if (isDropdownOpen) isNavDropdownOpen = false;
+  }
+
+  function toggleNavDropdown() {
+    isNavDropdownOpen = !isNavDropdownOpen;
+    // Close the other dropdown if it's open
+    if (isNavDropdownOpen) isDropdownOpen = false;
+  }
+
+  // Close dropdowns when clicking outside
+  function handleClickOutside(event) {
+    if (browser) {
+      const dropdown = document.querySelector('.card-actions .dropdown');
+      const navDropdown = document.querySelector('.dropdown-li');
+      
+      if (dropdown && !dropdown.contains(event.target)) {
+        isDropdownOpen = false;
+      }
+      
+      if (navDropdown && !navDropdown.contains(event.target)) {
+        isNavDropdownOpen = false;
+      }
+    }
+  }
+
+  onMount(() => {
+    if (browser) {
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }
+  });
+
+  // Get the core framework sections (01-12)
+  $: coreFrameworkSections = Object.keys(data.sections || {}).filter(section => 
+    section.match(/^\d{2}-/)
+  );
+
+  // Check if this is a core framework section
+  $: isCoreSection = activeSection.match(/^\d{2}-/);
+
+  // Check if current section is supplementary
+  $: isSupplementaryActive = ['appendix-a', 'appendix-b'].includes(activeSection);
 </script>
+
+<svelte:window on:click={handleClickOutside}/>
 
 <div class="documentation-container">
   {#if !isPrintMode}
@@ -252,7 +386,7 @@
 
   <div class="content">
     <!-- Quick Access Card for Lite Guides -->
-    {#if !isPrintMode && !isGuideActive}
+    {#if !isPrintMode && !isGuideActive && activeSection === 'index'}
       <div class="lite-guide-card">
         <div class="card-content">
           <div class="card-icon">📘</div>
@@ -262,20 +396,22 @@
           </div>
           <div class="card-actions">
             <div class="dropdown">
-              <button class="primary-btn dropdown-toggle">
+              <button class="primary-btn dropdown-toggle" on:click={toggleDropdown}>
                 Choose a Guide <span class="arrow-icon">▾</span>
               </button>
-              <div class="dropdown-menu">
-                {#each guides as guide}
-                  <button class="dropdown-item" on:click={() => selectGuide(guide.id)}>
-                    <span class="guide-icon">{guide.icon}</span>
-                    <div class="guide-info">
-                      <span class="guide-title">{guide.title}</span>
-                      <span class="guide-desc">{guide.description}</span>
-                    </div>
-                  </button>
-                {/each}
-              </div>
+              {#if isDropdownOpen}
+                <div class="dropdown-menu">
+                  {#each guides as guide}
+                    <button class="dropdown-item" on:click={() => { selectGuide(guide.id); isDropdownOpen = false; }}>
+                      <span class="guide-icon">{guide.icon}</span>
+                      <div class="guide-info">
+                        <span class="guide-title">{guide.title}</span>
+                        <span class="guide-desc">{guide.description}</span>
+                      </div>
+                    </button>
+                  {/each}
+                </div>
+              {/if}
             </div>
           </div>
         </div>
@@ -286,31 +422,159 @@
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            <!-- Make guides into a dropdown in the navbar -->
-            <li class="dropdown-li" class:active={isGuideActive}>
-              <button class="dropdown-toggle">
-                Guides <span class="arrow-icon">▾</span>
-              </button>
-              <div class="dropdown-menu">
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">Overview</span>
+            </button>
+          </div>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={isGuideActive || coreFrameworkSections.slice(0, 2).some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">📚</span>
+              <span class="accordion-title">Foundation</span>
+              <span class="section-count">(5)</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
                 {#each guides as guide}
-                  <button class="dropdown-item" on:click={() => selectGuide(guide.id)}>
-                    <span class="guide-icon">{guide.icon}</span>
-                    <span class="guide-title">{guide.title}</span>
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === guide.id}
+                    on:click={() => setActiveSection(guide.id)}
+                  >
+                    <span class="nav-icon">{guide.icon}</span>
+                    <span class="nav-title">{getShortSectionTitle(guide.id)}</span>
+                  </button>
+                {/each}
+                {#each coreFrameworkSections.slice(0, 2) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
               </div>
-            </li>
-            
-            <!-- Regular sections, filtering out the guides -->
-            {#each Object.keys(data.sections).filter(section => !section.startsWith('climate-energy-')) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getSectionTitle(section)}
+            {/if}
+          </div>
+
+          <!-- Governance Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={governanceOpen}
+              class:has-active={coreFrameworkSections.slice(2, 6).some(section => activeSection === section)}
+              on:click={toggleGovernance}
+            >
+              <span class="accordion-icon">🏛️</span>
+              <span class="accordion-title">Governance</span>
+              <span class="section-count">({coreFrameworkSections.slice(2, 6).length})</span>
+              <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
+            </button>
+            {#if governanceOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(2, 6) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={coreFrameworkSections.slice(6).some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">Implementation</span>
+              <span class="section-count">({coreFrameworkSections.slice(6).length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(6) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">Resources</span>
+              <span class="section-count">(2)</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'appendix-a'}
+                  on:click={() => setActiveSection('appendix-a')}
+                >
+                  <span class="nav-icon">📋</span>
+                  <span class="nav-title">{getSectionTitle('appendix-a')}</span>
                 </button>
-              </li>
-            {/each}
-          </ul>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'appendix-b'}
+                  on:click={() => setActiveSection('appendix-b')}
+                >
+                  <span class="nav-icon">📖</span>
+                  <span class="nav-title">{getSectionTitle('appendix-b')}</span>
+                </button>
+              </div>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((parseInt(activeSection.substring(0, 2)) / 12) * 100)}%"></div>
+          </div>
+          <span class="progress-text">Section {parseInt(activeSection.substring(0, 2))} of 12</span>
         </div>
       {/if}
 
@@ -374,6 +638,29 @@
           {:else}
             <p>Section {section} not found</p>
           {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if parseInt(activeSection.substring(0, 2)) > 1}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const prevSection = String(parseInt(activeSection.substring(0, 2)) - 1).padStart(2, '0') + activeSection.substring(2);
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if parseInt(activeSection.substring(0, 2)) < 12}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const nextSection = String(parseInt(activeSection.substring(0, 2)) + 1).padStart(2, '0') + activeSection.substring(2);
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
+            </div>
+          {/if}
         </div>
       {/each}
     {:else}
@@ -394,50 +681,19 @@
 </div>
 
 <style>
-  /* Updated styles with energy-themed colors */
-  .section-nav {
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.375rem;
-    cursor: pointer;
-    color: #4b5563;
-    transition: all 0.2s;
-  }
-  
-  .section-nav li.active button {
-    background-color: #2B4B8C; /* Updated to blue for energy framework */
-    color: white;
-    border-color: #2B4B8C;
-  }
-  
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
-  }
-  
-  .section-content {
-    padding-top: 1rem;
+  /* Climate & Energy Framework color scheme */
+  :root {
+    --energy-primary: #2B4B8C; /* Updated to blue for energy */
+    --energy-secondary: #4B8AC2; /* Lighter blue */
+    --energy-accent: #6DAA3F; /* Green for sustainability */
+    --energy-success: #20B2AA; /* Teal for innovation */
+    --energy-warning: #F5A623; /* Orange for caution */
+    --energy-danger: #C43B3B; /* Red for urgency */
+    --energy-light: #E8F4FD; /* Very light blue */
+    --energy-dark: #1A365D; /* Dark blue */
   }
 
+  /* Layout */
   .documentation-container {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -447,265 +703,242 @@
     padding: 2rem 1rem;
   }
   
-  @media (max-width: 768px) {
-    .documentation-container {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  .sidebar {
-    border-right: 1px solid #2B4B8C; /* Updated to blue for energy */
-    padding-right: 1.5rem;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .sidebar a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #4b5563;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s;
-  }
-  
-  .sidebar a:hover {
-    color: #2B4B8C; /* Updated to blue for energy */
-    border-left-color: #2B4B8C;
-  }
-  
-  .sidebar a.active {
-    color: #2B4B8C; /* Updated to blue for energy */
-    border-left-color: #2B4B8C;
-    font-weight: 600;
-  }
-  
   .content {
     min-width: 0;
   }
   
-  .map-container {
-    margin: 2rem 0;
-  }
-  
-  /* Additional styles for markdown content */
-  .content :global(h1) {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #2B4B8C; /* Updated to blue for energy */
-  }
-  
-  .content :global(h2) {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #2B4B8C; /* Updated to blue for energy */
-  }
-  
-  .content :global(h3) {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: #2B4B8C; /* Updated to blue for energy */
+  .section-content {
+    padding-top: 1rem;
+    scroll-margin-top: 2rem; /* Adds space above when scrolled to */
   }
 
-  /* Styling for h4 headers (#### in Markdown) */
-  :global(h4) {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: #2B4B8C; /* Updated to blue for energy */
-  }
-
-  /* Styling for the inset box (blockquote) */
-  :global(blockquote) {
-    background-color: #f3f6f9;
-    border-left: 4px solid #2B4B8C; /* Updated to blue for energy */
-    padding: 1rem 1.5rem;
-    margin: 1.5rem 0;
+  /* Section Navigation */
+  .section-nav {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
     border-radius: 0.5rem;
+    padding: 1rem;
   }
 
-  :global(blockquote > p:first-child strong) {
-    font-size: 1.1rem;
-    color: #2B4B8C; /* Updated to blue for energy */
-    display: block;
-    margin-bottom: 0.75rem;
-  }
-
-  :global(blockquote ul) {
-    margin-left: 1.5rem;
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-  }
-
-  :global(blockquote li) {
+  .nav-section {
     margin-bottom: 0.5rem;
   }
 
-  :global(blockquote p:last-child) {
-    margin-top: 0.75rem;
-    font-style: italic;
-  }
-
-  :global(blockquote a) {
-    color: #2B4B8C; /* Updated to blue for energy */
-    text-decoration: underline;
-    font-weight: 500;
-  }
-
-  :global(blockquote a:hover) {
-    color: #1a3a6c; /* Darker blue on hover */
-  }
-  
-  .content :global(p) {
-    margin-bottom: 1rem;
-    line-height: 1.7;
-    color: #4b5563;
-  }
-  
-  /* Add to your existing <style> section */
-  .content :global(ul), .content :global(ol) {
-    margin-bottom: 1.5rem;
-    padding-left: 2rem; /* Slightly increased for better indentation */
-    color: #4b5563; /* Matches paragraph text color */
-  }
-
-  .content :global(ul) {
-    list-style-type: none; /* Remove default bullets */
-  }
-
-  .content :global(ul li) {
-    position: relative;
-    margin-bottom: 0.75rem; /* Slightly more spacing between items */
-    padding-left: 1rem;
-  }
-
-  /* Apply stars to all ul li EXCEPT those in section-nav */
-  .content :global(ul li:not(.section-nav li))::before {
-    content: "✦";
-    position: absolute;
-    left: 0;
-    color: #2B4B8C; /* Updated to blue for energy */
-    font-size: 0.9rem;
-  }
-
-  .content :global(ol) {
-    list-style-type: decimal; /* Ensure ordered lists use numbers */
-  }
-
-  .content :global(ol li) {
-    margin-bottom: 0.75rem; /* Consistent spacing with ul */
-    padding-left: 0.5rem;
-  }
-
-  .content :global(ol li::marker) {
-    color: #2B4B8C; /* Updated to blue for energy */
-    font-weight: 600;
-  }
-
-  /* Nested lists */
-  .content :global(ul ul), .content :global(ol ul) {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-  }
-
-  .content :global(ul ul li::before) {
-    content: "✧"; /* Smaller star for nested items */
-    color: #4B8AC2; /* Lighter blue for nested bullets */
-  }
-
-  /* Table styles for markdown content with energy theme */
-  :global(.content table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  .nav-accordion {
+    margin-bottom: 0.5rem;
+    border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
     overflow: hidden;
+    background: white;
   }
 
-  :global(.content thead) {
-    background: linear-gradient(to right, #2B4B8C, #4B8AC2);
-  }
-
-  :global(.content th) {
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     padding: 0.75rem 1rem;
-    font-weight: 600;
-    text-align: left;
-    color: #ffffff;
+    background: none;
     border: none;
-    border-bottom: 2px solid #2B4B8C;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
   }
 
-  :global(.content td) {
+  .accordion-header:hover {
+    background-color: rgba(75, 138, 194, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(43, 75, 140, 0.1);
+    color: var(--energy-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(75, 138, 194, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     padding: 0.75rem 1rem;
-    border: 1px solid #e5e7eb;
-    border-left: none;
-    border-right: none;
-    vertical-align: top;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
   }
 
-  :global(.content tr:nth-child(odd)) {
-    background-color: #f8f9fc;
-  }
-
-  :global(.content tr:nth-child(even)) {
-    background-color: #ffffff;
-  }
-
-  :global(.content tr:hover) {
-    background-color: #e8eaf6; /* Light blue background on hover */
-  }
-
-  :global(.content tbody tr:last-child td) {
+  .nav-item:last-child {
     border-bottom: none;
   }
 
-  /* Table caption or footer */
-  :global(.content table caption),
-  :global(.content table tfoot) {
-    background-color: #e8eaf6; /* Light blue */
-    padding: 0.75rem;
-    font-size: 0.875rem;
-    color: #2B4B8C;
-    text-align: left;
-    border-top: 1px solid #2B4B8C;
+  .nav-item:hover {
+    background-color: rgba(75, 138, 194, 0.05);
+    color: #374151;
   }
 
-  /* Highlight important cells */
-  :global(.content td.highlight) {
-    color: #2B4B8C; /* Blue text */
+  .nav-item.active {
+    background-color: var(--energy-primary);
+    color: white;
     font-weight: 600;
   }
 
-  /* For responsive tables on small screens */
-  @media (max-width: 640px) {
-    :global(.content table) {
-      display: block;
-      overflow-x: auto;
-    }
-    
-    :global(.content th),
-    :global(.content td) {
-      white-space: nowrap;
-    }
+  .nav-item.active:hover {
+    background-color: var(--energy-secondary);
   }
-  
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(43, 75, 140, 0.1), rgba(75, 138, 194, 0.1));
+    border: 1px solid rgba(43, 75, 140, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--energy-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(43, 75, 140, 0.1);
+    color: var(--energy-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(43, 75, 140, 0.1), rgba(75, 138, 194, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--energy-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--energy-primary), var(--energy-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--energy-primary);
+    font-weight: 500;
+  }
+
+  /* Section navigation for core framework sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--energy-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--energy-secondary);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
+  }
+
   /* Styles for Lite Guide card */
   .lite-guide-card {
     background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
@@ -740,7 +973,7 @@
   
   .card-icon {
     font-size: 2.5rem;
-    color: #2B4B8C; /* Blue for energy */
+    color: var(--energy-primary);
     flex-shrink: 0;
   }
   
@@ -751,7 +984,7 @@
   
   .card-text h3 {
     margin: 0 0 0.5rem 0;
-    color: #2B4B8C; /* Blue for energy */
+    color: var(--energy-primary);
     font-size: 1.25rem;
   }
   
@@ -771,7 +1004,7 @@
   }
   
   .primary-btn {
-    background-color: #2B4B8C; /* Blue for energy */
+    background-color: var(--energy-primary);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -782,14 +1015,14 @@
   }
   
   .primary-btn:hover {
-    background-color: #1a3a6c; /* Darker blue */
+    background-color: var(--energy-secondary);
     transform: translateY(-1px);
   }
   
   .secondary-btn {
     background-color: white;
-    color: #2B4B8C; /* Blue for energy */
-    border: 1px solid #2B4B8C;
+    color: var(--energy-primary);
+    border: 1px solid var(--energy-primary);
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 500;
@@ -802,34 +1035,225 @@
     transform: translateY(-1px);
   }
   
-  .download-icon {
-    display: inline-block;
-    margin-left: 0.25rem;
+  .lite-guide-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
   }
-  
+
+  .download-icon,
   .arrow-icon {
     display: inline-block;
     margin-left: 0.25rem;
   }
 
-  /* Link styles for content */
+  /* Content styling */
+  .content :global(h1) {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--energy-primary);
+  }
+  
+  .content :global(h2) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--energy-secondary);
+  }
+  
+  .content :global(h3),
+  :global(h4) {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--energy-accent);
+  }
+
+  :global(h4) {
+    font-size: 1.2rem;
+  }
+  
+  .content :global(p) {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #4b5563;
+  }
+
+  /* Blockquotes */
+  :global(blockquote) {
+    background-color: #f3f6f9;
+    border-left: 4px solid var(--energy-primary);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+  }
+
+  :global(blockquote > p:first-child strong) {
+    font-size: 1.1rem;
+    color: var(--energy-primary);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  :global(blockquote ul) {
+    margin-left: 1.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  :global(blockquote li) {
+    margin-bottom: 0.5rem;
+  }
+
+  :global(blockquote p:last-child) {
+    margin-top: 0.75rem;
+    font-style: italic;
+  }
+
+  :global(blockquote a) {
+    color: var(--energy-primary);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  :global(blockquote a:hover) {
+    color: var(--energy-dark);
+  }
+
+  /* Lists */
+  .content :global(ul), .content :global(ol) {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    color: #4b5563;
+  }
+
+  .content :global(ul) {
+    list-style-type: none;
+  }
+
+  .content :global(ul li) {
+    position: relative;
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+  }
+
+  .content :global(ul li:not(.section-nav li))::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--energy-primary);
+    font-size: 0.9rem;
+  }
+
+  .content :global(ol) {
+    list-style-type: decimal;
+  }
+
+  .content :global(ol li) {
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+  }
+
+  .content :global(ol li::marker) {
+    color: var(--energy-primary);
+    font-weight: 600;
+  }
+
+  .content :global(ul ul), .content :global(ol ul) {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .content :global(ul ul li::before) {
+    content: "✧";
+    color: var(--energy-secondary);
+  }
+
+  /* Tables */
+  :global(.content table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 0.375rem;
+    overflow: hidden;
+  }
+
+  :global(.content thead) {
+    background: linear-gradient(to right, var(--energy-primary), var(--energy-secondary));
+  }
+
+  :global(.content th) {
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    text-align: left;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid var(--energy-primary);
+  }
+
+  :global(.content td) {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-left: none;
+    border-right: none;
+    vertical-align: top;
+  }
+
+  :global(.content tr:nth-child(odd)) {
+    background-color: #f8f9fc;
+  }
+
+  :global(.content tr:nth-child(even)) {
+    background-color: #ffffff;
+  }
+
+  :global(.content tr:hover) {
+    background-color: #e8eaf6;
+  }
+
+  :global(.content tbody tr:last-child td) {
+    border-bottom: none;
+  }
+
+  :global(.content table caption),
+  :global(.content table tfoot) {
+    background-color: #e8eaf6;
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--energy-primary);
+    text-align: left;
+    border-top: 1px solid var(--energy-primary);
+  }
+
+  :global(.content td.highlight) {
+    color: var(--energy-primary);
+    font-weight: 600;
+  }
+
+  /* Links */
   .content :global(a) {
-    color: #2B4B8C; /* Blue for energy */
+    color: var(--energy-primary);
     text-decoration: underline;
     font-weight: 500;
     transition: all 0.2s;
   }
 
   .content :global(a:hover) {
-    color: #1a3a6c; /* Darker blue on hover */
+    color: var(--energy-dark);
     text-decoration: underline;
   }
 
   .content :global(a:active) {
-    color: #1a3a6c; /* Darker blue when clicked */
+    color: var(--energy-dark);
   }
 
-  /* External link styles with a subtle indicator */
   .content :global(a[href^="http"]):after, 
   .content :global(a[href^="https://"]):after {
     content: " ↗";
@@ -837,31 +1261,27 @@
     vertical-align: super;
   }
 
-  /* PDF link styles with download indicator */
   .content :global(a[href$=".pdf"]):after {
     content: " ↓";
     font-size: 0.8em;
   }
 
-  /* Section link styles - more subtle but still distinct */
   .content :global(a[href^="#"]) {
-    color: #4B8AC2; /* Slightly different blue for internal section links */
+    color: var(--energy-secondary);
     text-decoration: none;
-    border-bottom: 1px dotted #4B8AC2;
+    border-bottom: 1px dotted var(--energy-secondary);
   }
 
   .content :global(a[href^="#"]):hover {
-    color: #2B4B8C;
-    border-bottom-color: #2B4B8C;
+    color: var(--energy-primary);
+    border-bottom-color: var(--energy-primary);
   }
 
-  /* Make sure links in tables are readable against the background */
   .content :global(table a) {
-    color: #2B4B8C;
+    color: var(--energy-primary);
     font-weight: 600;
   }
 
-  /* Links in the section navigation */
   .section-nav a {
     color: #4b5563;
     text-decoration: none;
@@ -869,16 +1289,7 @@
   }
 
   .section-nav a:hover {
-    color: #2B4B8C; /* Blue for energy */
-  }
- 
-  /* Styles for navigation at bottom of lite guide */
-  .lite-guide-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #e5e7eb;
+    color: var(--energy-primary);
   }
   
   /* Dropdown styles for guides */
@@ -899,8 +1310,6 @@
     top: 100%;
     left: 0;
     z-index: 1000;
-    display: none;
-    overflow: visible !important;
     width: auto !important;
     min-width: 300px !important;
     padding: 0.5rem 0;
@@ -912,82 +1321,9 @@
     margin-top: 0;
     padding-top: 10px;
     white-space: normal !important;
-  }
-
-  .dropdown:hover .dropdown-menu,
-  .dropdown-li:hover .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown::after,
-  .dropdown-li::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 10px; /* Height of the bridge */
-    background: transparent; /* Invisible */
-  }
-  
-  .dropdown-li {
-    position: relative;
-  }
-
-  .dropdown-li .dropdown-menu {
-    width: 300px;
     display: none;
   }
 
-  .dropdown-li:hover .dropdown-menu {
-    display: block;
-  }
-
-  /* Fix for dropdown items when lite guide is active */
-  .dropdown-li.active .dropdown-menu {
-    background-color: white !important; /* Force white background */
-  }
-
-  .dropdown-li.active .dropdown-item {
-    color: #212529 !important; /* Force dark text */
-  }
-
-  .dropdown-li.active .dropdown-item:hover {
-    background-color: #e8eaf6 !important; /* Light blue on hover */
-    color: #2B4B8C !important; /* Blue text on hover */
-  }
-
-  .dropdown-li.active .dropdown-menu .dropdown-item {
-    color: #212529 !important; /* Force dark text always */
-    background-color: transparent !important; /* Clear any background */
-  }
-
-  .dropdown-li.active .dropdown-menu {
-    background-color: white !important; /* Force white background */
-  }
-
-  /* Remove any inherited text color styling */
-  .dropdown-li.active .dropdown-item *,
-  .dropdown-li.active .guide-title,
-  .dropdown-li.active .guide-desc,
-  .dropdown-li.active .guide-icon {
-    color: inherit !important; /* Force inheritance */
-  }
-
-  /* Hover state */
-  .dropdown-li.active .dropdown-item:hover {
-    background-color: #e8eaf6 !important; /* Light blue on hover */
-    color: #2B4B8C !important; /* Blue text on hover */
-  }
-
-  /* Fix for guide icons in dropdown */
-  .dropdown-item .guide-icon {
-    display: inline-block;
-    width: 24px;
-    text-align: center;
-    margin-right: 8px;
-  }
-  
   .dropdown-item {
     display: flex;
     align-items: center;
@@ -1041,11 +1377,11 @@
   .guide-card:hover {
     box-shadow: 0 4px 6px rgba(43, 75, 140, 0.1);
     transform: translateY(-2px);
-    border-color: #2B4B8C;
+    border-color: var(--energy-primary);
   }
   
   .guide-card.active {
-    border-color: #2B4B8C;
+    border-color: var(--energy-primary);
     background-color: #e8eaf6;
   }
   
@@ -1057,7 +1393,7 @@
   .guide-title {
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #2B4B8C;
+    color: var(--energy-primary);
   }
   
   .guide-desc {
@@ -1075,6 +1411,9 @@
     font-size: 1.5rem;
     margin-right: 1rem;
     margin-bottom: 0;
+    display: inline-block;
+    width: 24px;
+    text-align: center;
   }
   
   .dropdown-item .guide-title {
@@ -1086,8 +1425,31 @@
     font-size: 0.75rem;
     color: #6b7280;
   }
-  
-  @media (max-width: 640px) {
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .documentation-container {
+      grid-template-columns: 1fr;
+    }
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
+
     .card-content {
       flex-direction: column;
       align-items: flex-start;
@@ -1107,6 +1469,15 @@
     .lite-guide-navigation button {
       width: 100%;
     }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
+      width: 100%;
+    }
     
     .guide-cards {
       flex-direction: column;
@@ -1116,4 +1487,16 @@
       max-width: none;
     }
   }
- </style>
+
+  @media (max-width: 640px) {
+    :global(.content table) {
+      display: block;
+      overflow-x: auto;
+    }
+    
+    :global(.content th),
+    :global(.content td) {
+      white-space: nowrap;
+    }
+  }
+</style>

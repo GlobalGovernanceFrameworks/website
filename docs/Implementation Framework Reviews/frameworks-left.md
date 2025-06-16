@@ -4,12 +4,14 @@ Frameworks' development status:
  3 Implemented, but in need of revision (Disaster, Technology, Methods & Tools)
  1 Implementation begun
  9 Outline done
- 2 outline begun
+ 3 outline begun
 
 - [Aging] (Implemented)
 
 In order of priority (by ChatGPT and Claude)
 - [Indigenous Governance & Traditional Knowledge](/frameworks/docs/implementation/indigenous) (Implemented)
+
+- [Supply Chains & Logistics](/frameworks/docs/implementation/supply) (outline begun)
 
 - [Mental Health Governance](/frameworks/docs/implementation/mental-health) (Implemented)
 

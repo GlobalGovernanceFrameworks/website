@@ -7,6 +7,7 @@
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -61,6 +62,19 @@
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -123,6 +137,7 @@
       en: {
         // Entry and overview sections
         'index': "Overview",
+        'mental-health-framework-essentials': "Framework Essentials Guide",
         
         // Core framework sections (01-15)
         '01-vision-principles': "Vision & Guiding Principles",
@@ -139,14 +154,12 @@
         '12-risk-management': "Risk Management",
         '13-technology-implementation': "Technology Implementation",
         '14-change-management': "Change Management",
-        '15-conclusion': "The Mandala Completes: From Vision to Living Reality",
-        
-        // Essential guide
-        'mental-health-framework-essentials': "Framework Essentials Guide"
+        '15-conclusion': "The Mandala Completes: From Vision to Living Reality"
       },
       sv: {
         // Entry and overview sections (Swedish)
         'index': "Översikt",
+        'mental-health-framework-essentials': "Ramverk Grundläggande Guide",
         
         // Core framework sections (Swedish)
         '01-vision-principles': "Vision & Vägledande Principer",
@@ -163,10 +176,7 @@
         '12-risk-management': "Riskhantering",
         '13-technology-implementation': "Teknikimplementering",
         '14-change-management': "Förändringsledning",
-        '15-conclusion': "Mandalan Fullbordas: Från Vision till Levande Verklighet",
-        
-        // Essential guide
-        'mental-health-framework-essentials': "Ramverk Grundläggande Guide"
+        '15-conclusion': "Mandalan Fullbordas: Från Vision till Levande Verklighet"
       }
     };
     
@@ -178,43 +188,24 @@
     const fullTitle = getSectionTitle(section).replace(/^\d{2}-/, '');
     
     const shortTitles = {
-      en: {
-        'Vision & Guiding Principles': 'Vision & Principles',
-        'Governance & Institutional Structures': 'Governance',
-        'Legal & Policy Frameworks': 'Legal & Policy',
-        'Financing & Resource Mobilization': 'Financing',
-        'Service Delivery & Workforce': 'Service Delivery',
-        'Monitoring, Evaluation & Accountability': 'Monitoring',
-        'Crisis & Emergency Response': 'Crisis Response',
-        'Innovation & Research': 'Innovation',
-        'Cross-Cutting Themes': 'Cross-Cutting',
-        'Implementation Strategy': 'Implementation',
-        'Political Strategy & Stakeholder Mapping': 'Political Strategy',
-        'Risk Management': 'Risk Management',
-        'Technology Implementation': 'Technology',
-        'Change Management': 'Change Management',
-        'The Mandala Completes: From Vision to Living Reality': 'Conclusion'
-      },
-      sv: {
-        'Vision & Vägledande Principer': 'Vision & Principer',
-        'Styrning & Institutionella Strukturer': 'Styrning',
-        'Juridiska & Politiska Ramverk': 'Juridik & Politik',
-        'Finansiering & Resursmobilisering': 'Finansiering',
-        'Tjänsteleverans & Arbetskraft': 'Tjänsteleverans',
-        'Övervakning, Utvärdering & Ansvarsskyldighet': 'Övervakning',
-        'Kris- & Nödinsats': 'Krisinsats',
-        'Innovation & Forskning': 'Innovation',
-        'Övergripande Teman': 'Övergripande',
-        'Implementeringsstrategi': 'Implementering',
-        'Politisk Strategi & Intressentmappning': 'Politisk Strategi',
-        'Riskhantering': 'Risk',
-        'Teknikimplementering': 'Teknik',
-        'Förändringsledning': 'Förändring',
-        'Mandalan Fullbordas: Från Vision till Levande Verklighet': 'Slutsats'
-      }
+      'Vision & Guiding Principles': 'Vision & Principles',
+      'Governance & Institutional Structures': 'Governance',
+      'Legal & Policy Frameworks': 'Legal & Policy',
+      'Financing & Resource Mobilization': 'Financing',
+      'Service Delivery & Workforce': 'Service Delivery',
+      'Monitoring, Evaluation & Accountability': 'Monitoring',
+      'Crisis & Emergency Response': 'Crisis Response',
+      'Innovation & Research': 'Innovation',
+      'Cross-Cutting Themes': 'Cross-Cutting',
+      'Implementation Strategy': 'Implementation',
+      'Political Strategy & Stakeholder Mapping': 'Political Strategy',
+      'Risk Management': 'Risk Management',
+      'Technology Implementation': 'Technology',
+      'Change Management': 'Change Management',
+      'The Mandala Completes: From Vision to Living Reality': 'Conclusion'
     };
     
-    return (shortTitles[currentLocale] || shortTitles.en)[fullTitle] || fullTitle;
+    return shortTitles[fullTitle] || fullTitle;
   }
 
   // Choose the right intro text based on the current locale
@@ -238,11 +229,17 @@
 
   // Check if the active section is the essentials version
   $: isEssentialsActive = activeSection === 'mental-health-framework-essentials';
-  $: isSupplementaryActive = ['15-conclusion', 'mental-health-framework-essentials'].includes(activeSection);
+  $: isSupplementaryActive = ['mental-health-framework-essentials', '15-conclusion'].includes(activeSection);
 
   // For handling dropdown states
   let isDropdownOpen = false;
   let isNavDropdownOpen = false;
+
+  // Accordion states for section categories
+  let foundationOpen = true; // Start with foundation open
+  let systemsOpen = false;
+  let implementationOpen = false;
+  let resourcesOpen = false;
 
   function toggleDropdown() {
     isDropdownOpen = !isDropdownOpen;
@@ -254,6 +251,22 @@
     isNavDropdownOpen = !isNavDropdownOpen;
     // Close the other dropdown if it's open
     if (isNavDropdownOpen) isDropdownOpen = false;
+  }
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleSystems() {
+    systemsOpen = !systemsOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
   }
 
   // Close dropdowns when clicking outside
@@ -280,6 +293,14 @@
       };
     }
   });
+
+  // Get the total number of core framework sections (01-15)
+  $: coreFrameworkSections = Object.keys(data.sections || {}).filter(section => 
+    section.match(/^\d{2}-/) && !['mental-health-framework-essentials'].includes(section)
+  ).sort();
+
+  // Check if this is a core framework section
+  $: isCoreSection = activeSection.match(/^\d{2}-/);
 
   // Get localized text for buttons and UI elements
   function getLocalizedText(key) {
@@ -340,42 +361,149 @@
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            <!-- Overview -->
-            <li class:active={activeSection === 'index'}>
-              <button on:click={() => setActiveSection('index')}>
-                {getSectionTitle('index')}
-              </button>
-            </li>
-            
-            <!-- Core Framework sections (01-14) -->
-            {#each Object.keys(data.sections).filter(section => 
-              section.match(/^0[1-9]-/) || section.match(/^1[0-4]-/)
-            ) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getShortSectionTitle(section)}
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">Overview</span>
+            </button>
+          </div>
+
+          <!-- Foundation Accordion (Core Circle) -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={['01-vision-principles', '02-governance-structures'].some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">🌟</span>
+              <span class="accordion-title">Foundation</span>
+              <span class="section-count">(2)</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each ['01-vision-principles', '02-governance-structures'] as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Systems & Delivery Accordion (Middle Circle) -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={systemsOpen}
+              class:has-active={coreFrameworkSections.slice(2, 8).some(section => activeSection === section)}
+              on:click={toggleSystems}
+            >
+              <span class="accordion-icon">🏛️</span>
+              <span class="accordion-title">Systems & Delivery</span>
+              <span class="section-count">({coreFrameworkSections.slice(2, 8).length})</span>
+              <span class="toggle-arrow" class:rotated={systemsOpen}>▼</span>
+            </button>
+            {#if systemsOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(2, 8) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion (Outer & Integration Circles) -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={coreFrameworkSections.slice(8, 14).some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">Implementation</span>
+              <span class="section-count">({coreFrameworkSections.slice(8, 14).length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(8, 14) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">Resources</span>
+              <span class="section-count">(2)</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'mental-health-framework-essentials'}
+                  on:click={() => setActiveSection('mental-health-framework-essentials')}
+                >
+                  <span class="nav-icon">🌟</span>
+                  <span class="nav-title">{getLocalizedText('frameworkEssentials')}</span>
                 </button>
-              </li>
-            {/each}
-            
-            <!-- Resources dropdown -->
-            <li class="dropdown-li" class:active={isSupplementaryActive}>
-              <button class="dropdown-toggle">
-                {getLocalizedText('resources')} <span class="arrow-icon">▾</span>
-              </button>
-              <div class="dropdown-menu supplementary-dropdown">
-                <button class="dropdown-item" on:click={() => setActiveSection('15-conclusion')}>
-                  <span class="supplement-icon">✨</span>
-                  <span class="supplement-title">{getLocalizedText('conclusion')}</span>
-                </button>
-                <button class="dropdown-item" on:click={() => setActiveSection('mental-health-framework-essentials')}>
-                  <span class="supplement-icon">🌟</span>
-                  <span class="supplement-title">{getLocalizedText('frameworkEssentials')}</span>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === '15-conclusion'}
+                  on:click={() => setActiveSection('15-conclusion')}
+                >
+                  <span class="nav-icon">✨</span>
+                  <span class="nav-title">{getLocalizedText('conclusion')}</span>
                 </button>
               </div>
-            </li>
-          </ul>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((parseInt(activeSection.substring(0, 2)) / 15) * 100)}%"></div>
+          </div>
+          <span class="progress-text">Section {parseInt(activeSection.substring(0, 2))} of 15</span>
         </div>
       {/if}
 
@@ -416,6 +544,31 @@
               </button>
             </div>
           {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if coreFrameworkSections.indexOf(activeSection) > 0}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const prevSection = coreFrameworkSections[currentIndex - 1];
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const nextSection = coreFrameworkSections[currentIndex + 1];
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
+            </div>
+          {/if}
         </div>
       {/each}
     {:else}
@@ -454,44 +607,204 @@
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
+
+  .nav-section {
     margin-bottom: 0.5rem;
   }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
     cursor: pointer;
-    color: #4b5563;
     transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
   }
-  
-  .section-nav li.active button {
-    background-color: var(--mental-health-primary);
-    color: white;
-    border-color: var(--mental-health-primary);
+
+  .accordion-header:hover {
+    background-color: rgba(5, 150, 105, 0.05);
   }
-  
-  .section-nav button:hover {
+
+  .accordion-header.has-active {
     background-color: rgba(30, 58, 138, 0.1);
     color: var(--mental-health-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(5, 150, 105, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(5, 150, 105, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
+    background-color: var(--mental-health-primary);
+    color: white;
+    font-weight: 600;
+  }
+
+  .nav-item.active:hover {
+    background-color: var(--mental-health-healing);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.1), rgba(5, 150, 105, 0.1));
+    border: 1px solid rgba(30, 58, 138, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--mental-health-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(30, 58, 138, 0.1);
+    color: var(--mental-health-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Auto-expand accordion when section is active */
+  .accordion-header.has-active + .accordion-content {
+    display: block;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(30, 58, 138, 0.1), rgba(5, 150, 105, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--mental-health-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--mental-health-primary), var(--mental-health-healing));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--mental-health-primary);
+    font-weight: 500;
   }
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem; /* Adds space above when scrolled to */
   }
 
   .documentation-container {
@@ -506,6 +819,24 @@
   @media (max-width: 768px) {
     .documentation-container {
       grid-template-columns: 1fr;
+    }
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
     }
   }
   
@@ -809,17 +1140,17 @@
     cursor: pointer;
     transition: all 0.2s;
   }
- 
+
   .secondary-btn:hover {
     background-color: rgba(30, 58, 138, 0.08);
     transform: translateY(-1px);
   }
- 
+
   .download-icon {
     display: inline-block;
     margin-left: 0.25rem;
   }
- 
+
   .arrow-icon {
     display: inline-block;
     margin-left: 0.25rem;
@@ -892,6 +1223,39 @@
     margin-top: 3rem;
     padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
+  }
+
+  /* Section navigation for core framework sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--mental-health-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--mental-health-healing);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
   }
   
   /* Dropdown styles for supplementary materials */
@@ -1047,6 +1411,15 @@
     }
     
     .guide-navigation button {
+      width: 100%;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
       width: 100%;
     }
   }
