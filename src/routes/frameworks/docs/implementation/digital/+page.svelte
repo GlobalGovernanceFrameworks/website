@@ -690,8 +690,6 @@
           {:else if section === 'index'}
             <!-- Render English introduction through the markdown component -->
             <svelte:component this={data.sections[section].default} />
-            <!-- Show constellation map for index section -->
-            <ConstellationMap />
           {:else if data.sections[section]}
             <!-- Render normal sections from markdown files -->
             <svelte:component this={data.sections[section].default} />
