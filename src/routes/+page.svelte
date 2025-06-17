@@ -83,7 +83,11 @@
         <div class="info-box-content why-exists-content" style="animation: slideDown 0.3s ease-out;">
           <p>{$t('home.whyExists.paragraph1')}</p>
           <p>{$t('home.whyExists.paragraph2')}</p>
-          <p>{$t('home.whyExists.paragraph3')}</p>
+          <p>
+            {$t('home.whyExists.paragraph3')} 
+            <a href="{base}/start-treaty/" style="color: #1e40af; text-decoration: underline; font-weight: 500;">'{$t('home.treatyFeature.heading').split(': ')[1]}'</a> 
+            {$t('home.whyExists.paragraph3b')}
+          </p>
           <p>{$t('home.whyExists.paragraph4')}</p>
         </div>
       {/if}
@@ -102,10 +106,14 @@
         </div>
         <span class="toggle-icon" class:rotated={languageExpanded}>▼</span>
       </button>
-      
+            
       {#if languageExpanded}
         <div class="info-box-content language-content" style="animation: slideDown 0.3s ease-out;">
-          <p>{$t('home.languageStatement.paragraph1')}</p>
+          <p>
+            {$t('home.languageStatement.paragraph1')} 
+            <a href="{base}/start-treaty/" style="color: #92400e; text-decoration: underline; font-weight: 500;">'{$t('home.treatyFeature.heading').split(': ')[1]}'</a> 
+            {$t('home.languageStatement.paragraph1b')}
+          </p>
           <p>{$t('home.languageStatement.paragraph2')}</p>
           <p>{$t('home.languageStatement.paragraph3')}</p>
           <div style="text-align: center; margin-top: 1.5rem;">

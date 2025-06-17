@@ -11,11 +11,41 @@
       isVisible = true;
     }, 100);
   });
+
+  // Get the correct infographic image based on language
+  $: infographicImage = $locale === 'sv' 
+    ? '/images/frameworks/tools/treaty-for-our-only-home/cost-of-inaction-infographic-sv.png'
+    : '/images/frameworks/tools/treaty-for-our-only-home/cost-of-inaction-infographic-en.png';
+
+  // Full URL for social media sharing
+  $: fullImageUrl = `https://globalgovernanceframework.org${base}${infographicImage}`;
+  $: pageUrl = `https://globalgovernanceframework.org${base}/start-treaty/`;
 </script>
 
 <svelte:head>
   <title>{$t('startTreaty.title')}</title>
   <meta name="description" content="{$t('startTreaty.meta.description')}" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{pageUrl}" />
+  <meta property="og:title" content="{$t('startTreaty.title')}" />
+  <meta property="og:description" content="{$t('startTreaty.meta.description')}" />
+  <meta property="og:image" content="{fullImageUrl}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{$t('startTreaty.hero.title')}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="{pageUrl}" />
+  <meta name="twitter:title" content="{$t('startTreaty.title')}" />
+  <meta name="twitter:description" content="{$t('startTreaty.meta.description')}" />
+  <meta name="twitter:image" content="{fullImageUrl}" />
+  <meta name="twitter:image:alt" content="{$t('startTreaty.hero.title')}" />
+
+  <!-- LinkedIn -->
+  <meta property="og:site_name" content="Global Governance Frameworks" />
 </svelte:head>
 
 <!-- Hero Section - Reinforces Infographic Message -->
@@ -410,9 +440,9 @@
           {$t('startTreaty.finalCTA.options.mediumEngagement.description')}
         </p>
         <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
-          <a href="https://twitter.com/intent/tweet?text={encodeURIComponent($t('startTreaty.finalCTA.shareText'))}&url=https://globalgovernanceframework.org/start-treaty" target="_blank" style="background-color: #1DA1F2; color: white; padding: 0.5rem; border-radius: 0.375rem; text-decoration: none;">Twitter</a>
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://globalgovernanceframework.org/start-treaty" target="_blank" style="background-color: #0077B5; color: white; padding: 0.5rem; border-radius: 0.375rem; text-decoration: none;">LinkedIn</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://globalgovernanceframework.org/start-treaty" target="_blank" style="background-color: #1877F2; color: white; padding: 0.5rem; border-radius: 0.375rem; text-decoration: none;">Facebook</a>
+          <a href="https://twitter.com/intent/tweet?text={encodeURIComponent($t('startTreaty.finalCTA.shareText'))}&url={encodeURIComponent(pageUrl)}" target="_blank" style="background-color: #1DA1F2; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; text-decoration: none; font-weight: 500;">Twitter</a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={encodeURIComponent(pageUrl)}" target="_blank" style="background-color: #0077B5; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; text-decoration: none; font-weight: 500;">LinkedIn</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={encodeURIComponent(pageUrl)}" target="_blank" style="background-color: #1877F2; color: white; padding: 0.5rem 1rem; border-radius: 0.375rem; text-decoration: none; font-weight: 500;">Facebook</a>
         </div>
       </div>
 

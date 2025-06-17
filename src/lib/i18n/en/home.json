@@ -7,12 +7,14 @@
     "title": "Why This Exists",
     "paragraph1": "This project began as a personal reflection: What would it take for humanity to thrive together?",
     "paragraph2": "From childhood, I (Björn Kenneth Holmström) was fascinated by animals, cultures, and the Earth as a shared home. That early sense of wonder became a lifelong drive to support ethical, compassionate systems that can serve all life—human and beyond.",
-    "paragraph3": "What you see here is not a final solution. It started as a living proposal, with the 'Treaty for Our Only Home' as its flagship framework. This collaborative draft explores what a more interconnected, inclusive, and future-ready form of governance might look like. The challenges facing our planet are urgent, and the time for action is now. Your engagement is critical to building the future we need.",
-    "paragraph4": "It’s offered openly—shaped by conversations with AI systems like Claude, ChatGPT, Grok, DeepSeek and Gemini, and grounded in a belief that good governance must emerge from shared wisdom. Let this be a beginning, not an answer. You are invited to explore, question, contribute, and improve it."
+    "paragraph3": "What you see here is not a final solution. It started as a living proposal, with the",
+    "paragraph3b": "as its flagship framework. All other frameworks hinges upon its success. This collaborative draft explores what a more interconnected, inclusive, and future-ready form of governance might look like. The challenges facing our planet are urgent, and the time for action is now. Your engagement is critical to building the future we need.",
+    "paragraph4": "It's offered openly—shaped by conversations with AI systems like Claude, ChatGPT, Grok, DeepSeek and Gemini, and grounded in a belief that good governance must emerge from shared wisdom. Let this be a beginning, not an answer. You are invited to explore, question, contribute, and improve it."
   },
   "languageStatement": {
     "title": "Language and Inclusivity",
-    "paragraph1": "True global governance must speak every language. For this framework to be truly universal, it must be accessible to all. We are deeply committed to making the 'Treaty for Our Only Home' and all related materials available in as many languages as possible.",
+    "paragraph1": "True global governance must speak every language. For this framework to be truly universal, it must be accessible to all. We are deeply committed to making the",
+    "paragraph1b": "and all related materials available in as many languages as possible.",
     "paragraph2": "Currently, the core documents are actively maintained in English, as a global language of diplomacy, and Swedish, the mother tongue of the initial researcher. We recognize this is only a starting point.",
     "paragraph3": "We believe the vital work of translation belongs to the community. It is a powerful way to ensure the framework's concepts are adapted accurately and resonate within different cultures. If you are a native speaker and believe in this work, we warmly invite you to help bring these ideas to your community.",
     "button": "Join the Translation Effort"
