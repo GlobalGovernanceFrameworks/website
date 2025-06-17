@@ -420,7 +420,20 @@
               <span class="section-count">({foundationSections.length})</span>
               <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
             </button>
-            <!-- ... rest of accordion content ... -->
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each foundationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
           </div>
 
           <!-- Systems & Delivery Accordion (Middle Circle) -->

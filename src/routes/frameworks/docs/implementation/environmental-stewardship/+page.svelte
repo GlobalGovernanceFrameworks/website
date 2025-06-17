@@ -6,8 +6,8 @@
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
-  import ConstellationMap from '$lib/components/ConstellationMap.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -62,6 +62,19 @@
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -102,29 +115,16 @@
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
-  // Swedish translations for the introduction section
-  const introSv = {
-    title: "Miljöförvaltningsramverk för Flernivåstyrning",
-    overview: "Översikt",
-    paragraph1: "Miljöförvaltningsramverket är en omfattande plan för transformativ miljöstyrning som adresserar de sammankopplade utmaningarna av ekosystemförstöring, klimatförändring, ekonomisk ojämlikhet och teknisk etik. Det integrerar andliga, ursprungsbefolkningens, ekonomiska och tekniska dimensioner av styrning.",
-    paragraph2: "Detta ramverk syftar till att bygga en regenerativ värld till 2050 där ekosystem frodas som rättighetsinnehavare, samhällen utövar suveränitet, andlig visdom informerar etik, och teknologier överensstämmer med välbefinnandet för alla varelser."
-  };
-
-  // English translations as fallback
-  const introEn = {
-    title: "Environmental Stewardship Framework for Multi-Level Governance",
-    overview: "Overview",
-    paragraph1: "The Environmental Stewardship Framework is a comprehensive plan for transformative environmental governance that addresses the interconnected challenges of ecosystem degradation, climate change, economic inequity, and technological ethics. It integrates spiritual, indigenous, economic, and technological dimensions of governance.",
-    paragraph2: "This framework aims to build a regenerative world by 2050 where ecosystems thrive as rights-holders, communities exercise sovereignty, spiritual wisdom informs ethics, and technologies align with the well-being of all beings."
-  };
-
   // Get section titles in current language
   function getSectionTitle(section) {
     const titles = {
       en: {
+        // Entry and overview sections
+        'index': "Overview",
         'one-page-essence': "One-Page Essence",
         'first-100-days-playbook': "First 100 Days Playbook",
-        'index': "Overview",
+        
+        // Core framework sections (01-15)
         '01-introduction': "Introduction",
         '02-guiding-principles': "Guiding Principles",
         '03-governance-structure': "Governance Structure",
@@ -142,20 +142,23 @@
         '15-appendices': "Appendices"
       },
       sv: {
-        'one-page-essence': "Sidessens",
-        'first-100-days-playbook': "Första 100 Dagarna Playbook",
+        // Entry and overview sections (Swedish)
         'index': "Översikt",
+        'one-page-essence': "Sidessens",
+        'first-100-days-playbook': "Första 100 dagarna playbook",
+        
+        // Core framework sections (Swedish)
         '01-introduction': "Introduktion",
-        '02-guiding-principles': "Vägledande Principer",
+        '02-guiding-principles': "Vägledande principer",
         '03-governance-structure': "Styrningsstruktur",
         '04-core-pillars': "Kärnpelare",
         '05-policy-mechanisms': "Policymekanismer",
         '06-stakeholder-engagement': "Intressentengagemang",
         '07-financing-mechanisms': "Finansieringsmekanismer",
         '08-implementation-roadmap': "Implementeringsplan",
-        '09-metrics-for-success': "Mätning av Framgång",
+        '09-metrics-for-success': "Mätning av framgång",
         '10-visualizations': "Visualiseringar",
-        '11-challenges-and-solutions': "Utmaningar och Lösningar",
+        '11-challenges-and-solutions': "Utmaningar och lösningar",
         '12-implementation-tools': "Implementeringsverktyg",
         '13-reparations-protocol': "Reparationsprotokoll",
         '14-conclusion': "Slutsats",
@@ -166,73 +169,76 @@
     return (titles[currentLocale] || titles.en)[section] || section;
   }
 
-  // Choose the right intro text based on the current locale
-  $: intro = currentLocale === 'sv' ? introSv : introEn;
+  // Function to get shortened section titles for navigation
+  function getShortSectionTitle(section) {
+    const fullTitle = getSectionTitle(section).replace(/^\d{2}-/, '');
+    
+    const shortTitles = {
+      'Introduction': 'Introduction',
+      'Guiding Principles': 'Principles',
+      'Governance Structure': 'Governance',
+      'Core Pillars': 'Core Pillars',
+      'Policy Mechanisms': 'Policy',
+      'Stakeholder Engagement': 'Stakeholders',
+      'Financing Mechanisms': 'Financing',
+      'Implementation Roadmap': 'Roadmap',
+      'Metrics for Success': 'Metrics',
+      'Visualizations': 'Visualizations',
+      'Challenges and Solutions': 'Challenges',
+      'Implementation Tools': 'Tools',
+      'Reparations Protocol': 'Reparations',
+      'Conclusion': 'Conclusion',
+      'Appendices': 'Appendices',
+      // Swedish short titles
+      'Introduktion': 'Introduktion',
+      'Vägledande principer': 'Principer',
+      'Styrningsstruktur': 'Styrning',
+      'Kärnpelare': 'Kärnpelare',
+      'Policymekanismer': 'Policy',
+      'Intressentengagemang': 'Intressenter',
+      'Finansieringsmekanismer': 'Finansiering',
+      'Implementeringsplan': 'Färdplan',
+      'Mätning av framgång': 'Mätning',
+      'Visualiseringar': 'Visualiseringar',
+      'Utmaningar och lösningar': 'Utmaningar',
+      'Implementeringsverktyg': 'Verktyg',
+      'Reparationsprotokoll': 'Reparationer',
+      'Slutsats': 'Slutsats',
+      'Bilagor': 'Bilagor'
+    };
+    
+    return shortTitles[fullTitle] || fullTitle;
+  }
 
   $: if (browser && $locale) {
     invalidate('app:locale');
   }
   
-  // Function to download the essence guide PDF
-  function downloadEssenceGuide() {
-    const pdfUrl = `${base}/assets/pdf/environmental-stewardship-essence-${currentLocale}.pdf`;
+  // Function to download the guide PDF
+  function downloadGuide(version = '') {
+    const versionSuffix = version ? `-${version}` : '';
+    const pdfUrl = `${base}/assets/pdf/environmental-stewardship-framework${versionSuffix}-${currentLocale}.pdf`;
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = `environmental-stewardship-essence.pdf`;
+    link.download = `environmental-stewardship-framework${versionSuffix}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
 
-  // For the quick guide selector
-  let selectedQuickGuide = 'one-page-essence';
-  
-  function selectQuickGuide(guide) {
-    selectedQuickGuide = guide;
-    setActiveSection(guide);
-  }
-  
-  // Guide information for the selector
-  const guideInfo = {
-    en: [
-      {
-        id: 'one-page-essence',
-        title: 'One-Page Essence',
-        description: 'Core framework distilled into key principles and immediate actions',
-        icon: '🌱'
-      },
-      {
-        id: 'first-100-days-playbook',
-        title: 'First 100 Days Playbook',
-        description: 'Practical steps for municipalities, leaders, and organizations to get started',
-        icon: '🚀'
-      }
-    ],
-    sv: [
-      {
-        id: 'one-page-essence',
-        title: 'Sidessens',
-        description: 'Kärnramverk destillerat till nyckelpriniciper och omedelbara åtgärder',
-        icon: '🌱'
-      },
-      {
-        id: 'first-100-days-playbook',
-        title: 'Första 100 Dagarna Playbook',
-        description: 'Praktiska steg för kommuner, ledare och organisationer att komma igång',
-        icon: '🚀'
-      }
-    ]
-  };
-  
-  $: guides = guideInfo[currentLocale] || guideInfo.en;
-  
-  // Check if the active section is any of the quick guides
-  $: isQuickGuideActive = activeSection === 'one-page-essence' || 
-                         activeSection === 'first-100-days-playbook';
+  // Check if the active section is the one-page essence
+  $: isEssenceActive = activeSection === 'one-page-essence';
+  $: isSupplementaryActive = ['one-page-essence', 'first-100-days-playbook'].includes(activeSection);
 
   // For handling dropdown states
   let isDropdownOpen = false;
   let isNavDropdownOpen = false;
+
+  // Accordion states for section categories
+  let foundationOpen = true; // Start with foundation open
+  let governanceOpen = false;
+  let implementationOpen = false;
+  let resourcesOpen = false;
 
   function toggleDropdown() {
     isDropdownOpen = !isDropdownOpen;
@@ -244,6 +250,22 @@
     isNavDropdownOpen = !isNavDropdownOpen;
     // Close the other dropdown if it's open
     if (isNavDropdownOpen) isDropdownOpen = false;
+  }
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleGovernance() {
+    governanceOpen = !governanceOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
   }
 
   // Close dropdowns when clicking outside
@@ -270,6 +292,44 @@
       };
     }
   });
+
+  // Get the total number of core framework sections (01-15)
+  $: coreFrameworkSections = Object.keys(data.sections || {}).filter(section => 
+    section.match(/^\d{2}-/) && !['one-page-essence', 'first-100-days-playbook'].includes(section)
+  );
+
+  // Check if this is a core framework section
+  $: isCoreSection = activeSection.match(/^\d{2}-/);
+
+  // Get localized text for buttons and UI elements
+  function getLocalizedText(key) {
+    const texts = {
+      en: {
+        newToFramework: "New to the Environmental Stewardship Framework?",
+        startWithEssence: "Start with our essential guides that explain the core concepts and provide immediate action steps.",
+        readEssence: "Read the One-Page Essence",
+        downloadPdf: "Download PDF Version",
+        continueToFull: "Continue to Full Framework",
+        foundation: "Foundation",
+        governance: "Governance & Policy",
+        implementation: "Implementation",
+        resources: "Resources"
+      },
+      sv: {
+        newToFramework: "Ny inom miljöförvaltningsramverket?",
+        startWithEssence: "Börja med våra viktiga guider som förklarar kärnkoncept och ger omedelbara åtgärdssteg.",
+        readEssence: "Läs sidessensen",
+        downloadPdf: "Ladda ner PDF-version",
+        continueToFull: "Fortsätt till fullständigt ramverk",
+        foundation: "Grund",
+        governance: "Styrning & policy",
+        implementation: "Implementering",
+        resources: "Resurser"
+      }
+    };
+    
+    return (texts[currentLocale] || texts.en)[key] || key;
+  }
 </script>
 
 <svelte:window on:click={handleClickOutside}/>
@@ -280,34 +340,19 @@
   {/if}
 
   <div class="content">
-    <!-- Quick Access Card for Getting Started Guides -->
-    {#if !isPrintMode && !isQuickGuideActive}
-      <div class="getting-started-card">
+    <!-- Quick Access Card for Environmental Stewardship Framework -->
+    {#if !isPrintMode && !isEssenceActive && activeSection === 'index'}
+      <div class="environmental-guide-card">
         <div class="card-content">
           <div class="card-icon">🌍</div>
           <div class="card-text">
-            <h3>New to the Environmental Stewardship Framework?</h3>
-            <p>Start with our essential guides that explain the core concepts and provide immediate action steps.</p>
+            <h3>{getLocalizedText('newToFramework')}</h3>
+            <p>{getLocalizedText('startWithEssence')}</p>
           </div>
           <div class="card-actions">
-            <div class="dropdown">
-              <button class="primary-btn dropdown-toggle" on:click|stopPropagation={toggleDropdown}>
-                Choose a Getting Started Guide <span class="arrow-icon">▾</span>
-              </button>
-              {#if isDropdownOpen}
-                <div class="dropdown-menu">
-                  {#each guides as guide}
-                    <button class="dropdown-item" on:click={() => selectQuickGuide(guide.id)}>
-                      <span class="guide-icon">{guide.icon}</span>
-                      <div class="guide-info">
-                        <span class="guide-title">{guide.title}</span>
-                        <span class="guide-desc">{guide.description}</span>
-                      </div>
-                    </button>
-                  {/each}
-                </div>
-              {/if}
-            </div>
+            <button class="primary-btn" on:click={() => setActiveSection('one-page-essence')}>
+              {getLocalizedText('readEssence')} <span class="arrow-icon">→</span>
+            </button>
           </div>
         </div>
       </div>
@@ -317,105 +362,214 @@
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            <!-- Make getting started guides into a dropdown in the navbar -->
-            <li class="dropdown-li" class:active={isQuickGuideActive}>
-              <button class="dropdown-toggle" on:click|stopPropagation={toggleNavDropdown}>
-                Getting Started <span class="arrow-icon">{isNavDropdownOpen ? '▴' : '▾'}</span>
-              </button>
-              {#if isNavDropdownOpen}
-                <div class="dropdown-menu">
-                  {#each guides as guide}
-                    <button class="dropdown-item" on:click={() => selectQuickGuide(guide.id)}>
-                      <span class="guide-icon">{guide.icon}</span>
-                      <span class="guide-title">{guide.title}</span>
-                    </button>
-                  {/each}
-                </div>
-              {/if}
-            </li>
-            
-            <!-- Regular sections, filtering out the getting started guides -->
-            {#each Object.keys(data.sections).filter(section => !['one-page-essence', 'first-100-days-playbook'].includes(section)) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getSectionTitle(section)}
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">Overview</span>
+            </button>
+          </div>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={coreFrameworkSections.slice(0, 4).some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">🌱</span>
+              <span class="accordion-title">{getLocalizedText('foundation')}</span>
+              <span class="section-count">({coreFrameworkSections.slice(0, 4).length})</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(0, 4) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Governance & Policy Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={governanceOpen}
+              class:has-active={coreFrameworkSections.slice(4, 9).some(section => activeSection === section)}
+              on:click={toggleGovernance}
+            >
+              <span class="accordion-icon">🏛️</span>
+              <span class="accordion-title">{getLocalizedText('governance')}</span>
+              <span class="section-count">({coreFrameworkSections.slice(4, 9).length})</span>
+              <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
+            </button>
+            {#if governanceOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(4, 9) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={coreFrameworkSections.slice(9).some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">{getLocalizedText('implementation')}</span>
+              <span class="section-count">({coreFrameworkSections.slice(9).length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(9) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">{getLocalizedText('resources')}</span>
+              <span class="section-count">(2)</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'one-page-essence'}
+                  on:click={() => setActiveSection('one-page-essence')}
+                >
+                  <span class="nav-icon">🌱</span>
+                  <span class="nav-title">{getSectionTitle('one-page-essence')}</span>
                 </button>
-              </li>
-            {/each}
-          </ul>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'first-100-days-playbook'}
+                  on:click={() => setActiveSection('first-100-days-playbook')}
+                >
+                  <span class="nav-icon">🚀</span>
+                  <span class="nav-title">{getSectionTitle('first-100-days-playbook')}</span>
+                </button>
+              </div>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((parseInt(activeSection.substring(0, 2)) / 15) * 100)}%"></div>
+          </div>
+          <span class="progress-text">Section {parseInt(activeSection.substring(0, 2))} of 15</span>
         </div>
       {/if}
 
       <!-- Show active section, or all sections in print mode -->
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
-          {#if ['one-page-essence', 'first-100-days-playbook'].includes(section)}
-            <!-- Getting Started Guide selector if we're in one of the guides and not in print mode -->
-            {#if !isPrintMode}
-              <div class="getting-started-selector">
-                <h2>Environmental Stewardship Framework Getting Started Guides</h2>
-                <p>Choose the guide that best matches your immediate needs:</p>
-                
-                <div class="guide-cards">
-                  {#each guides as guide}
-                    <div 
-                      class="guide-card" 
-                      class:active={activeSection === guide.id}
-                      on:click={() => selectQuickGuide(guide.id)}
-                    >
-                      <div class="guide-icon">{guide.icon}</div>
-                      <div class="guide-title">{guide.title}</div>
-                      <div class="guide-desc">{guide.description}</div>
-                    </div>
-                  {/each}
-                </div>
-              </div>
+          {#if section === 'index'}
+            <!-- Render the loaded markdown content -->
+            {#if data.sections[section]}
+              <svelte:component this={data.sections[section].default} />
+            {:else}
+              <p>Section {section} not found</p>
             {/if}
-            
-            <!-- Render the selected Getting Started Guide -->
-            <svelte:component this={data.sections[section].default} />
-            
-            <!-- Navigation buttons at bottom of getting started guide -->
-            {#if !isPrintMode}
-              <div class="guide-navigation">
-                <button class="secondary-btn" on:click={downloadEssenceGuide}>
-                  Download PDF Version <span class="download-icon">↓</span>
-                </button>
-                <button class="primary-btn" on:click={() => setActiveSection('index')}>
-                  Continue to Full Framework <span class="arrow-icon">→</span>
-                </button>
-              </div>
-            {/if}
-
-          {:else if section === 'index' && currentLocale === 'sv'}
-            <!-- Manually render Swedish introduction for the index section -->
-            <div class="overview-section">
-              <h1>{intro.title}</h1>
-              <h2>{intro.overview}</h2>
-              <p>{intro.paragraph1}</p>
-              <p>{intro.paragraph2}</p>
-            </div>
-            <!-- Show constellation map for index section -->
-            <ConstellationMap />
-          {:else if section === 'index'}
-            <!-- Render English introduction through the markdown component -->
-            <svelte:component this={data.sections[section].default} />
           {:else if data.sections[section]}
             <!-- Render normal sections from markdown files -->
             <svelte:component this={data.sections[section].default} />
           {:else}
             <p>Section {section} not found</p>
           {/if}
+          
+          <!-- Navigation buttons at bottom of essence guide -->
+          {#if section === 'one-page-essence' && !isPrintMode}
+            <div class="guide-navigation">
+              <button class="secondary-btn" on:click={() => downloadGuide('essence')}>
+                {getLocalizedText('downloadPdf')} <span class="download-icon">↓</span>
+              </button>
+              <button class="primary-btn" on:click={() => setActiveSection('01-introduction')}>
+                {getLocalizedText('continueToFull')} <span class="arrow-icon">→</span>
+              </button>
+            </div>
+          {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if coreFrameworkSections.indexOf(activeSection) > 0}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const prevSection = coreFrameworkSections[currentIndex - 1];
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const nextSection = coreFrameworkSections[currentIndex + 1];
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
+            </div>
+          {/if}
         </div>
       {/each}
     {:else}
       <!-- Legacy single file display -->
       <div class="overview-section">
-        <h1>{intro.title}</h1>
-        <h2>{intro.overview}</h2>
-        <p>{intro.paragraph1}</p>
-        <p>{intro.paragraph2}</p>
+        <h1>Environmental Stewardship Framework for Multi-Level Governance</h1>
+        <h2>Overview</h2>
+        <p>The Environmental Stewardship Framework is a comprehensive plan for transformative environmental governance that addresses the interconnected challenges of ecosystem degradation, climate change, economic inequity, and technological ethics. It integrates spiritual, indigenous, economic, and technological dimensions of governance.</p>
+        <p>This framework aims to build a regenerative world by 2050 where ecosystems thrive as rights-holders, communities exercise sovereignty, spiritual wisdom informs ethics, and technologies align with the well-being of all beings.</p>
       </div>
       
       <!-- The rest of the content -->
@@ -427,48 +581,213 @@
 </div>
 
 <style>
-  /* Main styles using Environmental Stewardship Framework color scheme */
+  /* Environmental Stewardship Framework color scheme */
+  :root {
+    --env-primary: #6DAA3F; /* Ecosystem Green - growth, life, renewal */
+    --env-secondary: #3A6EA5; /* Harmony Blue - wisdom, stability, unity */
+    --env-accent: #F5A623; /* Solar Gold - energy, transformation, illumination */
+    --env-earth: #8B5A2B; /* Earth Brown - grounding, heritage, connection */
+    --env-spirit: #8A4F9E; /* Rights Purple - consciousness, dignity, sovereignty */
+    --env-regenerative: #20B2AA; /* Regenerative Teal - healing, balance, flow */
+    --env-justice: #C43B3B; /* Justice Red - urgency, action, protection */
+  }
+
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
+
+  .nav-section {
     margin-bottom: 0.5rem;
   }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
     cursor: pointer;
-    color: #4b5563;
     transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
   }
-  
-  .section-nav li.active button {
-    background-color: #6DAA3F; /* Ecosystem Green */
+
+  .accordion-header:hover {
+    background-color: rgba(109, 170, 63, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(109, 170, 63, 0.1);
+    color: var(--env-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(109, 170, 63, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(109, 170, 63, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
+    background-color: var(--env-primary);
     color: white;
-    border-color: #6DAA3F;
+    font-weight: 600;
   }
-  
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
+
+  .nav-item.active:hover {
+    background-color: var(--env-secondary);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(109, 170, 63, 0.1), rgba(58, 110, 165, 0.1));
+    border: 1px solid rgba(109, 170, 63, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--env-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(109, 170, 63, 0.1);
+    color: var(--env-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(109, 170, 63, 0.1), rgba(58, 110, 165, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--env-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--env-primary), var(--env-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--env-primary);
+    font-weight: 500;
   }
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem;
   }
 
   .documentation-container {
@@ -484,50 +803,28 @@
     .documentation-container {
       grid-template-columns: 1fr;
     }
-  }
-  
-  .sidebar {
-    border-right: 1px solid #6DAA3F; /* Ecosystem Green border */
-    padding-right: 1.5rem;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .sidebar a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #4b5563;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s;
-  }
-  
-  .sidebar a:hover {
-    color: #6DAA3F; /* Ecosystem Green */
-    border-left-color: #6DAA3F;
-  }
-  
-  .sidebar a.active {
-    color: #6DAA3F; /* Ecosystem Green */
-    border-left-color: #6DAA3F;
-    font-weight: 600;
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
   }
   
   .content {
     min-width: 0;
-  }
-  
-  .map-container {
-    margin: 2rem 0;
   }
   
   /* Additional styles for markdown content */
@@ -535,7 +832,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #6DAA3F; /* Ecosystem Green */
+    color: var(--env-primary);
   }
   
   .content :global(h2) {
@@ -543,7 +840,7 @@
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #6DAA3F; /* Ecosystem Green */
+    color: var(--env-secondary);
   }
   
   .content :global(h3) {
@@ -551,7 +848,7 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #3A6EA5; /* Harmony Blue */
+    color: var(--env-accent);
   }
 
   /* Styling for h4 headers (#### in Markdown) */
@@ -560,13 +857,13 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #3A6EA5; /* Harmony Blue */
+    color: var(--env-accent);
   }
 
   /* Styling for the inset box (blockquote) */
   :global(blockquote) {
-    background-color: #f0f8f0;
-    border-left: 4px solid #8B5A2B; /* Earth Brown */
+    background-color: rgba(109, 170, 63, 0.1);
+    border-left: 4px solid var(--env-earth);
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     border-radius: 0.5rem;
@@ -574,7 +871,7 @@
 
   :global(blockquote > p:first-child strong) {
     font-size: 1.1rem;
-    color: #8B5A2B; /* Earth Brown */
+    color: var(--env-earth);
     display: block;
     margin-bottom: 0.75rem;
   }
@@ -595,13 +892,13 @@
   }
 
   :global(blockquote a) {
-    color: #6DAA3F; /* Ecosystem Green */
+    color: var(--env-secondary);
     text-decoration: underline;
     font-weight: 500;
   }
 
   :global(blockquote a:hover) {
-    color: #5A8F33; /* Darker Ecosystem Green on hover */
+    color: var(--env-primary);
   }
   
   .content :global(p) {
@@ -610,42 +907,43 @@
     color: #4b5563;
   }
   
-  /* Add to your existing <style> section */
+  /* Lists with environmental stewardship themed bullets */
   .content :global(ul), .content :global(ol) {
     margin-bottom: 1.5rem;
-    padding-left: 2rem; /* Slightly increased for better indentation */
-    color: #4b5563; /* Matches paragraph text color */
+    padding-left: 1rem;
+    color: #4b5563;
   }
 
   .content :global(ul) {
-    list-style-type: none; /* Remove default bullets */
+    list-style-type: none;
   }
 
   .content :global(ul li) {
     position: relative;
-    margin-bottom: 0.75rem; /* Slightly more spacing between items */
+    margin-bottom: 0.75rem;
     padding-left: 1.5rem;
   }
 
-  /* Apply leaves to all ul li EXCEPT those in section-nav */
+  /* Apply environmental symbols to all ul li EXCEPT those in section-nav */
   .content :global(ul li:not(.section-nav li))::before {
-    content: "🌿"; /* Leaf symbol for Environmental Stewardship */
+    content: "🌿";
     position: absolute;
     left: 0;
+    top: 0.1em;
     font-size: 0.9rem;
   }
 
   .content :global(ol) {
-    list-style-type: decimal; /* Ensure ordered lists use numbers */
+    list-style-type: decimal;
   }
 
   .content :global(ol li) {
-    margin-bottom: 0.75rem; /* Consistent spacing with ul */
+    margin-bottom: 0.75rem;
     padding-left: 0.5rem;
   }
 
   .content :global(ol li::marker) {
-    color: #6DAA3F; /* Ecosystem Green */
+    color: var(--env-secondary);
     font-weight: 600;
   }
 
@@ -656,11 +954,12 @@
   }
 
   .content :global(ul ul li::before) {
-    content: "🍃"; /* Small leaf for nested items */
+    content: "🍃";
+    color: var(--env-regenerative);
   }
 
-  /* Table styles */
-  .content :global(table) {
+  /* Table styles for environmental stewardship framework */
+  :global(.content table) {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
@@ -670,21 +969,20 @@
     overflow: hidden;
   }
 
-  .content :global(thead) {
-    background-color: #6DAA3F; /* Ecosystem Green background for headers */
-    color: #ffffff; /* White text */
+  :global(.content thead) {
+    background: linear-gradient(to right, var(--env-primary), var(--env-secondary));
   }
 
-  .content :global(th) {
+  :global(.content th) {
     padding: 0.75rem 1rem;
     font-weight: 600;
     text-align: left;
-    color: #ffffff; /* White text for better contrast */
+    color: #ffffff;
     border: none;
-    border-bottom: 2px solid #6DAA3F;
+    border-bottom: 2px solid var(--env-primary);
   }
 
-  .content :global(td) {
+  :global(.content td) {
     padding: 0.75rem 1rem;
     border: 1px solid #e5e7eb;
     border-left: none;
@@ -692,75 +990,45 @@
     vertical-align: top;
   }
 
-  .content :global(tr:nth-child(odd)) {
-    background-color: #f0f8f0;
+  :global(.content tr:nth-child(odd)) {
+    background-color: rgba(109, 170, 63, 0.05);
   }
 
-  .content :global(tr:nth-child(even)) {
+  :global(.content tr:nth-child(even)) {
     background-color: #ffffff;
   }
 
-  .content :global(tr:hover) {
-    background-color: #e8f5e8; /* Light green background on hover */
+  :global(.content tr:hover) {
+    background-color: rgba(109, 170, 63, 0.1);
   }
 
-  .content :global(tbody tr:last-child td) {
+  :global(.content tbody tr:last-child td) {
     border-bottom: none;
   }
-
-  /* Table caption or footer */
-  .content :global(table caption),
-  .content :global(table tfoot) {
-    background-color: #e8f5e8; /* Light Ecosystem Green */
-    padding: 0.75rem;
-    font-size: 0.875rem;
-    color: #6DAA3F;
-    text-align: left;
-    border-top: 1px solid #6DAA3F;
-  }
-
-  /* Highlight important cells */
-  .content :global(td.highlight) {
-    color: #6DAA3F; /* Ecosystem Green text */
-    font-weight: 600;
-  }
-
-  /* For responsive tables on small screens */
-  @media (max-width: 640px) {
-    .content :global(table) {
-      display: block;
-      overflow-x: auto;
-    }
-    
-    .content :global(th),
-    .content :global(td) {
-      white-space: nowrap;
-    }
-  }
   
-  /* Getting Started card */
-  .getting-started-card {
-    background: linear-gradient(135deg, #f0f8f0 0%, #e8f5e8 100%); /* Ecosystem Green gradient */
+  /* Environmental guide card */
+  .environmental-guide-card {
+    background: linear-gradient(135deg, rgba(109, 170, 63, 0.1) 0%, rgba(58, 110, 165, 0.1) 100%);
     border-radius: 0.75rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(109, 170, 63, 0.1); /* Ecosystem Green shadow */
-    border: 1px solid rgba(109, 170, 63, 0.2); /* Ecosystem Green border */
+    box-shadow: 0 4px 6px rgba(109, 170, 63, 0.1);
+    border: 1px solid rgba(109, 170, 63, 0.2);
     overflow: visible !important;
     position: relative;
     z-index: 1;
   }
 
-  .getting-started-card .dropdown-menu {
+  .environmental-guide-card .dropdown-menu {
     position: absolute;
-    top: 100%; /* Position from bottom of button */
+    top: 100%;
     left: 0;
-    z-index: 1001; /* Higher than surrounding elements */
+    z-index: 1001;
     min-width: 300px;
-    max-width: 350px; /* Limit width */
-    overflow: hidden; /* Fix for transparency issues */
-    border: 1px solid rgba(109, 170, 63, 0.3); /* Ecosystem Green border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
-    background-color: white; /* Ensure white background */
+    max-width: 350px;
+    overflow: hidden;
+    border: 1px solid rgba(109, 170, 63, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
   }
   
   .card-content {
@@ -773,7 +1041,7 @@
   
   .card-icon {
     font-size: 2.5rem;
-    color: #6DAA3F; /* Ecosystem Green */
+    color: var(--env-primary);
     flex-shrink: 0;
   }
   
@@ -784,7 +1052,7 @@
   
   .card-text h3 {
     margin: 0 0 0.5rem 0;
-    color: #6DAA3F; /* Ecosystem Green */
+    color: var(--env-primary);
     font-size: 1.25rem;
   }
   
@@ -804,7 +1072,7 @@
   }
   
   .primary-btn {
-    background-color: #6DAA3F; /* Ecosystem Green */
+    background-color: var(--env-primary);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -815,14 +1083,14 @@
   }
   
   .primary-btn:hover {
-    background-color: #5A8F33; /* Darker Ecosystem Green */
+    background-color: var(--env-secondary);
     transform: translateY(-1px);
   }
   
   .secondary-btn {
     background-color: white;
-    color: #6DAA3F; /* Ecosystem Green */
-    border: 1px solid #6DAA3F;
+    color: var(--env-primary);
+    border: 1px solid var(--env-primary);
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 500;
@@ -831,7 +1099,7 @@
   }
   
   .secondary-btn:hover {
-    background-color: #f0f8f0; /* Light Ecosystem Green */
+    background-color: rgba(109, 170, 63, 0.1);
     transform: translateY(-1px);
   }
   
@@ -846,400 +1114,302 @@
   }
 
   /* Link styles for content */
- .content :global(a) {
-   color: #6DAA3F; /* Ecosystem Green */
-   text-decoration: underline;
-   font-weight: 500;
-   transition: all 0.2s;
- }
+  .content :global(a) {
+    color: var(--env-secondary);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
 
- .content :global(a:hover) {
-   color: #5A8F33; /* Darker Ecosystem Green on hover */
-   text-decoration: underline;
- }
+  .content :global(a:hover) {
+    color: var(--env-primary);
+    text-decoration: underline;
+  }
 
- .content :global(a:active) {
-   color: #5A8F33; /* Darker Ecosystem Green when clicked */
- }
+  .content :global(a:active) {
+    color: var(--env-primary);
+  }
 
-/* External link styles with a subtle indicator */
- .content :global(a[href^="http"]):after, 
- .content :global(a[href^="https://"]):after {
-   content: " ↗";
-   font-size: 0.8em;
-   vertical-align: super;
- }
+  /* External link styles with a subtle indicator */
+  .content :global(a[href^="http"]):after, 
+  .content :global(a[href^="https://"]):after {
+    content: " ↗";
+    font-size: 0.8em;
+    vertical-align: super;
+  }
 
- /* PDF link styles with download indicator */
- .content :global(a[href$=".pdf"]):after {
-   content: " ↓";
-   font-size: 0.8em;
- }
+  /* PDF link styles with download indicator */
+  .content :global(a[href$=".pdf"]):after {
+    content: " ↓";
+    font-size: 0.8em;
+  }
 
- /* Section link styles - more subtle but still distinct */
- .content :global(a[href^="#"]) {
-   color: #3A6EA5; /* Harmony Blue for internal section links */
-   text-decoration: none;
-   border-bottom: 1px dotted #3A6EA5;
- }
+  /* Section link styles - more subtle but still distinct */
+  .content :global(a[href^="#"]) {
+    color: var(--env-accent);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--env-accent);
+  }
 
- .content :global(a[href^="#"]):hover {
-   color: #2A5D8F; /* Darker Harmony Blue */
-   border-bottom-color: #2A5D8F;
- }
+  .content :global(a[href^="#"]):hover {
+    color: var(--env-secondary);
+    border-bottom-color: var(--env-secondary);
+  }
 
- /* Make sure links in tables are readable against the background */
- .content :global(table a) {
-   color: #6DAA3F; /* Ecosystem Green */
-   font-weight: 600;
- }
- 
- /* Links in the section navigation */
- .section-nav a {
-   color: #4b5563;
-   text-decoration: none;
-   transition: color 0.2s;
- }
+  /* Make sure links in tables are readable against the background */
+  .content :global(table a) {
+    color: var(--env-secondary);
+    font-weight: 600;
+  }
 
- .section-nav a:hover {
-   color: #6DAA3F; /* Ecosystem Green */
- }
+  /* Links in the section navigation */
+  .section-nav a {
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
 
- /* Styles for navigation at bottom of getting started guide */
- .guide-navigation {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 3rem;
-   padding-top: 1.5rem;
-   border-top: 1px solid #e5e7eb;
- }
- 
- /* Dropdown styles for getting started guides */
- .dropdown {
-   position: relative;
-   display: inline-block;
- }
+  .section-nav a:hover {
+    color: var(--env-primary);
+  }
 
- .dropdown-toggle {
-   display: flex;
-   align-items: center;
-   gap: 0.5rem;
-   width: 100%;
- }
+  /* Styles for navigation at bottom of guide */
+  .guide-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
 
- .dropdown-menu {
-   position: absolute;
-   top: 100%;
-   left: 0;
-   z-index: 1000;
-   width: auto !important;
-   min-width: 300px !important;
-   padding: 0.5rem 0;
-   margin: 0.125rem 0 0;
-   background-color: #fff;
-   border: 1px solid rgba(0, 0, 0, 0.15);
-   border-radius: 0.25rem;
-   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-   margin-top: 0;
-   padding-top: 10px;
-   white-space: normal !important;
- }
- 
- .dropdown-li {
-   position: relative;
- }
+  /* Section navigation for core framework sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
 
- .dropdown-li .dropdown-menu {
-   width: 300px;
- }
+  .nav-btn {
+    background-color: var(--env-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
 
- /* Fix for dropdown items when getting started guide is active */
- .dropdown-li.active .dropdown-menu {
-   background-color: white !important; /* Force white background */
- }
+  .nav-btn:hover {
+    background-color: var(--env-secondary);
+    transform: translateY(-1px);
+  }
 
- .dropdown-li.active .dropdown-item {
-   color: #212529 !important; /* Force dark text */
- }
+  .prev-btn {
+    margin-right: auto;
+  }
 
- .dropdown-li.active .dropdown-item:hover {
-   background-color: #f0f8f0 !important; /* Light Ecosystem Green on hover */
-   color: #6DAA3F !important; /* Ecosystem Green text on hover */
- }
+  .next-btn {
+    margin-left: auto;
+  }
+  
+  @media (max-width: 640px) {
+    .card-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .card-actions {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .guide-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .guide-navigation button {
+      width: 100%;
+    }
 
- .dropdown-li.active .dropdown-menu .dropdown-item {
-   color: #212529 !important; /* Force dark text always */
-   background-color: transparent !important; /* Clear any background */
- }
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
 
- .dropdown-li.active .dropdown-menu {
-   background-color: white !important; /* Force white background */
- }
+    .section-navigation button {
+      width: 100%;
+    }
+  }
 
- /* Remove any inherited text color styling */
- .dropdown-li.active .dropdown-item *,
- .dropdown-li.active .guide-title,
- .dropdown-li.active .guide-desc,
- .dropdown-li.active .guide-icon {
-   color: inherit !important; /* Force inheritance */
- }
+  /* Environmental Stewardship Framework specific theme elements */
 
- /* Hover state */
- .dropdown-li.active .dropdown-item:hover {
-   background-color: #f0f8f0 !important; /* Light Ecosystem Green on hover */
-   color: #6DAA3F !important; /* Ecosystem Green text on hover */
- }
+  /* Special callouts for environmental concepts */
+  .content :global(.ecosystem-callout) {
+    background-color: rgba(109, 170, 63, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--env-primary);
+  }
 
- /* Fix for guide icons in dropdown */
- .dropdown-item .guide-icon {
-   display: inline-block;
-   width: 24px;
-   text-align: center;
-   margin-right: 8px;
- }
- 
- .dropdown-item {
-   display: flex;
-   align-items: center;
-   width: 100%;
-   padding: 0.75rem 1.5rem;
-   clear: both;
-   font-weight: 400;
-   color: #212529;
-   text-align: inherit;
-   white-space: normal !important;
-   background-color: transparent;
-   border: 0;
-   cursor: pointer;
- }
- 
- .dropdown-item:hover, .dropdown-item:focus {
-   color: #16181b;
-   text-decoration: none;
-   background-color: #f0f8f0; /* Light Ecosystem Green */
- }
- 
- /* Getting started guide selector styles */
- .getting-started-selector {
-   margin-bottom: 2rem;
-   padding-bottom: 1rem;
-   border-bottom: 1px solid #e5e7eb;
- }
- 
- .guide-cards {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 1rem;
-   margin-top: 1rem;
- }
- 
- .guide-card {
-   flex: 1;
-   min-width: 200px;
-   max-width: 300px;
-   padding: 1.5rem;
-   border-radius: 0.5rem;
-   border: 1px solid #e5e7eb;
-   cursor: pointer;
-   transition: all 0.2s;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
- }
- 
- .guide-card:hover {
-   box-shadow: 0 4px 6px rgba(109, 170, 63, 0.1); /* Ecosystem Green shadow */
-   transform: translateY(-2px);
-   border-color: #6DAA3F; /* Ecosystem Green */
- }
- 
- .guide-card.active {
-   border-color: #6DAA3F; /* Ecosystem Green */
-   background-color: #f0f8f0; /* Light Ecosystem Green */
- }
- 
- .guide-icon {
-   font-size: 2rem;
-   margin-bottom: 0.5rem;
- }
- 
- .guide-title {
-   font-weight: 600;
-   margin-bottom: 0.5rem;
-   color: #6DAA3F; /* Ecosystem Green */
- }
- 
- .guide-desc {
-   font-size: 0.875rem;
-   color: #6b7280;
- }
- 
- .guide-info {
-   display: flex;
-   flex-direction: column;
- }
- 
- /* For dropdown guide items */
- .dropdown-item .guide-icon {
-   font-size: 1.5rem;
-   margin-right: 1rem;
-   margin-bottom: 0;
- }
- 
- .dropdown-item .guide-title {
-   font-weight: 600;
-   margin-bottom: 0.25rem;
- }
- 
- .dropdown-item .guide-desc {
-   font-size: 0.75rem;
-   color: #6b7280;
- }
- 
- @media (max-width: 640px) {
-   .card-content {
-     flex-direction: column;
-     align-items: flex-start;
-     gap: 1rem;
-   }
-   
-   .card-actions {
-     width: 100%;
-     justify-content: center;
-   }
-   
-   .guide-navigation {
-     flex-direction: column;
-     gap: 1rem;
-   }
-   
-   .guide-navigation button {
-     width: 100%;
-   }
-   
-   .guide-cards {
-     flex-direction: column;
-   }
-   
-   .guide-card {
-     max-width: none;
-   }
- }
+  .content :global(.spiritual-callout) {
+    background-color: rgba(139, 90, 43, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--env-earth);
+  }
 
- /* Environmental Stewardship Framework color-specific elements */
+  .content :global(.climate-callout) {
+    background-color: rgba(58, 110, 165, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--env-secondary);
+  }
 
- /* Color coding for different sections */
- .content :global(.guiding-principles-section h2) {
-   color: #8B5A2B; /* Earth Brown */
-   border-left: 3px solid #8B5A2B;
-   padding-left: 0.75rem;
- }
+  .content :global(.regenerative-callout) {
+    background-color: rgba(32, 178, 170, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--env-regenerative);
+  }
 
- .content :global(.governance-structure-section h2) {
-   color: #6DAA3F; /* Ecosystem Green */
-   border-left: 3px solid #6DAA3F;
-   padding-left: 0.75rem;
- }
+  /* Special styling for case studies */
+  .content :global(.case-study) {
+    background-color: rgba(245, 166, 35, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--env-accent);
+  }
 
- .content :global(.core-pillars-section h2) {
-   color: #3A6EA5; /* Harmony Blue */
-   border-left: 3px solid #3A6EA5;
-   padding-left: 0.75rem;
- }
+  .content :global(.case-study-title) {
+    color: var(--env-accent);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
 
- .content :global(.implementation-section h2) {
-   color: #F5A623; /* Solar Gold */
-   border-left: 3px solid #F5A623;
-   padding-left: 0.75rem;
- }
+  /* Alert/warning styling */
+  .content :global(.alert) {
+    background-color: rgba(196, 59, 59, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--env-justice);
+  }
 
- /* Special callouts for environmental concepts */
- .content :global(.ecosystem-callout) {
-   background-color: rgba(109, 170, 63, 0.1);
-   border-radius: 0.5rem;
-   padding: 1rem;
-   margin: 1.5rem 0;
-   border-left: 4px solid #6DAA3F; /* Ecosystem Green */
- }
+  .content :global(.alert-title) {
+    color: var(--env-justice);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
 
- .content :global(.spiritual-callout) {
-   background-color: rgba(139, 90, 43, 0.1);
-   border-radius: 0.5rem;
-   padding: 1rem;
-   margin: 1.5rem 0;
-   border-left: 4px solid #8B5A2B; /* Earth Brown */
- }
+  /* Highlight boxes for important environmental concepts */
+  .content :global(.concept-highlight) {
+    background-color: rgba(109, 170, 63, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(109, 170, 63, 0.3);
+  }
 
- .content :global(.climate-callout) {
-   background-color: rgba(58, 110, 165, 0.1);
-   border-radius: 0.5rem;
-   padding: 1rem;
-   margin: 1.5rem 0;
-   border-left: 4px solid #3A6EA5; /* Harmony Blue */
- }
+  .content :global(.concept-highlight-title) {
+    color: var(--env-primary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(109, 170, 63, 0.3);
+    padding-bottom: 0.5rem;
+  }
 
- /* Special styling for case studies */
- .content :global(.case-study) {
-   background-color: rgba(245, 166, 35, 0.1); /* Solar Gold background */
-   border-radius: 0.5rem;
-   padding: 1.25rem;
-   margin: 1.5rem 0;
-   border-left: 4px solid #F5A623; /* Solar Gold */
- }
+  /* Rights recognition styling */
+  .content :global(.rights-highlight) {
+    background-color: rgba(138, 79, 158, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(138, 79, 158, 0.3);
+  }
 
- .content :global(.case-study-title) {
-   color: #F5A623; /* Solar Gold */
-   font-weight: 600;
-   margin-bottom: 0.75rem;
- }
+  .content :global(.rights-highlight-title) {
+    color: var(--env-spirit);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(138, 79, 158, 0.3);
+    padding-bottom: 0.5rem;
+  }
 
- /* Alert/warning styling */
- .content :global(.alert) {
-   background-color: rgba(196, 59, 59, 0.1); /* Alert Red background */
-   border-radius: 0.5rem;
-   padding: 1.25rem;
-   margin: 1.5rem 0;
-   border-left: 4px solid #C43B3B; /* Alert Red */
- }
+  /* Governance and sovereignty styling */
+  .content :global(.governance-highlight) {
+    background-color: rgba(58, 110, 165, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(58, 110, 165, 0.3);
+  }
 
- .content :global(.alert-title) {
-   color: #C43B3B; /* Alert Red */
-   font-weight: 600;
-   margin-bottom: 0.75rem;
- }
+  .content :global(.governance-highlight-title) {
+    color: var(--env-secondary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(58, 110, 165, 0.3);
+    padding-bottom: 0.5rem;
+  }
 
- /* Highlight boxes for important concepts */
- .content :global(.concept-highlight) {
-   background-color: rgba(139, 90, 43, 0.1); /* Earth Brown background */
-   border-radius: 0.5rem;
-   padding: 1.25rem;
-   margin: 1.5rem 0;
-   border: 1px solid rgba(139, 90, 43, 0.3); /* Earth Brown border */
- }
+  /* Economic transformation styling */
+  .content :global(.economic-highlight) {
+    background-color: rgba(245, 166, 35, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(245, 166, 35, 0.3);
+  }
 
- .content :global(.concept-highlight-title) {
-   color: #8B5A2B; /* Earth Brown */
-   font-weight: 600;
-   margin-bottom: 0.75rem;
-   border-bottom: 1px solid rgba(139, 90, 43, 0.3);
-   padding-bottom: 0.5rem;
- }
+  .content :global(.economic-highlight-title) {
+    color: var(--env-accent);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(245, 166, 35, 0.3);
+    padding-bottom: 0.5rem;
+  }
 
- /* Rights recognition styling */
- .content :global(.rights-highlight) {
-   background-color: rgba(138, 79, 158, 0.1); /* Rights Purple background */
-   border-radius: 0.5rem;
-   padding: 1.25rem;
-   margin: 1.5rem 0;
-   border: 1px solid rgba(138, 79, 158, 0.3); /* Rights Purple border */
- }
+  /* Cultural heritage and grounding styling */
+  .content :global(.heritage-highlight) {
+    background-color: rgba(139, 90, 43, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(139, 90, 43, 0.3);
+  }
 
- .content :global(.rights-highlight-title) {
-   color: #8A4F9E; /* Rights Purple */
-   font-weight: 600;
-   margin-bottom: 0.75rem;
-   border-bottom: 1px solid rgba(138, 79, 158, 0.3);
-   padding-bottom: 0.5rem;
- }
+  .content :global(.heritage-highlight-title) {
+    color: var(--env-earth);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(139, 90, 43, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Justice and urgency styling */
+  .content :global(.justice-highlight) {
+    background-color: rgba(196, 59, 59, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(196, 59, 59, 0.3);
+  }
+
+  .content :global(.justice-highlight-title) {
+    color: var(--env-justice);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(196, 59, 59, 0.3);
+    padding-bottom: 0.5rem;
+  }
 </style>

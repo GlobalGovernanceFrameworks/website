@@ -7,6 +7,7 @@
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -61,6 +62,19 @@
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -101,28 +115,14 @@
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
-  // Translations for the introduction section
-  const introSv = {
-    title: "Global Guardian Ramverk: Djurvälfärd för en Delad Framtid",
-    overview: "Översikt",
-    paragraph1: "Global Guardian Ramverket framträder som en transformativ plan för att omvandla mänsklighetens relation med djur från dominans till partnerskap, positionerande djur som kännande varelser som förtjänar medkänsla och respekt.",
-    paragraph2: "Detta ramverk återföreställer vårt förhållande till alla kännande varelser genom att hedra traditionell visdom samtidigt som det möjliggör moderna innovationer för ett framtida där alla liv kan blomstra."
-  };
-
-  // English translations as fallback
-  const introEn = {
-    title: "Global Guardian Framework: Animal Welfare for a Shared Future",
-    overview: "Overview",
-    paragraph1: "The Global Guardian Framework emerges as a transformative blueprint for converting humanity's relationship with animals from domination to guardianship, positioning animals as sentient beings deserving compassion and respect.",
-    paragraph2: "This framework reimagines our relationship with all sentient life by honoring traditional wisdom while enabling modern innovations for a future where all life can thrive."
-  };
-
   // Get section titles in current language
   function getSectionTitle(section) {
     const titles = {
       en: {
         // Entry and overview sections
-        'index': "Framework Overview",
+        'index': "Overview",
+        'global-guardian-framework-essentials': "Framework Essentials Guide",
+        'executive-summary': "Executive Summary",
         
         // Core framework sections (01-08)
         '01-introduction': "Introduction & Scientific Foundation",
@@ -132,29 +132,23 @@
         '05-metrics-evaluation': "Metrics & Evaluation",
         '06-cultural-justice': "Cultural Sensitivity & Justice",
         '07-environmental-integration': "Environmental Integration",
-        '08-appendices': "Appendices & Resources",
-        
-        // Essential guide and executive summary
-        'global-guardian-framework-essentials': "Framework Essentials Guide",
-        'executive-summary': "Executive Summary"
+        '08-appendices': "Appendices & Resources"
       },
       sv: {
         // Entry and overview sections (Swedish)
-        'index': "Ramverk Översikt",
+        'index': "Översikt",
+        'global-guardian-framework-essentials': "Ramverk grundläggande guide",
+        'executive-summary': "Verkställande sammanfattning",
         
         // Core framework sections (Swedish)
-        '01-introduction': "Introduktion & Vetenskaplig Grund",
+        '01-introduction': "Introduktion & vetenskaplig grund",
         '02-core-principles': "Kärnprinciper",
-        '03-structural-components': "Strukturella Komponenter", 
+        '03-structural-components': "Strukturella komponenter", 
         '04-implementation-approaches': "Implementeringsmetoder",
-        '05-metrics-evaluation': "Mätning & Utvärdering",
-        '06-cultural-justice': "Kulturell Känslighet & Rättvisa",
+        '05-metrics-evaluation': "Mätning & utvärdering",
+        '06-cultural-justice': "Kulturell känslighet & rättvisa",
         '07-environmental-integration': "Miljöintegration",
-        '08-appendices': "Bilagor & Resurser",
-        
-        // Essential guide and executive summary (Swedish)
-        'global-guardian-framework-essentials': "Ramverk Grundläggande Guide",
-        'executive-summary': "Verkställande Sammanfattning"
+        '08-appendices': "Bilagor & resurser"
       }
     };
     
@@ -167,20 +161,26 @@
     
     const shortTitles = {
       'Introduction & Scientific Foundation': 'Introduction',
-      'Core Principles': 'Core Principles',
+      'Core Principles': 'Principles',
       'Structural Components': 'Governance',
       'Implementation Approaches': 'Implementation',
       'Metrics & Evaluation': 'Metrics',
       'Cultural Sensitivity & Justice': 'Cultural Justice',
       'Environmental Integration': 'Environment',
-      'Appendices & Resources': 'Resources'
+      'Appendices & Resources': 'Resources',
+      // Swedish short titles
+      'Introduktion & vetenskaplig grund': 'Introduktion',
+      'Kärnprinciper': 'Principer',
+      'Strukturella komponenter': 'Styrning',
+      'Implementeringsmetoder': 'Implementering',
+      'Mätning & utvärdering': 'Mätning',
+      'Kulturell känslighet & rättvisa': 'Kulturell rättvisa',
+      'Miljöintegration': 'Miljö',
+      'Bilagor & resurser': 'Resurser'
     };
     
     return shortTitles[fullTitle] || fullTitle;
   }
-
-  // Choose the right intro text based on the current locale
-  $: intro = currentLocale === 'sv' ? introSv : introEn;
 
   $: if (browser && $locale) {
     invalidate('app:locale');
@@ -200,11 +200,17 @@
 
   // Check if the active section is the essentials version
   $: isEssentialsActive = activeSection === 'global-guardian-framework-essentials';
-  $: isSupplementaryActive = ['08-appendices', 'global-guardian-framework-essentials', 'executive-summary'].includes(activeSection);
+  $: isSupplementaryActive = ['global-guardian-framework-essentials', 'executive-summary'].includes(activeSection);
 
   // For handling dropdown states
   let isDropdownOpen = false;
   let isNavDropdownOpen = false;
+
+  // Accordion states for section categories
+  let foundationOpen = true; // Start with foundation open
+  let implementationOpen = false;
+  let integrationOpen = false;
+  let resourcesOpen = false;
 
   function toggleDropdown() {
     isDropdownOpen = !isDropdownOpen;
@@ -216,6 +222,22 @@
     isNavDropdownOpen = !isNavDropdownOpen;
     // Close the other dropdown if it's open
     if (isNavDropdownOpen) isDropdownOpen = false;
+  }
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleIntegration() {
+    integrationOpen = !integrationOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
   }
 
   // Close dropdowns when clicking outside
@@ -242,6 +264,44 @@
       };
     }
   });
+
+  // Get the total number of core framework sections (01-08)
+  $: coreFrameworkSections = Object.keys(data.sections || {}).filter(section => 
+    section.match(/^\d{2}-/) && !['global-guardian-framework-essentials', 'executive-summary'].includes(section)
+  );
+
+  // Check if this is a core framework section
+  $: isCoreSection = activeSection.match(/^\d{2}-/);
+
+  // Get localized text for buttons and UI elements
+  function getLocalizedText(key) {
+    const texts = {
+      en: {
+        newToFramework: "New to Global Guardian Framework?",
+        startWithEssentials: "Start with our accessible essentials guide that explains the framework's core principles and community-led transformation pathway for animal welfare.",
+        readEssentials: "Read the Framework Essentials",
+        downloadPdf: "Download PDF Version",
+        continueToFull: "Continue to Full Framework",
+        foundation: "Foundation",
+        implementation: "Implementation",
+        integration: "Integration",
+        resources: "Resources"
+      },
+      sv: {
+        newToFramework: "Ny inom global guardian ramverket?",
+        startWithEssentials: "Börja med vår tillgängliga grundguide som förklarar ramverkets kärnprinciper och samhällsledda transformationsväg för djurvälfärd.",
+        readEssentials: "Läs ramverkets grundläggande",
+        downloadPdf: "Ladda ner PDF-version",
+        continueToFull: "Fortsätt till fullständigt ramverk",
+        foundation: "Grund",
+        implementation: "Implementering",
+        integration: "Integration",
+        resources: "Resurser"
+      }
+    };
+    
+    return (texts[currentLocale] || texts.en)[key] || key;
+  }
 </script>
 
 <svelte:window on:click={handleClickOutside}/>
@@ -258,12 +318,12 @@
         <div class="card-content">
           <div class="card-icon">🐾</div>
           <div class="card-text">
-            <h3>New to Global Guardian Framework?</h3>
-            <p>Start with our accessible essentials guide that explains the framework's core principles and community-led transformation pathway for animal welfare.</p>
+            <h3>{getLocalizedText('newToFramework')}</h3>
+            <p>{getLocalizedText('startWithEssentials')}</p>
           </div>
           <div class="card-actions">
             <button class="primary-btn" on:click={() => setActiveSection('global-guardian-framework-essentials')}>
-              Read the Framework Essentials <span class="arrow-icon">→</span>
+              {getLocalizedText('readEssentials')} <span class="arrow-icon">→</span>
             </button>
           </div>
         </div>
@@ -274,65 +334,167 @@
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            <!-- Overview -->
-            <li class:active={activeSection === 'index'}>
-              <button on:click={() => setActiveSection('index')}>
-                Overview
-              </button>
-            </li>
-            
-            <!-- Core Framework sections (01-08) -->
-            {#each Object.keys(data.sections).filter(section => 
-              section.match(/^\d{2}-/) && !['index', 'global-guardian-framework-essentials'].includes(section)
-            ) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getShortSectionTitle(section)}
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">Overview</span>
+            </button>
+          </div>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={coreFrameworkSections.slice(0, 3).some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">🐾</span>
+              <span class="accordion-title">{getLocalizedText('foundation')}</span>
+              <span class="section-count">({coreFrameworkSections.slice(0, 3).length})</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(0, 3) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={coreFrameworkSections.slice(3, 5).some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">{getLocalizedText('implementation')}</span>
+              <span class="section-count">({coreFrameworkSections.slice(3, 5).length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(3, 5) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Integration Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={integrationOpen}
+              class:has-active={coreFrameworkSections.slice(5, 7).some(section => activeSection === section)}
+              on:click={toggleIntegration}
+            >
+              <span class="accordion-icon">🌍</span>
+              <span class="accordion-title">{getLocalizedText('integration')}</span>
+              <span class="section-count">({coreFrameworkSections.slice(5, 7).length})</span>
+              <span class="toggle-arrow" class:rotated={integrationOpen}>▼</span>
+            </button>
+            {#if integrationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(5, 7) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive || coreFrameworkSections.slice(7).some(section => activeSection === section)}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">{getLocalizedText('resources')}</span>
+              <span class="section-count">(3)</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(7) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'global-guardian-framework-essentials'}
+                  on:click={() => setActiveSection('global-guardian-framework-essentials')}
+                >
+                  <span class="nav-icon">📋</span>
+                  <span class="nav-title">{getSectionTitle('global-guardian-framework-essentials')}</span>
                 </button>
-              </li>
-            {/each}
-                        
-            <!-- Resources dropdown -->
-            <li class="dropdown-li" class:active={isSupplementaryActive}>
-              <button class="dropdown-toggle">
-                Resources <span class="arrow-icon">▾</span>
-              </button>
-              <div class="dropdown-menu supplementary-dropdown">
-                <button class="dropdown-item" on:click={() => setActiveSection('08-appendices')}>
-                  <span class="supplement-icon">📚</span>
-                  <span class="supplement-title">Appendices & Tools</span>
-                </button>
-                <button class="dropdown-item" on:click={() => setActiveSection('global-guardian-framework-essentials')}>
-                  <span class="supplement-icon">📋</span>
-                  <span class="supplement-title">Framework Essentials</span>
-                </button>
-                <button class="dropdown-item" on:click={() => setActiveSection('executive-summary')}>
-                  <span class="supplement-icon">📊</span>
-                  <span class="supplement-title">Executive Summary</span>
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === 'executive-summary'}
+                  on:click={() => setActiveSection('executive-summary')}
+                >
+                  <span class="nav-icon">📊</span>
+                  <span class="nav-title">{getSectionTitle('executive-summary')}</span>
                 </button>
               </div>
-            </li>
-          </ul>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((parseInt(activeSection.substring(0, 2)) / 8) * 100)}%"></div>
+          </div>
+          <span class="progress-text">Section {parseInt(activeSection.substring(0, 2))} of 8</span>
         </div>
       {/if}
 
       <!-- Show active section, or all sections in print mode -->
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
-          {#if section === 'index' && currentLocale === 'sv'}
-            <!-- Manually render Swedish introduction for the index section -->
-            <div class="overview-section">
-              <h1>{intro.title}</h1>
-              <h2>{intro.overview}</h2>
-              <p>{intro.paragraph1}</p>
-              <p>{intro.paragraph2}</p>
-            </div>
-          {:else if section === 'index'}
-            <!-- Render English introduction through the markdown component -->
-            <svelte:component this={data.sections[section].default} />
-          {:else if data.sections[section]}
-            <!-- Render normal sections from markdown files -->
+          {#if data.sections[section]}
+            <!-- Render sections from markdown files -->
             <svelte:component this={data.sections[section].default} />
           {:else}
             <p>Section {section} not found</p>
@@ -342,14 +504,14 @@
           {#if section === 'global-guardian-framework-essentials' && !isPrintMode}
             <div class="guide-navigation">
               <button class="secondary-btn" on:click={() => downloadGuide('essentials')}>
-                Download PDF Version <span class="download-icon">↓</span>
+                {getLocalizedText('downloadPdf')} <span class="download-icon">↓</span>
               </button>
               <div class="navigation-group">
                 <button class="secondary-btn" on:click={() => setActiveSection('executive-summary')}>
                   View Executive Summary <span class="arrow-icon">→</span>
                 </button>
                 <button class="primary-btn" on:click={() => setActiveSection('01-introduction')}>
-                  Continue to Full Framework <span class="arrow-icon">→</span>
+                  {getLocalizedText('continueToFull')} <span class="arrow-icon">→</span>
                 </button>
               </div>
             </div>
@@ -359,16 +521,41 @@
           {#if section === 'executive-summary' && !isPrintMode}
             <div class="guide-navigation">
               <button class="secondary-btn" on:click={() => downloadGuide('executive-summary')}>
-                Download PDF Version <span class="download-icon">↓</span>
+                {getLocalizedText('downloadPdf')} <span class="download-icon">↓</span>
               </button>
               <div class="navigation-group">
                 <button class="secondary-btn" on:click={() => setActiveSection('global-guardian-framework-essentials')}>
                   View Framework Essentials <span class="arrow-icon">→</span>
                 </button>
                 <button class="primary-btn" on:click={() => setActiveSection('01-introduction')}>
-                  Continue to Full Framework <span class="arrow-icon">→</span>
+                  {getLocalizedText('continueToFull')} <span class="arrow-icon">→</span>
                 </button>
               </div>
+            </div>
+          {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if coreFrameworkSections.indexOf(activeSection) > 0}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const prevSection = coreFrameworkSections[currentIndex - 1];
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const nextSection = coreFrameworkSections[currentIndex + 1];
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
             </div>
           {/if}
         </div>
@@ -376,10 +563,10 @@
     {:else}
       <!-- Legacy single file display -->
       <div class="overview-section">
-        <h1>{intro.title}</h1>
-        <h2>{intro.overview}</h2>
-        <p>{intro.paragraph1}</p>
-        <p>{intro.paragraph2}</p>
+        <h1>Global Guardian Framework: Animal Welfare for a Shared Future</h1>
+        <h2>Overview</h2>
+        <p>The Global Guardian Framework emerges as a transformative blueprint for converting humanity's relationship with animals from domination to guardianship, positioning animals as sentient beings deserving compassion and respect.</p>
+        <p>This framework reimagines our relationship with all sentient life by honoring traditional wisdom while enabling modern innovations for a future where all life can thrive.</p>
       </div>
       
       <!-- The rest of the content -->
@@ -407,44 +594,199 @@
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
+
+  .nav-section {
     margin-bottom: 0.5rem;
   }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
-    cursor: pointer;
-    color: #4b5563;
-    transition: all 0.2s;
+    overflow: hidden;
+    background: white;
   }
-  
-  .section-nav li.active button {
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
+  }
+
+  .accordion-header:hover {
+    background-color: rgba(5, 150, 105, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(30, 64, 175, 0.1);
+    color: var(--guardian-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(5, 150, 105, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(5, 150, 105, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
     background-color: var(--guardian-primary);
     color: white;
-    border-color: var(--guardian-primary);
+    font-weight: 600;
   }
-  
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
+
+  .nav-item.active:hover {
+    background-color: var(--guardian-secondary);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(5, 150, 105, 0.1));
+    border: 1px solid rgba(30, 64, 175, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--guardian-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(30, 64, 175, 0.1);
+    color: var(--guardian-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(30, 64, 175, 0.1), rgba(5, 150, 105, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--guardian-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--guardian-primary), var(--guardian-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--guardian-primary);
+    font-weight: 500;
   }
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem;
   }
 
   .documentation-container {
@@ -459,6 +801,24 @@
   @media (max-width: 768px) {
     .documentation-container {
       grid-template-columns: 1fr;
+    }
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
     }
   }
   
@@ -644,36 +1004,6 @@
   :global(.content tbody tr:last-child td) {
     border-bottom: none;
   }
-
-  /* Table caption or footer */
-  :global(.content table caption),
-  :global(.content table tfoot) {
-    background-color: rgba(5, 150, 105, 0.1);
-    padding: 0.75rem;
-    font-size: 0.875rem;
-    color: var(--guardian-primary);
-    text-align: left;
-    border-top: 1px solid var(--guardian-primary);
-  }
-
-  /* Highlight important cells */
-  :global(.content td.highlight) {
-    color: var(--guardian-primary);
-    font-weight: 600;
-  }
-
-  /* For responsive tables on small screens */
-  @media (max-width: 640px) {
-    :global(.content table) {
-      display: block;
-      overflow-x: auto;
-    }
-    
-    :global(.content th),
-    :global(.content td) {
-      white-space: nowrap;
-    }
-  }
   
   /* Guardian framework guide card */
   .guardian-guide-card {
@@ -841,7 +1171,7 @@
   .section-nav a:hover {
     color: var(--guardian-primary);
   }
- 
+
   /* Styles for navigation at bottom of guide */
   .guide-navigation {
     display: flex;
@@ -850,142 +1180,46 @@
     padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
   }
-  
-  /* Dropdown styles for supplementary materials */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
 
-  .dropdown-toggle {
+  /* Section navigation for core framework sections */
+  .section-navigation {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
   }
 
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    width: auto !important;
-    min-width: 250px !important;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-    margin-top: 0;
-    padding-top: 10px;
-    white-space: normal !important;
-  }
-
-  .dropdown:hover .dropdown-menu,
-  .dropdown-li:hover .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown::after,
-  .dropdown-li::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background: transparent;
-  }
- 
-  .dropdown-li {
-    position: relative;
-  }
-
-  .dropdown-li .dropdown-menu {
-    width: 250px;
-    display: none;
-  }
-
-  .dropdown-li:hover .dropdown-menu {
-    display: block;
-  }
-
-  /* Fix for dropdown items when supplementary is active */
-  .dropdown-li.active .dropdown-menu {
-    background-color: white !important;
-  }
- 
-  .dropdown-li.active .dropdown-item {
-    color: #212529 !important;
-  }
- 
-  .dropdown-li.active .dropdown-item:hover {
-    background-color: rgba(5, 150, 105, 0.1) !important;
-    color: var(--guardian-primary) !important;
-  }
-
-  .dropdown-li.active .dropdown-menu .dropdown-item {
-    color: #212529 !important;
-    background-color: transparent !important;
-  }
-
-  .dropdown-li.active .dropdown-menu {
-    background-color: white !important;
-  }
-
-  /* Remove any inherited text color styling */
-  .dropdown-li.active .dropdown-item *,
-  .dropdown-li.active .supplement-title,
-  .dropdown-li.active .supplement-icon {
-    color: inherit !important;
-  }
-
-  /* Hover state */
-  .dropdown-li.active .dropdown-item:hover {
-    background-color: rgba(5, 150, 105, 0.1) !important;
-    color: var(--guardian-primary) !important;
-  }
-
-  /* Fix for supplement icons in dropdown */
-  .dropdown-item .supplement-icon {
-    display: inline-block;
-    width: 24px;
-    text-align: center;
-    margin-right: 8px;
-  }
-
-  .dropdown-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
+  .nav-btn {
+    background-color: var(--guardian-primary);
+    color: white;
+    border: none;
     padding: 0.75rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: normal !important;
-    background-color: transparent;
-    border: 0;
+    border-radius: 0.375rem;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.2s;
   }
 
-  .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
-    text-decoration: none;
-    background-color: rgba(5, 150, 105, 0.1);
+  .nav-btn:hover {
+    background-color: var(--guardian-secondary);
+    transform: translateY(-1px);
   }
 
-  .supplement-icon {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    margin-bottom: 0;
+  .prev-btn {
+    margin-right: auto;
   }
 
-  .supplement-title {
-    font-weight: 600;
+  .next-btn {
+    margin-left: auto;
   }
 
+  .navigation-group {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
   @media (max-width: 640px) {
     .card-content {
       flex-direction: column;
@@ -1004,6 +1238,24 @@
     }
     
     .guide-navigation button {
+      width: 100%;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
+      width: 100%;
+    }
+
+    .navigation-group {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .navigation-group button {
       width: 100%;
     }
   }
@@ -1190,22 +1442,5 @@
     margin-bottom: 0.75rem;
     border-bottom: 1px solid rgba(99, 102, 241, 0.3);
     padding-bottom: 0.5rem;
-  }
-
-  .navigation-group {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-  }
-
-  @media (max-width: 640px) {
-    .navigation-group {
-      flex-direction: column;
-      width: 100%;
-    }
-    
-    .navigation-group button {
-      width: 100%;
-    }
   }
 </style>
