@@ -3,6 +3,12 @@
     "title": "Kontakta Oss",
     "subtitle": "Vi hör gärna från dig om global styrningsinnovation."
   },
+  "discord": {
+    "title": "Gå Med i Vår Community",
+    "description": "Anslut med likasinnade individer, dela idéer och håll dig uppdaterad om den senaste utvecklingen inom global styrning.",
+    "button": "Gå Med i Discord",
+    "inviteLink": "https://discord.gg/Zx4hMJf4JU"
+  },
   "getInTouch": {
     "title": "Ta Kontakt",
     "description": "Har du frågor, idéer eller feedback om Global Governance Framework? Vi vill höra från dig. Fyll i formuläret så återkommer vi så snart som möjligt.",

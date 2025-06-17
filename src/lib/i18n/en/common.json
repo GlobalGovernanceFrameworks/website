@@ -23,7 +23,10 @@
     "rights": "All Rights Reserved",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "glossary": "Glossary"
+    "glossary": "Glossary",
+    "discord": {
+      "inviteLink": "https://discord.gg/Zx4hMJf4JUe"
+    }
   },
   "language": {
     "select": "Select language"

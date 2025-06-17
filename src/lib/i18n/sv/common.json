@@ -23,7 +23,10 @@
     "rights": "Alla Rättigheter Förbehållna",
     "privacy": "Integritetspolicy",
     "terms": "Användarvillkor",
-    "glossary": "Ordlista"
+    "glossary": "Ordlista",
+    "discord": {
+      "inviteLink": "https://discord.gg/Zx4hMJf4JUe"
+    }
   },
   "language": {
     "select": "Välj språk"

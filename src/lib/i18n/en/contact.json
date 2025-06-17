@@ -3,6 +3,12 @@
     "title": "Contact Us",
     "subtitle": "We'd love to hear from you about global governance innovation."
   },
+  "discord": {
+    "title": "Join Our Community",
+    "description": "Connect with like-minded individuals, share ideas, and stay updated on the latest developments in global governance.",
+    "button": "Join Discord",
+    "inviteLink": "https://discord.gg/Zx4hMJf4JU"
+  },
   "getInTouch": {
     "title": "Get in Touch",
     "description": "Have questions, ideas, or feedback about the Global Governance Framework? We want to hear from you. Fill out the form and we'll get back to you as soon as possible.",
