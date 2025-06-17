@@ -196,7 +196,7 @@
         '10-glossary-references': "Ordlista & Referenser",
         
         // Essential guide
-        'indigenous-framework-essentials': "Ramverk Grundläggande Guide"
+        'indigenous-framework-essentials': "Ramverk grundläggande guide"
       }
     };
     
@@ -231,8 +231,8 @@
         'Vägar för allierat engagemang': 'Allierat engagemang',
         'Dokumentation & riskbedömning': 'Dokumentation',
         'Systemkarta: Det heliga nätverket': 'Heligt nätverk',
-        'Ordlista & Referenser': 'Ordlista',
-        'Ramverk Grundläggande Guide': 'Grundguide'
+        'Ordlista & referenser': 'Ordlista',
+        'Ramverk grundläggande guide': 'Grundguide'
       }
     };
     
@@ -372,12 +372,12 @@
       sv: {
         newToFramework: "Ny inom ursprungsfolks styrningsramverk?",
         startWithEssentials: "Börja med vår tillgängliga grundguide som förklarar ramverkets kärnprinciper och ursprungsfolksledda transformationsväg.",
-        readEssentials: "Läs Ramverkets Grundläggande",
+        readEssentials: "Läs ramverkets grundguide",
         downloadPdf: "Ladda ner PDF-version",
-        continueToFull: "Fortsätt till Fullständigt Ramverk",
+        continueToFull: "Fortsätt till fullständigt ramverk",
         resources: "Resurser",
-        appendicesTools: "Ordlista & Referenser",
-        frameworkEssentials: "Ramverk Grundläggande"
+        appendicesTools: "Ordlista & referenser",
+        frameworkEssentials: "Ramverk, essens"
       }
     };
     
@@ -593,6 +593,17 @@
       <!-- Show active section, or all sections in print mode -->
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
+          <!-- Language fallback notice -->
+          {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
+            <div class="language-fallback-notice">
+              <div class="notice-icon">🌐</div>
+              <div class="notice-content">
+                <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+                <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+              </div>
+            </div>
+          {/if}
+
           {#if section === 'index' && currentLocale === 'sv'}
             <!-- Manually render Swedish introduction for the index section -->
             <div class="overview-section">
@@ -1481,6 +1492,62 @@
     :global(.content th),
     :global(.content td) {
       white-space: nowrap;
+    }
+  }
+
+/* Language fallback notice */
+  .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(146, 64, 14, 0.1);
+    border: 1px solid rgba(146, 64, 14, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--indigenous-earth);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--indigenous-earth);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Responsive notice */
+  @media (max-width: 640px) {
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+    
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+    
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+    
+    .notice-content p {
+      font-size: 0.8rem;
     }
   }
 </style>

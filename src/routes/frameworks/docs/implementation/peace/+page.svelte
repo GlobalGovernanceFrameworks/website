@@ -160,6 +160,33 @@
     return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
   }
 
+  // Guide selection with multi-lingual support
+  function getGuideText(part) {
+    const texts = {
+      en: {
+        new: "New to the Peace & Conflict Resolution Framework?",
+        start: "Start with one of our simplified guides that explain the core concepts for different audiences.",
+        button: "Choose Guide",
+        title: "Peace & Conflict Resolution Framework Guides",
+        description: "Choose the guide version that best matches your needs:",
+        download: "Download PDF Version",
+        continue: "Continue to Full Framework",
+      },
+      sv: {
+        new: "Nybörjare på ramverket för fred och konfliktlösning?",
+        start: "Börja med en av våra förenklade guider som förklarar kärnkoncepten för olika målgrupper.",
+        button: "Välj guide",
+        title: "Guider för ramverk för fred och konfliktlösning",
+        description: "Välj den guideversion som bäst passar dina behov:",
+        download: "Ladda ner PDF-versionen",
+        continue: "Fortsätt till hela ramverket"
+      }
+    };
+    
+    return (texts[currentLocale] || texts.en)[part] || part;
+  }
+
+
   // Get section titles in current language
   function getSectionTitle(section) {
     const titles = {
@@ -460,27 +487,40 @@
     if (isNavDropdownOpen) isDropdownOpen = false;
   }
 
-  // Close dropdowns when clicking outside
+  // Close dropdowns when clicking outside - improved version
   function handleClickOutside(event) {
     if (browser) {
-      const dropdown = document.querySelector('.card-actions .dropdown');
-      const navDropdown = document.querySelector('.dropdown-li');
+      // Check if click is inside any dropdown
+      const clickedInsideDropdown = event.target.closest('.dropdown');
+      const clickedInsideNavDropdown = event.target.closest('.dropdown-li');
       
-      if (dropdown && !dropdown.contains(event.target)) {
+      // Close main dropdown if clicked outside
+      if (!clickedInsideDropdown && isDropdownOpen) {
         isDropdownOpen = false;
       }
       
-      if (navDropdown && !navDropdown.contains(event.target)) {
+      // Close nav dropdown if clicked outside
+      if (!clickedInsideNavDropdown && isNavDropdownOpen) {
         isNavDropdownOpen = false;
       }
+    }
+  }
+
+  // Close dropdown when pressing Escape key
+  function handleKeydown(event) {
+    if (event.key === 'Escape') {
+      isDropdownOpen = false;
+      isNavDropdownOpen = false;
     }
   }
 
   onMount(() => {
     if (browser) {
       document.addEventListener('click', handleClickOutside);
+      document.addEventListener('keydown', handleKeydown);
       return () => {
         document.removeEventListener('click', handleClickOutside);
+        document.removeEventListener('keydown', handleKeydown);
       };
     }
   });
@@ -532,27 +572,42 @@
         <div class="card-content">
           <div class="card-icon">📘</div>
           <div class="card-text">
-            <h3>New to the Peace & Conflict Resolution Framework?</h3>
-            <p>Start with one of our simplified guides that explain the core concepts for different audiences.</p>
+            <h3>{getGuideText('new')}</h3>
+            <p>{getGuideText('start')}</p>
           </div>
           <div class="card-actions">
             <div class="dropdown">
-              <button class="primary-btn dropdown-toggle" on:click={toggleDropdown}>
-                Choose a Guide <span class="arrow-icon">▾</span>
+              <button 
+                class="primary-btn dropdown-toggle" 
+                on:click={toggleDropdown}
+                aria-expanded={isDropdownOpen}
+                aria-haspopup="true"
+                type="button"
+              >
+                {getGuideText('button')} 
+                <span class="arrow-icon" class:rotated={isDropdownOpen}>▾</span>
               </button>
-              {#if isDropdownOpen}
-                <div class="dropdown-menu">
-                  {#each guides as guide}
-                    <button class="dropdown-item" on:click={() => { selectGuide(guide.id); isDropdownOpen = false; }}>
-                      <span class="guide-icon">{guide.icon}</span>
-                      <div class="guide-info">
-                        <span class="guide-title">{guide.title}</span>
-                        <span class="guide-desc">{guide.description}</span>
-                      </div>
-                    </button>
-                  {/each}
-                </div>
-              {/if}
+              <div 
+                class="dropdown-menu" 
+                class:show={isDropdownOpen}
+                role="menu"
+                aria-hidden={!isDropdownOpen}
+              >
+                {#each guides as guide}
+                  <button 
+                    class="dropdown-item" 
+                    on:click|stopPropagation={() => selectGuide(guide.id)}
+                    role="menuitem"
+                    type="button"
+                  >
+                    <span class="guide-icon">{guide.icon}</span>
+                    <div class="guide-info">
+                      <span class="guide-title">{guide.title}</span>
+                      <span class="guide-desc">{guide.description}</span>
+                    </div>
+                  </button>
+                {/each}
+              </div>
             </div>
           </div>
         </div>
@@ -803,6 +858,16 @@
       <!-- Show active section, or all sections in print mode -->
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
+          <!-- Language fallback notice -->
+          {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
+            <div class="language-fallback-notice">
+              <div class="notice-icon">🌐</div>
+              <div class="notice-content">
+                <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+                <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+              </div>
+            </div>
+          {/if}
          {#if section === 'technical-guide-policymakers' || 
                section === 'community-peace-guide' || 
                section === 'youth-peace-action-guide' ||
@@ -810,8 +875,8 @@
            <!-- Guide selector if we're in one of the guides and not in print mode -->
            {#if !isPrintMode}
              <div class="guide-selector">
-               <h2>Peace & Conflict Resolution Framework Guides</h2>
-               <p>Choose the guide version that best matches your needs:</p>
+               <h2>{getGuideText('title')}</h2>
+               <p>{getGuideText('description')}</p>
                
                <div class="guide-cards">
                  {#each guides as guide}
@@ -836,10 +901,10 @@
            {#if !isPrintMode}
              <div class="lite-guide-navigation">
                <button class="secondary-btn" on:click={() => downloadLiteGuide(section.replace('-guide', ''))}>
-                 Download PDF Version <span class="download-icon">↓</span>
+                 {getGuideText('download')} <span class="download-icon">↓</span>
                </button>
                <button class="primary-btn" on:click={() => setActiveSection('index')}>
-                 Continue to Full Framework <span class="arrow-icon">→</span>
+                 {getGuideText('continue')} <span class="arrow-icon">→</span>
                </button>
              </div>
            {/if}
@@ -1059,16 +1124,25 @@
  }
 
  /* Styles for Lite Guide card */
- .lite-guide-card {
-   background: linear-gradient(135deg, #eef0fa 0%, #d1d6f0 100%);
-   border-radius: 0.75rem;
-   margin-bottom: 2rem;
-   box-shadow: 0 4px 6px rgba(91, 111, 191, 0.1);
-   border: 1px solid rgba(91, 111, 191, 0.2);
-   overflow: visible !important;
-   position: relative;
-   z-index: 1;
- }
+  .lite-guide-card {
+    background: linear-gradient(135deg, #eef0fa 0%, #d1d6f0 100%);
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(91, 111, 191, 0.1);
+    border: 1px solid rgba(91, 111, 191, 0.2);
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+  }
 
  .lite-guide-card .dropdown-menu {
    position: absolute;
@@ -1111,15 +1185,6 @@
    margin: 0;
    color: #4b5563;
    font-size: 1rem;
- }
- 
- .card-actions {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 0.75rem;
-   align-items: center;
-   position: relative;
-   overflow: visible;
  }
  
  .primary-btn {
@@ -1433,58 +1498,6 @@
    font-weight: 600;
  }
  
- /* Dropdown styles for guides */
- .dropdown {
-   position: relative;
-   display: inline-block;
- }
-
- .dropdown-toggle {
-   display: flex;
-   align-items: center;
-   gap: 0.5rem;
-   width: 100%;
- }
-
- .dropdown-menu {
-   position: absolute;
-   top: 100%;
-   left: 0;
-   z-index: 1000;
-   width: auto !important;
-   min-width: 300px !important;
-   padding: 0.5rem 0;
-   margin: 0.125rem 0 0;
-   background-color: #fff;
-   border: 1px solid rgba(0, 0, 0, 0.15);
-   border-radius: 0.25rem;
-   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-   margin-top: 0;
-   padding-top: 10px;
-   white-space: normal !important;
-   display: none;
- }
-
- .dropdown-item {
-   display: flex;
-   align-items: center;
-   width: 100%;
-   padding: 0.75rem 1.5rem;
-   clear: both;
-   font-weight: 400;
-   color: #212529;
-   text-align: inherit;
-   white-space: normal !important;
-   background-color: transparent;
-   border: 0;
-   cursor: pointer;
- }
- 
- .dropdown-item:hover, .dropdown-item:focus {
-   color: #16181b;
-   text-decoration: none;
-   background-color: var(--peace-light);
- }
  
  /* Guide selector styles */
  .guide-selector {
@@ -1547,25 +1560,98 @@
    flex-direction: column;
  }
  
- /* For dropdown guide items */
- .dropdown-item .guide-icon {
-   font-size: 1.5rem;
-   margin-right: 1rem;
-   margin-bottom: 0;
-   display: inline-block;
-   width: 24px;
-   text-align: center;
- }
- 
- .dropdown-item .guide-title {
-   font-weight: 600;
-   margin-bottom: 0.25rem;
- }
- 
- .dropdown-item .guide-desc {
-   font-size: 0.75rem;
-   color: #6b7280;
- }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    z-index: 1001;
+    min-width: 320px;
+    max-width: 400px;
+    padding: 0.5rem 0;
+    background-color: #fff;
+    border: 1px solid rgba(91, 111, 191, 0.3);
+    border-radius: 0.375rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    white-space: normal;
+    /* Default hidden state */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+
+  /* Show dropdown when open */
+  .dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: normal !important;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+  }
+  
+  .dropdown-item:hover, 
+  .dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: var(--peace-light);
+  }
+
+  /* For dropdown guide items */
+  .dropdown-item .guide-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .dropdown-item .guide-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .dropdown-item .guide-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--peace-primary);
+  }
+  
+  .dropdown-item .guide-desc {
+    font-size: 0.8rem;
+    color: #6b7280;
+    line-height: 1.3;
+  }
 
  /* Responsive Design */
  @media (max-width: 768px) {
@@ -1631,4 +1717,70 @@
      white-space: nowrap;
    }
  }
+
+  /* Language fallback notice */
+  .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(138, 148, 214, 0.1);
+    border: 1px solid rgba(138, 148, 214, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--peace-secondary);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--peace-secondary);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Responsive notice */
+  @media (max-width: 640px) {
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+    
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+    
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+    
+    .notice-content p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .arrow-icon {
+    display: inline-block;
+    margin-left: 0.25rem;
+    transition: transform 0.2s ease;
+  }
+
+  .arrow-icon.rotated {
+    transform: rotate(180deg);
+  }
 </style>
