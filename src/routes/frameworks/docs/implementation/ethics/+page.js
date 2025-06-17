@@ -10,6 +10,9 @@ export async function load({ depends, url, platform }) {
   depends('app:locale');
   
   const currentLocale = get(locale);
+
+  // Track which sections fell back to English
+  let sectionsUsingEnglishFallback = new Set();
   
   // Safe handling of URL parameters during prerendering
   let isPrintMode = false;
@@ -156,6 +159,10 @@ export async function load({ depends, url, platform }) {
             content[section][l] = module;
             availableSections[l].push(section);
             isModular = true;
+            // Track that this section is using English fallback
+            if (currentLocale !== 'en') {
+              sectionsUsingEnglishFallback.add(`${section}-${l}`);
+            }
           } catch (e2) {
             // Section not available at this level, which is expected for many sections
           }
@@ -178,6 +185,10 @@ export async function load({ depends, url, platform }) {
           const module = await import(`$lib/content/frameworks/en/implementation/ethics/${guide}.md`);
           content[guide]['standard'] = module; // Store in 'standard' level for simplicity
           isModular = true;
+          // Track that this guide is using English fallback
+          if (currentLocale !== 'en') {
+            sectionsUsingEnglishFallback.add(`${guide}-standard`);
+          }
         } catch (e2) {
           // Guide not available, which is okay
           console.log(`Guide not found: ${guide}`);
@@ -218,6 +229,7 @@ export async function load({ depends, url, platform }) {
     isPrintMode,
     currentLevel: level,
     accessibilityLevels,
-    accessGuide
+    accessGuide,
+    sectionsUsingEnglishFallback: Array.from(sectionsUsingEnglishFallback) // Add this line
   };
 }

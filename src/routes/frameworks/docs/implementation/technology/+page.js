@@ -12,6 +12,9 @@ export async function load({ depends, url }) {
   
   const currentLocale = get(locale);
   const isPrintMode = url.searchParams.get('print') === 'true';
+
+  // Track which sections fell back to English
+  let sectionsUsingEnglishFallback = new Set();
   
   // Define sections to load based on the index
   const sections = [
@@ -49,6 +52,10 @@ export async function load({ depends, url }) {
         try {
           content[section] = await import(`$lib/content/frameworks/en/implementation/technology/${section}.md`);
           isModular = true;
+          // Track that this section is using English fallback
+          if (currentLocale !== 'en') {
+            sectionsUsingEnglishFallback.add(section);
+          }
         } catch (e2) {
           console.log(`Could not load section ${section} in any language`);
         }
@@ -75,6 +82,7 @@ export async function load({ depends, url }) {
     sections: content,
     component: legacyContent?.default,
     isModular,
-    isPrintMode
+    isPrintMode,
+    sectionsUsingEnglishFallback: Array.from(sectionsUsingEnglishFallback)
   };
 }

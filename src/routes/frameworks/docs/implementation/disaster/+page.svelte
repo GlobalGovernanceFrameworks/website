@@ -450,6 +450,16 @@
       <!-- Show active section, or all sections in print mode -->
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
+          <!-- Language fallback notice -->
+          {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
+            <div class="language-fallback-notice">
+              <div class="notice-icon">🌐</div>
+              <div class="notice-content">
+                <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+                <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+              </div>
+            </div>
+          {/if}
           {#if data.sections[section]}
             <svelte:component this={data.sections[section].default} />
           {:else}
@@ -1297,5 +1307,61 @@
     margin-bottom: 0.75rem;
     border-bottom: 1px solid rgba(196, 59, 59, 0.2);
     padding-bottom: 0.5rem;
+  }
+
+  /* Language fallback notice */
+  .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(45, 95, 45, 0.1);
+    border: 1px solid rgba(45, 95, 45, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--drr-earth);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--drr-earth);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Responsive notice */
+  @media (max-width: 640px) {
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+    
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+    
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+    
+    .notice-content p {
+      font-size: 0.8rem;
+    }
   }
 </style>

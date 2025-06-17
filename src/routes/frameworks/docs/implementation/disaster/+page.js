@@ -10,6 +10,9 @@ export async function load({ depends }) {
   depends('app:locale');
   
   const currentLocale = get(locale);
+
+  // Track which sections fell back to English
+  let sectionsUsingEnglishFallback = new Set();
  
   // Define all sections of the framework
   const sections = [
@@ -39,6 +42,10 @@ export async function load({ depends }) {
       } catch (e) {
         // Fall back to English if translation isn't available
         content[section] = await import(`$lib/content/frameworks/en/implementation/disaster/${section}.md`);
+        // Track that this section is using English fallback
+        if (currentLocale !== 'en') {
+          sectionsUsingEnglishFallback.add(section);
+        }
       }
     }
   } catch (e) {
@@ -59,6 +66,7 @@ export async function load({ depends }) {
   
   return {
     sections: content,
-    isModular: true
+    isModular: true,
+    sectionsUsingEnglishFallback: Array.from(sectionsUsingEnglishFallback)
   };
 }

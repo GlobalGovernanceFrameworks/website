@@ -852,6 +852,16 @@
       {#each sectionsToShow as section}
         {#if data.sections[section] && data.sections[section][currentLevel]}
           <div class="section-content" id={section}>
+            <!-- Language fallback notice (skip for index and access-guide since they may have custom content) -->
+            {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(`${section}-${currentLevel}`) && section !== 'index' && section !== 'access-guide'}
+              <div class="language-fallback-notice">
+                <div class="notice-icon">🌐</div>
+                <div class="notice-content">
+                  <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+                  <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+                </div>
+              </div>
+            {/if}
             <div class="section-header">
               <h2>{getSectionTitle(section)}</h2>
               
@@ -1845,6 +1855,62 @@
       font-size: 80%;
       font-weight: normal;
       color: #666;
+    }
+  }
+
+  /* Language fallback notice */
+  .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(22, 163, 74, 0.1);
+    border: 1px solid rgba(22, 163, 74, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--ethics-accent);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--ethics-accent);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Responsive notice */
+  @media (max-width: 640px) {
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+    
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+    
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+    
+    .notice-content p {
+      font-size: 0.8rem;
     }
   }
 </style>

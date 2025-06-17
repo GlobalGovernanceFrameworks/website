@@ -335,6 +335,7 @@
   function getLocalizedText(key) {
     const texts = {
       en: {
+        overview: "Overview",
         newToFramework: "New to the Biodiversity Framework?",
         startWithGuides: "Start with one of our specialized guides that explain the framework for different stakeholders and contexts.",
         chooseGuide: "Choose a Guide",
@@ -346,6 +347,7 @@
         resources: "Resources"
       },
       sv: {
+        overview: "Översikt",
         newToFramework: "Ny inom biodiversitetsramverket?",
         startWithGuides: "Börja med en av våra specialiserade guider som förklarar ramverket för olika intressenter och sammanhang.",
         chooseGuide: "Välj en guide",
@@ -489,7 +491,7 @@
               on:click={() => setActiveSection('index')}
             >
               <span class="nav-icon">🏠</span>
-              <span class="nav-title">Overview</span>
+              <span class="nav-title">{getLocalizedText('overview')}</span>
             </button>
           </div>
 
@@ -636,6 +638,16 @@
       <!-- Show active section, or all sections in print mode -->
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
+          <!-- Language fallback notice (skip for index since we have Swedish overview) -->
+          {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
+            <div class="language-fallback-notice">
+              <div class="notice-icon">🌐</div>
+              <div class="notice-content">
+                <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+                <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+              </div>
+            </div>
+          {/if}
           {#if data.sections[section]}
             <!-- Render sections from markdown files -->
             <svelte:component this={data.sections[section].default} />
@@ -1558,5 +1570,61 @@
     margin-bottom: 0.75rem;
     border-bottom: 1px solid rgba(199, 168, 118, 0.3);
     padding-bottom: 0.5rem;
+  }
+
+  /* Language fallback notice */
+   .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(45, 80, 22, 0.1);
+    border: 1px solid rgba(45, 80, 22, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--bio-primary);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--bio-primary);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Responsive notice */
+  @media (max-width: 640px) {
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+    
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+    
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+    
+    .notice-content p {
+      font-size: 0.8rem;
+    }
   }
 </style>

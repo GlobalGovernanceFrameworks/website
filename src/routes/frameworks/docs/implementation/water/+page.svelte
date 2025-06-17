@@ -148,28 +148,28 @@
       sv: {
         // Entry and overview sections (Swedish)
         'index': "Översikt",
-        'theory-of-change': "Förändrings teori",
+        'theory-of-change': "Förändringsteori",
         'executive-summary': "Verkställande sammanfattning",
-        'quick-implementation-guide': "Snabb implementerings guide",
+        'quick-implementation-guide': "Snabbimplementerings guide",
         'youth-leadership-guide': "Ungdoms ledarskaps guide",
         
         // Main framework sections (Swedish)
         '01-guiding-principles': "Vägledande principer",
-        '02-institutional-policy-framework': "Institutionellt & policy ramverk",
+        '02-institutional-policy-framework': "Institutionellt & policyramverk",
         '03-financing-investment': "Finansiering & investering",
         '04-service-delivery-infrastructure': "Tjänsteleverans & infrastruktur",
         '05-monitoring-accountability': "Övervakning & ansvarighet",
         '06-climate-environmental-integration': "Klimat & miljöintegration",
         '07-innovation-knowledge-sharing': "Innovation & kunskapsdelning",
         '08-crisis-response-adaptation': "Krishantering & anpassning",
-        '09-social-behavioral-change': "Social & beteende förändring",
+        '09-social-behavioral-change': "Social & beteendeförändring",
         '10-global-partnerships': "Globala partnerskap",
-        '11-ethical-systems-framing': "Etiskt & system ramverk",
+        '11-ethical-systems-framing': "Etiskt & systemramverk",
         
         // Implementation materials
-        'implementation-roadmap': "Implementerings färdplan",
-        'regional-implementation-blueprints': "Regional implementerings ritningar",
-        'visual-accessibility-aids': "Visuell & tillgänglighets hjälpmedel",
+        'implementation-roadmap': "Implementeringsfärdplan",
+        'regional-implementation-blueprints': "Regionala implementeringsritningar",
+        'visual-accessibility-aids': "Visuell & tillgänglighetshjälpmedel",
         'glossary': "Ordlista"
       }
     };
@@ -209,7 +209,7 @@
       'Globala partnerskap': 'Partnerskap',
       'Etiskt & system ramverk': 'Etik & system',
       'Implementerings färdplan': 'Färdplan',
-      'Regional implementerings ritningar': 'Regional ritningar',
+      'Regional implementerings ritningar': 'Regionala ritningar',
       'Visuell & tillgänglighets hjälpmedel': 'Visuella hjälpmedel'
     };
     
@@ -311,6 +311,7 @@
   function getLocalizedText(key) {
     const texts = {
       en: {
+        overview: "Overview",
         newToWaterGovernance: "New to Water Governance?",
         startWithQuickGuide: "Start with our practical guide that explains how communities can begin transforming their water systems today.",
         readQuickGuide: "Read the Quick Implementation Guide",
@@ -322,9 +323,10 @@
         resources: "Resources"
       },
       sv: {
-        newToWaterGovernance: "Ny inom vatten styrning?",
+        overview: "Översikt",
+        newToWaterGovernance: "Ny inom vattenstyrning?",
         startWithQuickGuide: "Börja med vår praktiska guide som förklarar hur samhällen kan börja transformera sina vattensystem idag.",
-        readQuickGuide: "Läs snabb implementerings guiden",
+        readQuickGuide: "Läs snabbimplementeringsguiden",
         downloadPdf: "Ladda ner PDF-version",
         continueToFull: "Fortsätt till fullständigt ramverk",
         foundation: "Grund",
@@ -376,7 +378,7 @@
               on:click={() => setActiveSection('index')}
             >
               <span class="nav-icon">🏠</span>
-              <span class="nav-title">Overview</span>
+              <span class="nav-title">{getLocalizedText('overview')}</span>
             </button>
           </div>
 
@@ -565,6 +567,16 @@
       <!-- Show active section, or all sections in print mode -->
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
+          <!-- Language fallback notice (skip for index since we have Swedish overview) -->
+          {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
+            <div class="language-fallback-notice">
+              <div class="notice-icon">🌐</div>
+              <div class="notice-content">
+                <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
+                <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+              </div>
+            </div>
+          {/if}
           {#if section === 'index'}
             <!-- Render the loaded markdown content and show constellation map -->
             {#if data.sections[section]}
@@ -1454,5 +1466,61 @@
     margin-bottom: 0.75rem;
     border-bottom: 1px solid rgba(21, 128, 61, 0.3);
     padding-bottom: 0.5rem;
+  }
+
+  /* Language fallback notice */
+   .language-fallback-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: rgba(3, 105, 161, 0.1);
+    border: 1px solid rgba(3, 105, 161, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .notice-icon {
+    font-size: 1.25rem;
+    color: var(--water-primary);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  .notice-content {
+    flex: 1;
+  }
+
+  .notice-content strong {
+    color: var(--water-primary);
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .notice-content p {
+    color: #4b5563;
+    font-size: 0.875rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  /* Responsive notice */
+  @media (max-width: 640px) {
+    .language-fallback-notice {
+      padding: 0.75rem 1rem;
+    }
+    
+    .notice-icon {
+      font-size: 1.1rem;
+    }
+    
+    .notice-content strong {
+      font-size: 0.9rem;
+    }
+    
+    .notice-content p {
+      font-size: 0.8rem;
+    }
   }
 </style>
