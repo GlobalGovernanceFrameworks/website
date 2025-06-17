@@ -603,7 +603,7 @@
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
           <!-- Language fallback notice -->
-          {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section)}
+          {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index'}
             <div class="language-fallback-notice">
               <div class="notice-icon">🌐</div>
               <div class="notice-content">

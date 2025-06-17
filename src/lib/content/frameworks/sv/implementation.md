@@ -123,7 +123,7 @@ Det globala styrningsramverket är organiserat i fem distinkta nivåer, som var 
 * [Ursprungsfolkens styrning och traditionell kunskap](/frameworks/docs/implementation/indigenous) (Under granskning)
 * [Hälso- och sjukvårdsstyrning](/frameworks/docs/implementation/healthcare) (Under granskning)
 * [Livsmedelssystem och jordbruk](/frameworks/docs/implementation/food) (Under granskning)
-  * TODO: *Utöka omfattning: Tydlig styrning av jord och regenerativt jordbruk*
+  * Att göra: *Utöka omfattning: Tydlig styrning av jord och regenerativt jordbruk*
 * [Ekonomisk integration](/frameworks/docs/implementation/economic) (Under granskning)
 * [Rättssystem](/frameworks/docs/implementation/justice) (Under granskning)
 * [Migration och mänsklig rörlighet](/frameworks/docs/implementation/migration) (Planerad)
