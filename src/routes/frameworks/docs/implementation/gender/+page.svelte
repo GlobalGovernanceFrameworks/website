@@ -1,4 +1,4 @@
-<!-- src/routes/frameworks/docs/implementation/labor/+page.svelte -->
+<!-- src/routes/frameworks/docs/implementation/gender/+page.svelte -->
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
@@ -19,16 +19,16 @@
   <FrameworkSidebar />
 
   <div class="content">
-    <!-- Labor & Employment Framework Coming Soon Card -->
+    <!-- Gender Equality & LGBTQ+ Rights Framework Coming Soon Card -->
     <FrameworkComingSoon 
-      frameworkName="labor"
-      icon="⚒️"
-      expectedQuarter="Q2 2026"
+      frameworkName="gender"
+      icon="🏳️‍🌈"
+      expectedQuarter="Q4 2025"
       themeColors={{
-        primary: '#7c2d12',
-        secondary: '#dc2626', 
+        primary: '#db2777',
+        secondary: '#ec4899', 
         accent: '#f59e0b',
-        light: '#fef7ed'
+        light: '#fdf2f8'
       }}
       contactEmail="globalgovernanceframework@gmail.com"
     />

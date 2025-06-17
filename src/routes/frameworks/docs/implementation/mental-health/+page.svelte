@@ -151,7 +151,7 @@
       },
       sv: {
         foundation: "Grund",
-        systems: "System & Leverans",
+        systems: "System & leverans",
         implementation: "Implementering", 
         resources: "Resurser"
       }

@@ -1,4 +1,4 @@
-<!-- src/routes/frameworks/docs/implementation/labor/+page.svelte -->
+<!-- src/routes/frameworks/docs/implementation/wisdom/+page.svelte -->
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
@@ -19,16 +19,16 @@
   <FrameworkSidebar />
 
   <div class="content">
-    <!-- Labor & Employment Framework Coming Soon Card -->
+    <!-- Wisdom Framework Coming Soon Card -->
     <FrameworkComingSoon 
-      frameworkName="labor"
-      icon="⚒️"
-      expectedQuarter="Q2 2026"
+      frameworkName="wisdom"
+      icon="🦉"
+      expectedQuarter="Q4 2026"
       themeColors={{
-        primary: '#7c2d12',
-        secondary: '#dc2626', 
-        accent: '#f59e0b',
-        light: '#fef7ed'
+        primary: '#581c87',
+        secondary: '#7c3aed', 
+        accent: '#fbbf24',
+        light: '#faf5ff'
       }}
       contactEmail="globalgovernanceframework@gmail.com"
     />

@@ -8,6 +8,14 @@ Frameworks' development status:
 
 - [Aging] (Implemented)
 
+Completion plan:
+Q3 2025: Migration, Inclusion
+Q4 2025: Urban, Gender
+Q1 2026: Oceans, Culture
+Q2 2026: Labor, Youth
+Q3 2026: Space
+Q4 2026: Wisdom
+
 In order of priority (by ChatGPT and Claude)
 - [Indigenous Governance & Traditional Knowledge](/frameworks/docs/implementation/indigenous) (Implemented)
 

@@ -180,6 +180,28 @@
     return (titles[currentLocale] || titles.en)[section] || section;
   }
 
+  // Group sections logically with multi-lingual support
+  function getSectionCategoryTitle(category) {
+    const categoryTitles = {
+      en: {
+        overview: "Overview",
+        foundation: "Foundation",
+        governance: "Governance", 
+        implementation: "Implementation",
+        resources: "Resources",
+      },
+      sv: {
+        overview: "Översikt",
+        foundation: "Grund",
+        governance: "Styrning", 
+        implementation: "Implementering",
+        resources: "Resurser",
+      }
+    };
+    
+    return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
+  }
+
   // Function to get shortened section titles for navigation
   function getShortSectionTitle(section) {
     const fullTitle = getSectionTitle(section).replace(/^\d{2}-/, '');
@@ -430,7 +452,7 @@
               on:click={() => setActiveSection('index')}
             >
               <span class="nav-icon">🏠</span>
-              <span class="nav-title">Overview</span>
+              <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
             </button>
           </div>
 
@@ -443,7 +465,7 @@
               on:click={toggleFoundation}
             >
               <span class="accordion-icon">📚</span>
-              <span class="accordion-title">Foundation</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
               <span class="section-count">(5)</span>
               <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
             </button>
@@ -482,7 +504,7 @@
               on:click={toggleGovernance}
             >
               <span class="accordion-icon">🏛️</span>
-              <span class="accordion-title">Governance</span>
+              <span class="accordion-title">{getSectionCategoryTitle('governance')}</span>
               <span class="section-count">({coreFrameworkSections.slice(2, 6).length})</span>
               <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
             </button>
@@ -511,7 +533,7 @@
               on:click={toggleImplementation}
             >
               <span class="accordion-icon">🚀</span>
-              <span class="accordion-title">Implementation</span>
+              <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
               <span class="section-count">({coreFrameworkSections.slice(6).length})</span>
               <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
             </button>
@@ -540,7 +562,7 @@
               on:click={toggleResources}
             >
               <span class="accordion-icon">📄</span>
-              <span class="accordion-title">Resources</span>
+              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
               <span class="section-count">(2)</span>
               <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
             </button>

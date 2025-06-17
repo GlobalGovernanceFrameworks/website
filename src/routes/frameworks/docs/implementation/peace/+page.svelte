@@ -7,7 +7,6 @@
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
-  import ConstellationMap from '$lib/components/ConstellationMap.svelte';
   import { onMount, afterUpdate } from 'svelte';
   import { slide } from 'svelte/transition';
 
@@ -132,6 +131,34 @@
     paragraph1: "The Peace & Conflict Resolution Framework provides a comprehensive governance architecture to prevent conflicts, resolve existing disputes peacefully, and address the systemic drivers of violence.",
     paragraph2: "This framework integrates local, regional, and global approaches with both traditional and digital tools, trauma-informed methods, and developmental value systems to transform conflict into opportunities for positive cooperation."
   };
+
+  // Group sections logically with multi-lingual support
+  function getSectionCategoryTitle(category) {
+    const categoryTitles = {
+      en: {
+        overview: "Overview",
+        foundation: "Foundation",
+        approaches: "Peace Approaces", 
+        technology: "Technology & Digital",
+        structural: "Structural & Security",
+        specialized: "Specialized Areas",
+        implementation: "Implementation",
+        resources: "Resources"
+      },
+      sv: {
+        overview: "Översikt",
+        foundation: "Grund",
+        approaches: "Fredsnärmande", 
+        technology: "Teknologi och digitalt",
+        structural: "Struktur och säkerhet",
+        specialized: "Specialiserade områden",
+        implementation: "Implementering", 
+        resources: "Resurser"
+      }
+    };
+    
+    return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
+  }
 
   // Get section titles in current language
   function getSectionTitle(section) {
@@ -544,7 +571,7 @@
               on:click={() => setActiveSection('index')}
             >
               <span class="nav-icon">🏠</span>
-              <span class="nav-title">Overview</span>
+              <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
             </button>
           </div>
 
@@ -557,7 +584,7 @@
               on:click={toggleFoundation}
             >
               <span class="accordion-icon">📚</span>
-              <span class="accordion-title">Foundation</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
               <span class="section-count">(6)</span>
               <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
             </button>
@@ -596,7 +623,7 @@
               on:click={toggleApproaches}
             >
               <span class="accordion-icon">🤝</span>
-              <span class="accordion-title">Peace Approaches</span>
+              <span class="accordion-title">{getSectionCategoryTitle('approaches')}</span>
               <span class="section-count">({sectionGroups.approaches.length})</span>
               <span class="toggle-arrow" class:rotated={approachesOpen}>▼</span>
             </button>
@@ -625,7 +652,7 @@
               on:click={toggleTechnology}
             >
               <span class="accordion-icon">💻</span>
-              <span class="accordion-title">Technology & Digital</span>
+              <span class="accordion-title">{getSectionCategoryTitle('technology')}</span>
               <span class="section-count">({sectionGroups.technology.length})</span>
               <span class="toggle-arrow" class:rotated={technologyOpen}>▼</span>
             </button>
@@ -654,7 +681,7 @@
               on:click={toggleStructural}
             >
               <span class="accordion-icon">🏛️</span>
-              <span class="accordion-title">Structural & Security</span>
+              <span class="accordion-title">{getSectionCategoryTitle('structural')}</span>
               <span class="section-count">({sectionGroups.structural.length})</span>
               <span class="toggle-arrow" class:rotated={structuralOpen}>▼</span>
             </button>
@@ -683,7 +710,7 @@
               on:click={toggleSpecialized}
             >
               <span class="accordion-icon">🎯</span>
-              <span class="accordion-title">Specialized Areas</span>
+              <span class="accordion-title">{getSectionCategoryTitle('specialized')}</span>
               <span class="section-count">({sectionGroups.specialized.length})</span>
               <span class="toggle-arrow" class:rotated={specializedOpen}>▼</span>
             </button>
@@ -712,7 +739,7 @@
               on:click={toggleImplementation}
             >
               <span class="accordion-icon">🚀</span>
-              <span class="accordion-title">Implementation</span>
+              <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
               <span class="section-count">({sectionGroups.implementation.length})</span>
               <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
             </button>
@@ -741,7 +768,7 @@
               on:click={toggleResources}
             >
               <span class="accordion-icon">📄</span>
-              <span class="accordion-title">Resources</span>
+              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
               <span class="section-count">({sectionGroups.resources.length})</span>
               <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
             </button>
@@ -825,8 +852,6 @@
              <p>{intro.paragraph1}</p>
              <p>{intro.paragraph2}</p>
            </div>
-           <!-- Show constellation map for index section -->
-           <ConstellationMap />
          {:else if section === 'index'}
            <!-- Render English introduction through the markdown component -->
            <svelte:component this={data.sections[section].default} />

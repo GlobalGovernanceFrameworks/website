@@ -13,6 +13,9 @@ export async function load({ depends, url }) {
   // Safe check for print mode that works during prerendering
   const isPrintMode = import.meta.env.SSR ? false : url.searchParams.get('print') === 'true';
   
+  // Track which sections fell back to English
+  let sectionsUsingEnglishFallback = new Set();
+
   // Define sections to load - aging framework sections in correct order
   const sections = [
     // Entry point and overview
@@ -55,6 +58,10 @@ export async function load({ depends, url }) {
         try {
           content[section] = await import(`$lib/content/frameworks/en/implementation/aging/${section}.md`);
           isModular = true;
+          // Track that this section is using English fallback
+          if (currentLocale !== 'en') {
+            sectionsUsingEnglishFallback.add(section);
+          }
         } catch (e2) {
           console.log(`Could not load section ${section} in any language`);
         }
@@ -82,6 +89,7 @@ export async function load({ depends, url }) {
     component: legacyContent?.default,
     isModular,
     isPrintMode,
+    sectionsUsingEnglishFallback: Array.from(sectionsUsingEnglishFallback),
     // Additional metadata for aging framework
     frameworkType: 'aging',
     totalSections: sections.length,

@@ -6,7 +6,6 @@
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
-  import ConstellationMap from '$lib/components/ConstellationMap.svelte';
   import { onMount, afterUpdate } from 'svelte';
   import { slide } from 'svelte/transition';
 
@@ -118,10 +117,10 @@
 
   // Swedish translations for the introduction section
   const introSv = {
-    title: "Planetär Hälsa Accord Implementering Ramverk",
+    title: "Planetärt hälsoavtal, ramverk",
     overview: "Översikt",
-    paragraph1: "Det Planetära Hälsa Accordet framträder som en revolutionerande plan för global hälsa transformation, som väver samman ursprungssuveränitet, teknisk innovation och gemenskapscentrerat vård till en tapet av hopp för vår levande jord.",
-    paragraph2: "Detta ramverk återföreställer hälsovård för att hedra varje person, gemenskap och ekosystem som en medskapare av planetär hälsa, från samhällshälsa legioner som hävdar kulturell suveränitet till AI-system som tjänar rättvisa."
+    paragraph1: "Implementeringsramverket för planetariskt hälsoavtal framstår som en revolutionerande ritning för global hälsotransformation, och väver samman ursprungsbefolkningens suveränitet, teknisk innovation och samhällscentrerad vård till en väv av hopp för vår levande jord.",
+    paragraph2: "Detta ramverk omformar hälso- och sjukvården för att hedra varje person, samhälle och ekosystem som medskapare av planetens hälsa, från Community Health Legions som hävdar kulturell suveränitet till AI-system som tjänar rättvisa."
   };
 
   // English translations as fallback
@@ -131,6 +130,46 @@
     paragraph1: "The Planetary Health Accord Implementation Framework emerges as a revolutionary blueprint for global health transformation, weaving together indigenous sovereignty, technological innovation, and community-centered care into a tapestry of hope for our living Earth.",
     paragraph2: "This framework reimagines healthcare to honor every person, community, and ecosystem as a co-creator of planetary health, from Community Health Legions asserting cultural sovereignty to AI systems serving justice."
   };
+
+  // Get localized text for buttons and UI elements
+  function getLocalizedText(key) {
+    const texts = {
+      en: {
+        newToFramework: "New to the Planetary Health Accord?",
+        startWithGuides: "Start with our accessible summary that explains the framework's core principles and implementation strategy.",
+        readGuide: "Read the Lite Version",
+      },
+      sv: {
+        newToFramework: "Ny till planetära hälsoöverrenskommelsen?",
+        startWithGuides: "Börja med vår lättillgängliga sammanfattning som förklarar ramverkets kärnprinciper och implementeringsstrategi.",
+        readGuide: "Läs Lite-versionen",
+      }
+    };
+    
+    return (texts[currentLocale] || texts.en)[key] || key;
+  }
+
+  // Group sections logically with multi-lingual support
+  function getSectionCategoryTitle(category) {
+    const categoryTitles = {
+      en: {
+        overview: "Overview",
+        foundation: "Foundation",
+        governance: "Governance & Systems",
+        implementation: "Implementation", 
+        resources: "Resources",
+      },
+      sv: {
+        overview: "Översikt",
+        foundation: "Grund",
+        governance: "Styrning & system",
+        implementation: "Implementation", 
+        resources: "Resurser",
+      }
+    };
+    
+    return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
+  }
 
   // Get section titles in current language
   function getSectionTitle(section) {
@@ -169,23 +208,23 @@
         'planetary-health-accord-lite': "Planetär Hälsa Accord Lite",
         
         // Core framework sections (Swedish)
-        '00-manifesto': "Manifest: Det Planetära Hälsa Accordet",
+        '00-manifesto': "Manifest: Det planetära hälsoavtalet",
         '01-governance-structure': "Styrningsstruktur",
-        '02-technology-data-infrastructure': "Teknologi och Data Infrastruktur",
+        '02-technology-data-infrastructure': "Teknologi och data-infrastruktur",
         '03-financing-mechanisms': "Finansieringsmekanismer",
-        '04-medical-innovation-access': "Medicinsk Innovation och Tillgång",
-        '05-pandemic-climate-preparedness': "Pandemi och Klimat-Hälsa Beredskap",
-        '06-community-centered-healthcare': "Gemenskapscentrerad Hälsovård",
-        '07-transparency-anti-corruption': "Transparens och Anti-Korruption",
-        '08-health-literacy': "Hälsokunnighet och Beteendeförändring",
-        '09-borderless-health-rights': "Gränslösa Hälsorättigheter",
-        '10-ethical-technology-governance': "Etisk Teknologi Styrning",
+        '04-medical-innovation-access': "Medicinsk innovation och tillgång",
+        '05-pandemic-climate-preparedness': "Pandemi och klimat-hälsa beredskap",
+        '06-community-centered-healthcare': "Gemenskapscentrerad hälsovård",
+        '07-transparency-anti-corruption': "Transparens och anti-korruption",
+        '08-health-literacy': "Hälsokunskap och beteendeförändring",
+        '09-borderless-health-rights': "Gränslösa hälsorättigheter",
+        '10-ethical-technology-governance': "Etisk teknikstyrning",
         '11-implementation-roadmap': "Implementeringsfärdplan",
-        '12-health-conflict-zones': "Hälsa i Konfliktzoner",
-        '13-global-knowledge-commons': "Global Kunskapsallmänning",
-        '14-visual-architecture-map': "Visuell Arkitektur Karta",
-        '15-cross-cutting-mechanisms': "Tvärgående Mekanismer",
-        '16-spiritual-framing': "Andlig Inramning",
+        '12-health-conflict-zones': "Hälsa i konfliktzoner",
+        '13-global-knowledge-commons': "Global kunskapsallmänning",
+        '14-visual-architecture-map': "Visuell arkitekturkarta",
+        '15-cross-cutting-mechanisms': "Tvärgående mekanismer",
+        '16-spiritual-framing': "Andlig inramning",
         '17-conclusion': "Slutsats",
         
         // Supplementary materials (Swedish)
@@ -333,12 +372,12 @@
         <div class="card-content">
           <div class="card-icon">🌍</div>
           <div class="card-text">
-            <h3>New to the Planetary Health Accord?</h3>
-            <p>Start with our accessible summary that explains the framework's core principles and implementation strategy.</p>
+            <h3>{getLocalizedText('newToFramework')}</h3>
+            <p>{getLocalizedText('startWithGuides')}</p>
           </div>
           <div class="card-actions">
             <button class="primary-btn" on:click={() => setActiveSection('planetary-health-accord-lite')}>
-              Read the Lite Version <span class="arrow-icon">→</span>
+              {getLocalizedText('readGuide')} <span class="arrow-icon">→</span>
             </button>
           </div>
         </div>
@@ -357,7 +396,7 @@
               on:click={() => setActiveSection('index')}
             >
               <span class="nav-icon">🏠</span>
-              <span class="nav-title">Overview</span>
+              <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
             </button>
           </div>
 
@@ -370,7 +409,7 @@
               on:click={toggleFoundation}
             >
               <span class="accordion-icon">🏛️</span>
-              <span class="accordion-title">Foundation</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
               <span class="section-count">(3)</span>
               <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
             </button>
@@ -399,7 +438,7 @@
               on:click={toggleGovernance}
             >
               <span class="accordion-icon">⚖️</span>
-              <span class="accordion-title">Governance & Systems</span>
+              <span class="accordion-title">{getSectionCategoryTitle('governance')}</span>
               <span class="section-count">({coreFrameworkSections.slice(3, 11).length})</span>
               <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
             </button>
@@ -428,7 +467,7 @@
               on:click={toggleImplementation}
             >
               <span class="accordion-icon">🚀</span>
-              <span class="accordion-title">Implementation</span>
+              <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
               <span class="section-count">({coreFrameworkSections.slice(11).length})</span>
               <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
             </button>
@@ -457,7 +496,7 @@
               on:click={toggleResources}
             >
               <span class="accordion-icon">📄</span>
-              <span class="accordion-title">Resources</span>
+              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
               <span class="section-count">(2)</span>
               <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
             </button>
@@ -506,8 +545,6 @@
               <p>{intro.paragraph1}</p>
               <p>{intro.paragraph2}</p>
             </div>
-            <!-- Show constellation map for index section -->
-            <ConstellationMap />
           {:else if section === 'index'}
             <!-- Render English introduction through the markdown component -->
             <svelte:component this={data.sections[section].default} />

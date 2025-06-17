@@ -119,6 +119,24 @@
     };
   }
 
+  function getLocalizedText(key) {
+    const texts = {
+      en: {
+        overviewTitle: "Overview",
+        foundationTitle: "Foundation",
+        frameworkTitle: "Core Framework",
+        resourcesTitle: "Resources" 
+      },
+      sv: {
+        overviewTitle: "Översikt",
+        foundationTitle: "Grund",
+        frameworkTitle: "Kärnramverk",
+        resourcesTitle: "Resurser" 
+      }
+    };
+    return (texts[currentLocale] || texts.en)[key] || key;
+  }
+
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
@@ -356,7 +374,7 @@
               on:click={() => setActiveSection('index')}
             >
               <span class="nav-icon">🏠</span>
-              <span class="nav-title">Overview</span>
+              <span class="nav-title">{getLocalizedText('overviewTitle')}</span>
             </button>
           </div>
 
@@ -369,7 +387,7 @@
               on:click={toggleFoundation}
             >
               <span class="accordion-icon">📚</span>
-              <span class="accordion-title">Foundation</span>
+              <span class="accordion-title">{getLocalizedText('foundationTitle')}</span>
               <span class="section-count">(2)</span>
               <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
             </button>
@@ -404,7 +422,7 @@
               on:click={toggleCoreFramework}
             >
               <span class="accordion-icon">🏛️</span>
-              <span class="accordion-title">Core Framework</span>
+              <span class="accordion-title">{getLocalizedText('frameworkTitle')}</span>
               <span class="section-count">({coreFrameworkSections.length})</span>
               <span class="toggle-arrow" class:rotated={coreFrameworkOpen}>▼</span>
             </button>
@@ -433,7 +451,7 @@
               on:click={toggleResources}
             >
               <span class="accordion-icon">📄</span>
-              <span class="accordion-title">Resources</span>
+              <span class="accordion-title">{getLocalizedText('resourcesTitle')}</span>
               <span class="section-count">(3)</span>
               <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
             </button>

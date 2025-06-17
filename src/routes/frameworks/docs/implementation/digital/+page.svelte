@@ -146,12 +146,14 @@
       en: {
         foundation: "Foundation",
         implementation: "Implementation", 
-        resources: "Resources"
+        resources: "Resources",
+        guides: "Guides"
       },
       sv: {
         foundation: "Grund",
         implementation: "Implementering", 
-        resources: "Resurser"
+        resources: "Resurser",
+        guides: "Guider"
       }
     };
     
@@ -515,7 +517,7 @@
               on:click={toggleResources}
             >
               <span class="accordion-icon">📚</span>
-              <span class="accordion-title">Guides</span>
+              <span class="accordion-title">{getSectionCategoryTitle('guides')}</span>
               <span class="section-count">({guides.length})</span>
               <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
             </button>

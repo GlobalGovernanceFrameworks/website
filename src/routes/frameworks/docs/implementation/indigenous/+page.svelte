@@ -112,6 +112,30 @@
     };
   }
 
+  // Group sections logically with multi-lingual support
+  function getSectionCategoryTitle(category) {
+    const categoryTitles = {
+      en: {
+        overview: "Overview",
+        architecture: "Governance Architecture",
+        foundation: "Sacred Foundation",
+        implementation: "Implementation & Systems", 
+        connections: "Sacred Connections",
+        resources: "Resources",
+      },
+      sv: {
+        overview: "Översikt",
+        architecture: "Styrningsarkitektur",
+        foundation: "Helig grund",
+        implementation: "Implementering & system", 
+        connections: "Heliga kopplingar",
+        resources: "Resurser",
+      }
+    };
+    
+    return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
+  }
+
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
@@ -157,18 +181,18 @@
       sv: {
         // Entry and overview sections (Swedish)
         'index': "Översikt",
-        '00-preamble': "Förord: Ett Ramverk Fött från Jorden",
+        '00-preamble': "Förord: Ett ramverk fött från jorden",
         
         // Core framework sections (Swedish)
-        '01-core-principles': "Kärnprinciper: De Urgamla Instruktionerna",
-        '02-structural-components': "Strukturella Komponenter: Helig Arkitektur",
-        '03-implementation-timeline': "Implementeringstidslinje: Sju Generationer",
-        '04-key-mechanisms': "Nyckelmekanismer: Heliga Teknologier",
-        '05-expected-outcomes': "Förväntade Resultat: Regenerativ Framtid",
-        '06-interface-existing-systems': "Gränssnitt med Koloniala System",
-        '07-pathways-broader-engagement': "Vägar för Allierat Engagemang",
-        '08-documentation-risk-assessment': "Dokumentation & Riskbedömning",
-        '09-system-map-visual': "Systemkarta: Det Heliga Nätverket",
+        '01-core-principles': "Kärnprinciper: De urgamla instruktionerna",
+        '02-structural-components': "Strukturella komponenter: Helig arkitektur",
+        '03-implementation-timeline': "Implementeringstidslinje: Sju generationer",
+        '04-key-mechanisms': "Nyckelmekanismer: Heliga teknologier",
+        '05-expected-outcomes': "Förväntade resultat: Regenerativ framtid",
+        '06-interface-existing-systems': "Gränssnitt med koloniala system",
+        '07-pathways-broader-engagement': "Vägar för allierat engagemang",
+        '08-documentation-risk-assessment': "Dokumentation & riskbedömning",
+        '09-system-map-visual': "Systemkarta: Det heliga nätverket",
         '10-glossary-references': "Ordlista & Referenser",
         
         // Essential guide
@@ -198,15 +222,15 @@
         'Framework Essentials Guide': 'Essentials Guide'
       },
       sv: {
-        'Kärnprinciper: De Urgamla Instruktionerna': 'Urgamla Instruktioner',
-        'Strukturella Komponenter: Helig Arkitektur': 'Helig Arkitektur',
-        'Implementeringstidslinje: Sju Generationer': 'Sju Generationer',
-        'Nyckelmekanismer: Heliga Teknologier': 'Heliga Teknologier',
-        'Förväntade Resultat: Regenerativ Framtid': 'Regenerativ Framtid',
-        'Gränssnitt med Koloniala System': 'Kolonialt Gränssnitt',
-        'Vägar för Allierat Engagemang': 'Allierat Engagemang',
-        'Dokumentation & Riskbedömning': 'Dokumentation',
-        'Systemkarta: Det Heliga Nätverket': 'Heligt Nätverk',
+        'Kärnprinciper: De urgamla instruktionerna': 'Urgamla instruktioner',
+        'Strukturella komponenter: Helig arkitektur': 'Helig arkitektur',
+        'Implementeringstidslinje: Sju generationer': 'Sju generationer',
+        'Nyckelmekanismer: Heliga teknologier': 'Heliga teknologier',
+        'Förväntade resultat: Regenerativ framtid': 'Regenerativ framtid',
+        'Gränssnitt med koloniala system': 'Kolonialt gränssnitt',
+        'Vägar för allierat engagemang': 'Allierat engagemang',
+        'Dokumentation & riskbedömning': 'Dokumentation',
+        'Systemkarta: Det heliga nätverket': 'Heligt nätverk',
         'Ordlista & Referenser': 'Ordlista',
         'Ramverk Grundläggande Guide': 'Grundguide'
       }
@@ -346,7 +370,7 @@
         frameworkEssentials: "Framework Essentials"
       },
       sv: {
-        newToFramework: "Ny inom Ursprungsfolks Styrningsramverk?",
+        newToFramework: "Ny inom ursprungsfolks styrningsramverk?",
         startWithEssentials: "Börja med vår tillgängliga grundguide som förklarar ramverkets kärnprinciper och ursprungsfolksledda transformationsväg.",
         readEssentials: "Läs Ramverkets Grundläggande",
         downloadPdf: "Ladda ner PDF-version",
@@ -399,7 +423,7 @@
               on:click={() => setActiveSection('index')}
             >
               <span class="nav-icon">🏠</span>
-              <span class="nav-title">Overview</span>
+              <span class="nav-title">{getSectionCategoryTitle('overview')}</span>
             </button>
           </div>
 
@@ -412,7 +436,7 @@
               on:click={toggleFoundation}
             >
               <span class="accordion-icon">🌱</span>
-              <span class="accordion-title">Sacred Foundation</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
               <span class="section-count">({sectionGroups.foundation.length})</span>
               <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
             </button>
@@ -441,7 +465,7 @@
               on:click={toggleGovernance}
             >
               <span class="accordion-icon">🏛️</span>
-              <span class="accordion-title">Governance Architecture</span>
+              <span class="accordion-title">{getSectionCategoryTitle('architecture')}</span>
               <span class="section-count">({sectionGroups.governance.length})</span>
               <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
             </button>
@@ -470,7 +494,7 @@
               on:click={toggleImplementation}
             >
               <span class="accordion-icon">🌿</span>
-              <span class="accordion-title">Implementation & Systems</span>
+              <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
               <span class="section-count">({sectionGroups.implementation.length})</span>
               <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
             </button>
@@ -499,7 +523,7 @@
               on:click={toggleConnection}
             >
               <span class="accordion-icon">🕸️</span>
-              <span class="accordion-title">Sacred Connections</span>
+              <span class="accordion-title">{getSectionCategoryTitle('connections')}</span>
               <span class="section-count">({sectionGroups.connection.length})</span>
               <span class="toggle-arrow" class:rotated={connectionOpen}>▼</span>
             </button>
@@ -528,7 +552,7 @@
               on:click={toggleResources}
             >
               <span class="accordion-icon">📄</span>
-              <span class="accordion-title">Resources</span>
+              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
               <span class="section-count">(2)</span>
               <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
             </button>
