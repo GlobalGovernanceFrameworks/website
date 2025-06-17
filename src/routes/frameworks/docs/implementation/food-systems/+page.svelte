@@ -8,6 +8,7 @@
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import ConstellationMap from '$lib/components/ConstellationMap.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -62,6 +63,19 @@
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -122,10 +136,13 @@
   function getSectionTitle(section) {
     const titles = {
       en: {
+        // Entry and overview sections
+        'index': "Overview",
         'quick-guide': "Quick Guide: Technical Version",
         'quick-guide-medium': "Quick Guide: Community Version",
         'quick-guide-youth': "Quick Guide: Youth & Grassroots",
-        'index': "Overview",
+        
+        // Core framework sections (01-15)
         '01-introduction': "Introduction",
         '02-definitions': "Definitions",
         '03-glossary': "Glossary",
@@ -143,10 +160,13 @@
         '15-conclusion': "Conclusion"
       },
       sv: {
+        // Entry and overview sections (Swedish)
+        'index': "Översikt",
         'quick-guide': "Snabbguide: Teknisk Version",
         'quick-guide-medium': "Snabbguide: Samhällsversion",
         'quick-guide-youth': "Snabbguide: Ungdom & Gräsrötter",
-        'index': "Översikt",
+        
+        // Core framework sections (Swedish)
         '01-introduction': "Introduktion",
         '02-definitions': "Definitioner",
         '03-glossary': "Ordlista",
@@ -166,6 +186,31 @@
     };
     
     return (titles[currentLocale] || titles.en)[section] || section;
+  }
+
+  // Function to get shortened section titles for navigation
+  function getShortSectionTitle(section) {
+    const fullTitle = getSectionTitle(section).replace(/^\d{2}-/, '');
+    
+    const shortTitles = {
+      'Introduction': 'Introduction',
+      'Definitions': 'Definitions',
+      'Glossary': 'Glossary',
+      'Theory of Change': 'Theory of Change',
+      'Stakeholder Engagement': 'Stakeholders',
+      'Core Principles': 'Principles',
+      'Strategic Objectives': 'Objectives',
+      'Implementation Mechanisms': 'Implementation',
+      'Systemic Leverage Points': 'Leverage Points',
+      'Regional Customization': 'Regional',
+      'Risk Management': 'Risk Management',
+      'Timeline & Milestones': 'Timeline',
+      'Communication & Advocacy': 'Advocacy',
+      'Visual Appendix': 'Visual Appendix',
+      'Conclusion': 'Conclusion'
+    };
+    
+    return shortTitles[fullTitle] || fullTitle;
   }
 
   // Choose the right intro text based on the current locale
@@ -245,7 +290,84 @@
   $: isQuickGuideActive = activeSection === 'quick-guide' || 
                          activeSection === 'quick-guide-medium' || 
                          activeSection === 'quick-guide-youth';
+  $: isSupplementaryActive = isQuickGuideActive;
+
+  // For handling dropdown states
+  let isDropdownOpen = false;
+  let isNavDropdownOpen = false;
+
+  // Accordion states for section categories
+  let foundationOpen = true; // Start with foundation open
+  let strategicOpen = false;
+  let implementationOpen = false;
+  let resourcesOpen = false;
+
+  function toggleDropdown() {
+    isDropdownOpen = !isDropdownOpen;
+    // Close the other dropdown if it's open
+    if (isDropdownOpen) isNavDropdownOpen = false;
+  }
+
+  function toggleNavDropdown() {
+    isNavDropdownOpen = !isNavDropdownOpen;
+    // Close the other dropdown if it's open
+    if (isNavDropdownOpen) isDropdownOpen = false;
+  }
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleStrategic() {
+    strategicOpen = !strategicOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
+  }
+
+  function toggleCardDropdown() {
+    isDropdownOpen = !isDropdownOpen;
+  }
+
+  function handleClickOutside(event) {
+    if (browser) {
+      const cardDropdown = document.querySelector('.food-systems-guide-card .dropdown');
+      const navDropdown = document.querySelector('.dropdown-li');
+      
+      if (cardDropdown && !cardDropdown.contains(event.target)) {
+        isDropdownOpen = false;
+      }
+      
+      if (navDropdown && !navDropdown.contains(event.target)) {
+        isNavDropdownOpen = false;
+      }
+    }
+  }
+
+  onMount(() => {
+    if (browser) {
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }
+  });
+
+  // Get the total number of core framework sections (01-15) in order
+  $: coreFrameworkSections = Object.keys(data.sections || {}).filter(section => 
+    section.match(/^\d{2}-/) && !section.startsWith('quick-guide')
+  ).sort();
+
+  // Check if this is a core framework section
+  $: isCoreSection = activeSection.match(/^\d{2}-/);
 </script>
+
+<svelte:window on:click={handleClickOutside}/>
 
 <div class="documentation-container">
   {#if !isPrintMode}
@@ -253,23 +375,27 @@
   {/if}
 
   <div class="content">
-    <!-- Quick Access Card for Lite Guides -->
-    {#if !isPrintMode && !isQuickGuideActive}
-      <div class="lite-guide-card">
-        <div class="card-content">
-          <div class="card-icon">📘</div>
-          <div class="card-text">
-            <h3>New to the Food Systems Framework?</h3>
-            <p>Start with one of our simplified guides that explain the core concepts for different audiences.</p>
-          </div>
-          <div class="card-actions">
-            <div class="dropdown">
-              <button class="primary-btn dropdown-toggle">
-                Choose a Quick Guide <span class="arrow-icon">▾</span>
-              </button>
+  <!-- Quick Access Card for Food Systems Framework -->
+  {#if !isPrintMode && !isQuickGuideActive && activeSection === 'index'}
+    <div class="food-systems-guide-card">
+      <div class="card-content">
+        <div class="card-icon">🌾</div>
+        <div class="card-text">
+          <h3>New to the Food Systems Framework?</h3>
+          <p>Start with one of our simplified guides that explain the core concepts for different audiences.</p>
+        </div>
+        <div class="card-actions">
+          <div class="dropdown">
+            <button class="primary-btn dropdown-toggle" on:click={toggleCardDropdown}>
+              Choose a Quick Guide <span class="arrow-icon">▾</span>
+            </button>
+            {#if isDropdownOpen}
               <div class="dropdown-menu">
                 {#each guides as guide}
-                  <button class="dropdown-item" on:click={() => selectQuickGuide(guide.id)}>
+                  <button class="dropdown-item" on:click={() => {
+                    selectQuickGuide(guide.id);
+                    isDropdownOpen = false; // Close dropdown after selection
+                  }}>
                     <span class="guide-icon">{guide.icon}</span>
                     <div class="guide-info">
                       <span class="guide-title">{guide.title}</span>
@@ -278,41 +404,154 @@
                   </button>
                 {/each}
               </div>
-            </div>
+            {/if}
           </div>
         </div>
       </div>
-    {/if}
+    </div>
+  {/if}
 
     {#if data.isModular}
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            <!-- Make quick guides into a dropdown in the navbar -->
-            <li class="dropdown-li" class:active={isQuickGuideActive}>
-              <button class="dropdown-toggle">
-                Quick Guides <span class="arrow-icon">▾</span>
-              </button>
-              <div class="dropdown-menu">
-                {#each guides as guide}
-                  <button class="dropdown-item" on:click={() => selectQuickGuide(guide.id)}>
-                    <span class="guide-icon">{guide.icon}</span>
-                    <span class="guide-title">{guide.title}</span>
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">Overview</span>
+            </button>
+          </div>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={['01-introduction', '02-definitions', '03-glossary', '04-theory-of-change'].some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">🌱</span>
+              <span class="accordion-title">Foundation</span>
+              <span class="section-count">(4)</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each ['01-introduction', '02-definitions', '03-glossary', '04-theory-of-change'] as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
               </div>
-            </li>
-            
-            <!-- Regular sections, filtering out the quick guides -->
-            {#each Object.keys(data.sections).filter(section => !section.startsWith('quick-guide')) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getSectionTitle(section)}
-                </button>
-              </li>
-            {/each}
-          </ul>
+            {/if}
+          </div>
+
+          <!-- Strategic Framework Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={strategicOpen}
+              class:has-active={coreFrameworkSections.slice(4, 9).some(section => activeSection === section)}
+              on:click={toggleStrategic}
+            >
+              <span class="accordion-icon">🎯</span>
+              <span class="accordion-title">Strategic Framework</span>
+              <span class="section-count">({coreFrameworkSections.slice(4, 9).length})</span>
+              <span class="toggle-arrow" class:rotated={strategicOpen}>▼</span>
+            </button>
+            {#if strategicOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(4, 9) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={coreFrameworkSections.slice(9).some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">Implementation</span>
+              <span class="section-count">({coreFrameworkSections.slice(9).length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each coreFrameworkSections.slice(9) as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">Resources</span>
+              <span class="section-count">(3)</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each guides as guide}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === guide.id}
+                    on:click={() => setActiveSection(guide.id)}
+                  >
+                    <span class="nav-icon">{guide.icon}</span>
+                    <span class="nav-title">{guide.title}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((parseInt(activeSection.substring(0, 2)) / 15) * 100)}%"></div>
+          </div>
+          <span class="progress-text">Section {parseInt(activeSection.substring(0, 2))} of 15</span>
         </div>
       {/if}
 
@@ -347,11 +586,11 @@
             
             <!-- Navigation buttons at bottom of quick guide -->
             {#if !isPrintMode}
-              <div class="lite-guide-navigation">
+              <div class="guide-navigation">
                 <button class="secondary-btn" on:click={() => downloadLiteGuide(section.replace('quick-guide', '').replace('-', ''))}>
                   Download PDF Version <span class="download-icon">↓</span>
                 </button>
-                <button class="primary-btn" on:click={() => setActiveSection('index')}>
+                <button class="primary-btn" on:click={() => setActiveSection('01-introduction')}>
                   Continue to Full Framework <span class="arrow-icon">→</span>
                 </button>
               </div>
@@ -376,6 +615,31 @@
           {:else}
             <p>Section {section} not found</p>
           {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if coreFrameworkSections.indexOf(activeSection) > 0}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const prevSection = coreFrameworkSections[currentIndex - 1];
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if coreFrameworkSections.indexOf(activeSection) < coreFrameworkSections.length - 1}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const nextSection = coreFrameworkSections[currentIndex + 1];
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
+            </div>
+          {/if}
         </div>
       {/each}
     {:else}
@@ -396,48 +660,219 @@
 </div>
 
 <style>
-  /* Existing styles remain unchanged */
+  /* Food Systems Framework color scheme - earth greens, growth, and sustainability */
+  :root {
+    --food-primary: #2e7d32; /* Forest Green - sustainability, growth, nature */
+    --food-secondary: #4caf50; /* Fresh Green - renewal, life, agriculture */
+    --food-accent: #8bc34a; /* Light Green - innovation, freshness, young growth */
+    --food-earth: #795548; /* Earth Brown - soil, roots, traditional knowledge */
+    --food-harvest: #ff9800; /* Harvest Orange - abundance, warmth, community */
+    --food-sky: #03a9f4; /* Sky Blue - water, climate, global perspective */
+    --food-seed: #ffc107; /* Seed Gold - potential, value, transformation */
+    --food-deep: #1b5e20; /* Deep Green - wisdom, stability, permanence */
+  }
+
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
+
+  .nav-section {
     margin-bottom: 0.5rem;
   }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
     cursor: pointer;
-    color: #4b5563;
     transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
   }
-  
-  .section-nav li.active button {
-    background-color: #2e7d32; /* Changed to green for food systems */
+
+  .accordion-header:hover {
+    background-color: rgba(76, 175, 80, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(46, 125, 50, 0.1);
+    color: var(--food-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(76, 175, 80, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
+    background-color: var(--food-primary);
     color: white;
-    border-color: #2e7d32;
+    font-weight: 600;
   }
-  
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
+
+  .nav-item.active:hover {
+    background-color: var(--food-deep);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.1));
+    border: 1px solid rgba(46, 125, 50, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--food-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(46, 125, 50, 0.1);
+    color: var(--food-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Auto-expand accordion when section is active */
+  .accordion-header.has-active + .accordion-content {
+    display: block;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--food-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--food-primary), var(--food-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--food-primary);
+    font-weight: 500;
   }
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem; /* Adds space above when scrolled to */
   }
 
   .documentation-container {
@@ -453,42 +888,24 @@
     .documentation-container {
       grid-template-columns: 1fr;
     }
-  }
-  
-  .sidebar {
-    border-right: 1px solid #2D5F2D; /* Earthy green border */
-    padding-right: 1.5rem;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .sidebar a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #4b5563;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s;
-  }
-  
-  .sidebar a:hover {
-    color: #2e7d32; /* Green for food systems */
-    border-left-color: #2e7d32;
-  }
-  
-  .sidebar a.active {
-    color: #2e7d32; /* Green for food systems */
-    border-left-color: #2e7d32;
-    font-weight: 600;
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
   }
   
   .content {
@@ -504,7 +921,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-primary);
   }
   
   .content :global(h2) {
@@ -512,7 +929,7 @@
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-secondary);
   }
   
   .content :global(h3) {
@@ -520,7 +937,7 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-accent);
   }
 
   /* Styling for h4 headers (#### in Markdown) */
@@ -529,13 +946,13 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-accent);
   }
 
   /* Styling for the inset box (blockquote) */
   :global(blockquote) {
-    background-color: #f3f6f9;
-    border-left: 4px solid #2e7d32; /* Green for food systems */
+    background-color: rgba(76, 175, 80, 0.1);
+    border-left: 4px solid var(--food-earth);
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     border-radius: 0.5rem;
@@ -543,7 +960,7 @@
 
   :global(blockquote > p:first-child strong) {
     font-size: 1.1rem;
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-earth);
     display: block;
     margin-bottom: 0.75rem;
   }
@@ -564,13 +981,13 @@
   }
 
   :global(blockquote a) {
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-primary);
     text-decoration: underline;
     font-weight: 500;
   }
 
   :global(blockquote a:hover) {
-    color: #1b5e20; /* Darker green on hover */
+    color: var(--food-deep);
   }
   
   .content :global(p) {
@@ -579,43 +996,43 @@
     color: #4b5563;
   }
   
-  /* Add to your existing <style> section */
+  /* Lists with food-themed bullets */
   .content :global(ul), .content :global(ol) {
     margin-bottom: 1.5rem;
-    padding-left: 2rem; /* Slightly increased for better indentation */
-    color: #4b5563; /* Matches paragraph text color */
+    padding-left: 1rem;
+    color: #4b5563;
   }
 
   .content :global(ul) {
-    list-style-type: none; /* Remove default bullets */
+    list-style-type: none;
   }
 
   .content :global(ul li) {
     position: relative;
-    margin-bottom: 0.75rem; /* Slightly more spacing between items */
-    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
   }
 
-  /* Apply stars to all ul li EXCEPT those in section-nav */
+  /* Apply food symbols to all ul li EXCEPT those in section-nav */
   .content :global(ul li:not(.section-nav li))::before {
-    content: "✦";
+    content: "🌾";
     position: absolute;
     left: 0;
-    color: #2e7d32; /* Green for food systems */
+    top: 0.1em;
     font-size: 0.9rem;
   }
 
   .content :global(ol) {
-    list-style-type: decimal; /* Ensure ordered lists use numbers */
+    list-style-type: decimal;
   }
 
   .content :global(ol li) {
-    margin-bottom: 0.75rem; /* Consistent spacing with ul */
+    margin-bottom: 0.75rem;
     padding-left: 0.5rem;
   }
 
   .content :global(ol li::marker) {
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-secondary);
     font-weight: 600;
   }
 
@@ -626,12 +1043,12 @@
   }
 
   .content :global(ul ul li::before) {
-    content: "✧"; /* Smaller star for nested items */
-    color: #4caf50; /* Lighter green for nested bullets */
+    content: "🌱";
+    color: var(--food-accent);
   }
 
-  /* Replace your current table styles with this */
-  .content :global(table) {
+  /* Table styles for food systems framework */
+  :global(.content table) {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
@@ -641,21 +1058,20 @@
     overflow: hidden;
   }
 
-  .content :global(thead) {
-    background-color: #2e7d32; /* Green background for headers */
-    color: #ffffff; /* White text */
+  :global(.content thead) {
+    background: linear-gradient(to right, var(--food-primary), var(--food-secondary));
   }
 
-  .content :global(th) {
+  :global(.content th) {
     padding: 0.75rem 1rem;
     font-weight: 600;
     text-align: left;
-    color: #000000;
+    color: #ffffff;
     border: none;
-    border-bottom: 2px solid #2e7d32;
+    border-bottom: 2px solid var(--food-primary);
   }
 
-  .content :global(td) {
+  :global(.content td) {
     padding: 0.75rem 1rem;
     border: 1px solid #e5e7eb;
     border-left: none;
@@ -663,55 +1079,25 @@
     vertical-align: top;
   }
 
-  .content :global(tr:nth-child(odd)) {
-    background-color: #f8f9fc;
+  :global(.content tr:nth-child(odd)) {
+    background-color: rgba(76, 175, 80, 0.05);
   }
 
-  .content :global(tr:nth-child(even)) {
+  :global(.content tr:nth-child(even)) {
     background-color: #ffffff;
   }
 
-  .content :global(tr:hover) {
-    background-color: #f1f8e9; /* Light green background on hover */
+  :global(.content tr:hover) {
+    background-color: rgba(76, 175, 80, 0.1);
   }
 
-  .content :global(tbody tr:last-child td) {
+  :global(.content tbody tr:last-child td) {
     border-bottom: none;
   }
-
-  /* Table caption or footer */
-  .content :global(table caption),
-  .content :global(table tfoot) {
-    background-color: #e9f7e9; /* Light earthy green */
-    padding: 0.75rem;
-    font-size: 0.875rem;
-    color: #2D5F2D;
-    text-align: left;
-    border-top: 1px solid #2D5F2D;
-  }
-
-  /* Highlight important cells */
-  .content :global(td.highlight) {
-    color: #2e7d32; /* Green text */
-    font-weight: 600;
-  }
-
-  /* For responsive tables on small screens */
-  @media (max-width: 640px) {
-    .content :global(table) {
-      display: block;
-      overflow-x: auto;
-    }
-    
-    .content :global(th),
-    .content :global(td) {
-      white-space: nowrap;
-    }
-  }
   
-  /* New styles for Lite Guide card */
-  .lite-guide-card {
-    background: linear-gradient(135deg, #edf7f0 0%, #e6f7e9 100%);
+  /* Food Systems guide card */
+  .food-systems-guide-card {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(46, 125, 50, 0.1) 100%);
     border-radius: 0.75rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(46, 125, 50, 0.1);
@@ -721,16 +1107,21 @@
     z-index: 1;
   }
 
-  .lite-guide-card .dropdown-menu {
+  /* Card dropdown menu - controlled by Svelte {#if} */
+  .food-systems-guide-card .dropdown-menu {
     position: absolute;
-    top: 100%; /* Position from bottom of button */
+    top: 100%;
     left: 0;
-    z-index: 1001; /* Higher than surrounding elements */
+    z-index: 1001;
     min-width: 300px;
-    max-width: 350px; /* Limit width */
-    overflow: visible; /* Ensure visible outside container */
-    border: 1px solid rgba(46, 125, 50, 0.3); /* Green-tinted border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    max-width: 350px;
+    overflow: hidden;
+    border: 1px solid rgba(46, 125, 50, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+    margin-top: 0.25rem;
   }
   
   .card-content {
@@ -743,7 +1134,7 @@
   
   .card-icon {
     font-size: 2.5rem;
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-primary);
     flex-shrink: 0;
   }
   
@@ -754,7 +1145,7 @@
   
   .card-text h3 {
     margin: 0 0 0.5rem 0;
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-primary);
     font-size: 1.25rem;
   }
   
@@ -774,7 +1165,7 @@
   }
   
   .primary-btn {
-    background-color: #2e7d32; /* Green for food systems */
+    background-color: var(--food-primary);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -785,14 +1176,14 @@
   }
   
   .primary-btn:hover {
-    background-color: #1b5e20; /* Darker green */
+    background-color: var(--food-deep);
     transform: translateY(-1px);
   }
   
   .secondary-btn {
     background-color: white;
-    color: #2e7d32; /* Green for food systems */
-    border: 1px solid #2e7d32;
+    color: var(--food-primary);
+    border: 1px solid var(--food-primary);
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 500;
@@ -801,7 +1192,7 @@
   }
   
   .secondary-btn:hover {
-    background-color: #f1f8e9; /* Light green */
+    background-color: rgba(76, 175, 80, 0.1);
     transform: translateY(-1px);
   }
   
@@ -817,19 +1208,19 @@
 
   /* Link styles for content */
   .content :global(a) {
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-secondary);
     text-decoration: underline;
     font-weight: 500;
     transition: all 0.2s;
   }
 
   .content :global(a:hover) {
-    color: #1b5e20; /* Darker green on hover */
+    color: var(--food-primary);
     text-decoration: underline;
   }
 
   .content :global(a:active) {
-    color: #1b5e20; /* Darker green when clicked */
+    color: var(--food-primary);
   }
 
   /* External link styles with a subtle indicator */
@@ -848,19 +1239,19 @@
 
   /* Section link styles - more subtle but still distinct */
   .content :global(a[href^="#"]) {
-    color: #4caf50; /* Slightly different green for internal section links */
+    color: var(--food-accent);
     text-decoration: none;
-    border-bottom: 1px dotted #4caf50;
+    border-bottom: 1px dotted var(--food-accent);
   }
 
   .content :global(a[href^="#"]):hover {
-    color: #2e7d32;
-    border-bottom-color: #2e7d32;
+    color: var(--food-secondary);
+    border-bottom-color: var(--food-secondary);
   }
 
   /* Make sure links in tables are readable against the background */
   .content :global(table a) {
-    color: #2e7d32;
+    color: var(--food-secondary);
     font-weight: 600;
   }
 
@@ -872,19 +1263,52 @@
   }
 
   .section-nav a:hover {
-    color: #2e7d32; /* Green for food systems */
+    color: var(--food-primary);
   }
- 
-  /* Styles for navigation at bottom of lite guide */
-  .lite-guide-navigation {
+
+  /* Styles for navigation at bottom of guide */
+  .guide-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
     padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
   }
+
+  /* Section navigation for core framework sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--food-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--food-deep);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
+  }
   
-  /* Dropdown styles for quick guides */
+  /* Dropdown styles for navigation and quick guides */
   .dropdown {
     position: relative;
     display: inline-block;
@@ -897,40 +1321,36 @@
     width: 100%;
   }
 
+  /* Base dropdown menu styles */
   .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1000;
-    display: none;
-    overflow: visible !important;
     width: auto !important;
-    min-width: 300px !important;
+    min-width: 250px !important;
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-    margin-top: 0;
-    padding-top: 10px;
     white-space: normal !important;
   }
 
-  .dropdown:hover .dropdown-menu,
+  /* Navigation dropdown hover behavior */
   .dropdown-li:hover .dropdown-menu {
     display: block;
   }
 
-  .dropdown::after,
   .dropdown-li::after {
     content: '';
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    height: 10px; /* Height of the bridge */
-    background: transparent; /* Invisible */
+    height: 10px;
+    background: transparent;
   }
   
   .dropdown-li {
@@ -938,35 +1358,31 @@
   }
 
   .dropdown-li .dropdown-menu {
-    width: 300px;
+    width: 250px;
     display: none;
   }
 
-  .dropdown-li:hover .dropdown-menu {
-    display: block;
-  }
-
-  /* Fix for dropdown items when lite guide is active */
+  /* Fix for dropdown items when supplementary is active */
   .dropdown-li.active .dropdown-menu {
-    background-color: white !important; /* Force white background */
+    background-color: white !important;
   }
 
   .dropdown-li.active .dropdown-item {
-    color: #212529 !important; /* Force dark text */
+    color: #212529 !important;
   }
 
   .dropdown-li.active .dropdown-item:hover {
-    background-color: #f1f8e9 !important; /* Light green on hover */
-    color: #2e7d32 !important; /* Green text on hover */
+    background-color: rgba(76, 175, 80, 0.1) !important;
+    color: var(--food-primary) !important;
   }
 
   .dropdown-li.active .dropdown-menu .dropdown-item {
-    color: #212529 !important; /* Force dark text always */
-    background-color: transparent !important; /* Clear any background */
+    color: #212529 !important;
+    background-color: transparent !important;
   }
 
   .dropdown-li.active .dropdown-menu {
-    background-color: white !important; /* Force white background */
+    background-color: white !important;
   }
 
   /* Remove any inherited text color styling */
@@ -974,13 +1390,13 @@
   .dropdown-li.active .guide-title,
   .dropdown-li.active .guide-desc,
   .dropdown-li.active .guide-icon {
-    color: inherit !important; /* Force inheritance */
+    color: inherit !important;
   }
 
   /* Hover state */
   .dropdown-li.active .dropdown-item:hover {
-    background-color: #f1f8e9 !important; /* Light green on hover */
-    color: #2e7d32 !important; /* Green text on hover */
+    background-color: rgba(76, 175, 80, 0.1) !important;
+    color: var(--food-primary) !important;
   }
 
   /* Fix for guide icons in dropdown */
@@ -1009,7 +1425,7 @@
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #f1f8e9;
+    background-color: rgba(76, 175, 80, 0.1);
   }
   
   /* Quick guide selector styles */
@@ -1044,12 +1460,12 @@
   .guide-card:hover {
     box-shadow: 0 4px 6px rgba(46, 125, 50, 0.1);
     transform: translateY(-2px);
-    border-color: #2e7d32;
+    border-color: var(--food-primary);
   }
   
   .guide-card.active {
-    border-color: #2e7d32;
-    background-color: #f1f8e9;
+    border-color: var(--food-primary);
+    background-color: rgba(76, 175, 80, 0.1);
   }
   
   .guide-icon {
@@ -1060,7 +1476,7 @@
   .guide-title {
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #2e7d32;
+    color: var(--food-primary);
   }
   
   .guide-desc {
@@ -1102,12 +1518,21 @@
       justify-content: center;
     }
     
-    .lite-guide-navigation {
+    .guide-navigation {
       flex-direction: column;
       gap: 1rem;
     }
     
-    .lite-guide-navigation button {
+    .guide-navigation button {
+      width: 100%;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
       width: 100%;
     }
     
@@ -1119,4 +1544,163 @@
       max-width: none;
     }
   }
- </style>
+
+  /* Food Systems Framework specific theme elements */
+
+  /* Special callouts for food concepts */
+  .content :global(.sustainability-callout) {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--food-secondary);
+  }
+
+  .content :global(.traditional-knowledge-callout) {
+    background-color: rgba(121, 85, 72, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--food-earth);
+  }
+
+  .content :global(.innovation-callout) {
+    background-color: rgba(139, 195, 74, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--food-accent);
+  }
+
+  /* Special styling for case studies */
+  .content :global(.case-study) {
+    background-color: rgba(255, 152, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--food-harvest);
+  }
+
+  .content :global(.case-study-title) {
+    color: var(--food-harvest);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Alert/warning styling */
+  .content :global(.alert) {
+    background-color: rgba(244, 67, 54, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #f44336;
+  }
+
+  .content :global(.alert-title) {
+    color: #f44336;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Highlight boxes for important food concepts */
+  .content :global(.concept-highlight) {
+    background-color: rgba(76, 175, 80, 0.05);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+  }
+
+  .content :global(.concept-highlight-title) {
+    color: var(--food-secondary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(76, 175, 80, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Agricultural innovation styling */
+  .content :global(.agriculture-highlight) {
+    background-color: rgba(139, 195, 74, 0.05);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(139, 195, 74, 0.3);
+  }
+
+  .content :global(.agriculture-highlight-title) {
+    color: var(--food-accent);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(139, 195, 74, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Climate and sustainability styling */
+  .content :global(.climate-highlight) {
+    background-color: rgba(3, 169, 244, 0.05);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(3, 169, 244, 0.3);
+  }
+
+  .content :global(.climate-highlight-title) {
+    color: var(--food-sky);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(3, 169, 244, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Community and traditional knowledge styling */
+  .content :global(.community-highlight) {
+    background-color: rgba(121, 85, 72, 0.05);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(121, 85, 72, 0.3);
+  }
+
+  .content :global(.community-highlight-title) {
+    color: var(--food-earth);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(121, 85, 72, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Economic and trade styling */
+  .content :global(.economic-highlight) {
+    background-color: rgba(255, 193, 7, 0.05);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+  }
+
+  .content :global(.economic-highlight-title) {
+    color: var(--food-seed);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 193, 7, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Nutrition and health styling */
+  .content :global(.nutrition-highlight) {
+    background-color: rgba(255, 152, 0, 0.05);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(255, 152, 0, 0.3);
+  }
+
+  .content :global(.nutrition-highlight-title) {
+    color: var(--food-harvest);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 152, 0, 0.3);
+    padding-bottom: 0.5rem;
+  }
+</style>

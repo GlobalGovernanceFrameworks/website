@@ -91,8 +91,7 @@ const initialNav = [
           { 
             titleKey: 'framework.docs.nav.implementationConsciousness', 
             path: '/frameworks/docs/implementation/consciousness', 
-            status: 'ready',
-            version: 'v1.0'
+            status: 'review',
           },
           { titleKey: 'framework.docs.nav.implementationMetaGovernance', path: '/frameworks/docs/implementation/meta', status: 'review' },
           { titleKey: 'framework.docs.nav.implementationMethodsTools', path: '/frameworks/docs/implementation/methods-tools', status: 'review' }

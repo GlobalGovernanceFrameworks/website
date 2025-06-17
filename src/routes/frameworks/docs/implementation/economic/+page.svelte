@@ -8,6 +8,7 @@
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import ConstellationMap from '$lib/components/ConstellationMap.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -62,6 +63,19 @@
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -122,12 +136,15 @@
   function getSectionTitle(section) {
     const titles = {
       en: {
+        // Entry and overview sections
+        'index': "Overview",
         'technical-guide': "Technical Guide for Policymakers",
         'community-guide': "Community Economic Implementation Guide",
         'youth-guide': "Youth Economic Action Guide",
         'digital-ethics': "Digital Economic Ethics Guide",
         'indigenous-guide': "Indigenous Economic Stewardship Guide",
-        'index': "Overview",
+        
+        // Core framework sections
         'introduction': "Introduction",
         'core-principles': "Core Principles",
         'local-implementation': "Local Implementation",
@@ -147,12 +164,15 @@
         'conclusion': "Conclusion"
       },
       sv: {
+        // Entry and overview sections (Swedish)
+        'index': "Översikt",
         'technical-guide': "Teknisk Guide för Beslutsfattare",
         'community-guide': "Samhällsguide för Ekonomisk Implementering",
         'youth-guide': "Ekonomisk Handlingsguide för Ungdomar",
         'digital-ethics': "Digital Ekonomietik Guide",
         'indigenous-guide': "Urfolks Ekonomisk Förvaltningsguide",
-        'index': "Översikt",
+        
+        // Core framework sections (Swedish)
         'introduction': "Introduktion",
         'core-principles': "Kärnprinciper",
         'local-implementation': "Lokal Implementering",
@@ -174,6 +194,33 @@
     };
     
     return (titles[currentLocale] || titles.en)[section] || section;
+  }
+
+  // Function to get shortened section titles for navigation
+  function getShortSectionTitle(section) {
+    const fullTitle = getSectionTitle(section);
+    
+    const shortTitles = {
+      'Introduction': 'Introduction',
+      'Core Principles': 'Principles',
+      'Local Implementation': 'Local',
+      'Regional Implementation': 'Regional',
+      'Global Implementation': 'Global',
+      'Nested Support Systems': 'Support',
+      'Knowledge & Technology Commons': 'Tech Commons',
+      'Transitional Pathways': 'Pathways',
+      'Decision Protocols': 'Decisions',
+      'Cross-Domain Integration': 'Integration',
+      'Adaptive Governance': 'Governance',
+      'Monitoring & Evaluation': 'Monitoring',
+      'Public Engagement': 'Engagement',
+      'Implementation Timeline': 'Timeline',
+      'Implementation Challenges': 'Challenges',
+      'Visualizations': 'Visuals',
+      'Conclusion': 'Conclusion'
+    };
+    
+    return shortTitles[fullTitle] || fullTitle;
   }
 
   // Choose the right intro text based on the current locale
@@ -274,12 +321,87 @@
   $: guides = guideInfo[currentLocale] || guideInfo.en;
   
   // Check if the active section is any of the guides
-  $: isGuideActive = activeSection === 'technical-guide' || 
-                     activeSection === 'community-guide' || 
-                     activeSection === 'youth-guide' ||
-                     activeSection === 'digital-ethics' ||
-                     activeSection === 'indigenous-guide';
+  $: isGuideActive = ['technical-guide', 'community-guide', 'youth-guide', 'digital-ethics', 'indigenous-guide'].includes(activeSection);
+  $: isSupplementaryActive = isGuideActive;
+
+  // For handling dropdown states
+  let isCardDropdownOpen = false;
+  let isNavDropdownOpen = false;
+
+  // Accordion states for section categories
+  let foundationOpen = true; // Start with foundation open
+  let implementationOpen = false;
+  let governanceOpen = false;
+  let resourcesOpen = false;
+
+  function toggleCardDropdown() {
+    isCardDropdownOpen = !isCardDropdownOpen;
+  }
+
+  function toggleNavDropdown() {
+    isNavDropdownOpen = !isNavDropdownOpen;
+    // Close the card dropdown if it's open
+    if (isNavDropdownOpen) isCardDropdownOpen = false;
+  }
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleGovernance() {
+    governanceOpen = !governanceOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
+  }
+
+  // Close dropdowns when clicking outside
+  function handleClickOutside(event) {
+    if (browser) {
+      const cardDropdown = document.querySelector('.economic-guide-card .dropdown');
+      const navDropdown = document.querySelector('.dropdown-li');
+      
+      if (cardDropdown && !cardDropdown.contains(event.target)) {
+        isCardDropdownOpen = false;
+      }
+      
+      if (navDropdown && !navDropdown.contains(event.target)) {
+        isNavDropdownOpen = false;
+      }
+    }
+  }
+
+  onMount(() => {
+    if (browser) {
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }
+  });
+
+  // Get sections for different accordion groups - filtering out guides and grouping logically
+  $: regularSections = Object.keys(data.sections || {}).filter(section => 
+    !['technical-guide', 'community-guide', 'youth-guide', 'digital-ethics', 'indigenous-guide'].includes(section)
+  );
+
+  // Group sections logically
+  $: foundationSections = ['introduction', 'core-principles'];
+  $: implementationSections = ['local-implementation', 'regional-implementation', 'global-implementation', 'nested-support', 'tech-commons', 'transitional-pathways'];
+  $: governanceSections = ['decision-protocols', 'cross-domain', 'adaptive-governance', 'monitoring', 'public-engagement', 'timeline', 'challenges-lessons', 'visualizations', 'conclusion'];
+
+  // For progress indicator - count only non-guide sections
+  $: totalSections = regularSections.filter(s => s !== 'index').length;
+  $: currentSectionIndex = regularSections.filter(s => s !== 'index').indexOf(activeSection) + 1;
+  $: isCoreSection = regularSections.includes(activeSection) && activeSection !== 'index';
 </script>
+
+<svelte:window on:click={handleClickOutside}/>
 
 <div class="documentation-container">
   {#if !isPrintMode}
@@ -287,31 +409,36 @@
   {/if}
 
   <div class="content">
-    <!-- Quick Access Card for Lite Guides -->
-    {#if !isPrintMode && !isGuideActive}
-      <div class="lite-guide-card">
+    <!-- Quick Access Card for Economic Integration Framework -->
+    {#if !isPrintMode && !isGuideActive && activeSection === 'index'}
+      <div class="economic-guide-card">
         <div class="card-content">
-          <div class="card-icon">📘</div>
+          <div class="card-icon">💰</div>
           <div class="card-text">
             <h3>New to the Economic Integration Framework?</h3>
             <p>Start with one of our simplified guides that explain the core concepts for different audiences.</p>
           </div>
           <div class="card-actions">
             <div class="dropdown">
-              <button class="primary-btn dropdown-toggle">
+              <button class="primary-btn dropdown-toggle" on:click={toggleCardDropdown}>
                 Choose a Guide <span class="arrow-icon">▾</span>
               </button>
-              <div class="dropdown-menu">
-                {#each guides as guide}
-                  <button class="dropdown-item" on:click={() => selectGuide(guide.id)}>
-                    <span class="guide-icon">{guide.icon}</span>
-                    <div class="guide-info">
-                      <span class="guide-title">{guide.title}</span>
-                      <span class="guide-desc">{guide.description}</span>
-                    </div>
-                  </button>
-                {/each}
-              </div>
+              {#if isCardDropdownOpen}
+                <div class="dropdown-menu">
+                  {#each guides as guide}
+                    <button class="dropdown-item" on:click={() => {
+                      selectGuide(guide.id);
+                      isCardDropdownOpen = false; // Close dropdown after selection
+                    }}>
+                      <span class="guide-icon">{guide.icon}</span>
+                      <div class="guide-info">
+                        <span class="guide-title">{guide.title}</span>
+                        <span class="guide-desc">{guide.description}</span>
+                      </div>
+                    </button>
+                  {/each}
+                </div>
+              {/if}
             </div>
           </div>
         </div>
@@ -322,48 +449,150 @@
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            <!-- Make guides into a dropdown in the navbar -->
-            <li class="dropdown-li" class:active={isGuideActive}>
-              <button class="dropdown-toggle">
-                Guides <span class="arrow-icon">▾</span>
-              </button>
-              <div class="dropdown-menu">
-                {#each guides as guide}
-                  <button class="dropdown-item" on:click={() => selectGuide(guide.id)}>
-                    <span class="guide-icon">{guide.icon}</span>
-                    <span class="guide-title">{guide.title}</span>
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">Overview</span>
+            </button>
+          </div>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={foundationSections.some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">🏛️</span>
+              <span class="accordion-title">Foundation</span>
+              <span class="section-count">({foundationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each foundationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-icon">📋</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
               </div>
-            </li>
-            
-            <!-- Regular sections, filtering out the guides -->
-            {#each Object.keys(data.sections).filter(section => 
-              section !== 'technical-guide' &&
-              section !== 'community-guide' &&
-              section !== 'youth-guide' &&
-              section !== 'digital-ethics' &&
-              section !== 'indigenous-guide'
-            ) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getSectionTitle(section)}
-                </button>
-              </li>
-            {/each}
-          </ul>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={implementationSections.some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">⚙️</span>
+              <span class="accordion-title">Implementation</span>
+              <span class="section-count">({implementationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each implementationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-icon">🔧</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Governance & Operations Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={governanceOpen}
+              class:has-active={governanceSections.some(section => activeSection === section)}
+              on:click={toggleGovernance}
+            >
+              <span class="accordion-icon">⚖️</span>
+              <span class="accordion-title">Governance & Operations</span>
+              <span class="section-count">({governanceSections.length})</span>
+              <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
+            </button>
+            {#if governanceOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each governanceSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">Resources</span>
+              <span class="section-count">({guides.length})</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each guides as guide}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === guide.id}
+                    on:click={() => setActiveSection(guide.id)}
+                  >
+                    <span class="nav-icon">{guide.icon}</span>
+                    <span class="nav-title">{guide.title}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((currentSectionIndex / totalSections) * 100)}%"></div>
+          </div>
+          <span class="progress-text">Section {currentSectionIndex} of {totalSections}</span>
         </div>
       {/if}
 
       <!-- Show active section, or all sections in print mode -->
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
-          {#if section === 'technical-guide' || 
-                section === 'community-guide' || 
-                section === 'youth-guide' ||
-                section === 'digital-ethics' ||
-                section === 'indigenous-guide'}
+          {#if isGuideActive && section === activeSection}
             <!-- Guide selector if we're in one of the guides and not in print mode -->
             {#if !isPrintMode}
               <div class="guide-selector">
@@ -391,11 +620,11 @@
             
             <!-- Navigation buttons at bottom of guide -->
             {#if !isPrintMode}
-              <div class="lite-guide-navigation">
+              <div class="guide-navigation">
                 <button class="secondary-btn" on:click={() => downloadLiteGuide(section.replace('-guide', ''))}>
                   Download PDF Version <span class="download-icon">↓</span>
                 </button>
-                <button class="primary-btn" on:click={() => setActiveSection('index')}>
+                <button class="primary-btn" on:click={() => setActiveSection('introduction')}>
                   Continue to Full Framework <span class="arrow-icon">→</span>
                 </button>
               </div>
@@ -420,6 +649,31 @@
           {:else}
             <p>Section {section} not found</p>
           {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if currentSectionIndex > 1}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const nonIndexSections = regularSections.filter(s => s !== 'index');
+                  const prevSection = nonIndexSections[currentSectionIndex - 2];
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if currentSectionIndex < totalSections}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const nonIndexSections = regularSections.filter(s => s !== 'index');
+                  const nextSection = nonIndexSections[currentSectionIndex];
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
+            </div>
+          {/if}
         </div>
       {/each}
     {:else}
@@ -440,48 +694,219 @@
 </div>
 
 <style>
-  /* Updated styles with economic-themed colors (blue-green palette) */
+  /* Economic Integration Framework color scheme - blue-green palette for economic themes */
+  :root {
+    --economic-primary: #088F8F; /* Teal Blue-Green - prosperity, stability, growth */
+    --economic-secondary: #48BF91; /* Light Sea Green - innovation, sustainability, balance */
+    --economic-accent: #20B2AA; /* Light Sea Green - cooperation, harmony, flow */
+    --economic-earth: #4682B4; /* Steel Blue - infrastructure, reliability, trust */
+    --economic-prosperity: #00CED1; /* Dark Turquoise - abundance, opportunity, potential */
+    --economic-deep: #006666; /* Dark Teal - wisdom, depth, permanence */
+    --economic-light: #E0F8F8; /* Very Light Cyan - transparency, openness, clarity */
+    --economic-community: #5F9EA0; /* Cadet Blue - community, cooperation, shared values */
+  }
+
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
+
+  .nav-section {
     margin-bottom: 0.5rem;
   }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
     cursor: pointer;
-    color: #4b5563;
     transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
   }
-  
-  .section-nav li.active button {
-    background-color: #088F8F; /* Updated to economic framework blue-green */
+
+  .accordion-header:hover {
+    background-color: rgba(8, 143, 143, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(8, 143, 143, 0.1);
+    color: var(--economic-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(8, 143, 143, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(8, 143, 143, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
+    background-color: var(--economic-primary);
     color: white;
-    border-color: #088F8F;
+    font-weight: 600;
   }
-  
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
+
+  .nav-item.active:hover {
+    background-color: var(--economic-earth);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(8, 143, 143, 0.1), rgba(72, 191, 145, 0.1));
+    border: 1px solid rgba(8, 143, 143, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--economic-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(8, 143, 143, 0.1);
+    color: var(--economic-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Auto-expand accordion when section is active */
+  .accordion-header.has-active + .accordion-content {
+    display: block;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(8, 143, 143, 0.1), rgba(72, 191, 145, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--economic-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--economic-primary), var(--economic-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--economic-deep);
+    font-weight: 500;
   }
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem; /* Adds space above when scrolled to */
   }
 
   .documentation-container {
@@ -497,50 +922,28 @@
     .documentation-container {
       grid-template-columns: 1fr;
     }
-  }
-  
-  .sidebar {
-    border-right: 1px solid #088F8F; /* Updated to economic framework blue-green */
-    padding-right: 1.5rem;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .sidebar a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #4b5563;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s;
-  }
-  
-  .sidebar a:hover {
-    color: #088F8F; /* Updated to economic framework blue-green */
-    border-left-color: #088F8F;
-  }
-  
-  .sidebar a.active {
-    color: #088F8F; /* Updated to economic framework blue-green */
-    border-left-color: #088F8F;
-    font-weight: 600;
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
   }
   
   .content {
     min-width: 0;
-  }
-  
-  .map-container {
-    margin: 2rem 0;
   }
   
   /* Additional styles for markdown content */
@@ -548,7 +951,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #088F8F; /* Updated to economic framework blue-green */
+    color: var(--economic-primary);
   }
   
   .content :global(h2) {
@@ -556,7 +959,7 @@
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #088F8F; /* Updated to economic framework blue-green */
+    color: var(--economic-secondary);
   }
   
   .content :global(h3) {
@@ -564,7 +967,7 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #088F8F; /* Updated to economic framework blue-green */
+    color: var(--economic-accent);
   }
 
   /* Styling for h4 headers (#### in Markdown) */
@@ -573,13 +976,13 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #088F8F; /* Updated to economic framework blue-green */
+    color: var(--economic-prosperity);
   }
 
   /* Styling for the inset box (blockquote) */
   :global(blockquote) {
-    background-color: #f3f9f9;
-    border-left: 4px solid #088F8F; /* Updated to economic framework blue-green */
+    background-color: rgba(72, 191, 145, 0.1);
+    border-left: 4px solid var(--economic-secondary);
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     border-radius: 0.5rem;
@@ -587,7 +990,7 @@
 
   :global(blockquote > p:first-child strong) {
     font-size: 1.1rem;
-    color: #088F8F; /* Updated to economic framework blue-green */
+    color: var(--economic-deep);
     display: block;
     margin-bottom: 0.75rem;
   }
@@ -608,13 +1011,13 @@
   }
 
   :global(blockquote a) {
-    color: #088F8F; /* Updated to economic framework blue-green */
+    color: var(--economic-secondary);
     text-decoration: underline;
     font-weight: 500;
   }
 
   :global(blockquote a:hover) {
-    color: #006666; /* Darker blue-green on hover */
+    color: var(--economic-primary);
   }
   
   .content :global(p) {
@@ -623,43 +1026,43 @@
     color: #4b5563;
   }
   
-  /* Add to your existing <style> section */
+  /* Lists with economic themed bullets */
   .content :global(ul), .content :global(ol) {
     margin-bottom: 1.5rem;
-    padding-left: 2rem; /* Slightly increased for better indentation */
-    color: #4b5563; /* Matches paragraph text color */
+    padding-left: 1rem;
+    color: #4b5563;
   }
 
   .content :global(ul) {
-    list-style-type: none; /* Remove default bullets */
+    list-style-type: none;
   }
 
   .content :global(ul li) {
     position: relative;
-    margin-bottom: 0.75rem; /* Slightly more spacing between items */
+    margin-bottom: 0.75rem;
     padding-left: 1.5rem;
   }
 
   /* Apply economic symbols to all ul li EXCEPT those in section-nav */
   .content :global(ul li:not(.section-nav li))::before {
-    content: "♻️";  /* Recycling symbol for the economic framework */
+    content: "💰";
     position: absolute;
     left: 0;
-    color: #088F8F; /* Updated to economic framework blue-green */
+    top: 0.1em;
     font-size: 0.9rem;
   }
 
   .content :global(ol) {
-    list-style-type: decimal; /* Ensure ordered lists use numbers */
+    list-style-type: decimal;
   }
 
   .content :global(ol li) {
-    margin-bottom: 0.75rem; /* Consistent spacing with ul */
+    margin-bottom: 0.75rem;
     padding-left: 0.5rem;
   }
 
   .content :global(ol li::marker) {
-    color: #088F8F; /* Updated to economic framework blue-green */
+    color: var(--economic-secondary);
     font-weight: 600;
   }
 
@@ -670,11 +1073,11 @@
   }
 
   .content :global(ul ul li::before) {
-    content: "•"; /* Smaller symbol for nested items */
-    color: #48BF91; /* Lighter blue-green for nested bullets */
+    content: "🤝";
+    color: var(--economic-community);
   }
 
-  /* Table styles for markdown content with economic theme */
+  /* Table styles for economic integration framework */
   :global(.content table) {
     width: 100%;
     border-collapse: collapse;
@@ -686,7 +1089,7 @@
   }
 
   :global(.content thead) {
-    background: linear-gradient(to right, #088F8F, #48BF91);
+    background: linear-gradient(to right, var(--economic-primary), var(--economic-secondary));
   }
 
   :global(.content th) {
@@ -695,7 +1098,7 @@
     text-align: left;
     color: #ffffff;
     border: none;
-    border-bottom: 2px solid #088F8F;
+    border-bottom: 2px solid var(--economic-primary);
   }
 
   :global(.content td) {
@@ -707,7 +1110,7 @@
   }
 
   :global(.content tr:nth-child(odd)) {
-    background-color: #f8f9fa;
+    background-color: rgba(72, 191, 145, 0.05);
   }
 
   :global(.content tr:nth-child(even)) {
@@ -715,46 +1118,16 @@
   }
 
   :global(.content tr:hover) {
-    background-color: #eef9f9; /* Light blue-green background on hover */
+    background-color: rgba(72, 191, 145, 0.1);
   }
 
   :global(.content tbody tr:last-child td) {
     border-bottom: none;
   }
-
-  /* Table caption or footer */
-  :global(.content table caption),
-  :global(.content table tfoot) {
-    background-color: #eef9f9; /* Light blue-green */
-    padding: 0.75rem;
-    font-size: 0.875rem;
-    color: #088F8F;
-    text-align: left;
-    border-top: 1px solid #088F8F;
-  }
-
-  /* Highlight important cells */
-  :global(.content td.highlight) {
-    color: #088F8F; /* Blue-green text */
-    font-weight: 600;
-  }
-
-  /* For responsive tables on small screens */
-  @media (max-width: 640px) {
-    :global(.content table) {
-      display: block;
-      overflow-x: auto;
-    }
-    
-    :global(.content th),
-    :global(.content td) {
-      white-space: nowrap;
-    }
-  }
   
-  /* Styles for Lite Guide card */
-  .lite-guide-card {
-    background: linear-gradient(135deg, #eef9f9 0%, #d1f0e8 100%);
+  /* Economic integration framework guide card */
+  .economic-guide-card {
+    background: linear-gradient(135deg, rgba(72, 191, 145, 0.1) 0%, rgba(8, 143, 143, 0.1) 100%);
     border-radius: 0.75rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(8, 143, 143, 0.1);
@@ -764,16 +1137,17 @@
     z-index: 1;
   }
 
-  .lite-guide-card .dropdown-menu {
+  .economic-guide-card .dropdown-menu {
     position: absolute;
-    top: 100%; /* Position from bottom of button */
+    top: 100%;
     left: 0;
-    z-index: 1001; /* Higher than surrounding elements */
+    z-index: 1001;
     min-width: 300px;
-    max-width: 350px; /* Limit width */
-    overflow: visible; /* Ensure visible outside container */
-    border: 1px solid rgba(8, 143, 143, 0.3); /* Blue-green-tinted border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    max-width: 350px;
+    overflow: hidden;
+    border: 1px solid rgba(8, 143, 143, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
   }
   
   .card-content {
@@ -786,7 +1160,7 @@
   
   .card-icon {
     font-size: 2.5rem;
-    color: #088F8F; /* Blue-green for economic */
+    color: var(--economic-primary);
     flex-shrink: 0;
   }
   
@@ -797,7 +1171,7 @@
   
   .card-text h3 {
     margin: 0 0 0.5rem 0;
-    color: #088F8F; /* Blue-green for economic */
+    color: var(--economic-primary);
     font-size: 1.25rem;
   }
   
@@ -817,7 +1191,7 @@
   }
   
   .primary-btn {
-    background-color: #088F8F; /* Blue-green for economic */
+    background-color: var(--economic-primary);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -828,14 +1202,14 @@
   }
   
   .primary-btn:hover {
-    background-color: #006666; /* Darker blue-green */
+    background-color: var(--economic-secondary);
     transform: translateY(-1px);
   }
   
   .secondary-btn {
     background-color: white;
-    color: #088F8F; /* Blue-green for economic */
-    border: 1px solid #088F8F;
+    color: var(--economic-primary);
+    border: 1px solid var(--economic-primary);
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 500;
@@ -844,7 +1218,7 @@
   }
   
   .secondary-btn:hover {
-    background-color: #eef9f9; /* Light blue-green */
+    background-color: rgba(72, 191, 145, 0.1);
     transform: translateY(-1px);
   }
   
@@ -860,19 +1234,19 @@
 
   /* Link styles for content */
   .content :global(a) {
-    color: #088F8F; /* Blue-green for economic */
+    color: var(--economic-secondary);
     text-decoration: underline;
     font-weight: 500;
     transition: all 0.2s;
   }
 
   .content :global(a:hover) {
-    color: #006666; /* Darker blue-green on hover */
+    color: var(--economic-primary);
     text-decoration: underline;
   }
 
   .content :global(a:active) {
-    color: #006666; /* Darker blue-green when clicked */
+    color: var(--economic-primary);
   }
 
   /* External link styles with a subtle indicator */
@@ -891,19 +1265,19 @@
 
   /* Section link styles - more subtle but still distinct */
   .content :global(a[href^="#"]) {
-    color: #48BF91; /* Slightly different blue-green for internal section links */
+    color: var(--economic-accent);
     text-decoration: none;
-    border-bottom: 1px dotted #48BF91;
+    border-bottom: 1px dotted var(--economic-accent);
   }
 
   .content :global(a[href^="#"]):hover {
-    color: #088F8F;
-    border-bottom-color: #088F8F;
+    color: var(--economic-secondary);
+    border-bottom-color: var(--economic-secondary);
   }
 
   /* Make sure links in tables are readable against the background */
   .content :global(table a) {
-    color: #088F8F;
+    color: var(--economic-secondary);
     font-weight: 600;
   }
 
@@ -915,19 +1289,52 @@
   }
 
   .section-nav a:hover {
-    color: #088F8F; /* Blue-green for economic */
+    color: var(--economic-primary);
   }
  
-  /* Styles for navigation at bottom of lite guide */
-  .lite-guide-navigation {
+  /* Styles for navigation at bottom of guide */
+  .guide-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
     padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
   }
+
+  /* Section navigation for core framework sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--economic-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--economic-earth);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
+  }
   
-  /* Dropdown styles for guides */
+  /* Dropdown styles for supplementary materials */
   .dropdown {
     position: relative;
     display: inline-block;
@@ -945,8 +1352,6 @@
     top: 100%;
     left: 0;
     z-index: 1000;
-    display: none;
-    overflow: visible !important;
     width: auto !important;
     min-width: 300px !important;
     padding: 0.5rem 0;
@@ -972,10 +1377,10 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 10px; /* Height of the bridge */
-    background: transparent; /* Invisible */
+    height: 10px;
+    background: transparent;
   }
-  
+ 
   .dropdown-li {
     position: relative;
   }
@@ -989,27 +1394,27 @@
     display: block;
   }
 
-  /* Fix for dropdown items when lite guide is active */
+  /* Fix for dropdown items when supplementary is active */
   .dropdown-li.active .dropdown-menu {
-    background-color: white !important; /* Force white background */
+    background-color: white !important;
   }
 
   .dropdown-li.active .dropdown-item {
-    color: #212529 !important; /* Force dark text */
+    color: #212529 !important;
   }
 
   .dropdown-li.active .dropdown-item:hover {
-    background-color: #eef9f9 !important; /* Light blue-green on hover */
-    color: #088F8F !important; /* Blue-green text on hover */
+    background-color: rgba(72, 191, 145, 0.1) !important;
+    color: var(--economic-primary) !important;
   }
 
   .dropdown-li.active .dropdown-menu .dropdown-item {
-    color: #212529 !important; /* Force dark text always */
-    background-color: transparent !important; /* Clear any background */
+    color: #212529 !important;
+    background-color: transparent !important;
   }
 
   .dropdown-li.active .dropdown-menu {
-    background-color: white !important; /* Force white background */
+    background-color: white !important;
   }
 
   /* Remove any inherited text color styling */
@@ -1017,13 +1422,13 @@
   .dropdown-li.active .guide-title,
   .dropdown-li.active .guide-desc,
   .dropdown-li.active .guide-icon {
-    color: inherit !important; /* Force inheritance */
+    color: inherit !important;
   }
 
   /* Hover state */
   .dropdown-li.active .dropdown-item:hover {
-    background-color: #eef9f9 !important; /* Light blue-green on hover */
-    color: #088F8F !important; /* Blue-green text on hover */
+    background-color: rgba(72, 191, 145, 0.1) !important;
+    color: var(--economic-primary) !important;
   }
 
   /* Fix for guide icons in dropdown */
@@ -1052,7 +1457,7 @@
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #eef9f9;
+    background-color: rgba(72, 191, 145, 0.1);
   }
   
   /* Guide selector styles */
@@ -1087,12 +1492,12 @@
   .guide-card:hover {
     box-shadow: 0 4px 6px rgba(8, 143, 143, 0.1);
     transform: translateY(-2px);
-    border-color: #088F8F;
+    border-color: var(--economic-primary);
   }
   
   .guide-card.active {
-    border-color: #088F8F;
-    background-color: #eef9f9;
+    border-color: var(--economic-primary);
+    background-color: rgba(72, 191, 145, 0.1);
   }
   
   .guide-icon {
@@ -1103,7 +1508,7 @@
   .guide-title {
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #088F8F;
+    color: var(--economic-primary);
   }
   
   .guide-desc {
@@ -1145,12 +1550,21 @@
       justify-content: center;
     }
     
-    .lite-guide-navigation {
+    .guide-navigation {
       flex-direction: column;
       gap: 1rem;
     }
     
-    .lite-guide-navigation button {
+    .guide-navigation button {
+      width: 100%;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
       width: 100%;
     }
     
@@ -1161,5 +1575,189 @@
     .guide-card {
       max-width: none;
     }
+  }
+
+  /* Economic Integration Framework specific theme elements */
+
+  /* Special callouts for economic concepts */
+  .content :global(.prosperity-callout) {
+    background-color: rgba(8, 143, 143, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--economic-primary);
+  }
+
+  .content :global(.sustainability-callout) {
+    background-color: rgba(72, 191, 145, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--economic-secondary);
+  }
+
+  .content :global(.cooperation-callout) {
+    background-color: rgba(32, 178, 170, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--economic-accent);
+  }
+
+  .content :global(.infrastructure-callout) {
+    background-color: rgba(70, 130, 180, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--economic-earth);
+  }
+
+  /* Special styling for case studies */
+  .content :global(.case-study) {
+    background-color: rgba(0, 206, 209, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--economic-prosperity);
+  }
+
+  .content :global(.case-study-title) {
+    color: var(--economic-prosperity);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Alert/warning styling */
+  .content :global(.alert) {
+    background-color: rgba(255, 107, 107, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #dc2626;
+  }
+
+  .content :global(.alert-title) {
+    color: #dc2626;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Highlight boxes for important economic concepts */
+  .content :global(.concept-highlight) {
+    background-color: rgba(72, 191, 145, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(72, 191, 145, 0.3);
+  }
+
+  .content :global(.concept-highlight-title) {
+    color: var(--economic-secondary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(72, 191, 145, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Economic integration and trade styling */
+  .content :global(.integration-highlight) {
+    background-color: rgba(8, 143, 143, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(8, 143, 143, 0.3);
+  }
+
+  .content :global(.integration-highlight-title) {
+    color: var(--economic-primary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(8, 143, 143, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Community currency and local economics styling */
+  .content :global(.community-highlight) {
+    background-color: rgba(95, 158, 160, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(95, 158, 160, 0.3);
+  }
+
+  .content :global(.community-highlight-title) {
+    color: var(--economic-community);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(95, 158, 160, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Innovation and technology styling */
+  .content :global(.innovation-highlight) {
+    background-color: rgba(0, 206, 209, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(0, 206, 209, 0.3);
+  }
+
+  .content :global(.innovation-highlight-title) {
+    color: var(--economic-prosperity);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0, 206, 209, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Resource governance styling */
+  .content :global(.governance-highlight) {
+    background-color: rgba(32, 178, 170, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(32, 178, 170, 0.3);
+  }
+
+  .content :global(.governance-highlight-title) {
+    color: var(--economic-accent);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(32, 178, 170, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Infrastructure and reliability styling */
+  .content :global(.infrastructure-highlight) {
+    background-color: rgba(70, 130, 180, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(70, 130, 180, 0.3);
+  }
+
+  .content :global(.infrastructure-highlight-title) {
+    color: var(--economic-earth);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(70, 130, 180, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Transparency and clarity styling */
+  .content :global(.transparency-highlight) {
+    background-color: rgba(224, 248, 248, 0.5);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(224, 248, 248, 0.8);
+  }
+
+  .content :global(.transparency-highlight-title) {
+    color: var(--economic-deep);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(224, 248, 248, 0.8);
+    padding-bottom: 0.5rem;
   }
 </style>

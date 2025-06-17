@@ -14,6 +14,7 @@ export async function load({ depends }) {
   // Define all sections of the framework
   const sections = [
     'index',
+    'introduction',
     'principles',
     'components',
     'approaches',

@@ -1,4 +1,3 @@
-<!-- src/routes/frameworks/docs/implementation/financial-systems/+page.svelte -->
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
@@ -6,8 +5,8 @@
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
-  import ConstellationMap from '$lib/components/ConstellationMap.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -56,15 +55,25 @@
     
     // Update the URL hash to reflect the current section (without page reload)
     if (browser) {
+      // Important: Use the history API to update just the hash without changing the path
       const url = new URL(window.location.href);
-      if (section === 'index') {
-        url.hash = '';
-      } else {
-        url.hash = section;
-      }
+      url.hash = section;
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -107,9 +116,9 @@
 
   // Swedish translations for the introduction section
   const introSv = {
-    title: "Finansiella Systems Ramverk",
+    title: "Finansiella system-ramverk",
     overview: "Översikt",
-    paragraph1: "Finansiella Systems Ramverket är en omfattande plan för att omforma globala finanssystem till förmån för mänskligt och ekologiskt välbefinnande. Den integrerar olika uttryck av värde—från traditionella valutor till omsorg, tid och ekologiska bidrag—genom Hearts som en frivillig global valuta.",
+    paragraph1: "Finansiella system-ramverket är en omfattande plan för att omforma globala finanssystem till förmån för mänskligt och ekologiskt välbefinnande. Den integrerar olika uttryck av värde—från traditionella valutor till omsorg, tid och ekologiska bidrag—genom Hearts som en frivillig global valuta.",
     paragraph2: "Detta ramverk omdefinierar finanssystem som levande system som speglar våra kollektiva värderingar och formar våra sociala prioriteringar. Det skapar praktiska övergångsvägar från existerande system till mer holistiska alternativ."
   };
 
@@ -125,10 +134,13 @@
   function getSectionTitle(section) {
     const titles = {
       en: {
-        'quick-guide': "Quick Guide: Technical Version",
-        'quick-guide-medium': "Quick Guide: Community Version",
-        'quick-guide-youth': "Quick Guide: Youth & Grassroots",
+        // Entry and overview sections
         'index': "Overview",
+        'quick-guide': "Technical Guide",
+        'quick-guide-medium': "Community Guide",
+        'quick-guide-youth': "Youth & Grassroots Guide",
+        
+        // Core framework sections (01-07)
         '01-introduction': "Introduction",
         '02-core-principles': "Core Principles",
         '03-structural-components': "Structural Components",
@@ -138,21 +150,41 @@
         '07-appendices': "Appendices"
       },
       sv: {
-        'quick-guide': "Snabbguide: Teknisk Version",
-        'quick-guide-medium': "Snabbguide: Samhällsversion",
-        'quick-guide-youth': "Snabbguide: Ungdom & Gräsrötter",
+        // Entry and overview sections (Swedish)
         'index': "Översikt",
+        'quick-guide': "Teknisk Guide",
+        'quick-guide-medium': "Samhällsguide",
+        'quick-guide-youth': "Ungdom & gräsrötter guide",
+        
+        // Core framework sections (Swedish)
         '01-introduction': "Introduktion",
         '02-core-principles': "Kärnprinciper",
-        '03-structural-components': "Strukturella Komponenter",
+        '03-structural-components': "Strukturella komponenter",
         '04-implementation-approaches': "Implementeringsmetoder",
-        '05-metrics-evaluation': "Mätning & Utvärdering",
-        '06-supporting-sections': "Stödjande Sektioner",
+        '05-metrics-evaluation': "Mätning & utvärdering",
+        '06-supporting-sections': "Stödjande sektioner",
         '07-appendices': "Bilagor"
       }
     };
     
     return (titles[currentLocale] || titles.en)[section] || section;
+  }
+
+  // Function to get shortened section titles for navigation
+  function getShortSectionTitle(section) {
+    const fullTitle = getSectionTitle(section).replace(/^\d{2}-/, '');
+    
+    const shortTitles = {
+      'Introduction': 'Introduction',
+      'Core Principles': 'Principles',
+      'Structural Components': 'Components',
+      'Implementation Approaches': 'Implementation',
+      'Metrics & Evaluation': 'Metrics',
+      'Supporting Sections': 'Supporting',
+      'Appendices': 'Appendices'
+    };
+    
+    return shortTitles[fullTitle] || fullTitle;
   }
 
   // Choose the right intro text based on the current locale
@@ -162,23 +194,23 @@
     invalidate('app:locale');
   }
   
-  // Function to download the lite guide PDF
-  function downloadLiteGuide(version = '') {
+  // Function to download the guide PDF
+  function downloadGuide(version = '') {
     const versionSuffix = version ? `-${version}` : '';
-    const pdfUrl = `${base}/assets/pdf/financial-systems-framework-lite${versionSuffix}-${currentLocale}.pdf`;
+    const pdfUrl = `${base}/assets/pdf/financial-systems-framework${versionSuffix}-${currentLocale}.pdf`;
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = `financial-systems-framework-lite${versionSuffix}.pdf`;
+    link.download = `financial-systems-framework${versionSuffix}.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
 
-  // For the quick guide selector
-  let selectedQuickGuide = 'quick-guide';
+  // For the guide selector
+  let selectedGuide = 'quick-guide';
   
-  function selectQuickGuide(guide) {
-    selectedQuickGuide = guide;
+  function selectGuide(guide) {
+    selectedGuide = guide;
     setActiveSection(guide);
   }
   
@@ -187,19 +219,19 @@
     en: [
       {
         id: 'quick-guide',
-        title: 'Technical Version',
+        title: 'Technical Guide',
         description: 'Detailed guide for policy implementers, financial institutions, and organizations',
         icon: '📊'
       },
       {
         id: 'quick-guide-medium',
-        title: 'Community Version',
+        title: 'Community Guide',
         description: 'Balanced guide for local authorities, community groups, and non-profits',
         icon: '🤝'
       },
       {
         id: 'quick-guide-youth',
-        title: 'Youth & Grassroots Version',
+        title: 'Youth & Grassroots Guide',
         description: 'Visual, accessible guide for youth groups, schools, and diverse communities',
         icon: '🌱'
       }
@@ -207,19 +239,19 @@
     sv: [
       {
         id: 'quick-guide',
-        title: 'Teknisk Version',
+        title: 'Teknisk guide',
         description: 'Detaljerad guide för beslutsfattare, finansinstitutioner och organisationer',
         icon: '📊'
       },
       {
         id: 'quick-guide-medium',
-        title: 'Samhällsversion',
+        title: 'Samhällsguide',
         description: 'Balanserad guide för lokala myndigheter, samhällsgrupper och ideella organisationer',
         icon: '🤝'
       },
       {
         id: 'quick-guide-youth',
-        title: 'Ungdom & Gräsrötter Version',
+        title: 'Ungdoms & gräsrötters guide',
         description: 'Visuell, tillgänglig guide för ungdomsgrupper, skolor och olika samhällen',
         icon: '🌱'
       }
@@ -228,35 +260,54 @@
   
   $: guides = guideInfo[currentLocale] || guideInfo.en;
   
-  // Check if the active section is any of the quick guides
-  $: isQuickGuideActive = activeSection === 'quick-guide' || 
-                         activeSection === 'quick-guide-medium' || 
-                         activeSection === 'quick-guide-youth';
+  // Check if the active section is any of the guides
+  $: isGuideActive = ['quick-guide', 'quick-guide-medium', 'quick-guide-youth'].includes(activeSection);
+  $: isSupplementaryActive = isGuideActive;
 
   // For handling dropdown states
-  let isDropdownOpen = false;
+  let isCardDropdownOpen = false;
   let isNavDropdownOpen = false;
 
-  function toggleDropdown() {
-    isDropdownOpen = !isDropdownOpen;
-    // Close the other dropdown if it's open
-    if (isDropdownOpen) isNavDropdownOpen = false;
+  // Accordion states for section categories
+  let foundationOpen = true; // Start with foundation open
+  let implementationOpen = false;
+  let operationsOpen = false;
+  let resourcesOpen = false;
+
+  function toggleCardDropdown() {
+    isCardDropdownOpen = !isCardDropdownOpen;
   }
 
   function toggleNavDropdown() {
     isNavDropdownOpen = !isNavDropdownOpen;
-    // Close the other dropdown if it's open
-    if (isNavDropdownOpen) isDropdownOpen = false;
+    // Close the card dropdown if it's open
+    if (isNavDropdownOpen) isCardDropdownOpen = false;
+  }
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleOperations() {
+    operationsOpen = !operationsOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
   }
 
   // Close dropdowns when clicking outside
   function handleClickOutside(event) {
     if (browser) {
-      const dropdown = document.querySelector('.card-actions .dropdown');
+      const cardDropdown = document.querySelector('.financial-guide-card .dropdown');
       const navDropdown = document.querySelector('.dropdown-li');
       
-      if (dropdown && !dropdown.contains(event.target)) {
-        isDropdownOpen = false;
+      if (cardDropdown && !cardDropdown.contains(event.target)) {
+        isCardDropdownOpen = false;
       }
       
       if (navDropdown && !navDropdown.contains(event.target)) {
@@ -273,6 +324,21 @@
       };
     }
   });
+
+  // Get sections for different accordion groups - filtering out guides and grouping logically
+  $: regularSections = Object.keys(data.sections || {}).filter(section => 
+    !['quick-guide', 'quick-guide-medium', 'quick-guide-youth'].includes(section)
+  );
+
+  // Group sections logically
+  $: foundationSections = ['01-introduction', '02-core-principles'];
+  $: implementationSections = ['03-structural-components', '04-implementation-approaches'];
+  $: operationsSections = ['05-metrics-evaluation', '06-supporting-sections', '07-appendices'];
+
+  // For progress indicator - count only non-guide sections
+  $: totalSections = regularSections.filter(s => s !== 'index').length;
+  $: currentSectionIndex = regularSections.filter(s => s !== 'index').indexOf(activeSection) + 1;
+  $: isCoreSection = regularSections.includes(activeSection) && activeSection !== 'index';
 </script>
 
 <svelte:window on:click={handleClickOutside}/>
@@ -283,24 +349,27 @@
   {/if}
 
   <div class="content">
-    <!-- Quick Access Card for Lite Guides -->
-    {#if !isPrintMode && !isQuickGuideActive}
-      <div class="lite-guide-card">
+    <!-- Quick Access Card for Financial Systems Framework -->
+    {#if !isPrintMode && !isGuideActive && activeSection === 'index'}
+      <div class="financial-guide-card">
         <div class="card-content">
-          <div class="card-icon">📘</div>
+          <div class="card-icon">💰</div>
           <div class="card-text">
             <h3>New to the Financial Systems Framework?</h3>
             <p>Start with one of our simplified guides that explain the core concepts for different audiences.</p>
           </div>
           <div class="card-actions">
             <div class="dropdown">
-              <button class="primary-btn dropdown-toggle" on:click|stopPropagation={toggleDropdown}>
-                Choose a Quick Guide <span class="arrow-icon">▾</span>
+              <button class="primary-btn dropdown-toggle" on:click={toggleCardDropdown}>
+                Choose a Guide <span class="arrow-icon">▾</span>
               </button>
-              {#if isDropdownOpen}
+              {#if isCardDropdownOpen}
                 <div class="dropdown-menu">
                   {#each guides as guide}
-                    <button class="dropdown-item" on:click={() => selectQuickGuide(guide.id)}>
+                    <button class="dropdown-item" on:click={() => {
+                      selectGuide(guide.id);
+                      isCardDropdownOpen = false; // Close dropdown after selection
+                    }}>
                       <span class="guide-icon">{guide.icon}</span>
                       <div class="guide-info">
                         <span class="guide-title">{guide.title}</span>
@@ -320,44 +389,154 @@
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            <!-- Make quick guides into a dropdown in the navbar -->
-            <li class="dropdown-li" class:active={isQuickGuideActive}>
-              <button class="dropdown-toggle" on:click|stopPropagation={toggleNavDropdown}>
-                Quick Guides <span class="arrow-icon">{isNavDropdownOpen ? '▴' : '▾'}</span>
-              </button>
-              {#if isNavDropdownOpen}
-                <div class="dropdown-menu">
-                  {#each guides as guide}
-                    <button class="dropdown-item" on:click={() => selectQuickGuide(guide.id)}>
-                      <span class="guide-icon">{guide.icon}</span>
-                      <span class="guide-title">{guide.title}</span>
-                    </button>
-                  {/each}
-                </div>
-              {/if}
-            </li>
-            
-            <!-- Regular sections, filtering out the quick guides -->
-            {#each Object.keys(data.sections).filter(section => !section.startsWith('quick-guide')) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getSectionTitle(section)}
-                </button>
-              </li>
-            {/each}
-          </ul>
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">Overview</span>
+            </button>
+          </div>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={foundationSections.some(section => activeSection === section)}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">💝</span>
+              <span class="accordion-title">Foundation</span>
+              <span class="section-count">({foundationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each foundationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={implementationSections.some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🔧</span>
+              <span class="accordion-title">Implementation</span>
+              <span class="section-count">({implementationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each implementationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Operations & Evaluation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={operationsOpen}
+              class:has-active={operationsSections.some(section => activeSection === section)}
+              on:click={toggleOperations}
+            >
+              <span class="accordion-icon">📊</span>
+              <span class="accordion-title">Operations & Evaluation</span>
+              <span class="section-count">({operationsSections.length})</span>
+              <span class="toggle-arrow" class:rotated={operationsOpen}>▼</span>
+            </button>
+            {#if operationsOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each operationsSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isSupplementaryActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📄</span>
+              <span class="accordion-title">Resources</span>
+              <span class="section-count">({guides.length})</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each guides as guide}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === guide.id}
+                    on:click={() => setActiveSection(guide.id)}
+                  >
+                    <span class="nav-icon">{guide.icon}</span>
+                    <span class="nav-title">{guide.title}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((currentSectionIndex / totalSections) * 100)}%"></div>
+          </div>
+          <span class="progress-text">Section {currentSectionIndex} of {totalSections}</span>
         </div>
       {/if}
 
       <!-- Show active section, or all sections in print mode -->
       {#each sectionsToShow as section}
         <div class="section-content" id={section}>
-          {#if section.startsWith('quick-guide')}
-            <!-- Quick Guide selector if we're in one of the guides and not in print mode -->
+          {#if isGuideActive && section === activeSection}
+            <!-- Guide selector if we're in one of the guides and not in print mode -->
             {#if !isPrintMode}
-              <div class="quick-guide-selector">
-                <h2>Financial Systems Framework Quick Guides</h2>
+              <div class="guide-selector">
+                <h2>Financial Systems Framework Guides</h2>
                 <p>Choose the guide version that best matches your needs:</p>
                 
                 <div class="guide-cards">
@@ -365,7 +544,7 @@
                     <div 
                       class="guide-card" 
                       class:active={activeSection === guide.id}
-                      on:click={() => selectQuickGuide(guide.id)}
+                      on:click={() => selectGuide(guide.id)}
                     >
                       <div class="guide-icon">{guide.icon}</div>
                       <div class="guide-title">{guide.title}</div>
@@ -376,16 +555,16 @@
               </div>
             {/if}
             
-            <!-- Render the selected Quick Guide -->
+            <!-- Render the selected Guide -->
             <svelte:component this={data.sections[section].default} />
             
-            <!-- Navigation buttons at bottom of quick guide -->
+            <!-- Navigation buttons at bottom of guide -->
             {#if !isPrintMode}
-              <div class="lite-guide-navigation">
-                <button class="secondary-btn" on:click={() => downloadLiteGuide(section.replace('quick-guide', '').replace('-', ''))}>
+              <div class="guide-navigation">
+                <button class="secondary-btn" on:click={() => downloadGuide(section.replace('quick-guide', '').replace('-', ''))}>
                   Download PDF Version <span class="download-icon">↓</span>
                 </button>
-                <button class="primary-btn" on:click={() => setActiveSection('index')}>
+                <button class="primary-btn" on:click={() => setActiveSection('01-introduction')}>
                   Continue to Full Framework <span class="arrow-icon">→</span>
                 </button>
               </div>
@@ -399,8 +578,6 @@
               <p>{intro.paragraph1}</p>
               <p>{intro.paragraph2}</p>
             </div>
-            <!-- Show constellation map for index section -->
-            <ConstellationMap />
           {:else if section === 'index'}
             <!-- Render English introduction through the markdown component -->
             <svelte:component this={data.sections[section].default} />
@@ -409,6 +586,31 @@
             <svelte:component this={data.sections[section].default} />
           {:else}
             <p>Section {section} not found</p>
+          {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if currentSectionIndex > 1}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const nonIndexSections = regularSections.filter(s => s !== 'index');
+                  const prevSection = nonIndexSections[currentSectionIndex - 2];
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if currentSectionIndex < totalSections}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const nonIndexSections = regularSections.filter(s => s !== 'index');
+                  const nextSection = nonIndexSections[currentSectionIndex];
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
+            </div>
           {/if}
         </div>
       {/each}
@@ -430,48 +632,221 @@
 </div>
 
 <style>
-  /* Main styles using Financial Systems Framework color scheme */
+  /* Financial Systems Framework color scheme - Hearts-themed palette */
+  :root {
+    --financial-primary: #3A6EA5; /* Heart Blue - trust, stability, flow */
+    --financial-secondary: #8A4F9E; /* Connection Purple - relationships, community, bonds */
+    --financial-accent: #F5A623; /* Trust Gold - value, prosperity, wisdom */
+    --financial-growth: #6DAA3F; /* Leaf Green - sustainability, growth, renewal */
+    --financial-care: #C43B3B; /* Care Red - passion, urgency, equity */
+    --financial-flow: #4A90A4; /* Flow Teal - circulation, movement, vitality */
+    --financial-abundance: #F39C12; /* Abundance Orange - creativity, innovation, energy */
+    --financial-harmony: #27AE60; /* Harmony Green - balance, wellbeing, peace */
+    --financial-wisdom: #8E44AD; /* Wisdom Purple - depth, insight, transformation */
+    --financial-light: #E8F4FD; /* Light Heart - transparency, openness, clarity */
+  }
+
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
+
+  .nav-section {
     margin-bottom: 0.5rem;
   }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
     cursor: pointer;
-    color: #4b5563;
     transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
   }
-  
-  .section-nav li.active button {
-    background-color: #3A6EA5; /* Heart Blue */
+
+  .accordion-header:hover {
+    background-color: rgba(58, 110, 165, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(58, 110, 165, 0.1);
+    color: var(--financial-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(58, 110, 165, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(58, 110, 165, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
+    background-color: var(--financial-primary);
     color: white;
-    border-color: #3A6EA5;
+    font-weight: 600;
   }
-  
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
+
+  .nav-item.active:hover {
+    background-color: var(--financial-flow);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(58, 110, 165, 0.1), rgba(138, 79, 158, 0.1));
+    border: 1px solid rgba(58, 110, 165, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--financial-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(58, 110, 165, 0.1);
+    color: var(--financial-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Auto-expand accordion when section is active */
+  .accordion-header.has-active + .accordion-content {
+    display: block;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(58, 110, 165, 0.1), rgba(138, 79, 158, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--financial-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--financial-primary), var(--financial-secondary));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--financial-flow);
+    font-weight: 500;
   }
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem; /* Adds space above when scrolled to */
   }
 
   .documentation-container {
@@ -487,50 +862,28 @@
     .documentation-container {
       grid-template-columns: 1fr;
     }
-  }
-  
-  .sidebar {
-    border-right: 1px solid #3A6EA5; /* Heart Blue border */
-    padding-right: 1.5rem;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .sidebar a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #4b5563;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s;
-  }
-  
-  .sidebar a:hover {
-    color: #3A6EA5; /* Heart Blue */
-    border-left-color: #3A6EA5;
-  }
-  
-  .sidebar a.active {
-    color: #3A6EA5; /* Heart Blue */
-    border-left-color: #3A6EA5;
-    font-weight: 600;
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
   }
   
   .content {
     min-width: 0;
-  }
-  
-  .map-container {
-    margin: 2rem 0;
   }
   
   /* Additional styles for markdown content */
@@ -538,7 +891,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-primary);
   }
   
   .content :global(h2) {
@@ -546,7 +899,7 @@
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-secondary);
   }
   
   .content :global(h3) {
@@ -554,7 +907,7 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #8A4F9E; /* Connection Purple */
+    color: var(--financial-accent);
   }
 
   /* Styling for h4 headers (#### in Markdown) */
@@ -563,13 +916,13 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #8A4F9E; /* Connection Purple */
+    color: var(--financial-growth);
   }
 
   /* Styling for the inset box (blockquote) */
   :global(blockquote) {
-    background-color: #f8f9fc;
-    border-left: 4px solid #F5A623; /* Trust Gold */
+    background-color: rgba(138, 79, 158, 0.1);
+    border-left: 4px solid var(--financial-secondary);
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     border-radius: 0.5rem;
@@ -577,7 +930,7 @@
 
   :global(blockquote > p:first-child strong) {
     font-size: 1.1rem;
-    color: #F5A623; /* Trust Gold */
+    color: var(--financial-flow);
     display: block;
     margin-bottom: 0.75rem;
   }
@@ -598,13 +951,13 @@
   }
 
   :global(blockquote a) {
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-secondary);
     text-decoration: underline;
     font-weight: 500;
   }
 
   :global(blockquote a:hover) {
-    color: #2A5D8F; /* Darker Heart Blue on hover */
+    color: var(--financial-primary);
   }
   
   .content :global(p) {
@@ -613,43 +966,44 @@
     color: #4b5563;
   }
   
-  /* Add to your existing <style> section */
+  /* Lists with financial/hearts themed bullets */
   .content :global(ul), .content :global(ol) {
     margin-bottom: 1.5rem;
-    padding-left: 2rem; /* Slightly increased for better indentation */
-    color: #4b5563; /* Matches paragraph text color */
+    padding-left: 1rem;
+    color: #4b5563;
   }
 
   .content :global(ul) {
-    list-style-type: none; /* Remove default bullets */
+    list-style-type: none;
   }
 
   .content :global(ul li) {
     position: relative;
-    margin-bottom: 0.75rem; /* Slightly more spacing between items */
-    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
   }
 
-  /* Apply hearts to all ul li EXCEPT those in section-nav */
+  /* Apply hearts symbols to all ul li EXCEPT those in section-nav */
   .content :global(ul li:not(.section-nav li))::before {
-    content: "♥"; /* Heart symbol for Financial Systems */
+    content: "♥";
     position: absolute;
     left: 0;
-    color: #8A4F9E; /* Connection Purple */
+    top: 0.1em;
     font-size: 0.9rem;
+    color: var(--financial-care);
   }
 
   .content :global(ol) {
-    list-style-type: decimal; /* Ensure ordered lists use numbers */
+    list-style-type: decimal;
   }
 
   .content :global(ol li) {
-    margin-bottom: 0.75rem; /* Consistent spacing with ul */
+    margin-bottom: 0.75rem;
     padding-left: 0.5rem;
   }
 
   .content :global(ol li::marker) {
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-secondary);
     font-weight: 600;
   }
 
@@ -660,12 +1014,12 @@
   }
 
   .content :global(ul ul li::before) {
-    content: "❥"; /* Small heart for nested items */
-    color: #8A4F9E; /* Connection Purple */
+    content: "💝";
+    color: var(--financial-abundance);
   }
 
-  /* Table styles */
-  .content :global(table) {
+  /* Table styles for financial systems framework */
+  :global(.content table) {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
@@ -675,21 +1029,20 @@
     overflow: hidden;
   }
 
-  .content :global(thead) {
-    background-color: #3A6EA5; /* Heart Blue background for headers */
-    color: #ffffff; /* White text */
+  :global(.content thead) {
+    background: linear-gradient(to right, var(--financial-primary), var(--financial-secondary));
   }
 
-  .content :global(th) {
+  :global(.content th) {
     padding: 0.75rem 1rem;
     font-weight: 600;
     text-align: left;
-    color: #ffffff; /* White text for better contrast */
+    color: #ffffff;
     border: none;
-    border-bottom: 2px solid #3A6EA5;
+    border-bottom: 2px solid var(--financial-primary);
   }
 
-  .content :global(td) {
+  :global(.content td) {
     padding: 0.75rem 1rem;
     border: 1px solid #e5e7eb;
     border-left: none;
@@ -697,75 +1050,45 @@
     vertical-align: top;
   }
 
-  .content :global(tr:nth-child(odd)) {
-    background-color: #f8f9fc;
+  :global(.content tr:nth-child(odd)) {
+    background-color: rgba(138, 79, 158, 0.05);
   }
 
-  .content :global(tr:nth-child(even)) {
+  :global(.content tr:nth-child(even)) {
     background-color: #ffffff;
   }
 
-  .content :global(tr:hover) {
-    background-color: #edf7f0; /* Light background on hover */
+  :global(.content tr:hover) {
+    background-color: rgba(138, 79, 158, 0.1);
   }
 
-  .content :global(tbody tr:last-child td) {
+  :global(.content tbody tr:last-child td) {
     border-bottom: none;
   }
-
-  /* Table caption or footer */
-  .content :global(table caption),
-  .content :global(table tfoot) {
-    background-color: #e9f0f7; /* Light Heart Blue */
-    padding: 0.75rem;
-    font-size: 0.875rem;
-    color: #3A6EA5;
-    text-align: left;
-    border-top: 1px solid #3A6EA5;
-  }
-
-  /* Highlight important cells */
-  .content :global(td.highlight) {
-    color: #3A6EA5; /* Heart Blue text */
-    font-weight: 600;
-  }
-
-  /* For responsive tables on small screens */
-  @media (max-width: 640px) {
-    .content :global(table) {
-      display: block;
-      overflow-x: auto;
-    }
-    
-    .content :global(th),
-    .content :global(td) {
-      white-space: nowrap;
-    }
-  }
   
-  /* Lite Guide card */
-  .lite-guide-card {
-    background: linear-gradient(135deg, #edf1f7 0%, #e9edfa 100%); /* Heart Blue gradient */
+  /* Financial systems framework guide card */
+  .financial-guide-card {
+    background: linear-gradient(135deg, rgba(138, 79, 158, 0.1) 0%, rgba(58, 110, 165, 0.1) 100%);
     border-radius: 0.75rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(58, 110, 165, 0.1); /* Heart Blue shadow */
-    border: 1px solid rgba(58, 110, 165, 0.2); /* Heart Blue border */
+    box-shadow: 0 4px 6px rgba(58, 110, 165, 0.1);
+    border: 1px solid rgba(58, 110, 165, 0.2);
     overflow: visible !important;
     position: relative;
     z-index: 1;
   }
 
-  .lite-guide-card .dropdown-menu {
+  .financial-guide-card .dropdown-menu {
     position: absolute;
-    top: 100%; /* Position from bottom of button */
+    top: 100%;
     left: 0;
-    z-index: 1001; /* Higher than surrounding elements */
+    z-index: 1001;
     min-width: 300px;
-    max-width: 350px; /* Limit width */
-    overflow: hidden; /* Fix for transparency issues */
-    border: 1px solid rgba(58, 110, 165, 0.3); /* Heart Blue border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
-    background-color: white; /* Ensure white background */
+    max-width: 350px;
+    overflow: hidden;
+    border: 1px solid rgba(58, 110, 165, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
   }
   
   .card-content {
@@ -778,7 +1101,7 @@
   
   .card-icon {
     font-size: 2.5rem;
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-primary);
     flex-shrink: 0;
   }
   
@@ -789,7 +1112,7 @@
   
   .card-text h3 {
     margin: 0 0 0.5rem 0;
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-primary);
     font-size: 1.25rem;
   }
   
@@ -809,7 +1132,7 @@
   }
   
   .primary-btn {
-    background-color: #3A6EA5; /* Heart Blue */
+    background-color: var(--financial-primary);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -820,14 +1143,14 @@
   }
   
   .primary-btn:hover {
-    background-color: #2A5D8F; /* Darker Heart Blue */
+    background-color: var(--financial-secondary);
     transform: translateY(-1px);
   }
   
   .secondary-btn {
     background-color: white;
-    color: #3A6EA5; /* Heart Blue */
-    border: 1px solid #3A6EA5;
+    color: var(--financial-primary);
+    border: 1px solid var(--financial-primary);
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 500;
@@ -836,7 +1159,7 @@
   }
   
   .secondary-btn:hover {
-    background-color: #edf1f7; /* Light Heart Blue */
+    background-color: rgba(138, 79, 158, 0.1);
     transform: translateY(-1px);
   }
   
@@ -852,22 +1175,22 @@
 
   /* Link styles for content */
   .content :global(a) {
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-secondary);
     text-decoration: underline;
     font-weight: 500;
     transition: all 0.2s;
   }
 
   .content :global(a:hover) {
-    color: #2A5D8F; /* Darker Heart Blue on hover */
+    color: var(--financial-primary);
     text-decoration: underline;
   }
 
   .content :global(a:active) {
-    color: #2A5D8F; /* Darker Heart Blue when clicked */
+    color: var(--financial-primary);
   }
 
-/* External link styles with a subtle indicator */
+  /* External link styles with a subtle indicator */
   .content :global(a[href^="http"]):after, 
   .content :global(a[href^="https://"]):after {
     content: " ↗";
@@ -883,22 +1206,22 @@
 
   /* Section link styles - more subtle but still distinct */
   .content :global(a[href^="#"]) {
-    color: #8A4F9E; /* Connection Purple for internal section links */
+    color: var(--financial-accent);
     text-decoration: none;
-    border-bottom: 1px dotted #8A4F9E;
+    border-bottom: 1px dotted var(--financial-accent);
   }
 
   .content :global(a[href^="#"]):hover {
-    color: #6c3d80; /* Darker Connection Purple */
-    border-bottom-color: #6c3d80;
+    color: var(--financial-secondary);
+    border-bottom-color: var(--financial-secondary);
   }
 
   /* Make sure links in tables are readable against the background */
   .content :global(table a) {
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-secondary);
     font-weight: 600;
   }
-  
+
   /* Links in the section navigation */
   .section-nav a {
     color: #4b5563;
@@ -907,19 +1230,52 @@
   }
 
   .section-nav a:hover {
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-primary);
   }
- 
-  /* Styles for navigation at bottom of lite guide */
-  .lite-guide-navigation {
+
+  /* Styles for navigation at bottom of guide */
+  .guide-navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
     padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
   }
+
+  /* Section navigation for core framework sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--financial-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--financial-flow);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
+  }
   
-  /* Dropdown styles for quick guides */
+  /* Dropdown styles for supplementary materials */
   .dropdown {
     position: relative;
     display: inline-block;
@@ -949,36 +1305,57 @@
     padding-top: 10px;
     white-space: normal !important;
   }
-  
+
+  .dropdown:hover .dropdown-menu,
+  .dropdown-li:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown::after,
+  .dropdown-li::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: transparent;
+  }
+
   .dropdown-li {
     position: relative;
   }
 
   .dropdown-li .dropdown-menu {
     width: 300px;
+    display: none;
   }
 
-  /* Fix for dropdown items when lite guide is active */
+  .dropdown-li:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* Fix for dropdown items when supplementary is active */
   .dropdown-li.active .dropdown-menu {
-    background-color: white !important; /* Force white background */
+    background-color: white !important;
   }
 
   .dropdown-li.active .dropdown-item {
-    color: #212529 !important; /* Force dark text */
+    color: #212529 !important;
   }
 
   .dropdown-li.active .dropdown-item:hover {
-    background-color: #edf1f7 !important; /* Light Heart Blue on hover */
-    color: #3A6EA5 !important; /* Heart Blue text on hover */
+    background-color: rgba(138, 79, 158, 0.1) !important;
+    color: var(--financial-primary) !important;
   }
 
   .dropdown-li.active .dropdown-menu .dropdown-item {
-    color: #212529 !important; /* Force dark text always */
-    background-color: transparent !important; /* Clear any background */
+    color: #212529 !important;
+    background-color: transparent !important;
   }
 
   .dropdown-li.active .dropdown-menu {
-    background-color: white !important; /* Force white background */
+    background-color: white !important;
   }
 
   /* Remove any inherited text color styling */
@@ -986,13 +1363,13 @@
   .dropdown-li.active .guide-title,
   .dropdown-li.active .guide-desc,
   .dropdown-li.active .guide-icon {
-    color: inherit !important; /* Force inheritance */
+    color: inherit !important;
   }
 
   /* Hover state */
   .dropdown-li.active .dropdown-item:hover {
-    background-color: #edf1f7 !important; /* Light Heart Blue on hover */
-    color: #3A6EA5 !important; /* Heart Blue text on hover */
+    background-color: rgba(138, 79, 158, 0.1) !important;
+    color: var(--financial-primary) !important;
   }
 
   /* Fix for guide icons in dropdown */
@@ -1021,11 +1398,11 @@
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #edf1f7; /* Light Heart Blue */
+    background-color: rgba(138, 79, 158, 0.1);
   }
   
-  /* Quick guide selector styles */
-  .quick-guide-selector {
+  /* Guide selector styles */
+  .guide-selector {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #e5e7eb;
@@ -1054,14 +1431,14 @@
   }
   
   .guide-card:hover {
-    box-shadow: 0 4px 6px rgba(58, 110, 165, 0.1); /* Heart Blue shadow */
+    box-shadow: 0 4px 6px rgba(58, 110, 165, 0.1);
     transform: translateY(-2px);
-    border-color: #3A6EA5; /* Heart Blue */
+    border-color: var(--financial-primary);
   }
   
   .guide-card.active {
-    border-color: #3A6EA5; /* Heart Blue */
-    background-color: #edf1f7; /* Light Heart Blue */
+    border-color: var(--financial-primary);
+    background-color: rgba(138, 79, 158, 0.1);
   }
   
   .guide-icon {
@@ -1072,7 +1449,7 @@
   .guide-title {
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #3A6EA5; /* Heart Blue */
+    color: var(--financial-primary);
   }
   
   .guide-desc {
@@ -1114,12 +1491,21 @@
       justify-content: center;
     }
     
-    .lite-guide-navigation {
+    .guide-navigation {
       flex-direction: column;
       gap: 1rem;
     }
     
-    .lite-guide-navigation button {
+    .guide-navigation button {
+      width: 100%;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
       width: 100%;
     }
     
@@ -1132,94 +1518,204 @@
     }
   }
 
-  /* Financial Systems Framework color-specific elements */
+  /* Financial Systems Framework specific theme elements */
 
-  /* Color coding for different sections */
-  .content :global(.core-principles-section h2) {
-    color: #F5A623; /* Trust Gold */
-    border-left: 3px solid #F5A623;
-    padding-left: 0.75rem;
-  }
-
-  .content :global(.structural-components-section h2) {
-    color: #3A6EA5; /* Heart Blue */
-    border-left: 3px solid #3A6EA5;
-    padding-left: 0.75rem;
-  }
-
-  .content :global(.implementation-section h2) {
-    color: #6DAA3F; /* Leaf Green */
-    border-left: 3px solid #6DAA3F;
-    padding-left: 0.75rem;
-  }
-
-  .content :global(.tools-section h2) {
-    color: #8A4F9E; /* Connection Purple */
-    border-left: 3px solid #8A4F9E;
-    padding-left: 0.75rem;
-  }
-
-  /* Special callouts for Hearts and Leaves */
+  /* Special callouts for Hearts and financial concepts */
   .content :global(.hearts-callout) {
     background-color: rgba(58, 110, 165, 0.1);
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 1.5rem 0;
-    border-left: 4px solid #3A6EA5; /* Heart Blue */
+    border-left: 4px solid var(--financial-primary);
   }
 
-  .content :global(.leaves-callout) {
-    background-color: rgba(109, 170, 63, 0.1);
+  .content :global(.trust-callout) {
+    background-color: rgba(245, 166, 35, 0.1);
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 1.5rem 0;
-    border-left: 4px solid #6DAA3F; /* Leaf Green */
+    border-left: 4px solid var(--financial-accent);
+  }
+
+  .content :global(.connection-callout) {
+    background-color: rgba(138, 79, 158, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--financial-secondary);
+  }
+
+  .content :global(.care-callout) {
+    background-color: rgba(196, 59, 59, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--financial-care);
   }
 
   /* Special styling for case studies */
   .content :global(.case-study) {
-    background-color: rgba(245, 166, 35, 0.1); /* Trust Gold background */
+    background-color: rgba(74, 144, 164, 0.1);
     border-radius: 0.5rem;
     padding: 1.25rem;
     margin: 1.5rem 0;
-    border-left: 4px solid #F5A623; /* Trust Gold */
+    border-left: 4px solid var(--financial-flow);
   }
 
   .content :global(.case-study-title) {
-    color: #F5A623; /* Trust Gold */
+    color: var(--financial-flow);
     font-weight: 600;
     margin-bottom: 0.75rem;
   }
 
   /* Alert/warning styling */
   .content :global(.alert) {
-    background-color: rgba(196, 59, 59, 0.1); /* Equity Red background */
+    background-color: rgba(196, 59, 59, 0.1);
     border-radius: 0.5rem;
     padding: 1.25rem;
     margin: 1.5rem 0;
-    border-left: 4px solid #C43B3B; /* Equity Red */
+    border-left: 4px solid var(--financial-care);
   }
 
   .content :global(.alert-title) {
-    color: #C43B3B; /* Equity Red */
+    color: var(--financial-care);
     font-weight: 600;
     margin-bottom: 0.75rem;
   }
 
-  /* Highlight boxes for important concepts */
+  /* Highlight boxes for important financial concepts */
   .content :global(.concept-highlight) {
-    background-color: rgba(138, 79, 158, 0.1); /* Connection Purple background */
+    background-color: rgba(138, 79, 158, 0.1);
     border-radius: 0.5rem;
     padding: 1.25rem;
     margin: 1.5rem 0;
-    border: 1px solid rgba(138, 79, 158, 0.3); /* Connection Purple border */
+    border: 1px solid rgba(138, 79, 158, 0.3);
   }
 
   .content :global(.concept-highlight-title) {
-    color: #8A4F9E; /* Connection Purple */
+    color: var(--financial-secondary);
     font-weight: 600;
     margin-bottom: 0.75rem;
     border-bottom: 1px solid rgba(138, 79, 158, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Hearts currency styling */
+  .content :global(.hearts-highlight) {
+    background-color: rgba(58, 110, 165, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(58, 110, 165, 0.3);
+  }
+
+  .content :global(.hearts-highlight-title) {
+    color: var(--financial-primary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(58, 110, 165, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Trust and value styling */
+  .content :global(.trust-highlight) {
+    background-color: rgba(245, 166, 35, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(245, 166, 35, 0.3);
+  }
+
+  .content :global(.trust-highlight-title) {
+    color: var(--financial-accent);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(245, 166, 35, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Growth and sustainability styling */
+  .content :global(.growth-highlight) {
+    background-color: rgba(109, 170, 63, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(109, 170, 63, 0.3);
+  }
+
+  .content :global(.growth-highlight-title) {
+    color: var(--financial-growth);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(109, 170, 63, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Abundance and innovation styling */
+  .content :global(.abundance-highlight) {
+    background-color: rgba(243, 156, 18, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(243, 156, 18, 0.3);
+  }
+
+  .content :global(.abundance-highlight-title) {
+    color: var(--financial-abundance);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(243, 156, 18, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Harmony and balance styling */
+  .content :global(.harmony-highlight) {
+    background-color: rgba(39, 174, 96, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(39, 174, 96, 0.3);
+  }
+
+  .content :global(.harmony-highlight-title) {
+    color: var(--financial-harmony);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(39, 174, 96, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Wisdom and transformation styling */
+  .content :global(.wisdom-highlight) {
+    background-color: rgba(142, 68, 173, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(142, 68, 173, 0.3);
+  }
+
+  .content :global(.wisdom-highlight-title) {
+    color: var(--financial-wisdom);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(142, 68, 173, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Flow and circulation styling */
+  .content :global(.flow-highlight) {
+    background-color: rgba(74, 144, 164, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(74, 144, 164, 0.3);
+  }
+
+  .content :global(.flow-highlight-title) {
+    color: var(--financial-flow);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(74, 144, 164, 0.3);
     padding-bottom: 0.5rem;
   }
 </style>

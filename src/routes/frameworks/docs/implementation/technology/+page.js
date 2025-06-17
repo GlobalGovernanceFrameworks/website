@@ -1,6 +1,7 @@
 // src/routes/frameworks/docs/implementation/technology/+page.js
 import { locale } from '$lib/i18n';
 import { get } from 'svelte/store';
+import { version } from '$app/environment';
 
 export const prerender = false; // Disable prerendering for this route
 export const csr = true;
@@ -14,7 +15,8 @@ export async function load({ depends, url }) {
   
   // Define sections to load based on the index
   const sections = [
-    'index',              // Introduction
+    'index',              // Overview
+    'introduction',       // Introduction
     'context',            // Context and Scope
     'governance-model',   // Governance Model Components
     'implementation',     // Implementation Roadmap
@@ -38,7 +40,9 @@ export async function load({ depends, url }) {
     for (const section of sections) {
       try {
         // Try to load the current locale version
-        content[section] = await import(`$lib/content/frameworks/${currentLocale}/implementation/technology/${section}.md`);
+        content[section] = await import(
+          `$lib/content/frameworks/${currentLocale}/implementation/technology/${section}.md?v=${version}`
+        );
         isModular = true;
       } catch (e) {
         // Fall back to English if translation isn't available

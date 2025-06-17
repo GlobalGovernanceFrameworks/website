@@ -131,6 +131,40 @@
     paragraph2: "This framework embraces holistic care, community sovereignty, and the sacred dimensions of human consciousness as foundations for collective flourishing."
   };
 
+  function getOverviewTitle() {
+    const overviewTitles = {
+      en: "Overview",
+      sv: "Översikt"
+    };
+    
+    return overviewTitles[currentLocale] || overviewTitles.en;
+  }
+
+  // Group sections logically with multi-lingual support
+  function getSectionCategoryTitle(category) {
+    const categoryTitles = {
+      en: {
+        foundation: "Foundation",
+        systems: "Systems & Delivery", 
+        implementation: "Implementation",
+        resources: "Resources"
+      },
+      sv: {
+        foundation: "Grund",
+        systems: "System & Leverans",
+        implementation: "Implementering", 
+        resources: "Resurser"
+      }
+    };
+    
+    return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
+  }
+
+  // Update the accordion headers to use the translated titles
+  $: foundationSections = ['01-vision-principles', '02-governance-structures'];
+  $: systemsSections = coreFrameworkSections.slice(2, 8);
+  $: implementationSections = coreFrameworkSections.slice(8, 14);
+
   // Get section titles in current language
   function getSectionTitle(section) {
     const titles = {
@@ -369,7 +403,7 @@
               on:click={() => setActiveSection('index')}
             >
               <span class="nav-icon">🏠</span>
-              <span class="nav-title">Overview</span>
+              <span class="nav-title">{getOverviewTitle()}</span>
             </button>
           </div>
 
@@ -378,28 +412,15 @@
             <button 
               class="accordion-header" 
               class:open={foundationOpen}
-              class:has-active={['01-vision-principles', '02-governance-structures'].some(section => activeSection === section)}
+              class:has-active={foundationSections.some(section => activeSection === section)}
               on:click={toggleFoundation}
             >
               <span class="accordion-icon">🌟</span>
-              <span class="accordion-title">Foundation</span>
-              <span class="section-count">(2)</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
+              <span class="section-count">({foundationSections.length})</span>
               <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
             </button>
-            {#if foundationOpen}
-              <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each ['01-vision-principles', '02-governance-structures'] as section}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === section}
-                    on:click={() => setActiveSection(section)}
-                  >
-                    <span class="nav-number">{section.substring(0, 2)}</span>
-                    <span class="nav-title">{getShortSectionTitle(section)}</span>
-                  </button>
-                {/each}
-              </div>
-            {/if}
+            <!-- ... rest of accordion content ... -->
           </div>
 
           <!-- Systems & Delivery Accordion (Middle Circle) -->
@@ -407,17 +428,17 @@
             <button 
               class="accordion-header" 
               class:open={systemsOpen}
-              class:has-active={coreFrameworkSections.slice(2, 8).some(section => activeSection === section)}
+              class:has-active={systemsSections.some(section => activeSection === section)}
               on:click={toggleSystems}
             >
               <span class="accordion-icon">🏛️</span>
-              <span class="accordion-title">Systems & Delivery</span>
-              <span class="section-count">({coreFrameworkSections.slice(2, 8).length})</span>
+              <span class="accordion-title">{getSectionCategoryTitle('systems')}</span>
+              <span class="section-count">({systemsSections.length})</span>
               <span class="toggle-arrow" class:rotated={systemsOpen}>▼</span>
             </button>
             {#if systemsOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each coreFrameworkSections.slice(2, 8) as section}
+                {#each systemsSections as section}
                   <button 
                     class="nav-item subsection-item" 
                     class:active={activeSection === section}
@@ -436,17 +457,17 @@
             <button 
               class="accordion-header" 
               class:open={implementationOpen}
-              class:has-active={coreFrameworkSections.slice(8, 14).some(section => activeSection === section)}
+              class:has-active={implementationSections.some(section => activeSection === section)}
               on:click={toggleImplementation}
             >
               <span class="accordion-icon">🚀</span>
-              <span class="accordion-title">Implementation</span>
-              <span class="section-count">({coreFrameworkSections.slice(8, 14).length})</span>
+              <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
+              <span class="section-count">({implementationSections.length})</span>
               <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
             </button>
             {#if implementationOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each coreFrameworkSections.slice(8, 14) as section}
+                {#each implementationSections as section}
                   <button 
                     class="nav-item subsection-item" 
                     class:active={activeSection === section}
@@ -469,7 +490,7 @@
               on:click={toggleResources}
             >
               <span class="accordion-icon">📄</span>
-              <span class="accordion-title">Resources</span>
+              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
               <span class="section-count">(2)</span>
               <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
             </button>
