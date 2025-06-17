@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 600 550"
+   version="1.1"
+   id="svg41"
+   sodipodi:docname="assessment-team.svg"
+   width="600"
+   height="550"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview41"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0575"
+     inkscape:cx="279.43262"
+     inkscape:cy="291.25295"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg41" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .team-circle { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .center-circle { fill: #fff3e0; stroke: #f57c00; stroke-width: 3; }
+      .text { font-family: Arial, sans-serif; font-size: 11px; text-anchor: middle; }
+      .title { font-size: 13px; font-weight: bold; }
+      .main-title { font-size: 16px; font-weight: bold; }
+      .connection { stroke: #666; stroke-width: 2; }
+    </style>
+  </defs>
+  <!-- Title -->
+  <text
+     x="300"
+     y="25"
+     class="text main-title"
+     id="text1">AI Consciousness Assessment Team</text>
+  <!-- Central Assessment Team -->
+  <circle
+     cx="300"
+     cy="278"
+     r="60"
+     class="center-circle"
+     id="circle1" />
+  <text
+     x="300"
+     y="260"
+     class="text title"
+     id="text2">Assessment</text>
+  <text
+     x="300"
+     y="275"
+     class="text title"
+     id="text3">Team</text>
+  <text
+     x="300"
+     y="295"
+     class="text"
+     id="text4">Multi-disciplinary</text>
+  <text
+     x="300"
+     y="310"
+     class="text"
+     id="text5">Expert Panel</text>
+  <!-- Neuroscientist -->
+  <circle
+     cx="141.96219"
+     cy="169.96219"
+     r="47.841782"
+     class="team-circle"
+     id="circle5" />
+  <text
+     x="142"
+     y="166"
+     class="text title"
+     id="text6">Neuroscientist</text>
+  <text
+     x="142"
+     y="181"
+     class="text"
+     id="text7">• Brain research</text>
+  <text
+     x="142"
+     y="194"
+     class="text"
+     id="text8">• Consciousness</text>
+  <text
+     x="142"
+     y="207"
+     class="text"
+     id="text9">studies</text>
+  <!-- Philosopher -->
+  <circle
+     cx="471.74942"
+     cy="184.61938"
+     r="45.535374"
+     class="team-circle"
+     id="circle9" />
+  <text
+     x="474"
+     y="172"
+     class="text title"
+     id="text10">Philosopher</text>
+  <text
+     x="474"
+     y="187"
+     class="text"
+     id="text11">• Ethics theory</text>
+  <text
+     x="474"
+     y="200"
+     class="text"
+     id="text12">• Consciousness</text>
+  <text
+     x="474"
+     y="213"
+     class="text"
+     id="text13">concepts</text>
+  <!-- AI Engineer -->
+  <circle
+     cx="89.016548"
+     cy="332.25531"
+     r="48.764343"
+     class="team-circle"
+     id="circle13" />
+  <text
+     x="88"
+     y="318"
+     class="text title"
+     id="text14">AI Engineer</text>
+  <text
+     x="88"
+     y="333"
+     class="text"
+     id="text15">• Technical</text>
+  <text
+     x="88"
+     y="346"
+     class="text"
+     id="text16">architecture</text>
+  <text
+     x="88"
+     y="359"
+     class="text"
+     id="text17">• System design</text>
+  <!-- Ethicist -->
+  <circle
+     cx="505.67377"
+     cy="328"
+     r="45.535374"
+     class="team-circle"
+     id="circle17" />
+  <text
+     x="504"
+     y="312"
+     class="text title"
+     id="text18">Ethicist</text>
+  <text
+     x="504"
+     y="327"
+     class="text"
+     id="text19">• Moral</text>
+  <text
+     x="504"
+     y="340"
+     class="text"
+     id="text20">implications</text>
+  <text
+     x="504"
+     y="353"
+     class="text"
+     id="text21">• Rights theory</text>
+  <!-- Community Representative -->
+  <circle
+     cx="191.01656"
+     cy="416.98346"
+     r="48.764343"
+     class="team-circle"
+     id="circle21" />
+  <text
+     x="190"
+     y="404"
+     class="text title"
+     id="text22">Community</text>
+  <text
+     x="190"
+     y="419"
+     class="text title"
+     id="text23">Representative</text>
+  <text
+     x="190"
+     y="434"
+     class="text"
+     id="text24">• Public interest</text>
+  <text
+     x="190"
+     y="447"
+     class="text"
+     id="text25">• Social values</text>
+  <!-- Cultural Expert -->
+  <circle
+     cx="406.61938"
+     cy="414.61938"
+     r="46.457935"
+     class="team-circle"
+     id="circle25" />
+  <text
+     x="406"
+     y="398"
+     class="text title"
+     id="text26">Cultural</text>
+  <text
+     x="406"
+     y="413"
+     class="text title"
+     id="text27">Expert</text>
+  <text
+     x="406"
+     y="428"
+     class="text"
+     id="text28">• Diverse</text>
+  <text
+     x="406"
+     y="441"
+     class="text"
+     id="text29">perspectives</text>
+  <!-- Connection lines -->
+  <line
+     x1="170"
+     y1="208"
+     x2="250"
+     y2="248"
+     class="connection"
+     id="line29" />
+  <line
+     x1="430"
+     y1="208"
+     x2="350"
+     y2="248"
+     class="connection"
+     id="line30" />
+  <line
+     x1="129.97969"
+     y1="308.08124"
+     x2="239.93106"
+     y2="280.59338"
+     class="connection"
+     id="line31"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <line
+     x1="470.02222"
+     y1="308.08884"
+     x2="361.01065"
+     y2="280.83594"
+     class="connection"
+     id="line32"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <line
+     x1="219.89522"
+     y1="378.08731"
+     x2="263.07556"
+     y2="326.2709"
+     class="connection"
+     id="line33"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <line
+     x1="380.10861"
+     y1="378.09052"
+     x2="337.1781"
+     y2="326.57391"
+     class="connection"
+     id="line34"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <!-- Key Requirements Box -->
+  <rect
+     x="50.033932"
+     y="42.033932"
+     width="199.93214"
+     height="68.44278"
+     rx="4.9983034"
+     fill="#f8f9fa"
+     stroke="#666666"
+     stroke-width="1.06786"
+     id="rect34" />
+  <text
+     x="150"
+     y="62"
+     class="text title"
+     id="text34">Key Requirements:</text>
+  <text
+     x="150"
+     y="77"
+     class="text"
+     id="text35">• Independent evaluation</text>
+  <text
+     x="150"
+     y="90"
+     class="text"
+     id="text36">• Diverse expertise</text>
+  <text
+     x="150"
+     y="103"
+     class="text"
+     id="text37">• Cultural sensitivity</text>
+  <!-- Decision Process Box -->
+  <rect
+     x="350.04117"
+     y="40.04118"
+     width="199.91763"
+     height="70.319527"
+     rx="4.997941"
+     fill="#f8f9fa"
+     stroke="#666666"
+     stroke-width="1.08236"
+     id="rect37" />
+  <text
+     x="450"
+     y="60"
+     class="text title"
+     id="text38">Decision Process:</text>
+  <text
+     x="450"
+     y="75"
+     class="text"
+     id="text39">• Consensus building</text>
+  <text
+     x="450"
+     y="88"
+     class="text"
+     id="text40">• Evidence review</text>
+  <text
+     x="450"
+     y="101"
+     class="text"
+     id="text41">• Transparent reasoning</text>
+</svg>

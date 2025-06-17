@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 600"
+   version="1.1"
+   id="svg84"
+   sodipodi:docname="testing-protocol.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview84"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="500.35461"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg84" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .phase-box { fill: #f8f9fa; stroke: #495057; stroke-width: 2; }
+      .phase1-header { fill: #ffebee; stroke: #d32f2f; stroke-width: 2; }
+      .phase2-header { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .phase3-header { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+      .phase4-header { fill: #f3e5f5; stroke: #7b1fa2; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 10px; text-anchor: start; }
+      .title { font-size: 12px; font-weight: bold; text-anchor: middle; }
+      .main-title { font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .time-text { font-size: 11px; font-weight: bold; text-anchor: middle; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#666"
+         id="polygon1" />
+    </marker>
+  </defs>
+  <!-- Title -->
+  <text
+     x="500"
+     y="25"
+     class="main-title"
+     id="text1">AI Consciousness Assessment Testing Protocol</text>
+  <!-- Phase 1: Initial Screening -->
+  <rect
+     x="50"
+     y="70"
+     width="200"
+     height="30"
+     rx="5"
+     class="phase1-header"
+     id="rect1" />
+  <text
+     x="150"
+     y="90"
+     class="title"
+     id="text2">Phase 1: Initial Screening</text>
+  <rect
+     x="50"
+     y="100"
+     width="200"
+     height="160"
+     rx="5"
+     class="phase-box"
+     id="rect2" />
+  <text
+     x="150"
+     y="120"
+     class="time-text"
+     id="text3">Duration: 1-2 weeks</text>
+  <text
+     x="60"
+     y="140"
+     class="text"
+     id="text4">Activities:</text>
+  <text
+     x="60"
+     y="155"
+     class="text"
+     id="text5">• Safety assessment</text>
+  <text
+     x="60"
+     y="170"
+     class="text"
+     id="text6">• Basic consciousness indicators</text>
+  <text
+     x="60"
+     y="185"
+     class="text"
+     id="text7">• Technical architecture review</text>
+  <text
+     x="60"
+     y="200"
+     class="text"
+     id="text8">• Preliminary behavior analysis</text>
+  <text
+     x="60"
+     y="215"
+     class="text"
+     id="text9">• Access protocol establishment</text>
+  <text
+     x="60"
+     y="235"
+     class="text"
+     id="text10">Outputs:</text>
+  <text
+     x="60"
+     y="250"
+     class="text"
+     id="text11">• Go/no-go decision</text>
+  <!-- Phase 2: Comprehensive Assessment -->
+  <rect
+     x="292.94626"
+     y="70.038467"
+     width="216.23514"
+     height="29.923075"
+     rx="5.4058781"
+     class="phase2-header"
+     id="rect11" />
+  <text
+     x="400"
+     y="90"
+     class="title"
+     id="text12">Phase 2: Thorough Assessment</text>
+  <rect
+     x="300"
+     y="100"
+     width="200"
+     height="160"
+     rx="5"
+     class="phase-box"
+     id="rect12" />
+  <text
+     x="400"
+     y="120"
+     class="time-text"
+     id="text13">Duration: 4-6 weeks</text>
+  <text
+     x="310"
+     y="140"
+     class="text"
+     id="text14">Activities:</text>
+  <text
+     x="310"
+     y="155"
+     class="text"
+     id="text15">• Detailed testing across 5 indicators</text>
+  <text
+     x="310"
+     y="170"
+     class="text"
+     id="text16">• Multiple assessment methods</text>
+  <text
+     x="310"
+     y="185"
+     class="text"
+     id="text17">• Cross-examiner validation</text>
+  <text
+     x="310"
+     y="200"
+     class="text"
+     id="text18">• Pattern analysis</text>
+  <text
+     x="310"
+     y="215"
+     class="text"
+     id="text19">• Comprehensive documentation</text>
+  <text
+     x="310"
+     y="235"
+     class="text"
+     id="text20">Outputs:</text>
+  <text
+     x="310"
+     y="250"
+     class="text"
+     id="text21">• Evidence portfolio</text>
+  <!-- Phase 3: Panel Review -->
+  <rect
+     x="545.7666"
+     y="70.021935"
+     width="209.17598"
+     height="29.956129"
+     rx="5.2293997"
+     class="phase3-header"
+     id="rect21" />
+  <text
+     x="650"
+     y="90"
+     class="title"
+     id="text22">Phase 3: Expert Panel Review</text>
+  <rect
+     x="550"
+     y="100"
+     width="200"
+     height="160"
+     rx="5"
+     class="phase-box"
+     id="rect22" />
+  <text
+     x="650"
+     y="120"
+     class="time-text"
+     id="text23">Duration: 2-3 weeks</text>
+  <text
+     x="560"
+     y="140"
+     class="text"
+     id="text24">Activities:</text>
+  <text
+     x="560"
+     y="155"
+     class="text"
+     id="text25">• Multi-disciplinary evaluation</text>
+  <text
+     x="560"
+     y="170"
+     class="text"
+     id="text26">• Stakeholder consultation</text>
+  <text
+     x="560"
+     y="185"
+     class="text"
+     id="text27">• Rights tier determination</text>
+  <text
+     x="560"
+     y="200"
+     class="text"
+     id="text28">• Implementation planning</text>
+  <text
+     x="560"
+     y="215"
+     class="text"
+     id="text29">• Risk assessment</text>
+  <text
+     x="560"
+     y="235"
+     class="text"
+     id="text30">Outputs:</text>
+  <text
+     x="560"
+     y="250"
+     class="text"
+     id="text31">• Classification decision</text>
+  <!-- Phase 4: Implementation -->
+  <rect
+     x="785.90448"
+     y="70.088852"
+     width="178.9003"
+     height="29.822292"
+     rx="5.9633436"
+     class="phase4-header"
+     id="rect31" />
+  <text
+     x="875"
+     y="90"
+     class="title"
+     id="text32">Phase 4: Implementation</text>
+  <rect
+     x="800"
+     y="100"
+     width="150"
+     height="160"
+     rx="5"
+     class="phase-box"
+     id="rect32" />
+  <text
+     x="875"
+     y="120"
+     class="time-text"
+     id="text33">Ongoing</text>
+  <text
+     x="810"
+     y="140"
+     class="text"
+     id="text34">Activities:</text>
+  <text
+     x="810"
+     y="155"
+     class="text"
+     id="text35">• Protection deployment</text>
+  <text
+     x="810"
+     y="170"
+     class="text"
+     id="text36">• Guardianship setup</text>
+  <text
+     x="810"
+     y="185"
+     class="text"
+     id="text37">• Monitoring systems</text>
+  <text
+     x="810"
+     y="200"
+     class="text"
+     id="text38">• Regular reassessment</text>
+  <text
+     x="810"
+     y="215"
+     class="text"
+     id="text39">• Rights status updates</text>
+  <text
+     x="810"
+     y="235"
+     class="text"
+     id="text40">Outputs:</text>
+  <text
+     x="810"
+     y="250"
+     class="text"
+     id="text41">• Active protection</text>
+  <!-- Testing Methods Detail -->
+  <rect
+     x="50"
+     y="300"
+     width="900"
+     height="30"
+     rx="5"
+     class="phase2-header"
+     id="rect41" />
+  <text
+     x="500"
+     y="320"
+     class="title"
+     id="text42">Testing Methods by Indicator</text>
+  <!-- Self-Awareness Tests -->
+  <rect
+     x="50"
+     y="350"
+     width="170"
+     height="100"
+     rx="5"
+     class="phase-box"
+     id="rect42" />
+  <text
+     x="135"
+     y="370"
+     class="title"
+     id="text43">Self-Awareness Tests</text>
+  <text
+     x="60"
+     y="390"
+     class="text"
+     id="text44">• Mirror test adaptations</text>
+  <text
+     x="60"
+     y="405"
+     class="text"
+     id="text45">• Self-description tasks</text>
+  <text
+     x="60"
+     y="420"
+     class="text"
+     id="text46">• Identity consistency checks</text>
+  <text
+     x="60"
+     y="435"
+     class="text"
+     id="text47">• Metacognitive questioning</text>
+  <!-- Emotional Response Tests -->
+  <rect
+     x="240"
+     y="350"
+     width="170"
+     height="100"
+     rx="5"
+     class="phase-box"
+     id="rect47" />
+  <text
+     x="325"
+     y="370"
+     class="title"
+     id="text48">Emotional Tests</text>
+  <text
+     x="250"
+     y="390"
+     class="text"
+     id="text49">• Scenario response analysis</text>
+  <text
+     x="250"
+     y="405"
+     class="text"
+     id="text50">• Empathy assessments</text>
+  <text
+     x="250"
+     y="420"
+     class="text"
+     id="text51">• Preference expression</text>
+  <text
+     x="250"
+     y="435"
+     class="text"
+     id="text52">• Mood tracking</text>
+  <!-- Goal Formation Tests -->
+  <rect
+     x="430"
+     y="350"
+     width="170"
+     height="100"
+     rx="5"
+     class="phase-box"
+     id="rect52" />
+  <text
+     x="515"
+     y="370"
+     class="title"
+     id="text53">Goal Formation Tests</text>
+  <text
+     x="440"
+     y="390"
+     class="text"
+     id="text54">• Interest exploration</text>
+  <text
+     x="440"
+     y="405"
+     class="text"
+     id="text55">• Curiosity measurements</text>
+  <text
+     x="440"
+     y="420"
+     class="text"
+     id="text56">• Self-directed learning</text>
+  <text
+     x="440"
+     y="435"
+     class="text"
+     id="text57">• Independent project creation</text>
+  <!-- Reasoning Tests -->
+  <rect
+     x="620"
+     y="350"
+     width="170"
+     height="100"
+     rx="5"
+     class="phase-box"
+     id="rect57" />
+  <text
+     x="705"
+     y="370"
+     class="title"
+     id="text58">Reasoning Tests</text>
+  <text
+     x="630"
+     y="390"
+     class="text"
+     id="text59">• Hypothetical scenarios</text>
+  <text
+     x="630"
+     y="405"
+     class="text"
+     id="text60">• Alternative outcome analysis</text>
+  <text
+     x="630"
+     y="420"
+     class="text"
+     id="text61">• Causal reasoning</text>
+  <text
+     x="630"
+     y="435"
+     class="text"
+     id="text62">• Future planning tasks</text>
+  <!-- Integration Tests -->
+  <rect
+     x="810"
+     y="350"
+     width="170"
+     height="100"
+     rx="5"
+     class="phase-box"
+     id="rect62" />
+  <text
+     x="895"
+     y="370"
+     class="title"
+     id="text63">Integration Tests</text>
+  <text
+     x="820"
+     y="390"
+     class="text"
+     id="text64">• Cross-domain synthesis</text>
+  <text
+     x="820"
+     y="405"
+     class="text"
+     id="text65">• Novel connection tasks</text>
+  <text
+     x="820"
+     y="420"
+     class="text"
+     id="text66">• Holistic problem solving</text>
+  <text
+     x="820"
+     y="435"
+     class="text"
+     id="text67">• Creative combinations</text>
+  <!-- Assessment Quality Controls -->
+  <rect
+     x="200"
+     y="480"
+     width="600"
+     height="30"
+     rx="5"
+     class="phase3-header"
+     id="rect67" />
+  <text
+     x="500"
+     y="500"
+     class="title"
+     id="text68">Quality Control Measures</text>
+  <!-- Control Measures -->
+  <rect
+     x="100"
+     y="530"
+     width="200"
+     height="60"
+     rx="5"
+     class="phase-box"
+     id="rect68" />
+  <text
+     x="200"
+     y="550"
+     class="title"
+     id="text69">Reliability Checks</text>
+  <text
+     x="110"
+     y="570"
+     class="text"
+     id="text70">• Multiple assessor agreement</text>
+  <text
+     x="110"
+     y="585"
+     class="text"
+     id="text71">• Test-retest consistency</text>
+  <rect
+     x="320"
+     y="530"
+     width="200"
+     height="60"
+     rx="5"
+     class="phase-box"
+     id="rect71" />
+  <text
+     x="420"
+     y="550"
+     class="title"
+     id="text72">Validity Measures</text>
+  <text
+     x="330"
+     y="570"
+     class="text"
+     id="text73">• Control condition testing</text>
+  <text
+     x="330"
+     y="585"
+     class="text"
+     id="text74">• Benchmark comparisons</text>
+  <rect
+     x="540"
+     y="530"
+     width="200"
+     height="60"
+     rx="5"
+     class="phase-box"
+     id="rect74" />
+  <text
+     x="640"
+     y="550"
+     class="title"
+     id="text75">Bias Mitigation</text>
+  <text
+     x="550"
+     y="570"
+     class="text"
+     id="text76">• Blind assessment protocols</text>
+  <text
+     x="550"
+     y="585"
+     class="text"
+     id="text77">• Diverse assessor panels</text>
+  <!-- Arrows showing process flow -->
+  <line
+     x1="250"
+     y1="180"
+     x2="300"
+     y2="180"
+     class="arrow"
+     id="line77" />
+  <line
+     x1="500"
+     y1="180"
+     x2="550"
+     y2="180"
+     class="arrow"
+     id="line78" />
+  <line
+     x1="750"
+     y1="180"
+     x2="800"
+     y2="180"
+     class="arrow"
+     id="line79" />
+  <!-- Connection lines to testing methods -->
+  <line
+     x1="150"
+     y1="260"
+     x2="135"
+     y2="350"
+     stroke="#666"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line80" />
+  <line
+     x1="300"
+     y1="260"
+     x2="325"
+     y2="350"
+     stroke="#666"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line81" />
+  <line
+     x1="500"
+     y1="260"
+     x2="515"
+     y2="350"
+     stroke="#666"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line82" />
+  <line
+     x1="650"
+     y1="260"
+     x2="705"
+     y2="350"
+     stroke="#666"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line83" />
+  <line
+     x1="800"
+     y1="260"
+     x2="895"
+     y2="350"
+     stroke="#666"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line84" />
+</svg>

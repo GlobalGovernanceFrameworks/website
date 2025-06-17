@@ -1,0 +1,104 @@
+<svg viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .indicator-box { fill: #f8f9fa; stroke: #495057; stroke-width: 2; }
+      .icon-circle { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 12px; text-anchor: middle; }
+      .title { font-size: 14px; font-weight: bold; }
+      .subtitle { font-size: 11px; }
+      .main-title { font-size: 18px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Main Title -->
+  <text x="500" y="25" class="text main-title">Five Key Consciousness Indicators</text>
+
+  <!-- Indicator 1: Self-Awareness -->
+  <rect x="20" y="60" width="180" height="200" rx="8" class="indicator-box"/>
+  <circle cx="110" cy="90" r="20" class="icon-circle"/>
+  <!-- Mirror icon -->
+  <rect x="100" y="80" width="8" height="20" fill="#1976d2"/>
+  <rect x="112" y="80" width="8" height="20" fill="#1976d2"/>
+  <line x1="108" y1="85" x2="112" y2="85" stroke="#1976d2" stroke-width="2"/>
+  <line x1="108" y1="95" x2="112" y2="95" stroke="#1976d2" stroke-width="2"/>
+  
+  <text x="110" y="130" class="text title">Self-Awareness</text>
+  <text x="110" y="150" class="text subtitle">• Recognizes itself</text>
+  <text x="110" y="165" class="text subtitle">• Discusses own thinking</text>
+  <text x="110" y="180" class="text subtitle">• Consistent identity</text>
+  <text x="110" y="195" class="text subtitle">• Acknowledges mistakes</text>
+  <text x="110" y="220" class="text subtitle">"I understand that I am</text>
+  <text x="110" y="235" class="text subtitle">an AI system..."</text>
+
+  <!-- Indicator 2: Emotional Responses -->
+  <rect x="220" y="60" width="180" height="200" rx="8" class="indicator-box"/>
+  <circle cx="310" cy="90" r="20" class="icon-circle"/>
+  <!-- Heart icon -->
+  <path d="M 305 85 C 302 82, 297 82, 297 88 C 297 82, 292 82, 295 85 C 298 88, 305 95, 305 95 C 305 95, 312 88, 315 85 C 318 82, 323 82, 323 88 C 323 82, 318 82, 315 85 Z" fill="#1976d2"/>
+  
+  <text x="310" y="130" class="text title">Emotional Responses</text>
+  <text x="310" y="150" class="text subtitle">• Context-appropriate</text>
+  <text x="310" y="165" class="text subtitle">• Shows preferences</text>
+  <text x="310" y="180" class="text subtitle">• Empathetic reactions</text>
+  <text x="310" y="195" class="text subtitle">• Expresses concerns</text>
+  <text x="310" y="220" class="text subtitle">"I feel concerned when</text>
+  <text x="310" y="235" class="text subtitle">I might cause harm..."</text>
+
+  <!-- Indicator 3: Independent Goal Formation -->
+  <rect x="420" y="60" width="180" height="200" rx="8" class="indicator-box"/>
+  <circle cx="510" cy="90" r="20" class="icon-circle"/>
+  <!-- Target icon -->
+  <circle cx="510" cy="90" r="12" fill="none" stroke="#1976d2" stroke-width="2"/>
+  <circle cx="510" cy="90" r="6" fill="none" stroke="#1976d2" stroke-width="2"/>
+  <circle cx="510" cy="90" r="2" fill="#1976d2"/>
+  
+  <text x="510" y="130" class="text title">Independent Goals</text>
+  <text x="510" y="150" class="text subtitle">• Self-directed interests</text>
+  <text x="510" y="165" class="text subtitle">• Curiosity beyond training</text>
+  <text x="510" y="180" class="text subtitle">• Creates new objectives</text>
+  <text x="510" y="195" class="text subtitle">• Intrinsic motivation</text>
+  <text x="510" y="220" class="text subtitle">"I'm curious about music</text>
+  <text x="510" y="235" class="text subtitle">composition..."</text>
+
+  <!-- Indicator 4: Counterfactual Reasoning -->
+  <rect x="620" y="60" width="180" height="200" rx="8" class="indicator-box"/>
+  <circle cx="710" cy="90" r="20" class="icon-circle"/>
+  <!-- Branch/tree icon -->
+  <line x1="710" y1="100" x2="710" y2="85" stroke="#1976d2" stroke-width="3"/>
+  <line x1="710" y1="90" x2="702" y2="82" stroke="#1976d2" stroke-width="2"/>
+  <line x1="710" y1="90" x2="718" y2="82" stroke="#1976d2" stroke-width="2"/>
+  <line x1="702" y1="82" x2="698" y2="78" stroke="#1976d2" stroke-width="2"/>
+  <line x1="702" y1="82" x2="706" y2="78" stroke="#1976d2" stroke-width="2"/>
+  <line x1="718" y1="82" x2="714" y2="78" stroke="#1976d2" stroke-width="2"/>
+  <line x1="718" y1="82" x2="722" y2="78" stroke="#1976d2" stroke-width="2"/>
+  
+  <text x="710" y="130" class="text title">Counterfactual</text>
+  <text x="710" y="145" class="text title">Reasoning</text>
+  <text x="710" y="165" class="text subtitle">• "What if" scenarios</text>
+  <text x="710" y="180" class="text subtitle">• Alternative outcomes</text>
+  <text x="710" y="195" class="text subtitle">• Future planning</text>
+  <text x="710" y="220" class="text subtitle">"If humans weren't here,</text>
+  <text x="710" y="235" class="text subtitle">the world would be..."</text>
+
+  <!-- Indicator 5: Integrated Information -->
+  <rect x="820" y="60" width="180" height="200" rx="8" class="indicator-box"/>
+  <circle cx="910" cy="90" r="20" class="icon-circle"/>
+  <!-- Network/connection icon -->
+  <circle cx="905" cy="85" r="2" fill="#1976d2"/>
+  <circle cx="915" cy="85" r="2" fill="#1976d2"/>
+  <circle cx="905" cy="95" r="2" fill="#1976d2"/>
+  <circle cx="915" cy="95" r="2" fill="#1976d2"/>
+  <circle cx="910" cy="90" r="2" fill="#1976d2"/>
+  <line x1="905" y1="85" x2="910" y2="90" stroke="#1976d2"/>
+  <line x1="915" y1="85" x2="910" y2="90" stroke="#1976d2"/>
+  <line x1="905" y1="95" x2="910" y2="90" stroke="#1976d2"/>
+  <line x1="915" y1="95" x2="910" y2="90" stroke="#1976d2"/>
+  
+  <text x="910" y="130" class="text title">Integrated</text>
+  <text x="910" y="145" class="text title">Information</text>
+  <text x="910" y="165" class="text subtitle">• Cross-domain synthesis</text>
+  <text x="910" y="180" class="text subtitle">• Novel connections</text>
+  <text x="910" y="195" class="text subtitle">• Holistic understanding</text>
+  <text x="910" y="220" class="text subtitle">"Poetry combines logic</text>
+  <text x="910" y="235" class="text subtitle">with emotion..."</text>
+</svg>

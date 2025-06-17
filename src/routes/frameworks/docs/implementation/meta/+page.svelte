@@ -7,8 +7,46 @@
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import ConstellationMap from '$lib/components/ConstellationMap.svelte';
+  import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
      
   export let data;
+
+  onMount(() => {
+    if (browser) {
+      // First handle any section query parameter
+      const params = new URLSearchParams(window.location.search);
+      const sectionParam = params.get('section');
+      
+      if (sectionParam && data.sections[sectionParam]) {
+        setActiveSection(sectionParam);
+      } 
+      // Then check for hash if no section param
+      else if (window.location.hash) {
+        const hash = window.location.hash.substring(1);
+        if (hash && data.sections[hash]) {
+          setActiveSection(hash);
+        }
+      }
+
+      // Listen for hash changes without reloading the page
+      const handleHashChange = (event) => {
+        // Prevent the default behavior which might cause a page reload
+        event.preventDefault();
+        
+        const hash = window.location.hash.substring(1);
+        if (hash && data.sections[hash] && activeSection !== hash) {
+          setActiveSection(hash);
+        }
+      };
+
+      window.addEventListener('hashchange', handleHashChange);
+      
+      return () => {
+        window.removeEventListener('hashchange', handleHashChange);
+      };
+    }
+  });
 
   // Keep track of which section is active (for sub-navigation)
   let activeSection = 'index';
@@ -16,7 +54,50 @@
   // Function to set active section
   function setActiveSection(section) {
     activeSection = section;
+    
+    // Update the URL hash to reflect the current section (without page reload)
+    if (browser) {
+      // Important: Use the history API to update just the hash without changing the path
+      const url = new URL(window.location.href);
+      url.hash = section;
+      
+      // Replace state rather than push to avoid creating extra history entries
+      history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
+    }
   }
+
+  // Handle manual navigation with the back/forward buttons
+  afterUpdate(() => {
+    if (browser) {
+      const handleHashChange = () => {
+        const hash = window.location.hash;
+        if (hash && hash.length > 1) {
+          const sectionId = hash.substring(1);
+          if (data.sections[sectionId] && activeSection !== sectionId) {
+            setActiveSection(sectionId);
+          }
+        }
+      };
+
+      window.addEventListener('hashchange', handleHashChange);
+      return () => {
+        window.removeEventListener('hashchange', handleHashChange);
+      };
+    }
+  });
 
   // Check if we're in print mode
   const isPrintMode = data.isPrintMode;
@@ -37,9 +118,9 @@
 
   // Swedish translations for the introduction section
   const introSv = {
-    title: "Integrerad Meta-Styrning Ramverk Implementering",
+    title: "Integrerad meta-styrning ramverk implementering",
     overview: "Översikt",
-    paragraph1: "Integrerad Meta-Styrning är konsten och arkitekturen att designa, samordna och utveckla styrningssystem över domäner, nivåer, kulturer och tidsskalor. När globala utmaningar blir alltmer sammankopplade och komplexa, erbjuder meta-styrning den nödvändiga strukturen för att harmonisera olika insatser till en sammanhängande helhet—utan att överskrida autonomi, mångfald eller subsidiaritet.",
+    paragraph1: "Integrerad meta-styrning är konsten och arkitekturen att designa, samordna och utveckla styrningssystem över domäner, nivåer, kulturer och tidsskalor. När globala utmaningar blir alltmer sammankopplade och komplexa, erbjuder meta-styrning den nödvändiga strukturen för att harmonisera olika insatser till en sammanhängande helhet—utan att överskrida autonomi, mångfald eller subsidiaritet.",
     paragraph2: "Detta ramverk beskriver principer, strukturer och mekanismer för hur olika styrningsdomäner interagerar, överlappar och utvecklas i linje med gemensamma mål. Det är tänkt som en potentiell \"konstitution för planetär samordning\"—ett levande, adaptivt system som utvecklas genom kollektivt lärande."
   };
 
@@ -50,6 +131,33 @@
     paragraph1: "Integrated Meta-Governance is the art and architecture of designing, aligning, and evolving governance systems across domains, levels, cultures, and timescales. As global challenges become increasingly interconnected and complex, meta-governance offers the scaffolding necessary to harmonize diverse efforts into a coherent whole—without overriding autonomy, diversity, or subsidiarity.",
     paragraph2: "This framework outlines principles, structures, and mechanisms to guide how various governance domains interact, overlap, and evolve in alignment with shared goals. It is envisioned as a potential \"constitution for planetary coordination\"—a living, adaptive system that evolves through collective learning."
   };
+
+  function getOverviewTitle() {
+    const overviewTitles = {
+      en: "Overview",
+      sv: "Översikt"
+    };
+    
+    return overviewTitles[currentLocale] || overviewTitles.en;
+  }
+
+  // Group sections logically with multi-lingual support
+  function getSectionCategoryTitle(category) {
+    const categoryTitles = {
+      en: {
+        foundation: "Foundation",
+        implementation: "Implementation & Practice",
+        resources: "Resources & Tools"
+      },
+      sv: {
+        foundation: "Grund",
+        implementation: "Implementering & praktik",
+        resources: "Resurser & verktyg"
+      }
+    };
+    
+    return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
+  }
 
   // Get section titles in current language
   function getSectionTitle(section) {
@@ -69,15 +177,15 @@
         '10-related': "Related"
       },
       sv: {
-        'quick-start': "Meta-Styrning Lite",
+        'quick-start': "Meta-styrning lite",
         'index': "Översikt",
-        '01-principles': "Grundläggande Principer",
+        '01-principles': "Grundläggande principer",
         '02-value-proposition': "Värdeerbjudande",
-        '03-structural': "Strukturella Komponenter",
+        '03-structural': "Strukturella komponenter",
         '04-implementation': "Implementeringsstrategier",
         '05-evaluation': "Utvärderingsramverk",
         '06-case-models': "Fallmodeller i praktiken",
-        '07-future': "Framtida Potential",
+        '07-future': "Framtida potential",
         '08-manifesto': "Varför delta?",
         '09-appendix': "Bilaga",
         '10-related': "Relaterat"
@@ -85,6 +193,36 @@
     };
     
     return (titles[currentLocale] || titles.en)[section] || section;
+  }
+
+  // Function to get shortened section titles for navigation
+  function getShortSectionTitle(section) {
+    const fullTitle = getSectionTitle(section);
+    
+    const shortTitles = {
+      'Core Principles': 'Principles',
+      'Value Proposition': 'Value Proposition',
+      'Structural Components': 'Structure',
+      'Implementation Strategies': 'Implementation',
+      'Evaluation Framework': 'Evaluation',
+      'Case Models in Action': 'Case Models',
+      'Future Potential': 'Future',
+      'Why Join?': 'Why Join?',
+      'Appendix': 'Appendix',
+      'Related': 'Related',
+      'Grundläggande principer': 'Principer',
+      'Värdeerbjudande': 'Värdeerbjudande',
+      'Strukturella komponenter': 'Struktur',
+      'Implementeringsstrategier': 'Implementering',
+      'Utvärderingsramverk': 'Utvärdering',
+      'Fallmodeller i praktiken': 'Fallmodeller',
+      'Framtida potential': 'Framtid',
+      'Varför delta?': 'Varför delta?',
+      'Bilaga': 'Bilaga',
+      'Relaterat': 'Relaterat'
+    };
+    
+    return shortTitles[fullTitle] || fullTitle;
   }
 
   // Choose the right intro text based on the current locale
@@ -104,7 +242,90 @@
     link.click();
     document.body.removeChild(link);
   }
+
+  // Check which sections are active
+  $: isLiteActive = activeSection === 'quick-start';
+  $: isFoundationActive = ['01-principles', '02-value-proposition'].includes(activeSection);
+  $: isImplementationActive = ['03-structural', '04-implementation', '05-evaluation', '06-case-models'].includes(activeSection);
+  $: isResourceActive = ['07-future', '08-manifesto', '09-appendix', '10-related'].includes(activeSection);
+
+  // For handling accordion states
+  let foundationOpen = true; // Start with foundation open
+  let implementationOpen = false;
+  let resourcesOpen = false;
+
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
+  }
+
+  // Close dropdowns when clicking outside
+  function handleClickOutside(event) {
+    if (browser) {
+      const dropdown = document.querySelector('.card-actions .dropdown');
+      
+      if (dropdown && !dropdown.contains(event.target)) {
+        // Handle dropdown close if needed
+      }
+    }
+  }
+
+  onMount(() => {
+    if (browser) {
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }
+  });
+
+  // Get the total number of numbered sections (01-10)
+  $: numberedSections = Object.keys(data.sections || {}).filter(section => 
+    section.match(/^\d{2}-/)
+  ).sort();
+
+  // Define section groupings
+  $: foundationSections = ['01-principles', '02-value-proposition'];
+  $: implementationSections = ['03-structural', '04-implementation', '05-evaluation', '06-case-models'];
+  $: resourceSections = ['07-future', '08-manifesto', '09-appendix', '10-related'];
+
+  // Get current section index for progress
+  $: currentSectionIndex = numberedSections.indexOf(activeSection);
+  $: isNumberedSection = activeSection.match(/^\d{2}-/);
+
+  // Get localized text for buttons and UI elements
+  function getLocalizedText(key) {
+    const texts = {
+      en: {
+        newToFramework: "New to Meta-Governance?",
+        startWithLite: "Start with our simplified guide that explains the core concepts in plain language.",
+        readLite: "Read Meta-Governance Lite",
+        downloadPdf: "Download PDF Version",
+        continueToFull: "Continue to Full Framework",
+        resources: "Resources"
+      },
+      sv: {
+        newToFramework: "Ny inom meta-styrning?",
+        startWithLite: "Börja med vår förenklade guide som förklarar kärnkoncepten på enkelt språk.",
+        readLite: "Läs meta-styrning lite",
+        downloadPdf: "Ladda ner PDF-version",
+        continueToFull: "Fortsätt till fullständigt ramverk",
+        resources: "Resurser"
+      }
+    };
+    
+    return (texts[currentLocale] || texts.en)[key] || key;
+  }
 </script>
+
+<svelte:window on:click={handleClickOutside}/>
 
 <div class="documentation-container">
   {#if !isPrintMode}
@@ -113,20 +334,17 @@
 
   <div class="content">
     <!-- Quick Access Card for Lite Guide -->
-    {#if !isPrintMode && activeSection !== 'quick-start'}
+    {#if !isPrintMode && !isLiteActive && activeSection === 'index'}
       <div class="lite-guide-card">
         <div class="card-content">
           <div class="card-icon">📘</div>
           <div class="card-text">
-            <h3>New to Meta-Governance?</h3>
-            <p>Start with our simplified guide that explains the core concepts in plain language.</p>
+            <h3>{getLocalizedText('newToFramework')}</h3>
+            <p>{getLocalizedText('startWithLite')}</p>
           </div>
           <div class="card-actions">
             <button class="primary-btn" on:click={() => setActiveSection('quick-start')}>
-              Read Meta-Governance Lite
-            </button>
-            <button class="secondary-btn" on:click={downloadLiteGuide}>
-              Download PDF <span class="download-icon">↓</span>
+              {getLocalizedText('readLite')} <span class="arrow-icon">→</span>
             </button>
           </div>
         </div>
@@ -137,15 +355,126 @@
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            {#each Object.keys(data.sections) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getSectionTitle(section)}
-                </button>
-              </li>
-            {/each}
-          </ul>
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">{getOverviewTitle()}</span>
+            </button>
+          </div>
+
+          <!-- Lite Guide -->
+          <div class="nav-section">
+            <button 
+              class="nav-item lite-item" 
+              class:active={activeSection === 'quick-start'}
+              on:click={() => setActiveSection('quick-start')}
+            >
+              <span class="nav-icon">📘</span>
+              <span class="nav-title">{getSectionTitle('quick-start')}</span>
+            </button>
+          </div>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={isFoundationActive}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">🌟</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
+              <span class="section-count">({foundationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each foundationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={isImplementationActive}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
+              <span class="section-count">({implementationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each implementationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isResourceActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📚</span>
+              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
+              <span class="section-count">({resourceSections.length})</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each resourceSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for numbered sections -->
+      {#if !isPrintMode && isNumberedSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((currentSectionIndex + 1) / numberedSections.length) * 100}%"></div>
+          </div>
+          <span class="progress-text">Section {currentSectionIndex + 1} of {numberedSections.length}</span>
         </div>
       {/if}
 
@@ -160,10 +489,10 @@
             {#if !isPrintMode}
               <div class="lite-guide-navigation">
                 <button class="secondary-btn" on:click={downloadLiteGuide}>
-                  Download PDF Version <span class="download-icon">↓</span>
+                  {getLocalizedText('downloadPdf')} <span class="download-icon">↓</span>
                 </button>
                 <button class="primary-btn" on:click={() => setActiveSection('index')}>
-                  Continue to Full Framework <span class="arrow-icon">→</span>
+                  {getLocalizedText('continueToFull')} <span class="arrow-icon">→</span>
                 </button>
               </div>
             {/if}
@@ -189,6 +518,31 @@
           {:else}
             <p>Section {section} not found</p>
           {/if}
+
+          <!-- Section navigation at bottom of numbered sections -->
+          {#if isNumberedSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if currentSectionIndex > 0}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const currentIndex = numberedSections.indexOf(activeSection);
+                  const prevSection = numberedSections[currentIndex - 1];
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if currentSectionIndex < numberedSections.length - 1}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const currentIndex = numberedSections.indexOf(activeSection);
+                  const nextSection = numberedSections[currentIndex + 1];
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
+            </div>
+          {/if}
         </div>
       {/each}
     {:else}
@@ -212,48 +566,225 @@
 </div>
 
 <style>
-  /* Existing styles */
+  /* Meta-governance cosmic color scheme */
+  :root {
+    --meta-primary: #2B4B8C; /* Cosmic blue - depth, integration, systems thinking */
+    --meta-secondary: #6B5CA5; /* Cosmic purple - wisdom, coordination, synthesis */
+    --meta-accent: #DAA520; /* Gold - value, interconnection, emergence */
+    --meta-earth: #2D5F2D; /* Earthy green - grounding, sustainability, balance */
+    --meta-light: #f0f4ff; /* Light cosmic blue - clarity, openness */
+    --meta-medium: #e6f7ff; /* Medium cosmic blue */
+  }
+
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
+
+  .nav-section {
     margin-bottom: 0.5rem;
   }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
+    overflow: hidden;
+    background: white;
+  }
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
     cursor: pointer;
-    color: #4b5563;
     transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
   }
-  
-  .section-nav li.active button {
-    background-color: #2B4B8C;
+
+  .accordion-header:hover {
+    background-color: rgba(43, 75, 140, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(43, 75, 140, 0.1);
+    color: var(--meta-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(43, 75, 140, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(43, 75, 140, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
+    background-color: var(--meta-primary);
     color: white;
-    border-color: #2B4B8C;
+    font-weight: 600;
   }
-  
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
+
+  .nav-item.active:hover {
+    background-color: var(--meta-secondary);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(43, 75, 140, 0.1), rgba(218, 165, 32, 0.1));
+    border: 1px solid rgba(43, 75, 140, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--meta-primary);
+    color: white;
+  }
+
+  .lite-item {
+    background: linear-gradient(135deg, rgba(218, 165, 32, 0.1), rgba(107, 92, 165, 0.1));
+    border: 1px solid rgba(218, 165, 32, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .lite-item.active {
+    background: var(--meta-accent);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(43, 75, 140, 0.1);
+    color: var(--meta-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(43, 75, 140, 0.1), rgba(218, 165, 32, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--meta-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--meta-primary), var(--meta-accent));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--meta-primary);
+    font-weight: 500;
   }
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem;
   }
 
   .documentation-container {
@@ -269,42 +800,62 @@
     .documentation-container {
       grid-template-columns: 1fr;
     }
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
+
+    .card-content {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      gap: 0.75rem;
+    }
+    
+    .card-text {
+      width: 100%;
+    }
+    
+    .card-actions {
+      width: 100%;
+    }
+    
+    .primary-btn {
+      width: 100%;
+      justify-content: center;
+    }
   }
-  
-  .sidebar {
-    border-right: 1px solid #2D5F2D; /* Earthy green border */
-    padding-right: 1.5rem;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .sidebar a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #4b5563;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s;
-  }
-  
-  .sidebar a:hover {
-    color: #DAA520; /* Gold on hover */
-    border-left-color: #DAA520;
-  }
-  
-  .sidebar a.active {
-    color: #DAA520; /* Gold for active */
-    border-left-color: #DAA520;
-    font-weight: 600;
+
+  @media (max-width: 480px) {
+    .card-content {
+      padding: 0.75rem;
+    }
+    
+    .card-icon {
+      font-size: 1.5rem;
+    }
+    
+    .card-text h3 {
+      font-size: 1rem;
+    }
+    
+    .card-text p {
+      font-size: 0.85rem;
+    }
   }
   
   .content {
@@ -320,7 +871,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #2B4B8C; /* Cosmic blue for h1 */
+    color: var(--meta-primary);
   }
   
   .content :global(h2) {
@@ -328,7 +879,7 @@
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #2B4B8C; /* Cosmic blue for h2 */
+    color: var(--meta-primary);
   }
   
   .content :global(h3) {
@@ -336,7 +887,7 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #2B4B8C; /* Cosmic blue for h3 */
+    color: var(--meta-primary);
   }
 
   /* Styling for h4 headers (#### in Markdown) */
@@ -345,13 +896,13 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #2B4B8C; /* Cosmic blue color, matching your theme */
+    color: var(--meta-primary);
   }
 
   /* Styling for the inset box (blockquote) */
   :global(blockquote) {
     background-color: #f3f6f9;
-    border-left: 4px solid #6B5CA5; /* Cosmic purple color */
+    border-left: 4px solid var(--meta-secondary);
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     border-radius: 0.5rem;
@@ -359,7 +910,7 @@
 
   :global(blockquote > p:first-child strong) {
     font-size: 1.1rem;
-    color: #2B4B8C; /* Cosmic blue for the header */
+    color: var(--meta-primary);
     display: block;
     margin-bottom: 0.75rem;
   }
@@ -380,13 +931,13 @@
   }
 
   :global(blockquote a) {
-    color: #DAA520; /* Gold color for links */
+    color: var(--meta-accent);
     text-decoration: underline;
     font-weight: 500;
   }
 
   :global(blockquote a:hover) {
-    color: #B8860B; /* Darker gold on hover */
+    color: #B8860B;
   }
   
   .content :global(p) {
@@ -395,20 +946,20 @@
     color: #4b5563;
   }
   
-  /* Add to your existing <style> section */
+  /* Lists with meta-governance themed bullets */
   .content :global(ul), .content :global(ol) {
     margin-bottom: 1.5rem;
-    padding-left: 2rem; /* Slightly increased for better indentation */
-    color: #4b5563; /* Matches paragraph text color */
+    padding-left: 2rem;
+    color: #4b5563;
   }
 
   .content :global(ul) {
-    list-style-type: none; /* Remove default bullets */
+    list-style-type: none;
   }
 
   .content :global(ul li) {
     position: relative;
-    margin-bottom: 0.75rem; /* Slightly more spacing between items */
+    margin-bottom: 0.75rem;
     padding-left: 1rem;
   }
 
@@ -417,21 +968,22 @@
     content: "✦";
     position: absolute;
     left: 0;
-    color: #DAA520;
+    top: 0.1em;
+    color: var(--meta-accent);
     font-size: 0.9rem;
   }
 
   .content :global(ol) {
-    list-style-type: decimal; /* Ensure ordered lists use numbers */
+    list-style-type: decimal;
   }
 
   .content :global(ol li) {
-    margin-bottom: 0.75rem; /* Consistent spacing with ul */
+    margin-bottom: 0.75rem;
     padding-left: 0.5rem;
   }
 
   .content :global(ol li::marker) {
-    color: #2B4B8C; /* Cosmic blue for numbers */
+    color: var(--meta-primary);
     font-weight: 600;
   }
 
@@ -442,8 +994,8 @@
   }
 
   .content :global(ul ul li::before) {
-    content: "✧"; /* Smaller star for nested items */
-    color: #6B5CA5; /* Cosmic purple for nested bullets */
+    content: "✧";
+    color: var(--meta-secondary);
   }
 
   /* Table styles for markdown content with cosmic theme */
@@ -458,7 +1010,7 @@
   }
 
   :global(.content thead) {
-    background: linear-gradient(to right, #2B4B8C, #4B5CA5);
+    background: linear-gradient(to right, var(--meta-primary), var(--meta-secondary));
   }
 
   :global(.content th) {
@@ -467,7 +1019,7 @@
     text-align: left;
     color: #ffffff;
     border: none;
-    border-bottom: 2px solid #6B5CA5;
+    border-bottom: 2px solid var(--meta-secondary);
   }
 
   :global(.content td) {
@@ -487,28 +1039,11 @@
   }
 
   :global(.content tr:hover) {
-    background-color: #f7f1e3; /* Light gold background on hover */
+    background-color: #f7f1e3;
   }
 
   :global(.content tbody tr:last-child td) {
     border-bottom: none;
-  }
-
-  /* Table caption or footer */
-  :global(.content table caption),
-  :global(.content table tfoot) {
-    background-color: #e9f2e9; /* Light earthy green */
-    padding: 0.75rem;
-    font-size: 0.875rem;
-    color: #2D5F2D;
-    text-align: left;
-    border-top: 1px solid #2D5F2D;
-  }
-
-  /* Highlight important cells */
-  :global(.content td.highlight) {
-    color: #B8860B; /* Gold text */
-    font-weight: 600;
   }
 
   /* For responsive tables on small screens */
@@ -524,9 +1059,9 @@
     }
   }
   
-  /* New styles for Lite Guide card */
+  /* Lite Guide card */
   .lite-guide-card {
-    background: linear-gradient(135deg, #f0f4ff 0%, #e6f7ff 100%);
+    background: linear-gradient(135deg, var(--meta-light) 0%, var(--meta-medium) 100%);
     border-radius: 0.75rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(43, 75, 140, 0.1);
@@ -544,7 +1079,7 @@
   
   .card-icon {
     font-size: 2.5rem;
-    color: #2B4B8C;
+    color: var(--meta-primary);
     flex-shrink: 0;
   }
   
@@ -555,7 +1090,7 @@
   
   .card-text h3 {
     margin: 0 0 0.5rem 0;
-    color: #2B4B8C;
+    color: var(--meta-primary);
     font-size: 1.25rem;
   }
   
@@ -573,7 +1108,7 @@
   }
   
   .primary-btn {
-    background-color: #2B4B8C;
+    background-color: var(--meta-primary);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -590,8 +1125,8 @@
   
   .secondary-btn {
     background-color: white;
-    color: #2B4B8C;
-    border: 1px solid #2B4B8C;
+    color: var(--meta-primary);
+    border: 1px solid var(--meta-primary);
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-weight: 500;
@@ -613,6 +1148,66 @@
     display: inline-block;
     margin-left: 0.25rem;
   }
+
+  /* Link styles for content */
+  .content :global(a) {
+    color: var(--meta-primary);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .content :global(a:hover) {
+    color: var(--meta-accent);
+    text-decoration: underline;
+  }
+
+  .content :global(a:active) {
+    color: var(--meta-accent);
+  }
+
+  /* External link styles with a subtle indicator */
+  .content :global(a[href^="http"]):after, 
+  .content :global(a[href^="https://"]):after {
+    content: " ↗";
+    font-size: 0.8em;
+    vertical-align: super;
+  }
+
+  /* PDF link styles with download indicator */
+  .content :global(a[href$=".pdf"]):after {
+    content: " ↓";
+    font-size: 0.8em;
+  }
+
+  /* Section link styles - more subtle but still distinct */
+  .content :global(a[href^="#"]) {
+    color: var(--meta-secondary);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--meta-secondary);
+  }
+
+  .content :global(a[href^="#"]):hover {
+    color: var(--meta-primary);
+    border-bottom-color: var(--meta-primary);
+  }
+
+  /* Make sure links in tables are readable against the background */
+  .content :global(table a) {
+    color: var(--meta-primary);
+    font-weight: 600;
+  }
+
+  /* Links in the section navigation */
+  .section-nav a {
+    color: #4b5563;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .section-nav a:hover {
+    color: var(--meta-primary);
+  }
   
   /* Styles for navigation at bottom of lite guide */
   .lite-guide-navigation {
@@ -622,7 +1217,41 @@
     padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
   }
+
+  /* Section navigation for numbered sections */
+  .section-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-btn {
+    background-color: var(--meta-primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--meta-secondary);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
+  }
   
+  /* Responsive styles */
   @media (max-width: 640px) {
     .card-content {
       flex-direction: column;
@@ -643,5 +1272,132 @@
     .lite-guide-navigation button {
       width: 100%;
     }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
+      width: 100%;
+    }
+  }
+
+  /* Meta-governance specific theme elements */
+
+  /* Special callouts for meta-governance concepts */
+  .content :global(.systems-integration-callout) {
+    background-color: rgba(43, 75, 140, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--meta-primary);
+  }
+
+  .content :global(.coordination-callout) {
+    background-color: rgba(107, 92, 165, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--meta-secondary);
+  }
+
+  .content :global(.emergence-callout) {
+    background-color: rgba(218, 165, 32, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--meta-accent);
+  }
+
+  .content :global(.sustainability-callout) {
+    background-color: rgba(45, 95, 45, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--meta-earth);
+  }
+
+  /* Special styling for case studies */
+  .content :global(.case-study) {
+    background-color: rgba(43, 75, 140, 0.05);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--meta-primary);
+  }
+
+  .content :global(.case-study-title) {
+    color: var(--meta-primary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Highlight boxes for important meta-governance concepts */
+  .content :global(.concept-highlight) {
+    background-color: rgba(107, 92, 165, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(107, 92, 165, 0.3);
+  }
+
+  .content :global(.concept-highlight-title) {
+    color: var(--meta-secondary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(107, 92, 165, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Framework integration styling */
+  .content :global(.integration-highlight) {
+    background-color: rgba(218, 165, 32, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(218, 165, 32, 0.3);
+  }
+
+  .content :global(.integration-highlight-title) {
+    color: var(--meta-accent);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(218, 165, 32, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Governance architecture styling */
+  .content :global(.architecture-highlight) {
+    background-color: rgba(43, 75, 140, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(43, 75, 140, 0.3);
+  }
+
+  .content :global(.architecture-highlight-title) {
+    color: var(--meta-primary);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(43, 75, 140, 0.3);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Planetary coordination styling */
+  .content :global(.planetary-highlight) {
+    background-color: rgba(45, 95, 45, 0.1);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(45, 95, 45, 0.3);
+  }
+
+  .content :global(.planetary-highlight-title) {
+    color: var(--meta-earth);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(45, 95, 45, 0.3);
+    padding-bottom: 0.5rem;
   }
 </style>

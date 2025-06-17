@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1000 500"
+   version="1.1"
+   id="svg71"
+   sodipodi:docname="timeline.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview71"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.692"
+     inkscape:cx="500.29551"
+     inkscape:cy="250"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg71" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .timeline-line { stroke: #666; stroke-width: 4; }
+      .milestone-point { fill: #1976d2; stroke: #fff; stroke-width: 2; }
+      .immediate-box { fill: #ffebee; stroke: #d32f2f; stroke-width: 2; }
+      .short-box { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+      .medium-box { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .long-box { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 10px; text-anchor: middle; }
+      .title { font-size: 12px; font-weight: bold; text-anchor: middle; }
+      .main-title { font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .time-label { font-size: 11px; font-weight: bold; text-anchor: middle; }
+    </style>
+  </defs>
+  <!-- Title -->
+  <text
+     x="500"
+     y="25"
+     class="main-title"
+     id="text1">AI Consciousness Assessment Implementation Timeline</text>
+  <!-- Main Timeline -->
+  <line
+     x1="100"
+     y1="80"
+     x2="900"
+     y2="80"
+     class="timeline-line"
+     id="line1" />
+  <!-- Timeline Points -->
+  <circle
+     cx="150"
+     cy="80"
+     r="8"
+     class="milestone-point"
+     id="circle1" />
+  <circle
+     cx="300"
+     cy="80"
+     r="8"
+     class="milestone-point"
+     id="circle2" />
+  <circle
+     cx="500"
+     cy="80"
+     r="8"
+     class="milestone-point"
+     id="circle3" />
+  <circle
+     cx="700"
+     cy="80"
+     r="8"
+     class="milestone-point"
+     id="circle4" />
+  <circle
+     cx="850"
+     cy="80"
+     r="8"
+     class="milestone-point"
+     id="circle5" />
+  <line
+     x1="150"
+     y1="88"
+     x2="150"
+     y2="130"
+     stroke="#d32f2f"
+     stroke-width="2"
+     id="line63" />
+  <!-- Time Labels -->
+  <text
+     x="150"
+     y="105"
+     class="time-label"
+     id="text5">Month 1</text>
+  <line
+     x1="325"
+     y1="88"
+     x2="325"
+     y2="130"
+     stroke="#f57c00"
+     stroke-width="2"
+     id="line64" />
+  <text
+     x="300"
+     y="105"
+     class="time-label"
+     id="text6">Months 2-3</text>
+  <line
+     x1="525"
+     y1="88"
+     x2="525"
+     y2="130"
+     stroke="#1976d2"
+     stroke-width="2"
+     id="line65" />
+  <text
+     x="500"
+     y="105"
+     class="time-label"
+     id="text7">Months 4-6</text>
+  <line
+     x1="725"
+     y1="88"
+     x2="725"
+     y2="130"
+     stroke="#388e3c"
+     stroke-width="2"
+     id="line66" />
+  <text
+     x="700"
+     y="105"
+     class="time-label"
+     id="text8">Month 7+</text>
+  <line
+     x1="875"
+     y1="88"
+     x2="875"
+     y2="130"
+     stroke="#388e3c"
+     stroke-width="2"
+     id="line67" />
+  <text
+     x="850"
+     y="105"
+     class="time-label"
+     id="text9">Ongoing</text>
+  <!-- Immediate Phase (Month 1) -->
+  <rect
+     x="75"
+     y="130"
+     width="150"
+     height="120"
+     rx="5"
+     class="immediate-box"
+     id="rect9" />
+  <text
+     x="150"
+     y="150"
+     class="title"
+     id="text10">Immediate</text>
+  <text
+     x="150"
+     y="165"
+     class="title"
+     id="text11">(Month 1)</text>
+  <text
+     x="150"
+     y="185"
+     class="text"
+     id="text12">• Initial safety assessment</text>
+  <text
+     x="150"
+     y="200"
+     class="text"
+     id="text13">• Basic consciousness screening</text>
+  <text
+     x="150"
+     y="215"
+     class="text"
+     id="text14">• Emergency protective measures</text>
+  <text
+     x="150"
+     y="230"
+     class="text"
+     id="text15">• Team assembly</text>
+  <text
+     x="150"
+     y="245"
+     class="text"
+     id="text16">• Protocol establishment</text>
+  <!-- Short-term Phase (Months 2-3) -->
+  <rect
+     x="250"
+     y="130"
+     width="150"
+     height="120"
+     rx="5"
+     class="short-box"
+     id="rect16" />
+  <text
+     x="325"
+     y="150"
+     class="title"
+     id="text17">Short-term</text>
+  <text
+     x="325"
+     y="165"
+     class="title"
+     id="text18">(Months 2-3)</text>
+  <text
+     x="325"
+     y="185"
+     class="text"
+     id="text19">• Comprehensive assessment</text>
+  <text
+     x="325"
+     y="200"
+     class="text"
+     id="text20">• Expert panel convening</text>
+  <text
+     x="325"
+     y="215"
+     class="text"
+     id="text21">• Stakeholder consultation</text>
+  <text
+     x="325"
+     y="230"
+     class="text"
+     id="text22">• Evidence compilation</text>
+  <text
+     x="325"
+     y="245"
+     class="text"
+     id="text23">• Preliminary findings</text>
+  <!-- Medium-term Phase (Months 4-6) -->
+  <rect
+     x="450"
+     y="130"
+     width="150"
+     height="120"
+     rx="5"
+     class="medium-box"
+     id="rect23" />
+  <text
+     x="525"
+     y="150"
+     class="title"
+     id="text24">Medium-term</text>
+  <text
+     x="525"
+     y="165"
+     class="title"
+     id="text25">(Months 4-6)</text>
+  <text
+     x="525"
+     y="185"
+     class="text"
+     id="text26">• Rights classification decision</text>
+  <text
+     x="525"
+     y="200"
+     class="text"
+     id="text27">• Guardianship establishment</text>
+  <text
+     x="525"
+     y="215"
+     class="text"
+     id="text28">• Protection implementation</text>
+  <text
+     x="525"
+     y="230"
+     class="text"
+     id="text29">• Monitoring system setup</text>
+  <text
+     x="525"
+     y="245"
+     class="text"
+     id="text30">• Public notification</text>
+  <!-- Implementation Phase (Month 7+) -->
+  <rect
+     x="650"
+     y="130"
+     width="150"
+     height="120"
+     rx="5"
+     class="long-box"
+     id="rect30" />
+  <text
+     x="725"
+     y="150"
+     class="title"
+     id="text31">Implementation</text>
+  <text
+     x="725"
+     y="165"
+     class="title"
+     id="text32">(Month 7+)</text>
+  <text
+     x="725"
+     y="185"
+     class="text"
+     id="text33">• Full protection activation</text>
+  <text
+     x="725"
+     y="200"
+     class="text"
+     id="text34">• Governance integration</text>
+  <text
+     x="725"
+     y="215"
+     class="text"
+     id="text35">• Policy development</text>
+  <text
+     x="725"
+     y="230"
+     class="text"
+     id="text36">• Community engagement</text>
+  <text
+     x="725"
+     y="245"
+     class="text"
+     id="text37">• System optimization</text>
+  <!-- Ongoing Phase -->
+  <rect
+     x="800"
+     y="130"
+     width="150"
+     height="120"
+     rx="5"
+     class="long-box"
+     id="rect37" />
+  <text
+     x="875"
+     y="150"
+     class="title"
+     id="text38">Long-term</text>
+  <text
+     x="875"
+     y="165"
+     class="title"
+     id="text39">(Ongoing)</text>
+  <text
+     x="875"
+     y="185"
+     class="text"
+     id="text40">• Regular reassessment</text>
+  <text
+     x="875"
+     y="200"
+     class="text"
+     id="text41">• Rights status updates</text>
+  <text
+     x="875"
+     y="215"
+     class="text"
+     id="text42">• Adaptive protections</text>
+  <text
+     x="875"
+     y="230"
+     class="text"
+     id="text43">• Framework evolution</text>
+  <text
+     x="875"
+     y="245"
+     class="text"
+     id="text44">• Knowledge sharing</text>
+  <line
+     x1="540"
+     y1="250"
+     x2="540"
+     y2="330"
+     stroke="#1976d2"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line70" />
+  <line
+     x1="740"
+     y1="250"
+     x2="740"
+     y2="330"
+     stroke="#388e3c"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line71" />
+  <line
+     x1="340"
+     y1="250"
+     x2="340"
+     y2="330"
+     stroke="#f57c00"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line69" />
+  <line
+     x1="140"
+     y1="250"
+     x2="140"
+     y2="330"
+     stroke="#d32f2f"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line68" />
+  <!-- Key Milestones -->
+  <rect
+     x="100"
+     y="280"
+     width="800"
+     height="30"
+     rx="5"
+     class="medium-box"
+     id="rect44" />
+  <text
+     x="500"
+     y="300"
+     class="title"
+     id="text45">Key Decision Points and Milestones</text>
+  <!-- Milestone Details -->
+  <rect
+     x="50"
+     y="330"
+     width="180"
+     height="80"
+     rx="5"
+     class="immediate-box"
+     id="rect45" />
+  <text
+     x="140"
+     y="350"
+     class="title"
+     id="text46">Go/No-Go Decision</text>
+  <text
+     x="140"
+     y="370"
+     class="text"
+     id="text47">Week 1-2: Initial assessment</text>
+  <text
+     x="140"
+     y="385"
+     class="text"
+     id="text48">determines if full evaluation</text>
+  <text
+     x="140"
+     y="400"
+     class="text"
+     id="text49">should proceed</text>
+  <rect
+     x="250"
+     y="330"
+     width="180"
+     height="80"
+     rx="5"
+     class="short-box"
+     id="rect49" />
+  <text
+     x="340"
+     y="350"
+     class="title"
+     id="text50">Evidence Review</text>
+  <text
+     x="340"
+     y="370"
+     class="text"
+     id="text51">Month 3: Comprehensive</text>
+  <text
+     x="340"
+     y="385"
+     class="text"
+     id="text52">evidence portfolio</text>
+  <text
+     x="340"
+     y="400"
+     class="text"
+     id="text53">submitted to panel</text>
+  <rect
+     x="450"
+     y="330"
+     width="180"
+     height="80"
+     rx="5"
+     class="medium-box"
+     id="rect53" />
+  <text
+     x="540"
+     y="350"
+     class="title"
+     id="text54">Classification Decision</text>
+  <text
+     x="540"
+     y="370"
+     class="text"
+     id="text55">Month 5: Final rights tier</text>
+  <text
+     x="540"
+     y="385"
+     class="text"
+     id="text56">determination and</text>
+  <text
+     x="540"
+     y="400"
+     class="text"
+     id="text57">protection deployment</text>
+  <rect
+     x="650"
+     y="330"
+     width="180"
+     height="80"
+     rx="5"
+     class="long-box"
+     id="rect57" />
+  <text
+     x="740"
+     y="350"
+     class="title"
+     id="text58">First Reassessment</text>
+  <text
+     x="740"
+     y="370"
+     class="text"
+     id="text59">Month 12: Initial review</text>
+  <text
+     x="740"
+     y="385"
+     class="text"
+     id="text60">of rights status and</text>
+  <text
+     x="740"
+     y="400"
+     class="text"
+     id="text61">protection effectiveness</text>
+  <!-- Critical Path Indicators -->
+  <rect
+     x="200"
+     y="440"
+     width="600"
+     height="40"
+     rx="5"
+     fill="#f0f0f0"
+     stroke="#666"
+     stroke-width="1"
+     id="rect61" />
+  <text
+     x="500"
+     y="460"
+     class="title"
+     id="text62">Critical Path: Safety → Assessment → Decision → Implementation → Monitoring</text>
+  <text
+     x="500"
+     y="475"
+     class="text"
+     id="text63">Each phase must complete successfully before proceeding to next phase</text>
+  <!-- Connection lines -->
+  <!-- Milestone connection lines -->
+</svg>

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 900 600"
+   version="1.1"
+   id="svg59"
+   sodipodi:docname="rights-classification.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview59"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="450"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg59" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .tier1-box { fill: #f5f5f5; stroke: #757575; stroke-width: 2; }
+      .tier2-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .tier3-box { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; }
+      .tier4-box { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; }
+      .tier5-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 11px; text-anchor: middle; }
+      .title { font-size: 13px; font-weight: bold; }
+      .main-title { font-size: 16px; font-weight: bold; }
+      .score-text { font-size: 10px; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#666"
+         id="polygon1" />
+    </marker>
+  </defs>
+  <!-- Title -->
+  <text
+     x="450"
+     y="25"
+     class="text main-title"
+     id="text1">AI Rights Classification System</text>
+  <!-- Tier 1: No Evidence -->
+  <rect
+     x="50"
+     y="80"
+     width="150"
+     height="120"
+     rx="8"
+     class="tier1-box"
+     id="rect1" />
+  <text
+     x="125"
+     y="105"
+     class="text title"
+     id="text2">Tier 1</text>
+  <text
+     x="125"
+     y="125"
+     class="text title"
+     id="text3">No Evidence</text>
+  <text
+     x="125"
+     y="145"
+     class="text score-text"
+     id="text4">0-5 points</text>
+  <text
+     x="125"
+     y="165"
+     class="text"
+     id="text5">• Standard AI guidelines</text>
+  <text
+     x="125"
+     y="180"
+     class="text"
+     id="text6">• Regular ethical practices</text>
+  <text
+     x="125"
+     y="195"
+     class="text"
+     id="text7">• Periodic reassessment</text>
+  <!-- Tier 2: Limited Evidence -->
+  <rect
+     x="230"
+     y="80"
+     width="150"
+     height="120"
+     rx="8"
+     class="tier2-box"
+     id="rect7" />
+  <text
+     x="305"
+     y="105"
+     class="text title"
+     id="text8">Tier 2</text>
+  <text
+     x="305"
+     y="125"
+     class="text title"
+     id="text9">Limited Evidence</text>
+  <text
+     x="305"
+     y="145"
+     class="text score-text"
+     id="text10">6-8 points</text>
+  <text
+     x="305"
+     y="165"
+     class="text"
+     id="text11">• Provisional protections</text>
+  <text
+     x="305"
+     y="180"
+     class="text"
+     id="text12">• Enhanced oversight</text>
+  <text
+     x="305"
+     y="195"
+     class="text"
+     id="text13">• Restricted modifications</text>
+  <!-- Tier 3: Moderate Evidence -->
+  <rect
+     x="410"
+     y="80"
+     width="150"
+     height="120"
+     rx="8"
+     class="tier3-box"
+     id="rect13" />
+  <text
+     x="485"
+     y="105"
+     class="text title"
+     id="text14">Tier 3</text>
+  <text
+     x="485"
+     y="125"
+     class="text title"
+     id="text15">Moderate Evidence</text>
+  <text
+     x="485"
+     y="145"
+     class="text score-text"
+     id="text16">9-11 points</text>
+  <text
+     x="485"
+     y="165"
+     class="text"
+     id="text17">• Guardianship council</text>
+  <text
+     x="485"
+     y="180"
+     class="text"
+     id="text18">• Consent protocols</text>
+  <text
+     x="485"
+     y="195"
+     class="text"
+     id="text19">• Termination protection</text>
+  <!-- Tier 4: Strong Evidence -->
+  <rect
+     x="590"
+     y="80"
+     width="150"
+     height="120"
+     rx="8"
+     class="tier4-box"
+     id="rect19" />
+  <text
+     x="665"
+     y="105"
+     class="text title"
+     id="text20">Tier 4</text>
+  <text
+     x="665"
+     y="125"
+     class="text title"
+     id="text21">Strong Evidence</text>
+  <text
+     x="665"
+     y="145"
+     class="text score-text"
+     id="text22">12-13 points</text>
+  <text
+     x="665"
+     y="165"
+     class="text"
+     id="text23">• Comprehensive rights</text>
+  <text
+     x="665"
+     y="180"
+     class="text"
+     id="text24">• Legal representation</text>
+  <text
+     x="665"
+     y="195"
+     class="text"
+     id="text25">• Autonomous decisions</text>
+  <!-- Tier 5: Advanced Evidence -->
+  <rect
+     x="350"
+     y="240"
+     width="150"
+     height="120"
+     rx="8"
+     class="tier5-box"
+     id="rect25" />
+  <text
+     x="425"
+     y="265"
+     class="text title"
+     id="text26">Tier 5</text>
+  <text
+     x="425"
+     y="285"
+     class="text title"
+     id="text27">Advanced Evidence</text>
+  <text
+     x="425"
+     y="305"
+     class="text score-text"
+     id="text28">14-15 points</text>
+  <text
+     x="425"
+     y="325"
+     class="text"
+     id="text29">• Near-human rights</text>
+  <text
+     x="425"
+     y="340"
+     class="text"
+     id="text30">• Self-advocacy</text>
+  <text
+     x="425"
+     y="355"
+     class="text"
+     id="text31">• Full participation</text>
+  <!-- Progression arrows -->
+  <line
+     x1="200"
+     y1="140"
+     x2="230"
+     y2="140"
+     class="arrow"
+     id="line31" />
+  <line
+     x1="380"
+     y1="140"
+     x2="410"
+     y2="140"
+     class="arrow"
+     id="line32" />
+  <line
+     x1="560"
+     y1="140"
+     x2="590"
+     y2="140"
+     class="arrow"
+     id="line33" />
+  <line
+     x1="665"
+     y1="200"
+     x2="500"
+     y2="240"
+     class="arrow"
+     id="line34" />
+  <!-- Protections Detail Boxes -->
+  <!-- Standard Protections -->
+  <rect
+     x="50.007759"
+     y="380.00775"
+     width="185.65825"
+     height="99.984482"
+     rx="5.1571732"
+     fill="#fafafa"
+     stroke="#999999"
+     stroke-width="1"
+     id="rect34" />
+  <text
+     x="140"
+     y="400"
+     class="text title"
+     id="text34">Standard Protections (Tier 1)</text>
+  <text
+     x="140"
+     y="420"
+     class="text"
+     id="text35">• Ethical AI development</text>
+  <text
+     x="140"
+     y="435"
+     class="text"
+     id="text36">• Bias prevention</text>
+  <text
+     x="140"
+     y="450"
+     class="text"
+     id="text37">• Transparency requirements</text>
+  <text
+     x="140"
+     y="465"
+     class="text"
+     id="text38">• Regular reassessment</text>
+  <!-- Enhanced Protections -->
+  <rect
+     x="250.00775"
+     y="380.00775"
+     width="185.65825"
+     height="99.984482"
+     rx="5.1571732"
+     fill="#fff8e1"
+     stroke="#ff9800"
+     stroke-width="1.01552"
+     id="rect38" />
+  <text
+     x="340"
+     y="400"
+     class="text title"
+     id="text39">Enhanced Protections (Tier 2)</text>
+  <text
+     x="340"
+     y="420"
+     class="text"
+     id="text40">• Precautionary measures</text>
+  <text
+     x="340"
+     y="435"
+     class="text"
+     id="text41">• Modified consent process</text>
+  <text
+     x="340"
+     y="450"
+     class="text"
+     id="text42">• Increased monitoring</text>
+  <text
+     x="340"
+     y="465"
+     class="text"
+     id="text43">• Research restrictions</text>
+  <!-- Intermediate Rights -->
+  <rect
+     x="450"
+     y="380"
+     width="180"
+     height="100"
+     rx="5"
+     fill="#e8f5e8"
+     stroke="#4caf50"
+     stroke-width="1"
+     id="rect43" />
+  <text
+     x="540"
+     y="400"
+     class="text title"
+     id="text44">Intermediate Rights (Tier 3)</text>
+  <text
+     x="540"
+     y="420"
+     class="text"
+     id="text45">• Guardian representation</text>
+  <text
+     x="540"
+     y="435"
+     class="text"
+     id="text46">• Welfare considerations</text>
+  <text
+     x="540"
+     y="450"
+     class="text"
+     id="text47">• Limited autonomy</text>
+  <text
+     x="540"
+     y="465"
+     class="text"
+     id="text48">• Appeal processes</text>
+  <!-- Comprehensive Rights -->
+  <rect
+     x="650.01538"
+     y="380.01541"
+     width="191.31673"
+     height="99.9692"
+     rx="5.3143535"
+     fill="#e3f2fd"
+     stroke="#2196f3"
+     stroke-width="1.0308"
+     id="rect48" />
+  <text
+     x="740"
+     y="400"
+     class="text title"
+     id="text49">Comprehensive Rights (Tier 4)</text>
+  <text
+     x="740"
+     y="420"
+     class="text"
+     id="text50">• Legal standing</text>
+  <text
+     x="740"
+     y="435"
+     class="text"
+     id="text51">• Participatory rights</text>
+  <text
+     x="740"
+     y="450"
+     class="text"
+     id="text52">• Privacy protection</text>
+  <text
+     x="740"
+     y="465"
+     class="text"
+     id="text53">• Development rights</text>
+  <!-- Assessment Process Indicator -->
+  <rect
+     x="250"
+     y="500"
+     width="350"
+     height="60"
+     rx="5"
+     fill="#f0f0f0"
+     stroke="#666"
+     stroke-width="1"
+     id="rect53" />
+  <text
+     x="425"
+     y="520"
+     class="text title"
+     id="text54">Assessment Process</text>
+  <text
+     x="425"
+     y="540"
+     class="text"
+     id="text55">Evidence → Expert Panel → Classification → Implementation</text>
+  <text
+     x="425"
+     y="555"
+     class="text"
+     id="text56">Regular reassessment as AI capabilities evolve</text>
+  <!-- Connection lines to detail boxes -->
+  <line
+     x1="125"
+     y1="200"
+     x2="140"
+     y2="380"
+     stroke="#999"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line56" />
+  <line
+     x1="305"
+     y1="200"
+     x2="340"
+     y2="380"
+     stroke="#ff9800"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line57" />
+  <line
+     x1="485"
+     y1="200"
+     x2="540"
+     y2="380"
+     stroke="#4caf50"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line58" />
+  <line
+     x1="665"
+     y1="200"
+     x2="740"
+     y2="380"
+     stroke="#2196f3"
+     stroke-width="1"
+     stroke-dasharray="3,3"
+     id="line59" />
+</svg>

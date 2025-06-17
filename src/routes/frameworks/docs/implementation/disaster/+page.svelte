@@ -183,12 +183,17 @@
 
   // For handling dropdown states and accordion states
   let foundationOpen = true; // Start with foundation open
+  let frameworkOpen = false;
   let implementationOpen = false;
   let advancedOpen = false;
   let synthesisOpen = false;
 
   function toggleFoundation() {
     foundationOpen = !foundationOpen;
+  }
+
+  function toggleFramework() {
+    frameworkOpen = !frameworkOpen;
   }
 
   function toggleImplementation() {
@@ -222,6 +227,7 @@
         downloadPdf: "Download PDF Version",
         continueToFull: "Continue to Full Framework",
         foundationTitle: "Foundation & Principles",
+        frameworkTitle: "Core Framework",
         implementationTitle: "Implementation Guidance", 
         advancedTitle: "Advanced Implementation",
         synthesisTitle: "Synthesis & Resources"
@@ -233,6 +239,7 @@
         downloadPdf: "Ladda ner PDF-version",
         continueToFull: "Fortsätt till fullständigt ramverk",
         foundationTitle: "Grund & principer",
+        frameworkTitle: "Kärnramverk",
         implementationTitle: "Implementeringsvägledning",
         advancedTitle: "Avancerad implementering", 
         synthesisTitle: "Syntes & resurser"
@@ -268,167 +275,167 @@
     {/if}
 
     {#if data.isModular}
-      <!-- Sub-navigation for framework sections -->
-      {#if !isPrintMode} 
-        <div class="section-nav">
-          <!-- Overview -->
-          <div class="nav-section">
-            <button 
-              class="nav-item overview-item" 
-              class:active={activeSection === 'index'}
-              on:click={() => setActiveSection('index')}
-            >
-              <span class="nav-icon">🏠</span>
-              <span class="nav-title">Overview</span>
-            </button>
-          </div>
-
-          <!-- Foundation & Principles Accordion -->
-          <div class="nav-accordion">
-            <button 
-              class="accordion-header" 
-              class:open={foundationOpen}
-              class:has-active={['introduction', 'principles'].includes(activeSection)}
-              on:click={toggleFoundation}
-            >
-              <span class="accordion-icon">🌟</span>
-              <span class="accordion-title">{getLocalizedText('foundationTitle')}</span>
-              <span class="section-count">(2)</span>
-              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
-            </button>
-            {#if foundationOpen}
-              <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each ['introduction', 'principles'] as section}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === section}
-                    on:click={() => setActiveSection(section)}
-                  >
-                    <span class="nav-icon">🔹</span>
-                    <span class="nav-title">{getShortSectionTitle(section)}</span>
-                  </button>
-                {/each}
-              </div>
-            {/if}
-          </div>
-
-          <!-- Core Framework Accordion -->
-          <div class="nav-accordion">
-            <button 
-              class="accordion-header" 
-              class:open={implementationOpen}
-              class:has-active={['components', 'approaches', 'engagement'].includes(activeSection)}
-              on:click={toggleImplementation}
-            >
-              <span class="accordion-icon">🏗️</span>
-              <span class="accordion-title">Core Framework</span>
-              <span class="section-count">(3)</span>
-              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
-            </button>
-            {#if implementationOpen}
-              <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each ['components', 'approaches', 'engagement'] as section}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === section}
-                    on:click={() => setActiveSection(section)}
-                  >
-                    <span class="nav-icon">🔹</span>
-                    <span class="nav-title">{getShortSectionTitle(section)}</span>
-                  </button>
-                {/each}
-              </div>
-            {/if}
-          </div>
-
-          <!-- Implementation Guidance Accordion -->
-          <div class="nav-accordion">
-            <button 
-              class="accordion-header" 
-              class:open={advancedOpen}
-              class:has-active={['barriers', 'resources', 'monitoring'].includes(activeSection)}
-              on:click={toggleAdvanced}
-            >
-              <span class="accordion-icon">🚀</span>
-              <span class="accordion-title">{getLocalizedText('implementationTitle')}</span>
-              <span class="section-count">(3)</span>
-              <span class="toggle-arrow" class:rotated={advancedOpen}>▼</span>
-            </button>
-            {#if advancedOpen}
-              <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each ['barriers', 'resources', 'monitoring'] as section}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === section}
-                    on:click={() => setActiveSection(section)}
-                  >
-                    <span class="nav-icon">🔹</span>
-                    <span class="nav-title">{getShortSectionTitle(section)}</span>
-                  </button>
-                {/each}
-              </div>
-            {/if}
-          </div>
-
-          <!-- Advanced Implementation Accordion -->
-          <div class="nav-accordion">
-            <button 
-              class="accordion-header" 
-              class:open={synthesisOpen}
-              class:has-active={['governance', 'scalability'].includes(activeSection)}
-              on:click={toggleSynthesis}
-            >
-              <span class="accordion-icon">⚙️</span>
-              <span class="accordion-title">{getLocalizedText('advancedTitle')}</span>
-              <span class="section-count">(2)</span>
-              <span class="toggle-arrow" class:rotated={synthesisOpen}>▼</span>
-            </button>
-            {#if synthesisOpen}
-              <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each ['governance', 'scalability'] as section}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === section}
-                    on:click={() => setActiveSection(section)}
-                  >
-                    <span class="nav-icon">🔹</span>
-                    <span class="nav-title">{getShortSectionTitle(section)}</span>
-                  </button>
-                {/each}
-              </div>
-            {/if}
-          </div>
-
-          <!-- Synthesis & Resources Accordion -->
-          <div class="nav-accordion">
-            <button 
-              class="accordion-header" 
-              class:open={synthesisOpen}
-              class:has-active={['conclusion', 'annexes'].includes(activeSection)}
-              on:click={toggleSynthesis}
-            >
-              <span class="accordion-icon">📚</span>
-              <span class="accordion-title">{getLocalizedText('synthesisTitle')}</span>
-              <span class="section-count">(2)</span>
-              <span class="toggle-arrow" class:rotated={synthesisOpen}>▼</span>
-            </button>
-            {#if synthesisOpen}
-              <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each ['conclusion', 'annexes'] as section}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === section}
-                    on:click={() => setActiveSection(section)}
-                  >
-                    <span class="nav-icon">🔹</span>
-                    <span class="nav-title">{getShortSectionTitle(section)}</span>
-                  </button>
-                {/each}
-              </div>
-            {/if}
-          </div>
+    <!-- Sub-navigation for framework sections -->
+    {#if !isPrintMode} 
+      <div class="section-nav">
+        <!-- Overview -->
+        <div class="nav-section">
+          <button 
+            class="nav-item overview-item" 
+            class:active={activeSection === 'index'}
+            on:click={() => setActiveSection('index')}
+          >
+            <span class="nav-icon">🏠</span>
+            <span class="nav-title">Overview</span>
+          </button>
         </div>
-      {/if}
+
+        <!-- Foundation & Principles Accordion -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header" 
+            class:open={foundationOpen}
+            class:has-active={['introduction', 'principles'].includes(activeSection)}
+            on:click={toggleFoundation}
+          >
+            <span class="accordion-icon">🌟</span>
+            <span class="accordion-title">{getLocalizedText('foundationTitle')}</span>
+            <span class="section-count">(2)</span>
+            <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+          </button>
+          {#if foundationOpen}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each ['introduction', 'principles'] as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">🔹</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
+        <!-- Core Framework Accordion -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header" 
+            class:open={frameworkOpen}
+            class:has-active={['components', 'approaches', 'engagement'].includes(activeSection)}
+            on:click={toggleFramework}
+          >
+            <span class="accordion-icon">🏗️</span>
+            <span class="accordion-title">{getLocalizedText('frameworkTitle')}</span>
+            <span class="section-count">(3)</span>
+            <span class="toggle-arrow" class:rotated={frameworkOpen}>▼</span>
+          </button>
+          {#if frameworkOpen}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each ['components', 'approaches', 'engagement'] as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">🔹</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
+        <!-- Implementation Guidance Accordion -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header" 
+            class:open={implementationOpen}
+            class:has-active={['barriers', 'resources', 'monitoring'].includes(activeSection)}
+            on:click={toggleImplementation}
+          >
+            <span class="accordion-icon">🚀</span>
+            <span class="accordion-title">{getLocalizedText('implementationTitle')}</span>
+            <span class="section-count">(3)</span>
+            <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+          </button>
+          {#if implementationOpen}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each ['barriers', 'resources', 'monitoring'] as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">🔹</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
+        <!-- Advanced Implementation Accordion -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header" 
+            class:open={advancedOpen}
+            class:has-active={['governance', 'scalability'].includes(activeSection)}
+            on:click={toggleAdvanced}
+          >
+            <span class="accordion-icon">⚙️</span>
+            <span class="accordion-title">{getLocalizedText('advancedTitle')}</span>
+            <span class="section-count">(2)</span>
+            <span class="toggle-arrow" class:rotated={advancedOpen}>▼</span>
+          </button>
+          {#if advancedOpen}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each ['governance', 'scalability'] as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">🔹</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+
+        <!-- Synthesis & Resources Accordion -->
+        <div class="nav-accordion">
+          <button 
+            class="accordion-header" 
+            class:open={synthesisOpen}
+            class:has-active={['conclusion', 'annexes'].includes(activeSection)}
+            on:click={toggleSynthesis}
+          >
+            <span class="accordion-icon">📚</span>
+            <span class="accordion-title">{getLocalizedText('synthesisTitle')}</span>
+            <span class="section-count">(2)</span>
+            <span class="toggle-arrow" class:rotated={synthesisOpen}>▼</span>
+          </button>
+          {#if synthesisOpen}
+            <div class="accordion-content" transition:slide={{ duration: 200 }}>
+              {#each ['conclusion', 'annexes'] as section}
+                <button 
+                  class="nav-item subsection-item" 
+                  class:active={activeSection === section}
+                  on:click={() => setActiveSection(section)}
+                >
+                  <span class="nav-icon">{section === 'conclusion' ? '✨' : '📄'}</span>
+                  <span class="nav-title">{getShortSectionTitle(section)}</span>
+                </button>
+              {/each}
+            </div>
+          {/if}
+        </div>
+      </div>
+    {/if}
 
       <!-- Progress indicator for core sections -->
       {#if !isPrintMode && isCoreSection && activeSection !== 'index'}

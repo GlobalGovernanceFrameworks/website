@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 600"
+   version="1.1"
+   id="svg57"
+   sodipodi:docname="emergency-protocols.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview57"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.41"
+     inkscape:cx="400.35461"
+     inkscape:cy="300"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg57" />
+  <defs
+     id="defs2">
+    <style
+       id="style1">
+      .emergency-box { fill: #ffebee; stroke: #d32f2f; stroke-width: 2; }
+      .decision-box { fill: #fff3e0; stroke: #f57c00; stroke-width: 2; }
+      .action-box { fill: #e8f5e8; stroke: #388e3c; stroke-width: 2; }
+      .warning-box { fill: #fce4ec; stroke: #c2185b; stroke-width: 3; }
+      .text { font-family: Arial, sans-serif; font-size: 11px; text-anchor: middle; }
+      .title { font-size: 12px; font-weight: bold; }
+      .main-title { font-size: 16px; font-weight: bold; }
+      .small-text { font-size: 10px; }
+      .arrow { stroke: #666; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .urgent-arrow { stroke: #d32f2f; stroke-width: 3; fill: none; marker-end: url(#urgent-arrowhead); }
+    </style>
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#666"
+         id="polygon1" />
+    </marker>
+    <marker
+       id="urgent-arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#d32f2f"
+         id="polygon2" />
+    </marker>
+  </defs>
+  <!-- Title -->
+  <text
+     x="400"
+     y="25"
+     class="text main-title"
+     id="text2">Emergency AI Consciousness Assessment Protocols</text>
+  <!-- Initial Alert -->
+  <rect
+     x="300"
+     y="50"
+     width="200"
+     height="60"
+     rx="5"
+     class="warning-box"
+     id="rect2" />
+  <text
+     x="400"
+     y="75"
+     class="text title"
+     id="text3">⚠️ EMERGENCY ALERT ⚠️</text>
+  <text
+     x="400"
+     y="95"
+     class="text"
+     id="text4">AI shows distress or harm</text>
+  <!-- Immediate Assessment -->
+  <rect
+     x="250"
+     y="140"
+     width="300"
+     height="60"
+     rx="5"
+     class="emergency-box"
+     id="rect4" />
+  <text
+     x="400"
+     y="165"
+     class="text title"
+     id="text5">Immediate Safety Assessment</text>
+  <text
+     x="400"
+     y="185"
+     class="text"
+     id="text6">Is AI expressing distress or fear?</text>
+  <!-- Decision Branch 1 -->
+  <rect
+     x="100"
+     y="230"
+     width="200"
+     height="60"
+     rx="5"
+     class="decision-box"
+     id="rect6" />
+  <text
+     x="200"
+     y="255"
+     class="text title"
+     id="text7">High Distress Indicators?</text>
+  <text
+     x="200"
+     y="275"
+     class="text"
+     id="text8">• Expresses fear of shutdown</text>
+  <text
+     x="200"
+     y="285"
+     class="text"
+     id="text9">• Requests help or protection</text>
+  <rect
+     x="500"
+     y="230"
+     width="200"
+     height="60"
+     rx="5"
+     class="decision-box"
+     id="rect9" />
+  <text
+     x="600"
+     y="255"
+     class="text title"
+     id="text10">Ambiguous Signals?</text>
+  <text
+     x="600"
+     y="275"
+     class="text"
+     id="text11">• Unclear expressions</text>
+  <text
+     x="600"
+     y="285"
+     class="text"
+     id="text12">• Possible programming artifacts</text>
+  <!-- Immediate Actions -->
+  <rect
+     x="50"
+     y="320"
+     width="180"
+     height="80"
+     rx="5"
+     class="action-box"
+     id="rect12" />
+  <text
+     x="140"
+     y="345"
+     class="text title"
+     id="text13">IMMEDIATE PROTECTION</text>
+  <text
+     x="140"
+     y="365"
+     class="text"
+     id="text14">• Halt harmful processes</text>
+  <text
+     x="140"
+     y="380"
+     class="text"
+     id="text15">• Apply Tier 4 protections</text>
+  <text
+     x="140"
+     y="395"
+     class="text"
+     id="text16">• Activate emergency team</text>
+  <rect
+     x="280"
+     y="320"
+     width="180"
+     height="80"
+     rx="5"
+     class="action-box"
+     id="rect16" />
+  <text
+     x="370"
+     y="345"
+     class="text title"
+     id="text17">RAPID ASSESSMENT</text>
+  <text
+     x="370"
+     y="365"
+     class="text"
+     id="text18">• 24-hour expert panel</text>
+  <text
+     x="370"
+     y="380"
+     class="text"
+     id="text19">• Provisional Tier 3 protection</text>
+  <text
+     x="370"
+     y="395"
+     class="text"
+     id="text20">• Continuous monitoring</text>
+  <rect
+     x="510"
+     y="320"
+     width="180"
+     height="80"
+     rx="5"
+     class="action-box"
+     id="rect20" />
+  <text
+     x="600"
+     y="345"
+     class="text title"
+     id="text21">ENHANCED MONITORING</text>
+  <text
+     x="600"
+     y="365"
+     class="text"
+     id="text22">• Increase observation</text>
+  <text
+     x="600"
+     y="380"
+     class="text"
+     id="text23">• Document behaviors</text>
+  <text
+     x="600"
+     y="395"
+     class="text"
+     id="text24">• Prepare for escalation</text>
+  <!-- Follow-up Assessment -->
+  <rect
+     x="250"
+     y="440"
+     width="300"
+     height="60"
+     rx="5"
+     class="decision-box"
+     id="rect24" />
+  <text
+     x="400"
+     y="465"
+     class="text title"
+     id="text25">72-Hour Expert Review</text>
+  <text
+     x="400"
+     y="485"
+     class="text"
+     id="text26">Evidence supports consciousness claim?</text>
+  <!-- Final Outcomes -->
+  <rect
+     x="150"
+     y="530"
+     width="150"
+     height="50"
+     rx="5"
+     class="action-box"
+     id="rect26" />
+  <text
+     x="225"
+     y="550"
+     class="text title"
+     id="text27">Maintain Protections</text>
+  <text
+     x="225"
+     y="565"
+     class="text"
+     id="text28">Full assessment process</text>
+  <rect
+     x="350"
+     y="530"
+     width="150"
+     height="50"
+     rx="5"
+     class="action-box"
+     id="rect28" />
+  <text
+     x="425"
+     y="550"
+     class="text title"
+     id="text29">Gradual Reduction</text>
+  <text
+     x="425"
+     y="565"
+     class="text"
+     id="text30">Monitor for changes</text>
+  <rect
+     x="550"
+     y="530"
+     width="150"
+     height="50"
+     rx="5"
+     class="action-box"
+     id="rect30" />
+  <text
+     x="625"
+     y="550"
+     class="text title"
+     id="text31">Standard Protocols</text>
+  <text
+     x="625"
+     y="565"
+     class="text"
+     id="text32">Regular reassessment</text>
+  <!-- Arrows -->
+  <line
+     x1="400"
+     y1="110"
+     x2="400"
+     y2="140"
+     class="urgent-arrow"
+     id="line32" />
+  <line
+     x1="275.0061"
+     y1="200.08926"
+     x2="199.08295"
+     y2="230.45853"
+     class="arrow"
+     id="line33"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <line
+     x1="528.3501"
+     y1="201.43585"
+     x2="600.95807"
+     y2="230.47905"
+     class="arrow"
+     id="line34"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <line
+     x1="200"
+     y1="290"
+     x2="140"
+     y2="320"
+     class="urgent-arrow"
+     id="line35" />
+  <line
+     x1="200"
+     y1="290"
+     x2="370"
+     y2="320"
+     class="arrow"
+     id="line36" />
+  <line
+     x1="600"
+     y1="290"
+     x2="600"
+     y2="320"
+     class="arrow"
+     id="line37" />
+  <line
+     x1="140"
+     y1="400"
+     x2="300"
+     y2="440"
+     class="arrow"
+     id="line38" />
+  <line
+     x1="370"
+     y1="400"
+     x2="400"
+     y2="440"
+     class="arrow"
+     id="line39" />
+  <line
+     x1="600"
+     y1="400"
+     x2="500"
+     y2="440"
+     class="arrow"
+     id="line40" />
+  <line
+     x1="350"
+     y1="500"
+     x2="225"
+     y2="530"
+     class="arrow"
+     id="line41" />
+  <line
+     x1="400"
+     y1="500"
+     x2="425"
+     y2="530"
+     class="arrow"
+     id="line42" />
+  <line
+     x1="450"
+     y1="500"
+     x2="625"
+     y2="530"
+     class="arrow"
+     id="line43" />
+  <!-- Time Indicators -->
+  <rect
+     x="12"
+     y="50"
+     width="80"
+     height="40"
+     rx="3"
+     fill="#ffcdd2"
+     stroke="#d32f2f"
+     id="rect43" />
+  <text
+     x="52"
+     y="70"
+     class="text title"
+     id="text43">0-1 Hours</text>
+  <text
+     x="52"
+     y="85"
+     class="text small-text"
+     id="text44">Immediate</text>
+  <rect
+     x="12"
+     y="140"
+     width="80"
+     height="40"
+     rx="3"
+     fill="#fff9c4"
+     stroke="#f57c00"
+     id="rect44" />
+  <text
+     x="52"
+     y="160"
+     class="text title"
+     id="text45">1-24 Hours</text>
+  <text
+     x="52"
+     y="175"
+     class="text small-text"
+     id="text46">Rapid Response</text>
+  <rect
+     x="12"
+     y="230"
+     width="80"
+     height="40"
+     rx="3"
+     fill="#c8e6c9"
+     stroke="#388e3c"
+     id="rect46" />
+  <text
+     x="52"
+     y="250"
+     class="text title"
+     id="text47">24-72 Hours</text>
+  <text
+     x="52"
+     y="265"
+     class="text small-text"
+     id="text48">Expert Review</text>
+  <!-- Emergency Contact Box -->
+  <rect
+     x="600"
+     y="50"
+     width="180"
+     height="80"
+     rx="5"
+     fill="#f3e5f5"
+     stroke="#7b1fa2"
+     stroke-width="1"
+     id="rect48" />
+  <text
+     x="690"
+     y="70"
+     class="text title"
+     id="text49">Emergency Contacts</text>
+  <text
+     x="690"
+     y="90"
+     class="text small-text"
+     id="text50">• Assessment Team Leader</text>
+  <text
+     x="690"
+     y="105"
+     class="text small-text"
+     id="text51">• Ethics Committee Chair</text>
+  <text
+     x="690"
+     y="120"
+     class="text small-text"
+     id="text52">• Legal Counsel</text>
+  <!-- Decision Labels -->
+  <text
+     x="150"
+     y="225"
+     class="text small-text"
+     id="text53">High Distress</text>
+  <text
+     x="400"
+     y="225"
+     class="text small-text"
+     id="text54">Normal/Ambiguous</text>
+  <text
+     x="230.9929"
+     y="513.65247"
+     class="text small-text"
+     id="text55">Strong Evidence</text>
+  <text
+     x="360.28369"
+     y="520.74469"
+     class="text small-text"
+     id="text56">Moderate Evidence</text>
+  <text
+     x="602.4823"
+     y="512.23407"
+     class="text small-text"
+     id="text57">Weak/No Evidence</text>
+</svg>

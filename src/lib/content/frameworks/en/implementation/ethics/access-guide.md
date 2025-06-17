@@ -38,25 +38,25 @@ Each section is available in multiple formats designed for different needs:
 
 ### 0. Preamble 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/0-preamble) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/0-preamble) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 ### 1. Introduction 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/1-introduction) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/1-introduction) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 ### 2. Foundational Values & Living Principles 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/2-foundational-values) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/2-foundational-values) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 #### 2.3 Global Ethical Traditions 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/2.3-global-ethical-traditions) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/2.3-global-ethical-traditions) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
@@ -74,13 +74,13 @@ Each section is available in multiple formats designed for different needs:
 
 ### 3. Human & Non-Human Rights Commitments 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/3-commitments) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/3-commitments) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 #### 3.1 Traditional Rights 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/3.1-traditional-rights) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/3.1-traditional-rights) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
@@ -146,19 +146,19 @@ Each section is available in multiple formats designed for different needs:
 
 ### 4. Governance Mechanisms 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/4-governance-mechanisms) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/4-governance-mechanisms) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 #### 4.1 Transparency 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/4.1-transparency) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/4.1-transparency) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 #### 4.2 Inclusive Decision-Making 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/4.2-inclusive-decision-making) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/4.2-inclusive-decision-making) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
@@ -236,13 +236,13 @@ Each section is available in multiple formats designed for different needs:
 
 ### 5. Implementation 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/5-implementation) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/5-implementation) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 #### 5.1 Quick Wins (2026–2027) 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/5.1-quick-wins) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/5.1-quick-wins) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
@@ -368,13 +368,13 @@ Each section is available in multiple formats designed for different needs:
 
 #### 6.1 Appendix A: Emerging Rights Toolkit 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/6.1-emerging-rights-toolkit) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/6.1-emerging-rights-toolkit) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 #### 6.2 Appendix B: Case Studies 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/6.2-case-studies) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/6.2-case-studies) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
@@ -398,13 +398,13 @@ Each section is available in multiple formats designed for different needs:
 
 #### 6.4 Appendix D: Citizen Reporting Portal Template 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/6.4-reporting-portal) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/6.4-reporting-portal) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 #### 6.5 Appendix E: Plain Language Summary 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/6.5-plain-language) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/6.5-plain-language) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
@@ -434,13 +434,13 @@ Each section is available in multiple formats designed for different needs:
 
 #### 6.10 Appendix J: Pioneer Pilot Programs 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/6.10-pioneer-pilots) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/6.10-pioneer-pilots) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 
 #### 6.11 Appendix K: Rapid Ethics Assessment for Crisis Situations 🚧
 - [Standard Framework](/frameworks/docs/implementation/ethics/standard/6.11-crisis-ethics) *(Available now)*
-- *Essential Concepts version coming soon*
+- [Essential Concepts](/frameworks/docs/implementation/ethics/essential/6.11-crisis-ethics) *(Available now)*
 - *Visual Overview coming soon*
 - *Technical Details coming soon*
 

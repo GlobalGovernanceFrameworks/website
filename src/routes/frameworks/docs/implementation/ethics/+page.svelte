@@ -7,15 +7,14 @@
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
   // Enhanced print mode handling
   $: if (isPrintMode) {
-    // Immediately show all sections when in print mode
     sectionsToShow = data.availableSections[currentLevel];
     
-    // Make sure all content is visible
     if (browser) {
       setTimeout(() => {
         const sections = document.querySelectorAll('.section-content');
@@ -32,43 +31,6 @@
   // Keep track of which section is active
   let activeSection = 'index';
 
-  // Add a new state variable to track the currently selected guide
-  let selectedGuide = null;
-
-  // Function to select a guide and display its content
-  function selectGuide(guide) {
-    if (guide && data.sections[guide] && (data.sections[guide][currentLevel] || data.sections[guide]['standard'])) {
-      selectedGuide = guide;
-      // If we have the guide at the current level, use that; otherwise fall back to standard
-      selectedGuideContent = data.sections[guide][currentLevel] || data.sections[guide]['standard'];
-    } else {
-      selectedGuide = null;
-      selectedGuideContent = null;
-    }
-  }
-
-  // Track the content of the selected guide
-  let selectedGuideContent = null;
-
-  // Map of guide IDs to display info
-  const guides = {
-    'youth-guide': { emoji: '🌱', title: 'Youth Guide', description: 'Framework concepts for young changemakers' },
-    'community-guide': { emoji: '🏘️', title: 'Community Guide', description: 'Implementing the framework in local communities' },
-    'policy-guide': { emoji: '📑', title: 'Policy Guide', description: 'For policymakers and government officials' },
-    'educators-guide': { emoji: '🎓', title: 'Educators Guide', description: 'Teaching framework concepts in educational settings' },
-    'crisis-guide': { emoji: '🚨', title: 'Crisis Situations Guide', description: 'Ethical decision-making during emergencies' },
-    'indigenous-communities-guide': { emoji: '🌎', title: 'Indigenous Communities Guide', description: 'Framework implementation respecting Indigenous knowledge' },
-    'religious-communities-guide': { emoji: '🕊️', title: 'Religious Communities Guide', description: 'Framework alignment with faith traditions' }
-  };
-
-  // Get available guides from the loaded content
-  $: availableGuides = Object.keys(guides).filter(guide => 
-    data.sections[guide] && (data.sections[guide][currentLevel] || data.sections[guide]['standard'])
-  );
-
-  // Check if there are any guides available
-  $: hasGuides = availableGuides.length > 0;
-  
   // Add support for accessibility level selection
   $: currentLevel = data.currentLevel || 'standard';
   $: accessibilityLevels = data.accessibilityLevels || ['visual', 'essential', 'standard', 'technical'];
@@ -82,98 +44,36 @@
 
   // Function to construct the correct URL for changing levels
   function constructLevelChangeUrl(newLevel) {
-    // The base path for the framework
     const basePath = `${base}/frameworks/docs/implementation/ethics`;
-    
-    // Check if the current section is available at the target level
     const targetSection = data.availableSections[newLevel].includes(activeSection) 
       ? activeSection
       : findFallbackSection(newLevel);
-    
-    // Construct the URL with the appropriate section
     return `${basePath}?level=${newLevel}#${targetSection}`;
   }
 
-  // Function to fix internal links after content is loaded
-  function fixInternalLinks() {
-    if (browser) {
-      // Select all links in the content
-      const links = document.querySelectorAll('.section-content a');
-      
-      links.forEach(link => {
-        const href = link.getAttribute('href');
-        
-        // Only process internal links to the framework
-        if (href && (
-          href.includes('/frameworks/docs/implementation/ethics/') ||
-          href.startsWith('#')
-        )) {
-          // Handle different link patterns
-          if (href.includes('/frameworks/docs/implementation/ethics/')) {
-            // Extract the section and level from the link
-            // Pattern: /frameworks/docs/implementation/ethics/LEVEL/SECTION
-            const parts = href.split('/');
-            const linkLevel = parts[parts.length - 2]; // The level (visual, essential, standard, technical)
-            const linkSection = parts[parts.length - 1]; // The section identifier
-            
-            // Create the correct URL format for our system
-            const newHref = `${base}/frameworks/docs/implementation/ethics?level=${linkLevel}#${linkSection}`;
-            link.setAttribute('href', newHref);
-            
-            // Completely replace the link href with the new format
-            link.setAttribute('href', newHref);
-            
-            // Remove any click handlers and rely on the correctly structured href
-            link.removeEventListener('click', () => {});
-          } else if (href.startsWith('#')) {
-            // Handle in-page anchor links
-            const targetSection = href.substring(1);
-            
-            // Convert simple hash links to our section format if they match a section
-            if (data.availableSections[currentLevel].includes(targetSection)) {
-              const newHref = `${base}/frameworks/docs/implementation/ethics?level=${currentLevel}#${targetSection}`;
-              link.setAttribute('href', newHref);
-            }
-          }
-        }
-      });
-    }
-  }
-
-  // Call the link fixing function after content updates
-  afterUpdate(() => {
-    setTimeout(fixInternalLinks, 100);
-  });
-  
   // Helper to find a fallback section when the current one isn't available
   function findFallbackSection(level) {
-    // Priority order for fallback sections
     const preferredSections = ['index', '0-preamble', '1-introduction'];
     
-    // Try each preferred section in order
     for (const section of preferredSections) {
       if (data.availableSections[level].includes(section)) {
         return section;
       }
     }
     
-    // If none of the preferred sections are available, use the first available section
     return data.availableSections[level].length > 0 
       ? data.availableSections[level][0] 
-      : 'index'; // Final fallback
+      : 'index';
   }
 
   onMount(() => {
     if (browser) {
-      // First handle any section query parameter and hash
       const params = new URLSearchParams(window.location.search);
       const sectionParam = params.get('section');
       const hash = window.location.hash ? window.location.hash.substring(1) : null;
       
-      // Determine which section to show
       let sectionToShow = null;
       
-      // Priority: 1. Section parameter, 2. Hash, 3. Default first section
       if (sectionParam && data.availableSections[currentLevel].includes(sectionParam)) {
         sectionToShow = sectionParam;
       } else if (hash && data.availableSections[currentLevel].includes(hash)) {
@@ -188,7 +88,6 @@
         setActiveSection(sectionToShow);
       }
       
-      // Set up a window.onhashchange handler to handle navigation
       window.onhashchange = () => {
         const newHash = window.location.hash.substring(1);
         if (newHash && data.availableSections[currentLevel].includes(newHash)) {
@@ -196,7 +95,6 @@
         }
       };
       
-      // Fix any internal links in the content
       setTimeout(fixInternalLinks, 100);
     }
   });
@@ -206,23 +104,66 @@
     if (section && data.availableSections[currentLevel].includes(section)) {
       activeSection = section;
       
-      // Update the URL hash to reflect the current section (without page reload)
       if (browser) {
-        // Use the history API to update just the hash without changing the path
         const url = new URL(window.location.href);
         url.hash = section;
-        
-        // Replace state rather than push to avoid creating extra history entries
         history.replaceState(null, '', url.toString());
+
+        setTimeout(() => {
+          const contentElement = document.querySelector('.section-content');
+          if (contentElement) {
+            contentElement.scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'start',
+              inline: 'nearest'
+            });
+          }
+        }, 100);
       }
     }
   }
+
+  // Function to fix internal links after content is loaded
+  function fixInternalLinks() {
+    if (browser) {
+      const links = document.querySelectorAll('.section-content a');
+      
+      links.forEach(link => {
+        const href = link.getAttribute('href');
+        
+        if (href && (
+          href.includes('/frameworks/docs/implementation/ethics/') ||
+          href.startsWith('#')
+        )) {
+          if (href.includes('/frameworks/docs/implementation/ethics/')) {
+            const parts = href.split('/');
+            const linkLevel = parts[parts.length - 2];
+            const linkSection = parts[parts.length - 1];
+            
+            const newHref = `${base}/frameworks/docs/implementation/ethics?level=${linkLevel}#${linkSection}`;
+            link.setAttribute('href', newHref);
+          } else if (href.startsWith('#')) {
+            const targetSection = href.substring(1);
+            
+            if (data.availableSections[currentLevel].includes(targetSection)) {
+              const newHref = `${base}/frameworks/docs/implementation/ethics?level=${currentLevel}#${targetSection}`;
+              link.setAttribute('href', newHref);
+            }
+          }
+        }
+      });
+    }
+  }
+
+  // Call the link fixing function after content updates
+  afterUpdate(() => {
+    setTimeout(fixInternalLinks, 100);
+  });
 
   // Check if we're in print mode
   const isPrintMode = data.isPrintMode;
 
   // If in print mode, we'll show all sections
-  // This is a special state just for PDF generation
   $: sectionsToShow = isPrintMode ? 
     data.availableSections[currentLevel] : 
     [activeSection];
@@ -241,11 +182,11 @@
     invalidate('app:locale');
   }
   
-  // Group the sections by their main category for navigation
-  function groupSections(sections) {
+  // Group the sections by their main category for navigation with level-aware structure
+  function groupSectionsForLevel(sections, level) {
     const groups = {
-      'preamble': [],
-      'introduction': [],
+      'overview': [],
+      'introduction': [], // Combined preamble and introduction into one group
       'foundational-values': [],
       'commitments': [],
       'governance': [],
@@ -254,9 +195,10 @@
     };
     
     sections.forEach(section => {
-      if (section.startsWith('0-') || section === 'index' || section === 'access-guide' || section === 'youth-guide') {
-        groups['preamble'].push(section);
-      } else if (section.startsWith('1-')) {
+      if (section === 'index' || section === 'access-guide') {
+        groups['overview'].push(section);
+      } else if (section.startsWith('0-') || section === 'youth-guide' || section.startsWith('1-')) {
+        // Combine preamble (0-) and introduction (1-) sections into one group
         groups['introduction'].push(section);
       } else if (section.startsWith('2')) {
         groups['foundational-values'].push(section);
@@ -271,131 +213,370 @@
       }
     });
     
-    return groups;
+    // Create subcategories for complex sections
+    const subcategorizedGroups = {};
+    
+    Object.keys(groups).forEach(group => {
+      if (group === 'commitments' && groups[group].length > 0) {
+        subcategorizedGroups[`${group}-traditional`] = groups[group].filter(s => 
+          s.startsWith('3.1') || s === '3-commitments'
+        );
+        subcategorizedGroups[`${group}-emerging`] = groups[group].filter(s => 
+          s.startsWith('3.2') && !s.startsWith('3.3')
+        );
+        subcategorizedGroups[`${group}-conflict`] = groups[group].filter(s => 
+          s.startsWith('3.3')
+        );
+      } else if (group === 'governance' && groups[group].length > 0) {
+        subcategorizedGroups[`${group}-basic`] = groups[group].filter(s => 
+          ['4-governance-mechanisms', '4.1-transparency', '4.2-inclusive-decision-making', '4.3-conflict-resolution'].includes(s)
+        );
+        subcategorizedGroups[`${group}-councils`] = groups[group].filter(s => 
+          s.startsWith('4.4')
+        );
+        subcategorizedGroups[`${group}-operations`] = groups[group].filter(s => 
+          s.startsWith('4.5') || s.startsWith('4.6') || s.startsWith('4.7') || s.startsWith('4.8') || s.startsWith('4.9') || s.startsWith('4.10')
+        );
+      } else if (group === 'implementation' && groups[group].length > 0) {
+        subcategorizedGroups[`${group}-planning`] = groups[group].filter(s => 
+          ['5-implementation', '5.1-quick-wins', '5.1.1-cost-analysis', '5.2-phased-rollout', '5.2.1-space-ethics'].includes(s)
+        );
+        subcategorizedGroups[`${group}-education`] = groups[group].filter(s => 
+          s.startsWith('5.3')
+        );
+        subcategorizedGroups[`${group}-cooperation`] = groups[group].filter(s => 
+          s.startsWith('5.4') || s.startsWith('5.5') || s.startsWith('5.6') || s.startsWith('5.7')
+        );
+        subcategorizedGroups[`${group}-management`] = groups[group].filter(s => 
+          s.startsWith('5.8') || s.startsWith('5.9') || s.startsWith('5.10') || s.startsWith('5.11')
+        );
+      } else {
+        subcategorizedGroups[group] = groups[group];
+      }
+    });
+    
+    return subcategorizedGroups;
   }
   
   $: availableSectionsForLevel = data.availableSections[currentLevel] || [];
-  $: sectionGroups = groupSections(availableSectionsForLevel);
+  $: sectionGroups = groupSectionsForLevel(availableSectionsForLevel, currentLevel);
   
+  // Progress calculation functions
+  function getAllOrderedSections() {
+    const allSections = availableSectionsForLevel;
+    const ordered = [];
+    
+    // Add overview sections first
+    if (allSections.includes('index')) ordered.push('index');
+    if (allSections.includes('access-guide')) ordered.push('access-guide');
+    
+    // Add preamble
+    if (allSections.includes('0-preamble')) ordered.push('0-preamble');
+    if (allSections.includes('youth-guide')) ordered.push('youth-guide');
+    
+    // Add numbered sections in order (1-introduction, 2-foundational-values, etc.)
+    const numberedSections = allSections
+      .filter(s => s.match(/^\d+(-|\.)/))
+      .sort((a, b) => {
+        // Extract the main number (e.g., "3" from "3.2.1-ai-consciousness")
+        const aMainNum = parseInt(a.split(/[-\.]/)[0]);
+        const bMainNum = parseInt(b.split(/[-\.]/)[0]);
+        
+        if (aMainNum !== bMainNum) {
+          return aMainNum - bMainNum;
+        }
+        
+        // If main numbers are same, sort by the full number string
+        const aNumStr = a.match(/^[\d\.]+/)[0];
+        const bNumStr = b.match(/^[\d\.]+/)[0];
+        
+        const aParts = aNumStr.split('.').map(n => parseInt(n) || 0);
+        const bParts = bNumStr.split('.').map(n => parseInt(n) || 0);
+        
+        const maxLength = Math.max(aParts.length, bParts.length);
+        
+        for (let i = 0; i < maxLength; i++) {
+          const aVal = aParts[i] || 0;
+          const bVal = bParts[i] || 0;
+          if (aVal !== bVal) {
+            return aVal - bVal;
+          }
+        }
+        
+        return 0;
+      });
+    
+    ordered.push(...numberedSections);
+    
+    return ordered;
+  }
+
+  function getCurrentSectionIndex() {
+    return orderedSections.indexOf(activeSection);
+  }
+
+  function getTotalSections() {
+    return orderedSections.length;
+  }
+
+  function getProgressPercentage() {
+    const currentIndex = getCurrentSectionIndex();
+    const total = getTotalSections();
+    if (currentIndex === -1 || total === 0) return 0;
+    return Math.round(((currentIndex + 1) / total) * 100);
+  }
+
+  function getCurrentSectionNumber() {
+    const currentIndex = getCurrentSectionIndex();
+    return currentIndex === -1 ? 0 : currentIndex + 1;
+  }
+
+  function getNextSection() {
+    const currentIndex = getCurrentSectionIndex();
+    if (currentIndex >= 0 && currentIndex < orderedSections.length - 1) {
+      return orderedSections[currentIndex + 1];
+    }
+    return null;
+  }
+
+  function getPreviousSection() {
+    const currentIndex = getCurrentSectionIndex();
+    if (currentIndex > 0) {
+      return orderedSections[currentIndex - 1];
+    }
+    return null;
+  }
+
+  // Progress indicators
+  $: orderedSections = getAllOrderedSections();
+  $: currentSectionIndex = orderedSections.indexOf(activeSection);
+  $: totalSections = orderedSections.length;
+  $: progressPercentage = currentSectionIndex >= 0 && totalSections > 0 
+    ? Math.round(((currentSectionIndex + 1) / totalSections) * 100) 
+    : 0;
+  $: currentSectionNumber = currentSectionIndex >= 0 ? currentSectionIndex + 1 : 0;
+  $: nextSection = currentSectionIndex >= 0 && currentSectionIndex < orderedSections.length - 1 
+    ? orderedSections[currentSectionIndex + 1] 
+    : null;
+  $: previousSection = currentSectionIndex > 0 
+    ? orderedSections[currentSectionIndex - 1] 
+    : null;
+  
+  // Check if we should show progress (not for overview sections)
+  $: showProgress = activeSection !== 'index' && activeSection !== 'access-guide' && !isPrintMode;
+  
+  // Swedish translations for section titles
   function getSectionTitle(section) {
-    // This mapping translates section file names to display titles
     const titles = {
-      'index': 'Overview',
-      'access-guide': 'Access Guide',
-      'youth-guide': 'Youth Guide',
-      
-      '0-preamble': 'Preamble',
-      '1-introduction': 'Introduction',
-      '2-foundational-values': 'Foundational Values & Living Principles',
-      '2.3-global-ethical-traditions': 'Global Ethical Traditions',
-      '2.5-rights-of-beings': 'Rights of Beings',
-      '2.6-scientific-foundations': 'Scientific Foundations',
-      
-      '3-commitments': 'Human & Non-Human Rights Commitments',
-      '3.1-traditional-rights': 'Traditional Rights',
-      '3.2-emerging-rights': 'Emerging Rights',
-      '3.2.1-ai-consciousness': 'AI Consciousness Assessment',
-      '3.2.1a-assessment-hub-network': 'Assessment Hub Network',
-      '3.2.1b-scientific-standards': 'Scientific Standards',
-      '3.2.2-ambiguous-entities': 'Ambiguous Entities',
-      '3.2.3-measurement-standards': 'Measurement Standards',
-      '3.2.4-recognition-pathways': 'Recognition Pathways',
-      '3.2.5-non-western-recognition': 'Non-Western Recognition',
-      '3.3-conflict-resolution': 'Conflict Resolution',
-      '3.3.1-moon-wish-test': 'Moon Wish Test',
-      
-      '4-governance-mechanisms': 'Governance Mechanisms',
-      '4.1-transparency': 'Transparency',
-      '4.2-inclusive-decision-making': 'Inclusive Decision-Making',
-      '4.3-conflict-resolution': 'Conflict Resolution',
-      '4.4-guardianship-councils': 'Guardianship Councils',
-      '4.4.1-enforcement-mechanisms': 'Enforcement Mechanisms',
-      '4.4.2-non-compliance-strategy': 'Non-Compliance Strategy',
-      '4.5-funding-model': 'Funding Model',
-      '4.5.1-hub-sustainability': 'Hub Sustainability',
-      '4.5.2-resource-optimization': 'Resource Optimization',
-      '4.6-governance-accountability': 'Governance Accountability',
-      '4.7-entity-conflict-resolution': 'Entity Conflict Resolution',
-      '4.8-interoperability': 'Interoperability',
-      '4.9-decision-making': 'Decision-Making',
-      '4.10-coordination-mechanisms': 'Coordination Mechanisms',
-      
-      '5-implementation': 'Implementation',
-      '5.1-quick-wins': 'Quick Wins',
-      '5.1.1-cost-analysis': 'Cost Analysis',
-      '5.2-phased-rollout': 'Phased Rollout',
-      '5.2.1-space-ethics': 'Space Ethics',
-      '5.3-education-accessibility': 'Education & Accessibility',
-      '5.3.1-resource-constraint': 'Resource Constraint',
-      '5.3.2-cultural-accessibility': 'Cultural Accessibility',
-      '5.3.3-knowledge-integration': 'Knowledge Integration',
-      '5.4-global-cooperation': 'Global Cooperation',
-      '5.5-monitoring': 'Monitoring',
-      '5.6-public-engagement': 'Public Engagement',
-      '5.7-stakeholder-strategy': 'Stakeholder Strategy',
-      '5.7.1-consensus-building': 'Consensus Building',
-      '5.7.2-resistant-stakeholder': 'Resistant Stakeholder',
-      '5.8-resistance-handling': 'Resistance Handling',
-      '5.8.1-opposition-response': 'Opposition Response',
-      '5.8.2-learning-system': 'Learning System',
-      '5.9-benchmarks-metrics': 'Benchmarks & Metrics',
-      '5.10-scenario-planning': 'Scenario Planning',
-      '5.11-accessibility-matrix': 'Accessibility Matrix',
-      
-      '6-appendices': 'Appendices',
-      '6.1-emerging-rights-toolkit': 'Emerging Rights Toolkit',
-      '6.2-case-studies': 'Case Studies',
-      '6.3-ethical-forecasting': 'Ethical Forecasting',
-      '6.3.1-speculative-paradigm': 'Speculative Paradigm',
-      '6.3.2-validation-protocols': 'Validation Protocols',
-      '6.4-reporting-portal': 'Reporting Portal',
-      '6.5-plain-language': 'Plain Language',
-      '6.6-edge-case-protocols': 'Edge Case Protocols',
-      '6.7-philosophy-of-rights': 'Philosophy of Rights',
-      '6.8-spiral-aware-primer': 'Spiral-Aware Primer',
-      '6.9-impact-assessment': 'Impact Assessment',
-      '6.10-pioneer-pilots': 'Pioneer Pilots',
-      '6.11-crisis-ethics': 'Crisis Ethics',
-      '6.12-technical-protocols': 'Technical Protocols'
+      en: {
+        'index': 'Overview',
+        'access-guide': 'Access guide',
+        'youth-guide': 'Youth guide',
+        
+        '0-preamble': 'Preamble',
+        '1-introduction': 'Introduction',
+        '2-foundational-values': 'Foundational values & living principles',
+        '2.3-global-ethical-traditions': 'Global ethical traditions',
+        '2.5-rights-of-beings': 'Rights of beings',
+        '2.6-scientific-foundations': 'Scientific foundations',
+        
+        '3-commitments': 'Human & non-human rights commitments',
+        '3.1-traditional-rights': 'Traditional rights',
+        '3.2-emerging-rights': 'Emerging rights',
+        '3.2.1-ai-consciousness': 'AI consciousness assessment',
+        '3.2.1a-assessment-hub-network': 'Assessment hub network',
+        '3.2.1b-scientific-standards': 'Scientific standards',
+        '3.2.2-ambiguous-entities': 'Ambiguous entities',
+        '3.2.3-measurement-standards': 'Measurement standards',
+        '3.2.4-recognition-pathways': 'Recognition pathways',
+        '3.2.5-non-western-recognition': 'Non-western recognition',
+        '3.3-conflict-resolution': 'Conflict resolution',
+        '3.3.1-moon-wish-test': 'Moon wish test',
+        
+        '4-governance-mechanisms': 'Governance mechanisms',
+        '4.1-transparency': 'Transparency',
+        '4.2-inclusive-decision-making': 'Inclusive decision-making',
+        '4.3-conflict-resolution': 'Conflict resolution',
+        '4.4-guardianship-councils': 'Guardianship councils',
+        '4.4.1-enforcement-mechanisms': 'Enforcement mechanisms',
+        '4.4.2-non-compliance-strategy': 'Non-compliance strategy',
+        '4.5-funding-model': 'Funding model',
+        '4.5.1-hub-sustainability': 'Hub sustainability',
+        '4.5.2-resource-optimization': 'Resource optimization',
+        '4.6-governance-accountability': 'Governance accountability',
+        '4.7-entity-conflict-resolution': 'Entity conflict resolution',
+        '4.8-interoperability': 'Interoperability',
+        '4.9-decision-making': 'Decision-making',
+        '4.10-coordination-mechanisms': 'Coordination mechanisms',
+        
+        '5-implementation': 'Implementation',
+        '5.1-quick-wins': 'Quick wins',
+        '5.1.1-cost-analysis': 'Cost analysis',
+        '5.2-phased-rollout': 'Phased rollout',
+        '5.2.1-space-ethics': 'Space ethics',
+        '5.3-education-accessibility': 'Education & accessibility',
+        '5.3.1-resource-constraint': 'Resource constraint',
+        '5.3.2-cultural-accessibility': 'Cultural accessibility',
+        '5.3.3-knowledge-integration': 'Knowledge integration',
+        '5.4-global-cooperation': 'Global cooperation',
+        '5.5-monitoring': 'Monitoring',
+        '5.6-public-engagement': 'Public engagement',
+        '5.7-stakeholder-strategy': 'Stakeholder strategy',
+        '5.7.1-consensus-building': 'Consensus building',
+        '5.7.2-resistant-stakeholder': 'Resistant stakeholder',
+        '5.8-resistance-handling': 'Resistance handling',
+        '5.8.1-opposition-response': 'Opposition response',
+        '5.8.2-learning-system': 'Learning system',
+        '5.9-benchmarks-metrics': 'Benchmarks & metrics',
+        '5.10-scenario-planning': 'Scenario planning',
+        '5.11-accessibility-matrix': 'Accessibility matrix',
+        
+        '6-appendices': 'Appendices',
+        '6.1-emerging-rights-toolkit': 'Emerging rights toolkit',
+        '6.2-case-studies': 'Case studies',
+        '6.3-ethical-forecasting': 'Ethical forecasting',
+        '6.3.1-speculative-paradigm': 'Speculative paradigm',
+        '6.3.2-validation-protocols': 'Validation protocols',
+        '6.4-reporting-portal': 'Reporting portal',
+        '6.5-plain-language': 'Plain language',
+        '6.6-edge-case-protocols': 'Edge case protocols',
+        '6.7-philosophy-of-rights': 'Philosophy of rights',
+        '6.8-spiral-aware-primer': 'Spiral-aware primer',
+        '6.9-impact-assessment': 'Impact assessment',
+        '6.10-pioneer-pilots': 'Pioneer pilots',
+        '6.11-crisis-ethics': 'Crisis ethics',
+        '6.12-technical-protocols': 'Technical protocols'
+      },
+      sv: {
+        'index': 'Översikt',
+        'access-guide': 'Tillgänglighetsguide',
+        'youth-guide': 'Ungdomsguide',
+        
+        '0-preamble': 'Inledning',
+        '1-introduction': 'Introduktion',
+        '2-foundational-values': 'Grundläggande värden & levande principer',
+        '2.3-global-ethical-traditions': 'Globala etiska traditioner',
+        '2.5-rights-of-beings': 'Rättigheter för varelser',
+        '2.6-scientific-foundations': 'Vetenskapliga grunder',
+        
+        '3-commitments': 'Mänskliga & icke-mänskliga rättighetsåtaganden',
+        '3.1-traditional-rights': 'Traditionella rättigheter',
+        '3.2-emerging-rights': 'Framväxande rättigheter',
+        '3.2.1-ai-consciousness': 'AI-medvetenhetsbedömning',
+        '3.2.1a-assessment-hub-network': 'Bedömningshubbnätverk',
+        '3.2.1b-scientific-standards': 'Vetenskapliga standarder',
+        '3.2.2-ambiguous-entities': 'Tvetydiga entiteter',
+        '3.2.3-measurement-standards': 'Mätstandarder',
+        '3.2.4-recognition-pathways': 'Erkännandevägar',
+        '3.2.5-non-western-recognition': 'Icke-västerländskt erkännande',
+        '3.3-conflict-resolution': 'Konfliktlösning',
+        '3.3.1-moon-wish-test': 'Månönsketest',
+        
+        '4-governance-mechanisms': 'Styrningsmekanismer',
+        '4.1-transparency': 'Transparens',
+        '4.2-inclusive-decision-making': 'Inkluderande beslutsfattande',
+        '4.3-conflict-resolution': 'Konfliktlösning',
+        '4.4-guardianship-councils': 'Förmyndarråd',
+        '4.4.1-enforcement-mechanisms': 'Verkställighetsmekanismer',
+        '4.4.2-non-compliance-strategy': 'Strategi för bristande efterlevnad',
+        '4.5-funding-model': 'Finansieringsmodell',
+        '4.5.1-hub-sustainability': 'Hubbarnas hållbarhet',
+        '4.5.2-resource-optimization': 'Resursoptimering',
+        '4.6-governance-accountability': 'Styrningens ansvarsskyldighet',
+        '4.7-entity-conflict-resolution': 'Konfliktlösning mellan entiteter',
+        '4.8-interoperability': 'Interoperabilitet',
+        '4.9-decision-making': 'Beslutsfattande',
+        '4.10-coordination-mechanisms': 'Koordinationsmekanismer',
+        
+        '5-implementation': 'Genomförande',
+        '5.1-quick-wins': 'Snabba vinster',
+        '5.1.1-cost-analysis': 'Kostnadsanalys',
+        '5.2-phased-rollout': 'Stegvis utrullning',
+        '5.2.1-space-ethics': 'Rymdenetik',
+        '5.3-education-accessibility': 'Utbildning & tillgänglighet',
+        '5.3.1-resource-constraint': 'Resursbegränsning',
+        '5.3.2-cultural-accessibility': 'Kulturell tillgänglighet',
+        '5.3.3-knowledge-integration': 'Kunskapsintegrering',
+        '5.4-global-cooperation': 'Globalt samarbete',
+        '5.5-monitoring': 'Övervakning',
+        '5.6-public-engagement': 'Allmänhetens engagemang',
+        '5.7-stakeholder-strategy': 'Intressentstrategi',
+        '5.7.1-consensus-building': 'Konsensusbyggande',
+        '5.7.2-resistant-stakeholder': 'Motvillig intressent',
+        '5.8-resistance-handling': 'Motståndhantering',
+        '5.8.1-opposition-response': 'Oppositionssvar',
+        '5.8.2-learning-system': 'Inlärningssystem',
+        '5.9-benchmarks-metrics': 'Riktmärken & mätetal',
+        '5.10-scenario-planning': 'Scenarioplanering',
+        '5.11-accessibility-matrix': 'Tillgänglighetsmatris',
+        
+        '6-appendices': 'Bilagor',
+        '6.1-emerging-rights-toolkit': 'Verktygskit för framväxande rättigheter',
+        '6.2-case-studies': 'Fallstudier',
+        '6.3-ethical-forecasting': 'Etisk prognostisering',
+        '6.3.1-speculative-paradigm': 'Spekulativt paradigm',
+        '6.3.2-validation-protocols': 'Valideringsprotokoll',
+        '6.4-reporting-portal': 'Rapporteringsportal',
+        '6.5-plain-language': 'Enkelt språk',
+        '6.6-edge-case-protocols': 'Protokoll för gränsfall',
+        '6.7-philosophy-of-rights': 'Rättigheternas filosofi',
+        '6.8-spiral-aware-primer': 'Spiralmedveten grund',
+        '6.9-impact-assessment': 'Konsekvensanalys',
+        '6.10-pioneer-pilots': 'Pionjärpiloter',
+        '6.11-crisis-ethics': 'Krisetik',
+        '6.12-technical-protocols': 'Tekniska protokoll'
+      }
     };
     
-    return titles[section] || section;
+    return (titles[currentLocale] || titles.en)[section] || section;
   }
   
   function getGroupTitle(group) {
     const titles = {
-      'preamble': 'Introduction & Overview',
-      'introduction': 'Introduction',
-      'foundational-values': 'Foundational Values',
-      'commitments': 'Rights Commitments',
-      'governance': 'Governance Mechanisms',
-      'implementation': 'Implementation',
-      'appendices': 'Appendices'
+      en: {
+        'overview': 'Overview',
+        'introduction': 'Introduction & overview', // Updated to reflect combined content
+        'foundational-values': 'Foundational values',
+        'commitments-traditional': 'Traditional rights',
+        'commitments-emerging': 'Emerging rights',
+        'commitments-conflict': 'Conflict resolution',
+        'governance-basic': 'Basic governance',
+        'governance-councils': 'Guardianship councils',
+        'governance-operations': 'Operations & coordination',
+        'implementation-planning': 'Planning & rollout',
+        'implementation-education': 'Education & accessibility',
+        'implementation-cooperation': 'Cooperation & engagement',
+        'implementation-management': 'Management & metrics',
+        'appendices': 'Appendices'
+      },
+      sv: {
+        'overview': 'Översikt',
+        'introduction': 'Introduktion & översikt', // Updated Swedish translation
+        'foundational-values': 'Grundläggande värden',
+        'commitments-traditional': 'Traditionella rättigheter',
+        'commitments-emerging': 'Framväxande rättigheter',
+        'commitments-conflict': 'Konfliktlösning',
+        'governance-basic': 'Grundläggande styrning',
+        'governance-councils': 'Förmyndarråd',
+        'governance-operations': 'Verksamhet & koordination',
+        'implementation-planning': 'Planering & utrullning',
+        'implementation-education': 'Utbildning & tillgänglighet',
+        'implementation-cooperation': 'Samarbete & engagemang',
+        'implementation-management': 'Förvaltning & mätetal',
+        'appendices': 'Bilagor'
+      }
     };
     
-    return titles[group] || group;
-  }
-  
-  // Get the first available section in a group
-  function getFirstSectionInGroup(group) {
-    if (sectionGroups[group] && sectionGroups[group].length > 0) {
-      return sectionGroups[group][0];
-    }
-    return null;
-  }
-  
-  // Check if a section exists at the current accessibility level
-  function isSectionAvailable(section) {
-    return data.availableSections[currentLevel].includes(section);
+    return (titles[currentLocale] || titles.en)[group] || group;
   }
   
   // Get the appropriate accessibility level icon
   function getLevelIcon(level) {
     const icons = {
-      'visual': '🌱', // Seedling for visual overview
-      'essential': '🌿', // Leaf for essential concepts
-      'standard': '🌲', // Pine tree for standard framework
-      'technical': '🌳'  // Deciduous tree for technical details
+      'visual': '🌱',
+      'essential': '🌿',
+      'standard': '🌲',
+      'technical': '🌳'
     };
     
     return icons[level] || '';
@@ -404,20 +585,143 @@
   // Get the accessibility level description
   function getLevelDescription(level) {
     const descriptions = {
-      'visual': 'Visual Overview - Quick visual summaries of key concepts',
-      'essential': 'Essential Concepts - Simple explanations in everyday language',
-      'standard': 'Standard Framework - Complete framework text',
-      'technical': 'Technical Details - In-depth exploration for specialists'
+      en: {
+        'visual': 'Visual overview - Quick visual summaries of key concepts',
+        'essential': 'Essential concepts - Simple explanations in everyday language',
+        'standard': 'Standard framework - Complete framework text',
+        'technical': 'Technical details - In-depth exploration for specialists'
+      },
+      sv: {
+        'visual': 'Visuell översikt - Snabba visuella sammanfattningar av nyckelbegrepp',
+        'essential': 'Grundläggande begrepp - Enkla förklaringar på vardagsspråk',
+        'standard': 'Standardramverk - Komplett ramverkstext',
+        'technical': 'Tekniska detaljer - Djupgående utforskning för specialister'
+      }
     };
     
-    return descriptions[level] || '';
+    return (descriptions[currentLocale] || descriptions.en)[level] || '';
+  }
+
+  // Get localized UI text
+  function getLocalizedText(key) {
+    const texts = {
+      en: {
+        'chooseLevel': 'Choose your level of detail:',
+        'frameworkAccessGuide': 'Framework access guide',
+        'accessGuideDescription': 'This guide helps you navigate the framework at your preferred level of detail. Each section is available in multiple formats.',
+        'viewCompleteGuide': 'View complete access guide',
+        'sectionUnavailable': 'Section unavailable',
+        'notAvailableAtLevel': 'This section is not available at the {level} level.',
+        'viewAtAnotherLevel': 'View this section at another level:',
+        'progressOf': 'Section {current} of {total}',
+        'progressPercentage': '{percentage}% complete',
+        'previousSection': 'Previous section',
+        'nextSection': 'Next section'
+      },
+      sv: {
+        'chooseLevel': 'Välj din detaljnivå:',
+        'frameworkAccessGuide': 'Ramverkets tillgänglighetsguide',
+        'accessGuideDescription': 'Den här guiden hjälper dig att navigera i ramverket på din föredragna detaljnivå. Varje avsnitt finns tillgängligt i flera format.',
+        'viewCompleteGuide': 'Visa komplett tillgänglighetsguide',
+        'sectionUnavailable': 'Avsnitt ej tillgängligt',
+        'notAvailableAtLevel': 'Detta avsnitt är inte tillgängligt på {level}-nivån.',
+        'viewAtAnotherLevel': 'Visa detta avsnitt på en annan nivå:',
+        'progressOf': 'Avsnitt {current} av {total}',
+        'progressPercentage': '{percentage}% färdigt',
+        'previousSection': 'Föregående avsnitt',
+        'nextSection': 'Nästa avsnitt'
+      }
+    };
+    
+    return (texts[currentLocale] || texts.en)[key] || key;
   }
 
   // Check if we should show the access guide
   $: showAccessGuide = data.accessGuide && !isPrintMode;
-</script>
 
-<div class="documentation-container">
+  // For handling accordion states
+  let accordionStates = {
+    'overview': true,
+    'introduction': false,
+    'foundational-values': false,
+    'commitments-traditional': false,
+    'commitments-emerging': false,
+    'commitments-conflict': false,
+    'governance-basic': false,
+    'governance-councils': false,
+    'governance-operations': false,
+    'implementation-planning': false,
+    'implementation-education': false,
+    'implementation-cooperation': false,
+    'implementation-management': false,
+    'appendices': false
+  };
+
+  function toggleAccordion(group) {
+    accordionStates[group] = !accordionStates[group];
+  }
+
+  // Check if group has active sections
+  function hasActiveSection(group) {
+    return sectionGroups[group] && sectionGroups[group].includes(activeSection);
+  }
+
+  // Get icon for each group
+  function getGroupIcon(group) {
+    const icons = {
+      'overview': '🏠',
+      'preamble': '📖',
+      'introduction': '🌟',
+      'foundational-values': '⚖️',
+      'commitments-traditional': '📜',
+      'commitments-emerging': '🔮',
+      'commitments-conflict': '🤝',
+      'governance-basic': '🏛️',
+      'governance-councils': '👥',
+      'governance-operations': '⚙️',
+      'implementation-planning': '📋',
+      'implementation-education': '🎓',
+      'implementation-cooperation': '🌍',
+      'implementation-management': '📊',
+      'appendices': '📄'
+    };
+    
+    return icons[group] || '📑';
+  }
+
+  // Auto-open accordion if it contains the active section
+  $: {
+    Object.keys(sectionGroups).forEach(group => {
+      if (hasActiveSection(group)) {
+        accordionStates[group] = true;
+      }
+    });
+  }
+
+  // Close dropdowns when clicking outside
+  function handleClickOutside(event) {
+    if (browser) {
+      const dropdown = document.querySelector('.level-selector .dropdown');
+      
+      if (dropdown && !dropdown.contains(event.target)) {
+        // Handle dropdown close if needed
+      }
+    }
+  }
+
+  onMount(() => {
+    if (browser) {
+      document.addEventListener('click', handleClickOutside);
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }
+  });
+ </script>
+
+ <svelte:window on:click={handleClickOutside}/>
+
+ <div class="documentation-container">
   {#if !isPrintMode}
     <FrameworkSidebar />
   {/if}
@@ -426,17 +730,18 @@
     {#if !isPrintMode}
       <!-- Accessibility Level Selector -->
       <div class="level-selector">
-        <h3>Choose Your Level of Detail:</h3>
+        <h3>{getLocalizedText('chooseLevel')}</h3>
         <div class="level-buttons">
           {#each accessibilityLevels as level}
-            <!-- Construct a link that preserves the current section if available -->
             <a 
               href={constructLevelChangeUrl(level)}
               class="level-btn" 
               class:active={currentLevel === level}
             >
               <span class="level-icon">{getLevelIcon(level)}</span>
-              <span class="level-name">{level.charAt(0).toUpperCase() + level.slice(1)}</span>
+              <div class="level-content">
+                <span class="level-name">{level.charAt(0).toUpperCase() + level.slice(1)}</span>
+              </div>
             </a>
           {/each}
         </div>
@@ -446,63 +751,21 @@
       </div>
 
       <!-- Show Access Guide if available -->
-      {#if showAccessGuide}
+      {#if showAccessGuide && activeSection === 'index'}
         <div class="access-guide-banner">
           <div class="banner-content">
-            <h3>Framework Access Guide</h3>
-            <p>This guide helps you navigate the framework at your preferred level of detail. Each section is available in multiple formats.</p>
-            <button class="secondary-btn" on:click={() => setActiveSection('access-guide')}>
-              View Complete Access Guide
-            </button>
-          </div>
-        </div>
-      {/if}
-    {/if}
-
-    {#if !isPrintMode}
-      <!-- Guides Selector - Only show if guides are available -->
-      {#if hasGuides}
-        <div class="guides-selector">
-          <h3>Specialized Framework Guides</h3>
-          <div class="dropdown">
-            <button class="guides-dropdown-btn">
-              <span>🧭 {selectedGuide ? guides[selectedGuide].title : 'Select a Guide'}</span>
-              <span class="arrow-icon">▾</span>
-            </button>
-            <div class="guides-dropdown-menu">
-              {#each availableGuides as guide}
-                <button 
-                  class="guide-link" 
-                  on:click={() => selectGuide(guide)}
-                  class:active={selectedGuide === guide}
-                >
-                  <span class="guide-icon">{guides[guide].emoji}</span> 
-                  {guides[guide].title}
-                </button>
-              {/each}
+            <div class="banner-icon">🧭</div>
+            <div class="banner-text">
+              <h3>{getLocalizedText('frameworkAccessGuide')}</h3>
+              <p>{getLocalizedText('accessGuideDescription')}</p>
             </div>
-          </div>
-          <div class="guides-description">
-            {selectedGuide 
-              ? guides[selectedGuide].description 
-              : 'Specialized versions of the framework tailored for different audiences and contexts'}
-          </div>
-        </div>
-
-        <!-- Guide Content Display Area -->
-        {#if selectedGuide && selectedGuideContent}
-          <div class="guide-content">
-            <div class="guide-header">
-              <h2>{guides[selectedGuide].emoji} {guides[selectedGuide].title}</h2>
-              <button class="close-guide-btn" on:click={() => selectGuide(null)}>
-                ✕
+            <div class="banner-actions">
+              <button class="guide-btn" on:click={() => setActiveSection('access-guide')}>
+                {getLocalizedText('viewCompleteGuide')}
               </button>
             </div>
-            <div class="guide-body">
-              <svelte:component this={selectedGuideContent.default} />
-            </div>
           </div>
-        {/if}
+        </div>
       {/if}
     {/if}
 
@@ -510,46 +773,78 @@
       <!-- Main navigation for framework sections -->
       {#if !isPrintMode}
         <div class="section-nav">
-          <ul>
-            {#each Object.keys(sectionGroups) as group}
-              {#if sectionGroups[group].length > 0}
-                {#if sectionGroups[group].length === 1}
-                  <!-- For groups with only one section, display as a regular button -->
-                  <li class:active={activeSection === sectionGroups[group][0]}>
-                    <button 
-                      on:click={() => setActiveSection(sectionGroups[group][0])}
-                    >
-                      {getGroupTitle(group)}
-                    </button>
-                  </li>
-                {:else}
-                  <!-- For groups with multiple sections, keep as dropdown -->
-                  <li class="dropdown-li" class:active={sectionGroups[group].includes(activeSection)}>
-                    <button 
-                      class="dropdown-toggle"
-                      on:click={() => {
-                        const firstSection = getFirstSectionInGroup(group);
-                        if (firstSection) setActiveSection(firstSection);
-                      }}
-                    >
-                      {getGroupTitle(group)} <span class="arrow-icon">▾</span>
-                    </button>
-                    <div class="dropdown-menu">
-                      {#each sectionGroups[group] as section}
-                        <button 
-                          class="dropdown-item" 
-                          class:active={activeSection === section}
-                          on:click={() => setActiveSection(section)}
-                        >
-                          {getSectionTitle(section)}
-                        </button>
-                      {/each}
-                    </div>
-                  </li>
+          {#each Object.keys(sectionGroups) as group}
+            {#if sectionGroups[group].length > 0}
+              <div class="nav-accordion">
+                <button 
+                  class="accordion-header" 
+                  class:open={accordionStates[group]}
+                  class:has-active={hasActiveSection(group)}
+                  on:click={() => toggleAccordion(group)}
+                >
+                  <span class="accordion-icon">{getGroupIcon(group)}</span>
+                  <span class="accordion-title">{getGroupTitle(group)}</span>
+                  <span class="section-count">({sectionGroups[group].length})</span>
+                  <span class="toggle-arrow" class:rotated={accordionStates[group]}>▼</span>
+                </button>
+                {#if accordionStates[group]}
+                  <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                    {#each sectionGroups[group] as section}
+                      <button 
+                        class="nav-item" 
+                        class:active={activeSection === section}
+                        on:click={() => setActiveSection(section)}
+                      >
+                        <span class="nav-icon">
+                          {#if section.match(/^\d/)}
+                            <span class="nav-number">{section.substring(0, section.indexOf('-'))}</span>
+                          {:else}
+                            📑
+                          {/if}
+                        </span>
+                        <span class="nav-title">{getSectionTitle(section)}</span>
+                        {#if !data.availableSections[currentLevel].includes(section)}
+                          <span class="unavailable-indicator">⚠️</span>
+                        {/if}
+                      </button>
+                    {/each}
+                  </div>
                 {/if}
-              {/if}
-            {/each}
-          </ul>
+              </div>
+            {/if}
+          {/each}
+        </div>
+      {/if}
+
+      <!-- Progress Indicator -->
+      {#if showProgress}
+        <div class="progress-indicator">
+          <div class="progress-content">
+            <div class="progress-info">
+              <div class="progress-text">
+                <span class="progress-section">{getLocalizedText('progressOf').replace('{current}', currentSectionNumber).replace('{total}', totalSections)}</span>
+                <span class="progress-percentage">{getLocalizedText('progressPercentage').replace('{percentage}', progressPercentage)}</span>
+              </div>
+              <div class="progress-navigation">
+                {#if previousSection}
+                  <button class="progress-nav-btn prev" on:click={() => setActiveSection(previousSection)}>
+                    ← {getLocalizedText('previousSection')}
+                  </button>
+                {/if}
+                {#if nextSection}
+                  <button class="progress-nav-btn next" on:click={() => setActiveSection(nextSection)}>
+                    {getLocalizedText('nextSection')} →
+                  </button>
+                {/if}
+              </div>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: {progressPercentage}%"></div>
+                <div class="progress-marker" style="left: {progressPercentage}%"></div>
+              </div>
+            </div>
+          </div>
         </div>
       {/if}
 
@@ -579,22 +874,49 @@
             </div>
             
             <svelte:component this={data.sections[section][currentLevel].default} />
+
+            <!-- Section navigation at bottom -->
+            {#if showProgress && !isPrintMode}
+              <div class="section-footer-navigation">
+                {#if previousSection}
+                  <button class="footer-nav-btn prev" on:click={() => setActiveSection(previousSection)}>
+                    <span class="nav-arrow">←</span>
+                    <div class="nav-text">
+                      <span class="nav-label">{getLocalizedText('previousSection')}</span>
+                      <span class="nav-title">{getSectionTitle(previousSection)}</span>
+                    </div>
+                  </button>
+                {/if}
+                
+                {#if nextSection}
+                  <button class="footer-nav-btn next" on:click={() => setActiveSection(nextSection)}>
+                    <div class="nav-text">
+                      <span class="nav-label">{getLocalizedText('nextSection')}</span>
+                      <span class="nav-title">{getSectionTitle(nextSection)}</span>
+                    </div>
+                    <span class="nav-arrow">→</span>
+                  </button>
+                {/if}
+              </div>
+            {/if}
           </div>
         {:else if sectionsToShow.length === 1}
           <div class="section-unavailable">
-            <p>This section is not available at the {currentLevel} level.</p>
+            <h3>{getLocalizedText('sectionUnavailable')}</h3>
+            <p>{getLocalizedText('notAvailableAtLevel').replace('{level}', currentLevel)}</p>
             <div class="alternative-levels">
-              <p>View this section at another level:</p>
+              <p>{getLocalizedText('viewAtAnotherLevel')}</p>
               <div class="level-buttons small">
                 {#each accessibilityLevels as level}
                   {#if data.availableSections[level].includes(section)}
-                    <!-- Make this a link instead of a button for better navigation -->
                     <a 
                       href={`${base}/frameworks/docs/implementation/ethics?level=${level}#${section}`}
                       class="level-btn small"
                     >
                       <span class="level-icon">{getLevelIcon(level)}</span>
-                      <span class="level-name">{level}</span>
+                      <div class="level-content">
+                        <span class="level-name">{level}</span>
+                      </div>
                     </a>
                   {/if}
                 {/each}
@@ -610,10 +932,19 @@
       </div>
     {/if}
   </div>
-</div>
+ </div>
 
-<style>
-  /* Updated styles with ethics-themed colors (green-based palette) */
+ <style>
+  /* Ethics framework color scheme (green-based palette) */
+  :root {
+    --ethics-primary: #166534; /* Dark green for ethics framework */
+    --ethics-secondary: #6b7280; /* Gray */
+    --ethics-accent: #16a34a; /* Medium green */
+    --ethics-light: #f0fdf4; /* Light green */
+    --ethics-medium: #dcfce7; /* Medium light green */
+    --ethics-hover: #059669; /* Darker green for hover states */
+  }
+
   .documentation-container {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -635,70 +966,212 @@
   
   /* Accessibility Level Selector */
   .level-selector {
-    background-color: #f0fdf4; /* Light green background */
-    border: 1px solid #22c55e; /* Green border */
-    border-radius: 0.5rem;
-    padding: 1.25rem;
+    background: linear-gradient(135deg, var(--ethics-light) 0%, var(--ethics-medium) 100%);
+    border: 1px solid var(--ethics-accent);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 4px rgba(34, 197, 94, 0.1);
+    box-shadow: 0 4px 6px rgba(22, 101, 52, 0.1);
   }
   
   .level-selector h3 {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #166534; /* Dark green text */
+    color: var(--ethics-primary);
   }
   
   .level-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.25rem;
   }
   
   .level-btn {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid #d1fae5;
-    border-radius: 0.375rem;
-    background-color: white;
-    color: #166534;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    background: white;
+    color: var(--ethics-primary);
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .level-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(22, 101, 52, 0.1), transparent);
+    transition: left 0.5s ease;
   }
   
   .level-btn:hover {
-    background-color: #d1fae5;
-    border-color: #16a34a;
+    background: var(--ethics-light);
+    border-color: var(--ethics-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(22, 101, 52, 0.15);
+  }
+
+  .level-btn:hover::before {
+    left: 100%;
   }
   
   .level-btn.active {
-    background-color: #16a34a;
+    background: var(--ethics-accent);
     color: white;
-    border-color: #16a34a;
+    border-color: var(--ethics-accent);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(22, 101, 52, 0.25);
+  }
+
+  .level-btn.active::before {
+    display: none;
   }
   
   .level-icon {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .level-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .level-name {
+    font-size: 1rem;
+    font-weight: 600;
   }
   
   .level-description {
-    font-size: 0.875rem;
-    color: #1f2937;
+    font-size: 0.9rem;
+    color: var(--ethics-primary);
     line-height: 1.5;
-    padding: 0.5rem;
-    background-color: #ecfdf5;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5rem;
+    border: 1px solid rgba(22, 101, 52, 0.2);
+  }
+
+  /* Progress Indicator */
+  .progress-indicator {
+    background: linear-gradient(135deg, var(--ethics-light) 0%, var(--ethics-medium) 100%);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--ethics-accent);
+    box-shadow: 0 2px 8px rgba(22, 101, 52, 0.1);
+  }
+
+  .progress-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .progress-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .progress-section {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--ethics-primary);
+  }
+
+  .progress-percentage {
+    font-size: 0.9rem;
+    color: var(--ethics-hover);
+    font-weight: 500;
+  }
+
+  .progress-navigation {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .progress-nav-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--ethics-accent);
     border-radius: 0.375rem;
+    background: white;
+    color: var(--ethics-primary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .progress-nav-btn:hover {
+    background: var(--ethics-accent);
+    color: white;
+    transform: translateY(-1px);
+  }
+
+  .progress-bar-container {
+    width: 100%;
+  }
+
+  .progress-bar {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    overflow: visible;
+    border: 1px solid rgba(22, 101, 52, 0.2);
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--ethics-accent), var(--ethics-hover));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    position: relative;
+  }
+
+  .progress-marker {
+    position: absolute;
+    top: -2px;
+    width: 12px;
+    height: 12px;
+    background: var(--ethics-primary);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: left 0.3s ease;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   /* Access Guide Banner */
   .access-guide-banner {
-    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    background: linear-gradient(135deg, var(--ethics-medium) 0%, #bbf7d0 100%);
     border-radius: 0.75rem;
     margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(34, 197, 94, 0.1);
@@ -706,198 +1179,211 @@
   }
   
   .banner-content {
+    display: flex;
+    align-items: center;
     padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .banner-icon {
+    font-size: 2.5rem;
+    color: var(--ethics-primary);
+    flex-shrink: 0;
+  }
+
+  .banner-text {
+    flex: 1;
   }
   
   .banner-content h3 {
     margin: 0 0 0.5rem 0;
-    color: #166534;
+    color: var(--ethics-primary);
     font-size: 1.25rem;
   }
   
   .banner-content p {
-    margin: 0 0 1rem 0;
+    margin: 0;
     color: #374151;
+  }
+
+  .banner-actions {
+    flex-shrink: 0;
+  }
+
+  .guide-btn {
+    background: var(--ethics-accent);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .guide-btn:hover {
+    background: var(--ethics-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
   
   /* Section Navigation */
   .section-nav {
     margin-bottom: 2rem;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 0.5rem;
-  }
-  
-  .section-nav li {
-    position: relative;
-  }
-  
-  .section-nav button {
-    padding: 0.75rem 1rem;
-    background: none;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
     border: 1px solid #e5e7eb;
-    border-radius: 0.375rem;
-    cursor: pointer;
-    color: #374151;
-    transition: all 0.2s;
-    white-space: nowrap;
-    font-size: 0.9375rem;
   }
 
-  .section-nav .dropdown-li button.dropdown-toggle {
-    /* Base styling */
-    padding: 0.75rem 1rem;
-    background: none;
+  .nav-accordion {
+    margin-bottom: 0.75rem;
     border: 1px solid #e5e7eb;
-    border-radius: 0.375rem;
-    cursor: pointer;
-    color: #374151;
-    transition: all 0.2s;
-    white-space: nowrap;
-    font-size: 0.9375rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
 
-  .section-nav .dropdown-li.active button.dropdown-toggle {
-    /* Only subtle styling for dropdown buttons, even when active */
-    color: #166534;
-    border-color: #16a34a;
-    background-color: #f0fdf4;
-    font-weight: 500;
-  }
-
-  .section-nav button:not(.dropdown-toggle) {
-    padding: 0.75rem 1rem;
-    background: none;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.375rem;
-    cursor: pointer;
-    color: #374151;
-    transition: all 0.2s;
-    white-space: nowrap;
-    font-size: 0.9375rem;
-  }
-  
-  .section-nav li.active > button:not(.dropdown-toggle) {
-    background-color: #16a34a;
-    color: white;
-    border-color: #16a34a;
-  }
-
-  .section-nav .dropdown-li.active > button.dropdown-toggle {
-    color: #166534;
-    border-color: #16a34a;
-    background-color: #f0fdf4;
-    font-weight: 500;
-  }
-
-  .section-nav .dropdown-item.active {
-    background-color: #16a34a;
-    color: white;
-    font-weight: 500;
-  }
-  
-  .section-nav button:hover {
-    background-color: #f0fdf4;
-    color: #166534;
-    border-color: #16a34a;
-  }
-
-  .section-nav button:hover {
-    background-color: #f0fdf4;
-    color: #166534;
-    border-color: #16a34a;
-  }
-  
-  /* Dropdown Styles */
-  .dropdown-li {
-    position: relative;
-  }
-  
-  .dropdown-toggle {
+  .accordion-header {
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    width: 100%;
-  }
-  
-  .arrow-icon {
-    font-size: 0.75rem;
-    margin-left: 0.25rem;
-  }
-  
-  .dropdown-menu {
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 0;
-    z-index: 1000;
-    display: none;
-    min-width: 250px;
-    max-width: 350px;
-    padding: 0.5rem 0;
-    margin: 0;
-    background-color: white;
-    border: 1px solid rgba(34, 197, 94, 0.3);
-    border-radius: 0.375rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-height: calc(100vh - 200px);
-    overflow-y: auto;
-  }
-
-  .dropdown-li::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background-color: transparent;
-    z-index: 999;
-  }
-  
-  .dropdown-li:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 0.625rem 1.25rem;
-    text-align: left;
-    border: none;
+    gap: 0.75rem;
+    padding: 0.875rem 1.25rem;
     background: none;
-    color: #1f2937;
-    font-size: 0.9375rem;
+    border: none;
     cursor: pointer;
     transition: all 0.2s;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #f0fdf4;
-    color: #16a34a;
-  }
-  
-  .dropdown-item.active {
-    background-color: #16a34a;
-    color: white;
+    font-size: 0.95rem;
     font-weight: 500;
+    color: #374151;
+    text-align: left;
   }
 
-  .dropdown-item:hover:not(.active) {
-    background-color: #f0fdf4;
-    color: #16a34a;
+  .accordion-header:hover {
+    background-color: rgba(22, 101, 52, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(22, 101, 52, 0.1);
+    color: var(--ethics-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(22, 101, 52, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+    background: #f3f4f6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(22, 101, 52, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
+    background-color: var(--ethics-primary);
+    color: white;
+    font-weight: 600;
+  }
+
+  .nav-item.active:hover {
+    background-color: var(--ethics-accent);
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(22, 101, 52, 0.1);
+    color: var(--ethics-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .unavailable-indicator {
+    font-size: 0.8rem;
+    opacity: 0.6;
   }
   
   /* Section Content */
   .section-content {
     padding-top: 1rem;
     margin-bottom: 3rem;
+    scroll-margin-top: 2rem;
   }
   
   .section-header {
@@ -913,13 +1399,13 @@
   .section-header h2 {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #166534;
+    color: var(--ethics-primary);
     margin: 0;
   }
   
   .layer-navigation {
     display: flex;
-    gap: 0.75rem;
+    gap: 0.5rem;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -927,29 +1413,109 @@
   .layer-link {
     padding: 0.375rem 0.75rem;
     border-radius: 0.375rem;
-    font-size: 0.875rem;
-    color: #166534;
+    font-size: 0.8rem;
+    color: var(--ethics-primary);
     text-decoration: none;
-    background-color: #f0fdf4;
+    background-color: var(--ethics-light);
     transition: all 0.2s;
+    border: 1px solid transparent;
   }
   
   .layer-link:hover {
-    background-color: #dcfce7;
+    background-color: var(--ethics-medium);
+    border-color: var(--ethics-accent);
   }
   
   .layer-link.active {
-    background-color: #16a34a;
+    background-color: var(--ethics-accent);
     color: white;
+    border-color: var(--ethics-accent);
+  }
+
+  /* Section Footer Navigation */
+  .section-footer-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    gap: 1rem;
+  }
+
+  .footer-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--ethics-accent);
+    border-radius: 0.5rem;
+    background: white;
+    color: var(--ethics-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    max-width: 300px;
+    flex: 1;
+  }
+
+  .footer-nav-btn.prev {
+    justify-content: flex-start;
+  }
+
+  .footer-nav-btn.next {
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .footer-nav-btn:hover {
+    background: var(--ethics-accent);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(22, 101, 52, 0.2);
+  }
+
+  .nav-arrow {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .nav-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer-nav-btn.next .nav-text {
+    text-align: right;
+  }
+
+  .nav-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
   }
   
   /* Section Unavailable Message */
   .section-unavailable {
     padding: 2rem;
     background-color: #f9fafb;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     text-align: center;
     margin: 2rem 0;
+    border: 1px solid #e5e7eb;
+  }
+
+  .section-unavailable h3 {
+    color: var(--ethics-primary);
+    margin-bottom: 1rem;
   }
   
   .section-unavailable p {
@@ -964,45 +1530,23 @@
   }
   
   .level-buttons.small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
     justify-content: center;
   }
   
   .level-btn.small {
     font-size: 0.875rem;
-    padding: 0.375rem 0.75rem;
+    padding: 0.5rem 0.75rem;
   }
-  
-  /* Buttons */
-  .primary-btn {
-    background-color: #16a34a;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.375rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
+
+  .level-btn.small .level-content {
+    align-items: center;
   }
-  
-  .primary-btn:hover {
-    background-color: #15803d;
-    transform: translateY(-1px);
-  }
-  
-  .secondary-btn {
-    background-color: white;
-    color: #16a34a;
-    border: 1px solid #16a34a;
-    padding: 0.5rem 1rem;
-    border-radius: 0.375rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  
-  .secondary-btn:hover {
-    background-color: #f0fdf4;
-    transform: translateY(-1px);
+
+  .level-btn.small .level-name {
+    font-size: 0.875rem;
   }
   
   /* Markdown Content Styling */
@@ -1010,7 +1554,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #166534; /* Dark green for ethics framework */
+    color: var(--ethics-primary);
   }
   
   .content :global(h2) {
@@ -1018,7 +1562,7 @@
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #166534; /* Dark green for ethics framework */
+    color: var(--ethics-primary);
   }
   
   .content :global(h3) {
@@ -1026,7 +1570,7 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #166534; /* Dark green for ethics framework */
+    color: var(--ethics-primary);
   }
   
   .content :global(h4) {
@@ -1034,7 +1578,7 @@
     font-weight: 600;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: #166534; /* Dark green for ethics framework */
+    color: var(--ethics-primary);
   }
   
   .content :global(p) {
@@ -1052,24 +1596,26 @@
   .content :global(li) {
     margin-bottom: 0.5rem;
   }
-  
+
   .content :global(blockquote) {
-    background-color: #f0fdf4; /* Light green background */
-    border-left: 4px solid #16a34a; /* Green for ethics framework */
+    background-color: var(--ethics-light);
+    border-left: 4px solid var(--ethics-accent);
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
     border-radius: 0.5rem;
   }
   
   .content :global(a) {
-    color: #16a34a; /* Green for ethics framework */
-    text-decoration: underline;
+    color: var(--ethics-accent);
+    text-decoration: none;
     font-weight: 500;
     transition: all 0.2s;
+    border-bottom: 1px solid transparent;
   }
   
   .content :global(a:hover) {
-    color: #15803d; /* Darker green on hover */
+    color: var(--ethics-hover);
+    border-bottom-color: var(--ethics-hover);
   }
   
   /* Table styles */
@@ -1079,12 +1625,19 @@
     margin: 1.5rem 0;
     font-size: 0.95rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 0.375rem;
+    border-radius: 0.5rem;
     overflow: hidden;
   }
   
   .content :global(thead) {
-    background: linear-gradient(to right, #166534, #22c55e);
+    background: linear-gradient(to right, var(--ethics-primary), var(--ethics-accent));
+  }
+
+  .content :global(th) {
+    padding: 0.75rem 1rem;
+    color: white;
+    font-weight: 600;
+    text-align: left;
   }
   
   .content :global(td) {
@@ -1104,64 +1657,12 @@
   }
   
   .content :global(tr:hover) {
-    background-color: #f0fdf4; /* Light green background on hover */
-  }
-  
-  /* Figure and image styles */
-  .content :global(figure) {
-    margin: 2rem 0;
-    text-align: center;
-  }
-  
-  .content :global(figcaption) {
-    font-size: 0.875rem;
-    color: #4b5563;
-    margin-top: 0.5rem;
-    font-style: italic;
-  }
-  
-  .content :global(img) {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.375rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Code blocks */
-  .content :global(pre) {
-    background-color: #f8fafc;
-    border-radius: 0.375rem;
-    padding: 1rem;
-    overflow-x: auto;
-    margin: 1.5rem 0;
-    border: 1px solid #e5e7eb;
-  }
-  
-  .content :global(code) {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    font-size: 0.875rem;
-    color: #16a34a;
-  }
-  
-  /* Inline code */
-  .content :global(:not(pre) > code) {
-    background-color: #f0fdf4;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.25rem;
-    font-size: 0.875em;
-  }
-  
-  /* Horizontal rule */
-  .content :global(hr) {
-    border: 0;
-    height: 1px;
-    background-color: #e5e7eb;
-    margin: 2rem 0;
+    background-color: var(--ethics-light);
   }
   
   /* Custom bullet points for unordered lists */
   .content :global(ul) {
-    list-style-type: none; /* Remove default bullets */
+    list-style-type: none;
   }
   
   .content :global(ul li) {
@@ -1170,200 +1671,16 @@
   }
   
   .content :global(ul li::before) {
-    content: "✧"; /* Star symbol for ethics framework */
+    content: "✧";
     position: absolute;
     left: 0;
-    color: #16a34a; /* Green color */
+    color: var(--ethics-accent);
     font-size: 0.9rem;
   }
   
   .content :global(ul ul li::before) {
-    content: "⋄"; /* Diamond for nested items */
-    color: #22c55e; /* Lighter green */
-  }
-  
-  /* Citation styles for ethics framework */
-  .content :global(cite) {
-    font-style: italic;
-    color: #4b5563;
-  }
-
-  /* Add styling for level-changing links */
-  .content :global(a[href*="level="]:not([href*="level=standard"])) {
-    /* Add a small indicator for links that change levels */
-    position: relative;
-  }
-  
-  .content :global(a[href*="level="]:not([href*="level=standard"])::after) {
-    content: attr(data-level);
-    position: absolute;
-    top: -0.75em;
-    right: -0.5em;
-    font-size: 0.6em;
-    background-color: #dcfce7;
-    color: #166534;
-    padding: 0.1em 0.4em;
-    border-radius: 3px;
-    opacity: 0.8;
-  }
-
-  /* Guides Selector */
-  .guides-selector {
-    background-color: #f0fdf4;
-    border: 1px solid #22c55e;
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 4px rgba(34, 197, 94, 0.1);
-  }
-
-  .guides-selector h3 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #166534;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 1rem;
-  }
-
-  /* Add a pseudo-element to create a "bridge" between the button and dropdown */
-  .dropdown::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 10px; /* Bridge height - adjust as needed */
-    background-color: transparent;
-    z-index: 900;
-  }
-
-  .guides-dropdown-btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 250px;
-    padding: 0.75rem 1.25rem;
-    background-color: white;
-    border: 1px solid #16a34a;
-    border-radius: 0.375rem;
-    color: #166534;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-
-  .guides-dropdown-btn:hover {
-    background-color: #d1fae5;
-  }
-
-  .guides-dropdown-menu {
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    z-index: 1000;
-    display: none;
-    min-width: 250px;
-    padding: 0.5rem 0;
-    background-color: white;
-    border: 1px solid rgba(34, 197, 94, 0.3);
-    border-radius: 0.375rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .dropdown:hover .guides-dropdown-menu {
-    display: block;
-  }
-
-  .guide-link {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1.25rem;
-    width: 100%;
-    text-align: left;
-    border: none;
-    background: none;
-    color: #1f2937;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-
-  .guide-link:hover {
-    background-color: #f0fdf4;
-    color: #16a34a;
-  }
-
-  .guide-link.active {
-    background-color: #16a34a;
-    color: white;
-  }
-
-  .guide-icon {
-    font-size: 1.25rem;
-  }
-
-  .guides-description {
-    font-size: 0.875rem;
-    color: #1f2937;
-    line-height: 1.5;
-    padding: 0.5rem;
-    background-color: #ecfdf5;
-    border-radius: 0.375rem;
-  }
-
-  /* Guide Content Styles */
-  .guide-content {
-    margin-bottom: 3rem;
-    padding: 1.5rem;
-    background-color: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  }
-
-  .guide-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #e5e7eb;
-  }
-
-  .guide-header h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #166534;
-    margin: 0;
-  }
-
-  .close-guide-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    border: none;
-    background-color: #f0fdf4;
-    color: #166534;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-
-  .close-guide-btn:hover {
-    background-color: #dcfce7;
-  }
-
-  .guide-body {
-    line-height: 1.7;
+    content: "⋄";
+    color: #22c55e;
   }
     
   /* Responsive adjustments */
@@ -1380,47 +1697,116 @@
     }
     
     .level-buttons {
+      grid-template-columns: 1fr;
+    }
+
+    .banner-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .banner-actions {
+      width: 100%;
+    }
+
+    .guide-btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .section-nav {
+      padding: 1rem;
+    }
+
+    .accordion-header {
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.625rem 1rem;
+      font-size: 0.85rem;
+    }
+
+    .progress-info {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .progress-navigation {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .progress-nav-btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .section-footer-navigation {
+      flex-direction: column;
+    }
+
+    .footer-nav-btn {
+      max-width: none;
       justify-content: center;
     }
-    
-    .dropdown-menu {
-      position: static;
-      display: none;
-      width: 100%;
-      max-width: none;
+
+    .footer-nav-btn.next {
+      margin-left: 0;
     }
-    
-    .dropdown-li:hover .dropdown-menu {
-      display: block;
+
+    .footer-nav-btn .nav-text {
+      text-align: center;
     }
   }
   
   @media (max-width: 480px) {
     .level-btn {
-      width: 100%;
-      justify-content: center;
-    }
-    
-    .section-nav ul {
       flex-direction: column;
-      width: 100%;
-    }
-    
-    .section-nav li {
-      width: 100%;
-    }
-    
-    .section-nav button {
-      width: 100%;
-      text-align: left;
+      text-align: center;
+      gap: 0.5rem;
     }
 
-    .guides-dropdown-btn {
-      width: 100%;
+    .level-content {
+      align-items: center;
     }
-    
-    .guides-dropdown-menu {
-      width: 100%;
+
+    .banner-content {
+      padding: 1.25rem;
+    }
+
+    .banner-icon {
+      font-size: 2rem;
+    }
+
+    .banner-text h3 {
+      font-size: 1.1rem;
+    }
+
+    .banner-text p {
+      font-size: 0.9rem;
+    }
+
+    .progress-indicator {
+      padding: 1rem;
+    }
+
+    .progress-text {
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-nav-btn {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .nav-arrow {
+      font-size: 1rem;
     }
   }
   
@@ -1434,9 +1820,10 @@
     }
     
     /* Hide navigation and interactive elements */
-    .level-selector, .section-nav, .guides-selector,
-    .dropdown, .dropdown-menu, .dropdown-li,
-    .close-guide-btn, .layer-navigation {
+    .level-selector, .section-nav, .access-guide-banner,
+    .accordion-header, .accordion-content, .nav-accordion,
+    .layer-navigation, .banner-actions, .progress-indicator,
+    .section-footer-navigation {
       display: none !important;
     }
     

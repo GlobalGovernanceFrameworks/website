@@ -6,8 +6,8 @@
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
-  import ConstellationMap from '$lib/components/ConstellationMap.svelte';
   import { onMount, afterUpdate } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   export let data;
 
@@ -62,6 +62,19 @@
       
       // Replace state rather than push to avoid creating extra history entries
       history.replaceState(null, '', url.toString());
+
+      // Scroll to the content area with smooth animation
+      // Wait a tiny bit for the content to render
+      setTimeout(() => {
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      }, 100);
     }
   }
 
@@ -104,9 +117,9 @@
 
   // Swedish translations for the introduction section
   const introSv = {
-    title: "Medvetenhet & Inre Utveckling Ramverk Implementering",
+    title: "Medvetenhet & inre utveckling ramverk implementering",
     overview: "Översikt",
-    paragraph1: "Medvetenhet & Inre Utveckling Ramverket framträder som en transformativ plan för global styrning revolution, som väver samman personlig transformation, kollektiv visdom och systemisk integration till en tapet av hopp för mänsklighetens högsta potential.",
+    paragraph1: "Medvetenhet & inre utveckling ramverket framträder som en transformativ plan för global styrning revolution, som väver samman personlig transformation, kollektiv visdom och systemisk integration till en tapet av hopp för mänsklighetens högsta potential.",
     paragraph2: "Detta ramverk återföreställer styrning för att hedra varje person, gemenskap och ekosystem som en medskapare av medveten styrning, från individuell självkännedom till kollektiv intelligens och systemisk förändring."
   };
 
@@ -117,6 +130,35 @@
     paragraph1: "The Consciousness & Inner Development Framework emerges as a transformative blueprint for global governance revolution, weaving together personal transformation, collective wisdom, and systemic integration into a tapestry of hope for humanity's highest potential.",
     paragraph2: "This framework reimagines governance to honor every person, community, and ecosystem as a co-creator of conscious governance, from individual self-awareness to collective intelligence and systemic transformation."
   };
+
+  function getOverviewTitle() {
+    const overviewTitles = {
+      en: "Overview",
+      sv: "Översikt"
+    };
+    
+    return overviewTitles[currentLocale] || overviewTitles.en;
+  }
+
+  // Group sections logically with multi-lingual support
+  function getSectionCategoryTitle(category) {
+    const categoryTitles = {
+      en: {
+        foundation: "Foundation",
+        transformation: "Personal & Collective Transformation", 
+        implementation: "Systemic Implementation",
+        resources: "Resources & Tools"
+      },
+      sv: {
+        foundation: "Grund",
+        transformation: "Personlig & kollektiv transformation",
+        implementation: "Systemisk implementering", 
+        resources: "Resurser & verktyg"
+      }
+    };
+    
+    return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
+  }
 
   // Get section titles in current language
   function getSectionTitle(section) {
@@ -149,31 +191,73 @@
       sv: {
         // Core framework sections (Swedish)
         'index': "Översikt",
-        'consciousness-accord-lite': "Medvetenhet Accord Lite",
-        'executive-core-overview': "Verkställande Översikt",
-        'youth-governance-comic': "Ungdom Styrning Serietidning",
+        'consciousness-accord-lite': "Medvetenhet accord lite",
+        'executive-core-overview': "Verkställande översikt",
+        'youth-governance-comic': "Ungdom styrning serietidning",
         
         // Main framework sections (Swedish)
-        '00-manifesto': "Manifest: Medvetenhet Accordet",
+        '00-manifesto': "Manifest: medvetenhet accordet",
         '01-governance-structure': "Styrningsstruktur",
-        '02-personal-transformation': "Personlig Transformation",
-        '03-collective-consciousness': "Kollektiv Medvetenhet",
-        '04-systemic-integration': "Systemisk Integration",
-        '05-spiral-dynamics': "Spiral Dynamik Integration",
-        '06-economic-realignment': "Ekonomisk Omställning",
+        '02-personal-transformation': "Personlig transformation",
+        '03-collective-consciousness': "Kollektiv medvetenhet",
+        '04-systemic-integration': "Systemisk integration",
+        '05-spiral-dynamics': "Spiral dynamik integration",
+        '06-economic-realignment': "Ekonomisk omställning",
         '07-community-engagement': "Samhällsengagemang",
-        '08-crisis-response': "Krisstyrning Protokoll",
-        '09-metrics-accountability': "Mätningar och Ansvarighet",
-        '10-digital-platforms': "Digitala Plattformar",
-        '11-ethical-ai-governance': "Etisk AI Styrning",
-        '12-cross-cultural-translation': "Tvärkulturell Översättning",
+        '08-crisis-response': "Krisstyrning protokoll",
+        '09-metrics-accountability': "Mätningar och ansvarighet",
+        '10-digital-platforms': "Digitala plattformar",
+        '11-ethical-ai-governance': "Etisk AI styrning",
+        '12-cross-cultural-translation': "Tvärkulturell översättning",
         '13-implementation-roadmap': "Implementeringsfärdplan",
-        '14-visual-architecture-map': "Visuell Arkitektur Karta",
+        '14-visual-architecture-map': "Visuell arkitektur karta",
         '15-conclusion': "Slutsats"
       }
     };
     
     return (titles[currentLocale] || titles.en)[section] || section;
+  }
+
+  // Function to get shortened section titles for navigation
+  function getShortSectionTitle(section) {
+    const fullTitle = getSectionTitle(section).replace(/^\d{2}-/, '').replace(/^Manifesto: /, '').replace(/^Manifest: /, '');
+    
+    const shortTitles = {
+      'The Consciousness Accord': 'Manifesto',
+      'Governance Structure': 'Governance',
+      'Personal Transformation': 'Personal Transform',
+      'Collective Consciousness': 'Collective Conscious',
+      'Systemic Integration': 'Systemic Integration',
+      'Spiral Dynamics Integration': 'Spiral Dynamics',
+      'Economic Realignment': 'Economic Realign',
+      'Community Engagement': 'Community Engage',
+      'Crisis Response Protocols': 'Crisis Response',
+      'Metrics and Accountability': 'Metrics',
+      'Digital Platforms': 'Digital Platforms',
+      'Ethical AI Governance': 'Ethical AI',
+      'Cross-Cultural Translation': 'Cross-Cultural',
+      'Implementation Roadmap': 'Implementation',
+      'Visual Architecture Map': 'Visual Map',
+      'Conclusion': 'Conclusion',
+      'medvetenhet accordet': 'Manifest',
+      'Styrningsstruktur': 'Styrning',
+      'Personlig transformation': 'Personlig transform',
+      'Kollektiv medvetenhet': 'Kollektiv medveten',
+      'Systemisk integration': 'Systemisk integration',
+      'Spiral dynamik integration': 'Spiral dynamik',
+      'Ekonomisk omställning': 'Ekonomisk omställning',
+      'Samhällsengagemang': 'Samhällsengagemang',
+      'Krisstyrning protokoll': 'Krisstyrning',
+      'Mätningar och ansvarighet': 'Mätningar',
+      'Digitala plattformar': 'Digitala plattformar',
+      'Etisk AI styrning': 'Etisk AI',
+      'Tvärkulturell översättning': 'Tvärkulturell',
+      'Implementeringsfärdplan': 'Implementering',
+      'Visuell arkitektur karta': 'Visuell karta',
+      'Slutsats': 'Slutsats'
+    };
+    
+    return shortTitles[fullTitle] || fullTitle;
   }
 
   // Choose the right intro text based on the current locale
@@ -197,36 +281,38 @@
 
   // Check if the active section is the lite version
   $: isLiteActive = activeSection === 'consciousness-accord-lite';
-  $: isSupplementaryActive = ['executive-core-overview', 'youth-governance-comic'].includes(activeSection);
+  $: isFoundationActive = activeSection === '00-manifesto';
+  $: isResourceActive = ['consciousness-accord-lite', 'executive-core-overview', 'youth-governance-comic'].includes(activeSection);
 
-  // For handling dropdown states
-  let isDropdownOpen = false;
-  let isNavDropdownOpen = false;
+  // For handling accordion states
+  let foundationOpen = true; // Start with foundation open
+  let transformationOpen = false;
+  let implementationOpen = false;
+  let resourcesOpen = false;
 
-  function toggleDropdown() {
-    isDropdownOpen = !isDropdownOpen;
-    // Close the other dropdown if it's open
-    if (isDropdownOpen) isNavDropdownOpen = false;
+  function toggleFoundation() {
+    foundationOpen = !foundationOpen;
   }
 
-  function toggleNavDropdown() {
-    isNavDropdownOpen = !isNavDropdownOpen;
-    // Close the other dropdown if it's open
-    if (isNavDropdownOpen) isDropdownOpen = false;
+  function toggleTransformation() {
+    transformationOpen = !transformationOpen;
+  }
+
+  function toggleImplementation() {
+    implementationOpen = !implementationOpen;
+  }
+
+  function toggleResources() {
+    resourcesOpen = !resourcesOpen;
   }
 
   // Close dropdowns when clicking outside
   function handleClickOutside(event) {
     if (browser) {
       const dropdown = document.querySelector('.card-actions .dropdown');
-      const navDropdown = document.querySelector('.dropdown-li');
       
       if (dropdown && !dropdown.contains(event.target)) {
-        isDropdownOpen = false;
-      }
-      
-      if (navDropdown && !navDropdown.contains(event.target)) {
-        isNavDropdownOpen = false;
+        // Handle dropdown close if needed
       }
     }
   }
@@ -239,6 +325,93 @@
       };
     }
   });
+
+  // Get the total number of core framework sections (00-15)
+  $: coreFrameworkSections = Object.keys(data.sections || {}).filter(section => 
+    section.match(/^\d{2}-/)
+  ).sort();
+
+  // Define section groupings
+  $: foundationSections = ['00-manifesto'];
+  $: transformationSections = ['01-governance-structure', '02-personal-transformation', '03-collective-consciousness', '04-systemic-integration', '05-spiral-dynamics'];
+  $: implementationSections = ['06-economic-realignment', '07-community-engagement', '08-crisis-response', '09-metrics-accountability', '10-digital-platforms', '11-ethical-ai-governance', '12-cross-cultural-translation', '13-implementation-roadmap', '14-visual-architecture-map', '15-conclusion'];
+  $: resourceSections = ['consciousness-accord-lite', 'executive-core-overview', 'youth-governance-comic'];
+
+  // Get current section index for progress
+  $: currentSectionIndex = coreFrameworkSections.indexOf(activeSection);
+  $: isCoreSection = activeSection.match(/^\d{2}-/);
+
+  // Get localized text for buttons and UI elements
+  function getLocalizedText(key) {
+    const texts = {
+      en: {
+        newToFramework: "New to Consciousness Governance?",
+        startWithLite: "Start with our accessible summary that explains the framework's core principles and transformation pathway.",
+        readLite: "Read the Consciousness Accord Lite",
+        downloadPdf: "Download PDF Version",
+        continueToFull: "Continue to Full Framework",
+        resources: "Resources",
+        guides: "Guides"
+      },
+      sv: {
+        newToFramework: "Ny inom medvetenhetsstyrning?",
+        startWithLite: "Börja med vår tillgängliga sammanfattning som förklarar ramverkets kärnprinciper och transformationsväg.",
+        readLite: "Läs medvetenhet accord lite",
+        downloadPdf: "Ladda ner PDF-version",
+        continueToFull: "Fortsätt till fullständigt ramverk",
+        resources: "Resurser",
+        guides: "Guider"
+      }
+    };
+    
+    return (texts[currentLocale] || texts.en)[key] || key;
+  }
+
+  // Guide information for the resources section
+  const guideInfo = {
+    en: [
+      {
+        id: 'consciousness-accord-lite',
+        title: 'Consciousness Accord Lite',
+        description: 'Accessible summary of core principles and transformation pathway',
+        icon: '🧘'
+      },
+      {
+        id: 'executive-core-overview',
+        title: 'Executive Overview',
+        description: 'Strategic overview for decision-makers and governance leaders',
+        icon: '📊'
+      },
+      {
+        id: 'youth-governance-comic',
+        title: 'Youth Governance Comic',
+        description: 'Visual, engaging guide for younger participants and communities',
+        icon: '📚'
+      }
+    ],
+    sv: [
+      {
+        id: 'consciousness-accord-lite',
+        title: 'Medvetenhet accord lite',
+        description: 'Tillgänglig sammanfattning av kärnprinciper och transformationsväg',
+        icon: '🧘'
+      },
+      {
+        id: 'executive-core-overview',
+        title: 'Verkställande översikt',
+        description: 'Strategisk översikt för beslutsfattare och styrningsledare',
+        icon: '📊'
+      },
+      {
+        id: 'youth-governance-comic',
+        title: 'Ungdom styrning serietidning',
+        description: 'Visuell, engagerande guide för yngre deltagare och samhällen',
+        icon: '📚'
+      }
+    ]
+  };
+  
+  $: guides = guideInfo[currentLocale] || guideInfo.en;
 </script>
 
 <svelte:window on:click={handleClickOutside}/>
@@ -255,12 +428,12 @@
         <div class="card-content">
           <div class="card-icon">🧘</div>
           <div class="card-text">
-            <h3>New to Consciousness Governance?</h3>
-            <p>Start with our accessible summary that explains the framework's core principles and transformation pathway.</p>
+            <h3>{getLocalizedText('newToFramework')}</h3>
+            <p>{getLocalizedText('startWithLite')}</p>
           </div>
           <div class="card-actions">
             <button class="primary-btn" on:click={() => setActiveSection('consciousness-accord-lite')}>
-              Read the Consciousness Accord Lite <span class="arrow-icon">→</span>
+              {getLocalizedText('readLite')} <span class="arrow-icon">→</span>
             </button>
           </div>
         </div>
@@ -271,49 +444,143 @@
       <!-- Sub-navigation for framework sections -->
       {#if !isPrintMode} 
         <div class="section-nav">
-          <ul>
-            <!-- Overview -->
-            <li class:active={activeSection === 'index'}>
-              <button on:click={() => setActiveSection('index')}>
-                Overview
-              </button>
-            </li>
-            
-            <!-- Lite Version -->
-            <li class:active={activeSection === 'consciousness-accord-lite'}>
-              <button on:click={() => setActiveSection('consciousness-accord-lite')}>
-                Consciousness Accord Lite
-              </button>
-            </li>
-            
-            <!-- Core Framework sections (00-15) -->
-            {#each Object.keys(data.sections).filter(section => 
-              section.match(/^\d{2}-/) && !['index', 'consciousness-accord-lite', 'executive-core-overview', 'youth-governance-comic'].includes(section)
-            ) as section}
-              <li class:active={activeSection === section}>
-                <button on:click={() => setActiveSection(section)}>
-                  {getSectionTitle(section).replace(/^\d{2}-/, '').replace(/^Manifesto: /, '')}
-                </button>
-              </li>
-            {/each}
-            
-            <!-- Supplementary Materials dropdown -->
-            <li class="dropdown-li" class:active={isSupplementaryActive}>
-              <button class="dropdown-toggle">
-                Supplementary <span class="arrow-icon">▾</span>
-              </button>
-              <div class="dropdown-menu supplementary-dropdown">
-                <button class="dropdown-item" on:click={() => setActiveSection('executive-core-overview')}>
-                  <span class="supplement-icon">📋</span>
-                  <span class="supplement-title">Executive Overview</span>
-                </button>
-                <button class="dropdown-item" on:click={() => setActiveSection('youth-governance-comic')}>
-                  <span class="supplement-icon">📚</span>
-                  <span class="supplement-title">Youth Governance Comic</span>
-                </button>
+          <!-- Overview -->
+          <div class="nav-section">
+            <button 
+              class="nav-item overview-item" 
+              class:active={activeSection === 'index'}
+              on:click={() => setActiveSection('index')}
+            >
+              <span class="nav-icon">🏠</span>
+              <span class="nav-title">{getOverviewTitle()}</span>
+            </button>
+          </div>
+
+          <!-- Resources Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={resourcesOpen}
+              class:has-active={isResourceActive}
+              on:click={toggleResources}
+            >
+              <span class="accordion-icon">📚</span>
+              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
+              <span class="section-count">({resourceSections.length})</span>
+              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
+            </button>
+            {#if resourcesOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each guides as guide}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === guide.id}
+                    on:click={() => setActiveSection(guide.id)}
+                  >
+                    <span class="nav-icon">{guide.icon}</span>
+                    <span class="nav-title">{guide.title}</span>
+                  </button>
+                {/each}
               </div>
-            </li>
-          </ul>
+            {/if}
+          </div>
+
+          <!-- Foundation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={foundationOpen}
+              class:has-active={isFoundationActive}
+              on:click={toggleFoundation}
+            >
+              <span class="accordion-icon">🌟</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
+              <span class="section-count">({foundationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+            </button>
+            {#if foundationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each foundationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Transformation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={transformationOpen}
+              class:has-active={transformationSections.some(section => activeSection === section)}
+              on:click={toggleTransformation}
+            >
+              <span class="accordion-icon">🌱</span>
+              <span class="accordion-title">{getSectionCategoryTitle('transformation')}</span>
+              <span class="section-count">({transformationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={transformationOpen}>▼</span>
+            </button>
+            {#if transformationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each transformationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Implementation Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={implementationOpen}
+              class:has-active={implementationSections.some(section => activeSection === section)}
+              on:click={toggleImplementation}
+            >
+              <span class="accordion-icon">🚀</span>
+              <span class="accordion-title">{getSectionCategoryTitle('implementation')}</span>
+              <span class="section-count">({implementationSections.length})</span>
+              <span class="toggle-arrow" class:rotated={implementationOpen}>▼</span>
+            </button>
+            {#if implementationOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each implementationSections as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-number">{section.substring(0, 2)}</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+        </div>
+      {/if}
+
+      <!-- Progress indicator for core sections -->
+      {#if !isPrintMode && isCoreSection}
+        <div class="progress-indicator">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {((currentSectionIndex + 1) / coreFrameworkSections.length) * 100}%"></div>
+          </div>
+          <span class="progress-text">Section {currentSectionIndex + 1} of {coreFrameworkSections.length}</span>
         </div>
       {/if}
 
@@ -328,8 +595,6 @@
               <p>{intro.paragraph1}</p>
               <p>{intro.paragraph2}</p>
             </div>
-            <!-- Show constellation map for index section -->
-            <ConstellationMap />
           {:else if section === 'index'}
             <!-- Render English introduction through the markdown component -->
             <svelte:component this={data.sections[section].default} />
@@ -344,11 +609,48 @@
           {#if section === 'consciousness-accord-lite' && !isPrintMode}
             <div class="guide-navigation">
               <button class="secondary-btn" on:click={() => downloadGuide('lite')}>
-                Download PDF Version <span class="download-icon">↓</span>
+                {getLocalizedText('downloadPdf')} <span class="download-icon">↓</span>
               </button>
               <button class="primary-btn" on:click={() => setActiveSection('00-manifesto')}>
-                Continue to Full Framework <span class="arrow-icon">→</span>
+                {getLocalizedText('continueToFull')} <span class="arrow-icon">→</span>
               </button>
+            </div>
+          {/if}
+
+          <!-- Navigation buttons at bottom of other resource sections -->
+          {#if (section === 'executive-core-overview' || section === 'youth-governance-comic') && !isPrintMode}
+            <div class="guide-navigation">
+              <button class="secondary-btn" on:click={() => downloadGuide(section)}>
+                {getLocalizedText('downloadPdf')} <span class="download-icon">↓</span>
+              </button>
+              <button class="primary-btn" on:click={() => setActiveSection('00-manifesto')}>
+                {getLocalizedText('continueToFull')} <span class="arrow-icon">→</span>
+              </button>
+            </div>
+          {/if}
+
+          <!-- Section navigation at bottom of core sections -->
+          {#if isCoreSection && !isPrintMode}
+            <div class="section-navigation">
+              {#if currentSectionIndex > 0}
+                <button class="nav-btn prev-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const prevSection = coreFrameworkSections[currentIndex - 1];
+                  setActiveSection(prevSection);
+                }}>
+                  ← Previous Section
+                </button>
+              {/if}
+              
+              {#if currentSectionIndex < coreFrameworkSections.length - 1}
+                <button class="nav-btn next-btn" on:click={() => {
+                  const currentIndex = coreFrameworkSections.indexOf(activeSection);
+                  const nextSection = coreFrameworkSections[currentIndex + 1];
+                  setActiveSection(nextSection);
+                }}>
+                  Next Section →
+                </button>
+              {/if}
             </div>
           {/if}
         </div>
@@ -386,44 +688,199 @@
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+    border-radius: 0.5rem;
+    padding: 1rem;
   }
-  
-  .section-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .section-nav li {
-    margin-right: 0.5rem;
+
+  .nav-section {
     margin-bottom: 0.5rem;
   }
-  
-  .section-nav button {
-    padding: 0.5rem 1rem;
-    background: none;
+
+  .nav-accordion {
+    margin-bottom: 0.5rem;
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
-    cursor: pointer;
-    color: #4b5563;
-    transition: all 0.2s;
+    overflow: hidden;
+    background: white;
   }
-  
-  .section-nav li.active button {
+
+  .accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
+  }
+
+  .accordion-header:hover {
+    background-color: rgba(76, 29, 149, 0.05);
+  }
+
+  .accordion-header.has-active {
+    background-color: rgba(76, 29, 149, 0.1);
+    color: var(--consciousness-primary);
+    font-weight: 600;
+  }
+
+  .accordion-header.open {
+    background-color: rgba(76, 29, 149, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .accordion-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .accordion-title {
+    flex-grow: 1;
+    font-weight: 600;
+  }
+
+  .section-count {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+
+  .toggle-arrow {
+    font-size: 0.8rem;
+    color: #6b7280;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+
+  .toggle-arrow.rotated {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    border-top: 1px solid #e5e7eb;
+    background-color: #fafafa;
+  }
+
+  .nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(76, 29, 149, 0.05);
+    color: #374151;
+  }
+
+  .nav-item.active {
     background-color: var(--consciousness-primary);
     color: white;
-    border-color: var(--consciousness-primary);
+    font-weight: 600;
   }
-  
-  .section-nav button:hover {
-    background-color: #f3f4f6;
-    color: #1f2937;
+
+  .nav-item.active:hover {
+    background-color: var(--consciousness-accent);
+  }
+
+  .overview-item {
+    background: linear-gradient(135deg, rgba(76, 29, 149, 0.1), rgba(167, 139, 250, 0.1));
+    border: 1px solid rgba(76, 29, 149, 0.2);
+    border-radius: 0.375rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .overview-item.active {
+    background: var(--consciousness-primary);
+    color: white;
+  }
+
+  .subsection-item {
+    padding-left: 1.5rem;
+  }
+
+  .nav-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-number {
+    font-size: 0.8rem;
+    background-color: rgba(76, 29, 149, 0.1);
+    color: var(--consciousness-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    min-width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .nav-item.active .nav-number {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  .nav-title {
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  /* Progress indicator */
+  .progress-indicator {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, rgba(76, 29, 149, 0.1), rgba(167, 139, 250, 0.1));
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--consciousness-primary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--consciousness-primary), var(--consciousness-accent));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.875rem;
+    color: var(--consciousness-primary);
+    font-weight: 500;
   }
   
   .section-content {
     padding-top: 1rem;
+    scroll-margin-top: 2rem;
   }
 
   .documentation-container {
@@ -439,42 +896,62 @@
     .documentation-container {
       grid-template-columns: 1fr;
     }
+
+    .section-nav {
+      padding: 0.75rem;
+    }
+
+    .accordion-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-item {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .subsection-item {
+      padding-left: 1rem;
+    }
+
+    .card-content {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      gap: 0.75rem;
+    }
+    
+    .card-text {
+      width: 100%;
+    }
+    
+    .card-actions {
+      width: 100%;
+    }
+    
+    .primary-btn {
+      width: 100%;
+      justify-content: center;
+    }
   }
-  
-  .sidebar {
-    border-right: 1px solid var(--consciousness-primary);
-    padding-right: 1.5rem;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .sidebar a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #4b5563;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s;
-  }
-  
-  .sidebar a:hover {
-    color: var(--consciousness-primary);
-    border-left-color: var(--consciousness-primary);
-  }
-  
-  .sidebar a.active {
-    color: var(--consciousness-primary);
-    border-left-color: var(--consciousness-primary);
-    font-weight: 600;
+
+  @media (max-width: 480px) {
+    .card-content {
+      padding: 0.75rem;
+    }
+    
+    .card-icon {
+      font-size: 1.5rem;
+    }
+    
+    .card-text h3 {
+      font-size: 1rem;
+    }
+    
+    .card-text p {
+      font-size: 0.85rem;
+    }
   }
   
   .content {
@@ -664,23 +1141,6 @@
     border-bottom: none;
   }
 
-  /* Table caption or footer */
-  :global(.content table caption),
-  :global(.content table tfoot) {
-    background-color: rgba(167, 139, 250, 0.1);
-    padding: 0.75rem;
-    font-size: 0.875rem;
-    color: var(--consciousness-primary);
-    text-align: left;
-    border-top: 1px solid var(--consciousness-primary);
-  }
-
-  /* Highlight important cells */
-  :global(.content td.highlight) {
-    color: var(--consciousness-primary);
-    font-weight: 600;
-  }
-
   /* For responsive tables on small screens */
   @media (max-width: 640px) {
     :global(.content table) {
@@ -704,19 +1164,6 @@
     overflow: visible !important;
     position: relative;
     z-index: 1;
-  }
-
-  .consciousness-guide-card .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1001;
-    min-width: 300px;
-    max-width: 350px;
-    overflow: hidden;
-    border: 1px solid rgba(76, 29, 149, 0.3);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
   }
   
   .card-content {
@@ -860,7 +1307,7 @@
   .section-nav a:hover {
     color: var(--consciousness-primary);
   }
- 
+
   /* Styles for navigation at bottom of guide */
   .guide-navigation {
     display: flex;
@@ -869,142 +1316,41 @@
     padding-top: 1.5rem;
     border-top: 1px solid #e5e7eb;
   }
-  
-  /* Dropdown styles for supplementary materials */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
 
-  .dropdown-toggle {
+  /* Section navigation for core framework sections */
+  .section-navigation {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
   }
 
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    width: auto !important;
-    min-width: 250px !important;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
-    margin-top: 0;
-    padding-top: 10px;
-    white-space: normal !important;
-  }
-
-  .dropdown:hover .dropdown-menu,
-  .dropdown-li:hover .dropdown-menu {
-    display: block;
-  }
-
-  .dropdown::after,
-  .dropdown-li::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background: transparent;
-  }
-  
-  .dropdown-li {
-    position: relative;
-  }
-
-  .dropdown-li .dropdown-menu {
-    width: 250px;
-    display: none;
-  }
-
-  .dropdown-li:hover .dropdown-menu {
-    display: block;
-  }
-
-  /* Fix for dropdown items when supplementary is active */
-  .dropdown-li.active .dropdown-menu {
-    background-color: white !important;
-  }
-
-  .dropdown-li.active .dropdown-item {
-    color: #212529 !important;
-  }
-
-  .dropdown-li.active .dropdown-item:hover {
-    background-color: rgba(167, 139, 250, 0.1) !important;
-    color: var(--consciousness-primary) !important;
-  }
-
-  .dropdown-li.active .dropdown-menu .dropdown-item {
-    color: #212529 !important;
-    background-color: transparent !important;
-  }
-
-  .dropdown-li.active .dropdown-menu {
-    background-color: white !important;
-  }
-
-  /* Remove any inherited text color styling */
-  .dropdown-li.active .dropdown-item *,
-  .dropdown-li.active .supplement-title,
-  .dropdown-li.active .supplement-icon {
-    color: inherit !important;
-  }
-
-  /* Hover state */
-  .dropdown-li.active .dropdown-item:hover {
-    background-color: rgba(167, 139, 250, 0.1) !important;
-    color: var(--consciousness-primary) !important;
-  }
-
-  /* Fix for supplement icons in dropdown */
-  .dropdown-item .supplement-icon {
-    display: inline-block;
-    width: 24px;
-    text-align: center;
-    margin-right: 8px;
-  }
-  
-  .dropdown-item {
-    display: flex;
-    align-items: center;
-    width: 100%;
+  .nav-btn {
+    background-color: var(--consciousness-primary);
+    color: white;
+    border: none;
     padding: 0.75rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: normal !important;
-    background-color: transparent;
-    border: 0;
+    border-radius: 0.375rem;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--consciousness-accent);
+    transform: translateY(-1px);
+  }
+
+  .prev-btn {
+    margin-right: auto;
+  }
+
+  .next-btn {
+    margin-left: auto;
   }
   
-  .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
-    text-decoration: none;
-    background-color: rgba(167, 139, 250, 0.1);
-  }
-  
-  .supplement-icon {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    margin-bottom: 0;
-  }
-  
-  .supplement-title {
-    font-weight: 600;
-  }
-  
+  /* Responsive styles */
   @media (max-width: 640px) {
     .card-content {
       flex-direction: column;
@@ -1023,6 +1369,15 @@
     }
     
     .guide-navigation button {
+      width: 100%;
+    }
+
+    .section-navigation {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-navigation button {
       width: 100%;
     }
   }

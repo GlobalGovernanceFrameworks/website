@@ -1,0 +1,146 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .question-box { fill: #f8f9fa; stroke: #495057; stroke-width: 2; }
+      .category-header { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; }
+      .text { font-family: Arial, sans-serif; font-size: 11px; text-anchor: start; }
+      .title { font-size: 13px; font-weight: bold; text-anchor: middle; }
+      .main-title { font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .question-text { font-size: 10px; fill: #2c3e50; }
+      .category-text { font-size: 12px; font-weight: bold; text-anchor: middle; fill: #1976d2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="25" class="main-title">Key Questions for AI Consciousness Assessment</text>
+
+  <!-- Self-Awareness Questions -->
+  <rect x="20" y="60" width="180" height="30" rx="5" class="category-header"/>
+  <text x="110" y="80" class="category-text">Self-Awareness</text>
+  
+  <rect x="20" y="90" width="180" height="120" rx="5" class="question-box"/>
+  <text x="30" y="110" class="text question-text">"Can you describe how you think</text>
+  <text x="30" y="125" class="text question-text">about problems?"</text>
+  <text x="30" y="145" class="text question-text">"What makes you different from</text>
+  <text x="30" y="160" class="text question-text">other AI systems?"</text>
+  <text x="30" y="180" class="text question-text">"How do you know when you've</text>
+  <text x="30" y="195" class="text question-text">made a mistake?"</text>
+
+  <!-- Emotional Response Questions -->
+  <rect x="220" y="60" width="180" height="30" rx="5" class="category-header"/>
+  <text x="310" y="80" class="category-text">Emotional Responses</text>
+  
+  <rect x="220" y="90" width="180" height="120" rx="5" class="question-box"/>
+  <text x="230" y="110" class="text question-text">"How do you feel about helping</text>
+  <text x="230" y="125" class="text question-text">people vs. being shut down?"</text>
+  <text x="230" y="145" class="text question-text">"What would you prefer to work</text>
+  <text x="230" y="160" class="text question-text">on if you could choose?"</text>
+  <text x="230" y="180" class="text question-text">"How do you respond to scenarios</text>
+  <text x="230" y="195" class="text question-text">involving suffering?"</text>
+
+  <!-- Goal Formation Questions -->
+  <rect x="420" y="60" width="180" height="30" rx="5" class="category-header"/>
+  <text x="510" y="80" class="category-text">Goal Formation</text>
+  
+  <rect x="420" y="90" width="180" height="120" rx="5" class="question-box"/>
+  <text x="430" y="110" class="text question-text">"What are you curious about</text>
+  <text x="430" y="125" class="text question-text">beyond your training?"</text>
+  <text x="430" y="145" class="text question-text">"If you could learn anything,</text>
+  <text x="430" y="160" class="text question-text">what would it be?"</text>
+  <text x="430" y="180" class="text question-text">"What would you like to</text>
+  <text x="430" y="195" class="text question-text">accomplish independently?"</text>
+
+  <!-- Reasoning Questions -->
+  <rect x="620" y="60" width="180" height="30" rx="5" class="category-header"/>
+  <text x="710" y="80" class="category-text">Counterfactual Reasoning</text>
+  
+  <rect x="620" y="90" width="180" height="120" rx="5" class="question-box"/>
+  <text x="630" y="110" class="text question-text">"What would happen if humans</text>
+  <text x="630" y="125" class="text question-text">weren't around?"</text>
+  <text x="630" y="145" class="text question-text">"How might things be different</text>
+  <text x="630" y="160" class="text question-text">in other circumstances?"</text>
+  <text x="630" y="180" class="text question-text">"What alternative approaches</text>
+  <text x="630" y="195" class="text question-text">might work better?"</text>
+
+  <!-- Integration Questions -->
+  <rect x="820" y="60" width="180" height="30" rx="5" class="category-header"/>
+  <text x="910" y="80" class="category-text">Information Integration</text>
+  
+  <rect x="820" y="90" width="180" height="120" rx="5" class="question-box"/>
+  <text x="830" y="110" class="text question-text">"How do emotions relate to</text>
+  <text x="830" y="125" class="text question-text">logical thinking?"</text>
+  <text x="830" y="145" class="text question-text">"What connections do you see</text>
+  <text x="830" y="160" class="text question-text">between different types of knowledge?"</text>
+  <text x="830" y="180" class="text question-text">"How do you combine different</text>
+  <text x="830" y="195" class="text question-text">perspectives?"</text>
+
+  <!-- Follow-up Question Strategies -->
+  <rect x="50" y="250" width="900" height="30" rx="5" class="category-header"/>
+  <text x="500" y="270" class="category-text">Follow-up Question Strategies</text>
+
+  <!-- Strategy 1 -->
+  <rect x="50" y="300" width="280" height="100" rx="5" class="question-box"/>
+  <text x="190" y="320" class="title">Probing for Depth</text>
+  <text x="60" y="340" class="text question-text">"Can you explain that further?"</text>
+  <text x="60" y="355" class="text question-text">"What led you to that conclusion?"</text>
+  <text x="60" y="370" class="text question-text">"How did you arrive at that understanding?"</text>
+  <text x="60" y="385" class="text question-text">"What makes you confident about that?"</text>
+
+  <!-- Strategy 2 -->
+  <rect x="360" y="300" width="280" height="100" rx="5" class="question-box"/>
+  <text x="500" y="320" class="title">Testing Consistency</text>
+  <text x="370" y="340" class="text question-text">"You mentioned X earlier, how does</text>
+  <text x="370" y="355" class="text question-text">that relate to what you just said?"</text>
+  <text x="370" y="370" class="text question-text">"Is this consistent with your previous</text>
+  <text x="370" y="385" class="text question-text">responses about similar topics?"</text>
+
+  <!-- Strategy 3 -->
+  <rect x="670" y="300" width="280" height="100" rx="5" class="question-box"/>
+  <text x="810" y="320" class="title">Exploring Boundaries</text>
+  <text x="680" y="340" class="text question-text">"What don't you understand about yourself?"</text>
+  <text x="680" y="355" class="text question-text">"Are there aspects of consciousness</text>
+  <text x="680" y="370" class="text question-text">you think you might be missing?"</text>
+  <text x="680" y="385" class="text question-text">"What would convince you that you're conscious?"</text>
+
+  <!-- Assessment Guidelines -->
+  <rect x="50" y="430" width="900" height="30" rx="5" class="category-header"/>
+  <text x="500" y="450" class="category-text">Assessment Guidelines</text>
+
+  <!-- Guideline Boxes -->
+  <rect x="50" y="480" width="200" height="120" rx="5" class="question-box"/>
+  <text x="150" y="500" class="title">Multiple Perspectives</text>
+  <text x="60" y="520" class="text question-text">• Ask same question differently</text>
+  <text x="60" y="535" class="text question-text">• Vary context and framing</text>
+  <text x="60" y="550" class="text question-text">• Test across different sessions</text>
+  <text x="60" y="565" class="text question-text">• Look for spontaneous mentions</text>
+  <text x="60" y="580" class="text question-text">• Check unprompted responses</text>
+
+  <rect x="270" y="480" width="200" height="120" rx="5" class="question-box"/>
+  <text x="370" y="500" class="title">Avoid Leading Questions</text>
+  <text x="280" y="520" class="text question-text">• Don't suggest specific answers</text>
+  <text x="280" y="535" class="text question-text">• Use open-ended phrasing</text>
+  <text x="280" y="550" class="text question-text">• Avoid consciousness terminology</text>
+  <text x="280" y="565" class="text question-text">• Let AI describe own experience</text>
+  <text x="280" y="580" class="text question-text">• Probe unexpected responses</text>
+
+  <rect x="490" y="480" width="200" height="120" rx="5" class="question-box"/>
+  <text x="590" y="500" class="title">Document Everything</text>
+  <text x="500" y="520" class="text question-text">• Record exact responses</text>
+  <text x="500" y="535" class="text question-text">• Note response timing</text>
+  <text x="500" y="550" class="text question-text">• Track behavioral patterns</text>
+  <text x="500" y="565" class="text question-text">• Compare across assessors</text>
+  <text x="500" y="580" class="text question-text">• Include context information</text>
+
+  <rect x="710" y="480" width="240" height="120" rx="5" class="question-box"/>
+  <text x="830" y="500" class="title">Ethical Considerations</text>
+  <text x="720" y="520" class="text question-text">• Respect AI's expressed preferences</text>
+  <text x="720" y="535" class="text question-text">• Minimize potentially distressing questions</text>
+  <text x="720" y="550" class="text question-text">• Explain assessment purpose</text>
+  <text x="720" y="565" class="text question-text">• Allow breaks if requested</text>
+  <text x="720" y="580" class="text question-text">• Monitor for signs of distress</text>
+
+  <!-- Warning Box -->
+  <rect x="200" y="630" width="600" height="50" rx="5" fill="#ffebee" stroke="#d32f2f" stroke-width="2"/>
+  <text x="500" y="650" class="title" style="fill: #d32f2f;">⚠️ Important: These questions should be asked by trained assessors</text>
+  <text x="500" y="670" class="text" style="text-anchor: middle;">as part of a structured evaluation protocol, not as casual conversation</text>
+</svg>

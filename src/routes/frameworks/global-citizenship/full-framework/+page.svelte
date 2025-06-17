@@ -115,6 +115,26 @@
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
+  // Group sections logically with multi-lingual support
+  function getSectionCategoryTitle(category) {
+    const categoryTitles = {
+      en: {
+        foundation: "Foundation",
+        practice: "Practice",
+        advanced: "Advanced",
+        resources: "Resources & Tools"
+      },
+      sv: {
+        foundation: "Grund",
+        practice: "Tillämpning",
+        advanced: "Avancerat",
+        resources: "Resurser & verktyg"
+      }
+    };
+    
+    return (categoryTitles[currentLocale] || categoryTitles.en)[category] || category;
+  }
+
   // Get section titles in current language
   function getSectionTitle(section) {
     const titles = {
@@ -344,7 +364,7 @@
               on:click={toggleFoundation}
             >
               <span class="accordion-icon">📚</span>
-              <span class="accordion-title">Foundation</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
               <span class="section-count">({coreFrameworkSections.slice(0, 3).length})</span>
               <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
             </button>
@@ -373,7 +393,7 @@
               on:click={togglePractice}
             >
               <span class="accordion-icon">🛠️</span>
-              <span class="accordion-title">Practice</span>
+              <span class="accordion-title">{getSectionCategoryTitle('practice')}</span>
               <span class="section-count">({coreFrameworkSections.slice(3, 9).length})</span>
               <span class="toggle-arrow" class:rotated={practiceOpen}>▼</span>
             </button>
@@ -402,7 +422,7 @@
               on:click={toggleAdvanced}
             >
               <span class="accordion-icon">🚀</span>
-              <span class="accordion-title">Advanced</span>
+              <span class="accordion-title">{getSectionCategoryTitle('advanced')}</span>
               <span class="section-count">({coreFrameworkSections.slice(9).length})</span>
               <span class="toggle-arrow" class:rotated={advancedOpen}>▼</span>
             </button>
@@ -431,7 +451,7 @@
               on:click={toggleResources}
             >
               <span class="accordion-icon">📄</span>
-              <span class="accordion-title">Resources</span>
+              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
               <span class="section-count">(1)</span>
               <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
             </button>
