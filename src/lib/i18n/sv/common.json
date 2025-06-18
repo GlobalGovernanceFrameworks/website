@@ -1,6 +1,7 @@
 {
   "header": {
     "home": "Hem",
+    "blog": "Blogg",
     "about": "Om",
     "framework": "Ramverk",
     "downloads": "Nedladdningar",
@@ -30,5 +31,27 @@
   },
   "language": {
     "select": "Välj språk"
+  },
+  "follow": {
+    "title": "Håll kontakten",
+    "description": "Följ våra uppdateringar genom din föredragna metod. Ingen e-post krävs.",
+    "rss": {
+      "title": "RSS-flöde",
+      "description": "Universellt stöd för flödesläsare. Fungerar med alla RSS-läsare.",
+      "subscribe": "Prenumerera på RSS",
+      "copy": "Kopiera URL"
+    },
+    "social": {
+      "title": "Sociala medier",
+      "description": "Följ oss på sociala plattformar för uppdateringar och diskussioner."
+    },
+    "bookmark": {
+      "title": "Bokmärk denna sida",
+      "description": "Lägg till denna blogg i dina bokmärken och kom tillbaka regelbundet.",
+      "add": "Lägg till bokmärke"
+    },
+    "global": {
+      "note": "Byggd för global tillgänglighet - ingen e-postinsamling, ingen spårning, öppen för alla."
+    }
   }
 }

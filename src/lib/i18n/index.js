@@ -35,7 +35,7 @@ async function loadTranslations(newLocale, route = '/') {
     currentRoute.set(route);
     console.log(`Loading translations for locale: ${newLocale}, route: ${route}`);
     
-    // Load common translations
+    // Load common translations (including newsletter)
     try {
       if (newLocale === 'en') {
         translationData.common = (await import('./en/common.json')).default;
@@ -81,8 +81,20 @@ async function loadTranslations(newLocale, route = '/') {
       } catch (e) {
         console.error('Error loading contact translations:', e);
       }
+    } else if (route.startsWith('/blog')) {
+      // Blog pages - load blog-specific translations
+      try {
+        if (newLocale === 'en') {
+          translationData.blog = (await import('./en/blog.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.blog = (await import('./sv/blog.json')).default;
+        }
+        console.log('Loaded blog translations:', translationData.blog);
+      } catch (e) {
+        console.error('Error loading blog translations:', e);
+      }
     } else if (route.startsWith('/frameworks/docs/implementation/treaty-for-our-only-home/getting-started')) {
-      // Start Treaty landing page - NEW ADDITION
+      // Start Treaty landing page
       try {
         if (newLocale === 'en') {
           translationData.startTreaty = (await import('./en/startTreaty.json')).default;
@@ -205,7 +217,6 @@ async function loadTranslations(newLocale, route = '/') {
 }
 
 // Create a derived store that returns a translation function
-// and update the t derived store to handle loading state
 const t = derived(
   [locale, translations],
   ([$locale, $translations]) => {
@@ -264,11 +275,22 @@ function setLocale(newLocale) {
     // Update localStorage
     setLocalStorage('locale', newLocale);
     
-    // Update URL (if in browser)
+    // Set cookie for server-side locale detection
+    if (browser) {
+      document.cookie = `locale=${newLocale}; path=/; max-age=${30 * 24 * 60 * 60}; SameSite=Lax`;
+    }
+    
+    // Update URL with language parameter for immediate effect
     if (browser) {
       const url = new URL(window.location.href);
       url.searchParams.set('lang', newLocale);
-      window.history.replaceState(null, '', url.toString());
+      
+      // For blog pages, we want to reload to get the correct posts
+      if (window.location.pathname.startsWith('/blog')) {
+        window.location.href = url.toString();
+      } else {
+        window.history.replaceState(null, '', url.toString());
+      }
     }
   }
 }

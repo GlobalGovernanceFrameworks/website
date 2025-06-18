@@ -1,6 +1,7 @@
 {
   "header": {
     "home": "Home",
+    "blog": "Blog",
     "about": "About",
     "framework": "Frameworks",
     "downloads": "Downloads",
@@ -30,5 +31,27 @@
   },
   "language": {
     "select": "Select language"
+  },
+  "follow": {
+    "title": "Stay Connected",
+    "description": "Follow our updates through your preferred method. No email required.",
+    "rss": {
+      "title": "RSS Feed",
+      "description": "Universal feed reader support. Works with any RSS reader.",
+      "subscribe": "Subscribe to RSS",
+      "copy": "Copy URL"
+    },
+    "social": {
+      "title": "Social Media",
+      "description": "Follow us on social platforms for updates and discussions."
+    },
+    "bookmark": {
+      "title": "Bookmark This Page",
+      "description": "Add this blog to your bookmarks and check back regularly.",
+      "add": "Add Bookmark"
+    },
+    "global": {
+      "note": "Built for global accessibility - no email collection, no tracking, open for everyone."
+    }
   }
 }
