@@ -3,6 +3,7 @@
   import { t, locale } from '$lib/i18n';
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
+  import ShareButtons from '$lib/components/ShareButtons.svelte';
 
   let isVisible = false;
   
@@ -468,6 +469,12 @@
     </div>
   </div>
 </section>
+
+<ShareButtons 
+  title="Treaty for Our Only Home"
+  description="The foundational framework for global governance"
+  hashtags="Treaty,GlobalGovernance,Cooperation"
+/>
 
 <style>
   .hero-section {

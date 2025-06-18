@@ -96,6 +96,37 @@
       }
     }
   },
+  "spiralDynamics": {
+    "invitation": {
+      "title": "Fördjupa din förståelse med Spiral Dynamics",
+      "description1": "Att förstå hur olika människor och kulturer förhåller sig till värderingar och förändring kan förbättra din resa mot globalt medborgarskap. Spiral Dynamics erbjuder insikter i de utvecklingsstadier som formar hur vi ser på världen - från överlevnadsfokuserat tänkande till planetärt och till och med kosmiskt medvetande.",
+      "description2": "Utforska detta kraftfulla ramverk gratis på Spiralize.org - utformat för att hjälpa dig förstå de olika världsbilder som gör globalt samarbete både utmanande och avgörande. Upptäck alla 11 stadier över tre nivåer av mänsklig utveckling.",
+      "linkText": "Utforska Spiral Dynamics"
+    },
+    "note": {
+      "title": "Förstå olika världsbilder",
+      "description": "Olika människor närmar sig globala utmaningar från olika utvecklingsstadier. Lär dig om dessa perspektiv genom",
+      "linkText": "Spiral Dynamics",
+      "subtitle": "en kostnadsfri utbildningsresurs som kan förbättra din globala medborgarskapsutövning"
+    },
+    "stages": {
+      "beige": "Överlevnad",
+      "purple": "Stamkänsla", 
+      "red": "Makt",
+      "blue": "Ordning",
+      "orange": "Prestation",
+      "green": "Gemenskap",
+      "yellow": "Integrerat",
+      "turquoise": "Holistiskt",
+      "coral": "Suverän enhet",
+      "ultraviolet": "Kosmiskt flöde",
+      "clear": "Tyst transparens"
+    },
+    "tiers": {
+      "second": "Andra nivån",
+      "third": "Tredje nivån"
+    }
+  },
   "compass": {
     "status": {
       "ready": "Redo",

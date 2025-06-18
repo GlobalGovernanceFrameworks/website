@@ -6,6 +6,7 @@
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
   import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
+
   import { onMount, afterUpdate } from 'svelte';
   import { slide } from 'svelte/transition';
 

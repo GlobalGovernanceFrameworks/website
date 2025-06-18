@@ -185,7 +185,7 @@ revision: Version 1.0 (2025-06-15)
 
 **Kort svar**: Nej. De föreslagna skatterna riktar sig mot skadliga aktiviteter (förorening, spekulation) samtidigt som de finansierar fördelaktiga investeringar (klimatanpassning, teknikutveckling) som förstärker snarare än minskar långsiktig konkurrenskraft.
 
-**Detaljerat svar**: Ekonomisk analys visar nettopos itiva effekter:
+**Detaljerat svar**: Ekonomisk analys visar nettopositiva effekter:
 
 **Skattedesignprinciper**:
 - **Koldioxidskatter** gör förorening dyr samtidigt som ren teknik blir konkurrenskraftig
@@ -218,8 +218,8 @@ revision: Version 1.0 (2025-06-15)
 
 **Koordinerad tillämpning**:
 - Alliansländer implementerar konsekventa standarder samtidigt
-- Informationsdelningsavtal förhindrar skattepark smissbruk
-- Register för verklig ägarskap eliminerar skalföretagsgömme
+- Informationsdelningsavtal förhindrar skatteparksmissbruk
+- Register för verkligt ägarskap eliminerar skalföretagsgömme
 - AI-assisterad övervakning upptäcker misstänkta transaktioner
 
 **Tekniklösningar**:
@@ -418,9 +418,9 @@ revision: Version 1.0 (2025-06-15)
 4. **Ultimat intervention** endast för praxis som orsakar allvarlig skada
 
 **Framgångsexempel**:
-- Traditionella rättviseSystem integrerade med mänskliga rättighetsramverk
+- Traditionella rättvisesystem integrerade med mänskliga rättighetsramverk
 - Ursprungsfolks markrättigheter förenade med bevarandebehov
-- Religionsfrihet balanserad med köns jämställdhet genom dialog
+- Religionsfrihet balanserad med könsjämställdhet genom dialog
 - Ekonomisk utveckling anpassad till kulturell hållbarhetsvärden
 
 ### "Vad händer med religiösa och filosofiska meningsskiljaktigheter om grundläggande frågor?"
@@ -439,7 +439,7 @@ revision: Version 1.0 (2025-06-15)
 - Religiösa och filosofiska ledare bidrar till etisk deliberation
 - Flera visdomstraditioner informerar beslutsfattandeprocesser
 - Sekulära och trosbaserade tillvägagångssätt får båda institutionellt erkännande
-- Humanistiska, ursprungsfolk s och traditionella perspektiv har alla formella roller
+- Humanistiska, ursprungsfolks och traditionella perspektiv har alla formella roller
 
 **Praktiska fokusområden**:
 - Miljöförvaltning stöds av de flesta traditioner
@@ -465,7 +465,7 @@ revision: Version 1.0 (2025-06-15)
 - **Miljöbrottsutredningsenhet**: Forensiska specialister och juridiska experter, inte militär
 - **Hälsonödkorps**: Medicinska yrkesverksamma och folkhälsoexperter
 - **Cyberförsvarsstyrka**: Tekniska specialister för digital säkerhet
-- **Humanitär stabilitetspo lis**: Tränad i folkkontroll och mänskliga rättigheter, inte krigföring
+- **Humanitär stabilitetspolis**: Tränad i folkkontroll och mänskliga rättigheter, inte krigföring
 
 **Demokratiska auktoriseringskrav**:
 - Datainsamling kräver supermajoritet från globala rådet för framtiden
@@ -515,7 +515,7 @@ revision: Version 1.0 (2025-06-15)
 - Professionell träning betonar mänskliga rättigheter och kulturell känslighet
 - Internationell rekrytering förhindrar nationell bias i personal
 
-### "Hur hanterar man situationer där globala och lokala säkerhetsbehov konflik terar?"
+### "Hur hanterar man situationer där globala och lokala säkerhetsbehov konflikterar?"
 
 **Kort svar**: Genom polycentriska säkerhetsmetoder som adresserar lokala bekymmer samtidigt som de hanterar globala hot, använder subsidiaritetsprinciper och kulturell anpassning för att säkerställa att säkerhetsåtgärder tjänar snarare än hotar samhällen.
 

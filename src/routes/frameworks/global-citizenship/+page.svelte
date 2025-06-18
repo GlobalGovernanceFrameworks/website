@@ -6,6 +6,7 @@
   import CitizenshipCompass from './components/CitizenshipCompass.svelte';
   import FrameworkRecommendations from './components/FrameworkRecommendations.svelte';
   import FoundationMessage from './components/FoundationMessage.svelte';
+  import ShareButtons from '$lib/components/ShareButtons.svelte';
   import { onMount } from 'svelte';
   
   let showQuiz = false;
@@ -68,7 +69,7 @@
   {#if quizResults}
     <FrameworkRecommendations {quizResults} />
   {/if}
-  
+
   <!-- Interactive Compass -->
   <section class="compass-section">
     <div class="container">
@@ -83,6 +84,53 @@
     </div>
   </section>
   
+  <section class="spiral-dynamics-invitation">
+    <div class="container">
+      <div class="spiral-content">
+        <div class="spiral-text">
+          <h3>{$t('globalCitizenship.spiralDynamics.invitation.title')}</h3>
+          <p>{$t('globalCitizenship.spiralDynamics.invitation.description1')}</p>
+          <p>{$t('globalCitizenship.spiralDynamics.invitation.description2')}</p>
+          <a href="https://www.spiralize.org" target="_blank" rel="noopener noreferrer" class="spiral-link">
+            {$t('globalCitizenship.spiralDynamics.invitation.linkText')} → 
+          </a>
+        </div>
+        <div class="spiral-visual">
+          <div class="spiral-icon">🌀</div>
+          <div class="spiral-stages">
+            <div class="first-tier-stages">
+              <span class="stage beige">{$t('globalCitizenship.spiralDynamics.stages.beige')}</span>
+              <span class="stage purple">{$t('globalCitizenship.spiralDynamics.stages.purple')}</span>
+              <span class="stage red">{$t('globalCitizenship.spiralDynamics.stages.red')}</span>
+              <span class="stage blue">{$t('globalCitizenship.spiralDynamics.stages.blue')}</span>
+              <span class="stage orange">{$t('globalCitizenship.spiralDynamics.stages.orange')}</span>
+              <span class="stage green">{$t('globalCitizenship.spiralDynamics.stages.green')}</span>
+            </div>
+            <div class="tier-divider">
+              <span class="divider-line"></span>
+              <span class="tier-label">{$t('globalCitizenship.spiralDynamics.tiers.second')}</span>
+              <span class="divider-line"></span>
+            </div>
+            <div class="second-tier-stages">
+              <span class="stage yellow">{$t('globalCitizenship.spiralDynamics.stages.yellow')}</span>
+              <span class="stage turquoise">{$t('globalCitizenship.spiralDynamics.stages.turquoise')}</span>
+              <span class="stage coral">{$t('globalCitizenship.spiralDynamics.stages.coral')}</span>
+            </div>
+            <div class="tier-divider">
+              <span class="divider-line"></span>
+              <span class="tier-label">{$t('globalCitizenship.spiralDynamics.tiers.third')}</span>
+              <span class="divider-line"></span>
+            </div>
+            <div class="third-tier-stages">
+              <span class="stage ultra-violet">{$t('globalCitizenship.spiralDynamics.stages.ultraviolet')}</span>
+              <span class="stage clear">{$t('globalCitizenship.spiralDynamics.stages.clear')}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Foundation Message -->
   <FoundationMessage />
   
@@ -109,7 +157,7 @@
           <div class="framework-links">
             <a href="{base}/frameworks/docs/implementation/energy">{$t('globalCitizenship.frameworks.tier1.climate')}</a>
             <a href="{base}/frameworks/docs/implementation/peace">{$t('globalCitizenship.frameworks.tier1.peace')}</a>
-            <a href="{base}/frameworks/docs/implementation/indigenous">{$t('globalCitizenship.frameworks.tier1.indigenous')}</a>
+             <a href="{base}/frameworks/docs/implementation/indigenous">{$t('globalCitizenship.frameworks.tier1.indigenous')}</a>
             <a href="{base}/frameworks/docs/implementation/tier-1">{$t('globalCitizenship.frameworks.tier1.viewAll')} →</a>
           </div>
         </div>
@@ -162,6 +210,13 @@
     </div>
   </section>
 {/if}
+
+<!-- For Global Citizenship page -->
+<ShareButtons 
+  title="Global Citizenship Framework"
+  hashtags="GlobalCitizenship,SpiralDynamics,PlanetaryGovernance"
+  position="left"
+/>
 
 <style>
   /* Hero Section */
@@ -242,6 +297,128 @@
   .link-subtle:hover {
     color: #DAA520;
     border-bottom-color: #DAA520;
+  }
+  
+  /* Spiral Dynamics Section */
+  .spiral-dynamics-invitation {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #FEF7ED 0%, #F3E8FF 100%);
+    margin: 2rem 0;
+  }
+
+  .spiral-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .spiral-text h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2B4B8C;
+    margin-bottom: 1rem;
+  }
+
+  .spiral-text p {
+    color: #4B5563;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .spiral-link {
+    display: inline-block;
+    color: #2B4B8C;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    background: rgba(218, 165, 32, 0.1);
+    border-radius: 8px;
+    border: 2px solid #DAA520;
+    transition: all 0.3s ease;
+  }
+
+  .spiral-link:hover {
+    background: #DAA520;
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .spiral-visual {
+    text-align: center;
+  }
+
+  .spiral-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .spiral-stages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .first-tier-stages,
+  .second-tier-stages,
+  .third-tier-stages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  .tier-divider {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .divider-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #9CA3AF, transparent);
+  }
+
+  .tier-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #6B7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+  }
+
+  .stage {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  }
+
+  .stage.beige { background: #8B7355; }
+  .stage.purple { background: #8B5A96; }
+  .stage.red { background: #DC2626; }
+  .stage.blue { background: #2563EB; }
+  .stage.orange { background: #EA580C; }
+  .stage.green { background: #16A34A; }
+  .stage.yellow { background: #EAB308; }
+  .stage.turquoise { background: #0D9488; }
+  .stage.coral { background: #FF7F7F; }
+  .stage.ultra-violet { background: #8A2BE2; }
+  .stage.clear { 
+    background: linear-gradient(135deg, #FFFFFF 0%, #F0F8FF 50%, #E6E6FA 100%); 
+    color: #4B5563;
+    border: 2px solid #D1D5DB;
+    text-shadow: none;
   }
   
   /* Frameworks Section */

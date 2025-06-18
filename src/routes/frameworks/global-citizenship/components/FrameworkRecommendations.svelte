@@ -104,7 +104,18 @@
       color: '#8A2BE2',
       route: '/frameworks/docs/implementation/ethics',
       icon: '⚖️'
-    }
+    },
+    'spiral-dynamics': {
+      name: 'Spiral Dynamics',
+      description: 'Understanding how different value systems emerge and evolve helps navigate the complexity of global citizenship. This framework reveals why people approach the same challenges so differently.',
+      tier: 'developmental',
+      color: '#8B4513',
+      route: 'https://www.spiralize.org',
+      external: true,
+      icon: '🌀',
+      benefits: ['Cross-cultural understanding', 'Systems thinking', 'Conflict resolution'],
+      type: 'developmental'
+    },
   };
   
   // Get framework details
@@ -139,6 +150,20 @@
       4: { label: 'globalCitizenship.tiers.tier4', class: 'tier-4', priority: 'visionary' }
     };
     return tierConfig[tier] || tierConfig[1];
+  }
+
+  function shouldShowSpiralDynamics() {
+    if (!quizResults) return false;
+    
+    // Show for users who selected "systems thinking" or have multiple complex interests
+    const systemsThinking = quizResults.values === 'systems' || 
+                           quizResults.contribution === 'transforming' ||
+                           quizResults.scale === 'connected';
+    
+    // Also show for users with diverse interests (multiple recommended frameworks)
+    const complexInterests = getRecommendedFrameworks().length >= 3;
+    
+    return systemsThinking || complexInterests;
   }
 </script>
 
@@ -194,6 +219,58 @@
         {/each}
       </div>
     </div>
+
+    {#if shouldShowSpiralDynamics()}
+      <div class="developmental-framework-section">
+        <div class="developmental-header">
+          <h3>🌀 Enhance Your Understanding</h3>
+          <p>Understanding different worldviews can deepen your global citizenship practice</p>
+        </div>
+        
+        <div class="developmental-framework-recommendation">
+          <div class="framework-card spiral-dynamics">
+            <div class="framework-header">
+              <div class="framework-icon-large">🌀</div>
+              <div class="framework-meta">
+                <h4>Spiral Dynamics</h4>
+                <span class="framework-badge developmental">Developmental Framework</span>
+              </div>
+            </div>
+            
+            <div class="framework-content">
+              <p>Understanding how different value systems emerge and evolve helps navigate the complexity of global citizenship. This framework reveals why people approach the same challenges so differently.</p>
+              
+              <div class="framework-benefits">
+                <span class="benefit">Cross-cultural understanding</span>
+                <span class="benefit">Systems thinking</span>
+                <span class="benefit">Conflict resolution</span>
+              </div>
+              
+              <div class="spiral-stages-preview">
+                <div class="stages-container">
+                  <span class="stage-dot beige" title="Survival"></span>
+                  <span class="stage-dot purple" title="Tribal"></span>
+                  <span class="stage-dot red" title="Power"></span>
+                  <span class="stage-dot blue" title="Order"></span>
+                  <span class="stage-dot orange" title="Achievement"></span>
+                  <span class="stage-dot green" title="Community"></span>
+                  <span class="stage-dot yellow" title="Integral"></span>
+                  <span class="stage-dot turquoise" title="Holistic"></span>
+                </div>
+                <span class="stages-label">8 Stages of Human Development</span>
+              </div>
+            </div>
+            
+            <div class="framework-action">
+              <a href="https://www.spiralize.org" target="_blank" rel="noopener noreferrer" class="explore-framework">
+                Learn for Free at Spiralize.org →
+              </a>
+              <span class="external-note">External resource</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    {/if}
     
     <!-- Related Frameworks -->
     {#if getRelatedFrameworks().length > 0}
@@ -585,6 +662,241 @@
     
     .summary-content {
       gap: 1.5rem;
+    }
+  }
+
+  /* Developmental Framework Section */
+  .developmental-framework-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #FEF7ED 0%, #F3E8FF 100%);
+    border-radius: 16px;
+    border: 2px solid rgba(139, 69, 19, 0.1);
+  }
+
+  .developmental-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .developmental-header h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2B4B8C;
+    margin-bottom: 0.5rem;
+  }
+
+  .developmental-header p {
+    color: #6B7280;
+    font-size: 1.125rem;
+  }
+
+  .developmental-framework-recommendation {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .framework-card.spiral-dynamics {
+    background: white;
+    border: 2px solid #8B4513;
+    border-radius: 16px;
+    padding: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(139, 69, 19, 0.1);
+  }
+
+  .framework-card.spiral-dynamics:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(139, 69, 19, 0.2);
+    border-color: #A0522D;
+  }
+
+  .framework-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    color: white;
+  }
+
+  .framework-icon-large {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+  }
+
+  .framework-meta h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: white;
+  }
+
+  .framework-badge.developmental {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .framework-content {
+    padding: 1.5rem;
+  }
+
+  .framework-content p {
+    color: #4B5563;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .framework-benefits {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .benefit {
+    background: rgba(43, 75, 140, 0.1);
+    color: #2B4B8C;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid rgba(43, 75, 140, 0.2);
+  }
+
+  .spiral-stages-preview {
+    background: rgba(139, 69, 19, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .stages-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .stage-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: help;
+    transition: transform 0.2s ease;
+  }
+
+  .stage-dot:hover {
+    transform: scale(1.2);
+  }
+
+  .stage-dot.beige { background: #8B7355; }
+  .stage-dot.purple { background: #8B5A96; }
+  .stage-dot.red { background: #DC2626; }
+  .stage-dot.blue { background: #2563EB; }
+  .stage-dot.orange { background: #EA580C; }
+  .stage-dot.green { background: #16A34A; }
+  .stage-dot.yellow { background: #EAB308; }
+  .stage-dot.turquoise { background: #0D9488; }
+
+  .stages-label {
+    font-size: 0.875rem;
+    color: #6B7280;
+    font-weight: 500;
+  }
+
+  .framework-action {
+    padding: 1.5rem;
+    background: #F9FAFB;
+    border-top: 1px solid #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .explore-framework {
+    color: #2B4B8C;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-bottom: 2px solid rgba(218, 165, 32, 0.5);
+    transition: all 0.2s ease;
+    flex-grow: 1;
+  }
+
+  .explore-framework:hover {
+    color: #DAA520;
+    border-bottom-color: #DAA520;
+    transform: translateX(3px);
+  }
+
+  .external-note {
+    font-size: 0.8rem;
+    color: #9CA3AF;
+    font-style: italic;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .developmental-framework-section {
+      margin: 2rem 0;
+      padding: 1.5rem;
+    }
+    
+    .framework-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.75rem;
+    }
+    
+    .framework-meta h4 {
+      margin-bottom: 0.25rem;
+    }
+    
+    .framework-benefits {
+      justify-content: center;
+    }
+    
+    .framework-action {
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: stretch;
+      text-align: center;
+    }
+    
+    .stages-container {
+      gap: 0.25rem;
+    }
+    
+    .stage-dot {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .developmental-header h3 {
+      font-size: 1.5rem;
+    }
+    
+    .framework-content p {
+      font-size: 1rem;
+    }
+    
+    .benefit {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
     }
   }
 </style>

@@ -3,7 +3,6 @@
   import { t } from '$lib/i18n';
   import { onMount } from 'svelte';
   import CompassInfoPanel from './CompassInfoPanel.svelte';
-  import FrameworkConnections from './FrameworkConnections.svelte';
   import { generateRecommendations } from './compassData.js';
   
   export let quizResults = null;
@@ -247,9 +246,6 @@
       {closeInfoPanel}
     />
   </div>
-  
-  <!-- Framework Connections Component -->
-  <FrameworkConnections {quizResults} />
   
   <!-- Compass Legend -->
   <div class="compass-legend">
