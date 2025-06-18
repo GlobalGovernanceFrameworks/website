@@ -15,6 +15,7 @@
   let pageDescription = '';
   let copySuccess = false;
   let visible = false;
+  let mobileExpanded = false; // New state for mobile panel
   
   onMount(() => {
     if (browser) {
@@ -32,6 +33,16 @@
     }
   });
   
+  // Toggle mobile panel
+  function toggleMobilePanel() {
+    mobileExpanded = !mobileExpanded;
+  }
+  
+  // Close mobile panel when a share action is performed
+  function closeMobilePanel() {
+    mobileExpanded = false;
+  }
+  
   // Native Web Share API
   async function shareNative() {
     if (navigator.share) {
@@ -41,6 +52,7 @@
           text: pageDescription,
           url: currentUrl,
         });
+        closeMobilePanel();
       } catch (err) {
         console.log('Error sharing:', err);
       }
@@ -50,27 +62,32 @@
   function shareToLinkedIn() {
     const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`;
     openShareWindow(linkedinUrl);
+    closeMobilePanel();
   }
   
   function shareToTwitter() {
     const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(pageTitle)}&hashtags=${encodeURIComponent(hashtags)}`;
     openShareWindow(twitterUrl);
+    closeMobilePanel();
   }
   
   function shareToFacebook() {
     const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
     openShareWindow(facebookUrl);
+    closeMobilePanel();
   }
   
   function shareToBluesky() {
     const blueskyText = `${pageTitle} ${currentUrl} #${hashtags.split(',').join(' #')}`;
     const blueskyUrl = `https://bsky.app/intent/compose?text=${encodeURIComponent(blueskyText)}`;
     openShareWindow(blueskyUrl);
+    closeMobilePanel();
   }
   
   function shareToReddit() {
     const redditUrl = `https://reddit.com/submit?url=${encodeURIComponent(currentUrl)}&title=${encodeURIComponent(pageTitle)}`;
     openShareWindow(redditUrl);
+    closeMobilePanel();
   }
   
   function shareViaEmail() {
@@ -78,6 +95,7 @@
     const body = encodeURIComponent(`I thought you might find this interesting:\n\n${pageTitle}\n${pageDescription}\n\n${currentUrl}\n\nShared from Global Governance Framework`);
     const emailUrl = `mailto:?subject=${subject}&body=${body}`;
     window.location.href = emailUrl;
+    closeMobilePanel();
   }
   
   async function copyLink() {
@@ -89,6 +107,7 @@
       setTimeout(() => {
         copySuccess = false;
       }, 2000);
+      closeMobilePanel();
     } catch (err) {
       // Fallback for older browsers
       const textArea = document.createElement('textarea');
@@ -101,6 +120,7 @@
       setTimeout(() => {
         copySuccess = false;
       }, 2000);
+      closeMobilePanel();
     }
   }
   
@@ -134,7 +154,30 @@
 
 {#if browser && visible}
   <div class="share-buttons" class:left={position === 'left'} class:right={position === 'right'}>
-    <div class="share-container">
+    <!-- Mobile Toggle Button -->
+    <button 
+      class="mobile-toggle-btn"
+      class:expanded={mobileExpanded}
+      on:click={toggleMobilePanel}
+      title={mobileExpanded ? 'Close share menu' : 'Open share menu'}
+    >
+      <div class="toggle-icon" class:rotated={mobileExpanded}>
+        {#if mobileExpanded}
+          <!-- Close X icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+          </svg>
+        {:else}
+          <!-- Share icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+          </svg>
+        {/if}
+      </div>
+    </button>
+
+    <!-- Share Panel -->
+    <div class="share-container" class:mobile-expanded={mobileExpanded}>
       <!-- Share Label -->
       <div class="share-label">
         <span class="share-text">Share</span>
@@ -291,6 +334,49 @@
     }
   }
   
+  /* Mobile Toggle Button */
+  .mobile-toggle-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #2B4B8C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(43, 75, 140, 0.3);
+    transition: all 0.3s ease;
+    z-index: 102;
+  }
+  
+  .mobile-toggle-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(43, 75, 140, 0.4);
+  }
+  
+  .mobile-toggle-btn:active {
+    transform: scale(0.95);
+  }
+  
+  .mobile-toggle-btn.expanded {
+    background: #dc2626;
+    transform: rotate(90deg);
+  }
+  
+  .toggle-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  
   .share-container {
     background: white;
     border-radius: 16px;
@@ -414,34 +500,63 @@
       transform: none;
     }
     
-    .share-container {
-      max-width: 80px;
-      padding: 0.75rem;
-    }
-    
-    .share-container:hover {
-      max-width: 80px;
-    }
-    
-    .share-label {
-      margin-bottom: 0.75rem;
-    }
-    
-    .share-text,
-    .button-label {
-      display: none;
-    }
-    
-    .buttons-list {
-      gap: 0.5rem;
-    }
-    
-    .share-button {
-      padding: 0.6rem;
+    /* Show mobile toggle button */
+    .mobile-toggle-btn {
+      display: flex;
+      align-items: center;
       justify-content: center;
     }
     
-    .button-icon {
+    /* Hide share container by default on mobile */
+    .share-container {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      max-width: 280px;
+      width: 280px;
+      opacity: 0;
+      transform: translateY(20px) scale(0.9);
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 101;
+    }
+    
+    /* Show share container when expanded */
+    .share-container.mobile-expanded {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: all;
+    }
+    
+    /* Mobile share container styles */
+    .share-container.mobile-expanded:hover {
+      max-width: 280px;
+    }
+    
+    .share-container .share-label {
+      margin-bottom: 0.75rem;
+    }
+    
+    .share-container .share-text {
+      opacity: 1;
+      display: block;
+    }
+    
+    .share-container .button-label {
+      opacity: 1;
+      display: block;
+    }
+    
+    .share-container .buttons-list {
+      gap: 0.5rem;
+    }
+    
+    .share-container .share-button {
+      padding: 0.75rem;
+      justify-content: flex-start;
+    }
+    
+    .share-container .button-icon {
       width: 18px;
       height: 18px;
     }
@@ -449,18 +564,34 @@
   
   /* Hide on very small screens or when space is limited */
   @media (max-width: 480px) {
-    .share-buttons {
-      bottom: 80px; /* Above potential nav bars */
+    .mobile-toggle-btn {
+      bottom: 20px;
+      right: 16px;
+      width: 52px;
+      height: 52px;
+    }
+    
+    .share-container {
+      right: 16px;
+      bottom: 80px;
+      max-width: calc(100vw - 32px);
+      width: calc(100vw - 32px);
+    }
+    
+    .share-container.mobile-expanded:hover {
+      max-width: calc(100vw - 32px);
     }
   }
   
   /* Accessibility improvements */
-  .share-button:focus {
+  .share-button:focus,
+  .mobile-toggle-btn:focus {
     outline: 2px solid var(--brand-color, #2B4B8C);
     outline-offset: 2px;
   }
   
-  .share-button:focus:not(:focus-visible) {
+  .share-button:focus:not(:focus-visible),
+  .mobile-toggle-btn:focus:not(:focus-visible) {
     outline: none;
   }
   
@@ -470,7 +601,9 @@
     .share-button,
     .share-container,
     .button-label,
-    .share-text {
+    .share-text,
+    .mobile-toggle-btn,
+    .toggle-icon {
       transition: none;
       animation: none;
     }
@@ -478,6 +611,10 @@
     .share-buttons {
       opacity: 1;
       transform: translateY(-50%);
+    }
+    
+    .mobile-toggle-btn.expanded {
+      transform: none;
     }
   }
   
@@ -487,8 +624,8 @@
       border: 2px solid;
     }
     
-    .share-button {
+    .share-button,
+    .mobile-toggle-btn {
       border-width: 2px;
     }
   }
-</style>
