@@ -69,7 +69,7 @@
   }
 
   function viewGitHub() {
-    window.open('https://github.com/GlobalGovernanceFramework/governance-framework-site', '_blank');
+    window.open('https://github.com/GlobalGovernanceFrameworks/website', '_blank');
   }
 
   onMount(() => {

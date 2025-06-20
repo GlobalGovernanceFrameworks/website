@@ -60,7 +60,9 @@
       
       {#if disclaimerExpanded}
         <div class="info-box-content disclaimer-content" style="animation: slideDown 0.3s ease-out;">
-          <p>{$t('home.disclaimer.text')}</p>
+          {#each $t('home.disclaimer.text') || [] as paragraph}
+            <p>{paragraph}</p>
+          {/each}
         </div>
       {/if}
     </div>
@@ -117,7 +119,7 @@
           <p>{$t('home.languageStatement.paragraph2')}</p>
           <p>{$t('home.languageStatement.paragraph3')}</p>
           <div style="text-align: center; margin-top: 1.5rem;">
-            <a href="{base}/contact" style="display: inline-block; background-color: #B8860B; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
+            <a href="{base}/get-involved/translations" style="display: inline-block; background-color: #B8860B; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.2s;">
               {$t('home.languageStatement.button')}
             </a>
           </div>

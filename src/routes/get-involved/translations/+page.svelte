@@ -48,7 +48,7 @@
   function downloadMarkdown() {
     const filename = `translation-guide-${currentLocale}.md`;
     const link = document.createElement('a');
-    link.href = `${base}/${filename}`;
+    link.href = `${base}/get-involved/${filename}`;
     link.download = filename;
     document.body.appendChild(link);
     link.click();
@@ -58,7 +58,7 @@
   function downloadPdf() {
     const filename = `translation-guide-${currentLocale}.pdf`;
     const link = document.createElement('a');
-    link.href = `${base}/${filename}`;
+    link.href = `${base}/get-involved/${filename}`;
     link.download = filename;
     document.body.appendChild(link);
     link.click();

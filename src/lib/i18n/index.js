@@ -116,6 +116,78 @@ async function loadTranslations(newLocale, route = '/') {
       } catch (e) {
         console.error('Error loading aiFutures translations:', e);
       }
+    } else if (route === '/get-involved') {
+      // Get involved main landing page
+      try {
+        if (newLocale === 'en') {
+          translationData.getInvolved = (await import('./en/getInvolved.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.getInvolved = (await import('./sv/getInvolved.json')).default;
+        }
+        console.log('Loaded getInvolved translations:', translationData.getInvolved);
+      } catch (e) {
+        console.error('Error loading getInvolved translations:', e);
+      }
+    } else if (route.startsWith('/get-involved/website')) {
+      // Website contribution page
+      try {
+        if (newLocale === 'en') {
+          translationData.website = (await import('./en/website.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.website = (await import('./sv/website.json')).default;
+        }
+        console.log('Loaded website translations:', translationData.website);
+      } catch (e) {
+        console.error('Error loading website translations:', e);
+      }
+    } else if (route.startsWith('/get-involved/translations')) {
+      // Website translations page
+      try {
+        if (newLocale === 'en') {
+          translationData.translations = (await import('./en/translations.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.translations = (await import('./sv/translations.json')).default;
+        }
+        console.log('Loaded translation hub translations:', translationData.translations);
+      } catch (e) {
+        console.error('Error loading translation hub translations:', e);
+      }
+    } else if (route.startsWith('/get-involved/outreach')) {
+      // Outreach contribution page
+      try {
+        if (newLocale === 'en') {
+          translationData.outreach = (await import('./en/outreach.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.outreach = (await import('./sv/outreach.json')).default;
+        }
+        console.log('Loaded outreach translations:', translationData.outreach);
+      } catch (e) {
+        console.error('Error loading outreach translations:', e);
+      }
+    } else if (route.startsWith('/get-involved/frameworks')) {
+      // Frameworks contribution page
+      try {
+        if (newLocale === 'en') {
+          translationData.frameworks = (await import('./en/frameworks.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.frameworks = (await import('./sv/frameworks.json')).default;
+        }
+        console.log('Loaded frameworks translations:', translationData.frameworks);
+      } catch (e) {
+        console.error('Error loading frameworks translations:', e);
+      }
+    } else if (route.startsWith('/translations')) {
+      // Translations contributions page
+      try {
+        if (newLocale === 'en') {
+          translationData.translations = (await import('./en/translations.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.translations = (await import('./sv/translations.json')).default;
+        }
+        console.log('Loaded translations translations:', translationData.translations);
+      } catch (e) {
+        console.error('Error loading translations translations:', e);
+      }
     } else if (route.includes('/frameworks/global-citizenship')) {
       // Global Citizenship page
       try {
@@ -149,28 +221,6 @@ async function loadTranslations(newLocale, route = '/') {
         }
       } catch (e) {
         console.error('Error loading framework translations:', e);
-      }
-    } else if (route.startsWith('/get-involved/translations')) {
-      // Translations contributions page
-      try {
-        if (newLocale === 'en') {
-          translationData.translations = (await import('./en/translations.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.translations = (await import('./sv/translations.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading translations translations:', e);
-      }
-    } else if (route.startsWith('/get-involved/website')) {
-      // Website contribution page
-      try {
-        if (newLocale === 'en') {
-          translationData.website = (await import('./en/website.json')).default;
-        } else if (newLocale === 'sv') {
-          translationData.website = (await import('./sv/website.json')).default;
-        }
-      } catch (e) {
-        console.error('Error loading translations translations:', e);
       }
     } else if (route.startsWith('/privacy')) {
       // Privacy page

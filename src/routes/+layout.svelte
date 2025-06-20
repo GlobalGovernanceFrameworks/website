@@ -12,30 +12,25 @@
   import { registerServiceWorker } from '$lib/utils/registerServiceWorker';
   
   // Initialize stores at the top level
-  const translationsLoaded = writable(true); // Start as true to avoid loading screen issues
   let serviceWorkerRegistered = false;
   let loadingTimeout = null;
   
-  // Modify mounted behavior - only run i18n in browser
+  // Initialize as false to prevent premature rendering
+  const translationsLoaded = writable(false);
+
   onMount(async () => {
     if (browser) {
       try {
         const initLocale = detectLocale();
         let path = $page.url.pathname;
-        console.log(`Initial path: ${path}`);
         
+        // Load translations BEFORE setting as loaded
         await loadTranslations(initLocale, path);
         locale.set(initLocale);
-        translationsLoaded.set(true);
+        translationsLoaded.set(true); // Only set true after translations load
       } catch (e) {
         console.error("Translation loading error:", e);
-        translationsLoaded.set(true); // Always show content even if translations fail
-      }
-
-      try {
-        registerServiceWorker();
-      } catch (e) {
-        console.warn('Service worker registration failed:', e);
+        translationsLoaded.set(true); // Still show content on error
       }
     }
   });
