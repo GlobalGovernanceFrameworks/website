@@ -11,7 +11,7 @@ section: index
 - [Implementation Tools](#implementation-tools)
 - [Access and Usage](#access-and-usage)
 
-In a world marked by fragmentation and escalating tensions, the *Peace & Conflict Resolution Framework* emerges as a comprehensive blueprint for transforming conflict into opportunity, weaving together preventive diplomacy, multi-track engagement, and restorative justice. Drawing on both ancient wisdom and cutting-edge technology, it reimagines peace not as merely the absence of violence, but as dynamic systems of cooperation spanning local communities to global institutions. This master index serves as the gateway to the framework, linking its sixteen sections and providing stakeholders—mediators, policymakers, community leaders, and peace advocates—with practical tools to navigate complex conflicts and build sustainable peace in diverse contexts.
+In a world marked by fragmentation and escalating tensions, the *Peace & Conflict Resolution Framework* emerges as a comprehensive blueprint for transforming conflict into opportunity, weaving together preventive diplomacy, multi-track engagement, and restorative justice. Drawing on both ancient wisdom and cutting-edge technology, it reimagines peace not as merely the absence of violence, but as dynamic systems of cooperation spanning local communities to global institutions. This master index serves as the gateway to the framework, linking its twenty-seven sections and providing stakeholders—mediators, policymakers, community leaders, and peace advocates—with practical tools to navigate complex conflicts and build sustainable peace in diverse contexts.
 
 ### <a id="overview"></a>Overview
 The framework provides a holistic architecture for effective peace governance across multiple scales, addressing both immediate conflict drivers and structural roots of violence. It integrates preventive diplomacy with restorative justice, indigenous wisdom with digital innovation, and local agency with global coordination. Aligned with the UN Sustainable Development Goals (particularly SDG 16: Peace, Justice and Strong Institutions), it prioritizes inclusivity, trauma-informed approaches, and environmental stewardship while offering practical implementation pathways tailored to diverse regional and cultural contexts.
@@ -29,35 +29,110 @@ The framework provides a holistic architecture for effective peace governance ac
 - Comprehensive metrics framework measuring both negative and positive peace
 
 ### <a id="framework-sections"></a>Framework Sections
-The framework is organized into twentyseven interconnected sections, each addressing critical dimensions of peace governance:
+
+**New to the Framework? Find Your Entry Point:**
+
+- **For Community Leaders & Mediators:** Begin with [Local Implementation](#local-implementation), [Indigenous Peacebuilding](#indigenous-integration), and [Mental Health & Psychosocial Support](#mental-health).
+- **For National Policymakers:** We recommend focusing on [Global Conflict Resolution](#global-implementation), [Military & Security Transformation](#military-transformation), and [Structural Conflict Prevention](#structural-prevention).
+- **For Technology & Cybersecurity Experts:** Dive into [Digital Peace Infrastructure](#digital-infrastructure), [AI & Digital Peace Ethics](#ai-ethics), and [Emerging Technologies](#emerging-technologies).
+- **For Business & Economic Leaders:** Start with [Peace-Business Integration](#peace-business-integration), [Peace Financing](#peace-financing), and [Structural Conflict Prevention](#structural-prevention).
+- **For Youth & Educational Leaders:** Explore [Educational & Cultural Infrastructure](#educational-cultural-infrastructure), [Youth Peace Action Guide](/frameworks/tools/peace/youth-peace-action-guide-en.pdf), and [Media & Information Capacities](#media-information).
+
+The framework is organized into twenty-seven interconnected sections, clustered by theme for easier navigation:
+
+#### **Cluster A: Foundations & Principles**
 
 1. **[Core Peace & Conflict Resolution Principles](/frameworks/docs/implementation/peace#core-principles)**: Establishes foundational principles including preventive diplomacy, multi-track engagement, restorative justice, and developmental value systems for conflict analysis.
-2. **[Local Conflict Resolution Implementation](/frameworks/docs/implementation/peace#local-implementation)**: Details community-based approaches including peace committees, indigenous justice systems, and urban conflict governance.
-3. **[Traditional & Indigenous Peacebuilding](/frameworks/docs/implementation/peace#indigenous-integration)**: Outlines integration of indigenous knowledge, governance, and reconciliation practices.
-4. **[Regional Conflict Resolution](/frameworks/docs/implementation/peace#regional-implementation)**: Describes frameworks for cross-border peacebuilding, transboundary resource management, and regional reconciliation mechanisms.
-5. **[Global Conflict Resolution](/frameworks/docs/implementation/peace#global-implementation)**: Covers global peace infrastructure, arms governance, and international justice mechanisms.
-6. **[Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)**: Explores cyber conflict prevention, technology-enabled early warning, digital dialogue platforms, and open-source peace tools.
-7. **[AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics)**: Provides frameworks for ethical AI, digital risks, misinformation resilience, and inclusion in peacebuilding.
-8. **[Emerging Technologies for Peace](/frameworks/docs/implementation/peace#emerging-technologies)**: Examines blockchain, VR/AR, and advanced data systems applications for peace.
-9. **[Hybrid & Non-State Actor Engagement](/frameworks/docs/implementation/peace#non-state-actors)**: Addresses armed groups, DDR governance, and organized crime-conflict connections.
-10. **[Military & Security Transformation](/frameworks/docs/implementation/peace#military-transformation)**: Outlines defense-to-protection transition, cooperative security, and peace industry conversion.
-11. **[Whistleblower Protection in Authoritarian Contexts](/frameworks/docs/implementation/peace#whistleblower-protection)**: Provides comprehensive security protocols for whistleblowers in high-risk environments, including digital security, physical protection, and psychosocial support systems.
-12. **[Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention)**: Examines governance for equitable resource distribution, power-sharing, and recognition of identity to prevent structural violence.
-13. **[Climate & Resource Conflicts](/frameworks/docs/implementation/peace#climate-resource)**: Addresses climate-conflict management, resource diplomacy, and migration governance.
-14. **[Transitional Justice & Reconciliation](/frameworks/docs/implementation/peace#transitional-justice)**: Details comprehensive justice mechanisms, memorialization, and trust rebuilding.
-15. **[Mental Health & Psychosocial Support](/frameworks/docs/implementation/peace#mental-health)**: Covers trauma-informed peace processes and community healing approaches.
-16. **[Developmental Value Systems & Peace](/frameworks/docs/implementation/peace#developmental-value-systems)**: Explores how developmental value systems influence conflict and cooperation.
-17. **[Educational & Cultural Peace Infrastructure](/frameworks/docs/implementation/peace#educational-cultural-infrastructure)**: Promotes educational and cultural approaches to foster conflict resolution capacities.
-18. **[Peace Financing & Resource Mobilization](/frameworks/docs/implementation/peace#peace-financing)**: Explores innovative funding models, conflict-sensitive aid, and resource allocation for peacebuilding.
-19. **[Peace-Business Integration](/frameworks/docs/implementation/peace#peace-business-integration)**: Outlines corporate accountability, conflict-sensitive practices, and private sector roles in peacebuilding.
-20. **[Media & Information Peace Capacities](/frameworks/docs/implementation/peace#media-information)**: Addresses peace journalism, anti-hate monitoring, and information warfare governance.
-21. **[Context-Specific Implementation Roadmaps](/frameworks/docs/implementation/peace#context-specific-roadmaps)**: Provides tailored roadmaps for peace governance in high-tech democracies and low-trust post-conflict states.
-22. **[Implementation Timeline](/frameworks/docs/implementation/peace#implementation-timeline)**: Offers a phased roadmap for implementing peace governance across local, regional, and global scales.
-23. **[Implementation Challenges and Failures: Critical Lessons](/frameworks/docs/implementation/peace#implementation-challenges)**: Examines unsuccessful peace initiatives to extract vital lessons for practitioners on avoiding common pitfalls and adapting strategies to complex realities.
-24. **[Visualizations for Peace & Conflict Resolution Framework](/frameworks/docs/implementation/peace#visualizations)**: The framework incorporates powerful visual representations that illustrate key concepts and relationships, enabling stakeholders to better understand, communicate, and implement complex peace processes.
-25. **[Measuring Peace Governance Success](/frameworks/docs/implementation/peace#measuring-success)**: Defines metrics for evaluating peace governance, including structural, process, and impact indicators.
-26. **[Cross-Domain Integration](/frameworks/docs/implementation/peace#cross-domain-integration)**: Integrates peacebuilding with economic, environmental, and technological governance for holistic conflict resolution.
-27. **[Conclusion](/frameworks/docs/implementation/peace#conclusion)**: Synthesizes the framework’s approach and directs stakeholders to practical tools for sustainable peace.
+
+2. **[Developmental Value Systems & Peace](/frameworks/docs/implementation/peace#developmental-value-systems)**: Explores how developmental value systems influence conflict and cooperation.  
+***Integrates with:*** *#1 Core Principles, #15 Mental Health Support, #17 Educational Infrastructure.*
+
+3. **[Measuring Peace Governance Success](/frameworks/docs/implementation/peace#measuring-success)**: Defines metrics for evaluating peace governance, including structural, process, and impact indicators.  
+***Integrates with:*** *#1 Core Principles, #26 Cross-Domain Integration, #22 Implementation Timeline.*
+
+#### **Cluster B: Governance Across Scales**
+
+4. **[Local Conflict Resolution Implementation](/frameworks/docs/implementation/peace#local-implementation)**: <a id="local-implementation"></a>Details community-based approaches including peace committees, indigenous justice systems, and urban conflict governance.  
+***Integrates with:*** *#3 Indigenous Peacebuilding, #15 Mental Health Support, #17 Educational Infrastructure.*
+
+5. **[Regional Conflict Resolution](/frameworks/docs/implementation/peace#regional-implementation)**: Describes frameworks for cross-border peacebuilding, transboundary resource management, and regional reconciliation mechanisms.  
+***Integrates with:*** *#5 Global Implementation, #13 Climate & Resource Conflicts, #9 Non-State Actors.*
+
+6. **[Global Conflict Resolution](/frameworks/docs/implementation/peace#global-implementation)**: <a id="global-implementation"></a>Covers global peace infrastructure, arms governance, and international justice mechanisms.  
+***Integrates with:*** *#4 Regional Implementation, #10 Military Transformation, #14 Transitional Justice.*
+
+#### **Cluster C: Modern Conflict Arenas**
+
+7. **[Digital Peace Infrastructure](/frameworks/docs/implementation/peace#digital-infrastructure)**: <a id="digital-infrastructure"></a>Explores cyber conflict prevention, technology-enabled early warning, digital dialogue platforms, and open-source peace tools.  
+***Integrates with:*** *#7 AI Ethics, #8 Emerging Technologies, #20 Media & Information.*
+
+8. **[AI & Digital Peace Ethics](/frameworks/docs/implementation/peace#ai-ethics)**: <a id="ai-ethics"></a>Provides frameworks for ethical AI, digital risks, misinformation resilience, and inclusion in peacebuilding.  
+***Integrates with:*** *#6 Digital Infrastructure, #8 Emerging Technologies, #20 Media & Information.*
+
+9. **[Emerging Technologies for Peace](/frameworks/docs/implementation/peace#emerging-technologies)**: <a id="emerging-technologies"></a>Examines blockchain, VR/AR, and advanced data systems applications for peace.  
+***Integrates with:*** *#6 Digital Infrastructure, #7 AI Ethics, #18 Peace Financing.*
+
+10. **[Climate & Resource Conflicts](/frameworks/docs/implementation/peace#climate-resource)**: Addresses climate-conflict management, resource diplomacy, and migration governance.  
+***Integrates with:*** *#4 Regional Implementation, #9 Non-State Actors, #12 Structural Prevention.*
+
+11. **[Media & Information Peace Capacities](/frameworks/docs/implementation/peace#media-information)**: <a id="media-information"></a>Addresses peace journalism, anti-hate monitoring, and information warfare governance.  
+***Integrates with:*** *#6 Digital Infrastructure, #7 AI Ethics, #17 Educational Infrastructure.*
+
+#### **Cluster D: Human-Centered Approaches**
+
+12. **[Traditional & Indigenous Peacebuilding](/frameworks/docs/implementation/peace#indigenous-integration)**: <a id="indigenous-integration"></a>Outlines integration of indigenous knowledge, governance, and reconciliation practices.  
+***Integrates with:*** *#2 Local Implementation, #14 Transitional Justice, #17 Educational Infrastructure.*
+
+13. **[Transitional Justice & Reconciliation](/frameworks/docs/implementation/peace#transitional-justice)**: Details comprehensive justice mechanisms, memorialization, and trust rebuilding.  
+***Integrates with:*** *#3 Indigenous Peacebuilding, #15 Mental Health Support, #5 Global Implementation.*
+
+14. **[Mental Health & Psychosocial Support](/frameworks/docs/implementation/peace#mental-health)**: <a id="mental-health"></a>Covers trauma-informed peace processes and community healing approaches.  
+***Integrates with:*** *#2 Local Implementation, #14 Transitional Justice, #16 Developmental Value Systems.*
+
+15. **[Educational & Cultural Peace Infrastructure](/frameworks/docs/implementation/peace#educational-cultural-infrastructure)**: <a id="educational-cultural-infrastructure"></a>Promotes educational and cultural approaches to foster conflict resolution capacities.  
+***Integrates with:*** *#3 Indigenous Peacebuilding, #16 Developmental Value Systems, #20 Media & Information.*
+
+#### **Cluster E: Actor-Specific Engagement**
+
+16. **[Hybrid & Non-State Actor Engagement](/frameworks/docs/implementation/peace#non-state-actors)**: Addresses armed groups, DDR governance, and organized crime-conflict connections.  
+***Integrates with:*** *#4 Regional Implementation, #10 Military Transformation, #13 Climate & Resource Conflicts.*
+
+17. **[Military & Security Transformation](/frameworks/docs/implementation/peace#military-transformation)**: <a id="military-transformation"></a>Outlines defense-to-protection transition, cooperative security, and peace industry conversion.  
+***Integrates with:*** *#5 Global Implementation, #9 Non-State Actors, #19 Peace-Business Integration.*
+
+18. **[Whistleblower Protection in Authoritarian Contexts](/frameworks/docs/implementation/peace#whistleblower-protection)**: Provides comprehensive security protocols for whistleblowers in high-risk environments, including digital security, physical protection, and psychosocial support systems.  
+***Integrates with:*** *#6 Digital Infrastructure, #15 Mental Health Support, #12 Structural Prevention.*
+
+19. **[Peace-Business Integration](/frameworks/docs/implementation/peace#peace-business-integration)**: <a id="peace-business-integration"></a>Outlines corporate accountability, conflict-sensitive practices, and private sector roles in peacebuilding.  
+***Integrates with:*** *#18 Peace Financing, #10 Military Transformation, #12 Structural Prevention.*
+
+#### **Cluster F: Structural & Systemic Dimensions**
+
+20. **[Structural Conflict Prevention](/frameworks/docs/implementation/peace#structural-prevention)**: <a id="structural-prevention"></a>Examines governance for equitable resource distribution, power-sharing, and recognition of identity to prevent structural violence.  
+***Integrates with:*** *#13 Climate & Resource Conflicts, #19 Peace-Business Integration, #18 Peace Financing.*
+
+21. **[Peace Financing & Resource Mobilization](/frameworks/docs/implementation/peace#peace-financing)**: <a id="peace-financing"></a>Explores innovative funding models, conflict-sensitive aid, and resource allocation for peacebuilding.  
+***Integrates with:*** *#19 Peace-Business Integration, #8 Emerging Technologies, #12 Structural Prevention.*
+
+22. **[Cross-Domain Integration](/frameworks/docs/implementation/peace#cross-domain-integration)**: Integrates peacebuilding with economic, environmental, and technological governance for holistic conflict resolution.  
+***Integrates with:*** *#25 Measuring Success, #22 Implementation Timeline, #13 Climate & Resource Conflicts.*
+
+#### **Cluster G: Implementation & Learning**
+
+23. **[Context-Specific Implementation Roadmaps](/frameworks/docs/implementation/peace#context-specific-roadmaps)**: Provides tailored roadmaps for peace governance in high-tech democracies and low-trust post-conflict states.  
+***Integrates with:*** *#22 Implementation Timeline, #23 Implementation Challenges, #25 Measuring Success.*
+
+24. **[Implementation Timeline](/frameworks/docs/implementation/peace#implementation-timeline)**: Offers a phased roadmap for implementing peace governance across local, regional, and global scales.  
+***Integrates with:*** *#21 Context-Specific Roadmaps, #25 Measuring Success, #26 Cross-Domain Integration.*
+
+25. **[Implementation Challenges and Failures: Critical Lessons](/frameworks/docs/implementation/peace#implementation-challenges)**: Examines unsuccessful peace initiatives to extract vital lessons for practitioners on avoiding common pitfalls and adapting strategies to complex realities.  
+***Integrates with:*** *#21 Context-Specific Roadmaps, #22 Implementation Timeline, #25 Measuring Success.*
+
+26. **[Visualizations for Peace & Conflict Resolution Framework](/frameworks/docs/implementation/peace#visualizations)**: The framework incorporates powerful visual representations that illustrate key concepts and relationships, enabling stakeholders to better understand, communicate, and implement complex peace processes.  
+***Integrates with:*** *All sections - provides visual support for framework comprehension and implementation.*
+
+27. **[Conclusion](/frameworks/docs/implementation/peace#conclusion)**: Synthesizes the framework's approach and directs stakeholders to practical tools for sustainable peace.  
+***Integrates with:*** *All sections - provides synthesis and pathway to implementation tools.*
 
 Two specialized cross-cutting themes are integrated throughout: **Peace-Business Integration** with corporate accountability mechanisms, and **Developmental Value Systems** applying Spiral Dynamics to conflict transformation.
 
@@ -83,7 +158,7 @@ To bridge theory and practice, the framework provides practical tools and templa
   - [Post-Conflict Reconciliation Framework](/frameworks/tools/peace/reconciliation-framework-en.pdf)
   - [Private Sector Peace Engagement Guide](/frameworks/tools/peace/business-peace-guide-en.pdf)
   - [Military-Civilian Protection Transition Manual](/frameworks/tools/peace/protection-transition-manual-en.pdf)
-  - [Trauma-Informed Facilitation Toolkit](/frameworks/tools/peace/trauma-informed-toolkit-en.pdf)*: Guide facilitators in NVC, trauma-informed mediation, and cultural nuance.
+  - [Trauma-Informed Facilitation Toolkit](/frameworks/tools/peace/trauma-informed-toolkit-en.pdf): Guide facilitators in NVC, trauma-informed mediation, and cultural nuance.
 - **Advocacy & Scaling Tools**:
   - [Peace Advocacy Campaign Toolkit](/frameworks/tools/peace/peace-advocacy-toolkit-en.pdf)
   - [Peace Financing Navigator](/frameworks/tools/peace/peace-financing-navigator-en.pdf)
@@ -96,10 +171,9 @@ To bridge theory and practice, the framework provides practical tools and templa
   - [Hybrid Funding Agreement Template](/frameworks/tools/peace/hybrid-funding-agreement-en.pdf)
   - [Peace Fund Sustainability Calculator](/frameworks/tools/peace/peace-fund-sustainability-calculator-en.pdf)
 - **Traditional Peace Tools**
-- [Islamic-Informed Mediation Protocol](/frameworks/tools/peace/islamic-mediation-protocol-en.pdf)
-- [Confucian Harmony-Based Dialogue Template](/frameworks/tools/peace/confucian-dialogue-template-en.pdf)
-- [Cross-Cultural Peace Tradition Integration Guide](/frameworks/tools/peace/cross-cultural-integration-guide-en.pdf)
-
+  - [Islamic-Informed Mediation Protocol](/frameworks/tools/peace/islamic-mediation-protocol-en.pdf)
+  - [Confucian Harmony-Based Dialogue Template](/frameworks/tools/peace/confucian-dialogue-template-en.pdf)
+  - [Cross-Cultural Peace Tradition Integration Guide](/frameworks/tools/peace/cross-cultural-integration-guide-en.pdf)
 
 All tools are available in both PDF and editable markdown formats, with selected tools available in multiple languages. Access the complete [Tools Library](/frameworks/tools/peace) for all versions and formats.
 

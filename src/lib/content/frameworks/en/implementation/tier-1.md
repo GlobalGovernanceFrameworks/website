@@ -4,6 +4,8 @@ This tier includes the most urgent domains of global governance—areas where fa
 
 - [Climate & Energy Governance](/frameworks/docs/implementation/energy) (In Review)
 - [Peace & Conflict Resolution](/frameworks/docs/implementation/peace) (In Review)
+  - TODO: *Add missing resources: Guides, tools and templates*
+  - [Spiral Peacecraft: A Guide for Value-Based Conflict Resolution] (Planned)
 - [Indigenous Governance & Traditional Knowledge](/frameworks/docs/implementation/indigenous) (In Review)
 - [Healthcare Governance](/frameworks/docs/implementation/healthcare) (In Review)
 - [Food Systems & Agriculture](/frameworks/docs/implementation/food) (In Review)

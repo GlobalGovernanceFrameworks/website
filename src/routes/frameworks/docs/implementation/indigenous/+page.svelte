@@ -66,7 +66,7 @@
       // Scroll to the content area with smooth animation
       // Wait a tiny bit for the content to render
       setTimeout(() => {
-        const contentElement = document.querySelector('.section-content');
+        const contentElement = document.querySelector('.scroll-target');
         if (contentElement) {
           contentElement.scrollIntoView({ 
             behavior: 'smooth', 
@@ -580,6 +580,9 @@
         </div>
       {/if}
 
+      <!-- Scroll target for section content -->
+      <div id="section-content-start" class="scroll-target"></div>
+      
       <!-- Progress indicator for core sections -->
       {#if !isPrintMode && isCoreSection}
         <div class="progress-indicator">
@@ -1549,5 +1552,11 @@
     .notice-content p {
       font-size: 0.8rem;
     }
+  }
+
+  .scroll-target {
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
   }
 </style>

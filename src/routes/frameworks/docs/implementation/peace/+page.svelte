@@ -1,4 +1,3 @@
-```svelte
 <!-- src/routes/frameworks/docs/implementation/peace/+page.svelte -->
 <script>
   import { page } from '$app/stores';
@@ -12,6 +11,13 @@
 
   export let data;
 
+  // Add this after the export let data; line
+  $: if (browser && activeSection) {
+    console.log('Active section changed to:', activeSection);
+    console.log('Current scroll position:', window.pageYOffset);
+    console.log('Document height:', document.body.scrollHeight);
+    console.log('Window height:', window.innerHeight);
+  }
   onMount(() => {
     if (browser) {
       // First handle any section query parameter
@@ -28,15 +34,21 @@
           setActiveSection(hash);
         }
       }
+      // If no section specified, default to index
+      else {
+        setActiveSection('index');
+      }
 
       // Listen for hash changes without reloading the page
-      const handleHashChange = (event) => {
-        // Prevent the default behavior which might cause a page reload
-        event.preventDefault();
-        
+      const handleHashChange = () => {
         const hash = window.location.hash.substring(1);
-        if (hash && data.sections[hash] && activeSection !== hash) {
+        console.log('Hash changed to:', hash);
+        
+        if (hash && data.sections && data.sections[hash] && activeSection !== hash) {
+          console.log('Setting active section to:', hash);
           setActiveSection(hash);
+        } else if (hash && (!data.sections || !data.sections[hash])) {
+          console.warn(`Section '${hash}' not available. Available sections:`, Object.keys(data.sections || {}));
         }
       };
 
@@ -53,51 +65,35 @@
 
   // Function to set active section
   function setActiveSection(section) {
+    // Add validation and debugging
+    if (!data.sections || !data.sections[section]) {
+      console.warn(`Section '${section}' not found in loaded data. Available sections:`, Object.keys(data.sections || {}));
+      return;
+    }
+    
     activeSection = section;
     
     // Update the URL hash to reflect the current section (without page reload)
     if (browser) {
-      // Important: Use the history API to update just the hash without changing the path
-      const url = new URL(window.location.href);
-      url.hash = section;
-      
-      // Replace state rather than push to avoid creating extra history entries
-      history.replaceState(null, '', url.toString());
+      // Only update URL if the hash is different to avoid infinite loops
+      const currentHash = window.location.hash.substring(1);
+      if (currentHash !== section) {
+        const url = new URL(window.location.href);
+        url.hash = section;
+        history.replaceState(null, '', url.toString());
+      }
 
-      // Scroll to the content area with smooth animation
-      // Wait a tiny bit for the content to render
-      setTimeout(() => {
-        const contentElement = document.querySelector('.section-content');
-        if (contentElement) {
-          contentElement.scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'start',
-            inline: 'nearest'
-          });
-        }
-      }, 100);
+      // Force scroll to top immediately, then again after content renders
+      window.scrollTo(0, 0);
+      
+      // Wait for content to render, then scroll to top again
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
     }
   }
-
-  // Handle manual navigation with the back/forward buttons
-  afterUpdate(() => {
-    if (browser) {
-      const handleHashChange = () => {
-        const hash = window.location.hash;
-        if (hash && hash.length > 1) {
-          const sectionId = hash.substring(1);
-          if (data.sections[sectionId] && activeSection !== sectionId) {
-            setActiveSection(sectionId);
-          }
-        }
-      };
-
-      window.addEventListener('hashchange', handleHashChange);
-      return () => {
-        window.removeEventListener('hashchange', handleHashChange);
-      };
-    }
-  });
 
   // Check if we're in print mode
   const isPrintMode = data.isPrintMode;
@@ -116,44 +112,28 @@
   // This will track the current locale for our component
   $: currentLocale = $locale;
 
-  // Swedish translations for the introduction section
-  const introSv = {
-    title: "Freds- och Konfliktlösningsramverk",
-    overview: "Översikt",
-    paragraph1: "Freds- och Konfliktlösningsramverket erbjuder en omfattande styrningsarkitektur för att förebygga konflikter, lösa befintliga tvister på ett fredligt sätt och hantera de systemiska drivkrafterna bakom våld.",
-    paragraph2: "Detta ramverk integrerar lokala, regionala och globala tillvägagångssätt med både traditionella och digitala verktyg, trauma-informerade metoder och utvecklingsbaserade värdesystem för att omvandla konflikter till möjligheter för positivt samarbete."
-  };
-
-  // English translations as fallback
-  const introEn = {
-    title: "Peace & Conflict Resolution Framework",
-    overview: "Overview",
-    paragraph1: "The Peace & Conflict Resolution Framework provides a comprehensive governance architecture to prevent conflicts, resolve existing disputes peacefully, and address the systemic drivers of violence.",
-    paragraph2: "This framework integrates local, regional, and global approaches with both traditional and digital tools, trauma-informed methods, and developmental value systems to transform conflict into opportunities for positive cooperation."
-  };
-
   // Group sections logically with multi-lingual support
   function getSectionCategoryTitle(category) {
     const categoryTitles = {
       en: {
         overview: "Overview",
-        foundation: "Foundation",
-        approaches: "Peace Approaces", 
-        technology: "Technology & Digital",
-        structural: "Structural & Security",
-        specialized: "Specialized Areas",
-        implementation: "Implementation",
-        resources: "Resources"
+        foundations: "Foundations & Principles",
+        governance: "Governance Across Scales",
+        modern: "Modern Conflict Arenas",
+        human: "Human-Centered Approaches",
+        actors: "Actor-Specific Engagement",
+        structural: "Structural & Systemic Dimensions",
+        implementation: "Implementation & Learning"
       },
       sv: {
         overview: "Översikt",
-        foundation: "Grund",
-        approaches: "Fredsnärmande", 
-        technology: "Teknologi och digitalt",
-        structural: "Struktur och säkerhet",
-        specialized: "Specialiserade områden",
-        implementation: "Implementering", 
-        resources: "Resurser"
+        foundations: "Grunder och principer",
+        governance: "Styrning över skalor",
+        modern: "Moderna konfliktarenor",
+        human: "Människocentrerade tillvägagångssätt",
+        actors: "Aktörsspecifikt engagemang",
+        structural: "Strukturella och systemiska dimensioner",
+        implementation: "Implementering och lärande"
       }
     };
     
@@ -186,8 +166,7 @@
     return (texts[currentLocale] || texts.en)[part] || part;
   }
 
-
-  // Get section titles in current language
+  // Get section titles in current language - Updated with new ordering
   function getSectionTitle(section) {
     const titles = {
       en: {
@@ -196,71 +175,67 @@
         'youth-peace-action-guide': "Youth Peace Action Guide",
         'digital-peace-ethics-guide': "Digital Peace Ethics Guide",
         'index': "Overview",
-        'preamble': "Preamble",
         'core-principles': "Core Principles",
+        'developmental-value-systems': "Developmental Value Systems",
+        'measuring-success': "Measuring Peace Governance Success",
         'local-implementation': "Local Implementation",
-        'indigenous-integration': "Indigenous Integration",
         'regional-implementation': "Regional Implementation",
         'global-implementation': "Global Implementation",
-        'digital-infrastructure': "Digital Infrastructure",
-        'ai-ethics': "AI & Digital Ethics",
-        'emerging-technologies': "Emerging Technologies",
-        'non-state-actors': "Non-State Actors",
-        'military-transformation': "Military Transformation",
-        'whistleblower-protection': "Whistleblower Protection",
-        'structural-prevention': "Structural Prevention",
+        'digital-infrastructure': "Digital Peace Infrastructure",
+        'ai-ethics': "AI & Digital Peace Ethics",
+        'emerging-technologies': "Emerging Technologies for Peace",
         'climate-resource': "Climate & Resource Conflicts",
-        'transitional-justice': "Transitional Justice",
-        'mental-health': "Mental Health Support",
-        'developmental-value-systems': "Value Systems",
-        'educational-cultural-infrastructure': "Educational Infrastructure",
-        'peace-financing': "Peace Financing",
-        'peace-business-integration': "Business Integration",
-        'media-information': "Media & Information",
-        'context-specific-roadmaps': "Implementation Roadmaps",
-        'implementation-timeline': "Implementation Timeline",
-        'implementation-challenges': "Implementation Challenges",
-        'visualizations': "Visualizations",
-        'measuring-success': "Measuring Success",
+        'media-information': "Media & Information Peace Capacities",
+        'indigenous-integration': "Traditional & Indigenous Peacebuilding",
+        'transitional-justice': "Transitional Justice & Reconciliation",
+        'mental-health': "Mental Health & Psychosocial Support",
+        'educational-cultural-infrastructure': "Educational & Cultural Peace Infrastructure",
+        'non-state-actors': "Hybrid & Non-State Actor Engagement",
+        'military-transformation': "Military & Security Transformation",
+        'whistleblower-protection': "Whistleblower Protection in Authoritarian Contexts",
+        'peace-business-integration': "Peace-Business Integration",
+        'structural-prevention': "Structural Conflict Prevention",
+        'peace-financing': "Peace Financing & Resource Mobilization",
         'cross-domain-integration': "Cross-Domain Integration",
-        'conclusion': "Conclusion",
-        'quick-guide': "Quick Guide"
+        'context-specific-roadmaps': "Context-Specific Implementation Roadmaps",
+        'implementation-timeline': "Implementation Timeline",
+        'implementation-challenges': "Implementation Challenges and Failures",
+        'visualizations': "Visualizations for Peace & Conflict Resolution Framework",
+        'conclusion': "Conclusion"
       },
       sv: {
-        'technical-guide-policymakers': "Teknisk Guide för Beslutsfattare",
-        'community-peace-guide': "Samhällsguide för Fred",
-        'youth-peace-action-guide': "Fredshandlingsguide för Ungdomar",
-        'digital-peace-ethics-guide': "Digital Fredsetik Guide",
+        'technical-guide-policymakers': "Teknisk guide för beslutsfattare",
+        'community-peace-guide': "Samhällsguide för fred",
+        'youth-peace-action-guide': "Fredshandlingsguide för ungdomar",
+        'digital-peace-ethics-guide': "Digital fredsetik guide",
         'index': "Översikt",
-        'preamble': "Inledning",
         'core-principles': "Kärnprinciper",
-        'local-implementation': "Lokal Implementering",
-        'indigenous-integration': "Ursprungsfolksintegration",
-        'regional-implementation': "Regional Implementering",
-        'global-implementation': "Global Implementering",
-        'digital-infrastructure': "Digital Infrastruktur",
-        'ai-ethics': "AI & Digital Etik",
-        'emerging-technologies': "Ny Teknik",
-        'non-state-actors': "Icke-statliga Aktörer",
-        'military-transformation': "Militär Omvandling",
-        'whistleblower-protection': "Skydd för Visselblåsare",
-        'structural-prevention': "Strukturell Prevention",
-        'climate-resource': "Klimat- & Resurskonflikter",
-        'transitional-justice': "Övergångsrättvisa",
-        'mental-health': "Psykiskt Hälsostöd",
-        'developmental-value-systems': "Värdesystem",
-        'educational-cultural-infrastructure': "Utbildningsinfrastruktur",
-        'peace-financing': "Fredsfinansiering",
-        'peace-business-integration': "Företagsintegration",
-        'media-information': "Media & Information",
-        'context-specific-roadmaps': "Implementeringsplaner",
-        'implementation-timeline': "Implementeringstidslinje",
-        'implementation-challenges': "Implementeringsutmaningar",
-        'visualizations': "Visualiseringar",
-        'measuring-success': "Framgångsmätning",
+        'developmental-value-systems': "Utvecklingsbaserade värdesystem",
+        'measuring-success': "Mätning av fredsframgångar",
+        'local-implementation': "Lokal implementering",
+        'regional-implementation': "Regional implementering",
+        'global-implementation': "Global implementering",
+        'digital-infrastructure': "Digital fredsinfrastruktur",
+        'ai-ethics': "AI och digital fredsetik",
+        'emerging-technologies': "Framväxande teknologier för fred",
+        'climate-resource': "Klimat- och resurskonflikter",
+        'media-information': "Media- och informationsfredskapaciteter",
+        'indigenous-integration': "Traditionell och ursprungsfolksfredsbyggande",
+        'transitional-justice': "Övergångsrättvisa och försoning",
+        'mental-health': "Psykiskt hälsostöd och psykosocialt stöd",
+        'educational-cultural-infrastructure': "Utbildnings- och kulturell fredsinfrastruktur",
+        'non-state-actors': "Hybrid- och icke-statligt aktörsengagemang",
+        'military-transformation': "Militär- och säkerhetstransformation",
+        'whistleblower-protection': "Visselblåsarskydd i auktoritära sammanhang",
+        'peace-business-integration': "Fred-företagsintegration",
+        'structural-prevention': "Strukturell konfliktprevention",
+        'peace-financing': "Fredsfinansiering och resursmobilisering",
         'cross-domain-integration': "Tvärdomänintegration",
-        'conclusion': "Slutsats",
-        'quick-guide': "Snabbguide"
+        'context-specific-roadmaps': "Kontextspecifika implementeringsplaner",
+        'implementation-timeline': "Implementeringstidslinje",
+        'implementation-challenges': "Implementeringsutmaningar och misslyckanden",
+        'visualizations': "Visualiseringar för freds- och konfliktlösningsramverk",
+        'conclusion': "Slutsats"
       }
     };
     
@@ -278,73 +253,70 @@
         'Youth Peace Action Guide': 'Youth Guide',
         'Digital Peace Ethics Guide': 'Digital Ethics',
         'Core Principles': 'Principles',
+        'Developmental Value Systems': 'Value Systems',
+        'Measuring Peace Governance Success': 'Measuring Success',
         'Local Implementation': 'Local',
-        'Indigenous Integration': 'Indigenous',
         'Regional Implementation': 'Regional',
         'Global Implementation': 'Global',
-        'Digital Infrastructure': 'Digital',
-        'AI & Digital Ethics': 'AI Ethics',
-        'Emerging Technologies': 'Tech',
-        'Non-State Actors': 'Non-State',
-        'Military Transformation': 'Military',
-        'Whistleblower Protection': 'Whistleblower',
-        'Structural Prevention': 'Prevention',
+        'Digital Peace Infrastructure': 'Digital Infrastructure',
+        'AI & Digital Peace Ethics': 'AI Ethics',
+        'Emerging Technologies for Peace': 'Emerging Tech',
         'Climate & Resource Conflicts': 'Climate',
-        'Transitional Justice': 'Justice',
-        'Mental Health Support': 'Mental Health',
-        'Value Systems': 'Values',
-        'Educational Infrastructure': 'Education',
-        'Peace Financing': 'Financing',
-        'Business Integration': 'Business',
-        'Media & Information': 'Media',
-        'Implementation Roadmaps': 'Roadmaps',
-        'Implementation Timeline': 'Timeline',
-        'Implementation Challenges': 'Challenges',
-        'Visualizations': 'Visuals',
-        'Measuring Success': 'Metrics',
+        'Media & Information Peace Capacities': 'Media',
+        'Traditional & Indigenous Peacebuilding': 'Indigenous',
+        'Transitional Justice & Reconciliation': 'Justice',
+        'Mental Health & Psychosocial Support': 'Mental Health',
+        'Educational & Cultural Peace Infrastructure': 'Education',
+        'Hybrid & Non-State Actor Engagement': 'Non-State Actors',
+        'Military & Security Transformation': 'Military',
+        'Whistleblower Protection in Authoritarian Contexts': 'Whistleblower',
+        'Peace-Business Integration': 'Business',
+        'Structural Conflict Prevention': 'Prevention',
+        'Peace Financing & Resource Mobilization': 'Financing',
         'Cross-Domain Integration': 'Integration',
+        'Context-Specific Implementation Roadmaps': 'Roadmaps',
+        'Implementation Timeline': 'Timeline',
+        'Implementation Challenges and Failures': 'Challenges',
+        'Visualizations for Peace & Conflict Resolution Framework': 'Visuals',
         'Conclusion': 'Conclusion'
       },
       sv: {
-        'Teknisk Guide för Beslutsfattare': 'Teknisk Guide',
-        'Samhällsguide för Fred': 'Samhällsguide',
-        'Fredshandlingsguide för Ungdomar': 'Ungdomsguide',
-        'Digital Fredsetik Guide': 'Digital Etik',
+        'Teknisk guide för beslutsfattare': 'Teknisk guide',
+        'Samhällsguide för fred': 'Samhällsguide',
+        'Fredshandlingsguide för ungdomar': 'Ungdomsguide',
+        'Digital fredsetik guide': 'Digital etik',
         'Kärnprinciper': 'Principer',
-        'Lokal Implementering': 'Lokalt',
-        'Ursprungsfolksintegration': 'Ursprungsfolk',
-        'Regional Implementering': 'Regionalt',
-        'Global Implementering': 'Globalt',
-        'Digital Infrastruktur': 'Digital',
-        'AI & Digital Etik': 'AI Etik',
-        'Ny Teknik': 'Teknik',
-        'Icke-statliga Aktörer': 'Icke-statligt',
-        'Militär Omvandling': 'Militärt',
-        'Skydd för Visselblåsare': 'Visselblåsare',
-        'Strukturell Prevention': 'Prevention',
-        'Klimat- & Resurskonflikter': 'Klimat',
-        'Övergångsrättvisa': 'Rättvisa',
-        'Psykiskt Hälsostöd': 'Psykisk Hälsa',
-        'Värdesystem': 'Värden',
-        'Utbildningsinfrastruktur': 'Utbildning',
-        'Fredsfinansiering': 'Finansiering',
-        'Företagsintegration': 'Företag',
-        'Media & Information': 'Media',
-        'Implementeringsplaner': 'Planer',
-        'Implementeringstidslinje': 'Tidslinje',
-        'Implementeringsutmaningar': 'Utmaningar',
-        'Visualiseringar': 'Visuellt',
-        'Framgångsmätning': 'Mätning',
+        'Utvecklingsbaserade värdesystem': 'Värdesystem',
+        'Mätning av fredsframgångar': 'Mätning',
+        'Lokal implementering': 'Lokalt',
+        'Regional implementering': 'Regionalt',
+        'Global implementering': 'Globalt',
+        'Digital fredsinfrastruktur': 'Digital infrastruktur',
+        'AI och digital fredsetik': 'AI etik',
+        'Framväxande teknologier för fred': 'Framväxande teknik',
+        'Klimat- och resurskonflikter': 'Klimat',
+        'Media- och informationsfredskapaciteter': 'Media',
+        'Traditionell och ursprungsfolksfredsbyggande': 'Ursprungsfolk',
+        'Övergångsrättvisa och försoning': 'Rättvisa',
+        'Psykiskt hälsostöd och psykosocialt stöd': 'Psykisk hälsa',
+        'Utbildnings- och kulturell fredsinfrastruktur': 'Utbildning',
+        'Hybrid- och icke-statligt aktörsengagemang': 'Icke-statliga aktörer',
+        'Militär- och säkerhetstransformation': 'Militärt',
+        'Visselblåsarskydd i auktoritära sammanhang': 'Visselblåsare',
+        'Fred-företagsintegration': 'Företag',
+        'Strukturell konfliktprevention': 'Prevention',
+        'Fredsfinansiering och resursmobilisering': 'Finansiering',
         'Tvärdomänintegration': 'Integration',
+        'Kontextspecifika implementeringsplaner': 'Planer',
+        'Implementeringstidslinje': 'Tidslinje',
+        'Implementeringsutmaningar och misslyckanden': 'Utmaningar',
+        'Visualiseringar för freds- och konfliktlösningsramverk': 'Visuellt',
         'Slutsats': 'Slutsats'
       }
     };
     
     return (shortTitles[currentLocale] || shortTitles.en)[fullTitle] || fullTitle;
   }
-
-  // Choose the right intro text based on the current locale
-  $: intro = currentLocale === 'sv' ? introSv : introEn;
 
   $: if (browser && $locale) {
     invalidate('app:locale');
@@ -401,7 +373,7 @@
     sv: [
       {
         id: 'technical-guide-policymakers',
-        title: 'Teknisk Guide',
+        title: 'Teknisk guide',
         description: 'Detaljerad guide för beslutsfattare, medlare och regeringstjänstemän',
         icon: '📊'
       },
@@ -419,7 +391,7 @@
       },
       {
         id: 'digital-peace-ethics-guide',
-        title: 'Digital Etikguide',
+        title: 'Digital etikguide',
         description: 'Guide för digital fredsbyggande, etik och teknikstyrning',
         icon: '💻'
       }
@@ -434,41 +406,114 @@
                      activeSection === 'youth-peace-action-guide' ||
                      activeSection === 'digital-peace-ethics-guide';
 
-  // Accordion states for section categories
-  let foundationOpen = true; // Start with foundation open
-  let approachesOpen = false;
-  let technologyOpen = false;
+  // Accordion states for section categories - Updated to match new cluster system
+  let foundationsOpen = false; // Start with foundations open
+  let governanceOpen = false;
+  let modernOpen = false;
+  let humanOpen = false;
+  let actorsOpen = false;
   let structuralOpen = false;
-  let specializedOpen = false;
   let implementationOpen = false;
-  let resourcesOpen = false;
 
-  function toggleFoundation() {
-    foundationOpen = !foundationOpen;
+  // Auto-open accordions based on active section
+  $: {
+    if (activeSection) {
+      // Reset all accordions first
+      foundationsOpen = false;
+      governanceOpen = false;
+      modernOpen = false;
+      humanOpen = false;
+      actorsOpen = false;
+      structuralOpen = false;
+      implementationOpen = false;
+
+      // Open the relevant accordion based on active section
+      if (activeSection === 'index' || isGuideActive) {
+        foundationsOpen = true;
+      } else if (sectionGroups.foundations.includes(activeSection)) {
+        foundationsOpen = true;
+      } else if (sectionGroups.governance.includes(activeSection)) {
+        governanceOpen = true;
+      } else if (sectionGroups.modern.includes(activeSection)) {
+        modernOpen = true;
+      } else if (sectionGroups.human.includes(activeSection)) {
+        humanOpen = true;
+      } else if (sectionGroups.actors.includes(activeSection)) {
+        actorsOpen = true;
+      } else if (sectionGroups.structural.includes(activeSection)) {
+        structuralOpen = true;
+      } else if (sectionGroups.implementation.includes(activeSection)) {
+        implementationOpen = true;
+      }
+    }
   }
 
-  function toggleApproaches() {
-    approachesOpen = !approachesOpen;
+  // Coordinated scrolling when active section changes
+  $: if (browser && activeSection && data.sections && data.sections[activeSection]) {
+    // First, scroll to top of page immediately to prevent jumping
+    window.scrollTo(0, 0);
+    
+    // Then, after content renders, scroll to the content start
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const scrollTarget = document.getElementById('section-content-start');
+        
+        if (scrollTarget) {
+          scrollTarget.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+        
+        // Handle nav item scrolling separately
+        setTimeout(() => {
+          const activeNavItem = document.querySelector('.nav-item.active');
+          const navContainer = document.querySelector('.section-nav');
+          
+          if (activeNavItem && navContainer) {
+            const containerRect = navContainer.getBoundingClientRect();
+            const itemRect = activeNavItem.getBoundingClientRect();
+            
+            if (itemRect.top < containerRect.top || itemRect.bottom > containerRect.bottom) {
+              activeNavItem.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'nearest'
+              });
+            }
+          }
+        }, 300);
+      });
+    });
   }
 
-  function toggleTechnology() {
-    technologyOpen = !technologyOpen;
+  function toggleFoundations() {
+    foundationsOpen = !foundationsOpen;
+  }
+
+  function toggleGovernance() {
+    governanceOpen = !governanceOpen;
+  }
+
+  function toggleModern() {
+    modernOpen = !modernOpen;
+  }
+
+  function toggleHuman() {
+    humanOpen = !humanOpen;
+  }
+
+  function toggleActors() {
+    actorsOpen = !actorsOpen;
   }
 
   function toggleStructural() {
     structuralOpen = !structuralOpen;
   }
 
-  function toggleSpecialized() {
-    specializedOpen = !specializedOpen;
-  }
-
   function toggleImplementation() {
     implementationOpen = !implementationOpen;
-  }
-
-  function toggleResources() {
-    resourcesOpen = !resourcesOpen;
   }
 
   // For handling dropdown states
@@ -525,24 +570,25 @@
     }
   });
 
-  // Define section groupings for the 27 sections
+  // Define section groupings for the 27 sections - Updated with new ordering
   const sectionGroups = {
-    foundation: ['preamble', 'core-principles'],
-    approaches: ['local-implementation', 'indigenous-integration', 'regional-implementation', 'global-implementation'],
-    technology: ['digital-infrastructure', 'ai-ethics', 'emerging-technologies'],
-    structural: ['non-state-actors', 'military-transformation', 'whistleblower-protection', 'structural-prevention', 'climate-resource'],
-    specialized: ['transitional-justice', 'mental-health', 'developmental-value-systems', 'educational-cultural-infrastructure', 'peace-financing', 'peace-business-integration', 'media-information'],
-    implementation: ['context-specific-roadmaps', 'implementation-timeline', 'implementation-challenges'],
-    resources: ['visualizations', 'measuring-success', 'cross-domain-integration', 'conclusion']
+    foundations: ['core-principles', 'developmental-value-systems', 'measuring-success'],
+    governance: ['local-implementation', 'regional-implementation', 'global-implementation'],
+    modern: ['digital-infrastructure', 'ai-ethics', 'emerging-technologies', 'climate-resource', 'media-information'],
+    human: ['indigenous-integration', 'transitional-justice', 'mental-health', 'educational-cultural-infrastructure'],
+    actors: ['non-state-actors', 'military-transformation', 'whistleblower-protection', 'peace-business-integration'],
+    structural: ['structural-prevention', 'peace-financing', 'cross-domain-integration'],
+    implementation: ['context-specific-roadmaps', 'implementation-timeline', 'implementation-challenges', 'visualizations', 'conclusion']
   };
 
-  // Define which sections are "core" for progress tracking
+  // Define which sections are "core" for progress tracking - Updated ordering
   const coreSections = [
-    'preamble', 'core-principles', 
-    ...sectionGroups.approaches, 
-    ...sectionGroups.technology, 
+    ...sectionGroups.foundations,
+    ...sectionGroups.governance, 
+    ...sectionGroups.modern, 
+    ...sectionGroups.human, 
+    ...sectionGroups.actors, 
     ...sectionGroups.structural, 
-    ...sectionGroups.specialized, 
     ...sectionGroups.implementation
   ];
 
@@ -555,7 +601,7 @@
   $: coreProgress = isCoreSection ? currentCoreIndex / totalCoreSections : 0;
 
   // Check if current section is supplementary
-  $: isSupplementaryActive = sectionGroups.resources.includes(activeSection);
+  $: isSupplementaryActive = sectionGroups.implementation.includes(activeSection);
 </script>
 
 <svelte:window on:click={handleClickOutside}/>
@@ -565,7 +611,7 @@
     <FrameworkSidebar />
   {/if}
 
-  <div class="content">
+  <div class="content" id="main-content">
     <!-- Quick Access Card for Lite Guides -->
     {#if !isPrintMode && !isGuideActive && activeSection === 'index'}
       <div class="lite-guide-card">
@@ -630,20 +676,20 @@
             </button>
           </div>
 
-          <!-- Foundation Accordion -->
+          <!-- Foundations & Principles Accordion -->
           <div class="nav-accordion">
             <button 
               class="accordion-header" 
-              class:open={foundationOpen}
-              class:has-active={isGuideActive || sectionGroups.foundation.some(section => activeSection === section)}
-              on:click={toggleFoundation}
+              class:open={foundationsOpen}
+              class:has-active={isGuideActive || sectionGroups.foundations.some(section => activeSection === section)}
+              on:click={toggleFoundations}
             >
               <span class="accordion-icon">📚</span>
-              <span class="accordion-title">{getSectionCategoryTitle('foundation')}</span>
-              <span class="section-count">(6)</span>
-              <span class="toggle-arrow" class:rotated={foundationOpen}>▼</span>
+              <span class="accordion-title">{getSectionCategoryTitle('foundations')}</span>
+              <span class="section-count">({guides.length + sectionGroups.foundations.length})</span>
+              <span class="toggle-arrow" class:rotated={foundationsOpen}>▼</span>
             </button>
-            {#if foundationOpen}
+            {#if foundationsOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
                 {#each guides as guide}
                   <button 
@@ -655,7 +701,7 @@
                     <span class="nav-title">{getShortSectionTitle(guide.id)}</span>
                   </button>
                 {/each}
-                {#each sectionGroups.foundation as section}
+                {#each sectionGroups.foundations as section}
                   <button 
                     class="nav-item subsection-item" 
                     class:active={activeSection === section}
@@ -669,28 +715,28 @@
             {/if}
           </div>
 
-          <!-- Peace Approaches Accordion -->
+          <!-- Governance Across Scales Accordion -->
           <div class="nav-accordion">
             <button 
               class="accordion-header" 
-              class:open={approachesOpen}
-              class:has-active={sectionGroups.approaches.some(section => activeSection === section)}
-              on:click={toggleApproaches}
+              class:open={governanceOpen}
+              class:has-active={sectionGroups.governance.some(section => activeSection === section)}
+              on:click={toggleGovernance}
             >
-              <span class="accordion-icon">🤝</span>
-              <span class="accordion-title">{getSectionCategoryTitle('approaches')}</span>
-              <span class="section-count">({sectionGroups.approaches.length})</span>
-              <span class="toggle-arrow" class:rotated={approachesOpen}>▼</span>
+              <span class="accordion-icon">🌍</span>
+              <span class="accordion-title">{getSectionCategoryTitle('governance')}</span>
+              <span class="section-count">({sectionGroups.governance.length})</span>
+              <span class="toggle-arrow" class:rotated={governanceOpen}>▼</span>
             </button>
-            {#if approachesOpen}
+            {#if governanceOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each sectionGroups.approaches as section}
+                {#each sectionGroups.governance as section}
                   <button 
                     class="nav-item subsection-item" 
                     class:active={activeSection === section}
                     on:click={() => setActiveSection(section)}
                   >
-                    <span class="nav-icon">🌍</span>
+                    <span class="nav-icon">🏛️</span>
                     <span class="nav-title">{getShortSectionTitle(section)}</span>
                   </button>
                 {/each}
@@ -698,22 +744,22 @@
             {/if}
           </div>
 
-          <!-- Technology & Digital Accordion -->
+          <!-- Modern Conflict Arenas Accordion -->
           <div class="nav-accordion">
             <button 
               class="accordion-header" 
-              class:open={technologyOpen}
-              class:has-active={sectionGroups.technology.some(section => activeSection === section)}
-              on:click={toggleTechnology}
+              class:open={modernOpen}
+              class:has-active={sectionGroups.modern.some(section => activeSection === section)}
+              on:click={toggleModern}
             >
               <span class="accordion-icon">💻</span>
-              <span class="accordion-title">{getSectionCategoryTitle('technology')}</span>
-              <span class="section-count">({sectionGroups.technology.length})</span>
-              <span class="toggle-arrow" class:rotated={technologyOpen}>▼</span>
+              <span class="accordion-title">{getSectionCategoryTitle('modern')}</span>
+              <span class="section-count">({sectionGroups.modern.length})</span>
+              <span class="toggle-arrow" class:rotated={modernOpen}>▼</span>
             </button>
-            {#if technologyOpen}
+            {#if modernOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each sectionGroups.technology as section}
+                {#each sectionGroups.modern as section}
                   <button 
                     class="nav-item subsection-item" 
                     class:active={activeSection === section}
@@ -727,22 +773,51 @@
             {/if}
           </div>
 
-          <!-- Structural & Security Accordion -->
+          <!-- Human-Centered Approaches Accordion -->
           <div class="nav-accordion">
             <button 
               class="accordion-header" 
-              class:open={structuralOpen}
-              class:has-active={sectionGroups.structural.some(section => activeSection === section)}
-              on:click={toggleStructural}
+              class:open={humanOpen}
+              class:has-active={sectionGroups.human.some(section => activeSection === section)}
+              on:click={toggleHuman}
             >
-              <span class="accordion-icon">🏛️</span>
-              <span class="accordion-title">{getSectionCategoryTitle('structural')}</span>
-              <span class="section-count">({sectionGroups.structural.length})</span>
-              <span class="toggle-arrow" class:rotated={structuralOpen}>▼</span>
+              <span class="accordion-icon">🤝</span>
+              <span class="accordion-title">{getSectionCategoryTitle('human')}</span>
+              <span class="section-count">({sectionGroups.human.length})</span>
+              <span class="toggle-arrow" class:rotated={humanOpen}>▼</span>
             </button>
-            {#if structuralOpen}
+            {#if humanOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each sectionGroups.structural as section}
+                {#each sectionGroups.human as section}
+                  <button 
+                    class="nav-item subsection-item" 
+                    class:active={activeSection === section}
+                    on:click={() => setActiveSection(section)}
+                  >
+                    <span class="nav-icon">💙</span>
+                    <span class="nav-title">{getShortSectionTitle(section)}</span>
+                  </button>
+                {/each}
+              </div>
+            {/if}
+          </div>
+
+          <!-- Actor-Specific Engagement Accordion -->
+          <div class="nav-accordion">
+            <button 
+              class="accordion-header" 
+              class:open={actorsOpen}
+              class:has-active={sectionGroups.actors.some(section => activeSection === section)}
+              on:click={toggleActors}
+            >
+              <span class="accordion-icon">🎯</span>
+              <span class="accordion-title">{getSectionCategoryTitle('actors')}</span>
+              <span class="section-count">({sectionGroups.actors.length})</span>
+              <span class="toggle-arrow" class:rotated={actorsOpen}>▼</span>
+            </button>
+            {#if actorsOpen}
+              <div class="accordion-content" transition:slide={{ duration: 200 }}>
+                {#each sectionGroups.actors as section}
                   <button 
                     class="nav-item subsection-item" 
                     class:active={activeSection === section}
@@ -756,22 +831,22 @@
             {/if}
           </div>
 
-          <!-- Specialized Areas Accordion -->
+          <!-- Structural & Systemic Dimensions Accordion -->
           <div class="nav-accordion">
             <button 
               class="accordion-header" 
-              class:open={specializedOpen}
-              class:has-active={sectionGroups.specialized.some(section => activeSection === section)}
-              on:click={toggleSpecialized}
+              class:open={structuralOpen}
+              class:has-active={sectionGroups.structural.some(section => activeSection === section)}
+              on:click={toggleStructural}
             >
-              <span class="accordion-icon">🎯</span>
-              <span class="accordion-title">{getSectionCategoryTitle('specialized')}</span>
-              <span class="section-count">({sectionGroups.specialized.length})</span>
-              <span class="toggle-arrow" class:rotated={specializedOpen}>▼</span>
+              <span class="accordion-icon">🏗️</span>
+              <span class="accordion-title">{getSectionCategoryTitle('structural')}</span>
+              <span class="section-count">({sectionGroups.structural.length})</span>
+              <span class="toggle-arrow" class:rotated={structuralOpen}>▼</span>
             </button>
-            {#if specializedOpen}
+            {#if structuralOpen}
               <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each sectionGroups.specialized as section}
+                {#each sectionGroups.structural as section}
                   <button 
                     class="nav-item subsection-item" 
                     class:active={activeSection === section}
@@ -785,7 +860,7 @@
             {/if}
           </div>
 
-          <!-- Implementation Accordion -->
+          <!-- Implementation & Learning Accordion -->
           <div class="nav-accordion">
             <button 
               class="accordion-header" 
@@ -813,37 +888,11 @@
               </div>
             {/if}
           </div>
-
-          <!-- Resources Accordion -->
-          <div class="nav-accordion">
-            <button 
-              class="accordion-header" 
-              class:open={resourcesOpen}
-              class:has-active={isSupplementaryActive}
-              on:click={toggleResources}
-            >
-              <span class="accordion-icon">📄</span>
-              <span class="accordion-title">{getSectionCategoryTitle('resources')}</span>
-              <span class="section-count">({sectionGroups.resources.length})</span>
-              <span class="toggle-arrow" class:rotated={resourcesOpen}>▼</span>
-            </button>
-            {#if resourcesOpen}
-              <div class="accordion-content" transition:slide={{ duration: 200 }}>
-                {#each sectionGroups.resources as section}
-                  <button 
-                    class="nav-item subsection-item" 
-                    class:active={activeSection === section}
-                    on:click={() => setActiveSection(section)}
-                  >
-                    <span class="nav-icon">📊</span>
-                    <span class="nav-title">{getShortSectionTitle(section)}</span>
-                  </button>
-                {/each}
-              </div>
-            {/if}
-          </div>
         </div>
       {/if}
+
+      <!-- Scroll target for section content -->
+      <div id="section-content-start" class="scroll-target"></div>
 
       <!-- Progress indicator for core sections -->
       {#if !isPrintMode && isCoreSection}
@@ -909,33 +958,25 @@
              </div>
            {/if}
 
-         {:else if section === 'index' && currentLocale === 'sv'}
-           <!-- Manually render Swedish introduction for the index section -->
-           <div class="overview-section">
-             <h1>{intro.title}</h1>
-             <h2>{intro.overview}</h2>
-             <p>{intro.paragraph1}</p>
-             <p>{intro.paragraph2}</p>
-           </div>
+
          {:else if section === 'index'}
-           <!-- Render English introduction through the markdown component -->
+           <!-- Render the index section from markdown files -->
            <svelte:component this={data.sections[section].default} />
          {:else if data.sections[section]}
            <!-- Render normal sections from markdown files -->
            <svelte:component this={data.sections[section].default} />
          {:else}
-           <p>Section {section} not found</p>
+           <!-- Error state for missing sections -->
+           <div class="section-error">
+             <h2>Section Not Available</h2>
+             <p>The section "{section}" could not be loaded. This might be a temporary issue.</p>
+             <button class="primary-btn" on:click={() => setActiveSection('index')}>
+               Return to Overview
+             </button>
+           </div>
          {/if}
        </div>
      {/each}
-   {:else}
-     <!-- Legacy single file display -->
-     <div class="overview-section">
-       <h1>{intro.title}</h1>
-       <h2>{intro.overview}</h2>
-       <p>{intro.paragraph1}</p>
-       <p>{intro.paragraph2}</p>
-     </div>
      
      <!-- The rest of the content -->
      <div class="remaining-content">
@@ -1783,4 +1824,55 @@
   .arrow-icon.rotated {
     transform: rotate(180deg);
   }
+
+  .section-error {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+  }
+
+  .section-error h2 {
+    color: var(--peace-danger);
+    margin-bottom: 1rem;
+  }
+
+  .section-error p {
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #main-content {
+    scroll-margin-top: 2rem;
+  }
+
+  .section-content {
+    scroll-margin-top: 2rem;
+  }
+
+  .content {
+    scroll-margin-top: 2rem; /* Space above content when scrolled to */
+  }
+
+  .section-content {
+    scroll-margin-top: 1rem; /* Space above sections when scrolled to */
+  }
+
+  /* Ensure the content area is easily targetable */
+  .content {
+    position: relative;
+  }
+
+  .scroll-target {
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+  }
 </style>
+

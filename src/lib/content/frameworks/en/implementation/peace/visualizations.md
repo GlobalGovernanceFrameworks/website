@@ -11,7 +11,7 @@ Visual representations play a crucial role in communicating complex peace and co
 
 ### Peace Governance Architecture
 
-![Peace Governance Architecture](/images/frameworks/peace/governance-architecture.svg)
+![Peace Governance Architecture](/images/frameworks/peace/governance-architecture-en.svg)
 
 This visualization maps the multi-level architecture of peace governance from local to global scales. It illustrates how governance structures at different levels interact through vertical coordination pathways and information flows. The diagram shows four distinct governance levels:
 - Global governance institutions and normative frameworks
@@ -23,7 +23,7 @@ Feedback loops on both sides demonstrate how innovation and knowledge flow not j
 
 ### Implementation Timeline Roadmap
 
-![Implementation Timeline Roadmap](/images/frameworks/peace/implementation-roadmap.svg)
+![Implementation Timeline Roadmap](/images/frameworks/peace/implementation-roadmap-en.svg)
 
 This roadmap outlines the phased implementation approach for peace governance over a 10-year horizon. It presents:
 - Phase 1 (Years 1-3): Foundation Building - establishing local peace committees and early warning networks
@@ -34,7 +34,7 @@ Each phase includes key milestones and success indicators to track progress and 
 
 ### Multi-Track Peace Engagement Flowchart
 
-![Multi-Track Peace Engagement Flowchart](/images/frameworks/peace/multi-track-engagement.svg)
+![Multi-Track Peace Engagement Flowchart](/images/frameworks/peace/multi-track-engagement-en.svg)
 
 Based on the Diamond Model of Multi-Track Diplomacy, this flowchart illustrates the nine interconnected tracks of peacebuilding engagement:
 1. Official Diplomacy (governments, UN institutions)
@@ -51,7 +51,7 @@ The flowchart demonstrates how these diverse tracks interact around shared peace
 
 ### Peace-Climate-Migration Nexus
 
-![Peace-Climate-Migration Nexus](/images/frameworks/peace/climate-migration-nexus.svg)
+![Peace-Climate-Migration Nexus](/images/frameworks/peace/climate-migration-nexus-en.svg)
 
 This Venn diagram illustrates the critical interconnections between climate change, migration patterns, and peace/conflict dynamics. It shows:
 - The climate-induced migration overlap
@@ -63,7 +63,7 @@ Surrounding the diagram are governance components for prevention, response, and 
 
 ### Digital Peace Infrastructure Map
 
-![Digital Peace Infrastructure Map](/images/frameworks/peace/digital-infrastructure.svg)
+![Digital Peace Infrastructure Map](/images/frameworks/peace/digital-infrastructure-en.svg)
 
 This network diagram maps the technological ecosystem supporting peace governance. It visualizes four key components:
 1. Early Warning Systems (sensor networks, analysis engines, alert systems)
@@ -75,7 +75,7 @@ The central Peace Data Coordination Hub connects these systems, with ethical AI 
 
 ### Conflict Transformation Timeline
 
-![Conflict Transformation Timeline](/images/frameworks/peace/conflict-transformation-timeline.svg)
+![Conflict Transformation Timeline](/images/frameworks/peace/conflict-transformation-timeline-en.svg)
 
 This timeline charts the typical progression of conflict dynamics and intervention points, from pre-conflict conditions through escalation, violent conflict, de-escalation, and post-conflict to sustainable peace. For each phase, it outlines:
 - Characteristic dynamics and indicators
@@ -88,7 +88,7 @@ The timeline helps practitioners identify current conflict status and select sta
 
 ### SDG Alignment Chart
 
-![SDG Alignment Chart](/images/frameworks/peace/sdg-alignment.svg)
+![SDG Alignment Chart](/images/frameworks/peace/sdg-alignment-en.svg)
 
 This chart maps how the Peace & Conflict Resolution Framework aligns with and contributes to multiple Sustainable Development Goals. It highlights:
 - SDG 16 (Peace, Justice & Strong Institutions) as the central focus
@@ -100,7 +100,7 @@ The visualization demonstrates the framework's integrated approach to sustainabl
 
 ### Neural Network Analysis of Conflict Dynamics
 
-![Neural Network Analysis of Conflict Dynamics](/images/frameworks/peace/neural-network-conflict-dynamics.svg)
+![Neural Network Analysis of Conflict Dynamics](/images/frameworks/peace/neural-network-conflict-dynamics-en.svg)
 
 This technical visualization illustrates how computational approaches can reveal complex patterns in conflict systems. The neural network diagram shows:
 - Input nodes representing conflict factors (economic inequality, resource scarcity, etc.)
@@ -109,7 +109,7 @@ This technical visualization illustrates how computational approaches can reveal
 
 The right panel highlights four analytical approaches: causal factor networks, intervention impact modeling, tipping point analysis, and temporal evolution patterns.
 
-### Spiral Dynamics in Conflict and Peace
+### Spiral Dynamics in Conflict and Peace (Planned)
 
 [Spiral Dynamics in Conflict and Peace](https://www.spiralize.org/peace)
 

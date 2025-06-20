@@ -119,6 +119,8 @@ The Global Governance Framework is organized into five distinct tiers, each repr
 ### Tier 1: Urgent Global Stability & Justice
 - [Climate & Energy Governance](/frameworks/docs/implementation/energy) (In Review)
 - [Peace & Conflict Resolution](/frameworks/docs/implementation/peace) (In Review)
+  - TODO: *Add missing resources: Guides, tools and templates*
+  - [Spiral Peacecraft: A Guide for Value-Based Conflict Resolution] (Planned)
 - [Indigenous Governance & Traditional Knowledge](/frameworks/docs/implementation/indigenous) (In Review)
 - [Healthcare Governance](/frameworks/docs/implementation/healthcare) (In Review)
 - [Food Systems & Agriculture](/frameworks/docs/implementation/food) (In Review)

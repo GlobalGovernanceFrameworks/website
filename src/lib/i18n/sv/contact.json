@@ -1,16 +1,16 @@
 {
   "hero": {
-    "title": "Kontakta Oss",
+    "title": "Kontakta oss",
     "subtitle": "Vi hör gärna från dig om global styrningsinnovation."
   },
   "discord": {
-    "title": "Gå Med i Vår Community",
+    "title": "Gå med i vår gemenskap",
     "description": "Anslut med likasinnade individer, dela idéer och håll dig uppdaterad om den senaste utvecklingen inom global styrning.",
-    "button": "Gå Med i Discord",
+    "button": "Gå med i Discord",
     "inviteLink": "https://discord.gg/Zx4hMJf4JU"
   },
   "getInTouch": {
-    "title": "Ta Kontakt",
+    "title": "Ta kontakt",
     "description": "Har du frågor, idéer eller feedback om Global Governance Framework? Vi vill höra från dig. Fyll i formuläret så återkommer vi så snart som möjligt.",
     "contactInfo": {
       "email": {
@@ -41,8 +41,8 @@
       "subject": {
         "label": "Ämne",
         "options": {
-          "general": "Allmän Förfrågan",
-          "feedback": "Feedback",
+          "general": "Allmän förfrågan",
+          "feedback": "Återkoppling",
           "collaboration": "Samarbete",
           "feature": "Funktionsförslag"
         }
@@ -52,7 +52,7 @@
         "placeholder": "Ditt meddelande"
       }
     },
-    "submit": "Skicka Meddelande",
+    "submit": "Skicka meddelande",
     "sending": "Skickar...",
     "success": "Tack för ditt meddelande! Vi återkommer snart.",
     "error": "Det uppstod ett fel när meddelandet skickades. Vänligen e-posta oss direkt på globalgovernanceframework@gmail.com",

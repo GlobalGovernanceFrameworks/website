@@ -150,6 +150,28 @@ async function loadTranslations(newLocale, route = '/') {
       } catch (e) {
         console.error('Error loading framework translations:', e);
       }
+    } else if (route.startsWith('/get-involved/translations')) {
+      // Translations contributions page
+      try {
+        if (newLocale === 'en') {
+          translationData.translations = (await import('./en/translations.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.translations = (await import('./sv/translations.json')).default;
+        }
+      } catch (e) {
+        console.error('Error loading translations translations:', e);
+      }
+    } else if (route.startsWith('/get-involved/website')) {
+      // Website contribution page
+      try {
+        if (newLocale === 'en') {
+          translationData.website = (await import('./en/website.json')).default;
+        } else if (newLocale === 'sv') {
+          translationData.website = (await import('./sv/website.json')).default;
+        }
+      } catch (e) {
+        console.error('Error loading translations translations:', e);
+      }
     } else if (route.startsWith('/privacy')) {
       // Privacy page
       try {

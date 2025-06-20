@@ -59,4 +59,4 @@ Long-term peace requires educational and cultural approaches that foster conflic
 - Intergenerational toolkit, with mentorship guides and time-capsule project outlines.
 - Non-duality education modules, featuring lesson plans, mindfulness exercises, and public workshop designs.
 
-These and other implementation tools for long-term cultural evolution are included in the Peace & Conflict Resolution Seed Kit, accessible via the Tools Library.
+These and other implementation tools for long-term cultural evolution are planned to be included in the Peace & Conflict Resolution Seed Kit, accessible via the Tools Library.

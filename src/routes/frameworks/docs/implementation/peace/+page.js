@@ -63,6 +63,7 @@ export async function load({ depends, url }) {
   
   try {
     // Try to load each section
+    // Try to load each section
     for (const section of sections) {
       try {
         // Try to load the current locale version
@@ -78,7 +79,8 @@ export async function load({ depends, url }) {
             sectionsUsingEnglishFallback.add(section);
           }
         } catch (e2) {
-          console.log(`Could not load section ${section} in any language`);
+          console.warn(`Could not load section ${section} in any language:`, e2);
+          // Don't add to content if it can't be loaded
         }
       }
     }

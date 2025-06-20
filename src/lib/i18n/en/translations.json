@@ -1,0 +1,18 @@
+{
+  "title": "Translation Hub",
+  "subtitle": "Help make global governance frameworks accessible worldwide",
+  "metaDescription": "Join our global community of translators making governance frameworks accessible to communities worldwide.",
+  "heroIntro": "Join our global community of translators making governance frameworks accessible to communities worldwide. Every translation helps build a more equitable future.",
+  "downloadKit": "Download Translation Kit",
+  "joinCommunity": "Join Community",
+  "downloadMarkdown": "Download Markdown Version",
+  "downloadPdf": "Download PDF Version", 
+  "joinDiscord": "Join Our Translation Community",
+  "getStarted": "Ready to Get Started?",
+  "fallbackNotice": "Translation coming soon",
+  "fallbackText": "This page is currently displayed in English until the translation is complete.",
+  "kitDescription": "Get the complete translator's kit with technical setup, guidelines, and community information.",
+  "communityDescription": "Connect with other translators, get help, and coordinate translation efforts in real-time.",
+  "errorTitle": "Translation Guide Not Available",
+  "errorText": "The translation guide could not be loaded. Please try again later or contact support."
+}

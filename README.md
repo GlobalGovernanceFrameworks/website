@@ -1,10 +1,10 @@
-# Global Governance Framework Website
+# Global Governance Frameworks Website
 
-This repository contains the source code for the Global Governance Framework website, a platform dedicated to developing and sharing frameworks for governance interoperability and meta-governance structures.
+This repository contains the source code for the Global Governance Frameworks website, a platform dedicated to developing and sharing frameworks for governance interoperability and meta-governance structures.
 
 ## Project Vision
 
-The Global Governance Framework project aims to create tools, patterns, and frameworks that enable different governance systems to interoperate, share lessons, and evolve together. Rather than proposing a single governance solution, we're building infrastructure that allows many models to coexist, communicate, and collaborate.
+The Global Governance Frameworks project aims to create tools, patterns, and frameworks that enable different governance systems to interoperate, share lessons, and evolve together. Rather than proposing a single governance solution, we're building infrastructure that allows many models to coexist, communicate, and collaborate.
 
 ## Technologies
 
@@ -100,7 +100,7 @@ module.exports = {
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For detailed guidelines on how to contribute, including best practices for using AI tools to support development, see our [CONTRIBUTING.md](CONTRIBUTING.md).
+Contributions are welcome in any area! Please feel free to submit a Pull Request. 
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -108,11 +108,35 @@ Contributions are welcome! Please feel free to submit a Pull Request. For detail
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+Join the [Discord server](https://discord.gg/Zx4hMJf4JU) for discussions.
+
+### Website code
+
+For detailed guidelines on how to contribute to the website code, see the guide on the website or [in the repo](/src/lib/content/get-involved/website/en/technical-guide.md)
+
+### Frameworks
+
+For detailed guidelines on how to contribute to the frameworks, see the guide on the website or [in the repo](/src/lib/content/get-involved/frameworks/en/frameworks-guide.md)
+
+### Translations
+
+To contribute to translations, see the guide on the website or [in the repo]((/src/lib/content/get-involved/translations/en/translation-guide))
+
+### Outreach
+
+For detailed guidelines on how to contribute to outreach, see the guide on the website or [in the repo](/src/lib/content/get-involved/outreach/en/outreach-guide.md)
+
+
 ## License
 
-[TBD]
+This project utilizes a dual-license model to best serve our open-source goals:
+
+- **All source code** for the website is licensed under the [MIT License](LICENSE.md).
+- **All written content and frameworks** (e.g., `.md` files) are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE.md).
+
+Please see the [LICENSE.md](LICENSE.md) file for the full text of both licenses.
 
 ## Contact
 
-Email: globalgovernanceframework@gmail.com
+Email: globalgovernanceframeworks@gmail.com
 GitHub: https://github.com/GlobalGovernanceFramework

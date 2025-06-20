@@ -14,17 +14,24 @@
 
   // Mobile menu state
   let isMenuOpen = false;
-  let isDropdownOpen = false;
+  let isFrameworksDropdownOpen = false;
+  let isGetInvolvedDropdownOpen = false;
   
   const toggleMenu = () => (isMenuOpen = !isMenuOpen);
 
-  const toggleDropdown = (e) => {
+  const toggleFrameworksDropdown = (e) => {
     e.stopPropagation();
-    isDropdownOpen = !isDropdownOpen;
+    isFrameworksDropdownOpen = !isFrameworksDropdownOpen;
+  };
+
+  const toggleGetInvolvedDropdown = (e) => {
+    e.stopPropagation();
+    isGetInvolvedDropdownOpen = !isGetInvolvedDropdownOpen;
   };
   
-  const closeDropdown = () => {
-    if (isDropdownOpen) isDropdownOpen = false;
+  const closeDropdowns = () => {
+    if (isFrameworksDropdownOpen) isFrameworksDropdownOpen = false;
+    if (isGetInvolvedDropdownOpen) isGetInvolvedDropdownOpen = false;
   };
   
   let isMobile = false;
@@ -36,11 +43,11 @@
     
     checkMobile();
     window.addEventListener('resize', checkMobile);
-    document.addEventListener('click', closeDropdown);
+    document.addEventListener('click', closeDropdowns);
     
     return () => {
       window.removeEventListener('resize', checkMobile);
-      document.removeEventListener('click', closeDropdown);
+      document.removeEventListener('click', closeDropdowns);
     };
   });
 
@@ -268,6 +275,12 @@
     font-weight: 600;
   }
 
+  .dropdown-menu a.highlighted {
+    background-color: #f0f8ff;
+    font-weight: 600;
+    border-left-color: #DAA520;
+  }
+
   .hidden {
     display: none;
   }
@@ -359,33 +372,16 @@
               {browser ? ($t('common.header.home') || 'Home') : 'Home'}
             </a>
           </li>
-          <li class="nav-item">
-            <a 
-              href="{base}/blog"
-              class={`nav-link ${isActive('/blog') ? 'active' : ''}`}
-              data-sveltekit-preload-data="hover"
-            >
-              {browser ? ($t('common.header.blog') || 'Blog') : 'Blog'}
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              href="{base}/frameworks/global-citizenship"
-              class="nav-link nav-link-highlight"
-              class:active={isActive('/frameworks/global-citizenship')}
-              data-sveltekit-preload-data="hover"
-            >
-              {browser ? ($t('common.header.frameworkGlobalCitizenship') || 'Global Citizenship') : 'Global Citizenship'}
-            </a>
-          </li>
-          <li class="nav-item dropdown" class:open={isDropdownOpen}>
+          
+          <!-- Frameworks Dropdown (now includes Global Citizenship) -->
+          <li class="nav-item dropdown" class:open={isFrameworksDropdownOpen}>
             <div style="display: flex; justify-content: space-between; align-items: center;">
               <a 
                 href="{base}/frameworks"
                 class={`nav-link ${browser && $page.url.pathname.startsWith(base + '/frameworks') ? 'active' : ''}`}
                 data-sveltekit-preload-data="hover"
               >
-                {browser ? ($t('common.header.framework') || 'Framework') : 'Framework'}
+                {browser ? ($t('common.header.framework') || 'Frameworks') : 'Frameworks'}
                 <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
@@ -393,19 +389,29 @@
               <button 
                 type="button" 
                 class="dropdown-toggle md:hidden" 
-                on:click|stopPropagation={toggleDropdown}
-                on:keydown={(e) => e.key === 'Enter' && toggleDropdown(e)}
-                aria-label={isDropdownOpen ? 'Close framework menu' : 'Open framework menu'}
+                on:click|stopPropagation={toggleFrameworksDropdown}
+                on:keydown={(e) => e.key === 'Enter' && toggleFrameworksDropdown(e)}
+                aria-label={isFrameworksDropdownOpen ? 'Close frameworks menu' : 'Open frameworks menu'}
                 role="button"
                 tabindex="0"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d={isDropdownOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
+                  <path stroke-linecap="round" stroke-linejoin="round" d={isFrameworksDropdownOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
                 </svg>
               </button>
             </div>
 
             <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
+              <!-- Global Citizenship - highlighted as the main framework -->
+              <a 
+                href="{base}/frameworks/global-citizenship" 
+                class={`${isActive('/frameworks/global-citizenship') ? 'active' : ''} highlighted`} 
+                data-sveltekit-preload-data="hover" 
+                role="menuitem"
+              >
+                {browser ? ($t('common.header.frameworkGlobalCitizenship') || 'Global Citizenship') : 'Global Citizenship'}
+              </a>
+              
               <a href="{base}/frameworks" class={isActive('/frameworks') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                 {browser ? ($t('common.header.frameworkOverview') || 'Overview') : 'Overview'}
               </a>
@@ -428,7 +434,7 @@
                 {browser ? ($t('common.header.frameworkVisuals') || 'Visuals') : 'Visuals'}
               </a>
               <a href="{base}/downloads" class={isActive('/downloads') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
-                {browser ? ($t('common.header.frameworkDownloads') || 'Framework Downloads') : 'Documentation'}
+                {browser ? ($t('common.header.frameworkDownloads') || 'Framework Downloads') : 'Downloads'}
               </a>
               <a href="{base}/frameworks/docs/case-studies" class={isActive('/frameworks/docs/case-studies') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
                 {browser ? ($t('common.header.frameworkCaseStudies') || 'Case Studies') : 'Case Studies'}
@@ -444,6 +450,61 @@
               </a>
             </div>
           </li>
+
+          <li class="nav-item">
+            <a 
+              href="{base}/blog"
+              class={`nav-link ${isActive('/blog') ? 'active' : ''}`}
+              data-sveltekit-preload-data="hover"
+            >
+              {browser ? ($t('common.header.blog') || 'Blog') : 'Blog'}
+            </a>
+          </li>
+
+          <!-- New Get Involved Dropdown -->
+          <li class="nav-item dropdown" class:open={isGetInvolvedDropdownOpen}>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <a 
+                href="{base}/get-involved"
+                class={`nav-link ${browser && $page.url.pathname.startsWith(base + '/get-involved') ? 'active' : ''}`}
+                data-sveltekit-preload-data="hover"
+              >
+                {browser ? ($t('common.header.getInvolved') || 'Get Involved') : 'Get Involved'}
+                <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+              <button 
+                type="button" 
+                class="dropdown-toggle md:hidden" 
+                on:click|stopPropagation={toggleGetInvolvedDropdown}
+                on:keydown={(e) => e.key === 'Enter' && toggleGetInvolvedDropdown(e)}
+                aria-label={isGetInvolvedDropdownOpen ? 'Close get involved menu' : 'Open get involved menu'}
+                role="button"
+                tabindex="0"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d={isGetInvolvedDropdownOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
+                </svg>
+              </button>
+            </div>
+
+            <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
+              <a href="{base}/get-involved/frameworks" class={isActive('/get-involved/frameworks') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                {browser ? ($t('common.header.getInvolvedFrameworks') || 'Contribute to Frameworks') : 'Contribute to Frameworks'}
+              </a>
+              <a href="{base}/get-involved/translations" class={isActive('/get-involved/translations') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                {browser ? ($t('common.header.getInvolvedTranslations') || 'Contribute Translations') : 'Contribute Translations'}
+              </a>
+              <a href="{base}/get-involved/website" class={isActive('/get-involved/website') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                {browser ? ($t('common.header.getInvolvedWebsite') || 'Contribute to Website') : 'Contribute to Website'}
+              </a>
+              <a href="{base}/get-involved/outreach" class={isActive('/get-involved/outreach') ? 'active' : ''} data-sveltekit-preload-data="hover" role="menuitem">
+                {browser ? ($t('common.header.getInvolvedOutreach') || 'Community & Outreach') : 'Community & Outreach'}
+              </a>
+            </div>
+          </li>
+
           <li class="nav-item">
             <a 
               href="{base}/about"

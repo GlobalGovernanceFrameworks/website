@@ -1,0 +1,17 @@
+{
+  "title": "Website Development",
+  "subtitle": "Help build and improve our global governance platform",
+  "heroIntro": "Join our development community and contribute to building tools that enable governance system interoperability worldwide.",
+  "downloadGuide": "Download Website Contributor Guide",
+  "joinDevelopers": "Join Developer Community",
+  "downloadMarkdown": "Download Markdown Version",
+  "downloadPdf": "Download PDF Version",
+  "joinDiscord": "Join Our Developer Community",
+  "getStarted": "Ready to Start Coding?",
+  "guideDescription": "Get the complete guide for developers. Includes setup instructions, coding standards, and workflows for integrating new frameworks into our SvelteKit site.",
+  "communityDescription": "Connect with other developers, get code reviews, and collaborate on features in real-time.",
+  "errorTitle": "Website contributor guide Not Available",
+  "errorText": "The website contributor guide could not be loaded. Please try again later or contact our development team.",
+  "githubRepo": "View GitHub Repository",
+  "githubDescription": "Access the source code, submit issues, and contribute directly to the project."
+}

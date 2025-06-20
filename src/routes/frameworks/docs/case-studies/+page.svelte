@@ -118,18 +118,19 @@
     list-style-type: none; /* Remove default bullets */
   }
 
-  .content :global(ul li) {
-    position: relative;
-    margin-bottom: 0.75rem; /* Slightly more spacing between items */
-    padding-left: 1rem;
+.content :global(ul li) {
+    position: relative !important;
+    margin-bottom: 0.75rem;
+    padding-left: 1rem !important;
   }
 
   .content :global(ul li::before) {
-    content: "✦"; /* Cosmic star symbol for bullets */
-    position: absolute;
-    left: 0;
-    color: #DAA520; /* Gold color for bullet points */
+    content: "✦" !important;
+    position: absolute !important;
+    left: 0 !important;
+    color: #DAA520 !important;
     font-size: 0.9rem;
+    width: 0.9rem !important; 
   }
 
   .content :global(ol) {

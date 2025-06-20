@@ -120,6 +120,8 @@ Det globala styrningsramverket är organiserat i fem distinkta nivåer, som var 
 
 * [Klimat- och energistyrning](/frameworks/docs/implementation/energy) (Under granskning)
 * [Fred och konfliktlösning](/frameworks/docs/implementation/peace) (Under granskning)
+  * Att göra: *Lägg till saknade resurser: Guider, verktyg och mallar.*
+  * [Spiral Peacecraft: En guide för värdebaserad konfliktlösning] (Planned)
 * [Ursprungsfolkens styrning och traditionell kunskap](/frameworks/docs/implementation/indigenous) (Under granskning)
 * [Hälso- och sjukvårdsstyrning](/frameworks/docs/implementation/healthcare) (Under granskning)
 * [Livsmedelssystem och jordbruk](/frameworks/docs/implementation/food) (Under granskning)

@@ -1,75 +1,159 @@
 # Contributing to the Global Governance Framework
 
-Thank you for your interest in contributing to the Global Governance Framework project! This document outlines how to contribute effectively, including general guidelines and specific recommendations for leveraging AI tools to enhance your work.
+Thank you for your interest in contributing to the Global Governance Framework project! This document provides general guidelines for contribution. For detailed guidance on specific types of contributions, please refer to our specialized guides.
 
-## How to Contribute
+## 📋 Contribution pathways
+
+We welcome different types of contributions, each with its own specialized guide:
+
+### Content and framework development
+- **[Translation Contribution Guide](/translations)**: Help make frameworks accessible in multiple languages
+- **[Framework Development Guide](/get-involved/frameworks)**: Create new governance frameworks and tools
+- **[Community & Outreach Guide](/get-involved/outreach)**: Spread our vision and build advocacy networks
+
+### Technical development
+- **[Website Development Guide](/get-involved/website)**: Contribute to the SvelteKit codebase and infrastructure
+
+Each guide includes detailed workflows, quality standards, tools, and community coordination specific to that contribution type.
+
+## 🚀 Quick start for all contributors
+
+### General contribution process
 
 1. **Fork the Repository**: Start by forking the repository to your GitHub account.
 2. **Create a Feature Branch**: Use a descriptive branch name, e.g., `git checkout -b feature/add-new-component`.
-3. **Make Changes**: Implement your feature or fix, adhering to the project’s coding style and structure (see [README.md](README.md) for details on the tech stack).
-4. **Test Locally**: Run `npm run dev` to test your changes in the development environment.
-5. **Commit Changes**: Write clear, concise commit messages, e.g., `git commit -m 'Add support for new language in i18n'`.
-6. **Push to Your Fork**: Push your branch to your fork, e.g., `git push origin feature/add-new-component`.
-7. **Submit a Pull Request**: Open a PR against the main repository, describing your changes and their purpose.
+3. **Choose Your Guide**: Review the appropriate specialized guide above for detailed instructions.
+4. **Make Changes**: Follow the specific workflows and standards outlined in your chosen guide.
+5. **Test Locally**: Run `npm run dev` to test your changes in the development environment.
+6. **Commit Changes**: Write clear, concise commit messages, e.g., `git commit -m 'Add support for new language in i18n'`.
+7. **Push to Your Fork**: Push your branch to your fork, e.g., `git push origin feature/add-new-component`.
+8. **Submit a Pull Request**: Open a PR against the main repository, describing your changes and their purpose.
 
-## Using AI Tools in Contributions
+### Project structure overview
 
-AI can be a powerful ally in developing and refining the Global Governance Framework. Below are some recommendations for using specific AI tools, based on their observed strengths. Note that these suggestions are based on general observations and not on human developer experience within this project—use them as inspiration, but validate outputs against project needs and real-world testing.
+```
+src/
+├── lib/
+│   ├── components/          # Reusable Svelte components
+│   ├── content/            # Markdown content files
+│   │   ├── frameworks/     # Framework documentation
+│   │   └── get-involved/   # Contribution guides
+│   ├── i18n/              # Internationalization
+│   └── utils/             # Utility functions
+├── routes/                # SvelteKit pages
+└── static/               # Static assets
+```
+
+## 🤖 Using AI tools in contributions
+
+AI can be a powerful ally in developing and refining the Global Governance Framework. Below are recommendations for using specific AI tools, based on their observed strengths.
 
 ### Claude
 - **Strength**: Reliable and precise for translations, especially for technical content, and serves as an excellent main workhorse for development tasks.
-- **Recommended Use**: Leverage Claude for updating or expanding the internationalization files in `src/lib/i18n/[language-code]/`, where its precision ensures consistency across languages. Additionally, the professional version’s project feature makes it ideal for maintaining a comprehensive knowledge base—keeping all frameworks, website content, and related materials in one place. This enables Claude to stay optimally context-aware when developing new ideas, revising website content, or refining governance frameworks.
-- **Best Practice**: Cross-check translations with native speakers where possible, and commit changes with clear notes (e.g., "Translated via Claude, awaiting review"). For project feature users, regularly update the knowledge base with new framework drafts or content revisions to maximize Claude’s contextual understanding. Iterate using reviews by DeepSeek, ChatGPT and Grok and implement the suggestions with Claude.
+- **Recommended Use**: Leverage Claude for updating or expanding internationalization files, framework content development, and website code. The professional version's project feature makes it ideal for maintaining comprehensive context across all frameworks and content.
+- **Best Practice**: Use Claude's project feature to maintain up-to-date knowledge of all frameworks, website content, and related materials. Cross-check translations with native speakers where possible. Iterate using reviews from DeepSeek, ChatGPT, and Grok, then implement suggestions with Claude.
 
 ### DeepSeek
 - **Strength**: Highly creative at reviewing governance frameworks and suggesting complementary ideas, tools, and enhancements.
-- **Recommended Use**: Use DeepSeek to brainstorm additional features, patterns, or interoperability mechanisms. For example, ask it to propose new tools or frameworks that could integrate with the project’s vision.
-- **Best Practice**: Document all DeepSeek responses in the `/docs` folder (e.g., `/docs/ai-suggestions/deepseek-ideas.md`) for future reference, even if not immediately implemented. This builds a knowledge base for the community. 
+- **Recommended Use**: Use DeepSeek to brainstorm additional features, patterns, or interoperability mechanisms. Excellent for proposing new tools or frameworks that integrate with the project's vision.
+- **Best Practice**: Document all DeepSeek responses in the `/docs` folder for future reference, even if not immediately implemented.
 
 ### ChatGPT
 - **Strength**: Versatile and good at providing complementary translations or rephrasing content for clarity.
-- **Recommended Use**: Use ChatGPT to refine language in documentation, UI text, or as a secondary tool for translations when Claude isn’t available. It can also assist with generating draft content for blog posts or framework descriptions.
-- **Best Practice**: Pair its outputs with Claude for technical accuracy or human review for tone and style.
+- **Recommended Use**: Use ChatGPT to refine language in documentation, UI text, or as a secondary tool for translations. Also useful for generating draft content for blog posts or framework descriptions.
+- **Best Practice**: Pair outputs with Claude for technical accuracy or human review for tone and style.
 
 ### Grok (xAI)
-- **Strength**: Excels at analyzing and summarizing complex information from diverse sources, such as web content, uploaded documents, or community discussions.
-- **Recommended Use**: Use Grok to research governance models, distill insights from academic papers or online resources, or summarize project-related content to inform framework development. It’s also useful for reviewing project documentation and suggesting improvements.
-- **Best Practice**: When using Grok for research, cite the original sources it draws from and store summaries in `/docs/research/`.
+- **Strength**: Excels at analyzing and summarizing complex information from diverse sources.
+- **Recommended Use**: Use Grok to research governance models, distill insights from academic papers, or summarize project-related content to inform framework development.
+- **Best Practice**: When using Grok for research, cite original sources and store summaries in `/docs/research/`.
 
-### General AI Usage Tips
-- **Experimentation**: Feel free to experiment with other AI tools and share your findings in PRs or issues—new insights are valuable!
-- **Caution**: AI outputs are suggestions, not authoritative solutions. Always review and adapt them to fit the project’s goals, codebase, and community standards.
-- **Documentation**: If AI generates significant content (e.g., code, text, or ideas), note its origin in comments or commit messages (e.g., "Generated by DeepSeek, adapted by [your-name]").
+### General AI usage guidelines
+- **Experimentation**: Feel free to experiment with other AI tools and share findings in PRs or issues.
+- **Validation**: AI outputs are suggestions, not authoritative solutions. Always review and adapt them to fit project goals.
+- **Documentation**: Note AI origins in comments or commit messages (e.g., "Generated by DeepSeek, adapted by [your-name]").
 
-## How the initial frameworks have been developed, an instruction manual
+## 🔧 Framework development workflow
 
-- Start with a request to Grok to draft an outline for the framework.
-- Follow up with iterating between ChatGPT, DeepSeek and Claude, prompting something like this:
-  "Hi ChatGPT/DeepSeek/Claude! Can you review and grade our framework outline (1-100/F-A++) over various areas and overall, as well as come with suggestions for enhancements?"
-- Include the latest outline from Grok.
-- After each iteration, prompt Grok with the reply from the other A.Is like this:
-  "We have received a review from ChatGPT/DeepSeek/Claude. Can you enhance our outline by implementing all the suggestions?"
-- Include a file or paste the suggestions from the review along with the prompt.
-- As the framework outline matures, an index file can be created along with the framework outline, with the framework purpose, index and tools.
-- When reaching 100/100 (A++) in one or several of the reviews, the frameworks can begin to be drafted fully, section by section, by either Claude or Grok. Grok have been observed to skip details in the framework outline, so be careful. The drafted sections can also be reviewed for improvements by the A.I. models.
+Our frameworks are developed using an iterative AI-assisted process that has proven effective:
 
-Examples of this iterative method can be seens in '/docs/Implementation Framework Reviews'
+### Phase 1: outline development
+1. **Initial outline**: Start with Grok to draft a comprehensive framework outline
+2. **Multi-AI review**: Iterate between ChatGPT, DeepSeek, and Claude with prompts like:
+   "Can you review and grade our framework outline (1-100/F-A++) and suggest enhancements?"
+3. **Enhancement cycles**: Use Grok to implement suggestions from other AI reviews
+4. **Perfection target**: Continue until reaching 100/100 (A++) scores in reviews
 
-## Code Style and Standards
-- Follow the existing structure in `src/` (e.g., components in `lib/components/`, routes in `routes/`).
-- Use Tailwind CSS classes consistently with the setup in `tailwind.config.js`.
-- Ensure all translation keys are updated across all languages in `src/lib/i18n/`.
+### Phase 2: content creation
+1. **Index file creation**: Develop framework purpose, index, and tools overview
+2. **Section drafting**: Use Claude or Grok to draft detailed sections (note: Grok may skip details)
+3. **Quality review**: Review drafted sections with AI models for improvements
+4. **Integration**: Ensure sections work together as a coherent framework
 
-## Documentation Style Guide
-All framework documentation should follow our [STYLE_GUIDE.md](STYLE_GUIDE.md) to ensure consistency across the project. This includes guidelines for:
+Examples of this iterative method can be found in `/docs/Implementation Framework Reviews`.
+
+For detailed framework development guidance, see the [Framework Development Guide](/get-involved/frameworks).
+
+## 📝 Standards and guidelines
+
+### Code standards
+- Follow existing structure in `src/` (components in `lib/components/`, routes in `routes/`)
+- Use Tailwind CSS classes consistently (note: current setup has configuration issues - see [Website Development Guide](/get-involved/website))
+- Update translation keys across all languages in `src/lib/i18n/`
+
+### Content standards
+All framework documentation should follow our [STYLE_GUIDE.md](STYLE_GUIDE.md) for consistency across:
 - Document structure and organization
 - Content formatting and terminology
 - Visual elements and diagrams
 - Multilingual support
 
-Please review this guide before contributing new documentation or updating existing frameworks.
+### Quality assurance
+Each contribution type has specific quality standards outlined in its specialized guide:
+- **Translation quality**: Accuracy, cultural sensitivity, consistency
+- **Framework quality**: Practical utility, evidence basis, clarity
+- **Website quality**: Code standards, accessibility, performance
+- **Outreach quality**: Message consistency, audience appropriateness
 
-## Getting Help
-If you have questions, feel free to open an issue or email us at [globalgovernanceframework@gmail.com](mailto:globalgovernanceframework@gmail.com).
+## 🤝 Community and support
 
-Thank you for helping us build a collaborative, interoperable future for global governance!
+### Getting help
+- **Discord Community**: Join https://discord.gg/Zx4hMJf4JU for real-time support
+  - `#translation-lab` for translation coordination
+  - `#framework-development` for framework creators
+  - `#community-outreach` for advocacy and outreach
+  - `#dev-design` for technical development
+- **GitHub Issues**: For bug reports, feature requests, or technical questions
+- **Email**: globalgovernanceframework@gmail.com for general inquiries
+
+### Contribution recognition
+We value all contributions and provide:
+- Recognition in contributor sections
+- Acknowledgment in release notes
+- Invitations to contributor events
+- Professional development support
+- Priority support for contributors' own projects
+
+## 🌱 What we need most
+
+Current high-priority contribution areas:
+
+1. **🎨 Tailwind CSS Configuration Fix** (technical) - Resolve configuration conflicts and modernize styling
+2. **🌍 Translation Expansion** (content) - Add support for new languages
+3. **📋 Framework Development** (content) - Create new governance frameworks
+4. **📢 Community Outreach** (outreach) - Expand our reach and advocacy
+5. **🔧 Website Features** (technical) - Add new functionality and improve user experience
+
+## 🎯 Getting started
+
+1. **Explore our guides**: Review the specialized contribution guides linked above
+2. **Join the community**: Connect with other contributors on Discord
+3. **Choose your path**: Select the contribution type that matches your interests and skills
+4. **Start small**: Begin with a manageable project to get familiar with our processes
+5. **Ask for help**: Don't hesitate to reach out to the community for guidance
+
+Thank you for helping us build a collaborative, interoperable future for global governance! Your contributions make a real difference in creating tools that enable better coordination and cooperation worldwide.
+
+---
+
+**Ready to contribute?** Visit our [Get Involved](/get-involved) section to explore detailed guides for your area of interest.

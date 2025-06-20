@@ -40,6 +40,7 @@ Available categories:
 - indigenous
 - mental-health
 - treaty-for-our-only-home
+- get-involved
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -75,7 +76,8 @@ const outputDirs = {
   'animal-welfare': path.join(__dirname, '..', 'static', 'frameworks','tools', 'animal-welfare'),
   'water': path.join(__dirname, '..', 'static', 'frameworks','tools', 'water'),
   'indigenous': path.join(__dirname, '..', 'static', 'frameworks','tools', 'indigenous'),
-  'treaty-for-our-only-home': path.join(__dirname, '..', 'static', 'frameworks','tools', 'treaty-for-our-only-home')
+  'treaty-for-our-only-home': path.join(__dirname, '..', 'static', 'frameworks','tools', 'treaty-for-our-only-home'),
+  'get-involved': path.join(__dirname, '..', 'static', 'get-involved'),
 };
 
 // Validate category if provided
@@ -7886,6 +7888,72 @@ const tools = [
       '07-faq-and-challenges',
       '08-glossary'
     ]
+  },
+
+  // Get involved: Guides
+  {
+    name: 'website-guide',
+    category: 'get-involved',
+    fileNames: {
+      en: 'website-guide-en',
+      sv: 'website-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'website', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'website', 'sv'),
+    },
+    pageFooter: {
+      en: 'Contributing to the Global Governance Frameworks Website - Page ',
+      sv: 'Guide för att bidra till Global Governance Frameworks webbsida - Sida '
+    }
+  },
+  {
+    name: 'translation-guide',
+    category: 'get-involved',
+    fileNames: {
+      en: 'translation-guide-en',
+      sv: 'translation-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'translations', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'translations', 'sv'),
+    },
+    pageFooter: {
+      en: 'Contributing to the Global Governance Frameworks translations - Page ',
+      sv: 'Bidra till Global Governance Frameworks översättningar - Sida '
+    }
+  },
+  {
+    name: 'frameworks-guide',
+    category: 'get-involved',
+    fileNames: {
+      en: 'frameworks-guide-en',
+      sv: 'frameworks-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'frameworks', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'frameworks', 'sv'),
+    },
+    pageFooter: {
+      en: 'Contributing to the Global Governance Frameworks frameworks - Page ',
+      sv: 'Bidra till Global Governance Frameworks ramverk - Sida '
+    }
+  },
+  {
+    name: 'outreach-guide',
+    category: 'get-involved',
+    fileNames: {
+      en: 'outreach-guide-en',
+      sv: 'outreach-guide-sv'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'sv'),
+    },
+    pageFooter: {
+      en: 'Contributing to the Global Governance Frameworks outreach - Page ',
+      sv: 'Bidra till Global Governance Frameworks utåtriktade verksamhet - Sida '
+    }
   }
 
 ];
