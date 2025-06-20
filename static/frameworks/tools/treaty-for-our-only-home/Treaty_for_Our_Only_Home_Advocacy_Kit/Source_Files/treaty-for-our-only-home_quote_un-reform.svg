@@ -1,91 +1,248 @@
-<svg viewBox="0 0 1080 1080" width="1080" height="1080" xmlns="http://www.w3.org/2000/svg">
-  <defs>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1080 1080"
+   width="1080"
+   height="1080"
+   version="1.1"
+   id="svg37"
+   sodipodi:docname="treaty-for-our-only-home_quote_un-reform.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   inkscape:export-filename="treaty-for-our-only-home_quote_un-reform.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview37"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.78333333"
+     inkscape:cx="539.3617"
+     inkscape:cy="540"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg37" />
+  <defs
+     id="defs6">
     <!-- Logo gradients and definitions -->
-    <linearGradient id="logoCosmicGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2B4B8C"/>
-      <stop offset="100%" stop-color="#6B5CA5"/>
+    <linearGradient
+       id="logoCosmicGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         id="stop2" />
     </linearGradient>
-    <linearGradient id="logoEarthyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2D5F2D"/>
-      <stop offset="100%" stop-color="#7D9F7D"/>
+    <linearGradient
+       id="logoEarthyGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2D5F2D"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#7D9F7D"
+         id="stop4" />
     </linearGradient>
-    <linearGradient id="logoGoldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#B8860B"/>
-      <stop offset="100%" stop-color="#DAA520"/>
+    <linearGradient
+       id="logoGoldGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#B8860B"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#DAA520"
+         id="stop6" />
     </linearGradient>
-    <filter id="logoGlow" x="-0.1" y="-0.1" width="1.2" height="1.2">
-      <feGaussianBlur stdDeviation="1" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    <filter
+       id="logoGlow"
+       x="-0.019010417"
+       y="-0.019010417"
+       width="1.0380208"
+       height="1.0380208">
+      <feGaussianBlur
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur6" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="over"
+         id="feComposite6" />
     </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#logoCosmicGradient"
+       id="linearGradient11"
+       x1="2.5"
+       y1="2.5"
+       x2="197.5"
+       y2="197.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#logoCosmicGradient"
+       id="linearGradient12"
+       x1="68"
+       y1="68"
+       x2="132"
+       y2="132"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#logoGoldGradient"
+       id="linearGradient13"
+       x1="82"
+       y1="27"
+       x2="118"
+       y2="63"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#logoGoldGradient"
+       id="linearGradient14"
+       x1="51"
+       y1="107"
+       x2="87"
+       y2="143"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#logoGoldGradient"
+       id="linearGradient15"
+       x1="113"
+       y1="107"
+       x2="149"
+       y2="143"
+       gradientUnits="userSpaceOnUse" />
   </defs>
-  
   <!-- Background -->
-  <rect width="1080" height="1080" fill="#f9fafb"/>
-  
+  <rect
+     width="1080"
+     height="1080"
+     fill="#f9fafb"
+     id="rect6" />
   <!-- Headline (The Problem) - Warning red -->
-  <text x="80" y="200" font-family="Inter, sans-serif" font-size="48" font-weight="bold" fill="#B91C1C" text-anchor="start">
-    <tspan x="80" dy="0">Our global systems are failing</tspan>
-    <tspan x="80" dy="60">to meet 21st-century crises.</tspan>
-  </text>
-  
+  <text
+     x="80"
+     y="200"
+     font-family="Inter, sans-serif"
+     font-size="48"
+     font-weight="bold"
+     fill="#B91C1C"
+     text-anchor="start"
+     id="text7"><tspan
+       x="80"
+       dy="0"
+       id="tspan6">Our global systems are failing</tspan><tspan
+       x="80"
+       dy="60"
+       id="tspan7">to meet 21st-century crises.</tspan></text>
   <!-- Body Text (The Solution) - Brand blue -->
-  <text x="80" y="380" font-family="Inter, sans-serif" font-size="36" font-weight="normal" fill="#2B4B8C" text-anchor="start">
-    <tspan x="80" dy="0">The 'Treaty for Our Only Home'</tspan>
-    <tspan x="80" dy="50">provides the upgrade, starting</tspan>
-    <tspan x="80" dy="50">with reforming the UN Security</tspan>
-    <tspan x="80" dy="50">Council veto to unlock</tspan>
-    <tspan x="80" dy="50">meaningful action.</tspan>
-  </text>
-  
+  <text
+     x="80"
+     y="380"
+     font-family="Inter, sans-serif"
+     font-size="36"
+     font-weight="normal"
+     fill="#2B4B8C"
+     text-anchor="start"
+     id="text12"><tspan
+       x="80"
+       dy="0"
+       id="tspan8">The 'Treaty for Our Only Home'</tspan><tspan
+       x="80"
+       dy="50"
+       id="tspan9">provides the upgrade, starting</tspan><tspan
+       x="80"
+       dy="50"
+       id="tspan10">with reforming the UN Security</tspan><tspan
+       x="80"
+       dy="50"
+       id="tspan11">Council veto to unlock</tspan><tspan
+       x="80"
+       dy="50"
+       id="tspan12">meaningful action.</tspan></text>
   <!-- Footer section -->
   <!-- Website URL -->
-  <text x="80" y="1040" font-family="Inter, sans-serif" font-size="20" fill="#6b7280">
-    globalgovernanceframework.org
-  </text>
-  
   <!-- Logo (scaled down and positioned in bottom right) -->
-  <g transform="translate(980, 980) scale(0.2)">
-    <!-- Outer circle representing global scope -->
-    <circle cx="100" cy="100" r="96" stroke="url(#logoCosmicGradient)" stroke-width="2.5" fill="white" filter="url(#logoGlow)"/>
-    
-    <!-- National level circle -->
-    <circle cx="100" cy="100" r="40" stroke="#6B5CA5" stroke-width="1" stroke-opacity="0.8" stroke-dasharray="2 2" fill="none"/>
-    
-    <!-- Regional level circle -->
-    <circle cx="100" cy="100" r="68" stroke="#7D9F7D" stroke-width="1" stroke-opacity="0.6" stroke-dasharray="3 3" fill="none"/>
-    
-    <!-- Central core -->
-    <circle cx="100" cy="100" r="19.6" fill="url(#logoCosmicGradient)"/>
-    
-    <!-- Key national nodes -->
-    <circle cx="116.2" cy="63.5" r="9.3" fill="url(#logoGoldGradient)" fill-opacity="0.9"/>
-    <circle cx="59.8" cy="90.5" r="8.6" fill="url(#logoGoldGradient)" fill-opacity="0.9"/>
-    <circle cx="79.9" cy="144.1" r="8.0" fill="url(#logoGoldGradient)" fill-opacity="0.9"/>
-    <circle cx="144.1" cy="123.9" r="7.1" fill="url(#logoGoldGradient)" fill-opacity="0.9"/>
-    <circle cx="140.2" cy="69.8" r="6.7" fill="url(#logoGoldGradient)" fill-opacity="0.9"/>
-    
-    <!-- Connection lines -->
-    <line x1="106" y1="86" x2="116" y2="64" stroke="url(#logoCosmicGradient)" stroke-width="1.2" stroke-opacity="0.8"/>
-    <line x1="90" y1="94" x2="60" y2="90" stroke="url(#logoCosmicGradient)" stroke-width="1.2" stroke-opacity="0.8"/>
-    <line x1="94" y1="112" x2="80" y2="144" stroke="url(#logoCosmicGradient)" stroke-width="1.2" stroke-opacity="0.8"/>
-    <line x1="112" y1="108" x2="144" y2="124" stroke="url(#logoCosmicGradient)" stroke-width="1.2" stroke-opacity="0.8"/>
-    <line x1="110" y1="88" x2="140" y2="70" stroke="url(#logoCosmicGradient)" stroke-width="1.2" stroke-opacity="0.8"/>
-    
-    <!-- Regional nodes -->
-    <circle cx="136" cy="54" r="4" fill="url(#logoEarthyGradient)" fill-opacity="0.8"/>
-    <circle cx="43.3" cy="75.3" r="4.7" fill="url(#logoEarthyGradient)" fill-opacity="0.8"/>
-    <circle cx="54.6" cy="152" r="5.4" fill="url(#logoEarthyGradient)" fill-opacity="0.8"/>
-    <circle cx="155.1" cy="102.9" r="5.1" fill="url(#logoEarthyGradient)" fill-opacity="0.8"/>
-    <circle cx="157.9" cy="58.1" r="5.9" fill="url(#logoEarthyGradient)" fill-opacity="0.8"/>
-    
-    <!-- Local nodes (simplified) -->
-    <circle cx="116" cy="16" r="2" fill="#8B7355" fill-opacity="0.6"/>
-    <circle cx="164" cy="40" r="2" fill="#8B7355" fill-opacity="0.6"/>
-    <circle cx="184" cy="116" r="2" fill="#8B7355" fill-opacity="0.6"/>
-    <circle cx="160" cy="170" r="2" fill="#8B7355" fill-opacity="0.6"/>
-    <circle cx="100" cy="188" r="2" fill="#8B7355" fill-opacity="0.6"/>
-    <circle cx="42" cy="172" r="2" fill="#8B7355" fill-opacity="0.6"/>
-    <circle cx="16" cy="68" r="2" fill="#8B7355" fill-opacity="0.6"/>
-    <circle cx="36" cy="34" r="2" fill="#8B7355" fill-opacity="0.6"/>
+  <g
+     id="g1"
+     transform="translate(15.209961,-10.000003)">
+    <text
+       x="693.68652"
+       y="1039.7184"
+       font-family="Inter, sans-serif"
+       font-size="20px"
+       fill="#6b7280"
+       id="text13-6">globalgovernanceframeworks.org</text>
+    <g
+       id="g10"
+       transform="matrix(0.51279796,0,0,0.51234912,810.11669,908.71913)">
+      <circle
+         cx="100"
+         cy="100"
+         r="96"
+         fill="#ffffff"
+         stroke="url(#blueGradient)"
+         stroke-width="3"
+         id="circle6"
+         style="stroke:url(#linearGradient11)" />
+      <circle
+         cx="100"
+         cy="100"
+         r="32"
+         fill="url(#blueGradient)"
+         id="circle7"
+         style="fill:url(#linearGradient12)" />
+      <circle
+         cx="100"
+         cy="45"
+         r="18"
+         fill="url(#goldGradient)"
+         id="circle8"
+         style="fill:url(#linearGradient13)" />
+      <circle
+         cx="69"
+         cy="125"
+         r="18"
+         fill="url(#goldGradient)"
+         id="circle9"
+         style="fill:url(#linearGradient14)" />
+      <circle
+         cx="131"
+         cy="125"
+         r="18"
+         fill="url(#goldGradient)"
+         id="circle10"
+         style="fill:url(#linearGradient15)" />
+    </g>
   </g>
 </svg>

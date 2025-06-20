@@ -1,5 +1,3 @@
-
-
 # Community Economic Implementation Guide
 
 **In this document:**

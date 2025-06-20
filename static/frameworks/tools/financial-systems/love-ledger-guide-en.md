@@ -1,9 +1,3 @@
----
-title: Love Ledger User Guide
-section: tools
-revision: Version 1.0 (2025-05-21)
----
-
 # Love Ledger User Guide
 
 **Tool Type**: Multi-format Guide (Digital, Print, Video)

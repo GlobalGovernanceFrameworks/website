@@ -11,18 +11,6 @@ Global justice systems face challenges like fragmentation, inequity, and emergin
 
 Rooted in universal human rights, indigenous justice, and restorative practices, it fosters collaboration across local, regional, and global levels while respecting cultural diversity.
 
----
-
-## What Is the Framework?
-The framework is a comprehensive plan to unify and strengthen justice systems worldwide. It integrates governance, legal standards, technology, and stakeholder engagement to address modern challenges. Key features include:
-- **Inclusive Governance**: Involves marginalized communities, indigenous groups, and youth.
-- **Ethical Technology**: Uses AI and blockchain with human oversight for fairness.
-- **Restorative Justice**: Prioritizes healing and community-based solutions.
-- **Regional Customization**: Adapts to diverse legal systems (e.g., Asia-Pacific, Latin America).
-- **Global Justice Fund**: Targets $30 billion to support equitable implementation.
-
----
-
 ## Key Components
 The framework is organized into nine core sections, each addressing a critical aspect of global justice:
 

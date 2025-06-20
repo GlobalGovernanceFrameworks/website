@@ -1,5 +1,3 @@
-
-
 # Mat- och Jordbrukssystem: Enkel Guide
 
 **PRIMÄR MÅLGRUPP:**

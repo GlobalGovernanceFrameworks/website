@@ -1766,6 +1766,16 @@ The Treaty for Our Only Home is a living document, designed to evolve through th
 
 ---
 
+**Continue your exploration:**
+
+Still have questions about how this transformation would actually work? Wondering about sovereignty concerns, implementation challenges, or practical operations? Our comprehensive [FAQ & Challenges](/frameworks/docs/implementation/treaty-for-our-only-home#07-faq-and-challenges) section addresses the most common concerns with detailed, evidence-based responses.
+
+Need clarification on specific terms or concepts? The [Glossary](/frameworks/docs/implementation/treaty-for-our-only-home#08-glossary) provides clear definitions of all key mechanisms, institutions, and principles used throughout the Treaty framework.
+
+**Ready to take action?** Return to the [main framework](/frameworks/docs/implementation/treaty-for-our-only-home) to explore implementation strategies, download advocacy tools, or find ways to get involved in building the governance transformation our world needs.
+
+---
+
 *The Treaty for Our Only Home: A framework for conscious evolution from crisis-generating to resilience-generating governance systems. Developed through comprehensive research synthesis and iterative refinement to integrate evidence-based practices with visionary transformation. Implementation requires local consultation with cultural, legal, and technical experts familiar with specific contexts while maintaining the framework's systemic integrity and transformative scope.*
 
 *For questions, partnership opportunities, or implementation support: globalgovernanceframework@gmail.com*

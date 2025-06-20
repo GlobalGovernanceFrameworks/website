@@ -7954,22 +7954,168 @@ const tools = [
       en: 'Contributing to the Global Governance Frameworks outreach - Page ',
       sv: 'Bidra till Global Governance Frameworks utåtriktade verksamhet - Sida '
     }
+  },
+  {
+    name: 'project-overview',
+    category: 'get-involved',
+    fileNames: {
+      en: 'Project_Overview',
+      sv: 'Projekt_Oversikt'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'sv'),
+    },
+    subfolders: {
+      en: 'Advocacy_Kit/Message_Pack',
+      sv: '/Opinionsbildningskit/Meddelandepaket',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Project Overview - Page ',
+      sv: 'Global Governance Frameworks. Projektöversikt - Sida '
+    }
+  },
+  {
+    name: 'key-talking-points-and-faq',
+    category: 'get-involved',
+    fileNames: {
+      en: 'Key_Talking_Points_and_FAQ',
+      sv: 'Viktiga_Samtalsamnen_och_FAQ'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'sv'),
+    },
+    subfolders: {
+      en: 'Advocacy_Kit/Message_Pack',
+      sv: '/Opinionsbildningskit/Meddelandepaket',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Project Key Talking Points & FAQ - Page ',
+      sv: 'Global Governance Frameworks. Viktiga samtalsämnen och vanliga frågor - Sida '
+    }
+  },
+  {
+    name: 'key-facts-and-statistics-sheet',
+    category: 'get-involved',
+    fileNames: {
+      en: 'Key_Facts_and_Statistics',
+      sv: 'Viktiga_Fakta_och_Statistik'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'sv'),
+    },
+    subfolders: {
+      en: 'Advocacy_Kit/Message_Pack',
+      sv: '/Opinionsbildningskit/Meddelandepaket',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Project Key Facts & Statistics - Page ',
+      sv: 'Global Governance Frameworks. Viktiga fakta och statistik - Sida '
+    }
+  },
+  {
+    name: 'brand-guidelines',
+    category: 'get-involved',
+    fileNames: {
+      en: 'Brand_Guidelines',
+      sv: 'Riktlinjer_For_Grafisk_Profil'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'sv'),
+    },
+    subfolders: {
+      en: 'Advocacy_Kit/Media_Kit/GGF_Logo_and_Branding_Kit',
+      sv: '/Opinionsbildningskit/Media-Kit/GGF_Grafisk_Profil_och_Logotyper',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Brand Guidelines - Page ',
+      sv: 'Global Governance Frameworks. Grafisk profil - Sida '
+    }
+  },
+  {
+    name: 'guide-to-talking-about-ggf',
+    category: 'get-involved',
+    fileNames: {
+      en: 'Guide_to_Talking_About_GGF',
+      sv: 'Guide_for_Att_Prata_Om_GGF'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'sv'),
+    },
+    subfolders: {
+      en: 'Advocacy_Kit/Action_Pack',
+      sv: '/Opinionsbildningskit/Aktionspaket',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Guide to Talking About GGF - Page ',
+      sv: 'Global Governance Frameworks. Guide för att prata om GGF - Sida '
+    }
+  },
+  {
+    name: 'community-event-guide',
+    category: 'get-involved',
+    fileNames: {
+      en: 'Community_Event_Guide',
+      sv: 'Guide_for_Lokala_Evenemang'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'sv'),
+    },
+    subfolders: {
+      en: 'Advocacy_Kit/Action_Pack',
+      sv: '/Opinionsbildningskit/Aktionspaket',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Community Event Guide - Page ',
+      sv: 'Global Governance Frameworks. Guide för lokala evenemang - Sida '
+    }
+  },
+  {
+    name: 'content-creation-guide',
+    category: 'get-involved',
+    fileNames: {
+      en: 'Content_Creation_Guide',
+      sv: 'Guide_for_Innehallsskapande'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'get-involved', 'outreach', 'sv'),
+    },
+    subfolders: {
+      en: 'Advocacy_Kit/Action_Pack',
+      sv: '/Opinionsbildningskit/Aktionspaket',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Content Creation Guide - Page ',
+      sv: 'Global Governance Frameworks. Guide för innehållsskapande - Sida '
+    }
   }
-
 ];
 
 // CSS styling for the PDF
 const css = `
+  /* Import the Inter font from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
   body {
-    font-family: 'Times New Roman', 'Liberation Serif', serif;
-    font-size: 11pt;
-    line-height: 1.15;
+    /* Use Inter as the primary font, with standard fallbacks */
+    font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+    font-size: 11pt; /* You may want to adjust this to 10pt for Inter */
+    line-height: 1.4; /* Increased line-height for better readability with sans-serif */
     color: #333;
     max-width: none;
     margin: 0;
     padding: 0.5cm;
   }
+
+  /* Make headings use the bold version of Inter */
   h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* 700 is the bold weight for Inter */
     color: #2B4B8C;
     margin-top: 0.8em;
     margin-bottom: 0.4em;
@@ -8140,6 +8286,30 @@ const css = `
   .page-break-avoid {
     page-break-inside: avoid;
   }
+
+  @page {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    
+    @top-left {
+      content: element(header);
+    }
+    
+    @bottom-center {
+      content: element(footer);
+    }
+  }
+
+  /* Section marker for dynamic footers */
+  .section-marker {
+    position: running(section-title);
+    font-weight: 600;
+    color: #2B4B8C;
+  }
+
+  h1, h2 {
+    position: running(section-title);
+  }
 `;
 
 // Use simpler emoji replacement approach
@@ -8194,6 +8364,44 @@ function replaceEmojisWithImages(text) {
   });
 
   return text;
+}
+
+function getLogoDataUri() {
+  const logoPath = path.join(__dirname, '..', 'static', 'logo-favicon.svg');
+  if (fs.existsSync(logoPath)) {
+    try {
+      const svgContent = fs.readFileSync(logoPath, 'utf8');
+      let processedSvg = svgContent;
+      
+      // Ensure SVG has namespace
+      if (!svgContent.includes('xmlns="http://www.w3.org/2000/svg"')) {
+        processedSvg = svgContent.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+      }
+      
+      return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(processedSvg)}`;
+    } catch (error) {
+      console.warn(`❌ Error processing logo: ${error.message}`);
+      return '';
+    }
+  } else {
+    console.warn(`⚠️ Logo file not found: ${logoPath}`);
+    return '';
+  }
+}
+
+function getCurrentSection(markdown, currentPosition = 0) {
+  const lines = markdown.split('\n');
+  let currentSection = '';
+  
+  // Look for the most recent h1 or h2 heading before current position
+  for (let i = 0; i < lines.length && i < currentPosition; i++) {
+    const line = lines[i].trim();
+    if (line.startsWith('# ') || line.startsWith('## ')) {
+      currentSection = line.replace(/^#+\s+/, '');
+    }
+  }
+  
+  return currentSection || 'Introduction';
 }
 
 // Enhanced image processing function for PDF generator
@@ -8361,14 +8569,20 @@ async function generatePDFs() {
           outputDir = outputDirs[tool.category];
         }
         
-        // Ensure the output directory exists
+        // NEW: Add subfolder support
+        if (tool.subfolders && tool.subfolders[lang]) {
+          outputDir = path.join(outputDir, tool.subfolders[lang]);
+          console.log(`Using subfolder: ${tool.subfolders[lang]}`);
+        }
+        
+        // Ensure the output directory exists (including subfolders)
         if (!fs.existsSync(outputDir)) {
           fs.mkdirSync(outputDir, { recursive: true });
           console.log(`Created directory: ${outputDir}`);
         }
         
         const outputFile = path.join(outputDir, `${fileName}.pdf`);
-       
+        
         console.log(`\nProcessing ${lang.toUpperCase()} version of ${tool.name}:`);
         
         let markdown = '';
@@ -8513,25 +8727,46 @@ async function generatePDFs() {
           });
           
           // Generate PDF
+          const logoDataUri = getLogoDataUri();
+
+          // Determine if this is a multi-section document
+          const isMultiSection = (tool.sections && Array.isArray(tool.sections)) || 
+                                (tool.combinedFiles && Array.isArray(tool.combinedFiles));
+
           await page.pdf({
             path: outputFile,
             format: 'A4',
             margin: {
-              top: '1.5cm',    // Reduced from 1cm
-              right: '1.5cm',  // Reduced from 1cm  
-              bottom: '1.5cm', // Reduced from 1cm
-              left: '1.5cm'    // Reduced from 1cm
+              top: '2cm',      // Increased for header
+              right: '1.5cm',
+              bottom: '2cm',   // Increased for footer
+              left: '1.5cm'
             },
             printBackground: true,
             displayHeaderFooter: true,
-            headerTemplate: '<div></div>',
-            footerTemplate: `
-              <div style="width: 100%; font-size: 7px; padding: 0 1.5cm; color: #777; text-align: center;">
-                <span>${tool.pageFooter[lang]}<span class="pageNumber"></span> / <span class="totalPages"></span></span>
+            headerTemplate: `
+              <div style="width: 100%; font-size: 8px; padding: 0 1.5cm; color: #2B4B8C; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #eee;">
+                <div style="display: flex; align-items: center;">
+                  ${logoDataUri ? `<img src="${logoDataUri}" style="height: 12px; margin-right: 8px;" />` : ''}
+                  <span style="font-weight: 600;">${tool.pageFooter[lang].replace(' - Page ', '')}</span>
+                </div>
+                <div style="font-size: 7px; color: #666;">
+                  Global Governance Frameworks
+                </div>
+              </div>
+            `,
+            footerTemplate: isMultiSection ? `
+              <div style="width: 100%; font-size: 7px; padding: 0 1.5cm; color: #777; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee;">
+                <span style="font-style: italic;">Current Section</span>
+                <span>Page <span class="pageNumber"></span> of <span class="totalPages"></span></span>
+              </div>
+            ` : `
+              <div style="width: 100%; font-size: 7px; padding: 0 1.5cm; color: #777; text-align: center; border-top: 1px solid #eee;">
+                <span>Page <span class="pageNumber"></span> of <span class="totalPages"></span></span>
               </div>
             `,
             preferCSSPageSize: false,
-            scale: 0.95  // Slightly reduce scale to fit more content
+            scale: 0.95
           });
           
           // Close the page

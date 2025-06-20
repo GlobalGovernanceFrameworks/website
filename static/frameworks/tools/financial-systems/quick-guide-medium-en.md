@@ -1,9 +1,3 @@
----
-title: Financial Systems Framework Medium Guide
-section: quick-guide-medium
-revision: Version 1.0 (2025-05-21)
----
-
 # Financial Systems Framework: Medium Guide
 
 **Estimated Reading Time**: 15 minutes

@@ -1,9 +1,3 @@
----
-title: Financial Systems Transition Guide
-section: tools
-revision: Version 1.0 (2025-05-21)
----
-
 # Financial Systems Transition Guide
 
 **Tool Type**: PDF Guide with Interactive Assessment

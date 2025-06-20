@@ -10,31 +10,6 @@ This template embodies the principles of <span style="color: blue;">sovereignty<
 **Available formats:** PDF, editable document, web form, paper printout  
 **Languages:** Available in 10 languages with visual guides for low-literacy contexts  
 
----
-
-## 1. Grant Specifications
-
-### Grant Amounts
-- **Micro-Grant Tier 1:** $500-$1,500 USD (equivalent in local currency)
-- **Micro-Grant Tier 2:** $1,500-$5,000 USD (equivalent in local currency)
-- **Community Matching Component:** Optional 10-30% in-kind contribution (labor, space, materials)
-
-### Eligible Uses
-- Initial implementation of framework components (community currencies, cooperatives, etc.)
-- Training and capacity building for community members
-- Essential tools and materials for framework implementation
-- Costs for outreach and community engagement
-- Basic administrative support for implementation
-
-### Ineligible Uses
-- Individual profit-making ventures
-- Activities contradicting framework principles
-- Political campaigns or partisan activities
-- Payment of existing debts
-- Activities that could cause environmental harm
-
----
-
 ## 2. Eligibility Criteria
 
 Grants are available to:

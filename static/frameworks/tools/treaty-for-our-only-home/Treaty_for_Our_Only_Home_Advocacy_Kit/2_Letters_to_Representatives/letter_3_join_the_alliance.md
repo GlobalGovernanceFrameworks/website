@@ -17,7 +17,7 @@ Dear [Mr./Madam/Mx. Representative/Minister's Last Name],
 
 My name is [Your Name], a citizen of [Your Country's Name] and a constituent from [Your City/Town]. I am writing to you today about a matter of significant strategic importance for our nation's future and its role on the world stage.
 
-The "Treaty for Our Only Home," a comprehensive framework for global governance (available at globalgovernanceframework.org), outlines a pragmatic and visionary path for navigating the 21st century's polycrisis. While its scope is broad, its core implementation strategy is what I wish to bring to your attention today.
+The "Treaty for Our Only Home," a comprehensive framework for global governance (available at globalgovernanceframeworks.org), outlines a pragmatic and visionary path for navigating the 21st century's polycrisis. While its scope is broad, its core implementation strategy is what I wish to bring to your attention today.
 
 The treaty proposes the formation of a "Global Stewardship Alliance"—a coalition of 30 to 50 forward-thinking nations committed to leading by example. Rather than waiting for universal consensus, which can lead to inaction, this Alliance would pioneer key governance reforms internally and collaboratively. Its purpose is to demonstrate the viability of a more resilient, just, and effective global system, thereby creating the momentum for wider adoption.
 

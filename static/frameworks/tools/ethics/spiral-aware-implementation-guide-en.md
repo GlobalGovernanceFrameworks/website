@@ -7,38 +7,6 @@ This implementation guide extends beyond the Spiral-Aware Primer (Appendix H) by
 
 Effective implementation of the Global Ethics & Rights of Beings Framework requires meeting people where they are—speaking to their values, addressing their concerns, and inviting their participation in ways that resonate with their worldview. This guide will help you develop implementation approaches that work across diverse perspectives, increasing acceptance and participation.
 
----
-
-## Part 1: Implementation Principles
-
-### Core Spiral-Aware Implementation Principles
-
-1. **Meet People Where They Are**: Begin by understanding and respecting current worldviews rather than trying to change them immediately.
-
-2. **Translate, Don't Impose**: Adapt framework language and concepts to resonate with each perspective rather than requiring people to adopt new terminology or values.
-
-3. **Identify Natural Next Steps**: Recognize that worldviews evolve naturally when current approaches prove inadequate; implementation should provide stepping stones rather than demand leaps.
-
-4. **Honor All Perspectives**: Each worldview has valuable insights and contributions; avoid creating hierarchies that privilege some perspectives over others.
-
-5. **Address Legitimate Concerns**: Each worldview has valid reasons for resistance that should be addressed specifically rather than dismissed.
-
-6. **Create Multiple Entry Points**: Design implementation with diverse pathways allowing engagement from different worldviews simultaneously.
-
-7. **Facilitate Cross-Perspective Dialogue**: Build bridges of understanding between worldviews to create more integrated approaches.
-
-### Implementation Planning Framework
-
-Every implementation effort should consider:
-
-1. **Context Assessment**: What worldviews are predominant in this setting?
-2. **Adaptation Strategy**: How should framework concepts be translated for these worldviews?
-3. **Engagement Design**: What approaches will resonate with each worldview?
-4. **Integration Approach**: How can diverse perspectives be brought together?
-5. **Evolution Pathway**: How might implementation support natural development?
-
----
-
 ## Part 2: Worldview-Specific Implementation Strategies
 
 ### Traditional (Blue) Implementation

@@ -15,27 +15,6 @@
 9. [Implementation Tools](#implementation-tools)
 10. [Resources](#resources)
 
----
-
-## Introduction
-
-Expanding our ethical consideration to include diverse beings—human, animal, ecological, and technological—represents a significant paradigm shift that will inevitably encounter resistance. This playbook provides practical approaches for understanding and addressing opposition to the Global Ethics & Rights of Beings Framework while maintaining respectful dialogue and seeking mutual benefit.
-
-**Purpose of This Playbook:**
-- Provide structured approaches to managing resistance
-- Foster constructive engagement with skeptical stakeholders
-- Reduce unnecessary opposition through effective communication
-- Build long-term support through genuine relationship-building
-
-**Core Principles:**
-- **Respect for Legitimate Concerns:** Recognizing that resistance often stems from valid perspectives and interests
-- **Non-Adversarial Approach:** Engaging opposition as potential partners rather than enemies
-- **Values-Based Engagement:** Connecting with diverse value systems rather than imposing a single viewpoint
-- **Mutual Benefit Focus:** Seeking solutions that address both framework objectives and stakeholder concerns
-- **Long-Term Relationship:** Building foundations for ongoing collaboration rather than short-term wins
-
----
-
 ## Understanding Resistance
 
 ### Categories of Resistance

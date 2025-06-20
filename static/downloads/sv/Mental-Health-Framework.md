@@ -149,7 +149,6 @@ Ramverket är tillgängligt via webbplatsen för Global Governance Framework, de
 
 **Förverkligad vision**: Vid 2035 framträder psykisk hälsa som en transkulturell mänsklig rättighet snarare än ett medicinskt privilegium—där gemenskapsvisdom vägleder läkning snarare än institutionell kontroll, där medvetandeutforskning firas snarare än patologiseras, och där kollektivt välmående ersätter individuell behandling. **Framtiden är gemenskapsledd, och transformationen börjar i våra läkningscirklar idag.**
 
-
 # 1. Vision och vägledande principer
 
 > *"Psykisk hälsa som en transkulturell mänsklig rättighet, som främjar psykosocialt välmående genom människo-planetärt ömsesidigt beroende och existentiell förankring."*
@@ -360,7 +359,6 @@ Inuitgemenskaper etablerade läkningsallmänningar för psykisk hälsa som integ
 **Integrationsnot**: Dessa principer utgör den levande grunden för hela ramverket—inte abstrakta ideal utan praktiska guider för att transformera system för psykisk hälsa världen över. Varje efterföljande avsnitt bygger på dessa principer, tillhandahåller konkreta mekanismer för implementering samtidigt som trohet till visionen om psykisk hälsa som transkulturell mänsklig rättighet som främjar kollektivt välmående upprätthålls.
 
 **Nästa steg**: Med dessa principer etablerade, fortsätter ramverket att utforska styrning och institutionella strukturer som behövs för att operationalisera denna vision, med början i globala koordinationsmekanismer och utsträckning genom gemenskapsledda implementeringsmetoder.
-
 
 # 2. Styrning och institutionella strukturer
 
@@ -629,7 +627,6 @@ Ramverksöverskridande resursdelning maximerar påverkan samtidigt som varje ram
 **Integrationsnot**: Denna styrningsarkitektur skapar den institutionella grunden för att transformera psykisk hälsa från individuell behandling till kollektivt välmående. Strukturerna balanserar global koordination med gemenskapssuveränitet, vilket säkerställer att planetär styrning av psykisk hälsa uppstår från läkningsvisdom snarare än enbart institutionell expertis.
 
 **Nästa steg**: Med styrningsstrukturer etablerade, fortsätter ramverket att utforska de juridiska och policyramverk som behövs för att operationalisera rättighetsbaserad psykisk hälsovård, med början i antidiskrimineringslagstiftning och vidare till internationell fördragsutveckling.
-
 
 # 3. Juridiska och policyramverk
 
@@ -910,7 +907,6 @@ Traditionella juridiska reformprocesser exkluderar ofta gemenskapsröster och in
 **Integrationsnot**: Detta juridiska ramverk skapar grunden för att eliminera tvingande metoder inom psykisk hälsovård samtidigt som medvetandeutforskning, traditionell läkning och gemenskapssuveränitet skyddas. Den juridiska arkitekturen balanserar individuella rättigheter med kollektiv läkning, vilket säkerställer att lagen tjänar frigörelse snarare än kontroll.
 
 **Nästa steg**: Med juridiska skydd etablerade, fortsätter ramverket att utforska finansieringsmekanismer som kan finansiera denna transformation på ett hållbart sätt, med början i innovativa finansieringsmetoder och vidare till globala solidaritetsramverk.
-
 
 # 4. Finansiering och resurshantering
 
@@ -1193,7 +1189,6 @@ Globala ekonomiska ojämlikheter, skuldbördor och exploaterande ekonomiska rela
 **Integrationsnot**: Denna finansieringsarkitektur säkerställer hållbara resurser för omvandling av psykisk hälsa samtidigt som den utmanar de ekonomiska system som bidrar till psykologisk stress. Finansieringsmekanismerna balanserar global solidaritet med gemenskapskontroll, vilket skapar vägar för ekonomisk rättvisa som intervention för psykisk hälsa.
 
 **Nästa steg**: Med finansiering etablerad fortsätter ramverket att utforska tjänsteleverans och arbetskraftsutveckling som kan implementera gemenskapsledd, kulturellt lyhörd psykisk hälsovård med hjälp av dessa hållbara finansieringsmekanismer.
-
 
 # 5. Tjänsteleverans och arbetskraft
 
@@ -1564,7 +1559,6 @@ Teknologi för psykisk hälsa måste respektera gemenskapssuveränitet och indiv
 
 **Nästa steg**: Med tjänsteleverans etablerad, fortsätter ramverket att utforska övervaknings- och ansvarighetssystem som kan utvärdera denna transformation med gemenskapsdefinerade mått på välmående snarare än institutionella mått på efterlevnad.
 
-
 # 6. Övervakning, utvärdering och ansvarsskyldighet
 
 > *"Gemenskapsledd övervakning med välmåendemått - ansvarsskyldighet som tjänar läkning snarare än byråkrati."*
@@ -1895,7 +1889,6 @@ Ansvarsskyldighet för psykisk hälsa måste modellera de läkningsmetoder den s
 
 **Nästa steg**: Med ansvarighetssystem etablerade, fortsätter ramverket att utforska kris- och akutresponsprotokoll som kan upprätthålla rättighetsbaserade metoder även under psykiska hälsokriser och katastrofer.
 
-
 # 7. Kris- och akutrespons
 
 > *"Snabb, kulturellt förankrad psykisk hälsostöd - läkning även i kris upprätthåller värdighet och gemenskapsanknytning."*
@@ -2212,7 +2205,6 @@ Krisrespons måste integreras sömlöst med långsiktiga system för psykisk hä
 **Integrationsnot**: Denna krisresponsarkitektur säkerställer att psykiska hälsokriser stärker snarare än underminerar gemenskapsbaserade system för psykisk hälsa. Responsprotokollen upprätthåller värdighet, kulturell suveränitet och läkningscentrerade metoder samtidigt som de tillhandahåller snabbt, effektivt krisstöd.
 
 **Nästa steg**: Med krisrespons etablerad, fortsätter ramverket att utforska innovations- och forskningsmetoder som kan främja gemenskapsledd transformation av psykisk hälsa samtidigt som traditionell kunskap och gemenskapssuveränitet respekteras.
-
 
 # 8. Innovation och forskning
 
@@ -2558,7 +2550,6 @@ Innovationspåverkan måste mätas genom gemenskapsnytta och kulturell lämpligh
 **Integrationsnot**: Denna innovations- och forskningsarkitektur säkerställer att framsteg inom psykisk hälsa tjänar gemenskapsbehov samtidigt som olika sätt att veta hedras. Forskningsprioriteringarna uppstår från gemenskapsvisdom snarare än akademiska intressen, med traditionell kunskap som får likvärdig ställning med samtida vetenskap i utvecklingen av effektiva interventioner för psykisk hälsa.
 
 **Nästa steg**: Med innovationsramverk etablerade, fortsätter ramverket att utforska övergripande teman som integrerar psykisk hälsa med bredare social rättvisefrågor inklusive klimatförändringar, genusjämlikhet, ungdomsutveckling och ekonomisk rättvisa.
-
 
 # 9. Övergripande teman
 
@@ -2908,7 +2899,6 @@ AI inom psykisk hälsa kräver specialiserad etisk styrning med tanke på sårba
 
 **Nästa steg**: Med övergripande teman etablerade, fortsätter ramverket att utforska omfattande implementeringsstrategi som kan koordinera denna multidimensionella transformation över alla nivåer från individuell läkning till global policyförändring.
 
-
 # 10. Implementeringsstrategi
 
 > *"Från vision till verklighet genom gemenskapshandling - transformation som hedrar både brådska och läkningens spiralformade natur."*
@@ -3233,7 +3223,6 @@ Ramverket opererar som gemenskapskontrollerad öppen källkod-resurs som möjlig
 
 **Nästa steg**: Med omfattande implementeringsstrategi etablerad, fortsätter ramverket att utforska politisk strategi och intressentkartläggning som kan navigera motstånd och bygga makt för transformation av psykisk hälsa.
 
-
 # 11. Politisk strategi och intressentkartläggning
 
 > *"Bygga makt för läkning - politisk strategi som transformerar system samtidigt som gemenskapssuveränitet bevaras."*
@@ -3533,7 +3522,6 @@ Gemenskapsorganisationer måste upprätthålla oberoende från partipolitiska sy
 **Integrationsnot**: Denna politiska strategi upprätthåller gemenskapssuveränitet samtidigt som makt byggs för transformation av psykisk hälsa genom multipla kanaler inklusive koalitionsbyggande, policyförespråkande och strategiskt valengagemang. Metoden erkänner att politisk transformation kräver både inside- och outside-strategier som arbetar tillsammans för att skapa systematisk förändring.
 
 **Nästa steg**: Med politisk strategi etablerad, fortsätter ramverket att utforska omfattande riskhantering som kan förutse och adressera utmaningar för transformation av psykisk hälsa samtidigt som gemenskapssuveränitet och traditionell kunskap skyddas.
-
 
 # 12. Riskhantering
 

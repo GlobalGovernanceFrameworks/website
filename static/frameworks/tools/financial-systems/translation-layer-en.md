@@ -1,9 +1,3 @@
----
-title: Inter-Currency Translation Layer
-section: tools
-revision: Version 1.0 (2025-05-21)
----
-
 # Inter-Currency Translation Layer
 
 **Tool Type**: Technical Framework and API

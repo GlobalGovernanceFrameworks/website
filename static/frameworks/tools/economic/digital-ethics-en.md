@@ -1,5 +1,3 @@
-
-
 # Digital Economic Ethics Guide
 
 **In this document:**

@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: Lite Guide
 
 **In this document:**

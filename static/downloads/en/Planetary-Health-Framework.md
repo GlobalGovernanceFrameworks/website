@@ -134,7 +134,6 @@ The framework is accessible through the Global Governance Framework website, des
 
 **Contribute**: Help expand accessibility by volunteering for translation, community health documentation, technology development, or pilot implementation. Contact us at [globalgovernanceframework@gmail.com] to join the planetary health movement.
 
-
 # Manifesto: The Planetary Health Accord
 
 **In this section:**
@@ -3020,7 +3019,6 @@ The Planetary Health Accord implementation follows a carefully designed 12-year 
 ---
 
 **Cross-Reference Note**: This implementation roadmap integrates all previous sections, providing concrete timelines and milestones for [Community Health Legion](#community-health-legion-establishment) deployment, [Technology Infrastructure](#technology-infrastructure-pilot-deployment) scaling, [Global Health Equity Council](#global-health-equity-council-establishment) operation, and [Health Sanctuary Nations](#health-sanctuary-nations) program implementation with community control and traditional knowledge integration throughout all phases.
-
 
 # Health in Conflict Zones
 

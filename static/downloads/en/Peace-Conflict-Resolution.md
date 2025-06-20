@@ -6,8 +6,6 @@ This implementation guide outlines how the Global Governance Framework applies t
 
 The guide not only outlines theoretical approaches but provides practical tools for immediate application. The **Peace & Conflict Resolution Seed Kit** serves as a comprehensive starter package containing essential templates, protocols, and guidance for implementing peace governance at multiple levels. From community peace committees to digital conflict monitoring, the Seed Kit provides everything needed to begin transforming conflict into opportunity for positive change in diverse contexts.
 
-
-
 ### Core Peace & Conflict Resolution Principles
 
 The *Peace & Conflict Resolution Framework* is grounded in a set of foundational principles that guide its approach to transforming conflicts into opportunities for cooperation. These principles ensure that peace governance is inclusive, adaptive, and aligned with global and local systems, supporting SDG 16 (Peace, Justice and Strong Institutions) and other international frameworks.
@@ -76,7 +74,6 @@ The framework aligns with international and local governance systems to ensure c
 
 These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessible via the [Tools Library](/frameworks/tools/peace).
 
-
 **Implementation Support Resources:**
 
 To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/frameworks/tools/peace).
@@ -139,8 +136,6 @@ Conflict resolution at the community level is foundational to sustainable peace,
 Communities seeking to implement these approaches can utilize the Local Peace Committee toolkit included in the **Peace & Conflict Resolution Seed Kit**, which provides step-by-step guidance for establishing effective community-based peace governance. The toolkit includes stakeholder mapping templates, facilitation guides for initial meetings, sample charters in multiple languages, and monitoring frameworks tailored to local contexts.
 
 **Case Study**: Brazil’s Favela Pacification Program in Rio de Janeiro offers lessons in urban conflict governance. Launched before the 2016 Olympics, the program aimed to reclaim favelas from gang control through "Police Pacification Units" (UPPs), followed by social investments like schools and health clinics. Initial successes—such as a 65% drop in homicides in some areas—demonstrated the potential of combining security with development. However, challenges emerged: heavy-handed policing eroded trust, funding cuts stalled social programs, and gangs adapted by relocating. An evolved approach in Complexo da Maré later integrated community policing networks, resident-led peace committees, and digital monitoring via WhatsApp groups to report tensions, achieving more sustainable outcomes. This case highlights the need for adaptive, community-driven urban governance that balances security with inclusion and economic opportunity, offering a scalable model for megacities worldwide.
-
-
 
 **Implementation Support Resources:**
 
@@ -207,7 +202,6 @@ These tools are included in the *Peace & Conflict Resolution Seed Kit*, accessib
 
 **Case Study**: New Zealand's Treaty of Waitangi reconciliation process demonstrates successful integration of Māori traditional approaches into national peacebuilding. By incorporating tikanga (Māori customary practices) into both the process and outcomes of addressing historical injustices, the Waitangi Tribunal has enabled more culturally legitimate and sustainable resolutions. The use of marae (traditional meeting spaces) for hearings, recognition of oral testimony as valid evidence, and inclusion of Māori legal concepts in settlements has created a hybrid system that respects indigenous sovereignty while working within a national framework. This approach shows how traditional knowledge systems can be integral rather than peripheral to effective peacebuilding governance.
 
-
 **Implementation Support Resources:**
 
 To bridge theory and practice, this framework is accompanied by a **Peace & Conflict Resolution Seed Kit** - a comprehensive package containing essential tools for immediate implementation. The kit includes conflict analysis templates, local peace committee charters, early warning protocols, dialogue facilitation guides, and regionally-adaptable resources. This practical starting point enables peace practitioners to rapidly deploy evidence-based approaches while maintaining alignment with the broader governance framework. Access the complete Seed Kit and additional implementation tools through the [Tools Library](/frameworks/tools/peace).
@@ -225,8 +219,6 @@ To bridge theory and practice, this framework is accompanied by a **Peace & Conf
 - Methodologies for regional truth and reconciliation processes
 
 **Case Study**: The Economic Community of West African States (ECOWAS) has developed a comprehensive conflict prevention framework that combines early warning systems, preventive diplomacy, and a standby force for peacekeeping when necessary. During political crises in The Gambia, Guinea-Bissau, and other member states, ECOWAS has used a combination of diplomatic pressure, economic incentives, and the credible threat of intervention to prevent or resolve conflicts. This multi-faceted approach demonstrates how regional organizations can integrate various peacebuilding tools across multiple governance levels.
-
-
 
 **Implementation Support Resources:**
 
@@ -247,7 +239,6 @@ To bridge theory and practice, this framework is accompanied by a **Peace & Conf
 - Interoperability standards for peace and security organizations
 
 **Case Study**: The International Criminal Court (ICC), despite limitations, represents an attempt to create global accountability for serious international crimes. By establishing individual criminal responsibility for genocide, crimes against humanity, and war crimes, the ICC has shifted international norms and demonstrated that even high-ranking officials may face consequences for atrocities. The Court's complementarity principle—operating only when national courts are unwilling or unable to prosecute—creates incentives for states to improve their domestic justice systems while providing recourse when they fail.
-
 
 ### Digital Peace Infrastructure
 
@@ -344,8 +335,6 @@ To ensure effective implementation and accountability of digital peace technolog
 
 These KPIs should be regularly assessed, reported transparently, and updated to reflect evolving digital threats and opportunities. Benchmarks should be contextualized for specific implementation environments, with higher standards applied to high-tech democracies and more foundational metrics for fragile states.
 
-
-
 ### AI & Digital Peace Ethics
 
 While digital technologies offer powerful tools for peace, they also present unique risks requiring dedicated governance:
@@ -410,7 +399,6 @@ Beyond established digital tools, cutting-edge technologies offer new possibilit
 
 **Case Study**: The "Visualizing Peace" project in Cyprus uses virtual reality to help Greek and Turkish Cypriots experience life on the other side of the divided island. By creating immersive experiences of cultural sites, family stories, and daily life, the technology overcomes physical separation that has lasted for generations. Participants report significantly increased empathy and willingness to support reconciliation following VR sessions. The project demonstrates how emerging technologies can create emotional connections and shared understanding when physical contact is limited by conflict, offering new pathways for building peace across divided communities.
 
-
 ### Hybrid & Non-State Actor Engagement
 
 Modern conflicts increasingly involve non-state and hybrid actors, requiring specific governance approaches:
@@ -434,7 +422,6 @@ Modern conflicts increasingly involve non-state and hybrid actors, requiring spe
 - **Community Security Governance**: Local systems addressing protection needs without militarization
 
 **Case Study**: The Colombia peace process with the Revolutionary Armed Forces of Colombia (FARC) demonstrates comprehensive governance approaches to non-state armed actors. The process created specialized transitional justice mechanisms, territorially-focused reincorporation programs, and comprehensive rural reform addressing conflict's root causes. Special provisions for different kinds of combatants—commanders, rank-and-file, child soldiers, female fighters—demonstrated how differentiated approaches can effectively address complex non-state actor ecosystems. While implementation has faced challenges, the process created governance innovations including victim-centered truth commissions, rural development councils with ex-combatant participation, and community-based security mechanisms. This approach shows how peace governance can comprehensively address the complex reality of non-state armed groups while maintaining accountability for serious crimes.
-
 
 ### Military & Security Sector Transformation
 
@@ -485,7 +472,6 @@ Transitioning from military to human security approaches requires comprehensive,
 **Case Study**: Japan's post-WWII transition from militarism to Article 9 constitutionalism demonstrates successful military transformation governance. Through a phased approach, Japan established a comprehensive governance framework that maintained security while redirecting resources to economic and human development. This included constitutional limitations on military forces, transformation of defense industries to civilian manufacturing, redirection of military budgets to infrastructure and education, and development of a distinctive human security foreign policy. While maintaining self-defense capabilities, Japan's transition created a governance model prioritizing diplomatic and economic approaches to security. This case illustrates how deliberate, phased transformation of military structures can enhance rather than diminish national security while freeing resources for human development.
 
 **Case Study**: UN peacekeeping missions' evolution in Liberia shows effective transition from military to civilian protection approaches. The UN Mission in Liberia (UNMIL) implemented a phased drawdown over 15 years, gradually transferring security responsibilities to national institutions while building civilian protection capacities. Key governance innovations included joint civilian-military protection teams, community alert networks linking local populations to remaining peacekeepers, and county security councils merging traditional authority structures with formal security governance. This "security transition governance" approach ensured that military drawdown occurred in parallel with civilian capacity development, creating a model for responsible security transitions in post-conflict settings.
-
 
 # Whistleblower Protection Protocols for Authoritarian Contexts
 
@@ -965,7 +951,6 @@ Access these resources in the [Visual Resources Library](/frameworks/visuals/pea
 
 **Contribute**: Help expand accessibility by volunteering for translation, document formatting, or case study development. Contact us at [globalgovernanceframework@gmail.com] to join the community.
 
-
 ### Peace & Conflict Resolution Lite Guides
 
 To make the *Peace & Conflict Resolution Framework* accessible to diverse stakeholders, the following lite guides provide tailored entry points, offering concise, audience-specific overviews of the framework’s principles, strategies, and tools. These guides serve as a tiered reading structure, enabling stakeholders to engage at their preferred level of detail while aligning with the framework’s comprehensive resources.
@@ -1258,8 +1243,7 @@ Policymakers and mediators are pivotal in institutionalizing peace governance. B
 5. Building digital ethics into technological approaches
 6. Measuring both negative and positive peace indicators
 
-Download the full framework or explore additional tools at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] to refine this work and join a global peacebuilding community.
-
+Download the full framework or explore additional tools at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] or on our [Discord server](https://discord.gg/Zx4hMJf4JU) to refine this work and join a global peacebuilding community.
 
 # Community Peace Implementation Guide
 
@@ -1307,7 +1291,6 @@ Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Librar
 
 ## Call to Action
 You can drive peace in your community. Start by forming a *Local Peace Committee*, organizing a dialogue forum, or hosting a digital literacy workshop. Explore the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Share your efforts at [globalgovernanceframework@gmail.com] to join a global peacebuilding community.
-
 
 # Youth Peace Action Guide
 
@@ -1372,7 +1355,6 @@ Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Librar
 ## Call to Action
 You have the power to build peace! 🚀🌟🕊️ Start small—organize a peace club, share a peace post, or host a dialogue. Check out the *Seed Kit* and full framework at [Tools Library](/frameworks/tools/peace). Tell us about your work at [globalgovernanceframework@gmail.com] to join youth peacebuilders worldwide! 🌎
 
-
 # Digital Peace Ethics Guide
 
 ## Introduction
@@ -1418,5 +1400,4 @@ Access these in the *Peace & Conflict Resolution Seed Kit* via the [Tools Librar
 
 ## Call to Action
 Lead ethical digital peacebuilding by auditing platforms, training communities, or deploying decentralized tools. Start with the *Peace-Technology Ethics Assessment* and explore the full framework at [Tools Library](/frameworks/tools/peace). Share feedback at [globalgovernanceframework@gmail.com] to shape the future of digital peace.
-
 

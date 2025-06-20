@@ -1,9 +1,3 @@
----
-title: Hearts Currency Technical Specification
-section: tools
-revision: Version 1.0 (2025-05-21)
----
-
 # Hearts Currency Technical Specification
 
 **Tool Type**: Technical Documentation

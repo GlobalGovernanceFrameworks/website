@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#2B4B8C"/>
+      <stop offset="100%" stop-color="#6B5CA5"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#DAA520"/>
+    </linearGradient>
+    <style>
+      .main-text { font-family: 'Inter', sans-serif; fill: white; text-anchor: middle; }
+      .stat-text { font-family: 'Inter', sans-serif; fill: #DAA520; text-anchor: middle; font-weight: bold; }
+      .source-text { font-family: 'Inter', sans-serif; fill: rgba(255,255,255,0.8); text-anchor: middle; font-size: 24px; }
+      .url-text { font-family: 'Inter', sans-serif; fill: white; font-size: 24px; }
+    </style>
+  </defs>
+  
+  <!-- Dark blue background -->
+  <rect width="1080" height="1080" fill="#001122"/>
+  
+  <!-- Medical/virus visualization elements -->
+  <circle cx="200" cy="200" r="80" fill="rgba(218,165,32,0.2)" stroke="rgba(218,165,32,0.4)" stroke-width="2"/>
+  <circle cx="880" cy="300" r="60" fill="rgba(218,165,32,0.2)" stroke="rgba(218,165,32,0.4)" stroke-width="2"/>
+  <circle cx="150" cy="700" r="40" fill="rgba(218,165,32,0.2)" stroke="rgba(218,165,32,0.4)" stroke-width="2"/>
+  <circle cx="850" cy="800" r="70" fill="rgba(218,165,32,0.2)" stroke="rgba(218,165,32,0.4)" stroke-width="2"/>
+  
+  <!-- Connecting lines to show spread -->
+  <line x1="200" y1="200" x2="880" y2="300" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <line x1="880" y1="300" x2="850" y2="800" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <line x1="200" y1="200" x2="150" y2="700" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  
+  <!-- Top text -->
+  <text x="540" y="280" class="main-text" font-size="36">
+    The last global pandemic
+  </text>
+  <text x="540" y="320" class="main-text" font-size="36">
+    incurred economic losses of...
+  </text>
+  
+  <!-- Main statistic -->
+  <text x="540" y="480" class="stat-text" font-size="130">
+    $13.8 Trillion
+  </text>
+  
+  <!-- Source -->
+  <text x="540" y="620" class="source-text">
+    (Source: IMF)
+  </text>
+  
+  <!-- Warning text -->
+  <text x="540" y="720" class="main-text" font-size="32" fill="rgba(255,255,255,0.9)">
+    The next pandemic could be far worse
+  </text>
+  
+  <!-- Brand icon -->
+  <g transform="translate(900, 80) scale(0.6)">
+    <circle cx="50" cy="50" r="48" fill="white" stroke="url(#blueGradient)" stroke-width="2"/>
+    <circle cx="50" cy="50" r="16" fill="url(#blueGradient)"/>
+    <circle cx="50" cy="27" r="9" fill="url(#goldGradient)"/>
+    <circle cx="35" cy="62" r="9" fill="url(#goldGradient)"/>
+    <circle cx="65" cy="62" r="9" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- Website URL -->
+  <text x="900" y="1020" class="url-text" text-anchor="end">globalgovernanceframeworks.org</text>
+</svg>

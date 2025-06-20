@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: Pilot Readiness Self-Assessment Tool
 
 **In this document:**

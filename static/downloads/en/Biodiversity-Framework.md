@@ -90,7 +90,7 @@ The framework is organized into fifteen comprehensive sections that build from p
 
 Practical tools and templates enable immediate action across diverse contexts and stakeholder groups:
 
-- **[Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity/seed-kit-en.zip)**: Complete starter package with essential resources:
+- **[Biodiversity Framework Seed Kit](/frameworks/tools/biodiversity/biodiversity-seed-kit-en.zip)**: Complete starter package with essential resources:
   - Quick Start Implementation Guide (from Appendix G)
   - Sacred Seed Kit for Indigenous-Led Dialogues
   - FPIC 2.0 Protocols Template
@@ -206,7 +206,6 @@ Access comprehensive visual toolkit at [Visual Resources Library](/frameworks/vi
 **Contribute**: Expand global accessibility by volunteering for translation (prioritizing indigenous languages), tool development (especially low-resource contexts), pilot program documentation, cultural sensitivity review, or advocacy campaign development. Contact [globalgovernanceframework@gmail.com] to join the regenerative movement for planetary healing.
 
 **Framework Lineage**: Builds on the Earth Charter, Convention on Biological Diversity, UN Declaration on the Rights of Indigenous Peoples, Rights of Nature jurisprudence, Traditional Ecological Knowledge systems, and contemporary innovations in governance technology, economic transformation, and cultural mobilization, creating a synthesis appropriate for the biodiversity crisis and the possibilities of our interconnected age.
-
 
 # Philosophical Preamble
 
@@ -402,7 +401,7 @@ This vision represents more than environmental recovery—it embodies civilizati
 
 ## <a id="crisis-response"></a>Crisis Response and Contingency Planning
 
-**Worst-Case Scenario Contingency**: If 2030 interim targets are missed (e.g., <8% protected areas, <8% restoration), we automatically activate comprehensive crisis response protocols designed to accelerate transformation while maintaining democratic governance principles.
+**Worst-Case Scenario Contingency**: If 2030 interim targets are missed (e.g., `<`8% protected areas, `<`8% restoration), we automatically activate comprehensive crisis response protocols designed to accelerate transformation while maintaining democratic governance principles.
 
 **Biosphere Auto-Defense Protocols**: Triggered by satellite-detected deforestation exceeding 5% annually in critical biomes, these protocols halt extractive permits in Amazon, Congo Basin, Southeast Asian rainforests, and other biodiversity hotspots. Implementation occurs through:
 
@@ -603,7 +602,7 @@ This section outlines the foundational values that guide the *Global Governance 
 **Definition**: Proactive systems enable rapid response to biodiversity crises, ensuring resilience through adaptive governance.
 
 **Core Elements**:
-- Auto-activate *Biosphere Auto-Defense Protocols* if 2030 targets are missed (e.g., <8% protected areas).
+- Auto-activate *Biosphere Auto-Defense Protocols* if 2030 targets are missed (e.g., `<`8% protected areas).
 - Deploy *Biodiversity SWAT Teams* within 72 hours for emergencies via the *Global Biodiversity Crisis Network*.
 - Conduct annual *Bio-Wargames* to simulate crises and test responses.
 
@@ -623,7 +622,6 @@ This section outlines the foundational values that guide the *Global Governance 
 **Case Study (Fictive)**: In 2040, the *Future Beings Council* vetoes a deep-sea mining proposal, preserving 500,000 ha of marine habitat for future generations. This demonstrates intergenerational protections.
 
 **Integration**: Links to [Governance Structure](/frameworks/biodiversity/implementation/governance) and [Financing Mechanisms](/frameworks/biodiversity/implementation/financing).
-
 
 # Core Pillars
 
@@ -763,7 +761,7 @@ The **Global Biodiversity Commons Trust** serves as the coordinating body for gl
 - **6 Biodiversity Experts** including traditional ecological knowledge holders, conservation biologists, and ecosystem restoration specialists
 - **3 Youth Representatives** (under 30) selected through the Youth Leadership Pipeline with full voting rights
 - **3 Technology Specialists** focusing on ethical AI, blockchain governance, and community-controlled innovation
-- **2 Corporate Seats** with limited voting power (<10% of total) representing transformed private sector engagement
+- **2 Corporate Seats** with limited voting power (`<`10% of total) representing transformed private sector engagement
 - **1 Future Beings Council Representative** with 10% weighted voting power for intergenerational justice
 
 **Indigenous Leadership Structure**:
@@ -5137,7 +5135,6 @@ A hypothetical *Global Biodiversity Youth Corps* in the Himalayan Foothills uses
 
 **Access**: Explore integrated tools and visualizations at [globalgovernanceframework.org/biodiversity-collab](globalgovernanceframework.org/biodiversity-collab).
 
-
 # Appendix B: Comprehensive Glossary
 
 **In this appendix:**
@@ -5318,7 +5315,6 @@ The glossary standardizes terminology to facilitate implementation, collaboratio
 - [Governance Structure](/frameworks/docs/implementation/biodiversity#04-governance-structure)
 
 **Access**: Full glossary and related tools available at [Tools Library](/frameworks/tools/biodiversity).
-
 
 # Appendix C: Complete Tool Library
 
@@ -5579,7 +5575,6 @@ A cooperative across Brazil, Peru, and Colombia develops *Amazon Basin Implement
 - [Stakeholder Engagement](/frameworks/docs/implementation/biodiversity#06-stakeholder-engagement)
 
 **Access**: Explore the full tool library and implementation resources at [Tools Library](/frameworks/tools/biodiversity).
-
 
 # Appendix D: Moral Edge-Cases Analysis
 
@@ -9349,5 +9344,4 @@ Monks and biologists co-created sand mandalas embedded with native seeds. After 
 - **[Counter-Narrative Playbook](/frameworks/tools/biodiversity/counter-narrative-playbook-en.pdf)**: Combat misinformation, emphasizing indigenous voices.  
 
 **License**: CC BY-SA 4.0 | Remix, translate, and tag #GlobalBiodiversityFramework. Ensure all adaptations credit indigenous knowledge holders and follow FPIC 2.0 protocols.
-
 

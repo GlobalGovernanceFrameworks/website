@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: Getting Started Guide for the Seed Kit
 
 **In this document:**

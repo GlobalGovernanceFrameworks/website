@@ -150,7 +150,6 @@ The framework is accessible through the Global Governance Framework website, des
 
 **The Vision Realized**: By 2035, mental health emerges as a transcultural human right rather than medical privilege—where community wisdom guides healing rather than institutional control, where consciousness exploration is celebrated rather than pathologized, and where collective flourishing replaces individual treatment. **The future is community-led, and the transformation begins in our healing circles today.**
 
-
 # 1. Vision & Guiding Principles
 
 > *"Mental health as a transcultural human right, fostering psychosocial flourishing through human-planetary interdependence and existential grounding."*
@@ -1192,7 +1191,6 @@ Global economic inequalities, debt burdens, and extractive economic relationship
 
 **Next Steps**: With financing established, the framework proceeds to explore service delivery and workforce development that can implement community-led, culturally-responsive mental health care using these sustainable funding mechanisms.
 
-
 # 5. Service Delivery & Workforce
 
 > *"Integrated care honoring all healing traditions - where ancient wisdom meets contemporary innovation in service of human flourishing."*
@@ -1893,7 +1891,6 @@ Mental health accountability must model the healing approaches it seeks to promo
 **Integration Note**: This monitoring and accountability architecture ensures that mental health transformation serves community healing rather than institutional preservation. The evaluation systems balance global standards with community sovereignty, creating pathways for meaningful accountability without bureaucratic burden or cultural imperialism.
 
 **Next Steps**: With accountability systems established, the framework proceeds to explore crisis and emergency response protocols that can maintain rights-based approaches even during mental health emergencies and disasters.
-
 
 # 7. Crisis & Emergency Response
 

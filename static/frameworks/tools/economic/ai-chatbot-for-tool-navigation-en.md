@@ -8,28 +8,6 @@ The AI Chatbot for Tool Navigation is a proposed intelligent assistant designed 
 **Planned formats:** Web interface, mobile app, SMS interface, voice assistant  
 **Languages:** Will be available in 10 languages with voice, text, and visual interfaces  
 
----
-
-## 1. Purpose and Applications
-
-### Primary Functions
-The AI Chatbot for Tool Navigation will:
-- Guide users to appropriate framework tools based on their specific needs and context
-- Answer questions about framework components, principles, and implementation
-- Provide simplified explanations of complex concepts in accessible language
-- Connect users with relevant case studies, templates, and resources
-- Offer step-by-step guidance for implementation processes
-- Troubleshoot common challenges encountered during implementation
-- Facilitate connections between communities working on similar initiatives
-
-### Framework Integration
-- **Sovereignty:** Respects user autonomy and community decision-making in all guidance
-- **Interoperability:** Helps users navigate connections between framework components
-- **Justice:** Ensures equitable access to information across diverse contexts
-- **Adaptability:** Evolves based on user feedback and implementation experiences
-
----
-
 ## 2. Planned Capabilities
 
 ### Knowledge Domains

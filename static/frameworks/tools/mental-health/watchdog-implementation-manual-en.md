@@ -3,8 +3,6 @@
 
 > *"Independent oversight with community authority - accountability that serves healing rather than bureaucracy."*
 
-
-
 ## Overview
 
 The Global Mental Health Watchdog represents an independent oversight system that monitors mental health rights compliance, documents violations, and enforces accountability through a community-controlled Traffic Light System. Unlike traditional institutional monitoring, this watchdog prioritizes community voices, lived experience expertise, and cultural sovereignty in mental health accountability.

@@ -1,9 +1,3 @@
----
-title: Financial Systems Framework Youth Guide
-section: quick-guide-youth
-revision: Version 1.0 (2025-05-21)
----
-
 # Financial Systems Framework: Youth Guide
 
 **Estimated Reading Time**: 8 minutes

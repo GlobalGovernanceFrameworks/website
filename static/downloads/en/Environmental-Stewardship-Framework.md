@@ -53,7 +53,7 @@ The framework is organized into 15 sections, each representing a critical compon
 
 To bridge theory and practice, the framework provides practical tools and templates for immediate use by stakeholders:
 
-- **[Sacred Seed Kit](/frameworks/tools/environmental-stewardship/sacred-seed-kit-en.zip)**: A complete package for launching interfaith and indigenous-led restoration initiatives, including Dialogue Facilitation Guide and Sacred Space Setup Guide.
+- **[Sacred Seed Kit](/frameworks/tools/spiritual/sacred-seed-kit-en.zip)**: A complete package for launching interfaith and indigenous-led restoration initiatives, including Dialogue Facilitation Guide and Sacred Space Setup Guide.
 - **Core Implementation Tools**:
   - [Economic Integration Seed Kit](/frameworks/tools/economic/seed-kit-en.zip)
   - [Consciousness Assessment Toolkit](/frameworks/tools/ethics/consciousness-assessment-toolkit-en.pdf)
@@ -64,11 +64,11 @@ To bridge theory and practice, the framework provides practical tools and templa
   - [DecideTogether Platform Guide](/frameworks/tools/governance/decidetogether-platform-guide-en.pdf)
   - [Dialogue Facilitation Scripts](/frameworks/tools/spiritual/dialogue-facilitation-scripts-en.pdf)
   - [Reparations Protocol](/frameworks/tools/environmental-stewardship/reparations-protocol-en.pdf)
-  - [Stakeholder Engagement Charter Template](/frameworks/tools/environmental-stewardship/stakeholder-engagement-charter-en.pdf)
+  - [Stakeholder Engagement Charter Template](/frameworks/tools/governance/stakeholder-engagement-charter-en.pdf)
 - **Monitoring & Evaluation Tools**:
   - [Ecosystem Health Indicators](/frameworks/tools/environmental-stewardship/ecosystem-health-indicators-en.pdf)
   - [Nexus Impact Assessment Tool](/frameworks/tools/environmental-stewardship/nexus-impact-assessment-tool-en.pdf)
-  - [Community Well-Being Index](/frameworks/tools/environmental-stewardship/community-well-being-index-en.pdf)
+  - [Community Well-Being Index](/frameworks/tools/governance/community-well-being-index-en.pdf)
 - **Framework Guides**:
   - [Environmental Stewardship Framework One-Page Essence](/frameworks/tools/environmental-stewardship/one-page-essence-en.pdf) (English)
   - [Miljöförvaltningsramverk](/frameworks/tools/environmental-stewardship/one-page-essence-sv.pdf) (Swedish)
@@ -94,7 +94,6 @@ The framework is accessible through the Global Governance Framework website, des
 **About the Framework**: Developed through iterative design and feedback, this framework represents synthesized best practices from global stakeholders, maintained by a dedicated team at globalgovernanceframework.org.
 
 **Contribute**: Help expand accessibility by volunteering for translation, document formatting, or case study development. Contact us at [globalgovernanceframework@gmail.com] to join the community.
-
 
 # Introduction
 
@@ -301,7 +300,6 @@ Visualizes how core principles (e.g., equity, adaptability) drive actions (e.g.,
 - Interfaith and indigenous leadership in governance
 
 This diagram visually connects the framework's components to demonstrate how transformation will unfold across systems and scales.
-
 
 # Guiding Principles
 
@@ -539,7 +537,6 @@ The Precautionary Principle guides decision-making in contexts of scientific unc
 
 These guiding principles form the ethical and operational foundation of the Environmental Stewardship Framework, ensuring that all activities align with the core values of justice, equity, sustainability, inclusion, and respect for all beings. They provide a compass for navigating complex decisions and trade-offs while maintaining commitment to the transformative vision of regenerative governance.
 
-
 # Governance Structure
 
 **In this section:**
@@ -731,7 +728,6 @@ The Advisory Board utilizes specialized tools for ethical oversight:
 This multi-level governance structure creates a balanced system that respects sovereignty at different scales while ensuring coordination around shared principles. By integrating environmental, spiritual, technological, and economic dimensions—and explicitly including representation for non-human entities—it establishes a new paradigm for environmental stewardship that recognizes the interdependence of all beings.
 
 The structure is designed to be adaptable, with regular review cycles and feedback mechanisms to evolve based on implementation experience. This ensures the governance system itself embodies the principle of adaptability that is central to the framework.
-
 
 # Core Pillars
 
@@ -933,7 +929,6 @@ These five core pillars form the structural framework for environmental stewards
 
 Each pillar includes specific implementation strategies, measurable targets, and intermediate milestones to guide action and track progress. The pillars are designed to be mutually reinforcing, creating synergies that accelerate transformation across systems.
 
-
 # Policy Mechanisms
 
 **In this section:**
@@ -1095,7 +1090,6 @@ Just Transition Compacts create agreements between stakeholders to ensure that e
 These policy mechanisms work together to create a comprehensive approach to environmental governance that balances regulation with incentives, combines top-down and bottom-up approaches, and ensures that transitions toward sustainability are equitable and just. By embedding economic tools, monitoring systems, and legal frameworks within a coherent governance structure, the Environmental Stewardship Framework provides practical pathways for transformative change.
 
 Each mechanism is designed to be adaptable to diverse contexts while maintaining alignment with core principles. Regular review and iterative improvement ensure that policy approaches evolve based on implementation experience and changing conditions.
-
 
 # Stakeholder Engagement
 
@@ -1477,7 +1471,6 @@ Key Performance Indicators for faith communities track engagement and impact in 
 
 Effective stakeholder engagement is fundamental to the success of the Environmental Stewardship Framework. By providing clear roles, engagement strategies, and practical tools for diverse stakeholders, the framework creates multiple pathways for meaningful participation. The First 100 Days Playbook ensures immediate action while longer-term engagement structures build capacity for sustained implementation. Through this comprehensive engagement approach, the framework mobilizes the collective wisdom, resources, and energy needed for transformative environmental stewardship.
 
-
 # Financing Mechanisms
 
 **In this section:**
@@ -1701,7 +1694,6 @@ Survey results inform ongoing improvements to financing approaches and highlight
 The financing mechanisms of the Environmental Stewardship Framework are designed to be as transformative as the governance structures they support. By combining diverse funding sources, equitable allocation priorities, and robust accountability, these mechanisms ensure resources flow to where they can have the greatest impact while building long-term financial sustainability. The focus on equity, accessibility, and transparency ensures that financing becomes a tool for transformation rather than reinforcing existing power dynamics.
 
 The ultimate goal is to transition from extractive economic models to regenerative systems where environmental stewardship generates lasting well-being and prosperity. Through innovative approaches like AUBI, eco-tokens, and community currencies, the framework begins to redefine value in ways that recognize the contributions of all beings to a thriving planet.
-
 
 # Implementation Roadmap
 
@@ -2097,7 +2089,6 @@ This Implementation Roadmap provides a clear pathway from initial capacity build
 
 The integration of AI-driven adjustments and risk scenarios acknowledges the complexity of systemic change and builds in mechanisms for continuous improvement. Throughout implementation, regular review cycles and strong feedback loops will ensure the pathway remains relevant and effective in achieving the framework's transformative vision.
 
-
 # Metrics for Success
 
 **In this section:**
@@ -2436,7 +2427,6 @@ The framework employs robust reporting mechanisms to ensure transparency, accoun
 These metrics for success provide a comprehensive framework for assessing progress toward the transformative vision of the Environmental Stewardship Framework. By tracking multiple dimensions—from climate and biodiversity to equity, rights, and well-being—they ensure a holistic view of implementation impacts. The combination of long-term targets and intermediate milestones facilitates adaptive management, while diverse measurement approaches integrate scientific, indigenous, and community perspectives.
 
 The metrics are designed not merely to track compliance but to stimulate learning and improvement throughout implementation. Regular reporting, transparent methodologies, and stakeholder participation in assessment ensure that metrics serve as tools for collective reflection and evolution rather than mere accountability mechanisms. Through this approach, the metrics become an integral part of the transformation process itself, helping to build the regenerative world envisioned by the framework.
-
 
 # Visualizations
 
@@ -2818,7 +2808,6 @@ A tool for visualizing trade-offs in water-energy-food governance:
 These visualization approaches collectively make the Environmental Stewardship Framework more accessible, understandable, and actionable for diverse stakeholders. By combining traditional diagrams with interactive tools, immersive experiences, and community-centered dashboards, the framework ensures that complex concepts can be readily grasped and applied across contexts.
 
 The visualizations are designed with accessibility, cultural relevance, and practical utility as core principles, ensuring they serve all stakeholders regardless of technical capacity or context. Through regular updates and stakeholder contributions, the visual components of the framework will evolve alongside implementation, providing an accurate and engaging representation of progress toward a regenerative world.
-
 
 # Challenges and Solutions
 
@@ -3233,7 +3222,6 @@ The risk taxonomy provides a structured overview of key implementation risks, th
 This comprehensive approach to challenges and solutions demonstrates the framework's commitment to realistic implementation planning. By anticipating potential obstacles and developing strategic responses, the Environmental Stewardship Framework builds resilience and adaptability into its design. The focus on practical solutions, clear metrics, and continuous learning creates pathways to success even in the face of complex challenges.
 
 The framework acknowledges that implementation will not be linear or uniform, but by systematically addressing each challenge area, it establishes the foundations for transformative change that can adapt to diverse contexts and evolving conditions. This honest engagement with potential difficulties strengthens rather than weakens the framework's credibility and effectiveness.
-
 
 # Implementation Tools
 
@@ -3806,7 +3794,6 @@ These implementation tools collectively provide practical resources for translat
 
 Each tool has been designed with accessibility, cultural appropriateness, and practical utility as core considerations. The integration of carbon impact measurement across the toolkit demonstrates the framework's commitment to tangible outcomes while providing transparency about expected benefits. Through these tools, the transformative vision of the framework becomes accessible to communities, governments, spiritual traditions, and other stakeholders worldwide.
 
-
 # Reparations Protocol
 
 **In this section:**
@@ -4028,7 +4015,6 @@ The Reparations Protocol represents a crucial element of the Environmental Stewa
 
 The protocol's emphasis on community leadership, multiple forms of valuation, and integration of diverse knowledge systems ensures that reparations processes themselves do not reproduce harmful patterns. Through this approach, reparations become not merely compensation for past wrongs but transformative processes that restore relationships, rebuild governance systems, and create foundations for more just environmental stewardship.
 
-
 # Conclusion
 
 **Estimated Reading Time**: 5 minutes
@@ -4142,7 +4128,6 @@ The Environmental Stewardship Framework offers a pathway toward a regenerative w
 As climate change, biodiversity loss, and technological disruption accelerate, this framework provides a timely response that addresses root causes rather than symptoms. By recognizing the rights of ecosystems, empowering communities through economic innovation, integrating spiritual wisdom, and ensuring ethical technology governance, it establishes foundations for environmental stewardship that can heal our relationship with the living planet and create conditions for all beings to flourish.
 
 The journey toward this vision begins with the actions outlined in this framework—actions that stakeholders at all levels can take immediately to start building the regenerative world we envision for 2050.
-
 
 # Appendices
 
@@ -4433,5 +4418,4 @@ All tools are available in multiple formats and languages to ensure maximum acce
 These appendices provide essential supporting information for understanding and implementing the Environmental Stewardship Framework. Appendix A demonstrates how the framework integrates with and enhances other governance approaches, Appendix B ensures clarity through precise terminology definition, and Appendix C offers practical access to implementation tools with real-world examples of their application.
 
 Together, these resources transform the framework from concept to practice, supporting diverse stakeholders in contributing to the vision of a regenerative world by 2050. The appendices will be regularly updated as implementation experience generates new learning and tools evolve to meet emerging needs.
-
 

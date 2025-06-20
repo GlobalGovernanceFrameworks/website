@@ -1,5 +1,3 @@
-
-
 # Technical Guide for Policymakers
 
 **In this document:**

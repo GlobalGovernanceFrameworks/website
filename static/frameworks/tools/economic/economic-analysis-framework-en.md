@@ -1,5 +1,3 @@
-
-
 # Economic Analysis Framework
 
 **In this document:**

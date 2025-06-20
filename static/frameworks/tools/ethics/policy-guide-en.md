@@ -1,26 +1,6 @@
 # Rights of Beings for Policymakers
 ## Global Ethics & Rights of Beings Framework
 
----
-
-## Contents
-
-1. [Introduction for Policymakers](#introduction-for-policymakers)
-2. [Executive Summary](#executive-summary)
-3. [Quick Start Implementation Guide](#quick-start-implementation-guide)
-4. [Legislative Integration Pathways](#legislative-integration-pathways)
-5. [Policy Development Tools](#policy-development-tools)
-6. [Governance Establishment Guide](#governance-establishment-guide)
-7. [Stakeholder Engagement Strategies](#stakeholder-engagement-strategies)
-8. [Resistance Management](#resistance-management)
-9. [Implementation Case Studies](#implementation-case-studies)
-10. [Measurement and Accountability](#measurement-and-accountability)
-11. [Resource Optimization Guidelines](#resource-optimization-guidelines)
-12. [Crisis Response Protocols](#crisis-response-protocols)
-13. [Appendices and Resources](#appendices-and-resources)
-
----
-
 ## Introduction for Policymakers
 
 As a policymaker, you stand at a critical juncture where decisions made today will shape the ethical foundations of our shared future. The Global Ethics & Rights of Beings Framework offers a comprehensive approach to expanding our moral consideration beyond traditional boundaries to include all beings—human, animal, ecological, and technological—while respecting diverse cultural contexts and developmental stages.

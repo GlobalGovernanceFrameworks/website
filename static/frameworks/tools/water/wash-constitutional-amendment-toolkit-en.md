@@ -389,9 +389,7 @@ The proposed constitutional amendment would:
 
 For more information, contact [Name] at [phone] or [email].
 
-###
-
-**Legislative Testimony Template**:
+### **Legislative Testimony Template**:
 
 **Testimony of [Name] on Behalf of [Organization]**
 **Supporting Constitutional Amendment for Water Rights**

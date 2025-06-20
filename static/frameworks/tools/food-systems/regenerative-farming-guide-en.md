@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: Regenerative Farming Guide
 
 **In this document:**

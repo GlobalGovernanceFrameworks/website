@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1080"
+   height="1080"
+   viewBox="0 0 1080 1080"
+   version="1.1"
+   id="svg19"
+   sodipodi:docname="Visionscitat_Medveten_Evolution.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview19"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.78333333"
+     inkscape:cx="539.3617"
+     inkscape:cy="540"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg19" />
+  <defs
+     id="defs6">
+    <linearGradient
+       id="cosmicGradient"
+       x1="0%"
+       x2="100%"
+       y1="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="blueGradient"
+       x1="0%"
+       x2="100%"
+       y1="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="goldGradient"
+       x1="0%"
+       x2="100%"
+       y1="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#B8860B"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#DAA520"
+         id="stop6" />
+    </linearGradient>
+    <style
+       id="style6">
+      .quote-text { font-family: 'Inter', sans-serif; fill: white; }
+      .bold-text { font-weight: bold; }
+      .quote-marks { font-family: 'Inter', sans-serif; fill: #DAA520; font-size: 120px; font-weight: bold; }
+      .url-text { font-family: 'Inter', sans-serif; fill: white; font-size: 24px; }
+    </style>
+  </defs>
+  <!-- Background gradient -->
+  <rect
+     width="1080"
+     height="1080"
+     fill="url(#cosmicGradient)"
+     id="rect6" />
+  <!-- Subtle pattern overlay -->
+  <circle
+     cx="200"
+     cy="200"
+     r="100"
+     fill="none"
+     stroke="rgba(255,255,255,0.1)"
+     stroke-width="2"
+     stroke-dasharray="10,10"
+     id="circle6" />
+  <circle
+     cx="880"
+     cy="880"
+     r="120"
+     fill="none"
+     stroke="rgba(255,255,255,0.1)"
+     stroke-width="2"
+     stroke-dasharray="10,10"
+     id="circle7" />
+  <!-- Opening quote mark -->
+  <text
+     x="140"
+     y="280"
+     class="quote-marks"
+     id="text7">&quot;</text>
+  <!-- Main quote text -->
+  <text
+     x="140"
+     y="380"
+     class="quote-text"
+     font-size="48"
+     font-weight="normal"
+     id="text14"><tspan
+       x="140"
+       dy="0"
+       id="tspan7">Valet står inte mellan perfekta</tspan><tspan
+       x="140"
+       dy="60"
+       id="tspan8">lösningar och operfekt status quo.</tspan><tspan
+       x="140"
+       dy="90"
+       id="tspan9">Det står mellan</tspan><tspan
+       x="140"
+       dy="90"
+       class="bold-text"
+       fill="#DAA520"
+       id="tspan10">medveten evolution</tspan><tspan
+       x="140"
+       dy="60"
+       id="tspan11">mot regenerativ civilisation</tspan><tspan
+       x="140"
+       dy="60"
+       id="tspan12">och</tspan><tspan
+       x="140"
+       dy="90"
+       class="bold-text"
+       fill="#DAA520"
+       id="tspan13">omedveten devolution</tspan><tspan
+       x="140"
+       dy="60"
+       id="tspan14">mot civilisatorisk kollaps.</tspan></text>
+  <!-- Closing quote mark -->
+  <text
+     x="800"
+     y="880"
+     class="quote-marks"
+     id="text15">&quot;</text>
+  <!-- Brand icon (simplified favicon) -->
+  <g
+     transform="translate(900, 80) scale(0.6)"
+     id="g19">
+    <circle
+       cx="50"
+       cy="50"
+       r="48"
+       fill="white"
+       stroke="url(#blueGradient)"
+       stroke-width="2"
+       id="circle15" />
+    <circle
+       cx="50"
+       cy="50"
+       r="16"
+       fill="url(#blueGradient)"
+       id="circle16" />
+    <circle
+       cx="50"
+       cy="27"
+       r="9"
+       fill="url(#goldGradient)"
+       id="circle17" />
+    <circle
+       cx="35"
+       cy="62"
+       r="9"
+       fill="url(#goldGradient)"
+       id="circle18" />
+    <circle
+       cx="65"
+       cy="62"
+       r="9"
+       fill="url(#goldGradient)"
+       id="circle19" />
+  </g>
+  <!-- Website URL -->
+  <text
+     x="140"
+     y="1020"
+     class="url-text"
+     id="text19">globalgovernanceframeworks.org/start-treaty</text>
+</svg>

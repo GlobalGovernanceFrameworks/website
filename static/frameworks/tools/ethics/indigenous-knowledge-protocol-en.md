@@ -2,24 +2,6 @@
 
 ## For the Global Ethics & Rights of Beings Framework
 
----
-
-## Contents
-1. [Introduction and Purpose](#introduction-and-purpose)
-2. [Foundational Principles](#foundational-principles)
-3. [Pre-Integration Assessment](#pre-integration-assessment)
-4. [Consent and Relationship Building](#consent-and-relationship-building)
-5. [Knowledge Documentation and Protection](#knowledge-documentation-and-protection)
-6. [Integration Methodologies](#integration-methodologies)
-7. [Implementation Models](#implementation-models)
-8. [Governance Integration](#governance-integration)
-9. [Challenges and Ethical Considerations](#challenges-and-ethical-considerations)
-10. [Accountability and Evaluation](#accountability-and-evaluation)
-11. [Resources and Tools](#resources-and-tools)
-12. [Appendices](#appendices)
-
----
-
 ## Introduction and Purpose
 
 The Indigenous Knowledge Integration Protocol provides a structured approach for respectfully incorporating Indigenous wisdom, practices, and governance systems into the implementation of the Global Ethics & Rights of Beings Framework. This protocol recognizes that Indigenous peoples worldwide have developed sophisticated ethical systems and rights-based relationships with all beings over millennia, offering vital perspectives that can strengthen and enrich framework implementation.

@@ -1,5 +1,3 @@
-
-
 # Youth Economic Action Guide
 
 **In this document:**

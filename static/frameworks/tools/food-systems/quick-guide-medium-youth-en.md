@@ -1,5 +1,3 @@
-
-
 # 🌍 Food Systems Lite Guide
 
 **Making food fair, healthy & earth-friendly – for everyone**

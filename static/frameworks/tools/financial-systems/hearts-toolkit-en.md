@@ -1,9 +1,3 @@
----
-title: Hearts Implementation Toolkit
-section: tools
-revision: Version 1.0 (2025-05-21)
----
-
 # Hearts Implementation Toolkit
 
 **Tool Type**: Interactive Web Application

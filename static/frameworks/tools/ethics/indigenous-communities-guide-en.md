@@ -2,23 +2,6 @@
 
 ## A Guide to the Global Ethics & Rights of Beings Framework
 
----
-
-## In This Guide
-
-- [Welcome](#welcome)
-- [Our Shared Journey](#our-shared-journey)
-- [Framework Foundations](#framework-foundations)
-- [Connecting Ancient Wisdom & Global Ethics](#connecting-ancient-wisdom--global-ethics)
-- [Benefits for Indigenous Communities](#benefits-for-indigenous-communities)
-- [Practical Applications](#practical-applications)
-- [Addressing Common Concerns](#addressing-common-concerns)
-- [Getting Started](#getting-started)
-- [Resources & Support](#resources--support)
-- [Community Stories](#community-stories)
-
----
-
 ## Welcome
 
 *The circle of life has many voices. For thousands of years, Indigenous communities worldwide have listened to them all.*

@@ -8,27 +8,6 @@ The Resource Mapping Tool enables communities, regions, and global stakeholders 
 **Available formats:** Web application, offline desktop application, paper-based mapping kit  
 **Languages:** Available in 10 languages with visual interfaces for low-literacy contexts
 
----
-
-## 1. Purpose and Applications
-
-### Primary Functions
-- Identify and catalog community assets and resources
-- Visualize resource flows and interdependencies across scales
-- Support economic and ecological decision-making
-- Document traditional and indigenous resource knowledge
-- Enable equitable access to and governance of commons
-- Plan interventions based on resource distribution patterns
-
-### Framework Integration
-- **Community Currencies:** Map value-generating assets to back local currencies
-- **Cooperatives:** Identify complementary resources for cooperative formation
-- **Commons Governance:** Document shared resources requiring governance protocols
-- **Trade Zones:** Map resource flows across communities for ethical trade
-- **AUBI Implementation:** Visualize distribution needs and impacts
-
----
-
 ## 2. Technical Architecture
 
 ### Digital Platform Components

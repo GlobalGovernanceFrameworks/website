@@ -15,21 +15,6 @@
 **IF TIME PERMITS:**
 Follow complete assessment pathway for your crisis type (see index on back cover)
 
----
-
-## CONTENTS
-
-- Quick Response Flowcharts (p.2)
-- Crisis Rights Assessment Tools (p.7)
-- Disaster Response Protocols (p.12)
-- Conflict Zone Guidelines (p.16)
-- Technological Emergency Response (p.20)
-- Documentation Templates (p.24)
-- Communication Scripts (p.28)
-- Post-Crisis Review Tools (p.30)
-
----
-
 ## CORE PRINCIPLES FOR CRISIS ETHICS
 
 1. **Preserve Life First**

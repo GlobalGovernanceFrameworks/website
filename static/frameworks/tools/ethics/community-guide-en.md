@@ -7,22 +7,6 @@ This guide is for anyone working to build more ethical relationships with all be
 
 The Global Ethics & Rights of Beings Framework may seem complex at first glance, but its core message is simple: **all beings deserve recognition and respect according to their nature and capabilities**. This guide will help you translate that principle into practical action at the community level.
 
----
-
-## How to Use This Guide
-
-This resource is designed to meet you where you are. You'll find:
-
-- **Simple explanations** of key concepts
-- **Practical tools** for community implementation
-- **Real examples** from communities around the world
-- **Step-by-step guidance** for different contexts
-- **Resources** adaptable to your community's needs
-
-Skip to sections that feel most relevant to your situation, and remember: implementation is a journey, not a destination. Start small, learn as you go, and build momentum over time.
-
----
-
 ## Part 1: Understanding the Basics
 
 ### What Are the Rights of Beings?

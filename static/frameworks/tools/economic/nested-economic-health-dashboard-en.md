@@ -8,28 +8,6 @@ The Nested Economic Health Index Dashboard is a proposed monitoring and evaluati
 **Planned formats:** Web application, printable reports, data API, offline exports  
 **Languages:** Will be available in 10 languages with accessible visualizations for diverse contexts
 
----
-
-## 1. Purpose and Applications
-
-### Primary Functions
-The Nested Economic Health Index Dashboard will enable stakeholders to:
-- Track key performance indicators (KPIs) across framework components
-- Visualize progress toward sovereignty, interoperability, justice, and adaptability goals
-- Compare implementation across communities, regions, and global contexts
-- Identify strengths, gaps, and opportunities for improvement
-- Support evidence-based decision-making and policy refinement
-- Document and share success stories and impact narratives
-- Fulfill transparency and accountability commitments to communities
-
-### Framework Integration
-- **Sovereignty:** Measures local economic control and decision-making capacity
-- **Interoperability:** Tracks system compatibility and cross-scale integration
-- **Justice:** Assesses equity, access, and distribution metrics
-- **Adaptability:** Monitors system responsiveness to feedback and changing conditions
-
----
-
 ## 2. Planned Dashboard Architecture
 
 ### Core Components

@@ -1,9 +1,3 @@
----
-title: Validator Training Manual
-section: tools
-revision: Version 1.0 (2025-05-21)
----
-
 # Validator Training Manual
 
 **Tool Type**: Interactive PDF with Training Videos

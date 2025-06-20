@@ -3,22 +3,6 @@
 **Part of the Economic Integration Seed Kit**  
 *Supporting the Nested Sovereignty Framework*
 
----
-
-## Table of Contents
-- [Overview and Purpose](#overview-and-purpose)
-- [Core Currency Design Principles](#core-currency-design-principles)
-- [Design Process Guide](#design-process-guide)
-- [Currency Foundation Elements](#currency-foundation-elements)
-- [Technical Implementation Options](#technical-implementation-options)
-- [Governance Structure](#governance-structure)
-- [Implementation Checklist](#implementation-checklist)
-- [Risk Management](#risk-management)
-- [Case Examples](#case-examples)
-- [Complementary Resources](#complementary-resources)
-
----
-
 ## Overview and Purpose
 
 This template guides communities through the process of designing and implementing their own currency systems within the Nested Sovereignty Framework. It provides structured steps, design options, governance models, and implementation tools while preserving local sovereignty and ensuring regional/global interoperability.

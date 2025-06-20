@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: TEK Integration Template
 
 **In this document:**

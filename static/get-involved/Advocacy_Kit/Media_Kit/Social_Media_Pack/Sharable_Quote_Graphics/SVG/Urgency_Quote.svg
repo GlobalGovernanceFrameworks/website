@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1080"
+   height="1080"
+   viewBox="0 0 1080 1080"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="Urgency_Quote.svg"
+   inkscape:export-filename="Urgency_Quote.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.78333333"
+     inkscape:cx="539.3617"
+     inkscape:cy="540"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <defs
+     id="defs6">
+    <linearGradient
+       id="orangeGradient"
+       x1="0%"
+       x2="100%"
+       y1="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#CC5500"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#FF6B35"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="blueGradient"
+       x1="0%"
+       x2="100%"
+       y1="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="goldGradient"
+       x1="0%"
+       x2="100%"
+       y1="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#B8860B"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#DAA520"
+         id="stop6" />
+    </linearGradient>
+    <style
+       id="style6">
+      .quote-text { font-family: 'Inter', sans-serif; fill: white; font-size: 48px; }
+      .emphasis-text { font-family: 'Inter', sans-serif; fill: #DAA520; font-weight: bold; }
+      .quote-marks { font-family: 'Inter', sans-serif; fill: #DAA520; font-size: 120px; font-weight: bold; }
+      .url-text { font-family: 'Inter', sans-serif; fill: white; font-size: 24px; }
+    </style>
+  </defs>
+  <!-- Warning/urgency background -->
+  <rect
+     width="1080"
+     height="1080"
+     fill="url(#orangeGradient)"
+     id="rect6" />
+  <!-- Overlay pattern for urgency -->
+  <rect
+     x="0"
+     y="0"
+     width="1080"
+     height="1080"
+     fill="rgba(0,0,0,0.3)"
+     id="rect7" />
+  <!-- Warning triangles pattern -->
+  <polygon
+     points="100,200 150,120 200,200"
+     fill="rgba(218,165,32,0.2)"
+     id="polygon7" />
+  <polygon
+     points="880,880 930,800 980,880"
+     fill="rgba(218,165,32,0.2)"
+     id="polygon8" />
+  <!-- Opening quote mark -->
+  <text
+     x="140"
+     y="250"
+     class="quote-marks"
+     id="text8">&quot;</text>
+  <!-- Main quote text -->
+  <text
+     x="140"
+     y="350"
+     class="quote-text"
+     id="text13"><tspan
+       x="140"
+       dy="0"
+       id="tspan8">Our current global governance</tspan><tspan
+       x="140"
+       dy="60"
+       id="tspan9">systems are</tspan><tspan
+       x="140"
+       dy="90"
+       class="emphasis-text"
+       id="tspan10">failing in real-time,</tspan><tspan
+       x="140"
+       dy="60"
+       id="tspan11">with mounting human costs</tspan><tspan
+       x="140"
+       dy="60"
+       id="tspan12">that demand</tspan><tspan
+       x="140"
+       dy="90"
+       class="emphasis-text"
+       id="tspan13">immediate action.</tspan></text>
+  <!-- Closing quote mark -->
+  <text
+     x="800"
+     y="780"
+     class="quote-marks"
+     id="text14">&quot;</text>
+  <!-- Brand icon -->
+  <g
+     transform="translate(900, 80) scale(0.6)"
+     id="g18">
+    <circle
+       cx="50"
+       cy="50"
+       r="48"
+       fill="white"
+       stroke="url(#blueGradient)"
+       stroke-width="2"
+       id="circle14" />
+    <circle
+       cx="50"
+       cy="50"
+       r="16"
+       fill="url(#blueGradient)"
+       id="circle15" />
+    <circle
+       cx="50"
+       cy="27"
+       r="9"
+       fill="url(#goldGradient)"
+       id="circle16" />
+    <circle
+       cx="35"
+       cy="62"
+       r="9"
+       fill="url(#goldGradient)"
+       id="circle17" />
+    <circle
+       cx="65"
+       cy="62"
+       r="9"
+       fill="url(#goldGradient)"
+       id="circle18" />
+  </g>
+  <!-- Website URL -->
+  <text
+     x="140"
+     y="1020"
+     class="url-text"
+     id="text18">globalgovernanceframeworks.org/start-treaty</text>
+</svg>

@@ -1,5 +1,3 @@
-
-
 # Adaptive Facilitation Tools
 
 ## Overview

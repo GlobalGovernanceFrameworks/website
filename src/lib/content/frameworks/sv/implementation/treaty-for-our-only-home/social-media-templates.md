@@ -17,13 +17,13 @@ Använd dessa färdiga mallar för snabb och slagkraftig delning. Varje mall mot
 ## Mall 1: Om dödläge och FN-reform
 *(Att användas med denna grafik om FN:s säkerhetsråds vetoreform)*
 
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-UN-reform-sv.png" target="_blank" rel="noopener noreferrer">
-  <img src="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-UN-reform-sv.png" 
+<a href="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_fn-reform.png" target="_blank" rel="noopener noreferrer">
+  <img src="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_fn-reform.png" 
        alt="Om dödläge och FN-reform" 
        style="width: 50%; max-width: 400px; cursor: pointer;">
 </a>
 
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-UN-reform-sv.png" target="_blank" rel="noopener noreferrer">[ Ladda ner högupplöst bild (PNG) ]</a>
+<a href="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_fn-reform.png" target="_blank" rel="noopener noreferrer">[ Ladda ner högupplöst bild (PNG) ]</a>
 
 ### För LinkedIn / Facebook:
 
@@ -52,13 +52,13 @@ Läs planen: https://globalgovernanceframework.org
 ## Mall 2: Om klimatåtgärder och ekocidlag
 *(Att användas med denna grafik om ekocid)*
 
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-climate-action-sv.png" target="_blank" rel="noopener noreferrer">
-  <img src="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-climate-action-sv.png" 
+<a href="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_klimatatgarder.png" target="_blank" rel="noopener noreferrer">
+  <img src="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_klimatatgarder.png" 
        alt="Om klimatåtgärder och ekocidlag" 
        style="width: 50%; max-width: 400px; cursor: pointer;">
 </a>
 
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-climate-action-sv.png" target="_blank" rel="noopener noreferrer">[ Ladda ner högupplöst bild (PNG) ]</a>
+<a href="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_klimatatgarder.png" target="_blank" rel="noopener noreferrer">[ Ladda ner högupplöst bild (PNG) ]</a>
 
 ### För LinkedIn / Facebook:
 
@@ -87,13 +87,13 @@ Lär dig hur: https://globalgovernanceframework.org
 ## Mall 3: Om finanspolitiskt ansvar och klimatfinansiering
 *(Att användas med denna grafik om kostnaden för passivitet)*
 
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-fiscal-responsibility-sv.png" target="_blank" rel="noopener noreferrer">
-  <img src="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-fiscal-responsibility-sv.png" 
+<a href="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_finanspolitiskt-ansvar.png" target="_blank" rel="noopener noreferrer">
+  <img src="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_finanspolitiskt-ansvar.png" 
        alt="Om finanspolitiskt ansvar och klimatfinansiering" 
        style="width: 50%; max-width: 400px; cursor: pointer;">
 </a>
 
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-fiscal-responsibility-sv.png" target="_blank" rel="noopener noreferrer">[ Ladda ner högupplöst bild (PNG) ]</a>
+<a href="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_finanspolitiskt-ansvar.png" target="_blank" rel="noopener noreferrer">[ Ladda ner högupplöst bild (PNG) ]</a>
 
 ### För LinkedIn / Facebook:
 
@@ -124,13 +124,13 @@ Läs mer: https://globalgovernanceframework.org
 ## Mall 4: Om demokratisk legitimitet
 *(Att användas med denna grafik om det globala medborgarinitiativet)*
 
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-democratic-legitimacy-sv.png" target="_blank" rel="noopener noreferrer">
-  <img src="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-democratic-legitimacy-sv.png" 
+<a href="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_demokratisk-legitimitet.png" target="_blank" rel="noopener noreferrer">
+  <img src="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_demokratisk-legitimitet.png" 
        alt="Om demokratisk legitimitet" 
        style="width: 50%; max-width: 400px; cursor: pointer;">
 </a>
 
-<a href="/frameworks/tools/treaty-for-our-only-home/treaty-for-our-only-home-social-democratic-legitimacy-sv.png" target="_blank" rel="noopener noreferrer">[ Ladda ner högupplöst bild (PNG) ]</a>
+<a href="/frameworks/tools/treaty-for-our-only-home/Fordraget_för_vart_enda_hem_Paverkans-kit/3_Sociala_medier_kit/Grafik/fordraget-for-vart-enda-hem_citat_demokratisk-legitimitet.png" target="_blank" rel="noopener noreferrer">[ Ladda ner högupplöst bild (PNG) ]</a>
 
 ### För LinkedIn / Facebook:
 

@@ -8,28 +8,6 @@ The Currency Simulator App is a proposed interactive tool designed to help commu
 **Planned formats:** Web application, mobile app (Android/iOS), offline desktop version  
 **Languages:** Will be available in 10 languages with visual interfaces for low-literacy contexts
 
----
-
-## 1. Purpose and Applications
-
-### Primary Functions
-The Currency Simulator App will allow users to:
-- Design virtual community currencies with customizable parameters
-- Run realistic economic simulations based on local economic data
-- Test different currency mechanisms and governance models
-- Visualize potential circulation patterns and velocity metrics
-- Identify optimal parameters for specific community contexts
-- Practice currency management through interactive scenarios
-- Analyze resilience against various economic disruptions
-
-### Framework Integration
-- **Sovereignty:** Empowers communities to design currencies tailored to local needs without external dependencies
-- **Interoperability:** Tests compatibility with regional and global economic systems
-- **Justice:** Analyzes distributional impacts across demographic groups
-- **Adaptability:** Enables parameter refinement through iterative simulations
-
----
-
 ## 2. Planned Technical Architecture
 
 ### Core Components

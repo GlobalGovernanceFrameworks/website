@@ -85,8 +85,8 @@ To bridge theory and practice, the framework provides practical tools and templa
 
 - **Framework Guides**:
   - [Global Guardian Framework Essentials Guide](/frameworks/tools/animal-welfare/global-guardian-framework-essentials-en.pdf) (English)
-  - [Marco Global de Bienestar Animal Guía Esencial](/frameworks/tools/animal-welfare/guardian-framework-essentials-es.pdf) (Spanish)
-  - [Cadre Mondial pour le Bien-être Animal Guide Essentiel](/frameworks/tools/animal-welfare/guardian-framework-essentials-fr.pdf) (French)
+  - [Marco Global de Bienestar Animal Guía Esencial](/frameworks/tools/animal-welfare/global-guardian-framework-essentials-es.pdf) (Spanish)
+  - [Cadre Mondial pour le Bien-être Animal Guide Essentiel](/frameworks/tools/animal-welfare/global-guardian-framework-essentials-fr.pdf) (French)
 
 All tools are available in PDF and editable markdown formats, with selected tools in multiple languages and culturally-adapted versions. Access the complete [Tools Library](/frameworks/tools/animal-welfare) for all versions and formats.
 
@@ -132,7 +132,6 @@ The framework is accessible through the Global Governance Framework website, des
 **Guardian Community Development**: Help expand community agency by volunteering for Ambassador training, policy advocacy, pilot leadership, or cultural facilitation. Contact us at [globalgovernanceframework@gmail.com] to join the Guardian Community Network.
 
 **The Vision Realized**: By 2035, our relationship with animals represents humanity's greatest moral achievement—a time when guardianship replaces ownership, when economic systems prosper through compassion, and when intergenerational wisdom guides our treatment of all sentient life. Every being deserves freedom from unnecessary suffering, and every community deserves agency over their transition to humane systems. **The future of animal welfare is community-led, and it starts now.**
-
 
 # Introduction & Scientific Foundation
 

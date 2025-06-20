@@ -1,9 +1,3 @@
----
-title: Proof of Care Protocol
-section: tools
-revision: Version 1.0 (2025-05-21)
----
-
 # Proof of Care Protocol
 
 **Tool Type**: Technical Protocol and Validation Framework

@@ -8,45 +8,6 @@ This Sample Audit Report Template provides a standardized framework for conducti
 **Available formats:** Digital form (PDF, editable document), printable version, data collection app  
 **Languages:** Available in 10 languages with accessible formats for diverse contexts
 
----
-
-## 1. Audit Information
-
-### Basic Details
-
-**Implementation Name:** [Name of community, region, or initiative being audited]  
-**Location:** [Geographic location including community, region, country]  
-**Scale of Implementation:** □ Local   □ Regional   □ Global   □ Multi-level  
-**Implementation Timeline:** [Start date] to [Current stage/End date]  
-**Audit Date:** [Date of audit completion]  
-**Audit Type:** □ Self-assessment   □ Peer review   □ External evaluation   □ Certification  
-**Previous Audit Date:** [If applicable]
-
-### Audit Team
-
-**Lead Auditor:** [Name and affiliation]  
-**Team Members:**
-- [Name], [Role/Expertise], [Affiliation]
-- [Name], [Role/Expertise], [Affiliation]
-- [Name], [Role/Expertise], [Affiliation]
-
-**Demographic Representation:** [Describe how the audit team reflects diversity considerations, with particular attention to gender, indigenous representation, and inclusion of marginalized perspectives]
-
-### Stakeholder Participation
-
-**Community Representatives Involved:**
-- [Name], [Role in community], [Contribution to audit]
-- [Name], [Role in community], [Contribution to audit]
-
-**Consultation Methods:** [Describe how community input was gathered during the audit process]
-
-**Participation Metrics:**
-- Number of community members consulted: [Number]
-- Percentage of marginalized groups represented: [Percentage]
-- Methods for ensuring inclusive participation: [Brief description]
-
----
-
 ## 2. Implementation Overview
 
 ### Scope of Implementation

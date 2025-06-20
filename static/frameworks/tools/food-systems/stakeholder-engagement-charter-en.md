@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: Stakeholder Engagement Charter Template
 
 **In this document:**

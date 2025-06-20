@@ -2,23 +2,6 @@
 
 ## A Guide to the Global Ethics & Rights of Beings Framework
 
----
-
-## In This Guide
-
-- [Introduction](#introduction)
-- [Framework Overview](#framework-overview)
-- [Religious Traditions & Rights of Beings](#religious-traditions--rights-of-beings)
-- [Finding Common Ground](#finding-common-ground)
-- [Addressing Theological Questions](#addressing-theological-questions)
-- [Implementation in Religious Contexts](#implementation-in-religious-contexts)
-- [Interfaith Dialogue Opportunities](#interfaith-dialogue-opportunities)
-- [Resources for Religious Leaders](#resources-for-religious-leaders)
-- [Community Examples](#community-examples)
-- [Next Steps](#next-steps)
-
----
-
 ## Introduction
 
 ### A Message to Faith Communities

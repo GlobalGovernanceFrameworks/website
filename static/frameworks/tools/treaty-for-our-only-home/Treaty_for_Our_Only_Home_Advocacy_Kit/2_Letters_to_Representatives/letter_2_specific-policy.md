@@ -14,7 +14,7 @@ Subject: A Constituent's Request for Action on [Specific Keystone Reform]
 
 Dear Representative [Representative's Last Name],
 
-My name is [Your Name], and I am a resident of [Your City/Town]. I am writing to you today as a follow-up to my previous correspondence regarding the "Treaty for Our Only Home," a comprehensive framework for global governance available at globalgovernanceframework.org.
+My name is [Your Name], and I am a resident of [Your City/Town]. I am writing to you today as a follow-up to my previous correspondence regarding the "Treaty for Our Only Home," a comprehensive framework for global governance available at globalgovernanceframeworks.org.
 
 While the full treaty is broad, I wish to draw your attention to one critical, actionable component that I believe requires immediate consideration: [Specific Keystone Reform Title, e.g., The Establishment of Ecocide as an International Crime].
 

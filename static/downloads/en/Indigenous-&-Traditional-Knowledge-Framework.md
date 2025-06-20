@@ -61,7 +61,7 @@ The framework preserves its organic Indigenous-centered structure, organized int
 
 To bridge traditional knowledge with practical action, the framework provides Indigenous-designed tools and templates for immediate community use:
 
-- **[Indigenous Sovereignty Starter Kit](/frameworks/tools/indigenous/sovereignty-starter-kit-en.zip)**: Complete package for establishing Bioregional Autonomous Zones and Traditional Knowledge protection protocols.
+- **[Indigenous Sovereignty Starter Kit](/frameworks/tools/indigenous/indigenous-sovereignty-starter-kit-en.zip)**: Complete package for establishing Bioregional Autonomous Zones and Traditional Knowledge protection protocols.
 
 - **Core Governance Tools**:
   - [Municipal-Indigenous Cooperative Agreement Template](/frameworks/tools/indigenous/municipal-indigenous-agreement-en.pdf)
@@ -125,7 +125,6 @@ The framework is accessible through the Global Governance Framework website, des
 **Indigenous Leadership Development**: Support Indigenous sovereignty by contributing to traditional knowledge documentation, legal advocacy, technology development, or bioregional organizing. Contact us at [globalgovernanceframework@gmail.com] to engage respectfully with Indigenous-led initiatives.
 
 **The Vision Realized**: By 2050, planetary governance emerges from Indigenous wisdom rather than colonial extraction—where bioregional stewardship replaces nation-state control, where AI serves Traditional Ecological Knowledge rather than corporate interests, and where ceremonial governance guides humanity's relationship with all beings. **The future is Indigenous-led, and the transformation begins in our bioregions today.**
-
 
 # Preamble: A Framework Born from the Land
 

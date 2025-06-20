@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: Advocacy Playbook
 
 **In this document:**

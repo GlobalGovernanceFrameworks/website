@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: Cost-Benefit Analysis Model
 
 **In this document:**

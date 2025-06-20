@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="cosmicGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#2B4B8C"/>
+      <stop offset="100%" stop-color="#6B5CA5"/>
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#2B4B8C"/>
+      <stop offset="100%" stop-color="#6B5CA5"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#DAA520"/>
+    </linearGradient>
+    <style>
+      .quote-text { font-family: 'Inter', sans-serif; fill: white; }
+      .bold-text { font-weight: bold; }
+      .quote-marks { font-family: 'Inter', sans-serif; fill: #DAA520; font-size: 120px; font-weight: bold; }
+      .url-text { font-family: 'Inter', sans-serif; fill: white; font-size: 24px; }
+    </style>
+  </defs>
+  
+  <!-- Background gradient -->
+  <rect width="1080" height="1080" fill="url(#cosmicGradient)"/>
+  
+  <!-- Subtle pattern overlay -->
+  <circle cx="200" cy="200" r="100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-dasharray="10,10"/>
+  <circle cx="880" cy="880" r="120" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" stroke-dasharray="10,10"/>
+  
+  <!-- Opening quote mark -->
+  <text x="140" y="280" class="quote-marks">"</text>
+  
+  <!-- Main quote text -->
+  <text x="140" y="380" class="quote-text" font-size="48" font-weight="normal">
+    <tspan x="140" dy="0">The choice is not between perfect</tspan>
+    <tspan x="140" dy="60">solutions and imperfect status quo.</tspan>
+    <tspan x="140" dy="90">It's between</tspan>
+    <tspan x="140" dy="90" class="bold-text" fill="#DAA520">conscious evolution</tspan>
+    <tspan x="140" dy="60">toward regenerative civilization</tspan>
+    <tspan x="140" dy="60">and</tspan>
+    <tspan x="140" dy="90" class="bold-text" fill="#DAA520">unconscious devolution</tspan>
+    <tspan x="140" dy="60">toward civilizational collapse.</tspan>
+  </text>
+  
+  <!-- Closing quote mark -->
+  <text x="800" y="880" class="quote-marks">"</text>
+  
+  <!-- Brand icon (simplified favicon) -->
+  <g transform="translate(900, 80) scale(0.6)">
+    <circle cx="50" cy="50" r="48" fill="white" stroke="url(#blueGradient)" stroke-width="2"/>
+    <circle cx="50" cy="50" r="16" fill="url(#blueGradient)"/>
+    <circle cx="50" cy="27" r="9" fill="url(#goldGradient)"/>
+    <circle cx="35" cy="62" r="9" fill="url(#goldGradient)"/>
+    <circle cx="65" cy="62" r="9" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- Website URL -->
+  <text x="140" y="1020" class="url-text">globalgovernanceframeworks.org</text>
+</svg>

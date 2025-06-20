@@ -20,7 +20,7 @@ We are living in an era of what many now call a "polycrisis"—a state where mul
 
 In searching for credible and comprehensive solutions, I have found a remarkable framework that I believe warrants your attention: the "Treaty for Our Only Home." This is not just another abstract proposal; it is a ready-to-implement blueprint for upgrading our systems of global governance to be more resilient, effective, and just. It was developed through a rigorous synthesis of established principles in international law and systems thinking.
 
-The full framework can be explored at globalgovernanceframework.org. The "Executive Summary for the Skeptic" is a particularly concise starting point.
+The full framework can be explored at globalgovernanceframeworks.org. The "Executive Summary for the Skeptic" is a particularly concise starting point.
 
 As my elected representative, your leadership and foresight are essential. I am writing to respectfully ask you to:
 

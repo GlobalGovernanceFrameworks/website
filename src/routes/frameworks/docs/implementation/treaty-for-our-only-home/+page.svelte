@@ -590,10 +590,10 @@
   
   .section-content {
     padding-top: 1rem;
-    scroll-margin-top: 2rem; /* Adds space above when scrolled to */
+    scroll-margin-top: 2rem;
   }
 
-  /* Section Navigation */
+  /* Section Navigation - Simplified borders for lighter feel */
   .section-nav {
     margin-bottom: 2rem;
     border-bottom: 1px solid #e5e7eb;
@@ -603,11 +603,11 @@
   }
 
   .nav-section {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem; /* Increased spacing instead of borders */
   }
 
   .nav-accordion {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem; /* Increased spacing instead of borders */
     border: 1px solid #e5e7eb;
     border-radius: 0.375rem;
     overflow: hidden;
@@ -630,8 +630,15 @@
     text-align: left;
   }
 
+  /* Enhanced accessibility with focus-visible states */
   .accordion-header:hover {
     background-color: rgba(0, 196, 154, 0.05);
+  }
+
+  .accordion-header:focus-visible {
+    outline: 2px solid var(--treaty-accent);
+    outline-offset: 2px;
+    background-color: rgba(0, 196, 154, 0.1);
   }
 
   .accordion-header.has-active {
@@ -677,6 +684,7 @@
     background-color: #fafafa;
   }
 
+  /* Simplified nav-item borders - removed individual borders, using spacing */
   .nav-item {
     width: 100%;
     display: flex;
@@ -690,16 +698,23 @@
     font-size: 0.9rem;
     color: #4b5563;
     text-align: left;
-    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0.25rem; /* Spacing instead of borders */
   }
 
   .nav-item:last-child {
-    border-bottom: none;
+    margin-bottom: 0;
   }
 
   .nav-item:hover {
     background-color: rgba(0, 196, 154, 0.05);
     color: #374151;
+  }
+
+  /* Enhanced focus states for accessibility */
+  .nav-item:focus-visible {
+    outline: 2px solid var(--treaty-accent);
+    outline-offset: 2px;
+    background-color: rgba(0, 196, 154, 0.1);
   }
 
   .nav-item.active {
@@ -838,6 +853,7 @@
     overflow: visible;
   }
   
+  /* Enhanced button accessibility */
   .primary-btn {
     background-color: var(--treaty-primary);
     color: white;
@@ -850,6 +866,13 @@
   }
   
   .primary-btn:hover {
+    background-color: var(--treaty-secondary);
+    transform: translateY(-1px);
+  }
+
+  .primary-btn:focus-visible {
+    outline: 2px solid var(--treaty-accent);
+    outline-offset: 2px;
     background-color: var(--treaty-secondary);
     transform: translateY(-1px);
   }
@@ -866,6 +889,13 @@
   }
   
   .secondary-btn:hover {
+    background-color: rgba(0, 196, 154, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .secondary-btn:focus-visible {
+    outline: 2px solid var(--treaty-accent);
+    outline-offset: 2px;
     background-color: rgba(0, 196, 154, 0.1);
     transform: translateY(-1px);
   }
@@ -899,6 +929,13 @@
   }
 
   .nav-btn:hover {
+    background-color: var(--treaty-secondary);
+    transform: translateY(-1px);
+  }
+
+  .nav-btn:focus-visible {
+    outline: 2px solid var(--treaty-accent);
+    outline-offset: 2px;
     background-color: var(--treaty-secondary);
     transform: translateY(-1px);
   }
@@ -1044,7 +1081,7 @@
     font-size: 1rem;
   }
 
-  /* Tables */
+  /* Tables - Simplified with solid colors instead of gradients */
   :global(.content table) {
     width: 100%;
     border-collapse: collapse;
@@ -1055,8 +1092,9 @@
     overflow: hidden;
   }
 
+  /* Using solid color instead of gradient for cleaner, more modern look */
   :global(.content thead) {
-    background: linear-gradient(to right, var(--treaty-primary), var(--treaty-secondary));
+    background-color: var(--treaty-primary);
   }
 
   :global(.content th) {
@@ -1117,6 +1155,13 @@
 
   .content :global(a:hover) {
     color: var(--treaty-primary);
+  }
+
+  .content :global(a:focus-visible) {
+    outline: 2px solid var(--treaty-accent);
+    outline-offset: 2px;
+    background-color: rgba(0, 196, 154, 0.1);
+    border-radius: 2px;
   }
 
   .content :global(a[href^="http"]):after, 

@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: Policy Harmonization Toolkit
 
 **In this document:**

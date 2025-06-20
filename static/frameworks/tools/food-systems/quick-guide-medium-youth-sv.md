@@ -11,21 +11,6 @@
 
 *Denna mycket visuella och tillgängliga version använder berättelser och enkelt språk för att inspirera till handling i olika samhällen, med särskilt fokus på ungdomars engagemang och samhällsmobilisering.*
 
----
-
-## 🎯 Vad handlar det om?
-
-Vi vill fixa matsystemen så att de:
-
-* 🌱 Hjälper jorden
-* 🍚 Mättar alla
-* 🤝 Är rättvisa och inkluderande
-* 🔄 Klarar tuffa tider
-
-Vi jobbar tillsammans – bönder, unga, urfolk och ledare från hela världen.
-
----
-
 ## 🌟 Våra 4 Kärnvärden
 
 | Värde                  | Vad det betyder                                                       |

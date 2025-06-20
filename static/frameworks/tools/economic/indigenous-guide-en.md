@@ -1,5 +1,3 @@
-
-
 # Indigenous Economic Stewardship Guide
 
 **In this document:**

@@ -14,26 +14,6 @@
 8. [Troubleshooting Common Challenges](#troubleshooting-common-challenges)
 9. [Resources](#resources)
 
----
-
-## Introduction
-
-When we expand our circle of moral consideration to include diverse beings—human, animal, ecological, and technological—conflicts between different rights-holders inevitably arise. This guide provides practical tools and methodologies for resolving such conflicts while maintaining the integrity of the Global Ethics & Rights of Beings Framework.
-
-**Purpose of This Guide:**
-- Provide structured approaches to resolving rights conflicts
-- Support implementation of the framework's conflict resolution protocols
-- Offer practical tools for diverse contexts and cultural settings
-- Build capacity for ethical decision-making in complex situations
-
-**How to Use This Guide:**
-- Start with understanding the types of conflicts you're facing
-- Apply the step-by-step process to your specific situation
-- Adapt approaches to your cultural and resource context
-- Develop ongoing capacity for effective conflict resolution
-
----
-
 ## Understanding Rights Conflicts
 
 ### Types of Rights Conflicts

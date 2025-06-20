@@ -51,7 +51,7 @@ The framework is organized into 9 comprehensive sections, each a critical compon
 ## <a id="implementation-tools"></a>Implementation Tools
 To bridge theory and practice, the framework provides practical tools and templates for immediate use by elder-led organizations and stakeholders:
 
-- **[Elder Leadership Starter Kit](/frameworks/tools/aging/elder-leadership-kit-en.zip)**: A complete package for launching elder-led AUBI pilot projects and political organizing.
+- **[Elder Leadership Starter Kit](/frameworks/tools/aging/elder-leadership-starter-kit-en.zip)**: A complete package for launching elder-led AUBI pilot projects and political organizing.
 
 - **Core Implementation Tools**:
   - [Elder Community Readiness Assessment](/frameworks/tools/aging/elder-readiness-assessment-en.pdf)
@@ -70,7 +70,7 @@ To bridge theory and practice, the framework provides practical tools and templa
 - **Elder Agency & Innovation Tools**:
   - [Mutual Care Network Setup Guide](/frameworks/tools/aging/mutual-care-network-setup-guide-en.pdf)
   - [Elder Innovation Hub Playbook](/frameworks/tools/aging/elder-innovation-hub-playbook-en.pdf)
-  - [Intergenerational Program Templates](/frameworks/tools/aging/intergenerational-templates-en.pdf)
+  - [Intergenerational Program Templates](/frameworks/tools/aging/intergenerational-program-templates-en.pdf)
 
 - **Framework Guides**:
   - [Aging Framework Essentials Guide](/frameworks/tools/aging/aging-framework-essentials-en.pdf) (English)
@@ -108,7 +108,6 @@ The framework is accessible through the Global Governance Framework website, des
 **Elder Leadership Development**: Help expand elder agency by volunteering for Ambassador training, political organizing, pilot leadership, or community facilitation. Contact us at [globalgovernanceframework@gmail.com] to join the Elder Leadership Network.
 
 **The Vision Realized**: By 2040, aging represents society's greatest strength—a time when accumulated wisdom drives innovation, when economic systems become stronger through elder participation, and when intergenerational connection replaces age segregation. Every elder deserves not just survival, but agency over a thriving life of purpose, connection, and respect. **The future of aging is elder-led, and it starts now.**
-
 
 # Preamble: Aging as Asset, Agency, and Wisdom
 
@@ -4016,7 +4015,6 @@ The global aging population is not a tsunami to be weathered—it is a resource 
 
 **The future of aging is elder-led, and it starts now.**
 
-
 # Appendices
 
 **In this section:**
@@ -4377,5 +4375,4 @@ The appendices provide essential reference materials supporting framework implem
 - **Evidence Base**: Comprehensive measurement systems supporting continuous framework improvement and global knowledge sharing
 
 **Access All Resources**: Visit globalgovernanceframework.org/tools/aging for complete tool library.
-
 

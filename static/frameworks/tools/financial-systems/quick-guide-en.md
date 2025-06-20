@@ -1,9 +1,3 @@
----
-title: Financial Systems Framework Quick Guide
-section: quick-guide
-revision: Version 1.0 (2025-05-21)
----
-
 # Financial Systems Framework: Quick Guide
 
 **Estimated Reading Time**: 5 minutes

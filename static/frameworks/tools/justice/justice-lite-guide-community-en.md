@@ -84,8 +84,8 @@ Here's how your community can begin implementing the framework:
 
 ### Step 1: Form a Justice Coalition (2-3 months)
 - Identify key stakeholders (community leaders, legal professionals, youth, indigenous representatives, faith leaders)
-- Host a kickoff meeting using the [Stakeholder Engagement Charter](/frameworks/tools/justice-systems/stakeholder-engagement-charter-en.pdf)
-- Map existing justice resources and gaps using the [Pilot Readiness Assessment](/frameworks/tools/justice-systems/pilot-readiness-self-assessment-tool-en.pdf)
+- Host a kickoff meeting using the [Stakeholder Engagement Charter](/frameworks/tools/justice/stakeholder-engagement-charter-en.pdf)
+- Map existing justice resources and gaps using the [Pilot Readiness Assessment](/frameworks/tools/justice/pilot-readiness-self-assessment-tool-en.pdf)
 
 ### Step 2: Prioritize Reform Areas (1-2 months)
 - Survey community members about justice needs and experiences
@@ -123,11 +123,11 @@ Rural communities in Highland County created a network of digital justice kiosks
 
 The framework provides ready-to-use tools to support your implementation:
 
-- **[Restorative Justice Guide](/frameworks/tools/justice-systems/restorative-justice-guide-en.pdf)**: Step-by-step guidance for implementing restorative practices in your community
-- **[Indigenous Justice Integration Template](/frameworks/tools/justice-systems/indigenous-justice-integration-template-en.pdf)**: Framework for respectfully integrating traditional legal practices
-- **[Youth Justice Guide](/frameworks/tools/justice-systems/youth-justice-guide-en.pdf)**: Specialized guide for youth-centered justice reforms
-- **[Community Monitoring Templates](/frameworks/tools/justice-systems/monitoring-evaluation-rubric-en.pdf)**: Simple tools to track your progress and impact
-- **[Advocacy Playbook](/frameworks/tools/justice-systems/advocacy-playbook-en.pdf)**: Resources for building support and securing policy changes
+- **[Restorative Justice Guide](/frameworks/tools/justice/restorative-justice-guide-en.pdf)**: Step-by-step guidance for implementing restorative practices in your community
+- **[Indigenous Justice Integration Template](/frameworks/tools/justice/indigenous-justice-integration-template-en.pdf)**: Framework for respectfully integrating traditional legal practices
+- **[Youth Justice Guide](/frameworks/tools/justice/youth-justice-guide-en.pdf)**: Specialized guide for youth-centered justice reforms
+- **[Community Monitoring Templates](/frameworks/tools/justice/monitoring-evaluation-rubric-en.pdf)**: Simple tools to track your progress and impact
+- **[Advocacy Playbook](/frameworks/tools/justice/advocacy-playbook-en.pdf)**: Resources for building support and securing policy changes
 
 All resources are available in multiple languages and accessible formats at [globalgovernanceframework.org/tools/justice](https://globalgovernanceframework.org/tools/justice).
 

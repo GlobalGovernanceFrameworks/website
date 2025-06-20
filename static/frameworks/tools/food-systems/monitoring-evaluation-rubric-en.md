@@ -1,5 +1,3 @@
-
-
 # Food Systems & Agriculture Framework: Monitoring & Evaluation Rubric Template
 
 **In this document:**

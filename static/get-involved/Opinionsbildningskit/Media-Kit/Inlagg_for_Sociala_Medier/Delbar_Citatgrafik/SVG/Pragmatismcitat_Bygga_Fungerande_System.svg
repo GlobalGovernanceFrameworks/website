@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="cosmicGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#2B4B8C"/>
+      <stop offset="100%" stop-color="#6B5CA5"/>
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#2B4B8C"/>
+      <stop offset="100%" stop-color="#6B5CA5"/>
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#DAA520"/>
+    </linearGradient>
+    <style>
+      .quote-text { font-family: 'Inter', sans-serif; fill: white; }
+      .emphasis-text { font-family: 'Inter', sans-serif; fill: #DAA520; font-weight: bold; }
+      .quote-marks { font-family: 'Inter', sans-serif; fill: #DAA520; font-size: 100px; font-weight: bold; }
+      .url-text { font-family: 'Inter', sans-serif; fill: white; font-size: 24px; }
+    </style>
+  </defs>
+  
+  <!-- Background gradient -->
+  <rect width="1080" height="1080" fill="url(#cosmicGradient)"/>
+  
+  <!-- Geometric construction elements -->
+  <g opacity="0.1">
+    <rect x="100" y="100" width="200" height="4" fill="white"/>
+    <rect x="100" y="150" width="150" height="4" fill="white"/>
+    <rect x="100" y="200" width="180" height="4" fill="white"/>
+    <rect x="780" y="700" width="200" height="4" fill="white"/>
+    <rect x="830" y="750" width="150" height="4" fill="white"/>
+    <rect x="800" y="800" width="180" height="4" fill="white"/>
+  </g>
+  
+  <!-- Opening quote mark -->
+  <text x="140" y="280" class="quote-marks">"</text>
+  
+  <!-- Main quote text -->
+  <text x="140" y="380" class="quote-text" font-size="44">
+    <tspan x="140" dy="0">I en värld av kaskadmisslyckanden</tspan>
+    <tspan x="140" dy="80">är att</tspan>
+    <tspan x="140" dy="80" class="emphasis-text">bygga ett system som fungerar</tspan>
+    <tspan x="140" dy="60">den</tspan>
+    <tspan x="140" dy="80" class="emphasis-text">ultimata pragmatiska handlingen.</tspan>
+  </text>
+  
+  <!-- Closing quote mark -->
+  <text x="800" y="740" class="quote-marks">"</text>
+  
+  <!-- Construction/building visual metaphor -->
+  <g transform="translate(600, 800)" opacity="0.3">
+    <rect x="0" y="0" width="80" height="20" fill="#DAA520"/>
+    <rect x="0" y="25" width="60" height="20" fill="#DAA520"/>
+    <rect x="0" y="50" width="100" height="20" fill="#DAA520"/>
+    <rect x="0" y="75" width="70" height="20" fill="#DAA520"/>
+  </g>
+  
+  <!-- Brand icon -->
+  <g transform="translate(900, 80) scale(0.6)">
+    <circle cx="50" cy="50" r="48" fill="white" stroke="url(#blueGradient)" stroke-width="2"/>
+    <circle cx="50" cy="50" r="16" fill="url(#blueGradient)"/>
+    <circle cx="50" cy="27" r="9" fill="url(#goldGradient)"/>
+    <circle cx="35" cy="62" r="9" fill="url(#goldGradient)"/>
+    <circle cx="65" cy="62" r="9" fill="url(#goldGradient)"/>
+  </g>
+  
+  <!-- Website URL -->
+  <text x="140" y="1020" class="url-text">globalgovernanceframeworks.org</text>
+</svg>

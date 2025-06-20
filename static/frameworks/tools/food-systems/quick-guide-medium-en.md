@@ -1,5 +1,3 @@
-
-
 # Food and Agriculture Framework: Lite Guide  
 
 

@@ -90,7 +90,7 @@ The framework provides comprehensive tools for immediate implementation, bridgin
 - [WASH Sovereign Wealth Fund Model](/frameworks/tools/water/wash-sovereign-wealth-fund-model-en.pdf): National financing strategies
 - [Community Equity Model Template](/frameworks/tools/water/community-equity-model-template-en.pdf): Cooperative ownership structures
 - [Carbon-Water Credit Calculator](/frameworks/tools/water/carbon-water-credit-calculator-en.pdf): Ecosystem service financing
-- [Circular Finance Planning Tool](/frameworks/tools/water/circular-finance-planning-en.pdf): Revenue from waste recovery
+- [Circular Finance Planning Tool](/frameworks/tools/water/circular-finance-planning-tool-en.pdf): Revenue from waste recovery
 
 **Crisis Response Tools**:
 - [Emergency WASH Response Protocols](/frameworks/tools/water/emergency-wash-response-protocols-en.pdf): Rapid deployment strategies
@@ -141,7 +141,6 @@ This framework is designed as a living document for adaptation and evolution acr
 The water crisis is humanity's crisis. The water solution is humanity's opportunity for healing, justice, and regeneration.
 
 **Join the Water Revolution**: Connect with the global movement at [globalgovernanceframework@gmail.com] to pilot implementations, contribute translations, share innovations, or support community organizing for water justice. Together, we transform water governance from extraction to regeneration, from scarcity to abundance, from conflict to healing.
-
 
 # Theory of Change
 
@@ -282,7 +281,6 @@ Many cultures understand water as sacred, alive, and central to spiritual practi
 **Theory Application**: This Theory of Change provides the conceptual foundation for all framework components, explaining why specific governance structures, financing mechanisms, technologies, and implementation approaches are necessary for achieving transformative outcomes. Each framework section operationalizes different aspects of this theory while maintaining coherence with its core logic.
 
 **Next Steps**: The [Guiding Principles](/frameworks/docs/implementation/water#01-guiding-principles) section translates this theory into operational values and commitments that guide all framework implementation.
-
 
 # 1. Guiding Principles
 
@@ -488,7 +486,6 @@ Principles must bridge intergenerational knowledge by honoring elder wisdom whil
 **Principles Application**: These guiding principles inform every aspect of framework implementation, from institutional design and financing mechanisms to technology deployment and crisis response. The [Institutional & Policy Framework](/frameworks/docs/implementation/water#02-institutional-policy-framework) section demonstrates how these principles translate into concrete governance structures and legal frameworks.
 
 **Living Document**: These principles will evolve through implementation experience and ongoing dialogue with water stewards worldwide. Regular review processes will strengthen and deepen principles while maintaining core commitments to justice, sustainability, and regeneration.
-
 
 # 2. Institutional & Policy Framework
 
@@ -729,7 +726,6 @@ This framework establishes governance architectures that center community self-d
 **Implementation Integration**: This institutional and policy framework provides the governance foundation for implementing all other framework components. The [Financing & Investment](/frameworks/docs/implementation/water#03-financing-investment) section demonstrates how these institutions enable innovative financing approaches while maintaining community control and public accountability.
 
 **Adaptive Implementation**: These institutional models will evolve through implementation experience across diverse contexts. Regular review processes will strengthen governance approaches while maintaining core commitments to participation, accountability, and ecological integrity.
-
 
 # 3. Financing & Investment
 

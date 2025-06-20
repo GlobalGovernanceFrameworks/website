@@ -9,6 +9,7 @@
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -141,6 +142,81 @@
         opacity: 0.3;
       }
     </style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#blueGradient"
+       id="linearGradient13"
+       x1="0.5"
+       y1="0.5"
+       x2="99.5"
+       y2="99.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="blueGradient"
+       x1="0"
+       x2="1"
+       y1="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#2B4B8C"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#6B5CA5"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#blueGradient"
+       id="linearGradient14"
+       x1="34"
+       y1="34"
+       x2="66"
+       y2="66"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#goldGradient"
+       id="linearGradient15"
+       x1="41"
+       y1="18"
+       x2="59"
+       y2="36"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="goldGradient"
+       x1="0"
+       x2="1"
+       y1="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#B8860B"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#DAA520"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#goldGradient"
+       id="linearGradient16"
+       x1="25.5"
+       y1="53.5"
+       x2="43.5"
+       y2="71.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#goldGradient"
+       id="linearGradient17"
+       x1="56.5"
+       y1="53.5"
+       x2="74.5"
+       y2="71.5"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <!-- Header Section -->
   <rect
@@ -591,36 +667,72 @@
      class="divider-line"
      id="line49" />
   <text
-     x="278.27997"
+     x="400.27997"
      y="824"
      class="call-to-action"
      id="text50">The Choice is Ours. The Time is Now.</text>
   <text
-     x="278.18402"
+     x="400.18402"
      y="859"
      class="cta-subtitle"
      id="text51">Join the Global Stewardship Alliance</text>
   <text
-     x="277.74799"
+     x="399.74799"
      y="879"
      class="section-subtitle neutral-color"
      id="text52">Help build the political will to choose cooperation over competition.</text>
   <!-- QR Code placeholder -->
-  <image
-     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhIAAAISAQAAAACxRhsSAAAFAklEQVR4nO2dXY6rOBCFTw1IeTRSLyBLgR3cJY16SXcHeClZQEvw2BLozINdxuR2RzO6CZPJnHoihnwyUqlcfzZG/K7EP34bAYghhhhiiCGGGGKIIcbGsCwtAKxm1iFdAXMLxG7Nd2MH2DD788Od5yGGGN8ISRI9SXJqSE4AyQUcwwJyAtBPDUkuANJYw+pv47O8ixivz5izdbQBDRGtTdppQyD5fv40G+a2+p8b33vPQwwxvpL2eiB2MPYEDGgWRAMINETsAAIrrP95/3mIIcYt+UVPs6wtk38KwBBWf27uHjMPMcT4O4xAcgSAnvTU/3xKHij6S5t81uQGjMgu7APmIYYYNxjRzKP8uYUN84k2IP8E0NCG+cR8F2sK9+8/DzHE+FLSel4XT8OnIZ4XMHYwICzJZ0XsmnwXYV9sfZZ3EeN1GZ6XmgAADTmGBeiZ00/+VOOrvaeu0hiVlxLjEAayrgVPmI5A5aQmLUYgATREz8XvhnwlPRXj8YxiTxtydHuazOaInN33KxZTCngwJT0V4wiGW0wA2VjuVNQLVUg3Ul4gh/pa98U4mJG80hTbhwX257Qaop0IzGaIXZOKUhxnSzX/nKa68zzEEOMb8QV9QXZDk6eafVb/mRf/ZHJzsrVRfV+MoxilzvRGxMHAOJxoQLsAaGj9uMKAE4EwgamMOrcLgNV4v3mIIcZNqfNSoRjLUnbacgAI+TmOoc4GyJ6K8XhGFUellr5tjQeQM6l1ImDnKWjdF+MYRqV1yU7moL/EVjvz6v6pJ1Glp2Icw6j90/6SvVLkSmryT1sA7WI919b90xMNcwf5p2IcxCjrflOF+pUvWtWj3Nq6V6D8qRiHMeo8fzVWlfbhbmip/ucx+adiHMao7WlxOSv/dBsDUGnn9g/pqRhHMTiWvaXAanw/lybosiuq5wK+W5vH+mm1nLB6rncR4xUZSQsNYYKlXlNr3FhOK7z/9KMF5g6WNk7lntR7zkMMMW5KjoW2gbCUXr+y2k9b/+n2nGe0tO6L8XDGrq/Pg6Rq636SsGvuSxGV/FMxjmNUfdKurGQuO22NfJNnrcpY/d9neRcx/ieMsAD9pYXZmTTrViMvZjZ4158N4dPIS/s94x7zEEOMa9mWcuToqW7fq1Knm42tO6ZlT8U4glHOlyq79zxX6h5AUVvUboA3A0hPxTiCUelpVYXqJ+y2603lbDRvlq7Dqmd5FzFel1HloEjudHJzCMrGqXx30j4+MY5l7PbxTcCWP61yVdf2dIL6+sQ4lOH9p1NpON3yolc/t5YqyD8V41hG6ZOmh/qbFS1GNe2LLgefFS3Wui/GQYycCY0D4IdHfRr6y4mG+W1JR0ulR6xhvpzflry3727zEEOMm1LnpSb4cRJ7qer7mzNb7LDsqRgPZ1Trvi/+AFKz/tSU1tNSBVD/qRj/BmPfz1+f1pNG+ukqrCpjk/JSYhzN6D3o347jrfL8sVvzdyS2/aaxa/wo3yd7FzFekFGfM1Hq9ig10vxQ8NSV+k/FeA5Gf9k2lazm7iryJ87s7HWr8iWfJ34XMV6G8eX3ThjPhPWXExHPS8s4GIjw0QKzAQgTEX98tNq/L8ZBDNfTQAAzQGCBIfhVfzkRQLNYfznR+p8dGH8A6Wso95uHGGLclKt432ukKEdL5Ru7/VF+0LT8UzGOYdgvSf1/LPFZ3kUMMcQQQwwxxBBDjP8+4y+F5eVTzoYAtAAAAABJRU5ErkJggg=="
-     x="535.81561"
-     y="752.45392"
-     height="200"
-     width="200"
-     id="image1" />
-  <text
-     x="591.23547"
-     y="966.31915"
-     class="item-text neutral-color"
-     id="text60">Scan to Get Started</text>
   <text
      x="642.2774"
      y="986.31915"
      class="website-text"
-     id="text61">globalgovernanceframework.org/start-treaty</text>
+     id="text61">globalgovernanceframeworks.org/start-treaty</text>
+  <g
+     id="svg53"
+     transform="translate(-1.4848078,-2.2807368)">
+    <g
+       transform="matrix(0.5,0,0,0.5,618.92671,923.07329)"
+       id="g10">
+      <!-- White background circle -->
+      <circle
+         cx="50"
+         cy="50"
+         r="48"
+         fill="#ffffff"
+         stroke="url(#blueGradient)"
+         stroke-width="3"
+         id="circle6-6"
+         style="stroke:url(#linearGradient13)" />
+      <!-- Central blue circle (global) -->
+      <circle
+         cx="50"
+         cy="50"
+         r="16"
+         fill="url(#blueGradient)"
+         id="circle7-7"
+         style="fill:url(#linearGradient14)" />
+      <!-- Three national nodes in triangular arrangement -->
+      <circle
+         cx="50"
+         cy="27"
+         r="9"
+         fill="url(#goldGradient)"
+         id="circle8-5"
+         style="fill:url(#linearGradient15)" />
+      <circle
+         cx="34.5"
+         cy="62.5"
+         r="9"
+         fill="url(#goldGradient)"
+         id="circle9"
+         style="fill:url(#linearGradient16)" />
+      <circle
+         cx="65.5"
+         cy="62.5"
+         r="9"
+         fill="url(#goldGradient)"
+         id="circle10"
+         style="fill:url(#linearGradient17)" />
+    </g>
+  </g>
 </svg>
