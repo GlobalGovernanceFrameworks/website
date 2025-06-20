@@ -1,6 +1,6 @@
-# Bidra till Global Governance Framework webbplats
+# Bidra till Global Governance Frameworks webbplats
 
-Välkommen till den tekniska bidragsguiden för Global Governance Framework webbplats! Den här guiden hjälper dig att förstå vår kodbas, utvecklingsarbetsflöde och hur du gör meningsfulla bidrag till projektet.
+Välkommen till den tekniska bidragsguiden för Global Governance Frameworks webbplats! Den här guiden hjälper dig att förstå vår kodbas, utvecklingsarbetsflöde och hur du gör meningsfulla bidrag till projektet.
 
 ## 🎯 Projektöversikt
 
@@ -462,7 +462,7 @@ git push origin your-branch
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ### Gemenskap
-- [GitHub-diskussioner](https://github.com/GlobalGovernanceFramework/governance-framework-site/discussions)
+- [GitHub-diskussioner](https://github.com/GlobalGovernanceFrameworks/website/discussions)
 - [Discord-gemenskap](https://discord.gg/Zx4hMJf4JU) - Gå med i **#dev-design** för tekniska diskussioner
 
 ## 🔐 Säkerhet och bästa praxis

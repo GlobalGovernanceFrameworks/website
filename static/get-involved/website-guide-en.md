@@ -1,6 +1,6 @@
-# Contributing to the Global Governance Framework Website
+# Contributing to the Global Governance Frameworks Website
 
-Welcome to the technical contribution guide for the Global Governance Framework website! This guide will help you understand our codebase, development workflow, and how to make meaningful contributions to the project.
+Welcome to the technical contribution guide for the Global Governance Frameworks website! This guide will help you understand our codebase, development workflow, and how to make meaningful contributions to the project.
 
 ## 🎯 Project Overview
 
@@ -462,7 +462,7 @@ git push origin your-branch
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ### Community
-- [GitHub Discussions](https://github.com/GlobalGovernanceFramework/governance-framework-site/discussions)
+- [GitHub Discussions](https://github.com/GlobalGovernanceFrameworks/website/discussions)
 - [Discord Community](https://discord.gg/Zx4hMJf4JU) - Join **#dev-design** for technical discussions
 
 ## 🔐 Security and Best Practices
