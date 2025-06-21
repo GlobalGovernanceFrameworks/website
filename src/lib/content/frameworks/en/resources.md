@@ -15,35 +15,42 @@ This page provides resources for further exploration of the Global Governance Fr
 
 This foundational book presents the complete vision for ethical global governance, exploring the ten steps toward an integrated planetary governance system. It covers economic reform, AI ethics, participatory governance, and planetary stewardship within a comprehensive framework.
 
-[Read the full book](https://bjornkennethholmstrom.wordpress.com/global-governance-natural-steps-toward-a-thriving-world-2/)
+[Link to the book](/resources/Global_Governance_-_Natural_Steps_Toward_a_Thriving_World.pdf)
+
+#### Regenerative Reciprocity: Systems, Spirituality, and the Ethics of Sustenance in a Diverse World
+*By Björn Kenneth Holmström*
+
+This book offers a deep dive into the ethical and ecological principles that underpin the Global Governance Framework. By framing the global polycrisis as a "crisis of disconnection," it explores how systems thinking, spiritual wisdom, and practical action in our food and material systems can create a regenerative future. It directly addresses the policy, governance, and economic models needed for systemic transformation.
+
+[Link to the book](/resources/Regenerative_Reciprocity_-_Systems,_Spirituality,_and_the_Ethics_of_Sustenance_in_a_Diverse_World.pdf)
 
 #### Adaptive Universal Basic Income: A New Social Contract for the 21st Century
 *By Björn Kenneth Holmström*
 
 A detailed exploration of the AUBI concept introduced in the Global Governance Framework. This book provides an in-depth look at how dynamic income systems can create economic justice while encouraging meaningful contribution.
 
-[Read the full book](https://bjornkennethholmstrom.wordpress.com/adaptive-universal-basic-income-a-new-social-contract-for-the-21st-century/)
+[Link to the book](/resources/Adaptive_Universal_Basic_Income_-_A_New_Social_Contract_for_the_21st_Century.pdf)
 
 #### Optimizing Reality: A Systems Thinking Guide for a Multi-Intelligence Future
 *By Björn Kenneth Holmström*
 
 This book explores how systems thinking can be applied to governance challenges, with particular focus on the integration of multiple forms of intelligence—human, artificial, ecological, and collective—in governance structures.
 
-[Read the full book](https://bjornkennethholmstrom.wordpress.com/optimizing-reality-a-systems-thinking-guide-for-a-multi-intelligence-future/)
+[Link to the book](/resources/Optimizing_Reality.pdf)
 
 #### Reality, Sovereignty, and Consciousness: The Quest for Cognitive Liberty
 *By Björn Kenneth Holmström*
 
 An exploration of mental sovereignty and its implications for governance in an age of advanced technology. This book addresses critical questions about who controls consciousness and how governance can protect cognitive freedom.
 
-[Read the full book](https://bjornkennethholmstrom.wordpress.com/reality-sovereignty-and-consciousness-the-quest-for-cognitive-liberty/)
+[Link to the book](/resources/Reality,_Sovereignty,_and_Consciousness.pdf)
 
 #### Love, Meaning, Connection: A New Index for Measuring What Matters
 *By Björn Kenneth Holmström*
 
 This book proposes new metrics for evaluating governance success beyond economic indicators, offering frameworks for measuring how well governance systems support human flourishing in its deepest sense.
 
-[Read the full book](https://bjornkennethholmstrom.wordpress.com/love-meaning-connection-a-new-index-for-measuring-what-matters-2/)
+[Link to the book](/resources/Love,_Meaning,_Connection_-_A_New_Index_for_Measuring_What_Matters.pdf)
 
 ### Additional Recommended Reading
 
@@ -52,6 +59,15 @@ This book proposes new metrics for evaluating governance success beyond economic
 - **Reinventing Organizations** by Frederic Laloux
 - **Doughnut Economics** by Kate Raworth
 - **The Web of Meaning** by Jeremy Lent
+
+### Philosophical Foundations
+
+#### Varande - En väv av existens
+*By Björn Kenneth Holmström*
+
+This book explores the philosophical underpinnings of the Global Governance Framework, using systems thinking and poetic reflection to delve into the nature of being, consciousness, and interconnectedness. It provides a deeper context for the ethical and existential "why" behind the need for a more conscious and integrated approach to global stewardship.
+
+[Link to the Book](/resources/Being_-_A_Tapestry_of_Existence.pdf)
 
 ## Online Resources
 

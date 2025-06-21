@@ -48,7 +48,7 @@
           {$t('about.globalGovernanceDownload.description')}
         </p>
         <a 
-          href="/downloads/en/Global%20Governance%20-%20Natural%20Steps%20Toward%20a%20Thriving%20World.pdf"
+          href="/resources/Global_Governance_-_Natural_Steps_Toward_a_Thriving_World.pdf"
           class="inline-block px-5 py-2.5 bg-blue-700 hover:bg-blue-800 text-white text-base font-medium rounded-lg transition"
           download
         >

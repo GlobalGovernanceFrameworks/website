@@ -15,35 +15,49 @@ Denna sida innehåller resurser för vidare utforskning av Ramverket för Global
 
 Denna grundläggande bok presenterar hela visionen för etisk global styrning och utforskar de tio stegen mot ett integrerat planetärt styrsystem. Den omfattar ekonomisk reform, AI-etik, deltagardemokrati och planetärt ansvar inom ett sammanhängande ramverk.
 
-[Läs hela boken](https://bjornkennethholmstrom.wordpress.com/global-governance-natural-steps-toward-a-thriving-world-2/)
+[Läs hela boken (engelska)](/resources/Global_Governance_-_Natural_Steps_Toward_a_Thriving_World.pdf)
+
+#### Regenerativ ömsesidighet: System, andlighet och etiken kring försörjning i en mångfaldig värld
+*Av Björn Kenneth Holmström*
+
+Denna bok erbjuder en djupdykning i de etiska och ekologiska principer som ligger till grund för det globala styrningsramverket. Genom att formulera den globala polykrisen som en "avkopplingskris" utforskar den hur systemtänkande, andlig visdom och praktisk handling i våra livsmedels- och materiella system kan skapa en regenerativ framtid. Den tar direkt upp de policy-, styrnings- och ekonomiska modeller som behövs för systemisk transformation.
+
+[Länk till boken (engelska)](/resources/Regenerative_Reciprocity_-_Systems,_Spirituality,_and_the_Ethics_of_Sustenance_in_a_Diverse_World.pdf)
 
 #### Adaptiv Universell Basinkomst: Ett nytt samhällskontrakt för 2000-talet  
 *Av Björn Kenneth Holmström*
 
 En detaljerad genomgång av AUBI-konceptet som introduceras i ramverket. Boken visar hur dynamiska inkomstsystem kan skapa ekonomisk rättvisa samtidigt som meningsfullt bidrag uppmuntras.
 
-[Läs hela boken](https://bjornkennethholmstrom.wordpress.com/adaptive-universal-basic-income-a-new-social-contract-for-the-21st-century/)
+[Länk till boken](/resources/Adaptiv_Universell_Basinkomst_-_Ett_nytt_socialt_kontrakt_för_2000-talet.pdf)
 
 #### Optimera Verkligheten: En systemtänkarguide för en framtid med flera intelligenser  
 *Av Björn Kenneth Holmström*
 
 Denna bok visar hur systemtänkande kan tillämpas på styrningsutmaningar, med fokus på integrationen av mänsklig, artificiell, ekologisk och kollektiv intelligens i styrningsstrukturer.
 
-[Läs hela boken](https://bjornkennethholmstrom.wordpress.com/optimizing-reality-a-systems-thinking-guide-for-a-multi-intelligence-future/)
+[Länk till boken (engelska)](/resources/Optimizing_Reality.pdf)
 
 #### Verklighet, Suveränitet och Medvetande: Sökandet efter kognitiv frihet  
 *Av Björn Kenneth Holmström*
 
 En utforskning av mental suveränitet och dess betydelse för styrning i en teknologiskt avancerad tidsålder. Boken behandlar frågan om vem som kontrollerar medvetandet och hur styrning kan skydda kognitiv frihet.
 
-[Läs hela boken](https://bjornkennethholmstrom.wordpress.com/reality-sovereignty-and-consciousness-the-quest-for-cognitive-liberty/)
+[Länk till boken (engelska)](/resources/Reality,_Sovereignty,_and_Consciousness.pdf)
 
 #### Kärlek, Mening, Samhörighet: Ett nytt index för att mäta det som verkligen räknas  
 *Av Björn Kenneth Holmström*
 
 Denna bok föreslår nya måttstockar för att utvärdera styrningens framgång bortom ekonomiska indikatorer. Den erbjuder ramar för att mäta hur väl styrsystem stödjer mänskligt blomstrande på djupet.
 
-[Läs hela boken](https://bjornkennethholmstrom.wordpress.com/love-meaning-connection-a-new-index-for-measuring-what-matters-2/)
+[Länk till boken (engelska)](/resources/Love,_Meaning,_Connection_-_A_New_Index_for_Measuring_What_Matters.pdf)
+
+#### Varandets mysterium
+*Av Björn Kenneth Holmström*
+
+Denna bok utforskar de filosofiska grunderna för det globala styrningsramverket och använder systemtänkande och poetisk reflektion för att fördjupa sig i varandets, medvetandets och sammankopplingens natur. Den ger ett djupare sammanhang för det etiska och existentiella "varför" bakom behovet av ett mer medvetet och integrerat förhållningssätt till globalt förvaltningsarbete.
+
+[Länk till boken (engelska)](/resources/Love,_Meaning,_Connection_-_A_New_Index_for_Measuring_What_Matters.pdf)
 
 ### Ytterligare Rekommenderad Litteratur
 

@@ -41,6 +41,7 @@ Available categories:
 - mental-health
 - treaty-for-our-only-home
 - get-involved
+- frameworks-foundation
 
 Example: node tools-pdf-generator.js economic
   `);
@@ -78,6 +79,7 @@ const outputDirs = {
   'indigenous': path.join(__dirname, '..', 'static', 'frameworks','tools', 'indigenous'),
   'treaty-for-our-only-home': path.join(__dirname, '..', 'static', 'frameworks','tools', 'treaty-for-our-only-home'),
   'get-involved': path.join(__dirname, '..', 'static', 'get-involved'),
+  'frameworks-foundation': path.join(__dirname, '..', 'static', 'downloads')
 };
 
 // Validate category if provided
@@ -8094,6 +8096,88 @@ const tools = [
       en: 'Global Governance Frameworks Content Creation Guide - Page ',
       sv: 'Global Governance Frameworks. Guide för innehållsskapande - Sida '
     }
+  },
+
+  // Frameworks Foundation
+  {
+    name: 'case-studies',
+    category: 'frameworks-foundation',
+    fileNames: {
+      en: 'Case-Studies',
+      sv: 'Case-Studies'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv'),
+    },
+    subfolders: {
+      en: 'en',
+      sv: 'sv',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Case Studies - Page ',
+      sv: 'Global Governance Frameworks Fallstudier - Sida '
+    }
+  },
+  {
+    name: 'implementation',
+    category: 'frameworks-foundation',
+    fileNames: {
+      en: 'Implementation-Guidelines',
+      sv: 'Implementation-Guidelines'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv'),
+    },
+    subfolders: {
+      en: 'en',
+      sv: 'sv',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Implementation Guidelines - Page ',
+      sv: 'Global Governance Frameworks Implementeringsriktlinjer - Sida '
+    }
+  },
+  {
+    name: 'principles',
+    category: 'frameworks-foundation',
+    fileNames: {
+      en: 'Core-Principles',
+      sv: 'Core-Principles'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv'),
+    },
+    subfolders: {
+      en: 'en',
+      sv: 'sv',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Core Principles - Page ',
+      sv: 'Global Governance Frameworks Grundprinciper - Sida '
+    }
+  },
+  {
+    name: 'resources',
+    category: 'frameworks-foundation',
+    fileNames: {
+      en: 'Resources',
+      sv: 'Resources'
+    },
+    sourceDir: {
+      en: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'en'),
+      sv: path.join(__dirname, '..', 'src', 'lib', 'content', 'frameworks', 'sv'),
+    },
+    subfolders: {
+      en: 'en',
+      sv: 'sv',
+    },
+    pageFooter: {
+      en: 'Global Governance Frameworks Resources - Page ',
+      sv: 'Global Governance Frameworks Resurser - Sida '
+    }
   }
 ];
 
@@ -8105,8 +8189,8 @@ const css = `
   body {
     /* Use Inter as the primary font, with standard fallbacks */
     font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
-    font-size: 11pt; /* You may want to adjust this to 10pt for Inter */
-    line-height: 1.4; /* Increased line-height for better readability with sans-serif */
+    font-size: 11pt;
+    line-height: 1.4;
     color: #333;
     max-width: none;
     margin: 0;
@@ -8115,7 +8199,7 @@ const css = `
 
   /* Make headings use the bold version of Inter */
   h1, h2, h3, h4, h5, h6 {
-    font-weight: 700; /* 700 is the bold weight for Inter */
+    font-weight: 700;
     color: #2B4B8C;
     margin-top: 0.8em;
     margin-bottom: 0.4em;
@@ -8287,28 +8371,10 @@ const css = `
     page-break-inside: avoid;
   }
 
-  @page {
-    margin-top: 2cm;
-    margin-bottom: 2cm;
-    
-    @top-left {
-      content: element(header);
-    }
-    
-    @bottom-center {
-      content: element(footer);
-    }
-  }
-
-  /* Section marker for dynamic footers */
+  /* Section tracking for multi-section documents */
   .section-marker {
-    position: running(section-title);
-    font-weight: 600;
-    color: #2B4B8C;
-  }
-
-  h1, h2 {
-    position: running(section-title);
+    display: none;
+    visibility: hidden;
   }
 `;
 
@@ -8402,6 +8468,96 @@ function getCurrentSection(markdown, currentPosition = 0) {
   }
   
   return currentSection || 'Introduction';
+}
+
+function extractSectionTitles(markdown) {
+  const sections = [];
+  
+  // For combined documents, split by sections and extract titles
+  if (markdown.includes('---')) {
+    // Split by frontmatter blocks
+    const parts = markdown.split(/^---\s*$/m);
+    
+    for (let i = 0; i < parts.length; i++) {
+      const part = parts[i].trim();
+      if (!part) continue;
+      
+      // Look for frontmatter pattern: content between --- blocks
+      const frontmatterMatch = part.match(/^([\s\S]*?)\n*$/);
+      
+      if (frontmatterMatch) {
+        const content = frontmatterMatch[1];
+        
+        // Try to extract title from frontmatter
+        const titleMatch = content.match(/^title:\s*(.+)$/m);
+        if (titleMatch) {
+          sections.push(titleMatch[1].replace(/['"]/g, '').trim());
+        } else {
+          // Fallback: look for first heading in the content
+          const headingMatch = content.match(/^#\s+(.+)$/m);
+          if (headingMatch) {
+            sections.push(headingMatch[1].trim());
+          }
+        }
+      }
+    }
+  }
+  
+  // If no sections found via frontmatter, extract from headings
+  if (sections.length === 0) {
+    const headingMatches = markdown.match(/^#{1,2}\s+(.+)$/gm);
+    if (headingMatches) {
+      headingMatches.forEach(match => {
+        const title = match.replace(/^#{1,2}\s+/, '').trim();
+        sections.push(title);
+      });
+    }
+  }
+  
+  console.log(`📋 Extracted ${sections.length} section titles:`, sections.slice(0, 5).map(s => `"${s}"`).join(', ') + (sections.length > 5 ? '...' : ''));
+  return sections;
+}
+
+function addSectionMarkers(html, sections, isMultiSection) {
+  if (!isMultiSection || sections.length === 0) return html;
+  
+  let currentSectionIndex = 0;
+  
+  // Add section markers and JavaScript to track sections
+  const sectionScript = `
+    <script>
+      window.currentSections = ${JSON.stringify(sections)};
+      window.getCurrentSection = function() {
+        const headings = document.querySelectorAll('h1, h2');
+        let currentSection = window.currentSections[0] || 'Introduction';
+        
+        // Find which section we're currently in based on visible headings
+        for (let i = 0; i < headings.length; i++) {
+          const heading = headings[i];
+          const rect = heading.getBoundingClientRect();
+          const headingText = heading.textContent.trim();
+          
+          // Find matching section
+          const sectionIndex = window.currentSections.findIndex(section => 
+            section.toLowerCase().includes(headingText.toLowerCase()) ||
+            headingText.toLowerCase().includes(section.toLowerCase())
+          );
+          
+          if (sectionIndex !== -1) {
+            currentSection = window.currentSections[sectionIndex];
+          }
+        }
+        
+        return currentSection;
+      };
+      
+      // Make section available globally for footer template
+      window.currentSection = window.getCurrentSection();
+    </script>
+  `;
+  
+  // Add script before closing body tag
+  return html.replace('</body>', sectionScript + '</body>');
 }
 
 // Enhanced image processing function for PDF generator
@@ -8654,7 +8810,6 @@ async function generatePDFs() {
         console.log(`Output file: ${outputFile}`);
         
         try {
-
           // Apply compact formatting if needed
           markdown = applyCompactFormatting(markdown);
 
@@ -8664,7 +8819,26 @@ async function generatePDFs() {
           // Process image references with fallback
           const sourceDir = tool.sourceDir[lang] || tool.sourceDir['en'] || '';
           markdown = processImageReferences(markdown, path.dirname(sourceDir));
-                    
+          
+          // Determine if this is a multi-section document
+          const isMultiSection = (tool.sections && Array.isArray(tool.sections)) || 
+                                (tool.combinedFiles && Array.isArray(tool.combinedFiles));
+          
+          // Extract section titles for multi-section documents
+          const sectionTitles = isMultiSection ? extractSectionTitles(markdown) : [];
+
+          if (isMultiSection) {
+            console.log(`📚 Multi-section document detected`);
+            console.log(`📋 Sections found: ${sectionTitles.length}`);
+            if (sectionTitles.length > 0) {
+              console.log(`📝 First section will be: "${sectionTitles[0]}"`);
+            } else {
+              console.log(`⚠️ No sections extracted - will show static text`);
+            }
+          } else {
+            console.log(`📄 Single document - using simple footer`);
+          }
+          
           // Convert markdown with emoji replacement
           const renderer = new marked.Renderer();
           
@@ -8689,7 +8863,10 @@ async function generatePDFs() {
           };
           
           // Convert markdown to HTML with the custom renderer
-          const html = marked(markdown, { renderer });
+          let html = marked(markdown, { renderer });
+          
+          // Add section markers for multi-section documents
+          html = addSectionMarkers(html, sectionTitles, isMultiSection);
           
           // Create a full HTML document
           let fullHtml = `
@@ -8729,17 +8906,22 @@ async function generatePDFs() {
           // Generate PDF
           const logoDataUri = getLogoDataUri();
 
-          // Determine if this is a multi-section document
-          const isMultiSection = (tool.sections && Array.isArray(tool.sections)) || 
-                                (tool.combinedFiles && Array.isArray(tool.combinedFiles));
+          // Pre-build section list for footer
+          let sectionListJS = '';
+          if (isMultiSection && sectionTitles.length > 0) {
+            sectionListJS = `
+              const sections = ${JSON.stringify(sectionTitles)};
+              const currentSection = sections[0] || 'Current Section';
+            `;
+          }
 
           await page.pdf({
             path: outputFile,
             format: 'A4',
             margin: {
-              top: '2cm',      // Increased for header
+              top: '2cm',
               right: '1.5cm',
-              bottom: '2cm',   // Increased for footer
+              bottom: '2cm',
               left: '1.5cm'
             },
             printBackground: true,
@@ -8757,7 +8939,8 @@ async function generatePDFs() {
             `,
             footerTemplate: isMultiSection ? `
               <div style="width: 100%; font-size: 7px; padding: 0 1.5cm; color: #777; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee;">
-                <span style="font-style: italic;">Current Section</span>
+                <script>${sectionListJS}</script>
+                <span style="font-style: italic;" id="section-title">${sectionTitles.length > 0 ? sectionTitles[0] : 'Current Section'}</span>
                 <span>Page <span class="pageNumber"></span> of <span class="totalPages"></span></span>
               </div>
             ` : `
