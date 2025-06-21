@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="/manifest.json">
+    <!-- iOS meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="GGF">
+
+    <!-- Theme color for Android -->
+    <meta name="theme-color" content="#2B4B8C">
+
+		<meta charset="utf-8" />
+    <link rel="icon" href="../icons/favicon.png" type="image/png">
+    <link rel="icon" href="../icons/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../icons/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../icons/apple-touch-icon-167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon-180.png">
+    <link rel="mask-icon" href="../icons/maskable_icon192.png" color="#2B4B8C">
+    <meta name="msapplication-TileImage" content="../icons/ms-tile-144.png">
+    <meta name="msapplication-TileColor" content="#2B4B8C">
+		<meta name="viewport" content="width=device-width" />
+		<!-- Temporary Tailwind CDN (until we fix the local Tailwind setup) -->
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+		<!-- Custom inline styles for buttons and other elements -->
+		<style>
+			.btn-primary {
+				background-color: #2563eb;
+				color: white;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 500;
+				transition-property: all;
+				transition-duration: 200ms;
+			}
+			.btn-primary:hover {
+				background-color: #1d4ed8;
+				transform: translateY(-2px);
+			}
+		</style>
+		
+		<link href="../_app/immutable/assets/0.CSBs8T0g.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/107.B8PCaz9u.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.BAtsEowI.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/mwlQWWea.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/C6ydbY16.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BfQ96OKu.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Dpyf6Ojq.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CYgJF_JY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/B8b-IeSS.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.1alCOpK0.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/C1FmrZbK.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BkgK5-VD.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/9ZXl41BS.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/D3Qdtv9p.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/C5nimzwO.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BYpDMr5J.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DVk1rPet.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BYzgNHyP.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BC0MeD4I.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.FwmA7B2H.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DaNf9ShL.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CCs625M-.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BhIJvgy9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/g9vb2IkB.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DxxANScl.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BzpfBKZl.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DN4ZhoKx.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BRzKQYUk.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CFbUBQNY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Bfc47y5P.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/107.dZpXCoeZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BheWnx7M.js"><!--[--><meta name="description" content="Help build and improve our global governance platform"><!--]--><title>Website Development - Global Governance Framework</title>
+    <script>
+      // Unregister any existing service workers
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+      // Handle hash-based routing and redirect paths
+      (function() {
+        // First check if we have a hash route
+        const { hash } = window.location;
+        if (hash && hash.length > 1) {
+          const path = hash.slice(1);
+          history.replaceState(null, null, path);
+        } 
+        // Then check if we have a saved redirect path
+        else if (sessionStorage.getItem('redirectPath')) {
+          const redirectPath = sessionStorage.getItem('redirectPath');
+          sessionStorage.removeItem('redirectPath');
+          history.replaceState(null, null, redirectPath);
+        }
+      })();
+    </script>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><div class="flex flex-col min-h-screen"><header class="svelte-7zs8i7"><div class="container svelte-7zs8i7"><div class="header-content svelte-7zs8i7"><div class="logo-section svelte-7zs8i7"><a href="../" class="logo-link svelte-7zs8i7"><img src="../logo.svg" alt="Global Governance Frameworks" class="logo-img svelte-7zs8i7"> <span class="site-title svelte-7zs8i7">Global Governance Frameworks</span></a> <button type="button" class="menu-button svelte-7zs8i7" aria-label="Open menu"><!--[!--><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg><!--]--></button></div> <nav class="nav-container  svelte-7zs8i7"><ul class="nav-list svelte-7zs8i7"><li class="nav-item svelte-7zs8i7"><a href="../" class="nav-link  svelte-7zs8i7" data-sveltekit-preload-data="hover">Home</a></li> <li class="nav-item dropdown svelte-7zs8i7"><div style="display: flex; justify-content: space-between; align-items: center;"><a href="../frameworks" class="nav-link  svelte-7zs8i7" data-sveltekit-preload-data="hover">Frameworks <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block svelte-7zs8i7" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></a> <button type="button" class="dropdown-toggle md:hidden svelte-7zs8i7" aria-label="Open frameworks menu" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></button></div> <div class="dropdown-menu svelte-7zs8i7" role="menu"><a href="../frameworks/global-citizenship" class=" highlighted svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Global Citizenship</a> <a href="../frameworks" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Overview</a> <a href="../frameworks/docs" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Documentation</a> <a href="../frameworks/docs/principles" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Principles</a> <a href="../frameworks/docs/implementation" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Implementation</a> <a href="../frameworks/hubs" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Hubs</a> <a href="../frameworks/tools" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Tools</a> <a href="../frameworks/visuals" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Visuals</a> <a href="../downloads" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Downloads</a> <a href="../frameworks/docs/case-studies" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Case Studies</a> <a href="../frameworks/ai-futures" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">AI Futures</a> <a href="../frameworks/docs/resources" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Resources</a> <a href="../frameworks/docs/glossary" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Glossary</a></div></li> <li class="nav-item svelte-7zs8i7"><a href="../blog" class="nav-link  svelte-7zs8i7" data-sveltekit-preload-data="hover">Blog</a></li> <li class="nav-item dropdown svelte-7zs8i7"><div style="display: flex; justify-content: space-between; align-items: center;"><a href="../get-involved" class="nav-link  svelte-7zs8i7" data-sveltekit-preload-data="hover">Get Involved <svg xmlns="http://www.w3.org/2000/svg" class="dropdown-icon hidden md:inline-block svelte-7zs8i7" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></a> <button type="button" class="dropdown-toggle md:hidden svelte-7zs8i7" aria-label="Open get involved menu" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></button></div> <div class="dropdown-menu svelte-7zs8i7" role="menu"><a href="../get-involved/frameworks" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Contribute to Frameworks</a> <a href="../get-involved/translations" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Contribute Translations</a> <a href="../get-involved/website" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Contribute to Website</a> <a href="../get-involved/outreach" class="svelte-7zs8i7" data-sveltekit-preload-data="hover" role="menuitem">Community &amp; Outreach</a></div></li> <li class="nav-item svelte-7zs8i7"><a href="../about" class="nav-link  svelte-7zs8i7" data-sveltekit-preload-data="hover">About</a></li> <li class="nav-item svelte-7zs8i7"><a href="../contact" class="nav-link  svelte-7zs8i7" data-sveltekit-preload-data="hover">Contact</a></li></ul> <div><select aria-label="Select language" class="language-select svelte-7zs8i7"><!--[--><option value="en">English</option><option value="sv">Svenska</option><!--]--></select></div></nav></div></div></header><!----> <main class="flex-grow container mx-auto px-4 py-8"><!----><!----><div class="page-container svelte-b2onue"><div class="content svelte-b2onue"><div class="hero-section svelte-b2onue"><div class="hero-content svelte-b2onue"><h1 class="svelte-b2onue">Website Development</h1> <p class="hero-subtitle svelte-b2onue">Help build and improve our global governance platform</p> <p class="hero-intro svelte-b2onue">Join our development community and contribute to building tools that enable governance system interoperability worldwide.</p></div></div> <div class="action-cards svelte-b2onue"><div class="action-card downloads-card svelte-b2onue"><div class="card-icon svelte-b2onue">💻</div> <div class="card-content svelte-b2onue"><h3 class="svelte-b2onue">Download Website Contributor Guide</h3> <p class="svelte-b2onue">Get the complete guide for developers. Includes setup instructions, coding standards, and workflows for integrating new frameworks into our SvelteKit site.</p> <div class="card-actions svelte-b2onue"><button class="primary-btn svelte-b2onue">Download Markdown Version <span class="download-icon svelte-b2onue">↓</span></button> <button class="secondary-btn svelte-b2onue">Download PDF Version <span class="download-icon svelte-b2onue">↓</span></button></div></div></div> <div class="action-card community-card svelte-b2onue"><div class="card-icon svelte-b2onue">👥</div> <div class="card-content svelte-b2onue"><h3 class="svelte-b2onue">Join Developer Community</h3> <p class="svelte-b2onue">Connect with other developers, get code reviews, and collaborate on features in real-time.</p> <div class="card-actions svelte-b2onue"><button class="primary-btn discord-btn svelte-b2onue">Join Our Developer Community <span class="external-icon svelte-b2onue">↗</span></button></div></div></div> <div class="action-card github-card svelte-b2onue"><div class="card-icon svelte-b2onue">🔧</div> <div class="card-content svelte-b2onue"><h3 class="svelte-b2onue">View GitHub Repository</h3> <p class="svelte-b2onue">Access the source code, submit issues, and contribute directly to the project.</p> <div class="card-actions svelte-b2onue"><button class="primary-btn github-btn svelte-b2onue">View on GitHub <span class="external-icon svelte-b2onue">↗</span></button></div></div></div></div> <div class="guide-content svelte-b2onue"><!--[--><!----><h1>Contributing to the Global Governance Frameworks Website</h1> <p>Welcome to the technical contribution guide for the Global Governance Frameworks website! This guide will help you understand our codebase, development workflow, and how to make meaningful contributions to the project.</p> <h2>🎯 Project Overview</h2> <p>The Global Governance Framework website is built with modern web technologies and serves as a platform for sharing governance frameworks, implementation tools, and fostering global collaboration. Our mission is to create tools, patterns, and frameworks that enable different governance systems to interoperate and evolve together.</p> <h3>Core Technologies</h3> <ul><li><strong>Frontend</strong>: SvelteKit (latest)</li> <li><strong>Styling</strong>: Tailwind CSS with custom design system</li> <li><strong>Internationalization</strong>: Custom i18n implementation supporting English and Swedish</li> <li><strong>Form Handling</strong>: Formspree integration</li> <li><strong>Content Management</strong>: Markdown-based content with dynamic routing</li> <li><strong>Build Tool</strong>: Vite</li> <li><strong>Package Manager</strong>: npm</li></ul> <h2>🚀 Getting Started</h2> <h3>Prerequisites</h3> <ul><li>Node.js (v16 or higher)</li> <li>npm (comes with Node.js)</li> <li>Git</li> <li>A code editor (VS Code recommended)</li></ul> <h3>Quick Setup</h3> <ol><li><p><strong>Clone the repository:</strong></p> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">git</span> clone git@github.com:GlobalGovernanceFramework/governance-framework-site.git
+<span class="token builtin class-name">cd</span> governance-framework-site</code><!----></pre></li> <li><p><strong>Install dependencies:</strong></p> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span></code><!----></pre></li> <li><p><strong>Start the development server:</strong></p> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">npm</span> run dev -- <span class="token parameter variable">--open</span></code><!----></pre></li> <li><p><strong>View the site:</strong> Open your browser to <code>http://localhost:5173</code></p></li></ol> <h3>⚠️ Important: Tailwind CSS Configuration Issues</h3> <p><strong>Current Status</strong>: Our Tailwind CSS setup appears to have configuration conflicts and may not be working optimally. We have two conflicting config files (<code>tailwind.config.js</code> and <code>tailwind.config.ts</code>) and the codebase shows heavy reliance on inline styles instead of Tailwind utilities.</p> <p><strong>Evidence of Issues</strong>:</p> <ul><li>Duplicate Tailwind config files with different approaches</li> <li>Heavy use of inline <code>style</code> attributes instead of Tailwind classes</li> <li>Inconsistent color system implementation</li> <li>Missing proper Tailwind v4 configuration</li></ul> <p><strong>If You Want to Help Fix This</strong>:
+This would be a <strong>high-impact contribution</strong>! The ideal solution would be:</p> <ol><li><strong>Consolidate to a single config file</strong> (preferably TypeScript)</li> <li><strong>Implement Tailwind v4 properly</strong> with our design system</li> <li><strong>Convert inline styles to Tailwind utilities</strong> throughout the codebase</li> <li><strong>Set up proper CSS custom properties</strong> for our color palette</li> <li><strong>Ensure all Tailwind plugins work correctly</strong></li></ol> <p><strong>Current Workaround</strong>:
+If you encounter Tailwind issues during development:</p> <pre class="language-bash"><!----><code class="language-bash"><span class="token comment"># Try this fix first</span>
+<span class="token function">npm</span> uninstall tailwindcss postcss autoprefixer @tailwindcss/typography @tailwindcss/forms
+<span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-D</span> tailwindcss postcss autoprefixer @tailwindcss/typography @tailwindcss/forms
+npx tailwindcss init <span class="token parameter variable">-p</span></code><!----></pre> <p><strong>For New Contributors</strong>:</p> <ul><li>You can still contribute effectively using inline styles (as seen in existing code)</li> <li>Follow the color palette defined in the configs</li> <li>We’ll migrate to proper Tailwind utilities once the configuration is fixed</li></ul> <p><strong>Want to Tackle This Challenge?</strong> If you have experience with Tailwind CSS v4 configuration and would like to help modernize our styling approach, please:</p> <ul><li>Join our <strong>#dev-design</strong> channel on <a href="https://discord.gg/Zx4hMJf4JU" rel="nofollow">Discord</a> (under 🤝 WORKSPACES category) to discuss the approach</li> <li>Open a GitHub issue to coordinate with other contributors</li> <li>Share your ideas and get feedback before starting</li></ul> <p>This would significantly improve our development experience!</p> <h2>📁 Project Structure</h2> <p>Understanding our project structure is crucial for effective contribution:</p> <pre class="language-undefined"><!----><code class="language-undefined">src/
+├── lib/
+│   ├── components/          # Reusable Svelte components
+│   │   ├── Header.svelte   # Main navigation
+│   │   ├── Footer.svelte   # Site footer
+│   │   └── ...             # Other UI components
+│   ├── content/            # Markdown content files
+│   │   ├── frameworks/     # Framework documentation
+│   │   ├── ggf-os/        # GGF Operating System docs
+│   │   └── translations/   # Translation guides
+│   ├── i18n/              # Internationalization
+│   │   ├── en/            # English translations
+│   │   ├── sv/            # Swedish translations
+│   │   └── index.js       # i18n system core
+│   ├── posts/             # Blog posts
+│   └── utils/             # Utility functions
+├── routes/                # SvelteKit pages
+│   ├── frameworks/        # Framework pages
+│   ├── blog/             # Blog functionality
+│   └── ...               # Other pages
+└── app.html              # HTML template</code><!----></pre> <h3>Key Directories Explained</h3> <ul><li><strong><code>src/lib/components/</code></strong>: Reusable UI components used throughout the site</li> <li><strong><code>src/lib/content/</code></strong>: All markdown content, organized by type and language</li> <li><strong><code>src/lib/i18n/</code></strong>: Translation files and internationalization logic</li> <li><strong><code>src/routes/</code></strong>: SvelteKit’s file-based routing system</li> <li><strong><code>static/</code></strong>: Static assets like images, PDFs, and downloads</li></ul> <h2>🛠 Development Workflow</h2> <h3>1. Setting Up Your Development Environment</h3> <p>Create a new branch for your feature:</p> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">git</span> checkout <span class="token parameter variable">-b</span> feature/your-feature-name</code><!----></pre> <h3>2. Making Changes</h3> <h4>Adding New Pages</h4> <p>To add a new page, create a <code>+page.svelte</code> file in the appropriate <code>src/routes/</code> directory:</p> <pre class="language-svelte"><!----><code class="language-svelte"><span class="token comment">&lt;!-- src/routes/your-new-page/+page.svelte --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> t <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'$lib/i18n'</span><span class="token punctuation">;</span>
+  <span class="token comment">// Your page logic</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Your Page Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container mx-auto px-4 py-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-3xl font-bold mb-6<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'yourPage.title'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!-- Your content --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code><!----></pre> <h4>Adding Components</h4> <p>Create reusable components in <code>src/lib/components/</code>:</p> <pre class="language-svelte"><!----><code class="language-svelte"><span class="token comment">&lt;!-- src/lib/components/YourComponent.svelte --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">let</span> title <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token keyword">export</span> <span class="token keyword">let</span> description <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>component-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-xl font-semibold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token language-javascript"><span class="token punctuation">&#123;</span>title<span class="token punctuation">&#125;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-gray-600<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token language-javascript"><span class="token punctuation">&#123;</span>description<span class="token punctuation">&#125;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">.component-container</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">/* Your styles using Tailwind classes */</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 0.5rem<span class="token punctuation">;</span>
+    <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 4px 6px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 1.5rem<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code><!----></pre> <h4>Working with Markdown Content</h4> <p>Add new framework content in <code>src/lib/content/frameworks/</code>:</p> <pre class="language-markdown"><!----><code class="language-markdown"><span class="token comment">&lt;!-- src/lib/content/frameworks/en/your-framework.md --></span>
+<span class="token title important"><span class="token punctuation">#</span> Your Framework Title</span>
+
+<span class="token title important"><span class="token punctuation">##</span> Introduction</span>
+
+Your framework introduction...
+
+<span class="token title important"><span class="token punctuation">##</span> Core Principles</span>
+
+<span class="token list punctuation">1.</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">Principle One</span><span class="token punctuation">**</span></span>: Description
+<span class="token list punctuation">2.</span> <span class="token bold"><span class="token punctuation">**</span><span class="token content">Principle Two</span><span class="token punctuation">**</span></span>: Description
+
+<span class="token title important"><span class="token punctuation">##</span> Implementation</span>
+
+Implementation guidelines...</code><!----></pre> <h3>3. Internationalization</h3> <h4>Adding Translations</h4> <p>Add translation keys to the appropriate JSON files:</p> <pre class="language-json"><!----><code class="language-json"><span class="token comment">// src/lib/i18n/en/common.json</span>
+<span class="token punctuation">&#123;</span>
+  <span class="token property">"header"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"yourNewItem"</span><span class="token operator">:</span> <span class="token string">"Your New Item"</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <pre class="language-json"><!----><code class="language-json"><span class="token comment">// src/lib/i18n/sv/common.json</span>
+<span class="token punctuation">&#123;</span>
+  <span class="token property">"header"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">"yourNewItem"</span><span class="token operator">:</span> <span class="token string">"Ditt nya objekt"</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <h4>Using Translations in Components</h4> <pre class="language-svelte"><!----><code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> t <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'$lib/i18n'</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'common.header.yourNewItem'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span></code><!----></pre> <h3>4. Styling Guidelines</h3> <p><strong>⚠️ Current State</strong>: Our styling system has some configuration issues that present both challenges and opportunities:</p> <h4>Current Approach</h4> <p>Due to Tailwind configuration conflicts, much of our current codebase uses inline styles. While not ideal, this approach works and maintains consistency.</p> <h4>Color Palette (Use these values in styles)</h4> <pre class="language-css"><!----><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">--primary-blue</span><span class="token punctuation">:</span> #2B4B8C<span class="token punctuation">;</span>
+  <span class="token property">--secondary-purple</span><span class="token punctuation">:</span> #6B5CA5<span class="token punctuation">;</span>
+  <span class="token property">--earthy-green</span><span class="token punctuation">:</span> #2D5F2D<span class="token punctuation">;</span>
+  <span class="token property">--warm-gold</span><span class="token punctuation">:</span> #DAA520<span class="token punctuation">;</span>
+  <span class="token property">--dark-gold</span><span class="token punctuation">:</span> #B8860B<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <h4>Current Component Styling Pattern</h4> <pre class="language-svelte"><!----><code class="language-svelte"><span class="token comment">&lt;!-- Current approach used throughout the codebase --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>background-color: #2B4B8C; color: white; padding: 1rem; border-radius: 0.5rem;<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  Content
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Goal: Convert to Tailwind utilities (help needed!) --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>background-color: #1e293b; color: white; padding: 1rem; border-radius: 0.5rem;<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  Content
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code><!----></pre> <h4>Styling Guidelines for Contributors</h4> <p><strong>For Quick Contributions</strong>:</p> <ul><li>Follow existing inline style patterns</li> <li>Use our color palette consistently</li> <li>Maintain responsive design with CSS media queries</li></ul> <p><strong>For Tailwind Enthusiasts</strong>:</p> <ul><li>Help us fix the Tailwind configuration (high-impact contribution!)</li> <li>Convert inline styles to proper Tailwind utilities</li> <li>Implement our design system as Tailwind custom classes</li></ul> <h4>Responsive Design Pattern</h4> <pre class="language-svelte"><!----><code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>
+  display: grid; 
+  grid-template-columns: repeat(1, minmax(0, 1fr)); 
+  gap: 2rem;
+<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!-- Mobile: single column --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  <span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 768px<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">div</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>2<span class="token punctuation">,</span> <span class="token function">minmax</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 1fr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code><!----></pre> <h3>5. Testing Your Changes</h3> <h4>Local Testing</h4> <pre class="language-bash"><!----><code class="language-bash"><span class="token comment"># Run development server</span>
+<span class="token function">npm</span> run dev
+
+<span class="token comment"># Build for production (test)</span>
+<span class="token function">npm</span> run build
+
+<span class="token comment"># Preview production build</span>
+<span class="token function">npm</span> run preview</code><!----></pre> <h4>Content Validation</h4> <ul><li>Ensure all links work correctly</li> <li>Verify translations are complete</li> <li>Test on multiple screen sizes</li> <li>Check accessibility with screen readers</li></ul> <h2>🎨 Design System</h2> <h3>Typography Scale</h3> <ul><li><strong>Headings</strong>: Use semantic heading tags with appropriate styling</li> <li><strong>Body</strong>: Use readable font sizes for main content</li> <li><strong>Small text</strong>: Use smaller sizes for captions and metadata</li></ul> <h3>Spacing Guidelines</h3> <ul><li><strong>Sections</strong>: Use consistent vertical spacing between sections</li> <li><strong>Components</strong>: Use consistent internal padding</li> <li><strong>Elements</strong>: Use consistent vertical rhythm</li></ul> <h3>Layout Patterns</h3> <ul><li><strong>Container</strong>: Maximum width with auto margins and padding</li> <li><strong>Grid</strong>: Use CSS Grid or flexbox for layouts</li> <li><strong>Cards</strong>: Consistent shadow and border-radius patterns</li></ul> <h2>📝 Content Guidelines</h2> <h3>Markdown Best Practices</h3> <ul><li>Use semantic heading hierarchy (H1 → H2 → H3)</li> <li>Include clear section breaks</li> <li>Add descriptive alt text for images</li> <li>Use consistent formatting for code blocks</li></ul> <h3>Framework Documentation Structure</h3> <pre class="language-markdown"><!----><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> Framework Title</span>
+
+<span class="token title important"><span class="token punctuation">##</span> Executive Summary</span>
+Brief overview and key benefits
+
+<span class="token title important"><span class="token punctuation">##</span> Core Principles</span>
+Fundamental principles with explanations
+
+<span class="token title important"><span class="token punctuation">##</span> Implementation Guidelines</span>
+Step-by-step implementation process
+
+<span class="token title important"><span class="token punctuation">##</span> Tools and Resources</span>
+Links to relevant tools and materials
+
+<span class="token title important"><span class="token punctuation">##</span> Case Studies</span>
+Real-world examples and success stories
+
+<span class="token title important"><span class="token punctuation">##</span> Appendices</span>
+Additional technical details and references</code><!----></pre> <h2>🔧 Advanced Development</h2> <h3>Adding New Framework Visualizations</h3> <ol><li>Create SVG assets in <code>static/frameworks/your-framework/</code></li> <li>Add interactive components in <code>src/routes/frameworks/visuals/your-framework/</code></li> <li>Use D3.js or other visualization libraries as needed</li></ol> <h3>Custom Components with Interactivity</h3> <pre class="language-svelte"><!----><code class="language-svelte"><span class="token comment">&lt;!-- Example interactive component --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> onMount <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'svelte'</span><span class="token punctuation">;</span>
+  <span class="token keyword">import</span> <span class="token punctuation">&#123;</span> browser <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'$app/environment'</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">let</span> data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> loading <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+  <span class="token function">onMount</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>browser<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">// Load data and initialize component</span>
+      loading <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token language-javascript"><span class="token punctuation">&#123;</span>#<span class="token keyword">if</span> loading<span class="token punctuation">&#125;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loading-spinner<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Loading...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">:</span><span class="token keyword">else</span><span class="token punctuation">&#125;</span></span>
+  <span class="token comment">&lt;!-- Your interactive content --></span>
+<span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="token operator">/</span><span class="token keyword">if</span><span class="token punctuation">&#125;</span></span></code><!----></pre> <h3>Working with Static Assets</h3> <ul><li><strong>Images</strong>: Place in <code>static/images/</code></li> <li><strong>Downloads</strong>: Place in <code>static/downloads/</code></li> <li><strong>Framework tools</strong>: Place in <code>static/frameworks/tools/</code></li></ul> <h2>🤝 Contribution Process</h2> <h3>1. Planning Your Contribution</h3> <p>Before starting:</p> <ul><li>Check existing issues and discussions</li> <li>Propose new features in GitHub issues</li> <li>Coordinate with maintainers for large changes</li></ul> <h3>2. Development Checklist</h3> <ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" disabled> Code follows project conventions</li> <li class="task-list-item"><input type="checkbox" disabled> All translations are complete</li> <li class="task-list-item"><input type="checkbox" disabled> Responsive design works on all devices</li> <li class="task-list-item"><input type="checkbox" disabled> Accessibility standards are met</li> <li class="task-list-item"><input type="checkbox" disabled> Content is well-structured and clear</li> <li class="task-list-item"><input type="checkbox" disabled> Links and navigation work correctly</li> <li class="task-list-item"><input type="checkbox" disabled> No console errors or warnings</li></ul> <h3>3. Submitting Your Contribution</h3> <pre class="language-bash"><!----><code class="language-bash"><span class="token comment"># Ensure your branch is up to date</span>
+<span class="token function">git</span> checkout main
+<span class="token function">git</span> pull origin main
+<span class="token function">git</span> checkout your-branch
+<span class="token function">git</span> merge main
+
+<span class="token comment"># Push your changes</span>
+<span class="token function">git</span> push origin your-branch
+
+<span class="token comment"># Create a pull request on GitHub</span></code><!----></pre> <h3>Pull Request Guidelines</h3> <ul><li><strong>Title</strong>: Clear, descriptive title</li> <li><strong>Description</strong>: Explain what changes were made and why</li> <li><strong>Screenshots</strong>: Include before/after screenshots for UI changes</li> <li><strong>Testing</strong>: Describe how you tested your changes</li></ul> <h2>📚 Resources</h2> <h3>Documentation</h3> <ul><li><a href="https://kit.svelte.dev/" rel="nofollow">SvelteKit Documentation</a></li> <li><a href="https://tailwindcss.com/" rel="nofollow">Tailwind CSS Documentation</a></li> <li><a href="STYLE_GUIDE.md">Our Style Guide</a></li></ul> <h3>Development Tools</h3> <ul><li><a href="https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode" rel="nofollow">Svelte Extension for VS Code</a></li> <li><a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss" rel="nofollow">Tailwind CSS IntelliSense</a></li></ul> <h3>Community</h3> <ul><li><a href="https://github.com/GlobalGovernanceFrameworks/website/discussions" rel="nofollow">GitHub Discussions</a></li> <li><a href="https://discord.gg/Zx4hMJf4JU" rel="nofollow">Discord Community</a> - Join <strong>#dev-design</strong> for technical discussions</li></ul> <h2>🔐 Security and Best Practices</h2> <h3>Security Guidelines</h3> <ul><li>Never commit sensitive data (API keys, passwords)</li> <li>Validate all user inputs</li> <li>Follow OWASP security guidelines</li> <li>Use environment variables for configuration</li></ul> <h3>Performance Best Practices</h3> <ul><li>Optimize images before adding them</li> <li>Use lazy loading for heavy components</li> <li>Minimize bundle size with tree-shaking</li> <li>Follow SvelteKit’s performance recommendations</li></ul> <h2>🌱 What to Contribute</h2> <h3>High-Impact Areas</h3> <ol><li><p><strong>🎨 Tailwind CSS Configuration Fix</strong> ⭐ <strong>MOST NEEDED</strong> ⭐</p> <ul><li>Resolve configuration conflicts between <code>.js</code> and <code>.ts</code> files</li> <li>Implement Tailwind v4 properly with our design system</li> <li>Convert inline styles to Tailwind utilities throughout codebase</li> <li>Set up proper CSS custom properties integration</li></ul></li> <li><p><strong>Framework Documentation</strong>: Help expand and improve governance framework content</p></li> <li><p><strong>Internationalization</strong>: Add support for new languages</p></li> <li><p><strong>Interactive Tools</strong>: Create visualization and simulation tools</p></li> <li><p><strong>Accessibility</strong>: Improve site accessibility and usability</p></li> <li><p><strong>Performance</strong>: Optimize loading times and user experience</p></li></ol> <h3>Good First Issues</h3> <ul><li><strong>Fix Tailwind CSS configuration</strong> (high impact for experienced developers)</li> <li>Convert inline styles to Tailwind utilities</li> <li>Fix broken links or typos</li> <li>Add missing translations</li> <li>Improve mobile responsiveness</li> <li>Add alt text to images</li> <li>Update outdated dependencies</li></ul> <h3>Ongoing Needs</h3> <ul><li><strong>Tailwind CSS modernization</strong> (urgent technical debt)</li> <li>Content review and editing</li> <li>New framework implementations</li> <li>Community tools and features</li> <li>Documentation improvements</li> <li>Testing and quality assurance</li></ul> <h2>💡 Getting Help</h2> <p>If you need assistance:</p> <ol><li><strong>Check Documentation</strong>: Review this guide and linked resources</li> <li><strong>Search Issues</strong>: Look for similar questions or problems</li> <li><strong>Join Our Discord</strong>: Connect with the developer community</li> <li><strong>Create GitHub Issues</strong>: For bugs, feature requests, or questions</li> <li><strong>Pair Programming</strong>: Reach out for collaborative coding sessions</li></ol> <h3>👥 Developer Community</h3> <p><strong>Discord Server:</strong> Join our development community at <a href="https://discord.gg/Zx4hMJf4JU" rel="nofollow">https://discord.gg/Zx4hMJf4JU</a></p> <ul><li><strong>#dev-design channel</strong> (under 🤝 WORKSPACES category) for technical discussions, code reviews, and architecture decisions</li> <li>Real-time chat with other developers and designers</li> <li>Voice channels for pair programming sessions and technical meetings</li> <li>Quick help for setup issues and development questions</li></ul> <p><strong>GitHub Discussions:</strong> Use repository discussions for:</p> <ul><li>Technical questions and solutions</li> <li>Feature proposals and architectural discussions</li> <li>Pull request coordination</li> <li>Documentation feedback</li></ul> <h3>When to Use Which Channel</h3> <ul><li><strong>Discord #dev-design</strong>: Quick questions, real-time collaboration, brainstorming</li> <li><strong>GitHub Issues</strong>: Bug reports, feature requests, formal proposals</li> <li><strong>GitHub Discussions</strong>: In-depth technical discussions, documentation questions</li> <li><strong>Pull Requests</strong>: Code reviews, implementation discussions</li></ul> <h2>🎉 Recognition</h2> <p>We value all contributions to the Global Governance Framework project. Contributors will be:</p> <ul><li>Listed in our contributors section</li> <li>Acknowledged in release notes</li> <li>Invited to contributor events and discussions</li> <li>Given priority support for their own projects</li></ul> <p>Thank you for contributing to a more connected and collaborative world through global governance frameworks!</p> <hr> <p><strong>Need immediate help?</strong> Join our <a href="https://discord.gg/Zx4hMJf4JU" rel="nofollow">Discord community</a> in the <strong>#dev-design</strong> channel or create an issue on GitHub.</p><!----><!--]--></div> <div class="bottom-cta svelte-b2onue"><div class="cta-content svelte-b2onue"><h2 class="svelte-b2onue">Ready to Start Coding?</h2> <div class="cta-actions svelte-b2onue"><button class="primary-btn large svelte-b2onue">View on GitHub <span class="external-icon svelte-b2onue">↗</span></button> <button class="secondary-btn large discord-btn svelte-b2onue">Join Our Developer Community <span class="external-icon svelte-b2onue">↗</span></button></div></div></div></div></div><!----><!----></main> <footer class="svelte-15gxbhp"><div class="container svelte-15gxbhp"><div class="grid svelte-15gxbhp"><div><h3 class="svelte-15gxbhp">Global Governance Frameworks</h3> <p class="svelte-15gxbhp">Developing interoperable systems and operating models for global governance that respect local autonomy.</p></div> <div><h3 class="svelte-15gxbhp">Navigation</h3> <ul class="svelte-15gxbhp"><li class="svelte-15gxbhp"><a href="../" class="svelte-15gxbhp">Home</a></li> <li class="svelte-15gxbhp"><a href="../about" class="svelte-15gxbhp">About</a></li> <li class="svelte-15gxbhp"><a href="../frameworks" class="svelte-15gxbhp">Framework</a></li> <li class="svelte-15gxbhp"><a href="../frameworks/docs/glossary" class="svelte-15gxbhp">Glossary</a></li> <li class="svelte-15gxbhp"><a href="../downloads" class="svelte-15gxbhp">Downloads</a></li> <li class="svelte-15gxbhp"><a href="../contact" class="svelte-15gxbhp">Contact</a></li></ul></div> <div><h3 class="svelte-15gxbhp">Legal</h3> <ul class="svelte-15gxbhp"><li class="svelte-15gxbhp"><a href="../privacy" class="svelte-15gxbhp">Privacy Policy</a></li> <li class="svelte-15gxbhp"><a href="../terms" class="svelte-15gxbhp">Terms of Service</a></li></ul></div> <div><h3 class="svelte-15gxbhp">Connect</h3> <div class="flex space-x-4 svelte-15gxbhp"><a href="https://github.com/GlobalGovernanceFramework" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="svelte-15gxbhp"><svg class="h-6 w-6 svelte-15gxbhp" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg></a> <a href="https://discord.gg/Zx4hMJf4JU" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="svelte-15gxbhp"><svg class="h-6 w-6 svelte-15gxbhp" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.210 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"></path></svg></a> <a href="mailto:globalgovernanceframework@gmail.com" aria-label="Email" class="svelte-15gxbhp"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 svelte-15gxbhp" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></a></div></div></div> <div class="border-t flex flex-col md:flex-row justify-between items-center svelte-15gxbhp"><div class="mb-4 md:mb-0 svelte-15gxbhp"><p class="text-sm svelte-15gxbhp">© 2025 Global Governance Framework. All rights reserved.</p></div> <div class="flex items-center space-x-2 svelte-15gxbhp"><img src="../logo.svg" alt="Global Governance Frameworks" class="h-6 w-6 svelte-15gxbhp"> <span class="text-sm">Building frameworks for ethical global governance</span></div></div></div></footer><!----></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_9776cz = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.BAtsEowI.js"),
+						import("../_app/immutable/entry/app.1alCOpK0.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 107],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
