@@ -16,7 +16,7 @@ export const ecologicalEntities: GgfEntity[] = [
     name: 'Planetary Health Governance Framework',
     shortName: 'Planetary Health',
     description: 'Overarching framework for planetary health governance and biophysical system coordination',
-    tier: 2,
+    tier: 1,
     status: 'Ready',
     primaryDomain: 'Ecological',
     geographicScope: 'Global',
