@@ -42,7 +42,7 @@ export const justTransitionEntities: GgfEntity[] = [
       path: '/frameworks/aegis-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.aegisProtocol',
       emoji: '🛰️',
-      version: '0.9',
+      version: '1.2',
       slug: 'aegis-protocol',
       group: 'socialFabricJustice'
     }
