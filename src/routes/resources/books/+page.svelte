@@ -18,13 +18,29 @@
   // Book data with cover images and file paths
   $: books = [
     {
+      id: 'the-protocol',
+      title: $t('books.theProtocol.title'),
+      description: $t('books.theProtocol.description'),
+      cover: `${base}/images/books/en/the-protocol/book-cover.svg`,
+      pdfPath: {
+        en: `${base}/resources/the_Protocol.pdf`,
+        sv: null, // Not yet translated
+        ja: null // Not yet translated
+      },
+      readOnlinePath: '/resources/books/the-protocol',
+      hasOnlineVersion: true,
+      category: 'governance',
+      year: '2026',
+      pages: '100'
+    },
+    {
       id: 'jordens-forvaltare',
       title: $t('books.jordensForvaltare.title'),
       description: $t('books.jordensForvaltare.description'),
       cover: `${base}/resources/book-cover-jordens-forvaltare.svg`,
       pdfPath: {
-        en: `${base}/resources/Jordens_förvaltare.pdf`,
-        sv: null // Not yet translated
+        en: null, // Not yet translated
+        sv: `${base}/resources/Jordens_förvaltare.pdf`
       },
       readOnlinePath: '/resources/books/jordens-forvaltare',
       hasOnlineVersion: false,

@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "プロトコル — プラネタリー・ガバナンスへのポケットガイド",
+    "description": "地球規模ガバナンスフレームワーク（GGF）のための包括的な技術マニュアル — 憲法改革、経済学、生態学、危機管理にまたがる、再生型プラネタリー・ガバナンスのための50以上の相互接続されたプロトコル。",
+    "keywords": "プラネタリー・ガバナンス, バイオリージョナルな自律性, 再生型経済, 自然の権利, 多中心的ガバナンス, 補完通貨, 生態学的知能, 適応型ガバナンス, 先住民の主権, システム思考"
+  },
+  "bookTitle": "プロトコル",
+  "bookSubtitle": "プラネタリー・ガバナンスへのポケットガイド",
+  "breadcrumb": {
+    "resources": "リソース",
+    "books": "書籍",
+    "currentBook": "プロトコル"
+  },
+  "navigation": {
+    "frontMatter": "前付",
+    "backMatter": "後付",
+    "previous": "前へ",
+    "next": "次へ",
+    "backToTop": "トップに戻る"
+  },
+  "parts": {
+    "Part I: Architecture": "第I部：アーキテクチャ",
+    "Part II: Metabolism": "第II部：メタボリズム（代謝）",
+    "Part III: Authority": "第III部：オーソリティ（権限）",
+    "Part IV: Evolution": "第IV部：エボリューション（進化）"
+  },
+  "sections": {
+    "book-cover": "表紙",
+    "table-of-contents": "目次",
+    "introduction": "はじめに：本書の読み方",
+    "chapter-01": "第1章：フラクタル性（上の如く、下も然り）",
+    "chapter-02": "第2章：多中心性（ピラミッドではなく、メッシュ）",
+    "chapter-03": "第3章：二重通貨（心臓と肺）",
+    "chapter-04": "第4章：生態学的知能（ダッシュボード）",
+    "chapter-05": "第5章：AUBI（代謝のベースライン）",
+    "chapter-06": "第6章：補完性（周縁への権限移譲）",
+    "chapter-07": "第7章：ガーディアンシップ（客体から主体へ）",
+    "chapter-08": "第8章：適応型ガバナンス（免疫システム）",
+    "chapter-09": "第9章：トランジション（ここからそこへ）",
+    "appendix-a": "付録A：実装への道筋",
+    "appendix-b": "付録B：トラブルシューティングガイド",
+    "appendix-c": "付録C：用語集",
+    "appendix-d": "付録D：参考文献",
+    "conclusion": "おわりに：これからの展望",
+    "about": "著者について"
+  },
+  "sectionsShort": {
+    "book-cover": "表紙",
+    "table-of-contents": "目次",
+    "introduction": "はじめに",
+    "chapter-01": "1章：フラクタル性",
+    "chapter-02": "2章：多中心性",
+    "chapter-03": "3章：二重通貨",
+    "chapter-04": "4章：生態学的知能",
+    "chapter-05": "5章：AUBI",
+    "chapter-06": "6章：補完性",
+    "chapter-07": "7章：ガーディアンシップ",
+    "chapter-08": "8章：適応型ガバナンス",
+    "chapter-09": "9章：トランジション",
+    "appendix-a": "付録A：実装",
+    "appendix-b": "付録B：トラブルシューティング",
+    "appendix-c": "付録C：用語集",
+    "appendix-d": "付録D：参考文献",
+    "conclusion": "おわりに",
+    "about": "著者"
+  },
+  "chapterDescriptions": {
+    "chapter-01": "近隣地域、バイオリージョン（生物地域）、そして地球規模で、同じガバナンスのパターンがどのように繰り返されるかを理解する",
+    "chapter-02": "共有されたプロトコルによって接続された、複数の独立した意思決定センターを通じてレジリエントなシステムを構築する",
+    "chapter-03": "「ハート（地域）」通貨と「リーブス（貿易）」通貨を通じて、循環機能と貯蓄機能を分離する",
+    "chapter-04": "リアルタイムの生態系健全性指標を経済およびガバナンスシステムに統合する",
+    "chapter-05": "危機、貢献、地域の状況に適応する、コンテキストに応じた経済的基盤（フロア）を作成する",
+    "chapter-06": "明確なエスカレーション手順を設け、可能な限り最も地域に近いレベルで決定を執行する",
+    "chapter-07": "自然の権利を代表する「ガーディアン評議会」を通じて、生態系に法的地位を与える",
+    "chapter-08": "混乱を感知し、分散型の対応を調整する免疫システムのようなガバナンスを構築する",
+    "chapter-09": "自治体でのパイロットプロジェクトから、25〜50年かけたシステム変革に至るまでの5段階の道筋"
+  },
+  "appendixDescriptions": {
+    "appendix-a": "BAZ（バイオリージョン自治区）の立ち上げ、危機プロトコルの実装、FPIC 2.0の展開に関するステップバイステップガイド",
+    "appendix-b": "トラブルシューティングのための一般的な障害モード、診断用の質問、および運用上の対応",
+    "appendix-c": "40以上の主要用語の包括的な定義（アルファベット順、相互参照あり）",
+    "appendix-d": "対象読者別（政策立案者、コミュニティ、先住民族、研究者）に厳選されたリソース"
+  },
+  "progress": {
+    "chapter": "章",
+    "of": "/",
+    "appendix": "付録",
+    "reading": "閲覧中"
+  },
+  "pdfDownload": {
+    "title": "完全版をダウンロード",
+    "subtitle": "PDF形式",
+    "englishOnly": "PDFは英語のみ利用可能です",
+    "size": "~2.5 MB",
+    "pages": "~300ページ"
+  },
+  "languageNotice": {
+    "title": "翻訳進行中",
+    "description": "この書籍は現在翻訳中です。一部のセクションは英語で表示される場合があります。",
+    "sectionsAvailable": "利用可能なセクション",
+    "progress": "翻訳の進捗",
+    "fallbackNotice": "このセクションは英語で表示されます"
+  },
+  "bookInfo": {
+    "version": "1.0",
+    "publicationDate": "2026年2月",
+    "totalChapters": 9,
+    "totalAppendices": 4,
+    "totalPages": "~300",
+    "estimatedReadingTime": "4〜6時間",
+    "complexity": "中級",
+    "audience": "政策立案者、コミュニティオーガナイザー、システム思想家、先住民族コミュニティ、研究者",
+    "license": "ナレッジコモンズ（知識共有地）へ公開",
+    "format": "技術マニュアル"
+  },
+  "tableOfContents": {
+    "title": "目次",
+    "frontMatter": "前付",
+    "mainContent": "本文",
+    "backMatter": "後付",
+    "partI": "第I部：アーキテクチャ",
+    "partII": "第II部：メタボリズム",
+    "partIII": "第III部：オーソリティ",
+    "partIV": "第IV部：エボリューション",
+    "chapters": "章",
+    "appendices": "付録"
+  },
+  "accessibility": {
+    "skipToContent": "メインコンテンツへスキップ",
+    "openNavigation": "ナビゲーションメニューを開く",
+    "closeNavigation": "ナビゲーションメニューを閉じる",
+    "previousSection": "前のセクションへ",
+    "nextSection": "次のセクションへ",
+    "expandSection": "セクションを展開",
+    "collapseSection": "セクションを折りたたむ",
+    "currentSection": "現在のセクション"
+  },
+  "errorMessages": {
+    "sectionNotFound": "セクションが見つかりません",
+    "loadingError": "コンテンツの読み込みエラー",
+    "translationMissing": "翻訳は利用できません",
+    "tryAgain": "もう一度お試しください"
+  },
+  "actions": {
+    "download": "ダウンロード",
+    "print": "印刷",
+    "share": "共有",
+    "bookmark": "ブックマーク",
+    "navigate": "ナビゲート",
+    "search": "検索",
+    "translate": "翻訳"
+  },
+  "partSummaries": {
+    "partI": "フラクタル性（スケール不変のパターン）と多中心性（重複する管轄区域と三院制構造）を通じて、基礎となるガバナンス・アーキテクチャを確立します。",
+    "partII": "二重通貨システム、リアルタイムの生態学的知能、適応型ユニバーサルベーシックインカムを通じて、経済的および生態学的メタボリズム（代謝）を探求します。",
+    "partIII": "補完性の原理および自然に法的地位を与える生態系ガーディアンシップを通じて、権限の分配を定義します。",
+    "partIV": "現在の搾取的なシステムから再生型フレームワークへの、数十年にわたる移行経路と危機対応メカニズムを詳述します。"
+  },
+  "quickReference": {
+    "keyFrameworks": "主要フレームワーク",
+    "coreProtocols": "コアプロトコル",
+    "implementationSteps": "実装ステップ",
+    "troubleshootingTips": "トラブルシューティングのヒント",
+    "importantTerms": "重要用語",
+    "usefulResources": "役立つリソース"
+  },
+  "readingGuide": {
+    "firstTime": "初めて読む方は、各章が前の概念に基づいているため、章を順番に読んでください。",
+    "reference": "必要に応じて個別の章や付録を参照し、リファレンスとして使用してください。",
+    "implementation": "実装については、関連する付録と章の統合ポイントに焦点を当ててください。",
+    "troubleshooting": "問題が発生した場合は、診断用の質問と解決策について付録Bを参照してください。"
+  },
+  "relatedContent": {
+    "title": "関連リソース",
+    "globalGovernance": "Global Governance Frameworks ウェブサイト",
+    "community": "コミュニティに参加する",
+    "implementations": "アクティブな実装を見る",
+    "contribute": "ナレッジコモンズに貢献する"
+  },
+  "citations": {
+    "howToCite": "本書の引用方法",
+    "apa": "APA形式",
+    "mla": "MLA形式",
+    "chicago": "シカゴ形式",
+    "bibtex": "BibTeX形式"
+  },
+  "feedback": {
+    "title": "フィードバックを提供する",
+    "improvements": "改善を提案する",
+    "errors": "エラーを報告する",
+    "translations": "翻訳に協力する",
+    "implementations": "実装の経験を共有する"
+  },
+  "printMode": {
+    "title": "印刷モード",
+    "description": "印刷用に最適化されたレイアウト",
+    "activate": "印刷モードを有効化",
+    "deactivate": "印刷モードを終了",
+    "allSections": "すべてのセクションが表示されます",
+    "formatting": "印刷用に最適化されたフォーマット"
+  }
+}

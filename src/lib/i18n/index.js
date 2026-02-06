@@ -143,6 +143,7 @@ const pageSpecificTranslationsMap = [
   { route: '/resources/books/ai-as-catalyst-for-cognitive-evolution', dataKey: 'booksAiCatalyst', fileName: 'booksAiCatalyst' },
   { route: '/resources/books/radical-competence', dataKey: 'booksRadicalCompetence', fileName: 'booksRadicalCompetence' },
   { route: '/resources/books/the-capital-weaver', dataKey: 'booksCapitalWeaver', fileName: 'booksCapitalWeaver' },
+  { route: '/resources/books/the-protocol', dataKey: 'booksTheProtocol', fileName: 'booksTheProtocol' },
   { route: '/resources/cultural-translation-protocol', dataKey: 'culturalTranslationProtocol', fileName: 'resourcesCulturalTranslationProtocol' },
   { route: '/resources/paradox-canvas', dataKey: 'resourcesParadoxCanvas', fileName: 'resourcesParadoxCanvas' },
   { route: '/resources/tools', dataKey: 'resourcesTools', fileName: 'resourcesTools' },
