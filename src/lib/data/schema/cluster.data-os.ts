@@ -24,6 +24,7 @@ export const dataOSEntities: GgfEntity[] = [
       path: '/frameworks/aurora-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.auroraAccord',
       emoji: '📜',
+      version: '1.1',
       slug: 'aurora-accord',
       group: 'globalEconomicSystems'
     }
