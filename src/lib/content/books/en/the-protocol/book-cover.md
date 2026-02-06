@@ -22,12 +22,12 @@
       </div>
       <div class="book-cover-meta-item">
         <span class="meta-icon">🌍</span>
-        <span>50+ Protocols</span>
+        <span>50+ Frameworks</span>
       </div>
     </div>
     
     <div class="book-cover-description">
-      <p>A comprehensive technical manual for the Global Governance Frameworks (GGF)—an open-source ecosystem of interconnected protocols for regenerative planetary governance spanning constitutional reform, economics, ecology, and crisis management.</p>
+      <p>A comprehensive technical manual for the Global Governance Frameworks (GGF)—an open-source ecosystem of interconnected frameworks and protocols for regenerative planetary governance spanning constitutional reform, economics, ecology, and crisis management.</p>
       
       <p>This book provides actionable frameworks for building polycentric governance systems that coordinate at planetary scale without creating world government, integrate ecosystem rights into legal systems, transform extractive economics into regenerative metabolism, and respond to crises through distributed intelligence rather than centralized command.</p>
     </div>
