@@ -2,7 +2,7 @@
 
 <div class="book-cover-section">
   <div class="book-cover-content">
-    <img src="/static/images/books/en/the-protocol/book-cover.svg" alt="The Protocol Book Cover" class="book-cover-image" />
+    <img src="/images/books/en/the-protocol/book-cover.svg" alt="The Protocol Book Cover" class="book-cover-image" />
     
     <h1 class="book-cover-title">The Protocol</h1>
     <h2 class="book-cover-subtitle">A Pocket Guide to Planetary Governance</h2>
