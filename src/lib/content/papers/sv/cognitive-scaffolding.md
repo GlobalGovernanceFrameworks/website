@@ -61,6 +61,14 @@ Denna uppsats postulerar att AI, ofta sett som en källa till disruption, kan va
 
 ¹Koncepten 'Nivå 1'- och 'Nivå 2'-medvetande baseras på Spiral Dynamics-modellen. För en detaljerad introduktion och interaktiva verktyg för att utforska detta ramverk, se den ideella utbildningsresursen på [Spiralize.org](https://www.spiralize.org).
 
+Från ett kybernetiskt perspektiv kan SCI-cykeln förstås som en intervention för nödvändig variation. Ashbys lag säger att ett system måste besitta intern komplexitet som matchar den komplexitet det syftar till att kontrollera. Polykrisen representerar att verklighetens variation överväldigar vår institutionella och kognitiva kapacitet. SCI-cykeln adresserar detta genom att:
+
+1. **Expandera variation genom syntes**: Flera AI-modeller exponerar facilitatorn för ett bredare spektrum av perspektiv och inramningar
+2. **Testa variation genom utmaning**: Adversariell prövning säkerställer att lösningen kan hantera störningar
+3. **Integrera variation genom syntes**: Det slutliga resultatet bäddar in denna komplexitet som resilient design
+
+Detta är odling av nödvändig variation för samarbete mellan människa och AI – träning av det kollektiva systemet för att möta verklighetens komplexitet.
+
 ### <a id="positioning"></a>1.1. Positionering av SCI-cykeln
 
 SCI-cykeln skiljer sig från befintliga AI-metoder som "red teaming" eller adversariell maskininlärning, vilka främst fokuserar på att identifiera tekniska brister eller sårbarheter i AI-system. I kontrast är SCI-cykeln en **generativ process** utformad för att stötta mänsklig kognitiv utveckling mot Nivå 2-medvetande. Den utnyttjar dialog med flera AI-modeller för att främja integrativt tänkande, vilket gör det möjligt för människor att navigera komplexa systemutmaningar med större klarhet och resiliens.
