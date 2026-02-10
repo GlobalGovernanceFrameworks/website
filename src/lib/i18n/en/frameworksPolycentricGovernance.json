@@ -1,0 +1,230 @@
+{
+  "title": "Polycentric Governance Architecture",
+  "subtitle": "Structural blueprint for distributed authority and voluntary coordination",
+  "description": "Foundational framework enabling coordination across autonomous governance centers without centralized command—from ancient Indigenous confederacies to modern internet governance, proven architecture for addressing complex challenges through distributed authority, subsidiarity, and voluntary cooperation.",
+  "version": "0.5",
+  "status": "Ready",
+  "tier": "Tier 1: Core Operating System",
+  "emoji": "🕸️",
+  
+  "sections": {
+    "index": "Polycentric Governance Architecture",
+    "at-a-glance": "At-a-glance overview",
+    "introduction": "Introduction",
+    "principles": "Core principles",
+    "architecture": "Governance architecture",
+    "power-distribution": "Power distribution mechanisms",
+    "coordination": "Coordination protocols",
+    "implementation": "Implementation pathways",
+    "evaluation": "Evaluation framework",
+    "examples": "Real-world examples",
+    "integration": "Integration with global governance",
+    "appendix-a": "Appendix A: Constitutional and legal models"
+  },
+  
+  "sectionsShort": {
+    "index": "Overview",
+    "at-a-glance": "At a glance",
+    "introduction": "Introduction",
+    "principles": "Principles",
+    "architecture": "Architecture",
+    "power-distribution": "Power distribution",
+    "coordination": "Coordination",
+    "implementation": "Implementation",
+    "evaluation": "Evaluation",
+    "examples": "Examples",
+    "integration": "Integration",
+    "appendix-a": "Appendices"
+  },
+
+  "categories": {
+    "overview": "Overview",
+    "foundation": "Foundation",
+    "structure": "Structure",
+    "operations": "Operations",
+    "assessment": "Assessment",
+    "ecosystem": "Ecosystem",
+    "resources": "Resources"
+  },
+  
+  "navigation": {
+    "overview": "Overview",
+    "at-a-glance": "At-a-glance",
+    "introduction": "Introduction",
+    "principles": "Principles",
+    "architecture": "Architecture",
+    "power-distribution": "Power distribution",
+    "coordination": "Coordination",
+    "implementation": "Implementation",
+    "evaluation": "Evaluation",
+    "examples": "Examples",
+    "integration": "Integration",
+    "appendix-a": "Appendices",
+    "beginYourJourney": "Quick start",
+    "exploreFramework": "Explore framework",
+    "backToFrameworksOverview": "← Back to overview"
+  },
+  
+  "meta": {
+    "title": "Polycentric Governance Architecture",
+    "description": "Structural blueprint for distributed authority and voluntary coordination—enabling governance across autonomous centers without centralized command, from ancient Indigenous confederacies to modern internet governance."
+  },
+  
+  "quickStart": {
+    "guides": [
+      {
+        "id": "at-a-glance",
+        "icon": "⚡",
+        "title": "At a glance",
+        "description": "5-minute overview of polycentric governance architecture"
+      }
+    ]
+  },
+  
+  "errors": {
+    "sectionNotFound": "Section \"{section}\" not found",
+    "contentInDevelopment": "This content is still being developed."
+  },
+  
+  "principles": {
+    "multipleAutonomousCenters": {
+      "title": "Multiple autonomous centers",
+      "shortDesc": "Power distributed across many governance centers",
+      "description": "Authority distributed across multiple autonomous centers rather than concentrated in single hierarchy"
+    },
+    "voluntaryCooperation": {
+      "title": "Voluntary cooperation",
+      "shortDesc": "Coordination based on mutual benefit",
+      "description": "Governance centers coordinate voluntarily based on mutual benefit, not coercion"
+    },
+    "subsidiarityByDefault": {
+      "title": "Subsidiarity by default",
+      "shortDesc": "Decisions at most local capable level",
+      "description": "Decisions made at most local level capable of effective action, with higher levels supporting not commanding"
+    },
+    "mutualAdjustment": {
+      "title": "Mutual adjustment",
+      "shortDesc": "Coordination through negotiation",
+      "description": "Governance centers adjust to each other through negotiation and relationship rather than hierarchical command"
+    },
+    "sharedProtocols": {
+      "title": "Shared protocols",
+      "shortDesc": "Common standards enabling coordination",
+      "description": "Standardized interfaces and protocols enabling coordination while preserving center autonomy"
+    },
+    "nestedGovernance": {
+      "title": "Nested governance",
+      "shortDesc": "Coordination across scales",
+      "description": "Governance operating at multiple nested scales with each level maintaining genuine authority"
+    },
+    "experimentalDiversity": {
+      "title": "Experimental diversity",
+      "shortDesc": "Multiple approaches tested simultaneously",
+      "description": "Multiple governance approaches coexist and compete, with successful innovations spreading through voluntary adoption"
+    },
+    "evolutionaryAdaptation": {
+      "title": "Evolutionary adaptation",
+      "shortDesc": "Continuous learning and improvement",
+      "description": "Systems evolve through continuous learning, experimentation, and adaptation based on experience"
+    }
+  },
+  
+  "components": {
+    "governanceCenters": {
+      "title": "Governance centers",
+      "description": "Autonomous units exercising genuine authority"
+    },
+    "coordinationMechanisms": {
+      "title": "Coordination mechanisms",
+      "description": "Protocols enabling voluntary cooperation"
+    },
+    "sharedProtocols": {
+      "title": "Shared protocols",
+      "description": "Common standards and interfaces"
+    },
+    "informationSystems": {
+      "title": "Information and learning systems",
+      "description": "Data sharing and knowledge exchange"
+    },
+    "powerBalancing": {
+      "title": "Power balancing",
+      "description": "Safeguards preventing re-centralization"
+    },
+    "adaptiveCapacity": {
+      "title": "Adaptive capacity",
+      "description": "Mechanisms for evolution and learning"
+    }
+  },
+  
+  "metadata": {
+    "readingTime": "Full framework: 2-3 hours",
+    "atAGlanceTime": "5 minutes",
+    "wordCount": "~50,000 words",
+    "sections": "12 comprehensive sections",
+    "principles": "8 core principles",
+    "components": "6 architectural components",
+    "examples": "8+ real-world implementations"
+  },
+  
+  "cta": {
+    "primary": "Explore the framework",
+    "secondary": "Download at-a-glance",
+    "tertiary": "View examples",
+    "community": "Join implementation community",
+    "implementation": "Start implementing"
+  },
+  
+  "features": {
+    "distributedAuthority": "Distributed authority preventing tyranny",
+    "voluntaryCoordination": "Voluntary cooperation without command",
+    "culturalSensitivity": "Pluriversal governance recognition",
+    "provenExamples": "Real-world examples across domains",
+    "legalFrameworks": "Constitutional and legal models",
+    "implementationPathways": "Multiple implementation approaches"
+  },
+  
+  "integration": {
+    "withMetaGovernance": "Provides structural foundation for Meta-Governance coordination",
+    "withEGP": "Works with Emergent Governance Protocol as structure + process",
+    "withTreaty": "Enables Treaty for Our Only Home institutional reforms",
+    "withIndigenous": "Honors Indigenous governance as original polycentricity",
+    "withApplications": "Supports all application-layer frameworks"
+  },
+  
+  "relatedFrameworks": {
+    "metaGovernance": "Meta-Governance Framework",
+    "emergentGovernanceProtocol": "Emergent Governance Protocol",
+    "treatyForOurOnlyHome": "Treaty for Our Only Home",
+    "indigenousGovernance": "Indigenous & Traditional Knowledge Governance"
+  },
+  
+  "downloads": {
+    "fullFramework": "Download full framework (PDF)",
+    "atAGlance": "Download at-a-glance (PDF)",
+    "legalModels": "Download legal models (PDF)",
+    "implementationGuide": "Download implementation guide (PDF)"
+  },
+  
+  "contact": {
+    "general": "polycentricgovernance@globalgovernanceframeworks.org",
+    "communities": "Subject: Community Coordination",
+    "organizations": "Subject: Organizational Transformation",
+    "governments": "Subject: Government Reform",
+    "researchers": "Subject: Research Collaboration"
+  },
+  
+  "keywords": [
+    "polycentric governance",
+    "distributed authority",
+    "subsidiarity",
+    "voluntary coordination",
+    "governance centers",
+    "federalism",
+    "decentralization",
+    "Indigenous governance",
+    "commons governance",
+    "coordination without command",
+    "multi-level governance",
+    "network governance"
+  ]
+}

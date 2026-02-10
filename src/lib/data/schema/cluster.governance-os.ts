@@ -187,6 +187,130 @@ export const governanceOSEntities: GgfEntity[] = [
     status: 'Pilot',
     primaryDomain: 'Technology',
     dependencies: ['framework_egp']
+  },
+
+  // === POLYCENTRIC GOVERNANCE ARCHITECTURE ===
+  {
+    id: 'framework_polycentric_governance',
+    type: 'Framework',
+    name: 'Polycentric Governance Architecture',
+    shortName: 'Polycentric Architecture',
+    description: 'The constitutional spine providing four-layer overlapping jurisdictions (Territorial/Commons/Guilds/Wisdom Council) that make tyranny logistically impossible through structural redundancy',
+    tier: 1,
+    status: 'Ready',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Critical',
+    dependencies: ['framework_treaty', 'framework_meta_gov'],
+    enables: ['layer_territorial', 'layer_commons', 'layer_guilds', 'layer_wisdom_council'],
+    ui: {
+      path: '/frameworks/polycentric-governance',
+      titleKey: 'framework.docs.nav.frameworkTitles.polycentricGovernance',
+      emoji: '🕸️',
+      version: '0.5',
+      slug: 'polycentric-governance'
+    }
+  },
+  {
+    id: 'layer_territorial',
+    type: 'Institution',
+    name: 'Territorial Councils',
+    shortName: 'Territorial Layer',
+    description: 'BAZ Assemblies managing physical geography, infrastructure, zoning, and local services',
+    tier: 1,
+    status: 'Pilot',
+    primaryDomain: 'Governance',
+    geographicScope: 'Bioregional',
+    implementationPriority: 'Critical',
+    dependencies: ['framework_polycentric_governance']
+  },
+  {
+    id: 'layer_commons',
+    type: 'Institution',
+    name: 'Commons Trusts',
+    shortName: 'Commons Layer',
+    description: 'Cross-boundary resource governance with Guardian Seats for ecosystem representation',
+    tier: 1,
+    status: 'Pilot',
+    primaryDomain: 'Ecological',
+    geographicScope: 'Bioregional',
+    implementationPriority: 'Critical',
+    dependencies: ['framework_polycentric_governance']
+  },
+  {
+    id: 'layer_guilds',
+    type: 'Institution',
+    name: 'Guilds & Syndicates',
+    shortName: 'Guilds Layer',
+    description: 'Trans-BAZ economic practice governance (Fractal Labor Parliament, Hearts/Leaves rates, professional standards)',
+    tier: 1,
+    status: 'Pilot',
+    primaryDomain: 'Economic',
+    geographicScope: 'Bioregional',
+    implementationPriority: 'Critical',
+    dependencies: ['framework_polycentric_governance', 'framework_work_liberation']
+  },
+  {
+    id: 'layer_wisdom_council',
+    type: 'Council',
+    name: 'Indigenous Wisdom Council',
+    shortName: 'Wisdom Council',
+    description: 'Constitutional layer with veto power over existential risks and Natural Law violations',
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    geographicScope: 'Bioregional',
+    implementationPriority: 'Critical',
+    dependencies: ['framework_polycentric_governance', 'framework_indigenous']
+  },
+  {
+    id: 'mechanism_guardian_seats',
+    type: 'Mechanism',
+    name: 'Guardian Seats Protocol',
+    shortName: 'Guardian Seats',
+    description: 'Legal personhood for ecosystems via Guardian representatives with fiduciary duty to regeneration',
+    tier: 1,
+    status: 'Pilot',
+    primaryDomain: 'Justice',
+    implementationPriority: 'High',
+    dependencies: ['layer_commons', 'framework_justice']
+  },
+  {
+    id: 'process_circuit_breaker',
+    type: 'Process',
+    name: 'Circuit Breaker Protocol',
+    shortName: 'Circuit Breaker',
+    description: 'Sortition-based deadlock resolution with chamber dissolution and interim stewardship',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Governance',
+    implementationPriority: 'High',
+    dependencies: ['framework_polycentric_governance']
+  },
+  {
+    id: 'metric_phi',
+    type: 'Metric',
+    name: 'Polycentric Health Index',
+    shortName: 'PHI',
+    description: 'Composite metric combining Power Distribution Index, BHI, LMCI, and economic equity',
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    implementationPriority: 'High',
+    dependencies: ['framework_polycentric_governance', 'metric_bhi', 'metric_lmci']
+  },
+  {
+    id: 'pilot_uppsala_baz',
+    type: 'Pilot',
+    name: 'Uppsala BAZ Pilot',
+    shortName: 'Uppsala Pilot',
+    description: 'Swedish municipal pilot: Lake Mälaren Trust, BAZ Assembly, Guild prototypes (2025-2027)',
+    tier: 1,
+    status: 'Active',
+    primaryDomain: 'Governance',
+    geographicScope: 'Local',
+    implementationPriority: 'Critical',
+    dependencies: ['framework_polycentric_governance', 'layer_territorial', 'layer_commons', 'layer_guilds']
   }
 ];
 
@@ -399,5 +523,236 @@ export const governanceOSRelationships: GgfRelationship[] = [
       to: 'framework_egp',
       type: 'IMPLEMENTS',
       description: 'The prototyping app serves as the reference implementation and experimental testbed for the EGP.'
+  },
+
+  // === POLYCENTRIC GOVERNANCE ARCHITECTURE RELATIONSHIPS ===
+  
+  // Constitutional Foundation
+  {
+    from: 'framework_treaty',
+    to: 'framework_polycentric_governance',
+    type: 'ENABLES',
+    description: 'Treaty provides constitutional foundation for polycentric structure',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Sequential'
+  },
+  
+  // Meta-Governance Integration
+  {
+    from: 'framework_meta_gov',
+    to: 'framework_polycentric_governance',
+    type: 'ENABLES',
+    description: 'Meta-Governance provides coordination protocols; Polycentric Architecture is its structural implementation',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_polycentric_governance',
+    to: 'protocol_polycentric',
+    type: 'IMPLEMENTS',
+    description: 'Polycentric Architecture is the concrete institutional model of the polycentric coordination principle',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  
+  // Four Layers Internal Structure
+  {
+    from: 'framework_polycentric_governance',
+    to: 'layer_territorial',
+    type: 'ESTABLISHES',
+    description: 'Framework defines Territorial Councils as geography/infrastructure layer',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_polycentric_governance',
+    to: 'layer_commons',
+    type: 'ESTABLISHES',
+    description: 'Framework defines Commons Trusts as cross-boundary resource layer',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_polycentric_governance',
+    to: 'layer_guilds',
+    type: 'ESTABLISHES',
+    description: 'Framework defines Guilds/Syndicates as economic practice layer',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_polycentric_governance',
+    to: 'layer_wisdom_council',
+    type: 'ESTABLISHES',
+    description: 'Framework defines Wisdom Council as constitutional/existential boundary layer',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  
+  // Indigenous Framework Integration
+  {
+    from: 'framework_indigenous',
+    to: 'layer_wisdom_council',
+    type: 'GUIDES',
+    description: 'Indigenous sovereignty framework defines Wisdom Council composition, FPIC 2.0 authority',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'layer_wisdom_council',
+    to: 'council_earth',
+    type: 'COORDINATES_WITH',
+    description: 'Wisdom Councils coordinate with Earth Council for global Indigenous governance',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  
+  // Work in Liberation Integration
+  {
+    from: 'framework_work_liberation',
+    to: 'layer_guilds',
+    type: 'IMPLEMENTS',
+    description: 'Work in Liberation defines operational mechanics for Guilds (FLP, Hearts/Leaves, Community Providers)',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'layer_guilds',
+    to: 'layer_territorial',
+    type: 'COORDINATES_WITH',
+    description: 'Guilds propose Hearts rates, Territorial Assemblies ratify (price-setting handshake)',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  
+  // Guardian Seats & Rights of Nature
+  {
+    from: 'layer_commons',
+    to: 'mechanism_guardian_seats',
+    type: 'USES',
+    description: 'Commons Trusts use Guardian Seats for ecosystem representation',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'mechanism_guardian_seats',
+    to: 'framework_justice',
+    type: 'IMPLEMENTS',
+    description: 'Guardian Seats implement Rights of Nature/Living Systems Jurisprudence',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  
+  // Circuit Breaker Deadlock Resolution
+  {
+    from: 'process_circuit_breaker',
+    to: 'layer_territorial',
+    type: 'RESOLVES_CONFLICTS_FOR',
+    description: 'Circuit Breaker resolves deadlocks between Territorial, Commons, and Guild layers',
+    strength: 'Strong',
+    frequency: 'Occasional',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'process_circuit_breaker',
+    to: 'layer_commons',
+    type: 'RESOLVES_CONFLICTS_FOR',
+    description: 'Circuit Breaker resolves deadlocks between layers',
+    strength: 'Strong',
+    frequency: 'Occasional',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'process_circuit_breaker',
+    to: 'layer_guilds',
+    type: 'RESOLVES_CONFLICTS_FOR',
+    description: 'Circuit Breaker resolves deadlocks between layers',
+    strength: 'Strong',
+    frequency: 'Occasional',
+    sequenceType: 'Conditional'
+  },
+  
+  // Metrics Integration
+  {
+    from: 'metric_phi',
+    to: 'metric_bhi',
+    type: 'INTEGRATES',
+    description: 'PHI incorporates BHI as ecological health component',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'metric_phi',
+    to: 'metric_lmci',
+    type: 'INTEGRATES',
+    description: 'PHI incorporates LMCI as social wellbeing component',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'process_metric_lifecycle',
+    to: 'metric_phi',
+    type: 'GUIDES',
+    description: 'Lifecycle process governs PHI development and validation',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  
+  // Planetary Health Integration
+  {
+    from: 'council_phc',
+    to: 'layer_commons',
+    type: 'COORDINATES_WITH',
+    description: 'Planetary Health Council coordinates with Commons Trusts on ecosystem boundaries',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'mechanism_guardian_seats',
+    to: 'metric_bhi',
+    type: 'USES',
+    description: 'Guardian Seats use BHI data for regeneration capacity decisions',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  
+  // BAZ Integration
+  {
+    from: 'layer_territorial',
+    to: 'institution_baz',
+    type: 'IMPLEMENTS',
+    description: 'Territorial Councils are implemented as BAZ Assemblies',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  
+  // Swedish Pilot
+  {
+    from: 'pilot_uppsala_baz',
+    to: 'framework_polycentric_governance',
+    type: 'TESTS',
+    description: 'Uppsala pilot tests polycentric architecture in Swedish municipal context',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'pilot_uppsala_baz',
+    to: 'layer_commons',
+    type: 'IMPLEMENTS',
+    description: 'Lake Mälaren Trust as first Commons Trust pilot',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
   }
 ];

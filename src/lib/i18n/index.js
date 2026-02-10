@@ -83,6 +83,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/regenerative-journeys', dataKey: 'regenerativeJourneysFramework', fileName: 'frameworksRegenerativeJourneys' },
   { route: '/frameworks/mobility-commons', dataKey: 'mobilityFramework', fileName: 'frameworksMobilityCommons' },
   { route: '/frameworks/meta-governance', dataKey: 'metaGovernance', fileName: 'frameworksMetaGovernance' },
+  { route: '/frameworks/polycentric-governance', dataKey: 'polycentricGovernance', fileName: 'frameworksPolycentricGovernance' },
   { route: '/frameworks/emergent-governance-protocol', dataKey: 'egpFramework', fileName: 'frameworksEmergentGovernanceProtocol' },
   { route: '/frameworks/living-land-protocol', dataKey: 'livingLandProtocol', fileName: 'frameworksLivingLandProtocol' },
   { route: '/frameworks/sundown-protocol', dataKey: 'sundownProtocol', fileName: 'frameworksSundownProtocol' },

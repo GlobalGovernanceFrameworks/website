@@ -1,0 +1,243 @@
+{
+  "title": "ポリセントリック・ガバナンス・アーキテクチャ",
+  "subtitle": "分散型権限と自発的調整のための構造的青写真",
+  "description": "中央集権的な指令なしに、自律的なガバナンスセンター間の調整を可能にする基盤的フレームワーク — 古代先住民の連合から現代のインターネットガバナンスまで、分散型権限、補完性原理、自発的協力を通じて複雑な課題に対処するための実証済みのアーキテクチャ。",
+  "version": "0.5",
+  "status": "準備完了",
+  "tier": "ティア1: コア・オペレーティングシステム",
+  "emoji": "🕸️",
+  
+  "index": "ポリセントリック・ガバナンス・アーキテクチャ",
+  "at-a-glance": "一目でわかる要約",
+  "introduction": "はじめに",
+  "principles": "コア原則",
+  "architecture": "ガバナンス・アーキテクチャ",
+  "power-distribution": "権限分配メカニズム",
+  "coordination": "調整プロトコル",
+  "implementation": "実装パス",
+  "evaluation": "評価フレームワーク",
+  "examples": "実例",
+  "integration": "グローバルガバナンスとの統合",
+  "appendix-a": "付録A: 憲法および法的モデル",
+  
+  "sections": {
+    "index": "ポリセントリック・ガバナンス・アーキテクチャ",
+    "at-a-glance": "一目でわかる要約",
+    "introduction": "はじめに",
+    "principles": "コア原則",
+    "architecture": "ガバナンス・アーキテクチャ",
+    "power-distribution": "権限分配メカニズム",
+    "coordination": "調整プロトコル",
+    "implementation": "実装パス",
+    "evaluation": "評価フレームワーク",
+    "examples": "実例",
+    "integration": "グローバルガバナンスとの統合",
+    "appendix-a": "付録A: 憲法および法的モデル"
+  },
+  
+  "sectionsShort": {
+    "index": "概要",
+    "at-a-glance": "一目でわかる要約",
+    "introduction": "はじめに",
+    "principles": "原則",
+    "architecture": "アーキテクチャ",
+    "power-distribution": "権限分配",
+    "coordination": "調整",
+    "implementation": "実装",
+    "evaluation": "評価",
+    "examples": "事例",
+    "integration": "統合",
+    "appendix-a": "付録"
+  },
+
+  "categories": {
+    "overview": "概要",
+    "foundation": "基盤",
+    "structure": "構造",
+    "operations": "運用",
+    "assessment": "評価",
+    "ecosystem": "エコシステム",
+    "resources": "リソース"
+  },
+  
+  "navigation": {
+    "overview": "概要",
+    "at-a-glance": "一目でわかる要約",
+    "introduction": "はじめに",
+    "principles": "原則",
+    "architecture": "アーキテクチャ",
+    "power-distribution": "権限分配",
+    "coordination": "調整",
+    "implementation": "実装",
+    "evaluation": "評価",
+    "examples": "事例",
+    "integration": "統合",
+    "appendix-a": "付録",
+    "beginYourJourney": "クイックスタート",
+    "exploreFramework": "フレームワークを探索",
+    "backToFrameworksOverview": "← 概要に戻る"
+  },
+  
+  "meta": {
+    "title": "ポリセントリック・ガバナンス・アーキテクチャ",
+    "description": "分散型権限と自発的調整のための構造的青写真 — 古代先住民の連合から現代のインターネットガバナンスまで、中央集権的な指令なしに自律的なセンター間でのガバナンスを可能にする。"
+  },
+  
+  "quickStart": {
+    "guides": [
+      {
+        "id": "at-a-glance",
+        "icon": "⚡",
+        "title": "一目でわかる要約",
+        "description": "ポリセントリック・ガバナンス・アーキテクチャの5分間概要"
+      }
+    ]
+  },
+  
+  "errors": {
+    "sectionNotFound": "セクション \"{section}\" が見つかりません",
+    "contentInDevelopment": "このコンテンツは現在開発中です。"
+  },
+  
+  "principles": {
+    "multipleAutonomousCenters": {
+      "title": "複数の自律的センター",
+      "shortDesc": "多数のガバナンスセンターに分散された権限",
+      "description": "権限は単一のヒエラルキーに集中するのではなく、複数の自律的なセンターに分散される"
+    },
+    "voluntaryCooperation": {
+      "title": "自発的協力",
+      "shortDesc": "相互利益に基づく調整",
+      "description": "ガバナンスセンターは強制ではなく、相互利益に基づいて自発的に調整を行う"
+    },
+    "subsidiarityByDefault": {
+      "title": "デフォルトでの補完性原理",
+      "shortDesc": "能力のある最も身近なレベルでの意思決定",
+      "description": "意思決定は効果的な行動が可能な最も身近なレベルで行われ、上位レベルは命令ではなく支援を行う"
+    },
+    "mutualAdjustment": {
+      "title": "相互調整",
+      "shortDesc": "交渉を通じた調整",
+      "description": "ガバナンスセンターはヒエラルキー的な命令ではなく、交渉と関係性を通じて互いに調整する"
+    },
+    "sharedProtocols": {
+      "title": "共有プロトコル",
+      "shortDesc": "調整を可能にする共通基準",
+      "description": "センターの自律性を維持しながら調整を可能にする標準化されたインターフェースとプロトコル"
+    },
+    "nestedGovernance": {
+      "title": "入れ子構造のガバナンス",
+      "shortDesc": "スケールを超えた調整",
+      "description": "各レベルが真の権限を維持しながら、複数の入れ子になったスケールで機能するガバナンス"
+    },
+    "experimentalDiversity": {
+      "title": "実験的多様性",
+      "shortDesc": "複数のアプローチの同時テスト",
+      "description": "複数のガバナンスアプローチが共存・競争し、成功したイノベーションが自発的な採用を通じて広がる"
+    },
+    "evolutionaryAdaptation": {
+      "title": "進化的適応",
+      "shortDesc": "継続的な学習と改善",
+      "description": "システムは継続的な学習、実験、経験に基づく適応を通じて進化する"
+    }
+  },
+  
+  "components": {
+    "governanceCenters": {
+      "title": "ガバナンスセンター",
+      "description": "真の権限を行使する自律的ユニット"
+    },
+    "coordinationMechanisms": {
+      "title": "調整メカニズム",
+      "description": "自発的協力を可能にするプロトコル"
+    },
+    "sharedProtocols": {
+      "title": "共有プロトコル",
+      "description": "共通の基準とインターフェース"
+    },
+    "informationSystems": {
+      "title": "情報・学習システム",
+      "description": "データ共有と知識交換"
+    },
+    "powerBalancing": {
+      "title": "パワーバランシング",
+      "description": "再集権化を防ぐ安全装置"
+    },
+    "adaptiveCapacity": {
+      "title": "適応能力",
+      "description": "進化と学習のためのメカニズム"
+    }
+  },
+  
+  "metadata": {
+    "readingTime": "完全版: 2-3時間",
+    "atAGlanceTime": "5分",
+    "wordCount": "~50,000語",
+    "sections": "12の包括的セクション",
+    "principles": "8つのコア原則",
+    "components": "6つのアーキテクチャコンポーネント",
+    "examples": "8つ以上の実例"
+  },
+  
+  "cta": {
+    "primary": "フレームワークを探索する",
+    "secondary": "要約をダウンロード",
+    "tertiary": "事例を見る",
+    "community": "実装コミュニティに参加する",
+    "implementation": "実装を開始する"
+  },
+  
+  "features": {
+    "distributedAuthority": "専制を防ぐ分散型権限",
+    "voluntaryCoordination": "指令なき自発的調整",
+    "culturalSensitivity": "多元的ガバナンスの認識",
+    "provenExamples": "分野を超えた実例",
+    "legalFrameworks": "憲法および法的モデル",
+    "implementationPathways": "複数の実装アプローチ"
+  },
+  
+  "integration": {
+    "withMetaGovernance": "メタガバナンス調整のための構造的基盤を提供",
+    "withEGP": "創発的ガバナンスプロトコルと構造＋プロセスとして機能",
+    "withTreaty": "「私たちの唯一の故郷のための条約」の制度改革を可能にする",
+    "withIndigenous": "先住民のガバナンスをオリジナルのポリセントリズムとして尊重",
+    "withApplications": "すべてのアプリケーション層のフレームワークをサポート"
+  },
+  
+  "relatedFrameworks": {
+    "metaGovernance": "メタガバナンス・フレームワーク",
+    "emergentGovernanceProtocol": "創発的ガバナンスプロトコル",
+    "treatyForOurOnlyHome": "私たちの唯一の故郷のための条約",
+    "indigenousGovernance": "先住民および伝統的知識のガバナンス"
+  },
+  
+  "downloads": {
+    "fullFramework": "完全なフレームワークをダウンロード (PDF)",
+    "atAGlance": "要約をダウンロード (PDF)",
+    "legalModels": "法的モデルをダウンロード (PDF)",
+    "implementationGuide": "実装ガイドをダウンロード (PDF)"
+  },
+  
+  "contact": {
+    "general": "polycentricgovernance@globalgovernanceframeworks.org",
+    "communities": "件名: コミュニティ調整",
+    "organizations": "件名: 組織変革",
+    "governments": "件名: 政府改革",
+    "researchers": "件名: 研究協力"
+  },
+  
+  "keywords": [
+    "ポリセントリック・ガバナンス",
+    "分散型権限",
+    "補完性原理",
+    "自発的調整",
+    "ガバナンスセンター",
+    "連邦制",
+    "地方分権",
+    "先住民ガバナンス",
+    "コモンズ・ガバナンス",
+    "指令なき調整",
+    "マルチレベル・ガバナンス",
+    "ネットワーク・ガバナンス"
+  ]
+}
