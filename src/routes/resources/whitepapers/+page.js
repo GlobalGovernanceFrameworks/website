@@ -18,7 +18,8 @@ const omegaProofEn = {
     date: '2026-01-04',
     authors: 'Björn Kenneth Holmström (with AI collaboration: Gemini, DeepSeek, Grok, Claude)',
     readingTime: '~60 minutes (full paper)',
-    featured: true
+    featured: true,
+    type: 'flagship'
   }
 };
 
@@ -32,7 +33,39 @@ const omegaProofSv = {
     date: '2026-01-04',
     authors: 'Björn Kenneth Holmström (med AI-samarbete: Gemini, DeepSeek, Grok, Claude)',
     readingTime: '~60 minuter (fullständig artikel)',
-    featured: true
+    featured: true,
+    type: 'flagship'
+  }
+};
+
+// Special case for Model Evaluation methodology paper
+const modelEvaluationEn = {
+  slug: 'model-evaluation',
+  lang: 'en',
+  meta: {
+    title: 'Battle of the Architects',
+    subtitle: 'A Case Study in Multi-Model Synthesis: Designing the Supermodular Labor Protocol',
+    description: 'Six leading AI models tackle the same civilizational challenge. Which architectural approach proves most robust? An empirical validation of cognitive diversity in AI collaboration.',
+    date: '2026-01-15',
+    authors: 'Björn Kenneth Holmström (with AI collaboration: Claude, Gemini, DeepSeek, Grok, ChatGPT)',
+    readingTime: '~25 minutes',
+    featured: true,
+    type: 'methodology'
+  }
+};
+
+const modelEvaluationSv = {
+  slug: 'model-evaluation',
+  lang: 'sv',
+  meta: {
+    title: 'Arkitekternas strid',
+    subtitle: 'En fallstudie i multimodellsyntes: Att designa det supermodulära arbetsprotokollet',
+    description: 'Sex ledande AI-modeller tar sig an samma civilisationsutmaning. Vilket arkitektoniskt tillvägagångssätt visar sig mest robust? En empirisk validering av kognitiv mångfald i AI-samarbete.',
+    date: '2026-01-15',
+    authors: 'Björn Kenneth Holmström (med AI-samarbete: Claude, Gemini, DeepSeek, Grok, ChatGPT)',
+    readingTime: '~25 minuter',
+    featured: true,
+    type: 'methodology'
   }
 };
 
@@ -62,8 +95,8 @@ export async function load({ depends, url }) {
 
   console.log('Whitepapers page loading with locale:', currentLocale);
 
-  // Get regular papers from index
-  let papers = allPapers
+  // Get regular papers from index (excluding featured papers)
+  let regularPapers = allPapers
     .filter(paper => {
       // Filter out papers without valid metadata or date
       if (!paper.meta || !paper.meta.date) {
@@ -82,17 +115,16 @@ export async function load({ depends, url }) {
       return dateB - dateA; // Sort newest first
     });
 
-  // Add Omega Proof at the top based on current locale
-  if (currentLocale === 'en') {
-    papers = [omegaProofEn, ...papers];
-  } else if (currentLocale === 'sv') {
-    papers = [omegaProofSv, ...papers];
-  }
+  // Get featured papers based on locale
+  const omegaProof = currentLocale === 'sv' ? omegaProofSv : omegaProofEn;
+  const modelEvaluation = currentLocale === 'sv' ? modelEvaluationSv : modelEvaluationEn;
 
-  console.log('Filtered papers (including omega-proof):', papers.length);
+  console.log('Papers loaded:', { regular: regularPapers.length, featured: 2 });
 
   return {
-    papers: papers,
+    omegaProof,
+    modelEvaluation,
+    regularPapers,
     currentLocale: currentLocale
   };
 }

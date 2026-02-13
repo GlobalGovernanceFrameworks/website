@@ -70,5 +70,17 @@
       "download": "Download PDF"
     },
     "meta": "65 Pages • 13 Research Docs • 4 Terminal Bugs"
+  },
+  "modelEvaluation": {
+    "badges": {
+      "featured": "FEATURED RESEARCH",
+      "status": "Completed Jan 2026"
+    },
+    "description": "Six leading AI models tackle the same civilizational challenge. Which architectural approach proves most robust? An empirical validation of cognitive diversity in AI collaboration.",
+    "actions": {
+      "read": "Read Full Analysis",
+      "summary": "Quick Summary"
+    },
+    "meta": "~25 min read • 6 AI Models • 5 Sections"
   }
 }

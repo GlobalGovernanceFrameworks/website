@@ -151,6 +151,7 @@ const pageSpecificTranslationsMap = [
   { route: '/resources/protocols', dataKey: 'resourcesProtocols', fileName: 'resourcesProtocols' },
   { route: '/resources/books', dataKey: 'books', fileName: 'books' },
   { route: '/resources/whitepapers/omega-proof', dataKey: 'omega', fileName: 'omega' },
+  { route: '/resources/whitepapers/model-evaluation', dataKey: 'modelEvaluation', fileName: 'modelEvaluation' },
   { route: '/resources/whitepapers', dataKey: 'whitepapers', fileName: 'whitepapers' },
   { route: '/projects', dataKey: 'activeProjects', fileName: 'activeProjects' },
   { route: '/resources', dataKey: 'resources', fileName: 'resources' },

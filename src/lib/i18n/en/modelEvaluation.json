@@ -1,0 +1,44 @@
+{
+  "title": "Battle of the Architects",
+  "subtitle": "A Case Study in Multi-Model Synthesis: Designing the Supermodular Labor Protocol",
+  "description": "Six leading AI models tackle the same civilizational challenge. Which architectural approach proves most robust? An empirical validation of cognitive diversity in AI collaboration.",
+  
+  "badges": {
+    "featured": "FEATURED RESEARCH",
+    "status": "Completed Jan 2026"
+  },
+  
+  "actions": {
+    "read": "Read Full Analysis",
+    "summary": "Quick Summary"
+  },
+  
+  "executiveSummary": "Executive Summary",
+  "executiveSummarySubtitle": "A quick overview for time-constrained readers",
+  "downloadSvg": "Download SVG",
+  "theScorecard": "The Scorecard",
+  
+  "sections": {
+    "experiment": "The Experiment",
+    "prompt": "The Prompt",
+    "responses": "The Responses",
+    "evaluation": "The Evaluation",
+    "insights": "The Insights"
+  },
+  
+  "tableOfContents": "Table of Contents",
+  "backToOverview": "Back to Overview",
+  "endOfAnalysis": "END OF ANALYSIS",
+  "moreResearch": "More Research",
+  
+  "foundValuable": "Found this research valuable?",
+  "stayConnected": "Stay connected for updates on new research publications and methodological developments.",
+  
+  "fallbackNotice": "Note: Some content is displayed in English as Swedish translation is not yet available.",
+  
+  "meta": {
+    "date": "January 2026",
+    "authors": "Björn Kenneth Holmström (with AI collaboration: Claude, Gemini, DeepSeek, Grok, ChatGPT)",
+    "readingTime": "~25 minutes"
+  }
+}

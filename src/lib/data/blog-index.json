@@ -272,6 +272,28 @@
   },
   {
     "meta": {
+      "title": "Japanese Translation Added by Community Contributor",
+      "description": "Community member eltociear translates 107 files, marking first language expansion beyond Swedish and English",
+      "date": "2026-01-28",
+      "author": "Björn K. Holmström",
+      "category": "update",
+      "tags": [
+        "translation",
+        "community",
+        "japanese",
+        "open-source"
+      ],
+      "hashtags": [
+        "OpenSource",
+        "GlobalGovernance",
+        "CommunityDriven"
+      ]
+    },
+    "slug": "japanese-website-translations",
+    "lang": "en"
+  },
+  {
+    "meta": {
       "title": "Meet the Community Weavers: Tending the Social Soil of a Regenerative World",
       "description": "Discover Community Weavers—relational gardeners who rebuild trust, enable Hearts and Love Ledger, and weave the social fabric for thriving communities.",
       "author": "Global Governance Frameworks",
@@ -756,6 +778,28 @@
       "readTime": 8
     },
     "slug": "introducing-leaves",
+    "lang": "sv"
+  },
+  {
+    "meta": {
+      "title": "Japansk översättning tillagd av community-bidragsgivare",
+      "description": "Community-medlem eltociear översätter 107 filer, markerar första språkexpansionen bortom svenska och engelska",
+      "date": "2026-01-28",
+      "author": "Björn K. Holmström",
+      "category": "update",
+      "tags": [
+        "översättning",
+        "community",
+        "japanska",
+        "open-source"
+      ],
+      "hashtags": [
+        "OpenSource",
+        "GlobalStyrning",
+        "CommunityDrivet"
+      ]
+    },
+    "slug": "japanese-website-translations",
     "lang": "sv"
   },
   {

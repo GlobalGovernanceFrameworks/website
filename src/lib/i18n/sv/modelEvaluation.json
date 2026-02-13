@@ -1,0 +1,43 @@
+{
+  "title": "Arkitekternas kamp",
+  "subtitle": "En fallstudie i multimodell-syntes: Att designa det supermodulära arbetsprotokollet",
+  "executiveSummary": "Exekutiv sammanfattning",
+  "executiveSummarySubtitle": "En snabb överblick för läsare med tidsbrist",
+  "readFullAnalysis": "Läs hela analysen",
+  "quickSummary": "Snabbresumé",
+  "downloadSvg": "Ladda ner SVG",
+  "theScorecard": "Resultatkortet",
+  "badges": {
+    "featured": "UTVALD FORSKNING",
+    "status": "Slutförd jan 2026"
+  },
+  "description": "Sex ledande AI-modeller tar sig an samma civilisatoriska utmaning. Vilken arkitektonisk metod visar sig vara mest robust? En empirisk validering av kognitiv mångfald i AI-samarbete.",
+  "actions": {
+    "read": "Läs hela analysen",
+    "summary": "Snabbresumé"
+  },
+  
+  "sections": {
+    "experiment": "Experimentet",
+    "prompt": "Prompten",
+    "responses": "Svaren",
+    "evaluation": "Utvärderingen",
+    "insights": "Insikterna"
+  },
+  
+  "tableOfContents": "Innehållsförteckning",
+  "backToOverview": "Tillbaka till översikten",
+  "endOfAnalysis": "SLUT PÅ ANALYSEN",
+  "moreResearch": "Mer forskning",
+  
+  "foundValuable": "Fann du denna forskning värdefull?",
+  "stayConnected": "Håll kontakten för uppdateringar om nya forskningspublikationer och metodutveckling.",
+  
+  "fallbackNotice": "Obs: Visst innehåll visas på engelska då svensk översättning ännu inte är tillgänglig.",
+  
+  "meta": {
+    "date": "Januari 2026",
+    "authors": "Björn Kenneth Holmström (i samarbete med AI: Claude, Gemini, DeepSeek, Grok, ChatGPT)",
+    "readingTime": "~25 minuter"
+  }
+}

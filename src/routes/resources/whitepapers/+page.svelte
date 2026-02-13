@@ -32,9 +32,8 @@
     return fallback;
   }
 
-  // Helper to find the Omega Proof paper
-  $: omegaPaper = data.papers.find(p => p.slug === 'omega-proof');
-  $: standardPapers = data.papers.filter(p => p.slug !== 'omega-proof');
+  // Destructure the new data structure
+  $: ({ omegaProof, modelEvaluation, regularPapers } = data);
 
   function getStatusInfo(status) {
     const statusMap = {
@@ -92,73 +91,103 @@
     </p>
   </div>
   
-  {#if data.papers.length === 0}
-    <div class="no-papers">
-      <div class="no-papers-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-      </div>
-      <h3>{getWhitepaperTranslation('noPapers.title', 'No white papers found')}</h3>
-      <p>
-        {getWhitepaperTranslation('noPapers.message', `No white papers found for the selected language (${currentLang}). Try switching to a different language using the language selector in the header.`).replace('{language}', currentLang)}
-      </p>
-      <p class="follow-prompt">
-        {getWhitepaperTranslation('noPapers.followPrompt', 'Follow us to get notified when we publish new research!')}
-      </p>
-    </div>
-    <Follow />
-    
-  {:else}
-     {#if omegaPaper}
-      <div class="omega-hero-wrapper">
-        <div class="omega-hero-card">
-          <div class="omega-content">
-            <div class="omega-badges">
-              <span class="omega-badge featured">{getWhitepaperTranslation('omega.badges.featured', 'FEATURED RESEARCH')}</span>
-              <span class="omega-badge status">{getWhitepaperTranslation('omega.badges.status', 'Completed Jan 2026')}</span>
-            </div>
-            
-            <h2>
-              <a href="{base}/resources/whitepapers/omega-proof" style="color: inherit; text-decoration: none;">
-                {omegaPaper.meta.title}
-              </a>
-            </h2>
-            
-            <p class="omega-subtitle">{omegaPaper.meta.subtitle}</p>
-            <p class="omega-desc">
-              {getWhitepaperTranslation('omega.description', 'We used adversarial AI to simulate the four veto-players in the Ukraine war. They unanimously rejected a mathematically optimal peace deal. This is the autopsy of why peace is architecturally impossible under current rules.')}
-            </p>
-            
-            <div class="omega-actions">
-              <div class="button-row">
-                <a href="{base}/resources/whitepapers/omega-proof" class="omega-btn">
-                  {getWhitepaperTranslation('omega.actions.read', 'Read the Analysis')} →
-                </a>
-                {#if omegaPaper.meta.pdfPath}
-                  <a href="{omegaPaper.meta.pdfPath}" class="omega-btn secondary" download>
-                    <span class="icon">📥</span> {getWhitepaperTranslation('omega.actions.download', 'Download PDF')}
-                  </a>
-                {/if}
-              </div>
-              <span class="omega-meta">{getWhitepaperTranslation('omega.meta', '65 Pages • 13 Research Docs • 4 Terminal Bugs')}</span>
-            </div>
+  <!-- Omega Proof - Flagship Research -->
+  {#if omegaProof}
+    <div class="omega-hero-wrapper">
+      <div class="omega-hero-card">
+        <div class="omega-content">
+          <div class="omega-badges">
+            <span class="omega-badge featured">{getWhitepaperTranslation('omega.badges.featured', 'FEATURED RESEARCH')}</span>
+            <span class="omega-badge status">{getWhitepaperTranslation('omega.badges.status', 'Completed Jan 2026')}</span>
           </div>
           
-          <div class="omega-visual">
-            <div class="visual-placeholder">Ω</div>
+          <h2>
+            <a href="{base}/resources/whitepapers/omega-proof" style="color: inherit; text-decoration: none;">
+              {omegaProof.meta.title}
+            </a>
+          </h2>
+          
+          <p class="omega-subtitle">{omegaProof.meta.subtitle}</p>
+          <p class="omega-desc">
+            {getWhitepaperTranslation('omega.description', 'We used adversarial AI to simulate the four veto-players in the Ukraine war. They unanimously rejected a mathematically optimal peace deal. This is the autopsy of why peace is architecturally impossible under current rules.')}
+          </p>
+          
+          <div class="omega-actions">
+            <div class="button-row">
+              <a href="{base}/resources/whitepapers/omega-proof" class="omega-btn">
+                {getWhitepaperTranslation('omega.actions.read', 'Read the Analysis')} →
+              </a>
+              {#if omegaProof.meta.pdfPath}
+                <a href="{omegaProof.meta.pdfPath}" class="omega-btn secondary" download>
+                  <span class="icon">📥</span> {getWhitepaperTranslation('omega.actions.download', 'Download PDF')}
+                </a>
+              {/if}
+            </div>
+            <span class="omega-meta">{getWhitepaperTranslation('omega.meta', '65 Pages • 13 Research Docs • 4 Terminal Bugs')}</span>
+          </div>
+        </div>
+        
+        <div class="omega-visual">
+          <div class="visual-placeholder">Ω</div>
+        </div>
+      </div>
+    </div>
+  {/if}
+
+  <!-- Model Evaluation - Featured Methodology -->
+  {#if modelEvaluation}
+    <div class="methodology-hero-wrapper">
+      <div class="methodology-hero-card">
+        <div class="methodology-content">
+          <div class="methodology-badges">
+            <span class="methodology-badge featured">{getWhitepaperTranslation('modelEvaluation.badges.featured', 'FEATURED RESEARCH')}</span>
+            <span class="methodology-badge status">{getWhitepaperTranslation('modelEvaluation.badges.status', 'Completed Jan 2026')}</span>
+          </div>
+          
+          <h2>
+            <a href="{base}/resources/whitepapers/model-evaluation" style="color: inherit; text-decoration: none;">
+              {modelEvaluation.meta.title}
+            </a>
+          </h2>
+          
+          <p class="methodology-subtitle">{modelEvaluation.meta.subtitle}</p>
+          <p class="methodology-desc">
+            {getWhitepaperTranslation('modelEvaluation.description', 'Six leading AI models tackle the same civilizational challenge. Which architectural approach proves most robust? An empirical validation of cognitive diversity in AI collaboration.')}
+          </p>
+          
+          <div class="methodology-actions">
+            <div class="button-row">
+              <a href="{base}/resources/whitepapers/model-evaluation" class="methodology-btn">
+                {getWhitepaperTranslation('modelEvaluation.actions.read', 'Read Full Analysis')} →
+              </a>
+              <a href="{base}/resources/whitepapers/model-evaluation#executive-summary" class="methodology-btn secondary">
+                {getWhitepaperTranslation('modelEvaluation.actions.summary', 'Quick Summary')}
+              </a>
+            </div>
+            <span class="methodology-meta">{getWhitepaperTranslation('modelEvaluation.meta', '~25 min read • 6 AI Models • 5 Sections')}</span>
+          </div>
+        </div>
+        
+        <div class="methodology-visual">
+          <div class="visual-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
           </div>
         </div>
       </div>
-    {/if}
+    </div>
+  {/if}
 
+  <!-- Regular Papers Section -->
+  {#if regularPapers && regularPapers.length > 0}
     <div class="papers-section">
       <div class="papers-count">
-        {standardPapers.length} {standardPapers.length === 1 ? getWhitepaperTranslation('papersCount.single', 'other paper') : getWhitepaperTranslation('papersCount.plural', 'other papers')} {getWhitepaperTranslation('papersCount.found', 'found')}
+        {regularPapers.length} {regularPapers.length === 1 ? getWhitepaperTranslation('papersCount.single', 'other paper') : getWhitepaperTranslation('papersCount.plural', 'other papers')} {getWhitepaperTranslation('papersCount.found', 'found')}
       </div>
       
       <div class="papers-list">
-        {#each standardPapers as paper, index}
+        {#each regularPapers as paper, index}
           <article class="paper-card">
             <div class="paper-header">
               <div class="paper-badges">
@@ -219,13 +248,29 @@
         <Follow />
       </div>
     </div>
+  {:else}
+    <div class="no-papers">
+      <div class="no-papers-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+      </div>
+      <h3>{getWhitepaperTranslation('noPapers.title', 'No white papers found')}</h3>
+      <p>
+        {getWhitepaperTranslation('noPapers.message', `No white papers found for the selected language (${currentLang}). Try switching to a different language using the language selector in the header.`).replace('{language}', currentLang)}
+      </p>
+      <p class="follow-prompt">
+        {getWhitepaperTranslation('noPapers.followPrompt', 'Follow us to get notified when we publish new research!')}
+      </p>
+    </div>
+    <Follow />
   {/if}
 </div>
 
 <style>
-  /* --- Omega Hero Styles --- */
+  /* --- Omega Hero Styles (Dark/Dramatic) --- */
   .omega-hero-wrapper {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .omega-hero-card {
@@ -273,46 +318,43 @@
   }
 
   .omega-badge {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
     padding: 0.25rem 0.75rem;
-    border-radius: 2rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   .omega-badge.featured {
-    background: #d97706; /* Gold */
-    color: white;
+    background: rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+    border: 1px solid rgba(239, 68, 68, 0.3);
   }
 
   .omega-badge.status {
-    background: rgba(255,255,255,0.1);
+    background: rgba(100, 116, 139, 0.2);
     color: #cbd5e1;
+    border: 1px solid rgba(100, 116, 139, 0.3);
   }
 
-  .omega-hero-card h2 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin: 0 0 0.5rem 0;
-    background: linear-gradient(to right, #fff, #cbd5e1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .omega-content h2 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
   }
 
   .omega-subtitle {
-    font-size: 1.1rem;
-    color: #94a3b8;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
+    font-size: 1.125rem;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1rem;
+    line-height: 1.4;
   }
 
   .omega-desc {
-    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
     line-height: 1.6;
-    color: #cbd5e1;
     margin-bottom: 2rem;
-    max-width: 600px;
   }
 
   .omega-actions {
@@ -321,75 +363,186 @@
     gap: 1rem;
   }
 
-  /* Add this new class */
   .button-row {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
   }
 
-  /* Update .omega-btn and add .secondary variant */
   .omega-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: white;
-    color: #1e1b4b;
-    font-weight: 700;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    width: fit-content;
-    text-decoration: none;
-    transition: all 0.2s;
   }
 
-  .omega-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  .omega-btn:not(.secondary) {
+    background: white;
+    color: #1e1b4b;
+  }
+
+  .omega-btn:not(.secondary):hover {
+    background: #f1f5f9;
+    transform: translateX(4px);
   }
 
   .omega-btn.secondary {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.1);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.2);
   }
 
   .omega-btn.secondary:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: white;
+    background: rgba(255,255,255,0.15);
   }
 
   .omega-meta {
-    font-size: 0.85rem;
-    color: #94a3b8;
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.6);
     font-family: monospace;
   }
 
-  /* --- Responsive --- */
-  @media (max-width: 768px) {
-    .omega-hero-card {
-      flex-direction: column;
-    }
-    .omega-visual {
-      display: none;
-    }
-    .omega-content {
-      padding: 2rem;
-    }
-    .omega-hero-card h2 {
-      font-size: 2rem;
-    }
+  /* --- Methodology Hero Styles (Blue/Tech) --- */
+  .methodology-hero-wrapper {
+    margin-bottom: 4rem;
   }
 
-  /* --- Rest of Existing Styles --- */
+  .methodology-hero-card {
+    display: flex;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+    color: white;
+    box-shadow: 0 20px 40px -10px rgba(30, 58, 138, 0.4);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .methodology-hero-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(30, 58, 138, 0.5);
+  }
+
+  .methodology-content {
+    flex: 2;
+    padding: 3rem;
+  }
+
+  .methodology-visual {
+    flex: 1;
+    background: rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .visual-icon {
+    width: 8rem;
+    height: 8rem;
+    color: rgba(255,255,255,0.2);
+  }
+
+  .methodology-badges {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .methodology-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .methodology-badge.featured {
+    background: rgba(96, 165, 250, 0.2);
+    color: #bfdbfe;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+  }
+
+  .methodology-badge.status {
+    background: rgba(100, 116, 139, 0.2);
+    color: #cbd5e1;
+    border: 1px solid rgba(100, 116, 139, 0.3);
+  }
+
+  .methodology-content h2 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+  }
+
+  .methodology-subtitle {
+    font-size: 1.125rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .methodology-desc {
+    color: rgba(255,255,255,0.9);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .methodology-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .methodology-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .methodology-btn:not(.secondary) {
+    background: white;
+    color: #1e3a8a;
+  }
+
+  .methodology-btn:not(.secondary):hover {
+    background: #f1f5f9;
+    transform: translateX(4px);
+  }
+
+  .methodology-btn.secondary {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .methodology-btn.secondary:hover {
+    background: rgba(255,255,255,0.15);
+  }
+
+  .methodology-meta {
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.7);
+    font-family: monospace;
+  }
+
+  /* --- Common Styles --- */
   .container {
-    max-width: 1000px;
-    margin: 2rem auto 4rem;
-    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
   }
 
-  /* Breadcrumb */
   .breadcrumb {
     display: flex;
     align-items: center;
@@ -631,39 +784,38 @@
     color: #6B7280;
     font-size: 1rem;
   }
-  
-  /* Bottom Prompt */
-  .bottom-prompt {
-    margin-top: 3rem;
-    padding: 1rem 0;
-    border-top: 1px solid #e5e7eb;
-  }
-  
-  .prompt-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .prompt-text {
-    color: #6B7280;
-    font-size: 0.875rem;
-  }
-  
-  .prompt-link {
-    background: none;
-    border: none;
-    color: #2B4B8C;
-    font-size: 0.875rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: underline;
-    transition: color 0.2s;
-  }
-  
-  .prompt-link:hover {
-    color: #1E40AF;
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .omega-hero-card,
+    .methodology-hero-card {
+      flex-direction: column;
+    }
+
+    .omega-visual,
+    .methodology-visual {
+      border-left: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      min-height: 150px;
+    }
+
+    .omega-content,
+    .methodology-content {
+      padding: 2rem;
+    }
+
+    .visual-placeholder {
+      font-size: 4rem;
+    }
+
+    .visual-icon {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    .omega-content h2,
+    .methodology-content h2 {
+      font-size: 1.5rem;
+    }
   }
 </style>

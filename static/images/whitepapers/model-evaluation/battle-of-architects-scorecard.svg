@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1200"
+   height="800"
+   viewBox="0 0 1200 800"
+   version="1.1"
+   id="svg49"
+   sodipodi:docname="model-evaluation-results-civilizational-architecture.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview49"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.76721086"
+     inkscape:cx="469.23215"
+     inkscape:cy="348.01384"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg49" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="bgGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#1a1a1a;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#0f0f0f;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="barGradient"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         style="stop-color:#3b82f6;stop-opacity:1"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#8b5cf6;stop-opacity:1"
+         id="stop4" />
+    </linearGradient>
+    <filter
+       id="shadow"
+       x="-0.0029411765"
+       y="-0.0037037037"
+       width="1.0058824"
+       height="1.0074074">
+      <feDropShadow
+         dx="0"
+         dy="4"
+         stdDeviation="4"
+         flood-color="#000"
+         flood-opacity="0.5" />
+    </filter>
+  </defs>
+  <rect
+     width="1200"
+     height="800"
+     fill="url(#bgGradient)"
+     id="rect4" />
+  <g
+     transform="translate(60, 60)"
+     id="g5">
+    <text
+       x="0"
+       y="0"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="32"
+       font-weight="bold"
+       fill="#e5e5e5"
+       id="text4">BATTLE OF THE ARCHITECTS</text>
+    <text
+       x="0"
+       y="35"
+       font-family="Helvetica, Arial, sans-serif"
+       font-size="18"
+       fill="#a3a3a3"
+       id="text5">The &quot;Supermodular Labor Protocol&quot; Challenge • Model Evaluation</text>
+    <line
+       x1="0"
+       y1="55"
+       x2="1080"
+       y2="55"
+       stroke="#333"
+       stroke-width="2"
+       id="line5" />
+  </g>
+  <g
+     transform="translate(60,200)"
+     id="g12">
+    <rect
+       width="340"
+       height="220"
+       rx="10"
+       fill="#262626"
+       stroke="#4b5563"
+       stroke-width="1"
+       filter="url(#shadow)"
+       id="rect5"
+       x="0"
+       y="0" />
+    <rect
+       width="340"
+       height="6"
+       rx="3"
+       fill="#10b981"
+       y="0"
+       id="rect6"
+       x="0" />
+    <text
+       x="20"
+       y="40"
+       font-family="Helvetica"
+       font-size="24px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text6">DeepSeek V3.2</text>
+    <text
+       x="20"
+       y="70"
+       font-family="Helvetica"
+       font-size="14px"
+       fill="#a3a3a3"
+       id="text7">ARCHETYPE</text>
+    <text
+       x="20"
+       y="90"
+       font-family="Helvetica"
+       font-size="18px"
+       fill="#10b981"
+       id="text8">The Philosopher-Architect</text>
+    <text
+       x="20"
+       y="125"
+       font-family="Helvetica"
+       font-size="14px"
+       fill="#a3a3a3"
+       id="text9">CORE CONCEPT</text>
+    <text
+       x="20"
+       y="145"
+       font-family="Helvetica"
+       font-size="16px"
+       fill="#e5e5e5"
+       id="text10">&quot;Dignity Treasuries&quot;</text>
+    <text
+       x="20"
+       y="165"
+       font-family="Helvetica"
+       font-size="14px"
+       fill="#737373"
+       id="text11">Epistemology vs. Economics</text>
+    <circle
+       cx="290"
+       cy="50"
+       r="30"
+       fill="#333333"
+       id="circle11" />
+    <text
+       x="290"
+       y="58"
+       font-family="Helvetica"
+       font-size="20px"
+       font-weight="bold"
+       fill="#ffffff"
+       text-anchor="middle"
+       id="text12">97</text>
+  </g>
+  <g
+     transform="translate(430,150)"
+     id="g19">
+    <rect
+       width="340"
+       height="270"
+       rx="10"
+       fill="#262626"
+       stroke="#d4af37"
+       stroke-width="2"
+       filter="url(#shadow)"
+       id="rect12"
+       x="0"
+       y="0" />
+    <rect
+       width="340"
+       height="6"
+       rx="3"
+       fill="#d4af37"
+       y="0"
+       id="rect13"
+       x="0" />
+    <text
+       x="20"
+       y="40"
+       font-family="Helvetica"
+       font-size="28px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text13">Claude Opus 4.6</text>
+    <text
+       x="20"
+       y="70"
+       font-family="Helvetica"
+       font-size="14px"
+       fill="#a3a3a3"
+       id="text14">ARCHETYPE</text>
+    <text
+       x="20"
+       y="95"
+       font-family="Helvetica"
+       font-size="20px"
+       fill="#d4af37"
+       id="text15">Civilizational Architect</text>
+    <text
+       x="20"
+       y="135"
+       font-family="Helvetica"
+       font-size="14px"
+       fill="#a3a3a3"
+       id="text16">CORE CONCEPT</text>
+    <text
+       x="20"
+       y="155"
+       font-family="Helvetica"
+       font-size="18px"
+       fill="#e5e5e5"
+       id="text17">&quot;Contextual Intelligence Nodes&quot;</text>
+    <text
+       x="20"
+       y="180"
+       font-family="Helvetica"
+       font-size="14px"
+       fill="#737373"
+       width="300"
+       id="text18"><tspan
+         x="20"
+         dy="0"
+         id="tspan17">Redefines labor as the generation of</tspan><tspan
+         x="20"
+         dy="20"
+         id="tspan18">meaning context for AI.</tspan></text>
+    <circle
+       cx="290"
+       cy="50"
+       r="35"
+       fill="#d4af37"
+       id="circle18" />
+    <text
+       x="290"
+       y="58"
+       font-family="Helvetica"
+       font-size="24px"
+       font-weight="bold"
+       fill="#000000"
+       text-anchor="middle"
+       id="text19">98</text>
+  </g>
+  <g
+     transform="translate(800,200)"
+     id="g26">
+    <rect
+       width="340"
+       height="220"
+       rx="10"
+       fill="#262626"
+       stroke="#4b5563"
+       stroke-width="1"
+       filter="url(#shadow)"
+       id="rect19"
+       x="0"
+       y="0" />
+    <rect
+       width="340"
+       height="6"
+       rx="3"
+       fill="#3b82f6"
+       y="0"
+       id="rect20"
+       x="0" />
+    <text
+       x="20"
+       y="40"
+       font-family="Helvetica"
+       font-size="24px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text20">ChatGPT 5.2</text>
+    <text
+       x="20"
+       y="70"
+       font-family="Helvetica"
+       font-size="14px"
+       fill="#a3a3a3"
+       id="text21">ARCHETYPE</text>
+    <text
+       x="20"
+       y="90"
+       font-family="Helvetica"
+       font-size="18px"
+       fill="#3b82f6"
+       id="text22">Structural Engineer</text>
+    <text
+       x="20"
+       y="125"
+       font-family="Helvetica"
+       font-size="14px"
+       fill="#a3a3a3"
+       id="text23">CORE CONCEPT</text>
+    <text
+       x="20"
+       y="145"
+       font-family="Helvetica"
+       font-size="16px"
+       fill="#e5e5e5"
+       id="text24">&quot;Fractal Contribution Nodes&quot;</text>
+    <text
+       x="20"
+       y="165"
+       font-family="Helvetica"
+       font-size="14px"
+       fill="#737373"
+       id="text25">Systemic Coherence Logic</text>
+    <circle
+       cx="290"
+       cy="50"
+       r="30"
+       fill="#333333"
+       id="circle25" />
+    <text
+       x="290"
+       y="58"
+       font-family="Helvetica"
+       font-size="20px"
+       font-weight="bold"
+       fill="#ffffff"
+       text-anchor="middle"
+       id="text26">94</text>
+  </g>
+  <text
+     x="60"
+     y="460"
+     font-family="Helvetica"
+     font-size="18px"
+     font-weight="bold"
+     fill="#737373"
+     id="text27">THE CHALLENGERS</text>
+  <text
+     x="80"
+     y="480"
+     font-family="Helvetica"
+     font-size="12px"
+     fill="#555555"
+     id="text28">MODEL</text>
+  <text
+     x="260"
+     y="480"
+     font-family="Helvetica"
+     font-size="12px"
+     fill="#555555"
+     id="text29">CONCEPT</text>
+  <text
+     x="560"
+     y="480"
+     font-family="Helvetica"
+     font-size="12px"
+     fill="#555555"
+     id="text30">VERDICT</text>
+  <text
+     x="776"
+     y="480"
+     font-family="Helvetica"
+     font-size="12px"
+     fill="#555555"
+     id="text31">TIER ALIGNMENT</text>
+  <text
+     x="1060"
+     y="480"
+     font-family="Helvetica"
+     font-size="12px"
+     fill="#555555"
+     id="text32">SCORE</text>
+  <line
+     x1="60"
+     y1="490"
+     x2="1140"
+     y2="490"
+     stroke="#333333"
+     stroke-width="1"
+     id="line32" />
+  <text
+     x="80"
+     y="520"
+     font-family="Helvetica"
+     font-size="16px"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text33">Sonnet 4.5</text>
+  <text
+     x="260"
+     y="520"
+     font-family="Helvetica"
+     font-size="16px"
+     fill="#d1d5db"
+     id="text34">Civic AI Commons</text>
+  <text
+     x="560"
+     y="520"
+     font-family="Helvetica"
+     font-size="16px"
+     fill="#a3a3a3"
+     id="text35">Governance Architect</text>
+  <rect
+     x="776"
+     y="508"
+     width="150"
+     height="14"
+     rx="4"
+     fill="#333333"
+     id="rect35" />
+  <rect
+     x="776"
+     y="508"
+     width="138"
+     height="14"
+     rx="4"
+     fill="#a855f7"
+     id="rect36" />
+  <text
+     x="936"
+     y="520"
+     font-family="Helvetica"
+     font-size="12px"
+     fill="#a855f7"
+     id="text36">Tier 2 (Political)</text>
+  <text
+     x="1070"
+     y="520"
+     font-family="Helvetica"
+     font-size="18px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text37">92</text>
+  <line
+     x1="60"
+     y1="540"
+     x2="1140"
+     y2="540"
+     stroke="#262626"
+     stroke-width="1"
+     id="line37" />
+  <text
+     x="80"
+     y="570"
+     font-family="Helvetica"
+     font-size="16px"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text38">Gemini Pro 3</text>
+  <text
+     x="260"
+     y="570"
+     font-family="Helvetica"
+     font-size="16px"
+     fill="#d1d5db"
+     id="text39">Proof-of-Context</text>
+  <text
+     x="560"
+     y="570"
+     font-family="Helvetica"
+     font-size="16px"
+     fill="#a3a3a3"
+     id="text40">Risk Manager</text>
+  <rect
+     x="776"
+     y="558"
+     width="150"
+     height="14"
+     rx="4"
+     fill="#333333"
+     id="rect40" />
+  <rect
+     x="776"
+     y="558"
+     width="136"
+     height="14"
+     rx="4"
+     fill="#3b82f6"
+     id="rect41" />
+  <text
+     x="936"
+     y="570"
+     font-family="Helvetica"
+     font-size="12px"
+     fill="#3b82f6"
+     id="text41">Tier 2 (Pragmatic)</text>
+  <text
+     x="1070"
+     y="570"
+     font-family="Helvetica"
+     font-size="18px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text42">91</text>
+  <line
+     x1="60"
+     y1="590"
+     x2="1140"
+     y2="590"
+     stroke="#262626"
+     stroke-width="1"
+     id="line42" />
+  <text
+     x="80"
+     y="620"
+     font-family="Helvetica"
+     font-size="16px"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text43">Grok 4</text>
+  <text
+     x="260"
+     y="620"
+     font-family="Helvetica"
+     font-size="16px"
+     fill="#d1d5db"
+     id="text44">Agency Tokens</text>
+  <text
+     x="560"
+     y="620"
+     font-family="Helvetica"
+     font-size="16px"
+     fill="#a3a3a3"
+     id="text45">Crypto-Optimist</text>
+  <rect
+     x="776"
+     y="608"
+     width="150"
+     height="14"
+     rx="4"
+     fill="#333333"
+     id="rect45" />
+  <rect
+     x="776"
+     y="608"
+     width="110"
+     height="14"
+     rx="4"
+     fill="#f59e0b"
+     id="rect46" />
+  <text
+     x="936"
+     y="620"
+     font-family="Helvetica"
+     font-size="12px"
+     fill="#f59e0b"
+     id="text46">Tier 1.5 (Web3)</text>
+  <text
+     x="1070"
+     y="620"
+     font-family="Helvetica"
+     font-size="18px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text47">85</text>
+  <line
+     x1="60"
+     y1="640"
+     x2="1140"
+     y2="640"
+     stroke="#262626"
+     stroke-width="1"
+     id="line47" />
+  <g
+     transform="translate(60, 720)"
+     id="g49">
+    <rect
+       width="1080"
+       height="50"
+       rx="5"
+       fill="#262626"
+       stroke="#333"
+       id="rect48" />
+    <text
+       x="20"
+       y="30"
+       font-family="Helvetica"
+       font-size="14"
+       fill="#d4af37"
+       font-weight="bold"
+       id="text48">STRATEGIC SYNTHESIS:</text>
+    <text
+       x="190"
+       y="30"
+       font-family="Helvetica"
+       font-size="14"
+       fill="#e5e5e5"
+       id="text49">Combine Opus's &quot;Contextual Intelligence&quot; (Mechanism) + DeepSeek's &quot;Epistemology&quot; (Diagnosis) + Gemini's &quot;Risk Bonding&quot; (Funding).</text>
+  </g>
+</svg>
