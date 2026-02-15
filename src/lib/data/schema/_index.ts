@@ -31,27 +31,11 @@ import { conduitProtocolEntities, conduitProtocolRelationships } from './cluster
 import type { GgfEntity, GgfRelationship, GgfCluster, ValidationResult } from './_types';
 import { tierMetadata, groupMetadata } from './_types';
 
-const completeApplicationLayerEntities: GgfEntity[] = [
+// (Legacy: entities migrated to dedicated cluster files)
 
-  // === TIER 2: FOUNDATIONAL APPLICATION LAYER ===
-  {
-    id: 'council_phc',
-    type: 'Council',
-    name: 'Planetary Health Council',
-    shortName: 'PHC',
-    description: 'Meta-Governance council overseeing planetary boundaries',
-    tier: 1, // Part of core governance OS
-    status: 'Proposed',
-    primaryDomain: 'Ecological',
-    geographicScope: 'Global',
-    implementationPriority: 'Critical',
-    dependencies: ['framework_meta_gov']
-  },
-];
-
-// Additional relationships for the complete entities
-const completeApplicationLayerRelationships: GgfRelationship[] = [
-  // === TIER 1 → TIER 2 ENABLING RELATIONSHIPS ===
+// Cross-cluster relationships (connecting entities across different cluster files)
+const crossClusterRelationships: GgfRelationship[] = [
+  // === TIER 1 â†’ TIER 2 ENABLING RELATIONSHIPS ===
   {
     from: 'framework_aubi',
     to: 'framework_work_liberation',
@@ -89,7 +73,7 @@ const completeApplicationLayerRelationships: GgfRelationship[] = [
     sequenceType: 'Sequential'
   },
 
-  // === TIER 2 → TIER 3 ENABLING RELATIONSHIPS ===
+  // === TIER 2 â†’ TIER 3 ENABLING RELATIONSHIPS ===
   {
     from: 'framework_global_health',
     to: 'framework_migration',
@@ -100,7 +84,7 @@ const completeApplicationLayerRelationships: GgfRelationship[] = [
     sequenceType: 'Sequential'
   },
   {
-    from: 'framework_educational_systems',
+    from: 'framework_education',
     to: 'framework_digital_commons',
     type: 'ENABLES',
     description: 'Educational systems enable knowledge commons preservation',
@@ -109,7 +93,7 @@ const completeApplicationLayerRelationships: GgfRelationship[] = [
     sequenceType: 'Sequential'
   },
 
-  // === TIER 3 → TIER 4 ENABLING RELATIONSHIPS ===
+  // === TIER 3 â†’ TIER 4 ENABLING RELATIONSHIPS ===
   {
     from: 'framework_digital_commons',
     to: 'framework_consciousness_development',
@@ -179,7 +163,6 @@ export const allEntities: GgfEntity[] = [
   ...mobilityCommonsEntities,
   ...developmentEntities, 
   ...visionaryMetaEntities,
-  ...completeApplicationLayerEntities,
   ...hearthstoneEntities,
   ...conduitProtocolEntities
 ];
@@ -203,7 +186,7 @@ export const allRelationships: GgfRelationship[] = [
   ...mobilityCommonsRelationships,
   ...developmentRelationships,
   ...visionaryMetaRelationships,
-  ...completeApplicationLayerRelationships,
+  ...crossClusterRelationships,
   ...hearthstoneRelationships,
   ...conduitProtocolRelationships
 ];
@@ -348,42 +331,7 @@ export const clusters: GgfCluster[] = [
     entities: ecologicalEntities.map(e => e.id),
     color: '#059669'
   },
-  {
-    id: 'human_capability_applications',
-    name: 'Human Capability Systems',
-    description: 'Systems ensuring healthy, capable, and informed citizenry',
-    tier: 2,
-    entities: completeApplicationLayerEntities.filter(e => 
-      e.tier === 2 && 
-      ['Governance', 'Economic'].includes(e.primaryDomain!) &&
-      // EXCLUDE the frameworks now in Human Flourishing cluster
-      !['framework_educational_systems', 'framework_global_health', 'framework_mental_health'].includes(e.id)
-    ).map(e => e.id),
-    color: '#059669'
-  },
-  {
-    id: 'technology_applications',
-    name: 'Technology Governance Applications',
-    description: 'Technology and biotech governance systems',
-    tier: 2,
-    entities: completeApplicationLayerEntities.filter(e => e.tier === 2 && e.primaryDomain === 'Technology').map(e => e.id),
-    color: '#059669'
-  },
   // TIER 3: EQUITY & CULTURAL SYSTEMS
-  {
-    id: 'equity_cultural_layer',
-    name: 'Remaining Specialized Applications',
-    description: 'Migration and other remaining specialized application frameworks',
-    tier: 3,
-    entities: completeApplicationLayerEntities.filter(e => 
-      e.tier === 3 &&
-      // EXCLUDE frameworks now in other specialized clusters
-      !['framework_disability_rights', 'framework_gender_equality', 'framework_youth_intergenerational', 'framework_aging_population'].includes(e.id) &&
-      !['framework_digital_commons', 'framework_cultural_heritage', 'framework_religious_spiritual'].includes(e.id) &&
-      !['framework_urban_community', 'framework_rural_development', 'framework_migration'].includes(e.id)
-    ).map(e => e.id),
-    color: '#dc2626'
-  },
   {
     id: 'social_equity_inclusion_cluster',
     name: 'Social Equity & Inclusion Systems',
