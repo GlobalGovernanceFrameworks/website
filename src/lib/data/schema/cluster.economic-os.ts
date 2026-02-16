@@ -33,7 +33,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/adaptive-universal-basic-income',
       titleKey: 'framework.docs.nav.frameworkTitles.adaptiveUniversalBasicIncome',
-      emoji: '💰',
+      emoji: 'ðŸ’°',
       version: '1.0',
       slug: 'adaptive-universal-basic-income',
       group: 'globalEconomicSystems'
@@ -53,7 +53,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/financial-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.financialSystems',
-      emoji: '❤️',
+      emoji: 'â¤ï¸',
       slug: 'financial-systems',
       group: 'globalEconomicSystems'
     }
@@ -74,7 +74,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/work-in-liberation',
       titleKey: 'framework.docs.nav.frameworkTitles.workInLiberation',
-      emoji: '👥',
+      emoji: 'ðŸ‘¥',
       version: '1.0',
       slug: 'work-in-liberation',
       group: 'globalEconomicSystems'
@@ -94,7 +94,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/nested-economies',
       titleKey: 'framework.docs.nav.frameworkTitles.nestedEconomies',
-      emoji: '💱',
+      emoji: 'ðŸ’±',
       version: '1.0',
       slug: 'nested-economies',
       group: 'globalEconomicSystems'
@@ -115,7 +115,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/gaian-trade',
       titleKey: 'framework.docs.nav.frameworkTitles.gaianTrade',
-      emoji: '🌍',
+      emoji: 'ðŸŒ',
       slug: 'gaian-trade',
       group: 'globalEconomicSystems'
     }
@@ -134,7 +134,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/global-supply-chains-and-logistics',
       titleKey: 'framework.docs.nav.frameworkTitles.globalSupplyChainsAndLogistics',
-      emoji: '🚢',
+      emoji: 'ðŸš¢',
       version: '1.0',
       slug: 'global-supply-chains-and-logistics',
       group: 'globalEconomicSystems'
@@ -207,7 +207,7 @@ export const economicOSEntities: GgfEntity[] = [
     primaryDomain: 'Economic',
     geographicScope: 'Regional',
     implementationPriority: 'Critical',
-    dependencies: ['framework_aubi', 'institution_gcf']
+    dependencies: ['framework_aubi', 'mechanism_gcf']
   },
 
   // === PLATFORMS & INFRASTRUCTURE ===
@@ -363,7 +363,7 @@ export const economicOSRelationships: GgfRelationship[] = [
     sequenceType: 'Sequential'
   },
   {
-    from: 'institution_gcf',
+    from: 'mechanism_gcf',
     to: 'mechanism_hearts_treasury',
     type: 'FUNDS',
     description: 'The Global Commons Fund provides the initial capitalization for regional Hearts Treasuries to ensure fiat liquidity.',

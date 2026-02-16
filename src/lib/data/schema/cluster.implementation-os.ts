@@ -27,7 +27,7 @@ export const implementationOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/implementation-and-adaptation',
       titleKey: 'framework.docs.nav.frameworkTitles.implementationAndAdaptation',
-      emoji: '🧰',
+      emoji: 'ðŸ§°',
       version: '1.0',
       slug: 'implementation-and-adaptation'
     }

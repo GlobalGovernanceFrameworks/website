@@ -21,13 +21,13 @@ export const mobilityCommonsEntities: GgfEntity[] = [
       'framework_indigenous',
       'framework_climate_energy',
       'framework_aurora_accord',
-      'framework_disability_justice'
+      'framework_disability'
     ],
     enables: ['council_gmc'],
     ui: {
       path: '/frameworks/mobility-commons',
       titleKey: 'framework.docs.nav.frameworkTitles.mobilityCommons',
-      emoji: '🚆',
+      emoji: 'ðŸš†',
       slug: 'mobility-commons',
       group: 'planetaryHealthResilience' // Or 'globalEconomicSystems'
     }
@@ -104,7 +104,7 @@ export const mobilityCommonsRelationships: GgfRelationship[] = [
 
   // Justice and Equity Layer Integration
   {
-    from: 'framework_disability_justice',
+    from: 'framework_disability',
     to: 'framework_mobility_commons',
     type: 'VALIDATES',
     description: 'The Disability Justice Layer provides mandatory universal design standards and auditing for all mobility infrastructure and services.',
@@ -112,7 +112,7 @@ export const mobilityCommonsRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
   {
-    from: 'framework_gender_justice',
+    from: 'framework_gender',
     to: 'framework_mobility_commons',
     type: 'VALIDATES',
     description: 'The Gender & Kinship Justice Council audits mobility projects for safety and equity, ensuring they serve marginalized communities.',
@@ -120,7 +120,7 @@ export const mobilityCommonsRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
   {
-    from: 'framework_youth_justice',
+    from: 'framework_youth',
     to: 'framework_mobility_commons',
     type: 'VALIDATES',
     description: 'The Youth & Future Generations framework provides veto power and seven-generation impact assessments for long-term mobility projects.',
@@ -166,11 +166,11 @@ export const developmentEntities: GgfEntity[] = [
     primaryDomain: 'Governance',
     geographicScope: 'Regional',
     implementationPriority: 'Medium',
-    dependencies: ['framework_educational_systems', 'framework_nested_sovereignty'],
+    dependencies: ['framework_education', 'framework_nested_sovereignty'],
     ui: {
       path: '/frameworks/bioregional-polis',
       titleKey: 'framework.docs.nav.frameworkTitles.bioregionalPolis',
-      emoji: '🏙️',
+      emoji: 'ðŸ™ï¸',
       slug: 'bioregional-polis',
       group: 'humanSocialSystems'
     }
@@ -190,7 +190,7 @@ export const developmentEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/living-land-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.livingLandProtocol',
-      emoji: '🛖',
+      emoji: 'ðŸ›–',
       slug: 'living-land-protocol'
     }
   },
@@ -225,7 +225,7 @@ export const developmentEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/regenerative-journeys',
       titleKey: 'framework.docs.nav.frameworkTitles.regenerativeJourneys',
-      emoji: '👣',
+      emoji: 'ðŸ‘£',
       slug: 'regenerative-journeys',
       group: 'humanSocialSystems'
     }

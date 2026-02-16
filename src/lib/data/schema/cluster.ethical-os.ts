@@ -25,7 +25,7 @@ export const ethicalOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/indigenous-sovereignty-pathways',
       titleKey: 'framework.docs.nav.frameworkTitles.indigenousSovereigntyPathways',
-      emoji: '🪶',
+      emoji: 'ðŸª¶',
       version: '1.0',
       slug: 'indigenous-sovereignty-pathways',
       group: 'socialFabricJustice'
@@ -87,7 +87,7 @@ export const ethicalOSEntities: GgfEntity[] = [
       'framework_treaty',
       'framework_indigenous',
       'framework_meta_gov',
-      'framework_genesis'
+      'protocol_genesis'
     ],
     enables: [
       'protocol_dynamic_rights_spectrum',
@@ -104,7 +104,7 @@ export const ethicalOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/moral-operating-system',
       titleKey: 'framework.docs.nav.frameworkTitles.moralOperatingSystem',
-      emoji: '🦋',
+      emoji: 'ðŸ¦‹',
       slug: 'moral-operating-system'
     }
   },
@@ -219,6 +219,21 @@ export const ethicalOSEntities: GgfEntity[] = [
     status: 'Proposed',
     primaryDomain: 'Technology',
     dependencies: ['framework_mos', 'framework_technology_governance']
+  },
+
+  // === INDIGENOUS TECHNOLOGY PROTOCOLS ===
+  {
+    id: 'protocol_indigenous_ai',
+    type: 'Protocol',
+    name: 'Indigenous AI Sovereignty Protocol',
+    shortName: 'Indigenous AI Protocol',
+    description: 'Protocol governing AI systems trained on or interacting with Traditional Ecological Knowledge (TEK). Ensures Indigenous data sovereignty, community consent, and benefit-sharing for any AI applications derived from Indigenous knowledge systems.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Technology',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_indigenous', 'protocol_fpic2', 'framework_technology_governance']
   }
 ];
 
@@ -326,7 +341,7 @@ export const ethicalOSRelationships: GgfRelationship[] = [
   
   // MOS Dependency on Genesis Protocol
   {
-    from: 'framework_genesis', // Assumed ID for Genesis Protocol
+    from: 'protocol_genesis', // Assumed ID for Genesis Protocol
     to: 'framework_mos',
     type: 'GUIDES',
     description: 'The Genesis Protocol\'s "Conscience & Sovereignty Clause" provides the foundational operating constraints for the MOS.'

@@ -26,7 +26,7 @@ export const institutionalRegenerationEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/institutional-regeneration',
       titleKey: 'framework.docs.nav.frameworkTitles.institutionalRegeneration',
-      emoji: '🔄',
+      emoji: 'ðŸ”„',
       version: '0.8',
       slug: 'institutional-regeneration'
     }
@@ -59,20 +59,6 @@ export const institutionalRegenerationEntities: GgfEntity[] = [
     primaryDomain: 'Governance',
     geographicScope: 'Institutional',
     implementationPriority: 'Critical',
-    dependencies: ['framework_institutional_regeneration']
-  },
-
-  {
-    id: 'institution_ggf_catalyst',
-    type: 'Institution',
-    name: 'GGF Catalyst',
-    shortName: 'GGF Catalyst',
-    description: 'Central coordinating body supporting institutional regeneration through training, resources, and community facilitation',
-    tier: 1,
-    status: 'Proposed',
-    primaryDomain: 'Governance',
-    geographicScope: 'Global',
-    implementationPriority: 'High',
     dependencies: ['framework_institutional_regeneration']
   },
 

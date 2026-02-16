@@ -26,7 +26,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/planetary-health-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.planetaryHealthGovernance',
-      emoji: '💚',
+      emoji: 'ðŸ’š',
       version: '1.0',
       slug: 'planetary-health-governance',
       group: 'planetaryHealthResilience'
@@ -47,7 +47,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/environmental-stewardship',
       titleKey: 'framework.docs.nav.frameworkTitles.environmentalStewardship',
-      emoji: '🌿',
+      emoji: 'ðŸŒ¿',
       slug: 'environmental-stewardship',
       group: 'ecologicalSystems'
     }
@@ -67,7 +67,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/climate-and-energy-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.climateAndEnergyGovernance',
-      emoji: '⚡',
+      emoji: 'âš¡',
       slug: 'climate-and-energy-governance',
       group: 'planetaryHealthResilience'
     }
@@ -89,7 +89,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/kinship-garden',
       titleKey: 'framework.docs.nav.frameworkTitles.kinshipGarden',
-      emoji: '🌱',
+      emoji: 'ðŸŒ±',
       slug: 'kinship-garden',
       group: 'planetaryHealthResilience'
     }
@@ -109,7 +109,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/soil-health-and-land-use-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.soilHealthAndLandUseGovernance',
-      emoji: '🌾',
+      emoji: 'ðŸŒ¾',
       slug: 'soil-health-and-land-use-governance',
       group: 'ecologicalSystems'
     }
@@ -131,7 +131,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/water-and-sanitation-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.waterAndSanitationGovernance',
-      emoji: '💧',
+      emoji: 'ðŸ’§',
       slug: 'water-and-sanitation-governance',
       group: 'ecologicalSystems'
     }
@@ -153,7 +153,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/biodiversity-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.biodiversityGovernance',
-      emoji: '🦅',
+      emoji: 'ðŸ¦…',
       slug: 'biodiversity-governance',
       group: 'ecologicalSystems'
     }
@@ -173,7 +173,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/oceans-and-marine-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.oceansAndMarineGovernance',
-      emoji: '🌊',
+      emoji: 'ðŸŒŠ',
       slug: 'oceans-and-marine-governance',
       group: 'ecologicalSystems'
     }
@@ -193,7 +193,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/animal-welfare-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.animalWelfareGovernance',
-      emoji: '🐾',
+      emoji: 'ðŸ¾',
       slug: 'animal-welfare-governance',
       group: 'ecologicalSystems'
     }
@@ -215,7 +215,7 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/phoenix-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.phoenixProtocol',
-      emoji: '♻️',
+      emoji: 'â™»ï¸',
       slug: 'phoenix-protocol',
       group: 'ecologicalSystems'
     }
@@ -245,7 +245,7 @@ export const ecologicalEntities: GgfEntity[] = [
       ui: {
         path: '/frameworks/disaster-risk-reduction',
         titleKey: 'framework.docs.nav.frameworkTitles.disasterRiskReduction',
-        emoji: '🌪️',
+        emoji: 'ðŸŒªï¸',
         slug: 'disaster-risk-reduction',
         group: 'planetaryHealthResilience'
       }

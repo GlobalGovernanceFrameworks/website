@@ -26,7 +26,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/cultural-heritage-preservation',
       titleKey: 'framework.docs.nav.frameworkTitles.culturalHeritagePreservation',
-      emoji: '🏛️',
+      emoji: 'ðŸ›ï¸',
       slug: 'cultural-heritage-preservation',
       version: '2.2'
     }
@@ -42,12 +42,12 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     primaryDomain: 'Technology',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
-    dependencies: ['framework_aurora_accord', 'framework_educational_systems'],
+    dependencies: ['framework_aurora_accord', 'framework_education'],
     enables: ['council_dcc', 'institution_lcn'],
     ui: {
       path: '/frameworks/digital-commons',
       titleKey: 'framework.docs.nav.frameworkTitles.digitalCommons',
-      emoji: '💻',
+      emoji: 'ðŸ’»',
       slug: 'digital-commons'
     }
   },
@@ -79,7 +79,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/religious-and-spiritual-dialogue-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.religiousAndSpiritualDialogueGovernance',
-      emoji: '🕯️',
+      emoji: 'ðŸ•¯ï¸',
       slug: 'religious-and-spiritual-dialogue-governance'
     }
   },
@@ -98,7 +98,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/global-citizenship-practice',
       titleKey: 'framework.docs.nav.frameworkTitles.globalCitizenshipPractice',
-      emoji: '🤝',
+      emoji: 'ðŸ¤',
       slug: 'global-citizenship-practice'
     }
   },
@@ -124,7 +124,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/arts-flourishing',
       titleKey: 'framework.docs.nav.frameworkTitles.artsFlourishing', // New key needed
-      emoji: '🎨',
+      emoji: 'ðŸŽ¨',
       slug: 'arts-flourishing',
       group: 'humanSocialSystems' // Fits well here
     }
@@ -147,7 +147,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/consciousness-and-inner-development',
       titleKey: 'framework.docs.nav.frameworkTitles.consciousnessAndInnerDevelopment',
-      emoji: '🧘',
+      emoji: 'ðŸ§˜',
       slug: 'consciousness-and-inner-development'
     }
   },
@@ -167,7 +167,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/wise-decision-making-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.wiseDecisionMakingProtocol',
-      emoji: '🧭',
+      emoji: 'ðŸ§­',
       slug: 'wise-decision-making-protocol'
     }
   },
@@ -334,6 +334,21 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     status: 'Proposed',
     primaryDomain: 'Justice',
     dependencies: ['council_gcrsd', 'framework_peace']
+  },
+
+  // === MEMORIAL & GRIEF COMMONS ===
+  {
+    id: 'framework_memorial_commons',
+    type: 'Framework',
+    name: 'The Memorial Commons',
+    shortName: 'Memorial Commons',
+    description: 'Framework for collective grief processing, memorialization, and intergenerational healing. Provides spaces and protocols for communities to process loss — from addiction-related grief to ecological mourning and historical trauma.',
+    tier: 3,
+    status: 'Planned',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Medium',
+    dependencies: ['framework_cultural_heritage', 'framework_mental_health']
   }
 ];
 

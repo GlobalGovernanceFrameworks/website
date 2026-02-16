@@ -24,7 +24,7 @@ export const governanceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/meta-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.metaGovernance',
-      emoji: '🏛️',
+      emoji: 'ðŸ›ï¸',
       version: '1.1',
       slug: 'meta-governance'
     }
@@ -143,7 +143,7 @@ export const governanceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/emergent-governance-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.emergentGovernanceProtocol', // Note: This titleKey would need to be created
-      emoji: '🗣️',
+      emoji: 'ðŸ—£ï¸',
       version: '1.0',
       slug: 'emergent-governance-protocol'
     }
@@ -206,7 +206,7 @@ export const governanceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/polycentric-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.polycentricGovernance',
-      emoji: '🕸️',
+      emoji: 'ðŸ•¸ï¸',
       version: '0.5',
       slug: 'polycentric-governance'
     }
@@ -304,13 +304,28 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Pilot',
     name: 'Uppsala BAZ Pilot',
     shortName: 'Uppsala Pilot',
-    description: 'Swedish municipal pilot: Lake Mälaren Trust, BAZ Assembly, Guild prototypes (2025-2027)',
+    description: 'Swedish municipal pilot: Lake MÃ¤laren Trust, BAZ Assembly, Guild prototypes (2025-2027)',
     tier: 1,
     status: 'Active',
     primaryDomain: 'Governance',
     geographicScope: 'Local',
     implementationPriority: 'Critical',
     dependencies: ['framework_polycentric_governance', 'layer_territorial', 'layer_commons', 'layer_guilds']
+  },
+
+  // === INTELLIGENCE & FORESIGHT INFRASTRUCTURE ===
+  {
+    id: 'institution_ero',
+    type: 'Institution',
+    name: 'Existential Risk Observatory',
+    shortName: 'ERO',
+    description: 'Dedicated monitoring institution tracking existential and catastrophic risks across domains (climate tipping points, AI misalignment, pandemic preparedness, nuclear proliferation). Provides continuous risk intelligence to the GIF-Council.',
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Critical',
+    dependencies: ['framework_meta_gov', 'framework_planetary_immune_system']
   }
 ];
 
@@ -514,7 +529,7 @@ export const governanceOSRelationships: GgfRelationship[] = [
   },
   {
     from: 'framework_egp',
-    to: 'framework_shield_protocol', // Example
+    to: 'framework_shield', // Example
     type: 'GUIDES',
     description: "The EGP guides the Shield Protocol's community interactions, where a BAZ reporting a threat is using the `sense` protocol."
   },
@@ -751,7 +766,7 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'pilot_uppsala_baz',
     to: 'layer_commons',
     type: 'IMPLEMENTS',
-    description: 'Lake Mälaren Trust as first Commons Trust pilot',
+    description: 'Lake MÃ¤laren Trust as first Commons Trust pilot',
     strength: 'Strong',
     sequenceType: 'Sequential'
   }

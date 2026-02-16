@@ -24,7 +24,7 @@ export const hearthstoneEntities: GgfEntity[] = [
       'framework_treaty',
       'framework_indigenous',
       'framework_justice',
-      'framework_regenerative_enterprise',
+      'framework_pathfinder_protocol',
       'framework_financial_systems',
       'framework_digital_commons',
       'framework_aurora_accord',
@@ -45,7 +45,7 @@ export const hearthstoneEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/hearthstone-protocol', // New path
       titleKey: 'framework.docs.nav.frameworkTitles.hearthstoneProtocol', // New key
-      emoji: '🔥', // Stone emoji
+      emoji: 'ðŸ”¥', // Stone emoji
       version: '1.5',
       slug: 'hearthstone-protocol' // New slug
     }
@@ -59,6 +59,7 @@ export const hearthstoneEntities: GgfEntity[] = [
     description: 'Internationally recognized legal entity replacing private title, governed for regenerative purposes.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['framework_hearthstone']
   },
   {
@@ -68,6 +69,7 @@ export const hearthstoneEntities: GgfEntity[] = [
     description: 'A subtype of Stewardship Trust for assets where ecology and culture are inseparable.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Ecological',
     dependencies: ['institution_stewardship_trust']
   },
   {
@@ -77,6 +79,7 @@ export const hearthstoneEntities: GgfEntity[] = [
     description: 'Provides legal, mediation, and technical support for asset transition.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_hearthstone', 'institution_gjo']
   },
   {
@@ -86,6 +89,7 @@ export const hearthstoneEntities: GgfEntity[] = [
     description: 'A specialized chamber within the Digital Justice Tribunal for commons disputes.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_hearthstone', 'institution_dj_tribunal']
   },
 
@@ -97,6 +101,7 @@ export const hearthstoneEntities: GgfEntity[] = [
     description: 'A blockchain-based registry for stewarded assets, integrated with the Love Ledger.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Technology',
     dependencies: ['framework_hearthstone', 'platform_love_ledger']
   },
   {
@@ -106,6 +111,7 @@ export const hearthstoneEntities: GgfEntity[] = [
     description: 'Process led by the Earth Council to designate assets as sacred and inalienable.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Governance',
     dependencies: ['framework_hearthstone', 'council_earth']
   },
   {
@@ -115,6 +121,7 @@ export const hearthstoneEntities: GgfEntity[] = [
     description: 'Overseen by the International Commons Court to transfer land to BAZ stewardship.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Justice',
     dependencies: ['framework_hearthstone', 'institution_icc']
   },
   {
@@ -124,6 +131,7 @@ export const hearthstoneEntities: GgfEntity[] = [
     description: 'Funded by the GCF to purchase ecologically/culturally significant land for BAZ stewardship.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Ecological',
     dependencies: ['framework_hearthstone', 'mechanism_gcf']
   }
 ];

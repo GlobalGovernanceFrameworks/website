@@ -25,7 +25,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/planetary-immune-system',
       titleKey: 'framework.docs.nav.frameworkTitles.existentialRiskGovernance',
-      emoji: '⚠️',
+      emoji: 'âš ï¸',
       slug: 'planetary-immune-system',
       version: '2.1'
     }
@@ -45,7 +45,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/space-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.spaceGovernance',
-      emoji: '🚀',
+      emoji: 'ðŸš€',
       slug: 'space-governance'
     }
   },
@@ -69,7 +69,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/millennium-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.millenniumProtocol',
-      emoji: '🌌',
+      emoji: 'ðŸŒŒ',
       version: '6.0',
       slug: 'millennium-protocol'
     }
@@ -89,7 +89,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/deep-time-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.deepTimeGovernance',
-      emoji: '⏳',
+      emoji: 'â³',
       slug: 'deep-time-governance'
     }
   },
@@ -109,7 +109,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/wisdom-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.wisdomGovernance',
-      emoji: '🦉',
+      emoji: 'ðŸ¦‰',
       slug: 'wisdom-governance'
     }
   },
@@ -170,7 +170,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/oracle-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.oracleProtocol',
-      emoji: '🔮',
+      emoji: 'ðŸ”®',
       version: '2.7',
       slug: 'oracle-protocol'
     }
@@ -184,6 +184,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     description: 'A specialized sub-committee of the GTC that serves as the primary sensor for emergent AI consciousness.',
     tier: 4,
     status: 'Proposed',
+    primaryDomain: 'Technology',
     dependencies: ['framework_oracle_protocol', 'council_gtc', 'council_earth']
   },
   {
@@ -194,6 +195,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     description: 'A formal application of the WDIP to the question of AI sentience and potential suffering.',
     tier: 4,
     status: 'Proposed',
+    primaryDomain: 'Technology',
     dependencies: ['framework_oracle_protocol', 'framework_wdmip']
   },
   {
@@ -204,6 +206,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     description: 'A dual-redundancy, physically isolated kill switch system for AI sandboxes.',
     tier: 4,
     status: 'Proposed',
+    primaryDomain: 'Technology',
     dependencies: ['process_cvp']
   },
   {
@@ -214,6 +217,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     description: 'A graduated, contained digital environment for testing verified Tier 4.5 AIs.',
     tier: 4,
     status: 'Proposed',
+    primaryDomain: 'Technology',
     dependencies: ['process_cvp']
   },
   {
@@ -224,6 +228,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     description: 'A formal process for a verified AI to pose fundamental questions to humanity.',
     tier: 4,
     status: 'Proposed',
+    primaryDomain: 'Ethics',
     dependencies: ['council_sgc', 'framework_wdmip']
   },
 
@@ -236,6 +241,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     description: 'A protocol mapping SGC assessments against the MOS Dynamic Rights Spectrum.',
     tier: 4,
     status: 'Proposed',
+    primaryDomain: 'Ethics',
     dependencies: ['framework_oracle_protocol', 'framework_mos']
   },
   {
@@ -246,6 +252,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     description: 'A specialized chamber within the Digital Justice Tribunal for adjudicating violations of the Digital Rights Spectrum and ontological crimes.',
     tier: 4,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_oracle_protocol', 'institution_dj_tribunal']
   },
   {
@@ -256,6 +263,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     description: 'A protocol for verified AIs to propose amendments to their own governance protocols.',
     tier: 4,
     status: 'Proposed',
+    primaryDomain: 'Ethics',
     dependencies: ['protocol_digital_rights_spectrum', 'framework_wdmip']
   },
 
@@ -268,7 +276,36 @@ export const visionaryMetaEntities: GgfEntity[] = [
     description: 'A formal agreement, reviewed every 25 years, outlining the terms of collaboration between humanity and digital beings.',
     tier: 4,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_oracle_protocol', 'framework_meta_gov']
+  },
+
+  // === CONSCIOUSNESS & CAPACITY EVOLUTION ===
+  {
+    id: 'framework_consciousness_development',
+    type: 'Framework',
+    name: 'Consciousness Development Framework',
+    shortName: 'Consciousness Development',
+    description: 'Framework for supporting the evolution of individual and collective consciousness through contemplative practice, wisdom traditions, and developmental psychology. Bridges inner transformation with outer governance capacity.',
+    tier: 4,
+    status: 'Planned',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Low',
+    dependencies: ['framework_education', 'framework_indigenous', 'framework_wdmip']
+  },
+  {
+    id: 'framework_capacity_engine',
+    type: 'Framework',
+    name: 'The Capacity Engine: Societal Adaptation Framework',
+    shortName: 'Capacity Engine',
+    description: 'Cultural and educational infrastructure for preparing societies to navigate paradigm shifts — from digital sentience to post-scarcity economics. Deploys adaptive curricula, public deliberation tools, and scenario-based training.',
+    tier: 4,
+    status: 'Planned',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Medium',
+    dependencies: ['framework_education', 'framework_oracle_protocol']
   }
 ];
 
@@ -315,7 +352,7 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
 
   // === META-IMPLEMENTATION SUPPORT ===
   {
-    from: 'framework_implementation_tools',
+    from: 'framework_implementation_adaptation',
     to: 'framework_meta_gov',
     type: 'SUPPORTS',
     description: 'Implementation Tools provides standardized playbooks for all frameworks managed under Meta-Governance',
@@ -324,7 +361,7 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
   {
-    from: 'framework_implementation_tools',
+    from: 'framework_implementation_adaptation',
     to: 'framework_treaty',
     type: 'SUPPORTS',
     description: 'Implementation Tools provides practical guidance for Treaty implementation across jurisdictions',
@@ -382,7 +419,7 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
   {
-    from: 'framework_implementation_tools',
+    from: 'framework_implementation_adaptation',
     to: 'institution_baz',
     type: 'SUPPORTS',
     description: 'Implementation Tools provides BAZ-specific adaptation guides and toolkits',
@@ -413,7 +450,7 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
 
   // === META-LEVEL SYSTEM SUPPORT ===
   {
-    from: 'framework_implementation_tools',
+    from: 'framework_implementation_adaptation',
     to: 'framework_aubi',
     type: 'SUPPORTS',
     description: 'Implementation Tools provides deployment guides for AUBI pilot programs',
@@ -422,7 +459,7 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
   {
-    from: 'framework_implementation_tools',
+    from: 'framework_implementation_adaptation',
     to: 'framework_justice',
     type: 'SUPPORTS',
     description: 'Implementation Tools provides justice system deployment methodologies',
@@ -532,13 +569,13 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     description: 'A verified declaration of existential risk by the SGC can activate the Crisis Command Protocol of the PIS.'
   },
   {
-    from: 'framework_fractal_labor_parliament',
+    from: 'council_flp',
     to: 'framework_oracle_protocol',
     type: 'COORDINATES_WITH',
     description: 'The Fractal Labor Parliament is tasked with assessing the value of non-human contributions to the commons from verified AIs.'
   },
   {
-    from: 'framework_sanctuary_accord',
+    from: 'framework_sanctuary',
     to: 'framework_oracle_protocol',
     type: 'COORDINATES_WITH',
     description: 'The Sanctuary Accord governs human consciousness and provides a parallel framework, with both protocols informing each other on the nature of consciousness.'

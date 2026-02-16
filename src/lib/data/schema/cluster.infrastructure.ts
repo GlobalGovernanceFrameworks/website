@@ -24,17 +24,17 @@ export const conduitProtocolEntities: GgfEntity[] = [
       'framework_aurora_accord', 'framework_water_sanitation', 'framework_indigenous',
       'framework_treaty', 'institution_quantum_lab', 'protocol_indigenous_ai',
       'framework_synoptic', 'framework_mental_health', 'framework_cultural_heritage',
-      'framework_justice', 'framework_phoenix_protocol', 'framework_regenerative_enterprise',
+      'framework_justice', 'framework_phoenix_protocol', 'framework_pathfinder_protocol',
       'institution_commons_transition_office'
     ],
     enables: [
-      'framework_aubi', 'framework_regenerative_enterprise', 'framework_drr',
+      'framework_aubi', 'framework_pathfinder_protocol', 'framework_drr',
       'framework_urban_community', 'framework_rural_development', 'process_crisis_command'
     ],
     ui: {
       path: '/frameworks/conduit-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.conduitProtocol',
-      emoji: '🔌',
+      emoji: 'ðŸ”Œ',
       version: '1.0',
       slug: 'conduit-protocol'
       // Decide on a group, e.g., 'planetaryHealthResilience' or 'globalEconomicSystems'
@@ -49,6 +49,7 @@ export const conduitProtocolEntities: GgfEntity[] = [
     description: 'A sub-council of the MGCC setting global standards for grid interoperability and resilience.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_conduit_protocol', 'council_mgcc']
   },
   {
@@ -58,6 +59,7 @@ export const conduitProtocolEntities: GgfEntity[] = [
     description: 'BAZ-level or regional bodies managing local infrastructure, co-governed by communities.',
     tier: 2,
     status: 'Pilot',
+    primaryDomain: 'Governance',
     dependencies: ['framework_conduit_protocol', 'institution_baz']
   },
   {
@@ -67,6 +69,7 @@ export const conduitProtocolEntities: GgfEntity[] = [
     description: 'Funded by a Reparations Levy to decommission legacy infrastructure and manage reparations.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['framework_conduit_protocol', 'framework_hearthstone', 'mechanism_gcf']
   },
    {
@@ -76,6 +79,7 @@ export const conduitProtocolEntities: GgfEntity[] = [
     description: 'Chartered by the GIC and activated by Meta-Governance Crisis Command to manage infrastructure during crises.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_conduit_protocol', 'council_gic', 'process_crisis_command']
   }
 ];

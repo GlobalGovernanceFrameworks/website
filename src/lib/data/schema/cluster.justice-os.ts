@@ -24,7 +24,7 @@ export const justiceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/peace-and-conflict-resolution',
       titleKey: 'framework.docs.nav.frameworkTitles.peaceAndConflictResolution',
-      emoji: '🕊️',
+      emoji: 'ðŸ•Šï¸',
       version: '1.7',
       slug: 'peace-and-conflict-resolution',
       group: 'socialFabricJustice'
@@ -100,7 +100,7 @@ export const justiceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/justice-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.justiceSystems',
-      emoji: '⚖️',
+      emoji: 'âš–ï¸',
       version: '1.0',
       slug: 'justice-systems',
       group: 'socialFabricJustice'
@@ -150,7 +150,7 @@ export const justiceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/shield-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.shieldProtocol',
-      emoji: '🛡️',
+      emoji: 'ðŸ›¡ï¸',
       version: '1.3',
       slug: 'shield-protocol',
       group: 'socialFabricJustice'
@@ -303,7 +303,7 @@ export const justiceOSRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
   {
-    from: 'protocol_mos_rights',
+    from: 'protocol_dynamic_rights_spectrum',
     to: 'framework_justice',
     type: 'GUIDES',
     description: 'MOS Rights Spectrum provides ethical foundation for justice systems',

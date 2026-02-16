@@ -26,7 +26,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/educational-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.educationalSystems',
-      emoji: '🎓',
+      emoji: 'ðŸŽ“',
       slug: 'educational-systems',
       group: 'humanSocialSystems'
     }
@@ -47,7 +47,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/global-health-and-pandemic-security',
       titleKey: 'framework.docs.nav.frameworkTitles.globalHealthAndPandemicSecurity',
-      emoji: '⚕️',
+      emoji: 'âš•ï¸',
       version: '1.0',
       slug: 'global-health-and-pandemic-security',
       group: 'planetaryHealthResilience'
@@ -69,7 +69,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/mental-health-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.mentalHealthGovernance',
-      emoji: '🧠',
+      emoji: 'ðŸ§ ',
       slug: 'mental-health-governance',
       group: 'humanSocialSystems'
     }
@@ -99,7 +99,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/cognitive-sovereignty-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.cognitiveSovereigntyAccord',
-      emoji: '🍄',
+      emoji: 'ðŸ„',
       version: '1.6',
       slug: 'cognitive-sovereignty-accord',
       group: 'humanSocialSystems'
@@ -132,7 +132,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/sanctuary-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.sanctuaryAccord',
-      emoji: '🌸', 
+      emoji: 'ðŸŒ¸', 
       version: '1.0',
       slug: 'sanctuary-accord',
       group: 'humanSocialSystems'
@@ -154,7 +154,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/synoptic-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.synopticProtocol',
-      emoji: '👁️',
+      emoji: 'ðŸ‘ï¸',
       version: '1.0',
       slug: 'synoptic-protocol',
       group: 'humanSocialSystems'
@@ -176,7 +176,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/prometheus-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.prometheusProtocol',
-      emoji: '⚕️',
+      emoji: 'âš•ï¸',
       version: '7.1',
       slug: 'prometheus-protocol',
       group: 'planetaryHealthResilience'
@@ -198,7 +198,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/discovery-commons',
       titleKey: 'framework.docs.nav.frameworkTitles.discoveryCommons',
-      emoji: '🔬', // Microscope emoji
+      emoji: 'ðŸ”¬', // Microscope emoji
       version: '1.0',
       slug: 'discovery-commons'
       // This fits well in group: 'humanSocialSystems'
@@ -220,7 +220,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/kintsugi-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.kintsugiProtocol',
-      emoji: '🏺', // Amphora/pottery emoji for Kintsugi
+      emoji: 'ðŸº', // Amphora/pottery emoji for Kintsugi
       version: '2.0',
       slug: 'kintsugi-protocol',
       group: 'humanSocialSystems'
@@ -249,8 +249,6 @@ export const humanFlourishingEntities: GgfEntity[] = [
       'framework_youth', // Horizon Protocol
       'framework_justice',
       'framework_synoptic',
-      'framework_living_land', // from doc
-      'framework_bioregional_polis', // from doc
       'framework_peace',
       'framework_egp'
     ],
@@ -263,7 +261,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/hearthlight-protocol', // You will need to create this page
       titleKey: 'framework.docs.nav.frameworkTitles.hearthlightProtocol', // Will be auto-generated
-      emoji: '🧸', // Using the teddy bear
+      emoji: 'ðŸ§¸', // Using the teddy bear
       version: '1.7', // From doc
       slug: 'hearthlight-protocol',
       group: 'humanSocialSystems' // Fits this group well
@@ -305,6 +303,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Oversees the commons-based pharmaceutical pipeline, from research prioritization to equitable access.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Health',
     dependencies: ['framework_prometheus_protocol', 'council_phc']
   },
   {
@@ -315,6 +314,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A sub-council of Meta-Governance that sets global research priorities and oversees the Discovery Commons.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_discovery_commons', 'framework_meta_gov']
   },
   {
@@ -324,6 +324,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A parallel governance body with authority over youth-related safety issues, peer mediation, and future impact assessments.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_kintsugi_protocol', 'framework_youth']
   },
   {
@@ -387,6 +388,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A Stewardship Trust that holds patents, data, and know-how as a public good for global manufacturing.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Technology',
     dependencies: ['framework_prometheus_protocol', 'framework_hearthstone']
   },
   {
@@ -397,6 +399,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A network of community-owned, cooperative facilities for producing medicines, with a Global South-first focus.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Technology',
     dependencies: ['framework_prometheus_protocol', 'framework_work_liberation']
   },
   {
@@ -406,6 +409,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Decentralized bodies that adapt global research priorities to local contexts and cultural values.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['council_global_research']
   },
   {
@@ -415,6 +419,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Distributes grants from the GCF for mission-oriented research, prioritizing Global South capacity.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['framework_discovery_commons', 'mechanism_gcf']
   },
   {
@@ -424,6 +429,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A directly elected body with oversight powers to initiate inquiries and force reconsideration of GRC priorities.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_discovery_commons']
   },
   {
@@ -433,6 +439,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Mediates disputes, tracks failures, and oversees protocols related to political engagement and non-compliance.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_discovery_commons']
   },
   {
@@ -442,6 +449,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A BAZ-level or municipal council, selected via sortition, that oversees the local Kintsugi Protocol system.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_kintsugi_protocol']
   },
   {
@@ -452,6 +460,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A repurposed, downsized, and unarmed unit for responding to immediate, severe physical threats, activated only by the Community Safety Council.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_kintsugi_protocol']
   },
   {
@@ -461,6 +470,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'An independent advocate for community members, handling complaints about system failures.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['institution_community_safety_council']
   },
   {
@@ -470,6 +480,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A participatory research body that conducts community-controlled research on safety outcomes and maintains longitudinal data.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_kintsugi_protocol']
   },
   {
@@ -479,6 +490,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Non-carceral, 24/7 spaces for people in acute mental or emotional distress, co-governed with the Mental Health Framework.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Health',
     dependencies: ['framework_kintsugi_protocol', 'framework_mental_health']
   },
   {
@@ -512,6 +524,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A specialized chamber of the Digital Justice Tribunal with jurisdiction over the Charter of Childhood Rights.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_hearthlight_protocol', 'institution_dj_tribunal']
   },
   {
@@ -521,6 +534,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Child-led councils at the BAZ level (ages 10-15) for hands-on governance experience.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_hearthlight_protocol', 'framework_youth']
   },
   {
@@ -530,6 +544,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Independent multi-stakeholder body administering Sanctuary Certification (Bronze/Silver/Gold) and Violation Response.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Health',
     dependencies: ['framework_sanctuary']
   },
 
@@ -542,6 +557,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A fund capitalized by a levy on historical pharma profits to bootstrap the commons.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['framework_prometheus_protocol', 'framework_gaian_trade']
   },
   {
@@ -551,6 +567,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A 20% allocation of the Public Research Fund for Global South infrastructure, fellowships, and micro-grants.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['institution_public_research_fund']
   },
   {
@@ -583,6 +600,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A multi-lingual, accessible app and phone line for requesting non-emergency support.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Technology',
     dependencies: ['framework_kintsugi_protocol']
   },
   {
@@ -657,6 +675,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A democratic process for setting the Priority Medicines Research Agenda based on global health needs.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['council_gpsc', 'framework_discovery_commons']
   },
   {
@@ -666,6 +685,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Mandates open-access publication, FAIR data compliance, pre-registration, and open peer review.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Technology',
     dependencies: ['framework_discovery_commons']
   },
   {
@@ -675,6 +695,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Bans patents in critical domains and places intellectual property into Stewardship Trusts.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Technology',
     dependencies: ['framework_discovery_commons', 'framework_hearthstone']
   },
   {
@@ -684,6 +705,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Ensures research with Indigenous communities follows principles of co-design, dynamic consent, and data sovereignty.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Governance',
     dependencies: ['framework_discovery_commons', 'framework_indigenous']
   },
   {
@@ -693,6 +715,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A protocol for fast-tracking funding and mandating open data sharing during global crises.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Governance',
     dependencies: ['framework_discovery_commons', 'framework_drr']
   },
   {
@@ -702,6 +725,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'The role of unarmed, trained first responders and peacekeepers for the community.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_kintsugi_protocol', 'framework_peace']
   },
   {
@@ -711,6 +735,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'The primary, community-led process for addressing harm after it has occurred.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_kintsugi_protocol']
   },
   {
@@ -720,6 +745,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'An intensive restorative process for high-harm or repeat-harm cases before formal escalation.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_kintsugi_protocol']
   },
   {
@@ -729,6 +755,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Regular, community-wide processes for addressing collective and historical trauma.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Health',
     dependencies: ['framework_kintsugi_protocol', 'framework_cultural_heritage']
   },
   {
@@ -785,6 +812,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Specialized role within Work in Liberation to act as first responders and support liaisons for families, rewarded with Hearts.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_hearthlight_protocol', 'framework_work_liberation', 'framework_aubi']
   },
   {
@@ -795,6 +823,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A composite metric for child well-being, governed by the Global Metrology Council.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Governance',
     dependencies: ['framework_hearthlight_protocol', 'council_global_metrology', 'metric_lmci']
   },
   {
@@ -804,6 +833,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'A recognized Care Work role for maintaining the silence, safety, and beauty of Third Places, compensated in Hearts.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Health',
     dependencies: ['framework_sanctuary', 'framework_work_liberation', 'framework_aubi']
   },
   {
@@ -813,6 +843,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     description: 'Accounting tool for measuring population-level cognitive load and recovery time to guide policy.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Health',
     dependencies: ['framework_sanctuary', 'council_global_metrology']
   }
 
@@ -1197,7 +1228,7 @@ export const humanFlourishingRelationships: GgfRelationship[] = [
   // BAZ implementation
   {
     from: 'institution_baz',
-    to: 'institution_baz_sanctuary_councils',
+    to: 'institution_baz_cognitive_sovereignty_councils',
     type: 'IMPLEMENTS',
     description: 'BAZs implement local Sanctuary Councils for community governance'
   },

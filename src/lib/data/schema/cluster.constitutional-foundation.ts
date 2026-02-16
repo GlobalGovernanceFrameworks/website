@@ -24,7 +24,7 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/treaty-for-our-only-home',
       titleKey: 'framework.docs.nav.frameworkTitles.treatyForOurOnlyHome',
-      emoji: '🌐',
+      emoji: 'ðŸŒ',
       version: '1.1',
       slug: 'treaty-for-our-only-home'
     }

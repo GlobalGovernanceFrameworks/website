@@ -24,7 +24,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/social-fabric',
       titleKey: 'framework.docs.nav.frameworkTitles.socialFabric', // This would need to be added to frameworkNav.js
-      emoji: '🧶',
+      emoji: 'ðŸ§¶',
       version: '1.0',
       slug: 'social-fabric',
       group: 'humanSocialSystems'
@@ -45,7 +45,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/cairn-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.cairnProtocol',
-      emoji: '🗿', // Cairn/Moai emoji
+      emoji: 'ðŸ—¿', // Cairn/Moai emoji
       version: '2.3',
       slug: 'cairn-protocol',
       group: 'socialFabricJustice'
@@ -67,7 +67,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/disability-rights-and-inclusion',
       titleKey: 'framework.docs.nav.frameworkTitles.disabilityRightsAndInclusion',
-      emoji: '♿',
+      emoji: 'â™¿',
       slug: 'disability-rights-and-inclusion',
       group: 'humanSocialSystems'
     }
@@ -88,7 +88,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/kinship-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.kinshipProtocol',
-      emoji: '🫂',
+      emoji: 'ðŸ«‚',
       version: '1.0',
       slug: 'kinship-protocol'
     }
@@ -109,7 +109,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/youth-and-intergenerational-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.youthAndIntergenerationalGovernance',
-      emoji: '👶',
+      emoji: 'ðŸ‘¶',
       slug: 'youth-and-intergenerational-governance'
     }
   },
@@ -129,7 +129,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/aging-population-support-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.agingPopulationSupportGovernance',
-      emoji: '🌳',
+      emoji: 'ðŸŒ³',
       slug: 'aging-population-support-governance'
     }
   },
@@ -149,7 +149,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/migration-and-human-mobility',
       titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
-      emoji: '🗺️',
+      emoji: 'ðŸ—ºï¸',
       slug: 'migration-and-human-mobility',
       group: 'socialFabricJustice'
     }
@@ -163,7 +163,8 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'A sub-council of the Planetary Health Council, with 60% representation from people with lived experience, overseeing global addiction and recovery strategy.',
     tier: 2,
     status: 'Proposed',
-    dependencies: ['framework_cairn_protocol', 'council_planetary_health']
+    primaryDomain: 'Health',
+    dependencies: ['framework_cairn_protocol', 'council_phc']
   },
   {
     id: 'council_gkjc',
@@ -213,6 +214,7 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'An Indigenous-led research body, embedded in the Community Safety Observatory, that collects and analyzes outcomes data for recovery initiatives.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Health',
     dependencies: ['framework_cairn_protocol', 'institution_community_safety_observatory']
   },
   {
@@ -223,6 +225,7 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'Decentralized, community-run centers providing harm reduction, peer support, and connections to GGF services.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Health',
     dependencies: ['framework_cairn_protocol', 'institution_baz']
   },
   {
@@ -232,6 +235,7 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'A specialized chamber of the Digital Justice Tribunal that adjudicates cases of predatory, addictive-by-design products.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Justice',
     dependencies: ['framework_cairn_protocol', 'institution_dj_tribunal']
   },
   {
@@ -307,6 +311,7 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'An entry-level, community-led governance body focused on monitoring and nurturing relational health, serving as a precursor to a full BAZ Council.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_social_fabric']
   },
   {
@@ -317,20 +322,11 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'An independent reviewer for grievances related to the Weaver process, ensuring accountability and ethical practice.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_social_fabric']
   },
 
   // === PROCESSES, PROTOCOLS & TOOLS ===
-  {
-    id: 'process_community_weaver',
-    type: 'Process',
-    name: 'Community Weaver',
-    shortName: 'Weaver',
-    description: 'The role of a trained facilitator who cultivates the conditions for trust and collaboration, guided by local wisdom. Includes a full curriculum and guild structure.',
-    tier: 2,
-    status: 'Proposed',
-    dependencies: ['framework_social_fabric']
-  },
   {
     id: 'process_recovery_weaver',
     type: 'Process',
@@ -338,6 +334,7 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'The role of trained community members with lived experience who provide outreach, crisis support, and peer guidance.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Health',
     dependencies: ['framework_cairn_protocol']
   },
   {
@@ -347,6 +344,7 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'A foundational charter asserting the rights to bodily autonomy, sacred plant access, and protection from predatory design.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Justice',
     dependencies: ['framework_cairn_protocol']
   },
   {
@@ -356,7 +354,8 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'A tax on the profits of corporations that create and market addictive products, used to fund the GCF for recovery initiatives.',
     tier: 2,
     status: 'Proposed',
-    dependencies: ['framework_cairn_protocol', 'framework_regenerative_enterprise']
+    primaryDomain: 'Economic',
+    dependencies: ['framework_cairn_protocol', 'framework_pathfinder_protocol']
   },
   {
     id: 'tool_dia',
@@ -431,6 +430,7 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'A suite of co-designed metrics, including the LMCI, to measure social fabric health and guide implementation.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Governance',
     dependencies: ['framework_social_fabric']
   },
   {
@@ -441,6 +441,7 @@ export const socialEquityEntities: GgfEntity[] = [
     description: 'A GCF-funded grant with performance-based tranches to provide initial resources for community weaving activities.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['framework_social_fabric', 'mechanism_gcf']
   }
 
@@ -799,9 +800,9 @@ export const socialEquityRelationships: GgfRelationship[] = [
   { from: 'framework_kintsugi_protocol', to: 'framework_cairn_protocol', type: 'INTEGRATES_WITH', description: 'The Kintsugi Protocol (CCSF) is the primary referral source for community-level substance issues, handing off to Recovery Weavers.' },
   { from: 'framework_mental_health', to: 'framework_cairn_protocol', type: 'INFORMS', description: 'Provides the clinical and therapeutic models that Recovery Hubs and Weavers are trained in.' },
   { from: 'framework_aubi', to: 'framework_cairn_protocol', type: 'ENABLES', description: 'AUBI provides the economic stability to prevent root causes and the Hearts currency to reward recovery care work.' },
-  { from: 'framework_regenerative_enterprise', to: 'mechanism_corporate_harm_levy', type: 'IMPLEMENTS', description: 'The REF provides the corporate accountability structure through which the Corporate Harm Levy is assessed.' },
+  { from: 'framework_pathfinder_protocol', to: 'mechanism_corporate_harm_levy', type: 'IMPLEMENTS', description: 'The REF provides the corporate accountability structure through which the Corporate Harm Levy is assessed.' },
   { from: 'framework_indigenous', to: 'framework_cairn_protocol', type: 'GUIDES', description: 'The Indigenous Framework provides the non-negotiable protocols for the sovereign governance of sacred plant medicines.' },
-  { from: 'framework_sanctuary_accord', to: 'framework_cairn_protocol', type: 'COORDINATES_WITH', description: 'The Sanctuary Accord provides ethical oversight for advanced psychedelic therapies that individuals in Cairn-supported recovery may be referred to.' },
+  { from: 'framework_sanctuary', to: 'framework_cairn_protocol', type: 'COORDINATES_WITH', description: 'The Sanctuary Accord provides ethical oversight for advanced psychedelic therapies that individuals in Cairn-supported recovery may be referred to.' },
   { from: 'institution_dj_tribunal', to: 'institution_design_justice_tribunal', type: 'ESTABLISHES', description: 'The main DJ Tribunal houses the specialized Design Justice chamber.' },
   { from: 'framework_cairn_protocol', to: 'framework_memorial_commons', type: 'INTEGRATES_WITH', description: 'The protocol refers individuals and communities to The Memorial Commons to process addiction-related grief.' },
 
@@ -840,7 +841,7 @@ export const socialEquityRelationships: GgfRelationship[] = [
   },
   {
     from: 'process_community_weaver',
-    to: 'process_safety_weaver', // Assuming ID from Kintsugi
+    to: 'process_community_safety_weaver', // Assuming ID from Kintsugi
     type: 'COORDINATES_WITH',
     description: 'The Inter-Weaver Interface Protocol defines handoffs between Community Weavers and Safety Weavers.'
   },

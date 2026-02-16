@@ -41,7 +41,7 @@ export const justTransitionEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/aegis-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.aegisProtocol',
-      emoji: '🛰️',
+      emoji: 'ðŸ›°ï¸',
       version: '1.2',
       slug: 'aegis-protocol',
       group: 'socialFabricJustice'
@@ -116,12 +116,12 @@ export const justTransitionEntities: GgfEntity[] = [
     status: 'Planned',
     primaryDomain: 'Governance',
     implementationPriority: 'Critical',
-    dependencies: ['framework_treaty', 'council_planetary_health', 'framework_hearthstone', 'framework_aubi', 'framework_shield', 'framework_work_liberation'],
+    dependencies: ['framework_treaty', 'council_phc', 'framework_hearthstone', 'framework_aubi', 'framework_shield', 'framework_work_liberation'],
     enables: ['council_global_transition', 'institution_office_just_transition', 'mechanism_legacy_transition_fund'],
     ui: {
       path: '/frameworks/sundown-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.sundownProtocol',
-      emoji: '🌇',
+      emoji: 'ðŸŒ‡',
       version: '1.0',
       slug: 'sundown-protocol'
     }
@@ -135,7 +135,8 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Receives PHC directives, sets binding timelines for industry sunsets, and liaises with international bodies.',
     tier: 2,
     status: 'Proposed',
-    dependencies: ['framework_sundown_protocol', 'council_planetary_health']
+    primaryDomain: 'Governance',
+    dependencies: ['framework_sundown_protocol', 'council_phc']
   },
   {
     id: 'institution_office_just_transition',
@@ -144,6 +145,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Manages the end-to-end transition roadmap, from co-creation to decommissioning and remediation.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_sundown_protocol', 'council_global_transition']
   },
   {
@@ -153,6 +155,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'A cultural institution of workers, communities, and Indigenous partners to guide narratives and preserve heritage.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_sundown_protocol']
   },
   {
@@ -162,6 +165,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Rapid deployment unit for emergency triage in transition crisis zones.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_sundown_protocol']
   },
   {
@@ -171,7 +175,8 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Facilitates restorative dialogue and conflict resolution during transition processes.',
     tier: 2,
     status: 'Proposed',
-    dependencies: ['framework_sundown_protocol', 'framework_peace_conflict_resolution']
+    primaryDomain: 'Justice',
+    dependencies: ['framework_sundown_protocol', 'framework_peace']
   },
   {
     id: 'institution_indigenous_monitoring_teams',
@@ -180,6 +185,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Indigenous-led teams that monitor remediation on traditional lands and can halt FPIC 2.0 violations.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_sundown_protocol', 'framework_indigenous']
   },
   {
@@ -189,6 +195,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'R&D facilities in transitioned regions developing restoration and circular economy technologies.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['framework_sundown_protocol']
   },
   {
@@ -198,6 +205,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Conducts decadal audits of transitioned regions to ensure long-term ecological and social well-being.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['framework_sundown_protocol']
   },
   {
@@ -207,6 +215,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Local BAZ-level boards with delegated power over local investment priorities.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['institution_office_just_transition', 'institution_baz']
   },
 
@@ -218,6 +227,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Governs the Reparations Levy, issues Transition Bonds, and distributes funds for the transition.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['framework_sundown_protocol']
   },
   {
@@ -227,6 +237,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'A fund allocated from the Legacy Transition Fund for education and ecological opportunities for children in affected communities.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['mechanism_legacy_transition_fund']
   },
   {
@@ -236,6 +247,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'A crisis response fund allocated from the Legacy Transition Fund for Just Transition SWAT Team deployments.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Economic',
     dependencies: ['mechanism_legacy_transition_fund']
   },
 
@@ -247,6 +259,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Legally guarantees worker protections (income, housing, healthcare) and community investments.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Justice',
     dependencies: ['framework_sundown_protocol']
   },
   {
@@ -256,6 +269,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'A public knowledge platform for sharing data, best practices, and tracking transition progress.',
     tier: 2,
     status: 'Draft',
+    primaryDomain: 'Technology',
     dependencies: ['framework_sundown_protocol']
   },
   {
@@ -265,6 +279,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'Trains transitioned workers and community leaders to advocate for just transitions globally.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['institution_office_just_transition']
   },
   {
@@ -274,6 +289,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description: 'An initiative to document and archive the technical and operational knowledge of industrial communities.',
     tier: 2,
     status: 'Proposed',
+    primaryDomain: 'Governance',
     dependencies: ['institution_legacy_council']
   }
 ];
@@ -341,7 +357,7 @@ export const justTransitionRelationships: GgfRelationship[] = [
   // === RELATIONSHIPS FOR SUNDOWN PROTOCOL ===
 
   // === TRIGGER & GOVERNANCE FLOW ===
-  { from: 'council_planetary_health', to: 'framework_sundown_protocol', type: 'ACTIVATES', description: 'The PHC issues a binding trigger for an industry sunset based on BHI thresholds, activating the protocol.' },
+  { from: 'council_phc', to: 'framework_sundown_protocol', type: 'ACTIVATES', description: 'The PHC issues a binding trigger for an industry sunset based on BHI thresholds, activating the protocol.' },
   { from: 'framework_sundown_protocol', to: 'council_global_transition', type: 'ESTABLISHES', description: 'The framework establishes its primary governing council.' },
   { from: 'council_global_transition', to: 'institution_office_just_transition', type: 'OVERSEES', description: 'The council sets timelines and oversees the operational institution that manages the transition.' },
   { from: 'institution_office_just_transition', to: 'institution_community_transition_board', type: 'ESTABLISHES', description: 'The OJT establishes local boards to ensure community-led decision-making.' },
@@ -358,11 +374,11 @@ export const justTransitionRelationships: GgfRelationship[] = [
   { from: 'protocol_worker_community_protection', to: 'institution_dj_tribunal', type: 'ENFORCES', description: 'The Digital Justice Tribunal has jurisdiction to enforce the covenant\'s guarantees.' },
   { from: 'framework_aubi', to: 'protocol_worker_community_protection', type: 'IMPLEMENTS', description: 'AUBI provides the income bridge for workers as guaranteed by the covenant.' },
   { from: 'framework_work_liberation', to: 'protocol_worker_community_protection', type: 'IMPLEMENTS', description: 'Provides the retraining and certification pathways for transitioning workers.' },
-  { from: 'institution_transition_mediation_corps', to: 'framework_peace_conflict_resolution', type: 'IMPLEMENTS', description: 'The corps is certified by and uses methodologies from the Peace & Conflict Resolution Framework.' },
+  { from: 'institution_transition_mediation_corps', to: 'framework_peace', type: 'IMPLEMENTS', description: 'The corps is certified by and uses methodologies from the Peace & Conflict Resolution Framework.' },
 
   // === ASSET & LAND TRANSITION ===
   { from: 'framework_sundown_protocol', to: 'framework_hearthstone', type: 'INTEGRATES_WITH', description: 'Decommissioned and remediated assets and land are transferred into Stewardship Trusts under the Hearthstone Protocol.' },
-  { from: 'institution_indigenous_monitoring_teams', to: 'framework_indigenous', type: 'IMPLEMENTS', description: 'These teams are the on-the-ground enforcers of the Indigenous Framework’s FPIC 2.0 protocols.' },
+  { from: 'institution_indigenous_monitoring_teams', to: 'framework_indigenous', type: 'IMPLEMENTS', description: 'These teams are the on-the-ground enforcers of the Indigenous Frameworkâ€™s FPIC 2.0 protocols.' },
 
   // === SECURITY & RESILIENCE ===
   { from: 'framework_shield', to: 'framework_sundown_protocol', type: 'INTEGRATES_WITH', description: 'The Shield Protocol can impose sanctions (e.g., export bans) on non-compliant entities and protect early adopters.' },
