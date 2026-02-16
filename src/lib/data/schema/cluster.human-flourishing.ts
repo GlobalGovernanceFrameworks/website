@@ -1193,6 +1193,12 @@ export const humanFlourishingRelationships: GgfRelationship[] = [
   { from: 'framework_indigenous', to: 'framework_kintsugi_protocol', type: 'GUIDES', description: 'The Indigenous Framework\'s principles of justice and sovereignty are paramount in BAZs, with the Red Lines Clause ensuring community control.' },
   { from: 'framework_aurora_accord', to: 'platform_community_safety', type: 'GUIDES', description: 'The Aurora Accord provides the mandatory data sovereignty, privacy, and anti-surveillance rules for the Community Safety Platform.' },
   { from: 'framework_drr', to: 'framework_kintsugi_protocol', type: 'COORDINATES_WITH', description: 'In large-scale emergencies, the DRR framework coordinates the on-the-ground response of CCSF teams.' },
+  {
+    from: 'framework_kintsugi_protocol',
+    to: 'framework_gender',
+    type: 'COORDINATES_WITH',
+    description: 'Survivor Sovereignty Protocol is co-designed with Gender & Kinship Justice Layer, applying Power Imbalance Assessment and anti-manipulation safeguards for intimate and gender-based violence cases.'
+  },
 
   // === SANCTUARY ACCORD RELATIONSHIPS ===
 
