@@ -167,7 +167,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/wise-decision-making-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.wiseDecisionMakingProtocol',
-      emoji: '🧭',
+      emoji: '🪷',
       slug: 'wise-decision-making-protocol'
     }
   },

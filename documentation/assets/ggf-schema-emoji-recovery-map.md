@@ -19,7 +19,7 @@ Copy-paste the emoji column into your cluster `.ts` files.
 | 101 | Global Citizenship | 🤝 | `U+1F91D` |
 | 127 | Arts Flourishing | 🎨 | `U+1F3A8` |
 | 150 | IDLP | 🧘 | `U+1F9D8` |
-| 170 | WDIP | 🧭 | `U+1F9ED` |
+| 170 | WDIP | 🪷 |  |
 
 ## cluster_data-os.ts
 
