@@ -427,7 +427,7 @@ export const socialEquityEntities: GgfEntity[] = [
     type: 'DataMetric',
     name: 'Cohesion Metrics Pack',
     shortName: 'Cohesion Metrics',
-    description: 'A suite of co-designed metrics, including the LMCI, to measure social fabric health and guide implementation.',
+    description: 'Dashboard and measurement toolkit for tracking social cohesion via LMCI, network metrics, equity indicators, and Triangulation Protocol (narrative, observational, and behavioral validation).',
     tier: 2,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -672,6 +672,12 @@ export const socialEquityRelationships: GgfRelationship[] = [
     to: 'tool_cohesion_metrics_pack',
     type: 'ESTABLISHES',
     description: 'The framework establishes the Cohesion Metrics Pack as its primary measurement tool.'
+  },
+  {
+    from: 'framework_social_fabric',
+    to: 'framework_gender',
+    type: 'IMPLEMENTS',
+    description: 'Social Fabric Framework implements the Relational Infrastructure provisions of the Kinship Protocol (Third Spaces, Rites of Passage, Relationship Education) through its Phase 2 Seeding Trust activities.'
   },
   
   // === CONNECTIONS TO ECONOMIC OS ===
