@@ -318,6 +318,17 @@ export const humanFlourishingEntities: GgfEntity[] = [
     dependencies: ['framework_discovery_commons', 'framework_meta_gov']
   },
   {
+    id: 'council_boundary',
+    type: 'Council',
+    name: 'Boundary Council for Conscientious Exploration',
+    shortName: 'Boundary Council',
+    description: 'Standing advisory body for navigating the boundary between legitimate cross-cultural engagement and appropriation of sacred knowledge. Composed of Indigenous knowledge keepers, non-Indigenous tradition holders, ethicists, and cross-cultural seekers.',
+    tier: 2,
+    status: 'Proposed',
+    primaryDomain: 'Ethics',
+    dependencies: ['framework_cognitive_sovereignty_accord', 'council_earth', 'council_cawc']
+  },
+  {
     id: 'council_youth_safety',
     type: 'Council',
     name: 'Youth Safety Council',
@@ -1310,6 +1321,19 @@ export const humanFlourishingRelationships: GgfRelationship[] = [
     to: 'framework_sanctuary', 
     type: 'GUIDES', 
     description: 'Indigenous temporal sovereignty (non-Gregorian calendars) is a core pillar of the Sanctuary Accord.' 
-  }
+  },
+
+  // Connections from cognitive sovereignty accord council_boundary
+  { from: 'framework_cognitive_sovereignty_accord', to: 'council_boundary', type: 'ESTABLISHES' },
+  { from: 'council_boundary', to: 'council_earth', type: 'REPORTS_TO',
+    description: 'Boundary Council operates under Earth Council moral authority for Indigenous knowledge questions' },
+  { from: 'council_boundary', to: 'council_cawc', type: 'REPORTS_TO',
+    description: 'Boundary Council coordinates with CAWC for non-Indigenous tradition questions' },
+  { from: 'council_boundary', to: 'institution_dj_tribunal', type: 'INFORMS',
+    description: 'Boundary Council case guidance carries weight in Digital Justice Tribunal appropriation proceedings' },
+  { from: 'framework_cognitive_sovereignty_accord', to: 'framework_synoptic', type: 'COORDINATES_WITH',
+    description: 'Digital Consciousness Environments provisions coordinate with Synoptic Protocol algorithmic governance and Right to Reality' },
+  { from: 'framework_cognitive_sovereignty_accord', to: 'framework_sanctuary', type: 'COORDINATES_WITH',
+    description: 'ACIA standards coordinate with Sanctuary Accord attention economy protections' }
 
 ];
