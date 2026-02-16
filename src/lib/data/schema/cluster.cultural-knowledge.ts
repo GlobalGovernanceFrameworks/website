@@ -522,6 +522,14 @@ export const culturalKnowledgeRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
 
+  // === CONNECTIONS TO SYNOPTIC PROTOCOL ===
+  {
+    from: 'framework_wdmip',
+    to: 'framework_synoptic',
+    type: 'REQUIRES',
+    description: 'WDIP Phase 0 Epistemic Health Assessment requires GCEI certification that information ecosystem meets baseline standards before process activation. Interfaces with Synoptic Protocol Decision-Making Under Uncertainty Protocol for action under suboptimal epistemic conditions.'
+  },
+
   // === CONNECTIONS TO JUSTICE OS ===
   {
     from: 'framework_wdmip',
