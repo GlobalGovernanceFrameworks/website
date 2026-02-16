@@ -24,7 +24,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/social-fabric',
       titleKey: 'framework.docs.nav.frameworkTitles.socialFabric', // This would need to be added to frameworkNav.js
-      emoji: 'ðŸ§¶',
+      emoji: '\u{1F9F6}',
       version: '1.0',
       slug: 'social-fabric',
       group: 'humanSocialSystems'
@@ -45,7 +45,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/cairn-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.cairnProtocol',
-      emoji: 'ðŸ—¿', // Cairn/Moai emoji
+      emoji: '\u{1F5FF}', // Cairn/Moai emoji
       version: '2.3',
       slug: 'cairn-protocol',
       group: 'socialFabricJustice'
@@ -67,7 +67,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/disability-rights-and-inclusion',
       titleKey: 'framework.docs.nav.frameworkTitles.disabilityRightsAndInclusion',
-      emoji: 'â™¿',
+      emoji: '\u267F',
       slug: 'disability-rights-and-inclusion',
       group: 'humanSocialSystems'
     }
@@ -76,20 +76,20 @@ export const socialEquityEntities: GgfEntity[] = [
     id: 'framework_gender',
     type: 'Framework',
     name: 'Gender & Kinship Justice Layer',
-    shortName: 'Gender & Kinship',
-    description: 'Framework ensuring gender equality and LGBTQ+ rights with intersectional approach',
+    shortName: 'Kinship Protocol',
+    description: 'Framework ensuring gender equality and LGBTQ+ rights with intersectional approach. Employs anti-reification design: identity-specific legal protections where persecution is identity-targeted, with progressive shift toward function-based framing for governance and economic mechanisms. Includes Relational Infrastructure for kinship formation.',
     tier: 3,
     status: 'Ready',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
     dependencies: ['framework_justice'],
-    enables: ['council_gkjc'],
+    enables: ['council_gkjc', 'process_transition_transcendence_wg', 'metric_category_dependency_ratio', 'metric_relational_wellbeing'],
     ui: {
       path: '/frameworks/kinship-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.kinshipProtocol',
-      emoji: 'ðŸ«‚',
-      version: '1.0',
+      emoji: '\u{1FAC2}',
+      version: '2.3',
       slug: 'kinship-protocol'
     }
   },
@@ -109,7 +109,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/youth-and-intergenerational-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.youthAndIntergenerationalGovernance',
-      emoji: 'ðŸ‘¶',
+      emoji: '\u{1F476}',
       slug: 'youth-and-intergenerational-governance'
     }
   },
@@ -129,7 +129,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/aging-population-support-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.agingPopulationSupportGovernance',
-      emoji: 'ðŸŒ³',
+      emoji: '\u{1F333}',
       slug: 'aging-population-support-governance'
     }
   },
@@ -149,7 +149,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/migration-and-human-mobility',
       titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
-      emoji: 'ðŸ—ºï¸',
+      emoji: '\u{1F5FA}\uFE0F',
       slug: 'migration-and-human-mobility',
       group: 'socialFabricJustice'
     }
@@ -171,7 +171,7 @@ export const socialEquityEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Gender & Kinship Justice Council',
     shortName: 'GKJC',
-    description: 'Specialized Meta-Governance council setting global standards for gender and LGBTQ+ equity',
+    description: 'Specialized Meta-Governance council setting global standards for gender and LGBTQ+ equity. All composition quotas subject to decadal sunset review by the Transition & Transcendence Working Group.',
     tier: 3,
     status: 'Proposed',
     primaryDomain: 'Justice',
@@ -443,6 +443,45 @@ export const socialEquityEntities: GgfEntity[] = [
     status: 'Proposed',
     primaryDomain: 'Economic',
     dependencies: ['framework_social_fabric', 'mechanism_gcf']
+  },
+
+  // === KINSHIP PROTOCOL 2.3: ANTI-REIFICATION MECHANISMS ===
+  {
+    id: 'process_transition_transcendence_wg',
+    type: 'Process',
+    name: 'Transition & Transcendence Working Group',
+    shortName: 'TTWG',
+    description: 'Standing committee within the GKJC conducting decadal reviews of identity-based quotas and categories, developing functional and relational alternatives, and monitoring for reification dynamics where protective categories create perverse incentives. Reports publicly every 5 years.',
+    tier: 3,
+    status: 'Proposed',
+    primaryDomain: 'Justice',
+    geographicScope: 'Global',
+    implementationPriority: 'Medium',
+    dependencies: ['framework_gender', 'council_gkjc']
+  },
+  {
+    id: 'metric_category_dependency_ratio',
+    type: 'DataMetric',
+    name: 'Category Dependency Ratio',
+    shortName: 'CDR',
+    description: 'Tracks the proportion of economic support flowing through identity-targeted vs. function-targeted mechanisms. Goal: progressive shift toward functional framing as conditions allow.',
+    tier: 3,
+    status: 'Draft',
+    primaryDomain: 'Justice',
+    geographicScope: 'Global',
+    dependencies: ['framework_gender', 'process_transition_transcendence_wg']
+  },
+  {
+    id: 'metric_relational_wellbeing',
+    type: 'DataMetric',
+    name: 'Relational Wellbeing Index',
+    shortName: 'RWI',
+    description: 'Composite metric measuring loneliness, community belonging, partnership satisfaction, and multi-generational connection across all demographics. Tracks effectiveness of Relational Infrastructure programs.',
+    tier: 3,
+    status: 'Draft',
+    primaryDomain: 'Health',
+    geographicScope: 'Global',
+    dependencies: ['framework_gender', 'framework_social_fabric']
   }
 
 ];
@@ -851,6 +890,71 @@ export const socialEquityRelationships: GgfRelationship[] = [
     type: 'SUPPORTS',
     description: 'The Digital Commons provides the infrastructure for the Community Weaving App, LMCI dashboards, and communication toolkits, all governed by the Anti-Surveillance Covenant.',
     strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+
+  // === KINSHIP PROTOCOL 2.3: ANTI-REIFICATION RELATIONSHIPS ===
+  {
+    from: 'framework_gender',
+    to: 'process_transition_transcendence_wg',
+    type: 'ESTABLISHES',
+    description: 'Kinship Protocol establishes the Transition & Transcendence Working Group as standing anti-reification mechanism within the GKJC.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'process_transition_transcendence_wg',
+    to: 'council_gkjc',
+    type: 'REPORTS_TO',
+    description: 'TTWG reports to the GKJC with decadal sunset reviews of identity-based quotas and recommendations for functional alternatives.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'process_transition_transcendence_wg',
+    to: 'metric_category_dependency_ratio',
+    type: 'USES_DATA_FROM',
+    description: 'TTWG uses the Category Dependency Ratio to assess progress toward function-based economic mechanisms.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gender',
+    to: 'framework_social_fabric',
+    type: 'INTEGRATES_WITH',
+    description: 'Kinship Protocol Relational Infrastructure (Third Spaces, Rites of Passage, Relationship Education) implemented through Social Fabric community weaving infrastructure.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_social_fabric',
+    to: 'framework_gender',
+    type: 'SUPPORTS',
+    description: 'Social Fabric provides the community trust and relational capacity that Kinship Protocol mechanisms depend on for effective implementation.',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gender',
+    to: 'framework_elder',
+    type: 'COLLABORATES_WITH',
+    description: 'Multi-Generational Connection programs within Relational Infrastructure co-designed with Elder Justice Layer and Council of Elders.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'metric_relational_wellbeing',
+    to: 'tool_cohesion_metrics_pack',
+    type: 'INTEGRATES_WITH',
+    description: 'Relational Wellbeing Index feeds into the broader Cohesion Metrics Pack for holistic community health measurement.',
+    strength: 'Medium',
+    frequency: 'Regular',
     sequenceType: 'Parallel'
   }
 
