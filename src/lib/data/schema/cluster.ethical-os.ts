@@ -25,7 +25,7 @@ export const ethicalOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/indigenous-sovereignty-pathways',
       titleKey: 'framework.docs.nav.frameworkTitles.indigenousSovereigntyPathways',
-      emoji: 'ðŸª¶',
+      emoji: '🪶',
       version: '1.0',
       slug: 'indigenous-sovereignty-pathways',
       group: 'socialFabricJustice'
@@ -104,7 +104,7 @@ export const ethicalOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/moral-operating-system',
       titleKey: 'framework.docs.nav.frameworkTitles.moralOperatingSystem',
-      emoji: 'ðŸ¦‹',
+      emoji: '🦋',
       slug: 'moral-operating-system'
     }
   },

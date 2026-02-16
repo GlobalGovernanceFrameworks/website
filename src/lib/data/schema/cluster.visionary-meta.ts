@@ -25,7 +25,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/planetary-immune-system',
       titleKey: 'framework.docs.nav.frameworkTitles.existentialRiskGovernance',
-      emoji: 'âš ï¸',
+      emoji: '⚠️',
       slug: 'planetary-immune-system',
       version: '2.1'
     }
@@ -45,7 +45,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/space-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.spaceGovernance',
-      emoji: 'ðŸš€',
+      emoji: '🚀',
       slug: 'space-governance'
     }
   },
@@ -69,7 +69,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/millennium-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.millenniumProtocol',
-      emoji: 'ðŸŒŒ',
+      emoji: '🌌',
       version: '6.0',
       slug: 'millennium-protocol'
     }
@@ -89,7 +89,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/deep-time-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.deepTimeGovernance',
-      emoji: 'â³',
+      emoji: '⏳',
       slug: 'deep-time-governance'
     }
   },
@@ -109,7 +109,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/wisdom-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.wisdomGovernance',
-      emoji: 'ðŸ¦‰',
+      emoji: '🦉',
       slug: 'wisdom-governance'
     }
   },
@@ -170,7 +170,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/oracle-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.oracleProtocol',
-      emoji: 'ðŸ”®',
+      emoji: '🔮',
       version: '2.7',
       slug: 'oracle-protocol'
     }

@@ -24,7 +24,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/social-fabric',
       titleKey: 'framework.docs.nav.frameworkTitles.socialFabric', // This would need to be added to frameworkNav.js
-      emoji: '\u{1F9F6}',
+      emoji: '🧶',
       version: '1.0',
       slug: 'social-fabric',
       group: 'humanSocialSystems'
@@ -45,7 +45,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/cairn-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.cairnProtocol',
-      emoji: '\u{1F5FF}', // Cairn/Moai emoji
+      emoji: '🗿', // Cairn/Moai emoji
       version: '2.3',
       slug: 'cairn-protocol',
       group: 'socialFabricJustice'
@@ -67,7 +67,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/disability-rights-and-inclusion',
       titleKey: 'framework.docs.nav.frameworkTitles.disabilityRightsAndInclusion',
-      emoji: '\u267F',
+      emoji: '♿',
       slug: 'disability-rights-and-inclusion',
       group: 'humanSocialSystems'
     }
@@ -88,7 +88,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/kinship-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.kinshipProtocol',
-      emoji: '\u{1FAC2}',
+      emoji: '🫂',
       version: '2.3',
       slug: 'kinship-protocol'
     }
@@ -109,7 +109,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/youth-and-intergenerational-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.youthAndIntergenerationalGovernance',
-      emoji: '\u{1F476}',
+      emoji: '👶',
       slug: 'youth-and-intergenerational-governance'
     }
   },
@@ -129,7 +129,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/aging-population-support-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.agingPopulationSupportGovernance',
-      emoji: '\u{1F333}',
+      emoji: '🌳',
       slug: 'aging-population-support-governance'
     }
   },
@@ -149,7 +149,7 @@ export const socialEquityEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/migration-and-human-mobility',
       titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
-      emoji: '\u{1F5FA}\uFE0F',
+      emoji: '🗺️',
       slug: 'migration-and-human-mobility',
       group: 'socialFabricJustice'
     }

@@ -41,7 +41,7 @@ export const justTransitionEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/aegis-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.aegisProtocol',
-      emoji: 'ðŸ›°ï¸',
+      emoji: '🛰️',
       version: '1.2',
       slug: 'aegis-protocol',
       group: 'socialFabricJustice'
@@ -121,7 +121,7 @@ export const justTransitionEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/sundown-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.sundownProtocol',
-      emoji: 'ðŸŒ‡',
+      emoji: '🌇',
       version: '1.0',
       slug: 'sundown-protocol'
     }

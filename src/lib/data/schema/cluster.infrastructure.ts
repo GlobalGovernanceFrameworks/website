@@ -34,7 +34,7 @@ export const conduitProtocolEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/conduit-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.conduitProtocol',
-      emoji: 'ðŸ”Œ',
+      emoji: '🔌',
       version: '1.0',
       slug: 'conduit-protocol'
       // Decide on a group, e.g., 'planetaryHealthResilience' or 'globalEconomicSystems'

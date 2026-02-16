@@ -27,7 +27,7 @@ export const mobilityCommonsEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/mobility-commons',
       titleKey: 'framework.docs.nav.frameworkTitles.mobilityCommons',
-      emoji: 'ðŸš†',
+      emoji: '🚆',
       slug: 'mobility-commons',
       group: 'planetaryHealthResilience' // Or 'globalEconomicSystems'
     }
@@ -170,7 +170,7 @@ export const developmentEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/bioregional-polis',
       titleKey: 'framework.docs.nav.frameworkTitles.bioregionalPolis',
-      emoji: 'ðŸ™ï¸',
+      emoji: '🏙️',
       slug: 'bioregional-polis',
       group: 'humanSocialSystems'
     }
@@ -190,7 +190,7 @@ export const developmentEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/living-land-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.livingLandProtocol',
-      emoji: 'ðŸ›–',
+      emoji: '🛖',
       slug: 'living-land-protocol'
     }
   },
@@ -225,7 +225,7 @@ export const developmentEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/regenerative-journeys',
       titleKey: 'framework.docs.nav.frameworkTitles.regenerativeJourneys',
-      emoji: 'ðŸ‘£',
+      emoji: '👣',
       slug: 'regenerative-journeys',
       group: 'humanSocialSystems'
     }

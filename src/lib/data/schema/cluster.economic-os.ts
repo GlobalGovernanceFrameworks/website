@@ -33,7 +33,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/adaptive-universal-basic-income',
       titleKey: 'framework.docs.nav.frameworkTitles.adaptiveUniversalBasicIncome',
-      emoji: 'ðŸ’°',
+      emoji: '💰',
       version: '1.0',
       slug: 'adaptive-universal-basic-income',
       group: 'globalEconomicSystems'
@@ -53,7 +53,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/financial-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.financialSystems',
-      emoji: 'â¤ï¸',
+      emoji: '❤️',
       slug: 'financial-systems',
       group: 'globalEconomicSystems'
     }
@@ -74,7 +74,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/work-in-liberation',
       titleKey: 'framework.docs.nav.frameworkTitles.workInLiberation',
-      emoji: 'ðŸ‘¥',
+      emoji: '👥',
       version: '1.0',
       slug: 'work-in-liberation',
       group: 'globalEconomicSystems'
@@ -94,7 +94,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/nested-economies',
       titleKey: 'framework.docs.nav.frameworkTitles.nestedEconomies',
-      emoji: 'ðŸ’±',
+      emoji: '💱',
       version: '1.0',
       slug: 'nested-economies',
       group: 'globalEconomicSystems'
@@ -115,7 +115,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/gaian-trade',
       titleKey: 'framework.docs.nav.frameworkTitles.gaianTrade',
-      emoji: 'ðŸŒ',
+      emoji: '🌍',
       slug: 'gaian-trade',
       group: 'globalEconomicSystems'
     }
@@ -134,7 +134,7 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/global-supply-chains-and-logistics',
       titleKey: 'framework.docs.nav.frameworkTitles.globalSupplyChainsAndLogistics',
-      emoji: 'ðŸš¢',
+      emoji: '🚢',
       version: '1.0',
       slug: 'global-supply-chains-and-logistics',
       group: 'globalEconomicSystems'

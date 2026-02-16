@@ -26,7 +26,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/educational-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.educationalSystems',
-      emoji: 'ðŸŽ“',
+      emoji: '🎓',
       slug: 'educational-systems',
       group: 'humanSocialSystems'
     }
@@ -47,7 +47,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/global-health-and-pandemic-security',
       titleKey: 'framework.docs.nav.frameworkTitles.globalHealthAndPandemicSecurity',
-      emoji: 'âš•ï¸',
+      emoji: '🌏',
       version: '1.0',
       slug: 'global-health-and-pandemic-security',
       group: 'planetaryHealthResilience'
@@ -69,7 +69,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/mental-health-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.mentalHealthGovernance',
-      emoji: 'ðŸ§ ',
+      emoji: '🧠',
       slug: 'mental-health-governance',
       group: 'humanSocialSystems'
     }
@@ -99,7 +99,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/cognitive-sovereignty-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.cognitiveSovereigntyAccord',
-      emoji: 'ðŸ„',
+      emoji: '🍄',
       version: '1.6',
       slug: 'cognitive-sovereignty-accord',
       group: 'humanSocialSystems'
@@ -132,7 +132,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/sanctuary-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.sanctuaryAccord',
-      emoji: 'ðŸŒ¸', 
+      emoji: '🌸', 
       version: '1.0',
       slug: 'sanctuary-accord',
       group: 'humanSocialSystems'
@@ -154,7 +154,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/synoptic-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.synopticProtocol',
-      emoji: 'ðŸ‘ï¸',
+      emoji: '👁️',
       version: '1.0',
       slug: 'synoptic-protocol',
       group: 'humanSocialSystems'
@@ -176,7 +176,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/prometheus-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.prometheusProtocol',
-      emoji: 'âš•ï¸',
+      emoji: '⚕️',
       version: '7.1',
       slug: 'prometheus-protocol',
       group: 'planetaryHealthResilience'
@@ -198,7 +198,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/discovery-commons',
       titleKey: 'framework.docs.nav.frameworkTitles.discoveryCommons',
-      emoji: 'ðŸ”¬', // Microscope emoji
+      emoji: '🔬', // Microscope emoji
       version: '1.0',
       slug: 'discovery-commons'
       // This fits well in group: 'humanSocialSystems'
@@ -220,7 +220,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/kintsugi-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.kintsugiProtocol',
-      emoji: 'ðŸº', // Amphora/pottery emoji for Kintsugi
+      emoji: '🏺', // Amphora/pottery emoji for Kintsugi
       version: '2.0',
       slug: 'kintsugi-protocol',
       group: 'humanSocialSystems'
@@ -261,7 +261,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/hearthlight-protocol', // You will need to create this page
       titleKey: 'framework.docs.nav.frameworkTitles.hearthlightProtocol', // Will be auto-generated
-      emoji: 'ðŸ§¸', // Using the teddy bear
+      emoji: '🧸', // Using the teddy bear
       version: '1.7', // From doc
       slug: 'hearthlight-protocol',
       group: 'humanSocialSystems' // Fits this group well

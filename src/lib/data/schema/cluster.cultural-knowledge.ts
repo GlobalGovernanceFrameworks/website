@@ -26,7 +26,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/cultural-heritage-preservation',
       titleKey: 'framework.docs.nav.frameworkTitles.culturalHeritagePreservation',
-      emoji: 'ðŸ›ï¸',
+      emoji: '🏛️',
       slug: 'cultural-heritage-preservation',
       version: '2.2'
     }
@@ -47,7 +47,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/digital-commons',
       titleKey: 'framework.docs.nav.frameworkTitles.digitalCommons',
-      emoji: 'ðŸ’»',
+      emoji: '💻',
       slug: 'digital-commons'
     }
   },
@@ -79,7 +79,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/religious-and-spiritual-dialogue-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.religiousAndSpiritualDialogueGovernance',
-      emoji: 'ðŸ•¯ï¸',
+      emoji: '🕯️',
       slug: 'religious-and-spiritual-dialogue-governance'
     }
   },
@@ -98,7 +98,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/global-citizenship-practice',
       titleKey: 'framework.docs.nav.frameworkTitles.globalCitizenshipPractice',
-      emoji: 'ðŸ¤',
+      emoji: '🤝',
       slug: 'global-citizenship-practice'
     }
   },
@@ -124,7 +124,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/arts-flourishing',
       titleKey: 'framework.docs.nav.frameworkTitles.artsFlourishing', // New key needed
-      emoji: 'ðŸŽ¨',
+      emoji: '🎨',
       slug: 'arts-flourishing',
       group: 'humanSocialSystems' // Fits well here
     }
@@ -147,7 +147,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/consciousness-and-inner-development',
       titleKey: 'framework.docs.nav.frameworkTitles.consciousnessAndInnerDevelopment',
-      emoji: 'ðŸ§˜',
+      emoji: '🧘',
       slug: 'consciousness-and-inner-development'
     }
   },
@@ -167,7 +167,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/wise-decision-making-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.wiseDecisionMakingProtocol',
-      emoji: 'ðŸ§­',
+      emoji: '🧭',
       slug: 'wise-decision-making-protocol'
     }
   },

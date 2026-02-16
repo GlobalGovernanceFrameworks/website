@@ -24,7 +24,7 @@ export const governanceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/meta-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.metaGovernance',
-      emoji: 'ðŸ›ï¸',
+      emoji: '🏛️',
       version: '1.1',
       slug: 'meta-governance'
     }
@@ -143,7 +143,7 @@ export const governanceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/emergent-governance-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.emergentGovernanceProtocol', // Note: This titleKey would need to be created
-      emoji: 'ðŸ—£ï¸',
+      emoji: '🗣️',
       version: '1.0',
       slug: 'emergent-governance-protocol'
     }
@@ -206,7 +206,7 @@ export const governanceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/polycentric-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.polycentricGovernance',
-      emoji: 'ðŸ•¸ï¸',
+      emoji: '🕸️',
       version: '0.5',
       slug: 'polycentric-governance'
     }

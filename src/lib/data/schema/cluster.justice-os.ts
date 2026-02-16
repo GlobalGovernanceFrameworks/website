@@ -24,7 +24,7 @@ export const justiceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/peace-and-conflict-resolution',
       titleKey: 'framework.docs.nav.frameworkTitles.peaceAndConflictResolution',
-      emoji: 'ðŸ•Šï¸',
+      emoji: '🕊️',
       version: '1.7',
       slug: 'peace-and-conflict-resolution',
       group: 'socialFabricJustice'
@@ -100,7 +100,7 @@ export const justiceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/justice-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.justiceSystems',
-      emoji: 'âš–ï¸',
+      emoji: '⚖️',
       version: '1.0',
       slug: 'justice-systems',
       group: 'socialFabricJustice'
@@ -150,7 +150,7 @@ export const justiceOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/shield-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.shieldProtocol',
-      emoji: 'ðŸ›¡ï¸',
+      emoji: '🛡️',
       version: '1.3',
       slug: 'shield-protocol',
       group: 'socialFabricJustice'

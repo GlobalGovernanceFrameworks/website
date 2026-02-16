@@ -26,7 +26,7 @@ export const technologyOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/technology-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.technologyGovernance',
-      emoji: 'ðŸ¤–',
+      emoji: '🤖',
       version: '3.2',
       slug: 'technology-governance',
       group: 'humanSocialSystems'
@@ -49,7 +49,7 @@ export const technologyOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/aethelred-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.aethelredAccord',
-      emoji: 'ðŸ§¬',
+      emoji: '🧬',
       version: '1.0',
       slug: 'aethelred-accord',
       group: 'humanSocialSystems'

@@ -26,7 +26,7 @@ export const pathfinderProtocolEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/pathfinder-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.pathfinderProtocol',
-      emoji: 'ðŸ§­',
+      emoji: '🧭',
       version: '1.0',
       slug: 'pathfinder-protocol',
       group: 'globalEconomicSystems'
