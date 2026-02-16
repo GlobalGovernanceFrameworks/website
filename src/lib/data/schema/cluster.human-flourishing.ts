@@ -643,6 +643,17 @@ export const humanFlourishingEntities: GgfEntity[] = [
     dependencies: ['framework_synoptic', 'institution_dj_tribunal']
   },
   {
+    id: 'protocol_uncertainty_decision',
+    type: 'Protocol',
+    name: 'Decision-Making Under Uncertainty Protocol',
+    shortName: 'Uncertainty Protocol',
+    description: 'Protocol for governance action under irreducible epistemic uncertainty. Includes Precautionary Threshold, Burden of Proof Assignment, Provisional Action Mandate, and Dissent Registry.',
+    tier: 2,
+    status: 'Draft',
+    primaryDomain: 'Governance',
+    dependencies: ['framework_synoptic', 'council_gcei']
+  },
+  {
     id: 'tool_existential_civics',
     type: 'Tool',
     name: 'Existential Civics Curriculum',
@@ -964,6 +975,11 @@ export const humanFlourishingRelationships: GgfRelationship[] = [
     frequency: 'Continuous',
     sequenceType: 'Sequential'
   },
+  { from: 'framework_synoptic', to: 'protocol_uncertainty_decision', type: 'ESTABLISHES' },
+  { from: 'protocol_uncertainty_decision', to: 'council_gcei', type: 'IMPLEMENTED_BY',
+    description: 'GCEI applies the Uncertainty Protocol for governance decisions under incomplete knowledge' },
+  { from: 'protocol_uncertainty_decision', to: 'framework_mos', type: 'COORDINATES_WITH',
+    description: 'Conscience & Sovereignty Clause requires higher evidentiary thresholds for provisional actions affecting matters of conscience' },
 
   // === PROMETHEUS PROTOCOL INTEGRATION ===
   { from: 'framework_prometheus_protocol', to: 'council_gpsc', type: 'ESTABLISHES', description: 'The protocol establishes the GPSC as its primary governing body.' },
