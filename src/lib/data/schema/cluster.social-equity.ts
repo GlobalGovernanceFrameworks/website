@@ -770,6 +770,14 @@ export const socialEquityRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
 
+  // === CONNECTIONS TO EDUCATION FRAMEWORK ===
+  {
+    from: 'framework_youth',
+    to: 'framework_education',
+    type: 'COORDINATES_WITH',
+    description: 'Emerging Youth readiness pathway integrates Educational Systems Framework civic education modules as prerequisites for full Youth Caucus voting rights.'
+  },
+
   // === CONNECTIONS TO CONSTITUTIONAL LAYER ===
   {
     from: 'framework_treaty',
