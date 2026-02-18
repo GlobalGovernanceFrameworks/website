@@ -517,6 +517,43 @@
   },
   {
     "meta": {
+      "title": "The Reality Rent",
+      "description": "We collided seven AI models to solve the future of work",
+      "date": "2026-02-18",
+      "author": "Björn K. Holmström",
+      "categories": [
+        "artificial-intelligence",
+        "future-of-work",
+        "systems-architecture"
+      ],
+      "tags": [
+        "supermodular-labor-protocol",
+        "contextual-intelligence",
+        "reality-rent",
+        "cognitive-scaffolding",
+        "global-south",
+        "tier-2-solutions",
+        "ai-alignment",
+        "universal-basic-equity"
+      ],
+      "hashtags": [
+        "#RealityRent",
+        "#SupermodularLaborProtocol",
+        "#ContextualIntelligence",
+        "#AIAlignment",
+        "#FutureOfWork",
+        "#GlobalSouth",
+        "#SystemicDesign",
+        "#GGF",
+        "#CognitiveScaffolding",
+        "#PostLaborEconomics"
+      ]
+    },
+    "slug": "the-reality-rent",
+    "lang": "en"
+  },
+  {
+    "meta": {
       "title": "The Urgent Upgrade: Why Our Global Operating System is a Liability (And How to Fix It)",
       "description": "Our 20th-century global governance systems generate unacceptable systemic risk. Discover how the 'Treaty for Our Only Home' offers a pragmatic, phased upgrade for a more resilient and stable future.",
       "author": "Global Governance Frameworks",
@@ -602,6 +639,43 @@
     },
     "slug": "what-we-would-do-if-we-were-trump",
     "lang": "en"
+  },
+  {
+    "meta": {
+      "title": "リアリティ・レント",
+      "description": "7つのAIモデルを衝突させ、仕事の未来を解き明かす",
+      "date": "2026-02-18",
+      "author": "ビョルン・K・ホルムストロム",
+      "categories": [
+        "人工知能",
+        "仕事の未来",
+        "システムアーキテクチャ"
+      ],
+      "tags": [
+        "スーパーモジュラー労働プロトコル",
+        "コンテキストインテリジェンス",
+        "リアリティレント",
+        "認知的足場",
+        "グローバルサウス",
+        "第2層ソリューション",
+        "AIアライメント",
+        "ユニバーサルベーシックエクイティ"
+      ],
+      "hashtags": [
+        "#リアリティレント",
+        "#スーパーモジュラー労働プロトコル",
+        "#コンテキストインテリジェンス",
+        "#AIアライメント",
+        "#仕事の未来",
+        "#グローバルサウス",
+        "#システムデザイン",
+        "#GGF",
+        "#認知的足場",
+        "#ポスト労働経済学"
+      ]
+    },
+    "slug": "the-reality-rent",
+    "lang": "ja"
   },
   {
     "meta": {
@@ -965,6 +1039,43 @@
       "readTime": 8
     },
     "slug": "the-love-ledger",
+    "lang": "sv"
+  },
+  {
+    "meta": {
+      "title": "Verklighetshyran",
+      "description": "Vi lät sju AI-modeller kollidera för att lösa framtidens arbete",
+      "date": "2026-02-18",
+      "author": "Björn K. Holmström",
+      "categories": [
+        "artificiell-intelligens",
+        "framtidens-arbete",
+        "systemarkitektur"
+      ],
+      "tags": [
+        "supermodulärt-arbetsprotokoll",
+        "kontextuell-intelligens",
+        "verklighetshyra",
+        "kognitiv-byggnadsställning",
+        "globala-syd",
+        "tier-2-lösningar",
+        "ai-anpassning",
+        "universellt-baskapital"
+      ],
+      "hashtags": [
+        "#Verklighetshyran",
+        "#SupermodulärtArbetsprotokoll",
+        "#KontextuellIntelligens",
+        "#AIAnpassning",
+        "#FramtidensArbete",
+        "#GlobalaSyd",
+        "#Systemdesign",
+        "#GGF",
+        "#KognitivByggnadsställning",
+        "#PostArbetsekonomi"
+      ]
+    },
+    "slug": "the-reality-rent",
     "lang": "sv"
   },
   {
