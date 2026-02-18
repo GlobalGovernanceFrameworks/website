@@ -59,7 +59,7 @@
     <div class="toc-container">
       <h2 class="toc-title">{tr('modelEvaluation.tableOfContents', 'Table of Contents')}</h2>
       <nav class="toc-nav">
-        {#each ['experiment', 'prompt', 'responses', 'evaluation', 'insights'] as sectionId, i}
+        {#each ['experiment', 'prompt', 'responses', 'evaluation', 'insights', 'synthesis'] as sectionId, i}
           <a href="#{sectionId}" class="toc-link">
             <span class="toc-number">{i + 1}.</span>
             <span class="toc-label">{tr(`modelEvaluation.sections.${sectionId}`, sectionId)}</span>
@@ -79,7 +79,7 @@
 
   <!-- Content Sections -->
   <div class="content-wrapper">
-    {#each ['experiment', 'prompt', 'responses', 'evaluation', 'insights'] as sectionId, i}
+    {#each ['experiment', 'prompt', 'responses', 'evaluation', 'insights', 'synthesis'] as sectionId, i}
       <section id={sectionId} class="content-section">
         <div class="section-header">
           <div class="section-title-row">

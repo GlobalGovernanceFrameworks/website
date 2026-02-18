@@ -23,7 +23,8 @@
     "prompt": "The Prompt",
     "responses": "The Responses",
     "evaluation": "The Evaluation",
-    "insights": "The Insights"
+    "insights": "The Insights",
+    "synthesis": "The Synthesis"
   },
   
   "tableOfContents": "Table of Contents",

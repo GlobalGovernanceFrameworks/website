@@ -23,7 +23,8 @@
     "prompt": "プロンプト",
     "responses": "回答",
     "evaluation": "評価",
-    "insights": "インサイト"
+    "insights": "インサイト",
+    "synthesis": "合成"
   },
   
   "tableOfContents": "目次",

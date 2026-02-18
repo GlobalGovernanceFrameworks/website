@@ -22,7 +22,8 @@
     "prompt": "Prompten",
     "responses": "Svaren",
     "evaluation": "Utvärderingen",
-    "insights": "Insikterna"
+    "insights": "Insikterna",
+    "synthesis": "Syntesen"
   },
   
   "tableOfContents": "Innehållsförteckning",

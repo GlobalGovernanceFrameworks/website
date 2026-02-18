@@ -34,19 +34,20 @@ We predicted that:
 
 ### Model Selection
 
-We curated six AI models based on:
+We curated **seven** AI models based on:
 - **Architectural diversity:** Different training approaches, parameter sizes, and design philosophies
 - **Developmental range:** Models exhibiting different "value system" orientations (using Spiral Dynamics as a rough heuristic)
 - **Proven capability:** Frontier models known for complex reasoning
 
-**The six participants:**
+**The seven participants:**
 
 1. **Claude Opus 4.6** (Anthropic) - Largest parameter count, known for nuanced reasoning
-2. **Claude Sonnet 4.5** (Anthropic) - Efficient model with strong governance thinking
+2. **Claude Sonnet 4.6** (Anthropic) - Optimized for high-speed complex reasoning and coding
 3. **DeepSeek V3.2** (DeepSeek) - Chinese model with unique architectural choices
 4. **ChatGPT-5.2** (OpenAI) - Latest GPT variant, strong structural thinking
 5. **Gemini Pro 3** (Google) - Advanced multimodal capabilities
-6. **Grok4** (xAI) - Elon Musk's model, trained with different priorities
+6. **Claude Sonnet 4.5** (Anthropic) - Efficient model with strong governance thinking
+7. **Grok4** (xAI) - Elon Musk's model, trained with different priorities
 
 ### The Prompt
 

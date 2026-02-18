@@ -12,7 +12,8 @@ const sectionIds = [
   '02-the-prompt',
   '03-the-responses',
   '04-the-evaluation',
-  '05-insights'
+  '05-insights',
+  '06-final-synthesis'
 ];
 
 // Map to clean IDs for HTML
@@ -21,7 +22,8 @@ const sectionIdMap = {
   '02-the-prompt': 'prompt',
   '03-the-responses': 'responses',
   '04-the-evaluation': 'evaluation',
-  '05-insights': 'insights'
+  '05-insights': 'insights',
+  '06-final-synthesis': 'synthesis'
 };
 
 // Try to load markdown file with fallback to English
