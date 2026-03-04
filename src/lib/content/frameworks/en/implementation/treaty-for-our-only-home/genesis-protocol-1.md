@@ -126,6 +126,8 @@ Like any birth, this process requires:
 
 The protocol ensures this birth is legitimate, diverse, capture-resistant, and capable of growing into a governance system worthy of our planet and future generations.
 
+The team that activates this process — the GGF Catalyst Team — is itself designed as a prototype of what it seeks to create: an organization that functions without employment coercion, hierarchical capture, or institutional self-preservation as a primary drive. This is not incidental. It is the first proof of concept for the AUBI thesis and the Permeation Mandate (Section VII.B.G).
+
 ### I.F. Relationship to other GGF components
 
 The Genesis Protocol does not stand alone. It is one essential element within the larger Global Governance Frameworks architecture.

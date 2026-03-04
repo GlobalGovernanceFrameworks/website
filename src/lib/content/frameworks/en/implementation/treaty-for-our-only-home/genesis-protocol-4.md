@@ -459,6 +459,33 @@ Neither framing contradicts the other. Together they explain why AUBI deployment
 
 **The monitoring implication**: Phase 2 Parallel Track success indicators (Section VIII.E of Module 5) include AUBI pilot operational status. The Institutional Permeation Assessment at Month 9 explicitly evaluates whether economic preconditions for adaptive node participation were established.
 
+### VII.B.G. The GGF Catalyst Team as living prototype
+
+The GGF Catalyst Team — the founding group responsible for activating the Genesis Protocol before any ratifying nation has deployed AUBI — faces exactly the participation problem that AUBI is designed to solve at scale. Before the system exists, there is no economic floor. Before the network effects accumulate, there is no institutional salary structure. Before ratification, there is no formal authority from which employment can be derived.
+
+The protocol's response is not to wait, but to embody the answer.
+
+**The Catalyst Team operates as a pre-AUBI AUBI organization**: participants contribute because their baseline needs are met through other means — existing social safety nets, part-time work, personal circumstances — rather than through GGF employment. No full-time salaries. No hierarchical employment dependencies. Decision-making distributed across contributors operating from their zone of competence rather than their job title.
+
+This is not a resource constraint dressed up as philosophy. It is a deliberate design choice grounded in the same logic as the Permeation Mandate and the compliance trap analysis above:
+
+- An organization whose participants depend on it for survival will inevitably develop institutional self-preservation as a primary drive, regardless of stated mission
+- An organization whose participants are economically independent of it retains no structural mechanism for capture through funding leverage
+- An organization that functions without coercive employment demonstrates, by existing, that the AUBI thesis is operationally sound
+
+**The Catalyst Team is the first institution that lives the transition rather than managing it from outside.**
+
+This places the GGF Catalyst Team among the earliest examples of what developmental frameworks (notably Spiral Dynamics) would recognize as second-tier organizational design: functional rather than hierarchical, complexity-tolerant, mission-coherent without enforcement, capable of holding systemic rather than institutional perspective. The goal is not organizational growth but organizational impact — and eventually, organizational irrelevance as the institutions it helped birth become capable of sustaining themselves.
+
+**Practical implications**:
+
+- Compensation takes the form of meaningful contribution, access to the network being built, and modest honoraria where the Genesis Fund can support them — not salaries creating dependency
+- Administrative load is distributed by function across contributors, not concentrated in a single coordinator role
+- Legal establishment uses the lightest viable structure — an international treaty body secretariat hosted in an existing international organization hosting framework (Geneva, The Hague, or Vienna conventions) — minimizing the organizational footprint while providing the legal standing the protocol requires
+- The Catalyst Team sunsets cleanly into the Interim Secretariat once the Genesis Protocol activates, and the Interim Secretariat itself sunsets at Month 24 per the constitutional schedule
+
+The test of whether this design succeeded is not whether the Catalyst Team endures. It is whether the institutions it convened are capable of carrying the mission without it.
+
 ---
 
 ## <a id="section-viii"></a>Section VIII: Constitutional Immune System & failure protocols
