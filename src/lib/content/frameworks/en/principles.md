@@ -33,6 +33,8 @@ The Global Governance Frameworks is built on several foundational principles tha
 
 This principle prevents the concentration of power that leads to authoritarianism while ensuring effective coordination on truly global challenges like climate change, pandemics, and technological regulation.
 
+*The formal basis for this principle is explored in the whitepapers [Governance Stability Simulator](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) and [Fractality as Stability](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability) — demonstrating that subsidiarity and fractal governance architectures are engineering requirements, not political preferences.*
+
 **Current Examples:**
 - The Nordic Council demonstrates decentralized governance where nations maintain sovereignty while cooperating on shared challenges.
 
@@ -74,6 +76,8 @@ Transparency is the immune system of good governance—it prevents corruption, b
 - Equal access regardless of wealth, location, or status
 
 Participation ensures that governance reflects collective wisdom rather than elite interests, while creating a sense of ownership and legitimacy.
+
+*The information-theoretic basis for this principle is explored in the whitepaper [The Observability-Democracy Connection](https://bjornkennethholmstrom.org/whitepapers/observability-democracy-connection) — demonstrating that representation chains with three or more layers structurally prevent citizen preferences from reaching the policy layer.*
 
 **Current Examples:**
 - Digital democracy platforms like Decidim and vTaiwan enable large-scale citizen participation.

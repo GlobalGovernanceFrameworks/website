@@ -34,6 +34,8 @@ Ramverken för global styrning bygger på flera grundläggande principer som utg
 
 Denna princip förhindrar maktkoncentration som kan leda till auktoritärt styre, samtidigt som den möjliggör effektiv samordning kring verkligt globala utmaningar som klimatförändringar, pandemier och teknologireglering.
 
+*Den formella grunden för denna princip utforskas i vitboken [Styrstabilitetssimulatorn](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) och [Fraktalitet som stabilitet](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability) — som visar att subsidiaritet och fraktala styrningsarkitekturer är ingenjörskrav, inte politiska preferenser.*
+
 **Nuvarande exempel:**
 - Nordiska rådet visar decentraliserad styrning där nationer behåller suveränitet samtidigt som de samarbetar kring gemensamma utmaningar.
 
@@ -73,6 +75,8 @@ Transparens är det goda styrets immunförsvar – det förhindrar korruption, b
 - Lika tillgång oavsett rikedom, plats eller status
 
 Deltagande säkerställer att styrning speglar kollektiv visdom snarare än elitintressen, och skapar samtidigt känsla av ägandeskap och legitimitet.
+
+*Den informationsteoretiska grunden för denna princip utforskas i vitboken [Observerbarhets-demokratikopplingen](https://bjornkennethholmstrom.org/whitepapers/observability-democracy-connection) — som visar att representationskedjor med tre eller fler lager strukturellt hindrar medborgarpreferenser från att nå politiknivån.*
 
 **Nuvarande exempel:**
 - Digitala demokratiska plattformar som Decidim och vTaiwan möjliggör storskaligt medborgardeltagande.

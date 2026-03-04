@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 10 180 180" width="200" height="200">
+  <defs>
+
+    <linearGradient id="blueNode" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D5FA8"/>
+      <stop offset="100%" stop-color="#7B6CB5"/>
+    </linearGradient>
+
+    <linearGradient id="goldNode" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#C4920D"/>
+      <stop offset="100%" stop-color="#E0B030"/>
+    </linearGradient>
+
+    <linearGradient id="greenNode" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D6B2D"/>
+      <stop offset="100%" stop-color="#5A9A5A"/>
+    </linearGradient>
+
+    <filter id="glow-green" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="glow-gold" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="glow-blue" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.0" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+  </defs>
+
+  <!-- ── Connection lines ───────────────────────────────────────────
+       Drawn first so nodes sit on top.
+       Tier 1 constitutional (blue) → Tier 2 coordination (gold)      -->
+  <line x1="100" y1="72"  x2="126" y2="55"  stroke="#6B7BB8" stroke-width="1.1" stroke-opacity="0.55"/>
+  <line x1="100" y1="72"  x2="55"  y2="74"  stroke="#6B7BB8" stroke-width="1.1" stroke-opacity="0.55"/>
+  <line x1="124" y1="114" x2="145" y2="126" stroke="#6B7BB8" stroke-width="1.1" stroke-opacity="0.55"/>
+  <line x1="124" y1="114" x2="74"  y2="145" stroke="#6B7BB8" stroke-width="1.1" stroke-opacity="0.55"/>
+  <line x1="76"  y1="114" x2="55"  y2="74"  stroke="#6B7BB8" stroke-width="1.1" stroke-opacity="0.55"/>
+  <line x1="76"  y1="114" x2="74"  y2="145" stroke="#6B7BB8" stroke-width="1.1" stroke-opacity="0.55"/>
+
+  <!-- Tier 2 coordination (gold) → Tier 3 bioregional (green) -->
+  <line x1="126" y1="55"  x2="100" y2="26"  stroke="#9A8A30" stroke-width="1.0" stroke-opacity="0.5"/>
+  <line x1="126" y1="55"  x2="164" y2="63"  stroke="#9A8A30" stroke-width="1.0" stroke-opacity="0.5"/>
+  <line x1="145" y1="126" x2="164" y2="137" stroke="#9A8A30" stroke-width="1.0" stroke-opacity="0.5"/>
+  <line x1="74"  y1="145" x2="100" y2="174" stroke="#9A8A30" stroke-width="1.0" stroke-opacity="0.5"/>
+  <line x1="74"  y1="145" x2="36"  y2="137" stroke="#9A8A30" stroke-width="1.0" stroke-opacity="0.5"/>
+  <line x1="55"  y1="74"  x2="36"  y2="63"  stroke="#9A8A30" stroke-width="1.0" stroke-opacity="0.5"/>
+
+  <!-- Lateral mesh between Tier 3 nodes (local actors coordinating directly) -->
+  <line x1="100" y1="26"  x2="164" y2="63"  stroke="#4A7A4A" stroke-width="0.7" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  <line x1="164" y1="63"  x2="164" y2="137" stroke="#4A7A4A" stroke-width="0.7" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  <line x1="164" y1="137" x2="100" y2="174" stroke="#4A7A4A" stroke-width="0.7" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  <line x1="100" y1="174" x2="36"  y2="137" stroke="#4A7A4A" stroke-width="0.7" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  <line x1="36"  y1="137" x2="36"  y2="63"  stroke="#4A7A4A" stroke-width="0.7" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  <line x1="36"  y1="63"  x2="100" y2="26"  stroke="#4A7A4A" stroke-width="0.7" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+
+  <!-- Cross-scale skip connections (polycentric — bypasses middle tier) -->
+  <line x1="124" y1="114" x2="164" y2="137" stroke="#557766" stroke-width="0.7" stroke-opacity="0.28" stroke-dasharray="2 3"/>
+  <line x1="100" y1="72"  x2="100" y2="26"  stroke="#557766" stroke-width="0.7" stroke-opacity="0.28" stroke-dasharray="2 3"/>
+  <line x1="76"  y1="114" x2="36"  y2="137" stroke="#557766" stroke-width="0.7" stroke-opacity="0.28" stroke-dasharray="2 3"/>
+
+  <!-- ── Tier 1 — constitutional (blue-purple, smallest: r=3.5) ─────
+       Lightweight global core. Three nodes, 120° apart.               -->
+  <circle cx="100" cy="72"  r="3.5" fill="url(#blueNode)" filter="url(#glow-blue)"/>
+  <circle cx="124" cy="114" r="3.5" fill="url(#blueNode)" filter="url(#glow-blue)"/>
+  <circle cx="76"  cy="114" r="3.5" fill="url(#blueNode)" filter="url(#glow-blue)"/>
+
+  <!-- ── Tier 2 — coordination (gold, medium: r=5.5) ───────────────
+       Four nodes, 90° apart, offset 30° from Tier 1.                 -->
+  <circle cx="126" cy="55"  r="5.5" fill="url(#goldNode)" filter="url(#glow-gold)"/>
+  <circle cx="145" cy="126" r="5.5" fill="url(#goldNode)" filter="url(#glow-gold)"/>
+  <circle cx="74"  cy="145" r="5.5" fill="url(#goldNode)" filter="url(#glow-gold)"/>
+  <circle cx="55"  cy="74"  r="5.5" fill="url(#goldNode)" filter="url(#glow-gold)"/>
+
+  <!-- ── Tier 3 — bioregional/commons (green, largest: r=7.5) ──────
+       Six nodes, 60° apart. Most human agency lives at the edges.     -->
+  <circle cx="100" cy="26"  r="7.5" fill="url(#greenNode)" filter="url(#glow-green)"/>
+  <circle cx="164" cy="63"  r="7.5" fill="url(#greenNode)" filter="url(#glow-green)"/>
+  <circle cx="164" cy="137" r="7.5" fill="url(#greenNode)" filter="url(#glow-green)"/>
+  <circle cx="100" cy="174" r="7.5" fill="url(#greenNode)" filter="url(#glow-green)"/>
+  <circle cx="36"  cy="137" r="7.5" fill="url(#greenNode)" filter="url(#glow-green)"/>
+  <circle cx="36"  cy="63"  r="7.5" fill="url(#greenNode)" filter="url(#glow-green)"/>
+
+</svg>
