@@ -1,9 +1,9 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
 section: Module 3 - Convening Part 2
-status: Full Draft v1.0 (from v0.4 FINAL outline)
-revision: 1.0
-date: 2025-11-04
+status: Full Draft v1.1 (updated to v0.5 outline)
+revision: 1.1
+date: 2026-03-04
 module: "3 of 6: Tier 2-3 convening (Sections VI.D-I)"
 wordCount: ~15,000
 purpose: Constitutional founding document for Treaty implementation

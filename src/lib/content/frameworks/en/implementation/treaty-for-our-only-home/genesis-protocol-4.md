@@ -1,9 +1,9 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
 section: Module 4 - Network effects & constitutional immune system
-status: Full Draft v1.0 (from v0.4 FINAL outline)
-revision: 1.0
-date: 2025-11-04
+status: Full Draft v1.1 (updated to v0.5 outline)
+revision: 1.1
+date: 2026-03-04
 module: "4 of 6: Network effects & safeguards (Sections VII-VIII)"
 wordCount: ~13,000
 purpose: Constitutional founding document for Treaty implementation
@@ -16,6 +16,7 @@ purpose: Constitutional founding document for Treaty implementation
 
 **In this module:**
 - [Section VII: Network Effects Protocol](#section-vii)
+- [Section VII.B: AUBI as cognitive infrastructure for systemic upgrade](#section-vii-b)
 - [Section VIII: Constitutional Immune System & failure protocols](#section-viii)
 
 **Estimated Reading Time**: 40 minutes
@@ -385,6 +386,78 @@ Even authoritarian regimes face pressure. Economic stagnation, capital flight, b
 - Debt relief: $500B+ by Year 3, $1-2T by Year 5
 
 **Success indicator**: When non-participating nations' governments face domestic pressure to join, protocol has succeeded in transforming incentive structure.
+
+---
+
+## <a id="section-vii-b"></a>Section VII.B: AUBI as cognitive infrastructure for systemic upgrade
+
+### VII.B.A. The standard framing and its limits
+
+AUBI (Adaptive Universal Basic Income, `framework_aubi`) is typically justified as poverty alleviation or economic stabilization—a floor beneath which no person falls. These are genuine and important functions. But they significantly understate AUBI's structural role in the transition architecture established by this protocol.
+
+The standard framing positions AUBI as a welfare mechanism: it catches people who fall through economic cracks. The systemic framing established here positions AUBI as cognitive infrastructure: it frees the institutional nodes that the permeation strategy (Principle 11, Section II.L) depends on to function.
+
+### VII.B.B. The compliance trap in legacy institutions
+
+In any centralized institution—a national ministry, a city council, a UN agency, an NGO—human nodes operate under a fundamental survival dynamic: their livelihood depends on the institution, which means their primary incentive is compliance rather than adaptation.
+
+**The mechanism**: A civil servant who identifies a failing process within their department faces a choice. Challenging that process risks their position, their income, their professional standing. Compliance preserves all three. In a world without economic security independent of institutional obedience, compliance is the rational choice. The institution's cognitive bandwidth is consumed by self-preservation rather than by adaptation.
+
+This dynamic is not a failure of individual courage or vision. It is a structural constraint. The people most positioned to upgrade legacy institutions from within are the ones most economically exposed if they try.
+
+**The result**: Institutions cannot perform the adaptive function they nominally exist for. The bottlenecks persist not because no one sees them but because no one can safely challenge them. Institutional cognitive bandwidth is devoted to defending the structure rather than improving it.
+
+### VII.B.C. AUBI as the enabling condition for permeation
+
+The Permeation Mandate (Section II.L) requires that the people inside legacy institutions be able to act as adaptive nodes: challenging slow vertical hierarchies, piloting lateral coordination protocols, participating in high-fidelity feedback mechanisms, redirecting resources toward better outcomes.
+
+None of this is possible at scale while participants depend on institutional obedience for their economic survival.
+
+**AUBI removes this constraint**. By guaranteeing baseline survival independent of institutional compliance, AUBI decouples human agency from the compliance trap—freeing the intellectual and political bandwidth required for nodes to function as adaptive agents rather than as compliance engines.
+
+**The three enabling conditions AUBI provides**:
+
+**1. Challenge capacity**: Civil servants can identify and contest failing processes without risking their baseline income. The cost of dissent drops from existential to manageable.
+
+**2. Lateral coordination capacity**: Local officials can pilot coordination arrangements—with neighboring municipalities, with civil society actors, with other institutional nodes—without waiting for institutional permission from above. The Legacy Hardware API (Section X.G of Module 5) provides the interface; AUBI provides the security to use it.
+
+**3. Participation capacity**: Citizens can engage in high-fidelity feedback mechanisms (deliberative panels, sortition processes, community oversight functions) without opportunity costs they cannot afford. Civic participation has historically been a luxury of the economically secure. AUBI makes it possible at scale.
+
+AUBI is not peripheral to the transition. It is the cognitive infrastructure that the permeation strategy runs on.
+
+### VII.B.D. Deployment priority and sequencing
+
+**The sequence matters**: AUBI deployment must begin in Phase 0-1 as foundational infrastructure, alongside Genesis Fund capitalization—not deferred to Phase 3 or 4.
+
+**Why**: Asking adaptive nodes to act before AUBI is operational is asking them to take existential risks for a governance transition that hasn't secured their participation. The protocol's credibility with the institutional actors it most depends on rests partly on demonstrating that the economic precondition for safe participation will be secured before their cooperation is requested.
+
+**Phase 0-1 AUBI deployment**:
+- AUBI pilot programs operational in at least 5 ratifying nations before Phase 2 Institutional Permeation Action Track activates
+- Priority deployment in nations where civil society and local government actors have expressed readiness to serve as adaptive nodes
+- Coordination with existing social protection systems to ensure compatibility and avoid gaps
+
+**Phase 2+ expansion**:
+- AUBI expansion follows ratification momentum
+- Nations joining at Gold tier access AUBI for their citizens
+- Network Effects (Section VII.A) position AUBI access as a major ratification incentive
+
+### VII.B.E. Integration with Network Effects Protocol
+
+Section VII.A lists AUBI as a Gold-tier benefit: access reserved for ratifying nations as a geopolitical participation incentive. This is correct for network effects architecture purposes.
+
+This section establishes an additional framing: AUBI functions simultaneously as a ratification incentive (external) and as the cognitive infrastructure enabling permeation (internal). These are two different functions served by the same mechanism.
+
+The protocol must hold both framings simultaneously:
+- To non-participating nations: "Join and your citizens access AUBI" (incentive framing)
+- To participating nations: "Deploy AUBI now as foundational infrastructure, before asking institutional actors to take adaptive risks" (infrastructure framing)
+
+Neither framing contradicts the other. Together they explain why AUBI deployment priority is constitutional, not merely programmatic—it is part of the founding architecture, not a policy add-on.
+
+### VII.B.F. Assessment and monitoring
+
+**Why this matters for legitimacy**: A permeation strategy premised on people within legacy institutions acting as adaptive nodes is only credible if those people can reasonably expect economic security while doing so. Without AUBI as foundational infrastructure, the Permeation Mandate is an aspiration rather than an architecture.
+
+**The monitoring implication**: Phase 2 Parallel Track success indicators (Section VIII.E of Module 5) include AUBI pilot operational status. The Institutional Permeation Assessment at Month 9 explicitly evaluates whether economic preconditions for adaptive node participation were established.
 
 ---
 

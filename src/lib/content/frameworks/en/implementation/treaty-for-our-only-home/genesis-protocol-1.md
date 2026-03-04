@@ -1,9 +1,9 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
 section: Module 1 - Foundation
-status: Full Draft v1.0 (from v0.4 FINAL outline)
-revision: 1.0
-date: 2025-11-04
+status: Full Draft v1.1 (updated to v0.5 outline)
+revision: 1.1
+date: 2026-03-04
 module: "1 of 6: Foundation (Sections I-IV)"
 wordCount: ~12,000
 purpose: Constitutional founding document for Treaty implementation
@@ -217,7 +217,7 @@ This full Genesis Protocol will be published as six integrated modules:
 
 ## <a id="section-ii"></a>Section II: Core principles for legitimate convening
 
-The Genesis Protocol rests on ten foundational principles that govern how institutions are convened, how authority is established, and how capture is prevented. These principles emerged from historical analysis, consultation with constitutional experts and Indigenous leaders, and rigorous adversarial testing.
+The Genesis Protocol rests on eleven foundational principles that govern how institutions are convened, how authority is established, and how capture is prevented. These principles emerged from historical analysis, consultation with constitutional experts and Indigenous leaders, and rigorous adversarial testing.
 
 ### II.A. Principle 1: Legitimacy cascade
 
@@ -927,6 +927,33 @@ The Interim Secretariat (Section IV) includes a "Chief Data Security Officer" re
 
 **Trade-off acknowledged**: High-security infrastructure is expensive and complex. The Genesis Fund (Section III) allocates $100M specifically for secure digital infrastructure. This is a substantial investment, but the cost of compromised systems would be total loss of legitimacy.
 
+### II.L. Principle 11: The Permeation Mandate
+
+**Statement**: The Genesis Protocol does not seek the abolition of legacy institutions. GGF structures are designed to interface with, permeate, and upgrade legacy institutions from within—not to replace them from without.
+
+**The problem this addresses**: Revolutionary governance proposals routinely fail in one of two ways: either they attempt to abolish existing institutions wholesale (creating dangerous power vacuums that authoritarianism reliably fills), or they leave existing institutions entirely intact while building parallel structures that lack the reach and legitimacy to matter. The Genesis Protocol must navigate between these failure modes.
+
+**The deeper insight**: The United Nations, nation-states, municipal governments, and existing legal frameworks are the accumulated coordination hardware of human civilization. Destroying them would not liberate humanity from failed governance—it would trigger regression into precisely the conditions the Genesis Protocol is designed to overcome.
+
+**The solution**: Design GGF structures as upgrade interfaces for legacy institutions, not replacement structures.
+
+**The mechanism**: As AUBI (Section VII.B) removes the compliance trap that binds institutional actors to self-preservation over adaptation, sovereign nodes within legacy structures become capable of lateral routing, high-fidelity feedback, and resource redirection—without requiring the institution's formal permission to change. A civil servant freed from income anxiety can challenge a failing process. A local official with economic security can pilot a coordination protocol without waiting for national authorization. The transition path runs through existing institutions, activated by people inside them.
+
+**Constitutional limits**: No GGF body may claim authority over the internal governance of legacy institutions. GGF provides routing protocols and coordination infrastructure. Legacy institutions retain full internal sovereignty over their own operations. The upgrade is offered, never imposed.
+
+**What this principle is not**: It is not a claim that legacy institutions are good as currently designed. It is a claim that the people inside them, freed from survival anxiety, are capable of far more than those institutions currently allow.
+
+**The Legacy Hardware API (Section X.G)** provides the practical interface layer specifying how institutional actors can connect their work to GGF coordination infrastructure without requiring new legislation or institutional permission.
+
+**The Institutional Permeation Action Track (Section VIII.E, Phase 2 Parallel)** translates this principle into operational steps during the founding period.
+
+**Why this prevents capture**:
+- By not abolishing legacy institutions, the protocol avoids creating power vacuums vulnerable to authoritarian backfill
+- By working through people rather than structures, transformation is distributed and cannot be blocked by any single institutional decision
+- By making GGF coordination optional rather than mandatory for legacy institutions, the protocol avoids triggering defensive resistance
+
+**Ethical grounding**: This principle reflects humility about transformative timescales. Civilizational infrastructure built over centuries does not transform in years. The permeation strategy accepts this reality while refusing to use it as an excuse for paralysis. It plants the upgrade infrastructure now, trusting that the people within legacy systems—given the conditions for agency—will carry transformation forward on human timescales.
+
 ---
 
 ## <a id="section-iii"></a>Section III: The Genesis Fund (hardened edition)
@@ -1603,7 +1630,7 @@ This first module has established the foundational architecture for legitimate i
 
 **Section I** explained why legitimate convening processes matter and what historical precedents teach about successful constitutional founding.
 
-**Section II** defined ten core principles ensuring legitimacy, preventing capture, and enabling pluriversal participation while respecting diverse authority sources.
+**Section II** defined eleven core principles ensuring legitimacy, preventing capture, and enabling pluriversal participation while respecting diverse authority sources—including the new Permeation Mandate establishing that GGF structures upgrade legacy institutions from within rather than seeking to replace them.
 
 **Section III** created the Genesis Fund with mandatory Peace Tithe contributions, tripartite governance, and unconditional Indigenous Sovereign Endowment proving that resource flows reflect sovereign recognition rather than aid relationships.
 

@@ -1,9 +1,9 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
 section: Module 5 - Implementation
-status: Full Draft v1.0 (from v0.4 FINAL outline)
-revision: 1.0
-date: 2025-11-04
+status: Full Draft v1.1 (updated to v0.5 outline)
+revision: 1.1
+date: 2026-03-04
 module: "5 of 6: Implementation (Sections VIII-X)"
 wordCount: ~15,500
 purpose: Implementation roadmap for constitutional founding
@@ -404,6 +404,37 @@ The final Phase 2 institutions provide operational capacity for justice, enforce
 - All institutions have published charters and accountability mechanisms
 - Public awareness reaches 60% in ratifying nations
 - Track 1 emergency powers fully transferred to permanent institutions
+
+### VIII.E. Phase 2 parallel track: Institutional Permeation Action (months 6-9)
+
+While the global convening process establishes formal legitimacy structures during Phase 2, a parallel operational track activates the Permeation Mandate (Section II.L of Module 1) at the local and national level. The purpose is to ensure the transition is not only top-down institutional construction but also bottom-up infrastructure deployment—embedding the upgrade interface between GGF coordination infrastructure and existing legacy institutions before those institutions are asked to change.
+
+This track is distinct from Track 1 (Emergency Survival Framework). Track 1 handles existential threats. The Institutional Permeation Action track handles systemic transition. They operate in parallel without jurisdictional overlap.
+
+**Activities**:
+
+**AUBI pilot deployment**
+First AUBI pilots operational in at least 5 ratifying nations, with priority to nations where civil society and local government actors have expressed readiness to serve as adaptive nodes. As established in Section VII.B (Module 4), AUBI deployment at this stage is constitutional infrastructure, not a welfare add-on: it removes the compliance trap that prevents institutional actors from executing the permeation strategy safely.
+
+**Lateral coordination network activation**
+First inter-municipal lateral coordination agreements signed under the Legacy Hardware API Municipal Finance Bridge (Section X.L). Target: 20 or more city-to-city coordination agreements across ratifying nations. These agreements demonstrate that the permeation approach is operational and documentable, providing evidence base for the Month 9 assessment.
+
+**Adaptive node registry**
+The GGF Catalyst Team (in formation) maintains a voluntary, non-public registry of institutional actors—civil servants, local officials, NGO staff—who have completed Legacy Hardware API orientation and are actively executing permeation activities. The registry is non-public specifically to protect participants from institutional retaliation; it is accessible to other registered nodes for peer coordination and mutual support.
+
+**First Permeation Assessment**
+At Month 9, the GGF Catalyst Team publishes a first assessment covering: how many institutions have adopted Legacy Hardware API components, what legal or administrative barriers have been encountered, what protocol revisions are indicated, and whether AUBI pilot deployment met the economic precondition timeline established in Section VII.B. This assessment informs the Phase 3 transition and is published on the Birth Certificate Dashboard.
+
+**Success indicators**:
+- AUBI pilots operational: ≥5 ratifying nations
+- Municipal lateral agreements signed: ≥20
+- Adaptive node registry entries: ≥500
+- Legal barriers documented: comprehensive catalogue published
+- Legacy Hardware API adoption: ≥10% of ratifying nation municipalities contacted
+- First Permeation Assessment published by Month 9
+
+**Relationship to Track 1**:
+The Institutional Permeation Action track does not activate emergency governance capacity and has no authority over Track 1 processes. If Track 1 emergency interventions create legal or political conditions that affect permeation activities in specific jurisdictions, the GGF Catalyst Team documents this as a barrier in the Month 9 assessment rather than attempting to coordinate Track 1 actions.
 
 ### VIII.F. Phase 3: Integration and transition (months 15-18)
 
@@ -1810,6 +1841,70 @@ The convening modality protocols embody a core tension: Governance requires huma
 
 This is not compromise—it is **appropriate differentiation**. Different governance functions require different forms of presence. The protocol honors this rather than imposing false uniformity.
 
+### X.L. Legacy Hardware API: Interface protocol for institutional permeation
+
+#### X.L.A. The problem: the interface gap
+
+The Permeation Mandate (Section II.L of Module 1) establishes that GGF structures are designed to upgrade legacy institutions from within, not replace them from without. The AUBI analysis (Section VII.B of Module 4) establishes the economic precondition that makes this possible. But neither addresses a practical gap: an adaptive node working inside a city council, a national ministry, or a UN agency cannot execute the permeation strategy without a concrete answer to a daily operational question.
+
+**The question**: How do I legally and administratively connect what I am doing here to GGF coordination infrastructure?
+
+Without a defined interface, well-intentioned actors will either create incompatible local variants or abandon the effort when they hit the first bureaucratic obstacle. The Legacy Hardware API closes this gap.
+
+#### X.L.B. What the API is
+
+The Legacy Hardware API specifies the legal and administrative connection points between GGF coordination infrastructure and existing institutional frameworks. It is not a mandate—no institution is required to use it. It is a toolkit that makes the connection smooth for actors who choose to pursue the permeation strategy.
+
+**It is an interface layer, not a governance layer.** The legacy institution retains full internal sovereignty. The API specifies how to connect, not how to be governed.
+
+#### X.L.C. Core components
+
+**1. Municipal Finance Bridge**
+
+A legal template enabling city councils to allocate existing budget line items—typically under "community development," "social innovation," or "participatory budgeting" categories—toward GGF-compatible local coordination mechanisms, without requiring new legislation.
+
+The template is designed for municipal legal environments across different jurisdictions and is available in jurisdiction-specific variants. A local official using this component does not need special authorization: they are using existing budget authority in a way that happens to be compatible with GGF coordination infrastructure.
+
+**2. Civil Service Participation Protocol**
+
+A standardized framework allowing civil servants to participate in GGF pilot programs and lateral coordination networks as part of existing professional development or intergovernmental liaison functions—not as outside activity requiring special permission.
+
+This component addresses the most common barrier reported by potential adaptive nodes: the concern that participating in GGF coordination activities could be characterized as unauthorized outside engagement. The protocol specifies how existing civil service participation frameworks can accommodate GGF coordination activities without triggering conflict-of-interest or secondary employment concerns.
+
+**3. Data Sharing Standards**
+
+Technical specifications for how existing government data systems can contribute to GGF shared visibility infrastructure without requiring full data sovereignty transfer. Read-only contribution protocols with opt-out granularity allow institutions to share aggregate or anonymized data for coordination purposes while retaining full control over sensitive or proprietary information.
+
+**4. Procurement Compatibility Layer**
+
+Guidance on how existing government procurement rules can be interpreted to include GGF-aligned service providers using existing "social value," "local procurement," or "sustainability" clauses, rather than requiring new procurement frameworks or exception authorities.
+
+This component is particularly relevant for municipalities and agencies that want to resource GGF-compatible activities but face procurement compliance barriers.
+
+#### X.L.D. What the API is not
+
+The Legacy Hardware API is not a mechanism for GGF to acquire authority over legacy institutions. Every component is designed so that the legacy institution retains full control; GGF infrastructure is an optional coordination layer, not a dependency.
+
+It is not a compliance instrument. Institutions that adopt API components are not thereby subordinated to GGF governance. They are using a standardized interface of their own choosing.
+
+It is not static. The API is maintained by the GGF Catalyst Team with quarterly updates. Institutional partners who identify gaps in their legal context are invited to contribute jurisdiction-specific variants under open license.
+
+#### X.L.E. Deployment and the Adaptive Node Registry
+
+The Phase 2 Permeation Action Track (Section VIII.E) includes deployment of the Legacy Hardware API as a core activity. The GGF Catalyst Team maintains an Adaptive Node Registry—a voluntary, non-public registry of institutional actors who have completed API orientation and are actively executing permeation activities.
+
+**Non-public by design**: The registry protects participants from institutional retaliation. Participation is a voluntary act of coordination, not a public declaration that could invite disciplinary response from institutional superiors.
+
+**Accessible to registered nodes**: Nodes can connect with other registered nodes for peer coordination, mutual support, and sharing of jurisdiction-specific adaptations.
+
+**First Permeation Assessment**: At Month 9, the GGF Catalyst Team publishes an assessment of API adoption, barriers encountered, and protocol revisions indicated. This assessment is published publicly on the Birth Certificate Dashboard.
+
+#### X.L.F. Relationship to the broader integration architecture
+
+The Legacy Hardware API is the operational expression of the Permeation Mandate within Section X's integration framework. Sections X.B through X.K describe how Genesis institutions relate to specific types of existing actors (UN, regional organizations, national governments, etc.). The Legacy Hardware API describes how the people inside those institutions can connect their own work to GGF coordination infrastructure without waiting for their institutions to formally change.
+
+Both approaches are necessary. Top-down institutional relationships (X.B-X.K) proceed through formal channels on institutional timescales. The Legacy Hardware API enables permeation on human timescales—activated by individual actors exercising the agency that AUBI has made economically safe.
+
 ---
 
 ## Module 5 summary
@@ -1821,6 +1916,7 @@ This module established the implementation architecture for legitimate instituti
 - Dual-track activation balancing urgency (Track 1 survival framework) with legitimacy (Track 2 deliberative founding)
 - Phase 0 creating constitutional groundwork through Pluriversal Sovereign consent (peoples + Indigenous nations + states)
 - Phase 1-3 convening institutions from foundational bodies through operational capacity
+- Phase 2 Parallel Track activating the Institutional Permeation Action Track alongside formal convening: AUBI pilots, lateral coordination network, adaptive node registry, first Permeation Assessment
 - Phase 4 stabilization and learning with Genesis Retrospective at month 24
 - Timeline contingencies allowing graceful adaptation while maintaining legitimacy standards
 - Birth Certificate Dashboard providing public transparency throughout
@@ -1848,6 +1944,7 @@ This module established the implementation architecture for legitimate instituti
 - Local/municipal integration empowering cities as coordination nodes
 - Functional equivalence allowing diverse approaches while maintaining coherence
 - Periodic integration reviews ensuring ongoing adaptation
+- **Legacy Hardware API** providing the practical interface layer for institutional permeation: how adaptive nodes inside legacy institutions connect to GGF coordination infrastructure without requiring institutional permission to change
 
 **Together these sections provide the roadmap from founding moment to operational governance**—showing how legitimate, pluriversal institutions can emerge, how they navigate cultural diversity with integrity, and how they integrate with the complex reality of existing governance systems.
 
@@ -1868,4 +1965,3 @@ The implementation architecture is not rigid procedure—it is adaptive framewor
 - Implementation timeline: Phase 0 through Phase 4 (months -12 to 24)
 - Integration domains: UN, regional, Indigenous, grassroots, private sector, national, local
 - Cultural protocols: mediation hierarchy, knowledge protection, language justice, ceremonial integration
-

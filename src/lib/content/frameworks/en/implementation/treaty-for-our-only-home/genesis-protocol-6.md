@@ -1,9 +1,9 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
 section: Module 6 - Accountability & Conclusion
-status: Full Draft v1.0 (from v0.4 FINAL outline)
-revision: 1.0
-date: 2025-11-04
+status: Full Draft v1.1 (updated to v0.5 outline)
+revision: 1.1
+date: 2026-03-04
 module: "6 of 6: Accountability & Conclusion (Sections XI-XVI)"
 wordCount: ~14,000
 purpose: Accountability mechanisms and validation for constitutional founding
@@ -16,7 +16,7 @@ purpose: Accountability mechanisms and validation for constitutional founding
 - [Section XI: Monitoring & evolution](#section-xi)
 - [Section XII: Constitutional amendment tiers](#section-xii)
 - [Section XIII: Ethical foundations](#section-xiii)
-- [Section XIV: Steel manning validation summary](#section-xiv)
+- [Section XIV: Steel manning validation summary](#section-xiv) *(includes v0.5 permeation strategy vulnerabilities)*
 - [Section XV: Conclusion - From cathedral to fortress](#section-xv)
 - [Section XVI: Epilogue - The planetary birth ritual](#section-xvi)
 
@@ -1283,7 +1283,41 @@ The Genesis Protocol was subjected to rigorous "steel manning"—a process where
 
 **Status**: ✅ Hardened
 
-### XIV.D. Antifragile architecture
+### XIV.D. v0.5 Steel manning required: The Permeation Strategy
+
+The permeation strategy introduced in v0.5 (Principle 11: The Permeation Mandate, Section II.L of Module 1; AUBI as cognitive infrastructure, Section VII.B of Module 4; Legacy Hardware API, Section X.L of Module 5) has not yet undergone the adversarial testing applied to v0.4 provisions. The following vulnerabilities have been identified and are flagged for Round 3 steel manning.
+
+**Vulnerability 1: Weaponizing the Legacy Hardware API as evidence of infiltration**
+
+**Attack scenario**: Critics characterize the Legacy Hardware API not as a voluntary coordination tool but as evidence that GGF is systematically infiltrating sovereign institutions. "They have an API specifically designed to get their agents into civil service roles. This is soft-power subversion of national sovereignty."
+
+**Why this is a genuine concern**: The framing is accurate at a surface level—the API is designed to enable people inside legacy institutions to connect their work to GGF infrastructure. The difference between "voluntary coordination" and "systematic infiltration" is entirely a matter of framing and political context. In a high-distrust geopolitical environment, the framing the protocol intends may not be the framing that spreads.
+
+**Proposed countermeasures** (untested): Maximum transparency about the API's voluntary, institution-respecting design; explicit "no GGF authority claims" in all API documentation; independent audit of API deployments to verify no coercive use; clear whistleblower channels for reporting coercive API use.
+
+**Status**: ⚠️ Requires steel manning
+
+**Vulnerability 2: AUBI deployment timeline feasibility**
+
+**Attack scenario**: "You are promising AUBI pilots in Phase 0-1 before the permeation strategy depends on them. Phase 0-1 requires Treaty ratification, Genesis Fund capitalization ($2B), and interim secretariat formation. None of this is trivially achievable. You cannot credibly promise AUBI deployment as foundational infrastructure when the institutional preconditions for that deployment are themselves uncertain."
+
+**Why this is a genuine concern**: Section VII.B (Module 4) explicitly frames AUBI deployment as constitutionally necessary before asking adaptive nodes to take risks. If AUBI pilots are delayed beyond Phase 1—which is plausible—then either the permeation strategy proceeds without its cognitive infrastructure (undermining the architecture) or the permeation track is delayed (undermining the timeline).
+
+**Proposed countermeasures** (untested): Establish minimum viable AUBI pilot criteria that are more readily achievable than full national deployment; identify partner nations with existing basic income infrastructure that could serve as early adoptors; separate the "promise of AUBI" as participation incentive from "actual AUBI deployment" as cognitive infrastructure, and be explicit that the latter is a condition precedent for the permeation action track.
+
+**Status**: ⚠️ Requires steel manning
+
+**Vulnerability 3: Adaptive node registry privacy and retaliation exposure**
+
+**Attack scenario**: Even a non-public registry creates a honey pot. If the registry is compromised—through hacking, legal compulsion in authoritarian jurisdictions, or insider disclosure—participants who trusted non-public status face institutional retaliation, professional consequences, or in some contexts, personal danger.
+
+**Why this is a genuine concern**: The registry's value depends on participants trusting it. That trust depends on security. But no security architecture is perfect, and the attack surface of a registry containing hundreds or thousands of institutional insiders across multiple jurisdictions is substantial. The promise of non-public status may create more risk than it mitigates, by encouraging participation that participants would not otherwise undertake.
+
+**Proposed countermeasures** (untested): Zero-knowledge registry design where even the GGF Catalyst Team cannot identify participants; opt-in-only inter-node coordination to minimize data held; legal analysis of compelled disclosure risks in each participating jurisdiction before registry activation; clear informed consent about residual risks.
+
+**Status**: ⚠️ Requires steel manning
+
+### XIV.E. Antifragile architecture
 
 The protocol doesn't just resist attacks—it uses them as strengthening forces.
 
