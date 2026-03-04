@@ -16,6 +16,7 @@ purpose: Constitutional founding document for Treaty implementation
 - [Section I: Introduction & the bootstrapping paradox](#section-i)
 - [Section II: Core principles for legitimate convening](#section-ii)
 - [Section III: The Genesis Fund (hardened edition)](#section-iii)
+  - [Section III.G: Structural corruption resistance](#section-iii-g)
 - [Section IV: The Interim Secretariat](#section-iv)
 
 **Estimated Reading Time**: 35 minutes
@@ -1269,6 +1270,62 @@ Tripartite Board can refuse contributions from sources that would undermine legi
 - Corruption investigations are automatic, not discretionary
 
 **Ultimate accountability**: Constitutional Health Monitors (Section VIII.A) assess financial integrity as part of quarterly institutional health reports, providing independent evaluation of Fund governance.
+
+### III.G. Structural corruption resistance: Why process is not enough
+
+Section III.F establishes accountability processes — audits, disclosures, investigations. This section addresses a harder problem: the conditions under which those processes fail, and the structural design choices that make failure less likely regardless of individual virtue.
+
+The research on institutional corruption is unambiguous on one point: individual integrity is a weak protection against the corrupting influence of large funds. People who embezzle from institutions rarely begin with corrupt intent. The money creates the conditions — gradual normalization, rationalization, social pressure from within captured networks. The Genesis Fund, at $2B target with a $500M Sovereign Endowment, is large enough that its corruption resistance cannot rest on the character of the people administering it. It must rest on structure.
+
+**The three-role separation principle**
+
+The most important structural protection is the strict separation of three roles that corruption routinely collapses:
+
+1. **Custody**: Who physically or legally holds the assets
+2. **Authorization**: Who approves disbursements
+3. **Benefit**: Who receives disbursements
+
+In any case where the same person or institution occupies more than one of these roles, corruption becomes structurally available. The Genesis Fund addresses this as follows:
+
+- **Custody** is held by an independent neutral institution — the Bank for International Settlements, a Swiss cantonal bank, or equivalent — that has no programmatic stake in how the fund is used. The GGF Tripartite Board never holds the principal directly.
+- **Authorization** sits with the Tripartite Board under the multi-signature protocol below. No GGF staff member who interacts with beneficiaries has authorization authority.
+- **Benefit** flows only to verified recipients through the independent custodian, never through GGF operational accounts.
+
+This separation means that any corruption requires breaching at least two independent institutional barriers simultaneously — a conspiracy rather than an individual act, which is dramatically harder to execute and sustain.
+
+**Multi-signature authorization**
+
+No disbursement above $10,000 may be executed by a single authorization. All disbursements require co-authorization from at least two Tripartite Board members drawn from different institutional homes (i.e., not from the same nominating body). For disbursements above $1M, three co-authorizations are required including one from outside the Tripartite Board — either a Constitutional Health Monitor or the Independent Auditor.
+
+This is not procedural friction for its own sake. It means that fraud above threshold requires active conspiracy among people from structurally independent institutions with different incentive structures. The cost of corruption scales with the amount, which is the inverse of most institutional arrangements where large amounts are paradoxically easier to conceal than small ones.
+
+**Independent custodianship over GGF self-custody**
+
+The instinct when building a new institution is to retain control over its own funds for operational flexibility. This instinct should be resisted for the Genesis Fund specifically. Self-custody creates the conditions for capture: whoever controls operational access to the fund gains leverage over the institution's direction regardless of formal governance structures.
+
+Placing custody with an established neutral institution outside the GGF's control means:
+- No GGF staff member can unilaterally access principal
+- Financial pressure cannot be used internally to influence decisions
+- The fund survives intact even if the Tripartite Board is temporarily compromised or disputed
+- External stakeholders (ratifying nations, Indigenous nations, civil society) have a verifiable anchor point for the fund's integrity that does not depend on trusting the GGF itself
+
+**Randomized rather than scheduled auditing**
+
+Section III.F specifies annual audits. These are necessary but insufficient as a corruption deterrent because they are predictable — institutional actors adapt their behavior in the audit window. The additional mechanism is randomized spot audits conducted at unpredictable intervals by a rotating pool of auditors, with no advance notice. The randomized audit schedule is set by an algorithm with a publicly verifiable seed, so no GGF actor can predict when an audit will occur or influence its timing.
+
+**The unconditional transfer as anti-corruption architecture**
+
+The Sovereign Endowment's unconditional nature — transferred with zero conditions attached — is itself a structural corruption protection, not merely a sovereignty principle. Most corruption in development finance concentrates in the conditionality layer: the people who decide whether recipients have met conditions hold enormous discretionary power, and that discretion is where capture accumulates. Removing conditionality eliminates this attack surface entirely. There is no judgment call about compliance, no approval process to influence, no relationship between GGF administrators and endowment disbursements that creates leverage in either direction.
+
+**Small authorization committees over large oversight bodies**
+
+Counterintuitively, larger oversight committees are more corruptible than smaller ones. Responsibility diffuses across members; individual accountability weakens; the social dynamics of large groups make it easier for captured actors to normalize questionable decisions gradually. The Tripartite Board's small size (Section III.B) is not a resource constraint — it is a deliberate design choice. Three members with individually named accountability for each decision is more resistant to capture than fifteen members whose collective sign-off creates diffuse and therefore unenforceable responsibility.
+
+**On the personal experience of handling large funds**
+
+It is worth stating directly: anyone who handles the Genesis Fund or Sovereign Endowment on behalf of the GGF should expect to feel the psychological pressure that large amounts of money create — the temptation to rationalize small exceptions, the social pressure from within networks of people who benefit from disbursements, the gradual normalization of proximity to resources that are not one's own. This is not a personal failing; it is a documented feature of the human response to financial scale.
+
+The structural protections above are designed precisely so that individual resistance to this pressure is not required. The right response to noticing that pressure is not to rely on one's own integrity but to invoke the structural protections: request a co-signatory, flag the decision to the Independent Auditor, recuse from a decision where one has any uncertainty about one's own objectivity. The protocol should be treated as a resource for navigating these pressures, not as a sign of personal distrust.
 
 ---
 
