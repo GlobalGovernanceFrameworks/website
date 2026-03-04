@@ -425,9 +425,9 @@ None of this is possible at scale while participants depend on institutional obe
 
 AUBI is not peripheral to the transition. It is the cognitive infrastructure that the permeation strategy runs on.
 
-### VII.B.D. Deployment priority and sequencing
+### VII.B.D. Deployment priority, sequencing, and pilot selection design
 
-**The sequence matters**: AUBI deployment must begin in Phase 0-1 as foundational infrastructure, alongside Genesis Fund capitalization—not deferred to Phase 3 or 4.
+**The sequence matters**: AUBI deployment must begin in Phase 0-1 as foundational infrastructure, alongside Genesis Fund capitalization — not deferred to Phase 3 or 4.
 
 **Why**: Asking adaptive nodes to act before AUBI is operational is asking them to take existential risks for a governance transition that hasn't secured their participation. The protocol's credibility with the institutional actors it most depends on rests partly on demonstrating that the economic precondition for safe participation will be secured before their cooperation is requested.
 
@@ -440,6 +440,34 @@ AUBI is not peripheral to the transition. It is the cognitive infrastructure tha
 - AUBI expansion follows ratification momentum
 - Nations joining at Gold tier access AUBI for their citizens
 - Network Effects (Section VII.A) position AUBI access as a major ratification incentive
+
+#### VII.B.D.i. Pilot selection: The geographically bounded universal lottery
+
+How AUBI pilots select participants is not merely an operational question — it is a constitutional one. The selection mechanism encodes assumptions about who deserves economic security, and those assumptions shape the social meaning of what AUBI is.
+
+Two distinct judgment problems must be avoided simultaneously:
+
+**The eligibility judgment problem**: Any selection process that evaluates individual circumstances — means-testing, needs assessment, behavioural criteria — creates an administrative apparatus with discretionary power over who benefits. That discretion becomes a site of political capture, surveillance, and the compliance dynamics that AUBI is specifically designed to dismantle. It also signals that recipients were selected because they were found to be needy or deserving, which undermines the universality principle at the core of AUBI's cognitive infrastructure function.
+
+**The participation stigma problem**: Even without means-testing, selecting individuals from within a larger non-recipient population marks recipients as lottery winners in a way that separates them socially from their community. Some prior pilots have found this creates awkwardness and subtle social costs that no selection mechanism fully eliminates as long as the distribution remains partial.
+
+**The solution: community-level rather than individual-level lottery selection.**
+
+Rather than selecting random individuals from a large population, eligible communities — municipalities, districts, island communities — are selected by public lottery, and AUBI is then provided universally to everyone within that community. This resolves both problems simultaneously:
+
+- No individual eligibility judgment: selection operates at community level, carrying no information about any individual's circumstances or worthiness
+- No participation stigma: because everyone in the selected community receives AUBI, there is no marked recipient class within that community
+- The full social dynamics of universal basic income become testable, rather than the attenuated dynamics of a partial individual lottery — which is the version that actually needs to be understood before scaling
+
+**Closest existing models**: The Cherokee Nation's per capita dividend distribution demonstrates community-universal distribution at scale. GiveDirectly's village-level cash transfer model in Kenya approximates the geographic bounding principle. The Stockton SEED pilot pointed toward community-level effects even with individual selection.
+
+**The lottery process**:
+
+Communities that meet baseline criteria (ratifying nation, minimum population threshold, administrative capacity to distribute) are entered into a publicly verifiable lottery. The lottery draw is conducted transparently, with the random seed published in advance on the Birth Certificate Dashboard, so the result is independently verifiable and no GGF actor can be accused of having influenced which communities were selected. This directly mirrors the sortition legitimacy logic applied to the Citizens' Assembly (Section VI.B) — the same principle operating at community rather than individual scale.
+
+**What community-level selection does not solve**: Pilots are inherently partial — not every community participates, which means the between-community comparison is visible and carries its own political dynamics. This is unavoidable in any pilot phase. The honest framing for communities not selected is that the pilot is a proof-of-concept stage, not a permanent allocation, and that full AUBI access follows national ratification at Gold tier. The lottery is for sequencing, not for desert.
+
+**Verifiability and the Birth Certificate Dashboard**: All lottery draws, community selection criteria, and disbursement records are published in real time on the Birth Certificate Dashboard. This serves both the transparency mandate of the Genesis Protocol and the practical function of making AUBI pilot legitimacy independently verifiable by the ratifying nations, civil society observers, and adaptive nodes the protocol depends on.
 
 ### VII.B.E. Integration with Network Effects Protocol
 
