@@ -22,25 +22,29 @@ Ramverken för global styrning bygger på flera grundläggande principer som utg
 
 - **Transition Town Network**: Denna globala rörelse fokuserar på att bygga upp samhällens motståndskraft genom att omlokalisera ekonomier och minska beroendet av långa, bräckliga leveranskedjor, en central princip för nedväxning.
 
-## 2. Decentraliserad auktoritet (subsidiaritet)
+## 2. Decentraliserad auktoritet (subsidiaritet & polycentrism)
 
-**Princip**: Makten bör fördelas över flera nivåer, där beslut fattas på den lägsta effektiva styrningsnivån. Högre nivåer hanterar endast frågor som inte kan lösas lokalt.
+**Princip**: Makten bör fördelas över flera nivåer och flera centra, där beslut fattas på den lägsta effektiva styrningsnivån. Högre nivåer hanterar endast frågor som inte kan lösas lokalt. Men decentralisering ensam räcker inte — vid varje skalnivå bör styrning vara *polycentrisk*: flera överlappande beslutsorgan som samarbetar, konkurrerar och lär av varandra, utan att något enskilt organ kan bli en flaskhals.
+
+Subsidiaritet ger den vertikala strukturen (lokal → regional → global). Polycentrism ger det horisontella nätverket (flera centra på varje nivå). Tillsammans bildar de ett styrningssystem där tyranni är logistiskt omöjligt — makten har ingen enskild punkt att ta kontroll över.
 
 **I praktiken**:
 - Lokalsamhällen har autonomi över den dagliga styrningen
 - Regionala organ samordnar frågor som rör flera samhällen
 - Global styrning fokuserar enbart på planetära utmaningar
 - Ingen central auktoritet får åsidosätta lokalt självbestämmande utan tydlig motivering
+- Överlappande jurisdiktioner skapar redundans och motståndskraft
+- Konkurrerande styrningsexperiment på samma nivå genererar lärande
+- Samordning sker genom protokoll mellan centra, inte genom toppstyrning
 
-Denna princip förhindrar maktkoncentration som kan leda till auktoritärt styre, samtidigt som den möjliggör effektiv samordning kring verkligt globala utmaningar som klimatförändringar, pandemier och teknologireglering.
-
-*Den formella grunden för denna princip utforskas i vitboken [Styrstabilitetssimulatorn](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) och [Fraktalitet som stabilitet](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability) — som visar att subsidiaritet och fraktala styrningsarkitekturer är ingenjörskrav, inte politiska preferenser.*
+*Den formella grunden för denna princip utforskas i vitböckerna [Styrstabilitetssimulatorn](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) och [Fraktalitet som stabilitet](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability) — som visar att subsidiaritet och polycentriska styrningsarkitekturer är ingenjörskrav, inte politiska preferenser.*
 
 **Nuvarande exempel:**
 - Nordiska rådet visar decentraliserad styrning där nationer behåller suveränitet samtidigt som de samarbetar kring gemensamma utmaningar.
 
 **Ytterligare verkliga tillämpningar:**
-- **Schweiziska Kantonsystemet**: Schweiz federala struktur delar auktoritet mellan federal, kantonal och kommunal nivå, där kantonerna har betydande autonomi över utbildning, sjukvård och polisväsende samtidigt som de deltar i nationell styrning.
+- **Schweiziska kantonsystemet**: Schweiz federala struktur delar auktoritet mellan federal, kantonal och kommunal nivå, med betydande kantonal autonomi — men de 26 kantonerna utgör också ett polycentrisk system på federal nivå där varierade lösningar samexisterar.
+- **Ostroms bevattningssystem**: Elinor Ostroms forskning på delade vattenresurser visade att flera lantbruksföreningar som gemensamt förvaltar samma system — med egna regler, egna sanktioner och ömsesidiga avtal — konsekvent presterar bättre än centraliserad förvaltning.
 - **Transition Town-rörelsen**: Samhällen världen över implementerar lokala resiliensinitiativ inom ett bredare rörelse-ramverk, fattar beslut på grannskapsnivå och delar kunskap genom regionala och globala nätverk.
 - **Ursprungsbefolkningens vårdnadsprogram**: I Kanada och Australien hanterar ursprungsbefolkningar miljöskydd av sina territorier genom samarbetsavtal med regionala och nationella regeringar, med beslutsfattande förankrat i lokal kunskap.
 

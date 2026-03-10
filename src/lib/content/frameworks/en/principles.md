@@ -21,27 +21,33 @@ The Global Governance Frameworks is built on several foundational principles tha
 - **The "Wellbeing Economy" Movement**: Nations like New Zealand, Scotland, and Iceland are collaborating to create economic policies that prioritize citizen and ecological well-being over simple economic growth metrics.
 - **Transition Town Network**: This global movement focuses on building community resilience by relocalizing economies and reducing dependence on long, fragile supply chains, a core tenet of degrowth.
 
-## 2. Decentralized Authority (Subsidiarity)
+## 2. Decentralized Authority (Subsidiarity & Polycentrism)
 
-**Principle**: Power should be distributed across multiple levels, with decisions made at the lowest effective level of governance. Higher levels only handle issues that cannot be effectively addressed locally.
+**Principle**: Power should be distributed across multiple levels *and* multiple centers, with decisions made at the lowest effective level of governance. Higher levels handle only what cannot be addressed locally. But decentralization alone is insufficient — at every scale, governance should be *polycentric*: multiple overlapping decision centers that cooperate, compete, and learn from each other, with no single node capable of becoming a bottleneck.
+
+Subsidiarity provides the vertical architecture (local → regional → global). Polycentrism provides the horizontal mesh (multiple centers at each level). Together, they produce a governance system where tyranny is logistically impossible — there is no single point of control to capture.
 
 **In Practice**:
-- Local communities maintain autonomy over day-to-day governance
-- Regional bodies coordinate cross-community matters
-- Global governance focuses exclusively on planetary challenges
-- No central authority can override local self-determination without clear justification
+- Local communities have autonomy over day-to-day governance
+- Regional bodies coordinate on cross-community matters
+- Global governance focuses solely on planetary-scale challenges
+- No central authority may override local self-determination without clear justification
+- Overlapping jurisdictions create redundancy and resilience
+- Competing governance experiments at the same level generate learning
+- Coordination happens through protocols between centers, not top-down direction
 
-This principle prevents the concentration of power that leads to authoritarianism while ensuring effective coordination on truly global challenges like climate change, pandemics, and technological regulation.
+This principle guards against two distinct failure modes: vertical capture (power concentrating upward across levels) and horizontal capture (a single body monopolizing a level). Subsidiarity addresses the first; polycentrism addresses the second.
 
-*The formal basis for this principle is explored in the whitepapers [Governance Stability Simulator](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) and [Fractality as Stability](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability) — demonstrating that subsidiarity and fractal governance architectures are engineering requirements, not political preferences.*
+*The formal foundations of this principle are explored in the whitepapers [The Governance Stability Simulator](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) and [Fractality as Stability](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability) — demonstrating that subsidiarity and polycentric governance architectures are engineering requirements, not political preferences.*
 
 **Current Examples:**
-- The Nordic Council demonstrates decentralized governance where nations maintain sovereignty while cooperating on shared challenges.
+- The Nordic Council demonstrates decentralized governance where nations retain sovereignty while cooperating on shared challenges.
 
-**Additional Real-World Applications:**
-- **Swiss Canton System**: Switzerland's federal structure divides authority between federal, cantonal, and municipal levels, with cantons retaining significant autonomy over education, healthcare, and policing while participating in national governance.
-- **Transition Town Movement**: Communities worldwide implement local resilience initiatives within a broader movement framework, making decisions at the neighborhood level while sharing knowledge through regional and global networks.
-- **Indigenous Guardianship Programs**: In Canada and Australia, Indigenous communities manage environmental protection of their territories through cooperative agreements with regional and national governments, keeping decision-making rooted in local knowledge.
+**Further Real-World Applications:**
+- **Swiss canton system**: Switzerland's federal structure distributes authority across federal, cantonal, and municipal levels — but the 26 cantons also form a polycentric system at the federal level, where varied governance approaches coexist and compete.
+- **Ostrom's irrigation systems**: Elinor Ostrom's research on shared water resources showed that multiple farmer associations jointly managing the same system — with their own rules, sanctions, and mutual agreements — consistently outperform centralized management.
+- **Transition Town movement**: Communities worldwide implement local resilience initiatives within a broader movement framework, making decisions at neighborhood level while sharing knowledge through regional and global networks.
+- **Indigenous stewardship programs**: In Canada and Australia, Indigenous communities manage environmental protection of their territories through cooperative agreements with regional and national governments, with decision-making grounded in local knowledge.
 
 
 ## 3. Radical Transparency
