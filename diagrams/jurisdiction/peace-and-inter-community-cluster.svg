@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1200 910"
+   font-family="system-ui,-apple-system,sans-serif"
+   version="1.1"
+   id="svg101"
+   sodipodi:docname="peace-and-inter-community-cluster.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview101"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.67447108"
+     inkscape:cx="375.10874"
+     inkscape:cy="412.17482"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg101" />
+  <defs
+     id="defs5">
+    <marker
+       id="aRose"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#9f1239"
+         id="polygon1" />
+    </marker>
+    <marker
+       id="aSlate"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#1e3a5f"
+         id="polygon2" />
+    </marker>
+    <marker
+       id="aCrim"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#7f1d1d"
+         id="polygon3" />
+    </marker>
+    <marker
+       id="aEarth"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#78350f"
+         id="polygon4" />
+    </marker>
+    <marker
+       id="aGray"
+       markerWidth="8"
+       markerHeight="6"
+       refX="8"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0 0, 8 3, 0 6"
+         fill="#94a3b8"
+         id="polygon5" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1200"
+     height="910"
+     fill="#fdf8f6"
+     id="rect5" />
+  <!-- Title -->
+  <text
+     x="600"
+     y="28"
+     text-anchor="middle"
+     font-size="15"
+     font-weight="700"
+     letter-spacing="-0.3"
+     fill="#1c0a00"
+     id="text5">Peace &amp; inter-community cluster — jurisdiction &amp; escalation map</text>
+  <text
+     x="600"
+     y="48"
+     text-anchor="middle"
+     font-size="11"
+     fill="#78350f"
+     id="text6">Read bottom-up. The Indigenous sovereignty track is sovereign — internal routing within it is TBD pending Indigenous community guidance.</text>
+  <!-- ===== APEX: DJT ===== -->
+  <rect
+     x="220"
+     y="62"
+     width="660"
+     height="66"
+     rx="10"
+     fill="#0f172a"
+     id="rect6" />
+  <text
+     x="550"
+     y="87"
+     text-anchor="middle"
+     font-size="13"
+     font-weight="700"
+     fill="white"
+     id="text7">Digital Justice Tribunal (DJT)</text>
+  <text
+     x="550"
+     y="105"
+     text-anchor="middle"
+     font-size="10"
+     fill="#94a3b8"
+     id="text8">Treaty-level violations · cross-border conflict · state-actor violence · failed peace agreements</text>
+  <text
+     x="550"
+     y="119"
+     text-anchor="middle"
+     font-size="9"
+     fill="#64748b"
+     id="text9">Global Enforcement Mechanism executes rulings · Shield Protocol handles criminal enforcement</text>
+  <!-- ===== INDIGENOUS SOVEREIGN TRACK (far right, visually separated) ===== -->
+  <rect
+     x="910"
+     y="62"
+     width="272"
+     height="66"
+     rx="10"
+     fill="#292524"
+     stroke="#d97706"
+     stroke-width="2.5"
+     id="rect9" />
+  <text
+     x="1046"
+     y="83"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="700"
+     fill="#fde68a"
+     id="text10">Community-determined resolution</text>
+  <text
+     x="1046"
+     y="100"
+     text-anchor="middle"
+     font-size="10"
+     fill="#d97706"
+     id="text11">Sovereign jurisdiction · FPIC 2.0</text>
+  <text
+     x="1046"
+     y="114"
+     text-anchor="middle"
+     font-size="9"
+     fill="#a16207"
+     id="text12">Not subordinate to DJT · operates in parallel</text>
+  <text
+     x="1046"
+     y="124"
+     text-anchor="middle"
+     font-size="8"
+     fill="#d97706"
+     font-style="italic"
+     id="text13">Specific institution: TBD with communities</text>
+  <!-- Sovereign boundary marker -->
+  <line
+     x1="900"
+     y1="58"
+     x2="900"
+     y2="760"
+     stroke="#d97706"
+     stroke-width="2"
+     stroke-dasharray="8,4"
+     id="line13" />
+  <text
+     x="895"
+     y="420"
+     text-anchor="end"
+     font-size="9"
+     fill="#d97706"
+     font-style="italic"
+     transform="rotate(-90 895 420)"
+     id="text14">sovereign boundary</text>
+  <!-- ===== LANE DIVIDERS (GGF side only) ===== -->
+  <line
+     x1="310"
+     y1="148"
+     x2="310"
+     y2="730"
+     stroke="#e7ddd8"
+     stroke-width="1.5"
+     stroke-dasharray="5,5"
+     id="line14" />
+  <line
+     x1="620"
+     y1="148"
+     x2="620"
+     y2="730"
+     stroke="#e7ddd8"
+     stroke-width="1.5"
+     stroke-dasharray="5,5"
+     id="line15" />
+  <!-- ===== LANE HEADERS ===== -->
+  <rect
+     x="18"
+     y="142"
+     width="276"
+     height="26"
+     rx="5"
+     fill="#881337"
+     id="rect15" />
+  <text
+     x="156"
+     y="160"
+     text-anchor="middle"
+     font-size="11"
+     font-weight="600"
+     fill="#ffe4e6"
+     id="text15">Intra- &amp; inter-community disputes</text>
+  <rect
+     x="325"
+     y="142"
+     width="280"
+     height="26"
+     rx="5"
+     fill="#1e3a5f"
+     id="rect16" />
+  <text
+     x="465"
+     y="160"
+     text-anchor="middle"
+     font-size="11"
+     font-weight="600"
+     fill="#bfdbfe"
+     id="text16">Inter-BAZ &amp; regional governance conflict</text>
+  <rect
+     x="635"
+     y="142"
+     width="250"
+     height="26"
+     rx="5"
+     fill="#7f1d1d"
+     id="rect17" />
+  <text
+     x="760"
+     y="160"
+     text-anchor="middle"
+     font-size="11"
+     font-weight="600"
+     fill="#fecaca"
+     id="text17">Active crisis &amp; criminal escalation</text>
+  <rect
+     x="910"
+     y="142"
+     width="272"
+     height="26"
+     rx="5"
+     fill="#292524"
+     stroke="#d97706"
+     stroke-width="1"
+     id="rect18" />
+  <text
+     x="1046"
+     y="160"
+     text-anchor="middle"
+     font-size="11"
+     font-weight="600"
+     fill="#fde68a"
+     id="text18">Indigenous sovereignty track</text>
+  <!-- ======================== -->
+  <!-- ROW 1  y=188  GLOBAL COORDINATION -->
+  <!-- ======================== -->
+  <!-- L1+L2 merged: Global Peace Council -->
+  <rect
+     x="18"
+     y="186"
+     width="587"
+     height="76"
+     rx="8"
+     fill="#9f1239"
+     id="rect19" />
+  <text
+     x="303"
+     y="211"
+     text-anchor="middle"
+     font-size="13"
+     font-weight="600"
+     fill="white"
+     id="text19">Global Peace Council (GPC)</text>
+  <text
+     x="303"
+     y="228"
+     text-anchor="middle"
+     font-size="10"
+     fill="#fecdd3"
+     id="text20">Global coordination of mediation · oversees VBT methodology</text>
+  <text
+     x="303"
+     y="245"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fda4af"
+     id="text21">Coordinates with Meta-Governance Coordination Council</text>
+  <text
+     x="303"
+     y="259"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fde68a"
+     id="text22">Unresolved inter-BAZ or state-level disputes → DJT · criminal matters → GJO → Shield</text>
+  <!-- L3: GJO + Shield -->
+  <rect
+     x="635"
+     y="186"
+     width="250"
+     height="76"
+     rx="8"
+     fill="#7f1d1d"
+     id="rect22" />
+  <text
+     x="760"
+     y="209"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text23">Global Justice Oversight (GJO)</text>
+  <text
+     x="760"
+     y="226"
+     text-anchor="middle"
+     font-size="10"
+     fill="#fecaca"
+     id="text24">Receives criminal escalations from GPC</text>
+  <text
+     x="760"
+     y="243"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fca5a5"
+     id="text25">Delegates enforcement → Shield Protocol</text>
+  <text
+     x="760"
+     y="256"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fca5a5"
+     id="text26">Non-criminal → DJT for adjudication</text>
+  <!-- Indigenous Row 1: Earth Council oversight -->
+  <rect
+     x="910"
+     y="186"
+     width="272"
+     height="76"
+     rx="8"
+     fill="#44403c"
+     stroke="#d97706"
+     stroke-width="1.5"
+     id="rect26" />
+  <text
+     x="1046"
+     y="211"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="#fde68a"
+     id="text27">Earth Council</text>
+  <text
+     x="1046"
+     y="228"
+     text-anchor="middle"
+     font-size="10"
+     fill="#d6d3d1"
+     id="text28">Moral oversight of Indigenous governance</text>
+  <text
+     x="1046"
+     y="245"
+     text-anchor="middle"
+     font-size="9"
+     fill="#a8a29e"
+     id="text29">Guides MGCC · holds veto on FPIC 2.0 violations</text>
+  <text
+     x="1046"
+     y="259"
+     text-anchor="middle"
+     font-size="9"
+     fill="#a16207"
+     font-style="italic"
+     id="text30">Coordinates with GPC — does not report to it</text>
+  <!-- ======================== -->
+  <!-- ROW 2  y=322  MEDIATION BODIES -->
+  <!-- ======================== -->
+  <!-- L1: BAZ Council mediation -->
+  <rect
+     x="18"
+     y="320"
+     width="276"
+     height="78"
+     rx="8"
+     fill="#be123c"
+     id="rect30" />
+  <text
+     x="156"
+     y="345"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text31">BAZ Council mediation</text>
+  <text
+     x="156"
+     y="362"
+     text-anchor="middle"
+     font-size="10"
+     fill="#fecdd3"
+     id="text32">Formal intra-BAZ dispute resolution</text>
+  <text
+     x="156"
+     y="379"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fda4af"
+     id="text33">Values-Based Transformation methodology applied</text>
+  <text
+     x="156"
+     y="391"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#fde68a"
+     id="text34">⊘ Terminal for purely internal community disputes</text>
+  <!-- L2: Inter-BAZ negotiation -->
+  <rect
+     x="325"
+     y="320"
+     width="280"
+     height="78"
+     rx="8"
+     fill="#1d4ed8"
+     id="rect34" />
+  <text
+     x="465"
+     y="345"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text35">Inter-BAZ negotiation panel</text>
+  <text
+     x="465"
+     y="362"
+     text-anchor="middle"
+     font-size="10"
+     fill="#bfdbfe"
+     id="text36">Structured dialogue between BAZ councils</text>
+  <text
+     x="465"
+     y="379"
+     text-anchor="middle"
+     font-size="9"
+     fill="#93c5fd"
+     id="text37">Resource boundaries · migration · commons access</text>
+  <text
+     x="465"
+     y="391"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#dbeafe"
+     id="text38">Unresolved after 90 days → GPC</text>
+  <!-- L3: Rapid Response Peace Teams -->
+  <rect
+     x="635"
+     y="320"
+     width="250"
+     height="78"
+     rx="8"
+     fill="#991b1b"
+     id="rect38" />
+  <text
+     x="760"
+     y="345"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text39">Rapid Response Peace Teams</text>
+  <text
+     x="760"
+     y="362"
+     text-anchor="middle"
+     font-size="10"
+     fill="#fecaca"
+     id="text40">Deployed to de-escalate active crises</text>
+  <text
+     x="760"
+     y="379"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fca5a5"
+     id="text41">Trained mediators using VBT · Interfaith Teams join</text>
+  <text
+     x="760"
+     y="391"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#fde68a"
+     id="text42">Criminal activity identified → GJO</text>
+  <!-- Indigenous Row 2: Indigenous Tribunals -->
+  <rect
+     x="910"
+     y="320"
+     width="272"
+     height="78"
+     rx="8"
+     fill="#292524"
+     stroke="#d97706"
+     stroke-width="2"
+     id="rect42" />
+  <text
+     x="1046"
+     y="343"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="#fde68a"
+     id="text43">Breach adjudication</text>
+  <text
+     x="1046"
+     y="360"
+     text-anchor="middle"
+     font-size="10"
+     fill="#d6d3d1"
+     id="text44">Custom law · restorative practice · land sovereignty</text>
+  <text
+     x="1046"
+     y="377"
+     text-anchor="middle"
+     font-size="9"
+     fill="#a8a29e"
+     id="text45">FPIC 2.0 compliance enforced by Earth Council</text>
+  <text
+     x="1046"
+     y="391"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#fde68a"
+     font-weight="600"
+     id="text46">⊘ Sovereign · routing within track TBD with communities</text>
+  <!-- ======================== -->
+  <!-- ROW 3  y=458  FIRST RESPONSE -->
+  <!-- ======================== -->
+  <!-- L1: Informal community mediation -->
+  <rect
+     x="18"
+     y="456"
+     width="276"
+     height="80"
+     rx="8"
+     fill="#e11d48"
+     id="rect46" />
+  <text
+     x="156"
+     y="480"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text47">Community mediators / elders</text>
+  <text
+     x="156"
+     y="497"
+     text-anchor="middle"
+     font-size="10"
+     fill="#ffe4e6"
+     id="text48">Informal first response · restorative circle</text>
+  <text
+     x="156"
+     y="514"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fecdd3"
+     id="text49">VBT-trained local facilitators</text>
+  <text
+     x="156"
+     y="527"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#fda4af"
+     font-style="italic"
+     id="text50">Escalate to BAZ Council if unresolved</text>
+  <!-- L2: BAZ governance process -->
+  <rect
+     x="325"
+     y="456"
+     width="280"
+     height="80"
+     rx="8"
+     fill="#2563eb"
+     id="rect50" />
+  <text
+     x="465"
+     y="480"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text51">BAZ governance process</text>
+  <text
+     x="465"
+     y="497"
+     text-anchor="middle"
+     font-size="10"
+     fill="#bfdbfe"
+     id="text52">Territorial Council · Commons Trust · Guild layers</text>
+  <text
+     x="465"
+     y="514"
+     text-anchor="middle"
+     font-size="9"
+     fill="#93c5fd"
+     id="text53">Circuit breaker for internal deadlocks</text>
+  <text
+     x="465"
+     y="527"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#dbeafe"
+     font-style="italic"
+     id="text54">Cross-BAZ issue → inter-BAZ negotiation panel</text>
+  <!-- L3: Crisis intake -->
+  <rect
+     x="635"
+     y="456"
+     width="250"
+     height="80"
+     rx="8"
+     fill="#b91c1c"
+     id="rect54" />
+  <text
+     x="760"
+     y="480"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text55">Active conflict / crisis</text>
+  <text
+     x="760"
+     y="497"
+     text-anchor="middle"
+     font-size="10"
+     fill="#fecaca"
+     id="text56">Immediate de-escalation needed</text>
+  <text
+     x="760"
+     y="514"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fca5a5"
+     id="text57">Rapid Response Teams deployed</text>
+  <text
+     x="760"
+     y="527"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#fde68a"
+     font-style="italic"
+     id="text58">Concurrent: Interfaith Teams if religious dimension</text>
+  <rect
+     x="910"
+     y="456"
+     width="272"
+     height="80"
+     rx="8"
+     fill="#3c3330"
+     stroke="#d97706"
+     stroke-width="1.5"
+     id="rect58" />
+  <text
+     x="1046"
+     y="480"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="500"
+     fill="#fde68a"
+     id="text59">BAZ-Indigenous interface</text>
+  <text
+     x="1046"
+     y="497"
+     text-anchor="middle"
+     font-size="10"
+     fill="#d6d3d1"
+     id="text60">FPIC 2.0 consultation · co-governance</text>
+  <text
+     x="1046"
+     y="514"
+     text-anchor="middle"
+     font-size="9"
+     fill="#a8a29e"
+     id="text61">Indigenous Monitoring Teams on traditional lands</text>
+  <text
+     x="1046"
+     y="527"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#fbbf24"
+     font-style="italic"
+     id="text62">Breach routing: TBD pending community guidance</text>
+  <!-- ======================== -->
+  <!-- ROW 4  y=596  ENTRY POINTS -->
+  <!-- ======================== -->
+  <rect
+     x="18"
+     y="594"
+     width="276"
+     height="70"
+     rx="8"
+     fill="#ffe4e6"
+     id="rect62" />
+  <text
+     x="156"
+     y="619"
+     text-anchor="middle"
+     font-size="12"
+     fill="#881337"
+     font-weight="500"
+     id="text63">Intra-community dispute</text>
+  <text
+     x="156"
+     y="636"
+     text-anchor="middle"
+     font-size="9"
+     fill="#9f1239"
+     id="text64">📍 Entry point</text>
+  <text
+     x="156"
+     y="651"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#be123c"
+     font-style="italic"
+     id="text65">e.g. resource conflict · social harm · governance disagreement</text>
+  <rect
+     x="325"
+     y="594"
+     width="280"
+     height="70"
+     rx="8"
+     fill="#dbeafe"
+     id="rect65" />
+  <text
+     x="465"
+     y="619"
+     text-anchor="middle"
+     font-size="12"
+     fill="#1e3a5f"
+     font-weight="500"
+     id="text66">Inter-BAZ / regional dispute</text>
+  <text
+     x="465"
+     y="636"
+     text-anchor="middle"
+     font-size="9"
+     fill="#1d4ed8"
+     id="text67">📍 Entry point</text>
+  <text
+     x="465"
+     y="651"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#1d4ed8"
+     font-style="italic"
+     id="text68">e.g. watershed boundary · migration pressure · commons access</text>
+  <rect
+     x="635"
+     y="594"
+     width="250"
+     height="70"
+     rx="8"
+     fill="#fee2e2"
+     id="rect68" />
+  <text
+     x="760"
+     y="619"
+     text-anchor="middle"
+     font-size="12"
+     fill="#7f1d1d"
+     font-weight="500"
+     id="text69">Active crisis / violence / crime</text>
+  <text
+     x="760"
+     y="636"
+     text-anchor="middle"
+     font-size="9"
+     fill="#991b1b"
+     id="text70">📍 Entry point</text>
+  <text
+     x="760"
+     y="651"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#991b1b"
+     font-style="italic"
+     id="text71">e.g. armed conflict · organised crime · state-actor aggression</text>
+  <rect
+     x="910"
+     y="594"
+     width="272"
+     height="70"
+     rx="8"
+     fill="#1c1917"
+     stroke="#d97706"
+     stroke-width="1"
+     id="rect71" />
+  <text
+     x="1046"
+     y="616"
+     text-anchor="middle"
+     font-size="12"
+     fill="#fde68a"
+     font-weight="500"
+     id="text72">FPIC 2.0 breach / land sovereignty</text>
+  <text
+     x="1046"
+     y="633"
+     text-anchor="middle"
+     font-size="9"
+     fill="#d97706"
+     id="text73">📍 Entry point (sovereign track)</text>
+  <text
+     x="1046"
+     y="648"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#a16207"
+     font-style="italic"
+     id="text74">e.g. unconsented development · TEK extraction</text>
+  <text
+     x="1046"
+     y="659"
+     text-anchor="middle"
+     font-size="8"
+     fill="#78350f"
+     font-style="italic"
+     id="text75">Internal routing determined by community</text>
+  <!-- ======================== -->
+  <!-- PARALLEL NON-ADVERSARIAL CHANNEL -->
+  <!-- ======================== -->
+  <rect
+     x="18"
+     y="680"
+     width="587"
+     height="44"
+     rx="8"
+     fill="white"
+     stroke="#9f1239"
+     stroke-width="1"
+     stroke-dasharray="5,3"
+     id="rect75" />
+  <text
+     x="303"
+     y="698"
+     text-anchor="middle"
+     font-size="10"
+     font-weight="500"
+     fill="#9f1239"
+     id="text76">Parallel non-adversarial channel (always available, any stage)</text>
+  <text
+     x="303"
+     y="713"
+     text-anchor="middle"
+     font-size="9"
+     fill="#64748b"
+     id="text77">Truth &amp; Reconciliation Process · Interfaith Rapid Response Teams (GCRSD) · post-conflict healing · transitional justice</text>
+  <!-- ======================== -->
+  <!-- ARROWS -->
+  <!-- ======================== -->
+  <!-- Lane 1: Rose/red upward -->
+  <line
+     x1="156"
+     y1="594"
+     x2="156"
+     y2="540"
+     stroke="#9f1239"
+     stroke-width="2.5"
+     marker-end="url(#aRose)"
+     id="line77" />
+  <line
+     x1="156"
+     y1="456"
+     x2="156"
+     y2="402"
+     stroke="#9f1239"
+     stroke-width="2.5"
+     marker-end="url(#aRose)"
+     id="line78" />
+  <line
+     x1="156"
+     y1="320"
+     x2="200"
+     y2="266"
+     stroke="#9f1239"
+     stroke-width="2.5"
+     marker-end="url(#aRose)"
+     id="line79" />
+  <!-- GPC → DJT -->
+  <line
+     x1="303"
+     y1="186"
+     x2="380"
+     y2="130"
+     stroke="#9f1239"
+     stroke-width="2.5"
+     marker-end="url(#aRose)"
+     id="line80" />
+  <!-- Lane 2: Slate/blue upward -->
+  <line
+     x1="465"
+     y1="594"
+     x2="465"
+     y2="540"
+     stroke="#1e3a5f"
+     stroke-width="2.5"
+     marker-end="url(#aSlate)"
+     id="line81" />
+  <line
+     x1="465"
+     y1="456"
+     x2="465"
+     y2="402"
+     stroke="#1e3a5f"
+     stroke-width="2.5"
+     marker-end="url(#aSlate)"
+     id="line82" />
+  <line
+     x1="465"
+     y1="320"
+     x2="400"
+     y2="266"
+     stroke="#1e3a5f"
+     stroke-width="2.5"
+     marker-end="url(#aSlate)"
+     id="line83" />
+  <!-- Lane 3: Crimson upward -->
+  <line
+     x1="760"
+     y1="594"
+     x2="760"
+     y2="540"
+     stroke="#7f1d1d"
+     stroke-width="2.5"
+     marker-end="url(#aCrim)"
+     id="line84" />
+  <line
+     x1="760"
+     y1="456"
+     x2="760"
+     y2="402"
+     stroke="#7f1d1d"
+     stroke-width="2.5"
+     marker-end="url(#aCrim)"
+     id="line85" />
+  <line
+     x1="760"
+     y1="320"
+     x2="760"
+     y2="266"
+     stroke="#7f1d1d"
+     stroke-width="2.5"
+     marker-end="url(#aCrim)"
+     id="line86" />
+  <!-- GJO → DJT (non-criminal) -->
+  <line
+     x1="730"
+     y1="186"
+     x2="680"
+     y2="130"
+     stroke="#7f1d1d"
+     stroke-width="1.5"
+     stroke-dasharray="5,4"
+     marker-end="url(#aGray)"
+     id="line87" />
+  <!-- GJO → Shield (criminal, exits right) -->
+  <path
+     id="polyline87"
+     style="fill:none;stroke:#7f1d1d;stroke-width:2;marker-end:url(#aCrim)"
+     d="M 885,224 908.27016,107.21371"
+     sodipodi:nodetypes="cc" />
+  <text
+     x="890"
+     y="119"
+     font-size="8px"
+     fill="#7f1d1d"
+     writing-mode="tb-rl"
+     font-style="italic"
+     id="text87">→ Shield Protocol</text>
+  <!-- Indigenous track: entry → row3 solid, then dotted upward (routing TBD) -->
+  <line
+     x1="1046"
+     y1="594"
+     x2="1046"
+     y2="540"
+     stroke="#d97706"
+     stroke-width="2.5"
+     marker-end="url(#aEarth)"
+     id="line88" />
+  <line
+     x1="1046"
+     y1="456"
+     x2="1046"
+     y2="402"
+     stroke="#d97706"
+     stroke-width="1.5"
+     stroke-dasharray="5,4"
+     marker-end="url(#aGray)"
+     id="line89" />
+  <text
+     x="1062"
+     y="436"
+     font-size="9"
+     fill="#d97706"
+     font-style="italic"
+     id="text89">TBD</text>
+  <line
+     x1="1046"
+     y1="320"
+     x2="1046"
+     y2="266"
+     stroke="#d97706"
+     stroke-width="1.5"
+     stroke-dasharray="5,4"
+     marker-end="url(#aGray)"
+     id="line90" />
+  <text
+     x="1062"
+     y="300"
+     font-size="9"
+     fill="#d97706"
+     font-style="italic"
+     id="text90">TBD</text>
+  <!-- Earth Council coordinates with GPC (dashed, horizontal, not subordination) -->
+  <line
+     x1="910"
+     y1="224"
+     x2="888"
+     y2="224"
+     stroke="#d97706"
+     stroke-width="1.5"
+     stroke-dasharray="4,3"
+     marker-end="url(#aGray)"
+     id="line91" />
+  <text
+     x="899"
+     y="237"
+     text-anchor="middle"
+     font-size="7.5px"
+     fill="#d97706"
+     id="text91">coordinates</text>
+  <!-- ======================== -->
+  <!-- LEGEND -->
+  <!-- ======================== -->
+  <rect
+     x="18"
+     y="740"
+     width="1164"
+     height="152"
+     rx="8"
+     fill="white"
+     stroke="#e7ddd8"
+     stroke-width="1.5"
+     id="rect91" />
+  <text
+     x="38"
+     y="762"
+     font-size="11"
+     font-weight="600"
+     fill="#1c0a00"
+     id="text92">Legend</text>
+  <line
+     x1="38"
+     y1="780"
+     x2="80"
+     y2="780"
+     stroke="#9f1239"
+     stroke-width="2.5"
+     marker-end="url(#aRose)"
+     id="line92" />
+  <text
+     x="88"
+     y="784"
+     font-size="10"
+     fill="#374151"
+     id="text93">Formal escalation pathway (GGF jurisdiction)</text>
+  <line
+     x1="38"
+     y1="800"
+     x2="80"
+     y2="800"
+     stroke="#94a3b8"
+     stroke-width="1.5"
+     stroke-dasharray="5,4"
+     marker-end="url(#aGray)"
+     id="line93" />
+  <text
+     x="88"
+     y="804"
+     font-size="10"
+     fill="#374151"
+     id="text94">Coordination / advisory route (non-subordinate) · also used for TBD routing within sovereign track</text>
+  <line
+     x1="38"
+     y1="820"
+     x2="80"
+     y2="820"
+     stroke="#d97706"
+     stroke-width="2.5"
+     marker-end="url(#aEarth)"
+     id="line94" />
+  <text
+     x="88"
+     y="824"
+     font-size="10"
+     fill="#374151"
+     id="text95">Entry into sovereign track — internal routing determined by communities, not specified here</text>
+  <rect
+     x="544"
+     y="771"
+     width="12"
+     height="12"
+     rx="2"
+     fill="#fde68a"
+     stroke="#92400e"
+     stroke-width="1"
+     id="rect95" />
+  <text
+     x="562"
+     y="782"
+     font-size="10px"
+     fill="#374151"
+     id="text96">⊘ Terminal — dispute ends here, no further appeal within the GGF hierarchy</text>
+  <rect
+     x="544"
+     y="790"
+     width="12"
+     height="12"
+     rx="2"
+     fill="#ffffff"
+     stroke="#9f1239"
+     stroke-width="1"
+     stroke-dasharray="3, 2"
+     id="rect96" />
+  <text
+     x="562"
+     y="801"
+     font-size="10px"
+     fill="#374151"
+     id="text97">Parallel non-adversarial channel — T&amp;R Process and Interfaith Teams available alongside formal proceedings at any stage</text>
+  <text
+     x="38"
+     y="844"
+     font-size="9.5"
+     fill="#94a3b8"
+     id="text98">⚠ The Indigenous sovereignty track is structurally distinct: it is sovereign, not part of the GGF escalation hierarchy. Internal routing within the track</text>
+  <text
+     x="38"
+     y="858"
+     font-size="9.5"
+     fill="#94a3b8"
+     id="text99">(including whether BAZ Council has a first-look role on FPIC breaches) is TBD pending Indigenous community guidance. The framework (v1.0) is explicitly</text>
+  <text
+     x="38"
+     y="872"
+     font-size="9.5"
+     fill="#94a3b8"
+     id="text100">awaiting community input before operationalizing this. &quot;Indigenous Tribunals&quot; is an implied institution — no such body is formally named in the schema yet.</text>
+  <text
+     x="38"
+     y="886"
+     font-size="9.5"
+     fill="#94a3b8"
+     id="text101">GPC spans Lanes 1 &amp; 2. Lane 3 diverges at GJO: non-criminal → DJT, criminal → Shield Protocol. Earth Council coordinates with GPC but does not report to it.</text>
+</svg>

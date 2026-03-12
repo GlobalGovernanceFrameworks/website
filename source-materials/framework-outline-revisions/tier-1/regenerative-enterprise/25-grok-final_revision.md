@@ -262,6 +262,57 @@ graph TD
 - **Maturity Model Thermometer**: Visual gauge for Exploring/Integrating/Leading progression.  
 - **Conflict Resolution Flowchart**: Navigates tensions between REF principles.
 
+**Conflict resolution flowchart**
+
+The following flowchart logic governs how disputes move through the REF system. It is the operational specification for the visual flowchart referenced above.
+
+```
+START: A dispute or harm is identified within or affecting a Pathfinder enterprise.
+
+STEP 1 — Is this an AI or algorithmic harm?
+  YES → Turing Council (enterprise-level first response)
+         ↓ Resolved? → END (internal)
+         ↓ Not resolved within 30 days →
+           Human-AI Conflict Resolution Protocol
+           ↓ Resolved? → END (internal)
+           ↓ Harm extends beyond enterprise OR unresolved after 60 days →
+             LEVEL 3 HANDOFF → Global Technology Council
+             (see technology cluster jurisdiction map)
+
+  NO  → Continue to Step 2.
+
+STEP 2 — Does the harm involve ecological damage?
+  YES → Is it a Rights of Nature violation, species-level harm,
+         or irreversible ecosystem damage?
+           YES → LEVEL 3 HANDOFF → Planetary Health Council → CJET
+                 (Rights of Nature violations: terminal at CJET, no further appeal)
+           NO  → Community & Ecology Review Panel (local first response)
+                 ↓ Resolved? → END (local)
+                 ↓ Persistent harm → RAC
+                 ↓ Meets ecocide threshold at RAC → LEVEL 3 HANDOFF → PHC
+
+  NO  → Continue to Step 3.
+
+STEP 3 — Internal governance, labor, or stakeholder dispute.
+  → Stakeholder Council (first hearing)
+     ↓ Resolved? → END (internal)
+     ↓ Not resolved within 60 days, OR
+       certification status implicated, OR
+       community/worker invokes independent escalation →
+         LEVEL 2 → Regeneration Audit Council (RAC)
+         ↓ Resolved? → END (certification consequence applied if warranted)
+         ↓ Cross-border, treaty-level, or systemic fraud →
+           LEVEL 4 → Digital Justice Tribunal
+           (via relevant cross-cluster body, not directly)
+
+PARALLEL CHANNEL (non-adversarial, always available):
+  Annual Review & Adaptation Protocol — systemic issues, pattern harms,
+  and framework improvement proposals can be submitted at any time,
+  independently of adversarial proceedings. Managed by RAC.
+```
+
+**Reading the flowchart:** the system is designed so that fewer than 10% of disputes should reach Level 2, and fewer than 1% should reach Levels 3–4. A dispute reaching DJT represents a systemic failure of the enterprise governance architecture, not a routine outcome. Certification consequences (downgrade, suspension, exclusion from RTZs and Hearts/Leaves economies) are the primary enforcement mechanism; legal adjudication is the backstop.
+
 ---
 
 ### **10. Glossary**
@@ -304,7 +355,50 @@ graph TD
 
 **Navigating Principle Tensions:**  
 - **Internal Conflict Resolution**: The Stakeholder Council resolves conflicts between modules (e.g., financial viability vs. ecological restoration), using the Human-AI Conflict Resolution Protocol as a template for structured dialogue and decision-making.  
-- **Escalation to GGF**: Major disputes threatening GGF principles (e.g., Rights of Nature violations) are escalated to the GGF’s *Digital Justice Tribunal* or *Planetary Health Council* for adjudication, ensuring alignment with global standards.
+
+**Escalation thresholds**
+
+The REF operates a four-level dispute architecture. Most conflicts are designed to resolve within the enterprise system; external escalation is the exception, not the default.
+
+**Level 1 — Stakeholder Council (internal, terminal for most disputes)**
+The Stakeholder Council is the first and primary adjudicator for conflicts between modules, between stakeholder groups, or between enterprise commitments and operational constraints. Decisions at this level are final for disputes that:
+- involve a single enterprise and its direct stakeholders,
+- do not allege harm to parties outside the enterprise boundary, and
+- do not implicate GGF-wide standards (certification, currency, or treaty obligations).
+
+The Human-AI Conflict Resolution Protocol provides the procedural template for structured dialogue at this level.
+
+**Level 2 — Regeneration Audit Council (RAC) (GGF-level, terminal for most certification disputes)**
+Escalation to RAC is triggered when:
+- the Stakeholder Council fails to reach resolution within 60 days,
+- a dispute involves Pathfinder certification status (e.g., alleged greenwashing, maturity model fraud, or contested tier assessment),
+- a systemic pattern of harm is identified across the Annual Review & Adaptation Protocol,
+- a worker or community party invokes the escalation pathway independently of enterprise consent, or
+- an Intergenerational Equity Score challenge is filed by Guardians of the Future.
+
+RAC decisions are terminal for all disputes that remain within the enterprise governance domain. RAC may impose certification downgrade, suspension, or remediation requirements. It does **not** have jurisdiction over cross-border harms, treaty-level violations, or AI harms that extend beyond the enterprise boundary.
+
+**Level 3 — Cross-cluster handoff (specialist bodies)**
+RAC initiates a handoff to a specialist cluster when a dispute meets one of the following threshold conditions:
+
+| Trigger | Receiving body | Jurisdiction |
+|---|---|---|
+| AI or algorithmic harm that (a) persists after Turing Council and RAC review, or (b) affects parties outside the enterprise boundary | Global Technology Council → Digital Justice Tribunal | Technology cluster jurisdiction map |
+| Ecological harm meeting the ecocide threshold: irreversible damage to a defined ecosystem, species-level harm, or Rights of Nature violation | Planetary Health Council → Climate & Ecological Justice Tribunals (CJET within DJT) | Ecological cluster jurisdiction map |
+| Labor harm involving a state actor or cross-border supply chain violation | Global Justice Oversight Body → Digital Justice Tribunal | Justice OS |
+
+A handoff does not suspend RAC proceedings; certification consequences and cross-cluster adjudication run in parallel.
+
+**Level 4 — Digital Justice Tribunal (treaty-level only)**
+DJT jurisdiction within the enterprise cluster is reserved for:
+- systemic Pathfinder certification fraud affecting multiple enterprises or a regional market,
+- cross-border AI harms not resolved via the technology cluster pathway,
+- ecological violations meeting the ecocide threshold (routed via CJET), and
+- violations of the Worker & Community Protection Covenant that involve state non-compliance.
+
+Individual enterprise disputes do not reach DJT directly. The pathway is always RAC → cross-cluster body → DJT.
+
+*Note on the Office of Algorithmic Accountability: this body, referenced in the glossary, functions as a specialist review unit within the technology cluster's escalation pathway, sitting between the Turing Council and the Global Technology Council. Enterprise AI disputes that cross the Level 3 threshold route through the OAA before reaching GTC. It does not have independent jurisdiction over REF-internal disputes.*
 
 **Scalability Thresholds:**  
 - **Micro-enterprises**: Focus on Modules 3 and 4 for Bronze certification, operating in local Hearts economy.  

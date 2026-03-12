@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1100 840"
+   font-family="system-ui,-apple-system,sans-serif"
+   version="1.1"
+   id="svg84"
+   sodipodi:docname="ecological-cluster.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview84"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.0333333"
+     inkscape:cx="549.67742"
+     inkscape:cy="420"
+     inkscape:window-width="2520"
+     inkscape:window-height="1048"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg84" />
+  <defs
+     id="defs5">
+    <marker
+       id="aGreen"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#166534"
+         id="polygon1" />
+    </marker>
+    <marker
+       id="aTeal"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#0f766e"
+         id="polygon2" />
+    </marker>
+    <marker
+       id="aAmber"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#92400e"
+         id="polygon3" />
+    </marker>
+    <marker
+       id="aGray"
+       markerWidth="8"
+       markerHeight="6"
+       refX="8"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0 0, 8 3, 0 6"
+         fill="#94a3b8"
+         id="polygon4" />
+    </marker>
+    <marker
+       id="aMoss"
+       markerWidth="10"
+       markerHeight="7"
+       refX="10"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#3f6212"
+         id="polygon5" />
+    </marker>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="1100"
+     height="840"
+     fill="#f0fdf4"
+     id="rect5" />
+  <!-- Title -->
+  <text
+     x="550"
+     y="28"
+     text-anchor="middle"
+     font-size="15"
+     font-weight="700"
+     letter-spacing="-0.3"
+     fill="#14532d"
+     id="text5">Ecological cluster — jurisdiction &amp; escalation map</text>
+  <text
+     x="550"
+     y="48"
+     text-anchor="middle"
+     font-size="11"
+     fill="#4b7c56"
+     id="text6">Read bottom-up: entry point → escalation bodies → apex. Arrows show escalation direction.</text>
+  <!-- ===== APEX: DJT + CJET ===== -->
+  <rect
+     x="100"
+     y="62"
+     width="900"
+     height="82"
+     rx="10"
+     fill="#14532d"
+     id="rect6" />
+  <text
+     x="550"
+     y="87"
+     text-anchor="middle"
+     font-size="13"
+     font-weight="700"
+     fill="white"
+     id="text7">Digital Justice Tribunal (DJT)</text>
+  <text
+     x="550"
+     y="105"
+     text-anchor="middle"
+     font-size="10"
+     fill="#86efac"
+     id="text8">Apex judicial body · Treaty-established · Final authority on ecocide, Rights of Nature, Duty of Care breaches</text>
+  <!-- CJET badge inside DJT -->
+  <rect
+     x="330"
+     y="113"
+     width="440"
+     height="24"
+     rx="5"
+     fill="#166534"
+     id="rect8" />
+  <text
+     x="550"
+     y="130"
+     text-anchor="middle"
+     font-size="10"
+     font-weight="600"
+     fill="#bbf7d0"
+     id="text9">Climate &amp; Ecological Justice Tribunals (CJET) — specialized chamber within DJT</text>
+  <!-- ===== LANE DIVIDERS ===== -->
+  <line
+     x1="371"
+     y1="162"
+     x2="371"
+     y2="710"
+     stroke="#bbf7d0"
+     stroke-width="1.5"
+     stroke-dasharray="5,5"
+     id="line9" />
+  <line
+     x1="737"
+     y1="162"
+     x2="737"
+     y2="710"
+     stroke="#bbf7d0"
+     stroke-width="1.5"
+     stroke-dasharray="5,5"
+     id="line10" />
+  <!-- ===== LANE HEADERS ===== -->
+  <rect
+     x="18"
+     y="163"
+     width="336"
+     height="26"
+     rx="5"
+     fill="#166534"
+     id="rect10" />
+  <text
+     x="186"
+     y="181"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="600"
+     fill="#bbf7d0"
+     id="text10">Ecocide &amp; Rights of Nature</text>
+  <rect
+     x="385"
+     y="165"
+     width="336"
+     height="26"
+     rx="5"
+     fill="#0f766e"
+     id="rect11" />
+  <text
+     x="553"
+     y="183"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="600"
+     fill="#99f6e4"
+     id="text11">Biodiversity, species &amp; marine disputes</text>
+  <rect
+     x="751"
+     y="163"
+     width="335"
+     height="26"
+     rx="5"
+     fill="#854d0e"
+     id="rect12" />
+  <text
+     x="918"
+     y="181"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="600"
+     fill="#fde68a"
+     id="text12">Climate/disaster &amp; Duty of Care failures</text>
+  <!-- ======================== -->
+  <!-- ROW 1  y=202  SECTOR OVERSIGHT -->
+  <!-- ======================== -->
+  <!-- L1: No general oversight body — CJET IS the adjudicator. Show note. -->
+  <rect
+     x="18"
+     y="200"
+     width="336"
+     height="72"
+     rx="8"
+     fill="#14532d"
+     stroke="#86efac"
+     stroke-width="1.5"
+     id="rect13" />
+  <text
+     x="186"
+     y="225"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text13">CJET (within DJT)</text>
+  <text
+     x="186"
+     y="242"
+     text-anchor="middle"
+     font-size="10"
+     fill="#86efac"
+     id="text14">Directly receives ecocide cases</text>
+  <text
+     x="186"
+     y="258"
+     text-anchor="middle"
+     font-size="9"
+     fill="#4ade80"
+     id="text15">No further appeal — Rights of Nature violations</text>
+  <text
+     x="186"
+     y="269"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fde68a"
+     font-weight="600"
+     id="text16">⊘ Terminal jurisdiction for Rights of Nature</text>
+  <!-- L2: Planetary Health Council -->
+  <rect
+     x="385"
+     y="200"
+     width="336"
+     height="72"
+     rx="8"
+     fill="#0f766e"
+     id="rect16" />
+  <text
+     x="553"
+     y="225"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text17">Planetary Health Council (PHC)</text>
+  <text
+     x="553"
+     y="242"
+     text-anchor="middle"
+     font-size="10"
+     fill="#99f6e4"
+     id="text18">Sector oversight · mediates inter-framework disputes</text>
+  <text
+     x="553"
+     y="258"
+     text-anchor="middle"
+     font-size="9"
+     fill="#5eead4"
+     id="text19">Coordinates biodiversity, oceans, animal welfare, food, water</text>
+  <text
+     x="553"
+     y="269"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#2dd4bf"
+     font-style="italic"
+     id="text20">Reports to Meta-Governance Coordination Council</text>
+  <!-- L3: PHC (same body for disaster) + GJO oversight -->
+  <rect
+     x="751"
+     y="200"
+     width="335"
+     height="72"
+     rx="8"
+     fill="#92400e"
+     id="rect20" />
+  <text
+     x="918"
+     y="225"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text21">PHC + Global Justice Oversight (GJO)</text>
+  <text
+     x="918"
+     y="242"
+     text-anchor="middle"
+     font-size="10"
+     fill="#fed7aa"
+     id="text22">PHC: disaster preparedness oversight</text>
+  <text
+     x="918"
+     y="258"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fdba74"
+     id="text23">GJO: oversees CJET · delegates enforcement to Shield Protocol</text>
+  <text
+     x="918"
+     y="269"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#fbbf24"
+     font-style="italic"
+     id="text24">Duty of Care failures route through Planetary Duty of Care protocol → DJT</text>
+  <!-- ======================== -->
+  <!-- ROW 2  y=330  DOMAIN BODIES -->
+  <!-- ======================== -->
+  <!-- L1: Eco Intel (advisory + rights framework) -->
+  <rect
+     x="18"
+     y="328"
+     width="336"
+     height="76"
+     rx="8"
+     fill="white"
+     stroke="#166534"
+     stroke-width="1.5"
+     stroke-dasharray="5,4"
+     id="rect24" />
+  <text
+     x="186"
+     y="353"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="500"
+     fill="#14532d"
+     id="text25">Ecological Intelligence &amp; Rights Layer</text>
+  <text
+     x="186"
+     y="370"
+     text-anchor="middle"
+     font-size="10"
+     fill="#166534"
+     id="text26">(Eco Intel) — advisory, non-adjudicative</text>
+  <text
+     x="186"
+     y="387"
+     text-anchor="middle"
+     font-size="9"
+     fill="#4b7c56"
+     id="text27">Provides Rights of Nature standards &amp; scientific basis</text>
+  <text
+     x="186"
+     y="399"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#64748b"
+     font-style="italic"
+     id="text28">MOS Dynamic Rights Spectrum informs ecocide threshold determinations</text>
+  <!-- L2: PHC mediation (biodiversity disputes) -->
+  <rect
+     x="385"
+     y="328"
+     width="336"
+     height="76"
+     rx="8"
+     fill="#0d9488"
+     id="rect28" />
+  <text
+     x="553"
+     y="353"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text29">PHC Mediation</text>
+  <text
+     x="553"
+     y="370"
+     text-anchor="middle"
+     font-size="10"
+     fill="#ccfbf1"
+     id="text30">Formal dispute resolution between frameworks</text>
+  <text
+     x="553"
+     y="387"
+     text-anchor="middle"
+     font-size="9"
+     fill="#99f6e4"
+     id="text31">e.g. biodiversity vs animal welfare; oceans vs food systems</text>
+  <text
+     x="553"
+     y="399"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#5eead4"
+     font-style="italic"
+     id="text32">Earth Council guidance applies · unresolved → CJET</text>
+  <!-- L3: DRR&R Framework -->
+  <rect
+     x="751"
+     y="328"
+     width="335"
+     height="76"
+     rx="8"
+     fill="#b45309"
+     id="rect32" />
+  <text
+     x="918"
+     y="353"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text33">DRR&amp;R Framework</text>
+  <text
+     x="918"
+     y="370"
+     text-anchor="middle"
+     font-size="10"
+     fill="#fde68a"
+     id="text34">Disaster Risk Reduction &amp; Resilience</text>
+  <text
+     x="918"
+     y="387"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fed7aa"
+     id="text35">Monitors preparedness obligations under Duty of Care</text>
+  <text
+     x="918"
+     y="399"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#fbbf24"
+     font-style="italic"
+     id="text36">Coordinates with Bioregional Grid Authorities &amp; supply chains</text>
+  <!-- ======================== -->
+  <!-- ROW 3  y=464  FIRST RESPONSE / LOCAL -->
+  <!-- ======================== -->
+  <!-- L1: BAZ monitoring + Citizen reporting -->
+  <rect
+     x="18"
+     y="462"
+     width="160"
+     height="82"
+     rx="8"
+     fill="#166534"
+     id="rect36" />
+  <text
+     x="98"
+     y="487"
+     text-anchor="middle"
+     font-size="11"
+     font-weight="600"
+     fill="white"
+     id="text37">BAZ monitoring</text>
+  <text
+     x="98"
+     y="504"
+     text-anchor="middle"
+     font-size="10"
+     fill="#86efac"
+     id="text38">&amp; stewardship</text>
+  <text
+     x="98"
+     y="521"
+     text-anchor="middle"
+     font-size="9"
+     fill="#4ade80"
+     id="text39">Local Rights of</text>
+  <text
+     x="98"
+     y="533"
+     text-anchor="middle"
+     font-size="9"
+     fill="#4ade80"
+     id="text40">Nature observation</text>
+  <rect
+     x="188"
+     y="462"
+     width="166"
+     height="82"
+     rx="8"
+     fill="#15803d"
+     id="rect40" />
+  <text
+     x="271"
+     y="487"
+     text-anchor="middle"
+     font-size="11"
+     font-weight="600"
+     fill="white"
+     id="text41">Citizen Reporting</text>
+  <text
+     x="271"
+     y="504"
+     text-anchor="middle"
+     font-size="10"
+     fill="#86efac"
+     id="text42">Portal</text>
+  <text
+     x="271"
+     y="521"
+     text-anchor="middle"
+     font-size="9"
+     fill="#4ade80"
+     id="text43">Rights Status Dashboard</text>
+  <text
+     x="271"
+     y="533"
+     text-anchor="middle"
+     font-size="9"
+     fill="#4ade80"
+     id="text44">feeds rights violations</text>
+  <!-- L2: Framework-level bodies -->
+  <rect
+     x="385"
+     y="462"
+     width="336"
+     height="86.838707"
+     rx="8"
+     fill="#14b8a6"
+     id="rect44"
+     style="stroke-width:1.02908" />
+  <text
+     x="553"
+     y="487"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text45">Framework governance bodies</text>
+  <text
+     x="553"
+     y="504"
+     text-anchor="middle"
+     font-size="9"
+     fill="#ccfbf1"
+     id="text46">Biodiversity Framework · Oceans &amp; Marine Framework</text>
+  <text
+     x="553"
+     y="518"
+     text-anchor="middle"
+     font-size="9"
+     fill="#ccfbf1"
+     id="text47">Animal Welfare · Kinship Garden (Food) · Water &amp; Sanitation</text>
+  <text
+     x="553"
+     y="532"
+     text-anchor="middle"
+     font-size="9"
+     fill="#ccfbf1"
+     id="text48">Phoenix Protocol (circular economy)</text>
+  <text
+     x="553"
+     y="544"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#99f6e4"
+     font-style="italic"
+     id="text49">Inter-framework disputes escalate to PHC mediation</text>
+  <!-- L3: Bioregional / local incident -->
+  <rect
+     x="751"
+     y="462"
+     width="335"
+     height="88.774193"
+     rx="8"
+     fill="#d97706"
+     id="rect49"
+     style="stroke-width:1.04049" />
+  <text
+     x="918"
+     y="487"
+     text-anchor="middle"
+     font-size="12"
+     font-weight="600"
+     fill="white"
+     id="text50">Bioregional Grid Authorities / BAZs</text>
+  <text
+     x="918"
+     y="504"
+     text-anchor="middle"
+     font-size="10"
+     fill="#fef3c7"
+     id="text51">Infrastructure hardening · preparedness monitoring</text>
+  <text
+     x="918"
+     y="521"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fde68a"
+     id="text52">Emergency Supply Corridors (Global Supply Chains)</text>
+  <text
+     x="918"
+     y="534"
+     text-anchor="middle"
+     font-size="9"
+     fill="#fde68a"
+     id="text53">Resilience Bonds · Community Resilience Score</text>
+  <text
+     x="918"
+     y="547"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#fbbf24"
+     font-style="italic"
+     id="text54">Failure to prepare → Duty of Care liability</text>
+  <!-- ======================== -->
+  <!-- ROW 4  y=604  ENTRY POINTS -->
+  <!-- ======================== -->
+  <!-- L1: Ecocide incident -->
+  <rect
+     x="18"
+     y="602"
+     width="336"
+     height="70"
+     rx="8"
+     fill="#bbf7d0"
+     id="rect54" />
+  <text
+     x="186"
+     y="626"
+     text-anchor="middle"
+     font-size="12"
+     fill="#14532d"
+     font-weight="500"
+     id="text55">Ecocide / Rights of Nature violation</text>
+  <text
+     x="186"
+     y="643"
+     text-anchor="middle"
+     font-size="9"
+     fill="#166534"
+     id="text56">📍 Entry point</text>
+  <text
+     x="186"
+     y="658"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#4b7c56"
+     font-style="italic"
+     id="text57">e.g. mass ecosystem destruction · river personhood breach · species genocide</text>
+  <!-- L2: Biodiversity dispute -->
+  <rect
+     x="385"
+     y="602"
+     width="336"
+     height="70"
+     rx="8"
+     fill="#99f6e4"
+     id="rect57" />
+  <text
+     x="553"
+     y="626"
+     text-anchor="middle"
+     font-size="12"
+     fill="#134e4a"
+     font-weight="500"
+     id="text58">Cross-framework ecological dispute</text>
+  <text
+     x="553"
+     y="643"
+     text-anchor="middle"
+     font-size="9"
+     fill="#0f766e"
+     id="text59">📍 Entry point</text>
+  <text
+     x="553"
+     y="658"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#0f766e"
+     font-style="italic"
+     id="text60">e.g. invasive species policy conflict · marine vs food system tension</text>
+  <!-- L3: Disaster / failure to prepare -->
+  <rect
+     x="751"
+     y="602"
+     width="335"
+     height="70"
+     rx="8"
+     fill="#fde68a"
+     id="rect60" />
+  <text
+     x="918"
+     y="626"
+     text-anchor="middle"
+     font-size="12"
+     fill="#78350f"
+     font-weight="500"
+     id="text61">Disaster event / preparedness failure</text>
+  <text
+     x="918"
+     y="643"
+     text-anchor="middle"
+     font-size="9"
+     fill="#92400e"
+     id="text62">📍 Entry point</text>
+  <text
+     x="918"
+     y="658"
+     text-anchor="middle"
+     font-size="8.5"
+     fill="#92400e"
+     font-style="italic"
+     id="text63">e.g. preventable flood damage · governance body failed Duty of Care</text>
+  <!-- ======================== -->
+  <!-- ARROWS -->
+  <!-- ======================== -->
+  <!-- Lane 1: Green — ecocide → BAZ/Citizen → CJET/DJT (direct route) -->
+  <!-- Incident → BAZ+Citizen (split) -->
+  <line
+     x1="120"
+     y1="602"
+     x2="100"
+     y2="548"
+     stroke="#166534"
+     stroke-width="2.5"
+     marker-end="url(#aGreen)"
+     id="line63" />
+  <line
+     x1="260"
+     y1="602"
+     x2="272"
+     y2="548"
+     stroke="#166534"
+     stroke-width="2.5"
+     marker-end="url(#aGreen)"
+     id="line64" />
+  <!-- BAZ + Citizen → CJET (both merge up to same target) -->
+  <line
+     x1="100"
+     y1="462"
+     x2="144"
+     y2="408"
+     stroke="#166534"
+     stroke-width="2.5"
+     marker-end="url(#aGreen)"
+     id="line65" />
+  <line
+     x1="271"
+     y1="462"
+     x2="232"
+     y2="408"
+     stroke="#166534"
+     stroke-width="2.5"
+     marker-end="url(#aGreen)"
+     id="line66" />
+  <!-- Eco Intel advisory → CJET (dashed) -->
+  <line
+     x1="186"
+     y1="328"
+     x2="186"
+     y2="276"
+     stroke="#166534"
+     stroke-width="1.5"
+     stroke-dasharray="5,4"
+     marker-end="url(#aGray)"
+     id="line67" />
+  <!-- CJET → DJT (internal — shown as short bold connector) -->
+  <line
+     x1="210"
+     y1="200"
+     x2="354"
+     y2="144"
+     stroke="#14532d"
+     stroke-width="3"
+     marker-end="url(#aGreen)"
+     id="line68" />
+  <!-- Lane 2: Teal — dispute → frameworks → PHC mediation → CJET → DJT -->
+  <line
+     x1="553"
+     y1="602"
+     x2="553"
+     y2="548"
+     stroke="#0f766e"
+     stroke-width="2.5"
+     marker-end="url(#aTeal)"
+     id="line69" />
+  <line
+     x1="553"
+     y1="462"
+     x2="553"
+     y2="408"
+     stroke="#0f766e"
+     stroke-width="2.5"
+     marker-end="url(#aTeal)"
+     id="line70" />
+  <line
+     x1="553"
+     y1="328"
+     x2="553"
+     y2="276"
+     stroke="#0f766e"
+     stroke-width="2.5"
+     marker-end="url(#aTeal)"
+     id="line71" />
+  <!-- PHC → CJET within DJT -->
+  <line
+     x1="473"
+     y1="200"
+     x2="420"
+     y2="144"
+     stroke="#0f766e"
+     stroke-width="2.5"
+     marker-end="url(#aTeal)"
+     id="line72" />
+  <!-- Lane 3: Amber — disaster → BGA/BAZ → DRR&R → PHC+GJO → DJT -->
+  <line
+     x1="918"
+     y1="602"
+     x2="918"
+     y2="548"
+     stroke="#92400e"
+     stroke-width="2.5"
+     marker-end="url(#aAmber)"
+     id="line73" />
+  <line
+     x1="918"
+     y1="462"
+     x2="918"
+     y2="408"
+     stroke="#92400e"
+     stroke-width="2.5"
+     marker-end="url(#aAmber)"
+     id="line74" />
+  <line
+     x1="918"
+     y1="328"
+     x2="918"
+     y2="276"
+     stroke="#92400e"
+     stroke-width="2.5"
+     marker-end="url(#aAmber)"
+     id="line75" />
+  <!-- PHC+GJO → DJT (Duty of Care route) -->
+  <line
+     x1="870"
+     y1="200"
+     x2="722"
+     y2="144"
+     stroke="#92400e"
+     stroke-width="2.5"
+     marker-end="url(#aAmber)"
+     id="line76" />
+  <!-- ======================== -->
+  <!-- ADVISORY SIDEBAR: Earth Council + MOS -->
+  <!-- ======================== -->
+  <rect
+     x="18"
+     y="190"
+     width="10"
+     height="282"
+     rx="3"
+     fill="#86efac"
+     opacity="0.6"
+     id="rect76" />
+  <!-- Earth Council advisory note (left margin) -->
+  <text
+     transform="rotate(-90 12 290)"
+     x="12"
+     y="290"
+     text-anchor="middle"
+     font-size="8"
+     fill="#166534"
+     font-style="italic"
+     id="text76">Earth Council guides PHC throughout</text>
+  <!-- ======================== -->
+  <!-- LEGEND -->
+  <!-- ======================== -->
+  <rect
+     x="18"
+     y="692"
+     width="1064"
+     height="130"
+     rx="8"
+     fill="white"
+     stroke="#bbf7d0"
+     stroke-width="1.5"
+     id="rect77" />
+  <text
+     x="38"
+     y="714"
+     font-size="11"
+     font-weight="600"
+     fill="#14532d"
+     id="text77">Legend</text>
+  <!-- Solid green -->
+  <line
+     x1="38"
+     y1="732"
+     x2="80"
+     y2="732"
+     stroke="#166534"
+     stroke-width="2.5"
+     marker-end="url(#aGreen)"
+     id="line77" />
+  <text
+     x="88"
+     y="736"
+     font-size="10"
+     fill="#374151"
+     id="text78">Formal escalation pathway</text>
+  <!-- Dashed gray -->
+  <line
+     x1="38"
+     y1="752"
+     x2="80"
+     y2="752"
+     stroke="#64748b"
+     stroke-width="1.5"
+     stroke-dasharray="5,4"
+     marker-end="url(#aGray)"
+     id="line78" />
+  <text
+     x="88"
+     y="756"
+     font-size="10"
+     fill="#374151"
+     id="text79">Advisory / informing route (non-binding)</text>
+  <!-- Terminal marker -->
+  <rect
+     x="290"
+     y="724"
+     width="12"
+     height="12"
+     rx="2"
+     fill="#fde68a"
+     stroke="#92400e"
+     stroke-width="1"
+     id="rect79" />
+  <text
+     x="308"
+     y="735"
+     font-size="10"
+     fill="#374151"
+     id="text80">⊘ Terminal — Rights of Nature violations end at CJET (within DJT), no further appeal</text>
+  <!-- Dashed border box -->
+  <rect
+     x="290"
+     y="743"
+     width="12"
+     height="12"
+     rx="2"
+     fill="white"
+     stroke="#166534"
+     stroke-width="1.5"
+     stroke-dasharray="3,2"
+     id="rect80" />
+  <text
+     x="308"
+     y="754"
+     font-size="10"
+     fill="#374151"
+     id="text81">Advisory body — provides scientific/ethical standards but does not adjudicate</text>
+  <!-- Notes -->
+  <text
+     x="38"
+     y="776"
+     font-size="9.5"
+     fill="#94a3b8"
+     id="text82">⚠ CJET is a specialized chamber <tspan
+   font-style="italic"
+   id="tspan81">within</tspan> DJT, not a separate upstream body — this is structurally different from tech cluster.</text>
+  <text
+     x="38"
+     y="791"
+     font-size="9.5"
+     fill="#94a3b8"
+     id="text83">PHC appears in two lanes (biodiversity oversight &amp; disaster oversight) as it is the cross-cutting ecological coordination body.</text>
+  <text
+     x="38"
+     y="806"
+     font-size="9.5"
+     fill="#94a3b8"
+     id="text84">Earth Council provides Indigenous wisdom guidance to PHC throughout. MOS Dynamic Rights Spectrum informs ecocide threshold determinations via Eco Intel.</text>
+</svg>
