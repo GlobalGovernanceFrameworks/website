@@ -382,6 +382,8 @@ The GGF's economic architecture proposes two complementary non-fiat currencies d
 
 Both currencies are proposed as components of a broader economic system in which individuals and communities also earn Hearts and Leaves for local contributions. The SDTP application differs in scale and in the nature of the generating activity — sovereign-level ecological programs and national care infrastructure investment rather than individual or community contributions. But the underlying measurement logic is shared.
 
+A tension worth naming explicitly: the GGF's Leaves currency is designed to reward ecological stewardship as a form of value recognition, not as a financial commodity. The SDTP's requirement that Leaves function as tradable debt-servicing instruments — and ultimately circulate on secondary markets — introduces financialization pressure that sits in tension with this original design intent. The concern is not hypothetical: carbon credits began as ecological incentives and evolved into instruments widely used for offsetting rather than reducing emissions, weakening the ecological purpose in favour of market liquidity. The SDTP design attempts to manage this tension through strict additionality requirements and governance oversight, but does not resolve it. It is an open design question whether a Leaves instrument can maintain ecological integrity while also being liquid enough to attract creditor participation at scale. Phase 1 pilots should treat this tension as an explicit test question rather than an assumed solved problem.
+
 ### <a id="ch5-2"></a>5.2 Why two instruments rather than one
 
 The separation matters. Combining ecological and social regeneration into a single index would create problematic substitution dynamics: a nation could meet its obligation entirely through forest planting while its healthcare system collapsed, or entirely through hospital construction while deforestation accelerated. The two-currency structure prevents this by requiring minimum performance across both dimensions.
@@ -410,25 +412,25 @@ These categories are not exhaustive, and the SDTP design anticipates that the SR
 
 ### <a id="ch5-4"></a>5.4 Hearts in more detail: what qualifies and how measurement works
 
-Care infrastructure measurement is less technically mature than ecological measurement, and this is a genuine challenge for the SDTP. Carbon markets have spent thirty years developing accounting methodologies; care economy measurement is at an earlier stage.
+Care infrastructure measurement is substantially less technically mature than ecological measurement, and the gap is wider than the framing of this paper might suggest. Carbon markets have spent thirty years developing accounting methodologies and *still* face recurring integrity crises — greenwashing, phantom credits, reclassified baselines. Healthcare access, early childhood provision, and mental health services are harder to verify remotely, more susceptible to gaming through administrative reclassification, and more contested cross-culturally in their very definition. A government could "expand coverage" on paper by relabelling existing services without deploying a single additional health worker. The three-tier verification structure provides meaningful protection against this, but Hearts verification is the weakest technical link in the SDTP and should be treated as such.
 
-The proposed approach focuses on structural capacity rather than outcomes. Rather than trying to measure health or wellbeing directly (which is subject to many confounders beyond the debtor nation's control), Hearts generation is measured by documented expansion in care service capacity relative to baseline.
+The proposed approach focuses on structural capacity rather than outcomes — documenting expansion in care service capacity relative to baseline rather than attempting to measure health or wellbeing directly. This is a deliberate methodological conservatism: outcomes are subject to confounders far beyond any government's control, while structural capacity is at least in principle verifiable.
 
 **Qualifying activities** include:
 
 *Primary healthcare access expansion.* Additional population covered by accessible primary healthcare, measured through facility density, catchment population data, and service utilization rates.
 
-*Community health worker programs.* Trained and employed community health workers providing preventive and primary care, with documented coverage and activity rates.
+*Community health worker programs.* Trained and employed community health workers providing preventive and primary care, with documented coverage and activity rates. This is the most verifiable Hearts-generating activity in Phase 1 — individual workers can be enumerated, training records checked, and coverage areas mapped.
 
 *Early childhood development.* Enrollment capacity in quality early childhood programs, measured against age-cohort population and established quality standards.
 
 *Elder and disability care infrastructure.* Formal and community-based care capacity for elderly and disabled populations, with documented quality standards.
 
-*Mental health and psychosocial support.* Community-accessible mental health services, an area of particular importance in contexts of conflict and displacement.
+*Mental health and psychosocial support.* Community-accessible mental health services, an area of particular importance in contexts of conflict and displacement — and also one of the hardest to measure consistently across cultural contexts.
 
-The **measurement challenge** here is significant. Unlike forest cover, which can be measured from satellite imagery, care infrastructure capacity requires administrative data, facility surveys, and community-level reporting — all of which are less standardized and more susceptible to manipulation than remote sensing data.
+**A tiered approach to Hearts deployment:** Given the measurement maturity gap, the SDTP implementation pathway should be explicit about what "good enough" verification looks like at each phase rather than applying a single aspirational standard uniformly. Phase 1 pilots should restrict Hearts generation to the most verifiable activities — community health worker programs and facility-based primary care expansion — where enumerable inputs and basic administrative records provide reasonable verification ground. More diffuse activities (mental health services, community-based elder care) should be deferred to Phase 2, when the Hearts measurement methodology has been refined against real-program data. Conversion rates for Hearts in Phase 1 should carry explicit uncertainty discounts reflecting this immaturity, with the expectation that rates are recalibrated as methodology improves.
 
-The proposed response is a combination of administrative data requirements, independent verification by credentialed civil society organizations (with explicit protection from government interference), and community-level reporting channels. This is operationally demanding and represents one of the areas where the SDTP design most needs expert development before it could function as a real financial instrument.
+This is operationally demanding and represents one of the areas where the SDTP design most needs expert development — specifically, a dedicated Hearts measurement methodology paper (identified as a priority in the research agenda) before Phase 1 pilots deploy Hearts-denominated obligations.
 
 ### <a id="ch5-5"></a>5.5 The Love Ledger as verification infrastructure
 
@@ -516,9 +518,21 @@ The case for creditor participation rests on several arguments that are genuinel
 
 **Climate transition risk.** The climate assets underlying extractive debt strategies — oil, gas, coal, deforestation-linked agriculture — face a long-run transition risk increasingly priced into financial markets. SDTP instruments convert this exposure from a climate-stranded extractive economy to a regenerative economy, which is a better long-run risk profile.
 
-**Leaves as investable assets.** Verified Leaves are designed to be compatible with carbon market infrastructure and impact investment frameworks. Creditors who receive Leaves-denominated instruments could, in principle, trade these in secondary markets to impact investors, corporations managing carbon footprint obligations, or institutional investors with ESG mandates.
+**Leaves as investable assets.** Verified Leaves are designed to be compatible with carbon market infrastructure and impact investment frameworks. Creditors who receive Leaves-denominated instruments could, in principle, trade these in secondary markets to impact investors, corporations managing carbon footprint obligations, or institutional investors with ESG mandates. The caveat entered in Chapter 5 applies here: whether Leaves can maintain ecological integrity while functioning as liquid financial instruments is a genuine open question.
 
 **Reputational and regulatory alignment.** Multilateral and development bank creditors increasingly face regulatory and political pressure to demonstrate climate and development alignment. SDTP participation provides a credible mechanism for this alignment.
+
+**The collective action problem and how to address it.**
+
+These arguments establish that SDTP participation is in the collective interest of creditors. They do not establish that any individual creditor has a rational incentive to participate first. The free-rider logic is clean: if other creditors restructure their claims under the SDTP while one holdout maintains conventional terms, the holdout benefits from the fiscal space the others created — receiving full payment from government revenue no longer consumed by extraction-driven servicing — without bearing the transaction costs or novelty risk of participation. This is precisely the dynamic that has undermined the G20 Common Framework for Debt Treatments, where creditor coordination has proven extremely difficult in practice.
+
+The SDTP needs a specific mechanism to overcome this. Two approaches are worth incorporating into the design:
+
+*Collective action clauses.* Sovereign bonds increasingly include CAC provisions requiring all holders to accept restructuring terms approved by a qualified supermajority (typically 75 percent by value). The SDTP should be structured so that when a qualifying supermajority of a nation's creditors accept SDTP terms, remaining holdouts are bound — eliminating the free-rider option for commercial bond debt. For bilateral debt, equivalent language can be incorporated into the debt transformation agreement between governments. This is not a novel legal mechanism; it adapts an existing and increasingly standard instrument.
+
+*First-mover Leaves allocation.* Creditors who participate in Phase 1 pilots receive preferential allocation of Leaves instruments — specifically, a larger Leaves quantity per dollar of debt transformed than later participants, reflecting the risk premium of early participation and creating a genuine financial incentive for being first. This allocation advantage declines at defined intervals as the instrument demonstrates track record. The mechanism is analogous to early-investor pricing in project finance and venture capital; it converts the disadvantage of novelty risk into a compensated premium rather than an uncompensated burden.
+
+The combination — CAC provisions eliminating holdout options for commercial debt, first-mover allocation creating positive incentives for early bilateral participation — directly addresses the collective action problem rather than relying on goodwill or shared interest in systemic outcomes.
 
 ### <a id="ch7-3"></a>7.3 Designing for debtor sovereignty
 
@@ -664,7 +678,13 @@ Beyond the technical sequencing, there is a political economy argument for phasi
 
 **Objective:** Establish the minimum viable institutional and technical infrastructure, and generate initial evidence of the instrument's functioning from carefully designed pilot programs.
 
-Phase 1 begins as soon as the Treaty for Our Only Home has sufficient ratification to establish the SRC with a functioning secretariat. The primary technical task is building the Love Ledger verification architecture to a standard adequate for pilot deployment: specifying data standards for Tier 1 national monitoring submissions, accrediting an initial cohort of Tier 2 civil society verifiers, and establishing the SRC technical secretariat's remote sensing and audit capacity. This is estimated to require two to three years of focused effort.
+**Minimum viable governance for Phase 1.** The full SDTP architecture depends on the Treaty for Our Only Home being ratified and the SRC being operational. But waiting for this institutional stack to exist before beginning any pilots is a sequencing trap — the Treaty ratification process is itself influenced by demonstrated proof-of-concept, creating a dependency loop. Phase 1 must therefore be designed to function with a lighter governance structure.
+
+The minimum required for a credible bilateral pilot is: one willing creditor government; one willing debtor government; an agreed measurement baseline established by independent researchers rather than the SRC; and an ad hoc verification body composed of accredited international civil society organizations operating under a memorandum of understanding rather than Treaty authority. This structure is legally simpler than the full SDTP — it is effectively a bilateral debt-for-nature agreement with enhanced verification and performance structure — but it tests the core mechanism and generates the evidence base that Phase 2 requires. The SRC, when established, would retrospectively validate Phase 1 conversions and integrate them into the broader framework.
+
+This means Phase 1 can begin before Treaty ratification, provided a bilateral creditor with development mandate flexibility (France's Agence Française de Développement, the UK's British International Investment, or Canada's development lending arm are plausible candidates given their Bridgetown Initiative alignment) is willing to pilot with a single willing debtor. The institutional risk of this lighter structure is real — without SRC authority, conversion rate methodology is agreed ad hoc rather than set by a legitimate multilateral body — but this risk is preferable to indefinite delay.
+
+Once Treaty ratification is sufficiently advanced to establish the SRC with a functioning secretariat, Phase 1 transitions to full governance. The primary technical task then becomes building the Love Ledger verification architecture to a standard adequate for broader deployment: specifying data standards for Tier 1 national monitoring submissions, accrediting an initial cohort of Tier 2 civil society verifiers, and establishing the SRC technical secretariat's remote sensing and audit capacity. This is estimated to require two to three years of focused effort.
 
 Pilot country selection criteria: significant external debt burden with documented sustainability concerns; existing ecological and social monitoring capacity that can be upgraded rather than built from scratch; strong independent civil society sector; government commitment to SDTP participation at ministerial level; and at least one creditor willing to participate.
 
