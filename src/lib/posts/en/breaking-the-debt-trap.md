@@ -333,8 +333,6 @@ This is not a blueprint to implement. It's a **research inquiry to pursue togeth
 
 The question before us is not whether this specific design is perfect—it's whether we can collectively create economic systems that reward regeneration instead of extraction, cooperation instead of competition, planetary healing instead of destruction.
 
-Join the inquiry at **[globalgovernanceframeworks.org/debt-transformation](https://globalgovernanceframeworks.org/frameworks)**.
-
 ---
 
 ## Explore the Integrated Framework:

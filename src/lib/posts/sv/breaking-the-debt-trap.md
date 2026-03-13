@@ -366,8 +366,6 @@ Detta är inte en färdig ritning att implementera. Det är en **forskningsfråg
 
 Frågan framför oss är inte om denna specifika design är perfekt – det är om vi kollektivt kan skapa ekonomiska system som belönar återuppbyggnad istället för utvinning, samarbete istället för konkurrens, planetär läkning istället för förstörelse.
 
-Anslut dig till undersökningen på **[globalgovernanceframeworks.org/debt-transformation](https://globalgovernanceframeworks.org/frameworks)**.
-
 -----
 
 ## Utforska det integrerade ramverket:
