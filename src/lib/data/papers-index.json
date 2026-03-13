@@ -180,6 +180,39 @@
   },
   {
     "meta": {
+      "title": "The Sovereign Debt Transformation Protocol: From Extraction to Regeneration",
+      "author": "Björn Kenneth Holmström",
+      "date": "2026-03-13",
+      "description": "A framework for converting sovereign debt obligations from claims on extraction into stakes in verified regeneration, using the Hearts and Leaves currency architecture of the Global Governance Frameworks. Addressed to economists, legal scholars, policymakers, Indigenous governance practitioners, and civil society organizations as an open research hypothesis.",
+      "status": "draft",
+      "category": "economics",
+      "version": "0.1",
+      "pages": 80,
+      "readTime": 60,
+      "pdfPath": "/resources/whitepapers/Sovereign_Debt_Transformation_Protocol.pdf",
+      "tags": [
+        "Sovereign Debt",
+        "Regenerative Economics",
+        "Global Governance",
+        "Climate Finance",
+        "Hearts and Leaves",
+        "Ecological Restoration",
+        "Care Economy",
+        "Development Finance"
+      ],
+      "hashtags": [
+        "SovereignDebtTransformation",
+        "RegenerativeEconomics",
+        "DebtJustice",
+        "BridgetownInitiative",
+        "GlobalGovernanceFrameworks"
+      ]
+    },
+    "slug": "sovereign-debt-transformation-protocol",
+    "lang": "en"
+  },
+  {
+    "meta": {
       "title": "The Currency of Care: Why Universal Basic Income Isn't Enough",
       "author": "Björn Kenneth Holmström",
       "date": "2025-08-31",
