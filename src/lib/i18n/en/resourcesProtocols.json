@@ -75,6 +75,66 @@
         "examples": "/resources/cultural-translation-protocol#examples"
       }
     },
+    "adaptiveCoordination": {
+      "title": "Adaptive Coordination Protocol",
+      "subtitle": "Integrative decision-making across competing values and worldviews",
+      "description": "A practical protocol for groups navigating complex decisions where multiple coordination orientations — procedural, strategic, relational, power-based — are in tension. Includes phases for systemic preparation, differentiated input, integration sensing, and conscious decision-mode selection.",
+      "category": "governance",
+      "status": "available",
+      "phases": [
+        {
+          "name": "Systemic Preparation",
+          "duration": "Before meeting",
+          "description": "Stakeholder mapping, coordination mode scanning, and complexity assessment"
+        },
+        {
+          "name": "Contextualize & Gather Input",
+          "duration": "30-60 min",
+          "description": "Question the question, gather differentiated perspectives without requiring agreement"
+        },
+        {
+          "name": "Integration & Decision",
+          "duration": "30-60 min",
+          "description": "Collective sensing, conscious decision-mode selection, and translation for diverse audiences"
+        },
+        {
+          "name": "Close & Iterate",
+          "duration": "15-30 min",
+          "description": "Name what remains unresolved, define feedback signals, schedule review"
+        }
+      ],
+      "principles": [
+        "The group decides how to decide",
+        "Disagreement is information, not threat",
+        "Each orientation sees its values in the structure",
+        "Perceive reality accurately, respond coherently"
+      ],
+      "tools": [
+        "Consent-based decision making",
+        "Advice process",
+        "Polarity management",
+        "Empty chair technique",
+        "Pre-mortem analysis"
+      ],
+      "useCase": "Effective for: Multi-stakeholder governance, cross-departmental coordination, policy deliberation, community planning, and any context where fixed-mode meetings consistently fail.",
+      "complexity": "Intermediate",
+      "prerequisites": [
+        "Minimum psychological safety",
+        "Shared purpose (even loosely held)",
+        "Facilitation capacity",
+        "Willingness to experiment with process"
+      ],
+      "deliverables": [
+        "Adaptive Coordination Protocol",
+        "Appendix: Difficult Questions for Adaptive Coordination"
+      ],
+      "links": {
+        "fullProtocol": "/resources/meeting-protocol",
+        "pdf": "adaptive-coordination-protocol",
+        "appendix": "/resources/meeting-protocol#adaptive-coordination-appendix-questions",
+        "spiralizeEdition": "https://spiralize.org/guides/meeting"
+      }
+    },
     "fpic2": {
       "title": "FPIC 2.0 Protocol",
       "subtitle": "Enhanced Free, Prior, and Informed Consent",

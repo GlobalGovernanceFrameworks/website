@@ -75,6 +75,66 @@
         "examples": "/resources/cultural-translation-protocol#examples"
       }
     },
+    "adaptiveCoordination": {
+      "title": "適応型コーディネーションプロトコル",
+      "subtitle": "競合する価値観と世界観を横断する統合的意思決定",
+      "description": "手続き的、戦略的、関係的、権力ベースなど、複数のコーディネーション志向が緊張状態にある複雑な意思決定を行うグループのための実践的プロトコル。体系的準備、分化したインプット、統合的センシング、意識的な意思決定モード選択のフェーズを含みます。",
+      "category": "governance",
+      "status": "available",
+      "phases": [
+        {
+          "name": "体系的準備",
+          "duration": "会議前",
+          "description": "ステークホルダーマッピング、コーディネーションモードスキャン、複雑性評価"
+        },
+        {
+          "name": "文脈化とインプット収集",
+          "duration": "30-60分",
+          "description": "問いを問い直し、合意を求めずに分化した視点を収集"
+        },
+        {
+          "name": "統合と決定",
+          "duration": "30-60分",
+          "description": "集合的センシング、意識的な意思決定モード選択、多様な対象者への翻訳"
+        },
+        {
+          "name": "終了と反復",
+          "duration": "15-30分",
+          "description": "未解決事項の明示、フィードバックシグナルの定義、レビューの予定"
+        }
+      ],
+      "principles": [
+        "グループが決定方法を決定する",
+        "不一致は脅威ではなく情報である",
+        "各志向がその価値を構造の中に見出す",
+        "現実を正確に認識し、一貫して応答する"
+      ],
+      "tools": [
+        "同意ベースの意思決定",
+        "助言プロセス",
+        "極性管理",
+        "空席テクニック",
+        "事前検死分析"
+      ],
+      "useCase": "効果的：マルチステークホルダーガバナンス、部門横断的コーディネーション、政策審議、コミュニティ計画、固定モードの会議が一貫して失敗するあらゆるコンテキスト。",
+      "complexity": "中級",
+      "prerequisites": [
+        "最低限の心理的安全性",
+        "共有された目的（緩やかでも可）",
+        "ファシリテーション能力",
+        "プロセスを実験する意欲"
+      ],
+      "deliverables": [
+        "適応型コーディネーションプロトコル",
+        "付録：適応型コーディネーションのための困難な質問"
+      ],
+      "links": {
+        "fullProtocol": "/resources/meeting-protocol",
+        "pdf": "adaptive-coordination-protocol",
+        "appendix": "/resources/meeting-protocol#adaptive-coordination-appendix-questions",
+        "spiralizeEdition": "https://spiralize.org/guides/meeting"
+      }
+    },
     "fpic2": {
       "title": "FPIC 2.0プロトコル",
       "subtitle": "強化された自由意思による事前の十分な情報に基づく同意",

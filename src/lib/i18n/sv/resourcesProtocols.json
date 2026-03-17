@@ -75,6 +75,66 @@
         "examples": "/resources/cultural-translation-protocol#examples"
       }
     },
+    "adaptiveCoordination": {
+      "title": "Protokoll för adaptiv koordinering",
+      "subtitle": "Integrativt beslutsfattande över konkurrerande värderingar och världsbilder",
+      "description": "Ett praktiskt protokoll för grupper som navigerar komplexa beslut där flera koordineringsorienteringar — proceduriella, strategiska, relationella, maktbaserade — står i spänning. Inkluderar faser för systemisk förberedelse, differentierad input, integrationskännande och medvetet val av beslutsmetod.",
+      "category": "governance",
+      "status": "available",
+      "phases": [
+        {
+          "name": "Systemisk förberedelse",
+          "duration": "Före mötet",
+          "description": "Intressentkartläggning, scanning av koordineringssätt och komplexitetsbedömning"
+        },
+        {
+          "name": "Kontextualisera och samla input",
+          "duration": "30-60 min",
+          "description": "Ifrågasätt frågan, samla differentierade perspektiv utan att kräva enighet"
+        },
+        {
+          "name": "Integration och beslut",
+          "duration": "30-60 min",
+          "description": "Kollektivt kännande, medvetet val av beslutsmetod och översättning för olika målgrupper"
+        },
+        {
+          "name": "Avslutning och iteration",
+          "duration": "15-30 min",
+          "description": "Namnge det som är olöst, definiera feedbacksignaler, schemalägg uppföljning"
+        }
+      ],
+      "principles": [
+        "Gruppen beslutar hur den beslutar",
+        "Oenighet är information, inte hot",
+        "Varje orientering ser sina värderingar i strukturen",
+        "Uppfatta verkligheten korrekt, svara sammanhängande"
+      ],
+      "tools": [
+        "Samtyckesbaserat beslutsfattande",
+        "Rådgivningsprocessen",
+        "Polaritetshantering",
+        "Tomma stolen-tekniken",
+        "Förhandsanalys av misslyckande"
+      ],
+      "useCase": "Effektivt för: Styrning med flera intressenter, tvärfunktionell koordinering, policyöverväganden, samhällsplanering och alla sammanhang där möten med fast beslutsmetod konsekvent misslyckas.",
+      "complexity": "Medel",
+      "prerequisites": [
+        "Minimum av psykologisk trygghet",
+        "Delat syfte (även löst hållet)",
+        "Faciliteringskapacitet",
+        "Vilja att experimentera med process"
+      ],
+      "deliverables": [
+        "Protokoll för adaptiv koordinering",
+        "Bilaga: Svåra frågor för adaptiv koordinering"
+      ],
+      "links": {
+        "fullProtocol": "/resources/meeting-protocol",
+        "pdf": "adaptive-coordination-protocol",
+        "appendix": "/resources/meeting-protocol#adaptive-coordination-appendix-questions",
+        "spiralizeEdition": "https://spiralize.org/guides/meeting"
+      }
+    },
     "fpic2": {
       "title": "FPIC 2.0-protokollet",
       "subtitle": "Förbättrat fritt, föregående och informerat samtycke",
