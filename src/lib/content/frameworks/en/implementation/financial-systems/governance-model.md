@@ -16,6 +16,7 @@ section: governance-model
 - [Community Weaver Networks: Democratic Infrastructure](#community-weaver-networks)
 - [Digital Justice Tribunal: Conflict Resolution and Restorative Justice](#digital-justice-tribunal)
 - [AUBI Integration and Shared Governance](#aubi-integration-shared-governance)
+- [Capture Resistance and System Integrity](#capture-resistance-system-integrity)
 - [Crisis Governance and Emergency Protocols](#crisis-governance-emergency)
 - [Democratic Innovation and Participatory Decision-Making](#democratic-innovation-participatory)
 
@@ -330,6 +331,20 @@ The Fractal Labor Parliament operates as a specialized Meta-Governance Coordinat
 - **Transparent governance**: Both bodies practice transparent decision-making with public documentation and reasoning
 - **Conflict resolution**: Coordinated approach to resolving conflicts between work standards and community economic policies
 - **Learning integration**: Shared learning from community experience improving both work standards and economic governance
+
+### Slow-Variable Decision Protocol
+
+Certain financial system parameters affect long-term trajectories in ways that are difficult to reverse once implemented. These decisions require enhanced governance safeguards beyond standard Social Resilience Council authority.
+
+**Qualifying Decisions (Slow-Variable Decision Changes)**: The following changes qualify as SVDCs under the AUBI Framework §4.3 and require the enhanced governance pathway described below:
+- Leaves valuation formula changes affecting the ecological restoration incentive structure
+- Carbon sequestration threshold adjustments that alter which restoration activities qualify for Leaves issuance
+- Any Hearts Treasury reserve ratio change that alters the long-term fiat dependency trajectory of the Hearts economy
+- Modifications to the Inter-Currency Translation Layer methodology that affect cross-BAZ economic relationships (classified as Tier B changes under the ICTL governance framework)
+
+**LEKH Quorum Requirement**: All SVDCs require sign-off from the Local Ecological Knowledge Holders (LEKH) quorum before the Social Resilience Council may implement them. The LEKH quorum ensures that traditional ecological knowledge and long-term environmental understanding inform decisions with multi-generational consequences.
+
+**FLP Proposal Authority**: The Fractal Labor Parliament may propose SVDC changes through its standard valuation-setting processes, but may not ratify them independently. Ratification requires both Social Resilience Council approval and LEKH quorum sign-off, ensuring that labor valuation changes with slow-variable characteristics receive appropriate ecological and community review.
 
 ## <a id="indigenous-leadership-earth-council"></a>Indigenous Leadership and Earth Council Authority
 
@@ -719,6 +734,30 @@ Hearts and Leaves systems integrate with the AUBI Framework through shared gover
 - **Training coordination**: Coordinated Community Weaver training serving both frameworks efficiently
 - **Research collaboration**: Shared research and evaluation while maintaining framework-specific focus
 - **Movement building**: Coordinated movement building for economic transformation and community empowerment
+
+## <a id="capture-resistance-system-integrity"></a>Capture Resistance and System Integrity
+
+Hearts and Leaves governance includes dedicated mechanisms to ensure financial systems cannot be co-opted by concentrations of power that reintroduce extractive dynamics, even when such changes are presented as efficiency improvements or pragmatic adaptations.
+
+### Anti-Capture Mechanisms
+
+**Distributed Redemption Authority**: No single entity controls Hearts convertibility. Fiat redemption is processed through a federated network of Hearts Treasury partnerships with credit unions rather than a centralized clearinghouse, ensuring that no single institutional failure or policy decision can halt community access to their earned value.
+
+**Transparent Algorithm Governance**: All exchange rate mechanisms, validation algorithms, and issuance protocols are publicly auditable. Algorithm changes require Social Resilience Council approval with community assembly input, preventing technical opacity from becoming a vector for policy capture.
+
+**Community Veto Power**: Participants can block changes that reintroduce extractive patterns through a structured petition process. If 15% or more of active participants in a BAZ sign a petition within 30 days of a proposed governance change, the change is suspended pending community assembly deliberation and democratic vote.
+
+### Early Detection and Pattern Monitoring
+
+**AI-Assisted Pattern Recognition**: Machine learning systems monitor governance proposals and system behavior for indicators of extractive pattern reemergence:
+- Scarcity language appearing in governance proposals or policy recommendations
+- Proposals to means-test Hearts distributions or create contribution hierarchies based on productivity metrics
+- Concentration patterns in Hearts accumulation or redemption that suggest gaming or capture
+- Declining participation rates correlated with specific policy changes
+
+**Community Weaver Reporting**: Community Weavers maintain dedicated reporting channels for qualitative signals that automated systems may miss — community members reporting that "this feels like the old system" or expressing anxiety about changes that reintroduce competitive dynamics. These reports feed into Social Resilience Council review cycles.
+
+**Regular System Audits**: Quarterly audits assess whether Hearts and Leaves reward systems maintain their focus on care and ecological restoration rather than drifting toward productivity surveillance or performance measurement. Audit criteria include verification that no worth-shame programming has been introduced into validation protocols and that all value recognition traces to genuine human or ecological flourishing.
 
 ## <a id="crisis-governance-emergency"></a>Crisis Governance and Emergency Protocols
 

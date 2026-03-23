@@ -620,6 +620,34 @@ The Inter-Currency Translation Layer enables seamless value exchange between Hea
 - **Fractal Labor Parliament standards**: FLP provides valuation standards for Hearts and Leaves while maintaining community adaptation
 - **Indigenous authority**: Earth Council maintains authority over translation affecting Indigenous communities and traditional knowledge
 
+### Change Classification and Governance Pathways
+
+The Inter-Currency Translation Layer is the primary point where local economic variety is compressed for cross-BAZ interoperability — its governance is therefore a critical aggregation risk point. Changes to the ICTL are classified into two tiers with different governance pathways to keep that compression minimally distorting and democratically accountable.
+
+**Tier A — Routine Adjustments** (SRC + FLP authority, quarterly cadence, no notice window required):
+- Rate changes within pre-approved annual bands (see below)
+- Seasonal or regional weighting adjustments within established formulas
+- Technical parameter updates (rounding rules, precision thresholds, API versioning)
+
+**Tier B — Structural Changes** (requires full notice-and-response protocol with community input periods):
+- Revisions to the band ceilings or floors themselves
+- Addition or removal of currency categories eligible for translation
+- Methodology changes to how LMCI-M data feeds exchange rate algorithms
+- Changes to volume caps, capital controls, or circuit breaker thresholds
+- Any change that affects the Green Job Score multiplier range or Leaves-to-Hearts conversion rationale
+- Sovereign Debt Transformation Protocol conversion rate methodology
+
+**Classification Disputes**: When the SRC and FLP disagree on classification, the Earth Council adjudicates within 14 days. BAZ Councils may petition for Tier B reclassification of any proposed Tier A change within 30 days of announcement; if 15% or more of active BAZs petition, the change is automatically reclassified to Tier B.
+
+### Pre-Approved Rate Bands
+
+The Social Resilience Council sets rate bands annually, published on the public dashboard at the start of each calendar year. Quarterly Tier A adjustments must remain within these bands. The following band structure is illustrative and will be set by the SRC at system launch:
+
+- **Hearts/fiat exchange rate**: Adjustable ±15% from annual baseline
+- **Green Job Score multiplier**: 1.0x–1.5x, adjustable within this range
+- **Care-act Hearts conversion**: Adjustable ±20% from annual baseline
+- **Leaves/Hearts conversion**: Adjustable ±25% from annual baseline (wider band reflecting ecological variability and seasonal restoration cycles)
+
 **Cultural Weighting Integration**: Translation algorithms incorporate cultural context recognizing diverse value systems:
 - **Community priority adjustment**: Exchange rates reflect local priorities for care work, ecological restoration, and community development
 - **Cultural value recognition**: Traditional knowledge, spiritual practices, and cultural preservation receive appropriate valuation

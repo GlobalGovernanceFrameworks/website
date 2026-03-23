@@ -580,6 +580,55 @@ Failure Analysis:
       - Anti-appropriation legal protections
 ```
 
+**Scenario 4: Extractive Pattern Reemergence**
+
+```yaml
+Failure Analysis:
+  Trigger: Community pressure to reinstitute productivity-based worth measurement or artificial scarcity mechanisms "for efficiency" or "sustainability"
+  Root Causes:
+    - Internalized scarcity conditioning from prior economic systems
+    - External pressure from traditional finance integration partners
+    - Well-intentioned efficiency proposals that inadvertently recreate extraction
+    - Political actors leveraging familiar economic narratives
+    
+  Leading Indicators:
+    - Proposals to means-test Hearts distributions or create contribution hierarchies
+    - Language shift toward "earned" vs "unearned" Hearts in governance discussions
+    - Declining community satisfaction correlated with productivity framing in validation
+    - Community Weaver reports of participants expressing shame about contribution levels
+    
+  Impact Assessment:
+    - Return to shame-based motivation undermining system purpose
+    - Anxiety metric increase: 25% among affected participants
+    - Community trust erosion: 30% decline in voluntary participation
+    - System legitimacy damage: core philosophical foundation compromised
+    
+  Response Protocol:
+    Immediate (0-48 hours):
+      - Social Resilience Council activates capture resistance protocols
+      - Proposed changes frozen pending community review
+      - Community Weavers conduct wellbeing check-ins in affected communities
+      - Public communication clarifying framework principles
+    
+    Medium-term (1-8 weeks):
+      - Facilitated community dialogue on why extractive patterns feel "comfortable" despite harm
+      - Historical pattern education: documented failures of productivity-based alternative currencies
+      - Community assembly deliberation with explicit framing of what is at stake
+      - Independent audit of whether existing validation has drifted toward performance measurement
+    
+    Long-term (3-12 months):
+      - Strengthen AUBI Layer 1 foundation to reduce scarcity fears driving the proposals
+      - Enhanced Community Weaver training on recognizing and addressing internalized extraction narratives
+      - Governance protocol review ensuring structural safeguards against future reemergence
+      - Regular community sentiment monitoring for shame/worth anxiety indicators
+      
+  Success Metrics:
+    - 0% adoption of productivity-based worth measurement in any BAZ
+    - 95%+ participant agreement with "my contributions have inherent worth regardless of quantity"
+    - Restoration of pre-incident anxiety metrics within 6 months
+    - Governance proposal language audit showing no scarcity framing
+```
+
 ### Stress Testing Framework
 
 **Annual War Games**: Comprehensive resilience testing with 100+ participants

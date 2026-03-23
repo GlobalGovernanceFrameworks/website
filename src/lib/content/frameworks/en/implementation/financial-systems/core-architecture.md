@@ -157,6 +157,8 @@ The Love Ledger serves as shared technological infrastructure for both Hearts/Le
 - **Community control**: Consensus authority distributed among community-controlled nodes rather than concentrated mining
 - **Cultural accommodation**: Consensus processes accommodate traditional decision-making and ceremonial timing
 
+> **Implementation Note**: The distributed infrastructure described above represents the Phase 2 target state of the Bridge Protocol. Phase 1 (2026–2027) utilizes trusted-node consensus with social verification to bootstrap transaction velocity and community habit formation. Cryptographic decentralization is deployed only after network density exceeds the thresholds where social pressure alone is insufficient to prevent fraud. All Phase 1 data schemas are forward-compatible with Phase 2 infrastructure, enabling seamless migration. See the [Implementation Roadmap](/frameworks/financial-systems#implementation-roadmap) for the full Bridge Protocol specification.
+
 ### Privacy Protection and Community Data Sovereignty
 
 **Zero-Knowledge Verification Protocols**: Love Ledger verifies transactions without exposing private information:

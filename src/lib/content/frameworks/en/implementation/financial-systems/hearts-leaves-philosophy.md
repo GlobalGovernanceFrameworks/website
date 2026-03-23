@@ -10,6 +10,7 @@ section: hearts-leaves-philosophy
 
 **In this section:**
 - [The Sacred Foundation: From Extraction to Right Relationship](#sacred-foundation)
+- [Financial Systems as Mental Health Infrastructure](#mental-health-infrastructure)
 - [Care as Currency: Making Love Visible Through Technology](#care-as-currency)
 - [Ecological Restoration as Wealth Creation Through Verification](#ecological-restoration-wealth)
 - [The Gift Economy Renaissance Through Technical Infrastructure](#gift-economy-renaissance)
@@ -61,6 +62,31 @@ At the deepest level, Hearts and Leaves currencies represent a fundamental philo
 **Interest as Community Investment Through Hearts Treasury**: Rather than interest payments extracting wealth from borrowers to lenders through automated debt collection, Hearts systems invest interest in community development projects through Hearts Treasury mechanisms that benefit everyone through democratic governance. Surplus value returns to community through automated distribution rather than accumulating among creditors through compound interest algorithms.
 
 **Time as Sacred Circle Through Ceremonial Integration**: Right Relationship economics operates through ceremonial time that honors natural cycles through seasonal algorithms rather than mechanical time that treats all moments as identical through optimization systems. Economic rhythms align with seasonal cycles, life stage transitions, and community celebrations through cultural calendar integration rather than just efficiency optimization through productivity algorithms.
+
+## <a id="mental-health-infrastructure"></a>Financial Systems as Mental Health Infrastructure
+
+Financial systems are not psychologically neutral. Systems that generate unpredictable scarcity, obscure their rules, or measure human worth through productivity metrics create chronic anxiety, shame, and disconnection — outcomes that conventional economics treats as externalities but that Hearts and Leaves recognize as design failures requiring architectural solutions.
+
+### Anxiety Reduction Through System Design
+
+**Predictable Economic Security**: AUBI-backed Hearts eliminate the survival anxiety that dominates life under scarcity-based systems. When basic needs are guaranteed through Layer 1 universal provision, participants can engage in care work, ecological restoration, and community building without the cognitive burden of financial precarity. This is not incidental — it is a core design requirement. Financial systems that generate chronic survival anxiety are broken systems regardless of their macroeconomic performance.
+
+**Transparent Value Flows**: Blockchain-verified transaction histories and publicly auditable exchange rate algorithms prevent the "hidden rules" dynamic that causes systemic distrust. When participants can trace how Hearts are issued, how exchange rates are set, and how governance decisions are made, the system becomes legible in ways that traditional finance deliberately obscures. Transparency is mental health infrastructure.
+
+**Meaning Alignment**: All financial activities within the Hearts ecosystem must connect to genuine human or ecological benefit — care provided, relationships strengthened, ecosystems restored. This alignment between economic activity and felt meaning addresses the existential disconnection that arises when people spend their working lives on activities they experience as pointless or harmful, a phenomenon that conventional economics has no framework for even recognizing as a problem.
+
+### Worth Without Shame
+
+**Contribution Without Hierarchy**: Hearts validation recognizes diverse forms of contribution without ranking them into productivity hierarchies. Childcare, elder companionship, community organizing, artistic expression, and ecological restoration are all validated as genuine contributions without requiring participants to prove their worth through competitive output metrics. The Love Ledger tracks what people give, not how they rank.
+
+**Unconditional Foundation**: AUBI Layer 1 provides economic security that is not contingent on contribution assessment, ensuring that Hearts Layer 2 recognition operates as genuine appreciation rather than performance-based compensation. This separation prevents the care economy from replicating the anxiety dynamics of wage labor where income depends on employer evaluation of productivity.
+
+### Measuring What Matters
+
+Financial systems designed as mental health infrastructure require corresponding metrics:
+- **Financial anxiety reduction**: Target 30% reduction in financial-system-related anxiety within pilot communities, measured through validated psychological instruments adapted to cultural contexts
+- **System coherence**: Target 95% participant agreement that "the financial system makes sense in relation to my values," measuring the alignment between economic design and lived moral experience
+- **Worth security**: Qualitative assessment that participants experience their contributions as inherently valued rather than conditionally tolerated, tracked through Community Weaver wellbeing check-ins and community sentiment analysis
 
 ## <a id="care-as-currency"></a>Care as Currency: Making Love Visible Through Technology
 
@@ -324,6 +350,16 @@ Hearts and Leaves systems operate through comprehensive prosperity measurement t
 **Cultural Protocol Integration Through Traditional Validation**: LMCI measurement incorporates traditional knowledge systems and ceremonial validation through cultural protocol systems rather than just scientific metrics imposed through academic measurement. Indigenous communities use traditional indicators alongside contemporary measurement while maintaining sovereignty over knowledge systems through community-controlled validation.
 
 **Love Ledger Integration Through Blockchain Analytics**: LMCI data collection integrates with Hearts and Leaves transaction tracking through Love Ledger platform while protecting privacy through zero-knowledge proofs and ensuring community control over prosperity measurement and data ownership through democratic governance over analytics and measurement systems.
+
+### LMCI Signal Architecture: Fiscal Policy vs. Contribution Scoring
+
+The LMCI serves two distinct functions within the financial system, and these functions are deliberately separated at the infrastructure level to prevent gaming and circular dependency.
+
+**LMCI-M (Macro Signal)**: The LMCI signal used for fiscal policy decisions — Hearts Treasury reserve adjustments, Inter-Currency Translation Layer rate band calibration, and Social Resilience Council economic assessments — is sourced from community-level wellbeing surveys, ecological monitoring, and aggregate social cohesion data. This signal is independent of individual contribution tracking and cannot be influenced by individual participant behavior.
+
+**LMCI-A (Assessment Signal)**: The LMCI signal used for individual contribution scoring — AUBI Layer 2 bonus calculations, Community Weaver validation weighting, and care-act Hearts conversion — is sourced from the Love Ledger transaction pipeline, Community Weaver assessments, and peer validation. This signal tracks individual and community-level contributions but does not feed back into the fiscal policy pipeline.
+
+**Architectural Separation Rationale**: If the same signal were used for both functions, participants could game their individual LMCI-A scores to influence the macro LMCI-M signal, creating a feedback loop where contribution scoring drives fiscal policy which in turn creates incentives for further score manipulation. The separation ensures that community wellbeing measurement remains independent of the incentive structures it informs. See AUBI Framework §2.3 for the full architectural specification.
 
 ### LMCI as Policy Alternative Through Technical Implementation
 

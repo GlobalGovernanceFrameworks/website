@@ -10,7 +10,8 @@ section: implementation-roadmap
 
 **In this section:**
 - [Implementation Philosophy: Start Small, Think Planetary](#implementation-philosophy)
-- [Hearts Economy Foundation: Technical Infrastructure First](#hearts-economy-foundation)
+- [The Bridge Protocol: From Social Trust to Cryptographic Sovereignty](#bridge-protocol)
+- [Hearts Economy Foundation: Target Infrastructure](#hearts-economy-foundation)
 - [Pilot Phase: Proving the Model (Years 1-3)](#pilot-phase-proving-model)
 - [Regional Phase: Bioregional Integration (Years 4-7)](#regional-phase-bioregional)
 - [Global Phase: Planetary Coordination (Years 8-15)](#global-phase-planetary)
@@ -28,9 +29,9 @@ section: implementation-roadmap
 
 Hearts and Leaves implementation operates through principles that enable communities to begin with solid technical foundations while building toward transformation that addresses planetary challenges requiring coordination across scales.
 
-### Technical Foundation First: No Compromise on Infrastructure
+### Technical Foundation First: No Compromise on Design
 
-**Robust Blockchain Architecture**: Communities begin Hearts implementation using proven Hyperledger Fabric infrastructure with Indigenous-controlled nodes, ensuring technical reliability from day one rather than scaling from spreadsheets to eventual blockchain integration.
+**Forward-Compatible Architecture from Day One**: Communities begin Hearts implementation using a two-phase Bridge Protocol (detailed below) that treats social trust as the bootstrapping mechanism for cryptographic sovereignty. Phase 1 uses lightweight trusted-node infrastructure optimized for user experience and habit formation, while Phase 2 migrates to distributed ledger technology once network density demands it. Critically, all data schemas in Phase 1 are designed for forward compatibility—every transaction recorded in the initial phase contains the metadata required for retroactive validation on the decentralized infrastructure.
 
 **Banking Integration From Start**: Hearts systems launch with established banking partnerships through credit unions and progressive financial institutions, enabling immediate fiat conversion through the Hearts Treasury mechanism rather than operating in isolation from traditional finance.
 
@@ -68,11 +69,62 @@ Hearts and Leaves implementation operates through principles that enable communi
 
 **Movement Integration Coordination**: Hearts implementation coordinates with climate action, Indigenous sovereignty, democratic innovation, and planetary health initiatives through Meta-Governance Framework protocols rather than operating in isolation from other necessary transformations.
 
-## <a id="hearts-economy-foundation"></a>Hearts Economy Foundation: Technical Infrastructure First
+## <a id="bridge-protocol"></a>The Bridge Protocol: From Social Trust to Cryptographic Sovereignty
+
+To avoid the cold start problem that has historically undermined alternative currency projects, the Financial Systems Framework uses a two-phase Bridge Protocol. Rather than imposing heavy cryptographic overhead on a fragile nascent network, the protocol treats **social trust** as the bootstrapping mechanism for **cryptographic trust**. The core insight is architectural: we do not build the heavy rail until the commuter traffic demands it.
+
+### Phase 1: The Ledger of Action (2026–2027)
+
+**Objective**: Maximize transaction velocity and habit formation within pilot communities.
+
+**Technology**: Trusted-node architecture using lightweight, centralized infrastructure (e.g., Firebase-class systems deployed at the community pilot level). This reduces onboarding friction to near zero while generating the raw transactional data of the care economy.
+
+**Consensus Mechanism**: Social verification. Transactions are validated by neighbor-to-neighbor acknowledgment rather than distributed consensus algorithms. In a localized pilot context—particularly crisis-preparedness or mutual aid scenarios—the cost of fraud is high (social accountability within a known community), while the cost of technical friction is fatal to adoption. Phase 1 therefore optimizes entirely for user experience.
+
+**Forward-Compatible Data Design**: Data schemas in Phase 1 are designed for full compatibility with Phase 2 distributed infrastructure. A care transaction recorded in the trusted-node pilot (such as snow shoveling, childcare, or elder check-ins) includes the specific metadata fields—`timestamp`, `geohash`, `category`, `validator_id`—required to be retroactively minted as a valid block in the Phase 2 ledger. No transaction data is lost or degraded during migration.
+
+**Community Weaver Role**: Community Weavers serve as the primary validation layer during Phase 1, performing cultural sincerity assessments and contribution verification that complement the social verification consensus. Their validation records become part of the forward-compatible transaction metadata.
+
+### Phase 2: The Ledger of Record (2027+)
+
+**Objective**: Maximize sovereignty, interoperability, and resistance to capture.
+
+**Technology**: Distributed ledger technology (Hyperledger Fabric or agent-centric alternatives such as Holochain), deployed as the target infrastructure once network density and transaction volume warrant the transition from trusted-node consensus.
+
+**Consensus Mechanism**: Agent-centric or Byzantine Fault Tolerant validation, replacing social verification once the network exceeds the threshold where social pressure alone is insufficient to prevent fraud—roughly the point where transaction relationships extend beyond direct community acquaintance.
+
+**Migration Protocol**: Participants undergo a structured migration process in which their Phase 1 reputation score and transaction history are cryptographically signed and transferred to a Self-Sovereign Identity (SSI) wallet. This transition formalizes the trust that was socially established during Phase 1 into portable, verifiable credentials that operate across Bioregional Autonomous Zones.
+
+**Infrastructure Scaling**: Full Hyperledger Fabric deployment with Indigenous-controlled nodes, post-quantum cryptography, and the complete Love Ledger platform as specified in the [Core Architecture](/frameworks/financial-systems#core-architecture) and [Technical Infrastructure](/frameworks/financial-systems#technical-infrastructure) sections.
+
+> **Architectural Principle**: This sequential approach ensures that the financial system is grounded in actual human utility rather than speculative engineering. Phase 1 generates demonstrated demand; Phase 2 provides the sovereignty infrastructure to protect it.
+
+### The Heartstarter Program: Seed Capital for Community Economies
+
+Heartstarter is the seed-capital matching mechanism that makes the transition from community interest to operational Hearts economy viable without requiring communities to self-capitalize from nothing. It provides the financial bridge between Phase 1 pilot engagement and Phase 2 economic sovereignty.
+
+**Matching Mechanics**:
+- For each unit of fiat, grant, or verified in-kind contribution deposited into a BAZ Proto-Treasury, the Global Commons Fund provides a **1:1 match in fiat**, credited directly to the Proto-Treasury reserve
+- **Match ceiling**: Equivalent of 6 months of projected Layer 1 AUBI payments for the BAZ's initial enrolled population, capped at $250,000 USD equivalent per BAZ in Phase 1
+- **Two-tranche release**: 50% released on Phase 1 entry (confirming community commitment), 50% on Phase 2 entry (confirming the first tranche was used for genuine reserve-building rather than extraction)
+
+**Reserve Ratio Enforcement**:
+- The **30% minimum reserve ratio** (fiat-to-outstanding-Hearts) is a hard floor, not a target. If reserves fall below 30% for any reason, new Hearts issuance is automatically suspended until the ratio is restored. This enforcement is built into the Hearts Treasury protocol, not subject to governance discretion
+- The Social Resilience Council may temporarily lower the floor to 20% during a declared economic crisis, for a maximum of 90 days, with mandatory public reporting
+
+**Match Pool Management**:
+- The Heartstarter match pool is a dedicated, ring-fenced allocation within the Global Commons Fund, sized annually by the Social Resilience Council based on the number of BAZs in Phases 1–2
+- If the match pool is exhausted, new BAZ applications are queued in order of pilot site selection score (see [Community Readiness Assessment](#community-readiness-site-selection)) rather than first-come-first-served, preventing geographic concentration in high-capacity regions
+
+**Exit from Heartstarter Dependency**:
+- By Phase 2 graduation, a BAZ should be funding Hearts issuance primarily through local economic activity (automation taxes, resource levies, Community Provider fee flows) rather than Global Commons Fund match
+- The Social Resilience Council monitors the ratio of GCF-sourced to locally-sourced Hearts reserves and flags BAZs that remain more than 50% GCF-dependent 24 months post-formalization, triggering a collaborative review of economic sustainability and community development strategy
+
+## <a id="hearts-economy-foundation"></a>Hearts Economy Foundation: Target Infrastructure
 
 *For comprehensive guidance on grassroots implementation pathways, including Minimum Viable Hearts Economy approaches using spreadsheets and SMS systems, refer to the **AUBI Framework v5.0** Implementation Sequencing section.*
 
-The Hearts Economy Foundation prioritizes robust technical infrastructure enabling immediate community participation while building toward planetary-scale coordination through proven technologies and established partnerships.
+The following infrastructure represents the Phase 2 target state that communities build toward through the Bridge Protocol. Phase 1 pilots operate on trusted-node architecture with forward-compatible data schemas; the enterprise infrastructure described here is deployed as network density and transaction volume cross the thresholds requiring distributed consensus and cryptographic sovereignty.
 
 ### Core Technical Infrastructure
 
@@ -130,23 +182,26 @@ The pilot phase establishes Hearts and Leaves systems in diverse communities whi
 
 ### Technical Infrastructure Deployment
 
-**Year 1: Foundation Systems**
-- Hyperledger Fabric deployment with 20 Indigenous-controlled nodes across North America, ensuring community data sovereignty and technical reliability from initial launch
-- Love Ledger platform supporting 1,000 active users with mobile app deployment including offline functionality and accessibility features for universal participation
+**Year 1: Phase 1 — Trusted-Node Deployment and Habit Formation**
+- Trusted-node architecture deployment across 5 pilot communities using lightweight infrastructure optimized for rapid onboarding, with forward-compatible data schemas ensuring all transaction metadata is ready for Phase 2 migration
+- Mobile-first access systems supporting 1,000 active users with offline functionality, SMS fallback for feature phones, and accessibility features for universal participation
 - Hearts Treasury establishment through 5 credit union partnerships providing immediate fiat redemption and banking integration for pilot communities
-- Community Weaver training graduation of 50 certified facilitators specializing in Indigenous protocols, conflict resolution, and cultural adaptation
+- Community Weaver training graduation of 50 certified facilitators specializing in social verification protocols, Indigenous protocols, conflict resolution, and cultural adaptation
+- Heartstarter matching deployed for initial BAZ Proto-Treasuries with 1:1 Global Commons Fund capitalization
 
-**Year 2: Scaling and Coordination**
-- Network expansion to 100 Indigenous-controlled nodes supporting 5,000 active users across diverse bioregional contexts
+**Year 2: Phase 2 Transition — Distributed Infrastructure**
+- Migration from trusted-node to distributed ledger infrastructure (Hyperledger Fabric with Indigenous-controlled nodes) for communities exceeding social verification thresholds, including participant SSI wallet provisioning and cryptographic signing of Phase 1 reputation scores
+- Network scaling to 100 Indigenous-controlled nodes supporting 5,000 active users across diverse bioregional contexts
 - Inter-Currency Translation Layer deployment enabling seamless Hearts exchange with traditional currencies and other value systems
 - Leaves NFT system launch for ecological restoration verification with GPS metadata and traditional knowledge integration
 - AUBI Framework integration providing Layer 2 Hearts bonuses coordinated with universal basic income pilot programs
 
-**Year 3: Regional Networks and Validation**
+**Year 3: Phase 2 Maturation — Regional Networks and Validation**
 - Bioregional Hearts networks connecting 20 pilot communities across watershed boundaries while respecting Indigenous territorial sovereignty
 - AI-assisted fraud detection and system optimization through Meta-Framework Learning System deployment
 - Banking API integration enabling Hearts acceptance by 100 local businesses and cooperative enterprises
 - International coordination protocols with similar community currency initiatives and solidarity economy networks
+- Heartstarter exit assessment: Social Resilience Council reviews GCF dependency ratios for Phase 1 cohort BAZs
 
 ### Community Development and Impact
 

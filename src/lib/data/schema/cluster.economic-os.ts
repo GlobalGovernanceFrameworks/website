@@ -46,7 +46,7 @@ export const economicOSEntities: GgfEntity[] = [
     shortName: 'Financial Systems',
     description: 'Post-capitalist financial architecture supporting regenerative economy',
     tier: 1,
-    status: 'Review',
+    status: 'Ready',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -54,6 +54,7 @@ export const economicOSEntities: GgfEntity[] = [
       path: '/frameworks/financial-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.financialSystems',
       emoji: '❤️',
+      version: '3.3',
       slug: 'financial-systems',
       group: 'globalEconomicSystems'
     }
