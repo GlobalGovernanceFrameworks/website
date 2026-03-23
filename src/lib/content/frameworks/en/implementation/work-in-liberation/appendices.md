@@ -111,15 +111,15 @@ Appendix E serves as the definitive reference for framework terminology, ensurin
 
 **Core Components for Minimum Viable Implementation**:
 1. **AUBI Layer 1 Pilot**: $500-800/month baseline (adjusted for local costs)
-2. **Community Work Teams**: 5-10 teams addressing local priorities
+2. **Community Providers**: 5-10 teams addressing local priorities
 3. **Love Ledger**: Simple blockchain or paper-based contribution tracking
 4. **Hearts/Leaves Currency**: Local circulation with basic exchange mechanisms
-5. **Flexible Time Agreements**: 25-hour maximum workweek in participating organizations
+5. **Flexible Time Agreements**: 15-hour weekly contribution cap in participating organizations
 6. **Green Job Score**: Basic ecological impact assessment for restoration work
 7. **Community Weavers**: 10-20 trained facilitators for team coordination
 
 **Success Metrics for Minimum Viable Scale**:
-- 20% community participation in Community Work Teams within 18 months
+- 20% community participation in Community Providers within 18 months
 - 15% improvement in Love, Meaning, and Connection Index (LMCI) scores
 - 10% increase in ecological restoration activities
 - 5% reduction in local inequality (Gini coefficient)
@@ -142,7 +142,7 @@ Appendix E serves as the definitive reference for framework terminology, ensurin
 - **ESG Leadership Recognition**: Public recognition for early adopters of Work in Liberation principles
 
 **Anti-Capture Safeguards**:
-- **Community Ownership Requirements**: Worker cooperatives for Community Work Team contracts
+- **Community Ownership Requirements**: Worker cooperatives for Community Provider contracts
 - **Indigenous Veto Authority**: BAZ councils can reject corporate partnerships
 - **Democratic Oversight**: Community assemblies approve all business integration
 - **Real-time Monitoring**: Justice OS tracks corporate compliance with labor standards
@@ -165,7 +165,7 @@ Appendix E serves as the definitive reference for framework terminology, ensurin
 - **Indigenous Rights Framework**: International law protection for traditional governance
 - **Human Rights Integration**: Work liberation as fundamental human right
 - **Climate Lawsuit Strategy**: Legal challenges to government inaction on ecological crisis
-- **Sanctuary Policies**: Legal protection for Community Work Teams and alternative currencies
+- **Sanctuary Policies**: Legal protection for Community Providers and alternative currencies
 
 ### Cultural and Ideological Resistance
 
@@ -182,7 +182,7 @@ Appendix E serves as the definitive reference for framework terminology, ensurin
 - **Stewardship Theology**: Connect ecological restoration work with religious environmental teachings
 
 **Counter-Narrative Development**:
-- **Success Stories**: Document personal transformation narratives from Community Work Team participants
+- **Success Stories**: Document personal transformation narratives from Community Provider participants
 - **Economic Security Messaging**: Frame AUBI as freedom and dignity rather than welfare dependency
 - **Community Strength Focus**: Emphasize local resilience and self-determination rather than government dependence
 - **Innovation and Creativity**: Highlight how liberation from survival work enables human potential
@@ -219,7 +219,7 @@ Appendix E serves as the definitive reference for framework terminology, ensurin
 
 **Policy Harmonization Approaches**:
 - **Municipal Networks**: Cities adopt compatible policies for AUBI, Flexible Time, and cooperative enterprise
-- **Regional Legislation**: State/provincial governments create legal frameworks supporting Community Work Teams
+- **Regional Legislation**: State/provincial governments create legal frameworks supporting Community Providers
 - **International Cooperation**: Treaty signatory countries coordinate on Industrial Sunsetting and Just Transition
 - **Indigenous Sovereignty Recognition**: Formal recognition of BAZ authority and traditional governance systems
 
@@ -248,7 +248,7 @@ Appendix E serves as the definitive reference for framework terminology, ensurin
 - **Academic Research Partnerships**: Universities conduct longitudinal studies of pilot implementations
 - **International Monitoring**: UN and regional organizations track progress on Sustainable Development Goals
 - **Independent Auditing**: Third-party assessment of economic, ecological, and social outcomes
-- **Peer Review Networks**: Community Work Teams evaluate each other's democratic processes and outcomes
+- **Peer Review Networks**: Community Providers evaluate each other's democratic processes and outcomes
 
 **Anti-Gaming Safeguards**:
 - **Multiple Data Sources**: Triangulate metrics through community, academic, and independent assessment
@@ -369,7 +369,7 @@ This comprehensive implementation strategy provides the roadmap for transforming
 ### Quality Control and Community Feedback Systems
 
 **Performance Evaluation Mechanisms**:
-- **Community Satisfaction Surveys**: Quarterly anonymous feedback from Community Work Team participants and broader community
+- **Community Satisfaction Surveys**: Quarterly anonymous feedback from Community Provider participants and broader community
 - **Peer Assessment**: Community Weavers evaluate each other's effectiveness through collaborative observation and feedback
 - **Outcome Tracking**: Love Ledger data analysis showing Community Weaver impact on participation, satisfaction, and community wellbeing
 - **Cultural Integrity Audits**: Indigenous knowledge keepers assess whether Community Weaver practices respect traditional protocols
@@ -466,14 +466,14 @@ This comprehensive technical framework ensures that Work in Liberation operates 
 
 **Dual Participation Strategy (2025-2035)**:
 - **Income Security Bridge**: AUBI Layer 1 provides baseline security enabling gig workers to reduce dependence on extractive platforms gradually
-- **Skills Assessment and Development**: Community Weavers help gig workers identify transferable skills and develop new capacities for Community Work Teams
+- **Skills Assessment and Development**: Community Weavers help gig workers identify transferable skills and develop new capacities for Community Providers
 - **Platform Alternatives**: Worker-owned cooperative platforms replace Uber, DoorDash, TaskRabbit with democratic governance and community benefit focus
 - **Legal Support**: Advocacy for gig worker rights, data portability, and protection from corporate retaliation during transition
 
 **Training and Support Infrastructure**:
 - **Community Work App Onboarding**: 40-hour training program teaching democratic coordination, Skills Resonance Matching, and Hearts/Leaves economy
 - **Cooperative Development**: Business planning, legal structure, and financing support for workers creating platform cooperatives
-- **Peer Mentorship**: Experienced Community Work Team members guide gig workers through transition challenges and skill development
+- **Peer Mentorship**: Experienced Community Provider members guide gig workers through transition challenges and skill development
 - **Financial Counseling**: Support for managing income transition from gig payments to AUBI plus Hearts/Leaves earnings
 
 **Competitive Advantage Development**:
@@ -484,14 +484,14 @@ This comprehensive technical framework ensures that Work in Liberation operates 
 
 **Implementation Timeline and Milestones**:
 - **Years 1-2**: AUBI Layer 1 pilots in 5 BAZs, Community Work App beta testing, initial cooperative conversions
-- **Years 3-5**: 25% of gig workers in pilot regions participating in Community Work Teams, platform cooperative networks expanding
-- **Years 6-10**: Majority of urban areas have Community Work Team alternatives, extractive platforms losing market share significantly
+- **Years 3-5**: 25% of gig workers in pilot regions participating in Community Providers, platform cooperative networks expanding
+- **Years 6-10**: Majority of urban areas have Community Provider alternatives, extractive platforms losing market share significantly
 - **Years 10+**: Gig platform extraction eliminated in favor of worker-owned cooperative alternatives
 
 ### Cooperative Conversion Toolkit
 
 **Legal Structure Templates**:
-- **Worker Cooperative Bylaws**: Standardized governance documents adapted for Community Work Teams with democratic decision-making protocols
+- **Worker Cooperative Bylaws**: Standardized governance documents adapted for Community Providers with democratic decision-making protocols
 - **Platform Cooperative Models**: Legal frameworks for technology platforms owned and governed by worker-members
 - **Multi-Stakeholder Cooperative Structures**: Inclusion of community representatives alongside worker-owners for broader accountability
 - **Indigenous Business Protocols**: Legal frameworks respecting traditional governance and ensuring Indigenous authority in traditional territories
@@ -516,9 +516,9 @@ This comprehensive technical framework ensures that Work in Liberation operates 
 
 ### Fair Labor Contracts for Corporate Engagement
 
-**Community Work Team Service Agreements**:
-- **Project-Based Contracts**: Corporations hire Community Work Teams for specific regenerative projects (ecosystem restoration, community development, educational programs)
-- **Democratic Negotiation**: Community assemblies approve all corporate contracts with Community Work Teams maintaining collective bargaining authority
+**Community Provider Service Agreements**:
+- **Project-Based Contracts**: Corporations hire Community Providers for specific regenerative projects (ecosystem restoration, community development, educational programs)
+- **Democratic Negotiation**: Community assemblies approve all corporate contracts with Community Providers maintaining collective bargaining authority
 - **Premium Pricing**: 10-20% premium above market rates with additional contributions to Global Commons Fund
 - **Community Benefit Requirements**: All corporate contracts must demonstrate clear benefit to local community beyond payment to workers
 
@@ -529,7 +529,7 @@ This comprehensive technical framework ensures that Work in Liberation operates 
 - **Social Responsibility Metrics**: Community wellbeing impact measurement and reporting for all corporate-community partnerships
 
 **Payment and Currency Integration**:
-- **Multi-Currency Options**: Payment in fiat, Hearts, Leaves, or combinations based on Community Work Team preferences
+- **Multi-Currency Options**: Payment in fiat, Hearts, Leaves, or combinations based on Community Provider preferences
 - **Global Commons Contribution**: 10% of contract value contributed to Global Commons Fund for planetary regeneration projects
 - **Local Investment Requirements**: Percentage of corporate payments must be invested in local community development and resilience
 - **Transparent Financial Reporting**: Public documentation of all payments, community benefits, and ecological impacts
@@ -611,11 +611,11 @@ This comprehensive technical framework ensures that Work in Liberation operates 
 **Phase 1: Foundation Building (Months 1-18)**:
 - **Month 1-3**: Community readiness assessment, stakeholder engagement, and initial relationship building
 - **Month 4-6**: AUBI Layer 1 pilot launch, Community Weaver training, and basic Hearts/Leaves currency introduction
-- **Month 7-12**: Community Work Team formation, Love Ledger implementation, and democratic governance development
+- **Month 7-12**: Community Provider formation, Love Ledger implementation, and democratic governance development
 - **Month 13-18**: System refinement, community feedback integration, and expansion planning
 
 **Phase 2: System Integration (Months 19-36)**:
-- **Month 19-24**: AUBI Layer 2/3 bonus implementation, expanded Community Work Team participation
+- **Month 19-24**: AUBI Layer 2/3 bonus implementation, expanded Community Provider participation
 - **Month 25-30**: Cooperative conversion projects, corporate partnership development, and regional coordination
 - **Month 31-36**: Industrial transition pilots, ecological restoration scaling, and cultural integration deepening
 
@@ -625,20 +625,20 @@ This comprehensive technical framework ensures that Work in Liberation operates 
 - **Month 49-60**: Regional network development, policy integration, and sustainability planning
 
 **Success Metrics and Evaluation Criteria**:
-- **Participation Rates**: 20% community engagement in Community Work Teams within 18 months
+- **Participation Rates**: 20% community engagement in Community Providers within 18 months
 - **Economic Security**: 15% poverty reduction and increased income stability through AUBI and Hearts/Leaves
 - **Democratic Engagement**: 25% increase in community assembly participation and collective decision-making
-- **Ecological Impact**: Measurable ecosystem restoration and carbon sequestration through Community Work Team projects
+- **Ecological Impact**: Measurable ecosystem restoration and carbon sequestration through Community Provider projects
 - **Cultural Vitality**: Strengthened traditional knowledge transmission and cultural practice participation
 - **Community Satisfaction**: 80%+ participant satisfaction with democratic work organization and community benefit
 
 ## C.3. Governance Templates and Implementation Documents
 
-### Community Work Team Charter Template
+### Community Provider Charter Template
 
 **Organizational Mission and Values**:
 ```
-Community Work Team Name: [To be determined by founding members]
+Community Provider Name: [To be determined by founding members]
 Bioregional Autonomous Zone: [Location and traditional territory acknowledgment]
 Mission Statement: [Community-defined purpose aligned with planetary and community wellbeing]
 
@@ -771,9 +771,9 @@ These comprehensive tools provide communities with practical resources for imple
 ### Youth Authority and Decision-Making Power
 
 **Structural Youth Leadership Integration**:
-- **Youth Community Work Teams**: Autonomous teams led by people under 30 with dedicated budgets and project authority
+- **Youth Community Providers**: Autonomous teams led by people under 30 with dedicated budgets and project authority
 - **Intergenerational Councils**: Joint governance bodies where youth have equal voting power with adults on long-term decisions
-- **Future Impact Veto**: Youth councils can block Community Work Team projects with harmful seven-generation consequences
+- **Future Impact Veto**: Youth councils can block Community Provider projects with harmful seven-generation consequences
 - **Innovation Leadership**: Youth-led development of new Community Work App features, democratic governance experiments, and technological integration
 
 **Youth-Led Policy Development**:
@@ -834,35 +834,35 @@ These comprehensive tools provide communities with practical resources for imple
 
 **Elder Council Leadership Structure**:
 - **Traditional Governance Authority**: Elder councils maintain final decision-making power on cultural protocols, traditional knowledge, and community values
-- **Seven-Generation Thinking**: Elder wisdom guides Community Work Team planning with long-term impact assessment and intergenerational responsibility
-- **Cultural Protocol Oversight**: Elders ensure all Community Work Team activities respect traditional knowledge, ceremonial requirements, and Indigenous sovereignty
-- **Dispute Resolution Leadership**: Elder-led mediation and restorative justice processes for Community Work Team conflicts and community healing
+- **Seven-Generation Thinking**: Elder wisdom guides Community Provider planning with long-term impact assessment and intergenerational responsibility
+- **Cultural Protocol Oversight**: Elders ensure all Community Provider activities respect traditional knowledge, ceremonial requirements, and Indigenous sovereignty
+- **Dispute Resolution Leadership**: Elder-led mediation and restorative justice processes for Community Provider conflicts and community healing
 
 **Traditional Knowledge Teaching and Transmission**:
 - **Master Teacher Recognition**: Enhanced Hearts/Leaves recognition for elders sharing traditional knowledge, cultural practices, and historical wisdom
 - **Apprenticeship Program Leadership**: Elders design and lead traditional knowledge apprenticeships with culturally appropriate learning methods
 - **Language Preservation Leadership**: Elder authority over Indigenous language revitalization programs and community language policies
-- **Ceremonial Leadership**: Elder guidance for Community Work Team integration with traditional ceremonies, seasonal cycles, and spiritual practices
+- **Ceremonial Leadership**: Elder guidance for Community Provider integration with traditional ceremonies, seasonal cycles, and spiritual practices
 
 **Economic Security and Support Systems**:
-- **Elder Care Integration**: Community Work Teams prioritize elder care with enhanced Hearts recognition for caregiving and support services
+- **Elder Care Integration**: Community Providers prioritize elder care with enhanced Hearts recognition for caregiving and support services
 - **Traditional Knowledge Compensation**: Economic recognition for elder teaching and cultural guidance through AUBI Layer 2 bonuses
-- **Healthcare and Wellness Support**: Community Work Teams provide elder healthcare assistance, transportation, and wellness programming
+- **Healthcare and Wellness Support**: Community Providers provide elder healthcare assistance, transportation, and wellness programming
 - **Housing and Infrastructure**: Community investment in elder-accessible housing, community centers, and traditional cultural spaces
 
 ### Mentorship and Guidance Systems
 
 **Structured Mentorship Programs**:
-- **Community Work Team Mentorship**: Experienced elders guide new Community Work Teams in democratic governance, consensus building, and community accountability
+- **Community Provider Mentorship**: Experienced elders guide new Community Providers in democratic governance, consensus building, and community accountability
 - **Leadership Development Guidance**: Elder mentorship for emerging community leaders in traditional governance protocols and ethical decision-making
 - **Conflict Resolution Training**: Elders teaching mediation, restorative justice, and community healing approaches based on traditional practices
 - **Ecological Wisdom Sharing**: Elder knowledge of traditional ecological management, sustainable practices, and bioregional stewardship
 
 **Wisdom Integration and Decision Support**:
-- **Advisory Council Participation**: Elder representatives on Community Work Team councils providing wisdom, historical perspective, and cultural guidance
-- **Long-Term Planning Integration**: Elder input on Community Work Team strategic planning ensuring decisions align with traditional values and seven-generation thinking
-- **Cultural Impact Assessment**: Elder evaluation of Community Work Team projects for cultural sensitivity, traditional knowledge respect, and community benefit
-- **Community Healing Leadership**: Elder guidance for addressing historical trauma, community conflicts, and cultural restoration through Community Work Team activities
+- **Advisory Council Participation**: Elder representatives on Community Provider councils providing wisdom, historical perspective, and cultural guidance
+- **Long-Term Planning Integration**: Elder input on Community Provider strategic planning ensuring decisions align with traditional values and seven-generation thinking
+- **Cultural Impact Assessment**: Elder evaluation of Community Provider projects for cultural sensitivity, traditional knowledge respect, and community benefit
+- **Community Healing Leadership**: Elder guidance for addressing historical trauma, community conflicts, and cultural restoration through Community Provider activities
 
 **Recognition and Compensation Systems**:
 - **Wisdom Keeper Recognition**: Special Hearts/Leaves categories recognizing elder contributions to community wisdom, cultural preservation, and traditional knowledge sharing
@@ -879,7 +879,7 @@ These comprehensive tools provide communities with practical resources for imple
 - **Sacred Knowledge Protection**: Elder authority over sacred and sensitive traditional knowledge with strict protocols preventing appropriation and misuse
 
 **Cultural Practice Integration and Innovation**:
-- **Ceremonial Integration**: Elder guidance for incorporating traditional ceremonies, seasonal cycles, and spiritual practices into Community Work Team activities
+- **Ceremonial Integration**: Elder guidance for incorporating traditional ceremonies, seasonal cycles, and spiritual practices into Community Provider activities
 - **Cultural Protocol Development**: Elder leadership in creating guidelines for respectful engagement with traditional knowledge and Indigenous practices
 - **Contemporary Application**: Elder evaluation of how traditional wisdom can address contemporary challenges while maintaining cultural integrity and community values
 - **Cultural Renaissance Support**: Community investment in traditional practice revitalization, cultural education, and ceremonial infrastructure under elder leadership
@@ -895,30 +895,30 @@ These comprehensive tools provide communities with practical resources for imple
 ### Universal Design Principles and Implementation
 
 **Physical Accessibility Infrastructure**:
-- **Accessible Community Spaces**: Community Work Team meeting spaces designed for wheelchair access, sensory accommodations, and diverse mobility needs
+- **Accessible Community Spaces**: Community Provider meeting spaces designed for wheelchair access, sensory accommodations, and diverse mobility needs
 - **Adaptive Equipment and Tools**: Community tool libraries including assistive technology, adaptive work equipment, and accessibility devices
-- **Transportation Accessibility**: Community Work Team coordination of accessible transportation, mobility support, and travel accommodation
+- **Transportation Accessibility**: Community Provider coordination of accessible transportation, mobility support, and travel accommodation
 - **Communication Accessibility**: Sign language interpretation, assistive listening devices, braille materials, and communication support systems
 
 **Cognitive and Neurological Accommodation**:
-- **Neurodiversity-Affirming Practices**: Community Work Team processes adapted for diverse cognitive styles, attention patterns, and information processing needs
-- **Flexible Participation Options**: Multiple ways to engage in Community Work Team activities accommodating different energy levels, focus capacities, and participation preferences
+- **Neurodiversity-Affirming Practices**: Community Provider processes adapted for diverse cognitive styles, attention patterns, and information processing needs
+- **Flexible Participation Options**: Multiple ways to engage in Community Provider activities accommodating different energy levels, focus capacities, and participation preferences
 - **Clear Communication Standards**: Plain language policies, visual aids, step-by-step instructions, and multiple format information sharing
-- **Sensory-Friendly Environments**: Quiet spaces, reduced stimulation options, and sensory accommodation in Community Work Team activities
+- **Sensory-Friendly Environments**: Quiet spaces, reduced stimulation options, and sensory accommodation in Community Provider activities
 
 **Mental Health Integration and Support**:
-- **Trauma-Informed Community Work**: Community Work Team practices designed to support healing, avoid re-traumatization, and create safety for survivors
+- **Trauma-Informed Community Work**: Community Provider practices designed to support healing, avoid re-traumatization, and create safety for survivors
 - **Mental Health First Aid**: Community Weaver training in mental health support, crisis intervention, and community mental wellness
-- **Peer Support Networks**: Community Work Teams including peer support specialists, lived experience experts, and mental health advocacy
-- **Wellness Integration**: Community Work Team activities incorporating mental health promotion, stress reduction, and community healing practices
+- **Peer Support Networks**: Community Providers including peer support specialists, lived experience experts, and mental health advocacy
+- **Wellness Integration**: Community Provider activities incorporating mental health promotion, stress reduction, and community healing practices
 
 ### Disability Justice and Community Leadership
 
 **Disabled Community Leadership and Authority**:
-- **Disability Justice Representation**: Guaranteed representation of disabled community members in Community Work Team leadership and decision-making roles
+- **Disability Justice Representation**: Guaranteed representation of disabled community members in Community Provider leadership and decision-making roles
 - **Disability-Led Innovation**: Disabled community leadership in developing accessibility solutions, universal design innovations, and inclusion strategies
 - **Nothing About Us Without Us**: Disability community authority over all accessibility policies, accommodation decisions, and inclusion program development
-- **Disability Culture Celebration**: Recognition and celebration of disability culture, disabled community contributions, and disability pride within Community Work Teams
+- **Disability Culture Celebration**: Recognition and celebration of disability culture, disabled community contributions, and disability pride within Community Providers
 
 **Economic Justice and Recognition Systems**:
 - **Disability-Related Contributions**: Enhanced Hearts/Leaves recognition for disability advocacy, accessibility innovation, and community inclusion work
@@ -927,50 +927,50 @@ These comprehensive tools provide communities with practical resources for imple
 - **Economic Security for Disabled Community**: AUBI Layer 3 enhancements ensuring economic security for disabled community members facing additional life costs
 
 **Community Care and Mutual Aid Integration**:
-- **Interdependence Recognition**: Community Work Team practices based on interdependence rather than independence, recognizing mutual support as community strength
+- **Interdependence Recognition**: Community Provider practices based on interdependence rather than independence, recognizing mutual support as community strength
 - **Care Work Valuation**: Enhanced Hearts recognition for disability-related care work, personal assistance, and community support activities
-- **Accessibility Advocacy**: Community Work Team support for disability rights advocacy, accessibility improvements, and discrimination resistance
+- **Accessibility Advocacy**: Community Provider support for disability rights advocacy, accessibility improvements, and discrimination resistance
 - **Community Healing**: Disability justice integration into community healing work addressing ableism, medical trauma, and disability oppression
 
 ### Economic Inclusion and Anti-Poverty Integration
 
 **Economic Accessibility and Participation Support**:
-- **No-Cost Participation**: Community Work Team activities designed to accommodate zero-budget participation with community support for necessary expenses
+- **No-Cost Participation**: Community Provider activities designed to accommodate zero-budget participation with community support for necessary expenses
 - **Economic Barrier Removal**: Community funding for transportation, childcare, equipment, and other costs that could prevent participation
 - **Flexible Economic Contribution**: Recognition that economic circumstances vary and accommodation of different levels of financial community contribution
-- **Economic Justice Advocacy**: Community Work Team support for anti-poverty work, economic justice advocacy, and community economic development
+- **Economic Justice Advocacy**: Community Provider support for anti-poverty work, economic justice advocacy, and community economic development
 
 **Housing and Basic Needs Integration**:
-- **Housing Security Support**: Community Work Team coordination of housing assistance, mutual aid, and housing justice advocacy
-- **Food Security Programming**: Community Work Team involvement in food justice work, community gardens, and food assistance programs
-- **Healthcare Access Coordination**: Community Work Team support for healthcare navigation, medical advocacy, and community health programming
-- **Basic Needs Mutual Aid**: Community Work Team organization of mutual aid for utilities, transportation, childcare, and emergency support
+- **Housing Security Support**: Community Provider coordination of housing assistance, mutual aid, and housing justice advocacy
+- **Food Security Programming**: Community Provider involvement in food justice work, community gardens, and food assistance programs
+- **Healthcare Access Coordination**: Community Provider support for healthcare navigation, medical advocacy, and community health programming
+- **Basic Needs Mutual Aid**: Community Provider organization of mutual aid for utilities, transportation, childcare, and emergency support
 
 **Financial Inclusion and Alternative Economic Participation**:
-- **Banking and Financial Service Access**: Community Work Team support for financial inclusion, credit building, and economic literacy
+- **Banking and Financial Service Access**: Community Provider support for financial inclusion, credit building, and economic literacy
 - **Alternative Currency Integration**: Hearts/Leaves systems designed for participation regardless of traditional banking access or credit history
-- **Cooperative Economic Development**: Community Work Team support for cooperative enterprises, community investment, and local economic development
-- **Economic Education and Advocacy**: Community Work Team involvement in economic literacy, financial justice advocacy, and community economic empowerment
+- **Cooperative Economic Development**: Community Provider support for cooperative enterprises, community investment, and local economic development
+- **Economic Education and Advocacy**: Community Provider involvement in economic literacy, financial justice advocacy, and community economic empowerment
 
 ### Cultural and Linguistic Accessibility
 
 **Multilingual and Cross-Cultural Inclusion**:
-- **Language Justice Practices**: Community Work Team materials, meetings, and activities available in community languages with professional interpretation support
+- **Language Justice Practices**: Community Provider materials, meetings, and activities available in community languages with professional interpretation support
 - **Cultural Competency Development**: Community Weaver training in cultural humility, cross-cultural communication, and respectful engagement across difference
-- **Immigrant and Refugee Integration**: Community Work Team support for immigrant and refugee community members with citizenship status protections and advocacy
-- **Cultural Celebration and Integration**: Recognition and celebration of community cultural diversity through Community Work Team activities and programming
+- **Immigrant and Refugee Integration**: Community Provider support for immigrant and refugee community members with citizenship status protections and advocacy
+- **Cultural Celebration and Integration**: Recognition and celebration of community cultural diversity through Community Provider activities and programming
 
 **Religious and Spiritual Accommodation**:
-- **Religious Practice Accommodation**: Community Work Team scheduling and activities accommodating diverse religious practices, holy days, and spiritual obligations
-- **Interfaith Cooperation**: Community Work Team collaboration across religious and spiritual communities for shared community benefit and mutual understanding
-- **Sacred Space Recognition**: Respect for sacred spaces, spiritual practices, and religious authority within Community Work Team activities and community development
-- **Spiritual Healing Integration**: Recognition of spiritual dimensions of community healing, personal development, and community wellbeing within secular Community Work Team frameworks
+- **Religious Practice Accommodation**: Community Provider scheduling and activities accommodating diverse religious practices, holy days, and spiritual obligations
+- **Interfaith Cooperation**: Community Provider collaboration across religious and spiritual communities for shared community benefit and mutual understanding
+- **Sacred Space Recognition**: Respect for sacred spaces, spiritual practices, and religious authority within Community Provider activities and community development
+- **Spiritual Healing Integration**: Recognition of spiritual dimensions of community healing, personal development, and community wellbeing within secular Community Provider frameworks
 
 **Educational and Literacy Integration**:
-- **Educational Justice Advocacy**: Community Work Team support for educational equity, literacy programming, and learning justice advocacy
-- **Alternative Learning Recognition**: Validation of diverse learning styles, educational backgrounds, and knowledge systems within Community Work Team participation
-- **Skill Sharing and Popular Education**: Community Work Team coordination of peer education, skill sharing, and community learning programs
-- **Educational Barrier Removal**: Community support for educational access, literacy development, and learning accommodation for Community Work Team participants
+- **Educational Justice Advocacy**: Community Provider support for educational equity, literacy programming, and learning justice advocacy
+- **Alternative Learning Recognition**: Validation of diverse learning styles, educational backgrounds, and knowledge systems within Community Provider participation
+- **Skill Sharing and Popular Education**: Community Provider coordination of peer education, skill sharing, and community learning programs
+- **Educational Barrier Removal**: Community support for educational access, literacy development, and learning accommodation for Community Provider participants
 
 This comprehensive stakeholder integration framework ensures that Work in Liberation serves all community members while centering the leadership and authority of those most affected by current systems of oppression and exclusion.
 
@@ -982,13 +982,15 @@ This comprehensive stakeholder integration framework ensures that Work in Libera
 
 **AUBI (Adaptive Universal Basic Income)**: Four-layered universal income system providing unconditional baseline (Layer 1), contribution bonuses (Layer 2), equity adjustments (Layer 3), and global stabilization (Layer 4). Integrated with Work in Liberation through Hearts/Leaves currency rewards for meaningful contributions to community and planetary wellbeing.
 
-**Bioregional Autonomous Zone (BAZ)**: Self-governing territories organized around watersheds, ecosystems, and traditional Indigenous territories rather than colonial nation-state boundaries. BAZs operate under Indigenous sovereignty with Traditional Ecological Knowledge guiding governance and Community Work Team coordination.
+**Bioregional Autonomous Zone (BAZ)**: Self-governing territories organized around watersheds, ecosystems, and traditional Indigenous territories rather than colonial nation-state boundaries. BAZs operate under Indigenous sovereignty with Traditional Ecological Knowledge guiding governance and Community Provider coordination.
 
-**Community Weavers**: Trained facilitators responsible for Community Work Team coordination, Love Ledger training, and stakeholder engagement. They ensure validation of contributions aligns with Love, Meaning, and Connection Index (LMCI) principles while fostering trust and democratic participation under Indigenous-led governance protocols.
+**Community Weavers**: Trained facilitators responsible for Community Provider coordination, Love Ledger training, and stakeholder engagement. They help new organizations become chartered Community Providers, train them on Hearts acceptance and Treasury redemption, and facilitate non-monetized recognition of informal work on the Love Ledger. They ensure validation of contributions aligns with Love, Meaning, and Connection Index (LMCI) principles while fostering trust and democratic participation under Indigenous-led governance protocols.
 
 **Community Work App**: Democratic coordination platform replacing extractive gig economy applications with community-controlled technology. Features include Skills Resonance Matching, democratic task coordination, offline functionality, and integration with Love Ledger for contribution tracking and Hearts/Leaves distribution.
 
-**Community Work Teams**: Self-organizing groups that coordinate meaningful work under Indigenous-led BAZ governance. Teams focus on care work, ecological restoration, cultural preservation, and community resilience while earning Hearts/Leaves recognition through democratic, cooperative organization.
+**Community Providers**: Chartered organizations offering services within BAZs under Indigenous-led governance, funded through community Hearts investment and redeemable at the Hearts Treasury for fiat currency. Community Work Teams are the primary type of Community Provider, self-organizing to coordinate care work, ecological restoration, cultural preservation, and community resilience.
+
+**Community Work Teams**: A primary type of chartered Community Provider—self-organizing groups that coordinate meaningful work under Indigenous-led BAZ governance. Teams offer services that community members purchase using Hearts, generating revenue to fund operations, pay stipends, and cover materials.
 
 **Earth Council (Kawsay Pacha)**: Primary Meta-Governance Coordination Council providing moral and spiritual authority for planetary governance. Composed of Indigenous elders, youth, ecological scientists, and cultural practitioners with authority over decisions affecting Traditional Ecological Knowledge and seven-generation impacts.
 
@@ -998,7 +1000,9 @@ This comprehensive stakeholder integration framework ensures that Work in Libera
 
 **Green Job Score**: Standardized methodology measuring ecological and social contributions enabling fair Hearts/Leaves recognition. Acts as multiplier (1.0x to 1.5x) for AUBI Leaves rewards, validated by BAZ councils and Community Weavers while respecting Traditional Ecological Knowledge and Indigenous protocols.
 
-**Hearts Currency**: Alternative currency recognizing care work, mentorship, cultural preservation, and community building within the Love Ledger system. Earned through validated contributions and distributed via AUBI Layer 2/3 bonuses, accepted by community businesses with transparent exchange rates.
+**Hearts Currency**: Community investment currency distributed as part of AUBI Layer 1 (30% of baseline). Community members spend Hearts with chartered Community Providers for services, generating provider revenue. Providers redeem accumulated Hearts at the Hearts Treasury for fiat currency to cover external costs. Hearts cannot be traded speculatively—only earned through AUBI allocation or spent on Community Provider services.
+
+**Hearts Treasury**: Community-controlled financial institution, operated in partnership with local credit unions, that provides fiat backing for Hearts and processes redemptions for chartered Community Providers. Treasury reserves are backed by community assets, AUBI fiat flows, and regenerative investments, with democratic governance through BAZ councils ensuring operations serve community investment rather than profit extraction.
 
 **Industrial Sunsetting**: Systematic phase-out of extractive industries under Treaty Ecocide law with comprehensive Just Transition support. Timeline includes coal by 2030, fossil fuels by 2035, fast fashion by 2038, managed by Planetary Health Council, Digital Justice Tribunal, and Social Resilience Council coordination.
 
@@ -1006,7 +1010,7 @@ This comprehensive stakeholder integration framework ensures that Work in Libera
 
 **Leaves Currency**: Non-fungible tokens (NFTs) representing verified ecological restoration contributions including habitat restoration, carbon sequestration, and biodiversity protection. Issued through Love Ledger with GPS metadata and validated by Indigenous knowledge keepers and ecological scientists.
 
-**Love Ledger**: Blockchain-based system tracking all contributions to community and planetary wellbeing using Hyperledger Fabric with BAZ-controlled nodes. Enables transparent Hearts/Leaves distribution, AUBI bonus calculation, and community validation while maintaining privacy controls and Indigenous data sovereignty.
+**Love Ledger**: A parallel, non-monetized, blockchain-based platform (Hyperledger Fabric with BAZ-controlled nodes) for logging and recognizing informal community contributions—such as volunteering, caregiving, mentoring, and spontaneous acts of care—with Gratitude Tokens. Provides crucial data for the LMCI metric but is kept separate from the formal Hearts economy to avoid commodifying relationships. Maintains privacy controls and Indigenous data sovereignty.
 
 **Love, Meaning, and Connection Index (LMCI)**: Comprehensive wellbeing measurement replacing GDP focus with metrics of human-Earth relationship, care work recognition, and cultural vitality. Components include Love (care & relationships), Meaning (purpose & growth), and Connection (human-land harmony) validated against Gross National Happiness and OECD Better Life Index.
 
@@ -1016,7 +1020,7 @@ This comprehensive stakeholder integration framework ensures that Work in Libera
 
 ## E.2. Governance and Coordination Terms
 
-**Digital Justice Tribunal**: Legal body under Treaty for Our Only Home with authority to prosecute Ecocide violations, enforce automation taxes, and resolve disputes between corporations and Community Work Teams. Operates through restorative justice principles with Indigenous authority recognition and community veto power.
+**Digital Justice Tribunal**: Legal body under Treaty for Our Only Home with authority to prosecute Ecocide violations, enforce automation taxes, and resolve disputes between corporations and Community Providers. Operates through restorative justice principles with Indigenous authority recognition and community veto power.
 
 **Free, Prior, and Informed Consent 2.0 (FPIC 2.0)**: Enhanced consent protocols ensuring Indigenous authority over all decisions affecting traditional territories or knowledge systems. Includes community veto power, cultural protocol review, intergenerational consultation, and Red Lines protection enabling immediate withdrawal from harmful frameworks.
 
@@ -1034,7 +1038,7 @@ This comprehensive stakeholder integration framework ensures that Work in Libera
 
 **Social Resilience Council**: Meta-Governance Coordination Council overseeing fiscal health, risk management, and equitable distribution of AUBI payouts. Operates under Earth Council guidance with 40% Indigenous representation and authority over Hearts/Leaves supply management and crisis response coordination.
 
-**Traditional Ecological Knowledge (TEK)**: Indigenous wisdom systems maintained by traditional knowledge keepers regarding sustainable relationships with specific territories and ecosystems. Protected under Indigenous data sovereignty protocols while guiding all ecological restoration work through Community Work Teams.
+**Traditional Ecological Knowledge (TEK)**: Indigenous wisdom systems maintained by traditional knowledge keepers regarding sustainable relationships with specific territories and ecosystems. Protected under Indigenous data sovereignty protocols while guiding all ecological restoration work through Community Providers.
 
 **Treaty for Our Only Home**: Global governance transformation framework providing institutional "hardware" for planetary stability through reformed UN systems, Indigenous rights recognition, strengthened international law, independent funding mechanisms, and ethical infrastructure supporting Work in Liberation implementation.
 
@@ -1072,19 +1076,19 @@ This comprehensive stakeholder integration framework ensures that Work in Libera
 
 **Cultural Integrity Audits**: Regular assessment ensuring framework implementation respects Indigenous protocols, traditional knowledge, and community values. Conducted by Indigenous knowledge keepers and elder councils with authority to recommend modifications protecting cultural sovereignty and spiritual practices.
 
-**Decolonization Metrics**: Measurement systems tracking progress toward Indigenous sovereignty, traditional knowledge recognition, and colonial system transformation. Include land rematriation, language revitalization, self-determination indicators, and cultural practice strengthening within Community Work Team activities.
+**Decolonization Metrics**: Measurement systems tracking progress toward Indigenous sovereignty, traditional knowledge recognition, and colonial system transformation. Include land rematriation, language revitalization, self-determination indicators, and cultural practice strengthening within Community Provider activities.
 
-**Eco-Grief Support**: Recognition and healing resources for climate-related emotional trauma affecting environmental workers and community members. Includes counseling services, peer support networks, and community healing practices integrated into Community Work Team wellness programming.
+**Eco-Grief Support**: Recognition and healing resources for climate-related emotional trauma affecting environmental workers and community members. Includes counseling services, peer support networks, and community healing practices integrated into Community Provider wellness programming.
 
-**Epistemic Justice**: Equal recognition and protection of diverse knowledge systems including scientific, traditional, experiential, and spiritual ways of knowing. Ensures Indigenous knowledge receives equivalent authority to Western science in Community Work Team decision-making and ecological restoration work.
+**Epistemic Justice**: Equal recognition and protection of diverse knowledge systems including scientific, traditional, experiential, and spiritual ways of knowing. Ensures Indigenous knowledge receives equivalent authority to Western science in Community Provider decision-making and ecological restoration work.
 
-**Intergenerational Accountability**: Seven-generation thinking integration ensuring all Community Work Team decisions consider impact on future generations. Includes youth authority, elder wisdom integration, and Traditional Ecological Knowledge guidance for long-term community and ecological health.
+**Intergenerational Accountability**: Seven-generation thinking integration ensuring all Community Provider decisions consider impact on future generations. Includes youth authority, elder wisdom integration, and Traditional Ecological Knowledge guidance for long-term community and ecological health.
 
-**Regenerative Pull**: Organic scaling mechanism where successful Community Work Team implementations attract adoption through demonstrated superior outcomes rather than coercive pressure. Creates voluntary adoption through community satisfaction, economic benefits, and ecological restoration evidence.
+**Regenerative Pull**: Organic scaling mechanism where successful Community Provider implementations attract adoption through demonstrated superior outcomes rather than coercive pressure. Creates voluntary adoption through community satisfaction, economic benefits, and ecological restoration evidence.
 
-**Spiral Dynamics Integration**: Recognition of different developmental stages and cultural approaches enabling respectful collaboration across diverse worldviews within Community Work Teams. Supports cultural bridge-building while maintaining Indigenous authority and traditional knowledge integrity.
+**Spiral Dynamics Integration**: Recognition of different developmental stages and cultural approaches enabling respectful collaboration across diverse worldviews within Community Providers. Supports cultural bridge-building while maintaining Indigenous authority and traditional knowledge integrity.
 
-**Work Trauma Healing**: Recognition and treatment of psychological harm from extractive employment including surveillance stress, precarity anxiety, and meaninglessness depression. Community Work Teams provide healing environments supporting recovery while building healthy relationships with productive activity.
+**Work Trauma Healing**: Recognition and treatment of psychological harm from extractive employment including surveillance stress, precarity anxiety, and meaninglessness depression. Community Providers provide healing environments supporting recovery while building healthy relationships with productive activity.
 
 ## E.5. Implementation and Process Terms
 
@@ -1094,17 +1098,17 @@ This comprehensive stakeholder integration framework ensures that Work in Libera
 
 **Democratic Technology Assessment**: Community evaluation of AI and digital tool impacts on work opportunities, cultural practices, and community wellbeing. Includes Indigenous authority, accessibility review, and community veto power over harmful technologies with alternative provision requirements.
 
-**Minimum Viable Implementation**: Simplified Community Work Team implementation requiring only basic components: AUBI Layer 1 pilot, 5-10 work teams, simple contribution tracking, Hearts/Leaves circulation, and Flexible Time agreements. Enables rapid community adoption while building toward comprehensive framework integration.
+**Minimum Viable Implementation**: Simplified Community Provider implementation requiring only basic components: AUBI Layer 1 pilot, 5-10 chartered providers, simple contribution tracking, Hearts circulation with Treasury access, Love Ledger for informal recognition, and Flexible Time agreements. Enables rapid community adoption while building toward comprehensive framework integration.
 
-**Peer Learning Networks**: Horizontal knowledge exchange between Community Work Teams, BAZ implementations, and Community Weavers enabling innovation sharing, mutual support, and collaborative problem-solving without top-down knowledge transfer or extractive best practice appropriation.
+**Peer Learning Networks**: Horizontal knowledge exchange between Community Providers, BAZ implementations, and Community Weavers enabling innovation sharing, mutual support, and collaborative problem-solving without top-down knowledge transfer or extractive best practice appropriation.
 
-**Regenerative Business Models**: Enterprise operations designed to improve ecological and social conditions through their activities rather than minimizing harm. Required for corporate partnerships with Community Work Teams including restoration obligations, community benefit demonstration, and democratic accountability.
+**Regenerative Business Models**: Enterprise operations designed to improve ecological and social conditions through their activities rather than minimizing harm. Required for corporate partnerships with Community Providers including restoration obligations, community benefit demonstration, and democratic accountability.
 
 **Shadow Protocol**: Strategies for implementing Work in Liberation principles in authoritarian contexts including covert facilitation, cultural cover, and secure communication. Protects democratic organizing while building capacity for open implementation when political conditions permit.
 
 **Sunset and Renewal Protocols**: Regular reauthorization processes for all framework components based on community satisfaction and demonstrated effectiveness. Includes graceful dissolution procedures when coordination becomes unnecessary and community celebration of completed service rather than institutional perpetuation.
 
-**Tech Resilience**: Comprehensive accessibility and crisis-resistant technology design ensuring Community Work Team coordination continues during infrastructure failures, political repression, and technological disruption. Features offline functionality, community-controlled infrastructure, and cultural protocol integration.
+**Tech Resilience**: Comprehensive accessibility and crisis-resistant technology design ensuring Community Provider coordination continues during infrastructure failures, political repression, and technological disruption. Features offline functionality, community-controlled infrastructure, and cultural protocol integration.
 
 **Transition Friction Points**: Systematic identification and mitigation of obstacles to Work in Liberation adoption including corporate resistance, state opposition, cultural skepticism, and implementation challenges. Addressed through regenerative pull strategies, economic incentives, and community-controlled adaptation.
 

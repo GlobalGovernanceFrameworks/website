@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Work in Liberation Framework: Transformativ arbets- och sysselsättningsstyrning",
-    "description": "Organisera arbete kring omsorg, kreativitet och planetär hälsa genom Community Work Teams, kooperativ styrning och övergången från överlevnadsarbete till meningsfulla bidrag"
+    "description": "Organisera arbete kring omsorg, kreativitet och planetär hälsa genom Community Providers, kooperativ styrning, Hearts Treasury-system och övergången från överlevnadsarbete till meningsfulla bidrag"
   },
   "quickStart": {
     "new": "Ny inom Work in Liberation?",
@@ -22,7 +22,7 @@
         "id": "executive-summary-for-the-skeptic",
         "icon": "🤔",
         "title": "För skeptiker",
-        "description": "Affärsargument för demokratisk arbetsstransformation"
+        "description": "Affärsargument för demokratisk arbetstransformation"
       }
     ]
   },
@@ -39,9 +39,11 @@
     "at-a-glance": "Snabböversikt",
     "executive-summary-for-the-skeptic": "Sammanfattning för skeptiker",
     "preamble": "Inledning: Befrielsen av mänsklig potential",
+    "preface-terminology": "Förord: Terminologi och avsikt",
     "introduction": "Introduktion: Organisera arbete med syfte",
     "core-principles": "Grundprinciper: Grunden för befrielse",
     "core-components": "Kärnkomponenter: Bygga demokratiskt arbete",
+    "flagship-mobilizations": "Globala flaggskeppsmobiliseringar",
     "implementation-plan": "25-årig implementeringsplan",
     "tools-technologies": "Nyckelverktyg och teknologier",
     "monitoring-evaluation": "Övervakning och utvärdering",
@@ -57,9 +59,11 @@
     "at-a-glance": "Snabböversikt",
     "executive-summary-for-the-skeptic": "För skeptiker",
     "preamble": "Inledning",
+    "preface-terminology": "Terminologi",
     "introduction": "Introduktion",
     "core-principles": "Grundprinciper",
     "core-components": "Kärnkomponenter",
+    "flagship-mobilizations": "Globala mobiliseringar",
     "implementation-plan": "Implementeringsplan",
     "tools-technologies": "Verktyg & teknologier",
     "monitoring-evaluation": "Övervakning & utvärdering",

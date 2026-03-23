@@ -25,9 +25,11 @@ Dr. Williams sees this pattern in healthcare networks where Community Health Pro
 
 The implementation roadmap begins with the four-step Grassroots Bootstrapping Pathway that enables communities to start AUBI implementation immediately using existing resources while building toward comprehensive Hearts Treasury and Love Ledger integration.
 
+Hearts faces a classic cold-start problem: the currency has no velocity until people spend it, and people won't spend it until it has velocity. This pathway resolves the cold-start by moving from social trust to monetary function in four stages. Each stage has explicit entry and exit criteria; no stage should be skipped.
+
 ### Step 1: The Convening Circle
 
-**Community Catalyst Formation**: A small group of 5-10 community members begins concrete pilot project development by identifying local care needs that could benefit from Hearts economy support and traditional relationships that deserve Love Ledger recognition.
+**Community Catalyst Formation**: A small group (minimum 5, recommended 8–15 people) identifies a concrete, recurring service need in their community — something people currently pay for or go without — and commits to meeting that need using a simple shared ledger before any technology is introduced.
 
 Maya's community demonstrates convening circle formation when traditional knowledge holders, young community organizers, and healthcare workers gather to design a pilot project combining coral restoration education through a potential Community Provider with traditional knowledge recognition through Love Ledger Gratitude Tokens.
 
@@ -35,11 +37,17 @@ Maya's community demonstrates convening circle formation when traditional knowle
 
 **Initial Feasibility Assessment**: The circle conducts basic feasibility assessment including community need identification, resource availability evaluation, cultural protocol compliance, and traditional authority consultation to ensure pilot projects serve authentic community priorities.
 
+**Entry criterion**: 5+ participants, one identified service need, one designated record-keeper.
+
+**Exit criterion**: At least 20 completed service exchanges logged over a minimum 60-day period, with zero disputed transactions. The 60-day minimum prevents enthusiasm spikes from being mistaken for stable velocity. Service exchanges must be real (time, labor, materials), not symbolic.
+
 ### Step 2: The Proto-Treasury
 
-**Simple Shared Bank Account**: The convening circle establishes a basic shared bank account to prove Hearts economy concepts on small scale while building toward full Hearts Treasury integration with credit unions and community banking partnerships.
+**Simple Shared Bank Account**: The convening circle establishes a basic shared bank account (or equivalent community fund) seeded with fiat, grant money, or in-kind contributions. This becomes the backing reserve for the first Hearts issued. The Proto-Treasury establishes the minimum reserve ratio that must be maintained throughout the pilot: fiat reserves must cover at least 30% of outstanding Hearts at face value at all times.
 
 The Proto-Treasury demonstrates Hearts circulation principles by collecting modest contributions from community members, local businesses, and supporters while providing small payments to emerging Community Provider activities that show authentic community benefit.
+
+**Heartstarter Program**: The Heartstarter program (see Financial Systems Framework) provides a 1:1 fiat match on Proto-Treasury seed capital up to a per-BAZ ceiling, drawing from the Global Commons Fund. This match is the primary mechanism for bootstrapping the reserve without requiring the community to self-capitalize from nothing.
 
 Dr. Williams participates in Proto-Treasury development by contributing personal funds and recruiting healthcare colleagues to support initial Community Health Provider pilot activities while documenting health education impact and community feedback for future Hearts Treasury integration.
 
@@ -47,9 +55,13 @@ Dr. Williams participates in Proto-Treasury development by contributing personal
 
 **Love Ledger Parallel Development**: While Proto-Treasury demonstrates Hearts economy concepts, communities simultaneously develop Love Ledger recognition systems through traditional gratitude practices, community recognition ceremonies, and informal relationship documentation that prepares for technological platform integration.
 
+**Entry criterion**: Stage 1 exit criteria met; at least one Community Provider recruited and willing to accept Hearts for their service.
+
+**Exit criterion**: Proto-Treasury holds fiat reserves ≥30% of all Hearts issued; at least 3 distinct Community Providers accepting Hearts; minimum 100 Hearts transactions completed across at least 20 distinct participants.
+
 ### Step 3: Provider Recruitment
 
-**Community Provider Development**: The convening circle expands by recruiting and developing additional local Community Providers including health cooperatives, cultural education organizations, environmental restoration groups, and community organizing collectives that can earn Hearts through authentic service delivery.
+**Community Provider Development**: The circle actively recruits additional local Community Providers — targeting diversity of service type (care, food, repair, education, ecological) rather than volume of a single type. Monocultures of provider type make the local Hearts economy fragile: if the dominant provider exits, velocity collapses.
 
 Provider recruitment emphasizes organizations with existing community trust, cultural competency, traditional knowledge respect, and commitment to democratic governance that ensures Hearts circulation serves community empowerment rather than organizational power concentration.
 
@@ -59,17 +71,33 @@ Ambassador Chen's island nation demonstrates provider recruitment by developing 
 
 **Quality Standards Development**: Provider recruitment includes development of community-defined quality standards, cultural appropriateness protocols, and community accountability mechanisms that ensure Hearts earning serves authentic community benefit rather than performative activities.
 
+**Velocity Health Check**: Hearts are circulating adequately if the average Heart changes hands at least once per 30 days. A Heart sitting in a wallet for 90+ days signals either demurrage is not yet active or provider diversity is insufficient. Community Weavers are responsible for tracking and reporting this metric.
+
+**Entry criterion**: Stage 2 exit criteria met.
+
+**Exit criterion**: Minimum 5 distinct provider categories represented; average Hearts velocity ≥1 exchange per 30 days over a 90-day window; 30-day fraud rate <2% of transactions by value; Community Weaver assigned and trained.
+
 ### Step 4: Governance Formalization
 
-**BAZ Council Election**: A formal BAZ Council gets elected only after the Hearts economy model demonstrates initial success through Proto-Treasury operations and Community Provider development that shows authentic community benefit and cultural sovereignty protection.
+**BAZ Council Election**: Only after Stage 3 exit criteria are met does a BAZ Council form. This sequencing is intentional and must not be compressed: governance imposed before a functioning economy exists tends to govern phantom activity and attract participants motivated by governance power rather than community value creation.
 
-The BAZ Council includes Indigenous representation, youth voices, Community Provider representatives, and traditional authority figures who maintain oversight of both Hearts Treasury development and Love Ledger community recognition while ensuring traditional governance authority.
+The BAZ Council election uses the selection mechanism specified in the Social Resilience Council governance model (population-weighted, BAZ-cluster proportional). The Council includes Indigenous representation, youth voices, Community Provider representatives, and traditional authority figures who maintain oversight of both Hearts Treasury development and Love Ledger community recognition while ensuring traditional governance authority.
 
 **Hearts Treasury Transition**: Successful Proto-Treasury operations transition to full Hearts Treasury integration through partnerships with credit unions and community banks that provide professional financial services while maintaining community control over Hearts economy policy.
 
 Maya's community demonstrates governance formalization when traditional authorities, successful Community Providers, and community members elect a BAZ Council that oversees transition from Proto-Treasury to full Hearts Treasury operations while maintaining traditional governance protocols.
 
 **Love Ledger Platform Integration**: Communities integrate Love Ledger technological platforms for Gratitude Token circulation while maintaining traditional recognition methods and ensuring elder authority over cultural information sharing and traditional knowledge protection.
+
+**Entry criterion**: Stage 3 exit criteria met.
+
+**Formalization criteria** (all must be satisfied): ≥500 distinct AUBI-enrolled participants active in the Hearts economy; reserve ratio maintained ≥30% for 6 consecutive months; fraud rate <1% by transaction value over the preceding 90 days; at least one successful LMCI-A reporting cycle completed; explicit outreach conducted to marginalized populations within the bioregion, with enrollment metrics reported.
+
+**Phase 2 graduation criteria** (when BAZ may apply for cryptographic decentralization): ≥2,000 active participants; network has operated continuously for ≥12 months post-formalization; reserve ratio maintained ≥30% throughout; Phase 1 transaction data validated as forward-compatible with Phase 2 schemas (per Financial Systems Framework Fractal Seed specification).
+
+### Fallback Protocol
+
+If a BAZ fails to meet Stage 3 exit criteria within 18 months of Stage 2 entry, the bootstrapping process does not automatically fail — but it triggers a structured review. Community Weavers assess whether the failure is provider diversity, velocity, fraud, or reserve ratio, as each has a different remediation pathway. Heartstarter match funds are not clawed back on failure; they remain in the Proto-Treasury to support a revised attempt or orderly wind-down.
 
 ## Pilot Phase (Years 1-3): Proving the Dual-Track Model
 

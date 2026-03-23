@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Work in Liberation Framework: Transformative Labour & Employment Governance",
-    "description": "Organizing work around care, creativity, and planetary health through Community Work Teams, cooperative governance, and the transition from survival work to meaningful contribution"
+    "description": "Organizing work around care, creativity, and planetary health through Community Providers, cooperative governance, Hearts Treasury systems, and the transition from survival work to meaningful contribution"
   },
   "quickStart": {
     "new": "New to Work in Liberation?",
@@ -39,9 +39,11 @@
     "at-a-glance": "At a Glance",
     "executive-summary-for-the-skeptic": "Executive Summary for the Skeptic",
     "preamble": "Preamble: The Liberation of Human Potential",
+    "preface-terminology": "Preface: Terminology and Intent",
     "introduction": "Introduction: Organizing Work With Purpose",
     "core-principles": "Core Principles: The Foundation of Liberation",
     "core-components": "Core Components: Building Democratic Work",
+    "flagship-mobilizations": "Flagship Global Mobilizations",
     "implementation-plan": "25-Year Implementation Plan",
     "tools-technologies": "Key Tools and Technologies",
     "monitoring-evaluation": "Monitoring and Evaluation",
@@ -57,9 +59,11 @@
     "at-a-glance": "At a Glance",
     "executive-summary-for-the-skeptic": "For Skeptics",
     "preamble": "Preamble",
+    "preface-terminology": "Terminology",
     "introduction": "Introduction",
     "core-principles": "Core Principles",
     "core-components": "Core Components",
+    "flagship-mobilizations": "Global Mobilizations",
     "implementation-plan": "Implementation Plan",
     "tools-technologies": "Tools & Technologies",
     "monitoring-evaluation": "Monitoring & Evaluation",

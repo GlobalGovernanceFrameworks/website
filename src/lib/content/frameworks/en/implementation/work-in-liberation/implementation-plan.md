@@ -37,7 +37,7 @@ The transformation from extractive labor to Work With Purpose requires careful o
 
 **Indigenous Leadership**: All implementation follows Free, Prior, and Informed Consent protocols with Indigenous communities leading ecological work and maintaining sovereignty over traditional territories and knowledge systems.
 
-**Economic Security First**: AUBI Layer 1 implementation provides the economic foundation enabling people to choose meaningful work over survival jobs, creating conditions for Community Work Team participation.
+**Economic Security First**: AUBI Layer 1 implementation provides the economic foundation enabling people to choose meaningful work over survival jobs, creating conditions for Community Provider participation and community investment through Hearts.
 
 **Cultural Adaptation**: Implementation strategies adapt to local cultural contexts, governance traditions, and economic conditions while maintaining core principles of democracy, ecology, and justice.
 
@@ -47,7 +47,7 @@ The transformation from extractive labor to Work With Purpose requires careful o
 
 > *"Every great oak was once an acorn that held its ground."*
 
-**Phase Goal**: Demonstrate that Community Work Teams, Flexible Time, and Hearts/Leaves economies can provide superior alternatives to extractive employment while building the infrastructure and relationships necessary for broader transformation.
+**Phase Goal**: Demonstrate that Community Providers, Flexible Time, and Hearts economies can provide superior alternatives to extractive employment while building the infrastructure and relationships necessary for broader transformation.
 
 ### Foundation Building (Years 0-3)
 
@@ -61,16 +61,18 @@ The transformation from extractive labor to Work With Purpose requires careful o
 - **Payment Structure**: $500-800 monthly baseline (70% fiat, 30% Hearts) adjusted for local costs
 - **Coverage**: 10,000-50,000 participants per pilot site enabling meaningful community impact
 
-**Community Work Team Development**: Democratic work organization replacing gig platforms:
-- **Team Formation**: 50-100 teams per pilot BAZ across care, ecology, culture, and innovation sectors
+**Community Provider Development**: Democratic work organization replacing gig platforms:
+- **Provider Chartering**: 50-100 Community Providers per pilot BAZ across care, ecology, culture, and innovation sectors
 - **Skills Development**: 6-month Community Weaver training programs for 500 facilitators across pilot sites
 - **Technology Deployment**: Community Work App piloted in 5 cities with offline SMS backup systems
 - **Cultural Integration**: Indigenous knowledge keepers lead ecological teams with traditional knowledge protection
+- **Hearts Treasury Setup**: Regional Hearts Treasury partnerships established with local credit unions in each pilot BAZ
 
-**Hearts/Leaves Currency Launch**: Alternative recognition systems for meaningful contributions:
-- **Love Ledger Development**: Blockchain-based tracking system operational in all pilot sites
-- **Contribution Recognition**: Hearts for care work, Leaves for ecological restoration, community validation protocols
-- **Local Circulation**: Hearts/Leaves accepted by 25% of local businesses through incentive programs
+**Hearts/Leaves Currency Launch**: Community investment systems for meaningful contributions:
+- **Love Ledger Development**: Blockchain-based platform for non-monetized recognition of informal contributions with Gratitude Tokens
+- **Community Investment Flow**: Community members spend AUBI Hearts with Community Providers for services, generating provider revenue
+- **Hearts Treasury Operations**: Providers redeem accumulated Hearts for fiat at regional Hearts Treasury partnerships
+- **Local Circulation**: Hearts accepted by 25% of local businesses and Community Providers through incentive programs
 - **Cultural Protection**: Indigenous communities maintain control over traditional knowledge applications
 
 ### Industrial Transition (Years 3-7)
@@ -96,15 +98,15 @@ The transformation from extractive labor to Work With Purpose requires careful o
 ### Early Metrics and Evaluation (Years 5-10)
 
 **Quantitative Targets**:
-- **5% Global Workforce**: Participating in Community Work Teams by Year 10
+- **5% Global Workforce**: Participating in Community Providers by Year 10
 - **5% Hearts Adoption**: Local businesses accepting Hearts/Leaves for goods and services
 - **5% Green Jobs**: Proportion of work focused on ecological restoration and renewable energy
 - **2% Rewilded Land**: Territory returned to ecological restoration and Indigenous stewardship
-- **`<`1% Elite Capture**: Incidents of wealthy interests co-opting Community Work Teams
+- **`<`1% Elite Capture**: Incidents of wealthy interests co-opting Community Providers
 
 **Qualitative Indicators**:
-- **80% Community Engagement**: Satisfaction with Community Work Team participation and governance
-- **70% Worker Satisfaction**: Preference for Community Work Teams over traditional employment
+- **80% Community Engagement**: Satisfaction with Community Provider participation and governance
+- **70% Worker Satisfaction**: Preference for Community Providers over traditional employment
 - **60% Cultural Vitality**: Indigenous language use and traditional knowledge transmission in pilot sites
 - **50% Stress Reduction**: Improved mental health outcomes from reduced work anxiety and increased meaning
 
@@ -114,12 +116,13 @@ The transformation from extractive labor to Work With Purpose requires careful o
 
 **Case Study: Economic Security Enabling Ecological Restoration in East Africa**
 
-In rural Kenya's pilot BAZ, **AUBI Layer 1** delivered through mobile payments enables farmers to refuse exploitative crop contracts while joining **Community Work Teams** focused on watershed restoration. Teams earn **Leaves** for reforestation and soil regeneration while **Flexible Time** accommodates seasonal rhythms and cultural obligations, demonstrating how economic security enables regenerative work choice.
+In rural Kenya's pilot BAZ, **AUBI Layer 1** delivered through mobile payments enables farmers to refuse exploitative crop contracts while joining **Community Providers** focused on watershed restoration. Community members invest **Hearts** in restoration services, generating revenue for teams. Providers earn **Leaves** for reforestation and soil regeneration while **Flexible Time** accommodates seasonal rhythms and cultural obligations, demonstrating how economic security enables regenerative work choice.
 
 **GGF Mechanisms in Action:**
 * AUBI Layer 1 providing economic foundation for work choice
-* Community Work Teams organizing watershed restoration
+* Community Providers organizing watershed restoration through community Hearts investment
 * Leaves recognition for ecological contributions
+* Hearts Treasury enabling fiat conversion for equipment and materials
 * Flexible Time respecting cultural and seasonal rhythms
 
 **Real-World Analogue:** This scenario builds on **GiveDirectly's Universal Basic Income pilots in Kenya** and the success of **community-based natural resource management programs** across East Africa that have demonstrated how economic security and community control enable both poverty reduction and environmental restoration.
@@ -128,7 +131,7 @@ In rural Kenya's pilot BAZ, **AUBI Layer 1** delivered through mobile payments e
 
 > *"A river cuts through rock not because of its power, but because of its persistence."*
 
-**Phase Goal**: Scale successful Community Work Team models to 25% of global workforce while expanding AUBI coverage and completing major industrial transitions, building the infrastructure necessary for comprehensive system transformation.
+**Phase Goal**: Scale successful Community Provider models to 25% of global workforce while expanding AUBI coverage and completing major industrial transitions, building the infrastructure necessary for comprehensive system transformation.
 
 ### Economic System Expansion (Years 10-15)
 
@@ -140,15 +143,16 @@ In rural Kenya's pilot BAZ, **AUBI Layer 1** delivered through mobile payments e
 
 **Hearts/Leaves Economy Maturation**: Alternative currencies supporting 25% of economic activity:
 - **Business Integration**: 50% of local businesses accepting Hearts/Leaves with tax incentive programs
-- **Cooperative Development**: 10,000 worker cooperatives operating on Hearts/Leaves compensation models
+- **Cooperative Development**: 10,000 worker cooperatives operating as chartered Community Providers with Hearts-based revenue models
 - **Regional Networks**: Hearts/Leaves circulation across bioregional networks with exchange protocols
 - **Investment Integration**: Stewardship Bonds funding community infrastructure with Hearts/Leaves returns
 
-**Community Work Team Scaling**: Democratic work organization reaching critical mass:
-- **25% Workforce Participation**: 1 billion people organized through Community Work Teams globally
+**Community Provider Scaling**: Democratic work organization reaching critical mass:
+- **25% Workforce Participation**: 1 billion people organized through Community Providers globally
 - **Gig Platform Replacement**: 25% reduction in extractive gig economy with democratic alternatives
 - **Technology Maturation**: Community Work App operational across 100+ bioregions with full offline capability
-- **Cultural Integration**: Indigenous-led teams operational across all bioregions with traditional knowledge protection
+- **Hearts Treasury Network**: Regional Treasury systems interconnected for cross-BAZ Hearts conversion
+- **Cultural Integration**: Indigenous-led providers operational across all bioregions with traditional knowledge protection
 
 ### Industrial Transformation Acceleration (Years 15-20)
 
@@ -185,7 +189,7 @@ In rural Kenya's pilot BAZ, **AUBI Layer 1** delivered through mobile payments e
 - **Technology Governance**: Community Work Apps integrated with broader technology sovereignty and AI governance
 
 **International Movement Building**: Global solidarity supporting work liberation across all contexts:
-- **Movement Coordination**: 10,000 organizers trained in Community Work Team development and Flexible Time implementation
+- **Movement Coordination**: 10,000 organizers trained in Community Provider development and Flexible Time implementation
 - **Cultural Exchange**: Worker exchanges between bioregions strengthening solidarity and sharing innovations
 - **Research Documentation**: Comprehensive evaluation of Phase 2 outcomes informing Phase 3 strategy
 - **Crisis Response**: Coordinated mutual aid during economic disruption, climate disasters, and political repression
@@ -194,13 +198,13 @@ In rural Kenya's pilot BAZ, **AUBI Layer 1** delivered through mobile payments e
 
 **Case Study: Industrial Region Transition Through Democratic Work Organization**
 
-In Michigan's Detroit bioregion, **Community Work Teams** coordinate the transformation from automotive manufacturing to renewable energy and urban agriculture cooperatives. **Just Transition** support enables autoworkers to maintain income through **AUBI** while learning new skills, with **worker cooperatives** providing democratic ownership and **Hearts/Leaves** recognition for community-serving production.
+In Michigan's Detroit bioregion, **Community Providers** coordinate the transformation from automotive manufacturing to renewable energy and urban agriculture cooperatives. **Just Transition** support enables autoworkers to maintain income through **AUBI** while learning new skills, with **worker cooperatives** chartered as Community Providers offering democratic ownership and earning **Hearts** through community investment in their services.
 
 **GGF Mechanisms in Action:**
-* Community Work Teams coordinating industrial transition
+* Community Providers coordinating industrial transition
 * AUBI providing economic security during transformation
 * Worker cooperatives replacing corporate employment
-* Hearts/Leaves recognizing community-beneficial production
+* Hearts economy enabling community investment in regenerative production
 
 **Real-World Analogue:** This scenario builds on **Detroit's urban agriculture movement** and **cooperative development initiatives** like the **Detroit Community Wealth Fund**, demonstrating how post-industrial cities can transition from extraction to regeneration through democratic economic organization and community ownership.
 
@@ -208,18 +212,18 @@ In Michigan's Detroit bioregion, **Community Work Teams** coordinate the transfo
 
 > *"The fruit that will fall is the fruit that is ripe."*
 
-**Phase Goal**: Achieve comprehensive transformation where Work With Purpose becomes the dominant organizing principle for human productive activity, with 50% of global workforce organized through Community Work Teams and extractive industries eliminated or transformed.
+**Phase Goal**: Achieve comprehensive transformation where Work With Purpose becomes the dominant organizing principle for human productive activity, with 50% of global workforce organized through Community Providers and extractive industries eliminated or transformed.
 
 ### System-Wide Transformation (Years 20-25)
 
 **Universal AUBI Implementation**: Economic security as human right:
 - **Global Coverage**: AUBI Layer 1 available to all humans as universal entitlement
-- **80% Layer 2/3 Participation**: Majority of population earning Hearts/Leaves through meaningful contributions
+- **80% Layer 2/3 Participation**: Majority of population engaged with Hearts/Leaves through community investment and ecological contribution
 - **Regional Adaptation**: Payment amounts and currency mixes adapted to local costs and cultural preferences
 - **Crisis Resilience**: Enhanced coverage during emergencies ensuring no one faces economic insecurity
 
-**Community Work Team Dominance**: Democratic work organization as primary employment model:
-- **50% Global Workforce**: 3+ billion people organized through Community Work Teams
+**Community Provider Dominance**: Democratic work organization as primary employment model:
+- **50% Global Workforce**: 3+ billion people organized through Community Providers
 - **Cooperative Economy**: Worker-owned enterprises providing 40% of goods and services globally
 - **Gig Platform Elimination**: Complete replacement of extractive platforms with democratic alternatives
 - **Technology Integration**: AI and automation fully integrated to enhance rather than replace human creativity
@@ -242,7 +246,7 @@ In Michigan's Detroit bioregion, **Community Work Teams** coordinate the transfo
 - **30% Green Jobs**: Nearly one-third of all work focused on ecological restoration and renewable energy
 - **25% Rewilded Land**: Territory returned to ecological restoration and Indigenous stewardship
 - **Biodiversity Recovery**: 50% increase in species populations through habitat restoration work
-- **Carbon Sequestration**: Community Work Teams achieving net negative emissions through restoration work
+- **Carbon Sequestration**: Community Providers achieving net negative emissions through restoration work
 
 **Social Justice Integration**: Work organization supporting comprehensive equity and healing:
 - **Inequality Reduction**: 10% reduction in Gini coefficient through AUBI and democratic work organization
@@ -265,7 +269,7 @@ In Michigan's Detroit bioregion, **Community Work Teams** coordinate the transfo
 - **Ecological Alignment**: All technology development supporting rather than undermining planetary health
 
 **Movement Consolidation**: Work liberation established as permanent alternative to extractive employment:
-- **60% Worker Satisfaction**: Majority preferring Community Work Teams to traditional employment
+- **60% Worker Satisfaction**: Majority preferring Community Providers to traditional employment
 - **90% Community Support**: Overwhelming approval for Work With Purpose principles and implementation
 - **Cultural Integration**: Work liberation values embedded in educational systems and cultural practices
 - **Generational Transmission**: Young people growing up expecting democratic, meaningful work as normal
@@ -274,12 +278,12 @@ In Michigan's Detroit bioregion, **Community Work Teams** coordinate the transfo
 
 **Case Study: Bioregional Coordination Supporting Global Ecological Restoration**
 
-By Year 25, **Community Work Teams** across Pacific Rim bioregions coordinate forest restoration, ocean cleanup, and renewable energy development that addresses global climate change while supporting local communities. The **Fractal Labor Parliament** coordinates **Hearts/Leaves** exchange enabling Japanese urban agriculture teams to support Philippine coral restoration while maintaining bioregional sovereignty and Indigenous leadership.
+By Year 25, **Community Providers** across Pacific Rim bioregions coordinate forest restoration, ocean cleanup, and renewable energy development that addresses global climate change while supporting local communities. The **Fractal Labor Parliament** coordinates **Hearts** exchange enabling Japanese urban agriculture providers to support Philippine coral restoration while maintaining bioregional sovereignty and Indigenous leadership.
 
 **GGF Mechanisms in Action:**
-* Global Community Work Team coordination
+* Global Community Provider coordination
 * Fractal Labor Parliament facilitating inter-bioregional cooperation
-* Hearts/Leaves enabling cross-regional mutual aid
+* Hearts Treasury networks enabling cross-regional mutual aid
 * Indigenous leadership maintaining cultural sovereignty
 
 **Real-World Analogue:** This scenario extends current **international climate cooperation** like the **Global Environment Facility** while building on successful **community-based resource management** networks that already coordinate across national boundaries while respecting Indigenous sovereignty and local governance.
@@ -324,7 +328,7 @@ By Year 25, **Community Work Teams** across Pacific Rim bioregions coordinate fo
 
 **Climate Emergency Integration**: Using climate crises as opportunities for accelerated transformation:
 - **Emergency Restoration**: Climate disasters creating immediate demand for ecological restoration work
-- **Community Adaptation**: Community Work Teams coordinating climate adaptation and resilience building
+- **Community Adaptation**: Community Providers coordinating climate adaptation and resilience building
 - **Just Transition**: Climate policies ensuring transition costs don't fall on workers and marginalized communities
 - **Indigenous Leadership**: Traditional knowledge guiding climate response and ecosystem restoration
 
@@ -333,7 +337,7 @@ By Year 25, **Community Work Teams** across Pacific Rim bioregions coordinate fo
 ### Quantitative Benchmarks
 
 **Workforce Transformation Metrics**:
-- **Year 5**: 5% workforce in Community Work Teams
+- **Year 5**: 5% workforce in Community Providers
 - **Year 10**: 15% workforce participation with 10% green jobs
 - **Year 15**: 25% workforce participation with 20% green jobs
 - **Year 20**: 40% workforce participation with 30% green jobs
@@ -380,7 +384,7 @@ By Year 25, **Community Work Teams** across Pacific Rim bioregions coordinate fo
 **Political Resistance**: Strategies for overcoming opposition from existing power structures:
 - **Movement Building**: Grassroots organizing building community support for work liberation
 - **Electoral Strategy**: Supporting candidates committed to AUBI, worker cooperatives, and Indigenous sovereignty
-- **Direct Action**: Community organizing and resistance protecting Community Work Teams from interference
+- **Direct Action**: Community organizing and resistance protecting Community Providers from interference
 - **Legal Strategy**: Court challenges protecting worker rights and Indigenous sovereignty
 
 **Economic Disruption**: Maintaining progress during financial crises or market instability:
@@ -390,7 +394,7 @@ By Year 25, **Community Work Teams** across Pacific Rim bioregions coordinate fo
 - **Crisis Opportunity**: Using economic disruption to demonstrate superiority of democratic alternatives
 
 **Climate Emergency**: Adapting implementation to accelerating ecological breakdown:
-- **Emergency Mobilization**: Community Work Teams focusing on climate adaptation and disaster response
+- **Emergency Mobilization**: Community Providers focusing on climate adaptation and disaster response
 - **Ecosystem Restoration**: Accelerated ecological work addressing climate breakdown and biodiversity loss
 - **Community Resilience**: Local food systems and renewable energy reducing vulnerability to climate impacts
 - **Indigenous Leadership**: Traditional knowledge guiding climate response and ecosystem restoration
@@ -417,6 +421,6 @@ By Year 25, **Community Work Teams** across Pacific Rim bioregions coordinate fo
 
 ---
 
-**Next Steps**: This implementation plan provides the roadmap for 25-year transformation from extractive labor to Work With Purpose. Continue to [Key Tools and Technologies](/frameworks/work-in-liberation#tools-technologies) to explore the practical instruments enabling this transformation, or access the [Community Work Team Starter Kit](/frameworks/tools/work-in-liberation/community-work-team-starter-kit.pdf) to begin immediate implementation in your community.
+**Next Steps**: This implementation plan provides the roadmap for 25-year transformation from extractive labor to Work With Purpose. Continue to [Key Tools and Technologies](/frameworks/work-in-liberation#tools-technologies) to explore the practical instruments enabling this transformation, or access the [Community Provider Starter Kit](/frameworks/tools/work-in-liberation/community-provider-starter-kit.pdf) to begin immediate implementation in your community.
 
 **Implementation Note**: The 25-year timeline provides strategic direction while remaining flexible enough to adapt to crisis opportunities, technological developments, and cultural evolution. Communities should begin with Phase 1 pilots while building relationships and infrastructure necessary for Phase 2 scaling, always under Indigenous leadership and with respect for traditional governance systems.

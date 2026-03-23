@@ -1,10 +1,10 @@
 ---
 title: Work in Liberation: Transformative Labour & Employment Governance Framework
 section: index
-status: First Release
-revision: 1.0
-lastUpdated: 2025-07-11
-nextReview: too be determined
+status: Revised
+revision: 1.9
+lastUpdated: 2026-03-23
+nextReview: to be determined
 releaseDate: 2025-07-11
 ---
 
@@ -25,27 +25,27 @@ In a world where millions toil in survival jobs while automation eliminates mean
 
 ## <a id="overview"></a>Overview
 
-**Framework Position**: The Work in Liberation Framework serves as the **organizational and coordination engine** for meaningful work within the broader [Global Governance Framework ecosystem](/frameworks/meta-governance). It builds directly on the economic foundation provided by the [AUBI Framework](/frameworks/aubi), organizing the contributions enabled by economic security into Community Work Teams guided by Indigenous sovereignty through [Bioregional Autonomous Zones](/frameworks/indigenous-governance-and-traditional-knowledge). While AUBI provides freedom from survival anxiety, Work in Liberation transforms that freedom into purposeful action for planetary and community healing.
+**Framework Position**: The Work in Liberation Framework serves as the **organizational and coordination engine** for meaningful work within the broader [Global Governance Framework ecosystem](/frameworks/meta-governance). It builds directly on the economic foundation provided by the [AUBI Framework](/frameworks/aubi), organizing the contributions enabled by economic security into chartered **Community Providers**—including Community Work Teams—guided by Indigenous sovereignty through [Bioregional Autonomous Zones](/frameworks/indigenous-governance-and-traditional-knowledge). While AUBI provides freedom from survival anxiety, Work in Liberation transforms that freedom into purposeful action for planetary and community healing.
 
-This framework presents a **revolutionary alternative to extractive labor systems**, moving beyond reform to fundamental transformation of how humans organize productive activity. It integrates [Hearts and Leaves currencies](/frameworks/financial-systems) for recognizing care and ecological work, operates through Community Work Teams under Indigenous-led governance, and coordinates globally through the Fractal Labor Parliament as a Meta-Governance Coordination Council. Aligned with the [Treaty for Our Only Home](/frameworks/treaty-for-our-only-home)'s Ecocide enforcement and guided by Traditional Ecological Knowledge, it ensures work serves life rather than exploiting it.
+This framework presents a **revolutionary alternative to extractive labor systems**, moving beyond reform to fundamental transformation of how humans organize productive activity. It integrates [Hearts and Leaves currencies](/frameworks/financial-systems) for recognizing care and ecological work, operates through Community Providers under Indigenous-led governance with community investment flowing through the **Hearts Treasury**, and coordinates globally through the Fractal Labor Parliament as a Meta-Governance Coordination Council. Aligned with the [Treaty for Our Only Home](/frameworks/treaty-for-our-only-home)'s Ecocide enforcement and guided by Traditional Ecological Knowledge, it ensures work serves life rather than exploiting it.
 
 ### Vision: A Day in the Life, 2045
 
-Picture this: In 2045, in a Tanzanian **Bioregional Autonomous Zone (BAZ)**, you wake secure knowing your **AUBI Layer 1** provides unconditional income (70% fiat/$840, 30% Hearts/$360 monthly), freeing you from survival worries. Through the **Community Work App**, you join a watershed restoration team under Indigenous-led BAZ governance, earning **AUBI Layer 2 Bonuses** in Hearts for mentoring youth (20% boost) and Leaves for ecological work (adjusted by your Green Job Score). Your contributions are logged in the **Love Ledger**, building community wealth while restoring ecosystems.
+Picture this: In 2045, in a Tanzanian **Bioregional Autonomous Zone (BAZ)**, you wake secure knowing your **AUBI Layer 1** provides unconditional income (70% fiat/$840, 30% Hearts/$360 monthly), freeing you from survival worries. Through the **Community Work App**, you join a watershed restoration team—a **Community Provider** chartered under Indigenous-led BAZ governance. Community members spend their AUBI **Hearts** with your team for restoration services, generating revenue that funds operations, pays stipends, and covers materials. Informal contributions like mentoring youth are recognized separately via the **Love Ledger** with non-monetized Gratitude Tokens, feeding into the **Love, Meaning, and Connection Index (LMCI)**. Your team redeems accumulated Hearts at the regional **Hearts Treasury** for fiat currency to purchase equipment and external supplies.
 
-Your **Flexible Time** schedule (15-hour weekly cap) respects cultural rhythms and seasonal cycles, leaving abundant time for family, creativity, and spiritual practice. At evening **Community Renewal** ceremonies, elders and youth validate your team's ecological contributions, guided by global principles from the **Fractal Labor Parliament** but adapted to local Indigenous protocols. **Work With Purpose**—focused on care, creativity, and planetary health—has replaced extractive employment, supported by **Technology That Helps** rather than surveils, all coordinated through Indigenous wisdom and Treaty-aligned governance.
+Your **Flexible Time** schedule (15-hour weekly cap) respects cultural rhythms and seasonal cycles, leaving abundant time for family, creativity, and spiritual practice. At evening **Community Renewal** ceremonies, elders and youth validate your team's **Green Job Score**, guided by global principles from the **Fractal Labor Parliament** but adapted to local Indigenous protocols. **Work With Purpose**—focused on care, creativity, and planetary health—has replaced extractive employment, supported by **Technology That Helps** rather than surveils, all coordinated through Indigenous wisdom and Treaty-aligned governance.
 
 By 2045, 50% of people live this way globally, with 30% of all jobs actively regenerating ecosystems, sustained by adaptive governance that combines ancient wisdom with contemporary coordination needs.
 
-**2050 Commitment**: 80% participation in Work With Purpose, complete elimination of extractive gig platforms, and 40% of global land under regenerative stewardship through Community Work Teams.
+**2050 Commitment**: 80% participation in Work With Purpose, complete elimination of extractive gig platforms, and 40% of global land under regenerative stewardship through Community Providers.
 
 ### Key Features
 
-**Community Work Teams**: Self-organizing groups coordinated through Indigenous-led BAZ governance, replacing gig platforms with democratic, community-controlled work organization that serves local needs and global healing.
+**Community Providers**: Chartered organizations—including Community Work Teams—coordinated through Indigenous-led BAZ governance, replacing gig platforms with democratic, community-controlled work organization that serves local needs and global healing. Communities invest Hearts in provider services, and providers redeem Hearts at the Hearts Treasury for fiat currency.
 
-**Fractal Labor Parliament (FLP)**: Global coordination council operating under Meta-Governance principles, setting universal standards for contribution recognition while ensuring BAZ-level adaptation respects cultural sovereignty and traditional governance.
+**Fractal Labor Parliament (FLP)**: Global coordination council operating under Meta-Governance principles, setting universal standards for contribution recognition while ensuring BAZ-level adaptation respects cultural sovereignty and traditional governance. Earth Council veto authority protects ecological integrity through the Slow-Variable Decision Protocol.
 
-**Hearts and Leaves Integration**: Meaningful work rewarded through complementary currencies—Hearts for care and social contributions, Leaves for ecological restoration—logged in the Love Ledger and distributed through AUBI Layer 2/3 bonuses.
+**Hearts and Leaves Integration**: Community members spend Hearts with Community Providers for services, generating provider revenue. Leaves reward ecological restoration work validated by the Green Job Score. The Love Ledger separately recognizes informal contributions with non-monetized Gratitude Tokens.
 
 **Flexible Time and Accessibility**: Universal 15-hour weekly maximum by 2035, with neurodiversity support, cultural rhythm accommodation, and seasonal cycle alignment ensuring work serves human flourishing rather than demanding sacrifice.
 
@@ -57,7 +57,11 @@ By 2045, 50% of people live this way globally, with 30% of all jobs actively reg
 
 ## <a id="framework-sections"></a>Framework Sections
 
-The framework integrates ancient wisdom with contemporary coordination needs through ten interconnected sections:
+The framework integrates ancient wisdom with contemporary coordination needs through twelve interconnected sections:
+
+### **[Preface: Terminology and Intent](/frameworks/work-in-liberation#preface-terminology)**
+*"Both registers describe the same work system architecture. Both are true. Both are necessary."*  
+Dual-register language approach, analytical terminology translations, and guidance for reading the framework across professional and organizing contexts.
 
 ### **[Introduction: Organizing Work With Purpose](/frameworks/work-in-liberation#introduction)**
 *"Work is not separate from life—it is life expressing itself through service to the whole."*  
@@ -69,7 +73,11 @@ Five foundational principles: Work as Planetary Contribution, Freedom from Survi
 
 ### **[Core Components](/frameworks/work-in-liberation#core-components)**
 *"When spider webs unite, they can tie up a lion."*  
-Fractal Labor Parliament, Community Work Teams, Flexible Work Agreements, Fair Pay Systems, and Dispute Resolution mechanisms.
+Fractal Labor Parliament, Community Providers and Work Teams, Hearts Treasury, Fluid Project Assembly, Flexible Work Agreements, Fair Pay Systems, and Dispute Resolution mechanisms.
+
+### **[Flagship Global Mobilizations](/frameworks/work-in-liberation#flagship-mobilizations)**
+*"The ocean does not belong to nations. It belongs to itself. Our work is to remember that."*  
+Large-scale transnational labor organization for planetary commons challenges, including the Marine Stewardship Corps for High Seas Treaty enforcement.
 
 ### **[25-Year Implementation Plan](/frameworks/work-in-liberation#implementation-plan)**
 *"The best time to plant a tree was 20 years ago. The second best time is now."*  
@@ -171,17 +179,17 @@ The framework operates through community-controlled access principles, ensuring 
 ### **Implementation Support**
 - **Community Consultation**: Technical assistance available for communities implementing Work in Liberation principles through secure, culturally appropriate channels
 - **Cultural Adaptation**: Framework explicitly designed for local adaptation while maintaining core principles of Indigenous sovereignty and ecological integrity  
-- **Pilot Program Support**: Resources available for communities piloting Community Work Teams, Flexible Time agreements, and democratic work coordination
+- **Pilot Program Support**: Resources available for communities piloting Community Providers, Flexible Time agreements, and democratic work coordination
 
 ### **Engagement and Organizing**
-- **Coalition Building**: Connect with existing Work in Liberation pilots, Community Work Teams, and Indigenous-led BAZ initiatives worldwide
+- **Coalition Building**: Connect with existing Work in Liberation pilots, Community Providers, and Indigenous-led BAZ initiatives worldwide
 - **Training and Education**: Access Community Weaver training programs, democratic facilitation workshops, and Traditional Ecological Knowledge education
 - **Research and Development**: Contribute to ongoing framework development through community-based participatory research respecting Indigenous protocols
 
 ### **Contact and Coordination**
 - **Primary Contact**: workinliberation@globalgovernanceframeworks.org
 - **Subject Line Guidance**:
-  - "Community Work Teams" - for local organizing and team formation
+  - "Community Providers" - for local organizing and provider chartering
   - "Indigenous Sovereignty" - for Traditional Ecological Knowledge integration
   - "Technology Cooperation" - for Community Work App and Love Ledger implementation
   - "Policy Development" - for Fractal Labor Parliament participation and Industrial Sunsetting
@@ -197,10 +205,10 @@ Communities maintain complete authority to modify, exit, or redirect framework i
 
 ### **Immediate Implementation Opportunities (2025-2026)**
 
-1. **Join Community Work Teams**: Connect with existing democratic work initiatives in your bioregion
-2. **Pilot Flexible Time**: Implement 25-hour weekly maximum and accessibility-centered scheduling
+1. **Join Community Providers**: Connect with existing democratic work initiatives in your bioregion or charter new Community Providers
+2. **Pilot Flexible Time**: Implement 15-hour weekly maximum and accessibility-centered scheduling
 3. **Support Indigenous Leadership**: Ensure Traditional Ecological Knowledge guides all ecological work
-4. **Build Hearts/Leaves Economy**: Begin tracking care and ecological contributions through alternative currencies
+4. **Build Hearts Economy**: Begin community investment in provider services through Hearts, with Hearts Treasury enabling fiat conversion
 5. **Industrial Transition**: Support workers leaving extractive industries for regenerative alternatives
 6. **Technology Cooperation**: Deploy Community Work Apps and Love Ledger systems under community control
 
@@ -217,6 +225,6 @@ Communities maintain complete authority to modify, exit, or redirect framework i
 
 **About This Framework**: Developed through Indigenous-led design processes with extensive community consultation, representing synthesis of traditional work organization, contemporary coordination needs, and ecological restoration requirements. Maintained by work liberation organizers and Indigenous knowledge keepers at globalgovernanceframework.org.
 
-**The Vision Realized**: By 2045, work serves life rather than exploiting it—where Community Work Teams restore watersheds rather than extracting resources, where Hearts and Leaves currencies recognize care rather than commodifying labor, where Indigenous wisdom guides technology rather than being displaced by automation, and where Flexible Time enables human flourishing rather than demanding sacrifice for survival.
+**The Vision Realized**: By 2045, work serves life rather than exploiting it—where Community Providers restore watersheds rather than extracting resources, where Hearts and Leaves currencies recognize care rather than commodifying labor, where Indigenous wisdom guides technology rather than being displaced by automation, and where Flexible Time enables human flourishing rather than demanding sacrifice for survival.
 
 **The transformation begins in our communities, guided by ancient wisdom, coordinated through contemporary tools, and grounded in the understanding that our work must serve the seventh generation yet to come.**

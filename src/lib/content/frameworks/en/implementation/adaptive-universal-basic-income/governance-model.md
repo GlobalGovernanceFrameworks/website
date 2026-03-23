@@ -37,11 +37,29 @@ Dr. Williams works with Indigenous health leaders who demonstrate how traditiona
 
 These members must demonstrate commitment to economic justice and ecological sustainability through their research and practice, with selection processes that prioritize scholars who work directly with communities rather than in isolation from the people affected by economic policies.
 
-**Youth Delegates (20%)**: Representatives aged 16-25 selected through inclusive processes that ensure next-generation voices shape decisions affecting their futures. Youth members bring innovation, long-term thinking, and fresh perspectives on technology and social change.
+**Youth Delegates (20%)**: Representatives aged 18-30 elected by BAZ-level youth councils, with one seat per BAZ cluster (groups of 5-10 BAZs by population). Youth members bring innovation, long-term thinking, and fresh perspectives on technology and social change.
 
 Maya represents youth voices in economic governance by advocating for climate adaptation investments that will determine whether her generation has a livable future, promoting traditional knowledge preservation that connects ancestral wisdom with contemporary challenges, and supporting technological innovations that serve community sovereignty rather than corporate control.
 
-**Corporate Accountability Officers (10%)**: Representatives focused on preventing corporate capture and ensuring business participation serves community benefit rather than extractive profit. These members monitor automation dividend compliance, progressive taxation implementation, and cooperative enterprise development.
+**Corporate Accountability Officers (10%)**: Representatives focused on preventing corporate capture and ensuring business participation serves community benefit rather than extractive profit. These members are nominated by civil society and vetted by Earth Council; corporations with active Hearts-economy interests are ineligible to nominate. They monitor automation dividend compliance, progressive taxation implementation, and cooperative enterprise development.
+
+### Selection Mechanisms and Term Structure
+
+Indigenous representatives are nominated by recognized BAZ-level Indigenous councils and ratified by the Indigenous & Traditional Knowledge Governance Framework's oversight body, with no single BAZ holding more than 15% of Indigenous seats. Social economists and scientists are nominated by regional academic and civil society bodies via open call, then selected by sortition from a vetted candidate pool. Youth delegates are elected by BAZ-level youth councils. Corporate accountability officers are nominated by civil society and vetted by Earth Council.
+
+All seats carry staggered two-year terms with a maximum of two consecutive terms, followed by a mandatory two-year cooling-off period. Elections and selections are staggered so that no more than 50% of seats turn over in any single cycle, preserving institutional continuity. Vacancies must be filled within 90 days using the same mechanism as the original seat; the Earth Council appoints a temporary steward if the timeline is not met.
+
+### Conflict-of-Interest Protocol
+
+Members must disclose all financial relationships with entities operating Hearts-denominated services, BAZ councils with pending SRC decisions, or technology providers to the Love Ledger or Hearts Treasury. Disclosed conflicts require recusal from the specific decision; undisclosed conflicts discovered post-decision trigger automatic referral to the Digital Justice Tribunal. No member may accept employment, advisory roles, or Hearts-denominated grants from entities regulated by SRC decisions for 18 months after leaving the Council.
+
+### Capture-Prevention Architecture
+
+Structural safeguards prevent the Council from being captured by economically powerful BAZs or institutional actors:
+
+BAZ Hearts-economy size (volume transacted) is explicitly excluded from seat-weighting formulas. Representation is weighted by population and ecological dependency only. Any proposal that would concentrate Hearts issuance authority, remove demurrage, or create tiered redemption access requires a supermajority (75%) including at least 60% of Indigenous seats.
+
+An annual independent audit, conducted by rotating external evaluators selected by Meta-Governance, assesses whether SRC decisions have systematically favored high-Hearts-volume BAZs. Results are published on the public dashboard.
 
 ### Indigenous Protection Protocols
 
@@ -134,6 +152,36 @@ Ambassador Chen's island nation demonstrates Indigenous-led crisis response when
 Dr. Williams advocates for emergency healthcare protocols that maintain traditional healing authority alongside biomedical crisis response, ensuring cultural sovereignty continues even when rapid medical intervention requires coordination with external healthcare systems.
 
 **Democratic Restoration Requirements**: All emergency measures include automatic review processes that restore normal democratic governance as soon as crisis conditions allow, with community oversight ensuring emergency powers end promptly rather than becoming permanent features.
+
+### Reformation Trigger
+
+If 30% or more of active BAZs formally petition for SRC structural review within a 12-month window, an independent constitutional review process is automatically initiated under Meta-Governance oversight, with findings binding within 180 days. This is the architectural equivalent of a circuit breaker against slow institutional capture — it enables the system to correct itself when incremental drift has accumulated beyond what individual dispute mechanisms can address.
+
+The NARP objection pathway (Financial Systems Framework) serves as the first-line mechanism for BAZs to resist specific policy changes; the 30% reformation petition applies to broader SRC structural concerns that cannot be resolved change-by-change.
+
+## Slow-Variable Decision Protocol
+
+Fast economic and political signals — Hearts velocity, quarterly LMCI-A scores, inflation indicators — are structurally louder than slow ecological signals such as permafrost thaw trajectories, migratory route shifts, decadal soil health trends, and inter-generational fishery dynamics. In any mixed council operating under time pressure, fast signals will dominate deliberation unless slow-variable categories are explicitly ring-fenced. The Earth Council veto is a reactive mechanism that blocks identifiable harm. This section establishes a complementary proactive mechanism: certain decision categories cannot proceed without affirmative sign-off from long-embedded knowledge holders, regardless of the broader council's disposition.
+
+### Slow-Variable Decision Category (SVDC)
+
+A decision qualifies as SVDC if it materially affects any variable whose consequences manifest primarily on a timescale of ten years or longer, and where the primary observational record is held by communities with continuous, multigenerational presence in affected ecosystems. Qualifying decisions include but are not limited to:
+
+Leaves valuation formulas and ecological multipliers (Green Job Score baselines); carbon sequestration thresholds used in Leaves issuance; AUBI issuance caps tied to ecological regeneration benchmarks; Industrial Sunsetting timelines for extractive sectors; Hearts Treasury reserve ratio adjustments that alter long-term fiat dependency trajectories; and any revision to LMCI-M ecological components that changes which slow signals feed governance dashboards.
+
+Economic decisions with purely short-cycle consequences — quarterly Hearts supply adjustments within established bands, individual BAZ dispute resolutions, administrative fee structures — do not qualify as SVDC. When classification is disputed, the Earth Council makes the determination, with appeals to the Digital Justice Tribunal.
+
+### Long-Embedded Knowledge Holder (LEKH) Quorum
+
+Not all Indigenous SRC seats carry LEKH quorum rights for all decisions. LEKH quorum rights attach to communities, not to individuals, based on demonstrated multigenerational observational presence in the specific ecosystem affected by a given SVDC.
+
+A community qualifies for LEKH quorum rights when it holds verified traditional ecological knowledge records (oral, written, or material) spanning a minimum of three generations for the relevant ecosystem type; its territory or primary subsistence practice is directly affected by the decision's projected slow-variable consequences; and its SRC delegate is formally nominated by that community's governance body rather than merely Indigenous by heritage.
+
+For each SVDC, the Earth Council identifies which communities hold LEKH quorum rights for that specific decision, drawing from a registry maintained by the Indigenous & Traditional Knowledge Governance Framework. A community may hold LEKH rights for ocean decisions but not forest decisions; specificity matters.
+
+**Quorum Threshold**: A SVDC requires affirmative votes from a minimum of 60% of LEKH-qualified delegates identified for that decision. Abstention does not count as affirmative. If fewer than three LEKH-qualified delegates are available for a decision, the decision is automatically deferred until adequate representation is secured, with a maximum deferral of 90 days and a mandatory status report at 45 days.
+
+**Separation from Veto**: LEKH quorum is a positive requirement, not a veto. A SVDC that receives 60%+ LEKH affirmative votes can still be blocked by the Earth Council veto if it threatens ecological integrity — the two mechanisms are independent and cumulative.
 
 ## Accountability and Transparency Systems
 

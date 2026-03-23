@@ -34,7 +34,7 @@ export const economicOSEntities: GgfEntity[] = [
       path: '/frameworks/adaptive-universal-basic-income',
       titleKey: 'framework.docs.nav.frameworkTitles.adaptiveUniversalBasicIncome',
       emoji: '💰',
-      version: '1.0',
+      version: '2.2',
       slug: 'adaptive-universal-basic-income',
       group: 'globalEconomicSystems'
     }
@@ -75,7 +75,7 @@ export const economicOSEntities: GgfEntity[] = [
       path: '/frameworks/work-in-liberation',
       titleKey: 'framework.docs.nav.frameworkTitles.workInLiberation',
       emoji: '👥',
-      version: '1.0',
+      version: '1.9',
       slug: 'work-in-liberation',
       group: 'globalEconomicSystems'
     }

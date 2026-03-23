@@ -85,6 +85,22 @@ This transforms employment relationships from coercion-based to contribution-bas
 
 **Community Provider Employment**: Many community members find meaningful employment within chartered Community Providers that offer professional development, democratic workplace governance, and alignment between personal values and work contribution while earning stable income through Hearts redemption.
 
+### Universal Baseline for Stateless, Displaced, and Nomadic Peoples
+
+The right to material liberation is inherent to personhood, not contingent on citizenship, fixed address, or documentation. This subsection explicitly covers stateless peoples (including but not limited to Romani, Rohingya, Nubians, some Kurds, and Palestinians), climate and conflict displaced persons, nomadic and pastoralist communities (such as Mongols, Tuareg, and Bedouin), and the unhoused.
+
+**Community Attestation Enrollment**: Individuals without state-issued documentation can be enrolled through a verified attestation process by a recognized community organization, religious institution, or existing BAZ council. A multi-witness model requiring three or more community members creates a robust, decentralized form of identity verification.
+
+**Love Ledger Native ID**: For those completely outside formal systems, a lightweight Love Ledger Native ID can be created using biometrics (with explicit consent) or hardware tokens, establishing a portable identity for AUBI access without requiring integration into state identity systems.
+
+**Mobile Registration Units**: Deployable teams coordinate with Community Weavers to enroll nomadic, homeless, and remote populations, ensuring AUBI services are deliverable to seasonal routes and temporary settlements.
+
+**Payout Access Without Fixed Address**: Payouts are accessible not only through digital wallets but also through designated community centers (libraries, places of worship, BAZ hubs), postal cash-out services, and mobile money agents in partnership with local credit unions. Payout location does not affect eligibility, and the system is designed for geographic mobility.
+
+**Implementation Partnerships**: Enrollment and protection for these populations operates through partnerships with UNHCR and IOM for refugees and stateless persons, community-based organizations as trusted enrollment and validation nodes, and diaspora networks for dispersed communities.
+
+**Safeguards**: A non-discrimination clause explicitly prohibits profiling or exclusion based on ethnicity, lifestyle (nomadic or sedentary), or documentation status. Data collected for enrollment is owned and controlled by the individual or their designated community organization, with strict protocols against sharing with immigration or law enforcement agencies. In regions with tense relationships between mobile and sedentary populations, implementation includes dialogue facilitation to prevent the program from becoming a source of new conflict.
+
 ## Layer 2: Contribution & Development Bonus (Hearts Currency)
 
 **Layer 2** rewards contributions to love, meaning, and connection through Hearts currency payments earned exclusively by **chartered Community Providers** that demonstrate authentic community benefit and Right Relationship alignment while maintaining professional standards and community accountability.

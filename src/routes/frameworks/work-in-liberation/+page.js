@@ -40,11 +40,13 @@ export async function load({ depends, url, params }) {
    
    // Foundation sections
    'preamble',
+   'preface-terminology',
    'introduction',
    'core-principles',
    
    // Core framework sections
    'core-components',
+   'flagship-mobilizations',
    'implementation-plan',
    'tools-technologies',
    'monitoring-evaluation',
@@ -134,12 +136,12 @@ export async function load({ depends, url, params }) {
    // Additional metadata for Work in Liberation Framework
    frameworkType: 'work-in-liberation',
    totalSections: sections.length,
-   coreFrameworkSections: 10,
+   coreFrameworkSections: 12,
    hasSupplementaryMaterials: true,
    hasExecutiveSummary: true,
    
    // Work in Liberation Framework-specific metadata
-   frameworkVersion: '2.3',
+   frameworkVersion: '1.9',
    isLabourFramework: true,
    tier: 1, // Foundational Organizational Framework
    implementationPhases: 3,
@@ -148,7 +150,9 @@ export async function load({ depends, url, params }) {
    
    // Core governance metadata
    fractalLaborParliament: true,
+   communityProviders: true,
    communityWorkTeams: true,
+   heartsTreasury: true,
    aubiIntegration: true,
    indigenousLeadership: true,
    bioregionalAutonomousZones: true,
@@ -160,6 +164,8 @@ export async function load({ depends, url, params }) {
    flexibleTimeAgreements: true,
    communityWorkApp: true,
    industrialSunsetting: true,
+   flagshipMobilizations: true,
+   fluidProjectAssembly: true,
    
    // Economic transformation metadata
    workWithPurpose: true,
@@ -227,8 +233,8 @@ export async function load({ depends, url, params }) {
      fallbackSections: Array.from(sectionsUsingEnglishFallback),
      loadSuccess: loadedSections === sections.length,
      frameworkTier: 'foundational-organizational',
-     workAsPlanetalyContribution: true,
-     communityWorkTeamsReady: true,
+     communityProvidersReady: true,
+     heartsTreasuryReady: true,
      loveLedgerInDevelopment: true,
      transformativeLabourGovernance: true,
      workInLiberationMovement: true

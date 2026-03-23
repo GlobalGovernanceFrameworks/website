@@ -77,6 +77,16 @@ The **Hearts Treasury** system provides a concrete example: These community-cont
 
 When the coal mines in Appalachia finally close in 2033, the workers don't face unemployment and despair. Instead, Community Providers trained in ecosystem restoration begin the multi-decade project of healing mountain-top removal damage. The work pays better than mining through community investment, doesn't destroy workers' health, and creates beauty instead of devastation. The FLP coordinates technical support and Hearts Treasury backing, while local communities control every aspect of implementation.
 
+**Earth Council Veto and Ecological Safeguards**: The **Earth Council (Kawsay Pacha)** holds binding authority to block any proposal—whether from the FLP, individual BAZs, or Community Provider networks—that threatens ecological integrity or violates Indigenous sovereignty. This is not advisory. When extraction interests propose reopening abandoned mine sites under the language of "community economic development," the Earth Council can halt the proposal before it reaches implementation. When automation companies seek to replace ecological monitoring with AI systems that bypass Indigenous observation protocols, the veto applies.
+
+But some decisions carry consequences that unfold across decades rather than months—the kind of consequences that quarterly governance cycles systematically fail to evaluate. The framework addresses this through the **Slow-Variable Decision Protocol (SVDC)**, borrowed from the AUBI Framework's §4.3 and applied specifically to work organization decisions with multigenerational ecological implications.
+
+Three categories of decisions qualify as SVDCs within Work in Liberation: changes to the **Green Job Score multiplier range** (currently 1.0x–1.5x) that determine which ecological activities receive enhanced community investment; changes to the **list of ecological activity categories** eligible for Leaves currency; and acceleration or deceleration of **Industrial Sunsetting phase-out schedules** that determine when extractive industries cease operation.
+
+For any of these decisions, the FLP sets initial baselines and may propose revisions—but no revision takes effect without **LEKH quorum sign-off** from communities with demonstrated multigenerational observational presence in the ecosystems affected. The rationale is straightforward: communities that have been observing ecosystem recovery or degradation over decades hold the primary evidence base for whether these thresholds are ecologically honest. A policy analyst in Geneva cannot determine whether a 1.3x Green Job Score for mangrove restoration in the Sundarbans is ecologically meaningful—but the fishing communities who have watched mangrove health shift across generations can.
+
+This protocol prevents well-intentioned but ecologically naive decisions from being made on the basis of short-term data, political convenience, or economic pressure. It also prevents the reverse: the weaponization of "ecological caution" to delay necessary transitions. When communities with deep observational knowledge confirm that a phase-out can be accelerated safely, or that a score multiplier undervalues critical restoration work, their evidence carries binding authority.
+
 ### The Technology of Participation
 
 The FLP operates through technology designed to serve rather than extract. Real-time democratic participation across continents requires sophisticated tools, but tools that enhance human agency rather than replacing it. The **Neural Democracy Interface** enables SMS-based voting systems that work on basic phones, translation support for Indigenous languages, and accessibility features that accommodate diverse communication needs.
@@ -198,6 +208,42 @@ Community members invest Hearts in urban agriculture services that convert vacan
 Ecological restoration work earns enhanced community investment as teams rebuild soil health, establish pollinator habitat, and create food systems that regenerate rather than degrade urban ecosystems. The **Hearts Treasury** enables providers to purchase seeds, tools, and equipment while **Love Ledger** separately recognizes informal teaching, mentoring, and community building.
 
 Through Community Providers, work becomes an expression of community investment rather than corporate extraction, productivity serves community flourishing rather than profit accumulation, and innovation emerges from relationship rather than competition. This is what work looks like when communities directly support production that serves life.
+
+## <a id="fluid-project-assembly"></a>Fluid Project Assembly and Need Broadcasting
+
+> *"The spider does not apply for the web—she senses the gap and begins to weave."*
+
+The conventional job market organizes work through a sequence of lossy compressions: a person becomes a résumé, a résumé triggers an interview, an interview produces a hire, and a hire is slotted into a fixed role. Each step discards information. The result is a system that is structurally poor at matching human capacity to actual need—not because the people are wrong, but because the signal-bandwidth of the process is too narrow to carry the full picture of either.
+
+Work in Liberation addresses this at the structural level. AUBI Layer 1 removes survival as the primary motive for accepting work, which immediately changes what questions a person asks when choosing how to contribute. Community Providers are already chartered and governed locally within BAZs rather than by distant corporate hierarchy. The Love Ledger makes informal contribution visible without reducing it to a transaction.
+
+What remains is the question of how contribution is *initiated*—not just rewarded once it's happening.
+
+### From Job Postings to Need Broadcasting
+
+Rather than writing a job description and waiting for applicants, BAZs and Community Providers broadcast problems to be solved into the local network. A watershed needs monitoring after heavy rains. An elder care collective needs someone who can repair mobility equipment. A food sovereignty network needs help processing a bumper harvest before it spoils. These are concrete needs with clear timelines—not permanent positions requiring permanent people.
+
+Community members self-select based on whether the problem interests them and whether they have relevant capacity. This is already how open-source software development works at scale; it is not a utopian proposition but an established coordination pattern with well-understood failure modes. Free-rider dynamics and quality variance—the predictable risks—are addressed through the **Proof of Care** validation process, where Community Weavers and community feedback verify that contribution actually happened and actually helped.
+
+The **Community Work App** serves as the primary broadcasting infrastructure, surfacing needs across a BAZ network with enough context for people to assess fit without requiring them to perform their credentials. A need broadcast carries the problem, the location, the time sensitivity, and the skills likely relevant—but it doesn't filter out people who might bring unexpected capacity. The carpenter who also understands hydrology. The teenager who watched her grandmother solve exactly this problem. The retired engineer who hasn't touched the work in years but remembers everything.
+
+### From Static Roles to Fluid Project Assembly
+
+A person might spend five hours on watershed restoration with one Community Provider, ten hours doing eldercare with another, and take a month away entirely—then pick up a design problem when it appears. The 15-hour flexible contribution cap is already designed to accommodate this pattern. What needs stating plainly is that Work in Liberation does not assume a person holds a single role for an extended period. Contribution is expected to flow with capacity and interest, not be locked into a fixed container.
+
+This fluidity is not chaos. Community Providers maintain their chartered governance, their relationships with the Hearts Treasury, and their accountability to the communities investing in their services. What changes is that the people doing the work move between providers as needs shift, bringing cross-pollination of skills and relationships that static role assignment actively prevents.
+
+Hearts flow naturally in this model: community members invest in the Community Providers addressing needs they care about, and providers compensate contributors from that investment. A person contributing to three different providers in a month earns Hearts from each according to their contribution, redeemable at the Hearts Treasury like any other provider revenue. The Love Ledger separately captures the informal dimensions—the mentoring that happened during the watershed work, the friendship formed during the harvest processing—without monetizing them.
+
+### Contribution Visibility Without Self-Promotion
+
+**Skills Resonance Matching** allows the system to surface relevant contributors when a need is broadcast, without requiring people to maintain curated profiles or perform their credentials. The trace of actual contribution—logged through the Love Ledger and verified through Proof of Care—becomes the signal, not the résumé.
+
+This matters because the résumé system systematically disadvantages people whose contributions don't translate well into professional language: Indigenous knowledge holders, informal caregivers, people with non-linear career paths, anyone whose most valuable work happened outside institutions that issue certificates. When the system tracks what people actually *do* rather than what they *claim*, the matching becomes both more accurate and more equitable.
+
+Consider how this plays out in practice: When the Great Lakes BAZ broadcasts a need for someone who understands both soil chemistry and community facilitation for a contamination remediation project, Skills Resonance Matching doesn't search résumés—it surfaces people whose Love Ledger activity and Proof of Care history demonstrate both capacities, regardless of whether they hold degrees or professional titles. The community elder who has been facilitating land remediation conversations for decades appears alongside the environmental science graduate, and the community decides who fits based on the actual need rather than credential hierarchy.
+
+*Note: Future infrastructure (provisionally referred to as the Mycel mesh network) may enable real-time capacity sensing and problem broadcasting at the BAZ level, allowing needs and available capacity to find each other with minimal friction. This is under development and not a current dependency of the framework.*
 
 ## <a id="hearts-treasury-economic"></a>Hearts Treasury and Economic Infrastructure
 

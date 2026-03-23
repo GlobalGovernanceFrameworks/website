@@ -29,6 +29,18 @@ Maya experiences Meaning Pillar flourishing when Cultural Heritage Cooperatives 
 
 Ambassador Chen witnesses Connection Pillar indicators through Marine Restoration Cooperatives that professionally maintain coral reef health while Love Ledger recognition honors traditional fishing practices that sustain both marine ecosystems and community livelihoods.
 
+### Two Architecturally Distinct Modes: LMCI-Measurement and LMCI-Allocation
+
+LMCI operates in two modes that must not be conflated, as merging them would introduce a circular dependency that corrupts the governance signal.
+
+**LMCI-Measurement (LMCI-M)** is a population-level system health signal. It aggregates data from community surveys, longitudinal studies, ecological sensor networks, and Indigenous knowledge-holder assessments. It is specifically not derived from individual AUBI contribution claims — it draws from independent data sources with separate validation chains. LMCI-M feeds the Meta-Governance Reflexivity Engine and the Social Resilience Council's fiscal policy decisions.
+
+**LMCI-Allocation (LMCI-A)** is the per-contribution scoring system that governs AUBI Layer 2 bonuses. It operates at the level of individual Community Provider claims, validated through the Proof of Care protocol. LMCI-A uses the same Love, Meaning, and Connection vocabulary as LMCI-M but draws from a different data pipeline: provider activity logs, Community Weaver attestations, and Hearts Treasury redemption records.
+
+**Why the separation is non-negotiable**: If Layer 2 bonus claims fed directly into LMCI-M, the measurement signal would track incentivized behavior rather than genuine flourishing — the same category error that causes GDP to measure economic activity rather than human welfare. The separation ensures that a community gaming AUBI bonuses produces distortion in LMCI-A (which triggers fraud detection) but cannot corrupt the LMCI-M reading that governance decisions depend on.
+
+**Transition Strategy**: LMCI-M complements GDP for five years, with studies showing 7–12% productivity gains from enhanced autonomy and flourishing. LMCI-A is operational from pilot launch as the Layer 2 scoring mechanism.
+
 ### Integration with Planetary Health
 
 LMCI integrates directly with the Biosphere Health Index from the Planetary Health Governance Framework, ensuring that economic measures serve ecological wellbeing rather than creating false choices between prosperity and environmental protection through both professional restoration work and traditional stewardship practices.
@@ -37,9 +49,9 @@ This integration recognizes that human communities cannot flourish on a degraded
 
 **Validation Against Established Metrics**: LMCI draws validation from proven wellbeing frameworks including Gross National Happiness (Bhutan), OECD Better Life Index, and Happy Planet Index while adding innovative components that measure both professional care services and relational wealth often missing from existing approaches.
 
-### Dual-Track Data Collection
+### LMCI-M Data Sources and Collection
 
-Unlike GDP calculations performed by distant experts using abstract data, LMCI measurement involves direct community participation in defining what flourishing means through both formal Community Provider assessment and informal Love Ledger recognition systems.
+Unlike GDP calculations performed by distant experts using abstract data, LMCI-M measurement involves direct community participation in defining what flourishing means through both formal Community Provider assessment and informal Love Ledger recognition systems, while maintaining independence from the LMCI-A contribution scoring pipeline.
 
 **Community Provider Data**: Quantitative measurement through Hearts circulation analysis, Community Provider service delivery assessment, LMCI impact evaluation, and professional care outcome tracking that provides measurable indicators of community wellbeing improvement through formal care economy services.
 
@@ -63,7 +75,7 @@ The Council operates through carefully designed composition that balances expert
 
 **Social Economists and Scientists (30%)**: Experts in alternative economic models, wellbeing measurement, and systems thinking who provide technical expertise for both Hearts Treasury management and Love Ledger data analysis while remaining accountable to community priorities rather than academic abstraction.
 
-**Youth Delegates (20%)**: Representatives aged 16-25 selected through inclusive processes that ensure next-generation voices shape decisions affecting their futures through both Community Provider youth programs and traditional mentorship systems recognized in Love Ledger networks.
+**Youth Delegates (20%)**: Representatives aged 18-30 elected by BAZ-level youth councils, with one seat per BAZ cluster (groups of 5-10 BAZs by population), ensuring next-generation voices shape decisions affecting their futures through both Community Provider youth programs and traditional mentorship systems recognized in Love Ledger networks.
 
 **Corporate Accountability Officers (10%)**: Representatives focused on preventing corporate capture and ensuring Community Provider certification serves community benefit rather than extractive profit. These members monitor Hearts Treasury stability, automation dividend compliance, and progressive taxation implementation.
 

@@ -42,8 +42,8 @@
  // Define section groupings - match the Work in Liberation structure
  const sectionGroups = {
    overview: ['index', 'at-a-glance', 'executive-summary-for-the-skeptic'],
-   foundations: ['preamble', 'introduction', 'core-principles'],
-   framework: ['core-components', 'implementation-plan', 'tools-technologies'],
+   foundations: ['preamble', 'preface-terminology', 'introduction', 'core-principles'],
+   framework: ['core-components', 'flagship-mobilizations', 'implementation-plan', 'tools-technologies'],
    implementation: ['monitoring-evaluation', 'crisis-response', 'expected-outcomes'],
    integration: ['framework-integration', 'global-implementation'],
    resources: ['conclusion', 'appendices']
@@ -58,11 +58,13 @@
    
    // Foundations & Core Philosophy
    'preamble': '🌱',
+   'preface-terminology': '📖',
    'introduction': '🔧',
    'core-principles': '⚖️',
    
    // Framework & Tools
    'core-components': '🏗️',
+   'flagship-mobilizations': '🌊',
    'implementation-plan': '🗺️',
    'tools-technologies': '💻',
    
