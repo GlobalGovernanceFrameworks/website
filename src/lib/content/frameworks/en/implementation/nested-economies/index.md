@@ -1,14 +1,14 @@
 ---
-title: A Framework for Nested Sovereignty and Economic Integration v3.0
+title: A Framework for Nested Sovereignty and Economic Integration v3.1
 section: index
-status: Revision 3.0 - Simplified to single Hearts currency, BAZ formation focus, Love Ledger separation, AUBI cross-referencing, and realistic implementation approach
-revision: 3.0
+status: Revision 3.1 - Added Adaptive Governance section with NARP and Slow-Variable Constraint provisions
+revision: 3.1
 releaseDate: 2025-01-15
-lastUpdated: 2025-01-15
+lastUpdated: 2026-03-10
 nextReview: to be determined
 ---
 
-# A Framework for Nested Sovereignty and Economic Integration v3.0
+# A Framework for Nested Sovereignty and Economic Integration v3.1
 
 **In this document:**
 - [Introduction: Economics of Right Relationship](#introduction)
@@ -27,7 +27,7 @@ nextReview: to be determined
 
 **Framework Development**: The Nested Economies Framework creates practical tools for building economies of **Right Relationship** that balance local autonomy with global cooperation. This framework defines the **'where' and 'how'** of economic activity within the Global Governance Framework ecosystem, providing architectural rules for how local BAZ economies, regional trade networks, and global commons can interoperate without sacrificing community sovereignty.
 
-**Revision**: 3.0 (2025-01-15) - Simplified to single Hearts currency, BAZ formation focus, Love Ledger separation, AUBI cross-referencing, and realistic implementation approach
+**Revision**: 3.1 (2026-03-10) - Added Adaptive Governance section with NARP change management and Slow-Variable Constraint provisions to governance-integration
 
 In a world where economic integration typically forces communities to choose between isolation and exploitation, the **Nested Economies Framework** offers a revolutionary approach—positioning **Right Relationship** as the foundation for systems that honor both local self-determination and planetary cooperation through a single Hearts currency that recognizes diverse community contributions.
 
@@ -381,6 +381,7 @@ The vision: By 2035, economic systems that reward care over extraction, measure 
 **Development Status**: The Nested Economies Framework represents practical synthesis of cooperative economics, alternative currencies, and community sovereignty developed through community consultation and pilot program experience within the Global Governance Framework ecosystem.
 
 **Revision History**: 
+- **Version 3.1 (2026-03-10)**: Added Adaptive Governance and Change Management section to governance-integration with NARP change management protocol, Slow-Variable Constraint (SVDC/LEKH quorum), and cross-framework coordination with AUBI, Financial Systems, and Work in Liberation frameworks
 - **Version 3.0 (2025-01-15)**: Simplified to single Hearts currency, BAZ formation focus, Love Ledger separation, AUBI cross-referencing, and realistic implementation approach
 - **Version 2.1 (2025-07-06)**: Enhanced Community Weaver roles, Green Job Score integration, Social Resilience Council clarification
 - **Version 2.0 (2025-07-04)**: Hearts/Leaves integration, four-layered AUBI, Indigenous governance coordination

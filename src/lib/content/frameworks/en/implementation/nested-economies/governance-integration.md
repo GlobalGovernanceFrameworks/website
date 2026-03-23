@@ -13,6 +13,7 @@ section: governance-integration
 - [BAZ Council vs Social Resilience Council Roles](#council-roles)
 - [Economic Decision Protocols](#economic-decisions)
 - [Cross-Framework Integration](#cross-framework-integration)
+- [Adaptive Governance and Change Management](#adaptive-governance)
 - [Democratic Participation Systems](#democratic-participation)
 - [Conflict Resolution and Appeals](#conflict-resolution)
 
@@ -176,6 +177,46 @@ Hearts economy integrates with other Global Governance Framework elements withou
 **Territorial Rights Support**: Hearts economy respects Indigenous territorial sovereignty and traditional territory management coordinating with Indigenous Governance Framework territorial rights while supporting land rematriation and traditional stewardship through economic incentives and solidarity.
 
 **Cultural Renaissance Support**: Hearts payments for traditional knowledge transmission, language preservation, and cultural education coordinate with Indigenous Governance Framework cultural revitalization while maintaining traditional authority over cultural development and innovation.
+
+## <a id="adaptive-governance"></a>Adaptive Governance and Change Management
+
+Global standards must evolve without undermining BAZ autonomy. This section defines the protocols through which the Social Resilience Council may update Hearts economy standards and the safeguards that protect community sovereignty and ecological integrity during that process.
+
+### Social Resilience Council Mandate
+
+**Scope of Authority**: The Social Resilience Council oversees Hearts supply management, stakeholder coordination across local and global levels, and ethical oversight of the economic ecosystem, ensuring alignment with AUBI and Right Relationship principles. The Council sets global standards and manages the Global Commons Fund while local BAZ Councils retain responsibility for chartering Community Providers and managing day-to-day governance of their Hearts economy.
+
+**Distinction from Fractal Labor Parliament**: The Fractal Labor Parliament sets work valuation standards including Green Job Score baselines and Leaves multiplier ranges, distinct from the Council's coordination and oversight roles. The FLP may propose changes but implementation of global standards requires Council approval and, for ecological matters, LEKH quorum (see Slow-Variable Constraint below).
+
+### Change Management: Notice and Adaptive Response Protocol
+
+Global standard changes that affect BAZ-level economic operations follow the Notice and Adaptive Response Protocol (NARP) defined in Financial Systems §14.3. The protocol ensures communities have meaningful input before changes take effect:
+
+**Tier A Changes (Operational Adjustments)**: Routine technical updates, security patches, and protocol optimizations that do not alter economic relationships or community obligations. BAZ Councils receive 30-day advance notice with documentation. BAZ Councils may petition for Tier B reclassification of proposed Tier A changes within 30 days of announcement if they believe the change has structural implications.
+
+**Tier B Changes (Structural Modifications)**: Changes affecting inter-BAZ trade standards, Hearts Treasury reserve requirements, solidarity redistribution formulas, or Leaves valuation protocols. BAZ Councils have a 90-day notice window during which they may submit formal endorsements or objections. If 30% or more of active BAZs (as defined in Financial Systems §14.3) object, the change returns to the Social Resilience Council for revision and renewed consultation before resubmission.
+
+**Community Sovereignty Protection**: No NARP process may override BAZ Council authority over Community Provider chartering, local Hearts allocation, or cultural protocol implementation. Changes affecting these domains require BAZ-level opt-in rather than global mandate.
+
+### Slow-Variable Constraint
+
+Certain decisions affect ecological systems that operate on timescales far exceeding normal governance cycles. These require additional safeguards to prevent well-intentioned policy from outrunning ecological knowledge:
+
+**Qualifying Decisions**: Revisions to cross-BAZ ecological exchange standards qualify as Slow-Variable Domain Changes (SVDCs) under AUBI Framework §4.3. Specifically, this includes changes to carbon budget linkages to Leaves rewards, Inter-Currency Translation Layer ecological multipliers, Green Job Score multiplier ranges, and any standards governing inter-BAZ ecological value recognition.
+
+**LEKH Quorum Requirement**: SVDCs require sign-off from a quorum of Long-Embedded Knowledge Holders (LEKH)—communities with demonstrated multigenerational observational presence in the ecosystems affected—before the Social Resilience Council may implement them. The rationale is that communities observing ecosystem recovery or degradation over decades hold the primary evidence base for whether ecological thresholds are honest and whether proposed changes serve long-term ecological health.
+
+**BAZ Flagging Authority**: Any BAZ Council may flag a pending inter-BAZ ecological standard as SVDC-qualifying if it believes the change has slow-variable ecological implications not recognized in its original classification. The Earth Council adjudicates disputed classifications within 30 days, with Indigenous ecological knowledge holders providing primary assessment.
+
+**Cross-Framework Coordination**: The Slow-Variable Constraint operates in concert with parallel SVDC provisions in the AUBI Framework (§4.3, governing Leaves valuation formulas and carbon sequestration thresholds), the Financial Systems Framework (§14, governing Hearts Treasury reserve ratios with long-term fiat dependency implications), and the Work in Liberation Framework (§3, governing Green Job Score baseline revisions and Industrial Sunsetting timelines). Changes spanning multiple frameworks require coordinated LEKH quorum across all affected domains.
+
+### Adaptive Mechanisms and Tools
+
+**Pilot City Network**: 10 pilot cities by Year 2 provide real-world testing of governance mechanisms including NARP processes and SVDC classifications, generating evidence for protocol refinement while maintaining community sovereignty over pilot participation and data sharing.
+
+**LMCI Dashboard Integration**: Real-time Love, Meaning, and Connection Index dashboards provide governance decision-makers with community wellbeing signals ensuring adaptive decisions serve community flourishing rather than abstract system optimization.
+
+**Community Feedback Systems**: Accessible feedback applications enable BAZ communities to report governance concerns, propose changes, and participate in NARP consultation processes through culturally appropriate engagement methods including oral testimony, community assembly input, and digital platforms.
 
 ## <a id="democratic-participation"></a>Democratic Participation Systems
 
