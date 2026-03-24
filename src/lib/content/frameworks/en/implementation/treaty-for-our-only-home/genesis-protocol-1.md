@@ -1,11 +1,11 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
 section: Module 1 - Foundation
-status: Full Draft v1.1 (updated to v0.5 outline)
-revision: 1.1
-date: 2026-03-04
-module: "1 of 6: Foundation (Sections I-IV)"
-wordCount: ~12,000
+status: Full Draft v1.2 (updated to v0.6 outline — Structural Integrity Revision)
+revision: 1.2
+date: 2026-03-23
+module: "1 of 6: Foundation (Sections I-IV-A)"
+wordCount: ~16,000
 purpose: Constitutional founding document for Treaty implementation
 ---
 
@@ -15,11 +15,12 @@ purpose: Constitutional founding document for Treaty implementation
 **In this module:**
 - [Section I: Introduction & the bootstrapping paradox](#section-i)
 - [Section II: Core principles for legitimate convening](#section-ii)
-- [Section III: The Genesis Fund (hardened edition)](#section-iii)
+- [Section III: The Genesis Fund (phased funding model)](#section-iii)
   - [Section III.G: Structural corruption resistance](#section-iii-g)
 - [Section IV: The Interim Secretariat](#section-iv)
+- [Section IV-A: Pre-Genesis Demonstration Phase (Phase -1)](#section-iv-a)
 
-**Estimated Reading Time**: 35 minutes
+**Estimated Reading Time**: 45 minutes
 
 ---
 
@@ -89,6 +90,26 @@ This means:
 - Learning from implementation to strengthen the system continuously
 
 The Genesis Protocol is not a utopian blueprint assuming good faith. It is a battle-tested framework assuming hostility and building incentive structures that make cooperation more rational than obstruction.
+
+### I.C-1. The first domino problem
+
+Previous versions of this protocol solved the philosophical bootstrapping paradox (who authorizes the authorizers?) through the concept of the Pluriversal Sovereign — three-source consent creating new authority. But the philosophical solution left an operational question unanswered: **Who convenes the first meeting? Who pays for the founding referendum? Who builds the infrastructure that makes ratification attractive in the first place?**
+
+These are not secondary questions. They are the actual bootstrapping problem — not the theoretical one, but the practical one that will determine whether this protocol remains a document or becomes a reality.
+
+**The answer**: Demonstrated value precedes formal authority.
+
+The Genesis Protocol does not begin with nation-state ratification. It begins with a **pre-institutional demonstration phase** (Phase -1, detailed in Section IV-A) that creates observable, measurable proof that GGF coordination infrastructure works — at the municipal and community level — before asking anyone to sign a treaty.
+
+This is not a concession to incrementalism. It is the recognition that the Permeation Mandate (Section II, Principle 11) applies to the Genesis Protocol itself. The protocol permeates existing structures first, then formalizes the authority that demonstrated competence has already generated.
+
+**Historical precedent validates this approach**:
+
+The European Union did not begin with the Treaty of Rome (1957). It began with the European Coal and Steel Community (1951) — a narrow, practical demonstration that supranational coordination worked in a specific domain between six countries. The broader treaty followed demonstrated value, not the other way around.
+
+The Internet did not begin with a global governance treaty. It began with ARPANET connecting four universities. The governance structures (ICANN, IETF, etc.) formalized authority that already existed through working infrastructure.
+
+**The implication for this protocol**: Phase -1 (Section IV-A) identifies the first domino — municipal pilots using existing legal frameworks to deploy GGF coordination tools — and specifies the gate conditions that must be met before Phase 0 activation. The founding referendum, Peace Tithe, and institutional convening all follow from demonstrated results, not from appeals to vision alone.
 
 ### I.D. Purpose of this protocol
 
@@ -957,50 +978,102 @@ The Interim Secretariat (Section IV) includes a "Chief Data Security Officer" re
 
 **Ethical grounding**: This principle reflects humility about transformative timescales. Civilizational infrastructure built over centuries does not transform in years. The permeation strategy accepts this reality while refusing to use it as an excuse for paralysis. It plants the upgrade infrastructure now, trusting that the people within legacy systems—given the conditions for agency—will carry transformation forward on human timescales.
 
+### II.M. Principle 12: Accountable coordination vs. extractive hierarchy
+
+**Statement**: GGF institutions must satisfy testable structural criteria distinguishing accountable coordination hierarchy from extractive hierarchy. Any GGF body that fails these criteria is subject to mandatory review.
+
+**The problem this addresses**: GGF frameworks — particularly those using the Karlova analytical register — describe hierarchy as inherently extractive. Yet GGF itself creates hierarchies: Earth Council veto power, Social Resilience Council authority over Hearts supply, LEKH quorum requirements, Digital Justice Tribunal rulings. Without a principled distinction between the hierarchies GGF condemns and the hierarchies GGF creates, GGF's authority claims rest on "trust us, we're different" — the same claim every institutional founder in history has made.
+
+This is not a theoretical problem. It is the structural credibility gap that will be exploited by every critic of the project, and rightly so.
+
+**The distinction**: The difference between extractive hierarchy and accountable coordination hierarchy is not a matter of intent. It is a matter of structural features that can be tested independently of the character of the people involved.
+
+An **extractive hierarchy** exhibits the following structural features:
+- **Self-justifying authority**: The institution derives legitimacy from its own existence rather than from revocable consent
+- **Asymmetric transparency**: Information flows upward (surveillance of the governed); commands flow downward (opacity of the governors)
+- **Prohibitive exit costs**: Leaving the system threatens survival or material wellbeing
+- **Self-perpetuation as primary function**: The institution's dominant activity becomes ensuring its own continuation
+
+An **accountable coordination hierarchy** exhibits:
+- **Delegated and revocable authority**: Derived from specific, time-limited consent acts that can be withdrawn
+- **Symmetric transparency**: Information flows in all directions — governance deliberations, votes, and financial flows are publicly visible
+- **Structurally protected exit**: AUBI ensures no person's survival depends on any single institution; nations and BAZs can withdraw without existential consequences
+- **Self-limiting function**: Built-in mechanisms degrade the institution's own power when coordination is no longer needed (sunset clauses, scope limits, dissolution triggers)
+
+**Application to GGF bodies**: Every GGF institution must satisfy all four criteria. This is testable:
+
+| Criterion | Test | Example |
+|-----------|------|---------|
+| Revocable authority | Can the body be dissolved by the people it coordinates? | SRC: 30% BAZ reformation petition triggers review. Earth Council: Indigenous Nations can withdraw delegates at any time. |
+| Symmetric transparency | Does the body publish all deliberations, votes, and financial flows? | Constitutional Health Monitor annual audit; Birth Certificate Dashboard publishes all governance data. |
+| Protected exit | Can a BAZ or nation withdraw without existential consequences? | AUBI baseline continues regardless of institutional participation; withdrawal forfeits Gold-tier coordination benefits but not survival. |
+| Self-limiting function | Does the body have sunset provisions or scope limits? | Conscience & Sovereignty Clause limits GGF to commons coordination; Amendment Tier 3 immutability is narrow and specific. |
+
+**Constitutional enforcement**: If any GGF body fails any of the four tests during the annual Accountable Coordination Audit (conducted by Constitutional Health Monitors), the Council of Guardians is mandated to initiate structural review within 90 days. This is the structural immune response against GGF becoming what it was designed to replace.
+
+**Relationship to Karlova analysis**: The "parasitic control system" analysis remains valid as a description of **extractive** hierarchies. This principle clarifies that GGF's opposition is not to hierarchy per se — hierarchy is a coordination technology as old as multicellular life — but to hierarchy that exhibits extractive structural features. The distinction is what allows the Permeation Mandate to work: GGF is not asking institutional actors to abandon hierarchy, but to upgrade from extractive to accountable coordination patterns.
+
+**Why this prevents capture**: The four-criteria test is structural, not aspirational. It does not depend on GGF leaders being virtuous. It creates measurable tests that any external observer can apply. If GGF fails its own test, the institutional immune system activates whether or not the people in power want it to.
+
+**The honest admission**: No institutional design can permanently guarantee accountability. Power dynamics evolve faster than constitutional architecture. But testable structural criteria — applied annually by independent monitors with public reporting — are a stronger foundation than "trust us, we're different." They transform the claim from unfalsifiable aspiration to falsifiable commitment.
+
 ---
 
-## <a id="section-iii"></a>Section III: The Genesis Fund (hardened edition)
+## <a id="section-iii"></a>Section III: The Genesis Fund (phased funding model)
 
 The Genesis Protocol cannot be implemented without resources. Convening global assemblies via sortition, supporting Indigenous governance at planetary scale, deploying secure digital infrastructure, and training facilitators across languages and cultures requires substantial funding.
 
 But funding creates vulnerability. If resources come from "voluntary contributions," wealthy nations and donors gain leverage. If funding flows through existing institutions, those institutions control the founding process. If distribution is opaque, corruption undermines legitimacy.
 
-The Genesis Fund solves this through three innovations: mandatory Peace Tithe contributions, tripartite governance, and unconditional Indigenous Sovereign Endowment.
+The Genesis Fund solves this through four innovations: phased funding matched to demonstrated capacity, mandatory Peace Tithe contributions, tripartite governance, and unconditional Indigenous Sovereign Endowment.
 
-### III.A. The Peace Tithe (countering financial neocolonialism)
+### III.A. The honest budget problem
 
-**The problem**: "Voluntary contributions" as primary funding source replicates colonial patterns. Wealthy nations contribute; Global South nations receive. Contributors gain leverage. Recipients face conditions. Development "aid" becomes debt trap.
+Previous versions of this protocol specified a $2B Genesis Fund target (0.1% of $2T global military spending). This number assumed near-universal participation on Day 1 — but the entire point of Phase 0 is that participation is partial and growing. Honest budgeting requires modeling three funding stages with realistic numbers at each.
 
-During steel manning, a Global South economist stated bluntly:
+The fundamental insight: the Genesis Fund does not need $2B on Day 1. It needs $5–20M to demonstrate value (Stage 1), $200–400M to formalize institutions (Stage 2), and $2B+ to operate at full scale (Stage 3). Each stage funds the activities that generate the credibility and demonstrated value needed to unlock the next stage.
+
+### III.A.1. Stage 1: Seed funding (Phase -1, pre-ratification)
+
+Before any nation ratifies a treaty, the Pre-Genesis Demonstration Phase (Section IV-A) requires resources for municipal pilots, Community Weaver training, legal research, and a small coordination team. These resources come from sources that do not require treaty ratification.
+
+**Sources**:
+- **Philanthropic commitments** from aligned foundations. Organizations like Open Society, Skoll, Omidyar, and Ford already operate at this scale for governance innovation projects. This is not asking for unprecedented generosity; it is asking for a new allocation within existing portfolios.
+- **Municipal innovation budgets** from early coalition cities. Typically €50K–€500K per city under existing "participatory budgeting" or "social innovation" line items — precisely the budgets that the Legacy Hardware API Municipal Finance Bridge (Section X.G) is designed to route.
+- **Academic research grants** framing pilots as governance experiments eligible for Horizon Europe, NSF, SSHRC, and similar funding bodies. The academic evaluation component (Section IV-A) is designed partly to make this funding pathway viable.
+- **Crowdfunding** from the GGF community. Small-donor campaigns build ownership and public awareness alongside capital.
+
+**Realistic target**: $5–20M
+
+**What it funds**:
+- Pre-Genesis Coordination Team (5–10 people, lean operations — not the full 16-member Interim Secretariat)
+- 3–5 BAZ pilot sites (building on existing community currency and cooperative infrastructure, not starting from zero)
+- Legal research for Legacy Hardware API jurisdiction-specific variants
+- Founding Referendum infrastructure design and testing
+- Academic evaluation partnerships
+- Community Weaver training cohorts
+
+**What it does NOT fund**: The Sovereign Endowment, AUBI pilots at national scale, or the full Interim Secretariat. These require Stage 2 resources.
+
+### III.A.2. Stage 2: Coalition funding (Phase 0, early ratification)
+
+Once the Pre-Genesis Demonstration Phase has produced results and Phase 0 activation criteria are met (Section IV-A), the Peace Tithe from early ratifiers provides the institutional foundation budget.
+
+**The Peace Tithe (countering financial neocolonialism)**
+
+The problem with "voluntary contributions" as primary funding source has been clear since the steel-manning process: wealthy nations contribute; Global South nations receive; contributors gain leverage; recipients face conditions. A Global South economist stated bluntly during adversarial testing:
 
 > "You call it 'transition.' We call it debt trap 2.0."
 
 **The solution**: Funding cannot be "aid." It must be the mandatory cost of entry.
 
-**Peace Tithe protocol**:
+Every nation ratifying the Treaty for Our Only Home makes a **one-time, non-refundable contribution** to the Genesis Fund equal to **0.1% of its annual military budget** (using most recent year's official military spending data verified against SIPRI and IISS assessments).
 
-Every nation ratifying the Treaty for Our Only Home makes a **one-time, non-refundable contribution** to the Genesis Fund equal to **0.1% of its annual military budget** (using most recent year's official military spending data).
+**Why military budget?**: Universal metric applicable to all nations. Largest military spenders (P5) pay most, as appropriate for their historical responsibility and current power. Symbolic significance: redirecting "war money" to "governance money." Small enough to be politically feasible (0.1% = 1/1000 of military budget). Large enough to capitalize the system meaningfully at scale.
 
-**Why military budget?**:
-- Universal metric applicable to all nations
-- Largest military spenders (P5) pay most, as appropriate for their historical responsibility and current power
-- Symbolic significance: redirecting "war money" to "governance money"
-- Small enough to be politically feasible (0.1% = 1/1000 of military budget)
-- Large enough to capitalize system meaningfully
+**Realistic early-stage modeling**: If the first 30 ratifying nations are predominantly Global South and middle-income countries — the most likely early adopters, since they benefit most from debt transformation and AUBI — combined military spending is approximately $200–400B. At 0.1%, the Peace Tithe yields **$200–400M**. This is substantially less than $2B but sufficient for the early-stage institutional infrastructure when allocated honestly.
 
-**Calculation example**:
-
-Global military spending 2024: ~$2.4 trillion
-Peace Tithe (0.1%): $2.4 billion
-
-Top contributors:
-- United States ($877B budget): $877M contribution
-- China ($292B budget): $292M contribution
-- Russia ($109B budget): $109M contribution
-- India ($81B budget): $81M contribution
-- Saudi Arabia ($75B budget): $75M contribution
-
-**Critical features**:
+**Critical features** (retained from v0.5):
 
 **Mandatory**: Not voluntary. Ratifying the Treaty requires Peace Tithe payment. No payment, no participation.
 
@@ -1012,29 +1085,34 @@ Top contributors:
 
 **Immediate**: Payment due within 90 days of ratification. Delays participation until funding secured.
 
-**Impact**:
+**Impact**: Economic equity (everyone pays, everyone has standing); legitimacy (no creditor-debtor dynamics); political symbolism (redirecting military spending to planetary governance).
 
-**Economic equity**: Global South gets equal stake from Day 1. Not as recipients of aid, but as co-owners of Genesis Fund through their proportional contributions.
+**Anti-corruption safeguards**: All Peace Tithe contributions publicly reported on Birth Certificate Dashboard. Any discrepancies between reported military budget and international data trigger investigation.
 
-**Legitimacy**: Everyone pays means everyone has standing. No creditor-debtor dynamics.
+**Stage 2 allocation** ($200–400M realistic early-stage budget):
 
-**Scale**: $2-3B total funding (depending on participation) provides substantial resources for founding processes.
+- Interim Secretariat operations: $30M (reduced from $50M; smaller early operation scaling with participation)
+- Civic Lottery infrastructure: $100M
+- **Indigenous Sovereign Endowment first tranche: $150M** (see Section III.C for staged transfer rationale)
+- Youth Council: $50M
+- Secure digital infrastructure: $50M (quantum-resistant, federated — smaller initial footprint than full-scale)
+- Security: $30M
+- AUBI Pilot Seed: $50M (5 nations × $10M — supplements existing local systems, not full AUBI deployment)
+- Transparency/Audit: $20M
+- Contingency: $20M
 
-**Political symbolism**: Redirecting military spending to planetary governance signals priority shift from conflict to cooperation.
+### III.A.3. Stage 3: Scale funding (Phase 2+, broad ratification)
 
-**Supplement via optional contributions**:
+As ratification expands to include larger economies, Peace Tithe revenue scales toward the $2B+ steady-state target. Stage 3 resources fund:
 
-After Peace Tithe base is established, nations, philanthropies, and civil society organizations can make additional voluntary contributions. These are welcomed but not required. They supplement, not replace, mandatory base funding.
+- Sovereign Endowment completion (remaining $350M — see Section III.C)
+- AUBI deployment beyond pilot nations
+- Global Enforcement Mechanism at full operational capacity
+- Full-scale digital infrastructure
+- Cultural Translation Protocol at 100+ language capacity
+- Offline inclusion infrastructure across all continents
 
-**Anti-corruption safeguards**:
-
-All Peace Tithe contributions publicly reported on Birth Certificate Dashboard (Section VI.B):
-- Amount contributed
-- Date received
-- Nation's military budget basis
-- Verification status
-
-Any discrepancies between reported military budget and international data (SIPRI, IISS assessments) trigger investigation.
+**The key insight**: Each stage funds the activities that generate the credibility needed to unlock the next stage. Phase -1 pilots produce evidence. Evidence produces ratifications. Ratifications produce Peace Tithe revenue. Revenue funds institutions. Institutions produce results. Results produce more ratifications. The funding model is a positive feedback loop, not a one-time capital raise.
 
 ### III.B. Genesis Fund governance: Tripartite Board
 
@@ -1105,32 +1183,25 @@ Historical reality validates this concern. International institutions have consi
 
 **Indigenous Sovereign Endowment**:
 
-**Amount**: $500 million (from Genesis Fund Peace Tithe base)
+**Total commitment**: $500 million (legally binding, written into Treaty text)
 
-**Transfer timing**: Within first 6 months of Genesis Fund capitalization, before other disbursements
+**Staged disbursement** (honest phasing matched to funding reality):
 
-**Control**: Entirely Indigenous-controlled endowment managed by Earth Council-designated Indigenous financial institutions
+**Stage 2 transfer (Phase 0)**: $150M transferred within first 6 months of Genesis Fund Stage 2 capitalization. Unconditional. Non-revocable. Zero GGF oversight.
 
-**No conditions**: Zero GGF oversight, zero reporting requirements, zero approval processes for disbursements
+**Stage 3 transfer (Phase 2+)**: Remaining $350M transferred as Peace Tithe revenue scales with additional ratifications.
 
-**Purpose**: Indigenous nations determine all uses according to their own priorities, whether:
-- Bioregional governance infrastructure
-- Traditional Knowledge protection systems
-- Language revitalization programs
-- Land restoration projects
-- Youth education initiatives
-- Cultural preservation
-- Whatever Indigenous communities choose
+**Legal guarantee**: The full $500M commitment is a **senior obligation** — if the Genesis Fund shrinks, the Sovereign Endowment is the last allocation cut. The endowment trust structure makes this legally enforceable regardless of SRC discretion.
 
-**Why unconditional?**:
+**Why staged?**: The honest answer is that Stage 2 revenue ($200–400M from early ratifiers) cannot support both $500M in immediate endowment transfer and all other institutional costs. Staging the transfer is a financial necessity, not a principle compromise. The principle — unconditional, non-revocable, zero-leverage transfer — is maintained at every stage.
 
-Conditional funding = leverage = not genuine sovereignty recognition.
+**Critical acknowledgment**: Staging may be perceived as backtracking from the v0.5 commitment of immediate full transfer. This concern is real and must be addressed through direct Indigenous consultation before the commitment is finalized. If Indigenous nations express that the staged approach damages trust, the protocol must find an alternative — either by increasing Stage 1/2 funding targets or by making the full transfer the non-negotiable first allocation before any other disbursement. The architecture serves sovereignty; sovereignty does not serve the architecture.
 
-The Sovereign Endowment proves GGF recognition is real by transferring substantial resources with **no strings attached whatsoever**.
+**Control**: Entirely Indigenous-controlled endowment managed by Earth Council-designated Indigenous financial institutions.
 
-**Can GGF monitor how funds are used?**: No. Indigenous financial sovereignty means Indigenous accountability systems apply, not external oversight.
+**No conditions**: Zero GGF oversight, zero reporting requirements, zero approval processes for disbursements.
 
-**What if funds are misused?**: Indigenous nations have their own accountability mechanisms. GGF has no authority or responsibility to police Indigenous financial decisions, just as it has no authority over any sovereign nation's domestic budget.
+**Purpose**: Indigenous nations determine all uses according to their own priorities, whether bioregional governance infrastructure, Traditional Knowledge protection, language revitalization, land restoration, youth education, cultural preservation, or whatever Indigenous communities choose.
 
 **Legal structure**:
 
@@ -1138,32 +1209,17 @@ The Sovereign Endowment is established as:
 - **Irrevocable trust** under Indigenous governance law (not international law)
 - **Permanent endowment** (principal preserved; investment returns fund ongoing operations)
 - **Indigenous-controlled trustees** appointed by Earth Council
-- **Financial returns** (estimated 5% annually = $25M/year in perpetuity)
+- **Financial returns** (estimated 5% annually on invested principal — $7.5M/year from Stage 2 transfer, scaling to $25M/year once fully capitalized)
 
-**Impact**:
+**Impact**: Proves sincerity through action. Eliminates funding leverage. Provides perpetual capacity for Indigenous governance at planetary scale. Constitutes partial reparation. Makes participation genuinely voluntary.
 
-**Proves sincerity**: Actions speak louder than words. $500M unconditional transfer demonstrates GGF recognition of Indigenous sovereignty is not empty rhetoric.
+**Integration with Earth Council convening**: The Stage 2 Sovereign Endowment transfer occurs before Earth Council is convened, ensuring Indigenous nations have resources to support their own convening process according to their protocols (Section VI.A details Earth Council convening).
 
-**Eliminates leverage**: GGF cannot use funding pressure to influence Indigenous decisions because Indigenous governance has independent resources.
+### III.D. Genesis Fund allocation priorities (Stage 3 full-scale targets)
 
-**Long-term capacity**: Permanent endowment provides perpetual funding for Indigenous governance at planetary scale, not dependent on ongoing GGF budgets.
+The allocations below represent full-scale targets achievable once broad ratification generates $2B+ in Peace Tithe revenue. Stage 2 allocations (from the realistic $200–400M early-stage budget) are specified in Section III.A.2 above.
 
-**Justice**: This is partial reparation for centuries of colonial resource theft. $500M is tiny compared to trillions extracted from Indigenous lands, but it acknowledges the debt.
-
-**Invitation, not condition**: Indigenous nations can participate in GGF Earth Council without depending on GGF resources. Participation is genuinely voluntary, not economically coerced.
-
-**Integration with Earth Council convening**:
-
-The Sovereign Endowment is transferred before Earth Council is convened, ensuring Indigenous nations have resources to support their own convening process according to their protocols (Section VI.A details Earth Council convening).
-
-Earth Council determines:
-- Whether and how to participate in GGF
-- What portion of Sovereign Endowment (if any) to use for Earth Council operations
-- All other decisions about fund usage
-
-### III.D. Genesis Fund allocation priorities
-
-After Sovereign Endowment transfer ($500M), remaining Genesis Fund resources (~$1.5-2B depending on participation) are allocated by Tripartite Board according to these priorities:
+**Stage 3 full-scale allocations** (~$1.5–2B after Sovereign Endowment completion):
 
 **1. Interim Secretariat operations** ($50M):
 - Staff salaries and operations (Section IV details Interim Secretariat)
@@ -1683,33 +1739,124 @@ This mechanism has never been used in any historical precedent but exists as fai
 
 ---
 
+## <a id="section-iv-a"></a>Section IV-A: Pre-Genesis Demonstration Phase (Phase -1)
+
+### IV-A.A. Why demonstration must precede formal authority
+
+The Genesis Protocol faces a cold-start problem that philosophical arguments alone cannot resolve. The Pluriversal Sovereign concept (Section II.C) solves the infinite regress of authority — three-source consent creates new legitimacy. But this solution presumes that nation-states, Indigenous nations, and peoples are already willing to consent. Why would they consent to an untested system?
+
+The answer is that they would not, and should not. The history of international institution-building shows that formal authority follows demonstrated value, not the other way around. The European Coal and Steel Community proved supranational coordination worked before the Treaty of Rome asked six nations to pool sovereignty more broadly. The Internet proved distributed networking worked before anyone proposed governance structures for it.
+
+Phase -1 applies this lesson. Before the Genesis Protocol asks anyone to ratify a treaty, sign a Letter of Intent, or vote in a founding referendum, it creates observable, measurable proof that GGF coordination infrastructure works at the municipal and community level.
+
+### IV-A.B. The municipal coalition strategy
+
+Nation-states are the hardest institutional actors to move first. They are large, slow, cautious, and face domestic political costs for any novel international commitment. Municipalities are the easiest first domino: they face coordination problems daily, have discretionary budgets for social innovation, and can adopt new tools without legislative change.
+
+**Step 1: Identify 10–20 seed municipalities (Month -24 to -18)**
+
+Criteria for seed municipality selection:
+- **Existing infrastructure**: The municipality already has community currency, time bank, or cooperative infrastructure. Phase -1 does not start from zero; it builds on existing social innovation.
+- **Willing municipal government**: Demonstrated interest in participatory governance through existing programs (participatory budgeting, citizens' assemblies, social innovation labs).
+- **Geographic and cultural diversity**: Minimum 4 continents represented among seed municipalities.
+- **Indigenous-led contexts**: At least 3 municipalities operating within or adjacent to Indigenous-led governance structures.
+
+Target profile: Cities like Bristol (UK, existing Bristol Pound infrastructure), Mondragón (Spain, cooperative ecosystem), Curridabat (Costa Rica, municipal biophilia programs), plus Indigenous-led communities with existing governance infrastructure, plus municipalities in the Global South with active social innovation programs.
+
+The Pre-Genesis Coordination Team (Section IV-A.D) conducts outreach, assesses readiness, and negotiates participation agreements with interested municipalities.
+
+**Step 2: Deploy Legacy Hardware API pilots (Month -18 to -12)**
+
+Each seed municipality receives:
+- **Legacy Hardware API Municipal Finance Bridge** template adapted to their legal jurisdiction (Section X.G). This is the key legal innovation: routing existing municipal budget allocations toward GGF-compatible coordination mechanisms without new legislation.
+- **Technical support** for Hearts pilot deployment using Phase 1 trusted-node architecture (per Financial Systems Framework §4.1). The pilot uses social verification, not full cryptographic decentralization — appropriate for the trust levels and scale of early adoption.
+- **Community Weaver training** cohort (6-month program, co-developed with local partners). Community Weavers are the human infrastructure that makes the technical systems work.
+- **Connection to cross-municipal coordination network**. Individual pilots generate data; the network generates proof that coordination across municipalities produces value neither could achieve alone.
+
+**What is being tested** (specific hypotheses, not general "does it work?"):
+- Can Hearts function as a local complementary currency using existing municipal legal frameworks?
+- Can the Legacy Hardware API Municipal Finance Bridge route existing budget allocations to GGF-compatible activities without requiring new legislation?
+- Can Community Weavers be trained and sustained at community scale within available resources?
+- Can cross-municipal coordination produce measurable benefits (resource sharing, knowledge transfer, crisis preparedness) that neither municipality could achieve alone?
+
+**Step 3: Document and publish results (Month -12 to -6)**
+
+- **Independent evaluation** by academic partners (not GGF self-assessment). Evaluation frameworks published in advance; results published regardless of whether they are favorable.
+- **Open-source publication** of all results, including failures. The GGF Failure Library (Section XI) begins here — learning from what doesn't work is as valuable as celebrating what does.
+- **Plain-language "BAZ Starter Pack"** revised based on actual pilot experience rather than theoretical design.
+- **Pilot community testimonials** — not polished communications, but authentic accounts from participants describing what worked, what didn't, and what they'd change.
+
+**Step 4: Coalition formation (Month -6 to 0)**
+
+Demonstrated results enable three parallel advocacy pathways:
+- **Municipal-to-national advocacy**: Seed municipalities lobby their national governments for ratification, armed with evidence from their own experience. A city council that has operated a Hearts pilot for 12 months is a more credible advocate than any international organization.
+- **South-South learning networks**: Successful Global South pilots become the credibility base for peer nations. The most powerful argument for a Brazilian mayor is not a GGF whitepaper but a Kenyan mayor describing what happened in their community.
+- **Civil society mobilization**: Tangible results (not abstract frameworks) provide the material for the Founding Referendum campaign. Citizens vote on something they can see working, not something they must imagine.
+
+### IV-A.C. Success criteria for Phase 0 activation
+
+Phase 0 does not activate on a calendar date. It activates when the following gate conditions are met:
+
+- ≥10 seed municipalities with ≥6 months of operational Hearts pilots
+- ≥3 independent academic evaluations published (at least one from a Global South institution)
+- ≥5 national governments expressing formal interest in ratification (Letters of Intent from foreign ministries, not just NGO statements)
+- ≥1 Indigenous-led pilot with self-assessed positive results published on Indigenous community's own terms and timeline
+- Pre-Genesis Coordination Team assessment that Founding Referendum infrastructure is technically ready for deployment
+
+**Estimated timeline to gate**: 18–30 months. This is the honest answer to "how long before Phase 0?" It may take longer if pilot results are mixed or if municipal outreach encounters unexpected barriers. The protocol waits for demonstrated readiness rather than forcing activation on a calendar deadline.
+
+**If gate conditions are not met**: The Pre-Genesis Coordination Team publishes a candid assessment of why, what was learned, and what adjustments are needed. Phase -1 can be extended or restructured based on findings. There is no shame in taking longer; there is shame in premature activation without demonstrated value.
+
+### IV-A.D. Pre-Genesis Coordination Team
+
+This is not the full Interim Secretariat (Section IV). It is a lean team funded by Stage 1 seed funding, responsible for Phase -1 operations.
+
+**Composition** (5–10 people):
+- 2–3 coordinators (municipal liaison, Indigenous relations, technical deployment)
+- 1 legal researcher (Legacy Hardware API jurisdiction adaptation)
+- 1 communications lead (honest public reporting, community engagement)
+- 2–3 Community Weaver trainers (delivering training cohorts in seed municipalities)
+- Part-time academic evaluation partners (contracted, not staff)
+
+**Funding**: Stage 1 seed funding ($5–20M). The team operates within this budget. If seed funding is insufficient, the team scales down rather than seeking funding sources that would compromise independence.
+
+**Accountability**: The team publishes quarterly reports on Phase -1 progress, including financial statements, pilot status, and honest assessment of what is and isn't working. Reports are public and unedited.
+
+**Dissolution**: The Pre-Genesis Coordination Team dissolves into the Interim Secretariat when Phase 0 activates. Team members are eligible for Secretariat nomination pools but receive no preferential treatment — the same selection mechanisms (lottery from qualified pools) apply. This prevents the team from becoming a power center that captures the founding process it was designed to enable.
+
+**The dissolution risk**: Institutional inertia applies even to small teams. People who have spent 18–30 months building Phase -1 infrastructure have knowledge, relationships, and emotional investment that create natural resistance to dissolution. The protocol acknowledges this risk honestly and addresses it through structural mechanisms (automatic dissolution upon Phase 0 activation, no guaranteed Secretariat seats) rather than relying on the team's willingness to let go. This is the same design logic as the Interim Secretariat's sunset clause (Section IV.F) — structural dissolution, not voluntary.
+
+---
+
 ## Module 1 Conclusion: Foundation established
 
 This first module has established the foundational architecture for legitimate institutional founding:
 
-**Section I** explained why legitimate convening processes matter and what historical precedents teach about successful constitutional founding.
+**Section I** explained why legitimate convening processes matter, what historical precedents teach about successful constitutional founding, and how the first domino problem is resolved through demonstrated value preceding formal authority.
 
-**Section II** defined eleven core principles ensuring legitimacy, preventing capture, and enabling pluriversal participation while respecting diverse authority sources—including the new Permeation Mandate establishing that GGF structures upgrade legacy institutions from within rather than seeking to replace them.
+**Section II** defined twelve core principles ensuring legitimacy, preventing capture, and enabling pluriversal participation while respecting diverse authority sources — including the Permeation Mandate establishing that GGF structures upgrade legacy institutions from within, and the Accountable Coordination principle providing testable criteria distinguishing GGF's hierarchies from the extractive hierarchies it opposes.
 
-**Section III** created the Genesis Fund with mandatory Peace Tithe contributions, tripartite governance, and unconditional Indigenous Sovereign Endowment proving that resource flows reflect sovereign recognition rather than aid relationships.
+**Section III** created the Genesis Fund with phased funding matched to demonstrated capacity (Seed → Coalition → Scale), mandatory Peace Tithe contributions with honest early-stage budgeting, tripartite governance, and staged but legally binding Indigenous Sovereign Endowment.
 
 **Section IV** designed the Interim Secretariat as a time-limited, accountable bootstrapping body capable of coordinating complex founding processes while preventing power entrenchment.
 
-Together, these four sections provide the constitutional bedrock upon which all subsequent convening processes rest.
+**Section IV-A** established the Pre-Genesis Demonstration Phase, resolving the cold-start problem through municipal pilots that prove GGF coordination infrastructure works before asking anyone to sign a treaty.
+
+Together, these five sections provide the constitutional bedrock upon which all subsequent convening processes rest.
 
 **What comes next**:
 
-**Module 2** will detail the Dual-Track Activation (enabling both urgent crisis response and deliberative legitimacy-building) and the convening protocols for Earth Council, Global Citizens' Assembly, and Youth Stewardship Council—the three Tier 1 bodies whose independent authority sources form the foundation of all subsequent governance.
+**Module 2** will detail the Dual-Track Activation (enabling both urgent crisis response and deliberative legitimacy-building, with structural containment preventing emergency power capture) and the convening protocols for Earth Council, Global Citizens' Assembly, and Youth Stewardship Council — the three Tier 1 bodies whose independent authority sources form the foundation of all subsequent governance.
 
 **Module 3** will cover convening protocols for Tier 2 and Tier 3 bodies that derive legitimacy from Tier 1 validation.
 
-**Module 4** will introduce the Network Effects Protocol (economic architecture making participation advantageous) and Constitutional Immune System (proactive threat detection and response).
+**Module 4** will introduce the Infrastructure Access Model (making participation attractive through demonstrated results rather than coercive exclusion) and Constitutional Immune System (proactive threat detection and response).
 
-**Module 5** will provide detailed implementation timelines, cultural translation protocols, and integration mechanisms.
+**Module 5** will provide the 5–7 year phase-gated implementation timeline, cultural translation protocols, and integration mechanisms.
 
-**Module 6** will establish monitoring, amendment procedures, ethical foundations, and validation of the protocol's resilience through steel manning adversarial testing.
+**Module 6** will establish monitoring (including the new Accountable Coordination Audit and Coercion Audit), amendment procedures, ethical foundations, and updated steel-manning validation.
 
-**The foundation is set. The legitimacy cascade awaits.**
+**The foundation is set. The first domino — municipal demonstration — awaits.**
 
 ---
 

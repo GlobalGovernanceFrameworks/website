@@ -1,33 +1,33 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
-section: Module 4 - Network effects & constitutional immune system
-status: Full Draft v1.1 (updated to v0.5 outline)
-revision: 1.1
-date: 2026-03-04
-module: "4 of 6: Network effects & safeguards (Sections VII-VIII)"
-wordCount: ~13,000
+section: Module 4 - Infrastructure access & constitutional immune system
+status: Full Draft v1.2 (updated to v0.6 outline — Structural Integrity Revision)
+revision: 1.2
+date: 2026-03-23
+module: "4 of 6: Infrastructure access & safeguards (Sections VII-VIII)"
+wordCount: ~14,000
 purpose: Constitutional founding document for Treaty implementation
 ---
 
 # Genesis Protocol: Constitutional Convening Process
-## Module 4: Network effects & constitutional immune system
+## Module 4: Infrastructure access & constitutional immune system
 
-**Module Contents**: This module addresses two critical challenges: transforming power dynamics to make participation advantageous (Network Effects Protocol), and building proactive resilience against capture and failure (Constitutional Immune System).
+**Module Contents**: This module addresses two critical challenges: making participation attractive through demonstrated value and shared infrastructure (Infrastructure Access Model), and building proactive resilience against capture and failure (Constitutional Immune System).
 
 **In this module:**
-- [Section VII: Network Effects Protocol](#section-vii)
+- [Section VII: Infrastructure Access Model](#section-vii)
 - [Section VII.B: AUBI as cognitive infrastructure for systemic upgrade](#section-vii-b)
 - [Section VIII: Constitutional Immune System & failure protocols](#section-viii)
 
 **Estimated Reading Time**: 40 minutes
 
-**Prerequisites**: This module builds on the institutional architecture established in Modules 1-3, adding the economic incentive structure and safeguard mechanisms that make the system resilient.
+**Prerequisites**: This module builds on the institutional architecture established in Modules 1-3, adding the participation incentive structure and safeguard mechanisms that make the system resilient.
 
 ---
 
-## <a id="section-vii"></a>Section VII: Network Effects Protocol
+## <a id="section-vii"></a>Section VII: Infrastructure Access Model
 
-### VII.A. The opt-out threat
+### VII.A. The opt-out threat and the coercion problem
 
 During adversarial testing, a P5 diplomat raised a simple but devastating objection:
 
@@ -53,13 +53,21 @@ During adversarial testing, a P5 diplomat raised a simple but devastating object
 
 **Economic sanctions**: Require multilateral cooperation that opt-out nations can block through existing institutions.
 
-**The insight from steel manning**: **Asking power to surrender voluntarily is naive. Transform the incentive structure so non-participation becomes more costly than participation.**
+**The insight from steel manning**: Asking power to surrender voluntarily is naive. The incentive structure must be transformed so participation becomes more attractive than abstention.
 
-### VII.B. The Network Effects Protocol solution
+**But the v0.5 response created a structural contradiction.** Previous versions of this protocol stated: "Make cost of non-participation catastrophic" and described "economic isolation" and "economically suicidal" consequences for non-participants. This language was explicit about using economic coercion as the primary participation driver.
 
-**Key principle**: Make the cost of non-participation economically catastrophic, not through punishment but through **exclusion from the new regenerative economy**.
+The problem: GGF frameworks (AUBI, Financial Systems, Nested Economies) identify economic coercion as a core mechanism of what the Karlova analysis calls the "parasitic control system." The Network Effects Protocol then deployed economic coercion as GGF's own primary tool. A system that condemns coercion while practicing it has a legitimacy problem that no amount of steel-manning can resolve — because the steel man IS the critique.
 
-**The protocol transforms participation from charitable gesture to rational self-interest.**
+**The v0.6 reframe**: Replace coercion with demonstrated value. Replace exclusion with infrastructure access. Replace "the stick isn't a weapon" (which it was) with an architecture where benefits are naturally unavailable outside the infrastructure — not withheld as punishment.
+
+### VII.B. The Infrastructure Access Model
+
+**The core reframe**: The EU single market is not available to non-EU members. This is not "economic exclusion" — it is the natural consequence of not having built the shared infrastructure. You cannot use a railroad you did not help build, not because someone is punishing you, but because the railroad only exists where it was built.
+
+GGF economic benefits — Global Commons Fund, AUBI, Sovereign Debt Transformation, Gaian Trade preferential terms — are infrastructure that requires institutional integration to function. A nation that has not ratified the Treaty has not built the institutional connections (BAZ governance, Hearts Treasury, SRC coordination, Digital Justice Tribunal jurisdiction acceptance) that these systems require. They are not being excluded from benefits; they lack the compatible infrastructure through which benefits flow.
+
+**The crucial difference from v0.5**: There is no "exclusion" tier. Non-participating nations are not excluded from anything. They simply haven't built the infrastructure that GGF coordination requires. The GGF actively helps nations at every tier build toward the next one. The incentive is demonstrated advantage, not threatened isolation.
 
 **Component 1: Remove P5 veto over activation**
 
@@ -79,186 +87,95 @@ During adversarial testing, a P5 diplomat raised a simple but devastating object
 - Shifts dynamic: P5 must decide whether to join working system or remain outside
 - Historical precedent: International Criminal Court activated despite US opposition
 
-**Component 2: Economic exclusion architecture**
+**Component 2: Tiered integration architecture**
 
-**Access to GGF economic benefits reserved EXCLUSIVELY for "Gold" tier members** (full Treaty ratification and implementation):
+Access to GGF economic benefits requires institutional integration — not just political agreement but actual implementation of the infrastructure through which coordination and resources flow.
 
-**Benefits requiring Gold membership**:
+Full ratification includes:
+- Establishing BAZ governance infrastructure within national legal framework
+- Connecting national financial systems to Hearts/Leaves interoperability standards
+- Implementing AUBI delivery infrastructure (enrollment, distribution, Hearts Treasury)
+- Accepting Digital Justice Tribunal jurisdiction for GGF-related disputes
 
-**1. Global Commons Fund** (`mechanism_gcf`):
-- Primary regenerative finance engine
-- Estimated $500B+ annually from:
-  - Carbon pricing revenues
-  - Digital commons fees
-  - Financial transaction taxes
-  - Ecological debt payments
-- Funds planetary-scale investment in renewable energy, ecosystem restoration, regenerative agriculture, universal services
+**Tiered integration** (replaces the Gold/Bronze binary of v0.5):
 
-**2. AUBI System** (`framework_aubi`):
-- Adaptive Universal Basic Income
-- Provides economic security for all humans
-- Funded through Global Commons Fund
-- Only citizens of Gold-tier nations eligible
+**Observer tier**: No adoption requirements. Access to public documentation, Failure Library, academic evaluations, Pre-Genesis pilot data, public sessions of governance bodies. Can submit comments and proposals. No voting rights. No resource access. Nations studying the framework and preparing for future participation.
 
-**3. Sovereign Debt Transformation** (`protocol_debt_transformation`):
-- Converts extractive debt into ecological restoration obligations
-- Estimated $1-2T debt relief for Global South nations
-- Conditional on Gold-tier participation
-- Breaks debt trap enabling development
+**Pilot Partner tier**: One or more municipal BAZ pilots in operation within national territory. Access to technical assistance, Community Weaver training programs, Legacy Hardware API support for jurisdiction-specific adaptation, and Heartstarter matching funds for pilot BAZs (per Financial Systems Framework §4.3). Can participate in relevant working groups. The nation's municipalities are building the infrastructure; the GGF helps.
 
-**4. Gaian Trade Framework** (`framework_gaian_trade`):
-- Preferential trade terms for Gold-tier members
-- Lower tariffs, streamlined logistics, priority access to markets
-- Creates competitive advantage for participating nations
-- Non-participants face higher trade costs
+**Treaty Partner tier**: Full Treaty ratification plus national BAZ infrastructure operational. Access to Global Commons Fund, AUBI coordination and deployment support, Sovereign Debt Transformation Protocol, Gaian Trade Framework preferential terms, full participation in SRC, Earth Council, Citizens' Assembly, and all governance bodies.
 
-**5. Technology transfer and capacity building**:
-- Access to renewable energy technologies
-- Digital infrastructure support
-- Agricultural innovation sharing
-- Education and health system development
-- Available only to Gold-tier members
+**Why three tiers instead of four?** The v0.5 framework included a "Silver" tier of selective participation (adopting specific Treaty pillars). In practice, the AUBI/Hearts/Leaves infrastructure is deeply interconnected — you cannot run AUBI without Hearts Treasury, cannot run Hearts Treasury without BAZ governance, cannot run BAZ governance without accepting Digital Justice Tribunal jurisdiction for disputes. The system's components are mutually dependent. Meaningful participation requires the full stack. The Pilot Partner tier provides the gradual on-ramp that "Silver" was designed for, but at the municipal rather than national level — which is where the actual infrastructure-building happens.
 
-**6. Climate adaptation finance**:
-- Grants (not loans) for climate resilience
-- Infrastructure hardening against extreme weather
-- Disaster response and recovery support
-- Migration and displacement assistance
-- Non-participants must self-fund adaptation
+### VII.C. The attraction dynamic
 
-**Lower participation tiers receive NO economic benefits**:
+**Scenario**: P5 nation opts out of Treaty, runs "parallel Global Security Forum" maintaining old power structure.
 
-**Observer-Plus tier**: Can attend meetings, observe proceedings, access information. **Cannot access any financial mechanisms or economic benefits.**
+**v0.5 framing** (retired): "Economic isolation from world's regenerative finance engine. Makes strategic non-engagement economically suicidal."
 
-**Bronze tier**: Minimal participation (transparency reporting only). **Cannot access any financial mechanisms or economic benefits.**
+**v0.6 framing**: The parallel forum operates without GGF coordination infrastructure. It can offer whatever it offers — military alliances, traditional aid, existing trade arrangements. Meanwhile, Treaty Partners demonstrate measurable outcomes that the parallel forum cannot replicate:
 
-**Silver tier**: Selective participation (some pillar adoption). **Partial access to some benefits but excluded from major financial mechanisms.**
+- Global South Treaty Partners access Sovereign Debt Transformation, converting crushing debt payments into productive ecological investments. Parallel forum nations remain trapped in extractive debt.
+- Treaty Partners deploy AUBI pilots, producing measurable improvements in community resilience, care economy activation, and adaptive institutional capacity. Parallel forum nations continue with legacy welfare systems.
+- Treaty Partners participate in Gaian Trade Framework, building supply chains grounded in ecological accounting and Digital Product Passports. Parallel forum nations operate in the same trade system as before.
+- Treaty Partners pool climate adaptation resources through the Global Commons Fund. Parallel forum nations self-fund adaptation — expensive, fragmented, inadequate.
 
-### VII.C. The economic isolation dynamic
+The divergence is not instant. It unfolds over years. The question is not "will the P5 nation face catastrophic consequences next quarter?" but "will the demonstrated results of Treaty participation become so visible that domestic constituencies demand their government join?"
 
-**Scenario**: P5 nation (e.g., major power) opts out of Treaty, attempts to run parallel "Global Security Forum" maintaining old power structure.
+**The honest admission**: This is slower than coercion. GGF may operate for years — possibly a decade — without full P5 participation. The protocol accepts this. A system built on demonstrated value attracts participants it can trust. A system built on economic threats attracts participants who resent it and seek to undermine it from within. The Permeation Mandate requires the patience to build genuine attraction.
 
-**Month 0-12**: Parallel forum established
-- P5 nation convinces some allies to join alternative
-- Claims Treaty is illegitimate/ineffective
-- Attempts to undermine Treaty credibility
-- Maintains old institutional structures
+**The domestic pressure pathway**: The most powerful force driving eventual P5 participation is not international pressure but domestic demand. When citizens of non-participating nations see neighboring countries' citizens accessing AUBI, when businesses see Treaty Partners accessing preferential trade terms, when municipalities see peer cities benefiting from Heartstarter matching and Community Weaver programs — the political pressure to join comes from inside the nation, not from GGF.
 
-**Month 12-24**: Economic reality emerges
-- Global South nations joining Treaty access Commons Fund capital ($100B+ flowing)
-- Debt relief transforming economies previously trapped by IMF/World Bank conditions
-- AUBI providing economic security, stimulating local economies
-- Gaian Trade Framework creating preferential trade relationships
-- Climate adaptation finance building resilience
+This is the same dynamic that drove Phase -1 (Module 1, Section IV-A): municipal demonstrated value creates national advocacy. At the international level, Treaty Partner demonstrated value creates domestic constituencies for participation in non-participating nations.
 
-**Parallel forum nations**:
-- Have NO access to Commons Fund capital
-- NO debt relief (remain trapped in extractive debt)
-- NO AUBI (citizens lack economic security)
-- NO preferential trade (higher costs, trade barriers)
-- Must self-fund climate adaptation (expensive, inadequate)
+### VII.D. P5 engagement strategy
 
-**Result**:
-- Development capital flows through Treaty mechanisms, not parallel forum
-- Global South nations have rational incentive to join Treaty, not parallel forum
-- Citizens in non-participating nations pressure governments (why don't we get AUBI?)
-- Investors and businesses prefer Treaty nations (stable, growing economies)
-- Non-participating nations face capital flight and brain drain
+Instead of making non-participation "catastrophic," the protocol provides specific engagement pathways for large powers:
 
-**Month 24+**: Economic isolation becomes unsustainable
-- Parallel forum cannot compete with Treaty's financial capacity
-- Non-participating nations face domestic pressure to join
-- Economic metrics diverge (Treaty nations growing, non-participants stagnating)
-- Strategic calculus shifts: Abstention no longer viable
+**Municipal entry**: P5 cities can become Pilot Partners independently of national government decisions. London, New York, Shanghai, Moscow, Paris — major cities routinely participate in international climate commitments, sustainability networks, and governance experiments that their national governments have not endorsed. A P5 nation's cities operating BAZ pilots create domestic proof-of-concept that makes national ratification politically easier.
 
-**The cost of non-participation**: Economic isolation from world's regenerative finance engine
+**Sectoral entry**: P5 nations can engage with specific GGF framework components without full Treaty ratification. A nation that wants to participate in Gaian Trade Framework supply chain standards for specific industries, or that wants its research institutions to contribute to the Knowledge Commons, can do so through targeted agreements. Each sectoral engagement builds the institutional connections that make full ratification less of a leap.
 
-**The stick isn't a weapon**: It's exclusion from the new economy. No sanctions required. Natural consequences of choosing not to participate in collectively beneficial system.
+**Observation with dignity**: Observer status includes genuine participation in design conversations, working groups, and public consultations — not just watching from outside. Observer nations can shape the system they may eventually join. Their input is valued and documented, not treated as irrelevant because they haven't ratified.
 
-### VII.D. Why this defeats strategic opt-out
+**The timeline** (honest assessment):
+- **Years 1-3**: Non-participants observe, claim Treaty will fail, resist domestic pressure
+- **Years 3-5**: Economic and social divergence between Treaty Partners and non-participants becomes measurable; P5 municipalities begin engaging as Pilot Partners
+- **Years 5-10**: Domestic pressure mounts; some P5 nations begin sectoral engagement or full ratification
+- **Years 10+**: Near-universal participation achieved through demonstrated value, not coercion
 
-**Traditional international agreements**: Participation is cost (sovereignty pooling, compliance burden) with minimal individual benefit (diffuse public goods like clean air). Rational actors defect.
-
-**Network Effects Protocol**: Participation is gateway to massive economic benefits exceeding compliance costs. Rational actors join.
-
-**Game theory transformation**:
-
-**Traditional treaty** (Prisoner's Dilemma):
-- Cooperate (join): Pay costs, uncertain benefits
-- Defect (opt-out): Avoid costs, free-ride on others' cooperation
-- **Dominant strategy: Defect**
-
-**Network Effects Protocol** (Coordination Game):
-- Participate (Gold tier): Access to $500B+ Commons Fund, debt relief, AUBI, trade benefits
-- Abstain: Excluded from regenerative economy, falling behind
-- **Dominant strategy: Participate**
-
-**Network effects amplification**:
-
-As more nations join:
-- Commons Fund grows (more revenue sources, larger scale)
-- AUBI becomes more generous (larger resource pool)
-- Gaian Trade network expands (more advantageous trade partners)
-- Technology transfer accelerates (more innovation to share)
-- Non-participants increasingly isolated (fewer trade partners outside network)
-
-**Tipping point**: Once 40-50% of global economy participates, non-participation becomes economically catastrophic. Remaining outside means exclusion from majority of global economic activity.
-
-**Example calculation**:
-
-**Assume**:
-- 100 nations join Treaty (Gold tier)
-- Representing 60% of global GDP
-- Commons Fund: $500B annually
-- Average nation receives: $5B in benefits (AUBI, climate finance, debt relief, trade advantages)
-
-**For non-participating nation**:
-- Benefits: $0
-- Costs: Trade barriers with 60% of global economy, no debt relief, no climate finance, domestic discontent
-- Opportunity cost: $5B+ annually foregone
-
-**For participating nation**:
-- Benefits: $5B+ in Commons Fund benefits + trade advantages + technology transfer
-- Costs: Compliance with Treaty (estimated $500M-1B for most nations)
-- **Net benefit: $4-4.5B annually**
-
-**Rational calculation**: Join unless you're ideologically opposed regardless of cost.
+**Historical precedent**: The Paris Agreement achieved near-universal participation not through economic threats but through demonstrated momentum, domestic pressure, and reputational dynamics. The process took years, not months. The Genesis Protocol accepts this timescale.
 
 ### VII.E. Addressing the "Global South exploitation" concern
 
 **Objection**: Won't this system still advantage wealthy nations who can afford to participate fully while Global South nations struggle with compliance costs?
 
-**Response**: The protocol specifically addresses this through **equity-weighted benefit distribution**:
+**Response**: The protocol specifically addresses this through **equity-weighted benefit distribution** and through the Pilot Partner tier, which provides substantial support (Heartstarter matching, technical assistance, Community Weaver training) before full ratification is required.
 
-**Global Commons Fund allocation**:
+**Global Commons Fund allocation** (once operational at scale):
 - **50% population-weighted**: Every person generates equal claim (favors populous Global South nations)
 - **30% need-weighted**: Greater allocation to nations with lower GDP per capita
 - **20% performance-weighted**: Rewards nations meeting climate and equity targets
 
 **Result**: Global South nations receive disproportionately large share of Commons Fund relative to contributions.
 
-**Example**:
-- **Norway**: High GDP per capita, small population → Pays in more than receives (net contributor)
-- **Bangladesh**: Low GDP per capita, large population → Receives far more than pays (net beneficiary)
-- **System transfers wealth from Global North to Global South while providing mutual benefits**
-
 **Debt relief prioritization**: 
-- Global South nations with largest debt burdens get priority
+- Global South nations with largest debt burdens get priority access to Sovereign Debt Transformation
 - Converts crushing debt payments into productive ecological investments
 - Breaks cycle of extraction and dependency
 
 **Technology transfer**:
-- Renewable energy technologies shared freely with Global South
+- Renewable energy technologies shared freely with Treaty Partners
 - No intellectual property barriers for essential technologies
 - Capacity building support for implementation
 
-**The key insight**: This is not zero-sum. Commons Fund creates new resources (from carbon pricing, financial transactions, etc.) rather than redistributing fixed pie. Global South gains substantially, Global North gains too (climate stability, reduced conflict, new markets), everyone better off than status quo.
+**The key insight**: This is not zero-sum. The Commons Fund creates new resources (from carbon pricing, financial transactions, ecological accounting) rather than redistributing a fixed pie. Global South gains substantially, Global North gains too (climate stability, reduced conflict, new markets), everyone better off than status quo.
 
 ### VII.F. What if P5 nations still refuse?
 
-**Scenario**: Despite economic pressure, one or more P5 nations refuse to join for 5-10 years.
+**Scenario**: Despite demonstrated value and domestic pressure, one or more P5 nations refuse to join for 5-10 years.
 
-**Protocol response**: System functions without them.
+**Protocol response**: The system functions without them.
 
 **Functionality without P5 participation**:
 
@@ -267,125 +184,110 @@ As more nations join:
 - Veto override mechanisms functional (2/3 majority can override any veto)
 - UNGA binding resolutions operational
 - GGF bodies (Earth Council, Citizens' Assembly, Youth Council, Guardians, etc.) fully functional
-- Digital Justice Tribunal has jurisdiction over Treaty members
+- Digital Justice Tribunal has jurisdiction over Treaty Partners
 - Global Enforcement Mechanism operates in participating nations
 
 **Economic benefits flow**:
-- Commons Fund operational with participation from 100+ nations
-- AUBI providing economic security to 5+ billion people
+- Commons Fund operational with participation from Treaty Partner nations
+- AUBI providing economic security in participating nations
 - Debt relief transforming Global South economies
-- Gaian Trade network covering majority of global trade
-- Climate finance building resilience worldwide
+- Gaian Trade network covering growing share of global trade
+- Climate finance building resilience
 
 **Non-participating P5 nations**:
-- Increasingly isolated economically
-- Citizens demanding: "Why don't we get AUBI?"
-- Businesses lobbying: "We need access to Gaian Trade network"
-- Diplomatic influence waning (global leadership shifting to Treaty coalition)
-- Climate impacts worsening while lacking access to adaptation finance
+- Operating outside GGF coordination infrastructure — not "isolated" but lacking access to infrastructure they chose not to build
+- Their citizens and municipalities increasingly engaging as Pilot Partners regardless of national government position
+- Domestic political pressure building as demonstrated results accumulate
 
-**Eventually, domestic pressure forces participation**:
-
-Democracies face electoral pressure. Citizens see neighboring nations benefiting and demand government join. Opposition parties campaign on Treaty membership.
-
-Even authoritarian regimes face pressure. Economic stagnation, capital flight, brain drain create instability. Elite interests (businesses, investors) push for participation to access markets and capital.
-
-**The timeline**:
-- **Years 1-3**: Non-participants resist, claim Treaty will fail
-- **Years 3-5**: Economic divergence becomes clear; domestic pressure builds
-- **Years 5-10**: One by one, hold-outs join as costs become unsustainable
-- **Years 10+**: Universal or near-universal participation achieved
-
-**Historical precedent**: Even US eventually joined many international agreements initially opposed (Law of the Sea Convention dynamics, climate agreements). Economic and diplomatic isolation creates irresistible pressure.
+**The protocol does not punish non-participants.** It builds something valuable and invites everyone to join. Those who don't join miss the value — that is a natural consequence, not a sanction.
 
 ### VII.G. Safeguards against abuse
 
-**Objection**: What prevents Treaty coalition from using economic exclusion as weapon to coerce nations into unfair terms?
+**Objection**: What prevents Treaty coalition from using infrastructure access tiers as a weapon to coerce nations into unfair terms?
 
 **Safeguards**:
 
-**1. Consent Compact Framework** (Section II.G from Module 1):
-- Nations join voluntarily at tier matching their comfort level
-- No coercion; economic benefits are incentive, not punishment
-- Can start at Bronze, upgrade to Silver, then Gold as domestic support builds
-- Respects sovereignty while providing participation pathways
+**1. Accountable Coordination principle** (Section II.M from Module 1):
+- GGF bodies must satisfy all four criteria of accountable coordination hierarchy: revocable authority, symmetric transparency, protected exit, self-limiting function
+- Annual Accountable Coordination Audit tests whether participation tiers function as genuine infrastructure access or as coercive gatekeeping
+- Failure triggers mandatory review
 
-**2. Conscience & Sovereignty Clause** (Section II.I from Module 1):
+**2. Coercion Audit** (new in v1.2):
+- Annual independent assessment that GGF engagement pathways remain genuinely voluntary
+- Evaluates whether any nation experiences material harm from non-participation beyond the natural absence of shared infrastructure
+- Published on Birth Certificate Dashboard
+- If audit finds coercive dynamics emerging, the Infrastructure Access Model must be revised to restore genuine voluntariness
+
+**3. Conscience & Sovereignty Clause** (Section II.I from Module 1):
 - Treaty governs only shared global commons
 - Nations retain full sovereignty over domestic policy
 - No interference in cultural values, religious practice, family structures
-- Economic benefits available to all who meet commons governance standards
+- Infrastructure access available to all who build the institutional connections — not conditional on ideological conformity
 
-**3. Equity Ombudsperson oversight** (Section VI.I from Module 3):
-- Monitors for discrimination or unfair exclusion
-- Can investigate if economic benefits being weaponized
-- Issues binding recommendations if exclusion becomes coercive
+**4. Equity Ombudsperson oversight** (Section VI.I from Module 3):
+- Monitors for discrimination or unfair gatekeeping
+- Can investigate if infrastructure access tiers are being weaponized
+- Issues binding recommendations if access requirements become disproportionate barriers for Global South nations
 - Ensures system serves equity, not dominance
 
-**4. Democratic accountability**:
-- Commons Fund allocation subject to Citizens' Assembly review
-- Earth Council can veto policies affecting Indigenous nations unfairly
-- Youth Council can veto if system exploiting short-term pressure
-- Multiple bodies ensure no single interest controls economic mechanisms
+**5. Protected exit** (structural):
+- Nations can withdraw from Treaty at any time (post-founding period)
+- AUBI baseline continues for individuals regardless of national government decisions
+- BAZ governance continues at municipal level regardless of national withdrawal
+- No existential consequences from withdrawal — only loss of coordination benefits
 
-**5. Transparent criteria**:
-- Participation tiers defined clearly in Treaty
-- Criteria for benefits access published and objective
-- No arbitrary denial of benefits
+**6. Transparent criteria**:
+- Integration requirements defined objectively in Treaty text
+- No arbitrary denial of tier status
 - Appeal mechanisms through Digital Justice Tribunal
+- All tier assessments published on Birth Certificate Dashboard
 
-**The key principle**: Economic benefits should incentivize commons governance, not coerce cultural conformity or political submission. The line is bright: Meet commons governance standards (emissions limits, ecocide prohibition, digital rights), access benefits. Domestic policy autonomy fully protected.
+**The key principle**: Infrastructure access should incentivize commons governance through demonstrated value, not coerce conformity through threatened deprivation. The line is drawn by the Coercion Audit: if non-participation creates material harm beyond the natural absence of shared infrastructure, the model has failed its own test and must be revised.
 
 ### VII.H. Timeline and implementation
 
-**Phase 0 (Month 0-3)**: Network Effects Protocol activated with Treaty ratification
+**Phase -1 (Year 0-2)**: Pre-Genesis municipal pilots demonstrate GGF infrastructure value
 
-**Participation threshold**: 30+ nations (NOT including P5 requirement)
+**Phase 0 (Year 2-3)**: Treaty activation with 30+ ratifying nations
+- Participation threshold: 30+ nations (NOT including P5 requirement)
+- Likely initial coalition: Climate-vulnerable nations, Global South nations seeking debt relief, progressive middle powers, some European nations
+- P5 cities begin engaging as Pilot Partners independently of national governments
 
-**Initial participants**: Likely coalition of:
-- Progressive European nations (Nordic countries, Netherlands, etc.)
-- Climate-vulnerable nations (small island states, low-lying nations)
-- Global South nations seeking debt relief (many African, Latin American nations)
-- Some middle powers (Canada, South Korea, Australia potentially)
+**Phase 1-2 (Year 3-5)**: Infrastructure matures; benefits begin flowing
+- First AUBI pilots operational in Treaty Partner nations
+- Sovereign Debt Transformation negotiations begin for eligible nations
+- Gaian Trade Framework preferential terms activated among Treaty Partners
+- Commons Fund begins generating revenue from participating nations' carbon pricing, financial transaction fees
+- Additional nations join at various tiers as they observe results
 
-**Phase 1 (Month 3-12)**: Commons Fund establishment
-- Carbon pricing mechanisms begin generating revenue
-- Digital commons fees collected
-- Financial transaction taxes implemented in participating nations
-- Initial fund capitalization: ~$100B
+**Phase 3-4 (Year 5-7)**: Network effects accelerate through demonstrated value
+- Commons Fund grows as more nations join
+- AUBI coverage expands
+- Measurable divergence in community resilience, ecological restoration, economic security between Treaty Partner and non-participant nations
+- P5 domestic pressure intensifies as municipal Pilot Partners produce visible results
+- Some P5 nations begin sectoral engagement or full ratification
 
-**Phase 2 (Year 1-2)**: Benefits begin flowing
-- First AUBI payments to citizens of Gold-tier nations
-- Debt relief negotiations for Global South nations
-- Gaian Trade Framework preferential terms activated
-- Climate adaptation finance deployed
-
-**Phase 3 (Year 2-5)**: Network effects accelerate
-- Additional nations join seeing benefits
-- Commons Fund grows ($200B+, $300B+, reaching $500B+ by Year 5)
-- Economic divergence between participants and non-participants becomes stark
-- P5 nations face mounting pressure to join
-
-**Phase 4 (Year 5-10)**: Near-universal participation
-- One by one, hold-outs join
-- Some P5 nations may join earlier; others resist longer
-- Eventually, economic isolation becomes unsustainable for all
-- Treaty becomes de facto universal even if some nations formally abstain
+**Year 7+**: Approaching broad participation
+- One by one, remaining nations join as demonstrated value compounds
+- Some may hold out for ideological reasons — this is acceptable
+- System functions effectively with broad but not necessarily universal participation
 
 **Verification metrics**:
 
 **Participation rate**: 
-- Target: 50+ nations by Year 1, 100+ by Year 3, 150+ by Year 5
+- Target: 50+ nations at Treaty Partner tier by Year 3, 100+ by Year 5, 150+ by Year 7
+- Municipal Pilot Partners: 50+ cities by Year 3, 200+ by Year 5
 
-**Economic coverage**:
-- Target: 40% global GDP by Year 1, 60% by Year 3, 80% by Year 5
+**Infrastructure coverage**:
+- BAZ governance operational: 100+ BAZs by Year 3, 500+ by Year 5
+- Hearts pilot economies: 50+ by Year 3, 200+ by Year 5
 
-**Benefits distribution**:
-- Commons Fund disbursements: $100B+ by Year 2, $500B+ by Year 5
-- AUBI recipients: 1B+ people by Year 2, 5B+ by Year 5
-- Debt relief: $500B+ by Year 3, $1-2T by Year 5
+**Benefits distribution** (scaling with participation):
+- Commons Fund: Revenue flow begins Year 3; $100B+ by Year 5 (dependent on ratification breadth)
+- AUBI recipients: Pilot communities Year 2-3; 500M+ people by Year 5 (dependent on ratification breadth)
+- Debt relief: First SDTP agreements Year 3; $500B+ by Year 7
 
-**Success indicator**: When non-participating nations' governments face domestic pressure to join, protocol has succeeded in transforming incentive structure.
+**Success indicator**: When non-participating nations' citizens, municipalities, and businesses independently seek engagement pathways, the attraction dynamic is working. This is measured not by GGF self-assessment but by independent tracking of Pilot Partner applications from non-Treaty nations.
 
 ---
 
@@ -438,8 +340,8 @@ AUBI is not peripheral to the transition. It is the cognitive infrastructure tha
 
 **Phase 2+ expansion**:
 - AUBI expansion follows ratification momentum
-- Nations joining at Gold tier access AUBI for their citizens
-- Network Effects (Section VII.A) position AUBI access as a major ratification incentive
+- Nations joining at Treaty Partner tier access AUBI for their citizens
+- Infrastructure Access Model (Section VII.A) positions AUBI access as a major ratification incentive
 
 #### VII.B.D.i. Pilot selection: The geographically bounded universal lottery
 
@@ -465,15 +367,15 @@ Rather than selecting random individuals from a large population, eligible commu
 
 Communities that meet baseline criteria (ratifying nation, minimum population threshold, administrative capacity to distribute) are entered into a publicly verifiable lottery. The lottery draw is conducted transparently, with the random seed published in advance on the Birth Certificate Dashboard, so the result is independently verifiable and no GGF actor can be accused of having influenced which communities were selected. This directly mirrors the sortition legitimacy logic applied to the Citizens' Assembly (Section VI.B) — the same principle operating at community rather than individual scale.
 
-**What community-level selection does not solve**: Pilots are inherently partial — not every community participates, which means the between-community comparison is visible and carries its own political dynamics. This is unavoidable in any pilot phase. The honest framing for communities not selected is that the pilot is a proof-of-concept stage, not a permanent allocation, and that full AUBI access follows national ratification at Gold tier. The lottery is for sequencing, not for desert.
+**What community-level selection does not solve**: Pilots are inherently partial — not every community participates, which means the between-community comparison is visible and carries its own political dynamics. This is unavoidable in any pilot phase. The honest framing for communities not selected is that the pilot is a proof-of-concept stage, not a permanent allocation, and that full AUBI access follows national ratification at Treaty Partner tier. The lottery is for sequencing, not for desert.
 
 **Verifiability and the Birth Certificate Dashboard**: All lottery draws, community selection criteria, and disbursement records are published in real time on the Birth Certificate Dashboard. This serves both the transparency mandate of the Genesis Protocol and the practical function of making AUBI pilot legitimacy independently verifiable by the ratifying nations, civil society observers, and adaptive nodes the protocol depends on.
 
-### VII.B.E. Integration with Network Effects Protocol
+### VII.B.E. Integration with Infrastructure Access Model
 
-Section VII.A lists AUBI as a Gold-tier benefit: access reserved for ratifying nations as a geopolitical participation incentive. This is correct for network effects architecture purposes.
+Section VII.A lists AUBI as a Treaty Partner benefit: access requires institutional integration including AUBI delivery infrastructure. This is correct for the Infrastructure Access Model — AUBI cannot be deployed in a nation that hasn't built the Hearts Treasury, BAZ governance, and Community Weaver infrastructure through which it operates.
 
-This section establishes an additional framing: AUBI functions simultaneously as a ratification incentive (external) and as the cognitive infrastructure enabling permeation (internal). These are two different functions served by the same mechanism.
+This section establishes an additional framing: AUBI functions simultaneously as a participation incentive (nations want it for their citizens) and as the cognitive infrastructure enabling permeation (it frees institutional actors to take adaptive risks). These are two different functions served by the same mechanism.
 
 The protocol must hold both framings simultaneously:
 - To non-participating nations: "Join and your citizens access AUBI" (incentive framing)
@@ -510,7 +412,7 @@ This places the GGF Catalyst Team among the earliest examples of what developmen
 - Compensation takes the form of meaningful contribution, access to the network being built, and modest honoraria where the Genesis Fund can support them — not salaries creating dependency
 - Administrative load is distributed by function across contributors, not concentrated in a single coordinator role
 - Legal establishment uses the lightest viable structure — an international treaty body secretariat hosted in an existing international organization hosting framework (Geneva, The Hague, or Vienna conventions) — minimizing the organizational footprint while providing the legal standing the protocol requires
-- The Catalyst Team sunsets cleanly into the Interim Secretariat once the Genesis Protocol activates, and the Interim Secretariat itself sunsets at Month 24 per the constitutional schedule
+- The Catalyst Team sunsets cleanly into the Interim Secretariat once the Genesis Protocol activates, and the Interim Secretariat itself dissolves upon completion of Phase 4 per the constitutional schedule
 
 The test of whether this design succeeded is not whether the Catalyst Team endures. It is whether the institutions it convened are capable of carrying the mission without it.
 
@@ -971,7 +873,7 @@ Any Tier 1 body can formally declare deadlock:
 - **Reformed UNSC** operates with emergency protocols
 - **Global Equity Ombudsperson** gains enhanced oversight powers
 - **Interim Secretariat** (if still operational) provides administrative continuity
-- **Track 1 emergency bodies** (if still within 24-month window) maintain crisis response
+- **Track 1 emergency bodies** (if still within their mandate per the Progressive Narrowing Ratchet) maintain crisis response
 
 **Reduced Mandate**:
 - **No new constitutional decisions** (cannot expand scope or establish new bodies)
@@ -1037,7 +939,7 @@ Any Tier 1 body can formally declare deadlock:
 
 ### VIII.G. Geopolitical Sabotage Clause
 
-**The vulnerability**: What if nation ratifies Treaty to gain influence and seats, then withdraws during critical Phase 0-4 to sabotage founding process?
+**The vulnerability**: What if nation ratifies Treaty to gain influence and seats, then withdraws during the critical founding period to sabotage the process?
 
 **Historical precedent**: 
 - Countries have weaponized withdrawal (US from Paris Agreement, UNESCO)
@@ -1054,7 +956,7 @@ Any Tier 1 body can formally declare deadlock:
 - Nation's Indigenous peoples invited to Earth Council convening
 - Formal commitment recorded on blockchain (immutable record)
 
-**Withdrawal attempt during Phase 0-4** (founding period, Month 0-24):
+**Withdrawal attempt during founding period (Phase 0 through Phase 4)**:
 
 **Treaty seat frozen for 2 years**:
 - Cannot withdraw cleanly
@@ -1068,7 +970,7 @@ Any Tier 1 body can formally declare deadlock:
 - Prevents government sabotage from disenfranchising citizens
 
 **Financial obligations continue**:
-- Must continue Phase 0-4 financial commitments (Peace Tithe already paid, non-refundable)
+- Must continue founding-period financial commitments (Peace Tithe already paid, non-refundable)
 - Cannot escape financial responsibilities
 - Prevents strategic defect-after-benefiting
 
@@ -1078,7 +980,7 @@ Any Tier 1 body can formally declare deadlock:
 - Other nations less likely to trust in future cooperation
 - Diplomatic consequences
 
-**Withdrawal after Phase 4** (post-founding, Month 24+):
+**Withdrawal after Phase 4** (post-founding):
 
 **Normal withdrawal process**:
 - 12-month notice period
@@ -1086,9 +988,9 @@ Any Tier 1 body can formally declare deadlock:
 - Citizens can still participate via individual registration (if they choose)
 - Orderly exit without sabotage
 
-**Why different rules for Phase 0-4 vs. post-founding?**
+**Why different rules for founding vs. post-founding?**
 
-**Phase 0-4 (founding)**: System is vulnerable; strategic withdrawal could collapse entire founding process. Strong protection needed.
+**Founding period (Phase 0-4)**: System is vulnerable; strategic withdrawal could collapse entire founding process. Strong protection needed.
 
 **Post-founding**: System established and resilient; can tolerate member withdrawal without existential threat. More flexibility appropriate.
 
@@ -1185,15 +1087,19 @@ Without cyber resilience, all other safeguards vulnerable to digital attack.
 
 ---
 
-## Module 4 Conclusion: Incentives transformed, resilience embedded
+## Module 4 Conclusion: Attraction built, resilience embedded
 
 This module has addressed two fundamental challenges in constitutional founding:
 
-**Section VII: Network Effects Protocol** transformed the incentive structure so that powerful actors find participation more advantageous than obstention:
+**Section VII: Infrastructure Access Model** replaced the v0.5 economic coercion architecture with an attraction-based participation model grounded in demonstrated value:
 - Removed P5 veto over Treaty activation (coalition of willing can proceed)
-- Reserved access to massive economic benefits (Global Commons Fund $500B+, AUBI, debt relief, preferential trade) exclusively for Gold-tier participants
-- Created economic isolation dynamic where non-participation becomes increasingly costly as network grows
-- Demonstrated how rational self-interest drives participation without coercion
+- Replaced Gold/Bronze exclusion tiers with Observer → Pilot Partner → Treaty Partner integration pathway
+- Reframed benefits access as natural infrastructure requirement, not punitive exclusion
+- Established P5 engagement strategy through municipal entry, sectoral engagement, and observation with dignity
+- Added Coercion Audit to ensure GGF doesn't reproduce the coercive dynamics it was designed to transcend
+- Accepted honestly that attraction is slower than coercion, and that years of partial participation are acceptable
+
+**Section VII.B: AUBI as Cognitive Infrastructure** established AUBI as the enabling condition for the Permeation Mandate — not just poverty alleviation but the structural precondition for institutional actors to function as adaptive nodes. Community-level lottery selection for AUBI pilots avoids both means-testing capture and individual stigma.
 
 **Section VIII: Constitutional Immune System** embedded proactive resilience against capture and failure:
 - Epistemic Antibodies detect threats before they materialize (coordination patterns, statistical anomalies, disinformation)
@@ -1204,13 +1110,13 @@ This module has addressed two fundamental challenges in constitutional founding:
 - Geopolitical Sabotage Clause prevents "veto by exit"
 - Cyber Resilience protects digital infrastructure
 
-Together, these mechanisms create a system that is both **attractive to join** (Network Effects) and **resilient once established** (Constitutional Immune System).
+Together, these mechanisms create a system that is both **attractive to join** (Infrastructure Access) and **resilient once established** (Constitutional Immune System).
 
 **What comes next**:
 
-**Module 5** will provide comprehensive implementation timeline detailing the 18-24 month founding sequence, cultural translation protocols enabling pluriversal engagement across radically different governance traditions, and integration mechanisms coordinating all bodies into coherent ecosystem.
+**Module 5** will provide the 5–7 year phase-gated implementation timeline (replacing the v0.5 18–24 month calendar), cultural translation protocols enabling pluriversal engagement across radically different governance traditions, and integration mechanisms coordinating all bodies into a coherent ecosystem.
 
-**Module 6** will establish monitoring and evolution systems tracking legitimacy metrics, constitutional amendment procedures enabling adaptation without compromising principles, ethical foundations addressing resolved tensions from steel manning, complete steel manning validation summary, and conclusion.
+**Module 6** will establish monitoring and evolution systems (including the new Accountable Coordination Audit and Coercion Audit), constitutional amendment procedures, ethical foundations addressing newly resolved tensions from the structural integrity revision, updated steel-manning validation summary, and conclusion.
 
 **The architecture is complete. The implementation pathways and accountability frameworks follow.**
 
@@ -1219,11 +1125,9 @@ Together, these mechanisms create a system that is both **attractive to join** (
 **End Module 4**
 
 **Module Statistics**:
-- Word count: ~13,000 words
+- Word count: ~14,000 words
 - Sections: VII-VIII
 - Reading time: ~40 minutes
 - Next: Module 5 (Implementation timeline, cultural translation, integration)
 
-*This module synthesizes game theory, network economics, biological immune systems, cybersecurity architecture, conflict resolution protocols, and systems resilience engineering into integrated safeguard mechanisms. The Network Effects Protocol makes participation rational; the Constitutional Immune System makes the system robust.*
-
-*These mechanisms emerged from rigorous adversarial testing (steel manning) that identified the most dangerous threats: powerful actors opting out, coordinated infiltration, constitutional deadlock, partial system failure, geopolitical sabotage, and cyber attacks. Every threat has been addressed with specific countermeasures.*
+*This module synthesizes institutional design theory, biological immune systems, cybersecurity architecture, conflict resolution protocols, and systems resilience engineering into integrated safeguard mechanisms. The Infrastructure Access Model makes participation attractive through demonstrated value rather than threatened exclusion; the Constitutional Immune System makes the system robust against the capture attempts that will inevitably follow.*

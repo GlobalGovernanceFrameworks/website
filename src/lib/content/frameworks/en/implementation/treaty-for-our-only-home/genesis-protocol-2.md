@@ -1,11 +1,11 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
 section: Module 2 - Dual-track activation & convening Part 1
-status: Full Draft v1.1 (updated to v0.5 outline)
-revision: 1.1
-date: 2026-03-04
+status: Full Draft v1.2 (updated to v0.6 outline — Structural Integrity Revision)
+revision: 1.2
+date: 2026-03-23
 module: "2 of 6: Dual-track & Tier 1 convening (Sections V-VI.C)"
-wordCount: ~14,000
+wordCount: ~15,000
 purpose: Constitutional founding document for Treaty implementation
 ---
 
@@ -73,320 +73,282 @@ The Genesis Protocol v0.3 proposed an 18-month timeline to convene all bodies wi
 
 ### V.B. The dual-track solution
 
-The Genesis Protocol v0.4 resolves this by **decoupling survival from legitimacy and running both in parallel.**
+The Genesis Protocol resolves this by **decoupling survival from legitimacy and running both in parallel.**
 
-**Key insight**: These are not sequential requirements but parallel tracks that converge after 18-24 months.
+**Key insight**: These are not sequential requirements but parallel tracks that converge as permanent bodies come online.
 
-**Track 1: Emergency Survival Framework** (Month 0-24)
+**Track 1: Emergency Response Capacity** (Month 0 – Variable)
 - Purpose: Immediate existential risk response capacity
-- Timeline: Operational within 3 months, sunset at 24 months
-- Authority: Limited to true existential threats only
-- Legitimacy: Interim appointments with mandatory transition to permanent bodies
+- Timeline: Operational within 3 months; authority narrows progressively as permanent bodies are seated
+- Authority: Limited to true existential threats only; delegated from Interim Secretariat, not independently held
+- Legitimacy: Interim appointments with structural dissolution as permanent bodies assume functions
 
-**Track 2: Foundational Legitimacy Framework** (Month 0-18)
+**Track 2: Foundational Legitimacy Framework** (Month 0 – Phase-gated)
 - Purpose: Full pluriversal convening per Genesis Protocol principles
-- Timeline: 18-month phased convening
+- Timeline: Phase-gated convening (see Module 5 for 5–7 year timeline)
 - Authority: Complete governance scope within Treaty mandate
 - Legitimacy: Multi-source validation through Tier 1-3 cascade
 
-**The constitutional handoff** (Month 18-24):
-- Track 1 emergency powers sunset automatically
-- Track 2 legitimately-convened bodies assume full authority
-- No extension possible for emergency track
-- Cooling-off period prevents capture by emergency directors
+**The constitutional handoff** (progressive, not single-event):
+- As each permanent body comes online, it assumes the relevant functions from Track 1
+- Track 1 authority narrows automatically with each transfer (Progressive Narrowing Ratchet)
+- When all Phase 3 bodies are seated, Track 1 has zero remaining authority and dissolves as structural fact
+- No extension mechanism exists; dissolution is architectural, not discretionary
 
-### V.C. Track 1: Emergency Survival Framework (detailed specifications)
+### V.C. Track 1: Emergency Response Capacity (detailed specifications)
 
-**Activation trigger**: Immediately upon Phase 0 milestone achievement (Month 0)
+**Activation trigger**: Immediately upon Phase 0 milestone achievement
 
 **Appointing authority**: Interim Secretariat (acting under strict Genesis Protocol mandate)
 
+**V.C.1. The structural containment problem**
+
+Previous versions of this protocol relied on a 24-month voluntary sunset for emergency powers. The v0.6 revision confronts the historical evidence honestly: **voluntary dissolution of emergency powers has approximately zero precedent in institutional history.**
+
+Every emergency authority the authors of this protocol can identify — from the Roman dictator (which eventually produced Caesar), to post-9/11 surveillance authorities (which became permanent), to wartime economic controls (which persisted for decades) — found institutional, legal, or political reasons to extend beyond their original mandate. The pattern is not explained by bad character. It is explained by institutional incentive structures: people who hold emergency authority accumulate relationships, knowledge, and institutional capital that create natural resistance to dissolution, even among those who sincerely intend to let go.
+
+The v0.6 architecture therefore does not rely on voluntary sunset. It makes dissolution **structural** — a matter of architectural fact rather than discretionary choice.
+
+**V.C.2. Delegated authority architecture**
+
+Emergency Directors do not hold independent authority. Their authority is technically implemented as a **revocable delegation** from the Interim Secretariat.
+
+This seemingly procedural distinction has profound consequences:
+
+- When the Interim Secretariat dissolves (upon Phase 4 completion), the delegation automatically expires. There is no authority left to delegate. The Emergency Directors' legal basis for action ceases to exist regardless of whether they cooperate.
+- Emergency Directors cannot claim independent legitimacy because they never had it. Their mandate is explicitly derivative — the delegation instrument is a public document, published on the Birth Certificate Dashboard, specifying exact scope.
+- Any action outside the scope specified in the delegation instrument is ultra vires (legally void). The Digital Justice Tribunal (once seated) has standing to nullify ultra vires actions retroactively.
+
+**V.C.3. Enumerated powers (closed list)**
+
+Previous versions specified that Track 1 handles "ONLY existential threats" but did not define what actions Emergency Directors can take in response. This left dangerous ambiguity. v0.6 specifies a **closed list** — actions not on the list are prohibited regardless of circumstances.
+
+**Emergency Directors MAY**:
+- Issue public advisories and coordinate information sharing across ratifying nations
+- Convene emergency expert panels (advisory only — panels provide analysis, not binding decisions)
+- Authorize deployment of pre-positioned emergency resources from the Genesis Fund contingency allocation (capped at $50M total, not per-incident)
+- Request (not compel) cooperation from ratifying nations for emergency response
+- Refer matters to existing international bodies (WHO, IAEA, etc.) for action under their existing mandates
+
+**Emergency Directors MAY NOT**:
+- Create new institutions or hire permanent staff (all positions terminate with the delegation)
+- Issue binding orders to ratifying nations (they can request, not command)
+- Spend beyond the pre-allocated $50M emergency budget ceiling under any circumstances
+- Expand their own mandate, extend their own term, or modify their own delegation instrument
+- Classify information or restrict public access to their deliberations (all actions published on Birth Certificate Dashboard within 24 hours)
+- Establish legal precedents binding permanent institutions
+- Influence, delay, or shape the convening of permanent bodies under Track 2
+- Interpret Treaty provisions outside the immediate emergency context
+
 **Positions created**:
 
-**1. Interim Director-General of Global Enforcement Mechanism**
-- **Mandate**: Crisis response to existential threats only
-- **Duration**: 24 months, non-renewable, cannot transition to permanent role
-- **Authority**: Deploy rapid response teams for:
-  - Pandemic response and containment
-  - Bioweapons threat mitigation
-  - Nuclear escalation prevention
-  - Catastrophic AI system containment
-  - Critical environmental tipping point response
-- **Prohibited actions**: 
-  - Cannot make long-term policy
-  - Cannot alter Treaty frameworks
-  - Cannot influence permanent body convening processes
-  - Cannot extend emergency powers beyond sunset
-- **Accountability**: Reports monthly to Interim Secretariat, quarterly to Genesis Fund Tripartite Board
+**1. Interim Director-General of Emergency Response**
+- **Mandate**: Coordinate crisis response to existential threats using enumerated powers above
+- **Duration**: Terminates when permanent Global Enforcement Mechanism Director-General is seated (not on a calendar date)
+- **Cannot transition**: To any permanent GGF role; 5-year cooling-off period applies
 
-**2. Interim Chief Justice of Digital Justice Tribunal**
-- **Mandate**: Emergency adjudication of urgent disputes only
-- **Duration**: 24 months, non-renewable, cannot transition to permanent role
-- **Authority**: Render binding emergency decisions on:
-  - Immediate ecocide prevention (stop ongoing large-scale environmental destruction)
-  - Critical digital rights violations (large-scale data breaches, AI harms)
-  - Urgent inter-framework disputes threatening system function
-- **Prohibited actions**:
-  - Cannot establish legal precedents binding permanent tribunal
-  - Cannot hear non-emergency cases
-  - Cannot interpret Treaty provisions beyond immediate emergency needs
-- **Accountability**: All emergency rulings subject to review by permanent Tribunal once established; reports monthly to Interim Secretariat
+**2. Interim Chief Justice of Emergency Adjudication**
+- **Mandate**: Emergency adjudication of urgent disputes meeting strict threshold (imminent, irreversible, large-scale harm)
+- **Duration**: Terminates when permanent Digital Justice Tribunal is seated
+- **Cannot transition**: To any permanent GGF role; 5-year cooling-off period applies
+- **Rulings**: Subject to review by permanent Tribunal once established; cannot establish binding precedent
 
-**Selection process** (Month 0-3):
+**Selection process**: Retained from v1.1 (rapid nomination from UN Secretary-General, Sortition Foundation, UNPFII, Transparency International pools → ethics screening → Interim Secretariat appointment by 2/3 vote within 4 weeks).
 
-**Step 1: Rapid nomination** (Week 1-2)
-- Reformed UNSC (if operational) nominates 5 candidates for each position
-- If UNSC not yet reformed, nominations from: UN Secretary-General (2), Sortition Foundation (1), UNPFII (1), Transparency International (1)
-- Public nomination announcements with full candidate credentials
+**Operational structure**: Retained from v1.1 (50-person GEM emergency configuration, 5-person emergency tribunal, regional coordinators, $50M budget from Genesis Fund contingency reserve).
 
-**Step 2: Ethics screening** (Week 3-4)
-- Interim Secretariat screens for:
-  - Technical competence (crisis management experience required)
-  - Ethical integrity (no human rights violations, no corporate conflicts)
-  - Independence (no current government, corporate, or political party ties)
-  - Geographic diversity (cannot both be from P5 nations)
-- Can reject all candidates and require new nominations
+**V.C.4. Progressive Narrowing Ratchet**
 
-**Step 3: Rapid appointment** (Week 4)
-- Interim Secretariat selects 1 Director-General and 1 Chief Justice from screened pool
-- 2/3 Secretariat vote required
-- Public announcement with full rationale
-- Appointees begin work immediately
+This is the core structural containment mechanism. As permanent bodies come online through Track 2, Emergency Director authority automatically narrows. Each transfer is a one-way operation — authority, once transferred, cannot be reclaimed.
 
-**Operational structure**:
+| When this body is seated... | Emergency Directors lose authority over... |
+|---|---|
+| **Citizens' Assembly** (Phase 1) | Public advisory function (transferred to Deliberative Narrative Protocol) |
+| **Council of Guardians** (Phase 2) | Emergency expert panel convening (transferred to Guardians) |
+| **Digital Justice Tribunal** (Phase 3) | Emergency adjudication (all pending cases transferred to permanent Tribunal) |
+| **Global Enforcement Mechanism** (Phase 3) | Emergency resource deployment and crisis coordination (transferred to permanent GEM) |
+| **All Phase 3 bodies seated** | **Emergency Directors' mandate is fully transferred. Dissolution is automatic and immediate.** |
 
-**Global Enforcement Mechanism (Track 1 emergency configuration)**:
-- **Core team**: 50-person rapid response headquarters
-- **Specialized units**: 
-  - Pandemic Response Team (epidemiologists, logistics, communications)
-  - AI Risk Team (technical AI safety experts, legal, coordination)
-  - Nuclear De-escalation Team (arms control experts, diplomats, technical)
-  - Environmental Emergency Team (climate scientists, emergency responders)
-- **Regional coordinators**: 5 regional bases for rapid deployment
-- **Budget**: $50M from Genesis Fund contingency reserve
-- **Sunset**: All positions terminate Month 24; no renewals or extensions
+**The ratchet is self-enforcing**: Each transfer is published on the Birth Certificate Dashboard with the specific authority transferred, the receiving body, and the date. Once published, the Emergency Directors have no legal basis to exercise the transferred function. Any attempt to do so is ultra vires and can be nullified by the permanent body that now holds the authority.
 
-**Digital Justice Tribunal (Track 1 emergency configuration)**:
-- **Core team**: Chief Justice + 4 emergency adjudicators
-- **Support staff**: 10 clerks, translators, administrators
-- **Case criteria**: Only accepts cases meeting strict emergency threshold (imminent, irreversible, large-scale harm)
-- **Procedures**: Expedited hearings (72-hour maximum from filing to ruling)
-- **Budget**: $20M from Genesis Fund contingency reserve
-- **Sunset**: All positions terminate Month 24; all cases transition to permanent tribunal
+**V.C.5. No extension mechanism**
 
-**Strict mandate limitations**:
+There is no process — constitutional, legislative, or administrative — by which Emergency Directors' authority can be extended, renewed, or restored. This is not an oversight; it is a deliberate architectural choice.
 
-**What Track 1 bodies CAN do**:
-- Respond to genuine existential emergencies (pandemics, AI catastrophes, nuclear escalation, environmental tipping points)
-- Coordinate international response during crises
-- Render binding emergency decisions to prevent irreversible harms
-- Deploy resources from contingency reserves
-- Request additional resources from Genesis Fund Tripartite Board for demonstrated emergencies
+**The objection**: "What if a genuine existential emergency is ongoing when permanent bodies are seated? Won't abrupt transfer be dangerous?"
 
-**What Track 1 bodies CANNOT do**:
-- Make policy for non-emergency situations
-- Influence convening of permanent bodies
-- Alter Genesis Protocol procedures
-- Establish precedents binding permanent institutions
-- Extend their own mandate beyond 24 months
-- Hire permanent staff (all positions sunset with emergency framework)
-- Create new enforcement mechanisms or legal frameworks
-- Interpret Treaty provisions outside immediate emergency context
+**The response**: If a genuine emergency is ongoing, the permanent bodies handle it. That is what they are designed for. The Emergency Directors' role was never to provide superior emergency response — it was to bridge a temporary gap in institutional capacity. Permanent bodies with full legitimacy, larger staff, broader authority, and democratic accountability are better equipped for sustained emergency response than interim appointees with delegated powers and a small team.
+
+The discomfort with this architecture is understandable — it feels safer to allow extension "just in case." But "just in case" is precisely the argument that has turned every temporary emergency authority in history into a permanent fixture. The protocol refuses this logic, accepting a small risk of discontinuity in exchange for absolute structural prevention of emergency power capture.
 
 **Accountability mechanisms**:
 
-**Real-time transparency**:
+**Real-time transparency** (retained from v1.1):
 - All emergency actions published on Birth Certificate Dashboard within 24 hours
 - Classified security information published within 90 days after declassification
 - Monthly public reports on emergency activities
 - Budget expenditures published in real-time
 
 **Oversight layers**:
-- **Primary**: Interim Secretariat (can remove emergency directors by 2/3 vote for exceeding mandate)
+- **Primary**: Interim Secretariat (can remove emergency directors by 2/3 vote for exceeding enumerated powers)
 - **Secondary**: Genesis Fund Tripartite Board (controls funding; can freeze emergency budgets)
 - **Tertiary**: Constitutional Health Monitors (monitor for mission creep; publish warnings)
-- **Ultimate**: Once operational, Tier 1 bodies (can override emergency decisions retroactively)
+- **Ultimate**: Once operational, each Tier 1-3 body provides oversight for its domain and assumes authority per the Narrowing Ratchet
 
-**Sunset enforcement**:
+**Cooling-off**: Emergency Directors are barred from any GGF governance position for 5 years after their mandate terminates. They may serve as advisors or technical experts but cannot hold decision-making authority.
 
-**Month 22**: Automatic notification to all emergency directors of impending sunset
+**Contingency: What if Track 2 is delayed?**
 
-**Month 23**: Emergency directors prepare transition reports for permanent bodies
+**Scenario**: Phase 3 bodies are not yet fully operational due to unforeseen challenges (not sabotage) and Emergency Directors still hold residual authority.
 
-**Month 24**: 
-- **Automatic termination**: All emergency appointments end immediately
-- **Funding cutoff**: All emergency budget lines freeze
-- **Asset transfer**: All resources, case files, and institutional knowledge transfer to permanent bodies
-- **Legal immunity**: Emergency directors receive immunity from legal action for emergency decisions made in good faith within mandate, but no immunity for overreach
-- **Cooling-off**: Emergency directors barred from any GGF position for 5 years
-
-**If emergency directors attempt to extend beyond Month 24**:
-- Constitutional Health Monitors declare constitutional crisis
-- Genesis Fund Tripartite Board freezes all emergency funding
-- Interim Secretariat removes emergency directors immediately
-- Tier 1 bodies (if operational) assume emergency functions directly
-- Public transparency report explaining crisis
-
-**Contingency: What if Track 2 fails?**
-
-**Scenario**: Month 24 arrives but Track 2 legitimately-convened bodies not yet fully operational due to unforeseen challenges (not sabotage).
-
-**Response**: Graceful degradation (detailed in Section VIII.C), NOT emergency track extension
+**Response**: Graceful degradation (detailed in Module 5, Section VIII.C), NOT extension of emergency powers.
 
 **Minimum Viable Governance configuration**:
-- Council of Guardians (appointed through expert nomination, requiring less time than full sortition) assumes expanded interim authority
+- Council of Guardians (if seated) assumes expanded interim coordination
 - Reformed UNSC (evolutionary transition from existing institution) provides crisis response
-- Global Equity Ombudsperson (rapid appointment) provides oversight
-- All actions subject to ratification once Tier 1 bodies operational
-- Maximum duration: 6 months
-- If still not resolved: Constitutional reset protocols (Section VIII.C)
+- Global Equity Ombudsperson (if seated) provides oversight
+- All actions subject to ratification once full Tier 3 bodies are operational
+- Maximum duration: 6 months from expected Phase 3 completion
+- If still not resolved: Constitutional reset protocols (Module 5, Section VIII.C)
 
-**The key principle**: Emergency Track 1 does NOT extend. Either Track 2 succeeds or system enters Minimum Viable Governance mode. This prevents emergency powers becoming permanent.
+**The key principle**: Emergency authority does NOT extend. Either permanent bodies assume functions per the Narrowing Ratchet, or the system enters Minimum Viable Governance mode using whatever permanent bodies are already operational. The structural containment holds regardless.
 
 ### V.D. Track 2: Foundational Legitimacy Framework (timeline overview)
 
-Track 2 proceeds according to the phased convening architecture detailed in Module 1 and elaborated throughout this module and Module 3.
+Track 2 proceeds according to the phased convening architecture detailed in Module 1 and elaborated throughout this module and Module 3. The phase-gated timeline (detailed in Module 5) replaces the original calendar-based schedule with gate conditions that must be met before each phase advances.
 
-**Phase 0: Preparation** (Month 0-3)
-- Genesis Fund capitalization via Peace Tithe
-- Indigenous Sovereign Endowment transferred unconditionally
+**Phase 0: Preparation** (Year 2–3 from project start)
+- Genesis Fund Stage 2 capitalization via Peace Tithe from early ratifiers
+- Indigenous Sovereign Endowment Stage 2 transfer ($150M unconditional)
 - Founding Referendum conducted
 - Indigenous Letters of Intent collected
 - Civic lottery infrastructure deployed and audited
 - Community hub network established
 - Translation and accessibility systems activated
 
-**Phase 1: Tier 1 bodies** (Month 3-6)
+**Phase 1: Tier 1 bodies** (Year 3–4)
 - Earth Council convening (Indigenous-led, sovereign timeline)
 - Global Citizens' Assembly selection and training
 - Youth Stewardship Council selection and activation
 - Joint recognition among all three Tier 1 bodies
+- **Narrowing Ratchet activation**: Emergency Directors lose public advisory function (transferred to Deliberative Narrative Protocol via Citizens' Assembly)
 
-**Phase 2: Tier 2 bodies** (Month 6-9)
+**Phase 2: Tier 2 bodies** (Year 4–5)
 - Council of Guardians nominated and confirmed
 - Meta-Governance Coordination Council assembled
 - Initial coordination protocols established
+- **Narrowing Ratchet continuation**: Emergency Directors lose expert panel convening authority (transferred to Guardians)
 
-**Phase 3: Tier 3 bodies** (Month 9-12)
+**Phase 3: Tier 3 bodies** (Year 5–6)
 - Digital Justice Tribunal judges appointed
-- Global Enforcement Mechanism director selected
+- Global Enforcement Mechanism permanent Director-General selected
 - Specialized meta-councils convened
 - Global Equity Ombudsperson appointed
+- **Narrowing Ratchet completion**: Emergency Directors' mandate fully transferred. Dissolution automatic.
 
-**Phase 4: Constitutional consolidation** (Month 12-18)
+**Phase 4: Constitutional consolidation** (Year 6–7)
 - All bodies operational and coordinating
 - Interim Secretariat transition planning
+- Sovereign Endowment Stage 3 completion
 - Learning documentation and retrospective
 - System integration verification
 
-**The constitutional handoff** (Month 18-24)
+**The constitutional handoff** (progressive transfer, not single event)
 
-This is the critical transition period where emergency Track 1 powers sunset and permanent Track 2 bodies assume full authority.
+Unlike v1.1's single Month-24 handoff, v1.2 implements handoff as a **progressive transfer** through the Narrowing Ratchet (Section V.C.4). Each permanent body that comes online assumes specific functions from the Emergency Directors. The handoff is therefore distributed across Phases 1–3 rather than concentrated in a single high-stakes moment.
 
-**Month 18 verification**:
-- Tier 1 bodies publish joint operational certification
-- Tier 2 bodies confirm coordination capacity
-- Tier 3 bodies demonstrate crisis response capability
-- Constitutional Health Monitors certify system readiness
+**Why progressive is better than single-event**:
 
-**Month 19-23 transition**:
-- Emergency directors provide full briefings to permanent counterparts
-- All ongoing cases, operations, and intelligence transferred
-- Institutional knowledge documented and archived
-- Transition coordination managed by Interim Secretariat
+A single-event handoff creates a binary discontinuity — one day emergency directors have full authority, the next day they have none. This creates incentives for last-minute entrenchment and makes the handoff itself a high-stakes political event vulnerable to sabotage.
 
-**Month 24 activation of permanent governance**:
-- **Permanent Director-General of Global Enforcement Mechanism** assumes full authority (appointed through Tier 1-2 validation process detailed in Module 3)
-- **Permanent Digital Justice Tribunal** assumes all case load and judicial authority (judges appointed through multi-tier process detailed in Module 3)
-- Emergency Track 1 directors complete service; enter 5-year cooling-off period
-- System operates under full legitimate authority with pluriversal validation
+Progressive transfer eliminates these dynamics. By the time the last function transfers (emergency resource deployment → permanent GEM), the Emergency Directors have already been operating with reduced authority for years. Their institutional footprint has shrunk steadily. The final transfer is a formality, not a confrontation.
+
+**Retained**: Emergency Directors cannot serve in permanent roles; 5-year cooling-off period applies from the date their last authority is transferred.
 
 ### V.E. Why this dual-track architecture prevents capture
 
 **The authoritarian capture scenario**: 
-A bad actor gains appointment as Track 1 emergency director, uses 24 months to entrench power, then refuses to sunset.
+A bad actor gains appointment as Track 1 emergency director, uses the emergency period to entrench power, then refuses to relinquish authority.
 
-**Defense mechanisms**:
+**Structural containment defense** (v1.2 revision):
 
-**1. Multiple accountability layers**: 
+**1. Delegated authority prevents independent legitimacy claims**:
+- Emergency Directors hold no authority of their own — only delegated powers from the Interim Secretariat
+- When the Secretariat dissolves, the delegation expires as a matter of legal fact
+- No constitutional basis exists for Emergency Directors to claim continuing authority
+- Ultra vires actions (beyond the closed-list enumerated powers) are void and can be nullified by permanent bodies
+
+**2. Progressive Narrowing Ratchet prevents entrenchment**:
+- Authority transfers to permanent bodies one function at a time as they come online
+- Each transfer is publicly documented and irreversible
+- By Phase 3, Emergency Directors' institutional footprint has been shrinking for years
+- Final dissolution is a formality, not a confrontation — there is nothing left to hold onto
+
+**3. No extension mechanism exists**:
+- There is no process — constitutional, legislative, or administrative — to extend, renew, or restore emergency authority
+- This is not an oversight but a deliberate design choice based on the historical pattern of emergency power extension
+- The discomfort with this rigidity is the point: if extension were possible, it would be exercised
+
+**4. Multiple accountability layers** (retained from v1.1):
 - Interim Secretariat can remove (2/3 vote)
 - Genesis Fund Board can defund
 - Constitutional Health Monitors provide public warnings
-- Tier 1 bodies (once operational) can override
+- Tier 1 bodies (once operational) can override emergency decisions retroactively
 
-**2. Automatic termination**:
-- Funding cutoff is automatic, not discretionary
-- No legal authority to extend mandate
-- All staff positions automatically terminate
-- Assets transfer to permanent bodies by protocol
-
-**3. Cooling-off separation**:
+**5. Cooling-off separation** (retained from v1.1):
 - Emergency directors cannot transition to permanent positions
 - 5-year bar from any GGF role
 - No ability to shape successor selection
 
-**4. Public transparency**:
-- All actions published in real-time
-- Birth Certificate Dashboard shows emergency track sunset countdown
+**6. Public transparency** (retained from v1.1):
+- All actions published on Birth Certificate Dashboard within 24 hours
 - Constitutional Health Monitors publish monthly assessments
+- Birth Certificate Dashboard shows Narrowing Ratchet status (which functions transferred, which remain)
 - Global civil society monitoring provides external accountability
 
-**5. Limited initial authority**:
-- Track 1 bodies start with only 50-60 staff total
-- Can only respond to existential emergencies
-- Cannot create lasting policy or institutions
-- No authority over Track 2 convening processes
-
 **The technical capture scenario**: 
-A powerful tech actor uses the 24-month emergency period to deploy AI systems that make Track 2 governance irrelevant.
+A powerful tech actor uses the emergency period to deploy AI systems that make Track 2 governance irrelevant.
 
 **Defense mechanisms**:
 
 **1. AI containment authority**:
-- Track 1 AI Risk Team has explicit authority to halt advanced AI deployments
-- Digital Justice Tribunal (emergency) can issue binding containment orders
-- Global Enforcement Mechanism can seize systems and infrastructure
+- Track 1 AI Risk Team has explicit authority (per enumerated powers) to coordinate responses to catastrophic AI deployment
+- Emergency adjudication can issue binding containment orders within strict threshold criteria
+- Global Enforcement Mechanism (emergency configuration) can coordinate with national agencies
 - International cooperation through existing mechanisms (Interpol, national agencies)
 
-**2. Network Effects Protocol** (detailed in Module 4):
-- Economic costs of non-participation rise monthly during founding period
-- Nations harboring rogue AI labs face isolation and sanctions
-- Corporate entities face market access restrictions
-- Individual technologists face professional consequences
+**2. Infrastructure Access Model** (detailed in Module 4):
+- Economic advantages of Treaty participation increase as more nations join
+- Nations harboring rogue AI labs face growing competitive disadvantage as Treaty infrastructure matures
+- Demonstrated results from Treaty nations create domestic pressure in non-participating nations
 
 **3. Rapid legitimacy building**:
-- Track 2 proceeds at maximum safe speed
+- Track 2 proceeds at maximum safe speed through phase gates
 - Early Earth Council convening establishes moral authority
 - Citizens' Assembly provides democratic mandate
 - Combined legitimacy makes technical fait accompli politically untenable
 
 **The geopolitical capture scenario**:
-P5 nations use the 24-month emergency period to reassert control and prevent Track 2 bodies from ever becoming operational.
+P5 nations use the emergency period to reassert control and prevent Track 2 bodies from ever becoming operational.
 
 **Defense mechanisms**:
 
-**1. Structural separation**:
+**1. Structural separation** (retained from v1.1):
 - Track 1 emergency directors appointed by Interim Secretariat, not governments
 - Geographic diversity required (cannot both be from P5)
 - Independence screening eliminates government-captured candidates
 - No government veto over appointments
 
-**2. Funding independence**:
+**2. Funding independence** (retained from v1.1):
 - Genesis Fund controlled by Tripartite Board (citizens, Indigenous, auditors)
 - Peace Tithe already collected and secured
 - No government can defund Track 2 convening
 - Indigenous Sovereign Endowment completely independent
 
-**3. Irreversible momentum**:
-- Phase 0 Founding Referendum creates popular mandate
-- Indigenous Letters of Intent establish moral authority
-- Nation-state ratifications are binding commitments with Geopolitical Sabotage Clause (Section VII.D from Module 1)
-- Public transparency makes overt sabotage politically costly
-
-**4. Sunset is automatic**:
-- P5 nations cannot extend Track 1 even if they wanted to
-- Permanent bodies assume authority by protocol, not permission
-- Constitutional architecture makes capture-by-delay impossible
+**3. Structural containment defeats delay strategy**:
+- P5 nations cannot extend Track 1 even if they wanted to — the Narrowing Ratchet transfers authority regardless
+- Attempting to block Track 2 body convening delays the ratchet but does not preserve emergency authority (which is delegated from the Interim Secretariat, not from permanent bodies)
+- Public transparency makes overt sabotage of Track 2 politically costly
 
 ### V.F. Ethical justification for emergency track
 
@@ -397,45 +359,35 @@ Emergency Track 1 is justified by three ethical principles:
 **1. Duty to prevent extinction**: 
 Governance must enable humanity's survival. Legitimate processes that arrive too late serve no one. Emergency capacity during founding period prevents catastrophe while legitimate authority is being properly constructed.
 
-**2. Temporary sacrifice, permanent gain**:
-The 24-month emergency track involves calculated risk (possibility of emergency power abuse) for permanent benefit (existential risk mitigation + lasting legitimate governance). Risk is justified by:
-- Strict time limits (absolute 24-month sunset)
-- Multiple accountability layers
-- Automatic termination mechanisms
-- Limited scope (only existential threats)
+**2. Calculated risk with structural mitigation**:
+The emergency track involves risk (possibility of emergency power abuse) for permanent benefit (existential risk mitigation + lasting legitimate governance). Unlike previous versions that relied on voluntary sunset to mitigate this risk, v1.2 uses **structural containment** — delegated authority, enumerated powers, progressive narrowing ratchet, and no extension mechanism — so that mitigation does not depend on the character or intentions of the people holding emergency authority.
 
 **3. Pragmatic pluralism**:
 Different situations require different legitimacy timescales. Stopping a pandemic requires 72-hour response. Convening Earth Council properly requires respecting Indigenous sovereignty and timeline. Both are legitimate needs. Dual-track architecture honors both without sacrificing either.
 
 **The precedent**:
 
-This is not unprecedented in constitutional founding. The US Constitution itself had emergency provisions during the founding period:
-- Articles of Confederation continued operating during Constitutional Convention
-- Gradual transition from Continental Congress to Constitutional government
-- Some original temporary provisions later made permanent (but through legitimate amendment process)
-
-The key difference in Genesis Protocol: **Sunsets are absolute and automatic, not subject to political extension.**
+This is not unprecedented in constitutional founding. The US Constitution itself had transitional provisions during the founding period, with the Articles of Confederation continuing to operate during the Constitutional Convention and gradual transition from Continental Congress to Constitutional government. The key difference in the Genesis Protocol: **dissolution is structural and automatic, not subject to political negotiation.**
 
 **The alternative assessment**:
 
-What if we're wrong and Track 1 emergency powers are captured despite safeguards?
+What if we're wrong and Track 1 emergency powers are abused despite structural containment?
 
 **Worst-case analysis**:
-- Track 1 directors abuse powers for 24 months
-- But Track 2 continues unimpeded (structurally separated)
-- At Month 24, emergency powers sunset automatically
-- Permanent bodies investigate any abuses
+- Emergency Directors abuse enumerated powers for the duration of their authority
+- But the Narrowing Ratchet continues transferring functions to permanent bodies regardless
+- Permanent bodies investigate any abuses once they hold the relevant authority
 - Learning incorporated into permanent institutional design
 
 **Compare to alternatives**:
 
-**Alternative 1: No emergency capacity**: Existential risk goes unaddressed for 18 months. If catastrophe occurs, legitimate governance is moot.
+**Alternative 1: No emergency capacity**: Existential risk goes unaddressed during the multi-year founding period. If catastrophe occurs, legitimate governance is moot.
 
 **Alternative 2: Existing institutions only**: Current paralyzed governance continues. Same risks that motivated Treaty creation persist during founding.
 
-**Alternative 3: Delay Treaty until ready**: Perfect readiness is impossible. Years of delay mean more climate damage, more AI risk, more pandemic vulnerability. Treaty never launches.
+**Alternative 3: Delay Treaty until ready**: Perfect readiness is impossible. Years of delay mean more climate damage, more AI risk, more pandemic vulnerability.
 
-**Dual-track is the least-bad option**: Some risk of emergency abuse (mitigated by safeguards) vs. certain existential risk exposure vs. indefinite delay of governance reform. The calculated ethical choice is dual-track with maximum safeguards.
+**Dual-track with structural containment is the least-bad option**: Some risk of constrained emergency abuse (mitigated by structural architecture) vs. certain existential risk exposure vs. indefinite delay. The calculated ethical choice is dual-track with structural containment that does not depend on voluntary surrender of power.
 
 ---
 
@@ -1513,7 +1465,7 @@ Deliberative Narrative Protocol triggered when:
 
 **Step 2: Rapid jury convening** (within 24 hours)
 
-Interim Secretariat (or permanent administrative body once Secretariat sunsets) immediately convenes:
+Interim Secretariat (or permanent administrative body once Secretariat dissolves) immediately convenes:
 - Random sample of **100 Global Citizens' Assembly delegates**
 - Stratified for demographic diversity
 - Convenes virtually for 48-hour intensive session
@@ -2201,7 +2153,7 @@ From Genesis Fund:
 
 This module has addressed two critical challenges in constitutional founding:
 
-**Section V: Dual-Track Activation** resolved the timeline catastrophe problem by decoupling survival (Track 1 emergency capacity operational within 3 months) from legitimacy (Track 2 pluriversal convening complete in 18 months), with mandatory sunset of emergency powers and constitutional handoff to permanent bodies.
+**Section V: Dual-Track Activation** resolved the timeline catastrophe problem by decoupling survival (Track 1 emergency capacity operational within months) from legitimacy (Track 2 pluriversal convening across a phase-gated timeline), with **structural containment** of emergency powers — delegated authority, enumerated powers, a progressive narrowing ratchet, and no extension mechanism — ensuring dissolution is architectural rather than discretionary.
 
 **Sections VI.A-C: Tier 1 Body Convening** detailed the protocols for establishing the three foundational bodies with independent legitimacy sources:
 

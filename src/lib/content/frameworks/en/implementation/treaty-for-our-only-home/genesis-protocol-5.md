@@ -1,11 +1,11 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
 section: Module 5 - Implementation
-status: Full Draft v1.1 (updated to v0.5 outline)
-revision: 1.1
-date: 2026-03-04
+status: Full Draft v1.2 (updated to v0.6 outline — Structural Integrity Revision)
+revision: 1.2
+date: 2026-03-23
 module: "5 of 6: Implementation (Sections VIII-X)"
-wordCount: ~15,500
+wordCount: ~16,000
 purpose: Implementation roadmap for constitutional founding
 ---
 
@@ -52,9 +52,9 @@ This is the legitimacy cascade—a deliberate architecture preventing capture wh
 
 ### VIII.B. Dual-track activation: Urgency and legitimacy
 
-One of the most serious critiques during steel manning challenged the protocol's multi-year timeline:
+One of the most serious critiques during steel manning challenged the protocol's timeline:
 
-> "The planet is on fire. You're proposing an 18-month deliberation while ecosystems collapse. This is a luxury we cannot afford."
+> "The planet is on fire. You're proposing multi-year deliberation while ecosystems collapse. This is a luxury we cannot afford."
 
 This critique identifies a genuine tension: ecological and technological crises demand urgent action, yet legitimate institutional founding requires deliberative care. Rushing produces captured, brittle institutions. Delaying allows catastrophic harm.
 
@@ -62,22 +62,53 @@ This critique identifies a genuine tension: ecological and technological crises 
 
 Rather than choosing between speed and legitimacy, the Genesis Protocol runs two parallel tracks:
 
-**Track 1 - Survival Framework (0-3 months)**: Emergency crisis response capability
-**Track 2 - Legitimacy Framework (0-18 months)**: Deliberative institutional founding
+**Track 1 - Emergency Response Capacity**: Structurally contained crisis response
+**Track 2 - Legitimacy Framework**: Phase-gated deliberative institutional founding
 
-These tracks operate simultaneously. Track 1 provides immediate capacity to respond to planetary crises while Track 2 builds the legitimate institutions that will eventually supersede emergency measures.
+These tracks operate simultaneously. Track 1 provides immediate capacity to respond to planetary crises while Track 2 builds the legitimate institutions that progressively assume Track 1's functions.
 
-**Critical design features**:
-1. **Track 1 has built-in sunset**: Emergency powers automatically expire when Track 2 institutions become operational
-2. **Track 2 oversight of Track 1**: Even during emergency phase, foundational bodies provide accountability
-3. **Learning integration**: Track 1 implementation informs Track 2 institutional design
-4. **No permanent emergency**: The protocol explicitly prevents "temporary" emergency powers from becoming permanent
+**Critical design features** (revised in v1.2):
+1. **Track 1 authority is delegated, not independent**: Emergency Directors hold authority only as revocable delegation from the Interim Secretariat, not as autonomous power
+2. **Progressive Narrowing Ratchet**: As each permanent body comes online, it assumes the relevant function from Track 1 — authority transfers automatically and irreversibly
+3. **No extension mechanism**: There is no constitutional, legislative, or administrative process to extend emergency authority
+4. **Structural dissolution**: When all Phase 3 bodies are seated, Track 1 has zero remaining authority and dissolves as architectural fact
 
-This model recognizes that planetary stewardship requires both immediate action and legitimate authority—and refuses to sacrifice either.
+This model recognizes that planetary stewardship requires both immediate action and legitimate authority—and refuses to sacrifice either. The structural containment architecture (detailed in Module 2, Section V.C) ensures that "temporary" emergency powers cannot become permanent, addressing the historical pattern that every previous version of this protocol failed to adequately confront.
 
-### VIII.C. Phase 0: Constitutional groundwork (months -12 to 0)
+### VIII.B.1. Timeline philosophy: Phase gates, not calendar deadlines
 
-Before the Genesis Protocol can activate, foundational elements must be in place. Phase 0 is the pre-activation period creating the conditions for legitimate founding.
+Previous versions of this protocol specified an 18–24 month calendar for the most complex international institutional founding in history. For reference:
+
+- **European Coal and Steel Community → Treaty of Rome**: 1951–1957 = 6 years, 6 countries with cultural affinity and fresh memory of war
+- **International Criminal Court**: Rome Statute adoption (1998) → Entry into force (2002) = 4 years
+- **Paris Agreement**: Framework negotiation (2011) → Entry into force (2016) = 5 years
+- **UNCLOS**: Negotiation start (1973) → Entry into force (1994) = 21 years
+
+The Genesis Protocol is more ambitious than any of these. A 5–7 year timeline from first municipal pilot to constitutional consolidation is aggressive but grounded in historical reality.
+
+**Phase gates replace calendar deadlines.** Phases advance when conditions are met, not when months have elapsed. This means:
+
+- If a phase takes longer than estimated, the protocol waits. Rushing past gate conditions is a greater risk than delay.
+- If conditions are met faster than estimated, the protocol can accelerate. But minimum deliberation periods are enforced to prevent superficial process.
+- No phase can be skipped. The legitimacy cascade requires sequential validation.
+
+**Estimated total timeline**: 5–7 years from Phase -1 initiation to Phase 4 completion. Accelerated to 5 years if gate conditions are met rapidly. Extended to 7+ years if Indigenous timing, conflict zone complications, or technical failures slow progression. No maximum — the protocol waits for demonstrated readiness rather than forcing activation on a calendar.
+
+### VIII.C. Phase -1: Pre-Genesis Demonstration (Year 0–2)
+
+Before the Genesis Protocol can activate, it must demonstrate that GGF coordination infrastructure works. Phase -1 is the pre-institutional demonstration period detailed in Module 1, Section IV-A.
+
+**Purpose**: Create observable, measurable proof that Hearts pilots, Legacy Hardware API, and Community Weaver infrastructure function at the municipal level — before asking any nation-state to ratify a treaty.
+
+**Activities**: Seed municipality identification, Legacy Hardware API pilot deployment, Community Weaver training, independent academic evaluation, coalition formation. Funded by Stage 1 seed funding ($5–20M from philanthropic, municipal, academic, and crowdfunding sources).
+
+**Gate to Phase 0**: ≥10 seed municipalities with ≥6 months of operational Hearts pilots; ≥3 independent academic evaluations published; ≥5 national governments expressing formal interest in ratification; ≥1 Indigenous-led pilot with self-assessed positive results; Founding Referendum infrastructure technically ready.
+
+**Estimated timeline**: 18–30 months. The protocol waits for demonstrated readiness.
+
+### VIII.D. Phase 0: Constitutional groundwork (Year 2–3)
+
+Phase 0 activates once Phase -1 gate conditions are met. This is the period of formal consent-gathering and institutional preparation.
 
 **Phase 0 milestone criteria (The "Pluriversal Sovereign" consent)**:
 
@@ -85,84 +116,75 @@ The Genesis Protocol's authority is not self-referential. It is granted by the "
 
 **1. The Peoples (Founding Referendum)**
 - Conduct global digital + offline referendum on Genesis Protocol
-- Threshold: 60% approval across 100+ nations with minimum 40% participation
+- Threshold: Majority approval among 50M+ global participants with at least 30% from Global South
 - Question: "Do you consent to this protocol convening new institutions according to the processes described?"
-- Timeline: 6-month campaign period before vote
+- Timeline: 6-month campaign period before vote, built on the public awareness generated by Phase -1 pilot results
 - Verification: Blockchain-recorded votes + offline paper trails + observer validation
 
 **2. Indigenous Nations (Letters of Intent)**
-- Secure Letters of Intent from 300+ Indigenous Nations representing all inhabited continents
-- Process: Nation-to-nation diplomacy respecting Indigenous governance processes
+- Secure Letters of Intent from 20+ Indigenous Nations representing at least 4 inhabited continents
+- Process: Nation-to-nation diplomacy respecting Indigenous governance processes, building on Phase -1 Indigenous pilot relationships
 - Content: Letters affirm Indigenous sovereignty and conditional willingness to participate in Earth Council if convening protocols are followed
-- Threshold includes: 60+ nations from Americas, 50+ from Africa, 40+ from Asia-Pacific, 30+ from Arctic regions, 20+ from Europe
 - Not tokenism: Letters represent genuine Indigenous authority over participation
+- Note: The threshold of 20+ reflects the honest assessment that securing 300+ (the v1.1 target) before any institutional infrastructure exists was unrealistic. Additional nations join as the Earth Council demonstrates value — the same demonstrated-value logic that governs the entire Phase -1 → Phase 0 transition.
 
 **3. Nation-States (Treaty Ratification)**
-- Secure ratification from 100+ nations representing 55% of global population
-- Includes: At least 30 Global South nations, at least 3 P5 nations, representation from all continents
+- Secure ratification from 30+ nations (does NOT require P5 participation)
+- Includes: At least 10 Global South nations, representation from at least 4 continents
 - Process: Standard international treaty ratification through each nation's constitutional process
 - Irreversibility: Once ratified, nations agree to Peace Tithe (0.1% military budget contribution)
 
 **The constitutional moment**: The act of meeting these three criteria simultaneously creates the "Pluriversal Sovereign"—the pre-political authority that then grants legitimacy to the Genesis Protocol.
 
-This solves the infinite regress problem philosophically. The protocol is not claiming authority from nowhere. It is a **social contract put to a vote** across three legitimacy domains. The vote itself creates the sovereign that then authorizes institutional founding.
-
 **Additional Phase 0 requirements**:
 
-**Genesis Fund capitalization (Target: $2 billion)**
+**Genesis Fund Stage 2 capitalization (Target: $200–400M from early ratifiers)**
 - Peace Tithe contributions from ratifying nations (0.1% annual military budget)
-- Optional supplementary contributions from foundations, corporations, individuals
+- Realistic early-stage modeling: 30 predominantly Global South and middle-income ratifiers yield $200–400M, not $2B (see Module 1, Section III.A.2)
 - Governance: Tripartite board (1/3 citizen representatives via mini-lottery, 1/3 Indigenous custodians, 1/3 independent auditors)
 - Transparency: Full public ledger of contributions and expenditures
-- Purpose-specific allocations: 25% Indigenous Sovereign Endowment, 25% Civic Lottery, 10% Interim Secretariat operations, remainder for institutional convening costs
+- Indigenous Sovereign Endowment Stage 2 transfer: $150M unconditional, with legally binding commitment for remaining $350M as ratification expands
 
 **Interim Secretariat selection**
-- Random lottery selection of 16 individuals from pool of qualified applicants
+- Random lottery selection of 16 individuals from pool of qualified applicants (building on Phase -1 Pre-Genesis Coordination Team experience)
 - Eligibility: Track record of governance experience + ethical integrity + cross-cultural competence + systems thinking + no conflicts of interest
-- Demographics: Represent geographic and demographic diversity (gender parity, Global South majority, age range 25-65, Indigenous representation)
-- Public vetting: Names announced 90 days before activation with public comment period
-- Independence verification: Financial audits + background checks + conflict of interest declarations
-- Term: 18 months maximum, ending when MGCC becomes operational
+- Demographics: Gender parity, Global South majority, age range 25-65, Indigenous representation
+- Public vetting: 90-day public comment period
+- Term: Dissolves upon completion of Phase 4 convening processes (not on a calendar date)
 
 **Constitutional infrastructure**
-- Establish secure digital platforms: Federated Birth Certificate Dashboard (public transparency tool), encrypted deliberation spaces, quantum-resistant voting systems
+- Secure digital platforms: Federated Birth Certificate Dashboard, encrypted deliberation spaces, quantum-resistant voting systems
 - Offline infrastructure: Regional convening centers, translation services, accessibility accommodation
 - Security protocols: Cyber resilience measures, anti-infiltration screening, whistleblower protections
-- Communications strategy: Multilingual public education campaign explaining protocol and convening processes
+- Communications strategy: Multilingual public education campaign, building on Phase -1 results and pilot community testimonials
 
-**Threshold for activation**:
-Phase 0 succeeds and activation proceeds to Phase 1 ONLY when:
-- All three Pluriversal Sovereign criteria met (peoples' referendum + Indigenous Letters + nation-state ratification)
-- Genesis Fund reaches minimum $1.5 billion (75% of target)
-- Interim Secretariat selected and operational
-- Constitutional infrastructure live and tested
-- Public awareness reaches 30% in ratifying nations (verified through independent polling)
+**Gate to Phase 1**: All three Pluriversal Sovereign criteria met; Genesis Fund Stage 2 capitalized; Interim Secretariat selected and operational; Constitutional infrastructure live and tested.
 
-**If Phase 0 fails**: The protocol does not activate. All contributions are held in trust. A Phase 0 Retrospective convenes to assess why criteria were not met and whether amendments to thresholds or processes are needed. The protocol can restart Phase 0 with adjusted parameters, but no institutional convening occurs without legitimate consent.
+**If Phase 0 fails**: The protocol does not activate. All contributions are held in trust. A Phase 0 Retrospective convenes to assess why criteria were not met. The protocol can restart Phase 0 with adjusted parameters. Phase -1 municipal pilots continue operating regardless — they do not depend on Phase 0 activation.
 
-### VIII.D. Phase 1: Foundational convening (months 0-9)
+### VIII.E. Phase 1: Foundational convening (Year 3–4)
 
-Phase 1 begins the moment Phase 0 criteria are met. This is the critical founding period where Tier 1 bodies emerge.
+Phase 1 begins the moment Phase 0 gate conditions are met. This is the critical founding period where Tier 1 bodies emerge. The internal sequencing within Phase 1 follows the legitimacy cascade but uses gate conditions rather than calendar months — the estimates below are approximate.
 
-**Month 0-3: Earth Council establishment**
+**Earth Council establishment (first 3–6 months of Phase 1)**
 
 The Earth Council is the protocol's first institution by design. Indigenous sovereignty is not derivative—it is foundational. The protocol recognizes Indigenous peoples' inherent right to self-determination, not granting it.
 
 **Process**:
 
-**Sovereign recognition (Month 0-1)**
+**Sovereign recognition (first 1–2 months of Phase 1)**
 - Indigenous Nations that submitted Letters of Intent automatically gain Earth Council representation
 - One Earth Council seat per recognized Indigenous Nation (not per individual or family)
 - Recognition verified through existing Indigenous governance structures (not state governments)
 - Additional nations can join during this period through expedited Letters of Intent process
 
-**Council self-organization (Month 1-2)**
+**Council self-organization**
 - Earth Council members convene (initially via secure digital platforms + regional in-person gatherings)
 - Council develops own internal procedures, decision-making protocols, leadership selection
 - Protocol provides framework but respects Indigenous authority over specific governance mechanisms
 - Support services: Simultaneous translation, Indigenous knowledge protocols, ceremonial space accommodation
 
-**First constitutional acts (Month 2-3)**
+**First constitutional acts**
 - Adopt Earth Council Charter (self-governance document)
 - Ratify or reject Genesis Protocol recognition of Indigenous sovereignty provisions
 - Establish Indigenous Sovereign Endowment governance structure (control over $500M)
@@ -174,11 +196,11 @@ The protocol cannot proceed if the Earth Council rejects Genesis provisions affe
 
 This is not symbolic. The Earth Council has actual veto power over protocol activation. This makes Indigenous sovereignty foundational, not advisory.
 
-**Month 2-5: Global Citizens' Assembly establishment**
+**Global Citizens' Assembly establishment (overlapping with Earth Council, months 2–5 of Phase 1)**
 
 While the Earth Council is forming, the Global Citizens' Assembly convening begins. These processes overlap intentionally—both are Tier 1 and neither is subordinate to the other.
 
-**Civic lottery process (Month 2-3)**
+**Civic lottery process**
 - Goal: Select 300 Global Citizens' Assembly members via stratified random sampling
 - Eligibility: Any human aged 16+ regardless of citizenship, nationality, or statelessness
 - Sampling frame: Built from census data + refugee registration + Indigenous population data + unregistered population estimates
@@ -187,19 +209,19 @@ While the Earth Council is forming, the Global Citizens' Assembly convening begi
 - Selection method: Cryptographically secure random number generation + multiple verification sources + public audit trail
 - Offline inclusion: Paper lottery option for communities without digital access
 
-**Invitation and acceptance (Month 3-4)**
+**Invitation and acceptance**
 - Selected individuals receive invitations through multiple channels (mail, digital, community outreach)
 - Compensation package: Living stipend (equivalent to median income in home country), travel covered, childcare/eldercare support, disability accommodation, safety protections for those from conflict zones or authoritarian states
 - Acceptance threshold: 80% acceptance rate required (re-lottery if falls below)
 - Replacement lottery: For declined invitations, stratified replacement maintains demographic representation
 
-**Orientation and deliberation (Month 4-5)**
+**Orientation and deliberation**
 - Convene Citizens' Assembly through hybrid model (regional hubs + digital connection + plenary in-person gathering)
 - Training: Systems thinking, deliberative methods, expert briefings on global challenges, institutional design principles, conflict resolution, Indigenous knowledge sessions
 - Deliberation: Initial discussions on Genesis Protocol validation, institutional priorities, amendment proposals
 - Working groups: Form topic-specific groups on climate, justice, economics, technology, culture
 
-**First constitutional acts (Month 5)**
+**First constitutional acts**
 - Vote to ratify or reject Genesis Protocol institutional design
 - Designate Citizens' Assembly representatives to nominate Council of Guardians candidates
 - Establish Human Firewall Protocol (citizen vetting process for all subsequent nominations)
@@ -209,11 +231,11 @@ While the Earth Council is forming, the Global Citizens' Assembly convening begi
 **Critical design feature - deliberative narrative**:
 All Citizens' Assembly decisions are wrapped in plain-language citizen rationales explaining reasoning to global public. This prevents capture through complexity. If elite actors attempt to manipulate technical details, citizens translate and explain in accessible terms. This makes delegitimization harder—critics must counter citizen voices, not bureaucratic jargon.
 
-**Month 4-6: Youth Stewardship Council establishment**
+**Youth Stewardship Council establishment (months 4–6 of Phase 1)**
 
 The Youth Council convenes slightly after but overlapping with Citizens' Assembly, recognizing intergenerational equity as a foundational principle.
 
-**Selection process (Month 4-5)**
+**Selection process**
 - Goal: Select 100 Youth Stewardship Council members
 - Age range: 16-30 years old
 - Method: Hybrid selection combining sortition (50 members via civic lottery) + grassroots delegation (50 members from recognized youth movements)
@@ -221,19 +243,19 @@ The Youth Council convenes slightly after but overlapping with Citizens' Assembl
 - Delegation component: Youth movements (climate strikers, education activists, tech justice organizers) nominate candidates through democratic internal processes
 - Grassroots tethering: Delegated members maintain formal ties to movements; they represent organized youth, not just themselves
 
-**Mandate verification (Month 5)**
+**Mandate verification**
 - Living Mandate Protocol: Delegated members must document ongoing connection to grassroots movements
 - Verification: Quarterly community assemblies (digital + in-person) where delegates report back and receive feedback
 - Recall mechanism: Youth movements can recall delegates with 2/3 vote if mandate broken
 - Accountability: Prevents Youth Council from becoming detached elite; maintains connection to youth movement energy
 
-**Orientation and initial deliberation (Month 5-6)**
+**Orientation and initial deliberation**
 - Training: Intergenerational equity frameworks, long-term thinking, systems dynamics, Indigenous wisdom integration, deliberative democracy
 - Intergenerational dialogue: Structured sessions with Earth Council elders and Citizens' Assembly members
 - Focus sessions: Climate justice, digital rights, education transformation, economic futures, governance innovation
 - Ceremonial components: Integration of cultural practices honoring youth-elder knowledge exchange
 
-**First constitutional acts (Month 6)**
+**First constitutional acts**
 - Adopt Youth Council Charter with Living Mandate Protocol
 - Designate Youth Council representatives to nominate Council of Guardians candidates
 - Establish seven-generation impact assessment framework (all major decisions evaluated for 175-year consequences)
@@ -243,23 +265,23 @@ The Youth Council convenes slightly after but overlapping with Citizens' Assembl
 **Critical design feature - inheritance principle**:
 The Youth Council's authority is not granted by older generations. It is recognized as inherent in those who will inherit the consequences of decisions made today. This philosophical foundation ensures Youth Council is not advisory but authoritative on matters of intergenerational impact.
 
-**Month 6-9: Tier 1 integration and validation**
+**Tier 1 integration and validation (months 6–12 of Phase 1)**
 
 The final months of Phase 1 allow the three Tier 1 bodies to work together before authorizing Tier 2 institutions.
 
-**Joint deliberation sessions (Month 6-8)**
+**Joint deliberation sessions**
 - Tri-council meetings: Earth Council + Citizens' Assembly + Youth Council convene together
 - Agenda: Review institutional designs for Phase 2 bodies, discuss amendment proposals, align on priorities, build working relationships
 - Cultural protocols: Sessions honor Indigenous ceremonial practices, incorporate deliberative democratic methods, center youth perspectives equally
 - Decision-making: Each council retains autonomy but works toward alignment on major Phase 2 authorizations
 
-**Council of Guardians nomination preparation (Month 7-9)**
+**Council of Guardians nomination preparation**
 - Each Tier 1 body prepares nomination lists for 21-member Council of Guardians
 - Nomination criteria: Wisdom, ethical integrity, systems thinking, cross-cultural competence, commitment to intergenerational equity, no political conflicts of interest
 - Nomination processes: Earth Council uses Indigenous consensus methods; Citizens' Assembly uses sortition within deliberative framework; Youth Council uses hybrid sortition-delegation
 - Transparency: All nomination processes publicly documented on Birth Certificate Dashboard
 
-**Phase 2 charter preparation (Month 8-9)**
+**Phase 2 charter preparation**
 - Tier 1 bodies jointly draft charters for Phase 2 institutions (Guardians, MGCC)
 - Charters specify: Purpose, authority, decision-making procedures, accountability mechanisms, relationship to Tier 1 oversight
 - Consultation: Draft charters shared with broader public for comment
@@ -273,34 +295,33 @@ The final months of Phase 1 allow the three Tier 1 bodies to work together befor
 - Public awareness of Tier 1 bodies reaches 50% in ratifying nations
 - Tier 1 bodies jointly declare readiness for Phase 2
 
-**Track 1 survival framework during Phase 1**:
+**Track 1 Emergency Response Capacity during Phase 1**:
 
-While these deliberative processes unfold, the Survival Framework (Track 1) provides crisis response capacity:
+While these deliberative processes unfold, the Emergency Response Capacity (Track 1, detailed in Module 2 Section V.C) provides crisis response using structurally contained authority:
 
-**Interim crisis response team (Month 0-3)**
-- Interim Secretariat delegates form rapid response capability
-- Authority: Limited to immediate existential threats (pandemic outbreak, climate tipping point, AI catastrophe)
-- Constraints: Can act without full deliberation but must report immediately to forming Tier 1 bodies
-- Sunset: Powers expire when Council of Guardians becomes operational (Month 12)
+**Emergency response operational (from Phase 0 activation)**
+- Emergency Directors appointed by Interim Secretariat with delegated, enumerated authority
+- Authority limited to the closed list of permitted actions (Module 2, Section V.C.3)
+- All actions published on Birth Certificate Dashboard within 24 hours
 
-**Oversight during emergency phase (Month 3-9)**
-- As Tier 1 bodies form, they progressively assume oversight of crisis response
+**Progressive Narrowing Ratchet begins (as Tier 1 bodies come online)**
+- When Citizens' Assembly is seated: Emergency Directors lose public advisory function (transferred to Deliberative Narrative Protocol)
+- As Tier 1 bodies form, they progressively assume oversight of emergency operations
 - Earth Council veto over actions affecting Indigenous lands
 - Citizens' Assembly review of emergency expenditures
 - Youth Council impact assessment for decisions with long-term consequences
-- Gradual transfer: Tier 1 assumes increasing authority as their capacity develops
 
-This dual-track model ensures that while legitimate institutions are carefully built, planetary crises can still receive urgent response—but emergency powers remain accountable and temporary.
+**Gate to Phase 2**: All three Tier 1 bodies operational with adopted charters; each body has ratified Genesis Protocol or negotiated amendments; Guardian nominations prepared; Phase 2 charters drafted and validated; Tier 1 bodies jointly declare readiness for Phase 2.
 
-### VIII.E. Phase 2: Institutional convening (months 9-15)
+### VIII.F. Phase 2: Institutional convening (Year 4–5)
 
-Phase 2 activates once Tier 1 bodies are operational. This period convenes Tier 2 institutions validated by Tier 1 authority.
+Phase 2 activates once Phase 1 gate conditions are met. This period convenes Tier 2 institutions validated by Tier 1 authority.
 
-**Month 9-12: Council of Guardians establishment**
+**Council of Guardians establishment (first 3–6 months of Phase 2)**
 
 The Council of Guardians provides wisdom oversight, ensuring institutions remain aligned with core principles even as pressures and crises create incentives to compromise.
 
-**Nomination and selection (Month 9-11)**
+**Nomination and selection (early Phase 2)**
 - Each Tier 1 body nominates 33 candidates (99 total candidates for 21 seats)
 - Nomination diversity: Earth Council nominates Indigenous elders + knowledge keepers; Citizens' Assembly nominates scientists + ethicists + philosophers; Youth Council nominates intergenerational thinkers + future-focused leaders
 - Human Firewall Protocol: Citizens' Assembly vets all nominees through deliberative review (checking for conflicts of interest, infiltration risk, ethical concerns)
@@ -316,47 +337,47 @@ The Council of Guardians provides wisdom oversight, ensuring institutions remain
 - Diverse expertise: climate science, ethics, law, Indigenous knowledge, philosophy, systems thinking, conflict resolution
 - Mandatory: No current governmental positions, no corporate board seats, no conflicts of interest with extractive industries or authoritarian regimes
 
-**Guardian orientation and charter adoption (Month 11-12)**
+**Guardian orientation and charter adoption**
 - Intensive training: Treaty principles, institutional architecture, Guardian role and limitations, ethical decision-making frameworks
 - Charter development: Guardians draft own governance procedures, decision-making methods, term lengths, accountability mechanisms
 - First deliberations: Guardians review institutional health indicators, identify principle alignment concerns, prepare for oversight role
 - Constitutional health baseline: Establish metrics for measuring principle adherence across emerging institutions
 
-**Guardian authority activation (Month 12)**
+**Guardian authority activation (upon Guardian seating)**
 - Guardians assume constitutional oversight role
 - Principle Impact Review capacity: Can publicly assess whether institutions uphold core principles
 - Emergency brake authority: In extreme cases of planetary survival threats, can force supermajority reconsideration votes in UNGA/UNPA
 - Limitations explicit: No executive power, no veto over routine decisions, no ability to remove elected officials
 - First act: Issue founding statement clarifying Guardian role as principle defenders, not power wielders
 
-**Month 10-14: Meta-Governance Coordination Council establishment**
+**Meta-Governance Coordination Council establishment**
 
 The MGCC coordinates across all meta-governance domains, ensuring coherent implementation of coordination frameworks.
 
-**Practitioner identification and convening (Month 10-11)**
+**Practitioner identification and convening (early Phase 2, overlapping with Guardian process)**
 - Goal: Identify 50 MGCC members from existing meta-governance practitioners
 - Eligibility: Active experience in domain coordination (climate, health, economic, technology, Indigenous, knowledge commons, justice)
 - GGF Catalyst Team role: Interim Secretariat's Catalyst Team reaches out to existing coordination networks
 - Practitioner self-organization: Rather than top-down appointment, practitioners are invited to self-organize into MGCC
 - Diverse representation: Ensure practitioners from Global South, Indigenous coordination systems, grassroots initiatives (not just institutional elites)
 
-**MGCC charter and structure (Month 11-13)**
+**MGCC charter and structure**
 - Self-governance: MGCC develops own operational procedures (solving the "Practitioner's Paradox")
 - Tier 1 validation: Charter must be approved by all three Tier 1 bodies before full authority granted
 - Specialized domain councils: MGCC authorizes and oversees domain-specific meta-councils (Climate Meta-Council, Digital Governance Meta-Council, etc.)
 - Accountability mechanisms: Regular reporting to Tier 1 bodies, Guardian oversight, public transparency through Birth Certificate Dashboard
 
-**Initial coordination protocols (Month 13-14)**
+**Initial coordination protocols**
 - MGCC establishes baseline coordination mechanisms across domains
 - Protocol development: Data sharing standards, dispute resolution procedures, resource allocation frameworks, accountability metrics
 - Integration with existing systems: MGCC works to align UN bodies, regional organizations, Indigenous governance, grassroots movements
 - First coordination actions: Identify coordination gaps, establish communication channels, map existing coordination landscape
 
-**Month 12-15: Specialized meta-councils establishment**
+**Specialized meta-councils establishment**
 
 Once MGCC is operational, it charters domain-specific coordination councils.
 
-**Priority meta-councils (Month 12-14)**:
+**Priority meta-councils (mid-to-late Phase 2)**:
 - Climate Meta-Council: Coordinates global climate governance
 - Digital Governance Meta-Council: Coordinates technology/data/AI governance
 - Economic Meta-Council: Coordinates economic transformation
@@ -370,18 +391,18 @@ Once MGCC is operational, it charters domain-specific coordination councils.
 - Practitioner selection: MGCC convenes domain practitioners to form council
 - Public transparency: All charters and membership published on Birth Certificate Dashboard
 
-**Month 13-15: Operational institutions establishment**
+**Operational institutions establishment**
 
 The final Phase 2 institutions provide operational capacity for justice, enforcement, and equity oversight.
 
-**Digital Justice Tribunal (Month 13-14)**
+**Digital Justice Tribunal (late Phase 2)**
 - Purpose: Adjudicate disputes related to digital rights, data sovereignty, AI governance
 - Selection: Legal experts nominated by MGCC + validated by Tier 1 bodies + vetted through Human Firewall
 - Composition: 12 justices with expertise in international law, technology law, Indigenous rights, human rights
 - Authority: Issue binding rulings on digital governance disputes, enforce penalties for violations, develop case law precedents
 - Limitations: Cannot override nation-state sovereignty except in cases of clear Treaty violations
 
-**Global Enforcement Corps (Month 14-15)**
+**Global Enforcement Corps (late Phase 2)**
 - Purpose: Enforce Treaty provisions, coordinate sanctions, support justice mechanisms
 - Leadership selection: Security experts + human rights specialists nominated by MGCC, validated by Tier 1, vetted by Guardians
 - Structure: Decentralized regional enforcement capacity with central coordination
@@ -389,7 +410,7 @@ The final Phase 2 institutions provide operational capacity for justice, enforce
 - Accountability: Oversight from Tribunal, Guardian principle review, Citizens' Assembly budgetary control
 - Constraints: No offensive military capability, defensive and coordination only, subject to Treaty limitations on use of force
 
-**Global Equity Ombudsperson (Month 15)**
+**Global Equity Ombudsperson (late Phase 2)**
 - Purpose: Monitor and advocate for inclusion, fairness, equity across all institutions
 - Selection: Nominated jointly by Tier 1 bodies, vetted through Human Firewall, validated by Guardians
 - Authority: Investigate equity concerns, publish public reports, recommend institutional changes, mediate disputes
@@ -402,10 +423,11 @@ The final Phase 2 institutions provide operational capacity for justice, enforce
 - At least 3 specialized meta-councils chartered and functional
 - Tribunal, Enforcement Corps, Ombudsperson operational
 - All institutions have published charters and accountability mechanisms
-- Public awareness reaches 60% in ratifying nations
-- Track 1 emergency powers fully transferred to permanent institutions
+- Emergency Director authority narrowed per Progressive Narrowing Ratchet (public advisory and expert panel convening transferred to permanent bodies)
 
-### VIII.E. Phase 2 parallel track: Institutional Permeation Action (months 6-9)
+**Gate to Phase 3**: All Phase 2 bodies operational; first Permeation Assessment published.
+
+### VIII.F.1. Phase 2 parallel track: Institutional Permeation Action
 
 While the global convening process establishes formal legitimacy structures during Phase 2, a parallel operational track activates the Permeation Mandate (Section II.L of Module 1) at the local and national level. The purpose is to ensure the transition is not only top-down institutional construction but also bottom-up infrastructure deployment—embedding the upgrade interface between GGF coordination infrastructure and existing legacy institutions before those institutions are asked to change.
 
@@ -417,13 +439,13 @@ This track is distinct from Track 1 (Emergency Survival Framework). Track 1 hand
 First AUBI pilots operational in at least 5 ratifying nations, with priority to nations where civil society and local government actors have expressed readiness to serve as adaptive nodes. As established in Section VII.B (Module 4), AUBI deployment at this stage is constitutional infrastructure, not a welfare add-on: it removes the compliance trap that prevents institutional actors from executing the permeation strategy safely.
 
 **Lateral coordination network activation**
-First inter-municipal lateral coordination agreements signed under the Legacy Hardware API Municipal Finance Bridge (Section X.L). Target: 20 or more city-to-city coordination agreements across ratifying nations. These agreements demonstrate that the permeation approach is operational and documentable, providing evidence base for the Month 9 assessment.
+First inter-municipal lateral coordination agreements signed under the Legacy Hardware API Municipal Finance Bridge (Section X.L). Target: 20 or more city-to-city coordination agreements across ratifying nations. These agreements demonstrate that the permeation approach is operational and documentable, providing evidence base for the Phase 2 Permeation Assessment.
 
 **Adaptive node registry**
 The GGF Catalyst Team (in formation) maintains a voluntary, non-public registry of institutional actors—civil servants, local officials, NGO staff—who have completed Legacy Hardware API orientation and are actively executing permeation activities. The registry is non-public specifically to protect participants from institutional retaliation; it is accessible to other registered nodes for peer coordination and mutual support.
 
 **First Permeation Assessment**
-At Month 9, the GGF Catalyst Team publishes a first assessment covering: how many institutions have adopted Legacy Hardware API components, what legal or administrative barriers have been encountered, what protocol revisions are indicated, and whether AUBI pilot deployment met the economic precondition timeline established in Section VII.B. This assessment informs the Phase 3 transition and is published on the Birth Certificate Dashboard.
+At the conclusion of Phase 2, the GGF Catalyst Team publishes a first assessment covering: how many institutions have adopted Legacy Hardware API components, what legal or administrative barriers have been encountered, what protocol revisions are indicated, and whether AUBI pilot deployment met the economic precondition timeline established in Section VII.B. This assessment informs the Phase 3 transition and is published on the Birth Certificate Dashboard.
 
 **Success indicators**:
 - AUBI pilots operational: ≥5 ratifying nations
@@ -431,16 +453,16 @@ At Month 9, the GGF Catalyst Team publishes a first assessment covering: how man
 - Adaptive node registry entries: ≥500
 - Legal barriers documented: comprehensive catalogue published
 - Legacy Hardware API adoption: ≥10% of ratifying nation municipalities contacted
-- First Permeation Assessment published by Month 9
+- First Permeation Assessment published by Phase 2 conclusion
 
 **Relationship to Track 1**:
-The Institutional Permeation Action track does not activate emergency governance capacity and has no authority over Track 1 processes. If Track 1 emergency interventions create legal or political conditions that affect permeation activities in specific jurisdictions, the GGF Catalyst Team documents this as a barrier in the Month 9 assessment rather than attempting to coordinate Track 1 actions.
+The Institutional Permeation Action track does not activate emergency governance capacity and has no authority over Track 1 processes. If Track 1 emergency interventions create legal or political conditions that affect permeation activities in specific jurisdictions, the GGF Catalyst Team documents this as a barrier in the Phase 2 Permeation Assessment rather than attempting to coordinate Track 1 actions.
 
-### VIII.F. Phase 3: Integration and transition (months 15-18)
+### VIII.G. Phase 3: Integration and transition (Year 5–6)
 
-Phase 3 focuses on integrating all institutions into a coherent governance system and transitioning from founding to operational mode.
+Phase 3 focuses on integrating all institutions into a coherent governance system and transitioning from founding to operational mode. Upon completion of Phase 3, all Track 1 Emergency Director authority has been transferred to permanent bodies via the Progressive Narrowing Ratchet — Emergency Directors dissolve automatically.
 
-**Month 15-16: Cross-institutional coordination establishment**
+**Cross-institutional coordination establishment (early Phase 3)**
 
 **Joint council meetings**
 - Regular convenings of representatives from all major institutions
@@ -458,7 +480,7 @@ Phase 3 focuses on integrating all institutions into a coherent governance syste
 - Establish resource-sharing mechanisms
 - Create communication channels between institutions operating in different cultural/legal contexts
 
-**Month 16-17: Integration with existing systems**
+**Integration with existing systems**
 
 The Genesis Protocol institutions do not replace all existing governance—they complement, coordinate, and where necessary, reform existing structures.
 
@@ -485,11 +507,12 @@ The Genesis Protocol institutions do not replace all existing governance—they 
 - Youth Council maintains Living Mandate connections to youth movements
 - Resource flows established from Genesis institutions to grassroots projects
 
-**Month 17-18: Transition to operational governance**
+**Transition to operational governance (late Phase 3)**
 
-**Interim Secretariat sunset**
-- Interim Secretariat's 18-month term ends
+**Interim Secretariat dissolution**
+- Interim Secretariat's mandate completes as Phase 3 bodies become operational
 - Functions transferred to permanent institutional structures
+- Delegation to Emergency Directors expires — any remaining Track 1 authority terminates automatically
 - Retrospective assessment: What worked, what didn't, lessons learned
 - Institutional memory documentation: Full record of founding process preserved for future learning
 
@@ -498,33 +521,36 @@ The Genesis Protocol institutions do not replace all existing governance—they 
 - Citizens' Assembly evaluation of institutional inclusivity
 - Youth Council seven-generation impact assessment
 - Ombudsperson equity audit
+- **Accountable Coordination Audit**: First annual test of all GGF bodies against the four-criteria test (Module 1, Section II.M)
 
 **Amendment identification**
 - Based on Phase 1-3 experience, identify needed protocol amendments
 - Tier 1 bodies deliberate on refinements
 - Public consultation on proposed changes
-- Amendment process begins (but changes don't take effect until after Month 24 Genesis Retrospective)
+- Amendment process begins (but changes don't take effect until after Genesis Retrospective)
 
 **Operational mode declaration**
-- Month 18 marks formal transition from founding to operational governance
+- Phase 3 completion marks formal transition from founding to operational governance
 - Genesis Protocol provisions remain in effect but institutional founding complete
 - Focus shifts from convening to governing
-- Emergency Track 1 provisions fully deactivated
+- Emergency Response Capacity fully dissolved (all authority transferred to permanent bodies per Narrowing Ratchet)
 
 **Phase 3 completion criteria**:
 - All institutions integrated and coordinating effectively
 - Existing UN/regional systems engaged
 - Indigenous governance formally recognized
 - Grassroots movements connected to institutional resources
-- Interim Secretariat successfully transitioned
-- First constitutional health assessment complete
-- Public awareness reaches 65% globally
+- Interim Secretariat successfully dissolved
+- Emergency Directors fully dissolved (all Narrowing Ratchet transfers complete)
+- First constitutional health assessment and Accountable Coordination Audit complete
 
-### VIII.G. Phase 4: Stabilization and learning (months 18-24)
+**Gate to Phase 4**: All Phase 3 criteria met; system operating under permanent governance.
 
-While not part of the founding sequence, Phase 4 provides crucial time for stabilization and learning before permanent transition.
+### VIII.H. Phase 4: Stabilization and learning (Year 6–7)
 
-**Month 18-20: Operational stabilization**
+Phase 4 provides crucial time for stabilization and learning before the Genesis Retrospective formally closes the founding period.
+
+**Operational stabilization (early Phase 4)**
 
 **Institutional rhythm establishment**
 - Regular council meeting schedules
@@ -544,7 +570,7 @@ While not part of the founding sequence, Phase 4 provides crucial time for stabi
 - Dispute resolution protocols applied to actual conflicts
 - Learning from failures and near-misses
 
-**Month 20-22: First governance cycles**
+**First governance cycles**
 
 **Policy development cycles**
 - Institutions begin proposing and deliberating major policy initiatives
@@ -564,9 +590,9 @@ While not part of the founding sequence, Phase 4 provides crucial time for stabi
 - Guardian principle assessments
 - Public transparency reports
 
-**Month 22-24: Genesis Retrospective**
+**Genesis Retrospective (late Phase 4)**
 
-At month 24, all institutions participate in comprehensive retrospective assessment.
+At the completion of Phase 4, all institutions participate in comprehensive retrospective assessment.
 
 **Joint report by all three Tier 1 bodies**
 - Earth Council, Citizens' Assembly, Youth Council collaborate on founding assessment
@@ -593,31 +619,31 @@ At month 24, all institutions participate in comprehensive retrospective assessm
 
 **This retrospective is critical**: The protocol assumes founding will involve mistakes, surprises, and unforeseen challenges. Rather than pretending perfection, it builds in structured learning. The retrospective ensures that institutional memory is created and that the system evolves based on experience.
 
-### VIII.H. Timeline contingencies and adaptation
+### VIII.I. Timeline contingencies and adaptation
 
-**The timeline is not rigid**. The protocol includes flexibility mechanisms recognizing that reality will differ from plans.
+**The timeline is not rigid**. The protocol uses phase gates rather than calendar deadlines, which inherently provides flexibility. But additional contingency mechanisms address scenarios where entire phases stall.
 
 **Graceful degradation protocol**:
 
-If Phase criteria are not met on schedule:
+If phase gate conditions are not met within expected timeframe:
 
-**Minor delays (1-3 months)**
-- Automatic timeline extension without governance change
-- Interim Secretariat continues coordination
-- Public notification via Birth Certificate Dashboard
-- Assessment of delay causes
+**Minor delays (gate conditions partially met, progress visible)**
+- Phase remains active; work continues toward gate conditions
+- Public notification via Birth Certificate Dashboard explaining status and expected timeline
+- Assessment of delay causes by Constitutional Health Monitors
+- No governance change required
 
-**Major delays (3-6 months)**
+**Major delays (gate conditions stalled for 6+ months beyond estimates)**
 - Tri-council emergency deliberation (if Tier 1 bodies exist)
 - Assessment: Is delay due to good-faith complexity or obstruction?
-- Options: Timeline adjustment, process modification, resource augmentation
+- Options: Gate condition adjustment, process modification, resource augmentation
 - Guardian principle review: Does delay compromise legitimacy?
 
-**Critical failures (6+ months or complete blockage)**
+**Critical failures (gate conditions appear unachievable)**
 - Constitutional Emergency declared
-- Deadlock Protocol activation (see Section VII.B)
-- Options include: Threshold adjustments, parallel track creation, graceful protocol suspension
-- Ultimate fail-safe: Return to Phase 0 with amended criteria
+- Deadlock Protocol activation (see Module 4, Section VIII.E)
+- Options include: Gate condition adjustment, parallel track creation, graceful protocol suspension
+- Ultimate fail-safe: Return to Phase 0 (or Phase -1) with amended criteria
 
 **The protocol prioritizes legitimacy over speed**: If rushing would compromise the legitimacy cascade or enable capture, delay is acceptable. But if obstruction is preventing progress, emergency measures are available.
 
@@ -626,8 +652,8 @@ If Phase criteria are not met on schedule:
 If conditions allow faster progress:
 
 **Phase compression**
-- Phases can be shortened if criteria met early
-- Minimum timelines enforced (can't rush Earth Council formation in 2 weeks)
+- Phases can be shortened if gate conditions met early
+- Minimum deliberation periods enforced (cannot rush Earth Council formation in 2 weeks)
 - Tier 1 bodies must validate acceleration
 - Public transparency maintained
 
@@ -636,30 +662,29 @@ If conditions allow faster progress:
 - Example: Specialized meta-council charter development can begin during MGCC formation
 - Legitimacy cascade still respected (no Tier 3 before Tier 2)
 
-**Crisis acceleration**
-- If planetary crisis demands urgent governance capacity, Track 1 provisions remain active longer
-- But accountability to Tier 1 bodies intensifies during extended emergency period
-- Sunset provisions eventually enforce transition even in crisis
+**The 5-year accelerated scenario**: If Phase -1 produces strong results quickly, Phase 0 consent thresholds are met rapidly, and Tier 1 bodies convene efficiently, the entire founding process from Phase -1 initiation to Phase 4 completion could compress to approximately 5 years. This requires everything going well — historically unlikely but not impossible.
+
+**The 7+ year extended scenario**: If Indigenous timing requires longer Earth Council convening, if conflict zones complicate Citizens' Assembly logistics, or if Phase 0 consent thresholds take longer to achieve, the founding process extends accordingly. The protocol waits. There is no deadline that justifies rushing past gate conditions.
 
 **Timeline monitoring and adjustment**:
 
-**Constitutional Health Monitors** (established in Section VIII) continuously assess timeline progress:
-- Milestone tracking against planned schedule
-- Early warning of potential delays
+**Constitutional Health Monitors** continuously assess timeline progress:
+- Gate condition tracking against expected timeline
+- Early warning of potential stalls
 - Identification of bottlenecks or obstacles
 - Recommendations for timeline adjustments
 - Public reporting via Birth Certificate Dashboard
 
 **Quarterly timeline reviews**:
 - Interim Secretariat (then MGCC) conducts formal timeline assessment every 3 months
-- Review: What's on track, what's delayed, why, what interventions needed
+- Review: What's on track, what's stalled, why, what interventions needed
 - Consultation: Input from forming/formed institutions
-- Adaptation: Timeline adjustments proposed if needed
+- Adaptation: Gate condition adjustments proposed if needed
 - Transparency: All reviews published publicly
 
 The timeline is a framework, not a straitjacket. It provides structure while allowing adaptation to reality.
 
-### VIII.I. Timeline visualization and public engagement
+### VIII.J. Timeline visualization and public engagement
 
 **Birth Certificate Dashboard** (public transparency platform):
 
@@ -1448,7 +1473,7 @@ When nations ratify the Treaty, they:
 - Accept Peace Tithe obligation (0.1% military budget to Genesis Fund)
 - Agree to coordinate through Genesis institutions on planetary issues
 - Submit to Tribunal jurisdiction for Treaty violations
-- Participate in Network Effects Protocol (preferential trade for participants)
+- Participate in Infrastructure Access Model (Treaty Partner benefits for participants)
 
 But they retain sovereignty over:
 - Domestic policy not affecting planetary commons
@@ -1482,7 +1507,7 @@ If nations violate Treaty commitments:
 **Graduated response**:
 1. Public reporting by Ombudsperson or Guardians
 2. Mediation through MGCC coordination
-3. Economic incentives/sanctions through Network Effects Protocol
+3. Infrastructure access consequences through tiered integration (loss of Treaty Partner benefits)
 4. Tribunal prosecution for serious violations
 5. Enforcement Corps coordination for catastrophic violations (last resort)
 
@@ -1897,7 +1922,7 @@ The Phase 2 Permeation Action Track (Section VIII.E) includes deployment of the 
 
 **Accessible to registered nodes**: Nodes can connect with other registered nodes for peer coordination, mutual support, and sharing of jurisdiction-specific adaptations.
 
-**First Permeation Assessment**: At Month 9, the GGF Catalyst Team publishes an assessment of API adoption, barriers encountered, and protocol revisions indicated. This assessment is published publicly on the Birth Certificate Dashboard.
+**First Permeation Assessment**: At the conclusion of Phase 2, the GGF Catalyst Team publishes an assessment of API adoption, barriers encountered, and protocol revisions indicated. This assessment is published publicly on the Birth Certificate Dashboard.
 
 #### X.L.F. Relationship to the broader integration architecture
 
@@ -1913,11 +1938,14 @@ This module established the implementation architecture for legitimate instituti
 
 **Section VIII: Timeline & Phases**
 - Legitimacy cascade requiring proper sequence (Tier 1 → Tier 2 → Tier 3)
-- Dual-track activation balancing urgency (Track 1 survival framework) with legitimacy (Track 2 deliberative founding)
-- Phase 0 creating constitutional groundwork through Pluriversal Sovereign consent (peoples + Indigenous nations + states)
-- Phase 1-3 convening institutions from foundational bodies through operational capacity
-- Phase 2 Parallel Track activating the Institutional Permeation Action Track alongside formal convening: AUBI pilots, lateral coordination network, adaptive node registry, first Permeation Assessment
-- Phase 4 stabilization and learning with Genesis Retrospective at month 24
+- **Phase -1: Pre-Genesis Demonstration** (Year 0–2) resolving the cold-start problem through municipal pilots that prove GGF infrastructure works before anyone is asked to ratify a treaty
+- Dual-track activation balancing urgency (Track 1 structurally contained emergency capacity) with legitimacy (Track 2 phase-gated deliberative founding)
+- **Structural containment** of emergency powers through delegated authority, enumerated powers, Progressive Narrowing Ratchet, and no extension mechanism — dissolution is architectural, not discretionary
+- Phase 0 (Year 2–3) creating constitutional groundwork through Pluriversal Sovereign consent with realistic thresholds (30+ nations, 20+ Indigenous Letters, 50M+ referendum participants)
+- Phase 1–3 (Year 3–6) convening institutions from foundational bodies through operational capacity, with phase gates replacing calendar deadlines
+- Phase 2 Parallel Track activating the Institutional Permeation Action: AUBI pilots, lateral coordination network, adaptive node registry, first Permeation Assessment
+- Phase 4 (Year 6–7) stabilization and learning with Genesis Retrospective
+- **5–7 year total timeline** grounded in historical precedent (EU: 7 years, ICC: 4 years, Paris: 5 years) — honest about the scale of ambition
 - Timeline contingencies allowing graceful adaptation while maintaining legitimacy standards
 - Birth Certificate Dashboard providing public transparency throughout
 
@@ -1934,7 +1962,7 @@ This module established the implementation architecture for legitimate instituti
 - Cultural Translation Working Group mediating conflicts and developing protocols
 
 **Section X: Integration Protocols**
-- Coordination without absorption—Genesis institutions coordinate with existing systems without creating monolithic global government
+- Coordination without absorption — Genesis institutions coordinate with existing systems without creating monolithic global government
 - UN system integration maintaining independence while enabling practical cooperation
 - Regional organization coordination respecting asymmetric governance maturity
 - Indigenous governance integration with BAZ sovereignty and knowledge protection
@@ -1944,24 +1972,21 @@ This module established the implementation architecture for legitimate instituti
 - Local/municipal integration empowering cities as coordination nodes
 - Functional equivalence allowing diverse approaches while maintaining coherence
 - Periodic integration reviews ensuring ongoing adaptation
-- **Legacy Hardware API** providing the practical interface layer for institutional permeation: how adaptive nodes inside legacy institutions connect to GGF coordination infrastructure without requiring institutional permission to change
+- **Legacy Hardware API** providing the practical interface layer for institutional permeation
 
-**Together these sections provide the roadmap from founding moment to operational governance**—showing how legitimate, pluriversal institutions can emerge, how they navigate cultural diversity with integrity, and how they integrate with the complex reality of existing governance systems.
+**Together these sections provide the roadmap from first municipal pilot to operational governance** — showing how legitimate, pluriversal institutions can emerge through demonstrated value, navigate cultural diversity with integrity, and integrate with the complex reality of existing governance systems.
 
-The implementation architecture is not rigid procedure—it is adaptive framework acknowledging that reality will differ from plans while maintaining non-negotiable commitments to legitimacy, cultural dignity, and principled coordination.
-
-**Module 5 bridges aspiration and reality**—providing practical pathways for humanity's conscious choice to become planetary stewards rather than subjects of inherited power structures.
+**Module 5 bridges aspiration and reality** — providing practical pathways grounded in historical precedent rather than wishful thinking about timescales.
 
 ---
 
-**Next**: Module 6 completes the Genesis Protocol with accountability mechanisms (monitoring, amendment procedures, ethical foundations) and final validation.
+**Next**: Module 6 completes the Genesis Protocol with accountability mechanisms (monitoring including the new Accountable Coordination Audit and Coercion Audit, amendment procedures, ethical foundations) and updated steel-manning validation.
 
 ---
 
 **Module statistics**:
-- ~15,500 words
+- ~16,000 words
 - 3 major sections (VIII, IX, X)
-- 26 subsections
-- Implementation timeline: Phase 0 through Phase 4 (months -12 to 24)
+- Implementation timeline: Phase -1 through Phase 4 (5–7 years, phase-gated)
 - Integration domains: UN, regional, Indigenous, grassroots, private sector, national, local
 - Cultural protocols: mediation hierarchy, knowledge protection, language justice, ceremonial integration

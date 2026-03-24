@@ -1,11 +1,11 @@
 ---
 title: Genesis Protocol - Constitutional Convening Process
 section: Module 6 - Accountability & Conclusion
-status: Full Draft v1.1 (updated to v0.5 outline)
-revision: 1.1
-date: 2026-03-04
+status: Full Draft v1.2 (updated to v0.6 outline — Structural Integrity Revision)
+revision: 1.2
+date: 2026-03-23
 module: "6 of 6: Accountability & Conclusion (Sections XI-XVI)"
-wordCount: ~14,000
+wordCount: ~14,500
 purpose: Accountability mechanisms and validation for constitutional founding
 ---
 
@@ -47,46 +47,47 @@ This redundancy is deliberate. If one accountability layer fails, others catch p
 
 Each phase has specific, measurable success criteria. This prevents institutional self-congratulation while providing early warning of failures.
 
+**Phase -1 metrics (Pre-Genesis Demonstration)**:
+
+**Municipal pilot indicators**:
+- Seed municipalities operational: ≥10 with ≥6 months of Hearts pilot data
+- Geographic diversity: Pilots across ≥4 continents
+- Indigenous-led pilots: ≥1 with self-assessed positive results published on Indigenous community's own terms
+- Independent evaluations: ≥3 academic evaluations published (at least 1 from Global South institution)
+- Community Weaver cohorts: ≥3 training cohorts completed with retention data
+
+**Coalition formation indicators**:
+- National government interest: ≥5 formal Letters of Intent from foreign ministries
+- Municipal advocacy: ≥3 seed municipalities actively advocating for national ratification
+- South-South learning: ≥2 cross-continental knowledge-sharing events between pilot communities
+- Founding Referendum infrastructure: Technically tested and deployment-ready
+
+**Phase -1 failure conditions** (trigger Phase -1 Retrospective):
+- Unable to establish 10 operational municipal pilots within 30 months
+- Zero Indigenous-led pilots willing to participate
+- Zero national governments expressing formal interest
+- Seed funding insufficient for continued operations
+
 **Phase 0 metrics (Constitutional groundwork)**:
 
 **Pluriversal Sovereign consent indicators**:
-- Indigenous Letters of Intent: Target ≥300 Indigenous Nations across all inhabited continents (Americas 60+, Africa 50+, Asia-Pacific 40+, Arctic 30+, Europe 20+)
-- Founding Referendum: Participation rate ≥40%, approval rate ≥60%, conducted in 100+ nations
-- Treaty ratification: 100+ nations (≥55% global population), including ≥30 Global South nations, ≥3 P5 nations, representation from all continents
-- Timeline: All three sources achieved within 12 months of Phase 0 initiation
+- Indigenous Letters of Intent: ≥20 Indigenous Nations across ≥4 inhabited continents
+- Founding Referendum: ≥50M global participants with ≥30% from Global South, majority approval
+- Treaty ratification: 30+ nations (does NOT require P5), including ≥10 Global South nations, representation from ≥4 continents
+- All three sources achieved before Phase 1 gate opens (no calendar deadline)
 
-**Genesis Fund indicators**:
-- Total capitalization: ≥$1.5 billion (minimum for activation), target $2 billion
+**Genesis Fund Stage 2 indicators**:
+- Peace Tithe capitalization: $200–400M from early ratifiers (realistic for 30+ predominantly Global South/middle-income coalition)
 - Peace Tithe compliance: 100% of ratifying nations contribute within 90 days of ratification
 - Diverse funding sources: No single contributor exceeds 15% of fund
 - Transparency: 100% of contributions and expenditures publicly documented on Birth Certificate Dashboard
-- Indigenous Sovereign Endowment: Full $500 million transferred to Earth Council control by Month 0
+- Indigenous Sovereign Endowment Stage 2: $150M transferred unconditionally; legally binding commitment for remaining $350M documented
 
-**Infrastructure indicators**:
-- Technical systems operational: Federated Birth Certificate Dashboard live with 99.9% uptime
-- Cyber resilience: Pass independent security audit (quantum-resistant encryption, zero critical vulnerabilities)
-- Offline accessibility: Regional convening centers established in 50+ locations across all continents
-- Language capacity: Simultaneous interpretation available in six official language families
-- Accessibility: Full compliance with WCAG 2.2 standards for digital platforms
-
-**Public awareness indicators**:
-- Global awareness: ≥30% of global population has heard of Genesis Protocol (verified through independent polling)
-- Understanding: ≥15% can accurately describe what Genesis Protocol does
-- Regional distribution: Awareness ≥20% in all inhabited continents (no region left uninformed)
-- Sentiment: ≥50% positive or neutral sentiment among aware population
-
-**Interim Secretariat indicators**:
-- Selection completed on schedule
-- Demographic representativeness: Gender parity (45-55% any gender), Global South majority (≥55%), geographic diversity (all inhabited continents represented), age range (25-65 years with median 40-50), Indigenous representation (≥15%)
-- Conflicts of interest: Zero undisclosed conflicts, zero members with disqualifying affiliations
-- Public vetting: 90-day comment period completed with responsive addressing of concerns
-- Operational capacity: Secretariat functional and coordinating Phase 0 completion
-
-**Phase 0 failure conditions** (any one triggers Phase 0 Retrospective):
-- Unable to secure 300 Indigenous Letters of Intent within 12 months
-- Founding Referendum fails to achieve 60% approval or 40% participation
-- Unable to secure 100 nation ratifications within 18 months
-- Genesis Fund fails to reach $1.5 billion minimum
+**Phase 0 failure conditions** (trigger Phase 0 Retrospective):
+- Unable to secure 20 Indigenous Letters of Intent
+- Founding Referendum fails to achieve 50M participants or majority approval
+- Unable to secure 30 nation ratifications
+- Genesis Fund Stage 2 fails to reach $200M minimum
 - Critical infrastructure failures (cyber breach, irrecoverable data loss, persistent accessibility barriers)
 - Interim Secretariat corruption or capture (verified through independent audit)
 
@@ -125,12 +126,14 @@ Each phase has specific, measurable success criteria. This prevents institutiona
 - Public trust: ≥55% of global population views Tier 1 bodies as legitimate (independently verified)
 - Inclusivity perception: ≥60% of Global South respondents, ≥60% of Indigenous respondents, ≥60% of youth respondents view Tier 1 bodies as representing their interests
 
-**Track 1 (Survival Framework) indicators during Phase 1**:
-- Crisis response capacity: Interim crisis response team operational within 30 days of Phase 0 completion
+**Track 1 (Emergency Response Capacity) indicators during Phase 1**:
+- Crisis response capacity: Emergency Directors operational within 3 months of Phase 0 activation
+- Enumerated powers compliance: All emergency actions fall within the closed list (Module 2, Section V.C.3) — zero ultra vires actions
 - Proportionate use of authority: Emergency actions limited to genuine existential threats (no scope creep)
-- Accountability to forming bodies: All emergency actions reported to Tier 1 bodies within 48 hours
-- Human rights compliance: Zero credible allegations of human rights violations by crisis response team
-- Transparency: All emergency actions documented on Birth Certificate Dashboard within 7 days
+- Accountability to forming bodies: All emergency actions reported to Tier 1 bodies within 48 hours and published on Birth Certificate Dashboard within 24 hours
+- Progressive Narrowing Ratchet: When Citizens' Assembly is seated, public advisory function transfers successfully
+- Human rights compliance: Zero credible allegations of human rights violations by emergency response team
+- Budget compliance: Total emergency expenditure within $50M ceiling
 
 **Phase 2 metrics (Institutional convening)**:
 
@@ -184,6 +187,26 @@ Each phase has specific, measurable success criteria. This prevents institutiona
 - No single ideological faction dominates >30% of deliberations (measured through discourse analysis)
 - Economic interests disclosed: 100% transparency on funding sources and economic ties
 - Revolving door prevention: Zero violations of 5-year cooling-off period for corporate positions
+
+**Accountable Coordination Audit** (new in v1.2, annual):
+- Every GGF body assessed against four-criteria test (Module 1, Section II.M): revocable authority, symmetric transparency, protected exit, self-limiting function
+- Assessment conducted by Constitutional Health Monitors with methodology published in advance
+- Results published on Birth Certificate Dashboard regardless of findings
+- Any body failing any criterion triggers mandatory Council of Guardians review within 90 days
+- Historical trend tracking: Is the system becoming more or less accountable over time?
+
+**Coercion Audit** (new in v1.2, annual):
+- Independent assessment that GGF engagement pathways remain genuinely voluntary
+- Evaluates whether any nation experiences material harm from non-participation beyond the natural absence of shared infrastructure
+- Specific tests: Are Pilot Partner requirements disproportionate barriers for Global South nations? Are Treaty Partner benefits being used as leverage for non-commons concessions? Are Observer nations treated with dignity or marginalized?
+- If audit finds coercive dynamics emerging, the Infrastructure Access Model (Module 4, Section VII) must be revised to restore genuine voluntariness
+- Published on Birth Certificate Dashboard with methodology and raw data
+
+**Emergency Response Capacity dissolution tracking** (during founding period):
+- Progressive Narrowing Ratchet status: Which functions have been transferred to permanent bodies, which remain with Emergency Directors
+- Ultra vires incident count: Zero tolerance; any incident triggers investigation
+- Budget burn rate: Emergency expenditure tracking against $50M ceiling
+- Dissolution readiness: Assessment of whether Emergency Directors are preparing for dissolution or resisting it
 
 **Birth Certificate Dashboard accuracy and integrity**:
 - Real-time updates: 100% of major milestones documented within 48 hours
@@ -500,7 +523,7 @@ If Treaty amendment reaches Tier 1 approval but fails nation-state ratification,
 3. 2/3 approval from all three Tier 1 bodies
 4. Unanimous approval from Council of Guardians (defending principles)
 5. 4/5 of ratifying nations must ratify (higher threshold than Treaty amendments)
-6. **NEW Founding Referendum required**: Another global referendum asking citizens to consent to fundamental change (same standards as original: 60% approval, 40% participation, 100+ nations)
+6. **NEW Founding Referendum required**: Another global referendum asking citizens to consent to fundamental change (same standards as original: majority approval among 50M+ participants with ≥30% from Global South)
 7. 12-month deliberation period allowing deep public engagement
 8. Phased implementation with ability to reverse if unintended consequences emerge
 
@@ -674,9 +697,9 @@ The Genesis Protocol navigates profound ethical dilemmas without simple answers.
 **The Pluriversal Sovereign solution**:
 - The protocol does NOT claim self-referential authority
 - Instead, it is put to a vote across three distinct legitimacy domains:
-  1. **The Peoples** (via Founding Referendum across 100+ nations)
-  2. **Indigenous Nations** (via sovereign Letters of Intent from 300+ nations)
-  3. **Nation-States** (via Treaty ratification by 100+ states)
+  1. **The Peoples** (via Founding Referendum: 50M+ participants, majority approval)
+  2. **Indigenous Nations** (via sovereign Letters of Intent from 20+ nations across 4+ continents)
+  3. **Nation-States** (via Treaty ratification by 30+ states, P5 not required)
 
 **The constitutional moment**:
 - The act of achieving these three criteria simultaneously creates the "Pluriversal Sovereign"
@@ -1027,24 +1050,24 @@ This means:
 
 Despite years of development and adversarial testing, some questions remain:
 
-**Question 1: Is Peace Tithe 0.1% optimal or should it be 0.15%?**
+**Question 1: Is Peace Tithe 0.1% optimal or should it be higher?**
 
 **Current provision**: 0.1% of annual military budget
-**Generates**: ~$2 billion from global military spending of ~$2 trillion
-**Covers**: Genesis Fund target adequately
+**Generates at full scale**: ~$2 billion+ from global military spending (but early-stage yields $200–400M from initial 30+ ratifiers)
+**Covers**: Genesis Fund target at scale; Stage 2 institutional founding adequately
 
-**Argument for increase to 0.15%**:
-- Would generate $3 billion, providing more buffer for unexpected costs
+**Argument for increase (e.g., to 0.15%)**:
+- Would generate larger early-stage budget, reducing the gap between Stage 2 and Stage 3
 - Still tiny fraction of military spending (nations wouldn't meaningfully notice)
-- Additional billion could fund more grassroots initiatives, additional translation services, enhanced monitoring capacity
+- Additional funds could support more AUBI pilot coverage and faster Sovereign Endowment completion
 
 **Argument for keeping 0.1%**:
-- Achieves necessary funding without unnecessary burden
-- Lower barrier to ratification (easier political sell)
-- Excess funds might enable bureaucratic bloat
+- Lower barrier to ratification (easier political sell for early coalition)
+- Excess funds in early stage might enable bureaucratic bloat before institutional capacity justifies it
 - Can be increased later if inadequate (easier to raise than lower)
+- Phased model already addresses the early-stage gap through realistic budgeting
 
-**Current status**: Proceeding with 0.1% but monitoring adequacy in Phase 0-1.
+**Current status**: Proceeding with 0.1% but monitoring adequacy through Phase 0-1. Progressive formula (higher rate for larger military budgets) remains under consideration.
 
 **Question 2: Should conflict zone quota be 15% instead of 10%?**
 
@@ -1068,8 +1091,8 @@ Despite years of development and adversarial testing, some questions remain:
 **Scenario**: One or more P5 nations refuse to ratify Treaty and actively attempt military interference with Genesis institutions (assassination of institutional participants, military strikes on convening centers, funding of saboteurs).
 
 **Current provisions**:
-- Network Effects Protocol creates economic costs for non-participation
-- But economic pressure may be insufficient if nation is willing to isolate
+- Infrastructure Access Model creates economic advantages for participation (though through attraction, not coercion)
+- But demonstrated value may be insufficient deterrent if nation is willing to use military force
 - Enforcement Corps has defensive capacity but cannot match P5 military
 - Tribunal can prosecute but lacks enforcement if nation refuses jurisdiction
 
@@ -1099,6 +1122,57 @@ Despite years of development and adversarial testing, some questions remain:
 
 **Current status**: Constitutional Health Monitors include some adversarial review but not formalized as separate role. To be evaluated in first annual review.
 
+**Question 5 (new in v1.2): At what point does the Pilot Partner tier create a two-tier system that reproduces North-South power imbalances?**
+
+**The concern**: Global South nations with fewer resources to establish BAZ infrastructure may remain at Observer or Pilot Partner tiers longer than Global North nations. If Treaty Partner benefits (Commons Fund, debt relief, AUBI) are only accessible to nations with mature infrastructure, the Infrastructure Access Model could inadvertently replicate the "aid conditionality" dynamic the Peace Tithe was designed to eliminate.
+
+**Mitigations currently in place**: Heartstarter matching funds specifically support under-resourced BAZ pilots; technical assistance is free; Pilot Partner tier provides genuine support (not just observation rights). The Coercion Audit specifically tests for disproportionate barriers.
+
+**Current status**: Requires ongoing monitoring. The Coercion Audit (Section XI.B) is the primary accountability mechanism.
+
+**Question 6 (new in v1.2): How does the Pre-Genesis Coordination Team avoid becoming a de facto power center?**
+
+**The concern**: A small team operating for 18–30 months with exclusive relationships to seed municipalities, Indigenous pilot communities, and potential ratifying governments accumulates knowledge, relationships, and institutional capital that creates natural resistance to dissolution — even among people who sincerely intend to let go.
+
+**Mitigations currently in place**: Automatic dissolution upon Phase 0 activation; no guaranteed Secretariat seats; structural selection mechanisms (lottery from qualified pools) apply to former team members equally.
+
+**Current status**: The dissolution risk is acknowledged honestly in Module 1, Section IV-A.D. Whether the structural mechanisms are sufficient can only be assessed through implementation.
+
+**Question 7 (new in v1.2): Is 5–7 years too slow for existential risk timelines?**
+
+**The concern**: Climate tipping points, advanced AI deployment, and pandemic engineering may not wait for a 5–7 year institutional founding process. The Track 1 Emergency Response Capacity provides bridging crisis response, but its structurally contained authority is deliberately limited.
+
+**The honest tension**: The v0.6 revision made the timeline more realistic at the cost of making the urgency problem harder. The 18-24 month v0.5 timeline was unrealistic but sounded fast. The 5-7 year v0.6 timeline is realistic but creates a longer period where existential risks must be managed without full institutional capacity.
+
+**Current status**: The Dual-Track architecture (Module 2, Section V) is the primary answer, but the tension between timeline realism and existential urgency is genuinely unresolved. The Pre-Genesis Demonstration Phase (Phase -1) partially addresses this by beginning practical coordination before formal founding.
+
+### XIII.C.1. Tensions newly resolved in v1.2
+
+**Coercion vs. Attraction** (previously unidentified):
+- v0.5 used economic coercion ("economically suicidal," "catastrophic isolation") while condemning coercion elsewhere
+- v1.2 replaces the Economic Exclusion Architecture with the Infrastructure Access Model (Module 4, Section VII)
+- Benefits are naturally unavailable outside shared infrastructure, not withheld as punishment
+- Honest admission that attraction is slower than coercion and that GGF may operate for years without P5 participation
+
+**Emergency Power Dissolution** (previously unresolved):
+- v0.5 relied on voluntary 24-month sunset with zero historical precedent for voluntary emergency power dissolution
+- v1.2 replaces voluntary sunset with structural containment: delegated authority, enumerated powers (closed list), Progressive Narrowing Ratchet, no extension mechanism
+- Dissolution is architectural, not discretionary — Emergency Directors' legal basis for action ceases to exist when the Interim Secretariat dissolves and permanent bodies assume their functions
+
+**Cold-Start Circularity** (previously unidentified):
+- v0.5 assumed nation-states would ratify a treaty before seeing it work
+- v1.2 adds Phase -1 (Pre-Genesis Demonstration) resolving "who convenes the first meeting?" through municipal pilots that prove value before asking anyone to sign anything
+
+**GGF's Own Hierarchy** (previously unidentified):
+- v0.5 condemned hierarchy while creating new ones, with no principled distinction
+- v1.2 adds Principle 12 (Accountable Coordination vs. Extractive Hierarchy) with four testable structural criteria
+- Annual Accountable Coordination Audit provides ongoing verification
+- The distinction is structural, not aspirational — falsifiable rather than unfalsifiable
+
+**Funding Realism** (previously unidentified):
+- v0.5 assumed $2B on Day 1 from near-universal participation
+- v1.2 replaces this with three-stage phased funding ($5–20M → $200–400M → $2B+) matched to demonstrated capacity at each stage
+
 ---
 
 ## <a id="section-xiv"></a>Section XIV: Steel manning validation summary
@@ -1115,7 +1189,7 @@ The Genesis Protocol was subjected to rigorous "steel manning"—a process where
 
 **Round 3 - Countermeasure development**: For each identified threat, protocol designers developed and tested countermeasures. If countermeasure failed steel manning, iterate until robust solution emerged.
 
-**This process transformed the protocol**: What began as "cathedral built in warzone" evolved into "fortress that welcomes inhabitants." The protocol now assumes hostility and builds incentive structures making cooperation more rational than obstruction.
+**This process transformed the protocol**: What began as "cathedral built in warzone" evolved through adversarial testing into a fortress, and through structural integrity revision into a **living demonstration that grows by proving its value**. The protocol now assumes hostility, builds incentive structures making cooperation more rational than obstruction, and confronts its own internal contradictions honestly.
 
 ### XIV.B. External threats and countermeasures
 
@@ -1123,70 +1197,73 @@ The Genesis Protocol was subjected to rigorous "steel manning"—a process where
 
 **Attack scenario**: One or more P5 nations simply refuse to ratify Treaty. They claim Genesis institutions lack legitimacy without P5 participation. They use economic and political leverage to pressure other nations not to participate. Genesis Protocol stalls before Phase 0 completes.
 
-**Countermeasure: Network Effects Protocol**
+**Countermeasure: Infrastructure Access Model (v1.2 revision)**
 
 **Solution components**:
-- Preferential trade agreements among ratifying nations create economic advantage for participation
-- Green technology transfer prioritized to ratifying nations
-- Climate finance flows to participants, not abstainers
-- Digital governance standards set by Genesis institutions become market requirement
-- Non-participation leads to economic isolation, not just moral disapproval
+- GGF economic benefits (Commons Fund, AUBI, debt relief, Gaian Trade) require institutional integration — they are naturally unavailable outside the shared infrastructure, not withheld as punishment
+- Tiered integration pathway (Observer → Pilot Partner → Treaty Partner) provides genuine support at every level
+- P5 cities can engage as Pilot Partners independently of national government decisions
+- P5 nations can engage sectorally without full ratification
+- Demonstrated results from Treaty Partner nations create domestic pressure in non-participating nations over time
 
-**Why this counters the threat**: Makes non-participation economically costly. P5 opt-out becomes self-defeating if it leads to exclusion from trading blocs, technology access, investment flows. Transforms decision from "Should we participate?" to "Can we afford not to?"
+**Why this counters the threat**: Makes participation attractive through demonstrated value rather than coercive through threatened isolation. Slower than economic coercion but produces participants who join because the system works, not because they fear exclusion. The attraction dynamic compounds as more nations join and results accumulate.
 
-**Status**: ✅ Hardened
+**Status**: ✅ Revised v1.2 (replaced Economic Exclusion Architecture to resolve coercion contradiction)
 
 **Threat 2: Recognition trap (Indigenous co-optation)**
 
 **Attack scenario**: Genesis Protocol claims to recognize Indigenous sovereignty while actually extracting Indigenous legitimacy for GGF purposes. Indigenous participation makes GGF look legitimate while Indigenous communities get nothing substantive. Modern version of colonial treaties: Promise respect, deliver subordination.
 
-**Countermeasure: Indigenous Sovereign Endowment ($500M unconditional)**
+**Countermeasure: Indigenous Sovereign Endowment (staged but legally binding, unconditional)**
 
 **Solution components**:
-- $500 million transferred to Earth Council control with ZERO conditions
+- $500 million total commitment written into Treaty text as senior obligation
+- Stage 2 transfer: $150M unconditional within first 6 months of Genesis Fund capitalization
+- Stage 3 transfer: Remaining $350M as Peace Tithe revenue scales with additional ratifications
+- Legally binding: Full $500M commitment is senior to all other Genesis Fund allocations — if fund shrinks, endowment is last thing cut
 - Genesis institutions have NO leverage over endowment (cannot threaten to withhold for non-cooperation)
 - Earth Council controls endowment governance structure
-- GGF institutions can apply for grants like any other entity (no privileged access)
 - Indigenous Nations retain right to reject Genesis Protocol recognition even after endowment transfer
 
-**Why this counters the threat**: Proves recognition is real, not rhetorical. Money flows unconditionally before Indigenous cooperation is expected. If Genesis Protocol betrays Indigenous sovereignty, Indigenous communities have resources to fund alternatives. Recognition comes with reparation, not exploitation.
+**Why this counters the threat**: Proves recognition is real, not rhetorical. Money flows unconditionally before Indigenous cooperation is expected. Staged transfer is honest about early-stage funding reality but legally binding commitment demonstrates sincerity. If Genesis Protocol betrays Indigenous sovereignty, Indigenous communities have resources to fund alternatives.
 
-**Status**: ✅ Hardened
+**Status**: ✅ Revised v1.2 (staged transfer matched to funding reality; principle of unconditional, zero-leverage transfer retained)
 
 **Threat 3: Timeline catastrophe (Urgent crisis vs. slow deliberation)**
 
 **Attack scenario**: Ecological or technological crisis emerges requiring immediate coordinated response. Genesis Protocol still in Phase 1 deliberation. Critics argue "We don't have time for your 18-month process. We need action NOW. Legitimate procedures are luxury during emergency." Bypass Genesis Protocol, create ad-hoc crisis governance controlled by fastest/most powerful actors.
 
-**Countermeasure: Dual-Track Activation (Survival + Legitimacy in parallel)**
+**Countermeasure: Structurally Contained Emergency Response + Realistic 5–7 Year Timeline**
 
 **Solution components**:
-- **Track 1 - Survival Framework** (0-3 months): Emergency crisis response capacity operational within 30 days
-- **Track 2 - Legitimacy Framework** (0-18 months): Deliberative institutional founding continues in parallel
-- Track 1 provides immediate action; Track 2 builds legitimate institutions that eventually supersede Track 1
-- Track 1 has built-in sunset (expires when Track 2 institutions operational)
-- Track 2 oversight of Track 1 (even during emergency, accountability to forming institutions)
+- **Track 1 - Emergency Response Capacity**: Crisis response operational within months, with structurally contained authority (delegated, enumerated, progressively narrowing, non-extendable)
+- **Track 2 - Legitimacy Framework**: Phase-gated deliberative founding across 5–7 years
+- Track 1 provides immediate action; Track 2 builds legitimate institutions that progressively assume Track 1 functions via the Narrowing Ratchet
+- Emergency authority dissolution is architectural, not discretionary — no historical pattern of voluntary sunset relied upon
+- 5–7 year timeline is historically grounded (EU: 7 years, ICC: 4 years, Paris: 5 years)
 
-**Why this counters the threat**: Refuses false choice between urgency and legitimacy. Yes, crisis requires immediate response (Track 1 provides it). But crisis doesn't justify abandoning legitimate institutional building (Track 2 proceeds). Emergency powers are temporary and accountable, not permanent bypass of democracy.
+**Why this counters the threat**: Refuses false choice between urgency and legitimacy. Crisis response proceeds immediately while legitimate institutions are built carefully. Structural containment prevents the emergency bridge from becoming a permanent power structure. Honest timeline builds credibility rather than making promises that cannot be kept.
 
-**Status**: ✅ Hardened
+**Status**: ✅ Revised v1.2 (structural containment replaces voluntary sunset; realistic timeline replaces 18–24 month calendar)
 
 **Threat 4: Financial neocolonialism (Aid as control)**
 
 **Attack scenario**: Genesis Fund relies on "voluntary contributions" primarily from wealthy nations and foundations. These funders use financial leverage to shape institutional priorities, exclude critical voices, ensure outcomes serve Northern interests. Global South nations participate but lack meaningful influence. "He who pays the piper calls the tune."
 
-**Countermeasure: Peace Tithe (0.1% military budget mandatory)**
+**Countermeasure: Peace Tithe with Phased Funding Model**
 
 **Solution components**:
 - **Deleted**: Voluntary contributions as primary funding source
 - **Mandatory**: Every ratifying nation contributes 0.1% of annual military budget (one-time at ratification)
+- **Phased honestly**: Stage 1 seed funding ($5–20M) from philanthropic/municipal/academic sources; Stage 2 coalition funding ($200–400M) from Peace Tithe of early ratifiers; Stage 3 scale funding ($2B+) as ratification expands
 - Universal buy-in from day one (not aid from North to South)
-- Largest military spenders (P5, NATO members) pay most (proportional to power)
+- Largest military spenders pay most when they join (proportional to power)
 - Global South gets equal stake in institutions without debt or conditionality
-- Redirects military spending to governance spending (symbolic and practical)
+- Each funding stage supports the activities that generate credibility for the next stage
 
-**Why this counters the threat**: Eliminates "donor-recipient" relationship. All nations are stakeholders through mandatory contribution. Wealthy nations pay more (appropriately) but cannot withhold payment to gain leverage. Genesis institutions funded by universal commitment, not selective generosity.
+**Why this counters the threat**: Eliminates "donor-recipient" relationship. All nations are stakeholders through mandatory contribution. Phased model is honest about early-stage budgets rather than assuming $2B on Day 1, preventing the false promises that generate disillusionment. Wealthy nations pay more (appropriately) but cannot withhold payment to gain leverage.
 
-**Status**: ✅ Hardened
+**Status**: ✅ Revised v1.2 (phased funding model replaces Day-1 $2B target)
 
 **Threat 5: Infinite regress (Illegitimate foundation)**
 
@@ -1197,12 +1274,12 @@ The Genesis Protocol was subjected to rigorous "steel manning"—a process where
 **Solution components**:
 - Protocol does NOT claim self-referential authority
 - Authority is granted by "Pluriversal Sovereign"—combined will of three distinct sources:
-  1. **The Peoples** (Founding Referendum: 60% approval in 100+ nations)
-  2. **Indigenous Nations** (Letters of Intent: 300+ nations across continents)
-  3. **Nation-States** (Treaty ratification: 100+ states)
+  1. **The Peoples** (Founding Referendum: majority approval among 50M+ global participants)
+  2. **Indigenous Nations** (Letters of Intent: 20+ nations across 4+ continents)
+  3. **Nation-States** (Treaty ratification: 30+ states, P5 participation not required)
 - The act of achieving these three criteria simultaneously creates the sovereign that grants authority
-- Phase 0 Milestone Criteria ARE the pre-political act of consent
-- This is social contract put to vote, not document claiming inherent authority
+- Phase 0 gate conditions ARE the pre-political act of consent
+- Phase -1 demonstrated value provides the credibility that makes consent informed rather than speculative
 
 **Why this counters the threat**: Makes founding act explicit rather than obscured. Authority comes from consent across three legitimacy traditions (not invented by protocol). The vote itself cuts the infinite regress—this is the moment when new sovereign authority comes into being through collective consent.
 
@@ -1299,7 +1376,7 @@ The permeation strategy introduced in v0.5 (Principle 11: The Permeation Mandate
 
 **Vulnerability 2: AUBI deployment timeline feasibility**
 
-**Attack scenario**: "You are promising AUBI pilots in Phase 0-1 before the permeation strategy depends on them. Phase 0-1 requires Treaty ratification, Genesis Fund capitalization ($2B), and interim secretariat formation. None of this is trivially achievable. You cannot credibly promise AUBI deployment as foundational infrastructure when the institutional preconditions for that deployment are themselves uncertain."
+**Attack scenario**: "You are promising AUBI pilots in Phase 0-1 before the permeation strategy depends on them. Phase 0-1 requires Treaty ratification, Genesis Fund Stage 2 capitalization ($200–400M), and interim secretariat formation. None of this is trivially achievable. You cannot credibly promise AUBI deployment as foundational infrastructure when the institutional preconditions for that deployment are themselves uncertain."
 
 **Why this is a genuine concern**: Section VII.B (Module 4) explicitly frames AUBI deployment as constitutionally necessary before asking adaptive nodes to take risks. If AUBI pilots are delayed beyond Phase 1—which is plausible—then either the permeation strategy proceeds without its cognitive infrastructure (undermining the architecture) or the permeation track is delayed (undermining the timeline).
 
@@ -1317,6 +1394,40 @@ The permeation strategy introduced in v0.5 (Principle 11: The Permeation Mandate
 
 **Status**: ⚠️ Requires steel manning
 
+### XIV.D.1. v0.6 structural integrity: New threats identified and countered
+
+The v0.6 structural integrity revision identified and addressed six additional threats that previous versions had not confronted:
+
+| Threat | Solution | Status |
+|--------|----------|--------|
+| Cold-Start Circularity | Pre-Genesis Demonstration Phase (Phase -1): municipal pilots prove value before asking anyone to ratify | ✅ New v1.2 |
+| GGF Self-Coercion | Infrastructure Access Model replaces Economic Exclusion Architecture: benefits are naturally unavailable outside shared infrastructure, not withheld as punishment | ✅ New v1.2 |
+| Emergency Power Capture | Structural Dissolution Mechanics: delegated authority, enumerated powers (closed list), Progressive Narrowing Ratchet, no extension mechanism | ✅ New v1.2 |
+| GGF Hierarchy Replication | Accountable Coordination Principle (Principle 12): four testable structural criteria distinguishing GGF hierarchies from extractive ones, with annual audit | ✅ New v1.2 |
+| Day-1 Funding Fantasy | Phased Funding Model: Seed ($5–20M) → Coalition ($200–400M) → Scale ($2B+), each stage funding activities that generate credibility for the next | ✅ New v1.2 |
+| Unrealistic Timeline | 5–7 year phase-gated model grounded in historical precedent, replacing 18–24 month calendar | ✅ New v1.2 |
+
+### XIV.D.2. v0.6 steel manning required
+
+The v0.6 structural integrity revision has not yet been adversarially tested. Recommended focus for Round 3:
+
+**Vulnerability 4: Pre-Genesis Demonstration Phase capture**
+Can the Phase -1 municipal pilots be captured by well-resourced actors who "colonize" the seed municipalities — philanthropic foundations, tech companies, or geopolitical actors who fund the pilots and thereby gain disproportionate influence over the founding process?
+
+**Vulnerability 5: Infrastructure Access Model weakness against indefinite non-participation**
+Does removing coercion give P5 nations enough incentive to engage at all, or does it simply allow indefinite non-participation? Is the "attraction dynamic" strong enough to overcome domestic political resistance in countries where joining GGF would require significant institutional change?
+
+**Vulnerability 6: Staged Sovereign Endowment trust damage**
+Is the staged Sovereign Endowment ($150M first, $350M later) genuinely perceived by Indigenous nations as equivalent to the v0.5 immediate full transfer, or does staging damage trust and signal that GGF will compromise Indigenous commitments when budgets are tight?
+
+**Vulnerability 7: Pre-Genesis Coordination Team institutional inertia**
+Does the Pre-Genesis Coordination Team dissolution mechanism actually work, or does 18–30 months of relationship-building and institutional capital create resistance to dissolution regardless of structural safeguards?
+
+**Vulnerability 8: 5–7 year timeline vs. existential risk**
+Is the realistic 5–7 year timeline too slow for AI risk timelines, climate tipping points, or pandemic engineering threats? Does the structurally contained Track 1 Emergency Response Capacity provide adequate bridging, given its deliberately limited enumerated powers?
+
+**Status**: All five vulnerabilities ⚠️ Require steel manning
+
 ### XIV.E. Antifragile architecture
 
 The protocol doesn't just resist attacks—it uses them as strengthening forces.
@@ -1333,39 +1444,51 @@ The protocol doesn't just resist attacks—it uses them as strengthening forces.
 
 ---
 
-## <a id="section-xv"></a>Section XV: Conclusion - From cathedral to fortress
+## <a id="section-xv"></a>Section XV: Conclusion - From cathedral to living demonstration
 
 ### XV.A. The evolution of the protocol
 
 The Genesis Protocol began with a vision: Humanity consciously choosing to become planetary stewards through legitimate, pluriversal institutional founding. It was, as one critic noted, "a cathedral built in a warzone"—beautiful in aspiration, seemingly doomed by reality.
 
-Through rigorous adversarial testing, the protocol evolved. It became not a naive cathedral hoping for good faith, but a **fortress that welcomes inhabitants**—resilient institutional architecture assuming hostility while creating spaces for genuine cooperation.
+Through rigorous adversarial testing (steel manning rounds 1-2), the protocol evolved into a **fortress that welcomes inhabitants**—resilient institutional architecture assuming hostility while creating spaces for genuine cooperation.
+
+Through the v0.6 structural integrity revision, the protocol evolved further—confronting internal contradictions that the fortress metaphor concealed. A fortress still assumes the world must come to it. A **living demonstration** goes to the world and proves its value before asking for commitment.
 
 **What we no longer assume**:
 
-❌ **Good faith** → ✅ **Assume hostility, build incentives**: The protocol doesn't expect powerful actors to voluntarily surrender advantages. It creates network effects making cooperation more rational than obstruction.
+❌ **Good faith** → ✅ **Assume hostility, build incentives**: The protocol doesn't expect powerful actors to voluntarily surrender advantages. It creates demonstrated value making cooperation more attractive than abstention.
 
-❌ **Time luxury** → ✅ **Dual-track urgency**: The protocol doesn't pretend we have unlimited time for deliberation. It provides immediate crisis capacity while building legitimate institutions in parallel.
+❌ **Time luxury** → ✅ **Structurally contained emergency response + realistic timeline**: The protocol doesn't pretend we have unlimited time for deliberation, but it also doesn't pretend that 18 months is enough. It provides immediate crisis capacity with structural containment while building legitimate institutions across a historically grounded 5–7 year timeline.
 
-❌ **Voluntary participation** → ✅ **Network effects compulsion**: The protocol doesn't hope nations will join from moral conviction. It creates economic architecture where non-participation becomes costly isolation.
+❌ **Voluntary participation** → ✅ ~~**Network effects compulsion**~~ → ✅ **Demonstrated value attraction**: The protocol doesn't hope nations will join from moral conviction. But it also doesn't coerce participation through threatened economic isolation—because condemning coercion while practicing it is a contradiction the protocol cannot survive. Instead, it builds something valuable and invites everyone to join. Those who don't join miss the value. That is a natural consequence, not a sanction.
 
 ❌ **Single authority source** → ✅ **Distributed pluriversal sovereignty**: The protocol doesn't claim monolithic legitimacy. It derives authority from consent across peoples, Indigenous nations, and nation-states—preventing capture through distributed validation.
 
-❌ **Perfect legitimacy from day one** → ✅ **Pragmatic, time-bound transitions**: The protocol doesn't demand impossible justice immediately. It accepts imperfect compromises (like P5 transition periods) while building in accountability mechanisms (like Accelerated Equality Trigger) ensuring transitions are real, not rhetorical.
+❌ **Perfect legitimacy from day one** → ✅ **Pragmatic, phased transitions**: The protocol doesn't demand impossible justice immediately. It accepts imperfect compromises (like P5 transition periods) while building in accountability mechanisms ensuring transitions are real, not rhetorical.
+
+❌ **Day-1 full resources** → ✅ **Phased funding with honest budgets at each stage**: The protocol doesn't pretend $2B materializes on Day 1. It models three funding stages ($5–20M → $200–400M → $2B+), each generating the credibility needed for the next.
+
+❌ **Emergency powers dissolve voluntarily** → ✅ **Structural containment makes dissolution automatic**: The protocol doesn't rely on the unprecedented — voluntary surrender of emergency authority. It makes dissolution architectural through delegated authority, enumerated powers, a progressive narrowing ratchet, and no extension mechanism.
+
+❌ **Coercion is acceptable when we do it** → ✅ **Infrastructure access replaces economic exclusion**: The protocol doesn't condemn economic coercion in one framework and deploy it in another. Benefits are naturally unavailable outside the shared infrastructure — not withheld as punishment.
+
+❌ **Nation-states move first** → ✅ **Municipalities demonstrate first**: The protocol doesn't wait for nation-states to take the first leap. It proves value at the municipal level through Phase -1 pilots, then uses demonstrated results to build the coalition that enables national ratification.
 
 ### XV.B. What the protocol now guarantees
 
 **External resilience**:
-- P5 opt-out leads to economic isolation, not institutional paralysis (Network Effects Protocol)
-- Indigenous sovereignty proven through unconditional $500M endowment, not empty promises (Sovereign Endowment)
-- Crisis response proceeds even during legitimacy-building (Dual-Track Activation)
-- Universal funding through mandatory Peace Tithe, not donor-recipient dependency
+- P5 opt-out does not paralyze the system — Treaty activates without P5 participation; Infrastructure Access Model makes participation attractive through demonstrated results over time
+- Indigenous sovereignty proven through staged but legally binding unconditional endowment ($150M immediately, $350M as senior obligation)
+- Crisis response proceeds during multi-year founding through structurally contained Emergency Response Capacity
+- Universal funding through mandatory Peace Tithe, phased honestly to match participation reality
 
 **Internal resilience**:
 - Infiltration blocked by distributed citizen vetting (Human Firewall Protocol)
 - Delegitimization defeated by plain-language citizen explanations (Deliberative Narrative Protocol)
 - Faith communities respected through explicit scope limitation (Conscience & Sovereignty Clause)
 - Grassroots empowered through permanent movement accountability (Living Mandate Protocol)
+- Emergency power capture prevented by structural containment (Progressive Narrowing Ratchet, no extension mechanism)
+- GGF hierarchy replication prevented by annual Accountable Coordination Audit with four testable criteria
 
 **Procedural legitimacy**:
 - Authority derived from three-source consent act creating Pluriversal Sovereign
@@ -1373,11 +1496,11 @@ Through rigorous adversarial testing, the protocol evolved. It became not a naiv
 - Constitutional immune system detecting threats before they mature
 - Learning loops ensuring evolution based on experience
 
-**Cultural integrity**:
-- Indigenous Sovereign Endowment proves reparation, not just recognition
-- Faith-based adaptation modules honor religious law within commons coordination
-- Cultural Translation Working Group mediates conflicts across worldviews
-- Mediation hierarchy clarifies which cultural logics have primacy in different domains
+**Structural honesty**:
+- Phased funding matched to realistic participation levels
+- 5–7 year timeline grounded in historical precedent for comparable institutional founding
+- Coercion Audit ensuring GGF doesn't reproduce the dynamics it was designed to transcend
+- Honest acknowledgment of remaining open questions and untested vulnerabilities
 
 ### XV.C. The three pillars of legitimacy
 
@@ -1387,93 +1510,89 @@ The protocol rests on three equal pillars. None is sufficient alone; together th
 
 Those who have sustained human-Earth relationships for millennia. Indigenous peoples protecting 80% of biodiversity despite being 5% of global population. Traditional Knowledge proven through 10,000+ years of successful stewardship. Not exotic folklore—sophisticated governance systems maintaining ecological integrity across generations.
 
-The protocol recognizes (not grants) Indigenous authority. Provides $500M unconditional endowment. Implements FPIC 2.0 with actual veto power. Centers Indigenous knowledge in ecological governance. This isn't tokenism—it's acknowledgment that Indigenous wisdom is essential for planetary survival.
+The protocol recognizes (not grants) Indigenous authority. Provides staged but legally binding unconditional endowment. Implements FPIC 2.0 with actual veto power. Centers Indigenous knowledge in ecological governance. This isn't tokenism—it's acknowledgment that Indigenous wisdom is essential for planetary survival.
 
 **2. Democratic Will (Citizens' Assembly)**
 
-The voice of people across all nations, selected by chance to serve the common good. 300 citizens chosen through stratified random sampling—representing humanity's demographic diversity, not political or economic power. Deliberative sortition bypassing both elite capture and populist manipulation.
+The voice of people across all nations, selected by chance to serve the common good. Citizens chosen through stratified random sampling—representing humanity's demographic diversity, not political or economic power. Deliberative sortition bypassing both elite capture and populist manipulation.
 
 The Citizens' Assembly exercises budgetary control over institutions. Operates Human Firewall vetting nominees. Wraps technical decisions in plain-language rationales. Controls participatory budgeting allocating resources to grassroots initiatives. This isn't advisory—it's authoritative democratic voice at global scale.
 
 **3. Intergenerational Equity (Youth Council)**
 
-The authority of those who will inherit consequences of decisions made today. 100 young people (16-30 years old) with 2/3 veto power over decisions affecting 25+ year horizons. Not adults granting youth permission to participate—recognition that those facing 50-80 years of consequences deserve co-determination power.
+The authority of those who will inherit consequences of decisions made today. Young people (16-30 years old) with veto power over decisions affecting 25+ year horizons. Not adults granting youth permission to participate—recognition that those facing 50-80 years of consequences deserve co-determination power.
 
-Youth Council maintains Living Mandate connecting to grassroots movements. Conducts seven-generation impact assessments. Provides intergenerational perspective checking adult short-termism. This isn't participation trophy—it's acknowledgment that democracy requires including those who will live with outcomes longest.
+Youth Council maintains Living Mandate connecting to grassroots movements. Conducts seven-generation impact assessments. Provides intergenerational perspective checking adult short-termism. This isn't a participation trophy—it's acknowledgment that democracy requires including those who will live with outcomes longest.
 
 ### XV.D. The activation sequence
 
 When conditions are met, the protocol activates through clear sequence:
 
-**1. Pluriversal Sovereign grants authority** (Phase 0)
-- Peoples consent via Founding Referendum (60% approval, 100+ nations)
-- Indigenous Nations consent via Letters of Intent (300+ nations)
-- Nation-States consent via Treaty ratification (100+ states)
+**1. Pre-Genesis Demonstration proves value** (Phase -1)
+- 10+ municipal pilots deploy Hearts, Legacy Hardware API, Community Weaver infrastructure
+- Independent academic evaluations published
+- Demonstrated results create the credibility base for everything that follows
+- First domino: municipalities, not nation-states
+
+**2. Pluriversal Sovereign grants authority** (Phase 0)
+- Peoples consent via Founding Referendum (50M+ participants, majority approval)
+- Indigenous Nations consent via Letters of Intent (20+ nations, 4+ continents)
+- Nation-States consent via Treaty ratification (30+ states, P5 not required)
 - Combined consent creates sovereign authority legitimating institutional founding
 
-**2. Peace Tithe capitalizes system** (Phase 0)
+**3. Phased Peace Tithe capitalizes system** (Phase 0)
 - Every ratifying nation contributes 0.1% annual military budget
-- Redirects military spending to governance spending
-- Generates ~$2 billion for Genesis Fund
+- Realistic early-stage budget: $200–400M (scaling to $2B+ as ratification expands)
 - Universal buy-in eliminates donor-recipient dependency
 
-**3. Sovereign Endowment transfers to Indigenous control** (Phase 0)
-- $500 million flows to Earth Council with zero conditions
+**4. Sovereign Endowment transfers to Indigenous control** (Phase 0)
+- $150M flows to Earth Council unconditionally as Stage 2 transfer
+- Remaining $350M legally committed as senior obligation
 - Proves recognition is reparative, not extractive
-- Indigenous communities control resources independently
-- Establishes trust foundation
 
-**4. Dual-Track provides survival + legitimacy** (Months 0-18)
-- Track 1: Emergency crisis response operational in 30 days
-- Track 2: Deliberative institutional founding proceeds 18 months
-- Crisis capacity while building legitimate authority
-- Refuses false choice between urgency and democracy
+**5. Structurally contained emergency response bridges the gap** (Phase 0 onward)
+- Emergency Directors appointed with delegated, enumerated authority
+- Progressive Narrowing Ratchet transfers functions to permanent bodies as they come online
+- No extension mechanism — dissolution is architectural, not discretionary
 
-**5. Network Effects make non-participation economically catastrophic** (Ongoing)
-- Preferential trade for ratifying nations
-- Technology transfer prioritized to participants
-- Climate finance flows to cooperators
-- Digital governance standards set by Genesis institutions
-- Isolation, not just disapproval, for abstaining
+**6. Infrastructure Access makes participation attractive** (Ongoing)
+- Observer → Pilot Partner → Treaty Partner integration pathway
+- P5 cities can engage independently of national governments
+- Demonstrated results from Treaty Partners create domestic pressure in non-participating nations
+- Patience, not coercion — the system proves its value and lets attraction compound
 
-**6. Human Firewall blocks infiltration** (Phase 1 onward)
+**7. Human Firewall blocks infiltration** (Phase 1 onward)
 - Citizens' Assembly vets all nominees through deliberative process
 - Distributed vetting prevents single-point capture
-- Public scrutiny catches compromised candidates
 - Democratic pillar defends merit from elite capture
 
-**7. Living Mandate tethers institutions to grassroots permanently** (Phase 1 onward)
+**8. Living Mandate tethers institutions to grassroots permanently** (Phase 1 onward)
 - Youth Council delegates maintain movement ties
 - Quarterly community accountability assemblies
 - Movement recall power for broken mandates
 - Resources flow to movements, not just from them
-- Prevents institutional capture through ongoing grassroots accountability
+
+**9. Accountable Coordination Audit ensures GGF doesn't become what it replaced** (Annual)
+- Four-criteria structural test applied to every GGF body
+- Coercion Audit verifies engagement pathways remain genuinely voluntary
+- Constitutional Health Monitors publish findings regardless of results
+- Mandatory review triggered by any failure
 
 ### XV.E. This is the genesis
 
-Not a utopian dream assuming humanity's better angels will prevail. Not a technocratic blueprint imposing expert solutions on passive recipients. Not a power grab by hidden elites claiming democratic aesthetics.
+Not a utopian dream assuming humanity's better angels will prevail. Not a technocratic blueprint imposing expert solutions on passive recipients. Not a power grab by hidden elites claiming democratic aesthetics. Not a fortress demanding entry on its own terms.
 
-**This is a battle-tested protocol for legitimate planetary governance in a hostile environment.**
+**This is a living demonstration that grows into legitimate planetary governance by proving that it works.**
 
-It assumes powerful actors will resist, delay, attempt capture. It builds incentives making cooperation more rational than obstruction. It distributes authority preventing single-point dominance. It maintains transparency making capture more difficult and costly. It creates accountability mechanisms detecting threats before they mature.
+It begins with ten municipalities deploying Hearts pilots. It scales through demonstrated results to thirty nations ratifying a treaty. It builds legitimate institutions through pluriversal consent. It manages existential risks through structurally contained emergency response. It attracts the world's participation not through economic threats but through observable, measurable outcomes that non-participants' own citizens demand access to.
 
-It recognizes profound cultural diversity without fragmenting into relativism. It balances representation and expertise without choosing technocracy or populism. It addresses urgent crises without abandoning deliberative legitimacy. It accepts imperfect compromises while building in accountability ensuring compromises don't become permanent injustice.
+It is honest about what it doesn't know. It flags its own untested vulnerabilities. It builds in annual audits that test whether it has become what it was designed to replace. It accepts that attraction is slower than coercion, that 5-7 years is longer than 18 months, that $200M is less than $2B — and it chooses honesty over false confidence at every turn.
 
-**The protocol provides legitimate founding process for institutions the planet desperately needs.**
+**The protocol's ultimate test is not whether it sounds good. It is whether it works.**
 
-Reformed global governance coordinating climate response before tipping points pass. Indigenous sovereignty recognized with resources to implement bioregional stewardship. Democratic voice at planetary scale bypassing elite capture. Youth authority ensuring decisions serve those who will inherit consequences. Cultural pluralism enabling coordination across radical difference. Accountability preventing the very institutions meant to serve humanity from becoming new forms of oppression.
+And the only way to find out is to start.
 
-**This is not endpoint—it is beginning.**
-
-Once institutions are legitimately founded, the hard work of governance begins. The protocol provides legitimate authority; institutions must earn continued trust through performance. Founding is necessary but insufficient—what matters is what institutions do with the authority they're granted.
-
-**What follows is up to humanity.**
-
-Will we seize this moment to consciously choose planetary stewardship? Will we build governance systems serving ecological integrity and intergenerational equity? Will we navigate profound diversity with dignity rather than domination?
-
-Or will we allow this moment to pass, continuing with governance systems inherited from centuries past, hoping they somehow become adequate for challenges they were never designed to address?
-
-The tools exist. The vision is clear. The process is legitimate. **The choice is ours.**
+**What follows is up to humanity — but now they can see it working before they're asked to believe in it.**
 
 ---
 
@@ -1549,51 +1668,64 @@ Whether these tools prove adequate is up to them—and us. The protocol provides
 
 ### XVI.F. Final words
 
-The Genesis Protocol is now complete. Six modules, 16 major sections, 60,000+ words documenting legitimate processes for institutional founding. It has been tested adversarially, refined through consultation, hardened against capture.
+The Genesis Protocol is now complete in its v1.2 structural integrity revision. Six modules, 16 major sections documenting legitimate processes for institutional founding. It has been tested adversarially, refined through consultation, hardened against capture, and revised to confront its own internal contradictions.
 
-**It is ready.**
+**It is ready** — not in the sense that it is perfect, but in the sense that its imperfections are identified, flagged, and structured for correction through implementation.
 
-Ready for nation-states to consider ratification. Ready for Indigenous nations to decide on participation. Ready for citizens to vote in Founding Referendum. Ready for practitioners to implement. Ready for civil society to monitor. Ready for reality to test its assumptions and reveal its limitations.
+Ready for seed municipalities to pilot. Ready for Indigenous nations to assess. Ready for citizens to evaluate through demonstrated results. Ready for practitioners to implement. Ready for civil society to monitor. Ready for reality to test its assumptions and reveal its limitations.
 
 **This is the genesis—the legitimate founding process for Treaty for Our Only Home.**
 
 The Treaty provides institutional architecture. The Indigenous Framework provides ethical foundation. The Meta-Governance Framework provides coordination system. The Genesis Protocol provides legitimate activation sequence bringing all three to life simultaneously.
 
-**The planetary birth ritual awaits.**
+**The first step is not a treaty ratification. It is ten municipalities deploying Hearts pilots.**
 
-Humanity standing at threshold of conscious choice: Continue with governance systems inherited from past, or step forward into governance consciously designed for planetary stewardship.
+The planetary birth ritual awaits — but it begins at the municipal level, with Community Weavers and Hearts wallets and Legacy Hardware API templates, not with grand ceremonies. The ceremonies come when the demonstrated value justifies the ceremony.
 
-**The choice is ours. The moment is now. The tools are ready.**
-
-**Let the genesis begin.**
+**Let the demonstration begin.**
 
 ---
 
 ## Appendix: Document statistics & acknowledgments
 
 **Module 6 statistics**:
-- ~14,000 words
+- ~14,500 words
 - 6 major sections (XI-XVI)
-- 25 subsections
 - Completes Genesis Protocol full draft
 
-**Complete Genesis Protocol statistics**:
-- **Total word count**: ~85,000 words across 6 modules
-- **Structure**: 16 major sections, ~120 subsections
-- **Development timeline**: 3 rounds expert consultation + 2 rounds adversarial steel manning
+**Complete Genesis Protocol statistics (v1.2)**:
+- **Total word count**: ~90,000 words across 6 modules
+- **Structure**: 16 major sections + Phase -1 addition
+- **Development timeline**: 3 rounds expert consultation + 2 rounds adversarial steel manning + 1 structural integrity revision
 - **Contributors**: Claude (Anthropic), Grok (xAI), Gemini (Google), DeepSeek, ChatGPT (OpenAI)
 
 **Core innovations**:
 - Pluriversal Sovereign (three-source authority)
-- Dual-Track Activation (urgency + legitimacy)
+- Pre-Genesis Demonstration Phase (municipal pilots before treaty ratification)
+- Dual-Track Activation with Structural Containment (delegated authority, enumerated powers, Progressive Narrowing Ratchet, no extension mechanism)
+- Phased Funding Model (Seed → Coalition → Scale with honest budgets)
 - Peace Tithe (mandatory universal funding)
-- Indigenous Sovereign Endowment ($500M unconditional)
+- Indigenous Sovereign Endowment (staged but legally binding, unconditional)
+- Infrastructure Access Model (attraction through demonstrated value, not coercion through economic exclusion)
+- Accountable Coordination Principle (four testable criteria distinguishing GGF hierarchies from extractive ones)
 - Human Firewall Protocol (citizen vetting)
 - Living Mandate Protocol (grassroots tethering)
 - Conscience & Sovereignty Clause (scope limitation)
-- Network Effects Protocol (economic coordination incentives)
 - Constitutional Health Monitors (independent oversight)
 - Deliberative Narrative Protocol (citizen-wrapped complexity)
+- Coercion Audit (annual verification that engagement pathways remain genuinely voluntary)
+- 5–7 Year Phase-Gated Timeline (historically grounded, gate conditions not calendar deadlines)
+
+**v1.2 Structural Integrity Revision changelog**:
+- Added Phase -1 (Pre-Genesis Demonstration) resolving cold-start circularity
+- Added Principle 12 (Accountable Coordination vs. Extractive Hierarchy)
+- Replaced Economic Exclusion Architecture with Infrastructure Access Model
+- Replaced voluntary emergency power sunset with structural containment mechanics
+- Replaced $2B Day-1 funding target with three-stage phased model
+- Replaced 18–24 month calendar with 5–7 year phase-gated timeline
+- Added Accountable Coordination Audit and Coercion Audit to monitoring
+- Updated all Phase 0 thresholds to realistic levels (30+ nations, 20+ Indigenous Letters, $200–400M Stage 2)
+- Identified 5 new untested vulnerabilities for Round 3 steel manning
 
 **Acknowledgments**:
 
@@ -1615,10 +1747,10 @@ This protocol represents synthesis across AI systems, each contributing distinct
 
 ---
 
-**END GENESIS PROTOCOL v1.0**
+**END GENESIS PROTOCOL v1.2**
 
 **Module 6 of 6: COMPLETE**
 
 ---
 
-*The genesis awaits humanity's decision.*
+*The demonstration awaits humanity's first municipal pilot.*
