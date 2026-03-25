@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: A4; margin: 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; width: 210mm; min-height: 297mm; padding: 12mm 15mm; color: #1f2937; background: white; }
+  .header { text-align: center; margin-bottom: 5mm; }
+  .header h1 { font-size: 15pt; color: #14532d; font-weight: 700; margin-bottom: 2mm; }
+  .header .sub { font-size: 9pt; color: #1e3a5f; }
+  .divider { height: 1.5px; background: linear-gradient(to right, #14532d, #a16207, #14532d); margin: 4mm 0; }
+  .columns { display: flex; gap: 5mm; margin-bottom: 4mm; }
+  .col { flex: 1; }
+  .col-header { text-align: center; padding: 3mm 2mm; margin-bottom: 2.5mm; font-size: 9.5pt; font-weight: 700; border-radius: 3px; }
+  .col-left .col-header { background: #fef2f2; color: #991b1b; }
+  .col-right .col-header { background: #f0fdf4; color: #14532d; }
+  .flow-box { border: 1px solid #e5e7eb; border-radius: 4px; padding: 2.5mm; margin-bottom: 2mm; font-size: 7pt; line-height: 1.35; }
+  .flow-box .label { font-weight: 700; font-size: 7.5pt; margin-bottom: 0.5mm; }
+  .col-left .flow-box { border-left: 3px solid #f87171; }
+  .col-right .flow-box { border-left: 3px solid #4ade80; }
+  .arrow { text-align: center; font-size: 11pt; color: #9ca3af; margin: 0.5mm 0; }
+  .problem-tag { display: inline-block; background: #fef2f2; color: #dc2626; font-size: 6pt; padding: 0.3mm 1.5mm; border-radius: 2px; font-weight: 600; margin-top: 0.5mm; }
+  .solution-tag { display: inline-block; background: #f0fdf4; color: #16a34a; font-size: 6pt; padding: 0.3mm 1.5mm; border-radius: 2px; font-weight: 600; margin-top: 0.5mm; }
+  .middle-section { margin: 4mm 0; }
+  .middle-header { text-align: center; background: #14532d; color: white; padding: 2.5mm; font-size: 10pt; font-weight: 700; border-radius: 3px; margin-bottom: 3mm; }
+  .layer-row { display: flex; gap: 3mm; margin-bottom: 2.5mm; }
+  .layer-box { flex: 1; border-radius: 4px; padding: 2.5mm; font-size: 7pt; line-height: 1.3; }
+  .layer-label { font-weight: 700; font-size: 7.5pt; margin-bottom: 1mm; text-align: center; }
+  .sensor { background: #fefce8; border: 1.5px solid #facc15; } .sensor .layer-label { color: #a16207; }
+  .diagnostic { background: #f0fdf4; border: 1.5px solid #86efac; } .diagnostic .layer-label { color: #14532d; }
+  .integration { background: #eff6ff; border: 1.5px solid #93c5fd; } .integration .layer-label { color: #1e40af; }
+  .data-box { background: #f9fafb; border: 1.5px solid #d1d5db; }
+  .data-box .layer-label { color: #4b5563; }
+  .bottom-row { display: flex; gap: 3mm; margin-top: 3mm; }
+  .stat-box { flex: 1; text-align: center; padding: 2.5mm; border: 1px solid #e5e7eb; border-radius: 4px; background: #f9fafb; }
+  .stat-box .num { font-size: 12pt; font-weight: 700; color: #14532d; }
+  .stat-box .desc { font-size: 6.5pt; color: #4b5563; margin-top: 0.5mm; }
+  .footer { margin-top: 3mm; padding-top: 2mm; border-top: 1px solid #e5e7eb; font-size: 6.5pt; color: #9ca3af; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Federalism Diagnostics — Architecture Map</h1>
+  <div class="sub">How governance routing makes SUS deliver on the constitutional promise of decentralization</div>
+</div>
+<div class="divider"></div>
+
+<div class="columns">
+  <div class="col col-left">
+    <div class="col-header">Current: Formula-Based Allocation</div>
+    <div class="flow-box">
+      <div class="label">1. Health Need Emerges</div>
+      Dengue outbreak in Maranhão. Specialist shortage in Pará. Eldercare crisis in ageing Sudeste municipality.
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">2. Federal Allocation Formula</div>
+      Resources distributed through standardized per-capita or FHS-team-based transfers. Same formula for 5,570 municipalities.
+      <div class="problem-tag">&#x26A0; Cannot see: informality rate, informal care capacity, local governance quality</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">3. Uniform Delivery</div>
+      Municipality in Maranhão (57% informality, deep informal care networks) receives same framework as Santa Catarina (25% informality, private alternatives).
+      <div class="problem-tag">&#x26A0; The Averaging Problem: federal policy blind to local variation</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">4. Persistent Disparity</div>
+      Nordeste poverty 2.5× national average. Black/pardo maternal mortality 2× white rate. Specialist queues months long. Informal care invisible. Constitutional promise unmet.
+    </div>
+  </div>
+  
+  <div class="col col-right">
+    <div class="col-header">With GSI: Evidence-Based Routing</div>
+    <div class="flow-box">
+      <div class="label">1. Health Need Emerges</div>
+      Same need. But Civic Value Registry data reveals informal care capacity. DATASUS provides real-time epidemiological signals.
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">2. GSI Diagnoses</div>
+      16 indicators across 4 dimensions. BR-CAF complexity adjustment. High informality + deep informal networks → <b>municipal adaptation</b>. Specialist bottleneck → <b>health region coordination</b>. Indigenous population → <b>SESAI/DSEI</b>.
+      <div class="solution-tag">&#x2713; Routing matched to where knowledge actually exists</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">3. Precision Delivery</div>
+      Maranhão: ACS + informal care recognition infrastructure. Santa Catarina: standard federal FHS with private sector coordination. Each gets what it needs.
+      <div class="solution-tag">&#x2713; Subsidiarity Drag published: cost of mismatch now visible</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">4. Measurable Equity</div>
+      Allocation-need gap quantified. Racial health inequities measurable. Federal government gains targeting metrics and reduced STF litigation burden.
+      <div class="solution-tag">&#x2713; SUS delivers on Article 198</div>
+    </div>
+  </div>
+</div>
+
+<div class="middle-section">
+  <div class="middle-header">Protocol Architecture: Three Layers on Brazilian Data Infrastructure</div>
+  <div class="layer-row">
+    <div class="layer-box sensor">
+      <div class="layer-label">Layer 1: Sensor</div>
+      <div style="font-weight:600;">Civic Value Registry</div>
+      Voluntary. LGPD-compliant.<br>
+      e-SUS AB module. ACS workload funded.<br>
+      Makes informal care visible to SUS.
+    </div>
+    <div class="layer-box diagnostic">
+      <div class="layer-label">Layer 2: Diagnostic</div>
+      <div style="font-weight:600;">GSI + OGT Matrix</div>
+      4 dimensions. 16 indicators. BR-CAF.<br>
+      Routes to União/Estado/Região de Saúde/Município.<br>
+      Subsidiarity Drag published.
+    </div>
+    <div class="layer-box integration">
+      <div class="layer-label">Layer 3: Integration</div>
+      <div style="font-weight:600;">SUS Allocation Bridge</div>
+      Connects to SUS transfers, PMAQ,<br>
+      CIB coordination, CONASEMS.<br>
+      Evidence-based adjustment.
+    </div>
+  </div>
+  <div style="text-align: center; font-size: 7pt; color: #6b7280; margin: 1mm 0;">&#x2191; Federalism Diagnostics (new) &#x2191;</div>
+  <div class="layer-row">
+    <div class="layer-box data-box"><div class="layer-label">IBGE / PNAD</div>Demographics, informality, income</div>
+    <div class="layer-box data-box"><div class="layer-label">DATASUS</div>Health informatics, epidemiology</div>
+    <div class="layer-box data-box"><div class="layer-label">SIOPS</div>Health budgets, fiscal data</div>
+    <div class="layer-box data-box"><div class="layer-label">PMAQ</div>Quality indicators</div>
+    <div class="layer-box data-box"><div class="layer-label">CadÚnico</div>Social registry</div>
+  </div>
+  <div style="text-align: center; font-size: 7pt; color: #6b7280; margin-top: 1mm;">&#x2193; Brazilian Data Infrastructure (existing foundation) &#x2193;</div>
+</div>
+
+<div class="bottom-row">
+  <div class="stat-box">
+    <div class="num">5,570</div>
+    <div class="desc">Municipalities to serve</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">57% vs 25%</div>
+    <div class="desc">Informality: Maranhão vs Santa Catarina</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">R$13-25M</div>
+    <div class="desc">Phase 1 cost (existing research funds)</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">16</div>
+    <div class="desc">GSI indicators (IBGE/DATASUS sourced)</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">Art. 198</div>
+    <div class="desc">Constitutional basis</div>
+  </div>
+</div>
+
+<div class="footer">
+  Federalism Diagnostics v0.4 | bjornkennethholmstrom@gmail.com | Phase 1: SUS Health Delivery | CEBRAP + Fiocruz + IBGE
+</div>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: A4; margin: 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 210mm; 
+    min-height: 297mm;
+    padding: 12mm 15mm;
+    color: #2d3748;
+    background: white;
+  }
+  .header { text-align: center; margin-bottom: 6mm; }
+  .header h1 { font-size: 16pt; color: #1a365d; font-weight: 700; margin-bottom: 2mm; }
+  .header .sub { font-size: 9pt; color: #2b6cb0; }
+  .divider { height: 1px; background: #2b6cb0; margin: 4mm 0; }
+  .columns { display: flex; gap: 6mm; margin-bottom: 4mm; }
+  .col { flex: 1; }
+  .col-header { 
+    text-align: center; padding: 3mm 2mm; margin-bottom: 3mm;
+    font-size: 10pt; font-weight: 700; border-radius: 3px;
+  }
+  .col-left .col-header { background: #fed7d7; color: #9b2c2c; }
+  .col-right .col-header { background: #c6f6d5; color: #276749; }
+  
+  .flow-box {
+    border: 1px solid #e2e8f0; border-radius: 4px;
+    padding: 3mm; margin-bottom: 2.5mm; font-size: 7.5pt; line-height: 1.4;
+    position: relative;
+  }
+  .flow-box .label { font-weight: 700; font-size: 7.5pt; margin-bottom: 1mm; }
+  .col-left .flow-box { border-left: 3px solid #fc8181; }
+  .col-right .flow-box { border-left: 3px solid #68d391; }
+  
+  .arrow { text-align: center; font-size: 12pt; color: #a0aec0; margin: 1mm 0; }
+  .problem-tag { 
+    display: inline-block; background: #fff5f5; color: #c53030; 
+    font-size: 6.5pt; padding: 0.5mm 2mm; border-radius: 2px; font-weight: 600;
+    margin-top: 1mm;
+  }
+  .solution-tag { 
+    display: inline-block; background: #f0fff4; color: #276749; 
+    font-size: 6.5pt; padding: 0.5mm 2mm; border-radius: 2px; font-weight: 600;
+    margin-top: 1mm;
+  }
+  
+  .middle-section { margin: 4mm 0; }
+  .middle-header { 
+    text-align: center; background: #1a365d; color: white;
+    padding: 2.5mm; font-size: 10pt; font-weight: 700; border-radius: 3px;
+    margin-bottom: 3mm;
+  }
+  .layer-row { display: flex; gap: 4mm; margin-bottom: 3mm; }
+  .layer-box {
+    flex: 1; border-radius: 4px; padding: 3mm; font-size: 7.5pt; line-height: 1.35;
+    text-align: center;
+  }
+  .layer-1 { background: #ebf8ff; border: 1.5px solid #63b3ed; }
+  .layer-2 { background: #faf5ff; border: 1.5px solid #b794f4; }
+  .layer-3 { background: #fffff0; border: 1.5px solid #ecc94b; }
+  .layer-num { font-weight: 700; font-size: 8pt; margin-bottom: 1mm; }
+  .layer-1 .layer-num { color: #2b6cb0; }
+  .layer-2 .layer-num { color: #6b46c1; }
+  .layer-3 .layer-num { color: #975a16; }
+  .layer-name { font-weight: 600; margin-bottom: 1mm; }
+  
+  .bottom-row { display: flex; gap: 4mm; margin-top: 3mm; }
+  .stat-box {
+    flex: 1; text-align: center; padding: 3mm;
+    border: 1px solid #e2e8f0; border-radius: 4px; background: #f7fafc;
+  }
+  .stat-box .num { font-size: 14pt; font-weight: 700; color: #1a365d; }
+  .stat-box .desc { font-size: 7pt; color: #4a5568; margin-top: 1mm; }
+
+  .footer { 
+    margin-top: 4mm; padding-top: 2mm; border-top: 1px solid #e2e8f0;
+    font-size: 7pt; color: #a0aec0; text-align: center; 
+  }
+  .connector { text-align: center; font-size: 8pt; color: #a0aec0; margin: 1mm 0; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>European Subsidiarity Protocol — Architecture Map</h1>
+  <div class="sub">How precision subsidiarity resolves the EU's governance latency crisis</div>
+</div>
+<div class="divider"></div>
+
+<!-- Two-column comparison -->
+<div class="columns">
+  <div class="col col-left">
+    <div class="col-header">Current: Political Routing</div>
+    
+    <div class="flow-box">
+      <div class="label">1. Policy Problem Emerges</div>
+      e.g. Aging population, care deficit across 27 member states
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">2. Centralized Response</div>
+      Commission drafts uniform directive. One-size-fits-all framework.
+      <div class="problem-tag">&#x26A0; Averaging Problem: ignores local variation</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">3. Political Negotiation</div>
+      Council &amp; Parliament debate governance tier. No empirical basis.
+      <div class="problem-tag">&#x26A0; Subsidiarity = political argument, not measurement</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">4. Uniform Implementation</div>
+      Same policy applied to regions with fundamentally different needs.
+      <div class="problem-tag">&#x26A0; Hidden cost: Subsidiarity Drag (unmeasured)</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">5. Outcome</div>
+      Uneven results. Political backlash. Budget strain. Informal care capacity invisible and unactivated.
+    </div>
+  </div>
+  
+  <div class="col col-right">
+    <div class="col-header">With Protocol: Evidence-Based Routing</div>
+    
+    <div class="flow-box">
+      <div class="label">1. Policy Problem Emerges</div>
+      Same problem. But now the Civic Value Registry is providing local data.
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">2. GSI Diagnostic</div>
+      16 indicators across 4 dimensions. Complexity-adjusted (EU-CAF). Data Confidence Tiers (Bronze/Silver/Gold).
+      <div class="solution-tag">&#x2713; Empirical measurement replaces political guesswork</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">3. OGT Routing Recommendation</div>
+      "Devolve care to NUTS-3" (high local capacity) or "Retain at EU level" (high coordination need). NUTS-mapped.
+      <div class="solution-tag">&#x2713; Comply-or-explain: deviations published with cost</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">4. Precision Implementation</div>
+      Different regions get different governance tiers. Formal care where needed, recognition infrastructure where capacity exists.
+      <div class="solution-tag">&#x2713; Subsidiarity Drag measured and published</div>
+    </div>
+    <div class="arrow">&#x2193;</div>
+    <div class="flow-box">
+      <div class="label">5. Outcome</div>
+      Targeted results. National fiscal relief. Informal care activated. Yellow card gains empirical evidence.
+    </div>
+  </div>
+</div>
+
+<!-- Protocol Architecture -->
+<div class="middle-section">
+  <div class="middle-header">Protocol Architecture: Three Layers</div>
+  <div class="layer-row">
+    <div class="layer-box layer-1">
+      <div class="layer-num">Layer 1: Sensor</div>
+      <div class="layer-name">European Civic Value Registry</div>
+      Voluntary. GDPR-compliant. ZKP-protected.<br>
+      Makes informal care visible without centralizing data.
+    </div>
+    <div class="layer-box layer-2">
+      <div class="layer-num">Layer 2: Diagnostic</div>
+      <div class="layer-name">GSI + OGT Matrix</div>
+      4 dimensions. 16 indicators. EU-CAF adjusted.<br>
+      Produces NUTS-level routing recommendations.
+    </div>
+    <div class="layer-box layer-3">
+      <div class="layer-num">Layer 3: Actuation</div>
+      <div class="layer-name">CSC + Resilience Dividend</div>
+      Not legal tender. Closed-loop. ECB observer.<br>
+      Pre-registered evaluation. Algorithmic expansion.
+    </div>
+  </div>
+</div>
+
+<!-- Key numbers -->
+<div class="bottom-row">
+  <div class="stat-box">
+    <div class="num">0</div>
+    <div class="desc">Treaty changes required</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">9+</div>
+    <div class="desc">Member states for Enhanced Cooperation</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">&euro;20-35M</div>
+    <div class="desc">Phase 1 cost (existing programme funds)</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">16</div>
+    <div class="desc">GSI indicators (peer-review ready)</div>
+  </div>
+  <div class="stat-box">
+    <div class="num">Year 1</div>
+    <div class="desc">Parallel Diagnostic (zero policy risk)</div>
+  </div>
+</div>
+
+<div class="footer">
+  European Subsidiarity Protocol v1.2 | bjornkennethholmstrom@gmail.com | Technical Annexes A (GSI v5) &amp; B (Actuation Layer) available
+</div>
+
+</body>
+</html>
