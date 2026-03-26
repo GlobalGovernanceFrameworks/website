@@ -68,7 +68,7 @@ export const tierMetadata = {
     name: 'Constitutional Layer',
     titleKey: 'framework.tier.0.title',
     descriptionKey: 'framework.tier.0.description',
-    emoji: '⚖️',
+    emoji: '🏛️',
     description: 'The absolute, non-negotiable prerequisite. The new global "constitution" that makes everything else legally and institutionally possible.',
     color: '#1e1b4b', // Deep indigo
     priority: 'Critical',
@@ -78,7 +78,7 @@ export const tierMetadata = {
     name: 'Core Operating Systems',
     titleKey: 'framework.tier.1.title',
     descriptionKey: 'framework.tier.1.description',
-    emoji: '🌍',
+    emoji: '⚙️',
     description: 'Foundational frameworks that define the GGF\'s core governance, economic, ethical, and justice systems.',
     color: '#7c3aed', // Purple
     priority: 'Critical',
@@ -88,7 +88,7 @@ export const tierMetadata = {
     name: 'Foundational Application Layer',
     titleKey: 'framework.tier.2.title',
     descriptionKey: 'framework.tier.2.description',
-    emoji: '🌱',
+    emoji: '🧩',
     description: 'Essential frameworks for managing core societal and ecological systems.',
     color: '#059669', // Green
     priority: 'High',
