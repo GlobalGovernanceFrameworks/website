@@ -68,7 +68,7 @@ export const tierMetadata = {
     name: 'Constitutional Layer',
     titleKey: 'framework.tier.0.title',
     descriptionKey: 'framework.tier.0.description',
-    emoji: 'âš–ï¸',
+    emoji: '⚖️',
     description: 'The absolute, non-negotiable prerequisite. The new global "constitution" that makes everything else legally and institutionally possible.',
     color: '#1e1b4b', // Deep indigo
     priority: 'Critical',
@@ -78,7 +78,7 @@ export const tierMetadata = {
     name: 'Core Operating Systems',
     titleKey: 'framework.tier.1.title',
     descriptionKey: 'framework.tier.1.description',
-    emoji: 'ðŸŒ',
+    emoji: '🌍',
     description: 'Foundational frameworks that define the GGF\'s core governance, economic, ethical, and justice systems.',
     color: '#7c3aed', // Purple
     priority: 'Critical',
@@ -88,7 +88,7 @@ export const tierMetadata = {
     name: 'Foundational Application Layer',
     titleKey: 'framework.tier.2.title',
     descriptionKey: 'framework.tier.2.description',
-    emoji: 'ðŸŒ±',
+    emoji: '🌱',
     description: 'Essential frameworks for managing core societal and ecological systems.',
     color: '#059669', // Green
     priority: 'High',
@@ -98,7 +98,7 @@ export const tierMetadata = {
     name: 'Equity & Cultural Flourishing Layer',
     titleKey: 'framework.tier.3.title',
     descriptionKey: 'framework.tier.3.description',
-    emoji: 'ðŸ¤',
+    emoji: '🤝',
     description: 'Frameworks ensuring deep equity, inclusion, and cultural preservation.',
     color: '#dc2626', // Red
     priority: 'Medium',
@@ -108,7 +108,7 @@ export const tierMetadata = {
     name: 'Visionary & Meta-Governance Layer',
     titleKey: 'framework.tier.4.title',
     descriptionKey: 'framework.tier.4.description',
-    emoji: 'ðŸ”®',
+    emoji: '🔮',
     description: 'Highest level frameworks governing the entire system and addressing future risks.',
     color: '#0891b2', // Cyan
     priority: 'Medium',
@@ -121,27 +121,27 @@ export const groupMetadata = {
   planetaryHealthResilience: {
     titleKey: 'framework.groups.planetaryHealthResilience.title',
     descriptionKey: 'framework.groups.planetaryHealthResilience.description',
-    emoji: 'ðŸŒ±'
+    emoji: '🌱'
   },
   socialFabricJustice: {
     titleKey: 'framework.groups.socialFabricJustice.title',
     descriptionKey: 'framework.groups.socialFabricJustice.description',
-    emoji: 'âš–ï¸'
+    emoji: '⚖️'
   },
   globalEconomicSystems: {
     titleKey: 'framework.groups.globalEconomicSystems.title',
     descriptionKey: 'framework.groups.globalEconomicSystems.description',
-    emoji: 'ðŸ’±'
+    emoji: '💱'
   },
   ecologicalSystems: {
     titleKey: 'framework.groups.ecologicalSystems.title',
     descriptionKey: 'framework.groups.ecologicalSystems.description',
-    emoji: 'ðŸŒ¿'
+    emoji: '🌿'
   },
   humanSocialSystems: {
     titleKey: 'framework.groups.humanSocialSystems.title',
     descriptionKey: 'framework.groups.humanSocialSystems.description',
-    emoji: 'ðŸŽ“'
+    emoji: '🎓'
   }
 };
 
