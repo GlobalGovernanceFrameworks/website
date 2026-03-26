@@ -75,7 +75,7 @@ Ambassador Chen's island nation demonstrates provider recruitment by developing 
 
 **Entry criterion**: Stage 2 exit criteria met.
 
-**Exit criterion**: Minimum 5 distinct provider categories represented; average Hearts velocity ≥1 exchange per 30 days over a 90-day window; 30-day fraud rate <2% of transactions by value; Community Weaver assigned and trained.
+**Exit criterion**: Minimum 5 distinct provider categories represented; average Hearts velocity ≥1 exchange per 30 days over a 90-day window; 30-day fraud rate `<`2% of transactions by value; Community Weaver assigned and trained.
 
 ### Step 4: Governance Formalization
 
@@ -91,7 +91,7 @@ Maya's community demonstrates governance formalization when traditional authorit
 
 **Entry criterion**: Stage 3 exit criteria met.
 
-**Formalization criteria** (all must be satisfied): ≥500 distinct AUBI-enrolled participants active in the Hearts economy; reserve ratio maintained ≥30% for 6 consecutive months; fraud rate <1% by transaction value over the preceding 90 days; at least one successful LMCI-A reporting cycle completed; explicit outreach conducted to marginalized populations within the bioregion, with enrollment metrics reported.
+**Formalization criteria** (all must be satisfied): ≥500 distinct AUBI-enrolled participants active in the Hearts economy; reserve ratio maintained ≥30% for 6 consecutive months; fraud rate `<`1% by transaction value over the preceding 90 days; at least one successful LMCI-A reporting cycle completed; explicit outreach conducted to marginalized populations within the bioregion, with enrollment metrics reported.
 
 **Phase 2 graduation criteria** (when BAZ may apply for cryptographic decentralization): ≥2,000 active participants; network has operated continuously for ≥12 months post-formalization; reserve ratio maintained ≥30% throughout; Phase 1 transaction data validated as forward-compatible with Phase 2 schemas (per Financial Systems Framework Fractal Seed specification).
 
