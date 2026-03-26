@@ -1,0 +1,503 @@
+# The Bioregional Polis: An Indigenous-Guided Urban Framework
+
+**Version 3.0 | A Municipal Transition Operating System for Regenerative Cities**  
+*Collaborative Development by Human-AI Team | 2026*
+
+---
+
+### Tier: 2 (Urban & Community Development)
+### Status: Revision 3.0 - Operational Framework with Transitional Pathways
+### Responsible: Björn Kenneth Holmström (with enhancements guided by Gemini's municipal realism and DeepSeek's operational architecture)
+
+### Related Documents:
+- **Treaty for Our Only Home** # Planetary Governance
+- **Financial Systems Framework** # Economic Incentives (Hearts/Leaves)
+- **Aurora Accord** # Ethical Technology Governance
+- **Indigenous & Traditional Knowledge Governance Framework**
+- **Meta-Governance Framework**
+- **Foundation Protocol** # Universal Access & Disability Justice
+- **Kinship Protocol** # Gender & Intersectional Justice
+- **Work in Liberation Framework** # Community Work Teams
+- **Living Land Protocol** # Rural Governance (urban-rural interface)
+
+---
+
+## Preamble: Cities as Living Covenants
+
+Cities are reimagined as living covenants uniting human and non-human communities, rooted in Indigenous stewardship of traditional territories. Guided by the **Indigenous & Traditional Knowledge Governance Framework**, this framework provides a **municipal transition operating system**—a step-by-step playbook for transforming existing cities from growth machines into regenerative, equitable, and resilient urban ecosystems within Indigenous-led Bioregional Autonomous Zones (BAZs).
+
+**Vision:** *By 2050, cities thrive as regenerative hubs within Indigenous-led BAZs, guided by the Earth Council's moral authority, empowered by the Treaty, sustained by locally-calibrated Hearts and Leaves, and supported by ethical technology under the Aurora Accord, fostering participatory, bioregional democracy.*
+
+**Promise to City Planners:** This is not a vision board. It is a phased, operational playbook that tells you exactly how to transition power, decommodify land, fund regeneration, and protect vulnerable communities—starting tomorrow.
+
+---
+
+## Core Principles
+
+1. **Indigenous Sovereignty:** Co-governance via FPIC 2.0, Red Lines Clause, and Indigenous Data Sovereignty. Indigenous consent is not advisory; it is binding.
+
+2. **Phased Transition:** Power shifts from municipal government to Citizen Assembly through defined phases with clear triggers, protecting workers and preventing disruption.
+
+3. **Land as Commons:** Urban land transitions from private commodity to community commons through Community Land Trusts, Right of First Refusal, and anti-speculation mechanisms.
+
+4. **Regenerative Zoning:** Development rights are conditional on public benefit—Community Land Trust dedication, public commons, affordable housing, and biophilic infrastructure.
+
+5. **Equity & Justice:** Universal basic services, gender/queer spatial justice, disability access, and anti-displacement safeguards are non-negotiable.
+
+6. **Ecological Limits:** Operate within planetary boundaries, prioritizing urban biodiversity, water sensitivity, and climate adaptation.
+
+7. **Local Economic Sovereignty:** Hearts and Leaves values are calibrated locally by the Citizen Assembly based on bioregional needs, scarcity, and climate goals—never dictated by global frameworks.
+
+8. **Dual Consensus:** Major transitions require both democratic supermajority AND Indigenous FPIC 2.0 consent. Neither overrides the other.
+
+9. **Seventh-Generation Accountability:** All policies evaluated for 200-year impacts through Urban Thrivability Scorecard.
+
+10. **Subsidiarity:** Decisions made at the lowest effective level—neighborhoods, districts, city, bioregion—with clear escalation pathways.
+
+---
+
+## The Municipal Transition Charter
+
+### Phased Power Transition
+
+The transition from municipal government to BAZ governance is non-linear and contested. This framework defines clear phases with power-sharing formulas, triggers, and worker protections.
+
+| Phase | Citizen Assembly Power | Municipal Government Power | Trigger |
+|-------|------------------------|---------------------------|---------|
+| **Phase 0: Shadow** | Advisory only; no formal authority | Full authority | Community organizing phase; 10% neighborhood assemblies active |
+| **Phase 1: Co-Governance** | 20% veto over land-use decisions; binding authority over sacred sites, affordable housing, and ecological zones | 80% authority; must consult Assembly on major projects | FPIC 2.0 secured; 30% of neighborhoods have active assemblies; municipal resolution of cooperation |
+| **Phase 2: Shared Authority** | 50% of land-use, budget, and infrastructure decisions; co-chairs on all joint committees | 50% authority; Assembly approval required for any project affecting Scorecard metrics | Scorecard shows 40% improvement from baseline; 50% neighborhood participation; regional BAZ hub recognition |
+| **Phase 3: BAZ Integration** | Full BAZ governance authority; municipal departments absorbed into Community Work Teams | Dissolved or transitioned to regional coordination role | **Dual Consensus:** 60% community referendum approval **AND** FPIC 2.0 consent from Indigenous co-governance council |
+
+### Bureaucratic Protection & Transition
+
+Municipal workers are essential allies, not obstacles. Their livelihoods and pensions are protected.
+
+| Protection | Description |
+|------------|-------------|
+| **Guaranteed Transition** | All municipal employees offered positions in BAZ Community Work Teams at equivalent or better compensation |
+| **Retraining Funding** | Global Urban Fund allocates $5,000 per employee for skill transition (ecological restoration, participatory facilitation, regenerative economics) |
+| **Pension Protection** | Municipal pension obligations assumed by Global Commons Fund; no reduction in benefits |
+| **Early Retirement Pathways** | Employees within 5 years of retirement eligible for full pension buyout |
+| **Worker Representation** | Municipal unions hold reserved seats on Transition Committee |
+
+### Conflict Resolution for Power Struggles
+
+When Citizen Assembly and Municipal Government disagree:
+
+| Level | Body | Process | Timeline |
+|-------|------|---------|----------|
+| **Level 1** | Joint Transition Committee | Mediation with neutral facilitator | 30 days |
+| **Level 2** | Regional BAZ Hub | Facilitated negotiation; cooling-off period | 60 days |
+| **Level 3** | Community Referendum | Binding vote if mediation fails (requires 60% for override) | 90 days |
+| **Level 4** | Digital Justice Tribunal | Constitutional violations only; expedited review | 30 days |
+
+---
+
+## The Land Commons Protocol
+
+### Land Transition Ladder
+
+Urban land transitions from private commodity to community commons through a phased, legal pathway.
+
+| Land Type | Transition Mechanism | Timeline | Trigger |
+|-----------|---------------------|----------|---------|
+| **Public Land** | Automatic transfer to BAZ Community Land Trust | Phase 1 | BAZ formation |
+| **Vacant/Abandoned** | Eminent domain for public purpose; compensation at pre-development value (land only, not speculative value) | Phase 1-2 | 24 months vacant; community petition |
+| **Underutilized Commercial** | Incentive-based transfer (density bonuses, tax abatements) in exchange for CLT dedication; Land Value Tax increasing annually on underutilized parcels | Phase 2 | Development permit application; annual LVT review |
+| **Residential** | Voluntary CLT enrollment; inheritance protections to prevent forced sale; Right of First Refusal for CLT when property sells | Phase 2-3 | Sale trigger; annual enrollment windows |
+| **Speculative Holdings** | Land Value Tax escalating to 5% of assessed value; Right of First Refusal for CLT; foreign ownership restrictions | Phase 2-3 | Annual assessment; sale trigger |
+
+### Commons-Based Zoning Requirements
+
+For any development project (new construction or major renovation):
+
+| Requirement | Percentage | Use | Enforcement |
+|-------------|------------|-----|-------------|
+| **Community Land Trust Dedication** | 20% of units (residential) or floor area (commercial) | Permanently affordable; community-controlled | Deed restriction; no expiration |
+| **Public Commons Allocation** | 15% of ground floor | Community kitchens, gardens, gathering spaces, childcare, health clinics | Use agreement; community management |
+| **Biophilic Infrastructure** | 10% of site area | Green roofs, wildlife corridors, native planting, water retention | Performance bond; annual verification |
+| **Affordable Housing** | 30% of residential units | Income-restricted (60% of area median income); CLT-held | Deed restriction; annual audit |
+
+**Developer Incentives (in exchange for compliance):**
+- Expedited permitting (90-day maximum)
+- Density bonuses (up to 20% additional floor area)
+- Tax abatements (5-10 years, scaled to compliance level)
+- Priority access to Global Urban Fund infrastructure grants
+- Green building certification fee waivers
+
+**Penalties for Non-Compliance:**
+- No building permit without compliance
+- Land Value Tax surcharge (2x standard rate)
+- No access to public infrastructure investment
+- Public transparency reporting (naming non-compliant developers)
+
+### Anti-Speculation Mechanisms
+
+| Mechanism | Description | Enforcement |
+|-----------|-------------|-------------|
+| **Land Value Tax** | Annual tax on unimproved land value; increasing rate for speculative holdings (vacant, underutilized) | Annual assessment; graduated rate (0.5% to 5%) |
+| **Right of First Refusal** | Community Land Trust has right to match any offer on land within BAZ | 90-day matching window; CLT funding from Global Urban Fund |
+| **Vacancy Tax** | 3% of assessed value for residential vacancies >6 months; 5% for commercial >12 months | Quarterly reporting; self-reporting with penalties |
+| **Foreign Ownership Restrictions** | Preference for local and community ownership; 15% tax surcharge on non-resident ownership | Annual declaration; title search |
+| **Community Purchase Fund** | Dedicated Global Urban Fund allocation for CLT acquisitions | $50M per BAZ (scaled to population) |
+
+---
+
+## The Urban Thrivability Scorecard
+
+### Scorecard Components
+
+A composite index with weighted categories, independently verified, and tied directly to funding multipliers.
+
+| Category | Weight | Metrics | Data Source |
+|----------|--------|---------|-------------|
+| **Ecological Health** | 30% | Biodiversity index; tree canopy coverage; air/water quality; carbon sequestration; stormwater retention | Satellite monitoring; citizen science; agency data |
+| **Social Equity** | 25% | Housing affordability; income inequality; disability access; gender-inclusive spaces; food security | Census; community surveys; accessibility audits |
+| **Community Participation** | 20% | Assembly attendance; co-governance satisfaction; civic engagement; participatory budgeting turnout | Attendance records; satisfaction surveys |
+| **Regenerative Economy** | 15% | Local ownership percentage; Hearts circulation; cooperative formation; living wage jobs | Love Ledger; business registry |
+| **Cultural Vitality** | 10% | Indigenous language use; public art; cultural events; sacred site protection | Community reporting; cultural audits |
+
+### Funding Multiplier Structure
+
+Scorecard improvements directly increase neighborhood access to Participatory Budgeting funds from the Global Urban Fund.
+
+| Score Improvement | Funding Multiplier | Bonus Allocation | Example (Base $1M) |
+|-------------------|--------------------|-------------------|-------------------|
+| 0-9% | 1.0x | Base funding | $1.0M |
+| 10-19% | 1.25x | +25% bonus | $1.25M |
+| 20-29% | 1.5x | +50% bonus | $1.5M |
+| 30%+ | 2.0x | +100% bonus; priority access | $2.0M |
+
+**Anti-Gaming Safeguards:**
+- **Baseline Lock:** Score improvements measured from verified Year 0 baseline; cannot be manipulated by lowering baseline
+- **Independent Verification:** Third-party audits by Regional BAZ Hub; annual site visits
+- **Community Validation:** Scorecard requires 60% approval in Community Reflection Circle before multiplier applies
+- **Transparency Dashboard:** All data public, real-time, blockchain-verified on Digital Commons
+- **Fraud Penalties:** 3x clawback for manipulated data; developer exclusion
+
+### Participatory Budgeting Integration
+
+| Principle | Implementation |
+|-----------|----------------|
+| **Full Allocation** | 100% of Global Urban Fund allocations to neighborhoods decided through Participatory Budgeting |
+| **Neighborhood Assemblies** | Each neighborhood (5,000-20,000 population) holds annual assembly to propose projects |
+| **City-Wide Vote** | Residents vote on project allocations; funds distributed to winning proposals |
+| **Frontline Priority** | Minimum 30% of funds reserved for neighborhoods in lowest Scorecard quartile |
+| **Multiplier Application** | Scorecard multiplier applies automatically to neighborhood's base allocation |
+| **Implementation Tracking** | Public dashboard showing project status, costs, completion; updated quarterly |
+
+---
+
+## The Regenerative Economy (Locally Calibrated)
+
+### Core Principle
+
+Hearts and Leaves values are calibrated **locally** by the Indigenous-Led Citizen Assembly based on bioregional needs, scarcity, climate goals, and economic conditions. Global frameworks mandate the *principle* of compensation, not fixed rates.
+
+### Locally Calibrated Hearts Categories
+
+The framework defines *categories* of work eligible for Hearts. The Citizen Assembly sets *local rates*.
+
+| Category | Description | Local Calibration Factors |
+|----------|-------------|---------------------------|
+| **Assembly Participation** | Attendance at neighborhood, district, or city assemblies | Local cost of living; Hearts supply; civic engagement goals |
+| **Care Work** | Elder support, childcare, disability assistance, community health | Local care economy rates; cultural valuation of care |
+| **Cultural Stewardship** | Indigenous language teaching, public art, ceremony facilitation | Cultural authority rates; intergenerational transfer priorities |
+| **Urban Stewardship** | Community garden maintenance, sanctuary stewardship, tree care | Ecological urgency; local climate goals |
+| **Restorative Justice** | Circle facilitation, conflict mediation, healing practices | Trauma intensity; facilitator experience; community need |
+
+### Locally Calibrated Leaves Categories
+
+| Category | Description | Local Calibration Factors |
+|----------|-------------|---------------------------|
+| **Tree Planting** | Native species establishment; ongoing care | Water scarcity; survival rate; species value |
+| **Green Roof Installation** | Stormwater retention; heat reduction | Flood risk; urban heat island severity |
+| **Wildlife Corridor Restoration** | Habitat connectivity; biodiversity | Local extinction risk; corridor length |
+| **Soil Remediation** | Brownfield restoration; contamination removal | Toxicity level; future land use |
+| **Waterway Restoration** | Stream daylighting; riparian planting | Watershed health; flooding risk |
+
+### Urban AUBI Integration
+
+| Layer | Description | Source |
+|-------|-------------|--------|
+| **Layer 1** | Universal basic income (unconditional) | Global Commons Fund |
+| **Layer 2** | Hearts bonuses for civic participation, care work, cultural stewardship | Locally calibrated; BAZ budget |
+| **Layer 3** | Leaves bonuses for ecological restoration, climate adaptation | Locally calibrated; BAZ budget |
+| **Urban Premium** | Enhanced AUBI allocation for high Scorecard cities | Global Commons Fund; 1.5x multiplier |
+
+---
+
+## The 15-Minute City Implementation
+
+### Phased Implementation Roadmap
+
+| Phase | Focus | Timeline | Key Milestones |
+|-------|-------|----------|----------------|
+| **Phase 1** | "Safe Routes" — pedestrian and bike infrastructure; traffic calming; school streets; bus priority lanes | 1-3 years | 50% of schools have safe routes; 100km bike lanes |
+| **Phase 2** | "Service Hubs" — neighborhood clinics, grocery stores, childcare, community centers in every 15-minute radius | 3-7 years | 80% of residents within 15 min of clinic; 50% within 15 min of full-service grocery |
+| **Phase 3** | "Car-Free Zones" — pedestrian-only districts; mobility hubs; cargo bike logistics; congestion pricing | 7-10 years | 30% of city area car-free; 50% commute by active/transit |
+| **Phase 4** | "Complete Communities" — mixed-income housing; employment within 15 minutes; full integration | 10-15 years | 100% residents within 15 min of employment; 80% affordable housing near transit |
+
+### Anti-Displacement Safeguards
+
+15-minute city improvements can increase property values and displace existing residents. These safeguards are mandatory.
+
+| Safeguard | Description | Enforcement |
+|-----------|-------------|-------------|
+| **Rent Control** | Annual rent increases capped at inflation + 3% in neighborhoods receiving infrastructure investment | Rent board; tenant organizing support |
+| **Community Land Trust Expansion** | CLT prioritizes acquisition in areas targeted for 15-minute investment | Dedicated CLT funding; Right of First Refusal |
+| **Right to Return** | For residents displaced during construction, priority placement in new affordable units | Contractually binding developer agreements |
+| **Small Business Protections** | Rent stabilization; technical assistance; priority leasing in new development | Commercial rent board; business support fund |
+| **Anti-Speculation Tax** | Increased Land Value Tax on properties sold within 3 years of infrastructure announcement | LVT surcharge; sunset after 3 years |
+
+### Mobility Commons Integration
+
+| Element | Description |
+|---------|-------------|
+| **Shared Mobility** | Bikeshare, carshare, scooter share integrated into 15-minute radius planning; subsidized for low-income residents |
+| **Mobility as a Service (MaaS)** | Single app for all transportation; discounted monthly pass for low-income; real-time accessibility info |
+| **Cargo Bike Logistics** | Last-mile delivery for businesses without trucks; micro-hubs for package consolidation |
+| **Emergency Mobility** | 24/7 on-demand transportation for medical appointments, food access, mobility-limited residents |
+| **Paratransit Integration** | Door-to-door service for disabled residents; integrated with public transit schedule |
+
+---
+
+## The Urban Sanctuary Network
+
+### Sanctuary Typology
+
+| Type | Description | Size | Connectivity | Funding |
+|------|-------------|------|--------------|---------|
+| **Micro-Sanctuary** | Pollinator gardens; pocket parks; green roofs; street trees | < 0.1 ha | Local corridors | Neighborhood PB |
+| **Neighborhood Sanctuary** | Community gardens; small parks; nature playgrounds | 0.1-2 ha | District connections | District PB |
+| **District Sanctuary** | Urban forests; restored streams; wildlife corridors | 2-20 ha | City-wide network | Global Urban Fund |
+| **Regional Sanctuary** | Large ecological reserves; rewilded industrial sites | > 20 ha | Bioregional corridors | Global Commons Fund |
+
+### Design & Management Requirements
+
+| Requirement | Standard |
+|-------------|----------|
+| **Native Species** | Minimum 70% native plants; no invasive species |
+| **Pesticide-Free** | No synthetic pesticides, herbicides, or fungicides |
+| **Water Sensitivity** | Rain gardens, bioswales, permeable surfaces; stormwater retention |
+| **Wildlife Corridors** | All sanctuaries connected to corridors; no fragmentation |
+| **Community Stewardship** | Community Work Teams manage each sanctuary; Hearts compensation |
+| **Accessibility** | Accessible routes through all sanctuaries; sensory gardens; quiet zones |
+
+### Funding for Sanctuaries
+
+| Source | Allocation | Use |
+|--------|------------|-----|
+| **Global Urban Fund** | 10% of BAZ allocation | Acquisition, restoration, capital improvements |
+| **Hearts** | Locally calibrated rates | Ongoing stewardship, maintenance |
+| **Leaves** | Locally calibrated rates | Ecological restoration achievements |
+| **Developer Fees** | 5% of permit fees | Mitigation for development impacts |
+| **Carbon Offsets** | Local carbon credit market | Tree planting, soil carbon |
+
+---
+
+## Gender & Kinship Justice in Urban Space
+
+### Gender-Inclusive Urban Design Standards
+
+| Element | Requirement | Audit |
+|---------|-------------|-------|
+| **Public Restrooms** | All single-stall gender-neutral; multi-stall facilities include private stalls | Annual accessibility audit |
+| **Lighting** | Minimum 10 lux in all public spaces; motion-activated with warm spectrum | Night audit; community reporting |
+| **Transit** | Well-lit stops; real-time arrival info; safe waiting areas; driver safety training | Rider surveys; safety audits |
+| **Public Space** | Seating, sightlines, activity generators to support passive surveillance | CPTED audit; community walkthroughs |
+| **Housing** | Universal design; adaptable units; no gender segregation in shelters | Housing audit; resident surveys |
+
+### LGBTQ+ Safety Audits
+
+- **Auditors:** LGBTQ+ community organizations contracted by BAZ
+- **Frequency:** Annual; results published on Public Trust Dashboard
+- **Scorecard Link:** 10% of Social Equity category weight
+- **Funding Priority:** Neighborhoods implementing audit recommendations receive 1.5x multiplier for 2 years
+
+### Indigenous Women's Leadership
+
+| Requirement | Implementation |
+|-------------|----------------|
+| **Assembly Representation** | 50% of Indigenous seats on Citizen Assembly held by women |
+| **Veto Authority** | Indigenous women's councils have veto over development affecting traditional territories |
+| **Dedicated Funding** | 5% of Global Urban Fund allocated to Indigenous women-led urban agriculture, cultural programs, and housing |
+| **Ceremonial Recognition** | Indigenous women's traditional knowledge incorporated into urban planning processes |
+
+---
+
+## Disability Justice & Universal Access
+
+### Universal Design Standards
+
+| Domain | Requirement | Enforcement |
+|--------|-------------|-------------|
+| **Mobility** | All sidewalks curb-cut; minimum 1.5m width; tactile paving at crossings; snow clearance priority | Annual accessibility audit; ADA-style complaints process |
+| **Transit** | 100% low-floor vehicles; audio/visual announcements; priority seating; level boarding | Transit accessibility plan; annual reporting |
+| **Housing** | 10% of new units fully accessible (visitability standards for all); 5% with hearing/vision accessibility | Building code; permit requirement |
+| **Public Space** | Accessible routes through all parks and plazas; sensory gardens; quiet zones; accessible restrooms | Design review; community audit |
+| **Digital** | WCAG 2.1 compliance for all civic platforms; screen reader compatibility; plain language options | Digital audit; annual certification |
+
+### Disability-Led Design Requirements
+
+| Requirement | Implementation |
+|-------------|----------------|
+| **Accessibility Audits** | All audits conducted by disabled-led organizations; compensated at professional rates |
+| **Planning Representation** | Minimum 30% of urban planning positions held by disabled people; targeted recruitment |
+| **Disability Impact Assessments** | Required for all major infrastructure projects; public review required |
+| **Grievance Process** | Dedicated disability rights ombudsperson; expedited resolution (30 days) |
+
+### Neurodiversity-Inclusive Design
+
+| Element | Requirement |
+|---------|-------------|
+| **Sensory Zones** | Quiet areas in public spaces; low-arousal waiting areas; noise-reducing materials |
+| **Wayfinding** | Visual, tactile, and audio signage; predictable layouts; color-coded districts |
+| **Public Announcements** | Clear language; advance warning of changes; text alternatives; no sudden loud announcements |
+| **Participation** | Multiple engagement formats: written, oral, visual, digital, in-person, asynchronous |
+| **Housing** | Sound-dampening construction; adjustable lighting; predictable maintenance schedules |
+
+---
+
+## Implementation Roadmap
+
+### Phase 1: Foundation & Co-Governance (Years 1-3)
+
+| Component | Description | Success Criteria |
+|-----------|-------------|------------------|
+| **Shadow Assemblies** | Neighborhood assemblies form in 30% of districts | 30% active assemblies; community mapping completed |
+| **FPIC 2.0 Secured** | Indigenous co-governance council established; consent protocols defined | Formal agreement; recognized by Earth Council |
+| **Municipal Resolution** | City council passes transition cooperation resolution | Resolution adopted; transition committee formed |
+| **Worker Protections** | Municipal employee transition agreements signed | 100% union ratification; pension protections in place |
+| **Land Trust Formation** | BAZ Community Land Trust incorporated | CLT board seated; initial funding secured |
+| **Scorecard Baseline** | Year 0 Scorecard established for all neighborhoods | Verified baseline; public dashboard launched |
+
+### Phase 2: Shared Authority & Investment (Years 4-7)
+
+| Component | Description | Success Criteria |
+|-----------|-------------|------------------|
+| **50% Power Sharing** | Assembly co-chairs all committees; 50% land-use authority | Formal power-sharing agreement |
+| **Global Urban Fund Access** | $50M+ annual allocation secured | Participatory budgeting operational |
+| **Scorecard Improvement** | 40% improvement from baseline | Independent verification |
+| **Land Transition** | 20% of public land transferred to CLT; Right of First Refusal operational | Transfer completed; CLT acquisitions active |
+| **15-Minute Phase 1** | Safe Routes network complete; 50% of schools with safe routes | Infrastructure milestones met |
+| **Sanctuary Network** | 10% of city area in sanctuary network | Sanctuaries designated; stewardship funded |
+
+### Phase 3: BAZ Integration & Full Transition (Years 8-15)
+
+| Component | Description | Success Criteria |
+|-----------|-------------|------------------|
+| **Dual Consensus** | 60% community referendum AND FPIC 2.0 consent | Verified votes; Indigenous consent documented |
+| **Municipal Absorption** | City departments transitioned to Community Work Teams | All employees transitioned; services uninterrupted |
+| **Full Land Commons** | 50% of urban land in CLT; Land Value Tax operational | Transition targets met |
+| **Complete 15-Minute City** | 100% residents within 15 minutes of employment; 80% affordable housing near transit | All milestones achieved |
+| **Sanctuary Maturity** | 30% of city area in sanctuary network; corridors connected | Biodiversity targets met |
+| **Scorecard Excellence** | 2.0x multiplier achieved; sustained improvement | Independent verification |
+
+---
+
+## Appendices
+
+### Appendix A: Transition Toolkit for City Planners
+
+**Checklist for Day 1:**
+- [ ] Identify Indigenous traditional territory; initiate FPIC 2.0 process
+- [ ] Form neighborhood shadow assemblies (map existing community organizations)
+- [ ] Secure municipal resolution of cooperation (present to city council)
+- [ ] Meet with municipal unions; negotiate transition protections
+- [ ] Establish Scorecard baseline with community verification
+
+**Checklist for Year 1:**
+- [ ] Incorporate Community Land Trust; secure initial funding
+- [ ] Launch Participatory Budgeting pilot in 5 neighborhoods
+- [ ] Begin 15-Minute City Phase 1 infrastructure (school streets, bike lanes)
+- [ ] Train Grief First Responders and Death Doulas (Memorial Commons integration)
+- [ ] Establish Hearts categories; calibrate local rates
+
+**Checklist for Year 3:**
+- [ ] Achieve 30% neighborhood assembly participation
+- [ ] Complete Scorecard improvement target for Phase 2 trigger
+- [ ] Transfer 20% of public land to CLT
+- [ ] Secure Global Urban Fund allocation
+- [ ] Begin sanctuary network designation
+
+### Appendix B: Model Municipal Resolution
+
+*[Template available on Digital Commons]*
+
+A resolution declaring the City of [Name]'s intent to transition to a Bioregional Polis within the [Bioregion] BAZ, including:
+- Recognition of Indigenous traditional territory and commitment to FPIC 2.0
+- Establishment of joint Transition Committee with Indigenous co-governance
+- Protection of municipal worker pensions and jobs
+- Commitment to Community Land Trust formation
+- Adoption of Urban Thrivability Scorecard
+- Timeline for phased power transition
+
+### Appendix C: Land Value Tax Implementation Guide
+
+**Principles:**
+- Tax on unimproved land value only (not buildings or improvements)
+- Annual assessment by independent appraisers
+- Progressive rate structure: 0.5% for occupied residential; 2% for underutilized; 5% for speculative holdings
+- Revenue dedicated to Community Land Trust acquisitions
+- Exemptions for CLT-held land, affordable housing, and community facilities
+
+### Appendix D: Participatory Budgeting Playbook
+
+**Phase 1: Idea Collection**
+- Neighborhood assemblies generate project proposals
+- Facilitators ensure all voices heard (language access, disability accommodation, childcare)
+
+**Phase 2: Proposal Development**
+- Technical assistance for project costing and feasibility
+- Community review panels vet proposals
+
+**Phase 3: Vote**
+- City-wide ranked-choice voting
+- Minimum 30% of funds reserved for frontline neighborhoods (lowest Scorecard quartile)
+
+**Phase 4: Implementation**
+- Project implementation tracked on public dashboard
+- Quarterly community updates
+
+**Phase 5: Evaluation**
+- Post-completion community reflection circles
+- Lessons learned incorporated into next cycle
+
+---
+
+## Conclusion: From Vision to Operating System
+
+The Bioregional Polis framework provides not a vision board but a **municipal transition operating system**—a step-by-step playbook for transforming existing cities from growth machines into regenerative commons.
+
+**The Core Operational Stack:**
+
+1. **Power Transition:** Phased Municipal Charter with power-sharing formulas, worker protections, and Dual Consensus triggers
+2. **Land Commons:** Transition ladder, Commons-Based Zoning, anti-speculation mechanisms
+3. **Economic Engine:** Scorecard-tested funding multipliers; Participatory Budgeting; locally calibrated Hearts/Leaves
+4. **Infrastructure Phasing:** 15-Minute City implementation roadmap; Sanctuary Network funding
+5. **Equity Integration:** Gender, disability, and Indigenous justice embedded in urban design standards
+
+With this framework, a city planner reading this document is not just inspired—they have a **step-by-step playbook** for beginning the transition tomorrow.
+
+---
+
+*Version 3.0 Revision Notes:*
+
+| Change | Rationale |
+|--------|----------|
+| Added Phased Power Transition with power-sharing formulas | Solves "Dual Power" void; maps transition to BAZ |
+| Added Bureaucratic Protection (pensions, jobs, retraining) | Prevents municipal worker resistance |
+| Added Dual Consensus trigger (60% referendum + FPIC 2.0) | Protects Indigenous sovereignty from majoritarian override |
+| Added Land Transition Ladder | Solves Real Estate Blindspot; legal, phased decommodification |
+| Added Commons-Based Zoning requirements | Ties development rights to public benefit |
+| Added Anti-Speculation Mechanisms (LVT, Right of First Refusal, vacancy tax) | Prevents financial extraction from transition |
+| Added Scorecard Funding Multiplier | Makes Scorecard an economic engine, not just a PDF |
+| Added Participatory Budgeting integration | Democratizes funding allocation |
+| Removed fixed Hearts/Leaves rates; added locally calibrated framework | Respects subsidiarity; no global price-fixing |
+| Added Anti-Displacement Safeguards to 15-Minute City | Prevents gentrification of infrastructure investment |
+| Added Gender-Inclusive Design Standards | Operationalizes Kinship Protocol in urban space |
+| Added Disability-Led Design Requirements | Operationalizes Foundation Protocol in urban space |
+| Added Neurodiversity-Inclusive Design | Addresses missing dimension of accessibility |
+| Relegated Cosmic Connection to Phase 3+ | Prioritizes core governance and land transition |
