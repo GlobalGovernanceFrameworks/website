@@ -56,6 +56,28 @@ export const technologyOSEntities: GgfEntity[] = [
     }
   },
   {
+    id: 'framework_fractal_intelligence',
+    type: 'Framework',
+    name: 'Fractal Intelligence Accord',
+    shortName: 'FIA',
+    description: 'AGI governance framework for compute subsidiarity, contextual intelligence, and cognitive sovereignty — split into a foundational charter and a living transition protocol',
+    tier: 2,
+    status: 'Outline',
+    primaryDomain: 'Technology',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_technology_governance'],
+    enables: [],
+    ui: {
+      path: '/frameworks/fractal-intelligence-accord',
+      titleKey: 'framework.docs.nav.frameworkTitles.fractalIntelligenceAccord',
+      emoji: '🌀',
+      version: '1.0',
+      slug: 'fractal-intelligence-accord',
+      group: 'humanSocialSystems'
+    }
+  },
+  {
     id: 'institution_quantum_lab',
     type: 'Institution',
     name: 'Quantum Governance Lab',
@@ -247,6 +269,62 @@ export const technologyOSRelationships: GgfRelationship[] = [
     type: 'GUIDES',
     description: 'TGIF provides ethical guidelines for digital commons governance and technology access',
     strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  
+  // === CONNECTIONS FROM FRACTAL INTELLIGENCE ACCORD ===
+  {
+    from: 'framework_technology_governance',
+    to: 'framework_fractal_intelligence',
+    type: 'GUIDES',
+    description: 'TGIF provides parent governance principles for the Fractal Intelligence Accord\'s AGI-specific mechanisms',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_fractal_intelligence',
+    to: 'framework_aurora_accord',
+    type: 'COORDINATES_WITH',
+    description: 'FIA coordinates with Aurora Accord on data provenance, context licensing, and Reality Rent mechanisms',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_fractal_intelligence',
+    to: 'framework_digital_commons',
+    type: 'INTEGRATES_WITH',
+    description: 'FIA\'s Compute Commons and Global Trunk architecture integrates with Digital Commons governance for shared infrastructure access',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_fractal_intelligence',
+    to: 'framework_indigenous',
+    type: 'COORDINATES_WITH',
+    description: 'FIA\'s Context Sovereignty and CIN mechanisms coordinate with Indigenous Sovereignty Pathways on traditional knowledge protection',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_fractal_intelligence',
+    to: 'institution_dj_tribunal',
+    type: 'ESCALATES_TO',
+    description: 'Individual grievances against AGI actions under the Accord are routed to the Digital Justice Tribunal',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'council_gtc',
+    to: 'framework_fractal_intelligence',
+    type: 'OVERSEES',
+    description: 'Global Technology Council oversees the Multi-Stakeholder Trust and capability threshold governance within the FIA',
+    strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },

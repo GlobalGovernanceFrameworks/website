@@ -123,6 +123,7 @@ const pageSpecificTranslationsMap = [
   { route: '/frameworks/climate-and-energy-governance', dataKey: 'climateEnergyFramework', fileName: 'frameworksClimateAndEnergyGovernance' },
   { route: '/frameworks/migration-and-human-mobility', dataKey: 'migrationFramework', fileName: 'frameworksMigrationAndHumanMobility' },
   { route: '/frameworks/mental-health-governance', dataKey: 'mentalHealthFramework', fileName: 'frameworksMentalHealthGovernance' },
+  { route: '/frameworks/fractal-intelligence-accord', dataKey: 'fractalIntelligenceAccord', fileName: 'frameworksFractalIntelligenceAccord' },
   { route: '/frameworks/water-and-sanitation-governance', dataKey: 'waterSanitationFramework', fileName: 'frameworksWaterAndSanitationGovernance' },
   { route: '/frameworks/environmental-stewardship', dataKey: 'environmentalStewardshipFramework', fileName: 'frameworksEnvironmentalStewardship' },
   { route: '/frameworks/animal-welfare-governance', dataKey: 'animalWelfareFramework', fileName: 'frameworksAnimalWelfareGovernance' },

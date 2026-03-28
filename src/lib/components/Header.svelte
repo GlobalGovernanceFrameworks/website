@@ -157,44 +157,48 @@
   // Apply positioning on hover
   function handleSubmenuHover(event) {
     const submenu = event.currentTarget.querySelector('.dropdown-menu-level3');
-    if (submenu) {
-      // Small delay to ensure element is rendered
-      setTimeout(() => positionSubmenuToTop(submenu), 10);
-    }
+    if (!submenu || !browser) return;
+
+    // Reset previous adjustments
+    submenu.classList.remove('multi-col', 'multi-col-3', 'align-top');
+    submenu.style.top = '';
+    submenu.style.left = '';
+
+    // Small delay to ensure element is rendered
+    setTimeout(() => {
+      const viewportHeight = window.innerHeight;
+      const viewportWidth = window.innerWidth;
+      const contentHeight = submenu.scrollHeight;
+      const parentRect = submenu.parentElement.getBoundingClientRect();
+
+      if (contentHeight > viewportHeight * 0.85) {
+        // Content too tall — split into columns
+        const cols = contentHeight > viewportHeight * 1.7 ? 3 : 2;
+        submenu.classList.add(cols === 3 ? 'multi-col-3' : 'multi-col');
+
+        // Fix to top of viewport
+        submenu.style.position = 'fixed';
+        submenu.style.top = '10px';
+        submenu.style.maxHeight = `${viewportHeight - 20}px`;
+
+        // Position horizontally: right edge of the parent tier-submenu
+        const leftPos = parentRect.right + 2;
+        // If it would overflow the right edge, flip to the left
+        const estimatedWidth = cols === 3 ? 900 : 620;
+        if (leftPos + estimatedWidth > viewportWidth) {
+          submenu.style.left = `${parentRect.left - estimatedWidth - 2}px`;
+        } else {
+          submenu.style.left = `${leftPos}px`;
+        }
+      } else if (parentRect.top + contentHeight > viewportHeight) {
+        // Fits in one column but would go off-screen — shift up
+        const topOffset = -parentRect.top + 10;
+        submenu.style.top = `${topOffset}px`;
+        submenu.style.maxHeight = `${viewportHeight - 20}px`;
+      }
+    }, 10);
   }
 
-  function setupAdvancedSubmenuPositioning() {
-    if (!browser) return;
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const submenu = entry.target.querySelector('.dropdown-menu-level3');
-        if (submenu && entry.isIntersecting) {
-          const rect = submenu.getBoundingClientRect();
-          const viewportHeight = window.innerHeight;
-          
-          if (rect.bottom > viewportHeight - 50) {
-            submenu.classList.add('align-top');
-            const leftPos = rect.left;
-            submenu.style.left = `${leftPos}px`;
-          } else {
-            submenu.classList.remove('align-top');
-            submenu.style.left = '';
-            submenu.style.top = '';
-          }
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    });
-    
-    // Observe all tier submenus
-    document.querySelectorAll('.tier-submenu').forEach(el => {
-      observer.observe(el);
-    });
-  }
-  
   let isMobile = false;
 
   onMount(() => {
@@ -226,8 +230,6 @@
       document.addEventListener('click', closeDropdowns);
     }
 
-    setupAdvancedSubmenuPositioning();
-    
     // Combined cleanup
     return () => {
       if (browser) {
@@ -749,6 +751,53 @@
     max-height: calc(100vh - 20px);
     overflow-y: auto;
     z-index: 1002;
+  }
+
+  /* Multi-column layout for long tier menus */
+  .tier-submenu .dropdown-menu-level3.multi-col {
+    position: fixed;
+    columns: 2;
+    column-gap: 0;
+    min-width: 600px;
+    max-width: 700px;
+    width: auto;
+    z-index: 1002;
+    overflow-y: auto;
+  }
+
+  .tier-submenu .dropdown-menu-level3.multi-col-3 {
+    position: fixed;
+    columns: 3;
+    column-gap: 0;
+    min-width: 880px;
+    max-width: 1000px;
+    width: auto;
+    z-index: 1002;
+    overflow-y: auto;
+  }
+
+  /* Prevent group headers and items from splitting across columns */
+  .tier-submenu .dropdown-menu-level3.multi-col .framework-group-header,
+  .tier-submenu .dropdown-menu-level3.multi-col-3 .framework-group-header {
+    break-after: avoid;
+    column-span: none;
+  }
+
+  .tier-submenu .dropdown-menu-level3.multi-col a,
+  .tier-submenu .dropdown-menu-level3.multi-col-3 a {
+    break-inside: avoid;
+  }
+
+  /* Column divider */
+  .tier-submenu .dropdown-menu-level3.multi-col,
+  .tier-submenu .dropdown-menu-level3.multi-col-3 {
+    column-rule: 1px solid #e5e7eb;
+  }
+
+  /* Override display:none/block since we use fixed positioning */
+  .tier-submenu:hover > .dropdown-menu-level3.multi-col,
+  .tier-submenu:hover > .dropdown-menu-level3.multi-col-3 {
+    display: block;
   }
 
   .tier-submenu .dropdown-menu-level3.align-top .dropdown-menu-level3-scrollable {
