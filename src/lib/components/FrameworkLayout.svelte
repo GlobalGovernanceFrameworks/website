@@ -51,6 +51,30 @@
 	let translationsReady = $derived($isLocaleLoaded);
 	let sectionIcons = $derived(i18nPageObject.sectionIcons || {});
 
+ let resolvedPdfPath = $state('');
+
+ $effect(() => {
+   if (!pdfInfo?.path) {
+     resolvedPdfPath = '';
+     return;
+   }
+   
+   resolvedPdfPath = pdfInfo.path;
+   
+   // Check if locale-specific PDF exists, fall back to English
+   if (browser && pdfInfo.path && !pdfInfo.path.includes('/en/')) {
+     fetch(pdfInfo.path, { method: 'HEAD' })
+       .then(res => {
+         if (!res.ok) {
+           resolvedPdfPath = pdfInfo.path.replace(/\/downloads\/[a-z]{2}\//, '/downloads/en/');
+         }
+       })
+       .catch(() => {
+         resolvedPdfPath = pdfInfo.path.replace(/\/downloads\/[a-z]{2}\//, '/downloads/en/');
+       });
+   }
+ });
+
 	// --- FUNCTIONS ---
 	function getSectionCategoryTitle(group) {
 		const key = group.titleKey;
@@ -254,52 +278,54 @@
 					</div>
 				{/each}
 
-				<div class="download-section">
-					{#if pdfInfo.path}
-						<a
-							href={pdfInfo.path}
-							class="download-btn"
-							download
-							target="_blank"
-							rel="noopener noreferrer"
-							title="Download {framework.name} PDF"
-						>
-							<svg
-								class="download-icon"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-								/>
-							</svg>
-							<span>{pdfInfo.label}</span>
-						</a>
-					{:else}
-						<button class="download-btn disabled" disabled title="PDF not yet available">
-							<svg
-								class="download-icon"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-								/>
-							</svg>
-							<span>{pdfInfo.label}</span>
-						</button>
-					{/if}
-				</div>
+    {#if pdfInfo}
+				  <div class="download-section">
+					  {#if pdfInfo.path}
+						  <a
+							  href={resolvedPdfPath}
+							  class="download-btn"
+							  download
+							  target="_blank"
+							  rel="noopener noreferrer"
+							  title="Download {framework.name} PDF"
+						  >
+							  <svg
+								  class="download-icon"
+								  xmlns="http://www.w3.org/2000/svg"
+								  fill="none"
+								  viewBox="0 0 24 24"
+								  stroke="currentColor"
+							  >
+								  <path
+									  stroke-linecap="round"
+									  stroke-linejoin="round"
+									  stroke-width="2"
+									  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+								  />
+							  </svg>
+							  <span>{pdfInfo.label}</span>
+						  </a>
+					  {:else}
+						  <button class="download-btn disabled" disabled title="PDF not yet available">
+							  <svg
+								  class="download-icon"
+								  xmlns="http://www.w3.org/2000/svg"
+								  fill="none"
+								  viewBox="0 0 24 24"
+								  stroke="currentColor"
+							  >
+								  <path
+									  stroke-linecap="round"
+									  stroke-linejoin="round"
+									  stroke-width="2"
+									  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+								  />
+							  </svg>
+							  <span>{pdfInfo.label}</span>
+						  </button>
+					  {/if}
+				  </div>
+     {/if}
 			</nav>
 		{/if}
 

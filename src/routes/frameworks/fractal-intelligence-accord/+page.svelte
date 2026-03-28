@@ -54,7 +54,7 @@
 	);
 
 	// No single PDF for the FrameworkLayout — we handle downloads per-document
-	let pdfInfo = $derived({ path: '', label: pdfLabel });
+ let pdfInfo = $derived(null);
 	let statusInfo = $derived({ text: statusText, class: statusClass });
 
 	// --- SECTION GROUPS ---
