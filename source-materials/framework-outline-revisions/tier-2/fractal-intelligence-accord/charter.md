@@ -88,7 +88,7 @@ Against the centralizing logic of the corporate AGI project, we propose a differ
 
 AGI should not be a commodity controlled by a few corporations. It should be common infrastructure — like the electrical grid, like the internet — governed by those who depend on it, accountable to those it affects.
 
-This does not mean a single, monolithic system. It means a federated architecture: a **Global Trunk** that provides shared safety and capability, and **Local Branches** that communities adapt to their own contexts.
+This does not mean a single, monolithic system. It means a federated architecture: shared foundations that provide safety and capability, with local adaptation that communities shape to their own contexts.
 
 ### Compute as a Commons
 
@@ -120,7 +120,7 @@ The Accord rests on seven principles, each designed to protect texture while ena
 
 Decisions about intelligence should be made at the most local level possible. Global coordination exists to enable local sovereignty, not to replace it.
 
-**What this means:** Communities should control the AI that shapes their lives. The Global Trunk exists to provide safety and capability, but Local Branches are autonomous within those bounds.
+**What this means:** Communities should control the AI that shapes their lives. Shared foundations exist to provide safety and capability, but local adaptation is autonomous within those bounds.
 
 ### 2. Anti-Monopoly
 
@@ -132,7 +132,7 @@ No single entity — corporate, state, or otherwise — should control the infra
 
 Communities own their knowledge. They have the right to determine how it is used, to receive compensation when it is used, and to withdraw it when use becomes harmful.
 
-**What this means:** Reality Rent is not a tax. It is a recognition that intelligence built on human context owes something to the humans who provide that context.
+**What this means:** Compensation for context use is not a tax. It is a recognition that intelligence built on human context owes something to the humans who provide that context.
 
 ### 4. Ecological Constraint
 
@@ -144,13 +144,13 @@ Intelligence cannot be built at the expense of the biosphere. Compute is physica
 
 The architecture of intelligence should mirror the architecture of life: a trunk of shared capability, branches of local adaptation, roots of contextual grounding.
 
-**What this means:** The system is designed for autonomy at every level. Local branches can innovate without waiting for permission, but they cannot break core safety invariants.
+**What this means:** The system is designed for autonomy at every level. Local communities can innovate without waiting for permission, but they cannot break core safety invariants.
 
 ### 6. Precautionary Governance
 
 When consequences are irreversible, caution prevails. We do not need perfect proof of harm to act. The burden of proof lies with those proposing potentially catastrophic deployment.
 
-**What this means:** Capability thresholds trigger automatic pauses. The Kill Switch exists. We govern as if AGI matters — because it does.
+**What this means:** Capability thresholds trigger automatic pauses. Revocability is built into the architecture. We govern as if AGI matters — because it does.
 
 ### 7. Intergenerational Accountability
 
@@ -162,43 +162,25 @@ We are stewards, not owners. The decisions we make bind those who come after. We
 
 ## 5. The Architecture of Meaning
 
-*The mechanisms of governance must serve the purpose of meaning. Here is how.*
+*Governance must be designed to serve meaning. These are the architectural commitments that follow from our principles. The Transition Protocol specifies how each is implemented.*
 
 ---
 
-### Reality Rent: Honoring the Source
+### Reciprocity: Intelligence Owes What It Draws From
 
-When AI trains on human context — the languages, the practices, the stories of real people — that context is not free. It is the product of generations of human life, of struggle and creativity, of meaning-making.
+When AI trains on human context — the languages, the practices, the stories of real people — that context is not free. It is the product of generations of human life, of struggle and creativity, of meaning-making. Intelligence built on human knowledge must compensate the humans who produced it, not as charity but as recognition of an ongoing relationship. The flow of value cannot be one-way.
 
-**Reality Rent** is the mechanism by which communities receive compensation for the use of their context. It is not a tax; it is a recognition that intelligence built on human knowledge owes something to the humans who produced it.
+### Adaptation: Intelligence That Scales Without Homogenizing
 
-More than compensation, Reality Rent creates a relationship. When AI depends on human context, it must remain accountable to the humans who provide it. The flow of value is not one-way.
+The centralizing logic of corporate AI produces models that are powerful but placeless. They know everything and understand nothing. The Accord's architecture reverses this: shared foundations that ensure safety, with local adaptation that ensures relevance. Communities can innovate and experiment within safety bounds. Intelligence scales without erasing the texture it depends on.
 
-### The Global Trunk and Local Branches: Intelligence That Adapts
+### Revocability: Accountability Must Be Real
 
-The centralizing logic of corporate AI produces models that are powerful but placeless. They know everything and understand nothing.
+The most powerful intelligence ever built must have a way to stop it. This is not a technical detail. It is a moral necessity. If intelligence behaves parasitically — extracting without consent, manipulating without transparency, violating sovereignty — those affected must have the power to sever its access to their context, and to quarantine it from critical systems without causing collateral harm.
 
-**The Fractal Architecture** reverses this. A **Global Trunk** provides shared safety and capability — the foundations that cannot be left to local variation. **Local Branches** adapt this foundation to specific contexts: languages, ecologies, cultural practices, community needs.
+### Liability: Risk Cannot Be Externalized
 
-Local branches can fine-tune without asking permission. They can innovate, experiment, adapt. But they cannot break core safety invariants — no bioweapons, no mass surveillance, no autonomous harm.
-
-This is intelligence that scales without homogenizing. Intelligence that is powerful without being alien.
-
-### The Kill Switch: Accountability as Architecture
-
-The most powerful intelligence ever built must have a way to stop it. This is not a technical detail. It is a moral necessity.
-
-**The Kill Switch** is not a single button. It is a distributed network of accountability. Any local node can sever an AI's access to its context. A supermajority can halt the global system.
-
-The Kill Switch exists because accountability must be real. If intelligence behaves parasitically — extracting without consent, manipulating without transparency, violating sovereignty — it can be stopped.
-
-### Risk Bonds: Skin in the Game
-
-When autonomous systems operate in the real world, they create risk. That risk cannot be externalized.
-
-**Risk Bonds** require that entities deploying autonomous AI post financial guarantees. If the AI causes harm — hallucinates, damages, violates — the bond is forfeit to those harmed.
-
-This is not punishment. It is alignment: ensuring that those who benefit from intelligence also bear its risks.
+When autonomous systems operate in the real world, they create risk. That risk must be borne by those who deploy the systems and profit from them, not by those who suffer when they fail. Financial accountability must be built into the architecture, not bolted on after harm occurs.
 
 ---
 
@@ -224,7 +206,7 @@ Communities have the right to withdraw their context from AI training. This is n
 
 Those affected by intelligence have the right to shape it. This is not a consultative afterthought; it is a condition of legitimacy.
 
-**This means:** Governance structures must include those who are governed. The Multi-Stakeholder Trust includes CIN delegates, global representatives, and independent experts. Decisions are made with those who bear their consequences.
+**This means:** Governance structures must include those who are governed. Decision-making bodies must include community delegates, global representatives, and independent experts. Decisions are made with those who bear their consequences.
 
 ### The Right to Explanation
 

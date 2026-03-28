@@ -315,6 +315,21 @@ To be enforceable, concepts must be measurable. This section defines the key ter
 
 ---
 
+### 4.6 Fallback Strategies
+
+Phase 1 leverage depends on assumptions — cooperative choke point governments, willing regulators, functional multilateral coordination — that may not hold. Explicit fallbacks:
+
+| If... | Then... |
+|-------|---------|
+| **Chip export coordination fails** (Taiwan/Netherlands/US don't align) | Shift to demand-side leverage: procurement conditions in adopting jurisdictions; investor pressure via ESG frameworks; insurance industry standards requiring transparency for coverage |
+| **No major jurisdiction adopts compute concentration rules** | Focus on making the Compute Commons competitive: below-market pricing, superior CIN-licensed training data, "Commons Compliant" certification as market differentiator |
+| **Frontier labs refuse Reality Rent** | Document quality advantages of CIN-licensed data; publish comparative benchmarks; build litigation capacity for jurisdictions with data rights frameworks (EU, Brazil) |
+| **Geopolitical arms race intensifies** | Maintain strict neutrality; position the commons as a non-aligned alternative; prioritize build-out in third countries (India, Brazil, AU/NZ, African Union members) |
+
+**The guiding assumption:** If top-down leverage fails, bottom-up pull must compensate. Phase 0's shadow commons is not just a precursor — it is the fallback position. If regulatory leverage proves unavailable, the commons must be good enough that participation becomes economically rational.
+
+---
+
 ## 5. Phase 2: Federated Build-Out (2028 – 2030)
 
 *Scaling the commons. This phase transitions from pilots to infrastructure.*
@@ -492,8 +507,27 @@ All bodies are temporary, sunsetting as formal structures take effect.
 |-----------|----------------|------------|-------|
 | **Transparency non-compliance** | Public disclosure | Fine (revenue-based) | Compute cap |
 | **Reality Rent evasion** | Default rate applied | Double damages | Market access ban |
-| **Parasitic behavior** | Local kill switch | Regional isolation | Global quarantine |
+| **Parasitic behavior** | Context access severed (local) | Regional isolation | Global quarantine (see 8.3) |
 | **Systemic harm** | Bond forfeiture | License suspension | Permanent exclusion |
+
+---
+
+### 8.3 Algorithmic Quarantine (Critical Infrastructure Safe Mode)
+
+A binary kill switch for systems managing critical infrastructure — energy grids, hospitals, water treatment — would cause catastrophic collateral harm. The enforcement architecture therefore uses **graduated quarantine** rather than termination.
+
+| Level | Trigger | Action | Critical Infrastructure |
+|-------|---------|--------|------------------------|
+| **Yellow** | Transparency violation or rent evasion | Warning; enforced audit within 14 days | No disruption |
+| **Orange** | Confirmed parasitic behavior (local) | Local context access severed; system reverts to last audited baseline model | Critical services continue on baseline |
+| **Red** | Confirmed systemic harm or capability threshold breach | Regional or global quarantine; all new data ingestion halted; API access restricted to maintenance-only | Critical services run on sandboxed previous-version baseline with no external connectivity |
+
+**Baseline requirements for critical infrastructure deployments:**
+- Every system managing Tier 1 infrastructure must maintain a cryptographically signed, independently audited baseline version capable of autonomous operation without trunk connectivity
+- Baseline versions are refreshed every 6 months under Trust oversight
+- Quarantine-to-baseline failover must be tested quarterly, with results published
+
+**Restoration:** A quarantined system may only be restored after independent audit by the Technical Steering Committee confirms the triggering behavior has been resolved. Restoration requires 2/3 approval from the relevant CIN Council.
 
 ---
 
@@ -508,11 +542,12 @@ All bodies are temporary, sunsetting as formal structures take effect.
 | **Corporate consolidation accelerates** | High | Build shadow commons; use antitrust where possible; focus on pull, not push |
 | **Geopolitical fragmentation (US vs. China)** | High | Maintain neutrality; build in third countries; keep commons open |
 | **CIN capture by elites** | Medium | Sortition for governance; transparency mandates; peer validation |
-| **Technical breakthroughs outpace governance** | High | Capability thresholds with automatic pauses; kill switch; fail-safes not fail-deadly |
+| **Technical breakthroughs outpace governance** | High | Capability thresholds with automatic pauses; quarantine protocols; fail-safes not fail-deadly |
 | **Reality Rent captured by middlemen** | Medium | Direct CIN-to-community payment; transparency reporting; audit rights |
 | **Global South excluded** | High | Dedicated funding; technology transfer; South-South cooperation hubs |
 | **Whistleblowers unprotected** | Medium | Secure infrastructure; legal support; asylum pathways |
-| **Kill switch causes collateral harm** | Low | Quarantine not kill; baseline mode for critical infrastructure; graduated response |
+| **Quarantine causes collateral harm** | Low | Graduated levels (8.3); baseline mode for critical infrastructure; quarterly failover testing |
+| **Choke point leverage fails** | Medium | Fallback to market-based pull (4.6); coalition of the willing; open-source competition |
 
 ---
 
