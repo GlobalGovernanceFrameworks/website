@@ -40,12 +40,13 @@
 	}
 
 	// --- PDF ---
-	let charterPdfPath = $derived(
-		`/downloads/${currentLocale === 'sv' ? 'sv' : 'en'}/fractal-intelligence-accord-charter-v1.0.pdf`
-	);
-	let protocolPdfPath = $derived(
-		`/downloads/${currentLocale === 'sv' ? 'sv' : 'en'}/fractal-intelligence-accord-transition-protocol-v1.0.pdf`
-	);
+ let charterPdfPath = $derived(
+   `/downloads/${currentLocale}/fractal-intelligence-accord-charter-v1.0.pdf`
+ );
+ let protocolPdfPath = $derived(
+   `/downloads/${currentLocale}/fractal-intelligence-accord-transition-protocol-v1.0.pdf`
+ );
+
 	let pdfLabel = $derived(
 		translationsReady
 			? ($t('common.actions.downloadPdf') || (currentLocale === 'sv' ? 'Ladda ner PDF' : 'Download PDF'))

@@ -34,32 +34,49 @@ export async function load({ depends, url }) {
 
   const sections = ['charter', 'transition-protocol'];
 
+  // Track which sections fell back to English
+  const sectionsUsingEnglishFallback = new Set();
+
   const content = {};
   let loadedSections = 0;
 
   for (const section of sections) {
     try {
-      // Content lives in framework-outlines, not locale-split
+      // Try current locale first
       const mod = await import(
-        `$lib/content/framework-outlines/tier-2/fractal-intelligence-accord/${section}.md`
+        `$lib/content/framework-outlines/${currentLocale}/tier-2/fractal-intelligence-accord/${section}.md`
       );
       content[section] = mod;
       loadedSections++;
-    } catch (err) {
-      console.warn(`Could not load section ${section}:`, err.message);
-      content[section] = {
-        default: function MissingSection() {
-          return {
-            render: () => ({
-              html: `<div class="missing-section-content">
-                <h2>Section "${section}" not found</h2>
-                <p>This content is still being developed.</p>
-              </div>`,
-              css: { code: '', map: null }
-            })
-          };
+    } catch (primaryError) {
+      // Fall back to English
+      try {
+        const fallback = await import(
+          `$lib/content/framework-outlines/en/tier-2/fractal-intelligence-accord/${section}.md`
+        );
+        content[section] = fallback;
+        loadedSections++;
+
+        if (currentLocale !== 'en') {
+          sectionsUsingEnglishFallback.add(section);
         }
-      };
+      } catch (fallbackError) {
+        console.warn(`Could not load section ${section} in any language:`, fallbackError.message);
+
+        content[section] = {
+          default: function MissingSection() {
+            return {
+              render: () => ({
+                html: `<div class="missing-section-content">
+                  <h2>Section "${section}" not found</h2>
+                  <p>This content is still being developed.</p>
+                </div>`,
+                css: { code: '', map: null }
+              })
+            };
+          }
+        };
+      }
     }
   }
 
@@ -67,7 +84,7 @@ export async function load({ depends, url }) {
     sections: content,
     isModular: true,
     isPrintMode,
-    sectionsUsingEnglishFallback: [],
+    sectionsUsingEnglishFallback: Array.from(sectionsUsingEnglishFallback),
     loadedSectionsCount: loadedSections,
     totalSectionsCount: sections.length,
 
@@ -83,7 +100,7 @@ export async function load({ depends, url }) {
     debug: {
       currentLocale,
       availableSections: Object.keys(content),
-      fallbackSections: [],
+      fallbackSections: Array.from(sectionsUsingEnglishFallback),
       loadSuccess: loadedSections === sections.length,
       pathHandling: {
         originalPath: url.pathname,
