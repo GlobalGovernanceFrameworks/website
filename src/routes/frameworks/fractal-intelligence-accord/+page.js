@@ -80,6 +80,9 @@ export async function load({ depends, url }) {
     }
   }
 
+  // Add virtual index section (rendered by the component, not from markdown)
+  content['index'] = { default: null };
+
   return {
     sections: content,
     isModular: true,

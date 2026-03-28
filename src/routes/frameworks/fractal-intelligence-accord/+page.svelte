@@ -58,19 +58,11 @@
 	let statusInfo = $derived({ text: statusText, class: statusClass });
 
 	// --- SECTION GROUPS ---
-	const sectionGroups = {
-		overview: ['index'],
-		documents: ['charter', 'transition-protocol']
-	};
+ const sectionGroups = {
+   documents: ['index', 'charter', 'transition-protocol']
+ };
 
 	const navGroups = [
-		{
-			id: 'overview',
-			titleKey: 'overview',
-			defaultTitle: 'Overview',
-			icon: '📋',
-			sections: sectionGroups.overview
-		},
 		{
 			id: 'documents',
 			titleKey: 'documents',
@@ -84,7 +76,7 @@
 	let i18nPageObject = $derived({
 		...accordFramework,
 		sectionIcons: {
-			index: '🧠',
+			index: '🌀',
 			charter: '📜',
 			'transition-protocol': '🗺️'
 		}

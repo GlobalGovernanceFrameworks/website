@@ -238,8 +238,8 @@
 							/>
 						</svg>
       <span>
-          {(translationsReady && (i18nPageObject.navigation?.backToOverview || $t('common.navigation.backToFrameworks'))) ||
-              'Back to Frameworks Overview'}
+        {(translationsReady && ($t('common.navigation.backToFrameworks') || i18nPageObject.navigation?.backToOverview)) ||
+            'Back to Frameworks Overview'}
       </span>
 					</a>
 				</div>

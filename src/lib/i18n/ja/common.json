@@ -18,6 +18,9 @@
       }
     }
   },
+  "navigation": {
+    "backToFrameworks": "フレームワーク概要"
+  },
   "header": {
     "home": "ホーム",
     "resources": "リソース",

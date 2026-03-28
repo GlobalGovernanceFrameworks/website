@@ -18,6 +18,9 @@
       }
     }
   },
+  "navigation": {
+    "backToFrameworks": "Ramverksöversikt"
+  },
   "header": {
     "home": "Hem",
     "resources": "Resurser",

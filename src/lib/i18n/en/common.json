@@ -18,6 +18,9 @@
        }
     }
   },
+  "navigation": {
+    "backToFrameworks": "Frameworks Overview"
+  },
   "header": {
     "home": "Home",
     "resources": "Resources",
