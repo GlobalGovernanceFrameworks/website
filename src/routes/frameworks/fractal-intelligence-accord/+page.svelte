@@ -118,9 +118,13 @@
 	</title>
 	<meta
 		name="description"
-		content={i18nPageObject.meta?.description ||
-			'AGI governance for human meaning: a charter and transition protocol for compute subsidiarity, contextual intelligence, and cognitive sovereignty.'}
+		content={i18nPageObject.meta?.description || '...'}
 	/>
+	<meta property="og:title" content={i18nPageObject.meta?.title || 'The Fractal Intelligence Accord'} />
+	<meta property="og:description" content={i18nPageObject.meta?.description || 'AGI governance for human meaning: a charter and transition protocol for compute subsidiarity, contextual intelligence, and cognitive sovereignty.'} />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://globalgovernanceframeworks.org/frameworks/fractal-intelligence-accord" />
+	<meta property="og:image" content="https://globalgovernanceframeworks.org/images/og/fractal-intelligence-accord.png" />
 </svelte:head>
 
 <FrameworkLayout

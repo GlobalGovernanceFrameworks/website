@@ -5,6 +5,7 @@ import { browser } from '$app/environment';
 import { error } from '@sveltejs/kit';
 
 export const csr = true;
+export const ssr = true
 
 export async function load({ depends, url }) {
   depends('app:locale');
