@@ -135,6 +135,11 @@ const config = {
         '/frameworks/guides/bioregional-compass/playbooks?lang=sv',
         // (You may need to add more sub-pages from guides if they exist)
 
+        // Fractal Intelligence Accord
+        '/frameworks/fractal-intelligence-accord?lang=en',
+        '/frameworks/fractal-intelligence-accord?lang=sv',
+        '/frameworks/fractal-intelligence-accord?lang=ja',
+
         // --- Framework Tools & Visuals (Category Indexes) ---
         '/frameworks/tools?lang=en',
         '/frameworks/tools?lang=sv',
