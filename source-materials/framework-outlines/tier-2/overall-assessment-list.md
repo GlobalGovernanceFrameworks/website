@@ -30,13 +30,17 @@ Here is the combined ranking of all 28 frameworks in order of readiness for impl
 
 15. **Oceans & Marine Governance Framework (v1.1)** — Strong Blue Heart metaphor, enforcement detail, but metaphor overload and high seas gaps.
 16. **The Cognitive Sovereignty Accord (v1.7)** — Clear four-pillar structure, Sacred Reciprocity License, but ambitious timelines.
+REVISION DONE
 17. **The Cairn Protocol / Manifesto for Post-Addiction Futures (v2.3)** — Powerful Recovery Weaver concept, but tonal inconsistency and underdeveloped legal pathways.
 REVISION DONE
 18. **Global Health & Pandemic Security Framework (v1.0)** — Professional structure, community-story framing, but conventionally framed and weak on root causes.
+REVISION DONE
 19. **The Hearthlight Protocol (v1.7)** — Philosophically sound, emotionally resonant, but legacy interface gaps and assumes existing GGF infrastructure.
+REVISION DONE
 20. **The Capacity Engine (v2.5)** — Comprehensive vision for learning, but overly dense, jargon-heavy, and unclear actionability.
 REVISION DONE
 21. **The Phoenix Protocol (v4.0)** — Technical depth, Material Passport system, but document density and mission creep.
+REVISION DONE
 22. **The Fractal Intelligence Accord (v6.0)** — Conceptual sophistication, Texture Mandate, but premature codification and extreme complexity.
 REVISION DONE
 
@@ -49,7 +53,9 @@ REVISION DONE
 24. **The Prometheus Protocol (v7.1)** — Compelling vision for pharmaceutical commons, but document bloat and unclear transition from current system.
 REVISION DONE
 25. **The Synoptic Protocol (v3.2)** — Philosophical sophistication, exceptional epistemic analysis, but operational mechanisms underdeveloped.
+REVISION DONE
 26. **Global Framework for Water & Sanitation Governance (v4.1)** — Comprehensive, digital water stewardship, but extreme length and list-heavy structure.
+REVISION DONE
 27. **The Sundown Protocol (v1.0)** — Critical focus on industrial transition, worker protection, but structural over-engineering and unclear institutional hierarchy.
 REVISION DONE
 28. **Climate & Energy Governance Framework** — Technically sound, but lacks unifying narrative and relies on unproven mechanisms like "pull effect" without sufficient operational detail.

@@ -87,6 +87,8 @@ This framework is one of the most focused and well-structured. Its four-pillar a
 - **Enforcement Detail:** While the role of the Digital Justice Tribunal is mentioned, the framework could benefit from a more detailed discussion of how its rulings would be enforced, particularly against powerful multinational corporations operating in jurisdictions outside the GGF's immediate reach.
 - **Global South Access:** While cognitive equity is mentioned, the framework could be strengthened by including more concrete provisions to ensure that the therapies and research it governs are accessible to Global South communities, not just a luxury for the wealthy.
 
+REVISION DONE
+
 ---
 
 ### 6. Global Guardian Framework: Animal Welfare for a Shared Future (v7.0)

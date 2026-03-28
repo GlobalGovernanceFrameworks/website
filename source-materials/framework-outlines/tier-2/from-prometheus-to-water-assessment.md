@@ -55,6 +55,8 @@ This framework is the most philosophically sophisticated of the set. Its recogni
 
 **Path to Improvement:** Develop a detailed operational plan for Public Epistemic Institutions, including business models, governance structures, and pathways to public trust. Specify the epistemic curriculum in more concrete terms with pilot-ready modules. Develop a detailed enforcement protocol for the Digital Justice Tribunal, including definitions, standing rules, evidentiary standards, and graduated sanctions.
 
+REVISION DONE
+
 ---
 
 ### 4. Global Framework for Water & Sanitation Governance (v4.1)
@@ -71,6 +73,8 @@ This framework is one of the most comprehensive in the set, covering everything 
 - **Conflicting Governance Models:** The framework simultaneously proposes Global Water & Sanitation Council, Planetary Health Council oversight, Earth Council oversight, Water Assemblies, and multiple other bodies without clarifying their relationships.
 
 **Path to Improvement:** Radically streamline the document. Create a "Core Framework" (15-20 pages) that focuses on the essential governance structure, financing mechanisms, and accountability systems. Move detailed mechanisms (types of financing, technology specifications, regional blueprints) to appendices. Integrate digital water governance throughout rather than treating it as a separate section. Specify enforcement mechanisms in detail.
+
+REVISION DONE
 
 ---
 
