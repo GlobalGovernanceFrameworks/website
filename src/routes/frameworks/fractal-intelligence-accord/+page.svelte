@@ -405,7 +405,7 @@
 		background: var(--card-bg, rgba(255, 255, 255, 0.05));
 		border: 1px solid var(--border-color, rgba(255, 255, 255, 0.15));
 		border-radius: 8px;
-		color: var(--text-primary, #f0f0f0);
+  color: var(--text-secondary, #aaa);
 		text-decoration: none;
 		font-size: 0.9rem;
 		transition: all 0.2s ease;

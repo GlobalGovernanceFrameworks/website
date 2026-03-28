@@ -71,7 +71,7 @@ To be enforceable, concepts must be measurable. This section defines the key ter
 | Term | Definition |
 |------|------------|
 | **Compute** | Measured in FLOPs (floating point operations). For governance purposes, tracked at the threshold of 1e25 FLOPs per training run (frontier model threshold, updated annually). |
-| **Compute Concentration** | Measured by Gini coefficient of total active compute capacity across entities. Target: Gini < 0.6 by 2030. |
+| **Compute Concentration** | Measured by Gini coefficient of total active compute capacity across entities. Target: Gini `<` 0.6 by 2030. |
 | **Strategic Compute** | Ultra-low latency infrastructure controlling critical systems (grids, hospitals, water). Highest oversight tier. |
 
 ### 2.2 Context
@@ -235,7 +235,7 @@ To be enforceable, concepts must be measurable. This section defines the key ter
 
 | Element | Description |
 |---------|-------------|
-| **Gini Coefficient Target** | Compute distribution Gini < 0.6 by 2030. Annual reporting required. |
+| **Gini Coefficient Target** | Compute distribution Gini `<` 0.6 by 2030. Annual reporting required. |
 | **Enforcement** | Entities above threshold face: 1) Restricted access to public procurement; 2) Increased capital requirements; 3) Mandatory compute redistribution licensing |
 | **Choke Point Leverage** | Chip exports conditional on compliance. Taiwan, Netherlands, and US coordinate |
 
@@ -424,7 +424,7 @@ Phase 1 leverage depends on assumptions — cooperative choke point governments,
 ### 6.1 Objectives
 
 - Global Trunk fully operational, governed by Multi-Stakeholder Trust
-- Compute Gini < 0.6 globally
+- Compute Gini `<` 0.6 globally
 - 500+ CINs covering all major language and cultural contexts
 - Reality Rent institutionalized as core AI funding mechanism
 
@@ -447,9 +447,9 @@ Phase 1 leverage depends on assumptions — cooperative choke point governments,
 
 Full subsidiarity is achieved when:
 
-1. **Compute Gini < 0.6** across all entities operating frontier models
-2. **CIN coverage > 80%** of global linguistic and cultural contexts
-3. **Reality Rent > 50%** of frontier model training costs
+1. **Compute Gini `<` 0.6** across all entities operating frontier models
+2. **CIN coverage `>` 80%** of global linguistic and cultural contexts
+3. **Reality Rent `>` 50%** of frontier model training costs
 4. **Trust ratified** by 100+ BAZs and 50+ nation-states
 5. **Global Trunk** has completed two full training cycles with demonstrated safety
 
@@ -590,7 +590,7 @@ A binary kill switch for systems managing critical infrastructure — energy gri
 |--------|----------------|----------------|----------------|
 | **CINs** | 5 | 30 | 100 |
 | **CIN Members** | 1,000 | 10,000 | 100,000 |
-| **Compute Gini** | No target (baseline) | <0.7 | <0.6 |
+| **Compute Gini** | No target (baseline) | `<`0.7 | `<`0.6 |
 | **Reality Rent ($)** | $0 (pilot) | $50M | $500M |
 | **Transparency Compliance** | N/A | 50% | 80% |
 | **Whistleblower Cases** | 0 | 5 | 20 |
