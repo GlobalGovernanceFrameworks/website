@@ -29,6 +29,7 @@ Here is the combined ranking of all 28 frameworks in order of readiness for impl
 ### Tier 3: Conceptually Strong, Implementation Gaps
 
 15. **Oceans & Marine Governance Framework (v1.1)** — Strong Blue Heart metaphor, enforcement detail, but metaphor overload and high seas gaps.
+REVISION DONE
 16. **The Cognitive Sovereignty Accord (v1.7)** — Clear four-pillar structure, Sacred Reciprocity License, but ambitious timelines.
 REVISION DONE
 17. **The Cairn Protocol / Manifesto for Post-Addiction Futures (v2.3)** — Powerful Recovery Weaver concept, but tonal inconsistency and underdeveloped legal pathways.
@@ -53,10 +54,10 @@ REVISION DONE
 24. **The Prometheus Protocol (v7.1)** — Compelling vision for pharmaceutical commons, but document bloat and unclear transition from current system.
 REVISION DONE
 25. **The Synoptic Protocol (v3.2)** — Philosophical sophistication, exceptional epistemic analysis, but operational mechanisms underdeveloped.
-REVISION DONE
+REVISION DONE + Claude assessment & revision
 26. **Global Framework for Water & Sanitation Governance (v4.1)** — Comprehensive, digital water stewardship, but extreme length and list-heavy structure.
-REVISION DONE
+REVISION DONE + Claude assessment & revision
 27. **The Sundown Protocol (v1.0)** — Critical focus on industrial transition, worker protection, but structural over-engineering and unclear institutional hierarchy.
-REVISION DONE
+REVISION DONE + Claude assessment & revision
 28. **Climate & Energy Governance Framework** — Technically sound, but lacks unifying narrative and relies on unproven mechanisms like "pull effect" without sufficient operational detail.
-REVISION DONE
+REVISION DONE + Claude assessment & revision
