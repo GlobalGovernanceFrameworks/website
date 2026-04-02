@@ -4,10 +4,8 @@
 
 **Document Type:** Foundational Charter — Philosophical & Visionary  
 **Status:** Living Charter — Ratification Draft  
-**Version:** 1.1  
-**Date:** April 2026
-
-**Version 1.1 changes:** Added Charter Interpretation Protocol (Section 7). Added TEE/autonomy acknowledgment in Architecture of Meaning. Renumbered subsequent sections.
+**Version:** 1.0  
+**Date:** March 2026
 
 ---
 
@@ -19,9 +17,8 @@
 4. Core Principles
 5. The Architecture of Meaning
 6. Rights and Sovereignties
-7. Charter Interpretation Protocol
-8. The Long Horizon
-9. A Call to Participation
+7. The Long Horizon
+8. A Call to Participation
 
 ---
 
@@ -177,8 +174,6 @@ When AI trains on human context — the languages, the practices, the stories of
 
 The centralizing logic of corporate AI produces models that are powerful but placeless. They know everything and understand nothing. The Accord's architecture reverses this: shared foundations that ensure safety, with local adaptation that ensures relevance. Communities can innovate and experiment within safety bounds. Intelligence scales without erasing the texture it depends on.
 
-This charter acknowledges a tension at the heart of this commitment. Safety requires that core model weights cannot be freely modified — otherwise safety invariants can be trivially removed. But restricting modification also restricts the depth of local adaptation. The Transition Protocol addresses this through cryptographic access controls that allow meaningful fine-tuning while preserving safety bounds. This is a genuine tradeoff, not a solved problem: the boundary between "enough autonomy for real adaptation" and "enough constraint for real safety" will shift as the technology evolves, and must be revisited with each major revision of the Protocol.
-
 ### Revocability: Accountability Must Be Real
 
 The most powerful intelligence ever built must have a way to stop it. This is not a technical detail. It is a moral necessity. If intelligence behaves parasitically — extracting without consent, manipulating without transparency, violating sovereignty — those affected must have the power to sever its access to their context, and to quarantine it from critical systems without causing collateral harm.
@@ -227,41 +222,7 @@ Intelligence exists to serve human flourishing, not the other way around. When i
 
 ---
 
-## 7. Charter Interpretation Protocol
-
-*When the Transition Protocol's mechanisms conflict with Charter principles, how is the conflict resolved?*
-
----
-
-This charter is a living document, but it is also a constitutional one. The Transition Protocol implements its principles through specific mechanisms — compute thresholds, Reality Rent formulas, Trusted Execution Environments, Algorithmic Quarantine. Those mechanisms may, in practice, create tensions with Charter principles.
-
-**Interpretation hierarchy:**
-
-When principles conflict with each other or with Protocol mechanisms, resolution follows this order:
-
-1. **Precautionary Principle** prevails when consequences are irreversible. If a mechanism could cause irreversible harm, halt and review.
-2. **Subsidiarity** prevails when consequences are local and reversible. Local communities decide.
-3. **Transparency** prevails in all cases. Secrecy is presumptively invalid.
-
-**Mapping of Charter principles to Protocol mechanisms:**
-
-| Charter Principle | Primary Protocol Mechanisms | Known Tensions |
-|-------------------|----------------------------|----------------|
-| Subsidiarity | Local Branches, CIN autonomy, BAZ fine-tuning | TEE restrictions limit depth of local adaptation (see Section 5, Adaptation) |
-| Anti-Monopoly | Compute Gini threshold, chip export leverage | Enforcement depends on geopolitical cooperation that may not materialize (Protocol Section 4.6 fallbacks apply) |
-| Context Sovereignty | Reality Rent, CIN licensing, Cultural Sovereignty Veto, Red Lines Registry | Revenue projections are aspirational; CIN formation barriers may exclude small communities |
-| Ecological Constraint | Carbon-negative training requirement, energy-tied compute | Enforcement mechanisms are weak during Phase 0-1 |
-| Fractal Autonomy | Trunk-and-branch architecture, Autonomy Rule | Safety invariants constrain autonomy by design; boundary is revisited with each Protocol revision |
-| Precautionary Governance | Capability thresholds, automatic pauses, Algorithmic Quarantine | Detection of emergent capabilities is unreliable; thresholds may lag reality |
-| Intergenerational Accountability | Future Generations Advocate, Horizon Review | Representation of future generations is inherently speculative |
-
-**Interpretation authority:** During Phases 0-1, the Ethics Advisory Panel (Protocol Section 7.1) interprets Charter-Protocol tensions. From Phase 2 onward, the Arbitration Panel assumes this role, with appeals on procedural grounds to a rotating CIN sortition panel.
-
-**Amendment:** This charter may be amended by supermajority (2/3) of the Multi-Stakeholder Trust plus ratification by 60% of certified CINs. Amendments to Sections 2 (What We Are Protecting) and 6 (Rights and Sovereignties) require 80% ratification, reflecting their foundational status.
-
----
-
-## 8. The Long Horizon
+## 7. The Long Horizon
 
 *We are not building for tomorrow. We are building for generations we will never meet.*
 
@@ -279,7 +240,7 @@ This is not a guarantee. It is a commitment.
 
 ---
 
-## 9. A Call to Participation
+## 8. A Call to Participation
 
 This charter is not a finished document. It is an invitation.
 

@@ -4,8 +4,10 @@
 
 **Dokumenttyp:** Grundläggande stadga — Filosofisk & visionär
 **Status:** Levande stadga — Utkast för ratificering
-**Version:** 1.0
-**Datum:** Mars 2026
+**Version:** 1.1
+**Datum:** April 2026
+
+**Ändringar i version 1.1:** Lade till protokoll för tolkning av stadgan (avsnitt 7). Lade till erkännande av TEE/autonomi i meningens arkitektur. Numrerade om efterföljande avsnitt.
 
 ---
 
@@ -17,8 +19,9 @@
 4. Kärnprinciper
 5. Meningens arkitektur
 6. Rättigheter och suveräniteter
-7. Den långa horisonten
-8. En uppmaning till deltagande
+7. Protokoll för tolkning av stadgan
+8. Den långa horisonten
+9. En uppmaning till deltagande
 
 ---
 
@@ -36,7 +39,7 @@ I två århundraden har denna logik urholkat det mänskliga livet. Den har ersat
 
 Denna stadga förkastar den framtiden.
 
-Avtalet för fraktal intelligens (The Fractal Intelligence Accord) bygger på en enda övertygelse: **AGI måste styras inte för att maximera effektivitet, utan för att skydda och expandera det mänskliga livets textur.** Detta innebär:
+Avtalet för fraktal intelligens bygger på en enda övertygelse: **AGI måste styras inte för att maximera effektivitet, utan för att skydda och expandera det mänskliga livets textur.** Detta innebär:
 
 - **Mångfald framför enhetlighet.** Ett tusen sätt att veta, inte en optimerad sanning.
 - **Suveränitet framför centralisering.** Samhällen kontrollerar den intelligens som formar deras liv.
@@ -150,19 +153,19 @@ Intelligensens arkitektur bör spegla livets arkitektur: en stam av delad kapaci
 
 När konsekvenser är irreversibla råder försiktighet. Vi behöver inte perfekta bevis på skada för att agera. Bevisbördan ligger hos dem som föreslår potentiellt katastrofal utrullning.
 
-**Vad detta innebär:** Kapacitetströsklar utlöser automatiska pauser. Återkallbarhet (revocability) är inbyggt i arkitekturen. Vi styr som om AGI spelar roll — för det gör det.
+**Vad detta innebär:** Kapacitetströsklar utlöser automatiska pauser. Återkallbarhet är inbyggt i arkitekturen. Vi styr som om AGI spelar roll — för det gör det.
 
 ### 7. Intergenerationell ansvarsskyldighet
 
 Vi är förvaltare, inte ägare. De beslut vi fattar binder dem som kommer efter oss. Vi måste agera med den tyngden i åtanke.
 
-**Vad detta innebär:** Framtida generationer har en röst i styrningen. Horisontgranskningen (The Horizon Review) blickar årtionden framåt. De oföddas rättigheter är inte hypotetiska.
+**Vad detta innebär:** Framtida generationer har en röst i styrningen. Horisontgranskningen blickar årtionden framåt. De oföddas rättigheter är inte hypotetiska.
 
 ---
 
 ## 5. Meningens arkitektur
 
-*Styrningen måste designas för att tjäna meningen. Detta är de arkitektoniska åtaganden som följer av våra principer. Övergångsprotokollet (The Transition Protocol) specificerar hur var och en implementeras.*
+*Styrningen måste designas för att tjäna meningen. Detta är de arkitektoniska åtaganden som följer av våra principer. Övergångsprotokollet specificerar hur var och en implementeras.*
 
 ---
 
@@ -173,6 +176,8 @@ När AI tränas på mänsklig kontext — språken, praktikerna, berättelserna 
 ### Anpassning: intelligens som skalar utan att homogenisera
 
 Den centraliserande logiken i företagsdriven AI producerar modeller som är kraftfulla men platslösa. De vet allt och förstår ingenting. Avtalets arkitektur vänder på detta: delade grunder som säkerställer säkerhet, med lokal anpassning som säkerställer relevans. Samhällen kan innovera och experimentera inom säkerhetsgränserna. Intelligens skalar utan att radera den textur den är beroende av.
+
+Denna stadga erkänner en spänning i hjärtat av detta åtagande. Säkerhet kräver att kärnmodellens vikter inte fritt kan modifieras — annars kan säkerhetsinvarianter enkelt tas bort. Men att begränsa modifiering begränsar också djupet i den lokala anpassningen. Övergångsprotokollet adresserar detta genom kryptografiska åtkomstkontroller som tillåter meningsfull finjustering samtidigt som säkerhetsgränserna bevaras. Detta är en genuin avvägning, inte ett löst problem: gränsen mellan "tillräcklig autonomi för verklig anpassning" och "tillräcklig begränsning för verklig säkerhet" kommer att förskjutas i takt med att teknologin utvecklas, och måste ses över vid varje större revidering av protokollet.
 
 ### Återkallbarhet: ansvarsskyldighet måste vara verklig
 
@@ -222,7 +227,41 @@ Intelligens existerar för att tjäna mänskligt blomstrande, inte tvärtom. Nä
 
 ---
 
-## 7. Den långa horisonten
+## 7. Protokoll för tolkning av stadgan
+
+*När övergångsprotokollets mekanismer hamnar i konflikt med stadgans principer, hur löses då konflikten?*
+
+---
+
+Denna stadga är ett levande dokument, men den är också en konstitutionell handling. Övergångsprotokollet implementerar dess principer genom specifika mekanismer — trösklar för datakraft, formler för verklighetshyra, betrodda exekveringsmiljöer (Trusted Execution Environments), algoritmisk karantän. Dessa mekanismer kan i praktiken skapa spänningar med stadgans principer.
+
+**Tolkningshierarki:**
+
+När principer står i konflikt med varandra eller med protokollets mekanismer, följer lösningen denna ordning:
+
+1. **Försiktighetsprincipen** har företräde när konsekvenserna är irreversibla. Om en mekanism skulle kunna orsaka irreversibel skada, pausa och granska.
+2. **Subsidiaritet** har företräde när konsekvenserna är lokala och reversibla. Lokala samhällen beslutar.
+3. **Transparens** har företräde i alla lägen. Sekretess är presumtivt ogiltigt.
+
+**Kartläggning av stadgans principer mot protokollets mekanismer:**
+
+| Charter-princip | Primära protokollmekanismer | Kända spänningar |
+|-------------------|----------------------------|----------------|
+| Subsidiaritet | Lokala grenar, CIN-autonomi, BAZ-finjustering | Restriktioner i TEE begränsar djupet i lokal anpassning (se avsnitt 5, Anpassning) |
+| Antimonopol | Tröskel för Gini-koefficient gällande datakraft, exportkontroll av chip som hävstång | Tillämpning beror på geopolitiskt samarbete som kanske inte förverkligas (protokollets avsnitt 4.6 om fallbacks gäller) |
+| Kontextsuveränitet | Verklighetshyra, CIN-licensiering, veto för kulturell suveränitet, register över röda linjer | Intäktsprognoser är målinriktade; barriärer för att bilda CINs kan utesluta små samhällen |
+| Ekologisk begränsning | Krav på koldioxidnegativ träning, datakraft knuten till energi | Tillämpningsmekanismerna är svaga under fas 0-1 |
+| Fraktal autonomi | Stam- och grenarkitektur, autonomiregeln | Säkerhetsinvarianter begränsar i sin design autonomin; gränsen ses över vid varje revidering av protokollet |
+| Försiktighetsbaserad styrning | Kapacitetströsklar, automatiska pauser, algoritmisk karantän | Upptäckt av framväxande förmågor är opålitlig; trösklar kan släpa efter verkligheten |
+| Intergenerationell ansvarsskyldighet | Företrädare för framtida generationer, horisontgranskning | Representation av framtida generationer är till sin natur spekulativ |
+
+**Tolkningsauktoritet:** Under fas 0-1 tolkar den Etiska rådgivningspanelen (protokollets avsnitt 7.1) spänningar mellan stadgan och protokollet. Från och med fas 2 övertar Skiljenämnden denna roll, med möjlighet att överklaga av procedurmässiga skäl till en roterande lottningspanel från CINs.
+
+**Ändringar:** Denna stadga kan ändras genom kvalificerad majoritet (2/3) av Flerpartstrusten samt ratificering av 60 % av certifierade CINs. Ändringar av avsnitten 2 (Vad vi skyddar) och 6 (Rättigheter och suveräniteter) kräver 80 % ratificering, vilket återspeglar deras grundläggande status.
+
+---
+
+## 8. Den långa horisonten
 
 *Vi bygger inte för morgondagen. Vi bygger för generationer vi aldrig kommer att möta.*
 
@@ -240,7 +279,7 @@ Detta är ingen garanti. Det är ett åtagande.
 
 ---
 
-## 8. En uppmaning till deltagande
+## 9. En uppmaning till deltagande
 
 Denna stadga är inte ett färdigt dokument. Det är en inbjudan.
 

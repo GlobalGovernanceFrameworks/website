@@ -6,13 +6,9 @@
 
 **Document Type:** Operational Protocol — Living Document  
 **Status:** Agile Protocol — Continuous Integration  
-**Version:** 1.1 (April 2026)  
+**Version:** 1.0 (March 2026)  
 **Update Cadence:** Quarterly minor updates; Annual major revisions  
 **Next Scheduled Review:** June 2026
-
-**Version 1.1 changes:** Added CIN small-community waiver pathway. Added compute Gini baseline estimate. Added revenue projection caveats. Added Cultural Sovereignty Veto Registry (Red Lines Registry). Added TEE/autonomy tradeoff acknowledgment in Global Trunk section. Added Charter-Protocol cross-reference note.
-
-**Companion Document:** This Protocol implements the principles articulated in the **Fractal Intelligence Charter v1.1**. The Charter defines *what* we are protecting and *why*; this Protocol defines *how* and *when*. When Protocol mechanisms conflict with Charter principles, the Charter's Interpretation Protocol (Charter Section 7) governs resolution.
 
 ---
 
@@ -75,7 +71,7 @@ To be enforceable, concepts must be measurable. This section defines the key ter
 | Term | Definition |
 |------|------------|
 | **Compute** | Measured in FLOPs (floating point operations). For governance purposes, tracked at the threshold of 1e25 FLOPs per training run (frontier model threshold, updated annually). |
-| **Compute Concentration** | Measured by Gini coefficient of total active compute capacity across entities. Estimated 2026 baseline: Gini ~0.92 (5 corporate entities and 2 state actors control >90% of frontier compute). Target: Gini < 0.6 by 2030. This target is aggressive — it requires roughly halving concentration in four years. If Phase 1 regulatory leverage proves insufficient (see Section 4.6 fallbacks), the target timeline extends but the direction is maintained. |
+| **Compute Concentration** | Measured by Gini coefficient of total active compute capacity across entities. Target: Gini `<` 0.6 by 2030. |
 | **Strategic Compute** | Ultra-low latency infrastructure controlling critical systems (grids, hospitals, water). Highest oversight tier. |
 
 ### 2.2 Context
@@ -85,7 +81,7 @@ To be enforceable, concepts must be measurable. This section defines the key ter
 | **Living Context** | Dynamic human systems — current cultural practices, active languages, ongoing social relations. Expires after 12 months unless re-validated. |
 | **Static Context** | Archived knowledge — published literature, historical records, completed cultural artifacts. No expiration. |
 | **Synthetic Context** | AI-generated data. Must carry provenance watermark. Subject to surcharge. |
-| **Contextual Intelligence Node (CIN)** | A certified cooperative that curates, protects, and licenses context. Requires: minimum 50 members, governance charter, dispute resolution mechanism, annual attestation. **Small-Community Waiver:** Communities with fewer than 50 members holding unique linguistic, cultural, or ecological knowledge may apply for CIN certification with a minimum of 10 members, provided they demonstrate context that is not represented in any existing CIN and submit a simplified governance charter. Waiver applications reviewed by the relevant regional CIN Council. |
+| **Contextual Intelligence Node (CIN)** | A certified cooperative that curates, protects, and licenses context. Requires: minimum 50 members, governance charter, dispute resolution mechanism, annual attestation. |
 
 ### 2.3 Harm
 
@@ -381,8 +377,6 @@ Phase 1 leverage depends on assumptions — cooperative choke point governments,
 | **Local Branches** | Fine-tuning through Trusted Execution Environments (no raw weight download) |
 | **Governance** | Multi-Stakeholder Trust oversees safety, capability releases, and branch access |
 
-**TEE/Autonomy Tradeoff:** Trusted Execution Environments prevent communities from downloading and freely modifying raw model weights — which is necessary to preserve safety invariants, but also limits the depth of local adaptation. Communities can fine-tune behavior, cultural context, and domain specialization within TEE bounds, but cannot alter foundational architecture. This is a genuine tension with the Charter's Fractal Autonomy principle (Charter Section 4.5). The boundary between "meaningful adaptation" and "safety constraint" is reviewed annually by the Technical Steering Committee, with CIN input, and expanded as safety verification tools mature. The goal is maximum autonomy consistent with demonstrated safety — not minimum autonomy justified by hypothetical risk.
-
 **Funding:**
 - Public-private partnership: aligned governments, philanthropic capital, CIN revenue reinvestment
 - Competitive with corporate models to create pull
@@ -403,7 +397,6 @@ Phase 1 leverage depends on assumptions — cooperative choke point governments,
 **Revenue Scale:**
 - Target: $500M annual Reality Rent flowing to CINs by 2030
 - Allocation: 70% to CIN members, 20% to CIN operations, 10% to Global Commons Fund for CIN expansion
-- **Caveat:** These projections are aspirational. The global AI training data market is currently estimated in the low single-digit billions. $500M through CIN licensing by 2030 assumes rapid adoption across multiple jurisdictions, widespread CIN formation, and corporate willingness to license rather than rely on synthetic data. Actual revenue will depend on the pace of Phase 1 regulatory adoption and the quality advantage CIN-licensed data demonstrates over synthetic alternatives. If revenue lags projections, CIN expansion funding shifts to Global Commons Fund and philanthropic sources until the market develops.
 
 ---
 
@@ -538,24 +531,6 @@ A binary kill switch for systems managing critical infrastructure — energy gri
 
 ---
 
-### 8.4 Cultural Sovereignty Veto Registry (Red Lines Registry)
-
-When a CIN exercises the Cultural Sovereignty Veto — permanently withdrawing knowledge domains from AI training — that decision must be recorded, enforced, and protected against future re-extraction.
-
-**Registry Architecture:**
-
-| Element | Description |
-|---------|-------------|
-| **What is recorded** | The knowledge domain withdrawn (described at a level of abstraction that does not itself disclose the protected knowledge), the CIN exercising the veto, the date, and the scope (specific model, all models, specific use cases) |
-| **Persistence** | Entries are permanent. A veto can only be reversed by the originating CIN through the same governance process that created it |
-| **Technical enforcement** | All training pipelines accessing CIN-licensed data must check against the Registry before ingestion. Data matching a veto entry is automatically excluded. Provenance Ledger integration ensures traceability |
-| **Audit** | Annual audit confirms that vetoed knowledge domains are not present in models trained after the veto date. Audit conducted by independent technical auditors, funded from Reality Rent allocation |
-| **Penalties for violation** | Training on vetoed knowledge triggers immediate context access severance (Orange-level quarantine), bond forfeiture to the affected CIN, and Data Destruction Rights (purging of derived algorithmic training data as specified in the Charter) |
-
-**Historical record:** The Registry also serves as a historical record of community decisions about their own knowledge. Future governance bodies can learn from patterns of withdrawal — which knowledge communities choose to protect, and why — without accessing the protected knowledge itself.
-
----
-
 ## 9. Failure Modes & Countermeasures
 
 *Explicit acknowledgment of how this could fail, and what we do about it.*
@@ -586,14 +561,11 @@ When a CIN exercises the Cultural Sovereignty Veto — permanently withdrawing k
 |------|------------|
 | **CIN** | Contextual Intelligence Node — certified cooperative stewarding knowledge |
 | **Compute** | Measured FLOPs; governance threshold 1e25 per run |
-| **Cultural Sovereignty Veto Registry** | Permanent, auditable record of CIN knowledge withdrawal decisions; enforced through training pipeline integration |
 | **Global Trunk** | Federated foundational model, governed by Trust |
-| **Local Branch** | Fine-tuned model adapted to local context; accessed through Trusted Execution Environments |
+| **Local Branch** | Fine-tuned model adapted to local context |
 | **Living Context** | Dynamic human systems; expires after 12 months |
 | **Parasitic Behavior** | Defined operationally in Section 2.3 |
 | **Reality Rent** | Compensation for use of human context |
-| **Small-Community Waiver** | CIN certification pathway for communities with fewer than 50 members holding unique context |
-| **TEE** | Trusted Execution Environment — cryptographic access control allowing fine-tuning without raw weight download |
 | **Trust** | Multi-Stakeholder Trust governing Global Trunk |
 
 ---
@@ -603,8 +575,7 @@ When a CIN exercises the Cultural Sovereignty Veto — permanently withdrawing k
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.0 | March 2026 | Initial operational protocol |
-| 1.1 | April 2026 | CIN small-community waiver; compute Gini baseline; revenue caveats; Cultural Sovereignty Veto Registry; TEE/autonomy tradeoff acknowledgment; Charter cross-references |
-| 1.2 | June 2026 | Quarterly update (based on Phase 0 learning) |
+| 1.1 | June 2026 | Quarterly update (based on Phase 0 learning) |
 | 2.0 | March 2027 | Annual major revision (Phase 0 evaluation, Phase 1 planning) |
 
 **Update Cadence:**

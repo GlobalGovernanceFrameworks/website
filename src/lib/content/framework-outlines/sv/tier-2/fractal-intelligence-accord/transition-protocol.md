@@ -6,9 +6,13 @@
 
 **Dokumenttyp:** Operativt protokoll — levande dokument
 **Status:** Agilt protokoll — kontinuerlig integration
-**Version:** 1.0 (mars 2026)
+**Version:** 1.1 (april 2026)
 **Uppdateringstakt:** Kvartalsvisa mindre uppdateringar; årliga större revideringar
 **Nästa planerade granskning:** Juni 2026
+
+**Ändringar i version 1.1:** Lade till undantagsväg för små samhällen gällande CIN. Lade till baslinjeuppskattning för Gini-koefficient för datakraft. Lade till förbehåll för intäktsprognoser. Lade till register över veto för kulturell suveränitet (register över röda linjer). Lade till erkännande av avvägningen kring TEE/autonomi i avsnittet om den Globala stammen. Lade till not om korsreferens mellan stadga och protokoll.
+
+**Ledsagande dokument:** Detta protokoll implementerar principerna som formuleras i **Stadgan för fraktal intelligens v1.1**. Stadgan definierar *vad* vi skyddar och *varför*; detta protokoll definierar *hur* och *när*. När protokollets mekanismer hamnar i konflikt med stadgans principer, styr stadgans tolkningsprotokoll (stadgans avsnitt 7) hur detta ska lösas.
 
 ---
 
@@ -41,7 +45,7 @@ Detta protokoll utgår inte från en värld som bara existerar i teorin. Det utg
 | **Datautvinning** | Modeller tränas på hela det publika internet utan samtycke, kompensation eller ansvarsskyldighet. Härkomst för data saknas helt. |
 | **Regulatoriskt gap** | Inget bindande internationellt ramverk. EU:s AI-förordning (AI Act) existerar men är oprövad. USA och Kina befinner sig i en kapprustning, inte i ett samarbetsramverk. |
 | **Styrningsinfrastruktur** | Inga fungerande BAZ (Bioregional Autonomous Zones) i de flesta regioner. Ingen fördragsratificering. Ekosystemet kring Global Governance Frameworks existerar på papper men inte i praktiken. |
-| **Civilsamhällets kapacitet** | Växande medvetenhet men begränsad samordning. Inga existerande CINs (Contextual Intelligence Nodes). Inga datafackföreningar. Ingen skuggallmänning. |
+| **Civilsamhällets kapacitet** | Växande medvetenhet men begränsad samordning. Inga existerande CINs. Inga datafackföreningar. Ingen skuggallmänning. |
 | **Teknisk osäkerhet** | Utvecklingsbanorna för förmågor är oförutsägbara. Säkerhetsforskningen halkar efter utrullningen. Upptäckten av framväxande (emergenta) förmågor är opålitlig. |
 
 **Den strategiska implikationen:** Vi kan inte styra från ovan. Det finns ingen global auktoritet som kan framtvinga efterlevnad. Vägen måste börja från sidan — genom att bygga alternativa strukturer som skapar dragningskraft (pull), inte tvång (push).
@@ -71,7 +75,7 @@ För att kunna tillämpas måste begrepp vara mätbara. Detta avsnitt definierar
 | Term | Definition |
 |------|------------|
 | **Datakraft (Compute)** | Mäts i FLOPs (flyttalsoperationer). För styrningsändamål spåras den vid tröskeln på 1e25 FLOPs per träningskörning (tröskel för frontier-modeller, uppdateras årligen). |
-| **Koncentration av datakraft** | Mäts genom Gini-koefficienten för den totala aktiva datakraftskapaciteten över enheter. Mål: Gini `<` 0,6 till år 2030. |
+| **Koncentration av datakraft** | Mäts genom Gini-koefficienten för den totala aktiva datakraftskapaciteten över enheter. Uppskattad baslinje för 2026: Gini ~0,92 (5 företagsenheter och 2 statliga aktörer kontrollerar >90 % av frontier-datakraften). Mål: Gini `<` 0,6 till år 2030. Detta mål är aggressivt — det kräver en ungefärlig halvering av koncentrationen på fyra år. Om den regulatoriska hävstången i fas 1 visar sig vara otillräcklig (se fallbacks i avsnitt 4.6), förlängs måltidslinjen men riktningen bibehålls. |
 | **Strategisk datakraft** | Infrastruktur med ultralåg latens som kontrollerar kritiska system (elnät, sjukhus, vatten). Den högsta nivån av tillsyn. |
 
 ### 2.2 Kontext
@@ -81,7 +85,7 @@ För att kunna tillämpas måste begrepp vara mätbara. Detta avsnitt definierar
 | **Levande kontext** | Dynamiska mänskliga system — nuvarande kulturella praktiker, levande språk, pågående sociala relationer. Löper ut efter 12 månader om den inte omvalideras. |
 | **Statisk kontext** | Arkiverad kunskap — publicerad litteratur, historiska register, färdiga kulturella artefakter. Inget utgångsdatum. |
 | **Syntetisk kontext** | AI-genererad data. Måste bära en vattenstämpel för härkomst. Omfattas av en tilläggsavgift. |
-| **Kontextuell intelligensnod (CIN)** | Ett certifierat kooperativ som curerar, skyddar och licensierar kontext. Krav: minst 50 medlemmar, en styrningsstadga, en tvistlösningsmekanism, årlig intygan. |
+| **Kontextuell intelligensnod (CIN)** | Ett certifierat kooperativ som curerar, skyddar och licensierar kontext. Krav: minst 50 medlemmar, en styrningsstadga, en tvistlösningsmekanism, årlig intygan. **Undantag för små samhällen:** Samhällen med färre än 50 medlemmar som innehar unik språklig, kulturell eller ekologisk kunskap kan ansöka om CIN-certifiering med minst 10 medlemmar, förutsatt att de demonstrerar en kontext som inte är representerad i någon befintlig CIN och skickar in en förenklad styrningsstadga. Ansökningar om undantag granskas av relevant regionalt CIN-råd. |
 
 ### 2.3 Skada
 
@@ -377,6 +381,8 @@ Hävstången i Fas 1 är beroende av antaganden — samarbetsvilliga regeringar 
 | **Lokala grenar** | Finjustering sker via betrodda exekveringsmiljöer (Trusted Execution Environments) (ingen nedladdning av råa vikter). |
 | **Styrning** | Flerpartstrusten övervakar säkerhet, släpp av nya förmågor och åtkomst till grenarna. |
 
+**Avvägning mellan TEE/autonomi:** Betrodda exekveringsmiljöer (Trusted Execution Environments) förhindrar samhällen från att ladda ner och fritt modifiera råa modellvikter — vilket är nödvändigt för att bevara säkerhetsinvarianter, men som också begränsar djupet i den lokala anpassningen. Samhällen kan finjustera beteende, kulturell kontext och domänspecialisering inom TEE:s gränser, men kan inte ändra den grundläggande arkitekturen. Detta är en genuin spänning gentemot stadgans princip om fraktal autonomi (stadgans avsnitt 4.5). Gränsen mellan "meningsfull anpassning" och "säkerhetsbegränsning" granskas årligen av den Tekniska styrkommittén, med input från CINs, och utvidgas i takt med att verktyg för säkerhetsverifiering mognar. Målet är maximal autonomi förenlig med påvisad säkerhet — inte minimal autonomi motiverad av hypotetisk risk.
+
 **Finansiering:**
 - Offentlig-privat samverkan: allierade regeringar, filantropiskt kapital, återinvestering av CIN-intäkter.
 - Konkurrenskraftig jämfört med företagsmodeller för att skapa dragningskraft.
@@ -397,6 +403,7 @@ Hävstången i Fas 1 är beroende av antaganden — samarbetsvilliga regeringar 
 **Intäktsskala:**
 - Mål: 500 miljoner USD årligen i verklighetshyra som flödar till CINs till 2030.
 - Fördelning: 70 % till CIN-medlemmar, 20 % till CIN-driften, 10 % till den Globala allmänningens fond för att expandera CINs.
+- **Förbehåll:** Dessa prognoser är målinriktade. Den globala marknaden för AI-träningsdata uppskattas för närvarande till några få miljarder. 500 miljoner USD genom CIN-licensiering till år 2030 förutsätter en snabb anammande i flera jurisdiktioner, utbredd formation av CINs och en vilja från företag att licensiera snarare än att förlita sig på syntetisk data. Faktiska intäkter kommer att bero på takten i fas 1:s regulatoriska anammande och den kvalitetsfördel som CIN-licensierad data demonstrerar gentemot syntetiska alternativ. Om intäkterna släpar efter prognoserna, flyttas finansieringen för expansion av CINs till den Globala allmänningens fond och filantropiska källor tills marknaden har utvecklats.
 
 ---
 
@@ -406,7 +413,7 @@ Hävstången i Fas 1 är beroende av antaganden — samarbetsvilliga regeringar 
 
 | Element | Beskrivning |
 |---------|-------------|
-| **Obligationskrav** | Enheter som rullar ut autonom AI i kritisk infrastruktur måste ställa obligationer som säkerhet. |
+| **Obligationskrav** | Enheter som rullar ut autonoma AI i kritisk infrastruktur måste ställa obligationer som säkerhet. |
 | **Beräkning av obligation** | Obligation = (Påverkansradie × Autonominivå × Sårbarhet) / Transparensbetyg |
 | **Förverkande** | Vid bekräftad systemisk skada betalas obligationen ut direkt till de berörda samhällena. |
 | **Överklaganden** | Oberoende skiljeförfarande för bestridda förverkanden. |
@@ -531,6 +538,24 @@ Ett binärt nödstopp för system som hanterar kritisk infrastruktur — elnät,
 
 ---
 
+### 8.4 Register över veto för kulturell suveränitet (register över röda linjer)
+
+När en CIN utövar vetot för kulturell suveränitet — genom att permanent dra tillbaka kunskapsdomäner från AI-träning — måste det beslutet registreras, upprätthållas och skyddas mot framtida återutvinning.
+
+**Registrets arkitektur:**
+
+| Element | Beskrivning |
+|---------|-------------|
+| **Vad som registreras** | Kunskapsdomänen som dras tillbaka (beskriven på en abstraktionsnivå som i sig inte avslöjar den skyddade kunskapen), den CIN som utövar vetot, datumet och omfattningen (specifik modell, alla modeller, specifika användningsfall). |
+| **Varaktighet** | Posterna är permanenta. Ett veto kan endast hävas av ursprungs-CIN:en genom samma styrningsprocess som skapade det. |
+| **Teknisk tillämpning** | Alla tränings-pipelines som har åtkomst till CIN-licensierad data måste kontrollera mot registret före intag (ingestion). Data som matchar en vetopost exkluderas automatiskt. Integration med huvudboken över datahärkomst säkerställer spårbarhet. |
+| **Revision** | Årlig revision bekräftar att kunskapsdomäner belagda med veto inte finns i modeller som tränats efter vetodatumet. Revisionen utförs av oberoende tekniska revisorer och finansieras från allokeringen av verklighetshyran. |
+| **Straff för överträdelse** | Träning på kunskap belagd med veto utlöser omedelbar brytning av kontextåtkomst (karantän på orange nivå), förverkande av obligationen till den drabbade CIN:en, och rättigheter till dataförstöring (rensning av härledd algoritmisk träningsdata enligt vad som specificeras i stadgan). |
+
+**Historiskt register:** Registret fungerar även som ett historiskt register över samhällens beslut kring deras egen kunskap. Framtida styrningsorgan kan lära av mönster i tillbakadraganden — vilken kunskap samhällen väljer att skydda och varför — utan att själva ha åtkomst till den skyddade kunskapen.
+
+---
+
 ## 9. Fellägen och motåtgärder
 
 *Ett explicit erkännande av hur detta skulle kunna misslyckas, och vad vi gör åt det.*
@@ -561,11 +586,14 @@ Ett binärt nödstopp för system som hanterar kritisk infrastruktur — elnät,
 |------|------------|
 | **CIN** | Contextual Intelligence Node — certifierat kooperativ som förvaltar kunskap. |
 | **Datakraft** | Uppmätta FLOPs; styrningströskel är 1e25 per körning. |
+| **Register över veto för kulturell suveränitet** | Permanent, reviderbart register över CIN:s beslut att dra tillbaka kunskap; tillämpas genom integration med tränings-pipelines. |
 | **Global stam** | Federerad grundmodell, styrd av Trusten. |
-| **Lokal gren** | Finjusterad modell anpassad till lokal kontext. |
+| **Lokal gren** | Finjusterad modell anpassad till lokal kontext; åtkomst via betrodda exekveringsmiljöer (TEE). |
 | **Levande kontext** | Dynamiska mänskliga system; löper ut efter 12 månader. |
 | **Parasitiskt beteende** | Definieras operativt i avsnitt 2.3. |
 | **Verklighetshyra** | Kompensation för användning av mänsklig kontext. |
+| **Undantag för små samhällen** | Vägen till CIN-certifiering för samhällen med färre än 50 medlemmar som innehar en unik kontext. |
+| **TEE** | Trusted Execution Environment (betrodd exekveringsmiljö) — kryptografisk åtkomstkontroll som tillåter finjustering utan att ladda ner råa vikter. |
 | **Trust** | Flerpartstrust som styr den Globala stammen. |
 
 ---
@@ -575,7 +603,8 @@ Ett binärt nödstopp för system som hanterar kritisk infrastruktur — elnät,
 | Version | Datum | Ändringar |
 |---------|------|---------|
 | 1.0 | Mars 2026 | Initialt operativt protokoll. |
-| 1.1 | Juni 2026 | Kvartalsuppdatering (baserat på lärdomar från Fas 0). |
+| 1.1 | April 2026 | Undantag för små samhällen (CIN); baslinje för Gini-koefficient gällande datakraft; förbehåll för intäkter; register över veto för kulturell suveränitet; erkännande av avvägning kring TEE/autonomi; korsreferenser till stadgan. |
+| 1.2 | Juni 2026 | Kvartalsuppdatering (baserat på lärdomar från Fas 0). |
 | 2.0 | Mars 2027 | Årlig större revidering (utvärdering av Fas 0, planering för Fas 1). |
 
 **Uppdateringstakt:**
@@ -605,3 +634,4 @@ Ett binärt nödstopp för system som hanterar kritisk infrastruktur — elnät,
 
 ---
 
+Detta protokoll utgår från verkligheten år 2026, bygger hävstång genom konkreta mekanismer, och skapar en fasindelad väg mot den vision som artikuleras i stadgan. Det är designat för att utvecklas — med kvartalsvisa uppdateringar och årliga revideringar — i takt med att teknologin och landskapet för styrning förändras.
