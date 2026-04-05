@@ -18,14 +18,14 @@ Let:
 
 > **Theorem 1 (Sybil Collapse under TIM).**  
 > Let \(E\) be a set of endorsers. Then:
-> \[
+> $$
 > W_{\text{eff}} = \tau(E) \cdot k \le \left(1 - \bar{S}\right) \cdot k.
-> \]
+> $$
 > Moreover, if the endorsers form a **perfect collusion ring** – i.e., \(S_{ij} = 1\) for all \(i \neq j\) – then \(\tau(E) = 0\) and \(W_{\text{eff}} = 0\).  
 > For a ring of size \(k\) where the average pairwise Jaccard similarity is \(\bar{J}\) and the average correlation is \(\bar{C}\), we have:
-> \[
+> $$
 > W_{\text{eff}} \le k \cdot \bigl(1 - (\alpha \bar{J} + (1-\alpha)\bar{C})\bigr).
-> \]
+> $$
 > In particular, if \(\bar{J} \to 1\) and \(\bar{C} \to 1\), then \(W_{\text{eff}} \to 0\).  
 > More generally, for any feasible collusion ring, \(W_{\text{eff}}\) is bounded above by a constant independent of \(k\) when \(k\) is large, because \(\bar{S}\) cannot be arbitrarily small if the adversary has finite resources (Lemma B.1).
 
@@ -43,47 +43,47 @@ Consequently, for any finite honest graph, there exists a constant \(K\) such th
 
 *Proof.*  
 From the definition, \(\tau(E) = 1 - \bar{S}\). Hence
-\[
+$$
 W_{\text{eff}} = (1 - \bar{S}) \cdot k.
-\]
+$$
 This is the first inequality.
 
 If \(S_{ij}=1\) for all \(i \neq j\), then \(\bar{S}=1\) and \(\tau(E)=0\), so \(W_{\text{eff}}=0\). This proves the perfect collusion case.
 
 Now consider a ring of size \(k\) with average Jaccard \(\bar{J}\) and average correlation \(\bar{C}\). Then
-\[
+$$
 \bar{S} = \alpha \bar{J} + (1-\alpha)\bar{C}.
-\]
+$$
 Thus
-\[
+$$
 W_{\text{eff}} = k \cdot (1 - \alpha \bar{J} - (1-\alpha)\bar{C}) = k \cdot (\alpha (1-\bar{J}) + (1-\alpha)(1-\bar{C})).
-\]
+$$
 If \(\bar{J} \to 1\) and \(\bar{C} \to 1\), then \(W_{\text{eff}} \to 0\).
 
 Now we prove boundedness. By Lemma B.1, there exists a constant \(\epsilon_{\min} > 0\) (depending on the honest graph size and \(d_{\max}\)) such that for any collusion ring with \(k\) larger than some threshold, \(\bar{J} \ge \epsilon_{\min}\). Similarly, correlation cannot be arbitrarily low if the adversary uses coordinated signals; but even in the worst case, \(\bar{C} \ge 0\). Therefore,
-\[
+$$
 1 - \bar{S} \le 1 - \alpha \epsilon_{\min}.
-\]
+$$
 Hence
-\[
+$$
 W_{\text{eff}} \le (1 - \alpha \epsilon_{\min}) \cdot k.
-\]
+$$
 This still appears linear in \(k\). However, the lemma actually gives that \(\bar{J}\) increases with \(k\): when the adversary exhausts distinct neighbors, further Sybils must reuse neighbors, raising \(\bar{J}\). For sufficiently large \(k\), \(\bar{J}\) approaches 1. More precisely, let \(N_{\text{honest}}\) be the total number of honest nodes. Each Sybil can have at most \(d_{\max}\) neighbors, so the total number of (Sybil, neighbor) pairs is at most \(k d_{\max}\). By the pigeonhole principle, if \(k d_{\max} \gg N_{\text{honest}} \cdot d_{\max}\) (i.e., \(k \gg N_{\text{honest}}\)), then the average number of Sybils per honest node exceeds 1, forcing overlaps. A standard combinatorial bound (see, e.g., [11] for similar arguments) yields that when \(k > N_{\text{honest}} \cdot d_{\max} / \delta\), the average Jaccard similarity \(\bar{J}\) is at least \(1 - \delta\). Substituting \(\delta = 1 - \bar{J}\), we get that for \(k\) large enough,
-\[
+$$
 1 - \bar{J} \le \frac{N_{\text{honest}} d_{\max}}{k}.
-\]
+$$
 Thus
-\[
+$$
 1 - \bar{S} \le \alpha \cdot \frac{N_{\text{honest}} d_{\max}}{k} + (1-\alpha)(1-\bar{C}) \le \frac{\alpha N_{\text{honest}} d_{\max}}{k} + 1 - \alpha.
-\]
+$$
 Therefore,
-\[
+$$
 W_{\text{eff}} = k \cdot (1 - \bar{S}) \le k \cdot \left( \frac{\alpha N_{\text{honest}} d_{\max}}{k} + 1 - \alpha \right) = \alpha N_{\text{honest}} d_{\max} + (1-\alpha)k.
-\]
+$$
 This still appears linear in \(k\) because of the \((1-\alpha)k\) term. However, note that \((1-\alpha)k\) comes from the correlation term \((1-\alpha)(1-\bar{C})\). If the adversary makes the correlation perfect (\(\bar{C}=1\)), then \((1-\alpha)(1-\bar{C}) = 0\). But if the adversary makes \(\bar{C}\) low (signals uncorrelated), then the signals would be different, which reduces the collusion’s effectiveness – they would not be issuing identical endorsements. In the worst case for the defender, the adversary could set \(\bar{C}=1\) (perfectly correlated signals) to maximize influence. In that case, the bound becomes
-\[
+$$
 W_{\text{eff}} \le \alpha N_{\text{honest}} d_{\max} + 0 \cdot k = \alpha N_{\text{honest}} d_{\max}.
-\]
+$$
 This is independent of \(k\). Since \(\alpha \le 1\), \(N_{\text{honest}}\) and \(d_{\max}\) are constants, the effective weight is bounded above by a constant.
 
 Thus, for large \(k\), \(W_{\text{eff}}\) cannot exceed \(\alpha N_{\text{honest}} d_{\max}\). This completes the proof. ∎

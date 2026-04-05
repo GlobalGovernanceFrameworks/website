@@ -75,9 +75,9 @@ For the bootstrap experiment, we compare the **velocity‑limited accumulation**
 
 To quantify TIM’s effectiveness, we define the **collapse ratio**:
 
-\[
+$$
 \text{Collapse} = \frac{R_{\text{eff}}}{k}
-\]
+$$
 
 A collapse ratio of 1 means the Sybil ring has the influence of a single honest node (ideal). A ratio of \(1/k\) means no collapse (linear scaling). The closer to 1 (for large \(k\)), the better TIM performs.
 
@@ -189,9 +189,9 @@ The simulated times match the theoretical lower bound exactly (linear accumulati
 
 For an adversary operating \(A\) Sybils, each performing \(r_{\max} = 100\) low‑stakes interactions per day at cost \(c_{\text{low}} = 0.001\) USD per interaction, the total cost to reach the threshold (with \(\Delta_{\max} = 0.05\), \(T_{\min} = 16\) days) is:
 
-\[
+$$
 C_{\text{adv}} = A \times r_{\max} \times c_{\text{low}} \times T_{\min} = A \times 100 \times 0.001 \times 16 = A \times 1.6 \ \text{USD}
-\]
+$$
 
 Thus, a single Sybil costs \$1.60 to reach the threshold; 10,000 Sybils cost \$16,000. The expected gain \(G\) from a successful attack must exceed this cost to be rational. For most high‑stakes contexts (e.g., accessing a shared resource valued at \$100), a single Sybil’s attack gain is limited. Moreover, TIM collapses rings of Sybils with overlapping neighborhoods, forcing the adversary to make neighborhoods disjoint – which further increases cost because each Sybil needs unique honest neighbors.
 

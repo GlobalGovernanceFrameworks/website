@@ -4,6 +4,7 @@
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import Follow from '$lib/components/Follow.svelte';
+  import MarkdownRenderer from '$lib/components/MarkdownRenderer.svelte';
   
   export let data;
   
@@ -70,7 +71,7 @@
 </svelte:head>
 
 <div class="landing-page">
-  <!-- Hero -->
+  <!-- Hero (unchanged) -->
   <div class="hero">
     <div class="hero-container">
       <a href="/resources/whitepapers" class="back-link">
@@ -103,7 +104,16 @@
     </div>
   </div>
 
-  <!-- Key Innovations -->
+  <!-- Fallback banner (optional) -->
+  {#if paper.usedFallback}
+    <div class="fallback-banner">
+      <div class="fallback-inner">
+        <p>Some content is displayed in English as translation is not yet available.</p>
+      </div>
+    </div>
+  {/if}
+
+  <!-- Key Innovations (unchanged) -->
   <div class="innovations-section">
     <div class="innovations-container">
       <h2 class="innovations-heading">Core Contributions</h2>
@@ -119,17 +129,17 @@
     </div>
   </div>
 
-  <!-- Abstract -->
+  <!-- Abstract (now using MarkdownRenderer) -->
   <div class="abstract-section">
     <div class="abstract-container">
       <h2 class="abstract-heading">Abstract</h2>
       <div class="abstract-content prose">
-        <svelte:component this={paper.abstract.component} />
+        <MarkdownRenderer rawMarkdown={paper.abstractRaw} />
       </div>
     </div>
   </div>
 
-  <!-- Table of Contents -->
+  <!-- Table of Contents (unchanged) -->
   <div class="toc-section">
     <div class="toc-container">
       <h2 class="toc-heading">Contents</h2>
@@ -174,7 +184,7 @@
     </div>
   </div>
 
-  <!-- Follow -->
+  <!-- Follow (unchanged) -->
   <div class="follow-section">
     <div class="follow-container">
       <Follow />
@@ -185,6 +195,21 @@
 <style>
   :global(html) {
     scroll-behavior: smooth;
+  }
+
+  .fallback-banner {
+    background: rgba(59, 130, 246, 0.1);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+  }
+  .fallback-inner {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+  }
+  .fallback-inner p {
+    color: #93c5fd;
+    font-size: 0.8125rem;
+    margin: 0;
   }
 
   .landing-page {

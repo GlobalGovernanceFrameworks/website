@@ -45,11 +45,11 @@ const anchorMap = {
 
 async function loadMarkdownWithFallback(sectionId, currentLocale) {
   try {
-    // Use ?raw to get raw text, not a compiled Svelte component
+    // Use ?raw for primary locale
     const module = await import(`$lib/content/papers/${currentLocale}/immanent-trust-protocol/${sectionId}.md?raw`);
     return {
-      raw: module.default,          // raw markdown string
-      meta: {},                     // metadata not available with ?raw
+      raw: module.default,
+      meta: {},
       locale: currentLocale,
       fellbackToEnglish: false
     };
@@ -60,10 +60,11 @@ async function loadMarkdownWithFallback(sectionId, currentLocale) {
     }
     
     try {
-      const englishModule = await import(`$lib/content/papers/en/immanent-trust-protocol/${sectionId}.md`);
+      // Use ?raw for English fallback as well
+      const englishModule = await import(`$lib/content/papers/en/immanent-trust-protocol/${sectionId}.md?raw`);
       return {
-        component: englishModule.default,
-        meta: englishModule.metadata,
+        raw: englishModule.default,
+        meta: {},
         locale: 'en',
         fellbackToEnglish: true
       };

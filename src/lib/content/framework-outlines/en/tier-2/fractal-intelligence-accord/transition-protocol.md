@@ -75,7 +75,7 @@ To be enforceable, concepts must be measurable. This section defines the key ter
 | Term | Definition |
 |------|------------|
 | **Compute** | Measured in FLOPs (floating point operations). For governance purposes, tracked at the threshold of 1e25 FLOPs per training run (frontier model threshold, updated annually). |
-| **Compute Concentration** | Measured by Gini coefficient of total active compute capacity across entities. Estimated 2026 baseline: Gini ~0.92 (5 corporate entities and 2 state actors control >90% of frontier compute). Target: Gini < 0.6 by 2030. This target is aggressive — it requires roughly halving concentration in four years. If Phase 1 regulatory leverage proves insufficient (see Section 4.6 fallbacks), the target timeline extends but the direction is maintained. |
+| **Compute Concentration** | Measured by Gini coefficient of total active compute capacity across entities. Estimated 2026 baseline: Gini ~0.92 (5 corporate entities and 2 state actors control >90% of frontier compute). Target: Gini `<` 0.6 by 2030. This target is aggressive — it requires roughly halving concentration in four years. If Phase 1 regulatory leverage proves insufficient (see Section 4.6 fallbacks), the target timeline extends but the direction is maintained. |
 | **Strategic Compute** | Ultra-low latency infrastructure controlling critical systems (grids, hospitals, water). Highest oversight tier. |
 
 ### 2.2 Context
