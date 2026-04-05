@@ -3,6 +3,8 @@ import { error } from '@sveltejs/kit';
 import fs from 'fs';
 import path from 'path';
 
+export const prerender = true;
+
 const baseContentPath = 'static/content/papers';
 
 // Main sections (in order)

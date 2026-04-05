@@ -3,6 +3,8 @@ import { error } from '@sveltejs/kit';
 import fs from 'fs';
 import path from 'path';
 
+export const prerender = true;
+
 const metadata = {
   title: 'The Immanent Trust Protocol',
   subtitle: 'A Post-Consensus Architecture for Decentralized, Observer-Relative Trust',
