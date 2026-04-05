@@ -96,10 +96,6 @@ const config = {
         '/omega',
         '/omega?lang=en',
         '/omega?lang=sv',
-        '/immanent-trust-protocol',
-        '/immanent-trust-protocol?lang=en',
-        '/immanent-trust-protocol?lang=sv',
-        '/immanent-trust-protocol?lang=ja',
 
         // --- Framework Index Pages ---
         '/frameworks?lang=en',

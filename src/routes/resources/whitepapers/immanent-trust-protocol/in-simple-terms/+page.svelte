@@ -3,10 +3,11 @@
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import Follow from '$lib/components/Follow.svelte';
+  import MarkdownRenderer from '$lib/components/MarkdownRenderer.svelte';
   
   export let data;
   
-  const { content, usedFallback } = data;
+  const { raw, usedFallback } = data;
 
   function tr(key, fallback) {
     if (browser) {
@@ -57,7 +58,7 @@
 
   <div class="content-wrapper">
     <div class="content-body prose">
-      <svelte:component this={content.component} />
+      <MarkdownRenderer rawMarkdown={raw} />
     </div>
   </div>
 
