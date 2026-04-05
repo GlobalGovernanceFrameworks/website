@@ -1,0 +1,25 @@
+## References
+
+- [1] W. R. Ashby. *An Introduction to Cybernetics*. Chapman & Hall, 1956.
+- [2] S. Beer. *Brain of the Firm*. John Wiley & Sons, 1972.
+- [3] S. D. Kamvar, M. T. Schlosser, and H. Garcia‑Molina. “The EigenTrust algorithm for reputation management in P2P networks.” *WWW*, 2003.
+- [4] L. Page, S. Brin, R. Motwani, and T. Winograd. “The PageRank citation ranking: Bringing order to the web.” Stanford Digital Library Project, 1998.
+- [5] BrightID. https://brightid.org
+- [6] N. Dorier. “Nostr: A simple protocol for decentralized social networking.” https://github.com/nostr-protocol/nostr
+- [7] A. Brock, E. Harris, et al. “Holochain: Agent‑centric distributed computing.” https://holochain.org
+- [8] C. Dwork, N. Lynch, and L. Stockmeyer. “Consensus in the presence of partial synchrony.” *Journal of the ACM*, 1988.
+- [9] D. Kübler, D. Vyzovitis, et al. “GossipSub: A secure, extensible, and production‑ready gossip protocol for decentralized networks.” *libp2p Specification*, 2020.
+- [10] M. Sporny, D. Longley, et al. “JSON-LD 1.1: A JSON‑based Serialization for Linked Data.” W3C Recommendation, 2020.
+- [11] Q. Cao, M. Sirivianos, X. Yang, and T. Pregueiro. “Aiding the detection of fake accounts in large scale social online services.” *NSDI*, 2012. (SybilRank)
+- [12] G. W. Brier. “Verification of forecasts expressed in terms of probability.” *Monthly Weather Review*, 1950.
+- [13] S. Micali, M. Rabin, and S. Vadhan. “Verifiable random functions.” *FOCS*, 1999.
+- [14] N. Bitansky, R. Canetti, A. Chiesa, and E. Tromer. “From extractable collision resistance to succinct non‑interactive arguments of knowledge, and back again.” *ITCS*, 2012.
+- [15] J. Groth. “On the size of pairing‑based non‑interactive arguments.” *EUROCRYPT*, 2016.
+- [16] S. Bojja Venkatakrishnan, G. Fanti, and P. Viswanath. “Dandelion: Redesigning the bitcoin network for anonymity.” *Proceedings of the ACM on Measurement and Analysis of Computing Systems*, 2017.
+- [17] libp2p specification. https://libp2p.io
+- [18] D. J. Bernstein, N. Duif, T. Lange, P. Schwabe, and B.‑Y. Yang. “High‑speed high‑security signatures.” *CHES*, 2011.
+- [19] Multiformats / multicodec specification. https://github.com/multiformats/multicodec
+- [20] J. A. O’Connor, S. A. B. et al. “BLAKE3: One function, fast everywhere.” 2020.
+- [21] S. Goldberg, L. Reyzin, and D. Papadopoulos. “Verifiable Random Functions (VRFs).” IETF draft, 2019.
+- [22] Google. “Protocol Buffers.” https://protobuf.dev
+- [23] Global Governance Frameworks. “ITP Simulation Suite.” https://github.com/GlobalGovernanceFrameworks/itp-simulation

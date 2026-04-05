@@ -59,6 +59,18 @@
     "moreResearch": "More Research",
     "allResources": "All Resources"
   },
+  "itp": {
+    "badges": {
+      "featured": "TECHNICAL WHITEPAPER",
+      "status": "April 2026"
+    },
+    "description": "Trust computed at the edge. Sybil rings mathematically collapsed. Coordination structures that auto-dissolve. A viable substrate for bioregional governance without global ledgers.",
+    "actions": {
+      "read": "Read the Paper",
+      "simple": "In Simple Terms"
+    },
+    "meta": "~90 min read • 13 Sections • 5 Appendices • Simulation Code"
+  },
   "omega": {
     "badges": {
       "featured": "FEATURED RESEARCH",

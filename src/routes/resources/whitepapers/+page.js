@@ -7,6 +7,37 @@ import { get } from 'svelte/store';
 // This replaces the slow import.meta.glob
 import allPapers from '$lib/data/papers-index.json';
 
+// Special case for Immanent Trust Protocol
+const itpEn = {
+  slug: 'immanent-trust-protocol',
+  lang: 'en',
+  meta: {
+    title: 'The Immanent Trust Protocol',
+    subtitle: 'A Post-Consensus Architecture for Decentralized, Observer-Relative Trust',
+    description: 'Trust computed at the edge. Sybil rings mathematically collapsed. Coordination structures that auto-dissolve. A viable substrate for bioregional governance without global ledgers.',
+    date: '2026-04-05',
+    authors: 'Björn Kenneth Holmström (with AI collaboration: Claude, DeepSeek, Grok, Gemini)',
+    readingTime: '~90 minutes',
+    featured: true,
+    type: 'technical'
+  }
+};
+
+const itpSv = {
+  slug: 'immanent-trust-protocol',
+  lang: 'sv',
+  meta: {
+    title: 'Immanent Trust Protocol',
+    subtitle: 'En post-konsensusarkitektur för decentraliserat, observatörsrelativt förtroende',
+    description: 'Förtroende beräknat vid kanten. Sybil-ringar matematiskt kollapsade. Koordinationsstrukturer som auto-upplöses. Ett genomförbart substrat för bioregional styrning utan globala liggare.',
+    date: '2026-04-05',
+    authors: 'Björn Kenneth Holmström (med AI-samarbete: Claude, DeepSeek, Grok, Gemini)',
+    readingTime: '~90 minuter',
+    featured: true,
+    type: 'technical'
+  }
+};
+
 // Special case for Omega Proof flagship paper
 const omegaProofEn = {
   slug: 'omega-proof',
@@ -116,6 +147,7 @@ export async function load({ depends, url }) {
     });
 
   // Get featured papers based on locale
+  const itp = currentLocale === 'sv' ? itpSv : itpEn;
   const omegaProof = currentLocale === 'sv' ? omegaProofSv : omegaProofEn;
   const modelEvaluation = currentLocale === 'sv' ? modelEvaluationSv : modelEvaluationEn;
 
@@ -124,7 +156,8 @@ export async function load({ depends, url }) {
   return {
     omegaProof,
     modelEvaluation,
+    itp,
     regularPapers,
-    currentLocale: currentLocale
+    currentLocale
   };
 }

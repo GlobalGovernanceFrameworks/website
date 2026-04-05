@@ -2,6 +2,8 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 import fs from 'fs';
 import path from 'path';
@@ -42,10 +44,12 @@ const frameworkEntries = frameworkIndex.flatMap(slug => [
 const config = {
   extensions: ['.svelte', '.md'],
   preprocess: [
-    vitePreprocess(),
     mdsvex({
       extensions: ['.md'],
-    })
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    }),
+    vitePreprocess()
   ],
   kit: {
     adapter: adapter({

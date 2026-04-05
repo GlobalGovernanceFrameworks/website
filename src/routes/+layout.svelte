@@ -62,9 +62,16 @@
   // UPDATED SCROLL LOGIC
   afterNavigate(async () => {
     if (browser) {
-      await tick(); // Wait for the #key block to finish re-rendering the DOM
-      // Use instant to prevent fighting with CSS transitions or browser restoration
-      window.scrollTo({ top: 0, behavior: 'instant' }); 
+      await tick();
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'instant' });
+          return;
+        }
+      }
+      window.scrollTo({ top: 0, behavior: 'instant' });
     }
   });
 </script>
