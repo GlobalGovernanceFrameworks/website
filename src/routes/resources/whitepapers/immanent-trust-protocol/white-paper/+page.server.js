@@ -45,7 +45,12 @@ const anchorMap = {
 };
 
 export async function load({ url }) {
-  let currentLocale = url.searchParams.get('lang') || 'en';
+  let currentLocale = 'en';
+  try {
+    currentLocale = url.searchParams?.get('lang') || 'en';
+  } catch (e) {
+    console.warn('Could not read lang from URL, using default en');
+  }
   const validLocales = ['en', 'sv'];
   if (!validLocales.includes(currentLocale)) currentLocale = 'en';
 
