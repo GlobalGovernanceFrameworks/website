@@ -31,6 +31,8 @@ ITP says: **trust is whatever *you* think it is, based on *your* experiences and
 
 3. **The Magic Trick (TIM)** – What if a bad guy creates 10,000 fake accounts (Sybils) and they all endorse each other? Naive systems would think there are 10,000 independent voices. ITP looks at their **neighborhoods** – who do they claim to trust? If all the Sybils trust the same few people, they're obviously a gang. TIM discounts their influence so much that 10,000 Sybils count like one real person. This is the core innovation.
 
+You can play with an interactive demonstration of this collapse at our [TIM Visualizer](/resources/tools/tim-visualizer).
+
 4. **Skin in the Game** – If you endorse someone and they later cheat, you lose trust too. This makes you careful about who you vouch for. It's like a social guarantee: "I vouch for this person, and if they're bad, I look bad too."
 
 5. **Temporary Super‑Groups** – Sometimes a problem is too big for any one person (like a pandemic or a power outage). ITP lets nodes form **temporary teams** that can coordinate resources. These teams automatically dissolve after a set time – no permanent bureaucracy.

@@ -44,7 +44,7 @@
       "links": {
         "interactive": "/resources/paradox-canvas",
         "template": "/downloads/paradox-canvas-template.pdf",
-        "guide": "/resources/whitepapers/cognitive-scaffolding"
+        "guide": "https://bjornkennethholmstrom.github.io/change-paradox-field-manual/"
       }
     },
     "sciCycle": {
@@ -99,6 +99,26 @@
       "links": {
         "protocol": "/resources/cultural-translation-protocol",
         "earlyAccess": "/contact"
+      }
+    },
+    "timVisualizer": {
+      "title": "TIM Sybil Collapse Visualizer",
+      "subtitle": "Interactive demonstration of the Trust Independence Metric",
+      "description": "Watch how the Trust Independence Metric (TIM) collapses Sybil rings in real-time. Adjust ring size, overlap, and graph model — see TIM outperform EigenTrust and SybilRank against collusion attacks.",
+      "category": "interactive",
+      "status": "available",
+      "features": [
+        "Real‑time graph visualization (Erdos‑Renyi, Barabasi‑Albert, Watts‑Strogatz)",
+        "Adjust Sybil ring size (S) and overlap parameter (θ)",
+        "Live TIM discount factor (τ) and effective weight",
+        "Side‑by‑side comparison with EigenTrust and SybilRank",
+        "No seeds or global state required — fully immanent"
+      ],
+      "useCase": "Perfect for: Researchers, protocol designers, and curious readers who want to see TIM’s Sybil‑collapse guarantee in action. Complements the ITP whitepaper.",
+      "timeToComplete": "5–15 minutes",
+      "difficulty": "Beginner",
+      "links": {
+        "interactive": "/resources/tools/tim-visualizer"
       }
     }
   },

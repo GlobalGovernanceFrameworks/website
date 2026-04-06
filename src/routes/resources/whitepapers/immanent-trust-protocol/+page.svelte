@@ -178,6 +178,10 @@
               <span class="toc-number">↗</span>
               <span class="toc-label">Simulation Code</span>
             </a>
+            <a href="/resources/tools/tim-visualizer" class="toc-link" target="_blank" rel="noopener">
+              <span class="toc-number">▶</span>
+              <span class="toc-label">TIM Visualizer (Interactive Demo)</span>
+            </a>
           </nav>
         </div>
       </div>

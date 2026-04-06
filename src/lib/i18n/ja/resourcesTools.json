@@ -44,7 +44,7 @@
       "links": {
         "interactive": "/resources/paradox-canvas",
         "template": "/downloads/paradox-canvas-template.pdf",
-        "guide": "/resources/whitepapers/cognitive-scaffolding"
+        "guide": "https://bjornkennethholmstrom.github.io/change-paradox-field-manual/"
       }
     },
     "sciCycle": {
@@ -99,6 +99,26 @@
       "links": {
         "protocol": "/resources/cultural-translation-protocol",
         "earlyAccess": "/contact"
+      }
+    },
+    "timVisualizer": {
+      "title": "TIM シビルリング崩壊ビジュアライザー",
+      "subtitle": "Trust Independence Metric のインタラクティブなデモ",
+      "description": "Trust Independence Metric (TIM) がシビルリングをリアルタイムで崩壊させる様子を観察できます。リングのサイズ、重複、グラフモデルを調整 — TIM が EigenTrust や SybilRank よりも優れていることを確認できます。",
+      "category": "interactive",
+      "status": "available",
+      "features": [
+        "リアルタイムグラフ可視化 (Erdos‑Renyi, Barabasi‑Albert, Watts‑Strogatz)",
+        "シビルリングサイズ (S) と重複パラメータ (θ) の調整",
+        "TIM 割引係数 (τ) と有効重みのライブ表示",
+        "EigenTrust および SybilRank との比較",
+        "シードやグローバル状態は不要 — 完全に内在的"
+      ],
+      "useCase": "対象: 研究者、プロトコル設計者、TIMのシビル崩壊保証を実際に見たい読者。ITPホワイトペーパーの補足として。",
+      "timeToComplete": "5–15分",
+      "difficulty": "初級",
+      "links": {
+        "interactive": "/resources/tools/tim-visualizer"
       }
     }
   },
