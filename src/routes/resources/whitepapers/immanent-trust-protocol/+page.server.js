@@ -41,7 +41,9 @@ export async function load({ url }) {
 
   // Build absolute URL for meta tags
   const origin = url.origin;
-  const currentUrl = `${origin}${url.pathname}${url.search}`;
+  let search = '';
+  try { search = url.search; } catch (e) { /* prerendering */ }
+  const currentUrl = `${origin}${url.pathname}${search}`;
 
   return {
     paper: {
