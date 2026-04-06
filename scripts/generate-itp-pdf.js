@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 const LANG = 'en';
 const OUTPUT_DIR = path.join(__dirname, '..', 'static', 'resources', 'whitepapers', 'immanent-trust-protocol', 'downloads');
 const STATIC_DIR = path.join(__dirname, '..', 'static');
-const CONTENT_DIR = path.join(__dirname, '..', 'src', 'lib', 'content', 'papers', LANG, 'immanent-trust-protocol');
+const CONTENT_DIR = path.join(__dirname, '..', 'static', 'content', 'papers', LANG, 'immanent-trust-protocol');
 
 const SECTION_FILES = [
   '00-abstract.md',
