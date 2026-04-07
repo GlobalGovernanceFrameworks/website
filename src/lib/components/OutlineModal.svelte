@@ -13,6 +13,8 @@
   let content = '';
   let renderedHtml = '';
   let modalElement;
+  let copyFeedback = false;
+  let copyTimeout;
 
   // Simple markdown → HTML converter for outlines
   function renderMarkdown(md) {
@@ -92,6 +94,7 @@
     if (typeof document !== 'undefined') {
       document.body.style.overflow = '';
     }
+    if (copyTimeout) clearTimeout(copyTimeout);
   });
 
   function getTranslation(key, fallback) {
@@ -100,6 +103,181 @@
       if (result && result !== '' && result !== key) return result;
     }
     return fallback;
+  }
+
+  // Copy outline content (raw markdown) to clipboard
+  async function handleCopy() {
+    if (!content) return;
+    try {
+      await navigator.clipboard.writeText(content);
+      copyFeedback = true;
+      if (copyTimeout) clearTimeout(copyTimeout);
+      copyTimeout = setTimeout(() => {
+        copyFeedback = false;
+      }, 2000);
+    } catch (err) {
+      console.error('Failed to copy outline:', err);
+    }
+  }
+
+  // Print outline: opens a new window with formatted content and prints
+  function handlePrint() {
+    if (!renderedHtml) return;
+
+    const printWindow = window.open('', '_blank');
+    if (!printWindow) {
+      alert(getTranslation('framework.outline.printBlocked', 'Please allow pop-ups to print the outline.'));
+      return;
+    }
+
+    const styles = `
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+          line-height: 1.6;
+          color: #111827;
+          background: white;
+          padding: 2rem;
+          max-width: 900px;
+          margin: 0 auto;
+        }
+        .print-header {
+          margin-bottom: 1.5rem;
+          padding-bottom: 1rem;
+          border-bottom: 2px solid #e5e7eb;
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+        }
+        .print-emoji {
+          font-size: 2rem;
+        }
+        .print-title {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #1f2937;
+        }
+        .outline-content {
+          font-size: 0.95rem;
+          line-height: 1.7;
+          color: #374151;
+        }
+        .outline-content h1 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #111827;
+          margin: 1.5rem 0 0.75rem;
+          padding-bottom: 0.5rem;
+          border-bottom: 2px solid #e5e7eb;
+        }
+        .outline-content h1:first-child {
+          margin-top: 0;
+        }
+        .outline-content h2 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #1f2937;
+          margin: 1.25rem 0 0.5rem;
+        }
+        .outline-content h3 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #374151;
+          margin: 1rem 0 0.4rem;
+        }
+        .outline-content h4, .outline-content h5, .outline-content h6 {
+          font-size: 1rem;
+          font-weight: 600;
+          color: #4b5563;
+          margin: 0.75rem 0 0.3rem;
+        }
+        .outline-content p {
+          margin: 0.5rem 0;
+        }
+        .outline-content ul {
+          padding-left: 1.5rem;
+          margin: 0.5rem 0;
+        }
+        .outline-content li {
+          margin: 0.25rem 0;
+          list-style-type: disc;
+        }
+        .outline-content li.indent-1 {
+          margin-left: 1.5rem;
+          list-style-type: circle;
+        }
+        .outline-content li.indent-2 {
+          margin-left: 3rem;
+          list-style-type: square;
+        }
+        .outline-content hr {
+          border: none;
+          border-top: 1px solid #e5e7eb;
+          margin: 1.5rem 0;
+        }
+        .outline-content strong {
+          font-weight: 600;
+          color: #1f2937;
+        }
+        .print-footer {
+          margin-top: 2rem;
+          padding-top: 1rem;
+          border-top: 1px solid #e5e7eb;
+          font-size: 0.75rem;
+          color: #9ca3af;
+          text-align: center;
+          font-style: italic;
+        }
+        @media print {
+          body {
+            padding: 0.5in;
+          }
+          .print-header {
+            border-bottom-width: 1px;
+          }
+          .print-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          }
+        }
+      </style>
+    `;
+
+    const htmlContent = `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>${title} – Outline</title>
+          ${styles}
+        </head>
+        <body>
+          <div class="print-header">
+            <div class="print-emoji">${emoji}</div>
+            <h1 class="print-title">${title}</h1>
+          </div>
+          <div class="outline-content">
+            ${renderedHtml}
+          </div>
+          <div class="print-footer">
+            ${getTranslation('framework.outline.englishOnly', 'Outlines are currently available in English only.')}
+          </div>
+        </body>
+      </html>
+    `;
+
+    printWindow.document.write(htmlContent);
+    printWindow.document.close();
+    printWindow.focus();
+    printWindow.print();
+    // Optionally close after print (user may cancel)
+    printWindow.onafterprint = () => printWindow.close();
   }
 </script>
 
@@ -119,6 +297,39 @@
           <span class="outline-badge">
             {getTranslation('framework.outline.badge', 'Outline')}
           </span>
+          <button
+            class="icon-button"
+            on:click={handleCopy}
+            disabled={!content}
+            aria-label={getTranslation('framework.outline.copy', 'Copy outline')}
+            title={getTranslation('framework.outline.copy', 'Copy outline')}
+          >
+            {#if copyFeedback}
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            {:else}
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            {/if}
+            <span class="button-label">{getTranslation('framework.outline.copy', 'Copy')}</span>
+          </button>
+          <button
+            class="icon-button"
+            on:click={handlePrint}
+            disabled={!renderedHtml}
+            aria-label={getTranslation('framework.outline.print', 'Print outline')}
+            title={getTranslation('framework.outline.print', 'Print outline')}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <path d="M6 9V3h12v6"></path>
+              <rect x="6" y="15" width="12" height="6" rx="2"></rect>
+            </svg>
+            <span class="button-label">{getTranslation('framework.outline.print', 'Print')}</span>
+          </button>
           <button class="close-button" on:click={onClose} aria-label="Close">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -220,7 +431,7 @@
   .modal-header-actions {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
     flex-shrink: 0;
   }
 
@@ -233,6 +444,40 @@
     color: #6d28d9;
     padding: 0.25rem 0.625rem;
     border-radius: 999px;
+  }
+
+  .icon-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .icon-button:hover:not(:disabled) {
+    background: #f9fafb;
+    border-color: #cbd5e1;
+    color: #111827;
+  }
+
+  .icon-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .icon-button svg {
+    flex-shrink: 0;
+  }
+
+  .button-label {
+    display: inline-block;
   }
 
   .close-button {
@@ -392,6 +637,18 @@
 
     .modal-title {
       font-size: 1rem;
+    }
+
+    .modal-header-actions {
+      gap: 0.375rem;
+    }
+
+    .icon-button .button-label {
+      display: none;
+    }
+
+    .icon-button {
+      padding: 0.375rem;
     }
 
     .modal-body {
