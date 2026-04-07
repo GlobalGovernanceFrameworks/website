@@ -1,0 +1,15 @@
+Yes — ITP solves specific problems that Hearts/Leaves currently hand-waves past.
+
+**Proof of Care validation.** The AUBI framework has Community Providers logging care services via Proof of Care, which BAZ Councils then verify. But who verifies the verifiers? Currently it's institutional trust in the BAZ Council. ITP replaces that with observer-relative trust: a Community Provider's Proof of Care carries weight proportional to the provider's trust score as computed by the people it actually serves. A provider that consistently delivers gets high-confidence interaction signals from recipients. A fraudulent provider — or a Sybil network of fake providers — gets collapsed by TIM because their "recipients" share suspiciously overlapping neighborhoods.
+
+**Hearts Treasury fraud resistance.** The Hearts Treasury redeems Hearts for fiat. The critical vulnerability is fake redemptions — a colluding set of providers and recipients fabricating care transactions to extract fiat. This is exactly a collusion ring. TIM detects it: the fake providers and fake recipients will have high neighborhood overlap (they only interact with each other), so their collective weight collapses. The Treasury can require a minimum TIM-verified trust score before honoring redemptions.
+
+**Cross-BAZ Leaves verification.** When a BAZ in one bioregion claims ecological restoration credits (Leaves), a BAZ in another bioregion currently has no way to assess that claim without a global authority. ITP provides the trust pathway: the claiming BAZ's restoration signals are evaluated through overlapping trust chains of intermediate BAZs, each with their own local verification. TIM ensures a BAZ can't Sybil its way to inflated Leaves issuance by creating fake verification nodes.
+
+**Love Ledger Sybil resistance.** The Love Ledger captures non-monetized recognition (Gratitude Tokens). Without Sybil resistance, someone could create dozens of pseudonymous accounts to shower a node with fake gratitude, inflating their LMCI score. TIM collapses this — the fake accounts share identical neighborhoods.
+
+**Community Weaver trust bootstrapping.** New Community Weavers entering a BAZ face exactly the cold-start problem from Section 6. ITP's velocity-limited accumulation gives them a credible path: low-stakes facilitation work builds trust gradually, and the 16-day minimum prevents an adversary from fast-tracking a malicious weaver into a position of influence.
+
+The integration is bidirectional, as Section 7.5.4 of the whitepaper already notes — Hearts/Leaves transactions generate the dense interaction history that makes TIM computationally effective. Without economic activity flowing through the system, the trust graph would be too sparse for neighborhood overlap analysis to work. The GGF's economic mechanisms provide the data; ITP provides the integrity layer.
+
+If you wanted to formalize this, it could be a short companion document — "ITP as the Trust Substrate for Regenerative Economics" — or folded into the AUBI framework's next revision as a new section on fraud resistance.
