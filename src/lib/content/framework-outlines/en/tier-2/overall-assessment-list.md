@@ -21,23 +21,26 @@ Here is the combined ranking of all 28 frameworks in order of readiness for impl
 10. **Disaster Risk Reduction & Resilience Framework (v4.2)** — Strong external alignment, comprehensive annexes, acknowledges implementation realities.
 11. **The Aethelred Accord (v1.0)** — Comprehensive scope, strong ethical foundation, but overly dense.
 12. **The Conduit Protocol (v1.0)** — Identifies critical infrastructure commons, ambitious vision, but institutional overload.
+Claude assessment & REVISION
 13. **Global Guardian Framework for Animal Welfare (v7.0)** — Pragmatic radicalism, effective tiered system, clear integration with marine governance.
+Claude assessment & REVISION
 14. **Global Governance Biodiversity Implementation Framework (v2.0)** — Excellent structure, pilot-focused, clear economic logic.
+Claude assessment & REVISION
 
 ---
 
 ### Tier 3: Conceptually Strong, Implementation Gaps
 
 15. **Oceans & Marine Governance Framework (v1.1)** — Strong Blue Heart metaphor, enforcement detail, but metaphor overload and high seas gaps.
-REVISION DONE
+REVISION DONE + Claude assessment & revision
 16. **The Cognitive Sovereignty Accord (v1.7)** — Clear four-pillar structure, Sacred Reciprocity License, but ambitious timelines.
-REVISION DONE
+REVISION DONE + Claude assessment & revision
 17. **The Cairn Protocol / Manifesto for Post-Addiction Futures (v2.3)** — Powerful Recovery Weaver concept, but tonal inconsistency and underdeveloped legal pathways.
-REVISION DONE
+REVISION DONE + Claude assessment & revision
 18. **Global Health & Pandemic Security Framework (v1.0)** — Professional structure, community-story framing, but conventionally framed and weak on root causes.
-REVISION DONE
+REVISION DONE + Claude assessment & revision
 19. **The Hearthlight Protocol (v1.7)** — Philosophically sound, emotionally resonant, but legacy interface gaps and assumes existing GGF infrastructure.
-REVISION DONE
+REVISION DONE + Claude assessment & revision
 20. **The Capacity Engine (v2.5)** — Comprehensive vision for learning, but overly dense, jargon-heavy, and unclear actionability.
 REVISION DONE + Claude assessment & revision
 21. **The Phoenix Protocol (v4.0)** — Technical depth, Material Passport system, but document density and mission creep.
