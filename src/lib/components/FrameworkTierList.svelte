@@ -8,12 +8,14 @@
     statusMapping, 
     groupMetadata 
   } from '$lib/stores/frameworkNav.js';
+  import { hasOutline } from '$lib/utils/outlineLoader.js';
   import { onMount } from 'svelte';
   
   export let tier;
   export let showHeader = true;
   export let className = '';
   export let t;
+  export let onOutlineClick = null; // callback: (slug, title, emoji) => void
   
   // STATIC: Compute data once
   const frameworks = getFrameworksByTier(tier);
@@ -89,6 +91,7 @@
         // Other common keys
         keysToCache.push('framework.groups.other.title');
         keysToCache.push('framework.tier.noFrameworks');
+        keysToCache.push('framework.outline.viewButton');
         
         // Cache all translations
         keysToCache.forEach(key => {
@@ -140,7 +143,61 @@
   function getGroupInfo(groupKey) {
     return groupMetadata[groupKey] || { titleKey: groupKey, descriptionKey: null };
   }
+
+  function handleOutlineClick(e, framework) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (onOutlineClick) {
+      const title = getStableTranslation(framework.titleKey) || framework.slug;
+      onOutlineClick(framework.slug, title, framework.emoji || '📋');
+    }
+  }
+
+  function getOutlineButtonLabel() {
+    return getStableTranslation('framework.outline.viewButton') || 'Outline';
+  }
 </script>
+
+{#snippet frameworkCard(framework)}
+  <li class="framework-item">
+    <a href={framework.path} class="framework-link" data-sveltekit-preload-data="hover">
+      <div class="framework-title">
+        <span class="emoji-wrapper">{framework.emoji || '📋'}</span>
+        <span>{getStableTranslation(framework.titleKey)}</span>
+      </div>
+      {#if framework.status || framework.version || (onOutlineClick && hasOutline(framework.slug))}
+        <div class="framework-meta">
+          <div class="meta-left">
+            {#if framework.status}
+              <span class="status {getStatusClass(framework.status)}">
+                {getStatusText(framework.status)}
+              </span>
+            {/if}
+            {#if framework.version}
+              <span class="version">{framework.version}</span>
+            {/if}
+          </div>
+          {#if onOutlineClick && hasOutline(framework.slug)}
+            <button
+              class="outline-button"
+              on:click={(e) => handleOutlineClick(e, framework)}
+              title={getOutlineButtonLabel()}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              {getOutlineButtonLabel()}
+            </button>
+          {/if}
+        </div>
+      {/if}
+    </a>
+  </li>
+{/snippet}
 
 <div class="framework-tier-list {className}">
   {#if showHeader && tierInfo}
@@ -172,26 +229,7 @@
           
           <ul class="framework-list">
             {#each groupFrameworks as framework (framework.slug)}
-              <li class="framework-item">
-                <a href={framework.path} class="framework-link" data-sveltekit-preload-data="hover">
-                  <div class="framework-title">
-                    <span class="emoji-wrapper">{framework.emoji || '📋'}</span>
-                    <span>{getStableTranslation(framework.titleKey)}</span>
-                  </div>
-                  {#if framework.status || framework.version}
-                    <div class="framework-meta">
-                      {#if framework.status}
-                        <span class="status {getStatusClass(framework.status)}">
-                          {getStatusText(framework.status)}
-                        </span>
-                      {/if}
-                      {#if framework.version}
-                        <span class="version">{framework.version}</span>
-                      {/if}
-                    </div>
-                  {/if}
-                </a>
-              </li>
+              {@render frameworkCard(framework)}
             {/each}
           </ul>
         </div>
@@ -205,26 +243,7 @@
           
           <ul class="framework-list">
             {#each ungroupedFrameworks as framework (framework.slug)}
-              <li class="framework-item">
-                <a href={framework.path} class="framework-link" data-sveltekit-preload-data="hover">
-                  <div class="framework-title">
-                    <span class="emoji-wrapper">{framework.emoji || '📋'}</span>
-                    <span>{getStableTranslation(framework.titleKey)}</span>
-                  </div>
-                  {#if framework.status || framework.version}
-                    <div class="framework-meta">
-                      {#if framework.status}
-                        <span class="status {getStatusClass(framework.status)}">
-                          {getStatusText(framework.status)}
-                        </span>
-                      {/if}
-                      {#if framework.version}
-                        <span class="version">{framework.version}</span>
-                      {/if}
-                    </div>
-                  {/if}
-                </a>
-              </li>
+              {@render frameworkCard(framework)}
             {/each}
           </ul>
         </div>
@@ -232,26 +251,7 @@
     {:else}
       <ul class="framework-list">
         {#each frameworks as framework (framework.slug)}
-          <li class="framework-item">
-            <a href={framework.path} class="framework-link" data-sveltekit-preload-data="hover">
-              <div class="framework-title">
-                <span class="emoji-wrapper">{framework.emoji || '📋'}</span>
-                <span>{getStableTranslation(framework.titleKey)}</span>
-              </div>
-              {#if framework.status || framework.version}
-                <div class="framework-meta">
-                  {#if framework.status}
-                    <span class="status {getStatusClass(framework.status)}">
-                      {getStatusText(framework.status)}
-                    </span>
-                  {/if}
-                  {#if framework.version}
-                    <span class="version">{framework.version}</span>
-                  {/if}
-                </div>
-              {/if}
-            </a>
-          </li>
+          {@render frameworkCard(framework)}
         {/each}
       </ul>
     {/if}
@@ -371,10 +371,18 @@
   .framework-meta {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 0.5rem;
     margin-top: auto;
     flex-wrap: wrap;
     padding-top: 0.75rem;
+  }
+
+  .meta-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
   }
   
   .status {
@@ -400,6 +408,34 @@
     border-radius: 0.25rem;
     font-weight: 600;
     border: 1px solid #cbd5e1;
+  }
+
+  .outline-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #6d28d9;
+    background: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+    position: relative;
+    z-index: 3;
+  }
+
+  .outline-button:hover {
+    background: #ede9fe;
+    border-color: #c4b5fd;
+    color: #5b21b6;
+  }
+
+  .outline-button svg {
+    flex-shrink: 0;
   }
   
   .no-frameworks {

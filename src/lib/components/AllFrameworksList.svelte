@@ -6,9 +6,9 @@
   // Optional props
   export let showTierHeaders = true;
   export let className = '';
-  export let addTierIds = false; // New prop to add IDs for navigation
-  // Optional: i18n translation function
+  export let addTierIds = false;
   export let t = null;
+  export let onOutlineClick = null;
 </script>
 
 <div class="all-frameworks-list {className}">
@@ -20,6 +20,7 @@
       <FrameworkTierList 
         {tier} 
         {t}
+        {onOutlineClick}
         showHeader={showTierHeaders}
         className="tier-{tier}"
       />
@@ -37,8 +38,6 @@
     padding-bottom: 2rem;
     border-bottom: 2px solid #e5e7eb;
     scroll-margin-top: 2rem;
-    
-    /* Clean positioning without competing optimizations */
     position: relative;
   }
   
@@ -48,31 +47,11 @@
     padding-bottom: 0;
   }
   
-  /* The :global styles remain the same as they correctly style the child component */
-  :global(.tier-0) {
-    border-left: 4px solid #fbbf24;
-    padding-left: 1rem;
-  }
-  
-  :global(.tier-1) {
-    border-left: 4px solid #60a5fa;
-    padding-left: 1rem;
-  }
-  
-  :global(.tier-2) {
-    border-left: 4px solid #34d399;
-    padding-left: 1rem;
-  }
-  
-  :global(.tier-3) {
-    border-left: 4px solid #a78bfa;
-    padding-left: 1rem;
-  }
-  
-  :global(.tier-4) {
-    border-left: 4px solid #f472b6;
-    padding-left: 1rem;
-  }
+  :global(.tier-0) { border-left: 4px solid #fbbf24; padding-left: 1rem; }
+  :global(.tier-1) { border-left: 4px solid #60a5fa; padding-left: 1rem; }
+  :global(.tier-2) { border-left: 4px solid #34d399; padding-left: 1rem; }
+  :global(.tier-3) { border-left: 4px solid #a78bfa; padding-left: 1rem; }
+  :global(.tier-4) { border-left: 4px solid #f472b6; padding-left: 1rem; }
 
   :global(.framework-tier-list .group-title) {
     font-size: 1.25rem;

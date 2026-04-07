@@ -3,6 +3,13 @@
     "title": "Frameworks",
     "description": "Explore the comprehensive ecosystem of governance frameworks for planetary transformation"
   },
+  "outline": {
+    "viewButton": "Outline",
+    "badge": "Outline",
+    "close": "Close",
+    "notAvailable": "No outline available for this framework yet.",
+    "englishOnly": "Outlines are currently available in English only."
+  },
   "blueprintBridge": {
     "title": "From Blueprint to Implementation",
     "intro": "Remember the three foundational pillars from our blueprint? Here's how they come to life through our comprehensive framework ecosystem:",

@@ -3,6 +3,23 @@
   import { t } from '$lib/i18n';
   import { base } from '$app/paths';
   import AllFrameworksList from '$lib/components/AllFrameworksList.svelte';
+  import OutlineModal from '$lib/components/OutlineModal.svelte';
+
+  let outlineSlug = '';
+  let outlineTitle = '';
+  let outlineEmoji = '📋';
+  let showOutline = false;
+
+  function handleOutlineClick(slug, title, emoji) {
+    outlineSlug = slug;
+    outlineTitle = title;
+    outlineEmoji = emoji;
+    showOutline = true;
+  }
+
+  function closeOutline() {
+    showOutline = false;
+  }
 
   function scrollToTier(tierNumber) {
     // Use requestAnimationFrame for smoother scrolling
@@ -212,7 +229,12 @@
         <p class="directory-intro subsection-intro">{$t('framework.implementation.directory.intro')}</p>
         
         <!-- Dynamic Frameworks List using existing component -->
-        <AllFrameworksList t={$t} showTierHeaders={true} className="implementation-frameworks" addTierIds={true} />
+        <AllFrameworksList 
+          showTierHeaders={true} 
+          addTierIds={true}
+          t={$t}
+          onOutlineClick={handleOutlineClick}
+        />
       </div>
 
       <!-- Getting Started Section -->
@@ -278,6 +300,15 @@
       </div>
     </div>
   </section>
+
+  <OutlineModal 
+    slug={outlineSlug}
+    title={outlineTitle}
+    emoji={outlineEmoji}
+    show={showOutline}
+    onClose={closeOutline}
+    t={$t}
+  />
 </main>
 
 <style>

@@ -3,6 +3,13 @@
     "title": "Ramverk",
     "description": "Utforska det omfattande ekosystemet av styrningsramverk för planetär transformation"
   },
+  "outline": {
+    "viewButton": "Disposition",
+    "badge": "Disposition",
+    "close": "Stäng",
+    "notAvailable": "Ingen disposition tillgänglig för detta ramverk ännu.",
+    "englishOnly": "Dispositioner finns för närvarande bara på engelska."
+  },
   "blueprintBridge": {
     "title": "Från ritning till implementering",
     "intro": "Minns du de tre grundläggande pelarna från vår ritning? Så här får de liv genom vårt omfattande ramverks-ekosystem:",
