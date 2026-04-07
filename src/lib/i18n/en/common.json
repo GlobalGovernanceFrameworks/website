@@ -2,7 +2,8 @@
   "siteName": "Global Governance Frameworks",
   "notices": {
     "global": {
-      "text": "This is a living project in its earliest, formative stages—an invitation to co-create. You may encounter unfinished sections or broken links; these are the spaces where new voices and ideas are welcome. Thank you for your patience as this work grows.",
+      "text": "This is a living project — the fully drafted frameworks on this site are lagging behind recent outline revisions.",
+      "linkText": "See the latest outlines on GitHub",
       "dismiss": "Dismiss notice"
     },
     "section": {

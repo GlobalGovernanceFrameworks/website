@@ -2,7 +2,8 @@
   "siteName": "Global Governance Frameworks",
   "notices": {
     "global": {
-      "text": "Detta är ett levande projekt i sina tidigaste, formativa skeden – en inbjudan att skapa tillsammans. Du kan stöta på oavslutade avsnitt eller trasiga länkar; det är i dessa utrymmen som nya röster och idéer är välkomna. Tack för ditt tålamod medan detta arbete växer.",
+    "text": "Det här är ett levande projekt — de fullständigt utskrivna ramverken på sidan ligger efter de senaste utkast-revideringarna.",
+    "linkText": "Se de senaste utkasten på GitHub",
       "dismiss": "Stäng meddelande"
     },
     "section": {

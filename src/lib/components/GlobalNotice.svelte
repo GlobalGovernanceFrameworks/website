@@ -34,7 +34,18 @@
       <span class="notice-text">
         {$t('common.notices.global.text') || 
          $t('notices.global.text') || 
-         'This is a living project in its earliest, formative stages—an invitation to co-create. You may encounter unfinished sections or broken links; these are the spaces where new voices and ideas are welcome. Thank you for your patience as this work grows.'}
+         'This is a living project — the fully drafted frameworks on this site are lagging behind recent outline revisions.'}
+        {' '}
+        <a 
+          href="https://github.com/GlobalGovernanceFrameworks/website/tree/main/src/lib/content/framework-outlines/en"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="notice-link"
+        >
+          {$t('common.notices.global.linkText') || 
+           $t('notices.global.linkText') || 
+           'See the latest outlines on GitHub'}
+        </a>
       </span>
     </div>
     <button 
@@ -82,6 +93,17 @@
   .notice-text {
     text-align: center;
     font-weight: 500;
+  }
+
+  .notice-link {
+    color: #1d4ed8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 600;
+  }
+
+  .notice-link:hover {
+    color: #1e3a8a;
   }
 
   .dismiss-button {
