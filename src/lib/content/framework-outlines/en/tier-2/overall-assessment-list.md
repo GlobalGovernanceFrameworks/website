@@ -17,9 +17,13 @@ Here is the combined ranking of all 28 frameworks in order of readiness for impl
 ### Tier 2: Strong Foundation, Minor Refinements Needed
 
 8. **Ecological Intelligence & Rights Layer (v2.5)** — Clear ecosystem role, operationalized protocols, Indigenous-led governance.
+REVISION DONE
 9. **The Discovery Commons (v1.0)** — Builds on existing open science movements, balanced governance, clear transition mechanisms.
+REVISION DONE
 10. **Disaster Risk Reduction & Resilience Framework (v4.2)** — Strong external alignment, comprehensive annexes, acknowledges implementation realities.
+REVISION DONE
 11. **The Aethelred Accord (v1.0)** — Comprehensive scope, strong ethical foundation, but overly dense.
+REVISION DONE
 12. **The Conduit Protocol (v1.0)** — Identifies critical infrastructure commons, ambitious vision, but institutional overload.
 Claude assessment & REVISION
 13. **Global Guardian Framework for Animal Welfare (v7.0)** — Pragmatic radicalism, effective tiered system, clear integration with marine governance.
