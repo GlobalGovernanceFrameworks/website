@@ -1439,7 +1439,7 @@
             </div>
 
             <div class="dropdown-menu" on:click|stopPropagation={() => {}} role="menu">
-              <!-- Adaptive Quiz/My Path Navigation -->
+<!--
               {#if hasCompletedQuiz}
                 <a 
                   href="{base}/my-path" 
@@ -1458,10 +1458,11 @@
                 >
                   🧭 {browser && $translationsLoaded ? ($t('common.header.findYourPlace') || 'Find Your Place') : 'Find Your Place'}
                 </a>
-              {/if}
               
-              <!-- Visual Separator -->
               <div class="dropdown-separator"></div>
+
+              {/if} -->
+
 
               <!-- Desktop: Implementation Frameworks with Tiered Sub-Sub-Menus -->
               <div class="dropdown-submenu desktop-only">
