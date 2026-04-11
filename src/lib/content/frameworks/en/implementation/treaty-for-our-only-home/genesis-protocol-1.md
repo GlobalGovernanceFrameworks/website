@@ -9,6 +9,8 @@ wordCount: ~16,000
 purpose: Constitutional founding document for Treaty implementation
 ---
 
+Note: This prose draft is based on the v0.6 structural integrity outline. The design has since evolved through v0.7 (anti-capture enhancements: Demonstration Capture Safeguard, Legitimacy Drift Detector, Pre-Genesis Power Dissolution Clause, Constitutional Amendment Tiers) and v0.8 (design hardening). See [GitHub link](https://github.com/GlobalGovernanceFrameworks/website/blob/main/src/lib/content/framework-outlines/en/tier-0/genesis-protocol/versions/v0.8.md) for the current outline. A full prose revision is planned once the outline stabilizes.
+
 # Genesis Protocol: Constitutional Convening Process
 ## Module 1: Foundation
 
