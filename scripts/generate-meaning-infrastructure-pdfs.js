@@ -409,7 +409,7 @@ async function generateAll() {
     }
     
     const page = await browser.newPage();
-    const outputFile = path.join(langOutputDir, `${protocol.filename}.${lang}.pdf`);
+    const outputFile = path.join(langOutputDir, `${protocol.filename}.pdf`);
     
     await page.setContent(fullHtml, { waitUntil: 'networkidle2', timeout: 30000 });
     await page.pdf({
