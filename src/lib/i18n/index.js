@@ -147,6 +147,7 @@ const pageSpecificTranslationsMap = [
   { route: '/resources/books/the-capital-weaver', dataKey: 'booksCapitalWeaver', fileName: 'booksCapitalWeaver' },
   { route: '/resources/books/the-protocol', dataKey: 'booksTheProtocol', fileName: 'booksTheProtocol' },
   { route: '/resources/cultural-translation-protocol', dataKey: 'culturalTranslationProtocol', fileName: 'resourcesCulturalTranslationProtocol' },
+  { route: '/resources/meaning-infrastructure-protocol', dataKey: 'meaningInfrastructureProtocol', fileName: 'resourcesMeaningInfrastructureProtocol' },
   { route: '/resources/paradox-canvas', dataKey: 'resourcesParadoxCanvas', fileName: 'resourcesParadoxCanvas' },
   { route: '/resources/tools', dataKey: 'resourcesTools', fileName: 'resourcesTools' },
   { route: '/resources/protocols', dataKey: 'resourcesProtocols', fileName: 'resourcesProtocols' },

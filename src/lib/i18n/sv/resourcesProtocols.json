@@ -135,6 +135,69 @@
         "spiralizeEdition": "https://spiralize.org/guides/meeting"
       }
     },
+    "meaningInfrastructure": {
+      "title": "Meningsinfrastrukturprotokoll",
+      "subtitle": "Existentiell infrastruktur för resilient styrning",
+      "description": "Ett lättviktigt, tvärgående protokoll som syntetiserar befintlig GGF-infrastruktur för meningsskapande, identifierar kritiska luckor och föreslår samhällsledda interventioner för att odla förutsättningarna för mening—utan att konstruera meningen själv. Adresserar meningskrisen som en systemrisk av första ordningen.",
+      "category": "cultural",
+      "status": "available",
+      "phases": [
+        {
+          "name": "Avkänning & Syntes",
+          "duration": "1–3 månader",
+          "description": "Kartlägg befintliga lokala meningsskapande praktiker, identifiera luckor med hjälp av protokollets diagnostiska ramverk och etablera relationer med potentiella narrativförvaltare och ritualfacilitatorer."
+        },
+        {
+          "name": "Lättviktiga Interventioner",
+          "duration": "6–12 månader",
+          "description": "Pilotera samhällsledda initiativ: Ritualdesigncirklar, Narrativförvaltargillen, Existentiella utbildningsmoduler, Sorgecirklar (integrerade med Minnesallmänningen) och Skyddade meningsrum."
+        },
+        {
+          "name": "Reflektion & Anpassning",
+          "duration": "Löpande, kvartalsvis",
+          "description": "Gemenskapens reflektionscirklar bedömer kvalitativa omsorgsindikatorer; den frivilliga Meningsförvaltningscirkeln (med rotation och upplösningsskydd) delar lärdomar utan att påtvinga normer."
+        }
+      ],
+      "principles": [
+        "Förutsättningar, inte innehåll",
+        "Subsidiaritet i mening",
+        "Existentiell infrastruktur är stabilitetsinfrastruktur",
+        "Skyddade meningsrum (icke-instrumentella, omätta)",
+        "Rituell integritet",
+        "Sorg som allmänning",
+        "Narrativ resiliens (generativ + försvarskapacitet)",
+        "Mening i gränslandet mellan struktur och mysterium"
+      ],
+      "safeguards": [
+        "Krav på produktiv friktion (aktivt generera världsbildsmångfald)",
+        "Utomståendevägar (stödja icke-anslutna meningspraktiker)",
+        "Metadiversitetsspårning (övervaka uttrycksbredd, inte innehåll)",
+        "Normaliserad intern dissens (tryggt utrymme för 'detta resonerar inte')",
+        "Periodisk decentrering (störa dominerande kulturella attraktorer)",
+        "Kontraktion som bevis på icke-tvång (att välja bort är en giltig integritetssignal)"
+      ],
+      "useCase": "Väsentligt för: BAZ:er och gemenskaper som upplever fragmentering, ekologisk sorg, narrativ sårbarhet eller en önskan att odla delat syfte och tillhörighet. Integreras med Minnesallmänningen, Arbete i Befrielse och Medvetanderamverket.",
+      "complexity": "Intermediate",
+      "prerequisites": [
+        "Grundläggande tillit och öppenhet i gemenskapen (protokollet erkänner begränsningar i cyniska eller traumatiserade sammanhang)",
+        "Befintligt eller framväxande lokalt ledarskap för facilitering",
+        "Tillgång till Minnesallmänningens infrastruktur (eller vilja att pilottesta sorgeutrymmen)",
+        "Koppling till Hjärtan-ersättning för facilitatorer (om så önskas)",
+        "Engagemang för kvalitativ, icke-metrisk utvärdering"
+      ],
+      "deliverables": [
+        "Dokumentation från gemenskapens ritualdesigncirklar (frivilligt Ritualallmänningsbibliotek)",
+        "Levande berättelsebank (narrativt arkiv)",
+        "Anpassningar av existentiella utbildningsmoduler",
+        "Årlig reflektion från Meningsförvaltningscirkeln (kvalitativ)"
+      ],
+      "expectedRelease": null,
+      "links": {
+        "fullProtocol": "/resources/meaning-infrastructure-protocol",
+        "pdf": "meaning-infrastructure-protocol",
+        "related": "/frameworks/memorial-commons"
+      }
+    },
     "fpic2": {
       "title": "FPIC 2.0-protokollet",
       "subtitle": "Förbättrat fritt, föregående och informerat samtycke",

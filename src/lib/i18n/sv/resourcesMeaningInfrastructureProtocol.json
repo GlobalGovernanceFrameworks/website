@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "title": "Meningsinfrastrukturprotokoll – Global Governance Framework",
+    "description": "Existentiell infrastruktur för resilient styrning — att odla förutsättningar för mening utan att konstruera den."
+  },
+  "navigation": {
+    "backToResources": "← Tillbaka till Resurser",
+    "downloadPdf": "Ladda ner hela protokollet (PDF)"
+  },
+  "categories": {
+    "overview": "Översikt & Diagnos",
+    "core": "Grundläggande ramverk",
+    "governance": "Styrning & Integration",
+    "safeguards": "Skyddsmekanismer & Gränser"
+  },
+  "sections": {
+    "diagnosis": "Diagnos: Meningskrisen",
+    "synthesis": "Syntes: Befintlig & saknad infrastruktur",
+    "principles": "Grundprinciper",
+    "interventions": "Lättviktiga interventioner",
+    "living-story": "Den levande berättelsens ankare",
+    "governance": "Integration & styrning",
+    "indicators": "Framgångsindikatorer",
+    "safeguards": "Skydd mot infångning & pluralitet",
+    "limits": "Gränser & ödmjukhet"
+  },
+  "progress": {
+    "overview": "Översikt: Avsnitt {current} av {total}",
+    "core": "Grund: Avsnitt {current} av {total}",
+    "governance": "Styrning: Avsnitt {current} av {total}",
+    "safeguards": "Skydd: Avsnitt {current} av {total}"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta avsnitt visas för närvarande på engelska i väntan på översättning."
+  },
+  "loading": {
+    "text": "Laddar protokollinnehåll..."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "title": "意味インフラストラクチャ・プロトコル – グローバル・ガバナンス・フレームワーク",
+    "description": "レジリエントなガバナンスのための実存的基盤 — 意味そのものを工学化せず、意味が芽生える条件を育む。"
+  },
+  "navigation": {
+    "backToResources": "← リソースに戻る",
+    "downloadPdf": "プロトコル全文をダウンロード (PDF)"
+  },
+  "categories": {
+    "overview": "概要と診断",
+    "core": "中核フレームワーク",
+    "governance": "ガバナンスと統合",
+    "safeguards": "保護策と限界"
+  },
+  "sections": {
+    "diagnosis": "診断：意味の危機",
+    "synthesis": "統合：既存および欠落したインフラ",
+    "principles": "中核原則",
+    "interventions": "軽量介入",
+    "living-story": "生きた物語の錨",
+    "governance": "統合とガバナンス",
+    "indicators": "成功指標",
+    "safeguards": "反捕捉と多元性の保護策",
+    "limits": "限界と謙虚さ"
+  },
+  "progress": {
+    "overview": "概要：セクション {current}/{total}",
+    "core": "中核：セクション {current}/{total}",
+    "governance": "ガバナンス：セクション {current}/{total}",
+    "safeguards": "保護策：セクション {current}/{total}"
+  },
+  "languageFallback": {
+    "title": "お使いの言語のコンテンツは準備中です",
+    "description": "このセクションは翻訳が完了するまで英語で表示されています。"
+  },
+  "loading": {
+    "text": "プロトコル内容を読み込み中..."
+  }
+}
