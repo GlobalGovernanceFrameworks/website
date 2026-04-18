@@ -75,8 +75,8 @@
         "examples": "/resources/cultural-translation-protocol#examples"
       }
     },
-    "adaptiveCoordination": {
-      "title": "適応型コーディネーションプロトコル",
+    "meeting": {
+      "title": "会議調整手順",
       "subtitle": "競合する価値観と世界観を横断する統合的意思決定",
       "description": "手続き的、戦略的、関係的、権力ベースなど、複数のコーディネーション志向が緊張状態にある複雑な意思決定を行うグループのための実践的プロトコル。体系的準備、分化したインプット、統合的センシング、意識的な意思決定モード選択のフェーズを含みます。",
       "category": "governance",
@@ -130,8 +130,8 @@
       ],
       "links": {
         "fullProtocol": "/resources/meeting-protocol",
-        "pdf": "adaptive-coordination-protocol",
-        "appendix": "/resources/meeting-protocol#adaptive-coordination-appendix-questions",
+        "pdf": "meeting-protocol",
+        "appendix": "/resources/meeting-protocol#meeting-appendix-questions",
         "spiralizeEdition": "https://spiralize.org/guides/meeting"
       }
     },

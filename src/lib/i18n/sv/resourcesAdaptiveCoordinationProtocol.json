@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Adaptivt samordningsprotokoll – Globalt ramverk för styrning",
+    "description": "En frivillig, flernivåsamordningsmekanism för att anpassa nationell suveränitet till globala systembehov under gränsöverskridande kriser."
+  },
+  "navigation": {
+    "backToResources": "← Tillbaka till resurser",
+    "downloadFullProtocol": "Ladda ner fullständigt protokoll (PDF)",
+    "downloadOnePager": "Ladda ner ensidig sammanfattning (PDF)"
+  },
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "description": "Detta protokoll visas för närvarande på engelska tills översättningen är klar."
+  },
+  "onePager": {
+    "title": "AVS-sammanfattning på en sida"
+  }
+}

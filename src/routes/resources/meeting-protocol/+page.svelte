@@ -14,12 +14,12 @@
   $: currentLocale = $locale;
 
   // Component state
-  let activeTab = 'adaptive-coordination-protocol';
+  let activeTab = 'meeting-protocol';
   let mounted = false;
 
   const tabs = [
-    { id: 'adaptive-coordination-protocol', icon: '🔄', fallbackTitle: 'Protocol' },
-    { id: 'adaptive-coordination-appendix-questions', icon: '❓', fallbackTitle: 'Appendix: Difficult Questions' }
+    { id: 'meeting-protocol', icon: '🔄', fallbackTitle: 'Protocol' },
+    { id: 'meeting-appendix-questions', icon: '❓', fallbackTitle: 'Appendix: Difficult Questions' }
   ];
 
   onMount(async () => {
@@ -98,7 +98,7 @@
 </script>
 
 <svelte:head>
-  <title>{mp.meta?.title || 'Adaptive Coordination Protocol - Global Governance Frameworks'}</title>
+  <title>{mp.meta?.title || 'Meeting Protocol - Global Governance Frameworks'}</title>
   <meta name="description" content={mp.meta?.description || 'A practical protocol for integrative decision-making across competing values, worldviews, and institutional logics.'} />
 </svelte:head>
 
@@ -130,11 +130,11 @@
 
         <!-- PDF Downloads -->
         <div class="download-section">
-          <button class="download-btn" on:click={() => downloadPdf('adaptive-coordination-protocol')}>
+          <button class="download-btn" on:click={() => downloadPdf('meeting-protocol')}>
             <span class="download-icon">📥</span>
             <span class="download-text">{mp.navigation?.downloadProtocol || 'Download Protocol (PDF)'}</span>
           </button>
-          <button class="download-btn secondary" on:click={() => downloadPdf('adaptive-coordination-appendix-questions')}>
+          <button class="download-btn secondary" on:click={() => downloadPdf('meeting-appendix-questions')}>
             <span class="download-icon">📥</span>
             <span class="download-text">{mp.navigation?.downloadAppendix || 'Download Appendix (PDF)'}</span>
           </button>

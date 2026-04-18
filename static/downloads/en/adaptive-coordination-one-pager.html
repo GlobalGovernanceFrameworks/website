@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACP – Adaptive Coordination Protocol</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1a2e;
+    --mid: #4a4a6a;
+    --light: #8888aa;
+    --accent: #c0392b;
+    --gold: #b8860b;
+    --rule: #d4d0c8;
+    --bg: #faf9f6;
+    --col-gap: 24px;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html, body {
+    width: 210mm;
+    min-height: 297mm;
+    background: var(--bg);
+    font-family: 'Source Sans 3', Georgia, serif;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 14mm 16mm 12mm;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+  }
+
+  .header-left .overline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 7.5pt;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 3px;
+  }
+
+  .header-left h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 26pt;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+
+  .header-left h1 span {
+    color: var(--accent);
+  }
+
+  .header-right {
+    text-align: right;
+    font-size: 7.5pt;
+    color: var(--mid);
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .header-right strong {
+    font-weight: 600;
+    color: var(--ink);
+    display: block;
+    font-size: 8pt;
+  }
+
+  /* ── LEDE ── */
+  .lede {
+    font-family: 'Playfair Display', serif;
+    font-size: 10.5pt;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--mid);
+    line-height: 1.55;
+    border-left: 3px solid var(--accent);
+    padding-left: 10px;
+    margin-bottom: 12px;
+  }
+
+  /* ── TWO-COLUMN BODY ── */
+  .body-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--col-gap);
+    flex: 1;
+  }
+
+  /* ── SECTION ── */
+  .section {
+    margin-bottom: 11px;
+  }
+
+  .section-title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 6.5pt;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 4px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .section p {
+    font-size: 8.5pt;
+    line-height: 1.52;
+    color: var(--ink);
+    margin-bottom: 5px;
+    font-weight: 300;
+  }
+
+  .section p strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  /* ── FAILURE BOX ── */
+  .failure-box {
+    background: #1a1a2e;
+    color: #faf9f6;
+    padding: 9px 11px;
+    margin-bottom: 11px;
+    border-radius: 2px;
+  }
+
+  .failure-box .fb-label {
+    font-size: 6pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .failure-box p {
+    font-size: 8.5pt;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #e8e6e0;
+  }
+
+  .failure-box p em {
+    font-style: italic;
+    color: #faf9f6;
+  }
+
+  /* ── MECHANISM PILLS ── */
+  .mechanism-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin-top: 4px;
+  }
+
+  .mech {
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 5px 7px;
+  }
+
+  .mech-name {
+    font-size: 7pt;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 1px;
+  }
+
+  .mech-desc {
+    font-size: 7pt;
+    color: var(--mid);
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  /* ── TIER TABLE ── */
+  .tier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 4px;
+    font-size: 7.5pt;
+  }
+
+  .tier-table th {
+    font-size: 6.5pt;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid);
+    text-align: left;
+    padding: 3px 5px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .tier-table td {
+    padding: 3px 5px;
+    vertical-align: top;
+    line-height: 1.4;
+    color: var(--ink);
+    font-weight: 300;
+    border-bottom: 1px solid #ece9e0;
+  }
+
+  .tier-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
+  .dot-green { background: #27ae60; }
+  .dot-yellow { background: #f39c12; }
+  .dot-red { background: var(--accent); }
+
+  /* ── PULL QUOTE ── */
+  .pull-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 10pt;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.45;
+    border-top: 2px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 7px 0;
+    margin-bottom: 10px;
+  }
+
+  /* ── NEXT STEPS ── */
+  .next-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .ns-item {
+    border-top: 2px solid var(--accent);
+    padding-top: 5px;
+  }
+
+  .ns-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 14pt;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+
+  .ns-text {
+    font-size: 7.5pt;
+    line-height: 1.45;
+    color: var(--ink);
+    font-weight: 300;
+  }
+
+  .ns-text strong {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1px;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-left {
+    font-size: 7pt;
+    color: var(--light);
+    font-weight: 300;
+  }
+
+  .footer-right {
+    font-size: 7pt;
+    color: var(--light);
+    font-weight: 300;
+    text-align: right;
+  }
+
+  .status-badge {
+    display: inline-block;
+    font-size: 6.5pt;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: var(--accent);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 2px;
+  }
+
+  @media print {
+    html, body { width: 210mm; }
+    .page { padding: 14mm 16mm 12mm; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="overline">Global Governance Frameworks &nbsp;·&nbsp; Tier 3 Cross-Cutting Protocol</div>
+      <h1>Adaptive Coordination<br>Protocol <span>(ACP)</span></h1>
+    </div>
+    <div class="header-right">
+      <strong>Draft v0.5</strong>
+      Resilience &amp; Accountability Upgrade<br>
+      Status: Ready for Practitioner Review<br>
+      <span class="status-badge">Pilot-Ready</span>
+    </div>
+  </div>
+
+  <!-- LEDE -->
+  <div class="lede">
+    When multiple states must coordinate a response to a shared crisis, systems break down — not because of technical failure, but because of funding delays, misaligned incentives, fragmented narratives, and eroded trust. ACP is designed to keep coordination working under exactly these pressures.
+  </div>
+
+  <!-- TWO COLUMNS -->
+  <div class="body-cols">
+
+    <!-- LEFT COLUMN -->
+    <div class="left-col">
+
+      <div class="failure-box">
+        <div class="fb-label">The Problem It Solves</div>
+        <p>In the EU–North Africa pilot simulation, coordination nearly collapsed at three points: <em>Tunisia needed emergency funds and waited too long; Spain hedged its commitments, weakening the whole system; public narratives in each country told incompatible stories.</em> ACP was built to address all three simultaneously.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Core Mechanisms</div>
+        <div class="mechanism-grid">
+          <div class="mech">
+            <div class="mech-name">Emergency Response Fund</div>
+            <div class="mech-desc">Pre-positioned capital with automatic 48-hour disbursement to frontline states in crisis mode. No committee delays.</div>
+          </div>
+          <div class="mech">
+            <div class="mech-name">Tiered Participation</div>
+            <div class="mech-desc">Three tiers (Core / Cooperating / Observing) with escalating benefits tied to compliance, reviewed quarterly.</div>
+          </div>
+          <div class="mech">
+            <div class="mech-name">Contribution Registry</div>
+            <div class="mech-desc">Public, color-coded tracking of every commitment made and fulfilled. Trust made visible in real time.</div>
+          </div>
+          <div class="mech">
+            <div class="mech-name">Narrative Commons</div>
+            <div class="mech-desc">Community-led "Living Narrative Brief" replaces top-down messaging. Diverse voices, not a single official story.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Participation Tiers at a Glance</div>
+        <table class="tier-table">
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>Compliance</th>
+              <th>Key Benefit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="dot dot-green"></span><strong>Core</strong></td>
+              <td>≥80% of cycles</td>
+              <td>Priority ERF access + enhanced voting weight</td>
+            </tr>
+            <tr>
+              <td><span class="dot dot-yellow"></span><strong>Cooperating</strong></td>
+              <td>50–79% of cycles</td>
+              <td>Standard ERF access + technical assistance</td>
+            </tr>
+            <tr>
+              <td><span class="dot dot-red"></span><strong>Observing</strong></td>
+              <td>&lt;50% of cycles</td>
+              <td>Data access only; no ERF; reduced future priority</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <div class="section-title">On Power — An Honest Note</div>
+        <p>ACP is <strong>voluntary</strong>: no state is legally compelled to participate. But it uses transparency, tiered benefits, and reputational mechanisms to make cooperation attractive and defection costly. This is soft power, not coercion — and the protocol names it plainly rather than pretending the system is neutral.</p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right-col">
+
+      <div class="pull-quote">
+        "Coordination fails not because of technical flaws, but because of financial friction, incentive misalignment, narrative incoherence, and external disruption."
+      </div>
+
+      <div class="section">
+        <div class="section-title">What Happens When Resources Run Short</div>
+        <p>If the Emergency Response Fund falls below its minimum threshold, ACP enters <strong>Constrained Coordination Mode</strong> — with a pre-defined, publicly announced priority order:</p>
+        <p><strong>Protected first:</strong> Direct life-saving assistance (shelter, food, medical).<br>
+        <strong>Reduced next:</strong> Frontline state stabilization (by a defined %).<br>
+        <strong>Suspended:</strong> Long-term integration support and non-essential administration.</p>
+        <p>These decisions are made in advance, not ad hoc during a crisis. The public always knows what is and isn't being funded.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Built-In Accountability</div>
+        <p><strong>Due process for "Disruptive Actor" labeling:</strong> 30-day notice, evidence from two independent sources, peer review panel, time-limited designation, and a two-thirds Assembly override path.</p>
+        <p><strong>Measurable success:</strong> Six operationalized indicators including ERF disbursement time (&lt;72 hrs), community trust surveys (≥60% "fair and understandable"), and compliance registry accuracy (100% updated within 7 days).</p>
+        <p><strong>Biennial simplification review:</strong> A standing commitment to ask — what is the minimum viable version of each mechanism? — and remove what proves unnecessary.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Beyond Migration</div>
+        <p>ACP was developed through migration simulations. A <strong>Domain Adaptation Protocol</strong> governs how it transfers to climate finance, pandemic response, or AI disruption — with external domain experts involved before any new Participant Assembly exists. The protocol earns its place in each new domain; it does not assume it.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Proposed Next Steps</div>
+        <div class="next-steps">
+          <div class="ns-item">
+            <div class="ns-num">01</div>
+            <div class="ns-text"><strong>Practitioner Review</strong>Former UNHCR or EU border management officials stress-test the failure modes.</div>
+          </div>
+          <div class="ns-item">
+            <div class="ns-num">02</div>
+            <div class="ns-text"><strong>Pilot Partner</strong>Identify first mover: UN&nbsp;OCHA, EU, or African Union — each carries different tradeoffs.</div>
+          </div>
+          <div class="ns-item">
+            <div class="ns-num">03</div>
+            <div class="ns-text"><strong>Seed the ERF</strong>Secure bridge funding and begin Contribution Registry in parallel with pilot design.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">Adaptive Coordination Protocol · v0.5 · Global Governance Frameworks Tier 3</div>
+    <div class="footer-right">For practitioner review and pilot partner conversations</div>
+  </div>
+
+</div>
+</body>
+</html>

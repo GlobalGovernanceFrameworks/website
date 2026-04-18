@@ -1,4 +1,4 @@
-# Adaptive Coordination: A Protocol for Integrative Decision-Making
+# Adaptive Meeting Coordination: A Protocol for Integrative Decision-Making
 
 *A practical guide for groups navigating complex decisions across competing values, worldviews, and institutional logics.*
 

@@ -16,7 +16,7 @@ export async function load({ depends, url }) {
     console.warn('Failed to load translations:', e);
   }
 
-  const documents = ['adaptive-coordination-protocol', 'adaptive-coordination-appendix-questions'];
+  const documents = ['meeting-protocol', 'meeting-appendix-questions'];
   const content = {};
   const sectionsUsingEnglishFallback = new Set();
 

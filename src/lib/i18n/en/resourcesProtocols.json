@@ -20,6 +20,65 @@
     "implementations": "Active Implementations"
   },
   "protocols": {
+    "adaptiveCoordination": {
+      "title": "Adaptive Coordination Protocol",
+      "subtitle": "Voluntary coordination under systemic stress",
+      "description": "A lightweight, voluntary coordination mechanism designed to align national sovereignty with global systemic needs during cross-border crises. Features tiered participation, rapid funding, narrative infrastructure, and transparent allocation—without requiring surrender of sovereignty.",
+      "category": "governance",
+      "status": "available",
+      "phases": [
+        {
+          "name": "Pilot Phase",
+          "duration": "0–24 months",
+          "description": "Single domain focus (migration) with 5–10 voluntary participants. Establish Secretariat, Situational Awareness Layer, and Contribution Registry."
+        },
+        {
+          "name": "Expansion Phase",
+          "duration": "2–5 years",
+          "description": "Additional participants, multi-domain integration, enhanced trust mechanisms, and tiered incentive structure fully activated."
+        },
+        {
+          "name": "Institutionalization",
+          "duration": "5–15 years",
+          "description": "Formal embedding in global governance ecosystems; standardized crisis coordination layer."
+        }
+      ],
+      "principles": [
+        "Subsidiarity (decisions at lowest effective level)",
+        "Voluntary participation with aligned incentives",
+        "Adaptive feedback loops",
+        "Radical transparency",
+        "Honest framing of power dynamics",
+        "Due process for contentious decisions"
+      ],
+      "safeguards": [
+        "Independent Ombudsperson for Secretariat accountability",
+        "External audit trigger (any 3 Core Partners)",
+        "No-confidence process for leadership transition",
+        "Constrained coordination mode with predefined priorities",
+        "Due process for 'Disruptive Actor' designation with appeal"
+      ],
+      "useCase": "Designed for cross-border crises where national action is insufficient: migration surges, climate displacement, pandemic response, and AI disruption coordination. Pilot domain: EU–North Africa migration corridor.",
+      "complexity": "Intermediate",
+      "prerequisites": [
+        "Willingness to share situational data",
+        "Capacity to register commitment ranges",
+        "Good-faith engagement in allocation cycles",
+        "Acceptance of transparency mechanisms"
+      ],
+      "deliverables": [
+        "ACP Participation Agreement (APA)",
+        "Situational Awareness Layer (SAL) dashboard",
+        "Contribution Registry (public compliance tracking)",
+        "Emergency Response Fund (ERF) access",
+        "Rapid Narrative Assembly outputs"
+      ],
+      "links": {
+        "fullProtocol": "/resources/adaptive-coordination-protocol",
+        "pdf": "adaptive-coordination-protocol",
+        "onePager": "adaptive-coordination-one-pager"
+      }
+    },
     "culturalTranslation": {
       "title": "Cultural Translation Protocol",
       "subtitle": "Adapting governance frameworks across cultural contexts",
@@ -75,8 +134,8 @@
         "examples": "/resources/cultural-translation-protocol#examples"
       }
     },
-    "adaptiveCoordination": {
-      "title": "Adaptive Coordination Protocol",
+    "meeting": {
+      "title": "Meeting Protocol",
       "subtitle": "Integrative decision-making across competing values and worldviews",
       "description": "A practical protocol for groups navigating complex decisions where multiple coordination orientations — procedural, strategic, relational, power-based — are in tension. Includes phases for systemic preparation, differentiated input, integration sensing, and conscious decision-mode selection.",
       "category": "governance",
@@ -125,13 +184,13 @@
         "Willingness to experiment with process"
       ],
       "deliverables": [
-        "Adaptive Coordination Protocol",
+        "Meeting Protocol",
         "Appendix: Difficult Questions for Adaptive Coordination"
       ],
       "links": {
         "fullProtocol": "/resources/meeting-protocol",
-        "pdf": "adaptive-coordination-protocol",
-        "appendix": "/resources/meeting-protocol#adaptive-coordination-appendix-questions",
+        "pdf": "meeting-protocol",
+        "appendix": "/resources/meeting-protocol#meeting-appendix-questions",
         "spiralizeEdition": "https://spiralize.org/guides/meeting"
       }
     },
@@ -234,7 +293,7 @@
       ],
       "useCase": "Required for: Any governance process affecting Indigenous peoples, traditional knowledge, or ancestral territories.",
       "complexity": "High",
-      "expectedRelease": "Q4 2025",
+      "expectedRelease": "Q4 2026",
       "prerequisites": [
         "Deep cultural competency",
         "Established Indigenous relationships",
@@ -282,7 +341,7 @@
       ],
       "useCase": "Effective for: Multi-stakeholder initiatives, organizational governance, community planning, and policy development.",
       "complexity": "Intermediate",
-      "expectedRelease": "Q3 2025",
+      "expectedRelease": "Q3 2026",
       "prerequisites": [
         "Stakeholder commitment to process",
         "Skilled facilitation",
@@ -331,7 +390,7 @@
       ],
       "useCase": "Critical for: Multi-stakeholder processes, community development, organizational change, and policy reform initiatives.",
       "complexity": "Intermediate",
-      "expectedRelease": "Q4 2025",
+      "expectedRelease": "Q4 2026",
       "prerequisites": [
         "Systems thinking skills",
         "Cultural sensitivity",

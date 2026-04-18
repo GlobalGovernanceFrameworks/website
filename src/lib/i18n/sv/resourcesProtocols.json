@@ -75,8 +75,8 @@
         "examples": "/resources/cultural-translation-protocol#examples"
       }
     },
-    "adaptiveCoordination": {
-      "title": "Protokoll för adaptiv koordinering",
+    "meeting": {
+      "title": "Protokoll för möteskoordinering",
       "subtitle": "Integrativt beslutsfattande över konkurrerande värderingar och världsbilder",
       "description": "Ett praktiskt protokoll för grupper som navigerar komplexa beslut där flera koordineringsorienteringar — proceduriella, strategiska, relationella, maktbaserade — står i spänning. Inkluderar faser för systemisk förberedelse, differentierad input, integrationskännande och medvetet val av beslutsmetod.",
       "category": "governance",
@@ -130,8 +130,8 @@
       ],
       "links": {
         "fullProtocol": "/resources/meeting-protocol",
-        "pdf": "adaptive-coordination-protocol",
-        "appendix": "/resources/meeting-protocol#adaptive-coordination-appendix-questions",
+        "pdf": "meeting-protocol",
+        "appendix": "/resources/meeting-protocol#meeting-appendix-questions",
         "spiralizeEdition": "https://spiralize.org/guides/meeting"
       }
     },
