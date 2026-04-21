@@ -37,7 +37,7 @@ Vi genomförde en systemarkitektursanalys av Weimarrepublikens kollaps med hjäl
 
 **Relevansen:** Samma strukturella bräcklighet existerar idag. Västerländska demokratier kör identisk kod: ekonomiska monokultursystem bundna till extraktiv finans, parat med epistemiskt sammanbrott via algoritmisk polarisering. Nästa auktoritära våg är ett systemfel, inte en karaktärsbrist. Det kräver arkitektoniska lösningar, inte bättre ledare.
 
-**Valideringen:** Fem oberoende AI-system konvergerade mot identisk diagnos och lösning – detta är inte spekulation utan robust systemteknik.
+**Utforskningen:** Fem oberoende AI-system, med identiska historiska data, producerade konvergenta tolkningar av felmönstret – vilket tyder på att diagnosen återspeglar en igenkännbar strukturell logik, inte en idiosynkratisk analys.
 
 **Insatserna:** Vi närmar oss motsvarigheten till 1929 år 2026. Frågan är om vi arkitekterar motståndskraft före nästa 1933, eller dokumenterar kollapsen efteråt.
 
@@ -112,7 +112,7 @@ Vi presenterade detta historiska scenario för fem oberoende AI-system utan samo
 
 **Grok:** "Legitimitetskrisen härrörde från totalt misslyckande att skydda medborgarnas överlevnad, värdighet och deltagande"
 
-Denna konvergens är signifikant. Fem olika resonemangssystem, olika träningsdata, olika arkitekturer – alla identifierade **samma felmönster**. Detta är inte åsikt; detta är mönsterigenkänning i skala.
+Denna konvergens är suggestiv. Fem system med olika arkitekturer drogs oberoende av varandra mot **samma misslyckandemönster** – vilket överensstämmer med hypotesen att ekonomisk monokultur och epistemisk fragmentering är tydliga strukturella sårbarheter, inte post-hoc-tolkningar.
 
 ### Den historiska verkligheten: Ontologisk kollaps föregick politisk kollaps
 
@@ -423,6 +423,10 @@ Betalningsinställelse är inte skamligt – det är **ansvarsfull förvaltning 
 Tyskland möter fortfarande svår kris. Medelklassen är fortfarande ekonomiskt stressad. Det finns fortfarande politisk instabilitet och social spänning.
 
 **Men:** De specifika förutsättningar som gjorde totalitarism psykologiskt nödvändig – verklighetsupplösning, existentiell desperation, frånvaro av något begripligt narrativ förutom auktoritär styrka – **dessa förutsättningar materialiseras inte**.
+
+### Arkitektoniska misslyckanden och begränsningar
+
+Varje ärligt arkitektoniskt förslag måste specificera hur det misslyckas. Hearts-systemet står inför tre primära misslyckanderisker: överutgivning som leder till inflation i vårdekonomin; svartmarknadsarbitrage om konvertering mellan Hearts och den primära valutan de facto blir tillgänglig; och elitens erövring av de styrningsmekanismer som avgör vilket vårdarbete som kvalificerar för Hearts-utgivning. Dessa är inte ödesdigra invändningar – WIR-francen har fungerat i 90 år utan att ge efter för dem – men de kräver en explicit styrningsdesign, inte ett antagande om stabilitet.
 
 ### Det kontrafaktiska utfallet
 

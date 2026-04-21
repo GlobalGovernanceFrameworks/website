@@ -37,7 +37,7 @@ We conducted a systems architecture analysis of the Weimar Republic's collapse u
 
 **The relevance:** The same structural fragility exists today. Western democracies are running identical code: monoculture economic systems tied to extractive finance, coupled with epistemic breakdown via algorithmic polarization. The next authoritarian surge is a systems failure, not a character defect. It requires architectural solutions, not better leaders.
 
-**The validation:** Five independent AI systems converged on identical diagnosis and solution—this is not speculation but robust systems engineering.
+**The exploration:** Five independent AI systems, given identical historical data, produced convergent interpretations of the failure pattern—suggesting the diagnosis reflects a recognizable structural logic, not idiosyncratic analysis.
 
 **The stakes:** We are approaching the 2026 equivalent of 1929. The question is whether we architect resilience before the next 1933, or document the collapse afterward.
 
@@ -112,7 +112,7 @@ We presented this historical scenario to five independent AI systems without coo
 
 **Grok:** "The crisis of legitimacy stemmed from total failure to protect citizens' survival, dignity, and participation"
 
-This convergence is significant. Five different reasoning systems, different training data, different architectures—all identified **the same failure pattern**. This is not opinion; this is pattern recognition at scale.
+This convergence is suggestive. Five systems with different architectures independently gravitated toward **the same failure pattern**—consistent with the hypothesis that economic monoculture and epistemic fragmentation are legible structural vulnerabilities, not post-hoc interpretations.
 
 ### The Historical Reality: Ontological Collapse Preceded Political Collapse
 
@@ -403,6 +403,10 @@ Default is not shameful—it's **responsible stewardship of the future**. Nation
 Germany still faces severe crisis. The middle class is still economically stressed. There is still political instability and social tension.
 
 **But:** The specific conditions that made totalitarianism psychologically necessary—reality dissolution, existential desperation, absence of any comprehensible narrative except authoritarian strength—**those conditions do not materialize**.
+
+### Architectural Failure Modes and Constraints
+
+Any honest architectural proposal must specify how it fails. The Hearts system faces three primary failure risks: over-issuance leading to inflation of the care economy; black market arbitrage if conversion between Hearts and the primary currency becomes de facto available; and elite capture of the governance mechanisms that determine what care work qualifies for Hearts issuance. These are not fatal objections — the WIR franc has operated for 90 years without succumbing to them — but they require explicit governance design, not assumption of stability.
 
 ### The Counterfactual Outcome
 
