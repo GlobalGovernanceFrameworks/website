@@ -30,7 +30,7 @@ export async function load({ params, depends, url }) {
   }
   
   // Validate locale
-  const validLocales = ['en', 'sv'];
+  const validLocales = ['en', 'sv', 'ja'];
   if (!validLocales.includes(currentLocale)) {
     currentLocale = 'en';
   }

@@ -644,6 +644,34 @@
   },
   {
     "meta": {
+      "title": "World Peace Is Not Inevitable (And That's a Good Thing)",
+      "description": "Why peace isn't a prediction but a design problem—and how our frameworks offer a concrete path forward.",
+      "author": "Björn Kenneth Holmström",
+      "date": "2026-05-07",
+      "tags": [
+        "World Peace",
+        "Global Governance",
+        "Systems Thinking",
+        "Polycrisis",
+        "Peace Building",
+        "Design Thinking",
+        "Meta-Governance"
+      ],
+      "hashtags": [
+        "#WorldPeace",
+        "#PeaceDesign",
+        "#GlobalGovernance",
+        "#SystemsThinking",
+        "#Polycrisis",
+        "#GGF"
+      ],
+      "readTime": 12
+    },
+    "slug": "world-peace-is-not-inevitable",
+    "lang": "en"
+  },
+  {
+    "meta": {
       "title": "リアリティ・レント",
       "description": "7つのAIモデルを衝突させ、仕事の未来を解き明かす",
       "date": "2026-02-18",
@@ -677,6 +705,34 @@
       ]
     },
     "slug": "the-reality-rent",
+    "lang": "ja"
+  },
+  {
+    "meta": {
+      "title": "世界平和は必然ではない——そして、それが希望だ",
+      "description": "平和は予言ではなくデザインの問題である理由、そして私たちのフレームワークが提供する具体的な道筋。",
+      "author": "Björn Kenneth Holmström",
+      "date": "2026-05-07",
+      "tags": [
+        "世界平和",
+        "グローバルガバナンス",
+        "システム思考",
+        "ポリクライシス",
+        "平和構築",
+        "デザイン思考",
+        "メタガバナンス"
+      ],
+      "hashtags": [
+        "#世界平和",
+        "#平和デザイン",
+        "#グローバルガバナンス",
+        "#システム思考",
+        "#ポリクライシス",
+        "#GGF"
+      ],
+      "readTime": 12
+    },
+    "slug": "world-peace-is-not-inevitable",
     "lang": "ja"
   },
   {
@@ -1166,6 +1222,34 @@
       ]
     },
     "slug": "what-we-would-do-if-we-were-trump",
+    "lang": "sv"
+  },
+  {
+    "meta": {
+      "title": "Världsfred är inte oundviklig (och det är bra)",
+      "description": "Varför fred inte är en förutsägelse utan ett designproblem – och hur våra ramverk erbjuder en konkret väg framåt.",
+      "author": "Björn Kenneth Holmström",
+      "date": "2026-05-07",
+      "tags": [
+        "Världsfred",
+        "Global styrning",
+        "Systemtänkande",
+        "Polykris",
+        "Fredsbyggande",
+        "Designtänkande",
+        "Meta-styrning"
+      ],
+      "hashtags": [
+        "#Världsfred",
+        "#Fredsdesign",
+        "#GlobalStyrning",
+        "#Systemtänkande",
+        "#Polykris",
+        "#GGF"
+      ],
+      "readTime": 12
+    },
+    "slug": "world-peace-is-not-inevitable",
     "lang": "sv"
   }
 ]

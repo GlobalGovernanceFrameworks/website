@@ -126,6 +126,70 @@
   },
   {
     "meta": {
+      "title": "The Omega Incompatibility: A Systems Analysis of Terminal Constraints on Planetary Peace",
+      "date": "2026-01-15"
+    },
+    "slug": "00-executive-summary",
+    "lang": "revised-toned-down"
+  },
+  {
+    "meta": {
+      "title": "The Experimental Question",
+      "date": "2025-12-04"
+    },
+    "slug": "01-introduction",
+    "lang": "revised-toned-down"
+  },
+  {
+    "meta": {
+      "title": "Protocol Omega Explained",
+      "date": "2025-12-04"
+    },
+    "slug": "02-apparatus",
+    "lang": "revised-toned-down"
+  },
+  {
+    "meta": {
+      "title": "Four Unanimous Rejections",
+      "date": "2025-12-04"
+    },
+    "slug": "03-the-data",
+    "lang": "revised-toned-down"
+  },
+  {
+    "meta": {
+      "title": "Four Terminal Bugs in the Westphalian Kernel",
+      "date": "2025-12-04"
+    },
+    "slug": "04-diagnosis",
+    "lang": "revised-toned-down"
+  },
+  {
+    "meta": {
+      "title": "Four Non-Negotiable Kernel Requirements",
+      "date": "2025-12-04"
+    },
+    "slug": "05-prescriptions",
+    "lang": "revised-toned-down"
+  },
+  {
+    "meta": {
+      "title": "Why Voluntary Transition Fails",
+      "date": "2025-12-04"
+    },
+    "slug": "06-trajectory",
+    "lang": "revised-toned-down"
+  },
+  {
+    "meta": {
+      "title": "The Salvage Mandate",
+      "date": "2025-12-04"
+    },
+    "slug": "07-conclusion",
+    "lang": "revised-toned-down"
+  },
+  {
+    "meta": {
       "title": "Preventing 1933: The Architecture of Democratic Resilience",
       "subtitle": "How Dual-Currency Systems and Epistemic Protocols Stop the Collapse Cascade",
       "author": "Björn Kenneth Holmström",
