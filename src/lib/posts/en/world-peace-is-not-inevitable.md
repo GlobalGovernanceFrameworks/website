@@ -125,6 +125,6 @@ What we don't have yet is an organization capable of carrying this forward. If b
 *Join us on Discord. Explore the frameworks. Tell us what you see, what you know, and what you'd be willing to steward. The blueprints are ready. The conversation is just beginning. And there's a seat at the table with your name on it—not to save the world alone, but to help build a coordination architecture that might just let the world save itself, wisely, together.*
 
 **Explore the frameworks:** [globalgovernanceframeworks.org](https://globalgovernanceframeworks.org)  
-**Join the conversation:** [https://discord.gg/jcNBNbQPSg](https://discord.gg/jcNBNbQPSg)
+**Join the conversation:** [https://discord.gg/jcPYQRPzBk](https://discord.gg/jcPYQRPzBk)
 **Contact Björn directly:** bjorn.kenneth.holmstrom@gmail.com
 

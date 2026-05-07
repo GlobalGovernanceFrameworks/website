@@ -125,6 +125,6 @@ Vad vi ännu inte har är en organisation kapabel att bära detta framåt. Om at
 *Gå med i vår Discord. Utforska ramverken. Berätta vad du ser, vad du vet och vad du skulle vara villig att förvalta. Ritningarna är redo. Samtalet har precis börjat. Och det finns en plats vid bordet med ditt namn på – inte för att rädda världen ensam, utan för att hjälpa till att bygga en samordningsarkitektur som kanske låter världen rädda sig själv, klokt, tillsammans.*
 
 **Utforska ramverken:** [globalgovernanceframeworks.org](https://globalgovernanceframeworks.org)  
-**Gå med i samtalet:** [https://discord.gg/jcNBNbQPSg](https://discord.gg/jcNBNbQPSg)  
+**Gå med i samtalet:** [https://discord.gg/jcPYQRPzBk](https://discord.gg/jcPYQRPzBk)  
 **Kontakta Björn direkt:** bjorn.kenneth.holmstrom@gmail.com
 

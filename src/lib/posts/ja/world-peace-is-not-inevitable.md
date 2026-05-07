@@ -125,5 +125,5 @@ readTime: 12
 *Discordに参加してください。フレームワークを探求してください。あなたが見るもの、知っていること、そして管理してもよいと思うことを教えてください。設計図は準備ができています。会話は始まったばかりです。そしてテーブルにはあなたの名前の書かれた席があります——一人で世界を救うためではなく、世界が自らを賢く、共に救うことを可能にするかもしれない調整アーキテクチャを構築する手助けをするために。*
 
 **フレームワークを探求する:** [globalgovernanceframeworks.org](https://globalgovernanceframeworks.org)  
-**会話に参加する:** [https://discord.gg/jcNBNbQPSg](https://discord.gg/jcNBNbQPSg)  
+**会話に参加する:** [https://discord.gg/jcPYQRPzBk](https://discord.gg/jcPYQRPzBk)  
 **ビョルンに直接連絡する:** bjorn.kenneth.holmstrom@gmail.com
