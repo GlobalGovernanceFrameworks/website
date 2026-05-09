@@ -20,6 +20,65 @@
     "implementations": "Active Implementations"
   },
   "protocols": {
+    "surplusSignalProtocol": {
+      "title": "Surplus Signal Protocol (SSP)",
+      "subtitle": "A minimal, federated coordination grammar for mutual provisioning",
+      "description": "SSP is a thin, semi-legible protocol that lets communities signal surplus and need without money, central databases, or identity surveillance. It supports gift, barter, mutual credit, and hybrid exchanges. Designed for bioregions, cooperatives, and mutual aid networks.",
+      "category": "implementation",
+      "status": "available",
+      "phases": [
+        {
+          "name": "Local Pilot",
+          "duration": "1–3 months",
+          "description": "Run a manual signal exchange in an existing community (REKO ring, community fridge) using WhatsApp or Matrix. Test signal ergonomics and semi-legibility."
+        },
+        {
+          "name": "Bot-Assisted Coordination",
+          "duration": "1–2 months",
+          "description": "Introduce a lightweight bot for signal validation, matching suggestions, and local analytics. All matching remains advisory."
+        },
+        {
+          "name": "Production Loop & Scale",
+          "duration": "Ongoing",
+          "description": "Add production intent and shortage alerts to close the loop from surplus distribution to adaptive production planning. Extend to other resource types (tools, space, skills)."
+        }
+      ],
+      "principles": [
+        "Protocol, not platform – no central database, no mandatory identity",
+        "Semi-legibility – flows are visible, people remain opaque",
+        "Hybrid-ready – coexists with money, no ideology",
+        "Decay by default – all reputation and appreciation metrics fade",
+        "AI advisory only – matching suggestions are local, optional, and human-overridable",
+        "Forkable – CC0 licence, anyone can adapt or extend"
+      ],
+      "safeguards": [
+        "No global identity (pseudonymous node IDs)",
+        "No permanent reputation (decaying, local-only trust weights)",
+        "Graduated disclosure (precise location only with explicit consent)",
+        "Cultural mediation primitives for conflicting exchange norms",
+        "Exit rights – nodes can leave and delete their data",
+        "Relay concentration monitoring to prevent chokepoints"
+      ],
+      "useCase": "Ideal for communities wanting to coordinate food surplus, tool sharing, transport capacity, or any resource without money. Pilot-tested in Swedish REKO rings and low-trust migrant hubs.",
+      "complexity": "Beginner-friendly",
+      "prerequisites": [
+        "A small, willing group (5–10 people)",
+        "A shared communication channel (WhatsApp, Matrix, or even paper)",
+        "One person willing to format a few JSON signals manually (or use the reference bot)",
+        "No money, no blockchain, no server required to start"
+      ],
+      "deliverables": [
+        "SSP v0.2 Specification (CC0)",
+        "Reference implementation (Matrix bot)",
+        "Example signal library",
+        "Pilot playbook with dual-path design (trust-rich and low-trust)"
+      ],
+      "links": {
+        "fullProtocol": "https://github.com/GlobalGovernanceFrameworks/surplus-signal-protocol",
+        "pdf": "surplus-signal-protocol-spec-v0.2",
+        "examples": "https://github.com/GlobalGovernanceFrameworks/surplus-signal-protocol/tree/main/examples"
+      }
+    },
     "adaptiveCoordination": {
       "title": "Adaptive Coordination Protocol",
       "subtitle": "Voluntary coordination under systemic stress",

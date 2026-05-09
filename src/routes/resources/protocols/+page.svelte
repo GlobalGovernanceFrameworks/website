@@ -104,7 +104,9 @@
       'culturalTranslation': 'cultural-translation-protocol',
       'fpic2': 'fpic-2-protocol',
       'consensusBuilding': 'regenerative-consensus-protocol',
-      'powerAnalysis': 'power-dynamics-assessment-protocol'
+      'powerAnalysis': 'power-dynamics-assessment-protocol',
+      'surplusSignalProtocol': 'surplus-signal-protocol',
+      'adaptiveCoordination': 'adaptive-coordination-protocol'
     };
     
     // Get the actual filename, fallback to the key if not mapped

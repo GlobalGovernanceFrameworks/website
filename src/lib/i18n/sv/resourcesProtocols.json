@@ -20,6 +20,65 @@
     "implementations": "Aktiva implementationer"
   },
   "protocols": {
+    "surplusSignalProtocol": {
+      "title": "Surplus Signal Protocol (SSP)",
+      "subtitle": "En minimal, federerad koordineringsgrammatik för ömsesidig försörjning",
+      "description": "SSP är ett tunt, semi-läsbart protokoll som låter samhällen signalera överskott och behov utan pengar, centrala databaser eller identitetsövervakning. Det stödjer gåva, byteshandel, ömsesidig kredit och hybridutbyten. Utformat för bioregioner, kooperativ och nätverk för ömsesidig hjälp.",
+      "category": "implementation",
+      "status": "available",
+      "phases": [
+        {
+          "name": "Lokal pilot",
+          "duration": "1–3 månader",
+          "description": "Kör ett manuellt signalutbyte i en befintlig gemenskap (REKO-ring, gemenskapskylskåp) via WhatsApp eller Matrix. Testa signalergonomi och semi-läsbarhet."
+        },
+        {
+          "name": "Bot-assisterad koordinering",
+          "duration": "1–2 månader",
+          "description": "Inför en lättviktsbot för signalvalidering, matchningsförslag och lokal analys. All matchning förblir rådgivande."
+        },
+        {
+          "name": "Produktionsloop & skalning",
+          "duration": "Pågående",
+          "description": "Lägg till produktionsintention och bristvarningar för att sluta loopen från överskottsdistribution till adaptiv produktionsplanering. Utöka till andra resurstyper (verktyg, utrymme, färdigheter)."
+        }
+      ],
+      "principles": [
+        "Protokoll, inte plattform – ingen central databas, ingen obligatorisk identitet",
+        "Semi-läsbarhet – flöden är synliga, människor förblir opaka",
+        "Hybridredo – samexisterar med pengar, ingen ideologi",
+        "Förgänglighet som standard – allt rykte och uppskattning bleknar",
+        "AI endast rådgivande – matchningsförslag är lokala, valfria och kan åsidosättas av människor",
+        "Forkbar – CC0-licens, vem som helst kan anpassa eller utöka"
+      ],
+      "safeguards": [
+        "Ingen global identitet (pseudonyma nod-ID:n)",
+        "Inget permanent rykte (avtagande, lokala tillitsvikter)",
+        "Graduerad informationsutlämning (exakt plats endast med uttryckligt samtycke)",
+        "Kulturella medlingsprimitiver för motstridiga utbytesnormer",
+        "Utträdesrätt – noder kan lämna och radera sina data",
+        "Övervakning av reläkoncentration för att förhindra flaskhalsar"
+      ],
+      "useCase": "Idealiskt för samhällen som vill samordna matöverskott, verktygsdelning, transportkapacitet eller vilken resurs som helst utan pengar. Pilottestas i svenska REKO-ringar och lågtillitsnav för migranter.",
+      "complexity": "Nybörjarvänlig",
+      "prerequisites": [
+        "En liten, villig grupp (5–10 personer)",
+        "En delad kommunikationskanal (WhatsApp, Matrix eller till och med papper)",
+        "En person som är villig att formatera några JSON-signaler manuellt (eller använda referensbotten)",
+        "Inga pengar, ingen blockkedja, ingen server krävs för att börja"
+      ],
+      "deliverables": [
+        "SSP v0.2-specifikation (CC0)",
+        "Referensimplementation (Matrix-bot)",
+        "Exempel-signalbibliotek",
+        "Pilot-handbok med dubbelspårsdesign (hög tillit och låg tillit)"
+      ],
+      "links": {
+        "fullProtocol": "https://github.com/GlobalGovernanceFrameworks/surplus-signal-protocol",
+        "pdf": "surplus-signal-protocol-spec-v0.2",
+        "examples": "https://github.com/GlobalGovernanceFrameworks/surplus-signal-protocol/tree/main/examples"
+      }
+    },
     "culturalTranslation": {
       "title": "Protokollet för kulturell översättning",
       "subtitle": "Anpassa styrningsramverk över kulturella kontexter",
