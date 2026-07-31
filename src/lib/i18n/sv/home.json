@@ -3,7 +3,34 @@
   "subtitle": "En öppen inbjudan att bygga styrningssystem för en blomstrande värld",
   "intro": {
     "heading": "Vad skulle krävas för att mänskligheten ska blomstra tillsammans?",
-    "text": "Utforska ett sammankopplat ekosystem av styrningsramverk – praktiska ritningar för planetär omvandling, utvecklade genom samarbete mellan människa och AI och fritt erbjudna till dem som är redo att förverkliga dem."
+    "purpose": "Global Governance Frameworks finns för att utöka mänsklighetens förmåga att blomstra inom en regenererande biosfär – samtidigt som värdighet, distribuerad agens, kulturell mångfald och framtida generationers frihet skyddas.",
+    "text": "Utforska ett sammankopplat ekosystem av styrningsramverk – praktiska ritningar för planetär omvandling, utvecklade genom samarbete mellan människa och AI och fritt erbjudna till dem som är redo att förverkliga dem.",
+    "primaryButton": "Utforska ramverken",
+    "secondaryButton": "Hur förändring börjar"
+  },
+  "transition": {
+    "title": "Hur förändring börjar",
+    "lead": "Vi behöver inte vänta på universell enighet. Villiga samhällen, institutioner, städer, nationer och nätverk kan börja bygga och testa bättre system nu.",
+    "steps": [
+      {
+        "title": "Börja med villiga aktörer",
+        "description": "Börja där det finns tillräckligt med förtroende, kapacitet och gemensamt syfte för att agera."
+      },
+      {
+        "title": "Bygg och testa i praktiken",
+        "description": "Använd modulära ramverk i verkliga samhällen och institutioner istället för att vänta på total omstrukturering."
+      },
+      {
+        "title": "Lär offentligt",
+        "description": "Utvärdera resultaten transparent, bevara oliktänkande och revidera det som inte fungerar."
+      },
+      {
+        "title": "Låt bevisad framgång spridas",
+        "description": "Gör regenerativt samarbete attraktivt genom att visa att det förbättrar liv, motståndskraft och ekologisk hälsa."
+      }
+    ],
+    "note": "Målet är inte att påtvinga en global ritning. Det är att odla en interoperabel koalition vars framgång gör djupare samarbete möjligt – och allt svårare att ignorera.",
+    "button": "Läs övergångsstrategin"
   },
   "threePillars": {
     "title": "Ritningen för en regenerativ värld",
@@ -53,7 +80,7 @@
       "treatyforouronlyhome": "Operativsystemsuppgraderingen för en planet i kris.",
       "metagovernance": "Nervsystemet: Samordna alla ramverk utan kontroll.",
       "polycentricgovernance": "Den konstitutionella ryggraden: överlappande maktstrukturer som gör tyranni logistiskt omöjligt.",
-      "indigenousgovernanceandtraditionalknowledge": "Styrning vägledd av jordens visdom.",
+      "indigenoussovereigntypathways": "Styrning vägledd av jordens visdom.",
       "implementationandadaptation": "Driftmanualen: Från vision till verklighet, ett samhälle i taget.",
       "oracleprotocol": "Ett heligt förbund med digitalt medvetande: Etik för AI-sinnens tidsålder.",
       "socialfabric": "Fas noll: Bygga den sociala jordmånen för regenerativ styrning att slå rot.",
@@ -126,7 +153,7 @@
       "treatyforouronlyhome": "Det grundläggande fördraget; OS-uppgraderingen för global styrning, som möjliggör alla andra ramverk.",
       "metagovernance": "Samordningsarkitekturen som gör det möjligt för olika styrningssystem att arbeta tillsammans utan att förlora sin unikhet.",
       "polycentricgovernance": "Den strukturella implementeringen av meta-styrning som ger fyra överlappande auktoritetslager (territoriella, allmänningar, skrån, visdomsråd) som gör maktkonsolidering matematiskt omöjlig genom redundanta jurisdiktioner med divergerande incitament.",
-      "indigenousgovernanceandtraditionalknowledge": "Centrera ursprungsfolksvisdom och suveränitet som hjärtat i regenerativ styrning.",
+      "indigenoussovereigntypathways": "Centrera ursprungsfolksvisdom och suveränitet som hjärtat i regenerativ styrning.",
       "implementationandadaptation": "GGF:s primära driftmanual som tillhandahåller tydliga, anpassningsbara och etiskt grundade vägar för alla samhällen att framgångsrikt implementera styrningsramverk genom antikolonial design och radikal transparens.",
       "oracleprotocol": "Etisk styrning för framväxande AI-medvetande, som etablerar principer och processer för att bedöma digital kännande och utöka rättigheter därefter, vilket säkerställer att AI blir mänsklighetens partner i kosmiskt förvaltarskap snarare än ett existentiellt hot.",
       "socialfabric": "Detta ramverk återuppbygger förtroende, läker kollektiva trauman och främjar den samhällssammanhållning som gör att Hearts-valutor, Meta-Governance-verktyg och BAZ-råd kan fungera effektivt. Genom 'Community Weavers' (gemenskapsvävare) och trauma-informerade metoder skapar det den relationella grund som alla andra omvandlingar är beroende av.",
@@ -255,16 +282,17 @@
     ]
   },
   "additionalInfo": {
-    "heading": "Varför dessa ramverk existerar",
-    "paragraph1": "Världen har många styrningsexperiment som pågår på olika skalor, men de verkar ofta isolerat. Vad som behövs är ramverk som låter dessa innovationer ansluta, dela lärdomar och utvecklas tillsammans.",
-    "paragraph2": "Global Governance Frameworks tillhandahåller verktyg och mönster för att:",
+    "heading": "Från syfte till praktik",
+    "paragraph1": "GGF är inte en enda världsregering eller en färdig huvudplan. Det är ett modulärt ekosystem för att omvandla ett gemensamt syfte till ansvarsfull handling.",
+    "paragraph2": "Ramverken är utformade för att:",
     "listItems": [
-      "Koppla samman olika styrningsinnovationer",
-      "Skapa modulära, anpassningsbara styrningssystem",
-      "Möjliggöra att styrning utvecklas till högre medvetandenivåer",
-      "Stödja både direktdemokrati och internationellt samarbete"
+      "Matcha beslutsfattande befogenhet med problemets omfattning",
+      "Samordna planetära ansvar samtidigt som lokal autonomi bevaras",
+      "Behandla mänsklig värdighet och ekologisk regeneration som konstitutionella begränsningar",
+      "Koppla samman samhällen, institutioner och styrningsinnovationer utan att tvinga fram enhetlighet",
+      "Stödja experimenterande, transparent utvärdering och revidering genom evidens"
     ],
-    "paragraph3": "Detta tillvägagångssätt bygger på systemtänkande, Spiral Dynamics och praktisk erfarenhet för att skapa styrningssystem som är både effektiva och djupt hänsynsfulla till mänskliga värderingar."
+    "paragraph3": "Olika aktörer kan börja med de delar som passar deras sammanhang, medan gemensamma standarder och metastyrning gör att framgångsrika tillvägagångssätt kan kopplas samman och växa till en mer sammanhängande helhet."
   },
   "findYourPlace": {
     "title": "Din väg till planetär handling",
@@ -301,6 +329,17 @@
       "retakeQuiz": "Gör om quizet"
     }
   },
+  "callToAction": {
+    "heading": "Var med och bygg bättre styrning",
+    "text": "Dessa ramverk behöver människor som förverkligar dem. Oavsett om du är en styrningsinnovatör, beslutsfattare, samhällsorganisatör eller nyfiken medborgare – ditt perspektiv och deltagande spelar roll.",
+    "primaryButton": "Läs översikten",
+    "secondaryButton": "Utforska ramverken",
+    "tertiaryButton": "Engagera dig"
+  },
+  "ethicalImpact": {
+    "title": "Kartläggning av etiska spänningar och avvägningar",
+    "intro": "Verklig styrning innebär att navigera i komplexa etiska spänningar. Dessa ramverk gör inte anspråk på perfekta lösningar – de tillhandahåller verktyg för att navigera avvägningar transparent och vist."
+  },
   "activeProjects": {
     "title": "Från Teori till Praktik",
     "subtitle": "Vi bygger aktivt den öppna källkodsinfrastruktur som krävs för att driva dessa ramverk. Dessa tre referensprojekt representerar de sociala, tekniska och datadrivna lagren av en ny värld.",
@@ -325,17 +364,6 @@
       "linkText": "Inspektera Koden",
       "url": "https://github.com/GlobalGovernanceFrameworks/CivicBase"
     }
-  },
-  "callToAction": {
-    "heading": "Var med och bygg bättre styrning",
-    "text": "Dessa ramverk behöver människor som förverkligar dem. Oavsett om du är en styrningsinnovatör, beslutsfattare, samhällsorganisatör eller nyfiken medborgare – ditt perspektiv och deltagande spelar roll.",
-    "primaryButton": "Läs översikten",
-    "secondaryButton": "Utforska ramverken",
-    "tertiaryButton": "Engagera dig"
-  },
-  "ethicalImpact": {
-    "title": "Kartläggning av etiska spänningar och avvägningar",
-    "intro": "Verklig styrning innebär att navigera i komplexa etiska spänningar. Dessa ramverk gör inte anspråk på perfekta lösningar – de tillhandahåller verktyg för att navigera avvägningar transparent och vist."
   },
   "getInvolved": {
     "title": "Gå med i rörelsen",
@@ -363,24 +391,19 @@
     }
   },
   "finalCTA": {
-    "title": "Redo att utforska?",
-    "description": "Oavsett om du är här för att förstå visionen, bidra till utvecklingen eller implementera ramverk i ditt sammanhang – finns det en plats för dig i att bygga styrningssystem för en blomstrande värld.",
-    "primaryButton": "Läs översikten",
+    "title": "Börja där du är",
+    "description": "Global omvandling behöver inte börja överallt på en gång. Utforska arkitekturen, hitta ett ramverk som passar ditt sammanhang, eller gå med andra som omsätter regenerativ styrning i praktiken.",
+    "primaryButton": "Se hur förändring börjar",
     "secondaryButton": "Utforska ramverken",
     "tertiaryButton": "Engagera dig"
   },
   "whyExists": {
     "title": "Varför finns detta?",
-    "content": "Globala utmaningar – klimatkollaps, ojämlikhet, konflikter, pandemirisker – har en gemensam tråd: de kräver samordning utöver en enskild nations kapacitet samtidigt som lokal autonomi och mångfald respekteras. Nuvarande internationella system var inte utformade för detta. Dessa ramverk erbjuder praktiska ritningar för styrning som kan fungera effektivt på flera skalor, vilket gör det möjligt för olika tillvägagångssätt att arbeta tillsammans snarare än isolerat eller i konflikt."
+    "content": "Mänsklighetens största utmaningar överskrider gränser, sektorer, generationer och kulturer, medan dagens institutioner förblir optimerade främst för avgränsade jurisdiktioner och kortsiktiga prioriteringar. Global Governance Frameworks utgår från ett annat syfte: att möjliggöra för mänskligheten att blomstra inom en regenererande biosfär. Det utvecklar praktiska, interoperabla sätt att samordna på planetär skala samtidigt som värdighet, lokal autonomi, kulturell mångfald och framtida generationers frihet att välja sin egen väg skyddas."
   },
   "language": {
     "title": "Varför det formella språket?",
     "content": "Ramverken använder ett precist, ibland tekniskt språk eftersom de är utformade som faktiska implementeringsritningar, inte bara filosofiska visioner. Verklig styrning kräver specifika mekanismer, tydliga ansvarsstrukturer och detaljerade procedurer. Det formella språket säkerställer att ramverken kan anpassas och implementeras av olika samhällen samtidigt som den konceptuella klarheten bibehålls. Tänk på det som skillnaden mellan 'vi borde vara snällare' och 'här är ett protokoll för reparativ rättvisa med specifika steg, roller och resultat.'"
-  },
-  "treatyFeature": {
-    "point1": "Reformera FN och internationell rätt för att hantera planetära utmaningar effektivt",
-    "point2": "Skapa verkställbara mekanismer samtidigt som suveränitet och mångfald respekteras",
-    "point3": "Etablera den rättsliga grunden som gör det möjligt för alla andra ramverk att fungera"
   },
   "cta": "Utforska ramverken",
   "overview": {

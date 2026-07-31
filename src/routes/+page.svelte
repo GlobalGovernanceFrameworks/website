@@ -480,17 +480,16 @@
   </div>
 </section>
 
-<!-- Enhanced Find Your Place Section -->
+
+<!-- Enhanced Find Your Place Section 
 <section class="findyourplace-section">
   <div class="container">
     <div class="findyourplace-layout">
       
-      <!-- Content Column -->
       <div class="findyourplace-content">
         <h2 class="findyourplace-title">{$t('home.findYourPlace.title')}</h2>
         <p class="citizenship-lead">{$t('home.findYourPlace.lead')}</p>
         
-        <!-- Quick Quiz Starter or Results -->
         <div class="quick-quiz-starter">
           {#if !hasCompletedQuiz}
             <h3 class="quiz-starter-title">{$t('home.findYourPlace.quickStart.title', 'Start Your Global Citizenship Journey')}</h3>
@@ -549,7 +548,6 @@
               </div>
             </div>
           {:else}
-            <!-- Quiz Completed State -->
             <div class="quiz-completed-state">
               <div class="completed-header">
                 <div class="completed-icon">🎯</div>
@@ -594,7 +592,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- Emerging Global Possibilities Section -->
 <section class="possibilities-section">
