@@ -170,9 +170,49 @@
       
       <h1 class="hero-title">{$t('home.title')}</h1>
       <p class="hero-subtitle">{$t('home.intro.heading')}</p>
+      <p class="hero-purpose">{$t('home.intro.purpose')}</p>
       <p class="hero-tagline">{$t('home.intro.text')}</p>
+
+      <div class="hero-actions">
+        <a href="{base}/frameworks" class="hero-button hero-button-primary">
+          {$t('home.intro.primaryButton')}
+        </a>
+        <a href="{base}/overview" class="hero-button hero-button-secondary">
+          {$t('home.intro.secondaryButton')}
+        </a>
+      </div>
     </div>
 
+  </div>
+</section>
+
+<!-- Transition Thesis: How Change Begins -->
+<section class="transition-section">
+  <div class="container">
+    <div class="transition-header">
+      <p class="transition-eyebrow">{$t('home.title')}</p>
+      <h2 class="transition-title">{$t('home.transition.title')}</h2>
+      <p class="transition-lead">{$t('home.transition.lead')}</p>
+    </div>
+
+    <div class="transition-grid">
+      {#each Array.isArray($t('home.transition.steps')) ? $t('home.transition.steps') : [] as step, i}
+        <article class="transition-step">
+          <div class="transition-step-number">{i + 1}</div>
+          <div>
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
+          </div>
+        </article>
+      {/each}
+    </div>
+
+    <div class="transition-footer">
+      <p>{$t('home.transition.note')}</p>
+      <a href="{base}/overview" class="transition-link">
+        {$t('home.transition.button')} →
+      </a>
+    </div>
   </div>
 </section>
 
@@ -261,53 +301,6 @@
       </p>
     </div>
 
-  </div>
-</section>
-
-<section class="projects-section">
-  <div class="container">
-    <div class="projects-header">
-      <h2 class="section-heading">{$t('home.activeProjects.title') || 'From Theory to Practice'}</h2>
-      <p class="section-intro">{$t('home.activeProjects.subtitle') || 'Building the infrastructure.'}</p>
-    </div>
-
-    <div class="projects-grid">
-      <a href="https://communize.org" target="_blank" class="project-card project-communize">
-        <div class="project-icon">📖</div>
-        <div class="project-content">
-          <span class="project-tag">{$t('home.activeProjects.communize.tagline')}</span>
-          <h3 class="project-title">{$t('home.activeProjects.communize.title')}</h3>
-          <p class="project-description">{$t('home.activeProjects.communize.description')}</p>
-          <span class="project-link">
-            {$t('home.activeProjects.communize.linkText')} →
-          </span>
-        </div>
-      </a>
-
-      <a href="https://github.com/GlobalGovernanceFrameworks/stuga" target="_blank" class="project-card project-stuga">
-        <div class="project-icon">🏠</div>
-        <div class="project-content">
-          <span class="project-tag">{$t('home.activeProjects.stuga.tagline')}</span>
-          <h3 class="project-title">{$t('home.activeProjects.stuga.title')}</h3>
-          <p class="project-description">{$t('home.activeProjects.stuga.description')}</p>
-          <span class="project-link">
-            {$t('home.activeProjects.stuga.linkText')} →
-          </span>
-        </div>
-      </a>
-
-      <a href="https://github.com/GlobalGovernanceFrameworks/CivicBase" target="_blank" class="project-card project-civicbase">
-        <div class="project-icon">⚡</div>
-        <div class="project-content">
-          <span class="project-tag">{$t('home.activeProjects.civicbase.tagline')}</span>
-          <h3 class="project-title">{$t('home.activeProjects.civicbase.title')}</h3>
-          <p class="project-description">{$t('home.activeProjects.civicbase.description')}</p>
-          <span class="project-link">
-            {$t('home.activeProjects.civicbase.linkText')} →
-          </span>
-        </div>
-      </a>
-    </div>
   </div>
 </section>
 
@@ -908,6 +901,8 @@
   }
 
   .hero-content {
+    max-width: 980px;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -932,11 +927,181 @@
     font-weight: 300;
   }
 
-  .hero-tagline {
-    font-size: 1.6rem;
+  .hero-purpose {
+    max-width: 900px;
+    margin: 0 auto 1.25rem auto;
+    font-size: clamp(1.45rem, 2.4vw, 2rem);
+    line-height: 1.45;
     color: #fbbf24;
-    margin-bottom: 0;
-    font-weight: 600;
+    font-weight: 650;
+  }
+
+  .hero-tagline {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #e0e7ff;
+    font-weight: 400;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.8rem 1.35rem;
+    border-radius: 0.75rem;
+    font-weight: 650;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+
+  .hero-button:hover {
+    transform: translateY(-2px);
+  }
+
+  .hero-button-primary {
+    background: #fbbf24;
+    color: #1e1b4b;
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.22);
+  }
+
+  .hero-button-primary:hover {
+    background: #fcd34d;
+    box-shadow: 0 10px 24px rgba(251, 191, 36, 0.3);
+  }
+
+  .hero-button-secondary {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .hero-button-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  /* Transition Thesis */
+  .transition-section {
+    padding: 4rem 0;
+    background: #0f172a;
+    color: white;
+  }
+
+  .transition-header {
+    max-width: 860px;
+    margin: 0 auto 2.5rem auto;
+    text-align: center;
+  }
+
+  .transition-eyebrow {
+    margin: 0 0 0.75rem 0;
+    color: #fbbf24;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .transition-title {
+    margin: 0 0 1rem 0;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    line-height: 1.15;
+    font-weight: 750;
+  }
+
+  .transition-lead {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+
+  .transition-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .transition-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.4rem;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.045);
+  }
+
+  .transition-step-number {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 999px;
+    background: #fbbf24;
+    color: #1e1b4b;
+    font-weight: 750;
+  }
+
+  .transition-step h3 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.08rem;
+    color: #f8fafc;
+  }
+
+  .transition-step p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.6;
+  }
+
+  .transition-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    max-width: 900px;
+    margin: 2.5rem auto 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+  }
+
+  .transition-footer p {
+    margin: 0;
+    color: #e2e8f0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .transition-link {
+    color: #fbbf24;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .transition-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 760px) {
+    .transition-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   /* NEW: Three Pillars Section */
@@ -2615,8 +2780,20 @@
       font-size: 1.25rem;
     }
 
+    .hero-purpose {
+      font-size: 1.35rem;
+    }
+
     .hero-tagline {
-      font-size: 1.5rem;
+      font-size: 1rem;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: stretch;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .pillars-title {

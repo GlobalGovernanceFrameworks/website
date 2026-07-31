@@ -3,7 +3,34 @@
   "subtitle": "An Open Invitation to Build Governance Systems for a Thriving World",
   "intro": {
     "heading": "What Would It Take for Humanity to Thrive Together?",
-    "text": "Explore an interconnected ecosystem of governance frameworks—practical blueprints for planetary transformation, developed through human-AI collaboration and offered freely to those ready to bring them to life."
+    "purpose": "Global Governance Frameworks exists to expand humanity’s capacity to thrive within a regenerating biosphere—while protecting dignity, distributed agency, cultural plurality, and the freedom of future generations.",
+    "text": "An open-source ecosystem of practical governance frameworks, designed to help communities and institutions coordinate across scales without sacrificing local autonomy or diversity.",
+    "primaryButton": "Explore the Frameworks",
+    "secondaryButton": "How Change Begins"
+  },
+  "transition": {
+    "title": "How Change Begins",
+    "lead": "We do not need to wait for universal agreement. Willing communities, institutions, cities, nations, and networks can begin building and testing better systems now.",
+    "steps": [
+      {
+        "title": "Begin with willing actors",
+        "description": "Start wherever there is enough trust, capacity, and shared purpose to act."
+      },
+      {
+        "title": "Build and test in practice",
+        "description": "Use modular frameworks in real communities and institutions rather than waiting for total redesign."
+      },
+      {
+        "title": "Learn in public",
+        "description": "Evaluate outcomes transparently, preserve dissent, and revise what does not work."
+      },
+      {
+        "title": "Let proven success spread",
+        "description": "Make regenerative cooperation attractive by demonstrating that it improves lives, resilience, and ecological health."
+      }
+    ],
+    "note": "The aim is not to impose one global blueprint. It is to grow an interoperable coalition whose success makes deeper cooperation possible—and increasingly difficult to ignore.",
+    "button": "Read the Transition Approach"
   },
   "threePillars": {
     "title": "The Blueprint for a Regenerative World",
@@ -204,14 +231,6 @@
       "economic3": "Launch local currencies and cooperatives"
     }
   },
-  "treatyFeature": {
-    "heading": "The Foundational Framework: Treaty for Our Only Home",
-    "lead": "Three cornerstone frameworks that transform how we govern together, heal our planet, and ensure everyone thrives.",
-    "point1": "Reforms core institutions like the UN Security Council.",
-    "point2": "Strengthens international law with concepts like Ecocide.",
-    "point3": "Establishes sustainable funding for global public goods.",
-    "button": "Explore the Treaty"
-  },
   "features": {
     "heading": "Featured Frameworks",
     "interoperability": {
@@ -255,16 +274,17 @@
     ]
   },
   "additionalInfo": {
-    "heading": "Why These Frameworks Exist",
-    "paragraph1": "The world has numerous governance experiments happening at different scales, but they often operate in isolation. What's needed are frameworks that allow these innovations to connect, share lessons, and evolve together.",
-    "paragraph2": "Global Governance Frameworks provides tools and patterns for:",
+    "heading": "From Purpose to Practice",
+    "paragraph1": "GGF is not a single world government or a finished master plan. It is a modular ecosystem for turning a shared purpose into accountable action.",
+    "paragraph2": "The frameworks are designed to:",
     "listItems": [
-      "Connecting different governance innovations",
-      "Creating modular, adaptable governance systems",
-      "Enabling governance to evolve to higher levels of consciousness",
-      "Supporting both direct democracy and international cooperation"
+      "Match decision-making authority to the scale of the problem",
+      "Coordinate planetary responsibilities while preserving local autonomy",
+      "Treat human dignity and ecological regeneration as constitutional constraints",
+      "Connect communities, institutions, and governance innovations without forcing uniformity",
+      "Support experimentation, transparent evaluation, and revision through evidence"
     ],
-    "paragraph3": "This approach draws on systems thinking, Spiral Dynamics, and practical experience to create governance systems that are both efficient and deeply considerate of human values."
+    "paragraph3": "Different actors can begin with the parts that fit their context, while shared standards and meta-governance allow successful approaches to connect and grow into a more coherent whole."
   },
   "findYourPlace": {
     "title": "Your Pathway to Planetary Action",
@@ -312,31 +332,6 @@
     "title": "Mapping Ethical Tensions and Tradeoffs",
     "intro": "Real-world governance involves navigating complex ethical tensions. These frameworks don't claim perfect solutions—they provide tools for navigating tradeoffs transparently and wisely."
   },
-  "activeProjects": {
-    "title": "From Theory to Practice: The Implementation Stack",
-    "subtitle": "We are actively building the open-source infrastructure to power these frameworks. These three reference implementations represent the 'Social', 'Application', and 'Data' layers of the new world.",
-    "communize": {
-      "title": "Communize",
-      "tagline": "The Social Protocol",
-      "description": "The operating manual for trust. A guide to the 'Inner Commons' and the social patterns required to build resilient communities.",
-      "linkText": "Read the Manual",
-      "url": "https://communize.org"
-    },
-    "stuga": {
-      "title": "Stuga",
-      "tagline": "The Civil Defense App",
-      "description": "Local-first digital infrastructure for neighborhood resilience. Coordinate resources, emergency response, and mutual aid—even when the internet goes down.",
-      "linkText": "View Prototype",
-      "url": "https://github.com/GlobalGovernanceFrameworks/stuga"
-    },
-    "civicbase": {
-      "title": "CivicBase",
-      "tagline": "The Sovereign Data Core",
-      "description": "The P2P database layer that powers it all. Ensuring that your community's data belongs to your community, not a cloud corporation.",
-      "linkText": "Inspect the Code",
-      "url": "https://github.com/GlobalGovernanceFrameworks/CivicBase"
-    }
-  },
   "getInvolved": {
     "title": "Join the Movement",
     "subtitle": "These Frameworks Need People to Bring Them to Life",
@@ -363,15 +358,15 @@
     }
   },
   "finalCTA": {
-    "title": "Ready to Explore?",
-    "description": "Whether you're here to understand the vision, contribute to development, or implement frameworks in your context—there's a place for you in building governance systems for a thriving world.",
-    "primaryButton": "Read the Overview",
+    "title": "Begin Where You Are",
+    "description": "Global transformation does not have to begin everywhere at once. Explore the architecture, find a framework that fits your context, or join others who are turning regenerative governance into practice.",
+    "primaryButton": "See How Change Begins",
     "secondaryButton": "Explore the Frameworks",
     "tertiaryButton": "Get Involved"
   },
   "whyExists": {
     "title": "Why Does This Exist?",
-    "content": "Global challenges—climate breakdown, inequality, conflict, pandemic risks—share a common thread: they require coordination beyond any single nation's capacity while respecting local autonomy and diversity. Current international systems weren't designed for this. These frameworks offer practical blueprints for governance that can operate effectively at multiple scales, enabling diverse approaches to work together rather than in isolation or conflict."
+    "content": "Humanity’s greatest challenges cross borders, sectors, generations, and cultures, while today’s institutions remain optimized primarily for bounded jurisdictions and short-term priorities. Global Governance Frameworks starts from a different purpose: enabling humanity to thrive within a regenerating biosphere. It develops practical, interoperable ways to coordinate at planetary scale while protecting dignity, local autonomy, cultural plurality, and the ability of future generations to choose their own path."
   },
   "language": {
     "title": "Why the Formal Language?",
