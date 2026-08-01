@@ -1,0 +1,1893 @@
+{
+  "profile_id": "ECRC/0.1",
+  "title": "Emergency and Catastrophic-Risk Cluster Record Profile",
+  "date": "2026-08-01",
+  "status": "draft_for_adoption",
+  "controls": "Emergency, Catastrophic-Risk, and Continuity Interface Specification v0.1",
+  "inheritance_clause": {
+    "id": "ECRC-RIC/0.1",
+    "file": "emergency-record-inheritance-clause-v0.1.md"
+  },
+  "source_manifest": [
+    {
+      "name": "emergency-catastrophic-risk-continuity-interface-specification-v0.1.md",
+      "sha256": "c673742b1317c7169d4b8226118478c990e9a3d05084b2dc5ac9ad2f1971163c",
+      "bytes": 81100,
+      "lines": 2135
+    },
+    {
+      "name": "emergency-cluster-harmonization-interface-test-v0.1.md",
+      "sha256": "479c62643555da11f6235ea6626836b1f7d295a0b6a7ee08a75a9a77200bda65",
+      "bytes": 46970,
+      "lines": 663
+    },
+    {
+      "name": "planetary-immune-system-v2.2.md",
+      "sha256": "4da5a9f55f161873fd6b7a64713ac86a6b0fe7ae62800edba8d01942a7e253b3",
+      "bytes": 64716,
+      "lines": 1529
+    },
+    {
+      "name": "global-health-preparedness-outbreak-response-biosecurity-v2.2.md",
+      "sha256": "37bbc06f65d3a507405acf413847903a3d56b1a92ce72681798cf26fa6e6e14e",
+      "bytes": 59447,
+      "lines": 1621
+    },
+    {
+      "name": "aethelred-accord-v1.2.md",
+      "sha256": "8819f4ac5fdd9090a7cd7807f71c221e50ddd2a6f907b7c44d951933907a3fe7",
+      "bytes": 68302,
+      "lines": 1388
+    },
+    {
+      "name": "living-shield-v4.4.md",
+      "sha256": "0ccc5d59fd2f9b0ab28b6994a14cfded024877c79dc5b6e2401f2a9021f169ca",
+      "bytes": 68344,
+      "lines": 1529
+    },
+    {
+      "name": "aegis-protocol-v1.3.md",
+      "sha256": "79f9e53ebfd37e5ac4dec6bb6bd4ca09d71a397b241182a3f74c617b74ef0cce",
+      "bytes": 72059,
+      "lines": 1498
+    }
+  ],
+  "base_header": [
+    "record_instance_id",
+    "canonical_id",
+    "canonical_schema_version",
+    "domain_record_name",
+    "inheritance_relationship",
+    "cluster_event_id",
+    "domain_event_id",
+    "record_status",
+    "lifecycle_state",
+    "created_at",
+    "updated_at",
+    "effective_at",
+    "expires_at",
+    "issuing_function",
+    "responsible_authority",
+    "authority_provenance_refs",
+    "linked_record_ids",
+    "parent_record_ids",
+    "supersedes",
+    "superseded_by",
+    "access_class",
+    "public_summary_ref",
+    "protected_annex_ref",
+    "correction_history",
+    "dissent_refs",
+    "attestations",
+    "integrity_hash"
+  ],
+  "relationship_types": {
+    "implements": "One domain record satisfies the canonical purpose and all applicable canonical minimum fields.",
+    "extends": "The domain record includes the complete canonical record plus additional domain-specific fields or controls.",
+    "splits": "Two or more domain records jointly satisfy one canonical record; every component and the assembly rule are declared.",
+    "contains": "One domain package contains two or more canonical records as separately identifiable subrecords with distinct authorities, legal effects, timestamps, and lifecycle states.",
+    "imports": "The canonical record is used directly without domain renaming.",
+    "not_applicable": "A competent function records that the canonical trigger cannot arise in the specific event or action package, with reasons and review conditions."
+  },
+  "access_classes": {
+    "AC-1 Public": "Record is public by default, subject to narrowly defined redactions.",
+    "AC-2 Public summary / protected annex": "Core authority and effect are public; sensitive evidence, operations, or personal data are protected.",
+    "AC-3 Restricted operational": "Access is role-bound, logged, time-limited, and reviewable; a public mission/process summary remains required where safe.",
+    "AC-4 Protected sovereignty or source": "Access and disclosure follow the authority of the affected Indigenous nation, protected source, privilege holder, or lawful custodian.",
+    "AC-5 Sealed adjudicative or security material": "Access requires separately valid judicial, professional, or security authority and does not eliminate correction, review, retention, or disposition duties."
+  },
+  "lifecycle_states": [
+    "draft",
+    "proposed",
+    "active",
+    "contested",
+    "suspended",
+    "superseded",
+    "expired",
+    "terminated",
+    "restoration_pending",
+    "disposition_pending",
+    "closed",
+    "archived"
+  ],
+  "records": [
+    {
+      "canonical_id": "ECRC-01",
+      "title": "Hazard Alert Record",
+      "applicability_trigger": "A person, sensor, institution, or protected source reports a condition that may require assessment.",
+      "cardinality": "0..n per event; alerts remain distinct unless explicitly merged.",
+      "minimum_fields": [
+        "alert identifier and timestamps",
+        "reporter or protected-source status",
+        "observed condition, location, and affected systems",
+        "source and method",
+        "initial uncertainty and competing explanations",
+        "evidence-preservation needs",
+        "conflicts or incentives",
+        "requested next step",
+        "statement that the alert has no coercive effect"
+      ],
+      "common_links": [
+        "ECRC-03 when assessed",
+        "ECRC-19 when sensitive data are processed"
+      ],
+      "default_access": "Public summary with protected-source annex",
+      "closure_condition": "Closed by assessment, withdrawal, merger with traceable provenance, or archival disposition.",
+      "prohibited_inference": "An alert does not declare an emergency, establish causation, assign blame, or activate power."
+    },
+    {
+      "canonical_id": "ECRC-02",
+      "title": "Observation Contract",
+      "applicability_trigger": "An observation programme, model, dashboard, monitoring network, laboratory, or assessment process is commissioned or relied upon.",
+      "cardinality": "At least one per materially distinct observation function or provider.",
+      "minimum_fields": [
+        "decision question and observation purpose",
+        "sponsor, operator, funder, and beneficiaries",
+        "variables, methods, models, and sampling limits",
+        "data authority and collection basis",
+        "validation, calibration, and update cadence",
+        "known blind spots and failure modes",
+        "conflicts of interest and independence safeguards",
+        "access, retention, correction, and deletion rules",
+        "conditions for suspension or termination"
+      ],
+      "common_links": [
+        "ECRC-04",
+        "ECRC-19",
+        "ECRC-20 when protected knowledge is involved"
+      ],
+      "default_access": "Public summary with technical or protected annex",
+      "closure_condition": "Closed by expiry, replacement, suspension, or documented termination and data disposition.",
+      "prohibited_inference": "An observation contract does not make its outputs legally binding or self-executing."
+    },
+    {
+      "canonical_id": "ECRC-03",
+      "title": "Catastrophic-Risk State Estimate",
+      "applicability_trigger": "A decision-relevant hazard or system condition requires a structured estimate.",
+      "cardinality": "1..n per decision question; competing estimates may coexist.",
+      "minimum_fields": [
+        "decision question and time horizon",
+        "hazard mechanism and origin hypotheses",
+        "evidence for and against each hypothesis",
+        "probability, plausibility, confidence, and calibration",
+        "consequence range and distributional effects",
+        "affected-area, Indigenous, worker, and operator accounts",
+        "action, inaction, and reversible-option analysis",
+        "missing evidence and update triggers",
+        "named dissent and unresolved uncertainty"
+      ],
+      "common_links": [
+        "ECRC-01",
+        "ECRC-02",
+        "ECRC-04",
+        "ECRC-05 when jurisdiction is implicated"
+      ],
+      "default_access": "Layered transparency; public summary unless doing so creates material risk",
+      "closure_condition": "Superseded by a later estimate, closed by resolved question, or archived with unresolved status in ECRC-33.",
+      "prohibited_inference": "A state estimate does not declare an emergency, prove legal causation, or authorize intervention."
+    },
+    {
+      "canonical_id": "ECRC-04",
+      "title": "Observation Independence Map",
+      "applicability_trigger": "A state estimate or monitoring system depends on multiple observers, models, laboratories, or data providers.",
+      "cardinality": "At least one per major estimate or decision package.",
+      "minimum_fields": [
+        "observer and model identities",
+        "funding, ownership, institutional affiliation, and shared dependencies",
+        "data-source overlap and correlated failure",
+        "methodological diversity",
+        "conflicts and incentives",
+        "challenge and replication capacity",
+        "protected or unavailable perspectives",
+        "independence limitations and mitigations"
+      ],
+      "common_links": [
+        "ECRC-02",
+        "ECRC-03"
+      ],
+      "default_access": "Public summary with protected security annex where necessary",
+      "closure_condition": "Updated whenever material observers, dependencies, or conflicts change.",
+      "prohibited_inference": "A count of observers does not establish independence, validity, or consensus."
+    },
+    {
+      "canonical_id": "ECRC-05",
+      "title": "Standing and Jurisdiction Map",
+      "applicability_trigger": "A condition may affect multiple territories, peoples, sectors, professional regulators, or legal decision classes.",
+      "cardinality": "At least one before any consequential cross-domain or cross-border action.",
+      "minimum_fields": [
+        "underlying decision classes",
+        "territorial and host authorities",
+        "affected Indigenous authorities",
+        "rights holders and representatives",
+        "cross-border jurisdictions",
+        "essential operators and professional regulators",
+        "courts, review bodies, and mutual-aid instruments",
+        "conflicts, gaps, and unresolved claims",
+        "authority that will decide each disputed question"
+      ],
+      "common_links": [
+        "ECRC-03",
+        "ECRC-06",
+        "ECRC-10",
+        "ECRC-11"
+      ],
+      "default_access": "Public summary with protected annex for security-sensitive details",
+      "closure_condition": "Closed only when all active functions have an identified authority or an explicit authority gap is recorded.",
+      "prohibited_inference": "Mapping standing or jurisdiction does not create it, resolve contested sovereignty, or authorize action."
+    },
+    {
+      "canonical_id": "ECRC-06",
+      "title": "Emergency Authority Provenance Record",
+      "applicability_trigger": "Any consequential emergency act, declaration, deployment, restriction, compulsory measure, seizure, or extraordinary expenditure is proposed.",
+      "cardinality": "One per authority/action bundle; separate records for materially different powers or legal bases.",
+      "minimum_fields": [
+        "proposed act and decision class",
+        "issuing authority and constituting instrument",
+        "territorial, personal, subject-matter, and temporal jurisdiction",
+        "triggering facts and evidentiary threshold",
+        "rights affected and non-derogable minima",
+        "conditions, prohibitions, and dependencies",
+        "review, appeal, expiry, renewal, termination, and restoration",
+        "responsible officials and command relationship",
+        "public summary and protected annex",
+        "attestations and authenticity controls"
+      ],
+      "common_links": [
+        "ECRC-05",
+        "ECRC-07 when declaration is required",
+        "ECRC-08",
+        "ECRC-13"
+      ],
+      "default_access": "Public summary plus protected legal/operational annex",
+      "closure_condition": "Expires with the power, is superseded by a new valid record, or is invalidated and routed to restoration.",
+      "prohibited_inference": "The record documents authority; it does not manufacture authority where the underlying instrument is absent or invalid."
+    },
+    {
+      "canonical_id": "ECRC-07",
+      "title": "Emergency Declaration Record",
+      "applicability_trigger": "Applicable law requires a formal declaration before specified emergency powers or resources may be used.",
+      "cardinality": "One per declaring authority and territorial/legal scope; multiple declarations may coexist.",
+      "minimum_fields": [
+        "declaring authority and legal basis",
+        "declared condition, territory, population, and functions",
+        "threshold and evidence relied upon",
+        "start time and automatic expiry",
+        "powers not activated by the declaration",
+        "review and challenge route",
+        "conditions for refusal, amendment, renewal, or termination",
+        "relationship to other declarations"
+      ],
+      "common_links": [
+        "ECRC-03",
+        "ECRC-05",
+        "ECRC-06",
+        "ECRC-08"
+      ],
+      "default_access": "Public except narrowly protected operational details",
+      "closure_condition": "Closed by expiry, withdrawal, judicial invalidation, replacement, or ECRC-27.",
+      "prohibited_inference": "A declaration does not activate every emergency power, transfer command, establish liability, or override unrelated institutions."
+    },
+    {
+      "canonical_id": "ECRC-08",
+      "title": "Power Activation and Prohibition Schedule",
+      "applicability_trigger": "A valid authority proposes to activate one or more specific emergency powers.",
+      "cardinality": "One schedule per authority and activation period; each power is separately enumerated.",
+      "minimum_fields": [
+        "each activated power and legal basis",
+        "responsible function and decision maker",
+        "territorial, personal, functional, and temporal scope",
+        "conditions precedent and dependencies",
+        "prohibited uses and protected minima",
+        "least-restrictive alternatives considered",
+        "start, review, expiry, and renewal dates",
+        "data, finance, work, and command dependencies",
+        "termination and restoration obligations"
+      ],
+      "common_links": [
+        "ECRC-06",
+        "ECRC-07 when applicable",
+        "ECRC-09",
+        "ECRC-13",
+        "ECRC-22"
+      ],
+      "default_access": "Public summary with protected operational annex",
+      "closure_condition": "Each power closes separately by expiry, termination, invalidation, or replacement.",
+      "prohibited_inference": "Activation of one power does not imply activation of another or create residual authority."
+    },
+    {
+      "canonical_id": "ECRC-09",
+      "title": "Operational Command and Deployment Record",
+      "applicability_trigger": "Personnel, assets, facilities, or operational modules are deployed or coordinated.",
+      "cardinality": "One per mission, command chain, or materially distinct module.",
+      "minimum_fields": [
+        "mission purpose and lawful authority",
+        "commander or coordinating lead and professional autonomy boundaries",
+        "personnel, assets, facilities, and capabilities",
+        "host and territorial authorization",
+        "rules, prohibitions, and escalation limits",
+        "communications and interoperability",
+        "worker safety, liability, claims, and insurance",
+        "data and intelligence boundaries",
+        "handoff, withdrawal, termination, and asset-return conditions"
+      ],
+      "common_links": [
+        "ECRC-06",
+        "ECRC-08",
+        "ECRC-10",
+        "ECRC-16",
+        "ECRC-23 when assistance crosses boundaries"
+      ],
+      "default_access": "Restricted operational record with public mission summary",
+      "closure_condition": "Closed by mission termination, handoff acceptance, demobilisation, and verified asset/credential return.",
+      "prohibited_inference": "Operational command does not confer legal jurisdiction beyond the specifically authorized mission."
+    },
+    {
+      "canonical_id": "ECRC-10",
+      "title": "Host and Territorial Authorization Record",
+      "applicability_trigger": "Assistance, deployment, access, facility use, data collection, or operations occur in another territory or under another host authority.",
+      "cardinality": "At least one per host jurisdiction or affected territory.",
+      "minimum_fields": [
+        "requesting and accepting authorities",
+        "territory, facilities, communities, and duration",
+        "scope of consent or authorization",
+        "command and professional-autonomy boundaries",
+        "access, search, data, sample, and equipment permissions",
+        "costs, liability, claims, and immunities if lawfully granted",
+        "withdrawal, refusal, suspension, and termination",
+        "handoff and return obligations"
+      ],
+      "common_links": [
+        "ECRC-05",
+        "ECRC-09",
+        "ECRC-11 where Indigenous territory is affected",
+        "ECRC-23"
+      ],
+      "default_access": "Public summary with protected operational annex",
+      "closure_condition": "Closed by withdrawal, expiry, completion, revocation, or verified handback.",
+      "prohibited_inference": "Host authorization does not waive rights, create blanket immunity, or authorize unrelated intelligence collection."
+    },
+    {
+      "canonical_id": "ECRC-11",
+      "title": "Indigenous Emergency Interface Record",
+      "applicability_trigger": "An emergency action, observation, assistance mission, or data/knowledge process may affect an Indigenous people, nation, territory, resource, relation, or protected knowledge.",
+      "cardinality": "One per affected Indigenous nation or validly designated interface; no universal proxy.",
+      "minimum_fields": [
+        "affected people or nation and chosen representatives",
+        "decision class and inherent or recognized authority",
+        "engagement, refusal, or non-engagement status",
+        "territorial access and operational conditions",
+        "knowledge, data, sample, genetic, cultural, and spiritual protections",
+        "non-transfer, non-publication, non-training, return, deletion, or destruction conditions",
+        "immediate-rescue exception if any and its narrow limits",
+        "benefit, compensation, restoration, and grievance routes",
+        "termination and non-precedent statement"
+      ],
+      "common_links": [
+        "ECRC-05",
+        "ECRC-10",
+        "ECRC-20",
+        "ECRC-30"
+      ],
+      "default_access": "Protected sovereignty record; public information only by affected authority",
+      "closure_condition": "Closed by affected authority, completion of obligations, or documented non-engagement; survival of non-transfer terms is explicit.",
+      "prohibited_inference": "The record does not create a universal Indigenous representative or convert consultation into consent."
+    },
+    {
+      "canonical_id": "ECRC-12",
+      "title": "Affected-Community Liaison Record",
+      "applicability_trigger": "Communities face material effects, displacement, restrictions, uncertainty, or operational presence.",
+      "cardinality": "One per materially distinct affected community or liaison structure.",
+      "minimum_fields": [
+        "community definition and liaison selection method",
+        "communication languages and accessibility",
+        "needs, concerns, local observations, and dissent",
+        "support, grievance, correction, and feedback channels",
+        "meeting cadence and response deadlines",
+        "conflict-of-interest and representation limits",
+        "protected participants and retaliation safeguards",
+        "unresolved issues and escalation path"
+      ],
+      "common_links": [
+        "ECRC-11 where applicable",
+        "ECRC-13",
+        "ECRC-21"
+      ],
+      "default_access": "Public summary with protected participant annex",
+      "closure_condition": "Closed after obligations, grievances, and unresolved issues are transferred or resolved.",
+      "prohibited_inference": "A liaison record does not establish consent, erase dissent, or authorize action."
+    },
+    {
+      "canonical_id": "ECRC-13",
+      "title": "Rights and Non-Derogation Record",
+      "applicability_trigger": "A proposed or active measure may affect rights, liberties, equality, accessibility, bodily integrity, livelihood, family life, due process, or protected continuity.",
+      "cardinality": "At least one per activation package; supplemental records for distinct measures.",
+      "minimum_fields": [
+        "rights and populations affected",
+        "non-derogable and protected minima",
+        "legal basis and legitimate aim",
+        "necessity, proportionality, and less-restrictive alternatives",
+        "disability, age, gender, racial, migration, institutionalization, and socioeconomic effects",
+        "procedural safeguards, notice, review, and appeal",
+        "support required to make voluntary compliance possible",
+        "monitoring for discriminatory or cumulative effects",
+        "expiry, remedy, and restoration"
+      ],
+      "common_links": [
+        "ECRC-06",
+        "ECRC-08",
+        "ECRC-14 or ECRC-15 when applicable",
+        "ECRC-30"
+      ],
+      "default_access": "Public summary with protected personal annex",
+      "closure_condition": "Updated throughout the measure and closed only after restoration and outstanding remedies are recorded.",
+      "prohibited_inference": "A rights review does not cure an invalid legal basis or make a disproportionate measure lawful."
+    },
+    {
+      "canonical_id": "ECRC-14",
+      "title": "Health Measure and Bodily Integrity Record",
+      "applicability_trigger": "A measure affects vaccination, prophylaxis, testing, treatment, triage, medical examination, sample collection, or other bodily integrity.",
+      "cardinality": "One per materially distinct health measure and affected legal regime.",
+      "minimum_fields": [
+        "measure, target population, and clinical purpose",
+        "evidence, uncertainty, benefits, and harms",
+        "authorization and professional responsibility",
+        "consent or compulsory basis",
+        "contraindications, exemptions, accommodations, and alternatives",
+        "privacy, samples, and data handling",
+        "access, allocation, continuity, and non-discrimination",
+        "adverse-event monitoring and compensation",
+        "review, expiry, and withdrawal"
+      ],
+      "common_links": [
+        "ECRC-13",
+        "ECRC-19",
+        "ECRC-22",
+        "ECRC-30"
+      ],
+      "default_access": "Public clinical/legal summary with confidential personal data",
+      "closure_condition": "Closed after expiry, follow-up, data/sample disposition, and unresolved claims transfer.",
+      "prohibited_inference": "The record does not authorize forced treatment or establish clinical appropriateness for an individual."
+    },
+    {
+      "canonical_id": "ECRC-15",
+      "title": "Isolation, Evacuation, and Shelter Record",
+      "applicability_trigger": "People may be isolated, quarantined, evacuated, excluded, relocated, or housed in emergency shelter.",
+      "cardinality": "One per measure, area, authority, and affected population.",
+      "minimum_fields": [
+        "measure and lawful authority",
+        "persons, area, duration, and criteria",
+        "evidence and less-restrictive alternatives",
+        "notice, review, appeal, and representation",
+        "food, water, shelter, income, caregiving, communication, health, disability, and family supports",
+        "safety, privacy, policing, and non-discrimination safeguards",
+        "return, release, compensation, and property protection",
+        "expiry and re-evaluation"
+      ],
+      "common_links": [
+        "ECRC-13",
+        "ECRC-17",
+        "ECRC-18",
+        "ECRC-22",
+        "ECRC-30"
+      ],
+      "default_access": "Public rules with protected individual records",
+      "closure_condition": "Closed by release/return, property and service restoration, and disposition of personal data.",
+      "prohibited_inference": "The record does not permit collective punishment, indefinite confinement, or unsupported evacuation."
+    },
+    {
+      "canonical_id": "ECRC-16",
+      "title": "Emergency Work Mobilisation Record",
+      "applicability_trigger": "Workers, volunteers, community responders, contractors, public servants, or security personnel are mobilized.",
+      "cardinality": "One per workforce, employer/organizer, and mission.",
+      "minimum_fields": [
+        "roles, employer or responsible entity, and command",
+        "voluntary or compulsory basis",
+        "wages, benefits, insurance, pensions, and hazard pay",
+        "training, credentials, supervision, equipment, and staffing",
+        "hours, rotation, rest, family, mental-health, and disability support",
+        "safe refusal, withdrawal, whistleblowing, and anti-retaliation",
+        "injury, exposure, claims, and long-term follow-up",
+        "demobilisation, retraining, and record disposition"
+      ],
+      "common_links": [
+        "ECRC-09",
+        "ECRC-13",
+        "ECRC-18",
+        "ECRC-30"
+      ],
+      "default_access": "Public labour standards with protected personnel annex",
+      "closure_condition": "Closed after demobilisation, final pay, claims transfer, credential return, and follow-up arrangements.",
+      "prohibited_inference": "Recognition, solidarity, Hearts, civic duty, or emergency rhetoric does not replace wages and protections."
+    },
+    {
+      "canonical_id": "ECRC-17",
+      "title": "Essential Services and AUBI Continuity Record",
+      "applicability_trigger": "An emergency may interrupt essential care, utilities, food, shelter, communications, justice, income support, or AUBI Layer 1.",
+      "cardinality": "At least one per affected essential-service network or territory.",
+      "minimum_fields": [
+        "essential functions and dependent populations",
+        "minimum service levels and prioritization",
+        "operators, substitutes, and mutual-aid dependencies",
+        "accessibility and protected-population needs",
+        "AUBI Layer 1 and social-protection continuity",
+        "supply, staffing, power, communications, and cyber dependencies",
+        "failure thresholds and restoration sequence",
+        "public information and grievance routes"
+      ],
+      "common_links": [
+        "ECRC-03",
+        "ECRC-08",
+        "ECRC-18",
+        "ECRC-23"
+      ],
+      "default_access": "Public continuity summary with protected infrastructure annex",
+      "closure_condition": "Closed after ordinary capacity is restored or a lawful long-term transition is approved.",
+      "prohibited_inference": "The record does not authorize discrimination, political conditionality, or diversion of protected personal balances."
+    },
+    {
+      "canonical_id": "ECRC-18",
+      "title": "Emergency Finance and Compensation Record",
+      "applicability_trigger": "Emergency funds, forecast finance, procurement, guarantees, reserves, compensation, or extraordinary expenditures are used.",
+      "cardinality": "One per funding instrument, authority, and accounting unit.",
+      "minimum_fields": [
+        "legal and fiscal authority",
+        "funding source, amount, currency, and custody",
+        "eligible uses, recipients, and disbursement rules",
+        "procurement, conflicts, fees, and beneficial ownership",
+        "forecast or parametric trigger and basis-risk safeguards",
+        "audit, correction, appeal, and fraud controls",
+        "worker, community, and claimant compensation reserves",
+        "expiry, clawback limits, residual funds, and closeout"
+      ],
+      "common_links": [
+        "ECRC-06",
+        "ECRC-08",
+        "ECRC-16",
+        "ECRC-17",
+        "ECRC-30"
+      ],
+      "default_access": "Public fiscal summary with protected anti-fraud annex",
+      "closure_condition": "Closed by audited reconciliation, compensation-reserve transfer, and lawful disposition of residual funds.",
+      "prohibited_inference": "A framework, metric, or emergency label does not create tax, debt, seizure, or appropriation authority."
+    },
+    {
+      "canonical_id": "ECRC-19",
+      "title": "Data, Privacy, Security, and Secrecy Record",
+      "applicability_trigger": "Emergency observation or action processes personal, health, genetic, operational, infrastructure, model, communications, or security-sensitive data.",
+      "cardinality": "At least one per data system, controller/custodian, and purpose; linked records for shared processing.",
+      "minimum_fields": [
+        "data categories, subjects, sources, and purposes",
+        "controller, custodian, processor, and access roles",
+        "legal basis and authority",
+        "collection limits, minimization, accuracy, correction, and contestation",
+        "security, logging, breach response, and model safeguards",
+        "sharing, cross-border transfer, and protected non-transfer",
+        "retention, deletion, archival, and emergency-expiry rules",
+        "public summary, secrecy rationale, and review",
+        "AI or automated-system role and human responsibility"
+      ],
+      "common_links": [
+        "ECRC-02",
+        "ECRC-11 or ECRC-20 where applicable",
+        "ECRC-21",
+        "ECRC-29"
+      ],
+      "default_access": "Layered access; never presumed public",
+      "closure_condition": "Remains active until ECRC-29 verifies disposition or a valid ordinary-law basis replaces the emergency basis.",
+      "prohibited_inference": "Data possession, dashboard visibility, or model output does not create decision authority or permit secondary use."
+    },
+    {
+      "canonical_id": "ECRC-20",
+      "title": "Protected Knowledge and Non-Transfer Record",
+      "applicability_trigger": "Knowledge, samples, genetic material, cultural information, sacred relations, source identities, security information, or dual-use material requires protected handling.",
+      "cardinality": "One per protected knowledge domain, source authority, or non-transfer obligation.",
+      "minimum_fields": [
+        "protected subject and authority to set conditions",
+        "classification and rationale",
+        "permitted purpose, users, locations, and duration",
+        "non-transfer, non-publication, non-training, non-commercialization, and derivative-use conditions",
+        "bounded attestation or aggregate alternatives",
+        "security, custody, access logging, and breach response",
+        "return, repatriation, deletion, destruction, or continuing custody",
+        "surviving obligations after termination"
+      ],
+      "common_links": [
+        "ECRC-11",
+        "ECRC-19",
+        "ECRC-24 when evidence is involved"
+      ],
+      "default_access": "Protected; public existence/summary only where authorized",
+      "closure_condition": "Closed only when the originating authority confirms disposition or continuing obligations are transferred.",
+      "prohibited_inference": "The record does not convert protected knowledge into a global commons or infer consent from emergency need."
+    },
+    {
+      "canonical_id": "ECRC-21",
+      "title": "Public Information and Correction Record",
+      "applicability_trigger": "Authorities or operational bodies issue warnings, advice, uncertainty statements, corrections, orders, or service information.",
+      "cardinality": "One per communication stream, issuing function, and material correction cycle.",
+      "minimum_fields": [
+        "issuer and communication authority",
+        "audience, languages, formats, and accessibility",
+        "content type: observation, advice, request, or legal order",
+        "evidence, uncertainty, and update time",
+        "distinction between public-health/disaster advice and compulsory measures",
+        "source and protected-information limits",
+        "correction, retraction, archive, and appeal process",
+        "misinformation-risk controls without propaganda or covert persuasion"
+      ],
+      "common_links": [
+        "ECRC-03",
+        "ECRC-07 or ECRC-08 for legal orders",
+        "ECRC-12",
+        "ECRC-19"
+      ],
+      "default_access": "Public by purpose, with protected drafting/source annex",
+      "closure_condition": "Closed when superseded, corrected, archived, and linked to final after-action account.",
+      "prohibited_inference": "Communication does not create legal authority, and correction does not permit narrative manufacture."
+    },
+    {
+      "canonical_id": "ECRC-22",
+      "title": "Interim Measure Review Record",
+      "applicability_trigger": "A provisional, urgent, ex parte, restrictive, or protective measure is taken before full ordinary process.",
+      "cardinality": "One per interim measure and each mandatory review.",
+      "minimum_fields": [
+        "measure, authority, and start time",
+        "urgent necessity and evidence",
+        "rights and interests affected",
+        "notice given or reason for delay",
+        "opportunity to contest and access evidence",
+        "independent reviewer and deadline",
+        "continuation, modification, termination, or remedy decision",
+        "links to declaration, activation, and evidence records"
+      ],
+      "common_links": [
+        "ECRC-06",
+        "ECRC-08",
+        "ECRC-13",
+        "ECRC-24",
+        "ECRC-25"
+      ],
+      "default_access": "Public decision with protected evidence annex where justified",
+      "closure_condition": "Closed by timely review and implementation of continuation, termination, or restoration.",
+      "prohibited_inference": "An interim measure cannot renew itself, evade the 72-hour limit, or become permanent through repetition."
+    },
+    {
+      "canonical_id": "ECRC-23",
+      "title": "Cross-Border Assistance Record",
+      "applicability_trigger": "Assistance, personnel, assets, funds, data, samples, or services cross jurisdictional boundaries.",
+      "cardinality": "One per sending/receiving authority pair and mission; multilateral packages may link several records.",
+      "minimum_fields": [
+        "request, offer, acceptance, rejection, or concurrent status",
+        "sending, receiving, host, and territorial authorities",
+        "mission, assets, personnel, duration, and limits",
+        "command, professional autonomy, and interoperability",
+        "customs, licensing, credentials, liability, claims, and costs",
+        "data, sample, intelligence, and protected-knowledge boundaries",
+        "neutrality, withdrawal, termination, and handback",
+        "unresolved disputes and review route"
+      ],
+      "common_links": [
+        "ECRC-05",
+        "ECRC-09",
+        "ECRC-10",
+        "ECRC-18",
+        "ECRC-19"
+      ],
+      "default_access": "Public mission summary with protected operational annex",
+      "closure_condition": "Closed after handback, financial reconciliation, data disposition, claims transfer, and authority restoration.",
+      "prohibited_inference": "Cross-border assistance does not create extraterritorial jurisdiction, blanket immunity, or authority to use force."
+    },
+    {
+      "canonical_id": "ECRC-24",
+      "title": "Investigation and Evidence Handoff Record",
+      "applicability_trigger": "Potential wrongdoing, liability, causation, regulatory breach, or rights violation requires evidence transfer to a competent investigative or prosecutorial function.",
+      "cardinality": "One per sender, recipient, evidentiary package, and handoff event.",
+      "minimum_fields": [
+        "sender and recipient authority",
+        "investigative question and jurisdiction",
+        "items, data, samples, statements, and metadata transferred",
+        "chain of custody, integrity, provenance, and access history",
+        "protected sources, privileges, privacy, and non-transfer conditions",
+        "scope and purpose limits",
+        "acceptance, rejection, deficiency, and correction timestamps",
+        "retained copies and continuing duties",
+        "statement that no adjudication or enforcement result is implied"
+      ],
+      "common_links": [
+        "ECRC-19",
+        "ECRC-20",
+        "ECRC-25 only if separately initiated"
+      ],
+      "default_access": "Restricted evidentiary record with public process summary where lawful",
+      "closure_condition": "Closed by acknowledged custody transfer, rejection/return, or lawful disposition.",
+      "prohibited_inference": "Evidence handoff does not establish liability, guilt, causation, remedy, or enforcement authority."
+    },
+    {
+      "canonical_id": "ECRC-25",
+      "title": "Adjudication and Enforcement Handoff Record",
+      "applicability_trigger": "A competent authority seeks adjudication, recognition, remedy, injunction, sanction, or execution by a separately authorized body.",
+      "cardinality": "One per referral, case, order, recognition request, or enforcement assignment.",
+      "minimum_fields": [
+        "referring and receiving authorities",
+        "legal basis, jurisdiction, standing, and requested relief",
+        "case or order identifier",
+        "procedural status and notice",
+        "evidence references without collapsing ECRC-24",
+        "rights, appeal, stay, and review routes",
+        "enforcement actor and separately valid mandate",
+        "scope, limits, expiry, completion, and return report",
+        "statement preserving judicial and operational separation"
+      ],
+      "common_links": [
+        "ECRC-05",
+        "ECRC-06",
+        "ECRC-22 where interim relief exists",
+        "ECRC-24 as evidence reference"
+      ],
+      "default_access": "Public procedural record with protected case annex",
+      "closure_condition": "Closed by final disposition, execution report, stay, withdrawal, or transfer to ordinary process.",
+      "prohibited_inference": "Referral does not predetermine adjudication; an order does not authorize an unassigned body to execute itself."
+    },
+    {
+      "canonical_id": "ECRC-26",
+      "title": "Renewal State Estimate",
+      "applicability_trigger": "A provisional or time-limited emergency action is proposed for continuation, especially beyond 72 hours, 30 days, or 90 cumulative days.",
+      "cardinality": "One per renewal decision and active power bundle.",
+      "minimum_fields": [
+        "current decision question and active powers",
+        "updated hazard evidence and confidence",
+        "results and harms of measures taken",
+        "rights, distributional, worker, and continuity effects",
+        "less-restrictive alternatives and ordinary-law options",
+        "remaining authority and jurisdiction",
+        "dissent and evidence that would end the measure",
+        "renewal period, conditions, and automatic expiry",
+        "restoration and data-disposition readiness"
+      ],
+      "common_links": [
+        "ECRC-03",
+        "ECRC-06",
+        "ECRC-08",
+        "ECRC-13",
+        "ECRC-22",
+        "ECRC-27"
+      ],
+      "default_access": "Public decision summary with protected evidence annex",
+      "closure_condition": "Closed by renewal decision, expiry, termination, or transition to ordinary law.",
+      "prohibited_inference": "Past authorization, sunk cost, institutional performance, or persistent hazard does not itself justify renewal."
+    },
+    {
+      "canonical_id": "ECRC-27",
+      "title": "Emergency Termination Certificate",
+      "applicability_trigger": "An emergency declaration, power, mission, facility control, restriction, or extraordinary coordination ends.",
+      "cardinality": "One per terminated declaration, power bundle, mission, or authority.",
+      "minimum_fields": [
+        "terminated authority, measure, mission, and scope",
+        "legal and factual basis for termination",
+        "effective time",
+        "remaining hazards and unresolved issues",
+        "orders to cease, withdraw, release, return, or restore",
+        "service-continuity arrangements",
+        "records, data, samples, assets, credentials, and funds requiring disposition",
+        "responsible actors and completion deadlines",
+        "rights, claims, and review routes"
+      ],
+      "common_links": [
+        "ECRC-08",
+        "ECRC-09",
+        "ECRC-26",
+        "ECRC-28",
+        "ECRC-29",
+        "ECRC-30"
+      ],
+      "default_access": "Public certificate with protected implementation annex",
+      "closure_condition": "Closed only when linked restoration and disposition obligations are verified, not merely announced.",
+      "prohibited_inference": "A termination certificate does not prove that authority, assets, data, services, or rights have actually been restored."
+    },
+    {
+      "canonical_id": "ECRC-28",
+      "title": "Authority Restoration and Asset Return Record",
+      "applicability_trigger": "Emergency authority, facilities, assets, access, credentials, command, custody, or territorial control must return.",
+      "cardinality": "One per authority/asset/custody bundle and receiving owner or authority.",
+      "minimum_fields": [
+        "authority and assets to be returned",
+        "returning and receiving actors",
+        "condition, inventory, access, credentials, keys, software, and custody",
+        "outstanding restrictions, claims, contamination, or damage",
+        "service continuity and professional handover",
+        "revocation of emergency access and command",
+        "verification, acceptance, deficiency, and completion",
+        "unresolved items and escalation route"
+      ],
+      "common_links": [
+        "ECRC-27",
+        "ECRC-29",
+        "ECRC-30"
+      ],
+      "default_access": "Public completion summary with protected inventory/security annex",
+      "closure_condition": "Closed by verified acceptance or formally recorded unresolved dispute.",
+      "prohibited_inference": "Publication of termination or intent to return does not complete restoration."
+    },
+    {
+      "canonical_id": "ECRC-29",
+      "title": "Emergency Data Disposition Record",
+      "applicability_trigger": "Emergency powers expire or emergency-purpose data, samples, models, logs, or access rights reach their disposition point.",
+      "cardinality": "At least one per ECRC-19 processing environment and termination package.",
+      "minimum_fields": [
+        "data, samples, models, logs, credentials, and copies covered",
+        "controller, custodian, recipients, and processors",
+        "emergency basis that has expired",
+        "delete, return, repatriate, anonymize, archive, retain, or migrate decision",
+        "ordinary-law basis for any continuing retention",
+        "protected non-transfer and source conditions",
+        "verification method and completion date",
+        "breach, unresolved copy, or litigation-hold status",
+        "access revocation and public summary"
+      ],
+      "common_links": [
+        "ECRC-19",
+        "ECRC-20",
+        "ECRC-27",
+        "ECRC-28"
+      ],
+      "default_access": "Layered access; public disposition summary where safe",
+      "closure_condition": "Closed by verified disposition or valid continuing ordinary-law authority with review date.",
+      "prohibited_inference": "Emergency usefulness, research value, or technical convenience does not justify indefinite retention or secondary use."
+    },
+    {
+      "canonical_id": "ECRC-30",
+      "title": "Wrongful Action and Compensation Record",
+      "applicability_trigger": "Action may have been unlawful, excessive, mistaken, discriminatory, harmful, or based on a good-faith false alarm that caused compensable loss.",
+      "cardinality": "One per claim, class, affected community, or remedial programme.",
+      "minimum_fields": [
+        "claimant or affected class and standing",
+        "challenged action and responsible actors",
+        "harm, loss, injury, rights effect, or property impact",
+        "evidence, causation, uncertainty, and defences",
+        "urgent support and interim restoration",
+        "remedies, compensation, rehabilitation, correction, apology, or institutional change",
+        "funding source and payment status",
+        "appeal, review, and unresolved issues",
+        "non-retaliation and preservation of future support"
+      ],
+      "common_links": [
+        "ECRC-13",
+        "ECRC-18",
+        "ECRC-24 or ECRC-25 where applicable"
+      ],
+      "default_access": "Public programme/ruling summary with protected claimant data",
+      "closure_condition": "Closed after remedy completion or transfer of unresolved claims to competent process.",
+      "prohibited_inference": "Good-faith intent does not erase harm; compensation does not retroactively validate unlawful action."
+    },
+    {
+      "canonical_id": "ECRC-31",
+      "title": "After-Action and Ordinary-Capacity Review",
+      "applicability_trigger": "A significant alert, activation, compound event, failed escalation, or emergency response concludes or reaches a major review point.",
+      "cardinality": "At least one per major event or mission; independent reviews may coexist.",
+      "minimum_fields": [
+        "event and decision chronology",
+        "what was known, unknown, and contested",
+        "authority and handoff performance",
+        "rights, community, Indigenous, worker, data, finance, and continuity effects",
+        "counterfactuals, false positives, false negatives, and intervention harm",
+        "successes, failures, near misses, and dissent",
+        "changes proposed to ordinary capacity, law, interfaces, or institutions",
+        "owners, deadlines, and verification",
+        "statement that learning does not transfer authority"
+      ],
+      "common_links": [
+        "ECRC-27",
+        "ECRC-28",
+        "ECRC-29",
+        "ECRC-30",
+        "ECRC-33"
+      ],
+      "default_access": "Public report with protected annexes",
+      "closure_condition": "Closed when recommendations are accepted, rejected with reasons, or transferred to tracked ordinary governance.",
+      "prohibited_inference": "Operational success, competence, trust, or learning does not transfer permanent jurisdiction."
+    },
+    {
+      "canonical_id": "ECRC-32",
+      "title": "Institutional Sunset or Continuation Record",
+      "applicability_trigger": "A temporary emergency body, programme, facility, mandate, dataset, fund, or coordination arrangement reaches review or sunset.",
+      "cardinality": "One per temporary institution or programme.",
+      "minimum_fields": [
+        "institution, mandate, authority, and original sunset",
+        "performance and harm evidence",
+        "remaining need and ordinary alternatives",
+        "capture, dependency, and self-preservation risks",
+        "continuation, transfer, narrowing, dissolution, or no-successor options",
+        "assets, personnel, data, obligations, and claims disposition",
+        "decision authority, reasons, dissent, and next review",
+        "prohibition on competence-to-jurisdiction migration"
+      ],
+      "common_links": [
+        "ECRC-31",
+        "ECRC-28",
+        "ECRC-29",
+        "ECRC-33"
+      ],
+      "default_access": "Public decision with protected operational annex",
+      "closure_condition": "Closed by verified continuation under valid authority, transfer, or dissolution.",
+      "prohibited_inference": "Existence, performance, accumulated expertise, or unresolved risk does not entitle an institution to continue."
+    },
+    {
+      "canonical_id": "ECRC-33",
+      "title": "Unresolved Risk and Dissent Register",
+      "applicability_trigger": "Material uncertainty, jurisdiction gap, unresolved dissent, residual hazard, uncompleted restoration, or non-scaling decision remains open.",
+      "cardinality": "0..n per event; one cluster-level index may reference protected entries.",
+      "minimum_fields": [
+        "issue identifier and linked event/records",
+        "risk, uncertainty, dissent, or unresolved obligation",
+        "affected systems, rights holders, and authorities",
+        "current custodian and responsible follow-up actor",
+        "evidence needed and update trigger",
+        "deadline or review cadence",
+        "public/protected status",
+        "reason unresolved",
+        "closure condition and history"
+      ],
+      "common_links": [
+        "Any ECRC record; especially ECRC-03",
+        "ECRC-05",
+        "ECRC-27",
+        "ECRC-28",
+        "ECRC-29",
+        "ECRC-31",
+        "ECRC-32"
+      ],
+      "default_access": "Public index with protected entries where necessary",
+      "closure_condition": "Closed only when the specified closure condition is met and verified.",
+      "prohibited_inference": "An unresolved-risk register does not keep emergency powers alive or authorize precautionary coercion."
+    }
+  ],
+  "crosswalk": {
+    "PIS v2.2": {
+      "file": "planetary-immune-system-v2.2.md",
+      "sha256": "4da5a9f55f161873fd6b7a64713ac86a6b0fe7ae62800edba8d01942a7e253b3",
+      "mappings": [
+        {
+          "canonical_id": "ECRC-01",
+          "domain_record": "Hazard Alert Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-02",
+          "domain_record": "Observation Contract",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-03",
+          "domain_record": "Catastrophic-Risk State Estimate",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-04",
+          "domain_record": "Observation Independence Map",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-05",
+          "domain_record": "Standing and Jurisdiction Map",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-06",
+          "domain_record": "Emergency Authority Provenance Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-07",
+          "domain_record": "Emergency Declaration Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-08",
+          "domain_record": "Power Activation and Prohibition Schedule",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-09",
+          "domain_record": "Operational Command and Deployment Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-10",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-11",
+          "domain_record": "Indigenous Emergency Interface Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-12",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-13",
+          "domain_record": "Rights and Non-Derogation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-14",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-15",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-16",
+          "domain_record": "Emergency Work Mobilisation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-17",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-18",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-19",
+          "domain_record": "Emergency Data, Model, Security, and Secrecy Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-20",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-21",
+          "domain_record": "Public Information and Correction Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-22",
+          "domain_record": "Interim Measure and Urgent Review Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-23",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-24",
+          "domain_record": "Investigation and Evidence Handoff Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-25",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-26",
+          "domain_record": "Renewal State Estimate",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-27",
+          "domain_record": "Emergency Termination Certificate",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-28",
+          "domain_record": "Authority, Asset, and Credential Restoration Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-29",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-30",
+          "domain_record": "Wrongful Action and Compensation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-31",
+          "domain_record": "After-Action Review + Ordinary-Capacity Transition Plan",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-32",
+          "domain_record": "Institutional Sunset or Continuation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-33",
+          "domain_record": "Unresolved Risk Register",
+          "status": "MAPPED"
+        }
+      ]
+    },
+    "Global Health v2.2": {
+      "file": "global-health-preparedness-outbreak-response-biosecurity-v2.2.md",
+      "sha256": "37bbc06f65d3a507405acf413847903a3d56b1a92ce72681798cf26fa6e6e14e",
+      "mappings": [
+        {
+          "canonical_id": "ECRC-01",
+          "domain_record": "Health Threat Signal Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-02",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-03",
+          "domain_record": "Health State Estimate and Dissent Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-04",
+          "domain_record": "Observation Independence Map",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-05",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-06",
+          "domain_record": "Emergency Authority Provenance Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-07",
+          "domain_record": "Emergency Declaration Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-08",
+          "domain_record": "Power Activation Schedule",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-09",
+          "domain_record": "Mission Scope and Command Record / Health Emergency Assistance Corps Deployment Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-10",
+          "domain_record": "Host Request and Assistance Acceptance Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-11",
+          "domain_record": "Indigenous Health and Protected-Knowledge Interface Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-12",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-13",
+          "domain_record": "Rights and Less-Restrictive-Means Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-14",
+          "domain_record": "Vaccination or Prophylaxis Requirement + Countermeasure Evidence and Authorization",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-15",
+          "domain_record": "Isolation or Quarantine Review Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-16",
+          "domain_record": "Health Worker and Responder Safety Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-17",
+          "domain_record": "Essential Care Continuity Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-18",
+          "domain_record": "Finance, Procurement, and Stockpile Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-19",
+          "domain_record": "Health-Data Authority and Access Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-20",
+          "domain_record": "Indigenous Health and Protected-Knowledge Interface Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-21",
+          "domain_record": "Public Information and Correction Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-22",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-23",
+          "domain_record": "Host Request and Assistance Acceptance Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-24",
+          "domain_record": "Justice and Evidence Handoff Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-25",
+          "domain_record": "Justice and Evidence Handoff Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-26",
+          "domain_record": "Renewal Health State Estimate",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-27",
+          "domain_record": "Emergency Termination Certificate",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-28",
+          "domain_record": "Authority, Facility, and Asset Return Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-29",
+          "domain_record": "Health Data and Sample Disposition Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-30",
+          "domain_record": "Wrongful Action and Compensation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-31",
+          "domain_record": "After-Action and Ordinary-Capacity Review",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-32",
+          "domain_record": "Institutional Continuation, Transfer, or Dissolution Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-33",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        }
+      ]
+    },
+    "Aethelred v1.2": {
+      "file": "aethelred-accord-v1.2.md",
+      "sha256": "8819f4ac5fdd9090a7cd7807f71c221e50ddd2a6f907b7c44d951933907a3fe7",
+      "mappings": [
+        {
+          "canonical_id": "ECRC-01",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-02",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-03",
+          "domain_record": "Biological Incident State Estimate",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-04",
+          "domain_record": "Observation Independence Map",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-05",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-06",
+          "domain_record": "Authority Provenance Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-07",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-08",
+          "domain_record": "Emergency Power Activation Schedule",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-09",
+          "domain_record": "Facility Stand-Down or Shutdown Record (partial)",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-10",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-11",
+          "domain_record": "Indigenous Nation Biotechnology Interface",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-12",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-13",
+          "domain_record": "Disability and Reproductive Justice Review / activity-specific rights fields",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-14",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-15",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-16",
+          "domain_record": "Worker Safety, Exposure, and Refusal Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-17",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-18",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-19",
+          "domain_record": "Biological Data and Sample Lifecycle Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-20",
+          "domain_record": "Protected Non-Transfer Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-21",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-22",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-23",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-24",
+          "domain_record": "Evidence and Chain-of-Custody Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-25",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-26",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-27",
+          "domain_record": "Facility Stand-Down/Shutdown expiration through Interface",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-28",
+          "domain_record": "Authority Restoration and Facility Handback Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-29",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-30",
+          "domain_record": "Wrongful Action and Compensation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-31",
+          "domain_record": "Institutional Learning and Dissent Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-32",
+          "domain_record": "Transfer, Succession, and Dissolution Plan",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-33",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        }
+      ]
+    },
+    "Living Shield v4.4": {
+      "file": "living-shield-v4.4.md",
+      "sha256": "0ccc5d59fd2f9b0ab28b6994a14cfded024877c79dc5b6e2401f2a9021f169ca",
+      "mappings": [
+        {
+          "canonical_id": "ECRC-01",
+          "domain_record": "Hazard Alert Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-02",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-03",
+          "domain_record": "Multi-Hazard State Estimate and Dissent Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-04",
+          "domain_record": "Observation Independence Map",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-05",
+          "domain_record": "Standing and Jurisdiction Map",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-06",
+          "domain_record": "Disaster Authority Provenance Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-07",
+          "domain_record": "Emergency Declaration Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-08",
+          "domain_record": "Power Activation and Prohibition Schedule",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-09",
+          "domain_record": "Operational Command and Deployment Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-10",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-11",
+          "domain_record": "Indigenous Disaster and Knowledge Interface Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-12",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-13",
+          "domain_record": "Accessibility and protected-minima fields across records",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-14",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-15",
+          "domain_record": "Isolation, Evacuation, and Shelter Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-16",
+          "domain_record": "Emergency Work Mobilisation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-17",
+          "domain_record": "Critical-Service Continuity Profile + AUBI/Social-Protection Surge",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-18",
+          "domain_record": "Emergency Finance and Compensation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-19",
+          "domain_record": "Disaster Data, Privacy, and Secrecy Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-20",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-21",
+          "domain_record": "Public Information and Correction Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-22",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-23",
+          "domain_record": "Mutual-Aid Capability and Request Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-24",
+          "domain_record": "Justice and Evidence Handoff Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-25",
+          "domain_record": "Justice and Evidence Handoff Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-26",
+          "domain_record": "Renewal State Estimate",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-27",
+          "domain_record": "Emergency Termination Certificate",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-28",
+          "domain_record": "Authority Restoration and Asset Return Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-29",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-30",
+          "domain_record": "Wrongful Action and Compensation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-31",
+          "domain_record": "After-Action and Ordinary-Capacity Review",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-32",
+          "domain_record": "Institutional Continuation, Transfer, or Dissolution Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-33",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        }
+      ]
+    },
+    "Aegis v1.3": {
+      "file": "aegis-protocol-v1.3.md",
+      "sha256": "79f9e53ebfd37e5ac4dec6bb6bd4ca09d71a397b241182a3f74c617b74ef0cce",
+      "mappings": [
+        {
+          "canonical_id": "ECRC-01",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-02",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-03",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-04",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-05",
+          "domain_record": "Participation/Host/Territorial authority records (partial)",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-06",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-07",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-08",
+          "domain_record": "Power Activation and Prohibition Schedule",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-09",
+          "domain_record": "Emergency Asset Re-tasking Record / Civilian Mission Charter",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-10",
+          "domain_record": "Host and Territorial Authority Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-11",
+          "domain_record": "Indigenous Capability Transition Interface",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-12",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-13",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-14",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-15",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-16",
+          "domain_record": "Worker Safety, Refusal, and Whistleblowing Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-17",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-18",
+          "domain_record": "Project Finance and Public-Value Record (partial)",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-19",
+          "domain_record": "Data, Cyber, and Intelligence Boundary Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-20",
+          "domain_record": "Classified Information and protected interests (partial)",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-21",
+          "domain_record": "Public Communication and Non-Manipulation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-22",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-23",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-24",
+          "domain_record": "Justice and Evidence Handoff Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-25",
+          "domain_record": "Justice and Evidence Handoff Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-26",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-27",
+          "domain_record": "Mission Termination and Asset Handback Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-28",
+          "domain_record": "Authority Restoration and Access Revocation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-29",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        },
+        {
+          "canonical_id": "ECRC-30",
+          "domain_record": "Wrongful Action, Injury, and Compensation Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-31",
+          "domain_record": "After-Action and Counterfactual Review",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-32",
+          "domain_record": "Institutional Continuation, Transfer, or Dissolution Record",
+          "status": "MAPPED"
+        },
+        {
+          "canonical_id": "ECRC-33",
+          "domain_record": null,
+          "status": "UNMAPPED / IMPORT DIRECTLY WHEN APPLICABLE"
+        }
+      ]
+    }
+  },
+  "bundles": {
+    "minimum_consequential_activation": [
+      "ECRC-03",
+      "ECRC-05",
+      "ECRC-06",
+      "ECRC-08",
+      "ECRC-13",
+      "ECRC-19",
+      "ECRC-21",
+      "ECRC-22"
+    ],
+    "renewal_core": [
+      "ECRC-26",
+      "ECRC-03",
+      "ECRC-06",
+      "ECRC-08",
+      "ECRC-13",
+      "ECRC-22"
+    ],
+    "termination_restoration": [
+      "ECRC-27",
+      "ECRC-28",
+      "ECRC-29",
+      "ECRC-30",
+      "ECRC-31",
+      "ECRC-32",
+      "ECRC-33"
+    ],
+    "biotechnology_emergency_activation": [
+      "ECRC-03",
+      "ECRC-04",
+      "ECRC-05",
+      "ECRC-06",
+      "ECRC-08",
+      "ECRC-09",
+      "ECRC-11",
+      "ECRC-13",
+      "ECRC-16",
+      "ECRC-19",
+      "ECRC-20",
+      "ECRC-21",
+      "ECRC-22",
+      "ECRC-24",
+      "ECRC-26",
+      "ECRC-27",
+      "ECRC-28",
+      "ECRC-29",
+      "ECRC-30",
+      "ECRC-33"
+    ],
+    "emergency_asset_retasking": [
+      "ECRC-03",
+      "ECRC-05",
+      "ECRC-06",
+      "ECRC-08",
+      "ECRC-09",
+      "ECRC-10",
+      "ECRC-13",
+      "ECRC-16",
+      "ECRC-18",
+      "ECRC-19",
+      "ECRC-21",
+      "ECRC-22",
+      "ECRC-23",
+      "ECRC-26",
+      "ECRC-27",
+      "ECRC-28",
+      "ECRC-29",
+      "ECRC-30",
+      "ECRC-33"
+    ]
+  }
+}
