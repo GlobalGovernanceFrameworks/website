@@ -1,0 +1,1 @@
+The next meaningful phase is no longer constitutional drafting. It is a jurisdiction-specific activation and live exercise package: tabletop scenarios, operator role cards, sample CFPAE/ESDIB packets, access-control tests, clock-expiry tests, failure injection, and remedy drills.
