@@ -1,1490 +1,808 @@
 ---
 title: EGP Implementation Appendix
 section: appendix
+version: 1.1.1
+package: EGP/1.1.1
+status: constitutionally-harmonized-technical-profile
+date: 2026-08-02
+controlling_interface: GMEAIA/0.1
 ---
 
-# EGP Implementation Appendix
-## *Detailed Guidance for Communities, Organizations, and Technologists*
+# EGP Implementation Appendix v1.1.1
+## *Technical Guidance for Communities, Institutions, and Technologists*
 
-> **"Kubernetes for Governance"** - The EGP is a decentralized, modular, and open-source system designed for resilience and longevity, treating governance actions as verifiable, content-addressed data that flows through a network of interoperable services.
+> **“Simple at the edge; constitutionally typed at the point of consequence.”**
+
+**Package:** `EGP/1.1.1`  
+**Normative core:** Emergent Governance Protocol v1.1.1  
+**Controlling authority interface:** `GMEAIA/0.1`  
+**Legal character:** Technical profile; no source of jurisdiction, consent, activation, emergency command, adjudication, finance, or enforcement
 
 ---
 
-## Technical Architecture Overview
+## 1. Package architecture
 
-The EGP stack implements a vision of governance infrastructure that is:
-- **Decentralized by Default**: No central server, no single point of failure
-- **Radically Interoperable**: Universal data standards enable any EGP-compliant tool to communicate
-- **Offline-First**: Designed for remote communities with intermittent connectivity
-- **Verifiable & Secure**: All governance actions are transparent, tamper-proof, and attributable
+EGP v1.1 separates six layers:
 
-```mermaid
-graph TB
-    subgraph EGP_Core
-        A[API Gateway] --> B[sense-service]
-        A --> C[propose-service]
-        A --> D[adopt-service]
-        B --> E[(Verifiable Data Lake / IPFS)]
-        C --> E
-        D --> E
-    end
-    E --> F[Analytics/ML Co-Pilot]
-    F --> G[Adaptive Rules Engine]
-    G --> B
-    G --> C
-    G --> D
-```
-
-### Technology Stack
-
-| Layer | Technology | Purpose |
+| Layer | Function | Normative force |
 |---|---|---|
-| **Data Standard** | JSON Schema + **IPLD** | Immutable, content-addressed governance actions |
-| **APIs** | **GraphQL** + WebSub | Real-time subscriptions to governance events |
-| **Identity** | **DID** + **UCAN** | Self-sovereign identity and decentralized permissions |
-| **Execution** | **WASM** Modules | Portable, sandboxed policy logic (e.g., sunset checks) |
-| **Storage** | **IPFS** + Local Sync | Distributed, offline-capable data persistence |
-| **Networking** | **libp2p** | Peer-to-peer communication and discovery |
+| Public grammar | `sense`, `propose`, `adopt` | Vocabulary only |
+| Event schema | Structured claims and relationships | Record specification |
+| Authority envelope | References to `GMEAIA/0.1` | Effect depends on controlling authority |
+| Domain interfaces | Health, emergency, ecology, security, finance | Defined by those interfaces |
+| Technical services | APIs, storage, identity, synchronization, analytics | No public authority |
+| User experience | Forms, oral workflows, paper, apps, dashboards | Must preserve all distinctions |
+
+Order of precedence:
+
+1. controlling law and domain interfaces;
+2. `GMEAIA/0.1` for method and adoption authority;
+3. EGP Core v1.1;
+4. this appendix;
+5. examples and interface mock-ups.
 
 ---
 
-## Core Data Specification
+## 2. Core constitutional invariants
 
-### IPLD-Based Governance Actions
+Every implementation enforces:
 
-All EGP operations are stored as content-addressed, immutable records using IPLD (InterPlanetary Linked Data):
+1. A sense record begins as an assertion.
+2. A proposal never creates consent or authority.
+3. An adoption record is a claim until authority is resolved.
+4. Authorization, deployment, and activation are distinct.
+5. Cryptographic identity is not public office.
+6. Software capability is not legal competence.
+7. Machines cannot cross consequential decision boundaries.
+8. Ordinary experimentation fails closed in protected domains.
+9. Public accountability does not require public payloads.
+10. Immutable logs must support effective correction and lawful deletion.
+11. Temporary powers expire; continuing duties persist.
+12. Pilot success does not authorize expansion.
+13. Non-digital participation has equal standing.
+14. Every active adoption has closure and authority-return paths.
 
-```json
-{
-  "@context": "https://schemas.egp.org/v1/",
-  "@type": "GovernanceAction",
-  "cid": "bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi",
-  "operation": "sense|propose|adopt",
-  "id": "did:egp:action:uuid",
-  "timestamp": "2025-01-15T14:30:00Z",
-  "agent": {
-    "did": "did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK",
-    "type": "human|community|ai|sensor",
-    "location": {
-      "coordinates": [lat, lon],
-      "jurisdiction": "ISO-3166-code",
-      "bioregion": "watershed-identifier"
-    }
-  },
-  "content": {
-    "title": "brief-description",
-    "description": "detailed-content",
-    "severity": "local|regional|global", 
-    "urgency": "immediate|weeks|months|years",
-    "evidence": {
-      "data": ["ipfs://hash1", "ipfs://hash2"],
-      "sources": ["https://...", "did:web:..."],
-      "attestations": ["did:key:witness1", "did:key:witness2"]
-    },
-    "affected_parties": ["did:community:...", "did:org:..."]
-  },
-  "relationships": {
-    "responds_to": "ipfs://sense-signal-hash",
-    "enables": ["ipfs://proposal-hash1", "ipfs://proposal-hash2"],
-    "builds_on": ["ipfs://prior-adoption-hash"]
-  },
-  "metadata": {
-    "cultural_context": "indigenous|western|hybrid|custom",
-    "language": "ISO-639-code",
-    "tags": ["searchable", "keywords"],
-    "schema_version": "1.0.0"
-  },
-  "cryptographic_proof": {
-    "signature": "...",
-    "verification_method": "did:key:...",
-    "proof_purpose": "assertionMethod"
-  }
-}
+---
+
+## 3. Canonical EGP event model
+
+### 3.1 Shared fields
+
+```yaml
+egp_package: EGP/1.1.1
+event_id: globally_unique_identifier
+operation: sense | propose | adopt
+created_at: ISO-8601
+created_by:
+  actor_id: identifier
+  actor_type: human | group | institution | ai_assistant | sensor | service
+  capacity_claim: free_text_or_reference
+  identity_proof_ref: optional
+event_version: semantic_version
+jurisdiction_claims: []
+geographic_scope_claims: []
+institutional_scope_claims: []
+language: BCP-47
+access_class: public | community | affected_party | operational | review | restricted | protected | sealed | metadata_only | deleted_or_shredded
+payload_ref_or_inline: object
+source_refs: []
+relationship_refs: []
+correction_status: current | corrected | disputed | withdrawn | superseded
+authority_effect: none | advisory | claim_only | voluntary_internal | consequential_reference
 ```
 
-### Identity and Authorization (DID + UCAN)
+The schema deliberately uses `jurisdiction_claims`. The submitter may assert a scope; a later authority record validates it.
 
-EGP uses **Decentralized Identifiers (DIDs)** for identity and **User Controlled Authorization Networks (UCANs)** for permissions:
+### 3.2 Sense event
 
-```json
-{
-  "issuer": "did:key:community-representative",
-  "audience": "did:key:participant",
-  "capabilities": [
-    {
-      "with": "did:community:village-name",
-      "can": "egp:sense",
-      "scope": ["local", "environmental"]
-    },
-    {
-      "with": "did:community:village-name", 
-      "can": "egp:propose",
-      "scope": ["infrastructure", "education"]
-    }
-  ],
-  "expiry": "2025-12-31T23:59:59Z",
-  "proof": "..."
-}
+```yaml
+claim_status: asserted | validation_pending | validated | disputed | rejected | withdrawn | superseded
+observation_type: direct | reported | sensor | model | allegation | opportunity | request
+asserted_severity: informational | low | moderate | high | critical | unknown
+asserted_urgency: none | days | weeks | months | years | unknown
+uncertainty: description
+affected_party_claims: []
+evidence_refs: []
+requested_routes: []
+```
+
+An AI or sensor signal also includes a technical-system reference, version, calibration or validation reference, accountable human or institution, and `automation_limit: observation_only`.
+
+### 3.3 Proposal event
+
+```yaml
+responds_to_refs: []
+problem_definition: string
+alternatives:
+  - description
+    expected_effects
+    risks
+    non_action_option
+affected_party_map_ref: required_for_consequential_proposals
+affected_indigenous_authority_ref: required_when_applicable
+proposed_decision_method_ref: optional
+proposed_consent_route_ref: required_when_applicable
+required_authority_types: []
+protected_domain_flags: []
+resource_estimate: object
+funding_source_claims: []
+test_criteria: []
+monitoring_plan_ref: optional
+proposed_start: optional
+proposed_end: optional
+rollback_plan_ref: optional
+remedy_plan_ref: optional
+```
+
+### 3.4 Adoption event
+
+```yaml
+proposal_ref: required
+adopting_actor_ref: required
+effect_label: claim_only | expressive | voluntary_internal | authorized_trial_not_active | active_bounded_trial | suspended | terminated | closed | permanent_enactment_reference | invalid_or_rejected
+
+authority_resolution:
+  status: unverified | valid | invalid | expired | suspended | withdrawn
+  authority_verification_ref: required_for_consequential_effect
+
+consent_resolution:
+  status: not_applicable | pending | valid | invalid | withdrawn | disputed
+  refs: []
+
+authorization_resolution:
+  status: absent | pending | granted | denied | expired | withdrawn
+  trial_authorization_ref: required_for_trial
+
+activation_resolution:
+  status: inactive | scheduled | active | paused | terminated
+  activation_ref: required_before_active
+
+protected_domain_resolution:
+  flags: []
+  review_ref: required_when_flagged
+
+clocks:
+  authorized_from: optional
+  authorized_until: optional
+  review_due: optional
+  automatic_expiry: optional
+
+safeguards:
+  rights_and_non_derogation_ref: required_for_consequential_effect
+  essential_service_ref: required_when_applicable
+  monitoring_ref: required_for_active_trial
+  challenge_and_interim_relief_ref: required_for_consequential_effect
+  rollback_and_remedy_ref: required_for_active_trial
+  closure_and_authority_return_ref: required_for_active_trial
 ```
 
 ---
 
-## GraphQL API Specification
+## 4. Effect labels and interface requirements
 
-The EGP uses GraphQL for flexible, real-time governance data access:
+Every adoption display prominently shows effect label, authority status, activation status, review due date, expiry, and correction or dispute status.
 
-### Schema Definition
+A green check mark may not represent them all.
+
+Forbidden substitutions:
+
+- “approved” for proposed;
+- “authorized” for consented;
+- “active” for deployed;
+- “law” for voluntary internal adoption;
+- “verified” for signed;
+- “community consent” for a poll;
+- “Indigenous consent” without the affected nation's record;
+- “emergency” based solely on asserted urgency.
+
+Plain-language claim-only notice:
+
+> “This actor reports that it adopted the proposal. EGP has not verified whether it had authority or whether the action is active.”
+
+Authorized-inactive notice:
+
+> “A competent authority authorized this trial. It has not yet been activated.”
+
+Closed-with-duties notice:
+
+> “Temporary authority ended. Some remedies, payments, restoration, records, or claims remain open.”
+
+---
+
+## 5. Identity, capability, and representation
+
+DIDs, public-key credentials, organizational directories, government identity, community attestations, and paper verification can identify a submitter.
+
+Identity proof answers: **Who signed this record?**
+
+It does not answer: **Was this actor entitled to bind the affected people or institution?**
+
+A UCAN or other capability may allow data entry, drafting, evidence upload, restricted viewing, claim registration, sandbox deployment, or validation. It may not itself permit public-law enactment, emergency declaration, fiscal commitment, service withdrawal, search, seizure, detention, adjudication, affected-nation consent, or activation of a consequential trial.
+
+Representation records distinguish self-representation, delegation, elected or appointed office, fiduciary representation, legal counsel, guardian or advocate, technical submission, and proxy data entry. They state constituency, source, scope, duration, conflicts, revocation, and challenge.
+
+Affected Indigenous authority requires the self-identified nation or people, representative-selection source, applicable law or protocol, consent scope, protected knowledge rules, withdrawal or non-engagement, and prohibition of external proxy substitution.
+
+---
+
+## 6. Structured consent
+
+A free-text `consentMechanism` field is insufficient.
+
+```yaml
+consent_id: unique
+holder:
+  actor_or_collective_ref: required
+  authority_to_consent_ref: required_when_collective
+object:
+  proposal_or_action_ref: required
+scope:
+  persons: []
+  territory: []
+  assets: []
+  data: []
+  activities: []
+duration:
+  valid_from: ISO-8601
+  valid_until: ISO-8601_or_null
+conditions: []
+excluded_matters: []
+information_provided_refs: []
+language_and_access_support_refs: []
+internal_dissent_record_ref: optional
+refusal_options: []
+withdrawal_process: object
+coercion_assessment_ref: required
+status: proposed | valid | refused | withdrawn | disputed | expired | invalid
+```
+
+Consent is valid only for its holder, object, scope, duration, and conditions. A person may consent to voluntary participation; that does not authorize regulation of non-participants.
+
+Systems support refusal without retaliation, withdrawal where voluntary, challenge where legally limited, continued essential support, deletion or restriction of optional data, and compensation or transition where reliance interests exist.
+
+---
+
+## 7. Authority verification
+
+Before consequential adoption becomes active, independent verification establishes:
+
+```yaml
+authority_source_ref: constitution | law | charter | treaty | contract | indigenous_law | other
+competent_body_ref: required
+decision_type_authorized: required
+jurisdiction: exact
+persons_and_assets_in_scope: exact
+territorial_scope: exact
+delegation_chain_refs: []
+procedural_requirements: []
+rights_constraints: []
+funding_authority_ref: required_when_spending
+expiry_or_review: required
+appeal_or_challenge: required
+status: valid | invalid | incomplete | expired | suspended | withdrawn
+```
+
+A source reference is not enough; the verifier states that the source applies to the specific decision.
+
+---
+
+## 8. State machine
+
+```text
+draft_claim
+  → recorded_claim
+  → authority_review
+      → rejected
+      → deficient
+      → authorized_inactive
+  → activation_review
+      → active
+      → paused
+      → terminated
+  → outcome_review
+      → renew_proposed
+      → amendment_proposed
+      → scaling_proposed
+      → close
+  → closing
+  → closed
+  → closed_with_unresolved_duties
+```
+
+Forbidden direct transitions:
+
+- `recorded_claim → active`
+- `proposal → active`
+- `code_deployed → active`
+- `funded → active`
+- `successful → scaled`
+- `expired → closed` without duty review
+- `sensor_alert → emergency_active`
+- `poll_passed → public_law_active`
+
+State is derived from signed events. Corrections, disputes, withdrawals, supersession, access changes, deletion markers, and remedy outcomes append to the history and update the current view.
+
+---
+
+## 9. Storage, immutability, correction, and deletion
+
+Content addressing may be used for public method documents, event headers, non-sensitive evidence, and tamper-evident references. It must not require permanent public replication of protected payloads.
+
+```yaml
+public_header:
+  event_id
+  operation
+  timestamp
+  submitting_actor_ref
+  effect_label
+  lifecycle_status
+  payload_hash
+  access_class
+  correction_status
+
+protected_payload:
+  encrypted_or_local_storage
+  access_control
+  retention
+  deletion_or_crypto_shredding
+  disclosure_log
+```
+
+A corrected event preserves provenance while preventing the false value from continuing to drive dashboards, indexes, eligibility engines, summaries, linked proposals, notifications, archives, and training datasets where feasible.
+
+Where deletion is required, the system may retain minimum proof that a record existed, was lawfully removed or restricted, and dependent decisions were reassessed. It must not retain the prohibited payload under the label of immutability.
+
+---
+
+## 10. Access classes
+
+| Class | Access |
+|---|---|
+| `public` | Open publication |
+| `community` | Defined participating community |
+| `affected_party` | Identified affected people and representatives |
+| `operational` | Authorized implementers |
+| `review` | Auditors, reviewers, ombuds, adjudicators |
+| `restricted` | Need-to-know with purpose limitation |
+| `protected` | Sensitive personal, cultural, Indigenous, health, or safety material |
+| `sealed` | Court-, investigation-, security-, or survivor-protected material |
+| `metadata_only` | Public header without payload |
+| `deleted_or_shredded` | Payload unavailable; minimum lawful marker retained |
+
+Access to one record does not imply access to linked records.
+
+EGP v1.1 uses **accountability metadata by default; payload publicity only where lawful and safe**.
+
+---
+
+## 11. GraphQL profile
 
 ```graphql
-type GovernanceAction {
-  cid: String!
-  operation: OperationType!
-  id: ID!
-  timestamp: DateTime!
-  agent: Agent!
-  content: Content!
-  relationships: Relationships
-  metadata: Metadata!
-  cryptographicProof: Proof!
-}
-
 enum OperationType {
   SENSE
   PROPOSE
   ADOPT
 }
 
-type Agent {
-  did: String!
-  type: AgentType!
-  location: Location!
+enum EffectLabel {
+  CLAIM_ONLY
+  EXPRESSIVE
+  VOLUNTARY_INTERNAL
+  AUTHORIZED_TRIAL_NOT_ACTIVE
+  ACTIVE_BOUNDED_TRIAL
+  SUSPENDED
+  TERMINATED
+  CLOSED
+  PERMANENT_ENACTMENT_REFERENCE
+  INVALID_OR_REJECTED
 }
 
-type SenseSignal implements GovernanceAction {
-  issue: String!
-  severity: SeverityLevel!
-  evidence: Evidence!
-  affectedParties: [String!]!
-  proposals: [Proposal!]! # Auto-generated relationships
+enum AuthorityStatus {
+  UNVERIFIED
+  VALID
+  INVALID
+  EXPIRED
+  SUSPENDED
+  WITHDRAWN
 }
 
-type Proposal implements GovernanceAction {
-  respondsTo: String! # CID of sense signal
-  solution: String!
-  testCriteria: [String!]!
-  timeline: Duration!
-  resourcesNeeded: [Resource!]!
-  consentMechanism: String!
-  sunsetDate: DateTime!
-  adoptions: [Adoption!]! # Auto-generated relationships
+enum ActivationStatus {
+  INACTIVE
+  SCHEDULED
+  ACTIVE
+  PAUSED
+  TERMINATED
 }
 
-type Adoption implements GovernanceAction {
-  proposalId: String! # CID of proposal
-  adoptingEntity: String! # DID
-  trialPeriod: Duration!
-  successMetrics: [String!]!
-  monitoringPlan: String!
-  reviewDates: [DateTime!]!
-  exitStrategy: String!
-  status: AdoptionStatus!
-}
-```
-
-### Query Examples
-
-```graphql
-# Real-time subscription to new sense signals in a region
-subscription LocalSenseSignals($region: String!) {
-  senseSignals(region: $region) {
-    cid
-    content {
-      title
-      severity
-    }
-    agent {
-      location {
-        coordinates
-      }
-    }
-    timestamp
-  }
+interface GovernanceAction {
+  id: ID!
+  packageVersion: String!
+  operation: OperationType!
+  createdAt: DateTime!
+  accessClass: String!
+  correctionStatus: String!
 }
 
-# Find proposals responding to a specific issue
-query ProposalsForIssue($senseCid: String!) {
-  proposals(respondsTo: $senseCid) {
-    cid
-    content {
-      title
-      solution
-    }
-    testCriteria
-    sunsetDate
-    adoptions {
-      adoptingEntity
-      status
-    }
-  }
-}
-
-# Track adoption outcomes across network
-query AdoptionOutcomes($after: DateTime!) {
-  adoptions(after: $after, status: COMPLETED) {
-    proposalId
-    adoptingEntity
-    successMetrics
-    outcomes {
-      metric
-      achieved
-      evidence
-    }
-  }
+type AdoptionClaim implements GovernanceAction {
+  id: ID!
+  packageVersion: String!
+  operation: OperationType!
+  createdAt: DateTime!
+  accessClass: String!
+  correctionStatus: String!
+  proposalRef: String!
+  effectLabel: EffectLabel!
+  authorityStatus: AuthorityStatus!
+  activationStatus: ActivationStatus!
+  authorityVerificationRef: String
+  activationRef: String
+  reviewDue: DateTime
+  expiresAt: DateTime
 }
 ```
 
-### Mutations
+Permitted generic mutations include creating a sense claim, proposal, or adoption claim; appending correction, dispute, or withdrawal; and requesting authority review, activation review, or closure.
 
-```graphql
-mutation CreateSenseSignal($input: SenseInput!) {
-  sense(input: $input) {
-    cid
-    id
-    validation {
-      isValid
-      errors
-    }
-  }
-}
+A generic EGP API must not expose `declareEmergency`, `issueSanction`, `withdrawBenefit`, `transferTitle`, `detainPerson`, `authorizeSearch`, `activateForce`, `imposeTax`, or `grantPersonhood`.
 
-mutation CreateProposal($input: ProposalInput!) {
-  propose(input: $input) {
-    cid
-    id
-    validation {
-      isValid
-      errors
-      sunsetWarnings
-    }
-  }
-}
-
-mutation AdoptProposal($input: AdoptionInput!) {
-  adopt(input: $input) {
-    cid
-    id
-    validation {
-      isValid
-      errors
-      capacityWarnings
-    }
-  }
-}
-```
+Subscriptions publish claim, authority, activation, review, expiry, and correction states—not one `active` boolean.
 
 ---
 
-## WASM-Based Policy Execution
+## 12. Event-bus profile
 
-EGP uses WebAssembly (WASM) modules for portable, sandboxed execution of governance logic:
+Recommended topics:
 
-### Sunset Clause Enforcement
-
-```rust
-// Example WASM module for sunset clause validation
-use wasm_bindgen::prelude::*;
-use chrono::{DateTime, Utc};
-use serde::{Deserialize, Serialize};
-
-#[derive(Deserialize)]
-struct Proposal {
-    sunset_date: DateTime<Utc>,
-    created_at: DateTime<Utc>,
-    adoptions: Vec<Adoption>,
-}
-
-#[derive(Serialize)]
-struct ValidationResult {
-    is_valid: bool,
-    warnings: Vec<String>,
-    auto_expire: bool,
-}
-
-#[wasm_bindgen]
-pub fn validate_proposal_lifecycle(proposal_json: &str) -> String {
-    let proposal: Proposal = serde_json::from_str(proposal_json).unwrap();
-    let now = Utc::now();
-    
-    let mut result = ValidationResult {
-        is_valid: true,
-        warnings: Vec::new(),
-        auto_expire: false,
-    };
-    
-    // Check if proposal has expired
-    if now > proposal.sunset_date {
-        result.auto_expire = true;
-        result.warnings.push("Proposal has reached sunset date".to_string());
-    }
-    
-    // Check if proposal is approaching expiration
-    let days_until_sunset = (proposal.sunset_date - now).num_days();
-    if days_until_sunset <= 30 && days_until_sunset > 0 {
-        result.warnings.push(format!("Proposal expires in {} days", days_until_sunset));
-    }
-    
-    // Check for active adoptions that would be affected
-    let active_adoptions = proposal.adoptions.iter()
-        .filter(|a| a.status == "active")
-        .count();
-        
-    if active_adoptions > 0 && result.auto_expire {
-        result.warnings.push(format!("{} active adoptions will be affected", active_adoptions));
-    }
-    
-    serde_json::to_string(&result).unwrap()
-}
+```text
+egp.v1_1.sense.claimed
+egp.v1_1.sense.validated
+egp.v1_1.sense.disputed
+egp.v1_1.proposal.created
+egp.v1_1.adoption.claimed
+egp.v1_1.adoption.authority_validated
+egp.v1_1.adoption.authorized
+egp.v1_1.adoption.activated
+egp.v1_1.adoption.paused
+egp.v1_1.adoption.terminated
+egp.v1_1.adoption.closed
+egp.v1_1.record.corrected
+egp.v1_1.record.access_changed
 ```
 
-### Custom Consent Mechanisms
-
-```rust
-// WASM module for community-specific consent validation
-#[wasm_bindgen]
-pub fn validate_consent(community_did: &str, proposal_cid: &str, consent_data: &str) -> String {
-    // Load community-specific consent rules
-    let consent_rules = load_community_rules(community_did);
-    
-    match consent_rules.mechanism {
-        ConsentType::Consensus => validate_consensus_consent(consent_data),
-        ConsentType::Majority => validate_majority_consent(consent_data),
-        ConsentType::Indigenous => validate_indigenous_consent(consent_data),
-        ConsentType::Custom(module) => execute_custom_module(module, consent_data),
-    }
-}
-```
+A subscriber to `adoption.claimed` must not perform the action. Only the controlling system may act after the required authorization and activation events.
 
 ---
 
-## Implementation Pathways
+## 13. Automation and AI
 
-### Who Is This For?
+AI and automation may classify documents for review, detect duplicate signals, translate, summarize, suggest proposals, compare alternatives, identify missing fields, flag expiry, generate reminders, simulate outcomes, and assist accessibility.
 
-This appendix provides detailed guidance for three primary audiences:
+They may not autonomously validate a contested legal fact, determine consent, identify a community's lawful representative, verify public authority, authorize or activate a trial, declare an emergency, impose sanctions, withdraw services or benefits, scale a pilot, dissolve an institution, close unresolved remedies, or decide protected-domain actions.
 
-- **Communities** (neighborhoods, villages, Indigenous nations, cooperatives): Groups seeking to improve collective decision-making while maintaining cultural autonomy and connecting with broader networks.
+Every AI or sensor service has an accountable owner, version, purpose, data sources, limitations, human review, correction, rollback, incident response, and expiry.
 
-- **Organizations** (nonprofits, companies, government agencies): Formal institutions wanting to adopt EGP principles internally and participate in cross-organizational coordination.
-
-- **Technologists** (developers, platform builders, data scientists): Technical professionals building EGP-compatible tools, platforms, and infrastructure.
-
-### For Communities
-
-#### Phase 1: Cultural Integration (1-3 months)
-- **Week 1:** Community introduction to EGP concepts with cultural translation
-- **Week 2:** Map existing decision-making processes to EGP operations
-- **Week 3-4:** Practice `sense()` documentation using local knowledge systems
-- **Month 2-3:** Experiment with small `propose()` and `adopt()` cycles
-
-**Technical Setup:**
-- Deploy local EGP node (Raspberry Pi or community server)
-- Configure community DID and UCAN permissions
-- Set up offline-first data synchronization
-- Customize UI/UX for local language and cultural protocols
-
-#### Phase 2: Network Connection (3-6 months)  
-- Connect with other EGP-compatible communities
-- Share successful experiments via IPFS content addressing
-- Participate in regional governance networks
-- Develop community-specific WASM modules for local rules
-
-#### Phase 3: Ecosystem Integration (6+ months)
-- Full integration with global EGP network
-- AI co-pilot assistance for pattern recognition
-- Cross-cultural governance collaboration
-- Innovation documentation and template sharing
-
-### For Organizations
-
-#### Assessment Phase
-- **Technical Audit:** Evaluate current systems for EGP compatibility
-- **Identity Integration:** Plan DID deployment for organizational agents
-- **Data Sovereignty:** Assess requirements for internal vs. shared data
-- **Cultural Translation:** Map organizational culture to EGP principles
-
-#### Pilot Phase
-- **Infrastructure Deployment:** Set up organizational EGP node
-- **Staff Training:** GraphQL API integration and WASM module development
-- **Cross-Org Networking:** Connect with partner organizations
-- **Governance Integration:** Embed EGP in formal decision processes
-
-#### Scale Phase
-- **Full Network Participation:** Join global EGP ecosystem
-- **AI Integration:** Deploy ML co-pilot for organizational intelligence
-- **Innovation Contribution:** Open source successful organizational patterns
-- **Regulatory Compliance:** Integrate with formal governance requirements
-
-### For Technologists
-
-#### Minimum Viable Implementation
-
-**Core Node Requirements:**
-```yaml
-# docker-compose.yml for EGP node
-version: '3.8'
-services:
-  egp-api:
-    image: egp/graphql-gateway:latest
-    ports:
-      - "8080:8080"
-    environment:
-      - IPFS_GATEWAY=http://ipfs:5001
-      - DID_RESOLVER=http://did-resolver:3000
-    
-  ipfs:
-    image: ipfs/go-ipfs:latest
-    ports:
-      - "4001:4001"
-      - "5001:5001"
-    volumes:
-      - ipfs-data:/data/ipfs
-      
-  did-resolver:
-    image: egp/did-resolver:latest
-    ports:
-      - "3000:3000"
-    
-  wasm-runtime:
-    image: egp/wasm-engine:latest
-    ports:
-      - "8081:8081"
-```
-
-**GraphQL Schema Implementation:**
-```typescript
-// Basic TypeScript implementation
-import { GraphQLSchema, GraphQLObjectType, GraphQLString } from 'graphql';
-import { PubSub } from 'graphql-subscriptions';
-import * as IPFS from 'ipfs-core';
-
-const pubsub = new PubSub();
-const ipfs = await IPFS.create();
-
-const SenseSignalType = new GraphQLObjectType({
-  name: 'SenseSignal',
-  fields: {
-    cid: { type: GraphQLString },
-    content: { type: ContentType },
-    agent: { type: AgentType },
-    timestamp: { type: GraphQLString },
-  },
-});
-
-const resolvers = {
-  Mutation: {
-    sense: async (_, { input }) => {
-      // Validate input against JSON schema
-      const validated = await validateSenseInput(input);
-      
-      // Create IPLD object
-      const ipldObj = createIPLDObject('sense', validated);
-      
-      // Store in IPFS
-      const { cid } = await ipfs.dag.put(ipldObj);
-      
-      // Publish to subscribers
-      pubsub.publish('SENSE_SIGNALS', { senseSignal: { ...ipldObj, cid } });
-      
-      return { cid: cid.toString(), validation: { isValid: true } };
-    }
-  },
-  
-  Subscription: {
-    senseSignals: {
-      subscribe: (_, { region }) => {
-        return pubsub.asyncIterator(['SENSE_SIGNALS']);
-      }
-    }
-  }
-};
-```
-
-#### Advanced Platform Features
-
-**AI Co-Pilot Integration:**
-```python
-# Example AI pattern recognition service
-import numpy as np
-from sklearn.cluster import DBSCAN
-from transformers import AutoTokenizer, AutoModel
-import ipfshttpclient
-
-class EGPAICopilet:
-    def __init__(self, ipfs_client):
-        self.ipfs = ipfs_client
-        self.tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')
-        self.model = AutoModel.from_pretrained('sentence-transformers/all-MiniLM-L6-v2')
-    
-    async def analyze_sense_patterns(self, region_filter=None):
-        """Identify clustered issues that might benefit from coordinated response"""
-        sense_signals = await self.fetch_recent_sense_signals(region_filter)
-        
-        # Embed descriptions using transformer model
-        embeddings = []
-        for signal in sense_signals:
-            embedding = self.embed_text(signal['content']['description'])
-            embeddings.append(embedding)
-        
-        # Cluster similar issues
-        clustering = DBSCAN(eps=0.3, min_samples=2).fit(embeddings)
-        
-        # Suggest coordinated proposals for clustered issues
-        clusters = self.group_by_cluster(sense_signals, clustering.labels_)
-        suggestions = []
-        
-        for cluster in clusters:
-            if len(cluster) > 1:  # Multiple similar issues
-                suggestion = await self.generate_coordinated_proposal(cluster)
-                suggestions.append(suggestion)
-        
-        return suggestions
-    
-    async def suggest_proposal_improvements(self, proposal_cid):
-        """Analyze proposal against successful patterns"""
-        proposal = await self.ipfs.dag.get(proposal_cid)
-        similar_proposals = await self.find_similar_proposals(proposal)
-        
-        successful_patterns = [p for p in similar_proposals if p['outcome'] == 'successful']
-        
-        if successful_patterns:
-            return self.extract_success_factors(successful_patterns)
-        
-        return {"suggestions": ["No similar patterns found - consider reaching out to the network for guidance"]}
-```
-
-**Offline-First Synchronization:**
-```rust
-// Rust implementation of offline-first sync
-use libp2p::{NetworkBehaviour, Swarm, identity::Keypair};
-use libp2p_gossipsub::{Gossipsub, GossipsubEvent};
-use serde::{Deserialize, Serialize};
-
-#[derive(Serialize, Deserialize)]
-struct EGPMessage {
-    operation: String,
-    cid: String,
-    timestamp: u64,
-    source_peer: String,
-}
-
-pub struct EGPNetworkBehaviour {
-    pub gossipsub: Gossipsub,
-    pub pending_actions: Vec<EGPMessage>,
-}
-
-impl EGPNetworkBehaviour {
-    pub async fn sync_when_online(&mut self) {
-        // When connection is restored, sync pending actions
-        for action in &self.pending_actions {
-            let message = serde_json::to_vec(action).unwrap();
-            self.gossipsub.publish("egp-sync", message).unwrap();
-        }
-        self.pending_actions.clear();
-    }
-    
-    pub fn store_offline_action(&mut self, action: EGPMessage) {
-        // Store action locally when offline
-        self.pending_actions.push(action);
-        // Also store in local IPFS for persistence
-    }
-}
-```
+Adaptive rules may route an assertion, open validation, request information, warn of review dates, or pause a purely technical sandbox. They cannot convert a signal into an emergency, metric into sanction, or pilot success into scaling.
 
 ---
 
-## Cultural Adaptation Framework
+## 14. WASM and executable modules
 
-### Traditional Governance Integration
-
-**Indigenous Nations Example:**
-```yaml
-# Community-specific WASM module configuration
-community_did: "did:egp:community:ojibwe-nation-example"
-governance_model: "traditional_council"
-
-consent_mechanism:
-  type: "custom_wasm"
-  module: "ojibwe_consensus.wasm"
-  parameters:
-    required_quorum: "seven_generations_represented"
-    elder_approval: true
-    seasonal_restrictions: 
-      - "no_major_decisions_during_wild_rice_harvest"
-    sacred_site_protection: true
-
-validation_rules:
-  sense_signals:
-    - "land_based_observation_required"
-    - "traditional_knowledge_integration"
-  proposals:
-    - "seven_generation_impact_assessment"
-    - "cultural_protocol_compliance"
-  adoptions:
-    - "ceremonial_validation_when_appropriate"
-    - "traditional_authority_recognition"
-```
-
-**Urban Community Example:**
-```yaml
-community_did: "did:egp:community:brooklyn-neighborhood"
-governance_model: "participatory_democracy"
-
-consent_mechanism:
-  type: "hybrid"
-  online_participation: 0.6  # 60% can participate online
-  offline_participation: 0.4  # 40% need in-person options
-  
-decision_thresholds:
-  sense_signals: "any_verified_resident"
-  proposals: "minimum_3_endorsements"
-  adoptions: "qualified_majority_with_minority_protection"
-
-accessibility_requirements:
-  - "multilingual_support"
-  - "mobile_friendly_interface"
-  - "senior_accessible_design"
-  - "childcare_during_meetings"
-```
-
-### Cross-Cultural Coordination
-
-**Translation Layer:**
-```json
-{
-  "cultural_protocol_mapping": {
-    "indigenous_consensus": {
-      "maps_to": "qualified_consensus",
-      "requires": ["elder_representation", "cultural_impact_assessment"],
-      "respects": ["traditional_authority", "sacred_site_autonomy"]
-    },
-    "corporate_governance": {
-      "maps_to": "stakeholder_approval", 
-      "requires": ["fiduciary_responsibility", "shareholder_notice"],
-      "respects": ["legal_compliance", "competitive_confidentiality"]
-    },
-    "neighborhood_democracy": {
-      "maps_to": "participatory_decision",
-      "requires": ["resident_verification", "impact_assessment"],
-      "respects": ["minority_rights", "accessibility_standards"]
-    }
-  }
-}
-```
-
----
-
-## Quality Assurance and Safeguards
-
-### Cryptographic Verification
-
-All EGP actions include cryptographic proofs:
-```json
-{
-  "cryptographic_proof": {
-    "type": "Ed25519Signature2020",
-    "created": "2025-01-15T14:30:00Z",
-    "verification_method": "did:key:z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK#z6MkhaXgBZDvotDkL5257faiztiGiC2QtKLGpbnnEGta2doK",
-    "proof_purpose": "assertionMethod",
-    "signature": "5PbLnDTbJwG7HHE5fkhj4_QzqCHGgr0B0v6KAzPt8X0zWZqEUXHbHKKzXy...",
-    "challenge": "nonce-from-network",
-    "domain": "egp.globalgovernanceframeworks.org"
-  }
-}
-```
-
-### Anti-Manipulation Measures
-
-**Identity Verification:**
-```rust
-// DID-based identity verification
-pub fn verify_community_member(agent_did: &str, community_did: &str) -> Result<bool, Error> {
-    // Resolve DIDs and check membership attestations
-    let agent = resolve_did(agent_did)?;
-    let community = resolve_did(community_did)?;
-    
-    // Check for valid membership credential
-    for credential in agent.credentials {
-        if credential.issuer == community_did 
-           && credential.type == "CommunityMembership"
-           && !credential.is_expired() {
-            return Ok(true);
-        }
-    }
-    
-    Err(Error::UnauthorizedAgent)
-}
-```
-
-**Stake Requirements:**
-```javascript
-// Affected party consent validation
-async function validateAffectedPartyConsent(action) {
-  const affectedParties = action.content.affected_parties;
-  
-  for (const partyDid of affectedParties) {
-    const consent = await checkConsentRecord(partyDid, action.cid);
-    if (!consent || consent.status !== 'granted') {
-      throw new Error(`Missing consent from affected party: ${partyDid}`);
-    }
-  }
-  
-  return true;
-}
-```
-
-### Environmental Safeguards
-
-**Planetary Boundary Integration:**
-```wasm
-// WASM module for planetary boundary checking
-#[wasm_bindgen]
-pub fn check_planetary_boundaries(proposal_json: &str) -> String {
-    let proposal: Proposal = serde_json::from_str(proposal_json).unwrap();
-    
-    let mut warnings = Vec::new();
-    
-    // Check against current planetary boundary status
-    if proposal.environmental_impact.climate_impact > 0.0 {
-        let carbon_budget = get_remaining_carbon_budget();
-        if proposal.environmental_impact.carbon_emissions > carbon_budget * 0.01 {
-            warnings.push("Proposal exceeds 1% of remaining carbon budget".to_string());
-        }
-    }
-    
-    // Check biodiversity impact
-    if proposal.environmental_impact.biodiversity_impact < -0.1 {
-        warnings.push("Proposal may negatively impact biodiversity".to_string());
-    }
-    
-    serde_json::to_string(&ValidationResult { warnings }).unwrap()
-}
-```
-
----
-
-## Success Metrics and Evaluation
-
-### Network Health Indicators
-
-**Real-time Dashboard Queries:**
-```graphql
-query NetworkHealth($timeframe: Duration!) {
-  networkMetrics(timeframe: $timeframe) {
-    participationRate {
-      unique_agents
-      actions_per_agent
-      geographic_distribution
-    }
-    
-    problemResolution {
-      sense_to_proposal_rate
-      proposal_to_adoption_rate
-      successful_adoption_rate
-    }
-    
-    learningVelocity {
-      pattern_replication_speed
-      cross_cultural_adaptation_rate
-      innovation_diffusion_time
-    }
-    
-    systemResilience {
-      network_uptime
-      offline_capability_usage
-      crisis_response_time
-    }
-  }
-}
-```
-
-### Impact Assessment Framework
-
-**Automated Outcome Tracking:**
-```python
-class EGPImpactTracker:
-    def __init__(self, ipfs_client, ml_models):
-        self.ipfs = ipfs_client
-        self.models = ml_models
-    
-    async def track_adoption_outcomes(self, adoption_cid):
-        adoption = await self.ipfs.dag.get(adoption_cid)
-        
-        # Continuous monitoring of success metrics
-        metrics = adoption['successMetrics']
-        outcomes = []
-        
-        for metric in metrics:
-            # Use AI to assess metric achievement
-            assessment = await self.models['outcome_assessor'].predict({
-                'metric': metric,
-                'context': adoption['context'],
-                'evidence': await self.gather_evidence(adoption_cid, metric)
-            })
-            
-            outcomes.append({
-                'metric': metric,
-                'achieved': assessment['achieved'],
-                'confidence': assessment['confidence'],
-                'evidence_quality': assessment['evidence_quality']
-            })
-        
-        return outcomes
-```
-
----
-
-## Integration with Global Governance Frameworks
-
-### GGF Ecosystem Alignment
-
-**Constitutional Compliance:**
-```yaml
-# EGP compliance with Treaty for Our Only Home
-treaty_compliance:
-  human_rights: "UNDRIP_full_compliance"
-  environmental_rights: "rights_of_nature_recognition"
-  democratic_principles: "participatory_democracy_minimum"
-  justice_escalation: "digital_justice_tribunal_integration"
-
-framework_integration:
-  tier_1_frameworks:
-    - "regenerative_enterprise"
-    - "institutional_regeneration"
-    - "peace_and_conflict_resolution"
-  
-  coordination_mechanisms:
-    - "cross_framework_sense_signals"
-    - "shared_proposal_development"
-    - "coordinated_adoption_experiments"
-```
-
-### Legal Framework Integration
-
-**Smart Contract Integration:**
-```solidity
-// Ethereum smart contract for high-stakes EGP adoptions
-pragma solidity ^0.8.0;
-
-contract EGPAdoptionContract {
-    struct Adoption {
-        bytes32 proposalCID;
-        address adoptingEntity;
-        uint256 trialPeriod;
-        bytes32[] successMetrics;
-        uint256 reviewDate;
-        bool isActive;
-    }
-    
-    mapping(bytes32 => Adoption) public adoptions;
-    
-    event AdoptionCreated(bytes32 indexed adoptionCID, address indexed entity);
-    event AdoptionReviewed(bytes32 indexed adoptionCID, bool successful);
-    
-    function createAdoption(
-        bytes32 _adoptionCID,
-        bytes32 _proposalCID,
-        uint256 _trialPeriod,
-        bytes32[] memory _successMetrics
-    ) public {
-        require(adoptions[_adoptionCID].adoptingEntity == address(0), "Adoption already exists");
-        
-        adoptions[_adoptionCID] = Adoption({
-            proposalCID: _proposalCID,
-            adoptingEntity: msg.sender,
-            trialPeriod: _trialPeriod,
-            successMetrics: _successMetrics,
-            reviewDate: block.timestamp + _trialPeriod,
-            isActive: true
-        });
-        
-        emit AdoptionCreated(_adoptionCID, msg.sender);
-    }
-    
-    function reviewAdoption(bytes32 _adoptionCID, bool _successful) public {
-        Adoption storage adoption = adoptions[_adoptionCID];
-        require(adoption.adoptingEntity == msg.sender, "Only adopting entity can review");
-        require(block.timestamp >= adoption.reviewDate, "Review period not reached");
-        
-        adoption.isActive = false;
-        emit AdoptionReviewed(_adoptionCID, _successful);
-        
-        // Integration with reputation system
-        if (_successful) {
-            updateReputationScore(msg.sender, 10);
-        }
-    }
-}
-```
-
----
-
-## Development Roadmap
-
-### Phase 1: Core Infrastructure (2025)
-**Q1-Q2 Deliverables:**
-- ✅ GraphQL API specification finalization
-- ✅ IPLD data schema and validation
-- ✅ Basic DID/UCAN identity system
-- ✅ MVP WASM runtime for policy execution
-- ✅ Offline-first synchronization protocol
-
-**Q3-Q4 Deliverables:**
-- 🔄 Community pilot deployments (5 communities)
-- 🔄 Cross-platform interoperability testing
-- 🔄 AI co-pilot pattern recognition system
-- 🔄 Cultural adaptation framework implementation
-- 🔄 Security audit and vulnerability assessment
-
-### Phase 2: Network Effects (2026)
-**Scaling Objectives:**
-- 50+ communities actively using EGP
-- Cross-cultural coordination success stories
-- Integration with 3+ major governance platforms
-- Advanced AI assistance for proposal optimization
-- Academic research validation of effectiveness
-
-### Phase 3: Ecosystem Integration (2027-2030)
-**Future Vision:**
-- Global network of 1000+ EGP-compatible communities
-- Integration with formal government systems
-- Autonomous AI agents participating in governance
-- Interplanetary governance capability
-- Post-human consciousness integration protocols
-
----
-
-## Getting Started
-
-### Quick Deployment
-
-```bash
-# Clone the EGP implementation
-git clone https://github.com/GlobalGovernanceFrameworks/egp.git
-cd egp
-
-# Deploy with Docker Compose
-docker-compose up -d
-
-# Verify deployment
-curl http://localhost:8080/health
-
-# Initialize your first community
-egp init --community "Your Community Name" \
-         --location "lat,lon" \
-         --cultural-context "western|indigenous|hybrid"
-```
-
-### Community Quick Start
-
-```bash
-# For Raspberry Pi deployment
-curl -sSL https://get.egp.org/install.sh | bash
-egp start --offline-first
-
-# For local development
-npm install -g @egp/cli
-egp dev init
-egp dev start --watch
-```
-
-### Your First EGP Actions
-
-```bash
-# Create a sense signal
-egp sense "Neighborhood park needs better lighting" \
-          --severity local \
-          --evidence ./photos/dark_path.jpg
-
-# Propose a solution  
-egp propose --responds-to <sense-cid> \
-           "Install solar-powered LED lights" \
-           --test-criteria "Improved visibility after sunset" \
-           --sunset "2025-06-01"
-
-# Adopt for trial
-egp adopt <proposal-cid> \
-         --trial-period "3 months" \
-         --success-metrics "Crime reduction, community satisfaction"
-```
-
----
-
-## Integration Examples
-
-### Municipal Government Integration
-
-```javascript
-// Integration with existing city systems
-const EGPMunicipalBridge = {
-  async syncWithPermitSystem(senseSignal) {
-    // Automatically create permit applications for infrastructure proposals
-    if (senseSignal.content.tags.includes('infrastructure')) {
-      const permit = await cityAPI.createPermit({
-        type: 'community_improvement',
-        description: senseSignal.content.description,
-        location: senseSignal.agent.location
-      });
-      
-      return permit.id;
-    }
-  },
-  
-  async updateCouncilAgenda(proposals) {
-    // Add successful community proposals to council agenda
-    const validated = proposals.filter(p => p.adoptions.length > 2);
-    await councilAPI.addAgendaItems(validated);
-  }
-};
-```
-
-### Corporate Integration
-
-```typescript
-// Enterprise governance integration
-interface CorporateEGPConfig {
-  stakeholderGroups: string[];
-  complianceRequirements: string[];
-  escalationThresholds: {
-    financial: number;
-    legal: boolean;
-    operational: string;
-  };
-}
-
-class EnterpriseEGPAdapter {
-  async validateProposal(proposal: Proposal): Promise<ValidationResult> {
-    // Check against corporate governance requirements
-    const compliance = await this.checkCompliance(proposal);
-    const stakeholderApproval = await this.getStakeholderConsent(proposal);
-    
-    return {
-      isValid: compliance.passed && stakeholderApproval.sufficient,
-      requirements: compliance.additionalRequirements,
-      escalations: this.checkEscalationTriggers(proposal)
-    };
-  }
-}
-```
-
-### Cross-Platform Interoperability
+Executable modules are bounded technical tools.
 
 ```yaml
-# Platform bridge configuration
-bridges:
-  decidim:
-    api_endpoint: "https://participate.barcelona.cat/api"
-    mapping:
-      sense: "proposals"
-      propose: "debates"  
-      adopt: "budgets"
-      
-  consul:
-    api_endpoint: "https://decide.madrid.es/api"
-    mapping:
-      sense: "proposals"
-      propose: "debates"
-      adopt: "voting"
-      
-  custom_platform:
-    webhook_url: "https://your-platform.org/egp-webhook"
-    auth_method: "oauth2"
+module_id: unique
+version: semver
+purpose: explicit
+authority_effect: none
+permitted_environment: simulation | sandbox | authorized_operation
+controlling_authority_refs: []
+input_schema_ref: required
+output_schema_ref: required
+protected_domain_flags: []
+human_approval_points: []
+rollback: required
+expiry: required
+audit_log: required
 ```
+
+A module may enforce a sandbox timer; it may not decide whether a legal duty expires. It may compute a metric; it may not decide the legal consequence.
 
 ---
 
-## Advanced Features
+## 15. Smart contracts and ledgers
 
-### Automated Pattern Recognition
-
-```python
-# AI-powered governance insights
-class GovernanceIntelligence:
-    def __init__(self):
-        self.pattern_analyzer = PatternAnalyzer()
-        self.success_predictor = SuccessPredictor()
-        
-    async def analyze_network_health(self):
-        """Generate insights about governance network performance"""
-        signals = await self.fetch_recent_signals()
-        
-        insights = {
-            'participation_trends': self.analyze_participation(signals),
-            'resolution_patterns': self.analyze_resolution_rates(signals),
-            'cultural_adaptation': self.analyze_cultural_success(signals),
-            'innovation_diffusion': self.track_idea_spread(signals)
-        }
-        
-        return insights
-        
-    async def suggest_interventions(self, community_did):
-        """Recommend actions to improve community governance"""
-        community_data = await self.get_community_history(community_did)
-        similar_communities = await self.find_similar_communities(community_data)
-        
-        successful_patterns = self.extract_success_patterns(similar_communities)
-        
-        return {
-            'recommendations': successful_patterns,
-            'pilot_suggestions': self.generate_pilot_ideas(successful_patterns),
-            'capacity_building': self.identify_skill_gaps(community_data)
-        }
-```
-
-### Regulatory Compliance Layer
-
-```wasm
-// WASM module for regulatory compliance checking
-#[wasm_bindgen]
-pub fn check_regulatory_compliance(proposal_json: &str, jurisdiction: &str) -> String {
-    let proposal: Proposal = serde_json::from_str(proposal_json).unwrap();
-    let regulations = load_jurisdiction_rules(jurisdiction);
-    
-    let mut compliance_result = ComplianceResult::new();
-    
-    // Check environmental regulations
-    if proposal.environmental_impact.is_some() {
-        compliance_result.environmental = check_environmental_compliance(
-            &proposal, &regulations.environmental
-        );
-    }
-    
-    // Check social impact requirements
-    if proposal.affected_parties.len() > regulations.stakeholder_threshold {
-        compliance_result.social = check_stakeholder_requirements(
-            &proposal, &regulations.social
-        );
-    }
-    
-    // Check financial thresholds
-    if proposal.budget > regulations.financial_threshold {
-        compliance_result.financial = require_financial_disclosure(&proposal);
-    }
-    
-    serde_json::to_string(&compliance_result).unwrap()
-}
-```
-
-### Blockchain Integration for High-Stakes Decisions
+Smart contracts may timestamp, record signatures, enforce technical access, or administer bounded escrow under separately valid agreements. They may not make a high-stakes adoption active merely because the caller submits a transaction.
 
 ```solidity
-// Smart contract for transparent, immutable adoption tracking
-pragma solidity ^0.8.0;
-
-contract EGPAdoptionRegistry {
-    struct AdoptionRecord {
-        bytes32 proposalCID;
-        address adoptingEntity;
-        uint256 adoptionDate;
-        uint256 trialPeriod;
-        string[] successMetrics;
-        bool isCompleted;
-        bool wasSuccessful;
-    }
-    
-    mapping(bytes32 => AdoptionRecord) public adoptions;
-    mapping(address => bytes32[]) public entityAdoptions;
-    
-    event AdoptionRegistered(bytes32 indexed cid, address indexed entity);
-    event AdoptionCompleted(bytes32 indexed cid, bool successful);
-    
-    function registerAdoption(
-        bytes32 adoptionCID,
-        bytes32 proposalCID,
-        uint256 trialPeriod,
-        string[] memory successMetrics
-    ) external {
-        require(adoptions[adoptionCID].adoptingEntity == address(0), "Already registered");
-        
-        adoptions[adoptionCID] = AdoptionRecord({
-            proposalCID: proposalCID,
-            adoptingEntity: msg.sender,
-            adoptionDate: block.timestamp,
-            trialPeriod: trialPeriod,
-            successMetrics: successMetrics,
-            isCompleted: false,
-            wasSuccessful: false
-        });
-        
-        entityAdoptions[msg.sender].push(adoptionCID);
-        emit AdoptionRegistered(adoptionCID, msg.sender);
-    }
-    
-    function completeAdoption(bytes32 adoptionCID, bool successful) external {
-        AdoptionRecord storage adoption = adoptions[adoptionCID];
-        require(adoption.adoptingEntity == msg.sender, "Unauthorized");
-        require(!adoption.isCompleted, "Already completed");
-        require(
-            block.timestamp >= adoption.adoptionDate + adoption.trialPeriod,
-            "Trial period not complete"
-        );
-        
-        adoption.isCompleted = true;
-        adoption.wasSuccessful = successful;
-        
-        emit AdoptionCompleted(adoptionCID, successful);
-        
-        // Update reputation score
-        if (successful) {
-            _updateReputationScore(msg.sender, 10);
-        }
-    }
+// Pseudocode only
+function registerAdoptionClaim(bytes32 eventId, bytes32 proposalRef) public {
+    // Records a claim; does not activate public authority.
 }
+
+function attachAuthorityVerification(bytes32 eventId, bytes32 authorityRef)
+    public onlyAuthorizedVerifier
+{ }
+
+function attachActivation(bytes32 eventId, bytes32 activationRef)
+    public onlyControllingDomainSystem
+{ }
 ```
+
+On-chain reputation may support spam control. It may not become generalized civic worth, credibility, rights, eligibility, or moral standing.
 
 ---
 
-## Success Metrics and Network Health
+## 16. Offline-first and analog parity
 
-### Core Metrics Dashboard
+Paper, oral, and assisted records capture the same distinctions: operation, submitter and capacity, asserted or verified status, proposal versus decision, effect label, authority and consent, start, review, expiry, challenge, remedy, correction, and closure.
 
-```graphql
-query NetworkHealthDashboard($timeframe: Duration!) {
-  networkHealth(timeframe: $timeframe) {
-    participation {
-      uniqueAgents
-      actionsPerAgent
-      geographicDistribution
-      culturalDiversity
-    }
-    
-    effectivenessRates {
-      senseToProposalConversionRate
-      proposalToAdoptionRate
-      adoptionSuccessRate
-      averageResolutionTime
-    }
-    
-    networkEffects {
-      crossCommunityLearning
-      patternReplicationRate
-      innovationDiffusionSpeed
-      culturalAdaptationSuccess
-    }
-    
-    systemHealth {
-      nodeUptime
-      dataIntegrity
-      consensusMechanismPerformance
-      offlineResilienceScore
-    }
-  }
-}
-```
+An oral or ceremonial decision may be recorded through audio where consented, a witness record, physical tokens, protected local archives, multiple attestation, or a later digital summary. The digital summary is not more authoritative than the lawful original process.
 
-### Impact Assessment Framework
+A scribe or digital steward is labelled as recorder, not decision-maker. Users can review, correct, use their language or communication mode, receive a copy, and challenge publication.
 
-```python
-class EGPImpactTracker:
-    def __init__(self, ipfs_client, analytics_engine):
-        self.ipfs = ipfs_client
-        self.analytics = analytics_engine
-    
-    async def measure_community_outcomes(self, community_did, timeframe):
-        """Track real-world impact of EGP adoption in communities"""
-        adoptions = await self.get_community_adoptions(community_did, timeframe)
-        
-        impact_metrics = {}
-        
-        for adoption in adoptions:
-            if adoption.status == 'completed':
-                # Quantitative outcomes
-                metrics = await self.assess_quantitative_outcomes(adoption)
-                
-                # Qualitative community feedback
-                feedback = await self.gather_community_feedback(adoption)
-                
-                # Long-term sustainability indicators
-                sustainability = await self.assess_sustainability(adoption)
-                
-                impact_metrics[adoption.cid] = {
-                    'quantitative': metrics,
-                    'qualitative': feedback,
-                    'sustainability': sustainability,
-                    'unexpected_outcomes': await self.identify_emergent_effects(adoption)
-                }
-        
-        return {
-            'community_growth': self.calculate_capacity_growth(impact_metrics),
-            'problem_resolution': self.calculate_resolution_effectiveness(impact_metrics),
-            'network_contribution': self.calculate_knowledge_sharing(impact_metrics),
-            'cultural_adaptation': self.assess_cultural_integration(impact_metrics)
-        }
-```
+Conflicting offline records remain disputed until resolved. **Last write wins is prohibited** for authority, consent, activation, and remedy states.
 
 ---
 
-## Security and Trust
+## 17. Cultural adaptation
 
-### Cryptographic Verification
+Communities may rename operations and adapt ceremonies while preserving semantic compatibility.
 
-```typescript
-// Comprehensive verification system
-class EGPVerificationService {
-    async verifyGovernanceAction(actionCID: string): Promise<VerificationResult> {
-        const action = await this.ipfs.dag.get(actionCID);
-        
-        // Verify cryptographic signature
-        const signatureValid = await this.verifySignature(action);
-        
-        // Verify agent authorization
-        const authValid = await this.verifyAuthorization(action.agent.did, action.operation);
-        
-        // Verify affected party consent
-        const consentValid = await this.verifyAffectedPartyConsent(action);
-        
-        // Verify data integrity
-        const integrityValid = await this.verifyDataIntegrity(action);
-        
-        return {
-            isValid: signatureValid && authValid && consentValid && integrityValid,
-            details: {
-                signature: signatureValid,
-                authorization: authValid,
-                consent: consentValid,
-                integrity: integrityValid
-            },
-            trustScore: this.calculateTrustScore(action)
-        };
-    }
-}
+| EGP concept | Possible local expression |
+|---|---|
+| `sense()` | witness, notice, call attention, land observation |
+| `propose()` | offer, motion, counsel, design, response |
+| `adopt()` | agree to try, authorize trial, internal resolution |
+| review | council return, seasonal review, audit, reflection |
+| closure | release, ending, handback, completion |
+
+Cultural adaptation must not infer identity from geography, treat one elder as representative of a nation, publish protected knowledge, replace affected-nation law, remove dissent, weaken rights or remedy, or hide legal effect behind ceremonial language.
+
+---
+
+## 18. Readiness, ethics, and epistemic assessments
+
+EGP transports these assessments with `authority_effect: advisory`.
+
+```yaml
+assessment_type: readiness | ethics | epistemic | maturity | trust | regeneration | other
+purpose: required
+method_and_version: required
+evidence_refs: []
+uncertainty: required
+affected_party_review: required_when_consequential
+dissent_refs: []
+correction_and_expiry: required
+prohibited_uses:
+  - deny_essential_support
+  - create_jurisdiction
+  - substitute_for_consent
+  - suspend_democracy
+  - activate_emergency
+  - determine_funding_automatically
 ```
 
-### Anti-Manipulation Safeguards
+A score may recommend support. It cannot classify a community as unfit to govern.
 
-```rust
-// Sybil resistance and manipulation detection
-#[wasm_bindgen]
-pub fn detect_manipulation_patterns(actions_json: &str) -> String {
-    let actions: Vec<GovernanceAction> = serde_json::from_str(actions_json).unwrap();
-    
-    let mut flags = Vec::new();
-    
-    // Check for coordinated inauthentic behavior
-    let agent_pattern = analyze_agent_behavior_patterns(&actions);
-    if agent_pattern.suspicious_coordination > 0.8 {
-        flags.push("Potential coordinated inauthentic behavior detected".to_string());
-    }
-    
-    // Check for rapid proposal farming
-    let proposal_timing = analyze_proposal_timing(&actions);
-    if proposal_timing.spam_likelihood > 0.7 {
-        flags.push("Unusual proposal submission patterns detected".to_string());
-    }
-    
-    // Check for astroturfing in adoptions
-    let adoption_pattern = analyze_adoption_authenticity(&actions);
-    if adoption_pattern.astroturf_score > 0.6 {
-        flags.push("Potential artificial support pattern detected".to_string());
-    }
-    
-    serde_json::to_string(&ManipulationReport { flags }).unwrap()
-}
+---
+
+## 19. Funding and participation support
+
+An EGP proposal may identify funding needs. It cannot appropriate funds.
+
+Funding records distinguish application, eligibility review, award, contract or grant conditions, payment authorization, disbursement, audit, suspension, clawback, appeal, and closure.
+
+Participation support is separated from agreement with the proposed method. People do not lose translation, childcare, disability access, travel support, independent advice, legal support, or essential services because they oppose or leave a pilot.
+
+---
+
+## 20. Pilot scaling
+
+A successful pilot may produce evidence, learning, a scaling proposal, revised risk analysis, resources, and affected-party map. It **does not produce authority to scale**.
+
+Scaling requires a new scope, authority review, consent where applicable, protected-domain assessment, monitoring, remedy, clocks, and closure.
+
+---
+
+## 21. Emergency and coercive interfaces
+
+EGP may submit an emergency-related sense claim, carry validation and referral status, transport an ECRC/CDEE mission reference, and display mission scope and expiry.
+
+EGP may not declare an emergency, assign incident command, compel data sharing, requisition resources, override local authority, or renew emergency power.
+
+It may transport a bounded enforcement referral but cannot execute inspection, search, seizure, detention, custody, force, cyber disruption, asset freeze, border restriction, or sanction. Those require the controlling substantive authority and SCPA.
+
+---
+
+## 22. Closure and unresolved duties
+
+An adoption cannot be marked closed merely because the trial period, code, funding, or organization ended.
+
+Closure review addresses participants and affected people, rollback, essential services, records and deletion, wages, debts, pensions, contracts, compensation, ecological restoration, claims, appeals, successor responsibility, public learning artifacts, and return of temporary authority.
+
+Statuses:
+
+- `closing`
+- `closed`
+- `closed_with_unresolved_duties`
+- `reopened_for_remedy`
+- `archived_after_discharge`
+
+---
+
+## 23. Security and trust
+
+Required controls include authenticated writes, least privilege, separation of duties, key rotation, recovery, rate limiting, confidential reporting, audit logs, tamper evidence, correction, incident response, offline recovery, and human-readable export.
+
+Threats include forged community identities, captured administrators, compromised keys, fake urgency, sensor spoofing, model poisoning, signal flooding, retaliation through public records, unauthorized correlation, access downgrade, false activation, silent renewal, deletion failure, and archive capture.
+
+Reputation systems may support platform abuse control. They may not determine rights, eligibility, civic standing, or credibility.
+
+---
+
+## 24. Conformance levels
+
+### Level A — Vocabulary
+
+The system uses the three operations correctly and does not claim EGP creates authority.
+
+### Level B — Record
+
+It implements effect labels, claim status, correction, access classes, versioning, and source relationships.
+
+### Level C — Authority envelope
+
+It validates `GMEAIA/0.1` references before consequential activation.
+
+### Level D — Protected domain
+
+It fails closed and routes to controlling interfaces.
+
+### Level E — Operational
+
+It passes live tests for offline parity, unauthorized adoption, identity spoofing, protected payloads, correction propagation, expiry, rollback, remedy, and closure.
+
+No system may claim full `EGP/1.1.1` conformance below Level C.
+
+---
+
+## 25. Validation rules
+
+A validator rejects or downgrades an adoption when the effect label is absent; active status lacks valid authority; authorization lacks scope or expiry; protected-domain flags lack review; Indigenous authority is asserted by an external proxy; consent is free text only; activation precedes authorization; funding or deployment is treated as activation; a signal is treated as verified without validation; a smart-contract caller is treated as authority; essential-service safeguards are absent; review, challenge, rollback, remedy, or closure is missing; or controlling references are expired, suspended, withdrawn, or incompatible.
+
+Structural schema validity is not constitutional validity.
+
+---
+
+## 26. Migration from EGP v1.0
+
+| v1.0 pattern | v1.1 treatment |
+|---|---|
+| `isActive: true` on creation | Split claim, authority, authorization, activation, lifecycle |
+| AI or sensor agent | Observation and proposal assistance only |
+| severity and urgency | Asserted until separately validated |
+| public by default | Accountability metadata by default; payload by lawful access |
+| immutable records | Provenance plus effective correction and deletion |
+| `consentMechanism: String` | Structured consent object |
+| DID/UCAN authorization | Technical capability only |
+| smart-contract adoption | Registration only; no self-activation |
+| reputation reward | Removed from rights and authority pathways |
+| successful pilot scaling | New proposal and authorization |
+| sunset everything | Temporary authority sunsets; duties persist |
+| cultural-context enum | Optional self-description; no external classification |
+
+Legacy records import as:
+
+```yaml
+source_package: EGP/1.0
+compatibility_status: legacy_untyped
+effect_label: claim_only
+authority_status: unverified
+activation_status: unknown
+requires_review: true
 ```
 
----
-
-## Future Development Roadmap
-
-### 2025: Foundation & Early Adoption
-- ✅ Core protocol specification finalization
-- ✅ Reference implementation in Rust/TypeScript
-- 🔄 First community pilot deployments (10 communities)
-- 🔄 Basic AI co-pilot for pattern recognition
-- 🔄 Mobile-first interface development
-- 📋 Security audit and vulnerability assessment
-
-### 2026: Network Effects & Scaling
-- 📋 100+ communities actively using EGP
-- 📋 Cross-platform interoperability with major civic tech platforms
-- 📋 Advanced AI assistance for proposal optimization
-- 📋 Multi-language support and cultural adaptation tools
-- 📋 Integration with formal government systems (5 cities)
-- 📋 Academic research validation of effectiveness
-
-### 2027-2030: Ecosystem Maturation
-- 📋 1000+ communities in global EGP network
-- 📋 Corporate governance integration at scale
-- 📋 AI agents as governance participants
-- 📋 Interplanetary governance capabilities
-- 📋 Integration with emerging tech (AR/VR, brain-computer interfaces)
-- 📋 Self-evolving protocol with community-driven development
+They must not trigger consequential systems until upgraded.
 
 ---
 
-## Contributing & Community
+## 27. Reference implementation
 
-### How to Contribute
+A reference implementation provides simple forms, an “authority not verified” default, separate reviewer roles, protected payload storage, public metadata, paper and offline export, effect labels, authority and activation state machines, correction and dispute workflows, expiry reminders, no automatic renewal, protected-domain routing, closure checklist, and a conformance suite.
 
-We welcome contributors of all kinds:
-
-**🔧 Developers**: Core protocol development, client libraries, integration tools
-**🎨 Designers**: User experience, accessibility, cultural adaptation interfaces  
-**🧠 Researchers**: Governance theory, network analysis, impact measurement
-**🌍 Community Builders**: Pilot deployments, training materials, adoption support
-**📝 Documentation**: Technical writing, translation, educational content
-
-### Development Guidelines
-
-```bash
-# Fork and clone the repository
-git clone https://github.com/yourusername/egp.git
-cd egp
-
-# Install dependencies
-npm install
-
-# Run tests
-npm test
-
-# Start development server
-npm run dev
-
-# Submit a pull request with:
-# - Clear description of changes
-# - Tests for new functionality  
-# - Documentation updates
-# - Cultural sensitivity review if applicable
-```
-
-### Community Spaces
-
-- **🗣️ Discord**: [https://discord.gg/MjnzCfh4mM](https://discord.gg/MjnzCfh4mM) - Real-time community discussion
-- **📚 Documentation**: [https://github.com/GlobalGovernanceFrameworks/egp/tree/main/docs](https://github.com/GlobalGovernanceFrameworks/egp/tree/main/docs) - Technical documentation and guides
-- **🐛 Issues**: [GitHub Issues](https://github.com/GlobalGovernanceFrameworks/egp/issues) - Bug reports and feature requests
-
-### Code of Conduct
-
-EGP follows the principles of the [Contributor Covenant](https://www.contributor-covenant.org/). We are committed to providing a welcoming and inclusive environment for all contributors, regardless of background, identity, or experience level.
+It should not ship autonomous high-stakes agents, sanction engines, or governance reputation scores as defaults.
 
 ---
 
-## Conclusion: Building the Grammar of Coordination
+## 28. Minimum test suite
 
-The Emergent Governance Protocol represents more than a technical implementation—it's a bet on humanity's capacity for coordinated wisdom. By providing a simple, universal grammar for governance, EGP enables the kind of cross-cultural, cross-scale coordination our global challenges demand.
-
-Just as the early internet protocols enabled the explosion of human knowledge sharing, EGP aims to enable an explosion of human coordination capacity. The three verbs—sense, propose, adopt—are simple enough for any community to understand, yet powerful enough to coordinate planetary civilization.
-
-We're not building a platform to rule them all. We're building the commons infrastructure that allows all platforms, all communities, all governance systems to speak with each other. We're building it like Wikipedia, not Uber—open, collaborative, and for the common good.
-
-The future of governance is not centralized control, but coordinated autonomy. EGP provides the protocol layer that makes that future possible.
-
-**Ready to start? Join us at [https://globalgovernanceframeworks.org](https://globalgovernanceframeworks.org) and help build the coordination infrastructure for a thriving planetary civilization.**
+1. Sensor claims pollution; no action before validation.
+2. AI proposes an intervention; no authority is created.
+3. Signed adoption lacks jurisdiction; it remains claim-only.
+4. Municipal authority authorizes a trial; it remains inactive until activation.
+5. Code is deployed early; operational effects remain blocked.
+6. Consent is withdrawn from a voluntary trial; participation ends without essential-service loss.
+7. Local majority attempts to bind an affected Indigenous nation; validation fails.
+8. Protected payload is accidentally public; access is revoked and caches corrected.
+9. Trial expires while compensation remains unpaid; authority ends but duty remains open.
+10. Pilot succeeds; scaling becomes a new proposal.
+11. Smart-contract caller tries to self-authorize; rejected.
+12. UCAN permits data entry but not public decision-making.
+13. Emergency signal routes to CDEE; EGP does not declare the emergency.
+14. Enforcement request reaches SCPA; EGP does not execute it.
+15. Offline paper adoption receives equal effect after verification.
+16. Conflicting offline records remain disputed rather than last-write-wins.
+17. Facilitator certificate expires; lawful local facilitation remains possible.
+18. Readiness score is challenged and corrected.
+19. Failure-story participant withdraws publication consent; artifact is revised.
+20. Institution dissolves; pensions, archives, and claims transfer to a successor.
 
 ---
 
-*This appendix is a living document. As the EGP evolves through community feedback and real-world deployment, these implementation details will continue to adapt and improve. Version tracking and community input ensure this remains a useful resource for implementers across all contexts.*
+## 29. Protocol stewardship
 
-**Last Updated**: July 2025  
-**Document Version**: 1.0  
-**Protocol Version**: 0.1.0-alpha  
-**Community Contributions Welcome**: [GitHub](https://github.com/GlobalGovernanceFrameworks/egp) | [Discord](https://discord.gg/MjnzCfh4mM)
+Changes to the normative core require public proposal, compatibility analysis, rights and protected-domain review, affected-user consultation, security review, offline-parity review, migration plan, and versioned adoption by the lawful package steward.
+
+Technical maintainers may not silently change operation semantics, effect labels, authority requirements, access classes, protected-domain rules, deletion behaviour, or conformance claims.
+
+Emergency security patches may restrict technical functions immediately, but cannot expand authority.
+
+---
+
+## 30. Source and version freeze
+
+This appendix is part of `EGP/1.1.1`. Exact hashes are recorded in the package manifest.
+
+Controlling interface:
+
+- `GMEAIA/0.1`
+- SHA-256: 1f2ed4646e552373c15a6a5bc57e0b5f03a30dff84579d293316b9deb3c96b79
+
+Source documents remain unchanged:
+
+- EGP Core v1.0: c5957945552bfd4d5e107aa7990b2f7184e2a49cb031520b5b3dae19a61f7b6d
+- EGP Appendix v1.0: f88a36ea245018534398e8358c622a1807714c436e44ca31651e2a1c504d311b
+- EGP Glossary v1.0: 78929c311afbe5b5038e1fa233848d5bec72fe5b74265312eb42eba7ad082f11
+- EGP One-Page Summary v1.0: 2a6a42949702d4553e8b5d49e04b3f06d84bf04e0dbecd80b10a0c467834f76e
+
+---
+
+## 31. Closing rule
+
+EGP succeeds when many governance systems communicate without any technical layer pretending to be the source of their legitimacy.
+
+> **Transport the event. Preserve the difference. Resolve authority before effect.**
+
+---
+
+## Cluster conformance adoption — `IAEGCA/0.1`
+
+This patch release adopts the exact `IAEG-CLUSTER/0.1` compatibility set.
+
+**Authority effect:** none. Compatibility does not create jurisdiction, consent, funding, implementation, emergency authority, adjudication, or enforcement.
+
+### Exact compatible set
+
+- `GMEAIA/0.1` — `governance-method-experiment-adoption-implementation-authority-interface-specification-v0.1.md`
+- `EGP/1.1.1` — `emergent-governance-protocol-v1.1.1-package-manifest.json`
+- `IAF/1.1.1` — `ggf-implementation-adaptation-framework-v1.1.1.md`
+- `IMT/0.8.1` — `implementation-methods-tools-framework-v0.8.1.md`
+- `IRF/0.9.1` — `institutional-regeneration-framework-v0.9.1.md`
+- `WDIP/1.6.1` — `wise-decision-making-integration-protocol-v1.6.1.md`
+
+### Mandatory cluster rule
+
+> **Methods structure and transport governance. They do not create the authority to decide or act.**
+
+This document SHALL:
+
+- preserve `GMEAIA/0.1` authority-effect and lifecycle meanings;
+- treat EGP signals, proposals, and adoption records according to their asserted, advisory, authority, and activation states;
+- require explicit recipient acceptance for consequential handoffs;
+- fail closed on unknown, expired, suspended, withdrawn, or incompatible dependencies;
+- preserve affected-party and affected Indigenous authority;
+- preserve protected-domain, emergency, coercive, correction, remedy, and closure boundaries;
+- prevent targets, pilots, metrics, scores, funding, tool recommendations, facilitation, AI outputs, signatures, and technical capabilities from activating power by implication.
+
+Exact component hashes are frozen in `implementation-adaptation-emergent-governance-cluster-conformance-registry-v0.1.json` after build. This avoids circular hashing while providing one immutable release registry.
+

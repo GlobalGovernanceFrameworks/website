@@ -8,7 +8,7 @@
 **Date:** 2026-08-01  
 **Primary function:** Define how already valid authorities may coordinate during urgent and catastrophic conditions without creating a general emergency sovereign  
 
-**Constitutional dependencies:**
+### Controlling interfaces
 
 - **Treaty for Our Only Home v1.3** — decision classes, emergency constitutionalism, protected continuity, deployment limits, finance, and entry into force;
 - **Indigenous Sovereignty and Planetary Healing v1.1** — recognition-not-creation, affected-nation standing, consent, refusal, protected non-transfer, and non-engagement;
@@ -22,6 +22,10 @@
 
 **Source note:** This Specification implements the recommendations of the *Emergency and Existential-Risk Cluster Constitutional Audit v0.1*. It is an interface document. It does not replace hazard-specific law, operational manuals, professional standards, host-jurisdiction procedures, or separately ratified emergency protocols.
 
+### Version history
+
+- **Editorial edition (2026-08-02).** No substantive change. Added this version history, which the document previously lacked. Renamed the *Constitutional dependencies* block to a controlling-interfaces section matching the rest of the cluster. Editions consulted: Treaty for Our Only Home v1.3; Indigenous Sovereignty and Planetary Healing v1.1.
+- **0.1 (2026-08-01):** First edition. Defines a common constitutional interface for alert, declaration, activation, coordination, review, termination, and restoration, so that already valid authorities may coordinate during urgent and catastrophic conditions without a general emergency sovereign being created.
 ---
 
 # Executive summary

@@ -1,113 +1,121 @@
-# The Emergent Governance Protocol (EGP)
-## *One-Page Quick Start Guide*
+---
+title: The Emergent Governance Protocol
+section: egp-one-page-summary
+version: 1.1.1
+package: EGP/1.1.1
+status: constitutionally-harmonized-quick-start
+date: 2026-08-02
+controlling_interface: GMEAIA/0.1
+---
+
+# The Emergent Governance Protocol (EGP) v1.1.1
+## *One-Page Quick Start*
+
+## Three shared operations
+
+### `sense(issue)`
+**Report an observation, concern, opportunity, or warning.**
+
+Anyone may submit a signal, but it begins as an **assertion**.
+
+- State what you observed.
+- Link evidence and uncertainty.
+- Identify who may be affected.
+- Request review or routing.
+- Do not treat the signal as a finding, emergency declaration, or proof of guilt.
+
+### `propose(response)`
+**Offer a candidate response.**
+
+Include alternatives, affected parties and rights, who may decide, who must consent, resources, risks, test criteria, duration, exit, remedy, and protected-domain check.
+
+A proposal is not consent, authority, funding, or enactment.
+
+### `adopt(experiment)`
+**Record that an actor claims to accept a proposal.**
+
+Every adoption needs an effect label:
+
+- claim only;
+- expressive;
+- voluntary internal;
+- authorized but inactive;
+- active bounded trial;
+- suspended;
+- terminated;
+- closed;
+- reference to a separate permanent enactment.
+
+> **An EGP adoption is not active merely because it is signed, funded, coded, uploaded, or stored on a blockchain.**
+
+## The authority envelope
+
+A consequential trial references:
+
+`affected parties + affected Indigenous authority + consent or lawful basis + authority + trial authorization + activation + rights + essential-service protection + monitoring + challenge + expiry + rollback + remedy + closure`
+
+This envelope is governed by `GMEAIA/0.1`.
+
+## Five rules
+
+1. **Transport, do not manufacture authority.**
+2. **Keep signals, proposals, consent, authorization, deployment, and activation separate.**
+3. **Fail closed in protected domains.**
+4. **Sunset temporary power, not continuing rights and duties.**
+5. **Share learning without exposing protected people or knowledge.**
+
+## Protected domains
+
+Ordinary EGP experimentation cannot authorize coercion, borders, essential-service withdrawal, title transfer, child guardianship, irreversible ecological action, high-risk technology, adjudication, emergency command, taxation, forfeiture, or benefit withdrawal.
+
+## Safe quick start
+
+> I `sense()` [observation], affecting [asserted parties], supported by [evidence], with [uncertainty].
+
+> I `propose()` [response], alongside [alternatives], requiring [authority and consent], for [duration], with [monitoring, exit, and remedy].
+
+> We `adopt()` this as [effect label], under [authority], beginning only after [activation], expiring on [date], with [review and closure].
+
+## What EGP is
+
+A common grammar for coordination and learning.
+
+## What EGP is not
+
+A constitution, court, legislature, emergency command, funding authority, AI governor, or smart-contract jurisdiction.
+
+> **EGP connects decisions. It does not authorize them.**
 
 ---
 
-## The Problem
-Governance systems are drowning in complexity—60+ frameworks, endless committees, and rules for every scenario. Meanwhile, real communities solve problems with simple, adaptive responses.
+## Cluster conformance adoption — `IAEGCA/0.1`
 
-## The Solution: 3 Universal Operations
+This patch release adopts the exact `IAEG-CLUSTER/0.1` compatibility set.
 
-### 🔍 `sense(issue)`
-**Anyone can flag a problem with standardized data**
-- River sensor detects pollution → automated alert
-- Community elder notices cultural erosion → formal signal
-- Youth activists report intergenerational injustice → policy input
+**Authority effect:** none. Compatibility does not create jurisdiction, consent, funding, implementation, emergency authority, adjudication, or enforcement.
 
-### 💡 `propose(solution)`  
-**Anyone can suggest responses with built-in accountability**
-- Must link to specific `sense()` signal
-- Include test criteria and timeline
-- Automatic expiration date (sunset clause)
-- Resource requirements and consent mechanisms
+### Exact compatible set
 
-### ⚡ `adopt(experiment)`
-**Communities try solutions as time-bound experiments**
-- Fixed trial period with review points
-- Clear success metrics from proposal
-- Built-in exit strategy if unsuccessful
-- Learning documentation for others
+- `GMEAIA/0.1` — `governance-method-experiment-adoption-implementation-authority-interface-specification-v0.1.md`
+- `EGP/1.1.1` — `emergent-governance-protocol-v1.1.1-package-manifest.json`
+- `IAF/1.1.1` — `ggf-implementation-adaptation-framework-v1.1.1.md`
+- `IMT/0.8.1` — `implementation-methods-tools-framework-v0.8.1.md`
+- `IRF/0.9.1` — `institutional-regeneration-framework-v0.9.1.md`
+- `WDIP/1.6.1` — `wise-decision-making-integration-protocol-v1.6.1.md`
 
----
+### Mandatory cluster rule
 
-## Core Rules
+> **Methods structure and transport governance. They do not create the authority to decide or act.**
 
-| Principle | What It Means |
-|-----------|---------------|
-| **Sunset by Default** | Nothing is permanent—all decisions expire unless renewed |
-| **Local Authority** | Communities control their own `adopt()` decisions |
-| **Machine-Readable** | All outputs in standard format so systems can connect |
-| **Worse is Better** | Adaptive "good enough" beats perfect-but-never-implemented |
+This document SHALL:
 
----
+- preserve `GMEAIA/0.1` authority-effect and lifecycle meanings;
+- treat EGP signals, proposals, and adoption records according to their asserted, advisory, authority, and activation states;
+- require explicit recipient acceptance for consequential handoffs;
+- fail closed on unknown, expired, suspended, withdrawn, or incompatible dependencies;
+- preserve affected-party and affected Indigenous authority;
+- preserve protected-domain, emergency, coercive, correction, remedy, and closure boundaries;
+- prevent targets, pilots, metrics, scores, funding, tool recommendations, facilitation, AI outputs, signatures, and technical capabilities from activating power by implication.
 
-## Why This Works
+Exact component hashes are frozen in `implementation-adaptation-emergent-governance-cluster-conformance-registry-v0.1.json` after build. This avoids circular hashing while providing one immutable release registry.
 
-**Like the Internet:** Simple protocols + infinite combinations = emergent complexity
-**Like Language:** Basic grammar + local dialects = universal communication  
-**Like Evolution:** Fast failure + learning loops = continuous adaptation
-
----
-
-## Real Examples Already Working
-
-- **Love Ledger:** `sense()` community contributions → `propose()` rewards → `adopt()` currency distribution
-- **Bioregional Zones:** `sense()` land health → `propose()` traditional solutions → `adopt()` consensus trials
-- **Climate Visas:** `sense()` displacement triggers → `propose()` host support → `adopt()` pilot programs
-
----
-
-## Getting Started in 3 Steps
-
-### 1. Practice Sensing
-Pick one stress signal your community faces. Format it:
-> "I `sense()` [problem] affecting [who] because [evidence]. Urgency: [timeline]."
-
-### 2. Try Proposing  
-For that same issue, create a proposal with:
-- Link to your `sense()` signal
-- Specific test criteria  
-- 3-6 month trial period
-- What success looks like
-
-### 3. Experiment with Adoption
-Run one small experiment with:
-- Clear consent from affected parties
-- Built-in review at midpoint
-- Documentation of what you learn
-
----
-
-## What Makes EGP Different
-
-| Traditional Governance | EGP |
-|------------------------|-----|
-| Static policies | Time-bound experiments |
-| Siloed systems | Universal coordination |
-| Central control | Local authority + global learning |
-| Complex frameworks | Simple, combinable operations |
-
----
-
-## The Breakthrough
-
-EGP isn't another governance framework—it's the **interoperability protocol** that makes all governance systems work together. Like TCP/IP for the internet, it enables connection without controlling content.
-
-**Communities keep their decision-making traditions. They just share a common grammar for coordination.**
-
----
-
-## Start Anywhere
-
-Governance is already emerging around you. EGP makes it visible, shareable, and scalable.
-
-Pick one stress signal. Try the three operations. See what grows.
-
-**The revolution isn't in the design—it's in recognizing that the future is already here.**
-
----
-
-📧 **Contact:** governance@globalgovernanceframeworks.org  
-🌐 **Full Document:** [Link to complete EGP framework](https://globalgovernanceframeworks.org/frameworks/emergent-governance-protocol)  
-💻 **GitHub:** github.com/GlobalGovernanceFrameworks/egp  
-📋 **License:** Creative Commons - Adapt freely, share improvements
