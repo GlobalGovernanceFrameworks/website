@@ -3,6 +3,19 @@
 import type { GgfEntity, GgfRelationship } from './_types';
 
 // Entities for The Mobility Commons
+/**
+ * TIER 2–3: SETTLEMENT, MOBILITY & DEVELOPMENT
+ * Urban, rural, tourism and transport — the frameworks that govern where people
+ * live and how they move between those places.
+ *
+ * Conventions: see cluster.implementation-os.ts.
+ *
+ * Two renames from source at this revision: `framework_urban_community` is now
+ * The Bioregional Polis and `framework_rural_development` is The Living Land
+ * Protocol. Both ids are canonical and referenced across other clusters, so the
+ * ids stay.
+ */
+
 export const mobilityCommonsEntities: GgfEntity[] = [
   {
     id: 'framework_mobility_commons',
@@ -11,7 +24,7 @@ export const mobilityCommonsEntities: GgfEntity[] = [
     shortName: 'The Mobility Commons',
     description: 'A GGF framework to govern transportation as a regenerative, equitable, and shared global resource, prioritizing fossil-free, universally accessible mobility.',
     tier: 2,
-    status: 'Draft', // Status is Draft as it's a newly defined outline
+    status: 'Review', // Status is Draft as it's a newly defined outline
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'High',
@@ -34,7 +47,8 @@ export const mobilityCommonsEntities: GgfEntity[] = [
         version: 'v8.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Movement as a shared resource rather than a market: proximity first, then transit, then everything else, with freight held to the same standard as passengers. Version 8.1 added a MaaS interoperability mandate and an incumbent platform strategy — recognition that mobility is now largely governed by private routing software, and that a commons framework ignoring the app layer governs nothing. Its status line still reads Implementation-Ready Draft.'
       }
     }
   },
@@ -164,11 +178,12 @@ export const developmentEntities: GgfEntity[] = [
   {
     id: 'framework_urban_community',
     type: 'Framework',
-    name: 'The Bioregional Polis Framework',
+    name: 'The Bioregional Polis: An Indigenous-Guided Urban Framework',
     shortName: 'Bioregional Polis',
-    description: 'Framework for sustainable urban planning and community development',
+    description:
+      'A municipal transition operating system for regenerative cities: bioregional boundaries, Indigenous-guided land relationship, and transitional pathways a real council can adopt incrementally.',
     tier: 3,
-    status: 'Coming-Soon',
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Regional',
     implementationPriority: 'Medium',
@@ -183,18 +198,20 @@ export const developmentEntities: GgfEntity[] = [
         version: 'v3.0',
         updated: '2026-08-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Cities as a municipal transition operating system rather than a planning vision: what a council can actually adopt next budget cycle, sequenced so each step works before the next exists. Version 3.0 is Indigenous-guided and explicit that urban land sits on somebody’s territory. The transitional pathways are the point — most urban frameworks describe a destination and leave the route as an exercise for the reader.'
       }
     }
   },
   {
     id: 'framework_rural_development',
     type: 'Framework',
-    name: 'Rural Development Governance Framework',
+    name: 'The Living Land Protocol',
     shortName: 'Rural Development',
-    description: 'Framework for sustainable rural development and agriculture integration',
+    description:
+      'BAZ-led rural governance rooted in dignity, self-determination, cultural integrity and ecological kinship. Local ownership guided by subsidiarity, with conflict-sensitive design throughout.',
     tier: 3,
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Economic',
     geographicScope: 'Regional',
     implementationPriority: 'Medium',
@@ -208,7 +225,8 @@ export const developmentEntities: GgfEntity[] = [
         version: 'v1.6',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Rural governance where rural communities hold the pen — BAZ-led, subsidiarity-first, conflict-sensitive by design. Version 1.6 puts inclusivity ahead of efficiency: marginalized groups, language preservation and cultural narrative are structural commitments rather than consultation stages, on the reasoning that rural development done to a community has a long record of hollowing it out.'
       }
     }
   },
@@ -250,7 +268,8 @@ export const developmentEntities: GgfEntity[] = [
         version: 'v1.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Tourism as sacred exchange rather than extraction, with host sovereignty as the first principle — the community sets carrying capacity and can close the door. Version 1.1 commits to net healing and reparations rather than harm minimization, which is what separates it from eco-tourism. It also includes exit protocols, because a tourism framework that cannot describe how a place stops being a destination is not serious about host sovereignty.'
       }
     }
   },

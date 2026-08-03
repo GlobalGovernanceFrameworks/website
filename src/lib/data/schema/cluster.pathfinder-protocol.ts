@@ -13,9 +13,12 @@ export const pathfinderProtocolEntities: GgfEntity[] = [
   {
     id: 'framework_pathfinder_protocol',
     type: 'Framework',
-    name: 'Pathfinder Protocol',
+    // renamed at v0.9; shortName retained because certification, the audit
+    // council and several other frameworks still say "Pathfinder"
+    name: 'The Regenerative Enterprise Framework',
     shortName: 'Pathfinder Protocol',
-    description: 'Voluntary framework for aligning corporate purpose with planetary well-being through six-module transformation system',
+    description:
+      'A voluntary pathway for enterprises transitioning from extractive to regenerative models across six modules: governance, operations, finance, culture and advocacy. Certification is a three-tier maturity model rather than a pass mark.',
     tier: 2,
     status: 'Ready',
     primaryDomain: 'Economic',
@@ -32,7 +35,9 @@ export const pathfinderProtocolEntities: GgfEntity[] = [
       outline: {
         version: 'v0.9',
         updated: '2026-08-03',
-        maturity: 'adversarial'
+        maturity: 'adversarial',
+        standfirst:
+          'A voluntary route for a company that wants to stop being extractive and does not know how — six modules covering governance, operations, finance, culture and advocacy, with three-tier certification so that progress is legible before it is complete. The framework leads with a $4.5 trillion opportunity figure, which is either the honest pitch to the audience it needs or a hostage to fortune depending on where the number came from. Its own annual review weights community, ecological and Indigenous votes at 70% against enterprises\' 30%.'
       },
  
       prose: {
@@ -205,7 +210,8 @@ export const pathfinderProtocolEntities: GgfEntity[] = [
     type: 'Tool',
     name: 'Digital Product Passport',
     shortName: 'Digital Product Passport',
-    description: 'Blockchain-based tracking system for product lifecycle, ecological impact, and labor conditions',
+    description:
+      'Blockchain-based tracking for product lifecycle, ecological impact and labour conditions. DUPLICATE: `tool_dpp` in cluster.economic-os describes the same instrument, established by Gaian Trade. These should be merged, with `tool_dpp` surviving.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Technology',
@@ -441,6 +447,40 @@ export const pathfinderProtocolRelationships: GgfRelationship[] = [
     description: 'The Pathfinder Protocol provides the "Corporate Co-op Conversion Process" that allows certified enterprises to voluntarily transition their assets into Stewardship Trusts under the Hearthstone Protocol.',
     strength: 'Strong',
     frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_pathfinder_protocol',
+    to: 'tool_regenerative_investment_thesis',
+    type: 'ESTABLISHES',
+    description:
+      'A standard template for pitching Return on Regeneration to impact investors — the artefact a finance director actually needs.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_pathfinder_protocol',
+    to: 'metric_intergenerational_equity',
+    type: 'ESTABLISHES',
+    description: 'Long-horizon impact scoring, audited by the Guardians of the Future.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'metric_intergenerational_equity',
+    to: 'institution_gof',
+    type: 'REPORTS_TO',
+    description: 'Scores are audited by the future-generations ombudsman offices.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'tool_regenerative_investment_thesis',
+    to: 'framework_financial_systems',
+    type: 'USES',
+    description: 'Return on Regeneration is denominated against Financial Systems instruments.',
+    strength: 'Medium',
     sequenceType: 'Parallel'
   }
 ];

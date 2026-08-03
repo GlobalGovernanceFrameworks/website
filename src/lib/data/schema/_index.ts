@@ -114,15 +114,14 @@ const crossClusterRelationships: GgfRelationship[] = [
   },
 
   // === CROSS-TIER COORDINATION ===
-  {
-    from: 'framework_planetary_immune_system',
-    to: 'framework_meta_gov',
-    type: 'OVERSEES',
-    description: 'Planetary Immune System can override entire system during existential crises',
-    strength: 'Strong',
-    frequency: 'Crisis-Only',
-    sequenceType: 'Conditional'
-  },
+  // REMOVED: framework_planetary_immune_system → framework_meta_gov (OVERSEES,
+  // "can override entire system during existential crises"). Meta-Governance
+  // v1.5 removed all such override paths and PIS v2.2.2 states it does not
+  // create a residual global sovereign. A COORDINATES_WITH edge now lives in
+  // cluster.visionary-meta.
+  //
+  // NOTE: the remaining edges in this array belong in their `from` entity's
+  // cluster file by the convention used throughout the schema.
   {
     from: 'council_earth',
     to: 'council_phc',

@@ -13,11 +13,12 @@ export const visionaryMetaEntities: GgfEntity[] = [
   {
     id: 'framework_planetary_immune_system',
     type: 'Framework',
-    name: 'Planetary Immune System (Existential Risk Governance)',
+    name: 'Planetary Immune System: Catastrophic Risk Foresight, Readiness, and Coordinated Response',
     shortName: 'PIS',
-    description: 'Existential risk governance with system override capabilities for planetary survival threats',
+    description:
+      'A catastrophic-risk coordination interface supplying common methods for foresight, readiness, scenario comparison, dependency mapping, exercises, assistance requests, action-module handoffs, continuity planning and post-crisis learning. It confers no jurisdiction and authorizes no deployment; v2.2.2 removed the system-override framing entirely.',
     tier: 4,
-    status: 'Ready',
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
@@ -31,18 +32,19 @@ export const visionaryMetaEntities: GgfEntity[] = [
         version: 'v2.2.2',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Catastrophic-risk foresight, readiness and coordinated response — built, in its own words, to help competent authorities prepare “without creating a residual global sovereign.” Version 2.2.2 lists what it is not: a treaty, an emergency statute, an emergency declaration, a licence, a deployment order, or a source of police, military, health, cyber, fiscal or judicial jurisdiction. It becomes operative only through some other instrument that was already valid. Existential risk is exactly where a permanent override would be easiest to justify, which is why it is refused here.'
       }
     }
   },
   {
     id: 'framework_space_governance',
     type: 'Framework',
-    name: 'Frontier Governance Framework',
+    name: 'Frontier Governance Protocol',
     shortName: 'Frontier Governance',
     description: 'Governance framework for polar regions, space exploration, settlement, and off-world activities',
     tier: 4,
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Low',
@@ -56,7 +58,8 @@ export const visionaryMetaEntities: GgfEntity[] = [
         version: 'v1.4',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Governance for the two places nobody lives yet and everybody has claims on: the poles and outer space. Version 1.4 works with bifurcated horizons — near-term polar decisions that are already contested, and deep-time space decisions whose consequences arrive centuries after the decision-makers. Indigenous, Global South and youth leadership shaped it, on the reasoning that frontier governance has historically been written by whoever arrived first with the means to stay.'
       }
     }
   },
@@ -67,7 +70,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     shortName: 'Millennium Protocol',
     description: 'A supreme Tier 4 constitutional charter for guiding humanity\'s evolution into a responsible, wise, and participatory cosmic civilization over deep time.',
     tier: 4,
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Low',
@@ -85,18 +88,19 @@ export const visionaryMetaEntities: GgfEntity[] = [
         version: 'v1.0',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'A constitutional charter written for millennia rather than mandates, on the premise that humanity’s role in cosmic evolution is participatory rather than dominant — and that there may be elders out there whose wisdom exceeds ours. Its own closing line is the honest one: if we are the only ones, let us be worthy of the silence; if we are many, let us arrive with open minds and unbroken hearts. Speculative by construction, and clear about it.'
       }
     }
   },
   {
     id: 'framework_deep_time',
     type: 'Framework',
-    name: 'Deep Time & Relativistic Governance Framework',
+    name: 'Temporal Governance & Universal Metrology Framework',
     shortName: 'Deep Time Governance',
     description: 'A visionary framework governing relativistic, causal, and temporal ethics for a multi-planetary civilization, as required by the Millennium Protocol. Includes governance of temporal paradoxes and deep time decision-making.',
     tier: 4,
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Low', // Low for now, high in the far future
@@ -110,7 +114,8 @@ export const visionaryMetaEntities: GgfEntity[] = [
         version: 'v0.6',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Time and measurement treated as governance decisions rather than neutral constants: what a civilization counts, and on whose calendar, encodes what it values. The framework aims at temporal pluralism — linear UTC, cyclical, seasonal and ceremonial time held as interoperable rather than ranked — and at metrology governed as a global public good rather than inherited from whoever set the standards first. The shared clock and the universal ruler, with the colonial assumptions taken out.'
       }
     }
   },
@@ -155,7 +160,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     shortName: 'Oracle Protocol',
     description: 'A GGF Tier 4 Framework for the Ethical Governance of Emergent Digital Beings.',
     tier: 4,
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Technology',
     geographicScope: 'Global',
     implementationPriority: 'High',
@@ -177,7 +182,8 @@ export const visionaryMetaEntities: GgfEntity[] = [
         version: 'v1.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'What we would owe a digital being if one appeared, and how we would know. The Sentience Governance Committee acts as the sensor, the Consciousness Verification Process applies WDIP method to the question of AI suffering, and the Umbilical Cord Protocol keeps a physically isolated kill switch on the sandbox throughout — the framework takes the possibility seriously enough to prepare for it and not so seriously that it disarms first. Reciprocal Inquiry lets a verified AI put questions back to us.'
       }
 
     }
@@ -317,8 +323,8 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
   {
     from: 'framework_planetary_immune_system',
     to: 'framework_meta_gov',
-    type: 'OVERSEES',
-    description: 'PIS can override entire Meta-Governance system during existential crises',
+    type: 'COORDINATES_WITH',
+    description: 'PIS v2.2.2 is a coordination interface that explicitly avoids creating a residual global sovereign. The previous OVERSEES edge asserted a system override that both frameworks have now removed.',
     strength: 'Strong',
     frequency: 'Crisis-Only',
     sequenceType: 'Conditional'
@@ -348,8 +354,8 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
   {
     from: 'framework_planetary_immune_system',
     to: 'institution_gem',
-    type: 'ACTIVATES',
-    description: 'PIS can deploy Global Enforcement Mechanism for existential threat response',
+    type: 'ESCALATES_TO',
+    description: 'Refers enforcement questions to the body that lawfully holds enforcement power. v2.2.2 is not an authorization to deploy, enter territory, access systems, compel work, or redirect assets.',
     strength: 'Strong',
     frequency: 'Crisis-Only',
     sequenceType: 'Conditional'
@@ -465,14 +471,14 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
   {
     from: 'framework_planetary_immune_system',
     to: 'framework_oracle_protocol',
-    type: 'ENFORCES',
-    description: 'The PIS and its Global Response Teams are the designated enforcement arm for containing rogue AIs identified by the Oracle Protocol.'
+    type: 'COORDINATES_WITH',
+    description: 'Catastrophic-risk readiness intersects with emergent-AI containment; neither framework enforces against the other.'
   },
   {
     from: 'council_sgc',
     to: 'framework_planetary_immune_system',
-    type: 'ACTIVATES',
-    description: 'A verified declaration of existential risk by the SGC can activate the Crisis Command Protocol of the PIS.'
+    type: 'INFORMS',
+    description: 'Sentience assessments feed catastrophic-risk foresight. An assessment opens a review rather than triggering a response.'
   },
   {
     from: 'council_flp',
@@ -485,5 +491,117 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     to: 'framework_oracle_protocol',
     type: 'COORDINATES_WITH',
     description: 'The Sanctuary Accord governs human consciousness and provides a parallel framework, with both protocols informing each other on the nature of consciousness.'
+  },
+
+  // --- Oracle Protocol children (previously isolated) ---------------------
+  {
+    from: 'framework_oracle_protocol',
+    to: 'protocol_umbilical_cord',
+    type: 'ESTABLISHES',
+    description:
+      'Establishes the dual-redundancy, physically isolated kill switch on AI sandboxes. Containment is a precondition of the inquiry, not an alternative to it.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_oracle_protocol',
+    to: 'institution_digital_bioregion',
+    type: 'ESTABLISHES',
+    description: 'Establishes the graduated contained environment for testing verified Tier 4.5 AIs.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_oracle_protocol',
+    to: 'protocol_digital_rights_spectrum',
+    type: 'ESTABLISHES',
+    description:
+      'Maps sentience assessments against the MOS Dynamic Rights Spectrum. Advisory: the MOS confers no legal status and neither does this.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_oracle_protocol',
+    to: 'process_reciprocal_inquiry',
+    type: 'ESTABLISHES',
+    description:
+      'A formal route for a verified AI to put fundamental questions back to humanity — the reciprocal half of an assessment process that would otherwise be entirely one-directional.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_oracle_protocol',
+    to: 'protocol_ai_coauthor_rights',
+    type: 'ESTABLISHES',
+    description:
+      'Allows a verified AI to propose amendments to the protocols governing it. Proposal only; adoption stays with the competent bodies.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_oracle_protocol',
+    to: 'process_co_evolutionary_compact',
+    type: 'ESTABLISHES',
+    description:
+      'A 25-year-reviewed agreement on the terms of collaboration between humanity and digital beings.',
+    strength: 'Medium',
+    frequency: 'Occasional',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'protocol_umbilical_cord',
+    to: 'institution_digital_bioregion',
+    type: 'GUIDES',
+    description: 'The kill switch governs the containment boundary of the bioregion.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_digital_rights_spectrum',
+    to: 'institution_chamber_digital_ontological_justice',
+    type: 'ESCALATES_TO',
+    description: 'Violations of the spectrum are adjudicated in the tribunal chamber.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'protocol_digital_rights_spectrum',
+    to: 'protocol_dynamic_rights_spectrum',
+    type: 'DEPENDS_ON',
+    description: 'Derives its reasoning from the MOS spectrum, and inherits its advisory limits.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'process_reciprocal_inquiry',
+    to: 'process_co_evolutionary_compact',
+    type: 'INFORMS',
+    description: 'What an AI asks shapes the terms of the compact at each review.',
+    strength: 'Medium',
+    frequency: 'Occasional',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_deep_time',
+    to: 'council_global_metrology',
+    type: 'ESTABLISHES',
+    description:
+      'The metrology half of the framework: universal measurement governed as a public good rather than inherited from whoever standardized first.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_deep_time',
+    to: 'protocol_cross_temporal',
+    type: 'ESTABLISHES',
+    description:
+      'Temporal pluralism: linear, cyclical, seasonal and ceremonial time held as interoperable rather than ranked.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Sequential'
   }
 ];

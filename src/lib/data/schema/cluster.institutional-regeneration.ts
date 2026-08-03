@@ -3,9 +3,16 @@
 import type { GgfEntity, GgfRelationship } from './_types';
 
 /**
- * TIER 1: INSTITUTIONAL REGENERATION CLUSTER
- * Practical implementation framework for transforming existing global governance institutions
- * Bridges the gap between high-level treaty reforms and operational institutional reality
+ * TIER 1: INSTITUTIONAL REGENERATION
+ * How existing institutions change, and how the ones that cannot are wound down
+ * with their knowledge intact.
+ *
+ * Conventions: see cluster.implementation-os.ts.
+ *
+ * GMEAIA/0.1 is the declared controlling interface for this framework, WDIP, the
+ * IAF and Implementation Methods & Tools — the fourth interface specification
+ * after CIS, SCPA and CERGTA. None of the four documents expands the acronym, so
+ * it has no entity yet.
  */
 
 export const institutionalRegenerationEntities: GgfEntity[] = [
@@ -15,7 +22,8 @@ export const institutionalRegenerationEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Institutional Regeneration Framework',
     shortName: 'Institutional Regeneration',
-    description: 'Comprehensive playbook for evolving existing global governance institutions from bureaucratic inertia to agile, mission-driven service',
+    description:
+      'A playbook for evolving existing institutions from bureaucratic inertia toward mission-driven service: mandate audits, evolution cells, a public regeneration index, and a dignified sunsetting path for institutions whose purpose has passed. Advisory throughout; conforms to the GMEAIA/0.1 controlling interface.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Governance',
@@ -32,7 +40,8 @@ export const institutionalRegenerationEntities: GgfEntity[] = [
         version: 'v0.9.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'A playbook for institutions that have outlived their mandate but not their budget. Mandate audits ask what an institution is actually for now; graceful sunsetting handles the cases where the honest answer is nothing, preserving the knowledge and reallocating the resources rather than letting the shell persist. Version 0.9.1 conforms to the GMEAIA/0.1 interface, and the Regeneration Compact is deliberately non-binding — an institution that could be compelled to regenerate would simply comply on paper.'
       }
     }
   },
@@ -377,9 +386,68 @@ export const institutionalRegenerationRelationships: GgfRelationship[] = [
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // --- edges added to resolve isolated entities --------------------------
+  {
+    from: 'framework_institutional_regeneration',
+    to: 'tool_cultural_transformation_toolkit',
+    type: 'ESTABLISHES',
+    description:
+      'Establishes the toolkit for shifting institutional culture. The hardest part of regeneration is not the mandate audit but what happens after it.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'tool_cultural_transformation_toolkit',
+    to: 'institution_evolution_cells',
+    type: 'GUIDES',
+    description: 'Evolution Cells are the vehicle through which the toolkit is applied internally.',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_institutional_regeneration',
+    to: 'protocol_constitutional_interface',
+    type: 'DEPENDS_ON',
+    description:
+      'v0.9.1 conforms to the GMEAIA/0.1 controlling interface, which sits alongside the Constitutional Interface Specification in the shared-rules layer.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_institutional_regeneration',
+    to: 'framework_implementation_methods_tools',
+    type: 'USES',
+    description:
+      'Draws assessment rubrics and facilitation methods from the shared tool commons rather than duplicating them.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_institutional_regeneration',
+    to: 'framework_wdmip',
+    type: 'COORDINATES_WITH',
+    description:
+      'Both conform to GMEAIA/0.1 and both are advisory methodologies applied to decisions others own.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'process_graceful_sunsetting',
+    to: 'institution_ggf_failure_library',
+    type: 'INFORMS',
+    description:
+      'What a wound-down institution learned is preserved rather than lost with the building.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
   }
 ];
-
 // === PLACEMENT IN MAIN SCHEMA ===
 // This cluster should be added to the main schema index as:
 

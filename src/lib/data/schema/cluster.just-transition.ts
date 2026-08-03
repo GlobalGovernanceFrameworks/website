@@ -3,6 +3,21 @@
 import type { GgfEntity, GgfRelationship } from './_types';
 
 
+/**
+ * TIER 1–2: JUST TRANSITION
+ * Aegis converts military capability to civilian use; Sundown retires harmful
+ * industries without abandoning the people employed by them.
+ *
+ * Conventions: see cluster.implementation-os.ts.
+ *
+ * OPEN QUESTION. Aegis v1.3.4 was rewritten as a set of interoperable
+ * interfaces with a very long non-authority section. Two institutions the schema
+ * says it establishes barely survive that rewrite: `institution_gset` is named
+ * once, and `council_toc` is not named at all. The Earth Defense Force is still
+ * there. Both are flagged in their descriptions rather than removed, because
+ * Financial Systems also references GSET.
+ */
+
 export const justTransitionEntities: GgfEntity[] = [
 
   /**
@@ -13,7 +28,8 @@ export const justTransitionEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'The Aegis Protocol',
     shortName: 'Aegis Protocol',
-    description: 'A Tier 1 Core Operating System that transitions military, intelligence, and defense-industrial capabilities into regenerative global security and shared exploratory missions.',
+    description:
+      'Interoperable governance interfaces for security capability transition, civilian planetary service and lawful dual-use conversion: expenditure redirection, facility and research conversion, personnel and regional transition, purpose-limited dual-use custody, and lawful declassification.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Justice',
@@ -48,7 +64,8 @@ export const justTransitionEntities: GgfEntity[] = [
         version: 'v1.3.4',
         updated: '2026-08-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Converting military capability to civilian use, and saying sixty-four separate times what it cannot do while doing so. Version 1.3.4 covers voluntary expenditure redirection, conversion of defence facilities and research programmes, transition of personnel and defence-dependent regions, purpose-limited dual-use custody, and lawful declassification. It provides interfaces, not commands: nothing here authorizes a deployment, a seizure, or a change to anyone’s security posture.'
       }
     }
   },
@@ -57,7 +74,8 @@ export const justTransitionEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Global Security & Exploration Trust',
     shortName: 'GSET',
-    description: 'A multi-stakeholder international trust that manages redirected military funds for regenerative and exploratory projects.',
+    description:
+      'A multi-stakeholder international trust managing redirected military funds for regenerative and exploratory projects. NOTE: named only once in Aegis v1.3.4, which frames redirection as voluntary and jurisdiction-held rather than trust-managed. Needs confirmation.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Economic',
@@ -83,7 +101,8 @@ export const justTransitionEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Transparency & Oversight Council',
     shortName: 'TOC',
-    description: 'The independent oversight body that audits GSET/EDF spending and intelligence using blockchain and AI, with Indigenous/Youth/GCRSD advisory seats.',
+    description:
+      'Independent oversight auditing redirected spending and intelligence, with Indigenous, Youth and GCRSD advisory seats. NOTE: not named in Aegis v1.3.4. Retained pending confirmation that the oversight function survived the v1.3 rewrite.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Justice',
@@ -118,7 +137,7 @@ export const justTransitionEntities: GgfEntity[] = [
     shortName: 'Sundown Protocol',
     description: 'A just transition framework for retiring harmful industries and rebirthing regenerative futures.',
     tier: 2,
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Governance',
     implementationPriority: 'Critical',
     dependencies: ['framework_treaty', 'council_phc', 'framework_hearthstone', 'framework_aubi', 'framework_shield', 'framework_work_liberation'],
@@ -132,7 +151,8 @@ export const justTransitionEntities: GgfEntity[] = [
         version: 'v2.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Retiring an industry without abandoning the people inside it: binding sunset timelines paired with a Legacy Transition Fund, worker protections written as a covenant rather than a promise, and a Legacy Council that treats industrial heritage as something to preserve rather than erase. Indigenous Monitoring Teams can halt remediation on traditional lands where consent has been breached — the enforcement teeth sit with the communities affected rather than with the transition authority.'
       }
     }
   },
@@ -398,5 +418,81 @@ export const justTransitionRelationships: GgfRelationship[] = [
   // === KNOWLEDGE & CULTURAL INTEGRATION ===
   { from: 'framework_sundown_protocol', to: 'platform_transition_observatory', type: 'ESTABLISHES', description: 'The protocol establishes its central knowledge sharing platform.' },
   { from: 'framework_sundown_protocol', to: 'institution_legacy_council', type: 'ESTABLISHES', description: 'The protocol establishes its cultural institution for preserving heritage and guiding narratives.' },
-  { from: 'institution_legacy_council', to: 'institution_gimn', type: 'COLLABORATES_WITH', description: 'The Legacy Council partners with the Global Indigenous Media Network to manage and amplify stories from the Global Transition Story Archive.' }
+  { from: 'institution_legacy_council', to: 'institution_gimn', type: 'COLLABORATES_WITH', description: 'The Legacy Council partners with the Global Indigenous Media Network to manage and amplify stories from the Global Transition Story Archive.' },
+
+  // --- edges added to resolve isolated entities --------------------------
+  {
+    from: 'mechanism_legacy_transition_fund',
+    to: 'mechanism_regional_emergency_reserve',
+    type: 'FUNDS',
+    description:
+      'Allocates the crisis reserve that pays for Just Transition SWAT deployments.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'mechanism_regional_emergency_reserve',
+    to: 'institution_just_transition_swat',
+    type: 'FUNDS',
+    description: 'Resources emergency triage in transition crisis zones.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_sundown_protocol',
+    to: 'institution_legacy_assurance_unit',
+    type: 'ESTABLISHES',
+    description:
+      'Establishes decadal audits of transitioned regions. A transition that looks successful at five years is not the same as one that holds at thirty.',
+    strength: 'Medium',
+    frequency: 'Occasional',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'institution_legacy_assurance_unit',
+    to: 'council_global_transition',
+    type: 'AUDITS',
+    description: 'Reports long-term ecological and social outcomes back to the council that set the timelines.',
+    strength: 'Medium',
+    frequency: 'Occasional',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'institution_legacy_council',
+    to: 'initiative_industrial_knowledge_preservation',
+    type: 'ESTABLISHES',
+    description:
+      'Documents and archives the technical and operational knowledge of industrial communities before the workforce disperses.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'initiative_industrial_knowledge_preservation',
+    to: 'framework_cultural_heritage',
+    type: 'COORDINATES_WITH',
+    description: 'Industrial heritage is cultural heritage; the preservation methods are shared.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'institution_office_just_transition',
+    to: 'initiative_transition_ambassadors',
+    type: 'ESTABLISHES',
+    description:
+      'Trains transitioned workers and community leaders to advocate elsewhere — the most credible advocate for a transition is someone who has already survived one.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'initiative_transition_ambassadors',
+    to: 'platform_transition_observatory',
+    type: 'INFORMS',
+    description: 'Ambassador experience feeds the public knowledge platform.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  }
 ];

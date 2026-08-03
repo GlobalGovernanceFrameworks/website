@@ -17,7 +17,7 @@ export const socialEquityEntities: GgfEntity[] = [
     shortName: 'Social Fabric Framework',
     description: 'A modular, context-aware social technology for building trust, healing collective trauma, and fostering the social cohesion necessary for regenerative governance.',
     tier: 2,
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Governance',
     dependencies: ['framework_indigenous', 'framework_mental_health', 'framework_justice'],
     enables: ['process_community_weaver', 'institution_cohesion_council', 'framework_aubi', 'framework_meta_gov'],
@@ -31,7 +31,8 @@ export const socialEquityEntities: GgfEntity[] = [
         version: 'v1.0',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Phase Zero: the social groundwork that has to exist before AUBI, Meta-Governance or anything else can land. Trust, repaired collective trauma, and enough cohesion that a community can hold a disagreement without fracturing. Version 1.0 is modular and context-aware by design, because the same weaving process has to work in a stable town and a crisis zone, and a framework that only works in the easy case is not infrastructure.'
       }
     }
   },
@@ -42,7 +43,7 @@ export const socialEquityEntities: GgfEntity[] = [
     shortName: 'Cairn Protocol',
     description: 'A framework for addiction, recovery, and substance sovereignty, grounded in reparative justice and community-led care.',
     tier: 2, // NOTE: While this is a Tier 2 framework, it is clustered here for thematic coherence with social equity.
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Health',
     implementationPriority: 'High',
     dependencies: ['framework_mental_health', 'framework_kintsugi_protocol', 'framework_justice', 'framework_aubi', 'framework_indigenous'],
@@ -57,18 +58,19 @@ export const socialEquityEntities: GgfEntity[] = [
         version: 'v2.6',
         updated: '2026-08-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Addiction treated as a relationship between a person, a substance and the conditions around them — with substance sovereignty as the organizing right and Recovery Hubs run by people who have been through it. Version 2.6 funds the whole thing through a levy on the corporations that engineer addictive products, which is both the moral argument and the fiscal one. Its status line still reads Implementation-Ready Draft.'
       }
     }
   },
   {
     id: 'framework_disability',
     type: 'Framework',
-    name: 'Universal Access & Disability Justice Layer',
+    name: 'Foundation Protocol: Universal Access & Disability Justice',
     shortName: 'Disability Justice',
     description: 'Framework ensuring full inclusion and rights for persons with disabilities',
     tier: 3,
-    status: 'Coming-Soon',
+    status: 'Review',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
@@ -84,14 +86,15 @@ export const socialEquityEntities: GgfEntity[] = [
         version: 'v3.0',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Access designed in from the start rather than retrofitted after complaint, with disabled-led Care Coops as compensated institutions rather than voluntary support groups. Version 3.0 adds layered economics — the recognition that disability produces both reduced income and increased costs, and that a flat benefit addresses neither well. Disability Impact Assessments apply to every GGF policy, not to the ones someone remembers to check.'
       }
     }
   },
   {
     id: 'framework_gender',
     type: 'Framework',
-    name: 'Gender & Kinship Justice Layer',
+    name: 'Kinship Protocol: Gender & Intersectional Justice',
     shortName: 'Kinship Protocol',
     description: 'Framework ensuring gender equality and LGBTQ+ rights with intersectional approach. Employs anti-reification design: identity-specific legal protections where persecution is identity-targeted, with progressive shift toward function-based framing for governance and economic mechanisms. Includes Relational Infrastructure for kinship formation.',
     tier: 3,
@@ -110,18 +113,19 @@ export const socialEquityEntities: GgfEntity[] = [
         version: 'v2.3',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'A justice framework built to make itself unnecessary. Identity-specific protections are real and load-bearing now, but every quota and category carries a decadal sunset review, and the Category Dependency Ratio tracks how much support still flows through identity-targeted rather than function-targeted mechanisms. The intended direction is toward the second. Most equity frameworks entrench the categories they defend; this one schedules its own examination.'
       }
     }
   },
   {
     id: 'framework_youth',
     type: 'Framework',
-    name: 'Youth & Future Generations Integration Protocol',
+    name: 'Horizon Protocol: An Intergenerational Bridge',
     shortName: 'Youth & Future Gens',
     description: 'Framework for youth engagement and intergenerational equity',
     tier: 3,
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
@@ -136,14 +140,15 @@ export const socialEquityEntities: GgfEntity[] = [
         version: 'v3.0',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Not protection or consultation but institutional power: youth holding binding seats and voting on decisions whose consequences they will actually live through. Version 3.0 adds Shadow Governance for the interval before any of that exists — audits, public scorecards and accountability forums that build a constituency and train a cohort while the formal structures are still hypothetical. Reciprocal Mentorship Pods run in both directions.'
       }
     }
   },
   {
     id: 'framework_elder',
     type: 'Framework',
-    name: 'Intergenerational Wisdom & Elder Justice Layer',
+    name: 'Legacy Protocol: An Intergenerational Justice Framework',
     shortName: 'Elder Justice',
     description: 'Framework for supporting aging populations and integrating elder wisdom',
     tier: 3,
@@ -162,7 +167,8 @@ export const socialEquityEntities: GgfEntity[] = [
         version: 'v2.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Ageing framed as accumulating standing rather than losing it: elder-led rather than elder-serving, with the Council of Elders holding advisory weight on long-horizon questions where having watched something fail before is the relevant qualification. Care Coops and the Love Ledger make the care work around ageing visible and compensated, which is where most elder-justice policy quietly fails.'
       }
     }
   },
@@ -189,7 +195,8 @@ export const socialEquityEntities: GgfEntity[] = [
         version: 'v1.1.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Mobility, displacement, asylum, reception, return and host-community coordination held in one frame, because separating them is how people fall through. Climate Resilience Visas trigger on IPCC thresholds rather than on a discretionary humanitarian judgment made after the fact. Version 1.1.1 is a controlled successor conformed to the cluster record profile — the mechanics of who owes what to whom, written before the crisis rather than during it.'
       }
     }
   },
@@ -712,12 +719,6 @@ export const socialEquityRelationships: GgfRelationship[] = [
     type: 'ESTABLISHES',
     description: 'The framework establishes the Cohesion Metrics Pack as its primary measurement tool.'
   },
-  {
-    from: 'framework_social_fabric',
-    to: 'framework_gender',
-    type: 'IMPLEMENTS',
-    description: 'Social Fabric Framework implements the Relational Infrastructure provisions of the Kinship Protocol (Third Spaces, Rites of Passage, Relationship Education) through its Phase 2 Seeding Trust activities.'
-  },
   
   // === CONNECTIONS TO ECONOMIC OS ===
   {
@@ -1010,5 +1011,71 @@ export const socialEquityRelationships: GgfRelationship[] = [
     frequency: 'Regular',
     sequenceType: 'Parallel'
   }
-
+,
+  // --- edges added to resolve isolated entities -------------------------
+  {
+    from: 'framework_cairn_protocol',
+    to: 'protocol_substance_sovereignty_declaration',
+    type: 'ESTABLISHES',
+    description:
+      'The Declaration is the framework\'s founding charter: bodily autonomy, sacred plant access, and protection from predatory design.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_cairn_protocol',
+    to: 'institution_recovery_research_hub',
+    type: 'ESTABLISHES',
+    description:
+      'Establishes the Indigenous-led research body that collects recovery outcomes data, embedded in the Community Safety Observatory.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'institution_recovery_research_hub',
+    to: 'council_cairn',
+    type: 'INFORMS',
+    description: 'Outcomes evidence feeds the council that oversees recovery provision.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_social_fabric',
+    to: 'institution_weaver_ombud',
+    type: 'ESTABLISHES',
+    description:
+      'Establishes an independent reviewer for grievances about the weaving process itself — facilitation needs its own accountability route.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'institution_weaver_ombud',
+    to: 'process_community_weaver',
+    type: 'AUDITS',
+    description: 'Reviews Weaver conduct independently of the councils Weavers serve.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_substance_sovereignty_declaration',
+    to: 'institution_design_justice_tribunal',
+    type: 'ESCALATES_TO',
+    description:
+      'Predatory addictive-by-design products are adjudicated in the Design Justice chamber.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'mechanism_corporate_harm_levy',
+    to: 'mechanism_gcf',
+    type: 'FUNDS',
+    description:
+      'The levy on addictive-product profits capitalizes recovery provision through the Global Commons Fund.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  }
 ];
