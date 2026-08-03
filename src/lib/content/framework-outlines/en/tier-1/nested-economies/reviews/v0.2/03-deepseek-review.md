@@ -83,4 +83,4 @@ This is a **high-quality, A-grade framework** with minor refinements needed in p
 - A (90-97): Outstanding, minor refinements.  
 - B+ (85-89): Strong, needs moderate improvements.  
 - C (70-84): Fair, significant revisions required.  
-- F (<70): Inadequate, foundational issues.
+- F (`<`70): Inadequate, foundational issues.
