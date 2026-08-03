@@ -1687,9 +1687,6 @@
                   {browser ? ($t('common.header.frameworkHubs') || 'Hubs') : 'Hubs'}
                 </a>
                 {/if}
-                <a href="{base}/frameworks/tools" class={isActive('/frameworks/tools') ? 'active' : ''} data-sveltekit-preload-data="tap" role="menuitem">
-                  {browser ? ($t('common.header.frameworkTools') || 'Tools') : 'Tools'}
-                </a>
                 {#if isDevMode}
                 <a href="{base}/frameworks/visuals" class={isActive('/frameworks/visuals') ? 'active' : ''} data-sveltekit-preload-data="tap" role="menuitem">
                   {browser ? ($t('common.header.frameworkVisuals') || 'Visuals') : 'Visuals'}

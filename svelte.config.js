@@ -147,9 +147,6 @@ const config = {
         '/frameworks/tools?lang=sv',
         '/frameworks/visuals?lang=en',
         '/frameworks/visuals?lang=sv',
-        // (Add sub-pages for each tool/visual category index)
-        '/frameworks/tools/aging-population-support-governance?lang=en',
-        '/frameworks/tools/aging-population-support-governance?lang=sv',
         // ... (etc. for all tool categories) ...
         '/frameworks/visuals/digital-commons?lang=en',
         '/frameworks/visuals/digital-commons?lang=sv',
