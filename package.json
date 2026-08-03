@@ -15,7 +15,7 @@
 		"outline:migrate": "tsx ./scripts/outline-migrate.js --migrate",
 		"prepare:content": "npm run generate:outline-history && npm run generate:indexes && npm run schema:check && npm run copy:onboarding",
 		"dev": "npm run prepare:content && vite dev",
-		"build": "npm run prepare:content && npm run prebuild && vite build",
+		"build": "npm run prepare:content && vite build",
 		"preview": "npm run prepare:content && vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && npm run prepare:content",
