@@ -313,10 +313,20 @@
 </article>
 
 <style>
+  /* Reset generic article/page-shell width rules before applying our own layout. */
+  .outline-page {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+  }
+
   .wrap {
+    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 1.25rem;
+    box-sizing: border-box;
   }
 
   /* ── Header ── */
@@ -623,7 +633,20 @@
 
   /* ── Responsive ── */
   @media (max-width: 900px) {
-    .layout { grid-template-columns: 1fr; gap: 1.5rem; }
+    /*
+     * The site shell may constrain ordinary article pages. Break this document
+     * out to the viewport on mobile, then restore deliberate inner gutters via
+     * .wrap. This keeps both the masthead and document body full-width.
+     */
+    .outline-page {
+      width: 100vw;
+      margin-inline: calc(50% - 50vw);
+    }
+    .wrap {
+      max-width: none;
+      padding-inline: 1rem;
+    }
+    .layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
     .toc {
       position: static;
       max-height: none;
