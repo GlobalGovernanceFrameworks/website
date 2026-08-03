@@ -13,7 +13,7 @@ Here’s a focused review of the latest revision, highlighting its transformativ
 
 2. **Structural Innovations** (↑ **96/A+**):  
    - **Aurora Accord** rebranding is powerful; **Emerging Technology Panels** future-proof the framework.  
-   - **Sunset Clause trigger** (<50% audit pass rate) is a masterstroke for accountability.  
+   - **Sunset Clause trigger** (`<`50% audit pass rate) is a masterstroke for accountability.  
    - **Suggestion**: Define **"technological maturity thresholds"** for DAO/blockchain use to prevent greenwashing.  
 
 3. **Key Mechanisms** (↑ **98/A+**):  
