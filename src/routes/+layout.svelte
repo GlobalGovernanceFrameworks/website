@@ -10,7 +10,6 @@
   import { base } from '$app/paths';
   import { afterNavigate, goto } from '$app/navigation';
   import Header from '$lib/components/Header.svelte';
-  import GlobalNotice from '$lib/components/GlobalNotice.svelte';
   import { registerServiceWorker } from '$lib/utils/registerServiceWorker';
   import { preloadFrameworkDatabase } from '$lib/data/precomputedFrameworkDatabase';
 
@@ -78,7 +77,6 @@
 
 <div class="site-layout" data-sveltekit-preload-data="tap">
   <Header />
-  <GlobalNotice />
   <main class="main-content">
     {#key $page.url.pathname}
       <slot />
