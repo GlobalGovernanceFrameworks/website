@@ -37,7 +37,7 @@ While you address equity, consider expanding:
 - **Farmworker justice** - labor conditions, wages, organizing rights
 - **Food apartheid** - addressing systemic barriers to healthy food access
 - **Community food sovereignty** - local control over food systems
-- **Gender equity in agriculture** - women own <20% of land globally but produce 70% of food
+- **Gender equity in agriculture** - women own `<`20% of land globally but produce 70% of food
 
 ### 2. **Enhance Regenerative Agriculture Specifics**
 Your regenerative focus is good but could be more detailed:
