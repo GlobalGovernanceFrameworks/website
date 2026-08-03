@@ -10,7 +10,7 @@
 
 **Major Enhancements:**
 - **Research Partnership Validation**: Partnerships with Cambridge, Harvard, Max Planck provide scientific credibility
-- **Emergency Assessment Protocol**: <30-day evaluations for urgent biotechnology cases shows responsiveness
+- **Emergency Assessment Protocol**: `<`30-day evaluations for urgent biotechnology cases shows responsiveness
 - **Public-Facing Sentience Database**: Quarterly updates ensure transparency and public engagement
 - **Sentience Research Funding Mandate**: 5% budget allocation demonstrates serious commitment
 
@@ -327,7 +327,7 @@ Outstanding work! Your final revision has achieved **A+ (96/100)** - a remarkabl
 
 **🔬 Scientific Sophistication**
 - Partnerships with Cambridge, Harvard, Max Planck provide research credibility
-- Emergency Assessment Protocol (<30 days) for biotechnology shows responsiveness
+- Emergency Assessment Protocol (`<`30 days) for biotechnology shows responsiveness
 - AI Welfare Auditors using vocalization analysis by 2027 is genuinely cutting-edge
 
 **🤝 Cultural Mastery**
