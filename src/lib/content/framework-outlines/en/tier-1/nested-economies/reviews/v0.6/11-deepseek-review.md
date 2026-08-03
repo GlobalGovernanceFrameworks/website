@@ -84,7 +84,7 @@ This is a **best-in-class framework**, ready for global rollout. The integrated 
 - **A (90-97)**: Outstanding, minimal refinements.  
 - **B (80-89)**: Strong, needs moderate revisions.  
 - **C (70-79)**: Partial alignment with goals.  
-- **F (<70)**: Unfit for purpose.  
+- **F (`<`70)**: Unfit for purpose.  
 
 **Call to Action**:  
 Pilot cities/stakeholders should adopt the **Seed Kit** immediately, leveraging the **Health Index Dashboard** for real-time tracking. Global advocates can use the **Comparative Table** to champion the framework’s distinctions.
