@@ -42,7 +42,7 @@ Your framework is **exceptionally comprehensive**, blending radical vision with 
 - **Grade**: **A- (91/100)**  
 - **Strengths**: BCT’s phased legitimacy pathway (*Global Coalition Strategy*) is pragmatic.  
 - **Improvements**:  
-  - Include **"Corporate Seats"** in BCT (with <10% voting power) to preempt backlash.  
+  - Include **"Corporate Seats"** in BCT (with `<`10% voting power) to preempt backlash.  
   - Add **"Sunset Clauses"** for experimental policies (e.g., *7th Generation Bonds* review by 2040).  
 
 #### **7. Crisis Preparedness**  
