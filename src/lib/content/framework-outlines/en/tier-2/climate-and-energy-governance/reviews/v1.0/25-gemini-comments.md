@@ -23,7 +23,7 @@ Claude correctly asks how to prove the RTZ's "superior resilience and prosperity
 * **The Answer in the GGF:** Success is measured by:
     1.  **The Love, Meaning, and Connection Index (LMCI):** The primary metric of societal well-being from the **`AUBI Framework`**, which tracks care, community health, and purpose.
     2.  **The Ecological Handprint:** A regenerative metric from the **`Gaian Trade Framework`** that measures positive contributions to ecosystems, going beyond simply reducing a "footprint".
-    3.  **Resilience KPIs:** Metrics from the **`GSCL Framework`**, such as crisis recovery time (target: <48 hours) and supply chain diversification (target: 50% reduction in single-source dependencies).
+    3.  **Resilience KPIs:** Metrics from the **`GSCL Framework`**, such as crisis recovery time (target: `<`48 hours) and supply chain diversification (target: 50% reduction in single-source dependencies).
 * **Recommendation:** These metrics should be tracked on the public-facing **`Public Trust Dashboard`** mentioned across the frameworks, providing transparent, real-world data on the superior performance of the RTZ model.
 
 #### **3. Technology Transfer and Intellectual Property**
