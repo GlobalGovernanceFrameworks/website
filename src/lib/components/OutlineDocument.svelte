@@ -314,9 +314,10 @@
 
 <style>
   /* Reset generic article/page-shell width rules before applying our own layout. */
-  .outline-page {
+  article.outline-page {
+    display: block;
     width: 100%;
-    max-width: none;
+    max-width: 100%;
     min-width: 0;
     margin: 0;
   }
@@ -324,8 +325,9 @@
   .wrap {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1.25rem;
+    min-width: 0;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
     box-sizing: border-box;
   }
 
@@ -442,11 +444,13 @@
   /* ── Layout ── */
   .layout {
     display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
     gap: 3rem;
     padding-top: 2.5rem;
     padding-bottom: 4rem;
     align-items: start;
+    width: 100%;
+    min-width: 0;
   }
 
   .toc {
@@ -567,9 +571,12 @@
     color: #4b5563;
   }
   .outline-body :global(table) {
+    display: block;
     width: 100%;
-    border-collapse: collapse;
+    max-width: 100%;
     margin: 1.5rem 0;
+    overflow-x: auto;
+    border-collapse: collapse;
     font-size: 0.9rem;
   }
   .outline-body :global(th),
@@ -584,6 +591,36 @@
     padding: 0.1rem 0.3rem;
     border-radius: 3px;
     font-size: 0.9em;
+  }
+
+  .body-column,
+  .outline-body {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .outline-body {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .outline-body :global(img),
+  .outline-body :global(svg),
+  .outline-body :global(video) {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .outline-body :global(pre) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre;
+  }
+
+  .version-rail {
+    max-width: 100%;
   }
 
   /* ── Section navigation ── */
@@ -633,26 +670,27 @@
 
   /* ── Responsive ── */
   @media (max-width: 900px) {
-    /*
-     * The site shell may constrain ordinary article pages. Break this document
-     * out to the viewport on mobile, then restore deliberate inner gutters via
-     * .wrap. This keeps both the masthead and document body full-width.
-     */
-    .outline-page {
-      width: 100vw;
-      margin-inline: calc(50% - 50vw);
-    }
     .wrap {
       max-width: none;
       padding-inline: 1rem;
     }
-    .layout { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+
+    .layout {
+      display: block;
+      width: 100%;
+      padding-top: 1.5rem;
+      padding-bottom: 3rem;
+    }
+
     .toc {
       position: static;
+      width: 100%;
       max-height: none;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      box-sizing: border-box;
       border: 1px solid #e5e7eb;
       border-radius: 0.5rem;
-      padding: 1rem;
       background: #fafafa;
     }
     .foot-grid { grid-template-columns: 1fr; gap: 2rem; }
