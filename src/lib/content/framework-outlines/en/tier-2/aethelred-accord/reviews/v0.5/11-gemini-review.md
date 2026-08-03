@@ -45,7 +45,7 @@ Even in a near-perfect framework, there are opportunities for slight clarificati
 #### **4. Implementation Pathways (Grade: 98/100)**
 * **Assessment:** The phased roadmap is clear, funded, and actionable. The inclusion of an **Opposition Scenario Matrix** shows advanced strategic thinking.
 * **Suggestion:**
-    > *Under the KPIs for the **Biotech Amnesty Period**, add a metric for **Recidivism Rate**—tracking how many entities who use the amnesty later violate the Accord. A low rate (<5%) would validate the program's success in fostering genuine compliance.*
+    > *Under the KPIs for the **Biotech Amnesty Period**, add a metric for **Recidivism Rate**—tracking how many entities who use the amnesty later violate the Accord. A low rate (`<`5%) would validate the program's success in fostering genuine compliance.*
 
 #### **5. Appendices (Grade: 99/100)**
 * **Assessment:** The appendices are now incredibly rich and provide the necessary operational depth. The **Truth & Reconciliation Commission** and **Opposition Scenario Matrix** are standout additions.
