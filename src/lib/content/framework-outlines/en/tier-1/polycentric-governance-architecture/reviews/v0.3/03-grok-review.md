@@ -36,7 +36,7 @@ Here are prioritized, actionable suggestions to elevate this to A+ territory. I'
 
 1. **Enhance Structural Robustness (Sections 2-3):**
    - **Refine Guardian Seats:** Add a conflict resolution sub-protocol for when Elders and Ecologists disagree (e.g., a hybrid vote: 60% consensus required, with escalation to sortition jury if tied). Tie this explicitly to Planetary Health's "Epistemic Justice" to blend TEK and science.
-   - **Wisdom Council Safeguards:** Specify "existential veto" triggers with examples (e.g., threshold: any policy risking >10% biodiversity loss per BHI metrics). Limit interventions to 2-3 per year to avoid overload, and require public justification via blockchain ledger (integrating Justice's transparency tools).
+   - **Wisdom Council Safeguards:** Specify "existential veto" triggers with examples (e.g., threshold: any policy risking `>`10% biodiversity loss per BHI metrics). Limit interventions to 2-3 per year to avoid overload, and require public justification via blockchain ledger (integrating Justice's transparency tools).
    - **Add a "Fifth Check" Layer:** Consider a rotating "Citizens' Oversight Assembly" (sortition-based, per Meta-Gov's democratic legitimacy) that audits all four layers annually for capture patterns. This adds redundancy without complexity.
 
 2. **Improve Conflict Resolution and Deadlocks (Section 7):**
@@ -47,7 +47,7 @@ Here are prioritized, actionable suggestions to elevate this to A+ territory. I'
 3. **Boost Scalability and Cultural Adaptation (Sections 4, 9, and Open Questions):**
    - **Tackle Q5 (Wisdom Council Composition):** Allow hybrid models—e.g., in non-Indigenous bioregions, include "Traditional Knowledge Proxies" (e.g., local elders from diaspora communities or allied ethicists), but require Indigenous-led certification. For multi-nation areas, use a "confederated council" with rotating chairs.
    - **Urban-Rural Balance:** Flesh out the Metabolic Federation diagram with quantifiable flows (e.g., "X Leaves per ton of food imported"). Link to Planetary Health's BHI for auditing metabolic health.
-   - **Scale Thresholds (Q7):** Define tiers—e.g., <500 people: informal consensus; 500-10k: light tri-cameral; >10k: full structure. Add success metrics: e.g., "90% disputes resolved within 90 days" or "capture events <1% annually."
+   - **Scale Thresholds (Q7):** Define tiers—e.g., `<`500 people: informal consensus; 500-10k: light tri-cameral; `>`10k: full structure. Add success metrics: e.g., "90% disputes resolved within 90 days" or "capture events `<`1% annually."
 
 4. **Strengthen Transition and Implementation (Sections 10-11):**
    - **Legal Templates:** Expand with ready-to-use docs (e.g., "Commons Trust Charter Template" with placeholders for local laws). Reference Justice's "Funding Allocation Example" for bootstrapping (e.g., 20% from Global Commons Fund for pilots).
@@ -56,7 +56,7 @@ Here are prioritized, actionable suggestions to elevate this to A+ territory. I'
 
 5. **General Polish and Accessibility:**
    - **Visual Aids:** Include 2-3 simple diagrams (e.g., a Venn diagram of overlapping jurisdictions; a flowchart for veto processes). This would make the outline more engaging.
-   - **Metrics and Evaluation:** Add a section like Planetary Health's "Evaluation Framework" with KPIs (e.g., "Power Distribution Index: No layer >30% decision dominance").
+   - **Metrics and Evaluation:** Add a section like Planetary Health's "Evaluation Framework" with KPIs (e.g., "Power Distribution Index: No layer `>`30% decision dominance").
    - **Resolve Open Questions Proactively:** Prioritize 2-3 (e.g., Q6 on legal basis) with proposed answers in v0.4, turning them into "Refined Protocols."
    - **Word Count and Tone:** Trim redundancies (e.g., repeated "coordination problem with no solution") for conciseness. Maintain the bold, analytical tone—it's motivating.
 
