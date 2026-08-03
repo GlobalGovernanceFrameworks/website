@@ -20,7 +20,7 @@ This revision (v6.3) represents framework design at the highest professional sta
 - The Moral Operating System integration ensures ethical consistency
 
 **4. Specific Success Targets (92/100)**
-- Quantified KPI targets (>60% engagement by year 2, <90 days adaptation velocity, >50% resource independence by year 3) provide concrete benchmarks
+- Quantified KPI targets (`>`60% engagement by year 2, `<`90 days adaptation velocity, `>`50% resource independence by year 3) provide concrete benchmarks
 - These targets transform abstract metrics into actionable goals
 - The timeline specificity enables realistic project planning
 
