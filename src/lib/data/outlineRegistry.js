@@ -12,6 +12,7 @@
 
 import { allEntities, allRelationships } from './schema/_index';
 import { MATURITY } from './schema/_types';
+import outlineHistory from './outlineHistory.generated.json';
 
 export { MATURITY };
 
@@ -19,8 +20,10 @@ export { MATURITY };
 /* Module maps                                                         */
 /* ------------------------------------------------------------------ */
 
-const versionModules = import.meta.glob('../content/framework-outlines/*/*/*/versions/*.md');
-const reviewModules = import.meta.glob('../content/framework-outlines/*/*/*/reviews/**/*.md');
+// Only canonical, published outline documents are compiled by mdsvex.
+// Historical versions and reviews are represented by a generated metadata
+// manifest below, so they never enter Vite's module graph.
+const outlineModules = import.meta.glob('../content/framework-outlines/*/*/*/current.md');
 
 // Prose is deliberately narrow. A broad glob over content/frameworks would
 // push every archived draft in the repo through mdsvex at build time.
@@ -112,25 +115,20 @@ function toEntry(entity) {
 /* Version and review discovery                                        */
 /* ------------------------------------------------------------------ */
 
-function versionPath(dir, version, lang = 'en') {
-  return `${OUTLINE_ROOT}/${lang}/${dir}/versions/${version}.md`;
+function outlinePath(dir, lang = 'en') {
+  return `${OUTLINE_ROOT}/${lang}/${dir}/current.md`;
+}
+
+function historyFor(dir, lang = 'en') {
+  return (
+    outlineHistory[`${lang}/${dir}`] ??
+    outlineHistory[`en/${dir}`] ??
+    { versions: [], lineage: { documentCount: 0, rounds: [], reviewers: [] } }
+  );
 }
 
 function prosePath(dir, section, lang = 'en') {
   return `${PROSE_ROOT}/${lang}/implementation/${dir}/${section}.md`;
-}
-
-function versionKey(v) {
-  return v.replace(/^v/, '').split('.').map((n) => parseInt(n, 10) || 0);
-}
-
-function compareVersions(a, b) {
-  const [x, y] = [versionKey(a), versionKey(b)];
-  for (let i = 0; i < Math.max(x.length, y.length); i++) {
-    const diff = (x[i] ?? 0) - (y[i] ?? 0);
-    if (diff !== 0) return diff;
-  }
-  return 0;
 }
 
 /* ------------------------------------------------------------------ */
@@ -153,40 +151,25 @@ export function listPublishedOutlines() {
 /** Every version filename on disk for this outline folder, oldest first. */
 export function listVersions(dir, lang = 'en') {
   if (!dir) return [];
-  const prefix = `${OUTLINE_ROOT}/${lang}/${dir}/versions/`;
-  return Object.keys(versionModules)
-    .filter((p) => p.startsWith(prefix))
-    .map((p) => p.slice(prefix.length).replace(/\.md$/, ''))
-    .sort(compareVersions);
+  return [...historyFor(dir, lang).versions];
 }
 
 /** How many review documents sit behind this outline, and from whom. */
 export function getReviewLineage(dir, lang = 'en') {
-  const empty = { documentCount: 0, rounds: [], reviewers: [] };
-  if (!dir) return empty;
+  if (!dir) return { documentCount: 0, rounds: [], reviewers: [] };
 
-  const prefix = `${OUTLINE_ROOT}/${lang}/${dir}/reviews/`;
-  const paths = Object.keys(reviewModules).filter((p) => p.startsWith(prefix));
-
-  const rounds = new Set();
-  const reviewers = new Set();
-
-  for (const p of paths) {
-    const [round, file = ''] = p.slice(prefix.length).split('/');
-    if (round) rounds.add(round);
-    const name = file.toLowerCase();
-    for (const r of ['claude', 'gemini', 'grok', 'deepseek', 'chatgpt']) {
-      if (name.includes(r)) reviewers.add(r);
-    }
-  }
-
-  return { documentCount: paths.length, rounds: [...rounds].sort(compareVersions), reviewers: [...reviewers] };
+  const lineage = historyFor(dir, lang).lineage;
+  return {
+    documentCount: lineage.documentCount,
+    rounds: [...lineage.rounds],
+    reviewers: [...lineage.reviewers]
+  };
 }
 
 /** Diagnostic: which version modules Vite resolved for this folder. */
 export function listAvailableOutlinePaths(dir, lang = 'en') {
-  const prefix = `${OUTLINE_ROOT}/${lang}/${dir}/versions/`;
-  return Object.keys(versionModules)
+  const prefix = `${OUTLINE_ROOT}/${lang}/${dir}/`;
+  return Object.keys(outlineModules)
     .filter((p) => p.startsWith(prefix))
     .map((p) => p.slice(prefix.length));
 }
@@ -194,16 +177,21 @@ export function listAvailableOutlinePaths(dir, lang = 'en') {
 /* ---- loading ---- */
 
 export async function loadOutline(dir, version, lang = 'en') {
-  const path = versionPath(dir, version, lang);
-  const loader = versionModules[path] ?? versionModules[versionPath(dir, version, 'en')];
+  const path = outlinePath(dir, lang);
+  const fallbackPath = outlinePath(dir, 'en');
+  const loader = outlineModules[path] ?? outlineModules[fallbackPath];
 
-  if (!loader) throw new Error(`Outline not found on disk: ${path}`);
+  if (!loader) {
+    throw new Error(
+      `Outline not found on disk: ${path} (schema version: ${version})`
+    );
+  }
 
   const mod = await loader();
   return {
     component: mod.default,
     metadata: mod.metadata ?? {},
-    usedEnglishFallback: lang !== 'en' && !versionModules[path]
+    usedEnglishFallback: lang !== 'en' && !outlineModules[path]
   };
 }
 

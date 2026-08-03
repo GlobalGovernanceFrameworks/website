@@ -1,0 +1,2938 @@
+{
+  "en/tier-0/genesis-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9"
+    ],
+    "lineage": {
+      "documentCount": 19,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.5",
+        "v0.6",
+        "v0.8"
+      ],
+      "reviewers": [
+        "grok",
+        "gemini",
+        "deepseek",
+        "chatgpt",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-0/treaty-for-our-only-home": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v0.11",
+      "v0.12",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3"
+    ],
+    "lineage": {
+      "documentCount": 20,
+      "rounds": [
+        "v0.0",
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v0.11",
+        "v0.12",
+        "v1.1",
+        "v1.2"
+      ],
+      "reviewers": [
+        "gemini",
+        "deepseek",
+        "chatgpt",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-1/adaptive-universal-basic-income": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v1.6",
+      "v1.7",
+      "v1.8",
+      "v1.9",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.3",
+      "v2.4",
+      "v2.5"
+    ],
+    "lineage": {
+      "documentCount": 20,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.6",
+        "v2.2",
+        "v2.3",
+        "v2.4"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "gemini",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-1/aegis-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.3.1",
+      "v1.3.2",
+      "v1.3.3",
+      "v1.3.4"
+    ],
+    "lineage": {
+      "documentCount": 22,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-1/aurora-accord": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3"
+    ],
+    "lineage": {
+      "documentCount": 12,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.2"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "gemini",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-1/financial-systems": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v3.0",
+      "v3.1",
+      "v3.2",
+      "v3.3",
+      "v3.4"
+    ],
+    "lineage": {
+      "documentCount": 16,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v2.1",
+        "v2.2",
+        "v3.3"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-1/gaian-trade": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9"
+    ],
+    "lineage": {
+      "documentCount": 16,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-1/global-supply-chains-and-logistics": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4"
+    ],
+    "lineage": {
+      "documentCount": 16,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "gemini",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-1/immanent-trust-protocol": {
+    "versions": [
+      "v1.0",
+      "v1.1"
+    ],
+    "lineage": {
+      "documentCount": 6,
+      "rounds": [
+        "v0.0",
+        "v1.0"
+      ],
+      "reviewers": [
+        "claude",
+        "deepseek"
+      ]
+    }
+  },
+  "en/tier-1/implementation-and-adaptation": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.1.1"
+    ],
+    "lineage": {
+      "documentCount": 19,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "chatgpt",
+        "grok",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-1/indigenous-sovereignty-pathways": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v0.11",
+      "v0.12",
+      "v1.0",
+      "v1.1"
+    ],
+    "lineage": {
+      "documentCount": 11,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v0.11",
+        "v1.0"
+      ],
+      "reviewers": [
+        "gemini",
+        "claude",
+        "chatgpt",
+        "deepseek"
+      ]
+    }
+  },
+  "en/tier-1/institutional-regeneration": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.9.1"
+    ],
+    "lineage": {
+      "documentCount": 12,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-1/justice-systems": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4"
+    ],
+    "lineage": {
+      "documentCount": 14,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.3"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-1/meta-governance": {
+    "versions": [
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5"
+    ],
+    "lineage": {
+      "documentCount": 10,
+      "rounds": [
+        "lite-guide-by-ChatGPT.md",
+        "lite-guide-by-DeepSeek.md",
+        "lite-guide-by-Grok-enhanced-by-Claude.md",
+        "lite-guide-by-Grok.md",
+        "review-2-by-ChatGPT.md",
+        "review-2-by-Grok.md",
+        "review-by-ChatGPT.md",
+        "review-by-DeepSeek.md",
+        "review-by-Gemini.md",
+        "review-by-Grok.md"
+      ],
+      "reviewers": []
+    }
+  },
+  "en/tier-1/moral-operating-system": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.3",
+      "v2.4",
+      "v2.4.1",
+      "v2.5",
+      "v2.6",
+      "v2.7",
+      "v2.8",
+      "v2.8.1",
+      "v2.8.2"
+    ],
+    "lineage": {
+      "documentCount": 20,
+      "rounds": [
+        "v0.4",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.4",
+        "v1.5",
+        "v2.0",
+        "v2.1",
+        "v2.2",
+        "v2.3",
+        "v2.4",
+        "v2.5",
+        "v2.7"
+      ],
+      "reviewers": [
+        "deepseek",
+        "grok",
+        "gemini",
+        "claude",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-1/more-than-human-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7"
+    ],
+    "lineage": {
+      "documentCount": 11,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-1/nested-economies": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v3.0",
+      "v3.1",
+      "v3.1b",
+      "v3.2"
+    ],
+    "lineage": {
+      "documentCount": 13,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v2.0",
+        "v3.0",
+        "v3.1b"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-1/peace-and-conflict-resolution": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v1.6",
+      "v1.7",
+      "v1.8",
+      "v1.8.1"
+    ],
+    "lineage": {
+      "documentCount": 20,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.4",
+        "v1.5",
+        "v1.6",
+        "v1.7"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "gemini",
+        "claude",
+        "deepseek"
+      ]
+    }
+  },
+  "en/tier-1/planetary-health-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.9.1"
+    ],
+    "lineage": {
+      "documentCount": 11,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7"
+      ],
+      "reviewers": [
+        "claude",
+        "chatgpt",
+        "gemini",
+        "deepseek"
+      ]
+    }
+  },
+  "en/tier-1/polycentric-governance-architecture": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6"
+    ],
+    "lineage": {
+      "documentCount": 5,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4"
+      ],
+      "reviewers": [
+        "gemini",
+        "deepseek",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-1/shield-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v2.0",
+      "v2.0.1"
+    ],
+    "lineage": {
+      "documentCount": 16,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.4",
+        "v1.5"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-1/technology-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v0.11",
+      "v0.12",
+      "v0.13",
+      "v1.0",
+      "v2.0",
+      "v3.0",
+      "v3.1",
+      "v3.2",
+      "v3.3",
+      "v3.4",
+      "v3.5",
+      "v3.6"
+    ],
+    "lineage": {
+      "documentCount": 25,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v0.11",
+        "v0.12",
+        "v0.13",
+        "v1.0",
+        "v2.0",
+        "v3.0",
+        "v3.1",
+        "v3.2",
+        "v3.5"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "chatgpt",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-1/work-in-liberation": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v1.6",
+      "v1.7",
+      "v1.8",
+      "v1.9",
+      "v2.0"
+    ],
+    "lineage": {
+      "documentCount": 21,
+      "rounds": [
+        "v0.0",
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.4",
+        "v1.5",
+        "v1.7",
+        "v1.9"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-2/aethelred-accord": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.2.1",
+      "v1.2.2"
+    ],
+    "lineage": {
+      "documentCount": 12,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9"
+      ],
+      "reviewers": [
+        "gemini",
+        "claude",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-2/animal-welfare-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v0.11",
+      "v1.0",
+      "v2.0",
+      "v3.0",
+      "v4.0",
+      "v5.0",
+      "v6.0",
+      "v7.0",
+      "v7.1"
+    ],
+    "lineage": {
+      "documentCount": 20,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v0.11",
+        "v1.0",
+        "v2.0",
+        "v3.0",
+        "v4.0",
+        "v5.0",
+        "v6.0"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-2/biodiversity-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v0.11",
+      "v1.0",
+      "v1.1",
+      "v1.1.1"
+    ],
+    "lineage": {
+      "documentCount": 13,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10"
+      ],
+      "reviewers": [
+        "deepseek",
+        "claude",
+        "gemini",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-2/cairn-protocol": {
+    "versions": [
+      "v1.0",
+      "v1.5",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.3",
+      "v2.4",
+      "v2.5",
+      "v2.6"
+    ],
+    "lineage": {
+      "documentCount": 14,
+      "rounds": [
+        "v1.0",
+        "v1.5",
+        "v2.0",
+        "v2.1",
+        "v2.2",
+        "v2.3",
+        "v2.4"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "chatgpt",
+        "claude",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/capacity-engine": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v0.11",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.3",
+      "v2.4",
+      "v2.5",
+      "v3.0",
+      "v3.1"
+    ],
+    "lineage": {
+      "documentCount": 19,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v0.11",
+        "v1.0",
+        "v2.0",
+        "v2.1",
+        "v2.2",
+        "v2.3",
+        "v2.5"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "grok",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-2/climate-and-energy-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v2.0",
+      "v2.1"
+    ],
+    "lineage": {
+      "documentCount": 23,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.4",
+        "v2.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/cognitive-sovereignty-accord": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v1.0",
+      "v2.0",
+      "v2.1"
+    ],
+    "lineage": {
+      "documentCount": 17,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v1.0"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/conduit-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v0.11",
+      "v1.0"
+    ],
+    "lineage": {
+      "documentCount": 19,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v0.11"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/disaster-risk-reduction": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v1.0",
+      "v2.0",
+      "v3.0",
+      "v4.0",
+      "v4.1",
+      "v4.2",
+      "v4.3",
+      "v4.4",
+      "v4.4.1",
+      "v4.4.2"
+    ],
+    "lineage": {
+      "documentCount": 17,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v1.0",
+        "v2.0",
+        "v3.0",
+        "v4.0",
+        "v4.1"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/discovery-commons": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1"
+    ],
+    "lineage": {
+      "documentCount": 19,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/environmental-stewardship": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.3",
+      "v2.4",
+      "v2.5",
+      "v2.6",
+      "v2.7",
+      "v2.7.1"
+    ],
+    "lineage": {
+      "documentCount": 21,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v1.0",
+        "v2.0",
+        "v2.1",
+        "v2.2",
+        "v2.3",
+        "v2.4",
+        "v2.5"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-2/fractal-intelligence-accord": {
+    "versions": [
+      "charter-v1.0",
+      "transition-protocol-v1.0",
+      "v1.0",
+      "v2.0",
+      "v3.0",
+      "v4.0",
+      "v5.0",
+      "v6.0"
+    ],
+    "lineage": {
+      "documentCount": 15,
+      "rounds": [
+        "naming",
+        "old",
+        "v1.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-2/global-health-and-pandemic-security": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.2.1",
+      "v2.2.2"
+    ],
+    "lineage": {
+      "documentCount": 11,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0"
+      ],
+      "reviewers": [
+        "gemini",
+        "claude",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-2/hearthlight-protocol": {
+    "versions": [
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v1.6",
+      "v1.7",
+      "v2.0",
+      "v2.1"
+    ],
+    "lineage": {
+      "documentCount": 15,
+      "rounds": [
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.4",
+        "v1.5",
+        "v1.6",
+        "v1.7"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "grok",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-2/hearthstone-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v2.0",
+      "v2.0.1"
+    ],
+    "lineage": {
+      "documentCount": 16,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.4"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-2/kinship-garden": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v1.0",
+      "v2.0",
+      "v3.0",
+      "v4.0"
+    ],
+    "lineage": {
+      "documentCount": 13,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v1.0",
+        "v2.0",
+        "v3.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-2/kintsugi-protocol": {
+    "versions": [
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v1.6",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.2.1"
+    ],
+    "lineage": {
+      "documentCount": 15,
+      "rounds": [
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.4",
+        "v1.5",
+        "v1.6",
+        "v2.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "chatgpt",
+        "claude",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/mental-health-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v2.0",
+      "v2.1",
+      "v2.2"
+    ],
+    "lineage": {
+      "documentCount": 15,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.4",
+        "v2.0"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-2/mobility-commons": {
+    "versions": [
+      "v1.0",
+      "v2.0",
+      "v3.0",
+      "v4.0",
+      "v5.0",
+      "v6.0",
+      "v7.0",
+      "v8.0",
+      "v8.1"
+    ],
+    "lineage": {
+      "documentCount": 14,
+      "rounds": [
+        "v1.0",
+        "v2.0",
+        "v3.0",
+        "v4.0",
+        "v5.0",
+        "v6.0",
+        "v7.0",
+        "v8.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "chatgpt",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-2/oceans-and-marine-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.3",
+      "v2.3.1"
+    ],
+    "lineage": {
+      "documentCount": 22,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.5",
+        "v2.0",
+        "v2.1"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "gemini",
+        "deepseek",
+        "claude",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/pathfinder-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9"
+    ],
+    "lineage": {
+      "documentCount": 24,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-2/phoenix-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v2.0",
+      "v3.0",
+      "v3.1"
+    ],
+    "lineage": {
+      "documentCount": 12,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v2.0"
+      ],
+      "reviewers": [
+        "claude",
+        "deepseek",
+        "chatgpt",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-2/prometheus-protocol": {
+    "versions": [
+      "v1.0",
+      "v2.0",
+      "v3.0",
+      "v4.0",
+      "v5.0",
+      "v6.0",
+      "v7.0",
+      "v7.1",
+      "v8.0",
+      "v8.1"
+    ],
+    "lineage": {
+      "documentCount": 17,
+      "rounds": [
+        "v1.0",
+        "v2.0",
+        "v3.0",
+        "v4.0",
+        "v5.0",
+        "v6.0",
+        "v7.0",
+        "v7.1",
+        "v8.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "claude",
+        "chatgpt",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/sanctuary-accord": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6"
+    ],
+    "lineage": {
+      "documentCount": 7,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5"
+      ],
+      "reviewers": [
+        "claude",
+        "deepseek",
+        "gemini",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/social-fabric-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0"
+    ],
+    "lineage": {
+      "documentCount": 17,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "chatgpt",
+        "grok",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-2/soil-health-and-land-use-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v1.0",
+      "v2.0",
+      "v3.0",
+      "v3.1",
+      "v3.2",
+      "v3.2.1",
+      "v3.2.2"
+    ],
+    "lineage": {
+      "documentCount": 11,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v1.0",
+        "v2.0",
+        "v3.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "gemini",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-2/sundown-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v1.0",
+      "v2.0",
+      "v2.1"
+    ],
+    "lineage": {
+      "documentCount": 18,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v1.0",
+        "v2.0"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-2/synoptic-protocol": {
+    "versions": [
+      "v0.1",
+      "v2.1",
+      "v2.2",
+      "v2.3",
+      "v3.0",
+      "v3.1",
+      "v3.2",
+      "v3.3",
+      "v4.0",
+      "v4.1",
+      "v4.2"
+    ],
+    "lineage": {
+      "documentCount": 16,
+      "rounds": [
+        "v0.1",
+        "v2.1",
+        "v2.2",
+        "v2.3",
+        "v3.0",
+        "v3.1",
+        "v3.2",
+        "v3.3",
+        "v4.0",
+        "v4.1"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-2/water-and-sanitation-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v2.0",
+      "v3.0",
+      "v4.0",
+      "v5.0",
+      "v5.1",
+      "v5.2",
+      "v5.2.1",
+      "v5.2.2"
+    ],
+    "lineage": {
+      "documentCount": 19,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v2.0",
+        "v3.0",
+        "v4.0"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-3/abundance-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8"
+    ],
+    "lineage": {
+      "documentCount": 13,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "gemini",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-3/arts-flourishing": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7"
+    ],
+    "lineage": {
+      "documentCount": 12,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-3/bioregional-polis": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v2.0",
+      "v3.0"
+    ],
+    "lineage": {
+      "documentCount": 14,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v2.0"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "claude",
+        "deepseek",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-3/cultural-heritage-preservation": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v.2.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v3.0"
+    ],
+    "lineage": {
+      "documentCount": 17,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v2.0",
+        "v2.1",
+        "v2.2"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-3/digital-commons": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v3.0"
+    ],
+    "lineage": {
+      "documentCount": 15,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v2.0",
+        "v2.1"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-3/foundation-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v0.11",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.3",
+      "v3.0"
+    ],
+    "lineage": {
+      "documentCount": 16,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v0.11",
+        "v1.0",
+        "v2.0",
+        "v2.1",
+        "v2.3"
+      ],
+      "reviewers": [
+        "gemini",
+        "claude",
+        "chatgpt",
+        "deepseek"
+      ]
+    }
+  },
+  "en/tier-3/horizon-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v3.0"
+    ],
+    "lineage": {
+      "documentCount": 14,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v2.0",
+        "v2.1"
+      ],
+      "reviewers": [
+        "claude",
+        "chatgpt",
+        "deepseek",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-3/kinship-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.3"
+    ],
+    "lineage": {
+      "documentCount": 14,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v2.0",
+        "v2.1",
+        "v2.2"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-3/legacy-protocol": {
+    "versions": [
+      "v0.0-initial-convresations",
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v1.0",
+      "v2.0",
+      "v2.1"
+    ],
+    "lineage": {
+      "documentCount": 7,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v1.0",
+        "v2.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "claude",
+        "chatgpt",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-3/living-land-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v1.6"
+    ],
+    "lineage": {
+      "documentCount": 20,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3",
+        "v1.4",
+        "v1.5"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "claude",
+        "deepseek",
+        "gemini",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-3/memorial-commons": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8"
+    ],
+    "lineage": {
+      "documentCount": 12,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.5",
+        "v0.6"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-3/migration-and-human-mobility": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v1.0",
+      "v1.1",
+      "v1.1.1"
+    ],
+    "lineage": {
+      "documentCount": 10,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-3/regenerative-journeys": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1"
+    ],
+    "lineage": {
+      "documentCount": 17,
+      "rounds": [
+        "v0.1",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0"
+      ],
+      "reviewers": [
+        "claude",
+        "chatgpt",
+        "gemini",
+        "deepseek",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-3/religious-and-spiritual-dialogue-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v1.6",
+      "v1.7",
+      "v1.8"
+    ],
+    "lineage": {
+      "documentCount": 21,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.3",
+        "v1.4",
+        "v1.5",
+        "v1.6"
+      ],
+      "reviewers": [
+        "deepseek",
+        "chatgpt",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-3/resonance-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8"
+    ],
+    "lineage": {
+      "documentCount": 15,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.8"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "chatgpt",
+        "claude",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-4/consciousness-and-inner-development": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.3",
+      "v2.4",
+      "v2.5"
+    ],
+    "lineage": {
+      "documentCount": 14,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v2.0",
+        "v2.1",
+        "v2.4"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "claude",
+        "deepseek",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-4/deep-time-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6"
+    ],
+    "lineage": {
+      "documentCount": 8,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-4/frontier-governance": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4"
+    ],
+    "lineage": {
+      "documentCount": 15,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3"
+      ],
+      "reviewers": [
+        "chatgpt",
+        "deepseek",
+        "claude",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-4/implementation-methods-tools": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.8.1"
+    ],
+    "lineage": {
+      "documentCount": 13,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "grok",
+        "deepseek",
+        "chatgpt"
+      ]
+    }
+  },
+  "en/tier-4/millennium-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0"
+    ],
+    "lineage": {
+      "documentCount": 10,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8"
+      ],
+      "reviewers": [
+        "claude",
+        "deepseek",
+        "chatgpt",
+        "gemini"
+      ]
+    }
+  },
+  "en/tier-4/oracle-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v1.0",
+      "v1.1"
+    ],
+    "lineage": {
+      "documentCount": 17,
+      "rounds": [
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v1.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "chatgpt",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-4/planetary-immune-system": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9",
+      "v0.10",
+      "v1.0",
+      "v2.0",
+      "v2.1",
+      "v2.2",
+      "v2.2.1",
+      "v2.2.2"
+    ],
+    "lineage": {
+      "documentCount": 15,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8",
+        "v0.9",
+        "v0.10",
+        "v1.0",
+        "v2.0"
+      ],
+      "reviewers": [
+        "deepseek",
+        "claude",
+        "chatgpt",
+        "gemini",
+        "grok"
+      ]
+    }
+  },
+  "en/tier-4/weaver-protocol": {
+    "versions": [
+      "v0.1",
+      "v0.2",
+      "v0.3",
+      "v0.4",
+      "v0.5",
+      "v0.6",
+      "v0.7",
+      "v0.8",
+      "v0.9"
+    ],
+    "lineage": {
+      "documentCount": 16,
+      "rounds": [
+        "v0.1",
+        "v0.2",
+        "v0.3",
+        "v0.4",
+        "v0.5",
+        "v0.6",
+        "v0.7",
+        "v0.8"
+      ],
+      "reviewers": [
+        "deepseek",
+        "gemini",
+        "grok",
+        "chatgpt",
+        "claude"
+      ]
+    }
+  },
+  "en/tier-4/wise-decision-making-protocol": {
+    "versions": [
+      "v0.9",
+      "v1.0",
+      "v1.1",
+      "v1.2",
+      "v1.3",
+      "v1.4",
+      "v1.5",
+      "v1.6",
+      "v1.6.1"
+    ],
+    "lineage": {
+      "documentCount": 9,
+      "rounds": [
+        "v0.9",
+        "v1.0",
+        "v1.1",
+        "v1.2",
+        "v1.3"
+      ],
+      "reviewers": [
+        "claude",
+        "gemini",
+        "deepseek"
+      ]
+    }
+  }
+}

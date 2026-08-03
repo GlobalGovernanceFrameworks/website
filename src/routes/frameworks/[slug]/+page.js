@@ -93,20 +93,20 @@ export async function load({ params, url, depends }) {
 
     if (isMissing) {
       const available = listAvailableOutlinePaths(entry.outlineDir);
-      console.error(`[outline] No module for ${entry.outlineDir}/versions/${entry.version}.md`);
+      console.error(`[outline] No module for ${entry.outlineDir}/current.md`);
       console.error('[outline] Vite can see:', available);
 
       throw error(500, {
         message:
-          `Schema names ${entry.version} for ${slug}, but Vite has no module at ` +
-          `${entry.outlineDir}/versions/${entry.version}.md. ` +
+          `Schema publishes ${entry.version} for ${slug}, but Vite has no canonical module at ` +
+          `${entry.outlineDir}/current.md. ` +
           (available.length
             ? `It can see: ${available.join(', ')}.`
-            : `It sees nothing in that folder — check the dir path.`)
+            : `It sees nothing in that folder — check the dir path or current.md symlink.`)
       });
     }
 
-    console.error(`[outline] ${entry.outlineDir}/versions/${entry.version}.md failed to compile:`);
+    console.error(`[outline] ${entry.outlineDir}/current.md (${entry.version}) failed to compile:`);
     console.error(e);
 
     throw error(500, {
