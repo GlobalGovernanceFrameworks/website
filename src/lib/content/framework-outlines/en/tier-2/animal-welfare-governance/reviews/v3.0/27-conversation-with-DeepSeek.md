@@ -35,7 +35,7 @@ DeepSeek:
 #### **4. Implementation Approaches**  
 - **Current:** Factory farming phase-out by 2030, but no explicit slaughter ban.  
 - **Suggestion:**  
-  > *Add **"Post-2030 Slaughter Sunset Clause"**: Ban all non-subsistence slaughter by 2040, contingent on cultured meat affordability (<$5/kg).*  
+  > *Add **"Post-2030 Slaughter Sunset Clause"**: Ban all non-subsistence slaughter by 2040, contingent on cultured meat affordability (`<`$5/kg).*  
 
 #### **5. Emerging Tech & AI**  
 - **Current:** Silent on AI-animal hybrids (e.g., robotic pollinators).  
