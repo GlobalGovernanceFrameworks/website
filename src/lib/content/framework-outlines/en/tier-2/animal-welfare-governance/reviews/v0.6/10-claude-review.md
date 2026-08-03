@@ -10,7 +10,7 @@
 
 **Major Improvements:**
 - **Scientific Advisory Panel**: Excellent addition for incorporating emerging sentience research
-- **Emerging Sentience Protocol**: Quantifiable thresholds (neural density >10^6 neurons/cm³) provide clear criteria
+- **Emerging Sentience Protocol**: Quantifiable thresholds (neural density `>`10^6 neurons/cm³) provide clear criteria
 - **Wild Tech Clause**: Future-proofing for AI-bio hybrids shows sophisticated anticipation
 - **Rapid-Response Science Task Force**: 48-hour response time demonstrates urgency
 
@@ -25,7 +25,7 @@
 
 **Suggestions:**
 - Partner with neuroscience institutions to validate sentience thresholds
-- Add "Emergency Assessment Protocol" for cases requiring <30-day decisions
+- Add "Emergency Assessment Protocol" for cases requiring `<`30-day decisions
 - Include "Sentience Research Funding Mandate" (e.g., 5% of GAWA budget for research)
 
 ### 2. Policy Framework & Implementation (A- | 92/100)
