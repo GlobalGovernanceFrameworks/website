@@ -171,6 +171,29 @@
   },
   {
     "meta": {
+      "title": "Framework Pages Now Show the Latest Living Outlines",
+      "description": "The website now presents each framework through its latest outline, with faster builds, clearer navigation, and improved mobile layouts",
+      "date": "2026-08-03",
+      "author": "Björn K. Holmström",
+      "category": "update",
+      "tags": [
+        "frameworks",
+        "website",
+        "performance",
+        "open-source",
+        "design"
+      ],
+      "hashtags": [
+        "GlobalGovernance",
+        "OpenSource",
+        "WebDevelopment"
+      ]
+    },
+    "slug": "framework-pages-showing-latest-living-outlines",
+    "lang": "en"
+  },
+  {
+    "meta": {
       "title": "From Primacy to Partnership: Evolving Our Approach to Global Reform",
       "description": "Building a better world requires constant self-reflection. We revised a core proposal in our 'Treaty for Our Only Home' to ensure it truly serves justice and equity. Here's why and how.",
       "author": "Global Governance Frameworks",
@@ -672,6 +695,29 @@
   },
   {
     "meta": {
+      "title": "各フレームワークページで最新版アウトラインを公開",
+      "description": "最新版アウトラインへの移行により、ビルドの高速化、ナビゲーションの整理、モバイル表示の改善を実現",
+      "date": "2026-08-03",
+      "author": "Björn K. Holmström",
+      "category": "update",
+      "tags": [
+        "フレームワーク",
+        "ウェブサイト",
+        "パフォーマンス",
+        "オープンソース",
+        "デザイン"
+      ],
+      "hashtags": [
+        "GlobalGovernance",
+        "OpenSource",
+        "WebDevelopment"
+      ]
+    },
+    "slug": "framework-pages-showing-latest-living-outlines",
+    "lang": "ja"
+  },
+  {
+    "meta": {
       "title": "リアリティ・レント",
       "description": "7つのAIモデルを衝突させ、仕事の未来を解き明かす",
       "date": "2026-02-18",
@@ -831,6 +877,29 @@
       "readTime": 10
     },
     "slug": "breaking-the-debt-trap",
+    "lang": "sv"
+  },
+  {
+    "meta": {
+      "title": "Ramverkssidorna visar nu de senaste levande dispositionerna",
+      "description": "Webbplatsen presenterar nu varje ramverk genom dess senaste disposition, med snabbare byggen, tydligare navigering och bättre mobillayout",
+      "date": "2026-08-03",
+      "author": "Björn K. Holmström",
+      "category": "update",
+      "tags": [
+        "ramverk",
+        "webbplats",
+        "prestanda",
+        "open-source",
+        "design"
+      ],
+      "hashtags": [
+        "GlobalStyrning",
+        "OpenSource",
+        "Webbutveckling"
+      ]
+    },
+    "slug": "framework-pages-showing-latest-living-outlines",
     "lang": "sv"
   },
   {
