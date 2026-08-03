@@ -28,7 +28,7 @@ This iteration represents a **near-perfect synthesis** of visionary governance, 
 
 ### **2. Suggested Refinements**  
 #### **A. Framework**  
-1. **Plastic Pollution**: Add **microplastic thresholds** (e.g., <0.1 particles/L by 2035) to metrics.  
+1. **Plastic Pollution**: Add **microplastic thresholds** (e.g., `<`0.1 particles/L by 2035) to metrics.  
 2. **AI Energy**: Include **supply chain audits** for rare minerals used in AI hardware.  
 3. **Labor Unions**: Specify **gender parity** in retraining programs (e.g., 50% women in green jobs).  
 
