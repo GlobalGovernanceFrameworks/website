@@ -3,9 +3,28 @@
 import type { GgfEntity, GgfRelationship } from './_types';
 
 /**
- * TIER 3-4: CULTURAL & KNOWLEDGE COMMONS CLUSTER
- * The "soul" of the GGF - systems for preserving heritage, fostering dialogue, 
- * sharing knowledge, and cultivating wisdom needed to govern effectively
+ * TIER 3–4: CULTURAL & KNOWLEDGE FRAMEWORKS
+ *
+ * Where the ecosystem handles meaning rather than material: heritage, knowledge
+ * commons, spiritual dialogue, the arts, and the two inner-development
+ * frameworks. Aurora governs data; Digital Commons governs knowledge — the
+ * social processes by which data becomes meaning and meaning becomes
+ * inheritance. That boundary is v3.0's organizing idea.
+ *
+ * Conventions: see cluster.implementation-os.ts.
+ *
+ * VERSION MISMATCH — framework_cultural_heritage. The document at
+ * `versions/v3.0.md` is Project Tapestry **v2.2**, dated 2025-08-27, and says
+ * in its own conclusion that "Version 3.0 of this framework will be developed
+ * following the evaluation and integration of lessons learned from the initial
+ * BAZ micro-pilots." The schema is publishing a version that has not been
+ * written. `updated` is set to the document's real date so the staleness is
+ * visible; either the file should be renamed to v2.2.md and the schema pointed
+ * at it, or v3.0 needs writing.
+ *
+ * TWO TYPE ERRORS FIXED. `primaryDomain: 'Culture'` on the Resonance Protocol
+ * and `type: 'REQUIRES'` on the WDIP→Synoptic edge were both outside their
+ * unions and invisible to `tsx`.
  */
 
 export const culturalKnowledgeEntities: GgfEntity[] = [
@@ -15,9 +34,10 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Cultural Heritage Preservation Framework (Project Tapestry)',
     shortName: 'Cultural Heritage',
-    description: 'Framework for preserving and protecting cultural heritage globally',
+    description:
+      'A cultural memory operating system: language revitalization, traditional practice, and community sovereignty over what is preserved and what is allowed to rest. Embeds heritage work in the Treaty, AUBI, Work in Liberation and Meta-Governance rather than treating it as a museum function.',
     tier: 3,
-    status: 'Ready',
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
@@ -30,9 +50,11 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       slug: 'cultural-heritage-preservation',
       outline: {
         version: 'v3.0',
-        updated: '2026-08-03',
+        // the file's own revision date — see the VERSION MISMATCH note above
+        updated: '2025-08-27',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Cultural memory treated as infrastructure rather than heritage tourism: who decides what is recorded, who holds the recording, and who may say no. Project Tapestry pays cultural stewardship work through the Hearts economy on the argument that a language dies when nobody can afford to keep speaking it professionally. The published document is the v2.2 draft; v3.0 is waiting on lessons from the first BAZ micro-pilots.'
       }
     }
   },
@@ -41,7 +63,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Digital Commons Framework',
     shortName: 'Digital Commons',
-    description: 'Knowledge commons preservation and democratic access to information, with specific protocols and decentralized infrastructure for protecting Traditional Ecological Knowledge (TEK) under the principles of Indigenous data sovereignty.',
+    description:
+      'Governs the shared knowledge infrastructure of the ecosystem: the protocols and practices through which communities create, curate, contest, preserve, retire and transmit knowledge. Where Aurora governs data as a category, this governs knowledge — including knowledge versioning, epistemic governance, and governed forgetting.',
     tier: 3,
     status: 'Review',
     primaryDomain: 'Technology',
@@ -56,32 +79,34 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       slug: 'digital-commons',
       outline: {
         version: 'v3.0',
-        updated: '2026-08-03',
+        updated: '2026-04-04',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'The distinction this framework is built on: data is a category with rights attached, knowledge is what a community does with it. Version 3.0 gave away most of its old territory — mesh networks, cybersecurity hardening, AI strategy and resilience infrastructure all moved to the Conduit Protocol and Aurora, dropping it from Tier 1 to Tier 3. What remains is knowledge versioning, epistemic governance, and governed forgetting: the unfashionable proposition that a commons which cannot retire anything eventually cannot be read.'
       }
     }
   },
-{
+  {
     id: 'framework_religious_dialogue',
     type: 'Framework',
     name: 'Global Governance Implementation Framework: Religious & Spiritual Dialogue',
     shortName: 'Spiritual Dialogue',
-    description: 'An advisory framework for fostering inclusive, trauma-informed dialogue among religious, spiritual, Indigenous, and secular communities to promote peace and inform GGF policies on a voluntary basis, operating under the Genesis Protocol\'s Conscience & Sovereignty Clause.',
+    description:
+      'A Wisdom Cartography System rather than a consensus body: it maps the full spectrum of religious, spiritual, Indigenous, secular and philosophical reasoning on a question instead of averaging it into a statement nobody holds. Advisory and voluntary, operating under the Genesis Conscience & Sovereignty Clause.',
     tier: 3,
-    status: 'Review', // Status is still 'Review'
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
     dependencies: [
-      'framework_meta_gov', // Now a Meta-Gov Advisory Council
-      'framework_mos',      // Advises on Dynamic Rights Spectrum
-      'framework_indigenous', // Defers to FPIC 2.0 and Earth Council
-      'framework_peace',    // Integrates with Peace Council
-      'framework_digital_commons' // Hosts Wisdom Repository
+      'framework_meta_gov',
+      'framework_mos',
+      'framework_indigenous',
+      'framework_peace',
+      'framework_digital_commons'
     ],
     enables: [
-      'council_gcrsd', // The main entity is now the council
+      'council_gcrsd',
       'council_interfaith_governance_council',
       'protocol_sacred_data',
       'platform_wisdom_repository',
@@ -96,7 +121,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
         version: 'v1.8',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Version 1.8 abandons the assumption that an interfaith body should produce agreement. Consensus on questions of meaning fails two ways — dissent gets smoothed into unusable blandness, or any participant can veto and the institution seizes. So the council maps instead: high-fidelity surveys of the moral terrain, handed to whoever has to build on it. Its own analogy is a geological survey, which does not decide where the bridge goes.'
       }
     }
   },
@@ -105,7 +131,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Global Citizenship Practice Framework',
     shortName: 'Global Citizenship',
-    description: 'Framework for global citizenship education and practice, fostering responsible planetary stewardship',
+    description:
+      'Global citizenship as a personal practice rather than an institutional programme: what one person can do about planetary problems without waiting to be organised.',
     tier: 3,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -117,7 +144,6 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.globalCitizenshipPractice',
       emoji: '🌍',
       slug: 'global-citizenship-practice',
- 
       prose: {
         dir: 'global-citizenship-practice',
         version: '2.0',
@@ -127,46 +153,47 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
           'A personal practice for people who want to act on global problems without waiting for an institution to organise them',
         standfirst:
           'The only thing here addressed to one person rather than to a governing body. It asks for an hour, not a mandate. Nothing in it has been tested, measured, or reviewed by anyone outside the project.',
-        sections: [
-          { id: 'global-citizenship-overview', title: 'Global Citizenship Practice' }
-        ]
+        sections: [{ id: 'global-citizenship-overview', title: 'Global Citizenship Practice' }]
       }
     }
   },
-
   {
     id: 'framework_arts_flourishing',
     type: 'Framework',
     name: 'Creative & Arts Flourishing Framework',
     shortName: 'Arts Flourishing',
-    description: 'A framework for fostering new cultural creation and stewarding the arts as a regenerative contribution to planetary well-being and collective consciousness.',
+    description:
+      'The Muse Protocol: art treated as a foundational metabolism of a regenerative civilization rather than a discretionary sector. Routes creative contribution through the Hearts economy so that cultural work is compensated as work.',
     tier: 3,
-    status: 'Planned', // Starting status
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
     dependencies: [
-      'framework_cultural_heritage', 
-      'framework_aubi', 
+      'framework_cultural_heritage',
+      'framework_aubi',
       'framework_education',
-      'framework_digital_commons'
-      ],
-    enables: ['institution_cosmic_artisan_guilds'], // Enables the future Tier 4 institution
+      'framework_digital_commons',
+      'framework_indigenous',
+      'framework_hearthstone',
+      'framework_wdmip'
+    ],
+    enables: ['institution_cosmic_artisan_guilds'],
     ui: {
       path: '/frameworks/arts-flourishing',
-      titleKey: 'framework.docs.nav.frameworkTitles.artsFlourishing', // New key needed
+      titleKey: 'framework.docs.nav.frameworkTitles.artsFlourishing',
       emoji: '🎨',
       slug: 'arts-flourishing',
-      group: 'humanSocialSystems', // Fits well here
+      group: 'humanSocialSystems',
       outline: {
         version: 'v0.7',
         updated: '2026-08-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Arts funding reframed as metabolism rather than patronage: if a civilization is regenerative, cultural creation is one of the processes doing the regenerating, not an ornament paid for out of the surplus. The mechanism is unglamorous — creative work earns Hearts through the same contribution channels as care and ecological work, which means an artist is paid for making things rather than for winning a grant competition.'
       }
     }
   },
-
   {
     id: 'framework_resonance_protocol',
     type: 'Framework',
@@ -175,8 +202,9 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     description:
       'Governance of soundscapes as a commons: community authority over local acoustic environments, protection of musical heritage, and sonic accessibility for people harmed by noise.',
     tier: 3,
+    // was primaryDomain: 'Culture', which is not in the union
+    primaryDomain: 'Governance',
     status: 'Draft',
-    primaryDomain: 'Culture',
     geographicScope: 'Global',
     implementationPriority: 'Low',
     dependencies: ['framework_arts_flourishing', 'framework_indigenous']
@@ -188,15 +216,17 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
   {
     id: 'framework_inner_dev',
     type: 'Framework',
-    name: 'Inner Development & Leadership Protocol',
+    // renamed at v2.5; shortName 'IDLP' retained because other outlines use it
+    name: 'Consciousness & Inner Development Framework',
     shortName: 'IDLP',
-    description: 'Protocol for embedding consciousness and ethical leadership across the GGF',
+    description:
+      'Inner development and ethical leadership capacity across the ecosystem, developed with Indigenous, youth and neurodiverse input. Voluntary throughout — the MOS prohibition on assigning developmental stages applies here with particular force, since this is the framework most tempted to.',
     tier: 4,
     status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
-    dependencies: ['framework_digital_commons'],
+    dependencies: ['framework_digital_commons', 'framework_mos'],
     enables: ['process_clp'],
     ui: {
       path: '/frameworks/consciousness-and-inner-development',
@@ -205,9 +235,10 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       slug: 'consciousness-and-inner-development',
       outline: {
         version: 'v2.5',
-        updated: '2026-08-03',
+        updated: '2026-04-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'The proposition that institutions behave the way the people inside them are able to think, and that this is trainable. It is also the framework with the most obvious failure mode: any programme that develops consciousness can become a programme that ranks it. Version 2.5 was shaped with Indigenous, youth and neurodiverse leadership, and MOS §6.2 forbids any GGF body from recording a developmental stage for anyone.'
       }
     }
   },
@@ -216,7 +247,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Wise Decision-Making & Integration Protocol',
     shortName: 'WDIP',
-    description: 'Universal methodology providing the "How" for wise decision-making across the GGF',
+    description:
+      'Advisory methodology for decisions that are hard because values conflict, effects run across generations, knowledge is distributed and power is unequal — not because facts are missing. Conforms to the GMEAIA/0.1 controlling interface; every output must state the process mandate, the competent decision authority, and its authority effect.',
     tier: 4,
     status: 'Review',
     primaryDomain: 'Governance',
@@ -231,9 +263,10 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       slug: 'wise-decision-making-protocol',
       outline: {
         version: 'v1.6.1',
-        updated: '2026-08-03',
+        updated: '2026-08-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'A method for the decisions where more information would not help: values genuinely conflict, the losses fall on people who are not in the room, and every option costs something irreversible. WDIP holds multiple knowledge systems side by side without collapsing them into one register, and treats uncertainty as productive rather than as a problem to be closed. Its advisory-output rule means no WDIP process can be mistaken for the decision itself.'
       }
     }
   },
@@ -244,7 +277,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Cultural & Ancestral Wisdom Council',
     shortName: 'CAWC',
-    description: 'Meta-Governance council defining cultural preservation standards and ancestral wisdom integration',
+    description:
+      'Meta-Governance council setting cultural preservation standards. Standards, not certification: it does not decide who is authentically anything.',
     tier: 3,
     status: 'Proposed',
     primaryDomain: 'Governance',
@@ -257,7 +291,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Digital Commons Council',
     shortName: 'DCC',
-    description: 'Sub-council governing shared digital resources and knowledge commons',
+    description:
+      'Sub-council governing knowledge commons stewardship: versioning, contestation, retirement and the data/knowledge boundary with Aurora.',
     tier: 3,
     status: 'Proposed',
     primaryDomain: 'Technology',
@@ -270,7 +305,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Global Council for Religious & Spiritual Dialogue',
     shortName: 'GCRSD',
-    description: 'The primary advisory Meta-Governance Coordination Council for spiritual dialogue. Offers perspectives on the MOS, advises on Treaty implementation, and liaises with other GGF bodies.',
+    description:
+      'Advisory Meta-Governance council producing wisdom cartography: maps of the moral terrain relevant to a decision, including dissent, rather than a single agreed position.',
     tier: 3,
     status: 'Proposed',
     primaryDomain: 'Governance',
@@ -283,10 +319,12 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Interfaith Governance Council',
     shortName: 'IGC (AUBI)',
-    description: 'A specialized sub-council that advises the AUBI framework on aligning Hearts/Leaves currencies with diverse spiritual and ethical values, such as Zakat.',
+    description:
+      'Specialized sub-council advising AUBI on aligning Hearts and Leaves with diverse spiritual and ethical traditions, such as Zakat.',
     tier: 3,
     status: 'Proposed',
     primaryDomain: 'Economic',
+    implementationPriority: 'Medium',
     dependencies: ['council_gcrsd', 'framework_aubi']
   },
 
@@ -296,7 +334,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Cultural Stewardship Teams',
     shortName: 'CSTs',
-    description: 'Community Work Teams focused on cultural preservation within BAZs',
+    description:
+      'BAZ-level teams doing cultural preservation work, chartered and compensated through the same channels as other community provision. See the CWT/Community Provider naming question in cluster.economic-os.',
     tier: 3,
     status: 'Pilot',
     primaryDomain: 'Governance',
@@ -309,13 +348,26 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Local Citizen Nodes',
     shortName: 'Local Nodes',
-    description: 'Community-driven bodies for local governance of the Digital Commons',
+    description: 'Community-driven bodies for local governance of the knowledge commons.',
     tier: 3,
     status: 'Proposed',
     primaryDomain: 'Technology',
     geographicScope: 'Local',
     implementationPriority: 'Medium',
     dependencies: ['framework_digital_commons', 'institution_baz']
+  },
+  {
+    id: 'institution_interfaith_teams',
+    type: 'Institution',
+    name: 'Rapid Response Interfaith Teams',
+    shortName: 'RRITs',
+    description:
+      'Teams offered jointly with the Peace framework where a conflict has a spiritual dimension. Voluntary deployment by invitation, on the same terms as peace teams.',
+    tier: 3,
+    status: 'Proposed',
+    primaryDomain: 'Justice',
+    implementationPriority: 'Medium',
+    dependencies: ['council_gcrsd', 'framework_peace']
   },
 
   // === PROCESSES & TOOLS ===
@@ -324,7 +376,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Process',
     name: 'Conscious Leadership Program',
     shortName: 'CLP',
-    description: 'Mandatory training for all Meta-Governance council members integrating consciousness development',
+    description:
+      'Training for Meta-Governance council members. NOTE: previously described as mandatory, which sits badly with the voluntary framing of Consciousness & Inner Development v2.5 and with the MOS prohibition on stage assessment. Treated as expected rather than compulsory pending a decision.',
     tier: 4,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -337,7 +390,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Process',
     name: 'Ethical Stress-Testing',
     shortName: 'ETS',
-    description: 'WDIP methodology for evaluating complex decisions against MOS principles',
+    description:
+      'WDIP method for examining a decision against MOS reasoning before it is taken. Advisory: a failed stress test is an argument, not a veto.',
     tier: 4,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -350,7 +404,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'DataMetric',
     name: 'Cultural Vitality Index',
     shortName: 'CV Index',
-    description: 'Measures cultural health including language preservation, traditional practices, and community engagement',
+    description:
+      'Measures language preservation, traditional practice and community engagement. An alert about conditions, not a judgment about a culture.',
     tier: 3,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -359,47 +414,32 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     dependencies: ['framework_cultural_heritage']
   },
 
-  // === PROTOCOLS ===
+  // === PROTOCOLS & PLATFORMS ===
   {
     id: 'protocol_sacred_data',
     type: 'LegalProtocol',
     name: 'Sacred Data & Digital Heritage Protocol',
     shortName: 'Sacred Data Protocol',
-    description: 'Co-developed with the Digital Commons and AI Governance Board to govern sacred text digitization, virtual pilgrimage, AI chaplaincy, and digital afterlife using blockchain for consent.',
+    description:
+      'Governs sacred text digitization, virtual pilgrimage, AI chaplaincy and digital afterlife, with consent recorded rather than assumed.',
     tier: 3,
     status: 'Draft',
     primaryDomain: 'Technology',
-    dependencies: [
-      'framework_religious_dialogue',
-      'framework_digital_commons',
-      'council_gtc' // AI Governance Board is under Global Tech Council
-    ]
+    implementationPriority: 'Medium',
+    dependencies: ['framework_religious_dialogue', 'framework_digital_commons', 'council_gtc']
   },
-
-  // === Wisdom Repository ===
   {
     id: 'platform_wisdom_repository',
     type: 'Platform',
     name: 'Wisdom Repository',
     shortName: 'Wisdom Repository',
-    description: 'A knowledge bank hosted on the Digital Commons Knowledge Commons, serving as a core resource for GGF peacebuilders and policymakers.',
+    description:
+      'Knowledge bank hosted on the Digital Commons, holding cartography outputs for peacebuilders and policymakers — including the dissent that a consensus process would have discarded.',
     tier: 3,
     status: 'Proposed',
     primaryDomain: 'Technology',
+    implementationPriority: 'Medium',
     dependencies: ['framework_religious_dialogue', 'framework_digital_commons', 'framework_peace']
-  },
-
-  // === Rapid Response Interfaith Teams ===
-  {
-    id: 'institution_interfaith_teams',
-    type: 'Institution',
-    name: 'Rapid Response Interfaith Teams',
-    shortName: 'RRITs',
-    description: 'Specialized teams for joint, voluntary deployment with the Peace & Conflict Resolution Framework in conflicts with spiritual dimensions.',
-    tier: 3,
-    status: 'Proposed',
-    primaryDomain: 'Justice',
-    dependencies: ['council_gcrsd', 'framework_peace']
   },
 
   // === MEMORIAL & GRIEF COMMONS ===
@@ -408,7 +448,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'The Memorial Commons',
     shortName: 'Memorial Commons',
-    description: 'Framework for collective grief processing, memorialization, and intergenerational healing. Provides spaces and protocols for communities to process loss — from addiction-related grief to ecological mourning and historical trauma.',
+    description:
+      'Collective grief processing, memorialization and intergenerational healing: spaces and protocols for communities to process loss, from addiction-related grief to ecological mourning and historical trauma.',
     tier: 3,
     status: 'Planned',
     primaryDomain: 'Governance',
@@ -432,12 +473,155 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
 ];
 
 export const culturalKnowledgeRelationships: GgfRelationship[] = [
-  // === INTERNAL CLUSTER INTEGRATION ===
+  // --- framework_cultural_heritage ---------------------------------------
+  {
+    from: 'framework_cultural_heritage',
+    to: 'council_cawc',
+    type: 'ESTABLISHES',
+    description: 'Establishes the Cultural & Ancestral Wisdom Council.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_cultural_heritage',
+    to: 'institution_cst',
+    type: 'ESTABLISHES',
+    description: 'Establishes Cultural Stewardship Teams at BAZ level.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_cultural_heritage',
+    to: 'tool_cv_index',
+    type: 'ESTABLISHES',
+    description: 'Establishes the Cultural Vitality Index as a condition indicator.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
   {
     from: 'framework_cultural_heritage',
     to: 'framework_digital_commons',
     type: 'USES_DATA_FROM',
-    description: 'Cultural heritage preserved in quantum-safe decentralized archives managed by Digital Commons',
+    description: 'Heritage records are held and versioned in the knowledge commons.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_cultural_heritage',
+    to: 'framework_treaty',
+    type: 'IMPLEMENTS',
+    description:
+      'Embeds cultural memory obligations in Treaty commitments rather than leaving them discretionary.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_fpic2',
+    to: 'framework_cultural_heritage',
+    type: 'GUIDES',
+    description:
+      'Consent and refusal govern what is recorded, by whom, and what remains unrecorded.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_cultural_heritage',
+    to: 'framework_inner_dev',
+    type: 'INFORMS',
+    description: 'Ancestral practice informs inner development work.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_education',
+    to: 'framework_cultural_heritage',
+    type: 'COLLABORATES_WITH',
+    description: 'Curriculum and language revitalization are the same work seen from two sides.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_cultural_heritage',
+    to: 'layer_wisdom_council',
+    type: 'COORDINATES_WITH',
+    description:
+      'Indigenous-determined authorities hold the standing to decide what may be preserved and shared.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // --- framework_digital_commons ------------------------------------------
+  {
+    from: 'framework_digital_commons',
+    to: 'council_dcc',
+    type: 'ESTABLISHES',
+    description: 'Establishes the Digital Commons Council.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_digital_commons',
+    to: 'institution_lcn',
+    type: 'ESTABLISHES',
+    description: 'Establishes Local Citizen Nodes for community-level stewardship.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_digital_commons',
+    to: 'framework_aurora_accord',
+    type: 'IMPLEMENTS',
+    description:
+      'Operates inside Aurora data rights. The v3.0 boundary: Aurora governs data as a category, Digital Commons governs the processes that turn it into shared meaning.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_digital_commons',
+    to: 'framework_conduit_protocol',
+    type: 'DEPENDS_ON',
+    description:
+      'v3.0 migrated mesh networks, resilience and infrastructure hardening to the Conduit Protocol; the commons now runs on infrastructure it does not govern.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_digital_commons',
+    to: 'framework_synoptic',
+    type: 'COLLABORATES_WITH',
+    description: 'Contestation and epistemic governance overlap with information integrity work.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_digital_commons',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description: 'Knowledge held as commons uses the same stewardship logic as physical commons.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_digital_commons',
+    to: 'institution_knowledge_commons_ombudsperson',
+    type: 'COORDINATES_WITH',
+    description:
+      'The Ombudsperson holds consent, access and correction disputes across knowledge commons custody.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_digital_commons',
+    type: 'GUIDES',
+    description:
+      'Indigenous data and knowledge sovereignty govern what may enter the commons at all.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -446,138 +630,282 @@ export const culturalKnowledgeRelationships: GgfRelationship[] = [
     from: 'council_cawc',
     to: 'council_dcc',
     type: 'COORDINATES_WITH',
-    description: 'CAWC and DCC coordinate on standards for ethical access to digital cultural heritage',
+    description: 'Cultural standards and knowledge stewardship are set jointly.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
+
+  // --- framework_religious_dialogue ---------------------------------------
   {
-    from: 'framework_inner_dev',
-    to: 'framework_wdmip',
-    type: 'INFORMS',
-    description: 'IDLP provides the "Who" (conscious leader) needed to properly execute WDIP\'s "How" (wise process)',
+    from: 'framework_religious_dialogue',
+    to: 'council_gcrsd',
+    type: 'ESTABLISHES',
+    description: 'The council is the framework; cartography is what it produces.',
     strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_religious_dialogue',
+    to: 'platform_wisdom_repository',
+    type: 'ESTABLISHES',
+    description: 'Establishes the repository holding cartography outputs and recorded dissent.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_religious_dialogue',
+    to: 'protocol_sacred_data',
+    type: 'ESTABLISHES',
+    description: 'Establishes consent rules for sacred material in digital form.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
   },
   {
     from: 'framework_religious_dialogue',
     to: 'council_cawc',
     type: 'INFORMS',
-    description: 'Spiritual Dialogue framework provides protocols and insights to CAWC',
+    description: 'Spiritual dimensions of cultural practice inform preservation standards.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gcrsd',
+    to: 'council_interfaith_governance_council',
+    type: 'ESTABLISHES',
+    description: 'Establishes the AUBI-facing sub-council.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'council_gcrsd',
+    to: 'institution_interfaith_teams',
+    type: 'ESTABLISHES',
+    description: 'Establishes interfaith teams for conflicts with a spiritual dimension.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'council_gcrsd',
+    to: 'council_mgcc',
+    type: 'REPORTS_TO',
+    description: 'The GCRSD is an advisory council within the Meta-Governance structure.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gcrsd',
+    to: 'framework_mos',
+    type: 'INFORMS',
+    description:
+      'Supplies plural moral reasoning to the MOS without either body binding the other.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gcrsd',
+    to: 'framework_treaty',
+    type: 'SUPPORTS',
+    description: 'Advises on Treaty implementation where questions of meaning are at stake.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gcrsd',
+    to: 'framework_peace',
+    type: 'PARTICIPATES_IN',
+    description: 'Contributes to mediation where conflicts have religious dimensions.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gcrsd',
+    to: 'framework_shield',
+    type: 'INFORMS',
+    description: 'Advises on religiously-framed extremism without becoming an intelligence source.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gcrsd',
+    to: 'framework_synoptic',
+    type: 'COORDINATES_WITH',
+    description: 'Cartography outputs are published under information-integrity standards.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
   {
-    from: 'framework_global_citizenship',
-    to: 'framework_education',
+    from: 'council_earth',
+    to: 'council_gcrsd',
+    type: 'PARTICIPATES_IN',
+    description:
+      'Indigenous participation is by invitation and standing, not by allocated seat.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_interfaith_governance_council',
+    to: 'framework_aubi',
+    type: 'INFORMS',
+    description: 'Advises on aligning currency design with traditions such as Zakat.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'institution_interfaith_teams',
+    to: 'framework_peace',
     type: 'COLLABORATES_WITH',
-    description: 'Global Citizenship practice is integrated into educational curricula and civic education programs',
+    description: 'Deployed jointly with peace teams, on invitation.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'platform_wisdom_repository',
+    to: 'framework_digital_commons',
+    type: 'USES_DATA_FROM',
+    description: 'Hosted on the knowledge commons and subject to its versioning and retirement rules.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
+  {
+    from: 'protocol_sacred_data',
+    to: 'framework_digital_commons',
+    type: 'INTEGRATES_WITH',
+    description: 'Sacred material is a bounded class within the commons, not an exception to it.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_sacred_data',
+    to: 'council_gtc',
+    type: 'COORDINATES_WITH',
+    description: 'AI chaplaincy and digital afterlife questions are co-governed with the GTC.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
 
-  // === FRAMEWORK ESTABLISHMENT OF ENTITIES ===
+  // --- framework_arts_flourishing ------------------------------------------
   {
-    from: 'framework_cultural_heritage',
-    to: 'council_cawc',
-    type: 'ESTABLISHES',
-    description: 'Cultural Heritage framework establishes CAWC as governance body for cultural preservation',
+    from: 'framework_arts_flourishing',
+    to: 'framework_cultural_heritage',
+    type: 'COLLABORATES_WITH',
+    description: 'New creation and preservation are two halves of cultural metabolism.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_arts_flourishing',
+    to: 'institution_cosmic_artisan_guilds',
+    type: 'ENABLES',
+    description: 'Seeds the Tier 4 guild structure.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_arts_flourishing',
+    to: 'framework_aubi',
+    type: 'DEPENDS_ON',
+    description:
+      'Creative contribution is compensated through the same channels as care and ecological work.',
     strength: 'Strong',
     frequency: 'Continuous',
-    sequenceType: 'Sequential'
+    sequenceType: 'Parallel'
   },
   {
-    from: 'framework_cultural_heritage',
-    to: 'institution_cst',
-    type: 'ESTABLISHES',
-    description: 'Cultural Heritage framework establishes Cultural Stewardship Teams as implementation mechanism',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Sequential'
+    from: 'framework_arts_flourishing',
+    to: 'framework_digital_commons',
+    type: 'USES_DATA_FROM',
+    description: 'Works and their provenance are held in the knowledge commons.',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
   },
   {
-    from: 'framework_digital_commons',
-    to: 'council_dcc',
-    type: 'ESTABLISHES',
-    description: 'Digital Commons framework establishes DCC as governance body for shared digital resources',
+    from: 'framework_arts_flourishing',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description: 'Studios, venues and instruments are commons that need stewardship structures.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_arts_flourishing',
+    to: 'framework_synoptic',
+    type: 'COORDINATES_WITH',
+    description:
+      'Attribution and synthetic-media provenance are shared with information integrity.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_arts_flourishing',
+    type: 'GUIDES',
+    description:
+      'Cultural consent governs what may be performed, recorded, adapted or sold.',
     strength: 'Strong',
     frequency: 'Continuous',
-    sequenceType: 'Sequential'
+    sequenceType: 'Parallel'
   },
   {
-    from: 'framework_digital_commons',
-    to: 'institution_lcn',
-    type: 'ESTABLISHES',
-    description: 'Digital Commons framework establishes Local Citizen Nodes for community governance',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Sequential'
-  },
-  {
-    from: 'framework_wdmip',
-    to: 'process_ets',
-    type: 'ESTABLISHES',
-    description: 'WDIP establishes Ethical Stress-Testing as core decision-making methodology',
+    from: 'mechanism_hearts',
+    to: 'framework_arts_flourishing',
+    type: 'REWARDS',
+    description: 'Hearts compensate creative contribution.',
     strength: 'Strong',
     frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_arts_flourishing',
+    to: 'framework_resonance_protocol',
+    type: 'ENABLES',
+    description:
+      'Soundscape governance extends arts stewardship into the acoustic commons.',
+    strength: 'Medium',
     sequenceType: 'Sequential'
   },
+
+  // --- inner development and wise decision-making ---------------------------
   {
     from: 'framework_inner_dev',
     to: 'process_clp',
     type: 'ESTABLISHES',
-    description: 'IDLP establishes Conscious Leadership Program as mandatory training',
+    description: 'Establishes the Conscious Leadership Program.',
     strength: 'Strong',
-    frequency: 'Continuous',
     sequenceType: 'Sequential'
   },
-
-  // === CONNECTIONS TO ETHICAL OS ===
   {
-    from: 'framework_indigenous',
+    from: 'framework_inner_dev',
+    to: 'framework_wdmip',
+    type: 'INFORMS',
+    description:
+      'Inner capacity is what makes the WDIP method usable; the method does not assume it.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_inner_dev',
     to: 'framework_digital_commons',
-    type: 'GUIDES',
-    description: 'The Indigenous Framework provides the core ethical protocols for how the Digital Commons must steward and protect Traditional Ecological Knowledge (TEK).',
-    strength: 'Strong',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'council_cawc',
-    to: 'council_earth',
-    type: 'REPORTS_TO',
-    description: 'CAWC operates under moral authority and guidance of Earth Council',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'institution_cst',
-    to: 'institution_baz',
-    type: 'IMPLEMENTS',
-    description: 'Cultural Stewardship Teams operate within BAZ governance structures',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'institution_lcn',
-    to: 'institution_baz',
-    type: 'IMPLEMENTS',
-    description: 'Local Citizen Nodes operate within BAZ structures for Digital Commons governance',
+    type: 'ENABLES',
+    description: 'Practice materials are published as commons rather than licensed.',
     strength: 'Medium',
-    frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-
-  // === CONNECTIONS TO GOVERNANCE OS ===
   {
-    from: 'framework_wdmip',
-    to: 'council_mgcc',
+    from: 'framework_mos',
+    to: 'framework_inner_dev',
     type: 'GUIDES',
-    description: 'WDIP provides Standard Operating Procedures for decision-making in all Meta-Governance councils',
+    description:
+      'MOS §6.2 forbids assigning or storing a developmental stage — the constraint this framework most needs.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -586,7 +914,86 @@ export const culturalKnowledgeRelationships: GgfRelationship[] = [
     from: 'process_clp',
     to: 'council_mgcc',
     type: 'IMPLEMENTS',
-    description: 'Conscious Leadership Program is mandatory training for all Meta-Governance council members',
+    description: 'Delivered to Meta-Governance council members.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_wdmip',
+    to: 'process_ets',
+    type: 'ESTABLISHES',
+    description: 'Establishes ethical stress-testing as a WDIP method.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_wdmip',
+    to: 'council_mgcc',
+    type: 'GUIDES',
+    description: 'Supplies decision method to the coordination council without deciding for it.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_wdmip',
+    to: 'framework_synoptic',
+    type: 'DEPENDS_ON',
+    // was type: 'REQUIRES', which is not in the union
+    description:
+      'Decision quality depends on the information conditions Synoptic governs; WDIP cannot activate it.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_wdmip',
+    to: 'institution_dj_tribunal',
+    type: 'GUIDES',
+    description: 'Offers deliberation method for hard adjudicative questions.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'process_ets',
+    to: 'framework_mos',
+    type: 'IMPLEMENTS',
+    description: 'Operationalizes MOS reasoning as a test applied before a decision.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+
+  // --- global citizenship and cultural institutions -------------------------
+  {
+    from: 'framework_global_citizenship',
+    to: 'framework_education',
+    type: 'COLLABORATES_WITH',
+    description: 'Practice and curriculum reinforce each other.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_global_citizenship',
+    to: 'framework_meta_gov',
+    type: 'INFORMS',
+    description: 'Individual practice feeds signals upward without becoming a mandate.',
+    strength: 'Weak',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_global_citizenship',
+    to: 'framework_wdmip',
+    type: 'BENEFITS_FROM',
+    description: 'Borrows the deliberation method at personal scale.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_cawc',
+    to: 'council_earth',
+    type: 'REPORTS_TO',
+    description: 'Cultural standards defer to Indigenous authority where the two meet.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
@@ -595,270 +1002,99 @@ export const culturalKnowledgeRelationships: GgfRelationship[] = [
     from: 'council_cawc',
     to: 'council_mgcc',
     type: 'REPORTS_TO',
-    description: 'CAWC operates within Meta-Governance architecture',
+    description: 'The CAWC is a domain council within Meta-Governance.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-
-  // === CONNECTIONS TO SYNOPTIC PROTOCOL ===
   {
-    from: 'framework_wdmip',
-    to: 'framework_synoptic',
-    type: 'REQUIRES',
-    description: 'WDIP Phase 0 Epistemic Health Assessment requires GCEI certification that information ecosystem meets baseline standards before process activation. Interfaces with Synoptic Protocol Decision-Making Under Uncertainty Protocol for action under suboptimal epistemic conditions.'
-  },
-
-  // === CONNECTIONS TO JUSTICE OS ===
-  {
-    from: 'framework_wdmip',
-    to: 'institution_dj_tribunal',
-    type: 'GUIDES',
-    description: 'Digital Justice Tribunal uses WDIP methodologies like Ethical Stress-Testing for complex cases',
-    strength: 'Medium',
-    frequency: 'As-Needed',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'process_ets',
-    to: 'framework_mos',
+    from: 'institution_cst',
+    to: 'institution_baz',
     type: 'IMPLEMENTS',
-    description: 'Ethical Stress-Testing evaluates decisions against MOS principles and rights spectrum',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-
-  // === CONNECTIONS TO HEARTHSTONE PROTOCOL ===
-  {
-    from: 'framework_digital_commons',
-    to: 'framework_hearthstone',
-    type: 'INTEGRATES_WITH',
-    description: 'The Digital Commons provides the governance and infrastructure for managing the intangible and intellectual property assets transitioned via the Hearthstone Protocol.',
+    description: 'Cultural Stewardship Teams operate within BAZ governance.',
     strength: 'Strong',
     sequenceType: 'Parallel'
   },
-
-  // === CONNECTIONS TO ECONOMIC OS ===
   {
     from: 'institution_cst',
     to: 'framework_work_liberation',
     type: 'IMPLEMENTS',
-    description: 'Cultural Stewardship Teams are specialized type of Community Work Team',
+    description: 'Cultural stewardship is a recognised participation mode.',
     strength: 'Strong',
-    frequency: 'Regular',
     sequenceType: 'Parallel'
   },
   {
     from: 'institution_cst',
     to: 'framework_aubi',
     type: 'REWARDS',
-    description: 'Cultural preservation work by CSTs is rewarded with Hearts via AUBI system',
+    description: 'Cultural work earns Hearts through the standard contribution channels.',
     strength: 'Strong',
-    frequency: 'Regular',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'institution_lcn',
+    to: 'institution_baz',
+    type: 'IMPLEMENTS',
+    description: 'Local Citizen Nodes operate within BAZ governance.',
+    strength: 'Strong',
     sequenceType: 'Parallel'
   },
   {
     from: 'tool_cv_index',
     to: 'framework_aubi',
     type: 'INFORMS',
-    description: 'Cultural Vitality Index guides AUBI bonuses and investment decisions',
+    description: 'Cultural vitality readings feed AUBI assessment, on the advisory side.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // --- memorial commons -----------------------------------------------------
+  {
+    from: 'framework_memorial_commons',
+    to: 'framework_cultural_heritage',
+    type: 'DEPENDS_ON',
+    description: 'Memorial practice is cultural practice with a specific occasion.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_memorial_commons',
+    to: 'framework_mental_health',
+    type: 'COORDINATES_WITH',
+    description:
+      'Collective grief work runs alongside clinical support and must not be mistaken for it.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_memorial_commons',
+    to: 'framework_cairn_protocol',
+    type: 'COORDINATES_WITH',
+    description: 'Addiction-related grief is a shared surface between the two frameworks.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_memorial_commons',
+    to: 'institution_icc',
+    type: 'ESCALATES_TO',
+    description:
+      'Disputes over memorial sites held as commons escalate to the International Commons Court.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
   },
   {
     from: 'mechanism_hearts',
-    to: 'framework_arts_flourishing',
+    to: 'framework_memorial_commons',
     type: 'REWARDS',
-    description: 'The Hearts currency is a primary economic mechanism for valuing and rewarding artistic and creative contributions to community well-being.'
-  },
-
-  // === CONNECTIONS TO HUMAN FLOURISHING ===
-  {
-    from: 'framework_education',
-    to: 'framework_cultural_heritage',
-    type: 'COLLABORATES_WITH',
-    description: 'Education framework uses resources from Cultural Heritage archives for curricula',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_digital_commons',
-    to: 'framework_synoptic',
-    type: 'COLLABORATES_WITH',
-    description: 'Digital Commons and Synoptic Protocol coordinate on information integrity standards',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_education',
-    to: 'framework_global_citizenship',
-    type: 'ENABLES',
-    description: 'Educational Systems framework provides foundation and curricula for Global Citizenship practice',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Sequential'
-  },
-  {
-    from: 'framework_arts_flourishing',
-    to: 'framework_cultural_heritage',
-    type: 'COLLABORATES_WITH',
-    description: 'The Arts Flourishing framework collaborates with Cultural Heritage to ensure new creations can draw from and honor ancestral wisdom without appropriation.'
-  },
-  {
-    from: 'framework_arts_flourishing',
-    to: 'institution_cosmic_artisan_guilds',
-    type: 'ENABLES',
-    description: 'Provides the foundational principles and training for Aesthetic Impact Assessments (AIAs) that are later utilized by the Cosmic Artisan Guilds at a stellar scale.'
-  },
-
-  // === CONNECTIONS TO DATA OS ===
-  {
-    from: 'framework_digital_commons',
-    to: 'framework_aurora_accord',
-    type: 'IMPLEMENTS',
-    description: 'Digital Commons implements data governance principles from Aurora Accord',
+    description: 'Death care and memorial stewardship are compensated care work.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
-  },
-
-  // === CROSS-TIER WISDOM INTEGRATION ===
-  {
-    from: 'framework_inner_dev',
-    to: 'framework_digital_commons',
-    type: 'ENABLES',
-    description: 'Consciousness development provides foundation for wise stewardship of knowledge commons',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Sequential'
-  },
-  {
-    from: 'framework_cultural_heritage',
-    to: 'framework_inner_dev',
-    type: 'INFORMS',
-    description: 'Traditional wisdom and cultural practices inform consciousness development approaches',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_global_citizenship',
-    to: 'framework_meta_gov',
-    type: 'INFORMS',
-    description: 'Practice of global citizenship informs and strengthens capacity for effective meta-governance',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_global_citizenship',
-    to: 'framework_wdmip',
-    type: 'BENEFITS_FROM',
-    description: 'Global citizenship practice benefits from and implements wise decision-making methodologies',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-
-  // === NEW: Religious & Spiritual Dialogue Framework Integration ===
-  {
-    from: 'framework_religious_dialogue',
-    to: 'council_gcrsd',
-    type: 'ESTABLISHES',
-    description: 'The framework establishes the GCRSD as its primary governance body.'
-  },
-  {
-    from: 'council_gcrsd',
-    to: 'framework_mos',
-    type: 'INFORMS',
-    description: 'Offers perspectives on the Dynamic Rights Spectrum and facilitates dialogues on rights conflicts on a voluntary basis.'
-  },
-  {
-    from: 'council_gcrsd',
-    to: 'framework_treaty',
-    type: 'SUPPORTS',
-    description: 'Provides ethical insights for GEM and facilitates truth and reconciliation dialogues for the Justice System.'
-  },
-  {
-    from: 'council_earth',
-    to: 'council_gcrsd',
-    type: 'PARTICIPATES_IN',
-    description: 'The Earth Council appoints 10 permanent seats to the GCRSD, ensuring Indigenous sovereignty and FPIC 2.0 compliance.'
-  },
-  {
-    from: 'council_gcrsd',
-    to: 'council_interfaith_governance_council',
-    type: 'ESTABLISHES',
-    description: 'Establishes the sub-council to advise the AUBI framework.'
-  },
-  {
-    from: 'council_interfaith_governance_council',
-    to: 'framework_aubi',
-    type: 'INFORMS',
-    description: 'Advises AUBI on aligning Hearts/Leaves with spiritual values (e.g., Zakat, faith-based economics).'
-  },
-  {
-    from: 'council_gcrsd',
-    to: 'framework_peace',
-    type: 'PARTICIPATES_IN',
-    description: 'Holds a permanent advisory seat on the Global Peace Council and provides Rapid Response Interfaith Teams.'
-  },
-  {
-    from: 'council_gcrsd',
-    to: 'institution_interfaith_teams',
-    type: 'ESTABLISHES',
-    description: 'The GCRSD establishes and trains the interfaith rapid response teams.'
-  },
-  {
-    from: 'institution_interfaith_teams',
-    to: 'framework_peace',
-    type: 'COLLABORATES_WITH',
-    description: 'Teams are deployed jointly with the Peace & Conflict Resolution Framework.'
-  },
-  {
-    from: 'council_gcrsd',
-    to: 'framework_shield',
-    type: 'INFORMS',
-    description: 'Advises on voluntary, spiritually-informed rehabilitation programs for the Shield Protocol.'
-  },
-  {
-    from: 'framework_religious_dialogue',
-    to: 'platform_wisdom_repository',
-    type: 'ESTABLISHES',
-    description: 'The framework establishes the Wisdom Repository as a key deliverable.'
-  },
-  {
-    from: 'platform_wisdom_repository',
-    to: 'framework_digital_commons',
-    type: 'USES_DATA_FROM',
-    description: 'The Wisdom Repository is hosted on the Digital Commons Knowledge Commons.'
-  },
-  {
-    from: 'framework_religious_dialogue',
-    to: 'protocol_sacred_data',
-    type: 'ESTABLISHES',
-    description: 'The framework co-develops the Sacred Data & Digital Heritage Protocol.'
-  },
-  {
-    from: 'protocol_sacred_data',
-    to: 'framework_digital_commons',
-    type: 'INTEGRATES_WITH',
-    description: 'Protocol provides governance rules for sacred data within the Digital Commons.'
-  },
-  {
-    from: 'protocol_sacred_data',
-    to: 'council_gtc',
-    type: 'COORDINATES_WITH',
-    description: 'Protocol is co-developed with the AI Governance Board (under GTC) for AI ethics.'
-  },
-  {
-    from: 'council_gcrsd',
-    to: 'framework_synoptic',
-    type: 'COORDINATES_WITH',
-    description: 'Liaises with Synoptic Protocol to mitigate AI-generated spiritual disinformation.'
   }
 ];

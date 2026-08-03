@@ -4,24 +4,52 @@ import type { GgfEntity, GgfRelationship } from './_types';
 
 /**
  * TIER 1: ETHICAL OPERATING SYSTEM
- * Indigenous Framework: The heart providing ethical compass and philosophical foundation
- * Moral Operating System (MOS): The advisory ethical logic and rights framework for the ecosystem
+ *
+ * Two frameworks that both spent their most recent revision giving power away.
+ * The Indigenous Sovereignty framework became invitational — binding on the GGF,
+ * proposing nothing to anyone else. The MOS became explicitly advisory, with
+ * "Authority effect: None" in its own front matter.
+ *
+ * Conventions: see cluster.implementation-os.ts.
+ *
+ * RECOGNITION, NOT CREATION. Indigenous Sovereignty v1.1 §1.2 and §6.1 state
+ * that the GGF shall not create a universal Earth Council or Indigenous Wisdom
+ * Council, and removes any implication that it can create, name, compose or
+ * certify such a body. Indigenous peoples may form one council, several, a
+ * confederation, temporary delegations, a network, or no shared body at all.
+ * `council_earth` is therefore no longer ESTABLISHED by the framework; what the
+ * framework offers is a provisional interface for whatever body chooses to
+ * engage. The entity is retained because roughly twenty other frameworks route
+ * authority through it, but the edge type had to change.
+ *
+ * MOS PRUNING. Six child entities are no longer described in MOS v2.8.2:
+ * `protocol_moon_wish_test`, `tool_sacred_seed_kit`, `campaign_rights_for_all_beings`,
+ * `metric_consciousness_alignment_index`, `tool_contemplative_assessment_tools`
+ * and `process_speculative_paradigm_pilot`. None is referenced from another
+ * cluster, so they can be deleted cleanly — but Sacred Seed Kit still appears in
+ * the Kinship Garden outline, so it may want re-parenting rather than deletion.
+ * They are marked here, not removed.
  */
 
 export const ethicalOSEntities: GgfEntity[] = [
-  // === INDIGENOUS FRAMEWORK ===
+  // === INDIGENOUS SOVEREIGNTY ===
   {
     id: 'framework_indigenous',
     type: 'Framework',
-    name: 'An Invitational Framework for Indigenous Sovereignty and Planetary Healing ',
+    // trailing space removed from the previous name
+    name: 'Indigenous Sovereignty and Planetary Healing Framework',
     shortName: 'Indigenous Sovereignty Pathways',
-    description: 'A pathways framework for Indigenous-led governance and planetary stewardship',
+    description:
+      'An invitational framework that binds the GGF before it proposes anything to anyone else. Separates binding GGF obligations from provisional proposals and community-determined possibilities, and carries a non-certification clause: no universal Indigenous framework, no selection formulas, no proxy authority.',
     tier: 1,
     status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    enables: ['council_earth', 'institution_baz', 'protocol_fpic2'],
+    dependencies: [
+      'protocol_constitutional_interface' // cluster: governance-os
+    ],
+    enables: ['institution_baz', 'protocol_fpic2'],
     ui: {
       path: '/frameworks/indigenous-sovereignty-pathways',
       titleKey: 'framework.docs.nav.frameworkTitles.indigenousSovereigntyPathways',
@@ -30,9 +58,10 @@ export const ethicalOSEntities: GgfEntity[] = [
       group: 'socialFabricJustice',
       outline: {
         version: 'v1.1',
-        updated: '2026-08-03',
+        updated: '2026-08-01',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Written by a non-Indigenous author with AI assistance, and explicit about it: this is a draft offered for Indigenous-led dialogue, not a framework Indigenous peoples have validated. Version 1.1 is mostly a removal — universal representation structures, selection formulas, proxy authorities, Love Ledger benefit tracking, and the assumption that the GGF could constitute an Earth Council all went. What remains is a set of obligations the GGF places on itself, and a Red Lines Clause that anyone invited may modify, disregard, or withdraw from.'
       }
     }
   },
@@ -41,20 +70,23 @@ export const ethicalOSEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Earth Council (Kawsay Pacha)',
     shortName: 'Earth Council',
-    description: 'Provides moral authority and planetary coordination based on TEK',
+    description:
+      'A possible Indigenous-created body for translocal coordination, and the interface the GGF offers should one choose to engage: Treaty and planetary-commons dialogue, transboundary risk notification, submission of conditions, objections or vetoes within valid standing, and protection of knowledge boundaries. v1.1 §6.1 removes any implication that the GGF can create, name, compose or certify it.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
-    implementationPriority: 'Critical',
-    dependencies: ['framework_indigenous']
+    implementationPriority: 'Critical'
+    // No `dependencies: ['framework_indigenous']` — the framework describes an
+    // interface to this body, it does not bring it into being.
   },
   {
     id: 'institution_baz',
     type: 'Institution',
     name: 'Bioregional Autonomous Zones',
     shortName: 'BAZs',
-    description: 'Indigenous-led governance systems based on ecosystem boundaries',
+    description:
+      'Indigenous-led governance systems organized on ecosystem rather than administrative boundaries. v1.1 adds explicit territorial and BAZ limits, protected non-transfer, and internal-plurality safeguards — a BAZ does not speak for everyone inside it.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Governance',
@@ -67,13 +99,32 @@ export const ethicalOSEntities: GgfEntity[] = [
     type: 'LegalProtocol',
     name: 'Free, Prior, and Informed Consent 2.0',
     shortName: 'FPIC 2.0',
-    description: 'Enhanced consent protocol with veto power for Indigenous communities',
+    description:
+      'Consent protocol with veto power for Indigenous communities, covering refusal and withdrawal as well as consent. Note: v1.1 states these rules directly and barely uses the FPIC label, while some twenty other frameworks depend on the term. The entity carries the ecosystem-wide meaning.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Justice',
     geographicScope: 'Regional',
     implementationPriority: 'Critical',
     dependencies: ['framework_indigenous']
+  },
+  {
+    id: 'protocol_indigenous_ai',
+    type: 'Protocol',
+    name: 'Indigenous AI Sovereignty Protocol',
+    shortName: 'Indigenous AI Protocol',
+    description:
+      'Governs AI systems trained on or interacting with Traditional Ecological Knowledge: data sovereignty, community consent, and benefit-sharing for anything derived from Indigenous knowledge systems.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Technology',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: [
+      'framework_indigenous',
+      'protocol_fpic2',
+      'framework_technology_governance' // cluster: technology-os
+    ]
   },
 
   // === MORE THAN HUMAN ===
@@ -90,8 +141,8 @@ export const ethicalOSEntities: GgfEntity[] = [
     geographicScope: 'Global',
     implementationPriority: 'Medium',
     dependencies: ['framework_mos', 'framework_indigenous']
-    // No ui block. Unpublished pending resolution of the overlap with the
-    // MOS and the Oracle Protocol, and a standalone deployment path.
+    // No ui block. Unpublished pending resolution of the overlap with the MOS
+    // Rights–Guardianship Spectrum and the Oracle Protocol.
   },
 
   // === MORAL OPERATING SYSTEM ===
@@ -100,29 +151,25 @@ export const ethicalOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Moral Operating System',
     shortName: 'MOS',
-    description: 'Advisory ethical logic for the GGF, suggesting approaches to rights for humans, non-humans, ecosystems, and technology via the Dynamic Rights Spectrum. Operates under the Genesis Protocol\'s Conscience & Sovereignty Clause.',
+    description:
+      'An advisory ethical deliberation layer, not a source of legal rights, jurisdiction, guardianship, title, funding, emergency authority, sanctions, surveillance, or coercion. Its own front matter records "Authority effect: None". Conforms to the CERGTA/0.1 advisory boundary — a specification not yet represented in this schema.',
     tier: 1,
     status: 'Review',
     primaryDomain: 'Ethics',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
     dependencies: [
-      'framework_treaty',
+      'framework_treaty', // cluster: constitutional-foundation
       'framework_indigenous',
-      'framework_meta_gov',
-      'protocol_genesis'
+      'framework_meta_gov', // cluster: governance-os
+      'protocol_genesis' // cluster: constitutional-foundation
     ],
     enables: [
       'protocol_dynamic_rights_spectrum',
-      'platform_rights_status_dashboard',
+      'protocol_rights_guardianship_spectrum',
+      'platform_status_atlas',
       'platform_citizen_reporting_portal',
-      'tool_spiral_aware_microlearning',
-      'campaign_rights_for_all_beings',
-      'tool_sacred_seed_kit',
-      'protocol_moon_wish_test',
-      'tool_contemplative_assessment_tools',
-      'metric_consciousness_alignment_index',
-      'process_speculative_paradigm_pilot'
+      'tool_spiral_translation_guide'
     ],
     ui: {
       path: '/frameworks/moral-operating-system',
@@ -131,148 +178,181 @@ export const ethicalOSEntities: GgfEntity[] = [
       slug: 'moral-operating-system',
       outline: {
         version: 'v2.8.2',
-        updated: '2026-08-03',
+        updated: '2026-08-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'A way of asking who counts, and how much, across humans, animals, ecosystems, future generations and digital entities — deliberately stripped of any power to answer. Version 2.8 kept the ethical project of earlier editions and changed its constitutional role: the MOS may recommend, translate and dissent, but it cannot confer rights, appoint a guardian, allocate funding, or name anyone as morally deficient. Its Spiral Translation Guide comes with an explicit prohibition on assigning a developmental stage to any person or group.'
       }
     }
   },
 
-  // ===  MOS CHILD ENTITIES ===
+  // === MOS CHILD ENTITIES (retained) ===
   {
     id: 'protocol_dynamic_rights_spectrum',
     type: 'LegalProtocol',
     name: 'Dynamic Rights Spectrum',
     shortName: 'Dynamic Rights Spectrum',
-    description: 'The core MOS protocol suggesting rights and protections for beings based on sentience, ecological role, and capacity for suffering (Humans, Animals, Ecosystems, AI, Emergent).',
+    description:
+      'The core MOS instrument for reasoning about moral consideration across humans, animals, ecosystems, digital and emergent entities. Advisory: it frames the question, it does not settle legal status.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Ethics',
+    implementationPriority: 'High',
     dependencies: ['framework_mos']
   },
   {
-    id: 'platform_rights_status_dashboard',
+    id: 'protocol_rights_guardianship_spectrum',
+    type: 'Protocol',
+    name: 'Rights–Guardianship Spectrum',
+    shortName: 'Guardianship Spectrum',
+    description:
+      'A pedagogical matrix (MOS §4) for asking how voice, care, autonomy and accountability differ across situations — adult humans, dependent persons, sentient animals, ecosystems. Explicitly not an appointment system: legal guardianship, custody and intervention all require separate authority.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Ethics',
+    implementationPriority: 'High',
+    dependencies: ['framework_mos']
+  },
+  {
+    id: 'platform_status_atlas',
+    // renamed from platform_rights_status_dashboard; MOS §10 replaces the Rights
+    // Status Atlas and Dashboard with this two-layer structure
     type: 'Platform',
-    name: 'Rights Status Dashboard',
-    shortName: 'Rights Dashboard',
-    description: 'A real-time dashboard tracking rights violations and ecosystem personhood status, linked to the Citizen Reporting Portal and IUCN Red List.',
+    name: 'Ethical Deliberation and Legal Status Atlas',
+    shortName: 'Status Atlas',
+    description:
+      'Two strictly separated layers: an advisory layer of open questions, deliberations and dissent, labelled non-binding and time-limited; and an authoritative import layer copying legal status from a competent record. The layers may not share colours, icons, scores or rankings — engagement counts cannot create personhood, guilt, or a funding claim.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Technology',
-    dependencies: ['framework_mos', 'institution_dj_tribunal']
+    implementationPriority: 'High',
+    dependencies: [
+      'framework_mos',
+      'institution_dj_tribunal' // cluster: constitutional-foundation
+    ]
   },
   {
     id: 'platform_citizen_reporting_portal',
     type: 'Platform',
     name: 'Citizen Reporting Portal',
     shortName: 'Citizen Reporting Portal',
-    description: 'A mobile-first, multi-language, anonymous portal for reporting rights violations, feeding into the Rights Status Dashboard.',
+    description:
+      'Mobile-first, multi-language, anonymous portal for reporting rights violations, feeding the advisory layer of the Status Atlas. Public reporting must protect whistleblowers, minors, sacred sites, health information and unresolved allegations.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Technology',
-    dependencies: ['framework_mos', 'platform_rights_status_dashboard']
+    implementationPriority: 'Medium',
+    dependencies: ['framework_mos', 'platform_status_atlas']
   },
   {
-    id: 'tool_spiral_aware_microlearning',
+    id: 'tool_spiral_translation_guide',
+    // renamed from tool_spiral_aware_microlearning; MOS §6. Eight other outlines
+    // still say "Spiral Microlearning" or "Spiral Peacecraft" — worth a sweep.
     type: 'Tool',
-    name: 'Spiral-Aware Microlearning Module',
-    shortName: 'Spiral Microlearning',
-    description: 'Interactive, gamified lessons for schools and public education, teaching the Spiral-Aware Rights Culture. Integrates with Educational Systems Framework.',
+    name: 'Spiral Translation Guide',
+    shortName: 'Spiral Translation Guide',
+    description:
+      'An optional communication aid for expressing the same substantive proposal through different value vocabularies — duty, stability, effectiveness, care, tradition, freedom, planetary relationship. §6.2 forbids any GGF body from assessing or storing a developmental stage for a person or group, or letting a stage affect credibility, eligibility, rights, hiring, policing, or remedy.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Governance',
-    dependencies: ['framework_mos', 'framework_education']
+    implementationPriority: 'Medium',
+    dependencies: [
+      'framework_mos',
+      'framework_education' // cluster: human-flourishing
+    ]
   },
-  {
-    id: 'campaign_rights_for_all_beings',
-    type: 'Initiative',
-    name: '#RightsForAllBeings Campaign',
-    shortName: '#RightsForAllBeings',
-    description: 'A public engagement campaign on social media to build awareness and dialogue around the MOS principles.',
-    tier: 1,
-    status: 'Proposed',
-    primaryDomain: 'Governance',
-    dependencies: ['framework_mos']
-  },
+
+  // === MOS CHILD ENTITIES (no longer described in v2.8.2) ===
+  // Retained for the decision, not because the outline supports them. None is
+  // referenced from another cluster; Sacred Seed Kit is the only one still
+  // appearing in another framework's outline text (Kinship Garden).
   {
     id: 'tool_sacred_seed_kit',
     type: 'Tool',
     name: 'Sacred Seed Kit',
     shortName: 'Sacred Seed Kit',
-    description: 'A toolkit for BAZs and local communities to initiate dialogues about MOS principles.',
+    description:
+      'Toolkit for BAZs and local communities to initiate dialogues about MOS principles. RETIRED FROM MOS: not described in v2.8.2. Still referenced by the Kinship Garden outline — consider re-parenting there rather than deleting.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
-    dependencies: ['framework_mos', 'institution_baz']
+    implementationPriority: 'Low',
+    dependencies: ['institution_baz']
   },
   {
     id: 'protocol_moon_wish_test',
     type: 'Protocol',
     name: 'Moon Wish Test',
     shortName: 'Moon Wish Test',
-    description: 'A contemplative protocol for assessing the long-term ethical implications of space governance and planetary-scale interventions.',
+    description:
+      'Contemplative protocol for assessing long-term ethical implications of planetary-scale intervention. RETIRED: not described in MOS v2.8.2.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Ethics',
-    dependencies: ['framework_mos', 'council_earth', 'framework_space_governance']
+    implementationPriority: 'Low',
+    dependencies: ['framework_space_governance']
   },
   {
     id: 'tool_contemplative_assessment_tools',
     type: 'Tool',
     name: 'Contemplative Assessment Tools',
     shortName: 'Contemplative Tools',
-    description: 'A suite of methodologies for evaluating systems based on wisdom and consciousness, including the Consciousness Alignment Index (CAI).',
+    description:
+      'Methodologies for evaluating systems on presence, clarity, compassion, integrity and creativity. RETIRED: not described in MOS v2.8.2.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Ethics',
-    dependencies: ['framework_mos']
+    implementationPriority: 'Low'
   },
   {
     id: 'metric_consciousness_alignment_index',
     type: 'DataMetric',
     name: 'Consciousness Alignment Index (CAI)',
     shortName: 'CAI',
-    description: 'A metric that measures systems for qualities like presence, clarity, compassion, integrity, and creativity.',
+    description:
+      'Metric of presence, clarity, compassion, integrity and creativity. RETIRED: not described in MOS v2.8.2.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Ethics',
+    implementationPriority: 'Low',
     dependencies: ['tool_contemplative_assessment_tools']
+  },
+  {
+    id: 'campaign_rights_for_all_beings',
+    type: 'Initiative',
+    name: '#RightsForAllBeings Campaign',
+    shortName: '#RightsForAllBeings',
+    description:
+      'Public engagement campaign around MOS principles. RETIRED: not described in MOS v2.8.2, which warns against public naming and gamified moral signalling.',
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Governance',
+    implementationPriority: 'Low'
   },
   {
     id: 'process_speculative_paradigm_pilot',
     type: 'Process',
     name: 'Speculative Paradigm Pilot',
     shortName: 'Speculative Pilot',
-    description: 'A process to test the ethical implications of emerging technologies like neural interfaces, mycelial networks, and DAOs by 2026.',
+    description:
+      'Process for testing the ethical implications of neural interfaces, mycelial networks and DAOs. RETIRED: not described in MOS v2.8.2, and its 2026 target date has passed.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Technology',
-    dependencies: ['framework_mos', 'framework_technology_governance']
-  },
-
-  // === INDIGENOUS TECHNOLOGY PROTOCOLS ===
-  {
-    id: 'protocol_indigenous_ai',
-    type: 'Protocol',
-    name: 'Indigenous AI Sovereignty Protocol',
-    shortName: 'Indigenous AI Protocol',
-    description: 'Protocol governing AI systems trained on or interacting with Traditional Ecological Knowledge (TEK). Ensures Indigenous data sovereignty, community consent, and benefit-sharing for any AI applications derived from Indigenous knowledge systems.',
-    tier: 1,
-    status: 'Draft',
-    primaryDomain: 'Technology',
-    geographicScope: 'Global',
-    implementationPriority: 'High',
-    dependencies: ['framework_indigenous', 'protocol_fpic2', 'framework_technology_governance']
+    implementationPriority: 'Low',
+    dependencies: ['framework_technology_governance']
   }
 ];
 
 export const ethicalOSRelationships: GgfRelationship[] = [
-  // === ETHICAL GUIDANCE TO OTHER CORE SYSTEMS (UNCHANGED) ===
+  // --- framework_indigenous ---------------------------------------------
   {
     from: 'framework_indigenous',
     to: 'framework_treaty',
     type: 'INFORMS',
-    description: 'Indigenous principles of Rights of Nature and sovereignty foundational to Treaty legal reforms',
+    description:
+      'Rights of Nature and sovereignty principles inform Treaty reforms; v1.1 treats Treaty authority as subject to constitutional revision rather than settled.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -281,27 +361,28 @@ export const ethicalOSRelationships: GgfRelationship[] = [
     from: 'framework_indigenous',
     to: 'framework_meta_gov',
     type: 'GUIDES',
-    description: 'Meta-Governance coordination must respect Indigenous protocols and sovereignty',
+    description:
+      'Coordination must respect Indigenous protocols, consent and knowledge boundaries, and holds no independent substantive sovereignty over them.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
-  
-  // === INTERNAL INDIGENOUS FRAMEWORK RELATIONSHIPS (UNCHANGED) ===
   {
     from: 'framework_indigenous',
-    to: 'council_earth',
-    type: 'ESTABLISHES',
-    description: 'Indigenous Framework establishes Earth Council as moral authority',
+    to: 'protocol_constitutional_interface',
+    type: 'DEPENDS_ON',
+    description:
+      'v1.1 conforms to the Constitutional Interface Specification for plural legitimacy, jurisdiction, protected continuity, knowledge boundaries and framework authority limits.',
     strength: 'Strong',
     frequency: 'Continuous',
-    sequenceType: 'Sequential'
+    sequenceType: 'Parallel'
   },
   {
     from: 'framework_indigenous',
     to: 'institution_baz',
     type: 'ESTABLISHES',
-    description: 'Indigenous Framework establishes BAZs as primary governance institution',
+    description:
+      'Defines BAZs as the primary Indigenous-led governance institution, with explicit limits on what a BAZ may claim over those inside it.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Sequential'
@@ -310,18 +391,69 @@ export const ethicalOSRelationships: GgfRelationship[] = [
     from: 'framework_indigenous',
     to: 'protocol_fpic2',
     type: 'ESTABLISHES',
-    description: 'Indigenous Framework establishes enhanced FPIC protocols',
+    description: 'Establishes consent, refusal and withdrawal rules for affected nations.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Sequential'
   },
-  
-  // === EARTH COUNCIL OVERSIGHT (UNCHANGED) ===
+  {
+    from: 'framework_indigenous',
+    to: 'council_earth',
+    type: 'COORDINATES_WITH',
+    // was ESTABLISHES — v1.1 §6.1 is explicit that the GGF cannot create, name,
+    // compose or certify such a body
+    description:
+      'Offers a provisional interface to any Indigenous-created coordinating body that chooses to engage. Recognition, not creation: peoples may form one council, several, a confederation, a network, or none.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_hearthstone',
+    type: 'GUIDES',
+    description:
+      'Supplies the principles of rematriation, rightful relationship and stewardship that the Hearthstone Protocol is built on.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_aubi',
+    type: 'GUIDES',
+    description:
+      'Sets the limits on AUBI observation: epistemic rights, protected unobservability, and — after v1.1 — no Love Ledger benefit tracking.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_nested_sovereignty',
+    type: 'GUIDES',
+    description:
+      'Protected non-transfer and non-convertibility apply to Indigenous economies as a sovereignty question, not only an economic one.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'protocol_indigenous_ai',
+    type: 'ESTABLISHES',
+    description:
+      'Establishes Indigenous data, knowledge and AI sovereignty over systems touching Traditional Ecological Knowledge.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+
+  // --- council_earth, BAZs, consent --------------------------------------
   {
     from: 'council_earth',
     to: 'council_mgcc',
     type: 'OVERSEES',
-    description: 'Earth Council holds moral and ethical oversight over MGCC coordination',
+    description:
+      'Where an Earth Council exists and engages, it holds moral and ethical oversight over MGCC coordination.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -329,19 +461,20 @@ export const ethicalOSRelationships: GgfRelationship[] = [
   {
     from: 'council_earth',
     to: 'institution_baz',
-    type: 'OVERSEES',
-    description: 'Earth Council provides guidance and oversight to BAZ governance',
+    type: 'COORDINATES_WITH',
+    // was OVERSEES — v1.1 §3.5 removes proxy authority; a translocal body does
+    // not supervise the peoples who chose to convene it
+    description:
+      'Coordinates across BAZs without acquiring authority over any of them. No proxy authority: engaging with a coordinating body does not transfer a people\'s standing to it.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-  
-  // === BAZ IMPLEMENTATION (UNCHANGED) ===
   {
     from: 'protocol_fpic2',
     to: 'institution_baz',
     type: 'IMPLEMENTS',
-    description: 'BAZs are the primary institution for implementing FPIC 2.0',
+    description: 'BAZs are the primary institution through which consent and refusal operate.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
@@ -350,85 +483,200 @@ export const ethicalOSRelationships: GgfRelationship[] = [
     from: 'council_mgcc',
     to: 'institution_baz',
     type: 'DELEGATES_TO',
-    description: 'Following subsidiarity, MGCC delegates local governance to BAZs',
+    description: 'Following subsidiarity, the MGCC delegates local governance to BAZs.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
+  {
+    from: 'protocol_indigenous_ai',
+    to: 'framework_technology_governance',
+    type: 'GUIDES',
+    description:
+      'Binds technology governance where a system is trained on or interacts with Traditional Ecological Knowledge.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
 
-  // === COMMONS RELATIONSHIP (UNCHANGED) ===
+  // --- framework_more_than_human ------------------------------------------
+  {
+    from: 'framework_more_than_human',
+    to: 'framework_mos',
+    type: 'DEPENDS_ON',
+    description:
+      'Extends the MOS Rights–Guardianship Spectrum into procedural representation. The overlap between the two is unresolved, which is why this framework is unpublished.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_more_than_human',
+    to: 'mechanism_guardian_seats',
+    type: 'INFORMS',
+    description:
+      'Supplies the fiduciary guardianship and subsidiarity-of-voice reasoning behind Guardian Seats.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
   {
     from: 'framework_indigenous',
-    to: 'framework_hearthstone',
+    to: 'framework_more_than_human',
     type: 'GUIDES',
-    description: 'The Indigenous Framework provides the core principles of Rematriation, Rightful Relationship, and stewardship that are foundational to the Hearthstone Protocol.',
+    description:
+      'Evidentiary pluralism across scientific, traditional and community knowledge is bounded by Indigenous knowledge-protection rules.',
     strength: 'Strong',
     sequenceType: 'Parallel'
   },
 
-  // === NEW: MOS ESTABLISHMENT & INTEGRATION RELATIONSHIPS ===
-  
-  // MOS Dependency on Genesis Protocol
+  // --- framework_mos ------------------------------------------------------
   {
-    from: 'protocol_genesis', // Assumed ID for Genesis Protocol
+    from: 'protocol_genesis',
     to: 'framework_mos',
     type: 'GUIDES',
-    description: 'The Genesis Protocol\'s "Conscience & Sovereignty Clause" provides the foundational operating constraints for the MOS.'
+    description:
+      'The Genesis Conscience & Sovereignty Clause supplies the MOS operating constraints.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_mos',
+    to: 'protocol_dynamic_rights_spectrum',
+    type: 'ESTABLISHES',
+    description: 'Establishes the Dynamic Rights Spectrum as its central advisory instrument.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_mos',
+    to: 'protocol_rights_guardianship_spectrum',
+    type: 'ESTABLISHES',
+    description: 'Establishes the Rights–Guardianship Spectrum as a pedagogical matrix (§4).',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_mos',
+    to: 'platform_status_atlas',
+    type: 'ESTABLISHES',
+    description:
+      'Establishes the two-layer Atlas and the separation rules that keep moral support from reading as law (§10).',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_mos',
+    to: 'platform_citizen_reporting_portal',
+    type: 'ESTABLISHES',
+    description: 'Establishes anonymous reporting into the Atlas advisory layer.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_mos',
+    to: 'tool_spiral_translation_guide',
+    type: 'ESTABLISHES',
+    description: 'Establishes the Spiral Translation Guide and its no-stage-assignment rule (§6).',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'platform_citizen_reporting_portal',
+    to: 'platform_status_atlas',
+    type: 'INFORMS',
+    description:
+      'Reports enter the advisory layer only, and never the authoritative import layer.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
   },
 
-  // MOS Establishes its Tools
-  { from: 'framework_mos', to: 'protocol_dynamic_rights_spectrum', type: 'ESTABLISHES' },
-  { from: 'framework_mos', to: 'platform_rights_status_dashboard', type: 'ESTABLISHES' },
-  { from: 'framework_mos', to: 'platform_citizen_reporting_portal', type: 'ESTABLISHES' },
-  { from: 'framework_mos', to: 'tool_spiral_aware_microlearning', type: 'ESTABLISHES' },
-  { from: 'framework_mos', to: 'campaign_rights_for_all_beings', type: 'ESTABLISHES' },
-  { from: 'framework_mos', to: 'tool_sacred_seed_kit', type: 'ESTABLISHES' },
-  { from: 'framework_mos', to: 'protocol_moon_wish_test', type: 'ESTABLISHES' },
-  { from: 'framework_mos', to: 'tool_contemplative_assessment_tools', type: 'ESTABLISHES' },
-  { from: 'tool_contemplative_assessment_tools', to: 'metric_consciousness_alignment_index', type: 'ESTABLISHES' },
-  { from: 'framework_mos', to: 'process_speculative_paradigm_pilot', type: 'ESTABLISHES' },
-
-  // MOS Advisory Integrations (from doc)
+  // --- MOS advisory integrations ------------------------------------------
   {
     from: 'framework_mos',
     to: 'framework_treaty',
     type: 'INFORMS',
-    description: 'Offers advisory translation of the Dynamic Rights Spectrum into Ecocide law for the Digital Justice Tribunal.'
+    description:
+      'Offers advisory translation of the Dynamic Rights Spectrum toward ecocide law. The MOS never authors a binding record.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
   },
   {
     from: 'framework_mos',
     to: 'framework_aubi',
     type: 'INFORMS',
-    description: 'Provides ethical guidance on suggesting rewards for stewardship (Tiers 2-3) via Hearts/Leaves.'
+    description:
+      'Advises on stewardship recognition without creating a funding claim; engagement cannot generate entitlement.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
   },
   {
     from: 'framework_mos',
     to: 'framework_work_liberation',
     type: 'INFORMS',
-    description: 'Offers ethical grounding for organizing Community Work Teams like River Guardians to uphold rights.'
+    description:
+      'Grounds the protection against systems that tie a person\'s worth to their productivity.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
   },
   {
     from: 'framework_mos',
     to: 'framework_education',
     type: 'INTEGRATES_WITH',
-    description: 'Provides the Spiral-Aware Microlearning Module for embedding a Spiral-Aware Rights Culture in curricula.'
+    description:
+      'Supplies the Spiral Translation Guide for curricula, with the stage-assignment prohibition attached.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
   },
   {
     from: 'framework_mos',
     to: 'framework_technology_governance',
     type: 'INFORMS',
-    description: 'Provides ethical guidance for the AI Consciousness Assessment Framework.'
+    description:
+      'Advises on AI consciousness assessment, and on the anti-surveillance limits in §12.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
   },
   {
     from: 'framework_mos',
     to: 'council_earth',
     type: 'INFORMS',
-    description: 'Offers guidance to the Earth Council for consideration, while respecting its sovereign precedence.'
+    description:
+      'Offers guidance for consideration while respecting sovereign precedence. Indigenous authority is recognised in §5, not represented.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
   },
   {
     from: 'framework_mos',
-    to: 'council_phc', // Planetary Health Council
+    to: 'council_phc',
     type: 'INFORMS',
-    description: 'Provides ethical guidance to the Planetary Health Council for applying the Dynamic Rights Spectrum.'
+    description: 'Advises the Planetary Health Council on applying the Dynamic Rights Spectrum.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_mos',
+    to: 'framework_animal_welfare',
+    type: 'INFORMS',
+    description:
+      'The Rights–Guardianship Spectrum frames suffering, agency, dependence and human-created control for sentient animals, while leaving seizure, treatment and legal standing to competent authority.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_mos',
+    type: 'GUIDES',
+    description:
+      'MOS §5 subordinates its own reasoning to Indigenous authority, cultural plurality and sacred relations.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
   }
 ];

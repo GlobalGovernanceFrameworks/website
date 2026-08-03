@@ -3,9 +3,20 @@
 import type { GgfEntity, GgfRelationship } from './_types';
 
 /**
- * TIER 1-2: TECHNOLOGY OPERATING SYSTEM CLUSTER
- * Core technology governance framework (Tier 1) with specialized applications (Tier 2)
- * Provides ethical governance for emerging technologies including AI, biotech, and digital systems
+ * TIER 1: TECHNOLOGY OPERATING SYSTEM
+ *
+ * Technology Governance is the cross-domain interface; Aethelred and the
+ * Fractal Intelligence Accord are the specialized applications sitting on it.
+ * TGIF v3.6 §1.3 and §1.4 add a non-authority clause and an explicit ban on
+ * framework-to-law conversion — the same pattern as Justice, Aurora and MOS.
+ *
+ * Conventions: see cluster.implementation-os.ts.
+ *
+ * TIER DISAGREEMENT. The Fractal Intelligence Accord v6.0 declares "Tier 1
+ * (Global Infrastructure)" in its own front matter; the schema had it at Tier 2.
+ * Set to 1 here to match the source, but it changes the outline directory
+ * default from `tier-2/` to `tier-1/`, so `ui.outline.dir` is now pinned
+ * explicitly. Verify against the repo before merging.
  */
 
 export const technologyOSEntities: GgfEntity[] = [
@@ -13,16 +24,21 @@ export const technologyOSEntities: GgfEntity[] = [
   {
     id: 'framework_technology_governance',
     type: 'Framework',
-    name: 'Technology Governance Implementation Framework',
+    // "Implementation" dropped at v3.6
+    name: 'Technology Governance Framework',
     shortName: 'TGIF',
-    description: 'Comprehensive technology governance and AI ethics framework providing parent governance for all tech applications',
+    description:
+      'Cross-domain interface for technology risk, public-interest standards, community self-determination and lawful intervention. Carries a non-authority clause and an explicit prohibition on framework-to-law conversion: a standard published here does not become a legal obligation by being published here.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Technology',
     geographicScope: 'Global',
     implementationPriority: 'High',
-    dependencies: ['framework_aurora_accord'],
-    enables: ['council_gtc', 'framework_aethelred_accord'],
+    dependencies: [
+      'framework_aurora_accord', // cluster: data-os
+      'protocol_constitutional_interface' // cluster: governance-os
+    ],
+    enables: ['council_gtc', 'framework_aethelred_accord', 'framework_fractal_intelligence'],
     ui: {
       path: '/frameworks/technology-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.technologyGovernance',
@@ -31,26 +47,32 @@ export const technologyOSEntities: GgfEntity[] = [
       group: 'humanSocialSystems',
       outline: {
         version: 'v3.6',
-        updated: '2026-08-03',
+        updated: '2026-08-01',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'How a community decides what technology it will accept, and on what terms — with an equally careful account of when intervention is lawful and when it is merely tempting. Version 3.6 separates public-interest standards from legal obligation: the framework can define what good practice looks like, but it cannot convert that definition into law, create a regulator, or override a community that declines.'
       }
     }
   },
 
-  // === TIER 2: SPECIALIZED TECHNOLOGY APPLICATIONS ===
+  // === TIER 2: SPECIALIZED APPLICATIONS ===
   {
     id: 'framework_aethelred_accord',
     type: 'Framework',
-    name: 'Aethelred Accord - Synthetic Biology Governance',
+    name: 'The Aethelred Accord',
     shortName: 'Aethelred Accord',
-    description: 'Governance framework for synthetic biology and advanced biotech applications',
+    description:
+      'Biosafety, genetic rights, biotechnology access and incident preparedness. Treats access and rights as inseparable from containment: a biosafety regime that only restricts, without widening who may benefit, reproduces the inequity it claims to manage.',
     tier: 2,
-    status: 'Ready',
+    status: 'Review',
     primaryDomain: 'Technology',
     geographicScope: 'Global',
     implementationPriority: 'High',
-    dependencies: ['framework_technology_governance'],
+    dependencies: [
+      'framework_technology_governance',
+      'framework_aurora_accord', // cluster: data-os
+      'framework_justice' // cluster: justice-os
+    ],
     ui: {
       path: '/frameworks/aethelred-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.aethelredAccord',
@@ -61,7 +83,8 @@ export const technologyOSEntities: GgfEntity[] = [
         version: 'v1.2.2',
         updated: '2026-08-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Synthetic biology governed as four inseparable problems: keeping dangerous work contained, protecting genetic rights, widening who gets access to the benefits, and being ready when something escapes anyway. Version 1.2.2 is a conformance patch and is explicit about its review status — it is a draft awaiting expert, community, Indigenous-nation, scientific, labour, disability-rights, reproductive-rights and legal review, none of which has happened yet.'
       }
     }
   },
@@ -70,14 +93,16 @@ export const technologyOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Fractal Intelligence Accord',
     shortName: 'FIA',
-    description: 'AGI governance framework for compute subsidiarity, contextual intelligence, and cognitive sovereignty — split into a foundational charter and a living transition protocol',
-    tier: 2,
-    status: 'Outline',
+    description:
+      'AGI governance built on five pillars: a Global Compute Commons with hardware subsidiarity, a Contextual Substrate under the Supermodular Labor Protocol, fractal development architecture, alignment economics through risk bonding, and boundary conditions with handoff protocols. Organized around protecting local distinctiveness rather than optimizing global capability.',
+    tier: 1,
+    // was 'Outline', which is not a valid status value — this never surfaced
+    // because tsx strips types without checking them
+    status: 'Ready',
     primaryDomain: 'Technology',
     geographicScope: 'Global',
     implementationPriority: 'High',
     dependencies: ['framework_technology_governance'],
-    enables: [],
     ui: {
       path: '/frameworks/fractal-intelligence-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.fractalIntelligenceAccord',
@@ -85,10 +110,14 @@ export const technologyOSEntities: GgfEntity[] = [
       slug: 'fractal-intelligence-accord',
       group: 'humanSocialSystems',
       outline: {
+        // pinned because the entity moved to tier 1 while the outline still
+        // lives under tier-2/ in the repo — verify and unpin once aligned
+        dir: 'tier-2/fractal-intelligence-accord',
         version: 'v6.0',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'An AGI framework whose stated purpose is not to govern AGI but to protect the conditions for human meaning — which it argues requires texture: diversity in food, shelter, learning and livelihood that industrial monoculture erodes in the name of efficiency. Every mechanism, from Reality Rent to the Autonomy Rule, is meant to increase the variety of human experience rather than reduce it. Version 6.0 is marked final and locked, and includes its own red-team chapter of acknowledged failure modes.'
       }
     }
   },
@@ -97,15 +126,17 @@ export const technologyOSEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Quantum Governance Lab',
     shortName: 'Quantum Lab',
-    description: 'A specialized research and governance institution responsible for developing protocols and ethical guidelines for emerging quantum technologies, including quantum-resistant encryption, computation, and their impact on causality.',
-    tier: 2, // A Tier 2 institution that enables advanced Tier 4 governance.
+    description:
+      'Research and governance institution for emerging quantum technologies: quantum-resistant encryption, computation, and their implications for causality and long-horizon governance.',
+    tier: 2,
     status: 'Proposed',
     primaryDomain: 'Technology',
     geographicScope: 'Global',
-    implementationPriority: 'High', // High due to near-term cybersecurity threats from quantum computing.
+    implementationPriority: 'High',
     dependencies: ['framework_technology_governance', 'council_gtc'],
-    enables: ['framework_deep_time']
-    // No UI block needed as it's a sub-institution, not a primary navigable framework.
+    enables: [
+      'framework_deep_time' // cluster: visionary-meta
+    ]
   },
 
   // === TIER 4 ===
@@ -122,9 +153,9 @@ export const technologyOSEntities: GgfEntity[] = [
     geographicScope: 'Global',
     implementationPriority: 'Medium',
     dependencies: [
-      'framework_technology_governance',   // verify id
-      'framework_aurora_accord',           // verify id
-      'framework_mos'                      // verify id
+      'framework_technology_governance',
+      'framework_aurora_accord', // cluster: data-os
+      'framework_mos' // cluster: ethical-os
     ]
     // No ui block: outline exists at tier-4/weaver-protocol but is not published.
   },
@@ -135,66 +166,58 @@ export const technologyOSEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Global Technology Council',
     shortName: 'GTC',
-    description: 'Meta-Governance council overseeing all technology frameworks and ethical technology development',
+    description:
+      'Meta-Governance council coordinating across technology frameworks. Standard-setting and coordination; the non-authority clause applies to it as much as to the framework that convenes it.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Technology',
     geographicScope: 'Global',
     implementationPriority: 'High',
-    dependencies: ['framework_technology_governance', 'framework_meta_gov']
+    dependencies: [
+      'framework_technology_governance',
+      'framework_meta_gov' // cluster: governance-os
+    ]
   }
 ];
 
 export const technologyOSRelationships: GgfRelationship[] = [
-  // === CORE TECHNOLOGY GOVERNANCE ===
+  // --- framework_technology_governance -----------------------------------
   {
     from: 'framework_technology_governance',
     to: 'council_gtc',
     type: 'ESTABLISHES',
-    description: 'TGIF establishes Global Technology Council as primary governance body for technology oversight',
+    description: 'Establishes the Global Technology Council as its coordination venue.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Sequential'
   },
   {
     from: 'framework_technology_governance',
-    to: 'framework_aethelred_accord',
-    type: 'GUIDES',
-    description: 'TGIF provides parent governance principles for specialized tech frameworks like Aethelred Accord',
+    to: 'protocol_constitutional_interface',
+    type: 'DEPENDS_ON',
+    description:
+      'v3.6 conforms to the Constitutional Interface Specification for decision classes and framework authority boundaries.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
-
-  // === CONNECTIONS TO META-GOVERNANCE ===
-  {
-    from: 'council_gtc',
-    to: 'council_mgcc',
-    type: 'REPORTS_TO',
-    description: 'Global Technology Council operates within Meta-Governance architecture',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-
-  // === CONNECTIONS TO DATA OS ===
   {
     from: 'framework_technology_governance',
     to: 'framework_aurora_accord',
     type: 'INTEGRATES_WITH',
-    description: 'TGIF coordinates with Aurora Accord on all data-related technology governance matters',
+    description:
+      'Aurora supplies data rights, identity and fiduciary duties; TGIF supplies risk and standards. Neither governs the other.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
-
-  // === CONNECTIONS TO HUMAN FLOURISHING ===
   {
-    from: 'framework_aethelred_accord',
-    to: 'framework_global_health',
+    from: 'framework_technology_governance',
+    to: 'framework_justice',
     type: 'COORDINATES_WITH',
-    description: 'Synthetic biology governance coordinates with global health systems on biotech applications',
-    strength: 'Medium',
+    description:
+      'Due process, adjudication and remedy interfaces sit with Justice Systems; TGIF does not adjudicate.',
+    strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
@@ -202,215 +225,352 @@ export const technologyOSRelationships: GgfRelationship[] = [
     from: 'framework_technology_governance',
     to: 'framework_synoptic',
     type: 'COORDINATES_WITH',
-    description: 'TGIF coordinates with Synoptic Protocol on AI ethics and algorithmic transparency',
+    description:
+      'Recommender scope, information-system accountability and epistemic rights are held jointly with Synoptic.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-
-  // === CONNECTIONS TO ETHICAL OS ===
   {
-    from: 'framework_indigenous',
-    to: 'framework_technology_governance',
-    type: 'GUIDES',
-    description: 'Provides the ethical guardrails and sovereignty protocols for any technology, including "Indigenous AI Oracles," that interacts with or is trained on Traditional Ecological Knowledge (TEK).',
-    strength: 'Strong',
+    from: 'framework_technology_governance',
+    to: 'framework_aubi',
+    type: 'COORDINATES_WITH',
+    description:
+      'Non-deprivation floors mean a technology transition cannot be allowed to remove someone\'s material security.',
+    strength: 'Medium',
+    frequency: 'Regular',
     sequenceType: 'Parallel'
   },
   {
     from: 'framework_technology_governance',
-    to: 'framework_mos',
-    type: 'IMPLEMENTS',
-    description: 'TGIF implements MOS rights principles for AI consciousness assessment and digital entity rights',
+    to: 'framework_work_liberation',
+    type: 'COORDINATES_WITH',
+    description:
+      'Labour justice, maintenance work and technological transition are Work in Liberation competences.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_technology_governance',
+    to: 'framework_meta_gov',
+    type: 'ESCALATES_TO',
+    description: 'Cross-domain and institutional disputes route through Meta-Governance.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_technology_governance',
+    to: 'framework_aethelred_accord',
+    type: 'GUIDES',
+    description: 'Parent governance for biotechnology applications.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
   {
-    from: 'council_gtc',
-    to: 'council_earth',
-    type: 'COORDINATES_WITH',
-    description: 'GTC consults with Earth Council on technology impacts on Indigenous communities and natural systems',
-    strength: 'Medium',
-    frequency: 'Regular',
+    from: 'framework_technology_governance',
+    to: 'framework_fractal_intelligence',
+    type: 'GUIDES',
+    description: 'Parent governance for AGI and compute infrastructure.',
+    strength: 'Strong',
+    frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
-
-  // === CONNECTIONS TO JUSTICE OS ===
   {
     from: 'framework_technology_governance',
-    to: 'institution_dj_tribunal',
-    type: 'ESCALATES_TO',
-    description: 'Technology governance violations and AI rights cases escalated to Digital Justice Tribunal',
-    strength: 'Medium',
-    frequency: 'As-Needed',
-    sequenceType: 'Conditional'
-  },
-
-  // === CONNECTIONS TO ECONOMIC OS ===
-  {
-    from: 'framework_aethelred_accord',
-    to: 'framework_gaian_trade',
-    type: 'INFORMS',
-    description: 'Synthetic biology governance informs biotechnology trade standards and ethical supply chains',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-
-  // === CONNECTIONS TO ECOLOGICAL CLUSTER ===
-  {
-    from: 'framework_aethelred_accord',
-    to: 'framework_biodiversity',
-    type: 'COORDINATES_WITH',
-    description: 'Synthetic biology governance coordinates with biodiversity conservation on genetic modification impacts',
+    to: 'framework_digital_commons',
+    type: 'GUIDES',
+    description: 'Sets technical standards for digital commons infrastructure.',
     strength: 'Strong',
-    frequency: 'Regular',
     sequenceType: 'Parallel'
   },
   {
     from: 'framework_technology_governance',
     to: 'framework_eco_intel',
     type: 'COLLABORATES_WITH',
-    description: 'TGIF collaborates with Eco Intel on environmental monitoring technologies and AI applications',
+    description: 'Shared standards for ecological sensing and interpretation systems.',
     strength: 'Medium',
-    frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-
-  // === CONSTITUTIONAL LAYER SUPPORT ===
-  {
-    from: 'mechanism_gcf',
-    to: 'framework_technology_governance',
-    type: 'FUNDS',
-    description: 'Global Commons Fund supports ethical technology development and governance initiatives',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-
-  // === CROSS-CLUSTER TECHNOLOGY INTEGRATION ===
   {
     from: 'framework_technology_governance',
     to: 'framework_shield',
     type: 'COORDINATES_WITH',
-    description: 'TGIF coordinates with Shield Protocol on cybersecurity and AI-enabled crime prevention',
-    strength: 'Medium',
+    description: 'Supplies the cyber defence standards Shield cooperation relies on.',
+    strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
   {
     from: 'framework_technology_governance',
-    to: 'framework_digital_commons',
+    to: 'framework_hearthstone',
     type: 'GUIDES',
-    description: 'TGIF provides ethical guidelines for digital commons governance and technology access',
+    description: 'Technical standards for commons registry infrastructure.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_technology_governance',
+    to: 'institution_dj_tribunal',
+    type: 'ESCALATES_TO',
+    description: 'Technology harms with legal consequence escalate to the Tribunal.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_technology_governance',
+    to: 'framework_mos',
+    type: 'IMPLEMENTS',
+    description:
+      'Applies MOS ethical reasoning to technology assessment. §1.4 forbids converting that reasoning into binding obligation.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_technology_governance',
+    type: 'GUIDES',
+    description:
+      'Indigenous data and knowledge sovereignty bound what may be built, trained or deployed.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'mechanism_gcf',
+    to: 'framework_technology_governance',
+    type: 'FUNDS',
+    description: 'The Global Commons Fund resources public-interest technology standards work.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-  
-  // === CONNECTIONS FROM FRACTAL INTELLIGENCE ACCORD ===
+
+  // --- council_gtc --------------------------------------------------------
   {
-    from: 'framework_technology_governance',
+    from: 'council_gtc',
+    to: 'council_mgcc',
+    type: 'REPORTS_TO',
+    description: 'The GTC is a domain council within the Meta-Governance structure.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gtc',
+    to: 'council_earth',
+    type: 'COORDINATES_WITH',
+    description:
+      'Technology decisions touching Indigenous knowledge go through the Earth Council interface.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gtc',
     to: 'framework_fractal_intelligence',
+    type: 'OVERSEES',
+    description: 'The GTC holds coordination oversight of AGI governance.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gtc',
+    to: 'institution_quantum_lab',
+    type: 'OVERSEES',
+    description: 'The GTC oversees the Quantum Governance Lab.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // --- framework_aethelred_accord -----------------------------------------
+  {
+    from: 'framework_aethelred_accord',
+    to: 'framework_treaty',
+    type: 'IMPLEMENTS',
+    description: 'Treaty v1.3 is a named controlling interface for the Accord.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aethelred_accord',
+    to: 'framework_global_health',
+    type: 'COORDINATES_WITH',
+    description:
+      'Incident preparedness and biosecurity are shared with the Global Health framework, a named controlling interface.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aethelred_accord',
+    to: 'framework_justice',
+    type: 'DEPENDS_ON',
+    description: 'Justice Systems v1.4 supplies due process and remedy for biosafety violations.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aethelred_accord',
+    to: 'framework_aurora_accord',
+    type: 'DEPENDS_ON',
+    description: 'Genetic data governance runs on Aurora Accord rules.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_aethelred_accord',
     type: 'GUIDES',
-    description: 'TGIF provides parent governance principles for the Fractal Intelligence Accord\'s AGI-specific mechanisms',
+    description:
+      'Indigenous consent and protected knowledge bound genetic research and benefit-sharing.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aethelred_accord',
+    to: 'framework_gaian_trade',
+    type: 'INFORMS',
+    description: 'Biosafety classification shapes what may move through regenerative trade zones.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aethelred_accord',
+    to: 'framework_biodiversity',
+    type: 'COORDINATES_WITH',
+    description: 'Gene drives and engineered organisms are a biodiversity question first.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // --- framework_fractal_intelligence -------------------------------------
+  {
+    from: 'framework_fractal_intelligence',
+    to: 'framework_nested_sovereignty',
+    type: 'COORDINATES_WITH',
+    description:
+      'Hardware subsidiarity in the Global Compute Commons is the same subsidiarity argument applied to compute.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
   {
     from: 'framework_fractal_intelligence',
+    to: 'framework_work_liberation',
+    type: 'COORDINATES_WITH',
+    description:
+      'The Supermodular Labor Protocol governs how human contextual work enters model development.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_fractal_intelligence',
+    to: 'framework_financial_systems',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Alignment economics through risk bonding requires financial instruments and a reserve the Financial Systems framework defines.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_fractal_intelligence',
     to: 'framework_aurora_accord',
     type: 'COORDINATES_WITH',
-    description: 'FIA coordinates with Aurora Accord on data provenance, context licensing, and Reality Rent mechanisms',
+    description: 'Training data governance runs on Aurora rules.',
     strength: 'Strong',
-    frequency: 'Regular',
+    frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
   {
     from: 'framework_fractal_intelligence',
     to: 'framework_digital_commons',
     type: 'INTEGRATES_WITH',
-    description: 'FIA\'s Compute Commons and Global Trunk architecture integrates with Digital Commons governance for shared infrastructure access',
+    description: 'The Compute Commons is a digital commons in the strict sense.',
     strength: 'Strong',
-    frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
   {
     from: 'framework_fractal_intelligence',
     to: 'framework_indigenous',
     type: 'COORDINATES_WITH',
-    description: 'FIA\'s Context Sovereignty and CIN mechanisms coordinate with Indigenous Sovereignty Pathways on traditional knowledge protection',
-    strength: 'Medium',
-    frequency: 'Regular',
+    description:
+      'Contextual intelligence depends on local knowledge, which makes consent and non-extraction load-bearing rather than decorative.',
+    strength: 'Strong',
+    frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
   {
     from: 'framework_fractal_intelligence',
     to: 'institution_dj_tribunal',
     type: 'ESCALATES_TO',
-    description: 'Individual grievances against AGI actions under the Accord are routed to the Digital Justice Tribunal',
-    strength: 'Medium',
+    description: 'Boundary-condition breaches escalate to the Tribunal.',
+    strength: 'Strong',
     frequency: 'As-Needed',
     sequenceType: 'Conditional'
   },
-  {
-    from: 'council_gtc',
-    to: 'framework_fractal_intelligence',
-    type: 'OVERSEES',
-    description: 'Global Technology Council oversees the Multi-Stakeholder Trust and capability threshold governance within the FIA',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
 
-  // --- Quantum Lab's role within the Technology OS ---
-  {
-    from: 'council_gtc',
-    to: 'institution_quantum_lab',
-    type: 'OVERSEES',
-    description: 'The Global Technology Council oversees the work of the Quantum Governance Lab, ensuring its alignment with overall technology ethics.',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
+  // --- institution_quantum_lab and protocol_weaver ------------------------
   {
     from: 'institution_quantum_lab',
     to: 'framework_aurora_accord',
     type: 'INFORMS',
-    description: 'The Quantum Lab provides the technical standards for the quantum-resistant cybersecurity protocols required by the Aurora Accord.',
+    description: 'Supplies quantum-resistant encryption standards to the Accord.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-
-  // --- Quantum Lab's connection to Deep Time Governance ---
   {
     from: 'institution_quantum_lab',
     to: 'framework_deep_time',
     type: 'COLLABORATES_WITH',
-    description: 'The Lab collaborates with the Deep Time Governance framework to draft "Causality Preservation Laws" and understand the implications of quantum phenomena on temporal ethics.',
-    strength: 'Strong',
-    frequency: 'As-Needed',
+    description: 'Quantum causality questions feed long-horizon governance design.',
+    strength: 'Medium',
     sequenceType: 'Parallel'
   },
   {
     from: 'institution_quantum_lab',
     to: 'institution_dj_tribunal',
     type: 'INFORMS',
-    description: 'The Lab provides expert technical testimony to the Digital Justice Tribunal, particularly its "Butterfly Courts" chamber, on matters of causality and temporal mechanics.',
+    description: 'Advises the Tribunal on quantum-related evidentiary and security questions.',
     strength: 'Medium',
     frequency: 'As-Needed',
     sequenceType: 'Parallel'
   },
-
-  // === CONNECTION TO HEARTHSTONE PROTOCOL ===
   {
-    from: 'framework_technology_governance',
-    to: 'framework_hearthstone',
-    type: 'GUIDES',
-    description: 'Technology Governance provides the ethical principles for how intangible digital assets, such as AI models, are managed as part of the commons under the Hearthstone Protocol.',
+    from: 'protocol_weaver',
+    to: 'framework_technology_governance',
+    type: 'DEPENDS_ON',
+    description: 'Derives its technical standards and intervention limits from TGIF.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_weaver',
+    to: 'framework_aurora_accord',
+    type: 'DEPENDS_ON',
+    description:
+      'Avatar identity, behavioural data and world telemetry are governed as data relationships.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_weaver',
+    to: 'framework_mos',
+    type: 'DEPENDS_ON',
+    description:
+      'Ontological sovereignty for synthetic entities is a Dynamic Rights Spectrum question.',
     strength: 'Medium',
     sequenceType: 'Parallel'
   }

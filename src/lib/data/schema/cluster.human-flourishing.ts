@@ -13,9 +13,12 @@ export const humanFlourishingEntities: GgfEntity[] = [
   {
     id: 'framework_education',
     type: 'Framework',
-    name: 'Educational Systems Framework',
-    shortName: 'Education',
-    description: 'Educational systems for informed citizenry and global competency',
+    // renamed at v3.1. `ui.titleKey` still resolves to `educationalSystems`;
+    // the three locale files need the same rename before this ships.
+    name: 'The Capacity Engine',
+    shortName: 'Capacity Engine',
+    description:
+      'Regenerative learning and democratic citizenship: the capacity a population needs in order to govern itself, treated as infrastructure rather than as schooling. Not to be confused with `framework_capacity_engine`, the Tier 4 societal adaptation framework that briefly shared this name.',
     tier: 2,
     status: 'Review',
     primaryDomain: 'Governance',
@@ -33,14 +36,15 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v3.1',
         updated: '2026-08-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Learning framed as the capacity a society needs in order to govern itself — which turns out to be a different problem from schooling, and mostly not solved in classrooms. Version 3.1 pairs regenerative learning with democratic citizenship on the argument that people who have never practised deliberation cannot be handed it later. Its own status line still reads Implementation-Ready Draft, which overstates where it is.'
       }
     }
   },
   {
     id: 'framework_global_health',
     type: 'Framework',
-    name: 'Global Health & Pandemic Security Framework',
+    name: 'Global Health Preparedness, Outbreak Response, and Biosecurity Framework',
     shortName: 'Global Health',
     description: 'Health system for capable citizenry and pandemic preparedness',
     tier: 2,
@@ -60,14 +64,15 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v2.2.2',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Preparedness, outbreak response and biosecurity built around community health capacity rather than emergency powers — with lawful emergency response defined narrowly enough that the emergency cannot become the government. Equitable countermeasure access is treated as a design requirement rather than a distributional afterthought, on the evidence of what happened last time. Awaiting expert, public-health, labour, disability, Indigenous and legal review.'
       }
     }
   },
   {
     id: 'framework_mental_health',
     type: 'Framework',
-    name: 'Mental Health Governance Framework',
+    name: 'Living Mandala for Planetary Mental Health Governance',
     shortName: 'Mental Health',
     description: 'Framework for mental health and psychological wellbeing',
     tier: 2,
@@ -87,7 +92,8 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v2.2',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Mental health as a property of conditions rather than of individuals: if isolation, precarity and meaningless work reliably produce distress, then treating the distress alone is a subsidy to whatever produced it. Version 2.2 is rights-based, and careful about the line between community healing practice and clinical care — a framework that blurred it would do real harm.'
       }
     }
   },
@@ -123,7 +129,8 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v2.1',
         updated: '2026-08-02',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Governance for technologies that operate on consciousness itself — psychedelics, neuro-technology, engineered digital environments — where the thing being altered is the same faculty that would notice the alteration. The Accord\'s answer is procedural: an Earth Council red line that can put a technology off-limits outright, plus consent rules that do not assume a person can meaningfully consent while already inside the experience.'
       }
     }
   },
@@ -161,7 +168,8 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v0.6',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'The proposition that attention, silence and unstructured time are metabolic requirements rather than luxuries, and that extracting them without replenishment is a measurable public-health harm. Eleven consecutive hours off, public space you may occupy without buying anything, a ban on addiction architecture, and quarterly amnesty weeks for accumulated exhaustion. Economic competitiveness is explicitly not an emergency.'
       }
     }
   },
@@ -189,7 +197,8 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v4.2',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Epistemic freedom and information-system accountability, on the premise that a population which cannot tell what is happening cannot govern anything. Version 4.2 works through recommender scope, public-interest media funding and crisis resilience rather than through content rules — the mechanisms are structural because the alternative is an authority deciding what is true.'
       }
     }
   },
@@ -216,7 +225,8 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v8.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Medicine as a commons: patents, data and manufacturing know-how held in a stewardship trust, with a Global South-first network of community-owned production facilities. The argument is that pharmaceutical scarcity is largely manufactured, and that the institutions which manufacture it are not going to be reformed by asking. Still carries an Implementation-Ready label its evidence does not support.'
       }
     }
   },
@@ -242,7 +252,8 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v1.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Science governed as a public good rather than as a competitive market for prestige: open by default, directed by publicly-set priorities, and decolonized in structure rather than in language. Version 1.1 adds capture-resistance mechanisms and crisis responsiveness, on the understanding that a research commons is exactly the kind of institution that gets captured.'
       },
       group: 'humanSocialSystems'
     }
@@ -270,7 +281,8 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v2.2.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Collective care and restorative accountability in place of punishment, with survivor sovereignty as the organizing constraint — the person harmed decides what repair means, including deciding that it means nothing. Version 2.2.1 bounds community safety constitutionally: sortition-selected local councils, an unarmed response unit activated only by them, and an ombudsperson for when the system fails the people it was built for.'
       }
     }
   },
@@ -283,7 +295,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
     shortName: 'Hearthlight Protocol',
     description: 'Foundational framework for child development, rights, safety, and well-being, ensuring every child\'s inalienable right to safety, holistic development, and joyful play.',
     tier: 2,
-    status: 'Implementation Ready', // From 'Final Draft' in the doc
+    status: 'Ready', // From 'Final Draft' in the doc
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical', // Implied by its foundational nature
@@ -316,7 +328,8 @@ export const humanFlourishingEntities: GgfEntity[] = [
         version: 'v2.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Childhood flourishing treated as a rights question rather than a welfare one, with children\'s own councils rather than consultation exercises. The Chamber of the Guardian gives a child standing in proceedings that concern them, and Child & Family Weavers are compensated care roles rather than volunteers. Its own header still says v2.0 while the version field says 2.1.'
       }
     }
   },
@@ -331,7 +344,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
         'Stewardship architecture for a material-abundance economy: access over ownership, purpose over production, and safeguards against waste and status hierarchy re-forming around meaning.',
       tier: 3,
       status: 'Draft',
-      primaryDomain: 'Economics',
+      primaryDomain: 'Economic',
       geographicScope: 'Global',
       implementationPriority: 'Low',
       dependencies: ['framework_aubi', 'framework_work_liberation']
@@ -1058,7 +1071,7 @@ export const humanFlourishingRelationships: GgfRelationship[] = [
     sequenceType: 'Sequential'
   },
   { from: 'framework_synoptic', to: 'protocol_uncertainty_decision', type: 'ESTABLISHES' },
-  { from: 'protocol_uncertainty_decision', to: 'council_gcei', type: 'IMPLEMENTED_BY',
+  { from: 'council_gcei', to: 'protocol_uncertainty_decision', type: 'IMPLEMENTS',
     description: 'GCEI applies the Uncertainty Protocol for governance decisions under incomplete knowledge' },
   { from: 'protocol_uncertainty_decision', to: 'framework_mos', type: 'COORDINATES_WITH',
     description: 'Conscience & Sovereignty Clause requires higher evidentiary thresholds for provisional actions affecting matters of conscience' },
