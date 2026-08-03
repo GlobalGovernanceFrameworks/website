@@ -167,7 +167,7 @@
     // Contact section
     contactSectionTitle: "Contact for Hub Concept Development",
     contactIntro: "For more information about the Regional Hub concept or to discuss potential collaboration:",
-    contactEmail: "globalgovernanceframework@gmail.com",
+    contactEmail: "globalgovernanceframeworks@gmail.com",
     contactSubject: "Regional Hubs Inquiry",
     
     // Note on current status

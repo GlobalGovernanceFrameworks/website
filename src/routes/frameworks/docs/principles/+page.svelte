@@ -5,7 +5,6 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
-  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   
   export let data;
   
@@ -15,9 +14,9 @@
 </script>
 
 <div class="documentation-container">
-  <FrameworkSidebar />
 
   <div class="content">
+    <svelte:component this={data.component} />
     <!-- Visual Diagram at the top -->
     <div class="diagram-container">
       <h3 class="diagram-title">{$t('framework.principles.interconnection.title')}</h3>
@@ -30,27 +29,22 @@
         <img src="{base}/frameworks/principles-interconnection-en.svg" alt="Core Principles Interconnection" class="principles-diagram" />
       {/if}
     </div>
-
-
-    <svelte:component this={data.component} />
   </div>
 
 </div>
 
 <style>
   .documentation-container {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 2rem;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1.25rem;
+    box-sizing: border-box;
   }
-  
-  @media (max-width: 768px) {
-    .documentation-container {
-      grid-template-columns: 1fr;
-    }
+
+  .content {
+    width: 100%;
+    min-width: 0;
   }
   
   .sidebar {

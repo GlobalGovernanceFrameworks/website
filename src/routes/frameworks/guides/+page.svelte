@@ -3,7 +3,6 @@
   import { t, locale, isLocaleLoaded } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { base } from '$app/paths';
-  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount } from 'svelte';
 
   // Translation state
@@ -162,8 +161,6 @@
 
 {#if mounted}
   <div class="guides-container">
-    <FrameworkSidebar />
-
     <div class="content">
       <!-- Header Section -->
       <div class="header-section">
@@ -345,15 +342,15 @@
 
   /* Layout */
   .guides-container {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 2rem;
-    max-width: 1400px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem 4rem;
+    box-sizing: border-box;
   }
 
   .content {
+    width: 100%;
     min-width: 0;
   }
 

@@ -4,7 +4,6 @@
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
-  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   
   export let data;
   
@@ -14,8 +13,6 @@
 </script>
 
 <div class="documentation-container">
-  <FrameworkSidebar />
-  
   <div class="content">
     <svelte:component this={data.component} />
   </div>
@@ -23,54 +20,22 @@
 
 <style>
   .documentation-container {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 2rem;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1.25rem;
+    box-sizing: border-box;
   }
-  
+
+  .content {
+    width: 100%;
+    min-width: 0;
+  }
+
   @media (max-width: 768px) {
     .documentation-container {
-      grid-template-columns: 1fr;
+      padding: 1.25rem 1rem;
     }
-  }
-  
-  .sidebar {
-    border-right: 1px solid #2D5F2D; /* Earthy green border */
-    padding-right: 1.5rem;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .sidebar li {
-    margin-bottom: 0.75rem;
-  }
-  
-  .sidebar a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #4b5563;
-    text-decoration: none;
-    border-left: 3px solid transparent;
-    padding-left: 1rem;
-    transition: all 0.2s;
-  }
-  
-  .sidebar a:hover {
-    color: #DAA520; /* Gold on hover */
-    border-left-color: #DAA520;
-  }
-  
-  .sidebar a.active {
-    color: #DAA520; /* Gold for active */
-    border-left-color: #DAA520;
-    font-weight: 600;
   }
   
   .content {

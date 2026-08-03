@@ -1703,9 +1703,6 @@
                 <a href="{base}/frameworks/ai-futures" class={isActive('/frameworks/ai-futures') ? 'active' : ''} data-sveltekit-preload-data="tap" role="menuitem">
                   {browser ? ($t('common.header.frameworkAIFutures') || 'AI Futures') : 'AI Futures'}
                 </a>
-                <a href="{base}/frameworks/docs/resources" class={isActive('/frameworks/docs/resources') ? 'active' : ''} data-sveltekit-preload-data="tap" role="menuitem">
-                  {browser ? ($t('common.header.frameworkResources') || 'Resources') : 'Resources'}
-                </a>
                 <a href="{base}/frameworks/docs/glossary" class={isActive('/frameworks/docs/glossary') ? 'active' : ''} data-sveltekit-preload-data="tap" role="menuitem">
                   {browser ? ($t('common.header.frameworkGlossary') || 'Glossary') : 'Glossary'}
                 </a>

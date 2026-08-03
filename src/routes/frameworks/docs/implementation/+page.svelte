@@ -4,7 +4,6 @@
   import { t, locale } from '$lib/i18n';
   import { browser } from '$app/environment';
   import { onMount } from 'svelte';
-  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import MermaidDiagram from '$lib/components/MermaidDiagram.svelte';
   
   export let data;
@@ -110,10 +109,6 @@
 </svelte:head>
 
 <div class="documentation-container">
-  {#if !$page?.url?.searchParams?.get('print')}
-    <FrameworkSidebar />
-  {/if}
-
   <div class="content-wrapper">
     <div class="content" bind:this={contentElement}>
       {#if contentReady && data?.content}

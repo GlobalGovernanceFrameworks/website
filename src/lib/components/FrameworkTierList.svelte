@@ -5,7 +5,6 @@
     getFrameworksByTierAndGroup, 
     getGroupsForTier, 
     tierMetadata, 
-    statusMapping, 
     groupMetadata 
   } from '$lib/stores/frameworkNav.js';
   import { hasOutline } from '$lib/utils/outlineLoader.js';
@@ -83,11 +82,6 @@
           }
         });
         
-        // Status translations
-        Object.values(statusMapping).forEach(statusKey => {
-          keysToCache.push(statusKey);
-        });
-        
         // Other common keys
         keysToCache.push('framework.groups.other.title');
         keysToCache.push('framework.tier.noFrameworks');
@@ -113,33 +107,6 @@
     }
   });
   
-  function getStatusText(status) {
-    const statusKey = statusMapping[status];
-    if (statusKey) {
-      const translated = getStableTranslation(statusKey);
-      if (translated && translated !== statusKey) {
-        return translated;
-      }
-    }
-    switch (status) {
-      case 'ready': return 'Ready';
-      case 'review': return 'In Review';
-      case 'planned': return 'Planned';
-      case 'coming-soon': return 'Coming Soon';
-      default: return status;
-    }
-  }
-  
-  function getStatusClass(status) {
-    switch (status) {
-      case 'ready': return 'status-ready';
-      case 'review': return 'status-review';
-      case 'planned': return 'status-planned';
-      case 'coming-soon': return 'status-coming-soon';
-      default: 'status-default';
-    }
-  }
-
   function getGroupInfo(groupKey) {
     return groupMetadata[groupKey] || { titleKey: groupKey, descriptionKey: null };
   }
@@ -165,14 +132,9 @@
         <span class="emoji-wrapper">{framework.emoji || '📋'}</span>
         <span>{getStableTranslation(framework.titleKey)}</span>
       </div>
-      {#if framework.status || framework.version || (onOutlineClick && hasOutline(framework.slug))}
+      {#if framework.version || (onOutlineClick && hasOutline(framework.slug))}
         <div class="framework-meta">
           <div class="meta-left">
-            {#if framework.status}
-              <span class="status {getStatusClass(framework.status)}">
-                {getStatusText(framework.status)}
-              </span>
-            {/if}
             {#if framework.version}
               <span class="version">{framework.version}</span>
             {/if}
@@ -384,21 +346,6 @@
     gap: 0.5rem;
     flex-wrap: wrap;
   }
-  
-  .status {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.375rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
-  }
-  
-  .status-ready { background-color: #dcfce7; color: #166534; }
-  .status-review { background-color: #fef3c7; color: #92400e; }
-  .status-planned { background-color: #e0e7ff; color: #3730a3; }
-  .status-coming-soon { background-color: #f3e8ff; color: #6b21a8; }
-  .status-default { background-color: #f3f4f6; color: #374151; }
   
   .version {
     font-size: 0.7rem;

@@ -2,7 +2,6 @@
 <script>
   import { page } from '$app/stores';
   import { t, locale } from '$lib/i18n';
-  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
 
   // Direct inclusion of glossary data
   // You'll paste your actual glossaryData here
@@ -692,8 +691,6 @@
 </script>
 
 <div class="documentation-container">
-  <FrameworkSidebar />
-  
   <div class="content">
     <h1>{title}</h1>
     
@@ -779,24 +776,23 @@
 </div>
 
 <style>
-  /* The styles remain unchanged */
   .documentation-container {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 2rem;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1.25rem;
+    box-sizing: border-box;
   }
-  
+
+  .content {
+    width: 100%;
+    min-width: 0;
+  }
+
   @media (max-width: 768px) {
     .documentation-container {
-      grid-template-columns: 1fr;
+      padding: 1.25rem 1rem;
     }
-  }
-  
-  .content {
-    min-width: 0;
   }
 
   .content h1 {

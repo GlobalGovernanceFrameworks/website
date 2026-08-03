@@ -3,23 +3,6 @@
   import { t } from '$lib/i18n';
   import { base } from '$app/paths';
   import AllFrameworksList from '$lib/components/AllFrameworksList.svelte';
-  import OutlineModal from '$lib/components/OutlineModal.svelte';
-
-  let outlineSlug = '';
-  let outlineTitle = '';
-  let outlineEmoji = '📋';
-  let showOutline = false;
-
-  function handleOutlineClick(slug, title, emoji) {
-    outlineSlug = slug;
-    outlineTitle = title;
-    outlineEmoji = emoji;
-    showOutline = true;
-  }
-
-  function closeOutline() {
-    showOutline = false;
-  }
 
   function scrollToTier(tierNumber) {
     // Use requestAnimationFrame for smoother scrolling
@@ -233,7 +216,6 @@
           showTierHeaders={true} 
           addTierIds={true}
           t={$t}
-          onOutlineClick={handleOutlineClick}
         />
       </div>
 
@@ -300,15 +282,6 @@
       </div>
     </div>
   </section>
-
-  <OutlineModal 
-    slug={outlineSlug}
-    title={outlineTitle}
-    emoji={outlineEmoji}
-    show={showOutline}
-    onClose={closeOutline}
-    t={$t}
-  />
 </main>
 
 <style>
