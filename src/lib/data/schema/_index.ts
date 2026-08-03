@@ -414,8 +414,14 @@ export function getEntitiesByTier(tier: 0 | 1 | 2 | 3 | 4): GgfEntity[] {
   return allEntities.filter(entity => entity.tier === tier);
 }
 
+/**
+ * Everything published by the /frameworks/[slug] route.
+ * The predicate is publication, not entity type — Genesis Protocol is a
+ * LegalProtocol and still belongs in the tier-0 list. Deliberately mirrors
+ * `publishedEntities` in outlineRegistry.js so nav and routes can't diverge.
+ */
 export function getFrameworksWithUI(): GgfEntity[] {
-  return allEntities.filter(entity => entity.type === 'Framework' && entity.ui);
+  return allEntities.filter((e) => e.ui?.slug && (e.ui.outline || e.ui.prose));
 }
 
 export function getImplementationSequence(): GgfEntity[][] {

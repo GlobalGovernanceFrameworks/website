@@ -33,8 +33,8 @@ async function loadSchemaData() {
       allEntities,
       tierMetadata,
       groupMetadata,
-      getFrameworksWithUI: getFrameworksWithUI || ((entities) => 
-        entities.filter(entity => entity.type === 'Framework' && entity.ui)
+      getFrameworksWithUI: getFrameworksWithUI || (() =>
+        allEntities.filter((e) => e.ui?.slug && (e.ui.outline || e.ui.prose))
       )
     };
 
@@ -70,7 +70,7 @@ function buildNavStructure(schemaData) {
     emoji: entity.ui.emoji,
     tier: entity.tier,
     status: entity.status.toLowerCase().replace(/[^a-z0-9]/gi, '-'), // Convert to kebab-case
-    version: entity.ui.version,
+    version: entity.ui.outline?.version ?? entity.ui.prose?.version ?? entity.ui.version,
     path: entity.ui.path,
     group: entity.ui.group
   }));
