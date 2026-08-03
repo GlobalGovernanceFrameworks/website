@@ -26,8 +26,7 @@ export async function load({ depends, url, params }) {
     
     // Check if the pathname looks corrupted (contains section names instead of the base path)
     if (cleanPath.includes('/frameworks/') && 
-        (cleanPath.includes('foreword') || 
-         cleanPath.includes('a-compass-for-changemakers') ||
+        (cleanPath.includes('a-compass-for-changemakers') ||
          cleanPath.includes('the-case-for-regeneration') ||
          cleanPath.includes('the-core-principles') ||
          cleanPath.includes('module-') ||
@@ -71,7 +70,6 @@ export async function load({ depends, url, params }) {
   // Define sections to load - regenerative enterprise framework sections in logical order
   const sections = [
     // Introductory materials
-    'foreword',
     'a-compass-for-changemakers',
     'ways-to-begin-the-journey',
     
@@ -195,7 +193,7 @@ export async function load({ depends, url, params }) {
     
     // Section categorization for navigation
     sectionCategories: {
-      introduction: ['foreword', 'a-compass-for-changemakers', 'ways-to-begin-the-journey'],
+      introduction: ['a-compass-for-changemakers', 'ways-to-begin-the-journey'],
       foundations: ['the-case-for-regeneration', 'the-core-principles'],
       coreModules: ['module-0', 'module-1', 'module-2', 'module-3', 'module-4', 'module-5'],
       implementation: ['beginning-the-journey', 'deepening-the-practice'],

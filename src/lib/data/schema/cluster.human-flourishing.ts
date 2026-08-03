@@ -24,11 +24,17 @@ export const humanFlourishingEntities: GgfEntity[] = [
     dependencies: ['mechanism_gcf', 'framework_meta_gov'],
     enables: ['tool_existential_civics', 'tool_epistemic_curriculum'],
     ui: {
-      path: '/frameworks/educational-systems',
+      path: '/frameworks/capacity-engine',
       titleKey: 'framework.docs.nav.frameworkTitles.educationalSystems',
       emoji: '🎓',
-      slug: 'educational-systems',
-      group: 'humanSocialSystems'
+      slug: 'capacity-engine',
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v3.1',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -48,9 +54,14 @@ export const humanFlourishingEntities: GgfEntity[] = [
       path: '/frameworks/global-health-and-pandemic-security',
       titleKey: 'framework.docs.nav.frameworkTitles.globalHealthAndPandemicSecurity',
       emoji: '🌏',
-      version: '1.0',
       slug: 'global-health-and-pandemic-security',
-      group: 'planetaryHealthResilience'
+      group: 'planetaryHealthResilience',
+      outline: {
+        version: 'v2.2.2',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -71,7 +82,13 @@ export const humanFlourishingEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.mentalHealthGovernance',
       emoji: '🧠',
       slug: 'mental-health-governance',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v2.2',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -100,9 +117,14 @@ export const humanFlourishingEntities: GgfEntity[] = [
       path: '/frameworks/cognitive-sovereignty-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.cognitiveSovereigntyAccord',
       emoji: '🍄',
-      version: '1.6',
       slug: 'cognitive-sovereignty-accord',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v2.1',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   // === THE SANCTUARY ACCORD (METABOLIC INTEGRITY) ===
@@ -133,11 +155,17 @@ export const humanFlourishingEntities: GgfEntity[] = [
       path: '/frameworks/sanctuary-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.sanctuaryAccord',
       emoji: '🌸', 
-      version: '1.0',
       slug: 'sanctuary-accord',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v0.6',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
+  // === THE SYNOPTIC PROTOCOL ===
   {
     id: 'framework_synoptic',
     type: 'Framework',
@@ -155,9 +183,14 @@ export const humanFlourishingEntities: GgfEntity[] = [
       path: '/frameworks/synoptic-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.synopticProtocol',
       emoji: '👁️',
-      version: '1.0',
       slug: 'synoptic-protocol',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v4.2',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   // === THE PROMETHEUS PROTOCOL (PHARMACEUTICAL & BIOTECH COMMONS) ===
@@ -177,9 +210,14 @@ export const humanFlourishingEntities: GgfEntity[] = [
       path: '/frameworks/prometheus-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.prometheusProtocol',
       emoji: '⚕️',
-      version: '7.1',
       slug: 'prometheus-protocol',
-      group: 'planetaryHealthResilience'
+      group: 'planetaryHealthResilience',
+      outline: {
+        version: 'v8.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   // === THE DISCOVERY COMMONS (SCIENTIFIC & RESEARCH INTEGRITY) ===
@@ -198,10 +236,15 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/discovery-commons',
       titleKey: 'framework.docs.nav.frameworkTitles.discoveryCommons',
-      emoji: '🔬', // Microscope emoji
-      version: '1.0',
-      slug: 'discovery-commons'
-      // This fits well in group: 'humanSocialSystems'
+      emoji: '🔬',
+      slug: 'discovery-commons',
+      outline: {
+        version: 'v1.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      },
+      group: 'humanSocialSystems'
     }
   },
   // === THE KINTSUGI PROTOCOL (COLLECTIVE CARE & SAFETY) ===
@@ -220,10 +263,15 @@ export const humanFlourishingEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/kintsugi-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.kintsugiProtocol',
-      emoji: '🏺', // Amphora/pottery emoji for Kintsugi
-      version: '2.0',
+      emoji: '🏺',
       slug: 'kintsugi-protocol',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v2.2.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -259,14 +307,37 @@ export const humanFlourishingEntities: GgfEntity[] = [
       'metric_cfi'
     ],
     ui: {
-      path: '/frameworks/hearthlight-protocol', // You will need to create this page
-      titleKey: 'framework.docs.nav.frameworkTitles.hearthlightProtocol', // Will be auto-generated
-      emoji: '🧸', // Using the teddy bear
-      version: '1.7', // From doc
+      path: '/frameworks/hearthlight-protocol',
+      titleKey: 'framework.docs.nav.frameworkTitles.hearthlightProtocol',
+      emoji: '🧸',
       slug: 'hearthlight-protocol',
-      group: 'humanSocialSystems' // Fits this group well
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v2.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
+
+  // === ABUNDANCE PROTOCOL ===
+  {
+      id: 'framework_abundance_protocol',
+      type: 'Framework',
+      name: 'The Abundance Protocol',
+      shortName: 'Abundance Protocol',
+      description:
+        'Stewardship architecture for a material-abundance economy: access over ownership, purpose over production, and safeguards against waste and status hierarchy re-forming around meaning.',
+      tier: 3,
+      status: 'Draft',
+      primaryDomain: 'Economics',
+      geographicScope: 'Global',
+      implementationPriority: 'Low',
+      dependencies: ['framework_aubi', 'framework_work_liberation']
+      // No ui block. Downstream of AUBI and Work in Liberation; the questions it
+      // raises become answerable only once those have been tried.
+    },
 
   // === GOVERNANCE COUNCILS ===
   {

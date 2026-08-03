@@ -29,7 +29,13 @@ export const mobilityCommonsEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.mobilityCommons',
       emoji: '🚆',
       slug: 'mobility-commons',
-      group: 'planetaryHealthResilience' // Or 'globalEconomicSystems'
+      group: 'planetaryHealthResilience', // Or 'globalEconomicSystems'
+      outline: {
+        version: 'v8.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -172,7 +178,13 @@ export const developmentEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.bioregionalPolis',
       emoji: '🏙️',
       slug: 'bioregional-polis',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v3.0',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -191,7 +203,13 @@ export const developmentEntities: GgfEntity[] = [
       path: '/frameworks/living-land-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.livingLandProtocol',
       emoji: '🛖',
-      slug: 'living-land-protocol'
+      slug: 'living-land-protocol',
+      outline: {
+        version: 'v1.6',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -227,7 +245,13 @@ export const developmentEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.regenerativeJourneys',
       emoji: '👣',
       slug: 'regenerative-journeys',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v1.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {

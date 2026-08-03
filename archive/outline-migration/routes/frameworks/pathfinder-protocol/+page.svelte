@@ -30,7 +30,7 @@
   let resourcesOpen = false;
 
   // Section categorization based on data structure
-  $: introductionSections = data?.sectionCategories?.introduction || ['foreword', 'a-compass-for-changemakers', 'ways-to-begin-the-journey'];
+  $: introductionSections = data?.sectionCategories?.introduction || ['a-compass-for-changemakers', 'ways-to-begin-the-journey'];
   $: foundationSections = data?.sectionCategories?.foundations || ['the-case-for-regeneration', 'the-core-principles'];
   $: coreModuleSections = data?.sectionCategories?.coreModules || ['module-0', 'module-1', 'module-2', 'module-3', 'module-4', 'module-5'];
   $: implementationSections = data?.sectionCategories?.implementation || ['beginning-the-journey', 'deepening-the-practice'];

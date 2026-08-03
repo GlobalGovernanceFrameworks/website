@@ -21,15 +21,46 @@ export const implementationOSEntities: GgfEntity[] = [
     ],
     enables: [
       'institution_ggf_catalyst',
-      'institution_community_of_practice',
+      'platform_community_of_practice',
       'institution_ggf_failure_library'
     ],
     ui: {
       path: '/frameworks/implementation-and-adaptation',
       titleKey: 'framework.docs.nav.frameworkTitles.implementationAndAdaptation',
       emoji: '🧰',
-      version: '1.0',
-      slug: 'implementation-and-adaptation'
+      slug: 'implementation-and-adaptation',
+      outline: {
+        version: 'v1.1.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
+    }
+  },
+  {
+    id: 'framework_implementation_methods_tools',
+    type: 'Framework',
+    name: 'Implementation Methods & Tools',
+    shortName: 'Methods & Tools',
+    description:
+      'The practical tool library behind the Implementation & Adaptation Framework: assessment rubrics, tool stacks, journey pathways, and cultural adaptation protocols.',
+    tier: 4,
+    status: 'Draft',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_implementation_adaptation'],
+    ui: {
+      path: '/frameworks/implementation-methods-tools',
+      titleKey: 'framework.docs.nav.frameworkTitles.implementationMethodsTools',
+      emoji: '🧭',
+      slug: 'implementation-methods-tools',
+      outline: {
+        version: 'v0.8.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''
+      }
     }
   },
   {
@@ -105,6 +136,14 @@ export const implementationOSRelationships: GgfRelationship[] = [
     to: 'framework_indigenous',
     type: 'GUIDES',
     description: 'The IAF is ethically guided by the anti-colonial, consent-based (FPIC 2.0), and relational principles of the Indigenous & Traditional Knowledge Framework.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_implementation_methods_tools',
+    to: 'framework_implementation_adaptation',
+    type: 'IMPLEMENTS',
+    description: 'Supplies the concrete tools and assessment instruments the IAF calls for.',
     strength: 'Strong',
     sequenceType: 'Parallel'
   }

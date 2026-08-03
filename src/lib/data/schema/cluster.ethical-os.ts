@@ -26,9 +26,14 @@ export const ethicalOSEntities: GgfEntity[] = [
       path: '/frameworks/indigenous-sovereignty-pathways',
       titleKey: 'framework.docs.nav.frameworkTitles.indigenousSovereigntyPathways',
       emoji: '🪶',
-      version: '1.0',
       slug: 'indigenous-sovereignty-pathways',
-      group: 'socialFabricJustice'
+      group: 'socialFabricJustice',
+      outline: {
+        version: 'v1.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -71,6 +76,24 @@ export const ethicalOSEntities: GgfEntity[] = [
     dependencies: ['framework_indigenous']
   },
 
+  // === MORE THAN HUMAN ===
+  {
+    id: 'framework_more_than_human',
+    type: 'Framework',
+    name: 'More-Than-Human Governance',
+    shortName: 'MTH Governance',
+    description:
+      'Procedural architecture for representing non-human entities in decision-making: fiduciary guardianship, subsidiarity of voice, and evidentiary pluralism across scientific, traditional, and community knowledge.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Medium',
+    dependencies: ['framework_mos', 'framework_indigenous']
+    // No ui block. Unpublished pending resolution of the overlap with the
+    // MOS and the Oracle Protocol, and a standalone deployment path.
+  },
+
   // === MORAL OPERATING SYSTEM ===
   {
     id: 'framework_mos',
@@ -105,7 +128,13 @@ export const ethicalOSEntities: GgfEntity[] = [
       path: '/frameworks/moral-operating-system',
       titleKey: 'framework.docs.nav.frameworkTitles.moralOperatingSystem',
       emoji: '🦋',
-      slug: 'moral-operating-system'
+      slug: 'moral-operating-system',
+      outline: {
+        version: 'v2.8.2',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 

@@ -27,8 +27,13 @@ export const institutionalRegenerationEntities: GgfEntity[] = [
       path: '/frameworks/institutional-regeneration',
       titleKey: 'framework.docs.nav.frameworkTitles.institutionalRegeneration',
       emoji: '🔄',
-      version: '0.8',
-      slug: 'institutional-regeneration'
+      slug: 'institutional-regeneration',
+      outline: {
+        version: 'v0.9.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 

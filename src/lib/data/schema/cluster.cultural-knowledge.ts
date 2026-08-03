@@ -28,7 +28,12 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.culturalHeritagePreservation',
       emoji: '🏛️',
       slug: 'cultural-heritage-preservation',
-      version: '2.2'
+      outline: {
+        version: 'v3.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -48,7 +53,13 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       path: '/frameworks/digital-commons',
       titleKey: 'framework.docs.nav.frameworkTitles.digitalCommons',
       emoji: '💻',
-      slug: 'digital-commons'
+      slug: 'digital-commons',
+      outline: {
+        version: 'v3.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 {
@@ -80,7 +91,13 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       path: '/frameworks/religious-and-spiritual-dialogue-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.religiousAndSpiritualDialogueGovernance',
       emoji: '🕯️',
-      slug: 'religious-and-spiritual-dialogue-governance'
+      slug: 'religious-and-spiritual-dialogue-governance',
+      outline: {
+        version: 'v1.8',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -90,7 +107,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     shortName: 'Global Citizenship',
     description: 'Framework for global citizenship education and practice, fostering responsible planetary stewardship',
     tier: 3,
-    status: 'Review',
+    status: 'Draft',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
@@ -98,8 +115,22 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/global-citizenship-practice',
       titleKey: 'framework.docs.nav.frameworkTitles.globalCitizenshipPractice',
-      emoji: '🤝',
-      slug: 'global-citizenship-practice'
+      emoji: '🌍',
+      slug: 'global-citizenship-practice',
+ 
+      prose: {
+        dir: 'global-citizenship-practice',
+        version: '2.0',
+        updated: '2026-08-03',
+        maturity: 'internal',
+        subtitle:
+          'A personal practice for people who want to act on global problems without waiting for an institution to organise them',
+        standfirst:
+          'The only thing here addressed to one person rather than to a governing body. It asks for an hour, not a mandate. Nothing in it has been tested, measured, or reviewed by anyone outside the project.',
+        sections: [
+          { id: 'global-citizenship-overview', title: 'Global Citizenship Practice' }
+        ]
+      }
     }
   },
 
@@ -126,8 +157,31 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.artsFlourishing', // New key needed
       emoji: '🎨',
       slug: 'arts-flourishing',
-      group: 'humanSocialSystems' // Fits well here
+      group: 'humanSocialSystems', // Fits well here
+      outline: {
+        version: 'v0.7',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
+  },
+
+  {
+    id: 'framework_resonance_protocol',
+    type: 'Framework',
+    name: 'The Resonance Protocol',
+    shortName: 'Resonance Protocol',
+    description:
+      'Governance of soundscapes as a commons: community authority over local acoustic environments, protection of musical heritage, and sonic accessibility for people harmed by noise.',
+    tier: 3,
+    status: 'Draft',
+    primaryDomain: 'Culture',
+    geographicScope: 'Global',
+    implementationPriority: 'Low',
+    dependencies: ['framework_arts_flourishing', 'framework_indigenous']
+    // No ui block. Pillar 2 proposes clinical certification for unvalidated
+    // sound therapy and must be resolved before this is published.
   },
 
   // === TIER 4: WISDOM & CONSCIOUSNESS FRAMEWORKS ===
@@ -148,7 +202,13 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       path: '/frameworks/consciousness-and-inner-development',
       titleKey: 'framework.docs.nav.frameworkTitles.consciousnessAndInnerDevelopment',
       emoji: '🧘',
-      slug: 'consciousness-and-inner-development'
+      slug: 'consciousness-and-inner-development',
+      outline: {
+        version: 'v2.5',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -168,7 +228,13 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       path: '/frameworks/wise-decision-making-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.wiseDecisionMakingProtocol',
       emoji: '🪷',
-      slug: 'wise-decision-making-protocol'
+      slug: 'wise-decision-making-protocol',
+      outline: {
+        version: 'v1.6.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -348,7 +414,20 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
-    dependencies: ['framework_cultural_heritage', 'framework_mental_health']
+    dependencies: ['framework_cultural_heritage', 'framework_mental_health'],
+    ui: {
+      path: '/frameworks/memorial-commons',
+      titleKey: 'framework.docs.nav.frameworkTitles.memorialCommons',
+      emoji: '🕯️',
+      slug: 'memorial-commons',
+      outline: {
+        version: 'v0.8',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst:
+          'A proposal for how communities might hold grief collectively — trained responders, dignified death care, and physical space to mourn. It is a design document, not support. If you are grieving now, this is not the page you need.'
+      }
+    }
   }
 ];
 

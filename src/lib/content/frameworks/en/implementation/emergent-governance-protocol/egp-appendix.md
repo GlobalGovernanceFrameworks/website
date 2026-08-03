@@ -2,7 +2,7 @@
 title: EGP Implementation Appendix
 section: appendix
 version: 1.1.1
-package: EGP/1.1.1
+package_id: EGP/1.1.1
 status: constitutionally-harmonized-technical-profile
 date: 2026-08-02
 controlling_interface: GMEAIA/0.1

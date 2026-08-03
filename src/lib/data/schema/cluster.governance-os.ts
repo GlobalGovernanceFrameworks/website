@@ -25,8 +25,13 @@ export const governanceOSEntities: GgfEntity[] = [
       path: '/frameworks/meta-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.metaGovernance',
       emoji: '🏛️',
-      version: '1.1',
-      slug: 'meta-governance'
+      slug: 'meta-governance',
+      outline: {
+        version: 'v1.5',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -142,10 +147,22 @@ export const governanceOSEntities: GgfEntity[] = [
     enables: ['protocol_sense', 'protocol_propose', 'protocol_adopt'],
     ui: {
       path: '/frameworks/emergent-governance-protocol',
-      titleKey: 'framework.docs.nav.frameworkTitles.emergentGovernanceProtocol', // Note: This titleKey would need to be created
+      titleKey: 'framework.docs.nav.frameworkTitles.emergentGovernanceProtocol',
       emoji: '🗣️',
-      version: '1.0',
-      slug: 'emergent-governance-protocol'
+      slug: 'emergent-governance-protocol',
+      prose: {
+        dir: 'emergent-governance-protocol',
+        version: '1.0',
+        updated: '2026-08-03',
+        maturity: 'internal',
+        standfirst: '',
+        sections: [
+          { id: 'egp-one-page-summary', title: 'One-Page Summary' },
+          { id: 'emergent-governance-protocol', title: 'The Protocol' },
+          { id: 'egp-appendix', title: 'Implementation Appendix' },
+          { id: 'egp-glossary', title: 'Glossary' }
+        ]
+      }
     }
   },
   {
@@ -204,11 +221,16 @@ export const governanceOSEntities: GgfEntity[] = [
     dependencies: ['framework_treaty', 'framework_meta_gov'],
     enables: ['layer_territorial', 'layer_commons', 'layer_guilds', 'layer_wisdom_council'],
     ui: {
-      path: '/frameworks/polycentric-governance',
+      path: '/frameworks/polycentric-governance-architecture',
       titleKey: 'framework.docs.nav.frameworkTitles.polycentricGovernance',
       emoji: '🕸️',
-      version: '0.5',
-      slug: 'polycentric-governance'
+      slug: 'polycentric-governance-architecture',
+      outline: {
+        version: 'v0.6',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {

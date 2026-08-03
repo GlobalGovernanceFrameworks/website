@@ -9,6 +9,8 @@
 	 	 "validate:schema": "tsx ./scripts/validate-schema.js",
 	 	 "copy:onboarding": "node scripts/copy-onboarding.js",
 	 	 "schema:check": "npm run validate:schema && npm run generate:nav",
+    "outline:audit":   "tsx ./scripts/outline-migrate.js",
+    "outline:migrate": "tsx ./scripts/outline-migrate.js --migrate",
 	 	 "prepare:content": "npm run schema:check && npm run copy:onboarding",
 	 	 "dev": "npm run prepare:content && vite dev",
 	 	 "prebuild": "node scripts/build-indexes.js",

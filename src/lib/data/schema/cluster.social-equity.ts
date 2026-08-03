@@ -22,12 +22,17 @@ export const socialEquityEntities: GgfEntity[] = [
     dependencies: ['framework_indigenous', 'framework_mental_health', 'framework_justice'],
     enables: ['process_community_weaver', 'institution_cohesion_council', 'framework_aubi', 'framework_meta_gov'],
     ui: {
-      path: '/frameworks/social-fabric',
+      path: '/frameworks/social-fabric-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.socialFabric', // This would need to be added to frameworkNav.js
       emoji: '🧶',
-      version: '1.0',
-      slug: 'social-fabric',
-      group: 'humanSocialSystems'
+      slug: 'social-fabric-protocol',
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v1.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -46,9 +51,14 @@ export const socialEquityEntities: GgfEntity[] = [
       path: '/frameworks/cairn-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.cairnProtocol',
       emoji: '🗿', // Cairn/Moai emoji
-      version: '2.3',
       slug: 'cairn-protocol',
-      group: 'socialFabricJustice'
+      group: 'socialFabricJustice',
+      outline: {
+        version: 'v2.6',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -65,11 +75,17 @@ export const socialEquityEntities: GgfEntity[] = [
     dependencies: ['framework_justice', 'framework_aubi'],
     enables: ['institution_gda', 'tool_dia', 'institution_care_coops'],
     ui: {
-      path: '/frameworks/disability-rights-and-inclusion',
+      path: '/frameworks/foundation-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.disabilityRightsAndInclusion',
       emoji: '♿',
-      slug: 'disability-rights-and-inclusion',
-      group: 'humanSocialSystems'
+      slug: 'foundation-protocol',
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v3.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -89,8 +105,13 @@ export const socialEquityEntities: GgfEntity[] = [
       path: '/frameworks/kinship-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.kinshipProtocol',
       emoji: '🫂',
-      version: '2.3',
-      slug: 'kinship-protocol'
+      slug: 'kinship-protocol',
+      outline: {
+        version: 'v2.3',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -107,10 +128,16 @@ export const socialEquityEntities: GgfEntity[] = [
     dependencies: ['framework_meta_gov'],
     enables: ['institution_gya', 'process_iia', 'institution_gof'],
     ui: {
-      path: '/frameworks/youth-and-intergenerational-governance',
+      path: '/frameworks/horizon-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.youthAndIntergenerationalGovernance',
       emoji: '👶',
-      slug: 'youth-and-intergenerational-governance'
+      slug: 'horizon-protocol',
+      outline: {
+        version: 'v3.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -127,10 +154,16 @@ export const socialEquityEntities: GgfEntity[] = [
     dependencies: ['framework_global_health', 'framework_meta_gov'],
     enables: ['council_coe'],
     ui: {
-      path: '/frameworks/aging-population-support-governance',
+      path: '/frameworks/legacy-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.agingPopulationSupportGovernance',
       emoji: '🌳',
-      slug: 'aging-population-support-governance'
+      slug: 'legacy-protocol',
+      outline: {
+        version: 'v2.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -151,7 +184,13 @@ export const socialEquityEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.migrationAndHumanMobility',
       emoji: '🗺️',
       slug: 'migration-and-human-mobility',
-      group: 'socialFabricJustice'
+      group: 'socialFabricJustice',
+      outline: {
+        version: 'v1.1.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 

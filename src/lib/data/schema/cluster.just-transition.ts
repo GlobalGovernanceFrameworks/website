@@ -42,9 +42,14 @@ export const justTransitionEntities: GgfEntity[] = [
       path: '/frameworks/aegis-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.aegisProtocol',
       emoji: '🛰️',
-      version: '1.2',
       slug: 'aegis-protocol',
-      group: 'socialFabricJustice'
+      group: 'socialFabricJustice',
+      outline: {
+        version: 'v1.3.4',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -122,8 +127,13 @@ export const justTransitionEntities: GgfEntity[] = [
       path: '/frameworks/sundown-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.sundownProtocol',
       emoji: '🌇',
-      version: '1.0',
-      slug: 'sundown-protocol'
+      slug: 'sundown-protocol',
+      outline: {
+        version: 'v2.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 

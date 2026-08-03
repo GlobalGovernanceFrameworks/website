@@ -33,9 +33,14 @@ export const economicOSEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/adaptive-universal-basic-income',
       titleKey: 'framework.docs.nav.frameworkTitles.adaptiveUniversalBasicIncome',
-      emoji: '💰',
-      version: '2.2',
+      emoji: '💚',
       slug: 'adaptive-universal-basic-income',
+      outline: {
+        version: 'v2.5',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''
+      },
       group: 'globalEconomicSystems'
     }
   },
@@ -54,9 +59,14 @@ export const economicOSEntities: GgfEntity[] = [
       path: '/frameworks/financial-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.financialSystems',
       emoji: '❤️',
-      version: '3.3',
       slug: 'financial-systems',
-      group: 'globalEconomicSystems'
+      group: 'globalEconomicSystems',
+      outline: {
+        version: 'v3.4',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -76,9 +86,14 @@ export const economicOSEntities: GgfEntity[] = [
       path: '/frameworks/work-in-liberation',
       titleKey: 'framework.docs.nav.frameworkTitles.workInLiberation',
       emoji: '👥',
-      version: '1.9',
       slug: 'work-in-liberation',
-      group: 'globalEconomicSystems'
+      group: 'globalEconomicSystems',
+      outline: {
+        version: 'v2.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -96,9 +111,14 @@ export const economicOSEntities: GgfEntity[] = [
       path: '/frameworks/nested-economies',
       titleKey: 'framework.docs.nav.frameworkTitles.nestedEconomies',
       emoji: '💱',
-      version: '1.0',
       slug: 'nested-economies',
-      group: 'globalEconomicSystems'
+      group: 'globalEconomicSystems',
+      outline: {
+        version: 'v3.2',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -118,7 +138,13 @@ export const economicOSEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.gaianTrade',
       emoji: '🌍',
       slug: 'gaian-trade',
-      group: 'globalEconomicSystems'
+      group: 'globalEconomicSystems',
+      outline: {
+        version: 'v0.9',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -136,9 +162,14 @@ export const economicOSEntities: GgfEntity[] = [
       path: '/frameworks/global-supply-chains-and-logistics',
       titleKey: 'framework.docs.nav.frameworkTitles.globalSupplyChainsAndLogistics',
       emoji: '🚢',
-      version: '1.0',
       slug: 'global-supply-chains-and-logistics',
-      group: 'globalEconomicSystems'
+      group: 'globalEconomicSystems',
+      outline: {
+        version: 'v1.4',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -349,7 +380,40 @@ export const economicOSEntities: GgfEntity[] = [
       'framework_planetary_health' // Provides incentive for GPH milestones
     ]
     // No UI block as it's a sub-protocol, not a main framework page
-  }
+  },
+  {
+    id: 'protocol_itp',
+    type: 'Mechanism',
+    name: 'Immanent Trust Protocol',
+    shortName: 'ITP',
+    description:
+      'Observer-relative trust architecture closing the collusion, Sybil, and Proof-of-Care verification gaps in the GGF economic layer. Each node computes trust locally; no global ledger, no oracle.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Technology',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: [
+      'framework_meta_gov'
+      // Add once you have confirmed the exact ids in your cluster files:
+      //   financial systems, AUBI, nested economies
+    ],
+    enables: [
+      'mechanism_hearts'
+      // Also: Proof of Care, Love Ledger, and the meta-governance capture
+      //       detection mechanism, if those exist as entities.
+    ],
+    ui: {
+      path: '/resources/whitepapers/immanent-trust-protocol',
+      titleKey: 'framework.docs.nav.frameworkTitles.immanentTrustProtocol',
+      emoji: '🔗',
+      slug: 'immanent-trust-protocol'
+      // No `outline` block: the document is published at the path above, not
+      // by the /frameworks/[slug] route. Adding one would make the validator
+      // demand ui.path === '/frameworks/immanent-trust-protocol'.
+    }
+  },
+
 ];
 
 export const economicOSRelationships: GgfRelationship[] = [
@@ -708,5 +772,26 @@ export const economicOSRelationships: GgfRelationship[] = [
     description: 'The stewarded assets and regenerative value captured by the Hearthstone Protocol provide backing for the Hearts and Leaves currencies distributed by the AUBI system.',
     strength: 'Strong',
     sequenceType: 'Parallel'
+  },
+
+  // Immanent Trust Protocol relationships
+  {
+    from: 'protocol_itp',
+    to: 'mechanism_hearts',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Provides the fraud and collusion resistance that Hearts issuance depends on: TIM collapses endorsement rings, so a thousand colluding nodes carry the weight of one honest node.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_itp',
+    to: 'framework_meta_gov',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Turns qualitative capture detection into a measurable property by applying trust independence analysis to council composition.',
+    strength: 'Moderate',
+    sequenceType: 'Parallel'
   }
+
 ];

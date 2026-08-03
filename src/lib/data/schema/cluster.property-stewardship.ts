@@ -43,11 +43,16 @@ export const hearthstoneEntities: GgfEntity[] = [
       'framework_urban_community'
     ],
     ui: {
-      path: '/frameworks/hearthstone-protocol', // New path
-      titleKey: 'framework.docs.nav.frameworkTitles.hearthstoneProtocol', // New key
-      emoji: '🔥', // Flame emoji
-      version: '1.5',
-      slug: 'hearthstone-protocol' // New slug
+      path: '/frameworks/hearthstone-protocol',
+      titleKey: 'framework.docs.nav.frameworkTitles.hearthstoneProtocol',
+      emoji: '🔥',
+      slug: 'hearthstone-protocol',
+      outline: {
+        version: 'v2.0.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 

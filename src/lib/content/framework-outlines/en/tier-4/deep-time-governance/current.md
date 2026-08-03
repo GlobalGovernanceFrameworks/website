@@ -1,1 +1,1 @@
-versions/v0.5.md
+versions/v0.6.md

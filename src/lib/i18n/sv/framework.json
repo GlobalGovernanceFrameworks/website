@@ -149,8 +149,52 @@
     "ready": {
       "label": "Färdig",
       "description": "Fullt utvecklad och redo för implementering"
+    },
+    "draft": {
+      "label": "Utkast",
+      "description": "Skrivet, men ännu inte granskat utanför projektet"
+    },
+    "proposed": {
+      "label": "Föreslagen",
+      "description": "Nämnd i ett ramverk, ännu inte detaljutformad"
+    },
+    "pilot": {
+      "label": "I pilot",
+      "description": "Prövas i verklig miljö"
+    },
+    "active": {
+      "label": "Aktiv",
+      "description": "I löpande användning"
+    },
+    "implemented": {
+      "label": "Införd",
+      "description": "Antagen och i drift"
     }
   },
+
+  "maturity": {
+    "internal": {
+      "label": "Internt utkast",
+      "short": "Internt",
+      "description": "Skrivet och reviderat inom projektet. Ännu inte prövat av läsare utanför."
+    },
+    "adversarial": {
+      "label": "Motståndsgranskad",
+      "short": "Motstånd",
+      "description": "Genomgången upprepade rundor av kritik och steel-manning med flera AI-system, där varje runda besvarats i en revision. Ännu ingen namngiven mänsklig granskare utanför projektet."
+    },
+    "external": {
+      "label": "Externt granskad",
+      "short": "Externt",
+      "description": "Granskad och kritiserad av namngivna personer utanför projektet, och reviderad utifrån det."
+    },
+    "piloted": {
+      "label": "Testad i praktiken",
+      "short": "Testad",
+      "description": "Någon del av detta har prövats i verklig miljö, och utfallet är dokumenterat."
+    }
+  },
+
   "statusLegend": {
     "title": "Dokumentstatusindikatorer"
   },
@@ -308,7 +352,9 @@
 
       "frameworkTitles": {
         "treatyForOurOnlyHome": "Fördraget för vårt enda hem",
+        "genesisProtocol": "Genesis-protokollet",
         "emergentGovernanceProtocol": "Adaptiv styrningsdesign",
+        "immanentTrustProtocol": "Immanent trust-protokoll",
         "polycentricGovernance": "Polycentrisk styrningsarkitektur",
         "implementationAndAdaptation": "Implementering och anpassning",
         "institutionalRegeneration": "Institutionell förnyelse",

@@ -27,9 +27,46 @@ export const pathfinderProtocolEntities: GgfEntity[] = [
       path: '/frameworks/pathfinder-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.pathfinderProtocol',
       emoji: '🧭',
-      version: '1.0',
       slug: 'pathfinder-protocol',
-      group: 'globalEconomicSystems'
+ 
+      outline: {
+        version: 'v0.9',
+        updated: '2026-08-03',
+        maturity: 'adversarial'
+      },
+ 
+      prose: {
+        dir: 'pathfinder-protocol',
+        version: '1.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst:
+          'A workbook rather than a specification: eighteen sections of questions, practices, and stories for people inside a business considering whether it could work differently. Nothing here has been tried by a company we can name.',
+        sections: [
+          { id: 'a-compass-for-changemakers', title: 'A Compass for Changemakers', group: 'Getting started' },
+          { id: 'ways-to-begin-the-journey', title: 'Ways to Begin the Journey', group: 'Getting started' },
+ 
+          { id: 'the-case-for-regeneration', title: 'The Case for Regeneration', group: 'Foundations' },
+          { id: 'the-core-principles', title: 'The Core Principles', group: 'Foundations' },
+ 
+          { id: 'module-0', title: 'Module 0: Digital Foundations', group: 'Modules' },
+          { id: 'module-1', title: 'Module 1: The Regenerative Core', group: 'Modules' },
+          { id: 'module-2', title: 'Module 2: Regenerative Operations', group: 'Modules' },
+          { id: 'module-3', title: 'Module 3: Equitable Finance', group: 'Modules' },
+          { id: 'module-4', title: 'Module 4: Thriving Cultures', group: 'Modules' },
+          { id: 'module-5', title: 'Module 5: Ecosystemic Engagement', group: 'Modules' },
+ 
+          { id: 'beginning-the-journey', title: 'Beginning the Journey', group: 'Practice' },
+          { id: 'deepening-the-practice', title: 'Deepening the Practice', group: 'Practice' },
+ 
+          { id: 'a-commitment', title: 'A Commitment to Decolonization and Healing', group: 'Justice' },
+          { id: 'weaving-with-the-wider-ecosystem', title: 'Weaving with the Wider Ecosystem', group: 'Justice' },
+ 
+          { id: 'tools', title: 'Tools to Support Your Journey', group: 'Resources' },
+          { id: 'keeping-the-framework-alive', title: 'Keeping the Framework Alive', group: 'Resources' },
+          { id: 'appendices', title: 'Appendices', group: 'Resources' }
+        ]
+      }
     }
   },
 

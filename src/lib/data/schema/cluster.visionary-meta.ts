@@ -27,15 +27,20 @@ export const visionaryMetaEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.existentialRiskGovernance',
       emoji: '⚠️',
       slug: 'planetary-immune-system',
-      version: '2.1'
+      outline: {
+        version: 'v2.2.2',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
     id: 'framework_space_governance',
     type: 'Framework',
-    name: 'Space Governance Framework',
-    shortName: 'Space Governance',
-    description: 'Governance framework for space exploration, settlement, and off-world activities',
+    name: 'Frontier Governance Framework',
+    shortName: 'Frontier Governance',
+    description: 'Governance framework for polar regions, space exploration, settlement, and off-world activities',
     tier: 4,
     status: 'Planned',
     primaryDomain: 'Governance',
@@ -43,10 +48,16 @@ export const visionaryMetaEntities: GgfEntity[] = [
     implementationPriority: 'Low',
     dependencies: ['framework_treaty'],
     ui: {
-      path: '/frameworks/space-governance',
+      path: '/frameworks/frontier-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.spaceGovernance',
       emoji: '🚀',
-      slug: 'space-governance'
+      slug: 'frontier-governance',
+      outline: {
+        version: 'v1.4',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -62,7 +73,6 @@ export const visionaryMetaEntities: GgfEntity[] = [
     implementationPriority: 'Low',
     dependencies: [
       'framework_deep_time',
-      'framework_wisdom_governance',
       'framework_planetary_immune_system',
       'framework_treaty'
     ],
@@ -70,8 +80,13 @@ export const visionaryMetaEntities: GgfEntity[] = [
       path: '/frameworks/millennium-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.millenniumProtocol',
       emoji: '🌌',
-      version: '6.0',
-      slug: 'millennium-protocol'
+      slug: 'millennium-protocol',
+      outline: {
+        version: 'v1.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -90,27 +105,13 @@ export const visionaryMetaEntities: GgfEntity[] = [
       path: '/frameworks/deep-time-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.deepTimeGovernance',
       emoji: '⏳',
-      slug: 'deep-time-governance'
-    }
-  },
-  // === WISDOM & META-GOVERNANCE ===
-  {
-    id: 'framework_wisdom_governance',
-    type: 'Framework',
-    name: 'Wisdom Governance Framework',
-    shortName: 'Wisdom Governance',
-    description: 'Framework for integrating long-term thinking and collective wisdom into governance, building upon WDIP',
-    tier: 4,
-    status: 'Planned',
-    primaryDomain: 'Governance',
-    geographicScope: 'Global',
-    implementationPriority: 'Low',
-    dependencies: ['framework_wdmip', 'framework_consciousness_development'],
-    ui: {
-      path: '/frameworks/wisdom-governance',
-      titleKey: 'framework.docs.nav.frameworkTitles.wisdomGovernance',
-      emoji: '🦉',
-      slug: 'wisdom-governance'
+      slug: 'deep-time-governance',
+      outline: {
+        version: 'v0.6',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -171,8 +172,14 @@ export const visionaryMetaEntities: GgfEntity[] = [
       path: '/frameworks/oracle-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.oracleProtocol',
       emoji: '🔮',
-      version: '2.7',
-      slug: 'oracle-protocol'
+      slug: 'oracle-protocol',
+      outline: {
+        version: 'v1.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
+
     }
   },
   // === PILLAR 1: SENTINEL COUNCIL & ASSESSMENT ===
@@ -330,26 +337,6 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     sequenceType: 'Conditional'
   },
 
-  // === WISDOM & DECISION-MAKING INTEGRATION ===
-  {
-    from: 'framework_wisdom_governance',
-    to: 'framework_wdmip',
-    type: 'INTEGRATES_WITH',
-    description: 'Wisdom Governance builds upon and expands methodologies provided by WDIP',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_wisdom_governance',
-    to: 'framework_consciousness_development',
-    type: 'INTEGRATES_WITH',
-    description: 'Wisdom Governance integrates consciousness development with collective decision-making',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-
   // === META-IMPLEMENTATION SUPPORT ===
   {
     from: 'framework_implementation_adaptation',
@@ -410,15 +397,6 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
   {
-    from: 'framework_wisdom_governance',
-    to: 'council_earth',
-    type: 'COLLABORATES_WITH',
-    description: 'Wisdom Governance draws upon Indigenous wisdom traditions via Earth Council',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
     from: 'framework_implementation_adaptation',
     to: 'institution_baz',
     type: 'SUPPORTS',
@@ -434,15 +412,6 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     to: 'framework_planetary_immune_system',
     type: 'COORDINATES_WITH',
     description: 'Space activities must consider planetary protection and existential risk implications',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_wisdom_governance',
-    to: 'framework_planetary_immune_system',
-    type: 'INFORMS',
-    description: 'Wisdom Governance provides long-term perspective for existential risk assessment',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'

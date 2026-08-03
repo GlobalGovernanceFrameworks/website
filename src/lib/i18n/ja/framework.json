@@ -149,6 +149,49 @@
     "ready": {
       "label": "準備完了",
       "description": "完全に開発され、実装の準備が整っている"
+    },
+    "draft": {
+      "label": "草案",
+      "description": "作成済みだが、プロジェクト外部の査読は未実施"
+    },
+    "proposed": {
+      "label": "提案段階",
+      "description": "フレームワーク内で言及されているが、詳細設計は未着手"
+    },
+    "pilot": {
+      "label": "試験運用中",
+      "description": "実際の環境で試行中"
+    },
+    "active": {
+      "label": "運用中",
+      "description": "継続的に使用されている"
+    },
+    "implemented": {
+      "label": "導入済み",
+      "description": "採用され、稼働している"
+    }
+  },
+
+  "maturity": {
+    "internal": {
+      "label": "内部草案",
+      "short": "内部",
+      "description": "プロジェクト内部で作成・改訂。外部の読み手による検証は未実施。"
+    },
+    "adversarial": {
+      "label": "敵対的レビュー済み",
+      "short": "敵対的",
+      "description": "複数のAIによる批判・スティールマン検証を繰り返し、各回の指摘を改訂に反映。プロジェクト外部の実名レビュアーはまだいない。"
+    },
+    "external": {
+      "label": "外部レビュー済み",
+      "short": "外部",
+      "description": "プロジェクト外部の実名の人々による査読と批判を受け、それに応じて改訂済み。"
+    },
+    "piloted": {
+      "label": "実地検証済み",
+      "short": "実地",
+      "description": "一部が実際の環境で試行され、その結果が記録されている。"
     }
   },
   "statusLegend": {
@@ -307,7 +350,9 @@
       "glossary": "用語集",
       "frameworkTitles": {
         "treatyForOurOnlyHome": "唯一の故郷のための条約",
+        "genesisProtocol": "ジェネシスプロトコル",
         "emergentGovernanceProtocol": "適応型ガバナンス設計",
+        "immanentTrustProtocol": "内在的信頼プロトコル",
         "polycentricGovernance": "多中心型ガバナンス構造",
         "implementationAndAdaptation": "実装と適応",
         "institutionalRegeneration": "制度の再生",

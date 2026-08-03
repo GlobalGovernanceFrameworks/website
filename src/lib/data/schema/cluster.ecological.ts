@@ -26,10 +26,16 @@ export const ecologicalEntities: GgfEntity[] = [
     ui: {
       path: '/frameworks/planetary-health-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.planetaryHealthGovernance',
-      emoji: '💚',
+      emoji: '💙',
       version: '1.0',
       slug: 'planetary-health-governance',
-      group: 'planetaryHealthResilience'
+      group: 'planetaryHealthResilience',
+      outline: {
+        version: 'v0.9.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -49,7 +55,13 @@ export const ecologicalEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.environmentalStewardship',
       emoji: '🌿',
       slug: 'environmental-stewardship',
-      group: 'ecologicalSystems'
+      group: 'ecologicalSystems',
+      outline: {
+        version: 'v2.7.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -69,7 +81,13 @@ export const ecologicalEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.climateAndEnergyGovernance',
       emoji: '⚡',
       slug: 'climate-and-energy-governance',
-      group: 'planetaryHealthResilience'
+      group: 'planetaryHealthResilience',
+      outline: {
+        version: 'v2.1',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -91,7 +109,13 @@ export const ecologicalEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.kinshipGarden',
       emoji: '🌱',
       slug: 'kinship-garden',
-      group: 'planetaryHealthResilience'
+      group: 'planetaryHealthResilience',
+      outline: {
+        version: 'v4.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -111,7 +135,13 @@ export const ecologicalEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.soilHealthAndLandUseGovernance',
       emoji: '🌾',
       slug: 'soil-health-and-land-use-governance',
-      group: 'ecologicalSystems'
+      group: 'ecologicalSystems',
+      outline: {
+        version: 'v3.2.2',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -133,7 +163,13 @@ export const ecologicalEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.waterAndSanitationGovernance',
       emoji: '💧',
       slug: 'water-and-sanitation-governance',
-      group: 'ecologicalSystems'
+      group: 'ecologicalSystems',
+      outline: {
+        version: 'v5.2.2',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -155,7 +191,13 @@ export const ecologicalEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.biodiversityGovernance',
       emoji: '🦅',
       slug: 'biodiversity-governance',
-      group: 'ecologicalSystems'
+      group: 'ecologicalSystems',
+      outline: {
+        version: 'v1.1.1',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -175,7 +217,13 @@ export const ecologicalEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.oceansAndMarineGovernance',
       emoji: '🌊',
       slug: 'oceans-and-marine-governance',
-      group: 'ecologicalSystems'
+      group: 'ecologicalSystems',
+      outline: {
+        version: 'v2.3.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -195,7 +243,13 @@ export const ecologicalEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.animalWelfareGovernance',
       emoji: '🐾',
       slug: 'animal-welfare-governance',
-      group: 'ecologicalSystems'
+      group: 'ecologicalSystems',
+      outline: {
+        version: 'v7.1',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -217,7 +271,13 @@ export const ecologicalEntities: GgfEntity[] = [
       titleKey: 'framework.docs.nav.frameworkTitles.phoenixProtocol',
       emoji: '♻️',
       slug: 'phoenix-protocol',
-      group: 'ecologicalSystems'
+      group: 'ecologicalSystems',
+      outline: {
+        version: 'v3.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -247,7 +307,13 @@ export const ecologicalEntities: GgfEntity[] = [
         titleKey: 'framework.docs.nav.frameworkTitles.disasterRiskReduction',
         emoji: '🌪️',
         slug: 'disaster-risk-reduction',
-        group: 'planetaryHealthResilience'
+        group: 'planetaryHealthResilience',
+        outline: {
+          version: 'v4.4.2',
+          updated: '2026-08-03',
+          maturity: 'adversarial',
+          standfirst: ''  // two or three sentences — write this
+        }
       }
   },
 

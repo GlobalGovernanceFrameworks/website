@@ -2,7 +2,7 @@
 title: EGP Glossary
 section: egp-glossary
 version: 1.1.1
-package: EGP/1.1.1
+package_id: EGP/1.1.1
 status: constitutionally-harmonized-glossary
 date: 2026-08-02
 controlling_interface: GMEAIA/0.1

@@ -12,21 +12,36 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
   {
     id: 'framework_treaty',
     type: 'Framework',
-    name: 'The Treaty for Our Only Home',
+    name: 'Treaty for Our Only Home',
     shortName: 'The Treaty',
-    description: 'Core legal framework providing enforcement mechanisms and institutional reforms for global governance',
+    description:
+      'Constitutional draft for legitimate planetary coordination, shared-commons stewardship, and accountable transition',
     tier: 0,
-    status: 'Ready',
+    // 'Ready' overclaimed. Nothing here has been read by an outside institution.
+    status: 'Draft',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    enables: ['framework_meta_gov', 'framework_justice', 'framework_shield', 'mechanism_gcf', 'framework_hearthstone'],
+    enables: [
+      'framework_meta_gov',
+      'framework_justice',
+      'framework_shield',
+      'mechanism_gcf',
+      'framework_hearthstone'
+    ],
     ui: {
       path: '/frameworks/treaty-for-our-only-home',
       titleKey: 'framework.docs.nav.frameworkTitles.treatyForOurOnlyHome',
-      emoji: '🌐',
-      version: '1.1',
-      slug: 'treaty-for-our-only-home'
+      emoji: '🌐', // or 📜
+      slug: 'treaty-for-our-only-home',
+      outline: {
+        // dir defaults to `tier-0/treaty-for-our-only-home` — matches, so omitted
+        version: 'v1.3',
+        updated: '2026-08-01',
+        maturity: 'adversarial',
+        standfirst:
+          'A draft treaty text, not a ratified instrument and not a proposal any government has seen. It sets out what powers would be conferred, what stays reserved, and what cannot be activated without separate ratification.'
+      }
     }
   },
   {
@@ -102,9 +117,10 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
   {
     id: 'protocol_genesis',
     type: 'LegalProtocol',
-    name: 'Genesis Protocol: Constitutional Convening Process',
+    name: 'Genesis Protocol',
     shortName: 'Genesis Protocol',
-    description: 'The Tier 0 installation script for the Treaty, defining the pluriversal convening process for all foundational institutions.',
+    description:
+      'Constitutional preparation, ratification, and first-seating process for Treaty institutions',
     tier: 0,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -113,12 +129,24 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
     enables: [
       'institution_interim_secretariat',
       'mechanism_genesis_fund',
-      'institution_gci', // Global Citizens' Assembly
-      'institution_ysc', // Youth Stewardship Council
-      'institution_cg',  // Council of Guardians
+      'institution_gci',
+      'institution_ysc',
+      'institution_cg',
       'institution_dj_tribunal'
-    ]
-    // No UI block, as it lives on the Treaty page
+    ],
+    ui: {
+      path: '/frameworks/genesis-protocol',
+      titleKey: 'framework.docs.nav.frameworkTitles.genesisProtocol',
+      emoji: '🌱',
+      slug: 'genesis-protocol',
+      outline: {
+        version: 'v0.9',
+        updated: '2026-08-01',
+        maturity: 'adversarial',
+        standfirst:
+          'How the Treaty’s institutions would be constituted without a prior authority to constitute them — and which powers stay inactive until separately ratified. This is the bootstrapping problem, written as procedure.'
+      }
+    }
   },
   {
     id: 'institution_interim_secretariat',

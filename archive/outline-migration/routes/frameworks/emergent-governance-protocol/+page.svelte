@@ -4,7 +4,6 @@
   import { browser } from '$app/environment';
   import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
-  import FrameworkSidebar from '$lib/components/FrameworkSidebar.svelte';
   import { onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
 
@@ -155,10 +154,6 @@
 
 {#if mounted}
   <div class="documentation-container">
-    {#if !isPrintMode}
-      <FrameworkSidebar />
-    {/if}
-
     <div class="content">
       <!-- EGP Guide Card -->
       {#if !isPrintMode && activeSection === 'emergent-governance-protocol' && translationsReady}
@@ -320,15 +315,13 @@
 
   /* Layout */
   .documentation-container {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 2rem;
-    max-width: 1200px;
+    max-width: 920px;
     margin: 0 auto;
     padding: 2rem 1rem;
   }
-  
+
   .content {
+    width: 100%;
     min-width: 0;
   }
   
@@ -636,7 +629,7 @@
   /* Ordered lists */
   .content :global(ol) {
     list-style-type: decimal;
-    counter-reset: item;
+    counter-reset: list-item;
   }
 
   .content :global(ol li) {

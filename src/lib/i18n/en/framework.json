@@ -149,6 +149,49 @@
     "ready": {
       "label": "Ready",
       "description": "Fully developed and ready for implementation"
+    },
+    "draft": {
+      "label": "Draft",
+      "description": "Written, but not yet reviewed outside the project"
+    },
+    "proposed": {
+      "label": "Proposed",
+      "description": "Named in a framework, not yet designed in detail"
+    },
+    "pilot": {
+      "label": "In pilot",
+      "description": "Being tried in a real setting"
+    },
+    "active": {
+      "label": "Active",
+      "description": "In ongoing use"
+    },
+    "implemented": {
+      "label": "Implemented",
+      "description": "Adopted and operating"
+    }
+  },
+
+  "maturity": {
+    "internal": {
+      "label": "Internal draft",
+      "short": "Internal",
+      "description": "Written and revised inside the project. Not yet stress-tested by outside readers."
+    },
+    "adversarial": {
+      "label": "Adversarially reviewed",
+      "short": "Adversarial",
+      "description": "Put through repeated critique and steel-manning rounds across several AI systems, with each round answered in a revision. No named human reviewer outside the project yet."
+    },
+    "external": {
+      "label": "Externally reviewed",
+      "short": "External",
+      "description": "Reviewed and criticised by named people outside the project, and revised in response."
+    },
+    "piloted": {
+      "label": "Tested in practice",
+      "short": "Piloted",
+      "description": "Some part of this has been tried in a real setting, and what happened is documented."
     }
   },
   "statusLegend": {
@@ -308,7 +351,9 @@
 
       "frameworkTitles": {
         "treatyForOurOnlyHome": "Treaty for Our Only Home",
+        "genesisProtocol": "Genesis Protocol",
         "emergentGovernanceProtocol": "Adaptive Governance Design",
+        "immanentTrustProtocol": "Immanent Trust Protocol",
         "polycentricGovernance": "Polycentric Governance Architecture",
         "implementationAndAdaptation": "Implementation & Adaptation",
         "institutionalRegeneration": "Institutional Regeneration",

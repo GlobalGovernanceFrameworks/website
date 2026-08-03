@@ -1,6 +1,95 @@
 // /src/lib/data/schema/_types.ts
 
 /**
+ * Links a schema entity to its canonical outline document on disk.
+ *
+ * The outline is the authoritative text. Any drafted prose version is a
+ * derivative and may lag. If this block is present, the entity is published
+ * at its `ui.path` by the dynamic /frameworks/[slug] route.
+ */
+export interface OutlinePublication {
+  /**
+   * Path under src/lib/content/framework-outlines/<lang>/, without the
+   * `versions/` segment. Defaults to `tier-<tier>/<ui.slug>` when omitted —
+   * set it only when the outline folder name differs from the route slug,
+   * e.g. 'tier-1/polycentric-governance-architecture'.
+   */
+  dir?: string;
+ 
+  /** Filename in versions/, without extension. e.g. 'v1.3' */
+  version: string;
+ 
+  /** ISO date of that version. Displayed, not computed. */
+  updated: string;
+ 
+  /**
+   * External validation reached, NOT internal completeness.
+   * A 20,000-word document nobody outside the project has read is 'internal'.
+   */
+  maturity: 'internal' | 'adversarial' | 'external' | 'piloted';
+ 
+  /** Overrides entity.description under the title. Optional. */
+  subtitle?: string;
+ 
+  /** Two or three sentences setting expectations before the document begins. */
+  standfirst?: string;
+}
+
+/**
+ * Publishes a framework from a multi-section prose draft rather than from a
+ * single canonical outline.
+ *
+ * Use this only where the prose is genuinely downstream of the outline and
+ * newer than it — the Pathfinder Protocol being the case it was built for.
+ * Everywhere else the outline is canonical and `OutlinePublication` applies.
+ *
+ * An entity may carry BOTH: `prose` supplies the text, `outline` supplies the
+ * version lineage. Where both exist, `prose` decides what is rendered.
+ */
+export interface ProsePublication {
+  /**
+   * Folder under src/lib/content/frameworks/<lang>/implementation/.
+   * Defaults to `ui.slug`.
+   */
+  dir?: string;
+ 
+  /** Displayed version of the prose draft. */
+  version: string;
+ 
+  /** ISO date of that version. */
+  updated: string;
+ 
+  /** Same ladder as OutlinePublication. */
+  maturity: 'internal' | 'adversarial' | 'external' | 'piloted';
+ 
+  /**
+   * Ordered table of contents. `id` is the filename without .md.
+   * `group` is optional and only used to break the sidebar into headings.
+   */
+  sections: Array<{ id: string; title: string; group?: string }>;
+ 
+  subtitle?: string;
+  standfirst?: string;
+}
+
+/**
+ * The maturity ladder. Presentation constants only — all user-visible text
+ * lives in i18n under `framework.maturity.<key>.*`, so it can be translated.
+ *
+ * The keys here are the contract: the schema validates against them, and
+ * `framework.json` must define a matching entry for each.
+ */
+export const MATURITY = {
+  internal: { color: '#6B7280', bg: '#F3F4F6' },
+  adversarial: { color: '#2B4B8C', bg: '#EEF2FB' },
+  external: { color: '#B8860B', bg: '#FDF6E3' },
+  piloted: { color: '#065F46', bg: '#ECFDF5' }
+} as const;
+
+export type Maturity = keyof typeof MATURITY;
+
+
+/**
  * Core type definitions for the GGF Schema modular system
  */
 
@@ -24,12 +113,29 @@ export interface GgfEntity {
   
   // === UI METADATA FOR NAVIGATION GENERATION ===
   ui?: {
-    path?: string;       // e.g., '/frameworks/kinship-garden'
-    titleKey?: string;   // i18n key, e.g., 'framework.docs.nav.frameworkTitles.kinshipGarden'
-    emoji?: string;      // e.g., 'ðŸŒ±'
-    version?: string;    // e.g., '2.0'
-    slug?: string;       // URL-friendly identifier
-    group?: string;      // Thematic grouping for navigation
+    /** e.g. '/frameworks/kinship-garden' */
+    path?: string;
+    /** i18n key, e.g. 'framework.docs.nav.frameworkTitles.kinshipGarden' */
+    titleKey?: string;
+    emoji?: string;
+    /** URL-friendly identifier */
+    slug?: string;
+    /** Thematic grouping for navigation */
+    group?: string;
+ 
+    /**
+     * @deprecated Use `ui.outline.version`. Retained only for entities not
+     * yet migrated to outline-first publication. Where both exist,
+     * `ui.outline.version` wins.
+     */
+    version?: string;
+ 
+    /** Present = published from its outline at `ui.path`. */
+    outline?: OutlinePublication;
+
+    /** Present = published from a multi-section prose draft. */
+    prose?: ProsePublication;
+
   };
 }
 

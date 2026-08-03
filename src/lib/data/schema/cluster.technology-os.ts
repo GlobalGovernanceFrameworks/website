@@ -27,9 +27,14 @@ export const technologyOSEntities: GgfEntity[] = [
       path: '/frameworks/technology-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.technologyGovernance',
       emoji: '🤖',
-      version: '3.2',
       slug: 'technology-governance',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v3.6',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
 
@@ -50,9 +55,14 @@ export const technologyOSEntities: GgfEntity[] = [
       path: '/frameworks/aethelred-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.aethelredAccord',
       emoji: '🧬',
-      version: '1.0',
       slug: 'aethelred-accord',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v1.2.2',
+        updated: '2026-08-02',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -72,9 +82,14 @@ export const technologyOSEntities: GgfEntity[] = [
       path: '/frameworks/fractal-intelligence-accord',
       titleKey: 'framework.docs.nav.frameworkTitles.fractalIntelligenceAccord',
       emoji: '🌀',
-      version: '1.0',
       slug: 'fractal-intelligence-accord',
-      group: 'humanSocialSystems'
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v6.0',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -91,6 +106,27 @@ export const technologyOSEntities: GgfEntity[] = [
     dependencies: ['framework_technology_governance', 'council_gtc'],
     enables: ['framework_deep_time']
     // No UI block needed as it's a sub-institution, not a primary navigable framework.
+  },
+
+  // === TIER 4 ===
+  {
+    id: 'protocol_weaver',
+    type: 'LegalProtocol',
+    name: 'The Weaver Protocol',
+    shortName: 'Weaver Protocol',
+    description:
+      'Governance for persistent immersive virtual worlds: avatar rights, ontological sovereignty, cultural consent, and economic justice in synthetic environments.',
+    tier: 4,
+    status: 'Draft',
+    primaryDomain: 'Technology',
+    geographicScope: 'Global',
+    implementationPriority: 'Medium',
+    dependencies: [
+      'framework_technology_governance',   // verify id
+      'framework_aurora_accord',           // verify id
+      'framework_mos'                      // verify id
+    ]
+    // No ui block: outline exists at tier-4/weaver-protocol but is not published.
   },
 
   // === GOVERNANCE COUNCIL ===

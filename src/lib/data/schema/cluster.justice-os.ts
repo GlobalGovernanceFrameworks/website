@@ -25,9 +25,14 @@ export const justiceOSEntities: GgfEntity[] = [
       path: '/frameworks/peace-and-conflict-resolution',
       titleKey: 'framework.docs.nav.frameworkTitles.peaceAndConflictResolution',
       emoji: '🕊️',
-      version: '1.7',
       slug: 'peace-and-conflict-resolution',
-      group: 'socialFabricJustice'
+      group: 'socialFabricJustice',
+      outline: {
+        version: 'v1.8.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -101,9 +106,14 @@ export const justiceOSEntities: GgfEntity[] = [
       path: '/frameworks/justice-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.justiceSystems',
       emoji: '⚖️',
-      version: '1.0',
       slug: 'justice-systems',
-      group: 'socialFabricJustice'
+      group: 'socialFabricJustice',
+      outline: {
+        version: 'v1.4',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {
@@ -151,9 +161,14 @@ export const justiceOSEntities: GgfEntity[] = [
       path: '/frameworks/shield-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.shieldProtocol',
       emoji: '🛡️',
-      version: '1.3',
       slug: 'shield-protocol',
-      group: 'socialFabricJustice'
+      group: 'socialFabricJustice',
+      outline: {
+        version: 'v2.0.1',
+        updated: '2026-08-03',
+        maturity: 'adversarial',
+        standfirst: ''  // two or three sentences — write this
+      }
     }
   },
   {

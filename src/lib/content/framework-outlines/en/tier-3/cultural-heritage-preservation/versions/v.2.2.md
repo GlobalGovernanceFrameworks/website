@@ -189,7 +189,7 @@ The framework aligns with and builds upon existing international laws like the U
 - **Priorities**:
   - Establish Cultural & Ancestral Wisdom Council within Meta-Governance.
   - Launch 5 BAZ pilots (urban, rural, post-conflict, climate-vulnerable, diaspora).
-  - Digitize 100 endangered languages, prioritize <100 speakers.
+  - Digitize 100 endangered languages, prioritize `<100` speakers.
   - Train 1,000 BAZ stewards, fund via $100M Stewardship Bonds.
   - Develop Treaty Ecocide law for cultural sites.
 - **Metrics**:
