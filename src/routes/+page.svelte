@@ -2,6 +2,7 @@
 <script>
   import InfoBox from '$lib/components/InfoBox.svelte';
   import EthicalImpactDashboard from '$lib/components/EthicalImpactDashboard.svelte';
+  import HeroConstellation from '$lib/components/HeroConstellation.svelte';
   import FrameworkConstellation from '$lib/components/FrameworkConstellation.svelte';
   import { t, locale } from '$lib/i18n';
   import { onMount } from 'svelte';
@@ -160,18 +161,16 @@
   </div>
 {/if}
 
-<!-- Hero Section with Core Message -->
+<!-- Hero Section -->
 <section class="hero-section">
+  <HeroConstellation />
+
   <div class="hero-container">
-    
-    <!-- Hero Content -->
     <div class="hero-content">
-      <img src="{base}/logo.svg" alt="{$t('home.title')} Logo" class="hero-logo">
-      
-      <h1 class="hero-title">{$t('home.title')}</h1>
-      <p class="hero-subtitle">{$t('home.intro.heading')}</p>
-      <p class="hero-purpose">{$t('home.intro.purpose')}</p>
-      <p class="hero-tagline">{$t('home.intro.text')}</p>
+      <img src="{base}/logo.svg" alt="{$t('home.title')}" class="hero-logo">
+
+      <h1 class="hero-title">{$t('home.intro.heading')}</h1>
+      <p class="hero-lead">{$t('home.intro.text')}</p>
 
       <div class="hero-actions">
         <a href="{base}/frameworks" class="hero-button hero-button-primary">
@@ -181,8 +180,17 @@
           {$t('home.intro.secondaryButton')}
         </a>
       </div>
-    </div>
 
+      <p class="hero-meta">
+        <span><strong>{allFrameworks.length}</strong> {$t('home.hero.stats.frameworks')}</span>
+        <span class="hero-meta-sep" aria-hidden="true">·</span>
+        <span><strong>5</strong> {$t('home.hero.stats.tiers')}</span>
+        <span class="hero-meta-sep" aria-hidden="true">·</span>
+        <span><strong>3</strong> {$t('home.hero.stats.languages')}</span>
+        <span class="hero-meta-sep" aria-hidden="true">·</span>
+        <span>{$t('home.hero.stats.openSource')}</span>
+      </p>
+    </div>
   </div>
 </section>
 
@@ -190,7 +198,7 @@
 <section class="transition-section">
   <div class="container">
     <div class="transition-header">
-      <p class="transition-eyebrow">{$t('home.title')}</p>
+      <p class="transition-eyebrow">{$t('home.transition.eyebrow')}</p>
       <h2 class="transition-title">{$t('home.transition.title')}</h2>
       <p class="transition-lead">{$t('home.transition.lead')}</p>
     </div>
@@ -209,10 +217,118 @@
 
     <div class="transition-footer">
       <p>{$t('home.transition.note')}</p>
-      <a href="{base}/overview" class="transition-link">
+      <a href="{base}/overview#implementation-roadmap" class="transition-link">
         {$t('home.transition.button')} →
       </a>
     </div>
+  </div>
+</section>
+
+<!-- Interactive Framework Constellation Section -->
+<section class="constellation-section">
+  <div class="hero-container">
+    
+    <div class="constellation-header">
+      <h2 class="constellation-title">{$t('home.constellation.title')}</h2>
+      <p class="constellation-subtitle">
+        {$t('home.constellation.subtitle')}
+      </p>
+    </div>
+
+    <!-- Constellation Layout: Legend + Chart + Info Panel -->
+    <div class="constellation-layout">
+      
+      <!-- Left Column: Legend + Explore Button -->
+      <div class="left-column">
+        <!-- Tier Legend -->
+        <div class="tier-legend">
+          <h3 class="legend-title">{$t('common.ui.frameworkTiers') || 'Framework Tiers'}</h3>
+          <div class="legend-item">
+            <div class="legend-dot tier-0-dot"></div>
+            <div class="legend-content">
+              <div class="legend-name tier-0-text">{$t('framework.tier.0.title') || 'Tier 0: Global Institutional Reform'}</div>
+            </div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot tier-1-dot"></div>
+            <div class="legend-content">
+              <div class="legend-name tier-1-text">{$t('framework.tier.1.title') || 'Tier 1: Urgent Global Stability & Justice'}</div>
+            </div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot tier-2-dot"></div>
+            <div class="legend-content">
+              <div class="legend-name tier-2-text">{$t('framework.tier.2.title') || 'Tier 2: Systems for Long-Term Thriving'}</div>
+            </div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot tier-3-dot"></div>
+            <div class="legend-content">
+              <div class="legend-name tier-3-text">{$t('framework.tier.3.title') || 'Tier 3: Equity, Culture & Future Generations'}</div>
+            </div>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot tier-4-dot"></div>
+            <div class="legend-content">
+              <div class="legend-name tier-4-text">{$t('framework.tier.4.title') || 'Tier 4: Visionary & Meta Governance'}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Explore Button -->
+        <div class="explore-button-container">
+          <a href="{base}/frameworks" class="explore-button">
+            {$t('home.cta') || 'Explore the Frameworks'}
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Framework Constellation -->
+      <div class="constellation-column">
+        <FrameworkConstellation 
+          {hoveredFramework} 
+          {activeFramework} 
+          {isMobile}
+          on:nodeClick={handleNodeClick}
+          on:nodeHover={handleNodeHover}
+          on:nodeLeave={handleNodeLeave}
+          on:backgroundClick={handleBackgroundClick}
+        />
+      </div>
+
+    </div>
+
+    <!-- Wide Description Panel - Below the constellation -->
+    {#if currentHoveredFramework}
+      <div class="wide-description-panel">
+        <!-- Show golden tagline with click instruction if available -->
+        {#if getFrameworkTagline(currentHoveredFramework.slug.replace(/-/g, ''))}
+          <p class="framework-tagline">
+            {getFrameworkTagline(currentHoveredFramework.slug.replace(/-/g, ''))}
+            <span class="click-instruction-inline">
+              ({$t('common.ui.clickToVisit') || 'click to visit'})
+            </span>
+          </p>
+        {:else}
+          <!-- If no tagline, show click instruction as the tagline -->
+          <p class="framework-tagline click-instruction-only">
+            {$t('common.ui.clickOnTheNode') || 'Click on the node to visit the framework'}
+          </p>
+        {/if}
+        <div class="description-content">
+          <p class="framework-description">{getFrameworkDescription(currentHoveredFramework.slug.replace(/-/g, ''))}</p>
+          
+          {#if isMobile && activeFramework === currentHoveredFramework.slug}
+            <p class="mobile-hint">👆 {$t('common.ui.tapAgainToExplore') || 'Tap again to explore this framework'}</p>
+          {/if}
+        </div>
+      </div>
+    {:else}
+      <div class="wide-description-placeholder">
+        <p>{$t('common.ui.hoverToExplore') || 'Hover to explore frameworks'}</p>
+      </div>
+    {/if}
+
   </div>
 </section>
 
@@ -371,115 +487,6 @@
     </div>
   </section>
 {/if}
-
-<!-- Interactive Framework Constellation Section -->
-<section class="constellation-section">
-  <div class="hero-container">
-    
-    <div class="constellation-header">
-      <h2 class="constellation-title">{$t('home.constellation.title')}</h2>
-      <p class="constellation-subtitle">
-        {$t('home.constellation.subtitle')}
-      </p>
-    </div>
-
-    <!-- Constellation Layout: Legend + Chart + Info Panel -->
-    <div class="constellation-layout">
-      
-      <!-- Left Column: Legend + Explore Button -->
-      <div class="left-column">
-        <!-- Tier Legend -->
-        <div class="tier-legend">
-          <h3 class="legend-title">{$t('common.ui.frameworkTiers') || 'Framework Tiers'}</h3>
-          <div class="legend-item">
-            <div class="legend-dot tier-0-dot"></div>
-            <div class="legend-content">
-              <div class="legend-name tier-0-text">{$t('framework.tier.0.title') || 'Tier 0: Global Institutional Reform'}</div>
-            </div>
-          </div>
-          <div class="legend-item">
-            <div class="legend-dot tier-1-dot"></div>
-            <div class="legend-content">
-              <div class="legend-name tier-1-text">{$t('framework.tier.1.title') || 'Tier 1: Urgent Global Stability & Justice'}</div>
-            </div>
-          </div>
-          <div class="legend-item">
-            <div class="legend-dot tier-2-dot"></div>
-            <div class="legend-content">
-              <div class="legend-name tier-2-text">{$t('framework.tier.2.title') || 'Tier 2: Systems for Long-Term Thriving'}</div>
-            </div>
-          </div>
-          <div class="legend-item">
-            <div class="legend-dot tier-3-dot"></div>
-            <div class="legend-content">
-              <div class="legend-name tier-3-text">{$t('framework.tier.3.title') || 'Tier 3: Equity, Culture & Future Generations'}</div>
-            </div>
-          </div>
-          <div class="legend-item">
-            <div class="legend-dot tier-4-dot"></div>
-            <div class="legend-content">
-              <div class="legend-name tier-4-text">{$t('framework.tier.4.title') || 'Tier 4: Visionary & Meta Governance'}</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Explore Button -->
-        <div class="explore-button-container">
-          <a href="{base}/frameworks" class="explore-button">
-            {$t('home.cta') || 'Explore the Frameworks'}
-          </a>
-        </div>
-      </div>
-
-      <!-- Right Column: Interactive Framework Constellation -->
-      <div class="constellation-column">
-        <FrameworkConstellation 
-          {hoveredFramework} 
-          {activeFramework} 
-          {isMobile}
-          on:nodeClick={handleNodeClick}
-          on:nodeHover={handleNodeHover}
-          on:nodeLeave={handleNodeLeave}
-          on:backgroundClick={handleBackgroundClick}
-        />
-      </div>
-
-    </div>
-
-    <!-- Wide Description Panel - Below the constellation -->
-    {#if currentHoveredFramework}
-      <div class="wide-description-panel">
-        <!-- Show golden tagline with click instruction if available -->
-        {#if getFrameworkTagline(currentHoveredFramework.slug.replace(/-/g, ''))}
-          <p class="framework-tagline">
-            {getFrameworkTagline(currentHoveredFramework.slug.replace(/-/g, ''))}
-            <span class="click-instruction-inline">
-              ({$t('common.ui.clickToVisit') || 'click to visit'})
-            </span>
-          </p>
-        {:else}
-          <!-- If no tagline, show click instruction as the tagline -->
-          <p class="framework-tagline click-instruction-only">
-            {$t('common.ui.clickOnTheNode') || 'Click on the node to visit the framework'}
-          </p>
-        {/if}
-        <div class="description-content">
-          <p class="framework-description">{getFrameworkDescription(currentHoveredFramework.slug.replace(/-/g, ''))}</p>
-          
-          {#if isMobile && activeFramework === currentHoveredFramework.slug}
-            <p class="mobile-hint">👆 {$t('common.ui.tapAgainToExplore') || 'Tap again to explore this framework'}</p>
-          {/if}
-        </div>
-      </div>
-    {:else}
-      <div class="wide-description-placeholder">
-        <p>{$t('common.ui.hoverToExplore') || 'Hover to explore frameworks'}</p>
-      </div>
-    {/if}
-
-  </div>
-</section>
-
 
 <!-- Enhanced Find Your Place Section 
 <section class="findyourplace-section">
@@ -659,13 +666,14 @@
 <!-- Collapsible Info Sections -->
 <section class="info-sections">
   <div class="container">
-    <InfoBox 
-      title={$t('home.whyExists.title')} 
-      isExpanded={whyExistsExpanded}
-      on:toggle={toggleWhyExists}
-    >
-      <p>{$t('home.whyExists.content')}</p>
-    </InfoBox>
+     <InfoBox
+       title={$t('home.whyExists.title')}
+       isExpanded={whyExistsExpanded}
+       on:toggle={toggleWhyExists}
+     >
+       <p class="infobox-lead">{$t('home.intro.purpose')}</p>
+       <p>{$t('home.whyExists.content')}</p>
+     </InfoBox>
 
     <InfoBox 
       title={$t('home.language.title')} 
@@ -885,61 +893,52 @@
     padding: 0 1rem;
   }
 
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 5.5rem 0 4rem 0;
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e40af 100%);
+    color: white;
+  }
+
   .hero-container {
+    position: relative;
+    z-index: 1;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 1rem;
   }
 
-  /* Hero Section - Simplified */
-  .hero-section {
-    padding: 3rem 0 2rem 0; /* Reduced padding since main content moved below */
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e40af 100%);
-    color: white;
-  }
-
   .hero-content {
-    max-width: 980px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
   }
 
   .hero-logo {
-    height: 80px; /* Slightly smaller */
-    width: 80px;
-    margin: 0 auto 1.5rem auto;
+    height: 64px;
+    width: 64px;
+    margin: 0 auto 2rem auto;
     opacity: 0.9;
   }
 
   .hero-title {
-    font-size: 2.25rem; /* Slightly smaller */
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.35rem;
-    color: #ddd6fe;
-    margin-bottom: 1rem;
-    font-weight: 300;
-  }
-
-  .hero-purpose {
-    max-width: 900px;
+    max-width: 18ch;
     margin: 0 auto 1.25rem auto;
-    font-size: clamp(1.45rem, 2.4vw, 2rem);
-    line-height: 1.45;
-    color: #fbbf24;
-    font-weight: 650;
+    font-size: clamp(2.15rem, 4.6vw, 3.4rem);
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
   }
 
-  .hero-tagline {
-    max-width: 780px;
+  .hero-lead {
+    max-width: 620px;
     margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #e0e7ff;
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: #c7d2fe;
     font-weight: 400;
   }
 
@@ -948,7 +947,37 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 2.25rem;
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 2.5rem 0 0 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(199, 210, 254, 0.6);
+  }
+
+  .hero-meta strong {
+    color: #fbbf24;
+    font-weight: 700;
+  }
+
+  .hero-meta-sep {
+    color: rgba(199, 210, 254, 0.3);
+  }
+
+  .infobox-lead {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-primary, #1e293b);
+    font-weight: 600;
+    margin-bottom: 1rem;
   }
 
   .hero-button {
@@ -1287,46 +1316,6 @@
     max-width: 800px;
     margin: 0 auto 3rem auto;
   }
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  @media (min-width: 900px) {
-    .projects-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  .project-card {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    border-radius: 1rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 1px solid #e2e8f0;
-    position: relative;
-    overflow: hidden;
-    background: #fff;
-  }
-
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-  }
-
-  /* Specific Card Themes */
-  .project-communize { border-top: 4px solid #6B5CA5; }
-  .project-communize .project-icon { background: #f3f0ff; color: #6B5CA5; }
-  
-  .project-stuga { border-top: 4px solid #B8860B; }
-  .project-stuga .project-icon { background: #fffbeb; color: #B8860B; }
-  
-  .project-civicbase { border-top: 4px solid #2B4B8C; }
-  .project-civicbase .project-icon { background: #eff6ff; color: #2B4B8C; }
 
   .project-icon {
     width: 50px;
@@ -2772,18 +2761,16 @@
   @media (max-width: 640px) {
     .hero-title {
       font-size: 2rem;
+      max-width: 100%;
     }
 
-    .hero-subtitle {
-      font-size: 1.25rem;
-    }
-
-    .hero-purpose {
-      font-size: 1.35rem;
-    }
-
-    .hero-tagline {
+    .hero-lead {
       font-size: 1rem;
+    }
+
+    .hero-meta {
+      font-size: 0.7rem;
+      gap: 0.45rem;
     }
 
     .hero-actions {

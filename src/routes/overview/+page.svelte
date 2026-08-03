@@ -53,6 +53,7 @@
   onMount(async () => {
     await tick();
     mounted = true;
+    let deepLinked = false;
     
     if (browser) {
       // Fix URL corruption and preserve hash fragments
@@ -92,9 +93,20 @@
         activeSection = sectionParam;
       } else if (hashSection && data?.sections?.[hashSection]) {
         activeSection = hashSection;
+        deepLinked = true;
       }
-      
+
       initializeAccordionStates();
+
+      if (deepLinked) {
+        await tick();
+        const contentElement = document.querySelector('.section-content');
+        if (contentElement) {
+          contentElement.scrollIntoView({ behavior: 'auto', block: 'start' });
+        } else {
+          window.scrollTo(0, 0);
+        }
+      }
       
       // Global function for PDF generation
       window.showAllSectionsForPrint = () => { isPrintMode = true; };
@@ -363,7 +375,7 @@
     <div class="content-area">
       {#each sectionsToShow as section (section)}
         {#if data?.sections?.[section]}
-          <div class="section-content" id={section}>
+          <div class="section-content" id="section-{section}">
             <!-- Language fallback notice -->
             {#if !isPrintMode && data.sectionsUsingEnglishFallback?.includes(section) && section !== 'index' && translationsReady}
               <div class="language-fallback-notice">
