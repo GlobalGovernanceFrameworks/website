@@ -111,7 +111,7 @@ Financial systems orchestrate the flow of resources, trust, and value, acting as
 ## 5. Aesthetic and Poetic Framing
 **Objective**: Inspire with evocative language and visuals.  
 - **Interstitial Quote**:  
-  > "What if the highest interest we could earn... was someone else’s flourishing?"  
+  `>` "What if the highest interest we could earn... was someone else’s flourishing?"  
 - **Visual Elements**:  
   - Heart-shaped *Hearts* flow diagrams.  
   - Spiraling interconnectedness visuals.  
@@ -257,7 +257,7 @@ Financial systems orchestrate the flow of resources, trust, and value, acting as
 ## 12. Global Currency as a Coordinating Instrument
 **Objective**: Introduce *Hearts* for coordination and equity.  
 - **Introducing *Hearts***:  
-  > In a world awakening to new forms of value, we introduce *Hearts*—a voluntary global currency grounded not in scarcity or control, but in trust, care, and shared flourishing. Rather than replacing existing systems, *Hearts* serve as a bridge between diverse expressions of value: economic, ecological, and relational. Each Heart reflects a pulse of generosity, a node of cooperation, a bond of trust. As programmable tokens within a plural financial ecosystem, *Hearts* can coordinate regenerative trade, recognize care work, and empower a new story of wealth—where every act of kindness carries currency, and every exchange strengthens the commons.  
+  `>` In a world awakening to new forms of value, we introduce *Hearts*—a voluntary global currency grounded not in scarcity or control, but in trust, care, and shared flourishing. Rather than replacing existing systems, *Hearts* serve as a bridge between diverse expressions of value: economic, ecological, and relational. Each Heart reflects a pulse of generosity, a node of cooperation, a bond of trust. As programmable tokens within a plural financial ecosystem, *Hearts* can coordinate regenerative trade, recognize care work, and empower a new story of wealth—where every act of kindness carries currency, and every exchange strengthens the commons.  
 - **Why *Hearts*?**  
   - Translates value systems via Section 14.  
 - **Design Principles**:  
@@ -430,7 +430,7 @@ This manifesto is a shareable PDF or social media graphic on globalgovernancefra
   - Response: Supply adjustment, stakeholder vote.  
 - **Cyberattack Recovery**:  
   - Playbook: 24-hour rollback, multi-signature re-authentication.  
-  - Recovery: <48 hours, 99.9% integrity.  
+  - Recovery: `<`48 hours, 99.9% integrity.  
 - **Cultural Appropriation**:  
   - Mitigation: Local validation standards.  
   - Training: 500 mediators by 2027.  
