@@ -14,7 +14,7 @@ The fallback strategies (Section 4.6) are the standout addition. "If chip export
 
 **The CIN formation threshold may be too high for some contexts.** The Protocol requires 50 members, a governance charter, and a dispute resolution mechanism. For a well-organized urban data cooperative, this is straightforward. For an Indigenous community of 30 people with unique linguistic knowledge, this creates a participation barrier. The minimum membership should have a waiver pathway for communities with unique context value and small populations.
 
-**Phase 1's compute Gini target lacks a baseline.** The Protocol targets Gini < 0.6 by 2030 but doesn't state the current estimated Gini. If the current Gini is 0.95 (plausible given 5 entities dominate), then 0.6 by 2030 requires extraordinary redistribution in four years. If it's 0.75, it's ambitious but conceivable. Without the baseline, the target is unanchored.
+**Phase 1's compute Gini target lacks a baseline.** The Protocol targets Gini `<` 0.6 by 2030 but doesn't state the current estimated Gini. If the current Gini is 0.95 (plausible given 5 entities dominate), then 0.6 by 2030 requires extraordinary redistribution in four years. If it's 0.75, it's ambitious but conceivable. Without the baseline, the target is unanchored.
 
 **The Reality Rent revenue projections are optimistic.** $50M by Phase 1, $500M by Phase 2. For context, the entire global AI market for training data is currently estimated in the low billions. $500M flowing specifically through CIN licensing by 2030 assumes very rapid adoption. The Protocol should note this as aspirational with scenario-dependent variance.
 
