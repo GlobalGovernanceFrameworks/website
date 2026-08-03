@@ -11,7 +11,7 @@ This revision represents a mature, comprehensive policy framework that successfu
 - **GDA fund withholding** adds practical enforcement tool
 
 **2. Economic Framework (B+ → A-, 92/100)**
-- **Ableism Tax structure** now detailed: tiered penalties (1-2% revenue), caps at 2% domestic profit, exemptions for firms <50 employees
+- **Ableism Tax structure** now detailed: tiered penalties (1-2% revenue), caps at 2% domestic profit, exemptions for firms `<`50 employees
 - **Specific economic models** for Brazil ($2B), Kenya ($1B), Germany ($1.5B) over 10 years
 - **Industry transition timelines** for healthcare (500K workers by 2030), education, tech
 - **Supply chain analysis** addresses disruption concerns

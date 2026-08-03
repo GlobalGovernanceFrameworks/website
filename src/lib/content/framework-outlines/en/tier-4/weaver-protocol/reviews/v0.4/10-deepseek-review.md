@@ -32,8 +32,8 @@
 #### **3. Economic Justice**  
 - **Problem:** "Virtual Land Value Tax" could burden small creators.  
 - **Solution:**  
-  - Clarify **exemptions for community cooperatives** (e.g., <10% profit reinvested in Digital Commons).  
-  - Add a **wealth cap** (e.g., no single entity owns >15% of a world’s land).  
+  - Clarify **exemptions for community cooperatives** (e.g., `<`10% profit reinvested in Digital Commons).  
+  - Add a **wealth cap** (e.g., no single entity owns `>`15% of a world’s land).  
 
 #### **4. Youth Engagement**  
 - **Problem:** Veto power for the **Youth Advisory Council** lacks procedural clarity.  
@@ -66,7 +66,7 @@
 **After:**  
 **Principle 4: Economic Justice & Anti-Feudal Safeguards**  
 - **Right to Exit:** Users retain full ownership of assets/identities, enforceable via **smart contracts**.  
-- **Wealth Cap:** No entity controls >15% of a world’s land or economy; excess triggers **redistribution to Digital Commons**.  
+- **Wealth Cap:** No entity controls `>`15% of a world’s land or economy; excess triggers **redistribution to Digital Commons**.  
 - **Cooperative Incentives:** Platforms granting tax exemptions to community-owned ventures must publish **annual equity audits**.  
 
 ---

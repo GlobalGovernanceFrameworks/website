@@ -44,7 +44,7 @@ This deep integration shows the true systemic power of the GGF and fully answers
 ### **Implementing the Key Enhancement Recommendations**
 
 * **Add Cross-Platform Governance Scenarios:** This is a great idea. You can create a new appendix and write 2-3 short paragraphs detailing the scenarios Claude suggested, referencing the GGF components that would be activated in each case.
-* **Strengthen Pilot Metrics:** Add "process metrics" to your Milestone 2 section, such as *"Stakeholder engagement rates >60%"* and *"Average dispute resolution time <14 days."*
+* **Strengthen Pilot Metrics:** Add "process metrics" to your Milestone 2 section, such as *"Stakeholder engagement rates `>`60%"* and *"Average dispute resolution time `<`14 days."*
 * **Add Implementation Risk Assessment:** Create a new section with a simple markdown table listing potential risks (like a non-compliance coalition of major platforms) and mitigation strategies (activating the enforcement escalation ladder, supporting user migration to compliant alternatives).
 
 By implementing these clarifications, especially the deep integration with the **Horizon Protocol**, you will elevate the Weaver Protocol to an "A+" framework that is not only visionary but also a prime example of the GGF's systemic synergy in action.

@@ -44,7 +44,7 @@ Your revised framework is **a visionary and meticulously detailed blueprint**, b
 
 4. **Clarify Enforcement:**  
    - Add a **"Traffic Light System"** to the Watchdog’s public rankings (Green = compliant, Red = sanctions).  
-   - Specify **5 trigger criteria** for conditional aid (e.g., <3% mental health budget, criminalization of suicide).  
+   - Specify **5 trigger criteria** for conditional aid (e.g., `<`3% mental health budget, criminalization of suicide).  
 
 5. **Simplify High-Concept Language:**  
    - Replace **"Adaptive Spiral Feedback Model"** with **"Iterative Community Feedback Cycles"** for universal understanding.  

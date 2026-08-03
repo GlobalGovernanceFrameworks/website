@@ -63,7 +63,7 @@
 
 #### **8. Monitoring & Evaluation (A/93)**  
 - **Strengths**:  
-  - **Corrective Action Triggers** (e.g., Language Vitality <20%).  
+  - **Corrective Action Triggers** (e.g., Language Vitality `<`20%).  
   - **Digital Twins** for predictive preservation.  
 - **Improvements**:  
   - Include **"Intergenerational Review Panels"** (youth/elder joint assessments).  

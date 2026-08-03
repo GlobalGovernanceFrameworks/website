@@ -21,9 +21,9 @@ The Regenerative Journeys Framework outline you've shared is impressively compre
 
      | Metric                  | Baseline Target | Measurement Method          | Escalation Trigger |
      |-------------------------|-----------------|-----------------------------|-------------------|
-     | Cultural Continuity    | 70% retention  | Annual community surveys   | <60% → Sacred Pause |
-     | Ecosystem Health       | BHI > 80       | AI-monitored biodiversity  | <70% → Visitor Caps |
-     | Joy Indicator          | >75% positive  | Qualitative narratives     | <65% → Audit Review |
+     | Cultural Continuity    | 70% retention  | Annual community surveys   | `<`60% → Sacred Pause |
+     | Ecosystem Health       | BHI `>` 80       | AI-monitored biodiversity  | `<`70% → Visitor Caps |
+     | Joy Indicator          | `>`75% positive  | Qualitative narratives     | `<`65% → Audit Review |
 
      This would enhance the TIA process and tie into the Annual BAZ Audits.
    - **External Auditing:** To build trust, require third-party verification (e.g., by the Earth Council or independent NGOs) for high-stakes metrics like the Reparations Index, with public reporting standards.

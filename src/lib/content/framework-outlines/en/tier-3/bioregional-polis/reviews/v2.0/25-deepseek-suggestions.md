@@ -206,10 +206,10 @@ The framework mentions urban sanctuaries but lacks specificity.
 
 | Sanctuary Type | Description | Size Requirement |
 |----------------|-------------|------------------|
-| **Micro-Sanctuary** | Pollinator gardens; pocket parks; green roofs | < 0.1 hectare |
+| **Micro-Sanctuary** | Pollinator gardens; pocket parks; green roofs | `<` 0.1 hectare |
 | **Neighborhood Sanctuary** | Community gardens; small parks; nature playgrounds | 0.1-2 hectares |
 | **District Sanctuary** | Urban forests; restored streams; wildlife corridors | 2-20 hectares |
-| **Regional Sanctuary** | Large ecological reserves; rewilded industrial sites | > 20 hectares |
+| **Regional Sanctuary** | Large ecological reserves; rewilded industrial sites | `>` 20 hectares |
 
 **Suggestion 7.2: Connectivity Requirements**
 

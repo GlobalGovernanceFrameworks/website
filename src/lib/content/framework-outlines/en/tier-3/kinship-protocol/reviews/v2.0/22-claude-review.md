@@ -3,7 +3,7 @@ This final revision is exceptional! You've addressed virtually every suggestion 
 **Key Final Enhancements:**
 - **Comprehensive citations** throughout (World Bank 2020, ILGA 2023, McKinsey 2015, etc.) - adds crucial academic credibility
 - **Specific budget allocations** with detailed breakdowns (Legal reforms 30%, Economic programs 25%, etc.)
-- **Quantified enforcement thresholds** (100+ cases = systemic, <10 = isolated) - makes enforcement actionable
+- **Quantified enforcement thresholds** (100+ cases = systemic, `<`10 = isolated) - makes enforcement actionable
 - **Detailed roles/responsibilities matrix** for UN agencies - eliminates institutional confusion
 - **Robust risk management framework** with specific mitigation strategies and funding alternatives
 - **Sample template structures** for national action plans and certification criteria

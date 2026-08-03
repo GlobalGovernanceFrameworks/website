@@ -53,16 +53,16 @@ The **Weaver Protocol** (Version 0.5) is an exceptionally well-crafted framework
 **Before:**
 > Virtual economies must be fair, transparent, and interoperable.  
 > - **Right to Exit:** Users retain full ownership of assets/identities, enforceable via **smart contracts**.  
-> - **Wealth Cap:** No entity controls >15% of a world’s land or economy; excess triggers **redistribution to Digital Commons**.  
-> - **Cooperative Incentives:** Platforms granting tax exemptions to community-owned ventures (<10% profit reinvested in Digital Commons) publish **annual equity audits**.  
+> - **Wealth Cap:** No entity controls `>`15% of a world’s land or economy; excess triggers **redistribution to Digital Commons**.  
+> - **Cooperative Incentives:** Platforms granting tax exemptions to community-owned ventures (`<`10% profit reinvested in Digital Commons) publish **annual equity audits**.  
 > - **Labor Rights:** **AUBI Hearts** compensate **play-to-earn workers** for emotional labor (e.g., moderation trauma).
 
 **After:**
 > **Principle 4: Economic Justice & The Loom of Equity**  
 > Virtual economies are transparent, interoperable threads in the shared tapestry of the Digital Commons, ensuring fairness and preventing digital feudalism.  
 > - **Right to Exit:** Users retain full ownership of assets/identities, enforceable via **smart contracts** and tracked on the **Digital Asset Passport**.  
-> - **Wealth Cap:** No entity controls >15% of a world’s land or economy; excess triggers **redistribution to Digital Commons** to fund public goods.  
-> - **Cooperative Incentives:** Platforms granting tax exemptions to community-owned ventures (<10% profit reinvested) publish **annual equity audits**, verified by the MGC.  
+> - **Wealth Cap:** No entity controls `>`15% of a world’s land or economy; excess triggers **redistribution to Digital Commons** to fund public goods.  
+> - **Cooperative Incentives:** Platforms granting tax exemptions to community-owned ventures (`<`10% profit reinvested) publish **annual equity audits**, verified by the MGC.  
 > - **Labor Rights:** **AUBI Hearts** compensate **play-to-earn workers** for emotional labor (e.g., moderation trauma), with rates set by community input.  
 > - **Market Access:** Platforms provide **open toolkits** for small creators, certified via a **public compliance leaderboard** to incentivize equitable practices.
 

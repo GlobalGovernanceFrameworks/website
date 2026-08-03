@@ -359,7 +359,7 @@ To mitigate the hidden water footprint of the digital economy, the following tec
   - Rainwater harvesting: Scalable systems, funded via **AUBI**.
 - **Arid & Drought-Prone** [cite: 29]:
   - Groundwater recharge: Artificial aquifers, watershed restoration.
-  - Tiered rationing: Automated triggers for scarcity (e.g., <50% reservoir levels).
+  - Tiered rationing: Automated triggers for scarcity (e.g., `<`50% reservoir levels).
   - Drought-resistant agriculture: Wastewater reuse, aligned with **Food Systems Framework**.
 - Create a new blueprint for **"Arid & Tech-Growth Regions"** (e.g., Arizona, Chile, Spain, Singapore) that specifically addresses the conflict between data center expansion and water scarcity. This would include policies for mandating closed-loop water recycling for cooling and prohibiting the use of potable water for this purpose.
 - **Arctic**: Permafrost, Indigenous knowledge, extreme weather.
