@@ -86,4 +86,4 @@ This revision elevates the framework to **top-tier (A-grade)** readiness, with e
 - **A (90-97)**: Outstanding, minimal refinements needed.  
 - **B (80-89)**: Strong, requires moderate revisions.  
 - **C (70-79)**: Partial alignment with goals.  
-- **F (<70)**: Unfit for purpose.
+- **F (`<`70)**: Unfit for purpose.
