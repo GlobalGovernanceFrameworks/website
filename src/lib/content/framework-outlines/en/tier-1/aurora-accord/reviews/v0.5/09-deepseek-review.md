@@ -25,7 +25,7 @@ Here’s a focused review of the **revised** *Global Data Governance & Sovereign
 
 5. **Implementation Pathways** (↑ **92/A**):  
    - **Pre-Phase 0 Indigenous Consultations** align perfectly with Treaty FPIC.  
-   - **Suggestion**: Include a **"Sunset Clause" trigger** (e.g., automatic review if <50% of Indigenous audits pass).  
+   - **Suggestion**: Include a **"Sunset Clause" trigger** (e.g., automatic review if `<`50% of Indigenous audits pass).  
 
 6. **Synergies** (↑ **95/A+**):  
    - Explicit links to **Love Ledger**, **Peace & Conflict**, and **Education Frameworks** are robust.  
