@@ -113,7 +113,6 @@ function buildNavStructure(schemaData) {
     { titleKey: 'framework.docs.nav.downloads', path: '/downloads' },
     { titleKey: 'framework.docs.nav.caseStudies', path: '/frameworks/docs/case-studies' },
     { titleKey: 'framework.docs.nav.aiFutures', path: '/frameworks/ai-futures' },
-    { titleKey: 'framework.docs.nav.resources', path: '/frameworks/docs/resources' },
     { titleKey: 'framework.docs.nav.glossary', path: '/frameworks/docs/glossary' }
   ];
 

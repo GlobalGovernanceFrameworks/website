@@ -75,6 +75,5 @@ These are not advertisements for the frameworks — they are evidence that the c
 - [Core Principles](/frameworks/docs/principles) — The foundational ideas guiding the framework
 - [Implementation Guidelines](/frameworks/docs/implementation) — Practical approaches to applying these concepts
 - [Case Studies](/frameworks/docs/case-studies) — Real-world examples of multi-level governance
-- [Resources](/frameworks/docs/resources) — Tools, papers, and references for further exploration
 
 Whether you are working at the community level, in national governance, or on transnational initiatives, these frameworks offer patterns and tools to explore — not to adopt wholesale, but to adapt, critique, and improve.

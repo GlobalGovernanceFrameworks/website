@@ -35,7 +35,6 @@ const documents = [
   { path: '/frameworks/docs/principles', filename: 'Core-Principles.pdf', titleKey: 'Core Principles', format: 'single' },
   { path: '/frameworks/docs/implementation', filename: 'Implementation-Guidelines.pdf', titleKey: 'Implementation Guidelines', format: 'single' },
   { path: '/frameworks/docs/case-studies', filename: 'Case-Studies.pdf', titleKey: 'Case Studies', format: 'single' },
-  { path: '/frameworks/docs/resources', filename: 'Resources.pdf', titleKey: 'Resources', format: 'single' },
 
   // Global Citizenship Frameworks
   { path: '/frameworks/global-citizenship/full-framework', filename: 'Global-Citizenship.pdf', titleKey: 'Global Citizenship', format: 'single' },
@@ -82,7 +81,6 @@ const titles = {
     'Core Principles': 'Global Governance Framework: Core Principles',
     'Implementation Guidelines': 'Global Governance Framework: Implementation Guidelines',
     'Case Studies': 'Global Governance Framework: Case Studies',
-    'Resources': 'Global Governance Framework: Resources',
     'Global Citizenship': 'Global Governance Framework: Global Citizenship',
     'Global Citizenship 4-page summary': 'Global Governance Framework: Global Citizenship 4-Page Overview',
     'Tier 1 Overview': 'Global Governance Framework: Tier 1 – Urgent Global Stability & Justice',
@@ -117,7 +115,6 @@ const titles = {
     'Core Principles': 'Global Governance Framework: Kärnprinciper',
     'Implementation Guidelines': 'Global Governance Framework: Implementeringsriktlinjer',
     'Case Studies': 'Global Governance Framework: Fallstudier',
-    'Resources': 'Global Governance Framework: Resurser',
     'Global Citizenship': 'Globalt Governance Framework: Globalt Medborgarskap',
     'Global Citizenship 4-page summary': 'Globalt Medborgarskap Ramverk: Globalt medborgarskap 4-sidors översikt',
     'Tier 1 Overview': 'Global Governance Framework: Nivå 1 – Global stabilitet och rättvisa',

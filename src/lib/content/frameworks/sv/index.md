@@ -75,6 +75,5 @@ Detta är inte reklam för ramverken — det är bevis för att de koordinations
 - [Grundprinciper](/frameworks/docs/principles) — De idéer som ligger till grund för ramverket
 - [Implementeringsriktlinjer](/frameworks/docs/implementation) — Praktiska tillvägagångssätt för att tillämpa dessa koncept
 - [Fallstudier](/frameworks/docs/case-studies) — Verkliga exempel på flernivåstyrning
-- [Resurser](/frameworks/docs/resources) — Verktyg, artiklar och referenser för vidare utforskning
 
 Oavsett om du arbetar på samhällsnivå, inom nationell styrning eller i transnationella initiativ, erbjuder dessa ramverk mönster och verktyg att utforska — inte för att antas i sin helhet, utan för att anpassas, kritiseras och förbättras.

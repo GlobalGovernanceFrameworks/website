@@ -120,8 +120,6 @@ const config = {
         '/frameworks/docs/implementation?lang=sv',
         '/frameworks/docs/principles?lang=en',
         '/frameworks/docs/principles?lang=sv',
-        '/frameworks/docs/resources?lang=en',
-        '/frameworks/docs/resources?lang=sv',
 
         // --- Framework Guides ---
         '/frameworks/guides?lang=en',
