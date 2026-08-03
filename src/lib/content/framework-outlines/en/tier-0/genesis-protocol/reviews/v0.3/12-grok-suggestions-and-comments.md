@@ -21,9 +21,9 @@ DeepSeek's review is spot-on—praising the core architecture while offering pra
 
 6. **Amendment Mechanism**: Strongly endorse—makes the protocol amendable yet stable. **Refinement**: Require amendments to pass a "pluriversal impact assessment" vetted by all three legitimacy pillars before voting. Precedent: Canada's 2025 Indigenous reconciliation amendments require multi-stakeholder reviews.
 
-7. **Timeline Realism**: Endorse extending to 24 months if needed. **Refinement**: Tie extensions to specific triggers (e.g., <50% Indigenous consent by Month 12). Precedent: Ireland's Citizens' Assembly extensions during COVID (2020-2021, formalized in 2025 guidelines).
+7. **Timeline Realism**: Endorse extending to 24 months if needed. **Refinement**: Tie extensions to specific triggers (e.g., `<`50% Indigenous consent by Month 12). Precedent: Ireland's Citizens' Assembly extensions during COVID (2020-2021, formalized in 2025 guidelines).
 
-**DeepSeek's Minor Refinements**: All solid. For V.H (Practitioner Transition), endorse the 6-month threshold. For VII.D (Geopolitical Sabotage), endorse the "good faith" exception with >60% referendum. For X (Cultural Translation), endorse permanent liaison officers.
+**DeepSeek's Minor Refinements**: All solid. For V.H (Practitioner Transition), endorse the 6-month threshold. For VII.D (Geopolitical Sabotage), endorse the "good faith" exception with `>`60% referendum. For X (Cultural Translation), endorse permanent liaison officers.
 
 **DeepSeek's Questions**: 
 1. 15 is fine—not too small for agility.

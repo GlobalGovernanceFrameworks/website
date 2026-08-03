@@ -4,8 +4,23 @@ import type { GgfEntity, GgfRelationship } from './_types';
 
 /**
  * TIER 1: ECONOMIC OPERATING SYSTEM
- * Regenerative Economy: Core economic engine with Hearts/Leaves, Love Ledger, and AUBI
- * The economic incentive system that funds and rewards care work, ecological restoration, and community building
+ *
+ * The regenerative economic engine. Four frameworks divide the work:
+ *   AUBI              — the social compact: unconditional security, payout layers, LMCI
+ *   Financial Systems — the technical architecture: Hearts, Leaves, Treasury, ICTL, NARP
+ *   Nested Economies  — constitutional rules for coordination between autonomous economies
+ *   Work in Liberation — voluntary contribution and Community Provider governance
+ * Gaian Trade and GSCL sit on top as the material-exchange and logistics layers.
+ *
+ * Conventions: see cluster.implementation-os.ts.
+ *
+ * OPEN EDITORIAL QUESTION — Community Work Teams vs Community Providers.
+ * Work in Liberation reframed CWTs as Community Providers at v1.5 and no longer
+ * uses the older term. Other frameworks still do: the Capacity Engine, Bioregional
+ * Polis, Memorial Commons, Legacy Protocol and Mental Health outlines all reference
+ * CWTs, and the Cosmic Artisan Guilds are defined as an evolution of the CWT model.
+ * Both entities are therefore retained here pending a decision. Merging them would
+ * touch six other clusters.
  */
 
 export const economicOSEntities: GgfEntity[] = [
@@ -15,33 +30,38 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Adaptive Universal Basic Income Framework',
     shortName: 'AUBI',
-    description: 'A dual-wallet regenerative economic engine providing a Universal Basic Income in both fiat currency and non-tradable social credits (Hearts/Leaves). It functions as "systemic acupuncture" to create resilient, community-owned value circuits via a closed-loop voucher model.',
+    description:
+      'The social compact for unconditional material security: payout architecture, contribution recognition, and the epistemic rights governing how any of it is measured. Distributes Hearts and Leaves; does not itself define the currency machinery, which lives in Financial Systems.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['mechanism_gcf'],
+    dependencies: [
+      'framework_treaty', // cluster: constitutional-foundation
+      'mechanism_gcf', // cluster: constitutional-foundation
+      'framework_financial_systems'
+    ],
     enables: [
-      'mechanism_hearts', 
-      'mechanism_leaves', 
       'platform_love_ledger',
-      'mechanism_hearts_treasury',
+      'process_proof_of_care',
       'process_community_weaver',
-      'institution_community_provider'
+      'institution_community_provider',
+      'metric_lmci'
     ],
     ui: {
       path: '/frameworks/adaptive-universal-basic-income',
       titleKey: 'framework.docs.nav.frameworkTitles.adaptiveUniversalBasicIncome',
       emoji: '💚',
       slug: 'adaptive-universal-basic-income',
+      group: 'globalEconomicSystems',
       outline: {
         version: 'v2.5',
-        updated: '2026-08-02',
+        updated: '2026-08-01',
         maturity: 'adversarial',
-        standfirst: ''
-      },
-      group: 'globalEconomicSystems'
+        standfirst:
+          'A dual-wallet basic income: fiat for survival, plus Hearts and Leaves that recognise care work and ecological stewardship without turning either into a wage. Version 2.5 is largely an observability revision — it separates the two LMCI registers from operational telemetry, adds Observation Contracts and State Estimate Records, and gives individuals epistemic rights over how they are measured. The design assumption throughout is that a system which can see you can also mismeasure you.'
+      }
     }
   },
   {
@@ -49,12 +69,21 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Regenerative Financial Systems Framework',
     shortName: 'Financial Systems',
-    description: 'Post-capitalist financial architecture supporting regenerative economy',
+    description:
+      'The technical and operational architecture beneath AUBI: Hearts and Leaves issuance, the Hearts Treasury, reserve and redemption rules, fraud protection, crisis liquidity, the Inter-Currency Translation Layer, and financial observability.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
+    dependencies: ['framework_treaty'],
+    enables: [
+      'mechanism_hearts',
+      'mechanism_leaves',
+      'mechanism_hearts_treasury',
+      'mechanism_ictl',
+      'protocol_debt_transformation'
+    ],
     ui: {
       path: '/frameworks/financial-systems',
       titleKey: 'framework.docs.nav.frameworkTitles.financialSystems',
@@ -63,9 +92,10 @@ export const economicOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v3.4',
-        updated: '2026-08-03',
+        updated: '2026-08-01',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'The plumbing under the regenerative economy: how Hearts are issued and redeemed, what the Treasury holds in reserve, what happens when liquidity fails, and who may challenge the models that decide any of it. Version 3.4 reconstructs the framework after a substantial truncation was found in v3.3, and settles the reserve architecture at a 50% normal target with a 30% hard issuance floor. Automatic controls are framed as temporary containment, not diagnosis.'
       }
     }
   },
@@ -74,14 +104,15 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Work in Liberation Framework',
     shortName: 'Work in Liberation',
-    description: 'Framework defining and organizing "Work with Purpose" and Community Work Teams',
+    description:
+      'Rules for organizing voluntary, dignified, worker-governed contribution once material survival has been decoupled from employment. Establishes the Community Provider Charter Standard, the Worker Bill of Rights, a 15-hour protective ceiling, and the unconditional right not to contribute.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_aubi'],
-    enables: ['institution_cwt'],
+    dependencies: ['framework_aubi', 'framework_financial_systems'],
+    enables: ['institution_community_provider', 'institution_cwt'],
     ui: {
       path: '/frameworks/work-in-liberation',
       titleKey: 'framework.docs.nav.frameworkTitles.workInLiberation',
@@ -90,9 +121,10 @@ export const economicOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v2.0',
-        updated: '2026-08-03',
+        updated: '2026-08-01',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'What work looks like when nobody has to do it to eat. Six participation modes, a fifteen-hour weekly ceiling meant as protection rather than target, hidden-labour accounting, and rights to refuse, pause, exit and return. Version 2.0 removed the automatic blacklist sanctions and stopped treating the Love Ledger as a default work-history signal — a contribution record should not quietly become a credit score.'
       }
     }
   },
@@ -101,12 +133,14 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Nested Economies Framework',
     shortName: 'Nested Economies',
-    description: 'Multi-scale economic coordination framework enabling local and bioregional economies',
+    description:
+      'Constitutional and operational rules for how relatively autonomous economies coordinate across boundaries without surrendering local authority, protected difference, or meaningful exit. Supplies the Economic Subsidiarity Test, Cross-Scale Interface Contracts, and protected non-convertibility.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
+    dependencies: ['framework_treaty', 'framework_financial_systems'],
     ui: {
       path: '/frameworks/nested-economies',
       titleKey: 'framework.docs.nav.frameworkTitles.nestedEconomies',
@@ -115,9 +149,10 @@ export const economicOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v3.2',
-        updated: '2026-08-03',
+        updated: '2026-08-01',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'How economies at different scales coordinate without one swallowing the others. A two-tier constitutional model with optional, delegated, revocable coordination layers, plus an Economic Subsidiarity Test for deciding what belongs where. Version 3.2 removed the conversion formulas in favour of authority and interface rules, and added explicit exit and fork rights — coordination you cannot leave is not coordination.'
       }
     }
   },
@@ -126,12 +161,14 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'The Gaian Trade Framework',
     shortName: 'Gaian Trade',
-    description: 'Ecological trade and exchange framework with regenerative supply chains',
+    description:
+      'Planetary resource stewardship and regenerative exchange: the material counterpart to the value flows of the economic OS. Governs Regenerative Trade Zones, Digital Product Passports, planetary-boundary tariffs, and the Right to Opacity.',
     tier: 1,
     status: 'Review',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'High',
+    dependencies: ['framework_treaty'],
     enables: ['tool_dpp'],
     ui: {
       path: '/frameworks/gaian-trade',
@@ -143,7 +180,8 @@ export const economicOSEntities: GgfEntity[] = [
         version: 'v0.9',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Trade treated as relationship rather than transaction, governed across three time horizons — a fast loop for tariffs and routing, a medium loop for industrial transition, and a deep-time loop with binding veto over decisions with geological consequences. Radical material transparency is the default, but communities may invoke a Right to Opacity: traceability should not become a tool for making Indigenous knowledge legible to whoever wants it.'
       }
     }
   },
@@ -152,12 +190,14 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Global Supply Chains & Logistics Framework',
     shortName: 'Supply Chains',
-    description: 'Regenerative global supply chain governance',
+    description:
+      'The operational logistics layer beneath Gaian Trade: bioregional hubs, transport networks, and workforce systems, integrating physical, financial, digital, social and cultural layers rather than optimizing any one of them.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'High',
+    dependencies: ['framework_gaian_trade', 'framework_treaty'],
     ui: {
       path: '/frameworks/global-supply-chains-and-logistics',
       titleKey: 'framework.docs.nav.frameworkTitles.globalSupplyChainsAndLogistics',
@@ -168,7 +208,8 @@ export const economicOSEntities: GgfEntity[] = [
         version: 'v1.4',
         updated: '2026-08-03',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Where Gaian Trade sets the terms of exchange, GSCL moves the freight: regional hubs operating as Bioregional Trade and Resource Hubs, zero-emission ports, and acoustic governance for the maritime corridors that carry most of world trade by volume. Localized production is the organizing preference, with long-distance logistics reserved for what a bioregion genuinely cannot supply itself.'
       }
     }
   },
@@ -179,26 +220,34 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Social Resilience Council',
     shortName: 'SRC',
-    description: 'Meta-Governance council overseeing AUBI, Hearts/Leaves supply, and the Love Ledger',
+    description:
+      'Meta-Governance council with fiscal oversight of AUBI, Hearts and Leaves supply, and the Debt Transformation Protocol. Distinct from the FLP, which sets valuation standards rather than managing distribution.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_meta_gov', 'framework_aubi']
+    dependencies: [
+      'framework_meta_gov', // cluster: governance-os
+      'framework_aubi'
+    ]
   },
   {
     id: 'council_flp',
     type: 'Council',
     name: 'Fractal Labor Parliament',
     shortName: 'FLP',
-    description: 'Meta-Governance council setting ethical standards and valuation for "Work with Purpose"',
+    description:
+      'Meta-Governance council setting ethical standards and valuation for contribution. Determines what counts as valid work; does not control the money supply.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_meta_gov', 'framework_work_liberation']
+    dependencies: [
+      'framework_meta_gov', // cluster: governance-os
+      'framework_work_liberation'
+    ]
   },
 
   // === ECONOMIC MECHANISMS ===
@@ -207,39 +256,58 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'EconomicMechanism',
     name: 'Hearts Currency',
     shortName: 'Hearts',
-    description: 'A non-tradable social credit, distributed via AUBI, spendable only at chartered Community Providers to support the local care economy.',
+    description:
+      'A non-tradable social credit, distributed via AUBI and spendable only at chartered Community Providers, supporting the local care economy. Issuance, reserve backing and redemption are governed by Financial Systems.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_aubi']
+    dependencies: ['framework_financial_systems', 'framework_aubi']
   },
   {
     id: 'mechanism_leaves',
     type: 'EconomicMechanism',
     name: 'Leaves Currency',
     shortName: 'Leaves',
-    description: 'Ecological currency rewarding verified ecosystem restoration and stewardship',
+    description: 'Ecological currency rewarding verified ecosystem restoration and stewardship.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_aubi']
+    dependencies: ['framework_financial_systems', 'framework_aubi']
   },
   {
     id: 'mechanism_hearts_treasury',
     type: 'EconomicMechanism',
     name: 'Hearts Treasury',
     shortName: 'Hearts Treasury',
-    description: 'The financial infrastructure, managed by partner credit unions, that provides fiat-backing for Hearts, enabling providers to redeem them at a stable rate. Initially capitalized by the GCF.',
+    description:
+      'The financial infrastructure, managed by partner credit unions, that provides fiat backing for Hearts so providers can redeem at a stable rate. Holds a 50% normal reserve target with a 30% hard issuance floor. Initially capitalized by the GCF.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Economic',
     geographicScope: 'Regional',
     implementationPriority: 'Critical',
-    dependencies: ['framework_aubi', 'mechanism_gcf']
+    dependencies: [
+      'framework_financial_systems',
+      'mechanism_gcf' // cluster: constitutional-foundation
+    ]
+  },
+  {
+    id: 'mechanism_ictl',
+    type: 'EconomicMechanism',
+    name: 'Inter-Currency Translation Layer',
+    shortName: 'ICTL',
+    description:
+      'The exchange layer between Hearts, Leaves, fiat, and external instruments. Defined in Financial Systems; already relied upon by the Global Sustainable Enterprise Transition in the just-transition cluster.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Economic',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_financial_systems']
   },
 
   // === PLATFORMS & INFRASTRUCTURE ===
@@ -248,7 +316,8 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Platform',
     name: 'Love Ledger',
     shortName: 'Love Ledger',
-    description: 'A transparent, community-led platform for making informal care contributions visible through non-monetized recognition (e.g., Gratitude Tokens). It operates parallel to the Hearts economy to prevent commodification of relationships and provides data for the LMCI metric.',
+    description:
+      'A community-led platform making informal care contributions visible through non-monetized recognition. Runs parallel to the Hearts economy to prevent commodification of relationships, and feeds the LMCI. Explicitly not a work-history or matching signal.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Economic',
@@ -263,39 +332,47 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Community Work Teams',
     shortName: 'CWTs',
-    description: 'BAZ-level teams organizing care, ecological, and cultural work',
+    description:
+      'BAZ-level teams organizing care, ecological, and cultural work. Note: Work in Liberation reframed this role as Community Provider at v1.5 and no longer uses the term; the entity is retained because six other frameworks still do. See the header note.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Economic',
     geographicScope: 'Regional',
     implementationPriority: 'Critical',
-    dependencies: ['framework_work_liberation', 'institution_baz']
+    dependencies: [
+      'framework_work_liberation',
+      'institution_baz' // cluster: ethical-os
+    ]
   },
   {
     id: 'institution_community_provider',
     type: 'Institution',
     name: 'Community Provider',
     shortName: 'Community Provider',
-    description: 'A local organization or individual chartered by a BAZ Council to accept Hearts in exchange for care, cultural, educational, or ecological services.',
+    description:
+      'A local organization or individual chartered by a BAZ Council under the Community Provider Charter Standard to accept Hearts in exchange for care, cultural, educational, or ecological services.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Economic',
     geographicScope: 'Local',
     implementationPriority: 'Critical',
-    dependencies: ['framework_aubi', 'institution_baz_council']
+    dependencies: ['framework_work_liberation', 'framework_aubi', 'institution_baz_council']
   },
   {
     id: 'institution_baz_council',
     type: 'Institution',
     name: 'BAZ Council',
     shortName: 'BAZ Council',
-    description: 'A democratically elected council that governs a local Hearts economy, including chartering Community Providers and managing the relationship with the Hearts Treasury.',
+    description:
+      'A democratically elected council governing a local Hearts economy: chartering Community Providers and managing the relationship with the Hearts Treasury.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Governance',
     geographicScope: 'Local',
     implementationPriority: 'Critical',
-    dependencies: ['institution_baz']
+    dependencies: [
+      'institution_baz' // cluster: ethical-os
+    ]
   },
 
   // === PROCESSES & TOOLS ===
@@ -304,20 +381,22 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Process',
     name: 'Proof of Care',
     shortName: 'Proof of Care',
-    description: 'The validation process used by chartered Community Providers to log their services and justify the redemption of Hearts. It is separate from the informal recognition on the Love Ledger.',
+    description:
+      'The validation process chartered Community Providers use to log services and justify Hearts redemption. Separate from the informal recognition recorded on the Love Ledger.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['platform_love_ledger', 'institution_community_provider']
+    dependencies: ['framework_aubi', 'platform_love_ledger', 'institution_community_provider']
   },
   {
     id: 'process_community_weaver',
     type: 'Process',
     name: 'Community Weaver',
     shortName: 'Community Weaver',
-    description: 'The role of a trained facilitator who supports the bootstrapping and operation of a local Hearts economy, providing technical assistance to providers and helping adapt the system to cultural contexts.',
+    description:
+      'A trained facilitator supporting the bootstrapping and operation of a local Hearts economy. Role separation rules in Nested Economies and Work in Liberation keep facilitation distinct from representation and assessment.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -330,7 +409,8 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'Tool',
     name: 'Digital Product Passports',
     shortName: 'DPPs',
-    description: 'Tool for tracking the ecological and social impact of products in the supply chain',
+    description:
+      'Lifecycle traceability record for goods and materials, disclosing ecological, social and labour impacts, subject to the Right to Opacity. DUPLICATE: `tool_digital_product_passport` in cluster.pathfinder-protocol describes the same instrument and should be folded into this one.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Economic',
@@ -345,7 +425,8 @@ export const economicOSEntities: GgfEntity[] = [
     type: 'DataMetric',
     name: 'Love, Meaning, and Connection Index',
     shortName: 'LMCI',
-    description: 'A metric of societal flourishing that guides the AUBI system',
+    description:
+      'A metric of societal flourishing guiding the AUBI system, split into measurement and assessment registers separated by a firewall. Nested Economies and Work in Liberation both retired their own composite LMCI formulas at v3.2 and v2.0; AUBI is now the sole owner.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Economic',
@@ -354,32 +435,32 @@ export const economicOSEntities: GgfEntity[] = [
     dependencies: ['framework_aubi']
   },
 
-
   // === PROTOCOLS ===
   {
     id: 'protocol_debt_transformation',
-    type: 'Protocol', // Using 'Protocol' as it's a financial/legal hybrid
+    type: 'Protocol',
     name: 'Sovereign Debt Transformation Protocol',
     shortName: 'Debt-to-Regen',
-    description: 'A protocol for converting sovereign debt into regenerative obligations, serviced by verified care work (Hearts) and ecological restoration (Leaves).',
-    tier: 1, // Core transition mechanism, part of the Economic OS
+    description:
+      'Converts sovereign debt into regenerative obligations, serviced by verified care work (Hearts) and ecological restoration (Leaves).',
+    tier: 1,
     status: 'Draft',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
-    implementationPriority: 'Critical', // This is a critical path item for adoption
+    implementationPriority: 'Critical',
     dependencies: [
-      'framework_financial_systems', // Defined within this framework
-      'council_social_resilience',   // Managed by this council
-      'framework_treaty',            // Needs legal authority from the Treaty
-      'mechanism_hearts',            // Uses Hearts for payment
-      'mechanism_leaves',            // Uses Leaves for payment
-      'platform_love_ledger'       // Uses its architecture for tracking
+      'framework_financial_systems',
+      'council_social_resilience',
+      'framework_treaty', // cluster: constitutional-foundation
+      'mechanism_hearts',
+      'mechanism_leaves',
+      'platform_love_ledger'
     ],
     enables: [
-      'framework_aubi', // Provides a powerful incentive for nations to adopt GGF
-      'framework_planetary_health' // Provides incentive for GPH milestones
+      'framework_aubi',
+      'framework_planetary_health' // cluster: ecological
     ]
-    // No UI block as it's a sub-protocol, not a main framework page
+    // No ui block: sub-protocol, not a published framework page.
   },
   {
     id: 'protocol_itp',
@@ -394,56 +475,90 @@ export const economicOSEntities: GgfEntity[] = [
     geographicScope: 'Global',
     implementationPriority: 'High',
     dependencies: [
-      'framework_meta_gov'
-      // Add once you have confirmed the exact ids in your cluster files:
-      //   financial systems, AUBI, nested economies
+      'framework_meta_gov', // cluster: governance-os
+      'framework_financial_systems',
+      'framework_aubi',
+      'framework_nested_sovereignty'
     ],
-    enables: [
-      'mechanism_hearts'
-      // Also: Proof of Care, Love Ledger, and the meta-governance capture
-      //       detection mechanism, if those exist as entities.
-    ],
+    enables: ['mechanism_hearts', 'process_proof_of_care', 'platform_love_ledger'],
     ui: {
       path: '/resources/whitepapers/immanent-trust-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.immanentTrustProtocol',
       emoji: '🔗',
       slug: 'immanent-trust-protocol'
-      // No `outline` block: the document is published at the path above, not
-      // by the /frameworks/[slug] route. Adding one would make the validator
-      // demand ui.path === '/frameworks/immanent-trust-protocol'.
+      // No `outline` block: published at the path above, not by the
+      // /frameworks/[slug] route. Adding one would make the validator demand
+      // ui.path === '/frameworks/immanent-trust-protocol'.
     }
-  },
-
+  }
 ];
 
 export const economicOSRelationships: GgfRelationship[] = [
-  // === DEPENDENCIES ON CONSTITUTIONAL LAYER ===
+  // --- framework_aubi ---------------------------------------------------
+  // Constitutional and architectural anchors
+  {
+    from: 'framework_aubi',
+    to: 'framework_treaty',
+    type: 'IMPLEMENTS',
+    description:
+      'AUBI is the expression of the Treaty\'s social contract; the Treaty supplies its fiscal, justice and emergency authority.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aubi',
+    to: 'framework_financial_systems',
+    type: 'INTEGRATES_WITH',
+    description:
+      'AUBI is the social compact; Financial Systems is the machinery underneath it. AUBI decides who receives what and why; Financial Systems decides how the currency holds its value.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aubi',
+    to: 'framework_meta_gov',
+    type: 'INTEGRATES_WITH',
+    description:
+      'AUBI routes cross-domain coordination and institutional disputes through Meta-Governance rather than resolving them internally.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aubi',
+    to: 'protocol_genesis',
+    type: 'DEPENDS_ON',
+    description:
+      'AUBI cites Genesis for the Conscience & Sovereignty Clause, the Failure Library, and the Founding Intent Record.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
   {
     from: 'mechanism_gcf',
     to: 'framework_aubi',
     type: 'FUNDS',
-    description: 'Global Commons Fund is primary funding source for AUBI Layer 1',
+    description: 'The Global Commons Fund is the primary funding source for AUBI Layer 1.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Sequential'
   },
-  {
-    from: 'mechanism_gcf',
-    to: 'mechanism_hearts_treasury',
-    type: 'FUNDS',
-    description: 'The Global Commons Fund provides the initial capitalization for regional Hearts Treasuries to ensure fiat liquidity.',
-    strength: 'Strong',
-    frequency: 'As-Needed',
-    sequenceType: 'Sequential'
-  },
 
-  // === INTERNAL ECONOMIC ENGINE MECHANICS ===
-
+  // Bodies and instruments AUBI establishes
   {
     from: 'framework_aubi',
-    to: 'mechanism_hearts_treasury',
+    to: 'platform_love_ledger',
     type: 'ESTABLISHES',
-    description: 'AUBI framework establishes the Hearts Treasury as the core stability mechanism.',
+    description:
+      'AUBI constitutes the Love Ledger as non-monetized recognition, deliberately firewalled from Hearts verification.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_aubi',
+    to: 'process_proof_of_care',
+    type: 'ESTABLISHES',
+    description: 'AUBI defines Proof of Care as the validation path for Hearts redemption.',
     strength: 'Strong',
     sequenceType: 'Sequential'
   },
@@ -451,7 +566,7 @@ export const economicOSRelationships: GgfRelationship[] = [
     from: 'framework_aubi',
     to: 'process_community_weaver',
     type: 'ESTABLISHES',
-    description: 'AUBI framework establishes the Community Weaver role to facilitate implementation.',
+    description: 'AUBI establishes the Community Weaver role to facilitate implementation.',
     strength: 'Strong',
     sequenceType: 'Sequential'
   },
@@ -459,10 +574,551 @@ export const economicOSRelationships: GgfRelationship[] = [
     from: 'framework_aubi',
     to: 'institution_community_provider',
     type: 'ESTABLISHES',
-    description: 'AUBI framework establishes the chartering process for Community Providers.',
+    description: 'AUBI establishes the chartering process for Community Providers.',
     strength: 'Strong',
     sequenceType: 'Sequential'
   },
+  {
+    from: 'framework_aubi',
+    to: 'metric_lmci',
+    type: 'ESTABLISHES',
+    description:
+      'AUBI owns the LMCI, maintaining the firewall between its measurement and assessment registers and separating both from operational telemetry.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+
+  // Currency distribution
+  {
+    from: 'framework_aubi',
+    to: 'mechanism_hearts',
+    type: 'REWARDS',
+    description: 'AUBI Layer 2 rewards care and community contribution with Hearts.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aubi',
+    to: 'mechanism_leaves',
+    type: 'REWARDS',
+    description: 'AUBI Layer 2 rewards ecological work with Leaves.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aubi',
+    to: 'mechanism_hearts_treasury',
+    type: 'USES',
+    // was ESTABLISHES — v2.5 assigns Treasury, reserves and redemption to Financial Systems
+    description:
+      'AUBI depends on the Treasury for redemption stability but does not govern its reserve rules.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+
+  // Oversight and guidance
+  {
+    from: 'council_social_resilience',
+    to: 'framework_aubi',
+    type: 'OVERSEES',
+    description: 'The SRC holds fiscal oversight of AUBI and of Hearts and Leaves supply.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_earth',
+    to: 'framework_aubi',
+    type: 'GUIDES',
+    description:
+      'The Earth Council holds Indigenous-guided authority over AUBI design, including protected unobservability.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_fpic2',
+    to: 'framework_aubi',
+    type: 'GUIDES',
+    description:
+      'FPIC 2.0 governs consent for any AUBI measurement or pilot touching Indigenous communities.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aubi',
+    to: 'institution_ggf_failure_library',
+    type: 'INFORMS',
+    description: 'AUBI pilot failures are documented in the Failure Library rather than buried.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_aubi',
+    to: 'framework_migration',
+    type: 'COORDINATES_WITH',
+    description:
+      'Portability of entitlements across borders and BAZ boundaries is resolved jointly with the Migration framework.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // --- framework_financial_systems --------------------------------------
+  {
+    from: 'framework_financial_systems',
+    to: 'framework_treaty',
+    type: 'IMPLEMENTS',
+    description: 'Financial Systems operationalizes the Treaty\'s fiscal authority.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'mechanism_hearts',
+    type: 'ESTABLISHES',
+    description:
+      'Defines Hearts issuance, reserve backing, redemption, fraud protection and crisis liquidity.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'mechanism_leaves',
+    type: 'ESTABLISHES',
+    description: 'Defines Leaves issuance and the ecological verification path behind it.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'mechanism_hearts_treasury',
+    type: 'ESTABLISHES',
+    description:
+      'Sets Treasury liquidity and resolution rules: 50% normal reserve target, 30% hard issuance floor, time-limited 20% emergency floor.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'mechanism_ictl',
+    type: 'ESTABLISHES',
+    description: 'Defines the Inter-Currency Translation Layer and its objectives.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'protocol_debt_transformation',
+    type: 'ESTABLISHES',
+    description:
+      'Establishes sovereign debt-to-regeneration conversion as part of the Inter-Currency Translation Layer.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'platform_love_ledger',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Financial observability draws on Love Ledger data while preserving the firewall against using it as a credit or work-history signal.',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'process_circuit_breaker',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Automatic controls act as temporary containment pending human diagnosis, not as a causal finding.',
+    strength: 'Strong',
+    frequency: 'Crisis-Only',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'framework_meta_gov',
+    type: 'INTEGRATES_WITH',
+    description: 'Cross-domain financial authority conflicts escalate through Meta-Governance.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_social_resilience',
+    to: 'framework_financial_systems',
+    type: 'OVERSEES',
+    description:
+      'The SRC oversees reserve policy, issuance floors, and NARP model-challenge outcomes.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'framework_justice',
+    type: 'ESCALATES_TO',
+    // v3.4 routes these through Value Courts; retained pending confirmation that
+    // Value Courts are a Justice Systems body rather than a separate entity.
+    description: 'Financial fraud and Love Ledger disputes escalate to the justice system.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_financial_systems',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Supplies currency exchange and transaction-tax mechanisms that hold economic stability during asset transitions and prevent capital flight.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'mechanism_gcf',
+    to: 'mechanism_hearts_treasury',
+    type: 'FUNDS',
+    description:
+      'The Global Commons Fund provides initial capitalization for regional Hearts Treasuries to ensure fiat liquidity.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Sequential'
+  },
+
+  // --- framework_nested_sovereignty -------------------------------------
+  {
+    from: 'framework_nested_sovereignty',
+    to: 'framework_treaty',
+    type: 'IMPLEMENTS',
+    description:
+      'Derives its commons duties and Earth Council authority from the Treaty while keeping economic authority local.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_nested_sovereignty',
+    to: 'framework_financial_systems',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Sets the interface rules under which Hearts, Leaves and Treasury machinery may cross an economic boundary.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_nested_sovereignty',
+    to: 'mechanism_hearts',
+    type: 'GUIDES',
+    // was IMPLEMENTS — v3.2 replaced conversion formulas with authority and
+    // interface rules, including protected non-convertibility
+    description:
+      'Governs Hearts interoperability across scales and protects the right of an economy to remain non-convertible.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_nested_sovereignty',
+    to: 'mechanism_leaves',
+    type: 'GUIDES',
+    description: 'Governs Leaves recognition across bioregional boundaries.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_nested_sovereignty',
+    to: 'institution_baz_council',
+    type: 'GUIDES',
+    description:
+      'Supplies the Economic Subsidiarity Test and decision-rights matrix that determine what a BAZ Council may decide alone.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_nested_sovereignty',
+    to: 'process_community_weaver',
+    type: 'GUIDES',
+    description:
+      'Defines Community Weaver role separation and observer-independence safeguards.',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_nested_sovereignty',
+    to: 'council_social_resilience',
+    type: 'COORDINATES_WITH',
+    description:
+      'The Solidarity Protocol and cross-scale compacts are administered jointly with the SRC.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_earth',
+    to: 'framework_nested_sovereignty',
+    type: 'GUIDES',
+    description:
+      'Earth Council authority bounds what may be traded, converted or coordinated across economies.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // --- framework_work_liberation ----------------------------------------
+  {
+    from: 'framework_work_liberation',
+    to: 'framework_treaty',
+    type: 'IMPLEMENTS',
+    description:
+      'Grounds labour rights, ecocide protections and enforcement-adjacent work safeguards in Treaty authority.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_work_liberation',
+    to: 'institution_community_provider',
+    type: 'ESTABLISHES',
+    description:
+      'Defines the Community Provider Charter Standard and the Worker Bill of Rights that bind it.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_work_liberation',
+    to: 'institution_cwt',
+    type: 'ESTABLISHES',
+    description:
+      'Historical: Community Work Teams were the v1.0 form of what v1.5 renamed Community Providers. Retained while other frameworks still use the term.',
+    strength: 'Medium',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_work_liberation',
+    to: 'framework_financial_systems',
+    type: 'USES',
+    description:
+      'Compensation flows, and their separation from contribution records, run on Financial Systems machinery.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_work_liberation',
+    to: 'process_proof_of_care',
+    type: 'USES',
+    description:
+      'Contribution is validated through Proof of Care, not through Love Ledger history.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_work_liberation',
+    to: 'process_community_weaver',
+    type: 'GUIDES',
+    description:
+      'Sets Community Weaver role separation so that facilitation cannot become assessment or representation.',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_work_liberation',
+    to: 'framework_nested_sovereignty',
+    type: 'COORDINATES_WITH',
+    description:
+      'Cross-BAZ provider recognition and solidarity architecture are shared between the two frameworks.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_work_liberation',
+    to: 'framework_gaian_trade',
+    type: 'COORDINATES_WITH',
+    description:
+      'Industrial Sunsetting and external economic transition are coordinated with regenerative trade policy.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_work_liberation',
+    to: 'framework_hearthstone',
+    type: 'SUPPORTS',
+    description:
+      'Organizes roles such as Commons Scribes to ensure hybrid digital and physical access to the Commons Title Registry.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_flp',
+    to: 'framework_work_liberation',
+    type: 'OVERSEES',
+    description: 'The FLP sets the standards for what constitutes valid contribution.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+
+  // --- framework_gaian_trade --------------------------------------------
+  {
+    from: 'framework_gaian_trade',
+    to: 'framework_treaty',
+    type: 'IMPLEMENTS',
+    description:
+      'Shared resources — oceans, atmosphere, rivers, space — are governed as commons under the Treaty.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gaian_trade',
+    to: 'tool_dpp',
+    type: 'ESTABLISHES',
+    description:
+      'Establishes Digital Product Passports for material traceability, bounded by the Right to Opacity.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_gaian_trade',
+    to: 'mechanism_gcf',
+    type: 'FUNDS',
+    description:
+      'The Symmetrical Imbalance Penalty directs surplus taxes to the Global Commons Fund, taxing hoarding as well as deficit.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gaian_trade',
+    to: 'institution_dj_tribunal',
+    type: 'ESCALATES_TO',
+    description: 'Trade disputes and traceability violations escalate to the tribunal.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_gaian_trade',
+    to: 'mechanism_leaves',
+    type: 'INTEGRATES_WITH',
+    description: 'Regenerative trade performance is recognised through Leaves.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_fpic2',
+    to: 'framework_gaian_trade',
+    type: 'GUIDES',
+    description:
+      'Indigenous councils hold veto over extraction affecting their territories; the Right to Opacity exists so traceability cannot be turned against them.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gaian_trade',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Supplies Transitional Trade Agreements that incentivize participation in the commons transition.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+
+  // --- framework_gscl ---------------------------------------------------
+  {
+    from: 'framework_gscl',
+    to: 'framework_gaian_trade',
+    type: 'IMPLEMENTS',
+    description:
+      'GSCL operationalizes Gaian Trade at the logistics level: regional hubs act as Bioregional Trade and Resource Hubs, and compliance data feeds the GTRC.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gscl',
+    to: 'framework_treaty',
+    type: 'IMPLEMENTS',
+    description:
+      'Enforcement against non-compliant corporations and Global South SME support both derive from Treaty pillars.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gscl',
+    to: 'framework_aurora_accord',
+    type: 'USES_DATA_FROM',
+    description: 'Supply chain data governance operates under the Aurora Accord.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gscl',
+    to: 'framework_meta_gov',
+    type: 'REPORTS_TO',
+    description:
+      'The Global GSCL Council operates as a specialized Meta-Governance Coordination Council.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gscl',
+    to: 'framework_oceans_marine',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Maritime corridors carry most of world trade by volume; GSCL adopts the Silent Seas Protocol, Zero-Emission Ports certification and the Digital Ocean Twin.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gscl',
+    to: 'platform_love_ledger',
+    type: 'USES_DATA_FROM',
+    description:
+      'Validated ESG actions in the supply chain are recorded as contributions, closing the regenerative economic loop.',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_gscl',
+    to: 'council_earth',
+    type: 'COORDINATES_WITH',
+    description:
+      'Logistics corridors affecting sensitive ecosystems require Earth Council consultation.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_indigenous',
+    to: 'framework_gscl',
+    type: 'GUIDES',
+    description:
+      'BAZs are the primary governance units for bioregional logistics hubs.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+
+  // --- internal engine mechanics ----------------------------------------
   {
     from: 'institution_baz_council',
     to: 'institution_community_provider',
@@ -490,62 +1146,42 @@ export const economicOSRelationships: GgfRelationship[] = [
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-  
-  // Council Oversight
-  {
-    from: 'council_social_resilience',
-    to: 'framework_aubi',
-    type: 'OVERSEES',
-    description: 'SRC manages the AUBI system and the supply of Hearts/Leaves',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'council_flp',
-    to: 'framework_work_liberation',
-    type: 'OVERSEES',
-    description: 'FLP sets the standards for what constitutes valid work',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
-  },
   {
     from: 'council_social_resilience',
     to: 'council_flp',
     type: 'COORDINATES_WITH',
-    description: 'SRC and FLP coordinate closely on work valuation and currency supply',
+    description:
+      'The SRC and FLP coordinate on work valuation and currency supply while keeping the two mandates separate.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_social_resilience',
+    to: 'council_mgcc',
+    type: 'REPORTS_TO',
+    description: 'The SRC is a council within the Meta-Governance structure.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_flp',
+    to: 'council_mgcc',
+    type: 'REPORTS_TO',
+    description: 'The FLP is a council within the Meta-Governance structure.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
 
-  // AUBI Currency Distribution
-  {
-    from: 'framework_aubi',
-    to: 'mechanism_hearts',
-    type: 'REWARDS',
-    description: 'AUBI Layer 2 rewards care and community contributions with Hearts',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_aubi',
-    to: 'mechanism_leaves',
-    type: 'REWARDS',
-    description: 'AUBI Layer 2 rewards ecological work with Leaves',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
-  },
-
-  // Love Ledger Operations
+  // --- Love Ledger and metrics ------------------------------------------
   {
     from: 'platform_love_ledger',
     to: 'metric_lmci',
     type: 'INFORMS',
-    description: 'Data from the non-monetized Love Ledger provides qualitative and quantitative inputs for the LMCI metric.',
+    description:
+      'Non-monetized recognition data feeds the LMCI, on the assessment side of the firewall.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -554,169 +1190,86 @@ export const economicOSRelationships: GgfRelationship[] = [
     from: 'platform_love_ledger',
     to: 'process_proof_of_care',
     type: 'IMPLEMENTS',
-    description: 'Love Ledger is the platform where Proof of Care is recorded',
+    description: 'The Love Ledger is the platform on which Proof of Care is recorded.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
   {
-    from: 'institution_cwt',
-    to: 'platform_love_ledger',
-    type: 'USES_DATA_FROM',
-    description: 'Community Work Teams log their completed work on the Love Ledger',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-
-  // Economic Coordination
-  {
-    from: 'framework_nested_sovereignty',
-    to: 'mechanism_hearts',
-    type: 'IMPLEMENTS',
-    description: 'Nested Sovereignty provides principles for local economies to use Hearts',
+    from: 'metric_lmci',
+    to: 'council_social_resilience',
+    type: 'INFORMS',
+    description: 'LMCI readings feed back into AUBI policy through the SRC.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-  {
-    from: 'framework_nested_sovereignty',
-    to: 'mechanism_leaves',
-    type: 'IMPLEMENTS',
-    description: 'Nested Sovereignty enables bioregional economies to use Leaves',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
+  // REMOVED: institution_cwt → platform_love_ledger (USES_DATA_FROM).
+  // Work in Liberation v2.0 explicitly removed Love Ledger use as a default
+  // work-history or matching signal. The edge now contradicts the outline.
 
-  // Debt
-  {
-    from: 'framework_financial_systems',
-    to: 'protocol_debt_transformation',
-    type: 'ESTABLISHES',
-    description: 'The Financial Systems Framework establishes the protocol for sovereign debt-to-regeneration conversions as part of its Inter-Currency Translation Layer.'
-  },
+  // --- debt transformation ----------------------------------------------
   {
     from: 'council_social_resilience',
     to: 'protocol_debt_transformation',
     type: 'OVERSEES',
-    description: 'The Social Resilience Council manages the conversion rates and verification of the Debt Transformation Protocol.'
+    description:
+      'The SRC manages conversion rates and verification for the Debt Transformation Protocol.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
   },
   {
     from: 'protocol_debt_transformation',
     to: 'mechanism_hearts',
     type: 'INTEGRATES_WITH',
-    description: 'Uses verified Hearts generation as a mechanism for debt servicing.'
+    description: 'Uses verified Hearts generation as a debt-servicing mechanism.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
   },
   {
     from: 'protocol_debt_transformation',
     to: 'mechanism_leaves',
     type: 'INTEGRATES_WITH',
-    description: 'Uses verified Leaves generation (ecological restoration) as a mechanism for debt servicing.'
+    description: 'Uses verified ecological restoration, recognised in Leaves, as debt servicing.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
   },
   {
     from: 'protocol_debt_transformation',
     to: 'platform_love_ledger',
     type: 'USES_DATA_FROM',
-    description: 'Uses the Love Ledger architecture for transparent tracking and verification of regenerative activities.'
+    description: 'Uses Love Ledger architecture for transparent tracking of regenerative activity.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
   },
   {
     from: 'framework_treaty',
     to: 'protocol_debt_transformation',
     type: 'ENABLES',
-    description: 'The Treaty\'s "Debt Justice" (Pillar 4) and "Crisis Response" (Pillar 3) components provide the constitutional authority for the Debt Transformation Protocol.'
-  },
-
-  // Supply Chain Integration
-  {
-    from: 'framework_gaian_trade',
-    to: 'tool_dpp',
-    type: 'ESTABLISHES',
-    description: 'Gaian Trade establishes Digital Product Passports for supply chain transparency',
+    description:
+      'The Treaty\'s Debt Justice and Crisis Response pillars supply the constitutional authority for debt conversion.',
     strength: 'Strong',
-    frequency: 'Continuous',
     sequenceType: 'Sequential'
   },
+
+  // --- supply chain and trade instruments -------------------------------
   {
     from: 'tool_dpp',
     to: 'platform_love_ledger',
     type: 'USES_DATA_FROM',
-    description: 'Digital Product Passports pull data from Love Ledger to verify ethical claims',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_gscl',
-    to: 'framework_gaian_trade',
-    type: 'IMPLEMENTS',
-    description: 'Supply Chains implements Gaian Trade principles',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-
-  // Data and Feedback Loops
-  {
-    from: 'metric_lmci',
-    to: 'council_social_resilience',
-    type: 'INFORMS',
-    description: 'LMCI provides feedback on societal well-being, informing AUBI policy',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-
-  // === CONNECTIONS TO GOLDEN TRIANGLE ===
-  
-  // Meta-Governance Integration
-  {
-    from: 'council_social_resilience',
-    to: 'council_mgcc',
-    type: 'REPORTS_TO',
-    description: 'SRC is a key council within the Meta-Governance structure',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'council_flp',
-    to: 'council_mgcc',
-    type: 'REPORTS_TO',
-    description: 'FLP is a key council within the Meta-Governance structure',
+    description: 'Digital Product Passports draw on Love Ledger data to verify ethical claims.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
 
-  // Justice System Integration
-  {
-    from: 'framework_financial_systems',
-    to: 'framework_justice',
-    type: 'ESCALATES_TO',
-    description: 'Disputes over Love Ledger or financial fraud escalate to Justice Systems',
-    strength: 'Medium',
-    frequency: 'As-Needed',
-    sequenceType: 'Conditional'
-  },
-
-  // Indigenous Framework Coordination
-  {
-    from: 'institution_cwt',
-    to: 'institution_baz',
-    type: 'IMPLEMENTS',
-    description: 'Community Work Teams operate within BAZ governance structures',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
-  },
-
-  // === CONNECTIONS TO ECOLOGICAL CLUSTER ===
+  // --- cross-cluster currency effects -----------------------------------
   {
     from: 'mechanism_leaves',
     to: 'framework_biodiversity',
     type: 'FUNDS',
-    description: 'Leaves are primary economic mechanism to fund restoration work',
+    description: 'Leaves are the primary economic mechanism funding restoration work.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -725,7 +1278,7 @@ export const economicOSRelationships: GgfRelationship[] = [
     from: 'mechanism_leaves',
     to: 'framework_food',
     type: 'REWARDS',
-    description: 'Leaves reward regenerative agriculture practices',
+    description: 'Leaves reward regenerative agriculture practices.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
@@ -734,53 +1287,46 @@ export const economicOSRelationships: GgfRelationship[] = [
     from: 'mechanism_hearts',
     to: 'framework_animal_welfare',
     type: 'REWARDS',
-    description: 'Hearts reward animal care and welfare work',
+    description: 'Hearts reward animal care and welfare work.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-
-  // === CONNECTIONS TO HEARTHSTONE PROTOCOL ===
   {
-    from: 'framework_financial_systems',
-    to: 'framework_hearthstone',
-    type: 'INTEGRATES_WITH',
-    description: 'Provides the mechanisms (e.g., currency exchanges, Tobin Tax) to ensure economic stability during asset transitions and prevent capital flight.',
+    from: 'institution_cwt',
+    to: 'institution_baz',
+    type: 'IMPLEMENTS',
+    description: 'Community Work Teams operate within BAZ governance structures.',
     strength: 'Strong',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_gaian_trade',
-    to: 'framework_hearthstone',
-    type: 'INTEGRATES_WITH',
-    description: 'Provides the Gaian Trade Council and protocols for establishing Transitional Trade Agreements that incentivize nations to participate in the commons transition.',
-    strength: 'Strong',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'framework_work_liberation',
-    to: 'framework_hearthstone',
-    type: 'SUPPORTS',
-    description: 'Provides the framework for organizing roles like "Commons Scribes" to ensure hybrid digital/physical access to the Commons Title Registry.',
-    strength: 'Medium',
+    frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
   {
     from: 'framework_hearthstone',
     to: 'framework_aubi',
     type: 'ENABLES',
-    description: 'The stewarded assets and regenerative value captured by the Hearthstone Protocol provide backing for the Hearts and Leaves currencies distributed by the AUBI system.',
+    description:
+      'Stewarded assets and regenerative value captured by Hearthstone provide backing for the currencies AUBI distributes.',
     strength: 'Strong',
     sequenceType: 'Parallel'
   },
 
-  // Immanent Trust Protocol relationships
+  // --- Immanent Trust Protocol ------------------------------------------
   {
     from: 'protocol_itp',
     to: 'mechanism_hearts',
     type: 'INTEGRATES_WITH',
     description:
-      'Provides the fraud and collusion resistance that Hearts issuance depends on: TIM collapses endorsement rings, so a thousand colluding nodes carry the weight of one honest node.',
+      'Provides the fraud and collusion resistance Hearts issuance depends on: trust independence analysis collapses endorsement rings, so a thousand colluding nodes carry the weight of one honest node.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_itp',
+    to: 'process_proof_of_care',
+    type: 'VALIDATES',
+    description:
+      'Closes the Sybil and collusion gap in Proof of Care verification without requiring a global ledger or oracle.',
     strength: 'Strong',
     sequenceType: 'Parallel'
   },
@@ -790,8 +1336,7 @@ export const economicOSRelationships: GgfRelationship[] = [
     type: 'INTEGRATES_WITH',
     description:
       'Turns qualitative capture detection into a measurable property by applying trust independence analysis to council composition.',
-    strength: 'Moderate',
+    strength: 'Medium', // was 'Moderate' — not a valid strength value
     sequenceType: 'Parallel'
   }
-
 ];

@@ -32,6 +32,21 @@ const ALIASES: Record<string, string[]> = {
 	// extend as false negatives show up
 };
 
+/**
+ * Entity names that are also ordinary English words. Matches on these are
+ * usually the noun, not the entity — 'uncertainty' in an evidence list, not
+ * the Uncertainty Protocol. Candidates found only via a generic term are
+ * marked (?) and must be read in context before being added.
+ */
+const GENERIC = new Set([
+	'Guardians', 'Hearts', 'Leaves', 'Education', 'Migration', 'Biodiversity',
+	'Justice Systems', 'Global Health', 'Mental Health', 'Planetary Health',
+	'Soil Health', 'Animal Welfare', 'Cultural Heritage', 'Digital Commons',
+	'Financial Systems', 'Supply Chains', 'Commons Layer', 'Wisdom Council',
+	'Community Weaver', 'Community Provider', 'Recovery Hubs', 'Nested Economies',
+	'Uncertainty Protocol'
+]);
+
 const args = process.argv.slice(2);
 const only = args.find((a) => !a.startsWith('--'));
 const wantLinks = args.includes('--links') || Boolean(only);
@@ -93,7 +108,10 @@ function outlineTitle(text: string): string | null {
 
 const declaredId = (t: string) => t.match(/[Ff]ramework[ _][Ii][Dd]:?\**\s*`?([a-z_]+_[a-z_]+)`?/)?.[1] ?? null;
 const declaredDate = (t: string) =>
-	t.match(/^\*\*Date:\*\*\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ?? t.match(/^date:\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ?? null;
+	t.match(/^\*\*Date:\*\*\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ??
+	t.match(/^date:\s*(\d{4}-\d{2}-\d{2})/m)?.[1] ??
+	t.match(/^\*\*Revision:\*\*.*?\((\d{4}-\d{2}-\d{2})\)/m)?.[1] ??
+	null;
 
 // ---- lexicon -------------------------------------------------------------
 type Term = { term: string; id: string; re: RegExp };
@@ -102,7 +120,7 @@ for (const e of allEntities) {
 	const terms = new Set<string>(ALIASES[e.id] ?? []);
 	for (const raw of [e.shortName, e.name]) {
 		if (!raw) continue;
-		const t = raw.replace(/\s*[-–—:(].*$/, '').trim();
+		const t = raw.replace(/\s+[-–—]\s+.*$|\s*[:(].*$/, '').trim();
 		if (t.length >= 6 && !STOPWORDS.has(t.toLowerCase())) terms.add(t);
 	}
 	for (const term of terms) {
@@ -112,12 +130,15 @@ for (const e of allEntities) {
 
 function mentions(text: string, selfId: string) {
 	const counts = new Map<string, number>();
-	for (const { id, re } of lexicon) {
+	const specific = new Set<string>(); // matched via a non-generic term
+	for (const { term, id, re } of lexicon) {
 		if (id === selfId) continue;
 		const n = (text.match(re) ?? []).length;
-		if (n) counts.set(id, Math.max(counts.get(id) ?? 0, n));
+		if (!n) continue;
+		counts.set(id, Math.max(counts.get(id) ?? 0, n));
+		if (!GENERIC.has(term)) specific.add(id);
 	}
-	return counts;
+	return { counts, specific };
 }
 
 // ---- report --------------------------------------------------------------
@@ -156,11 +177,15 @@ for (const e of published) {
 
 	let links: string[] = [];
 	if (wantLinks && !r.missing) {
-		const counts = mentions(r.text!, e.id);
+		const { counts, specific } = mentions(r.text!, e.id);
 		const have = linked.get(e.id) ?? new Set<string>();
 		const missing = [...counts].filter(([id, n]) => n >= MIN && !have.has(id)).sort((a, b) => b[1] - a[1]);
 		const unsupported = [...have].filter((id) => !counts.has(id)).sort();
-		if (missing.length) links.push(`  - candidate links (${missing.length}): ` + missing.map(([id, n]) => `${label(id)} ×${n}`).join('; '));
+		if (missing.length)
+			links.push(
+				`  - candidate links (${missing.length}): ` +
+					missing.map(([id, n]) => `${label(id)} ×${n}${specific.has(id) ? '' : ' (?)'}`).join('; ')
+			);
 		if (unsupported.length) links.push(`  - unsupported links (${unsupported.length}): ` + unsupported.map(label).join('; '));
 	}
 

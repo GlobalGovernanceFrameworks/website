@@ -324,6 +324,26 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     sequenceType: 'Conditional'
   },
 
+  // === META-IMPLEMENTATION SUPPORT ===
+  {
+    from: 'framework_implementation_adaptation',
+    to: 'framework_meta_gov',
+    type: 'SUPPORTS',
+    description: 'Implementation Tools provides standardized playbooks for all frameworks managed under Meta-Governance',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_implementation_adaptation',
+    to: 'framework_treaty',
+    type: 'SUPPORTS',
+    description: 'Implementation Tools provides practical guidance for Treaty implementation across jurisdictions',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
   // === SPACE & FUTURE GOVERNANCE ===
   {
     from: 'framework_space_governance',
@@ -363,6 +383,15 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     frequency: 'As-Needed',
     sequenceType: 'Parallel'
   },
+  {
+    from: 'framework_implementation_adaptation',
+    to: 'institution_baz',
+    type: 'SUPPORTS',
+    description: 'Implementation Tools provides BAZ-specific adaptation guides and toolkits',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
 
   // === FUTURE-ORIENTED COORDINATION ===
   {
@@ -370,6 +399,26 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
     to: 'framework_planetary_immune_system',
     type: 'COORDINATES_WITH',
     description: 'Space activities must consider planetary protection and existential risk implications',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // === META-LEVEL SYSTEM SUPPORT ===
+  {
+    from: 'framework_implementation_adaptation',
+    to: 'framework_aubi',
+    type: 'SUPPORTS',
+    description: 'Implementation Tools provides deployment guides for AUBI pilot programs',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_implementation_adaptation',
+    to: 'framework_justice',
+    type: 'SUPPORTS',
+    description: 'Implementation Tools provides justice system deployment methodologies',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
@@ -409,6 +458,7 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
       strength: 'Medium',
       sequenceType: 'Parallel'
   },
+
 
   // === ORACLE PROTOCOL ===
   // === INTERNAL GOVERNANCE & OVERSIGHT ===

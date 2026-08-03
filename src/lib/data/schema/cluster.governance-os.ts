@@ -4,23 +4,50 @@ import type { GgfEntity, GgfRelationship } from './_types';
 
 /**
  * TIER 1: GOVERNANCE OPERATING SYSTEM
- * Meta-Governance: The nervous system coordinating all other frameworks
+ *
+ * Meta-Governance coordinates; Polycentric Architecture separates. The EGP
+ * supplies the grammar both run on. None of the three is a source of
+ * substantive authority — that stays with the Treaty and with the institutions
+ * that lawfully hold each competence.
+ *
+ * Conventions: see cluster.implementation-os.ts.
+ *
+ * TWO OPEN EDITORIAL QUESTIONS.
+ *
+ * 1. `layer_wisdom_council`. Polycentric v0.6 §"Non-certification clause" states
+ *    that the GGF shall not create a universal Indigenous Wisdom Council, impose
+ *    a nomination formula, assign representation quotas, or certify who speaks
+ *    for an Indigenous people. The layer is now recognition of Indigenous-
+ *    determined institutions, not a GGF body. The entity is reframed here but
+ *    keeps its shortName, because eight other outlines still say "Wisdom
+ *    Council" — Cultural Heritage, Millennium, Oracle, Deep Time, Cairn,
+ *    Disability, Kinship and Regenerative Journeys.
+ *
+ * 2. `process_circuit_breaker` now carries two unrelated meanings. In Polycentric
+ *    it was sortition-based chamber dissolution, which v0.6 retired. In Financial
+ *    Systems, GSCL, Gaian Trade and Synoptic it means an automatic containment
+ *    halt. These should probably be separate entities.
  */
 
 export const governanceOSEntities: GgfEntity[] = [
+  // === META-GOVERNANCE ===
   {
     id: 'framework_meta_gov',
     type: 'Framework',
     name: 'Integrated Meta-Governance Framework',
     shortName: 'Meta-Governance',
-    description: 'Coordination framework enabling interoperability across governance domains',
+    description:
+      'A delegated coordination architecture for plural institutions, bounded learning, and lawful adaptation. A connector, not a residual sovereign: a matter does not become a Meta-Governance competence merely because several domains are involved or because a coordination body can imagine a better answer.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_treaty'],
-    enables: ['council_mgcc', 'process_crisis_command'],
+    dependencies: [
+      'framework_treaty', // cluster: constitutional-foundation
+      'protocol_constitutional_interface'
+    ],
+    enables: ['council_mgcc', 'process_crisis_command', 'council_global_metrology'],
     ui: {
       path: '/frameworks/meta-governance',
       titleKey: 'framework.docs.nav.frameworkTitles.metaGovernance',
@@ -28,18 +55,36 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'meta-governance',
       outline: {
         version: 'v1.5',
-        updated: '2026-08-03',
+        updated: '2026-08-01',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Coordination between institutions that do not answer to each other. Version 1.5 spends most of its length on what coordination may not do: it may not legislate, tax, sanction, command forces, acquire another institution\'s jurisdiction, dissolve it, force a pilot to reintegrate, or turn a dashboard threshold into a constitutional judgment. The automatic triggers of earlier editions — adaptation deficit, authority-transfer pressure ramps, funding reallocation — are gone, replaced by authorized review.'
       }
     }
+  },
+  {
+    id: 'protocol_constitutional_interface',
+    type: 'Protocol',
+    name: 'Constitutional Interface Specification',
+    shortName: 'CIS',
+    description:
+      'Shared rules for plural legitimacy, decision classes, observation, automation, lawful bypass, authority transfer, and dissolution. Cited as the controlling interface by Meta-Governance, Polycentric Architecture, the IAF, Implementation Methods & Tools, WDMIP and Institutional Regeneration.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Critical',
+    dependencies: [
+      'framework_treaty' // cluster: constitutional-foundation
+    ]
   },
   {
     id: 'council_mgcc',
     type: 'Council',
     name: 'Meta-Governance Coordination Council',
     shortName: 'MGCC',
-    description: 'Primary venue for alignment across governance domains',
+    description:
+      'Primary venue for alignment across governance domains. Holds no residual competence: better data or a clearer view of the problem does not transfer jurisdiction to it.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
@@ -52,7 +97,8 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Council',
     name: 'Global Intelligence & Foresight Council',
     shortName: 'GIF-Council',
-    description: 'A specialized meta-level council that synthesizes intelligence from the ERO, GCIC, and Peace Prediction units to create a unified global threat assessment for the MGCC.',
+    description:
+      'Specialized meta-level council synthesizing intelligence from the ERO, GCIC and peace-prediction units into a unified threat assessment for the MGCC. Assessment only; an alert is not an authorization.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
@@ -60,9 +106,9 @@ export const governanceOSEntities: GgfEntity[] = [
     implementationPriority: 'Critical',
     dependencies: [
       'framework_meta_gov',
-      'institution_ero', // Assumed ID for Existential Risk Observatory
-      'institution_gcic', // Assumed ID for Global Crime Intelligence Center
-      'framework_peace'
+      'institution_ero',
+      'institution_gcic', // cluster: justice-os
+      'framework_peace' // cluster: justice-os
     ]
   },
   {
@@ -70,7 +116,8 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Process',
     name: 'Crisis Command Protocol',
     shortName: 'Crisis Command',
-    description: 'Temporary configuration of Meta-Governance councils to manage existential crises',
+    description:
+      'Temporary configuration of Meta-Governance councils for emergency coordination. v1.5 recasts this as rights-bounded: it coordinates a response, but cannot itself command police, military, emergency or work forces, or suspend rights.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -83,7 +130,7 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Protocol',
     name: 'Polycentric Coordination',
     shortName: 'Polycentric Coordination',
-    description: 'Core principle of sharing power across many centers rather than a single hierarchy',
+    description: 'The principle of sharing power across many centres rather than a single hierarchy.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -96,35 +143,40 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Protocol',
     name: 'Cross-Temporal Coordination Protocol',
     shortName: 'Temporal Coordination',
-    description: 'A core protocol of the Meta-Governance Framework for harmonizing linear, cyclical, and multi-horizon timeframes across diverse governance systems, enabling effective coordination between institutional and Indigenous frameworks.',
+    description:
+      'Harmonizes linear, cyclical, and multi-horizon timeframes across governance systems, enabling coordination between institutional and Indigenous frameworks without imposing one calendar on the other.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_meta_gov', 'framework_indigenous'],
-    // No UI entry needed if it's considered an internal protocol of Meta-Gov, 
-    // or it could have its own page.
+    dependencies: [
+      'framework_meta_gov',
+      'framework_indigenous' // cluster: ethical-os
+    ]
   },
   {
     id: 'council_global_metrology',
     type: 'Council',
     name: 'Global Metrology Council',
     shortName: 'Metrology Council',
-    description: 'A specialized council under the MGCC responsible for overseeing universal metrology governance. Its mandated composition (40% Indigenous/traditional, 30% scientific, 30% Global South) ensures metrics are just, pluralistic, and decolonial. It oversees the Metric Lifecycle Process.',
+    description:
+      'Specialized council under the MGCC overseeing universal metrology governance. Mandated composition of 40% Indigenous and traditional, 30% scientific, 30% Global South is intended to keep metrics pluralistic and decolonial.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'High',
-    dependencies: ['framework_meta_gov']
+    dependencies: ['framework_meta_gov'],
+    enables: ['process_metric_lifecycle']
   },
   {
     id: 'process_metric_lifecycle',
     type: 'Process',
     name: 'Metric Lifecycle Governance Process',
     shortName: 'Metric Lifecycle',
-    description: 'The official GGF process for the proposal, co-development, piloting, standardization, periodic review, and sunsetting of all universal metrics (e.g., BHI, LMCI). This process ensures metrics are ethically designed, culturally relevant, and scientifically robust.',
+    description:
+      'Proposal, co-development, piloting, standardization, periodic review and sunsetting of universal metrics. Sunsetting is a first-class stage, not an afterthought.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
@@ -132,12 +184,15 @@ export const governanceOSEntities: GgfEntity[] = [
     implementationPriority: 'High',
     dependencies: ['council_global_metrology']
   },
+
+  // === EMERGENT GOVERNANCE PROTOCOL ===
   {
     id: 'framework_egp',
     type: 'Framework',
     name: "Emergent Governance Protocol (The GGF's Minimum Viable Grammar)",
     shortName: 'EGP / MVG',
-    description: "The foundational Tier 1 operational protocol defining the 'Minimum Viable Grammar' (`sense`, `propose`, `adopt`) for all interactions within the GGF ecosystem, enabling decentralized, bottom-up, and adaptive governance.",
+    description:
+      "The Tier 1 operational protocol defining the minimum viable grammar — `sense`, `propose`, `adopt` — for interactions across the GGF ecosystem, enabling decentralized and adaptive governance.",
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Governance',
@@ -155,7 +210,10 @@ export const governanceOSEntities: GgfEntity[] = [
         version: '1.0',
         updated: '2026-08-03',
         maturity: 'internal',
-        standfirst: '',
+        // Written from the schema description rather than from the prose
+        // document, which is not in the outline tree. Check before publishing.
+        standfirst:
+          'Three verbs instead of an institution. Anyone — a person, a council, a sensor — can `sense` a stressor, anyone can `propose` a time-bound response with test criteria and a sunset clause, and any community can `adopt` it as an experiment. The bet is that a shared grammar spreads further than a shared structure.',
         sections: [
           { id: 'egp-one-page-summary', title: 'One-Page Summary' },
           { id: 'emergent-governance-protocol', title: 'The Protocol' },
@@ -169,40 +227,52 @@ export const governanceOSEntities: GgfEntity[] = [
     id: 'protocol_sense',
     type: 'Protocol',
     name: 'Sense Protocol',
-    description: "The universal EGP system call for any agent (human, AI, sensor) to flag a system stressor and generate a standardized 'stress packet'.",
+    shortName: 'Sense',
+    description:
+      "The EGP system call for any agent — human, AI or sensor — to flag a system stressor and generate a standardized stress packet.",
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
+    implementationPriority: 'High',
     dependencies: ['framework_egp']
   },
   {
     id: 'protocol_propose',
     type: 'Protocol',
     name: 'Propose Protocol',
-    description: "The universal EGP system call for any agent to suggest a response to a 'sense' signal, including context, test criteria, and a sunset clause.",
+    shortName: 'Propose',
+    description:
+      "The EGP system call for any agent to suggest a response to a `sense` signal, carrying context, test criteria and a sunset clause.",
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
+    implementationPriority: 'High',
     dependencies: ['framework_egp', 'protocol_sense']
   },
   {
     id: 'protocol_adopt',
     type: 'Protocol',
     name: 'Adopt Protocol',
-    description: "The universal EGP system call for a community or institution to temporarily implement a proposal as a time-bound experiment.",
+    shortName: 'Adopt',
+    description:
+      'The EGP system call for a community or institution to implement a proposal as a time-bound experiment.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
+    implementationPriority: 'High',
     dependencies: ['framework_egp', 'protocol_propose']
   },
   {
     id: 'tool_egp_app',
     type: 'Tool',
     name: 'EGP Prototyping App',
-    description: 'A minimum viable app or platform that serves as a reference implementation and experimental environment for the EGP system calls.',
+    shortName: 'EGP App',
+    description:
+      'A minimum viable platform serving as reference implementation and experimental environment for the EGP system calls.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Technology',
+    implementationPriority: 'Medium',
     dependencies: ['framework_egp']
   },
 
@@ -212,13 +282,18 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Framework',
     name: 'Polycentric Governance Architecture',
     shortName: 'Polycentric Architecture',
-    description: 'The constitutional spine providing four-layer overlapping jurisdictions (Territorial/Commons/Guilds/Wisdom Council) that make tyranny logistically impossible through structural redundancy',
+    description:
+      'Horizontal separation of powers across territory, commons, economic practice, and Indigenous sovereignty. Four overlapping jurisdictions with minimum necessary authority, decision-chain separation, protected non-transfer, and the position that stable disagreement can be a legitimate outcome.',
     tier: 1,
     status: 'Ready',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_treaty', 'framework_meta_gov'],
+    dependencies: [
+      'framework_treaty',
+      'framework_meta_gov',
+      'protocol_constitutional_interface'
+    ],
     enables: ['layer_territorial', 'layer_commons', 'layer_guilds', 'layer_wisdom_council'],
     ui: {
       path: '/frameworks/polycentric-governance-architecture',
@@ -227,9 +302,10 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'polycentric-governance-architecture',
       outline: {
         version: 'v0.6',
-        updated: '2026-08-03',
+        updated: '2026-08-01',
         maturity: 'adversarial',
-        standfirst: ''  // two or three sentences — write this
+        standfirst:
+          'Separation of powers arranged horizontally rather than vertically: territory, shared resources, economic practice and Indigenous sovereignty each hold authority the others cannot absorb. Version 0.6 removed the enforcement machinery of earlier drafts — automatic chamber dissolution, jury government, reputation penalties, exchange-rate sanctions, capture algorithms — on the principle that indicators are alerts, not judgments. It also declines to create a universal Indigenous council, on the grounds that recognising an authority is not the same as constituting one.'
       }
     }
   },
@@ -238,7 +314,8 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Territorial Councils',
     shortName: 'Territorial Layer',
-    description: 'BAZ Assemblies managing physical geography, infrastructure, zoning, and local services',
+    description:
+      'Democratic territorial public authority: physical geography, infrastructure, zoning, and local services. Implemented in BAZ contexts as BAZ Assemblies.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Governance',
@@ -251,7 +328,8 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Commons Trusts',
     shortName: 'Commons Layer',
-    description: 'Cross-boundary resource governance with Guardian Seats for ecosystem representation',
+    description:
+      'Cross-boundary resource institutions holding what no single territory can own, with Guardian Seats for ecosystem representation.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Ecological',
@@ -264,45 +342,60 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Guilds & Syndicates',
     shortName: 'Guilds Layer',
-    description: 'Trans-BAZ economic practice governance (Fractal Labor Parliament, Hearts/Leaves rates, professional standards)',
+    description:
+      'Trans-territorial economic practice and labour institutions: professional standards, work valuation, and the price-setting handshake with territorial authorities.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Economic',
     geographicScope: 'Bioregional',
     implementationPriority: 'Critical',
-    dependencies: ['framework_polycentric_governance', 'framework_work_liberation']
+    dependencies: [
+      'framework_polycentric_governance',
+      'framework_work_liberation' // cluster: economic-os
+    ]
   },
   {
     id: 'layer_wisdom_council',
     type: 'Council',
-    name: 'Indigenous Wisdom Council',
+    // shortName retained as 'Wisdom Council' because eight other outlines still
+    // use the term — see header note 1.
+    name: 'Indigenous Sovereign Authorities',
     shortName: 'Wisdom Council',
-    description: 'Constitutional layer with veto power over existential risks and Natural Law violations',
+    description:
+      'The Indigenous sovereignty layer. v0.6 replaced the universal Indigenous Wisdom Council with recognition of Indigenous-determined institutions: the GGF does not nominate, allocate quotas, appoint knowledge proxies, or certify who speaks for a people. Vetoes target the relevant act or authorization rather than the institution.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
     geographicScope: 'Bioregional',
     implementationPriority: 'Critical',
-    dependencies: ['framework_polycentric_governance', 'framework_indigenous']
+    dependencies: [
+      'framework_polycentric_governance',
+      'framework_indigenous' // cluster: ethical-os
+    ]
   },
   {
     id: 'mechanism_guardian_seats',
     type: 'Mechanism',
     name: 'Guardian Seats Protocol',
     shortName: 'Guardian Seats',
-    description: 'Legal personhood for ecosystems via Guardian representatives with fiduciary duty to regeneration',
+    description:
+      'Legal personhood for ecosystems via Guardian representatives holding a fiduciary duty to regeneration.',
     tier: 1,
     status: 'Pilot',
     primaryDomain: 'Justice',
     implementationPriority: 'High',
-    dependencies: ['layer_commons', 'framework_justice']
+    dependencies: [
+      'layer_commons',
+      'framework_justice' // cluster: justice-os
+    ]
   },
   {
     id: 'process_circuit_breaker',
     type: 'Process',
     name: 'Circuit Breaker Protocol',
     shortName: 'Circuit Breaker',
-    description: 'Sortition-based deadlock resolution with chamber dissolution and interim stewardship',
+    description:
+      'Deadlock and containment protocol. v0.6 retired the sortition-based chamber dissolution of v0.4–0.5 in favour of bounded inquiry, adjudication and continuity. NOTE: Financial Systems, GSCL, Gaian Trade and Synoptic use "circuit breaker" for an automatic containment halt — a different mechanism sharing the name. See header note 2.',
     tier: 1,
     status: 'Draft',
     primaryDomain: 'Governance',
@@ -314,25 +407,39 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Metric',
     name: 'Polycentric Health Index',
     shortName: 'PHI',
-    description: 'Composite metric combining Power Distribution Index, BHI, LMCI, and economic equity',
+    description:
+      'Composite indicator combining power distribution, BHI, LMCI and economic equity. v0.6 removed its trigger function: PHI is an alert that opens an inquiry, never a self-executing judgment.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
-    implementationPriority: 'High',
-    dependencies: ['framework_polycentric_governance', 'metric_bhi', 'metric_lmci']
+    implementationPriority: 'Medium',
+    dependencies: [
+      'framework_polycentric_governance',
+      'metric_bhi', // cluster: ecological
+      'metric_lmci' // cluster: economic-os
+    ]
   },
   {
     id: 'pilot_uppsala_baz',
     type: 'Pilot',
+    // Status lowered from 'Active': v0.6 states that Swedish pilot provisions
+    // are illustrative and require current legal verification, and does not
+    // name Uppsala.
     name: 'Uppsala BAZ Pilot',
     shortName: 'Uppsala Pilot',
-    description: 'Swedish municipal pilot: Lake MÃ¤laren Trust, BAZ Assembly, Guild prototypes (2025-2027)',
+    description:
+      'Illustrative Swedish municipal pilot design: Lake Mälaren Trust, BAZ Assembly, and guild prototypes. Provisions are a design basis pending current legal verification, not a running programme.',
     tier: 1,
-    status: 'Active',
+    status: 'Proposed',
     primaryDomain: 'Governance',
     geographicScope: 'Local',
-    implementationPriority: 'Critical',
-    dependencies: ['framework_polycentric_governance', 'layer_territorial', 'layer_commons', 'layer_guilds']
+    implementationPriority: 'High',
+    dependencies: [
+      'framework_polycentric_governance',
+      'layer_territorial',
+      'layer_commons',
+      'layer_guilds'
+    ]
   },
 
   // === INTELLIGENCE & FORESIGHT INFRASTRUCTURE ===
@@ -341,34 +448,37 @@ export const governanceOSEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Existential Risk Observatory',
     shortName: 'ERO',
-    description: 'Dedicated monitoring institution tracking existential and catastrophic risks across domains (climate tipping points, AI misalignment, pandemic preparedness, nuclear proliferation). Provides continuous risk intelligence to the GIF-Council.',
+    description:
+      'Monitoring institution tracking existential and catastrophic risk across domains — climate tipping points, AI misalignment, pandemic preparedness, nuclear proliferation — and feeding continuous intelligence to the GIF-Council.',
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_meta_gov', 'framework_planetary_immune_system']
+    dependencies: [
+      'framework_meta_gov',
+      'framework_planetary_immune_system' // cluster: visionary-meta
+    ]
   }
 ];
 
 export const governanceOSRelationships: GgfRelationship[] = [
-  // === DEPENDENCIES ON CONSTITUTIONAL LAYER ===
+  // --- framework_meta_gov -----------------------------------------------
   {
-    from: 'framework_treaty',
-    to: 'framework_meta_gov',
-    type: 'ENABLES',
-    description: 'Treaty provides legal foundation for Meta-Governance coordination',
+    from: 'framework_meta_gov',
+    to: 'protocol_constitutional_interface',
+    type: 'DEPENDS_ON',
+    description:
+      'v1.5 conforms explicitly to the Constitutional Interface Specification for decision classes, observation, bypass and transfer.',
     strength: 'Strong',
     frequency: 'Continuous',
-    sequenceType: 'Sequential'
+    sequenceType: 'Parallel'
   },
-  
-  // === INTERNAL GOVERNANCE OS RELATIONSHIPS ===
   {
     from: 'framework_meta_gov',
     to: 'council_mgcc',
     type: 'ESTABLISHES',
-    description: 'Meta-Governance framework establishes the MGCC as primary coordination body',
+    description: 'Establishes the MGCC as the primary coordination venue.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Sequential'
@@ -377,52 +487,162 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'framework_meta_gov',
     to: 'process_crisis_command',
     type: 'ESTABLISHES',
-    description: 'Meta-Governance establishes crisis command protocols for emergency coordination',
+    description:
+      'Establishes rights-bounded emergency coordination. Coordination is not command; the underlying powers stay with whoever lawfully holds them.',
     strength: 'Strong',
     frequency: 'Crisis-Only',
     sequenceType: 'Sequential'
   },
   {
-    from: 'protocol_polycentric',
-    to: 'council_mgcc',
-    type: 'GUIDES',
-    description: 'Polycentric coordination principles guide how the MGCC operates',
+    from: 'framework_meta_gov',
+    to: 'council_global_metrology',
+    type: 'ESTABLISHES',
+    description: 'Establishes the Metrology Council as a specialized sub-council of the MGCC.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_meta_gov',
+    to: 'framework_polycentric_governance',
+    type: 'COORDINATES_WITH',
+    // was ENABLES — v0.6 is explicit that Meta-Governance coordinates but does
+    // not override, and neither framework constitutes the other
+    description:
+      'Meta-Governance supplies the coordination protocols; Polycentric Architecture supplies the horizontal separation. Neither may override the other.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_meta_gov',
+    to: 'framework_egp',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Meta-Governance provides the venue where EGP interactions are processed; the EGP provides the grammar for them.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_meta_gov',
+    to: 'framework_nested_sovereignty',
+    type: 'COORDINATES_WITH',
+    description:
+      'Economic subsidiarity and voluntary coordination layers are Nested Economies competences; Meta-Governance connects them without absorbing them.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_meta_gov',
+    to: 'framework_work_liberation',
+    type: 'COORDINATES_WITH',
+    description:
+      'Hosts the Fractal Labor Parliament as a domain council without acquiring authority over worker rights or Community Provider standards.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_meta_gov',
+    to: 'framework_disability',
+    type: 'COORDINATES_WITH',
+    description:
+      'Accessibility, cognitive liberty and universal design are treated as conditions on coordination itself, not as a downstream concern.',
     strength: 'Medium',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
   {
-    from: 'process_crisis_command',
-    to: 'institution_gem',
-    type: 'ACTIVATES',
-    description: 'Crisis Command Protocol can deploy the Global Enforcement Mechanism',
-    strength: 'Strong',
-    frequency: 'Crisis-Only',
-    sequenceType: 'Conditional'
-  },
-  // === EXTERNAL RELATIONSHIPS ===
-  {
     from: 'framework_meta_gov',
     to: 'institution_baz',
     type: 'COORDINATES_WITH',
-    description: 'Provides the polycentric coordination protocols for how BAZs can interoperate and form "fractal governance networks" while maintaining sovereignty.',
+    description:
+      'Supplies interoperation protocols for BAZs forming fractal governance networks while retaining sovereignty.',
     strength: 'Medium',
     sequenceType: 'Parallel'
   },
   {
-    from: 'protocol_cross_temporal',
-    to: 'framework_deep_time',
-    type: 'ENABLES',
-    description: 'The foundational principles of cross-temporal coordination are the prerequisite for, and evolve into, the advanced applications of Deep Time & Relativistic Governance.',
+    from: 'framework_meta_gov',
+    to: 'framework_hearthstone',
+    type: 'INTEGRATES_WITH',
+    description:
+      'Emergency coordination can trigger the Emergency Stewardship Protocol so Hearthstone can secure endangered commons during a crisis.',
     strength: 'Strong',
+    frequency: 'Crisis-Only',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_treaty',
+    to: 'framework_meta_gov',
+    type: 'ENABLES',
+    description:
+      'The Treaty is the source of whatever authority Meta-Governance exercises; v1.5 calls this constitutional subordination.',
+    strength: 'Strong',
+    frequency: 'Continuous',
     sequenceType: 'Sequential'
   },
 
+  // --- council_mgcc and sub-councils -------------------------------------
+  {
+    from: 'protocol_polycentric',
+    to: 'council_mgcc',
+    type: 'GUIDES',
+    description: 'Polycentric coordination principles govern how the MGCC operates.',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_mgcc',
+    to: 'council_gifc',
+    type: 'OVERSEES',
+    description: 'The MGCC oversees the GIF-Council as a specialized sub-body.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_gifc',
+    to: 'council_mgcc',
+    type: 'REPORTS_TO',
+    description:
+      'Supplies synthesized threat assessments. An assessment opens a decision; it does not make one.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'institution_ero',
+    to: 'council_gifc',
+    type: 'PARTICIPATES_IN',
+    description: 'The ERO provides existential risk intelligence to the GIF-Council.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'institution_gcic',
+    to: 'council_gifc',
+    type: 'PARTICIPATES_IN',
+    description: 'The GCIC provides transnational crime and cybercrime intelligence.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_peace',
+    to: 'council_gifc',
+    type: 'PARTICIPATES_IN',
+    description: 'The Peace framework provides conflict prediction intelligence.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
   {
     from: 'council_global_metrology',
     to: 'council_mgcc',
     type: 'REPORTS_TO',
-    description: 'The Global Metrology Council is a specialized sub-council that reports to and operates within the Meta-Governance Coordination Council.',
+    description: 'The Metrology Council operates within the MGCC structure.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
@@ -431,7 +651,7 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'council_global_metrology',
     to: 'process_metric_lifecycle',
     type: 'OVERSEES',
-    description: 'The Metrology Council is the governing body that manages and enforces the Metric Lifecycle Governance Process.',
+    description: 'The Metrology Council manages and enforces the Metric Lifecycle process.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -440,7 +660,7 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'process_metric_lifecycle',
     to: 'metric_bhi',
     type: 'GUIDES',
-    description: 'The lifecycle process governs the development, validation, and evolution of the Biosphere Health Index.',
+    description: 'Governs the development, validation and sunsetting of the Biosphere Health Index.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
@@ -449,138 +669,130 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'process_metric_lifecycle',
     to: 'metric_lmci',
     type: 'GUIDES',
-    description: 'The lifecycle process governs the development, validation, and evolution of the Love, Meaning, and Connection Index.',
+    description: 'Governs the development, validation and sunsetting of the LMCI.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
   {
-    from: 'framework_meta_gov',
-    to: 'framework_hearthstone',
-    type: 'INTEGRATES_WITH',
-    description: 'Meta-Governance provides the "Emergency Stewardship Protocol" trigger via its Crisis Command Protocol, allowing Hearthstone to secure endangered commons during crises.',
+    from: 'process_metric_lifecycle',
+    to: 'metric_phi',
+    type: 'GUIDES',
+    description: 'Governs PHI development and validation.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // --- process_crisis_command -------------------------------------------
+  {
+    from: 'process_crisis_command',
+    to: 'institution_gem',
+    type: 'ESCALATES_TO',
+    // was ACTIVATES — v1.5 states Meta-Governance may not command police,
+    // military, emergency or work forces through its own framework
+    description:
+      'Crisis coordination refers enforcement questions to the body that lawfully holds enforcement power; it cannot deploy it directly.',
     strength: 'Strong',
     frequency: 'Crisis-Only',
     sequenceType: 'Conditional'
   },
-  // === GIF-Council Integration Relationships ===
   {
-    from: 'council_mgcc',
-    to: 'council_gifc',
-    type: 'OVERSEES',
-    description: 'The Meta-Governance Coordination Council oversees the GIF-Council as a specialized sub-body.',
-    strength: 'Strong'
-  },
-  {
-    from: 'council_gifc',
-    to: 'council_mgcc',
-    type: 'REPORTS_TO',
-    description: 'The GIF-Council provides synthesized intelligence and unified threat assessments to the MGCC.',
-    strength: 'Strong'
-  },
-  {
-    from: 'institution_ero', // From Planetary Immune System
-    to: 'council_gifc',
-    type: 'PARTICIPATES_IN',
-    description: 'The ERO provides existential risk intelligence to the GIF-Council.',
-    strength: 'Strong'
-  },
-  {
-    from: 'institution_gcic', // From The Shield Protocol
-    to: 'council_gifc',
-    type: 'PARTICIPATES_IN',
-    description: 'The GCIC provides transnational crime and cybercrime intelligence to the GIF-Council.',
-    strength: 'Strong'
-  },
-  {
-    from: 'framework_peace', // Representing its prediction units
-    to: 'council_gifc',
-    type: 'PARTICIPATES_IN',
-    description: 'The Peace Framework provides conflict prediction intelligence to the GIF-Council.',
-    strength: 'Strong'
+    from: 'protocol_cross_temporal',
+    to: 'framework_deep_time',
+    type: 'ENABLES',
+    description:
+      'Cross-temporal coordination is the prerequisite for the Deep Time & Relativistic Governance applications.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
   },
 
-  // === EGP INTERNAL RELATIONSHIPS ===
+  // --- framework_egp -----------------------------------------------------
   {
     from: 'framework_egp',
     to: 'protocol_sense',
     type: 'ESTABLISHES',
-    description: 'The EGP framework establishes the `sense` system call as its primary input mechanism.'
+    description: 'Establishes `sense` as the primary input call.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
   },
   {
     from: 'framework_egp',
     to: 'protocol_propose',
     type: 'ESTABLISHES',
-    description: 'The EGP framework establishes the `propose` system call for generating solutions.'
+    description: 'Establishes `propose` for generating time-bound responses.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
   },
   {
     from: 'framework_egp',
     to: 'protocol_adopt',
     type: 'ESTABLISHES',
-    description: 'The EGP framework establishes the `adopt` system call for experimental implementation.'
+    description: 'Establishes `adopt` for experimental implementation.',
+    strength: 'Strong',
+    sequenceType: 'Sequential'
   },
-
-  // === EGP INTEGRATION WITH GGF CORE ===
   {
     from: 'framework_treaty',
     to: 'framework_egp',
     type: 'ENABLES',
-    description: 'The Treaty (Tier 0) provides the constitutional and legal container within which the EGP (Tier 1) can operate safely and effectively.'
-  },
-  {
-    from: 'framework_meta_gov',
-    to: 'framework_egp',
-    type: 'INTEGRATES_WITH',
-    description: 'Meta-Governance provides the coordination architecture (the "bazaar") where EGP interactions are processed, while the EGP provides the generative grammar for those interactions.',
+    description:
+      'The Treaty provides the constitutional container within which the EGP can operate safely.',
     strength: 'Strong',
-    sequenceType: 'Parallel'
+    sequenceType: 'Sequential'
   },
   {
     from: 'framework_egp',
     to: 'framework_meta_gov',
     type: 'GUIDES',
-    description: 'The EGP provides the agile, bottom-up operational logic that the Meta-Governance framework is designed to coordinate.'
-  },
-
-  // === EGP AS THE UNIVERSAL GRAMMAR FOR OTHER FRAMEWORKS (EXAMPLES) ===
-  {
-    from: 'framework_egp',
-    to: 'framework_cairn_protocol', // Example
-    type: 'GUIDES',
-    description: "The EGP provides the universal grammar for the Cairn Protocol's operations; for instance, its 'Grief Feedback Pathway' is a specific implementation of the `sense` protocol."
+    description:
+      'Supplies the bottom-up operational logic that Meta-Governance is designed to coordinate.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
   },
   {
     from: 'framework_egp',
-    to: 'framework_shield', // Example
+    to: 'framework_cairn_protocol',
     type: 'GUIDES',
-    description: "The EGP guides the Shield Protocol's community interactions, where a BAZ reporting a threat is using the `sense` protocol."
+    description:
+      "Example: the Cairn Protocol's Grief Feedback Pathway is a specific implementation of `sense`.",
+    strength: 'Medium',
+    sequenceType: 'Parallel'
   },
   {
-      from: 'tool_egp_app',
-      to: 'framework_egp',
-      type: 'IMPLEMENTS',
-      description: 'The prototyping app serves as the reference implementation and experimental testbed for the EGP.'
+    from: 'framework_egp',
+    to: 'framework_shield',
+    type: 'GUIDES',
+    description: 'Example: a BAZ reporting a threat to the Shield Protocol is using `sense`.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'tool_egp_app',
+    to: 'framework_egp',
+    type: 'IMPLEMENTS',
+    description: 'Reference implementation and experimental testbed for the EGP.',
+    strength: 'Medium',
+    sequenceType: 'Parallel'
   },
 
-  // === POLYCENTRIC GOVERNANCE ARCHITECTURE RELATIONSHIPS ===
-  
-  // Constitutional Foundation
+  // --- framework_polycentric_governance ----------------------------------
+  {
+    from: 'framework_polycentric_governance',
+    to: 'protocol_constitutional_interface',
+    type: 'DEPENDS_ON',
+    description:
+      'v0.6 conforms to the Constitutional Interface Specification for legitimacy, jurisdiction, decision classes, transfer and continuity.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
   {
     from: 'framework_treaty',
     to: 'framework_polycentric_governance',
     type: 'ENABLES',
-    description: 'Treaty provides constitutional foundation for polycentric structure',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Sequential'
-  },
-  
-  // Meta-Governance Integration
-  {
-    from: 'framework_meta_gov',
-    to: 'framework_polycentric_governance',
-    type: 'ENABLES',
-    description: 'Meta-Governance provides coordination protocols; Polycentric Architecture is its structural implementation',
+    description:
+      'Treaty accession, planetary competences and reserved powers set the outer bounds of the horizontal separation.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Sequential'
@@ -589,18 +801,16 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'framework_polycentric_governance',
     to: 'protocol_polycentric',
     type: 'IMPLEMENTS',
-    description: 'Polycentric Architecture is the concrete institutional model of the polycentric coordination principle',
+    description: 'The concrete institutional model of the polycentric coordination principle.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
-  
-  // Four Layers Internal Structure
   {
     from: 'framework_polycentric_governance',
     to: 'layer_territorial',
     type: 'ESTABLISHES',
-    description: 'Framework defines Territorial Councils as geography/infrastructure layer',
+    description: 'Defines territorial public authority as the "where" layer.',
     strength: 'Strong',
     sequenceType: 'Sequential'
   },
@@ -608,7 +818,7 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'framework_polycentric_governance',
     to: 'layer_commons',
     type: 'ESTABLISHES',
-    description: 'Framework defines Commons Trusts as cross-boundary resource layer',
+    description: 'Defines commons institutions as the "what is shared" layer.',
     strength: 'Strong',
     sequenceType: 'Sequential'
   },
@@ -616,7 +826,7 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'framework_polycentric_governance',
     to: 'layer_guilds',
     type: 'ESTABLISHES',
-    description: 'Framework defines Guilds/Syndicates as economic practice layer',
+    description: 'Defines practice and labour institutions as the economic-practice layer.',
     strength: 'Strong',
     sequenceType: 'Sequential'
   },
@@ -624,17 +834,38 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'framework_polycentric_governance',
     to: 'layer_wisdom_council',
     type: 'ESTABLISHES',
-    description: 'Framework defines Wisdom Council as constitutional/existential boundary layer',
+    // recognition, not constitution — see header note 1
+    description:
+      'Recognises Indigenous-determined institutions as a constitutional layer. The framework explicitly does not create, nominate to, or certify them.',
     strength: 'Strong',
     sequenceType: 'Sequential'
   },
-  
-  // Indigenous Framework Integration
+  {
+    from: 'framework_polycentric_governance',
+    to: 'framework_nested_sovereignty',
+    type: 'COORDINATES_WITH',
+    description:
+      'Economic subsidiarity, cross-scale interfaces and protected non-transfer are shared commitments across both frameworks.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_polycentric_governance',
+    to: 'framework_financial_systems',
+    type: 'COORDINATES_WITH',
+    description:
+      'Treasury authority and financial observability sit inside the practice layer\'s interface with territorial authority.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
   {
     from: 'framework_indigenous',
     to: 'layer_wisdom_council',
     type: 'GUIDES',
-    description: 'Indigenous sovereignty framework defines Wisdom Council composition, FPIC 2.0 authority',
+    description:
+      'Indigenous sovereignty, consent and covenant authority determine the layer\'s composition; the non-certification clause forbids the GGF from doing so.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -643,18 +874,17 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'layer_wisdom_council',
     to: 'council_earth',
     type: 'COORDINATES_WITH',
-    description: 'Wisdom Councils coordinate with Earth Council for global Indigenous governance',
+    description: 'Indigenous-determined authorities coordinate with the Earth Council globally.',
     strength: 'Medium',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-  
-  // Work in Liberation Integration
   {
     from: 'framework_work_liberation',
     to: 'layer_guilds',
     type: 'IMPLEMENTS',
-    description: 'Work in Liberation defines operational mechanics for Guilds (FLP, Hearts/Leaves, Community Providers)',
+    description:
+      'Work in Liberation supplies the operational mechanics of the practice layer: the FLP, Community Providers, and work valuation.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -663,18 +893,25 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'layer_guilds',
     to: 'layer_territorial',
     type: 'COORDINATES_WITH',
-    description: 'Guilds propose Hearts rates, Territorial Assemblies ratify (price-setting handshake)',
+    description:
+      'The price-setting handshake: guilds propose Hearts rates, territorial assemblies ratify. Neither side can set them alone.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
   },
-  
-  // Guardian Seats & Rights of Nature
+  {
+    from: 'layer_territorial',
+    to: 'institution_baz',
+    type: 'IMPLEMENTS',
+    description: 'Territorial councils are implemented as BAZ Assemblies where BAZs exist.',
+    strength: 'Strong',
+    sequenceType: 'Parallel'
+  },
   {
     from: 'layer_commons',
     to: 'mechanism_guardian_seats',
     type: 'USES',
-    description: 'Commons Trusts use Guardian Seats for ecosystem representation',
+    description: 'Commons Trusts seat Guardians to represent the ecosystems they hold.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -683,18 +920,37 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'mechanism_guardian_seats',
     to: 'framework_justice',
     type: 'IMPLEMENTS',
-    description: 'Guardian Seats implement Rights of Nature/Living Systems Jurisprudence',
+    description: 'Guardian Seats implement rights-of-nature jurisprudence in practice.',
     strength: 'Strong',
     sequenceType: 'Parallel'
   },
-  
-  // Circuit Breaker Deadlock Resolution
+  {
+    from: 'mechanism_guardian_seats',
+    to: 'metric_bhi',
+    type: 'USES',
+    description: 'Guardians use BHI readings when judging regeneration capacity.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'council_phc',
+    to: 'layer_commons',
+    type: 'COORDINATES_WITH',
+    description: 'The Planetary Health Council coordinates with Commons Trusts on ecosystem boundaries.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+
+  // --- deadlock, indicators and pilots -----------------------------------
   {
     from: 'process_circuit_breaker',
     to: 'layer_territorial',
     type: 'RESOLVES_CONFLICTS_FOR',
-    description: 'Circuit Breaker resolves deadlocks between Territorial, Commons, and Guild layers',
-    strength: 'Strong',
+    description:
+      'Opens bounded inquiry and adjudication where layers deadlock, preserving continuity. v0.6 removed the power to dissolve a chamber.',
+    strength: 'Medium',
     frequency: 'Occasional',
     sequenceType: 'Conditional'
   },
@@ -702,8 +958,8 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'process_circuit_breaker',
     to: 'layer_commons',
     type: 'RESOLVES_CONFLICTS_FOR',
-    description: 'Circuit Breaker resolves deadlocks between layers',
-    strength: 'Strong',
+    description: 'As above, for commons institutions.',
+    strength: 'Medium',
     frequency: 'Occasional',
     sequenceType: 'Conditional'
   },
@@ -711,18 +967,28 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'process_circuit_breaker',
     to: 'layer_guilds',
     type: 'RESOLVES_CONFLICTS_FOR',
-    description: 'Circuit Breaker resolves deadlocks between layers',
-    strength: 'Strong',
+    description: 'As above, for practice institutions.',
+    strength: 'Medium',
     frequency: 'Occasional',
     sequenceType: 'Conditional'
   },
-  
-  // Metrics Integration
+  {
+    from: 'metric_phi',
+    to: 'process_circuit_breaker',
+    type: 'INFORMS',
+    // v0.6: indicators are alerts, not judgments — PHI opens an inquiry, it
+    // does not fire a trigger
+    description:
+      'A PHI reading may open a bounded inquiry. It cannot by itself constitute a finding of capture or failure.',
+    strength: 'Medium',
+    frequency: 'Occasional',
+    sequenceType: 'Conditional'
+  },
   {
     from: 'metric_phi',
     to: 'metric_bhi',
     type: 'INTEGRATES',
-    description: 'PHI incorporates BHI as ecological health component',
+    description: 'PHI incorporates BHI as its ecological health component.',
     strength: 'Strong',
     sequenceType: 'Parallel'
   },
@@ -730,57 +996,17 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'metric_phi',
     to: 'metric_lmci',
     type: 'INTEGRATES',
-    description: 'PHI incorporates LMCI as social wellbeing component',
+    description: 'PHI incorporates LMCI as its social wellbeing component.',
     strength: 'Strong',
     sequenceType: 'Parallel'
   },
-  {
-    from: 'process_metric_lifecycle',
-    to: 'metric_phi',
-    type: 'GUIDES',
-    description: 'Lifecycle process governs PHI development and validation',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  
-  // Planetary Health Integration
-  {
-    from: 'council_phc',
-    to: 'layer_commons',
-    type: 'COORDINATES_WITH',
-    description: 'Planetary Health Council coordinates with Commons Trusts on ecosystem boundaries',
-    strength: 'Medium',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'mechanism_guardian_seats',
-    to: 'metric_bhi',
-    type: 'USES',
-    description: 'Guardian Seats use BHI data for regeneration capacity decisions',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
-  },
-  
-  // BAZ Integration
-  {
-    from: 'layer_territorial',
-    to: 'institution_baz',
-    type: 'IMPLEMENTS',
-    description: 'Territorial Councils are implemented as BAZ Assemblies',
-    strength: 'Strong',
-    sequenceType: 'Parallel'
-  },
-  
-  // Swedish Pilot
   {
     from: 'pilot_uppsala_baz',
     to: 'framework_polycentric_governance',
     type: 'TESTS',
-    description: 'Uppsala pilot tests polycentric architecture in Swedish municipal context',
-    strength: 'Strong',
+    description:
+      'Illustrative pilot design for the Swedish municipal context; v0.6 notes these provisions require current legal verification.',
+    strength: 'Medium',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
   },
@@ -788,8 +1014,8 @@ export const governanceOSRelationships: GgfRelationship[] = [
     from: 'pilot_uppsala_baz',
     to: 'layer_commons',
     type: 'IMPLEMENTS',
-    description: 'Lake MÃ¤laren Trust as first Commons Trust pilot',
-    strength: 'Strong',
+    description: 'Lake Mälaren Trust as the first proposed Commons Trust.',
+    strength: 'Medium',
     sequenceType: 'Sequential'
   }
 ];
