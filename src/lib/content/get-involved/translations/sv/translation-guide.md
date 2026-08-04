@@ -1,389 +1,81 @@
-# Global Governance Frameworks - Översättarkit
-
-Välkommen till Global Governance Frameworks översättningsprogram! Den här guiden hjälper dig att bidra till att göra dessa kritiska styrningsramverk tillgängliga på ditt språk.
-
-## 🌍 Varför översättning spelar roll
-
-Global Governance Frameworks adresserar mänsklighetens mest akuta utmaningar - från klimatförändringar till digital styrning till fredsbyggande. Genom att översätta dessa ramverk hjälper du samhällen världen över att få tillgång till verktyg för positiv förändring på sitt modersmål.
-
-## 📋 Checklista för att komma igång
-
-- [ ] Läs igenom hela denna guide
-- [ ] Konfigurera GitHub-åtkomst
-- [ ] Välj ditt ramverk/dina ramverk att översätta
-- [ ] Gå med i översättningsgemenskapen
-- [ ] Ladda ner nödvändiga verktyg
-
-## 🔧 Teknisk installation
-
-### 1. Åtkomst till GitHub-repositoriet
-
-**Repositorie-URL:** https://github.com/GlobalGovernanceFrameworks/website
-
-#### Installera Git (Välj ditt operativsystem)
-
-**Windows:**
-1. Ladda ner Git från https://git-scm.com/download/win
-2. Kör installationsprogrammet med standardinställningar
-3. Öppna "Git Bash" från Start-menyn
-
-**macOS:**
-```bash
-# Alternativ 1: Installera via Homebrew (rekommenderas)
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install git
-
-# Alternativ 2: Installera Xcode Command Line Tools
-xcode-select --install
-```
-
-**Linux (Ubuntu/Debian):**
-```bash
-sudo apt update
-sudo apt install git
-```
-
-**Linux (CentOS/RHEL/Fedora):**
-```bash
-# CentOS/RHEL
-sudo yum install git
-
-# Fedora
-sudo dnf install git
-```
-
-#### Konfigurera Git
-```bash
-# Konfigurera din identitet (kravs for commits)
-git config --global user.name "Ditt Namn"
-git config --global user.email "din.epost@exempel.se"
-```
-
-#### Forka och klona repositoriet
-
-**Steg 1: Forka på GitHub**
-1. Gå till https://github.com/GlobalGovernanceFrameworks/website
-2. Klicka på "Fork"-knappen i övre högra hörnet
-3. Detta skapar en kopia på ditt GitHub-konto
-
-**Steg 2: Klona din fork**
-```bash
-# Ersatt 'dittanvandarnamn' med ditt faktiska GitHub-anvandarnamn
-git clone https://github.com/dittanvandarnamn/governance-frameworks-site.git
-
-# Navigera in i projektet
-cd governance-frameworks-site
-
-# Lagg till det ursprungliga repositoriet som upstream (for att fa uppdateringar)
-git remote add upstream https://github.com/GlobalGovernanceFrameworks/website
-```
-
-**Steg 3: Skapa din översättningsgren**
-```bash
-# Skapa och vaxla till en ny gren for din oversattning
-git checkout -b translate-[ramverk-namn]-[sprakkod]
-
-# Exempel: 
-git checkout -b translate-peace-sv
-```
-
-### 2. Förstå filstrukturen
-
-Ramverken är organiserade enligt följande:
-
-```
-/src/lib/content/frameworks/
-├── en/               # Engelska (källspråk)
-├── sv/               # Svenska 
-├── es/               # Spanska
-├── fr/               # Franska
-└── [ditt-språk]/     # Ditt målspråk
-    └── implementation/
-        ├── peace-and-conflict-resolution/           # Fred och konfliktlösning
-        ├── mental-health-governance/                # Mentalhälsostyrning
-        ├── educational-systems/                     # Utbildningssystem
-        ├── technology-governance/                   # Teknikstyrning
-        └── [andra-ramverk]/
-```
-
-## 📝 Vad som ska översättas
-
-### Prioritet 1: Ramverksinnehållsfiler
-
-**Plats:** `/src/lib/content/frameworks/[språk]/implementation/[ramverk-namn]/`
-
-**Filtyper:**
-- `*.md`-filer - Huvudsakligt ramverksinnehåll (Markdown-format)
-- Individuella sektionsfiler (t.ex. `core-principles.md`, `implementation-timeline.md`)
-
-**Exempel på ramverksmappar:**
-- `peace-and-conflict-resolution/` - Ramverk för fred och konfliktlösning
-- `mental-health-governance/` - Mentalhälsoramverk  
-- `educational-systems/` - Utbildningsramverk
-- `technology-governance/` - Teknikstyrningsramverk
-- `environmental-stewardship/` - Miljöförvaltningsramverk
-
-### Prioritet 2: Användargränssnittstext
-
-**Plats:** `/src/lib/i18n/[språkkod].json`
-
-**Innehåller:**
-- Navigeringsmenyer
-- Knappetiketter
-- Formulärtext
-- Allmänna webbplatsgränssnittselement
-
-### Prioritet 3: Visuella tillgångar
-
-**Plats:** `/static/images/frameworks/`
-
-**Filnamnskonvention:**
-- `framework-diagram-en.svg` (Engelska)
-- `framework-diagram-sv.svg` (Svenska)
-- `framework-diagram-[din-språkkod].svg` (Ditt språk)
-
-*Obs: SVG-redigering kräver grafiska designverktyg som Inkscape (gratis) eller Adobe Illustrator*
-
-## 🗣️ Språkkoder
-
-Använd standard ISO 639-1-koder:
-
-| Språk | Kod | Exempelmapp |
-|-------|-----|-------------|
-| Svenska | sv | `/frameworks/sv/` |
-| Spanska | es | `/frameworks/es/` |
-| Franska | fr | `/frameworks/fr/` |
-| Tyska | de | `/frameworks/de/` |
-| Portugisiska | pt | `/frameworks/pt/` |
-| Arabiska | ar | `/frameworks/ar/` |
-| Kinesiska (förenklad) | zh | `/frameworks/zh/` |
-| Hindi | hi | `/frameworks/hi/` |
-| Japanska | ja | `/frameworks/ja/` |
-| Ryska | ru | `/frameworks/ru/` |
-
-## 📖 Översättningsriktlinjer
-
-### 1. Huvudprinciper
-
-**Noggrannhet först:** Behåll den exakta betydelsen av tekniska och politiska begrepp
-**Kulturell anpassning:** Anpassa exempel och referenser till ditt lokala sammanhang när det är lämpligt
-**Konsekvens:** Använd samma översättning för återkommande termer genomgående
-**Tillgänglighet:** Skriv på klart, tillgängligt språk för din målgrupp
-
-### 2. Ton och stil
-
-- **Formell men tillgänglig** - Detta är seriösa policydokument som bör vara förståeliga
-- **Aktiv röst föredras** - "Regeringar bör implementera..." inte "Implementering bör göras av regeringar..."
-- **Könsneutralt språk** - Använd inkluderande språk som är lämpligt för ditt språks konventioner
-- **Professionell terminologi** - Behåll teknisk noggrannhet samtidigt som du säkerställer läsbarhet
-
-### 3. Hantering av tekniska termer
-
-**Översätt INTE:**
-- Egennamn (Förenta Nationerna, IPCC, etc.)
-- Etablerade tekniska akronymer (AI, GDP, CO2, etc.)
-- Ramverksnamn (behåll "Global Governance Frameworks")
-
-**Översätt men behåll konsekvens:**
-- Policybegrepp (styrning, hållbarhet, motståndskraft)
-- Implementeringstermer (bedömning, övervakning, utvärdering)
-- Sociala begrepp (samhällsengagemang, intressentdeltagande)
-
-## 🔑 Ordlista för nyckeltermer
-
-| Engelsk term | Definition | Översättningsanteckningar |
-|--------------|------------|---------------------------|
-| **Polycrisis** | Flera, sammankopplade kriser som inträffar samtidigt | Ny term - kan behöva förklaring på ditt språk |
-| **Ecocide Law** | Juridiskt ramverk som kriminaliserar allvarlig miljöförstöring | Juridisk term - undersök motsvarighet i din jurisdiktion |
-| **Digital Governance** | Ramverk för styrning av digital teknik och digitala rum | Framväxande område - kan behöva kontextuell förklaring |
-| **Stakeholder Engagement** | Process för att involvera berörda parter i beslutsfattande | Vanligt inom policy - hitta etablerad motsvarighet |
-| **Implementation Timeline** | Schemalagda faser för att sätta ramverk i praktiken | Standard projektledningsterm |
-| **Cross-Domain Integration** | Koordination mellan olika policyområden | Teknisk term - behåll precision |
-| **Trauma-Informed Approaches** | Metoder som erkänner och svarar på traumapåverkan | Klinisk/social term - använd etablerad översättning |
-| **Value Systems** | Grundläggande övertygelser och principer som vägleder beteende | Filosofiskt begrepp - kulturell anpassning kan behövas |
-
-## 📋 Översättningsarbetsflöde
-
-### Steg 1: Välj ditt ramverk
-1. Granska tillgängliga ramverk på: [webbplats-url]/frameworks
-2. Kontrollera befintliga översättningar i `/src/lib/content/frameworks/`
-3. Välj oöversatt ramverk eller sektioner som behöver uppdateringar
-
-### Steg 2: Sätt upp din arbetsyta
-1. Skapa språkmapp: `/frameworks/[din-språkkod]/implementation/[ramverk-namn]/`
-2. Kopiera engelska källfiler som mallar
-3. Skapa spårningsdokument för dina framsteg
-
-### Steg 3: Översättningsprocess
-1. **Första genomgången:** Översätt innehåll, fokusera på betydelse över perfektion
-2. **Granskningsgenomgång:** Kontrollera terminologikonsekvens och flöde
-3. **Kulturell genomgång:** Anpassa exempel och referenser för lokalt sammanhang
-4. **Slutlig genomgång:** Korrekturläs för grammatik, stavning och formatering
-
-### Steg 4: Kvalitetssäkring
-1. **Självgranskning** mot källmaterial
-2. **Kollegial granskning** med andra modersmålstalare
-3. **Ämnesexpertgranskning** (om tillgänglig)
-4. **Gemenskapsfeedback** via översättningsforum
-
-### Steg 5: Inlämning
-
-**Spara ditt arbete:**
-```bash
-# Lagg till dina oversatta filer
-git add .
-
-# Commita med beskrivande meddelande
-git commit -m "Lagg till svensk oversattning for fredsramverkets karnsektioner"
-
-# Pusha till din fork
-git push origin translate-peace-sv
-```
-
-**Skapa Pull Request:**
-1. Gå till din fork på GitHub
-2. Klicka på "Compare & pull request"-knappen
-3. Lägg till tydlig titel: "Svensk översättning: Fredsramverk [sektioner]"
-4. Beskriv vad du har översatt och eventuella anteckningar för granskare
-5. Skicka in pull requesten
-
-**Svara på feedback:**
-- Kontrollera GitHub-notifikationer för granskningskommentarer
-- Gör begärda ändringar och pusha uppdateringar
-- Fira ditt bidrag! 🎉
-
-## 👥 Översättningsgemenskap
-
-### Kommunikationskanaler
-
-**Discord Server:** Gå med i vår översättningsgemenskap på https://discord.gg/Zx4hMJf4JU
-- **#translation-lab kanal** (under 🤝 WORKSPACES-kategorin) för koordinering, frågor och samarbete
-- Realtidschatt med andra översättare
-- Röstkanaler för teammöten
-
-**GitHub Discussions:** Använd repositoriediskussioner för tekniska frågor och pull request-koordinering
-
-### Teamroller
-
-**Huvudöversättare:** Primär person ansvarig för ramverkscomplettering
-**Granskare:** 2-3 personer som kontrollerar översättningar för noggrannhet och flöde
-**Kulturell rådgivare:** Lokal expert som säkerställer kulturell lämplighet
-**Teknisk koordinator:** Hjälper med GitHub och formateringsfrågor
-
-### Granskningsstandarder
-
-**Två-granskare-system:** Varje översättning bör granskas av minst två andra modersmålstalare
-**Ämnesgranskning:** Komplexa tekniska sektioner bör granskas av experter inom relevanta områden
-**Gemenskapsinput:** Utkast till översättningar bör delas för bredare gemenskapsfeedback
-
-## 🛠️ Verktyg och resurser
-
-### Nödvändiga verktyg
-- **Textredigerare:** VS Code (rekommenderas), Sublime Text, eller vilken markdown-redigerare som helst
-- **GitHub Desktop:** För enklare repositoriehantering (valfritt)
-- **Markdown Preview:** Webbläsartillägg eller redigerarplugin
-
-### Hjälpsamma resurser
-- **DeepL/Google Translate:** För första utkast (granska alltid noggrant)
-- **Terminologidatabaser:** FN-terminologi, EU-terminologi, områdesspecifika ordlistor
-- **Stilguider:** Statliga eller akademiska stilguider på ditt språk
-- **CAT-verktyg:** Översättningsminnesverktyg för konsekvens (valfritt)
-
-### Referensmaterial
-- Original ramverksdokumentation
-- Relaterade policydokument på ditt språk
-- Akademiska artiklar inom relevanta områden
-- Statliga policydokument som använder liknande terminologi
-
-## 📏 Kvalitetsstandarder
-
-### Innehållsnoggrannhet
-- [ ] Betydelse bevarad från källtext
-- [ ] Tekniska begrepp korrekt översatta
-- [ ] Kulturella referenser lämpligt anpassade
-- [ ] Juridiska och policytermer använder etablerade konventioner
-
-### Språkkvalitet
-- [ ] Grammatik och stavning korrekt
-- [ ] Konsekvent terminologi genomgående
-- [ ] Lämplig register och ton
-- [ ] Naturligt flöde på målspråket
-
-### Formateringsstandarder
-- [ ] Markdown-formatering bevarad
-- [ ] Rubriker och struktur bibehållen
-- [ ] Länkar och referenser lämpligt uppdaterade
-- [ ] Listor och tabeller korrekt formaterade
-
-## 🚀 Komma igång
-
-### Nybörjarvänliga första projekt
-
-1. **Ramverksöversiktssidor** - Börja med högnivåsammanfattningar
-2. **Implementeringsguider** - Praktiskt, mindre tekniskt innehåll
-3. **Ordlistesektioner** - Korta, avgränsade översättningsuppgifter
-4. **Användargränssnittselement** - JSON-filöversättningar
-
-### Avancerade projekt
-
-1. **Komplett ramverksöversättning** - Fullständiga policyramverk
-2. **Skapande av visuella tillgångar** - SVG-diagram och infografik
-3. **Kulturella anpassningsguider** - Kontextspecifika implementeringsanteckningar
-4. **Granskning och kvalitetssäkring** - Hjälp till att förbättra befintliga översättningar
-
-## 📞 Support och kontakt
-
-### Få hjälp
-
-**Discord Support:** Gå med i #translation-lab på https://discord.gg/Zx4hMJf4JU för:
-- Realtidshjälp från andra översättare
-- Teknisk vägledning
-- Koordinering med språkteam
-- Allmänna frågor och gemenskapsstöd
-
-**Tekniska problem:** Skapa GitHub-issue med "translation"-etikett för repositoriespecifika problem
-
-### Bidra tillbaka
-
-Ditt översättningsarbete hjälper den globala gemenskapen. Överväg att:
-- Dela dina ordlistor med andra översättare
-- Mentora nya översättare på ditt språk
-- Ge feedback om översättningsprocesser
-- Bidra till stilguider och bästa praxis
-
-## 🎯 Framgångsmått
-
-Vi mäter översättningens påverkan genom:
-- **Kompletteringsgrad:** Procent av ramverk översatt
-- **Kvalitetspoäng:** Gemenskap- och expertgranskningsbetyg
-- **Användningsanalys:** Nedladdningar och sidvisningar av översatt innehåll
-- **Gemenskapstillväxt:** Nya översättare som går med i språkteam
-
-## 📅 Tidslinjeförväntningar
-
-**Individuell sektion:** 1-2 veckor (5-10 sidor)
-**Komplett ramverk:** 2-3 månader (50-100 sidor)
-**Fullständig granskningsprocess:** 2-4 veckor ytterligare
-**Publicering:** 1 vecka efter slutgiltigt godkännande
-
-## 🏆 Erkännande
-
-Bidragsgivare kommer att erkännas på vår dedikerade bidragsgivarsida, som erkänner ditt värdefulla arbete med att göra globala styrningsramverk tillgängliga världen över.
-
+---
+title: "Översättarguide"
 ---
 
-## Redo att börja?
+## Hur det ligger till
 
-1. **Installera Git:** Följ instruktionerna ovan för ditt operativsystem
-2. **Forka och klona repositoriet:** Använd terminalkommandona som tillhandahålls
-3. **Gå med i vår Discord:** https://discord.gg/Zx4hMJf4JU (kolla #translation-lab-kanalen)
-4. **Välj ditt första ramverk:** Bläddra bland tillgängliga alternativ i repositoriet
-5. **Skapa din översättningsgren:** Använd git-kommandona för att sätta upp din arbetsyta
-6. **Börja översätta:** Börja med en liten sektion för att bekanta dig med processen
+Webbplatsen finns för närvarande på engelska, svenska och japanska. Engelska är källspråket och ligger långt före de andra två; svenska och japanska täcker gränssnittet och en del ramverksinnehåll, med stora luckor.
 
-Tack för att du hjälper till att göra globala styrningsramverk tillgängliga för samhällen världen över! Ditt bidrag hjälper till att bygga en mer rättvis och hållbar framtid för alla.
+Det finns inget översättningsteam, ingen granskningsnämnd och ingen samordnare. Om du översätter något till ett språk som ingen annan här kan läsa kommer ingen att kunna kontrollera det – vilket gör din egen omsorg till kvalitetskontrollen. Det är värt att veta från början istället för att upptäcka det senare.
 
----
+Att lägga till ett nytt språk är fullt möjligt. Det innebär bara att du blir den första personen som arbetar med det.
 
-*Senast uppdaterad: [2025-06-29] | Version 1.0*
-*För uppdateringar av denna guide, kolla repositoriets översättningsdokumentation.*
+## Vad som är värt att översätta först
+
+**Gränssnittstexter** finns i `src/lib/i18n/[locale]/*.json`, uppdelade efter sida eller funktion. Dessa filer är korta, fristående och omedelbart synliga – en bra första insats och det snabbaste sättet att överhuvudtaget göra ett språk användbart.
+
+**Ramverksinnehåll** finns i `src/lib/content/frameworks/[locale]/`. Det rör sig om långa markdown-dokument. Ett enskilt ramverk kan omfatta tiotusentals ord, så det är normalt och välkommet att översätta ett avsnitt i taget; partiell översättning är bättre än ingen, och webbplatsen faller tillbaka på engelska för allt som saknas.
+
+**Ramverksöversikter** ligger mitt emellan – sammanfattningar på hög nivå, några hundra ord vardera, och förmodligen det högsta värdet per arbetstimme.
+
+Använd standard ISO 639-1-koder för språkmappar: `es`, `fr`, `de`, `pt`, `ar`, `zh`, `hi`, `ru` och så vidare.
+
+## Översättningsprinciper
+
+**Noggrannhet före elegans.** Det här är policydokument. När ett tekniskt begrepp är precist, bevara precisionen även om resultatet blir en aning stelt.
+
+**Konsekvens inom ett dokument.** Välj en återgivning för varje återkommande term och håll dig till den. Om du är den första som översätter till ditt språk sätter du också konventionen – att skriva ner dina val allt eftersom hjälper den som kommer efter, inklusive dig själv om tre månader.
+
+**Kulturell anpassning där det hjälper.** Exempel och referenser kan anpassas till ditt sammanhang. Sakpåståenden kan inte det.
+
+**Aktiv röst, könsneutralt där ditt språk tillåter det.** Formellt men läsbart.
+
+### Lämna oöversatt
+
+Egennamn (FN, IPCC), etablerade akronymer (AI, BNP, CO₂) och ramverksnamn – "Global Governance Frameworks", "Treaty for Our Only Home", "Hearts", "Leaves" och liknande myntade uttryck fungerar som namn snarare än beskrivningar.
+
+### Översätt, men konsekvent
+
+Policybegrepp (governance, hållbarhet, resiliens), implementeringstermer (bedömning, övervakning, utvärdering) och sociala begrepp (samhällsengagemang, intressentdeltagande).
+
+## Termer som ställer till problem för översättare
+
+| Term | Vad det betyder | Notering |
+|---|---|---|
+| **Polykris** | Flera sammankopplade kriser som inträffar samtidigt | Relativt nytt begrepp; kan behöva en förklaring vid första användning |
+| **Ekocidlagstiftning** | Rättslig ram som kriminaliserar allvarlig miljöförstöring | Undersök motsvarigheten i din jurisdiktion innan du uppfinner en |
+| **Bioregion** | Ett område definierat av ekologiska snarare än politiska gränser | Vissa språk har en etablerad term; många har det inte |
+| **Rätt relation** | Att leva i sund ömsesidighet med människor och plats | Medvetet icke-tekniskt; motstå impulsen att formalisera det |
+| **Subsidiaritetsprincipen** | Beslut fattas på den mest lokala nivå som är kapabel | Etablerat EU-politiskt begrepp på många europeiska språk |
+| **Regenerativ** | Återställande snarare än enbart bevarande | "Hållbar" är ingen synonym och bör inte ersätta det |
+| **Förvaltarskap** | Omsorg och ansvar för något som förvaltas i förtroende | Har ofta ingen ren motsvarighet i ett enda ord |
+
+## Svensk-specifik notering
+
+Svenska använder inte titelversalering. Använd endast stor begynnelsebokstav på första ordet i rubriker samt på egennamn – inte på varje betydelsebärande ord som i engelskan.
+
+## Arbetsflöde
+
+Forra (forka) repositoriet på `github.com/GlobalGovernanceFrameworks/website`, skapa en gren namngiven efter vad du översätter (till exempel `translate-treaty-overview-es`) och arbeta i språkmappen för ditt språk, skapa den om den inte finns.
+
+```bash
+git clone https://github.com/dittanvändarnamn/website.git
+cd website
+git remote add upstream https://github.com/GlobalGovernanceFrameworks/website.git
+git checkout -b translate-treaty-overview-es
+```
+
+Bevara markdown-strukturen – rubriker, listor, länkar och kodspann ska överleva intakta. En egenhet värd att känna till: i mdsvex bryter ett naket `<` omedelbart före en siffra kompileringen, så omge sådana med ett backtick-kodspann.
+
+När du är redo, pusha till din fork och öppna en pull request som beskriver vad du har översatt och vad du var osäker på. Att flagga dina osäkerheter är genuint användbart; det talar om för en framtida översättare var de ska titta.
+
+## En realistisk notering om granskning och tid
+
+Granskning kommer från en person, som läser engelska och svenska. För andra språk innebär granskning att kontrollera att inget strukturellt har gått sönder, inte att översättningen är bra. Om du vill ha ett par extra ögon och känner någon som kan bidra med dem, är det mer värt här än i ett större projekt.
+
+Svarstiderna varierar. En påminnelse på Discord efter ett tag är välkommen snarare än oartig.
+
+## Få hjälp
+
+Discord är den snabbaste vägen för frågor om terminologi, struktur eller huruvida något överhuvudtaget är värt att översätta. Den är liten, så du kommer i allmänhet att prata med den som skrev texten du arbetar med.
+

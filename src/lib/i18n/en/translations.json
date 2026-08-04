@@ -1,14 +1,22 @@
 {
-  "title": "Translation Hub",
-  "subtitle": "Help make global governance frameworks accessible worldwide",
-  "metaDescription": "Join our global community of translators making governance frameworks accessible to communities worldwide.",
-  "heroIntro": "Join our global community of translators making governance frameworks accessible to communities worldwide. Every translation helps build a more equitable future.",
-  "getStarted": "Ready to Get Started?",
-  "fallbackNotice": "Translation coming soon",
-  "fallbackText": "This page is currently displayed in English until the translation is complete.",
-  "contributionProcessTitle": "Our Translation Process is Evolving",
-  "contributionProcessText": "To focus on establishing our formal organization, we are temporarily pausing our real-time community channels and revising our translation guides. All translation coordination is currently being managed directly on GitHub. This is the best place to access our CONTRIBUTING.md guidelines, review existing translations, submit new translations, and collaborate with other translators.",
-  "communityGitHubCTA": "Contribute on GitHub",
-  "errorTitle": "Translation Guide Not Available",
-  "errorText": "The translation guide could not be loaded. Please try again later or contact support."
+  "title": "Translation",
+  "subtitle": "Help make these frameworks readable outside English",
+  "heroIntro": "The site exists in English, Swedish, and Japanese, with English far ahead of the other two. Adding a language, or filling gaps in an existing one, is among the most useful things anyone can do here — and partial translations are genuinely welcome.",
+
+  "loading": "Loading guide...",
+
+  "languageFallback": {
+    "title": "Content in your language coming soon",
+    "text": "This guide is currently displayed in English until translation is complete."
+  },
+
+  "errorTitle": "Guide Not Available",
+  "errorText": "The translator's guide could not be loaded. The repository covers most of the same ground in the meantime.",
+
+  "githubRepo": "View GitHub Repository",
+  "githubDescription": "Browse existing translations, open issues, and submit pull requests.",
+
+  "getStarted": "Ready to Start?",
+  "getStartedText": "Interface files are short and self-contained, which makes them a good first contribution. Framework overviews are the highest value per hour. Either way, a section at a time is a normal way to work.",
+  "otherWays": "Other Ways to Contribute"
 }

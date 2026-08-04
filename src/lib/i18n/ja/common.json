@@ -20,10 +20,10 @@
     }
   },
   "discord": {
-    "title": "GGFコミュニティに参加",
-    "description": "貢献者とつながり、質問やアイデアを共有しながら、Global Governance Frameworksを実践へとつなげる活動に参加してください。",
-    "button": "Discordに参加",
-    "inline": "フレームワークについて話したり、貢献者とつながったり、自分に合った参加方法を見つけませんか？"
+    "title": "質問がありますか？Discordで聞いてみましょう",
+    "description": "これらのフレームワークに取り組む人たちのための、小さなオープンなサーバーです。質問したり、作っているものを共有したり、様子を見に来るだけでも構いません。",
+    "button": "Discordを開く",
+    "inline": "直接誰かに聞きたいですか？Discordサーバーがあります。"
   },
   "navigation": {
     "backToFrameworks": "フレームワーク概要"

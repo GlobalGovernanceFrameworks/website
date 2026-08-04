@@ -1,15 +1,15 @@
 <!-- src/routes/get-involved/+page.svelte -->
 <script>
-  import { t, locale } from '$lib/i18n';
+  import { t } from '$lib/i18n';
   import { base } from '$app/paths';
-  import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { afterNavigate } from '$app/navigation';
   import DiscordInvite from '$lib/components/DiscordInvite.svelte';
 
-  console.log('Get involved hub page loading...');
-
-  $: currentLocale = $locale;
+  // English translations imported directly as the SSR / pre-load fallback.
+  // This replaces the old hand-maintained `fallbackText` object, which was a
+  // third copy of these strings and drifted out of sync with the JSON files.
+  import enFallback from '$lib/i18n/en/getInvolved.json';
 
   $: isSalvageMode = $page.url.searchParams.get('source') === 'salvage';
 
@@ -27,126 +27,49 @@
     expandedSection = expandedSection === section ? null : section;
   }
 
-  // Simple fallback text with bilingual support
-  const fallbackText = {
-    en: {
-      title: 'Get Involved',
-      subtitle: 'Help Build the Community These Frameworks Envision',
-      heroIntro: 'These frameworks exist as carefully-designed blueprints awaiting the people to bring them to life. Whether you\'re a community organizer, technologist, funder, translator, or advocate—there\'s a role for you in transforming vision into reality.',
+  // Walk a dot-path through the English fallback object.
+  function fromFallback(key) {
+    return key.split('.').reduce((acc, part) => (acc && part in acc ? acc[part] : null), enFallback);
+  }
 
-      currentStateTitle: 'The Honest Reality',
-      
-      translationTitle: 'Translation',
-      translationDescription: 'Help make these frameworks accessible worldwide by translating content into your language. Even partial translations increase accessibility for non-English speaking communities.',
-      translationCta: 'Start Translating',
-      
-      websiteTitle: 'Website Development',
-      websiteDescription: 'Contribute to the technical infrastructure, build new features, and improve the platform that powers this mission. From bug fixes to major features—all contributions welcome.',
-      websiteCta: 'Join Developers',
-      
-      outreachTitle: 'Community & Outreach',
-      outreachDescription: 'Spread the vision, build advocacy networks, and connect these frameworks with communities that can benefit from them. Help grow the movement from grassroots to global.',
-      outreachCta: 'Build Community',
-      
-      frameworksTitle: 'Framework Development',
-      frameworksDescription: 'Create new governance frameworks, refine existing ones, test implementations, and document lessons learned. Help expand the ecosystem with your domain expertise.',
-      frameworksCta: 'Contribute Frameworks',
-
-      fundingTitle: 'Funding & Resources',
-      fundingDescription: 'Provide financial support to enable organizational development, pilot projects, and infrastructure building. Help transform frameworks from blueprints to functioning systems.',
-      fundingCta: 'Support the Work',
-
-      implementationTitle: 'Implementation & Testing',
-      implementationDescription: 'Apply these frameworks in real contexts—your community, organization, or region. Test what works, document what doesn\'t, share learnings with others.',
-      implementationCta: 'Implement Frameworks',
-
-      researchTitle: 'Research & Analysis',
-      researchDescription: 'Contribute academic rigor, policy analysis, feasibility studies, and evidence-based refinement. Help strengthen frameworks with research and evaluation.',
-      researchCta: 'Contribute Research',
-      
-      whyContribute: 'Why Contribute?',
-      
-      globalImpact: 'Global Impact Through Local Action',
-      
-      getStarted: 'Ready to Get Started?',
-      
-      communityNote: 'Building Together'
-    },
-    sv: {
-      title: 'Engagera dig',
-      subtitle: 'Hjälp till att bygga gemenskapen som dessa ramverk föreställer sig',
-      heroIntro: 'Dessa ramverk existerar som noggrant utformade ritningar som väntar på människor som kan förverkliga dem. Oavsett om du är en samhällsorganisatör, teknolog, finansiär, översättare eller förespråkare—det finns en roll för dig i att omvandla vision till verklighet.',
-
-      currentStateTitle: 'Den ärliga verkligheten',
-      
-      translationTitle: 'Översättning',
-      translationDescription: 'Hjälp till att göra dessa ramverk tillgängliga över hela världen genom att översätta innehåll till ditt språk. Även partiella översättningar ökar tillgängligheten för icke-engelsktalande samhällen.',
-      translationCta: 'Börja översätta',
-      
-      websiteTitle: 'Webbutveckling',
-      websiteDescription: 'Bidra till den tekniska infrastrukturen, bygg nya funktioner och förbättra plattformen som driver detta uppdrag. Från buggfixar till stora funktioner—alla bidrag är välkomna.',
-      websiteCta: 'Gå med utvecklare',
-      
-      outreachTitle: 'Gemenskap & uppsökande verksamhet',
-      outreachDescription: 'Sprid visionen, bygg opinionsbildande nätverk och koppla dessa ramverk till samhällen som kan dra nytta av dem. Hjälp till att växa rörelsen från gräsrötter till global.',
-      outreachCta: 'Bygg gemenskap',
-      
-      frameworksTitle: 'Ramverksutveckling',
-      frameworksDescription: 'Skapa nya styrningsramverk, förfina befintliga, testa implementeringar och dokumentera lärdomar. Hjälp till att utöka ekosystemet med din domänexpertis.',
-      frameworksCta: 'Bidra med ramverk',
-
-      fundingTitle: 'Finansiering & resurser',
-      fundingDescription: 'Tillhandahåll ekonomiskt stöd för att möjliggöra organisationsutveckling, pilotprojekt och infrastrukturbyggande. Hjälp till att omvandla ramverk från ritningar till fungerande system.',
-      fundingCta: 'Stöd arbetet',
-
-      implementationTitle: 'Implementering & testning',
-      implementationDescription: 'Tillämpa dessa ramverk i verkliga sammanhang—din gemenskap, organisation eller region. Testa vad som fungerar, dokumentera vad som inte gör det, dela lärdomar med andra.',
-      implementationCta: 'Implementera ramverk',
-
-      researchTitle: 'Forskning & analys',
-      researchDescription: 'Bidra med akademisk stringens, policyanalys, genomförbarhetsstudier och evidensbaserad förfining. Hjälp till att stärka ramverk med forskning och utvärdering.',
-      researchCta: 'Bidra med forskning',
-      
-      whyContribute: 'Varför bidra?',
-      
-      globalImpact: 'Global påverkan genom lokal handling',
-      
-      getStarted: 'Redo att komma igång?',
-      
-      communityNote: 'Bygga tillsammans'
-    }
-  };
-
-  // Simple text function with language support
+  // Resolve a key: live translation first, English fallback second.
+  // `$t` returns '' both while translations are loading and when a key is
+  // missing, so the fallback covers first paint and untranslated locales alike.
   function getText(key) {
-    // Try the translation system first
-    let value = $t(`getInvolved.${key}`);
-   
-    // If we get a value that's not just the key, use it
-    if (value && value !== '' && value !== `getInvolved.${key}`) {
-      return value;
-    }
-    
-    // Fallback to language-specific text
-    const langTexts = fallbackText[currentLocale] || fallbackText.en;
-    return langTexts[key] || fallbackText.en[key] || key;
+    const value = $t(`getInvolved.${key}`);
+    if (value) return value;
+    return fromFallback(key) || '';
   }
 
   function getButtonText(section) {
-    return expandedSection === section 
-      ? $t('getInvolved.lessDetails') 
-      : $t('getInvolved.moreDetails');
+    return expandedSection === section ? getText('lessDetails') : getText('moreDetails');
   }
+
+  // Card definitions — keeps the markup below to a single loop instead of
+  // seven near-identical blocks.
+  const cards = [
+    { id: 'translation',    icon: '🌍', prefix: 'translation',    detailKeys: ['why', 'how', 'skills'],        href: '/get-involved/translations' },
+    { id: 'website',        icon: '💻', prefix: 'website',        detailKeys: ['why', 'how', 'skills'],        href: '/get-involved/website' },
+    { id: 'outreach',       icon: '📣', prefix: 'outreach',       detailKeys: ['why', 'how', 'skills'],        href: '/get-involved/outreach' },
+    { id: 'frameworks',     icon: '🏗️', prefix: 'frameworks',     detailKeys: ['why', 'how', 'skills'],        href: '/get-involved/frameworks' },
+    { id: 'funding',        icon: '💰', prefix: 'funding',        detailKeys: ['why', 'how', 'whatNeeded'],    href: '/get-involved/funding' },
+    { id: 'implementation', icon: '🚀', prefix: 'implementation', detailKeys: ['why', 'how', 'skills'],        href: '/frameworks' },
+    { id: 'research',       icon: '🔬', prefix: 'research',       detailKeys: ['why', 'how', 'skills'],        href: '/contact' }
+  ];
+
+  // Label shown before each detail line. `whatNeeded` in the details object
+  // maps to the `whatsNeeded` label key.
+  const detailLabel = { why: 'why', how: 'how', skills: 'skills', whatNeeded: 'whatsNeeded' };
 </script>
 
 <svelte:head>
-  <title>{getText('title')} - Global Governance Framework</title>
+  <title>{getText('title')} - Global Governance Frameworks</title>
   <meta name="description" content={getText('subtitle')} />
 </svelte:head>
 
 <div class="page-container">
   <div class="content">
-   
+
     <!-- Hero Section -->
     <div class="hero-section" class:salvage-theme={isSalvageMode}>
       <div class="hero-content">
@@ -154,9 +77,9 @@
           <h1>Join the Salvage Operation</h1>
           <p class="hero-subtitle">The system is terminal. We must build the replacement kernel.</p>
           <p class="hero-intro">
-            You have seen the diagnosis. The window for voluntary transition is closing (2030-2035). 
-            We need builders, architects, and funders to accelerate the development of the 
-            Global Governance Frameworks by 10x. Pick a role below.
+            You have seen the diagnosis. The window for voluntary transition is closing (2030-2035).
+            Building the Global Governance Frameworks out faster needs builders, architects and funders.
+            Pick a role below.
           </p>
         {:else}
           <h1>{getText('title')}</h1>
@@ -168,240 +91,96 @@
 
     <!-- Current State Section -->
     <div class="current-state-section">
-      <h2>{$t('getInvolved.currentState.title') || getText('currentStateTitle')}</h2>
-      <p>{$t('getInvolved.currentState.paragraph1')}</p>
-      <p>{$t('getInvolved.currentState.paragraph2')}</p>
+      <h2>{getText('currentState.title')}</h2>
+      <p>{getText('currentState.paragraph1')}</p>
+      <p>{getText('currentState.paragraph2')}</p>
     </div>
 
     <!-- Why Contribute Section -->
     <div class="why-contribute-section">
-      <h2>{$t('getInvolved.whyContribute.title') || getText('whyContribute')}</h2>
-      <p>{$t('getInvolved.whyContribute.paragraph1')}</p>
-      <p>{$t('getInvolved.whyContribute.paragraph2')}</p>
-      <p>{$t('getInvolved.whyContribute.paragraph3')}</p>
+      <h2>{getText('whyContribute.title')}</h2>
+      <p>{getText('whyContribute.paragraph1')}</p>
+      <p>{getText('whyContribute.paragraph2')}</p>
+      <p>{getText('whyContribute.paragraph3')}</p>
     </div>
 
     <!-- Pathways Header -->
     <div class="pathways-header">
-      <h2>{$t('getInvolved.pathways.title')}</h2>
-      <p>{$t('getInvolved.pathways.intro')}</p>
+      <h2>{getText('pathways.title')}</h2>
+      <p>{getText('pathways.intro')}</p>
     </div>
 
     <!-- Contribution Cards -->
     <div class="contribution-cards">
+      {#each cards as card (card.id)}
+        <div class="contribution-card">
+          <div class="card-icon">{card.icon}</div>
+          <div class="card-content">
+            <h3>{getText(`${card.prefix}Title`)}</h3>
+            <p>{getText(`${card.prefix}Description`)}</p>
 
-      <!-- Translation Card -->
-      <div class="contribution-card translation-card">
-        <div class="card-icon">🌍</div>
-        <div class="card-content">
-          <h3>{$t('getInvolved.translationTitle') || getText('translationTitle')}</h3>
-          <p>{$t('getInvolved.translationDescription') || getText('translationDescription')}</p>
-          <button 
-            class="details-toggle"
-            on:click={() => toggleSection('translation')}
-          >
-            {getButtonText('translation')}
-          </button>
-          {#if expandedSection === 'translation'}
-            <div class="details-content">
-              <p><strong>{$t('getInvolved.why')}</strong> {$t('getInvolved.translationDetails.why')}</p>
-              <p><strong>{$t('getInvolved.how')}</strong> {$t('getInvolved.translationDetails.how')}</p>
-              <p><strong>{$t('getInvolved.skills')}</strong> {$t('getInvolved.translationDetails.skills')}</p>
-            </div>
-          {/if}
-          <a href="{base}/get-involved/translations" class="card-cta">
-            {$t('getInvolved.translationCta') || getText('translationCta')} <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
-      
-      <!-- Website Development Card -->
-      <div class="contribution-card website-card">
-        <div class="card-icon">💻</div>
-        <div class="card-content">
-          <h3>{$t('getInvolved.websiteTitle') || getText('websiteTitle')}</h3>
-          <p>{$t('getInvolved.websiteDescription') || getText('websiteDescription')}</p>
-          <button 
-            class="details-toggle"
-            on:click={() => toggleSection('website')}
-          >
-            {getButtonText('translation')}
-          </button>
-          {#if expandedSection === 'website'}
-            <div class="details-content">
-              <p><strong>{$t('getInvolved.why')}</strong> {$t('getInvolved.websiteDetails.why')}</p>
-              <p><strong>{$t('getInvolved.how')}</strong> {$t('getInvolved.websiteDetails.how')}</p>
-              <p><strong>{$t('getInvolved.skills')}</strong> {$t('getInvolved.websiteDetails.skills')}</p>
-            </div>
-          {/if}
-          <a href="{base}/get-involved/website" class="card-cta">
-            {$t('getInvolved.websiteCta') || getText('websiteCta')} <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
-      
-      <!-- Community & Outreach Card -->
-      <div class="contribution-card outreach-card">
-        <div class="card-icon">📣</div>
-        <div class="card-content">
-          <h3>{$t('getInvolved.outreachTitle') || getText('outreachTitle')}</h3>
-          <p>{$t('getInvolved.outreachDescription') || getText('outreachDescription')}</p>
-          <button 
-            class="details-toggle"
-            on:click={() => toggleSection('outreach')}
-          >
-            {getButtonText('outreach')}
-          </button>
-          {#if expandedSection === 'outreach'}
-            <div class="details-content">
-              <p><strong>{$t('getInvolved.why')}</strong> {$t('getInvolved.outreachDetails.why')}</p>
-              <p><strong>{$t('getInvolved.how')}</strong> {$t('getInvolved.outreachDetails.how')}</p>
-              <p><strong>{$t('getInvolved.skills')}</strong> {$t('getInvolved.outreachDetails.skills')}</p>
-            </div>
-          {/if}
-          <a href="{base}/get-involved/outreach" class="card-cta">
-            {$t('getInvolved.outreachCta') || getText('outreachCta')} <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
-      
-      <!-- Framework Development Card -->
-      <div class="contribution-card frameworks-card">
-        <div class="card-icon">🏗️</div>
-        <div class="card-content">
-          <h3>{$t('getInvolved.frameworksTitle') || getText('frameworksTitle')}</h3>
-          <p>{$t('getInvolved.frameworksDescription') || getText('frameworksDescription')}</p>
-          <button 
-            class="details-toggle"
-            on:click={() => toggleSection('frameworks')}
-          >
-            {getButtonText('frameworks')}
-          </button>
-          {#if expandedSection === 'frameworks'}
-            <div class="details-content">
-              <p><strong>{$t('getInvolved.why')}</strong> {$t('getInvolved.frameworksDetails.why')}</p>
-              <p><strong>{$t('getInvolved.how')}</strong> {$t('getInvolved.frameworksDetails.how')}</p>
-              <p><strong>{$t('getInvolved.skills')}</strong> {$t('getInvolved.frameworksDetails.skills')}</p>
-            </div>
-          {/if}
-          <a href="{base}/get-involved/frameworks" class="card-cta">
-            {$t('getInvolved.frameworksCta') || getText('frameworksCta')} <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
+            <button
+              class="details-toggle"
+              aria-expanded={expandedSection === card.id}
+              on:click={() => toggleSection(card.id)}
+            >
+              {getButtonText(card.id)}
+            </button>
 
-      <!-- Funding Card -->
-      <div class="contribution-card funding-card">
-        <div class="card-icon">💰</div>
-        <div class="card-content">
-          <h3>{$t('getInvolved.fundingTitle') || getText('fundingTitle')}</h3>
-          <p>{$t('getInvolved.fundingDescription') || getText('fundingDescription')}</p>
-          <button 
-            class="details-toggle"
-            on:click={() => toggleSection('funding')}
-          >
-            {getButtonText('funding')}
-          </button>
-          {#if expandedSection === 'funding'}
-            <div class="details-content">
-              <p><strong>{$t('getInvolved.why')}</strong> {$t('getInvolved.fundingDetails.why')}</p>
-              <p><strong>{$t('getInvolved.how')}</strong> {$t('getInvolved.fundingDetails.how')}</p>
-              <p><strong>{$t('getInvolved.whatsNeeded')}</strong> {$t('getInvolved.fundingDetails.whatNeeded')}</p>
-            </div>
-          {/if}
-          <a href="{base}/get-involved/funding" class="card-cta">
-            {$t('getInvolved.fundingCta') || getText('fundingCta')} <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
+            {#if expandedSection === card.id}
+              <div class="details-content">
+                {#each card.detailKeys as key}
+                  <p>
+                    <strong>{getText(detailLabel[key])}</strong>
+                    {getText(`${card.prefix}Details.${key}`)}
+                  </p>
+                {/each}
+              </div>
+            {/if}
 
-      <!-- Implementation Card -->
-      <div class="contribution-card implementation-card">
-        <div class="card-icon">🚀</div>
-        <div class="card-content">
-          <h3>{$t('getInvolved.implementationTitle') || getText('implementationTitle')}</h3>
-          <p>{$t('getInvolved.implementationDescription') || getText('implementationDescription')}</p>
-          <button 
-            class="details-toggle"
-            on:click={() => toggleSection('implementation')}
-          >
-            {getButtonText('implementation')}
-          </button>
-          {#if expandedSection === 'implementation'}
-            <div class="details-content">
-              <p><strong>{$t('getInvolved.why')}</strong> {$t('getInvolved.implementationDetails.why')}</p>
-              <p><strong>{$t('getInvolved.how')}</strong> {$t('getInvolved.implementationDetails.how')}</p>
-              <p><strong>{$t('getInvolved.skills')}</strong> {$t('getInvolved.implementationDetails.skills')}</p>
-            </div>
-          {/if}
-          <a href="{base}/frameworks" class="card-cta">
-            {$t('getInvolved.implementationCta') || getText('implementationCta')} <span class="arrow">→</span>
-          </a>
+            <a href="{base}{card.href}" class="card-cta">
+              {getText(`${card.prefix}Cta`)} <span class="arrow">→</span>
+            </a>
+          </div>
         </div>
-      </div>
-
-      <!-- Research Card -->
-      <div class="contribution-card research-card">
-        <div class="card-icon">🔬</div>
-        <div class="card-content">
-          <h3>{$t('getInvolved.researchTitle') || getText('researchTitle')}</h3>
-          <p>{$t('getInvolved.researchDescription') || getText('researchDescription')}</p>
-          <button 
-            class="details-toggle"
-            on:click={() => toggleSection('research')}
-          >
-            {getButtonText('research')}
-          </button>
-          {#if expandedSection === 'research'}
-            <div class="details-content">
-              <p><strong>{$t('getInvolved.why')}</strong> {$t('getInvolved.researchDetails.why')}</p>
-              <p><strong>{$t('getInvolved.how')}</strong> {$t('getInvolved.researchDetails.how')}</p>
-              <p><strong>{$t('getInvolved.skills')}</strong> {$t('getInvolved.researchDetails.skills')}</p>
-            </div>
-          {/if}
-          <a href="{base}/contact" class="card-cta">
-            {$t('getInvolved.researchCta') || getText('researchCta')} <span class="arrow">→</span>
-          </a>
-        </div>
-      </div>
-
+      {/each}
     </div>
 
     <!-- Global Impact Section -->
     <div class="global-impact-section">
-      <h2>{$t('getInvolved.globalImpact.title') || getText('globalImpact')}</h2>
-      <p>{$t('getInvolved.globalImpact.paragraph1')}</p>
-      <p>{$t('getInvolved.globalImpact.paragraph2')}</p>
+      <h2>{getText('globalImpact.title')}</h2>
+      <p>{getText('globalImpact.paragraph1')}</p>
+      <p>{getText('globalImpact.paragraph2')}</p>
     </div>
 
     <!-- Get Started Section -->
     <div class="get-started-section">
-      <h2>{$t('getInvolved.getStarted.title') || getText('getStarted')}</h2>
-      <p>{$t('getInvolved.getStarted.paragraph1')}</p>
-      <p>{$t('getInvolved.getStarted.paragraph2')}</p>
+      <h2>{getText('getStarted.title')}</h2>
+      <p>{getText('getStarted.paragraph1')}</p>
+      <p>{getText('getStarted.paragraph2')}</p>
       <DiscordInvite variant="card" />
       <div class="action-buttons">
         <a href="{base}/contact" class="action-button primary">
-          {$t('getInvolved.getStarted.contactCta')}
+          {getText('getStarted.contactCta')}
         </a>
-        <a href="https://github.com/GlobalGovernanceFrameworks" 
-           target="_blank" 
-           rel="noopener noreferrer" 
+        <a href="https://github.com/GlobalGovernanceFrameworks"
+           target="_blank"
+           rel="noopener noreferrer"
            class="action-button secondary">
-          {$t('getInvolved.getStarted.githubCta')}
+          {getText('getStarted.githubCta')}
         </a>
         <a href="{base}/frameworks" class="action-button tertiary">
-          {$t('getInvolved.getStarted.exploreCta')}
+          {getText('getStarted.exploreCta')}
         </a>
       </div>
     </div>
 
     <!-- Community Note Section -->
     <div class="community-note-section">
-      <h2>{$t('getInvolved.communityNote.title') || getText('communityNote')}</h2>
-      <p>{$t('getInvolved.communityNote.paragraph1')}</p>
-      <p>{$t('getInvolved.communityNote.paragraph2')}</p>
-      <p>{$t('getInvolved.communityNote.paragraph3')}</p>
+      <h2>{getText('communityNote.title')}</h2>
+      <p>{getText('communityNote.paragraph1')}</p>
+      <p>{getText('communityNote.paragraph2')}</p>
+      <p>{getText('communityNote.paragraph3')}</p>
     </div>
 
   </div>
@@ -440,10 +219,10 @@
     text-align: center;
   }
 
-  /* Salvage Mode Hero (New) */
+  /* Salvage Mode Hero */
   .hero-section.salvage-theme {
-    background: linear-gradient(135deg, #1e1b4b 0%, #7c2d12 100%); /* Navy to Dark Amber */
-    border-bottom: 4px solid #d97706; /* Gold border */
+    background: linear-gradient(135deg, #1e1b4b 0%, #7c2d12 100%);
+    border-bottom: 4px solid #d97706;
   }
 
   .hero-content h1 {
@@ -467,7 +246,7 @@
     margin: 0 auto;
   }
 
-  /* New Content Sections */
+  /* Content Sections */
   .current-state-section,
   .why-contribute-section,
   .pathways-header,
@@ -553,6 +332,12 @@
     margin-bottom: 1rem;
   }
 
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
   .card-content h3 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -560,7 +345,7 @@
     margin-bottom: 1rem;
   }
 
-  .card-content p {
+  .card-content > p {
     color: var(--content-text);
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -577,6 +362,7 @@
     font-size: 0.9rem;
     margin-bottom: 1rem;
     transition: all 0.2s;
+    align-self: flex-start;
   }
 
   .details-toggle:hover {
@@ -592,6 +378,14 @@
     font-size: 0.95rem;
     line-height: 1.6;
     color: var(--content-text);
+  }
+
+  .details-content p {
+    margin-bottom: 0.75rem;
+  }
+
+  .details-content p:last-child {
+    margin-bottom: 0;
   }
 
   .details-content strong {

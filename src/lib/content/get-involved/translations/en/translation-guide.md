@@ -1,388 +1,80 @@
-# Global Governance Frameworks - Translator's Kit
-
-Welcome to the Global Governance Frameworks Translation Program! This guide will help you contribute to making these critical governance frameworks accessible in your language.
-
-## 🌍 Why Translation Matters
-
-The Global Governance Frameworks addresses humanity's most pressing challenges - from climate change to digital governance to peace-building. By translating these frameworks, you're helping communities worldwide access tools for positive change in their native language.
-
-## 📋 Getting Started Checklist
-
-- [ ] Review this entire guide
-- [ ] Set up GitHub access
-- [ ] Choose your framework(s) to translate
-- [ ] Join the translation community
-- [ ] Download necessary tools
-
-## 🔧 Technical Setup
-
-### 1. GitHub Repository Access
-
-**Repository URL:** https://github.com/GlobalGovernanceFrameworks/website
-
-#### Install Git (Choose your operating system)
-
-**Windows:**
-1. Download Git from https://git-scm.com/download/win
-2. Run the installer with default settings
-3. Open "Git Bash" from the Start menu
-
-**macOS:**
-```bash
-# Option 1: Install via Homebrew (recommended)
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install git
-
-# Option 2: Install Xcode Command Line Tools
-xcode-select --install
-```
-
-**Linux (Ubuntu/Debian):**
-```bash
-sudo apt update
-sudo apt install git
-```
-
-**Linux (CentOS/RHEL/Fedora):**
-```bash
-# CentOS/RHEL
-sudo yum install git
-
-# Fedora
-sudo dnf install git
-```
-
-#### Set Up Git
-```bash
-# Configure your identity (required for commits)
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-```
-
-#### Fork and Clone the Repository
-
-**Step 1: Fork on GitHub**
-1. Go to https://github.com/GlobalGovernanceFrameworks/website
-2. Click the "Fork" button in the top-right corner
-3. This creates a copy in your GitHub account
-
-**Step 2: Clone Your Fork**
-```bash
-# Replace 'yourusername' with your actual GitHub username
-git clone https://github.com/yourusername/governance-frameworks-site.git
-
-# Navigate into the project
-cd governance-frameworks-site
-
-# Add the original repository as upstream (for getting updates)
-git remote add upstream https://github.com/GlobalGovernanceFrameworks/website
-```
-
-**Step 3: Create Your Translation Branch**
-```bash
-# Create and switch to a new branch for your translation
-git checkout -b translate-[framework-name]-[language-code]
-
-# Example: 
-git checkout -b translate-peace-es
-```
-
-### 2. Understanding the File Structure
-
-The frameworks are organized as follows:
-
-```
-/src/lib/content/frameworks/
-├── en/               # English (source language)
-├── sv/               # Swedish 
-├── es/               # Spanish
-├── fr/               # French
-└── [your-language]/  # Your target language
-    └── implementation/
-        ├── peace-and-conflict-resolution/           # Peace & Conflict Resolution
-        ├── mental-health-governance/                # Mental Health Governance
-        ├── educational-systems/                     # Educational Systems
-        ├── technology-governance/                   # Technology Governance
-        └── [other-frameworks]/
-```
-
-## 📝 What to Translate
-
-### Priority 1: Framework Content Files
-
-**Location:** `/src/lib/content/frameworks/[language]/implementation/[framework-name]/`
-
-**File Types:**
-- `*.md` files - Main framework content (Markdown format)
-- Individual section files (e.g., `core-principles.md`, `implementation-timeline.md`)
-
-**Example Framework Folders:**
-- `peace-and-conflict-resolution/` - Peace & Conflict Resolution Framework
-- `mental-health-governance/` - Mental Health Framework  
-- `educational-systems/` - Education Framework
-- `technology-governance/` - Technology Governance Framework
-- `environmental-stewardship/` - Environmental Stewardship Framework
-
-### Priority 2: User Interface Text
-
-**Location:** `/src/lib/i18n/[language-code].json`
-
-**Contains:**
-- Navigation menus
-- Button labels
-- Form text
-- General website interface elements
-
-### Priority 3: Visual Assets
-
-**Location:** `/static/images/frameworks/`
-
-**File Naming Convention:**
-- `framework-diagram-en.svg` (English)
-- `framework-diagram-sv.svg` (Swedish)
-- `framework-diagram-[your-language-code].svg` (Your language)
-
-*Note: SVG editing requires graphic design tools like Inkscape (free) or Adobe Illustrator*
-
-## 🗣️ Language Codes
-
-Use standard ISO 639-1 codes:
-
-| Language | Code | Example Folder |
-|----------|------|----------------|
-| Spanish | es | `/frameworks/es/` |
-| French | fr | `/frameworks/fr/` |
-| German | de | `/frameworks/de/` |
-| Portuguese | pt | `/frameworks/pt/` |
-| Arabic | ar | `/frameworks/ar/` |
-| Chinese (Simplified) | zh | `/frameworks/zh/` |
-| Hindi | hi | `/frameworks/hi/` |
-| Japanese | ja | `/frameworks/ja/` |
-| Russian | ru | `/frameworks/ru/` |
-
-## 📖 Translation Guidelines
-
-### 1. Key Principles
-
-**Accuracy First:** Maintain the precise meaning of technical and policy concepts
-**Cultural Adaptation:** Adapt examples and references to your local context when appropriate
-**Consistency:** Use the same translation for recurring terms throughout
-**Accessibility:** Write in clear, accessible language for your target audience
-
-### 2. Tone and Style
-
-- **Formal but accessible** - These are serious policy documents that should be understandable
-- **Active voice preferred** - "Governments should implement..." not "Implementation should be done by governments..."
-- **Gender-neutral language** - Use inclusive language appropriate to your language's conventions
-- **Professional terminology** - Maintain technical accuracy while ensuring readability
-
-### 3. Handling Technical Terms
-
-**Do NOT translate:**
-- Proper nouns (United Nations, IPCC, etc.)
-- Established technical acronyms (AI, GDP, CO2, etc.)
-- Framework names (keep "Global Governance Frameworks")
-
-**DO translate but maintain consistency:**
-- Policy concepts (governance, sustainability, resilience)
-- Implementation terms (assessment, monitoring, evaluation)
-- Social concepts (community engagement, stakeholder participation)
-
-## 🔑 Key Terms Glossary
-
-| English Term | Definition | Translation Notes |
-|--------------|------------|-------------------|
-| **Polycrisis** | Multiple, interconnected crises occurring simultaneously | New term - may need explanation in your language |
-| **Ecocide Law** | Legal framework criminalizing severe environmental destruction | Legal term - research equivalent in your jurisdiction |
-| **Digital Governance** | Frameworks for governing digital technologies and spaces | Emerging field - may need contextual explanation |
-| **Stakeholder Engagement** | Process of involving affected parties in decision-making | Common in policy - find established equivalent |
-| **Implementation Timeline** | Scheduled phases for putting framework into practice | Standard project management term |
-| **Cross-Domain Integration** | Coordination across different policy areas | Technical term - maintain precision |
-| **Trauma-Informed Approaches** | Methods that recognize and respond to trauma impacts | Clinical/social term - use established translation |
-| **Value Systems** | Core beliefs and principles guiding behavior | Philosophical concept - cultural adaptation may be needed |
-
-## 📋 Translation Workflow
-
-### Step 1: Choose Your Framework
-1. Review available frameworks at: [website-url]/frameworks
-2. Check existing translations in `/src/lib/content/frameworks/`
-3. Select untranslated framework or sections needing updates
-
-### Step 2: Set Up Your Workspace
-1. Create language folder: `/frameworks/[your-language-code]/implementation/[framework-name]/`
-2. Copy English source files as templates
-3. Create tracking document for your progress
-
-### Step 3: Translation Process
-1. **First Pass:** Translate content, focusing on meaning over perfection
-2. **Review Pass:** Check terminology consistency and flow
-3. **Cultural Pass:** Adapt examples and references for local context
-4. **Final Pass:** Proofread for grammar, spelling, and formatting
-
-### Step 4: Quality Assurance
-1. **Self-review** against source material
-2. **Peer review** with other native speakers
-3. **Subject matter expert review** (if available)
-4. **Community feedback** via translation forums
-
-### Step 5: Submission
-
-**Save Your Work:**
-```bash
-# Add your translated files
-git add .
-
-# Commit with descriptive message
-git commit -m "Add Spanish translation for Peace Framework core sections"
-
-# Push to your fork
-git push origin translate-peace-es
-```
-
-**Create Pull Request:**
-1. Go to your fork on GitHub
-2. Click "Compare & pull request" button
-3. Add clear title: "Spanish Translation: Peace Framework [sections]"
-4. Describe what you've translated and any notes for reviewers
-5. Submit the pull request
-
-**Respond to Feedback:**
-- Check GitHub notifications for review comments
-- Make requested changes and push updates
-- Celebrate your contribution! 🎉
-
-## 👥 Translation Community
-
-### Communication Channels
-
-**Discord Server:** Join our translation community at https://discord.gg/Zx4hMJf4JU
-- **#translation-lab channel** (under 🤝 WORKSPACES category) for coordination, questions, and collaboration
-- Real-time chat with other translators
-- Voice channels for team meetings
-
-**GitHub Discussions:** Use repository discussions for technical questions and pull request coordination
-
-### Team Roles
-
-**Lead Translator:** Primary person responsible for framework completion
-**Reviewers:** 2-3 people who check translations for accuracy and flow
-**Cultural Advisor:** Local expert who ensures cultural appropriateness
-**Technical Coordinator:** Helps with GitHub and formatting issues
-
-### Review Standards
-
-**Two-Reviewer System:** Every translation should be reviewed by at least two other native speakers
-**Subject Matter Review:** Complex technical sections should be reviewed by experts in relevant fields
-**Community Input:** Draft translations should be shared for broader community feedback
-
-## 🛠️ Tools and Resources
-
-### Required Tools
-- **Text Editor:** VS Code (recommended), Sublime Text, or any markdown editor
-- **GitHub Desktop:** For easier repository management (optional)
-- **Markdown Preview:** Browser extension or editor plugin
-
-### Helpful Resources
-- **DeepL/Google Translate:** For initial drafts (always review carefully)
-- **Terminology Databases:** UN terminology, EU terminology, field-specific glossaries
-- **Style Guides:** Government or academic style guides in your language
-- **CAT Tools:** Translation memory tools for consistency (optional)
-
-### Reference Materials
-- Original framework documentation
-- Related policy documents in your language
-- Academic papers in relevant fields
-- Government policy documents using similar terminology
-
-## 📏 Quality Standards
-
-### Content Accuracy
-- [ ] Meaning preserved from source text
-- [ ] Technical concepts correctly translated
-- [ ] Cultural references appropriately adapted
-- [ ] Legal and policy terms use established conventions
-
-### Language Quality
-- [ ] Grammar and spelling correct
-- [ ] Consistent terminology throughout
-- [ ] Appropriate register and tone
-- [ ] Natural flow in target language
-
-### Formatting Standards
-- [ ] Markdown formatting preserved
-- [ ] Headers and structure maintained
-- [ ] Links and references updated appropriately
-- [ ] Lists and tables properly formatted
-
-## 🚀 Getting Started
-
-### Beginner-Friendly First Projects
-
-1. **Framework Overview Pages** - Start with high-level summaries
-2. **Implementation Guides** - Practical, less technical content
-3. **Glossary Sections** - Short, contained translation tasks
-4. **User Interface Elements** - JSON file translations
-
-### Advanced Projects
-
-1. **Complete Framework Translation** - Full policy frameworks
-2. **Visual Asset Creation** - SVG diagrams and infographics
-3. **Cultural Adaptation Guides** - Context-specific implementation notes
-4. **Review and Quality Assurance** - Help improve existing translations
-
-## 📞 Support and Contact
-
-### Getting Help
-
-**Discord Support:** Join #translation-lab at https://discord.gg/Zx4hMJf4JU for:
-- Real-time help from other translators
-- Technical guidance
-- Coordination with language teams
-- General questions and community support
-
-**Technical Issues:** Create GitHub issue with "translation" label for repository-specific problems
-
-### Contributing Back
-
-Your translation work helps the global community. Consider:
-- Sharing your glossaries with other translators
-- Mentoring new translators in your language
-- Providing feedback on translation processes
-- Contributing to style guides and best practices
-
-## 🎯 Success Metrics
-
-We measure translation impact through:
-- **Completion Rate:** Percentage of framework translated
-- **Quality Score:** Community and expert review ratings
-- **Usage Analytics:** Downloads and page views of translated content
-- **Community Growth:** New translators joining language teams
-
-## 📅 Timeline Expectations
-
-**Individual Section:** 1-2 weeks (5-10 pages)
-**Complete Framework:** 2-3 months (50-100 pages)
-**Full Review Process:** 2-4 weeks additional
-**Publication:** 1 week after final approval
-
-## 🏆 Recognition
-
-Contributors will be acknowledged on our dedicated Contributors page, recognizing your valuable work in making global governance frameworks accessible worldwide.
-
+---
+title: "Translator's Guide"
 ---
 
-## Ready to Start?
+## Where things stand
 
-1. **Install Git:** Follow the instructions above for your operating system
-2. **Fork and clone the repository:** Use the terminal commands provided
-3. **Join our Discord:** https://discord.gg/Zx4hMJf4JU (check #translation-lab channel)
-4. **Choose your first framework:** Browse available options in the repository
-5. **Create your translation branch:** Use the git commands to set up your workspace
-6. **Start translating:** Begin with a small section to get familiar with the process
+The site currently exists in English, Swedish, and Japanese. English is the source language and is far ahead of the other two; Swedish and Japanese cover the interface and some framework content, with substantial gaps.
 
-Thank you for helping make global governance frameworks accessible to communities worldwide! Your contribution helps build a more equitable and sustainable future for all.
+There is no translation team, no review board, and no coordinator. If you translate something into a language nobody else here reads, nobody will be able to check it — which makes your own care the quality control. That's worth knowing up front rather than discovering later.
 
----
+Adding a new language is entirely possible. It just means you'd be the first person working in it.
 
-*Last updated: [2025-06-29] | Version 1.0*
-*For updates to this guide, check the repository's translation documentation.*
+## What's worth translating first
+
+**Interface text** lives in `src/lib/i18n/[locale]/*.json`, split by page or feature. These files are short, self-contained, and immediately visible — a good first contribution, and the fastest way to make a language usable at all.
+
+**Framework content** lives in `src/lib/content/frameworks/[locale]/`. These are long markdown documents. A single framework can run to tens of thousands of words, so translating a section at a time is normal and welcome; partial translation is better than none, and the site falls back to English for anything missing.
+
+**Framework overviews** sit between the two — high-level summaries, a few hundred words each, and probably the highest value per hour of work.
+
+Use standard ISO 639-1 codes for locale folders: `es`, `fr`, `de`, `pt`, `ar`, `zh`, `hi`, `ru`, and so on.
+
+## Translation principles
+
+**Accuracy before elegance.** These are policy documents. Where a technical concept is precise, preserve the precision even if the result reads slightly stiffly.
+
+**Consistency within a document.** Pick one rendering for each recurring term and stay with it. If you're the first translator into your language, you're also setting the convention — writing your choices down as you go helps whoever comes next, including you in three months.
+
+**Cultural adaptation where it helps.** Examples and references can be adapted to your context. Substantive claims cannot.
+
+**Active voice, gender-neutral where your language allows it.** Formal but readable.
+
+### Leave untranslated
+
+Proper nouns (United Nations, IPCC), established acronyms (AI, GDP, CO₂), and framework names — "Global Governance Frameworks", "Treaty for Our Only Home", "Hearts", "Leaves", and similar coined terms function as names rather than descriptions.
+
+### Translate, but consistently
+
+Policy concepts (governance, sustainability, resilience), implementation terms (assessment, monitoring, evaluation), and social concepts (community engagement, stakeholder participation).
+
+## Terms that give translators trouble
+
+| Term | What it means | Note |
+|---|---|---|
+| **Polycrisis** | Multiple interconnected crises occurring at once | Recent coinage; may need a gloss on first use |
+| **Ecocide law** | Legal framework criminalizing severe environmental destruction | Research the equivalent in your jurisdiction before inventing one |
+| **Bioregion** | An area defined by ecological rather than political boundaries | Some languages have an established term; many don't |
+| **Right relationship** | Living in healthy reciprocity with people and place | Deliberately non-technical; resist the urge to formalize it |
+| **Subsidiarity** | Decisions made at the most local capable level | Established EU-policy term in many European languages |
+| **Regenerative** | Restoring rather than merely sustaining | "Sustainable" is not a synonym and shouldn't be substituted |
+| **Stewardship** | Care and responsibility for something held in trust | Often has no clean single-word equivalent |
+
+## Swedish-specific note
+
+Swedish doesn't use title case. Capitalize the first word of a heading and proper nouns only — not every significant word as in English.
+
+## Workflow
+
+Fork the repository at `github.com/GlobalGovernanceFrameworks/website`, create a branch named for what you're translating (for example `translate-treaty-overview-es`), and work in the locale folder for your language, creating it if it doesn't exist.
+
+```bash
+git clone https://github.com/yourusername/website.git
+cd website
+git remote add upstream https://github.com/GlobalGovernanceFrameworks/website.git
+git checkout -b translate-treaty-overview-es
+```
+
+Preserve markdown structure — headings, lists, links, and code spans should survive intact. One quirk worth knowing: in mdsvex a bare `<` immediately before a digit breaks compilation, so wrap those in a backtick code span.
+
+When you're ready, push to your fork and open a pull request describing what you translated and anything you were unsure about. Flagging your uncertainties is genuinely useful; it tells a future translator where to look.
+
+## A realistic note on review and timing
+
+Review comes from one person, who reads English and Swedish. For other languages, review means checking that nothing structural broke, not that the translation is good. If you'd like a second pair of eyes and know someone who could provide them, bringing them along is worth more here than it would be in a larger project.
+
+Response times vary. A nudge on Discord after a while is welcome rather than rude.
+
+## Getting help
+
+Discord is the fastest route for questions about terminology, structure, or whether something is worth translating at all. It's small, so you'll generally be talking to whoever wrote the text you're working on.

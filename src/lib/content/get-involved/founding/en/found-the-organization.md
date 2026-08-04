@@ -1,38 +1,51 @@
 ---
-title: "Our Path to Formalization"
+title: "If This Becomes an Organization"
 ---
 
-## Our Path to Formalization: Building a Durable Institution
+## Where things stand
 
-The Global Governance Frameworks (GGF) initiative has grown from a research project into a comprehensive blueprint for global transformation. To achieve its mission, the project must now take the next critical step in its evolution: transitioning from a founder-led project into a durable, public-facing, and legally recognized organization.
+Global Governance Frameworks is not a registered organization. There is no board, no bank account, no budget, and no legal identity. It is one person's project — Björn Kenneth Holmström — developed with AI systems used for drafting, critique, and adversarial testing.
 
-### Our Current Status
+Draft statutes and an internal operating system document exist in the onboarding section of this site. They were written in advance, and they are drafts. Nothing has been adopted, because there is currently no one to adopt anything.
 
-Currently, the GGF is an independent research project driven by its founder, Björn Kenneth Holmström, with the analytical support of multiple AI systems. While this model has been effective for developing the core frameworks, a formal legal structure is now necessary to carry the work forward.
+## Why formalization isn't being pursued right now
 
-### Why We Need a Formal Organization
+A Swedish non-profit association (*ideell förening*) requires at least three people. More to the point, it requires three people who will actually run one: hold meetings, keep accounts, file annual reports, and take responsibility for decisions.
 
-Registering as a formal non-profit entity (likely an `Ideell Förening` in Sweden) will unlock the project's full potential by providing:
+Registering an entity with a single person behind it adds administrative obligation without adding capacity. It would look like progress while functioning as overhead — and it would put a registration number on something that hasn't yet earned one.
 
-1.  **Credibility and Legitimacy:** A formal structure is essential for building partnerships with universities, other NGOs, and governmental bodies.
-2.  **Financial Sustainability:** It will allow the GGF to open a bank account, accept grants, and receive donations to fund its operations and development.
-3.  **Legal Protection:** It creates a liability shield, separating the project's legal identity from its individual contributors.
-4.  **Long-Term Durability:** It establishes a board and a governance structure to ensure the mission can continue and grow for decades to come, securing the GGF as a true public good.
+So formalization here is conditional. It happens if and when people appear who want to build it. Not on a schedule, and not as a step in a fundraising strategy.
 
-### How You Can Help: A Call for Founding Members
+## What it would make possible
 
-We are seeking a small group of dedicated individuals with a belief in this mission to help form the initial founding board and guide the GGF through the process of formal registration. Your strategic guidance and expertise during this foundational moment will be invaluable.
+If a founding group did come together, incorporation would unlock things that are currently closed off:
 
-We are particularly interested in individuals with experience in:
+- **A treasury.** A bank account, the ability to receive grants and donations, and finances that aren't running through one person's personal account.
+- **Formal partnerships.** Universities, NGOs, and public bodies generally need a counterparty with a registration number before they can collaborate on the record.
+- **Legal separation.** An identity distinct from the individuals contributing to it, and the liability shield that comes with it.
+- **Durability.** A structure that can outlast any single contributor, including the current one. Right now, if one person stops, everything stops.
 
-* Non-profit governance and management
-* Swedish or international law
-* Financial administration and fundraising for NGOs
-* Strategic planning and organizational development
+None of this is urgent while the project has little external adoption. All of it becomes urgent quickly if that changes.
 
-This is a unique opportunity to shape the foundation of an organization with a mission to address humanity's most pressing global challenges.
+## What it would need from you
 
-If you are interested in learning more about becoming a founding board member or offering professional advice, please contact us directly.
+The useful backgrounds are roughly what you'd expect:
 
-**Contact:** [globalgovernanceframeworks@gmail.com](mailto:globalgovernanceframeworks@gmail.com)
-**Subject:** Founding Team Inquiry
+- Non-profit governance and administration
+- Swedish association law, or the equivalent where you are
+- Financial administration and fundraising
+- Strategic and organizational development
+
+But expertise is the smaller half. The larger half is willingness to take responsibility rather than to endorse. A board of enthusiastic supporters who don't attend meetings is worse than no board at all — it produces the appearance of governance without the substance, which is precisely the failure mode these frameworks are written against. It would be a poor start to reproduce it in the first structure built on them.
+
+## What you would actually be joining
+
+The honest inventory: a large body of written work spanning dozens of interlinked frameworks, stress-tested extensively in argument but tested almost nowhere in practice. No funding. No staff. One active contributor. A small and very new community. Some early outreach conversations, and one municipal pilot being explored.
+
+That is the whole picture. Nothing here is hidden behind an institutional voice.
+
+If that reads as a reason to walk away, that's a reasonable response, and no argument will be made against it. If it reads as an opening — early enough that showing up shapes what the thing becomes rather than joining something already decided — then the conversation is worth having.
+
+## Getting in touch
+
+Email **globalgovernanceframeworks@gmail.com** with the subject **Founding**, or use the contact page. Questions and scepticism are as welcome as offers; working out whether this should be an organization at all is part of the discussion, not a settled matter.

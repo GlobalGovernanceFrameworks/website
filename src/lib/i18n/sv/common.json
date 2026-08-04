@@ -20,10 +20,10 @@
     }
   },
   "discord": {
-    "title": "Gå med i GGF-gemenskapen",
-    "description": "Träffa andra som bidrar, ställ frågor, dela idéer och hjälp till att omsätta Global Governance Frameworks i praktiken.",
-    "button": "Gå med på Discord",
-    "inline": "Vill du diskutera ramverken, träffa andra som bidrar eller hitta ett sätt att hjälpa till?"
+    "title": "Frågor? Fråga i Discord",
+    "description": "En liten, öppen server för dig som arbetar med ramverken. Ställ en fråga, visa vad du bygger, eller titta bara på vad som pågår.",
+    "button": "Öppna Discord",
+    "inline": "Vill du hellre fråga en människa? Det finns en Discord-server."
   },
   "navigation": {
     "backToFrameworks": "Ramverksöversikt"

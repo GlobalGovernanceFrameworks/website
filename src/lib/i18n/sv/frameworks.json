@@ -1,13 +1,21 @@
 {
   "title": "Ramverksutveckling",
-  "subtitle": "Skapa styrningsramverk som möjliggör systeminteroperabilitet",
-  "heroIntro": "Gå med i vår gemenskap av ramverksutvecklare och hjälp till att skapa verktyg som möjliggör för olika styrsystem att kommunicera, samarbeta och utvecklas tillsammans.",
-  "getStarted": "Redo att bygga ramverk?",
-  "contributionProcessTitle": "Vår ramverksutvecklingsprocess utvecklas",
-  "contributionProcessText": "För att fokusera på att etablera vår formella organisation pausar vi tillfälligt våra realtidsgemenskapskanaler och reviderar våra ramverksutvecklingsguider. All ramverksutvecklingskoordinering hanteras för närvarande direkt på GitHub. Det här är den bästa platsen för att komma åt våra CONTRIBUTING.md-riktlinjer, granska befintliga ramverk, bidra med nya ramverk och samarbeta med andra utvecklare.",
-  "communityGitHubCTA": "Bidra på GitHub",
-  "caseStudies": "Visa fallstudier",
-  "caseStudiesDescription": "Utforska verkliga exempel på styrningsramverk i aktion och lär av implementeringserfarenheter.",
-  "errorTitle": "Ramverksguide inte tillgänglig",
-  "errorText": "Ramverksutvecklingsguiden kunde inte laddas. Försök igen senare eller kontakta vårt utvecklingsteam."
+  "subtitle": "Skriv, utmana och fördjupa styrningsramverken",
+  "heroIntro": "Det finns redan flera dussin ramverk här, och uppsättningen är bred snarare än djup. De mest användbara bidragen är oftast inte nya ramverk utan domänexpertis tillämpad på befintliga – inklusive att berätta för oss var de har fel.",
+
+  "loading": "Laddar guide...",
+
+  "languageFallback": {
+    "title": "Innehåll på ditt språk kommer snart",
+    "text": "Denna guide visas för närvarande på engelska tills översättningen är klar."
+  },
+
+  "errorTitle": "Guide inte tillgänglig",
+  "errorText": "Guiden för ramverksutveckling kunde inte laddas. Att läsa några befintliga ramverk är den bästa introduktionen under tiden.",
+
+  "githubRepo": "Visa GitHub-repositoryt",
+  "browseFrameworks": "Bläddra bland ramverken",
+
+  "getStarted": "Redo att börja?",
+  "getStartedText": "Läs två eller tre befintliga ramverk först, öppna sedan ett ärende eller ta upp det på Discord innan du skriver något mer omfattande. Det är mycket billigare att upptäcka scopekrockar i samtal än vid granskning."
 }

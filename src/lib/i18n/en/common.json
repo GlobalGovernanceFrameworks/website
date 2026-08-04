@@ -20,10 +20,10 @@
     }
   },
   "discord": {
-    "title": "Join the GGF community",
-    "description": "Meet contributors, ask questions, share ideas, and help turn the Global Governance Frameworks into practice.",
-    "button": "Join us on Discord",
-    "inline": "Want to discuss the frameworks, meet contributors, or find a place to help?"
+    "title": "Questions? Ask in Discord",
+    "description": "A small, open server for people working with these frameworks. Ask a question, share what you're building, or just see what's going on.",
+    "button": "Open Discord",
+    "inline": "Prefer to ask a person? There's a Discord server."
   },
   "navigation": {
     "backToFrameworks": "Frameworks Overview"

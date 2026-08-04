@@ -5,9 +5,11 @@
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
 
-  export let data;
+  // English translations imported directly as the SSR / pre-load fallback,
+  // replacing the old hand-maintained bilingual `fallbackText` object.
+  import enFallback from '$lib/i18n/en/getInvolved.json';
 
-  console.log('Founding page loading...');
+  export let data;
 
   $: currentLocale = $locale;
   
@@ -68,61 +70,20 @@
     }
   });
 
-  // Bilingual fallback text (same as before)
-  const fallbackText = {
-    en: {
-      title: 'Our Path to Formalization',
-      subtitle: 'Building a Durable Institution for Global Governance',
-      heroIntro: 'Join us in establishing a formal organization to carry forward the Global Governance Frameworks mission for generations to come.',
-      contactUs: 'Contact Us',
-      joinFounding: 'Become a Founding Member',
-      readMore: 'Read Full Details',
-      emailSubject: 'Founding Team Inquiry',
-      ctaTitle: 'Ready to Shape the Future?',
-      ctaDescription: 'Help us transition from a research project into a durable institution that can address humanity\'s most pressing global challenges.',
-      ctaContact: 'Join as Founding Member',
-      ctaLearn: 'Learn About Our Mission',
-      errorTitle: 'Content Not Available',
-      errorText: 'The founding information could not be loaded. Please contact us directly for more information.',
-      contactDescription: 'Get in touch to learn more about becoming a founding board member or offering professional advice.',
-      missionDescription: 'Explore our comprehensive frameworks and understand the vision we\'re working to institutionalize.',
-      contactLabel: 'Contact:',
-      subjectLabel: 'Subject:'
-    },
-    sv: {
-      title: 'Vår väg till formalisering',
-      subtitle: 'Att bygga en varaktig institution för global styrning',
-      heroIntro: 'Gå med oss i att etablera en formell organisation för att föra Global Governance Frameworks uppdrag framåt för kommande generationer.',
-      contactUs: 'Kontakta oss',
-      joinFounding: 'Bli grundande medlem',
-      readMore: 'Läs fullständiga detaljer',
-      emailSubject: 'Förfrågan om grundande team',
-      ctaTitle: 'Redo att forma framtiden?',
-      ctaDescription: 'Hjälp oss att övergå från ett forskningsprojekt till en varaktig institution som kan hantera mänsklighetens mest angelägna globala utmaningar.',
-      ctaContact: 'Gå med som grundande medlem',
-      ctaLearn: 'Lär dig om vårt uppdrag',
-      errorTitle: 'Innehåll inte tillgängligt',
-      errorText: 'Grundningsinformationen kunde inte laddas. Vänligen kontakta oss direkt för mer information.',
-      contactDescription: 'Hör av dig för att lära dig mer om att bli en grundande styrelsemedlem eller erbjuda professionell rådgivning.',
-      missionDescription: 'Utforska våra omfattande ramverk och förstå visionen vi arbetar för att institutionalisera.',
-      contactLabel: 'Kontakt:',
-      subjectLabel: 'Ämne:'
-    }
-  };
+  // Walk a dot-path through the English fallback object.
+  function fromFallback(key) {
+    return key
+      .split('.')
+      .reduce((acc, part) => (acc && part in acc ? acc[part] : null), enFallback.foundingPage);
+  }
 
-  // Simple text function with language support
+  // Resolve a key: live translation first, English fallback second.
+  // `$t` returns '' both while translations load and when a key is missing,
+  // so the fallback covers first paint and untranslated locales alike.
   function getText(key) {
-    // Try the translation system first
-    let value = $t(`founding.${key}`);
-   
-    // If we get a value that's not just the key, use it
-    if (value && value !== '' && value !== `founding.${key}`) {
-      return value;
-    }
-    
-    // Fallback to language-specific text
-    const langTexts = fallbackText[currentLocale] || fallbackText.en;
-    return langTexts[key] || fallbackText.en[key] || key;
+    const value = $t(`getInvolved.foundingPage.${key}`);
+    if (value) return value;
+    return fromFallback(key) || '';
   }
 
   function contactUs() {
@@ -158,8 +119,8 @@
       <div class="language-fallback-notice">
         <div class="notice-icon">🌐</div>
         <div class="notice-content">
-          <strong>{currentLocale === 'sv' ? 'Innehåll på svenska kommer snart' : 'Content in your language coming soon'}</strong>
-          <p>{currentLocale === 'sv' ? 'Detta avsnitt visas för närvarande på engelska tills den svenska översättningen är klar.' : 'This section is currently displayed in English until translation is complete.'}</p>
+          <strong>{getText('languageFallback.title')}</strong>
+          <p>{getText('languageFallback.text')}</p>
         </div>
       </div>
     {/if}
@@ -168,7 +129,7 @@
     <div class="main-content">
       {#if isLoading}
         <div class="loading-state">
-          <p>Loading content...</p>
+          <p>{getText('loading')}</p>
         </div>
       {:else if loadError}
         <div class="error-state">
@@ -191,7 +152,6 @@
       {/if}
     </div>
 
-    <!-- Rest of the component stays the same -->
     <!-- Call to Action Section -->
     <div class="cta-section">
       <div class="cta-content">
