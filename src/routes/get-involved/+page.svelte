@@ -5,6 +5,7 @@
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import { afterNavigate } from '$app/navigation';
+  import DiscordInvite from '$lib/components/DiscordInvite.svelte';
 
   console.log('Get involved hub page loading...');
 
@@ -378,6 +379,7 @@
       <h2>{$t('getInvolved.getStarted.title') || getText('getStarted')}</h2>
       <p>{$t('getInvolved.getStarted.paragraph1')}</p>
       <p>{$t('getInvolved.getStarted.paragraph2')}</p>
+      <DiscordInvite variant="card" />
       <div class="action-buttons">
         <a href="{base}/contact" class="action-button primary">
           {$t('getInvolved.getStarted.contactCta')}

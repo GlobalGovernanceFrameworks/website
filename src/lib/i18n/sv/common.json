@@ -19,6 +19,12 @@
       }
     }
   },
+  "discord": {
+    "title": "Gå med i GGF-gemenskapen",
+    "description": "Träffa andra som bidrar, ställ frågor, dela idéer och hjälp till att omsätta Global Governance Frameworks i praktiken.",
+    "button": "Gå med på Discord",
+    "inline": "Vill du diskutera ramverken, träffa andra som bidrar eller hitta ett sätt att hjälpa till?"
+  },
   "navigation": {
     "backToFrameworks": "Ramverksöversikt"
   },

@@ -19,6 +19,12 @@
        }
     }
   },
+  "discord": {
+    "title": "Join the GGF community",
+    "description": "Meet contributors, ask questions, share ideas, and help turn the Global Governance Frameworks into practice.",
+    "button": "Join us on Discord",
+    "inline": "Want to discuss the frameworks, meet contributors, or find a place to help?"
+  },
   "navigation": {
     "backToFrameworks": "Frameworks Overview"
   },
