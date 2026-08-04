@@ -7,7 +7,7 @@
     "title": "Gå med i vår gemenskap",
     "description": "Anslut med likasinnade individer, dela idéer och håll dig uppdaterad om den senaste utvecklingen inom global styrning.",
     "button": "Gå med i Discord",
-    "inviteLink": "https://discord.gg/Zx4hMJf4JU"
+    "inviteLink": "https://discord.gg/tHddm5hwm9"
   },
   "getInTouch": {
     "title": "Ta kontakt",
@@ -46,8 +46,13 @@
           "collaboration": "Samarbete",
           "feature": "Funktionsförslag",
           "report": "Rapport om de första 100 dagarna",
-          "funding": "Finansiering / stöd"
+          "funding": "Finansiering / stöd",
+          "other": "Något annat"
         }
+      },
+      "customSubject": {
+        "label": "Ditt ämne",
+        "placeholder": "Vad gäller det?"
       },
       "message": {
         "label": "Meddelande",

@@ -1,31 +1,48 @@
 <!-- src/routes/contact/+page.svelte -->
 <script>
   import { t } from '$lib/i18n';
-  import { page } from '$app/stores'; // <-- Add this import
+  import { page } from '$app/stores';
+
+  const SUBJECT_KEYS = ['general', 'feedback', 'collaboration', 'feature', 'report', 'funding'];
 
   let name = '';
   let email = '';
   let message = '';
   let subject = 'general';
+  let customSubject = '';
   let isSubmitting = false;
   let submitSuccess = false;
   let submitError = false;
-  const FORMSPREE_ID = "xldjbjgl"; // [cite: 3]
+  const FORMSPREE_ID = "xldjbjgl";
 
-  $: {
-    const paramSubject = $page.url.searchParams.get('subject');
-    if (paramSubject) {
-      // Map "Funding Pledge" (from url) to "funding" (value in select)
-      if (paramSubject.toLowerCase().includes('funding')) {
-        subject = 'funding';
-      } else {
-        // Try to match other params directly (e.g. ?subject=collaboration)
-        subject = paramSubject.toLowerCase();
-      }
+  // Read once at init rather than in a reactive block, so a later store update
+  // can't overwrite what the person has since chosen in the select.
+  const paramSubject = $page.url.searchParams.get('subject');
+
+  if (paramSubject) {
+    const normalized = paramSubject.trim().toLowerCase();
+    // Exact key first, then substring (keeps "Funding Pledge" -> funding working)
+    const match =
+      SUBJECT_KEYS.find((key) => normalized === key) ||
+      SUBJECT_KEYS.find((key) => normalized.includes(key));
+
+    if (match) {
+      subject = match;
+    } else {
+      // Anything unrecognised becomes a free-text subject, prefilled and editable
+      subject = 'other';
+      customSubject = paramSubject.trim();
     }
   }
 
+  $: isCustom = subject === 'other';
+  $: resolvedSubject = isCustom
+    ? customSubject.trim()
+    : $t(`contact.form.fields.subject.options.${subject}`);
+
   async function handleSubmit() {
+    if (isCustom && !customSubject.trim()) return;
+
     isSubmitting = true;
     submitSuccess = false;
     submitError = false;
@@ -33,14 +50,23 @@
       const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, subject, message })
+        body: JSON.stringify({
+          name,
+          email,
+          subject: resolvedSubject,
+          subjectKey: subject,
+          message,
+          // Formspree uses _subject for the notification email's subject line
+          _subject: `[GGF] ${resolvedSubject}`
+        })
       });
       if (response.ok) {
         submitSuccess = true;
         name = '';
         email = '';
         message = '';
-        subject = 'general'; // Reset to general after success
+        subject = 'general';
+        customSubject = '';
       } else {
         submitError = true;
       }
@@ -69,8 +95,57 @@
 <section style="padding: 4rem 0; background-color: #F4E5D4;">
   <div style="max-width: 900px; margin: auto; padding: 0 1rem;">
     <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
-      
-      <!-- Discord Card 
+
+      <!-- Contact Form -->
+      <form on:submit|preventDefault={handleSubmit} style="background: #FFF3E0; padding: 2rem; border-radius: 10px; width: 100%; max-width: 600px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+        <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; color: #4A3228;">{$t('contact.form.title')}</h2>
+        {#if submitSuccess}
+          <p style="color: #2D6A4F; background: #A3B18A; padding: 1rem; border-radius: 8px;">{$t('contact.form.success')}</p>
+        {/if}
+        {#if submitError}
+          <p style="color: #8B0000; background: #F28F8F; padding: 1rem; border-radius: 8px;">{$t('contact.form.error')}</p>
+        {/if}
+
+        <label for="contact-name" style="display: block; margin-bottom: 0.5rem; color: #4A3228;">{$t('contact.form.fields.name.label')}</label>
+        <input id="contact-name" type="text" bind:value={name} required style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;">
+
+        <label for="contact-email" style="display: block; margin-top: 1rem; color: #4A3228;">{$t('contact.form.fields.email.label')}</label>
+        <input id="contact-email" type="email" bind:value={email} required style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;">
+
+        <label for="contact-subject" style="display: block; margin-top: 1rem; color: #4A3228;">
+          {$t('contact.form.fields.subject.label')}
+        </label>
+        <select id="contact-subject" bind:value={subject} style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;">
+          {#each SUBJECT_KEYS as key}
+            <option value={key}>{$t(`contact.form.fields.subject.options.${key}`)}</option>
+          {/each}
+          <option value="other">{$t('contact.form.fields.subject.options.other')}</option>
+        </select>
+
+        {#if isCustom}
+          <label for="contact-custom-subject" style="display: block; margin-top: 1rem; color: #4A3228;">
+            {$t('contact.form.fields.customSubject.label')}
+          </label>
+          <input
+            id="contact-custom-subject"
+            type="text"
+            bind:value={customSubject}
+            required
+            maxlength="120"
+            placeholder={$t('contact.form.fields.customSubject.placeholder')}
+            style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;"
+          >
+        {/if}
+
+        <label for="contact-message" style="display: block; margin-top: 1rem; color: #4A3228;">{$t('contact.form.fields.message.label')}</label>
+        <textarea id="contact-message" bind:value={message} required rows="5" style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;"></textarea>
+
+        <button type="submit" disabled={isSubmitting} style="width: 100%; background-color: #6B5CA5; color: #FFF3E0; font-weight: 700; padding: 1rem; border-radius: 10px; margin-top: 1rem; border: none; cursor: pointer; transition: 0.2s;">
+          {isSubmitting ? $t('contact.form.sending') : $t('contact.form.submit')}
+        </button>
+      </form>
+
+      <!-- Discord Card -->
       <div style="background: linear-gradient(135deg, #5865F2, #4752C4); padding: 2rem; border-radius: 15px; width: 100%; max-width: 600px; box-shadow: 0px 6px 20px rgba(88, 101, 242, 0.3); color: white; text-align: center;">
         <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
@@ -79,7 +154,7 @@
           <h2 style="font-size: 1.75rem; font-weight: 700; margin: 0;">{$t('contact.discord.title')}</h2>
         </div>
         <p style="font-size: 1.1rem; margin-bottom: 1.5rem; opacity: 0.9;">{$t('contact.discord.description')}</p>
-        <a href="{$t('contact.discord.inviteLink')}" target="_blank" rel="noopener noreferrer" 
+        <a href="{$t('contact.discord.inviteLink')}" target="_blank" rel="noopener noreferrer"
            style="background: white; color: #5865F2; padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 1rem; display: inline-block; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
            on:mouseenter={(e) => {
              e.target.style.transform = 'translateY(-2px)';
@@ -91,41 +166,7 @@
            }}>
           {$t('contact.discord.button')}
         </a>
-      </div> -->
-
-      <!-- Contact Form -->
-      <form on:submit|preventDefault={handleSubmit} style="background: #FFF3E0; padding: 2rem; border-radius: 10px; width: 100%; max-width: 600px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
-        <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; color: #4A3228;">{$t('contact.form.title')}</h2>
-        {#if submitSuccess}
-          <p style="color: #2D6A4F; background: #A3B18A; padding: 1rem; border-radius: 8px;">{$t('contact.form.success')}</p>
-        {/if}
-        {#if submitError}
-          <p style="color: #8B0000; background: #F28F8F; padding: 1rem; border-radius: 8px;">{$t('contact.form.error')}</p>
-        {/if}
-        <label style="display: block; margin-bottom: 0.5rem; color: #4A3228;">{$t('contact.form.fields.name.label')}</label>
-        <input type="text" bind:value={name} required style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;">
-
-        <label style="display: block; margin-top: 1rem; color: #4A3228;">{$t('contact.form.fields.email.label')}</label>
-        <input type="email" bind:value={email} required style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;">
-
-        <label style="display: block; margin-top: 1rem; color: #4A3228;">
-          {$t('contact.form.fields.subject.label')}
-        </label>
-        <select bind:value={subject} style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;">
-          <option value="general">{$t('contact.form.fields.subject.options.general')}</option>
-          <option value="feedback">{$t('contact.form.fields.subject.options.feedback')}</option>
-          <option value="collaboration">{$t('contact.form.fields.subject.options.collaboration')}</option>
-          <option value="report">{$t('contact.form.fields.subject.options.report')}</option>
-          <option value="funding">{$t('contact.form.fields.subject.options.funding') || 'Funding / Support'}</option>
-        </select>
-
-        <label style="display: block; margin-top: 1rem; color: #4A3228;">{$t('contact.form.fields.message.label')}</label>
-        <textarea bind:value={message} required rows="5" style="width: 100%; padding: 0.75rem; border: 1px solid #A3B18A; border-radius: 5px;"></textarea>
-
-        <button type="submit" disabled={isSubmitting} style="width: 100%; background-color: #6B5CA5; color: #FFF3E0; font-weight: 700; padding: 1rem; border-radius: 10px; margin-top: 1rem; border: none; cursor: pointer; transition: 0.2s;">
-          {isSubmitting ? $t('contact.form.sending') : $t('contact.form.submit')}
-        </button>
-      </form>
+      </div> 
     </div>
   </div>
 </section>

@@ -7,7 +7,7 @@
     "title": "Join Our Community",
     "description": "Connect with like-minded individuals, share ideas, and stay updated on the latest developments in global governance.",
     "button": "Join Discord",
-    "inviteLink": "https://discord.gg/Zx4hMJf4JU"
+    "inviteLink": "https://discord.gg/tHddm5hwm9"
   },
   "getInTouch": {
     "title": "Get in Touch",
@@ -46,8 +46,13 @@
           "collaboration": "Collaboration",
           "feature": "Feature Request",
           "report": "First 100 Days Report",
-          "funding": "Funding / Support"
+          "funding": "Funding / Support",
+          "other": "Something else"
         }
+      },
+      "customSubject": {
+        "label": "Your subject",
+        "placeholder": "What's this about?"
       },
       "message": {
         "label": "Message",

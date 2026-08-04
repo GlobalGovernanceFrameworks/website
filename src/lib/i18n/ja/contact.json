@@ -7,7 +7,7 @@
     "title": "コミュニティに参加する",
     "description": "志を同じくする人々とつながり、アイデアを共有し、グローバルガバナンスの最新動向について情報を得ましょう。",
     "button": "Discordに参加",
-    "inviteLink": "https://discord.gg/Zx4hMJf4JU"
+    "inviteLink": "https://discord.gg/tHddm5hwm9"
   },
   "getInTouch": {
     "title": "お問い合わせ",
@@ -46,8 +46,13 @@
           "collaboration": "コラボレーション",
           "feature": "機能リクエスト",
           "report": "最初の100日レポート",
-          "funding": "資金提供 / サポート"
+          "funding": "資金提供 / サポート",
+          "other": "その他"
         }
+      },
+      "customSubject": {
+        "label": "件名",
+        "placeholder": "ご用件をご記入ください"
       },
       "message": {
         "label": "メッセージ",
