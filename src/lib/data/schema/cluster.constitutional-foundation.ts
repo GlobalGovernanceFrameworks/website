@@ -11,13 +11,15 @@ import type { GgfEntity, GgfRelationship } from './_types';
  *
  * ARCHITECTURAL CHANGE AT v1.3. The Treaty was restructured from a Pillar model
  * built around UN reform into 25 Articles built around conferred competence and
- * reserved powers. It no longer names a Reformed Security Council, a Reformed
- * General Assembly, or a standing Global Enforcement Mechanism. Their functions
- * are now carried by the Assembly of Parties (Art 8), the Peoples' Chamber
- * (Art 9), and a graduated compliance sequence (Art 16), with UN reform itself
- * demoted to a transition question (Art 23). The three superseded entities are
- * retained and reframed rather than deleted — `institution_gem` in particular is
- * still referenced by four other clusters — but they need a decision.
+ * reserved powers. Article 16 uses graduated compliance, adjudication and
+ * separately chartered corps rather than a standing global enforcement body.
+ * Article 23 treats UN reform as an external advocacy objective. Superseded
+ * entities remain resolvable as retired history, while external UN reform targets
+ * remain reference nodes outside the GGF tier structure.
+ *
+ * UNRESOLVED. Article 16 does not yet specify what follows when no competent
+ * authority accepts a lawful enforcement request. This migration records no
+ * fallback authority and must not be read as silently recreating one.
  */
 
 export const constitutionalFoundationEntities: GgfEntity[] = [
@@ -165,15 +167,20 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
     name: 'Global Enforcement Mechanism',
     shortName: 'GEM',
     description:
-      'Enforcement arm acting on tribunal rulings. NOTE: Treaty v1.3 does not name a standing enforcement mechanism; Article 16 sets out a graduated compliance sequence beginning with notice, disclosure and affected-authority response. Retained because four other clusters reference GEM. Needs a decision.',
+      'Retired historical enforcement model. Treaty v1.3 Article 16 replaces a standing global enforcement institution with graduated compliance, Tribunal adjudication, competent-jurisdiction execution, and separately chartered corps subject to deployment-specific authorization.',
     tier: 0,
-    status: 'Proposed',
+    status: 'Retired',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
-    implementationPriority: 'Critical',
+    implementationPriority: 'Low',
     dependencies: ['framework_treaty'],
-    enables: [
-      'institution_getf' // cluster: justice-os
+    retired: {
+      by: 'treaty-v1.3',
+      section: 'Art. 16',
+      date: '2026-08-01'
+    },
+    establishmentExclusions: [
+      { framework: 'framework_treaty', by: 'treaty-v1.3', section: 'Art. 16' }
     ]
   },
   {
@@ -218,13 +225,12 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
     name: 'Reformed UN Security Council',
     shortName: 'Reformed UNSC',
     description:
-      'UNSC with tiered veto override and expanded membership. SUPERSEDED: Treaty v1.3 no longer names this body. Article 23 treats UN reform as a transition question rather than a constitutional component.',
-    tier: 0,
+      'External UN reform objective under Treaty v1.3 Article 23.3. The Parties may advocate Security Council reform, but the Treaty does not establish, govern, or presume adoption by the UNSC.',
     status: 'Proposed',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
-    implementationPriority: 'Low',
-    dependencies: ['framework_treaty']
+    ecosystem: 'External',
+    implementationPriority: 'Low'
   },
   {
     id: 'institution_unga_reformed',
@@ -232,13 +238,12 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
     name: 'Reformed UN General Assembly',
     shortName: 'Reformed UNGA',
     description:
-      'UNGA with binding resolution powers on crises. SUPERSEDED: its function is now carried by the Assembly of Parties (Art 8) and the Peoples\' Chamber (Art 9). Retained pending a decision on whether to delete or keep as a transition target.',
-    tier: 0,
+      'External UN reform objective under Treaty v1.3 Article 23.3. The Parties may advocate General Assembly reform, but the Treaty does not establish, govern, or presume adoption by the UNGA.',
     status: 'Proposed',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
-    implementationPriority: 'Low',
-    dependencies: ['framework_treaty']
+    ecosystem: 'External',
+    implementationPriority: 'Low'
   },
 
   // === GENESIS PROTOCOL ===
@@ -392,18 +397,6 @@ export const constitutionalFoundationRelationships: GgfRelationship[] = [
     frequency: 'Continuous',
     sequenceType: 'Sequential'
   },
-  {
-    from: 'framework_treaty',
-    to: 'institution_gem',
-    type: 'ESTABLISHES',
-    // v1.3 replaces a standing enforcement arm with the Article 16 graduated
-    // compliance sequence. Retained pending a decision on GEM's future.
-    description:
-      'Enforcement follows from Article 16 compliance procedures rather than from a standing corps.',
-    strength: 'Medium',
-    frequency: 'As-Needed',
-    sequenceType: 'Conditional'
-  },
 
   // --- decision-making between the chambers ------------------------------
   {
@@ -450,15 +443,6 @@ export const constitutionalFoundationRelationships: GgfRelationship[] = [
     to: 'framework_treaty',
     type: 'ENFORCES',
     description: 'The Tribunal adjudicates against the Treaty\'s own terms.',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'institution_gem',
-    to: 'institution_dj_tribunal',
-    type: 'REPORTS_TO',
-    description: 'The enforcement arm acts on the rulings of the judicial arm, never ahead of them.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
@@ -510,7 +494,7 @@ export const constitutionalFoundationRelationships: GgfRelationship[] = [
     type: 'COORDINATES_WITH',
     // was ESTABLISHES — v1.3 demotes UN reform to Article 23 transition
     description:
-      'Article 23 treats reform of existing UN bodies as a transition pathway proposed to them, not as something the Treaty constitutes.',
+      "Article 23.3 treats UNGA reform as external advocacy. Coordination here means proposing reform through the UNGA\'s own applicable legal procedures, not constituting a Treaty organ.",
     strength: 'Weak',
     frequency: 'As-Needed',
     sequenceType: 'Parallel'
@@ -520,7 +504,7 @@ export const constitutionalFoundationRelationships: GgfRelationship[] = [
     to: 'institution_unsc_reformed',
     type: 'COORDINATES_WITH',
     description:
-      'As above: a reform proposal directed at an existing institution rather than a Treaty organ.',
+      "Article 23.3 treats UNSC reform as external advocacy through the Security Council and UN Charter system\'s own applicable legal procedures.",
     strength: 'Weak',
     frequency: 'As-Needed',
     sequenceType: 'Parallel'

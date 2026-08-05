@@ -10,12 +10,11 @@ import type { GgfEntity, GgfRelationship } from './_types';
  *
  * Conventions: see cluster.implementation-os.ts.
  *
- * OPEN QUESTION. Aegis v1.3.4 was rewritten as a set of interoperable
- * interfaces with a very long non-authority section. Two institutions the schema
- * says it establishes barely survive that rewrite: `institution_gset` is named
- * once, and `council_toc` is not named at all. The Earth Defense Force is still
- * there. Both are flagged in their descriptions rather than removed, because
- * Financial Systems also references GSET.
+ * Aegis v1.3.4 was rewritten as interoperable, non-authorizing interfaces.
+ * `institution_gset` is named only once and `council_toc` is absent from the
+ * current outline, so both remain flagged for review. Section 8.2 explicitly
+ * states that Aegis does not create an Earth Defense Force; EDF is therefore
+ * retained only as a retired historical entity.
  */
 
 export const justTransitionEntities: GgfEntity[] = [
@@ -51,8 +50,7 @@ export const justTransitionEntities: GgfEntity[] = [
     enables: [
       'institution_gset',
       'institution_cto',
-      'council_toc',
-      'institution_edf'
+      'council_toc'
     ],
     ui: {
       path: '/frameworks/aegis-protocol',
@@ -115,13 +113,22 @@ export const justTransitionEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Earth Defense Force',
     shortName: 'EDF',
-    description: 'A coordinated force for planetary guardianship, engaging major powers in shared missions like cosmic threat defense and climate security.',
+    description:
+      'Retired historical force concept. Aegis v1.3.4 Section 8.2 explicitly states that the Protocol does not create an Earth Defense Force and instead governs voluntary capability transition and purpose-limited civilian conversion.',
     tier: 1,
-    status: 'Proposed',
+    status: 'Retired',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
-    implementationPriority: 'Critical',
-    dependencies: ['framework_aegis_protocol', 'institution_unsc_reformed']
+    implementationPriority: 'Low',
+    dependencies: ['framework_aegis_protocol'],
+    retired: {
+      by: 'aegis-v1.3.4',
+      section: '§8.2',
+      date: '2026-08-02'
+    },
+    establishmentExclusions: [
+      { framework: 'framework_aegis_protocol', by: 'aegis-v1.3.4', section: '§8.2' }
+    ]
   },
 
   /**
@@ -331,7 +338,6 @@ export const justTransitionRelationships: GgfRelationship[] = [
   { from: 'framework_aegis_protocol', to: 'institution_gset', type: 'ESTABLISHES' },
   { from: 'framework_aegis_protocol', to: 'institution_cto', type: 'ESTABLISHES' },
   { from: 'framework_aegis_protocol', to: 'council_toc', type: 'ESTABLISHES' },
-  { from: 'framework_aegis_protocol', to: 'institution_edf', type: 'ESTABLISHES' },
 
   // === CONNECTIONS TO OTHER GGF FRAMEWORKS ===
   {

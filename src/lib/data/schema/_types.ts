@@ -90,6 +90,32 @@ export type Maturity = keyof typeof MATURITY;
 
 
 /**
+ * Records that a current canonical framework revision retired an entity.
+ * Retired entities remain resolvable for historical references, but are not
+ * operative graph nodes and must not receive new inbound relationships.
+ */
+export interface EntityRetirement {
+  /** Canonical document/version that retired it, e.g. 'shield-v2.0.1'. */
+  by: string;
+  /** Article or section reference in the retiring document. */
+  section?: string;
+  /** Entity ID now performing the function, where there is one successor. */
+  supersededBy?: string;
+  /** ISO date of the retiring revision. */
+  date: string;
+}
+
+/**
+ * A source-level prohibition on treating a framework as the entity's creator.
+ * This makes explicit non-creation clauses machine-checkable.
+ */
+export interface EstablishmentExclusion {
+  framework: string;
+  by: string;
+  section?: string;
+}
+
+/**
  * Core type definitions for the GGF Schema modular system
  */
 
@@ -103,9 +129,16 @@ export interface GgfEntity {
   description?: string;
   // Strategic tier system (0-4)
   tier?: 0 | 1 | 2 | 3 | 4;
-  status?: 'Draft' | 'Pilot' | 'Implemented' | 'Proposed' | 'Ready' | 'Review' | 'Planned' | 'Coming-Soon' | 'Active';
+  /** Current presentation/lifecycle state. `Retired` must be accompanied by retirement provenance. */
+  status?: 'Draft' | 'Pilot' | 'Implemented' | 'Proposed' | 'Ready' | 'Review' | 'Planned' | 'Coming-Soon' | 'Active' | 'Retired';
   primaryDomain?: 'Ecological' | 'Economic' | 'Justice' | 'Governance' | 'Technology' | 'Health' | 'Ethics';
   geographicScope?: 'Local' | 'Regional' | 'Global' | 'BAZ' | 'Bioregional' | 'Institutional';
+  /** Defaults to GGF. External entities are reference targets, not GGF organs. */
+  ecosystem?: 'GGF' | 'External';
+  /** Present when a current canonical revision has retired this entity. */
+  retired?: EntityRetirement;
+  /** Frameworks whose current canonical text explicitly does not create it. */
+  establishmentExclusions?: EstablishmentExclusion[];
   // Strategic metadata
   implementationPriority?: 'Critical' | 'High' | 'Medium' | 'Low';
   dependencies?: string[]; // Array of entity IDs this depends on

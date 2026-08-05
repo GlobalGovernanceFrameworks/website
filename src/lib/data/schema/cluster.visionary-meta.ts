@@ -353,15 +353,6 @@ export const visionaryMetaRelationships: GgfRelationship[] = [
   // === CROSS-SYSTEM COORDINATION ===
   {
     from: 'framework_planetary_immune_system',
-    to: 'institution_gem',
-    type: 'ESCALATES_TO',
-    description: 'Refers enforcement questions to the body that lawfully holds enforcement power. v2.2.2 is not an authorization to deploy, enter territory, access systems, compel work, or redirect assets.',
-    strength: 'Strong',
-    frequency: 'Crisis-Only',
-    sequenceType: 'Conditional'
-  },
-  {
-    from: 'framework_planetary_immune_system',
     to: 'framework_shield',
     type: 'COORDINATES_WITH',
     description: 'PIS coordinates with Shield Protocol when existential threats involve criminal networks',

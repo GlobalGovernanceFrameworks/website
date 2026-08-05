@@ -107,7 +107,8 @@ const crossClusterRelationships: GgfRelationship[] = [
     from: 'framework_meta_gov',
     to: 'framework_planetary_immune_system',
     type: 'ENABLES',
-    description: 'Meta-Governance enables system-level crisis override capabilities',
+    description:
+      'Meta-Governance supplies coordination, shared situational awareness and rights-bounded crisis procedures for PIS; it creates no system-level override authority.',
     strength: 'Strong',
     frequency: 'Crisis-Only',
     sequenceType: 'Sequential'
@@ -191,6 +192,12 @@ export const allRelationships: GgfRelationship[] = [
 ];
 
 // === CLUSTER DEFINITIONS ===
+// Retired entities remain in allEntities for historical resolution, but live
+// consumers such as clusters, navigation, implementation sequences, and
+// critical-path views must not surface them as operative nodes.
+const liveEntityIds = (entities: GgfEntity[]): string[] =>
+  entities.filter(entity => !entity.retired).map(entity => entity.id);
+
 export const clusters: GgfCluster[] = [
   // TIER 0: CONSTITUTIONAL LAYER
   {
@@ -198,7 +205,7 @@ export const clusters: GgfCluster[] = [
     name: 'Constitutional Foundation',
     description: 'The Treaty for Our Only Home - the singular constitutional framework that enables all others',
     tier: 0,
-    entities: constitutionalFoundationEntities.map(e => e.id),
+    entities: liveEntityIds(constitutionalFoundationEntities),
     color: '#1e1b4b'
   },
 
@@ -221,7 +228,7 @@ export const clusters: GgfCluster[] = [
     name: 'Just Transition System (Security)',
     description: 'The Aegis Protocol: A framework for transitioning the military-industrial complex into a regenerative global security architecture.',
     tier: 1,
-    entities: justTransitionEntities.filter(e => e.tier === 1).map(e => e.id),
+    entities: liveEntityIds(justTransitionEntities.filter(e => e.tier === 1)),
     color: '#7c3aed' // Purple for Tier 1
   },
   {
@@ -229,7 +236,7 @@ export const clusters: GgfCluster[] = [
     name: 'Institutional Regeneration System',
     description: 'Practical framework for transforming existing global governance institutions from bureaucratic inertia to agile, mission-driven service',
     tier: 1,
-    entities: institutionalRegenerationEntities.map(e => e.id),
+    entities: liveEntityIds(institutionalRegenerationEntities),
     color: '#7c3aed'
   },
   {
@@ -237,7 +244,7 @@ export const clusters: GgfCluster[] = [
     name: 'Governance Operating System',
     description: 'Meta-Governance: The nervous system coordinating all other frameworks',
     tier: 1,
-    entities: governanceOSEntities.map(e => e.id),
+    entities: liveEntityIds(governanceOSEntities),
     color: '#7c3aed'
   },
   {
@@ -245,7 +252,7 @@ export const clusters: GgfCluster[] = [
     name: 'Ethical Operating System',
     description: 'Indigenous Framework: The heart providing ethical compass and philosophical foundation',
     tier: 1,
-    entities: ethicalOSEntities.map(e => e.id),
+    entities: liveEntityIds(ethicalOSEntities),
     color: '#7c3aed'
   },
   {
@@ -253,7 +260,7 @@ export const clusters: GgfCluster[] = [
     name: 'Justice Operating System',
     description: 'Justice & Peace: Rule of law infrastructure for the entire ecosystem',
     tier: 1,
-    entities: justiceOSEntities.map(e => e.id),
+    entities: liveEntityIds(justiceOSEntities),
     color: '#7c3aed'
   },
   {
@@ -261,7 +268,7 @@ export const clusters: GgfCluster[] = [
     name: 'Economic Operating System',
     description: 'Regenerative Economy: Core economic engine with Hearts/Leaves, Love Ledger, and AUBI',
     tier: 1,
-    entities: economicOSEntities.map(e => e.id),
+    entities: liveEntityIds(economicOSEntities),
     color: '#7c3aed'
   },
   {
@@ -269,7 +276,7 @@ export const clusters: GgfCluster[] = [
     name: 'Data Operating System',
     description: 'Aurora Accord: Digital-first world data governance rules',
     tier: 1,
-    entities: dataOSEntities.map(e => e.id),
+    entities: liveEntityIds(dataOSEntities),
     color: '#7c3aed'
   },
   {
@@ -277,7 +284,7 @@ export const clusters: GgfCluster[] = [
     name: 'Human Flourishing & Capability Systems',
     description: 'Core systems ensuring healthy, capable, and informed citizenry with epistemic integrity',
     tier: 2,
-    entities: humanFlourishingEntities.map(e => e.id),
+    entities: liveEntityIds(humanFlourishingEntities),
     color: '#059669'
   },
   {
@@ -285,7 +292,7 @@ export const clusters: GgfCluster[] = [
     name: 'Technology Operating System',
     description: 'Core technology governance with ethical AI, biotech, and digital systems oversight',
     tier: 1,
-    entities: technologyOSEntities.map(e => e.id),
+    entities: liveEntityIds(technologyOSEntities),
     color: '#7c3aed'
   },
 
@@ -295,7 +302,7 @@ export const clusters: GgfCluster[] = [
     name: 'Just Transition System (Industry)',
     description: 'The Sundown Protocol: A framework for retiring harmful industries and rebirthing regenerative futures.',
     tier: 2,
-    entities: justTransitionEntities.filter(e => e.tier === 2).map(e => e.id),
+    entities: liveEntityIds(justTransitionEntities.filter(e => e.tier === 2)),
     color: '#059669' // Green for Tier 2
   },
   {
@@ -303,7 +310,7 @@ export const clusters: GgfCluster[] = [
     name: 'Property & Stewardship Transition',
     description: 'The Hearthstone Protocol: The bridge from extractive ownership to regenerative stewardship.',
     tier: 2,
-    entities: hearthstoneEntities.map(e => e.id),
+    entities: liveEntityIds(hearthstoneEntities),
     color: '#059669'
   },
   {
@@ -311,7 +318,7 @@ export const clusters: GgfCluster[] = [
     name: 'Shared Infrastructure Systems',
     description: 'The Conduit Protocol: The circulatory system for a resilient planetary civilization.',
     tier: 2,
-    entities: conduitProtocolEntities.map(e => e.id),
+    entities: liveEntityIds(conduitProtocolEntities),
     color: '#059669' // Green for Tier 2
   },
   {
@@ -319,7 +326,7 @@ export const clusters: GgfCluster[] = [
     name: 'Pathfinder Protocol System',
     description: 'Voluntary framework for transforming corporate purpose to align with planetary well-being through systemic business model innovation',
     tier: 2,
-    entities: pathfinderProtocolEntities.map(e => e.id),
+    entities: liveEntityIds(pathfinderProtocolEntities),
     color: '#059669'
   },
   {
@@ -327,7 +334,7 @@ export const clusters: GgfCluster[] = [
     name: 'Ecological Life Support Systems',
     description: 'Core biophysical systems that sustain life on Earth - the heart of planetary stewardship',
     tier: 2,
-    entities: ecologicalEntities.map(e => e.id),
+    entities: liveEntityIds(ecologicalEntities),
     color: '#059669'
   },
   // TIER 3: EQUITY & CULTURAL SYSTEMS
@@ -336,7 +343,7 @@ export const clusters: GgfCluster[] = [
     name: 'Social Equity & Inclusion Systems',
     description: 'Frameworks ensuring deep equity, inclusion, and intersectional justice for all communities',
     tier: 3,
-    entities: socialEquityEntities.map(e => e.id),
+    entities: liveEntityIds(socialEquityEntities),
     color: '#dc2626'
   },
   {
@@ -344,7 +351,7 @@ export const clusters: GgfCluster[] = [
     name: 'Cultural & Knowledge Commons Systems',
     description: 'The "soul" of the GGF - heritage preservation, knowledge commons, and wisdom cultivation',
     tier: 3, // Primary tier, though spans 3-4
-    entities: culturalKnowledgeEntities.map(e => e.id),
+    entities: liveEntityIds(culturalKnowledgeEntities),
     color: '#dc2626'
   },
   {
@@ -353,8 +360,8 @@ export const clusters: GgfCluster[] = [
     description: 'Sustainable urban and rural development frameworks coordinating human settlements with ecological systems',
     tier: 3,
     entities: [
-      ...developmentEntities.map(e => e.id),
-      ...mobilityCommonsEntities.map(e => e.id)
+      ...liveEntityIds(developmentEntities),
+      ...liveEntityIds(mobilityCommonsEntities)
     ],
     color: '#dc2626'
   },
@@ -364,7 +371,7 @@ export const clusters: GgfCluster[] = [
     name: 'Visionary & Meta-Systems',
     description: 'Highest-level frameworks for future governance, existential risks, and system-wide implementation',
     tier: 4,
-    entities: visionaryMetaEntities.map(e => e.id),
+    entities: liveEntityIds(visionaryMetaEntities),
     color: '#0891b2'
   }
 ];
@@ -378,9 +385,18 @@ export type { GgfEntity, GgfRelationship, GgfCluster, ValidationResult };
 // Enhanced validation functions
 export function validateSchema(entities: GgfEntity[], relationships: GgfRelationship[]): ValidationResult {
   const entityIds = new Set(entities.map(e => e.id));
+  const entityById = new Map(entities.map(e => [e.id, e]));
+  const retiredIds = new Set(entities.filter(e => e.retired).map(e => e.id));
   const errors: string[] = [];
+  const creationImplyingTypes = new Set<GgfRelationship['type']>([
+    'ESTABLISHES',
+    'ENABLES',
+    'ACTIVATES',
+    'IMPLEMENTS',
+    'DELEGATES_TO'
+  ]);
   
-  // Check that all relationship endpoints exist
+  // Check endpoints, retirement boundaries, and explicit non-creation clauses.
   for (const rel of relationships) {
     if (!entityIds.has(rel.from)) {
       errors.push(`Relationship references unknown entity: ${rel.from}`);
@@ -388,13 +404,61 @@ export function validateSchema(entities: GgfEntity[], relationships: GgfRelation
     if (!entityIds.has(rel.to)) {
       errors.push(`Relationship references unknown entity: ${rel.to}`);
     }
+
+    if (retiredIds.has(rel.from)) {
+      errors.push(`Relationship originates from retired entity: ${rel.from} --${rel.type}--> ${rel.to}`);
+    }
+    if (retiredIds.has(rel.to)) {
+      errors.push(`Relationship points to retired entity: ${rel.from} --${rel.type}--> ${rel.to}`);
+    }
+
+    // Explicit non-creation clauses also block relationship types that can
+    // imply activation, delegation, or operational embodiment.
+    if (creationImplyingTypes.has(rel.type)) {
+      const target = entityById.get(rel.to);
+      const exclusion = target?.establishmentExclusions?.find(x => x.framework === rel.from);
+      if (exclusion) {
+        const source = exclusion.section
+          ? `${exclusion.by} ${exclusion.section}`
+          : exclusion.by;
+        errors.push(
+          `Prohibited creation-implying relationship: ${rel.from} --${rel.type}--> ${rel.to}; excluded by ${source}`
+        );
+      }
+    }
   }
   
-  // Check tier consistency - lower tiers shouldn't depend on higher tiers
+  // Retirement provenance and presentation status must agree so generic
+  // consumers cannot accidentally advertise retired institutions as live.
+  for (const entity of entities) {
+    if (entity.retired && entity.status !== 'Retired') {
+      errors.push(`${entity.id} has retirement provenance but status is ${entity.status ?? 'unset'}`);
+    }
+    if (entity.status === 'Retired' && !entity.retired) {
+      errors.push(`${entity.id} has status Retired but no retirement provenance`);
+    }
+  }
+
+  // Dependencies and enables arrays are live declarations and may not contain
+  // retired entities.
+  for (const entity of entities) {
+    for (const depId of entity.dependencies ?? []) {
+      if (retiredIds.has(depId)) {
+        errors.push(`${entity.id}.dependencies contains retired entity: ${depId}`);
+      }
+    }
+    for (const enabledId of entity.enables ?? []) {
+      if (retiredIds.has(enabledId)) {
+        errors.push(`${entity.id}.enables contains retired entity: ${enabledId}`);
+      }
+    }
+  }
+
+  // Check tier consistency - lower tiers shouldn't depend on higher tiers.
   for (const entity of entities) {
     if (entity.dependencies) {
       for (const depId of entity.dependencies) {
-        const dependency = entities.find(e => e.id === depId);
+        const dependency = entityById.get(depId);
         if (dependency && entity.tier !== undefined && dependency.tier !== undefined) {
           if (dependency.tier > entity.tier) {
             errors.push(`Tier violation: ${entity.name} (Tier ${entity.tier}) depends on ${dependency.name} (Tier ${dependency.tier})`);
@@ -410,8 +474,13 @@ export function validateSchema(entities: GgfEntity[], relationships: GgfRelation
   };
 }
 
-export function getEntitiesByTier(tier: 0 | 1 | 2 | 3 | 4): GgfEntity[] {
-  return allEntities.filter(entity => entity.tier === tier);
+export function getEntitiesByTier(
+  tier: 0 | 1 | 2 | 3 | 4,
+  options: { includeRetired?: boolean } = {}
+): GgfEntity[] {
+  return allEntities.filter(entity =>
+    entity.tier === tier && (options.includeRetired || !entity.retired)
+  );
 }
 
 /**
@@ -421,7 +490,7 @@ export function getEntitiesByTier(tier: 0 | 1 | 2 | 3 | 4): GgfEntity[] {
  * `publishedEntities` in outlineRegistry.js so nav and routes can't diverge.
  */
 export function getFrameworksWithUI(): GgfEntity[] {
-  return allEntities.filter((e) => e.ui?.slug && (e.ui.outline || e.ui.prose));
+  return allEntities.filter((e) => !e.retired && e.ui?.slug && (e.ui.outline || e.ui.prose));
 }
 
 export function getImplementationSequence(): GgfEntity[][] {
@@ -446,10 +515,12 @@ export function getImplementationSequence(): GgfEntity[][] {
 }
 
 export function getCriticalPath(): GgfEntity[] {
-  return allEntities.filter(entity => 
-    entity.implementationPriority === 'Critical' || 
-    entity.tier === 0 || 
-    (entity.tier === 1 && entity.primaryDomain === 'Governance')
+  return allEntities.filter(entity =>
+    !entity.retired && (
+      entity.implementationPriority === 'Critical' ||
+      entity.tier === 0 ||
+      (entity.tier === 1 && entity.primaryDomain === 'Governance')
+    )
   );
 }
 

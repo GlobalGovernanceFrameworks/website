@@ -216,7 +216,7 @@ export const justiceOSEntities: GgfEntity[] = [
       'protocol_scpa',
       'framework_justice'
     ],
-    enables: ['council_tsc', 'institution_gcic', 'institution_getf'],
+    enables: ['platform_federated_crime_exchange_nodes'],
     ui: {
       path: '/frameworks/shield-protocol',
       titleKey: 'framework.docs.nav.frameworkTitles.shieldProtocol',
@@ -238,13 +238,21 @@ export const justiceOSEntities: GgfEntity[] = [
     name: 'Transnational Security Council',
     shortName: 'Security Council',
     description:
-      'Specialized Meta-Governance council coordinating on transnational threats, bounded by the SCPA interface.',
+      'Retired historical operational-approval council. Shield v2.0.1 Section 21.3 removes the standing council model; coordination now occurs through existing competent authorities and purpose-limited cooperation records.',
     tier: 1,
-    status: 'Proposed',
+    status: 'Retired',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
-    implementationPriority: 'Critical',
-    dependencies: ['framework_shield']
+    implementationPriority: 'Low',
+    dependencies: ['framework_shield'],
+    retired: {
+      by: 'shield-v2.0.1',
+      section: '§21.3',
+      date: '2026-08-01'
+    },
+    establishmentExclusions: [
+      { framework: 'framework_shield', by: 'shield-v2.0.1', section: '§21.3' }
+    ]
   },
   {
     id: 'institution_gcic',
@@ -252,13 +260,36 @@ export const justiceOSEntities: GgfEntity[] = [
     name: 'Global Crime Intelligence Center',
     shortName: 'GCIC',
     description:
-      'Intelligence fusion and analysis hub for cross-border criminal threats. Analysis only; it holds no operational or arrest power.',
+      'Retired centralized intelligence-fusion model. Shield v2.0.1 Section 21.3 replaces it with federated, purpose-limited exchange nodes under participating authorities and SCPA constraints.',
+    tier: 1,
+    status: 'Retired',
+    primaryDomain: 'Justice',
+    geographicScope: 'Global',
+    implementationPriority: 'Low',
+    dependencies: ['framework_shield'],
+    retired: {
+      by: 'shield-v2.0.1',
+      section: '§21.3',
+      supersededBy: 'platform_federated_crime_exchange_nodes',
+      date: '2026-08-01'
+    },
+    establishmentExclusions: [
+      { framework: 'framework_shield', by: 'shield-v2.0.1', section: '§21.3' }
+    ]
+  },
+  {
+    id: 'platform_federated_crime_exchange_nodes',
+    type: 'Platform',
+    name: 'Federated Crime Information Exchange Nodes',
+    shortName: 'Federated Exchange Nodes',
+    description:
+      "Federated, purpose-limited nodes for lawful cross-border crime-information exchange under Shield v2.0.1. They replace GCIC\'s centralized fusion model, hold no independent intelligence or operational authority, and share only under applicable law, participating-node permissions, and SCPA safeguards.",
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
-    implementationPriority: 'Critical',
-    dependencies: ['framework_shield']
+    implementationPriority: 'High',
+    dependencies: ['framework_shield', 'protocol_scpa']
   },
   {
     id: 'institution_getf',
@@ -266,15 +297,20 @@ export const justiceOSEntities: GgfEntity[] = [
     name: 'Global Enforcement Task Force',
     shortName: 'GETF',
     description:
-      'Poly-jurisdictional operational support, acting on the authority of participating jurisdictions and tribunal rulings. Shield itself cannot authorize armed deployment, asset seizure, or compulsory sanction.',
+      'Retired standing-force model. Shield v2.0.1 Sections 12.1 and 21.3 state that Shield creates no standing force; operational assistance must instead come from competent jurisdictions or separately chartered corps under their own lawful authority.',
     tier: 1,
-    status: 'Proposed',
+    status: 'Retired',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
-    implementationPriority: 'Critical',
-    dependencies: [
-      'framework_shield',
-      'institution_gem' // cluster: constitutional-foundation
+    implementationPriority: 'Low',
+    dependencies: ['framework_shield'],
+    retired: {
+      by: 'shield-v2.0.1',
+      section: '§12.1; §21.3',
+      date: '2026-08-01'
+    },
+    establishmentExclusions: [
+      { framework: 'framework_shield', by: 'shield-v2.0.1', section: '§12.1; §21.3' }
     ]
   }
 ];
@@ -538,68 +574,13 @@ export const justiceOSRelationships: GgfRelationship[] = [
   // --- framework_shield ---------------------------------------------------
   {
     from: 'framework_shield',
-    to: 'council_tsc',
-    type: 'ESTABLISHES',
-    description: 'Establishes the Transnational Security Council as a coordination venue.',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Sequential'
-  },
-  {
-    from: 'framework_shield',
-    to: 'institution_gcic',
-    type: 'ESTABLISHES',
-    description: 'Establishes the intelligence fusion hub, with analysis-only limits.',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Sequential'
-  },
-  {
-    from: 'framework_shield',
-    to: 'institution_getf',
-    type: 'ESTABLISHES',
+    to: 'platform_federated_crime_exchange_nodes',
+    type: 'ENABLES',
     description:
-      'Defines the task force. Operational authority comes from participating jurisdictions and tribunal rulings, not from Shield.',
+      'Shield defines a federated, purpose-limited exchange architecture. Participating jurisdictions constitute and govern their own nodes; the framework creates no central intelligence body.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Sequential'
-  },
-  {
-    from: 'council_tsc',
-    to: 'institution_getf',
-    type: 'OVERSEES',
-    description: 'The Council directs task force priorities within the SCPA boundary.',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'council_tsc',
-    to: 'institution_gcic',
-    type: 'OVERSEES',
-    description: 'Strategic direction and access limits for the intelligence hub.',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'institution_gcic',
-    to: 'institution_getf',
-    type: 'INFORMS',
-    description: 'Intelligence shapes operational priorities. An assessment is not a warrant.',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'institution_getf',
-    to: 'institution_gem',
-    type: 'IMPLEMENTS',
-    description:
-      'GETF operates as a specialized unit of the Global Enforcement Mechanism. Shield still relies on GEM although Treaty v1.3 no longer names it.',
-    strength: 'Strong',
-    frequency: 'Continuous',
-    sequenceType: 'Parallel'
   },
   {
     from: 'framework_shield',
@@ -646,15 +627,6 @@ export const justiceOSRelationships: GgfRelationship[] = [
     to: 'council_mgcc',
     type: 'COORDINATES_WITH',
     description: 'The Peace Council operates within the Meta-Governance architecture.',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'council_tsc',
-    to: 'council_mgcc',
-    type: 'COORDINATES_WITH',
-    description: 'The Security Council operates within the Meta-Governance architecture.',
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'

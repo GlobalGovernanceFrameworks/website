@@ -98,7 +98,7 @@ export const governanceOSEntities: GgfEntity[] = [
     name: 'Global Intelligence & Foresight Council',
     shortName: 'GIF-Council',
     description:
-      'Specialized meta-level council synthesizing intelligence from the ERO, GCIC and peace-prediction units into a unified threat assessment for the MGCC. Assessment only; an alert is not an authorization.',
+      "Specialized meta-level council synthesizing intelligence from the ERO, Shield\'s federated purpose-limited exchange nodes, and peace-prediction units into a unified threat assessment for the MGCC. Assessment only; an alert is not an authorization.",
     tier: 1,
     status: 'Proposed',
     primaryDomain: 'Governance',
@@ -107,7 +107,7 @@ export const governanceOSEntities: GgfEntity[] = [
     dependencies: [
       'framework_meta_gov',
       'institution_ero',
-      'institution_gcic', // cluster: justice-os
+      'platform_federated_crime_exchange_nodes', // cluster: justice-os
       'framework_peace' // cluster: justice-os
     ]
   },
@@ -123,7 +123,7 @@ export const governanceOSEntities: GgfEntity[] = [
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
-    dependencies: ['framework_meta_gov']
+    dependencies: ['framework_meta_gov', 'framework_treaty']
   },
   {
     id: 'protocol_polycentric',
@@ -621,10 +621,11 @@ export const governanceOSRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
   {
-    from: 'institution_gcic',
+    from: 'platform_federated_crime_exchange_nodes',
     to: 'council_gifc',
     type: 'PARTICIPATES_IN',
-    description: 'The GCIC provides transnational crime and cybercrime intelligence.',
+    description:
+      "Shield\'s federated, purpose-limited exchange nodes contribute lawfully shareable transnational-crime assessments without creating a central intelligence authority.",
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
@@ -687,12 +688,10 @@ export const governanceOSRelationships: GgfRelationship[] = [
   // --- process_crisis_command -------------------------------------------
   {
     from: 'process_crisis_command',
-    to: 'institution_gem',
-    type: 'ESCALATES_TO',
-    // was ACTIVATES — v1.5 states Meta-Governance may not command police,
-    // military, emergency or work forces through its own framework
+    to: 'framework_treaty',
+    type: 'DEPENDS_ON',
     description:
-      'Crisis coordination refers enforcement questions to the body that lawfully holds enforcement power; it cannot deploy it directly.',
+      "Crisis Command is governed by the Treaty\'s emergency procedure: Article 17.2 permits tightly bounded provisional action for up to 72 hours, and Article 17.3 governs continuation. Meta-Governance itself gains no police, military, emergency-work, or rights-suspension authority.",
     strength: 'Strong',
     frequency: 'Crisis-Only',
     sequenceType: 'Conditional'

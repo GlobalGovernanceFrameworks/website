@@ -440,13 +440,14 @@ export const humanFlourishingEntities: GgfEntity[] = [
     type: 'Institution',
     name: 'Health Emergency Corps',
     shortName: 'HEC',
-    description: 'Specialized rapid-response unit for pandemics and global health crises, operating under the GEM',
+    description:
+      'A permissible separately chartered health-emergency corps under Treaty v1.3 Article 16.4. Its own charter must define command, jurisdiction, civilian control, consent, use-of-force limits, financing, oversight and sunset; neither Global Health nor the Treaty framework text supplies deployment authority by itself.',
     tier: 2,
     status: 'Proposed',
     primaryDomain: 'Ecological',
     geographicScope: 'Global',
     implementationPriority: 'High',
-    dependencies: ['framework_global_health', 'institution_gem']
+    dependencies: ['framework_global_health', 'framework_treaty']
   },
   {
     id: 'institution_epi_institution',
@@ -1132,12 +1133,13 @@ export const humanFlourishingRelationships: GgfRelationship[] = [
   // === CONNECTIONS TO CONSTITUTIONAL LAYER ===
   {
     from: 'institution_hec',
-    to: 'institution_gem',
-    type: 'IMPLEMENTS',
-    description: 'Health Emergency Corps operates as specialized unit within Global Enforcement Mechanism',
+    to: 'framework_treaty',
+    type: 'DEPENDS_ON',
+    description:
+      'Treaty v1.3 Article 16.4 permits separately chartered corps and specifies the minimum constitutional contents of their charters. HEC authority must come from such a charter and deployment-specific authorization, not from a standing GEM.',
     strength: 'Strong',
     frequency: 'Crisis-Only',
-    sequenceType: 'Parallel'
+    sequenceType: 'Conditional'
   },
   {
     from: 'mechanism_gcf',
