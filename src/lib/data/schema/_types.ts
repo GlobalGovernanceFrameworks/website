@@ -284,8 +284,3 @@ export const groupMetadata = {
   }
 };
 
-// Validation result interface
-export interface ValidationResult {
-  isValid: boolean;
-  errors: string[];
-}

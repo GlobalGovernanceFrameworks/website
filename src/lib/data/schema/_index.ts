@@ -28,7 +28,7 @@ import { conduitProtocolEntities, conduitProtocolRelationships } from './cluster
 
 
 // Import types and metadata
-import type { GgfEntity, GgfRelationship, GgfCluster, ValidationResult } from './_types';
+import type { GgfEntity, GgfRelationship, GgfCluster } from './_types';
 import { tierMetadata, groupMetadata } from './_types';
 
 // (Legacy: entities migrated to dedicated cluster files)
@@ -380,99 +380,10 @@ export const clusters: GgfCluster[] = [
 
 // Export types and metadata
 export { tierMetadata, groupMetadata };
-export type { GgfEntity, GgfRelationship, GgfCluster, ValidationResult };
-
-// Enhanced validation functions
-export function validateSchema(entities: GgfEntity[], relationships: GgfRelationship[]): ValidationResult {
-  const entityIds = new Set(entities.map(e => e.id));
-  const entityById = new Map(entities.map(e => [e.id, e]));
-  const retiredIds = new Set(entities.filter(e => e.retired).map(e => e.id));
-  const errors: string[] = [];
-  const creationImplyingTypes = new Set<GgfRelationship['type']>([
-    'ESTABLISHES',
-    'ENABLES',
-    'ACTIVATES',
-    'IMPLEMENTS',
-    'DELEGATES_TO'
-  ]);
-  
-  // Check endpoints, retirement boundaries, and explicit non-creation clauses.
-  for (const rel of relationships) {
-    if (!entityIds.has(rel.from)) {
-      errors.push(`Relationship references unknown entity: ${rel.from}`);
-    }
-    if (!entityIds.has(rel.to)) {
-      errors.push(`Relationship references unknown entity: ${rel.to}`);
-    }
-
-    if (retiredIds.has(rel.from)) {
-      errors.push(`Relationship originates from retired entity: ${rel.from} --${rel.type}--> ${rel.to}`);
-    }
-    if (retiredIds.has(rel.to)) {
-      errors.push(`Relationship points to retired entity: ${rel.from} --${rel.type}--> ${rel.to}`);
-    }
-
-    // Explicit non-creation clauses also block relationship types that can
-    // imply activation, delegation, or operational embodiment.
-    if (creationImplyingTypes.has(rel.type)) {
-      const target = entityById.get(rel.to);
-      const exclusion = target?.establishmentExclusions?.find(x => x.framework === rel.from);
-      if (exclusion) {
-        const source = exclusion.section
-          ? `${exclusion.by} ${exclusion.section}`
-          : exclusion.by;
-        errors.push(
-          `Prohibited creation-implying relationship: ${rel.from} --${rel.type}--> ${rel.to}; excluded by ${source}`
-        );
-      }
-    }
-  }
-  
-  // Retirement provenance and presentation status must agree so generic
-  // consumers cannot accidentally advertise retired institutions as live.
-  for (const entity of entities) {
-    if (entity.retired && entity.status !== 'Retired') {
-      errors.push(`${entity.id} has retirement provenance but status is ${entity.status ?? 'unset'}`);
-    }
-    if (entity.status === 'Retired' && !entity.retired) {
-      errors.push(`${entity.id} has status Retired but no retirement provenance`);
-    }
-  }
-
-  // Dependencies and enables arrays are live declarations and may not contain
-  // retired entities.
-  for (const entity of entities) {
-    for (const depId of entity.dependencies ?? []) {
-      if (retiredIds.has(depId)) {
-        errors.push(`${entity.id}.dependencies contains retired entity: ${depId}`);
-      }
-    }
-    for (const enabledId of entity.enables ?? []) {
-      if (retiredIds.has(enabledId)) {
-        errors.push(`${entity.id}.enables contains retired entity: ${enabledId}`);
-      }
-    }
-  }
-
-  // Check tier consistency - lower tiers shouldn't depend on higher tiers.
-  for (const entity of entities) {
-    if (entity.dependencies) {
-      for (const depId of entity.dependencies) {
-        const dependency = entityById.get(depId);
-        if (dependency && entity.tier !== undefined && dependency.tier !== undefined) {
-          if (dependency.tier > entity.tier) {
-            errors.push(`Tier violation: ${entity.name} (Tier ${entity.tier}) depends on ${dependency.name} (Tier ${dependency.tier})`);
-          }
-        }
-      }
-    }
-  }
-  
-  return {
-    isValid: errors.length === 0,
-    errors
-  };
-}
+export type { GgfEntity, GgfRelationship, GgfCluster };
+export { validateSchema, validateClusters, formatIssues } from './_validate';
+export type { ValidationIssue, ValidationResult, ValidationOptions, Severity } from './_validate';
+export { acceptedIssues } from './_baseline';
 
 export function getEntitiesByTier(
   tier: 0 | 1 | 2 | 3 | 4,
