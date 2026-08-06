@@ -1,0 +1,96 @@
+{
+  "record_id": "gmeia:example:traffic-calming-trial:activation:001",
+  "record_type": "GMEAIA-23",
+  "schema_version": "0.1",
+  "created_at": "2026-08-02T10:00:00Z",
+  "effective_at": "2026-09-01T00:00:00Z",
+  "expires_at": "2027-03-01T00:00:00Z",
+  "status": "activated",
+  "normative_force": "activating",
+  "authority_effect": "activating",
+  "action_class": "A08",
+  "source_framework_id": "municipal-traffic-pilot",
+  "source_framework_version": "1.0",
+  "source_record_ids": [
+    "gmeia:signal:traffic-injury:001",
+    "gmeia:proposal:traffic-calming:001",
+    "gmeia:trial-auth:traffic-calming:001"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "actor_id": "city:example:transport-authority",
+  "actor_type": "public_body",
+  "office_or_role": "Director of Transport Operations",
+  "representation_source": "Municipal charter and delegated traffic-management ordinance",
+  "technical_credential_refs": [
+    "did:web:example-city.gov:transport"
+  ],
+  "constituting_instrument": "Example City Traffic Management Ordinance §12",
+  "legal_power": "Activate a temporary six-month traffic-calming trial on named municipal streets",
+  "jurisdiction_territorial": "Example City; Oak Street and Pine Avenue segments listed in protected annex",
+  "jurisdiction_personal": "Road users and municipal operators within the trial area",
+  "jurisdiction_subject_matter": "Temporary traffic routing and street design",
+  "jurisdiction_temporal": "2026-09-01 through 2027-03-01",
+  "affected_party_refs": [
+    "gmeia:affected-map:traffic-calming:001"
+  ],
+  "affected_indigenous_nation_refs": [],
+  "protected_domain_flags": [
+    "public-mobility; specialized municipal authority verified"
+  ],
+  "consent_record_refs": [
+    "gmeia:consent:school-access-panel:001"
+  ],
+  "authority_record_refs": [
+    "gmeia:authority:city-transport:001",
+    "gmeia:trial-auth:traffic-calming:001"
+  ],
+  "activation_record_refs": [
+    "gmeia:example:traffic-calming-trial:activation:001"
+  ],
+  "access_class": "PUBLIC",
+  "public_summary": "Activates a six-month, reversible municipal traffic-calming trial with emergency access, disability access, midpoint review, and automatic deactivation.",
+  "protected_annex_refs": [
+    "sealed:traffic-calming:resident-contact-list"
+  ],
+  "data_purpose": "Operate, monitor, review, and close the authorized traffic trial",
+  "retention_rule": "Public decision record retained; personal contact data deleted 90 days after closure unless a claim remains open",
+  "correction_status": "none",
+  "challenge_status": "none",
+  "review_due_at": "2026-12-01T00:00:00Z",
+  "closure_state": "open",
+  "unresolved_duty_refs": [],
+  "handoff_state": "accepted",
+  "recipient_refs": [
+    "city:example:public-works-operator"
+  ],
+  "recipient_acceptance_refs": [
+    "gmeia:handoff:public-works:001"
+  ],
+  "hashes_and_signatures": [
+    {
+      "algorithm": "sha256",
+      "value": "example-not-production",
+      "purpose": "illustrative integrity field"
+    }
+  ],
+  "human_accountable_officer": "Director of Transport Operations, Example City",
+  "prohibited_inferences": [
+    "This activation does not authorize policing, detention, surveillance, benefit withdrawal, or application outside the listed streets and dates.",
+    "Technical deployment does not amend the municipal ordinance or renew the trial."
+  ],
+  "payload": {
+    "operator": "Example City Public Works",
+    "start_conditions": [
+      "temporary barriers installed",
+      "emergency-service route confirmed",
+      "accessible crossings verified"
+    ],
+    "review_clocks": [
+      "30-day safety review",
+      "midpoint public review",
+      "automatic expiry"
+    ],
+    "rollback": "Return street configuration within 48 hours after stop order or expiry"
+  }
+}

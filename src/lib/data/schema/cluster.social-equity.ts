@@ -98,7 +98,7 @@ export const socialEquityEntities: GgfEntity[] = [
     shortName: 'Kinship Protocol',
     description: 'Framework ensuring gender equality and LGBTQ+ rights with intersectional approach. Employs anti-reification design: identity-specific legal protections where persecution is identity-targeted, with progressive shift toward function-based framing for governance and economic mechanisms. Includes Relational Infrastructure for kinship formation.',
     tier: 3,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
     implementationPriority: 'Medium',

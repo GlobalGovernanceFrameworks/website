@@ -20,7 +20,7 @@ export const pathfinderProtocolEntities: GgfEntity[] = [
     description:
       'A voluntary pathway for enterprises transitioning from extractive to regenerative models across six modules: governance, operations, finance, culture and advocacy. Certification is a three-tier maturity model rather than a pass mark.',
     tier: 2,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -141,7 +141,7 @@ export const pathfinderProtocolEntities: GgfEntity[] = [
     shortName: 'Pathfinder Program',
     description: 'Five-phase implementation pathway for enterprise transformation from exploration to systemic leadership',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Economic',
     geographicScope: 'Institutional',
     implementationPriority: 'Critical',

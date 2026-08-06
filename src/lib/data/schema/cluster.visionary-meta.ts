@@ -301,7 +301,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
     shortName: 'Consciousness Development',
     description: 'Framework for supporting the evolution of individual and collective consciousness through contemplative practice, wisdom traditions, and developmental psychology. Bridges inner transformation with outer governance capacity.',
     tier: 4,
-    status: 'Planned',
+    status: 'Proposed',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Low',

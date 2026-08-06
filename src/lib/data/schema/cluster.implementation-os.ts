@@ -33,7 +33,7 @@ export const implementationOSEntities: GgfEntity[] = [
     description:
       'The GGF\'s operating manual: a reusable pathway for implementing a framework, programme, tool, or local initiative while preserving local law, cultural form, rights, and affected-nation authority.',
     tier: 1,
-    status: 'Planned',
+    status: 'Review',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -53,11 +53,11 @@ export const implementationOSEntities: GgfEntity[] = [
       emoji: '🧰',
       slug: 'implementation-and-adaptation',
       outline: {
-        version: 'v1.1.1',
-        updated: '2026-08-02',
+        version: 'v1.2',
+        updated: '2026-08-06',
         maturity: 'adversarial',
         standfirst:
-          'An operating manual for turning GGF frameworks into local practice: context assessment, tool selection, cultural adaptation, bounded pilots, and learning. Version 1.1.1 exists largely to strip the framework of authority it should never have carried — assessment is not jurisdiction, a tool is not a mandate, and a successful pilot is not permission to scale. Read it as support architecture rather than as a source of power.'
+          'An operating manual for turning GGF frameworks into locally owned practice: assessing context, selecting and adapting tools, designing causally adequate pilots, learning without overclaiming, and building durable institutions that can survive the withdrawal of exceptional support. Version 1.2 keeps implementation support separate from authority—a diagnosis is not jurisdiction, a tool is not a mandate, pilot success is not permission to scale, and conformance is not proof of legitimacy or success.'
       }
     }
   },
@@ -81,8 +81,8 @@ export const implementationOSEntities: GgfEntity[] = [
       emoji: '🧭',
       slug: 'implementation-methods-tools',
       outline: {
-        version: 'v0.8.1',
-        updated: '2026-08-02',
+        version: 'v0.9',
+        updated: '2026-08-06',
         maturity: 'adversarial',
         standfirst:
           'A governance tool commons: methods, rubrics, resource cards, and facilitation practices that communities can adopt, adapt, or fork without asking permission. It publishes methods; it does not make their use lawful. A rating confers no legitimacy, certification confers no monopoly, and a failure story stays the property of whoever lived it.'

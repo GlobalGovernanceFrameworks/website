@@ -239,7 +239,7 @@ export const developmentEntities: GgfEntity[] = [
     shortName: 'Regenerative Journeys',
     description: 'A GGF Tier 3 framework to govern global tourism as a regenerative practice that heals communities, restores ecosystems, and fosters reciprocal relationships between guests and hosts.',
     tier: 3,
-    status: 'Ready', // Based on the v3.3 designation and detail level.
+    status: 'Stable', // Based on the v3.3 designation and detail level.
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'High',

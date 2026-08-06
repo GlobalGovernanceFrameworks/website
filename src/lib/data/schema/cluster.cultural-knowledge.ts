@@ -220,7 +220,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     name: 'Consciousness & Inner Development Framework',
     shortName: 'IDLP',
     description:
-      'Inner development and ethical leadership capacity across the ecosystem, developed with Indigenous, youth and neurodiverse input. Voluntary throughout — the MOS prohibition on assigning developmental stages applies here with particular force, since this is the framework most tempted to.',
+      'Inner development and ethical leadership capacity across the ecosystem. Voluntary throughout — the MOS prohibition on assigning developmental stages applies here with particular force, since this is the framework most tempted to.',
     tier: 4,
     status: 'Review',
     primaryDomain: 'Governance',
@@ -238,7 +238,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
         updated: '2026-04-02',
         maturity: 'adversarial',
         standfirst:
-          'The proposition that institutions behave the way the people inside them are able to think, and that this is trainable. It is also the framework with the most obvious failure mode: any programme that develops consciousness can become a programme that ranks it. Version 2.5 was shaped with Indigenous, youth and neurodiverse leadership, and MOS §6.2 forbids any GGF body from recording a developmental stage for anyone.'
+          'The proposition that institutions behave the way the people inside them are able to think, and that this is trainable. It is also the framework with the most obvious failure mode: any programme that develops consciousness can become a programme that ranks it. MOS §6.2 forbids any GGF body from recording a developmental stage for anyone.'
       }
     }
   },
@@ -248,7 +248,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     name: 'Wise Decision-Making & Integration Protocol',
     shortName: 'WDIP',
     description:
-      'Advisory methodology for decisions that are hard because values conflict, effects run across generations, knowledge is distributed and power is unequal — not because facts are missing. Conforms to the GMEAIA/0.1 controlling interface; every output must state the process mandate, the competent decision authority, and its authority effect.',
+      'Advisory methodology for decisions that are hard because values conflict, effects run across generations, knowledge is distributed and power is unequal — not because facts are missing. Conforms to the GMEAIA/0.2.1 controlling interface; every output must state the process mandate, the competent decision authority, and its authority effect.',
     tier: 4,
     status: 'Review',
     primaryDomain: 'Governance',
@@ -262,8 +262,8 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       emoji: '🪷',
       slug: 'wise-decision-making-protocol',
       outline: {
-        version: 'v1.6.1',
-        updated: '2026-08-02',
+        version: 'v1.7',
+        updated: '2026-08-06',
         maturity: 'adversarial',
         standfirst:
           'A method for the decisions where more information would not help: values genuinely conflict, the losses fall on people who are not in the room, and every option costs something irreversible. WDIP holds multiple knowledge systems side by side without collapsing them into one register, and treats uncertainty as productive rather than as a problem to be closed. Its advisory-output rule means no WDIP process can be mistaken for the decision itself.'
@@ -451,7 +451,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
     description:
       'Collective grief processing, memorialization and intergenerational healing: spaces and protocols for communities to process loss, from addiction-related grief to ecological mourning and historical trauma.',
     tier: 3,
-    status: 'Planned',
+    status: 'Draft',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',

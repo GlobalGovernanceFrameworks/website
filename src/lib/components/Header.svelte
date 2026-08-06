@@ -1415,7 +1415,7 @@
             <div class="dropdown-header">
               <a 
                 href="{base}/frameworks"
-                class={`nav-link ${browser && $page.url.pathname.startsWith(base + '/frameworks') ? 'active' : ''}`}
+                class={`nav-link ${browser && ($page.url.pathname.startsWith(base + '/frameworks') || $page.url.pathname.startsWith(base + '/specifications')) ? 'active' : ''}`}
                 data-sveltekit-preload-data="tap"
               >
                 {browser && $translationsLoaded ? ($t('common.header.framework') || 'Frameworks') : 'Frameworks'}
@@ -1667,6 +1667,14 @@
               <div class="dropdown-scrollable-content">
                 <a href="{base}/frameworks" class={isActive('/frameworks') ? 'active' : ''} data-sveltekit-preload-data="tap" role="menuitem">
                   {browser ? ($t('common.header.frameworkOverview') || 'Overview') : 'Overview'}
+                </a>
+                <a
+                  href="{base}/specifications"
+                  class={browser && $page.url.pathname.startsWith(base + '/specifications') ? 'active' : ''}
+                  data-sveltekit-preload-data="tap"
+                  role="menuitem"
+                >
+                  {browser ? ($t('common.header.frameworkSpecifications') || 'Specifications') : 'Specifications'}
                 </a>
                 {#if isDevMode}
                 <a href="{base}/frameworks/docs" class={isActive('/frameworks/docs') ? 'active' : ''} data-sveltekit-preload-data="tap" role="menuitem">

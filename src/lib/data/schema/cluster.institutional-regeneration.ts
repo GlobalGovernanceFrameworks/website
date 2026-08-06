@@ -25,7 +25,7 @@ export const institutionalRegenerationEntities: GgfEntity[] = [
     description:
       'A playbook for evolving existing institutions from bureaucratic inertia toward mission-driven service: mandate audits, evolution cells, a public regeneration index, and a dignified sunsetting path for institutions whose purpose has passed. Advisory throughout; conforms to the GMEAIA/0.1 controlling interface.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -37,11 +37,11 @@ export const institutionalRegenerationEntities: GgfEntity[] = [
       emoji: '🔄',
       slug: 'institutional-regeneration',
       outline: {
-        version: 'v0.9.1',
-        updated: '2026-08-03',
+        version: 'v1.0',
+        updated: '2026-08-06',
         maturity: 'adversarial',
         standfirst:
-          'A playbook for institutions that have outlived their mandate but not their budget. Mandate audits ask what an institution is actually for now; graceful sunsetting handles the cases where the honest answer is nothing, preserving the knowledge and reallocating the resources rather than letting the shell persist. Version 0.9.1 conforms to the GMEAIA/0.1 interface, and the Regeneration Compact is deliberately non-binding — an institution that could be compelled to regenerate would simply comply on paper.'
+          'A framework for changing institutions without confusing procedural reform with structural change. Version 1.0 distinguishes symptom, capacity, incentive, authority, and reproductive reform; maps the causal constraints and selection pressures that reproduce institutional behaviour; and treats closure as a governed transition that preserves knowledge, services, remedies, and worker and beneficiary protections. The Regeneration Compact remains non-binding—diagnosis is not jurisdiction, participation is not consent, and workshops do not count as regeneration unless authority, incentives, ownership, and behaviour actually change.'
       }
     }
   },

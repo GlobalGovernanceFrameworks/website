@@ -30,7 +30,9 @@
     reviewRounds: 'review rounds',
     sections: 'Sections',
     previous: 'Previous',
-    next: 'Next'
+    next: 'Next',
+    allFrameworks: '← All frameworks',
+    allSpecifications: '← All specifications'
   };
 
   const reviewerNames = {
@@ -53,10 +55,12 @@
   $: maturityLabel = maturityText(entry.maturity, 'label');
   $: maturityDescription = maturityText(entry.maturity, 'description');
 
+  $: outlineRoot = entry.kind === 'specification' ? 'specifications' : 'framework-outlines';
+
   $: sourceUrl =
     mode === 'prose'
       ? `${githubBase}/frameworks/en/implementation/${entry.proseDir}/`
-      : `${githubBase}/framework-outlines/en/${entry.outlineDir}/versions/${entry.version}.md`;
+      : `${githubBase}/${outlineRoot}/en/${entry.outlineDir}/versions/${entry.version}.md`;
 
   $: firstVersion = versions[0];
   $: subtitle = entry.subtitle ?? metadata.title ?? '';
@@ -138,7 +142,9 @@
 <article class="outline-page">
   <header class="outline-header">
     <div class="wrap">
-      <a class="back" href="{base}/frameworks">← All frameworks</a>
+      <a class="back" href="{base}{entry.kind === 'specification' ? '/specifications' : '/frameworks'}">
+        {entry.kind === 'specification' ? ui.allSpecifications : ui.allFrameworks}
+      </a>
 
       <div class="eyebrow">
         <span class="tier">Tier {entry.tier}</span>
@@ -299,7 +305,7 @@
           <ul>
             {#each entry.related as r}
               <li>
-                <a href="{base}/frameworks/{r.slug}">
+                <a href="{base}{r.path}">
                   <span aria-hidden="true">{r.emoji}</span>
                   {r.title} →
                 </a>

@@ -30,7 +30,7 @@ export const justTransitionEntities: GgfEntity[] = [
     description:
       'Interoperable governance interfaces for security capability transition, civilian planetary service and lawful dual-use conversion: expenditure redirection, facility and research conversion, personnel and regional transition, purpose-limited dual-use custody, and lawful declassification.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
     implementationPriority: 'Critical',

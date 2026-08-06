@@ -9,6 +9,14 @@
 //
 // An entity may carry both. Prose supplies the text, outline supplies the
 // version lineage shown in the provenance strip.
+//
+// Two document kinds, distinguished by ui.outline.kind:
+//   'framework'     — content/framework-outlines/<lang>/tier-N/<slug>/current.md
+//   'specification' — content/specifications/<lang>/<slug>/current.md
+//
+// Specifications are the controlling-interface layer (CIS, GMEAIA). They are
+// loaded, versioned and rendered exactly like outlines, but live under
+// /specifications so they are not read as "two more frameworks".
 
 import { allEntities, allRelationships } from './schema/_index';
 import { MATURITY } from './schema/_types';
@@ -20,10 +28,13 @@ export { MATURITY };
 /* Module maps                                                         */
 /* ------------------------------------------------------------------ */
 
-// Only canonical, published outline documents are compiled by mdsvex.
-// Historical versions and reviews are represented by a generated metadata
-// manifest below, so they never enter Vite's module graph.
+// Only canonical, published documents are compiled by mdsvex. Historical
+// versions and reviews are represented by a generated metadata manifest
+// below, so they never enter Vite's module graph.
+//
+// Both globs must be string literals — Vite will not resolve a variable root.
 const outlineModules = import.meta.glob('../content/framework-outlines/*/*/*/current.md');
+const specModules = import.meta.glob('../content/specifications/*/*/current.md');
 
 // Prose is deliberately narrow. A broad glob over content/frameworks would
 // push every archived draft in the repo through mdsvex at build time.
@@ -35,14 +46,39 @@ const proseModules = {
 };
 
 const OUTLINE_ROOT = '../content/framework-outlines';
+const SPEC_ROOT = '../content/specifications';
 const PROSE_ROOT = '../content/frameworks';
+
+const ROOT = {
+  framework: OUTLINE_ROOT,
+  specification: SPEC_ROOT
+};
+
+const MODULES = {
+  framework: outlineModules,
+  specification: specModules
+};
+
+const BASE_PATH = {
+  framework: '/frameworks',
+  specification: '/specifications'
+};
 
 /* ------------------------------------------------------------------ */
 /* Schema projection                                                   */
 /* ------------------------------------------------------------------ */
 
+function outlineKind(entity) {
+  return entity.ui.outline?.kind ?? 'framework';
+}
+
 function outlineDir(entity) {
-  return entity.ui.outline?.dir ?? `tier-${entity.tier}/${entity.ui.slug}`;
+  if (entity.ui.outline?.dir) return entity.ui.outline.dir;
+
+  // Specifications are flat; framework outlines are tier-partitioned.
+  return outlineKind(entity) === 'specification'
+    ? entity.ui.slug
+    : `tier-${entity.tier}/${entity.ui.slug}`;
 }
 
 function proseDir(entity) {
@@ -58,7 +94,9 @@ const bySlug = new Map(publishedEntities.map((e) => [e.ui.slug, e]));
 
 /**
  * "Read alongside" — computed from the relationship graph, filtered to
- * frameworks that are themselves published, so links can never dangle.
+ * entities that are themselves published, so links can never dangle.
+ * Carries `path` because a related document may live under a different route
+ * root than the one being rendered.
  */
 function relatedSlugs(entity) {
   const ids = new Set();
@@ -73,7 +111,16 @@ function relatedSlugs(entity) {
 
   return publishedEntities
     .filter((e) => ids.has(e.id))
-    .map((e) => ({ slug: e.ui.slug, title: e.name, emoji: e.ui.emoji ?? '📋' }));
+    .map((e) => {
+      const kind = e.ui.outline ? outlineKind(e) : 'framework';
+      return {
+        slug: e.ui.slug,
+        kind,
+        path: e.ui.path ?? `${BASE_PATH[kind]}/${e.ui.slug}`,
+        title: e.name,
+        emoji: e.ui.emoji ?? '📋'
+      };
+    });
 }
 
 /** Schema entity → the flat shape the page renders. */
@@ -81,11 +128,13 @@ function toEntry(entity) {
   const prose = entity.ui.prose;
   const outline = entity.ui.outline;
   const primary = prose ?? outline;
+  const kind = outline ? outlineKind(entity) : 'framework';
 
   return {
     id: entity.id,
     slug: entity.ui.slug,
-    path: entity.ui.path,
+    kind,
+    path: entity.ui.path ?? `${BASE_PATH[kind]}/${entity.ui.slug}`,
     title: entity.name,
     subtitle: primary.subtitle ?? entity.description ?? '',
     standfirst: primary.standfirst ?? '',
@@ -115,8 +164,8 @@ function toEntry(entity) {
 /* Version and review discovery                                        */
 /* ------------------------------------------------------------------ */
 
-function outlinePath(dir, lang = 'en') {
-  return `${OUTLINE_ROOT}/${lang}/${dir}/current.md`;
+function documentPath(dir, lang = 'en', kind = 'framework') {
+  return `${ROOT[kind]}/${lang}/${dir}/current.md`;
 }
 
 function historyFor(dir, lang = 'en') {
@@ -141,20 +190,39 @@ export function getOutlineEntry(slug) {
 }
 
 export function listOutlineSlugs() {
-  return [...bySlug.keys()];
+  return publishedEntities
+    .filter((e) => (e.ui.outline ? outlineKind(e) : 'framework') === 'framework')
+    .map((e) => e.ui.slug);
 }
 
+export function listSpecificationSlugs() {
+  return publishedEntities
+    .filter((e) => e.ui.outline && outlineKind(e) === 'specification')
+    .map((e) => e.ui.slug);
+}
+
+/** Frameworks only — specifications are excluded from the framework index. */
 export function listPublishedOutlines() {
-  return publishedEntities.map(toEntry).sort((a, b) => a.tier - b.tier);
+  return publishedEntities
+    .map(toEntry)
+    .filter((e) => e.kind === 'framework')
+    .sort((a, b) => a.tier - b.tier);
 }
 
-/** Every version filename on disk for this outline folder, oldest first. */
+export function listPublishedSpecifications() {
+  return publishedEntities
+    .map(toEntry)
+    .filter((e) => e.kind === 'specification')
+    .sort((a, b) => a.title.localeCompare(b.title));
+}
+
+/** Every version filename on disk for this document folder, oldest first. */
 export function listVersions(dir, lang = 'en') {
   if (!dir) return [];
   return [...historyFor(dir, lang).versions];
 }
 
-/** How many review documents sit behind this outline, and from whom. */
+/** How many review documents sit behind this document, and from whom. */
 export function getReviewLineage(dir, lang = 'en') {
   if (!dir) return { documentCount: 0, rounds: [], reviewers: [] };
 
@@ -166,20 +234,21 @@ export function getReviewLineage(dir, lang = 'en') {
   };
 }
 
-/** Diagnostic: which version modules Vite resolved for this folder. */
-export function listAvailableOutlinePaths(dir, lang = 'en') {
-  const prefix = `${OUTLINE_ROOT}/${lang}/${dir}/`;
-  return Object.keys(outlineModules)
+/** Diagnostic: which modules Vite resolved for this folder. */
+export function listAvailableOutlinePaths(dir, lang = 'en', kind = 'framework') {
+  const prefix = `${ROOT[kind]}/${lang}/${dir}/`;
+  return Object.keys(MODULES[kind])
     .filter((p) => p.startsWith(prefix))
     .map((p) => p.slice(prefix.length));
 }
 
 /* ---- loading ---- */
 
-export async function loadOutline(dir, version, lang = 'en') {
-  const path = outlinePath(dir, lang);
-  const fallbackPath = outlinePath(dir, 'en');
-  const loader = outlineModules[path] ?? outlineModules[fallbackPath];
+export async function loadOutline(dir, version, lang = 'en', kind = 'framework') {
+  const modules = MODULES[kind];
+  const path = documentPath(dir, lang, kind);
+  const fallbackPath = documentPath(dir, 'en', kind);
+  const loader = modules[path] ?? modules[fallbackPath];
 
   if (!loader) {
     throw new Error(
@@ -191,7 +260,7 @@ export async function loadOutline(dir, version, lang = 'en') {
   return {
     component: mod.default,
     metadata: mod.metadata ?? {},
-    usedEnglishFallback: lang !== 'en' && !outlineModules[path]
+    usedEnglishFallback: lang !== 'en' && !modules[path]
   };
 }
 

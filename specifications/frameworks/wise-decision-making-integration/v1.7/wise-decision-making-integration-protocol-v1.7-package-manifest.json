@@ -1,0 +1,84 @@
+{
+  "package_id": "WDIP/1.7-machine-release",
+  "date": "2026-08-06",
+  "status": "document_and_machine_compatible",
+  "authority_effect": "none",
+  "constitutional_interface": "CIS/0.2.1",
+  "controlling_interface": "GMEAIA/0.2.1",
+  "source_successor": "WDIP/1.6.1",
+  "files": [
+    {
+      "filename": "validate-wise-decision-making-integration-protocol-v1.7.py",
+      "sha256": "81b5e0baeb495c55fd254eb6725c31551bac6ec7a17ed596839442c9dd59c68d",
+      "bytes": 918,
+      "lines": 11
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7-changelog.md",
+      "sha256": "6f547dd7d28eaf7802be1f6d473d0f9de76a0bccd5d8a3bf13ea395a496e930b",
+      "bytes": 1143,
+      "lines": 16
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7-example-assumption-audit.json",
+      "sha256": "35b607dd6ec564d47a9bd313698ae4d0baaf08e9cd769f1b077759a71001a97b",
+      "bytes": 2730,
+      "lines": 84
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7-example-capacity-limited-response.json",
+      "sha256": "61c636cffd65cc5c7d705902f7a474b4e929b0f983f42d8a9b25af13581d724d",
+      "bytes": 2975,
+      "lines": 87
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7-example-protected-knowledge-contribution.json",
+      "sha256": "0498cd937912cd368a8332cafc281809069e49d0bab944c3fbfd691c5f648a0d",
+      "bytes": 3053,
+      "lines": 84
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7-migration-from-v1.6.1.md",
+      "sha256": "4589e22796bc80752a5b734e14874b23c8e7c38a43812f4aa43c5b14af779944",
+      "bytes": 1398,
+      "lines": 20
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7-specification.schema.json",
+      "sha256": "d3c2dca7d58511dadeb1976fe6b91829cc764623969ad58d7e6cda0c609055e1",
+      "bytes": 1934,
+      "lines": 91
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7-validation.txt",
+      "sha256": "f60c82d2f7761cc8cbba0510c06eceeeea2e784a60e57a832f5b912cbbe444b3",
+      "bytes": 906,
+      "lines": 15
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7.json",
+      "sha256": "deb87ead5bc176f3ee8b9d2599ef1fe4127d1b515e4519b370b6e55f2830429f",
+      "bytes": 106785,
+      "lines": 1942
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7.md",
+      "sha256": "dfa51e8372d91f4c046899f1bb37fb5d6a7652c16262750f26b9a829c71325d9",
+      "bytes": 58812,
+      "lines": 567
+    },
+    {
+      "filename": "wise-decision-making-integration-protocol-v1.7.schema.json",
+      "sha256": "3ff9c4347ed5861743ca7a1958e89cf28ee9e8f1f2183386ab75ed4cfa3e9f77",
+      "bytes": 10299,
+      "lines": 560
+    }
+  ],
+  "active_cluster_registry": "IAEG-CLUSTER/1.0",
+  "peer_dependency_binding": "Exact peer package hashes are bound by the active cluster registry; component packages do not recursively hash-freeze one another.",
+  "normative_source": {
+    "filename": "wise-decision-making-integration-protocol-v1.7.md",
+    "sha256": "dfa51e8372d91f4c046899f1bb37fb5d6a7652c16262750f26b9a829c71325d9",
+    "bytes": 58812
+  }
+}

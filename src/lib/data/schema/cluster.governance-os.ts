@@ -39,7 +39,7 @@ export const governanceOSEntities: GgfEntity[] = [
     description:
       'A delegated coordination architecture for plural institutions, bounded learning, and lawful adaptation. A connector, not a residual sovereign: a matter does not become a Meta-Governance competence merely because several domains are involved or because a coordination body can imagine a better answer.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -54,11 +54,11 @@ export const governanceOSEntities: GgfEntity[] = [
       emoji: '🏛️',
       slug: 'meta-governance',
       outline: {
-        version: 'v1.5',
-        updated: '2026-08-01',
+        version: 'v1.6',
+        updated: '2026-08-06',
         maturity: 'adversarial',
         standfirst:
-          'Coordination between institutions that do not answer to each other. Version 1.5 spends most of its length on what coordination may not do: it may not legislate, tax, sanction, command forces, acquire another institution\'s jurisdiction, dissolve it, force a pilot to reintegrate, or turn a dashboard threshold into a constitutional judgment. The automatic triggers of earlier editions — adaptation deficit, authority-transfer pressure ramps, funding reallocation — are gone, replaced by authorized review.'
+          'Coordination between institutions that do not answer to one another. Version 1.6 preserves strict limits on what coordination may do—it may not legislate, tax, sanction, command forces, inherit another institution’s jurisdiction, or turn indicators into constitutional judgments—while strengthening what responsible coordination must accomplish: map causal responsibility, expose delay and omission, test common dependencies and self-perpetuating incentives, keep administrative burdens proportionate, and close or devolve arrangements that no longer add value. Success is measured not by coordination activity, but by problems resolved, responsibilities clarified, and coordination safely simplified, localized, or ended.'
       }
     }
   },
@@ -76,7 +76,48 @@ export const governanceOSEntities: GgfEntity[] = [
     implementationPriority: 'Critical',
     dependencies: [
       'framework_treaty' // cluster: constitutional-foundation
-    ]
+    ],
+    ui: {
+      path: '/specifications/constitutional-interface',
+      emoji: '⚖️',
+      slug: 'constitutional-interface',
+      outline: {
+        kind: 'specification',
+        version: 'v0.2.1',
+        updated: '2026-08-05',
+        maturity: 'internal',
+        standfirst:
+          'Shared rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty — v0.2.1 adds causal responsibility, duties attached to retained jurisdiction, and the distinction between an authority that lawfully refuses, one that lacks capacity, and a genuine constitutional gap with no owner at all.'
+      }
+    }
+  },
+  {
+    id: 'protocol_gmeaia',
+    type: 'Protocol',
+    name: 'Governance Method, Experiment, Adoption, and Implementation Authority Interface Specification',
+    shortName: 'GMEAIA',
+    description:
+      'The lifecycle grammar the constitutional rules run on: authority effects and formation, CP0–CP3 consequence profiles, causal-responsibility records, acknowledgment and action clocks, accepted/refused/deferred/referred/timed-out/capacity-limited/constitutional-gap states, cross-framework handoffs, correction, unresolved duties, and closure. Frameworks supply their domain profile only; they do not redefine the controlled states locally.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Governance',
+    geographicScope: 'Global',
+    implementationPriority: 'Critical',
+    dependencies: [
+      'protocol_constitutional_interface'
+    ],
+    ui: {
+      path: '/specifications/gmeaia',
+      emoji: '🔁',
+      slug: 'gmeaia',
+      outline: {
+        kind: 'specification',
+        version: 'v0.2.1',
+        updated: '2026-08-05',
+        maturity: 'internal',
+        standfirst: 'A shared lifecycle grammar for governance work that must move across frameworks without allowing procedure to manufacture power. Version 0.2.1 standardizes consequence profiles, authority formation, causal responsibility, response clocks, handoff states, correction, unresolved duties, and closure, while preserving a strict boundary: frameworks may supply domain-specific requirements, but they may not redefine the shared states or treat conformance as authority, consent, legitimacy, or success.'
+      }
+    }
   },
   {
     id: 'council_mgcc',
@@ -194,7 +235,7 @@ export const governanceOSEntities: GgfEntity[] = [
     description:
       "The Tier 1 operational protocol defining the minimum viable grammar — `sense`, `propose`, `adopt` — for interactions across the GGF ecosystem, enabling decentralized and adaptive governance.",
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -207,8 +248,8 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'emergent-governance-protocol',
       prose: {
         dir: 'emergent-governance-protocol',
-        version: '1.0',
-        updated: '2026-08-03',
+        version: '1.2',
+        updated: '2026-08-06',
         maturity: 'internal',
         // Written from the schema description rather than from the prose
         // document, which is not in the outline tree. Check before publishing.
@@ -285,7 +326,7 @@ export const governanceOSEntities: GgfEntity[] = [
     description:
       'Horizontal separation of powers across territory, commons, economic practice, and Indigenous sovereignty. Four overlapping jurisdictions with minimum necessary authority, decision-chain separation, protected non-transfer, and the position that stable disagreement can be a legitimate outcome.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Critical',

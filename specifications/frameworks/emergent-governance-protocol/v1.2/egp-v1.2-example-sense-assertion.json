@@ -1,0 +1,54 @@
+{
+  "egp_package": "EGP/1.2",
+  "event_id": "egp:sense:river-fish-mortality:2026-001",
+  "operation": "sense",
+  "created_at": "2026-08-06T00:20:00+02:00",
+  "created_by": {
+    "actor_id": "community:lower-river-watch",
+    "actor_type": "group",
+    "capacity_claim": "Submits an observation and requests validation; claims no inspection or enforcement authority.",
+    "identity_proof_ref": null
+  },
+  "event_version": "1.0.0",
+  "consequence_profile_claim": "unknown",
+  "jurisdiction_claims": [],
+  "geographic_scope_claims": [
+    "Lower River reach 4"
+  ],
+  "institutional_scope_claims": [],
+  "language": "en",
+  "access_class": "public",
+  "source_refs": [],
+  "relationship_refs": [],
+  "correction_status": "current",
+  "authority_effect": "none",
+  "payload": {
+    "claim_status": "asserted",
+    "observation_type": "direct",
+    "asserted_severity": "high",
+    "asserted_urgency": "days",
+    "uncertainty": "Cause and extent are unknown; observation requires competent sampling and validation.",
+    "affected_party_claims": [
+      "downstream residents",
+      "fishers",
+      "river ecology"
+    ],
+    "evidence_refs": [
+      "evidence:photo-set:2026-001"
+    ],
+    "requested_routes": [
+      "municipal-water-authority",
+      "regional-environment-agency"
+    ],
+    "protected_domain_flags": [
+      "ecological_harm_possible"
+    ],
+    "gmeaia_refs": {
+      "sense_signal_ref": "gmeaia:GMEAIA-04:river-fish-001",
+      "evidence_ref": "gmeaia:GMEAIA-05:river-fish-evidence-001",
+      "validation_ref": null,
+      "response_time_ref": "gmeaia:GMEAIA-07:river-fish-time-001",
+      "triage_ref": "gmeaia:GMEAIA-08:river-fish-route-001"
+    }
+  }
+}

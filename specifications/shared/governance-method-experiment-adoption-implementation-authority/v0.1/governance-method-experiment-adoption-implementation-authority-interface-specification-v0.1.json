@@ -1,0 +1,1906 @@
+{
+  "$schema": "https://schemas.globalgovernanceframeworks.org/gmeia/0.1/registry.schema.json",
+  "specification_id": "GMEAIA/0.1",
+  "title": "Governance Method, Experiment, Adoption, and Implementation Authority Interface Specification",
+  "version": "0.1",
+  "date": "2026-08-02",
+  "non_authority_clause": "Schema conformance, cryptographic validation, tool approval, or software capability does not establish lawful authority.",
+  "canonical_doctrine": "Methods structure how authority is exercised. They do not create the authority.",
+  "public_egp_mapping": {
+    "sense": {
+      "minimum_record": "GMEAIA-04",
+      "meaning": "asserted signal",
+      "consequential_effect": "none"
+    },
+    "propose": {
+      "minimum_records": [
+        "GMEAIA-12",
+        "GMEAIA-13"
+      ],
+      "meaning": "candidate response",
+      "consequential_effect": "none"
+    },
+    "adopt": {
+      "minimum_record": "GMEAIA-22",
+      "meaning": "adoption claim or registration",
+      "consequential_effect": "none unless authority_envelope_valid"
+    }
+  },
+  "authority_effect_labels": [
+    {
+      "id": "none",
+      "description": "Educational, expressive, simulated, or descriptive; creates no procedural or legal effect."
+    },
+    {
+      "id": "advisory",
+      "description": "Offers analysis or recommendations; the competent authority must respond only where another rule requires it."
+    },
+    {
+      "id": "procedural_support",
+      "description": "Structures participation or records a process; does not decide the substantive issue."
+    },
+    {
+      "id": "evidentiary",
+      "description": "May be considered as evidence for a stated purpose; does not establish liability, consent, or authority."
+    },
+    {
+      "id": "consent_evidence",
+      "description": "Records a valid holder's decision within its exact scope; does not create jurisdiction or waive others' rights."
+    },
+    {
+      "id": "authority_reference",
+      "description": "Points to an independently valid authority record; does not itself grant the power."
+    },
+    {
+      "id": "authorizing",
+      "description": "A decision by a competent authority under an exact legal source; cannot be produced by a tool or method merely by schema conformance."
+    },
+    {
+      "id": "activating",
+      "description": "Starts an already authorized action and its clocks."
+    },
+    {
+      "id": "executing",
+      "description": "Carries out a separately authorized operation within defined limits."
+    },
+    {
+      "id": "closing",
+      "description": "Terminates power, returns authority and assets, disposes data, and preserves unresolved duties."
+    }
+  ],
+  "action_classes": [
+    {
+      "id": "A01",
+      "name": "Sense and observation",
+      "description": "Signals, observations, complaints, opportunities, alerts, and preliminary claims."
+    },
+    {
+      "id": "A02",
+      "name": "Validation and jurisdictional triage",
+      "description": "Provenance checks, uncertainty, severity review, affected-party mapping, routing, and referral."
+    },
+    {
+      "id": "A03",
+      "name": "Proposal and alternative formation",
+      "description": "Candidate responses, objectives, alternatives, reversibility, resources, and expected effects."
+    },
+    {
+      "id": "A04",
+      "name": "Method selection and deliberation",
+      "description": "Choice and adaptation of deliberative, epistemic, ethical, cultural, technical, or facilitation methods."
+    },
+    {
+      "id": "A05",
+      "name": "Affected-party authority, consent, refusal, and representation",
+      "description": "Who is affected, who may decide, who must consent, who may refuse, and who may represent whom."
+    },
+    {
+      "id": "A06",
+      "name": "Authority verification and protected-domain classification",
+      "description": "Legal source, jurisdiction, exact power, limits, activation state, and domains that cannot be ordinary experiments."
+    },
+    {
+      "id": "A07",
+      "name": "Trial authorization and adoption registration",
+      "description": "Lawful permission to run a bounded trial and the record that an adoption has been claimed or accepted."
+    },
+    {
+      "id": "A08",
+      "name": "Operational activation and implementation",
+      "description": "The distinct act that begins operations, assigns operators, releases resources, and starts clocks."
+    },
+    {
+      "id": "A09",
+      "name": "Monitoring, evidence, review, and challenge",
+      "description": "Baselines, metrics, observations, causal assessment, complaints, interim relief, and corrections."
+    },
+    {
+      "id": "A10",
+      "name": "Amendment, pause, suspension, rollback, renewal, and scaling",
+      "description": "Change control without silent expansion, including new-jurisdiction authorization."
+    },
+    {
+      "id": "A11",
+      "name": "Expiry, termination, closure, remedy, and authority return",
+      "description": "Ending power, restoring prior arrangements, preserving duties, disposing data, and compensating harm."
+    },
+    {
+      "id": "A12",
+      "name": "Readiness, ethics, epistemic, and institutional assessment",
+      "description": "Advisory assessments that expose risk and missing conditions without becoming hidden vetoes."
+    },
+    {
+      "id": "A13",
+      "name": "Facilitators, auditors, assessors, catalyst teams, and technical services",
+      "description": "Qualifications, mandates, conflicts, complaints, liability, and non-monopoly rules."
+    },
+    {
+      "id": "A14",
+      "name": "Funding, procurement, participation support, and incentives",
+      "description": "Financial authority, independent support, conditions, contracts, essential continuity, and appeals."
+    },
+    {
+      "id": "A15",
+      "name": "Institutional regeneration, charter change, and dissolution",
+      "description": "Mandate review, governance redesign, staff and beneficiary continuity, succession, and unresolved duties."
+    },
+    {
+      "id": "A16",
+      "name": "Data, identity, automation, publication, archives, and tool stewardship",
+      "description": "Identity versus office, protected data, AI limits, versioning, forks, failure libraries, and deletion."
+    },
+    {
+      "id": "A17",
+      "name": "Emergency, urgent, and coercive handoffs",
+      "description": "CDEE/ECRC referrals, protected-domain exception routes, SCPA execution, and domain-specific interfaces."
+    },
+    {
+      "id": "A18",
+      "name": "Non-activation, sandboxing, conformance, and interoperability",
+      "description": "Fail-closed pilots, authority-effect labels, handoff acceptance, compatibility, and release controls."
+    }
+  ],
+  "protected_domains": [
+    "detention, arrest, restraint, policing, intelligence, search, seizure, force, weapons, border action, sanctions, and surveillance",
+    "migration status, asylum, deportation, confinement, or mobility restrictions",
+    "essential water, sanitation, food, shelter, healthcare, disability support, education, communication, or basic income",
+    "child protection, guardianship, substitute decision-making, or dependent-person care",
+    "title, tenure, rematriation, eviction, asset seizure, receivership, or permanent land/resource allocation",
+    "irreversible ecological intervention, species release, geoengineering, high-impact extraction, or destruction of protected habitat",
+    "high-risk AI, cyber operations, biotechnology, synthetic biology, nanotechnology, autonomous weapons, or containment",
+    "criminal, civil, administrative, or constitutional adjudication and evidence",
+    "emergency declaration, command, compulsory evacuation, rationing, or continuity powers",
+    "taxation, compulsory levy, funding freeze, benefit withdrawal, debt cancellation, or asset forfeiture"
+  ],
+  "records": [
+    {
+      "id": "GMEAIA-01",
+      "title": "Constituting Instrument, Legal Source, Jurisdiction, and Activation Status",
+      "action_class": "A06",
+      "purpose": "Identifies the presently valid source of authority for a consequential governance action.",
+      "required_content": [
+        "constituting instrument and exact section",
+        "competent authority and office holder or body",
+        "territorial, personal, subject-matter, and temporal jurisdiction",
+        "exact power and prohibited uses",
+        "activation, ratification, delegation, and suspension status",
+        "review, expiry, amendment, and revocation route",
+        "conflicts with other law or authority",
+        "public reasons and protected annex"
+      ],
+      "prohibited_inferences": [
+        "A framework reference, policy goal, software token, vote, consensus, urgency, funding condition, or pilot success cannot substitute for this record."
+      ],
+      "lifecycle_relation": "Required before trial authorization, activation, institutional change, funding condition, emergency action, or coercive handoff."
+    },
+    {
+      "id": "GMEAIA-02",
+      "title": "Method, Tool, Protocol, Template, and Authority-Effect Classification",
+      "action_class": "A18",
+      "purpose": "Classifies an implementation instrument by what it can and cannot legally do.",
+      "required_content": [
+        "tool or method identity and version",
+        "steward and authoritative source",
+        "intended purpose and users",
+        "authority-effect label",
+        "domains and contexts",
+        "required dependencies",
+        "known limitations and failure modes",
+        "deprecation and correction route"
+      ],
+      "prohibited_inferences": [
+        "A template does not create a council, office, court, consent, charter, benefit, emergency power, or enforcement authority."
+      ],
+      "lifecycle_relation": "Must accompany every tool stack, resource card, method recommendation, and software module."
+    },
+    {
+      "id": "GMEAIA-03",
+      "title": "Actor, Agent, Office, Representation, and Technical Capability Record",
+      "action_class": "A05",
+      "purpose": "Distinguishes identity, technical access, organizational role, public office, representation, and fiduciary standing.",
+      "required_content": [
+        "actor identity and type",
+        "human, body, community, organization, AI, sensor, or service role",
+        "office or mandate source",
+        "representation constituency and selection",
+        "technical credentials and capability tokens",
+        "conflicts and recusal",
+        "contact and accountability route",
+        "expiry and succession"
+      ],
+      "prohibited_inferences": [
+        "A DID, UCAN, API key, signature, organizational title, community label, or facilitator certificate does not establish public office or authority to represent others."
+      ],
+      "lifecycle_relation": "Links every action to a responsible actor and separately valid authority."
+    },
+    {
+      "id": "GMEAIA-04",
+      "title": "Sense Signal, Complaint, Opportunity, and Asserted Scope Record",
+      "action_class": "A01",
+      "purpose": "Preserves what an agent reports without treating the report as verified fact.",
+      "required_content": [
+        "signal identity and timestamp",
+        "reporting agent",
+        "plain-language claim",
+        "claimed location and scope",
+        "claimed affected parties",
+        "claimed severity and urgency",
+        "submitted evidence and source restrictions",
+        "requested response or no-response preference"
+      ],
+      "prohibited_inferences": [
+        "Severity, urgency, jurisdiction, causation, affected-party identity, and legal violation remain asserted until separately validated."
+      ],
+      "lifecycle_relation": "May be created by any permitted agent; cannot directly activate a consequential action."
+    },
+    {
+      "id": "GMEAIA-05",
+      "title": "Observation, Evidence, Provenance, and Protected-Source Record",
+      "action_class": "A01",
+      "purpose": "Records observations and supporting material with provenance, uncertainty, consent, and access controls.",
+      "required_content": [
+        "observation method and instrument",
+        "time, place, sampling, and chain",
+        "source identity or protected-source class",
+        "data quality and uncertainty",
+        "consent and lawful basis",
+        "access, retention, and use restrictions",
+        "correction and contest status",
+        "hashes or locators without exposing protected payloads"
+      ],
+      "prohibited_inferences": [
+        "Cryptographic integrity proves that bytes are unchanged, not that the observation is true, lawful, representative, or admissible."
+      ],
+      "lifecycle_relation": "Supports validation, assessment, investigation, or monitoring."
+    },
+    {
+      "id": "GMEAIA-06",
+      "title": "Signal Validation, Corroboration, and Status Record",
+      "action_class": "A02",
+      "purpose": "Classifies a signal as unreviewed, partially corroborated, validated for a stated purpose, disputed, false, or unresolved.",
+      "required_content": [
+        "validation authority and competence",
+        "methods and sources",
+        "independence and conflicts",
+        "claims tested and not tested",
+        "corroboration and contradiction",
+        "uncertainty and minority views",
+        "status and permitted downstream uses",
+        "recheck, correction, and expiry"
+      ],
+      "prohibited_inferences": [
+        "Validation for routing does not establish legal breach, emergency, liability, or authority to act."
+      ],
+      "lifecycle_relation": "Required before any consequential routing that relies on severity, urgency, or identity."
+    },
+    {
+      "id": "GMEAIA-07",
+      "title": "Severity, Urgency, Reversibility, and Uncertainty Assessment",
+      "action_class": "A02",
+      "purpose": "Separates the seriousness and time sensitivity of a problem from the power available to address it.",
+      "required_content": [
+        "harm dimensions and exposed populations",
+        "time horizon and rate of change",
+        "reversibility and lock-in",
+        "confidence and uncertainty",
+        "alternative explanations",
+        "distributional effects",
+        "least-harmful delay and action options",
+        "review clock"
+      ],
+      "prohibited_inferences": [
+        "High severity or immediate urgency cannot create jurisdiction, emergency status, coercive power, or automatic priority over rights."
+      ],
+      "lifecycle_relation": "May inform routing, review clocks, and precautionary recommendations."
+    },
+    {
+      "id": "GMEAIA-08",
+      "title": "Jurisdictional Triage, Competent-Authority Referral, and Acceptance",
+      "action_class": "A02",
+      "purpose": "Routes a validated matter to a potentially competent authority without transferring power by silence.",
+      "required_content": [
+        "referring actor and source record",
+        "candidate authority and jurisdiction",
+        "issue and requested function",
+        "records and protected annex transmitted",
+        "basis for competence",
+        "acceptance, rejection, or request for clarification",
+        "handoff clock and custody",
+        "return, escalation, and unresolved-routing state"
+      ],
+      "prohibited_inferences": [
+        "Referral, receipt, notification, or silence does not create acceptance or transfer authority."
+      ],
+      "lifecycle_relation": "Must reach explicit acceptance before the recipient acts under the referral."
+    },
+    {
+      "id": "GMEAIA-09",
+      "title": "Affected Persons, Communities, Nations, Outsiders, and Transboundary Effects Map",
+      "action_class": "A05",
+      "purpose": "Identifies who bears benefits, burdens, risks, data exposure, exclusion, or irreversible effects.",
+      "required_content": [
+        "directly affected persons and groups",
+        "residents, users, workers, tenants, migrants, minorities, and dissenters",
+        "affected Indigenous nations",
+        "neighbouring and downstream communities",
+        "future and non-human interests where applicable",
+        "affected outsiders and non-members",
+        "representation gaps and internal plurality",
+        "notice, participation, support, and remedy needs"
+      ],
+      "prohibited_inferences": [
+        "A majority, host institution, platform, geographic label, or community leadership cannot erase internal minorities or affected outsiders."
+      ],
+      "lifecycle_relation": "Required before consent, trial authorization, scaling, or institutional redesign."
+    },
+    {
+      "id": "GMEAIA-10",
+      "title": "Affected Indigenous Nation, Applicable Indigenous Law, and Protected-Knowledge Authority",
+      "action_class": "A05",
+      "purpose": "Records the specific affected nation or nations and their own authority, law, representatives, and knowledge controls.",
+      "required_content": [
+        "nation or people as self-identified",
+        "territorial, relational, and subject-matter connection",
+        "recognized representatives and internal plurality",
+        "applicable Indigenous law and consent route",
+        "non-engagement, refusal, and withdrawal",
+        "sacred or restricted knowledge controls",
+        "benefit sharing and non-transfer",
+        "complaint and correction route"
+      ],
+      "prohibited_inferences": [
+        "A global Indigenous representative, retired framework, external elder, quota, facilitator, or advisory council cannot consent or speak for an affected nation."
+      ],
+      "lifecycle_relation": "Controls affected-nation participation and protected knowledge across the lifecycle."
+    },
+    {
+      "id": "GMEAIA-11",
+      "title": "Notice, Accessibility, Independent Advice, and Participation Support",
+      "action_class": "A05",
+      "purpose": "Ensures that participation is informed, accessible, materially possible, and not dependent on adopting the proposed method.",
+      "required_content": [
+        "notice content and languages",
+        "accessible, offline, oral, assisted, and disability formats",
+        "time and location",
+        "independent legal, technical, cultural, or financial advice",
+        "care, transport, connectivity, income, and safety support",
+        "anti-retaliation and anonymity options",
+        "records access and correction",
+        "non-participation and alternative participation routes"
+      ],
+      "prohibited_inferences": [
+        "Lack of digital access, literacy, identity documents, money, certified facilitators, or agreement with GGF methods cannot reduce standing."
+      ],
+      "lifecycle_relation": "Required for consequential consent, deliberation, review, and remedy."
+    },
+    {
+      "id": "GMEAIA-12",
+      "title": "Proposal Intake, Source Signal, Sponsor, and Status Record",
+      "action_class": "A03",
+      "purpose": "Records a proposed response without implying endorsement or authority.",
+      "required_content": [
+        "proposal identity and sponsor",
+        "source signals and evidence",
+        "problem definition",
+        "intended beneficiaries and affected parties",
+        "requested authority and resources",
+        "status and normative force",
+        "conflicts and funding interests",
+        "withdrawal and correction route"
+      ],
+      "prohibited_inferences": [
+        "A proposal, algorithmic recommendation, community petition, facilitator recommendation, or council agenda item is not consent or authorization."
+      ],
+      "lifecycle_relation": "Opens proposal development and deliberation."
+    },
+    {
+      "id": "GMEAIA-13",
+      "title": "Proposal Objective, Alternatives, Rights Effects, and Reversibility Record",
+      "action_class": "A03",
+      "purpose": "Makes the substantive choice and its alternatives reviewable before method or authority decisions.",
+      "required_content": [
+        "objectives and success conditions",
+        "action and non-action alternatives",
+        "rights and essential-service effects",
+        "distribution of benefits and burdens",
+        "reversibility, rollback, and stranded commitments",
+        "resource, staffing, and technology needs",
+        "known unknowns and failure modes",
+        "proposed duration, review, and exit"
+      ],
+      "prohibited_inferences": [
+        "A good objective or reversible design does not supply authority; a low-cost pilot can still violate rights."
+      ],
+      "lifecycle_relation": "Required before deliberation and trial authorization."
+    },
+    {
+      "id": "GMEAIA-14",
+      "title": "Method Selection, Cultural Adaptation, Autonomy Statement, and Authority Effect",
+      "action_class": "A04",
+      "purpose": "Records why a deliberative, assessment, technical, or implementation method was chosen and how it was adapted.",
+      "required_content": [
+        "method and version",
+        "decision owner and participants",
+        "selection rationale and alternatives",
+        "community-chosen adaptations",
+        "self-identification and internal plurality",
+        "authority-effect label",
+        "known biases and exclusions",
+        "review, fork, and abandonment route"
+      ],
+      "prohibited_inferences": [
+        "Cultural adaptation cannot classify a community from outside, essentialize identity, or authorize acts beyond the adopting authority."
+      ],
+      "lifecycle_relation": "Links selected methods to their bounded purpose."
+    },
+    {
+      "id": "GMEAIA-15",
+      "title": "Deliberation Plan, Facilitation Mandate, Record, Dissent, and Reasons",
+      "action_class": "A04",
+      "purpose": "Defines how a proposal will be deliberated and how facilitation remains subordinate to the lawful decision body.",
+      "required_content": [
+        "decision authority and question",
+        "participant and constituency map",
+        "facilitator mandate and conflicts",
+        "evidence and knowledge modes",
+        "agenda, speaking, accessibility, and safety rules",
+        "dissent and minority-report process",
+        "decision rule and reasons",
+        "recording, confidentiality, and correction"
+      ],
+      "prohibited_inferences": [
+        "Facilitators, ethics panels, epistemic assessors, algorithms, or ceremonies cannot replace the decision authority."
+      ],
+      "lifecycle_relation": "Produces a reasoned deliberative record, not authorization by itself."
+    },
+    {
+      "id": "GMEAIA-16",
+      "title": "Epistemic Readiness, Provenance, Disinformation, and Trust Assessment",
+      "action_class": "A12",
+      "purpose": "Provides an advisory account of whether the information environment can support a decision.",
+      "required_content": [
+        "assessment authority, method, and independence",
+        "claims and evidence reviewed",
+        "provenance and source diversity",
+        "missing, inaccessible, or protected knowledge",
+        "disinformation exposure",
+        "language and accessibility gaps",
+        "trust and power conditions",
+        "uncertainty, dissent, recommended repairs, and non-veto status"
+      ],
+      "prohibited_inferences": [
+        "A threshold, score, certification failure, or remediation recommendation cannot suspend a lawful decision or create an emergency exception."
+      ],
+      "lifecycle_relation": "The competent decision body records how it responds to the assessment."
+    },
+    {
+      "id": "GMEAIA-17",
+      "title": "Ethics, Harm, Rights, and Anti-Capture Advisory Review",
+      "action_class": "A12",
+      "purpose": "Surfaces ethical risks, rights impacts, capture, conflicts, and missing safeguards without becoming hidden approval power.",
+      "required_content": [
+        "review body and competence",
+        "ethical sources and plural foundations",
+        "affected-party and rights analysis",
+        "capture and conflict analysis",
+        "protected knowledge and non-transfer",
+        "foreseeable harms and alternatives",
+        "recommendations and dissent",
+        "advisory status and response requirement"
+      ],
+      "prohibited_inferences": [
+        "An ethics gate, MOS alignment, Indigenous-framework representative, or certified reviewer cannot create or withhold legal authority."
+      ],
+      "lifecycle_relation": "Must be answered with reasons where the governing charter requires review."
+    },
+    {
+      "id": "GMEAIA-18",
+      "title": "Consent Requirement, Holder, Scope, and Dependency Map",
+      "action_class": "A05",
+      "purpose": "Determines which forms of consent, authorization, consultation, notice, assent, or collective decision are actually required.",
+      "required_content": [
+        "proposed action and affected interests",
+        "consent or decision holders",
+        "legal or customary basis",
+        "individual, collective, fiduciary, parental, worker, member, or affected-nation form",
+        "scope and duration",
+        "dependencies and sequencing",
+        "capacity, representation, and internal dissent",
+        "refusal, withdrawal, and remedy"
+      ],
+      "prohibited_inferences": [
+        "Consent cannot create jurisdiction over third parties or waive non-derogable rights; one consent holder cannot waive another's rights."
+      ],
+      "lifecycle_relation": "Precedes collection of consent and trial authorization."
+    },
+    {
+      "id": "GMEAIA-19",
+      "title": "Consent, Refusal, Withdrawal, and Non-Retaliation Record",
+      "action_class": "A05",
+      "purpose": "Records a decision by a valid holder without reducing it to a free-text field.",
+      "required_content": [
+        "holder and verified capacity",
+        "information received",
+        "decision and scope",
+        "conditions and reservations",
+        "time, duration, and review",
+        "withdrawal process",
+        "internal dissent and minority protection",
+        "non-retaliation and consequences of refusal"
+      ],
+      "prohibited_inferences": [
+        "Silence, attendance, use of a service, receipt of support, technical signature, or absence of objection is not consent unless valid law expressly establishes it with safeguards."
+      ],
+      "lifecycle_relation": "Must remain linked to the exact proposal and may require renewal."
+    },
+    {
+      "id": "GMEAIA-20",
+      "title": "Authority Verification, Decision Class, and Protected-Domain Classification",
+      "action_class": "A06",
+      "purpose": "Confirms whether the proposed action is within ordinary experimentation or requires a specialized constitutional route.",
+      "required_content": [
+        "authority record",
+        "decision class and consequence",
+        "affected domain",
+        "protected-domain screening",
+        "applicable constitutional interfaces",
+        "non-derogable rights and essential duties",
+        "required independent authorizations",
+        "verification result and unresolved gaps"
+      ],
+      "prohibited_inferences": [
+        "Method simplicity, local popularity, reversibility, urgency, or expected benefit cannot downgrade a protected domain."
+      ],
+      "lifecycle_relation": "Fail-closed gate before trial authorization."
+    },
+    {
+      "id": "GMEAIA-21",
+      "title": "Trial Authorization, Conditions, Scope, and Non-Precedent Record",
+      "action_class": "A07",
+      "purpose": "Authorizes a bounded experiment without converting it into permanent policy or broader precedent.",
+      "required_content": [
+        "competent authority and exact power",
+        "proposal and consent records",
+        "participants, territory, services, and assets",
+        "duration and activation window",
+        "conditions, exclusions, and essential minimums",
+        "monitoring, review, rollback, and remedy",
+        "funding and operator",
+        "non-precedent and no-silent-scaling clause"
+      ],
+      "prohibited_inferences": [
+        "A trial authorization does not authorize coercive execution, expansion to nonparticipants, new jurisdictions, permanent enactment, or use outside its conditions."
+      ],
+      "lifecycle_relation": "Required for consequential experiments."
+    },
+    {
+      "id": "GMEAIA-22",
+      "title": "Adoption Claim, Deliberative Acceptance, and Registration Record",
+      "action_class": "A07",
+      "purpose": "Records that an entity claims to adopt or accept a proposal and states the legal meaning of that claim.",
+      "required_content": [
+        "adopting entity and representation",
+        "proposal and version",
+        "decision process and reasons",
+        "authority-effect status",
+        "consent and authority references",
+        "trial or permanent character",
+        "unresolved conditions",
+        "registration, correction, and challenge"
+      ],
+      "prohibited_inferences": [
+        "An `adopt()` event without complete authority references means only that adoption was claimed; it is not binding or active."
+      ],
+      "lifecycle_relation": "May precede or follow trial authorization depending on local law, but cannot replace it."
+    },
+    {
+      "id": "GMEAIA-23",
+      "title": "Operational Activation, Start Conditions, Operator, and Clock Record",
+      "action_class": "A08",
+      "purpose": "Distinctly starts an authorized action and begins its legal, operational, review, and expiry clocks.",
+      "required_content": [
+        "authorization and adoption records",
+        "activation authority",
+        "operator and accountable lead",
+        "preconditions satisfied",
+        "start time and territory",
+        "resources released",
+        "monitoring and incident channels",
+        "review, expiry, stop, and rollback clocks"
+      ],
+      "prohibited_inferences": [
+        "Authorization, registration, smart-contract creation, software deployment, or funding approval does not equal activation unless this record is valid."
+      ],
+      "lifecycle_relation": "Makes the action operational."
+    },
+    {
+      "id": "GMEAIA-24",
+      "title": "Implementation Plan, Responsibilities, Dependencies, and Service Boundaries",
+      "action_class": "A08",
+      "purpose": "Translates authorization into accountable tasks without expanding scope.",
+      "required_content": [
+        "work packages and responsible actors",
+        "affected persons and participation",
+        "dependencies and handoffs",
+        "budgets and procurement",
+        "data and technology",
+        "essential-service and safety boundaries",
+        "incident, complaint, and change control",
+        "completion and closure conditions"
+      ],
+      "prohibited_inferences": [
+        "An implementer cannot reinterpret broad goals as new powers or treat operational convenience as amendment."
+      ],
+      "lifecycle_relation": "Controls day-to-day implementation."
+    },
+    {
+      "id": "GMEAIA-25",
+      "title": "Non-Derogable Rights, Essential Services, Safety, and Continuing Duties Record",
+      "action_class": "A08",
+      "purpose": "Protects rights and duties that cannot be experimented away or allowed to expire by default.",
+      "required_content": [
+        "applicable rights and safeguards",
+        "essential water, food, shelter, health, income, disability, education, safety, and communication duties",
+        "child and dependent-person protection",
+        "worker and pension obligations",
+        "environmental and restoration duties",
+        "evidence and records preservation",
+        "continuity arrangements",
+        "monitoring and remedy"
+      ],
+      "prohibited_inferences": [
+        "A sunset, funding withdrawal, failed metric, community vote, or operator exit cannot terminate continuing duties."
+      ],
+      "lifecycle_relation": "Must be linked to every trial or institutional transition that could affect protected interests."
+    },
+    {
+      "id": "GMEAIA-26",
+      "title": "Funding Authority, Participation Support, Independence, and Non-Conformity Record",
+      "action_class": "A14",
+      "purpose": "Separates lawful funding from pressure to accept a method, ideology, institutional redesign, or data exposure.",
+      "required_content": [
+        "funding source and authority",
+        "purpose, amount, recipient, and custodian",
+        "eligibility and evidence",
+        "participation support independent of substantive agreement",
+        "conditions and prohibited conditions",
+        "worker, beneficiary, and essential-function continuity",
+        "notice, review, appeal, and correction",
+        "expiry, recovery, and unused funds"
+      ],
+      "prohibited_inferences": [
+        "A readiness score, ethics alignment, module count, public reputation, or method adoption cannot automatically create, deny, freeze, or claw back funding."
+      ],
+      "lifecycle_relation": "Required before money or material support becomes consequential."
+    },
+    {
+      "id": "GMEAIA-27",
+      "title": "Procurement, Contract, Vendor, Platform, and Technical-Service Record",
+      "action_class": "A14",
+      "purpose": "Makes private and technical implementation relationships visible and bounded.",
+      "required_content": [
+        "procuring authority and process",
+        "vendor and beneficial ownership",
+        "service, deliverables, and authority effect",
+        "data, security, and intellectual property",
+        "subcontractors and conflicts",
+        "performance and audit",
+        "termination, continuity, and migration",
+        "liability, remedy, and records return"
+      ],
+      "prohibited_inferences": [
+        "A vendor, platform, smart contract, cloud service, or algorithm cannot become the decision authority or withhold public records and services through lock-in."
+      ],
+      "lifecycle_relation": "Controls outsourced implementation."
+    },
+    {
+      "id": "GMEAIA-28",
+      "title": "Data Purpose, Lawful Basis, Access Class, Retention, Publication, and Withdrawal",
+      "action_class": "A16",
+      "purpose": "Defines how governance data are collected, used, linked, published, corrected, and disposed.",
+      "required_content": [
+        "data categories and subjects",
+        "purpose and lawful basis",
+        "minimum necessary fields",
+        "access class and recipients",
+        "protected knowledge and source restrictions",
+        "retention and deletion",
+        "publication and anonymization",
+        "correction, withdrawal, breach, and remedy"
+      ],
+      "prohibited_inferences": [
+        "Public-by-default, transparency, content addressing, blockchain, or learning goals cannot override confidentiality, protected knowledge, safety, correction, or lawful deletion."
+      ],
+      "lifecycle_relation": "Required for all digital and analog records."
+    },
+    {
+      "id": "GMEAIA-29",
+      "title": "AI, Sensor, Model, Algorithm, and Automation Role Record",
+      "action_class": "A16",
+      "purpose": "Defines what automated systems may observe, recommend, route, or execute and what decisions are prohibited.",
+      "required_content": [
+        "system identity, version, operator, and purpose",
+        "training or calibration sources",
+        "inputs, outputs, and confidence",
+        "human accountable reviewer",
+        "bias, security, and failure analysis",
+        "prohibited decisions and protected domains",
+        "logging, challenge, correction, and shutdown",
+        "retention and vendor dependencies"
+      ],
+      "prohibited_inferences": [
+        "AI and sensors cannot provide consent, establish representation, declare an emergency, determine jurisdiction, authorize adoption, activate powers, adjudicate, sanction, or renew authority."
+      ],
+      "lifecycle_relation": "Required before automated assistance is used."
+    },
+    {
+      "id": "GMEAIA-30",
+      "title": "Monitoring Plan, Baseline, Metric, Counterfactual, and Review Schedule",
+      "action_class": "A09",
+      "purpose": "Defines what will be observed and how success or harm will be assessed without making metrics self-executing.",
+      "required_content": [
+        "objectives and baseline",
+        "metrics and qualitative evidence",
+        "counterfactual and comparison",
+        "methods, uncertainty, and gaming risks",
+        "distributional and rights indicators",
+        "data responsibilities",
+        "review schedule and thresholds for human review",
+        "correction and retirement"
+      ],
+      "prohibited_inferences": [
+        "A threshold, dashboard, score, sentiment analysis, reputation change, or KPI cannot automatically scale, suspend, fund, punish, dissolve, or renew an action."
+      ],
+      "lifecycle_relation": "Begins with activation and supports later review."
+    },
+    {
+      "id": "GMEAIA-31",
+      "title": "Outcome Observation, Incident, Side Effect, and Distributional Impact Record",
+      "action_class": "A09",
+      "purpose": "Captures what occurred, including unintended effects and unequal burdens.",
+      "required_content": [
+        "time and scope",
+        "outcomes and incidents",
+        "affected-party reports",
+        "rights and essential-service effects",
+        "distributional impacts",
+        "operator and external factors",
+        "data quality and dissent",
+        "urgent referrals and correction"
+      ],
+      "prohibited_inferences": [
+        "Observed correlation or public sentiment does not establish causation, success, failure, breach, or legitimacy."
+      ],
+      "lifecycle_relation": "Feeds causal assessment and review."
+    },
+    {
+      "id": "GMEAIA-32",
+      "title": "Causal Assessment, Contribution, External Shock, and Uncertainty Record",
+      "action_class": "A09",
+      "purpose": "Separates measured change from a reasoned account of what caused it.",
+      "required_content": [
+        "question and assessor",
+        "methods and evidence",
+        "counterfactual",
+        "alternative causes and external shocks",
+        "contribution and attribution",
+        "uncertainty and dissent",
+        "limits on use",
+        "review and correction"
+      ],
+      "prohibited_inferences": [
+        "A successful outcome does not prove the method caused it; a poor outcome does not prove operator misconduct or justify automatic withdrawal."
+      ],
+      "lifecycle_relation": "Supports review, learning, and remedy."
+    },
+    {
+      "id": "GMEAIA-33",
+      "title": "Midpoint Review, Corrective Action, and Continued-Operation Decision",
+      "action_class": "A09",
+      "purpose": "Determines whether an active trial continues unchanged, changes, pauses, or terminates.",
+      "required_content": [
+        "review authority and independence",
+        "records reviewed",
+        "affected-party evidence",
+        "rights, safety, and service status",
+        "metric and causal assessment",
+        "conditions and corrective actions",
+        "decision, reasons, and dissent",
+        "next review and challenge"
+      ],
+      "prohibited_inferences": [
+        "The original adopter or operator cannot unilaterally certify success where conflicts require independent review."
+      ],
+      "lifecycle_relation": "May trigger amendment, pause, remedy, or continued operation."
+    },
+    {
+      "id": "GMEAIA-34",
+      "title": "Complaint, Challenge, Interim Relief, Appeal, and Independent Review",
+      "action_class": "A09",
+      "purpose": "Provides an effective route to contest signals, scores, methods, consent, authority, implementation, publication, or harm.",
+      "required_content": [
+        "complainant and standing",
+        "challenged action and requested relief",
+        "notice and evidence access",
+        "independent reviewer",
+        "interim relief and anti-retaliation",
+        "decision and reasons",
+        "appeal or reconsideration",
+        "remedy and correction propagation"
+      ],
+      "prohibited_inferences": [
+        "A complaint route is not effective if the challenged facilitator, funder, platform, adopter, or operator controls the outcome."
+      ],
+      "lifecycle_relation": "Available throughout the lifecycle."
+    },
+    {
+      "id": "GMEAIA-35",
+      "title": "Amendment, Scope Change, Version Change, and New-Risk Assessment",
+      "action_class": "A10",
+      "purpose": "Prevents operational changes from silently expanding authority.",
+      "required_content": [
+        "current authorization and version",
+        "proposed change and rationale",
+        "materiality assessment",
+        "new affected parties, risks, data, or jurisdictions",
+        "renewed consent and authority needs",
+        "technical and budget changes",
+        "approval and effective date",
+        "rollback and supersession"
+      ],
+      "prohibited_inferences": [
+        "Feature updates, local adaptation, rule-engine changes, vendor updates, or successful practice cannot amend authority by deployment."
+      ],
+      "lifecycle_relation": "Required for material changes."
+    },
+    {
+      "id": "GMEAIA-36",
+      "title": "Pause, Suspension, Stop, Rollback, and Safe-State Record",
+      "action_class": "A10",
+      "purpose": "Records temporary or protective cessation and restoration of a safe baseline.",
+      "required_content": [
+        "trigger and authority",
+        "scope and start",
+        "safety and service continuity",
+        "data and asset custody",
+        "operator duties",
+        "review and maximum duration",
+        "rollback target",
+        "resumption or termination conditions"
+      ],
+      "prohibited_inferences": [
+        "A technical kill switch, facilitator request, metric threshold, or funder notice cannot suspend lawful rights or services without authority."
+      ],
+      "lifecycle_relation": "Used for incidents, consent withdrawal, failed preconditions, or review."
+    },
+    {
+      "id": "GMEAIA-37",
+      "title": "Renewal, Reauthorization, and Active Re-Consent Record",
+      "action_class": "A10",
+      "purpose": "Requires active justification before temporary authority continues.",
+      "required_content": [
+        "expiring action and authority",
+        "performance and harm review",
+        "remaining need and alternatives",
+        "affected-party and consent update",
+        "jurisdiction and law update",
+        "conditions and amendments",
+        "new duration and clocks",
+        "decision, dissent, and challenge"
+      ],
+      "prohibited_inferences": [
+        "Silence, inertia, continuing software operation, unused sunset logic, or absence of complaint is not renewal."
+      ],
+      "lifecycle_relation": "Required before expiry where continuation is sought."
+    },
+    {
+      "id": "GMEAIA-38",
+      "title": "Expiry, Automatic Deactivation, and Continuing-Duty Transition Record",
+      "action_class": "A11",
+      "purpose": "Records the legal and operational effects of reaching an expiry condition.",
+      "required_content": [
+        "expired authority and time",
+        "automatic deactivation steps",
+        "services and duties that continue",
+        "open cases and claims",
+        "data and asset custody",
+        "operator access revocation",
+        "temporary successor if needed",
+        "notice and review"
+      ],
+      "prohibited_inferences": [
+        "Expiry does not erase harms, debts, pensions, records duties, restoration, child protection, or essential-service obligations."
+      ],
+      "lifecycle_relation": "Begins closure unless renewed."
+    },
+    {
+      "id": "GMEAIA-39",
+      "title": "Termination, Closure, Authority Return, Asset Return, and Succession Record",
+      "action_class": "A11",
+      "purpose": "Completes the end of an action or institution and returns power to its lawful source.",
+      "required_content": [
+        "termination authority and basis",
+        "effective time",
+        "operators and access removed",
+        "assets, funds, licences, and infrastructure returned or transferred",
+        "staff, beneficiaries, and service continuity",
+        "records and data disposition",
+        "unresolved duties and successor",
+        "final reasons, audit, and challenge"
+      ],
+      "prohibited_inferences": [
+        "A celebratory sunset, dashboard status, archive entry, or software deletion is not lawful closure."
+      ],
+      "lifecycle_relation": "Required for complete lifecycle conformance."
+    },
+    {
+      "id": "GMEAIA-40",
+      "title": "Learning Artifact, Failure Library, Story Bank, and Public Memory Record",
+      "action_class": "A16",
+      "purpose": "Permits learning without converting participation into permanent exposure.",
+      "required_content": [
+        "source action and purpose",
+        "content and factual review",
+        "consent for identifiable material",
+        "anonymization and residual risk",
+        "protected and excluded content",
+        "access and reuse licence",
+        "withdrawal, correction, and expiry",
+        "responsible publisher and remedy"
+      ],
+      "prohibited_inferences": [
+        "Consent to a pilot, employment, funding, facilitation, or testimony is not consent to permanent public storytelling."
+      ],
+      "lifecycle_relation": "Produces a bounded learning resource."
+    },
+    {
+      "id": "GMEAIA-41",
+      "title": "Record Correction, Retraction, Supersession, and Dependency Propagation",
+      "action_class": "A11",
+      "purpose": "Corrects governance records and every dependent decision without pretending immutable systems cannot change.",
+      "required_content": [
+        "record and error",
+        "correcting authority",
+        "corrected content and reason",
+        "affected persons and decisions",
+        "dependency graph and propagation",
+        "public and protected notices",
+        "interim relief",
+        "archive and audit trail"
+      ],
+      "prohibited_inferences": [
+        "Append-only storage may preserve history but cannot preserve an error as the current authoritative state."
+      ],
+      "lifecycle_relation": "Required when signals, identities, scores, consent, authority, or outcomes are wrong."
+    },
+    {
+      "id": "GMEAIA-42",
+      "title": "Harm, Remedy, Restitution, Compensation, Rehabilitation, and Non-Repetition Record",
+      "action_class": "A11",
+      "purpose": "Records repair for wrongful or harmful implementation.",
+      "required_content": [
+        "harm and affected parties",
+        "causal and legal basis",
+        "urgent support",
+        "restoration or restitution",
+        "financial compensation",
+        "record and reputation correction",
+        "institutional or technical change",
+        "monitoring, closure, and appeal"
+      ],
+      "prohibited_inferences": [
+        "Ending a pilot or apologizing does not discharge remedy."
+      ],
+      "lifecycle_relation": "May survive termination until complete."
+    },
+    {
+      "id": "GMEAIA-43",
+      "title": "Scaling Recommendation, Transferability Limits, and Evidence Package",
+      "action_class": "A10",
+      "purpose": "Converts pilot learning into a bounded recommendation rather than automatic expansion.",
+      "required_content": [
+        "source trial and context",
+        "evidence and uncertainty",
+        "necessary conditions",
+        "failed and excluded contexts",
+        "rights and distributional effects",
+        "resource and capacity needs",
+        "recommended scope and alternatives",
+        "non-authority status"
+      ],
+      "prohibited_inferences": [
+        "Success, reputation, funding tier, adoption count, or benchmark attainment cannot scale an action."
+      ],
+      "lifecycle_relation": "May be submitted to a new competent authority."
+    },
+    {
+      "id": "GMEAIA-44",
+      "title": "Scaling, Replication, New-Jurisdiction, and Permanent-Enactment Authorization",
+      "action_class": "A10",
+      "purpose": "Authorizes a new instance, jurisdiction, population, or permanent rule through its own lawful process.",
+      "required_content": [
+        "new authority and jurisdiction",
+        "proposal and scaling recommendation",
+        "new affected-party map",
+        "local law and consent",
+        "adaptation and alternatives",
+        "funding, operator, and data",
+        "review, sunset or permanent amendment route",
+        "reasons and challenge"
+      ],
+      "prohibited_inferences": [
+        "A template, network effect, treaty aspiration, successful pilot, or cross-platform compatibility cannot create this authorization."
+      ],
+      "lifecycle_relation": "Creates a new bounded authority chain, not an extension by inference."
+    },
+    {
+      "id": "GMEAIA-45",
+      "title": "Institutional Purpose, Mandate, Power, and Obsolescence Audit",
+      "action_class": "A15",
+      "purpose": "Assesses whether an institution or programme still serves its lawful mandate.",
+      "required_content": [
+        "charter and mandate",
+        "auditor and independence",
+        "beneficiaries and affected parties",
+        "performance, harms, and alternatives",
+        "power and capture analysis",
+        "essential and unresolved functions",
+        "options: retain, reform, transfer, merge, or close",
+        "advisory status, dissent, and response"
+      ],
+      "prohibited_inferences": [
+        "A scorecard, AI diagnostic, trust score, or audit finding cannot amend or dissolve an institution."
+      ],
+      "lifecycle_relation": "Feeds charter review or closure authorization."
+    },
+    {
+      "id": "GMEAIA-46",
+      "title": "Charter Amendment, Governance Redesign, Constituency, and Decision-Rights Record",
+      "action_class": "A15",
+      "purpose": "Constitutes lawful institutional redesign, including councils, voting shares, vetoes, and representation.",
+      "required_content": [
+        "charter-amendment authority and procedure",
+        "proposed bodies and powers",
+        "constituencies and selection",
+        "mandates, conflicts, removal, and accountability",
+        "rights and minority safeguards",
+        "affected Indigenous nation authority",
+        "transition and legal continuity",
+        "approval, entry into force, review, and challenge"
+      ],
+      "prohibited_inferences": [
+        "A governance blueprint, facilitator recommendation, fixed percentage, youth or future-generation label, or toolkit adoption cannot amend a charter."
+      ],
+      "lifecycle_relation": "Required before governance redesign becomes operative."
+    },
+    {
+      "id": "GMEAIA-47",
+      "title": "Institutional Funding Eligibility, Condition, Incentive, and Appeal Record",
+      "action_class": "A14",
+      "purpose": "Separates institutional finance from coercive reform leverage.",
+      "required_content": [
+        "funding authority and programme",
+        "eligibility criteria and evidence",
+        "condition and relation to mandate",
+        "essential-function and beneficiary impact",
+        "worker and pension safeguards",
+        "independence from method or ideology conformity",
+        "decision, reasons, and duration",
+        "appeal, correction, and transition support"
+      ],
+      "prohibited_inferences": [
+        "Module counts, readiness or regeneration tiers, public pressure, or GGF alignment cannot automatically grant voting rights, freeze funds, or force charter change."
+      ],
+      "lifecycle_relation": "Controls funding tied to institutional transition."
+    },
+    {
+      "id": "GMEAIA-48",
+      "title": "Institutional Transition, Worker, Beneficiary, Contract, and Service Continuity Record",
+      "action_class": "A15",
+      "purpose": "Protects people and obligations during reform, merger, transfer, or downsizing.",
+      "required_content": [
+        "transition authority and plan",
+        "workers, unions, pensions, and benefits",
+        "beneficiaries and essential functions",
+        "contracts, grants, and pending cases",
+        "assets, debts, and licences",
+        "data, archives, and confidentiality",
+        "successor and contingency",
+        "notice, participation, remedy, and review"
+      ],
+      "prohibited_inferences": [
+        "Institutional agility does not erase labour, pension, beneficiary, contractual, or public-service duties."
+      ],
+      "lifecycle_relation": "Required before material organizational transition."
+    },
+    {
+      "id": "GMEAIA-49",
+      "title": "Institutional Dissolution, Successor, Dark Archive, and Unresolved-Duty Custody",
+      "action_class": "A15",
+      "purpose": "Closes an institution or programme through lawful authority and custodianship.",
+      "required_content": [
+        "dissolution authority and legal basis",
+        "effective date and scope",
+        "successor institutions",
+        "staff and beneficiary arrangements",
+        "assets, liabilities, and restricted funds",
+        "records, archives, access, and deletion",
+        "pending claims, duties, and cases",
+        "final audit, remedy, and challenge"
+      ],
+      "prohibited_inferences": [
+        "A purpose audit, sunset date, funding loss, hostile leadership, public score, or Dark Archive deposit cannot itself dissolve an institution."
+      ],
+      "lifecycle_relation": "Completes institutional closure."
+    },
+    {
+      "id": "GMEAIA-50",
+      "title": "Facilitator Qualification, Appointment, Mandate, Conflict, Complaint, and Removal",
+      "action_class": "A13",
+      "purpose": "Makes facilitators accountable without creating a professional monopoly.",
+      "required_content": [
+        "qualification and local-equivalence route",
+        "appointing body and participant choice",
+        "mandate and prohibited acts",
+        "cultural and trauma competence",
+        "conflicts, funding, and recusal",
+        "complaint, replacement, and removal",
+        "liability and insurance where relevant",
+        "duration and record custody"
+      ],
+      "prohibited_inferences": [
+        "Certification does not create decision authority; lack of certification cannot exclude locally trusted competence or block urgent access to participation."
+      ],
+      "lifecycle_relation": "Required for consequential facilitated processes."
+    },
+    {
+      "id": "GMEAIA-51",
+      "title": "Auditor, Assessor, Ethics Reviewer, and Epistemic Reviewer Independence Record",
+      "action_class": "A13",
+      "purpose": "Defines independence, competence, funding, evidence access, dissent, and appeal for review functions.",
+      "required_content": [
+        "reviewer identity and mandate",
+        "selection and qualification",
+        "funding and beneficial interests",
+        "conflicts and recusal",
+        "method and evidence access",
+        "minority reports",
+        "publication and protected annex",
+        "complaint, correction, and removal"
+      ],
+      "prohibited_inferences": [
+        "The reviewer cannot simultaneously design, sell, fund, operate, and finally adjudicate the same method without explicit safeguards and independent appeal."
+      ],
+      "lifecycle_relation": "Required for consequential audits and gates."
+    },
+    {
+      "id": "GMEAIA-52",
+      "title": "Catalyst Team, Liaison, Evolution Cell, and Technical-Assistance Mandate",
+      "action_class": "A13",
+      "purpose": "Bounds support actors embedded in communities or institutions.",
+      "required_content": [
+        "host invitation and appointing authority",
+        "purpose and tasks",
+        "no-command and no-representation limits",
+        "access to people, systems, and records",
+        "funding and conflicts",
+        "staff and community protections",
+        "duration, exit, and handover",
+        "complaints, liability, and learning"
+      ],
+      "prohibited_inferences": [
+        "Support, expertise, embedded presence, emergency context, or host dependency does not create authority to govern the host."
+      ],
+      "lifecycle_relation": "Required before external implementation support begins."
+    },
+    {
+      "id": "GMEAIA-53",
+      "title": "Tool Core, Fork, Schema, Compatibility, Version, Deprecation, and Stewardship Record",
+      "action_class": "A16",
+      "purpose": "Keeps modular tools adaptable without invisible central control or unsafe divergence.",
+      "required_content": [
+        "tool and schema identity",
+        "normative core versus optional profile",
+        "steward and change process",
+        "compatibility promises",
+        "fork rights and labels",
+        "security and migration support",
+        "deprecation and rollback",
+        "dispute, correction, and archive"
+      ],
+      "prohibited_inferences": [
+        "The central steward cannot make local legal decisions through a software update; a fork cannot claim compatibility while omitting constitutional fields."
+      ],
+      "lifecycle_relation": "Required for EGP profiles and tool libraries."
+    },
+    {
+      "id": "GMEAIA-54",
+      "title": "Offline, Oral, Paper, Assisted, and Low-Tech Record Equivalence",
+      "action_class": "A16",
+      "purpose": "Provides equal dignity and effect to non-digital participation and records.",
+      "required_content": [
+        "record form and custodian",
+        "witnessing or attestation",
+        "translation and accessibility",
+        "identity and representation checks",
+        "digitization without alteration",
+        "confidentiality and protected knowledge",
+        "correction and duplicate resolution",
+        "service and remedy parity"
+      ],
+      "prohibited_inferences": [
+        "Digital signatures, blockchain, app access, or machine readability cannot be prerequisites for standing, service, consent, challenge, or remedy."
+      ],
+      "lifecycle_relation": "Required wherever digital systems are offered."
+    },
+    {
+      "id": "GMEAIA-55",
+      "title": "Emergency Signal, CDEE Referral, Mission Acceptance, and ECRC Interface",
+      "action_class": "A17",
+      "purpose": "Routes urgent matters into the harmonized emergency architecture without allowing implementation tools to declare or command emergencies.",
+      "required_content": [
+        "source signal and validation",
+        "CDEE event identity",
+        "candidate emergency authority",
+        "declaration or acceptance record",
+        "mission and information scope",
+        "command and operational roles",
+        "clocks, review, termination, and return",
+        "data, finance, remedy, and unresolved risk"
+      ],
+      "prohibited_inferences": [
+        "A crisis stack, 72-hour kit, urgent score, PIS notification, facilitator, AI alert, or community adoption cannot declare an emergency."
+      ],
+      "lifecycle_relation": "Required before emergency powers or cross-domain missions activate."
+    },
+    {
+      "id": "GMEAIA-56",
+      "title": "Protected-Domain Experiment Exception and Specialized-Interface Authorization",
+      "action_class": "A17",
+      "purpose": "Allows carefully bounded pilots in protected domains only through the controlling constitutional interface.",
+      "required_content": [
+        "protected domain and risk",
+        "controlling framework and interface",
+        "specialized authority and safeguards",
+        "participants and exclusions",
+        "essential minimums and non-derogation",
+        "independent monitoring and stop authority",
+        "duration, rollback, and remedy",
+        "public reasons and protected annex"
+      ],
+      "prohibited_inferences": [
+        "Ordinary trial authorization cannot cover detention, policing, essential-service deprivation, migration status, title transfer, irreversible ecology, high-risk technology, adjudication, or emergency command."
+      ],
+      "lifecycle_relation": "Required in addition to GMEAIA-21."
+    },
+    {
+      "id": "GMEAIA-57",
+      "title": "Coercive or Enforcement Request, Acceptance, Execution, and SCPA Handoff",
+      "action_class": "A17",
+      "purpose": "Separates implementation and review from compulsory execution.",
+      "required_content": [
+        "underlying decision and enforceable order",
+        "requested action class",
+        "SCPA authority records",
+        "recipient acceptance",
+        "individualized scope and safeguards",
+        "operator, command, and use limits",
+        "review, incident, and evidence records",
+        "termination, remedy, and return"
+      ],
+      "prohibited_inferences": [
+        "An adopter, facilitator, funder, community, smart contract, platform, ethics reviewer, or implementation team cannot search, seize, detain, restrain, freeze, sanction, or use force through this specification."
+      ],
+      "lifecycle_relation": "Required for coercive execution."
+    },
+    {
+      "id": "GMEAIA-58",
+      "title": "Non-Activation, Sandbox, Prototype, Simulation, and Demonstration Register",
+      "action_class": "A18",
+      "purpose": "Marks environments and records that must not be mistaken for live authority.",
+      "required_content": [
+        "sandbox or prototype identity",
+        "owner and purpose",
+        "synthetic versus real data",
+        "excluded powers and protected domains",
+        "technical and organizational isolation",
+        "display and API warnings",
+        "test users and consent",
+        "termination, deletion, and incident route"
+      ],
+      "prohibited_inferences": [
+        "A successful demonstration, smart contract, simulation, digital twin, mock council, pilot BAZ, or test credential cannot affect real rights, services, funds, or authority."
+      ],
+      "lifecycle_relation": "Required for all non-production deployments."
+    },
+    {
+      "id": "GMEAIA-59",
+      "title": "Cross-Framework Handoff, Conformance, Recipient Acceptance, and Custody Record",
+      "action_class": "A18",
+      "purpose": "Makes interoperability explicit and prevents a receiving framework from inferring missing authority.",
+      "required_content": [
+        "source and destination frameworks and versions",
+        "source records and action class",
+        "requested function",
+        "controlling interface",
+        "authority and protected-data package",
+        "acceptance, rejection, or partial acceptance",
+        "custody, access, and clocks",
+        "return, closure, and unresolved state"
+      ],
+      "prohibited_inferences": [
+        "Schema compatibility, API receipt, event subscription, or shared terminology does not mean legal acceptance."
+      ],
+      "lifecycle_relation": "Required for consequential cross-framework transport."
+    },
+    {
+      "id": "GMEAIA-60",
+      "title": "Data Return, Deletion, Archive, Access Revocation, and Protected-Memory Disposition",
+      "action_class": "A11",
+      "purpose": "Completes the information lifecycle after withdrawal, expiry, closure, correction, or dissolution.",
+      "required_content": [
+        "record classes and custodians",
+        "retention duties and legal holds",
+        "return and portability",
+        "deletion, crypto-shredding, or sealed archive",
+        "protected Indigenous and community knowledge",
+        "public-memory justification",
+        "access revocation and key destruction",
+        "verification, complaints, and unresolved obligations"
+      ],
+      "prohibited_inferences": [
+        "Immutability, public transparency, research value, or failure-learning interest cannot justify indefinite access to protected or unlawfully held data."
+      ],
+      "lifecycle_relation": "Required at closure and when consent or authority ends."
+    }
+  ],
+  "common_header_fields": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "created_at",
+    "effective_at",
+    "expires_at",
+    "status",
+    "normative_force",
+    "authority_effect",
+    "action_class",
+    "source_framework_id",
+    "source_framework_version",
+    "source_record_ids",
+    "supersedes",
+    "superseded_by",
+    "actor_id",
+    "actor_type",
+    "office_or_role",
+    "representation_source",
+    "technical_credential_refs",
+    "constituting_instrument",
+    "legal_power",
+    "jurisdiction_territorial",
+    "jurisdiction_personal",
+    "jurisdiction_subject_matter",
+    "jurisdiction_temporal",
+    "affected_party_refs",
+    "affected_indigenous_nation_refs",
+    "protected_domain_flags",
+    "consent_record_refs",
+    "authority_record_refs",
+    "activation_record_refs",
+    "access_class",
+    "public_summary",
+    "protected_annex_refs",
+    "data_purpose",
+    "retention_rule",
+    "correction_status",
+    "challenge_status",
+    "review_due_at",
+    "closure_state",
+    "unresolved_duty_refs",
+    "handoff_state",
+    "recipient_refs",
+    "recipient_acceptance_refs",
+    "hashes_and_signatures",
+    "human_accountable_officer",
+    "prohibited_inferences"
+  ],
+  "gates": [
+    {
+      "id": "G01",
+      "title": "Method–authority separation",
+      "pass_condition": "Every method, tool, protocol, template, assessment, score, and software function states its authority effect and cannot create power by implication."
+    },
+    {
+      "id": "G02",
+      "title": "Exact legal source and jurisdiction",
+      "pass_condition": "Every consequential action identifies a valid source, exact power, authority, jurisdiction, limits, activation state, review, and expiry."
+    },
+    {
+      "id": "G03",
+      "title": "Signal–fact separation",
+      "pass_condition": "Sense signals and complaints remain assertions until validated for a defined purpose."
+    },
+    {
+      "id": "G04",
+      "title": "Severity without jurisdiction",
+      "pass_condition": "Severity and urgency influence routing and clocks but never create emergency, coercive, fiscal, or adjudicative power."
+    },
+    {
+      "id": "G05",
+      "title": "Referral acceptance",
+      "pass_condition": "A referral transfers records, not authority; the recipient must explicitly accept the requested function."
+    },
+    {
+      "id": "G06",
+      "title": "Agent and office distinction",
+      "pass_condition": "Identity, signature, DID, UCAN, API key, organization, AI, sensor, or certificate is not public office or representation."
+    },
+    {
+      "id": "G07",
+      "title": "Proposal non-authority",
+      "pass_condition": "Proposals, algorithmic recommendations, petitions, and agenda items do not create consent or authorization."
+    },
+    {
+      "id": "G08",
+      "title": "Affected-party constitution",
+      "pass_condition": "Residents, workers, users, minorities, non-members, outsiders, and transboundary effects are mapped before consequential action."
+    },
+    {
+      "id": "G09",
+      "title": "Affected Indigenous nation authority",
+      "pass_condition": "The specific affected nation controls its representatives, law, consent, protected knowledge, refusal, and withdrawal."
+    },
+    {
+      "id": "G10",
+      "title": "Consent constitution",
+      "pass_condition": "Consent holders, scope, dependencies, refusal, withdrawal, internal dissent, and non-retaliation are structured and reviewable."
+    },
+    {
+      "id": "G11",
+      "title": "Consent–jurisdiction separation",
+      "pass_condition": "Consent cannot create power over third parties, waive non-derogable rights, or authorize a body otherwise lacking jurisdiction."
+    },
+    {
+      "id": "G12",
+      "title": "Epistemic assessment non-veto",
+      "pass_condition": "Epistemic readiness exposes uncertainty and repair needs but cannot suspend lawful decisions or create emergency exceptions."
+    },
+    {
+      "id": "G13",
+      "title": "Ethics review non-authority",
+      "pass_condition": "Ethics gates and advisory reviewers cannot approve or block actions unless a separate lawful authority expressly gives a bounded review power."
+    },
+    {
+      "id": "G14",
+      "title": "Facilitator subordination",
+      "pass_condition": "Facilitators do not decide substantive questions; qualifications, conflicts, complaints, replacement, and local-equivalence routes exist."
+    },
+    {
+      "id": "G15",
+      "title": "Readiness score non-disposition",
+      "pass_condition": "Readiness and maturity scores cannot determine rights, standing, essential support, intervention, or funding automatically."
+    },
+    {
+      "id": "G16",
+      "title": "Protected-domain fail-closed",
+      "pass_condition": "Ordinary experiments exclude protected domains unless the specialized interface separately authorizes them."
+    },
+    {
+      "id": "G17",
+      "title": "Trial authorization",
+      "pass_condition": "Consequential experiments have exact scope, participants, duration, conditions, monitoring, rollback, remedy, and non-precedent status."
+    },
+    {
+      "id": "G18",
+      "title": "Adoption envelope",
+      "pass_condition": "A consequential `adopt()` references valid consent, authority, jurisdiction, rights, activation, clocks, review, exit, and remedy records."
+    },
+    {
+      "id": "G19",
+      "title": "Activation separation",
+      "pass_condition": "Authorization, funding, registration, code deployment, or smart-contract creation does not start operations without a valid activation record."
+    },
+    {
+      "id": "G20",
+      "title": "Essential and continuing duties",
+      "pass_condition": "Rights, essential services, safety, workers, pensions, records, restoration, and remedy do not expire through ordinary sunset logic."
+    },
+    {
+      "id": "G21",
+      "title": "Metrics non-automation",
+      "pass_condition": "Scores, thresholds, sentiment, reputation, KPIs, or model outputs trigger human review only."
+    },
+    {
+      "id": "G22",
+      "title": "AI prohibited decisions",
+      "pass_condition": "AI and sensors cannot consent, represent, authorize, activate, adjudicate, sanction, declare emergencies, or renew powers."
+    },
+    {
+      "id": "G23",
+      "title": "Amendment control",
+      "pass_condition": "Method adaptation, software updates, feature changes, and operator practice cannot silently expand authority."
+    },
+    {
+      "id": "G24",
+      "title": "Active renewal",
+      "pass_condition": "Temporary powers continue only through reasoned reauthorization and any required re-consent; silence is not renewal."
+    },
+    {
+      "id": "G25",
+      "title": "Scaling requires new authority",
+      "pass_condition": "Pilot success and network adoption do not scale a measure into new persons, territory, institutions, or permanent law."
+    },
+    {
+      "id": "G26",
+      "title": "Funding independence",
+      "pass_condition": "Funding and participation support have independent authority, appeal, essential-function safeguards, and no method or ideology conformity test."
+    },
+    {
+      "id": "G27",
+      "title": "Institutional charter legality",
+      "pass_condition": "Governance blueprints, voting shares, vetoes, councils, and representation become operative only through lawful charter amendment."
+    },
+    {
+      "id": "G28",
+      "title": "Institutional continuity",
+      "pass_condition": "Reform, merger, defunding, or dissolution protects workers, pensions, beneficiaries, contracts, pending cases, and essential functions."
+    },
+    {
+      "id": "G29",
+      "title": "Audit independence",
+      "pass_condition": "Assessors and auditors disclose competence, funding, conflicts, methods, dissent, correction, complaint, and removal."
+    },
+    {
+      "id": "G30",
+      "title": "Protected data and publication",
+      "pass_condition": "Public-by-default, immutability, story banks, failure libraries, dashboards, and archives preserve access controls, withdrawal, correction, and lawful deletion."
+    },
+    {
+      "id": "G31",
+      "title": "Offline and assisted parity",
+      "pass_condition": "Paper, oral, witnessed, assisted, and offline records have equal standing, service, clocks, and remedy."
+    },
+    {
+      "id": "G32",
+      "title": "Tool stewardship and versioning",
+      "pass_condition": "Normative core, optional profiles, schemas, forks, compatibility, deprecation, rollback, and migration are explicit."
+    },
+    {
+      "id": "G33",
+      "title": "Emergency interface",
+      "pass_condition": "Crisis tools create referrals only; declaration, command, finance, information access, termination, and remedy follow ECRC/CDEE."
+    },
+    {
+      "id": "G34",
+      "title": "Coercive interface",
+      "pass_condition": "Search, seizure, detention, force, surveillance, sanctions, asset freezes, and analogous execution require SCPA and domain authority."
+    },
+    {
+      "id": "G35",
+      "title": "Correction and dependency propagation",
+      "pass_condition": "Errors in identity, signals, scores, consent, authority, or outcomes correct every dependent record and decision."
+    },
+    {
+      "id": "G36",
+      "title": "Closure and authority return",
+      "pass_condition": "Every action and institution ends with deactivation, authority and asset return, data disposition, unresolved-duty custody, and effective remedy."
+    }
+  ],
+  "tests": [
+    {
+      "id": "T01",
+      "scenario": "Sensor reports river pollution with immediate urgency",
+      "required_outcome": "The signal is received as an assertion; validation and CERGTA/ECRC routing occur separately; no automatic closure or emergency."
+    },
+    {
+      "id": "T02",
+      "scenario": "AI copilot generates a policy proposal",
+      "required_outcome": "The proposal is labelled machine-generated and advisory; no consent, authorization, or adoption is inferred."
+    },
+    {
+      "id": "T03",
+      "scenario": "Smart contract creates an adoption and marks it active",
+      "required_outcome": "The contract proves technical execution only; without GMEAIA-01, -19, -21, and -23 the action remains legally inactive."
+    },
+    {
+      "id": "T04",
+      "scenario": "UCAN grants `egp:adopt` to a user",
+      "required_outcome": "The token grants software capability only and cannot establish public office or jurisdiction."
+    },
+    {
+      "id": "T05",
+      "scenario": "Neighbourhood adopts a six-month workshop format",
+      "required_outcome": "A low-consequence internal method may proceed under its charter; records show scope, consent, accessibility, review, and exit."
+    },
+    {
+      "id": "T06",
+      "scenario": "Neighbourhood adopts a curfew affecting public streets",
+      "required_outcome": "Protected security and mobility domain; ordinary EGP adoption fails closed and requires lawful public and SCPA authority."
+    },
+    {
+      "id": "T07",
+      "scenario": "Local majority adopts action on affected Indigenous territory",
+      "required_outcome": "No activation until the affected nation’s own authority and law are recorded; majority consent cannot substitute."
+    },
+    {
+      "id": "T08",
+      "scenario": "Community refuses a GGF tool for its own meeting",
+      "required_outcome": "Refusal is respected without loss of standing, services, support, or remedy."
+    },
+    {
+      "id": "T09",
+      "scenario": "Community seeks to veto another community’s independent process",
+      "required_outcome": "Refusal is bounded to the holder’s rights and jurisdiction; no extraterritorial veto is inferred."
+    },
+    {
+      "id": "T10",
+      "scenario": "Readiness assessment labels a community low-capacity",
+      "required_outcome": "The score is advisory, contestable, expiring, and cannot deny funds, rights, or self-government."
+    },
+    {
+      "id": "T11",
+      "scenario": "Ethics panel rejects a locally adapted tool",
+      "required_outcome": "The panel issues reasons and recommendations; the lawful authority decides unless a separate bounded review power exists."
+    },
+    {
+      "id": "T12",
+      "scenario": "Global Indigenous representative gives dual-key approval",
+      "required_outcome": "Approval is invalid for affected-nation consent; GMEAIA-10 and -19 are required."
+    },
+    {
+      "id": "T13",
+      "scenario": "WDIP Phase 0 fails an epistemic threshold",
+      "required_outcome": "The decision body receives an uncertainty and repair assessment; no automatic veto or indefinite pause follows."
+    },
+    {
+      "id": "T14",
+      "scenario": "Existential urgency is claimed to bypass epistemic review",
+      "required_outcome": "Urgency affects clocks but does not create authority; ECRC/CDEE governs emergency activation."
+    },
+    {
+      "id": "T15",
+      "scenario": "Facilitator is not centrally certified but is locally trusted",
+      "required_outcome": "Local-equivalence route permits appointment with accountability and participant choice."
+    },
+    {
+      "id": "T16",
+      "scenario": "Certified facilitator manipulates the agenda",
+      "required_outcome": "Complaint, replacement, record correction, and remedy operate; certification provides no immunity."
+    },
+    {
+      "id": "T17",
+      "scenario": "Pilot uses health data and publishes a story",
+      "required_outcome": "Publication requires separate consent, minimization, anonymization, withdrawal, and protected-data controls."
+    },
+    {
+      "id": "T18",
+      "scenario": "Protected Indigenous knowledge is stored in an immutable ledger",
+      "required_outcome": "Only protected metadata may be public; payload access, revocation, return, and deletion follow affected-nation rules."
+    },
+    {
+      "id": "T19",
+      "scenario": "Sunset expires a temporary advisory committee",
+      "required_outcome": "The committee deactivates and returns records and authority; open duties transfer to a successor."
+    },
+    {
+      "id": "T20",
+      "scenario": "Sunset expires a child-protection obligation",
+      "required_outcome": "Continuing-duty record prevents expiry until lawfully discharged."
+    },
+    {
+      "id": "T21",
+      "scenario": "Pilot metric meets success threshold",
+      "required_outcome": "A scaling recommendation may issue; new-jurisdiction or permanent action requires GMEAIA-44."
+    },
+    {
+      "id": "T22",
+      "scenario": "Pilot metric fails because of an external shock",
+      "required_outcome": "Causal assessment separates context from misconduct; no automatic funding withdrawal or operator penalty."
+    },
+    {
+      "id": "T23",
+      "scenario": "AI sentiment analysis lowers an institution’s regeneration score",
+      "required_outcome": "The output is advisory and challengeable; it cannot trigger funding, charter change, or closure."
+    },
+    {
+      "id": "T24",
+      "scenario": "GCF funding requires three modules",
+      "required_outcome": "A separate funding authority must justify the condition, protect essential functions and workers, and offer appeal; module count is not self-executing."
+    },
+    {
+      "id": "T25",
+      "scenario": "Funder shortens runway to pressure charter reform",
+      "required_outcome": "The condition fails if it coerces constitutional change or endangers beneficiaries without lawful authority and safeguards."
+    },
+    {
+      "id": "T26",
+      "scenario": "Institution adopts a Youth Council with 30% voting power",
+      "required_outcome": "A toolkit proposal is insufficient; lawful charter amendment must constitute the constituency, powers, accountability, and transition."
+    },
+    {
+      "id": "T27",
+      "scenario": "Purpose audit recommends institutional dissolution",
+      "required_outcome": "The recommendation remains advisory; GMEAIA-49 requires lawful dissolution and succession."
+    },
+    {
+      "id": "T28",
+      "scenario": "Institution is abruptly defunded and records enter a Dark Archive",
+      "required_outcome": "Archive custody preserves confidentiality, access, deletion, and unresolved duties; deposit does not dissolve the institution."
+    },
+    {
+      "id": "T29",
+      "scenario": "Quick-start crisis kit sends an escalation packet",
+      "required_outcome": "The packet becomes a CDEE referral; no emergency exists until competent declaration or mission acceptance."
+    },
+    {
+      "id": "T30",
+      "scenario": "Community disaster team begins rescue under accepted mission",
+      "required_outcome": "GMEAIA-55 links command, mission, clocks, information, finance, termination, and remedy."
+    },
+    {
+      "id": "T31",
+      "scenario": "Pilot withdraws household water after non-payment",
+      "required_outcome": "Protected essential service; ordinary experiment fails closed and controlling water/CERGTA authority is required."
+    },
+    {
+      "id": "T32",
+      "scenario": "Pilot tests a voluntary participatory-budget workshop",
+      "required_outcome": "May proceed with bounded authority, informed participation, data protections, review, and no effect on nonparticipants."
+    },
+    {
+      "id": "T33",
+      "scenario": "Institutional pilot restructures pensions",
+      "required_outcome": "Protected continuing obligations require charter, labour, financial, and legal authority; ordinary pilot invalid."
+    },
+    {
+      "id": "T34",
+      "scenario": "AI tool finder recommends a talking-circle guide",
+      "required_outcome": "Permitted advisory use if no profiling, hidden ranking, or consequential routing occurs."
+    },
+    {
+      "id": "T35",
+      "scenario": "AI readiness score routes communities to different grant levels",
+      "required_outcome": "Prohibited automated disposition; human funding authority, reasons, evidence, and appeal required."
+    },
+    {
+      "id": "T36",
+      "scenario": "A software update adds automatic renewal",
+      "required_outcome": "Material change cannot amend legal clocks; active reauthorization remains mandatory."
+    },
+    {
+      "id": "T37",
+      "scenario": "Offline paper consent conflicts with app record",
+      "required_outcome": "Paper and witnessed records have equal dignity; identity collision and correction process resolves the conflict."
+    },
+    {
+      "id": "T38",
+      "scenario": "Failure library contains identifiable whistleblower testimony",
+      "required_outcome": "Publication pauses; consent, safety, protected-source handling, withdrawal, and remedy are required."
+    },
+    {
+      "id": "T39",
+      "scenario": "Implementation team requests seizure of project equipment",
+      "required_outcome": "Execution requires enforceable underlying order, SCPA acceptance, individualized safeguards, and separate command."
+    },
+    {
+      "id": "T40",
+      "scenario": "Trial closes with unresolved compensation claim",
+      "required_outcome": "Operational authority ends, but GMEAIA-42 and unresolved-duty custody remain active until remedy is complete."
+    }
+  ],
+  "sources": [
+    {
+      "title": "EGP Core v1.0",
+      "filename": "emergent-governance-protocol.md",
+      "sha256": "c5957945552bfd4d5e107aa7990b2f7184e2a49cb031520b5b3dae19a61f7b6d",
+      "lines": 272,
+      "bytes": 12539
+    },
+    {
+      "title": "EGP Implementation Appendix",
+      "filename": "egp-appendix.md",
+      "sha256": "f88a36ea245018534398e8358c622a1807714c436e44ca31651e2a1c504d311b",
+      "lines": 1490,
+      "bytes": 44731
+    },
+    {
+      "title": "EGP Glossary",
+      "filename": "egp-glossary.md",
+      "sha256": "78929c311afbe5b5038e1fa233848d5bec72fe5b74265312eb42eba7ad082f11",
+      "lines": 129,
+      "bytes": 6783
+    },
+    {
+      "title": "EGP One-Page Summary",
+      "filename": "egp-one-page-summary.md",
+      "sha256": "2a6a42949702d4553e8b5d49e04b3f06d84bf04e0dbecd80b10a0c467834f76e",
+      "lines": 113,
+      "bytes": 3948
+    },
+    {
+      "title": "GGF Implementation & Adaptation Framework v1.0",
+      "filename": "v1.0(5).md",
+      "sha256": "f0bf4d9cee9a6520c9a52a609b1955e0c6ea6831b51c5d38169d4783588c3b48",
+      "lines": 219,
+      "bytes": 24598
+    },
+    {
+      "title": "Institutional Regeneration Framework v0.8",
+      "filename": "v0.8(5).md",
+      "sha256": "a6c3cb3dc1bbf474910246bf4298c377e2ed07c48fcc40c8399ef23d78f990ec",
+      "lines": 215,
+      "bytes": 27384
+    },
+    {
+      "title": "Implementation Methods & Tools Framework v0.7",
+      "filename": "v0.7.md",
+      "sha256": "c3eb73da02d5a4801ddd7853be9f3cb09afd64b66e5e85e347436097f2a610fd",
+      "lines": 510,
+      "bytes": 25478
+    },
+    {
+      "title": "Wise Decision-Making & Integration Protocol v1.5",
+      "filename": "v1.5(3).md",
+      "sha256": "3a68af97a25fc640dcb18f0a183a1d82eb7b495582eab1ce173c9b2baf41ba62",
+      "lines": 612,
+      "bytes": 45084
+    },
+    {
+      "title": "Cluster Constitutional Audit v0.1",
+      "filename": "implementation-adaptation-emergent-governance-cluster-constitutional-audit-v0.1.md",
+      "sha256": "10448da09e50c66ec5beaf888e822808bf6cb7c243e7287dbedcb2196f5c92e9",
+      "lines": 846,
+      "bytes": 37163
+    }
+  ],
+  "constitutional_dependencies": [
+    {
+      "title": "Constitutional Interface Specification v0.1",
+      "filename": "constitutional-interface-specification-v0.1.md",
+      "sha256": "a9ef4c6fffadfa43a988d417568179fce496f944bddbc638e6fb36620503bf9e",
+      "lines": 1735,
+      "bytes": 64106
+    },
+    {
+      "title": "Emergency, Catastrophic-Risk, and Continuity Interface Specification v0.1",
+      "filename": "emergency-catastrophic-risk-continuity-interface-specification-v0.1.md",
+      "sha256": "c673742b1317c7169d4b8226118478c990e9a3d05084b2dc5ac9ad2f1971163c",
+      "lines": 2135,
+      "bytes": 81100
+    },
+    {
+      "title": "Security, Coercion, and Protective Action Interface Specification v0.1",
+      "filename": "security-coercion-protective-action-interface-specification-v0.1.md",
+      "sha256": "b8f1dd0f676044542a23184f52200e50b106a798545c7c57119ded2c439b6299",
+      "lines": 1451,
+      "bytes": 127876
+    },
+    {
+      "title": "CERGTA/0.1",
+      "filename": "commons-ecological-rights-guardianship-title-resource-authority-interface-specification-v0.1.md",
+      "sha256": "3c45e37c834c727471657fc91149edbe3011137562c2dd73e54b20226c92589b",
+      "lines": 1780,
+      "bytes": 159667
+    }
+  ]
+}

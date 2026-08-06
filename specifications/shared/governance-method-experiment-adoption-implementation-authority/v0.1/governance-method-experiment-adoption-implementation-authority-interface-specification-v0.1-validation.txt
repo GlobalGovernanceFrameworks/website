@@ -1,0 +1,55 @@
+PASS — Main Markdown exists
+PASS — Registry JSON exists
+PASS — JSON Schema exists
+PASS — Example JSON exists
+PASS — Identifier present
+PASS — Non-authority clause present
+PASS — Canonical doctrine present
+PASS — 60 canonical records
+PASS — Record IDs unique
+PASS — Record IDs complete
+PASS — 18 action classes
+PASS — Action class IDs complete
+PASS — 36 readiness gates
+PASS — 40 compound tests
+PASS — 48 common header fields
+PASS — 10 protected-domain families
+PASS — 10 authority effect labels
+PASS — EGP mapping contains sense/propose/adopt
+PASS — Adopt defaults to non-consequential
+PASS — Affected Indigenous nation rule present
+PASS — Readiness non-disposition present
+PASS — Epistemic assessment non-veto present
+PASS — Facilitator non-monopoly present
+PASS — Protected-domain fail-closed present
+PASS — Emergency interface present
+PASS — SCPA interface present
+PASS — CERGTA interface present
+PASS — Offline parity present
+PASS — Correction propagation present
+PASS — Closure and authority return present
+PASS — Retired Wisdom Governance excluded
+PASS — Source freeze has 9 sources
+PASS — Dependency freeze has 4 interfaces
+PASS — All source hashes length 64
+PASS — All dependency hashes length 64
+PASS — Markdown substantial — 13648 words
+PASS — Markdown record heading count
+PASS — Markdown gate heading count
+PASS — Markdown test heading count
+PASS — Schema is valid and example conforms
+PASS — Example activated record has authority refs
+PASS — Example includes protected-domain flag
+PASS — Example includes prohibited inferences
+PASS — Source files unchanged since freeze
+PASS — Dependency files unchanged since freeze
+
+Passed: 47/47
+Markdown words: 13648
+Markdown lines: 2104
+Canonical records: 60
+Action classes: 18
+Readiness gates: 36
+Compound tests: 40
+PASS — ZIP file set exact — True
+PASS — ZIP member bytes match — True

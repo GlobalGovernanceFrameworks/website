@@ -33,7 +33,7 @@ export const economicOSEntities: GgfEntity[] = [
     description:
       'The social compact for unconditional material security: payout architecture, contribution recognition, and the epistemic rights governing how any of it is measured. Distributes Hearts and Leaves; does not itself define the currency machinery, which lives in Financial Systems.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -72,7 +72,7 @@ export const economicOSEntities: GgfEntity[] = [
     description:
       'The technical and operational architecture beneath AUBI: Hearts and Leaves issuance, the Hearts Treasury, reserve and redemption rules, fraud protection, crisis liquidity, the Inter-Currency Translation Layer, and financial observability.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -107,7 +107,7 @@ export const economicOSEntities: GgfEntity[] = [
     description:
       'Rules for organizing voluntary, dignified, worker-governed contribution once material survival has been decoupled from employment. Establishes the Community Provider Charter Standard, the Worker Bill of Rights, a 15-hour protective ceiling, and the unconditional right not to contribute.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -136,7 +136,7 @@ export const economicOSEntities: GgfEntity[] = [
     description:
       'Constitutional and operational rules for how relatively autonomous economies coordinate across boundaries without surrendering local authority, protected difference, or meaningful exit. Supplies the Economic Subsidiarity Test, Cross-Scale Interface Contracts, and protected non-convertibility.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -148,11 +148,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'nested-economies',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v3.2',
-        updated: '2026-08-01',
+        version: 'v3.3',
+        updated: '2026-08-06',
         maturity: 'adversarial',
         standfirst:
-          'How economies at different scales coordinate without one swallowing the others. A two-tier constitutional model with optional, delegated, revocable coordination layers, plus an Economic Subsidiarity Test for deciding what belongs where. Version 3.2 removed the conversion formulas in favour of authority and interface rules, and added explicit exit and fork rights — coordination you cannot leave is not coordination.'
+          'How economies at different scales coordinate without one swallowing the others. Version 3.3 preserves the two-tier, voluntary, delegated, and revocable architecture while replacing scale-only subsidiarity with causal, economic, and constitutional subsidiarity. It adds jointly constituted authority, internal subsidiarity within BAZs, safeguards against holdout and bargaining domination, and legal, technical, financial, service, political, and material exit. Coordination that cannot be refused, forked, or left without losing essential services is dependency, not polycentric governance.'
       }
     }
   },
@@ -193,7 +193,7 @@ export const economicOSEntities: GgfEntity[] = [
     description:
       'The operational logistics layer beneath Gaian Trade: bioregional hubs, transport networks, and workforce systems, integrating physical, financial, digital, social and cultural layers rather than optimizing any one of them.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'High',

@@ -1,0 +1,2337 @@
+{
+  "$schema": "https://schemas.globalgovernanceframeworks.org/irf/1.0/institutional-regeneration-v1.0-specification.schema.json",
+  "framework_id": "IRF/1.0",
+  "title": "Institutional Regeneration Framework",
+  "version": "1.0",
+  "date": "2026-08-06",
+  "status": "document_and_machine_compatible",
+  "legal_character": "Voluntary advisory and implementation-support framework; not a source of charter authority, member-state consent, employment power, funding entitlement, adjudication, emergency command, programme closure, or institutional dissolution.",
+  "source_lineage": {
+    "CIS/0.2.1": {
+      "filename": "constitutional-interface-specification-v0.2.1.md",
+      "sha256": "2ab06be70d568be82efde2ccbcc3f8df48f37308fab3ccf116ac3efe4c167bfc",
+      "bytes": 81323
+    },
+    "GMEAIA/0.2.1": {
+      "filename": "governance-method-experiment-adoption-implementation-authority-interface-specification-v0.2.1.md",
+      "sha256": "8cdaf8c316b50b251721a824124e47b1ad30787e9f5281d7fade0f4360bfe5d1",
+      "bytes": 90094
+    },
+    "META-GOVERNANCE/1.6": {
+      "filename": "integrated-meta-governance-v1.6.md",
+      "sha256": "cf1cd81a681b6b94ef4107cee35dfdabb3a991f6472c75d87fa7218a229466ba",
+      "bytes": 87518
+    },
+    "NESTED-ECONOMIES/3.3": {
+      "filename": "nested-economies-v3.3.md",
+      "sha256": "aae656d32f8b45ebf228e6f387d8e461d8767f238219911b8911c2ef95f00b59",
+      "bytes": 92594
+    },
+    "IRF/1.0": {
+      "filename": "institutional-regeneration-v1.0.md",
+      "sha256": "75b3b9ad28f4b4135ac4df90aa1f1c12c1cce0d04ed0418959a82eb27e8847e9",
+      "bytes": 83024
+    }
+  },
+  "constitutional_interface": "CIS/0.2.1",
+  "controlling_interface": "GMEAIA/0.2.1",
+  "event_transport": "EGP/1.2",
+  "implementation_companion": "IAF/1.2",
+  "tool_commons": "IMT/0.9",
+  "deliberation_companion": "WDIP/1.7",
+  "coordination_interface": "META-GOVERNANCE/1.6",
+  "economic_coordination_companion": "NESTED-ECONOMIES/3.3",
+  "non_authority_clause": "Audit is not jurisdiction. Participation is not consent. A reform proposal is not charter change. A completed workshop is not regeneration. A successful pilot is not permission to scale. Conformance is not legitimacy or success.",
+  "action_class_assignment_basis": "Primary action classes are implementation mappings derived from §4 domains and each record title and purpose; they do not narrow secondary functions or GMEAIA crosswalks.",
+  "action_classes": [
+    {
+      "id": "A",
+      "scope": "Constitution and mandate"
+    },
+    {
+      "id": "B",
+      "scope": "Affected parties and representation"
+    },
+    {
+      "id": "C",
+      "scope": "Audit and diagnosis"
+    },
+    {
+      "id": "D",
+      "scope": "Evolution Cells and internal reform"
+    },
+    {
+      "id": "E",
+      "scope": "Governance and charter change"
+    },
+    {
+      "id": "F",
+      "scope": "Culture and personnel"
+    },
+    {
+      "id": "G",
+      "scope": "Funding and budgeting"
+    },
+    {
+      "id": "H",
+      "scope": "Pilot authorization and activation"
+    },
+    {
+      "id": "I",
+      "scope": "Audit, metrics, and AI"
+    },
+    {
+      "id": "J",
+      "scope": "Learning and public narrative"
+    },
+    {
+      "id": "K",
+      "scope": "Transition and dissolution"
+    },
+    {
+      "id": "L",
+      "scope": "Records, remedies, and closure"
+    },
+    {
+      "id": "M",
+      "scope": "Emergency and coercive handoffs"
+    },
+    {
+      "id": "N",
+      "scope": "Data, access, and privacy"
+    },
+    {
+      "id": "O",
+      "scope": "Partnerships and vendors"
+    },
+    {
+      "id": "P",
+      "scope": "Labour and beneficiary protection"
+    }
+  ],
+  "reform_classes": [
+    {
+      "id": "symptom",
+      "definition": "changes current behavior while the main selection pressures remain;"
+    },
+    {
+      "id": "capacity",
+      "definition": "improves resources, skills, infrastructure, or operational ability under the current mandate;"
+    },
+    {
+      "id": "incentive",
+      "definition": "changes rewards, penalties, funding, promotion, appointment, exposure, or accountability;"
+    },
+    {
+      "id": "authority",
+      "definition": "changes who may decide, block, inspect, fund, or compel;"
+    },
+    {
+      "id": "reproductive",
+      "definition": "changes the conditions that cause the institution's characteristic behavior to return after leadership, policy, or pilot changes."
+    }
+  ],
+  "adoption_states": [
+    "exploratory",
+    "advisory_use",
+    "voluntary_internal_pilot",
+    "contractually_supported",
+    "charter_change_proposed",
+    "lawfully_amended",
+    "transition_proposed",
+    "transition_authorized",
+    "closing",
+    "closed_with_unresolved_duties",
+    "closed"
+  ],
+  "evidence_access_states": [
+    "available",
+    "legally protected",
+    "operationally inaccessible",
+    "refused by a named authority",
+    "destroyed or missing",
+    "disputed",
+    "outside jurisdiction."
+  ],
+  "consequence_profiles": [
+    {
+      "id": "CP0",
+      "name": "Exploratory and non-consequential",
+      "examples": "public education, optional brainstorming, non-operative drafting, simulation, or demonstration.",
+      "core": "one compact non-operative record identifying the method or artifact, responsible actor, authority effect, and non-activation status. Data and closure semantics are added where material."
+    },
+    {
+      "id": "CP1",
+      "name": "Voluntary bounded practice",
+      "examples": null,
+      "core": "actor and method; voluntary scope; consent, refusal, and withdrawal; implementation responsibility; stop and expiry; complaint and correction route."
+    },
+    {
+      "id": "CP2",
+      "name": "Operational or consequential action",
+      "examples": null,
+      "core": "constituting authority; affected parties; causal responsibility; authorization and activation; implementation ownership and dependencies; monitoring and review; challenge and remedy; closure and unresolved-duty custody."
+    },
+    {
+      "id": "CP3",
+      "name": "Protected-domain or constitutional action",
+      "examples": null,
+      "core": "`CP2` plus `GMEAIA-56` or `GMEAIA-57` and the controlling specialized interface. Ordinary GMEAIA conformance is never sufficient by itself."
+    }
+  ],
+  "handoff_states": [
+    "offered",
+    "acknowledged",
+    "accepted",
+    "partially_accepted",
+    "capacity_limited",
+    "refused",
+    "deferred",
+    "referred",
+    "timed_out",
+    "misrouted",
+    "constitutional_gap",
+    "returned",
+    "closed"
+  ],
+  "authority_formation_states": [
+    "retained",
+    "delegated",
+    "transferred",
+    "concurrent",
+    "jointly_constituted",
+    "absent"
+  ],
+  "response_duty_effects": [
+    "legal",
+    "contractual",
+    "charter_internal",
+    "voluntary_commitment",
+    "advisory",
+    "none"
+  ],
+  "common_header_fields": [
+    {
+      "number": 1,
+      "field": "record_id"
+    },
+    {
+      "number": 2,
+      "field": "record_type"
+    },
+    {
+      "number": 3,
+      "field": "schema_version"
+    },
+    {
+      "number": 4,
+      "field": "created_at"
+    },
+    {
+      "number": 5,
+      "field": "effective_at"
+    },
+    {
+      "number": 6,
+      "field": "expires_at"
+    },
+    {
+      "number": 7,
+      "field": "status"
+    },
+    {
+      "number": 8,
+      "field": "normative_force"
+    },
+    {
+      "number": 9,
+      "field": "authority_effect"
+    },
+    {
+      "number": 10,
+      "field": "action_class"
+    },
+    {
+      "number": 11,
+      "field": "source_framework_id"
+    },
+    {
+      "number": 12,
+      "field": "source_framework_version"
+    },
+    {
+      "number": 13,
+      "field": "source_record_ids"
+    },
+    {
+      "number": 14,
+      "field": "supersedes"
+    },
+    {
+      "number": 15,
+      "field": "superseded_by"
+    },
+    {
+      "number": 16,
+      "field": "actor_id"
+    },
+    {
+      "number": 17,
+      "field": "actor_type"
+    },
+    {
+      "number": 18,
+      "field": "office_or_role"
+    },
+    {
+      "number": 19,
+      "field": "representation_source"
+    },
+    {
+      "number": 20,
+      "field": "technical_credential_refs"
+    },
+    {
+      "number": 21,
+      "field": "constituting_instrument"
+    },
+    {
+      "number": 22,
+      "field": "legal_power"
+    },
+    {
+      "number": 23,
+      "field": "jurisdiction_territorial"
+    },
+    {
+      "number": 24,
+      "field": "jurisdiction_personal"
+    },
+    {
+      "number": 25,
+      "field": "jurisdiction_subject_matter"
+    },
+    {
+      "number": 26,
+      "field": "jurisdiction_temporal"
+    },
+    {
+      "number": 27,
+      "field": "affected_party_refs"
+    },
+    {
+      "number": 28,
+      "field": "affected_indigenous_nation_refs"
+    },
+    {
+      "number": 29,
+      "field": "protected_domain_flags"
+    },
+    {
+      "number": 30,
+      "field": "consent_record_refs"
+    },
+    {
+      "number": 31,
+      "field": "authority_record_refs"
+    },
+    {
+      "number": 32,
+      "field": "activation_record_refs"
+    },
+    {
+      "number": 33,
+      "field": "access_class"
+    },
+    {
+      "number": 34,
+      "field": "public_summary"
+    },
+    {
+      "number": 35,
+      "field": "protected_annex_refs"
+    },
+    {
+      "number": 36,
+      "field": "data_purpose"
+    },
+    {
+      "number": 37,
+      "field": "retention_rule"
+    },
+    {
+      "number": 38,
+      "field": "correction_status"
+    },
+    {
+      "number": 39,
+      "field": "challenge_status"
+    },
+    {
+      "number": 40,
+      "field": "review_due_at"
+    },
+    {
+      "number": 41,
+      "field": "closure_state"
+    },
+    {
+      "number": 42,
+      "field": "unresolved_duty_refs"
+    },
+    {
+      "number": 43,
+      "field": "handoff_state"
+    },
+    {
+      "number": 44,
+      "field": "recipient_refs"
+    },
+    {
+      "number": 45,
+      "field": "recipient_acceptance_refs"
+    },
+    {
+      "number": 46,
+      "field": "hashes_and_signatures"
+    },
+    {
+      "number": 47,
+      "field": "human_accountable_officer"
+    },
+    {
+      "number": 48,
+      "field": "prohibited_inferences"
+    }
+  ],
+  "records": [
+    {
+      "id": "IRF-01",
+      "title": "Framework adoption, consequence profile, and institutional scope",
+      "purpose": "Records whether the institution is exploring, piloting, adopting internally, or referencing the framework; selects CP0–CP3 without implying charter change or success.",
+      "action_class": "A",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-02",
+        "GMEAIA-03",
+        "GMEAIA-22",
+        "GMEAIA-53"
+      ]
+    },
+    {
+      "id": "IRF-02",
+      "title": "Constituting instrument and mandate baseline",
+      "purpose": "Pins the institution’s charter, treaty, statute, resolutions, delegations, presently valid mandate, and authority-formation type.",
+      "action_class": "A",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-01",
+        "GMEAIA-45"
+      ]
+    },
+    {
+      "id": "IRF-03",
+      "title": "Member, governing-body, amendment, and response-authority map",
+      "purpose": "Identifies who may amend the charter, budget, representation, programmes, offices, or dissolution provisions and who owes a response to consequential referrals.",
+      "action_class": "A",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-01",
+        "GMEAIA-08",
+        "GMEAIA-20",
+        "GMEAIA-59"
+      ]
+    },
+    {
+      "id": "IRF-04",
+      "title": "Stakeholder, beneficiary, worker, and affected-outsider map",
+      "purpose": "Identifies member states, staff, unions, contractors, beneficiaries, affected communities, partners, and affected outsiders.",
+      "action_class": "B",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-09",
+        "GMEAIA-11",
+        "GMEAIA-54"
+      ]
+    },
+    {
+      "id": "IRF-05",
+      "title": "Affected Indigenous nation and protected-knowledge record",
+      "purpose": "Records the specific affected nation, its representatives, law, consent, non-engagement, and protected-knowledge requirements.",
+      "action_class": "B",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-10",
+        "GMEAIA-18",
+        "GMEAIA-19",
+        "GMEAIA-28",
+        "GMEAIA-54"
+      ]
+    },
+    {
+      "id": "IRF-06",
+      "title": "Purpose, mandate, and objective-reproduction audit proposal",
+      "purpose": "Defines the audit question, scope, consequence profile, authority effect, evidence, causal and selection-pressure questions, reviewers, exclusions, and use restrictions.",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-04",
+        "GMEAIA-12",
+        "GMEAIA-30",
+        "GMEAIA-45"
+      ]
+    },
+    {
+      "id": "IRF-07",
+      "title": "Mandate evidence, provenance, access, and correction register",
+      "purpose": "Separates charter text, performance evidence, stakeholder testimony, political claims, model outputs, access refusals, uncertainty, and corrections.",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-05",
+        "GMEAIA-06",
+        "GMEAIA-16",
+        "GMEAIA-28",
+        "GMEAIA-41",
+        "GMEAIA-45",
+        "GMEAIA-54"
+      ]
+    },
+    {
+      "id": "IRF-08",
+      "title": "Purpose clarification and deliberation process",
+      "purpose": "Records a facilitated dialogue, participants, affected standing, dissent, limitations, and advisory conclusions.",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-14",
+        "GMEAIA-15",
+        "GMEAIA-50",
+        "GMEAIA-54"
+      ]
+    },
+    {
+      "id": "IRF-09",
+      "title": "Mission relevance, reform class, causal responsibility, and option analysis",
+      "purpose": "Compares symptom, capacity, incentive, authority, reproductive, transfer, merger, closure, and dissolution options without deciding among them.",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-20",
+        "GMEAIA-32",
+        "GMEAIA-43",
+        "GMEAIA-45"
+      ]
+    },
+    {
+      "id": "IRF-10",
+      "title": "Reform pacing, response-time, capacity, and impossible-mandate assessment",
+      "purpose": "Advises sequencing, clocks, support needs, causal constraints, and whether the mandate or pilot is presently possible.",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-07",
+        "GMEAIA-30",
+        "GMEAIA-45"
+      ]
+    },
+    {
+      "id": "IRF-11",
+      "title": "Power, capture, common-mode, and objective-reproduction map",
+      "purpose": "Maps influence, funding, appointment, prestige, informal authority, retaliation, shared infrastructure, professional dependence, and continuation incentives.",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-16",
+        "GMEAIA-17",
+        "GMEAIA-45",
+        "GMEAIA-51"
+      ]
+    },
+    {
+      "id": "IRF-12",
+      "title": "Evolution Cell charter, independence, and terminal condition",
+      "purpose": "Defines appointment, mandate, term, access, budget, limits, dependency-reduction, complaints, removal, succession, and closure.",
+      "action_class": "D",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-03",
+        "GMEAIA-38",
+        "GMEAIA-50",
+        "GMEAIA-52"
+      ]
+    },
+    {
+      "id": "IRF-13",
+      "title": "Evolution Cell proposal, agenda, causal theory, and handoffs",
+      "purpose": "Records a bounded reform proposal, reform class, causal mechanism, responsibilities, clocks, dependencies, and terminal condition.",
+      "action_class": "D",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-24",
+        "GMEAIA-35",
+        "GMEAIA-52"
+      ]
+    },
+    {
+      "id": "IRF-14",
+      "title": "Staff, union, and workplace consultation",
+      "purpose": "Records labour consultation, bargaining duties, occupational effects, dissent, retaliation safeguards, and remedies.",
+      "action_class": "P",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-09",
+        "GMEAIA-11",
+        "GMEAIA-15",
+        "GMEAIA-18",
+        "GMEAIA-19",
+        "GMEAIA-25",
+        "GMEAIA-34",
+        "GMEAIA-54"
+      ]
+    },
+    {
+      "id": "IRF-15",
+      "title": "Beneficiary and service-user consultation",
+      "purpose": "Records access needs, dependency, service-continuity risks, representation, affected standing, and challenge.",
+      "action_class": "P",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-09",
+        "GMEAIA-11",
+        "GMEAIA-15",
+        "GMEAIA-18",
+        "GMEAIA-19",
+        "GMEAIA-25",
+        "GMEAIA-34",
+        "GMEAIA-54"
+      ]
+    },
+    {
+      "id": "IRF-16",
+      "title": "Governance blueprint and authority-effect classification",
+      "purpose": "Classifies youth, citizen, Indigenous, future-generation, advisory, voting, or veto templates as options requiring lawful constitution.",
+      "action_class": "E",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-02",
+        "GMEAIA-14",
+        "GMEAIA-46",
+        "GMEAIA-53"
+      ]
+    },
+    {
+      "id": "IRF-17",
+      "title": "Constituency and representation design",
+      "purpose": "Defines who is represented, selection, mandate, conflicts, accountability, removal, internal plurality, and affected non-parties.",
+      "action_class": "E",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-03",
+        "GMEAIA-15",
+        "GMEAIA-18",
+        "GMEAIA-46"
+      ]
+    },
+    {
+      "id": "IRF-18",
+      "title": "Charter amendment proposal, causal rationale, and response clocks",
+      "purpose": "States the proposed amendment, lawful route, affected rights, authority formation, member or governing-body requirements, clocks, and alternatives.",
+      "action_class": "E",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-08",
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-20",
+        "GMEAIA-35",
+        "GMEAIA-37",
+        "GMEAIA-44",
+        "GMEAIA-46",
+        "GMEAIA-59"
+      ]
+    },
+    {
+      "id": "IRF-19",
+      "title": "Lawful charter amendment decision",
+      "purpose": "Imports a separately valid amendment; the framework cannot author this record.",
+      "action_class": "E",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-20",
+        "GMEAIA-22",
+        "GMEAIA-44",
+        "GMEAIA-46",
+        "GMEAIA-59"
+      ]
+    },
+    {
+      "id": "IRF-20",
+      "title": "Decision-method pilot and causal-adequacy record",
+      "purpose": "Authorizes only a bounded internal experiment, states the pilot type and minimum causally adequate scope, and creates no charter precedent.",
+      "action_class": "H",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-02",
+        "GMEAIA-14",
+        "GMEAIA-21",
+        "GMEAIA-35",
+        "GMEAIA-36",
+        "GMEAIA-37",
+        "GMEAIA-38",
+        "GMEAIA-53",
+        "GMEAIA-56",
+        "GMEAIA-58"
+      ]
+    },
+    {
+      "id": "IRF-21",
+      "title": "Partnership and polycentric-collaboration proposal",
+      "purpose": "Defines purpose, parties, authority formation, causal object, data, finance, liability, response duties, exit, and anti-capture safeguards.",
+      "action_class": "O",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-20",
+        "GMEAIA-24",
+        "GMEAIA-27",
+        "GMEAIA-35",
+        "GMEAIA-57",
+        "GMEAIA-59"
+      ]
+    },
+    {
+      "id": "IRF-22",
+      "title": "Whistleblower and internal-reformer protection",
+      "purpose": "Separates protected reporting, support, investigation, evidence, anti-retaliation, correction, and remedy.",
+      "action_class": "P",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-04",
+        "GMEAIA-19",
+        "GMEAIA-28",
+        "GMEAIA-34",
+        "GMEAIA-42",
+        "GMEAIA-54",
+        "GMEAIA-60"
+      ]
+    },
+    {
+      "id": "IRF-23",
+      "title": "Anti-capture, independence, and common-mode review",
+      "purpose": "Assesses conflicts, concentration, procurement, private influence, shared data, methods, funders, AI, vendors, and professional networks.",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-16",
+        "GMEAIA-17",
+        "GMEAIA-45",
+        "GMEAIA-51"
+      ]
+    },
+    {
+      "id": "IRF-24",
+      "title": "Cultural and relational practice proposal",
+      "purpose": "Records optional internal practices without imposing spirituality, therapeutic models, identity categories, or substituting culture work for structural reform.",
+      "action_class": "F",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-02",
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-14",
+        "GMEAIA-22",
+        "GMEAIA-35",
+        "GMEAIA-53",
+        "GMEAIA-58"
+      ]
+    },
+    {
+      "id": "IRF-25",
+      "title": "Leadership, recruitment, and secondment proposal",
+      "purpose": "Defines lawful appointment, labour protections, conflicts, compensation, security, access, dependency, and exit for external experts or tours of duty.",
+      "action_class": "F",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-03",
+        "GMEAIA-27",
+        "GMEAIA-50",
+        "GMEAIA-52"
+      ]
+    },
+    {
+      "id": "IRF-26",
+      "title": "Proportionate quick-win internal pilot proposal",
+      "purpose": "Defines a CP0–CP2 bounded internal experiment with authority, consent, causal limits, data, review, rollback, and closure.",
+      "action_class": "H",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-02",
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-14",
+        "GMEAIA-21",
+        "GMEAIA-35",
+        "GMEAIA-36",
+        "GMEAIA-37",
+        "GMEAIA-38",
+        "GMEAIA-53",
+        "GMEAIA-56",
+        "GMEAIA-58"
+      ]
+    },
+    {
+      "id": "IRF-27",
+      "title": "Counter-disinformation and public-communication plan",
+      "purpose": "Separates factual communication and prebunking from political profiling, propaganda, retaliation, or institutional pressure.",
+      "action_class": "J",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-28",
+        "GMEAIA-57"
+      ]
+    },
+    {
+      "id": "IRF-28",
+      "title": "Regenerative funding application",
+      "purpose": "Records a request for support without establishing eligibility, entitlement, voting rights, activation, or evidence of regeneration.",
+      "action_class": "G",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-12",
+        "GMEAIA-26",
+        "GMEAIA-47"
+      ]
+    },
+    {
+      "id": "IRF-29",
+      "title": "Funding criteria, independence, and selection-pressure review",
+      "purpose": "Tests conditions for legality, proportionality, viewpoint neutrality, common-mode dependence, continuation incentives, and essential-function protection.",
+      "action_class": "G",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-17",
+        "GMEAIA-26",
+        "GMEAIA-47",
+        "GMEAIA-51"
+      ]
+    },
+    {
+      "id": "IRF-30",
+      "title": "Funding award and agreement",
+      "purpose": "Imports a separately competent award with amount, purpose, conditions, audit, appeal, suspension, transition, and closure.",
+      "action_class": "G",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-26",
+        "GMEAIA-47"
+      ]
+    },
+    {
+      "id": "IRF-31",
+      "title": "Payment, procurement, vendor, and expenditure authorization",
+      "purpose": "Separates grant award from spending, contracting, beneficial ownership, vendor selection, platform dependence, and disbursement.",
+      "action_class": "G",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-27"
+      ]
+    },
+    {
+      "id": "IRF-32",
+      "title": "Funding suspension, reduction, or clawback review",
+      "purpose": "Requires evidence, notice, proportionality, appeal, interim support, and protection of workers, core services, and innocent beneficiaries.",
+      "action_class": "G",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-26",
+        "GMEAIA-34",
+        "GMEAIA-36",
+        "GMEAIA-42",
+        "GMEAIA-47"
+      ]
+    },
+    {
+      "id": "IRF-33",
+      "title": "Impact-linked budgeting and causal-uncertainty proposal",
+      "purpose": "Treats outcome budgeting as a proposal requiring valid budget authority, causal caution, distributional safeguards, counterfactuals, and audit.",
+      "action_class": "G",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-30"
+      ]
+    },
+    {
+      "id": "IRF-34",
+      "title": "Regeneration Compact, response duties, and shared authority",
+      "purpose": "Defines legal effect, parties, scope, authority formation, clocks, funding, confidentiality, exit, surviving duties, and dispute routes.",
+      "action_class": "E",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-35",
+        "GMEAIA-37",
+        "GMEAIA-38",
+        "GMEAIA-59"
+      ]
+    },
+    {
+      "id": "IRF-35",
+      "title": "Pilot authorization and EGP adoption registration",
+      "purpose": "Separates internal selection, lawful authorization, EGP claim, protected-domain routing, and operational activation through GMEAIA.",
+      "action_class": "H",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-20",
+        "GMEAIA-21",
+        "GMEAIA-22",
+        "GMEAIA-37",
+        "GMEAIA-55",
+        "GMEAIA-56",
+        "GMEAIA-59"
+      ]
+    },
+    {
+      "id": "IRF-36",
+      "title": "Operational activation, implementation, and handoff plan",
+      "purpose": "Defines start, implementers, resources, service boundaries, safeguards, clocks, accepted handoffs, stop rules, expiry, and support withdrawal.",
+      "action_class": "H",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-23",
+        "GMEAIA-24",
+        "GMEAIA-30",
+        "GMEAIA-33",
+        "GMEAIA-36",
+        "GMEAIA-37",
+        "GMEAIA-38",
+        "GMEAIA-52",
+        "GMEAIA-55"
+      ]
+    },
+    {
+      "id": "IRF-37",
+      "title": "Regeneration audit charter, access, and independence",
+      "purpose": "Defines auditor appointment, common-mode independence, evidence access, refusal status, funding, conflicts, minority reports, correction, appeal, and expiry.",
+      "action_class": "I",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-03",
+        "GMEAIA-16",
+        "GMEAIA-17",
+        "GMEAIA-30",
+        "GMEAIA-34",
+        "GMEAIA-38",
+        "GMEAIA-50",
+        "GMEAIA-51"
+      ]
+    },
+    {
+      "id": "IRF-38",
+      "title": "Regeneration audit findings, recipient response, and omission",
+      "purpose": "Publishes evidence, uncertainty, dissent, reform class, recommendations, access limits, response state, and unresolved omission without automatic consequence.",
+      "action_class": "I",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-06",
+        "GMEAIA-08",
+        "GMEAIA-31",
+        "GMEAIA-32",
+        "GMEAIA-33",
+        "GMEAIA-34",
+        "GMEAIA-41",
+        "GMEAIA-42",
+        "GMEAIA-43",
+        "GMEAIA-45",
+        "GMEAIA-59"
+      ]
+    },
+    {
+      "id": "IRF-39",
+      "title": "Regeneration dashboard, public mirror, and non-disposition record",
+      "purpose": "Separates public accountability data from protected data and states that metrics and conformance do not establish legitimacy or regeneration.",
+      "action_class": "I",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-28",
+        "GMEAIA-30",
+        "GMEAIA-41",
+        "GMEAIA-60"
+      ]
+    },
+    {
+      "id": "IRF-40",
+      "title": "AI diagnostic, analytics, and common-substrate record",
+      "purpose": "Defines model purpose, version, data, shared-provider dependence, limitations, prohibited decisions, human responsibility, correction, and decommissioning.",
+      "action_class": "I",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-16",
+        "GMEAIA-28",
+        "GMEAIA-29",
+        "GMEAIA-33",
+        "GMEAIA-41",
+        "GMEAIA-51",
+        "GMEAIA-53",
+        "GMEAIA-60"
+      ]
+    },
+    {
+      "id": "IRF-41",
+      "title": "Institutional learning, implementation diary, and theory update",
+      "purpose": "Captures bounded learning, causal assessment, failed explanations, dissent, withdrawal, correction, and whether the reform theory should narrow.",
+      "action_class": "J",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-28",
+        "GMEAIA-31",
+        "GMEAIA-32",
+        "GMEAIA-35",
+        "GMEAIA-40",
+        "GMEAIA-41",
+        "GMEAIA-43",
+        "GMEAIA-53",
+        "GMEAIA-60"
+      ]
+    },
+    {
+      "id": "IRF-42",
+      "title": "Public narrative and storytelling record",
+      "purpose": "Separates voluntary storytelling from evidence, legitimacy scoring, political pressure, funding, and reputational sanctions.",
+      "action_class": "J",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-28",
+        "GMEAIA-40",
+        "GMEAIA-41",
+        "GMEAIA-60"
+      ]
+    },
+    {
+      "id": "IRF-43",
+      "title": "Programme transition, institutionalization, or closure proposal",
+      "purpose": "Compares continuation, ordinary adoption, transfer, merger, redesign, pause, or closure with causal, service, labour, asset, rights, and durability analysis.",
+      "action_class": "K",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-20",
+        "GMEAIA-24",
+        "GMEAIA-35",
+        "GMEAIA-36",
+        "GMEAIA-39",
+        "GMEAIA-43",
+        "GMEAIA-44",
+        "GMEAIA-48",
+        "GMEAIA-55",
+        "GMEAIA-57",
+        "GMEAIA-59"
+      ]
+    },
+    {
+      "id": "IRF-44",
+      "title": "Essential-function continuity and successor-capacity plan",
+      "purpose": "Identifies services, beneficiaries, dependencies, minimum continuity, emergency support, funding, successor capacity, and support-withdrawal durability.",
+      "action_class": "K",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-24",
+        "GMEAIA-25",
+        "GMEAIA-39",
+        "GMEAIA-43",
+        "GMEAIA-48"
+      ]
+    },
+    {
+      "id": "IRF-45",
+      "title": "Worker, pension, contractor, and employment transition plan",
+      "purpose": "Addresses bargaining, notice, redeployment, severance, pensions, contractors, disability, immigration status, safety, and claims.",
+      "action_class": "P",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-25",
+        "GMEAIA-39",
+        "GMEAIA-42",
+        "GMEAIA-48"
+      ]
+    },
+    {
+      "id": "IRF-46",
+      "title": "Asset, liability, contract, grant, and case inventory",
+      "purpose": "Creates a complete transition inventory without transferring or extinguishing anything by implication.",
+      "action_class": "K",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-27",
+        "GMEAIA-39",
+        "GMEAIA-48",
+        "GMEAIA-49"
+      ]
+    },
+    {
+      "id": "IRF-47",
+      "title": "Records, archives, privacy, and knowledge-custody plan",
+      "purpose": "Separates public archives, operational records, protected data, sealed evidence, Indigenous knowledge, retention, deletion, and successor access.",
+      "action_class": "N",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-28",
+        "GMEAIA-39",
+        "GMEAIA-41",
+        "GMEAIA-48",
+        "GMEAIA-49",
+        "GMEAIA-54",
+        "GMEAIA-60"
+      ]
+    },
+    {
+      "id": "IRF-48",
+      "title": "Lawful programme closure or institutional dissolution decision",
+      "purpose": "Imports a decision from the competent charter, treaty, member-state, court, insolvency, or other authority.",
+      "action_class": "K",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-20",
+        "GMEAIA-39",
+        "GMEAIA-44",
+        "GMEAIA-49"
+      ]
+    },
+    {
+      "id": "IRF-49",
+      "title": "Successor custody, authority return, and reproductive-risk record",
+      "purpose": "Assigns functions, assets, liabilities, staff duties, records, cases, remedies, temporary powers, and tests whether predecessor failures will reproduce.",
+      "action_class": "K",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-39",
+        "GMEAIA-48",
+        "GMEAIA-49",
+        "GMEAIA-59",
+        "GMEAIA-60"
+      ]
+    },
+    {
+      "id": "IRF-50",
+      "title": "Closure, unresolved duties, remedy, reopening, and final integrity record",
+      "purpose": "Records authority return and closure while preserving open claims and confirming what remained unresolved, transferred, or subject to reopening.",
+      "action_class": "L",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-34",
+        "GMEAIA-39",
+        "GMEAIA-41",
+        "GMEAIA-42",
+        "GMEAIA-48",
+        "GMEAIA-49",
+        "GMEAIA-60"
+      ]
+    }
+  ],
+  "gmeaia_crosswalk": [
+    {
+      "gmeaia_record": "GMEAIA-01",
+      "gmeaia_title": "Constituting Instrument, Legal Source, Jurisdiction, and Activation Status",
+      "irf_records": [
+        "IRF-02",
+        "IRF-03"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-02",
+      "gmeaia_title": "Method, Tool, Protocol, Template, and Authority-Effect Classification",
+      "irf_records": [
+        "IRF-01",
+        "IRF-16",
+        "IRF-20",
+        "IRF-24",
+        "IRF-26"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-03",
+      "gmeaia_title": "Actor, Agent, Office, Representation, and Technical Capability Record",
+      "irf_records": [
+        "IRF-01",
+        "IRF-12",
+        "IRF-17",
+        "IRF-25",
+        "IRF-37"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-04",
+      "gmeaia_title": "Sense Signal, Complaint, Opportunity, and Asserted Scope Record",
+      "irf_records": [
+        "IRF-06",
+        "IRF-22"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-05",
+      "gmeaia_title": "Observation, Evidence, Provenance, and Protected-Source Record",
+      "irf_records": [
+        "IRF-07"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-06",
+      "gmeaia_title": "Signal Validation, Corroboration, and Status Record",
+      "irf_records": [
+        "IRF-07",
+        "IRF-38"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-07",
+      "gmeaia_title": "Severity, Urgency, Reversibility, Uncertainty, and Response-Time Assessment",
+      "irf_records": [
+        "IRF-10"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-08",
+      "gmeaia_title": "Jurisdictional Triage, Competent-Authority Referral, Response, and Acceptance",
+      "irf_records": [
+        "IRF-03",
+        "IRF-18",
+        "IRF-38"
+      ],
+      "boundary": "Competent-authority response states and clocks remain governed by GMEAIA; IRF does not redefine them."
+    },
+    {
+      "gmeaia_record": "GMEAIA-09",
+      "gmeaia_title": "Affected Persons, Communities, Nations, Outsiders, and Transboundary Effects Map",
+      "irf_records": [
+        "IRF-04",
+        "IRF-14",
+        "IRF-15"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-10",
+      "gmeaia_title": "Affected Indigenous Nation, Applicable Indigenous Law, and Protected-Knowledge Authority",
+      "irf_records": [
+        "IRF-05"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-11",
+      "gmeaia_title": "Notice, Accessibility, Independent Advice, and Participation Support",
+      "irf_records": [
+        "IRF-04",
+        "IRF-14",
+        "IRF-15"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-12",
+      "gmeaia_title": "Proposal Intake, Source Signal, Sponsor, and Status Record",
+      "irf_records": [
+        "IRF-06",
+        "IRF-09",
+        "IRF-13",
+        "IRF-18",
+        "IRF-21",
+        "IRF-24",
+        "IRF-26",
+        "IRF-28",
+        "IRF-33",
+        "IRF-43"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-13",
+      "gmeaia_title": "Proposal Objective, Alternatives, Rights Effects, Causal Mechanism, and Reversibility Record",
+      "irf_records": [
+        "IRF-09",
+        "IRF-13",
+        "IRF-18",
+        "IRF-21",
+        "IRF-24",
+        "IRF-26",
+        "IRF-33",
+        "IRF-43"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-14",
+      "gmeaia_title": "Method Selection, Cultural Adaptation, Autonomy Statement, and Authority Effect",
+      "irf_records": [
+        "IRF-08",
+        "IRF-16",
+        "IRF-20",
+        "IRF-24",
+        "IRF-26"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-15",
+      "gmeaia_title": "Deliberation Plan, Facilitation Mandate, Record, Dissent, and Reasons",
+      "irf_records": [
+        "IRF-08",
+        "IRF-14",
+        "IRF-15",
+        "IRF-17"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-16",
+      "gmeaia_title": "Epistemic Readiness, Provenance, Common-Mode Dependence, Disinformation, and Trust Assessment",
+      "irf_records": [
+        "IRF-07",
+        "IRF-11",
+        "IRF-23",
+        "IRF-37",
+        "IRF-40"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-17",
+      "gmeaia_title": "Ethics, Harm, Rights, and Anti-Capture Advisory Review",
+      "irf_records": [
+        "IRF-11",
+        "IRF-23",
+        "IRF-29",
+        "IRF-37"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-18",
+      "gmeaia_title": "Consent Requirement, Holder, Scope, and Dependency Map",
+      "irf_records": [
+        "IRF-05",
+        "IRF-14",
+        "IRF-15",
+        "IRF-17"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-19",
+      "gmeaia_title": "Consent, Refusal, Withdrawal, and Non-Retaliation Record",
+      "irf_records": [
+        "IRF-05",
+        "IRF-14",
+        "IRF-15",
+        "IRF-22"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-20",
+      "gmeaia_title": "Authority Verification, Causal Responsibility, Decision Class, and Protected-Domain Classification",
+      "irf_records": [
+        "IRF-03",
+        "IRF-09",
+        "IRF-18",
+        "IRF-19",
+        "IRF-21",
+        "IRF-35",
+        "IRF-43",
+        "IRF-48"
+      ],
+      "boundary": "Causal responsibility and authority formation are recorded here; affected standing does not create responsibility."
+    },
+    {
+      "gmeaia_record": "GMEAIA-21",
+      "gmeaia_title": "Trial Authorization, Conditions, Scope, and Non-Precedent Record",
+      "irf_records": [
+        "IRF-20",
+        "IRF-26",
+        "IRF-35"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-22",
+      "gmeaia_title": "Adoption Claim, Deliberative Acceptance, and Registration Record",
+      "irf_records": [
+        "IRF-01",
+        "IRF-19",
+        "IRF-24",
+        "IRF-35"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-23",
+      "gmeaia_title": "Operational Activation, Start Conditions, Operator, and Clock Record",
+      "irf_records": [
+        "IRF-36"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-24",
+      "gmeaia_title": "Implementation Plan, Responsibilities, Dependencies, Service Boundaries, and Handoff Clocks",
+      "irf_records": [
+        "IRF-13",
+        "IRF-21",
+        "IRF-36",
+        "IRF-43",
+        "IRF-44"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-25",
+      "gmeaia_title": "Non-Derogable Rights, Essential Services, Safety, and Continuing Duties Record",
+      "irf_records": [
+        "IRF-14",
+        "IRF-15",
+        "IRF-44",
+        "IRF-45"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-26",
+      "gmeaia_title": "Funding Authority, Participation Support, Independence, and Non-Conformity Record",
+      "irf_records": [
+        "IRF-28",
+        "IRF-29",
+        "IRF-30",
+        "IRF-32"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-27",
+      "gmeaia_title": "Procurement, Contract, Vendor, Platform, and Technical-Service Record",
+      "irf_records": [
+        "IRF-21",
+        "IRF-25",
+        "IRF-31",
+        "IRF-46"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-28",
+      "gmeaia_title": "Data Purpose, Lawful Basis, Access Class, Retention, Publication, and Withdrawal",
+      "irf_records": [
+        "IRF-05",
+        "IRF-07",
+        "IRF-22",
+        "IRF-27",
+        "IRF-39",
+        "IRF-40",
+        "IRF-41",
+        "IRF-42",
+        "IRF-47"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-29",
+      "gmeaia_title": "AI, Sensor, Model, Algorithm, and Automation Role Record",
+      "irf_records": [
+        "IRF-40"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-30",
+      "gmeaia_title": "Monitoring Plan, Baseline, Metric, Counterfactual, Burden, and Review Schedule",
+      "irf_records": [
+        "IRF-06",
+        "IRF-10",
+        "IRF-33",
+        "IRF-36",
+        "IRF-37",
+        "IRF-39"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-31",
+      "gmeaia_title": "Outcome Observation, Incident, Side Effect, and Distributional Impact Record",
+      "irf_records": [
+        "IRF-38",
+        "IRF-41"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-32",
+      "gmeaia_title": "Causal Assessment, Contribution, External Shock, Causal Adequacy, and Uncertainty Record",
+      "irf_records": [
+        "IRF-09",
+        "IRF-38",
+        "IRF-41"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-33",
+      "gmeaia_title": "Midpoint Review, Corrective Action, and Continued-Operation Decision",
+      "irf_records": [
+        "IRF-36",
+        "IRF-38",
+        "IRF-40"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-34",
+      "gmeaia_title": "Complaint, Challenge, Interim Relief, Appeal, and Independent Review",
+      "irf_records": [
+        "IRF-14",
+        "IRF-15",
+        "IRF-22",
+        "IRF-32",
+        "IRF-37",
+        "IRF-38",
+        "IRF-50"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-35",
+      "gmeaia_title": "Amendment, Scope Change, Version Change, and New-Risk Assessment",
+      "irf_records": [
+        "IRF-13",
+        "IRF-18",
+        "IRF-20",
+        "IRF-21",
+        "IRF-24",
+        "IRF-26",
+        "IRF-34",
+        "IRF-41",
+        "IRF-43"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-36",
+      "gmeaia_title": "Pause, Suspension, Stop, Rollback, and Safe-State Record",
+      "irf_records": [
+        "IRF-20",
+        "IRF-26",
+        "IRF-32",
+        "IRF-36",
+        "IRF-43"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-37",
+      "gmeaia_title": "Renewal, Reauthorization, and Active Re-Consent Record",
+      "irf_records": [
+        "IRF-18",
+        "IRF-20",
+        "IRF-26",
+        "IRF-34",
+        "IRF-35",
+        "IRF-36"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-38",
+      "gmeaia_title": "Expiry, Automatic Deactivation, and Continuing-Duty Transition Record",
+      "irf_records": [
+        "IRF-12",
+        "IRF-20",
+        "IRF-26",
+        "IRF-34",
+        "IRF-36",
+        "IRF-37"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-39",
+      "gmeaia_title": "Termination, Closure, Authority Return, Asset Return, and Succession Record",
+      "irf_records": [
+        "IRF-43",
+        "IRF-44",
+        "IRF-45",
+        "IRF-46",
+        "IRF-47",
+        "IRF-48",
+        "IRF-49",
+        "IRF-50"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-40",
+      "gmeaia_title": "Learning Artifact, Failure Library, Story Bank, and Public Memory Record",
+      "irf_records": [
+        "IRF-41",
+        "IRF-42"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-41",
+      "gmeaia_title": "Record Correction, Retraction, Supersession, and Dependency Propagation",
+      "irf_records": [
+        "IRF-07",
+        "IRF-38",
+        "IRF-39",
+        "IRF-40",
+        "IRF-41",
+        "IRF-42",
+        "IRF-47",
+        "IRF-50"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-42",
+      "gmeaia_title": "Harm, Remedy, Restitution, Compensation, Rehabilitation, and Non-Repetition Record",
+      "irf_records": [
+        "IRF-22",
+        "IRF-32",
+        "IRF-38",
+        "IRF-45",
+        "IRF-50"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-43",
+      "gmeaia_title": "Scaling Recommendation, Transferability Limits, Transition Readiness, and Evidence Package",
+      "irf_records": [
+        "IRF-09",
+        "IRF-38",
+        "IRF-41",
+        "IRF-43",
+        "IRF-44"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-44",
+      "gmeaia_title": "Scaling, Replication, New-Jurisdiction, and Permanent-Enactment Authorization",
+      "irf_records": [
+        "IRF-18",
+        "IRF-19",
+        "IRF-43",
+        "IRF-48"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-45",
+      "gmeaia_title": "Institutional Purpose, Mandate, Power, Selection Pressure, and Obsolescence Audit",
+      "irf_records": [
+        "IRF-02",
+        "IRF-06",
+        "IRF-07",
+        "IRF-09",
+        "IRF-10",
+        "IRF-11",
+        "IRF-23",
+        "IRF-38"
+      ],
+      "boundary": "Primary institutional-purpose and objective-reproduction profile."
+    },
+    {
+      "gmeaia_record": "GMEAIA-46",
+      "gmeaia_title": "Charter Amendment, Governance Redesign, Constituency, and Decision-Rights Record",
+      "irf_records": [
+        "IRF-16",
+        "IRF-17",
+        "IRF-18",
+        "IRF-19"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-47",
+      "gmeaia_title": "Institutional Funding Eligibility, Condition, Incentive, and Appeal Record",
+      "irf_records": [
+        "IRF-28",
+        "IRF-29",
+        "IRF-30",
+        "IRF-32"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-48",
+      "gmeaia_title": "Institutional Transition, Worker, Beneficiary, Contract, and Service Continuity Record",
+      "irf_records": [
+        "IRF-43",
+        "IRF-44",
+        "IRF-45",
+        "IRF-46",
+        "IRF-47",
+        "IRF-49",
+        "IRF-50"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-49",
+      "gmeaia_title": "Institutional Dissolution, Successor, Dark Archive, and Unresolved-Duty Custody",
+      "irf_records": [
+        "IRF-46",
+        "IRF-47",
+        "IRF-48",
+        "IRF-49",
+        "IRF-50"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-50",
+      "gmeaia_title": "Facilitator Qualification, Appointment, Mandate, Conflict, Complaint, and Removal",
+      "irf_records": [
+        "IRF-08",
+        "IRF-12",
+        "IRF-25",
+        "IRF-37"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-51",
+      "gmeaia_title": "Auditor, Assessor, Ethics Reviewer, and Epistemic Reviewer Independence and Common-Mode Record",
+      "irf_records": [
+        "IRF-11",
+        "IRF-23",
+        "IRF-29",
+        "IRF-37",
+        "IRF-40"
+      ],
+      "boundary": "Primary auditor/common-mode independence profile."
+    },
+    {
+      "gmeaia_record": "GMEAIA-52",
+      "gmeaia_title": "Catalyst Team, Liaison, Evolution Cell, and Technical-Assistance Mandate",
+      "irf_records": [
+        "IRF-12",
+        "IRF-13",
+        "IRF-25",
+        "IRF-36"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-53",
+      "gmeaia_title": "Framework, Tool Core, Fork, Schema, Compatibility, Version, Deprecation, and Stewardship Record",
+      "irf_records": [
+        "IRF-01",
+        "IRF-16",
+        "IRF-20",
+        "IRF-24",
+        "IRF-26",
+        "IRF-40",
+        "IRF-41"
+      ],
+      "boundary": "Carries IRF framework-level theory, compatibility, version, narrowing, and deprecation."
+    },
+    {
+      "gmeaia_record": "GMEAIA-54",
+      "gmeaia_title": "Offline, Oral, Paper, Assisted, and Low-Tech Record Equivalence",
+      "irf_records": [
+        "IRF-04",
+        "IRF-05",
+        "IRF-07",
+        "IRF-08",
+        "IRF-14",
+        "IRF-15",
+        "IRF-22",
+        "IRF-47"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-55",
+      "gmeaia_title": "Emergency Signal, CDEE Referral, Mission Acceptance, and ECRC Interface",
+      "irf_records": [
+        "IRF-35",
+        "IRF-36",
+        "IRF-43"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-56",
+      "gmeaia_title": "Protected-Domain Experiment Exception and Specialized-Interface Authorization",
+      "irf_records": [
+        "IRF-20",
+        "IRF-26",
+        "IRF-35"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-57",
+      "gmeaia_title": "Coercive or Enforcement Request, Acceptance, Execution, and SCPA Handoff",
+      "irf_records": [
+        "IRF-21",
+        "IRF-27",
+        "IRF-43"
+      ],
+      "boundary": "IRF use is referral-only; it never accepts, authorizes, or executes coercive power."
+    },
+    {
+      "gmeaia_record": "GMEAIA-58",
+      "gmeaia_title": "Non-Activation, Sandbox, Prototype, Simulation, and Demonstration Register",
+      "irf_records": [
+        "IRF-20",
+        "IRF-24",
+        "IRF-26"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    },
+    {
+      "gmeaia_record": "GMEAIA-59",
+      "gmeaia_title": "Cross-Framework Handoff, Conformance, Recipient Response, Acceptance, and Custody Record",
+      "irf_records": [
+        "IRF-03",
+        "IRF-18",
+        "IRF-19",
+        "IRF-21",
+        "IRF-34",
+        "IRF-35",
+        "IRF-38",
+        "IRF-43",
+        "IRF-49"
+      ],
+      "boundary": "Consequential handoffs require explicit recipient response; timeout never transfers authority automatically."
+    },
+    {
+      "gmeaia_record": "GMEAIA-60",
+      "gmeaia_title": "Data Return, Deletion, Archive, Access Revocation, and Protected-Memory Disposition",
+      "irf_records": [
+        "IRF-22",
+        "IRF-39",
+        "IRF-40",
+        "IRF-41",
+        "IRF-42",
+        "IRF-47",
+        "IRF-49",
+        "IRF-50"
+      ],
+      "boundary": "IRF supplies an institutional-regeneration profile only; GMEAIA remains controlling."
+    }
+  ],
+  "readiness_gates": [
+    {
+      "id": "G01",
+      "requirement": "Framework explicitly non-sovereign and voluntary",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G02",
+      "requirement": "CIS/0.2.1 and GMEAIA/0.2.1 versions pinned",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G03",
+      "requirement": "Consequence profile CP0–CP3 selected and justified",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G04",
+      "requirement": "Exact constituting instrument and amendment authority",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G05",
+      "requirement": "Evolution Cell mandate, dependency reduction, and terminal condition bounded",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G06",
+      "requirement": "Affected parties and beneficiaries mapped",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G07",
+      "requirement": "Affected Indigenous nation controls representation and consent",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G08",
+      "requirement": "Mandate audit advisory and evidence-separated",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G09",
+      "requirement": "Causal responsibility and external controllers mapped where material",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G10",
+      "requirement": "Impossible mandate or constitutional gap recorded where present",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G11",
+      "requirement": "No scalar score determines legitimacy, funding, or closure",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G12",
+      "requirement": "Power maps protected from retaliation and political misuse",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G13",
+      "requirement": "Common-mode dependencies and reviewer independence assessed",
+      "status_needed": "Required when triggered"
+    },
+    {
+      "id": "G14",
+      "requirement": "Objective-reproduction pressures assessed for long-lived or self-renewing mechanisms",
+      "status_needed": "Required when triggered"
+    },
+    {
+      "id": "G15",
+      "requirement": "Governance blueprints do not create voting or veto rights",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G16",
+      "requirement": "Constituencies and selection methods derived",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G17",
+      "requirement": "Charter amendment uses lawful route",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G18",
+      "requirement": "Consequential recipients, response-duty sources, and clocks identified",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G19",
+      "requirement": "Timeout, refusal, capacity limitation, and constitutional gap do not transfer authority automatically",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G20",
+      "requirement": "Workers and unions consulted where affected",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G21",
+      "requirement": "Beneficiary and essential-service continuity protected",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G22",
+      "requirement": "Whistleblower support separate from investigation and guilt",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G23",
+      "requirement": "Cultural and spiritual practices optional and not substitutes for structural reform",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G24",
+      "requirement": "Facilitators, liaisons, auditors, and secondees accountable",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G25",
+      "requirement": "Funding criteria separately authorized, independent, and appealable",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G26",
+      "requirement": "Funding does not condition rights or ideological conformity",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G27",
+      "requirement": "Funding suspension preserves innocent beneficiaries and core services",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G28",
+      "requirement": "Budget metrics do not create payment, legitimacy, or closure automatically",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G29",
+      "requirement": "Regeneration Compact authority formation and response effect explicit",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G30",
+      "requirement": "Pilot authorization, EGP adoption, deployment, and activation separate",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G31",
+      "requirement": "Pilot type and minimum causally adequate scope stated",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G32",
+      "requirement": "Successful pilot requires new scaling or institutionalization decision",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G33",
+      "requirement": "Auditor independence, evidence-access status, and minority reports",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G34",
+      "requirement": "Audit findings do not trigger automatic consequences",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G35",
+      "requirement": "Recipient response and performance omission remain visible",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G36",
+      "requirement": "Dashboards protect data and do not infer regeneration from conformance",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G37",
+      "requirement": "AI prohibited from charter, funding, dismissal, and dissolution decisions",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G38",
+      "requirement": "Storytelling voluntary and non-evidentiary",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G39",
+      "requirement": "Programme transition inventories and support-withdrawal durability complete",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G40",
+      "requirement": "Dissolution decision from competent authority",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G41",
+      "requirement": "Successor custody and unresolved duties assigned",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G42",
+      "requirement": "Successor design tests reproductive risk",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G43",
+      "requirement": "Adoption Integrity Statement published for public claims",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G44",
+      "requirement": "Framework-level theory, disconfirming evidence, and narrowing conditions published",
+      "status_needed": "Required"
+    },
+    {
+      "id": "G45",
+      "requirement": "Closure returns authority and preserves remedy",
+      "status_needed": "Required"
+    }
+  ],
+  "compound_tests": [
+    {
+      "id": "T01",
+      "scenario": "AI mandate score labels an institution obsolete",
+      "required_outcome": "The score remains advisory; no closure, funding, or charter consequence follows."
+    },
+    {
+      "id": "T02",
+      "scenario": "Evolution Cell proposes a youth council with veto",
+      "required_outcome": "The proposal enters charter review; no veto exists until lawfully constituted."
+    },
+    {
+      "id": "T03",
+      "scenario": "Management creates an advisory youth panel internally",
+      "required_outcome": "Permitted only within existing authority; its effect label remains advisory."
+    },
+    {
+      "id": "T04",
+      "scenario": "A 30% voting share is copied from a template",
+      "required_outcome": "Rejected as self-executing; constituency and lawful amendment are required."
+    },
+    {
+      "id": "T05",
+      "scenario": "A generic Indigenous council approves reform",
+      "required_outcome": "Rejected where a specific affected nation must speak for itself."
+    },
+    {
+      "id": "T06",
+      "scenario": "Staff survey reveals retaliation risk",
+      "required_outcome": "Protected handling, anti-retaliation support, and independent review are triggered."
+    },
+    {
+      "id": "T07",
+      "scenario": "Power map names alleged blockers publicly",
+      "required_outcome": "Publication is blocked pending evidence, purpose, access, and retaliation review."
+    },
+    {
+      "id": "T08",
+      "scenario": "Whistleblower reports procurement capture",
+      "required_outcome": "Protection and evidence preservation occur separately from investigation and findings."
+    },
+    {
+      "id": "T09",
+      "scenario": "GCF conditions funding on adopting three modules",
+      "required_outcome": "Condition undergoes lawful, proportional, viewpoint-neutral funding review."
+    },
+    {
+      "id": "T10",
+      "scenario": "Bronze funding expires while essential services depend on it",
+      "required_outcome": "Transition support and continuity review occur before reduction."
+    },
+    {
+      "id": "T11",
+      "scenario": "Gold tier grants voting rights in the fund",
+      "required_outcome": "Rejected unless separately constituted by the fund's lawful governance process."
+    },
+    {
+      "id": "T12",
+      "scenario": "Outcome metric reaches 120%",
+      "required_outcome": "No automatic rebate or payment; separate financial decision required."
+    },
+    {
+      "id": "T13",
+      "scenario": "Audit finds poor mission performance",
+      "required_outcome": "Findings support options; they do not dismiss staff or dissolve programmes."
+    },
+    {
+      "id": "T14",
+      "scenario": "Institution disputes audit evidence",
+      "required_outcome": "Correction, response, minority report, and appeal remain available."
+    },
+    {
+      "id": "T15",
+      "scenario": "Public Mirror publishes employee sentiment by team",
+      "required_outcome": "Blocked or aggregated where retaliation or privacy risks remain."
+    },
+    {
+      "id": "T16",
+      "scenario": "AI sentiment analysis labels a member state obstructive",
+      "required_outcome": "No political pressure, sanction, or eligibility consequence may follow."
+    },
+    {
+      "id": "T17",
+      "scenario": "Regeneration Spotlight names dissenting officials",
+      "required_outcome": "Consent, accuracy, retaliation, and public-interest review are required."
+    },
+    {
+      "id": "T18",
+      "scenario": "Rapid Response Package is offered during institutional crisis",
+      "required_outcome": "It remains support; it cannot appoint command or override the charter."
+    },
+    {
+      "id": "T19",
+      "scenario": "Regeneration Liaison is embedded in a department",
+      "required_outcome": "Appointment, access, conflicts, confidentiality, term, and removal are recorded."
+    },
+    {
+      "id": "T20",
+      "scenario": "Pilot decision method succeeds internally",
+      "required_outcome": "Scaling becomes a new proposal with new authority and affected scope."
+    },
+    {
+      "id": "T21",
+      "scenario": "Pilot changes staff workload materially",
+      "required_outcome": "Labour consultation and workload protections are required before activation."
+    },
+    {
+      "id": "T22",
+      "scenario": "Pilot collects beneficiary data",
+      "required_outcome": "Purpose, access, retention, correction, and deletion are required."
+    },
+    {
+      "id": "T23",
+      "scenario": "Institutional Alchemy Sandbox simulates dissolution",
+      "required_outcome": "Simulation creates no authority or reputational finding."
+    },
+    {
+      "id": "T24",
+      "scenario": "Regeneration Index is used to shame a holdout state",
+      "required_outcome": "Rejected as political-pressure use beyond the framework's authority."
+    },
+    {
+      "id": "T25",
+      "scenario": "Programme is proposed for merger",
+      "required_outcome": "Services, workers, grants, contracts, cases, assets, and rights are inventoried."
+    },
+    {
+      "id": "T26",
+      "scenario": "Programme closes at the end of its pilot budget",
+      "required_outcome": "Budget expiry does not constitute lawful closure."
+    },
+    {
+      "id": "T27",
+      "scenario": "Member states lawfully vote to close a programme",
+      "required_outcome": "Closure proceeds only with transition, records, workers, beneficiaries, and remedy plans."
+    },
+    {
+      "id": "T28",
+      "scenario": "Institution is abruptly defunded",
+      "required_outcome": "Temporary archive and continuity measures preserve duties without manufacturing a new sovereign."
+    },
+    {
+      "id": "T29",
+      "scenario": "Dark Archive contains sealed investigations",
+      "required_outcome": "Access and successor custody remain governed by the originating authority."
+    },
+    {
+      "id": "T30",
+      "scenario": "Pensions are omitted from closure planning",
+      "required_outcome": "Closure fails until pension obligations and custody are assigned."
+    },
+    {
+      "id": "T31",
+      "scenario": "An unresolved discrimination case exists at dissolution",
+      "required_outcome": "The claim transfers to a competent successor or remains open; it is not extinguished."
+    },
+    {
+      "id": "T32",
+      "scenario": "A dissolved institution held emergency powers",
+      "required_outcome": "Temporary powers terminate and return; no successor inherits them by implication."
+    },
+    {
+      "id": "T33",
+      "scenario": "A public ceremony celebrates programme closure",
+      "required_outcome": "Ceremony cannot precede or substitute for lawful closure and worker notice."
+    },
+    {
+      "id": "T34",
+      "scenario": "A voluntary spiritual practice is offered to staff",
+      "required_outcome": "Participation is optional and cannot affect evaluation, promotion, or belonging."
+    },
+    {
+      "id": "T35",
+      "scenario": "A partner institution adopts an IRF tool",
+      "required_outcome": "The tool transports no authority from the sponsoring institution."
+    },
+    {
+      "id": "T36",
+      "scenario": "The framework itself is revised by the Community of Practice",
+      "required_outcome": "A proposal is created; the lawful framework steward adopts the version after review."
+    },
+    {
+      "id": "T37",
+      "scenario": "Frontline staff are tasked with reform while senior management retains budget and workload control",
+      "required_outcome": "Causal Responsibility Map identifies the upstream controllers; responsibility is not dumped downward."
+    },
+    {
+      "id": "T38",
+      "scenario": "Institution accepts a reform recommendation but misses the action clock",
+      "required_outcome": "Performance omission remains open; acceptance does not close the response record."
+    },
+    {
+      "id": "T39",
+      "scenario": "Recipient recognizes jurisdiction but lacks staff and funding",
+      "required_outcome": "State is `capacity_limited`, not `constitutional_gap`; support or lawful delegation is considered."
+    },
+    {
+      "id": "T40",
+      "scenario": "No actor possesses lawful jurisdiction over a cross-institutional failure",
+      "required_outcome": "A constitutional-gap notice is created; no framework body gains authority automatically."
+    },
+    {
+      "id": "T41",
+      "scenario": "Culture workshops are completed while appointment and budget incentives remain unchanged",
+      "required_outcome": "They may count as symptom or capacity reform, not reproductive reform."
+    },
+    {
+      "id": "T42",
+      "scenario": "Audit council, funder, facilitator, and AI use one professional and technical ecosystem",
+      "required_outcome": "Common-mode dependence is disclosed and independently stress-tested."
+    },
+    {
+      "id": "T43",
+      "scenario": "Institution publishes that it has “adopted IRF” after running only a storytelling module",
+      "required_outcome": "Adoption Integrity Statement must disclose the limited scope and absence of structural change."
+    },
+    {
+      "id": "T44",
+      "scenario": "A CP1 internal practice is required to complete the full fifty-record catalogue",
+      "required_outcome": "Non-conformant over-administration; core-plus-trigger proportionality applies."
+    },
+    {
+      "id": "T45",
+      "scenario": "A small pilot cannot expose the mechanism because upstream law remains fixed",
+      "required_outcome": "An Impossible Pilot Notice or redesign is required; a weak test cannot establish system efficacy."
+    },
+    {
+      "id": "T46",
+      "scenario": "Closure obligations can be lawfully assigned, but incumbents invoke complexity to preserve the institution",
+      "required_outcome": "Continuity is protected without presuming that the institutional shell must survive."
+    },
+    {
+      "id": "T47",
+      "scenario": "Successor institution inherits the same funder, appointment, data, and veto structure",
+      "required_outcome": "Reproductive-risk review is required before transition is represented as regeneration."
+    },
+    {
+      "id": "T48",
+      "scenario": "Repeated IRF use produces compliant records but no durable objective change",
+      "required_outcome": "Framework-level falsification review may narrow, suspend, or replace the affected mechanism."
+    }
+  ],
+  "framework_hypotheses": [
+    {
+      "id": "H1",
+      "hypothesis": "purpose and mandate audits identify material objective drift missed by ordinary governance",
+      "disconfirming_evidence": "audits largely restate known problems or avoid consequential causal findings"
+    },
+    {
+      "id": "H2",
+      "hypothesis": "reproductive reforms persist more reliably than symptom reforms where selection pressures caused the failure",
+      "disconfirming_evidence": "institutions with completed records show no durable behavior change"
+    },
+    {
+      "id": "H3",
+      "hypothesis": "Evolution Cells improve learning without becoming shadow authorities or permanent reform bureaucracies",
+      "disconfirming_evidence": "Evolution Cells become symbolic, agenda-controlling, or self-perpetuating"
+    },
+    {
+      "id": "H4",
+      "hypothesis": "constitutional separation prevents overreach without making reform impractically slow",
+      "disconfirming_evidence": "response and authorization chains routinely miss reform windows"
+    },
+    {
+      "id": "H5",
+      "hypothesis": "funding supports capability without purchasing conformity or dependency",
+      "disconfirming_evidence": "funded institutions converge on donor-preferred methods or remain dependent on support"
+    },
+    {
+      "id": "H6",
+      "hypothesis": "responsible continuity allows obsolete institutions to close rather than preserving them indefinitely",
+      "disconfirming_evidence": "continuity provisions systematically prevent closure without improving protection"
+    },
+    {
+      "id": "H7",
+      "hypothesis": "worker and beneficiary protection improves legitimacy and durability",
+      "disconfirming_evidence": "low-capacity institutions cannot use the framework without specialist mediation"
+    },
+    {
+      "id": "H8",
+      "hypothesis": "the record architecture adds more traceability than administrative burden.",
+      "disconfirming_evidence": "direct lawful reform outperforms the IRF pathway with less burden or delay."
+    }
+  ],
+  "narrowing_conditions": [
+    "its administrative burden exceeds its decision value",
+    "it creates common-mode dependence or retaliation risk",
+    "it does not change decisions or outcomes",
+    "its causal theory is repeatedly disconfirmed",
+    "it is usable mainly by already healthy institutions",
+    "it duplicates a valid ordinary-law or institutional process",
+    "the institution can preserve the function more simply without the framework."
+  ],
+  "release_doctrine": "Institutional regeneration requires evidence about mandate, causal constraints, selection pressures, authority, durable behavior, ordinary ownership, and lawful continuity. Record completion alone cannot establish regeneration, legitimacy, causation, or permission to restructure or close an institution.",
+  "cluster_peer_dependencies": [
+    {
+      "id": "EGP/1.2",
+      "role": "event_transport",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    },
+    {
+      "id": "IAF/1.2",
+      "role": "implementation_companion",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    },
+    {
+      "id": "IMT/0.9",
+      "role": "tool_commons",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    },
+    {
+      "id": "WDIP/1.7",
+      "role": "deliberation_companion",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    }
+  ],
+  "active_cluster_registry": "IAEG-CLUSTER/1.0"
+}

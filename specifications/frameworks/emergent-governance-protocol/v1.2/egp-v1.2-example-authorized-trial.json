@@ -1,0 +1,88 @@
+{
+  "egp_package": "EGP/1.2",
+  "event_id": "egp:adopt:municipal-crossing-trial:2026-001",
+  "operation": "adopt",
+  "created_at": "2026-08-06T00:30:00+02:00",
+  "created_by": {
+    "actor_id": "did:web:example-city.gov:transport-department",
+    "actor_type": "institution",
+    "capacity_claim": "Records an adoption decision; authority and causal responsibility are separately verified.",
+    "identity_proof_ref": "proof:city-signature-2026-001"
+  },
+  "event_version": "1.0.0",
+  "consequence_profile_claim": "CP2",
+  "jurisdiction_claims": [
+    "Example City municipal roads"
+  ],
+  "geographic_scope_claims": [
+    "Oak Street and River Road crossing"
+  ],
+  "institutional_scope_claims": [
+    "Municipal transport department"
+  ],
+  "language": "en",
+  "access_class": "public",
+  "source_refs": [
+    "gmeaia:GMEAIA-20:crossing-authority-causal-001",
+    "gmeaia:GMEAIA-21:crossing-trial-authorization-001"
+  ],
+  "relationship_refs": [
+    "egp:propose:crossing-trial:2026-001"
+  ],
+  "correction_status": "current",
+  "authority_effect": "consequential_reference",
+  "payload": {
+    "proposal_ref": "egp:propose:crossing-trial:2026-001",
+    "adopting_actor_ref": "did:web:example-city.gov:transport-department",
+    "effect_label": "authorized_trial_not_active",
+    "consequence_profile": "CP2",
+    "authority_resolution": {
+      "status": "valid",
+      "authority_and_causal_responsibility_ref": "gmeaia:GMEAIA-20:crossing-authority-causal-001",
+      "authority_formation": "retained"
+    },
+    "consent_resolution": {
+      "status": "not_applicable",
+      "refs": [
+        "gmeaia:GMEAIA-09:crossing-affected-001",
+        "gmeaia:GMEAIA-11:crossing-participation-001"
+      ]
+    },
+    "authorization_resolution": {
+      "status": "granted",
+      "authorization_ref": "gmeaia:GMEAIA-21:crossing-trial-authorization-001",
+      "trial_authorization_ref": "gmeaia:GMEAIA-21:crossing-trial-authorization-001"
+    },
+    "activation_resolution": {
+      "status": "inactive",
+      "activation_ref": null
+    },
+    "protected_domain_resolution": {
+      "flags": [],
+      "specialized_interface_ref": null,
+      "authorization_ref": null
+    },
+    "handoff_resolution": {
+      "status": "accepted",
+      "handoff_ref": "gmeaia:GMEAIA-08:crossing-referral-001"
+    },
+    "clocks": {
+      "authorized_from": "2026-09-01T00:00:00+02:00",
+      "authorized_until": "2027-02-28T23:59:59+01:00",
+      "acknowledgment_due": "2026-08-10T17:00:00+02:00",
+      "decision_due": "2026-08-31T17:00:00+02:00",
+      "action_due": "2026-09-01T08:00:00+02:00",
+      "review_due": "2026-11-30T17:00:00+01:00",
+      "automatic_expiry": "2027-02-28T23:59:59+01:00"
+    },
+    "safeguards": {
+      "rights_and_continuing_duties_ref": "gmeaia:GMEAIA-25:crossing-rights-001",
+      "implementation_plan_ref": "gmeaia:GMEAIA-24:crossing-implementation-001",
+      "monitoring_ref": "gmeaia:GMEAIA-30:crossing-monitoring-001",
+      "challenge_and_interim_relief_ref": "gmeaia:GMEAIA-34:crossing-challenge-001",
+      "pause_rollback_ref": "gmeaia:GMEAIA-36:crossing-rollback-001",
+      "closure_and_authority_return_ref": "gmeaia:GMEAIA-39:crossing-closure-001",
+      "data_disposition_ref": "gmeaia:GMEAIA-60:crossing-data-001"
+    }
+  }
+}

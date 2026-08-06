@@ -1,0 +1,12 @@
+81b5e0baeb495c55fd254eb6725c31551bac6ec7a17ed596839442c9dd59c68d  validate-wise-decision-making-integration-protocol-v1.7.py
+6f547dd7d28eaf7802be1f6d473d0f9de76a0bccd5d8a3bf13ea395a496e930b  wise-decision-making-integration-protocol-v1.7-changelog.md
+35b607dd6ec564d47a9bd313698ae4d0baaf08e9cd769f1b077759a71001a97b  wise-decision-making-integration-protocol-v1.7-example-assumption-audit.json
+61c636cffd65cc5c7d705902f7a474b4e929b0f983f42d8a9b25af13581d724d  wise-decision-making-integration-protocol-v1.7-example-capacity-limited-response.json
+0498cd937912cd368a8332cafc281809069e49d0bab944c3fbfd691c5f648a0d  wise-decision-making-integration-protocol-v1.7-example-protected-knowledge-contribution.json
+4589e22796bc80752a5b734e14874b23c8e7c38a43812f4aa43c5b14af779944  wise-decision-making-integration-protocol-v1.7-migration-from-v1.6.1.md
+82acfb30a5d99c2221922e3781a45457695b31b5ed4088e259422cd35dd4dda6  wise-decision-making-integration-protocol-v1.7-package-manifest.json
+d3c2dca7d58511dadeb1976fe6b91829cc764623969ad58d7e6cda0c609055e1  wise-decision-making-integration-protocol-v1.7-specification.schema.json
+f60c82d2f7761cc8cbba0510c06eceeeea2e784a60e57a832f5b912cbbe444b3  wise-decision-making-integration-protocol-v1.7-validation.txt
+deb87ead5bc176f3ee8b9d2599ef1fe4127d1b515e4519b370b6e55f2830429f  wise-decision-making-integration-protocol-v1.7.json
+dfa51e8372d91f4c046899f1bb37fb5d6a7652c16262750f26b9a829c71325d9  wise-decision-making-integration-protocol-v1.7.md
+3ff9c4347ed5861743ca7a1958e89cf28ee9e8f1f2183386ab75ed4cfa3e9f77  wise-decision-making-integration-protocol-v1.7.schema.json

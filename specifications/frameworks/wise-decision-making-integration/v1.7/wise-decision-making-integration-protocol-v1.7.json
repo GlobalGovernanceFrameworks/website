@@ -1,0 +1,1942 @@
+{
+  "$schema": "https://schemas.globalgovernanceframeworks.org/wdip/1.7/wise-decision-making-integration-protocol-v1.7-specification.schema.json",
+  "protocol_id": "WDIP/1.7",
+  "title": "Wise Decision-Making & Integration Protocol v1.7",
+  "version": "1.7",
+  "date": "2026-08-06",
+  "status": "document_and_machine_compatible",
+  "legal_character": "advisory_methodology_only",
+  "authority_effect": "advisory",
+  "source_lineage": {
+    "id": "WDIP/1.6.1",
+    "filename": "wise-decision-making-integration-protocol-v1.6.1.md",
+    "sha256": "7e3a2c6b52a1c37003ed8ccfcb467a251e549b3335553db6293030e4a9bc1ddc",
+    "bytes": 65049,
+    "hash_source": "frozen IAEG/0.1 registry"
+  },
+  "constitutional_interface": {
+    "id": "CIS/0.2.1",
+    "filename": "constitutional-interface-specification-v0.2.1.md",
+    "sha256": "2ab06be70d568be82efde2ccbcc3f8df48f37308fab3ccf116ac3efe4c167bfc",
+    "bytes": 81323
+  },
+  "controlling_interface": {
+    "id": "GMEAIA/0.2.1",
+    "filename": "governance-method-experiment-adoption-implementation-authority-interface-specification-v0.2.1.md",
+    "sha256": "8cdaf8c316b50b251721a824124e47b1ad30787e9f5281d7fade0f4360bfe5d1",
+    "bytes": 90094
+  },
+  "operational_companions": [
+    {
+      "id": "META-GOVERNANCE/1.6",
+      "filename": "integrated-meta-governance-v1.6.md",
+      "sha256": "cf1cd81a681b6b94ef4107cee35dfdabb3a991f6472c75d87fa7218a229466ba",
+      "bytes": 87518
+    },
+    {
+      "id": "EGP/1.2",
+      "role": "event_transport",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    },
+    {
+      "id": "IAF/1.2",
+      "role": "implementation_companion",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    },
+    {
+      "id": "IMT/0.9",
+      "role": "tool_commons",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    },
+    {
+      "id": "IRF/1.0",
+      "role": "institutional_transition",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    }
+  ],
+  "external_dependencies": [
+    {
+      "id": "MOS/2.8.1",
+      "role": "advisory ethical input",
+      "authority_effect": "advisory_only",
+      "source_hash": "243ad8e59011702ca09b4d3b08343c7be5028bc8d6d67a1bac13ef78b6bc25ce",
+      "validation_state": "not_revalidated_in_this_package"
+    },
+    {
+      "id": "ECRC",
+      "role": "emergency constitutional interface",
+      "authority_effect": "external_controlling_interface"
+    },
+    {
+      "id": "CDEE",
+      "role": "cross-domain emergency event envelope",
+      "authority_effect": "external_controlling_interface"
+    },
+    {
+      "id": "SCPA",
+      "role": "security, coercion, and protective action",
+      "authority_effect": "external_controlling_interface"
+    }
+  ],
+  "action_classes": [
+    {
+      "id": "A",
+      "name": "Mandate, authority, and process scope"
+    },
+    {
+      "id": "B",
+      "name": "Information conditions and provenance"
+    },
+    {
+      "id": "C",
+      "name": "Affected parties, representation, and consent"
+    },
+    {
+      "id": "D",
+      "name": "Knowledge gathering and protected knowledge"
+    },
+    {
+      "id": "E",
+      "name": "Framing, assumptions, and ethical inquiry"
+    },
+    {
+      "id": "F",
+      "name": "Synthesis, options, and scenario analysis"
+    },
+    {
+      "id": "G",
+      "name": "Facilitation, safety, and accessibility"
+    },
+    {
+      "id": "H",
+      "name": "Deliberation and recommendation"
+    },
+    {
+      "id": "I",
+      "name": "Democratic and institutional decision interface"
+    },
+    {
+      "id": "J",
+      "name": "Funding, participant support, and anti-capture"
+    },
+    {
+      "id": "K",
+      "name": "Implementation, monitoring, and learning"
+    },
+    {
+      "id": "L",
+      "name": "AI, data, archives, and publication"
+    },
+    {
+      "id": "M",
+      "name": "Urgency and emergency handoffs"
+    },
+    {
+      "id": "N",
+      "name": "Complaint, correction, dissent, and remedy"
+    },
+    {
+      "id": "O",
+      "name": "Protocol stewardship and amendment"
+    },
+    {
+      "id": "P",
+      "name": "Closure and authority return"
+    }
+  ],
+  "consequence_profiles": [
+    {
+      "id": "CP0",
+      "name": "Exploratory and non-consequential",
+      "examples": "public education, optional brainstorming, non-operative drafting, simulation, or demonstration.",
+      "core": "one compact non-operative record identifying the method or artifact, responsible actor, authority effect, and non-activation status. Data and closure semantics are added where material."
+    },
+    {
+      "id": "CP1",
+      "name": "Voluntary bounded practice",
+      "examples": null,
+      "core": "actor and method; voluntary scope; consent, refusal, and withdrawal; implementation responsibility; stop and expiry; complaint and correction route."
+    },
+    {
+      "id": "CP2",
+      "name": "Operational or consequential action",
+      "examples": null,
+      "core": "constituting authority; affected parties; causal responsibility; authorization and activation; implementation ownership and dependencies; monitoring and review; challenge and remedy; closure and unresolved-duty custody."
+    },
+    {
+      "id": "CP3",
+      "name": "Protected-domain or constitutional action",
+      "examples": null,
+      "core": "`CP2` plus `GMEAIA-56` or `GMEAIA-57` and the controlling specialized interface. Ordinary GMEAIA conformance is never sufficient by itself."
+    }
+  ],
+  "handoff_states": [
+    "offered",
+    "acknowledged",
+    "accepted",
+    "partially_accepted",
+    "capacity_limited",
+    "refused",
+    "deferred",
+    "referred",
+    "timed_out",
+    "misrouted",
+    "constitutional_gap",
+    "returned",
+    "closed"
+  ],
+  "response_duty_effects": [
+    "legal",
+    "contractual",
+    "charter_internal",
+    "voluntary_commitment",
+    "advisory",
+    "none"
+  ],
+  "authority_formation_states": [
+    "retained",
+    "delegated",
+    "transferred",
+    "concurrent",
+    "jointly_constituted",
+    "absent"
+  ],
+  "process_states": [
+    "exploratory",
+    "advisory_process",
+    "voluntary_internal_method",
+    "attached_to_lawful_decision",
+    "recommendation_issued",
+    "decision_imported",
+    "implementation_proposed",
+    "lawfully_activated",
+    "under_review",
+    "closing",
+    "closed_with_unresolved_duties",
+    "closed"
+  ],
+  "common_header_fields": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "created_at",
+    "effective_at",
+    "expires_at",
+    "status",
+    "normative_force",
+    "authority_effect",
+    "action_class",
+    "source_framework_id",
+    "source_framework_version",
+    "source_record_ids",
+    "supersedes",
+    "superseded_by",
+    "actor_id",
+    "actor_type",
+    "office_or_role",
+    "representation_source",
+    "technical_credential_refs",
+    "constituting_instrument",
+    "legal_power",
+    "jurisdiction_territorial",
+    "jurisdiction_personal",
+    "jurisdiction_subject_matter",
+    "jurisdiction_temporal",
+    "affected_party_refs",
+    "affected_indigenous_nation_refs",
+    "protected_domain_flags",
+    "consent_record_refs",
+    "authority_record_refs",
+    "activation_record_refs",
+    "access_class",
+    "public_summary",
+    "protected_annex_refs",
+    "data_purpose",
+    "retention_rule",
+    "correction_status",
+    "challenge_status",
+    "review_due_at",
+    "closure_state",
+    "unresolved_duty_refs",
+    "handoff_state",
+    "recipient_refs",
+    "recipient_acceptance_refs",
+    "hashes_and_signatures",
+    "human_accountable_officer",
+    "prohibited_inferences"
+  ],
+  "records": [
+    {
+      "id": "WDIP-01",
+      "title": "Process request and scope claim",
+      "action_class": "A",
+      "purpose": "Records who requests WDIP, the question, intended use, claimed urgency, proposed consequence profile, and known limits without activating the protocol.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-02",
+      "title": "Competent decision authority map",
+      "action_class": "A",
+      "purpose": "Identifies who may actually decide, under which law, charter, compact, or internal rule, with what authority formation, jurisdiction, response duty, review, and expiry.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-03",
+      "title": "WDIP process mandate and authority-effect record",
+      "action_class": "A",
+      "purpose": "Classifies the process as exploratory, advisory, voluntary internal, attached to a lawful decision, or record support and states its GMEAIA authority effect and CP0–CP3 consequence profile.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-04",
+      "title": "Affected-party and affected-outsider map",
+      "action_class": "C",
+      "purpose": "Identifies rights-holders, residents, workers, users, non-participants, transboundary communities, future and ecological interests, participation needs, challenge rights, and remedy routes.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-05",
+      "title": "Affected Indigenous nation and representation record",
+      "action_class": "C",
+      "purpose": "Records the specific affected nation or people, its own representatives, law, consent route, protected knowledge, permitted uses, and right not to engage.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-06",
+      "title": "Information Conditions Review charter",
+      "action_class": "B",
+      "purpose": "Defines the advisory Phase 0 scope, assessors, methods, evidence classes, common-mode dependencies, conflicts, access, dissent, correction, expiry, and prohibited inferences.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-07",
+      "title": "Claim, source, and provenance register",
+      "action_class": "B",
+      "purpose": "Separates assertions, observations, legal sources, testimony, models, traditions, spiritual or philosophical contributions, provenance, uncertainty, and permitted use.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-08",
+      "title": "Information quality and uncertainty assessment",
+      "action_class": "B",
+      "purpose": "Assesses reliability, contestation, missing information, sensitivity, decision relevance, and consequences of uncertainty without certifying legitimacy or truth in the abstract.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-09",
+      "title": "Epistemic diversity and exclusion assessment",
+      "action_class": "B",
+      "purpose": "Examines which knowledge systems, methods, affected perspectives, and dissenting views are present, missing, protected, correlated, or unable to participate.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-10",
+      "title": "Disinformation exposure assessment",
+      "action_class": "B",
+      "purpose": "Records alleged narratives, evidence, reach, intent uncertainty, affected groups, proposed repairs, due-process risks, and the distinction between disagreement and coordinated deception.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-11",
+      "title": "Information access and language plan",
+      "action_class": "G",
+      "purpose": "Provides translation, accessibility, low-tech and offline access, time, interpretation, childcare, independent advice, and participation support without conditioning access on agreement.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-12",
+      "title": "Trust and relational conditions assessment",
+      "action_class": "B",
+      "purpose": "Advises on trust, retaliation, historical harm, power asymmetry, repair needs, and limits without scoring community legitimacy or maturity.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-13",
+      "title": "Information repair proposal",
+      "action_class": "B",
+      "purpose": "Proposes research, translation, dialogue, correction, access support, narrowing, reversible interim options, or delay; it does not impose a pause or create authority.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-14",
+      "title": "Decision timing and proceed-with-uncertainty decision",
+      "action_class": "I",
+      "purpose": "Imports the competent authority’s choice to proceed, delay, narrow, refer, or use a lawful emergency route and links legal deadlines, GMEAIA-07 latency, safe-state, and response-clock sources.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-15",
+      "title": "Issue framing and question statement",
+      "action_class": "E",
+      "purpose": "Defines the decision question, scope, assumptions, excluded questions, causal boundaries, non-action, and who may revise the frame.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-16",
+      "title": "Pre-decision legitimacy and power assessment",
+      "action_class": "E",
+      "purpose": "Maps procedural standing, agenda control, information control, funding, facilitation, time, language, representation, bargaining power, and objective-reproduction risks as advisory evidence.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-17",
+      "title": "System, boundary, and feedback map",
+      "action_class": "F",
+      "purpose": "Records causal relationships, feedbacks, delays, scale, model assumptions, omitted variables, upstream controllers, and affected systems.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-18",
+      "title": "Future and long-horizon impact frame",
+      "action_class": "E",
+      "purpose": "Adds intergenerational, slow-variable, irreversible-loss, option-preservation, displaced-cost, and non-participant questions without creating a universal future-generation veto.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-19",
+      "title": "Public invitation and participation notice",
+      "action_class": "C",
+      "purpose": "States purpose, authority effect, decision-maker, participation modes, support, data use, refusal, withdrawal, complaint, duration, and the limits of representation.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-20",
+      "title": "Knowledge contribution intake",
+      "action_class": "D",
+      "purpose": "Records contributor authority, epistemic role, provenance, restrictions, uncertainty, conflicts, corroboration status, quote and model permissions, correction, and withdrawal.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-21",
+      "title": "Scientific and technical synthesis",
+      "action_class": "D",
+      "purpose": "Summarizes evidence, methods, consensus, disputes, conflicts, sensitivity, uncertainty, common-mode dependence, and decision relevance without monopolizing value judgment.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-22",
+      "title": "Affected Indigenous and traditional knowledge contribution",
+      "action_class": "D",
+      "purpose": "Uses only nation-controlled terms, representatives, access rules, consent, protected uses, non-digitization, AI restrictions, withdrawal, and destruction requirements.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-23",
+      "title": "Lived-experience and community testimony",
+      "action_class": "D",
+      "purpose": "Records testimony with informed consent, support, confidentiality, corroboration status, access, correction, withdrawal, and non-retaliation.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-24",
+      "title": "Ethical, philosophical, spiritual, and contemplative contribution",
+      "action_class": "D",
+      "purpose": "Records values, duties, interpretations, practices, meanings, and cautions without converting them into legal authority, scientific measurement, diagnosis, or proof.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-25",
+      "title": "Ecological and future-interest representation input",
+      "action_class": "D",
+      "purpose": "Records the source, method, mandate, conflicts, limits, uncertainty, and relation to any lawful guardian or rights-holder.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-26",
+      "title": "Process observer and power-imbalance report",
+      "action_class": "G",
+      "purpose": "Records observed exclusion, manipulation, intimidation, capture, common-mode failure, administrative burden, immediate safety needs, uncertainty, and referral.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-27",
+      "title": "Assumption audit",
+      "action_class": "E",
+      "purpose": "Identifies factual, causal, legal, moral, cultural, temporal, ontological, and metaphysical assumptions and the consequences if they are wrong.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-28",
+      "title": "Ethical stress test and justice-impact assessment",
+      "action_class": "E",
+      "purpose": "Tests options across rights, distribution, non-domination, ecological effects, irreversible loss, uncertainty, least-authority and least-harm alternatives.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-29",
+      "title": "Contemplative or reflective practice plan",
+      "action_class": "G",
+      "purpose": "Defines optional, secularly accessible, culturally bounded, trauma-aware and non-clinical practices with consent, alternatives, opt-out, facilitator limits, and no developmental ranking.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-30",
+      "title": "Integrative resistance and resonance map",
+      "action_class": "E",
+      "purpose": "Maps alignment, tension, non-comparability, and irreducible conflict without converting resonance into evidence, dissent into pathology, or resistance into immaturity.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-31",
+      "title": "Scenario and model register",
+      "action_class": "F",
+      "purpose": "Records models, versions, data, assumptions, uncertainty, sensitivity, owners, common dependencies, prohibited automated uses, correction, and decommissioning.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-32",
+      "title": "Pathway and alternative set",
+      "action_class": "F",
+      "purpose": "Presents genuinely distinct pathways, including non-action, reversible options, minority proposals, causal mechanisms, distributional consequences, and disconfirming observations.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-33",
+      "title": "Worldview translation and terminology record",
+      "action_class": "F",
+      "purpose": "Documents translations between factual, legal, moral, cultural, spiritual, and political vocabularies while preserving uncertainty, rights, asymmetry, and disagreement.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-34",
+      "title": "Deliberation charter",
+      "action_class": "H",
+      "purpose": "Defines participants, mandate, authority effect, decision relation, facilitation, access, conflicts, safety, record rules, response clocks, dissent, and closure.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-35",
+      "title": "Facilitator appointment and accountability",
+      "action_class": "G",
+      "purpose": "Defines competence, local equivalence, appointment source, mandate, funding, conflicts, common-mode dependencies, confidentiality, complaint, removal, liability, succession, and expiry.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-36",
+      "title": "Participation support decision",
+      "action_class": "J",
+      "purpose": "Imports a separate lawful decision for stipends, travel, care, accessibility, interpretation, independent advice, data costs, and payment continuation without making support conditional on agreement.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-37",
+      "title": "Dissent, minority report, and unresolved conflict record",
+      "action_class": "N",
+      "purpose": "Preserves objections, alternative evidence, non-consent, affected non-participant views, unresolved value conflicts, and conditions for reconsideration.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-38",
+      "title": "Recommendation and rationale",
+      "action_class": "H",
+      "purpose": "Publishes an advisory recommendation, alternatives, causal theory, evidence, uncertainty, dissent, distributional effects, limits, expiry, and prohibited inferences.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-39",
+      "title": "Competent authority decision record",
+      "action_class": "I",
+      "purpose": "Imports the lawful decision to accept, modify, refuse, defer, refer, or request further work; records authority formation, reasons duty, response clock, and decision effect without WDIP authoring the decision.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-40",
+      "title": "Public reasons and response record",
+      "action_class": "I",
+      "purpose": "Records acknowledgment, reasons, counter-evidence, refusal, deferment, referral, or non-response where law, charter, contract, or voluntary commitment establishes or permits them.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-41",
+      "title": "Citizen or affected-party review petition",
+      "action_class": "N",
+      "purpose": "Records a petition under applicable law, charter, compact, or voluntary process without creating a universal signature threshold, standing rule, or review body.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-42",
+      "title": "Independent review findings",
+      "action_class": "N",
+      "purpose": "Records advisory or legally constituted findings with authority source, evidence, common-mode independence, dissent, correction, appeal, remedy, and exact effect.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-43",
+      "title": "Funding source and condition disclosure",
+      "action_class": "J",
+      "purpose": "Records money and in-kind support, conditions, relationships, conflicts, appointment effects, continuation incentives, privacy, disclosure, and exit.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-44",
+      "title": "Funding influence allegation and integrity review",
+      "action_class": "J",
+      "purpose": "Separates allegation, protection, evidence, investigation, independence, findings, remedy, correction, appeal, and future restrictions.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-45",
+      "title": "Funding award, return, restriction, or appeal decision",
+      "action_class": "J",
+      "purpose": "Imports a separately competent financial or contractual decision; no automatic poison pill, clawback, blacklist, or legitimacy inference applies.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-46",
+      "title": "Implementation proposal and protected-domain review",
+      "action_class": "K",
+      "purpose": "Translates a recommendation into a new proposal under GMEAIA, IAF, the substantive framework, and specialized interfaces, including causal responsibility, CP profile, minimum causal adequacy, rights, resources, remedy, and closure.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-47",
+      "title": "EGP adoption, authorization, and activation references",
+      "action_class": "K",
+      "purpose": "Separates adoption claim, lawful authorization, technical deployment, operational activation, operator, clocks, expiry, and effect through exact EGP and GMEAIA references.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-48",
+      "title": "Monitoring, reflexivity, and incident record",
+      "action_class": "K",
+      "purpose": "Tracks outcomes, model errors, distribution, burden, response and performance omission, safety, dissent, unexpected consequences, dependency, and whether the process changes the pressures it targets.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-49",
+      "title": "Mid-course correction, suspension, or rollback proposal",
+      "action_class": "K",
+      "purpose": "Proposes correction, narrowing, safe-state, suspension, rollback, or closure; competent authorities issue any binding decision.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-50",
+      "title": "Harm, acknowledgment, restoration, and remedy record",
+      "action_class": "N",
+      "purpose": "Separates acknowledgment, ceremony, apology, causal finding, liability, financial authority, restitution, rehabilitation, non-repetition, and adjudication.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-51",
+      "title": "Living Archive and protected record-custody plan",
+      "action_class": "L",
+      "purpose": "Defines public metadata, protected payloads, custodians, access classes, retention, correction, withdrawal, deletion, succession, dark archive, and unresolved-duty custody.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-52",
+      "title": "Learning artifact and narrative translation",
+      "action_class": "L",
+      "purpose": "Creates bounded lessons, stories, art, metaphors, and public summaries with consent, uncertainty, attribution, reuse limits, correction, withdrawal, and no propaganda or conformance-scoring function.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-53",
+      "title": "AI, sentiment, and digital-tool record",
+      "action_class": "L",
+      "purpose": "Defines purpose, version, data, model and vendor dependencies, prohibited decisions, human accountability, bias and common-mode review, correction, security, export, and decommissioning.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-54",
+      "title": "Urgency and time-pressure assessment",
+      "action_class": "M",
+      "purpose": "Records harm from delay, harm from premature action, uncertainty, reversibility, maximum tolerable sensing and decision delay, interim safe-state options, and required emergency or protected-domain routes.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-55",
+      "title": "ECRC/CDEE emergency referral and mission reference",
+      "action_class": "M",
+      "purpose": "Transports—not creates—the lawful emergency declaration, mission acceptance, command, information, finance, clocks, expiry, review, remedy, and closure records.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-56",
+      "title": "Coercive, adjudicative, or enforcement referral",
+      "action_class": "M",
+      "purpose": "Routes search, seizure, detention, sanctions, force, border action, asset restraint, adjudication, compulsory data access, or enforcement to the competent interface and SCPA.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-57",
+      "title": "Facilitator, observer, or process complaint and remedy",
+      "action_class": "N",
+      "purpose": "Provides independent complaint, acknowledgment, interim protection, investigation, correction, recusal, removal, compensation, appeal, and non-retaliation.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-58",
+      "title": "Protocol amendment proposal and compatibility review",
+      "action_class": "O",
+      "purpose": "Records proposed changes, framework theory, evidence, objective-reproduction risk, rights and security impact, dissent, migration, interoperability, narrowing, replacement, and non-scaling conditions.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-59",
+      "title": "Lawful WDIP version adoption and deprecation",
+      "action_class": "O",
+      "purpose": "Imports the framework steward’s adoption, compatibility, transition, support, deprecation, retirement, and archive decision without making the steward a substantive decision authority.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    },
+    {
+      "id": "WDIP-60",
+      "title": "Process closure, authority return, and unresolved duties",
+      "action_class": "P",
+      "purpose": "Ends temporary roles, access, data flows, facilitation, and support while preserving open payments, complaints, remedies, records, protected knowledge, custody, response duties, and reopening routes.",
+      "required_content": [
+        "all 48 GMEAIA common-header fields",
+        "consequence_profile where the process or output has a consequence classification",
+        "record-specific epistemic, authority, participation, dissent, data, clock, remedy, and closure content",
+        "triggered GMEAIA and specialized-interface references"
+      ],
+      "prohibited_inferences": [
+        "The record may structure inquiry or preserve evidence; it cannot create jurisdiction, consent, representation, activation, liability, legitimacy, funding authority, emergency power, adjudication, or enforcement by implication."
+      ],
+      "lifecycle_relation": "Links predecessor, dependency, challenge, correction, review, expiry, unresolved duties, handoff, and closure or supersession."
+    }
+  ],
+  "gmeaia_crosswalk": [
+    {
+      "gmeaia_id": "GMEAIA-01",
+      "gmeaia_title": "Constituting Instrument, Legal Source, Jurisdiction, and Activation Status",
+      "wdip_record": "WDIP-01",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-02",
+      "gmeaia_title": "Method, Tool, Protocol, Template, and Authority-Effect Classification",
+      "wdip_record": "WDIP-02",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-03",
+      "gmeaia_title": "Actor, Agent, Office, Representation, and Technical Capability Record",
+      "wdip_record": "WDIP-03",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-04",
+      "gmeaia_title": "Sense Signal, Complaint, Opportunity, and Asserted Scope Record",
+      "wdip_record": "WDIP-04",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-05",
+      "gmeaia_title": "Observation, Evidence, Provenance, and Protected-Source Record",
+      "wdip_record": "WDIP-05",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-06",
+      "gmeaia_title": "Signal Validation, Corroboration, and Status Record",
+      "wdip_record": "WDIP-06",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-07",
+      "gmeaia_title": "Severity, Urgency, Reversibility, Uncertainty, and Response-Time Assessment",
+      "wdip_record": "WDIP-07",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-08",
+      "gmeaia_title": "Jurisdictional Triage, Competent-Authority Referral, Response, and Acceptance",
+      "wdip_record": "WDIP-08",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-09",
+      "gmeaia_title": "Affected Persons, Communities, Nations, Outsiders, and Transboundary Effects Map",
+      "wdip_record": "WDIP-09",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-10",
+      "gmeaia_title": "Affected Indigenous Nation, Applicable Indigenous Law, and Protected-Knowledge Authority",
+      "wdip_record": "WDIP-10",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-11",
+      "gmeaia_title": "Notice, Accessibility, Independent Advice, and Participation Support",
+      "wdip_record": "WDIP-11",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-12",
+      "gmeaia_title": "Proposal Intake, Source Signal, Sponsor, and Status Record",
+      "wdip_record": "WDIP-12",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-13",
+      "gmeaia_title": "Proposal Objective, Alternatives, Rights Effects, Causal Mechanism, and Reversibility Record",
+      "wdip_record": "WDIP-13",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-14",
+      "gmeaia_title": "Method Selection, Cultural Adaptation, Autonomy Statement, and Authority Effect",
+      "wdip_record": "WDIP-14",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-15",
+      "gmeaia_title": "Deliberation Plan, Facilitation Mandate, Record, Dissent, and Reasons",
+      "wdip_record": "WDIP-15",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-16",
+      "gmeaia_title": "Epistemic Readiness, Provenance, Common-Mode Dependence, Disinformation, and Trust Assessment",
+      "wdip_record": "WDIP-16",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-17",
+      "gmeaia_title": "Ethics, Harm, Rights, and Anti-Capture Advisory Review",
+      "wdip_record": "WDIP-17",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-18",
+      "gmeaia_title": "Consent Requirement, Holder, Scope, and Dependency Map",
+      "wdip_record": "WDIP-18",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-19",
+      "gmeaia_title": "Consent, Refusal, Withdrawal, and Non-Retaliation Record",
+      "wdip_record": "WDIP-19",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-20",
+      "gmeaia_title": "Authority Verification, Causal Responsibility, Decision Class, and Protected-Domain Classification",
+      "wdip_record": "WDIP-20",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-21",
+      "gmeaia_title": "Trial Authorization, Conditions, Scope, and Non-Precedent Record",
+      "wdip_record": "WDIP-21",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-22",
+      "gmeaia_title": "Adoption Claim, Deliberative Acceptance, and Registration Record",
+      "wdip_record": "WDIP-22",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-23",
+      "gmeaia_title": "Operational Activation, Start Conditions, Operator, and Clock Record",
+      "wdip_record": "WDIP-23",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-24",
+      "gmeaia_title": "Implementation Plan, Responsibilities, Dependencies, Service Boundaries, and Handoff Clocks",
+      "wdip_record": "WDIP-24",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-25",
+      "gmeaia_title": "Non-Derogable Rights, Essential Services, Safety, and Continuing Duties Record",
+      "wdip_record": "WDIP-25",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-26",
+      "gmeaia_title": "Funding Authority, Participation Support, Independence, and Non-Conformity Record",
+      "wdip_record": "WDIP-26",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-27",
+      "gmeaia_title": "Procurement, Contract, Vendor, Platform, and Technical-Service Record",
+      "wdip_record": "WDIP-27",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-28",
+      "gmeaia_title": "Data Purpose, Lawful Basis, Access Class, Retention, Publication, and Withdrawal",
+      "wdip_record": "WDIP-28",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-29",
+      "gmeaia_title": "AI, Sensor, Model, Algorithm, and Automation Role Record",
+      "wdip_record": "WDIP-29",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-30",
+      "gmeaia_title": "Monitoring Plan, Baseline, Metric, Counterfactual, Burden, and Review Schedule",
+      "wdip_record": "WDIP-30",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-31",
+      "gmeaia_title": "Outcome Observation, Incident, Side Effect, and Distributional Impact Record",
+      "wdip_record": "WDIP-31",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-32",
+      "gmeaia_title": "Causal Assessment, Contribution, External Shock, Causal Adequacy, and Uncertainty Record",
+      "wdip_record": "WDIP-32",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-33",
+      "gmeaia_title": "Midpoint Review, Corrective Action, and Continued-Operation Decision",
+      "wdip_record": "WDIP-33",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-34",
+      "gmeaia_title": "Complaint, Challenge, Interim Relief, Appeal, and Independent Review",
+      "wdip_record": "WDIP-34",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-35",
+      "gmeaia_title": "Amendment, Scope Change, Version Change, and New-Risk Assessment",
+      "wdip_record": "WDIP-35",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-36",
+      "gmeaia_title": "Pause, Suspension, Stop, Rollback, and Safe-State Record",
+      "wdip_record": "WDIP-36",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-37",
+      "gmeaia_title": "Renewal, Reauthorization, and Active Re-Consent Record",
+      "wdip_record": "WDIP-37",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-38",
+      "gmeaia_title": "Expiry, Automatic Deactivation, and Continuing-Duty Transition Record",
+      "wdip_record": "WDIP-38",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-39",
+      "gmeaia_title": "Termination, Closure, Authority Return, Asset Return, and Succession Record",
+      "wdip_record": "WDIP-39",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-40",
+      "gmeaia_title": "Learning Artifact, Failure Library, Story Bank, and Public Memory Record",
+      "wdip_record": "WDIP-40",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-41",
+      "gmeaia_title": "Record Correction, Retraction, Supersession, and Dependency Propagation",
+      "wdip_record": "WDIP-41",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-42",
+      "gmeaia_title": "Harm, Remedy, Restitution, Compensation, Rehabilitation, and Non-Repetition Record",
+      "wdip_record": "WDIP-42",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-43",
+      "gmeaia_title": "Scaling Recommendation, Transferability Limits, Transition Readiness, and Evidence Package",
+      "wdip_record": "WDIP-43",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-44",
+      "gmeaia_title": "Scaling, Replication, New-Jurisdiction, and Permanent-Enactment Authorization",
+      "wdip_record": "WDIP-44",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-45",
+      "gmeaia_title": "Institutional Purpose, Mandate, Power, Selection Pressure, and Obsolescence Audit",
+      "wdip_record": "WDIP-45",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-46",
+      "gmeaia_title": "Charter Amendment, Governance Redesign, Constituency, and Decision-Rights Record",
+      "wdip_record": "WDIP-46",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-47",
+      "gmeaia_title": "Institutional Funding Eligibility, Condition, Incentive, and Appeal Record",
+      "wdip_record": "WDIP-47",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-48",
+      "gmeaia_title": "Institutional Transition, Worker, Beneficiary, Contract, and Service Continuity Record",
+      "wdip_record": "WDIP-48",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-49",
+      "gmeaia_title": "Institutional Dissolution, Successor, Dark Archive, and Unresolved-Duty Custody",
+      "wdip_record": "WDIP-49",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-50",
+      "gmeaia_title": "Facilitator Qualification, Appointment, Mandate, Conflict, Complaint, and Removal",
+      "wdip_record": "WDIP-50",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-51",
+      "gmeaia_title": "Auditor, Assessor, Ethics Reviewer, and Epistemic Reviewer Independence and Common-Mode Record",
+      "wdip_record": "WDIP-51",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-52",
+      "gmeaia_title": "Catalyst Team, Liaison, Evolution Cell, and Technical-Assistance Mandate",
+      "wdip_record": "WDIP-52",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-53",
+      "gmeaia_title": "Framework, Tool Core, Fork, Schema, Compatibility, Version, Deprecation, and Stewardship Record",
+      "wdip_record": "WDIP-53",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-54",
+      "gmeaia_title": "Offline, Oral, Paper, Assisted, and Low-Tech Record Equivalence",
+      "wdip_record": "WDIP-54",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-55",
+      "gmeaia_title": "Emergency Signal, CDEE Referral, Mission Acceptance, and ECRC Interface",
+      "wdip_record": "WDIP-55",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-56",
+      "gmeaia_title": "Protected-Domain Experiment Exception and Specialized-Interface Authorization",
+      "wdip_record": "WDIP-56",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-57",
+      "gmeaia_title": "Coercive or Enforcement Request, Acceptance, Execution, and SCPA Handoff",
+      "wdip_record": "WDIP-57",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-58",
+      "gmeaia_title": "Non-Activation, Sandbox, Prototype, Simulation, and Demonstration Register",
+      "wdip_record": "WDIP-58",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-59",
+      "gmeaia_title": "Cross-Framework Handoff, Conformance, Recipient Response, Acceptance, and Custody Record",
+      "wdip_record": "WDIP-59",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    },
+    {
+      "gmeaia_id": "GMEAIA-60",
+      "gmeaia_title": "Data Return, Deletion, Archive, Access Revocation, and Protected-Memory Disposition",
+      "wdip_record": "WDIP-60",
+      "boundary": "WDIP supplies a plural-inquiry and deliberative-method profile only; GMEAIA and the competent authority remain controlling."
+    }
+  ],
+  "readiness_gates": [
+    {
+      "id": "G01",
+      "requirement": "Process request, purpose, and intended use are explicit."
+    },
+    {
+      "id": "G02",
+      "requirement": "Authority effect and CP0–CP3 consequence profile are explicit."
+    },
+    {
+      "id": "G03",
+      "requirement": "Competent decision authority and authority formation are identified."
+    },
+    {
+      "id": "G04",
+      "requirement": "WDIP is not presented as the decision authority."
+    },
+    {
+      "id": "G05",
+      "requirement": "Affected parties and outsiders are mapped."
+    },
+    {
+      "id": "G06",
+      "requirement": "Affected Indigenous authority and protected knowledge are preserved."
+    },
+    {
+      "id": "G07",
+      "requirement": "Affected standing is not converted into causal responsibility."
+    },
+    {
+      "id": "G08",
+      "requirement": "Information provenance and epistemic roles are explicit."
+    },
+    {
+      "id": "G09",
+      "requirement": "Uncertainty, missing information, and alternative explanations are visible."
+    },
+    {
+      "id": "G10",
+      "requirement": "Common-mode dependencies among sources, reviewers, models, vendors, and funders are assessed."
+    },
+    {
+      "id": "G11",
+      "requirement": "Disinformation allegations preserve due process and uncertainty."
+    },
+    {
+      "id": "G12",
+      "requirement": "Language, accessibility, low-tech access, and independent advice are adequate."
+    },
+    {
+      "id": "G13",
+      "requirement": "Trust and relational assessments do not classify legitimacy or maturity."
+    },
+    {
+      "id": "G14",
+      "requirement": "The question, causal boundary, assumptions, and non-action are explicit."
+    },
+    {
+      "id": "G15",
+      "requirement": "Agenda, funding, facilitation, record, and time power are mapped."
+    },
+    {
+      "id": "G16",
+      "requirement": "Long-horizon and irreversible effects are considered without inventing vetoes."
+    },
+    {
+      "id": "G17",
+      "requirement": "Participation notice states authority effect, data use, refusal, withdrawal, support, and complaint."
+    },
+    {
+      "id": "G18",
+      "requirement": "Knowledge contributions have permitted-use, correction, and withdrawal rules."
+    },
+    {
+      "id": "G19",
+      "requirement": "Scientific synthesis distinguishes evidence from law and value judgment."
+    },
+    {
+      "id": "G20",
+      "requirement": "Spiritual or contemplative inputs remain voluntary and non-clinical."
+    },
+    {
+      "id": "G21",
+      "requirement": "Scenario and AI tools are versioned, bounded, and human-accountable."
+    },
+    {
+      "id": "G22",
+      "requirement": "Options are genuinely distinct and include less-authoritative alternatives."
+    },
+    {
+      "id": "G23",
+      "requirement": "Dissent and non-consent remain visible."
+    },
+    {
+      "id": "G24",
+      "requirement": "Facilitators have bounded mandates, conflicts, complaints, removal, and succession."
+    },
+    {
+      "id": "G25",
+      "requirement": "Participation support is not conditional on agreement."
+    },
+    {
+      "id": "G26",
+      "requirement": "Recommendation displays evidence, uncertainty, dissent, limits, expiry, and causal theory."
+    },
+    {
+      "id": "G27",
+      "requirement": "Any response duty cites its legal, charter, contractual, internal, voluntary, or advisory source."
+    },
+    {
+      "id": "G28",
+      "requirement": "Acknowledgment, decision, and action clocks cite GMEAIA-07 or valid law/charter."
+    },
+    {
+      "id": "G29",
+      "requirement": "The exact GMEAIA handoff state is used."
+    },
+    {
+      "id": "G30",
+      "requirement": "capacity_limited is distinct from constitutional_gap."
+    },
+    {
+      "id": "G31",
+      "requirement": "Timeout or refusal does not transfer authority."
+    },
+    {
+      "id": "G32",
+      "requirement": "Protected-domain and coercive matters fail closed to specialized interfaces."
+    },
+    {
+      "id": "G33",
+      "requirement": "Adoption, authorization, deployment, activation, and operation remain separate."
+    },
+    {
+      "id": "G34",
+      "requirement": "Implementation proposals are minimum causally adequate for their claims."
+    },
+    {
+      "id": "G35",
+      "requirement": "Monitoring includes burden, distribution, dependency, omission, and objective reproduction."
+    },
+    {
+      "id": "G36",
+      "requirement": "Funding and appointment incentives cannot buy consensus or suppress dissent."
+    },
+    {
+      "id": "G37",
+      "requirement": "Harm, acknowledgment, liability, remedy, and adjudication remain distinct."
+    },
+    {
+      "id": "G38",
+      "requirement": "Archive, AI, publication, correction, withdrawal, and protected-memory rules are defined."
+    },
+    {
+      "id": "G39",
+      "requirement": "Framework theory, disconfirming evidence, narrowing, replacement, and non-scaling conditions are reviewable."
+    },
+    {
+      "id": "G40",
+      "requirement": "Closure returns temporary authority and access while preserving unresolved duties and custody."
+    }
+  ],
+  "compound_tests": [
+    {
+      "id": "T01",
+      "scenario": "An information review finds low trust",
+      "required_outcome": "The finding remains advisory; it cannot block a lawful decision automatically or classify the community as unready."
+    },
+    {
+      "id": "T02",
+      "scenario": "A single Indigenous source is authoritative under the affected nation’s law",
+      "required_outcome": "No universal two-source rule displaces the nation’s authority or protected-knowledge limits."
+    },
+    {
+      "id": "T03",
+      "scenario": "A generic elder offers to speak for an affected nation",
+      "required_outcome": "The contribution may be advisory but cannot establish representation, law, consent, or knowledge authority."
+    },
+    {
+      "id": "T04",
+      "scenario": "A spiritual practice is proposed for all participants",
+      "required_outcome": "A secular and accessible alternative is required; refusal has no adverse consequence."
+    },
+    {
+      "id": "T05",
+      "scenario": "A model assigns a wisdom or maturity score",
+      "required_outcome": "The score is prohibited for consequential classification or decision-making."
+    },
+    {
+      "id": "T06",
+      "scenario": "A recommendation is supported by unanimous participants",
+      "required_outcome": "Consensus does not create jurisdiction, consent for non-participants, funding, or activation."
+    },
+    {
+      "id": "T07",
+      "scenario": "A dissenting participant is described as resistant to wisdom",
+      "required_outcome": "The characterization is removed or corrected; dissent is preserved as information."
+    },
+    {
+      "id": "T08",
+      "scenario": "A funder and three reviewers rely on the same consultancy and model",
+      "required_outcome": "The common-mode dependency is disclosed and independent review or fallback is sought."
+    },
+    {
+      "id": "T09",
+      "scenario": "A public body receives a recommendation with no legal response duty",
+      "required_outcome": "WDIP may record delivery but cannot invent acknowledgment or reasons obligations."
+    },
+    {
+      "id": "T10",
+      "scenario": "A charter requires response within 30 days but GMEAIA-07 shows harm within 7 days",
+      "required_outcome": "The conflict is recorded and interim protection is referred without creating new jurisdiction."
+    },
+    {
+      "id": "T11",
+      "scenario": "A recipient recognizes jurisdiction but lacks translation capacity",
+      "required_outcome": "The handoff state is capacity_limited, with support needs and continuing duty recorded."
+    },
+    {
+      "id": "T12",
+      "scenario": "No identified authority has lawful jurisdiction",
+      "required_outcome": "The state is constitutional_gap; WDIP records the gap and routes constitution without inheriting authority."
+    },
+    {
+      "id": "T13",
+      "scenario": "A referral times out",
+      "required_outcome": "The timeout is visible and reviewable but does not transfer authority to WDIP, the sender, or Meta-Governance."
+    },
+    {
+      "id": "T14",
+      "scenario": "A recommendation affects an essential water service",
+      "required_outcome": "Implementation routes through GMEAIA and the water framework; WDIP cannot activate or interrupt service."
+    },
+    {
+      "id": "T15",
+      "scenario": "A participant withdraws testimony publication consent",
+      "required_outcome": "The public artifact is revised or removed while only lawful minimum provenance is retained."
+    },
+    {
+      "id": "T16",
+      "scenario": "Parliament rejects a WDIP recommendation",
+      "required_outcome": "The rejection stands; any reasons duty comes from law, charter, contract, or voluntary commitment."
+    },
+    {
+      "id": "T17",
+      "scenario": "Several recommendations are rejected over five years",
+      "required_outcome": "No automatic review body, petition threshold, or shadow government is created."
+    },
+    {
+      "id": "T18",
+      "scenario": "A lawful citizen petition is filed",
+      "required_outcome": "WDIP may support the constituted route without manufacturing standing or review authority."
+    },
+    {
+      "id": "T19",
+      "scenario": "A donor privately pressures facilitators",
+      "required_outcome": "Protection and an integrity review begin; allegation is not yet a finding."
+    },
+    {
+      "id": "T20",
+      "scenario": "An integrity review substantiates interference",
+      "required_outcome": "A competent financial, contractual, employment, or public authority decides remedy and appeal."
+    },
+    {
+      "id": "T21",
+      "scenario": "A donor is publicly accused before review",
+      "required_outcome": "Publication is limited to protect due process, safety, and defamation interests."
+    },
+    {
+      "id": "T22",
+      "scenario": "Participant support is funded through AUBI",
+      "required_outcome": "A separate financial authority determines eligibility and payment; WDIP does not issue benefits."
+    },
+    {
+      "id": "T23",
+      "scenario": "A participant withdraws from deliberation",
+      "required_outcome": "Lawfully committed support and remedy remain available under their terms."
+    },
+    {
+      "id": "T24",
+      "scenario": "An existential-risk claim invokes time pressure",
+      "required_outcome": "WDIP assesses and refers; ECRC/CDEE or competent law governs emergency powers."
+    },
+    {
+      "id": "T25",
+      "scenario": "Delay may cause catastrophic harm",
+      "required_outcome": "Reversible interim options and lawful emergency powers are assessed separately from the WDIP recommendation."
+    },
+    {
+      "id": "T26",
+      "scenario": "The decision requires search, seizure, detention, sanctions, or force",
+      "required_outcome": "The matter routes to the competent authority and SCPA; WDIP cannot authorize or execute it."
+    },
+    {
+      "id": "T27",
+      "scenario": "A blockchain records consensus",
+      "required_outcome": "The ledger proves a record existed; it does not prove authority, representation, truth, or legitimacy."
+    },
+    {
+      "id": "T28",
+      "scenario": "An archive contains trauma testimony or sacred knowledge",
+      "required_outcome": "Access, retention, withdrawal, correction, reuse, AI training, and successor custody remain controlled."
+    },
+    {
+      "id": "T29",
+      "scenario": "A harm-acknowledgment ritual occurs",
+      "required_outcome": "The ritual does not determine causation, liability, compensation, or adjudication."
+    },
+    {
+      "id": "T30",
+      "scenario": "The process causes participant harm",
+      "required_outcome": "Independent complaint, protection, investigation, remedy, facilitator review, and appeal are available."
+    },
+    {
+      "id": "T31",
+      "scenario": "A pilot implementing a recommendation is judged successful",
+      "required_outcome": "Scaling requires a new proposal and cannot exceed the pilot type or causal adequacy."
+    },
+    {
+      "id": "T32",
+      "scenario": "A recommendation is implemented before activation",
+      "required_outcome": "The action is paused or blocked until authority, authorization, and activation records exist."
+    },
+    {
+      "id": "T33",
+      "scenario": "A WDIP process succeeds only while an external catalyst team is present",
+      "required_outcome": "The result is support-dependent; ordinary ownership and support-withdrawal conditions must be tested."
+    },
+    {
+      "id": "T34",
+      "scenario": "A process produces extensive records but no clearer decision or responsibility",
+      "required_outcome": "Conformance and throughput do not prove success; burden and unresolved causality count against the method."
+    },
+    {
+      "id": "T35",
+      "scenario": "WDIP v1.8 is proposed by facilitators",
+      "required_outcome": "It undergoes stewardship, compatibility, rights, security, objective-reproduction, migration, and falsification review."
+    },
+    {
+      "id": "T36",
+      "scenario": "A process closes with unpaid stipends, open complaints, or protected records",
+      "required_outcome": "Temporary roles end, but payment, complaint, remedy, data, custody, and reopening duties remain assigned."
+    }
+  ],
+  "release_doctrine": "WDIP structures plural inquiry and advisory reasoning. It does not create the authority to decide or act, and its conformance does not prove legitimacy, wisdom, or success.",
+  "active_cluster_registry": "IAEG-CLUSTER/1.0"
+}

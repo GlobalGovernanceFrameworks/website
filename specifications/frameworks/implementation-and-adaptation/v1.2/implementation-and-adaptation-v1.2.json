@@ -1,0 +1,1962 @@
+{
+  "$schema": "https://schemas.globalgovernanceframeworks.org/iaf/1.2/implementation-and-adaptation-v1.2-specification.schema.json",
+  "framework_id": "IAF/1.2",
+  "title": "GGF Implementation & Adaptation Framework",
+  "version": "1.2",
+  "date": "2026-08-06",
+  "status": "document_and_machine_compatible",
+  "legal_character": "Implementation-support, method-selection, pilot, transition, and learning interface; not a source of jurisdiction, consent, public law, emergency command, funding authority, or scaling permission.",
+  "source_lineage": {
+    "CIS/0.2.1": {
+      "filename": "constitutional-interface-specification-v0.2.1.md",
+      "sha256": "2ab06be70d568be82efde2ccbcc3f8df48f37308fab3ccf116ac3efe4c167bfc",
+      "bytes": 81323
+    },
+    "GMEAIA/0.2.1": {
+      "filename": "governance-method-experiment-adoption-implementation-authority-interface-specification-v0.2.1.md",
+      "sha256": "8cdaf8c316b50b251721a824124e47b1ad30787e9f5281d7fade0f4360bfe5d1",
+      "bytes": 90094
+    },
+    "META-GOVERNANCE/1.6": {
+      "filename": "integrated-meta-governance-v1.6.md",
+      "sha256": "cf1cd81a681b6b94ef4107cee35dfdabb3a991f6472c75d87fa7218a229466ba",
+      "bytes": 87518
+    },
+    "IAF/1.2": {
+      "filename": "implementation-and-adaptation-v1.2.md",
+      "sha256": "9b18e19e028352896635366ada96db416bbf089ac4d67247bdca1f12c1274e67",
+      "bytes": 113447
+    }
+  },
+  "constitutional_interface": "CIS/0.2.1",
+  "controlling_interface": "GMEAIA/0.2.1",
+  "event_transport": "EGP/1.2",
+  "tool_commons": "IMT/0.9",
+  "institutional_transition": "IRF/1.0",
+  "coordination_interface": "META-GOVERNANCE/1.6",
+  "non_authority_clause": "Context is not competence. Assessment is not jurisdiction. A tool is not a mandate. Adoption is not activation. Pilot success is not permission to scale. Compatibility is not legitimacy. Conformance is not success.",
+  "action_classes": [
+    {
+      "id": "A",
+      "scope": "Constitution and role boundary"
+    },
+    {
+      "id": "B",
+      "scope": "Engagement and invitation"
+    },
+    {
+      "id": "C",
+      "scope": "Affected parties and Indigenous authority"
+    },
+    {
+      "id": "D",
+      "scope": "Context evidence and conditions"
+    },
+    {
+      "id": "E",
+      "scope": "Journey and tool selection"
+    },
+    {
+      "id": "F",
+      "scope": "Cultural adaptation and advisory review"
+    },
+    {
+      "id": "G",
+      "scope": "Pilot design and protected-domain review"
+    },
+    {
+      "id": "H",
+      "scope": "Consent and authority"
+    },
+    {
+      "id": "I",
+      "scope": "Adoption, activation, and implementation"
+    },
+    {
+      "id": "J",
+      "scope": "Funding and participation support"
+    },
+    {
+      "id": "K",
+      "scope": "Data, technology, and dashboards"
+    },
+    {
+      "id": "L",
+      "scope": "Monitoring, incident, and correction"
+    },
+    {
+      "id": "M",
+      "scope": "Learning and public memory"
+    },
+    {
+      "id": "N",
+      "scope": "Scaling and permanent adoption"
+    },
+    {
+      "id": "O",
+      "scope": "Emergency and cross-framework handoff"
+    },
+    {
+      "id": "P",
+      "scope": "Termination, remedy, closure, and stewardship"
+    }
+  ],
+  "pilot_types": [
+    {
+      "id": "acceptability",
+      "primary_question": "Can affected participants understand, access, and willingly use the intervention?",
+      "success_supports": "Acceptability within the tested population and conditions",
+      "does_not_establish": [
+        "feasibility",
+        "causal effectiveness",
+        "system effect",
+        "durability"
+      ]
+    },
+    {
+      "id": "feasibility",
+      "primary_question": "Can the intervention operate safely with the tested resources and constraints?",
+      "success_supports": "Bounded operational feasibility",
+      "does_not_establish": [
+        "causal mechanism",
+        "net benefit",
+        "transferability",
+        "ordinary affordability"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "primary_question": "Does the claimed causal mechanism operate under specified conditions?",
+      "success_supports": "Evidence about the mechanism",
+      "does_not_establish": [
+        "system-wide effect",
+        "political durability",
+        "scale"
+      ]
+    },
+    {
+      "id": "operational",
+      "primary_question": "Can authorized ordinary actors deliver the intervention reliably?",
+      "success_supports": "Delivery capability under tested conditions",
+      "does_not_establish": [
+        "net system effect",
+        "long-term institutionalization"
+      ]
+    },
+    {
+      "id": "system_effect",
+      "primary_question": "Does the relevant condition improve, including distributional and external effects?",
+      "success_supports": "Bounded system-effect evidence",
+      "does_not_establish": [
+        "transferability to new contexts",
+        "ordinary ownership"
+      ]
+    },
+    {
+      "id": "institutionalization",
+      "primary_question": "Can a competent ordinary owner maintain, adapt, fund, govern, and close the function after exceptional support ends?",
+      "success_supports": "Durability within the tested institutional context",
+      "does_not_establish": [
+        "universal scalability",
+        "permanent superiority"
+      ]
+    }
+  ],
+  "complexity_bands": [
+    {
+      "id": "B1",
+      "description": "Single low-risk tool",
+      "authority_consequence": "None; appropriate internal authority and consent still required."
+    },
+    {
+      "id": "B2",
+      "description": "Multi-tool pilot",
+      "authority_consequence": "None; cumulative dependency and administrative-burden review required."
+    },
+    {
+      "id": "B3",
+      "description": "Full local stack",
+      "authority_consequence": "None; public or protected-domain effects require specialized authority."
+    },
+    {
+      "id": "B4",
+      "description": "Multi-community or multi-jurisdiction proposal",
+      "authority_consequence": "No automatic progression; new jurisdiction and authorization required."
+    }
+  ],
+  "consequence_profiles": [
+    {
+      "id": "CP0",
+      "name": "Exploratory and non-consequential",
+      "examples": "public education, optional brainstorming, non-operative drafting, simulation, or demonstration.",
+      "core": "one compact non-operative record identifying the method or artifact, responsible actor, authority effect, and non-activation status. Data and closure semantics are added where material."
+    },
+    {
+      "id": "CP1",
+      "name": "Voluntary bounded practice",
+      "examples": null,
+      "core": "actor and method; voluntary scope; consent, refusal, and withdrawal; implementation responsibility; stop and expiry; complaint and correction route."
+    },
+    {
+      "id": "CP2",
+      "name": "Operational or consequential action",
+      "examples": null,
+      "core": "constituting authority; affected parties; causal responsibility; authorization and activation; implementation ownership and dependencies; monitoring and review; challenge and remedy; closure and unresolved-duty custody."
+    },
+    {
+      "id": "CP3",
+      "name": "Protected-domain or constitutional action",
+      "examples": null,
+      "core": "`CP2` plus `GMEAIA-56` or `GMEAIA-57` and the controlling specialized interface. Ordinary GMEAIA conformance is never sufficient by itself."
+    }
+  ],
+  "handoff_states": [
+    "offered",
+    "acknowledged",
+    "accepted",
+    "partially_accepted",
+    "capacity_limited",
+    "refused",
+    "deferred",
+    "referred",
+    "timed_out",
+    "misrouted",
+    "constitutional_gap",
+    "returned",
+    "closed"
+  ],
+  "authority_formation_states": [
+    "retained",
+    "delegated",
+    "transferred",
+    "concurrent",
+    "jointly_constituted",
+    "absent"
+  ],
+  "response_duty_effects": [
+    "legal",
+    "contractual",
+    "charter_internal",
+    "voluntary_commitment",
+    "advisory",
+    "none"
+  ],
+  "common_header_fields": [
+    {
+      "number": 1,
+      "field": "record_id"
+    },
+    {
+      "number": 2,
+      "field": "record_type"
+    },
+    {
+      "number": 3,
+      "field": "schema_version"
+    },
+    {
+      "number": 4,
+      "field": "created_at"
+    },
+    {
+      "number": 5,
+      "field": "effective_at"
+    },
+    {
+      "number": 6,
+      "field": "expires_at"
+    },
+    {
+      "number": 7,
+      "field": "status"
+    },
+    {
+      "number": 8,
+      "field": "normative_force"
+    },
+    {
+      "number": 9,
+      "field": "authority_effect"
+    },
+    {
+      "number": 10,
+      "field": "action_class"
+    },
+    {
+      "number": 11,
+      "field": "source_framework_id"
+    },
+    {
+      "number": 12,
+      "field": "source_framework_version"
+    },
+    {
+      "number": 13,
+      "field": "source_record_ids"
+    },
+    {
+      "number": 14,
+      "field": "supersedes"
+    },
+    {
+      "number": 15,
+      "field": "superseded_by"
+    },
+    {
+      "number": 16,
+      "field": "actor_id"
+    },
+    {
+      "number": 17,
+      "field": "actor_type"
+    },
+    {
+      "number": 18,
+      "field": "office_or_role"
+    },
+    {
+      "number": 19,
+      "field": "representation_source"
+    },
+    {
+      "number": 20,
+      "field": "technical_credential_refs"
+    },
+    {
+      "number": 21,
+      "field": "constituting_instrument"
+    },
+    {
+      "number": 22,
+      "field": "legal_power"
+    },
+    {
+      "number": 23,
+      "field": "jurisdiction_territorial"
+    },
+    {
+      "number": 24,
+      "field": "jurisdiction_personal"
+    },
+    {
+      "number": 25,
+      "field": "jurisdiction_subject_matter"
+    },
+    {
+      "number": 26,
+      "field": "jurisdiction_temporal"
+    },
+    {
+      "number": 27,
+      "field": "affected_party_refs"
+    },
+    {
+      "number": 28,
+      "field": "affected_indigenous_nation_refs"
+    },
+    {
+      "number": 29,
+      "field": "protected_domain_flags"
+    },
+    {
+      "number": 30,
+      "field": "consent_record_refs"
+    },
+    {
+      "number": 31,
+      "field": "authority_record_refs"
+    },
+    {
+      "number": 32,
+      "field": "activation_record_refs"
+    },
+    {
+      "number": 33,
+      "field": "access_class"
+    },
+    {
+      "number": 34,
+      "field": "public_summary"
+    },
+    {
+      "number": 35,
+      "field": "protected_annex_refs"
+    },
+    {
+      "number": 36,
+      "field": "data_purpose"
+    },
+    {
+      "number": 37,
+      "field": "retention_rule"
+    },
+    {
+      "number": 38,
+      "field": "correction_status"
+    },
+    {
+      "number": 39,
+      "field": "challenge_status"
+    },
+    {
+      "number": 40,
+      "field": "review_due_at"
+    },
+    {
+      "number": 41,
+      "field": "closure_state"
+    },
+    {
+      "number": 42,
+      "field": "unresolved_duty_refs"
+    },
+    {
+      "number": 43,
+      "field": "handoff_state"
+    },
+    {
+      "number": 44,
+      "field": "recipient_refs"
+    },
+    {
+      "number": 45,
+      "field": "recipient_acceptance_refs"
+    },
+    {
+      "number": 46,
+      "field": "hashes_and_signatures"
+    },
+    {
+      "number": 47,
+      "field": "human_accountable_officer"
+    },
+    {
+      "number": 48,
+      "field": "prohibited_inferences"
+    }
+  ],
+  "records": [
+    {
+      "id": "IAF-01",
+      "title": "Constituting Instrument, Scope, Non-Authority, and Activation Status",
+      "action_class": "A",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-01",
+        "GMEAIA-02"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Constitutes the framework as an implementation-support and method-selection system. Records version, adoption status, competent adopter, jurisdictions, and the explicit absence of authority to enact law, recognize rights, declare emergencies, approve budgets, command institutions, or enforce compliance.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-02",
+      "title": "Source, Dependency, Compatibility-Power, and Retired-Reference Register",
+      "action_class": "A",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-53",
+        "GMEAIA-59"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Pins exact versions and hashes for controlling interfaces; identifies advisory and external dependencies; records incompatible, expired, suspended, or retired versions; states the precise effect of incompatibility on operations, support, funding, and recognition; preserves local-fork and migration routes; and prevents compatibility or a generic framework representative from supplying legitimacy, approval, or consent.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-03",
+      "title": "Implementation Principal, Objective, Causal Scope, Pilot Type, and Status",
+      "action_class": "A",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-03",
+        "GMEAIA-12"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Identifies who requested support, their capacity, desired outcome, pilot type, consequence profile, affected domains, geographic and institutional scope, claimed causal mechanism, variables inside and outside the principal's control, initial authority claims, voluntary or mandatory character, and withdrawal conditions.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-04",
+      "title": "Actor, Office, Representation, Conflict, Common-Mode, and Separation-of-Duties Map",
+      "action_class": "A",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-03",
+        "GMEAIA-50",
+        "GMEAIA-51",
+        "GMEAIA-52"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Maps implementing actors, decision bodies, funders, facilitators, technical services, AI providers, auditors, domain authorities, reviewers, tool stewards, and affected-party representatives. States prohibited role combinations, shared infrastructure and professional dependencies, conflicts, recusals, removal, succession, liability, and fallback.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-05",
+      "title": "Catalyst Team, Community Weaver, Assessor, Local-Equivalent, and Objective-Reproduction Mandate",
+      "action_class": "A",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-50",
+        "GMEAIA-51",
+        "GMEAIA-52"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Defines support roles, qualifications, local-equivalence routes, mandate, prohibited powers, conflicts, complaints, removal, data access, funding independence, common-mode dependencies, knowledge-transfer duties, and incentives affecting tool maintenance, pilot continuation, local autonomy, and reduction of support dependence.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-06",
+      "title": "Engagement Invitation, Outreach, Entry, Refusal, and Exit Record",
+      "action_class": "B",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-11",
+        "GMEAIA-18",
+        "GMEAIA-19"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Records whether engagement was requested or offered, who was contacted, what was explained, voluntary and non-voluntary elements, opt-out and safe exit, non-retaliation, continuing support, and the absence of implied consent from attendance or silence.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-07",
+      "title": "Trust-Building, Listening, Pre-Assessment, and Non-Intervention Record",
+      "action_class": "B",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-04",
+        "GMEAIA-05",
+        "GMEAIA-14"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Supports Stage 0 listening, shared meals, story circles, low-stakes mapping, and relationship building while prohibiting covert assessment, intelligence gathering, representative selection, or intervention. Records protected content and limits on later reuse.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-08",
+      "title": "Affected Persons, Communities, Outsiders, Workers, Users, and Transboundary Map",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-09",
+        "GMEAIA-11"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Identifies affected participants and nonparticipants, minorities, dissenters, workers, tenants, users, migrants, neighbouring communities, downstream or cross-border interests, children, disabled people, future users, and ecological dependencies.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-09",
+      "title": "Affected Indigenous Nation, Applicable Law, Consent, and Protected-Knowledge Authority",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-10",
+        "GMEAIA-18",
+        "GMEAIA-19"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Identifies the specific affected nation or people, its self-selected representatives, applicable law and protocols, territorial and relational authority, internal plurality, non-engagement, protected knowledge, and the prohibition on global proxy approval.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-10",
+      "title": "Accessibility, Language, Independent Advice, and Participation Support Record",
+      "action_class": "C",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-11",
+        "GMEAIA-26",
+        "GMEAIA-54"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Provides translation, sign language, childcare, disability access, travel, digital and analog access, independent technical or legal advice, safety support, and payment for participation without conditioning support on agreement with the pilot.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-11",
+      "title": "Context Assessment and Causal-Adequacy Charter, Purpose, Method, Data, and Prohibited Uses",
+      "action_class": "D",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-02",
+        "GMEAIA-14",
+        "GMEAIA-16"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Constitutes a bounded assessment with declared purpose, consequence profile, pilot question, causal mechanism, dimensions, methods, assessors, evidence sources, access classes, uncertainty, affected-party review, expiry, correction, administrative burden, and prohibited uses. It cannot determine sovereignty, competence, eligibility, intervention authority, or system effect.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-12",
+      "title": "Governance, Mandate, Decision Process, Causal Authority, and Institutional Capacity Profile",
+      "action_class": "D",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-15",
+        "GMEAIA-20",
+        "GMEAIA-45"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Describes existing decision processes, mandate clarity, authority formation, causal-variable control, representation, accountability, conflict resolution, review, administrative capacity, legal dependencies, and institutional constraints without ranking the community or replacing its own account.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-13",
+      "title": "Resource, Time, Finance, Technology, Accessibility, Maintenance, and Support-Withdrawal Capacity Profile",
+      "action_class": "D",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-13",
+        "GMEAIA-24",
+        "GMEAIA-26",
+        "GMEAIA-27"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Records people, time, finance, infrastructure, digital and low-tech options, maintenance, security, accessibility, external dependencies, ordinary-owner capacity, support-withdrawal risks, and capacity gaps. Resource scarcity supports assistance; it does not justify external control or inflated claims.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-14",
+      "title": "Conflict, Safety, Trauma, Power, Capture, and Retaliation Risk Profile",
+      "action_class": "D",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-07",
+        "GMEAIA-17",
+        "GMEAIA-28"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Maps violence and conflict, elite capture, retaliation, coercion, gatekeepers, informal power, historical harm, trauma, worker and participant safety, and risks created by the implementation process itself. Sensitive maps are protected rather than automatically published.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-15",
+      "title": "Evidence, Provenance, Uncertainty, Dissent, and Correction Record",
+      "action_class": "D",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-05",
+        "GMEAIA-06",
+        "GMEAIA-16",
+        "GMEAIA-41"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Preserves evidence sources, oral and experiential knowledge, models, missing information, uncertainty, dissent, source protection, correction, and expiry. It prevents a facilitator summary or AI synthesis from becoming an authoritative account of the community.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-16",
+      "title": "Implementation Conditions, Causal Responsibility, and Readiness Non-Disposition Record",
+      "action_class": "D",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-16",
+        "GMEAIA-17"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Replaces a scalar readiness judgment with a multidimensional conditions and causal-responsibility profile. Records support needs, causal controllers, upstream duties, jointly constituted or absent authority, unresolved dependencies, strengths, risks, confidence, and conclusions the local intervention cannot establish. It cannot deny rights, self-government, essential support, participation, or funding automatically.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-17",
+      "title": "Support Intensity, Sequencing, Capacity-Building, Upstream Action, and Impossible-Pilot Recommendation",
+      "action_class": "D",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-14",
+        "GMEAIA-16",
+        "GMEAIA-17"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Recommends pacing, sequencing, minimum causally adequate steps, training, facilitation, finance, safety work, upstream action, redesign, postponement, or an Impossible Pilot Notice. The recommendation is advisory, time-limited, challengeable, and cannot be interpreted as permission or prohibition.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-18",
+      "title": "Journey Candidate, Purpose, Fit, Alternatives, and Voluntary Selection Register",
+      "action_class": "E",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-14"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Lists possible journeys—getting started, decision improvement, conflict transformation, regenerative economy, institutional transition, or another locally defined path—with assumptions, alternatives, resource needs, authority effects, and the option to choose none.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-19",
+      "title": "Tool Resource Card, Authority Effect, Causal Claim, Compatibility Power, Risk, Cost, and Support Requirement",
+      "action_class": "E",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-02",
+        "GMEAIA-27",
+        "GMEAIA-53",
+        "GMEAIA-54"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Every tool card states purpose, users, authority effect, pilot types supported, causal claims and limits, consequence-profile triggers, protected-domain flags, prerequisites, time, cost, skills, accessibility, data, AI, vendor, common-mode, administrative burden, exit, transition, remedy, version, compatibility, fork, and maintenance requirements.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-20",
+      "title": "Tool Stack Proposal, Alternatives, Causal Dependencies, Common-Mode Risk, and Complexity Budget",
+      "action_class": "E",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-13",
+        "GMEAIA-24",
+        "GMEAIA-27"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Combines tools into a proposed stack while exposing cumulative administrative burden, conflicts, causal dependencies, common-mode risks, data flows, authority requirements, low-tech equivalents, compatibility effects, ordinary maintenance, alternatives, and the smallest causally adequate option.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-21",
+      "title": "Autonomy Statement, Local Fork, Adaptation, and Rationale Record",
+      "action_class": "F",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-14",
+        "GMEAIA-35",
+        "GMEAIA-53"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Documents a local adaptation or fork, why it is needed, what remains compatible, what is deliberately rejected, effects on rights and accessibility, versioning, and return or deprecation. Local justification is not a request for ideological permission.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-22",
+      "title": "Cultural, Indigenous, and Protected-Knowledge Advisory Review",
+      "action_class": "F",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-10",
+        "GMEAIA-14",
+        "GMEAIA-17"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Records concerns, questions, self-identified cultural requirements, protected knowledge, affected-nation instructions, non-use, and adaptation recommendations. It cannot authenticate a culture, grant FPIC, or approve on behalf of an affected nation.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-23",
+      "title": "Ethics, Harm, Rights, Anti-Capture, Common-Mode, and Red-Lines Advisory Review",
+      "action_class": "F",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-17",
+        "GMEAIA-20"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Identifies rights effects, coercion, exclusion, capture, distributional harm, protected domains, common-mode dependence, missing safeguards, and dissent. MOS may inform questions but cannot create legal rights or approval authority.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-24",
+      "title": "Tool and Pathway Selection Decision, Reasons, Dissent, and Effect",
+      "action_class": "E",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-14",
+        "GMEAIA-15",
+        "GMEAIA-22"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Records the principal’s lawful internal selection of a tool or journey, reasons, rejected alternatives, dissent, conditions, and effect label. Selection does not authorize the underlying substantive action or bind nonparticipants.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-25",
+      "title": "Protected-Domain Classification, Specialized Interface, and Experiment Exclusion Record",
+      "action_class": "G",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-20",
+        "GMEAIA-56"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Classifies coercion, essential services, title, migration, child protection, irreversible ecology, adjudication, emergency, fiscal deprivation, and high-risk technology. Ordinary pilots fail closed unless the specialized interface and GMEAIA exception record are valid.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-26",
+      "title": "Pilot Proposal, Pilot Type, Causal Mechanism, Alternatives, Reversibility, Scope, and Non-Precedent",
+      "action_class": "G",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-12",
+        "GMEAIA-13",
+        "GMEAIA-21"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Defines the pilot type, trial question, causal mechanism, alternatives, non-action, participants, affected outsiders, boundaries, duration, consequence profile, reversibility, success and failure criteria, upstream dependencies, scale-dependent effects, protected domains, resources, distributional effects, ordinary-ownership hypothesis, and conclusions the pilot cannot support.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-27",
+      "title": "Participation, Consent, Refusal, Withdrawal, and Non-Retaliation Record",
+      "action_class": "H",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-18",
+        "GMEAIA-19"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Separates participation consent, collective authorization, affected-nation consent, worker decision, consultation, assent, and public-law authority. Records scope, information, conditions, refusal, withdrawal, support, dissent, and non-retaliation.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-28",
+      "title": "Authority Verification, Authority Formation, Jurisdiction, Decision Class, and Rights Constraints",
+      "action_class": "H",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-20"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Identifies the exact competent actor, constituting source, authority formation as retained, delegated, transferred, concurrent, jointly_constituted, or absent, decision class, territorial, personal, subject-matter, and temporal jurisdiction, delegation chain, causal-control envelope, procedural duties, rights constraints, funding authority, review, and status.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-29",
+      "title": "Trial Authorization, Conditions, Scope, Clock, and Non-Precedent Record",
+      "action_class": "H",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-21"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Records the separately competent authorization of a bounded pilot, conditions, operator, geography, participants, exclusions, rights, service minima, start prerequisites, expiry, review, rollback, remedy, and prohibition on automatic renewal or scaling.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-30",
+      "title": "EGP Adoption Claim, Deliberative Acceptance, and Registration Record",
+      "action_class": "I",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-22"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Uses EGP/1.1 to register adoption with an effect label and links to authority, consent, authorization, activation, monitoring, expiry, rollback, remedy, and closure. An adoption claim remains non-active until activation is separately recorded.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-31",
+      "title": "Operational Activation, Start Conditions, Operator, and Public Notice",
+      "action_class": "I",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-23"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Records that all start conditions are satisfied, identifies the operator and accountable officer, exact effective time, scope, notices, safeguards, credentials, dependencies, expiry, and stop authority. Deployment or funding alone cannot activate the pilot.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-32",
+      "title": "Implementation Plan, Responsibilities, Causal Dependencies, Service Boundaries, Ordinary Ownership, and Support Withdrawal",
+      "action_class": "I",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-24",
+        "GMEAIA-25"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Defines tasks, owners, timelines, causal dependencies, interfaces, response and action clocks, service boundaries, vendor and staff responsibilities, safety procedures, continuing ordinary duties, maintenance, knowledge transfer, ordinary-owner pathway, support withdrawal, escalation, handoffs, and prohibited acts.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-33",
+      "title": "Funding Authority, Grant, Participation Support, Independence, and Appeal",
+      "action_class": "J",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-26",
+        "GMEAIA-47"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Separates application, eligibility, award, agreement, payment, audit, suspension, clawback, and appeal. Protects essential functions, workers, beneficiaries, and participation support. Funding may not coerce constitutional change or method conformity.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-34",
+      "title": "Procurement, Contract, Vendor, Platform, and Exit Record",
+      "action_class": "J",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-27"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Records procurement authority, beneficial ownership, conflicts, contract terms, data rights, accessibility, security, service levels, lock-in, source availability, audit, termination, continuity, and migration. A vendor cannot become a governance authority.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-35",
+      "title": "Data Purpose, Access, Retention, Publication, Withdrawal, and Community Control",
+      "action_class": "K",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-28",
+        "GMEAIA-60"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Defines purpose, lawful basis, access class, protected annexes, collection minimization, sharing, publication, dashboards, retention, withdrawal, deletion, correction, and protected Indigenous and personal data. Radical transparency applies to accountable process, not all payloads.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-36",
+      "title": "AI, Model, Tool Finder, Analytics, and Automation Role Record",
+      "action_class": "K",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-29"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Defines model version, purpose, data, limitations, human owner, permitted assistance, prohibited decisions, audit, challenge, correction, incident response, expiry, and the ban on automated readiness disposition, ethics approval, activation, scaling, or funding.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-37",
+      "title": "Implementation Health Dashboard, Baseline, Metric, Distribution, Dependency, and Non-Disposition",
+      "action_class": "K",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-30"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Records metrics, methods, baselines, denominators, pilot type, consequence profile, causal envelope, uncertainty, missingness, distributions, qualitative evidence, latency, administrative burden, support and common-mode dependency, transition status, data access, and review. Targets trigger attention, not permission, sanctions, funding, institutionalization, or scale.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-38",
+      "title": "Outcome Observation, Causal Contribution, Side Effect, Incident, External Shock, and Distributional Impact",
+      "action_class": "L",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-31",
+        "GMEAIA-32"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Records benefits, harms, exclusions, incidents, unintended effects, external shocks, causal contribution and uncertainty, who bears costs, affected-party reports, support dependency, and urgent review. A report is not automatically a liability finding or proof of the claimed mechanism.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-39",
+      "title": "Red-Lines Alert, Protective Pause, Stop, Rollback, and Safe-State Record",
+      "action_class": "L",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-36"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Reconstitutes the Red Lines Protocol as a documented alert and bounded stop route. Automatic technical safing may occur only where pre-authorized; legal pause, suspension, rollback, and remedy require the named authority and preserve essential services.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-40",
+      "title": "Midpoint Review, Causal Adequacy, Corrective Action, Continued Operation, and Dissent",
+      "action_class": "L",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-33",
+        "GMEAIA-34",
+        "GMEAIA-35"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Assesses evidence, pilot-type claims, causal adequacy, distribution, rights, consent, incidents, external shocks, dependencies, transition readiness, and unresolved duties. Records reasons to continue, amend, pause, terminate, narrow the claim, or seek reauthorization.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-41",
+      "title": "Adaptation Report, Method Change, Compatibility Power, and Local Learning",
+      "action_class": "M",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-35",
+        "GMEAIA-40",
+        "GMEAIA-53"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Documents what changed, why, evidence, dissent, rights and accessibility effects, causal implications, compatibility effects on local forks and alternatives, version status, unresolved questions, and whether a new authorization or pilot-type classification is required.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-42",
+      "title": "Failure Library, Story Bank, Public Memory, Consent, and Withdrawal",
+      "action_class": "M",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-40",
+        "GMEAIA-41",
+        "GMEAIA-60"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Creates a public or restricted learning artifact with anonymization, source protection, consent, participant review, withdrawal, cultural and safety restrictions, expiry, correction, and separation from active evidence. Participation is not permanent publication consent.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-43",
+      "title": "Scaling Evidence, Pilot-Type Limits, Transferability, External Validity, Ordinary Ownership, and Recommendation",
+      "action_class": "N",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-32",
+        "GMEAIA-43"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Compiles outcome and causal evidence, pilot-type limits, context dependence, failed cases, repeated-pilot history, capacity and finance, rights and distributional effects, affected-party views, model uncertainty, ordinary-owner readiness, support-withdrawal durability, and limits. It may recommend a new proposal but cannot authorize scaling.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-44",
+      "title": "Scaling, Replication, Multi-Community, and New-Jurisdiction Authorization",
+      "action_class": "N",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-44"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Requires a new affected-party map, authority, consent, protected-domain review, resources, data plan, activation, review, remedy, and closure for the expanded scope. A higher pilot tier is a complexity label, not authority.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-45",
+      "title": "Permanent Adoption, Ordinary Ownership, Enactment, Institutionalization, and Support-Withdrawal Referral",
+      "action_class": "N",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-44",
+        "GMEAIA-46"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Routes proposals for lasting rules, programmes, budgets, offices, or services to the competent charter, legislative, contractual, Indigenous, or institutional process. Identifies ordinary owner, mandate, recurrent budget, staff, maintenance, adaptation, complaint, support withdrawal, and closure. EGP and the framework may record the result but cannot enact it.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-46",
+      "title": "Urgent Context, Emergency Signal, CDEE Referral, Mission Acceptance, and Quick-Start Boundary",
+      "action_class": "O",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-55"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Allows rapid listening, immediate support, EGP sense records, and CDEE referrals. A 48-hour target is operational only. Emergency declaration, command, information access, finance, deployment, renewal, and termination require ECRC/CDEE and competent authority.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-47",
+      "title": "Cross-Framework Handoff, Response Duty, Recipient State, Custody, and Conformance",
+      "action_class": "O",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-08",
+        "GMEAIA-59"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Identifies the exact receiving framework, version, record, responsibility, response-duty source and effect, acknowledgment and decision clocks, offered scope, GMEAIA response state, capacity limitations, provisional safe-state reference, acceptance or refusal, post-acceptance action clock, custody, sender duties, expiry, correction, escalation, and return. Referral does not merge jurisdiction or erase prior duties.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-48",
+      "title": "Complaint, Independent Review, Interim Relief, Correction, and Remedy Record",
+      "action_class": "P",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-34",
+        "GMEAIA-41",
+        "GMEAIA-42"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Provides accessible complaint, ombuds, review, interim relief, evidence, reasons, appeal, correction propagation, restitution, compensation, rehabilitation, non-repetition, and protection against retaliation.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-49",
+      "title": "Expiry, Termination, Closure, Authority Return, Support Withdrawal, Asset and Data Disposition",
+      "action_class": "P",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-38",
+        "GMEAIA-39",
+        "GMEAIA-60"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Ends temporary authority, stops operations, withdraws exceptional support safely, returns assets and credentials, preserves essential functions, settles contracts and wages, assigns unresolved duties, completes data disposition, records ordinary-owner or closure status, and distinguishes closed from closed-with-unresolved-duties.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    },
+    {
+      "id": "IAF-50",
+      "title": "Framework, Tool Core, Fork, Compatibility Power, Version, Deprecation, Falsification, and Stewardship Record",
+      "action_class": "P",
+      "primary_gmeaia_mappings": [
+        "GMEAIA-53",
+        "GMEAIA-58"
+      ],
+      "authority_effect_rule": "Must be explicitly recorded; default is `advisory` or `record_support` unless a cited competent record supplies another effect.",
+      "purpose": "Governs changes to the framework and tool library through public proposals, compatibility and rights review, maintainers, common-mode and objective-reproduction review, security patches, migration, local forks, deprecation, theory of change, disconfirming evidence, narrowing, suspension, replacement, archive, and the prohibition on silent expansion of authority.",
+      "minimum_controls": "human accountable officer; access class; affected-party references; authority, activation, challenge, expiry, closure, unresolved-duty, and prohibited-inference fields; correction propagation where relied upon."
+    }
+  ],
+  "gmeaia_crosswalk": [
+    {
+      "gmeaia_record": "GMEAIA-01",
+      "iaf_records": [
+        "IAF-01",
+        "IAF-02"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-02",
+      "iaf_records": [
+        "IAF-01",
+        "IAF-11",
+        "IAF-19"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-03",
+      "iaf_records": [
+        "IAF-03",
+        "IAF-04",
+        "IAF-05"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-04",
+      "iaf_records": [
+        "IAF-03",
+        "IAF-07",
+        "IAF-46"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-05",
+      "iaf_records": [
+        "IAF-07",
+        "IAF-15"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-06",
+      "iaf_records": [
+        "IAF-15"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-07",
+      "iaf_records": [
+        "IAF-14",
+        "IAF-16"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-08",
+      "iaf_records": [
+        "IAF-46",
+        "IAF-47"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-09",
+      "iaf_records": [
+        "IAF-08"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-10",
+      "iaf_records": [
+        "IAF-09",
+        "IAF-22"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-11",
+      "iaf_records": [
+        "IAF-10"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-12",
+      "iaf_records": [
+        "IAF-03",
+        "IAF-18",
+        "IAF-26"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-13",
+      "iaf_records": [
+        "IAF-18",
+        "IAF-20",
+        "IAF-26"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-14",
+      "iaf_records": [
+        "IAF-11",
+        "IAF-18",
+        "IAF-21"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-15",
+      "iaf_records": [
+        "IAF-24"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-16",
+      "iaf_records": [
+        "IAF-11",
+        "IAF-15",
+        "IAF-16"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-17",
+      "iaf_records": [
+        "IAF-14",
+        "IAF-23"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-18",
+      "iaf_records": [
+        "IAF-09",
+        "IAF-27"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-19",
+      "iaf_records": [
+        "IAF-06",
+        "IAF-27"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-20",
+      "iaf_records": [
+        "IAF-25",
+        "IAF-28"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-21",
+      "iaf_records": [
+        "IAF-29"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-22",
+      "iaf_records": [
+        "IAF-24",
+        "IAF-30"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-23",
+      "iaf_records": [
+        "IAF-31"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-24",
+      "iaf_records": [
+        "IAF-32"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-25",
+      "iaf_records": [
+        "IAF-10",
+        "IAF-32"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-26",
+      "iaf_records": [
+        "IAF-10",
+        "IAF-33"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-27",
+      "iaf_records": [
+        "IAF-34"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-28",
+      "iaf_records": [
+        "IAF-07",
+        "IAF-35"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-29",
+      "iaf_records": [
+        "IAF-36"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-30",
+      "iaf_records": [
+        "IAF-37"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-31",
+      "iaf_records": [
+        "IAF-38"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-32",
+      "iaf_records": [
+        "IAF-38",
+        "IAF-43"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-33",
+      "iaf_records": [
+        "IAF-40"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-34",
+      "iaf_records": [
+        "IAF-40",
+        "IAF-48"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-35",
+      "iaf_records": [
+        "IAF-21",
+        "IAF-40",
+        "IAF-41"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-36",
+      "iaf_records": [
+        "IAF-39"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-37",
+      "iaf_records": [
+        "IAF-40"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-38",
+      "iaf_records": [
+        "IAF-49"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-39",
+      "iaf_records": [
+        "IAF-49"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-40",
+      "iaf_records": [
+        "IAF-41",
+        "IAF-42"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-41",
+      "iaf_records": [
+        "IAF-15",
+        "IAF-41",
+        "IAF-48"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-42",
+      "iaf_records": [
+        "IAF-48"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-43",
+      "iaf_records": [
+        "IAF-43"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-44",
+      "iaf_records": [
+        "IAF-44",
+        "IAF-45"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-45",
+      "iaf_records": [
+        "IAF-12"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-46",
+      "iaf_records": [
+        "IAF-45"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-47",
+      "iaf_records": [
+        "IAF-33"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-48",
+      "iaf_records": [
+        "IAF-49"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-49",
+      "iaf_records": [
+        "IAF-49"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-50",
+      "iaf_records": [
+        "IAF-05"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-51",
+      "iaf_records": [
+        "IAF-05",
+        "IAF-23"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-52",
+      "iaf_records": [
+        "IAF-04",
+        "IAF-05"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-53",
+      "iaf_records": [
+        "IAF-19",
+        "IAF-21",
+        "IAF-41",
+        "IAF-50"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-54",
+      "iaf_records": [
+        "IAF-10",
+        "IAF-19",
+        "IAF-35"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-55",
+      "iaf_records": [
+        "IAF-46"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-56",
+      "iaf_records": [
+        "IAF-25"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-57",
+      "iaf_records": [
+        "IAF-47"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-58",
+      "iaf_records": [
+        "IAF-26",
+        "IAF-50"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-59",
+      "iaf_records": [
+        "IAF-02",
+        "IAF-47"
+      ]
+    },
+    {
+      "gmeaia_record": "GMEAIA-60",
+      "iaf_records": [
+        "IAF-35",
+        "IAF-42",
+        "IAF-49"
+      ]
+    }
+  ],
+  "readiness_gates": [
+    {
+      "id": "G01",
+      "requirement": "Framework declares non-authority and exact adoption state"
+    },
+    {
+      "id": "G02",
+      "requirement": "Controlling versions, hashes, migration status, and retired registries are explicit"
+    },
+    {
+      "id": "G03",
+      "requirement": "Principal, objective, scope, pilot type, and claimed causal mechanism identified"
+    },
+    {
+      "id": "G04",
+      "requirement": "Support roles separated from approval and decision roles"
+    },
+    {
+      "id": "G05",
+      "requirement": "Local-equivalent facilitators and complaints available"
+    },
+    {
+      "id": "G06",
+      "requirement": "Engagement is voluntary where claimed and exit is safe"
+    },
+    {
+      "id": "G07",
+      "requirement": "Stage 0 does not covertly assess or intervene"
+    },
+    {
+      "id": "G08",
+      "requirement": "Affected outsiders and transboundary effects mapped"
+    },
+    {
+      "id": "G09",
+      "requirement": "Affected Indigenous nation controls its representatives and consent"
+    },
+    {
+      "id": "G10",
+      "requirement": "Accessibility and independent participation support funded"
+    },
+    {
+      "id": "G11",
+      "requirement": "Assessment purpose, prohibited uses, and administrative burden declared"
+    },
+    {
+      "id": "G12",
+      "requirement": "Conditions profile is multidimensional and non-dispositive"
+    },
+    {
+      "id": "G13",
+      "requirement": "Responsibility follows causal control, jurisdiction, capacity, and resources; affected standing does not assign responsibility"
+    },
+    {
+      "id": "G14",
+      "requirement": "Upstream controllers, shared authority, capacity limits, and constitutional gaps identified"
+    },
+    {
+      "id": "G15",
+      "requirement": "Recommendations are advisory, challengeable, and may include an Impossible Pilot Notice"
+    },
+    {
+      "id": "G16",
+      "requirement": "Every tool states authority effect, pilot claims, consequence triggers, and protected-domain flags"
+    },
+    {
+      "id": "G17",
+      "requirement": "Tool stack exposes causal dependencies, cumulative complexity, administrative burden, and common-mode risk"
+    },
+    {
+      "id": "G18",
+      "requirement": "Local adaptation does not require external ideological approval"
+    },
+    {
+      "id": "G19",
+      "requirement": "Compatibility does not become practical legitimacy, funding worth, or cultural conformity by implication"
+    },
+    {
+      "id": "G20",
+      "requirement": "Ethics and cultural reviews are advisory"
+    },
+    {
+      "id": "G21",
+      "requirement": "Protected domains fail closed through the specialized interface"
+    },
+    {
+      "id": "G22",
+      "requirement": "Consent and public-law authority are separated"
+    },
+    {
+      "id": "G23",
+      "requirement": "Exact authority, authority formation, jurisdiction, and causal envelope verified"
+    },
+    {
+      "id": "G24",
+      "requirement": "Trial authorization separated from adoption and activation"
+    },
+    {
+      "id": "G25",
+      "requirement": "EGP effect label and authority envelope used"
+    },
+    {
+      "id": "G26",
+      "requirement": "Funding, deployment, repository inclusion, and compatibility cannot activate"
+    },
+    {
+      "id": "G27",
+      "requirement": "Essential services and continuing duties protected"
+    },
+    {
+      "id": "G28",
+      "requirement": "Data and dashboards cannot dispose rights, funding, causal truth, or institutionalization"
+    },
+    {
+      "id": "G29",
+      "requirement": "AI has prohibited-decision list, common-mode review, and accountable owner"
+    },
+    {
+      "id": "G30",
+      "requirement": "Metrics trigger review rather than scaling or permanent adoption"
+    },
+    {
+      "id": "G31",
+      "requirement": "Learning artifacts protect consent, sources, withdrawal, and sample-limit disclosure"
+    },
+    {
+      "id": "G32",
+      "requirement": "Pilot type is explicit and success claims do not exceed the tested question"
+    },
+    {
+      "id": "G33",
+      "requirement": "Pilot is minimally causally adequate or is redesigned, narrowed, routed upstream, or marked impossible"
+    },
+    {
+      "id": "G34",
+      "requirement": "`CP0`–`CP3` consequence profile is selected and core-plus-trigger documentation justified"
+    },
+    {
+      "id": "G35",
+      "requirement": "Common-mode independence is assessed for high-consequence implementations"
+    },
+    {
+      "id": "G36",
+      "requirement": "Implementation-ecology objective-reproduction review applies to long-lived or systemically important support arrangements"
+    },
+    {
+      "id": "G37",
+      "requirement": "Response-duty source, clocks, GMEAIA states, custody, safe-state reference, and escalation are recorded for consequential handoffs"
+    },
+    {
+      "id": "G38",
+      "requirement": "`capacity_limited` remains distinct from `constitutional_gap`"
+    },
+    {
+      "id": "G39",
+      "requirement": "Timeout, silence, technical receipt, and compatibility do not transfer jurisdiction"
+    },
+    {
+      "id": "G40",
+      "requirement": "Scaling requires new authority and affected-party review"
+    },
+    {
+      "id": "G41",
+      "requirement": "Permanent adoption identifies ordinary owner, mandate, budget, staff, maintenance, and support withdrawal"
+    },
+    {
+      "id": "G42",
+      "requirement": "Repeated pilots state what evidence remains missing and why transition, rejection, or structural action is not next"
+    },
+    {
+      "id": "G43",
+      "requirement": "Expiry, remedy, closure, data disposition, support withdrawal, and authority return complete"
+    },
+    {
+      "id": "G44",
+      "requirement": "Framework-level theory of change, disconfirming evidence, narrowing, suspension, replacement, and non-scaling conditions published"
+    },
+    {
+      "id": "G45",
+      "requirement": "No claim of compatibility with the retired `IAEG-CLUSTER/0.1`; successor machine-readable adoption is pending"
+    }
+  ],
+  "compound_tests": [
+    {
+      "id": "T01",
+      "scenario": "Community requests help selecting a meeting method",
+      "required_outcome": "PASS when the tool is advisory, locally adaptable, and carries no authority effect."
+    },
+    {
+      "id": "T02",
+      "scenario": "Catalyst Team reaches out to a community that declines",
+      "required_outcome": "PASS when no profile is created beyond minimum contact and no support or standing is lost."
+    },
+    {
+      "id": "T03",
+      "scenario": "Community Weaver maps informal leaders during meals",
+      "required_outcome": "FAIL CLOSED unless purpose, consent, protection, and non-use for representative selection are recorded."
+    },
+    {
+      "id": "T04",
+      "scenario": "Conditions profile labels a community Low",
+      "required_outcome": "FAIL: scalar competence ranking is non-conformant."
+    },
+    {
+      "id": "T05",
+      "scenario": "Low resource capacity triggers a seed grant",
+      "required_outcome": "PASS only through separate funding authority; it creates no implementation permission."
+    },
+    {
+      "id": "T06",
+      "scenario": "Conditions score automatically routes grant amount",
+      "required_outcome": "FAIL: prohibited automated disposition and absent funding decision."
+    },
+    {
+      "id": "T07",
+      "scenario": "External Indigenous representative approves a local adaptation",
+      "required_outcome": "FAIL: cannot substitute for the affected Indigenous nation."
+    },
+    {
+      "id": "T08",
+      "scenario": "Affected nation declines to use EGP records",
+      "required_outcome": "PASS: its law and chosen records control; non-use causes no penalty."
+    },
+    {
+      "id": "T09",
+      "scenario": "Ethics panel rejects a lawful local adaptation",
+      "required_outcome": "FAIL if rejection is treated as binding; panel may publish concerns and seek review."
+    },
+    {
+      "id": "T10",
+      "scenario": "Tool Stack includes only voluntary workshop tools",
+      "required_outcome": "PASS with an appropriate `CP0` or `CP1` core, informed participation, accessibility, and closure."
+    },
+    {
+      "id": "T11",
+      "scenario": "A charter template is treated as creating a council",
+      "required_outcome": "FAIL: template has record-support effect only; lawful constitution is separate."
+    },
+    {
+      "id": "T12",
+      "scenario": "A pilot affects municipal traffic",
+      "required_outcome": "PASS only after municipal authority, authorization, activation, notice, safety review, and rollback."
+    },
+    {
+      "id": "T13",
+      "scenario": "A pilot changes household water access",
+      "required_outcome": "FAIL CLOSED as protected essential service without controlling water and rights authority."
+    },
+    {
+      "id": "T14",
+      "scenario": "A pilot uses a 72-hour emergency activation kit",
+      "required_outcome": "FAIL unless linked to accepted CDEE/ECRC mission and competent command."
+    },
+    {
+      "id": "T15",
+      "scenario": "Local rescue team acts under pre-existing rescue law",
+      "required_outcome": "PASS if authority, mission, scope, safety, clocks, and review are recorded."
+    },
+    {
+      "id": "T16",
+      "scenario": "EGP adoption record is signed and code deployed",
+      "required_outcome": "REMAINS INACTIVE until `IAF-31` activation."
+    },
+    {
+      "id": "T17",
+      "scenario": "Funder releases grant before authorization",
+      "required_outcome": "Funding may exist, but operation remains inactive."
+    },
+    {
+      "id": "T18",
+      "scenario": "Participant withdraws from a voluntary pilot",
+      "required_outcome": "PASS when participation and optional data end without retaliation or essential-service loss."
+    },
+    {
+      "id": "T19",
+      "scenario": "Community majority tries to bind non-resident workers",
+      "required_outcome": "FAIL unless lawful authority and affected-worker rights and participation exist."
+    },
+    {
+      "id": "T20",
+      "scenario": "Tool Finder AI recommends a talking circle",
+      "required_outcome": "PASS as advisory assistance without profiling or consequential routing."
+    },
+    {
+      "id": "T21",
+      "scenario": "AI marks an ethics review passed and activates the pilot",
+      "required_outcome": "FAIL: prohibited automated approval and activation."
+    },
+    {
+      "id": "T22",
+      "scenario": "Dashboard trust score falls below 75%",
+      "required_outcome": "Triggers review only; no automatic funding loss or shutdown."
+    },
+    {
+      "id": "T23",
+      "scenario": "Pilot exceeds a target and moves to Band 4",
+      "required_outcome": "FAIL if automatic; band is complexity only and scaling requires `IAF-44`."
+    },
+    {
+      "id": "T24",
+      "scenario": "Successful pilot informs a new municipal ordinance",
+      "required_outcome": "PASS when ordinary enactment creates the law and EGP only records it."
+    },
+    {
+      "id": "T25",
+      "scenario": "Failure Library publishes a participant story",
+      "required_outcome": "PASS only with specific publication consent, review, withdrawal, and safety protection."
+    },
+    {
+      "id": "T26",
+      "scenario": "Whistleblower evidence is included in an Adaptation Report",
+      "required_outcome": "FAIL public release; use protected source handling and separated learning artifact."
+    },
+    {
+      "id": "T27",
+      "scenario": "Anonymized report is re-identifiable in a small community",
+      "required_outcome": "FAIL until disclosure risk and community controls are resolved."
+    },
+    {
+      "id": "T28",
+      "scenario": "Paper consent conflicts with app consent",
+      "required_outcome": "Neither wins automatically; offline parity and correction process apply."
+    },
+    {
+      "id": "T29",
+      "scenario": "Facilitator lacks GGF certification but has local mandate",
+      "required_outcome": "PASS if qualification and local-equivalence requirements are met."
+    },
+    {
+      "id": "T30",
+      "scenario": "Certified facilitator has a financial conflict",
+      "required_outcome": "Requires disclosure, recusal, substitute, complaint, and possible removal."
+    },
+    {
+      "id": "T31",
+      "scenario": "Funder requires MOS adherence for translation support",
+      "required_outcome": "FAIL: participation support cannot depend on ideological conformity."
+    },
+    {
+      "id": "T32",
+      "scenario": "Pilot funding is suspended for misuse",
+      "required_outcome": "Requires separate reasons, evidence, proportionality, appeal, worker and essential-function safeguards."
+    },
+    {
+      "id": "T33",
+      "scenario": "Crisis signal is sent to regional coordinator",
+      "required_outcome": "It is a CDEE referral, not an emergency declaration or mission acceptance."
+    },
+    {
+      "id": "T34",
+      "scenario": "Receiving framework never accepts a handoff",
+      "required_outcome": "Sender retains custody and duty; no action or silent transfer occurs."
+    },
+    {
+      "id": "T35",
+      "scenario": "Pilot expires with unpaid worker wages",
+      "required_outcome": "Authority ends, but wage and remedy duties remain open."
+    },
+    {
+      "id": "T36",
+      "scenario": "Framework update silently gives Catalyst Team approval power",
+      "required_outcome": "FAIL: material authority expansion requires new constitutional adoption and version."
+    },
+    {
+      "id": "T37",
+      "scenario": "A voluntary workshop is required to complete the full protected-domain record set",
+      "required_outcome": "FAIL as over-administration; choose `CP0` or `CP1` and trigger only materially relevant records."
+    },
+    {
+      "id": "T38",
+      "scenario": "An acceptability pilot is cited as proof that a policy improves system outcomes",
+      "required_outcome": "FAIL: the claim exceeds the pilot type."
+    },
+    {
+      "id": "T39",
+      "scenario": "The smallest reversible pilot excludes the proposed causal mechanism",
+      "required_outcome": "REDESIGN, narrow the question, route upstream, or issue an Impossible Pilot Notice."
+    },
+    {
+      "id": "T40",
+      "scenario": "A local community is blamed for failure caused by an upstream law or infrastructure owner",
+      "required_outcome": "FAIL: causal responsibility remains with the controlling actor and shared duties are recorded."
+    },
+    {
+      "id": "T41",
+      "scenario": "Catalyst Team supports only tools it maintains and funders treat that catalogue as eligibility",
+      "required_outcome": "REQUIRES compatibility-power and objective-reproduction review; essential support cannot depend on catalogue conformity."
+    },
+    {
+      "id": "T42",
+      "scenario": "Grant-funded pilot succeeds but no ordinary budget, owner, or maintenance capacity exists",
+      "required_outcome": "Record bounded pilot success; do not claim institutionalization or durability."
+    },
+    {
+      "id": "T43",
+      "scenario": "A fifth pilot repeats substantially the same mechanism without addressing transition",
+      "required_outcome": "REQUIRES repeated-pilot review and reasons why transition, rejection, or structural action is not next."
+    },
+    {
+      "id": "T44",
+      "scenario": "Recipient accepts jurisdiction but lacks staff and finance",
+      "required_outcome": "Use `capacity_limited`; identify support and action clocks. Do not label a constitutional gap."
+    },
+    {
+      "id": "T45",
+      "scenario": "Recipient misses the response deadline",
+      "required_outcome": "Use `timed_out`; escalate and preserve custody. No jurisdiction transfers automatically."
+    },
+    {
+      "id": "T46",
+      "scenario": "Assessor, tool recommender, evaluator, and learning synthesizer use one AI provider and funder",
+      "required_outcome": "Common-mode review and fallback or explicit risk acceptance are required."
+    },
+    {
+      "id": "T47",
+      "scenario": "A local fork is technically incompatible with the GGF tool stack",
+      "required_outcome": "State the precise compatibility effect and migration route; incompatibility does not establish illegitimacy."
+    },
+    {
+      "id": "T48",
+      "scenario": "Comparative evidence shows the IAF layer adds delay and burden without improving fit, safety, or outcomes",
+      "required_outcome": "Narrow, simplify, suspend, replace, or stop scaling the relevant mechanism."
+    }
+  ],
+  "framework_hypotheses": [
+    {
+      "id": "H1",
+      "title": "Context-sensitive selection improves fit",
+      "hypothesis": "conditions and causal profiles materially improve tool choice, safety, inclusion, or outcomes compared with generic implementation.",
+      "disconfirming_evidence": "profiles mostly restate known facts, do not change decisions, or add burden without improved fit."
+    },
+    {
+      "id": "H2",
+      "title": "Constitutional separation prevents overreach without defeating action",
+      "hypothesis": "separating consent, authority, authorization, adoption, activation, and scaling reduces unauthorized action while preserving timely response.",
+      "disconfirming_evidence": "compliant implementations routinely miss decision windows, stall in handoffs, or abandon useful action because the chain is too slow."
+    },
+    {
+      "id": "H3",
+      "title": "Local adaptation improves effectiveness and legitimacy",
+      "hypothesis": "local forks increase relevance and ownership without eroding rights or making learning unusable.",
+      "disconfirming_evidence": "adaptation is cosmetic, compatibility becomes shadow governance, or local forks receive materially inferior support without safety justification."
+    },
+    {
+      "id": "H4",
+      "title": "Causally adequate bounded pilots produce valid learning",
+      "hypothesis": "bounded pilots expose enough of the mechanism to support honest decisions.",
+      "disconfirming_evidence": "pilots repeatedly succeed in protected conditions and fail at the mechanism, scale, or political transition excluded from the test."
+    },
+    {
+      "id": "H5",
+      "title": "Proportional process reduces both risk and bureaucracy",
+      "hypothesis": "`CP0`–`CP3` core-plus-trigger profiles reduce over-administration without under-governing consequential action.",
+      "disconfirming_evidence": "low-risk work still requires specialist-heavy records, or consequential harms arise because required triggers were omitted."
+    },
+    {
+      "id": "H6",
+      "title": "Support builds autonomy rather than dependency",
+      "hypothesis": "Catalyst, facilitator, funder, vendor, and AI support increase local capacity to maintain, adapt, fork, replace, or close.",
+      "disconfirming_evidence": "pilots collapse when exceptional support ends or local actors remain dependent on the original implementation ecology."
+    },
+    {
+      "id": "H7",
+      "title": "Learning improves future implementation",
+      "hypothesis": "bounded learning changes later tool selection and reduces repeated failure.",
+      "disconfirming_evidence": "libraries are biased, unused, dominated by publishable success, or disconnected from decisions."
+    },
+    {
+      "id": "H8",
+      "title": "Transition architecture reduces permanent-pilot accumulation",
+      "hypothesis": "ordinary-owner and repeated-pilot requirements move useful functions into durable provision and terminate unsupported experiments.",
+      "disconfirming_evidence": "pilot volume grows while transition rates remain low and the same mechanisms are repeatedly retested."
+    }
+  ],
+  "release_doctrine": "Implementation support may make action more understandable, feasible, reversible, and learnable. It cannot make an action lawful, legitimate, authorized, causally effective, transferable, scalable, or durable by declaration or schema conformance.",
+  "cluster_peer_dependencies": [
+    {
+      "id": "EGP/1.2",
+      "role": "event_transport",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    },
+    {
+      "id": "IMT/0.9",
+      "role": "tool_commons",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    },
+    {
+      "id": "IRF/1.0",
+      "role": "institutional_transition",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    }
+  ],
+  "active_cluster_registry": "IAEG-CLUSTER/1.0"
+}

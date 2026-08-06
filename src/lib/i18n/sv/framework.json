@@ -333,6 +333,12 @@
       "description": "Ytterligare ramverk som inte kategoriseras i huvudgrupperna"
     }
   },
+  "specifications": {
+    "title": "Specifikationer",
+    "lede": "Ramverken beskriver vad ett område bör göra. Specifikationerna beskriver de regler varje ramverk måste följa när det berör ett annat — vem som får besluta, med vilken befogenhet, med vilken skyldighet att svara, och vad som händer när en ordning upphör. Ramverken låser dessa dokument till version och hash, så en ändring här fortplantar sig genom hela ekosystemet i stället för att stanna lokalt.",
+    "metaDescription": "Det styrande gränssnittslagret: gemensamma konstitutionella regler och livscykelregler som GGF:s ramverk följer.",
+    "updated": "uppdaterad"
+  },
   "docs": {
     "nav": {
       "overview": "Översikt",

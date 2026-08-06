@@ -1,0 +1,82 @@
+{
+  "package_id": "IMT/0.9-machine-release",
+  "date": "2026-08-06",
+  "status": "document_and_machine_compatible",
+  "authority_effect": "none",
+  "controlling_interface": "GMEAIA/0.2.1",
+  "files": [
+    {
+      "filename": "implementation-methods-tools-framework-v0.9-changelog.md",
+      "sha256": "120f87f811ca4425d28dfd85bc236b05ea12134fbd83be67f10aab3327cd78c8",
+      "bytes": 992,
+      "lines": 15
+    },
+    {
+      "filename": "implementation-methods-tools-framework-v0.9-example-capacity-limited-pilot.json",
+      "sha256": "43129cec38496323d3e86abab395597ea31dc4c3f922bdff1679c798cd9936b9",
+      "bytes": 2752,
+      "lines": 81
+    },
+    {
+      "filename": "implementation-methods-tools-framework-v0.9-example-local-fork.json",
+      "sha256": "1b55a89eae80b11c3693f80f2dfb07f55ac8f5dcdb53a74046aea302eba2d59b",
+      "bytes": 2572,
+      "lines": 81
+    },
+    {
+      "filename": "implementation-methods-tools-framework-v0.9-example-resource-card.json",
+      "sha256": "fa811bda81e7bf9ddd717fe01d699982c378122817e5311dd0faeabf1b308ee8",
+      "bytes": 2492,
+      "lines": 75
+    },
+    {
+      "filename": "implementation-methods-tools-framework-v0.9-migration-from-v0.8.1.md",
+      "sha256": "7232516c794b6946bcf3d9719109a508b57762ea11531aeef78b252b192ff6b9",
+      "bytes": 1017,
+      "lines": 17
+    },
+    {
+      "filename": "implementation-methods-tools-framework-v0.9-specification.schema.json",
+      "sha256": "6d843eee45e439224ecf7bf61c6a0de849525d867c65c61edb83f7a0e2f00e75",
+      "bytes": 1764,
+      "lines": 82
+    },
+    {
+      "filename": "implementation-methods-tools-framework-v0.9-validation.txt",
+      "sha256": "ae20da0f128824a649a036ccaa70cf0118a06bc149ce85d73236dbc04441753d",
+      "bytes": 883,
+      "lines": 15
+    },
+    {
+      "filename": "implementation-methods-tools-framework-v0.9.json",
+      "sha256": "937fb6ddf1186cf5dd278e50746ae3b6bb6610324016bc261ba0006ca66a9bc7",
+      "bytes": 65565,
+      "lines": 1522
+    },
+    {
+      "filename": "implementation-methods-tools-framework-v0.9.md",
+      "sha256": "22603e5ec47b20faae4f9364c94f01a460c714dbf9684f9d20417fc395ab757a",
+      "bytes": 89687,
+      "lines": 809
+    },
+    {
+      "filename": "implementation-methods-tools-framework-v0.9.schema.json",
+      "sha256": "4f66a1045c45d3f2030d3b63bc5b0f475de9ba6faecb214b40fdf6dd2e5ba090",
+      "bytes": 8554,
+      "lines": 485
+    },
+    {
+      "filename": "validate-implementation-methods-tools-v0.9.py",
+      "sha256": "164682c669994b99873e8c3704625765ac2ac7c41c5464e8e36839e2a3be7730",
+      "bytes": 879,
+      "lines": 11
+    }
+  ],
+  "active_cluster_registry": "IAEG-CLUSTER/1.0",
+  "peer_dependency_binding": "Exact peer package hashes are bound by the active cluster registry; component packages do not recursively hash-freeze one another.",
+  "normative_source": {
+    "filename": "implementation-methods-tools-framework-v0.9.md",
+    "sha256": "22603e5ec47b20faae4f9364c94f01a460c714dbf9684f9d20417fc395ab757a",
+    "bytes": 89687
+  }
+}

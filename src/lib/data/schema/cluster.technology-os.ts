@@ -30,7 +30,7 @@ export const technologyOSEntities: GgfEntity[] = [
     description:
       'Cross-domain interface for technology risk, public-interest standards, community self-determination and lawful intervention. Carries a non-authority clause and an explicit prohibition on framework-to-law conversion: a standard published here does not become a legal obligation by being published here.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Technology',
     geographicScope: 'Global',
     implementationPriority: 'High',
@@ -98,7 +98,7 @@ export const technologyOSEntities: GgfEntity[] = [
     tier: 1,
     // was 'Outline', which is not a valid status value — this never surfaced
     // because tsx strips types without checking them
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Technology',
     geographicScope: 'Global',
     implementationPriority: 'High',

@@ -332,6 +332,12 @@
       "description": "Additional frameworks not categorized in the main groups"
     }
   },
+  "specifications": {
+    "title": "Specifications",
+    "lede": "Frameworks describe what a domain should do. Specifications describe the rules every framework has to follow when it touches another one — who may decide, on what authority, with what duty to respond, and what happens when an arrangement ends. Frameworks pin these documents by version and hash, so a change here propagates through the ecosystem rather than staying local.",
+    "metaDescription": "The controlling interface layer: shared constitutional and lifecycle rules that GGF frameworks conform to.",
+    "updated": "updated"
+  },
   "docs": {
     "nav": {
       "overview": "Overview",

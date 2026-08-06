@@ -144,7 +144,7 @@ export const justiceOSEntities: GgfEntity[] = [
     description:
       'Plural jurisdiction, due process, restoration and remedy across seven modalities: adjudication, mediation, restorative process, protective action, investigation, prosecution and enforcement. §1.2 is a non-authority clause — the framework creates no court, no prosecutor, no enforcement body, and no jurisdiction over anyone.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -207,7 +207,7 @@ export const justiceOSEntities: GgfEntity[] = [
     description:
       'Transnational crime cooperation, mutual legal assistance, cyber defence, asset recovery and victim protection. Scoped to conduct already criminalized by applicable law with a material cross-border dimension — it supports cooperation between existing authorities rather than creating a police power.',
     tier: 1,
-    status: 'Ready',
+    status: 'Stable',
     primaryDomain: 'Justice',
     geographicScope: 'Global',
     implementationPriority: 'Critical',

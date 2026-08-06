@@ -1,0 +1,1522 @@
+{
+  "$schema": "https://schemas.globalgovernanceframeworks.org/imt/0.9/implementation-methods-tools-framework-v0.9-specification.schema.json",
+  "framework_id": "IMT/0.9",
+  "title": "Implementation Methods & Tools Framework v0.9",
+  "version": "0.9",
+  "date": "2026-08-06",
+  "status": "document_and_machine_compatible",
+  "legal_character": "Tool commons and methods standard; not a source of authority.",
+  "source_lineage": {
+    "direct_source": {
+      "id": "IMT/0.8.1",
+      "filename": "implementation-methods-tools-framework-v0.8.1.md",
+      "sha256": "9ae219eb882a2d8d20c76bbd0305f4d24d06b54d5c7786f4de0d91e5e0654ac3"
+    },
+    "earlier_source": {
+      "id": "IMT/0.7",
+      "sha256": "c3eb73da02d5a4801ddd7853be9f3cb09afd64b66e5e85e347436097f2a610fd"
+    }
+  },
+  "controlling_pins": {
+    "CIS/0.2.1": {
+      "filename": "constitutional-interface-specification-v0.2.1.md",
+      "sha256": "2ab06be70d568be82efde2ccbcc3f8df48f37308fab3ccf116ac3efe4c167bfc"
+    },
+    "GMEAIA/0.2.1": {
+      "filename": "governance-method-experiment-adoption-implementation-authority-interface-specification-v0.2.1.md",
+      "sha256": "8cdaf8c316b50b251721a824124e47b1ad30787e9f5281d7fade0f4360bfe5d1"
+    }
+  },
+  "non_authority_clause": "Methods structure and support implementation. They do not create the authority to decide or act.",
+  "consequence_profiles": [
+    {
+      "id": "CP0",
+      "name": "Exploratory and non-consequential",
+      "examples": "public education, optional brainstorming, non-operative drafting, simulation, or demonstration.",
+      "core": "one compact non-operative record identifying the method or artifact, responsible actor, authority effect, and non-activation status. Data and closure semantics are added where material."
+    },
+    {
+      "id": "CP1",
+      "name": "Voluntary bounded practice",
+      "examples": null,
+      "core": "actor and method; voluntary scope; consent, refusal, and withdrawal; implementation responsibility; stop and expiry; complaint and correction route."
+    },
+    {
+      "id": "CP2",
+      "name": "Operational or consequential action",
+      "examples": null,
+      "core": "constituting authority; affected parties; causal responsibility; authorization and activation; implementation ownership and dependencies; monitoring and review; challenge and remedy; closure and unresolved-duty custody."
+    },
+    {
+      "id": "CP3",
+      "name": "Protected-domain or constitutional action",
+      "examples": null,
+      "core": "`CP2` plus `GMEAIA-56` or `GMEAIA-57` and the controlling specialized interface. Ordinary GMEAIA conformance is never sufficient by itself."
+    }
+  ],
+  "authority_effect_labels": [
+    "none",
+    "advisory",
+    "procedural_support",
+    "evidentiary",
+    "consent_evidence",
+    "authority_reference",
+    "authorizing",
+    "activating",
+    "executing",
+    "closing"
+  ],
+  "handoff_states": [
+    "offered",
+    "acknowledged",
+    "accepted",
+    "partially_accepted",
+    "capacity_limited",
+    "refused",
+    "deferred",
+    "referred",
+    "timed_out",
+    "misrouted",
+    "constitutional_gap",
+    "returned",
+    "closed"
+  ],
+  "authority_formation_states": [
+    "retained",
+    "delegated",
+    "transferred",
+    "concurrent",
+    "jointly_constituted",
+    "absent"
+  ],
+  "response_duty_effects": [
+    "legal",
+    "contractual",
+    "charter_internal",
+    "voluntary_commitment",
+    "advisory",
+    "none"
+  ],
+  "action_classes": [
+    {
+      "id": "A01",
+      "title": "Tool identity, resource cards, and authority effect"
+    },
+    {
+      "id": "A02",
+      "title": "Context, users, affected parties, and causal responsibility"
+    },
+    {
+      "id": "A03",
+      "title": "Recommendation, tool-stack assembly, and compatibility power"
+    },
+    {
+      "id": "A04",
+      "title": "Accessibility, language, and offline parity"
+    },
+    {
+      "id": "A05",
+      "title": "Cultural adaptation and affected Indigenous authority"
+    },
+    {
+      "id": "A06",
+      "title": "Tool stewardship, forks, versioning, and material exit"
+    },
+    {
+      "id": "A07",
+      "title": "Facilitator, auditor, and support-role accountability"
+    },
+    {
+      "id": "A08",
+      "title": "Data, AI, vendor, security, and common-mode dependence"
+    },
+    {
+      "id": "A09",
+      "title": "Pilot design, authority, consent, causal adequacy, and activation"
+    },
+    {
+      "id": "A10",
+      "title": "Monitoring, omission, harm response, and interim protection"
+    },
+    {
+      "id": "A11",
+      "title": "Evaluation, certification, transferability, and scaling"
+    },
+    {
+      "id": "A12",
+      "title": "Learning, publication, archives, correction, and protected memory"
+    },
+    {
+      "id": "A13",
+      "title": "Funding, participation support, and incentive separation"
+    },
+    {
+      "id": "A14",
+      "title": "Emergency, coercive, and constitutional-gap handoffs"
+    },
+    {
+      "id": "A15",
+      "title": "Termination, ordinary ownership, closure, deprecation, and migration"
+    },
+    {
+      "id": "A16",
+      "title": "Framework stewardship, falsification, conformance, and replacement"
+    }
+  ],
+  "common_header_fields": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "created_at",
+    "effective_at",
+    "expires_at",
+    "status",
+    "normative_force",
+    "authority_effect",
+    "action_class",
+    "source_framework_id",
+    "source_framework_version",
+    "source_record_ids",
+    "supersedes",
+    "superseded_by",
+    "actor_id",
+    "actor_type",
+    "office_or_role",
+    "representation_source",
+    "technical_credential_refs",
+    "constituting_instrument",
+    "legal_power",
+    "jurisdiction_territorial",
+    "jurisdiction_personal",
+    "jurisdiction_subject_matter",
+    "jurisdiction_temporal",
+    "affected_party_refs",
+    "affected_indigenous_nation_refs",
+    "protected_domain_flags",
+    "consent_record_refs",
+    "authority_record_refs",
+    "activation_record_refs",
+    "access_class",
+    "public_summary",
+    "protected_annex_refs",
+    "data_purpose",
+    "retention_rule",
+    "correction_status",
+    "challenge_status",
+    "review_due_at",
+    "closure_state",
+    "unresolved_duty_refs",
+    "handoff_state",
+    "recipient_refs",
+    "recipient_acceptance_refs",
+    "hashes_and_signatures",
+    "human_accountable_officer",
+    "prohibited_inferences"
+  ],
+  "records": [
+    {
+      "id": "IMT-01",
+      "title": "Tool Identity, Source, Steward, Version, and Status",
+      "action_class": "A01",
+      "purpose": "Identifies the exact tool, authoritative source, steward, version, licence, lifecycle state, consequence profile, and superseding records.",
+      "prohibited_inference": "A tool name or library presence does not establish approval, authority, fitness, safety, compatibility, or current validity."
+    },
+    {
+      "id": "IMT-02",
+      "title": "Tool Authority-Effect and Consequence-Profile Classification",
+      "action_class": "A01",
+      "purpose": "Assigns one GMEAIA authority-effect label, a CP0–CP3 consequence profile where applicable, and permitted and prohibited consequences.",
+      "prohibited_inference": "A template, guide, ritual, score, dashboard, software feature, or consequence profile cannot create a council, charter, consent, permit, emergency power, benefit, adjudication, or enforcement authority."
+    },
+    {
+      "id": "IMT-03",
+      "title": "Intended Users, Context, Preconditions, and Non-Users",
+      "action_class": "A02",
+      "purpose": "States who may use the tool, for what purpose, under which prerequisites, settings, exclusions, and support conditions.",
+      "prohibited_inference": "A recommended user category cannot classify a person or community, create representation, or imply competence, maturity, legitimacy, or incompetence."
+    },
+    {
+      "id": "IMT-04",
+      "title": "Affected-Party, Affected-Outsider, and Causal-Responsibility Map",
+      "action_class": "A02",
+      "purpose": "Identifies participants, non-participants, workers, residents, service users, minorities, neighbouring communities, transboundary interests, causal variables, and practical controllers.",
+      "prohibited_inference": "Affected-party standing creates participation, consent, challenge, and remedy rights; it does not itself transfer causal responsibility to those bearing harm."
+    },
+    {
+      "id": "IMT-05",
+      "title": "Tool Finder Input, Self-Description, and Constraint Record",
+      "action_class": "A03",
+      "purpose": "Records user-selected goals, constraints, accessibility needs, urgency claim, technology preferences, consequence expectations, and local definitions.",
+      "prohibited_inference": "The Tool Finder may not infer cultural identity, developmental stage, readiness, risk, legitimacy, jurisdiction, or legal status."
+    },
+    {
+      "id": "IMT-06",
+      "title": "Tool Finder Recommendation, Alternatives, and Rationale",
+      "action_class": "A03",
+      "purpose": "Produces plural advisory options with reasons, assumptions, alternatives, burdens, compatibility limits, and authority-effect labels.",
+      "prohibited_inference": "A recommendation, ranking, compatibility label, or default is not a directive, eligibility decision, diagnosis, or emergency activation."
+    },
+    {
+      "id": "IMT-07",
+      "title": "Tool Stack Composition, Dependency, Handoff, and Fallback Map",
+      "action_class": "A03",
+      "purpose": "Lists selected tools, versions, interfaces, incompatibilities, authorities, response duties, fallback methods, support dependencies, and handoff clocks.",
+      "prohibited_inference": "Combining tools does not combine or expand their authority, and a technically compatible stack is not necessarily legitimate, effective, or locally maintainable."
+    },
+    {
+      "id": "IMT-08",
+      "title": "Resource Card, Burden, Maintenance, and Exit Estimate",
+      "action_class": "A01",
+      "purpose": "States time, personnel, skills, finance, materials, accessibility, data, vendor, maintenance, transition, support-withdrawal, and exit burdens.",
+      "prohibited_inference": "Illustrative budgets, timelines, staffing levels, or burden estimates are not funding awards, mandates, eligibility thresholds, or promises of success."
+    },
+    {
+      "id": "IMT-09",
+      "title": "Authority, Protected-Domain, and Fail-Closed Warning Card",
+      "action_class": "A01",
+      "purpose": "Displays legal-effect limits, CP3 triggers, protected-domain flags, controlling interfaces, constitutional-gap routes, and fail-closed conditions in plain language.",
+      "prohibited_inference": "A disclaimer or user acceptance cannot waive protected-domain routing or substitute for specialized-interface authorization."
+    },
+    {
+      "id": "IMT-10",
+      "title": "Accessibility, Accommodation, and Participation-Support Plan",
+      "action_class": "A04",
+      "purpose": "Specifies visual, auditory, motor, cognitive, sensory, trauma-aware, language, interpretation, pacing, childcare, and independent-advice support.",
+      "prohibited_inference": "Accessibility or participation support cannot be conditional on agreement, ideological conformity, disclosure beyond necessity, or digital participation."
+    },
+    {
+      "id": "IMT-11",
+      "title": "Offline, Oral, Paper, SMS, and Assisted Equivalent",
+      "action_class": "A04",
+      "purpose": "Defines a substantively equivalent non-digital path and synchronization rules that preserve conflicts, status, correction, and remedy.",
+      "prohibited_inference": "Digital form, blockchain entry, biometric identity, or platform access cannot receive superior legal dignity."
+    },
+    {
+      "id": "IMT-12",
+      "title": "Recorder, Scribe, Interpreter, and Digital-Steward Mandate",
+      "action_class": "A04",
+      "purpose": "Distinguishes assistance from decision-making and records scope, confidentiality, accuracy review, correction, conflicts, and complaints.",
+      "prohibited_inference": "A recorder, translator, interpreter, or digital steward does not become representative, owner, adopting authority, or causal controller."
+    },
+    {
+      "id": "IMT-13",
+      "title": "Cultural Self-Description and Adaptation Request",
+      "action_class": "A05",
+      "purpose": "Records how users describe their own practices, law, ceremony, language, and requested changes or non-engagement.",
+      "prohibited_inference": "Geography, language, appearance, prior templates, metrics, or facilitator assumptions cannot assign a cultural category."
+    },
+    {
+      "id": "IMT-14",
+      "title": "Affected Indigenous Nation, Law, Consent, and Knowledge Boundary",
+      "action_class": "A05",
+      "purpose": "Identifies the specific affected nation or people, its representatives, applicable law, consent route, territorial or relational authority, protected knowledge, and non-engagement rights.",
+      "prohibited_inference": "A generic elder, global council, facilitator, BAZ label, quota, ontology, or certificate cannot consent or authenticate sacredness for the affected nation."
+    },
+    {
+      "id": "IMT-15",
+      "title": "Cultural Adaptation, Rights, Dissent, and Anti-Capture Review",
+      "action_class": "A05",
+      "purpose": "Documents advisory concerns, internal plurality, rights effects, alternative translations, unresolved conflict, common-mode assumptions, and requested safeguards.",
+      "prohibited_inference": "Cultural or ethics review is not approval, legal authorization, adjudication, universal veto, or proof of legitimacy."
+    },
+    {
+      "id": "IMT-16",
+      "title": "Tool Fork Proposal, Attribution, and Local-Standing Record",
+      "action_class": "A06",
+      "purpose": "Records parent version, changes, rationale, attribution, licence compatibility, affected-user review, local standing, and divergence rights.",
+      "prohibited_inference": "Forking a tool does not inherit legal powers, while divergence from the core does not by itself make a fork illegitimate or unsafe."
+    },
+    {
+      "id": "IMT-17",
+      "title": "Core Tool Stewardship, Selection Pressure, and Change-Control Record",
+      "action_class": "A06",
+      "purpose": "Specifies maintainers, appointment and funding pressures, proposal rules, security exceptions, compatibility review, dissent, release, rollback, and appeal.",
+      "prohibited_inference": "Maintainers cannot silently expand authority effects, remove rights, convert compatibility into compulsory adoption, or make themselves the sole valid steward."
+    },
+    {
+      "id": "IMT-18",
+      "title": "Fork Compatibility, Divergence, Portability, and Migration Record",
+      "action_class": "A06",
+      "purpose": "States what interoperates, what diverges, export paths, migration burdens, fallback operation, and whether old or local versions remain safe.",
+      "prohibited_inference": "A higher version, central-maintainer label, or compatibility finding does not make migration mandatory."
+    },
+    {
+      "id": "IMT-19",
+      "title": "Tool Deprecation, Archive, Security Withdrawal, and Continuing-Duty Notice",
+      "action_class": "A15",
+      "purpose": "Distinguishes low use, supersession, safety withdrawal, legal incompatibility, support termination, archival retention, and unresolved duties.",
+      "prohibited_inference": "Non-use, deprecation, or code withdrawal cannot erase records, remedies, claims, participant access, or a lawful choice to remain on an older safe version."
+    },
+    {
+      "id": "IMT-20",
+      "title": "Facilitator Qualification, Limits, and Local-Equivalence Record",
+      "action_class": "A07",
+      "purpose": "Documents relevant competence, lived and local knowledge, training, limitations, supervision, and plural recognition routes.",
+      "prohibited_inference": "GGF certification cannot become a monopoly or substitute for community appointment, lawful competence, or affected-nation authority."
+    },
+    {
+      "id": "IMT-21",
+      "title": "Facilitator or Support-Team Appointment, Mandate, Scope, and Duration",
+      "action_class": "A07",
+      "purpose": "Identifies appointment source, task, authority formation, permitted and prohibited acts, duration, response duties, confidentiality, and reporting.",
+      "prohibited_inference": "Facilitation or technical assistance does not confer representation, consent authority, adjudication, emergency command, control of funds, or ordinary ownership."
+    },
+    {
+      "id": "IMT-22",
+      "title": "Conflict, Funding, Common-Mode Dependence, Recusal, and Independence",
+      "action_class": "A07",
+      "purpose": "Discloses financial, political, organizational, familial, vendor, model, data, professional-network, and ideological dependencies and sets recusal or replacement.",
+      "prohibited_inference": "Disclosure alone does not cure an unmanageable conflict or common-mode failure."
+    },
+    {
+      "id": "IMT-23",
+      "title": "Facilitator Complaint, Safe Reporting, Review, Removal, and Succession",
+      "action_class": "A07",
+      "purpose": "Provides confidential complaints, response clocks, interim protection, independent review, removal, replacement, remedy, and succession.",
+      "prohibited_inference": "The certifier, funder, tool steward, or facilitator employer cannot be the sole reviewer of its own conduct."
+    },
+    {
+      "id": "IMT-24",
+      "title": "AI, Algorithm, Model, and Tool-Finder System Record",
+      "action_class": "A08",
+      "purpose": "Identifies purpose, owner, model and version, data and ontology dependencies, outputs, limits, human review, audit, correction, rollback, expiry, and common-mode risk.",
+      "prohibited_inference": "AI may recommend or assist; it cannot determine authority, consent, identity, readiness, legitimacy, funding, emergency status, protected-domain authorization, or legal effect."
+    },
+    {
+      "id": "IMT-25",
+      "title": "Data Inventory, Access Class, Purpose, Retention, Return, and Deletion",
+      "action_class": "A08",
+      "purpose": "Catalogues personal, community, operational, protected, Indigenous, health, and learning data with lawful purpose, custody, portability, withdrawal, return, archive, and deletion.",
+      "prohibited_inference": "Participation in a tool or pilot is not consent to public release, research reuse, AI training, vendor retention, or indefinite storage."
+    },
+    {
+      "id": "IMT-26",
+      "title": "Vendor, Procurement, Lock-In, Service-Continuity, and Exit Record",
+      "action_class": "A08",
+      "purpose": "Identifies vendor, beneficial ownership, contract, hosting, data location, export, maintenance, accessibility, offline continuity, incident response, and material exit.",
+      "prohibited_inference": "A vendor contract, account, standard, or platform dependency cannot create governance authority or ownership of community records."
+    },
+    {
+      "id": "IMT-27",
+      "title": "Security, Abuse, Incident, Recovery, and Safe-State Plan",
+      "action_class": "A08",
+      "purpose": "Addresses authentication, least privilege, spoofing, harassment, retaliation, backup, breach notification, rollback, offline recovery, safe state, and action clocks.",
+      "prohibited_inference": "Security urgency cannot justify hidden expansion of substantive powers or indefinite retention of emergency access."
+    },
+    {
+      "id": "IMT-28",
+      "title": "Pilot Proposal, Type, Causal Mechanism, Scope, Reversibility, and Exclusion List",
+      "action_class": "A09",
+      "purpose": "Defines pilot type, consequence profile, causal mechanism, minimum causal adequacy, users, territory, duration, non-participants, outcomes, risks, reversibility, and excluded domains.",
+      "prohibited_inference": "Calling an activity a pilot does not make it low risk, voluntary, lawful, reversible, causally adequate, or evidence of a different pilot type."
+    },
+    {
+      "id": "IMT-29",
+      "title": "Pilot Authority, Authority Formation, Causal Responsibility, and Interface Verification",
+      "action_class": "A09",
+      "purpose": "References competent authority, formation, exact source, jurisdiction, practical controllers, response duties, protected-domain route, rights, limits, review, and expiry.",
+      "prohibited_inference": "A tool card, community vote, certificate, ethics review, funding award, urgency claim, or software capability cannot substitute for authority verification."
+    },
+    {
+      "id": "IMT-30",
+      "title": "Consent, Refusal, Withdrawal, Non-Retaliation, and Support Continuity",
+      "action_class": "A09",
+      "purpose": "Records who may consent, informed scope, conditions, dissent, refusal, withdrawal, response clocks, data consequences, and continuity of essential support.",
+      "prohibited_inference": "Consent to participate does not authorize regulation of non-participants, transfer causal responsibility, or waive non-derogable rights."
+    },
+    {
+      "id": "IMT-31",
+      "title": "EGP Adoption Registration, Effect Label, and Non-Activation Record",
+      "action_class": "A09",
+      "purpose": "Registers the tool or pilot through EGP/1.2 with exact effect label, CP profile, authority-envelope references, and activation separation.",
+      "prohibited_inference": "An adoption, signature, vote, publication, grant, repository merge, or deployment record is not activation."
+    },
+    {
+      "id": "IMT-32",
+      "title": "Operational Activation, Operator, Clocks, Stop Rules, and Support Boundary",
+      "action_class": "A09",
+      "purpose": "Separately records activation, operator, start, review, action clocks, automatic expiry, safety stops, rollback, support-team limits, and ordinary-owner transition.",
+      "prohibited_inference": "Deployment, code availability, funding, adoption, facilitator presence, or a passed validation cannot be interpreted as activation."
+    },
+    {
+      "id": "IMT-33",
+      "title": "Monitoring Plan, Baseline, Outcomes, Administrative Burden, and Review",
+      "action_class": "A10",
+      "purpose": "Defines measures, qualitative evidence, counterfactuals, uncertainty, distributional effects, monitoring and record burden, frequency, and independent reviewers.",
+      "prohibited_inference": "Metrics, conformance, activity volume, or complete records cannot automatically determine success, legitimacy, blame, payment, certification, scaling, or termination."
+    },
+    {
+      "id": "IMT-34",
+      "title": "Harm, Misuse, Omission, Exclusion, Surveillance, and Retaliation Signal",
+      "action_class": "A10",
+      "purpose": "Allows low-barrier reporting of suspected harm, omission, misuse, implementation dumping, or retaliation with protection and confidential routing.",
+      "prohibited_inference": "A signal is not a verified finding of fault, guilt, jurisdiction, causation, or emergency status."
+    },
+    {
+      "id": "IMT-35",
+      "title": "Interim Pause, Protective Measure, Safe State, and Essential-Support Continuity",
+      "action_class": "A10",
+      "purpose": "References separately competent, proportionate, time-limited protection while preserving essential support, review, and authority boundaries.",
+      "prohibited_inference": "A library flag, facilitator decision, timeout, or incompatibility label cannot impose coercive pause, service withdrawal, institutional suspension, or transferred authority."
+    },
+    {
+      "id": "IMT-36",
+      "title": "Independent Harm, Causation, Omission, and Common-Mode Review",
+      "action_class": "A10",
+      "purpose": "Separates facts, attribution, upstream control, response omission, performance omission, external causes, common-mode failure, no-fault conditions, findings, dissent, and challenge.",
+      "prohibited_inference": "Poor outcomes, delay, low ratings, or non-conformance do not alone prove participant or facilitator wrongdoing."
+    },
+    {
+      "id": "IMT-37",
+      "title": "Remediation, Restoration, Compensation, Non-Repetition, and Follow-Up",
+      "action_class": "A10",
+      "purpose": "Records agreed or ordered repair, responsible authority and funder, timeline, verification, unresolved harm, design changes, and appeal.",
+      "prohibited_inference": "The framework cannot appropriate funds, impose liability, or promise compensation without a competent financial or legal decision."
+    },
+    {
+      "id": "IMT-38",
+      "title": "Pilot Outcome, Causal Contribution, Adequacy, and Dependency Assessment",
+      "action_class": "A11",
+      "purpose": "Reports outcomes, counterfactuals, distribution, external factors, causal adequacy, exceptional support, support dependency, uncertainty, participant interpretation, and limits.",
+      "prohibited_inference": "Completion, satisfaction, cultural fit, target attainment, or conformance cannot by itself establish success, causation, transferability, durability, or legitimacy."
+    },
+    {
+      "id": "IMT-39",
+      "title": "Scaling, Replication, Institutionalization, or New-Context Proposal",
+      "action_class": "A11",
+      "purpose": "Treats expansion or ordinary adoption as a new proposal with new affected parties, authority, causal mechanism, resources, consent, ordinary ownership, support withdrawal, and closure.",
+      "prohibited_inference": "Success never creates automatic scaling, tier advancement, permanent enactment, compatibility mandate, or broader jurisdiction."
+    },
+    {
+      "id": "IMT-40",
+      "title": "Tool Quality Mark, Limited Certification, or Assurance Decision",
+      "action_class": "A11",
+      "purpose": "Defines the exact limited claim, evidence, assessor independence, common-mode risks, version, scope, expiry, correction, and appeal.",
+      "prohibited_inference": "Certification is not a permit, mandate, guarantee, public-law approval, funding entitlement, monopoly, or authority to govern."
+    },
+    {
+      "id": "IMT-41",
+      "title": "Ratings, Reviews, Trust Scores, and Anti-Retaliation Controls",
+      "action_class": "A11",
+      "purpose": "Separates user feedback from legitimacy, preserves minority experiences, detects brigading, discloses sampling limits, and permits response and correction.",
+      "prohibited_inference": "Stars, cultural-fit ratings, trust scores, popularity, or reputation cannot determine rights, credibility, employment, funding, community competence, or causal responsibility."
+    },
+    {
+      "id": "IMT-42",
+      "title": "Learning Artifact, Adaptation Report, and Publication Consent",
+      "action_class": "A12",
+      "purpose": "Separates public method lessons from identifiable testimony, states causal limits, and obtains purpose-specific publication and reuse consent.",
+      "prohibited_inference": "Pilot participation, grant acceptance, facilitator involvement, or positive outcomes are not consent to storytelling, AI training, or permanent publication."
+    },
+    {
+      "id": "IMT-43",
+      "title": "Failure Library Entry, Access, Withdrawal, and Evidentiary Boundary",
+      "action_class": "A12",
+      "purpose": "Defines de-identification, access, risk review, withdrawal, correction, protected-knowledge limits, and separation from active evidence or complaints.",
+      "prohibited_inference": "The Failure Library is not a mandatory public archive, blacklist, disciplinary record, causal verdict, or substitute for investigation."
+    },
+    {
+      "id": "IMT-44",
+      "title": "Story Bank Entry, Narrative Rights, and Protected-Memory Boundary",
+      "action_class": "A12",
+      "purpose": "Records narrator and collective control over wording, attribution, compensation, translation, access, reuse, AI training, withdrawal, and protected knowledge.",
+      "prohibited_inference": "A story cannot be appropriated as proof of framework success, legitimacy, causation, or universal transferability."
+    },
+    {
+      "id": "IMT-45",
+      "title": "Correction, Retraction, Deletion, and Downstream Propagation",
+      "action_class": "A12",
+      "purpose": "Corrects source records and propagates changes to dashboards, ratings, recommendations, models, archives, manifests, and publications.",
+      "prohibited_inference": "Immutability, attribution, research value, compatibility, or model reproducibility cannot defeat lawful correction, restriction, or deletion."
+    },
+    {
+      "id": "IMT-46",
+      "title": "Funding, Participation Support, Payment, Incentive, Audit, and Appeal",
+      "action_class": "A13",
+      "purpose": "Separates application, eligibility, award, agreement, payment, audit, suspension, clawback, participation support, incentive effects, appeal, and closure.",
+      "prohibited_inference": "Funding cannot activate a pilot, buy consent, shift impossible mandates downward, require conformity, or withdraw accessibility and participation support from dissenters."
+    },
+    {
+      "id": "IMT-47",
+      "title": "Emergency Referral, Response State, Accepted Mission, and Coercive Handoff",
+      "action_class": "A14",
+      "purpose": "Separates EGP signal, GMEAIA response state, CDEE referral, ECRC mission acceptance, capacity limitation, constitutional gap, command, finance, expiry, and SCPA handoff.",
+      "prohibited_inference": "A kit, template, urgency selector, timeout, tool recommendation, or technical capability cannot declare an emergency, create command, or authorize force."
+    },
+    {
+      "id": "IMT-48",
+      "title": "Termination, Ordinary Ownership, Closure, Authority Return, Framework Update, and Conformance",
+      "action_class": "A15",
+      "purpose": "Closes pilots and tools, tests support-withdrawal durability, transfers ordinary ownership where authorized, preserves duties, returns temporary authority, and records conformance and framework revision.",
+      "prohibited_inference": "Stopping a tool, ending support, deleting code, archiving a version, or passing conformance does not discharge remedy, payments, restoration, records, claims, or prove success."
+    }
+  ],
+  "gmeaia_crosswalk": [
+    {
+      "gmeaia_id": "GMEAIA-01",
+      "gmeaia_title": "Constituting Instrument, Legal Source, Jurisdiction, and Activation Status",
+      "imt_records": [
+        "IMT-29"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-02",
+      "gmeaia_title": "Method, Tool, Protocol, Template, and Authority-Effect Classification",
+      "imt_records": [
+        "IMT-02"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-03",
+      "gmeaia_title": "Actor, Agent, Office, Representation, and Technical Capability Record",
+      "imt_records": [
+        "IMT-20",
+        "IMT-21"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-04",
+      "gmeaia_title": "Sense Signal, Complaint, Opportunity, and Asserted Scope Record",
+      "imt_records": [
+        "IMT-34"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-05",
+      "gmeaia_title": "Observation, Evidence, Provenance, and Protected-Source Record",
+      "imt_records": [
+        "IMT-34",
+        "IMT-25"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-06",
+      "gmeaia_title": "Signal Validation, Corroboration, and Status Record",
+      "imt_records": [
+        "IMT-34",
+        "IMT-36"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-07",
+      "gmeaia_title": "Severity, Urgency, Reversibility, Uncertainty, and Response-Time Assessment",
+      "imt_records": [
+        "IMT-36"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-08",
+      "gmeaia_title": "Jurisdictional Triage, Competent-Authority Referral, Response, and Acceptance",
+      "imt_records": [
+        "IMT-29",
+        "IMT-47"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-09",
+      "gmeaia_title": "Affected Persons, Communities, Nations, Outsiders, and Transboundary Effects Map",
+      "imt_records": [
+        "IMT-04"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-10",
+      "gmeaia_title": "Affected Indigenous Nation, Applicable Indigenous Law, and Protected-Knowledge Authority",
+      "imt_records": [
+        "IMT-14"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-11",
+      "gmeaia_title": "Notice, Accessibility, Independent Advice, and Participation Support",
+      "imt_records": [
+        "IMT-10",
+        "IMT-46"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-12",
+      "gmeaia_title": "Proposal Intake, Source Signal, Sponsor, and Status Record",
+      "imt_records": [
+        "IMT-28"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-13",
+      "gmeaia_title": "Proposal Objective, Alternatives, Rights Effects, Causal Mechanism, and Reversibility Record",
+      "imt_records": [
+        "IMT-28"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-14",
+      "gmeaia_title": "Method Selection, Cultural Adaptation, Autonomy Statement, and Authority Effect",
+      "imt_records": [
+        "IMT-02",
+        "IMT-13",
+        "IMT-15"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-15",
+      "gmeaia_title": "Deliberation Plan, Facilitation Mandate, Record, Dissent, and Reasons",
+      "imt_records": [
+        "IMT-06",
+        "IMT-21"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-16",
+      "gmeaia_title": "Epistemic Readiness, Provenance, Common-Mode Dependence, Disinformation, and Trust Assessment",
+      "imt_records": [
+        "IMT-05",
+        "IMT-22",
+        "IMT-24"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-17",
+      "gmeaia_title": "Ethics, Harm, Rights, and Anti-Capture Advisory Review",
+      "imt_records": [
+        "IMT-15"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-18",
+      "gmeaia_title": "Consent Requirement, Holder, Scope, and Dependency Map",
+      "imt_records": [
+        "IMT-30"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-19",
+      "gmeaia_title": "Consent, Refusal, Withdrawal, and Non-Retaliation Record",
+      "imt_records": [
+        "IMT-30"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-20",
+      "gmeaia_title": "Authority Verification, Causal Responsibility, Decision Class, and Protected-Domain Classification",
+      "imt_records": [
+        "IMT-04",
+        "IMT-29"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-21",
+      "gmeaia_title": "Trial Authorization, Conditions, Scope, and Non-Precedent Record",
+      "imt_records": [
+        "IMT-28",
+        "IMT-29"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-22",
+      "gmeaia_title": "Adoption Claim, Deliberative Acceptance, and Registration Record",
+      "imt_records": [
+        "IMT-31"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-23",
+      "gmeaia_title": "Operational Activation, Start Conditions, Operator, and Clock Record",
+      "imt_records": [
+        "IMT-32"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-24",
+      "gmeaia_title": "Implementation Plan, Responsibilities, Dependencies, Service Boundaries, and Handoff Clocks",
+      "imt_records": [
+        "IMT-07",
+        "IMT-32",
+        "IMT-48"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-25",
+      "gmeaia_title": "Non-Derogable Rights, Essential Services, Safety, and Continuing Duties Record",
+      "imt_records": [
+        "IMT-09",
+        "IMT-35"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-26",
+      "gmeaia_title": "Funding Authority, Participation Support, Independence, and Non-Conformity Record",
+      "imt_records": [
+        "IMT-22",
+        "IMT-46"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-27",
+      "gmeaia_title": "Procurement, Contract, Vendor, Platform, and Technical-Service Record",
+      "imt_records": [
+        "IMT-26"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-28",
+      "gmeaia_title": "Data Purpose, Lawful Basis, Access Class, Retention, Publication, and Withdrawal",
+      "imt_records": [
+        "IMT-25"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-29",
+      "gmeaia_title": "AI, Sensor, Model, Algorithm, and Automation Role Record",
+      "imt_records": [
+        "IMT-24"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-30",
+      "gmeaia_title": "Monitoring Plan, Baseline, Metric, Counterfactual, Burden, and Review Schedule",
+      "imt_records": [
+        "IMT-33"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-31",
+      "gmeaia_title": "Outcome Observation, Incident, Side Effect, and Distributional Impact Record",
+      "imt_records": [
+        "IMT-34"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-32",
+      "gmeaia_title": "Causal Assessment, Contribution, External Shock, Causal Adequacy, and Uncertainty Record",
+      "imt_records": [
+        "IMT-36",
+        "IMT-38"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-33",
+      "gmeaia_title": "Midpoint Review, Corrective Action, and Continued-Operation Decision",
+      "imt_records": [
+        "IMT-33",
+        "IMT-36"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-34",
+      "gmeaia_title": "Complaint, Challenge, Interim Relief, Appeal, and Independent Review",
+      "imt_records": [
+        "IMT-23",
+        "IMT-35"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-35",
+      "gmeaia_title": "Amendment, Scope Change, Version Change, and New-Risk Assessment",
+      "imt_records": [
+        "IMT-17",
+        "IMT-18"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-36",
+      "gmeaia_title": "Pause, Suspension, Stop, Rollback, and Safe-State Record",
+      "imt_records": [
+        "IMT-35"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-37",
+      "gmeaia_title": "Renewal, Reauthorization, and Active Re-Consent Record",
+      "imt_records": [
+        "IMT-30",
+        "IMT-32"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-38",
+      "gmeaia_title": "Expiry, Automatic Deactivation, and Continuing-Duty Transition Record",
+      "imt_records": [
+        "IMT-19",
+        "IMT-32",
+        "IMT-48"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-39",
+      "gmeaia_title": "Termination, Closure, Authority Return, Asset Return, and Succession Record",
+      "imt_records": [
+        "IMT-19",
+        "IMT-48"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-40",
+      "gmeaia_title": "Learning Artifact, Failure Library, Story Bank, and Public Memory Record",
+      "imt_records": [
+        "IMT-42",
+        "IMT-43",
+        "IMT-44"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-41",
+      "gmeaia_title": "Record Correction, Retraction, Supersession, and Dependency Propagation",
+      "imt_records": [
+        "IMT-45"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-42",
+      "gmeaia_title": "Harm, Remedy, Restitution, Compensation, Rehabilitation, and Non-Repetition Record",
+      "imt_records": [
+        "IMT-37"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-43",
+      "gmeaia_title": "Scaling Recommendation, Transferability Limits, Transition Readiness, and Evidence Package",
+      "imt_records": [
+        "IMT-38",
+        "IMT-39"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-44",
+      "gmeaia_title": "Scaling, Replication, New-Jurisdiction, and Permanent-Enactment Authorization",
+      "imt_records": [
+        "IMT-29",
+        "IMT-39"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-45",
+      "gmeaia_title": "Institutional Purpose, Mandate, Power, Selection Pressure, and Obsolescence Audit",
+      "imt_records": [
+        "IMT-17",
+        "IMT-38",
+        "IMT-48"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-46",
+      "gmeaia_title": "Charter Amendment, Governance Redesign, Constituency, and Decision-Rights Record",
+      "imt_records": [
+        "IMT-15",
+        "IMT-17"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-47",
+      "gmeaia_title": "Institutional Funding Eligibility, Condition, Incentive, and Appeal Record",
+      "imt_records": [
+        "IMT-46"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-48",
+      "gmeaia_title": "Institutional Transition, Worker, Beneficiary, Contract, and Service Continuity Record",
+      "imt_records": [
+        "IMT-38",
+        "IMT-48"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-49",
+      "gmeaia_title": "Institutional Dissolution, Successor, Dark Archive, and Unresolved-Duty Custody",
+      "imt_records": [
+        "IMT-19",
+        "IMT-25",
+        "IMT-48"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-50",
+      "gmeaia_title": "Facilitator Qualification, Appointment, Mandate, Conflict, Complaint, and Removal",
+      "imt_records": [
+        "IMT-20",
+        "IMT-21",
+        "IMT-22",
+        "IMT-23"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-51",
+      "gmeaia_title": "Auditor, Assessor, Ethics Reviewer, and Epistemic Reviewer Independence and Common-Mode Record",
+      "imt_records": [
+        "IMT-22",
+        "IMT-36"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-52",
+      "gmeaia_title": "Catalyst Team, Liaison, Evolution Cell, and Technical-Assistance Mandate",
+      "imt_records": [
+        "IMT-21",
+        "IMT-22"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-53",
+      "gmeaia_title": "Framework, Tool Core, Fork, Schema, Compatibility, Version, Deprecation, and Stewardship Record",
+      "imt_records": [
+        "IMT-16",
+        "IMT-17",
+        "IMT-18",
+        "IMT-19",
+        "IMT-48"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-54",
+      "gmeaia_title": "Offline, Oral, Paper, Assisted, and Low-Tech Record Equivalence",
+      "imt_records": [
+        "IMT-10",
+        "IMT-11",
+        "IMT-12"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-55",
+      "gmeaia_title": "Emergency Signal, CDEE Referral, Mission Acceptance, and ECRC Interface",
+      "imt_records": [
+        "IMT-47"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-56",
+      "gmeaia_title": "Protected-Domain Experiment Exception and Specialized-Interface Authorization",
+      "imt_records": [
+        "IMT-09",
+        "IMT-29"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-57",
+      "gmeaia_title": "Coercive or Enforcement Request, Acceptance, Execution, and SCPA Handoff",
+      "imt_records": [
+        "IMT-47"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-58",
+      "gmeaia_title": "Non-Activation, Sandbox, Prototype, Simulation, and Demonstration Register",
+      "imt_records": [
+        "IMT-31",
+        "IMT-32"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-59",
+      "gmeaia_title": "Cross-Framework Handoff, Conformance, Recipient Response, Acceptance, and Custody Record",
+      "imt_records": [
+        "IMT-07",
+        "IMT-29",
+        "IMT-47",
+        "IMT-48"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    },
+    {
+      "gmeaia_id": "GMEAIA-60",
+      "gmeaia_title": "Data Return, Deletion, Archive, Access Revocation, and Protected-Memory Disposition",
+      "imt_records": [
+        "IMT-25",
+        "IMT-45",
+        "IMT-48"
+      ],
+      "relationship": "implements_or_profiles",
+      "conformance_note": "Methods-layer implementation only; substantive authority remains external."
+    }
+  ],
+  "readiness_gates": [
+    {
+      "id": "G01",
+      "requirement": "Tool identity, version, source, and steward are explicit."
+    },
+    {
+      "id": "G02",
+      "requirement": "Authority-effect label is valid and not inferred from the tool form."
+    },
+    {
+      "id": "G03",
+      "requirement": "Consequence profile is recorded at the smallest adequate level."
+    },
+    {
+      "id": "G04",
+      "requirement": "Affected parties and outsiders are mapped when consequences extend beyond users."
+    },
+    {
+      "id": "G05",
+      "requirement": "Causal variables and practical controllers are identified."
+    },
+    {
+      "id": "G06",
+      "requirement": "Affected standing is not converted into causal responsibility."
+    },
+    {
+      "id": "G07",
+      "requirement": "Protected-domain triggers route to specialized interfaces."
+    },
+    {
+      "id": "G08",
+      "requirement": "Accessibility and low-tech parity are adequate."
+    },
+    {
+      "id": "G09",
+      "requirement": "Cultural adaptation is self-described and affected-nation authority is preserved."
+    },
+    {
+      "id": "G10",
+      "requirement": "Tool Finder presents plural options and alternatives."
+    },
+    {
+      "id": "G11",
+      "requirement": "Compatibility power, migration burden, and local-fork standing are disclosed."
+    },
+    {
+      "id": "G12",
+      "requirement": "Common-mode dependencies are identified."
+    },
+    {
+      "id": "G13",
+      "requirement": "Facilitator and support-team mandate is bounded and reviewable."
+    },
+    {
+      "id": "G14",
+      "requirement": "Funding and incentives do not buy consent or conformity."
+    },
+    {
+      "id": "G15",
+      "requirement": "Data purpose, access, retention, return, and deletion are defined."
+    },
+    {
+      "id": "G16",
+      "requirement": "Vendor export, continuity, security, and exit are feasible."
+    },
+    {
+      "id": "G17",
+      "requirement": "AI roles remain advisory and human-accountable."
+    },
+    {
+      "id": "G18",
+      "requirement": "Pilot type is separate from consequence profile and scale."
+    },
+    {
+      "id": "G19",
+      "requirement": "The pilot is minimum causally adequate for its claim."
+    },
+    {
+      "id": "G20",
+      "requirement": "Authority formation and source are recorded for CP2/CP3."
+    },
+    {
+      "id": "G21",
+      "requirement": "Consent, refusal, withdrawal, and non-retaliation are protected."
+    },
+    {
+      "id": "G22",
+      "requirement": "Adoption is separated from activation."
+    },
+    {
+      "id": "G23",
+      "requirement": "Response-duty source, effect, and clocks are recorded for consequential handoffs."
+    },
+    {
+      "id": "G24",
+      "requirement": "Capacity limitation is not conflated with constitutional absence."
+    },
+    {
+      "id": "G25",
+      "requirement": "Timeout does not transfer authority."
+    },
+    {
+      "id": "G26",
+      "requirement": "Monitoring includes burden, distribution, and dependency."
+    },
+    {
+      "id": "G27",
+      "requirement": "Harm signals remain allegations until reviewed."
+    },
+    {
+      "id": "G28",
+      "requirement": "Interim protection references competent authority and safe-state limits."
+    },
+    {
+      "id": "G29",
+      "requirement": "Remedy and correction propagate downstream."
+    },
+    {
+      "id": "G30",
+      "requirement": "Certification and ratings are limited claims, not legitimacy."
+    },
+    {
+      "id": "G31",
+      "requirement": "Scaling is a new proposal, not an automatic progression."
+    },
+    {
+      "id": "G32",
+      "requirement": "Ordinary ownership and recurrent finance are identified."
+    },
+    {
+      "id": "G33",
+      "requirement": "Support-withdrawal durability and material exit are tested."
+    },
+    {
+      "id": "G34",
+      "requirement": "Learning publication preserves consent and protected memory."
+    },
+    {
+      "id": "G35",
+      "requirement": "Closure preserves unresolved duties, records, remedy, and claims."
+    },
+    {
+      "id": "G36",
+      "requirement": "Framework falsification and replacement conditions are reviewable."
+    }
+  ],
+  "compound_tests": [
+    {
+      "id": "T01",
+      "scenario": "A brainstorming worksheet is downloaded",
+      "required_result": "It remains CP0 and needs no authorization merely to be read or discussed."
+    },
+    {
+      "id": "T02",
+      "scenario": "A Tool Finder recommends one central package first",
+      "required_result": "Alternatives, assumptions, burdens, and local forks remain visible; ranking creates no mandate."
+    },
+    {
+      "id": "T03",
+      "scenario": "A community chooses an incompatible local fork",
+      "required_result": "Divergence is disclosed but does not by itself invalidate the fork."
+    },
+    {
+      "id": "T04",
+      "scenario": "A digital tool lacks an offline path",
+      "required_result": "It fails the relevant accessibility gate unless the function inherently requires digital technology and an assisted path is justified."
+    },
+    {
+      "id": "T05",
+      "scenario": "Affected residents cannot control the upstream infrastructure causing harm",
+      "required_result": "They gain participation and remedy rights; causal responsibility remains with practical controllers."
+    },
+    {
+      "id": "T06",
+      "scenario": "A facilitator holds the only certificate available",
+      "required_result": "Certification does not create monopoly; equivalent local and lawful competence routes remain valid."
+    },
+    {
+      "id": "T07",
+      "scenario": "Three independent reviewers use the same model and vendor",
+      "required_result": "The common-mode dependency is recorded and an independent fallback is sought."
+    },
+    {
+      "id": "T08",
+      "scenario": "A funder offers participation support only to communities accepting its preferred tool",
+      "required_result": "The condition fails closed as conformity pressure."
+    },
+    {
+      "id": "T09",
+      "scenario": "A CP1 workshop begins collecting protected testimony",
+      "required_result": "Data, consent, protected-knowledge, and withdrawal triggers are added."
+    },
+    {
+      "id": "T10",
+      "scenario": "A feasibility pilot claims system-wide causal effects",
+      "required_result": "The claim is rejected or narrowed because evidence cannot exceed pilot type and causal adequacy."
+    },
+    {
+      "id": "T11",
+      "scenario": "A small pilot omits the causal variable it claims to test",
+      "required_result": "It is not minimum causally adequate and cannot support the claim."
+    },
+    {
+      "id": "T12",
+      "scenario": "A tool is authorized but not activated",
+      "required_result": "It remains non-active; adoption or deployment does not start operation."
+    },
+    {
+      "id": "T13",
+      "scenario": "A recipient has jurisdiction but lacks staff and funds",
+      "required_result": "The handoff state is capacity_limited, with support or delegation needs recorded."
+    },
+    {
+      "id": "T14",
+      "scenario": "No authority has jurisdiction over the condition",
+      "required_result": "A constitutional_gap is recorded; IMT does not inherit the power."
+    },
+    {
+      "id": "T15",
+      "scenario": "A response clock expires",
+      "required_result": "The record becomes timed_out and escalates without implied consent or authority transfer."
+    },
+    {
+      "id": "T16",
+      "scenario": "A recipient accepts but misses the action clock",
+      "required_result": "A performance-omission review opens; acceptance does not close accountability."
+    },
+    {
+      "id": "T17",
+      "scenario": "A harm signal names a facilitator",
+      "required_result": "Protection and review begin, but the signal is not treated as a guilt finding."
+    },
+    {
+      "id": "T18",
+      "scenario": "A library steward delists a tool",
+      "required_result": "The steward may control its own library but cannot suspend an external institution or right."
+    },
+    {
+      "id": "T19",
+      "scenario": "A security patch disables a function",
+      "required_result": "It may restrict technical use but cannot expand substantive authority."
+    },
+    {
+      "id": "T20",
+      "scenario": "A rating campaign brigades a minority-designed tool",
+      "required_result": "Minority evidence, version differences, response, correction, and anti-retaliation controls apply."
+    },
+    {
+      "id": "T21",
+      "scenario": "A certificate expires",
+      "required_result": "The limited assurance ends; prior users retain records, remedies, and lawful migration choices."
+    },
+    {
+      "id": "T22",
+      "scenario": "A pilot succeeds only while a Catalyst Team performs core operations",
+      "required_result": "The result is support-dependent and not yet ordinary institutionalization."
+    },
+    {
+      "id": "T23",
+      "scenario": "A pilot transfers to ordinary ownership without recurrent finance",
+      "required_result": "Transition is not ready."
+    },
+    {
+      "id": "T24",
+      "scenario": "A vendor blocks data export",
+      "required_result": "Material exit fails; scaling or renewal is paused until corrected."
+    },
+    {
+      "id": "T25",
+      "scenario": "A local fork remains safe on an older version",
+      "required_result": "Users may remain with disclosed support and compatibility status."
+    },
+    {
+      "id": "T26",
+      "scenario": "A funder dislikes local adaptation",
+      "required_result": "Participation support cannot be withdrawn merely for disagreement."
+    },
+    {
+      "id": "T27",
+      "scenario": "A story is reused for AI training beyond consent",
+      "required_result": "Reuse stops and correction, restriction, deletion, or remedy propagates."
+    },
+    {
+      "id": "T28",
+      "scenario": "A Failure Library entry is requested in active litigation",
+      "required_result": "Learning and evidentiary functions remain separated and access is governed by the competent process."
+    },
+    {
+      "id": "T29",
+      "scenario": "A CP3 tool use lacks specialized authorization",
+      "required_result": "It fails closed."
+    },
+    {
+      "id": "T30",
+      "scenario": "An emergency kit is opened during a flood",
+      "required_result": "It may support information and referral; it creates no declaration, command, requisition, or force."
+    },
+    {
+      "id": "T31",
+      "scenario": "A coercive request is embedded in a tool recommendation",
+      "required_result": "It routes through IMT-47 and GMEAIA-57; the recommendation itself has no coercive effect."
+    },
+    {
+      "id": "T32",
+      "scenario": "Conformance tests all pass but outcomes worsen",
+      "required_result": "The framework remains conforming but unsuccessful; causal review and falsification apply."
+    },
+    {
+      "id": "T33",
+      "scenario": "Tool use repeatedly increases local paperwork without improving action",
+      "required_result": "Administrative-burden and framework-falsification review is triggered."
+    },
+    {
+      "id": "T34",
+      "scenario": "Central compatibility rules steadily eliminate local forks",
+      "required_result": "Compatibility-power and objective-reproduction review may narrow or replace the core governance model."
+    },
+    {
+      "id": "T35",
+      "scenario": "A pilot ends with unpaid staff and unresolved harm",
+      "required_result": "Temporary authority ends, but payments, remedy, data, and claims remain open."
+    },
+    {
+      "id": "T36",
+      "scenario": "A repository archives a deprecated version",
+      "required_result": "Archival status does not erase unresolved duties or participant access."
+    },
+    {
+      "id": "T37",
+      "scenario": "An authority refuses a referral lawfully",
+      "required_result": "The refusal and reasons are recorded; IMT cannot override it."
+    },
+    {
+      "id": "T38",
+      "scenario": "A referral is misrouted",
+      "required_result": "Custody is corrected and the matter referred without treating the first recipient as responsible."
+    },
+    {
+      "id": "T39",
+      "scenario": "A jointly constituted cross-community process uses an IMT tool",
+      "required_result": "The constituting compact and shared governance object are referenced; the tool does not create them."
+    },
+    {
+      "id": "T40",
+      "scenario": "Evidence disconfirms IMT’s core hypotheses",
+      "required_result": "The steward must consider narrowing, redesign, replacement, or non-scaling rather than treating conformance as vindication."
+    }
+  ],
+  "framework_hypotheses": [
+    "plural low-tech access lowers barriers without centralizing authority",
+    "consequence-scaled records reduce burden without hiding risk",
+    "causal-responsibility mapping reduces implementation dumping",
+    "minimum causal adequacy improves pilot claims",
+    "compatibility safeguards prevent core-steward monopoly",
+    "common-mode review catches correlated failure",
+    "ordinary ownership and support withdrawal reduce permanent-pilot dependency",
+    "protected learning improves memory without extraction"
+  ],
+  "release_doctrine": "Make tools easy to find, understand, adapt, challenge, and leave. Make authority impossible to fake and support possible to withdraw without collapse.",
+  "cluster_peer_dependencies": [
+    {
+      "id": "IAF/1.2",
+      "role": "operational_parent",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    },
+    {
+      "id": "EGP/1.2",
+      "role": "event_transport",
+      "binding": "IAEG-CLUSTER/1.0",
+      "exact_package_hash_source": "active_cluster_registry"
+    }
+  ],
+  "active_cluster_registry": "IAEG-CLUSTER/1.0"
+}

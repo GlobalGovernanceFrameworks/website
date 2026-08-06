@@ -129,8 +129,16 @@ export interface GgfEntity {
   description?: string;
   // Strategic tier system (0-4)
   tier?: 0 | 1 | 2 | 3 | 4;
-  /** Current presentation/lifecycle state. `Retired` must be accompanied by retirement provenance. */
-  status?: 'Draft' | 'Pilot' | 'Implemented' | 'Proposed' | 'Ready' | 'Review' | 'Planned' | 'Coming-Soon' | 'Active' | 'Retired';
+  /**
+   * Internal lifecycle only. Not displayed. For published frameworks this
+   * describes the state of the document; for unpublished entities it describes
+   * whether the thing exists yet. Nothing in this union asserts that an outside
+   * party has reviewed, adopted, or deployed anything; that belongs to
+   * `ui.outline.maturity` or `ui.prose.maturity`.
+   *
+   * `Retired` must be accompanied by retirement provenance.
+   */
+  status?: 'Proposed' | 'Draft' | 'Review' | 'Stable' | 'Pilot' | 'Retired';
   primaryDomain?: 'Ecological' | 'Economic' | 'Justice' | 'Governance' | 'Technology' | 'Health' | 'Ethics';
   geographicScope?: 'Local' | 'Regional' | 'Global' | 'BAZ' | 'Bioregional' | 'Institutional';
   /** Defaults to GGF. External entities are reference targets, not GGF organs. */

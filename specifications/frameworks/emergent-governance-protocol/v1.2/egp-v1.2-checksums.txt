@@ -1,0 +1,13 @@
+c4f4134ed1f749b2279e16482e476cd67e8dd75d42fec12010abb8cbbd183391  egp-glossary-v1.2.md
+d4619e8871a098d3a66c53259d9cc28e9b59321ddbf99137842959975b5d8a1d  egp-implementation-appendix-v1.2.md
+7fe02c3e248cdb091bf5d76536f8d61fb8bef318f29f11c923f03227070e895a  egp-one-page-summary-v1.2.md
+04d7e6e2fbb1af26fd98e1e5fb4da4572280a513c3616184f817d787ce177473  egp-v1.2-changelog.md
+73f08ce47d2dbfb3b7162fa2656734152de03991d365c2bbf0eda723fe4d93ba  egp-v1.2-example-authorized-trial.json
+1feeaf5d15b85298443eff9717c60a0354e3607ff1e0be913318099a29da1728  egp-v1.2-example-cp2-proposal.json
+8f1e15dd4299ca33c8f64c8db7d0f3dd5970a35a52ca1bffe23e37370e5d688a  egp-v1.2-example-sense-assertion.json
+9ffa13be87cf4c02c454e3a7e1b7b357abc2acec167ab10f81cf966dc03e6739  egp-v1.2-governance-action.schema.json
+d24507ac7c5e0836edcb10fef4cfe654ff136efeee4014b11c2e148a358605b8  egp-v1.2-migration-from-v1.1.1.md
+9533fcae530f0d2674480a391b8b7296c7b636ac0e74616ed8e4bc8eecde9a1d  egp-v1.2-validation.txt
+8e8ec409122e8b8bff2474d629d22377dbbae7fd30f8bf99eb2f06471fe4b7cd  emergent-governance-protocol-v1.2-package-manifest.json
+54ae23bc29ca3de2ab22013e3fad49c494034717717fa5771239f22d641b00eb  emergent-governance-protocol-v1.2.md
+1789e8b63ef8c0ce8ca1d1501b85ed43ed220d150b196ad3c458f18662f7fea4  validate-egp-v1.2.py

@@ -22,7 +22,27 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const OUTLINE_ROOT = path.join(__dirname, '../src/lib/content/framework-outlines/en');
+const SPEC_ROOT = path.join(__dirname, '../src/lib/content/specifications/en');
 const SCHEMA_PATH = '../src/lib/data/schema/_index.ts';
+
+// Two document kinds, distinguished by ui.outline.kind. Frameworks are
+// tier-partitioned under framework-outlines and served by /frameworks/[slug];
+// specifications are flat under specifications and served by
+// /specifications/[slug]. Both use the same versions/ + current.md convention.
+const KIND = {
+  framework: {
+    root: OUTLINE_ROOT,
+    routeBase: '/frameworks',
+    label: 'framework-outlines/en',
+    tiered: true
+  },
+  specification: {
+    root: SPEC_ROOT,
+    routeBase: '/specifications',
+    label: 'specifications/en',
+    tiered: false
+  }
+};
 
 const VALID_MATURITY = ['internal', 'adversarial', 'external', 'piloted'];
 
@@ -52,8 +72,16 @@ function compareVersionStrings(a, b) {
   return 0;
 }
 
+function kindFor(entity) {
+  return entity.ui?.outline?.kind ?? 'framework';
+}
+
 function outlineDirFor(entity) {
-  return entity.ui?.outline?.dir ?? `tier-${entity.tier}/${entity.ui?.slug}`;
+  if (entity.ui?.outline?.dir) return entity.ui.outline.dir;
+
+  return KIND[kindFor(entity)]?.tiered
+    ? `tier-${entity.tier}/${entity.ui?.slug}`
+    : `${entity.ui?.slug}`;
 }
 
 function listVersionsOnDisk(versionsDir) {
@@ -91,7 +119,17 @@ export function validateOutlinePublication(entities) {
     }
     seenSlugs.set(entity.ui.slug, label);
 
-    const expectedPath = `/frameworks/${entity.ui.slug}`;
+    const kind = kindFor(entity);
+    const kindSpec = KIND[kind];
+
+    if (!kindSpec) {
+      errors.push(
+        `${label}: unknown ui.outline.kind "${kind}" (expected one of ${Object.keys(KIND).join(', ')})`
+      );
+      continue;
+    }
+
+    const expectedPath = `${kindSpec.routeBase}/${entity.ui.slug}`;
     if (entity.ui.path !== expectedPath) {
       errors.push(
         `${label}: ui.path is "${entity.ui.path}" but the [slug] route serves "${expectedPath}"`
@@ -117,11 +155,11 @@ export function validateOutlinePublication(entities) {
     }
 
     const dir = outlineDirFor(entity);
-    const versionsDir = path.join(OUTLINE_ROOT, dir, 'versions');
+    const versionsDir = path.join(kindSpec.root, dir, 'versions');
 
     if (!fs.existsSync(versionsDir)) {
       errors.push(
-        `${label}: no outline folder at framework-outlines/en/${dir}/versions/ ` +
+        `${label}: no outline folder at ${kindSpec.label}/${dir}/versions/ ` +
           `(set ui.outline.dir if the folder name differs from the slug)`
       );
       continue;
@@ -160,22 +198,35 @@ export function validateOutlinePublication(entities) {
     }
   }
 
-  // Outline folders on disk that no schema entity claims
+  // Document folders on disk that no schema entity claims. A folder is only
+  // orphaned relative to its own kind, so the claim set is keyed by both.
   const orphanFolders = [];
+  const claimedDirs = new Set(published.map((e) => `${kindFor(e)}:${outlineDirFor(e)}`));
+
+  function checkOrphan(kind, dir) {
+    const folderPath = path.join(KIND[kind].root, dir);
+    if (!fs.existsSync(path.join(folderPath, 'versions'))) return;
+    if (!claimedDirs.has(`${kind}:${dir}`)) {
+      orphanFolders.push(`${KIND[kind].label}/${dir}`);
+    }
+  }
+
   if (fs.existsSync(OUTLINE_ROOT)) {
     for (const tier of fs.readdirSync(OUTLINE_ROOT)) {
       const tierPath = path.join(OUTLINE_ROOT, tier);
       if (!fs.statSync(tierPath).isDirectory()) continue;
 
       for (const folder of fs.readdirSync(tierPath)) {
-        const folderPath = path.join(tierPath, folder);
-        if (!fs.statSync(folderPath).isDirectory()) continue;
-        if (!fs.existsSync(path.join(folderPath, 'versions'))) continue;
-
-        const dir = `${tier}/${folder}`;
-        const claimed = published.some((e) => outlineDirFor(e) === dir);
-        if (!claimed) orphanFolders.push(dir);
+        if (!fs.statSync(path.join(tierPath, folder)).isDirectory()) continue;
+        checkOrphan('framework', `${tier}/${folder}`);
       }
+    }
+  }
+
+  if (fs.existsSync(SPEC_ROOT)) {
+    for (const folder of fs.readdirSync(SPEC_ROOT)) {
+      if (!fs.statSync(path.join(SPEC_ROOT, folder)).isDirectory()) continue;
+      checkOrphan('specification', folder);
     }
   }
 
@@ -188,7 +239,8 @@ export function validateOutlinePublication(entities) {
     errors,
     warnings,
     stats: {
-      publishedOutlines: published.length,
+      publishedOutlines: published.filter((e) => kindFor(e) === 'framework').length,
+      publishedSpecifications: published.filter((e) => kindFor(e) === 'specification').length,
       unpublishedOutlineFolders: orphanFolders.length,
       byMaturity,
       orphanFolders
@@ -562,8 +614,9 @@ async function main() {
   console.log('');
   console.log('OUTLINE PUBLICATION');
   console.log('');
-  console.log(`  Published on the site               ${outline.stats.publishedOutlines}`);
-  console.log(`  Outline folders not yet published   ${outline.stats.unpublishedOutlineFolders}`);
+  console.log(`  Frameworks published                ${outline.stats.publishedOutlines}`);
+  console.log(`  Specifications published            ${outline.stats.publishedSpecifications}`);
+  console.log(`  Document folders not yet published  ${outline.stats.unpublishedOutlineFolders}`);
   console.log('');
   Object.entries(outline.stats.byMaturity).forEach(([m, n]) => {
     console.log(`  ${m.padEnd(14)} ${n}`);

@@ -65,11 +65,11 @@ const CREATION_IMPLYING: ReadonlySet<GgfRelationship['type']> = new Set([
   'DELEGATES_TO'
 ]);
 
-/** Maturity levels that do not evidence review outside the project. */
-const UNVALIDATED_MATURITY = new Set(['internal', 'adversarial']);
+/** Statuses meaningful only before a document exists. */
+const PRE_PUBLICATION_STATUS = new Set(['Proposed']);
 
-/** Statuses that assert the entity is finished enough to be adopted. */
-const ADOPTION_CLAIMING_STATUS = new Set(['Ready', 'Implemented', 'Active']);
+/** Statuses describing the internal state of an existing document. */
+const DOCUMENT_STATUS = new Set(['Draft', 'Review', 'Stable']);
 
 const normaliseName = (name: string | undefined): string =>
   (name ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '');
@@ -82,9 +82,6 @@ const nameTokens = (name: string | undefined): Set<string> =>
       .split(' ')
       .filter((w) => w.length > 2)
   );
-
-const maturityOf = (e: GgfEntity): string | undefined =>
-  e.ui?.outline?.maturity ?? e.ui?.prose?.maturity;
 
 const isPublished = (e: GgfEntity): boolean =>
   Boolean(e.ui?.slug && (e.ui.outline || e.ui.prose));
@@ -320,23 +317,23 @@ export function validateSchema(
     }
   }
 
-  // --- Publication claims -------------------------------------------------
-  // Maturity records external validation, not internal completeness. A status
-  // asserting readiness for adoption alongside a maturity meaning "nobody
-  // outside the project has read it" is a claim the schema cannot support.
+  // --- Publication lifecycle ----------------------------------------------
+  // Status is an internal lifecycle field with two contexts. Proposed applies
+  // before a document exists; Draft, Review, and Stable describe an existing
+  // document. External validation remains represented only by maturity.
   for (const e of entities) {
-    if (!isPublished(e)) continue;
-    const maturity = maturityOf(e);
-    if (
-      e.status &&
-      ADOPTION_CLAIMING_STATUS.has(e.status) &&
-      maturity &&
-      UNVALIDATED_MATURITY.has(maturity)
-    ) {
-      add('maturity-overstated', 'warning', [e.id],
-        `${e.id} is status ${e.status} with maturity '${maturity}'; no external party has reviewed it`);
+    const published = isPublished(e);
+    if (e.status && !e.retired) {
+      if (published && PRE_PUBLICATION_STATUS.has(e.status)) {
+        add('publication-status-mismatch', 'warning', [e.id],
+          `${e.id} is published but its status (${e.status}) describes something that does not exist yet`);
+      }
+      if (!published && DOCUMENT_STATUS.has(e.status)) {
+        add('publication-status-mismatch', 'warning', [e.id],
+          `${e.id} has a document status (${e.status}) but publishes no outline or prose`);
+      }
     }
-    if (!e.ui?.outline?.standfirst && !e.ui?.prose?.standfirst) {
+    if (published && !e.ui?.outline?.standfirst && !e.ui?.prose?.standfirst) {
       add('missing-standfirst', 'info', [e.id],
         `${e.id} is published without a standfirst`);
     }

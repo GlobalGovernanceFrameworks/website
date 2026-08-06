@@ -3,6 +3,13 @@
 // Generates lightweight version/review metadata for the framework outline UI.
 // The archived Markdown files are inspected only as filesystem entries; their
 // contents are never read or passed through mdsvex.
+//
+// Two content roots, one manifest:
+//   framework-outlines/<lang>/tier-N/<slug>/  →  key "<lang>/tier-N/<slug>"
+//   specifications/<lang>/<slug>/             →  key "<lang>/<slug>"
+//
+// The keys cannot collide: a framework key always carries a "tier-" segment.
+// Both match the dir strings outlineRegistry.js builds from the schema.
 
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
@@ -10,13 +17,11 @@ import { fileURLToPath } from 'node:url';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDir, '..');
-const outlineRoot = path.join(
-  projectRoot,
-  'src',
-  'lib',
-  'content',
-  'framework-outlines'
-);
+const contentRoot = path.join(projectRoot, 'src', 'lib', 'content');
+
+const outlineRoot = path.join(contentRoot, 'framework-outlines');
+const specRoot = path.join(contentRoot, 'specifications');
+
 const outputPath = path.join(
   projectRoot,
   'src',
@@ -119,8 +124,27 @@ function buildLineage(reviewPaths) {
   };
 }
 
-async function buildManifest() {
-  const manifest = {};
+/**
+ * Reads one document folder — the leaf that holds versions/ and reviews/.
+ * Returns null when the folder holds neither, so empty scaffolding never
+ * enters the manifest.
+ */
+async function readDocumentFolder(documentPath) {
+  const versionFiles = await markdownFilesAt(path.join(documentPath, 'versions'));
+  const reviewPaths = await walkMarkdown(path.join(documentPath, 'reviews'));
+
+  const versions = versionFiles
+    .map((file) => file.replace(/\.md$/, ''))
+    .sort(compareVersions);
+
+  if (!versions.length && !reviewPaths.length) return null;
+
+  return { versions, lineage: buildLineage(reviewPaths) };
+}
+
+/** framework-outlines: <lang>/tier-N/<slug> */
+async function collectOutlines(manifest) {
+  let count = 0;
 
   for (const language of await directoriesAt(outlineRoot)) {
     const languagePath = path.join(outlineRoot, language);
@@ -131,32 +155,46 @@ async function buildManifest() {
       const tierPath = path.join(languagePath, tier);
 
       for (const framework of await directoriesAt(tierPath)) {
-        const frameworkPath = path.join(tierPath, framework);
-        const versionFiles = await markdownFilesAt(
-          path.join(frameworkPath, 'versions')
-        );
-        const reviewPaths = await walkMarkdown(
-          path.join(frameworkPath, 'reviews')
-        );
+        const record = await readDocumentFolder(path.join(tierPath, framework));
+        if (!record) continue;
 
-        const versions = versionFiles
-          .map((file) => file.replace(/\.md$/, ''))
-          .sort(compareVersions);
-
-        if (!versions.length && !reviewPaths.length) continue;
-
-        manifest[`${language}/${tier}/${framework}`] = {
-          versions,
-          lineage: buildLineage(reviewPaths)
-        };
+        manifest[`${language}/${tier}/${framework}`] = record;
+        count += 1;
       }
     }
   }
 
-  return manifest;
+  return count;
 }
 
-const manifest = await buildManifest();
+/** specifications: <lang>/<slug> */
+async function collectSpecifications(manifest) {
+  let count = 0;
+
+  for (const language of await directoriesAt(specRoot)) {
+    const languagePath = path.join(specRoot, language);
+
+    for (const specification of await directoriesAt(languagePath)) {
+      const record = await readDocumentFolder(path.join(languagePath, specification));
+      if (!record) continue;
+
+      manifest[`${language}/${specification}`] = record;
+      count += 1;
+    }
+  }
+
+  return count;
+}
+
+async function buildManifest() {
+  const manifest = {};
+  const outlines = await collectOutlines(manifest);
+  const specifications = await collectSpecifications(manifest);
+
+  return { manifest, outlines, specifications };
+}
+
+const { manifest, outlines, specifications } = await buildManifest();
 const nextContents = `${JSON.stringify(manifest, null, 2)}\n`;
 
 let previousContents = '';
@@ -170,7 +208,8 @@ if (nextContents !== previousContents) {
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
   await fs.writeFile(outputPath, nextContents, 'utf8');
   console.log(
-    `Generated ${path.relative(projectRoot, outputPath)} (${Object.keys(manifest).length} outlines).`
+    `Generated ${path.relative(projectRoot, outputPath)} ` +
+      `(${outlines} outlines, ${specifications} specifications).`
   );
 } else {
   console.log('Outline history manifest is already up to date.');
