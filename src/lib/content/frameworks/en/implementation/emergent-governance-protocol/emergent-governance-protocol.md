@@ -2,7 +2,7 @@
 title: The Emergent Governance Protocol
 section: emergent-governance-protocol
 version: 1.2
-package: EGP/1.2
+package_id: EGP/1.2
 status: gmeaia-v0.2.1-harmonized-protocol
 date: 2026-08-06
 constitutional_interface: CIS/0.2.1

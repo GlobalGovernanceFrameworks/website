@@ -2,7 +2,7 @@
 title: The Emergent Governance Protocol
 section: egp-one-page-summary
 version: 1.2
-package: EGP/1.2
+package_id: EGP/1.2
 status: gmeaia-v0.2.1-harmonized-quick-start
 date: 2026-08-06
 controlling_interface: GMEAIA/0.2.1
