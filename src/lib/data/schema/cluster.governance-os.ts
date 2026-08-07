@@ -83,11 +83,11 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'constitutional-interface',
       outline: {
         kind: 'specification',
-        version: 'v0.2.1',
+        version: 'v0.2.3',
         updated: '2026-08-05',
         maturity: 'internal',
         standfirst:
-          'Shared rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty — v0.2.1 adds causal responsibility, duties attached to retained jurisdiction, and the distinction between an authority that lawfully refuses, one that lacks capacity, and a genuine constitutional gap with no owner at all.'
+          'Shared rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty — v0.2.3 adds causal responsibility, duties attached to retained jurisdiction, constitutional-gap handling, proportionate process, and a recognition-record purpose firewall preventing care, contribution, and relational data from silently becoming general-purpose governance signals.'
       }
     }
   },

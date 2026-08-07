@@ -213,6 +213,37 @@ export const economicOSEntities: GgfEntity[] = [
       }
     }
   },
+  {
+    id: 'framework_adaptive_tax',
+    type: 'Framework',
+    name: 'Adaptive Tax Framework',
+    shortName: 'Adaptive Tax',
+    description:
+      'Common architecture for revenue and fiscal instruments: authority, legal base, observability, incidence, administration, cross-border coordination, and the conditions under which an instrument should be narrowed or abandoned. Supplies fiscal grammar rather than tax policy, and levies nothing by publication.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Economic',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: [
+      'framework_treaty', // cluster: constitutional-foundation
+      'protocol_constitutional_interface' // cluster: governance-os
+    ],
+    ui: {
+      path: '/frameworks/adaptive-tax',
+      titleKey: 'framework.docs.nav.frameworkTitles.adaptiveTax',
+      emoji: '🧾',
+      slug: 'adaptive-tax',
+      group: 'globalEconomicSystems',
+      outline: {
+        version: 'v0.1.2',
+        updated: '2026-08-07',
+        maturity: 'internal',
+        standfirst:
+          'The framework two Tier 1 economic documents had been citing for two revision cycles without it existing. It answers, for any proposed instrument: who may enact it, what legal fact is the base, who actually bears the burden after behaviour adjusts, and what evidence would justify abandoning it. Phase 0 is the spine — what a jurisdiction can lawfully do on Monday — and it declines to inherit the legacy 5–25% automation tax rather than repackaging a number nobody can observe.'
+      }
+    }
+  },
 
   // === GOVERNANCE COUNCILS ===
   {
@@ -1338,5 +1369,117 @@ export const economicOSRelationships: GgfRelationship[] = [
       'Turns qualitative capture detection into a measurable property by applying trust independence analysis to council composition.',
     strength: 'Medium', // was 'Moderate' — not a valid strength value
     sequenceType: 'Parallel'
+  },
+
+  // --- framework_adaptive_tax -------------------------------------------
+  {
+    from: 'framework_adaptive_tax',
+    to: 'protocol_constitutional_interface', // cluster: governance-os
+    type: 'DEPENDS_ON',
+    description:
+      'v0.1.2 declares CIS/0.2.3 as its controlling constitutional interface, and inherits the recognition-record purpose firewall as its rule against using care and contribution records as fiscal sensors.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'framework_treaty', // cluster: constitutional-foundation
+    type: 'DEPENDS_ON',
+    description:
+      'Article 18 bounds rather than authorizes: §1.5 records that personal wealth taxation is not among the enumerated common-revenue classes, so Treaty-level instruments reach only Phase 3 and only within conferred competence.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'framework_aubi',
+    type: 'FUNDS',
+    description:
+      'May supply revenue financing AUBI. §14.2 forbids the reverse direction: no fiscal rule may condition Layer 1 on tax participation, Love Ledger activity, or compliance scoring.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'mechanism_gcf', // cluster: constitutional-foundation
+    type: 'FUNDS',
+    description:
+      'Named as one lawful revenue destination under §14.1, subject to the ATX-08 handoff record rather than automatic appropriation.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'framework_financial_systems',
+    type: 'COORDINATES_WITH',
+    description:
+      'Financial Systems executes issuance and settlement; Adaptive Tax defines fiscal treatment where a jurisdiction adopts one. §10.7 requires the purpose-appropriate financial record at creation so the tax system never reconstructs an event from care records.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'framework_nested_sovereignty',
+    type: 'COORDINATES_WITH',
+    description:
+      'Nested Economies sets the constitutional conditions for cross-scale coordination; Adaptive Tax supplies the fiscal content of compacts, credits, apportionment and revenue-sharing.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'framework_gaian_trade',
+    type: 'GUIDES',
+    description:
+      'Supplies the fiscal grammar for tariffs, fee reductions and exemptions. §18.12 treats the Symmetrical Imbalance Penalty as a constitutional gap: an inter-state charge on trade position falls outside both Article 18.2 and the 18.3 contribution formula.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'framework_gscl',
+    type: 'GUIDES',
+    description:
+      'Logistics observations may be admissible evidence but create no rate. §18.13 marks the automatic maximum Dark Chain Tariff non-conforming, along with the fixed Leaves and Hearts tax-credit pegs.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'framework_urban_community', // cluster: development
+    type: 'GUIDES',
+    description:
+      'Bioregional Polis keeps its land and anti-speculation objectives; Adaptive Tax supplies fiscal design, incidence, administration and appeal standards for the LVT and vacancy instruments where lawfully adopted.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'framework_hearthstone', // cluster: property-stewardship
+    type: 'COORDINATES_WITH',
+    description:
+      'A tax liability does not trigger stewardship conversion. Where law permits settlement through asset transfer, Hearthstone acts only within its own consent rules.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'framework_work_liberation',
+    type: 'FUNDS',
+    description:
+      'Bridging edge under §20.2: Work in Liberation v2.0 still names Automation Tax and Resource Tax revenues, which v0.1.2 reads as legacy examples of lawfully adopted fiscal revenue rather than a dependency on one rejected design.',
+    strength: 'Weak',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
   }
 ];

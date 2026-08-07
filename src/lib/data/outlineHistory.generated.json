@@ -76,6 +76,18 @@
       ]
     }
   },
+  "en/tier-1/adaptive-tax": {
+    "versions": [
+      "v0.1",
+      "v0.1.1",
+      "v0.1.2"
+    ],
+    "lineage": {
+      "documentCount": 0,
+      "rounds": [],
+      "reviewers": []
+    }
+  },
   "en/tier-1/adaptive-universal-basic-income": {
     "versions": [
       "v0.1",
@@ -2945,7 +2957,9 @@
     "versions": [
       "v0.1",
       "v0.2",
-      "v0.2.1"
+      "v0.2.1",
+      "v0.2.2",
+      "v0.2.3"
     ],
     "lineage": {
       "documentCount": 0,
