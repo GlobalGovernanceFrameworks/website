@@ -766,7 +766,9 @@
       "v0.3",
       "v0.4",
       "v0.5",
-      "v0.6"
+      "v0.6",
+      "v0.6.1",
+      "v0.6.2"
     ],
     "lineage": {
       "documentCount": 5,
@@ -1553,6 +1555,35 @@
         "gemini",
         "deepseek",
         "chatgpt"
+      ]
+    }
+  },
+  "en/tier-2/housing-and-secure-habitation": {
+    "versions": [
+      "v0.1",
+      "v0.1.1",
+      "v0.1.2",
+      "v0.1.3",
+      "v0.1.4",
+      "v0.1.5",
+      "v0.2.1",
+      "v2.0"
+    ],
+    "lineage": {
+      "documentCount": 17,
+      "rounds": [
+        "v0.1",
+        "v0.1.1",
+        "v0.1.2",
+        "v0.1.3",
+        "v0.1.4",
+        "v0.1.5",
+        "v2.0"
+      ],
+      "reviewers": [
+        "gemini",
+        "claude",
+        "deepseek"
       ]
     }
   },

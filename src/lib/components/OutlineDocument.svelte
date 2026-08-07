@@ -592,6 +592,32 @@
     text-align: left;
   }
   .outline-body :global(th) { background: #f9fafb; font-weight: 600; }
+
+  /* Table cells opt out of the `anywhere` wrapping set on .outline-body.
+     `anywhere` feeds into min-content sizing, so the auto table-layout
+     algorithm treats a five-character version label as one character wide
+     and collapses the column. `break-word` breaks the same long words
+     without lying about the minimum. */
+  .outline-body :global(th),
+  .outline-body :global(td) {
+    overflow-wrap: break-word;
+    vertical-align: top;
+  }
+
+  /* Digests, record IDs and version pins are the reason `anywhere` exists.
+     They live in backticks, so let them break there and nowhere else. */
+  .outline-body :global(th code),
+  .outline-body :global(td code) {
+    overflow-wrap: anywhere;
+  }
+
+  /* Label-led first columns: version numbers, HAB/ATX record IDs, term names. */
+  .outline-body :global(th:first-child),
+  .outline-body :global(td:first-child) {
+    width: 1%;
+    min-width: 7ch;
+  }
+
   .outline-body :global(code) {
     background: #f3f4f6;
     padding: 0.1rem 0.3rem;

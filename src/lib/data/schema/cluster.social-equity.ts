@@ -92,6 +92,37 @@ export const socialEquityEntities: GgfEntity[] = [
     }
   },
   {
+    id: 'framework_housing',
+    type: 'Framework',
+    name: 'Housing & Secure Habitation Framework',
+    shortName: 'Secure Habitation',
+    description:
+      'Constitutional architecture for the relationship between people and the places they live, independent of who holds title: habitation interests and their supporting bases, consequential housing decisions, minimum process, and continuity across eviction, insolvency, care and employment changes, displacement, and climate degradation.',
+    tier: 2,
+    status: 'Draft',
+    primaryDomain: 'Social',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: [
+      'protocol_constitutional_interface', // cluster: governance-os
+      'protocol_gmeaia' // cluster: governance-os
+    ],
+    ui: {
+      path: '/frameworks/housing-and-secure-habitation',
+      titleKey: 'framework.docs.nav.frameworkTitles.housingAndSecureHabitation',
+      emoji: '🏠',
+      slug: 'housing-and-secure-habitation',
+      group: 'humanSocialSystems',
+      outline: {
+        version: 'v0.2.1',
+        updated: '2026-08-08',
+        maturity: 'adversarial',
+        standfirst:
+          'Twenty-eight frameworks promise not to destroy someone\'s housing, and until now none defined what was being promised. This governs the relationship between a person and the place they sleep when they do not own it — tenancy, eviction, habitability, homelessness, the renter-side apparatus the corpus had left entirely absent. Title is not habitation, dependency is not priority, and a person may have more than one legitimate home.'
+      }
+    }
+  },
+  {
     id: 'framework_gender',
     type: 'Framework',
     name: 'Kinship Protocol: Gender & Intersectional Justice',
@@ -1077,5 +1108,97 @@ export const socialEquityRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Regular',
     sequenceType: 'Parallel'
+  },
+
+  // --- framework_housing -------------------------------------------------
+  {
+    from: 'framework_housing',
+    to: 'protocol_constitutional_interface', // cluster: governance-os
+    type: 'DEPENDS_ON',
+    description:
+      'Declares CIS/0.2.3 as its constitutional interface. Housing occupancy data is Class C personal information under §10.1, and §11 inherits the §10.4 recognition-record firewall rather than building a parallel rule.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_housing',
+    to: 'protocol_gmeaia', // cluster: governance-os
+    type: 'DEPENDS_ON',
+    description:
+      'Inherits GMEAIA lifecycle states, handoff, capacity, constitutional-gap and closure grammar rather than redefining them. Pinned as verified-current pending canonical re-hash.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_housing',
+    to: 'framework_hearthstone', // cluster: property-stewardship
+    type: 'COORDINATES_WITH',
+    description:
+      'The framework\'s defining boundary: title is not habitation. Hearthstone governs ownership form, stewardship conversion and rematriation; Housing governs whether the people living there keep living there while title moves.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_housing',
+    to: 'framework_urban_community', // cluster: development
+    type: 'COORDINATES_WITH',
+    description:
+      'Bioregional Polis owns land use, density, CLTs and affordable-unit targets; Housing defines resident-facing habitation need, displacement and continuity consequences and acquires no zoning or title power.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_housing',
+    to: 'framework_adaptive_tax',
+    type: 'COORDINATES_WITH',
+    description:
+      'Adaptive Tax §11.4 requires collection not to destroy ordinary housing; Housing supplies what that promise means and receives the continuity handoff. Neither alters the other\'s liability or tenure determinations.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_housing',
+    to: 'protocol_shared_capital',
+    type: 'COORDINATES_WITH',
+    description:
+      'Where a social wealth fund, community fund or pension vehicle holds housing assets, Shared Capital governs the fiduciary mandate and Housing protects the resident interests attached to the dwellings.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_housing',
+    to: 'framework_water_sanitation', // cluster: ecological
+    type: 'COORDINATES_WITH',
+    description:
+      'Essential-service interface behind the prohibition on constructive eviction: withdrawal of water or sanitation is a habitation termination by other means, and habitability standards depend on service continuity.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_housing',
+    to: 'framework_regenerative_journeys', // cluster: development
+    type: 'COORDINATES_WITH',
+    description:
+      'Regenerative Journeys already runs a Housing Protection Fund and an Emergency Tourism Suspension triggerable by housing shortage. Housing governs existing-resident consequences of habitation-status conversion; it licenses neither platforms nor tourism.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'framework_housing',
+    to: 'framework_treaty', // cluster: constitutional-foundation
+    type: 'DEPENDS_ON',
+    description:
+      'Wider constitutional context where adopted. The Treaty confers no housing competence; §0.4 leaves landlord–tenant, succession, insolvency and building law with domestic authority.',
+    strength: 'Weak',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
   }
 ];
