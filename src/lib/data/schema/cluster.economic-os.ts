@@ -244,6 +244,37 @@ export const economicOSEntities: GgfEntity[] = [
       }
     }
   },
+  {
+    id: 'protocol_shared_capital',
+    type: 'Protocol',
+    name: 'Shared Capital and Social Inheritance Protocol',
+    shortName: 'Shared Capital',
+    description:
+      'Governance architecture for plural shared-capital institutions and broadly distributed capital endowments: charters, custody, investment mandates, beneficiary rights, dividends, and closure. Holds capital for beneficiaries without becoming a single public owner, and creates no claim on any asset by itself.',
+    tier: 1,
+    status: 'Draft',
+    primaryDomain: 'Economic',
+    geographicScope: 'Global',
+    implementationPriority: 'Medium',
+    dependencies: [
+      'framework_adaptive_tax',
+      'protocol_constitutional_interface' // cluster: governance-os
+    ],
+    ui: {
+      path: '/frameworks/shared-capital-and-social-inheritance',
+      titleKey: 'framework.docs.nav.frameworkTitles.sharedCapitalAndSocialInheritance',
+      emoji: '🏦',
+      slug: 'shared-capital-and-social-inheritance',
+      group: 'globalEconomicSystems',
+      outline: {
+        version: 'v0.1.2',
+        updated: '2026-08-07',
+        maturity: 'internal',
+        standfirst:
+          'A society can put a floor under everyone and still leave productive capital in very few hands. This governs who holds capital on behalf of people who have none — social wealth funds, community and worker funds, citizen-capital accounts — and how those claims spread without one institution becoming the universal owner. Its sharpest rule is that shared upside requires shared accounting of downside: a celebrated public investment does not erase the portfolio that paid for it.'
+      }
+    }
+  },
 
   // === GOVERNANCE COUNCILS ===
   {
@@ -1481,5 +1512,147 @@ export const economicOSRelationships: GgfRelationship[] = [
     strength: 'Weak',
     frequency: 'As-Needed',
     sequenceType: 'Conditional'
+  },
+
+  // --- protocol_shared_capital ------------------------------------------
+  {
+    from: 'protocol_shared_capital',
+    to: 'protocol_constitutional_interface', // cluster: governance-os
+    type: 'DEPENDS_ON',
+    description:
+      'Declares CIS/0.2.3 as its constitutional interface, and inherits the recognition-record firewall as its rule against using care and contribution records as capital-allocation signals.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_adaptive_tax',
+    to: 'protocol_shared_capital',
+    type: 'FUNDS',
+    description:
+      'Adaptive Tax §14.3 governs the fiscal transfer into a shared-capital institution and stops there: it does not reach the fund\'s investment mandate, voting rights, beneficiary governance, or distribution policy.',
+    strength: 'Strong',
+    frequency: 'Regular',
+    sequenceType: 'Sequential'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_aubi',
+    type: 'COORDINATES_WITH',
+    description:
+      'Boundary rather than flow: §3.7 and §11.10 forbid capital claims substituting for or conditioning Layer 1. A capital endowment widens ownership; it does not discharge the material floor.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'mechanism_gcf', // cluster: constitutional-foundation
+    type: 'COORDINATES_WITH',
+    description:
+      'The GCF is one lawful capitalization source and one possible commons-dividend route under Treaty Art. 18.6. §7.4 records that GCF capitalization is never automatic and requires the Fund\'s own funding authority.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_financial_systems',
+    type: 'COORDINATES_WITH',
+    description:
+      'Financial Systems supplies settlement, custody machinery and liquidity; this Protocol supplies the fiduciary purpose that machinery serves and the beneficiary claims it must not impair.',
+    strength: 'Medium',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_nested_sovereignty',
+    type: 'DEPENDS_ON',
+    description:
+      'Cross-scale compacts, protected non-convertibility and material exit bound how a fund at one scale may hold assets or beneficiaries at another.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_work_liberation',
+    type: 'COORDINATES_WITH',
+    description:
+      'Worker and member capital funds sit inside Work in Liberation\'s labour governance. §4.4 separates the pooled pension institution from the accrued individual claim, which stays under pension and labour law.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_hearthstone', // cluster: property-stewardship
+    type: 'COORDINATES_WITH',
+    description:
+      'Runs both directions. This Protocol may capitalize a Hearthstone transition but cannot compel one; where a fund or endowment is itself the object of transition, Hearthstone owns the conveyance and this Protocol owns beneficiary, custody and continuity consequences.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_pathfinder_protocol', // cluster: pathfinder-protocol
+    type: 'COORDINATES_WITH',
+    description:
+      'Pathfinder holds the enterprise-level instruments — ESOPs, profit sharing, Community Investment Trusts, steward ownership; this Protocol holds the custody and beneficiary architecture once those claims are pooled.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_urban_community', // cluster: development
+    type: 'COORDINATES_WITH',
+    description:
+      'Bioregional Polis keeps Community Land Trusts and local purchase funds; this Protocol supplies charter, fiduciary and closure architecture where those become pooled investment institutions.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_sundown_protocol', // cluster: just-transition
+    type: 'GUIDES',
+    description:
+      '§8.8 and §26.8: a Sundown compliance indicator or escalation level does not amend a fund mandate. Divestment is valid only through the fund\'s own constituting instrument, a lawful amendment, binding law, or a voluntary compact.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_aegis_protocol', // cluster: just-transition
+    type: 'COORDINATES_WITH',
+    description:
+      'Aegis §15 rejects a single global trust and requires separately constituted transition-finance facilities — a conformance precedent. Its pension-backed vehicles are an investment interface, not authority over accrued beneficiary claims.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'protocol_shared_capital',
+    to: 'framework_water_sanitation', // cluster: ecological
+    type: 'COORDINATES_WITH',
+    description:
+      'The Community Water Trust Fund stays under Water\'s domain ownership. Its WAT-16 charter — custodian, segregation, procurement, beneficial ownership, insolvency, dissolution — is the conformance precedent §6 measures against.',
+    strength: 'Weak',
+    frequency: 'Occasional',
+    sequenceType: 'Parallel'
+  },
+  {
+    from: 'framework_indigenous', // cluster: ethical-os
+    to: 'protocol_shared_capital',
+    type: 'GUIDES',
+    description:
+      '§14.1 refuses a universal Indigenous fund and §3.8 blocks treating Indigenous or community property as presumptively public capital. An Indigenous nation\'s own capital institution is governed by its law, not this Protocol.',
+    strength: 'Strong',
+    frequency: 'Continuous',
+    sequenceType: 'Parallel'
   }
 ];

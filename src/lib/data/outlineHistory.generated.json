@@ -83,9 +83,13 @@
       "v0.1.2"
     ],
     "lineage": {
-      "documentCount": 0,
-      "rounds": [],
-      "reviewers": []
+      "documentCount": 1,
+      "rounds": [
+        "v0.1.1"
+      ],
+      "reviewers": [
+        "claude"
+      ]
     }
   },
   "en/tier-1/adaptive-universal-basic-income": {
@@ -776,6 +780,23 @@
         "gemini",
         "deepseek",
         "grok"
+      ]
+    }
+  },
+  "en/tier-1/shared-capital-and-social-inheritance": {
+    "versions": [
+      "v0.1",
+      "v0.1.1",
+      "v0.1.2"
+    ],
+    "lineage": {
+      "documentCount": 2,
+      "rounds": [
+        "v0.1",
+        "v0.1.1"
+      ],
+      "reviewers": [
+        "claude"
       ]
     }
   },

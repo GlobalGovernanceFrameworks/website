@@ -247,15 +247,18 @@
     return $page.url.pathname === base + path;
   }
 
-  // Helper function to determine framework link styling and content
+  // Frameworks given a persistent marker in the menu. Slugs must match the
+  // schema — a renamed slug fails silently as a missing highlight.
+  const GUIDING_FRAMEWORKS = new Set([
+    'meta-governance',
+    'global-citizenship-practice',
+    'indigenous-sovereignty-pathways'
+  ]);
+
   function getFrameworkDisplay(framework) {
-    const isHighlighted = framework.slug === 'meta-governance' ||
-                         framework.slug === 'global-citizenship-practice' ||
-                         framework.slug === 'indigenous-governance-and-traditional-knowledge';
-    
+    const isHighlighted = GUIDING_FRAMEWORKS.has(framework.slug);
     const isPrimal = framework.slug === 'treaty-for-our-only-home';
-    
-    const showEmoji = !isPrimal && !isHighlighted;
+    const showEmoji = true;
     
     return {
       isHighlighted,
@@ -875,26 +878,33 @@
     border-left: 3px solid #1d4ed8 !important;
   }
 
-  /* Highlighted frameworks (Guiding Trio) */
+  /* Guiding frameworks. Marked, not located — must stay visually distinct
+     from a.active, which means the location of the reader. */
   .dropdown-menu a.highlighted,
   .tier-submenu .dropdown-menu-level3 a.highlighted,
   .tier-submenu .dropdown-menu-level3-scrollable a.highlighted {
-    background-color: #fffbeb !important;
-    font-weight: 700 !important;
-    color: #92400e !important;
-    border-left-color: #92400e !important;
-  }
-
-  /* Meta-governance special styling */
-  .dropdown-menu a.meta-governance {
-    color: #DAA520;
+    position: relative;
     font-weight: 700;
-    background-color: #fffbeb;
-    border-left-color: #DAA520;
+    padding-right: 2rem !important;
   }
 
-  .dropdown-menu a.meta-governance:hover {
-    background-color: #fef3c7;
+  .dropdown-menu a.highlighted::after,
+  .tier-submenu .dropdown-menu-level3 a.highlighted::after,
+  .tier-submenu .dropdown-menu-level3-scrollable a.highlighted::after {
+    content: '⭐';
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+  }
+
+  /* Active wins over highlighted where both apply. */
+  .dropdown-menu a.highlighted.active,
+  .tier-submenu .dropdown-menu-level3 a.highlighted.active,
+  .tier-submenu .dropdown-menu-level3-scrollable a.highlighted.active {
+    color: #DAA520;
+    border-left-color: #DAA520;
   }
 
   /* --------------------------------------------------------------------------
@@ -1078,10 +1088,10 @@
 
     /* Mobile special framework styling */
     .mobile-framework-link.highlighted {
-      background-color: #fffbeb !important;
-      font-weight: 700 !important;
-      color: #92400e !important;
-      border-left-color: #92400e !important;
+      background-color: #fffbeb;
+      font-weight: 700;
+      color: #92400e;
+      border-left-color: #92400e;
     }
 
     .mobile-framework-link.highlighted::after {

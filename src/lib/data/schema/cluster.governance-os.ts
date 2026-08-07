@@ -79,6 +79,7 @@ export const governanceOSEntities: GgfEntity[] = [
     ],
     ui: {
       path: '/specifications/constitutional-interface',
+      titleKey: 'framework.docs.nav.frameworkTitles.constitutionalInterface',
       emoji: '⚖️',
       slug: 'constitutional-interface',
       outline: {
@@ -108,6 +109,7 @@ export const governanceOSEntities: GgfEntity[] = [
     ],
     ui: {
       path: '/specifications/gmeaia',
+      titleKey: 'framework.docs.nav.frameworkTitles.gmeaia',
       emoji: '🔁',
       slug: 'gmeaia',
       outline: {
