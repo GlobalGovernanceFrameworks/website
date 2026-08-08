@@ -140,9 +140,13 @@ export const ethicalOSEntities: GgfEntity[] = [
     primaryDomain: 'Governance',
     geographicScope: 'Global',
     implementationPriority: 'Medium',
-    dependencies: ['framework_mos', 'framework_indigenous']
+    dependencies: ['framework_mos', 'framework_indigenous'],
     // No ui block. Unpublished pending resolution of the overlap with the MOS
     // Rights–Guardianship Spectrum and the Oracle Protocol.
+    publicationDeferred: {
+      reason: 'Overlap with the MOS Rights–Guardianship Spectrum and the Oracle Protocol unresolved.',
+      blockedBy: ['framework_mos', 'framework_oracle_protocol']
+    }
   },
 
   // === MORAL OPERATING SYSTEM ===

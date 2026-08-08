@@ -151,6 +151,8 @@ export interface GgfEntity {
   implementationPriority?: 'Critical' | 'High' | 'Medium' | 'Low';
   dependencies?: string[]; // Array of entity IDs this depends on
   enables?: string[]; // Array of entity IDs this enables
+  /** Deliberately unpublished. Present = suppresses the "no UI metadata" warning. */
+  publicationDeferred?: { reason: string; blockedBy?: string[] };
   
   // === UI METADATA FOR NAVIGATION GENERATION ===
   ui?: {

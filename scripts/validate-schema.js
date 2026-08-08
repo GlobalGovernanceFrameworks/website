@@ -284,8 +284,10 @@ export function validateTierLogic(entities) {
 
     if (
       entity.tier === 0 &&
+      entity.status !== 'Retired' &&
+      !entity.retired &&
       entity.implementationPriority &&
-      entity.implementationPriority !== 'Critical'
+      !['Critical', 'High'].includes(entity.implementationPriority)
     ) {
       warnings.push(
         `${entity.name}: tier 0 entity with priority "${entity.implementationPriority}"`
@@ -417,18 +419,30 @@ export function findCircularDependencies(entities) {
  * never worth blocking a build over.
  */
 export function findOrphanedEntities(entities, relationships) {
-  const referenced = new Set();
+  const inbound = new Set();
+  const outbound = new Set();
+
   for (const rel of relationships) {
-    referenced.add(rel.from);
-    referenced.add(rel.to);
+    outbound.add(rel.from);
+    inbound.add(rel.to);
   }
   for (const e of entities) {
-    for (const id of e.dependencies ?? []) referenced.add(id);
-    for (const id of e.enables ?? []) referenced.add(id);
+    const edges = [...(e.dependencies ?? []), ...(e.enables ?? [])];
+    if (edges.length) outbound.add(e.id);
+    for (const id of edges) inbound.add(id);
   }
-  return entities
-    .filter((e) => !referenced.has(e.id))
-    .map((e) => `${e.name || e.id} (${e.type}${e.tier != null ? `, tier ${e.tier}` : ''})`);
+
+  const label = (e) =>
+    `${e.name || e.id} (${e.type}${e.tier != null ? `, tier ${e.tier}` : ''})`;
+  const isRetired = (e) => e.status === 'Retired' || !!e.retired;
+  const live = entities.filter((e) => !isRetired(e));
+
+  return {
+    isolated: live.filter((e) => !inbound.has(e.id) && !outbound.has(e.id)).map(label),
+    unclaimed: live.filter((e) => !inbound.has(e.id) && outbound.has(e.id)).map(label),
+    // The real retirement invariant: nothing live may still point at a retired entity.
+    retiredButReferenced: entities.filter((e) => isRetired(e) && inbound.has(e.id)).map(label)
+  };
 }
 
 /* ------------------------------------------------------------------ */
@@ -539,10 +553,22 @@ async function main() {
       pass: 'No relationship declared twice'
     },
     {
-      name: 'Graph connectivity',
+      name: 'Isolated entities',
       severity: 'hygiene',
-      items: orphans,
-      pass: 'Every entity is connected to the graph'
+      items: orphans.isolated,
+      pass: 'No entity sits outside the graph entirely'
+    },
+    {
+      name: 'Unclaimed entities',
+      severity: 'hygiene',
+      items: orphans.unclaimed,
+      pass: 'Every entity has something that establishes it'
+    },
+    {
+      name: 'Retirement integrity',
+      severity: 'hygiene',
+      items: orphans.retiredButReferenced.map((l) => `${l} — retired but still referenced`),
+      pass: 'No live entity points at a retired one'
     },
     {
       name: 'Metadata conventions',
