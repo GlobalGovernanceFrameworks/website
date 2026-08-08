@@ -266,7 +266,7 @@ export const developmentEntities: GgfEntity[] = [
       group: 'humanSocialSystems',
       outline: {
         version: 'v1.1.1',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Tourism as sacred exchange rather than extraction, with host sovereignty as the first principle — the community sets carrying capacity and can close the door. Version 1.1 commits to net healing and reparations rather than harm minimization, which is what separates it from eco-tourism. It also includes exit protocols, because a tourism framework that cannot describe how a place stops being a destination is not serious about host sovereignty.'

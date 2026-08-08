@@ -249,11 +249,11 @@ export const humanFlourishingEntities: GgfEntity[] = [
       emoji: '🔬',
       slug: 'discovery-commons',
       outline: {
-        version: 'v1.1',
-        updated: '2026-08-03',
+        version: 'v1.1.1',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
-          'Science governed as a public good rather than as a competitive market for prestige: open by default, directed by publicly-set priorities, and decolonized in structure rather than in language. Version 1.1 adds capture-resistance mechanisms and crisis responsiveness, on the understanding that a research commons is exactly the kind of institution that gets captured.'
+          'Science governed as a public good rather than as a competitive market for prestige: open by default, directed by publicly-set priorities, and decolonized in structure rather than in language. Version 1.1.1 stops scoring epistemic diversity and starts sampling the researchers who never applied, on the understanding that a commons measuring only the variety it can already see will keep exactly that variety.'
       },
       group: 'humanSocialSystems'
     }
@@ -279,7 +279,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
       group: 'humanSocialSystems',
       outline: {
         version: 'v2.2.2',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Collective care and restorative accountability in place of punishment, with survivor sovereignty as the organizing constraint — the person harmed decides what repair means, including deciding that it means nothing. Version 2.2.1 bounds community safety constitutionally: sortition-selected local councils, an unarmed response unit activated only by them, and an ombudsperson for when the system fails the people it was built for.'

@@ -34,7 +34,7 @@ export const pathfinderProtocolEntities: GgfEntity[] = [
  
       outline: {
         version: 'v0.9.1',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'A voluntary route for a company that wants to stop being extractive and does not know how — six modules covering governance, operations, finance, culture and advocacy, with three-tier certification so that progress is legible before it is complete. The framework leads with a $4.5 trillion opportunity figure, which is either the honest pitch to the audience it needs or a hostage to fortune depending on where the number came from. Its own annual review weights community, ecological and Indigenous votes at 70% against enterprises\' 30%.'

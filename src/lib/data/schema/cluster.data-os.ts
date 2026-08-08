@@ -39,7 +39,7 @@ export const dataOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v1.3.2',
-        updated: '2026-08-01',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Data governance built on the premise that nobody should end up in charge of all of it. Custodians carry enforceable duties, individuals and communities get real agency over collection, inference, transfer and model training, and interoperability is designed to widen exit rather than concentrate custody. Indigenous data sovereignty is treated as a distinct legal relationship, not as stakeholder consultation with extra steps. Not yet a binding agreement, and explicit that it awaits Indigenous-led, legal, technical, public and labour review.'

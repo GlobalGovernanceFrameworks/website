@@ -160,7 +160,7 @@ export const justiceOSEntities: GgfEntity[] = [
       group: 'socialFabricJustice',
       outline: {
         version: 'v1.4.1',
-        updated: '2026-08-01',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'A map of how justice can work when several legal orders — domestic, Indigenous, treaty-based — cover the same ground and none of them can be declared the real one. Version 1.4 organizes around seven modalities rather than institutions, and opens with a clause listing what it does not do: no offences, no jurisdiction, no court, no prosecutor, no detention power, and no conversion of an ethical framework into law.'
@@ -225,7 +225,7 @@ export const justiceOSEntities: GgfEntity[] = [
       group: 'socialFabricJustice',
       outline: {
         version: 'v2.0.1',
-        updated: '2026-08-01',
+        updated: '2026-08-02',
         maturity: 'adversarial',
         standfirst:
           'Cooperation machinery for crime that crosses borders — trafficking, kleptocracy, laundering, ransomware, arms — built on mutual legal assistance rather than a new enforcement power. Version 2.0.1 narrows the scope to conduct already criminalized under applicable law, and carries a non-authority clause: a framework that can name an offence but not create one is much harder to turn into a pretext.'

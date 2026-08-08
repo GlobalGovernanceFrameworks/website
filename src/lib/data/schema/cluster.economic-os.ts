@@ -57,7 +57,7 @@ export const economicOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v2.5.2',
-        updated: '2026-08-01',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'A dual-wallet basic income: fiat for survival, plus Hearts and Leaves that recognise care work and ecological stewardship without turning either into a wage. Version 2.5.2 hardens both observability and authority — separating LMCI registers from operational telemetry, adding Observation Contracts and State Estimate Records, protecting epistemic rights over measurement, replacing universal identity with purpose-limited access attestations, and treating Social Resilience Council composition as a constitutional design question rather than a self-executing quota. The design assumption throughout is that a system which can see, classify, or represent you can also mismeasure, misidentify, or overclaim authority over you.'
@@ -92,10 +92,10 @@ export const economicOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v3.4.1',
-        updated: '2026-08-01',
+        updated: '2026-08-08',
         maturity: 'adversarial',
-        standfirst:
-          'The plumbing under the regenerative economy: how Hearts are issued and redeemed, what the Treasury holds in reserve, what happens when liquidity fails, and who may challenge the models that decide any of it. Version 3.4 reconstructs the framework after a substantial truncation was found in v3.3, and settles the reserve architecture at a 50% normal target with a 30% hard issuance floor. Automatic controls are framed as temporary containment, not diagnosis.'
+      standfirst:
+          'The plumbing under the regenerative economy: how Hearts are issued and redeemed, what the Treasury holds in reserve, what happens when liquidity fails, and who may challenge the models that decide any of it. Reconstructed after a substantial truncation was found in v3.3, with the reserve architecture settled at a 50% normal target and a 30% hard issuance floor. Version 3.4.1 adds the insurance boundary: the framework routes financial consequences but constitutes no underwriting, claims, or guarantee authority of its own. Automatic controls are framed as temporary containment, not diagnosis.'
       }
     }
   },
@@ -121,10 +121,10 @@ export const economicOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v2.0.1',
-        updated: '2026-08-01',
+        updated: '2026-08-08',
         maturity: 'adversarial',
-        standfirst:
-          'What work looks like when nobody has to do it to eat. Six participation modes, a fifteen-hour weekly ceiling meant as protection rather than target, hidden-labour accounting, and rights to refuse, pause, exit and return. Version 2.0 removed the automatic blacklist sanctions and stopped treating the Love Ledger as a default work-history signal — a contribution record should not quietly become a credit score.'
+      standfirst:
+          'How work gets organized once material survival no longer depends on it: voluntary contribution, worker-governed Community Providers, a 15-hour protective ceiling, and an unconditional right not to contribute at all. Version 2.0 retired the composite LMCI score and removed the Love Ledger as a default work-history signal, on the principle that no single number should stand as proof of a liberated life. Version 2.0.1 draws the boundary with ordinary employment law, which stays where it is.'
       }
     }
   },
@@ -178,7 +178,7 @@ export const economicOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v0.9.1',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Trade treated as relationship rather than transaction, governed across three time horizons — a fast loop for tariffs and routing, a medium loop for industrial transition, and a deep-time loop with binding veto over decisions with geological consequences. Radical material transparency is the default, but communities may invoke a Right to Opacity: traceability should not become a tool for making Indigenous knowledge legible to whoever wants it.'
@@ -237,7 +237,7 @@ export const economicOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v0.1.3',
-        updated: '2026-08-07',
+        updated: '2026-08-08',
         maturity: 'internal',
         standfirst:
           'The framework two Tier 1 economic documents had been citing for two revision cycles without it existing. It answers, for any proposed instrument: who may enact it, what legal fact is the base, who actually bears the burden after behaviour adjusts, and what evidence would justify abandoning it. Phase 0 is the spine — what a jurisdiction can lawfully do on Monday — and it declines to inherit the legacy 5–25% automation tax rather than repackaging a number nobody can observe.'
@@ -268,7 +268,7 @@ export const economicOSEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v0.1.3',
-        updated: '2026-08-07',
+        updated: '2026-08-08',
         maturity: 'internal',
         standfirst:
           'A society can put a floor under everyone and still leave productive capital in very few hands. This governs who holds capital on behalf of people who have none — social wealth funds, community and worker funds, citizen-capital accounts — and how those claims spread without one institution becoming the universal owner. Its sharpest rule is that shared upside requires shared accounting of downside: a celebrated public investment does not erase the portfolio that paid for it.'

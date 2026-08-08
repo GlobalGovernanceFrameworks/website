@@ -49,7 +49,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       emoji: '🏛️',
       slug: 'cultural-heritage-preservation',
       outline: {
-        version: 'v3.0',
+        version: 'v2.2',
         // the file's own revision date — see the VERSION MISMATCH note above
         updated: '2025-08-27',
         maturity: 'adversarial',
@@ -79,7 +79,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       slug: 'digital-commons',
       outline: {
         version: 'v3.0.1',
-        updated: '2026-04-04',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'The distinction this framework is built on: data is a category with rights attached, knowledge is what a community does with it. Version 3.0 gave away most of its old territory — mesh networks, cybersecurity hardening, AI strategy and resilience infrastructure all moved to the Conduit Protocol and Aurora, dropping it from Tier 1 to Tier 3. What remains is knowledge versioning, epistemic governance, and governed forgetting: the unfashionable proposition that a commons which cannot retire anything eventually cannot be read.'
@@ -119,7 +119,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       slug: 'religious-and-spiritual-dialogue-governance',
       outline: {
         version: 'v1.8.1',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Version 1.8 abandons the assumption that an interfaith body should produce agreement. Consensus on questions of meaning fails two ways — dissent gets smoothed into unusable blandness, or any participant can veto and the institution seizes. So the council maps instead: high-fidelity surveys of the moral terrain, handed to whoever has to build on it. Its own analogy is a geological survey, which does not decide where the bridge goes.'

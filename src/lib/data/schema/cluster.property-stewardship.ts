@@ -56,10 +56,10 @@ export const hearthstoneEntities: GgfEntity[] = [
       group: 'globalEconomicSystems',
       outline: {
         version: 'v2.0.3',
-        updated: '2026-08-01',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
-          'A route out of extractive ownership that depends entirely on the owner agreeing to take it — and a long list of the things it therefore cannot do. Version 2.0.1 states the distinctions as a litany: voluntary conversion is not rematriation, rematriation is not confiscation, rights recognition is not title, sacredness is not conveyance, stewardship is not ownership, urgency is not receivership, and a registry is not law. Affected Indigenous nations determine their own representation, consent and preferred remedy; the protocol does not designate sacredness on anyone\'s behalf.'
+          'A route out of extractive ownership that depends entirely on the owner agreeing to take it — and a long list of the things it therefore cannot do. The distinctions read as a litany: voluntary conversion is not rematriation, rematriation is not confiscation, rights recognition is not title, sacredness is not conveyance, stewardship is not ownership, urgency is not receivership, and a registry is not law. Version 2.0.2 adds that a transition owns the worker and livelihood consequences of an asset transfer without becoming employment law; version 2.0.3 that identifying a claimant does not make the registry a universal person graph. Affected Indigenous nations determine their own representation, consent and preferred remedy; the protocol does not designate sacredness on anyone\'s behalf.'
       }
     }
   },

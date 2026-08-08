@@ -30,7 +30,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
       slug: 'planetary-immune-system',
       outline: {
         version: 'v2.2.2',
-        updated: '2026-08-03',
+        updated: '2026-08-01',
         maturity: 'adversarial',
         standfirst:
           'Catastrophic-risk foresight, readiness and coordinated response — built, in its own words, to help competent authorities prepare “without creating a residual global sovereign.” Version 2.2.2 lists what it is not: a treaty, an emergency statute, an emergency declaration, a licence, a deployment order, or a source of police, military, health, cyber, fiscal or judicial jurisdiction. It becomes operative only through some other instrument that was already valid. Existential risk is exactly where a permanent override would be easiest to justify, which is why it is refused here.'
@@ -112,7 +112,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
       slug: 'deep-time-governance',
       outline: {
         version: 'v0.6.1',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Time and measurement treated as governance decisions rather than neutral constants: what a civilization counts, and on whose calendar, encodes what it values. The framework aims at temporal pluralism — linear UTC, cyclical, seasonal and ceremonial time held as interoperable rather than ranked — and at metrology governed as a global public good rather than inherited from whoever set the standards first. The shared clock and the universal ruler, with the colonial assumptions taken out.'
@@ -179,7 +179,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
       emoji: '🔮',
       slug: 'oracle-protocol',
       outline: {
-        version: 'v1.1',
+        version: 'v1.1.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:

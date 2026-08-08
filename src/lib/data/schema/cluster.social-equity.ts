@@ -84,10 +84,10 @@ export const socialEquityEntities: GgfEntity[] = [
       group: 'humanSocialSystems',
       outline: {
         version: 'v3.0.1',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
-          'Access designed in from the start rather than retrofitted after complaint, with disabled-led Care Coops as compensated institutions rather than voluntary support groups. Version 3.0 adds layered economics — the recognition that disability produces both reduced income and increased costs, and that a flat benefit addresses neither well. Disability Impact Assessments apply to every GGF policy, not to the ones someone remembers to check.'
+          'Access designed in from the start rather than retrofitted after complaint, with disabled-led Care Coops as compensated institutions rather than voluntary support groups. Version 3.0 adds layered economics — the recognition that disability produces both reduced income and increased costs, and that a flat benefit addresses neither well. Version 3.0.1 retires the fixed composition quotas: representation requirements are stated, but a seat becomes binding through the receiving body\'s own constituting instrument, not by declaration here. Disability Impact Assessments still apply to every GGF policy, not to the ones someone remembers to check.'
       }
     }
   },
@@ -142,7 +142,7 @@ export const socialEquityEntities: GgfEntity[] = [
       slug: 'kinship-protocol',
       outline: {
         version: 'v2.3.2',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'A justice framework built to make itself unnecessary. Identity-specific protections are real and load-bearing now, but every quota and category carries a decadal sunset review, and the Category Dependency Ratio tracks how much support still flows through identity-targeted rather than function-targeted mechanisms. The intended direction is toward the second. Most equity frameworks entrench the categories they defend; this one schedules its own examination.'
@@ -169,7 +169,7 @@ export const socialEquityEntities: GgfEntity[] = [
       slug: 'horizon-protocol',
       outline: {
         version: 'v3.0.1',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Not protection or consultation but institutional power: youth holding binding seats and voting on decisions whose consequences they will actually live through. Version 3.0 adds Shadow Governance for the interval before any of that exists — audits, public scorecards and accountability forums that build a constituency and train a cohort while the formal structures are still hypothetical. Reciprocal Mentorship Pods run in both directions.'
@@ -196,7 +196,7 @@ export const socialEquityEntities: GgfEntity[] = [
       slug: 'legacy-protocol',
       outline: {
         version: 'v2.1.1',
-        updated: '2026-08-03',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Ageing framed as accumulating standing rather than losing it: elder-led rather than elder-serving, with the Council of Elders holding advisory weight on long-horizon questions where having watched something fail before is the relevant qualification. Care Coops and the Love Ledger make the care work around ageing visible and compensated, which is where most elder-justice policy quietly fails.'
@@ -227,7 +227,7 @@ export const socialEquityEntities: GgfEntity[] = [
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:
-          'Mobility, displacement, asylum, reception, return and host-community coordination held in one frame, because separating them is how people fall through. Climate Resilience Visas trigger on IPCC thresholds rather than on a discretionary humanitarian judgment made after the fact. Version 1.1.1 is a controlled successor conformed to the cluster record profile — the mechanics of who owes what to whom, written before the crisis rather than during it.'
+          'Mobility, displacement, asylum, reception, return and host-community coordination held in one frame, because separating them is how people fall through. Version 1.1 declined to treat the source\'s automatic visas, protected zones and universal credentials as already-constituted powers, and separated service access, civil identity, protection status, residence authorization and border admission into distinct decisions. Version 1.1.2 adds that identifying the same person across those decisions is purpose-limited and non-transitive: dignity does not depend on documentation, and a service credential is not a legal identity.'
       }
     }
   },

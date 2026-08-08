@@ -60,7 +60,7 @@ export const justTransitionEntities: GgfEntity[] = [
       group: 'socialFabricJustice',
       outline: {
         version: 'v1.3.5',
-        updated: '2026-08-02',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Converting military capability to civilian use, and saying sixty-four separate times what it cannot do while doing so. Version 1.3.5 covers voluntary expenditure redirection, conversion of defence facilities and research programmes, transition of personnel and defence-dependent regions, purpose-limited dual-use custody, and lawful declassification. It provides interfaces, not commands: nothing here authorizes a deployment, a seizure, or a change to anyone’s security posture.'
@@ -155,8 +155,8 @@ export const justTransitionEntities: GgfEntity[] = [
       emoji: '🌇',
       slug: 'sundown-protocol',
       outline: {
-        version: 'v2.1.1',
-        updated: '2026-08-03',
+        version: 'v2.2',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
           'Retiring an industry without abandoning the people inside it: binding sunset timelines paired with a Legacy Transition Fund, worker protections written as a covenant rather than a promise, and a Legacy Council that treats industrial heritage as something to preserve rather than erase. Indigenous Monitoring Teams can halt remediation on traditional lands where consent has been breached — the enforcement teeth sit with the communities affected rather than with the transition authority.'

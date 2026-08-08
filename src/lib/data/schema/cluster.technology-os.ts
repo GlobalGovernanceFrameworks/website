@@ -81,10 +81,10 @@ export const technologyOSEntities: GgfEntity[] = [
       group: 'humanSocialSystems',
       outline: {
         version: 'v1.2.3',
-        updated: '2026-08-02',
+        updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
-          'Synthetic biology governed as four inseparable problems: keeping dangerous work contained, protecting genetic rights, widening who gets access to the benefits, and being ready when something escapes anyway. Version 1.2.2 is a conformance patch and is explicit about its review status — it is a draft awaiting expert, community, Indigenous-nation, scientific, labour, disability-rights, reproductive-rights and legal review, none of which has happened yet.'
+          'Synthetic biology governed as four inseparable problems: keeping dangerous work contained, protecting genetic rights, widening who gets access to the benefits, and being ready when something escapes anyway. Version 1.2.3 clarifies that where biological-risk financial assurance is required, the instrument has to name its competent owner — the Accord can require that a bond or restoration trust exist, but it is not itself the insurer, guarantor, or backstop. The review status is unchanged and stated plainly: this remains a draft awaiting expert, community, Indigenous-nation, scientific, labour, disability-rights, reproductive-rights and legal review, none of which has happened yet.'
       }
     }
   },
