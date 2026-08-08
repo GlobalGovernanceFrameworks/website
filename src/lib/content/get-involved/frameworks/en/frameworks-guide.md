@@ -34,7 +34,9 @@ Adversarial testing is expected before anything is considered solid. Ask specifi
 
 ### Structure and metadata
 
-Content lives in `src/lib/content/frameworks/[locale]/`, split into a file per major section with front-matter.
+Framework text lives in `src/lib/content/framework-outlines/` as a single canonical document per framework. The [Framework Document Standard](/src/lib/content/get-involved/frameworks/en/framework-document-standard.md) specifies what that document must contain — front matter, version history, scope conditions, entity IDs — and what is left to your judgement. Read it before drafting; it also carries a design review checklist worth running against an outline before you commit to it.
+
+You may also encounter `src/lib/content/frameworks/`, which holds earlier per-section drafts. Most are superseded. Don't start new work there.
 
 Every framework also needs an entity in `src/lib/schema/_index.ts`. The schema is authoritative: titles, tier, related frameworks, publication state, and navigation all derive from it. A framework without a schema entity won't appear in navigation, and metadata maintained anywhere else will drift.
 

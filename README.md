@@ -30,7 +30,7 @@ Exploring these documents is the best way to find ideas that might be useful for
 
 ## Technologies
 
-- **Frontend**: SvelteKit, Tailwind CSS
+- **Frontend**: SvelteKit
 - **Internationalization**: Custom i18n implementation
 - **Form Handling**: Formspree
 - **Deployment**: GitHub pages for now. [TBD]
@@ -69,49 +69,20 @@ To add or modify translations:
 2. Update or add new translation keys
 3. Ensure all languages have the same translation keys
 
-### Tailwind CSS Setup
-
-If you encounter issues with Tailwind CSS, follow these steps to fix:
-
-```bash
-# Uninstall current Tailwind packages
-npm uninstall tailwindcss postcss autoprefixer @tailwindcss/typography @tailwindcss/forms
-
-# Install fresh versions
-npm install -D tailwindcss postcss autoprefixer @tailwindcss/typography @tailwindcss/forms
-
-# Initialize Tailwind with the proper configuration
-npx tailwindcss init -p
-```
-
-Then update the `tailwind.config.js` file:
-
-```javascript
-module.exports = {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
-  theme: {
-    extend: {},
-  },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-  ],
-}
-```
-
 ## Project Structure
 
 The repository is organized into several key directories. Here is a high-level overview:
 
 - **/src/**: The main SvelteKit application source code.
   - **/src/routes/**: Defines all pages and URL structures for the website. This is where you'll find the Svelte files for each page.
-  - **/src/lib/content/**: Contains the core Markdown content for all the frameworks. This is the primary location for editing framework text.
+- **/src/lib/content/framework-outlines/**: The canonical framework documents. Each framework has one file carrying its full text, version history, and metadata. **This is where framework text is edited.** Required structure is specified in the [Framework Document Standard](/src/lib/content/get-involved/frameworks/en/framework-document-standard.md).
+  - **/src/lib/content/frameworks/**: Earlier per-section drafts, largely superseded by the outlines above and retained for reference. Not maintained; do not start new work here.
+  - **/src/lib/content/**: Other site content, including the get-involved guides.
   - **/src/lib/components/**: Contains reusable Svelte components used across the site (e.g., Header, custom cards, visualizations).
   - **/src/lib/stores/**: Svelte stores for managing global state, such as the navigation structure (`frameworkNav.js`).
   - **/src/lib/i18n/**: Holds the JSON files for internationalization and translation.
 - **/static/**: Contains static assets like images (logo.svg), PDFs, and other files that don't need processing.
 - **/documentation/**: Houses internal project documentation, including the `style-guide.md`, strategic plans, and archives. This content is for contributors and is not part of the live website.
-- **/source-materials/**: Frameworks outlines from the iterative creation process.
 - **/CONTRIBUTING.md**: Guidelines for how to contribute to the project.
 
 

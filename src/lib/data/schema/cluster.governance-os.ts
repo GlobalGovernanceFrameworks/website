@@ -84,11 +84,11 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'constitutional-interface',
       outline: {
         kind: 'specification',
-        version: 'v0.2.4',
+        version: 'v0.2.5',
         updated: '2026-08-08',
         maturity: 'internal',
         standfirst:
-          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty — v0.2.4 adds causal responsibility, duties attached to retained jurisdiction, constitutional-gap handling, proportionate process, purpose firewalls for recognition data, and a person-continuity interface for bounded attestation, non-transitive linkage, correction, and externally established status changes without creating a universal identity or civil registry.'
+          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty. Earlier revisions added causal responsibility, duties attached to retained jurisdiction, constitutional-gap handling, purpose firewalls for recognition data, and a person-continuity interface that permits bounded attestation without creating a universal identity or civil registry. Version 0.2.5 asks every framework to state the conditions under which it does not apply, and stops an institution from being wound up because nothing has gone wrong.'
       }
     }
   },
