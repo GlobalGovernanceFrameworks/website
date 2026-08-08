@@ -83,7 +83,7 @@ export const socialEquityEntities: GgfEntity[] = [
       slug: 'foundation-protocol',
       group: 'humanSocialSystems',
       outline: {
-        version: 'v3.0',
+        version: 'v3.0.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:
@@ -114,7 +114,7 @@ export const socialEquityEntities: GgfEntity[] = [
       slug: 'housing-and-secure-habitation',
       group: 'humanSocialSystems',
       outline: {
-        version: 'v0.2.1',
+        version: 'v0.2.2',
         updated: '2026-08-08',
         maturity: 'adversarial',
         standfirst:
@@ -141,7 +141,7 @@ export const socialEquityEntities: GgfEntity[] = [
       emoji: '🫂',
       slug: 'kinship-protocol',
       outline: {
-        version: 'v2.3',
+        version: 'v2.3.2',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:
@@ -168,7 +168,7 @@ export const socialEquityEntities: GgfEntity[] = [
       emoji: '👶',
       slug: 'horizon-protocol',
       outline: {
-        version: 'v3.0',
+        version: 'v3.0.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:
@@ -195,7 +195,7 @@ export const socialEquityEntities: GgfEntity[] = [
       emoji: '🌳',
       slug: 'legacy-protocol',
       outline: {
-        version: 'v2.1',
+        version: 'v2.1.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:
@@ -223,7 +223,7 @@ export const socialEquityEntities: GgfEntity[] = [
       slug: 'migration-and-human-mobility',
       group: 'socialFabricJustice',
       outline: {
-        version: 'v1.1.1',
+        version: 'v1.1.2',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:

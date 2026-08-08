@@ -78,7 +78,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       emoji: '💻',
       slug: 'digital-commons',
       outline: {
-        version: 'v3.0',
+        version: 'v3.0.1',
         updated: '2026-04-04',
         maturity: 'adversarial',
         standfirst:
@@ -118,7 +118,7 @@ export const culturalKnowledgeEntities: GgfEntity[] = [
       emoji: '🕯️',
       slug: 'religious-and-spiritual-dialogue-governance',
       outline: {
-        version: 'v1.8',
+        version: 'v1.8.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:

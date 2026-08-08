@@ -54,11 +54,11 @@ export const governanceOSEntities: GgfEntity[] = [
       emoji: '🏛️',
       slug: 'meta-governance',
       outline: {
-        version: 'v1.6',
+        version: 'v1.6.1',
         updated: '2026-08-06',
         maturity: 'adversarial',
         standfirst:
-          'Coordination between institutions that do not answer to one another. Version 1.6 preserves strict limits on what coordination may do—it may not legislate, tax, sanction, command forces, inherit another institution’s jurisdiction, or turn indicators into constitutional judgments—while strengthening what responsible coordination must accomplish: map causal responsibility, expose delay and omission, test common dependencies and self-perpetuating incentives, keep administrative burdens proportionate, and close or devolve arrangements that no longer add value. Success is measured not by coordination activity, but by problems resolved, responsibilities clarified, and coordination safely simplified, localized, or ended.'
+          'Coordination between institutions that do not answer to one another. Version 1.6.1 preserves strict limits on what coordination may do—it may not legislate, tax, sanction, command forces, inherit another institution’s jurisdiction, or turn indicators into constitutional judgments—while strengthening what responsible coordination must accomplish: map causal responsibility, expose delay and omission, test common dependencies and self-perpetuating incentives, keep administrative burdens proportionate, and close or devolve arrangements that no longer add value. Success is measured not by coordination activity, but by problems resolved, responsibilities clarified, and coordination safely simplified, localized, or ended.'
       }
     }
   },
@@ -84,11 +84,11 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'constitutional-interface',
       outline: {
         kind: 'specification',
-        version: 'v0.2.3',
+        version: 'v0.2.4',
         updated: '2026-08-05',
         maturity: 'internal',
         standfirst:
-          'Shared rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty — v0.2.3 adds causal responsibility, duties attached to retained jurisdiction, constitutional-gap handling, proportionate process, and a recognition-record purpose firewall preventing care, contribution, and relational data from silently becoming general-purpose governance signals.'
+          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty — v0.2.4 adds causal responsibility, duties attached to retained jurisdiction, constitutional-gap handling, proportionate process, purpose firewalls for recognition data, and a person-continuity interface for bounded attestation, non-transitive linkage, correction, and externally established status changes without creating a universal identity or civil registry.'
       }
     }
   },
@@ -344,11 +344,11 @@ export const governanceOSEntities: GgfEntity[] = [
       emoji: '🕸️',
       slug: 'polycentric-governance-architecture',
       outline: {
-        version: 'v0.6',
+        version: 'v0.6.2',
         updated: '2026-08-01',
         maturity: 'adversarial',
         standfirst:
-          'Separation of powers arranged horizontally rather than vertically: territory, shared resources, economic practice and Indigenous sovereignty each hold authority the others cannot absorb. Version 0.6 removed the enforcement machinery of earlier drafts — automatic chamber dissolution, jury government, reputation penalties, exchange-rate sanctions, capture algorithms — on the principle that indicators are alerts, not judgments. It also declines to create a universal Indigenous council, on the grounds that recognising an authority is not the same as constituting one.'
+          'Polycentric governance as horizontal separation of powers: territorial institutions, shared-resource authorities, economic systems, Indigenous peoples, and other legitimate centers retain distinct authority that coordination cannot absorb. The framework constrains capture without creating a higher sovereign — indicators trigger scrutiny rather than judgment, coordination does not manufacture jurisdiction, and one institution cannot dissolve, penalize, or govern another merely through a dashboard threshold. Indigenous authority is recognized through peoples’ own processes rather than constituted through a universal GGF council or representation quota.'
       }
     }
   },

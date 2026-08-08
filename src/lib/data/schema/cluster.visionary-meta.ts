@@ -111,7 +111,7 @@ export const visionaryMetaEntities: GgfEntity[] = [
       emoji: '⏳',
       slug: 'deep-time-governance',
       outline: {
-        version: 'v0.6',
+        version: 'v0.6.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:

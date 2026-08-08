@@ -38,7 +38,7 @@ export const dataOSEntities: GgfEntity[] = [
       slug: 'aurora-accord',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v1.3',
+        version: 'v1.3.2',
         updated: '2026-08-01',
         maturity: 'adversarial',
         standfirst:

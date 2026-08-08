@@ -59,11 +59,11 @@ export const justTransitionEntities: GgfEntity[] = [
       slug: 'aegis-protocol',
       group: 'socialFabricJustice',
       outline: {
-        version: 'v1.3.4',
+        version: 'v1.3.5',
         updated: '2026-08-02',
         maturity: 'adversarial',
         standfirst:
-          'Converting military capability to civilian use, and saying sixty-four separate times what it cannot do while doing so. Version 1.3.4 covers voluntary expenditure redirection, conversion of defence facilities and research programmes, transition of personnel and defence-dependent regions, purpose-limited dual-use custody, and lawful declassification. It provides interfaces, not commands: nothing here authorizes a deployment, a seizure, or a change to anyone’s security posture.'
+          'Converting military capability to civilian use, and saying sixty-four separate times what it cannot do while doing so. Version 1.3.5 covers voluntary expenditure redirection, conversion of defence facilities and research programmes, transition of personnel and defence-dependent regions, purpose-limited dual-use custody, and lawful declassification. It provides interfaces, not commands: nothing here authorizes a deployment, a seizure, or a change to anyone’s security posture.'
       }
     }
   },
@@ -155,7 +155,7 @@ export const justTransitionEntities: GgfEntity[] = [
       emoji: '🌇',
       slug: 'sundown-protocol',
       outline: {
-        version: 'v2.1',
+        version: 'v2.1.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:

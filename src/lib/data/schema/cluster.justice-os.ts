@@ -159,7 +159,7 @@ export const justiceOSEntities: GgfEntity[] = [
       slug: 'justice-systems',
       group: 'socialFabricJustice',
       outline: {
-        version: 'v1.4',
+        version: 'v1.4.1',
         updated: '2026-08-01',
         maturity: 'adversarial',
         standfirst:

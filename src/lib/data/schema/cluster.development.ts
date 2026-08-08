@@ -265,7 +265,7 @@ export const developmentEntities: GgfEntity[] = [
       slug: 'regenerative-journeys',
       group: 'humanSocialSystems',
       outline: {
-        version: 'v1.1',
+        version: 'v1.1.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:

@@ -55,7 +55,7 @@ export const hearthstoneEntities: GgfEntity[] = [
       slug: 'hearthstone-protocol',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v2.0.1',
+        version: 'v2.0.3',
         updated: '2026-08-01',
         maturity: 'adversarial',
         standfirst:

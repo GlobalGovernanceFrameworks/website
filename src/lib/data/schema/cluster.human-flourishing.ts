@@ -278,7 +278,7 @@ export const humanFlourishingEntities: GgfEntity[] = [
       slug: 'kintsugi-protocol',
       group: 'humanSocialSystems',
       outline: {
-        version: 'v2.2.1',
+        version: 'v2.2.2',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:

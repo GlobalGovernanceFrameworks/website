@@ -33,7 +33,7 @@ export const pathfinderProtocolEntities: GgfEntity[] = [
       slug: 'pathfinder-protocol',
  
       outline: {
-        version: 'v0.9',
+        version: 'v0.9.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:

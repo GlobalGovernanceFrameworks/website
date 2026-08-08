@@ -255,7 +255,7 @@ export const ecologicalEntities: GgfEntity[] = [
       slug: 'kinship-garden',
       group: 'planetaryHealthResilience',
       outline: {
-        version: 'v4.0',
+        version: 'v4.0.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:
@@ -311,7 +311,7 @@ export const ecologicalEntities: GgfEntity[] = [
       slug: 'phoenix-protocol',
       group: 'planetaryHealthResilience',
       outline: {
-        version: 'v3.1',
+        version: 'v3.1.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:

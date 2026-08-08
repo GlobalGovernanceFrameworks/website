@@ -80,7 +80,7 @@ export const technologyOSEntities: GgfEntity[] = [
       slug: 'aethelred-accord',
       group: 'humanSocialSystems',
       outline: {
-        version: 'v1.2.2',
+        version: 'v1.2.3',
         updated: '2026-08-02',
         maturity: 'adversarial',
         standfirst:

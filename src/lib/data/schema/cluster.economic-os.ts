@@ -56,11 +56,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'adaptive-universal-basic-income',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v2.5',
+        version: 'v2.5.2',
         updated: '2026-08-01',
         maturity: 'adversarial',
         standfirst:
-          'A dual-wallet basic income: fiat for survival, plus Hearts and Leaves that recognise care work and ecological stewardship without turning either into a wage. Version 2.5 is largely an observability revision — it separates the two LMCI registers from operational telemetry, adds Observation Contracts and State Estimate Records, and gives individuals epistemic rights over how they are measured. The design assumption throughout is that a system which can see you can also mismeasure you.'
+          'A dual-wallet basic income: fiat for survival, plus Hearts and Leaves that recognise care work and ecological stewardship without turning either into a wage. Version 2.5.2 hardens both observability and authority — separating LMCI registers from operational telemetry, adding Observation Contracts and State Estimate Records, protecting epistemic rights over measurement, replacing universal identity with purpose-limited access attestations, and treating Social Resilience Council composition as a constitutional design question rather than a self-executing quota. The design assumption throughout is that a system which can see, classify, or represent you can also mismeasure, misidentify, or overclaim authority over you.'
       }
     }
   },
@@ -91,7 +91,7 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'financial-systems',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v3.4',
+        version: 'v3.4.1',
         updated: '2026-08-01',
         maturity: 'adversarial',
         standfirst:
@@ -120,7 +120,7 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'work-in-liberation',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v2.0',
+        version: 'v2.0.1',
         updated: '2026-08-01',
         maturity: 'adversarial',
         standfirst:
@@ -177,7 +177,7 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'gaian-trade',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v0.9',
+        version: 'v0.9.1',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:
@@ -205,7 +205,7 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'global-supply-chains-and-logistics',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v1.4',
+        version: 'v1.4.2',
         updated: '2026-08-03',
         maturity: 'adversarial',
         standfirst:
@@ -236,7 +236,7 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'adaptive-tax',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v0.1.2',
+        version: 'v0.1.3',
         updated: '2026-08-07',
         maturity: 'internal',
         standfirst:
@@ -267,7 +267,7 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'shared-capital-and-social-inheritance',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v0.1.2',
+        version: 'v0.1.3',
         updated: '2026-08-07',
         maturity: 'internal',
         standfirst:

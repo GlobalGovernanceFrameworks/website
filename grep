@@ -1,0 +1,219 @@
+
+cluster.constitutional-foundation.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.3     2026-08-01  adversarial  T0  Draft     Treaty for Our Only Home
+    framework_treaty                            src/lib/content/framework-outlines/en/tier-0/treaty-for-our-only-home/versions/v1.3.md
+  v0.9     2026-08-01  adversarial  T0  Draft     Genesis Protocol
+    protocol_genesis                            src/lib/content/framework-outlines/en/tier-0/genesis-protocol/versions/v0.9.md
+
+cluster.cultural-knowledge.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v3.0     2025-08-27  adversarial  T3  Review    Cultural Heritage Preservation Framework (Project Tapestry)
+    framework_cultural_heritage                 src/lib/content/framework-outlines/en/tier-3/cultural-heritage-preservation/versions/v3.0.md
+  v3.0     2026-04-04  adversarial  T3  Review    Digital Commons Framework
+    framework_digital_commons                   src/lib/content/framework-outlines/en/tier-3/digital-commons/versions/v3.0.md
+  v1.8     2026-08-03  adversarial  T3  Review    Global Governance Implementation Framework: Religious & Spiritual Dialogue
+    framework_religious_dialogue                src/lib/content/framework-outlines/en/tier-3/religious-and-spiritual-dialogue-governance/versions/v1.8.md
+  2.0      2026-08-03  internal     T3  Draft     Global Citizenship Practice Framework
+    framework_global_citizenship                src/lib/content/frameworks/en/implementation/global-citizenship-practice/
+  v0.7     2026-08-02  adversarial  T3  Review    Creative & Arts Flourishing Framework
+    framework_arts_flourishing                  src/lib/content/framework-outlines/en/tier-3/arts-flourishing/versions/v0.7.md
+  v2.5     2026-04-02  adversarial  T4  Review    Consciousness & Inner Development Framework
+    framework_inner_dev                         src/lib/content/framework-outlines/en/tier-4/consciousness-and-inner-development/versions/v2.5.md
+  v1.7     2026-08-06  adversarial  T4  Review    Wise Decision-Making & Integration Protocol
+    framework_wdmip                             src/lib/content/framework-outlines/en/tier-4/wise-decision-making-protocol/versions/v1.7.md
+  v0.8     2026-08-03  adversarial  T3  Draft     The Memorial Commons
+    framework_memorial_commons                  src/lib/content/framework-outlines/en/tier-3/memorial-commons/versions/v0.8.md
+
+cluster.data-os.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.3     2026-08-01  adversarial  T1  Review    Aurora Accord
+    framework_aurora_accord                     src/lib/content/framework-outlines/en/tier-1/aurora-accord/versions/v1.3.md
+
+cluster.development.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v3.0     2026-08-02  adversarial  T3  Review    The Bioregional Polis: An Indigenous-Guided Urban Framework
+    framework_urban_community                   src/lib/content/framework-outlines/en/tier-3/bioregional-polis/versions/v3.0.md
+  v1.6     2026-08-03  adversarial  T3  Review    The Living Land Protocol
+    framework_rural_development                 src/lib/content/framework-outlines/en/tier-3/living-land-protocol/versions/v1.6.md
+  v1.1     2026-08-03  adversarial  T3  Stable    The Regenerative Journeys Framework
+    framework_regenerative_journeys             src/lib/content/framework-outlines/en/tier-3/regenerative-journeys/versions/v1.1.md
+  v8.1     2026-08-03  adversarial  T2  Review    The Mobility Commons: A Framework for Regenerative Transportation & Mobility
+    framework_mobility_commons                  src/lib/content/framework-outlines/en/tier-2/mobility-commons/versions/v8.1.md
+
+cluster.ecological.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v0.9.1   2026-08-01  adversarial  T1  Review    Planetary Health Governance Framework
+    framework_planetary_health                  src/lib/content/framework-outlines/en/tier-1/planetary-health-governance/versions/v0.9.1.md
+  v2.7.1   2026-08-01  adversarial  T2  Review    Ecological Intelligence, Observation, and Interpretation Layer
+    framework_eco_intel                         src/lib/content/framework-outlines/en/tier-2/environmental-stewardship/versions/v2.7.1.md
+  v2.1     2026-08-03  adversarial  T2  Review    Climate & Energy Governance Framework
+    framework_climate_energy                    src/lib/content/framework-outlines/en/tier-2/climate-and-energy-governance/versions/v2.1.md
+  v1.1.1   2026-08-01  adversarial  T2  Review    Global Governance Biodiversity Implementation Framework
+    framework_biodiversity                      src/lib/content/framework-outlines/en/tier-2/biodiversity-governance/versions/v1.1.1.md
+  v2.3.1   2026-08-01  adversarial  T2  Review    Oceans & Marine Governance Framework
+    framework_oceans_marine                     src/lib/content/framework-outlines/en/tier-2/oceans-and-marine-governance/versions/v2.3.1.md
+  v3.2.2   2026-08-02  adversarial  T2  Review    Soil Health & Land Use Governance Framework
+    framework_soil_health                       src/lib/content/framework-outlines/en/tier-2/soil-health-and-land-use-governance/versions/v3.2.2.md
+  v5.2.2   2026-08-02  adversarial  T2  Review    Water & Sanitation Governance Framework
+    framework_water_sanitation                  src/lib/content/framework-outlines/en/tier-2/water-and-sanitation-governance/versions/v5.2.2.md
+  v4.0     2026-08-03  adversarial  T2  Review    The Kinship Garden Framework
+    framework_food                              src/lib/content/framework-outlines/en/tier-2/kinship-garden/versions/v4.0.md
+  v7.1     2026-08-03  adversarial  T2  Review    Global Guardian Framework
+    framework_animal_welfare                    src/lib/content/framework-outlines/en/tier-2/animal-welfare-governance/versions/v7.1.md
+  v3.1     2026-08-03  adversarial  T2  Review    Phoenix Protocol — Material Stewardship & Circular Economies
+    framework_phoenix_protocol                  src/lib/content/framework-outlines/en/tier-2/phoenix-protocol/versions/v3.1.md
+  v4.4.2   2026-08-03  adversarial  T2  Review    The Living Shield
+    framework_drr                               src/lib/content/framework-outlines/en/tier-2/disaster-risk-reduction/versions/v4.4.2.md
+
+cluster.economic-os.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v2.5.2   2026-08-01  adversarial  T1  Stable    Adaptive Universal Basic Income Framework
+    framework_aubi                              src/lib/content/framework-outlines/en/tier-1/adaptive-universal-basic-income/versions/v2.5.2.md
+  v3.4.1   2026-08-01  adversarial  T1  Stable    Regenerative Financial Systems Framework
+    framework_financial_systems                 src/lib/content/framework-outlines/en/tier-1/financial-systems/versions/v3.4.1.md
+  v2.0.1   2026-08-01  adversarial  T1  Stable    Work in Liberation Framework
+    framework_work_liberation                   src/lib/content/framework-outlines/en/tier-1/work-in-liberation/versions/v2.0.1.md
+  v3.3     2026-08-06  adversarial  T1  Stable    Nested Economies Framework
+    framework_nested_sovereignty                src/lib/content/framework-outlines/en/tier-1/nested-economies/versions/v3.3.md
+  v0.9.1   2026-08-03  adversarial  T1  Review    The Gaian Trade Framework
+    framework_gaian_trade                       src/lib/content/framework-outlines/en/tier-1/gaian-trade/versions/v0.9.1.md
+  v1.4.2   2026-08-03  adversarial  T1  Stable    Global Supply Chains & Logistics Framework
+    framework_gscl                              src/lib/content/framework-outlines/en/tier-1/global-supply-chains-and-logistics/versions/v1.4.2.md
+  v0.1.3   2026-08-07  internal     T1  Draft     Adaptive Tax Framework
+    framework_adaptive_tax                      src/lib/content/framework-outlines/en/tier-1/adaptive-tax/versions/v0.1.3.md
+  v0.1.3   2026-08-07  internal     T1  Draft     Shared Capital and Social Inheritance Protocol
+    protocol_shared_capital                     src/lib/content/framework-outlines/en/tier-1/shared-capital-and-social-inheritance/versions/v0.1.3.md
+
+cluster.ethical-os.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.1     2026-08-01  adversarial  T1  Review    Indigenous Sovereignty and Planetary Healing Framework
+    framework_indigenous                        src/lib/content/framework-outlines/en/tier-1/indigenous-sovereignty-pathways/versions/v1.1.md
+  v2.8.2   2026-08-02  adversarial  T1  Review    Moral Operating System
+    framework_mos                               src/lib/content/framework-outlines/en/tier-1/moral-operating-system/versions/v2.8.2.md
+
+cluster.governance-os.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.6.1   2026-08-06  adversarial  T1  Stable    Integrated Meta-Governance Framework
+    framework_meta_gov                          src/lib/content/framework-outlines/en/tier-1/meta-governance/versions/v1.6.1.md
+  v0.2.4   2026-08-05  internal     T1  Draft     Constitutional Interface Specification
+    protocol_constitutional_interface           src/lib/content/framework-outlines/en/tier-1/constitutional-interface/versions/v0.2.4.md
+    ⚠ file-missing
+  v0.2.1   2026-08-05  internal     T1  Draft     Governance Method, Experiment, Adoption, and Implementation Authority Interface Specification
+    protocol_gmeaia                             src/lib/content/framework-outlines/en/tier-1/gmeaia/versions/v0.2.1.md
+    ⚠ file-missing
+  1.2      2026-08-06  internal     T1  Stable    Emergent Governance Protocol (The GGF's Minimum Viable Grammar)
+    framework_egp                               src/lib/content/frameworks/en/implementation/emergent-governance-protocol/
+  v0.6.2   2026-08-01  adversarial  T1  Stable    Polycentric Governance Architecture
+    framework_polycentric_governance            src/lib/content/framework-outlines/en/tier-1/polycentric-governance-architecture/versions/v0.6.2.md
+
+cluster.human-flourishing.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v3.1     2026-08-02  adversarial  T2  Review    The Capacity Engine
+    framework_education                         src/lib/content/framework-outlines/en/tier-2/capacity-engine/versions/v3.1.md
+  v2.2.2   2026-08-03  adversarial  T2  Stable    Global Health Preparedness, Outbreak Response, and Biosecurity Framework
+    framework_global_health                     src/lib/content/framework-outlines/en/tier-2/global-health-and-pandemic-security/versions/v2.2.2.md
+  v2.2     2026-08-03  adversarial  T2  Review    Living Mandala for Planetary Mental Health Governance
+    framework_mental_health                     src/lib/content/framework-outlines/en/tier-2/mental-health-governance/versions/v2.2.md
+  v2.1     2026-08-02  adversarial  T2  Draft     The Cognitive Sovereignty Accord
+    framework_cognitive_sovereignty_accord      src/lib/content/framework-outlines/en/tier-2/cognitive-sovereignty-accord/versions/v2.1.md
+  v0.6     2026-08-03  adversarial  T2  Stable    The Sanctuary Accord
+    framework_sanctuary                         src/lib/content/framework-outlines/en/tier-2/sanctuary-accord/versions/v0.6.md
+  v4.2     2026-08-03  adversarial  T2  Stable    The Synoptic Protocol - Media & Epistemic Integrity
+    framework_synoptic                          src/lib/content/framework-outlines/en/tier-2/synoptic-protocol/versions/v4.2.md
+  v8.1     2026-08-03  adversarial  T2  Review    The Prometheus Protocol
+    framework_prometheus_protocol               src/lib/content/framework-outlines/en/tier-2/prometheus-protocol/versions/v8.1.md
+  v1.1     2026-08-03  adversarial  T2  Review    The Discovery Commons
+    framework_discovery_commons                 src/lib/content/framework-outlines/en/tier-2/discovery-commons/versions/v1.1.md
+  v2.2.1   2026-08-03  adversarial  T2  Review    The Kintsugi Protocol
+    framework_kintsugi_protocol                 src/lib/content/framework-outlines/en/tier-2/kintsugi-protocol/versions/v2.2.1.md
+  v2.1     2026-08-03  adversarial  T2  Stable    The Hearthlight Protocol: A Framework for Childhood Flourishing
+    framework_hearthlight_protocol              src/lib/content/framework-outlines/en/tier-2/hearthlight-protocol/versions/v2.1.md
+
+cluster.implementation-os.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.2     2026-08-06  adversarial  T1  Review    The GGF Implementation & Adaptation Framework
+    framework_implementation_adaptation         src/lib/content/framework-outlines/en/tier-1/implementation-and-adaptation/versions/v1.2.md
+  v0.9     2026-08-06  adversarial  T4  Draft     Implementation Methods & Tools
+    framework_implementation_methods_tools      src/lib/content/framework-outlines/en/tier-4/implementation-methods-tools/versions/v0.9.md
+
+cluster.infrastructure.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.0     2026-08-03  adversarial  T2  Review    The Conduit Protocol
+    framework_conduit_protocol                  src/lib/content/framework-outlines/en/tier-2/conduit-protocol/versions/v1.0.md
+
+cluster.institutional-regeneration.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.0     2026-08-06  adversarial  T1  Stable    Institutional Regeneration Framework
+    framework_institutional_regeneration        src/lib/content/framework-outlines/en/tier-1/institutional-regeneration/versions/v1.0.md
+
+cluster.just-transition.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.3.5   2026-08-02  adversarial  T1  Stable    The Aegis Protocol
+    framework_aegis_protocol                    src/lib/content/framework-outlines/en/tier-1/aegis-protocol/versions/v1.3.5.md
+  v2.1.1   2026-08-03  adversarial  T2  Review    The Sundown Protocol
+    framework_sundown_protocol                  src/lib/content/framework-outlines/en/tier-2/sundown-protocol/versions/v2.1.1.md
+
+cluster.justice-os.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.8.1   2026-08-01  adversarial  T1  Review    Peace & Conflict Resolution Framework
+    framework_peace                             src/lib/content/framework-outlines/en/tier-1/peace-and-conflict-resolution/versions/v1.8.1.md
+  v1.4.1   2026-08-01  adversarial  T1  Stable    Justice Systems Framework
+    framework_justice                           src/lib/content/framework-outlines/en/tier-1/justice-systems/versions/v1.4.1.md
+  v2.0.1   2026-08-01  adversarial  T1  Stable    The Shield Protocol
+    framework_shield                            src/lib/content/framework-outlines/en/tier-1/shield-protocol/versions/v2.0.1.md
+
+cluster.pathfinder-protocol.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  1.0      2026-08-03  adversarial  T2  Stable    The Regenerative Enterprise Framework
+    framework_pathfinder_protocol               src/lib/content/frameworks/en/implementation/pathfinder-protocol/
+    ⚠ prose+outline
+
+cluster.property-stewardship.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v2.0.1   2026-08-01  adversarial  T2  Review    The Hearthstone Protocol
+    framework_hearthstone                       src/lib/content/framework-outlines/en/tier-2/hearthstone-protocol/versions/v2.0.1.md
+
+cluster.social-equity.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v1.0     2026-08-03  adversarial  T2  Review    The Social Fabric Framework: Weaving the Foundational Infrastructure for Regenerative Communities
+    framework_social_fabric                     src/lib/content/framework-outlines/en/tier-2/social-fabric-protocol/versions/v1.0.md
+  v2.6     2026-08-02  adversarial  T2  Review    The Cairn Protocol
+    framework_cairn_protocol                    src/lib/content/framework-outlines/en/tier-2/cairn-protocol/versions/v2.6.md
+  v3.0     2026-08-03  adversarial  T3  Review    Foundation Protocol: Universal Access & Disability Justice
+    framework_disability                        src/lib/content/framework-outlines/en/tier-3/foundation-protocol/versions/v3.0.md
+  v0.2.1   2026-08-08  adversarial  T2  Draft     Housing & Secure Habitation Framework
+    framework_housing                           src/lib/content/framework-outlines/en/tier-2/housing-and-secure-habitation/versions/v0.2.1.md
+  v2.3     2026-08-03  adversarial  T3  Stable    Kinship Protocol: Gender & Intersectional Justice
+    framework_gender                            src/lib/content/framework-outlines/en/tier-3/kinship-protocol/versions/v2.3.md
+  v3.0     2026-08-03  adversarial  T3  Review    Horizon Protocol: An Intergenerational Bridge
+    framework_youth                             src/lib/content/framework-outlines/en/tier-3/horizon-protocol/versions/v3.0.md
+  v2.1     2026-08-03  adversarial  T3  Review    Legacy Protocol: An Intergenerational Justice Framework
+    framework_elder                             src/lib/content/framework-outlines/en/tier-3/legacy-protocol/versions/v2.1.md
+  v1.1.1   2026-08-03  adversarial  T3  Review    Migration & Human Mobility Framework
+    framework_migration                         src/lib/content/framework-outlines/en/tier-3/migration-and-human-mobility/versions/v1.1.1.md
+
+cluster.technology-os.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v3.6     2026-08-01  adversarial  T1  Stable    Technology Governance Framework
+    framework_technology_governance             src/lib/content/framework-outlines/en/tier-1/technology-governance/versions/v3.6.md
+  v1.2.2   2026-08-02  adversarial  T2  Review    The Aethelred Accord
+    framework_aethelred_accord                  src/lib/content/framework-outlines/en/tier-2/aethelred-accord/versions/v1.2.2.md
+  v6.0     2026-08-03  adversarial  T1  Stable    Fractal Intelligence Accord
+    framework_fractal_intelligence              src/lib/content/framework-outlines/en/tier-2/fractal-intelligence-accord/versions/v6.0.md
+
+cluster.visionary-meta.ts
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  v2.2.2   2026-08-03  adversarial  T4  Review    Planetary Immune System: Catastrophic Risk Foresight, Readiness, and Coordinated Response
+    framework_planetary_immune_system           src/lib/content/framework-outlines/en/tier-4/planetary-immune-system/versions/v2.2.2.md
+  v1.4     2026-08-03  adversarial  T4  Review    Frontier Governance Protocol
+    framework_space_governance                  src/lib/content/framework-outlines/en/tier-4/frontier-governance/versions/v1.4.md
+  v1.0     2026-08-03  adversarial  T4  Review    The Millennium Protocol
+    framework_millennium_protocol               src/lib/content/framework-outlines/en/tier-4/millennium-protocol/versions/v1.0.md
+  v0.6     2026-08-03  adversarial  T4  Review    Temporal Governance & Universal Metrology Framework
+    framework_deep_time                         src/lib/content/framework-outlines/en/tier-4/deep-time-governance/versions/v0.6.md
+  v1.1     2026-08-03  adversarial  T4  Review    The Oracle Protocol: A Framework for AI Consciousness & Digital Sentience
+    framework_oracle_protocol                   src/lib/content/framework-outlines/en/tier-4/oracle-protocol/versions/v1.1.md
+
+78 entities across 19 files (332 total in schema).
+3 carrying flags.
