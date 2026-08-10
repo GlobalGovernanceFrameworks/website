@@ -114,8 +114,8 @@ export const socialEquityEntities: GgfEntity[] = [
       slug: 'housing-and-secure-habitation',
       group: 'humanSocialSystems',
       outline: {
-        version: 'v0.2.2',
-        updated: '2026-08-08',
+        version: 'v0.2.3',
+        updated: '2026-08-10',
         maturity: 'adversarial',
         standfirst:
           'Twenty-eight frameworks promise not to destroy someone\'s housing, and until now none defined what was being promised. This governs the relationship between a person and the place they sleep when they do not own it — tenancy, eviction, habitability, homelessness, the renter-side apparatus the corpus had left entirely absent. Title is not habitation, dependency is not priority, and a person may have more than one legitimate home.'

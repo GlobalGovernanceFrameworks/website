@@ -56,11 +56,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'adaptive-universal-basic-income',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v2.5.2',
-        updated: '2026-08-08',
+        version: 'v2.5.3',
+        updated: '2026-08-10',
         maturity: 'adversarial',
         standfirst:
-          'A dual-wallet basic income: fiat for survival, plus Hearts and Leaves that recognise care work and ecological stewardship without turning either into a wage. Version 2.5.2 hardens both observability and authority — separating LMCI registers from operational telemetry, adding Observation Contracts and State Estimate Records, protecting epistemic rights over measurement, replacing universal identity with purpose-limited access attestations, and treating Social Resilience Council composition as a constitutional design question rather than a self-executing quota. The design assumption throughout is that a system which can see, classify, or represent you can also mismeasure, misidentify, or overclaim authority over you.'
+          'A dual-wallet basic income: fiat for survival, plus Hearts and Leaves that recognise care work and ecological stewardship without turning either into a wage. Version 2.5.2 hardened both observability and authority — separating LMCI registers from operational telemetry, adding Observation Contracts and State Estimate Records, protecting epistemic rights over measurement, replacing universal identity with purpose-limited access attestations, and treating Social Resilience Council composition as a constitutional design question rather than a self-executing quota. Version 2.5.3 names a loop the framework had left implicit: a baseline indexed to housing cost at 40% can partly chase a rent increase the payments themselves helped produce. The design assumption throughout is that a system which can see, classify, or represent you can also mismeasure, misidentify, or overclaim authority over you.'
       }
     }
   },
@@ -77,12 +77,14 @@ export const economicOSEntities: GgfEntity[] = [
     geographicScope: 'Global',
     implementationPriority: 'Critical',
     dependencies: ['framework_treaty'],
+    // `protocol_debt_transformation` removed: §15.8 withdraws the mechanism
+    // rather than establishing it. Financial Systems supplies settlement
+    // infrastructure only after a dedicated protocol is adopted.
     enables: [
       'mechanism_hearts',
       'mechanism_leaves',
       'mechanism_hearts_treasury',
-      'mechanism_ictl',
-      'protocol_debt_transformation'
+      'mechanism_ictl'
     ],
     ui: {
       path: '/frameworks/financial-systems',
@@ -94,7 +96,7 @@ export const economicOSEntities: GgfEntity[] = [
         version: 'v3.4.1',
         updated: '2026-08-08',
         maturity: 'adversarial',
-      standfirst:
+        standfirst:
           'The plumbing under the regenerative economy: how Hearts are issued and redeemed, what the Treasury holds in reserve, what happens when liquidity fails, and who may challenge the models that decide any of it. Reconstructed after a substantial truncation was found in v3.3, with the reserve architecture settled at a 50% normal target and a 30% hard issuance floor. Version 3.4.1 adds the insurance boundary: the framework routes financial consequences but constitutes no underwriting, claims, or guarantee authority of its own. Automatic controls are framed as temporary containment, not diagnosis.'
       }
     }
@@ -177,8 +179,8 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'gaian-trade',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v0.9.1',
-        updated: '2026-08-08',
+        version: 'v0.9.2',
+        updated: '2026-08-10',
         maturity: 'adversarial',
         standfirst:
           'Trade treated as relationship rather than transaction, governed across three time horizons — a fast loop for tariffs and routing, a medium loop for industrial transition, and a deep-time loop with binding veto over decisions with geological consequences. Radical material transparency is the default, but communities may invoke a Right to Opacity: traceability should not become a tool for making Indigenous knowledge legible to whoever wants it.'
@@ -504,24 +506,20 @@ export const economicOSEntities: GgfEntity[] = [
     name: 'Sovereign Debt Transformation Protocol',
     shortName: 'Debt-to-Regen',
     description:
-      'Converts sovereign debt into regenerative obligations, serviced by verified care work (Hearts) and ecological restoration (Leaves).',
+      'A deferred capability, not an operative mechanism. Financial Systems §15.8 withdrew the debt-for-care/ecology proposal as too consequential and under-specified, and Treaty Article 19.3 defers it pending a dedicated protocol addressing legal authority, debtor consent and democratic authorization, affected-community and Indigenous consent, creditor treatment, baseline and additionality, ecological permanence and leakage, labour and distributional effects, currency and settlement risk, verification and challenge, and restructuring, default and insolvency law. No sovereign debt is converted into Hearts, Leaves, or restoration obligations under any current GGF instrument.',
     tier: 1,
-    status: 'Draft',
+    status: 'Proposed',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
-    implementationPriority: 'Critical',
+    implementationPriority: 'Low',
+    // Dependencies record where the deferral is written, not an operating
+    // chain. Hearts, Leaves, Love Ledger and SRC links removed: a deferred
+    // capability neither consumes nor is overseen by anything.
     dependencies: [
       'framework_financial_systems',
-      'council_social_resilience',
-      'framework_treaty', // cluster: constitutional-foundation
-      'mechanism_hearts',
-      'mechanism_leaves',
-      'platform_love_ledger'
-    ],
-    enables: [
-      'framework_aubi',
-      'framework_planetary_health' // cluster: ecological
+      'framework_treaty' // cluster: constitutional-foundation
     ]
+    // No `enables`: nothing downstream may depend on a withdrawn mechanism.
     // No ui block: sub-protocol, not a published framework page.
   },
   {
@@ -777,10 +775,13 @@ export const economicOSRelationships: GgfRelationship[] = [
   {
     from: 'framework_financial_systems',
     to: 'protocol_debt_transformation',
-    type: 'ESTABLISHES',
+    // Not ESTABLISHES: §15.8 defers the mechanism and specifies what a
+    // dedicated protocol must cover. No DEFERS_TO type exists in the union;
+    // INFORMS is the least-wrong available type.
+    type: 'INFORMS',
     description:
-      'Establishes sovereign debt-to-regeneration conversion as part of the Inter-Currency Translation Layer.',
-    strength: 'Strong',
+      'Financial Systems §15.8 defers sovereign-debt conversion to a dedicated protocol and enumerates what that protocol must address. Financial Systems may supply settlement infrastructure only after such a protocol is adopted.',
+    strength: 'Medium',
     sequenceType: 'Sequential'
   },
   {
@@ -1272,46 +1273,14 @@ export const economicOSRelationships: GgfRelationship[] = [
 
   // --- debt transformation ----------------------------------------------
   {
-    from: 'council_social_resilience',
-    to: 'protocol_debt_transformation',
-    type: 'OVERSEES',
-    description:
-      'The SRC manages conversion rates and verification for the Debt Transformation Protocol.',
-    strength: 'Strong',
-    frequency: 'Regular',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'protocol_debt_transformation',
-    to: 'mechanism_hearts',
-    type: 'INTEGRATES_WITH',
-    description: 'Uses verified Hearts generation as a debt-servicing mechanism.',
-    strength: 'Strong',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'protocol_debt_transformation',
-    to: 'mechanism_leaves',
-    type: 'INTEGRATES_WITH',
-    description: 'Uses verified ecological restoration, recognised in Leaves, as debt servicing.',
-    strength: 'Strong',
-    sequenceType: 'Parallel'
-  },
-  {
-    from: 'protocol_debt_transformation',
-    to: 'platform_love_ledger',
-    type: 'USES_DATA_FROM',
-    description: 'Uses Love Ledger architecture for transparent tracking of regenerative activity.',
-    strength: 'Medium',
-    sequenceType: 'Parallel'
-  },
-  {
     from: 'framework_treaty',
     to: 'protocol_debt_transformation',
-    type: 'ENABLES',
+    // Not ENABLES: Article 19.3 defers the mechanism rather than conferring
+    // authority for it. The Treaty scopes what a future protocol must settle.
+    type: 'INFORMS',
     description:
-      'The Treaty\'s Debt Justice and Crisis Response pillars supply the constitutional authority for debt conversion.',
-    strength: 'Strong',
+      'Treaty Article 19.3 defers the sovereign-debt mechanism proposed in v1.2 and enumerates the conditions a dedicated protocol must address before any conversion occurs.',
+    strength: 'Medium',
     sequenceType: 'Sequential'
   },
 
