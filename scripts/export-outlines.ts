@@ -3,10 +3,17 @@
  * collision-free names, ready to upload to Claude project knowledge.
  *
  *   npx tsx scripts/export-outlines.ts                 # only the ones not yet uploaded
- *   npx tsx scripts/export-outlines.ts --all           # all 71
+ *   npx tsx scripts/export-outlines.ts --all           # all 71 + the specifications
  *   npx tsx scripts/export-outlines.ts --out /tmp/x    # choose the folder
  *   npx tsx scripts/export-outlines.ts --check-current # audit current.md symlinks
  *   npx tsx scripts/export-outlines.ts --fix-current   # ...and relink them
+ *
+ * Two content roots, resolved per entity:
+ *   framework-outlines/en/<tier-N/slug>/versions/<version>.md   (frameworks)
+ *   specifications/en/<slug>/versions/<version>.md              (CIS, GMEAIA)
+ * A specification is anything whose `ui.outline.kind` is 'specification', or
+ * whose route sits under /specifications/. Specifications are NOT tiered on
+ * disk: the folder is the bare slug.
  *
  * Resolution comes from `ui.outline.version` in the schema, never from
  * current.md — the symlinks are known to lag.
@@ -17,14 +24,18 @@
  */
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync, readlinkSync, lstatSync, symlinkSync, unlinkSync } from 'node:fs';
-import { join, relative } from 'node:path';
+import { join } from 'node:path';
 import { allEntities } from '../src/lib/data/schema/_index';
 import type { GgfEntity } from '../src/lib/data/schema/_types';
 
 const OUTLINE_ROOT = 'src/lib/content/framework-outlines/en';
+const SPEC_ROOT = 'src/lib/content/specifications/en';
 
 /** Already in project knowledge — the 39 that survived the filename collisions. */
 const ALREADY_UPLOADED = new Set([
+]);
+
+/*
 	'framework_aethelred_accord', 'framework_animal_welfare', 'framework_aubi',
 	'framework_cairn_protocol', 'framework_climate_energy', 'framework_conduit_protocol',
 	'framework_drr', 'framework_eco_intel', 'framework_education', 'framework_financial_systems',
@@ -37,7 +48,7 @@ const ALREADY_UPLOADED = new Set([
 	'framework_soil_health', 'framework_synoptic', 'framework_technology_governance',
 	'framework_treaty', 'framework_urban_community', 'framework_water_sanitation',
 	'framework_wdmip', 'framework_work_liberation', 'protocol_genesis'
-]);
+]);*/
 
 const args = process.argv.slice(2);
 const all = args.includes('--all');
@@ -45,8 +56,20 @@ const checkCurrent = args.includes('--check-current') || args.includes('--fix-cu
 const fixCurrent = args.includes('--fix-current');
 const outDir = args[args.indexOf('--out') + 1]?.startsWith('/') ? args[args.indexOf('--out') + 1] : '/tmp/ggf-outlines';
 
-const dirOf = (e: GgfEntity) =>
-	e.ui?.outline?.dir ?? (e.tier != null && e.ui?.slug ? `tier-${e.tier}/${e.ui.slug}` : null);
+/** Specifications live in their own root and are not tiered on disk. */
+const isSpec = (e: GgfEntity) =>
+	(e.ui?.outline as { kind?: string } | undefined)?.kind === 'specification' ||
+	e.ui?.path?.startsWith('/specifications/') === true;
+
+const rootOf = (e: GgfEntity) => (isSpec(e) ? SPEC_ROOT : OUTLINE_ROOT);
+
+const dirOf = (e: GgfEntity) => {
+	const explicit = e.ui?.outline?.dir;
+	if (explicit) return explicit;
+	if (!e.ui?.slug) return null;
+	if (isSpec(e)) return e.ui.slug;
+	return e.tier != null ? `tier-${e.tier}/${e.ui.slug}` : null;
+};
 
 const published = allEntities.filter((e) => e.ui?.outline);
 
@@ -56,9 +79,10 @@ if (checkCurrent) {
 	for (const e of published) {
 		const dir = dirOf(e);
 		if (!dir) continue;
-		const link = join(OUTLINE_ROOT, dir, 'current.md');
+		const root = rootOf(e);
+		const link = join(root, dir, 'current.md');
 		const want = `versions/${e.ui!.outline!.version}.md`;
-		const target = join(OUTLINE_ROOT, dir, want);
+		const target = join(root, dir, want);
 
 		let have: string | null = null;
 		try {
@@ -69,7 +93,7 @@ if (checkCurrent) {
 		if (have === want) continue;
 
 		wrong++;
-		console.log(`  ${e.id.padEnd(40)} ${dir}\n      current.md → ${have ?? '(missing)'}   should be ${want}`);
+		console.log(`  ${e.id.padEnd(40)} ${root}/${dir}\n      current.md → ${have ?? '(missing)'}   should be ${want}`);
 		if (fixCurrent && existsSync(target)) {
 			try { unlinkSync(link); } catch {}
 			symlinkSync(want, link);
@@ -87,25 +111,28 @@ rmSync(outDir, { recursive: true, force: true });
 mkdirSync(outDir, { recursive: true });
 
 let copied = 0;
+let specs = 0;
 const missingFiles: string[] = [];
 
 for (const e of published) {
 	if (!all && ALREADY_UPLOADED.has(e.id)) continue;
 
 	const dir = dirOf(e);
+	const root = rootOf(e);
 	const version = e.ui!.outline!.version;
-	if (!dir) { missingFiles.push(`${e.id} — no dir and no slug/tier to derive one`); continue; }
+	if (!dir) { missingFiles.push(`${e.id} — no dir and no slug${isSpec(e) ? '' : '/tier'} to derive one`); continue; }
 
-	const src = join(OUTLINE_ROOT, dir, 'versions', `${version}.md`);
+	const src = join(root, dir, 'versions', `${version}.md`);
 	if (!existsSync(src)) { missingFiles.push(`${e.id} — ${src}`); continue; }
 
 	const name = `${e.ui!.slug ?? e.id}-${version}.md`;
 	writeFileSync(join(outDir, name), readFileSync(src));
-	console.log(`  ${name.padEnd(48)} ← ${dir}/versions/${version}.md`);
+	console.log(`  ${name.padEnd(48)} ← ${isSpec(e) ? 'spec  ' : '      '}${dir}/versions/${version}.md`);
 	copied++;
+	if (isSpec(e)) specs++;
 }
 
-console.log(`\n${copied} outlines copied to ${outDir}`);
+console.log(`\n${copied} outlines copied to ${outDir}${specs ? ` (${specs} specification${specs > 1 ? 's' : ''})` : ''}`);
 if (missingFiles.length) {
 	console.log(`\n${missingFiles.length} could not be resolved:`);
 	for (const m of missingFiles) console.log(`  ${m}`);

@@ -150,8 +150,8 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'nested-economies',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v3.3',
-        updated: '2026-08-06',
+        version: 'v3.3.1',
+        updated: '2026-08-10',
         maturity: 'adversarial',
         standfirst:
           'How economies at different scales coordinate without one swallowing the others. Version 3.3 preserves the two-tier, voluntary, delegated, and revocable architecture while replacing scale-only subsidiarity with causal, economic, and constitutional subsidiarity. It adds jointly constituted authority, internal subsidiarity within BAZs, safeguards against holdout and bargaining domination, and legal, technical, financial, service, political, and material exit. Coordination that cannot be refused, forked, or left without losing essential services is dependency, not polycentric governance.'
