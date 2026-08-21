@@ -56,11 +56,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'adaptive-universal-basic-income',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v2.5.3',
-        updated: '2026-08-10',
+        version: 'v2.6',
+        updated: '2026-08-21',
         maturity: 'adversarial',
         standfirst:
-          'A dual-wallet basic income: fiat for survival, plus Hearts and Leaves that recognise care work and ecological stewardship without turning either into a wage. Version 2.5.2 hardened both observability and authority — separating LMCI registers from operational telemetry, adding Observation Contracts and State Estimate Records, protecting epistemic rights over measurement, replacing universal identity with purpose-limited access attestations, and treating Social Resilience Council composition as a constitutional design question rather than a self-executing quota. Version 2.5.3 names a loop the framework had left implicit: a baseline indexed to housing cost at 40% can partly chase a rent increase the payments themselves helped produce. The design assumption throughout is that a system which can see, classify, or represent you can also mismeasure, misidentify, or overclaim authority over you.'
+          'A dual-wallet basic income: fiat for survival, plus Hearts and Leaves that recognise care work and ecological stewardship without turning either into a wage. Version 2.5.2 hardened both observability and authority — separating LMCI registers from operational telemetry, adding Observation Contracts and State Estimate Records, protecting epistemic rights over measurement, replacing universal identity with purpose-limited access attestations, and treating Social Resilience Council composition as a constitutional design question rather than a self-executing quota. Version 2.5.3 names a loop the framework had left implicit: a baseline indexed to housing cost at 40% can partly chase a rent increase the payments themselves helped produce. Version 2.6 names an asymmetry: adding a baseline and removing one are not mirror operations, because a household that has arranged housing, care and dependants around a payment is exposed by its withdrawal in a way that a household which never received it is not. Reductions now require notice, phasing and a stated reason; suspension for dormancy, a lapsed attestation, an open investigation or a criminal record is barred; and a pilot that cannot say in advance what happens to participants when it ends is not ready to enrol them. The design assumption throughout is that a system which can see, classify, or represent you can also mismeasure, misidentify, or overclaim authority over you.'
       }
     }
   },

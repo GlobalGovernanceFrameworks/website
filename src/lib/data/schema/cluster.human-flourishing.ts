@@ -278,11 +278,11 @@ export const humanFlourishingEntities: GgfEntity[] = [
       slug: 'kintsugi-protocol',
       group: 'humanSocialSystems',
       outline: {
-        version: 'v2.2.2',
-        updated: '2026-08-08',
+        version: 'v2.3',
+        updated: '2026-08-21',
         maturity: 'adversarial',
         standfirst:
-          'Collective care and restorative accountability in place of punishment, with survivor sovereignty as the organizing constraint — the person harmed decides what repair means, including deciding that it means nothing. Version 2.2.1 bounds community safety constitutionally: sortition-selected local councils, an unarmed response unit activated only by them, and an ombudsperson for when the system fails the people it was built for.'
+          "Collective care and restorative accountability in place of punishment, with survivor sovereignty as the organizing constraint — the person harmed decides what repair means, including deciding that it means nothing. Version 2.2 retired the framework's own severe-harm response unit: urgent protection belongs to a separately constituted public function that Kintsugi may request but cannot command, staff, or direct. Version 2.3 fills the gap between the generational and the procedural, adding reintegration support across release from custody or institutional care — housing, income, documents and healthcare arranged before the release date rather than after it — and permitting care to be concentrated where need is concentrated, while barring the two ways that permission usually goes wrong: person-level risk scoring, and handing place-level demand data to anyone who would use it to target. Repeated calls for help from the same address are read as unmet need, not as risk. The response is more support, not more scrutiny."
       }
     }
   },

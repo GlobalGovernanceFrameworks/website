@@ -84,11 +84,11 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'constitutional-interface',
       outline: {
         kind: 'specification',
-        version: 'v0.2.6',
-        updated: '2026-08-10',
+        version: 'v0.2.7',
+        updated: '2026-08-21',
         maturity: 'internal',
         standfirst:
-          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty. Earlier revisions added causal responsibility, duties attached to retained jurisdiction, constitutional-gap handling, purpose firewalls for recognition data, and a person-continuity interface that permits bounded attestation without creating a universal identity or civil registry. Version 0.2.5 asked every framework to state the conditions under which it does not apply, and stopped an institution from being wound up because nothing had gone wrong. Version 0.2.6 lets two honest valuations of the same object disagree without either being wrong, and asks each framework to name what it depends on and has never mentioned.'
+          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty. Earlier revisions added causal responsibility, duties attached to retained jurisdiction, constitutional-gap handling, purpose firewalls for recognition data, and a person-continuity interface that permits bounded attestation without creating a universal identity or civil registry. Version 0.2.5 asked every framework to state the conditions under which it does not apply, and stopped an institution from being wound up because nothing had gone wrong. Version 0.2.6 lets two honest valuations of the same object disagree without either being wrong, and asks each framework to name what it depends on and has never mentioned. Version 0.2.7 addresses a measurement trap that punishes the institutions doing best: when help becomes easier to ask for, recorded harm goes up, and a system that reads that rise as failure will quietly select for services nobody can reach.'
       }
     }
   },
