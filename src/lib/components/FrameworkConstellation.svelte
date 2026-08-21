@@ -81,6 +81,19 @@
     return allFrameworks.some(f => f.slug === slug);
   }
 
+  // Specifications (CIS, GMEAIA) are what other frameworks conform to rather
+  // than peers of them. Derived from the schema so new specifications are
+  // picked up without touching this component.
+  const SPEC_SLUGS = new Set(
+    allEntities
+      .filter(e => e.ui?.outline?.kind === 'specification' && e.ui?.slug)
+      .map(e => e.ui.slug)
+  );
+
+  function isSpecEntity(entity) {
+    return entity?.ui?.outline?.kind === 'specification';
+  }
+
   // Define connections between frameworks based on our schema
   function getConnections() {
     const connections = [];
@@ -119,7 +132,7 @@
         }
       }
     });
-    
+
     // Remove duplicates (in case there are bidirectional relationships)
     const uniqueConnections = [];
     const seen = new Set();
@@ -150,6 +163,29 @@
         return bScore - aScore;
       })
       .slice(0, 25); // Limit to 25 most important connections for clarity
+  }
+
+  // Specification edges are excluded from the main connection pass: nearly
+  // every framework depends on CIS, so including them would crowd out
+  // framework-to-framework structure. Shown only on hover instead.
+  function getSpecConnections() {
+    const seen = new Set();
+    const out = [];
+
+    allRelationships.forEach(relationship => {
+      const fromSlug = getSlugFromEntityId(relationship.from);
+      const toSlug = getSlugFromEntityId(relationship.to);
+      if (!fromSlug || !toSlug) return;
+      if (!frameworkExistsInNav(fromSlug) || !frameworkExistsInNav(toSlug)) return;
+      if (!SPEC_SLUGS.has(fromSlug) && !SPEC_SLUGS.has(toSlug)) return;
+
+      const key = fromSlug < toSlug ? `${fromSlug}-${toSlug}` : `${toSlug}-${fromSlug}`;
+      if (seen.has(key)) return;
+      seen.add(key);
+      out.push([fromSlug, toSlug]);
+    });
+
+    return out;
   }
 
   // Dynamic tier configuration based on screen size - using i18n
@@ -262,9 +298,9 @@
         const radius = currentTierConfig[1].radius + 3;
         const centerX = 50;
         const centerY = 50;
-        const angleStep = (2 * Math.PI) / 26;
+        const angleStep = (2 * Math.PI) / 23;
         
-        for (let i = 0; i < 26; i++) {
+        for (let i = 0; i < 23; i++) {
           const angle = i * angleStep - Math.PI / 2;
           const x = centerX + radius * Math.cos(angle);
           const y = centerY + radius * Math.sin(angle);
@@ -277,9 +313,11 @@
       4: generateAsymmetricElliptical(4, 4, 4)
     };
 
-    // Position frameworks using asymmetric elliptical layout
+    // Position frameworks using asymmetric elliptical layout.
+    // Specifications are excluded here and placed on their own inner orbit below.
     [1, 2, 3, 4].forEach(tier => {
-      const tierFrameworks = getFrameworksByTier(tier);
+      const tierFrameworks = getFrameworksByTier(tier)
+        .filter(f => !SPEC_SLUGS.has(f.slug));
       const positions = asymmetricPositions[tier];
       // Increased node sizes to accommodate emojis
       const nodeSize = tier === 1 ? 4.5 : tier === 2 ? 3.2 : tier === 3 ? 2.6 : 2.2;
@@ -294,9 +332,37 @@
             size: nodeSize,
             description: getFrameworkDescription(cleanSlug),
             tagline: getFrameworkTagline(cleanSlug),
-            tier: tier
+            tier: tier,
+            isSpec: false
           });
         }
+      });
+    });
+
+    // Specification orbit: between the Treaty node and the Tier 1 ring.
+    // Specifications are what the surrounding frameworks conform to, not peers
+    // in the ring, so they sit inside it rather than on it. Two specifications
+    // flank the Treaty horizontally; more would distribute evenly from the left.
+    const specSlugs = [...SPEC_SLUGS];           // schema order: CIS, then GMEAIA
+    const specRadius = (currentTierConfig[1].radius + 3) * 0.55;
+    const specSize = 3.6;
+
+    specSlugs.forEach((slug, index) => {
+      const framework = getFrameworkBySlug(slug);
+      if (!framework) return;
+
+      const angle = Math.PI + (index * 2 * Math.PI) / specSlugs.length;
+      const cleanSlug = slug.replace(/-/g, '');
+
+      nodes.push({
+        ...framework,
+        x: 50 + specRadius * Math.cos(angle),
+        y: 50 + specRadius * Math.sin(angle),
+        size: specSize,
+        description: getFrameworkDescription(cleanSlug),
+        tagline: getFrameworkTagline(cleanSlug),
+        tier: 1,
+        isSpec: true
       });
     });
 
@@ -319,6 +385,7 @@
   $: currentTierConfig = getTierConfig(windowWidth);
   $: frameworkNodes = createConstellationNodes();
   $: connections = getConnections(); // Now dynamic based on our schema!
+  $: specConnections = getSpecConnections();
 
   // Event handlers (dispatch events to parent)
   import { createEventDispatcher } from 'svelte';
@@ -390,6 +457,20 @@
     
     <!-- Tier rings -->
     {#each Object.entries(currentTierConfig) as [tier, config]}
+      <!-- Specification orbit -->
+      {@const specRingRadius = (currentTierConfig[1].radius + 3) * 0.55}
+      <ellipse
+        cx="50"
+        cy="50"
+        rx={specRingRadius}
+        ry={specRingRadius}
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="0.2"
+        stroke-dasharray="1.4,1.4"
+        opacity="0.15"
+      />
+
       {#if config.radius > 0}
         {@const actualRadius = tier === '1' ? config.radius + 3 : config.radius}
         {@const ellipseRatio = tier === '1' ? 1.0 : 0.95}
@@ -432,6 +513,30 @@
       {/if}
     {/each}
 
+    <!-- Conformance edges: only while a specification node is hovered -->
+    {#if hoveredFramework && SPEC_SLUGS.has(hoveredFramework)}
+      {#each specConnections as [from, to]}
+        {#if from === hoveredFramework || to === hoveredFramework}
+          {@const fromNode = frameworkNodes.find(n => n.slug === from)}
+          {@const toNode = frameworkNodes.find(n => n.slug === to)}
+          {#if fromNode && toNode}
+            <line
+              x1={fromNode.x}
+              y1={fromNode.y}
+              x2={toNode.x}
+              y2={toNode.y}
+              stroke="#fbbf24"
+              stroke-width="0.12"
+              stroke-dasharray="1.2,1.2"
+              opacity="0.5"
+              style="pointer-events: none;"
+              class="connection-line"
+            />
+          {/if}
+        {/if}
+      {/each}
+    {/if}
+
     <!-- Framework Nodes -->
    {#each frameworkNodes as framework}
      {@const isActive = hoveredFramework === framework.slug || activeFramework === framework.slug}
@@ -449,30 +554,52 @@
          />
        {/if}
        
-       <circle
-         cx={framework.x}
-         cy={framework.y}
-         r={framework.size}
-         fill={tierColor}
-         stroke={isActive ? '#fbbf24' : 'white'}
-         stroke-width={isActive ? '0.8' : '0.4'}
-         class="node-circle"
-         class:highlighted={isActive}
-         style="cursor: pointer; pointer-events: all;"
-         on:click={() => handleNodeClick(framework)}
-         on:mouseenter={() => handleNodeHover(framework)}
-         on:mouseleave={handleNodeLeave}
-         role="button"
-         tabindex="0"
-         aria-label={getDisplayTitle(framework)}
-       />
+       {#if framework.isSpec}
+         {@const d = framework.size * 1.2}
+         <polygon
+           points="{framework.x},{framework.y - d} {framework.x + d},{framework.y} {framework.x},{framework.y + d} {framework.x - d},{framework.y}"
+           fill={tierColor}
+           fill-opacity="0.55"
+           stroke={isActive ? '#fbbf24' : 'white'}
+           stroke-width={isActive ? '0.8' : '0.4'}
+           stroke-dasharray="1.4,0.9"
+           stroke-linejoin="round"
+           class="node-shape node-spec"
+           class:highlighted={isActive}
+           style="cursor: pointer; pointer-events: all;"
+           on:click={() => handleNodeClick(framework)}
+           on:mouseenter={() => handleNodeHover(framework)}
+           on:mouseleave={handleNodeLeave}
+           role="button"
+           tabindex="0"
+           aria-label="{getDisplayTitle(framework)} (specification)"
+         />
+       {:else}
+         <circle
+           cx={framework.x}
+           cy={framework.y}
+           r={framework.size}
+           fill={tierColor}
+           stroke={isActive ? '#fbbf24' : 'white'}
+           stroke-width={isActive ? '0.8' : '0.4'}
+           class="node-shape node-circle"
+           class:highlighted={isActive}
+           style="cursor: pointer; pointer-events: all;"
+           on:click={() => handleNodeClick(framework)}
+           on:mouseenter={() => handleNodeHover(framework)}
+           on:mouseleave={handleNodeLeave}
+           role="button"
+           tabindex="0"
+           aria-label={getDisplayTitle(framework)}
+         />
+       {/if}
        
        <text
          x={framework.x}
          y={framework.y}
          text-anchor="middle"
          dominant-baseline="central"
-         font-size={framework.tier === 0 ? '4' : framework.tier === 1 ? '3.5' : '3.0'}
+         font-size={framework.isSpec ? '2.8' : framework.tier === 0 ? '4' : framework.tier === 1 ? '3.5' : '3.0'}
          style="pointer-events: none; user-select: none;"
          class="framework-emoji"
        >
@@ -577,17 +704,24 @@
     animation: none;
   }
 
-  .node-circle {
-    transition: stroke 0.2s ease, stroke-width 0.2s ease, r 0.2s ease;
+  .node-shape {
+    transition: stroke 0.2s ease, stroke-width 0.2s ease, r 0.2s ease,
+                fill-opacity 0.2s ease;
     transform-box: fill-box;
+    transform-origin: center;
     /* Remove filter transition to prevent artifacts */
   }
 
-  .node-circle.highlighted {
+  .node-shape.highlighted {
     /* Use transform scale instead of filter for better performance */
     transform: scale(1.1);
     stroke: #fbbf24;
     stroke-width: 0.8;
+  }
+
+  /* Specifications: what the other nodes conform to, not peers of them. */
+  .node-spec.highlighted {
+    fill-opacity: 0.8;
   }
 
   .framework-title-text {
