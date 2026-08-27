@@ -93,11 +93,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'financial-systems',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v3.4.1',
-        updated: '2026-08-08',
+        version: 'v3.5',
+        updated: '2026-08-27',
         maturity: 'adversarial',
         standfirst:
-          'The plumbing under the regenerative economy: how Hearts are issued and redeemed, what the Treasury holds in reserve, what happens when liquidity fails, and who may challenge the models that decide any of it. Reconstructed after a substantial truncation was found in v3.3, with the reserve architecture settled at a 50% normal target and a 30% hard issuance floor. Version 3.4.1 adds the insurance boundary: the framework routes financial consequences but constitutes no underwriting, claims, or guarantee authority of its own. Automatic controls are framed as temporary containment, not diagnosis.'
+          'The plumbing under the regenerative economy: how Hearts are issued and redeemed, what the Treasury holds in reserve, what happens when liquidity fails, and who may challenge the models that decide any of it. Reconstructed after a substantial truncation was found in v3.3, with the reserve architecture settled at a 50% normal target and a 30% hard issuance floor. The framework routes financial consequences but constitutes no underwriting, claims, or guarantee authority of its own. Version 3.5 adds first-receiver incidence: every issuance class must record which participants receive newly issued value before prices and provider rates adjust — the injection-side counterpart to tax incidence, which the corpus previously tracked only on the withdrawal side. Automatic controls are framed as temporary containment, not diagnosis.'
       }
     }
   },
@@ -238,8 +238,8 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'adaptive-tax',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v0.1.3',
-        updated: '2026-08-08',
+        version: 'v0.1.4',
+        updated: '2026-08-27',
         maturity: 'internal',
         standfirst:
           'The framework two Tier 1 economic documents had been citing for two revision cycles without it existing. It answers, for any proposed instrument: who may enact it, what legal fact is the base, who actually bears the burden after behaviour adjusts, and what evidence would justify abandoning it. Phase 0 is the spine — what a jurisdiction can lawfully do on Monday — and it declines to inherit the legacy 5–25% automation tax rather than repackaging a number nobody can observe.'
@@ -269,8 +269,8 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'shared-capital-and-social-inheritance',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v0.1.3',
-        updated: '2026-08-08',
+        version: 'v0.1.4',
+        updated: '2026-08-27',
         maturity: 'internal',
         standfirst:
           'A society can put a floor under everyone and still leave productive capital in very few hands. This governs who holds capital on behalf of people who have none — social wealth funds, community and worker funds, citizen-capital accounts — and how those claims spread without one institution becoming the universal owner. Its sharpest rule is that shared upside requires shared accounting of downside: a celebrated public investment does not erase the portfolio that paid for it.'
