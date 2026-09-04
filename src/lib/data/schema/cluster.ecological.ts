@@ -255,7 +255,7 @@ export const ecologicalEntities: GgfEntity[] = [
       slug: 'kinship-garden',
       group: 'planetaryHealthResilience',
       outline: {
-        version: 'v4.1',
+        version: 'v4.1.1',
         updated: '2026-09-04',
         maturity: 'adversarial',
         standfirst:
