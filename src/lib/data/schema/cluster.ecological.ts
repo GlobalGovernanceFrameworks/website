@@ -255,8 +255,8 @@ export const ecologicalEntities: GgfEntity[] = [
       slug: 'kinship-garden',
       group: 'planetaryHealthResilience',
       outline: {
-        version: 'v4.0.1',
-        updated: '2026-08-08',
+        version: 'v4.1',
+        updated: '2026-09-04',
         maturity: 'adversarial',
         standfirst:
           'Food systems built on relationship rather than yield: farmworker justice, local food hubs and regenerative practice compensated through Hearts and Leaves, so that growing food well is paid work rather than a sacrifice made by the grower. Indigenous-guided throughout, and explicit that Right Relationship with land is a governing constraint rather than a framing device.'
