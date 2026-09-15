@@ -12,6 +12,10 @@
 //   "scripts": { "validate:schema": "tsx scripts/validate-schema.js" }
 //
 // Exits 1 on errors, 0 on warnings only.
+//
+// The falsification register (_register.ts) is checked here too, but never as
+// blocking: an unsupported maturity label or a shared untested assumption is
+// a claim the corpus cannot yet back, not a broken site.
 
 import fs from 'fs';
 import path from 'path';
@@ -502,6 +506,18 @@ async function main() {
   const ui = validateUIConsistency(entities, groupMetadata);
   const cycles = findCircularDependencies(entities);
   const orphans = findOrphanedEntities(entities, relationships);
+  const register = schema.validateRegister
+    ? schema.validateRegister(schema.hypotheses ?? [], schema.assumptions ?? [], entities, {
+        baseline: schema.acceptedIssues ?? []
+      })
+    : null;
+
+  // Register issues at info severity (and baselined ones) are counted in the
+  // REGISTER section rather than listed as hygiene, or --strict could never pass.
+  const registerItems = (codes) =>
+    (register?.issues ?? [])
+      .filter((i) => codes.includes(i.code) && i.severity !== 'info')
+      .map((i) => i.message);
 
   /*
    * Two severities.
@@ -575,7 +591,52 @@ async function main() {
       severity: 'hygiene',
       items: [...outline.warnings, ...tier.warnings, ...ui.warnings, ...rels.warnings],
       pass: 'Versions, statuses and title keys are consistent'
-    }
+    },
+    ...(register
+      ? [
+          {
+            name: 'Register references resolve',
+            severity: 'hygiene',
+            items: registerItems([
+              'register-duplicate-id',
+              'register-unknown-framework',
+              'register-unknown-assumption',
+              'register-bad-date'
+            ]),
+            pass: 'Every hypothesis names a known framework and assumption'
+          },
+          {
+            name: 'Verdicts backed by evidence',
+            severity: 'hygiene',
+            items: registerItems(['register-verdict-without-evidence', 'register-verdict-direction']),
+            pass: 'No verdict beyond "open" without evidence pointing that way'
+          },
+          {
+            name: 'Falsification coverage (tier 0–1)',
+            severity: 'hygiene',
+            items: registerItems(['missing-falsification-profile']),
+            pass: 'Every tier 0–1 document has registered hypotheses'
+          },
+          {
+            name: 'Maturity claims backed (tier 0–1)',
+            severity: 'hygiene',
+            items: registerItems(['maturity-without-evidence']),
+            pass: 'Every tier 0–1 maturity label is backed by registered evidence'
+          },
+          {
+            name: 'Shared untested assumptions',
+            severity: 'hygiene',
+            items: registerItems(['common-mode-assumption']),
+            pass: 'No widely shared assumption lacks an independent test'
+          },
+          {
+            name: 'Disconfirmation propagation',
+            severity: 'hygiene',
+            items: registerItems(['dependent-on-disconfirmed']),
+            pass: 'Nothing shares an assumption with a disconfirmed hypothesis'
+          }
+        ]
+      : [])
   ];
 
   const blocking = checks.filter((c) => c.severity === 'blocking');
@@ -652,6 +713,45 @@ async function main() {
     console.log('');
     console.log('  Not yet published:');
     outline.stats.orphanFolders.forEach((d) => console.log(`    ${d}`));
+  }
+
+  if (register) {
+    const st = register.stats;
+    const baselineSet = new Set(schema.acceptedIssues ?? []);
+    const infoByCode = register.issues
+      .filter((i) => i.severity === 'info' && !baselineSet.has(i.key))
+      .reduce((acc, i) => ((acc[i.code] = [...(acc[i.code] ?? []), i.message]), acc), {});
+    const baselined = register.issues.filter((i) => baselineSet.has(i.key)).length;
+
+    console.log('');
+    console.log('FALSIFICATION REGISTER');
+    console.log('');
+    console.log(`  Hypotheses                          ${st.hypotheses}`);
+    console.log(`  Documents with hypotheses           ${st.documentsWithHypotheses} of ${st.publishedDocuments}`);
+    console.log(`  Shared assumptions                  ${st.sharedAssumptions}`);
+    console.log(`  Evidence entries, independent       ${st.independentEvidence}`);
+    console.log('');
+    Object.entries(st.byVerdict).forEach(([v, n]) => console.log(`  ${v.padEnd(14)} ${n}`));
+    if (Object.keys(st.evidenceByKind).length) {
+      console.log('');
+      Object.entries(st.evidenceByKind).forEach(([k, n]) => console.log(`  ${k.padEnd(20)} ${n}`));
+    }
+
+    const infoCodes = Object.keys(infoByCode);
+    if (infoCodes.length || baselined) {
+      console.log('');
+      console.log('  Counted, not yet acted on:');
+      for (const code of infoCodes) {
+        console.log(`    ${code.padEnd(32)} ${infoByCode[code].length}`);
+        if (VERBOSE) infoByCode[code].forEach((m) => console.log(`      ${m}`));
+      }
+      if (baselined) console.log(`    ${'baselined'.padEnd(32)} ${baselined}`);
+    }
+    if (register.staleBaseline.length) {
+      console.log('');
+      console.log('  Baseline entries that no longer match anything (delete them):');
+      register.staleBaseline.forEach((k) => console.log(`    ${k}`));
+    }
   }
 
   /* ---- result ---- */
