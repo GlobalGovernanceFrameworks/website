@@ -14,7 +14,7 @@
  */
 
 import type { GgfEntity } from './_types';
-import type { Hypothesis, Assumption, Evidence } from './_register';
+import type { Hypothesis, Assumption, Evidence, Verdict } from './_register';
 import type { ValidationIssue, Severity } from './_validate';
 
 export interface RegisterOptions {
@@ -34,6 +34,7 @@ export interface RegisterStats {
   evidenceByKind: Record<string, number>;
   independentEvidence: number;
   sharedAssumptions: number;
+  revisions: number;
 }
 
 export interface RegisterResult {
@@ -52,6 +53,14 @@ export const REGISTER_CODES = [
   'register-unused-assumption',
   'register-verdict-without-evidence',
   'register-verdict-direction',
+  'register-duplicate-evidence-ref',
+  'register-verdict-without-history',
+  'register-revision-mismatch',
+  'register-revision-chain',
+  'register-revision-unknown-evidence',
+  'register-revision-without-evidence',
+  'register-revision-premature-evidence',
+  'unanswered-disconfirmation',
   'missing-falsification-profile',
   'maturity-without-evidence',
   'common-mode-assumption',
@@ -171,6 +180,71 @@ export function validateRegister(
     }
   }
 
+  // --- Revision history ------------------------------------------------------
+  // How the corpus changed its mind. Structural rules are errors because a
+  // broken history cannot be analysed later; an unanswered failure is a
+  // warning because the answer may legitimately be pending.
+  for (const h of hypotheses) {
+    const refs = new Set<string>();
+    for (const ev of h.evidence) {
+      if (refs.has(ev.ref)) {
+        add('register-duplicate-evidence-ref', 'error', [h.id, ev.ref],
+          `${h.id}: evidence ref "${ev.ref}" appears twice; revisions cite evidence by ref`);
+      }
+      refs.add(ev.ref);
+    }
+    const evidenceDate = new Map(h.evidence.map((ev) => [ev.ref, ev.date]));
+    const revisions = h.revisions ?? [];
+
+    if (revisions.length === 0) {
+      if (h.verdict !== 'open') {
+        add('register-verdict-without-history', 'error', [h.id],
+          `${h.id} has verdict "${h.verdict}" but no revision recording how it got there`);
+      }
+      continue;
+    }
+
+    const last = revisions[revisions.length - 1];
+    if (last.to !== h.verdict) {
+      add('register-revision-mismatch', 'error', [h.id],
+        `${h.id}: verdict is "${h.verdict}" but the latest revision moved it to "${last.to}"`);
+    }
+
+    let expectedFrom: Verdict = 'open';
+    let previousDate = '';
+    revisions.forEach((r, i) => {
+      const at = `${h.id}#${i + 1}`;
+      if (!ISO_DATE.test(r.date)) {
+        add('register-bad-date', 'error', [at], `${at}: revision has non-ISO date "${r.date}"`);
+      }
+      if (r.from !== expectedFrom || r.from === r.to || (previousDate && r.date < previousDate)) {
+        add('register-revision-chain', 'error', [at],
+          `${at}: revision ${r.from} → ${r.to} on ${r.date} does not follow ${expectedFrom}${previousDate ? ` (${previousDate})` : ''}`);
+      }
+      if (r.evidence.length === 0 && r.to !== 'retired' && r.to !== 'open') {
+        add('register-revision-without-evidence', 'error', [at],
+          `${at}: moved to "${r.to}" citing no evidence`);
+      }
+      for (const ref of r.evidence) {
+        const d = evidenceDate.get(ref);
+        if (d === undefined) {
+          add('register-revision-unknown-evidence', 'error', [at, ref],
+            `${at}: cites "${ref}", which is not in ${h.id}.evidence`);
+        } else if (ISO_DATE.test(d) && ISO_DATE.test(r.date) && d > r.date) {
+          add('register-revision-premature-evidence', 'error', [at, ref],
+            `${at}: dated ${r.date} but cites "${ref}" dated ${d}`);
+        }
+      }
+      expectedFrom = r.to;
+      previousDate = r.date;
+    });
+
+    if ((h.verdict === 'narrowed' || h.verdict === 'disconfirmed') && last.to === h.verdict && !last.response) {
+      add('unanswered-disconfirmation', 'warning', [h.id],
+        `${h.id} was ${h.verdict} on ${last.date} with no response: revise ${h.source.section} or publish why not`);
+    }
+  }
+
   // --- Coverage and maturity -------------------------------------------------
   const hypsByFramework = new Map<string, Hypothesis[]>();
   for (const h of hypotheses) {
@@ -274,7 +348,8 @@ export function validateRegister(
       byVerdict: count(hypotheses.map((h) => h.verdict)),
       evidenceByKind: count(allEvidence.map((e) => e.kind)),
       independentEvidence: allEvidence.filter((e) => e.producedBy === 'independent').length,
-      sharedAssumptions
+      sharedAssumptions,
+      revisions: hypotheses.reduce((n, h) => n + (h.revisions?.length ?? 0), 0)
     }
   };
 }

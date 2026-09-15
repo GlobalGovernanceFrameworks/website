@@ -12,6 +12,11 @@
  * Rules for this file:
  *  - `label` is a one-line pointer, never a copy of the document's wording;
  *  - no verdict other than 'open' without at least one evidence entry;
+ *  - every verdict change is appended to `revisions`, never edited in place:
+ *    the register records how the corpus changed its mind, not only what it
+ *    believes now;
+ *  - a move to 'narrowed' or 'disconfirmed' carries a response: the framework
+ *    revision it led to, or the published reason for leaving it unchanged;
  *  - evidence records what was done, not what it proved: an adversarial
  *    review that did not address a hypothesis is not evidence for it;
  *  - `producedBy: 'independent'` means someone outside the project produced
@@ -58,6 +63,27 @@ export interface Expectation {
   };
 }
 
+/**
+ * One verdict change. Append-only; the last `to` is the current verdict.
+ * Revision history is what lets the corpus observe its own learning: which
+ * evidence moves verdicts, how long contradiction takes to register, and
+ * whether a failed claim changed anything.
+ */
+export interface Revision {
+  /** ISO date of the verdict change. */
+  date: string;
+  from: Verdict;
+  to: Verdict;
+  /** `ref` values of entries in this hypothesis's `evidence`. */
+  evidence: string[];
+  reason: string;
+  /**
+   * What the change led to. 'revised' names the framework version and section
+   * that changed; 'no-change' gives the reason, or where it is published.
+   */
+  response?: { kind: 'revised' | 'no-change'; ref: string };
+}
+
 export interface Hypothesis {
   id: string;
   /** Entity id of the framework or specification stating it. */
@@ -68,6 +94,8 @@ export interface Hypothesis {
   assumes: string[];
   evidence: Evidence[];
   verdict: Verdict;
+  /** Required once the verdict leaves 'open'. */
+  revisions?: Revision[];
   expectations?: Expectation[];
   note?: string;
 }

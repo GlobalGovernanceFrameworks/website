@@ -608,8 +608,31 @@ async function main() {
           {
             name: 'Verdicts backed by evidence',
             severity: 'hygiene',
-            items: registerItems(['register-verdict-without-evidence', 'register-verdict-direction']),
+            items: registerItems([
+              'register-verdict-without-evidence',
+              'register-verdict-direction',
+              'register-duplicate-evidence-ref'
+            ]),
             pass: 'No verdict beyond "open" without evidence pointing that way'
+          },
+          {
+            name: 'Revision history intact',
+            severity: 'hygiene',
+            items: registerItems([
+              'register-verdict-without-history',
+              'register-revision-mismatch',
+              'register-revision-chain',
+              'register-revision-unknown-evidence',
+              'register-revision-without-evidence',
+              'register-revision-premature-evidence'
+            ]),
+            pass: 'Every verdict change is recorded, ordered, and cites existing evidence'
+          },
+          {
+            name: 'Failed hypotheses answered',
+            severity: 'hygiene',
+            items: registerItems(['unanswered-disconfirmation']),
+            pass: 'Every narrowed or disconfirmed hypothesis led to a revision or a published reason'
           },
           {
             name: 'Falsification coverage (tier 0–1)',
@@ -730,6 +753,7 @@ async function main() {
     console.log(`  Documents with hypotheses           ${st.documentsWithHypotheses} of ${st.publishedDocuments}`);
     console.log(`  Shared assumptions                  ${st.sharedAssumptions}`);
     console.log(`  Evidence entries, independent       ${st.independentEvidence}`);
+    console.log(`  Verdict revisions                   ${st.revisions}`);
     console.log('');
     Object.entries(st.byVerdict).forEach(([v, n]) => console.log(`  ${v.padEnd(14)} ${n}`));
     if (Object.keys(st.evidenceByKind).length) {
