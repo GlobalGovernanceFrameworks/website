@@ -54,11 +54,11 @@ export const governanceOSEntities: GgfEntity[] = [
       emoji: '🏛️',
       slug: 'meta-governance',
       outline: {
-        version: 'v1.6.1',
-        updated: '2026-08-08',
+        version: 'v1.6.2',
+        updated: '2026-09-15',
         maturity: 'adversarial',
         standfirst:
-          'Coordination between institutions that do not answer to one another. Version 1.6.1 preserves strict limits on what coordination may do—it may not legislate, tax, sanction, command forces, inherit another institution’s jurisdiction, or turn indicators into constitutional judgments—while strengthening what responsible coordination must accomplish: map causal responsibility, expose delay and omission, test common dependencies and self-perpetuating incentives, keep administrative burdens proportionate, and close or devolve arrangements that no longer add value. Success is measured not by coordination activity, but by problems resolved, responsibilities clarified, and coordination safely simplified, localized, or ended.'
+          'Coordination between institutions that do not answer to one another. It may not legislate, tax, sanction, command forces, inherit another institution’s jurisdiction, or turn indicators into constitutional judgments. What it must do is map causal responsibility, expose delay and omission, test shared dependencies, keep burdens proportionate, and close arrangements that no longer add value. Version 1.6.2 lets it learn whether its own judgment is reliable: decisions register in advance what they expect to happen, so calibration can be checked against outcomes rather than asserted. Success is measured by problems resolved and coordination simplified or ended, not by coordination activity.'
       }
     }
   },
@@ -84,11 +84,11 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'constitutional-interface',
       outline: {
         kind: 'specification',
-        version: 'v0.2.7',
-        updated: '2026-08-21',
+        version: 'v0.2.8',
+        updated: '2026-09-15',
         maturity: 'internal',
         standfirst:
-          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty. Earlier revisions added causal responsibility, duties attached to retained jurisdiction, constitutional-gap handling, purpose firewalls for recognition data, and a person-continuity interface that permits bounded attestation without creating a universal identity or civil registry. Version 0.2.5 asked every framework to state the conditions under which it does not apply, and stopped an institution from being wound up because nothing had gone wrong. Version 0.2.6 lets two honest valuations of the same object disagree without either being wrong, and asks each framework to name what it depends on and has never mentioned. Version 0.2.7 addresses a measurement trap that punishes the institutions doing best: when help becomes easier to ask for, recorded harm goes up, and a system that reads that rise as failure will quietly select for services nobody can reach.'
+          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty. Successive revisions have asked frameworks to name the conditions under which they do not apply, let honest valuations of the same object disagree, and stopped systems from reading a rise in recorded harm as failure when help has simply become easier to ask for. Version 0.2.8 makes confidence checkable: every consequential decision records in advance what it expects to happen and what would count as being wrong, so an institution can learn whether its confidence deserves trust—without anyone being ranked or funded on the result.'
       }
     }
   },
