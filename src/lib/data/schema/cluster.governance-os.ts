@@ -54,11 +54,11 @@ export const governanceOSEntities: GgfEntity[] = [
       emoji: '🏛️',
       slug: 'meta-governance',
       outline: {
-        version: 'v1.6.2',
+        version: 'v1.6.3',
         updated: '2026-09-15',
         maturity: 'adversarial',
         standfirst:
-          'Coordination between institutions that do not answer to one another. It may not legislate, tax, sanction, command forces, inherit another institution’s jurisdiction, or turn indicators into constitutional judgments. What it must do is map causal responsibility, expose delay and omission, test shared dependencies, keep burdens proportionate, and close arrangements that no longer add value. Version 1.6.2 lets it learn whether its own judgment is reliable: decisions register in advance what they expect to happen, so calibration can be checked against outcomes rather than asserted. Success is measured by problems resolved and coordination simplified or ended, not by coordination activity.'
+          'Coordination between institutions that do not answer to one another. It may not legislate, tax, sanction, command forces, inherit another institution’s jurisdiction, or turn indicators into constitutional judgments. What it must do is map causal responsibility, expose delay and omission, test shared dependencies, keep burdens proportionate, and close arrangements that no longer add value. Versions 1.6.2–1.6.3 let it learn whether its own judgment is reliable, and require documented overconfidence to widen the margin for error or be publicly explained.'
       }
     }
   },
@@ -84,11 +84,11 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'constitutional-interface',
       outline: {
         kind: 'specification',
-        version: 'v0.2.8',
+        version: 'v0.2.9',
         updated: '2026-09-15',
         maturity: 'internal',
         standfirst:
-          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty. Successive revisions have asked frameworks to name the conditions under which they do not apply, let honest valuations of the same object disagree, and stopped systems from reading a rise in recorded harm as failure when help has simply become easier to ask for. Version 0.2.8 makes confidence checkable: every consequential decision records in advance what it expects to happen and what would count as being wrong, so an institution can learn whether its confidence deserves trust—without anyone being ranked or funded on the result.'
+          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty. Successive revisions have asked frameworks to name the conditions under which they do not apply, let honest valuations of the same object disagree, and stopped systems from reading a rise in recorded harm as failure when help has simply become easier to ask for. Version 0.2.8 makes confidence checkable: every consequential decision records in advance what it expects to happen and what would count as being wrong, so an institution can learn whether its confidence deserves trust—without anyone being ranked or funded on the result. Version 0.2.9 closes the loop: an institution whose record shows overconfidence must build in more room for error, or say publicly why not.'
       }
     }
   },
