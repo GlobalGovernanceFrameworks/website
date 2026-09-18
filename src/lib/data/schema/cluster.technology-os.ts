@@ -46,11 +46,11 @@ export const technologyOSEntities: GgfEntity[] = [
       slug: 'technology-governance',
       group: 'humanSocialSystems',
       outline: {
-        version: 'v3.6',
-        updated: '2026-08-01',
+        version: 'v3.7',
+        updated: '2026-09-18',
         maturity: 'adversarial',
         standfirst:
-          'How a community decides what technology it will accept, and on what terms — with an equally careful account of when intervention is lawful and when it is merely tempting. Version 3.6 separates public-interest standards from legal obligation: the framework can define what good practice looks like, but it cannot convert that definition into law, create a regulator, or override a community that declines.'
+          'How a community decides what technology it will accept, and on what terms — with an equally careful account of when intervention is lawful and when it is merely tempting. Version 3.7 separates public-interest standards from legal obligation while extending the framework to general-purpose, frontier, and agentic AI: it can assess governed uses, cross-use capabilities, systemic risks, delegated authority, and irreversible release decisions, but it cannot convert those assessments into law, create a regulator, or override communities and competent institutions that retain lawful authority.'
       }
     }
   },
