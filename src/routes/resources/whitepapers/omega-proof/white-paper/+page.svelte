@@ -277,12 +277,6 @@
     z-index: 1000;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .reading-progress-container {
-      background: #1f2937;
-    }
-  }
-
   .reading-progress-bar {
     height: 100%;
     background: linear-gradient(90deg, #3b82f6, #4f46e5);
@@ -302,13 +296,6 @@
     transition: all 0.3s ease;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .floating-nav {
-      background: #1f2937;
-      border-color: #374151;
-    }
-  }
-
   .floating-nav.expanded {
     width: 320px;
   }
@@ -325,12 +312,6 @@
     transition: transform 0.3s;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .nav-toggle {
-      color: #f9fafb;
-    }
-  }
-
   .nav-toggle:hover {
     transform: scale(1.1);
   }
@@ -345,12 +326,6 @@
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #e5e7eb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .nav-content h3 {
-      border-color: #374151;
-    }
   }
 
   .section-list {
@@ -379,20 +354,8 @@
     color: #111827;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .section-list button {
-      color: #f9fafb;
-    }
-  }
-
   .section-list button:hover {
     background: #f3f4f6;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .section-list button:hover {
-      background: #374151;
-    }
   }
 
   .section-list li.active button {
@@ -413,12 +376,6 @@
     flex-shrink: 0;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .section-list .section-number {
-      background: #374151;
-    }
-  }
-
   .section-list li.active .section-number {
     background: rgba(255, 255, 255, 0.2);
     color: white;
@@ -427,12 +384,6 @@
   .nav-actions {
     padding-top: 0.5rem;
     border-top: 1px solid #e5e7eb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .nav-actions {
-      border-color: #374151;
-    }
   }
 
   .btn-back {
@@ -446,22 +397,9 @@
     transition: all 0.2s;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .btn-back {
-      color: #9ca3af;
-    }
-  }
-
   .btn-back:hover {
     background: #f3f4f6;
     color: #111827;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .btn-back:hover {
-      background: #374151;
-      color: #f9fafb;
-    }
   }
 
   /* Language Fallback Notice */
@@ -490,12 +428,6 @@
     margin-bottom: 3rem;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .paper-header {
-      border-color: #374151;
-    }
-  }
-
   .epigraph {
     font-size: 1.125rem;
     font-style: italic;
@@ -519,12 +451,6 @@
     margin-bottom: 2rem;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .subtitle {
-      color: #9ca3af;
-    }
-  }
-
   .paper-meta {
     display: flex;
     justify-content: center;
@@ -535,20 +461,8 @@
     margin-bottom: 2rem;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .paper-meta {
-      color: #9ca3af;
-    }
-  }
-
   .separator {
     color: #e5e7eb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .separator {
-      color: #374151;
-    }
   }
 
   .header-actions {
@@ -571,12 +485,6 @@
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #e5e7eb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .section-header {
-      border-color: #374151;
-    }
   }
 
   .section-header .section-number {
@@ -606,12 +514,6 @@
     max-width: 65ch; /* Optimal reading width */
   }
 
-  @media (prefers-color-scheme: dark) {
-    .section-content {
-      color: #cbd5e1;
-    }
-  }
-
   /* Keep Headings Sans-Serif for contrast */
   .section-content :global(h1),
   .section-content :global(h2),
@@ -625,17 +527,6 @@
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     line-height: 1.3;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .section-content :global(h1),
-    .section-content :global(h2),
-    .section-content :global(h3),
-    .section-content :global(h4),
-    .section-content :global(h5),
-    .section-content :global(h6) {
-      color: #f1f5f9;
-    }
   }
 
   /* Specific sizing for each level */
@@ -663,12 +554,6 @@
   .section-content :global(p) {
     margin-bottom: 1.25rem;
     color: #374151;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .section-content :global(p) {
-      color: #d1d5db;
-    }
   }
 
   /* Fix for Lists - Explicitly restore styles */
@@ -709,12 +594,6 @@
     font-weight: bold;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .section-content :global(li) {
-      color: #d1d5db;
-    }
-  }
-
   .section-content :global(blockquote) {
     border-left: 4px solid #d97706; /* Gold/Accent (Matches Research Pkg) */
     background: #fffbeb; /* Light Yellow background */
@@ -726,14 +605,6 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle lift */
   }
 
-  @media (prefers-color-scheme: dark) {
-    .section-content :global(blockquote) {
-      background: #1e1b4b; /* Dark Navy background for dark mode */
-      color: #94a3b8;
-      border-left-color: #fbbf24; /* Lighter Gold */
-    }
-  }
-
   .section-content :global(code) {
     background: #f3f4f6;
     padding: 0.125rem 0.375rem;
@@ -742,24 +613,12 @@
     font-family: 'Fira Code', monospace;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .section-content :global(code) {
-      background: #1f2937;
-    }
-  }
-
   .section-content :global(pre) {
     background: #f3f4f6;
     padding: 1rem;
     border-radius: 0.5rem;
     overflow-x: auto;
     margin: 1.5rem 0;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .section-content :global(pre) {
-      background: #1f2937;
-    }
   }
 
   .section-content :global(table) {
@@ -775,22 +634,9 @@
     text-align: left;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .section-content :global(th),
-    .section-content :global(td) {
-      border-color: #374151;
-    }
-  }
-
   .section-content :global(th) {
     background: #f3f4f6;
     font-weight: 600;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .section-content :global(th) {
-      background: #1f2937;
-    }
   }
 
   /* Paper Footer */
@@ -801,23 +647,11 @@
     text-align: center;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .paper-footer {
-      border-color: #374151;
-    }
-  }
-
   .closing-epigraph {
     font-size: 1.25rem;
     font-style: italic;
     color: #6b7280;
     margin-bottom: 1rem;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .closing-epigraph {
-      color: #9ca3af;
-    }
   }
 
   .end-mark {
@@ -870,21 +704,8 @@
     color: #111827;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .btn-tertiary {
-      background: #1f2937;
-      color: #f9fafb;
-    }
-  }
-
   .btn-tertiary:hover {
     background: #e5e7eb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .btn-tertiary:hover {
-      background: #374151;
-    }
   }
 
   /* Print Styles */
