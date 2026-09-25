@@ -73,15 +73,15 @@
   },
   "omega": {
     "badges": {
-      "featured": "FRAMHÄVD FORSKNING",
-      "status": "Slutförd jan 2026"
+      "featured": "ARKIVERAD FORSKNING",
+      "status": "Slutsatsen tillbakadragen sept 2026"
     },
-    "description": "Vi använde adversariell AI för att simulera de fyra veto-spelarna i Ukrainakriget. De förkastade enhälligt en matematiskt optimal fredsuppgörelse. Detta är obduktionen av varför fred är arkitektoniskt omöjlig under nuvarande regler.",
+    "description": "Ett adversariellt AI-experiment där fyra simulerade vetoaktörer i Ukrainakriget avvisade en konstruerad fredsuppgörelse. Originalrapporten drog slutsatsen att fred är arkitektoniskt omöjlig under nuvarande regler. Den slutsatsen har sedan dragits tillbaka: ett avvisat förslag kan inte bevisa att ingen uppgörelse finns. Rapporten finns kvar online med en revideringsnotis om vad som består och vad som prövades.",
     "actions": {
-      "read": "Läs analysen",
-      "download": "Ladda ner PDF"
+      "read": "Läs rapporten och revideringsnotisen",
+      "download": "Ladda ner PDF (original)"
     },
-    "meta": "65 sidor • 13 forskningsdokument • 4 terminala buggar"
+    "meta": "65 sidor • 13 forskningsdokument • Reviderad sept 2026"
   },
   "modelEvaluation": {
     "badges": {

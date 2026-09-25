@@ -11,8 +11,8 @@ export const prerender = false;
 const metadata = {
   title: 'The Omega Proof',
   subtitle: 'An Empirical Demonstration of the Nation-State System\'s Terminal Incompatibility with Planetary Peace',
-  description: 'A rigorous test of whether planetary-scale peace is achievable within current system constraints. Result: Peace is architecturally impossible under Westphalian rules.',
-  date: 'December 2025',
+  description: 'Original December 2025 paper, preserved with a September 2026 revision note. Its impossibility conclusion has been withdrawn; the surviving hypotheses were reworked and tested against the 1973–79 Egypt–Israel negotiations.',
+  date: 'December 2025 (revision note September 2026)',
   authors: 'Björn Kenneth Holmström (with AI collaboration: Gemini, DeepSeek, Grok, Claude)',
   readingTime: '~60 minutes (full paper)',
   slug: 'omega-proof'

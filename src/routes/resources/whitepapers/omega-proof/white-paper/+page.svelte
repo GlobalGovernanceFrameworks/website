@@ -4,6 +4,7 @@
   import { page } from '$app/stores';
   import { locale, t } from '$lib/i18n';
   import { base } from '$app/paths';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   
   export let data;
   
@@ -75,7 +76,7 @@
 
 <svelte:head>
   <title>The Omega Proof: Full Paper | Global Governance Frameworks</title>
-  <meta name="description" content="Complete 7-section analysis demonstrating the architectural impossibility of peace under current international system constraints." />
+  <meta name="description" content="Original December 2025 text of The Omega Proof, preserved unchanged. Its impossibility conclusion was withdrawn in September 2026; see the revision note." />
 </svelte:head>
 
 <!-- Reading Progress Bar -->
@@ -131,6 +132,13 @@
 
 <!-- Main Content -->
 <article class="white-paper">
+  <div class="revision-notice">
+    <SectionNotice type="warning" customContent={true} title={$t('omega.revision.shortNoticeTitle')}>
+      <p>{$t('omega.revision.whitePaperNotice')}</p>
+      <p><a href="{base}/resources/whitepapers/omega-proof#revision-note">{$t('omega.revision.shortNoticeLink')} →</a></p>
+    </SectionNotice>
+  </div>
+
   <header class="paper-header">
     <div class="header-content">
       <p class="epigraph">{$t('omega.epigraph')}</p>
@@ -249,8 +257,8 @@
         <a href="{base}/resources/whitepapers/omega-proof/research-package/0" class="btn btn-secondary">
           {$t('omega.browseResearch')}
         </a>
-        <a href="{base}/get-involved?source=salvage" class="btn btn-tertiary">
-          {$t('omega.joinSalvage')}
+        <a href="{base}/resources/whitepapers/omega-proof#revision-note" class="btn btn-tertiary">
+          {$t('omega.revision.ctaReadRevision')}
         </a>
       </div>
     </div>
@@ -464,6 +472,9 @@
     text-align: center;
     font-size: 0.875rem;
   }
+
+  /* Revision notice (Sept 2026) — kept visible in print */
+  .revision-notice { margin-top: 1rem; }
 
   /* Main Article */
   .white-paper {

@@ -91,49 +91,6 @@
     </p>
   </div>
   
-  <!-- Omega Proof - Flagship Research -->
-  {#if omegaProof}
-    <div class="omega-hero-wrapper">
-      <div class="omega-hero-card">
-        <div class="omega-content">
-          <div class="omega-badges">
-            <span class="omega-badge featured">{getWhitepaperTranslation('omega.badges.featured', 'FEATURED RESEARCH')}</span>
-            <span class="omega-badge status">{getWhitepaperTranslation('omega.badges.status', 'Completed Jan 2026')}</span>
-          </div>
-          
-          <h2>
-            <a href="{base}/resources/whitepapers/omega-proof" style="color: inherit; text-decoration: none;">
-              {omegaProof.meta.title}
-            </a>
-          </h2>
-          
-          <p class="omega-subtitle">{omegaProof.meta.subtitle}</p>
-          <p class="omega-desc">
-            {getWhitepaperTranslation('omega.description', 'We used adversarial AI to simulate the four veto-players in the Ukraine war. They unanimously rejected a mathematically optimal peace deal. This is the autopsy of why peace is architecturally impossible under current rules.')}
-          </p>
-          
-          <div class="omega-actions">
-            <div class="button-row">
-              <a href="{base}/resources/whitepapers/omega-proof" class="omega-btn">
-                {getWhitepaperTranslation('omega.actions.read', 'Read the Analysis')} →
-              </a>
-              {#if omegaProof.meta.pdfPath}
-                <a href="{omegaProof.meta.pdfPath}" class="omega-btn secondary" download>
-                  <span class="icon">📥</span> {getWhitepaperTranslation('omega.actions.download', 'Download PDF')}
-                </a>
-              {/if}
-            </div>
-            <span class="omega-meta">{getWhitepaperTranslation('omega.meta', '65 Pages • 13 Research Docs • 4 Terminal Bugs')}</span>
-          </div>
-        </div>
-        
-        <div class="omega-visual">
-          <div class="visual-placeholder">Ω</div>
-        </div>
-      </div>
-    </div>
-  {/if}
-
   <!-- ITP - Technical Whitepaper -->
   {#if itp}
     <div class="itp-hero-wrapper">
@@ -220,6 +177,49 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
           </div>
+        </div>
+      </div>
+    </div>
+  {/if}
+
+  <!-- Omega Proof - Flagship Research -->
+  {#if omegaProof}
+    <div class="omega-hero-wrapper">
+      <div class="omega-hero-card">
+        <div class="omega-content">
+          <div class="omega-badges">
+            <span class="omega-badge featured">{getWhitepaperTranslation('omega.badges.featured', 'FEATURED RESEARCH')}</span>
+            <span class="omega-badge status">{getWhitepaperTranslation('omega.badges.status', 'Completed Jan 2026')}</span>
+          </div>
+          
+          <h2>
+            <a href="{base}/resources/whitepapers/omega-proof" style="color: inherit; text-decoration: none;">
+              {omegaProof.meta.title}
+            </a>
+          </h2>
+          
+          <p class="omega-subtitle">{omegaProof.meta.subtitle}</p>
+          <p class="omega-desc">
+            {getWhitepaperTranslation('omega.description', 'We used adversarial AI to simulate the four veto-players in the Ukraine war. They unanimously rejected a mathematically optimal peace deal. This is the autopsy of why peace is architecturally impossible under current rules.')}
+          </p>
+          
+          <div class="omega-actions">
+            <div class="button-row">
+              <a href="{base}/resources/whitepapers/omega-proof" class="omega-btn">
+                {getWhitepaperTranslation('omega.actions.read', 'Read the Analysis')} →
+              </a>
+              {#if omegaProof.meta.pdfPath}
+                <a href="{omegaProof.meta.pdfPath}" class="omega-btn secondary" download>
+                  <span class="icon">📥</span> {getWhitepaperTranslation('omega.actions.download', 'Download PDF')}
+                </a>
+              {/if}
+            </div>
+            <span class="omega-meta">{getWhitepaperTranslation('omega.meta', '65 Pages • 13 Research Docs • 4 Terminal Bugs')}</span>
+          </div>
+        </div>
+        
+        <div class="omega-visual">
+          <div class="visual-placeholder">Ω</div>
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@
   import { base } from '$app/paths';
   import { slide } from 'svelte/transition';
   import { afterNavigate } from '$app/navigation'; 
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   
   export let data;
   $: ({ phases, currentDoc, allDocs } = data);
@@ -146,6 +147,12 @@
       </aside>
 
       <main class="package-main">
+        <div class="revision-notice">
+          <SectionNotice type="warning" customContent={true} title={$t('omega.revision.shortNoticeTitle')}>
+      <p>{$t('omega.revision.researchNotice')}</p>
+      <p><a href="{base}/resources/whitepapers/omega-proof#revision-note">{$t('omega.revision.shortNoticeLink')} →</a></p>
+    </SectionNotice>
+        </div>
         {#if currentDoc}
           <article class="document-paper">
             <header class="doc-paper-header">
@@ -528,6 +535,8 @@
     color: var(--text-muted);
     margin-top: 0.25rem;
   }
+
+  .revision-notice :global(.section-notice) { margin-top: 0; margin-bottom: 2rem; background: #fffbeb; }
 
   /* --- Document Paper (Main Viewer) --- */
   .document-paper {

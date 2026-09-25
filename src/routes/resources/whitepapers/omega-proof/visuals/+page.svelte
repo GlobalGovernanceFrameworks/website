@@ -1,6 +1,8 @@
 <script>
   import { base } from '$app/paths';
   import { onMount } from 'svelte';
+  import { t } from '$lib/i18n';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   
   // Data comes from +page.js
   export let data;
@@ -16,7 +18,7 @@
 
 <svelte:head>
   <title>Visual Assets | The Omega Proof</title>
-  <meta name="description" content="Key architectural diagrams and data visualizations from The Omega Proof white paper." />
+  <meta name="description" content="Diagrams from the original Omega Proof paper (December 2025), whose conclusion was withdrawn in September 2026." />
 </svelte:head>
 
 <section class="visuals-hero">
@@ -37,7 +39,13 @@
 
 <section class="visuals-stream">
   <div class="container">
-    
+    <div class="revision-notice">
+      <SectionNotice type="warning" customContent={true} title={$t('omega.revision.shortNoticeTitle')}>
+      <p>{$t('omega.revision.visualsNotice')}</p>
+      <p><a href="{base}/resources/whitepapers/omega-proof#revision-note">{$t('omega.revision.shortNoticeLink')} →</a></p>
+    </SectionNotice>
+    </div>
+
     <div class="visuals-grid">
       {#each data.visuals as visual, i}
         <article class="visual-card" id={visual.id} style="animation-delay: {i * 100}ms" class:visible={isVisible}>
@@ -177,6 +185,9 @@
     margin: 0 auto;
     line-height: 1.6;
   }
+
+  .revision-notice { position: relative; z-index: 2; margin-bottom: 2rem; }
+  .revision-notice :global(.section-notice) { background: #fffbeb; }
 
   /* --- Visuals Stream --- */
   .visuals-stream {

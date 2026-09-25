@@ -3,6 +3,7 @@
   import { locale, t } from '$lib/i18n';
   import { onMount } from 'svelte';
   import { base } from '$app/paths';
+  import SectionNotice from '$lib/components/SectionNotice.svelte';
   
   export let data;
   
@@ -128,10 +129,10 @@
 <div class="omega-theme">
   <header class="hero">
     <div class="container">
-      <div class="death-certificate-badge">
-        <span class="pulse"></span>
-        <p class="epigraph">"This is not a warning. This is a death certificate."</p>
-      </div>
+      <a href="#revision-note" class="archive-badge">
+        <span class="archive-dot"></span>
+        <span>{$t('omega.revision.heroBadge')}</span>
+      </a>
       
       <h1 class="title">{meta.title}</h1>
       <p class="subtitle">{meta.subtitle}</p>
@@ -155,6 +156,13 @@
       </div>
     </div>
   </header>
+
+  <div class="container revision-notice-wrap">
+    <SectionNotice type="warning" customContent={true} title={$t('omega.revision.noticeTitle')}>
+      <p>{$t('omega.revision.noticeText')}</p>
+      <p><a href="#revision-note">{$t('omega.revision.noticeLink')} →</a></p>
+    </SectionNotice>
+  </div>
 
   <section id="executive-summary" class="executive-summary">
     <div class="container">
@@ -185,13 +193,16 @@
             </div>
             <div class="exp-row conclusion-row">
               <span class="exp-label">{$t('omega.conclusion')}:</span>
-              <p class="exp-text conclusion-text">{$t('omega.conclusionText')}</p>
+              <p class="exp-text conclusion-text">
+                <span class="struck">{$t('omega.conclusionText')}</span>
+                <a href="#revision-note" class="status-tag withdrawn">{$t('omega.revision.withdrawnTag')}</a>
+              </p>
             </div>
           </div>
         </div>
         
         <div class="summary-block">
-          <h3>{$t('omega.fourTerminalBugs')}</h3>
+          <h3>{$t('omega.fourTerminalBugs')} <a href="#revision-note" class="status-tag hypothesis">{$t('omega.revision.hypothesisTag')}</a></h3>
           <div class="bugs-grid">
             <div class="bug-card bug-1">
               <div class="bug-header">
@@ -244,7 +255,7 @@
         </div>
         
         <div class="summary-block">
-          <h3>{$t('omega.theTimeline')}</h3>
+          <h3>{$t('omega.theTimeline')} <a href="#revision-note" class="status-tag withdrawn">{$t('omega.revision.quarantinedTag')}</a></h3>
           <div class="timeline-box">
             <p class="timeline-intro">{$t('omega.timelineIntro')}</p>
             <div class="timeline-grid">
@@ -281,7 +292,7 @@
         </div>
         
         <div class="summary-block">
-          <h3>{$t('omega.threePossibleWorlds')}</h3>
+          <h3>{$t('omega.threePossibleWorlds')} <a href="#revision-note" class="status-tag withdrawn">{$t('omega.revision.quarantinedTag')}</a></h3>
           <div class="worlds-grid">
             <div class="world-card world-1">
               <div class="world-header">
@@ -318,6 +329,59 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="revision-note" class="revision-note">
+    <div class="container">
+      <div class="section-header">
+        <h2>{$t('omega.revision.sectionTitle')}</h2>
+        <p class="section-subtitle">{$t('omega.revision.sectionIntro')}</p>
+      </div>
+
+      <div class="revision-grid">
+        <div class="revision-card wrong">
+          <h3>{$t('omega.revision.wrongTitle')}</h3>
+          <ul>
+            <li>{$t('omega.revision.wrong1')}</li>
+            <li>{$t('omega.revision.wrong2')}</li>
+            <li>{$t('omega.revision.wrong3')}</li>
+          </ul>
+        </div>
+        <div class="revision-card survives">
+          <h3>{$t('omega.revision.survivesTitle')}</h3>
+          <ul>
+            <li>{$t('omega.revision.survives1')}</li>
+            <li>{$t('omega.revision.survives2')}</li>
+            <li>{$t('omega.revision.survives3')}</li>
+          </ul>
+        </div>
+        <div class="revision-card tested">
+          <h3>{$t('omega.revision.testedTitle')}</h3>
+          <ul>
+            <li>{$t('omega.revision.tested1')}</li>
+            <li>{$t('omega.revision.tested2')}</li>
+            <li>{$t('omega.revision.tested3')}</li>
+          </ul>
+        </div>
+        <div class="revision-card learned">
+          <h3>{$t('omega.revision.learnedTitle')}</h3>
+          <ul>
+            <li>{$t('omega.revision.learned1')}</li>
+            <li>{$t('omega.revision.learned2')}</li>
+            <li>{$t('omega.revision.learned3')}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="status-box">
+        <h3>{$t('omega.revision.statusTitle')}</h3>
+        <p class="status-line withdrawn-line">{$t('omega.revision.statusWithdrawn')}</p>
+        <p class="status-line retained-line">{$t('omega.revision.statusRetained')}</p>
+        <p class="status-line open-line">{$t('omega.revision.statusOpen')}</p>
+      </div>
+
+      <p class="revision-closing"><em>{$t('omega.revision.closing')}</em></p>
     </div>
   </section>
 
@@ -399,23 +463,23 @@
   <section class="cta-section">
     <div class="container">
       <div class="cta-box">
-        <h2>{$t('omega.ctaTitle')}</h2>
-        <p class="cta-text">{$t('omega.ctaText')}</p>
+        <h2>{$t('omega.revision.ctaTitle')}</h2>
+        <p class="cta-text">{$t('omega.revision.ctaText')}</p>
         
         <div class="cta-buttons">
-          <a href="{base}/resources/whitepapers/omega-proof/white-paper" class="btn btn-primary-large">
+          <a href="#revision-note" class="btn btn-primary-large">
+            {$t('omega.revision.ctaReadRevision')}
+          </a>
+          <a href="{base}/resources/whitepapers/omega-proof/white-paper" class="btn btn-secondary-large">
             {$t('omega.readFullPaper')}
           </a>
-          <a href="{base}/resources/whitepapers/omega-proof/downloads/omega-proof.pdf" class="btn btn-secondary-large" download>
-            <span>📥</span> Download PDF
-          </a>
-          <a href="{base}/get-involved?source=salvage" class="btn btn-secondary-large">
-            {$t('omega.joinSalvage')}
+          <a href="{base}/get-involved?source=omega" class="btn btn-secondary-large">
+            {$t('omega.revision.getInvolved')}
           </a>
         </div>
         
         <p class="cta-footer">
-          <em>{$t('omega.ctaFooter')}</em>
+          <em>{$t('omega.revision.ctaFooter')}</em>
         </p>
       </div>
     </div>
@@ -455,37 +519,26 @@
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   }
 
-  .death-certificate-badge {
+  .archive-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(220, 38, 38, 0.2);
-    border: 1px solid rgba(220, 38, 38, 0.5);
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid rgba(251, 191, 36, 0.5);
+    color: #fde68a;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     margin-bottom: 2rem;
+    font-size: 0.9rem;
+    text-decoration: none;
   }
+  .archive-badge:hover { background: rgba(251, 191, 36, 0.25); }
 
-  .pulse {
+  .archive-dot {
     width: 8px;
     height: 8px;
-    background-color: #ef4444;
+    background-color: #fbbf24;
     border-radius: 50%;
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
-    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
-  }
-
-  .epigraph {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 0.95rem;
-    color: #fca5a5;
-    margin: 0;
   }
 
   .title {
@@ -813,6 +866,50 @@
   .cta-text { font-size: 1.5rem; margin-bottom: 3rem; color: #cbd5e1; }
   .cta-buttons { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
   .cta-footer { color: #94a3b8; font-family: var(--font-serif); }
+
+  /* --- Revision (Sept 2026) --- */
+  .revision-notice-wrap { position: relative; z-index: 2; margin-top: -3rem; }
+  .revision-notice-wrap + .executive-summary { margin-top: 0; padding-top: 2rem; }
+  .revision-notice-wrap :global(.section-notice) { background: #fffbeb; }
+
+  .struck { text-decoration: line-through; text-decoration-color: rgba(220, 38, 38, 0.6); color: #64748b; }
+  .status-tag {
+    display: inline-block; margin-left: 0.5rem; padding: 0.15rem 0.55rem;
+    border-radius: 999px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.03em;
+    text-transform: uppercase; text-decoration: none; vertical-align: middle; white-space: nowrap;
+  }
+  .status-tag.withdrawn { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+  .status-tag.hypothesis { background: #e0e7ff; color: #3730a3; border: 1px solid #a5b4fc; }
+  .status-tag:hover { filter: brightness(0.95); }
+
+  .revision-note { padding: 4rem 0; background: #fff; border-top: 4px solid var(--color-accent); }
+  .revision-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem; margin-bottom: 2rem;
+  }
+  .revision-card {
+    background: #f8fafc; border: 1px solid #e2e8f0; border-top: 4px solid #94a3b8;
+    border-radius: 0.75rem; padding: 1.5rem;
+  }
+  .revision-card.wrong { border-top-color: #dc2626; }
+  .revision-card.survives { border-top-color: #16a34a; }
+  .revision-card.tested { border-top-color: #2563eb; }
+  .revision-card.learned { border-top-color: var(--color-accent); }
+  .revision-card h3 { margin: 0 0 0.75rem 0; font-size: 1.15rem; color: #1e293b; }
+  .revision-card ul { margin: 0; padding-left: 1.1rem; }
+  .revision-card li { margin-bottom: 0.75rem; line-height: 1.55; font-size: 0.95rem; color: #334155; }
+  .revision-card li:last-child { margin-bottom: 0; }
+
+  .status-box {
+    background: #1e1b4b; color: #e2e8f0; border-radius: 0.75rem; padding: 1.75rem; margin-bottom: 1.5rem;
+  }
+  .status-box h3 { margin: 0 0 1rem 0; color: white; font-size: 1.15rem; }
+  .status-line { margin: 0 0 0.6rem 0; padding-left: 0.9rem; border-left: 3px solid; line-height: 1.5; }
+  .status-line:last-child { margin-bottom: 0; }
+  .withdrawn-line { border-color: #f87171; }
+  .retained-line { border-color: #4ade80; }
+  .open-line { border-color: #fbbf24; }
+  .revision-closing { text-align: center; color: #64748b; font-family: var(--font-serif); }
 
   /* Responsive */
   @media (max-width: 768px) {
