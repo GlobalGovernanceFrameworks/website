@@ -1,0 +1,1 @@
+import"../chunks/NZTpNUN0.js";import"../chunks/DBk7iWtB.js";import{p as r,I as p,i as e,t as s,q as i,r as n}from"../chunks/C_IL9hiT.js";import{g as m}from"../chunks/DIXzCLGh.js";var g=s("<p>Redirecting to the Treaty page…</p>");function h(t,o){r(o,!1),p(()=>{m("/frameworks/treaty-for-our-only-home/getting-started")}),e();var a=g();i(t,a),n()}export{h as component};
