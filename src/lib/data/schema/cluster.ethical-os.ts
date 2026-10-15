@@ -181,11 +181,11 @@ export const ethicalOSEntities: GgfEntity[] = [
       emoji: '🦋',
       slug: 'moral-operating-system',
       outline: {
-        version: 'v2.8.2',
-        updated: '2026-08-02',
+        version: 'v2.8.3',
+        updated: '2026-10-15',
         maturity: 'adversarial',
         standfirst:
-          'A way of asking who counts, and how much, across humans, animals, ecosystems, future generations and digital entities — deliberately stripped of any power to answer. Version 2.8 kept the ethical project of earlier editions and changed its constitutional role: the MOS may recommend, translate and dissent, but it cannot confer rights, appoint a guardian, allocate funding, or name anyone as morally deficient. Its Spiral Translation Guide comes with an explicit prohibition on assigning a developmental stage to any person or group.'
+          'A way of asking who counts, and how much, across humans, animals, ecosystems, future generations and digital entities — deliberately stripped of any power to answer. Version 2.8 kept the ethical project of earlier editions and changed its constitutional role: the MOS may recommend, translate and dissent, but it cannot confer rights, appoint a guardian, allocate funding, or name anyone as morally deficient. Its Spiral Translation Guide comes with an explicit prohibition on assigning a developmental stage to any person or group. Version 2.8.3 states how the GGF answers what the affluent owe the distant poor: through fair-share institutions that absorb others’ shortfall rather than pressure on individual conscience, while leaving every person free to hold a stronger or weaker view.'
       }
     }
   },
@@ -682,5 +682,16 @@ export const ethicalOSRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
-  }
+  },
+  {
+    from: 'framework_mos',
+    to: 'protocol_constitutional_interface', // cluster: governance-os
+    type: 'INFORMS',
+    description:
+      'MOS-22 may identify a possible standing preventable-harm condition (CIS §7.7) for a Constitutional Gap Notice. Identification is advisory; the competent record holder decides whether to record it.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+
 ];

@@ -20,6 +20,11 @@ import type { GgfEntity, GgfRelationship } from './_types';
  * UNRESOLVED. Article 16 does not yet specify what follows when no competent
  * authority accepts a lawful enforcement request. This migration records no
  * fallback authority and must not be read as silently recreating one.
+ *
+ * v1.3.1 adds Article 18.8, a Standing Rescue Window for ongoing preventable
+ * harm that no authority has accepted. It funds a response to an unaccepted
+ * duty; it does not resolve the Article 16 enforcement-acceptance gap above
+ * and must not be read as a fallback authority for it.
  */
 
 export const constitutionalFoundationEntities: GgfEntity[] = [
@@ -57,11 +62,11 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
       slug: 'treaty-for-our-only-home',
       outline: {
         // dir defaults to `tier-0/treaty-for-our-only-home` — matches, so omitted
-        version: 'v1.3',
-        updated: '2026-08-01',
+        version: 'v1.3.1',
+        updated: '2026-10-15',
         maturity: 'adversarial',
         standfirst:
-          'A draft treaty text, not a ratified instrument and not a proposal any government has seen. It sets out what powers would be conferred, what stays reserved, and what cannot be activated without separate ratification.'
+          'A draft treaty text, not a ratified instrument and not a proposal any government has seen. It sets out what powers would be conferred, what stays reserved, and what cannot be activated without separate ratification. Version 1.3.1 lets the Parties set aside part of the Global Commons Fund for ongoing, preventable deaths that no authority has taken responsibility for, without creating a new tax or a new power.'
       }
     }
   },
@@ -189,7 +194,7 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
     name: 'Global Commons Fund',
     shortName: 'Global Commons Fund',
     description:
-      'Fund for planetary public goods under Article 18, financed by assessed contributions and Treaty revenue instruments.',
+      'Fund for planetary public goods under Article 18, financed by assessed contributions and Treaty revenue instruments. Where the Parties authorize it, hosts the Standing Rescue Window (Art 18.8).',
     tier: 0,
     status: 'Proposed',
     primaryDomain: 'Economic',
@@ -200,8 +205,23 @@ export const constitutionalFoundationEntities: GgfEntity[] = [
       'framework_aubi', // cluster: economic-os
       'mechanism_hearts_treasury', // cluster: economic-os
       'framework_food', // cluster: ecological
-      'framework_drr' // cluster: ecological
+      'framework_drr', // cluster: ecological
+      'mechanism_standing_rescue_window'
     ]
+  },
+  {
+    id: 'mechanism_standing_rescue_window',
+    type: 'EconomicMechanism',
+    name: 'Standing Rescue Window',
+    shortName: 'Rescue Window',
+    description:
+      'Optional ring-fenced tranche of the Global Commons Fund (Art 18.8) for ongoing, preventable loss of life that no competent authority has accepted. Spends only funds already authorized, requires receiving-authority consent, and creates no levy, jurisdiction, or individual duty.',
+    tier: 0,
+    status: 'Proposed',
+    primaryDomain: 'Economic',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_treaty', 'mechanism_gcf']
   },
 
   // === TRANSITIONAL ARRANGEMENTS (Article 23) ===
@@ -396,6 +416,25 @@ export const constitutionalFoundationRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Sequential'
+  },
+  {
+    from: 'framework_treaty',
+    to: 'mechanism_standing_rescue_window',
+    type: 'ENABLES',
+    description:
+      'Article 18.8 permits, but does not require, the Parties to establish the Window by ordinary dual authorization.',
+    strength: 'Medium',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'mechanism_standing_rescue_window',
+    to: 'protocol_constitutional_interface', // cluster: governance-os
+    type: 'IMPLEMENTS',
+    description:
+      'The pre-authorized standing instrument to which CIS §7.7 re-escalates unaccepted standing preventable-harm conditions. Re-escalation is a request, not a disbursement order.',
+    strength: 'Medium',
+    frequency: 'Regular',
+    sequenceType: 'Conditional'
   },
 
   // --- decision-making between the chambers ------------------------------

@@ -150,11 +150,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'nested-economies',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v3.3.1',
-        updated: '2026-08-10',
+        version: 'v3.3.2',
+        updated: '2026-10-15',
         maturity: 'adversarial',
         standfirst:
-          'How economies at different scales coordinate without one swallowing the others. Version 3.3 preserves the two-tier, voluntary, delegated, and revocable architecture while replacing scale-only subsidiarity with causal, economic, and constitutional subsidiarity. It adds jointly constituted authority, internal subsidiarity within BAZs, safeguards against holdout and bargaining domination, and legal, technical, financial, service, political, and material exit. Coordination that cannot be refused, forked, or left without losing essential services is dependency, not polycentric governance.'
+          'How economies at different scales coordinate without one swallowing the others. Version 3.3 preserves the two-tier, voluntary, delegated, and revocable architecture while replacing scale-only subsidiarity with causal, economic, and constitutional subsidiarity. It adds jointly constituted authority, internal subsidiarity within BAZs, safeguards against holdout and bargaining domination, and legal, technical, financial, service, political, and material exit. Coordination that cannot be refused, forked, or left without losing essential services is dependency, not polycentric governance. Version 3.3.2 lets people and communities act on ongoing preventable deaths before shared funds exist: voluntarily, outside every scoring and eligibility system, and never as a substitute for public duty.'
       }
     }
   },
@@ -238,11 +238,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'adaptive-tax',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v0.1.4',
-        updated: '2026-08-27',
+        version: 'v0.1.5',
+        updated: '2026-10-15',
         maturity: 'internal',
         standfirst:
-          'The framework two Tier 1 economic documents had been citing for two revision cycles without it existing. It answers, for any proposed instrument: who may enact it, what legal fact is the base, who actually bears the burden after behaviour adjusts, and what evidence would justify abandoning it. Phase 0 is the spine — what a jurisdiction can lawfully do on Monday — and it declines to inherit the legacy 5–25% automation tax rather than repackaging a number nobody can observe.'
+          'The framework two Tier 1 economic documents had been citing for two revision cycles without it existing. It answers, for any proposed instrument: who may enact it, what legal fact is the base, who actually bears the burden after behaviour adjusts, and what evidence would justify abandoning it. Phase 0 is the spine — what a jurisdiction can lawfully do on Monday — and it declines to inherit the legacy 5–25% automation tax rather than repackaging a number nobody can observe. Version 0.1.5 makes two silent choices explicit: whether a fiscal system has any ceiling as well as a floor, and whether tax relief for charitable giving quietly replaces public duty or favours donors who give close to home.'
       }
     }
   },
@@ -926,6 +926,16 @@ export const economicOSRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
   {
+    from: 'framework_nested_sovereignty',
+    to: 'mechanism_standing_rescue_window', // cluster: constitutional-foundation
+    type: 'COORDINATES_WITH',
+    description:
+      '§10.10 voluntary solidarity acts before the Window is capitalized or where it does not reach, and transitions into or complements it afterwards. It creates no claim on the Window and discharges no public duty.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
     from: 'council_earth',
     to: 'framework_nested_sovereignty',
     type: 'GUIDES',
@@ -1377,7 +1387,7 @@ export const economicOSRelationships: GgfRelationship[] = [
     to: 'protocol_constitutional_interface', // cluster: governance-os
     type: 'DEPENDS_ON',
     description:
-      'v0.1.2 declares CIS/0.2.3 as its controlling constitutional interface, and inherits the recognition-record purpose firewall as its rule against using care and contribution records as fiscal sensors.',
+      'v0.1.4 declares CIS/0.2.4 as its controlling constitutional interface, and inherits the recognition-record purpose firewall as its rule against using care and contribution records as fiscal sensors.',
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'

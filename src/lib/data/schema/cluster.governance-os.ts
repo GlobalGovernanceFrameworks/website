@@ -84,11 +84,11 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'constitutional-interface',
       outline: {
         kind: 'specification',
-        version: 'v0.2.9',
-        updated: '2026-09-15',
+        version: 'v0.2.10',
+        updated: '2026-10-15',
         maturity: 'internal',
         standfirst:
-          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty. Successive revisions have asked frameworks to name the conditions under which they do not apply, let honest valuations of the same object disagree, and stopped systems from reading a rise in recorded harm as failure when help has simply become easier to ask for. Version 0.2.8 makes confidence checkable: every consequential decision records in advance what it expects to happen and what would count as being wrong, so an institution can learn whether its confidence deserves trust—without anyone being ranked or funded on the result. Version 0.2.9 closes the loop: an institution whose record shows overconfidence must build in more room for error, or say publicly why not.'
+          'Shared constitutional rules for legitimacy, jurisdiction, sovereignty, coordination, and cross-framework power. Legitimacy is plural, interdependence is real, observation is limited, and coordination is not sovereignty. Successive revisions have asked frameworks to name the conditions under which they do not apply, let honest valuations of the same object disagree, and stopped systems from reading a rise in recorded harm as failure when help has simply become easier to ask for. Version 0.2.8 makes confidence checkable: every consequential decision records in advance what it expects to happen and what would count as being wrong, so an institution can learn whether its confidence deserves trust—without anyone being ranked or funded on the result. Version 0.2.9 closes the loop: an institution whose record shows overconfidence must build in more room for error, or say publicly why not. Version 0.2.10 keeps ongoing preventable deaths from vanishing between valid authorities: a gap that costs lives cannot quietly close, must carry a published estimate of what delay is costing, and is re-escalated until someone accepts it or explains why not.'
       }
     }
   },
@@ -114,10 +114,10 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'gmeaia',
       outline: {
         kind: 'specification',
-        version: 'v0.2.1',
-        updated: '2026-08-05',
+        version: 'v0.2.2',
+        updated: '2026-10-15',
         maturity: 'internal',
-        standfirst: 'A shared lifecycle grammar for governance work that must move across frameworks without allowing procedure to manufacture power. Version 0.2.1 standardizes consequence profiles, authority formation, causal responsibility, response clocks, handoff states, correction, unresolved duties, and closure, while preserving a strict boundary: frameworks may supply domain-specific requirements, but they may not redefine the shared states or treat conformance as authority, consent, legitimacy, or success.'
+        standfirst: 'A shared lifecycle grammar for governance work that must move across frameworks without allowing procedure to manufacture power. Version 0.2.1 standardizes consequence profiles, authority formation, causal responsibility, response clocks, handoff states, correction, unresolved duties, and closure, while preserving a strict boundary: frameworks may supply domain-specific requirements, but they may not redefine the shared states or treat conformance as authority, consent, legitimacy, or success. Version 0.2.2 lets a matter nobody accepts carry a standing preventable-harm marker, so ongoing preventable deaths stay on the record, with their cost counted, until someone takes responsibility.'
       }
     }
   },
