@@ -10,6 +10,7 @@ import type { GgfEntity, GgfRelationship } from './_types';
  *   Financial Systems — the technical architecture: Hearts, Leaves, Treasury, ICTL, NARP
  *   Nested Economies  — constitutional rules for coordination between autonomous economies
  *   Work in Liberation — voluntary contribution and Community Provider governance
+ * ECRAI/0.1 proposes coordination when payment and voluntary provision fail to meet essential care needs.
  * Gaian Trade and GSCL sit on top as the material-exchange and logistics layers.
  *
  * Conventions: see cluster.implementation-os.ts.
@@ -31,9 +32,9 @@ export const economicOSEntities: GgfEntity[] = [
     name: 'Adaptive Universal Basic Income Framework',
     shortName: 'AUBI',
     description:
-      'The social compact for unconditional material security: payout architecture, contribution recognition, and the epistemic rights governing how any of it is measured. Distributes Hearts and Leaves; does not itself define the currency machinery, which lives in Financial Systems.',
+      'The social compact for unconditional material security, payout and contribution recognition, epistemic rights, and real-resource adequacy assessment. Separates entitlements from actual service availability; Financial Systems governs currency machinery and competent care authorities govern care provision.',
     tier: 1,
-    status: 'Stable',
+    status: 'Review',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -56,11 +57,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'adaptive-universal-basic-income',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v2.6',
-        updated: '2026-08-21',
+        version: 'v2.7',
+        updated: '2026-10-29',
         maturity: 'adversarial',
         standfirst:
-          'A dual-wallet basic income: fiat for survival, plus Hearts and Leaves that recognise care work and ecological stewardship without turning either into a wage. Version 2.5.2 hardened both observability and authority — separating LMCI registers from operational telemetry, adding Observation Contracts and State Estimate Records, protecting epistemic rights over measurement, replacing universal identity with purpose-limited access attestations, and treating Social Resilience Council composition as a constitutional design question rather than a self-executing quota. Version 2.5.3 names a loop the framework had left implicit: a baseline indexed to housing cost at 40% can partly chase a rent increase the payments themselves helped produce. Version 2.6 names an asymmetry: adding a baseline and removing one are not mirror operations, because a household that has arranged housing, care and dependants around a payment is exposed by its withdrawal in a way that a household which never received it is not. Reductions now require notice, phasing and a stated reason; suspension for dormancy, a lapsed attestation, an open investigation or a criminal record is barred; and a pilot that cannot say in advance what happens to participants when it ends is not ready to enrol them. The design assumption throughout is that a system which can see, classify, or represent you can also mismeasure, misidentify, or overclaim authority over you.'
+          'An unconditional material-security floor combining fiat and Hearts, with separate, voluntary Hearts and Leaves recognition for care and ecological work. AUBI keeps entitlements, contribution rewards, LMCI measurements and operational telemetry distinct; access attestations are purpose-limited, and governance cannot manufacture identity or authority. Earlier revisions exposed housing-cost feedback and protected households against abrupt baseline withdrawal, including at pilot closure. Version 2.7 confronts a further limit: money cannot secure care, housing or other necessities when qualified people, physical supply or accessible services are missing. It requires unmet real needs to remain visible, strengthens continuity safeguards for people dependent on essential care, and routes shortages to competent providers without giving AUBI power to assign workers, ration services or compel participation. ECRAI/0.1 is a proposed coordination interface, not an adopted authority; cross-framework conformance remains pending.'
       }
     }
   },
@@ -107,9 +108,9 @@ export const economicOSEntities: GgfEntity[] = [
     name: 'Work in Liberation Framework',
     shortName: 'Work in Liberation',
     description:
-      'Rules for organizing voluntary, dignified, worker-governed contribution once material survival has been decoupled from employment. Establishes the Community Provider Charter Standard, the Worker Bill of Rights, a 15-hour protective ceiling, and the unconditional right not to contribute.',
+      'Organizes voluntary, dignified, worker-governed contribution independent of material survival. Includes the Community Provider Charter Standard, the Worker Bill of Rights, a 15-hour protective pilot ceiling, the right not to contribute, and escalation of persistently unmet essential needs without compulsory labor authority.',
     tier: 1,
-    status: 'Stable',
+    status: 'Review',
     primaryDomain: 'Economic',
     geographicScope: 'Global',
     implementationPriority: 'Critical',
@@ -122,11 +123,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'work-in-liberation',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v2.0.1',
-        updated: '2026-08-08',
+        version: 'v2.0.2',
+        updated: '2026-10-29',
         maturity: 'adversarial',
-      standfirst:
-          'How work gets organized once material survival no longer depends on it: voluntary contribution, worker-governed Community Providers, a 15-hour protective ceiling, and an unconditional right not to contribute at all. Version 2.0 retired the composite LMCI score and removed the Love Ledger as a default work-history signal, on the principle that no single number should stand as proof of a liberated life. Version 2.0.1 draws the boundary with ordinary employment law, which stays where it is.'
+        standfirst:
+          'How people may organize useful work without making survival or social worth depend on contribution: worker-governed Community Providers, a 15-hour protective pilot ceiling, and enforceable rights to refuse, pause, leave and remain private. Version 2.0 separated actual flourishing from work scores and removed Love Ledger histories from default matching; v2.0.1 clarified that ordinary employment law stays with competent authorities. Version 2.0.2 addresses the other side of freedom: when necessary care remains unprovided, a failed need broadcast must trigger accountable escalation and respect the care recipient\'s consent, safety and continuity. Neither the shortage nor an emergency label authorizes compulsory service. ECRAI/0.1 proposes cross-framework handoffs without transferring care or coercive powers.'
       }
     }
   },
@@ -276,6 +277,24 @@ export const economicOSEntities: GgfEntity[] = [
           'A society can put a floor under everyone and still leave productive capital in very few hands. This governs who holds capital on behalf of people who have none — social wealth funds, community and worker funds, citizen-capital accounts — and how those claims spread without one institution becoming the universal owner. Its sharpest rule is that shared upside requires shared accounting of downside: a celebrated public investment does not erase the portfolio that paid for it.'
       }
     }
+  },
+
+  // === CROSS-FRAMEWORK COORDINATION INTERFACE ===
+  {
+    id: 'protocol_essential_care_adequacy',
+    type: 'Protocol',
+    name: 'Essential Care and Real-Resource Adequacy Interface',
+    shortName: 'ECRAI',
+    description:
+      'Proposed ECRAI/0.1 coordination specification. Distinguishes AUBI payment adequacy from actual access to essential goods and competent care, and routes unresolved needs from voluntary work commissioning to responsible service authorities. Preserves recipient consent, worker refusal, privacy, accepted handoff, review and remedy. Creates no clinical, rationing, emergency or compulsory-labor authority.',
+    tier: 1,
+    status: 'Proposed',
+    primaryDomain: 'Economic',
+    geographicScope: 'Global',
+    implementationPriority: 'High',
+    dependencies: ['framework_aubi', 'framework_work_liberation'],
+    // No ui block yet: this interface is not an adopted framework page.
+    // Add the /frameworks route and i18n title key only when documentation is published.
   },
 
   // === GOVERNANCE COUNCILS ===
@@ -729,6 +748,18 @@ export const economicOSRelationships: GgfRelationship[] = [
     sequenceType: 'Parallel'
   },
 
+  // Proposed interface, not an active authority or dependency of AUBI
+  {
+    from: 'framework_aubi',
+    to: 'protocol_essential_care_adequacy',
+    type: 'COORDINATES_WITH',
+    description:
+      'Proposed ECRAI/0.1: reports when a sufficient entitlement does not translate into accessible essential goods or care; preserves payments while care authorities retain service and allocation decisions.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+
   // --- framework_financial_systems --------------------------------------
   {
     from: 'framework_financial_systems',
@@ -1041,6 +1072,38 @@ export const economicOSRelationships: GgfRelationship[] = [
     strength: 'Strong',
     frequency: 'Continuous',
     sequenceType: 'Parallel'
+  },
+
+  // Proposed interface, not a gateway to mandatory contribution
+  {
+    from: 'framework_work_liberation',
+    to: 'protocol_essential_care_adequacy',
+    type: 'COORDINATES_WITH',
+    description:
+      'Proposed ECRAI/0.1: escalates persistent essential-work gaps to competent care or service bodies while protecting worker refusal and the consent, safety and continuity of care recipients.',
+    strength: 'Strong',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'protocol_essential_care_adequacy',
+    to: 'framework_nested_sovereignty',
+    type: 'COORDINATES_WITH',
+    description:
+      'Routes interregional resource and provider capacity requests through existing compacts without creating an overriding allocator or transferring local authority.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
+  },
+  {
+    from: 'protocol_essential_care_adequacy',
+    to: 'framework_financial_systems',
+    type: 'COORDINATES_WITH',
+    description:
+      'Financial Systems may support authorized liquidity or transfers, but no monetary instrument substitutes for qualified capacity or confers care-service authority.',
+    strength: 'Medium',
+    frequency: 'As-Needed',
+    sequenceType: 'Conditional'
   },
 
   // --- framework_gaian_trade --------------------------------------------

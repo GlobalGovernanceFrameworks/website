@@ -283,11 +283,10 @@ export const ecologicalEntities: GgfEntity[] = [
       slug: 'animal-welfare-governance',
       group: 'planetaryHealthResilience',
       outline: {
-        version: 'v7.1',
-        updated: '2026-08-03',
+        version: 'v7.2',
+        updated: '2026-10-29',
         maturity: 'adversarial',
-        standfirst:
-          'Animal welfare worked out at the level of verification rather than principle — the framework spends its detail on questions like what operationally counts as surplus milk from a willing cow, because that is where welfare standards actually succeed or fail. Version 7.1 adds a Bootstrap Phase 0 that a single farm can adopt without waiting for any council to exist.'
+        standfirst: 'Animal welfare as a measurable obligation, not just a set of approved practices: prevent avoidable suffering, enable positive welfare, and judge interventions by what actually happens to animals. Version 7.2 retains the guardianship-not-ownership vision and Bootstrap Phase 0, while replacing rigid sentience rankings and prescriptive husbandry rules with species-specific evidence, welfare outcomes and independent review. The transition beyond industrial animal exploitation remains the ambition, but phase-out targets and preferred technologies must be tested against realistic alternatives. Food security, livelihoods, Indigenous rights and ecological consequences belong in the same assessment. Scientific uncertainty is neither a license for indefinite cruelty nor a justification for interventions whose effects have not been examined.'
       }
     }
   },

@@ -44,11 +44,10 @@ export const mobilityCommonsEntities: GgfEntity[] = [
       slug: 'mobility-commons',
       group: 'planetaryHealthResilience', // Or 'globalEconomicSystems'
       outline: {
-        version: 'v8.1',
-        updated: '2026-08-03',
+        version: 'v8.2',
+        updated: '2026-10-29',
         maturity: 'adversarial',
-        standfirst:
-          'Movement as a shared resource rather than a market: proximity first, then transit, then everything else, with freight held to the same standard as passengers. Version 8.1 added a MaaS interoperability mandate and an incumbent platform strategy — recognition that mobility is now largely governed by private routing software, and that a commons framework ignoring the app layer governs nothing. Its status line still reads Implementation-Ready Draft.'
+        standfirst: 'Movement as a commons rather than a commodity: bring everyday needs closer so people need not travel, while protecting their freedom to move when they choose. Freight and passenger transport share the same ecological and social obligations. Version 8.2 extends mobility justice beyond jurisdictional boundaries: people affected by infrastructure and exclusion deserve consideration even when they do not live within the deciding community. It distinguishes the right to move, the right to stay and freedom from forced displacement, while requiring fair assessment of capacity, costs and unmet mobility needs. The MaaS Commons becomes open, interoperable public infrastructure rather than an exclusive booking gatekeeper. Immigration status and border admission remain with competent authorities; mobility planning does not create those powers.'
       }
     }
   },

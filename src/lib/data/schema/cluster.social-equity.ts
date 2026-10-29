@@ -223,11 +223,11 @@ export const socialEquityEntities: GgfEntity[] = [
       slug: 'migration-and-human-mobility',
       group: 'socialFabricJustice',
       outline: {
-        version: 'v1.1.2',
-        updated: '2026-08-03',
+        version: 'v1.2',
+        updated: '2026-10-29',
         maturity: 'adversarial',
-        standfirst:
-          'Mobility, displacement, asylum, reception, return and host-community coordination held in one frame, because separating them is how people fall through. Version 1.1 declined to treat the source\'s automatic visas, protected zones and universal credentials as already-constituted powers, and separated service access, civil identity, protection status, residence authorization and border admission into distinct decisions. Version 1.1.2 adds that identifying the same person across those decisions is purpose-limited and non-transitive: dignity does not depend on documentation, and a service credential is not a legal identity.'
+        standfirst: 'Human mobility held in one frame — displacement, asylum, reception, residence, return and host-community coordination — without collapsing their distinct legal authorities. Dignity does not depend on documentation: essential assistance is not border admission, a service credential is not legal identity, and recognizing the same person across systems must remain purpose-limited and non-transitive. Version 1.2 extends moral consideration beyond jurisdictional boundaries. People affected by exclusion matter even before they arrive, while equal moral standing does not itself create admission rights or political authority. Housing pressures, service capacity and impacts on communities of origin require evidence, fair distribution of burdens and review — not automatic exclusion or indefinite vetoes. Participation must never depend on economic contribution. The framework coordinates protection and accountability without creating a new global border power.'
+
       }
     }
   },
