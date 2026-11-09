@@ -1,29 +1,65 @@
-<!-- src/routes/frameworks/docs/+page.svelte -->
+<!-- src/routes/frameworks/docs/principles/+page.svelte -->
 <script>
-  import { page } from '$app/stores';
+  import { onMount } from 'svelte';
   import { t, locale } from '$lib/i18n';
-  import { browser } from '$app/environment';
-  import { invalidate } from '$app/navigation';
   import { base } from '$app/paths';
-  
+
   export let data;
-  
-  $: if (browser && $locale) {
-    invalidate('app:locale');
-  }
+
+  // These values initially match the server-rendered page exactly.
+  let MarkdownContent = data.component;
+  let displayedLocale = data.locale;
+
+  // The saved locale is browser-only. Apply it after hydration, not inside load().
+  onMount(() => {
+    let requestId = 0;
+    let destroyed = false;
+
+    const unsubscribe = locale.subscribe(async (storeLocale) => {
+      // The explicit ?lang= parameter takes precedence, just as in detectLocale().
+      const urlLocale = new URL(window.location.href).searchParams.get('lang');
+      const targetLocale = urlLocale === 'sv' || urlLocale === 'en'
+        ? urlLocale
+        : storeLocale === 'sv' ? 'sv' : 'en';
+
+      // Also cancel any older in-flight language import if we're switching back.
+      const thisRequest = ++requestId;
+      if (targetLocale === displayedLocale) return;
+
+      try {
+        const content = targetLocale === 'sv'
+          ? await import('$lib/content/frameworks/sv/principles.md')
+          : await import('$lib/content/frameworks/en/principles.md');
+
+        if (!destroyed && thisRequest === requestId) {
+          MarkdownContent = content.default;
+          displayedLocale = targetLocale;
+        }
+      } catch (error) {
+        console.error(`Failed to load ${targetLocale} principles`, error);
+        // Preserve the last successfully rendered component on failure.
+      }
+    });
+
+    return () => {
+      destroyed = true;
+      requestId++;
+      unsubscribe();
+    };
+  });
 </script>
 
 <div class="documentation-container">
 
   <div class="content">
-    <svelte:component this={data.component} />
+    <svelte:component this={MarkdownContent} />
     <!-- Visual Diagram at the top -->
     <div class="diagram-container">
       <h3 class="diagram-title">{$t('framework.principles.interconnection.title')}</h3>
       <p class="diagram-description">{$t('framework.principles.interconnection.description')}</p>
       
       <!-- Show diagram based on language -->
-      {#if $locale === 'sv'}
+      {#if displayedLocale === 'sv'}
         <img src="{base}/frameworks/principles-interconnection-sv.svg" alt="Samband mellan Kärnprinciper" class="principles-diagram" />
       {:else}
         <img src="{base}/frameworks/principles-interconnection-en.svg" alt="Core Principles Interconnection" class="principles-diagram" />
