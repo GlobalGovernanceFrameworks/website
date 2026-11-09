@@ -4,16 +4,15 @@
    width="900"
    height="700"
    version="1.1"
-   id="svg61"
+   id="svg55"
    sodipodi:docname="principles-interconnection-en.svg"
-   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview61"
+     id="namedview55"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -21,18 +20,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.2085714"
-     inkscape:cx="449.70449"
+     inkscape:zoom="1.24"
+     inkscape:cx="450"
      inkscape:cy="350"
      inkscape:window-width="2520"
      inkscape:window-height="1048"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg61" />
+     inkscape:current-layer="svg55" />
   <defs
      id="defs10">
-    <!-- Gradients for modern look -->
     <radialGradient
        id="centerGradient"
        cx="50%"
@@ -107,7 +105,6 @@
          style="stop-color:#6B5CA5;stop-opacity:1"
          id="stop10" />
     </linearGradient>
-    <!-- Drop shadow filter -->
     <filter
        id="dropShadow"
        x="0"
@@ -118,925 +115,596 @@
          dx="2"
          dy="4"
          stdDeviation="3"
-         flood-opacity="0.2" />
+         flood-opacity="0.18" />
     </filter>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#brownGradient"
-       id="linearGradient61"
-       x1="206"
-       y1="326"
-       x2="254"
-       y2="374"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#purpleGradient"
-       id="linearGradient62"
-       x1="126"
-       y1="326"
-       x2="174"
-       y2="374"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#brownGradient"
-       id="linearGradient63"
-       x1="316"
-       y1="191"
-       x2="364"
-       y2="239"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#goldGradient"
-       id="linearGradient64"
-       x1="536"
-       y1="191"
-       x2="584"
-       y2="239"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#greenGradient"
-       id="linearGradient65"
-       x1="536"
-       y1="241"
-       x2="584"
-       y2="289"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#goldGradient"
-       id="linearGradient66"
-       x1="646"
-       y1="326"
-       x2="694"
-       y2="374"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#goldGradient"
-       id="linearGradient67"
-       x1="536"
-       y1="461"
-       x2="584"
-       y2="509"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#brownGradient"
-       id="linearGradient68"
-       x1="316"
-       y1="461"
-       x2="364"
-       y2="509"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#purpleGradient"
-       id="linearGradient69"
-       x1="216"
-       y1="526"
-       x2="264"
-       y2="574"
-       gradientUnits="userSpaceOnUse" />
   </defs>
-  <style
-     id="style10">
-    .principle-node {
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-    
-    .principle-node:hover {
-      filter: brightness(1.2) saturate(1.3);
-      transform: scale(1.05);
-    }
-    
-    .principle-text {
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-    
-    .principle-text:hover {
-      fill: #2B4B8C;
-      font-weight: bold;
-    }
-    
-    .connection-line {
-      transition: opacity 0.3s ease;
-    }
-    
-    .ring-path {
-      fill: none;
-      stroke: #e2e8f0;
-      stroke-width: 1;
-      opacity: 0.6;
-    }
-    
-    .center-hub {
-      filter: url(#dropShadow);
-    }
-  </style>
-  <!-- Background -->
   <rect
      width="900"
      height="700"
      fill="#f8fafc"
-     id="rect10"
-     x="0"
-     y="0.82742316" />
-  <!-- Title -->
+     id="rect10" />
   <text
      x="450"
      y="40"
      font-family="system-ui, -apple-system, sans-serif"
-     font-size="24"
+     font-size="22"
+     font-weight="700"
      text-anchor="middle"
      fill="#2B4B8C"
-     font-weight="600"
-     id="text10">
-    Core Principles Interconnection
-  </text>
-  <!-- Concentric ring guides -->
+     id="text10">Core Principles Interconnection</text>
   <circle
      cx="450"
      cy="350"
      r="140"
-     class="ring-path"
+     fill="none"
+     stroke="#e2e8f0"
+     stroke-width="1"
+     opacity="0.75"
      id="circle10" />
   <circle
      cx="450"
      cy="350"
      r="220"
-     class="ring-path"
+     fill="none"
+     stroke="#e2e8f0"
+     stroke-width="1"
+     opacity="0.75"
      id="circle11" />
   <circle
      cx="450"
      cy="350"
      r="300"
-     class="ring-path"
+     fill="none"
+     stroke="#e2e8f0"
+     stroke-width="1"
+     opacity="0.75"
      id="circle12" />
-  <!-- Connection lines from center to all principles -->
   <line
-     x1="450"
-     y1="270"
-     x2="450"
-     y2="210"
-     stroke="#2d5f2d"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     x1="450.0"
+     y1="268.0"
+     x2="450.0"
+     y2="129.0"
+     stroke="#6B5CA5"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line12" />
   <line
-     x1="508"
-     y1="301"
-     x2="560"
-     y2="265"
-     stroke="#2d5f2d"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     x1="390.6"
+     y1="293.4"
+     x2="257.4"
+     y2="166.6"
+     stroke="#6B5CA5"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line13" />
   <line
-     x1="508"
-     y1="399"
-     x2="560"
-     y2="435"
-     stroke="#2d5f2d"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     x1="373.7"
+     y1="320.0"
+     x2="167.3"
+     y2="238.8"
+     stroke="#654321"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line14" />
   <line
-     x1="370"
-     y1="350"
-     x2="230"
-     y2="350"
-     stroke="#654321"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     x1="368.0"
+     y1="350.0"
+     x2="174.0"
+     y2="350.0"
+     stroke="#6B5CA5"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line15" />
   <line
-     x1="408"
-     y1="415"
-     x2="340"
-     y2="485"
+     x1="368.0"
+     y1="350.0"
+     x2="254.0"
+     y2="350.0"
      stroke="#654321"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line16" />
   <line
-     x1="408"
-     y1="285"
-     x2="340"
-     y2="215"
+     x1="398.2"
+     y1="286.4"
+     x2="355.2"
+     y2="233.6"
      stroke="#654321"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line17" />
   <line
-     x1="530"
-     y1="350"
-     x2="670"
-     y2="350"
-     stroke="#daa520"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     x1="450.0"
+     y1="268.0"
+     x2="450.0"
+     y2="234.0"
+     stroke="#2D5F2D"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line18" />
   <line
-     x1="492"
-     y1="285"
-     x2="560"
-     y2="215"
-     stroke="#daa520"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     x1="501.8"
+     y1="286.4"
+     x2="544.8"
+     y2="233.6"
+     stroke="#DAA520"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line19" />
   <line
-     x1="492"
-     y1="415"
-     x2="560"
-     y2="485"
-     stroke="#daa520"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     x1="514.9"
+     y1="299.9"
+     x2="541.0"
+     y2="279.7"
+     stroke="#2D5F2D"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line20" />
   <line
-     x1="370"
-     y1="350"
-     x2="150"
-     y2="350"
-     stroke="#6b5ca5"
-     stroke-width="2"
-     opacity="0.7"
-     class="connection-line"
+     x1="509.4"
+     y1="293.4"
+     x2="642.6"
+     y2="166.6"
+     stroke="#6B5CA5"
+     stroke-width="2.2"
+     opacity="0.9"
      id="line21" />
   <line
-     x1="400.01633"
-     y1="298.99075"
-     x2="240.07024"
-     y2="150.07544"
-     stroke="#6b5ca5"
-     stroke-width="2.20615"
-     opacity="0.7"
-     class="connection-line"
-     id="line22"
-     style="stroke-width:2;stroke-dasharray:none" />
+     x1="532.0"
+     y1="350.0"
+     x2="646.0"
+     y2="350.0"
+     stroke="#DAA520"
+     stroke-width="2.2"
+     opacity="0.9"
+     id="line22" />
   <line
-     x1="400.01633"
-     y1="401.00925"
-     x2="240.07024"
-     y2="549.92456"
-     stroke="#6b5ca5"
-     stroke-width="2.20615"
-     opacity="0.7"
-     class="connection-line"
-     id="line23"
-     style="stroke-width:2;stroke-dasharray:none" />
+     x1="514.9"
+     y1="400.1"
+     x2="541.0"
+     y2="420.3"
+     stroke="#2D5F2D"
+     stroke-width="2.2"
+     opacity="0.9"
+     id="line23" />
   <line
-     x1="501.82288"
-     y1="297.27719"
-     x2="659.93835"
-     y2="150.06621"
-     stroke="#6b5ca5"
-     stroke-width="2.1809"
-     opacity="0.7"
-     class="connection-line"
-     id="line24"
-     style="stroke-width:2;stroke-dasharray:none" />
-  <!-- INNER RING: Governance Structure (Green) -->
-  <!-- Decentralized Authority -->
-  <g
-     class="principle-group"
-     id="g25">
-    <circle
-       cx="450"
-       cy="210"
-       r="24"
-       fill="url(#greenGradient)"
-       class="principle-node"
-       id="circle24" />
-    <text
-       x="450"
-       y="216"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="14"
-       text-anchor="middle"
-       fill="#2D5F2D"
-       font-weight="500"
-       class="principle-text"
-       id="text24">
-      🏛️
-    </text>
-    <text
-       x="450"
-       y="165"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="12"
-       text-anchor="middle"
-       fill="#2D5F2D"
-       font-weight="500"
-       class="principle-text"
-       id="text25">
-      Decentralized Authority
-    </text>
-  </g>
-  <!-- Radical Transparency -->
+     x1="501.8"
+     y1="413.6"
+     x2="544.8"
+     y2="466.4"
+     stroke="#DAA520"
+     stroke-width="2.2"
+     opacity="0.9"
+     id="line24" />
+  <line
+     x1="429.3"
+     y1="429.3"
+     x2="396.1"
+     y2="556.8"
+     stroke="#6B5CA5"
+     stroke-width="2.2"
+     opacity="0.9"
+     id="line25" />
+  <line
+     x1="390.6"
+     y1="406.6"
+     x2="257.4"
+     y2="533.4"
+     stroke="#6B5CA5"
+     stroke-width="2.2"
+     opacity="0.9"
+     id="line26" />
+  <line
+     x1="398.2"
+     y1="413.6"
+     x2="355.2"
+     y2="466.4"
+     stroke="#654321"
+     stroke-width="2.2"
+     opacity="0.9"
+     id="line27" />
   <circle
-     cx="560"
-     cy="265"
-     r="24"
-     fill="url(#greenGradient)"
-     class="principle-node"
-     id="circle25"
-     style="fill:url(#linearGradient65)" />
+     cx="450"
+     cy="350"
+     r="82"
+     fill="url(#centerGradient)"
+     filter="url(#dropShadow)"
+     id="circle27" />
   <text
-     x="560"
-     y="271"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="14px"
+     x="450"
+     y="335"
      text-anchor="middle"
-     fill="#2d5f2d"
-     font-weight="500"
-     class="principle-text"
-     id="text26">🔍</text>
+     fill="white"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="17"
+     font-weight="700"
+     id="text28"><tspan
+       x="450"
+       dy="0"
+       id="tspan27">Global Governance</tspan><tspan
+       x="450"
+       dy="15"
+       id="tspan28">Frameworks</tspan></text>
+  <circle
+     cx="450"
+     cy="105"
+     r="24"
+     fill="url(#purpleGradient)"
+     filter="url(#dropShadow)"
+     id="circle28" />
   <text
-     x="600"
-     y="269"
+     x="450"
+     y="60"
+     text-anchor="middle"
+     fill="#6b5ca5"
      font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
-     text-anchor="start"
-     fill="#2d5f2d"
+     font-size="13px"
      font-weight="500"
-     class="principle-text"
-     id="text27">Radical Transparency</text>
-  <!-- Direct Participation -->
-  <g
-     class="principle-group"
-     id="g29">
-    <circle
-       cx="560"
-       cy="435"
-       r="24"
-       fill="url(#greenGradient)"
-       class="principle-node"
-       id="circle27" />
-    <text
-       x="560"
-       y="441"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="14"
-       text-anchor="middle"
-       fill="#2D5F2D"
-       font-weight="500"
-       class="principle-text"
-       id="text28">
-      🗳️
-    </text>
-    <text
-       x="600"
-       y="435"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="12"
-       text-anchor="start"
-       fill="#2D5F2D"
-       font-weight="500"
-       class="principle-text"
-       id="text29">
-      Direct Participation
-    </text>
-  </g>
-  <!-- MIDDLE RING: Rights & Environment (Brown) -->
-  <!-- Universal Human Rights -->
+     id="text30"><tspan
+       x="450"
+       dy="0"
+       id="tspan29">Common/Shared</tspan><tspan
+       x="450"
+       id="tspan30"
+       dy="15">Values</tspan></text>
+  <circle
+     cx="240"
+     cy="150"
+     r="24"
+     fill="url(#purpleGradient)"
+     filter="url(#dropShadow)"
+     id="circle30" />
+  <text
+     x="240"
+     y="110"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="13"
+     font-weight="500"
+     id="text31"><tspan
+       x="240"
+       dy="0"
+       id="tspan31">Adaptive Evolution</tspan></text>
+  <circle
+     cx="145"
+     cy="230"
+     r="24"
+     fill="url(#brownGradient)"
+     filter="url(#dropShadow)"
+     id="circle31" />
+  <text
+     x="36"
+     y="204"
+     text-anchor="start"
+     fill="#654321"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     id="text33"><tspan
+       x="36"
+       dy="0"
+       id="tspan32">Post-Growth &amp; Regenerative</tspan><tspan
+       x="36"
+       dy="15"
+       id="tspan33">by Design</tspan></text>
+  <circle
+     cx="150"
+     cy="350"
+     r="24"
+     fill="url(#purpleGradient)"
+     filter="url(#dropShadow)"
+     id="circle33" />
+  <text
+     x="46"
+     y="305"
+     text-anchor="start"
+     fill="#6b5ca5"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     id="text35"><tspan
+       x="46"
+       dy="0"
+       id="tspan34">Balance of Integration</tspan><tspan
+       x="46"
+       dy="15"
+       id="tspan35">&amp; Diversity</tspan></text>
   <circle
      cx="230"
      cy="350"
      r="24"
      fill="url(#brownGradient)"
-     class="principle-node"
-     id="circle29"
-     style="fill:url(#linearGradient61)" />
-  <text
-     x="230"
-     y="356"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="14px"
-     text-anchor="middle"
-     fill="#654321"
-     font-weight="500"
-     class="principle-text"
-     id="text30">⚖️</text>
+     filter="url(#dropShadow)"
+     id="circle35" />
   <text
      x="180"
-     y="310"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
+     y="320"
      text-anchor="start"
      fill="#654321"
-     font-weight="500"
-     class="principle-text"
-     id="text31">Universal Human Rights</text>
-  <!-- Environmental Stewardship -->
-  <circle
-     cx="340"
-     cy="485"
-     r="24"
-     fill="url(#brownGradient)"
-     class="principle-node"
-     id="circle31"
-     style="fill:url(#linearGradient68)" />
-  <text
-     x="340"
-     y="491"
      font-family="system-ui, '-apple-system', sans-serif"
-     font-size="14px"
-     text-anchor="middle"
-     fill="#654321"
+     font-size="13px"
      font-weight="500"
-     class="principle-text"
-     id="text32">🌱</text>
-  <text
-     x="366"
-     y="527"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
-     text-anchor="middle"
-     fill="#654321"
-     font-weight="500"
-     class="principle-text"
-     id="text33">Environmental Stewardship</text>
-  <!-- Cultural Autonomy -->
+     id="text36"><tspan
+       x="180"
+       dy="0"
+       id="tspan36">Universal Human Rights</tspan></text>
   <circle
      cx="340"
      cy="215"
      r="24"
      fill="url(#brownGradient)"
-     class="principle-node"
-     id="circle33"
-     style="fill:url(#linearGradient63)" />
-  <text
-     x="340"
-     y="221"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="14px"
-     text-anchor="middle"
-     fill="#654321"
-     font-weight="500"
-     class="principle-text"
-     id="text34">🎭</text>
+     filter="url(#dropShadow)"
+     id="circle36" />
   <text
      x="340"
      y="181"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
      text-anchor="middle"
      fill="#654321"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="13"
      font-weight="500"
-     class="principle-text"
-     id="text35">Cultural Autonomy</text>
-  <!-- MIDDLE RING: Resource & Conflict (Gold) -->
-  <!-- Ethical Technology Governance -->
+     id="text37"><tspan
+       x="340"
+       dy="0"
+       id="tspan37">Cultural Autonomy</tspan></text>
+  <circle
+     cx="450"
+     cy="210"
+     r="24"
+     fill="url(#greenGradient)"
+     filter="url(#dropShadow)"
+     id="circle37" />
+  <text
+     x="454"
+     y="165"
+     text-anchor="middle"
+     fill="#2d5f2d"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     id="text38"><tspan
+       x="454"
+       dy="0"
+       id="tspan38">Decentralized Authority</tspan></text>
+  <circle
+     cx="560"
+     cy="215"
+     r="24"
+     fill="url(#goldGradient)"
+     filter="url(#dropShadow)"
+     id="circle38" />
+  <text
+     x="514"
+     y="181"
+     text-anchor="start"
+     fill="#DAA520"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="13"
+     font-weight="500"
+     id="text39"><tspan
+       x="514"
+       dy="0"
+       id="tspan39">Resource Justice</tspan></text>
+  <circle
+     cx="560"
+     cy="265"
+     r="24"
+     fill="url(#greenGradient)"
+     filter="url(#dropShadow)"
+     id="circle39" />
+  <text
+     x="600"
+     y="269"
+     text-anchor="start"
+     fill="#2D5F2D"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="13"
+     font-weight="500"
+     id="text40"><tspan
+       x="600"
+       dy="0"
+       id="tspan40">Radical Transparency</tspan></text>
+  <circle
+     cx="660"
+     cy="150"
+     r="24"
+     fill="url(#purpleGradient)"
+     filter="url(#dropShadow)"
+     id="circle40" />
+  <text
+     x="660"
+     y="105"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="13"
+     font-weight="500"
+     id="text42"><tspan
+       x="660"
+       dy="0"
+       id="tspan41">Resilience and</tspan><tspan
+       x="660"
+       dy="15"
+       id="tspan42">Anti-Fragility</tspan></text>
   <circle
      cx="670"
      cy="350"
      r="24"
      fill="url(#goldGradient)"
-     class="principle-node"
-     id="circle35"
-     style="fill:url(#linearGradient66)" />
-  <text
-     x="670"
-     y="356"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="14px"
-     text-anchor="middle"
-     fill="#daa520"
-     font-weight="500"
-     class="principle-text"
-     id="text36">💻</text>
+     filter="url(#dropShadow)"
+     id="circle42" />
   <text
      x="706"
      y="350"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
      text-anchor="start"
-     fill="#daa520"
+     fill="#DAA520"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="13"
      font-weight="500"
-     class="principle-text"
-     id="text37">Ethical Technology</text>
-  <text
-     x="706"
-     y="365"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
-     text-anchor="start"
-     fill="#daa520"
-     font-weight="500"
-     class="principle-text"
-     id="text38">Governance</text>
-  <!-- Resource Justice -->
+     id="text44"><tspan
+       x="706"
+       dy="0"
+       id="tspan43">Ethical Technology</tspan><tspan
+       x="706"
+       dy="15"
+       id="tspan44">Governance</tspan></text>
   <circle
      cx="560"
-     cy="215"
+     cy="435"
      r="24"
-     fill="url(#goldGradient)"
-     class="principle-node"
-     id="circle38"
-     style="fill:url(#linearGradient64)" />
+     fill="url(#greenGradient)"
+     filter="url(#dropShadow)"
+     id="circle44" />
   <text
-     x="560"
-     y="221"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="14px"
-     text-anchor="middle"
-     fill="#daa520"
-     font-weight="500"
-     class="principle-text"
-     id="text39">💎</text>
-  <text
-     x="514"
-     y="181"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
+     x="600"
+     y="435"
      text-anchor="start"
-     fill="#daa520"
+     fill="#2D5F2D"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="13"
      font-weight="500"
-     class="principle-text"
-     id="text40">Resource Justice</text>
-  <!-- Peaceful Conflict Resolution -->
+     id="text45"><tspan
+       x="600"
+       dy="0"
+       id="tspan45">Direct Participation</tspan></text>
   <circle
      cx="560"
      cy="485"
      r="24"
      fill="url(#goldGradient)"
-     class="principle-node"
-     id="circle40"
-     style="fill:url(#linearGradient67)" />
-  <text
-     x="560"
-     y="491"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="14px"
-     text-anchor="middle"
-     fill="#daa520"
-     font-weight="500"
-     class="principle-text"
-     id="text41">🕊️</text>
+     filter="url(#dropShadow)"
+     id="circle45" />
   <text
      x="600"
      y="485"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
      text-anchor="start"
-     fill="#daa520"
+     fill="#DAA520"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="13"
      font-weight="500"
-     class="principle-text"
-     id="text42">Peaceful Conflict</text>
+     id="text47"><tspan
+       x="600"
+       dy="0"
+       id="tspan46">Peaceful Conflict</tspan><tspan
+       x="600"
+       dy="15"
+       id="tspan47">Resolution</tspan></text>
+  <circle
+     cx="390"
+     cy="580"
+     r="24"
+     fill="url(#purpleGradient)"
+     filter="url(#dropShadow)"
+     id="circle47" />
   <text
-     x="600"
-     y="500"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
-     text-anchor="start"
-     fill="#daa520"
+     x="390"
+     y="620"
+     text-anchor="middle"
+     fill="#6B5CA5"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="13"
      font-weight="500"
-     class="principle-text"
-     id="text43">Resolution</text>
-  <!-- OUTER RING: Evolution & Integration (Purple) -->
-  <!-- Collective Healing -->
-  <g class="principle-group" id="collective-healing">
-    <circle 
-      cx="390" 
-      cy="580" 
-      r="24" 
-      fill="url(#purpleGradient)" 
-      class="principle-node" 
-      id="circle-collective-healing" />
-    <text 
-      x="390" 
-      y="584" 
-      font-family="system-ui, -apple-system, sans-serif" 
-      font-size="14" 
-      text-anchor="middle" 
-      fill="#6B5CA5" 
-      font-weight="500" 
-      class="principle-text" 
-      id="text-collective-healing-emoji">
-      🕊️💙
-    </text>
-    <text 
-      x="390" 
-      y="620" 
-      font-family="system-ui, -apple-system, sans-serif" 
-      font-size="12" 
-      text-anchor="middle" 
-      fill="#6B5CA5" 
-      font-weight="500" 
-      class="principle-text" 
-      id="text-collective-healing">
-      Collective Healing
-    </text>
-  </g>
-
-  <!-- Connection line from center to Collective Healing -->
-  <line 
-    x1="420" 
-    y1="410" 
-    x2="390" 
-    y2="556" 
-    stroke="#6b5ca5" 
-    stroke-width="2" 
-    opacity="0.7" 
-    class="connection-line" 
-    id="line-collective-healing" />
-  <!-- Balance of Integration & Diversity -->
-  <g
-     class="principle-group"
-     id="g46">
-    <circle
-       cx="150"
-       cy="350"
-       r="24"
-       fill="url(#purpleGradient)"
-       class="principle-node"
-       id="circle43"
-       style="fill:url(#linearGradient62)" />
-    <text
-       x="150"
-       y="354"
-       font-family="system-ui, '-apple-system', sans-serif"
-       font-size="14px"
-       text-anchor="middle"
-       fill="#6b5ca5"
-       font-weight="500"
-       class="principle-text"
-       id="text44">⚖️</text>
-    <text
-       x="50"
-       y="305"
-       font-family="system-ui, '-apple-system', sans-serif"
-       font-size="12px"
-       text-anchor="start"
-       fill="#6b5ca5"
-       font-weight="500"
-       class="principle-text"
-       id="text45">Balance of Integration</text>
-    <text
-       x="50"
-       y="320"
-       font-family="system-ui, '-apple-system', sans-serif"
-       font-size="12px"
-       text-anchor="start"
-       fill="#6b5ca5"
-       font-weight="500"
-       class="principle-text"
-       id="text46">Diversity</text>
-  </g>
-  <!-- Adaptive Evolution -->
-  <g
-     class="principle-group"
-     id="g48">
-    <circle
-       cx="240"
-       cy="150"
-       r="24"
-       fill="url(#purpleGradient)"
-       class="principle-node"
-       id="circle46" />
-    <text
-       x="240"
-       y="154"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="14"
-       text-anchor="middle"
-       fill="#6B5CA5"
-       font-weight="500"
-       class="principle-text"
-       id="text47">
-      🧬
-    </text>
-    <text
-       x="240"
-       y="110"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="12"
-       text-anchor="middle"
-       fill="#6B5CA5"
-       font-weight="500"
-       class="principle-text"
-       id="text48">
-      Adaptive Evolution
-    </text>
-  </g>
-  <!-- Cosmic Ethics -->
+     id="text48"><tspan
+       x="390"
+       dy="0"
+       id="tspan48">Collective Healing</tspan></text>
   <circle
      cx="240"
      cy="550"
      r="24"
      fill="url(#purpleGradient)"
-     class="principle-node"
-     id="circle48"
-     style="fill:url(#linearGradient69)" />
+     filter="url(#dropShadow)"
+     id="circle48" />
   <text
-     x="240"
-     y="556"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="14px"
-     text-anchor="middle"
-     fill="#6b5ca5"
-     font-weight="500"
-     class="principle-text"
-     id="text49">🌌</text>
-  <text
-     x="278"
+     x="248"
      y="590"
-     font-family="system-ui, '-apple-system', sans-serif"
-     font-size="12px"
-     text-anchor="middle"
+     text-anchor="start"
      fill="#6b5ca5"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="13px"
      font-weight="500"
-     class="principle-text"
-     id="text50">Cosmic Ethics</text>
-  <!-- Resilience and Anti-Fragility -->
-  <g
-     class="principle-group"
-     id="g53">
-    <circle
-       cx="660"
-       cy="150"
-       r="24"
-       fill="url(#purpleGradient)"
-       class="principle-node"
-       id="circle50" />
-    <text
-       x="660"
-       y="154"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="14"
-       text-anchor="middle"
-       fill="#6B5CA5"
-       font-weight="500"
-       class="principle-text"
-       id="text51">
-      🛡️
-    </text>
-    <text
-       x="660"
-       y="105"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="12"
-       text-anchor="middle"
-       fill="#6B5CA5"
-       font-weight="500"
-       class="principle-text"
-       id="text52">
-      Resilience and
-    </text>
-    <text
-       x="660"
-       y="120"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="12"
-       text-anchor="middle"
-       fill="#6B5CA5"
-       font-weight="500"
-       class="principle-text"
-       id="text53">
-      Anti-Fragility
-    </text>
-  </g>
-  <!-- Center Hub - moved to end so it overlaps the connection lines -->
+     id="text49"><tspan
+       x="248"
+       dy="0"
+       id="tspan49">Cosmic Ethics</tspan></text>
   <circle
-     cx="450"
-     cy="350"
-     r="80"
-     fill="url(#centerGradient)"
-     class="center-hub"
+     cx="340"
+     cy="485"
+     r="24"
+     fill="url(#brownGradient)"
+     filter="url(#dropShadow)"
+     id="circle49" />
+  <text
+     x="292"
+     y="528"
+     text-anchor="start"
+     fill="#654321"
+     font-family="system-ui, '-apple-system', sans-serif"
+     font-size="13px"
+     font-weight="500"
+     id="text50"><tspan
+       x="292"
+       dy="0"
+       id="tspan50">Environmental Stewardship</tspan></text>
+  <text
+     x="50"
+     y="640"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="18"
+     font-weight="600"
+     fill="#2B4B8C"
+     id="text51">Principle Categories:</text>
+  <circle
+     cx="60"
+     cy="665"
+     r="9"
+     fill="url(#greenGradient)"
+     id="circle51" />
+  <text
+     x="76"
+     y="670"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="12"
+     fill="#2D5F2D"
+     id="text52">Governance Structure</text>
+  <circle
+     cx="260"
+     cy="665"
+     r="9"
+     fill="url(#brownGradient)"
+     id="circle52" />
+  <text
+     x="276"
+     y="670"
+     font-family="system-ui, -apple-system, sans-serif"
+     font-size="12"
+     fill="#654321"
+     id="text53">Rights  Environment</text>
+  <circle
+     cx="460"
+     cy="665"
+     r="9"
+     fill="url(#goldGradient)"
      id="circle53" />
   <text
-     x="450"
-     y="335"
+     x="476"
+     y="670"
      font-family="system-ui, -apple-system, sans-serif"
-     font-size="16"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="600"
-     id="text54">
-    Global Governance
-  </text>
+     font-size="12"
+     fill="#DAA520"
+     id="text54">Resource  Conflict</text>
+  <circle
+     cx="650"
+     cy="665"
+     r="9"
+     fill="url(#purpleGradient)"
+     id="circle54" />
   <text
-     x="450"
-     y="355"
+     x="666"
+     y="670"
      font-family="system-ui, -apple-system, sans-serif"
-     font-size="16"
-     text-anchor="middle"
-     fill="#ffffff"
-     font-weight="600"
-     id="text55">
-    Frameworks
-  </text>
-  <!-- Updated Legend -->
-  <g
-     class="legend"
-     transform="translate(50, 640)"
-     id="g61">
-    <text
-       x="0"
-       y="0"
-       font-family="system-ui, -apple-system, sans-serif"
-       font-size="16"
-       font-weight="600"
-       fill="#2B4B8C"
-       id="text56">
-      Principle Categories:
-    </text>
-    <g
-       transform="translate(0, 25)"
-       id="g57">
-      <circle
-         cx="10"
-         cy="0"
-         r="8"
-         fill="url(#greenGradient)"
-         id="circle56" />
-      <text
-         x="25"
-         y="5"
-         font-family="system-ui, -apple-system, sans-serif"
-         font-size="13"
-         fill="#2D5F2D"
-         font-weight="500"
-         id="text57">
-        Governance Structure
-      </text>
-    </g>
-    <g
-       transform="translate(200, 25)"
-       id="g58">
-      <circle
-         cx="10"
-         cy="0"
-         r="8"
-         fill="url(#brownGradient)"
-         id="circle57" />
-      <text
-         x="25"
-         y="5"
-         font-family="system-ui, -apple-system, sans-serif"
-         font-size="13"
-         fill="#654321"
-         font-weight="500"
-         id="text58">
-        Rights  Environment
-      </text>
-    </g>
-    <g
-       transform="translate(400, 25)"
-       id="g59">
-      <circle
-         cx="10"
-         cy="0"
-         r="8"
-         fill="url(#goldGradient)"
-         id="circle58" />
-      <text
-         x="25"
-         y="5"
-         font-family="system-ui, -apple-system, sans-serif"
-         font-size="13"
-         fill="#DAA520"
-         font-weight="500"
-         id="text59">
-        Resource  Conflict
-      </text>
-    </g>
-    <g
-       transform="translate(600, 25)"
-       id="g60">
-      <circle
-         cx="10"
-         cy="0"
-         r="8"
-         fill="url(#purpleGradient)"
-         id="circle59" />
-      <text
-         x="25"
-         y="5"
-         font-family="system-ui, -apple-system, sans-serif"
-         font-size="13"
-         fill="#6B5CA5"
-         font-weight="500"
-         id="text60">
-        Evolution  Integration
-      </text>
-    </g>
-  </g>
+     font-size="12"
+     fill="#6B5CA5"
+     id="text55">Evolution  Integration</text>
 </svg>
