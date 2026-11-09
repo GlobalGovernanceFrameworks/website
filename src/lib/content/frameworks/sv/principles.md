@@ -26,7 +26,7 @@ Ramverken för global styrning bygger på flera grundläggande principer som utg
 
 **Princip**: Makten bör fördelas över flera nivåer och flera centra, där beslut fattas på den lägsta effektiva styrningsnivån. Högre nivåer hanterar endast frågor som inte kan lösas lokalt. Men decentralisering ensam räcker inte — vid varje skalnivå bör styrning vara *polycentrisk*: flera överlappande beslutsorgan som samarbetar, konkurrerar och lär av varandra, utan att något enskilt organ kan bli en flaskhals.
 
-Subsidiaritet ger den vertikala strukturen (lokal → regional → global). Polycentrism ger det horisontella nätverket (flera centra på varje nivå). Tillsammans bildar de ett styrningssystem där tyranni är logistiskt omöjligt — makten har ingen enskild punkt att ta kontroll över.
+Subsidiaritet ger den vertikala strukturen (lokal → regional → global). Polycentrism ger det horisontella nätverket (flera centra på varje nivå). Tillsammans kan de minska antalet enskilda punkter där makten kan kapas och göra dominans svårare. De gör däremot inte tyranni omöjligt: samordningsnätverk, gemensam infrastruktur, finansieringsberoenden och allianser mellan beslutscentra kan också koncentrera makt.
 
 **I praktiken**:
 - Lokalsamhällen har autonomi över den dagliga styrningen
@@ -36,8 +36,9 @@ Subsidiaritet ger den vertikala strukturen (lokal → regional → global). Poly
 - Överlappande jurisdiktioner skapar redundans och motståndskraft
 - Konkurrerande styrningsexperiment på samma nivå genererar lärande
 - Samordning sker genom protokoll mellan centra, inte genom toppstyrning
+- Överlappande beslutscentra och nya samordningsnivåer måste motivera sin nytta och belastning enligt principen om minimal tillräcklig samordning
 
-*Den formella grunden för denna princip utforskas i vitböckerna [Styrstabilitetssimulatorn](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) och [Fraktalitet som stabilitet](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability) — som visar att subsidiaritet och polycentriska styrningsarkitekturer är ingenjörskrav, inte politiska preferenser.*
+*Designargumenten bakom denna princip utforskas i vitböckerna [Styrstabilitetssimulatorn](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) och [Fraktalitet som stabilitet](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability). Deras föreslagna stabilitetsfördelar och begränsningar är kontextberoende hypoteser som behöver prövas, inte universella ingenjörsmässiga garantier.*
 
 **Nuvarande exempel:**
 - Nordiska rådet visar decentraliserad styrning där nationer behåller suveränitet samtidigt som de samarbetar kring gemensamma utmaningar.
@@ -50,15 +51,15 @@ Subsidiaritet ger den vertikala strukturen (lokal → regional → global). Poly
 
 ## 3. Radikal transparens
 
-**Princip**: Alla styrningsprocesser ska vara fullt synliga och tillgängliga för medborgarna, utan hemligt beslutsfattande eller dold resursfördelning.
+**Princip**: Utövandet av offentlig makt måste kunna granskas på ett meningsfullt sätt genom tillgänglig information om mandat, betydelsefulla beslut, beslutsmotiveringar, resursanvändning och möjligheter att invända. Integritet, skyddad kunskap, säkerhet, laglig sekretess och rättssäkerhet kan kräva avgränsade undantag. Sådana undantag måste motiveras och kunna granskas; de får inte bli en ursäkt för maktutövning utan insyn.
 
 **I praktiken**:
-- Offentlig insyn i beslutsprocesser och motiveringar
-- Öppna data om all styrningsverksamhet
-- Flera verifieringsmetoder för att undvika teknologisk portvakt
-- Medborgarkontrollsystem för realtidsansvar
+- Offentlig insyn i betydelsefulla beslut, mandat, motiveringar och relevant resursfördelning
+- Öppna styrningsdata där det är rättsenligt och proportionerligt, med skyddade eller aggregerade uppgifter när utlämnande skulle orsaka skada
+- Flera verifieringsmetoder för att undvika teknologiska grindvakter
+- Oberoende granskning och medborgarinsyn, inklusive prövning av sekretessanspråk och möjligheter till upprättelse
 
-Transparens är det goda styrets immunförsvar – det förhindrar korruption, bygger förtroende och säkerställer ansvar gentemot folket snarare än eliter.
+Transparens är en viktig motvikt till korruption och oansvarig maktutövning, men urskillningslöst utlämnande kan också skada människor. Radikal transparens handlar om att offentlig makt ska kunna granskas, inte om obegränsad insamling eller publicering av personuppgifter.
 
 **Nuvarande exempel:**
 - Blockkedjeverifieringssystem för styrningsbeslut och resursallokering.
@@ -225,6 +226,7 @@ Denna princip erkänner att våld är ineffektivt, destruktivt och i slutändan 
 - Evidensbaserad policyevaluering
 - Reformprocesser ledda av medborgare
 - Experimentzoner för att testa nya tillvägagångssätt
+- Regelbunden prövning av om samordning kan förenklas, återföras, ersättas eller avslutas utan att rättigheter och viktiga skyldigheter överges
 
 Adaptiv styrning undviker att bli stel eller föråldrad och kan utvecklas i takt med nya utmaningar, teknologier och förståelser.
 
@@ -359,11 +361,23 @@ De sexton principerna som beskrivits ovan utgör ett sammanhängande ramverk fö
 **Spänningen**: Hur kan vi säkerställa att beslut fattas på så lokal nivå som möjligt samtidigt som vi hanterar frågor som kräver global koordination?
 
 **Tillvägagångssätt**:
-- Använd tydliga kriterier för att bestämma styrningsnivån baserat på påverkan och externa effekter.
-- Skapa sammanlänkade styrningsstrukturer med tydligt definierade gränssnitt mellan nivåer.
+- Använd tydliga kriterier för att bestämma styrningsnivån utifrån påverkan, rättsliga skyldigheter och externa effekter.
+- Pröva först om befintliga institutioner eller en avgränsad överenskommelse kan lösa det gemensamma problemet innan ett nytt samordningsorgan inrättas.
+- Skapa sammanlänkade styrningsstrukturer bara i den utsträckning som behövs, med tydligt definierade mandat och gränssnitt.
 - Säkerställ tvåvägsflöden av information och inflytande, där globala ramverk formas av lokala perspektiv, inte enbart genom toppstyrning.
 
 **Exempel på lösning**: Montrealprotokollet om ozonnedbrytande ämnen fastställde globala mål men möjliggjorde differentierade implementeringsstrategier och tidslinjer för olika regioner och ekonomier.
+
+#### Minimal tillräcklig samordning vs. motståndskraft, granskning och inkludering
+
+**Spänningen**: Hur kan styrning undvika onödig samordning utan att samtidigt avlägsna skydd, kapacitet eller deltagande som gör gemensamt agerande verkligt tillräckligt?
+
+**Tillvägagångssätt**:
+- Bedöm proportionalitet utifrån konsekvenser och skyddsvärda intressen, inte bara antalet organ, möten eller handlingar.
+- Behåll motiverad redundans, tillgängligt deltagande, oberoende granskning och kapacitetsstöd när avsaknaden av dem skulle vältra över risker eller utestänga berörda.
+- Jämför enklare alternativ och ange när samordningsnivån ska minskas eller avvecklas om nyttan inte motiverar belastningen.
+
+**Illustrativ lösning**: Ett gemensamt varningsprotokoll vid kriser kan behöva reservvägar för kommunikation och oberoende verifiering även när en enda kanal verkar billigare. En minimalt tillräcklig lösning behåller dessa skydd utan att inrätta en permanent central ledningsorganisation, om det inte motiveras separat och har rättsligt stöd.
 
 #### Radikal transparens vs. mental suveränitet
 
@@ -438,12 +452,30 @@ Dessa spänningar visar att principerna fungerar som ett dynamiskt system snarar
 2. **Sök integration**: Hitta lösningar som hedrar flera principer samtidigt istället för att offra den ena för den andra.
 3. **Upprätthåll dialog**: Kontinuerlig dialog mellan intressenter hjälper till att hantera spänningar på ett sätt som respekterar alla principer.
 4. **Låt lösningar utvecklas**: När kontexter förändras bör också sättet att hantera spänningar utvecklas, i enlighet med principen om Adaptiv Evolution.
+5. **Pröva nödvändighet och belastning**: Ompröva om varje samordningsmekanism fortfarande ger tillräckligt mervärde jämfört med enklare rättsenliga alternativ, och förenkla, återför eller avsluta den när det är motiverat.
 
 Genom att hantera dessa spänningar medvetet kan ramverket implementeras med integritet och anpassas till verklighetens komplexa styrningsutmaningar.
 
 ## Att tillämpa principerna
 
-Dessa principer är inte abstrakta ideal utan praktiska riktlinjer för styrningsdesign. De fungerar som ett integrerat system – transparens möjliggör deltagande, decentralisering skyddar kulturell autonomi, och resursrättvisa stöder mänskliga rättigheter.
+Dessa principer är inte abstrakta ideal utan praktiska riktlinjer för styrningsdesign. De fungerar som ett integrerat system – transparens möjliggör deltagande, decentralisering skyddar kulturell autonomi, och resursrättvisa stöder mänskliga rättigheter. Minimal tillräcklig samordning är det övergripande testet: koppla samman institutioner bara så långt gemensamma behov, legitima skyldigheter och ett effektivt skydd kräver.
 
 För att lära dig hur du kan tillämpa dessa principer i praktiken, se avsnittet [Implementeringsriktlinjer](/frameworks/docs/implementation) i ramverket.
+
+## Övergripande designprincip: Minimal tillräcklig samordning
+
+**Princip**: Samordna endast när ett påvisat ömsesidigt beroende, en gränsöverskridande skada, en gemensam skyldighet, en rättighetsförpliktelse eller en väsentlig kapacitetsbrist inte kan hanteras tillräckligt väl genom självständigt agerande eller en enklare rättsenlig lösning. Välj den minst ingripande och minst betungande ordning som kan hantera behovet i tid, samtidigt som rättigheter, legitim autonomi, berördas ställning och kontinuiteten i samhällsviktiga tjänster skyddas. Att samordning bedöms som önskvärd skapar inte i sig offentlig beslutanderätt.
+
+**I praktiken**:
+- **Motivera behovet:** Identifiera det konkreta gemensamma problemet och jämför ingen ytterligare samordning, förbättringar av befintliga lösningar, en avgränsad överenskommelse mellan behöriga institutioner och en ny samordningsstruktur. Förklara varför enklare rättsenliga alternativ inte räcker.
+- **Koppla befogenhet till ansvar:** Identifiera vilka som berörs, vem som kontrollerar problemets orsaker, vilka institutioner som har giltiga mandat och skyldigheter samt när samtycke, deltagande, granskning eller möjlighet till upprättelse krävs. Tolka inte tystnad, vägran, bristande kapacitet eller missade tidsfrister som överföring av befogenhet.
+- **Begränsa omfattningen:** Använd endast de befogenheter, den information, dokumentation, finansiering och tid som behövs för uppgiften. Bevara oberoende granskning, tillgänglighet och nödvändig redundans där de ger väsentligt skydd för rättigheter, motståndskraft eller ansvarsutkrävande.
+- **Jämför konsekvenser:** Väg förväntad nytta mot administrativa kostnader, beslutsfördröjningar, risker med passivitet, ansvarsförskjutning, utestängning, maktkoncentration och förlorad lokal kapacitet. Reducera inte bedömningen till ett enda effektivitetsmått.
+- **Planera för omprövning och avveckling:** Ange när samordningen ska granskas och under vilka villkor den kan förenklas, återföras, korrigeras, ersättas eller avslutas, utan att överge kvarstående skyldigheter, handlingar, rättigheter eller samhällsviktiga tjänster.
+
+**Viktig avgränsning**: *Minimal* betyder inte billigast, snabbast, minst omfattande eller minst deltagarbaserad. Principen får inte heller användas för att lämna allvarliga gemensamma skador eller rättsligt fastställda skyldigheter utan åtgärd. Tillräckliga resurser, mångsidig granskning, redundans och gemensamt agerande i rätt tid kan vara nödvändiga. Principen vägleder utformningen men ger inte i sig rätt till tvångsåtgärder, åsidosättande av rättigheter eller överföring av beslutanderätt.
+
+**Illustrativt exempel**: Två angränsande kommuner som delar ett avrinningsområde kan börja med befintlig övervakning, en tydlig överenskommelse om informationsutbyte och fördelade åtgärdsskyldigheter. En permanent gemensam myndighet skulle kräva en separat motivering till varför mindre omfattande rättsenliga lösningar inte kan förebygga eller avhjälpa den gemensamma skadan tillräckligt väl.
+
+Principen gäller genomgående för **de sexton tematiska principerna ovan**. Den lägger inte till ett sjuttonde sakområde och kräver ingen ny institution; den prövar om varje föreslagen samordningslösning är nödvändig, tillräcklig, rättsenlig och möjlig att ompröva.
 

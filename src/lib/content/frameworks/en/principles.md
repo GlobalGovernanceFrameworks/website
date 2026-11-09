@@ -25,7 +25,7 @@ The Global Governance Frameworks is built on several foundational principles tha
 
 **Principle**: Power should be distributed across multiple levels *and* multiple centers, with decisions made at the lowest effective level of governance. Higher levels handle only what cannot be addressed locally. But decentralization alone is insufficient — at every scale, governance should be *polycentric*: multiple overlapping decision centers that cooperate, compete, and learn from each other, with no single node capable of becoming a bottleneck.
 
-Subsidiarity provides the vertical architecture (local → regional → global). Polycentrism provides the horizontal mesh (multiple centers at each level). Together, they produce a governance system where tyranny is logistically impossible — there is no single point of control to capture.
+Subsidiarity provides the vertical architecture (local → regional → global). Polycentrism provides the horizontal mesh (multiple centers at each level). Together, they can reduce single points of capture and make domination harder. They do not make tyranny impossible: coordination networks, shared infrastructure, funding dependencies, and alliances between decision centers can also concentrate power.
 
 **In Practice**:
 - Local communities have autonomy over day-to-day governance
@@ -35,10 +35,11 @@ Subsidiarity provides the vertical architecture (local → regional → global).
 - Overlapping jurisdictions create redundancy and resilience
 - Competing governance experiments at the same level generate learning
 - Coordination happens through protocols between centers, not top-down direction
+- Overlapping centers and new coordinating layers must justify their added value and burden under the principle of minimum sufficient coordination
 
 This principle guards against two distinct failure modes: vertical capture (power concentrating upward across levels) and horizontal capture (a single body monopolizing a level). Subsidiarity addresses the first; polycentrism addresses the second.
 
-*The formal foundations of this principle are explored in the whitepapers [The Governance Stability Simulator](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) and [Fractality as Stability](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability) — demonstrating that subsidiarity and polycentric governance architectures are engineering requirements, not political preferences.*
+*The design arguments behind this principle are explored in the whitepapers [The Governance Stability Simulator](https://bjornkennethholmstrom.org/whitepapers/governance-stability-simulator) and [Fractality as Stability](https://bjornkennethholmstrom.org/whitepapers/fractality-as-stability). Their proposed stability benefits and limits remain context-dependent claims to be tested, not universal engineering guarantees.*
 
 **Current Examples:**
 - The Nordic Council demonstrates decentralized governance where nations retain sovereignty while cooperating on shared challenges.
@@ -52,15 +53,15 @@ This principle guards against two distinct failure modes: vertical capture (powe
 
 ## 3. Radical Transparency
 
-**Principle**: All governance processes must be fully visible and accessible to citizens, with no secret decision-making or hidden resource allocation.
+**Principle**: The exercise of public authority must be open to meaningful scrutiny through accessible mandates, material decisions, reasons, resource use, and routes for challenge. Privacy, protected knowledge, safety, lawful confidentiality, and due process may require bounded exceptions; those exceptions must be justified and reviewable, not excuses for unaccountable secrecy.
 
 **In Practice**:
-- Public access to decision-making processes and rationales
-- Open data on all governance activities
+- Public access to material decisions, mandates, reasons, and relevant resource allocations
+- Open governance data where lawful and proportionate, using protected or aggregated records when disclosure would cause harm
 - Multiple verification methods to prevent technological gatekeeping
-- Citizen oversight mechanisms for real-time accountability
+- Independent and citizen oversight, including review of confidentiality claims and avenues for remedy
 
-Transparency is the immune system of good governance—it prevents corruption, builds trust, and ensures accountability to the people rather than to elites.
+Transparency is an important check against corruption and unaccountable power, but indiscriminate disclosure can itself harm people. Radical transparency concerns the accountability of public authority, not unlimited collection or publication of personal information.
 
 **Current Examples:**
 - Blockchain verification systems for governance decisions and resource allocation.
@@ -229,6 +230,7 @@ This principle recognizes that violence is inefficient, destructive, and ultimat
 - Evidence-based policy assessment
 - Citizen-led reform processes
 - Experimental governance zones to test new approaches
+- Periodic review of whether coordination can be simplified, devolved, replaced, or closed while maintaining rights and essential duties
 
 Adaptive governance avoids becoming rigid or outdated, instead evolving with new challenges, technologies, and understanding.
 
@@ -363,11 +365,23 @@ The sixteen principles outlined above form a cohesive framework for ethical glob
 **The Tension**: How do we ensure decisions are made at the most local level possible while addressing issues that require global coordination?
 
 **Navigation Approach**:
-- Apply clear criteria for determining appropriate governance levels based on the scale of impact and externalities.
-- Create nested governance structures with well-defined interfaces between levels.
+- Apply clear criteria for determining appropriate governance levels based on the scale of impact, lawful duties, and externalities.
+- First test whether existing institutions or a limited compact can address the shared problem before creating a new coordinating body.
+- Create nested governance structures only to the extent necessary, with clearly defined mandates and interfaces.
 - Ensure bidirectional flows of information and influence, where global frameworks are shaped by local input, not just top-down implementation.
 
 **Example Resolution**: The Montreal Protocol on ozone-depleting substances established global targets while allowing differentiated implementation strategies and timelines for different regions and economic contexts.
+
+#### Minimum Sufficient Coordination vs. Resilience, Oversight & Inclusion
+
+**The Tension**: How can governance avoid unnecessary coordination without cutting away the safeguards, capacity, or participation that make collective action genuinely sufficient?
+
+**Navigation Approach**:
+- Assess proportionality by consequences and protected interests, not merely by the number of offices, meetings, or records.
+- Keep justified redundancy, accessible participation, independent scrutiny, and capacity support when their absence would shift risks or exclude affected people.
+- Compare simpler alternatives and record a review point for reducing or ending the coordination layer if its benefits do not justify its burdens.
+
+**Illustrative Resolution**: A shared emergency-warning protocol may need backup communication routes and independent verification even when a single channel appears cheaper. The minimum sufficient design preserves those safeguards while avoiding a permanent central command body unless separately justified and lawfully authorized.
 
 #### Radical Transparency vs. Mental Sovereignty
 
@@ -446,10 +460,29 @@ These tensions highlight that the principles function as a dynamic system rather
 
 4. **Evolve Solutions**: As contexts change, the way tensions are navigated should evolve, reflecting the principle of Adaptive Evolution.
 
+5. **Test Necessity and Burden**: Revisit whether each coordination mechanism still adds sufficient value compared with simpler lawful alternatives, and simplify, devolve, or end it where appropriate.
+
 By thoughtfully addressing these tensions, practitioners can implement the framework with integrity while adapting to the complexities of real-world governance challenges.
 
 ## Implementing the Principles
 
-These principles are not abstract ideals but practical guides for governance design. They work together as an integrated system—transparency enables participation, decentralization preserves cultural autonomy, and resource justice supports human rights.
+These principles are not abstract ideals but practical guides for governance design. They work together as an integrated system—transparency enables participation, decentralization preserves cultural autonomy, and resource justice supports human rights. Minimum sufficient coordination is the cross-cutting test: connect institutions only as far as shared needs, legitimate duties, and effective protection require.
 
 To learn how to implement these principles in practice, see the [Implementation Guidelines](/frameworks/docs/implementation) section of the frameworks.
+
+## Cross-cutting Design Principle: Minimum Sufficient Coordination
+
+**Principle**: Coordinate only where a demonstrated interdependence, cross-boundary harm, shared obligation, rights duty, or material capacity gap cannot be addressed adequately through independent action or a simpler lawful arrangement. Choose the least intrusive and least burdensome arrangement capable of addressing the need in time, while protecting rights, legitimate autonomy, affected-party standing, and continuity of essential services. A finding that coordination is desirable does not itself confer public authority.
+
+**In Practice**:
+- **Justify the need:** Identify the concrete shared condition and compare no additional coordination, improvements to existing arrangements, a limited agreement between competent institutions, and a new coordinating structure. Explain why the simpler lawful options would be insufficient.
+- **Match authority to responsibility:** Identify who is affected, who controls the relevant causes, which institutions have lawful mandates and duties, and where consent, participation, review, or remedies are required. Do not infer a transfer of authority from silence, refusal, incapacity, or a missed deadline.
+- **Limit the footprint:** Use only the authority, scope, information, documentation, funding, and duration needed for the task. Preserve independent oversight, accessibility, and necessary redundancy where they materially protect rights, resilience, or accountability.
+- **Compare consequences:** Examine expected benefits alongside administrative costs, decision delays, risks of inaction, burden-shifting, exclusion, institutional capture, and loss of local capacity. Do not reduce the comparison to a single efficiency score.
+- **Plan for revision and closure:** Specify review points and conditions for simplifying, devolving, correcting, replacing, or ending coordination, while preserving outstanding duties, records, rights, and essential services.
+
+**Important Boundary**: *Minimum* does not mean the cheapest, fastest, smallest, or least participatory option. Nor is it a justification for leaving serious shared harms or legally established duties unaddressed. Adequate resources, plural oversight, redundancy, and timely collective action may all be necessary. This principle guides design choices; it does not independently authorize coercion, override rights, or transfer jurisdiction.
+
+**Illustrative Example**: Two neighboring jurisdictions sharing a watershed might begin with existing monitoring, a clear information-sharing agreement, and assigned response duties. A permanent joint authority would require a separate justification showing that less extensive lawful arrangements cannot adequately prevent or remedy the shared harm.
+
+This principle applies across the **sixteen thematic principles above**. It does not add a seventeenth subject area or require a new institution; it asks whether each proposed coordination arrangement is necessary, sufficient, lawful, and revisable.
