@@ -180,11 +180,11 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'gaian-trade',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v0.9.2',
-        updated: '2026-08-10',
+        version: 'v0.9.3',
+        updated: '2026-11-23',
         maturity: 'adversarial',
         standfirst:
-          'Trade treated as relationship rather than transaction, governed across three time horizons — a fast loop for tariffs and routing, a medium loop for industrial transition, and a deep-time loop with binding veto over decisions with geological consequences. Radical material transparency is the default, but communities may invoke a Right to Opacity: traceability should not become a tool for making Indigenous knowledge legible to whoever wants it.'
+          'Trade treated as relationship rather than transaction, governed across three time horizons — a fast loop for tariffs and routing, a medium loop for industrial transition, and a deep-time loop for decisions with geological consequences, where any binding review must come from a validly constituted authority rather than from the framework itself. Radical material transparency is the default, but communities may invoke a Right to Opacity: traceability should not become a tool for making Indigenous knowledge legible to whoever wants it. Version 0.9.3 makes its automatic mechanisms answerable: an indicator may trigger only relief that was authorized in advance, and the Strategic Resource Reserve must serve humanitarian need before any price-stabilization goal.'
       }
     }
   },
