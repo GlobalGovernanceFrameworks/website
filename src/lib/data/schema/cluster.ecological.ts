@@ -115,11 +115,11 @@ export const ecologicalEntities: GgfEntity[] = [
       slug: 'climate-and-energy-governance',
       group: 'planetaryHealthResilience',
       outline: {
-        version: 'v2.1',
-        updated: '2026-08-03',
+        version: 'v2.2',
+        updated: '2026-11-23',
         maturity: 'adversarial',
         standfirst:
-          'Decarbonization organized around incentive gradients rather than compliance: a Regenerative Trade Zone that makes membership economically advantageous, so that joining is attractive before it is obligatory. Version 2.1 opens with a plain-language glossary — an unusual admission for a document of this type that precision and readability are both required, and that a framework nobody outside the project can parse is not yet a framework.'
+          'Decarbonization organized around incentive gradients rather than compliance: a Regenerative Trade Zone that makes membership economically advantageous, so that joining is attractive before it is obligatory. Version 2.2 adds what the earlier text lacked: household energy protections set up before prices rise, including an essential-energy minimum, protection against disconnection for inability to pay, and a clear line between a price shock and a physical shortage. It also strips out emergency and enforcement powers the framework never had the authority to grant.'
       }
     }
   },
