@@ -1,1 +1,0 @@
-versions/v6.0.md

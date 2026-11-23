@@ -1,9 +1,0 @@
----
-
-## Abstract
-
-Decentralized trust and coordination have long been constrained by a false dichotomy: either rely on centralized authorities or enforce global consensus across all nodes. Both approaches violate Ashby’s Law of Requisite Variety, forcing the infinite complexity of human and ecological interaction through narrow computational bottlenecks. We present the **Immanent Trust Protocol (ITP)**, a post‑consensus architecture where trust is computed at the edge, relative to each observer, without any global ledger or universal reputation score. ITP introduces the **Informal Trust Ledger (ITL)** – a directed, weighted graph of cryptographically signed **Trust Signals** that nodes gossip and evaluate locally. To resist Sybil and collusion attacks, we define the **Trust Independence Metric (TIM)**, which discounts endorsements from topologically overlapping clusters, mathematically collapsing large collusion rings to the weight of a single node. **Trust Shock Propagation** gives endorsers “skin in the game” by cascading penalties when a trusted node defects, while an **appeal mechanism** and **calibration histories** defend against false accusations. For cross‑scale disturbances, ITP forms ephemeral **Scale‑Adaptive Fields** using a rotating coordinator lottery, avoiding permanent bureaucratic structures. We provide a formal theorem bounding TIM’s Sybil collapse, a game‑theoretic analysis of honest signaling, simulation results, and a reference implementation architecture with post‑quantum cryptographic agility. ITP offers a viable substrate for bioregional governance and autonomous agent coordination without surrendering sovereignty to a global ledger.
-
----
-
-
