@@ -115,11 +115,10 @@ export const ecologicalEntities: GgfEntity[] = [
       slug: 'climate-and-energy-governance',
       group: 'planetaryHealthResilience',
       outline: {
-        version: 'v2.2',
+        version: 'v2.2.1',
         updated: '2026-11-23',
         maturity: 'adversarial',
-        standfirst:
-          'Decarbonization organized around incentive gradients rather than compliance: a Regenerative Trade Zone that makes membership economically advantageous, so that joining is attractive before it is obligatory. Version 2.2 adds what the earlier text lacked: household energy protections set up before prices rise, including an essential-energy minimum, protection against disconnection for inability to pay, and a clear line between a price shock and a physical shortage. It also strips out emergency and enforcement powers the framework never had the authority to grant.'
+        standfirst: 'Energy was the only essential service in the corpus without household protections. Version 2.2 added them: an essential-energy minimum, protection against disconnection for inability to pay, an incidence check before carbon prices or subsidy removal raise bills, and a rule that protective instruments for price shocks and shortages are authorized before a shock rather than improvised during one. It created no global entitlement, regulator or price-setting power. Version 2.2.1 applies the lessons of a three-country shock study: the minimum is a protection objective rather than a volume guarantee in a shortage, households on bottled gas get a refill at a protected price instead of a disconnection rule, households whose energy is paid through rent must be reached by name, and readiness is judged link by link from authority to payment rather than by whether a law exists.'
       }
     }
   },
@@ -344,11 +343,10 @@ export const ecologicalEntities: GgfEntity[] = [
       slug: 'disaster-risk-reduction',
       group: 'planetaryHealthResilience',
       outline: {
-        version: 'v4.4.2',
-        updated: '2026-08-03',
+        version: 'v4.4.3',
+        updated: '2026-11-23',
         maturity: 'adversarial',
-        standfirst:
-          'The insight kept from earlier versions is that disaster governance should invest before loss rather than only compensate after it — forecast finance released on a prediction rather than a body count. What version 4.4 removed is more telling: the planetary disaster authority, the mandatory BAZ council and its land-use veto, the universal duty of care, the reinsurance levy, and any power to order evacuation or command responders. Emergencies are where authority gets taken and not given back, so the framework separates eight functions earlier drafts had bundled.'
+        standfirst: 'The insight kept from earlier versions is that disaster governance should invest before loss rather than only compensate after it — forecast finance released on a prediction rather than a body count. What version 4.4 removed is more telling: the planetary disaster authority, the mandatory BAZ council and its land-use veto, the universal duty of care, the reinsurance levy, and any power to order evacuation or command responders. Emergencies are where authority gets taken and not given back, so the framework separates eight functions earlier drafts had bundled. Version 4.4.3 stops the framework building cascade maps that already exist: where a national dependency study or an operator plan covers a system, the framework now asks whether that evidence is current, independently challenged, shared, and in front of the body that decides who gets scarce supply.'
       }
     }
   },

@@ -114,10 +114,10 @@ export const governanceOSEntities: GgfEntity[] = [
       slug: 'gmeaia',
       outline: {
         kind: 'specification',
-        version: 'v0.2.2',
-        updated: '2026-10-15',
+        version: 'v0.2.3',
+        updated: '2026-11-23',
         maturity: 'internal',
-        standfirst: 'A shared lifecycle grammar for governance work that must move across frameworks without allowing procedure to manufacture power. Version 0.2.1 standardizes consequence profiles, authority formation, causal responsibility, response clocks, handoff states, correction, unresolved duties, and closure, while preserving a strict boundary: frameworks may supply domain-specific requirements, but they may not redefine the shared states or treat conformance as authority, consent, legitimacy, or success. Version 0.2.2 lets a matter nobody accepts carry a standing preventable-harm marker, so ongoing preventable deaths stay on the record, with their cost counted, until someone takes responsibility.'
+        standfirst: 'A shared lifecycle grammar for governance work that must move across frameworks without allowing procedure to manufacture power. Version 0.2.1 standardizes consequence profiles, authority formation, causal responsibility, response clocks, handoff states, correction, unresolved duties, and closure, while preserving a strict boundary: frameworks may supply domain-specific requirements, but they may not redefine the shared states or treat conformance as authority, consent, legitimacy, or success. Version 0.2.2 lets a matter nobody accepts carry a standing preventable-harm marker, so ongoing preventable deaths stay on the record, with their cost counted, until someone takes responsibility. Version 0.2.3 makes referrals use the routes a host already has instead of opening parallel ones, requires a record of what was searched before anything is declared missing, and adds an assessment profile for whether a host could actually protect households in an essential-price shock, grading authority, activation, delivery, coverage, timing and termination link by link and keeping legal readiness apart from protection received.'
       }
     }
   },

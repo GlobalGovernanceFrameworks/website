@@ -57,11 +57,10 @@ export const economicOSEntities: GgfEntity[] = [
       slug: 'adaptive-universal-basic-income',
       group: 'globalEconomicSystems',
       outline: {
-        version: 'v2.7.1',
+        version: 'v2.7.2',
         updated: '2026-11-23',
         maturity: 'adversarial',
-        standfirst:
-          'An unconditional material-security floor combining fiat and Hearts, with separate, voluntary Hearts and Leaves recognition for care and ecological work. AUBI keeps entitlements, contribution rewards, LMCI measurements and operational telemetry distinct; access attestations are purpose-limited, and governance cannot manufacture identity or authority. Earlier revisions exposed housing-cost feedback and protected households against abrupt baseline withdrawal, including at pilot closure. Version 2.7 confronts a further limit: money cannot secure care, housing or other necessities when qualified people, physical supply or accessible services are missing. It requires unmet real needs to remain visible, strengthens continuity safeguards for people dependent on essential care, and routes shortages to competent providers without giving AUBI power to assign workers, ration services or compel participation. Version 2.7.1 addresses the opposite case, where supply holds but prices spike. It separates general inflation, an essential price shock and a physical shortage, and removes an old instruction to cut support back to the baseline when inflation passes 10 percent. Temporary support in ordinary money is allowed only if it was authorized and funded before the shock, with a published end date and independent checks on whether people actually kept access. ECRAI/0.1 is a proposed coordination interface, not an adopted authority; cross-framework conformance remains pending.'
+        standfirst: 'AUBI is the social compact for unconditional material security: a universal baseline, contribution recognition and needs-based support, with strict limits on how any of it is measured. Version 2.7.1 gave it a lawful way to respond to essential price shocks, with temporary support authorized in advance, triggered by a published threshold, and given an expiry and taper, while keeping the baseline running during real shortages. Version 2.7.2 adds the tests a three-country study showed were missing: support counts as pre-authorized only if its implementing rules are already in force, if it reaches people by the time the bill is due or a bridge covers the gap, and if it ends when the shock ends rather than on a calendar date. Voucher schemes must also pay retailers in step with the price.'
       }
     }
   },
